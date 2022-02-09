@@ -1,8 +1,8 @@
 """
 Parses a URL with UDPipe2.
 
-Creates a file with the html version of the url and another 
-file with the text parsed with a model from the UDPipe2 API.
+Creates a file with the text parsed with a model from
+the UDPipe2 API. It does not create any other files.
 
 """
 import re
@@ -10,6 +10,7 @@ import argparse
 import requests
 import json
 from bs4 import BeautifulSoup
+import tempfile
 
 # Loading models available in UDPipe 2
 r = requests.get('http://lindat.mff.cuni.cz/services/udpipe/api/models')
@@ -26,41 +27,28 @@ for i in data['models'].keys():
         models[lang].append(i)
     else:
         models[lang] = [i]
-
-def save_htmlfile(url, name, path):
-    with open(f'{path}{name}.html', 'w') as f:
-        f.write(requests.get(url).text)
-
-def parsing(readfile, url, lang, name, path, model = models[lang][0]):
-    """
-    Parses html file and saves to file.
-    Args:
-      - readfile: html file created.
-      - lang: language of the file.
-    Param:
-      - model: the specific model from UDPipe2 that
-        we want to use. If unspecified, it's the 1st
-        model from the models dictionary.
-    """
-    starters = ['<p>', '</p><p>', '<title>', '<h']
-    api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
-    f = open(readfile)
-    with open(f'{path}{name}.conllu', 'w') as g:
-        g.write(f'# {url}\n\n')
-        for alltext in f.readlines():
-            texto = alltext.strip('\t')
-            if texto.startswith(tuple(starters)):
-                cleantext = BeautifulSoup(texto, "html.parser").text
-                cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
-                cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
-                cleantext = cleantext.strip()
-                cleantext = cleantext.replace(u'\u200b', '') # remove this character
-                if len(cleantext) != 0:
-                    myobj = {'data' : cleantext, 'model' : model,'tokenizer' : 'ranges', 'tagger' : '', 'parser' : ''}
-                    x = requests.post(api_url, data = myobj)
-                    g.write(json.loads(x.text)['result'])
-    f.close()
-
+        
+def udparsing(url, lang, name, path, model = models[lang][0]):
+    with tempfile.TemporaryFile(mode='w+t') as tmp:
+        tmp.write(requests.get(url).text)
+        tmp.seek(0)
+        starters = ['<p>', '</p><p>', '<title>', '<h']
+        api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
+        with open(f'{path}{name}.conllu', 'w') as g:
+            g.write(f'# {url}\n\n')
+            for alltext in tmp.readlines():
+                texto = alltext.strip('\t')
+                if texto.startswith(tuple(starters)):
+                    cleantext = BeautifulSoup(texto, "html.parser").text
+                    cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
+                    cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
+                    cleantext = cleantext.replace(u'\u200b', '') # remove this character
+                    if len(cleantext) != 0:
+                        myobj = {'data' : cleantext, 'model' : model,'tokenizer' : '', 'tagger' : '', 'parser' : ''}
+                        x = requests.post(api_url, data = myobj)
+                        g.write(json.loads(x.text)['result'])
+                        
+                        
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Parses a URL with UDPipe2.')
     parser.add_argument('url', type=str, help='url to parse')
@@ -73,6 +61,5 @@ if __name__ == '__main__':
     if args.lang.lower() not in models:
         print('Please input a language available in UDPipe. For more information, write --help.')
     else:
-        save_htmlfile(args.url, args.name, args.path)
-        parsing(f'{args.path}{args.name}.html', args.url, args.lang.lower(), args.name, args.path)
+        udparsing(args.url, args.lang.lower(), args.name, args.path)
     

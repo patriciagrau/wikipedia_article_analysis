@@ -23,9 +23,19 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 07/02
 
 - Topics from the articles available in most languages?
-- Getting all the relevant text in the articles, including the titles.
+- Getting all the relevant text in the articles, including the titles. (old)
 
 08/02
 
 - Made the script to call when processing the text (udparsing.py).
 - Saw errors in Catalan -> bad tokenising: it did not separate "l'enciclopèdia" ('the encyclopedia') or some brakets within titles.
+
+09/02
+
+- Tables are not parsed - do we want them? Ask Aarne --> Aarne says not to keep them, and also get rid of image captions.
+- TO DO!! All the sentences are parsed as sentence_id = 1. Fix this! I should probably put everything together?
+  - It's different when I run it from the website itself! But (I think) I put the same options? So, why?
+- Some references (e.g. \[a]) are kept in the text. This affects the separation of sentences. Fix this! Fixed!
+- TO DO!! Remove captions!!
+
+
