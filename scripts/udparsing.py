@@ -11,32 +11,56 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-# Loading models available in UDPipe 2
-r = requests.get('http://lindat.mff.cuni.cz/services/udpipe/api/models')
-data = json.loads(r.text)
-models = {}
-for i in data['models'].keys():
-    if i.startswith('norwegian') or i.startswith('ancient-greek'):
-        lang = '_'.join(i.split('-')[0:2])
-    elif i.startswith('old-church'):
-        lang = '_'.join(i.split('-')[0:3])  
-    else:
-        lang = i.split('-')[0]
-    if lang in models:
-        models[lang].append(i)
-    else:
-        models[lang] = [i]
+def get_ud_models():
+    """
+    Loading the name of models available in UDPipe 2
+    Returns:
+      - models: a dictionary containing a language as the key
+        and the models as the values. 
+        
+    models = {'lang_1' : ['model1', 'model2',...], 
+              'lang_2' : ['model3', 'model4',...], 
+              ...}
+    """
+    r = requests.get('http://lindat.mff.cuni.cz/services/udpipe/api/models')
+    data = json.loads(r.text)
+    
+    models = {}
+    for i in data['models'].keys():
+        if i.startswith('norwegian') or i.startswith('ancient-greek'):
+            lang = '_'.join(i.split('-')[0:2])
+        elif i.startswith('old-church'):
+            lang = '_'.join(i.split('-')[0:3])  
+        else:
+            lang = i.split('-')[0]
+        if lang in models:
+            models[lang].append(i)
+        else:
+            models[lang] = [i]
+    
+    return models
 
 def save_htmlfile(url, name, path):
+    """
+    Saves content of url in html file.
+    Args:
+      - url: url to parse.
+      - name: desired name for the file.
+      - path: path.
+    """
     with open(f'{path}{name}.html', 'w') as f:
         f.write(requests.get(url).text)
 
-def parsing(readfile, url, lang, name, path, model = models[lang][0]):
+def udparsing(readfile, url, lang, name, path, model = models[lang][0]):
     """
     Parses html file and saves to file.
+    
     Args:
       - readfile: html file created.
+      - url: url to parse.
       - lang: language of the file.
+      - name: desired name for the file.
+      - path: path.
     Param:
       - model: the specific model from UDPipe2 that
         we want to use. If unspecified, it's the 1st
@@ -70,9 +94,12 @@ if __name__ == '__main__':
     #parser.add_argument('--model', default=, help='model to parse from UDPipe2')
 
     args = parser.parse_args()
+    
+    models = get_ud_models()
+    
     if args.lang.lower() not in models:
         print('Please input a language available in UDPipe. For more information, write --help.')
     else:
         save_htmlfile(args.url, args.name, args.path)
-        parsing(f'{args.path}{args.name}.html', args.url, args.lang.lower(), args.name, args.path)
+        udparsing(f'{args.path}{args.name}.html', args.url, args.lang.lower(), args.name, args.path)
     

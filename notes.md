@@ -38,4 +38,17 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - Some references (e.g. \[a]) are kept in the text. This affects the separation of sentences. Fix this! Fixed!
 - TO DO!! Remove captions!!
 
+10/02
+
+- Created script for getting html files.
+- Fixed Wikipedia languages dictionary to follow UD names.
+- Started script for all files.
+
+
+
+
+
+
+
+
 
