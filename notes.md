@@ -29,6 +29,7 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 
 - Made the script to call when processing the text (udparsing.py).
 - Saw errors in Catalan -> bad tokenising: it did not separate "l'enciclopèdia" ('the encyclopedia') or some brakets within titles.
+    - surprisingly, the article fusion does not happen in other texts! Check the Italy file parsed in Catalan.
 
 09/02
 
@@ -43,12 +44,7 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - Created script for getting html files.
 - Fixed Wikipedia languages dictionary to follow UD names.
 - Started script for all files.
-
-
-
-
-
-
-
-
-
+- gold standard: How to analyse "Russia (Russian: Россия, tr. Rossiya, pronounced \[rɐˈsʲijə])..."?
+  - TO DO!! I did not finish that sentence
+- gold standard: I am writing all the lemmas in lower - should I? E.g. Russia russia -> decided to keep them capitalised
+- gold standard: "the ninth-most populous country" --> how do you analyse this?!

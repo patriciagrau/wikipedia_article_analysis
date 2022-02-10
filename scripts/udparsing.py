@@ -51,7 +51,7 @@ def save_htmlfile(url, name, path):
     with open(f'{path}{name}.html', 'w') as f:
         f.write(requests.get(url).text)
 
-def udparsing(readfile, url, lang, name, path, model = models[lang][0]):
+def udparsing(readfile, url, lang, name, path):
     """
     Parses html file and saves to file.
     
@@ -66,6 +66,7 @@ def udparsing(readfile, url, lang, name, path, model = models[lang][0]):
         we want to use. If unspecified, it's the 1st
         model from the models dictionary.
     """
+    model = models[lang][0]
     starters = ['<p>', '</p><p>', '<title>', '<h']
     api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
     f = open(readfile)
@@ -77,8 +78,7 @@ def udparsing(readfile, url, lang, name, path, model = models[lang][0]):
                 cleantext = BeautifulSoup(texto, "html.parser").text
                 cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
                 cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
-                cleantext = cleantext.strip()
-                cleantext = cleantext.replace(u'\u200b', '') # remove this character
+                cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
                 if len(cleantext) != 0:
                     myobj = {'data' : cleantext, 'model' : model,'tokenizer' : 'ranges', 'tagger' : '', 'parser' : ''}
                     x = requests.post(api_url, data = myobj)
