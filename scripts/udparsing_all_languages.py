@@ -173,7 +173,7 @@ def parse_all(link, lang_codes, models, path):
       - path: path where we save the articles
     """
     dir_name = link.split('/')[1]
-    new_path = f'{path}results/{dir_name}/'
+    new_path = f'{path}data/{dir_name}/'
     os.mkdir(new_path)
     print(f'----------Created the folder {dir_name}----------')
 
@@ -199,8 +199,8 @@ if __name__ == '__main__':
     lang_codes = get_wiki_lang_codes()
     articles = get_articles()
 
-    os.mkdir(f'{args.path}/results')
-    print('----------Created the folder results----------')
+    os.mkdir(f'{args.path}/data')
+    print('----------Created the folder data----------')
 
     for article_name, tup in articles.items():
         _, link = tup
