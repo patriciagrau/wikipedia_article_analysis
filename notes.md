@@ -48,3 +48,9 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
   - TO DO!! I did not finish that sentence
 - gold standard: I am writing all the lemmas in lower - should I? E.g. Russia russia -> decided to keep them capitalised
 - gold standard: "the ninth-most populous country" --> how do you analyse this?!
+
+11/02
+
+- The script took forever to parse! (~20h?) But it kind of makes sense because there were a bunch of articles (61) in a bunch of languages (50-60) and calling an API is slow.
+- gold standard: what is "second" in "second-largest city..."??? line 21 in empty_russia.conllu file. I wrote ADV because it modifies and adjective but that could be discussed...
+- gold standard: line 225 "Orthodox Christianity" --> I put 'Orthodox' as an adjective, so an amod to Christianity, but it could be a flat or a compound???
