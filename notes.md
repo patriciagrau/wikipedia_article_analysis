@@ -56,7 +56,7 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 
 - The script took forever to parse! (~20h?) But it kind of makes sense because there were a bunch of articles (61) in a bunch of languages (50-60) (total minimum of 30000) and calling an API is slow.
 - gold standard: what is "second" in "second-largest city..."??? line 21 in empty_russia.conllu file. I wrote ADV because it modifies and adjective but that could be discussed...
-- gold standard: line 225 "Orthodox Christianity" --> I put 'Orthodox' as an adjective, so an amod to Christianity, but it could be a flat or a compound???
+- gold standard: line 225 "Orthodox Christianity" --> compound?
 
 16/02
 
