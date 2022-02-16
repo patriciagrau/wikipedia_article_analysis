@@ -34,7 +34,7 @@ def empty(url, name, model, path = './'):
         tmp.seek(0)
         starters = ['<p>', '</p><p>', '<title>', '<h']
         api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
-        with open(f'{path}empty_{name}.conllu', 'w') as g:
+        with open(f'{path}empty_{name}_{model}.conllu', 'w') as g:
             for alltext in tmp.readlines():
                 texto = alltext.strip('\t')
                 if texto.startswith(tuple(starters)):
