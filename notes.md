@@ -47,10 +47,29 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - gold standard: How to analyse "Russia (Russian: Россия, tr. Rossiya, pronounced \[rɐˈsʲijə])..."?
   - TO DO!! I did not finish that sentence
 - gold standard: I am writing all the lemmas in lower - should I? E.g. Russia russia -> decided to keep them capitalised
-- gold standard: "the ninth-most populous country" --> how do you analyse this?!
+- gold standard: "the **ninth-most** populous country" --> how do you analyse this?!
+  - ninth ninth ADJ _ _ 3 advmod  _ _ 
+  - \- \- PUNCT _ _ 3 punct _ _
+  - most  most  ADV _ _ 4 advmod  _ _?
 
 11/02
 
-- The script took forever to parse! (~20h?) But it kind of makes sense because there were a bunch of articles (61) in a bunch of languages (50-60) and calling an API is slow.
+- The script took forever to parse! (~20h?) But it kind of makes sense because there were a bunch of articles (61) in a bunch of languages (50-60) (total minimum of 30000) and calling an API is slow.
 - gold standard: what is "second" in "second-largest city..."??? line 21 in empty_russia.conllu file. I wrote ADV because it modifies and adjective but that could be discussed...
 - gold standard: line 225 "Orthodox Christianity" --> I put 'Orthodox' as an adjective, so an amod to Christianity, but it could be a flat or a compound???
+
+16/02
+
+- gold standard: "Rus'" is the name of a place, but UDPipe separates it into Rus + '.
+- gold standard: "Grand Duchy" I went with compound because it seems ot have a head, but if somebody argues it could be a flat expression, I could agree with them.
+- gold standard: "15th century" --> based on some other UD file, I said that 15th is an amod of century, but could it also be a nummod or a flat (date)??
+- gold standard: "Russian Empire" --> I said compound of PROPN, because it's capitalised, there is a head... but could be amod and ADJ + NOUN?
+- gold standard: line 306 - "[...]the Russian SFSR became the largest and leading **constituent** of the Soviet Union[...]" --> "It became that." --> xcomp? (not obj, right?)
+- gold standard: "The Soviet era saw **some** of the most significant technological achievements of the 20th century, **including** the world's first human-made satellite and the launching of the first human in space." 
+  - is *some* a det or a noun? I would say det, but then it is an object of *saw*, which is confusing. 
+  - I said that *including* is a verb introducing an acl of *achievements*, but I saw that it could also have case as the dependency.
+- gold standard: "Following the dissolution of the Soviet Union in 1991, the newly independent Russian SFSR renamed itself the Russian Federation."
+  - Is the first part (before the comma) a subordinated clause (advcl) or is it an oblique?
+    - Can a VERB have "case" as their syntactic relation? I'm going to say yes based on what I've seen in other UD files.
+- gold standard: "universal healthcare system" amod compound root? or is it all compound? (line 513)
+- gold standard: "**natural** gas", amod or compound? (line 611)
