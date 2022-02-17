@@ -152,9 +152,10 @@ def udparsing(url, lang, name, path, getting_lang = False):
                 if texto.startswith(tuple(starters)):
                     cleantext = BeautifulSoup(texto, "html.parser").text
                     cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
+                    cleantext = re.sub(r'\[n. \d+\]', '', cleantext) # remove references [n. digit]
                     cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
                     cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
-                    if len(cleantext) != 0:
+                    if len(cleantext) != 0 and cleantext!='\n':
                         myobj = {'data' : cleantext, 'model' : model,'tokenizer' : '', 'tagger' : '', 'parser' : ''}
                         x = requests.post(api_url, data = myobj)
                         g.write(json.loads(x.text)['result'])
@@ -175,7 +176,7 @@ def parse_all(link, lang_codes, models, path):
     dir_name = link.split('/')[1]
     new_path = f'{path}data/{dir_name}/'
     os.mkdir(new_path)
-    print(f'----------Created the folder {dir_name}----------')
+    print(f'--------------------Created the folder {dir_name}--------------------')
 
     eng_link = f'http://en.wikipedia.org/{link}'
     
@@ -188,6 +189,7 @@ def parse_all(link, lang_codes, models, path):
         if lang in models: # only parse url if lang in UDPipe models
             udparsing(url, lang, f'{dir_name}-{lang}', new_path)
             print(f'----------Parsed {dir_name} in {lang}----------')
+    print()
     
     
 if __name__ == '__main__':
@@ -200,7 +202,7 @@ if __name__ == '__main__':
     articles = get_articles()
 
     os.mkdir(f'{args.path}/data')
-    print('----------Created the folder data----------')
+    print('--------------------Created the folder data--------------------')
 
     for article_name, tup in articles.items():
         _, link = tup

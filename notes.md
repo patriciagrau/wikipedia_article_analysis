@@ -37,7 +37,7 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - TO DO!! All the sentences are parsed as sentence_id = 1. Fix this! I should probably put everything together?
   - It's different when I run it from the website itself! But (I think) I put the same options? So, why?
 - Some references (e.g. \[a]) are kept in the text. This affects the separation of sentences. Fix this! Fixed!
-- TO DO!! Remove captions!!
+- ~~TO DO!!~~ Remove captions!! I don't think I take them now?
 
 10/02
 
@@ -46,6 +46,8 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - Started script for all files.
 - gold standard: How to analyse "Russia (Russian: Россия, tr. Rossiya, pronounced \[rɐˈsʲijə])..."?
   - TO DO!! I did not finish that sentence
+  - POS of Федера́ция? dependency is flat/apposition?
+  - How to do text in other languages, transcriptions...?
 - gold standard: I am writing all the lemmas in lower - should I? E.g. Russia russia -> decided to keep them capitalised
 - gold standard: "the **ninth-most** populous country" --> how do you analyse this?!
   - ninth ninth ADJ _ _ 3 advmod  _ _ 
@@ -73,3 +75,15 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
     - Can a VERB have "case" as their syntactic relation? I'm going to say yes based on what I've seen in other UD files.
 - gold standard: "universal healthcare system" amod compound root? or is it all compound? (line 513)
 - gold standard: "**natural** gas", amod or compound? (line 611)
+
+17/02
+
+- gold standard: working on Spanish - the references in Spanish are \[n. 1] instead of \[1] - they were not eliminated when "cleaning" the text. I am going to remove them and rewrite the documents.
+  - Started at 14:44
+- gold standard: "Rusia, \[...] conocida como Federación de Rusia" --> I said that "como" is an ADP following other UD documents that we had for Computational Syntax, but I am very unsure about it (it's not part of the list of prep we learn in school, it sounds more like an ADV, but then I don't know how to analyse it).
+- gold standard: Spanish, what do I do with "del"? Contraction of "de" + "el" --> In CompSyn we would separate them, but they are not separated in UDPipe. Should I separate it? So far, I have separated it but this will detect more errors in the UDPipe analysis.
+- gold standard: "Asia del Norte" --> I said PROPN de el PROPN
+- gold standard: xcomp?
+  - "equivalente a **algo más**" --> x comp? (line 116)
+- gold standard: "formada por **ochenta y cinco sujetos federales**" (line 170) --> formada por is fixed... but obl?
+- gold standard: is "exist" a root or is it a cop? (line 202)

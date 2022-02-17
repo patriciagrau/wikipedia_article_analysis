@@ -40,10 +40,11 @@ def empty(url, name, model, path = './'):
                 if texto.startswith(tuple(starters)):
                     cleantext = BeautifulSoup(texto, "html.parser").text
                     cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
+                    cleantext = re.sub(r'\[n. \d+\]', '', cleantext) # remove references [n. digit]
                     cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
                     cleantext = cleantext.replace(u'\u200b', '') # remove this character
                     cleantext = cleantext.strip()
-                    if len(cleantext) != 0:
+                    if len(cleantext) != 0 and cleantext != '\n':
                         myobj = {'data' : cleantext, 'model' : model,'tokenizer' : ''}
                         x = requests.post(api_url, data = myobj)
                         g.write(json.loads(x.text)['result'])
