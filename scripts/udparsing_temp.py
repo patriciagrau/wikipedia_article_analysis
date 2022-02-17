@@ -65,6 +65,7 @@ def udparsing(url, lang, name, path):
                     cleantext = BeautifulSoup(texto, "html.parser").text
                     cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
                     cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
+                    cleantext = re.sub(r'\[n. \d+\]', '', cleantext) # remove references [n. digit]
                     cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
                     if len(cleantext) != 0:
                         myobj = {'data' : cleantext, 'model' : model,'tokenizer' : '', 'tagger' : '', 'parser' : ''}
