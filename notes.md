@@ -57,33 +57,43 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 11/02
 
 - The script took forever to parse! (~20h?) But it kind of makes sense because there were a bunch of articles (61) in a bunch of languages (50-60) (total minimum of 30000) and calling an API is slow.
-- gold standard: what is "second" in "second-largest city..."??? line 21 in empty_russia.conllu file. I wrote ADV because it modifies and adjective but that could be discussed...
-- gold standard: line 225 "Orthodox Christianity" --> compound?
+- gold standard English: what is "second" in "second-largest city..."??? line 21 in empty_russia.conllu file. I wrote ADV because it modifies and adjective but that could be discussed...
+- gold standard English: line 225 "Orthodox Christianity" --> compound?
 
 16/02
 
-- gold standard: "Rus'" is the name of a place, but UDPipe separates it into Rus + '.
-- gold standard: "Grand Duchy" I went with compound because it seems ot have a head, but if somebody argues it could be a flat expression, I could agree with them.
-- gold standard: "15th century" --> based on some other UD file, I said that 15th is an amod of century, but could it also be a nummod or a flat (date)??
-- gold standard: "Russian Empire" --> I said compound of PROPN, because it's capitalised, there is a head... but could be amod and ADJ + NOUN?
-- gold standard: line 306 - "[...]the Russian SFSR became the largest and leading **constituent** of the Soviet Union[...]" --> "It became that." --> xcomp? (not obj, right?)
-- gold standard: "The Soviet era saw **some** of the most significant technological achievements of the 20th century, **including** the world's first human-made satellite and the launching of the first human in space." 
+- gold standard English: "Rus'" is the name of a place, but UDPipe separates it into Rus + '.
+- gold standard English: "Grand Duchy" I went with compound because it seems ot have a head, but if somebody argues it could be a flat expression, I could agree with them.
+- gold standard English: "15th century" --> based on some other UD file, I said that 15th is an amod of century, but could it also be a nummod or a flat (date)??
+- gold standard English: "Russian Empire" --> I said compound of PROPN, because it's capitalised, there is a head... but could be amod and ADJ + NOUN?
+- gold standard English: line 306 - "[...]the Russian SFSR became the largest and leading **constituent** of the Soviet Union[...]" --> "It became that." --> xcomp? (not obj, right?)
+- gold standard English: "The Soviet era saw **some** of the most significant technological achievements of the 20th century, **including** the world's first human-made satellite and the launching of the first human in space." 
   - is *some* a det or a noun? I would say det, but then it is an object of *saw*, which is confusing. 
   - I said that *including* is a verb introducing an acl of *achievements*, but I saw that it could also have case as the dependency.
-- gold standard: "Following the dissolution of the Soviet Union in 1991, the newly independent Russian SFSR renamed itself the Russian Federation."
+- gold standard English: "Following the dissolution of the Soviet Union in 1991, the newly independent Russian SFSR renamed itself the Russian Federation."
   - Is the first part (before the comma) a subordinated clause (advcl) or is it an oblique?
     - Can a VERB have "case" as their syntactic relation? I'm going to say yes based on what I've seen in other UD files.
-- gold standard: "universal healthcare system" amod compound root? or is it all compound? (line 513)
-- gold standard: "**natural** gas", amod or compound? (line 611)
+- gold standard English: "universal healthcare system" amod compound root? or is it all compound? (line 513)
+- gold standard English: "**natural** gas", amod or compound? (line 611)
 
 17/02
 
-- gold standard: working on Spanish - the references in Spanish are \[n. 1] instead of \[1] - they were not eliminated when "cleaning" the text. I am going to remove them and rewrite the documents.
+- gold standard Spanish: working on Spanish - the references in Spanish are \[n. 1] instead of \[1] - they were not eliminated when "cleaning" the text. I am going to remove them and rewrite the documents.
   - Started at 14:44
-- gold standard: "Rusia, \[...] conocida como Federación de Rusia" --> I said that "como" is an ADP following other UD documents that we had for Computational Syntax, but I am very unsure about it (it's not part of the list of prep we learn in school, it sounds more like an ADV, but then I don't know how to analyse it).
-- gold standard: Spanish, what do I do with "del"? Contraction of "de" + "el" --> In CompSyn we would separate them, but they are not separated in UDPipe. Should I separate it? So far, I have separated it but this will detect more errors in the UDPipe analysis.
-- gold standard: "Asia del Norte" --> I said PROPN de el PROPN
-- gold standard: xcomp?
+- gold standard Spanish: "Rusia, \[...] conocida como Federación de Rusia" --> I said that "como" is an ADP following other UD documents that we had for Computational Syntax, but I am very unsure about it (it's not part of the list of prep we learn in school, it sounds more like an ADV, but then I don't know how to analyse it).
+  - same in line 440, 475
+- gold standard Spanish:what do I do with "del"? Contraction of "de" + "el" --> In CompSyn we would separate them, but they are not separated in UDPipe. Should I separate it? So far, I have separated it but this will detect more errors in the UDPipe analysis.
+- gold standard Spanish: "Asia del Norte" --> I said PROPN de el PROPN
+- gold standard Spanish: xcomp?
   - "equivalente a **algo más**" --> x comp? (line 116)
-- gold standard: "formada por **ochenta y cinco sujetos federales**" (line 170) --> formada por is fixed... but obl?
-- gold standard: is "exist" a root or is it a cop? (line 202)
+- gold standard Spanish: "formada por **ochenta y cinco sujetos federales**" (line 170) --> formada por is fixed... but obl?
+- gold standard Spanish: is "exist" a root or is it a cop? (line 202)
+
+18/02
+
+- gold standard Spanish: "República Popular China" PROPN PROPN PROPN or PROPN ADJ PROPN?
+- gold standard Spanish: "limita con los siguientes países: bla, ble, bli..." parataxis? appos?
+- gold standard Spanish: line 471 --> two sentences were not separated because the full stop of aC and the end of the sentence is the same. 
+- gold standard Spanish: "llamados varegos" --> I put llamados as cop and varegos as acl, based on another UD file, but at the beginning I had that llamados was an acl and varegos an xcomp. Which one?
+- gold standard Spanish: "adoptaron el cristianismo, producto de..." --> appos? xcomp?
+- gold standard Spanish: line 615, should we separate the PROPN "Vladímir-Súzdal"? I separated it and put it as flat.
