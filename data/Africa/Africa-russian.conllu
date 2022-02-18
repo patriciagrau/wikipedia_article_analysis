@@ -3,12 +3,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -184,18 +178,18 @@
 12	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 6
-# text = Население — 1,38 млрд чел.
-1	Население	население	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	SpacesAfter= 
-2	—	—	PUNCT	_	_	1	punct	_	_
+# text = Население составляет 1,38 млрд чел.
+1	Население	население	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	составляет	составлять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	1,38	1,38	NUM	_	_	4	nummod	_	SpacesAfter= 
-4	млрд	миллиард	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	0	root	_	_
-5	чел	чел	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
-6	.	.	PUNCT	_	_	5	punct	_	_
+4	млрд	миллиард	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nummod:gov	_	_
+5	чел	чел	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 7
-# text = (9 сентября 2021 года; 18,2 % населения Земли), таким образом, оно сравнимо с самыми населёнными государствами мира — Китаем и Индией.
+# text = (9 сентября 2021 года; 18,2 % населения Земли) и, таким образом, сравнимо с самыми населёнными государствами мира — Китаем и Индией.
 1	(	(	PUNCT	_	_	2	punct	_	SpaceAfter=No
-2	9	9	NUM	_	_	17	nummod	_	_
+2	9	9	NUM	_	_	0	root	_	_
 3	сентября	сентябрь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	flat	_	_
 4	2021	2021	NUM	_	_	5	nummod	_	_
 5	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
@@ -204,13 +198,13 @@
 8	%	%	SYM	_	_	2	conj	_	_
 9	населения	население	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
 10	Земли	Земля	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
-11	)	)	PUNCT	_	_	2	punct	_	SpaceAfter=No
-12	,	,	PUNCT	_	_	17	punct	_	_
-13	таким	такой	DET	_	Case=Ins|Gender=Masc|Number=Sing	14	det	_	_
-14	образом	образ	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	17	parataxis	_	SpaceAfter=No
-15	,	,	PUNCT	_	_	14	punct	_	_
-16	оно	оно	PRON	_	Case=Nom|Gender=Neut|Number=Sing|Person=3	17	nsubj	_	_
-17	сравнимо	сравнимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	0	root	_	_
+11	)	)	PUNCT	_	_	2	punct	_	_
+12	и	и	CCONJ	_	_	17	cc	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	_	_
+14	таким	такой	DET	_	Case=Ins|Gender=Masc|Number=Sing	15	det	_	_
+15	образом	образ	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	17	parataxis	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	_	_
+17	сравнимо	сравнимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	2	conj	_	_
 18	с	с	ADP	_	_	21	case	_	_
 19	самыми	самый	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	20	amod	_	_
 20	населёнными	населенный	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	21	amod	_	_
@@ -220,7 +214,7 @@
 24	Китаем	Китай	PROPN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	21	parataxis	_	_
 25	и	и	CCONJ	_	_	26	cc	_	_
 26	Индией	Индия	PROPN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	24	conj	_	SpaceAfter=No
-27	.	.	PUNCT	_	_	17	punct	_	SpacesAfter=\s\n
+27	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -781,7 +775,7 @@
 23	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 6
-# text = Спорными считаются керамические сосуды, найденные в Гоби, датируемые 150 тыс. до н. э.[источник не указан 488 дней]
+# text = Спорными считаются керамические сосуды, найденные в Гоби, датируемые 150 тыс. до н. э.[источник не указан 496 дней]
 1	Спорными	спорный	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	2	obl	_	_
 2	считаются	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 3	керамические	керамический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	4	amod	_	_
@@ -801,7 +795,7 @@
 17	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	19	nsubj:pass	_	_
 18	не	не	PART	_	_	19	advmod	_	_
 19	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	2	parataxis	_	_
-20	488	488	NUM	_	_	21	nummod	_	_
+20	496	496	NUM	_	_	21	nummod	_	_
 21	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	19	obl	_	SpaceAfter=No
 22	]	]	PUNCT	_	_	19	punct	_	SpacesAfter=\n
 
@@ -6667,9 +6661,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -10895,39 +10886,3 @@
 # text = Навигация
 1	Навигация	навигация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA

@@ -3,12 +3,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -692,7 +686,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In 1949, the Council of Europe was founded with the idea of unifying Europe to achieve common goals and prevent future wars.
+# text = In 1949, the Council of Europe was founded with the idea of unifying Europe[citation needed] to achieve common goals and prevent future wars.
 1	In	in	ADP	IN	_	2	case	_	_
 2	1949	1949	NUM	CD	NumType=Card	9	obl	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	9	punct	_	_
@@ -707,16 +701,20 @@
 12	idea	idea	NOUN	NN	Number=Sing	9	obl	_	_
 13	of	of	SCONJ	IN	_	14	mark	_	_
 14	unifying	unify	VERB	VBG	VerbForm=Ger	12	acl	_	_
-15	Europe	Europe	PROPN	NNP	Number=Sing	14	obj	_	_
-16	to	to	PART	TO	_	17	mark	_	_
-17	achieve	achieve	VERB	VB	VerbForm=Inf	14	advcl	_	_
-18	common	common	ADJ	JJ	Degree=Pos	19	amod	_	_
-19	goals	goal	NOUN	NNS	Number=Plur	17	obj	_	_
-20	and	and	CCONJ	CC	_	21	cc	_	_
-21	prevent	prevent	VERB	VB	VerbForm=Inf	17	conj	_	_
-22	future	future	ADJ	JJ	Degree=Pos	23	amod	_	_
-23	wars	war	NOUN	NNS	Number=Plur	21	obj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	9	punct	_	_
+15	Europe	Europe	PROPN	NNP	Number=Sing	14	obj	_	SpaceAfter=No
+16	[	[	PUNCT	-LRB-	_	17	punct	_	SpaceAfter=No
+17	citation	citation	NOUN	NN	Number=Sing	14	parataxis	_	_
+18	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	17	acl	_	SpaceAfter=No
+19	]	]	PUNCT	-RRB-	_	17	punct	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	achieve	achieve	VERB	VB	VerbForm=Inf	14	advcl	_	_
+22	common	common	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	goals	goal	NOUN	NNS	Number=Plur	21	obj	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	prevent	prevent	VERB	VB	VerbForm=Inf	21	conj	_	_
+26	future	future	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	wars	war	NOUN	NNS	Number=Plur	25	obj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 2
 # text = Further European integration by some states led to the formation of the European Union (EU), a separate political entity that lies between a confederation and a federation.
@@ -857,9 +855,6 @@
 # text = Name
 1	Name	name	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -4381,7 +4376,35 @@
 51	7th	7th	ADJ	JJ	Degree=Pos|NumType=Ord	52	amod	_	_
 52	century	century	NOUN	NN	Number=Sing	53	compound	_	_
 53	CE	ce	NOUN	NN	Number=Sing	45	nmod	_	SpaceAfter=No
-54	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+54	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 9
+# text = During most of its existence, the Byzantine Empire was one of the most powerful economic, cultural, and military forces in Europe.
+1	During	during	ADP	IN	_	2	case	_	_
+2	most	most	ADJ	JJS	Degree=Sup	11	nmod	_	_
+3	of	of	ADP	IN	_	5	case	_	_
+4	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	_
+5	existence	existence	NOUN	NN	Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	Byzantine	Byzantine	PROPN	NNP	Number=Sing	9	compound	_	_
+9	Empire	Empire	PROPN	NNP	Number=Sing	11	nsubj	_	_
+10	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_
+11	one	one	NUM	CD	NumType=Card	0	root	_	_
+12	of	of	ADP	IN	_	22	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+14	most	most	ADV	RBS	_	15	advmod	_	_
+15	powerful	powerful	ADJ	JJ	Degree=Pos	22	amod	_	_
+16	economic	economic	ADJ	JJ	Degree=Pos	22	amod	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	cultural	cultural	ADJ	JJ	Degree=Pos	16	conj	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	military	military	ADJ	JJ	Degree=Pos	16	conj	_	_
+22	forces	force	NOUN	NNS	Number=Plur	11	nmod	_	_
+23	in	in	ADP	IN	_	24	case	_	_
+24	Europe	Europe	PROPN	NNP	Number=Sing	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9560,7 +9583,7 @@
 9	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 2
-# text = In 1949 the Council of Europe was founded, following a speech by Sir Winston Churchill, with the idea of unifying Europe to achieve common goals.
+# text = In 1949 the Council of Europe was founded, following a speech by Sir Winston Churchill, with the idea of unifying Europe[citation needed] to achieve common goals.
 1	In	in	ADP	IN	_	2	case	_	_
 2	1949	1949	NUM	CD	NumType=Card	8	obl	_	_
 3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
@@ -9583,12 +9606,16 @@
 20	idea	idea	NOUN	NN	Number=Sing	8	obl	_	_
 21	of	of	SCONJ	IN	_	22	mark	_	_
 22	unifying	unify	VERB	VBG	VerbForm=Ger	20	acl	_	_
-23	Europe	Europe	PROPN	NNP	Number=Sing	22	obj	_	_
-24	to	to	PART	TO	_	25	mark	_	_
-25	achieve	achieve	VERB	VB	VerbForm=Inf	22	advcl	_	_
-26	common	common	ADJ	JJ	Degree=Pos	27	amod	_	_
-27	goals	goal	NOUN	NNS	Number=Plur	25	obj	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	8	punct	_	_
+23	Europe	Europe	PROPN	NNP	Number=Sing	22	obj	_	SpaceAfter=No
+24	[	[	PUNCT	-LRB-	_	25	punct	_	SpaceAfter=No
+25	citation	citation	NOUN	NN	Number=Sing	22	parataxis	_	_
+26	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	25	acl	_	SpaceAfter=No
+27	]	]	PUNCT	-RRB-	_	25	punct	_	_
+28	to	to	PART	TO	_	29	mark	_	_
+29	achieve	achieve	VERB	VB	VerbForm=Inf	22	advcl	_	_
+30	common	common	ADJ	JJ	Degree=Pos	31	amod	_	_
+31	goals	goal	NOUN	NNS	Number=Plur	29	obj	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 3
 # text = It includes all European states except for Belarus and Vatican City.
@@ -10383,9 +10410,6 @@
 22	C	c	NOUN	NN	Number=Sing	21	nummod	_	SpaceAfter=No
 23	)	)	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12082,9 +12106,6 @@
 28	states	state	NOUN	NNS	Number=Plur	23	conj	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -15617,39 +15638,3 @@
 1	Navigation	navigation	NOUN	NN	Number=Sing	2	compound	_	_
 2	menu	menu	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA

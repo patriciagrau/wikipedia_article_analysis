@@ -3,12 +3,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -1293,7 +1287,25 @@
 18	الفصل	فَصل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	_
 19	الدراسي	دِرَاسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	18	amod	_	_
 20	الأول	أَوَّل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
+21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 3
+# text = وفي يوليو 1888 أنجبت زوجته كاستوربا ابنهما "هاريلال".
+1-2	وفي	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	يوليو	يُولِيُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
+4	1888	1888	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+5	أنجبت	أَنجَب	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+6-7	زوجته	_	_	_	_	_	_	_	_
+6	زوجة	زَوجَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	nsubj	_	_
+7	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nmod	_	_
+8	كاستوربا	كاستوربا	X	U---------	_	6	nmod	_	_
+9	ابنهما	ابنهما	X	U---------	_	5	obj	_	_
+10	"	"	PUNCT	G---------	_	11	punct	_	SpaceAfter=No
+11	هاريلال	هاريلال	X	U---------	_	9	nmod	_	SpaceAfter=No
+12	"	"	PUNCT	G---------	_	11	punct	_	SpaceAfter=No
+13	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1317,80 +1329,363 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = سافر غاندي إلى بريطانيا عام 1882 لدراسة القانون، وعاش في الشهور الأولى من إقامته في لندن في حال من الضياع وعدم التوازن، والرغبة في أن يكون رجلاً إنجليزياً نبيلاً.
-1	سافر	سَافَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+# text = بدأَ غاندي بالتفكير في الرحيل إلى إنجلترا بَعد أن نصحه صديق العائلة "مافجي دافي" بدراسة القَانُون في لندن، ووجد من أهله مُعارضة كَبِيرَة، لخشيتهم عليه من الوقوع في الغوايات الّتِي يقع فِيهَا الشاب الأجنبي في وَسَط متمدن مِثل لندن، وسمحت لَه والدته بالسفر بَعد تعهده بِعَدَم شرب الخمر وأكل اللحوم وتجنُّب النِساء.
+1	بدأَ	بدَأََ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	غاندي	غاندي	X	U---------	_	1	nsubj	_	_
-3	إلى	إِلَى	ADP	P---------	AdpType=Prep	4	case	_	_
-4	بريطانيا	برِيطَانِيَا	X	X---------	Foreign=Yes	1	obl	_	_
-5	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obl	_	_
-6	1882	1882	NUM	Q---------	NumForm=Digit	5	nummod	_	_
-7-8	لدراسة	_	_	_	_	_	_	_	_
-7	ل	لِ	ADP	P---------	AdpType=Prep	8	case	_	_
-8	دراسة	دِرَاسَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
-9	القانون	قَانُون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	SpaceAfter=No
-10	،	،	PUNCT	G---------	_	9	punct	_	_
-11	وعاش	وَعَاش	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
-12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
-13	الشهور	شَهر	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	obl	_	_
-14	الأولى	أَوَّل	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	_
-15	من	مِن	ADP	P---------	AdpType=Prep	16	case	_	_
-16-17	إقامته	_	_	_	_	_	_	_	_
-16	إقامة	إِقَامَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	nmod	_	_
+3-4	بالتفكير	_	_	_	_	_	_	_	_
+3	ب	بِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	التفكير	تَفكِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	الرحيل	رَحِيل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+7	إلى	إِلَى	ADP	P---------	AdpType=Prep	8	case	_	_
+8	إنجلترا	إِنجِلتِرَا	X	X---------	Foreign=Yes	6	nmod	_	_
+9	بَعد	بََعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	mark	_	_
+10	أن	أَن	SCONJ	C---------	_	11	mark	_	_
+11-12	نصحه	_	_	_	_	_	_	_	_
+11	نصح	نَصَح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	advcl	_	_
+12	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+13	صديق	صَدِيق	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	11	nsubj	_	_
+14	العائلة	عَائِلَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15	"	"	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
+16	مافجي	مافجي	X	U---------	_	17	nmod	_	_
+17	دافي	دافي	X	U---------	_	13	nmod	_	SpaceAfter=No
+18	"	"	PUNCT	G---------	_	17	punct	_	_
+19-20	بدراسة	_	_	_	_	_	_	_	_
+19	ب	بِ	ADP	P---------	AdpType=Prep	20	case	_	_
+20	دراسة	دِرَاسَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	obl:arg	_	_
+21	القَانُون	القَانُون	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	20	nmod	_	_
+22	في	فِي	ADP	P---------	AdpType=Prep	23	case	_	_
+23	لندن	لَندَن	X	X---------	Foreign=Yes	20	nmod	_	SpaceAfter=No
+24	،	،	PUNCT	G---------	_	23	punct	_	SpacesAfter=\s\s
+25	ووجد	ووجد	X	U---------	_	1	conj	_	_
+26	من	مِن	ADP	P---------	AdpType=Prep	27	case	_	_
+27-28	أهله	_	_	_	_	_	_	_	_
+27	أهل	أَهل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	25	obl:arg	_	_
+28	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nmod	_	_
+29	مُعارضة	مَُُعارَضَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
+30	كَبِيرَة	كََبِِيرَِّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	29	amod	_	SpaceAfter=No
+31	،	،	PUNCT	G---------	_	30	punct	_	_
+32-33	لخشيتهم	_	_	_	_	_	_	_	_
+32	لخشية	لَخشِيَّة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	25	obj	_	_
+33	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	32	nmod	_	_
+34-35	عليه	_	_	_	_	_	_	_	_
+34	علي	عَلَى	ADP	P---------	AdpType=Prep	35	case	_	_
+35	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obl:arg	_	_
+36	من	مِن	ADP	P---------	AdpType=Prep	37	case	_	_
+37	الوقوع	وُقُوع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	obl:arg	_	_
+38	في	فِي	ADP	P---------	AdpType=Prep	39	case	_	_
+39	الغوايات	غِوَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	37	nmod	_	_
+40	الّتِي	َّتِِّ	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	41	nsubj	_	_
+41	يقع	وَقَع	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	39	acl:relcl	_	_
+42	فِيهَا	فِيهَا	X	U---------	_	41	obj	_	_
+43	الشاب	شَابّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	41	nsubj	_	_
+44	الأجنبي	أَجنَبِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	43	amod	_	_
+45	في	فِي	ADP	P---------	AdpType=Prep	46	case	_	_
+46	وَسَط	وَُُسَط	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	41	obl	_	_
+47	متمدن	مُتَمَدِّن	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	46	nmod	_	_
+48	مِثل	مَُِثَّل	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	47	amod	_	_
+49	لندن	لَندَن	X	X---------	Foreign=Yes	46	nmod	_	SpaceAfter=No
+50	،	،	PUNCT	G---------	_	49	punct	_	_
+51	وسمحت	وسمحت	X	U---------	_	1	conj	_	_
+52	لَه	لَه	X	U---------	_	51	obj	_	_
+53-54	والدته	_	_	_	_	_	_	_	_
+53	والدة	وَالِدَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	51	nsubj	_	_
+54	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	53	nmod	_	_
+55-56	بالسفر	_	_	_	_	_	_	_	_
+55	ب	بِ	ADP	P---------	AdpType=Prep	56	case	_	_
+56	السفر	سَفَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	51	obl:arg	_	_
+57	بَعد	بََعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	58	case	_	_
+58-59	تعهده	_	_	_	_	_	_	_	_
+58	تعهد	تَعَهُّد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	51	obl	_	_
+59	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	58	nmod	_	_
+60	بِعَدَم	بِعَدَم	ADP	P---------	AdpType=Prep	61	case	_	_
+61	شرب	شُرب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	58	nmod	_	_
+62	الخمر	خَمر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	61	nmod	_	_
+63-64	وأكل	_	_	_	_	_	_	_	_
+63	و	وَ	CCONJ	C---------	_	64	cc	_	_
+64	أكل	أَكل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	61	conj	_	_
+65	اللحوم	لَحم	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	64	nmod	_	_
+66	وتجنُّب	وتجنُّب	X	U---------	_	61	conj	_	_
+67	النِساء	نِِسَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	66	nmod	_	SpaceAfter=No
+68	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = غادر غاندي بوربندر في 10 أغسطس 1888 متوجهاً إلى بومباي، وفيها عقدت طائفته اجتماعًا واستدعته للمثول أمامها وأخبروه بأنهم لَا يقبلوا ذهابه لإنجلترا وأنَّ ذَلِك مُخالف لدينهم، وأنه يستحيل الالتِزَام باحكام الدين في إنجلترا، وَلَم تقبل الطائفة مبرراته وحصوله على موافقة والدته، وأثار غاندي غضبهم عَندَمَا طلب منهم عَدَم التدخل في شأنه، وأعتبروه خارجًا عَن الطائفة، وفرضوا غرامة ماليَّة على كلّ من يساعده في سفره.
+1	غادر	غَادَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	غاندي	غاندي	X	U---------	_	3	nmod	_	_
+3	بوربندر	بوربندر	X	U---------	_	1	nsubj	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	10	10	NUM	Q---------	NumForm=Digit	1	obl	_	_
+6	أغسطس	أَغُسطُس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	nmod	_	_
+7	1888	1888	NUM	Q---------	NumForm=Digit	6	nummod	_	_
+8	متوجهاً	مُتَوَجِّه	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	xcomp	_	_
+9	إلى	إِلَى	ADP	P---------	AdpType=Prep	10	case	_	_
+10	بومباي	بومباي	X	X---------	Foreign=Yes	8	obl	_	SpaceAfter=No
+11	،	،	PUNCT	G---------	_	10	punct	_	_
+12-14	وفيها	_	_	_	_	_	_	_	_
+12	و	وَ	CCONJ	C---------	_	15	cc	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obl	_	_
+15	عقدت	عَقَد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+16-17	طائفته	_	_	_	_	_	_	_	_
+16	طائفت	طَائَف	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	15	nsubj	_	_
 17	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nmod	_	_
-18	في	فِي	ADP	P---------	AdpType=Prep	19	case	_	_
-19	لندن	لَندَن	X	X---------	Foreign=Yes	16	nmod	_	_
-20	في	فِي	ADP	P---------	AdpType=Prep	21	case	_	_
-21	حال	حَال	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
-22	من	مِن	ADP	P---------	AdpType=Prep	23	case	_	_
-23	الضياع	ضِيَاع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	_
-24-25	وعدم	_	_	_	_	_	_	_	_
+18	اجتماعًا	اِجتِمَاع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
+19-20	واستدعته	_	_	_	_	_	_	_	_
+19	واستدعت	واستدعت	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	18	acl	_	_
+20	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+21	للمثول	مُثُول	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	19	nsubj	_	_
+22-23	أمامها	_	_	_	_	_	_	_	_
+22	أمام	أَمَامَ	ADP	PI------4-	AdpType=Prep|Case=Acc	23	case	_	_
+23	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+24	وأخبروه	وأخبروه	X	U---------	_	19	conj	_	_
+25-27	بأنهم	_	_	_	_	_	_	_	_
+25	ب	بِ	ADP	P---------	AdpType=Prep	29	mark	_	_
+26	أن	أَنَّ	SCONJ	C---------	_	29	mark	_	_
+27	هم	هُوَ	PRON	SP---3MP4-	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	29	nsubj	_	_
+28	لَا	لََِا	PART	F---------	_	29	advmod	_	_
+29	يقبلوا	قَبِل	VERB	VIIA-3MP--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	19	ccomp	_	_
+30-31	ذهابه	_	_	_	_	_	_	_	_
+30	ذهاب	ذَهَاب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	29	obj	_	_
+31	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	nmod	_	_
+32-33	لإنجلترا	_	_	_	_	_	_	_	_
+32	ل	لِ	ADP	P---------	AdpType=Prep	33	case	_	_
+33	إنجلترا	إِنجِلتِرَا	X	X---------	Foreign=Yes	30	nmod	_	_
+34	وأنَّ	وأنَّ	CCONJ	C---------	_	36	mark	_	_
+35	ذَلِك	ذَلِك	X	U---------	_	36	nsubj	_	_
+36	مُخالف	مُُخاَلِف	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	29	obl	_	_
+37-38	لدينهم	_	_	_	_	_	_	_	SpaceAfter=No
+37	لدين	لَدِين	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	36	nmod	_	_
+38	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	37	nmod	_	_
+39	،	،	PUNCT	G---------	_	38	punct	_	_
+40-42	وأنه	_	_	_	_	_	_	_	_
+40	و	وَ	CCONJ	C---------	_	43	cc	_	_
+41	أن	أَنَّ	SCONJ	C---------	_	43	mark	_	_
+42	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	nsubj	_	_
+43	يستحيل	اِستَحَال	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	29	conj	_	_
+44	الالتِزَام	الالتِزَام	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	43	obj	_	_
+45	باحكام	باحكام	NOUN	U---------	_	44	nmod	_	_
+46	الدين	دِين	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	45	nmod	_	_
+47	في	فِي	ADP	P---------	AdpType=Prep	48	case	_	_
+48	إنجلترا	إِنجِلتِرَا	X	X---------	Foreign=Yes	44	obl	_	SpaceAfter=No
+49	،	،	PUNCT	G---------	_	48	punct	_	_
+50	وَلَم	وَلَم	X	U---------	_	51	cc	_	_
+51	تقبل	قَبِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	43	conj	_	_
+52	الطائفة	طَائِفَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	51	nsubj	_	_
+53-54	مبرراته	_	_	_	_	_	_	_	_
+53	مبررات	مُبَرِّر	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	51	obj	_	_
+54	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	53	nmod	_	_
+55-57	وحصوله	_	_	_	_	_	_	_	_
+55	و	وَ	CCONJ	C---------	_	56	cc	_	_
+56	حصول	حُصُول	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	53	conj	_	_
+57	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	56	nmod	_	_
+58	على	عَلَى	ADP	P---------	AdpType=Prep	59	case	_	_
+59	موافقة	مُوَافَقَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	56	obl:arg	_	_
+60-61	والدته	_	_	_	_	_	_	_	SpaceAfter=No
+60	والدة	وَالِدَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	59	nmod	_	_
+61	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	60	nmod	_	_
+62	،	،	PUNCT	G---------	_	61	punct	_	_
+63	وأثار	وَأثَار	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+64	غاندي	غاندي	X	U---------	_	63	nsubj	_	_
+65-66	غضبهم	_	_	_	_	_	_	_	_
+65	غضب	غَضَب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	63	obj	_	_
+66	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	65	nmod	_	_
+67	عَندَمَا	اَِندَََم	CCONJ	C---------	_	68	mark	_	_
+68	طلب	طَلَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	63	advcl	_	_
+69-70	منهم	_	_	_	_	_	_	_	_
+69	من	مِن	ADP	P---------	AdpType=Prep	70	case	_	_
+70	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	68	obl:arg	_	_
+71	عَدَم	عَدَم	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	68	obj	_	_
+72	التدخل	تَدَخُّل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	71	nmod	_	_
+73	في	فِي	ADP	P---------	AdpType=Prep	74	case	_	_
+74-75	شأنه	_	_	_	_	_	_	_	SpaceAfter=No
+74	شأن	شَأن	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	72	nmod	_	_
+75	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	74	nmod	_	_
+76	،	،	PUNCT	G---------	_	75	punct	_	_
+77	وأعتبروه	وأعتبروه	X	U---------	_	82	cc	_	_
+78	خارجًا	خَارِج	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	82	xcomp	_	_
+79	عَن	عَََن	ADP	P---------	AdpType=Prep	80	case	_	_
+80	الطائفة	طَائِفَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	78	obl:arg	_	SpaceAfter=No
+81	،	،	PUNCT	G---------	_	80	punct	_	_
+82	وفرضوا	وفرضوا	X	VP-A-3MP--	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|Voice=Act	63	conj	_	_
+83	غرامة	غَرَامَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	82	obj	_	_
+84	ماليَّة	مَالِيَِّّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	83	amod	_	_
+85	على	عَلَى	ADP	P---------	AdpType=Prep	86	case	_	_
+86	كلّ	كِلَّ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	82	obl:arg	_	_
+87	من	مَن	DET	S---------	_	86	det	_	_
+88-89	يساعده	_	_	_	_	_	_	_	_
+88	يساعد	سَاعَد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	86	acl	_	_
+89	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	88	obj	_	_
+90	في	فِي	ADP	P---------	AdpType=Prep	91	case	_	_
+91-92	سفره	_	_	_	_	_	_	_	SpaceAfter=No
+91	سفر	سَفَر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	88	obl:arg	_	_
+92	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	91	nmod	_	_
+93	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = غادر غاندي بومباي في 4 سبتمبر 1888 إلى لندن، وعانى كثيرًا لاختيار طعامه حيثُ وجد غالبية الناس يأكلون اللحوم، وعرف مطعمًا نباتيًّا لزمه طُول إقامته في لندن.
+1	غادر	غَادَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	غاندي	غاندي	X	U---------	_	3	nmod	_	_
+3	بومباي	بومباي	X	U---------	_	1	nsubj	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	4	4	NUM	Q---------	NumForm=Digit	1	obl	_	_
+6	سبتمبر	سِبتَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	nmod	_	_
+7	1888	1888	NUM	Q---------	NumForm=Digit	6	nummod	_	_
+8	إلى	إِلَى	ADP	P---------	AdpType=Prep	9	case	_	_
+9	لندن	لَندَن	X	X---------	Foreign=Yes	1	obl	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	9	punct	_	SpacesAfter=\s\s\s
+11	وعانى	وعانى	X	U---------	_	1	obj	_	_
+12	كثيرًا	كَثِير	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	11	obl	_	_
+13-14	لاختيار	_	_	_	_	_	_	_	_
+13	ل	لِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	اختيار	اِختِيَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	obl:arg	_	_
+15-16	طعامه	_	_	_	_	_	_	_	_
+15	طعام	طِعَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	nmod	_	_
+16	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nmod	_	_
+17	حيثُ	حَيثُُ	CCONJ	C---------	_	18	mark	_	_
+18	وجد	وَجَد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	14	advcl	_	_
+19	غالبية	غَالِبِيَّة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	18	obj	_	_
+20	الناس	إِنسَان	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	19	nmod	_	_
+21	يأكلون	أَكَل	VERB	VIIA-3MP--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	18	xcomp	_	_
+22	اللحوم	لَحم	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	21	obj	_	SpaceAfter=No
+23	،	،	PUNCT	G---------	_	22	punct	_	_
+24-25	وعرف	_	_	_	_	_	_	_	_
 24	و	وَ	CCONJ	C---------	_	25	cc	_	_
-25	عدم	عَدَم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	23	conj	_	_
-26	التوازن	تَوَازُن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	25	nmod	_	SpaceAfter=No
-27	،	،	PUNCT	G---------	_	26	punct	_	_
-28-29	والرغبة	_	_	_	_	_	_	_	_
-28	و	وَ	CCONJ	C---------	_	29	cc	_	_
-29	الرغبة	رَغبَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	conj	_	_
-30	في	فِي	ADP	P---------	AdpType=Prep	33	case	_	_
-31	أن	أَن	SCONJ	C---------	_	33	mark	_	_
-32	يكون	كَان	AUX	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	33	cop	_	_
-33	رجلاً	رَجُل	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	29	ccomp	_	_
-34	إنجليزياً	إُنَجليزِي	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	33	amod	_	_
-35	نبيلاً	نَبِيل	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No
-36	.	.	PUNCT	G---------	_	1	punct	_	_
+25	عرف	عَرَف	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	18	conj	_	_
+26	مطعمًا	مَطعَم	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
+27	نباتيًّا	نِبَاتيًّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	26	amod	_	_
+28-29	لزمه	_	_	_	_	_	_	_	_
+28	لزم	لَزَّم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	26	acl	_	_
+29	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	obj	_	_
+30	طُول	طَُوَل	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	28	nsubj	_	_
+31-32	إقامته	_	_	_	_	_	_	_	_
+31	إقامة	إِقَامَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	30	nmod	_	_
+32	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nmod	_	_
+33	في	فِي	ADP	P---------	AdpType=Prep	34	case	_	_
+34	لندن	لَندَن	X	X---------	Foreign=Yes	31	nmod	_	SpaceAfter=No
+35	.	.	PUNCT	G---------	_	1	punct	_	_
 
 # sent_id = 2
-# text = غير أنه سرعان ما أدرك أنه لا سبيل أمامه سوى العمل الجاد، خاصةً أن وضعه المالي والاجتماعي لم يكونا
-1	غير	غَير	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	6	obl	_	_
-2-3	أنه	_	_	_	_	_	_	_	_
-2	أن	أَنَّ	SCONJ	C---------	_	6	mark	_	_
-3	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
-4	سرعان	سُرعَانَ	ADV	D---------	_	6	advmod	_	_
-5	ما	مَا	DET	S---------	_	6	obl	_	_
-6	أدرك	أَدرَك	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
-7-8	أنه	_	_	_	_	_	_	_	_
-7	أن	أَنَّ	SCONJ	C---------	_	9	mark	_	_
-8	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
-9	لا	لَا	PART	F---------	_	6	obj	_	_
-10	سبيل	سَبِيل	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	9	nsubj	_	_
-11-12	أمامه	_	_	_	_	_	_	_	_
-11	أمام	أَمَامَ	ADP	PI------4-	AdpType=Prep|Case=Acc	12	case	_	_
-12	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
-13	سوى	سِوَى	ADP	P---------	AdpType=Prep	14	case	_	_
-14	العمل	عَمَل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	obl:arg	_	_
-15	الجاد	جَادّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
-16	،	،	PUNCT	G---------	_	15	punct	_	_
-17	خاصةً	خَاصِة	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	25	advmod	_	_
-18	أن	أَنَّ	SCONJ	C---------	_	25	mark	_	_
-19-20	وضعه	_	_	_	_	_	_	_	_
-19	وضع	وَضع	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	25	nsubj	_	_
-20	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nmod	_	_
-21	المالي	مَالِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	19	amod	_	_
-22-23	والاجتماعي	_	_	_	_	_	_	_	_
-22	و	وَ	CCONJ	C---------	_	23	cc	_	_
-23	الاجتماعي	اِجتِمَاعِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	21	conj	_	_
-24	لم	لَم	PART	F---------	_	25	advmod	_	_
-25	يكونا	كَان	VERB	VIJA-3MS--	Aspect=Imp|Gender=Masc|Mood=Jus|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	ccomp	_	SpacesAfter=\n
+# text = التحق غاندي بالكليَّة الجامعيَّة بلندن ودرس فِيهَا القَانُون.
+1	التحق	اِلتَحَق	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	غاندي	غاندي	X	U---------	_	1	nsubj	_	_
+3	بالكليَّة	بالكليَّة	X	U---------	_	1	obj	_	_
+4	الجامعيَّة	أَامعِيَِّّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5-6	بلندن	_	_	_	_	_	_	_	_
+5	ب	بِ	ADP	P---------	AdpType=Prep	6	case	_	_
+6	لندن	لَندَن	X	X---------	Foreign=Yes	3	nmod	_	_
+7-8	ودرس	_	_	_	_	_	_	_	_
+7	و	وَ	CCONJ	C---------	_	8	cc	_	_
+8	درس	دَرَس	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+9	فِيهَا	فِيهَا	X	U---------	_	8	obj	_	_
+10	القَانُون	قَََّانُ	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = أظهر غاندي اهتمامه برفاهية مجتمعات دوكلاند [الإنجليزية] الفَقِيرَة في لندن، ففي عام 1889 أضرب عمَّال الموانئ لِلمُطالبة بتحسين أجورهم وظروف عملهم، وتضامن مَعَهُم البحارة وبناة السفن وعمال المصانع، وأسفرت مساعي الكاردينال مانينج وجون بيرنز في إنهاء إضراب عمَّال الميناء، فذهب غاندي وصديقه لزيارته وشكروه على مساعيه.
+1	أظهر	أَظهَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	غاندي	غاندي	X	U---------	_	1	nsubj	_	_
+3-4	اهتمامه	_	_	_	_	_	_	_	_
+3	اهتمام	اِهتِمَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+4	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
+5	برفاهية	برفاهية	X	U---------	Case=Acc|Definite=Cons|Number=Sing	3	nmod	_	_
+6	مجتمعات	مُجتَمَع	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	5	nmod	_	_
+7	دوكلاند	دوكلاند	X	U---------	_	6	nmod	_	_
+8	[	[	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
+9	الإنجليزية	إِنجلِيزِيَّة	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No
+10	]	]	PUNCT	G---------	_	9	punct	_	_
+11	الفَقِيرَة	الفَقِيرَة	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	لندن	لَندَن	X	X---------	Foreign=Yes	6	nmod	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15-16	ففي	_	_	_	_	_	_	_	_
+15	ف	فَ	CCONJ	C---------	_	19	cc	_	_
+16	في	فِي	ADP	P---------	AdpType=Prep	17	case	_	_
+17	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	obl	_	_
+18	1889	1889	NUM	Q---------	NumForm=Digit	17	nummod	_	_
+19	أضرب	أَضرَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+20	عمَّال	عُمَّال	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	19	nsubj	_	_
+21	الموانئ	مِينَاء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	20	nmod	_	_
+22	لِلمُطالبة	لِلمُطالبة	X	U---------	_	19	obj	_	_
+23-24	بتحسين	_	_	_	_	_	_	_	_
+23	ب	بِ	ADP	P---------	AdpType=Prep	24	case	_	_
+24	تحسين	تَحسِين	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	obl:arg	_	_
+25-26	أجورهم	_	_	_	_	_	_	_	_
+25	أجور	أَجر	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	24	nmod	_	_
+26	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	25	nmod	_	_
+27	وظروف	وظروف	X	U---------	_	24	nmod	_	_
+28-29	عملهم	_	_	_	_	_	_	_	SpaceAfter=No
+28	عمل	عَمَل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	nmod	_	_
+29	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	28	nmod	_	_
+30	،	،	PUNCT	G---------	_	29	punct	_	_
+31-32	وتضامن	_	_	_	_	_	_	_	_
+31	و	وَ	CCONJ	C---------	_	32	cc	_	_
+32	تضامن	تَضَامُن	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	conj	_	_
+33	مَعَهُم	مَعَهُم	X	U---------	_	32	nmod	_	_
+34	البحارة	بَحَّارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	_
+35	وبناة	وبناة	X	U---------	_	34	nmod	_	_
+36	السفن	سَفِينَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	35	nmod	_	_
+37	وعمال	وعمال	NOUN	U---------	_	34	nmod	_	_
+38	المصانع	مَصنَع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	37	nmod	_	SpaceAfter=No
+39	،	،	PUNCT	G---------	_	38	punct	_	_
+40-41	وأسفرت	_	_	_	_	_	_	_	_
+40	و	وَ	CCONJ	C---------	_	41	cc	_	_
+41	أسفرت	أَسفَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	19	conj	_	_
+42	مساعي	مَسعَى	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	41	nsubj	_	_
+43	الكاردينال	الكاردينال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	42	nmod	_	_
+44	مانينج	مانينج	X	X---------	Foreign=Yes	42	nmod	_	_
+45-46	وجون	_	_	_	_	_	_	_	_
+45	و	وَ	CCONJ	C---------	_	46	cc	_	_
+46	جون	جُون	X	X---------	Foreign=Yes	44	conj	_	_
+47	بيرنز	بِيرنز	X	X---------	Foreign=Yes	46	flat:foreign	_	_
+48	في	فِي	ADP	P---------	AdpType=Prep	49	case	_	_
+49	إنهاء	إِنهَاء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	41	obl:arg	_	_
+50	إضراب	إِضرَاب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	49	nmod	_	_
+51	عمَّال	عمَّال	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	50	nmod	_	_
+52	الميناء	مِينَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	51	nmod	_	SpaceAfter=No
+53	،	،	PUNCT	G---------	_	52	punct	_	_
+54	فذهب	فَذهَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	41	conj	_	_
+55	غاندي	غاندي	X	U---------	_	54	nsubj	_	_
+56-57	وصديقه	_	_	_	_	_	_	_	_
+56	وصديق	وَصِديق	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	55	nmod	_	_
+57	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	56	nmod	_	_
+58-60	لزيارته	_	_	_	_	_	_	_	_
+58	ل	لِ	ADP	P---------	AdpType=Prep	59	case	_	_
+59	زيارة	زِيَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	54	obl:arg	_	_
+60	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	59	nmod	_	_
+61	وشكروه	وشكروه	X	U---------	_	59	nmod	_	_
+62	على	عَلَى	ADP	P---------	AdpType=Prep	63	case	_	_
+63-64	مساعيه	_	_	_	_	_	_	_	SpaceAfter=No
+63	مساعي	مَسعَى	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	61	obl:arg	_	_
+64	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	63	nmod	_	_
+65	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = النباتية[عدل]
+1	النباتية	نَبَاتِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
+3	عدل	عدل	X	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
+4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6964,9 +7259,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -6980,9 +7272,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -6990,42 +7279,3 @@
 1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA

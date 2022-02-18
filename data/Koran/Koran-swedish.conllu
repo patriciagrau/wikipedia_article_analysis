@@ -3,12 +3,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -61,7 +55,7 @@
 26	.	.	PUNCT	MAD	_	15	punct	_	_
 
 # sent_id = 2
-# text = Koranen består av profeten Muhammeds uppenbarelser och innehåller enligt islam Guds (Allahs) budskap, nedsänt till Muhammed genom ärkeängeln Jibril (Gabriel) under en period av 23 år från och med 610.
+# text = Koranen består av profeten Muhammeds uppenbarelser och innehåller enligt islam Guds (Allahs) budskap, nedsänt till Muhammed genom ärkeängeln Jibril (Gabriel) under en period av 23 år från och med år 610.
 1	Koranen	koran	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj	_	_
 2	består	bestå	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	av	av	ADP	PP	_	6	case	_	_
@@ -93,11 +87,12 @@
 29	av	av	ADP	PP	_	31	case	_	_
 30	23	23	NUM	RG|NOM	Case=Nom|NumType=Card	31	nummod	_	_
 31	år	år	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	28	nmod	_	_
-32	från	från	ADP	PP	_	35	case	_	_
-33	och	och	CCONJ	KN	_	32	fixed	_	_
+32	från	från	ADP	PP	_	36	case	_	_
+33	och	och	CCONJ	KN	_	36	cc	_	_
 34	med	med	ADP	PP	_	32	fixed	_	_
-35	610	610	NUM	RG|NOM	Case=Nom|NumType=Card	28	nmod	_	SpaceAfter=No
-36	.	.	PUNCT	MAD	_	2	punct	_	_
+35	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	36	nmod	_	_
+36	610	610	NUM	RG|NOM	Case=Nom|NumType=Card	28	nmod	_	SpaceAfter=No
+37	.	.	PUNCT	MAD	_	2	punct	_	_
 
 # sent_id = 3
 # text = Inom islam betecknas Koranen även som "Sista testamentet", "Boken", "Guds bok" och "Uppenbarelsen".
@@ -709,7 +704,7 @@
 46	inte	inte	PART	AB	Polarity=Neg	47	advmod	_	_
 47	når	nå	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	42	acl:relcl	_	SpaceAfter=No
 48	.	.	PUNCT	MAD	_	12	punct	_	SpaceAfter=No
-49	"	"	PUNCT	PAD	_	12	punct	_	SpacesAfter=\s\s
+49	"	"	PUNCT	PAD	_	12	punct	_	_
 
 # sent_id = 9
 # text = Den vanligaste slutsatsen bland muslimer är att problemet överstiger den mänskliga tankeförmågan, och att bokstävernas betydelse säkert kommer avslöjas med tiden.
@@ -2681,7 +2676,7 @@
 22	.	.	PUNCT	MAD	_	2	punct	_	_
 
 # sent_id = 6
-# text = När ordet muslimun står i texten, bör man inte anta att det bara gäller män, utan oftast riktar sig texten till alla muslimer oavsett kön.
+# text = När ordet muslimun står i texten, bör man inte anta att det bara gäller män, utan oftast riktar sig texten till alla muslimer oavsett kön.[källa behövs]
 1	När	när	SCONJ	HA	_	4	mark	_	_
 2	ordet	ord	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	nmod	_	_
 3	muslimun	muslimun	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
@@ -2707,9 +2702,11 @@
 23	till	till	ADP	PP	_	25	case	_	_
 24	alla	all	DET	DT|UTR/NEU|PLU|IND/DEF	Number=Plur|PronType=Tot	25	det	_	_
 25	muslimer	muslim	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	20	obl	_	_
-26	oavsett	oavsett	ADP	PP	_	27	case	_	_
-27	kön	kön	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	25	nmod	_	SpaceAfter=No
-28	.	.	PUNCT	MAD	_	11	punct	_	_
+26	oavsett	oavsett	ADP	PP	_	28	case	_	_
+27	kön.[	kön.[	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	29	obl	_	SpaceAfter=No
+28	källa	källa	NOUN	VB|INF|AKT	VerbForm=Inf|Voice=Act	29	obl	_	SpacesAfter= 
+29	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	20	advcl	_	SpaceAfter=No
+30	]	]	PUNCT	MAD	_	11	punct	_	_
 
 # sent_id = 7
 # text = Många som vill visa att män och kvinnor är lika inför Gud brukar använda sig av vers 33:35 som i första meningen tydligt visar att detta gäller för både män och kvinnor, ”Muslim men (muslimin) and Muslim women (muslimat)” () eller som Muhammed Knut Bernströms översättning och tolkning av samma sura:
@@ -3454,45 +3451,9 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
 # text = Navigeringsmeny
 1	Navigeringsmeny	navigeringsmeny	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA

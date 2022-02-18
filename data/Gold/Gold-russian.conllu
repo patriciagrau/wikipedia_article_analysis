@@ -3,12 +3,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -1591,7 +1585,7 @@
 4	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No
 5	20	20	NUM	_	_	8	nummod	_	SpaceAfter=No
 6	—	—	PUNCT	_	_	7	punct	_	SpaceAfter=No
-7	30	30	NUM	_	_	5	nummod	_	SpacesAfter= 
+7	30	30	NUM	_	_	5	nummod	_	SpacesAfter= \s
 8	°C	°c	SYM	_	_	3	parataxis	_	SpaceAfter=No
 9	)	)	PUNCT	_	_	8	punct	_	_
 10	золото	золото	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	_
@@ -1621,12 +1615,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = С йодом реагирует при 120−393°C
+# text = С йодом реагирует при 120−393 °C
 1	С	с	ADP	_	_	2	case	_	_
 2	йодом	йод	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	3	obl	_	_
 3	реагирует	реагировать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	при	при	ADP	_	_	5	case	_	_
-5	120−393°C	120−393°c	NUM	_	_	3	nummod	_	SpacesAfter=\n
+4	при	при	ADP	_	_	6	case	_	_
+5	120−393	120−393	NUM	_	_	6	nummod	_	_
+6	°	°	SYM	_	_	3	obl	_	SpaceAfter=No
+7	C	C	PROPN	_	_	6	flat:foreign	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1661,7 +1657,7 @@
 7	температур	температура	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	6	nmod	_	_
 8	300	300	NUM	_	_	11	nummod	_	SpaceAfter=No
 9	—	—	PUNCT	_	_	10	punct	_	SpaceAfter=No
-10	400	400	NUM	_	_	8	nummod	_	_
+10	400	400	NUM	_	_	8	nummod	_	SpacesAfter=\s\s
 11	°C	°c	SYM	_	_	7	nmod	_	SpaceAfter=No
 12	,	,	PUNCT	_	_	18	punct	_	_
 13	при	при	ADP	_	_	15	case	_	_
@@ -3218,7 +3214,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = В 2014 году в мире было добыто 2860 тонн золота[источник не указан 1382 дня].
+# text = В 2014 году в мире было добыто 2860 тонн золота[источник не указан 1389 дней].
 1	В	в	ADP	_	_	3	case	_	_
 2	2014	2014	NUM	_	_	3	nummod	_	SpacesAfter= 
 3	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
@@ -3233,8 +3229,8 @@
 12	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	14	nsubj:pass	_	_
 13	не	не	PART	_	_	14	advmod	_	_
 14	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	7	parataxis	_	_
-15	1382	1382	NUM	_	_	16	nummod	_	_
-16	дня	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+15	1389	1389	NUM	_	_	16	nummod	_	_
+16	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	14	obl	_	SpaceAfter=No
 17	]	]	PUNCT	_	_	14	punct	_	SpaceAfter=No
 18	.	.	PUNCT	_	_	7	punct	_	_
 
@@ -4633,7 +4629,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Имеющееся в настоящее время, по состоянию на 2020 год, в мире золото распределено так: около 10 % — в промышленных изделиях, остальное делится приблизительно[уточнить] поровну между централизованными запасами (в основном, в виде стандартных слитков химически чистого золота), собственностью частных лиц в виде слитков и ювелирными изделиями[источник не указан 1505 дней].
+# text = Имеющееся в настоящее время, по состоянию на 2020 год, в мире золото распределено так: около 10 % — в промышленных изделиях, остальное делится приблизительно[уточнить] поровну между централизованными запасами (в основном, в виде стандартных слитков химически чистого золота), собственностью частных лиц в виде слитков и ювелирными изделиями[источник не указан 1512 дней].
 1	Имеющееся	иметься	VERB	_	Aspect=Imp|Case=Nom|Gender=Neut|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Mid	14	acl	_	_
 2	в	в	ADP	_	_	1	advmod	_	_
 3	настоящее	настоящий	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	2	fixed	_	_
@@ -4695,7 +4691,7 @@
 59	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	61	nsubj:pass	_	_
 60	не	не	PART	_	_	61	advmod	_	_
 61	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	57	parataxis	_	_
-62	1505	1505	NUM	_	_	63	nummod	_	_
+62	1512	1512	NUM	_	_	63	nummod	_	_
 63	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	61	obl	_	SpaceAfter=No
 64	]	]	PUNCT	_	_	61	punct	_	SpaceAfter=No
 65	.	.	PUNCT	_	_	15	punct	_	SpacesAfter=\n
@@ -5388,7 +5384,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = По своей химической стойкости и механической прочности золото уступает большинству платиноидов, но незаменимо[источник не указан 1505 дней] как материал для электрических контактов.
+# text = По своей химической стойкости и механической прочности золото уступает большинству платиноидов, но незаменимо[источник не указан 1512 дней] как материал для электрических контактов.
 1	По	по	ADP	_	_	4	case	_	_
 2	своей	свой	DET	_	Case=Dat|Gender=Fem|Number=Sing	4	det	_	_
 3	химической	химический	ADJ	_	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
@@ -5407,7 +5403,7 @@
 16	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	18	nsubj:pass	_	_
 17	не	не	PART	_	_	18	advmod	_	_
 18	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	14	parataxis	_	_
-19	1505	1505	NUM	_	_	20	nummod	_	_
+19	1512	1512	NUM	_	_	20	nummod	_	_
 20	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	18	obl	_	SpaceAfter=No
 21	]	]	PUNCT	_	_	18	punct	_	_
 22	как	как	SCONJ	_	_	23	mark	_	_
@@ -7956,9 +7952,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -8642,9 +8635,6 @@
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
@@ -8753,9 +8743,6 @@
 26	Леон	Леон	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	25	flat:name	_	SpaceAfter=No
 27	:	:	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9267,39 +9254,3 @@
 # text = Навигация
 1	Навигация	навигация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
