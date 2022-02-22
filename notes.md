@@ -48,6 +48,7 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
   - TO DO!! I did not finish that sentence
   - POS of Федера́ция? dependency is flat/apposition?
   - How to do text in other languages, transcriptions...?
+  - tr. is transliteration?
 - gold standard: I am writing all the lemmas in lower - should I? E.g. Russia russia -> decided to keep them capitalised
 - gold standard: "the **ninth-most** populous country" --> how do you analyse this?!
   - ninth ninth ADJ _ _ 3 advmod  _ _ 
@@ -97,3 +98,23 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 - gold standard Spanish: "llamados varegos" --> I put llamados as cop and varegos as acl, based on another UD file, but at the beginning I had that llamados was an acl and varegos an xcomp. Which one?
 - gold standard Spanish: "adoptaron el cristianismo, producto de..." --> appos? xcomp?
 - gold standard Spanish: line 615, should we separate the PROPN "Vladímir-Súzdal"? I separated it and put it as flat.
+
+21/02
+
+- gold standard French: "Pour les articles homonymes, voir Russie (**homonymie**) et Russia (**homonymie**)." --> I put dep, because it's just the disambiguation page for the French Wikipedia. Should it be appos? 
+- gold standards French: "Россия, Rossiïa prononciation" appos, flat to prononciation, nmod to Россия? idk 
+- gold standards French: "La Russie \[...] est un État \[...] **à cheval** sur l'Asie du Nord \[...] et sur l'Europe..." --> it's a fixed expression, I said nmod of "État", but what is "sur X" modiying? I put it as "à cheval sur X et sur Y", so sur X et sur Y would be nmods of cheval - but it is VERY arguable, they could also be other nmods of État and "à cheval" be another complement
+- gold standards French: "La Russie \[...] est un État fédéral transcontinental \[...] à cheval sur l'Asie du Nord **(80 % de sa superficie)** et sur l'Europe **(20 %)**." --> what are these? "80% de la superficie de Russie est sur l'Asie du Nord" --> I put nmod of Asie and Europe.
+- same structure in Spanish and French (se + VERB) the pronouns "se" have different dependencies --> compound:prt or obj.
+- gold standards French: mer Baltique --> NOUN PROPN (compound) or just NOUN ADJ (nmod)? line 150. In Spanish and English I think I put everything as PROPN. Should I do it differently for French?
+- FRENCH FILE: I am missing some text!!!! 
+  - "Limitrophe de l'Océan Arctique au nord, la Russie est caractérisée par un climat continental avec des hivers particulièrement froids et hostiles sur une grande partie du territoire, notamment en Sibérie, à l'est de l'Oural. La population russe est estimée à près de 146 millions d'habitants en 20211 ce qui en fait le neuvième pays le plus peuplé de la planète. 78 % de ses habitants vivent en Europe6." <-- Second and third sentence from second paragraph.
+  - I know why --> some lines do not have the <\p> tags. I need to rerun the code. 
+  - get_html_paragraph.py --> I need to use the .findall!! Different approach. I need the <\p> for the paragraphs, but I should also get the titles for alligning the text! The problem is that the titles have different tags, like <\h2>... I need to take a good look at it.
+
+22/02
+
+- gold standards French: 
+- gold standards French: 
+- gold standards French: 
+- gold standards French: 
