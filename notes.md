@@ -122,3 +122,11 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 
 24/02
 - Trying to get rid of text that I'm getting but I do not want (from the infobox, etc.)
+
+28/02
+
+- Getting rid of the things in between square brackets was not the smartes thing to do - now I do not have any pronounciation -> I'm gonna do it again. Oops!
+  - Pronunciations: Russia (Russian: Россия, tr. Rossiya, pronounced **\[rɐˈsʲijə\])**, or the Russian Federation, is a country spanning Eastern Europe and Northern Asia.
+  - \[cite required\]
+  - parts of some text that are missing: Peter Harvey also agrees that “much” of the Pali Canon “must derive from his **\[the Buddha's\]** teachings.” Likewise, A. K. Warder has written that “there is no evidence to suggest that it **\[the shared teaching of the early schools\]** was formulated by anyone other than the Buddha and his immediate followers.”
+- Since I reran the data, now I have to get the gold standard in the same format... so I have to check everything (some articles were edited too)
