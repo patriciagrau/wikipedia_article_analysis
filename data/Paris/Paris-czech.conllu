@@ -1,5 +1,3 @@
-# https://cs.wikipedia.org/wiki/Pa%C5%99%C3%AD%C5%BE
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Paříž – Wikipedie
 1	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
 2	–	–	PUNCT	Z:-------------	_	3	punct	_	_
-3	Wikipedie	wikipedie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	dep	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Paříž
-1	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+3	Wikipedie	wikipedie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	dep	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -199,14 +188,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etymologie[editovat | editovat zdroj]
+# text = Etymologie
 1	Etymologie	etymologie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -214,9 +197,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Slovo Paris je ve francouzštině mužského rodu a vyslovuje se [paʀi], v angličtině [ˈpæɹɪs].
+# text = Slovo Paris je ve francouzštině mužského rodu a vyslovuje se , v angličtině .
 1	Slovo	slovo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	3	nsubj	_	_
-2	Paris	Paris	PROPN	NNIS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	1	nmod	_	_
+2	Paris	Paris	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	je	být	VERB	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 4	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	5	case	_	_
 5	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	3	obl	_	_
@@ -225,52 +208,40 @@
 8	a	a	CCONJ	J^-------------	_	9	cc	_	_
 9	vyslovuje	vyslovovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
 10	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	9	expl:pass	_	SpacesAfter=\s\s
-11	[	[	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
-12	paʀi	paʀi	NOUN	NNNXX-----A----	Foreign=Yes|Gender=Neut|Polarity=Pos	9	obj	_	SpaceAfter=No
-13	]	]	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
-14	,	,	PUNCT	Z:-------------	_	16	punct	_	_
-15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	SpacesAfter= 
-16	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	9	conj	_	SpacesAfter=\s\s
-17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-18	ˈpæɹɪs	ˈpæɹɪs	NOUN	NNIS1-----A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	orphan	_	SpaceAfter=No
-19	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-20	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+11	,	,	PUNCT	Z:-------------	_	13	punct	_	_
+12	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	13	case	_	SpacesAfter= 
+13	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	9	obl	_	SpacesAfter=\s\s
+14	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 2
-# text = Původní latinské jméno města bylo Lutetia [lutecia] nebo Lutetia Parisiorum (ve francouzštině Lutèce [lytɛs], v češtině Lutécie), které později ustoupilo ve prospěch jména Paříž.
+# text = Původní latinské jméno města bylo Lutetia nebo Lutetia Parisiorum (ve francouzštině Lutèce , v češtině Lutécie), které později ustoupilo ve prospěch jména Paříž.
 1	Původní	původní	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	3	amod	_	_
 2	latinské	latinský	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	3	amod	_	_
 3	jméno	jméno	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
 4	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	3	nmod	_	_
 5	bylo	být	AUX	VpNS---XR-AA---	Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	3	cop	_	_
-6	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	3	nsubj	_	_
-7	[	[	PUNCT	Z:-------------	_	8	punct	_	SpaceAfter=No
-8	lutecia	lutecia	NOUN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	6	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	8	punct	_	_
-10	nebo	nebo	CCONJ	J^-------------	_	11	cc	_	_
-11	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	6	conj	_	_
-12	Parisiorum	Parisiorum	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|NameType=Com|Polarity=Pos	11	flat:foreign	_	_
-13	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-14	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	15	case	_	_
-15	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	11	dep	_	_
-16	Lutèce	Lutèce	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	15	nmod	_	_
-17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-18	lytɛs	lytɛs	NOUN	AAXXX----1A----	Foreign=Yes	16	appos	_	SpaceAfter=No
-19	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-20	,	,	PUNCT	Z:-------------	_	22	punct	_	_
-21	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	22	case	_	_
-22	češtině	čeština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	15	conj	_	_
-23	Lutécie	Lutécie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	22	nmod	_	SpaceAfter=No
-24	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-25	,	,	PUNCT	Z:-------------	_	28	punct	_	_
-26	které	který	DET	P4NS1----------	Case=Nom|Gender=Neut|Number=Sing|PronType=Int,Rel	28	nsubj	_	_
-27	později	pozdě	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	28	advmod	_	_
-28	ustoupilo	ustoupit	VERB	VpNS---XR-AA---	Aspect=Perf|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
-29	ve	v	ADP	RV--4----------	AdpType=Voc|Case=Acc	31	case	_	_
-30	prospěch	prospěch	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	29	fixed	_	_
-31	jména	jméno	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	28	obl	_	_
-32	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	31	nmod	_	SpaceAfter=No
-33	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+6	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	3	nsubj	_	SpacesAfter=\s\s
+7	nebo	nebo	CCONJ	J^-------------	_	8	cc	_	_
+8	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|NameType=Com|Number=Sing|Polarity=Pos	6	conj	_	_
+9	Parisiorum	Parisiorum	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|NameType=Com|Polarity=Pos	8	flat:foreign	_	_
+10	(	(	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+11	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	12	case	_	_
+12	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	6	dep	_	_
+13	Lutèce	Lutèce	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	12	nmod	_	_
+14	,	,	PUNCT	Z:-------------	_	16	punct	_	_
+15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	_
+16	češtině	čeština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	12	conj	_	_
+17	Lutécie	Lutécie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	16	nmod	_	SpaceAfter=No
+18	)	)	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+19	,	,	PUNCT	Z:-------------	_	22	punct	_	_
+20	které	který	DET	P4NS1----------	Case=Nom|Gender=Neut|Number=Sing|PronType=Int,Rel	22	nsubj	_	_
+21	později	pozdě	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	22	advmod	_	_
+22	ustoupilo	ustoupit	VERB	VpNS---XR-AA---	Aspect=Perf|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
+23	ve	v	ADP	RV--4----------	AdpType=Voc|Case=Acc	25	case	_	_
+24	prospěch	prospěch	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	23	fixed	_	_
+25	jména	jméno	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	22	obl	_	_
+26	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	25	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 3
 # text = Název je odvozen od galského kmene Parisiů, jehož jméno může pocházet z keltsko-galského slova parios, „kotel“.
@@ -336,7 +307,7 @@
 25	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 6
-# text = Od počátku 20. století byla Paříž známá i pod slangovým jménem Paname [panam].
+# text = Od počátku 20. století byla Paříž známá i pod slangovým jménem Paname .
 1	Od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	2	case	_	_
 2	počátku	počátek	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	8	obl	_	_
 3	20	20	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
@@ -349,11 +320,8 @@
 10	pod	pod	ADP	RR--7----------	AdpType=Prep|Case=Ins	12	case	_	_
 11	slangovým	slangový	ADJ	AANS7----1A----	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	12	amod	_	_
 12	jménem	jméno	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	8	obl	_	_
-13	Paname	Paname	PROPN	NNMS1-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Number=Sing|Polarity=Pos	12	nmod	_	_
-14	[	[	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-15	panam	panam	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	13	appos	_	SpaceAfter=No
-16	]	]	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-17	.	.	PUNCT	Z:-------------	_	8	punct	_	_
+13	Paname	Paname	PROPN	NNNXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	12	nmod	_	_
+14	.	.	PUNCT	Z:-------------	_	8	punct	_	_
 
 # sent_id = 7
 # text = Toto lidové označení se objevuje především v písních, jak dokládá např. skladba Amoureux de Paname (Zamilovaný do Panamy, tj. Paříže) Renauda Séchana z roku 1975 „Moi, j'suis amoureux de Paname, du béton et du macadam…
@@ -405,8 +373,8 @@
 46	…	…	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 
 # sent_id = 8
-# text = “ („Jsem zamilovaný do Paříže, betonové a makadamové…“) nebo píseň Loin de Paname (Daleko od Panamy, tj.
-1	“	“	PUNCT	Z:-------------	_	0	root	_	_
+# text = “ („Jsem zamilovaný do Paříže, betonové a makadamové…“) nebo píseň Loin de Paname (Daleko od Panamy, tj. Paříže) použitá ve filmu Paříž 36, v roce 2010 nominovaná na filmovou cenu Oscar.
+1	“	“	PUNCT	NNNXX-----A----	_	0	root	_	_
 2	(	(	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 3	„	„	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 4	Jsem	být	AUX	VB-S---1P-AA---	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
@@ -416,42 +384,39 @@
 8	,	,	PUNCT	Z:-------------	_	9	punct	_	_
 9	betonové	betonový	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	5	conj	_	_
 10	a	a	CCONJ	J^-------------	_	11	cc	_	_
-11	makadamové	makadamový	ADJ	AANS1----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	9	conj	_	SpaceAfter=No
+11	makadamové	makadamový	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	9	conj	_	SpaceAfter=No
 12	…	…	PUNCT	Z:-------------	_	5	conj	_	SpaceAfter=No
-13	“	“	SYM	Xx-------------	Abbr=Yes	12	nmod	_	SpaceAfter=No
+13	“	“	SYM	Z:-------------	Abbr=Yes	12	nmod	_	SpaceAfter=No
 14	)	)	PUNCT	Z:-------------	_	5	punct	_	_
 15	nebo	nebo	CCONJ	J^-------------	_	16	cc	_	_
-16	píseň	píseň	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	5	conj	_	_
+16	píseň	píseň	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	_
 17	Loin	loin	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	nmod	_	_
 18	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	17	flat:foreign	_	_
 19	Paname	Paname	PROPN	NNNXX-----A----	Foreign=Yes|Polarity=Pos	17	flat:foreign	_	_
 20	(	(	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-21	Daleko	daleko	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	16	dep	_	_
+21	Daleko	daleko	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	17	dep	_	_
 22	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	23	case	_	_
 23	Panamy	Panama	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	21	obl	_	SpaceAfter=No
-24	,	,	PUNCT	Z:-------------	_	21	punct	_	_
-25	tj	tj	CCONJ	J^------------8	Abbr=Yes	21	cc	_	SpaceAfter=No
-26	.	.	PUNCT	Z:-------------	_	1	punct	_	_
-
-# sent_id = 9
-# text = Paříže) použitá ve filmu Paříž 36, v roce 2010 nominovaná na filmovou cenu Oscar.
-1	Paříže	Paříž	PROPN	NNFP1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	)	)	PUNCT	Z:-------------	_	1	punct	_	_
-3	použitá	použitý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	1	amod	_	_
-4	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	5	case	_	_
-5	filmu	film	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	3	obl	_	_
-6	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	5	nmod	_	SpacesAfter= 
-7	36	36	NUM	C=-------------	NumForm=Digit|NumType=Card	6	nummod	_	SpaceAfter=No
-8	,	,	PUNCT	Z:-------------	_	10	punct	_	_
-9	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	10	case	_	_
-10	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	3	conj	_	_
-11	2010	2010	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	_
-12	nominovaná	nominovaný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	conj	_	_
-13	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	15	case	_	_
-14	filmovou	filmový	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	15	amod	_	_
-15	cenu	cena	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	12	obl:arg	_	_
-16	Oscar	Oscar	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	15	nmod	_	SpaceAfter=No
-17	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+24	,	,	PUNCT	Z:-------------	_	27	punct	_	_
+25	tj	tj	CCONJ	J^------------8	Abbr=Yes	27	cc	_	SpaceAfter=No
+26	.	.	PUNCT	Z:-------------	_	27	punct	_	_
+27	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	17	appos	_	SpaceAfter=No
+28	)	)	PUNCT	Z:-------------	_	21	punct	_	_
+29	použitá	použitý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
+30	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	31	case	_	_
+31	filmu	film	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	29	obl	_	_
+32	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	31	nmod	_	SpacesAfter= 
+33	36	36	NUM	C=-------------	NumForm=Digit|NumType=Card	32	nummod	_	SpaceAfter=No
+34	,	,	PUNCT	Z:-------------	_	38	punct	_	_
+35	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	36	case	_	_
+36	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	38	obl	_	_
+37	2010	2010	NUM	C=-------------	NumForm=Digit|NumType=Card	36	nummod	_	_
+38	nominovaná	nominovaný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
+39	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	41	case	_	_
+40	filmovou	filmový	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	41	amod	_	_
+41	cenu	cena	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	38	obl:arg	_	_
+42	Oscar	Oscar	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	41	nmod	_	SpaceAfter=No
+43	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -527,7 +492,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Obyvatelům Paříže se říká Pařížané, ve francouzštině Parisiens [paʀizjɛ̃] a v angličtině Parisians [pəˈɹɪzjənz] nebo [pəˈɹiː.ʒn̩z].
+# text = Obyvatelům Paříže se říká Pařížané, ve francouzštině Parisiens a v angličtině Parisians nebo .
 1	Obyvatelům	obyvatel	NOUN	NNMP3-----A----	Animacy=Anim|Case=Dat|Gender=Masc|Number=Plur|Polarity=Pos	4	obl:arg	_	_
 2	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pass	_	_
@@ -536,51 +501,37 @@
 6	,	,	PUNCT	Z:-------------	_	8	punct	_	_
 7	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	8	case	_	_
 8	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	4	conj	_	_
-9	Parisiens	Parisien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	nmod	_	_
-10	[	[	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
-11	paʀizjɛ̃	paʀizjɛ̃	NOUN	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	9	appos	_	SpaceAfter=No
-12	]	]	PUNCT	Z:-------------	_	11	punct	_	_
-13	a	a	CCONJ	J^-------------	_	15	cc	_	_
-14	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	15	case	_	_
-15	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	8	conj	_	_
-16	Parisians	Parisians	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	15	nmod	_	_
-17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-18	pəˈɹɪzjənz	pəˈɹɪzjənz	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	appos	_	SpaceAfter=No
-19	]	]	PUNCT	Z:-------------	_	18	punct	_	_
-20	nebo	nebo	CCONJ	J^-------------	_	22	cc	_	_
-21	[	[	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
-22	pəˈɹiː	pəˈɹiː	NOUN	AAXXX----1A----	Abbr=Yes|Degree=Pos|Foreign=Yes|Polarity=Pos	16	conj	_	SpaceAfter=No
-23	.	.	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
-24	ʒn̩z	ʒn̩z	NOUN	NNNXX-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Polarity=Pos	22	flat:foreign	_	SpaceAfter=No
-25	]	]	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
-26	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+9	Parisiens	Parisien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	orphan	_	SpacesAfter=\s\s
+10	a	a	CCONJ	J^-------------	_	8	cc	_	_
+11	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	12	case	_	_
+12	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	8	orphan	_	_
+13	Parisians	Parisians	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	orphan	_	SpacesAfter=\s\s
+14	nebo	nebo	CCONJ	J^-------------	_	13	cc	_	_
+15	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 2
-# text = Výraz Parigot („Pařížan“ s výslovností [paʀigo]), někdy používaný ve francouzském slangu, je často pokládán za hanlivý.
-1	Výraz	výraz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	21	nsubj:pass	_	_
+# text = Výraz Parigot („Pařížan“ s výslovností ), někdy používaný ve francouzském slangu, je často pokládán za hanlivý.
+1	Výraz	výraz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	18	nsubj:pass	_	_
 2	Parigot	parigot	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|NameType=Pro|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	(	(	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 4	„	„	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	Pařížan“	Pařížan“	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	1	appos	_	_
+5	Pařížan“	Pařížan“	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	2	appos	_	_
 6	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	7	case	_	_
 7	výslovností	výslovnost	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	5	nmod	_	_
-8	[	[	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
-9	paʀigo	paʀigo	NOUN	NNNS1-----A----	Case=Nom|Foreign=Yes|Gender=Neut|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
-11	)	)	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-12	,	,	PUNCT	Z:-------------	_	14	punct	_	_
-13	někdy	někdy	ADV	Db-------------	PronType=Ind	14	advmod	_	_
-14	používaný	používaný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	1	amod	_	_
-15	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	17	case	_	_
-16	francouzském	francouzský	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	17	amod	_	_
-17	slangu	slang	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	14	obl	_	SpaceAfter=No
-18	,	,	PUNCT	Z:-------------	_	14	punct	_	_
-19	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	21	aux:pass	_	_
-20	často	často	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	21	advmod	_	_
-21	pokládán	pokládaný	ADJ	VsYS---XX-AP---	Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-22	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	23	case	_	_
-23	hanlivý	hanlivý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	21	obl:arg	_	SpaceAfter=No
-24	.	.	PUNCT	Z:-------------	_	21	punct	_	_
+8	)	)	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Z:-------------	_	11	punct	_	_
+10	někdy	někdy	ADV	Db-------------	PronType=Ind	11	advmod	_	_
+11	používaný	používaný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	1	amod	_	_
+12	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	14	case	_	_
+13	francouzském	francouzský	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	14	amod	_	_
+14	slangu	slang	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	11	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Z:-------------	_	11	punct	_	_
+16	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux:pass	_	_
+17	často	často	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	18	advmod	_	_
+18	pokládán	pokládaný	ADJ	VsYS---XX-AP---	Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+19	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	20	case	_	_
+20	hanlivý	hanlivý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	18	obl:arg	_	SpaceAfter=No
+21	.	.	PUNCT	Z:-------------	_	18	punct	_	_
 
 # sent_id = 3
 # text = Ovšem Parigot může mít i kladný význam, jako například v písni Mimile (un gars d'Ménilmontant) od Maurice Chevaliera: „C'est un gars d'Ménilmontant, un vrai p'tit Parigot…
@@ -649,7 +600,7 @@
 3	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 6
-# text = Lokálně jsou obyvatelé pařížských předměstí hovorově nazýváni banlieusards [bɑ̃ljøzaʀ], tj. obyvatelé banlieue („předměstí“).
+# text = Lokálně jsou obyvatelé pařížských předměstí hovorově nazýváni banlieusards , tj. obyvatelé banlieue („předměstí“).
 1	Lokálně	lokálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	7	advmod	_	_
 2	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
 3	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	7	nsubj:pass	_	_
@@ -657,81 +608,75 @@
 5	předměstí	předměstí	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	3	nmod	_	_
 6	hovorově	hovorově	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	7	advmod	_	_
 7	nazýváni	nazývaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-8	banlieusards	banlieusard	ADJ	NNMPX-----A----	Foreign=Yes|Gender=Fem|Number=Plur|Polarity=Pos	7	obj	_	_
-9	[	[	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
-10	bɑ̃ljøzaʀ	bɑ̃ljøzaʀ	NOUN	NNIS1-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Polarity=Pos	8	flat:foreign	_	SpaceAfter=No
-11	]	]	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
-12	,	,	PUNCT	Z:-------------	_	15	punct	_	_
-13	tj	tj	CCONJ	J^------------8	Abbr=Yes	15	cc	_	SpaceAfter=No
-14	.	.	PUNCT	Z:-------------	_	15	punct	_	_
-15	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	8	appos	_	_
-16	banlieue	banlieue	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	15	nmod	_	SpacesAfter=\s\s
-17	(	(	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
-18	„	„	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
-19	předměstí“	předměstí“	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	16	appos	_	SpaceAfter=No
-20	)	)	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
-21	.	.	PUNCT	Z:-------------	_	7	punct	_	_
+8	banlieusards	banlieusard	NOUN	NNMPX-----A----	Foreign=Yes|Gender=Fem|Number=Plur|Polarity=Pos	7	obj	_	_
+9	,	,	PUNCT	Z:-------------	_	12	punct	_	_
+10	tj	tj	CCONJ	J^------------8	Abbr=Yes	12	cc	_	SpaceAfter=No
+11	.	.	PUNCT	Z:-------------	_	12	punct	_	_
+12	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	8	appos	_	_
+13	banlieue	banlieue	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	12	nmod	_	SpacesAfter=\s\s
+14	(	(	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+15	„	„	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+16	předměstí“	předměstí“	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	13	appos	_	SpaceAfter=No
+17	)	)	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
 # sent_id = 7
-# text = Obyvatelé regionu Île-de-France (oblast Paříže) jsou oficiálně označováni Franciliens [fʀɑ̃siljɛ̃].
-1	Obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	14	nsubj:pass	_	_
+# text = Obyvatelé regionu
+1	Obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 2	regionu	region	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	1	nmod	_	_
-3	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	5	amod	_	SpaceAfter=No
-4	-	-	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	2	nmod	_	SpaceAfter=No
-6	-	-	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-7	France	France	PROPN	NNFXX-----A----	Animacy=Inan|Gender=Masc|NameType=Geo|Polarity=Pos	2	nmod	_	_
-8	(	(	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
-9	oblast	oblast	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	appos	_	_
-10	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	9	nmod	_	SpaceAfter=No
-11	)	)	PUNCT	Z:-------------	_	9	punct	_	_
-12	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	_	_
-13	oficiálně	oficiálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	14	advmod	_	_
-14	označováni	označovaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-15	Franciliens	Francilien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	14	obj	_	_
-16	[	[	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
-17	fʀɑ̃siljɛ̃	fʀɑ̃siljɛ̃	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	15	appos	_	SpaceAfter=No
-18	]	]	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
-19	.	.	PUNCT	Z:-------------	_	14	punct	_	_
 
 # sent_id = 8
-# text = Pařížané o obyvatelích z oblastí mimo
-1	Pařížané	Pařížan	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	0	root	_	_
-2	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
-3	obyvatelích	obyvatel	NOUN	NNMP6-----A----	Animacy=Anim|Case=Loc|Gender=Masc|Number=Plur|Polarity=Pos	1	dep	_	_
-4	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	5	case	_	_
-5	oblastí	oblast	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	3	nmod	_	_
-6	mimo	mimo	ADP	RR--4----------	AdpType=Prep|Case=Acc	5	case	_	_
+# text = Île-de-France (oblast Paříže) jsou oficiálně označováni Franciliens .
+1	Île	île	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	12	nsubj:pass	_	SpaceAfter=No
+2	-	-	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
+3	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
+4	-	-	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
+5	France	France	PROPN	NNFXX-----A----	Animacy=Inan|Gender=Masc|NameType=Geo|Polarity=Pos	1	flat:foreign	_	_
+6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	oblast	oblast	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	appos	_	_
+8	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	Z:-------------	_	7	punct	_	_
+10	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux:pass	_	_
+11	oficiálně	oficiálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	12	advmod	_	_
+12	označováni	označovaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+13	Franciliens	Francilien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	12	obj	_	_
+14	.	.	PUNCT	Z:-------------	_	12	punct	_	_
 
 # sent_id = 9
-# text = Île-de-France mluví jako o provinciaux (tj. z provincie), čímž naznačují, že zbytek Francie pokládají za la province.
-1	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	5	amod	_	SpaceAfter=No
-2	-	-	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
-4	-	-	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-5	France	France	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	6	nsubj	_	_
-6	mluví	mluvit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-7	jako	jako	SCONJ	J,-------------	_	9	mark	_	_
-8	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	9	case	_	SpacesAfter= 
-9	provinciaux	provinciaux	NOUN	NNNXX-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	6	dep	_	_
-10	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
-11	tj	tj	CCONJ	J^------------8	Abbr=Yes	14	cc	_	SpaceAfter=No
-12	.	.	PUNCT	Z:-------------	_	14	punct	_	_
-13	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	14	case	_	_
-14	provincie	provincie	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	9	appos	_	SpaceAfter=No
-15	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
-16	,	,	PUNCT	Z:-------------	_	18	punct	_	_
-17	čímž	což	PRON	PE--7----------	Case=Ins|PronType=Rel	18	obl	_	_
-18	naznačují	naznačovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
-19	,	,	PUNCT	Z:-------------	_	23	punct	_	_
-20	že	že	SCONJ	J,-------------	_	23	mark	_	_
-21	zbytek	zbytek	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	23	obj	_	_
-22	Francie	Francie	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	21	nmod	_	_
-23	pokládají	pokládat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	ccomp	_	_
-24	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	25	case	_	_
-25	la	le	ADJ	AAFSX----1A----	Degree=Pos|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	26	amod	_	_
-26	province	province	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	23	obl:arg	_	SpaceAfter=No
-27	.	.	PUNCT	Z:-------------	_	6	punct	_	_
+# text = Pařížané o obyvatelích z oblastí mimo Île-de-France mluví jako o provinciaux (tj. z provincie), čímž naznačují, že zbytek Francie pokládají za la province.
+1	Pařížané	Pařížan	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	nsubj	_	_
+2	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
+3	obyvatelích	obyvatel	NOUN	NNMP6-----A----	Animacy=Anim|Case=Loc|Gender=Masc|Number=Plur|Polarity=Pos	12	obl:arg	_	_
+4	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	5	case	_	_
+5	oblastí	oblast	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	3	nmod	_	_
+6	mimo	mimo	ADP	RR--4----------	AdpType=Prep|Case=Acc	11	case	_	_
+7	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	11	amod	_	SpaceAfter=No
+8	-	-	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	5	nmod	_	SpaceAfter=No
+10	-	-	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+11	France	France	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	5	nmod	_	_
+12	mluví	mluvit	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	jako	jako	SCONJ	J,-------------	_	15	mark	_	_
+14	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	15	case	_	SpacesAfter= 
+15	provinciaux	provinciaux	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	3	xcomp	_	_
+16	(	(	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+17	tj	tj	CCONJ	J^------------8	Abbr=Yes	20	cc	_	SpaceAfter=No
+18	.	.	PUNCT	Z:-------------	_	20	punct	_	_
+19	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	20	case	_	_
+20	provincie	provincie	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	15	appos	_	SpaceAfter=No
+21	)	)	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+22	,	,	PUNCT	Z:-------------	_	24	punct	_	_
+23	čímž	což	PRON	PE--7----------	Case=Ins|PronType=Rel	24	obl	_	_
+24	naznačují	naznačovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	SpaceAfter=No
+25	,	,	PUNCT	Z:-------------	_	29	punct	_	_
+26	že	že	SCONJ	J,-------------	_	29	mark	_	_
+27	zbytek	zbytek	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	29	obj	_	_
+28	Francie	Francie	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	27	nmod	_	_
+29	pokládají	pokládat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	24	ccomp	_	_
+30	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	31	case	_	_
+31	la	le	ADJ	AAFSX----1A----	Degree=Pos|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	29	obl:arg	_	_
+32	province	province	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	31	flat:foreign	_	SpaceAfter=No
+33	.	.	PUNCT	Z:-------------	_	12	punct	_	_
 
 # sent_id = 10
 # text = Tento výraz je někdy považován za hanlivý.
@@ -750,14 +695,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dějiny[editovat | editovat zdroj]
+# text = Dějiny
 1	Dějiny	dějiny	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1778,14 +1717,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografie[editovat | editovat zdroj]
+# text = Geografie
 1	Geografie	geografie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1793,15 +1726,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografická poloha[editovat | editovat zdroj]
+# text = Geografická poloha
 1	Geografická	geografický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	poloha	poloha	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2229,14 +2156,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geologie[editovat | editovat zdroj]
+# text = Geologie
 1	Geologie	geologie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2391,14 +2312,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kopce[editovat | editovat zdroj]
+# text = Kopce
 1	Kopce	kopec	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2498,15 +2413,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Okolí Paříže[editovat | editovat zdroj]
+# text = Okolí Paříže
 1	Okolí	okolí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
 2	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2624,14 +2533,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ostrovy[editovat | editovat zdroj]
+# text = Ostrovy
 1	Ostrovy	ostrov	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2997,14 +2900,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hydrologie[editovat | editovat zdroj]
+# text = Hydrologie
 1	Hydrologie	hydrologie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3012,15 +2909,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vodní toky[editovat | editovat zdroj]
+# text = Vodní toky
 1	Vodní	vodní	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
 2	toky	tok	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3616,15 +3507,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vodní nádrže[editovat | editovat zdroj]
+# text = Vodní nádrže
 1	Vodní	vodní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	2	amod	_	_
 2	nádrže	nádrž	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3802,14 +3687,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hydrogeologie[editovat | editovat zdroj]
+# text = Hydrogeologie
 1	Hydrogeologie	hydrogeologie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3902,15 +3781,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pitná voda[editovat | editovat zdroj]
+# text = Pitná voda
 1	Pitná	pitný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	voda	voda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	dep	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -4563,14 +4436,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Podnebí[editovat | editovat zdroj]
+# text = Podnebí
 1	Podnebí	podnebí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -4845,15 +4712,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Životní prostředí[editovat | editovat zdroj]
+# text = Životní prostředí
 1	Životní	životní	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
 2	prostředí	prostředí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -5134,14 +4995,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Demografie[editovat | editovat zdroj]
+# text = Demografie
 1	Demografie	demografie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6180,15 +6035,84 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sociologie města[editovat | editovat zdroj]
+# text = Sociologie města
 1	Sociologie	sociologie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = czech-pdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = S 27 400 € průměrného příjmu na domácnost v roce 2001 jsou zdejší domácnosti nejbohatší ve Francii.
+1	S	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	3	case	_	SpacesBefore=\s
+2	27	27	NUM	C=-------------	NumForm=Digit|NumType=Card	3	compound	_	SpacesAfter= 
+3	400	400	NUM	C=-------------	NumForm=Digit|NumType=Card	15	obl	_	SpacesAfter= 
+4	€	€	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	3	nmod	_	_
+5	průměrného	průměrný	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	6	amod	_	_
+6	příjmu	příjem	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	4	nmod	_	_
+7	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	8	case	_	_
+8	domácnost	domácnost	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	6	nmod	_	_
+9	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	10	case	_	_
+10	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	6	nmod	_	_
+11	2001	2001	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	_
+12	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+13	zdejší	zdejší	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	14	amod	_	_
+14	domácnosti	domácnost	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	15	nsubj	_	_
+15	nejbohatší	bohatý	ADJ	AAFP1----3A----	Case=Nom|Degree=Sup|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	_
+16	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	17	case	_	_
+17	Francii	Francie	PROPN	NNFS6-----A----	Case=Loc|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Z:-------------	_	15	punct	_	_
+
+# sent_id = 2
+# text = Také okolní čtyři departementy Hauts-de-Seine, Yvelines, Essonne a Val-de-Marne jsou na vysokých příčkách.
+1	Také	také	ADV	Db-------------	_	4	advmod:emph	_	_
+2	okolní	okolní	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	4	amod	_	_
+3	čtyři	čtyři	NUM	ClXP1----------	Case=Nom|Number=Plur|NumForm=Word|NumType=Card|NumValue=1,2,3	4	nummod	_	_
+4	departementy	departement	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	20	nsubj	_	_
+5	Hauts	Hauts	PROPN	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	4	nmod	_	SpaceAfter=No
+6	-	-	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	5	flat:foreign	_	SpaceAfter=No
+8	-	-	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	Seine	Seine	PROPN	NNIXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	5	flat:foreign	_	SpaceAfter=No
+10	,	,	PUNCT	Z:-------------	_	11	punct	_	_
+11	Yvelines	Yvelines	PROPN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|NameType=Geo|Number=Sing|Polarity=Pos	5	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Z:-------------	_	13	punct	_	_
+13	Essonne	Essonne	PROPN	NNNXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	5	conj	_	_
+14	a	a	CCONJ	J^-------------	_	19	cc	_	_
+15	Val	Val	PROPN	AAXXX----1A----	Foreign=Yes|Gender=Neut|NameType=Geo|Polarity=Pos	7	conj	_	SpaceAfter=No
+16	-	-	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+17	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	15	flat:foreign	_	SpaceAfter=No
+18	-	-	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+19	Marne	Marne	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	15	flat:foreign	_	_
+20	jsou	být	VERB	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+21	na	na	ADP	RR--6----------	AdpType=Prep|Case=Loc	23	case	_	_
+22	vysokých	vysoký	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	23	amod	_	_
+23	příčkách	příčka	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	20	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Z:-------------	_	20	punct	_	_
+
+# sent_id = 3
+# text = Tento fakt je dán koncentrací vysoce kvalifikovaných profesionálů s vysokými příjmy v regionu Île-de-France.
+1	Tento	tento	DET	PDYS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	fakt	fakt	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	4	nsubj	_	_
+3	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	dán	daný	ADJ	VsYS---XX-AP---	Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+5	koncentrací	koncentrace	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	4	obl:arg	_	_
+6	vysoce	vysoce	ADV	Db-------------	_	7	advmod	_	_
+7	kvalifikovaných	kvalifikovaný	ADJ	AAMP2----1A----	Animacy=Anim|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	8	amod	_	_
+8	profesionálů	profesionál	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	5	nmod	_	_
+9	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	11	case	_	_
+10	vysokými	vysoký	ADJ	AAIP7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	11	amod	_	_
+11	příjmy	příjem	NOUN	NNIP7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur|Polarity=Pos	8	nmod	_	_
+12	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	13	case	_	_
+13	regionu	region	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	11	nmod	_	_
+14	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	16	amod	_	SpaceAfter=No
+15	-	-	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+16	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	13	nmod	_	SpaceAfter=No
+17	-	-	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+18	France	France	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	13	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6684,14 +6608,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Imigranti[editovat | editovat zdroj]
+# text = Imigranti
 1	Imigranti	imigrant	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6843,7 +6761,7 @@
 22	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
 # sent_id = 2
-# text = Několik dalších migračních vln pak následovalo nepřetržitě až do současnosti: Italové, Češi a Slováci a dále židé ze střední a východní Evropy
+# text = Několik dalších migračních vln pak následovalo nepřetržitě až do současnosti: Italové, Češi a Slováci a dále židé ze střední a východní Evropy během 19. století, Rusové po Říjnové revoluci v roce 1917, obyvatelé francouzských kolonií během první světové války, Poláci mezi světovými válkami, Španělé, Italové, Portugalci a obyvatelé severní Afriky od 50. do 70. let 20. století, sefardští židé po získání nezávislosti zemí severní Afriky a také Asiati.
 1	Několik	několik	DET	Ca--1----------	Case=Nom|NumType=Card|PronType=Ind	4	det:numgov	_	_
 2	dalších	další	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	4	amod	_	_
 3	migračních	migrační	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	4	amod	_	_
@@ -6855,7 +6773,7 @@
 9	do	do	ADP	RR--2----------	AdpType=Prep|Case=Gen	10	case	_	_
 10	současnosti	současnost	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	6	obl	_	SpaceAfter=No
 11	:	:	PUNCT	Z:-------------	_	12	punct	_	_
-12	Italové	Ital	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	6	dep	_	SpaceAfter=No
+12	Italové	Ital	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	6	nsubj	_	SpaceAfter=No
 13	,	,	PUNCT	Z:-------------	_	14	punct	_	_
 14	Češi	Čech	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	_
 15	a	a	CCONJ	J^-------------	_	16	cc	_	_
@@ -6867,7 +6785,75 @@
 21	střední	střední	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	24	amod	_	_
 22	a	a	CCONJ	J^-------------	_	23	cc	_	_
 23	východní	východní	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	21	conj	_	_
-24	Evropy	Evropa	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	19	nmod	_	SpacesAfter=\n
+24	Evropy	Evropa	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	19	nmod	_	SpacesAfter=\n\s
+25	během	během	ADP	RR--2----------	AdpType=Prep|Case=Gen	28	case	_	_
+26	19	19	NUM	C=-------------	NumForm=Digit|NumType=Card	28	nummod	_	SpaceAfter=No
+27	.	.	PUNCT	Z:-------------	_	26	punct	_	SpacesAfter= 
+28	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	19	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	Z:-------------	_	30	punct	_	_
+30	Rusové	Rus	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	_
+31	po	po	ADP	RR--6----------	AdpType=Prep|Case=Loc	33	case	_	_
+32	Říjnové	říjnový	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	33	amod	_	_
+33	revoluci	revoluce	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	30	nmod	_	_
+34	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	35	case	_	_
+35	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	33	nmod	_	_
+36	1917	1917	NUM	C=-------------	NumForm=Digit|NumType=Card	35	nummod	_	SpaceAfter=No
+37	,	,	PUNCT	Z:-------------	_	38	punct	_	_
+38	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	12	conj	_	_
+39	francouzských	francouzský	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	40	amod	_	_
+40	kolonií	kolonie	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	38	nmod	_	_
+41	během	během	ADP	RR--2----------	AdpType=Prep|Case=Gen	44	case	_	_
+42	první	první	ADJ	CrFS2----------	Case=Gen|Gender=Fem|Number=Sing|NumType=Ord	44	amod	_	_
+43	světové	světový	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	44	amod	_	_
+44	války	válka	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	38	nmod	_	SpaceAfter=No
+45	,	,	PUNCT	Z:-------------	_	46	punct	_	_
+46	Poláci	Polák	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	_
+47	mezi	mezi	ADP	RR--7----------	AdpType=Prep|Case=Ins	49	case	_	_
+48	světovými	světový	ADJ	AAFP7----1A----	Case=Ins|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	49	amod	_	_
+49	válkami	válka	NOUN	NNFP7-----A----	Case=Ins|Gender=Fem|Number=Plur|Polarity=Pos	46	nmod	_	SpaceAfter=No
+50	,	,	PUNCT	Z:-------------	_	51	punct	_	_
+51	Španělé	Španěl	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	SpaceAfter=No
+52	,	,	PUNCT	Z:-------------	_	53	punct	_	_
+53	Italové	Ital	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	SpaceAfter=No
+54	,	,	PUNCT	Z:-------------	_	55	punct	_	_
+55	Portugalci	Portugalec	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	conj	_	_
+56	a	a	CCONJ	J^-------------	_	57	cc	_	_
+57	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	12	conj	_	_
+58	severní	severní	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	59	amod	_	_
+59	Afriky	Afrika	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	57	nmod	_	_
+60	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	61	case	_	_
+61	50	50	NUM	C=-------------	NumForm=Digit|NumType=Card	57	dep	_	SpaceAfter=No
+62	.	.	PUNCT	Z:-------------	_	61	punct	_	_
+63	do	do	ADP	RR--2----------	AdpType=Prep|Case=Gen	66	case	_	_
+64	70	70	NUM	C=-------------	NumForm=Digit|NumType=Card	66	nummod	_	SpaceAfter=No
+65	.	.	PUNCT	Z:-------------	_	64	punct	_	_
+66	let	rok	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	57	nmod	_	_
+67	20	20	NUM	C=-------------	NumForm=Digit|NumType=Card	69	nummod	_	SpaceAfter=No
+68	.	.	PUNCT	Z:-------------	_	67	punct	_	SpacesAfter= 
+69	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	66	nmod	_	SpaceAfter=No
+70	,	,	PUNCT	Z:-------------	_	72	punct	_	_
+71	sefardští	sefardský	ADJ	AAMP1----1A----	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	72	amod	_	_
+72	židé	žid	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	12	conj	_	_
+73	po	po	ADP	RR--6----------	AdpType=Prep|Case=Loc	74	case	_	_
+74	získání	získání	NOUN	NNNS6-----A----	Case=Loc|Gender=Neut|Number=Sing|Polarity=Pos	72	nmod	_	_
+75	nezávislosti	závislost	NOUN	NNFS2-----N----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Neg	74	nmod	_	_
+76	zemí	země	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	75	nmod	_	_
+77	severní	severní	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	78	amod	_	_
+78	Afriky	Afrika	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	76	nmod	_	_
+79	a	a	CCONJ	J^-------------	_	81	cc	_	_
+80	také	také	ADV	Db-------------	_	81	advmod:emph	_	_
+81	Asiati	Asiat	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	12	conj	_	SpaceAfter=No
+82	.	.	PUNCT	Z:-------------	_	6	punct	_	_
+
+# sent_id = 3
+# text = Významnou skupinu imigrantů tvořili rovněž Američané.
+1	Významnou	významný	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
+2	skupinu	skupina	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	4	obj	_	_
+3	imigrantů	imigrant	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	2	nmod	_	_
+4	tvořili	tvořit	VERB	VpMP---XR-AA---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	rovněž	rovněž	ADV	Db-------------	_	4	advmod	_	_
+6	Američané	Američan	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	4	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6953,17 +6939,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politika a správa města[editovat | editovat zdroj]
+# text = Politika a správa města
 1	Politika	politika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	správa	správa	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	_
 4	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	Z:-------------	_	6	punct	_	SpaceAfter=No
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-7	|	|	PUNCT	Z:-------------	_	8	punct	_	_
-8	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	6	conj	_	_
-9	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6971,15 +6951,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Historický vývoj[editovat | editovat zdroj]
+# text = Historický vývoj
 1	Historický	historický	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	2	amod	_	_
 2	vývoj	vývoj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -8217,18 +8191,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Městská rada a starosta dnes[editovat | editovat zdroj]
+# text = Městská rada a starosta dnes
 1	Městská	městský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	rada	rada	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 3	a	a	CCONJ	J^-------------	_	4	cc	_	_
 4	starosta	starosta	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	2	conj	_	_
 5	dnes	dnes	ADV	Db-------------	_	2	dep	_	SpaceAfter=No
-6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	dep	_	_
-8	|	|	PUNCT	Z:-------------	_	9	punct	_	_
-9	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	7	conj	_	_
-10	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9006,16 +8974,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Paříž a předměstí[editovat | editovat zdroj]
+# text = Paříž a předměstí
 1	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	předměstí	předměstí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9157,15 +9119,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Čestné občanství[editovat | editovat zdroj]
+# text = Čestné občanství
 1	Čestné	čestný	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
 2	občanství	občanství	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9254,14 +9210,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Volby[editovat | editovat zdroj]
+# text = Volby
 1	Volby	volba	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9269,15 +9219,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Obecní volby[editovat | editovat zdroj]
+# text = Obecní volby
 1	Obecní	obecní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	2	amod	_	_
 2	volby	volba	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9364,18 +9308,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Volba Pařížské rady a starosty[editovat | editovat zdroj]
+# text = Volba Pařížské rady a starosty
 1	Volba	volba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	Pařížské	pařížský	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
 3	rady	rada	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	1	nmod	_	_
 4	a	a	CCONJ	J^-------------	_	5	cc	_	_
 5	starosty	starosta	NOUN	NNMS2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	3	conj	_	SpaceAfter=No
-6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-8	|	|	PUNCT	Z:-------------	_	9	punct	_	_
-9	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	7	conj	_	_
-10	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9503,15 +9441,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Parlamentní volby[editovat | editovat zdroj]
+# text = Parlamentní volby
 1	Parlamentní	parlamentní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	2	amod	_	_
 2	volby	volba	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9673,16 +9605,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Územní organizace města[editovat | editovat zdroj]
+# text = Územní organizace města
 1	Územní	územní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	organizace	organizace	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 3	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -10614,16 +10540,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Symboly města Paříže[editovat | editovat zdroj]
+# text = Symboly města Paříže
 1	Symboly	symbol	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 2	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -10890,15 +10810,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Městský znak[editovat | editovat zdroj]
+# text = Městský znak
 1	Městský	městský	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	2	amod	_	_
 2	znak	znak	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11183,15 +11097,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Městská vlajka[editovat | editovat zdroj]
+# text = Městská vlajka
 1	Městská	městský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	vlajka	vlajka	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11249,15 +11157,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Logo města[editovat | editovat zdroj]
+# text = Logo města
 1	Logo	logo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
 2	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11298,14 +11200,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Architektura[editovat | editovat zdroj]
+# text = Architektura
 1	Architektura	architektura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11587,14 +11483,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pamětihodnosti[editovat | editovat zdroj]
+# text = Pamětihodnosti
 1	Pamětihodnosti	pamětihodnost	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11727,15 +11617,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Moderní architektura[editovat | editovat zdroj]
+# text = Moderní architektura
 1	Moderní	moderní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	architektura	architektura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11848,17 +11732,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ekonomika Paříže a okolí[editovat | editovat zdroj]
+# text = Ekonomika Paříže a okolí
 1	Ekonomika	ekonomika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	a	a	CCONJ	J^-------------	_	4	cc	_	_
 4	okolí	okolí	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	Z:-------------	_	6	punct	_	SpaceAfter=No
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-7	|	|	PUNCT	Z:-------------	_	8	punct	_	_
-8	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	6	conj	_	_
-9	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12376,14 +12254,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mzdy[editovat | editovat zdroj]
+# text = Mzdy
 1	Mzdy	mzda	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12642,15 +12514,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cestovní ruch[editovat | editovat zdroj]
+# text = Cestovní ruch
 1	Cestovní	cestovní	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	2	amod	_	_
 2	ruch	ruch	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -13439,18 +13305,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Móda, luxus a nakupování[editovat | editovat zdroj]
+# text = Móda, luxus a nakupování
 1	Móda	móda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	Z:-------------	_	3	punct	_	_
 3	luxus	luxus	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	1	conj	_	_
-4	a	a	CCONJ	J^-------------	_	5	cc	_	_
-5	nakupování	nakupování	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
-6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-8	|	|	PUNCT	Z:-------------	_	9	punct	_	_
-9	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	7	conj	_	_
-10	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+4	a	a	CCONJ	J^-------------	_	3	cc	_	_
+5	nakupování	nakupování	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	3	orphan	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14045,14 +13905,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Doprava[editovat | editovat zdroj]
+# text = Doprava
 1	Doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14185,14 +14039,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Metro[editovat | editovat zdroj]
+# text = Metro
 1	Metro	metro	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	dep	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14340,14 +14188,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Autobusy[editovat | editovat zdroj]
+# text = Autobusy
 1	Autobusy	autobus	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14386,14 +14228,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tramvaje[editovat | editovat zdroj]
+# text = Tramvaje
 1	Tramvaje	tramvaj	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14551,16 +14387,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Další typy dopravy[editovat | editovat zdroj]
+# text = Další typy dopravy
 1	Další	další	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
 2	typy	typ	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 3	dopravy	doprava	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14583,15 +14413,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Železniční doprava[editovat | editovat zdroj]
+# text = Železniční doprava
 1	Železniční	železniční	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14913,15 +14737,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Automobilová doprava[editovat | editovat zdroj]
+# text = Automobilová doprava
 1	Automobilová	automobilový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15103,15 +14921,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Letecká doprava[editovat | editovat zdroj]
+# text = Letecká doprava
 1	Letecká	letecký	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15263,14 +15075,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zdravotnictví[editovat | editovat zdroj]
+# text = Zdravotnictví
 1	Zdravotnictví	zdravotnictví	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15684,16 +15490,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Věda a vzdělávání[editovat | editovat zdroj]
+# text = Věda a vzdělávání
 1	Věda	věda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	vzdělávání	vzdělávání	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15770,14 +15570,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Statistika[editovat | editovat zdroj]
+# text = Statistika
 1	Statistika	statistika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15975,14 +15769,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Historie[editovat | editovat zdroj]
+# text = Historie
 1	Historie	historie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -16345,14 +16133,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Současnost[editovat | editovat zdroj]
+# text = Současnost
 1	Současnost	současnost	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -16537,16 +16319,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Věda a výzkum[editovat | editovat zdroj]
+# text = Věda a výzkum
 1	Věda	věda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	výzkum	výzkum	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -16734,14 +16510,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Knihovny[editovat | editovat zdroj]
+# text = Knihovny
 1	Knihovny	knihovna	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17425,15 +17195,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Regionální média[editovat | editovat zdroj]
+# text = Regionální média
 1	Regionální	regionální	ADJ	AANP1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	2	amod	_	_
 2	média	médium	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17441,14 +17205,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tisk[editovat | editovat zdroj]
+# text = Tisk
 1	Tisk	tisk	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17534,14 +17292,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Televize[editovat | editovat zdroj]
+# text = Televize
 1	Televize	televize	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17722,14 +17474,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rozhlas[editovat | editovat zdroj]
+# text = Rozhlas
 1	Rozhlas	rozhlas	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17803,14 +17549,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Internet[editovat | editovat zdroj]
+# text = Internet
 1	Internet	internet	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17937,14 +17677,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kultura[editovat | editovat zdroj]
+# text = Kultura
 1	Kultura	kultura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -18037,15 +17771,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Krásná umění[editovat | editovat zdroj]
+# text = Krásná umění
 1	Krásná	krásný	ADJ	AANP1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	2	amod	_	_
 2	umění	umění	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -18380,22 +18108,76 @@
 19	veřejnost	veřejnost	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	17	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	Z:-------------	_	8	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = V Paříži se nachází velké množství kin, které měly v roce 2006 celkem 376 sálů, z nichž bylo 150 nezávislých a 89 uměleckých.
+1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	2	case	_	_
+2	Paříži	Paříž	PROPN	NNFS6-----A----	Case=Loc|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	4	obl	_	_
+3	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pv	_	_
+4	nachází	nacházet	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	velké	velký	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	6	amod	_	_
+6	množství	množství	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	4	nsubj	_	_
+7	kin	kino	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Z:-------------	_	10	punct	_	_
+9	které	který	DET	P4IP1----------	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	10	nsubj	_	_
+10	měly	mít	VERB	VpTP---XR-AA---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	7	acl:relcl	_	_
+11	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	12	case	_	_
+12	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	10	obl	_	_
+13	2006	2006	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	_
+14	celkem	celkem	ADV	Db-------------	_	15	advmod:emph	_	_
+15	376	376	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod:gov	_	_
+16	sálů	sál	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	10	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Z:-------------	_	20	punct	_	_
+18	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	19	case	_	_
+19	nichž	jenž	PRON	P9XP2----------	Case=Gen|Number=Plur|PrepCase=Pre|PronType=Rel	21	nmod	_	_
+20	bylo	být	AUX	VpNS---XR-AA---	Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	16	acl:relcl	_	_
+21	150	150	NUM	C=-------------	NumForm=Digit|NumType=Card	20	nsubj	_	_
+22	nezávislých	závislý	ADJ	AAIP2----1N----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Neg	21	amod	_	_
+23	a	a	CCONJ	J^-------------	_	24	cc	_	_
+24	89	89	NUM	C=-------------	NumForm=Digit|NumType=Card	21	conj	_	_
+25	uměleckých	umělecký	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	24	amod	_	SpaceAfter=No
+26	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 4
+# text = Poskytují velkou nabídku, každý týden se promítá přibližně 450 až 500 různých filmů a roční návštěvnost přesahuje 27 miliónů diváků (údaje z roku 2006).
+1	Poskytují	poskytovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	velkou	velký	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
+3	nabídku	nabídka	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Z:-------------	_	8	punct	_	_
+5	každý	každý	DET	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|PronType=Tot	6	det	_	_
+6	týden	týden	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	8	obl	_	_
+7	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	8	expl:pass	_	_
+8	promítá	promítat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+9	přibližně	přibližně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	10	advmod:emph	_	_
+10	450	450	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod:gov	_	_
+11	až	až	CCONJ	J^-------------	_	12	cc	_	_
+12	500	500	NUM	C=-------------	NumForm=Digit|NumType=Card	10	conj	_	_
+13	různých	různý	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	14	amod	_	_
+14	filmů	film	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	8	nsubj:pass	_	_
+15	a	a	CCONJ	J^-------------	_	18	cc	_	_
+16	roční	roční	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	17	amod	_	_
+17	návštěvnost	návštěvnost	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	18	nsubj	_	_
+18	přesahuje	přesahovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+19	27	27	NUM	C=-------------	NumForm=Digit|NumType=Card	20	nummod:gov	_	_
+20	miliónů	milión	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	18	obj	_	_
+21	diváků	divák	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	20	nmod	_	_
+22	(	(	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
+23	údaje	údaj	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	18	dep	_	_
+24	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	25	case	_	_
+25	roku	rok	NOUN	NNIS2-----A---1	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	23	nmod	_	_
+26	2006	2006	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	SpaceAfter=No
+27	)	)	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
+28	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Muzea a galerie[editovat | editovat zdroj]
+# text = Muzea a galerie
 1	Muzea	muzeum	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	galerie	galerie	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-6	|	|	PUNCT	Z:-------------	_	7	punct	_	_
-7	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	5	conj	_	_
-8	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	Z:-------------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -18665,14 +18447,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gastronomie[editovat | editovat zdroj]
+# text = Gastronomie
 1	Gastronomie	gastronomie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -18820,6 +18596,75 @@
 13	neznaly	znát	VERB	VpTP---XR-NA---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	SpaceAfter=No
 14	.	.	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = Rovněž kavárny se staly nedílnou součástí francouzské kultury a jejich obliba rostla od roku 1670, kdy byla otevřena Café de la Régence.
+1	Rovněž	rovněž	ADV	Db-------------	_	2	advmod:emph	_	_
+2	kavárny	kavárna	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	4	nsubj	_	_
+3	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pv	_	_
+4	staly	stát	VERB	VpTP---XR-AA---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	nedílnou	nedílný	ADJ	AAFS7----1A----	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	6	amod	_	_
+6	součástí	součást	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	4	obl:arg	_	_
+7	francouzské	francouzský	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	8	amod	_	_
+8	kultury	kultura	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	6	nmod	_	_
+9	a	a	CCONJ	J^-------------	_	12	cc	_	_
+10	jejich	jeho	DET	PSXXXXP3-------	Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs	11	det	_	_
+11	obliba	obliba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	12	nsubj	_	_
+12	rostla	růst	VERB	VpQW---XR-AA---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+13	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	14	case	_	_
+14	roku	rok	NOUN	NNIS2-----A---1	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	12	obl	_	_
+15	1670	1670	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
+16	,	,	PUNCT	Z:-------------	_	19	punct	_	_
+17	kdy	kdy	ADV	Db-------------	PronType=Int,Rel	19	advmod	_	_
+18	byla	být	AUX	VpQW---XR-AA---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	19	aux:pass	_	_
+19	otevřena	otevřený	ADJ	VsQW---XX-AP---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	14	amod	_	_
+20	Café	café	NOUN	NNNXX-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Polarity=Pos	19	nsubj:pass	_	_
+21	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	20	flat:foreign	_	_
+22	la	le	ADJ	AAFSX----1A----	Degree=Pos|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	20	flat:foreign	_	_
+23	Régence	Régence	PROPN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	20	flat:foreign	_	SpaceAfter=No
+24	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 9
+# text = Dnes je nejstarší kavárnou v Paříži Café Procope, zprovozněná v roce 1686.
+1	Dnes	dnes	ADV	Db-------------	_	4	advmod	_	_
+2	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	nejstarší	starý	ADJ	AAFS7----3A----	Case=Ins|Degree=Sup|Gender=Fem|Number=Sing|Polarity=Pos	4	amod	_	_
+4	kavárnou	kavárna	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
+5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	6	case	_	_
+6	Paříži	Paříž	PROPN	NNFS6-----A----	Case=Loc|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	4	nmod	_	_
+7	Café	café	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	4	nsubj	_	_
+8	Procope	Procope	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Z:-------------	_	10	punct	_	_
+10	zprovozněná	zprovozněný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	7	amod	_	_
+11	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	12	case	_	_
+12	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	10	obl	_	_
+13	1686	1686	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
+14	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 10
+# text = Kavárny byly velmi populární v 18. století, od poloviny 19. století se rozšířily i na chodníky a bulváry.
+1	Kavárny	kavárna	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	4	nsubj	_	_
+2	byly	být	AUX	VpTP---XR-AA---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+3	velmi	velmi	ADV	Db-------------	_	4	advmod	_	_
+4	populární	populární	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	_
+5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	8	case	_	_
+6	18	18	NUM	C=-------------	NumForm=Digit|NumType=Card	8	nummod	_	SpaceAfter=No
+7	.	.	PUNCT	Z:-------------	_	6	punct	_	SpacesAfter= 
+8	století	století	NOUN	NNNS6-----A----	Case=Loc|Gender=Neut|Number=Sing|Polarity=Pos	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Z:-------------	_	16	punct	_	_
+10	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	11	case	_	_
+11	poloviny	polovina	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	16	obl	_	_
+12	19	19	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
+13	.	.	PUNCT	Z:-------------	_	12	punct	_	SpacesAfter= 
+14	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	11	nmod	_	_
+15	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	16	expl:pv	_	_
+16	rozšířily	rozšířit	VERB	VpTP---XR-AA---	Animacy=Inan|Aspect=Perf|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+17	i	i	CCONJ	J^-------------	_	19	advmod:emph	_	_
+18	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	19	case	_	_
+19	chodníky	chodník	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	16	obl:arg	_	_
+20	a	a	CCONJ	J^-------------	_	21	cc	_	_
+21	bulváry	bulvár	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	19	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -18954,14 +18799,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sport[editovat | editovat zdroj]
+# text = Sport
 1	Sport	sport	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19428,15 +19267,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Partnerská města[editovat | editovat zdroj]
+# text = Partnerská města
 1	Partnerská	partnerský	ADJ	AANP1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	2	amod	_	_
 2	města	město	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19444,14 +19277,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Odkazy[editovat | editovat zdroj]
+# text = Odkazy
 1	Odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19459,14 +19286,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Poznámky[editovat | editovat zdroj]
+# text = Poznámky
 1	Poznámky	poznámka	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19474,14 +19295,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Reference[editovat | editovat zdroj]
+# text = Reference
 1	Reference	reference	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19489,14 +19304,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Literatura[editovat | editovat zdroj]
+# text = Literatura
 1	Literatura	literatura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
-3	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	1	appos	_	_
-4	|	|	PUNCT	Z:-------------	_	5	punct	_	_
-5	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19504,15 +19313,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Související články[editovat | editovat zdroj]
-1	Související	související	ADJ	AGIP4-----A----	Animacy=Inan|Aspect=Imp|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	2	amod	_	_
-2	články	článek	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
+# text = Související články
+1	Související	související	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	2	amod	_	_
+2	články	článek	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -19520,23 +19323,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Externí odkazy[editovat | editovat zdroj]
+# text = Externí odkazy
 1	Externí	externí	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
 2	odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
-4	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	2	appos	_	_
-5	|	|	PUNCT	Z:-------------	_	6	punct	_	_
-6	editovat	editovat	VERB	Vf--------A----	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	zdroj	zdroj	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigační menu
-1	Navigační	navigační	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	menu	menu	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	0	root	_	SpacesAfter=\n
 

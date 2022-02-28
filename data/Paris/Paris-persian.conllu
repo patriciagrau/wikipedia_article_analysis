@@ -1,5 +1,3 @@
-# https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B1%DB%8C%D8%B3
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12,7 +10,7 @@
 3	ویکی‌پدیا	_	NOUN	N_SING	Number=Sing	1	parataxis	_	SpaceAfter=No
 4	،	،	PUNCT	DELM	_	1	punct	_	_
 5	دانشنامهٔ	دانشنامه	NOUN	N_SING	Number=Sing	1	parataxis	_	_
-6	آزاد	آزاد	ADJ	ADJ	Degree=Pos	5	amod	_	SpacesAfter=\n
+6	آزاد	آزاد	ADJ	ADJ	Degree=Pos	5	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -20,40 +18,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = زبان‌ها
-1	زبان‌ها	زبان	NOUN	N_PL	Number=Plur	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = persian-seraji-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = پاریس
-1	پاریس	پاریس	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = persian-seraji-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = پاریس (به فرانسوی: Paris) (تلفظ فرانسوی: [paʁi] (
+# text = پاریس (به فرانسوی: Paris) (تلفظ فرانسوی: (
 1	پاریس	پاریس	NOUN	N_SING	Number=Sing	0	root	_	_
 2	(	(	PUNCT	DELM	_	1	punct	_	SpaceAfter=No
 3	به	به	ADP	P	_	4	case	_	_
-4	فرانسوی	فرانسوی	NOUN	N_SING	Number=Sing	1	parataxis	_	SpaceAfter=No
+4	فرانسوی	فرانسوی	NOUN	N_SING	Number=Sing	1	nmod	_	SpaceAfter=No
 5	:	:	PUNCT	DELM	_	1	punct	_	_
-6	Paris	paris	NOUN	N_SING	Number=Sing	1	parataxis	_	SpaceAfter=No
+6	Paris	paris	NOUN	N_SING	Number=Sing	4	appos	_	SpaceAfter=No
 7	)	)	PUNCT	DELM	_	6	punct	_	_
 8	(	(	PUNCT	DELM	_	6	punct	_	SpaceAfter=No
 9	تلفظ	تلفظ	NOUN	N_SING	Number=Sing	1	parataxis	_	_
 10	فرانسوی	فرانسوی	ADJ	ADJ	Degree=Pos	9	amod	_	SpaceAfter=No
-11	:	:	PUNCT	DELM	_	9	punct	_	SpacesAfter= 
-12	[	_	PUNCT	DELM	_	9	punct	_	SpaceAfter=No
-13	paʁi	_	NOUN	N_SING	Number=Sing	9	dep	_	SpaceAfter=No
-14	]	_	PUNCT	DELM	_	9	punct	_	_
-15	(	(	PUNCT	DELM	_	1	punct	_	_
+11	:	:	PUNCT	DELM	_	9	punct	_	SpacesAfter= \s
+12	(	(	PUNCT	DELM	_	1	punct	_	_
 
 # sent_id = 2
 # text = شنیدن)) پایتخت و پرجمعیت‌ترین شهر فرانسه است، با جمعیت تخمینی ۲٬۱۷۵٬
@@ -168,6 +145,516 @@
 12	)	)	PUNCT	DELM	_	7	punct	_	_
 13	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	7	cop	_	SpaceAfter=No
 14	.	.	PUNCT	DELM	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = منطقه پاریس در سال ۲۰۱۷ تولید ناخالص داخلی ۷۰۹ میلیارد یورویی (۸۰۸ میلیارد دلار) داشت.
+1	منطقه	منطقه	NOUN	N_SING	Number=Sing	17	nsubj	_	_
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	در	در	ADP	P	_	4	case	_	_
+4	سال	سال	NOUN	N_SING	Number=Sing	17	obl	_	_
+5	۲۰۱۷	۲۰۱۷	NUM	NUM	NumType=Card	4	nummod	_	_
+6	تولید	تولید	NOUN	N_SING	Number=Sing	17	nsubj	_	_
+7	ناخالص	_	ADJ	ADJ	Degree=Pos	6	amod	_	_
+8	داخلی	داخلی	ADJ	ADJ	Degree=Pos	6	amod	_	_
+9	۷۰۹	_	NUM	NUM	NumType=Card	10	nummod	_	_
+10	میلیارد	میلیارد	NUM	NUM	NumType=Card	11	compound	_	_
+11	یورویی	یورویی	NOUN	N_SING	Number=Sing	6	nmod	_	_
+12	(	(	PUNCT	DELM	_	11	punct	_	SpaceAfter=No
+13	۸۰۸	_	NUM	NUM	NumType=Card	14	nummod	_	_
+14	میلیارد	میلیارد	NOUN	N_SING	Number=Sing	15	compound	_	_
+15	دلار	دلار	NOUN	N_SING	Number=Sing	6	nmod	_	SpaceAfter=No
+16	)	)	PUNCT	DELM	_	11	punct	_	_
+17	داشت	داشت#دار	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	DELM	_	17	punct	_	_
+
+# sent_id = 9
+# text = طبق نظرسنجی جهانی هزینه زندگی واحد اطلاعات اکونومیست در سال ۲۰۱۸، پاریس پس از سنگاپور و بالاتر از زوریخ، هنگ کنگ، اسلو و ژنو، دومین شهر گران جهان در جهان بود.
+1	طبق	طبق	ADP	P	_	2	case	_	_
+2	نظرسنجی	_	NOUN	N_SING	Number=Sing	30	nmod	_	_
+3	جهانی	جهانی	ADJ	ADJ	Degree=Pos	2	amod	_	_
+4	هزینه	هزینه	NOUN	N_SING	Number=Sing	2	nmod:poss	_	_
+5	زندگی	زندگی	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	واحد	واحد	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+7	اطلاعات	اطلاع	NOUN	N_PL	Number=Plur	6	nmod:poss	_	_
+8	اکونومیست	اکونومیست	ADJ	ADJ	Degree=Pos	7	amod	_	_
+9	در	در	ADP	P	_	10	case	_	_
+10	سال	سال	NOUN	N_SING	Number=Sing	7	nmod	_	_
+11	۲۰۱۸	_	NUM	NUM	NumType=Card	10	nummod	_	SpaceAfter=No
+12	،	،	PUNCT	DELM	_	30	punct	_	_
+13	پاریس	پاریس	NOUN	N_SING	Number=Sing	30	nsubj	_	_
+14	پس	پس	ADV	ADV_TIME	Case=Tem	30	advmod	_	_
+15	از	از	ADP	P	_	16	case	_	_
+16	سنگاپور	سنگاپور	NOUN	N_SING	Number=Sing	14	nmod	_	_
+17	و	و	CCONJ	CON	_	18	cc	_	_
+18	بالاتر	بالا	ADJ	ADJ_CMPR	Degree=Cmp	16	conj	_	_
+19	از	از	ADP	P	_	20	case	_	_
+20	زوریخ	_	NOUN	N_SING	Number=Sing	18	nmod	_	SpaceAfter=No
+21	،	،	PUNCT	DELM	_	22	punct	_	_
+22	هنگ	هنگ	NOUN	N_SING	Number=Sing	20	conj	_	_
+23	کنگ	کنگ	NOUN	N_SING	Number=Sing	22	nmod:poss	_	SpaceAfter=No
+24	،	،	PUNCT	DELM	_	25	punct	_	_
+25	اسلو	_	NOUN	N_SING	Number=Sing	23	conj	_	_
+26	و	و	CCONJ	CON	_	27	cc	_	_
+27	ژنو	ژنو	NOUN	N_SING	Number=Sing	25	conj	_	SpaceAfter=No
+28	،	،	PUNCT	DELM	_	30	punct	_	_
+29	دومین	دومین	ADJ	ADJ_SUP	Degree=Sup	30	amod	_	_
+30	شهر	شهر	NOUN	N_SING	Number=Sing	0	root	_	_
+31	گران	گران	ADJ	ADJ	Degree=Pos	30	amod	_	_
+32	جهان	جهان	NOUN	N_SING	Number=Sing	30	nmod:poss	_	_
+33	در	در	ADP	P	_	34	case	_	_
+34	جهان	جهان	NOUN	N_SING	Number=Sing	30	nmod	_	_
+35	بود	بود#باش	AUX	V_PA	Number=Sing|Person=3|Tense=Past	30	cop	_	SpaceAfter=No
+36	.	.	PUNCT	DELM	_	30	punct	_	_
+
+# sent_id = 10
+# text = منبع دیگری، پاریس را در سال ۲۰۱۸ به عنوان گران‌ترین، همتراز با سنگاپور و هنگ کنگ، رتبه‌بندی کرد.
+1	منبع	منبع	NOUN	N_SING	Number=Sing	21	nsubj	_	_
+2	دیگری	دیگر	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
+3	،	،	PUNCT	DELM	_	21	punct	_	_
+4	پاریس	پاریس	NOUN	N_SING	Number=Sing	21	obj	_	_
+5	را	را	PART	CLITIC	_	4	case	_	_
+6	در	در	ADP	P	_	7	case	_	_
+7	سال	سال	NOUN	N_SING	Number=Sing	21	obl	_	_
+8	۲۰۱۸	_	NUM	NUM	NumType=Card	7	nummod	_	_
+9	به	به	ADP	P	_	10	case	_	_
+10	عنوان	عنوان	NOUN	N_SING	Number=Sing	21	obl	_	_
+11	گران‌ترین	گران	ADJ	ADJ_SUP	Degree=Sup	10	amod	_	SpaceAfter=No
+12	،	،	PUNCT	DELM	_	13	punct	_	_
+13	همتراز	همتراز	ADJ	ADJ	Degree=Pos	10	conj	_	_
+14	با	با	ADP	P	_	15	case	_	_
+15	سنگاپور	سنگاپور	NOUN	N_SING	Number=Sing	13	nmod	_	_
+16	و	و	CCONJ	CON	_	17	cc	_	_
+17	هنگ	هنگ	NOUN	N_SING	Number=Sing	15	conj	_	_
+18	کنگ	کنگ	NOUN	N_SING	Number=Sing	17	flat	_	SpaceAfter=No
+19	،	،	PUNCT	DELM	_	21	punct	_	_
+20	رتبه‌بندی	رتبه‌بندی	NOUN	N_SING	Number=Sing	21	compound:lvc	_	_
+21	کرد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	DELM	_	21	punct	_	_
+
+# sent_id = 11
+# text = پاریس یک مرکز راه‌آهنی، بزرگراهی و مرکز حمل‌ونقل هوایی است و دو فرودگاه بین‌المللی است.
+1	پاریس	پاریس	NOUN	N_SING	Number=Sing	3	nsubj	_	_
+2	یک	یک	NUM	NUM	NumType=Card	3	nummod	_	_
+3	مرکز	مرکز	NOUN	N_SING	Number=Sing	0	root	_	_
+4	راه‌آهنی	راه‌آهنی	ADJ	ADJ	Degree=Pos	3	amod	_	SpaceAfter=No
+5	،	،	PUNCT	DELM	_	6	punct	_	_
+6	بزرگراهی	بزرگراهی	NOUN	N_SING	Number=Sing	4	conj	_	_
+7	و	و	CCONJ	CON	_	8	cc	_	_
+8	مرکز	مرکز	NOUN	N_SING	Number=Sing	6	conj	_	_
+9	حمل‌ونقل	حمل‌ونقل	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
+10	هوایی	هوایی	ADJ	ADJ	Degree=Pos	9	amod	_	_
+11	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	3	cop	_	_
+12	و	و	CCONJ	CON	_	14	cc	_	_
+13	دو	دو	NUM	NUM	NumType=Card	14	nummod	_	_
+14	فرودگاه	فرودگاه	NOUN	N_SING	Number=Sing	3	conj	_	_
+15	بین‌المللی	بین‌المللی	ADJ	ADJ	Degree=Pos	14	amod	_	_
+16	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	14	cop	_	SpaceAfter=No
+17	.	.	PUNCT	DELM	_	3	punct	_	_
+
+# sent_id = 12
+# text = پاریس– شارل دوگل (دومین فرودگاه شلوغ اروپا) و پاریس–اورلی.
+1	پاریس–	پاریس–	NOUN	N_SING	Number=Sing	0	root	_	_
+2	شارل	_	NOUN	N_SING	Number=Sing	1	flat	_	_
+3	دوگل	_	NOUN	N_SING	Number=Sing	2	flat	_	_
+4	(	(	PUNCT	DELM	_	2	punct	_	SpaceAfter=No
+5	دومین	دومین	ADJ	ADJ_SUP	Degree=Sup	6	amod	_	_
+6	فرودگاه	فرودگاه	NOUN	N_SING	Number=Sing	1	appos	_	_
+7	شلوغ	_	ADJ	ADJ	Degree=Pos	6	amod	_	_
+8	اروپا	اروپا	NOUN	N_SING	Number=Sing	6	nmod:poss	_	SpaceAfter=No
+9	)	)	PUNCT	DELM	_	11	punct	_	_
+10	و	و	CCONJ	CON	_	11	cc	_	_
+11	پاریس–اورلی	_	NOUN	N_SING	Number=Sing	6	conj	_	SpaceAfter=No
+12	.	.	PUNCT	DELM	_	1	punct	_	_
+
+# sent_id = 13
+# text = سیستم متروی شهر، متروی پاریس که در سال ۱۹۰۰ افتتاح شد، روزانه به ۵٫
+1	سیستم	سیستم	NOUN	N_SING	Number=Sing	0	root	_	_
+2	متروی	متروی	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	شهر	شهر	NOUN	N_SING	Number=Sing	2	nmod:poss	_	SpaceAfter=No
+4	،	،	PUNCT	DELM	_	1	punct	_	_
+5	متروی	متروی	NOUN	N_SING	Number=Sing	1	appos	_	_
+6	پاریس	پاریس	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+7	که	که	SCONJ	CON	_	11	mark	_	_
+8	در	در	ADP	P	_	9	case	_	_
+9	سال	سال	NOUN	N_SING	Number=Sing	11	nmod	_	_
+10	۱۹۰۰	۱۹۰۰	NUM	NUM	NumType=Card	9	nummod	_	_
+11	افتتاح	افتتاح	NOUN	N_SING	Number=Sing	1	acl:relcl	_	_
+12	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	11	cop	_	SpaceAfter=No
+13	،	،	PUNCT	DELM	_	15	punct	_	_
+14	روزانه	روزانه	ADV	ADV_TIME	Case=Tem	15	advmod	_	_
+15	به	به	ADP	P	_	1	case	_	_
+16	۵٫	۵٫	NUM	NUM	NumType=Card	8	nummod	_	SpaceAfter=No
+
+# sent_id = 14
+# text = ۲۳ میلیون مسافر خدمات رسانی می‌کند.
+1	۲۳	۲۳	NUM	NUM	NumType=Card	2	nummod	_	_
+2	میلیون	میلیون	NUM	NUM	NumType=Card	3	compound	_	_
+3	مسافر	مسافر	NOUN	N_SING	Number=Sing	6	nsubj	_	_
+4	خدمات	خدمت	NOUN	N_PL	Number=Plur	6	obj	_	_
+5	رسانی	رسانی	ADJ	ADJ	Degree=Pos	4	amod	_	_
+6	می‌کند	کرد#کن	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	DELM	_	6	punct	_	_
+
+# sent_id = 15
+# text = مترو پاریس دومین سیستم متروی اروپا پس از متروی مسکو است.
+1	مترو	مترو	NOUN	N_SING	Number=Sing	4	nsubj	_	_
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	دومین	دومین	ADJ	ADJ_SUP	Degree=Sup	4	amod	_	_
+4	سیستم	سیستم	NOUN	N_SING	Number=Sing	0	root	_	_
+5	متروی	متروی	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	اروپا	اروپا	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+7	پس	پس	ADV	ADV_TIME	Case=Tem	4	advmod	_	_
+8	از	از	ADP	P	_	9	case	_	_
+9	متروی	متروی	NOUN	N_SING	Number=Sing	7	nmod	_	_
+10	مسکو	_	NOUN	N_SING	Number=Sing	9	nmod:poss	_	_
+11	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	4	cop	_	SpaceAfter=No
+12	.	.	PUNCT	DELM	_	4	punct	_	_
+
+# sent_id = 16
+# text = گق دو نوق بیست و چهارمین ایستگاه راه‌آهن پرتردد در جهان است، اما شلوغ‌ترین ایستگاه راه‌آهن در خارج از ژاپن با ۲۶۲ میلیون مسافر در سال ۲۰۱۵ است.
+1	گق	گق	NOUN	N_SING	Number=Sing	7	nsubj	_	_
+2	دو	دو	NUM	NUM	NumType=Card	3	nummod	_	_
+3	نوق	نوق	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+4	بیست	بیست	NUM	NUM	NumType=Card	7	nummod	_	_
+5	و	و	CCONJ	CON	_	6	cc	_	_
+6	چهارمین	چهارمین	ADJ	ADJ_SUP	Degree=Sup	4	conj	_	_
+7	ایستگاه	ایستگاه	NOUN	N_SING	Number=Sing	0	root	_	_
+8	راه‌آهن	راه‌آهن	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	پرتردد	پرتردد	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
+10	در	در	ADP	P	_	11	case	_	_
+11	جهان	جهان	NOUN	N_SING	Number=Sing	9	nmod	_	_
+12	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	7	cop	_	SpaceAfter=No
+13	،	،	PUNCT	DELM	_	16	punct	_	_
+14	اما	اما	CCONJ	CON	_	16	cc	_	_
+15	شلوغ‌ترین	شلوغ	ADJ	ADJ_SUP	Degree=Sup	16	amod	_	_
+16	ایستگاه	ایستگاه	NOUN	N_SING	Number=Sing	7	conj	_	_
+17	راه‌آهن	راه‌آهن	NOUN	N_SING	Number=Sing	16	nmod:poss	_	_
+18	در	در	ADP	P	_	21	case	_	_
+19	خارج	خارج	ADP	P	_	18	fixed	_	_
+20	از	از	ADP	P	_	18	fixed	_	_
+21	ژاپن	ژاپن	NOUN	N_SING	Number=Sing	16	nmod	_	_
+22	با	با	ADP	P	_	25	case	_	_
+23	۲۶۲	_	NUM	NUM	NumType=Card	24	nummod	_	_
+24	میلیون	میلیون	NUM	NUM	NumType=Card	25	compound	_	_
+25	مسافر	مسافر	NOUN	N_SING	Number=Sing	16	nmod	_	_
+26	در	در	ADP	P	_	27	case	_	_
+27	سال	سال	NOUN	N_SING	Number=Sing	25	nmod	_	_
+28	۲۰۱۵	۲۰۱۵	NUM	NUM	NumType=Card	27	nummod	_	_
+29	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	16	cop	_	SpaceAfter=No
+30	.	.	PUNCT	DELM	_	7	punct	_	_
+
+# sent_id = 17
+# text = پاریس به‌ویژه به‌خاطر موزه‌ها و معماری بناهایش معروف است: موزه لوور با ۲٬۶۷۷٬۵۰۴ نفر بازدیدکننده در سال ۲۰۲۰، با وجود تعطیلی طولانی موزه‌ها به دلیل ویروس کووید-۱۹، پربازدیدترین موزه شناخته شد.
+1	پاریس	پاریس	NOUN	N_SING	Number=Sing	9	nsubj	_	_
+2	به‌ویژه	به‌ویژه	ADV	ADV	_	9	advmod	_	_
+3	به‌خاطر	به‌خاطر	ADV	ADV	_	9	advmod	_	_
+4	موزه‌ها	موزه	NOUN	N_PL	Number=Plur	9	nsubj	_	_
+5	و	و	CCONJ	CON	_	6	cc	_	_
+6	معماری	معماری	NOUN	N_SING	Number=Sing	4	conj	_	_
+7-8	بناهایش	_	_	_	_	_	_	_	_
+7	بناهای	بنا	NOUN	N_PL	Number=Plur	6	nmod:poss	_	_
+8	ش	او	PRON	PRO	Number=Sing|Person=3|PronType=Prs	7	nmod:poss	_	_
+9	معروف	معروف	ADJ	ADJ	Degree=Pos	0	root	_	_
+10	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	9	cop	_	SpaceAfter=No
+11	:	:	PUNCT	DELM	_	9	punct	_	_
+12	موزه	موزه	NOUN	N_SING	Number=Sing	36	nsubj:pass	_	_
+13	لوور	_	NOUN	N_SING	Number=Sing	12	flat	_	_
+14	با	با	ADP	P	_	19	case	_	_
+15	۲٬	۲٬	NUM	NUM	NumType=Card	18	nummod	_	SpaceAfter=No
+16	۶۷۷٬	_	NUM	NUM	NumType=Card	18	nummod	_	SpaceAfter=No
+17	۵۰۴	_	NUM	NUM	NumType=Card	18	nummod	_	_
+18	نفر	نفر	NOUN	N_SING	Number=Sing	19	nmod	_	_
+19	بازدیدکننده	بازدیدکننده	NOUN	N_SING	Number=Sing	12	nmod	_	_
+20	در	در	ADP	P	_	21	case	_	_
+21	سال	سال	NOUN	N_SING	Number=Sing	19	nmod	_	_
+22	۲۰۲۰	۲۰۲۰	NUM	NUM	NumType=Card	21	nummod	_	SpaceAfter=No
+23	،	،	PUNCT	DELM	_	36	punct	_	_
+24	با	با	ADP	P	_	25	case	_	_
+25	وجود	وجود	NOUN	N_SING	Number=Sing	36	obl	_	_
+26	تعطیلی	تعطیلی	NOUN	N_SING	Number=Sing	25	nmod:poss	_	_
+27	طولانی	طولانی	ADJ	ADJ	Degree=Pos	26	amod	_	_
+28	موزه‌ها	موزه	NOUN	N_PL	Number=Plur	26	nmod:poss	_	_
+29	به	به	ADP	P	_	30	case	_	_
+30	دلیل	دلیل	NOUN	N_SING	Number=Sing	36	obl	_	_
+31	ویروس	ویروس	NOUN	N_SING	Number=Sing	30	nmod:poss	_	_
+32	کووید-۱۹	_	NOUN	N_SING	Number=Sing	31	flat	_	SpaceAfter=No
+33	،	،	PUNCT	DELM	_	36	punct	_	_
+34	پربازدیدترین	پربازدید	ADJ	ADJ_SUP	Degree=Sup	35	amod	_	_
+35	موزه	موزه	NOUN	N_SING	Number=Sing	36	nsubj:pass	_	_
+36	شناخته	شناخت#شناس	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	9	ccomp	_	_
+37	شد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	36	aux:pass	_	SpaceAfter=No
+38	.	.	PUNCT	DELM	_	9	punct	_	_
+
+# sent_id = 18
+# text = موزه‌های اورسی، موزه مارموتان مونه و موزه اورانژری به‌خاطر مجموعه‌های هنری امپرسیونیستی فرانسه مورد توجه قرار گرفته‌اند.
+1	موزه‌های	موزه	NOUN	N_PL	Number=Plur	18	nsubj	_	_
+2	اورسی	_	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	،	،	PUNCT	DELM	_	4	punct	_	_
+4	موزه	موزه	NOUN	N_SING	Number=Sing	1	conj	_	_
+5	مارموتان	مارموت	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	مونه	_	NOUN	N_SING	Number=Sing	5	flat	_	_
+7	و	و	CCONJ	CON	_	8	cc	_	_
+8	موزه	موزه	NOUN	N_SING	Number=Sing	6	conj	_	_
+9	اورانژری	_	NOUN	N_SING	Number=Sing	8	flat	_	_
+10	به‌خاطر	به‌خاطر	ADV	ADV	_	18	advmod	_	_
+11	مجموعه‌های	مجموعه	NOUN	N_PL	Number=Plur	18	obj	_	_
+12	هنری	هنری	ADJ	ADJ	Degree=Pos	11	amod	_	_
+13	امپرسیونیستی	امپرسیونیستی	ADJ	ADJ	Degree=Pos	11	amod	_	_
+14	فرانسه	فرانسه	NOUN	N_SING	Number=Sing	11	nmod:poss	_	_
+15	مورد	مورد	ADP	P	_	16	case	_	_
+16	توجه	توجه	NOUN	N_SING	Number=Sing	18	obl	_	_
+17	قرار	قرار	NOUN	N_SING	Number=Sing	18	compound:lvc	_	_
+18	گرفته‌اند	گرفت#گیر	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	DELM	_	18	punct	_	_
+
+# sent_id = 19
+# text = موزه ملی هنر مدرن مرکز پمپیدو دارای بزرگترین مجموعه هنر مدرن و معاصر در اروپا است.
+1	موزه	موزه	NOUN	N_SING	Number=Sing	7	nsubj	_	_
+2	ملی	ملی	ADJ	ADJ	Degree=Pos	1	amod	_	_
+3	هنر	هنر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+4	مدرن	مدرن	ADJ	ADJ	Degree=Pos	3	amod	_	_
+5	مرکز	مرکز	NOUN	N_SING	Number=Sing	3	nmod:poss	_	_
+6	پمپیدو	_	NOUN	N_SING	Number=Sing	5	flat	_	_
+7	دارای	دارا	ADJ	ADJ	Degree=Pos	0	root	_	_
+8	بزرگترین	بزرگ	ADJ	ADJ_SUP	Degree=Sup	9	amod	_	_
+9	مجموعه	مجموعه	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+10	هنر	هنر	NOUN	N_SING	Number=Sing	9	nmod:poss	_	_
+11	مدرن	مدرن	ADJ	ADJ	Degree=Pos	10	amod	_	_
+12	و	و	CCONJ	CON	_	13	cc	_	_
+13	معاصر	معاصر	ADJ	ADJ	Degree=Pos	10	conj	_	_
+14	در	در	ADP	P	_	15	case	_	_
+15	اروپا	اروپا	NOUN	N_SING	Number=Sing	13	nmod	_	_
+16	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	7	cop	_	SpaceAfter=No
+17	.	.	PUNCT	DELM	_	7	punct	_	_
+
+# sent_id = 20
+# text = موزه رودن و موزه پیکاسو آثار دو شهروند مشهور پاریس را به نمایش می‌گذارند.
+1	موزه	موزه	NOUN	N_SING	Number=Sing	14	nsubj	_	_
+2	رودن	رودن	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	و	و	CCONJ	CON	_	4	cc	_	_
+4	موزه	موزه	NOUN	N_SING	Number=Sing	2	conj	_	_
+5	پیکاسو	_	NOUN	N_SING	Number=Sing	4	flat	_	_
+6	آثار	اثر	NOUN	N_PL	Number=Plur	14	obj	_	_
+7	دو	دو	NUM	NUM	NumType=Card	8	nummod	_	_
+8	شهروند	شهروند	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+9	مشهور	مشهور	ADJ	ADJ	Degree=Pos	8	amod	_	_
+10	پاریس	پاریس	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
+11	را	را	PART	CLITIC	_	6	case	_	_
+12	به	به	ADP	P	_	13	case	_	_
+13	نمایش	نمایش	NOUN	N_SING	Number=Sing	14	compound:lvc	_	_
+14	می‌گذارند	گذاشت#گذار	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	DELM	_	14	punct	_	_
+
+# sent_id = 21
+# text = منطقه تاریخی در امتداد رود سن در مرکز شهر از سال ۱۹۹۱ به عنوان میراث جهانی یونسکو طبقه‌بندی شده‌است.
+1	منطقه	منطقه	NOUN	N_SING	Number=Sing	18	nsubj	_	_
+2	تاریخی	تاریخی	ADJ	ADJ	Degree=Pos	1	amod	_	_
+3	در	در	ADP	P	_	4	case	_	_
+4	امتداد	امتداد	NOUN	N_SING	Number=Sing	18	nmod	_	_
+5	رود	رود	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	سن	سن	NOUN	N_SING	Number=Sing	5	flat	_	_
+7	در	در	ADP	P	_	8	case	_	_
+8	مرکز	مرکز	NOUN	N_SING	Number=Sing	6	nmod	_	_
+9	شهر	شهر	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
+10	از	از	ADP	P	_	11	case	_	_
+11	سال	سال	NOUN	N_SING	Number=Sing	18	nmod	_	_
+12	۱۹۹۱	۱۹۹۱	NUM	NUM	NumType=Card	11	nummod	_	_
+13	به	به	ADP	P	_	14	case	_	_
+14	عنوان	عنوان	NOUN	N_SING	Number=Sing	18	nmod	_	_
+15	میراث	میراث	NOUN	N_SING	Number=Sing	14	flat	_	_
+16	جهانی	جهانی	ADJ	ADJ	Degree=Pos	15	amod	_	_
+17	یونسکو	یونسکو	NOUN	N_SING	Number=Sing	15	flat	_	_
+18	طبقه‌بندی	طبقه‌بندی	NOUN	N_SING	Number=Sing	0	root	_	_
+19	شده‌است	کرد	AUX	V_PP	Number=Plur|Person=3|VerbForm=Part	18	cop	_	SpaceAfter=No
+20	.	.	PUNCT	DELM	_	18	punct	_	_
+
+# sent_id = 22
+# text = دیدنی‌های معروف آنجا عبارتند از کلیسای نوتردام پاریس در ایل دو لا سیته که اکنون پس از آتش‌سوزی ۱۵ آوریل ۲۰۱۹ برای بازسازی بسته شده‌است.
+1	دیدنی‌های	دیدنی	NOUN	N_PL	Number=Plur	4	nsubj	_	_
+2	معروف	معروف	ADJ	ADJ	Degree=Pos	1	amod	_	_
+3	آنجا	آنجا	ADV	ADV_LOC	Case=Loc	1	nmod:poss	_	_
+4	عبارتند	_	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	_
+5	از	از	ADP	P	_	6	case	_	_
+6	کلیسای	_	NOUN	N_SING	Number=Sing	4	obl	_	_
+7	نوتردام	نوتردام	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+8	پاریس	پاریس	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	در	در	ADP	P	_	10	case	_	_
+10	ایل	_	NOUN	N_SING	Number=Sing	6	nmod	_	_
+11	دو	دو	NOUN	N_SING	Number=Sing	10	flat	_	_
+12	لا	_	NOUN	N_SING	Number=Sing	11	flat	_	_
+13	سیته	_	NOUN	N_SING	Number=Sing	12	flat	_	_
+14	که	که	SCONJ	CON	_	24	mark	_	_
+15	اکنون	اکنون	ADV	ADV_TIME	Case=Tem	24	advmod	_	_
+16	پس	پس	ADV	ADV_TIME	Case=Tem	24	advmod	_	_
+17	از	از	ADP	P	_	18	case	_	_
+18	آتش‌سوزی	آتش‌سوزی	NOUN	N_SING	Number=Sing	16	nmod	_	_
+19	۱۵	۱۵	NUM	NUM	NumType=Card	20	nummod	_	_
+20	آوریل	_	NOUN	N_SING	Number=Sing	18	nmod:poss	_	_
+21	۲۰۱۹	۲۰۱۹	NUM	NUM	NumType=Card	20	nummod	_	_
+22	برای	برای	ADP	P	_	23	case	_	_
+23	بازسازی	بازسازی	NOUN	N_SING	Number=Sing	24	nmod	_	_
+24	بسته	بسته	ADJ	ADJ_INO	Number=Sing|Person=3|VerbForm=Part	4	ccomp	_	_
+25	شده‌است	کرد	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	24	aux:pass	_	SpaceAfter=No
+26	.	.	PUNCT	DELM	_	4	punct	_	_
+
+# sent_id = 23
+# text = سایر مکان‌های توریستی محبوب عبارتند از کلیسای سلطنتی گوتیک سنت شاپل، همچنین در Île de la Cité.
+1	سایر	سایر	NOUN	N_SING	Number=Sing	2	det	_	_
+2	مکان‌های	مکان	NOUN	N_PL	Number=Plur	5	nsubj	_	_
+3	توریستی	توریستی	ADJ	ADJ	Degree=Pos	2	amod	_	_
+4	محبوب	محبوب	ADJ	ADJ	Degree=Pos	2	amod	_	_
+5	عبارتند	_	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	_
+6	از	از	ADP	P	_	7	case	_	_
+7	کلیسای	_	NOUN	N_SING	Number=Sing	5	obl	_	_
+8	سلطنتی	_	ADJ	ADJ	Degree=Pos	7	amod	_	_
+9	گوتیک	_	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+10	سنت	سنت	NOUN	N_SING	Number=Sing	9	nmod:poss	_	_
+11	شاپل	_	NOUN	N_SING	Number=Sing	10	flat	_	SpaceAfter=No
+12	،	،	PUNCT	DELM	_	15	punct	_	_
+13	همچنین	همچنین	SCONJ	CON	_	15	advmod	_	_
+14	در	در	ADP	P	_	15	case	_	_
+15	Île	île	NOUN	N_SING	Number=Sing	7	nmod	_	_
+16	de	de	NOUN	N_SING	Number=Sing	15	flat	_	_
+17	la	la	NOUN	N_SING	Number=Sing	16	flat	_	_
+18	Cité	cité	NOUN	N_SING	Number=Sing	17	flat	_	SpaceAfter=No
+19	.	.	PUNCT	DELM	_	5	punct	_	_
+
+# sent_id = 24
+# text = برج ایفل که برای نمایشگاه جهانی پاریس در سال ۱۸۸۹ ساخته شد.
+1	برج	برج	NOUN	N_SING	Number=Sing	0	root	_	_
+2	ایفل	_	NOUN	N_SING	Number=Sing	1	flat	_	_
+3	که	که	SCONJ	CON	_	11	mark	_	_
+4	برای	برای	ADP	P	_	5	case	_	_
+5	نمایشگاه	نمایشگاه	NOUN	N_SING	Number=Sing	11	obl	_	_
+6	جهانی	جهانی	ADJ	ADJ	Degree=Pos	5	amod	_	_
+7	پاریس	پاریس	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+8	در	در	ADP	P	_	9	case	_	_
+9	سال	سال	NOUN	N_SING	Number=Sing	11	obl	_	_
+10	۱۸۸۹	۱۸۸۹	NUM	NUM	NumType=Card	9	nummod	_	_
+11	ساخته	ساخت#ساز	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	1	acl:relcl	_	_
+12	شد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	11	aux:pass	_	SpaceAfter=No
+13	.	.	PUNCT	DELM	_	1	punct	_	_
+
+# sent_id = 25
+# text = کاخ بزرگ و قصر کوچک، ساخته شده برای نمایشگاه جهانی پاریس در سال ۱۹۰۰.
+1	کاخ	کاخ	NOUN	N_SING	Number=Sing	7	nsubj:pass	_	_
+2	بزرگ	بزرگ	ADJ	ADJ	Degree=Pos	1	amod	_	_
+3	و	و	CCONJ	CON	_	4	cc	_	_
+4	قصر	قصر	NOUN	N_SING	Number=Sing	1	conj	_	_
+5	کوچک	کوچک	ADJ	ADJ	Degree=Pos	4	amod	_	SpaceAfter=No
+6	،	،	PUNCT	DELM	_	7	punct	_	_
+7	ساخته	ساخت#ساز	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	0	root	_	_
+8	شده	کرد#کن	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	7	aux:pass	_	_
+9	برای	برای	ADP	P	_	10	case	_	_
+10	نمایشگاه	نمایشگاه	NOUN	N_SING	Number=Sing	7	obl	_	_
+11	جهانی	جهانی	ADJ	ADJ	Degree=Pos	10	amod	_	_
+12	پاریس	پاریس	NOUN	N_SING	Number=Sing	10	nmod:poss	_	_
+13	در	در	ADP	P	_	14	case	_	_
+14	سال	سال	NOUN	N_SING	Number=Sing	12	nmod	_	_
+15	۱۹۰۰	۱۹۰۰	NUM	NUM	NumType=Card	14	nummod	_	SpaceAfter=No
+16	.	.	PUNCT	DELM	_	7	punct	_	_
+
+# sent_id = 26
+# text = طاق پیروزی در شانزه لیزه و تپه مونمارتر با تاریخ هنری و کلیسای ساکر کوئور از دیگر مراکز دیدنی پاریس هستند.
+1	طاق	طاق	NOUN	N_SING	Number=Sing	21	nsubj	_	_
+2	پیروزی	پیروزی	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	در	در	ADP	P	_	4	case	_	_
+4	شانزه	شانزه	NOUN	N_SING	Number=Sing	2	nmod	_	_
+5	لیزه	لیزه	NOUN	N_SING	Number=Sing	4	flat	_	_
+6	و	و	CCONJ	CON	_	7	cc	_	_
+7	تپه	تپه	NOUN	N_SING	Number=Sing	5	conj	_	_
+8	مونمارتر	_	NOUN	N_SING	Number=Sing	7	flat	_	_
+9	با	با	ADP	P	_	10	case	_	_
+10	تاریخ	تاریخ	NOUN	N_SING	Number=Sing	8	nmod	_	_
+11	هنری	هنری	ADJ	ADJ	Degree=Pos	10	amod	_	_
+12	و	و	CCONJ	CON	_	13	cc	_	_
+13	کلیسای	_	NOUN	N_SING	Number=Sing	10	conj	_	_
+14	ساکر	_	NOUN	N_SING	Number=Sing	13	nmod:poss	_	_
+15	کوئور	کوئور	NOUN	N_SING	Number=Sing	14	flat	_	_
+16	از	از	ADP	P	_	18	case	_	_
+17	دیگر	دیگر	ADJ	ADJ	Degree=Pos	18	amod	_	_
+18	مراکز	مرکز	NOUN	N_PL	Number=Plur	21	obl	_	_
+19	دیدنی	دیدنی	NOUN	N_SING	Number=Sing	18	nmod:poss	_	_
+20	پاریس	پاریس	NOUN	N_SING	Number=Sing	19	nmod:poss	_	_
+21	هستند	هست	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	DELM	_	21	punct	_	_
+
+# sent_id = 27
+# text = پاریس در سال ۲۰۲۰، ۱۲٫۶ میلیون بازدیدکننده داشته‌است که با معیار اقامت در هتل اندازه‌گیری می‌شود، این اندازه با کاهش ۷۳ درصدی نسبت به سال ۲۰۱۹ به دلیل ویروس کوید ۱۹ رو به رو بوده‌است.
+1	پاریس	پاریس	NOUN	N_SING	Number=Sing	11	nsubj	_	_
+2	در	در	ADP	P	_	3	case	_	_
+3	سال	سال	NOUN	N_SING	Number=Sing	11	obl	_	_
+4	۲۰۲۰	۲۰۲۰	NUM	NUM	NumType=Card	3	nummod	_	SpaceAfter=No
+5	،	،	PUNCT	DELM	_	11	punct	_	_
+6	۱۲	۱۲	NUM	NUM	NumType=Card	9	nummod	_	SpaceAfter=No
+7	٫	٫	PUNCT	DELM	_	8	punct	_	SpaceAfter=No
+8	۶	۶	NUM	NUM	NumType=Card	6	conj	_	_
+9	میلیون	میلیون	NUM	NUM	NumType=Card	10	compound	_	_
+10	بازدیدکننده	بازدیدکننده	NOUN	N_SING	Number=Sing	11	obj	_	_
+11	داشته‌است	_	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	0	root	_	_
+12	که	که	SCONJ	CON	_	18	mark	_	_
+13	با	با	ADP	P	_	14	case	_	_
+14	معیار	معیار	NOUN	N_SING	Number=Sing	18	nmod	_	_
+15	اقامت	اقامت	NOUN	N_SING	Number=Sing	14	nmod:poss	_	_
+16	در	در	ADP	P	_	17	case	_	_
+17	هتل	هتل	NOUN	N_SING	Number=Sing	15	nmod	_	_
+18	اندازه‌گیری	اندازه‌گیری	NOUN	N_SING	Number=Sing	11	ccomp	_	_
+19	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	18	cop	_	SpaceAfter=No
+20	،	،	PUNCT	DELM	_	18	punct	_	_
+21	این	این	DET	DET	_	22	det	_	_
+22	اندازه	اندازه	NOUN	N_SING	Number=Sing	39	nsubj	_	_
+23	با	با	ADP	P	_	24	case	_	_
+24	کاهش	کاهش	NOUN	N_SING	Number=Sing	39	obl	_	_
+25	۷۳	۷۳	NUM	NUM	NumType=Card	26	nummod	_	_
+26	درصدی	درصدی	NOUN	N_SING	Number=Sing	24	nmod:poss	_	_
+27	نسبت	نسبت	ADP	P	_	29	case	_	_
+28	به	به	ADP	P	_	27	fixed	_	_
+29	سال	سال	NOUN	N_SING	Number=Sing	39	obl	_	_
+30	۲۰۱۹	۲۰۱۹	NUM	NUM	NumType=Card	29	nummod	_	_
+31	به	به	ADP	P	_	32	case	_	_
+32	دلیل	دلیل	NOUN	N_SING	Number=Sing	39	obl	_	_
+33	ویروس	ویروس	NOUN	N_SING	Number=Sing	32	nmod:poss	_	_
+34	کوید	_	NOUN	N_SING	Number=Sing	33	flat	_	_
+35	۱۹	۱۹	NUM	NUM	NumType=Card	34	nummod	_	_
+36	رو	رو	NOUN	N_SING	Number=Sing	39	obj	_	_
+37	به	به	ADP	P	_	38	case	_	_
+38	رو	رو	NOUN	N_SING	Number=Sing	36	nmod	_	_
+39	بوده‌است	بود#باش	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	18	ccomp	_	SpaceAfter=No
+40	.	.	PUNCT	DELM	_	11	punct	_	_
+
+# sent_id = 28
+# text = منطقه پاریس یکی از ثروتمندترین مناطق اروپاست.
+1	منطقه	منطقه	NOUN	N_SING	Number=Sing	3	nsubj	_	_
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	یکی	یک	NUM	NUM	NumType=Card	0	root	_	_
+4	از	از	ADP	P	_	6	case	_	_
+5	ثروتمندترین	ثروتمند	ADJ	ADJ_SUP	Degree=Sup	6	amod	_	_
+6	مناطق	منطقه	NOUN	N_PL	Number=Plur	3	nmod	_	_
+7	اروپاست	اروپاست	AUX	N_SING	Number=Sing	6	nmod:poss	_	SpaceAfter=No
+8	.	.	PUNCT	DELM	_	3	punct	_	_
+
+# sent_id = 29
+# text = در سال ۱۹۸۹ به عنوان پایتخت فرهنگی اروپا و در سال ۲۰۱۷ به عنوان پایتخت نوآوری اروپا انتخاب شد.
+1	در	در	ADP	P	_	2	case	_	_
+2	سال	سال	NOUN	N_SING	Number=Sing	18	nmod	_	_
+3	۱۹۸۹	۱۹۸۹	NUM	NUM	NumType=Card	2	nummod	_	_
+4	به	به	ADP	P	_	5	case	_	_
+5	عنوان	عنوان	NOUN	N_SING	Number=Sing	18	nmod	_	_
+6	پایتخت	پایتخت	NOUN	N_SING	Number=Sing	5	flat	_	_
+7	فرهنگی	فرهنگی	ADJ	ADJ	Degree=Pos	6	amod	_	_
+8	اروپا	اروپا	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+9	و	و	CCONJ	CON	_	11	cc	_	_
+10	در	در	ADP	P	_	11	case	_	_
+11	سال	سال	NOUN	N_SING	Number=Sing	6	conj	_	_
+12	۲۰۱۷	۲۰۱۷	NUM	NUM	NumType=Card	11	nummod	_	_
+13	به	به	ADP	P	_	14	case	_	_
+14	عنوان	عنوان	NOUN	N_SING	Number=Sing	18	nmod	_	_
+15	پایتخت	پایتخت	NOUN	N_SING	Number=Sing	14	flat	_	_
+16	نوآوری	_	NOUN	N_SING	Number=Sing	15	nmod:poss	_	_
+17	اروپا	اروپا	NOUN	N_SING	Number=Sing	16	nmod:poss	_	_
+18	انتخاب	انتخاب	NOUN	N_SING	Number=Sing	0	root	_	_
+19	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	18	cop	_	SpaceAfter=No
+20	.	.	PUNCT	DELM	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -401,7 +888,7 @@
 # newpar
 # sent_id = 1
 # text = واژه‌شناسی
-1	واژه‌شناسی	واژه‌شناسی	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	واژه‌شناسی	واژه‌شناسی	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -527,7 +1014,7 @@
 # newpar
 # sent_id = 1
 # text = تاریخ
-1	تاریخ	تاریخ	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	تاریخ	تاریخ	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -537,7 +1024,7 @@
 # sent_id = 1
 # text = دوران باستان
 1	دوران	دوره	NOUN	N_SING	Number=Sing	0	root	_	_
-2	باستان	باستان	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	باستان	باستان	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -731,7 +1218,7 @@
 # sent_id = 1
 # text = قرون وسطی
 1	قرون	قرن	NOUN	N_PL	Number=Plur	0	root	_	_
-2	وسطی	وسطی	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	وسطی	وسطی	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1111,7 +1598,7 @@
 # sent_id = 1
 # text = قرن نوزدهم
 1	قرن	قرن	NOUN	N_SING	Number=Sing	0	root	_	_
-2	نوزدهم	نوزدهم	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	نوزدهم	نوزدهم	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1289,6 +1776,98 @@
 9	دادند	داد#ده	VERB	V_PA	Number=Plur|Person=3|Tense=Past	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	DELM	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = همچنین در طول محاصرهٔ پاریس که باعث پایان جنگ‌های بین فرانسه و پروس شد، این شهر صدمات زیادی را متقبل گشت.
+1	همچنین	همچنین	CCONJ	CON	_	22	cc	_	_
+2	در	در	ADP	P	_	3	case	_	_
+3	طول	طول	NOUN	N_SING	Number=Sing	22	obl	_	_
+4	محاصرهٔ	محاصره	NOUN	N_SING	Number=Sing	3	nmod:poss	_	_
+5	پاریس	پاریس	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	که	که	SCONJ	CON	_	7	mark	_	_
+7	باعث	باعث	NOUN	N_SING	Number=Sing	5	acl:relcl	_	_
+8	پایان	پایان	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	جنگ‌های	_	NOUN	N_PL	Number=Plur	8	nmod:poss	_	_
+10	بین	بین	ADP	P	_	11	case	_	_
+11	فرانسه	فرانسه	NOUN	N_SING	Number=Sing	9	nmod	_	_
+12	و	و	CCONJ	CON	_	13	cc	_	_
+13	پروس	_	NOUN	N_SING	Number=Sing	11	conj	_	_
+14	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	7	cop	_	SpaceAfter=No
+15	،	،	PUNCT	DELM	_	22	punct	_	_
+16	این	این	DET	DET	_	17	det	_	_
+17	شهر	شهر	NOUN	N_SING	Number=Sing	22	nsubj	_	_
+18	صدمات	صدمه	NOUN	N_PL	Number=Plur	22	obj	_	_
+19	زیادی	زیاد	ADJ	ADJ	Degree=Pos	18	amod	_	_
+20	را	را	PART	CLITIC	_	18	case	_	_
+21	متقبل	متقبل	ADJ	ADJ	Degree=Pos	22	xcomp	_	_
+22	گشت	گشت#گرد	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+23	.	.	PUNCT	DELM	_	22	punct	_	_
+
+# sent_id = 6
+# text = علاوه بر این، درگیری‌های مابین مردم و گروه‌های آزادی‌خواه با نیروهای دولتی طی سقوط دولت ناپلئون سوم در سال ۱۸۷۱ باعث کشته شدن بیش از ۲۰٬
+1	علاوه	علاوه	ADP	P	_	3	case	_	_
+2	بر	بر	ADP	P	_	25	fixed	_	_
+3	این	این	PRON	PRO	Number=Sing|PronType=Dem	22	nmod	_	SpaceAfter=No
+4	،	،	PUNCT	DELM	_	22	punct	_	_
+5	درگیری‌های	درگیری	NOUN	N_PL	Number=Plur	22	nsubj	_	_
+6	مابین	مابین	ADJ	ADJ	Degree=Pos	5	amod	_	_
+7	مردم	مردم	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+8	و	و	CCONJ	CON	_	9	cc	_	_
+9	گروه‌های	گروه	NOUN	N_PL	Number=Plur	7	conj	_	_
+10	آزادی‌خواه	_	ADJ	ADJ	Degree=Pos	9	amod	_	_
+11	با	با	ADP	P	_	12	case	_	_
+12	نیروهای	نیرو	NOUN	N_PL	Number=Plur	9	nmod	_	_
+13	دولتی	دولتی	ADJ	ADJ	Degree=Pos	12	amod	_	_
+14	طی	طی	ADP	P	_	15	case	_	_
+15	سقوط	سقوط	NOUN	N_SING	Number=Sing	22	nmod	_	_
+16	دولت	دولت	NOUN	N_SING	Number=Sing	15	nmod:poss	_	_
+17	ناپلئون	ناپلئون	NOUN	N_SING	Number=Sing	16	nmod:poss	_	_
+18	سوم	سوم	ADJ	ADJ	Degree=Pos	17	amod	_	_
+19	در	در	ADP	P	_	20	case	_	_
+20	سال	سال	NOUN	N_SING	Number=Sing	17	nmod	_	_
+21	۱۸۷۱	۱۸۷۱	NUM	NUM	NumType=Card	20	nummod	_	_
+22	باعث	باعث	NOUN	N_SING	Number=Sing	0	root	_	_
+23	کشته	کشت#کش	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	24	compound:lvc	_	_
+24	شدن	شدن	NOUN	N_SING	Number=Sing	22	nmod:poss	_	_
+25	بیش	بیش	ADJ	ADJ_CMPR	Degree=Cmp	27	advmod	_	_
+26	از	از	ADP	P	_	25	fixed	_	_
+27	۲۰٬	۲۰٬	NUM	NUM	NumType=Card	6	nummod	_	SpaceAfter=No
+
+# sent_id = 7
+# text = ۰۰۰ نفر و به آتش کشیده شدن بسیاری از آثار و اماکن تاریخی در پاریس شد.
+1	۰۰۰	۰۰۰	NUM	NUM	NumType=Card	2	nummod	_	_
+2	نفر	نفر	NOUN	N_SING	Number=Sing	7	nsubj	_	_
+3	و	و	CCONJ	CON	_	6	cc	_	_
+4	به	به	ADP	P	_	5	case	_	_
+5	آتش	آتش	NOUN	N_SING	Number=Sing	6	compound:lvc	_	_
+6	کشیده	کشید#کش	ADJ	ADJ_INO	Number=Sing|Person=3|VerbForm=Part	7	compound:lvc	_	_
+7	شدن	شدن	NOUN	N_SING	Number=Sing	0	root	_	_
+8	بسیاری	بسیاری	ADJ	ADJ	Degree=Pos	7	amod	_	_
+9	از	از	ADP	P	_	10	case	_	_
+10	آثار	اثر	NOUN	N_PL	Number=Plur	8	nmod	_	_
+11	و	و	CCONJ	CON	_	12	cc	_	_
+12	اماکن	مکان	NOUN	N_PL	Number=Plur	10	conj	_	_
+13	تاریخی	تاریخی	ADJ	ADJ	Degree=Pos	12	amod	_	_
+14	در	در	ADP	P	_	15	case	_	_
+15	پاریس	پاریس	NOUN	N_SING	Number=Sing	7	nmod	_	_
+16	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	7	cop	_	SpaceAfter=No
+17	.	.	PUNCT	DELM	_	7	punct	_	_
+
+# sent_id = 8
+# text = این دوره در تاریخ فرانسه به «هفته خونین» مشهور است.
+1	این	این	DET	DET	_	2	det	_	_
+2	دوره	دوره	NOUN	N_SING	Number=Sing	11	nsubj	_	_
+3	در	در	ADP	P	_	4	case	_	_
+4	تاریخ	تاریخ	NOUN	N_SING	Number=Sing	11	nmod	_	_
+5	فرانسه	فرانسه	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	به	به	ADP	P	_	8	case	_	_
+7	«	«	PUNCT	DELM	_	6	punct	_	SpaceAfter=No
+8	هفته	هفته	NOUN	N_SING	Number=Sing	11	nmod	_	_
+9	خونین	_	ADJ	ADJ	Degree=Pos	8	amod	_	SpaceAfter=No
+10	»	»	PUNCT	DELM	_	6	punct	_	_
+11	مشهور	مشهور	ADJ	ADJ	Degree=Pos	0	root	_	_
+12	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	11	cop	_	SpaceAfter=No
+13	.	.	PUNCT	DELM	_	11	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1330,6 +1909,99 @@
 32	شد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	31	aux:pass	_	SpaceAfter=No
 33	.	.	PUNCT	DELM	_	31	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = این برج که به برج ایفل مشهور است، ابتدا به عنوان یک بنای موقت ساخته شد، اما پس از پایان نمایشگاه پابرجا ماند و نماد زیبای دیگری به پاریس افزود.
+1	این	این	DET	DET	_	2	det	_	_
+2	برج	برج	NOUN	N_SING	Number=Sing	16	nsubj:pass	_	_
+3	که	که	SCONJ	CON	_	7	mark	_	_
+4	به	به	ADP	P	_	5	case	_	_
+5	برج	برج	NOUN	N_SING	Number=Sing	7	nmod	_	_
+6	ایفل	_	NOUN	N_SING	Number=Sing	5	flat	_	_
+7	مشهور	مشهور	ADJ	ADJ	Degree=Pos	2	acl:relcl	_	_
+8	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	7	cop	_	SpaceAfter=No
+9	،	،	PUNCT	DELM	_	16	punct	_	_
+10	ابتدا	ابتدا	NOUN	N_SING	Number=Sing	16	advmod	_	_
+11	به	به	ADP	P	_	12	case	_	_
+12	عنوان	عنوان	NOUN	N_SING	Number=Sing	16	obl	_	_
+13	یک	یک	NUM	NUM	NumType=Card	14	nummod	_	_
+14	بنای	بنا	NOUN	N_SING	Number=Sing	12	flat	_	_
+15	موقت	_	ADJ	ADJ	Degree=Pos	14	amod	_	_
+16	ساخته	ساخت#ساز	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	0	root	_	_
+17	شد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	16	aux:pass	_	SpaceAfter=No
+18	،	،	PUNCT	DELM	_	25	punct	_	_
+19	اما	اما	CCONJ	CON	_	25	cc	_	_
+20	پس	پس	ADV	ADV_TIME	Case=Tem	25	advmod	_	_
+21	از	از	ADP	P	_	22	case	_	_
+22	پایان	پایان	NOUN	N_SING	Number=Sing	20	nmod	_	_
+23	نمایشگاه	نمایشگاه	NOUN	N_SING	Number=Sing	22	nmod:poss	_	_
+24	پابرجا	پابرجا	ADJ	ADJ	Degree=Pos	25	compound:lvc	_	_
+25	ماند	ماند#مان	VERB	V_PA	Number=Sing|Person=3|Tense=Past	16	conj	_	_
+26	و	و	CCONJ	CON	_	32	cc	_	_
+27	نماد	نماد	NOUN	N_SING	Number=Sing	32	obj	_	_
+28	زیبای	زیبا	ADJ	ADJ	Degree=Pos	27	amod	_	_
+29	دیگری	دیگر	ADJ	ADJ	Degree=Pos	27	amod	_	_
+30	به	به	ADP	P	_	31	case	_	_
+31	پاریس	پاریس	NOUN	N_SING	Number=Sing	32	obl	_	_
+32	افزود	افزود#افزا	VERB	V_PA	Number=Sing|Person=3|Tense=Past	25	conj	_	SpaceAfter=No
+33	.	.	PUNCT	DELM	_	16	punct	_	_
+
+# sent_id = 3
+# text = برج ایفل تا سال ۱۹۳۰ بلندترین برج جهان بود.
+1	برج	برج	NOUN	N_SING	Number=Sing	7	nsubj	_	_
+2	ایفل	ایفل	NOUN	N_SING	Number=Sing	1	flat	_	_
+3	تا	تا	ADP	P	_	4	case	_	_
+4	سال	سال	NOUN	N_SING	Number=Sing	7	nmod	_	_
+5	۱۹۳۰	۱۹۳۰	NUM	NUM	NumType=Card	4	nummod	_	_
+6	بلندترین	بلند	ADJ	ADJ_SUP	Degree=Sup	7	amod	_	_
+7	برج	برج	NOUN	N_SING	Number=Sing	0	root	_	_
+8	جهان	جهان	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	بود	بود#باش	AUX	V_PA	Number=Sing|Person=3|Tense=Past	7	cop	_	SpaceAfter=No
+10	.	.	PUNCT	DELM	_	7	punct	_	_
+
+# sent_id = 4
+# text = متروی پاریس نیز هم‌زمان با افتتاح نمایشگاه جهانی در سال ۱۹۰۰ گشایش یافت.
+1	متروی	متروی	NOUN	N_SING	Number=Sing	13	nsubj	_	_
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	نیز	نیز	SCONJ	CON	_	13	advmod	_	_
+4	هم‌زمان	هم‌زمان	ADV	ADV_TIME	Case=Tem	13	advmod	_	_
+5	با	با	ADP	P	_	6	case	_	_
+6	افتتاح	افتتاح	NOUN	N_SING	Number=Sing	13	obl	_	_
+7	نمایشگاه	نمایشگاه	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+8	جهانی	جهانی	ADJ	ADJ	Degree=Pos	7	amod	_	_
+9	در	در	ADP	P	_	10	case	_	_
+10	سال	سال	NOUN	N_SING	Number=Sing	7	nmod	_	_
+11	۱۹۰۰	۱۹۰۰	NUM	NUM	NumType=Card	10	nummod	_	_
+12	گشایش	گشایش	NOUN	N_SING	Number=Sing	13	compound:lvc	_	_
+13	یافت	یافت#یاب	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	DELM	_	13	punct	_	_
+
+# sent_id = 5
+# text = برگزاری این نمایشگاه نماد مهمی از جایگاه برتر پاریس به عنوان قطب فناوری، توریستی و تجارت در جهان آن روز به‌شمار می‌رفت.
+1	برگزاری	برگزاری	NOUN	N_SING	Number=Sing	23	nsubj	_	_
+2	این	این	DET	DET	_	3	det	_	_
+3	نمایشگاه	نمایشگاه	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+4	نماد	نماد	NOUN	N_SING	Number=Sing	23	obj	_	_
+5	مهمی	مهم	ADJ	ADJ	Degree=Pos	4	amod	_	_
+6	از	از	ADP	P	_	7	case	_	_
+7	جایگاه	جایگاه	NOUN	N_SING	Number=Sing	4	nmod	_	_
+8	برتر	برتر	ADJ	ADJ_CMPR	Degree=Cmp	7	amod	_	_
+9	پاریس	پاریس	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+10	به	به	ADP	P	_	11	case	_	_
+11	عنوان	عنوان	NOUN	N_SING	Number=Sing	9	nmod	_	_
+12	قطب	قطب	NOUN	N_SING	Number=Sing	11	flat	_	_
+13	فناوری	فناوری	ADJ	ADJ	Degree=Pos	12	amod	_	SpaceAfter=No
+14	،	،	PUNCT	DELM	_	15	punct	_	_
+15	توریستی	توریستی	ADJ	ADJ	Degree=Pos	13	conj	_	_
+16	و	و	CCONJ	CON	_	17	cc	_	_
+17	تجارت	تجارت	NOUN	N_SING	Number=Sing	15	conj	_	_
+18	در	در	ADP	P	_	19	case	_	_
+19	جهان	جهان	NOUN	N_SING	Number=Sing	17	nmod	_	_
+20	آن	آن	DET	DET	_	21	det	_	_
+21	روز	روز	NOUN	N_SING	Number=Sing	19	nmod:poss	_	_
+22	به‌شمار	به‌شمار	ADV	ADV	_	23	advmod	_	_
+23	می‌رفت	رفت#رو	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	DELM	_	23	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1338,7 +2010,7 @@
 # sent_id = 1
 # text = قرن بیستم
 1	قرن	قرن	NOUN	N_SING	Number=Sing	0	root	_	_
-2	بیستم	بیستم	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	بیستم	بیستم	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1349,7 +2021,7 @@
 # text = جنگ جهانی اول
 1	جنگ	جنگ	NOUN	N_SING	Number=Sing	0	root	_	_
 2	جهانی	جهانی	ADJ	ADJ	Degree=Pos	1	amod	_	_
-3	اول	اول	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+3	اول	اول	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1474,7 +2146,7 @@
 # text = جنگ جهانی دوم
 1	جنگ	جنگ	NOUN	N_SING	Number=Sing	0	root	_	_
 2	جهانی	جهانی	ADJ	ADJ	Degree=Pos	1	amod	_	_
-3	دوم	دوم	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+3	دوم	دوم	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1515,6 +2187,57 @@
 30	بود	بود#باش	VERB	V_PA	Number=Sing|Person=3|Tense=Past	20	conj	_	SpaceAfter=No
 31	.	.	PUNCT	DELM	_	20	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = با وجود فتح پاریس بدست آلمانی‌ها بسیاری از آثار تاریخی و فرهنگی پاریس از آسیب و صدمات در امان ماندند.
+1	با	با	ADP	P	_	2	case	_	_
+2	وجود	وجود	NOUN	N_SING	Number=Sing	20	obl	_	_
+3	فتح	فتح	NOUN	N_SING	Number=Sing	2	nmod:poss	_	_
+4	پاریس	پاریس	NOUN	N_SING	Number=Sing	3	nmod:poss	_	_
+5	بدست	بدست	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	آلمانی‌ها	آلمانی	NOUN	N_PL	Number=Plur	5	nmod:poss	_	_
+7	بسیاری	بسیاری	ADJ	ADJ	Degree=Pos	20	nsubj	_	_
+8	از	از	ADP	P	_	9	case	_	_
+9	آثار	اثر	NOUN	N_PL	Number=Plur	7	nmod	_	_
+10	تاریخی	تاریخی	ADJ	ADJ	Degree=Pos	9	amod	_	_
+11	و	و	CCONJ	CON	_	12	cc	_	_
+12	فرهنگی	فرهنگی	ADJ	ADJ	Degree=Pos	10	conj	_	_
+13	پاریس	پاریس	NOUN	N_SING	Number=Sing	12	nmod:poss	_	_
+14	از	از	ADP	P	_	15	case	_	_
+15	آسیب	آسیب	NOUN	N_SING	Number=Sing	20	obl	_	_
+16	و	و	CCONJ	CON	_	17	cc	_	_
+17	صدمات	صدمه	NOUN	N_PL	Number=Plur	15	conj	_	_
+18	در	در	ADP	P	_	19	case	_	_
+19	امان	امان	NOUN	N_SING	Number=Sing	20	compound:lvc	_	_
+20	ماندند	_	VERB	V_PA	Number=Plur|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+21	.	.	PUNCT	DELM	_	20	punct	_	_
+
+# sent_id = 3
+# text = از دلایل این امر می‌توان عدم مواجههٔ آلمان‌ها با مقاومت زیاد و عدم وجود اهداف استراتژیک برای بمباران در مرکز شهر بر می‌گردد.
+1	از	از	ADP	P	_	2	case	_	_
+2	دلایل	دلیل	NOUN	N_PL	Number=Plur	6	nmod	_	_
+3	این	این	DET	DET	_	4	det	_	_
+4	امر	امر	NOUN	N_SING	Number=Sing	2	nmod:poss	_	_
+5	می‌توان	توان	AUX	V_AUX	_	23	aux	_	_
+6	عدم	عدم	NOUN	N_SING	Number=Sing	23	nsubj	_	_
+7	مواجههٔ	مواجهه	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+8	آلمان‌ها	آلمان	NOUN	N_PL	Number=Plur	7	nmod:poss	_	_
+9	با	با	ADP	P	_	10	case	_	_
+10	مقاومت	مقاومت	NOUN	N_SING	Number=Sing	8	nmod	_	_
+11	زیاد	زیاد	ADJ	ADJ	Degree=Pos	10	amod	_	_
+12	و	و	CCONJ	CON	_	13	cc	_	_
+13	عدم	عدم	NOUN	N_SING	Number=Sing	10	conj	_	_
+14	وجود	وجود	NOUN	N_SING	Number=Sing	13	nmod:poss	_	_
+15	اهداف	هدف	NOUN	N_PL	Number=Plur	14	nmod:poss	_	_
+16	استراتژیک	استراتژیک	ADJ	ADJ	Degree=Pos	15	amod	_	_
+17	برای	برای	ADP	P	_	18	case	_	_
+18	بمباران	بمبار	NOUN	N_PL	Number=Plur	15	nmod	_	_
+19	در	در	ADP	P	_	20	case	_	_
+20	مرکز	مرکز	NOUN	N_SING	Number=Sing	18	nmod	_	_
+21	شهر	شهر	NOUN	N_SING	Number=Sing	20	nmod:poss	_	_
+22	بر	بر	ADP	P	_	23	case	_	_
+23	می‌گردد	گشت#گرد	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	DELM	_	23	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1526,7 +2249,7 @@
 2	از	از	ADP	P	_	3	case	_	_
 3	جنگ	جنگ	NOUN	N_SING	Number=Sing	1	nmod	_	_
 4	جهانی	جهانی	ADJ	ADJ	Degree=Pos	3	amod	_	_
-5	دوم	دوم	ADJ	ADJ	Degree=Pos	4	amod	_	SpacesAfter=\n
+5	دوم	دوم	ADJ	ADJ	Degree=Pos	4	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1614,7 +2337,7 @@
 # sent_id = 1
 # text = رشد اقتصادی
 1	رشد	رشد	NOUN	N_SING	Number=Sing	0	root	_	_
-2	اقتصادی	اقتصادی	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	اقتصادی	اقتصادی	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1740,7 +2463,7 @@
 # newpar
 # sent_id = 1
 # text = جغرافیا
-1	جغرافیا	جغرافیا	NOUN	N_PL	Number=Plur	0	root	_	SpacesAfter=\n
+1	جغرافیا	جغرافیا	NOUN	N_PL	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1953,7 +2676,7 @@
 # text = آب و هوا
 1	آب	آب	NOUN	N_SING	Number=Sing	0	root	_	_
 2	و	و	CCONJ	CON	_	3	cc	_	_
-3	هوا	هوا	NOUN	N_SING	Number=Sing	1	conj	_	SpacesAfter=\n
+3	هوا	هوا	NOUN	N_SING	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2133,7 +2856,7 @@
 # sent_id = 1
 # text = چشم‌انداز شهر
 1	چشم‌انداز	چشم‌انداز	ADJ	ADJ	Degree=Pos	0	root	_	_
-2	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpacesAfter=\n
+2	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2233,7 +2956,7 @@
 # newpar
 # sent_id = 1
 # text = معماری
-1	معماری	معماری	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	معماری	معماری	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2462,6 +3185,25 @@
 43	گرفته‌اند	گرفت#گیر	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	0	root	_	SpaceAfter=No
 44	.	.	PUNCT	DELM	_	43	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = طبق اعلام مسئولین آرشیو ملی فرانسه نیز تا سال ۲۰۱۰ به حومه پاریس منتقل می‌شود.
+1	طبق	طبق	ADP	P	_	2	case	_	_
+2	اعلام	اعلام	NOUN	N_SING	Number=Sing	14	nmod	_	_
+3	مسئولین	مسئولین	NOUN	N_PL	Number=Plur	2	nmod:poss	_	_
+4	آرشیو	آرشیو	NOUN	N_PL	Number=Plur	3	nmod:poss	_	_
+5	ملی	ملی	ADJ	ADJ	Degree=Pos	4	amod	_	_
+6	فرانسه	فرانسه	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+7	نیز	نیز	SCONJ	CON	_	14	advmod	_	_
+8	تا	تا	ADP	P	_	9	case	_	_
+9	سال	سال	NOUN	N_SING	Number=Sing	14	nmod	_	_
+10	۲۰۱۰	۲۰۱۰	NUM	NUM	NumType=Card	9	nummod	_	_
+11	به	به	ADP	P	_	12	case	_	_
+12	حومه	_	NOUN	N_SING	Number=Sing	14	nmod	_	_
+13	پاریس	پاریس	NOUN	N_SING	Number=Sing	12	nmod:poss	_	_
+14	منتقل	منتقل	ADJ	ADJ	Degree=Pos	0	root	_	_
+15	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	14	cop	_	SpaceAfter=No
+16	.	.	PUNCT	DELM	_	14	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2521,7 +3263,7 @@
 4	و	و	CCONJ	CON	_	5	cc	_	_
 5	محلات	_	NOUN	N_PL	Number=Plur	3	conj	_	_
 6	معروف	معروف	ADJ	ADJ	Degree=Pos	5	amod	_	_
-7	پاریس	پاریس	NOUN	N_SING	Number=Sing	5	nmod:poss	_	SpacesAfter=\n
+7	پاریس	پاریس	NOUN	N_SING	Number=Sing	5	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2532,7 +3274,7 @@
 # text = بخش مرکزی شهر
 1	بخش	بخش	NOUN	N_SING	Number=Sing	0	root	_	_
 2	مرکزی	مرکزی	ADJ	ADJ	Degree=Pos	1	amod	_	_
-3	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpacesAfter=\n
+3	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2824,7 +3566,7 @@
 # sent_id = 1
 # text = حاشیه شهر
 1	حاشیه	حاشیه	NOUN	N_SING	Number=Sing	0	root	_	_
-2	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpacesAfter=\n
+2	شهر	شهر	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -2839,7 +3581,7 @@
 4	مشهور	مشهور	ADJ	ADJ	Degree=Pos	3	amod	_	_
 5	و	و	CCONJ	CON	_	6	cc	_	_
 6	دیدنی	دیدنی	ADJ	ADJ	Degree=Pos	3	conj	_	_
-7	پاریس	پاریس	NOUN	N_SING	Number=Sing	6	nmod:poss	_	SpacesAfter=\n
+7	پاریس	پاریس	NOUN	N_SING	Number=Sing	6	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3225,7 +3967,7 @@
 # text = پارک‌ها و فضای‌سبز
 1	پارک‌ها	پارک	NOUN	N_PL	Number=Plur	0	root	_	_
 2	و	و	CCONJ	CON	_	3	cc	_	_
-3	فضای‌سبز	فضای‌سبز	ADJ	ADJ	Degree=Pos	1	conj	_	SpacesAfter=\n
+3	فضای‌سبز	فضای‌سبز	ADJ	ADJ	Degree=Pos	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3441,7 +4183,7 @@
 # sent_id = 1
 # text = گورستان‌های پاریس
 1	گورستان‌های	گورستان	NOUN	N_PL	Number=Plur	0	root	_	_
-2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpacesAfter=\n
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3665,7 +4407,7 @@
 # newpar
 # sent_id = 1
 # text = مترو
-1	مترو	مترو	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	مترو	مترو	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3713,7 +4455,7 @@
 # text = فرهنگ و هنر
 1	فرهنگ	فرهنگ	NOUN	N_SING	Number=Sing	0	root	_	_
 2	و	و	CCONJ	CON	_	3	cc	_	_
-3	هنر	هنر	NOUN	N_SING	Number=Sing	1	conj	_	SpacesAfter=\n
+3	هنر	هنر	NOUN	N_SING	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3726,7 +4468,7 @@
 2	،	،	PUNCT	DELM	_	3	punct	_	_
 3	تئاتر	تئاتر	NOUN	N_SING	Number=Sing	1	conj	_	_
 4	و	و	CCONJ	CON	_	5	cc	_	_
-5	موسیقی	موسیقی	NOUN	N_SING	Number=Sing	3	conj	_	SpacesAfter=\n
+5	موسیقی	موسیقی	NOUN	N_SING	Number=Sing	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -4009,7 +4751,7 @@
 2	،	،	PUNCT	DELM	_	3	punct	_	_
 3	رستوران‌ها	رستوران	NOUN	N_PL	Number=Plur	1	conj	_	_
 4	و	و	CCONJ	CON	_	5	cc	_	_
-5	کاباره‌ها	کاباره	NOUN	N_PL	Number=Plur	3	conj	_	SpacesAfter=\n
+5	کاباره‌ها	کاباره	NOUN	N_PL	Number=Plur	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -4136,6 +4878,24 @@
 11	فراوانی	فراوان	ADJ	ADJ	Degree=Pos	10	amod	_	_
 12	دارد	داشت#دار	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	4	ccomp	_	SpaceAfter=No
 13	.	.	PUNCT	DELM	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = به‌طور کل در حدود ۵۰۰۰ رستوران در پاریس به تهیه و طبخ غذا می‌پردازند.
+1	به‌طور	_	ADV	ADV	_	14	advmod	_	_
+2	کل	کل	ADJ	ADJ	Degree=Pos	14	advmod	_	_
+3	در	در	ADP	P	_	6	case	_	_
+4	حدود	حدود	NOUN	N_PL	Number=Plur	5	advmod	_	_
+5	۵۰۰۰	۵۰۰۰	NUM	NUM	NumType=Card	6	nummod	_	_
+6	رستوران	رستوران	NOUN	N_SING	Number=Sing	14	obl	_	_
+7	در	در	ADP	P	_	8	case	_	_
+8	پاریس	پاریس	NOUN	N_SING	Number=Sing	6	nmod	_	_
+9	به	به	ADP	P	_	10	case	_	_
+10	تهیه	تهیه	NOUN	N_SING	Number=Sing	14	obl	_	_
+11	و	و	CCONJ	CON	_	12	cc	_	_
+12	طبخ	_	NOUN	N_SING	Number=Sing	10	conj	_	_
+13	غذا	غذا	NOUN	N_SING	Number=Sing	12	nmod:poss	_	_
+14	می‌پردازند	پرداخت#پرداز	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	DELM	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -4382,7 +5142,7 @@
 # newpar
 # sent_id = 1
 # text = هتل‌ها
-1	هتل‌ها	هتل	NOUN	N_PL	Number=Plur	0	nsubj	_	SpacesAfter=\n
+1	هتل‌ها	هتل	NOUN	N_PL	Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -4656,7 +5416,7 @@
 # newpar
 # sent_id = 1
 # text = سینما
-1	سینما	سینما	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	سینما	سینما	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -4843,7 +5603,7 @@
 # newpar
 # sent_id = 1
 # text = توریسم
-1	توریسم	توریسم	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	توریسم	توریسم	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5050,6 +5810,107 @@
 23	شناخته	شناخت#شناس	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	13	ccomp	_	_
 24	می‌شود	کرد#کن	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	23	aux:pass	_	SpaceAfter=No
 25	.	.	PUNCT	DELM	_	13	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = کلیسای نوتردام با ۱۳ میلیون و کلیسای سکره کر با ۱۲ میلیون بازدید سالیانه توسط توریست‌ها از دیگر قطب‌های جذب توریست در پاریس هستند.
+1	کلیسای	_	NOUN	N_SING	Number=Sing	24	nsubj	_	_
+2	نوتردام	نوتردام	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	با	با	ADP	P	_	5	case	_	_
+4	۱۳	۱۳	NUM	NUM	NumType=Card	5	nummod	_	_
+5	میلیون	میلیون	NUM	NUM	NumType=Card	1	nmod	_	_
+6	و	و	CCONJ	CON	_	7	cc	_	_
+7	کلیسای	_	NOUN	N_SING	Number=Sing	1	conj	_	_
+8	سکره	سکره	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	کر	کر	NOUN	N_SING	Number=Sing	8	flat	_	_
+10	با	با	ADP	P	_	13	case	_	_
+11	۱۲	۱۲	NUM	NUM	NumType=Card	12	nummod	_	_
+12	میلیون	میلیون	NUM	NUM	NumType=Card	13	compound	_	_
+13	بازدید	_	NOUN	N_SING	Number=Sing	24	obl	_	_
+14	سالیانه	سالیانه	ADJ	ADJ	Degree=Pos	13	amod	_	_
+15	توسط	توسط	ADP	P	_	16	case	_	_
+16	توریست‌ها	توریست	NOUN	N_PL	Number=Plur	13	nmod	_	_
+17	از	از	ADP	P	_	19	case	_	_
+18	دیگر	دیگر	DET	DET	_	19	det	_	_
+19	قطب‌های	قطب	NOUN	N_PL	Number=Plur	24	obl	_	_
+20	جذب	جذب	NOUN	N_SING	Number=Sing	19	nmod:poss	_	_
+21	توریست	توریست	NOUN	N_SING	Number=Sing	20	nmod:poss	_	_
+22	در	در	ADP	P	_	23	case	_	_
+23	پاریس	پاریس	NOUN	N_SING	Number=Sing	21	nmod	_	_
+24	هستند	هست	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+25	.	.	PUNCT	DELM	_	24	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = برج ایفل نیز به عنوان مشهورترین اثر شهری پاریس سالانه به‌طور متوسط ۶٫۵ میلیون بازدیدکننده دارد.
+1	برج	برج	NOUN	N_SING	Number=Sing	18	nsubj	_	_
+2	ایفل	ایفل	NOUN	N_SING	Number=Sing	1	flat	_	_
+3	نیز	نیز	SCONJ	CON	_	18	advmod	_	_
+4	به	به	ADP	P	_	5	case	_	_
+5	عنوان	عنوان	NOUN	N_SING	Number=Sing	18	obl	_	_
+6	مشهورترین	مشهور	ADJ	ADJ_SUP	Degree=Sup	7	amod	_	_
+7	اثر	اثر	NOUN	N_SING	Number=Sing	5	flat	_	_
+8	شهری	شهری	ADJ	ADJ	Degree=Pos	7	amod	_	_
+9	پاریس	پاریس	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+10	سالانه	سالانه	ADV	ADV_TIME	Case=Tem	18	advmod	_	_
+11	به‌طور	_	ADV	ADV	_	12	advmod	_	_
+12	متوسط	متوسط	ADJ	ADJ	Degree=Pos	18	advmod	_	_
+13	۶	۶	NUM	NUM	NumType=Card	16	nummod	_	SpaceAfter=No
+14	٫	٫	PUNCT	DELM	_	15	punct	_	SpaceAfter=No
+15	۵	۵	NUM	NUM	NumType=Card	13	conj	_	_
+16	میلیون	میلیون	NUM	NUM	NumType=Card	17	compound	_	_
+17	بازدیدکننده	بازدیدکننده	NOUN	N_SING	Number=Sing	18	obj	_	_
+18	دارد	داشت#دار	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	DELM	_	18	punct	_	_
+
+# sent_id = 4
+# text = این برج از زمان شروع به کار تاکنون بیش از ۲۳۰ میلیون بازدیدکننده را به خود جذب کرده‌است.
+1	این	این	DET	DET	_	2	det	_	_
+2	برج	برج	NOUN	N_SING	Number=Sing	18	nsubj	_	_
+3	از	از	ADP	P	_	4	case	_	_
+4	زمان	زمان	NOUN	N_SING	Number=Sing	18	obl	_	_
+5	شروع	شروع	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
+6	به	به	ADP	P	_	7	case	_	_
+7	کار	کار	NOUN	N_SING	Number=Sing	5	nmod	_	_
+8	تاکنون	تاکنون	ADV	ADV_TIME	Case=Tem	18	advmod	_	_
+9	بیش	بیش	ADJ	ADJ_CMPR	Degree=Cmp	11	advmod	_	_
+10	از	از	ADP	P	_	9	fixed	_	_
+11	۲۳۰	۲۳۰	NUM	NUM	NumType=Card	12	nummod	_	_
+12	میلیون	میلیون	NUM	NUM	NumType=Card	13	compound	_	_
+13	بازدیدکننده	بازدیدکننده	NOUN	N_SING	Number=Sing	18	obj	_	_
+14	را	را	PART	CLITIC	_	13	case	_	_
+15	به	به	ADP	P	_	16	case	_	_
+16	خود	خود	PRON	PRO	Number=Sing|Person=3|PronType=Prs|Reflex=Yes	18	obl	_	_
+17	جذب	جذب	NOUN	N_SING	Number=Sing	18	compound:lvc	_	_
+18	کرده‌است	کرد#کن	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	DELM	_	18	punct	_	_
+
+# sent_id = 5
+# text = دیزنی‌لند پاریس که پربیننده‌ترین اثر توریستی قاره اروپا محسوب می‌شود نیز در پاریس قرار داشته و سالانه بیش از ۱۴٫۵ میلیون بازدیدکننده دارد.
+1	دیزنی‌لند	_	NOUN	N_SING	Number=Sing	15	nsubj	_	_
+2	پاریس	پاریس	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
+3	که	که	SCONJ	CON	_	9	mark	_	_
+4	پربیننده‌ترین	پربیننده	ADJ	ADJ	Degree=Sup	5	amod	_	_
+5	اثر	اثر	NOUN	N_SING	Number=Sing	9	obj	_	_
+6	توریستی	توریستی	ADJ	ADJ	Degree=Pos	5	amod	_	_
+7	قاره	_	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
+8	اروپا	اروپا	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	محسوب	محسوب	ADJ	ADJ	Degree=Pos	1	acl:relcl	_	_
+10	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	9	cop	_	_
+11	نیز	نیز	SCONJ	CON	_	15	advmod	_	_
+12	در	در	ADP	P	_	13	case	_	_
+13	پاریس	پاریس	NOUN	N_SING	Number=Sing	15	obl	_	_
+14	قرار	قرار	NOUN	N_SING	Number=Sing	15	compound:lvc	_	_
+15	داشته	داشت#دار	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	0	root	_	_
+16	و	و	CCONJ	CON	_	25	cc	_	_
+17	سالانه	سالانه	ADV	ADV_TIME	Case=Tem	25	advmod	_	_
+18	بیش	بیش	ADJ	ADJ_CMPR	Degree=Cmp	20	advmod	_	_
+19	از	از	ADP	P	_	18	fixed	_	_
+20	۱۴	۱۴	NUM	NUM	NumType=Card	23	nummod	_	SpaceAfter=No
+21	٫	٫	PUNCT	DELM	_	22	punct	_	SpaceAfter=No
+22	۵	۵	NUM	NUM	NumType=Card	20	conj	_	_
+23	میلیون	میلیون	NUM	NUM	NumType=Card	24	compound	_	_
+24	بازدیدکننده	بازدیدکننده	NOUN	N_SING	Number=Sing	25	obj	_	_
+25	دارد	داشت#دار	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	15	conj	_	SpaceAfter=No
+26	.	.	PUNCT	DELM	_	15	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5302,6 +6163,53 @@
 19	کرده‌اند	کرد#کن	VERB	V_PP	Number=Plur|Person=3|VerbForm=Part	0	root	_	SpaceAfter=No
 20	.	.	PUNCT	DELM	_	19	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = علاوه بر موزه‌ها و ساختمان‌های مشهور، مکان‌هایی همچون کاباره‌ها، رستوران‌ها، هتل‌ها، پارک‌ها، باغ‌ها و کاخ‌های مشهور پاریسی نیز از جمله نقاط توریستی پاریس محسوب می‌شوند و سالانه میلیون‌ها توریست را از سراسر جهان به سمت خود جلب می‌کنند.
+1	علاوه	علاوه	ADP	P	_	3	case	_	_
+2	بر	بر	ADP	P	_	1	fixed	_	_
+3	موزه‌ها	موزه	NOUN	N_PL	Number=Plur	29	nmod	_	_
+4	و	و	CCONJ	CON	_	5	cc	_	_
+5	ساختمان‌های	ساختمان	NOUN	N_PL	Number=Plur	3	conj	_	_
+6	مشهور	مشهور	ADJ	ADJ	Degree=Pos	5	amod	_	SpaceAfter=No
+7	،	،	PUNCT	DELM	_	29	punct	_	_
+8	مکان‌هایی	مکان	NOUN	N_PL	Number=Plur	29	nsubj	_	_
+9	همچون	همچون	ADV	ADV_COMP	_	10	case	_	_
+10	کاباره‌ها	کاباره	NOUN	N_PL	Number=Plur	8	nmod	_	SpaceAfter=No
+11	،	،	PUNCT	DELM	_	12	punct	_	_
+12	رستوران‌ها	رستوران	NOUN	N_PL	Number=Plur	10	conj	_	SpaceAfter=No
+13	،	،	PUNCT	DELM	_	14	punct	_	_
+14	هتل‌ها	هتل	NOUN	N_PL	Number=Plur	12	conj	_	SpaceAfter=No
+15	،	،	PUNCT	DELM	_	16	punct	_	_
+16	پارک‌ها	پارک	NOUN	N_PL	Number=Plur	14	conj	_	SpaceAfter=No
+17	،	،	PUNCT	DELM	_	18	punct	_	_
+18	باغ‌ها	باغ	NOUN	N_PL	Number=Plur	16	conj	_	_
+19	و	و	CCONJ	CON	_	20	cc	_	_
+20	کاخ‌های	کاخ	NOUN	N_PL	Number=Plur	18	conj	_	_
+21	مشهور	مشهور	ADJ	ADJ	Degree=Pos	20	amod	_	_
+22	پاریسی	پاریسی	ADJ	ADJ	Degree=Pos	20	amod	_	_
+23	نیز	نیز	SCONJ	CON	_	29	advmod	_	_
+24	از	از	ADP	P	_	25	case	_	_
+25	جمله	جمله	NOUN	N_SING	Number=Sing	29	nmod	_	_
+26	نقاط	نقطه	NOUN	N_PL	Number=Plur	29	nsubj	_	_
+27	توریستی	توریستی	ADJ	ADJ	Degree=Pos	26	amod	_	_
+28	پاریس	پاریس	NOUN	N_SING	Number=Sing	26	nmod:poss	_	_
+29	محسوب	محسوب	ADJ	ADJ	Degree=Pos	0	root	_	_
+30	می‌شوند	کرد#کن	AUX	V_PRS	Number=Plur|Person=3|Tense=Pres	29	cop	_	_
+31	و	و	CCONJ	CON	_	43	cc	_	_
+32	سالانه	سالانه	ADV	ADV_TIME	Case=Tem	43	advmod	_	_
+33	میلیون‌ها	میلیون	NOUN	N_PL	Number=Plur	43	nsubj	_	_
+34	توریست	توریست	NOUN	N_SING	Number=Sing	43	obj	_	_
+35	را	را	PART	CLITIC	_	34	case	_	_
+36	از	از	ADP	P	_	38	case	_	_
+37	سراسر	سراسر	DET	DET	_	38	det	_	_
+38	جهان	جهان	NOUN	N_SING	Number=Sing	43	obl	_	_
+39	به	به	ADP	P	_	40	case	_	_
+40	سمت	سمت	NOUN	N_SING	Number=Sing	43	obl	_	_
+41	خود	خود	PRON	PRO	Number=Sing|Person=3|PronType=Prs|Reflex=Yes	40	nmod:poss	_	_
+42	جلب	جلب	NOUN	N_SING	Number=Sing	43	compound:lvc	_	_
+43	می‌کنند	کرد#کن	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	29	conj	_	SpaceAfter=No
+44	.	.	PUNCT	DELM	_	29	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -5309,7 +6217,7 @@
 # newpar
 # sent_id = 1
 # text = ورزش
-1	ورزش	ورزش	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	ورزش	ورزش	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5717,7 +6625,7 @@
 # sent_id = 1
 # text = روابط بین‌المللی
 1	روابط	رابطه	NOUN	N_PL	Number=Plur	0	root	_	_
-2	بین‌المللی	بین‌المللی	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	بین‌المللی	بین‌المللی	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5746,7 +6654,7 @@
 # sent_id = 1
 # text = شهر خواهر
 1	شهر	شهر	NOUN	N_SING	Number=Sing	0	root	_	_
-2	خواهر	_	NOUN	N_SING	Number=Sing	1	flat	_	SpacesAfter=\n
+2	خواهر	_	NOUN	N_SING	Number=Sing	1	flat	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5756,7 +6664,7 @@
 # sent_id = 1
 # text = شهرهای شریک
 1	شهرهای	شهر	NOUN	N_PL	Number=Plur	0	root	_	_
-2	شریک	_	NOUN	N_SING	Number=Sing	1	flat	_	SpacesAfter=\n
+2	شریک	_	NOUN	N_SING	Number=Sing	1	flat	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5766,7 +6674,7 @@
 # sent_id = 1
 # text = آثار دیدنی
 1	آثار	اثر	NOUN	N_PL	Number=Plur	0	root	_	_
-2	دیدنی	دیدنی	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	دیدنی	دیدنی	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -5775,7 +6683,7 @@
 # newpar
 # sent_id = 1
 # text = نگارخانه
-1	نگارخانه	نگارخانه	NOUN	N_SING	Number=Sing	0	root	_	SpacesAfter=\n
+1	نگارخانه	نگارخانه	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -6163,7 +7071,7 @@
 # sent_id = 1
 # text = جستارهای وابسته
 1	جستارهای	جستار	NOUN	N_PL	Number=Plur	0	root	_	_
-2	وابسته	وابسته	ADJ	ADJ	Degree=Pos	1	amod	_	SpacesAfter=\n
+2	وابسته	وابسته	ADJ	ADJ	Degree=Pos	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -6174,7 +7082,7 @@
 # text = پیوند به بیرون
 1	پیوند	پیوند	NOUN	N_SING	Number=Sing	0	root	_	_
 2	به	به	ADP	P	_	3	case	_	_
-3	بیرون	بیرون	ADV	ADV_LOC	Case=Loc	1	advcl	_	SpacesAfter=\n
+3	بیرون	بیرون	ADV	ADV_LOC	Case=Loc	1	advcl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -6183,5 +7091,5 @@
 # newpar
 # sent_id = 1
 # text = منابع
-1	منابع	منبع	NOUN	N_PL	Number=Plur	0	root	_	SpacesAfter=\n
+1	منابع	منبع	NOUN	N_PL	Number=Plur	0	root	_	SpaceAfter=No
 

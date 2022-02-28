@@ -1,5 +1,3 @@
-# https://pt.wikipedia.org/wiki/It%C3%A1lia
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,7 +11,7 @@
 4	,	_	PUNCT	.	_	6	punct	_	_
 5	a	_	DET	DET	_	6	det	_	_
 6	enciclopédia	enciclopédia	NOUN	NOUN	_	3	appos	_	_
-7	livre	livre	ADJ	ADJ	_	6	amod	_	SpacesAfter=\n
+7	livre	livre	ADJ	ADJ	_	6	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -21,8 +19,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Idiomas
-1	Idiomas	idioma	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+# text = Coordenadas: 43° N 12° E
+1	Coordenadas	coordenada	NOUN	NOUN	_	0	root	_	SpaceAfter=No
+2	:	_	PUNCT	.	_	1	punct	_	_
+3	43	_	NUM	NUM	NumType=Card	4	nummod	_	SpaceAfter=No
+4	°	_	NOUN	NOUN	_	1	appos	_	_
+5	N	_	NOUN	NOUN	_	4	flat	_	_
+6	12	_	NUM	NUM	NumType=Card	7	nummod	_	SpaceAfter=No
+7	°	_	NOUN	NOUN	_	4	conj	_	_
+8	E	_	CCONJ	CONJ	_	7	cc	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -30,59 +35,47 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Itália
-1	Itália	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Itália (em italiano: Italia [iˈtaːlja] (escutar (ajuda·info))), oficialmente República Italiana (em italiano: Repubblica Italiana), é uma república parlamentar unitária localizada no centro-sul da Europa.
-1	Itália	_	PROPN	PNOUN	_	31	nsubj	_	_
+# text = Itália (em italiano: Italia (escutar (ajuda·info))), oficialmente República Italiana (em italiano: Repubblica Italiana), é uma república parlamentar unitária localizada no centro-sul da Europa.
+1	Itália	_	PROPN	PNOUN	_	28	nsubj	_	_
 2	(	_	PUNCT	.	_	4	punct	_	SpaceAfter=No
 3	em	_	ADP	ADP	_	4	case	_	_
-4	italiano	italiano	NOUN	NOUN	_	6	nmod	_	SpaceAfter=No
+4	italiano	italiano	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
 5	:	_	PUNCT	.	_	4	punct	_	_
-6	Italia	_	PROPN	PNOUN	_	1	appos	_	_
-7	[	_	PUNCT	.	_	8	punct	_	SpaceAfter=No
-8	iˈtaːlja	iˈtaːlja	NOUN	NOUN	_	6	appos	_	SpaceAfter=No
-9	]	_	PUNCT	.	_	8	punct	_	_
-10	(	_	PUNCT	.	_	11	punct	_	SpaceAfter=No
-11	escutar	escutar	VERB	VERB	_	6	parataxis	_	SpacesAfter= 
-12	(	_	PUNCT	.	_	13	punct	_	SpaceAfter=No
-13	ajuda·info	ajuda·info	NOUN	NOUN	_	11	obj	_	SpaceAfter=No
-14	)	_	PUNCT	.	_	13	punct	_	SpaceAfter=No
-15	)	_	PUNCT	.	_	11	punct	_	SpaceAfter=No
-16	)	_	PUNCT	.	_	6	punct	_	SpaceAfter=No
-17	,	_	PUNCT	.	_	19	punct	_	_
-18	oficialmente	oficialmente	ADV	ADV	_	19	advmod	_	_
-19	República	_	PROPN	PNOUN	_	1	appos	_	_
-20	Italiana	_	PROPN	PNOUN	_	19	amod	_	_
-21	(	_	PUNCT	.	_	25	punct	_	SpaceAfter=No
-22	em	_	ADP	ADP	_	23	case	_	_
-23	italiano	italiano	NOUN	NOUN	_	19	nmod	_	SpaceAfter=No
-24	:	_	PUNCT	.	_	23	punct	_	_
-25	Repubblica	_	PROPN	PNOUN	_	19	appos	_	_
-26	Italiana	_	PROPN	PNOUN	_	25	amod	_	SpaceAfter=No
-27	)	_	PUNCT	.	_	25	punct	_	SpaceAfter=No
-28	,	_	PUNCT	.	_	19	punct	_	_
-29	é	ser	AUX	AUX	_	31	cop	_	_
-30	uma	_	DET	DET	_	31	det	_	_
-31	república	_	NOUN	NOUN	_	0	root	_	_
-32	parlamentar	parlamentar	ADJ	ADJ	_	31	amod	_	_
-33	unitária	unitário	ADJ	ADJ	_	31	amod	_	_
-34	localizada	localizar	VERB	VERB	_	31	acl:part	_	_
-35-36	no	_	_	_	_	_	_	_	_
-35	em	em	ADP	ADP	_	37	case	_	_
-36	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	centro-sul	centro-sul	NOUN	NOUN	_	34	nmod	_	_
-38-39	da	_	_	_	_	_	_	_	_
-38	de	de	ADP	ADP	_	40	case	_	_
-39	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	Europa	_	PROPN	PNOUN	_	37	nmod	_	SpaceAfter=No
-41	.	_	PUNCT	.	_	31	punct	_	_
+6	Italia	_	PROPN	PNOUN	_	1	appos	_	SpacesAfter=\s\s
+7	(	_	PUNCT	.	_	8	punct	_	SpaceAfter=No
+8	escutar	escutar	VERB	VERB	_	6	parataxis	_	SpacesAfter= 
+9	(	_	PUNCT	.	_	10	punct	_	SpaceAfter=No
+10	ajuda·info	ajuda·info	NOUN	NOUN	_	8	obj	_	SpaceAfter=No
+11	)	_	PUNCT	.	_	10	punct	_	SpaceAfter=No
+12	)	_	PUNCT	.	_	8	punct	_	SpaceAfter=No
+13	)	_	PUNCT	.	_	6	punct	_	SpaceAfter=No
+14	,	_	PUNCT	.	_	16	punct	_	_
+15	oficialmente	oficialmente	ADV	ADV	_	16	advmod	_	_
+16	República	_	PROPN	PNOUN	_	1	appos	_	_
+17	Italiana	_	PROPN	PNOUN	_	16	amod	_	_
+18	(	_	PUNCT	.	_	22	punct	_	SpaceAfter=No
+19	em	_	ADP	ADP	_	20	case	_	_
+20	italiano	italiano	NOUN	NOUN	_	16	nmod	_	SpaceAfter=No
+21	:	_	PUNCT	.	_	20	punct	_	_
+22	Repubblica	_	PROPN	PNOUN	_	16	appos	_	_
+23	Italiana	_	PROPN	PNOUN	_	22	amod	_	SpaceAfter=No
+24	)	_	PUNCT	.	_	22	punct	_	SpaceAfter=No
+25	,	_	PUNCT	.	_	16	punct	_	_
+26	é	ser	AUX	AUX	_	28	cop	_	_
+27	uma	_	DET	DET	_	28	det	_	_
+28	república	_	NOUN	NOUN	_	0	root	_	_
+29	parlamentar	parlamentar	ADJ	ADJ	_	28	amod	_	_
+30	unitária	unitário	ADJ	ADJ	_	28	amod	_	_
+31	localizada	localizar	VERB	VERB	_	28	acl:part	_	_
+32-33	no	_	_	_	_	_	_	_	_
+32	em	em	ADP	ADP	_	34	case	_	_
+33	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	centro-sul	centro-sul	NOUN	NOUN	_	31	nmod	_	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	ADP	_	37	case	_	_
+36	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	Europa	_	PROPN	PNOUN	_	34	nmod	_	SpaceAfter=No
+38	.	_	PUNCT	.	_	28	punct	_	_
 
 # sent_id = 2
 # text = Ao norte, faz fronteira com França, Suíça, Áustria e Eslovênia ao longo dos Alpes.
@@ -786,13 +779,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etimologia[editar | editar código-fonte]
-1	Etimologia[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Etimologia
+1	Etimologia	etimologia	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1258,13 +1246,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = História[editar | editar código-fonte]
-1	História[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = História
+1	História	história	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1381,15 +1364,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pré-história e Antiguidade[editar | editar código-fonte]
-1	Pré-história	pré-história	NOUN	NOUN	_	4	nsubj	_	_
+# text = Pré-história e Antiguidade
+1	Pré-história	_	PROPN	PNOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	Antiguidade[	_	PROPN	PNOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	0	root	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	Antiguidade	_	PROPN	PNOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1643,14 +1621,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Roma antiga[editar | editar código-fonte]
+# text = Roma antiga
 1	Roma	roma	NOUN	NOUN	_	0	root	_	_
-2	antiga[	antigo	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	antiga	antigo	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -2170,14 +2143,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Idade Média[editar | editar código-fonte]
-1	Idade	idade	NOUN	NOUN	_	0	root	_	_
-2	Média[	_	PROPN	PNOUN	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Idade Média
+1	Idade	_	PROPN	PNOUN	_	0	root	_	_
+2	Média	_	PROPN	PNOUN	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -3302,14 +3270,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Era moderna[editar | editar código-fonte]
+# text = Era moderna
 1	Era	_	VERB	VERB	_	0	root	_	_
-2	moderna[	moderna[	ADJ	ADJ	_	1	xcomp:adj	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	moderna	moderno	ADJ	ADJ	_	1	xcomp:adj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -4320,13 +4283,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Unificação[editar | editar código-fonte]
-1	Unificação[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Unificação
+1	Unificação	unificação	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -4922,13 +4880,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Fascismo[editar | editar código-fonte]
-1	Fascismo[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Fascismo
+1	Fascismo	fascismo	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -5484,13 +5437,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = República[editar | editar código-fonte]
-1	República[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = República
+1	República	república	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -6213,13 +6161,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografia[editar | editar código-fonte]
-1	Geografia[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Geografia
+1	Geografia	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -6907,13 +6850,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Clima[editar | editar código-fonte]
-1	Clima[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Clima
+1	Clima	clima	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7274,13 +7212,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ambiente[editar | editar código-fonte]
-1	Ambiente[	ambiente[	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	parataxis	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+# text = Ambiente
+1	Ambiente	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7834,13 +7767,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Demografia[editar | editar código-fonte]
-1	Demografia[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Demografia
+1	Demografia	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -8062,14 +7990,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Grupos étnicos[editar | editar código-fonte]
-1	Grupos	grupo	NOUN	NOUN	_	3	nsubj	_	_
-2	étnicos[	_	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	0	root	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+# text = Grupos étnicos
+1	Grupos	grupo	NOUN	NOUN	_	0	root	_	_
+2	étnicos	étnico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -8286,15 +8209,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Emigração e imigração[editar | editar código-fonte]
-1	Emigração	emigração	NOUN	NOUN	_	4	nsubj	_	_
+# text = Emigração e imigração
+1	Emigração	emigração	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	imigração[	_	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	0	root	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	imigração	imigração	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -8786,13 +8704,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Idioma[editar | editar código-fonte]
-1	Idioma[	_	VERB	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Idioma
+1	Idioma	idioma	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -9008,13 +8921,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Religião[editar | editar código-fonte]
-1	Religião[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	parataxis	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Religião
+1	Religião	religião	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -9490,15 +9398,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cidades mais populosas[editar | editar código-fonte]
+# text = Cidades mais populosas
 1	Cidades	cidade	NOUN	NOUN	_	0	root	_	_
 2	mais	mais	ADV	ADV	_	3	advmod	_	_
-3	populosas[	populosaso	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	1	csubj	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	populosas	populoso	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -9506,15 +9409,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Política e justiça[editar | editar código-fonte]
-1	Política	_	NOUN	NOUN	_	0	root	_	_
+# text = Política e justiça
+1	Política	política	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	justiça[	_	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	1	parataxis	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	justiça	justiça	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -9963,14 +9861,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Forças armadas[editar | editar código-fonte]
+# text = Forças armadas
 1	Forças	força	NOUN	NOUN	_	0	root	_	_
-2	armadas[	armadaso	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	armadas	armado	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -10714,19 +10607,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Crime e aplicação da lei[editar | editar código-fonte]
-1	Crime	crime	NOUN	NOUN	_	7	nsubj	_	_
+# text = Crime e aplicação da lei
+1	Crime	crime	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
 3	aplicação	aplicação	NOUN	NOUN	_	1	conj	_	_
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	ADP	_	6	case	_	_
 5	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	lei[	lei[	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
-7	editar	editar	VERB	VERB	_	0	root	_	_
-8	|	_	PUNCT	.	_	9	punct	_	_
-9	editar	editar	VERB	VERB	_	7	parataxis	_	_
-10	código-fonte	código-fonte	NOUN	NOUN	_	9	obj	_	SpaceAfter=No
-11	]	_	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+6	lei	lei	NOUN	NOUN	_	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -11270,14 +11158,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Relações exteriores[editar | editar código-fonte]
+# text = Relações exteriores
 1	Relações	relação	NOUN	NOUN	_	0	root	_	_
-2	exteriores[	exteriores[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	parataxis	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	exteriores	exterior	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -11599,14 +11482,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Divisões administrativas[editar | editar código-fonte]
+# text = Divisões administrativas
 1	Divisões	divisão	NOUN	NOUN	_	0	root	_	_
-2	administrativas[	administrativas[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	parataxis	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	administrativas	administrativo	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -11614,13 +11492,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Economia[editar | editar código-fonte]
-1	Economia[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Economia
+1	Economia	economia	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12916,13 +12789,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Turismo[editar | editar código-fonte]
-1	Turismo[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Turismo
+1	Turismo	turismo	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -13071,13 +12939,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Infraestrutura[editar | editar código-fonte]
-1	Infraestrutura[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Infraestrutura
+1	Infraestrutura	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -13085,13 +12948,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Transportes[editar | editar código-fonte]
-1	Transportes[	_	NOUN	NOUN	_	2	nsubj	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	0	root	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Transportes
+1	Transportes	transporte	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -13487,17 +13345,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Educação, ciência e tecnologia[editar | editar código-fonte]
-1	Educação	educação	NOUN	NOUN	_	6	nsubj	_	SpaceAfter=No
+# text = Educação, ciência e tecnologia
+1	Educação	educação	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 2	,	_	PUNCT	.	_	3	punct	_	_
 3	ciência	ciência	NOUN	NOUN	_	1	conj	_	_
 4	e	_	CCONJ	CONJ	_	5	cc	_	_
-5	tecnologia[	_	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-6	editar	editar	VERB	VERB	_	0	root	_	_
-7	|	_	PUNCT	.	_	8	punct	_	_
-8	editar	editar	VERB	VERB	_	6	conj	_	_
-9	código-fonte	código-fonte	NOUN	NOUN	_	8	obj	_	SpaceAfter=No
-10	]	_	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+5	tecnologia	tecnologia	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -14115,13 +13968,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Saúde[editar | editar código-fonte]
-1	Saúde[	saúde[	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Saúde
+1	Saúde	saúde	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -14473,13 +14321,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Energia[editar | editar código-fonte]
-1	Energia[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Energia
+1	Energia	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -15058,13 +14901,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cultura[editar | editar código-fonte]
-1	Cultura[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Cultura
+1	Cultura	_	NOUN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -15294,13 +15132,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Literatura[editar | editar código-fonte]
-1	Literatura[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Literatura
+1	Literatura	literatura	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -16509,13 +16342,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Arquitetura[editar | editar código-fonte]
-1	Arquitetura[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Arquitetura
+1	Arquitetura	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -17005,14 +16833,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Artes visuais[editar | editar código-fonte]
+# text = Artes visuais
 1	Artes	arte	NOUN	NOUN	_	0	root	_	_
-2	visuais[	visuais[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	parataxis	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	visuais	visual	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -17812,13 +17635,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Música[editar | editar código-fonte]
-1	Música[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Música
+1	Música	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -18442,13 +18260,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Teatro[editar | editar código-fonte]
-1	Teatro[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	parataxis	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Teatro
+1	Teatro	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -18960,15 +18773,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Moda e design[editar | editar código-fonte]
+# text = Moda e design
 1	Moda	moda	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	design[	_	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	1	parataxis	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	design	design	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -19378,13 +19186,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Culinária[editar | editar código-fonte]
-1	Culinária[	culináriar	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Culinária
+1	Culinária	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -19846,13 +19649,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cinema[editar | editar código-fonte]
-1	Cinema[	_	VERB	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Cinema
+1	Cinema	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -20582,13 +20380,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Feriados[editar | editar código-fonte]
-1	Feriados[	_	NOUN	NOUN	_	2	nsubj	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	0	root	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Feriados
+1	Feriados	feriado	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -21052,13 +20845,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Esportes[editar | editar código-fonte]
-1	Esportes[	_	VERB	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+# text = Esportes
+1	Esportes	esporte	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -21694,7 +21482,7 @@
 # newpar
 # sent_id = 1
 # text = Referências
-1	Referências	referência	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+1	Referências	referência	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -21703,7 +21491,7 @@
 # newpar
 # sent_id = 1
 # text = Bibliografia
-1	Bibliografia	bibliografia	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+1	Bibliografia	bibliografia	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -21711,12 +21499,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ligações externas[editar | editar código-fonte]
+# text = Ligações externas
 1	Ligações	ligação	NOUN	NOUN	_	0	root	_	_
-2	externas[	externaso	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	externas	externo	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 

@@ -1,18 +1,10 @@
-# https://kk.wikipedia.org/wiki/%D0%96%D2%AF%D0%B3%D0%B5%D1%80%D1%96
-
 # newdoc
 # newpar
 # sent_id = 1
 # text = Жүгері — Уикипедия
 1	Жүгері	Жүгері	ADJ	adj	_	3	amod	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
-3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Жүгері
-1	Жүгері	Жүгері	ADJ	adj	_	0	root	_	SpacesAfter=\n
+3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -191,20 +183,14 @@
 3	фосфор	фосфор	PART	mod	_	4	amod	_	_
 4	тыңайтқыштары	тыңайтқыштар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 5	қажет	қажет	ADJ	adj	_	0	root	_	SpaceAfter=No
-6	.	.	PUNCT	sent	_	5	punct	_	SpacesAfter=\n
+6	.	.	PUNCT	sent	_	5	punct	_	SpacesAfter=\n\n
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Әлемдегі өндіріс[өңдеу | қайнарын өңдеу]
-1	Әлемдегі	Әлемдегі	ADJ	adj	_	3	amod	_	_
-2	өндіріс	өндіріс	ADJ	adj	_	3	amod	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-4	өңдеу	өңдеу	ADJ	adj	_	5	amod	_	SpacesAfter= 
-5	|	|	SYM	_	_	7	nsubj	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	3	conj	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Әлемдегі өндіріс
+1	Әлемдегі	Әлемдегі	ADJ	adj	_	2	advmod	_	_
+2	өндіріс	өндіріс	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -296,57 +282,129 @@
 15	тағам	тағам	NOUN	n	Case=Nom	8	conj	_	SpaceAfter=No
 16	.	.	PUNCT	sent	_	8	punct	_	SpacesAfter=\n
 
-# newdoc
-# newpar
-# sent_id = 1
-# text = Дереккөздер[өңдеу | қайнарын өңдеу]
-1	Дереккөздер	Дереккөзде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	2	conj	_	_
-6	өңдеу	өңдеу	PART	mod_emo	_	5	discourse	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	5	punct	_	SpacesAfter=\n
+# sent_id = 5
+# text = Организмге жақсы сіңеді.
+1	Организмге	Организм	NOUN	n	Case=Dat	3	obl	_	_
+2	жақсы	жақ	PRON	prn	Case=Nom|PronType=Dem	3	obl	_	_
+3	сіңеді	сің	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = 6
+# text = Оны үш мезгілгі аста: шай, суп, қуырылған нан қосылған сорпа, компот, шырын, кисель, простокваша, айранмен т.б.
+1	Оны	Он	NOUN	n	Case=Nom	3	nmod:poss	_	_
+2	үш	үш	NUM	num	NumType=Card	3	amod	_	_
+3	мезгілгі	мезгілгі	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
+4	аста	аста	ADJ	adj	Case=Loc	12	advcl	_	SpaceAfter=No
+5	:	:	PUNCT	sent	_	12	punct	_	_
+6	шай	шай	ADV	adv	_	12	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	12	punct	_	_
+8	суп	су	VERB	v	Aspect=Perf|VerbForm=Conv	12	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	cm	_	12	punct	_	_
+10	қуырылған	қуыр	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	11	amod	_	_
+11	нан	нан	NOUN	n	Case=Nom	12	nmod:poss	_	_
+12	қосылған	қосылл	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	19	acl:relcl	_	_
+13	сорпа	сорпа	ADV	postadv	_	19	amod	_	SpaceAfter=No
+14	,	,	PUNCT	cm	_	19	punct	_	_
+15	компот	компот	ADJ	adj	_	19	amod	_	SpaceAfter=No
+16	,	,	PUNCT	cm	_	19	punct	_	_
+17	шырын	шырын	ADJ	adj	Case=Nom	19	amod	_	SpaceAfter=No
+18	,	,	PUNCT	cm	_	17	punct	_	_
+19	кисель	кисель	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
+20	,	,	PUNCT	cm	_	23	punct	_	_
+21	простокваша	простокваша	ADJ	adj	_	23	amod	_	SpaceAfter=No
+22	,	,	PUNCT	cm	_	21	punct	_	_
+23	айранмен	айран	NOUN	n	Case=Ins	19	appos	_	_
+24	т.б.	т.б.	PUNCT	sent	_	19	punct	_	_
+
+# sent_id = 7
+# text = жеуге болады.
+1	жеуге	жеу	NOUN	n	Case=Dat	2	obl	_	_
+2	болады	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ол әсіресе балаларға пайдалы (ыстық сүтке қосып береді).
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
+2	әсіресе	әсіресе	X	x	_	3	amod	_	_
+3	балаларға	бала	NOUN	n	Case=Dat	10	obl	_	_
+4-5	пайдалы	_	_	_	_	_	_	_	_
+4	пайда	пайда	NOUN	n	Case=Loc	10	obl	_	_
+5	лы	лы	ADP	post	_	4	case	_	_
+6	(	(	PUNCT	lpar	_	10	punct	_	SpaceAfter=No
+7	ыстық	ыстық	ADJ	adj	_	8	amod	_	_
+8	сүтке	сүтке	X	x	_	9	amod	_	_
+9	қосып	қо	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
+10	береді	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+11	)	)	PUNCT	rpar	_	10	punct	_	SpaceAfter=No
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = 9
+# text = Қант себілген жүгері үлпілдегі мен тәтті қытырлауық «таяқшаны» ет-женді және тез толатын адамдарға, сондай-ақ қант диабетімен ауыратындарға жеуге болмайды.
+1	Қант	Қант	ADJ	adj	_	2	amod	_	_
+2	себілген	себ	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	3	nmod:poss	_	_
+3	жүгері	жүгер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
+4	үлпілдегі	үлпілдегі	ADJ	adj	_	5	amod	_	_
+5	мен	мен	NOUN	n	Case=Nom	8	nmod:poss	_	_
+6	тәтті	тәтті	ADJ	adj	_	8	amod	_	_
+7	қытырлауық	қытырлауық	ADJ	adj	_	8	amod	_	_
+8	«таяқшаны	«таяқшан	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	20	advcl	_	SpaceAfter=No
+9	»	»	PUNCT	rquot	_	13	punct	_	_
+10	ет-женді	ет-жен	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp	_	_
+11	және	және	PRON	prn	Case=Nom|PronType=Int	10	flat:name	_	_
+12	тез	тез	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	13	advcl	_	_
+13	толатын	тол	VERB	v	Aspect=Imp|VerbForm=Part	8	conj	_	_
+14	адамдарға	адамдар	NOUN	n	Case=Dat	13	cop	_	SpaceAfter=No
+15	,	,	PUNCT	cm	_	19	punct	_	_
+16	сондай-ақ	сондай-ақ	CCONJ	cnjcoo	_	19	cc	_	_
+17	қант	қант	ADJ	adj	_	18	amod	_	_
+18	диабетімен	диабет	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	19	nmod:poss	_	_
+19	ауыратындарға	ауыратындар	NOUN	n	Case=Dat	13	conj	_	_
+20	жеуге	жеуге	NOUN	n	Case=Dat	0	root	_	_
+21	болмайды	болмай	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	SpaceAfter=No
+22	.	.	PUNCT	sent	_	20	punct	_	_
+
+# sent_id = 10
+# text = Жүгері үлпілдегін, «таяқшаны» үлпек дәнді құрғақ жерде сақтаған жөн.
+1	Жүгері	Жүгер	ADJ	adj	_	2	amod	_	_
+2	үлпілдегін	үлпілдег	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	cm	_	11	punct	_	_
+4	«таяқшаны	«таяқшан	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	SpaceAfter=No
+5	»	»	PUNCT	rquot	_	10	punct	_	_
+6	үлпек	үлпек	NOUN	n	Case=Nom	7	nmod:poss	_	_
+7	дәнді	дәнлы	ADP	post	_	9	acl:relcl	_	_
+8	құрғақ	құрғақ	ADJ	adj	_	9	amod	_	_
+9	жерде	жер	NOUN	n	Case=Loc	10	nmod:poss	_	_
+10	сақтаған	сақта	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	appos	_	_
+11	жөн	жөн	ADJ	adj	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+# sent_id = 11
+# text = Егер үлпілдек жұмсаңқырап кетсе оны духовкаға салып келтіреді.
+1	Егер	Егер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	advcl	_	_
+2	үлпілдек	үлпілдек	NOUN	n	Case=Nom	3	nmod:poss	_	_
+3	жұмсаңқырап	жұмсаңқыра	VERB	v	Aspect=Perf|VerbForm=Conv	5	nmod:poss	_	_
+4	кетсе	кетсе	X	x	_	5	amod	_	_
+5	оны	он	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+6	духовкаға	духовка	NOUN	n	Case=Dat	8	obl	_	_
+7	салып	салып	X	x	_	8	dep	_	_
+8	келтіреді	келтір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
+# sent_id = 12
+# text = Дымқыл тартқан үлпілдек тез көгеріп, жеуге жарамайды.
+1	Дымқыл	Дымқыл	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
+2	тартқан	тартқан	VERB	v	Tense=Past|VerbForm=Part	3	amod	_	_
+3	үлпілдек	үлпілдек	NOUN	n	Case=Nom	5	obl	_	_
+4	тез	тез	ADP	post	_	3	case	_	_
+5	көгеріп	көгері	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	жеуге	жеу	NOUN	n	Case=Dat	8	obl	_	_
+8	жарамайды	жарамай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	sent	_	8	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Арахис • Арыш • Жүгері • Зәйтүн • Зығыр • Кокос пальмасы • Күнбағыс • Күнжіт • Қытайбұршақ • Қыша • Мақсыр • Мақта • Перилла • Рапс • Үпілмәлік
-1	Арахис	Арахис	NUM	num	NumType=Card	0	root	_	_
-2	•	•	PUNCT	cm	_	1	punct	_	_
-3	Арыш	Арыш	NUM	num	NumType=Card	1	conj	_	_
-4	•	•	PUNCT	cm	_	6	punct	_	_
-5	Жүгері	Жүгер	ADJ	adj	_	6	amod	_	_
-6	•	•	PUNCT	cm	_	3	punct	_	_
-7	Зәйтүн	Зәйтүн	ADJ	adj	_	8	amod	_	_
-8	•	•	PUNCT	cm	_	9	punct	_	_
-9	Зығыр	Зығы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	conj	_	_
-10	•	•	PUNCT	cm	_	16	punct	_	_
-11	Кокос	Кокос	NUM	num	NumType=Card	12	nummod	_	_
-12	пальмасы	пальма	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod:poss	_	_
-13	•	•	PUNCT	cm	_	16	cc	_	_
-14	Күнбағыс	Күнбағыс	NUM	num	NumType=Card	16	nsubj	_	_
-15	•	•	PUNCT	cm	_	16	punct	_	_
-16	Күнжіт	Күнжіт	ADJ	adj	_	9	conj	_	_
-17	•	•	PUNCT	cm	_	22	punct	_	_
-18	Қытайбұршақ	Қытайбұршақ	CCONJ	cnjcoo	_	22	cc	_	_
-19	•	•	PUNCT	cm	_	22	punct	_	_
-20	Қыша	Қыша	ADJ	adj	_	21	amod	_	_
-21	•	•	PUNCT	cm	_	22	punct	_	_
-22	Мақсыр	Мақсы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	conj	_	_
-23	•	•	PUNCT	cm	_	30	punct	_	_
-24	Мақта	Мақта	ADJ	adj	Case=Loc	30	nsubj	_	_
-25	•	•	PUNCT	cm	_	30	punct	_	_
-26	Перилла	Перилла	X	x	_	30	amod	_	_
-27	•	•	PUNCT	cm	_	28	punct	_	_
-28	Рапс	Рапс	NUM	num	NumType=Card	26	conj	_	_
-29	•	•	PUNCT	cm	_	28	punct	_	_
-30	Үпілмәлік	Үпілмәлік	NOUN	n	Case=Nom	22	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+# text = Дереккөздер
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 

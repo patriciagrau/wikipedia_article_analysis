@@ -1,5 +1,3 @@
-# https://el.wikipedia.org/wiki/%CE%89%CE%BB%CE%B9%CE%BF%CF%82
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Ήλιος - Βικιπαίδεια
 1	Ήλιος	ήλιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	-	-	PUNCT	PUNCT	_	3	punct	_	_
-3	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
+3	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -17,8 +15,65 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ήλιος
-1	Ήλιος	ήλιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Ο
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	0	det	_	SpacesBefore=\n
+
+# sent_id = 2
+# text = Ήλιος είναι ο αστέρας του ηλιακού μας συστήματος και το λαμπρότερο σώμα του ουρανού.
+1	Ήλιος	ήλιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+2	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	4	cop	_	_
+3	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	αστέρας	αστέρας	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+5	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
+6	ηλιακού	ηλιακός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	8	amod	_	_
+7	μας	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	nmod	_	_
+8	συστήματος	σύστημα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	_
+9	και	και	CCONJ	CCONJ	_	12	cc	_	_
+10	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	12	det	_	_
+11	λαμπρότερο	λαμπρός	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Neut|Number=Sing	12	amod	_	_
+12	σώμα	σώμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	4	conj	_	_
+13	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	ουρανού	ουρανός	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+# sent_id = 3
+# text = Είναι μια σχεδόν τέλεια σφαίρα με διάμετρο 1,4 εκατομμύρια χιλιόμετρα (109 φορές μεγαλύτερη από της Γης), και η μάζα του (2×1030 κιλά) αποτελεί το 99,86% της μάζας του ηλιακού συστήματος.
+1	Είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	5	cop	_	_
+2	μια	ένας	DET	DET	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+3	σχεδόν	σχεδόν	ADV	ADV	_	4	advmod	_	_
+4	τέλεια	τέλειος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	5	amod	_	_
+5	σφαίρα	σφαίρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+6	με	με	ADP	ADP	_	7	case	_	_
+7	διάμετρο	διάμετρο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	5	obl	_	_
+8	1,4	1,4	NUM	NUM	NumType=Card	9	nummod	_	_
+9	εκατομμύρια	εκατομμύριο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	10	nmod	_	_
+10	χιλιόμετρα	χιλιόμετρο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	7	nmod	_	_
+11	(	(	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
+12	109	109	NUM	NUM	NumType=Card	13	nummod	_	_
+13	φορές	φορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	10	appos	_	_
+14	μεγαλύτερη	μεγάλος	ADJ	ADJ	Case=Acc|Degree=Cmp|Gender=Fem|Number=Sing	13	amod	_	_
+15	από	από	ADP	ADP	_	17	case	_	_
+16	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Γης	γης	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	14	obl	_	SpaceAfter=No
+18	)	)	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
+19	,	,	PUNCT	PUNCT	_	28	punct	_	_
+20	και	και	CCONJ	CCONJ	_	28	cc	_	_
+21	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	μάζα	μάζα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	28	nsubj	_	_
+23	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod	_	_
+24	(	(	PUNCT	PUNCT	_	26	punct	_	SpaceAfter=No
+25	2×1030	2×1030	NUM	NUM	NumType=Card	26	nummod	_	_
+26	κιλά	κιλά	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	22	nmod	_	SpaceAfter=No
+27	)	)	PUNCT	PUNCT	_	26	punct	_	_
+28	αποτελεί	αποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+29	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	30	det	_	_
+30	99,86%	99,86%	NUM	NUM	NumType=Card	28	obj	_	_
+31	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	μάζας	μάζα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	30	nmod	_	_
+33	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	35	det	_	_
+34	ηλιακού	ηλιακός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	35	amod	_	_
+35	συστήματος	σύστημα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	32	nmod	_	SpaceAfter=No
+36	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -26,39 +81,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = (332.950 γήινες μάζες)
-1	(	(	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-2	332.950	332.950	NUM	NUM	NumType=Card	4	nummod	_	_
-3	γήινες	γήινος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	4	amod	_	_
-4	μάζες	μάζη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-5	)	)	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = (27,9 g)
-1	(	(	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-2	27,9	27,9	NUM	NUM	NumType=Card	3	nummod	_	_
-3	g	g	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-4	)	)	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ιδιότητες[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ιδιότητες
 1	Ιδιότητες	ιδιότητα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -446,14 +470,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Χαρακτηριστικά[Επεξεργασία | επεξεργασία κώδικα]
+# text = Χαρακτηριστικά
 1	Χαρακτηριστικά	χαρακτηριστικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -530,6 +548,57 @@
 8	5	5	NUM	NUM	NumType=Card	9	nummod	_	_
 9	δισεκατομμύρια	δισεκατομμύριο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\s\n
+
+# sent_id = 5
+# text = Γύρω από τον Ήλιο έχουν τις τροχιές του οι οκτώ πλανήτες με τους δορυφόρους τους, καθώς και άλλα σώματα όπως αστεροειδείς και κομήτες: όλα τα σώματα συναποτελούν το Ηλιακό Σύστημα.
+1	Γύρω	γύρω	ADV	ADV	_	5	advmod	_	_
+2	από	από	ADP	ADP	_	4	case	_	_
+3	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Ήλιο	ήλιος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	1	obl	_	_
+5	έχουν	έχω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	τις	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	τροχιές	τροχιή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	5	obj	_	_
+8	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod	_	_
+9	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+10	οκτώ	οκτώ	NUM	NUM	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	πλανήτες	πλανήτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
+12	με	με	ADP	ADP	_	14	case	_	_
+13	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	δορυφόρους	δορυφόρος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	11	nmod	_	_
+15	τους	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PUNCT	_	20	punct	_	_
+17	καθώς	καθώς	ADV	ADV	_	20	advmod	_	_
+18	και	και	CCONJ	CCONJ	_	20	cc	_	_
+19	άλλα	άλλος	PRON	PRON	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Ind	20	det	_	_
+20	σώματα	σώμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	11	conj	_	_
+21	όπως	όπως	ADV	ADV	_	22	case	_	_
+22	αστεροειδείς	αστεροειδέας	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	20	nmod	_	_
+23	και	και	CCONJ	CCONJ	_	24	cc	_	_
+24	κομήτες	κομήτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No
+25	:	:	PUNCT	PUNCT	_	5	punct	_	_
+26	όλα	όλος	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	28	amod	_	_
+27	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	28	det	_	_
+28	σώματα	σώμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	29	nsubj	_	_
+29	συναποτελούν	συναποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+30	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	32	det	_	_
+31	Ηλιακό	ηλιακός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	32	amod	_	_
+32	Σύστημα	σύστημα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	29	obj	_	SpaceAfter=No
+33	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+# sent_id = 6
+# text = Ο Ήλιος αποτελεί το 99,8632% της συνολικής μάζας του ηλιακού συστήματος.
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Ήλιος	ήλιος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+3	αποτελεί	αποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	99,8632%	99,8632%	NUM	NUM	NumType=Card	3	obj	_	_
+6	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	συνολικής	συνολικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	8	amod	_	_
+8	μάζας	μάζα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
+9	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+10	ηλιακού	ηλιακός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	11	amod	_	_
+11	συστήματος	σύστημα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -693,7 +762,7 @@
 29	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 8
-# text = Από την οπτική και τη φασματοσκοπική εξέταση προκύπτει ότι η ηλιακή σφαίρα περιστρέφεται στον άξονά της από δυτικά προς ανατολικά και η περίοδος αυτής της πραγματικής περιστροφής είναι περίπου 25,6 ημέρες στον ισημερινό και 33,5 ημέρες στους πόλους[Σημ. 1].
+# text = Από την οπτική και τη φασματοσκοπική εξέταση προκύπτει ότι η ηλιακή σφαίρα περιστρέφεται στον άξονά της από δυτικά προς ανατολικά και η περίοδος αυτής της πραγματικής περιστροφής είναι περίπου 25,6 ημέρες στον ισημερινό και 33,5 ημέρες στους πόλους.
 1	Από	από	ADP	ADP	_	7	case	_	_
 2	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 3	οπτική	οπτικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	7	amod	_	_
@@ -713,7 +782,7 @@
 16	άξονά	άξονάς	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	13	obl	_	_
 17	της	μου	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod	_	_
 18	από	από	ADP	ADP	_	19	case	_	_
-19	δυτικά	δυτικά	ADV	ADV	_	16	nmod	_	_
+19	δυτικά	δυτικά	ADV	ADV	_	13	obl	_	_
 20	προς	προς	ADP	ADP	_	21	case	_	_
 21	ανατολικά	ανατολικά	ADV	ADV	_	19	nmod	_	_
 22	και	και	CCONJ	CCONJ	_	32	cc	_	_
@@ -737,12 +806,8 @@
 39-40	στους	_	_	_	_	_	_	_	_
 39	σ	σε	ADP	AsPpSp	_	41	case	_	_
 40	τους	ο	DET	AtDf	Case=Acc|Gender=Masc|Number=Plur	41	det	_	_
-41	πόλους	πόλος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	32	nmod	_	SpaceAfter=No
-42	[	[	PUNCT	PUNCT	_	43	punct	_	SpaceAfter=No
-43	Σημ.	σημ.	NOUN	NOUN	Abbr=Yes	41	appos	_	_
-44	1	1	NUM	NUM	NumType=Card	43	nmod	_	SpaceAfter=No
-45	]	]	PUNCT	PUNCT	_	43	punct	_	SpaceAfter=No
-46	.	.	PUNCT	PUNCT	_	8	punct	_	_
+41	πόλους	πόλος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	38	nmod	_	SpaceAfter=No
+42	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
 # sent_id = 9
 # text = Ωστόσο, λόγω του συνεχούς μεταβαλλόμενου σημείου θέασης από τη Γη καθώς περιστρέφεται γύρω από τον Ήλιο, η φαινομενική περιστροφή του αστέρα στον ισημερινό του είναι περίπου 28 ημέρες.
@@ -969,16 +1034,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Μέγεθος και απόσταση[Επεξεργασία | επεξεργασία κώδικα]
+# text = Μέγεθος και απόσταση
 1	Μέγεθος	μέγεθος	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	και	και	CCONJ	CCONJ	_	3	cc	_	_
 3	απόσταση	απόσταση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1213,14 +1272,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Λαμπρότητα[Επεξεργασία | επεξεργασία κώδικα]
+# text = Λαμπρότητα
 1	Λαμπρότητα	λαμπρότητα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1471,16 +1524,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Θερμοκρασία του Ήλιου[Επεξεργασία | επεξεργασία κώδικα]
+# text = Θερμοκρασία του Ήλιου
 1	Θερμοκρασία	θερμοκρασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-3	Ήλιου	ήλιος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+3	Ήλιου	ήλιος	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1748,14 +1795,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Δομή[Επεξεργασία | επεξεργασία κώδικα]
+# text = Δομή
 1	Δομή	δομή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	nmod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1763,17 +1804,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ο πυρήνας του Ήλιου[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ο πυρήνας του Ήλιου
 1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	πυρήνας	πυρήνας	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
 4	Ήλιου	ήλιος	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
-6	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	_
-9	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -2887,15 +2922,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ζώνη ακτινοβολίας[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ζώνη ακτινοβολίας
 1	Ζώνη	ζώνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	ακτινοβολίας	ακτινοβολία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3205,15 +3234,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ζώνη μεταφοράς[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ζώνη μεταφοράς
 1	Ζώνη	ζώνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	μεταφοράς	μεταφορά	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3487,14 +3510,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Φωτόσφαιρα[Επεξεργασία | επεξεργασία κώδικα]
-1	Φωτόσφαιρα	φωτόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = Φωτόσφαιρα
+1	Φωτόσφαιρα	φωτόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3972,15 +3989,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ατμόσφαιρα Ήλιου[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ατμόσφαιρα Ήλιου
 1	Ατμόσφαιρα	ατμόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	Ήλιου	ήλιος	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4088,21 +4099,126 @@
 18	Ήλιου	ήλιος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	16	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Η Ηλιακή ατμόσφαιρα διακρίνεται σε δύο επιμέρους στοιβάδες.
+1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	Ηλιακή	ηλιακός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
+3	ατμόσφαιρα	ατμόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	nsubj:pass	_	_
+4	διακρίνεται	διακρίνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	σε	σε	ADP	ADP	_	8	case	_	_
+6	δύο	δύο	NUM	NUM	Case=Acc|Gender=Fem|Number=Plur|NumType=Card	8	nummod	_	_
+7	επιμέρους	επιμέρος	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Plur	8	amod	_	_
+8	στοιβάδες	στοιβάδα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+# sent_id = 6
+# text = Η πρώτη εξ αυτών που βρίσκεται αμέσως πάνω από τη φωτόσφαιρα καλείται χρωμόσφαιρα.
+1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	πρώτη	πρώτος	NUM	NUM	Case=Nom|Gender=Fem|Number=Sing|NumType=Ord	12	nsubj:pass	_	_
+3	εξ	εκ	ADP	ADP	_	4	case	_	_
+4	αυτών	αυτός	PRON	PRON	Case=Gen|Gender=Neut|Number=Plur|Person=3|PronType=Dem	2	nmod	_	_
+5	που	που	PRON	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	6	nsubj	_	_
+6	βρίσκεται	βρίσκω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	4	acl:relcl	_	_
+7	αμέσως	αμέσως	ADV	ADV	_	6	advmod	_	_
+8	πάνω	πάνω	ADV	ADV	_	6	advmod	_	_
+9	από	από	ADP	ADP	_	11	case	_	_
+10	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	φωτόσφαιρα	φωτόσφαιρα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	8	obl	_	_
+12	καλείται	καλώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+13	χρωμόσφαιρα	χρωμόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	12	xcomp	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+# sent_id = 7
+# text = Το ύψος της φθάνει περί τα 15.000 χλμ. (km), η δε θερμοκρασία της ανέρχεται στους 100.000° Κ. Παρουσιάζει έντονο ρόδινο χρώμα, εξ ου και έλαβε το όνομα χρωμόσφαιρα.
+1	Το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	ύψος	ύψος	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
+3	της	μου	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod	_	_
+4	φθάνει	φθάνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	περί	περί	ADP	ADP	_	8	case	_	_
+6	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	8	det	_	_
+7	15.000	15.000	NUM	NUM	NumType=Card	8	nummod	_	_
+8	χλμ.	χλμ.	NOUN	NOUN	Abbr=Yes	4	obl	_	_
+9	(	(	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+10	km	km	NOUN	NOUN	Abbr=Yes	8	appos	_	SpaceAfter=No
+11	)	)	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+12	,	,	PUNCT	PUNCT	_	17	punct	_	_
+13	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	δε	δε	ADV	ADV	_	15	advmod	_	_
+15	θερμοκρασία	θερμοκρασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	17	nsubj	_	_
+16	της	μου	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	nmod	_	_
+17	ανέρχεται	ανέρχομαι	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	4	conj	_	_
+18-19	στους	_	_	_	_	_	_	_	_
+18	σ	σε	ADP	AsPpSp	_	20	case	_	_
+19	τους	ο	DET	AtDf	Case=Acc|Gender=Masc|Number=Plur	20	det	_	_
+20	100.000°	100.000°	NUM	NUM	NumType=Card	21	nummod	_	_
+21	Κ.	Κ.	NOUN	NOUN	Abbr=Yes	17	obl	_	_
+22	Παρουσιάζει	παρουσιάζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+23	έντονο	έντονος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	25	amod	_	_
+24	ρόδινο	ρόδινος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	25	amod	_	_
+25	χρώμα	χρώμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	22	obj	_	SpaceAfter=No
+26	,	,	PUNCT	PUNCT	_	30	punct	_	_
+27	εξ	εκ	ADP	ADP	_	28	case	_	_
+28	ου	ου	PRON	PRON	Case=Gen|Gender=Neut|Number=Sing|Person=3|PronType=Dem	30	obl	_	_
+29	και	και	CCONJ	CCONJ	_	30	cc	_	_
+30	έλαβε	λαμβάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	advcl	_	_
+31	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	32	det	_	_
+32	όνομα	όνομα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	30	obj	_	_
+33	χρωμόσφαιρα	χρωμόσφαιρα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+# sent_id = 8
+# text = Πάνω από την χρωμόσφαιρα βρίσκεται το στέμμα ή Ηλιακό στέμμα ή στέμμα Ήλιου του οποίου τα όρια φθάνουν σε απόσταση πέντε ηλιακών ακτίνων.
+1	Πάνω	πάνω	ADV	ADV	_	5	advmod	_	_
+2	από	από	ADP	ADP	_	4	case	_	_
+3	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	χρωμόσφαιρα	χρωμόσφαιρα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	obl	_	_
+5	βρίσκεται	βρίσκω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	στέμμα	στέμμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
+8	ή	ή	CCONJ	CCONJ	_	10	cc	_	_
+9	Ηλιακό	ηλιακός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	10	amod	_	_
+10	στέμμα	στέμμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	7	conj	_	_
+11	ή	ή	CCONJ	CCONJ	_	12	cc	_	_
+12	στέμμα	στέμμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	7	conj	_	_
+13	Ήλιου	ήλιος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	12	nmod	_	_
+14	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	15	det	_	_
+15	οποίου	οποίος	PRON	PRON	Case=Gen|Gender=Neut|Number=Sing|Person=3|PronType=Rel	17	nmod	_	_
+16	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	17	det	_	_
+17	όρια	όριο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	18	nsubj	_	_
+18	φθάνουν	φτάνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+19	σε	σε	ADP	ADP	_	20	case	_	_
+20	απόσταση	απόσταση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	18	obl	_	_
+21	πέντε	πέντε	NUM	NUM	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	23	nummod	_	_
+22	ηλιακών	ηλιακός	ADJ	ADJ	Case=Gen|Gender=Masc|Number=Plur	23	amod	_	_
+23	ακτίνων	ακτίνας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+# sent_id = 9
+# text = Η θερμοκρασία του στέμματος ανέρχεται περίπου στους 1,5 Χ 106 βαθμούς.
+1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	θερμοκρασία	θερμοκρασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
+4	στέμματος	στέμμα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
+5	ανέρχεται	ανέρχομαι	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	περίπου	περίπου	ADV	ADV	_	5	advmod	_	_
+7-8	στους	_	_	_	_	_	_	_	_
+7	σ	σε	ADP	AsPpSp	_	12	case	_	_
+8	τους	ο	DET	AtDf	Case=Acc|Gender=Masc|Number=Plur	12	det	_	_
+9	1,5	1,5	NUM	NUM	NumType=Card	10	nummod	_	_
+10	Χ	Χ	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	12	nmod	_	_
+11	106	106	NUM	NUM	NumType=Card	12	nummod	_	_
+12	βαθμούς	βαθμός	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	5	obl	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Μαγνητικό πεδίο[Επεξεργασία | επεξεργασία κώδικα]
+# text = Μαγνητικό πεδίο
 1	Μαγνητικό	μαγνητικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	2	amod	_	_
 2	πεδίο	πεδίο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -5265,14 +5381,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σύσταση[Επεξεργασία | επεξεργασία κώδικα]
+# text = Σύσταση
 1	Σύσταση	σύσταση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -5569,17 +5679,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Η ενέργεια του Ήλιου[Επεξεργασία | επεξεργασία κώδικα]
+# text = Η ενέργεια του Ήλιου
 1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	ενέργεια	ενέργεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
-4	Ήλιου	ήλιος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
-6	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	_
-9	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+4	Ήλιου	ήλιος	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -5810,6 +5914,109 @@
 32	στοιχείο	στοιχείο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	30	obj	_	_
 33	ήλιο	ήλιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	32	nmod	_	SpaceAfter=No
 34	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\s\n
+
+# sent_id = 5
+# text = Υπό αυτές τις συνθήκες ο Ήλιος είναι ένας τεράστιος θερμοπυρηνικός αντιδραστήρας που μετατρέπει το υδρογόνο σε ήλιο.
+1	Υπό	υπό	ADP	ADP	_	4	case	_	_
+2	αυτές	αυτός	PRON	PRON	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Dem	4	det	_	_
+3	τις	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	συνθήκες	συνθήκη	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	11	obl	_	_
+5	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Ήλιος	ήλιος	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+7	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	11	cop	_	_
+8	ένας	ένας	DET	DET	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+9	τεράστιος	τεράστιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	11	amod	_	_
+10	θερμοπυρηνικός	θερμοπυρηνικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	11	amod	_	_
+11	αντιδραστήρας	αντιδραστήρας	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+12	που	που	PRON	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	13	nsubj	_	_
+13	μετατρέπει	μετατρέπω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+14	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	15	det	_	_
+15	υδρογόνο	υδρογόνος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	_
+16	σε	σε	ADP	ADP	_	17	case	_	_
+17	ήλιο	ήλιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	13	obl	_	SpaceAfter=No
+18	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = 6
+# text = Και μάλιστα στη διάρκεια αυτή της διαδικασίας σε κάθε δευτερόλεπτο μετατρέπει σε ενέργεια 4,6 εκατομμύρια τόνους από τη μάζα του.
+1	Και	και	CCONJ	CCONJ	_	12	cc	_	_
+2	μάλιστα	μάλιστα	ADV	ADV	_	12	advmod	_	_
+3-4	στη	_	_	_	_	_	_	_	_
+3	σ	σε	ADP	AsPpSp	_	5	case	_	_
+4	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	5	det	_	_
+5	διάρκεια	διάρκεια	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	12	obl	_	_
+6	αυτή	αυτός	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	8	det	_	_
+7	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	διαδικασίας	διαδικασία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
+9	σε	σε	ADP	ADP	_	11	case	_	_
+10	κάθε	κάθε	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Ind	11	det	_	_
+11	δευτερόλεπτο	δευτερόλεπτο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	12	obl	_	_
+12	μετατρέπει	μετατρέπω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	σε	σε	ADP	ADP	_	14	case	_	_
+14	ενέργεια	ενέργεια	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	12	obl	_	_
+15	4,6	4,6	NUM	NUM	NumType=Card	16	nummod	_	_
+16	εκατομμύρια	εκατομμύριο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	17	nmod	_	_
+17	τόνους	τόνος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	14	nmod	_	_
+18	από	από	ADP	ADP	_	20	case	_	_
+19	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	μάζα	μάζα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	12	obl	_	_
+21	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+# sent_id = 7
+# text = Παρόλο όμως που χάνει τόση μάζα, είναι τόσο πολύ τεράστιος που και δισεκατομμύρια χρόνια να περάσουν θα χάσει μόλις το ένα εκατοστό της μάζας του.
+1	Παρόλο	παρόλο	ADV	ADV	_	4	mark	_	_
+2	όμως	όμως	CCONJ	CCONJ	_	4	cc	_	_
+3	που	που	ADV	ADV	_	4	advmod	_	_
+4	χάνει	χάνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	advcl	_	_
+5	τόση	τόσος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	6	amod	_	_
+6	μάζα	μάζα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	PUNCT	_	4	punct	_	_
+8	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	11	cop	_	_
+9	τόσο	τόσο	ADV	ADV	_	11	advmod	_	_
+10	πολύ	πολύ	ADV	ADV	_	11	advmod	_	_
+11	τεράστιος	τεράστιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+12	που	που	SCONJ	SCONJ	_	17	mark	_	_
+13	και	και	CCONJ	CCONJ	_	15	cc	_	_
+14	δισεκατομμύρια	δισεκατομμύριο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	15	nmod	_	_
+15	χρόνια	χρόνος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	19	obl	_	_
+16	να	να	AUX	AUX	_	17	aux	_	_
+17	περάσουν	περνώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	19	advcl	_	_
+18	θα	θα	AUX	AUX	_	19	aux	_	_
+19	χάσει	χάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	advcl	_	_
+20	μόλις	μόλις	ADV	ADV	_	19	advmod	_	_
+21	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
+22	ένα	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
+23	εκατοστό	εκατοστό	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	19	obj	_	_
+24	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	μάζας	μάζα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	23	nmod	_	_
+26	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = 8
+# text = Όλα τα άστρα στον ουρανό ακτινοβολούν ενέργεια με τον ίδιο τρόπο έστω κι αν είναι μικρότερα ή μεγαλύτερα ή θερμότερα.
+1	Όλα	όλος	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	3	amod	_	_
+2	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	3	det	_	_
+3	άστρα	άστρο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	7	nsubj	_	_
+4-5	στον	_	_	_	_	_	_	_	_
+4	σ	σε	ADP	AsPpSp	_	6	case	_	_
+5	τον	ο	DET	AtDf	Case=Acc|Gender=Masc|Number=Sing	6	det	_	_
+6	ουρανό	ουρανός	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	3	nmod	_	_
+7	ακτινοβολούν	ακτινοβολώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	ενέργεια	ενέργεια	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
+9	με	με	ADP	ADP	_	12	case	_	_
+10	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	ίδιο	ίδιος	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	12	amod	_	_
+12	τρόπο	τρόπος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	7	obl	_	_
+13	έστω	έστω	ADV	ADV	_	17	advmod	_	_
+14	κι	και	CCONJ	CCONJ	_	17	cc	_	_
+15	αν	αν	SCONJ	SCONJ	_	17	mark	_	_
+16	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	17	cop	_	_
+17	μικρότερα	μικρός	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Fem|Number=Plur	7	advcl	_	_
+18	ή	ή	CCONJ	CCONJ	_	19	cc	_	_
+19	μεγαλύτερα	μεγάλος	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Fem|Number=Plur	17	conj	_	_
+20	ή	ή	CCONJ	CCONJ	_	21	cc	_	_
+21	θερμότερα	θερμά	ADJ	ADJ	Degree=Cmp	17	conj	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -6137,18 +6344,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Η τελική κατάληξη του Ήλιου[Επεξεργασία | επεξεργασία κώδικα]
+# text = Η τελική κατάληξη του Ήλιου
 1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	τελική	τελικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
 3	κατάληξη	κατάληξη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 4	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
 5	Ήλιου	ήλιος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	SpaceAfter=No
-6	[	[	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No
-7	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	appos	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	conj	_	_
-10	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
-11	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -6356,15 +6557,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Δείτε επίσης[Επεξεργασία | επεξεργασία κώδικα]
+# text = Δείτε επίσης
 1	Δείτε	βλέπω	VERB	VERB	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
 2	επίσης	επίσης	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	obj	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	nmod	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -6372,14 +6567,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σημειώσεις[Επεξεργασία | επεξεργασία κώδικα]
+# text = Σημειώσεις
 1	Σημειώσεις	σημείωση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -6387,14 +6576,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Παραπομπές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Παραπομπές
 1	Παραπομπές	παραπομπή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -6402,23 +6585,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εξωτερικοί σύνδεσμοι[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εξωτερικοί σύνδεσμοι
 1	Εξωτερικοί	εξωτερικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	2	amod	_	_
 2	σύνδεσμοι	σύνδεσμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Μενού πλοήγησης
-1	Μενού	μενός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	2	amod	_	_
-2	πλοήγησης	πλοήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 

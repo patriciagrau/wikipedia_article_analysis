@@ -1,5 +1,3 @@
-# https://vi.wikipedia.org/wiki/G%E1%BA%A1o
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -11,25 +9,7 @@
 2	–	–	PUNCT	-	_	3	punct	_	_
 3	Wikipedia	Wikipedia	NOUN	Np	_	1	compound	_	_
 4	tiếng	tiếng	NOUN	N	_	3	compound	_	_
-5	Việt	Việt	NOUN	Np	_	4	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ngôn ngữ
-1	Ngôn ngữ	Ngôn ngữ	CCONJ	N	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Gạo
-1	Gạo	Gạo	NOUN	Np	_	0	root	_	SpacesAfter=\n
+5	Việt	Việt	NOUN	Np	_	4	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -366,12 +346,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nguồn gốc[sửa | sửa mã nguồn]
-1	Nguồn	Nguồn	CCONJ	N	_	2	cc	_	_
-2	gốc[sửa	gốc[sửa	NOUN	N	_	0	root	_	_
-3	| sửa	| sửa	NOUN	N	_	2	compound	_	_
-4	mã	mã	NOUN	N	_	2	compound	_	_
-5	nguồn]	nguồn]	NOUN	N	_	4	obj	_	SpacesAfter=\n
+# text = Nguồn gốc
+1	Nguồn	Nguồn	VERB	V	_	0	root	_	_
+2	gốc	gốc	NOUN	N	_	1	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -501,14 +478,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lịch sử thuần hóa và trồng trọt[sửa | sửa mã nguồn]
+# text = Lịch sử thuần hóa và trồng trọt
 1	Lịch sử	Lịch sử	NOUN	N	_	2	nsubj	_	_
 2	thuần hóa	thuần hóa	VERB	V	_	0	root	_	_
 3	và	và	SCONJ	CC	_	4	cc	_	_
-4	trồng trọt[sửa	trồng trọt[sửa	VERB	V	_	2	conj	_	_
-5	| sửa	| sửa	NOUN	N	_	4	obj	_	_
-6	mã	mã	NOUN	N	_	5	compound	_	_
-7	nguồn]	nguồn]	NOUN	N	_	6	compound	_	SpacesAfter=\n
+4	trồng trọt	trồng trọt	ADJ	A	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -643,9 +617,40 @@
 8	phía	phía	NOUN	N	_	6	obl	_	_
 9	nam	nam	NOUN	Np	_	8	compound	_	_
 10	và	và	SCONJ	CC	_	11	cc	_	_
-11	Đông Nam	Đông Nam	NOUN	Np	_	8	conj	_	_
-12	Á	á	NOUN	V	_	8	conj	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+11	Đông Nam Á	Đông naM á	NOUN	Np	_	8	conj	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = Trước nghiên cứu này, quan điểm được chấp nhận rộng rãi dựa trên các bằng chứng khảo cổ học thì cho rằng lúa được thuần hóa đầu tiên ở thung lũng sông Dương Tử ở Trung Quốc.
+1	Trước	Trước	ADJ	A	_	2	advmod	_	_
+2	nghiên cứu	nghiên cứu	VERB	V	_	7	advcl	_	_
+3	này	này	PROPN	P	_	2	det	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	quan điểm	quan điểm	NOUN	N	_	7	nsubj	_	_
+6	được	được	VERB	V	_	7	aux:pass	_	_
+7	chấp nhận	chấp nhận	VERB	V	_	0	root	_	_
+8	rộng	rộng	ADJ	A	_	9	amod	_	_
+9	rãi dựa	rãi dựa	NOUN	N	_	7	obj	_	_
+10	trên	trên	ADP	E	_	12	case	_	_
+11	các	các	DET	L	_	12	det	_	_
+12	bằng	bằng	NOUN	N	_	7	obl	_	_
+13	chứng khảo	chứng khảo	VERB	V	_	12	xcomp	_	_
+14	cổ học	cổ học	ADJ	A	_	12	xcomp	_	_
+15	thì	thì	CCONJ	C	_	16	cc	_	_
+16	cho	cho	VERB	V	_	7	conj	_	_
+17	rằng	rằng	CCONJ	C	_	20	mark	_	_
+18	lúa	lúa	NOUN	N	_	20	nsubj	_	_
+19	được	được	VERB	V	_	20	aux:pass	_	_
+20	thuần hóa	thuần hóa	VERB	V	_	16	ccomp	_	_
+21	đầu tiên	đầu tiên	ADJ	A	_	20	xcomp	_	_
+22	ở	ở	ADP	E	_	23	case	_	_
+23	thung	thung	NOUN	N	_	20	obl	_	_
+24	lũng	lũng	NOUN	N	_	23	compound	_	_
+25	sông	sông	NOUN	N	_	23	compound	_	_
+26	Dương Tử	Dương tử	NOUN	Np	_	25	compound	_	_
+27	ở	ở	ADP	E	_	28	case	_	_
+28	Trung Quốc	Trung Quốc	NOUN	Np	_	23	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1081,13 +1086,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Các loại gạo[sửa | sửa mã nguồn]
+# text = Các loại gạo
 1	Các	Các	DET	L	_	2	det	_	_
-2	loại	loại	NOUN	N	_	5	nsubj	_	_
-3	gạo[sửa	gạo[sửa	NOUN	N	_	2	compound	_	_
-4	| sửa	| sửa	NOUN	N	_	2	compound	_	_
-5	mã	mã	ADJ	A	_	0	root	_	_
-6	nguồn]	nguồn]	NOUN	N	_	5	xcomp	_	SpacesAfter=\n
+2	loại	loại	NOUN	N	_	3	nsubj	_	_
+3	gạo	gạo	PUNCT	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1095,12 +1097,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gạo lương thực[sửa | sửa mã nguồn]
-1	Gạo	Gạo	NOUN	N	_	2	nsubj	_	_
-2	lương thực[sửa	lương thực[sửa	NOUN	N	_	0	root	_	_
-3	| sửa	| sửa	NOUN	N	_	2	compound	_	_
-4	mã	mã	X	N	_	2	advmod	_	_
-5	nguồn]	nguồn]	NOUN	N	_	4	compound	_	SpacesAfter=\n
+# text = Gạo lương thực
+1	Gạo	Gạo	NOUN	Np	_	2	nsubj	_	_
+2	lương thực	lương thực	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1516,14 +1515,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Chế biến và nấu ăn[sửa | sửa mã nguồn]
-1	Chế biến	Chế biến	VERB	V	_	0	root	_	_
+# text = Chế biến và nấu ăn
+1	Chế biến	Chế biến	X	V	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
-3	nấu	nấu	NOUN	N	_	1	conj	_	_
-4	ăn[sửa	ăn[sửa	VERB	V	_	3	xcomp	_	_
-5	| sửa	| sửa	NOUN	N	_	7	compound	_	_
-6	mã	mã	X	A	_	7	amod	_	_
-7	nguồn]	nguồn]	NOUN	N	_	3	compound	_	SpacesAfter=\n
+3	nấu	nấu	VERB	V	_	1	conj	_	_
+4	ăn	ăn	VERB	V	_	3	xcomp	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1767,14 +1763,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gạo - hàng hóa[sửa | sửa mã nguồn]
-1	Gạo	Gạo	NOUN	N	_	5	nsubj	_	_
+# text = Gạo - hàng hóa
+1	Gạo	Gạo	NOUN	N	_	0	root	_	_
 2	-	-	PUNCT	-	_	3	punct	_	_
-3	hàng	hàng	NOUN	N	_	1	conj	_	_
-4	hóa[sửa	hóa[sửa	X	V	_	3	xcomp	_	_
-5	| sửa	| sửa	NOUN	N	_	0	root	_	_
-6	mã	mã	VERB	V	_	5	xcomp	_	_
-7	nguồn]	nguồn]	NOUN	N	_	6	obj	_	SpacesAfter=\n
+3	hàng hóa	hàng hóa	NOUN	N	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2246,13 +2238,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Khủng hoảng thiếu gạo[sửa | sửa mã nguồn]
-1	Khủng hoảng	Khủng hoảng	NOUN	N	_	2	nsubj	_	_
-2	thiếu	thiếu	VERB	V	_	0	root	_	_
-3	gạo[sửa	gạo[sửa	NOUN	N	_	2	obj	_	_
-4	| sửa	| sửa	NOUN	N	_	3	compound	_	_
-5	mã	mã	NOUN	N	_	4	compound	_	_
-6	nguồn]	nguồn]	NOUN	N	_	5	compound	_	SpacesAfter=\n
+# text = Khủng hoảng thiếu gạo
+1	Khủng	Khủng	NOUN	Np	_	2	nsubj	_	_
+2	hoảng	hoảng	VERB	V	_	0	root	_	_
+3	thiếu	thiếu	VERB	V	_	2	xcomp	_	_
+4	gạo	gạo	ADJ	A	_	2	xcomp	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2357,14 +2347,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nguyên nhân của cuộc khủng hoảng[sửa | sửa mã nguồn]
-1	Nguyên nhân	Nguyên nhân	NOUN	N	_	6	nsubj	_	_
-2	của	của	ADP	E	_	3	case	_	_
-3	cuộc	cuộc	NOUN	Nc	_	1	nmod	_	_
-4	khủng hoảng[sửa	khủng hoảng[sửa	NOUN	N	_	3	compound	_	_
-5	| sửa	| sửa	X	X	_	3	dep	_	_
-6	mã	mã	NOUN	N	_	0	root	_	_
-7	nguồn]	nguồn]	NOUN	N	_	6	obj	_	SpacesAfter=\n
+# text = Nguyên nhân của cuộc khủng hoảng
+1	Nguyên nhân	Nguyên nhân	NOUN	N	_	0	root	_	_
+2	của	của	ADP	E	_	4	case	_	_
+3	cuộc	cuộc	NOUN	Nc	_	4	compound	_	_
+4	khủng hoảng	khủng hoảng	NOUN	N	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2406,12 +2393,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tác động môi trường[sửa | sửa mã nguồn]
-1	Tác động	Tác động	NOUN	N	_	4	nsubj	_	_
-2	môi trường[sửa	môi trường[sửa	NOUN	N	_	4	nsubj	_	_
-3	| sửa	| sửa	NOUN	N	_	2	compound	_	_
-4	mã	mã	NOUN	N	_	0	root	_	_
-5	nguồn]	nguồn]	NOUN	N	_	4	compound	_	SpacesAfter=\n
+# text = Tác động môi trường
+1	Tác động	Tác động	NOUN	N	_	0	root	_	_
+2	môi trường	môi trường	NOUN	N	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2639,15 +2623,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sâu bệnh và tác nhân gây hại[sửa | sửa mã nguồn]
-1	Sâu bệnh	Sâu bệnh	NOUN	N	_	7	nsubj	_	_
+# text = Sâu bệnh và tác nhân gây hại
+1	Sâu bệnh	Sâu bệnh	NOUN	N	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
 3	tác nhân	tác nhân	NOUN	N	_	1	conj	_	_
 4	gây	gây	VERB	V	_	3	xcomp	_	_
-5	hại[sửa	hại[sửa	NOUN	N	_	4	obj	_	_
-6	| sửa	| sửa	X	N	_	5	compound	_	_
-7	mã	mã	NOUN	N	_	0	root	_	_
-8	nguồn]	nguồn]	NOUN	N	_	7	compound	_	SpacesAfter=\n
+5	hại	hại	X	R	_	4	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2779,12 +2760,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Côn trùng[sửa | sửa mã nguồn]
-1	Côn	Côn	X	R	_	2	advmod	_	_
-2	trùng[sửa	trùng[sửa	NOUN	N	_	0	root	_	_
-3	| sửa	| sửa	NOUN	N	_	2	compound	_	_
-4	mã	mã	NOUN	N	_	2	compound	_	_
-5	nguồn]	nguồn]	NOUN	N	_	4	compound	_	SpacesAfter=\n
+# text = Côn trùng
+1	Côn	Côn	NOUN	N	_	2	nsubj	_	_
+2	trùng	trùng	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2846,12 +2824,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dịch bệnh[sửa | sửa mã nguồn]
-1	Dịch	Dịch	NOUN	N	_	4	nsubj	_	_
-2	bệnh[sửa	bệnh[sửa	NOUN	N	_	4	nsubj	_	_
-3	| sửa	| sửa	X	N	_	4	advmod	_	_
-4	mã	mã	VERB	V	_	0	root	_	_
-5	nguồn]	nguồn]	NOUN	N	_	4	obj	_	SpacesAfter=\n
+# text = Dịch bệnh
+1	Dịch bệnh	Dịch bệnh	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3047,12 +3021,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Giun tròn[sửa | sửa mã nguồn]
+# text = Giun tròn
 1	Giun	Giun	NOUN	Np	_	2	nsubj	_	_
-2	tròn[sửa	tròn[sửa	VERB	V	_	0	root	_	_
-3	| sửa	| sửa	NOUN	N	_	2	obj	_	_
-4	mã	mã	X	R	_	5	advmod	_	_
-5	nguồn]	nguồn]	NOUN	N	_	2	obj	_	SpacesAfter=\n
+2	tròn	tròn	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3179,16 +3150,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Các tác nhân gây hại khác[sửa | sửa mã nguồn]
+# text = Các tác nhân gây hại khác
 1	Các	Các	DET	L	_	3	det	_	_
-2	tác	tác	NOUN	N	_	4	nsubj	_	_
+2	tác	tác	NOUN	N	_	3	compound	_	_
 3	nhân	nhân	NOUN	N	_	4	nsubj	_	_
 4	gây	gây	VERB	V	_	0	root	_	_
 5	hại	hại	ADJ	A	_	4	xcomp	_	_
-6	khác[sửa	khác[sửa	NOUN	N	_	4	obj	_	_
-7	| sửa	| sửa	X	N	_	8	compound	_	_
-8	mã	mã	NOUN	N	_	4	ccomp	_	_
-9	nguồn]	nguồn]	NOUN	N	_	8	compound	_	SpacesAfter=\n
+6	khác	khác	ADJ	A	_	5	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3227,15 +3195,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hình ảnh hạt gạo trọng văn hóa, nghệ thuật[sửa | sửa mã nguồn]
+# text = Hình ảnh hạt gạo trọng văn hóa, nghệ thuật
 1	Hình ảnh	Hình ảnh	NOUN	N	_	2	nsubj	_	_
 2	hạt	hạt	VERB	V	_	0	root	_	_
 3	gạo trọng văn hóa	gạo trọng văn hóa	NOUN	N	_	2	obj	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	5	punct	_	_
-5	nghệ thuật[sửa	nghệ thuật[sửa	NOUN	N	_	3	conj	_	_
-6	| sửa	| sửa	X	R	_	7	advmod	_	_
-7	mã	mã	VERB	V	_	2	conj	_	_
-8	nguồn]	nguồn]	NOUN	N	_	7	obj	_	SpacesAfter=\n
+5	nghệ thuật	nghệ thuật	NOUN	N	_	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3243,17 +3208,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tác hại của gạo với thừa cân, béo phì[sửa | sửa mã nguồn]
+# text = Tác hại của gạo với thừa cân, béo phì
 1	Tác hại	Tác hại	NOUN	N	_	3	nsubj	_	_
 2	của	của	ADP	E	_	3	case	_	_
 3	gạo	gạo	NOUN	N	_	0	root	_	_
 4	với	với	ADP	E	_	5	case	_	_
 5	thừa cân	thừa cân	NOUN	N	_	3	nmod	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	7	punct	_	_
-7	béo phì[sửa	béo phì[sửa	NOUN	N	_	5	conj	_	_
-8	| sửa	| sửa	NOUN	N	_	7	compound	_	_
-9	mã	mã	NOUN	N	_	7	compound	_	_
-10	nguồn]	nguồn]	NOUN	N	_	9	compound	_	SpacesAfter=\n
+7	béo	béo	ADJ	A	_	5	conj	_	_
+8	phì	phì	PUNCT	.	_	3	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3412,9 +3375,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Chú thích[sửa | sửa mã nguồn]
-1	Chú thích[sửa	Chú thích[sửa	X	R	_	2	advmod	_	_
-2	| sửa	| sửa	X	X	_	0	root	_	_
-3	mã	mã	X	N	_	2	advmod	_	_
-4	nguồn]	nguồn]	NOUN	N	_	3	compound	_	SpacesAfter=\n
+# text = Chú thích
+1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpaceAfter=No
 

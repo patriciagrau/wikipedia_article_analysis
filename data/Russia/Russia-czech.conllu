@@ -1,5 +1,3 @@
-# https://cs.wikipedia.org/wiki/Rusko
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Rusko – Wikipedie
 1	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
 2	–	–	PUNCT	Z:-------------	_	3	punct	_	_
-3	Wikipedie	Wikipedie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	conj	_	SpacesAfter=\n
+3	Wikipedie	Wikipedie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17,28 +15,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rusko
-1	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Poloha Ruska
-1	Poloha	poloha	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
-2	Ruska	Rusko	PROPN	NNNS2-----A----	Case=Gen|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Rusko (rusky Россия, Rossija), plným názvem Ruská federace (rusky Российская Федерация, Rossijskaja feděracija),[pozn. 4] je s rozlohou 17 098 246 km²[pozn. 1] největším státem světa.
-1	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	40	nsubj	_	_
-2	(	(	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
+# text = Rusko (rusky Россия, Rossija), plným názvem Ruská federace (rusky Российская Федерация, Rossijskaja feděracija), je s rozlohou 17 098 246 km² největším státem světa.
+1	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	30	nsubj	_	_
+2	(	(	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
 3	rusky	rusky	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	1	dep	_	SpacesAfter=\s\s
 4	Россия	россия	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	1	dep	_	SpaceAfter=No
 5	,	,	PUNCT	Z:-------------	_	6	punct	_	_
@@ -46,39 +25,29 @@
 7	)	)	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
 8	,	,	PUNCT	Z:-------------	_	10	punct	_	_
 9	plným	plný	ADJ	AAIS7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	10	amod	_	_
-10	názvem	název	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	1	conj	_	_
+10	názvem	název	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	30	obl	_	_
 11	Ruská	ruský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	12	amod	_	_
 12	federace	federace	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	10	nmod	_	_
 13	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
 14	rusky	rusky	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	12	dep	_	_
-15	Российская	российская	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	12	dep	_	_
+15	Российская	российская	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	14	conj	_	_
 16	Федерация	федерация	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	15	flat:foreign	_	SpaceAfter=No
 17	,	,	PUNCT	Z:-------------	_	18	punct	_	_
-18	Rossijskaja	Rossijskaja	ADJ	AAFS1----1A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	15	conj	_	_
+18	Rossijskaja	Rossijskaja	ADJ	AAFS1----1A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	15	flat:foreign	_	_
 19	feděracija	feděracija	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	18	flat:foreign	_	SpaceAfter=No
 20	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
-21	,	,	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
-22	[	[	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
-23	pozn	poznámka	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	12	dep	_	SpaceAfter=No
-24	.	.	PUNCT	Z:-------------	_	23	punct	_	_
-25	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	23	nummod	_	SpaceAfter=No
-26	]	]	PUNCT	Z:-------------	_	23	punct	_	_
-27	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	40	cop	_	_
-28	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	29	case	_	SpacesAfter= 
-29	rozlohou	rozloha	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	40	obl	_	_
-30	17	17	NUM	C=-------------	NumForm=Digit|NumType=Card	29	nummod	_	_
-31	098	098	NUM	C=-------------	NumForm=Digit|NumType=Card	30	compound	_	_
-32	246	246	NUM	C=-------------	NumForm=Digit|NumType=Card	30	compound	_	SpacesAfter= 
-33	km²	km²`kilometr	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	32	nmod	_	SpaceAfter=No
-34	[	[	PUNCT	Z:-------------	_	40	punct	_	SpaceAfter=No
-35	pozn	poznámka	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	33	dep	_	SpaceAfter=No
-36	.	.	PUNCT	Z:-------------	_	35	punct	_	_
-37	1	1	NUM	C=-------------	NumForm=Digit|NumType=Card	35	nummod	_	SpaceAfter=No
-38	]	]	PUNCT	Z:-------------	_	35	punct	_	_
-39	největším	velký	ADJ	AAIS7----3A----	Animacy=Inan|Case=Ins|Degree=Sup|Gender=Masc|Number=Sing|Polarity=Pos	40	amod	_	_
-40	státem	stát	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	_
-41	světa	svět	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	40	nmod	_	SpaceAfter=No
-42	.	.	PUNCT	Z:-------------	_	40	punct	_	_
+21	,	,	PUNCT	Z:-------------	_	10	punct	_	_
+22	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	30	cop	_	_
+23	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	24	case	_	SpacesAfter= 
+24	rozlohou	rozloha	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	30	obl	_	_
+25	17	17	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	_
+26	098	098	NUM	C=-------------	NumForm=Digit|NumType=Card	25	compound	_	_
+27	246	246	NUM	C=-------------	NumForm=Digit|NumType=Card	25	compound	_	SpacesAfter= 
+28	km²	km²`kilometr	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	27	nmod	_	_
+29	největším	velký	ADJ	AAIS7----3A----	Animacy=Inan|Case=Ins|Degree=Sup|Gender=Masc|Number=Sing|Polarity=Pos	30	amod	_	_
+30	státem	stát	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	_
+31	světa	svět	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	30	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	Z:-------------	_	30	punct	_	_
 
 # sent_id = 2
 # text = Zahrnuje značnou část východní Evropy a téměř celou severní Asii.
@@ -95,13 +64,13 @@
 11	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 3
-# text = S počtem 146,1 milionů obyvatel je Ruská federace devátá nejlidnatější země na světě.
+# text = S počtem 146,1 milionu obyvatel je Ruská federace devátá nejlidnatější země na světě.
 1	S	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	2	case	_	SpacesAfter= 
 2	počtem	počet	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	13	obl	_	_
 3	146	146	NUM	C=-------------	NumForm=Digit|NumType=Card	6	nummod:gov	_	SpaceAfter=No
 4	,	,	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 5	1	1	NUM	C=-------------	NumForm=Digit|NumType=Card	3	conj	_	SpacesAfter= 
-6	milionů	milión	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	2	nmod	_	_
+6	milionu	milión	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	2	nmod	_	_
 7	obyvatel	obyvatel	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	6	nmod	_	_
 8	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
 9	Ruská	ruský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	10	amod	_	_
@@ -817,7 +786,7 @@
 # newpar
 # sent_id = 1
 # text = Název
-1	Název	název	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Název	název	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1024,7 +993,7 @@
 16	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 7
-# text = Tato teorie, odvozující jméno Ruska od jména kraje ve Švédsku, má podporu jak ve zprávách kronik,[pozn.
+# text = Tato teorie, odvozující jméno Ruska od jména kraje ve Švédsku, má podporu jak ve zprávách kronik, tak i v dalších lingvistických souvislostech: s ruštinou a švédštinou sousedící ugrofinské jazyky totiž označují Švédsko výrazy takřka shodnými se jménem Rossija, tedy např. Ruotsi, Ruoŧŧa, Rootsi, Roodsi, Ročinma apod.
 1	Tato	tento	DET	PDFS1----------	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	teorie	teorie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	13	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	Z:-------------	_	4	punct	_	_
@@ -1043,53 +1012,45 @@
 16	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	17	case	_	_
 17	zprávách	zpráva	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	13	obl	_	_
 18	kronik	kronika	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	17	nmod	_	SpaceAfter=No
-19	,	,	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-20	[	[	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-21	pozn	poznámka	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	17	dep	_	SpaceAfter=No
-22	.	.	PUNCT	Z:-------------	_	13	punct	_	_
-
-# sent_id = 8
-# text = 5] tak i v dalších lingvistických souvislostech: s ruštinou a švédštinou sousedící ugrofinské jazyky totiž označují Švédsko výrazy takřka shodnými se jménem Rossija, tedy např. Ruotsi, Ruoŧŧa, Rootsi, Roodsi, Ročinma apod.
-1	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	0	root	_	SpaceAfter=No
-2	]	]	PUNCT	Z:-------------	_	1	punct	_	_
-3	tak	tak	ADV	Db-------------	PronType=Dem	1	dep	_	_
-4	i	i	CCONJ	J^-------------	_	8	advmod:emph	_	_
-5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	8	case	_	SpacesAfter= 
-6	dalších	další	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	8	amod	_	_
-7	lingvistických	lingvistický	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	8	amod	_	_
-8	souvislostech	souvislost	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	1	dep	_	SpaceAfter=No
-9	:	:	PUNCT	Z:-------------	_	18	punct	_	_
-10	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	11	case	_	SpacesAfter= 
-11	ruštinou	ruština	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	18	obl:arg	_	_
-12	a	a	CCONJ	J^-------------	_	13	cc	_	_
-13	švédštinou	švédština	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	11	conj	_	_
-14	sousedící	sousedící	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	16	amod	_	_
-15	ugrofinské	ugrofinský	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	16	amod	_	_
-16	jazyky	jazyk	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	18	nsubj	_	_
-17	totiž	totiž	ADV	Db-------------	_	18	advmod	_	_
-18	označují	označovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
-19	Švédsko	Švédsko	PROPN	NNNS4-----A----	Case=Acc|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	18	obj	_	_
-20	výrazy	výraz	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	18	obj	_	_
-21	takřka	takřka	ADV	Db-------------	_	22	advmod	_	_
-22	shodnými	shodný	ADJ	AAIP7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	20	amod	_	_
-23	se	s	ADP	RV--7----------	AdpType=Voc|Case=Ins	24	case	_	_
-24	jménem	jméno	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	22	obl:arg	_	_
-25	Rossija	Rossija	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	24	nmod	_	SpaceAfter=No
-26	,	,	PUNCT	Z:-------------	_	30	punct	_	_
-27	tedy	tedy	ADV	Db-------------	_	30	cc	_	_
-28	např	například	ADV	Db------------8	Abbr=Yes	30	cc	_	SpaceAfter=No
-29	.	.	PUNCT	Z:-------------	_	30	punct	_	_
-30	Ruotsi	Ruotsi	PROPN	NNNXX-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	24	appos	_	SpaceAfter=No
-31	,	,	PUNCT	Z:-------------	_	32	punct	_	_
-32	Ruoŧŧa	Ruoŧŧa	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	30	conj	_	SpaceAfter=No
-33	,	,	PUNCT	Z:-------------	_	34	punct	_	_
-34	Rootsi	Rootsi	PROPN	NNNXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	30	conj	_	SpaceAfter=No
-35	,	,	PUNCT	Z:-------------	_	36	punct	_	_
-36	Roodsi	Roodsi	PROPN	NNNXX-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	30	conj	_	SpaceAfter=No
-37	,	,	PUNCT	Z:-------------	_	38	punct	_	_
-38	Ročinma	Ročinma	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Com|Number=Sing|Polarity=Pos	30	conj	_	_
-39	apod	apod	ADV	Db------------8	Abbr=Yes	30	conj	_	SpaceAfter=No
-40	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+19	,	,	PUNCT	Z:-------------	_	25	punct	_	_
+20	tak	tak	CCONJ	J^-------------	_	25	cc	_	_
+21	i	i	CCONJ	J^-------------	_	25	advmod:emph	_	_
+22	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	25	case	_	SpacesAfter= 
+23	dalších	další	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	25	amod	_	_
+24	lingvistických	lingvistický	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	25	amod	_	_
+25	souvislostech	souvislost	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	17	conj	_	SpaceAfter=No
+26	:	:	PUNCT	Z:-------------	_	35	punct	_	_
+27	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	28	case	_	SpacesAfter= 
+28	ruštinou	ruština	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	35	obl:arg	_	_
+29	a	a	CCONJ	J^-------------	_	30	cc	_	_
+30	švédštinou	švédština	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	28	conj	_	_
+31	sousedící	sousedící	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	33	amod	_	_
+32	ugrofinské	ugrofinský	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	33	amod	_	_
+33	jazyky	jazyk	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	35	nsubj	_	_
+34	totiž	totiž	ADV	Db-------------	_	35	advmod	_	_
+35	označují	označovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
+36	Švédsko	Švédsko	PROPN	NNNS4-----A----	Case=Acc|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	35	obj	_	_
+37	výrazy	výraz	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	35	obj	_	_
+38	takřka	takřka	ADV	Db-------------	_	39	advmod	_	_
+39	shodnými	shodný	ADJ	AAIP7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	37	amod	_	_
+40	se	s	ADP	RV--7----------	AdpType=Voc|Case=Ins	41	case	_	_
+41	jménem	jméno	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	39	obl:arg	_	_
+42	Rossija	Rossija	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	41	nmod	_	SpaceAfter=No
+43	,	,	PUNCT	Z:-------------	_	47	punct	_	_
+44	tedy	tedy	ADV	Db-------------	_	47	cc	_	_
+45	např	například	ADV	Db------------8	Abbr=Yes	47	cc	_	SpaceAfter=No
+46	.	.	PUNCT	Z:-------------	_	47	punct	_	_
+47	Ruotsi	Ruotsi	PROPN	NNNXX-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	41	appos	_	SpaceAfter=No
+48	,	,	PUNCT	Z:-------------	_	49	punct	_	_
+49	Ruoŧŧa	Ruoŧŧa	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	47	conj	_	SpaceAfter=No
+50	,	,	PUNCT	Z:-------------	_	51	punct	_	_
+51	Rootsi	Rootsi	PROPN	NNNXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	47	conj	_	SpaceAfter=No
+52	,	,	PUNCT	Z:-------------	_	53	punct	_	_
+53	Roodsi	Roodsi	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	47	conj	_	SpaceAfter=No
+54	,	,	PUNCT	Z:-------------	_	55	punct	_	_
+55	Ročinma	Ročinma	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Com|Number=Sing|Polarity=Pos	47	conj	_	_
+56	apod	apod	ADV	Db------------8	Abbr=Yes	47	conj	_	SpaceAfter=No
+57	.	.	PUNCT	Z:-------------	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1205,7 +1166,7 @@
 # newpar
 # sent_id = 1
 # text = Dějiny
-1	Dějiny	dějiny	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Dějiny	dějiny	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1302,7 +1263,7 @@
 # sent_id = 1
 # text = Počátky Ruska
 1	Počátky	počátek	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
-2	Ruska	Rusko	PROPN	NNNS2-----A----	Case=Gen|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpacesAfter=\n
+2	Ruska	Rusko	PROPN	NNNS2-----A----	Case=Gen|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1642,7 +1603,7 @@
 1	Sjednocení	sjednocení	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
 2	Rusi	Rus	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	pod	pod	ADP	RR--7----------	AdpType=Prep|Case=Ins	4	case	_	_
-4	Moskvou	Moskva	PROPN	NNFS7-----A----	Case=Ins|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpacesAfter=\n
+4	Moskvou	Moskva	PROPN	NNFS7-----A----	Case=Ins|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2012,7 +1973,7 @@
 # sent_id = 1
 # text = Carské Rusko
 1	Carské	carský	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2598,7 +2559,7 @@
 # sent_id = 1
 # text = Ruské impérium
 1	Ruské	ruský	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	impérium	impérium	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	impérium	impérium	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -2738,7 +2699,7 @@
 46	.	.	PUNCT	Z:-------------	_	12	punct	_	_
 
 # sent_id = 2
-# text = Ruské impérium se rozrostlo o další území Dálného východu až po Aljašku (1799), Gruzii (1802[zdroj?]) a Ázerbájdžán (1813).
+# text = Ruské impérium se rozrostlo o další území Dálného východu až po Aljašku (1799), Gruzii (1802) a Ázerbájdžán (1813).
 1	Ruské	ruský	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
 2	impérium	impérium	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	4	nsubj	_	_
 3	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pv	_	_
@@ -2758,17 +2719,13 @@
 17	Gruzii	Gruzie	PROPN	NNFS4-----A----	Case=Acc|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	12	conj	_	_
 18	(	(	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
 19	1802	1802	NUM	C=-------------	NumForm=Digit|NumType=Card	17	dep	_	SpaceAfter=No
-20	[	[	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-21	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	17	dep	_	SpaceAfter=No
-22	?	?	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-23	]	]	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-24	)	)	PUNCT	Z:-------------	_	17	punct	_	_
-25	a	a	CCONJ	J^-------------	_	26	cc	_	_
-26	Ázerbájdžán	Ázerbájdžán	PROPN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|NameType=Geo|Number=Sing|Polarity=Pos	12	conj	_	_
-27	(	(	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
-28	1813	1813	NUM	C=-------------	NumForm=Digit|NumType=Card	26	dep	_	SpaceAfter=No
-29	)	)	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
-30	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+20	)	)	PUNCT	Z:-------------	_	17	punct	_	_
+21	a	a	CCONJ	J^-------------	_	22	cc	_	_
+22	Ázerbájdžán	Ázerbájdžán	PROPN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|NameType=Geo|Number=Sing|Polarity=Pos	12	conj	_	_
+23	(	(	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+24	1813	1813	NUM	C=-------------	NumForm=Digit|NumType=Card	22	dep	_	SpaceAfter=No
+25	)	)	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+26	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 3
 # text = V důsledku rusko-švédské války bylo roku 1809 k Rusku připojeno Finsko.
@@ -3147,7 +3104,7 @@
 1	Revoluce	revoluce	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	4	cc	_	_
 3	Sovětský	sovětský	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	4	amod	_	_
-4	svaz	svaz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	1	conj	_	SpacesAfter=\n
+4	svaz	svaz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3160,7 +3117,7 @@
 2	revoluce	revoluce	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 3	do	do	ADP	RR--2----------	AdpType=Prep|Case=Gen	4	case	_	_
 4	roku	rok	NOUN	NNIS2-----A---1	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	2	dep	_	_
-5	1953	1953	NUM	C=-------------	NumForm=Digit|NumType=Card	4	nummod	_	SpacesAfter=\n
+5	1953	1953	NUM	C=-------------	NumForm=Digit|NumType=Card	4	nummod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3932,7 +3889,7 @@
 1	Léta	rok	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	_
 2	1953	1953	NUM	C=-------------	NumForm=Digit|NumType=Card	1	nummod	_	SpaceAfter=No
 3	–	–	SYM	Z:-------------	_	4	cc	_	SpaceAfter=No
-4	1990	1990	NUM	C=-------------	NumForm=Digit|NumType=Card	2	conj	_	SpacesAfter=\n
+4	1990	1990	NUM	C=-------------	NumForm=Digit|NumType=Card	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -4296,7 +4253,7 @@
 # sent_id = 1
 # text = Ruská federace
 1	Ruská	ruský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
-2	federace	federace	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	federace	federace	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -5211,7 +5168,7 @@
 # sent_id = 1
 # text = Politický systém
 1	Politický	politický	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	2	amod	_	_
-2	systém	systém	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	systém	systém	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -5378,56 +5335,52 @@
 14	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
 # sent_id = 4
-# text = Podle volebních výsledků jsou v současnosti[kdy?] ve Státní dumě zastoupeny následující strany: Jednotné Rusko (54 %), Komunistická strana Ruské federace (13 %), Liberální demokratická strana Ruska (13 %) a Spravedlivé Rusko (6 %).
+# text = Podle volebních výsledků jsou v současnosti ve Státní dumě zastoupeny následující strany: Jednotné Rusko (54 %), Komunistická strana Ruské federace (13 %), Liberální demokratická strana Ruska (13 %) a Spravedlivé Rusko (6 %).
 1	Podle	podle	ADP	RR--2----------	AdpType=Prep|Case=Gen	3	case	_	_
 2	volebních	volební	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	3	amod	_	_
-3	výsledků	výsledek	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	14	obl	_	_
-4	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+3	výsledků	výsledek	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	10	obl	_	_
+4	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
 5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	6	case	_	SpacesAfter= 
-6	současnosti	současnost	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	14	obl	_	SpaceAfter=No
-7	[	[	PUNCT	Z:-------------	_	8	punct	_	SpaceAfter=No
-8	kdy	kdy	ADV	Db-------------	PronType=Int,Rel	14	advmod	_	SpaceAfter=No
-9	?	?	PUNCT	Z:-------------	_	8	punct	_	SpaceAfter=No
-10	]	]	PUNCT	Z:-------------	_	8	punct	_	_
-11	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	13	case	_	_
-12	Státní	státní	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	13	amod	_	_
-13	dumě	duma	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	14	obl	_	_
-14	zastoupeny	zastoupený	ADJ	VsTP---XX-AP---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-15	následující	následující	ADJ	AGFP1-----A----	Aspect=Imp|Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	16	amod	_	_
-16	strany	strana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	14	nsubj	_	SpaceAfter=No
-17	:	:	PUNCT	Z:-------------	_	19	punct	_	_
-18	Jednotné	jednotný	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	19	amod	_	_
-19	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	16	appos	_	_
-20	(	(	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
-21	54	54	NUM	C=-------------	NumForm=Digit|NumType=Card	19	dep	_	SpacesAfter= 
-22	%	%	SYM	Z:-------------	_	21	nmod	_	SpaceAfter=No
-23	)	)	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
-24	,	,	PUNCT	Z:-------------	_	26	punct	_	_
-25	Komunistická	komunistický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	26	amod	_	_
-26	strana	strana	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	19	conj	_	_
-27	Ruské	ruský	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	28	amod	_	_
-28	federace	federace	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	26	nmod	_	_
-29	(	(	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
-30	13	13	NUM	C=-------------	NumForm=Digit|NumType=Card	26	dep	_	SpacesAfter= 
-31	%	%	SYM	Z:-------------	_	30	nmod	_	SpaceAfter=No
-32	)	)	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
-33	,	,	PUNCT	Z:-------------	_	36	punct	_	_
-34	Liberální	liberální	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	36	amod	_	_
-35	demokratická	demokratický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	36	amod	_	_
-36	strana	strana	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	19	conj	_	_
-37	Ruska	Rusko	PROPN	NNNS2-----A----	Case=Gen|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	36	nmod	_	_
-38	(	(	PUNCT	Z:-------------	_	36	punct	_	SpaceAfter=No
-39	13	13	NUM	C=-------------	NumForm=Digit|NumType=Card	36	dep	_	SpacesAfter= 
-40	%	%	SYM	Z:-------------	_	39	nmod	_	SpaceAfter=No
-41	)	)	PUNCT	Z:-------------	_	36	punct	_	_
-42	a	a	CCONJ	J^-------------	_	44	cc	_	_
-43	Spravedlivé	spravedlivý	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	44	amod	_	_
-44	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	19	conj	_	_
-45	(	(	PUNCT	Z:-------------	_	44	punct	_	SpaceAfter=No
-46	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	44	dep	_	SpacesAfter= 
-47	%	%	SYM	Z:-------------	_	46	nmod	_	SpaceAfter=No
-48	)	)	PUNCT	Z:-------------	_	44	punct	_	SpaceAfter=No
-49	.	.	PUNCT	Z:-------------	_	14	punct	_	_
+6	současnosti	současnost	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	10	obl	_	_
+7	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	9	case	_	_
+8	Státní	státní	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	9	amod	_	_
+9	dumě	duma	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	10	obl	_	_
+10	zastoupeny	zastoupený	ADJ	VsTP---XX-AP---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+11	následující	následující	ADJ	AGFP1-----A----	Aspect=Imp|Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	12	amod	_	_
+12	strany	strana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	10	nsubj	_	SpaceAfter=No
+13	:	:	PUNCT	Z:-------------	_	15	punct	_	_
+14	Jednotné	jednotný	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	15	amod	_	_
+15	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	12	appos	_	_
+16	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+17	54	54	NUM	C=-------------	NumForm=Digit|NumType=Card	15	dep	_	SpacesAfter= 
+18	%	%	SYM	Z:-------------	_	17	nmod	_	SpaceAfter=No
+19	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+20	,	,	PUNCT	Z:-------------	_	22	punct	_	_
+21	Komunistická	komunistický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	22	amod	_	_
+22	strana	strana	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	15	conj	_	_
+23	Ruské	ruský	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	24	amod	_	_
+24	federace	federace	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	22	nmod	_	_
+25	(	(	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+26	13	13	NUM	C=-------------	NumForm=Digit|NumType=Card	22	dep	_	SpacesAfter= 
+27	%	%	SYM	Z:-------------	_	26	nmod	_	SpaceAfter=No
+28	)	)	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+29	,	,	PUNCT	Z:-------------	_	32	punct	_	_
+30	Liberální	liberální	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	32	amod	_	_
+31	demokratická	demokratický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	32	amod	_	_
+32	strana	strana	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	15	conj	_	_
+33	Ruska	Rusko	PROPN	NNNS2-----A----	Case=Gen|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	32	nmod	_	_
+34	(	(	PUNCT	Z:-------------	_	32	punct	_	SpaceAfter=No
+35	13	13	NUM	C=-------------	NumForm=Digit|NumType=Card	32	dep	_	SpacesAfter= 
+36	%	%	SYM	Z:-------------	_	35	nmod	_	SpaceAfter=No
+37	)	)	PUNCT	Z:-------------	_	32	punct	_	_
+38	a	a	CCONJ	J^-------------	_	40	cc	_	_
+39	Spravedlivé	spravedlivý	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	40	amod	_	_
+40	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	15	conj	_	_
+41	(	(	PUNCT	Z:-------------	_	40	punct	_	SpaceAfter=No
+42	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	40	dep	_	SpacesAfter= 
+43	%	%	SYM	Z:-------------	_	42	nmod	_	SpaceAfter=No
+44	)	)	PUNCT	Z:-------------	_	40	punct	_	SpaceAfter=No
+45	.	.	PUNCT	Z:-------------	_	10	punct	_	_
 
 # sent_id = 5
 # text = Organizovala se také mimoparlamentní opozice.
@@ -5446,7 +5399,7 @@
 # sent_id = 1
 # text = Zahraniční politika
 1	Zahraniční	zahraniční	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
-2	politika	politika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	politika	politika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6007,7 +5960,7 @@
 2	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
 3	oblasti	oblast	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	1	nmod	_	_
 4	zahraniční	zahraniční	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	5	amod	_	_
-5	politiky	politika	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	1	nmod	_	SpacesAfter=\n
+5	politiky	politika	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6277,7 +6230,7 @@
 # sent_id = 1
 # text = Ozbrojené síly
 1	Ozbrojené	ozbrojený	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	2	amod	_	_
-2	síly	síla	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	síly	síla	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6651,7 +6604,7 @@
 # sent_id = 1
 # text = Administrativní členění
 1	Administrativní	administrativní	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	členění	členění	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	členění	členění	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6925,7 +6878,7 @@
 # newpar
 # sent_id = 1
 # text = Geografie
-1	Geografie	geografie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Geografie	geografie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -7245,7 +7198,7 @@
 # newpar
 # sent_id = 1
 # text = Vodstvo
-1	Vodstvo	vodstvo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Vodstvo	vodstvo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -7542,7 +7495,7 @@
 # newpar
 # sent_id = 1
 # text = Podnebí
-1	Podnebí	podnebí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Podnebí	podnebí	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -7756,7 +7709,7 @@
 # newpar
 # sent_id = 1
 # text = Města
-1	Města	město	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Města	město	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -8127,7 +8080,7 @@
 # newpar
 # sent_id = 1
 # text = Ekonomika
-1	Ekonomika	ekonomika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Ekonomika	ekonomika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -8137,7 +8090,7 @@
 # sent_id = 1
 # text = Národohospodářský přehled
 1	Národohospodářský	národohospodářský	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	2	amod	_	_
-2	přehled	přehled	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	přehled	přehled	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -8948,7 +8901,7 @@
 # sent_id = 1
 # text = Statistické údaje
 1	Statistické	statistický	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
-2	údaje	údaj	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	údaje	údaj	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -8971,7 +8924,7 @@
 # sent_id = 1
 # text = Surovinové zdroje
 1	Surovinové	surovinový	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
-2	zdroje	zdroj	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	zdroje	zdroj	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9742,7 +9695,7 @@
 # newpar
 # sent_id = 1
 # text = Energetika
-1	Energetika	energetika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Energetika	energetika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9887,7 +9840,7 @@
 # sent_id = 1
 # text = Žebříček firem
 1	Žebříček	žebříček	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	_
-2	firem	firma	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	1	nmod	_	SpacesAfter=\n
+2	firem	firma	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -9919,7 +9872,7 @@
 # newpar
 # sent_id = 1
 # text = Doprava
-1	Doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Doprava	doprava	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -10389,7 +10342,7 @@
 # text = Věda a technika
 1	Věda	věda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
-3	technika	technika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	SpacesAfter=\n
+3	technika	technika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -10991,7 +10944,7 @@
 # newpar
 # sent_id = 1
 # text = Kosmonautika
-1	Kosmonautika	kosmonautika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Kosmonautika	kosmonautika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -11423,7 +11376,7 @@
 # newpar
 # sent_id = 1
 # text = Obyvatelstvo
-1	Obyvatelstvo	obyvatelstvo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Obyvatelstvo	obyvatelstvo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12230,7 +12183,7 @@
 # newpar
 # sent_id = 1
 # text = Jazyky
-1	Jazyky	jazyk	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Jazyky	jazyk	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12362,7 +12315,7 @@
 # newpar
 # sent_id = 1
 # text = Náboženství
-1	Náboženství	náboženství	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Náboženství	náboženství	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12730,7 +12683,7 @@
 # newpar
 # sent_id = 1
 # text = Vzdělání
-1	Vzdělání	vzdělání	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Vzdělání	vzdělání	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -12994,7 +12947,7 @@
 # newpar
 # sent_id = 1
 # text = Kultura
-1	Kultura	kultura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Kultura	kultura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -13093,7 +13046,7 @@
 # newpar
 # sent_id = 1
 # text = Literatura
-1	Literatura	literatura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Literatura	literatura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -13410,7 +13363,7 @@
 # newpar
 # sent_id = 1
 # text = Hudba
-1	Hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -13422,7 +13375,7 @@
 1	Lidová	lidový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	4	amod	_	_
 2	a	a	CCONJ	J^-------------	_	3	cc	_	_
 3	církevní	církevní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	_
-4	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+4	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -13599,7 +13552,7 @@
 # sent_id = 1
 # text = Klasická hudba
 1	Klasická	klasický	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
-2	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14213,7 +14166,7 @@
 # sent_id = 1
 # text = Populární hudba
 1	Populární	populární	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
-2	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	hudba	hudba	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14369,7 +14322,128 @@
 # sent_id = 1
 # text = Výtvarné umění
 1	Výtvarné	výtvarný	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	umění	umění	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	umění	umění	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = czech-pdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = První ruské malby se dochovaly v ikonách a pestrých freskách z 10. století.
+1	První	první	ADJ	CrFP1----------	Case=Nom|Gender=Fem|Number=Plur|NumType=Ord	3	amod	_	SpacesBefore=\n
+2	ruské	ruský	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	3	amod	_	_
+3	malby	malba	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	5	nsubj	_	_
+4	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	5	expl:pv	_	_
+5	dochovaly	dochovat	VERB	VpTP---XR-AA---	Animacy=Inan|Aspect=Perf|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	7	case	_	_
+7	ikonách	ikona	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	5	obl	_	_
+8	a	a	CCONJ	J^-------------	_	10	cc	_	_
+9	pestrých	pestrý	ADJ	AAFP6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	10	amod	_	_
+10	freskách	freska	NOUN	NNFP6-----A----	Case=Loc|Gender=Fem|Number=Plur|Polarity=Pos	7	conj	_	_
+11	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	14	case	_	_
+12	10	10	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
+13	.	.	PUNCT	Z:-------------	_	12	punct	_	_
+14	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	10	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Z:-------------	_	5	punct	_	_
+
+# sent_id = 2
+# text = Carská akademie umění vznikla v roce 1757.
+1	Carská	carský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
+2	akademie	akademie	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	4	nsubj	_	_
+3	umění	umění	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	2	nmod	_	_
+4	vznikla	vzniknout	VERB	VpQW---XR-AA--1	Aspect=Perf|Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	6	case	_	SpacesAfter= 
+6	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	4	obl	_	_
+7	1757	1757	NUM	C=-------------	NumForm=Digit|NumType=Card	6	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 3
+# text = Díky umělecké společnosti Peredvižnici se v Rusku zpopularizoval realismus, který dominoval konci 19. století.
+1	Díky	díky	ADP	RR--3----------	AdpType=Prep|Case=Dat	3	case	_	_
+2	umělecké	umělecký	ADJ	AAFS3----1A----	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
+3	společnosti	společnost	NOUN	NNFS3-----A----	Case=Dat|Gender=Fem|Number=Sing|Polarity=Pos	8	obl	_	_
+4	Peredvižnici	Peredvižnice	PROPN	NNFS3-----A----	Case=Dat|Gender=Fem|Number=Sing|Polarity=Pos	3	nmod	_	_
+5	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	8	expl:pv	_	_
+6	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	7	case	_	_
+7	Rusku	Rusko	PROPN	NNNS6-----A----	Case=Loc|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	8	obl	_	_
+8	zpopularizoval	zpopularizovat	VERB	VpYS---XR-AA---	Aspect=Perf|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	realismus	realismus	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Z:-------------	_	12	punct	_	_
+11	který	který	DET	P4YS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	12	nsubj	_	_
+12	dominoval	dominovat	VERB	VpYS---XR-AA---	Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	9	acl:relcl	_	_
+13	konci	konec	NOUN	NNIS3-----A----	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing|Polarity=Pos	12	obl:arg	_	_
+14	19	19	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	SpaceAfter=No
+15	.	.	PUNCT	Z:-------------	_	14	punct	_	_
+16	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Z:-------------	_	8	punct	_	_
+
+# sent_id = 4
+# text = Zlomová Ruská avantgarda převládala zhruba do konce třicátých let dvacátého století.
+1	Zlomová	zlomový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
+2	Ruská	ruský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
+3	avantgarda	avantgarda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	4	nsubj	_	_
+4	převládala	převládat	VERB	VpQW---XR-AA---	Aspect=Imp|Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	zhruba	zhruba	ADV	Db-------------	_	7	advmod:emph	_	_
+6	do	do	ADP	RR--2----------	AdpType=Prep|Case=Gen	7	case	_	_
+7	konce	konec	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	4	obl	_	_
+8	třicátých	třicátý	ADJ	CrNP2----------	Case=Gen|Gender=Neut|Number=Plur|NumType=Ord	9	amod	_	_
+9	let	rok	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	7	nmod	_	_
+10	dvacátého	dvacátý	ADJ	CrNS2----------	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord	11	amod	_	_
+11	století	století	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 5
+# text = Po říjnové revoluci musela postupně většina výtvarného umění sloužit diktatuře proletariátu, většinou to byla díla velmi vlastenecká a propagandistická, od omezení co umělci mohli malovat se začalo upouštět na konci 80. let.
+1	Po	po	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
+2	říjnové	říjnový	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
+3	revoluci	revoluce	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	4	obl	_	_
+4	musela	muset	VERB	VpQW---XR-AA---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	postupně	postupně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	4	advmod	_	_
+6	většina	většina	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	4	nsubj	_	_
+7	výtvarného	výtvarný	ADJ	AANS2----1A----	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	8	amod	_	_
+8	umění	umění	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	6	nmod	_	_
+9	sloužit	sloužit	VERB	Vf--------A----	Aspect=Imp|Polarity=Pos|VerbForm=Inf	4	xcomp	_	_
+10	diktatuře	diktatura	NOUN	NNFS3-----A----	Case=Dat|Gender=Fem|Number=Sing|Polarity=Pos	9	obl:arg	_	_
+11	proletariátu	proletariát	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	10	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	Z:-------------	_	16	punct	_	_
+13	většinou	většinou	ADV	Db-------------	_	16	advmod	_	_
+14	to	ten	DET	PDNS1----------	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	16	nsubj	_	_
+15	byla	být	AUX	VpQW---XR-AA---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	16	cop	_	_
+16	díla	dílo	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	4	conj	_	_
+17	velmi	velmi	ADV	Db-------------	_	18	advmod	_	_
+18	vlastenecká	vlastenecký	ADJ	AANP1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	16	amod	_	_
+19	a	a	CCONJ	J^-------------	_	20	cc	_	_
+20	propagandistická	propagandistický	ADJ	AANP1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	18	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Z:-------------	_	29	punct	_	_
+22	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	23	case	_	_
+23	omezení	omezení	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	30	obl:arg	_	_
+24	co	co	PRON	PQ--4----------	Animacy=Inan|Case=Acc|PronType=Int,Rel	27	obj	_	_
+25	umělci	umělec	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	26	nsubj	_	_
+26	mohli	moci	VERB	VpMP---XR-AA---	Animacy=Anim|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	23	acl:relcl	_	_
+27	malovat	malovat	VERB	Vf--------A----	Aspect=Imp|Polarity=Pos|VerbForm=Inf	26	xcomp	_	_
+28	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	29	expl:pass	_	_
+29	začalo	začít	VERB	VpNS---XR-AA---	Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	16	conj	_	_
+30	upouštět	upouštět	VERB	Vf--------A----	Aspect=Imp|Polarity=Pos|VerbForm=Inf	29	xcomp	_	_
+31	na	na	ADP	RR--6----------	AdpType=Prep|Case=Loc	32	case	_	_
+32	konci	konec	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	30	obl	_	_
+33	80	80	NUM	C=-------------	NumForm=Digit|NumType=Card	35	nummod	_	SpaceAfter=No
+34	.	.	PUNCT	Z:-------------	_	33	punct	_	_
+35	let	rok	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	32	nmod	_	SpaceAfter=No
+36	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ermitáž v Petrohradu spravuje největší sbírku obrazů na světě.
+1	Ermitáž	ermitáž	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	4	nsubj	_	_
+2	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
+3	Petrohradu	Petrohrad	PROPN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
+4	spravuje	spravovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	největší	velký	ADJ	AAFS4----3A----	Case=Acc|Degree=Sup|Gender=Fem|Number=Sing|Polarity=Pos	6	amod	_	_
+6	sbírku	sbírka	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	4	obj	_	_
+7	obrazů	obraz	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	6	nmod	_	_
+8	na	na	ADP	RR--6----------	AdpType=Prep|Case=Loc	9	case	_	_
+9	světě	svět	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -14490,7 +14564,7 @@
 # newpar
 # sent_id = 1
 # text = Architektura
-1	Architektura	architektura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Architektura	architektura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15138,7 +15212,7 @@
 # newpar
 # sent_id = 1
 # text = Kuchyně
-1	Kuchyně	kuchyně	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Kuchyně	kuchyně	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15219,7 +15293,7 @@
 # newpar
 # sent_id = 1
 # text = Film
-1	Film	film	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Film	film	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -15527,7 +15601,7 @@
 # newpar
 # sent_id = 1
 # text = Sport
-1	Sport	sport	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Sport	sport	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -16851,7 +16925,7 @@
 # newpar
 # sent_id = 1
 # text = Turistika
-1	Turistika	turistika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Turistika	turistika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -16874,14 +16948,14 @@
 12	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
 # sent_id = 2
-# text = V roce 2013 Rusko navštívilo 28.4 milionů turistů, je to devátý nejnavštěvovanější stát na světě a sedmý nejnavštěvovanější v Evropě.
+# text = V roce 2013 Rusko navštívilo 28.4 milionu turistů, je to devátý nejnavštěvovanější stát na světě a sedmý nejnavštěvovanější v Evropě.
 1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	2	case	_	_
 2	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	5	obl	_	_
 3	2013	2013	NUM	C=-------------	NumForm=Digit|NumType=Card	2	nummod	_	_
 4	Rusko	Rusko	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	5	nsubj	_	_
 5	navštívilo	navštívit	VERB	VpNS---XR-AA---	Aspect=Perf|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 6	28.4	28.4	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod:gov	_	_
-7	milionů	milión	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	5	obj	_	_
+7	milionu	milión	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	5	obj	_	_
 8	turistů	turista	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	7	nmod	_	SpaceAfter=No
 9	,	,	PUNCT	Z:-------------	_	14	punct	_	_
 10	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
@@ -17106,7 +17180,7 @@
 # newpar
 # sent_id = 1
 # text = Odkazy
-1	Odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17115,7 +17189,7 @@
 # newpar
 # sent_id = 1
 # text = Poznámky
-1	Poznámky	poznámka	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Poznámky	poznámka	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17124,7 +17198,7 @@
 # newpar
 # sent_id = 1
 # text = Reference
-1	Reference	reference	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Reference	reference	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17133,7 +17207,7 @@
 # newpar
 # sent_id = 1
 # text = Literatura
-1	Literatura	literatura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
+1	Literatura	literatura	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17143,7 +17217,7 @@
 # sent_id = 1
 # text = Související články
 1	Související	související	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	2	amod	_	_
-2	články	článek	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	články	článek	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -17153,58 +17227,5 @@
 # sent_id = 1
 # text = Externí odkazy
 1	Externí	externí	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
-2	odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Abcházie Abcházie •
-1	Abcházie	Abcházie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
-2	Abcházie	Abcházie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	dep	_	_
-3	•	•	PUNCT	Z:-------------	_	1	punct	_	_
-
-# sent_id = 2
-# text = Arcach Arcach •
-1	Arcach	Arcach	PROPN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|NameType=Com|Number=Sing|Polarity=Pos	0	root	_	_
-2	Arcach	Arcach	PROPN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
-3	•	•	PUNCT	Z:-------------	_	1	punct	_	_
-
-# sent_id = 3
-# text = Jižní Osetie Jižní Osetie •
-1	Jižní	jižní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
-2	Osetie	Osetie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
-3	Jižní	jižní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	4	amod	_	_
-4	Osetie	Osetie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	2	dep	_	_
-5	•	•	PUNCT	Z:-------------	_	2	punct	_	_
-
-# sent_id = 4
-# text = Podněstří Podněstří •
-1	Podněstří	Podněstří	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	0	root	_	_
-2	Podněstří	Podněstří	PROPN	NNNS1-----A----	Case=Nom|Gender=Neut|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
-3	•	•	PUNCT	Z:-------------	_	1	punct	_	_
-
-# sent_id = 5
-# text = DLR DLR •
-1	DLR	DLR	PROPN	NNXXX-----A---8	Abbr=Yes|Gender=Fem|NameType=Geo|Polarity=Pos	0	root	_	_
-2	DLR	DLR	PROPN	NNXXX-----A---8	Abbr=Yes|Gender=Fem|NameType=Geo|Polarity=Pos	1	nmod	_	_
-3	•	•	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\s\s
-
-# sent_id = 6
-# text = Luhanská lidová republika
-1	Luhanská	luhanský	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
-2	lidová	lidový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
-3	republika	republika	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = czech-pdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigační menu
-1	Navigační	navigační	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	2	amod	_	_
-2	menu	menu	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	0	root	_	SpacesAfter=\n
+2	odkazy	odkaz	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
 

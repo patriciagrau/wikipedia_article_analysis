@@ -1,5 +1,3 @@
-# https://ar.wikipedia.org/wiki/%D8%A2%D8%B3%D9%8A%D8%A7
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = آسيا - ويكيبيديا
 1	آسيا	آسِيَا	X	X---------	Foreign=Yes	0	root	_	_
 2	-	-	PUNCT	G---------	_	3	punct	_	_
-3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = آسيا
-1	آسيا	آسِيَا	X	X---------	Foreign=Yes	0	root	_	SpacesAfter=\n
+3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -304,12 +293,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = أصل الكلمة[عدل]
+# text = أصل الكلمة
 1	أصل	أَصل	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الكلمة	كَلِمَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -317,12 +303,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = جاءت التسمية من اللغة الأكادية(لغة قديمة في العراق )من لفظ «أسو/Assu» ويعني «مشرق"
+# text = جاءت التسمية من اللغة الأكادية(لغة قديمة في العراق )من لفظ «أسو/Assu» ويعني «مشرق" في حين البعض يرجعها إلى أصل يوناني، من كلمة "Ἀσία" اليونانية القديمة، بمعنى «شرق» (أو «شروق الشمس» في حال تسمية الإناث)، استعملها هيرودوت (سنة 440 قبل الميلاد) في إشارة للأناضول.
 1	جاءت	جَاء	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	التسمية	تَسمِيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
 3	من	مِن	ADP	P---------	AdpType=Prep	4	case	_	_
 4	اللغة	لُغَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
-5	الأكادية	الأكادية	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
+5	الأكادية	الأكادية	X	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
 6	(	(	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
 7	لغة	لُغَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	appos	_	_
 8	قديمة	قَدِيم	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	7	amod	_	_
@@ -330,18 +316,68 @@
 10	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
 11	)	)	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
 12	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
-13	لفظ	لَفَظ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+13	لفظ	لَفَظ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
 14	«	«	PUNCT	G---------	_	15	punct	_	SpaceAfter=No
 15	أسو	أسو	X	U---------	_	13	nmod	_	SpaceAfter=No
 16	/	/	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
 17	Assu	assu	X	U---------	_	15	nmod	_	SpaceAfter=No
-18	»	»	PUNCT	G---------	_	15	punct	_	_
+18	»	»	PUNCT	G---------	_	7	punct	_	_
 19-20	ويعني	_	_	_	_	_	_	_	_
 19	و	وَ	CCONJ	C---------	_	20	cc	_	_
-20	يعني	عَنَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+20	يعني	عَنَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	13	conj	_	_
 21	«	«	PUNCT	G---------	_	22	punct	_	SpaceAfter=No
-22	مشرق	مشرق	NOUN	U---------	Case=Acc|Definite=Cons|Number=Sing	20	obj	_	SpaceAfter=No
+22	مشرق	مشرق	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	SpaceAfter=No
 23	"	"	PUNCT	G---------	_	22	punct	_	SpacesAfter=\n
+24	في	فِي	ADP	P---------	AdpType=Prep	26	case	_	_
+25	حين	حِين	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	24	fixed	_	_
+26	البعض	بَعض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	27	obl	_	_
+27-28	يرجعها	_	_	_	_	_	_	_	_
+27	يرجع	أَرجَع	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+28	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	27	obj	_	_
+29	إلى	إِلَى	ADP	P---------	AdpType=Prep	30	case	_	_
+30	أصل	أَصل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	27	obl:arg	_	_
+31	يوناني	يُونَانِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	30	amod	_	SpaceAfter=No
+32	،	،	PUNCT	G---------	_	31	punct	_	_
+33	من	مِن	ADP	P---------	AdpType=Prep	34	case	_	_
+34	كلمة	كَلِمَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	30	nmod	_	_
+35	"	"	PUNCT	G---------	_	36	punct	_	SpaceAfter=No
+36	Ἀσία	ἀσία	X	U---------	_	34	nmod	_	SpaceAfter=No
+37	"	"	PUNCT	G---------	_	36	punct	_	_
+38	اليونانية	يُونَانِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	34	amod	_	_
+39	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	34	amod	_	SpaceAfter=No
+40	،	،	PUNCT	G---------	_	39	punct	_	_
+41-42	بمعنى	_	_	_	_	_	_	_	_
+41	ب	بِ	ADP	P---------	AdpType=Prep	42	case	_	_
+42	معنى	مَعنَى	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	obl	_	_
+43	«	«	PUNCT	G---------	_	44	punct	_	SpaceAfter=No
+44	شرق	شَرق	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	42	nmod	_	SpaceAfter=No
+45	»	»	PUNCT	G---------	_	44	punct	_	_
+46	(	(	PUNCT	G---------	_	49	punct	_	SpaceAfter=No
+47	أو	أَو	CCONJ	C---------	_	49	cc	_	_
+48	«	«	PUNCT	G---------	_	49	punct	_	SpaceAfter=No
+49	شروق	شَرق	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	44	conj	_	_
+50	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	49	nmod	_	SpaceAfter=No
+51	»	»	PUNCT	G---------	_	49	punct	_	_
+52	في	فِي	ADP	P---------	AdpType=Prep	53	case	_	_
+53	حال	حَال	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	42	nmod	_	_
+54	تسمية	تَسمِيَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	53	nmod	_	_
+55	الإناث	أُنثَى	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	54	nmod	_	SpaceAfter=No
+56	)	)	PUNCT	G---------	_	49	punct	_	SpaceAfter=No
+57	،	،	PUNCT	G---------	_	58	punct	_	_
+58-59	استعملها	_	_	_	_	_	_	_	_
+58	استعمل	اِستَعمَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+59	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	58	obj	_	_
+60	هيرودوت	هيرودوت	X	U---------	_	58	nsubj	_	_
+61	(	(	PUNCT	G---------	_	62	punct	_	SpaceAfter=No
+62	سنة	سَنَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	60	nmod	_	_
+63	440	440	NUM	Q---------	NumForm=Digit	62	nummod	_	_
+64	قبل	قَبلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	65	case	_	_
+65	الميلاد	مِيلَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	63	nmod	_	SpaceAfter=No
+66	)	)	PUNCT	G---------	_	62	punct	_	_
+67	في	فِي	ADP	P---------	AdpType=Prep	68	case	_	_
+68	إشارة	إِشَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	58	obl	_	_
+69	للأناضول	للأناضول	NOUN	N------P2D	_	68	nmod	_	SpaceAfter=No
+70	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -349,16 +385,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = تعريفها وحدودها[عدل]
+# text = تعريفها وحدودها
 1-2	تعريفها	_	_	_	_	_	_	_	_
-1	تعريف	تَعرِيف	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	6	nsubj	_	_
+1	تعريف	تَعرِيف	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nmod	_	_
 3-4	وحدودها	_	_	_	_	_	_	_	SpaceAfter=No
 3	وحدود	وَحدُود	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nmod	_	_
 4	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -366,12 +399,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الجغرافيا الطبيعية[عدل]
+# text = الجغرافيا الطبيعية
 1	الجغرافيا	جُغْرافِيا	X	U---------	_	0	root	_	_
 2	الطبيعية	طَبِيعِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1184,14 +1214,120 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الدول والسكان[عدل]
+# text = الدول والسكان
 1	الدول	دَولَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2-3	والسكان	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	السكان	سَاكِن	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	conj	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = يوجد في آسيا 48 دولة معترف بها بالإضافة إلى 4 كيانات شبه مستقله ويبلغ عدد سكان آسيا ما يقارب الأربع مليارات نسمة، وتقسم آسيا من قبل وكالة الإحصاء التابعة للأمم المتحدة UNSD إلى 6 أجزاء إصطلاحية بحيث تسمى كل مجموعة دول تحت مصلطح معين بناء على موقعها من القارة.
+1	يوجد	وَجَد	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	SpacesBefore=\s
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	آسيا	آسِيَا	X	X---------	Foreign=Yes	1	obl	_	_
+4	48	48	NUM	Q---------	NumForm=Digit	1	nsubj:pass	_	_
+5	دولة	دَولَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	nmod	_	_
+6	معترف	مُعتَرَف	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	amod	_	_
+7-8	بها	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+8	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	obl:arg	_	_
+9-10	بالإضافة	_	_	_	_	_	_	_	_
+9	ب	بِ	ADP	P---------	AdpType=Prep	12	case	_	_
+10	الإضافة	إِضَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	fixed	_	_
+11	إلى	إِلَى	ADP	P---------	AdpType=Prep	9	fixed	_	_
+12	4	4	NUM	Q---------	NumForm=Digit	1	obl	_	_
+13	كيانات	كِيَان	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	12	nmod	_	_
+14	شبه	شِبه	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	nmod	_	_
+15-16	مستقله	_	_	_	_	_	_	_	_
+15	مستقل	مُستَقِلّ	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	14	amod	_	_
+16	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nmod	_	_
+17-18	ويبلغ	_	_	_	_	_	_	_	_
+17	و	وَ	CCONJ	C---------	_	18	cc	_	_
+18	يبلغ	بَلَغ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+19	عدد	عَدَد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	18	nsubj	_	_
+20	سكان	سَاكِن	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	19	nmod	_	_
+21	آسيا	آسِيَا	X	X---------	Foreign=Yes	20	nmod	_	_
+22	ما	مَا	DET	S---------	_	18	obj	_	_
+23	يقارب	قَارَب	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	acl	_	_
+24	الأربع	أَربَعَة	NUM	QX----M-4R	Case=Acc|Definite=Cons|Gender=Masc|NumForm=Word	23	obj	_	_
+25	مليارات	مِليَار	NUM	QM-----P2R	Case=Gen|Definite=Cons|Number=Plur|NumForm=Word	24	nummod	_	_
+26	نسمة	نَسَمَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	25	nmod	_	SpaceAfter=No
+27	،	،	PUNCT	G---------	_	26	punct	_	_
+28	وتقسم	وتقسم	VERB	U---------	_	1	conj	_	_
+29	آسيا	آسِيَا	X	X---------	Foreign=Yes	28	nsubj	_	_
+30	من	مِن	ADP	P---------	AdpType=Prep	32	case	_	_
+31	قبل	قِبَل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	30	fixed	_	_
+32	وكالة	وِكَالَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	28	obl	_	_
+33	الإحصاء	إِحصَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	_
+34	التابعة	تَابِع	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	32	amod	_	_
+35-36	للأمم	_	_	_	_	_	_	_	_
+35	ل	لِ	ADP	P---------	AdpType=Prep	36	case	_	_
+36	الأمم	أُمَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	34	obl:arg	_	_
+37	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	_
+38	UNSD	unsd	X	U---------	_	28	obj	_	_
+39	إلى	إِلَى	ADP	P---------	AdpType=Prep	40	case	_	_
+40	6	6	NUM	Q---------	NumForm=Digit	28	obl:arg	_	_
+41	أجزاء	جُزء	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	40	nmod	_	_
+42	إصطلاحية	إِصطلَاحِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	41	amod	_	_
+43-44	بحيث	_	_	_	_	_	_	_	_
+43	ب	بِ	ADP	P---------	AdpType=Prep	45	mark	_	_
+44	حيث	حَيثُ	CCONJ	C---------	_	45	mark	_	_
+45	تسمى	سَمَّى	VERB	VIIP-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	28	advcl	_	_
+46	كل	كُلّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	45	nsubj:pass	_	_
+47	مجموعة	مَجمُوعَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	46	nmod	_	_
+48	دول	دَولَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	47	nmod	_	_
+49	تحت	تَحتَ	ADP	PI------4-	AdpType=Prep|Case=Acc	50	case	_	_
+50	مصلطح	مصلطح	X	N------S2I	Case=Gen|Definite=Ind|Number=Sing	45	obl	_	_
+51	معين	مُعَيَّن	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	50	amod	_	_
+52	بناء	بِنَاء	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	54	nmod	_	_
+53	على	عَلَى	ADP	P---------	AdpType=Prep	52	fixed	_	_
+54-55	موقعها	_	_	_	_	_	_	_	_
+54	موقع	مَوقِع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	45	obl	_	_
+55	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	54	nmod	_	_
+56	من	مِن	ADP	P---------	AdpType=Prep	57	case	_	_
+57	القارة	قَارَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	54	nmod	_	SpaceAfter=No
+58	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = هذا التقسيم لآسيا إلى مناطق من قبل الأمم المتحدة يتم فقط لأسباب إحصائية ولا يعني أي افتراضات حول الانتماءات السياسية أو الثقافية للبلدان والأقاليم.
+1	هذا	هٰذَا	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	التقسيم	تَقسِيم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	11	nsubj	_	_
+3-4	لآسيا	_	_	_	_	_	_	_	_
+3	ل	لِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	آسيا	آسِيَا	X	X---------	Foreign=Yes	2	nmod	_	_
+5	إلى	إِلَى	ADP	P---------	AdpType=Prep	6	case	_	_
+6	مناطق	مِنطَقَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	2	nmod	_	_
+7	من	مِن	ADP	P---------	AdpType=Prep	9	case	_	_
+8	قبل	قِبَل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	fixed	_	_
+9	الأمم	أُمَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	nmod	_	_
+10	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	9	amod	_	_
+11	يتم	تَمّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+12	فقط	فَقَط	ADV	D---------	_	14	advmod:emph	_	_
+13-14	لأسباب	_	_	_	_	_	_	_	_
+13	ل	لِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	أسباب	سَبَب	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	11	obl	_	_
+15	إحصائية	إِحصَائِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	14	amod	_	_
+16-17	ولا	_	_	_	_	_	_	_	_
+16	و	وَ	CCONJ	C---------	_	18	cc	_	_
+17	لا	لَا	PART	F---------	_	18	advmod	_	_
+18	يعني	عَنَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	conj	_	_
+19	أي	أَيّ	ADJ	A-----MS4R	Case=Acc|Definite=Cons|Gender=Masc|Number=Sing	18	obj	_	_
+20	افتراضات	اِفتِرَاض	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	19	nmod	_	_
+21	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	22	case	_	_
+22	الانتماءات	اِنتِمَاء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	20	nmod	_	_
+23	السياسية	سِيَاسِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	22	amod	_	_
+24	أو	أَو	CCONJ	C---------	_	25	cc	_	_
+25	الثقافية	ثَقَافِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	conj	_	_
+26-27	للبلدان	_	_	_	_	_	_	_	_
+26	ل	لِ	ADP	P---------	AdpType=Prep	27	case	_	_
+27	البلدان	بَلَد	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	22	nmod	_	_
+28	والأقاليم	والأقاليم	X	U---------	_	27	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	G---------	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1216,7 +1352,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = :ملاحظة : يقع جزء من مصر (شبه جزيرة سيناء) جغرافيًا في غرب آسيا، ومساحتها 60,088 كم2 ، عدد سكان سيناء كاملة يبلغ حوالي 1.400.000 نسمة، تنقسم شبه جزيرة سيناء إلى محافظتين هما:-
+# text = :ملاحظة : يقع جزء من مصر (شبه جزيرة سيناء) جغرافيًا في غرب آسيا، ومساحتها 60,088 كم2 ، عدد سكان سيناء كاملة يبلغ حوالي 1.400.000 نسمة، تنقسم شبه جزيرة سيناء إلى محافظتين هما:- شمال سيناء وعاصمتها العريش.
 1	:	:	PUNCT	G---------	_	2	punct	_	SpaceAfter=No
 2	ملاحظة	مُلَاحِظَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpacesAfter= 
 3	:	:	PUNCT	G---------	_	2	punct	_	_
@@ -1257,8 +1393,25 @@
 37	إلى	إِلَى	ADP	P---------	AdpType=Prep	38	case	_	_
 38	محافظتين	مُحَافِظَة	NOUN	N------D2I	Case=Gen|Definite=Ind|Number=Dual	33	obl:arg	_	_
 39	هما	هُوَ	PRON	SP---3MD2-	Case=Gen|Gender=Masc|Number=Dual|Person=3|PronType=Prs	38	nmod	_	SpaceAfter=No
-40	:	:	PUNCT	G---------	_	2	punct	_	SpaceAfter=No
-41	-	-	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
+40	:	:	PUNCT	G---------	_	38	punct	_	SpaceAfter=No
+41	-	-	PUNCT	G---------	_	42	punct	_	SpacesAfter=\n
+42	شمال	شَمَال	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	38	appos	_	_
+43	سيناء	سِينَاء	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	42	nmod	_	_
+44-45	وعاصمتها	_	_	_	_	_	_	_	_
+44	وعاصمة	وُعَاصَمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	42	nsubj	_	_
+45	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	44	nmod	_	_
+46	العريش	عَرِيش	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	44	nmod	_	SpaceAfter=No
+47	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = جنوب سيناء وعاصمتها الطور.
+1	جنوب	جَنُوب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+2	سيناء	سِينَاء	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	1	nmod	_	_
+3-4	وعاصمتها	_	_	_	_	_	_	_	_
+3	وعاصمة	وُعَاصَمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nmod	_	_
+4	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
+5	الطور	طَور	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	3	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1266,11 +1419,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاقتصاد[عدل]
+# text = الاقتصاد
 1	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2050,12 +2200,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التكتلات التجارية[عدل]
+# text = التكتلات التجارية
 1	التكتلات	تَكَتُّل	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	التجارية	تِجَارِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2063,12 +2210,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الموارد الطبيعية[عدل]
+# text = الموارد الطبيعية
 1	الموارد	مَورِد	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	الطبيعية	طَبِيعِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2117,13 +2261,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الصناعة في آسيا[عدل]
+# text = الصناعة في آسيا
 1	الصناعة	صِنَاعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
 3	آسيا	آسِيَا	X	X---------	Foreign=Yes	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2251,15 +2392,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التمويل والخدمات الأخرى[عدل]
+# text = التمويل والخدمات الأخرى
 1	التمويل	تَموِيل	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2-3	والخدمات	_	_	_	_	_	_	_	_
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	الخدمات	خِدمَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	conj	_	_
 4	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2368,14 +2506,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التاريخ البدائي[عدل]
+# text = التاريخ البدائي
 1	التاريخ	تَارِيخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2-3	البدائي	_	_	_	_	_	_	_	SpaceAfter=No
-2	البداء	بَدَّاء	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	amod	_	_
-3	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nmod	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
+2	البداء	بَدَّاء	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	_
+3	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nmod	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2841,14 +2976,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = اللغات والأدب[عدل]
+# text = اللغات والأدب
 1	اللغات	لُغَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2-3	والأدب	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	الأدب	أَدَب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2960,12 +3092,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = جوائز نوبل[عدل]
+# text = جوائز نوبل
 1	جوائز	جَائِزَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
-2	نوبل	نوبل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+2	نوبل	نوبل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3409,6 +3538,130 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = ويتضمن الآسيوين الآخرين الذين حصلوا على جائزة نوبل كلًا من صبرهمانيان شاندراسيخار، ومحمد عبد السلام، وشموئيل يوسف عجنون، و
+1-2	ويتضمن	_	_	_	_	_	_	_	SpacesBefore=\n
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	يتضمن	تَضَمَّن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+3	الآسيوين	آسِيَوِيّ	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	2	nsubj	_	_
+4	الآخرين	آخَر	ADJ	A-----MP1D	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	3	amod	_	_
+5	الذين	اَلَّذِي	DET	SR----MP1-	Case=Nom|Gender=Masc|Number=Plur|PronType=Rel	6	nsubj	_	_
+6	حصلوا	حَصَل	VERB	VP-A-3MP--	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|Voice=Act	3	acl:relcl	_	_
+7	على	عَلَى	ADP	P---------	AdpType=Prep	8	case	_	_
+8	جائزة	جَائِزَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl:arg	_	_
+9	نوبل	نُوبِل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	8	nmod	_	_
+10	كلًا	كلًُّ	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+11	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
+12	صبرهمانيان	صبرهمانيان	X	U---------	_	13	nmod	_	_
+13	شاندراسيخار	شاندراسيخار	X	U---------	_	10	nmod	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15-16	ومحمد	_	_	_	_	_	_	_	_
+15	و	وَ	CCONJ	C---------	_	17	cc	_	_
+16	محمد	مُحَمَّد	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	17	nmod	_	_
+17	عبد	عبد	X	U---------	_	13	conj	_	_
+18	السلام	السلام	X	U---------	_	17	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	18	punct	_	_
+20	وشموئيل	وشموئيل	X	U---------	_	22	nmod	_	_
+21	يوسف	يوسف	X	U---------	_	22	nmod	_	_
+22	عجنون	عجنون	X	U---------	_	13	conj	_	SpaceAfter=No
+23	،	،	PUNCT	G---------	_	22	punct	_	_
+24	و	وَ	CCONJ	C---------	_	22	cc	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = ، ومناحيم بيغن، وسيشانوفر، وأفرام هيرشكو، ودانييل كاهنمان، وشيمون بيريز، وإسحاق رابين، وياسر عرفات، وخوزيه راموس هورتا والأسقف كارلوس فيليب اكسيمنس بيلو من تيمور الشرقية، وكيم داى جونغ، وثلاثة عشر من العلماء اليابانيين معظم الفائزين بجائزة نوبل من اليابان وإسرائيل فيما عدا سوزوكي ورامان (الهند)، وسلام فياض (باكستان)، وعرفات (الأراضي الفلسطينية) وكيم (كوريا الجنوبية).
+1	،	،	PUNCT	G---------	_	3	punct	_	_
+2	ومناحيم	ومناحيم	X	U---------	_	3	nmod	_	_
+3	بيغن	بيغن	X	X---------	Foreign=Yes	0	root	_	SpaceAfter=No
+4	،	،	PUNCT	G---------	_	3	punct	_	_
+5	وسيشانوفر	وسيشانوفر	X	U---------	_	3	conj	_	SpaceAfter=No
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7	وأفرام	وأفرام	X	U---------	_	8	nmod	_	_
+8	هيرشكو	هيرشكو	X	U---------	_	3	conj	_	SpaceAfter=No
+9	،	،	PUNCT	G---------	_	8	punct	_	_
+10	ودانييل	ودانييل	X	U---------	_	11	nmod	_	_
+11	كاهنمان	كاهنمان	X	U---------	_	3	conj	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	8	punct	_	_
+13	وشيمون	وشيمون	X	U---------	_	14	nmod	_	_
+14	بيريز	بِيرِيز	X	X---------	Foreign=Yes	3	conj	_	SpaceAfter=No
+15	،	،	PUNCT	G---------	_	14	punct	_	_
+16	وإسحاق	وإسحاق	X	U---------	_	17	nmod	_	_
+17	رابين	رَابِين	X	X---------	Foreign=Yes	3	conj	_	SpaceAfter=No
+18	،	،	PUNCT	G---------	_	17	punct	_	_
+19-20	وياسر	_	_	_	_	_	_	_	_
+19	و	وَ	CCONJ	C---------	_	21	cc	_	_
+20	ياسر	يَاسِر	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	21	nmod	_	_
+21	عرفات	عرفات	X	U---------	_	3	conj	_	SpaceAfter=No
+22	،	،	PUNCT	G---------	_	21	punct	_	_
+23	وخوزيه	وخوزيه	X	U---------	_	25	nmod	_	_
+24	راموس	راموس	X	X---------	Foreign=Yes	25	nmod	_	_
+25	هورتا	هُورتا	X	X---------	Foreign=Yes	3	conj	_	_
+26	والأسقف	والأسقف	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	25	nmod	_	_
+27	كارلوس	كَارلُوس	X	X---------	Foreign=Yes	26	nmod	_	_
+28	فيليب	فِيلِيب	X	X---------	Foreign=Yes	27	flat:foreign	_	_
+29	اكسيمنس	اكسيمنس	X	X---------	Foreign=Yes	27	flat:foreign	_	_
+30	بيلو	بِيلُو	X	X---------	Foreign=Yes	27	flat:foreign	_	_
+31	من	مِن	ADP	P---------	AdpType=Prep	32	case	_	_
+32	تيمور	تيمور	X	U---------	_	26	nmod	_	_
+33	الشرقية	شَرقِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No
+34	،	،	PUNCT	G---------	_	33	punct	_	_
+35	وكيم	وكيم	X	U---------	_	25	nmod	_	_
+36	داى	داى	X	X---------	Foreign=Yes	37	nmod	_	_
+37	جونغ	جُونغ	X	X---------	Foreign=Yes	35	flat:foreign	_	SpaceAfter=No
+38	،	،	PUNCT	G---------	_	37	punct	_	_
+39-40	وثلاثة	_	_	_	_	_	_	_	_
+39	و	وَ	CCONJ	C---------	_	40	cc	_	_
+40	ثلاثة	ثَلَاثَة	NUM	QV----M-1R	Case=Nom|Definite=Cons|Gender=Masc|NumForm=Word|NumValue=3	3	conj	_	_
+41	عشر	عَشَر	NUM	QY----M---	Gender=Masc|NumForm=Word|NumValue=2	40	nummod	_	_
+42	من	مِن	ADP	P---------	AdpType=Prep	43	case	_	_
+43	العلماء	عَالِم	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	41	nmod	_	_
+44	اليابانيين	يَابَانِيّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	43	amod	_	_
+45	معظم	مُعظَم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	40	nmod	_	_
+46	الفائزين	فَائِز	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	45	amod	_	_
+47	بجائزة	بُجَائَزَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	46	nmod	_	_
+48	نوبل	نُوبِل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	47	nmod	_	_
+49	من	مِن	ADP	P---------	AdpType=Prep	50	case	_	_
+50	اليابان	اَليَابَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	46	nmod	_	_
+51-52	وإسرائيل	_	_	_	_	_	_	_	_
+51	و	وَ	CCONJ	C---------	_	52	cc	_	_
+52	إسرائيل	إِسرَائِيل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	50	conj	_	_
+53	فيما	فِيمَا	CCONJ	C---------	_	54	mark	_	_
+54	عدا	عَدَا	VERB	N------S4I	Case=Acc|Definite=Ind|Number=Sing	45	obl	_	_
+55	سوزوكي	سوزوكي	X	U---------	_	56	nmod	_	_
+56	ورامان	ورامان	X	U---------	_	54	nsubj	_	_
+57	(	(	PUNCT	G---------	_	58	punct	_	SpaceAfter=No
+58	الهند	هِند	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	56	appos	_	SpaceAfter=No
+59	)	)	PUNCT	G---------	_	58	punct	_	SpaceAfter=No
+60	،	،	PUNCT	G---------	_	56	punct	_	_
+61	وسلام	وسلام	X	U---------	_	62	nmod	_	_
+62	فياض	فياض	X	U---------	_	56	conj	_	_
+63	(	(	PUNCT	G---------	_	64	punct	_	SpaceAfter=No
+64	باكستان	بَاكِستَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	56	appos	_	SpaceAfter=No
+65	)	)	PUNCT	G---------	_	64	punct	_	SpaceAfter=No
+66	،	،	PUNCT	G---------	_	62	punct	_	_
+67-68	وعرفات	_	_	_	_	_	_	_	_
+67	و	وَ	CCONJ	C---------	_	68	cc	_	_
+68	عرفات	عَرَفَات	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	56	conj	_	_
+69	(	(	PUNCT	G---------	_	70	punct	_	SpaceAfter=No
+70	الأراضي	أَرض	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	68	appos	_	_
+71	الفلسطينية	فِلَسطِينِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	70	amod	_	SpaceAfter=No
+72	)	)	PUNCT	G---------	_	70	punct	_	_
+73	وكيم	وكيم	X	U---------	_	56	conj	_	_
+74	(	(	PUNCT	G---------	_	75	punct	_	SpaceAfter=No
+75	كوريا	كُورِيَا	X	X---------	Foreign=Yes	68	appos	_	_
+76	الجنوبية	جَنُوبِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	75	amod	_	SpaceAfter=No
+77	)	)	PUNCT	G---------	_	75	punct	_	SpaceAfter=No
+78	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = في عام 2006، مُنح الدكتور محمد يونس من بنغلاديش بجائزة نوبل للسلام لإنشاء بنك جرامين، بنك التنمية الاجتماعي والذي يُقرض الأموال للفقراء، خصوصًا النساء في بنغلاديش.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl	_	_
@@ -3615,11 +3868,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المعتقدات[عدل]
+# text = المعتقدات
 1	المعتقدات	مُعتَقَد	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3627,11 +3877,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الأساطير[عدل]
+# text = الأساطير
 1	الأساطير	أُسطُور	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3751,11 +3998,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الأديان[عدل]
+# text = الأديان
 1	الأديان	دِين	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عدل	X	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3846,12 +4090,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الديانات الإبراهيمية[عدل]
+# text = الديانات الإبراهيمية
 1	الديانات	دِيَانَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الإبراهيمية	إِبرَاهِيمِيَّة	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+2	الإبراهيمية	الإبراهيمية	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4536,12 +4777,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انظر أيضًا[عدل]
-1	انظر	نَظَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+# text = انظر أيضًا
+1	انظر	انظر	X	U---------	_	0	root	_	_
 2	أيضًا	أَيضاا	ADV	D---------	_	1	advmod:emph	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عدل	X	U---------	_	1	nsubj	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4549,11 +4787,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المراجع[عدل]
+# text = المراجع
 1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4561,12 +4796,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = قراءات أخرى[عدل]
+# text = قراءات أخرى
 1	قراءات	قَرَاء	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	أخرى	آخَر	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4584,20 +4816,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = وصلات خارجية[عدل]
+# text = وصلات خارجية
 1	وصلات	وُصلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = قائمة التصفح
-1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
 

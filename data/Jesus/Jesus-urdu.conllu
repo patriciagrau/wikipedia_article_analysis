@@ -1,5 +1,3 @@
-# https://ur.wikipedia.org/wiki/%DB%8C%D8%B3%D9%88%D8%B9_%D9%85%D8%B3%DB%8C%D8%AD
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -14,17 +12,7 @@
 5	دائرۃ	دائرۃ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	compound	_	_
 6	المعارف	المعارف	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	nmod	_	SpaceAfter=No
 7	،	،	PUNCT	SYM	_	6	punct	_	_
-8	ویکیپیڈیا	ویکیپیڈیا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = urdu-udtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = یسوع مسیح
-1	یسوع	یسوع	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	مسیح	مسیح	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+8	ویکیپیڈیا	ویکیپیڈیا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -350,10 +338,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ولادت[ترمیم]
-1	ولادت[	ولادت[	ADJ	JJ	Case=Nom	2	amod	_	SpaceAfter=No
-2	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+# text = ولادت
+1	ولادت	ولادت	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -592,10 +578,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = خاندان[ترمیم]
-1	خاندان[	خاندان[	ADJ	JJ	Case=Nom	2	amod	_	SpaceAfter=No
-2	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+# text = خاندان
+1	خاندان	خاندان	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -691,18 +675,58 @@
 27	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	SpaceAfter=No
 28	۔	۔	PUNCT	SYM	_	14	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = کچھ یہودی یہ شجرہ نسب یوسف کے ذریعے داؤد تک لے جاتے ہیں۔
+1	کچھ	کچھ	DET	QF	PronType=Ind	2	det	_	_
+2	یہودی	یہودی	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+3	یہ	یہ	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	4	det	_	_
+4	شجرہ	شجرہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+5	نسب	نسب	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+6	یوسف	یوسف	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+7	کے	کے	ADP	PSP	AdpType=Post	6	case	_	_
+8	ذریعے	ذریعہ	ADP	PSP	AdpType=Post	6	case	_	_
+9	داؤد	داؤد	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+10	تک	تک	ADP	PSP	AdpType=Post	9	case	_	_
+11	لے	لے	VERB	VM	Voice=Act	0	root	_	_
+12	جاتے	جا	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	11	aux	_	_
+13	ہیں	ہے	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	SpaceAfter=No
+14	۔	۔	PUNCT	SYM	_	11	punct	_	_
+
+# sent_id = 6
+# text = مگر یوسف اور مریم رشتہ دار تھے اور ان دونوں کا نسب دوسری یا تیسری پشت میں ایک ہو جاتا ہے۔
+1	مگر	مگر	CCONJ	CC	_	6	cc	_	_
+2	یوسف	یوسف	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+3	اور	اور	CCONJ	CC	_	4	cc	_	_
+4	مریم	مریم	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	conj	_	_
+5	رشتہ	رشتہ	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	6	obj	_	_
+6	دار	دار	ADJ	JJ	_	0	root	_	_
+7	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	اور	اور	CCONJ	CC	_	19	cc	_	_
+9	ان	یہ	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	10	det	_	_
+10	دونوں	دو	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	12	nmod	_	_
+11	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	10	case	_	_
+12	نسب	نسب	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
+13	دوسری	دوسری	ADJ	QO	Gender=Fem|NumType=Ord	19	advmod	_	_
+14	یا	یا	CCONJ	CC	_	16	cc	_	_
+15	تیسری	تیسری	ADJ	QO	Gender=Fem|NumType=Ord	16	amod	_	_
+16	پشت	پشت	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	13	conj	_	_
+17	میں	میں	ADP	PSP	AdpType=Post	16	case	_	_
+18	ایک	ایک	NUM	QC	NumType=Card	19	xcomp	_	_
+19	ہو	ہو	VERB	VM	Voice=Act	6	conj	_	_
+20	جاتا	جا	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	19	aux	_	_
+21	ہے	ہے	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	SpaceAfter=No
+22	۔	۔	PUNCT	SYM	_	19	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = ابتدائی حالاتِ زندگی[ترمیم]
-1	ابتدائی	ابتدائی	ADJ	JJ	Case=Nom	2	amod	_	_
-2	حالاتِ	حالاتِ	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	4	nsubj	_	_
-3	زندگی[	زندگی[	ADJ	JJ	Case=Nom	4	amod	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = ابتدائی حالاتِ زندگی
+1	ابتدائی	ابتدائی	ADJ	JJ	Case=Nom	3	amod	_	_
+2	حالاتِ	حالاتِ	NOUN	NNC	Case=Nom|Gender=Masc|Number=Plur|Person=3	3	compound	_	_
+3	زندگی	زندگی	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -1027,12 +1051,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = بپتِسمہ اور آزمائش[ترمیم]
-1	بپتِسمہ	بپتِسمہ	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+# text = بپتِسمہ اور آزمائش
+1	بپتِسمہ	بپتِسمہ	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	اور	اور	CCONJ	CC	_	3	cc	_	_
-3	آزمائش[	آزمائش[	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+3	آزمائش	آزمائش	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -1040,38 +1062,25 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = اناجیلِ متوافقہ [متی، مرقس اور لوقا] کے مطابق خداوند یسوع مسیح نے اپنے رشتہ دار یوحنا اصطباغی [یوحنا بپتسمہ دینے والے] کے ہاتھوں بپتسمہ پایا۔
+# text = اناجیلِ متوافقہ کے مطابق خداوند یسوع مسیح نے اپنے رشتہ دار یوحنا اصطباغی کے ہاتھوں بپتسمہ پایا۔
 1	اناجیلِ	اناجیلِ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
-2	متوافقہ	متوافقہ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
-3	[	[	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
-4	متی	متی	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	obl	_	SpaceAfter=No
-5	،	،	PUNCT	SYM	_	6	punct	_	_
-6	مرقس	مرقس	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	2	conj	_	_
-7	اور	اور	CCONJ	CC	_	8	cc	_	_
-8	لوقا	لوقا	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	conj	_	SpaceAfter=No
-9	]	]	PUNCT	SYM	_	8	punct	_	_
-10	کے	کے	ADP	PSP	AdpType=Post	8	case	_	_
-11	مطابق	مطابق	ADP	PSP	AdpType=Post	8	case	_	_
-12	خداوند	خداوند	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	nmod	_	_
-13	یسوع	یسوع	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	compound	_	_
-14	مسیح	مسیح	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	nsubj	_	_
-15	نے	نے	ADP	PSP	AdpType=Post	14	case	_	_
-16	اپنے	اپنا	PRON	PRP	Case=Nom|PronType=Prs	17	nmod	_	_
-17	رشتہ	رشتہ	NOUN	NNZ	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	amod	_	_
-18	دار	دار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
-19	یوحنا	یوحنا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	compound	_	_
-20	اصطباغی	اصطباغی	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	obl	_	_
-21	[	[	PUNCT	SYM	_	20	punct	_	SpaceAfter=No
-22	یوحنا	یوحنا	PROPN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	23	compound	_	_
-23	بپتسمہ	بپتسمہ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	obj	_	_
-24	دینے	دے	VERB	VM	Case=Acc|VerbForm=Inf	26	amod	_	_
-25	والے	والا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	24	mark	_	SpaceAfter=No
-26	]	]	NOUN	NN	_	30	obl	_	_
-27	کے	کے	ADP	PSP	AdpType=Post	26	case	_	_
-28	ہاتھوں	ہاتھ	ADP	PSP	Case=Acc|Gender=Masc|Number=Plur	26	case	_	_
-29	بپتسمہ	بپتسمہ	ADJ	JJ	_	30	compound	_	_
-30	پایا	پا	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
-31	۔	۔	PUNCT	SYM	_	30	punct	_	_
+2	متوافقہ	متوافقہ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	obl	_	SpacesAfter=\s\s
+3	کے	کے	ADP	PSP	AdpType=Post	2	case	_	_
+4	مطابق	مطابق	ADP	PSP	AdpType=Post	2	case	_	_
+5	خداوند	خداوند	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+6	یسوع	یسوع	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+7	مسیح	مسیح	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+8	نے	نے	ADP	PSP	AdpType=Post	7	case	_	_
+9	اپنے	اپنا	PRON	PRP	Case=Nom|PronType=Prs	10	nmod	_	_
+10	رشتہ	رشتہ	NOUN	NNZ	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	amod	_	_
+11	دار	دار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+12	یوحنا	یوحنا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	compound	_	_
+13	اصطباغی	اصطباغی	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	obl	_	SpacesAfter=\s\s
+14	کے	کے	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	13	case	_	_
+15	ہاتھوں	ہاتھ	ADP	PSP	Case=Acc|Gender=Masc|Number=Plur	13	case	_	_
+16	بپتسمہ	بپتسمہ	ADJ	JJ	_	17	compound	_	_
+17	پایا	پا	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+18	۔	۔	PUNCT	SYM	_	17	punct	_	_
 
 # sent_id = 2
 # text = ان بیانات کے مطابق آپ دریائے اردن آئے جہاں یوحنا اصطباغی منادی اور اصطباغ کیا کرتے تھے۔
@@ -1212,43 +1221,40 @@
 23	۔	۔	PUNCT	SYM	_	22	punct	_	_
 
 # sent_id = 2
-# text = اس دوران میں آزمانے والا [شیطان] متعدد بار آپ کو آزمانے آیا لیکن ہر بار آپ نے اس کو عہد نامہ عتیق میں سے حوالہ جات سنا کر ناکام اور ناامید کر دیا۔
-1	اس	وہ	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	_
-2	دوران	دوران	ADV	NST	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	advmod	_	_
+# text = اس دوران میں آزمانے والا متعدد بار آپ کو آزمانے آیا لیکن ہر بار آپ نے اس کو عہد نامہ عتیق میں سے حوالہ جات سنا کر ناکام اور ناامید کر دیا۔
+1	اس	یہ	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	دوران	دوران	ADV	NST	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
 3	میں	میں	ADP	PSP	AdpType=Post	2	case	_	_
-4	آزمانے	آزمانہ	VERB	VM	Case=Acc|VerbForm=Inf	7	amod	_	_
-5	والا	والا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	4	mark	_	_
-6	[	[	PUNCT	SYM	_	7	amod	_	SpaceAfter=No
-7	شیطان	شیطان	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	nsubj	_	SpaceAfter=No
-8	]	]	PUNCT	SYM	_	7	punct	_	_
-9	متعدد	متعدد	ADJ	JJ	Case=Nom	10	amod	_	_
-10	بار	بار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
-11	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	14	iobj	_	_
-12	کو	کو	ADP	PSP	AdpType=Post	11	case	_	_
-13	آزمانے	آزمانہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	compound	_	_
-14	آیا	آ	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
-15	لیکن	لیکن	CCONJ	CC	_	34	cc	_	_
-16	ہر	ہر	ADJ	JJ	Case=Nom	17	amod	_	_
-17	بار	بار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	obl	_	_
-18	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	34	nsubj	_	_
-19	نے	نے	ADP	PSP	AdpType=Post	18	case	_	_
-20	اس	یہ	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	34	obj	_	_
-21	کو	کو	ADP	PSP	AdpType=Post	20	case	_	_
-22	عہد	عہد	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	compound	_	_
-23	نامہ	نامہ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	compound	_	_
-24	عتیق	عتیق	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	29	obl	_	_
-25	میں	میں	ADP	PSP	AdpType=Post	24	case	_	_
-26	سے	سے	ADP	PSP	AdpType=Post	24	case	_	_
-27	حوالہ	حوالہ	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	compound	_	_
-28	جات	جات	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	obj	_	_
-29	سنا	سنا	VERB	VM	_	34	advcl	_	_
-30	کر	کر	AUX	VAUX	_	29	aux	_	_
-31	ناکام	ناکام	ADJ	JJ	_	34	acl	_	_
-32	اور	اور	CCONJ	CC	_	33	cc	_	_
-33	ناامید	ناامید	ADJ	JJ	_	31	conj	_	_
-34	کر	کر	VERB	VM	Voice=Act	14	conj	_	_
-35	دیا	دے	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part	34	aux	_	SpaceAfter=No
-36	۔	۔	PUNCT	SYM	_	34	punct	_	SpacesAfter=\n
+4	آزمانے	آزمانہ	NOUN	NN	Case=Acc|VerbForm=Inf	7	nmod	_	_
+5	والا	والا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	4	mark	_	SpacesAfter=\s\s
+6	متعدد	متعدد	ADJ	JJ	Case=Nom	7	amod	_	_
+7	بار	بار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+8	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	11	iobj	_	_
+9	کو	کو	ADP	PSP	AdpType=Post	8	case	_	_
+10	آزمانے	آزمانہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	compound	_	_
+11	آیا	آ	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+12	لیکن	لیکن	CCONJ	CC	_	31	cc	_	_
+13	ہر	ہر	ADJ	JJ	Case=Nom	14	amod	_	_
+14	بار	بار	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	31	obl	_	_
+15	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	31	nsubj	_	_
+16	نے	نے	ADP	PSP	AdpType=Post	15	case	_	_
+17	اس	یہ	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	31	obj	_	_
+18	کو	کو	ADP	PSP	AdpType=Post	17	case	_	_
+19	عہد	عہد	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	21	compound	_	_
+20	نامہ	نامہ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	21	compound	_	_
+21	عتیق	عتیق	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	26	obl	_	_
+22	میں	میں	ADP	PSP	AdpType=Post	21	case	_	_
+23	سے	سے	ADP	PSP	AdpType=Post	21	case	_	_
+24	حوالہ	حوالہ	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	compound	_	_
+25	جات	جات	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	26	obj	_	_
+26	سنا	سنا	VERB	VM	_	31	advcl	_	_
+27	کر	کر	AUX	VAUX	_	26	aux	_	_
+28	ناکام	ناکام	ADJ	JJ	_	31	acl	_	_
+29	اور	اور	CCONJ	CC	_	30	cc	_	_
+30	ناامید	ناامید	ADJ	JJ	_	28	conj	_	_
+31	کر	کر	VERB	VM	Voice=Act	11	conj	_	_
+32	دیا	دے	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part	31	aux	_	SpaceAfter=No
+33	۔	۔	PUNCT	SYM	_	31	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -1256,13 +1262,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = علانیہ زندگی اور تعلیمات[ترمیم]
+# text = علانیہ زندگی اور تعلیمات
 1	علانیہ	علانیہ	ADJ	JJ	Case=Nom	2	amod	_	_
-2	زندگی	زندگی	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	_
-3	اور	اور	CCONJ	CC	_	5	cc	_	_
-4	تعلیمات[	تعلیمات[	ADJ	JJ	Case=Nom|Gender=Fem|Number=Sing|Person=3	5	amod	_	SpaceAfter=No
-5	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+2	زندگی	زندگی	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+3	اور	اور	CCONJ	CC	_	4	cc	_	_
+4	تعلیمات	تعلیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -1348,11 +1352,11 @@
 36	۔	۔	PUNCT	SYM	_	35	punct	_	_
 
 # sent_id = 3
-# text = آپ کی علانیہ زندگی میں آپ کے سب سے قریب آپ کے بارہ شاگرد [حواری] تھے۔
+# text = آپ کی علانیہ زندگی میں آپ کے سب سے قریب آپ کے بارہ شاگرد تھے۔
 1	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	4	nmod	_	_
-2	کی	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	1	case	_	_
+2	کی	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	1	case	_	_
 3	علانیہ	علانیہ	ADJ	JJ	Case=Acc	4	amod	_	_
-4	زندگی	زندگی	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	17	obl	_	_
+4	زندگی	زندگی	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	obl	_	_
 5	میں	میں	ADP	PSP	AdpType=Post	4	case	_	_
 6	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	14	nmod	_	_
 7	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	6	case	_	_
@@ -1362,12 +1366,9 @@
 11	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	14	nmod	_	_
 12	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	11	case	_	_
 13	بارہ	بارہ	NUM	QC	NumType=Card	14	nummod	_	_
-14	شاگرد	شاگرد	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
-15	[	[	PUNCT	SYM	_	16	punct	_	SpaceAfter=No
-16	حواری	حواری	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	14	conj	_	SpaceAfter=No
-17	]	]	PUNCT	SYM	_	0	root	_	_
-18	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	cop	_	SpaceAfter=No
-19	۔	۔	PUNCT	SYM	_	14	punct	_	_
+14	شاگرد	شاگرد	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\s\s
+15	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	SpaceAfter=No
+16	۔	۔	PUNCT	SYM	_	14	punct	_	_
 
 # sent_id = 4
 # text = آپ تعلیم دیتے تھے کہ دنیا کا انجام بالکل غیر متوقع طور پر ہوگا اور کہ آپ آخری اوقات میں دنیا میں واپس آئیں گے تاکہ لوگوں کے اعمال کا حساب لے سکیں۔
@@ -1726,14 +1727,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = گرفتاری، مقدمہ اور شہادت[ترمیم]
-1	گرفتاری	گرفتاری	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	6	nmod	_	SpaceAfter=No
+# text = گرفتاری، مقدمہ اور شہادت
+1	گرفتاری	گرفتاری	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 2	،	،	PUNCT	SYM	_	3	punct	_	_
 3	مقدمہ	مقدمہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
-4	اور	اور	CCONJ	CC	_	6	cc	_	_
-5	شہادت[	شہادت[	ADJ	JJ	Case=Nom|Gender=Fem|Number=Sing|Person=3	6	amod	_	SpaceAfter=No
-6	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	SYM	_	6	punct	_	SpacesAfter=\n
+4	اور	اور	CCONJ	CC	_	5	cc	_	_
+5	شہادت	شہادت	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -1859,8 +1858,8 @@
 25	۔	۔	PUNCT	SYM	_	24	punct	_	_
 
 # sent_id = 4
-# text = آپ نے روٹی اور مے لی اور فرمایا
-1	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	6	nsubj	_	_
+# text = آپ نے روٹی اور مے لی اور فرمایا " یہ میرا بدن ہے " اور یہ کہ "یہ میرا خون ہے جو تمہارے بلکہ بہت سے لوگوں کے گناہوں کی معافی کے لیے بہایا جائے گا میری یاد میں یہی کیا کرو" بعد ازاں آپ اپنے شاگردوں کے ہمراہ گتسمنی کے باغ میں دعا کی غرض سے گئے۔
+1	آپ	آپ	PRON	PRP	Case=Acc|Person=2|Polite=Form|PronType=Prs	6	nsubj	_	_
 2	نے	نے	ADP	PSP	AdpType=Post	1	case	_	_
 3	روٹی	روٹی	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	6	obj	_	_
 4	اور	اور	CCONJ	CC	_	5	cc	_	_
@@ -1868,6 +1867,59 @@
 6	لی	لے	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
 7	اور	اور	CCONJ	CC	_	8	cc	_	_
 8	فرمایا	فرما	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	6	conj	_	SpacesAfter=\n
+9	"	"	PUNCT	SYM	_	10	punct	_	_
+10	یہ	یہ	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+11	میرا	میں	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	12	nmod	_	_
+12	بدن	بدن	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	_
+13	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	"	"	PUNCT	SYM	_	16	punct	_	SpacesAfter=\s\n
+15	اور	اور	CCONJ	CC	_	16	cc	_	_
+16	یہ	یہ	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	conj	_	_
+17	کہ	کہ	SCONJ	CC	_	21	mark	_	SpacesAfter=\n
+18	"	"	PUNCT	SYM	_	19	punct	_	SpaceAfter=No
+19	یہ	یہ	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+20	میرا	میرا	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	21	nmod	_	_
+21	خون	خون	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+22	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+23	جو	جو	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+24	تمہارے	تو	PRON	PRP	Case=Nom|Gender=Masc|Number=Plur|Person=2|PronType=Prs	21	nmod	_	_
+25	بلکہ	بلکہ	SCONJ	CC	_	24	mark	_	_
+26	بہت	بہت	DET	QF	PronType=Ind	28	amod	_	_
+27	سے	سے	PART	RP	_	26	dep	_	_
+28	لوگوں	لوگ	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	30	nmod	_	_
+29	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	28	case	_	_
+30	گناہوں	گناہ	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	32	nmod	_	_
+31	کی	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	30	case	_	_
+32	معافی	معافی	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	35	obl	_	_
+33	کے	کے	ADP	PSP	AdpType=Post	32	case	_	_
+34	لیے	لیے	ADP	PSP	AdpType=Post	32	case	_	_
+35	بہایا	بہا	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	21	acl:relcl	_	_
+36	جائے	جا	AUX	VAUX	_	35	aux	_	_
+37	گا	گا	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	35	aux	_	_
+38	میری	میں	PRON	PRP	Case=Acc,Gen|Person=1|Poss=Yes|PronType=Prs	39	nmod	_	_
+39	یاد	یاد	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	43	obl	_	_
+40	میں	میں	ADP	PSP	AdpType=Post	39	case	_	_
+41	یہی	یہی	PRON	PRP	Case=Nom|PronType=Prs	43	obj	_	_
+42	کیا	کیا	PRON	WQ	PronType=Int	43	obj	_	_
+43	کرو	کر	VERB	VM	VerbForm=Inf	60	advcl	_	SpaceAfter=No
+44	"	"	PUNCT	SYM	_	43	punct	_	SpacesAfter=\n
+45	بعد	بعد	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	46	case	_	_
+46	ازاں	ازاں	PRON	PRP	PronType=Prs	60	obl	_	_
+47	آپ	آپ	PRON	PRP	Case=Nom|PronType=Prs	60	nsubj	_	_
+48	اپنے	اپنا	PRON	PRP	Case=Acc|PronType=Prs	49	nmod	_	_
+49	شاگردوں	شاگرد	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	60	obl	_	_
+50	کے	کے	ADP	PSP	AdpType=Post	49	case	_	_
+51	ہمراہ	ہمراہ	ADP	PSP	AdpType=Post	49	case	_	_
+52	گتسمنی	گتسمنی	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	54	nmod	_	_
+53	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	52	case	_	_
+54	باغ	باغ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	60	obl	_	_
+55	میں	میں	ADP	PSP	AdpType=Post	54	case	_	_
+56	دعا	دعا	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	60	obl	_	_
+57	کی	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	56	case	_	_
+58	غرض	غرض	ADP	PSP	Case=Acc|Gender=Masc|Number=Sing|Person=3	56	case	_	_
+59	سے	سے	ADP	PSP	AdpType=Post	56	case	_	_
+60	گئے	جا	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	16	acl	_	SpaceAfter=No
+61	۔	۔	PUNCT	SYM	_	60	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2042,6 +2094,46 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = اناجیل کے مطابق پلاطس خود نہیں چاہتا تھا کہ آپ کو سزا ہو لیکن اس نے یہودی کاہنوں کے پرزور اصرار پر آپ کو مصلوب کرنے کا حکم صادر کر دیا۔
+1	اناجیل	اناجیل	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	obl	_	SpacesBefore=\n
+2	کے	کے	ADP	PSP	AdpType=Post	1	case	_	_
+3	مطابق	مطابق	ADP	PSP	AdpType=Post	1	case	_	_
+4	پلاطس	پلاطس	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+5	خود	خود	PRON	PRP	PronType=Prs	7	nsubj	_	_
+6	نہیں	نہیں	PART	NEG	Polarity=Neg|PronType=Neg	7	advmod	_	_
+7	چاہتا	چاہ	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+8	تھا	تھا	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
+9	کہ	کہ	SCONJ	CC	_	13	mark	_	_
+10	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	13	nsubj	_	_
+11	کو	کو	ADP	PSP	AdpType=Post	10	case	_	_
+12	سزا	سزا	NOUN	NN	_	13	compound	_	_
+13	ہو	ہو	VERB	VM	Voice=Act	7	obj	_	_
+14	لیکن	لیکن	CCONJ	CC	_	30	cc	_	_
+15	اس	یہ	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	30	nsubj	_	_
+16	نے	نے	ADP	PSP	AdpType=Post	15	case	_	_
+17	یہودی	یہودی	ADJ	JJ	Case=Acc	18	amod	_	_
+18	کاہنوں	کاہن	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	21	nmod	_	_
+19	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	18	case	_	_
+20	پرزور	پرزور	ADJ	JJ	Case=Acc	21	amod	_	_
+21	اصرار	اصرار	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	obl	_	_
+22	پر	پر	ADP	PSP	AdpType=Post	21	case	_	_
+23	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	26	obj	_	_
+24	کو	کو	ADP	PSP	AdpType=Post	23	case	_	_
+25	مصلوب	مصلوب	ADJ	JJ	_	26	compound	_	_
+26	کرنے	کر	VERB	VM	Case=Acc|VerbForm=Inf	28	nmod	_	_
+27	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	26	mark	_	_
+28	حکم	حکم	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	30	obj	_	_
+29	صادر	صادر	ADJ	JJ	_	30	compound	_	_
+30	کر	کر	VERB	VM	Voice=Act	13	conj	_	_
+31	دیا	دے	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	30	aux	_	SpaceAfter=No
+32	۔	۔	PUNCT	SYM	_	30	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = urdu-udtb-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = آپ کو کوہِ کلوری پر فسح کے دن نہایت تکلیف دہ انداز میں صلیب دی گئی۔
 1	آپ	آپ	PRON	PRP	Case=Acc|PronType=Prs	15	iobj	_	_
 2	کو	کو	ADP	PSP	AdpType=Post	1	case	_	_
@@ -2124,12 +2216,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = قیامتِ یسوع مسیح[ترمیم]
-1	قیامتِ	قیامتِ	PROPN	NNZ	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+# text = قیامتِ یسوع مسیح
+1	قیامتِ	قیامتِ	PROPN	NNZ	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	یسوع	یسوع	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
-3	مسیح[	مسیح[	PROPN	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	amod	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+3	مسیح	مسیح	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	dep	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2240,11 +2330,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = مسیحی عقائد[ترمیم]
+# text = مسیحی عقائد
 1	مسیحی	مسیحی	ADJ	JJ	Case=Nom	2	amod	_	_
-2	عقائد[	عقائد[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	3	nsubj	_	SpaceAfter=No
-3	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+2	عقائد	عقئد	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2325,7 +2413,7 @@
 29	۔	۔	PUNCT	SYM	_	26	punct	_	_
 
 # sent_id = 4
-# text = چنانچہ انجیل یوحنا میں یوں مرقوم ہے كہ
+# text = چنانچہ انجیل یوحنا میں یوں مرقوم ہے كہ "ابتدا میں کلمہ تھا اور کلمہ خدا کے ساتھ تھا اور کلمہ خدا تھا، وہی ابتدا میں خدا کے ساتھ تھا"۔
 1	چنانچہ	چنانچہ	SCONJ	CC	_	6	mark	_	_
 2	انجیل	انجیل	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
 3	یوحنا	یوحنا	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	obl	_	_
@@ -2333,7 +2421,83 @@
 5	یوں	یوں	ADV	RB	_	6	advmod	_	_
 6	مرقوم	مرقوم	ADJ	JJ	_	0	root	_	_
 7	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-8	كہ	كہ	SCONJ	CC	_	6	mark	_	SpacesAfter=\n
+8	كہ	كہ	SCONJ	CC	_	12	mark	_	SpacesAfter=\n
+9	"	"	PUNCT	SYM	_	10	punct	_	SpaceAfter=No
+10	ابتدا	ابتدا	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+11	میں	میں	ADP	PSP	AdpType=Post	10	case	_	_
+12	کلمہ	کلمہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	obj	_	_
+13	تھا	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	اور	اور	CCONJ	CC	_	16	cc	_	_
+15	کلمہ	کلمہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+16	خدا	خدا	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	conj	_	_
+17	کے	کے	ADP	PSP	AdpType=Post	16	case	_	_
+18	ساتھ	ساتھ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	16	case	_	_
+19	تھا	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	cop	_	_
+20	اور	اور	CCONJ	CC	_	22	cc	_	_
+21	کلمہ	کلمہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	22	nsubj	_	_
+22	خدا	خدا	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	conj	_	_
+23	تھا	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	cop	_	SpaceAfter=No
+24	،	،	PUNCT	SYM	_	22	punct	_	_
+25	وہی	وہی	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+26	ابتدا	ابتدا	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	28	obl	_	_
+27	میں	میں	ADP	PSP	AdpType=Post	26	case	_	_
+28	خدا	خدا	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	conj	_	_
+29	کے	کے	ADP	PSP	AdpType=Post	28	case	_	_
+30	ساتھ	ساتھ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	28	case	_	_
+31	تھا	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	28	cop	_	SpaceAfter=No
+32	"	"	PUNCT	SYM	_	31	punct	_	SpaceAfter=No
+33	۔	۔	PUNCT	SYM	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = لفظ یسوع دراصل عبرانی اور آرامی لفظ (יהושע -
+1	لفظ	لفظ	NOUN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+2	یسوع	یسوع	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+3	دراصل	دراصل	ADV	RB	_	7	amod	_	_
+4	عبرانی	عبرانی	ADJ	JJ	_	7	amod	_	_
+5	اور	اور	CCONJ	CC	_	6	cc	_	_
+6	آرامی	آرامی	ADJ	JJ	_	4	conj	_	_
+7	لفظ	لفظ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	nmod	_	_
+8	(	(	PUNCT	SYM	_	9	punct	_	SpaceAfter=No
+9	יהושע	יהושע	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+10	-	-	PUNCT	SYM	_	9	punct	_	_
+
+# sent_id = 6
+# text = ܝܫܘ) یشوع سے لیا گیا ہے جس کا مطلب ہے "خداوند نجات ہے" جبکہ مسیح عبرانی لفظ مشیاخ سے لیا گیا ہے جس کے معنی ہیں "مسح/مخصوص کیا گیا"۔
+1	ܝܫܘ	ܝܫܘ	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
+2	)	)	PUNCT	SYM	_	1	punct	_	_
+3	یشوع	یشوع	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	obl	_	SpacesAfter=\s\s
+4	سے	سے	ADP	PSP	AdpType=Post	3	case	_	_
+5	لیا	لے	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+6	گیا	جا	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	5	aux	_	_
+7	ہے	ہے	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+8	جس	جو	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
+9	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	8	case	_	_
+10	مطلب	مطلب	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	obj	_	_
+11	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+12	"	"	PUNCT	SYM	_	10	punct	_	SpaceAfter=No
+13	خداوند	خداوند	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+14	نجات	نجات	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+15	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	SpaceAfter=No
+16	"	"	PUNCT	SYM	_	23	punct	_	_
+17	جبکہ	جبکہ	CCONJ	CC	_	23	cc	_	_
+18	مسیح	مسیح	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_
+19	عبرانی	عبرانی	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	amod	_	_
+20	لفظ	لفظ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	21	nmod	_	_
+21	مشیاخ	مشیاخ	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	23	obl	_	SpacesAfter=\s\s
+22	سے	سے	ADP	PSP	AdpType=Post	21	case	_	_
+23	لیا	لے	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	conj	_	_
+24	گیا	جا	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	23	aux	_	_
+25	ہے	ہے	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
+26	جس	جو	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	28	nmod	_	_
+27	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	26	case	_	_
+28	معنی	معنی	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	32	obl	_	_
+29	ہیں	ہے	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	cop	_	_
+30	"	"	PUNCT	SYM	_	32	punct	_	SpaceAfter=No
+31	مسح/مخصوص	مسح/مخصوص	ADJ	JJ	_	32	compound	_	_
+32	کیا	کر	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl:relcl	_	_
+33	گیا	جا	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	32	aux	_	SpaceAfter=No
+34	"	"	PUNCT	SYM	_	32	punct	_	SpaceAfter=No
+35	۔	۔	PUNCT	SYM	_	32	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2680,19 +2844,67 @@
 72	گے	گے	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	71	aux	_	SpaceAfter=No
 73	۔	۔	PUNCT	SYM	_	71	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = urdu-udtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = دیگر ادیان میں[ترمیم]
-1	دیگر	دیگر	ADJ	JJ	Case=Acc	2	amod	_	_
-2	ادیان	ادیان	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	obl	_	_
-3	میں	میں	ADP	PSP	AdpType=Post	2	case	_	SpaceAfter=No
-4	[	[	PUNCT	SYM	_	5	dep	_	SpaceAfter=No
-5	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+# sent_id = 4
+# text = مسیحی فرقہ یہوواہ کے گواہ (Jahova's witness) ان چیزوں کو نہیں مانتے۔
+1	مسیحی	مسیحی	ADJ	JJ	Case=Nom	2	amod	_	_
+2	فرقہ	فرقہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+3	یہوواہ	یہوواہ	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	_
+5	گواہ	گواہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	nmod	_	_
+6	(	(	PUNCT	SYM	_	9	punct	_	SpaceAfter=No
+7	Jahova	jahova	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	compound	_	SpaceAfter=No
+8	's	's	PUNCT	SYM	_	9	punct	_	_
+9	witness	witness	PROPN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nsubj	_	SpaceAfter=No
+10	)	)	PUNCT	SYM	_	9	punct	_	_
+11	ان	یہ	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	12	det	_	_
+12	چیزوں	چیز	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	15	obj	_	_
+13	کو	کو	ADP	PSP	AdpType=Post	12	case	_	_
+14	نہیں	نہیں	PART	NEG	Polarity=Neg|PronType=Neg	15	advmod	_	_
+15	مانتے	مان	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+16	۔	۔	PUNCT	SYM	_	15	punct	_	_
+
+# sent_id = 5
+# text = ان کے عقائد کے مطابق یسوع ایک نبی تھے اور خدا نہیں تھے۔
+1	ان	یہ	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	3	nmod	_	_
+2	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	case	_	_
+3	عقائد	عقئد	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	8	nmod	_	_
+4	کے	کے	ADP	PSP	AdpType=Post	3	case	_	_
+5	مطابق	مطابق	ADP	PSP	AdpType=Post	3	case	_	_
+6	یسوع	یسوع	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+7	ایک	ایک	NUM	QC	NumType=Card	8	nummod	_	_
+8	نبی	نبی	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+9	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+10	اور	اور	CCONJ	CC	_	11	cc	_	_
+11	خدا	خدا	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	conj	_	_
+12	نہیں	نہیں	PART	NEG	Polarity=Neg|PronType=Neg	11	advmod	_	_
+13	تھے	تھا	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	cop	_	SpaceAfter=No
+14	۔	۔	PUNCT	SYM	_	8	punct	_	_
+
+# sent_id = 6
+# text = اور خدا (یہوواہ) ایک ہی ہے۔
+1	اور	اور	CCONJ	CC	_	6	cc	_	_
+2	خدا	خدا	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+3	(	(	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
+4	یہوواہ	یہوواہ	NOUN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	SpaceAfter=No
+5	)	)	PUNCT	SYM	_	4	punct	_	_
+6	ایک	ایک	NUM	QC	NumType=Card	0	root	_	_
+7	ہی	ہی	PART	RP	_	6	dep	_	_
+8	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+9	۔	۔	PUNCT	SYM	_	6	punct	_	_
+
+# sent_id = 7
+# text = ان کے مطابق یسوع المسیح کو سولی نہیں دی گئی۔
+1	ان	یہ	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	9	obl	_	_
+2	کے	کے	ADP	PSP	AdpType=Post	1	case	_	_
+3	مطابق	مطابق	ADP	PSP	AdpType=Post	1	case	_	_
+4	یسوع	یسوع	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	compound	_	_
+5	المسیح	المسیح	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	9	obj	_	_
+6	کو	کو	ADP	PSP	AdpType=Post	5	case	_	_
+7	سولی	سولی	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	9	obj	_	_
+8	نہیں	نہیں	PART	NEG	Polarity=Neg|PronType=Neg	9	advmod	_	_
+9	دی	دے	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+10	گئی	جا	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	9	aux	_	SpaceAfter=No
+11	۔	۔	PUNCT	SYM	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2700,10 +2912,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = اسلام[ترمیم]
-1	اسلام[	اسلام[	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	amod	_	SpaceAfter=No
-2	ترمیم	ترمیم	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+# text = دیگر ادیان میں
+1	دیگر	دیگر	ADJ	JJ	Case=Acc	2	amod	_	_
+2	ادیان	ادیان	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	0	root	_	_
+3	میں	میں	ADP	PSP	AdpType=Post	2	case	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = urdu-udtb-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = اسلام
+1	اسلام	اسلام	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2799,10 +3020,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = احمدیہ[ترمیم]
-1	احمدیہ[	احمدیہ[	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	amod	_	SpaceAfter=No
-2	ترمیم	ترمیم	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+# text = احمدیہ
+1	احمدیہ	احمدیہ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2858,12 +3077,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = مزید دیکھیے[ترمیم]
+# text = مزید دیکھیے
 1	مزید	مزید	ADJ	JJ	_	2	compound	_	_
 2	دیکھیے	دیکھ	VERB	VM	VerbForm=Inf	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2871,11 +3087,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = حوالہ جات[ترمیم]
-1	حوالہ	حوالہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
-2	جات[	جات[	ADJ	JJ	Case=Nom	3	amod	_	SpaceAfter=No
-3	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+# text = حوالہ جات
+1	حوالہ	حوالہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	amod	_	_
+2	جات	جات	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2893,11 +3107,70 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = تجسم • کنواری پیدائش
-1	تجسم	تجسم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
-2	•	•	PUNCT	CC	_	0	root	_	_
-3	کنواری	کنواری	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
-4	پیدائش	پیدائش	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	nsubj	_	SpacesAfter=\n
+# text = تجسم • کنواری پیدائش ولادت یسوع مسیح بیت اللحم کا ستارہ • مجوسی •
+1	تجسم	تجسم	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+2	•	•	PUNCT	SYM	_	3	punct	_	_
+3	کنواری	کنواری	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	1	conj	_	_
+4	پیدائش	پیدائش	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	nmod	_	SpacesAfter=\n
+5	ولادت	ولادت	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+6	یسوع	یسوع	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+7	مسیح	مسیح	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	nmod	_	SpacesAfter=\n
+8	بیت	بیت	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	compound	_	_
+9	اللحم	اللحم	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+10	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	9	case	_	_
+11	ستارہ	ستارہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+12	•	•	CCONJ	SYM	_	13	punct	_	_
+13	مجوسی	مجوسی	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
+14	•	•	PUNCT	SYM	_	13	cc	_	_
+
+# sent_id = 2
+# text = چرواہے ختنہ مسیح معصومین کا قتل عام •
+1	چرواہے	چرواہا	VERB	VM	Case=Nom|Gender=Masc|Number=Plur	7	obl	_	SpacesAfter=\n
+2	ختنہ	ختنہ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
+3	مسیح	مسیح	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	amod	_	SpacesAfter=\n
+4	معصومین	معصوم	PROPN	NNP	Case=Acc|Gender=Masc|Number=Plur|Person=3	6	nmod	_	_
+5	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	4	case	_	_
+6	قتل	قتل	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+7	عام	عام	ADJ	JJ	_	0	root	_	_
+8	•	•	PUNCT	SYM	_	7	punct	_	_
+
+# sent_id = 3
+# text = سفر مصر •
+1	سفر	سفر	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+2	مصر	مصر	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+3	•	•	PUNCT	SYM	_	2	cc	_	_
+
+# sent_id = 4
+# text = بچپن یسوع کا بپتسمہ کرسمس شب کرسمس • عشائے کرسمس نیا سال • ظہور خداوند کرسمس ٹری •
+1	بچپن	بچپن	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	SpacesAfter=\n
+2	یسوع	یسوع	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+3	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	2	case	_	_
+4	بپتسمہ	بپتسمہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	SpacesAfter=\n
+5	کرسمس	کرسمس	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	SpacesAfter=\n
+6	شب	شب	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+7	کرسمس	کرسمس	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+8	•	•	PUNCT	SYM	_	12	punct	_	_
+9	عشائے	عشائے	NOUN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	compound	_	_
+10	کرسمس	کرسمس	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nmod	_	SpacesAfter=\n
+11	نیا	نیا	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing	12	amod	_	_
+12	سال	سال	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	conj	_	_
+13	•	•	PUNCT	SYM	_	12	punct	_	_
+14	ظہور	ظہور	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	compound	_	_
+15	خداوند	خداوند	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	compound	_	SpacesAfter=\n
+16	کرسمس	کرسمس	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	compound	_	_
+17	ٹری	ٹر	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	7	conj	_	_
+18	•	•	PUNCT	SYM	_	17	punct	_	_
+
+# sent_id = 5
+# text = سانتا کلاز •
+1	سانتا	سانتا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	کلاز	کلاز	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+3	•	•	PUNCT	SYM	_	2	punct	_	_
+
+# sent_id = 6
+# text = تبادلہ تحائف
+1	تبادلہ	تبادلہ	NOUN	NNZ	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	amod	_	_
+2	تحائف	تحائف	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -2913,14 +3186,4 @@
 5	ہے	ہے	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	SpaceAfter=No
 6	]	]	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
 7	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = urdu-udtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = فہرست رہنمائی
-1	فہرست	فہرست	ADJ	JJ	Case=Nom	2	amod	_	_
-2	رہنمائی	رہنمائی	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
 

@@ -1,5 +1,3 @@
-# https://pl.wikipedia.org/wiki/Pieni%C4%85dz
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12,7 +10,7 @@
 3	Wikipedia	Wikipedia	PROPN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No
 4	,	,	PUNCT	interp	PunctType=Comm	6	punct	_	_
 5	wolna	wolny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
-6	encyklopedia	encyklopedia	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+6	encyklopedia	encyklopedia	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -20,8 +18,94 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz
-1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Pieniądz – towar uznany w wyniku ogólnej zgody społecznej środek wymiany gospodarczej, w którym są wyrażone ceny i wartości wszystkich innych towarów.
+1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+2	–	–	PUNCT	interp	PunctType=Dash	3	punct	_	_
+3	towar	towar	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+4	uznany	uznać	ADJ	ppas:sg:nom:m3:perf:aff	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	3	acl	_	_
+5	w	w	ADP	prep:loc:nwok	AdpType=Prep|Variant=Short	8	case	_	_
+6	wyniku	wynik	NOUN	subst:sg:loc:m3	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	5	fixed	_	_
+7	ogólnej	ogólny	ADJ	adj:sg:gen:f:pos	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	zgody	zgoda	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
+9	społecznej	społeczny	ADJ	adj:sg:gen:f:pos	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+10	środek	środek	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+11	wymiany	wymiana	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	10	nmod:arg	_	_
+12	gospodarczej	gospodarczy	ADJ	adj:sg:gen:f:pos	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	interp	PunctType=Comm	17	punct	_	_
+14	w	w	ADP	prep:loc:nwok	AdpType=Prep|Variant=Short	15	case	_	_
+15	którym	który	DET	adj:sg:loc:m3:pos	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|PronType=Rel	17	obl	_	_
+16	są	być	AUX	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	aux:pass	_	_
+17	wyrażone	wyrazić	ADJ	ppas:pl:nom:f:perf:aff	Aspect=Perf|Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos|VerbForm=Part|Voice=Pass	10	acl:relcl	_	_
+18	ceny	cena	NOUN	subst:pl:nom:f	Case=Nom|Gender=Fem|Number=Plur	17	nsubj:pass	_	_
+19	i	i	CCONJ	conj	_	20	cc	_	_
+20	wartości	wartość	NOUN	subst:pl:nom:f	Case=Nom|Gender=Fem|Number=Plur	18	conj	_	_
+21	wszystkich	wszystek	DET	adj:pl:gen:m3:pos	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|PronType=Tot	23	det	_	_
+22	innych	inny	ADJ	adj:pl:gen:m3:pos	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	23	amod	_	_
+23	towarów	towar	NOUN	subst:pl:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	interp	PunctType=Peri	1	punct	_	_
+
+# sent_id = 2
+# text = Jako waluta, krąży anonimowo od osoby do osoby i pomiędzy krajami, ułatwiając wymianę handlową.
+1	Jako	jako	SCONJ	comp	ConjType=Pred	2	mark	_	_
+2	waluta	waluta	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No
+3	,	,	PUNCT	interp	PunctType=Comm	2	punct	_	_
+4	krąży	krążyć	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	anonimowo	anonimowo	ADV	adv:pos	Degree=Pos	4	advmod	_	_
+6	od	od	ADP	prep:gen:nwok	AdpType=Prep|Variant=Short	7	case	_	_
+7	osoby	osoba	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
+8	do	do	ADP	prep:gen	AdpType=Prep	9	case	_	_
+9	osoby	osoba	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	_
+10	i	i	CCONJ	conj	_	12	cc	_	_
+11	pomiędzy	pomiędzy	ADP	prep:inst	AdpType=Prep	12	case	_	_
+12	krajami	kraj	NOUN	subst:pl:inst:m3	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No
+13	,	,	PUNCT	interp	PunctType=Comm	14	punct	_	_
+14	ułatwiając	ułatwiać	VERB	pcon:imperf	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	4	advcl	_	_
+15	wymianę	wymiana	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	14	obj	_	_
+16	handlową	handlowy	ADJ	adj:sg:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	_
+
+# sent_id = 3
+# text = Innymi słowy jest to materialny lub niematerialny środek, który można wymienić na towar lub usługę.
+1	Innymi	inny	ADJ	adj:pl:inst:n:pos	Case=Ins|Degree=Pos|Gender=Neut|Number=Plur	2	amod	_	_
+2	słowy	słowo	NOUN	subst:pl:inst:n:ncol	Case=Ins|Gender=Neut|Number=Plur	8	parataxis:insert	_	_
+3	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+4	to	to	AUX	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	8	cop	_	_
+5	materialny	materialny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+6	lub	lub	CCONJ	conj	_	7	cc	_	_
+7	niematerialny	niematerialny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	conj	_	_
+8	środek	środek	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	interp	PunctType=Comm	11	punct	_	_
+10	który	który	DET	adj:sg:acc:m3:pos	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	12	obj	_	_
+11	można	można	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	8	acl:relcl	_	_
+12	wymienić	wymienić	VERB	inf:perf	Aspect=Perf|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	na	na	ADP	prep:acc	AdpType=Prep	14	case	_	_
+14	towar	towar	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	12	obl	_	_
+15	lub	lub	CCONJ	conj	_	16	cc	_	_
+16	usługę	usługa	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	14	conj	_	SpaceAfter=No
+17	.	.	PUNCT	interp	PunctType=Peri	8	punct	_	_
+
+# sent_id = 4
+# text = Prawnie określony środek płatniczy, który może wyrażać, przechowywać i przekazywać wartość ściśle związaną z realnym produktem społecznym.
+1	Prawnie	prawnie	ADV	adv:pos	Degree=Pos	2	advmod	_	_
+2	określony	określić	ADJ	ppas:sg:nom:m3:perf:aff	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	3	acl	_	_
+3	środek	środek	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+4	płatniczy	płatniczy	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No
+5	,	,	PUNCT	interp	PunctType=Comm	7	punct	_	_
+6	który	który	DET	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	może	móc	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+8	wyrażać	wyrażać	VERB	inf:imperf	Aspect=Imp|VerbForm=Inf|Voice=Act	7	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	interp	PunctType=Comm	10	punct	_	_
+10	przechowywać	przechowywać	VERB	inf:imperf	Aspect=Imp|VerbForm=Inf|Voice=Act	8	conj	_	_
+11	i	i	CCONJ	conj	_	12	cc	_	_
+12	przekazywać	przekazywać	VERB	inf:imperf	Aspect=Imp|VerbForm=Inf|Voice=Act	8	conj	_	_
+13	wartość	wartość	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	8	obj	_	_
+14	ściśle	ściśle	ADV	adv:pos	Degree=Pos	15	advmod	_	_
+15	związaną	związać	ADJ	ppas:sg:acc:f:perf:aff	Aspect=Perf|Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	13	acl	_	_
+16	z	z	ADP	prep:inst:nwok	AdpType=Prep|Variant=Short	18	case	_	_
+17	realnym	realny	ADJ	adj:sg:inst:m3:pos	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+18	produktem	produkt	NOUN	subst:sg:inst:m3	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	15	obl:arg	_	_
+19	społecznym	społeczny	ADJ	adj:sg:inst:m3:pos	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No
+20	.	.	PUNCT	interp	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -69,16 +153,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Podstawowe rodzaje pieniądza[edytuj | edytuj kod]
-1	Podstawowe	podstawowy	ADJ	adj:pl:acc:m3:pos	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
-2	rodzaje	rodzaj	NOUN	subst:pl:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	5	obj	_	_
+# text = Podstawowe rodzaje pieniądza
+1	Podstawowe	podstawowy	ADJ	adj:pl:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
+2	rodzaje	rodzaj	NOUN	subst:pl:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 3	pieniądza	pieniądz	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod:arg	_	SpaceAfter=No
-4	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	5	punct	_	SpaceAfter=No
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-6	|	|	PUNCT	interp	PunctType=Comm	7	punct	_	_
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	conj	_	_
-8	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -86,16 +164,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ekonomiczne funkcje pieniądza[edytuj | edytuj kod]
-1	Ekonomiczne	ekonomiczny	ADJ	adj:pl:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
-2	funkcje	funkcja	NOUN	subst:pl:acc:f	Case=Acc|Gender=Fem|Number=Plur	5	obj	_	_
+# text = Ekonomiczne funkcje pieniądza
+1	Ekonomiczne	ekonomiczny	ADJ	adj:pl:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
+2	funkcje	funkcja	NOUN	subst:pl:nom:f	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 3	pieniądza	pieniądz	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod:arg	_	SpaceAfter=No
-4	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	5	punct	_	SpaceAfter=No
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-6	|	|	PUNCT	interp	PunctType=Comm	7	punct	_	_
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	conj	_	_
-8	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -103,18 +175,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja cyrkulacyjna (transakcyjna)[edytuj | edytuj kod]
+# text = Funkcja cyrkulacyjna (transakcyjna)
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	cyrkulacyjna	cyrkulacyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
 4	transakcyjna	transakcyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 5	)	)	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	7	punct	_	SpaceAfter=No
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-8	|	|	PUNCT	interp	PunctType=Comm	9	punct	_	_
-9	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	_
-10	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -235,7 +301,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja obrachunkowa (miernik wartości towarów)[edytuj | edytuj kod]
+# text = Funkcja obrachunkowa (miernik wartości towarów)
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	obrachunkowa	obrachunkowy	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
@@ -243,12 +309,6 @@
 5	wartości	wartość	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	4	nmod:arg	_	_
 6	towarów	towar	NOUN	subst:pl:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	5	nmod:arg	_	SpaceAfter=No
 7	)	)	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpaceAfter=No
-8	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	9	punct	_	SpaceAfter=No
-9	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-10	|	|	PUNCT	interp	PunctType=Comm	11	punct	_	_
-11	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	9	conj	_	_
-12	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No
-13	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -350,15 +410,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja płatnicza[edytuj | edytuj kod]
+# text = Funkcja płatnicza
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	płatnicza	płatniczy	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -549,15 +603,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja tezauryzacyjna[edytuj | edytuj kod]
+# text = Funkcja tezauryzacyjna
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	tezauryzacyjna	tezauryzacyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -711,16 +759,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Społeczne funkcje pieniądza[edytuj | edytuj kod]
-1	Społeczne	społeczny	ADJ	adj:pl:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
-2	funkcje	funkcja	NOUN	subst:pl:acc:f	Case=Acc|Gender=Fem|Number=Plur	5	obj	_	_
+# text = Społeczne funkcje pieniądza
+1	Społeczne	społeczny	ADJ	adj:pl:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
+2	funkcje	funkcja	NOUN	subst:pl:nom:f	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 3	pieniądza	pieniądz	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod:arg	_	SpaceAfter=No
-4	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	5	punct	_	SpaceAfter=No
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-6	|	|	PUNCT	interp	PunctType=Comm	7	punct	_	_
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	conj	_	_
-8	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -728,18 +770,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja behawioralna (zachowawcza)[edytuj | edytuj kod]
+# text = Funkcja behawioralna (zachowawcza)
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	behawioralna	behawioralny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
 4	zachowawcza	zachowawczy	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 5	)	)	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	7	punct	_	SpaceAfter=No
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-8	|	|	PUNCT	interp	PunctType=Comm	9	punct	_	_
-9	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	_
-10	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -815,15 +851,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja motywacyjna[edytuj | edytuj kod]
+# text = Funkcja motywacyjna
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	motywacyjna	motywacyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -886,18 +916,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja informacyjna (komunikacyjna)[edytuj | edytuj kod]
+# text = Funkcja informacyjna (komunikacyjna)
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	informacyjna	informacyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
 4	komunikacyjna	komunikacyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 5	)	)	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	7	punct	_	SpaceAfter=No
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-8	|	|	PUNCT	interp	PunctType=Comm	9	punct	_	_
-9	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	_
-10	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -944,21 +968,37 @@
 20	społeczeństwa	społeczeństwo	NOUN	subst:sg:gen:n:ncol	Case=Gen|Gender=Neut|Number=Sing	18	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	interp	PunctType=Peri	15	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Płaca natomiast nie jest jedynie miarą wysiłku pracownika, ale informacją co we własnym i społecznym interesie zrobił.
+1	Płaca	płaca	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+2	natomiast	natomiast	CCONJ	conj	_	6	cc	_	_
+3	nie	nie	PART	part	Polarity=Neg	4	advmod:neg	_	_
+4	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	jedynie	jedynie	PART	part	_	6	advmod:emph	_	_
+6	miarą	miara	NOUN	subst:sg:inst:f	Case=Ins|Gender=Fem|Number=Sing	0	root	_	_
+7	wysiłku	wysiłek	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod:arg	_	_
+8	pracownika	pracownik	NOUN	subst:sg:gen:m1	Animacy=Hum|Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	interp	PunctType=Comm	11	punct	_	_
+10	ale	ale	CCONJ	conj	_	11	cc	_	_
+11	informacją	informacja	NOUN	subst:sg:inst:f	Case=Ins|Gender=Fem|Number=Sing	6	conj	_	_
+12	co	co	PRON	subst:sg:acc:n:ncol	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	18	obj	_	_
+13	we	w	ADP	prep:loc:wok	AdpType=Prep|Variant=Long	17	case	_	_
+14	własnym	własny	ADJ	adj:sg:loc:m3:pos	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+15	i	i	CCONJ	conj	_	16	cc	_	_
+16	społecznym	społeczny	ADJ	adj:sg:loc:m3:pos	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	14	conj	_	_
+17	interesie	interes	NOUN	subst:sg:loc:m3	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	18	obl	_	_
+18	zrobił	zrobić	VERB	praet:sg:m1:perf	Animacy=Hum|Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	SpaceAfter=No
+19	.	.	PUNCT	interp	PunctType=Peri	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja dezintegracyjna[edytuj | edytuj kod]
+# text = Funkcja dezintegracyjna
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	dezintegracyjna	dezintegracyjny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -1015,23 +1055,48 @@
 20	itp	i tym podobne	X	brev:pun	Abbr=Yes|Pun=Yes	15	parataxis:insert	_	SpaceAfter=No
 21	.	.	PUNCT	interp	PunctType=Peri	1	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = Pokusa zdobycia pieniędzy za wszelką cenę determinuje rozwój przestępczości.
+1	Pokusa	pokusa	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+2	zdobycia	zdobyć	NOUN	ger:sg:gen:n:perf:aff	Aspect=Perf|Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos|VerbForm=Vnoun	1	nmod:arg	_	_
+3	pieniędzy	pieniądz	NOUN	subst:pl:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	2	obj	_	_
+4	za	za	ADP	prep:acc	AdpType=Prep	6	case	_	_
+5	wszelką	wszelki	DET	adj:sg:acc:f:pos	Case=Acc|Gender=Fem|Number=Sing|PronType=Tot	6	det	_	_
+6	cenę	cena	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	2	obl:arg	_	_
+7	determinuje	determinować	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	rozwój	rozwój	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	_
+9	przestępczości	przestępczość	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	8	nmod:arg	_	SpaceAfter=No
+10	.	.	PUNCT	interp	PunctType=Peri	7	punct	_	_
+
+# sent_id = 5
+# text = Środki z nielegalnej działalności wprowadzane do państwowego obiegu wpływają niekorzystnie na stabilność finansową państwa.
+1	Środki	środki	NOUN	subst:pl:nom:n:pt	Case=Nom|Gender=Neut|Number=Ptan	9	nsubj	_	_
+2	z	z	ADP	prep:gen:nwok	AdpType=Prep|Variant=Short	4	case	_	_
+3	nielegalnej	nielegalny	ADJ	adj:sg:gen:f:pos	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	działalności	działalność	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
+5	wprowadzane	wprowadzać	ADJ	ppas:pl:nom:m3:imperf:aff	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|VerbForm=Part|Voice=Pass	1	acl	_	_
+6	do	do	ADP	prep:gen	AdpType=Prep	8	case	_	_
+7	państwowego	państwowy	ADJ	adj:sg:gen:m3:pos	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	obiegu	obieg	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	obl:arg	_	_
+9	wpływają	wpływać	VERB	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	niekorzystnie	niekorzystnie	ADV	adv:pos	Degree=Pos	9	advmod	_	_
+11	na	na	ADP	prep:acc	AdpType=Prep	12	case	_	_
+12	stabilność	stabilność	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	9	obl:arg	_	_
+13	finansową	finansowy	ADJ	adj:sg:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+14	państwa	państwo	NOUN	subst:sg:gen:n:ncol	Case=Gen|Gender=Neut|Number=Sing	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	interp	PunctType=Peri	9	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Funkcja integrująco-instytucjonalna[edytuj | edytuj kod]
+# text = Funkcja integrująco-instytucjonalna
 1	Funkcja	funkcja	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	integrująco	integrujący	ADJ	adja	Hyph=Yes	1	amod	_	SpaceAfter=No
 3	-	-	PUNCT	interp	PunctType=Hyph	4	punct	_	SpaceAfter=No
 4	instytucjonalna	instytucjonalny	ADJ	adj:sg:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	6	punct	_	SpaceAfter=No
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-7	|	|	PUNCT	interp	PunctType=Comm	8	punct	_	_
-8	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	6	conj	_	_
-9	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -1101,16 +1166,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pożądane własności pieniądza[edytuj | edytuj kod]
-1	Pożądane	pożądany	ADJ	adj:pl:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
-2	własności	własność	NOUN	subst:pl:acc:f	Case=Acc|Gender=Fem|Number=Plur	5	obj	_	_
+# text = Pożądane własności pieniądza
+1	Pożądane	pożądany	ADJ	adj:pl:nom:f:pos	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
+2	własności	własność	NOUN	subst:pl:nom:f	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 3	pieniądza	pieniądz	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod:arg	_	SpaceAfter=No
-4	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	5	punct	_	SpaceAfter=No
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-6	|	|	PUNCT	interp	PunctType=Slsh	7	punct	_	_
-7	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	conj	_	_
-8	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -1118,15 +1177,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Historia pieniądza[edytuj | edytuj kod]
-1	Historia	historia	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+# text = Historia pieniądza
+1	Historia	historia	NOUN	subst:sg:nom:f	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	pieniądza	pieniądz	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod:arg	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -1134,15 +1187,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz pierwotny[edytuj | edytuj kod]
+# text = Pieniądz pierwotny
 1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	pierwotny	pierwotny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Slsh	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -1393,17 +1440,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz kruszcowy – monety[edytuj | edytuj kod]
+# text = Pieniądz kruszcowy – monety
 1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	kruszcowy	kruszcowy	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	_
 3	–	–	PUNCT	interp	PunctType=Dash	4	punct	_	_
 4	monety	monet	NOUN	subst:pl:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-5	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	6	punct	_	SpaceAfter=No
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	parataxis:insert	_	_
-7	|	|	PUNCT	interp	PunctType=Slsh	8	punct	_	_
-8	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	6	conj	_	_
-9	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2002,15 +2043,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz papierowy[edytuj | edytuj kod]
+# text = Pieniądz papierowy
 1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	papierowy	papierowy	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2307,15 +2342,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz bezgotówkowy[edytuj | edytuj kod]
+# text = Pieniądz bezgotówkowy
 1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	bezgotówkowy	bezgotówkowy	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2503,15 +2532,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pieniądz elektroniczny[edytuj | edytuj kod]
+# text = Pieniądz elektroniczny
 1	Pieniądz	pieniądz	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	elektroniczny	elektroniczny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2614,14 +2637,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kryptowaluty[edytuj | edytuj kod]
-1	Kryptowaluty	kryptowalut	NOUN	subst:pl:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	3	punct	_	SpaceAfter=No
-3	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-4	|	|	PUNCT	interp	PunctType=Comm	5	punct	_	_
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	conj	_	_
-6	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Kryptowaluty
+1	Kryptowaluty	kryptowalut	NOUN	subst:pl:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2795,14 +2812,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Przypisy[edytuj | edytuj kod]
+# text = Przypisy
 1	Przypisy	przypis	NOUN	subst:pl:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	3	punct	_	SpaceAfter=No
-3	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-4	|	|	PUNCT	interp	PunctType=Comm	5	punct	_	_
-5	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	conj	_	_
-6	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
@@ -2810,23 +2821,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Linki zewnętrzne[edytuj | edytuj kod]
-1	Linki	link	NOUN	subst:pl:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	0	root	_	_
+# text = Linki zewnętrzne
+1	Linki	link	NOUN	subst:pl:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	zewnętrzne	zewnętrzny	ADJ	adj:pl:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	4	punct	_	SpaceAfter=No
-4	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis:insert	_	_
-5	|	|	PUNCT	interp	PunctType=Comm	6	punct	_	_
-6	edytuj	edytować	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	kod	kod	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = polish-pdb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Menu nawigacyjne
-1	Menu	menu	NOUN	subst:sg:nom:n:ncol	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	nawigacyjne	nawigacyjny	ADJ	adj:pl:nom:n:pos	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur	1	amod	_	SpacesAfter=\n
 

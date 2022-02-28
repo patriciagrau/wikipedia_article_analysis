@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/Vereinigtes_K%C3%B6nigreich
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
 2	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 3	–	–	X	FM	Foreign=Yes|Person=3	2	appos	_	_
-4	Wikipedia	Wikipedia	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	PROPN	NE	Person=3	3	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18,104 +16,59 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vereinigtes Königreich
-1	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = amtlich regional:
-1	amtlich	amtlich	ADJ	ADJD	Degree=Pos|Variant=Short	2	advmod	_	_
-2	regional	regional	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
-3	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	_
-
-# sent_id = 2
-# text = Kornisch, Irisch, Schottisch-Gälisch, Scots, Ulster Scots und Walisisch
-1	Kornisch	kornisch	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
-3	Irisch	Irisch	NOUN	NN	Person=3	1	conj	_	SpaceAfter=No
-4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
-5	Schottisch-Gälisch	Gälisch	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-6	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
-7	Scots	Scots	X	FM	Foreign=Yes|Person=3	1	conj	_	SpaceAfter=No
-8	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
-9	Ulster	Ulster	NOUN	NN	Person=3	1	conj	_	_
-10	Scots	Scots	X	NE	Foreign=Yes|Person=3	9	flat:name	_	_
-11	und	und	CCONJ	KON	_	12	cc	_	_
-12	Walisisch	Walisisch	NOUN	NN	Person=3	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Das Vereinigte Königreich Großbritannien und Nordirland (englisch United Kingdom of Great Britain and Northern Ireland?/i), kurz Vereinigtes Königreich (englisch United Kingdom?/i [juːˌnaɪ̯.tʰɪd ˈkʰɪŋ.dəm], internationale Abkürzung:
+# text = Das Vereinigte Königreich Großbritannien und Nordirland (englisch United Kingdom of Great Britain and Northern Ireland?/i), kurz Vereinigtes Königreich (Englisch United Kingdom?/i , internationale Abkürzung: UK), ist ein auf den Britischen Inseln vor der Nordwestküste Kontinentaleuropas gelegener europäischer Staat und bildet den größten Inselstaat Europas.
 1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
 2	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
-3	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
+3	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	45	nsubj	_	_
 4	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	3	flat:name	_	_
 5	und	und	CCONJ	KON	_	6	cc	_	_
-6	Nordirland	Nordirland	PROPN	NE	Person=3	3	conj	_	_
+6	Nordirland	Nordirland	PROPN	NE	Number=Sing|Person=3	3	conj	_	_
 7	(	(	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
-8	englisch	englisch	ADJ	ADJD	Degree=Pos|Variant=Short	6	advmod	_	SpacesAfter=\s\s
+8	englisch	englisch	ADJ	ADJD	Degree=Pos|Variant=Short	9	advmod	_	SpacesAfter=\s\s
 9	United	United	X	FM	Foreign=Yes|Person=3	6	appos	_	_
 10	Kingdom	Kingdom	X	FM	Foreign=Yes|Person=3	9	flat	_	_
 11	of	of	X	FM	Foreign=Yes|Person=3	9	flat	_	_
 12	Great	Great	X	FM	Foreign=Yes|Person=3	9	flat	_	_
-13	Britain	Britain	PROPN	NE	Person=3	9	flat:name	_	_
+13	Britain	Britain	X	NE	Foreign=Yes|Person=3	9	flat	_	_
 14	and	and	X	FM	Foreign=Yes|Person=3	9	flat	_	_
-15	Northern	Northern	PROPN	NE	Foreign=Yes|Person=3	9	flat:name	_	_
+15	Northern	Northern	PROPN	NE	Person=3	9	flat:name	_	_
 16	Ireland?/i	Ireland?/i	PROPN	NE	Person=3	9	flat:name	_	SpaceAfter=No
 17	)	)	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
 18	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
 19	kurz	kurz	ADJ	ADJD	Degree=Pos|Variant=Short	21	advmod	_	_
 20	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	21	amod	_	_
 21	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	9	appos	_	_
-22	(	(	PUNCT	$(	PunctType=Brck	24	punct	_	SpaceAfter=No
-23	englisch	englisch	ADJ	ADJD	Degree=Pos|Variant=Short	24	advmod	_	SpacesAfter=\s\s
-24	United	United	X	FM	Foreign=Yes|Person=3	21	appos	_	_
-25	Kingdom?/i	Kingdom?/i	PROPN	NE	Number=Sing|Person=3	24	flat:name	_	_
-26	[	[	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
-27	juːˌnaɪ̯.tʰɪd	juːˌnaɪ̯.tʰɪd	X	FM	Foreign=Yes|Person=3	24	appos	_	_
-28	ˈkʰɪŋ.dəm	ˈkʰɪŋ.dəm	X	FM	Foreign=Yes|Person=3	27	flat	_	SpaceAfter=No
-29	]	]	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
-30	,	,	PUNCT	$,	PunctType=Comm	32	punct	_	_
-31	internationale	international	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	32	amod	_	_
-32	Abkürzung	Abkürzung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	appos	_	SpaceAfter=No
-33	:	:	PUNCT	$.	PunctType=Peri	3	punct	_	_
-
-# sent_id = 2
-# text = UK oder GB), ist ein auf den Britischen Inseln vor der Nordwestküste Kontinentaleuropas gelegener europäischer Staat und bildet den größten Inselstaat Europas.
-1	UK	UK	PROPN	NE	Number=Sing|Person=3	18	nsubj	_	_
-2	oder	oder	CCONJ	KON	_	3	cc	_	_
-3	GB	GB	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
-4	)	)	PUNCT	$(	PunctType=Brck	1	punct	_	SpaceAfter=No
-5	,	,	PUNCT	$,	PunctType=Comm	1	punct	_	_
-6	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
-7	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-8	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
-9	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	11	det	_	_
-10	Britischen	britisch	ADJ	ADJA	Degree=Pos|Number=Plur	11	amod	_	_
-11	Inseln	Insel	NOUN	NN	Gender=Fem|Number=Plur|Person=3	16	obl	_	_
-12	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
-13	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Nordwestküste	Küste	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	obl	_	_
-15	Kontinentaleuropas	Kontinentaleuropas	PROPN	NE	Case=Gen|Person=3	14	nmod	_	_
-16	gelegener	gelegener	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
-17	europäischer	europäisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
-18	Staat	Staat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-19	und	und	CCONJ	KON	_	20	cc	_	_
-20	bildet	bilden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
-21	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-22	größten	groß	ADJ	ADJA	Case=Acc|Degree=Sup|Gender=Masc|Number=Sing	23	amod	_	_
-23	Inselstaat	Staat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	20	obj	_	_
-24	Europas	Europas	PROPN	NE	Case=Gen|Gender=Fem|Number=Sing|Person=3	23	nmod	_	SpaceAfter=No
-25	.	.	PUNCT	$.	PunctType=Peri	18	punct	_	SpacesAfter=\n
+22	(	(	PUNCT	$(	PunctType=Brck	23	punct	_	SpaceAfter=No
+23	Englisch	Englisch	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	appos	_	SpacesAfter=\s\s
+24	United	United	X	FM	Foreign=Yes|Person=3	23	flat	_	_
+25	Kingdom?/i	Kingdom?/i	PROPN	NE	Number=Sing|Person=3	23	flat:name	_	_
+26	,	,	PUNCT	$,	PunctType=Comm	28	punct	_	_
+27	internationale	international	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	28	amod	_	_
+28	Abkürzung	Abkürzung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	23	appos	_	SpaceAfter=No
+29	:	:	PUNCT	$.	PunctType=Peri	30	punct	_	_
+30	UK	UK	PROPN	NE	Number=Sing|Person=3	28	appos	_	SpaceAfter=No
+31	)	)	PUNCT	$(	PunctType=Brck	23	punct	_	SpaceAfter=No
+32	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+33	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	cop	_	_
+34	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+35	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	38	case	_	_
+36	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	38	det	_	_
+37	Britischen	britisch	ADJ	ADJA	Degree=Pos|Number=Plur	38	amod	_	_
+38	Inseln	Insel	NOUN	NN	Gender=Fem|Number=Plur|Person=3	43	obl	_	_
+39	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	41	case	_	_
+40	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	Nordwestküste	Küste	NOUN	NN	Gender=Fem|Number=Sing|Person=3	43	obl	_	_
+42	Kontinentaleuropas	Kontinentaleuropas	PROPN	NE	Case=Gen|Person=3	41	nmod	_	_
+43	gelegener	gelegener	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	45	amod	_	_
+44	europäischer	europäisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	45	amod	_	_
+45	Staat	Staat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+46	und	und	CCONJ	KON	_	47	cc	_	_
+47	bildet	bilden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	conj	_	_
+48	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
+49	größten	groß	ADJ	ADJA	Case=Acc|Degree=Sup|Gender=Masc|Number=Sing	50	amod	_	_
+50	Inselstaat	Staat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	47	obj	_	_
+51	Europas	Europas	PROPN	NE	Case=Gen|Gender=Fem|Number=Sing|Person=3	50	nmod	_	SpaceAfter=No
+52	.	.	PUNCT	$.	PunctType=Peri	45	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -287,7 +240,7 @@
 # text = Staatsname im Deutschen
 1	Staatsname	Name	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
-3	Deutschen	Deutsch	NOUN	NN	Degree=Pos|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Deutschen	Deutsch	NOUN	NN	Degree=Pos|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -575,7 +528,7 @@
 3	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
 4	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	obl	_	_
 5	verbundene	verbinden	ADJ	ADJA	Degree=Pos|Number=Plur	6	amod	_	_
-6	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+6	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -715,7 +668,7 @@
 # newpar
 # sent_id = 1
 # text = Geographie
-1	Geographie	Geographie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Geographie	Geographie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -839,7 +792,7 @@
 # newpar
 # sent_id = 1
 # text = Landesteile
-1	Landesteile	Teil	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Landesteile	Teil	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -848,7 +801,7 @@
 # newpar
 # sent_id = 1
 # text = England
-1	England	England	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	England	England	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1133,7 +1086,7 @@
 # newpar
 # sent_id = 1
 # text = Wales
-1	Wales	Wales	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Wales	Wales	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1309,7 +1262,7 @@
 # newpar
 # sent_id = 1
 # text = Schottland
-1	Schottland	Schottland	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+1	Schottland	Schottland	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1653,7 +1606,7 @@
 # newpar
 # sent_id = 1
 # text = Nordirland
-1	Nordirland	Nordirland	PROPN	NE	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Nordirland	Nordirland	PROPN	NE	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1777,7 +1730,7 @@
 # newpar
 # sent_id = 1
 # text = Städte
-1	Städte	Stadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Städte	Stadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1946,7 +1899,7 @@
 # newpar
 # sent_id = 1
 # text = Klima
-1	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2294,7 +2247,7 @@
 # text = Auswirkungen des Klimawandels
 1	Auswirkungen	Auswirkung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 2	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	Klimawandels	Wandel	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Klimawandels	Wandel	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2460,7 +2413,7 @@
 # text = Flora und Fauna
 1	Flora	Flora	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Fauna	Fauna	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Fauna	Fauna	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2644,6 +2597,59 @@
 12	Birken-Arten	Art	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	conj	_	SpaceAfter=No
 13	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
+# sent_id = 10
+# text = Die Kulturlandschaften zwischen den Gebirgen sind mit zahlreichen Mooren und verschiedenen Wiesen und Heiden bedeckt.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Kulturlandschaften	Landschaft	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	nsubj:pass	_	_
+3	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+4	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	5	det	_	_
+5	Gebirgen	Gebirge	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nmod	_	_
+6	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
+7	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+8	zahlreichen	zahlreich	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	9	amod	_	_
+9	Mooren	Moor	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	15	obl	_	_
+10	und	und	CCONJ	KON	_	12	cc	_	_
+11	verschiedenen	verscheiden	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	12	amod	_	_
+12	Wiesen	Wiese	NOUN	NN	Gender=Fem|Number=Plur|Person=3	9	conj	_	_
+13	und	und	CCONJ	KON	_	14	cc	_	_
+14	Heiden	Heid	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	conj	_	_
+15	bedeckt	bedecken	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	15	punct	_	_
+
+# sent_id = 11
+# text = Es gibt Apfel- und Kirschbaumkulturen.
+1	Es	Es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	Apfel-	Apfel-	NOUN	TRUNC	Hyph=Yes	2	obj	_	_
+4	und	und	CCONJ	KON	_	5	cc	_	_
+5	Kirschbaumkulturen	Kultur	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 12
+# text = Verschiedene Arten von krautigen Pflanzen sind in großen Teilen des Landes heimisch.
+1	Verschiedene	verscheiden	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
+2	Arten	Art	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	nsubj	_	_
+3	von	von	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+4	krautigen	krautig	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	5	amod	_	_
+5	Pflanzen	Pflanze|Pflanzen	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nmod	_	_
+6	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
+7	in	in	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+8	großen	groß	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	9	amod	_	_
+9	Teilen	Teil	NOUN	NN	Case=Dat|Number=Plur|Person=3	12	obl	_	_
+10	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+11	Landes	Land	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	9	nmod	_	_
+12	heimisch	heimisch	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
+
+# sent_id = 13
+# text = Es gibt über 1600 Pflanzenarten.
+1	Es	Es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	über	über	ADV	ADV	_	4	advmod	_	_
+4	1600	1600	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nummod	_	_
+5	Pflanzenarten	Art	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2825,7 +2831,7 @@
 # newpar
 # sent_id = 1
 # text = Bevölkerung
-1	Bevölkerung	Bevölkerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Bevölkerung	Bevölkerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2834,7 +2840,7 @@
 # newpar
 # sent_id = 1
 # text = Demografie
-1	Demografie	Demografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Demografie	Demografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3160,7 +3166,7 @@
 # newpar
 # sent_id = 1
 # text = Sprachen
-1	Sprachen	Sprache	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Sprachen	Sprache	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3305,6 +3311,58 @@
 9	anerkannte	anerkennen	ADJ	ADJA	Degree=Pos|Number=Plur	10	amod	_	_
 10	Minderheitensprachen	Sprache	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = Daneben gibt es im Vereinigten Königreich diverse lokale Dialekte des Englischen, die aber keinen offiziellen Status haben und meist rein mündlicher Natur sind.
+1	Daneben	Daneben	ADV	PROAV	_	2	advmod	_	_
+2	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	6	amod	_	_
+6	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obl	_	_
+7	diverse	divers	ADJ	ADJA	Degree=Pos|Number=Plur	9	amod	_	_
+8	lokale	lokal	ADJ	ADJA	Degree=Pos|Number=Plur	9	amod	_	_
+9	Dialekte	Dialekt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	obj	_	_
+10	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+11	Englischen	Englisch	NOUN	NN	Degree=Pos|Number=Sing|Person=3	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+13	die	die	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	18	nsubj	_	_
+14	aber	aber	ADV	ADV	_	18	advmod	_	_
+15	keinen	kein	DET	PIAT	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Ind,Neg,Tot	17	det	_	_
+16	offiziellen	offiziell	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	Status	Status	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	obj	_	_
+18	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
+19	und	und	CCONJ	KON	_	24	cc	_	_
+20	meist	meist	ADV	ADV	Degree=Sup	24	advmod	_	_
+21	rein	rein	ADJ	ADJD	Degree=Pos|Variant=Short	24	advmod	_	_
+22	mündlicher	mündlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
+23	Natur	Natur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	obj	_	_
+24	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 9
+# text = Noch bis in die jüngste Vergangenheit hinein empfand man Dialekte und dialektal gefärbte Aussprache im klassenbewussten Königreich als sozialen Makel.
+1	Noch	Noch	ADV	ADV	_	6	advmod	_	_
+2	bis	bis	ADP	APPR	AdpType=Prep	6	case	_	_
+3	in	in	ADP	APPR	AdpType=Prep|Case=Acc	6	case	_	_
+4	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+5	jüngste	jung	ADJ	ADJA	Degree=Sup|Gender=Fem|Number=Sing	6	amod	_	_
+6	Vergangenheit	Vergangenheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	obl	_	_
+7	hinein	hinein	ADP	APZR	AdpType=Circ	6	case	_	_
+8	empfand	empfinden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	man	man	PRON	PIS	Case=Nom|Number=Sing|Person=3|PronType=Ind,Neg,Tot	8	nsubj	_	_
+10	Dialekte	Dialekt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	8	obj	_	_
+11	und	und	CCONJ	KON	_	14	cc	_	_
+12	dialektal	dialektal	ADJ	ADJD	Degree=Pos|Variant=Short	13	advmod	_	_
+13	gefärbte	färben	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	Aussprache	Aussprache	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	conj	_	_
+15	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	17	case	_	_
+16	klassenbewussten	klassenbewussten	ADJ	ADJA	_	17	amod	_	_
+17	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	14	nmod	_	_
+18	als	als	CCONJ	KOKOM	ConjType=Comp	20	case	_	_
+19	sozialen	sozial	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	_
+20	Makel	Makel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	obl	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3472,7 +3530,7 @@
 # sent_id = 1
 # text = Ethnische Gruppen
 1	Ethnische	ethnisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Gruppen	Gruppe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Gruppen	Gruppe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4420,7 +4478,7 @@
 # newpar
 # sent_id = 1
 # text = Bildung
-1	Bildung	Bildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Bildung	Bildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5040,7 +5098,7 @@
 # newpar
 # sent_id = 1
 # text = Gesundheit
-1	Gesundheit	Gesundheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Gesundheit	Gesundheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5404,7 +5462,7 @@
 # newpar
 # sent_id = 1
 # text = Religionen
-1	Religionen	Religion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Religionen	Religion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5671,7 +5729,7 @@
 # newpar
 # sent_id = 1
 # text = Geschichte
-1	Geschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Geschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5680,7 +5738,7 @@
 # newpar
 # sent_id = 1
 # text = Antike
-1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5817,7 +5875,7 @@
 4	und	und	CCONJ	KON	_	5	cc	_	_
 5	Wales	Wales	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	conj	_	_
 6	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
-7	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	nmod	_	SpacesAfter=\n
+7	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6217,7 +6275,7 @@
 31	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
 
 # sent_id = 4
-# text = So gingen die schottische Königen eine strategische Allianz mit Frankreich ein, auf dessen Krone die englischen Monarchen
+# text = So gingen die schottische Königen eine strategische Allianz mit Frankreich ein, auf dessen Krone die englischen Monarchen seit dem 14. Jahrhundert Erbansprüche erhoben und mit dem sie darüber in lang anhaltende Konflikte gerieten, insbesondere im Hundertjährigen Krieg.
 1	So	so	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	gingen	gehen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	5	det	_	_
@@ -6229,13 +6287,35 @@
 9	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
 10	Frankreich	Frankreich	PROPN	NE	Case=Dat|Number=Sing|Person=3	8	nmod	_	_
 11	ein	ein	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	SpaceAfter=No
-12	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+12	,	,	PUNCT	$,	PunctType=Comm	24	punct	_	_
 13	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
 14	dessen	dessen	DET	PRELAT	PronType=Rel	15	det	_	_
-15	Krone	Krone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obl	_	_
+15	Krone	Krone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	obl	_	_
 16	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	18	det	_	_
 17	englischen	englisch	ADJ	ADJA	Degree=Pos|Number=Plur	18	amod	_	_
-18	Monarchen	Monarchen	NOUN	NN	Gender=Masc|Number=Plur|Person=3	8	appos	_	SpacesAfter=\n
+18	Monarchen	Monarchen	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	nsubj	_	SpacesAfter=\n
+19	seit	seit	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+20	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
+21	14.	14.	ADJ	ADJA	Person=3	22	amod	_	_
+22	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	24	obl	_	_
+23	Erbansprüche	Pruch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	obj	_	_
+24	erhoben	erheben	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	acl	_	_
+25	und	und	CCONJ	KON	_	34	cc	_	_
+26	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	27	case	_	_
+27	dem	dem	PRON	PRELS	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Rel	34	obl	_	_
+28	sie	sie	PRON	PPER	Case=Nom|Number=Plur|Person=3|PronType=Prs	34	nsubj	_	_
+29	darüber	darüber	ADV	PROAV	_	34	advmod	_	_
+30	in	in	ADP	APPR	AdpType=Prep|Case=Acc	33	case	_	_
+31	lang	lang	ADJ	ADJD	Degree=Pos|Variant=Short	32	advmod	_	_
+32	anhaltende	anhalten	ADJ	ADJA	Degree=Pos|Number=Plur	33	amod	_	_
+33	Konflikte	Konflikt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	34	obj	_	_
+34	gerieten	geraten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	conj	_	SpaceAfter=No
+35	,	,	PUNCT	$,	PunctType=Comm	39	punct	_	_
+36	insbesondere	insbesondere	ADV	ADV	_	39	advmod	_	_
+37	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	39	case	_	_
+38	Hundertjährigen	hundertjährig	ADJ	ADJA	Degree=Pos|Number=Sing	39	amod	_	_
+39	Krieg	Krieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	34	obl	_	SpaceAfter=No
+40	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6247,7 +6327,7 @@
 1	Entstehung	Entstehung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
 3	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
-4	Königreichs	Reich	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Königreichs	Reich	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6684,7 +6764,7 @@
 5	19.	19.	ADJ	ADJA	Person=3	8	amod	_	_
 6	und	und	CCONJ	KON	_	7	cc	_	_
 7	20.	20.	ADJ	ADJA	Person=3	5	conj	_	_
-8	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nmod	_	SpacesAfter=\n
+8	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6757,6 +6837,91 @@
 8	in	in	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
 9	Nordamerika	Nordamerika	PROPN	NE	Number=Sing|Person=3	2	obl	_	SpaceAfter=No
 10	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Das Vereinigte Königreich, die dominierende Industrie- und Seefahrtsnation im 19. Jahrhundert, spielte eine bedeutende Rolle in der Entwicklung der modernen Demokratie, in Literatur und Wissenschaft.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	SpacesBefore=\n
+2	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	14	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+5	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+6	dominierende	dominieren	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	Industrie-	Industrie-	NOUN	TRUNC	Hyph=Yes	3	appos	_	_
+8	und	und	CCONJ	KON	_	9	cc	_	_
+9	Seefahrtsnation	Nation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	_
+10	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	12	case	_	_
+11	19.	19.	ADJ	ADJA	Person=3	12	amod	_	_
+12	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	9	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+14	spielte	spielen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+16	bedeutende	bedeuten	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
+17	Rolle	Rolle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	obj	_	_
+18	in	in	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+19	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Entwicklung	Entwicklung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nmod	_	_
+21	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+22	modernen	modern	ADJ	ADJA	Degree=Pos|Number=Sing	23	amod	_	_
+23	Demokratie	Demokratie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+25	in	in	ADP	APPR	AdpType=Prep|Case=Dat	26	case	_	_
+26	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	conj	_	_
+27	und	und	CCONJ	KON	_	28	cc	_	_
+28	Wissenschaft	Wissenschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	$.	PunctType=Peri	14	punct	_	_
+
+# sent_id = 2
+# text = Großbritannien trat für ein Mächtegleichgewicht auf dem europäischen Kontinent ein (Pax Britannica) und schloss dafür wechselnde Bündnisse.
+1	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	2	nsubj	_	_
+2	trat	treten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	für	für	ADP	APPR	AdpType=Prep|Case=Acc	5	case	_	_
+4	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Mächtegleichgewicht	Leichgewicht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obj	_	_
+6	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+7	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	europäischen	europäisch	ADJ	ADJA	Degree=Pos|Number=Sing	9	amod	_	_
+9	Kontinent	Kontinent	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+10	ein	ein	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	_
+11	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+12	Pax	Pax	X	FM	Foreign=Yes|Person=3	5	appos	_	_
+13	Britannica	Britannica	PROPN	NE	Person=3	12	flat:name	_	SpaceAfter=No
+14	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	_
+15	und	und	CCONJ	KON	_	16	cc	_	_
+16	schloss	schließen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+17	dafür	dafür	ADV	PROAV	_	16	advmod	_	_
+18	wechselnde	wechseln	ADJ	ADJA	Degree=Pos|Number=Plur	19	amod	_	_
+19	Bündnisse	Bündnis	NOUN	NN	Gender=Neut|Number=Plur|Person=3	16	obj	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Auf seinem Höhepunkt umfasste das Britische Weltreich zwei Fünftel der Landfläche der Erde, die in vielen Kriegen erobert worden waren.
+1	Auf	Auf	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
+2	seinem	sein	PRON	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	_	_
+3	Höhepunkt	Höhepunkt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+4	umfasste	umfassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+6	Britische	britisch	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	_
+7	Weltreich	Weltreich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
+8	zwei	zwei	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	nummod	_	_
+9	Fünftel	Fünftel	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	obj	_	_
+10	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Landfläche	Landfläche	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	nmod	_	_
+12	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	Erde	Erde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+15	die	die	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	19	nsubj:pass	_	_
+16	in	in	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+17	vielen	viel	ADJ	PIDAT	Case=Dat|Degree=Pos|Number=Plur|Person=3	18	amod	_	_
+18	Kriegen	Krieg	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	19	obl	_	_
+19	erobert	erobern	VERB	VVPP	Aspect=Perf|VerbForm=Part	11	acl	_	_
+20	worden	werden	AUX	VAPP	Aspect=Perf|VerbForm=Part	19	aux:pass	_	_
+21	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7056,7 +7221,7 @@
 1	Seit	Seit	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
 2	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	Zweiten	zweit	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
-4	Weltkrieg	Weltkrieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+4	Weltkrieg	Weltkrieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7624,7 +7789,7 @@
 18	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 5
-# text = 1990 gab es gewalttätige Proteste gegen eine neue Kopfsteuer, welche 1992 wieder abgeschafft, und durch eine andere Steuer ersetzt wurde.
+# text = 1990 gab es gewalttätige Proteste gegen eine neue Kopfsteuer (community charge genannt, jedoch besser bekannt als poll tax), welche 1992 wieder abgeschafft, und durch eine andere Steuer ersetzt wurde.
 1	1990	1990	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	obl	_	_
 2	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -7633,21 +7798,99 @@
 6	gegen	gegen	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
 7	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 8	neue	neu	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
-9	Kopfsteuer	Steuer	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nmod	_	SpaceAfter=No
-10	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
-11	welche	welche	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	14	nsubj:pass	_	_
-12	1992	1992	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	obl	_	_
-13	wieder	wieder	ADV	ADV	_	14	advmod	_	_
-14	abgeschafft	abschaffen	VERB	VVPP	Aspect=Perf|VerbForm=Part	9	acl	_	SpaceAfter=No
-15	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
-16	und	und	CCONJ	KON	_	21	cc	_	_
-17	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
-18	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-19	andere	ander	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	_
-20	Steuer	Steuer	NOUN	NN	Number=Sing|Person=3	21	obl	_	_
-21	ersetzt	ersetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	14	conj	_	_
-22	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	SpaceAfter=No
-23	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+9	Kopfsteuer	Steuer	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nmod	_	_
+10	(	(	PUNCT	$(	PunctType=Brck	13	punct	_	SpaceAfter=No
+11	community	community	X	FM	Foreign=Yes|Person=3	9	appos	_	_
+12	charge	charge	X	FM	Foreign=Yes|Person=3	11	flat	_	_
+13	genannt	nennen	VERB	VVPP	Aspect=Perf|VerbForm=Part	9	acl	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+15	jedoch	jedoch	CCONJ	KON	_	17	cc	_	_
+16	besser	gut	ADJ	ADJD	Degree=Cmp|Variant=Short	17	advmod	_	_
+17	bekannt	bekennen	ADJ	ADJD	Degree=Pos|Variant=Short	13	conj	_	_
+18	als	als	CCONJ	KOKOM	ConjType=Comp	19	case	_	_
+19	poll	poll	X	FM	Foreign=Yes|Person=3	17	obl	_	_
+20	tax	tax	X	FM	Foreign=Yes|Person=3	19	flat	_	SpaceAfter=No
+21	)	)	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+23	welche	welche	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	26	nsubj:pass	_	_
+24	1992	1992	NUM	CARD	Number=Plur|NumType=Card|Person=3	26	obl	_	_
+25	wieder	wieder	ADV	ADV	_	26	advmod	_	_
+26	abgeschafft	abschaffen	VERB	VVPP	Aspect=Perf|VerbForm=Part	9	acl	_	SpaceAfter=No
+27	,	,	PUNCT	$,	PunctType=Comm	33	punct	_	_
+28	und	und	CCONJ	KON	_	33	cc	_	_
+29	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	32	case	_	_
+30	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+31	andere	ander	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	32	amod	_	_
+32	Steuer	Steuer	NOUN	NN	Number=Sing|Person=3	33	obl	_	_
+33	ersetzt	ersetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	26	conj	_	_
+34	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux:pass	_	SpaceAfter=No
+35	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = In die Ära Thatcher fiel auch die Rückeroberung der 1982 von Argentinien besetzten Falklandinseln.
+1	In	In	ADP	APPR	AdpType=Prep|Case=Acc	3	case	_	_
+2	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	Ära	Ära	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obl	_	_
+4	Thatcher	Thatcher	PROPN	NE	Person=3	3	flat:name	_	_
+5	fiel	fallen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	auch	auch	ADV	ADV	_	8	advmod	_	_
+7	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Rückeroberung	Eroberung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+9	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	14	det	_	_
+10	1982	1982	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	obl	_	_
+11	von	von	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	Argentinien	Argentinien	PROPN	NE	Number=Sing|Person=3	13	obl	_	_
+13	besetzten	besetzen	ADJ	ADJA	Degree=Pos|Number=Plur	14	amod	_	_
+14	Falklandinseln	Insel	NOUN	NN	Gender=Fem|Number=Plur|Person=3	8	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Die Konservativen waren bis 1997 an der Macht.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Konservativen	Konservativ	NOUN	NN	Degree=Pos|Number=Plur|Person=3	8	nsubj	_	_
+3	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+4	bis	bis	ADP	APPR	AdpType=Prep	5	case	_	_
+5	1997	1997	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	nmod	_	_
+6	an	an	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+7	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Macht	Macht	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = 1997 siegte New Labour in den Unterhauswahlen, deren Vorsitzender Tony Blair wurde Premierminister.
+1	1997	1997	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	obl	_	_
+2	siegte	siegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	New	New	PROPN	NE	Number=Sing|Person=3	2	nsubj	_	_
+4	Labour	Labour	PROPN	NE	Person=3	3	flat:name	_	_
+5	in	in	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+6	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	7	det	_	_
+7	Unterhauswahlen	Auswahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+9	deren	deren	DET	PRELAT	PronType=Rel	10	det	_	_
+10	Vorsitzender	Vorsitzend	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_
+11	Tony	Tony	PROPN	NE	Number=Sing|Person=3	10	flat:name	_	_
+12	Blair	Blair	PROPN	NE	Number=Sing|Person=3	10	flat:name	_	_
+13	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
+14	Premierminister	Premierminister	NOUN	NN	Gender=Masc|Number=Sing|Person=3	13	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 9
+# text = Im gleichen Jahr am 1. Juli wurde die britische Kronkolonie Hongkong an China zurückgegeben.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+2	gleichen	gleich	ADJ	ADJA	Degree=Pos|Number=Sing	3	amod	_	_
+3	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	14	obl	_	_
+4	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	1.	1.	ADJ	ADJA	Person=3	6	amod	_	_
+6	Juli	Juli	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+7	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+8	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	britische	britisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	Kronkolonie	Kolonie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nsubj:pass	_	_
+11	Hongkong	Hongkong	PROPN	NE	Number=Sing|Person=3	10	flat:name	_	_
+12	an	an	ADP	APPR	AdpType=Prep|Case=Acc	13	case	_	_
+13	China	China	PROPN	NE	Number=Sing|Person=3	14	obl	_	_
+14	zurückgegeben	zurückgeben	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8166,7 +8409,7 @@
 # newpar
 # sent_id = 1
 # text = Politik
-1	Politik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Politik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8214,6 +8457,160 @@
 11	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	Commonwealth	Commonwealth	NOUN	NN	Person=3	10	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Die Verfassung des Landes ist nicht kodifiziert.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Verfassung	Verfassung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nsubj:pass	_	_
+3	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
+4	Landes	Land	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	2	nmod	_	_
+5	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+6	nicht	nicht	PART	PTKNEG	Polarity=Neg	7	advmod	_	_
+7	kodifiziert	kodifizieren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 5
+# text = Diese besteht vielmehr aus Gewohnheitsrecht, erlassenen Gesetzen mit Verfassungsrang und dem Common Law, die zusammen als britisches Verfassungsrecht bezeichnet werden.
+1	Diese	Diese	PRON	PDS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_
+2	besteht	bestehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	vielmehr	vielmehr	ADV	ADV	_	2	advmod	_	_
+4	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+5	Gewohnheitsrecht	Recht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+7	erlassenen	erlassen	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	8	amod	_	_
+8	Gesetzen	Gesetz	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	5	conj	_	_
+9	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	Verfassungsrang	Verfassungsrang	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+11	und	und	CCONJ	KON	_	13	cc	_	_
+12	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Common	unknown	X	FM	Person=3	5	conj	_	_
+14	Law	Law	PROPN	NE	Number=Sing|Person=3	13	flat:name	_	SpaceAfter=No
+15	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+16	die	die	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	21	nsubj:pass	_	_
+17	zusammen	zusammen	ADV	ADV	_	21	advmod	_	_
+18	als	als	CCONJ	KOKOM	ConjType=Comp	20	case	_	_
+19	britisches	britisch	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	_
+20	Verfassungsrecht	Recht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	obl	_	_
+21	bezeichnet	bezeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	13	acl	_	_
+22	werden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 6
+# text = Da es keinen Unterschied gibt zwischen Statuten und sogenanntem konstitutionellem Recht, kann das britische Parlament „konstitutionelle Reformen“ umsetzen, indem es gewöhnliche Acts of Parliament erlässt.
+1	Da	Da	SCONJ	KOUS	_	5	mark	_	_
+2	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+3	keinen	kein	DET	PIAT	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Ind,Neg,Tot	4	det	_	_
+4	Unterschied	Unterschied	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obj	_	_
+5	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	_	_
+6	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+7	Statuten	Statut	NOUN	NN	Gender=Neut|Number=Plur|Person=3	5	obl	_	_
+8	und	und	CCONJ	KON	_	12	cc	_	_
+9	so	so	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
+10	genanntem	nennen	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Sing	12	amod	_	_
+11	konstitutionellem	konstitutionell	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Sing	12	amod	_	_
+12	Recht	Recht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	7	conj	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+14	kann	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	21	aux	_	_
+15	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
+16	britische	britisch	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+17	Parlament	Parlament	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	nsubj	_	_
+18	„	„	PUNCT	$(	PunctType=Brck	21	punct	_	SpaceAfter=No
+19	konstitutionelle	konstitutionell	ADJ	ADJA	Degree=Pos|Number=Plur	20	amod	_	_
+20	Reformen“	Reformen“	NOUN	NN	Gender=Fem|Number=Plur|Person=3	21	obj	_	_
+21	umsetzen	umsetzen	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	29	punct	_	_
+23	indem	indem	SCONJ	KOUS	_	29	mark	_	_
+24	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+25	gewöhnliche	gewöhnlich	ADJ	ADJA	Degree=Pos|Number=Plur	26	amod	_	_
+26	Acts	Acts	X	FM	Foreign=Yes|Person=3	29	obj	_	_
+27	of	of	X	FM	Foreign=Yes|Person=3	26	flat	_	_
+28	Parliament	Parliament	X	FM	Foreign=Yes|Person=3	26	flat	_	_
+29	erlässt	erlassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	_	SpaceAfter=No
+30	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	_
+
+# sent_id = 7
+# text = Es besitzt die Macht jegliches geschriebene oder ungeschriebene Verfassungselement abzuändern, jedoch dürfen nachfolgende Regierungen diese Änderungen ebenfalls umwandeln oder wieder rückgängig machen.
+1	Es	Es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	besitzt	besitzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Macht	Macht	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obj	_	_
+5	jegliches	jeglich	ADJ	PIDAT	Case=Acc|Gender=Neut|Number=Sing|Person=3	9	amod	_	_
+6	geschriebene	schreiben	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	_
+7	oder	oder	CCONJ	KON	_	8	cc	_	_
+8	ungeschriebene	ungeschrieben	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	6	conj	_	_
+9	Verfassungselement	Element	NOUN	NN	Gender=Neut|Number=Sing|Person=3	10	obj	_	_
+10	abzuändern	abändern	VERB	VVIZU	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+12	jedoch	jedoch	CCONJ	KON	_	19	cc	_	_
+13	dürfen	dürfen	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	19	aux	_	_
+14	nachfolgende	nachfolgen	ADJ	ADJA	Degree=Pos|Number=Plur	15	amod	_	_
+15	Regierungen	Regierung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	19	nsubj	_	_
+16	diese	dies	DET	PDAT	Case=Acc|Number=Plur|PronType=Dem	17	det	_	_
+17	Änderungen	Änderung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	19	obj	_	_
+18	ebenfalls	ebenfalls	ADV	ADV	_	19	advmod	_	_
+19	umwandeln	umwandeln	VERB	VVINF	VerbForm=Inf	2	conj	_	_
+20	oder	oder	CCONJ	KON	_	23	cc	_	_
+21	wieder	wieder	ADV	ADV	_	23	advmod	_	_
+22	rückgängig	rückgängig	ADJ	ADJD	Degree=Pos|Variant=Short	23	xcomp	_	_
+23	machen	machen	VERB	VVINF	VerbForm=Inf	19	conj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 8
+# text = Es gibt allerdings Gesetze mit De-facto-Verfassungsrang, wie beispielsweise die Bill of Rights.
+1	Es	Es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	allerdings	allerdings	ADV	ADV	_	2	advmod	_	_
+4	Gesetze	Gesetz	NOUN	NN	Gender=Neut|Number=Plur|Person=3	2	obj	_	_
+5	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	De-facto-Verfassungsrang	Verfassungsrang	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+8	wie	wie	CCONJ	KOKOM	ConjType=Comp	11	case	_	_
+9	beispielsweise	beispielsweise	ADV	ADV	_	11	advmod	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Bill	Bill	X	FM	Foreign=Yes|Person=3	2	obl	_	_
+12	of	of	X	FM	Foreign=Yes|Person=3	11	flat	_	_
+13	Rights	Rights	X	FM	Foreign=Yes|Person=3	11	flat	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 9
+# text = Grundsätzlich gilt, dass große Ausgestaltungsfreiräume für Gesetze bei den Gerichten liegen, da das britische Rechtssystem auf dem Prinzip des Gewohnheitsrechts (vgl. „conventions“) und der richtigen Auslegung von Präzedenzfällen durch Gerichte fußt.
+1	Grundsätzlich	grundsätzlich	ADJ	ADJD	Degree=Pos|Variant=Short	2	advmod	_	_
+2	gilt	gelten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
+4	dass	dass	SCONJ	KOUS	_	12	mark	_	_
+5	große	groß	ADJ	ADJA	Degree=Pos|Number=Plur	6	amod	_	_
+6	Ausgestaltungsfreiräume	unknoausgestaltungsfreiräun	NOUN	NN	Gender=Masc|Number=Plur|Person=3	12	nsubj	_	_
+7	für	für	ADP	APPR	AdpType=Prep|Case=Acc	8	case	_	_
+8	Gesetze	Gesetz	NOUN	NN	Gender=Neut|Number=Plur|Person=3	6	nmod	_	_
+9	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+10	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	11	det	_	_
+11	Gerichten	Gericht	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	12	obl	_	_
+12	liegen	liegen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	csubj	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	36	punct	_	_
+14	da	da	SCONJ	KOUS	_	36	mark	_	_
+15	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
+16	britische	britisch	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+17	Rechtssystem	System	NOUN	NN	Gender=Neut|Number=Sing|Person=3	36	nsubj	_	_
+18	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+19	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
+20	Prinzip	Prinzip	NOUN	NN	Gender=Neut|Number=Sing|Person=3	36	obl	_	_
+21	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
+22	Gewohnheitsrechts	Recht	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	20	nmod	_	_
+23	(	(	PUNCT	$(	PunctType=Brck	24	punct	_	SpaceAfter=No
+24	vgl.	vgl.	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	22	parataxis	_	_
+25	„	„	PUNCT	$(	PunctType=Brck	26	punct	_	SpaceAfter=No
+26	conventions“	conventions“	X	FM	Foreign=Yes|Person=3	24	obj	_	SpaceAfter=No
+27	)	)	PUNCT	$(	PunctType=Brck	24	punct	_	_
+28	und	und	CCONJ	KON	_	31	cc	_	_
+29	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+30	richtigen	richtig	ADJ	ADJA	Degree=Pos|Number=Sing	31	amod	_	_
+31	Auslegung	Auslegung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	conj	_	_
+32	von	von	ADP	APPR	AdpType=Prep|Case=Dat	33	case	_	_
+33	Präzedenzfällen	Präzedenzfall	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	31	nmod	_	_
+34	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	35	case	_	_
+35	Gerichte	Gericht	NOUN	NN	Gender=Neut|Number=Plur|Person=3	31	nmod	_	_
+36	fußt	fußen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	SpaceAfter=No
+37	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8536,6 +8933,71 @@
 14	herzustellen	herstellen	VERB	VVIZU	VerbForm=Inf	4	advcl	_	SpaceAfter=No
 15	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Für Männer galt dagegen ab 1921 ein allgemeines Wahlrecht ab 21 Jahren.
+1	Für	Für	ADP	APPR	AdpType=Prep|Case=Acc	2	case	_	_
+2	Männer	Mann	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	obl	_	_
+3	galt	gelten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	dagegen	dagegen	ADV	PROAV	_	3	advmod	_	_
+5	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	1921	1921	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	obl	_	_
+7	ein	ein	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	9	det	_	_
+8	allgemeines	allgemein	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	_
+9	Wahlrecht	Wahlrecht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nsubj	_	_
+10	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+11	21	21	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	nummod	_	_
+12	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	9	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 7
+# text = Für Männer, die im Militärdienst gewesen waren, und bestimmte Anforderungen an Aufenthaltsdauer im Land und Eigentum erfüllten, lag die Grenze bei 19 Jahren.
+1	Für	Für	ADP	APPR	AdpType=Prep|Case=Acc	2	case	_	_
+2	Männer	Mann	NOUN	NN	Gender=Masc|Number=Plur|Person=3	21	obl	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+4	die	die	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	6	nsubj	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+6	Militärdienst	Dienst	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	acl	_	_
+7	gewesen	sein	AUX	VAPP	Aspect=Perf|VerbForm=Part	6	cop	_	_
+8	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+10	und	und	CCONJ	KON	_	19	cc	_	_
+11	bestimmte	bestimmen	ADJ	ADJA	Degree=Pos|Number=Plur	12	amod	_	_
+12	Anforderungen	Anforderung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	19	obj	_	_
+13	an	an	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+14	Aufenthaltsdauer	Dauer	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nmod	_	_
+15	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	16	case	_	_
+16	Land	Land	NOUN	NN	Gender=Neut|Number=Sing|Person=3	14	nmod	_	_
+17	und	und	CCONJ	KON	_	18	cc	_	_
+18	Eigentum	Eigentum	NOUN	NN	Gender=Neut|Number=Sing|Person=3	16	conj	_	_
+19	erfüllten	erfüllen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+21	lag	liegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+22	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	Grenze	Grenze	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nsubj	_	_
+24	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	26	case	_	_
+25	19	19	NUM	CARD	Number=Plur|NumType=Card|Person=3	26	nummod	_	_
+26	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	21	obl	_	SpaceAfter=No
+27	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	_
+
+# sent_id = 8
+# text = Volle Gleichheit mit Männern in Bezug auf das Wahlrecht wurde am 2. Juli 1928 erreicht.
+1	Volle	voll	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	Gleichheit	Gleichheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	nsubj:pass	_	_
+3	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+4	Männern	Mann	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	2	nmod	_	_
+5	in	in	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Bezug	Bezug	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+7	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+8	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	9	det	_	_
+9	Wahlrecht	Wahlrecht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	nmod	_	_
+10	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
+11	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	13	case	_	_
+12	2.	2.	ADJ	ADJA	Person=3	13	amod	_	_
+13	Juli	Juli	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	obl	_	_
+14	1928	1928	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nmod	_	_
+15	erreicht	erreichen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	15	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -8543,7 +9005,7 @@
 # newpar
 # sent_id = 1
 # text = Regierung
-1	Regierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Regierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8807,7 +9269,7 @@
 # newpar
 # sent_id = 1
 # text = Parlament
-1	Parlament	Parlament	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Parlament	Parlament	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8943,7 +9405,7 @@
 # newpar
 # sent_id = 1
 # text = Staatsoberhaupt
-1	Staatsoberhaupt	Staatsoberhaupt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Staatsoberhaupt	Staatsoberhaupt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9362,7 +9824,7 @@
 # sent_id = 1
 # text = Politische Indizes
 1	Politische	politisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Indizes	Indize	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Indizes	Indize	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9371,7 +9833,7 @@
 # newpar
 # sent_id = 1
 # text = Militär
-1	Militär	Militär	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Militär	Militär	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9590,6 +10052,34 @@
 16	Welt	Welt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	$.	PunctType=Peri	11	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Im Juni 2017 ging der neue Flugzeugträger HMS Queen Elizabeth (R08) erstmals auf Probefahrt; es hat etwa 3,5 Milliarden Pfund gekostet.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Juni	Juni	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+3	2017	2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	_
+4	ging	gehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	neue	neu	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
+7	Flugzeugträger	Träger	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+8	HMS	HMS	PROPN	NE	Person=3	7	flat:name	_	_
+9	Queen	Queen	PROPN	NE	Person=3	7	flat:name	_	_
+10	Elizabeth	Elizabeth	PROPN	NE	Gender=Fem|Number=Sing|Person=3	7	flat:name	_	_
+11	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+12	R08	R08	X	FM	Foreign=Yes|Person=3	9	appos	_	SpaceAfter=No
+13	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	_
+14	erstmals	erstmals	ADV	ADV	_	4	advmod	_	_
+15	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	16	case	_	_
+16	Probefahrt	Fahrt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	SpaceAfter=No
+17	;	;	PUNCT	$.	PunctType=Peri	4	punct	_	_
+18	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+19	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
+20	etwa	etwa	ADV	ADV	_	21	advmod	_	_
+21	3,5	3,5	NUM	CARD	Number=Plur|NumType=Card|Person=3	22	nummod	_	_
+22	Milliarden	Milliarde	NOUN	NN	Gender=Fem|Number=Plur|Person=3	23	nummod	_	_
+23	Pfund	Pfund	NOUN	NN	Gender=Neut|Number=Plur|Person=3	24	obj	_	_
+24	gekostet	kosten	VERB	VVPP	Aspect=Perf|VerbForm=Part	4	parataxis	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9665,7 +10155,7 @@
 1	Krieg	Krieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	gegen	gegen	ADP	APPR	AdpType=Prep|Case=Acc	4	case	_	_
 3	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Terror	Terror	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Terror	Terror	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9772,6 +10262,94 @@
 11	Kraft	Kraft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
 12	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Als Reaktion auf die Terroranschläge am 7. Juli 2005 in London wurde ein weiteres Anti-Terrorismus-Gesetz verabschiedet.
+1	Als	Als	CCONJ	KOKOM	ConjType=Comp	2	case	_	_
+2	Reaktion	Reaktion	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	obl	_	_
+3	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	5	case	_	_
+4	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	5	det	_	_
+5	Terroranschläge	Terroranschlag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nmod	_	_
+6	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	8	case	_	_
+7	7.	7.	ADJ	ADJA	Person=3	8	amod	_	_
+8	Juli	Juli	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+9	2005	2005	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	nmod	_	_
+10	in	in	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	London	London	PROPN	NE	Number=Sing|Person=3	5	nmod	_	_
+12	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
+13	ein	ein	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	15	det	_	_
+14	weiteres	weit	ADJ	ADJA	Degree=Cmp|Gender=Neut|Number=Sing	15	amod	_	_
+15	Anti-Terrorismus-Gesetz	Gesetz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	16	nsubj:pass	_	_
+16	verabschiedet	verabschieden	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	16	punct	_	_
+
+# sent_id = 7
+# text = Großbritannien wurde vorgeworfen, im Kampf gegen den Terror Menschenrechtsverletzungen begangen zu haben.
+1	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	3	nsubj:pass	_	_
+2	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
+3	vorgeworfen	vorwerfen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+6	Kampf	Kampf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+7	gegen	gegen	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+8	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Terror	Terror	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+10	Menschenrechtsverletzungen	Rechtsverletzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	11	obj	_	_
+11	begangen	begehen	VERB	VVPP	Aspect=Perf|VerbForm=Part	3	xcomp	_	_
+12	zu	zu	PART	PTKZU	PartType=Inf	11	mark	_	_
+13	haben	haben	AUX	VAINF	VerbForm=Inf	11	aux	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 8
+# text = Zwölf Verdächtige im Zusammenhang mit Terroranschlägen werden aufgrund der Möglichkeiten des Anti-Terror-Gesetzes bereits mehrere Jahre ohne Anklage in Hochsicherheitsgefängnissen in Großbritannien eingesperrt.
+1	Zwölf	Zwölf	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nummod	_	_
+2	Verdächtige	Verdächtig	NOUN	NN	Degree=Pos|Number=Plur|Person=3	22	nsubj:pass	_	_
+3	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
+4	Zusammenhang	Zusammenhang	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+5	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Terroranschlägen	Terroranschlag	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	4	nmod	_	_
+7	werden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	_	_
+8	aufgrund	aufgrund	ADP	APPR	AdpType=Prep|Case=Gen	10	case	_	_
+9	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	10	det	_	_
+10	Möglichkeiten	Möglichkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	22	obl	_	_
+11	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	12	det	_	_
+12	Anti-Terror-Gesetzes	Gesetz	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	10	nmod	_	_
+13	bereits	bereits	ADV	ADV	_	22	advmod	_	_
+14	mehrere	mehrer	DET	PIAT	Case=Acc|Number=Plur|Person=3|PronType=Ind,Neg,Tot	15	det	_	_
+15	Jahre	Jahr	NOUN	NN	Gender=Neut|Number=Plur|Person=3	22	obl	_	_
+16	ohne	ohne	ADP	APPR	AdpType=Prep|Case=Acc	17	case	_	_
+17	Anklage	Anklage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	obl	_	_
+18	in	in	ADP	APPR	AdpType=Prep|Case=Dat	19	case	_	_
+19	Hochsicherheitsgefängnissen	shsicherheitsgefängnissenin	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	22	obl	_	_
+20	in	in	ADP	APPR	AdpType=Prep|Case=Dat	21	case	_	_
+21	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	19	nmod	_	_
+22	eingesperrt	einsperren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	22	punct	_	_
+
+# sent_id = 9
+# text = Im Irakkrieg ist es nach Angaben von amnesty International zu Folterungen und Misshandlungen von Häftlingen durch britische und amerikanischen Soldaten gekommen.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Irakkrieg	Krieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	obl	_	_
+3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	_
+4	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	nsubj:pass	_	_
+5	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Angaben	Angabe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	21	obl	_	_
+7	von	von	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	amnesty	amnesty	X	FM	Foreign=Yes|Person=3	6	nmod	_	_
+9	International	International	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+10	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	Folterungen	Folterung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	21	obl	_	_
+12	und	und	CCONJ	KON	_	13	cc	_	_
+13	Misshandlungen	Handlung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	11	conj	_	_
+14	von	von	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+15	Häftlingen	Häftling	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	13	nmod	_	_
+16	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
+17	britische	britisch	ADJ	ADJA	Degree=Pos|Number=Plur	20	amod	_	_
+18	und	und	CCONJ	KON	_	19	cc	_	_
+19	amerikanischen	amerikanisch	ADJ	ADJA	Degree=Pos|Number=Plur	17	conj	_	_
+20	Soldaten	Soldat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	13	nmod	_	_
+21	gekommen	kommen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9779,7 +10357,7 @@
 # newpar
 # sent_id = 1
 # text = Außenpolitik
-1	Außenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Außenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10109,7 +10687,7 @@
 # newpar
 # sent_id = 1
 # text = Verwaltungsgliederung
-1	Verwaltungsgliederung	Gliederung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Verwaltungsgliederung	Gliederung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10513,7 +11091,7 @@
 # newpar
 # sent_id = 1
 # text = Polizei
-1	Polizei	Polizei	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Polizei	Polizei	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10606,7 +11184,7 @@
 # newpar
 # sent_id = 1
 # text = Kriminalität
-1	Kriminalität	Kriminalität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Kriminalität	Kriminalität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10936,7 +11514,7 @@
 # newpar
 # sent_id = 1
 # text = Recht
-1	Recht	Recht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Recht	Recht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11653,7 +12231,7 @@
 # newpar
 # sent_id = 1
 # text = Wirtschaft
-1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12046,6 +12624,113 @@
 29	Group	Group	X	FM	Foreign=Yes|Person=3	28	flat:name	_	SpaceAfter=No
 30	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = Die Industrielle Revolution hatte ihren Ursprung im Vereinigten Königreich.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	Industrielle	industriell	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	Revolution	Revolution	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+4	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	ihren	sein	PRON	PPOSAT	Case=Acc|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	_	_
+6	Ursprung	Ursprung	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obj	_	_
+7	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	9	case	_	_
+8	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	9	amod	_	_
+9	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	obl	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 5
+# text = Zu Beginn gab es eine Konzentration auf die Schwerindustrie mit Schwerpunkten beim Schiffbau, der Erzeugung von Stahl und Maschinenbau.
+1	Zu	Zu	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	Beginn	Beginn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+3	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+5	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Konzentration	Konzentration	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	obj	_	_
+7	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+8	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Schwerindustrie	Industrie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	nmod	_	_
+10	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	Schwerpunkten	Punkt	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	6	nmod	_	_
+12	beim	beim	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	13	case	_	_
+13	Schiffbau	Schiffbau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+15	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Erzeugung	Erzeugung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	conj	_	_
+17	von	von	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+18	Stahl	Stahl	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+19	und	und	CCONJ	KON	_	20	cc	_	_
+20	Maschinenbau	Maschinenbau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 6
+# text = Außerdem war Großbritannien im 19. Jahrhundert lange Zeit führend bei der Industrialisierung der Herstellung von Textilien.
+1	Außerdem	Ausserdem	ADV	PROAV	_	9	advmod	_	_
+2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
+3	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	9	nsubj	_	_
+4	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	19.	19.	ADJ	ADJA	Person=3	6	amod	_	_
+6	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	9	obl	_	_
+7	lange	lang	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	Zeit	Zeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	obl	_	_
+9	führend	führen	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	_
+10	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+11	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Industrialisierung	Industrialisierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	obl	_	_
+13	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Herstellung	Herstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nmod	_	_
+15	von	von	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+16	Textilien	Textilie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	14	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	9	punct	_	_
+
+# sent_id = 7
+# text = Zwischen 1803 und 1857 stieg die Zahl der kommerziell genutzten Webstühle von etwa 2500 auf über 250 000.
+1	Zwischen	Zwischen	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	1803	1803	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	obl	_	_
+3	und	und	CCONJ	KON	_	4	cc	_	_
+4	1857	1857	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	conj	_	_
+5	stieg	steigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Zahl	Zahl	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+8	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	11	det	_	_
+9	kommerziell	kommerziell	ADJ	ADJD	Degree=Pos|Variant=Short	10	advmod	_	_
+10	genutzten	nutzen	ADJ	ADJA	Degree=Pos|Number=Plur	11	amod	_	_
+11	Webstühle	Webstuhl	NOUN	NN	Gender=Masc|Number=Plur|Person=3	7	nmod	_	_
+12	von	von	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+13	etwa	etwa	ADV	ADV	_	14	advmod	_	_
+14	2500	2500	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	obl	_	_
+15	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	18	case	_	_
+16	über	über	ADV	ADV	_	17	advmod	_	_
+17	250	250	NUM	CARD	Number=Plur|NumType=Card|Person=3	18	nummod	_	SpacesAfter= 
+18	000	000	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	obl	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 8
+# text = Im Jahr 1023 war die Produktion von Textilien in Großbritannien auf dem Höhepunkt, bevor Kapazitäten zu Gunsten einer Verlagerung nach Indien abgebaut wurden.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	13	nmod	_	_
+3	1023	1023	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	_
+4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
+5	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Produktion	Produktion	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	nsubj	_	_
+7	von	von	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	Textilien	Textilie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nmod	_	_
+9	in	in	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	8	nmod	_	_
+11	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+12	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Höhepunkt	Höhepunkt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+15	bevor	bevor	SCONJ	KOUS	_	23	mark	_	_
+16	Kapazitäten	Kapazität	NOUN	NN	Gender=Fem|Number=Plur|Person=3	23	nsubj:pass	_	_
+17	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+18	Gunsten	Gunst	NOUN	NN	Gender=Fem|Number=Plur|Person=3	23	obl	_	_
+19	einer	einer	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Verlagerung	Verlagerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	nmod	_	_
+21	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+22	Indien	Indien	PROPN	NE	Number=Sing|Person=3	20	nmod	_	_
+23	abgebaut	abbauen	VERB	VVPP	Aspect=Perf|VerbForm=Part	13	ccomp	_	_
+24	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	13	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12070,6 +12755,44 @@
 15	britische	britisch	ADJ	ADJA	Degree=Pos|Number=Plur	16	amod	_	_
 16	Produkte	Produkt	NOUN	NN	Gender=Neut|Number=Plur|Person=3	13	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	$.	PunctType=Peri	13	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Im Laufe des 20. Jahrhunderts verlor der industrielle Sektor allmählich an Bedeutung.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Laufe	Lauf	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing|Person=3	6	obl	_	_
+3	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+4	20.	20.	ADJ	ADJA	Person=3	5	amod	_	_
+5	Jahrhunderts	Jahrhundert	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	2	nmod	_	_
+6	verlor	verlieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	industrielle	industriell	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+9	Sektor	Sektor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+10	allmählich	allmählich	ADJ	ADJD	Degree=Pos|Variant=Short	6	advmod	_	_
+11	an	an	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	Bedeutung	Bedeutung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	obj	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	_
+
+# sent_id = 3
+# text = Der Dienstleistungssektor wuchs.
+1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Dienstleistungssektor	Sektor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	wuchs	wachsen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 4
+# text = Er hatte 2016 einen Anteil von etwa 79 % am Bruttoinlandsprodukt.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	obl	_	_
+4	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Anteil	Anteil	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obj	_	_
+6	von	von	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+7	etwa	etwa	ADV	ADV	_	8	advmod	_	_
+8	79	79	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	nummod	_	SpacesAfter= 
+9	%	%	NOUN	NN	Gender=Neut|Number=Plur|Person=3	5	nmod	_	_
+10	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	11	case	_	_
+11	Bruttoinlandsprodukt	Produkt	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12199,6 +12922,130 @@
 14	Rekordwert	Wert	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	obj	_	_
 15	erreichte	erreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl	_	SpaceAfter=No
 16	.	.	PUNCT	$.	PunctType=Peri	9	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Ebenfalls von großer Bedeutung ist der Tourismus; mit über 29 Millionen Touristen war das Vereinigte Königreich 2016 die achtwichtigste Touristendestination der Welt.
+1	Ebenfalls	Ebenfalls	ADV	ADV	_	4	advmod	_	_
+2	von	von	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+3	großer	groß	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	Bedeutung	Bedeutung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
+5	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+6	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Tourismus	Tourismus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	SpaceAfter=No
+8	;	;	PUNCT	$.	PunctType=Peri	4	punct	_	_
+9	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+10	über	über	ADV	ADV	_	11	advmod	_	_
+11	29	29	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	nummod	_	_
+12	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	13	nummod	_	_
+13	Touristen	Tourist	NOUN	NN	Gender=Masc|Number=Plur|Person=3	21	nmod	_	_
+14	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	_
+15	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
+16	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+17	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	nsubj	_	_
+18	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	nmod	_	_
+19	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+20	achtwichtigste	achtwichtig	ADJ	ADJA	Degree=Sup|Gender=Fem|Number=Sing	21	amod	_	_
+21	Touristendestination	Tination	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	parataxis	_	_
+22	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	Welt	Welt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 8
+# text = Die Tourismuseinnahmen beliefen sich im selben Jahr auf 39,7 Mrd. US-Dollar.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Tourismuseinnahmen	Einnahme	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	nsubj	_	_
+3	beliefen	belaufen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	3	obj	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
+6	selben	selb	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obl	_	_
+8	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	11	case	_	_
+9	39,7	39,7	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	nummod	_	_
+10	Mrd.	Mrd.	NOUN	NN	Gender=Fem|Number=Plur|Person=3	11	amod	_	_
+11	US-Dollar	Dollar	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	obl	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = Das Vermögen pro Kopf im Vereinigten Königreich beträgt laut Credit Suisse 288.806 US-Dollar pro erwachsene Person.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	Vermögen	Vermögen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	8	nsubj	_	_
+3	pro	pro	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+4	Kopf	Kopf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
+6	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	nmod	_	_
+8	beträgt	betragen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	laut	laut	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	Credit	unknown	NOUN	NN	Person=3	8	obl	_	_
+11	Suisse	unknown	NOUN	NN	Person=3	10	appos	_	_
+12	288.806	288.806	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nummod	_	_
+13	US-Dollar	Dollar	NOUN	NN	Gender=Masc|Number=Plur|Person=3	8	obj	_	_
+14	pro	pro	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+15	erwachsene	erwachsen	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	16	amod	_	_
+16	Person	Person	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
+
+# sent_id = 10
+# text = Das Land hat damit eines der höchsten Pro-Kopf-Vermögen der Welt und das insgesamt vierthöchste nationale Gesamtvermögen aller Länder.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	Land	Land	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nsubj	_	_
+3	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	damit	damit	ADV	PROAV	_	3	advmod	_	_
+5	eines	ein	PRON	PIS	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	3	obj	_	_
+6	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	8	det	_	_
+7	höchsten	NULL	ADJ	ADJA	Degree=Sup|Number=Plur	8	amod	_	_
+8	Pro-Kopf-Vermögen	Vermögen	NOUN	NN	Gender=Neut|Number=Plur|Person=3	5	nmod	_	_
+9	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Welt	Welt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nmod	_	_
+11	und	und	CCONJ	KON	_	16	cc	_	_
+12	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	16	det	_	_
+13	insgesamt	insgesamt	ADV	ADV	_	14	advmod	_	_
+14	vierthöchste	vierthöchste	ADJ	ADJA	_	16	amod	_	_
+15	nationale	national	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	16	amod	_	_
+16	Gesamtvermögen	Vermögen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	conj	_	_
+17	aller	all	DET	PIDAT	Case=Gen|Number=Plur|Person=3	18	det	_	_
+18	Länder	Land	NOUN	NN	Gender=Neut|Number=Plur|Person=3	16	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 11
+# text = Die Ungleichheit ist allerdings beträchtlich und der Gini-Koeffizient zur Vermögensverteilung lag bei 73,2, was eine hohe Ungleichheit bedeutet.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Ungleichheit	Ungleichheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	allerdings	allerdings	ADV	ADV	_	5	advmod	_	_
+5	beträchtlich	beträchtlich	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	_
+6	und	und	CCONJ	KON	_	11	cc	_	_
+7	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Gini-Koeffizient	Koeffizient	NOUN	NN	Person=3	11	nsubj	_	_
+9	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	10	case	_	_
+10	Vermögensverteilung	Verteilung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nmod	_	_
+11	lag	liegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
+12	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+13	73,2	73,2	NUM	CARD	Number=Plur|NumType=Card|Person=3	11	obl	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+15	was	was	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Rel	19	nsubj	_	_
+16	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+17	hohe	hoch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
+18	Ungleichheit	Ungleichheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	obj	_	_
+19	bedeutet	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 12
+# text = Im Vereinigten Königreich gab es 2016 schätzungsweise 961.000 Millionäre sowie über 100 Milliardäre.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+2	Vereinigten	vereinigen	ADJ	ADJA	Degree=Pos|Number=Sing	3	amod	_	_
+3	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	obl	_	_
+4	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	obl	_	_
+7	schätzungsweise	schätzungsweise	ADV	ADV	_	4	advmod	_	_
+8	961.000	961.000	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	nummod	_	_
+9	Millionäre	Millionär	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	obj	_	_
+10	sowie	sowie	CCONJ	KON	_	13	cc	_	_
+11	über	über	ADV	ADV	_	12	advmod	_	_
+12	100	100	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nummod	_	_
+13	Milliardäre	Milliardär	NOUN	NN	Gender=Masc|Number=Plur|Person=3	9	conj	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12509,27 +13356,24 @@
 15	.	.	PUNCT	$.	PunctType=Peri	13	punct	_	_
 
 # sent_id = 10
-# text = Nach Schätzungen könnten im Jahr 2020[veraltet] etwa 4 Prozent des Energiebedarfs alleine aus Sonnenenergie gedeckt werden.
+# text = Nach Schätzungen könnten im Jahr 2020 etwa 4 Prozent des Energiebedarfs alleine aus Sonnenenergie gedeckt werden.
 1	Nach	Nach	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
-2	Schätzungen	Schätzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	18	obl	_	_
-3	könnten	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	18	aux	_	_
+2	Schätzungen	Schätzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	obl	_	_
+3	könnten	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	15	aux	_	_
 4	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
-5	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	18	obl	_	_
-6	2020	2020	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
-7	[	[	PUNCT	$(	PunctType=Brck	8	punct	_	SpaceAfter=No
-8	veraltet	veralten	ADJ	ADJD	Degree=Pos|Variant=Short	18	advmod	_	SpaceAfter=No
-9	]	]	PUNCT	$(	PunctType=Brck	8	punct	_	_
-10	etwa	etwa	ADV	ADV	_	11	advmod	_	_
-11	4	4	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	nummod	_	SpacesAfter= 
-12	Prozent	Prozent	NOUN	NN	Gender=Neut|Number=Plur|Person=3	18	nsubj:pass	_	_
-13	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Energiebedarfs	Bedarf	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	12	nmod	_	_
-15	alleine	alleine	ADV	ADV	_	18	advmod	_	_
-16	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
-17	Sonnenenergie	Energie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	obl	_	_
-18	gedeckt	decken	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
-19	werden	werden	AUX	VAINF	VerbForm=Inf	18	aux:pass	_	SpaceAfter=No
-20	.	.	PUNCT	$.	PunctType=Peri	18	punct	_	_
+5	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	15	obl	_	_
+6	2020	2020	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	_
+7	etwa	etwa	ADV	ADV	_	8	advmod	_	_
+8	4	4	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	nummod	_	SpacesAfter= 
+9	Prozent	Prozent	NOUN	NN	Gender=Neut|Number=Plur|Person=3	15	nsubj:pass	_	_
+10	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Energiebedarfs	Bedarf	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	9	nmod	_	_
+12	alleine	alleine	ADV	ADV	_	15	advmod	_	_
+13	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+14	Sonnenenergie	Energie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	obl	_	_
+15	gedeckt	decken	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+16	werden	werden	AUX	VAINF	VerbForm=Inf	15	aux:pass	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	15	punct	_	_
 
 # sent_id = 11
 # text = Die Regierung (Kabinett Cameron II) setzt (Stand 2015) auf einen Ausbau der Atomenergie und hat acht Standorte benannt.
@@ -12700,7 +13544,7 @@
 # newpar
 # sent_id = 1
 # text = Staatshaushalt
-1	Staatshaushalt	Haushalt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Staatshaushalt	Haushalt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12878,7 +13722,7 @@
 # sent_id = 1
 # text = Regionale Unterschiede
 1	Regionale	regional	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Unterschiede	Unterschied	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Unterschiede	Unterschied	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13002,7 +13846,7 @@
 # newpar
 # sent_id = 1
 # text = Kennzahlen
-1	Kennzahlen	Zahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Kennzahlen	Zahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13011,7 +13855,7 @@
 # newpar
 # sent_id = 1
 # text = Währung
-1	Währung	Währung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Währung	Währung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13053,7 +13897,7 @@
 # newpar
 # sent_id = 1
 # text = Energieversorgung
-1	Energieversorgung	Versorgung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Energieversorgung	Versorgung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13096,6 +13940,70 @@
 15	können	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	14	aux	_	SpaceAfter=No
 16	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\s\n
 
+# sent_id = 3
+# text = In Großbritannien beheizen 23 Millionen Haushalte, 85 Prozent der Gesamtbevölkerung, ihre Häuser und Wohnungen mit Erdgas.
+1	In	In	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	3	obl	_	_
+3	beheizen	beheizen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	23	23	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nummod	_	_
+5	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nummod	_	_
+6	Haushalte	Haushalt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+8	85	85	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	nummod	_	_
+9	Prozent	Prozent	NOUN	NN	Gender=Neut|Number=Plur|Person=3	6	appos	_	_
+10	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Gesamtbevölkerung	Bevölkerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+13	ihre	sein	PRON	PPOSAT	Case=Acc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	det	_	_
+14	Häuser	Haus	NOUN	NN	Gender=Neut|Number=Plur|Person=3	3	obj	_	_
+15	und	und	CCONJ	KON	_	16	cc	_	_
+16	Wohnungen	Wohnung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	14	conj	_	_
+17	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+18	Erdgas	Erdgas	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 4
+# text = 40 Prozent des Stroms wird in Gaskraftwerken erzeugt.
+1	40	40	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nummod	_	_
+2	Prozent	Prozent	NOUN	NN	Gender=Neut|Number=Plur|Person=3	8	nsubj:pass	_	_
+3	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Stroms	Strom	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+5	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+6	in	in	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+7	Gaskraftwerken	Kraftwerk	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	8	obl	_	_
+8	erzeugt	erzeugen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
+
+# sent_id = 5
+# text = Kurz nach dem Jahr 2000 war das UK mit eigenem Nordsee-Erdgas noch autark; heute (2021) ist es einer der großen Erdgasimporteure in Europa.
+1	Kurz	kurz	ADJ	ADJD	Degree=Pos|Variant=Short	13	advmod	_	_
+2	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+3	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
+4	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	obl	_	_
+5	2000	2000	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	_
+6	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
+7	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
+8	UK	UK	PROPN	NE	Number=Sing|Person=3	13	nsubj	_	_
+9	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+10	eigenem	eigen	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Sing	11	amod	_	_
+11	Nordsee-Erdgas	Erdgas	NOUN	NN	Gender=Neut|Number=Sing|Person=3	13	obl	_	_
+12	noch	noch	ADV	ADV	_	13	advmod	_	_
+13	autark	autark	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
+14	;	;	PUNCT	$.	PunctType=Peri	13	punct	_	_
+15	heute	heute	ADV	ADV	_	21	advmod	_	_
+16	(	(	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
+17	2021	2021	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	appos	_	SpaceAfter=No
+18	)	)	PUNCT	$(	PunctType=Brck	17	punct	_	_
+19	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
+20	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+21	einer	ein	PRON	PIS	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Ind,Neg,Tot	13	parataxis	_	_
+22	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	24	det	_	_
+23	großen	groß	ADJ	ADJA	Degree=Pos|Number=Plur	24	amod	_	_
+24	Erdgasimporteure	Porteur	NOUN	NN	Gender=Masc|Number=Plur|Person=3	21	nmod	_	_
+25	in	in	ADP	APPR	AdpType=Prep|Case=Dat	26	case	_	_
+26	Europa	Europa	PROPN	NE	Gender=Fem|Number=Sing|Person=3	24	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	$.	PunctType=Peri	13	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13126,7 +14034,7 @@
 # newpar
 # sent_id = 1
 # text = Verkehr
-1	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13173,7 +14081,7 @@
 # newpar
 # sent_id = 1
 # text = Straßenverkehr
-1	Straßenverkehr	Strassenverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Straßenverkehr	Strassenverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13765,7 +14673,7 @@
 # newpar
 # sent_id = 1
 # text = Schienenverkehr
-1	Schienenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Schienenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14127,7 +15035,7 @@
 # newpar
 # sent_id = 1
 # text = Luftverkehr
-1	Luftverkehr	Luftverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Luftverkehr	Luftverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14210,7 +15118,7 @@
 # newpar
 # sent_id = 1
 # text = Seeverkehr
-1	Seeverkehr	Seeverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Seeverkehr	Seeverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14290,7 +15198,7 @@
 # newpar
 # sent_id = 1
 # text = Datenverkehr
-1	Datenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Datenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14333,7 +15241,7 @@
 # newpar
 # sent_id = 1
 # text = Kultur
-1	Kultur	Kultur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Kultur	Kultur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14387,7 +15295,7 @@
 # newpar
 # sent_id = 1
 # text = Küche
-1	Küche	Küche	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Küche	Küche	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14697,7 +15605,7 @@
 # newpar
 # sent_id = 1
 # text = Medien
-1	Medien	Medium	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Medien	Medium	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -15220,7 +16128,7 @@
 # newpar
 # sent_id = 1
 # text = Film
-1	Film	Film	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Film	Film	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -15555,7 +16463,7 @@
 # newpar
 # sent_id = 1
 # text = Literatur
-1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -16299,7 +17207,7 @@
 # newpar
 # sent_id = 1
 # text = Architektur
-1	Architektur	Architektur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Architektur	Architektur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17320,7 +18228,7 @@
 # newpar
 # sent_id = 1
 # text = Wissenschaft
-1	Wissenschaft	Wissenschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Wissenschaft	Wissenschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17867,7 +18775,7 @@
 # newpar
 # sent_id = 1
 # text = Sport
-1	Sport	Sport	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Sport	Sport	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18438,7 +19346,7 @@
 # newpar
 # sent_id = 1
 # text = Feiertage
-1	Feiertage	Feiertag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Feiertage	Feiertag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18727,7 +19635,7 @@
 # sent_id = 1
 # text = Siehe auch
 1	Siehe	sehen	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
-2	auch	auch	ADV	ADV	_	1	advmod	_	SpacesAfter=\n
+2	auch	auch	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18736,7 +19644,7 @@
 # newpar
 # sent_id = 1
 # text = Literatur
-1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18745,7 +19653,7 @@
 # newpar
 # sent_id = 1
 # text = Weblinks
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18754,7 +19662,7 @@
 # newpar
 # sent_id = 1
 # text = Einzelnachweise
-1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18762,13 +19670,108 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mitgliedstaaten der Vereinten Nationen und Vatikanstadt
+# text = Mitgliedstaaten der Vereinten Nationen und Vatikanstadt Albanien | Andorra | Belarus | Belgien | Bosnien und Herzegowina | Bulgarien | Dänemark2 | Deutschland | Estland | Finnland | Frankreich2 | Griechenland | Irland | Island | Italien2 | Kasachstan1 | Kroatien | Lettland | Liechtenstein | Litauen | Luxemburg | Malta | Moldau | Monaco | Montenegro | Niederlande2 | Nordmazedonien | Norwegen2 | Österreich | Polen | Portugal2 | Rumänien | Russland1 | San Marino | Schweden | Schweiz | Serbien | Slowakei | Slowenien | Spanien2 | Tschechien | Türkei1 | Ukraine | Ungarn | Vatikanstadt | Vereinigtes Königreich2
 1	Mitgliedstaaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
 2	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	4	det	_	_
 3	Vereinten	vereinen	ADJ	ADJA	Degree=Pos|Number=Plur	4	amod	_	_
 4	Nationen	Nation	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	nmod	_	_
-5	und	und	CCONJ	KON	_	6	cc	_	_
+5	und	und	CCONJ	KON	_	17	cc	_	_
 6	Vatikanstadt	Vatikanstadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	conj	_	SpacesAfter=\n
+7	Albanien	Albanien	PROPN	NE	Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	NE	_	21	punct	_	SpacesAfter=\n
+9	Andorra	Andorra	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+10	|	|	PUNCT	NE	PunctType=Brck	21	punct	_	SpacesAfter=\n
+11	Belarus	Belarus	PROPN	NE	Person=3	21	appos	_	SpacesAfter= 
+12	|	|	PUNCT	$(	PunctType=Brck	13	punct	_	SpacesAfter=\n
+13	Belgien	Belgien	PROPN	NE	Number=Sing|Person=3	21	appos	_	SpacesAfter= 
+14	|	|	PUNCT	NE	PunctType=Brck	13	punct	_	SpacesAfter=\n
+15	Bosnien	Bosnien	PROPN	NE	Number=Sing|Person=3	21	appos	_	_
+16	und	und	CCONJ	KON	_	17	cc	_	_
+17	Herzegowina	Herzegowina	PROPN	NE	Person=3	4	conj	_	SpacesAfter= 
+18	|	|	PUNCT	NE	_	17	flat	_	SpacesAfter=\n
+19	Bulgarien	Bulgarien	PROPN	NE	Number=Sing|Person=3	17	appos	_	SpacesAfter= 
+20	|	|	PUNCT	NE	PunctType=Brck	21	flat	_	SpacesAfter=\n
+21	Dänemark2	Dänemark2	PROPN	NE	Foreign=Yes|Person=3	17	appos	_	SpacesAfter= 
+22	|	|	PUNCT	FM	Foreign=Yes|Person=3	21	punct	_	SpacesAfter=\n
+23	Deutschland	Deutschland	PROPN	NE	Number=Sing|Person=3	21	flat:name	_	SpacesAfter= 
+24	|	|	PROPN	NE	_	21	flat	_	SpacesAfter=\n
+25	Estland	Estland	PROPN	NE	Person=3	21	flat:name	_	SpacesAfter= 
+26	|	|	PUNCT	NE	_	27	punct	_	SpacesAfter=\n
+27	Finnland	Finnland	PROPN	NE	Number=Sing|Person=3	21	appos	_	SpacesAfter= 
+28	|	|	PUNCT	NE	PunctType=Brck	29	punct	_	SpacesAfter=\n
+29	Frankreich2	Frankreich2	PROPN	NE	Foreign=Yes|Person=3	27	appos	_	SpacesAfter= 
+30	|	|	PUNCT	NE	Foreign=Yes|Person=3	29	punct	_	SpacesAfter=\n
+31	Griechenland	Griechenland	PROPN	NE	Person=3	29	flat:name	_	SpacesAfter= 
+32	|	|	X	NE	_	29	flat	_	SpacesAfter=\n
+33	Irland	Irland	PROPN	NE	Number=Sing|Person=3	29	appos	_	SpacesAfter= 
+34	|	|	X	NE	_	29	flat	_	SpacesAfter=\n
+35	Island	Island	PROPN	NE	Number=Sing|Person=3	29	flat:name	_	SpacesAfter= 
+36	|	|	PUNCT	$(	PunctType=Brck	37	punct	_	SpacesAfter=\n
+37	Italien2	Italien2	X	NE	Foreign=Yes|Person=3	29	appos	_	SpacesAfter= 
+38	|	|	PUNCT	$(	PunctType=Brck	39	punct	_	SpacesAfter=\n
+39	Kasachstan1	Kasachstan1	PROPN	NE	Person=3	29	appos	_	SpacesAfter= 
+40	|	|	PUNCT	NE	Foreign=Yes|Person=3	39	flat	_	SpacesAfter=\n
+41	Kroatien	Kroatien	PROPN	NE	Number=Sing|Person=3	39	flat:name	_	SpacesAfter= 
+42	|	|	PUNCT	NE	PunctType=Brck	39	punct	_	SpacesAfter=\n
+43	Lettland	Lettland	PROPN	NE	Person=3	39	flat:name	_	SpacesAfter= 
+44	|	|	PUNCT	NE	PunctType=Brck	47	punct	_	SpacesAfter=\n
+45	Liechtenstein	Liechtenstein	PROPN	NE	Person=3	39	appos	_	SpacesAfter= 
+46	|	|	PUNCT	NE	PunctType=Brck	47	punct	_	SpacesAfter=\n
+47	Litauen	Litauen	PROPN	NE	Number=Sing|Person=3	45	appos	_	SpacesAfter= 
+48	|	|	PUNCT	NE	_	49	punct	_	SpacesAfter=\n
+49	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	47	appos	_	SpacesAfter= 
+50	|	|	PROPN	NE	Person=3	49	flat:name	_	SpacesAfter=\n
+51	Malta	Malta	PROPN	NE	Number=Sing|Person=3	49	flat:name	_	SpacesAfter= 
+52	|	|	PROPN	NE	Person=3	49	flat:name	_	SpacesAfter=\n
+53	Moldau	Moldau	PROPN	NE	Person=3	49	flat:name	_	SpacesAfter= 
+54	|	|	PUNCT	$(	PunctType=Brck	55	punct	_	SpacesAfter=\n
+55	Monaco	Monaco	PROPN	NE	Person=3	49	appos	_	SpacesAfter= 
+56	|	|	PUNCT	$(	PunctType=Brck	57	punct	_	SpacesAfter=\n
+57	Montenegro	Montenegro	PROPN	NE	Person=3	49	appos	_	SpacesAfter= 
+58	|	|	PUNCT	$(	PunctType=Brck	61	punct	_	SpacesAfter=\n
+59	Niederlande2	Niederlande2	PROPN	NE	Foreign=Yes|Person=3	61	appos	_	SpacesAfter= 
+60	|	|	PUNCT	$(	PunctType=Brck	61	punct	_	SpacesAfter=\n
+61	Nordmazedonien	Nordmazedonien	PROPN	NE	Person=3	57	appos	_	SpacesAfter= 
+62	|	|	PUNCT	NE	PunctType=Brck	63	punct	_	SpacesAfter=\n
+63	Norwegen2	Norwegen2	PROPN	NE	Foreign=Yes|Person=3	61	appos	_	SpacesAfter= 
+64	|	|	PUNCT	NE	PunctType=Brck	63	punct	_	SpacesAfter=\n
+65	Österreich	Österreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	63	appos	_	SpacesAfter= 
+66	|	|	PUNCT	NE	PunctType=Brck	63	punct	_	SpacesAfter=\n
+67	Polen	Polen	PROPN	NE	Number=Sing|Person=3	63	appos	_	SpacesAfter= 
+68	|	|	PUNCT	NE	Foreign=Yes|Person=3	80	flat	_	SpacesAfter=\n
+69	Portugal2	Portugal2	X	NE	Foreign=Yes|Person=3	63	appos	_	SpacesAfter= 
+70	|	|	PUNCT	NE	PunctType=Brck	80	punct	_	SpacesAfter=\n
+71	Rumänien	Rumänien	PROPN	NE	Number=Sing|Person=3	63	appos	_	SpacesAfter= 
+72	|	|	PUNCT	$(	PunctType=Brck	80	punct	_	SpacesAfter=\n
+73	Russland1	Russland1	PROPN	NE	Foreign=Yes|Person=3	75	appos	_	SpacesAfter= 
+74	|	|	PUNCT	$(	PunctType=Brck	75	punct	_	SpacesAfter=\n
+75	San	San	PROPN	NE	Number=Sing|Person=3	80	appos	_	_
+76	Marino	Marino	PROPN	NE	Number=Sing|Person=3	75	flat:name	_	SpacesAfter= 
+77	|	|	PUNCT	$(	PunctType=Brck	78	punct	_	SpacesAfter=\n
+78	Schweden	Schweden	PROPN	NE	Number=Sing|Person=3	80	appos	_	SpacesAfter= 
+79	|	|	PUNCT	$(	PunctType=Brck	80	punct	_	SpacesAfter=\n
+80	Schweiz	Schweiz	PROPN	NE	Gender=Fem|Number=Sing|Person=3	65	appos	_	SpacesAfter= 
+81	|	|	PUNCT	NE	PunctType=Brck	80	punct	_	SpacesAfter=\n
+82	Serbien	Serbien	PROPN	NE	Number=Sing|Person=3	80	appos	_	SpacesAfter= 
+83	|	|	PUNCT	$(	PunctType=Brck	80	punct	_	SpacesAfter=\n
+84	Slowakei	Slowakei	PROPN	NE	Person=3	80	appos	_	SpacesAfter= 
+85	|	|	PUNCT	$(	PunctType=Brck	84	punct	_	SpacesAfter=\n
+86	Slowenien	Slowenien	PROPN	NE	Number=Sing|Person=3	80	appos	_	SpacesAfter= 
+87	|	|	PUNCT	$(	PunctType=Brck	88	punct	_	SpacesAfter=\n
+88	Spanien2	Spanien2	PROPN	NE	Foreign=Yes|Person=3	84	appos	_	SpacesAfter= 
+89	|	|	PUNCT	NE	Person=3	88	punct	_	SpacesAfter=\n
+90	Tschechien	Tschechien	PROPN	NE	Person=3	88	appos	_	SpacesAfter= 
+91	|	|	PUNCT	NE	Foreign=Yes|Person=3	90	flat	_	SpacesAfter=\n
+92	Türkei1	Türkei1	PROPN	NE	Foreign=Yes|Person=3	90	appos	_	SpacesAfter= 
+93	|	|	PUNCT	NE	Foreign=Yes|Person=3	92	flat	_	SpacesAfter=\n
+94	Ukraine	Ukraine	PROPN	NE	Person=3	90	flat:name	_	SpacesAfter= 
+95	|	|	PROPN	NE	Person=3	92	flat	_	SpacesAfter=\n
+96	Ungarn	Ungarn	PROPN	NE	Number=Sing|Person=3	98	flat:name	_	SpacesAfter= 
+97	|	|	PUNCT	NE	Person=3	98	punct	_	SpacesAfter=\n
+98	Vatikanstadt	Vatikanstadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	92	appos	_	SpacesAfter= 
+99	|	|	PUNCT	$(	PunctType=Brck	101	punct	_	SpacesAfter=\n
+100	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	101	amod	_	_
+101	Königreich2	Königreich2	PROPN	NE	Foreign=Yes|Person=3	98	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18776,9 +19779,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Abhängige Gebiete
+# text = Abhängige Gebiete Färöer | Gibraltar | Guernsey | Isle of Man | Jersey
 1	Abhängige	abhängig	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+3	Färöer	Färöer	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	appos	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	2	appos	_	SpacesAfter=\n
+5	Gibraltar	Gibraltar	X	NE	Foreign=Yes|Person=3	3	flat:name	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+7	Guernsey	Guernsey	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter= 
+8	|	|	X	FM	Foreign=Yes|Person=3	6	flat	_	SpacesAfter=\n
+9	Isle	Isle	X	FM	Foreign=Yes|Person=3	6	flat	_	_
+10	of	of	X	FM	Foreign=Yes|Person=3	6	flat	_	_
+11	Man	Man	PROPN	NE	Number=Sing|Person=3	6	flat:name	_	SpacesAfter= 
+12	|	|	PROPN	NE	Person=3	8	flat:name	_	SpacesAfter=\n
+13	Jersey	Jersey	PROPN	NE	Person=3	8	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18786,9 +19800,32 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Umstrittene Gebiete
+# text = Umstrittene Gebiete Kosovo | Transnistrien
 1	Umstrittene	umstritten	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+3	Kosovo	Kosovo	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n
+5	Transnistrien	Transnistrien	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 2
+# text = 1 Liegt größtenteils in Asien.
+1	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	2	nsubj	_	SpacesAfter= 
+2	Liegt	liegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	größtenteils	größtenteils	ADV	ADV	_	2	advmod	_	_
+4	in	in	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+5	Asien	Asien	PROPN	NE	Number=Sing|Person=3	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter= \n
+
+# sent_id = 3
+# text = 2 Hat zusätzliche Gebiete außerhalb Europas.
+1	2	2	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nsubj	_	SpacesAfter= 
+2	Hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	zusätzliche	zusätzlich	ADJ	ADJA	Degree=Pos|Number=Plur	4	amod	_	_
+4	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	2	obj	_	_
+5	außerhalb	außerhalb	ADP	APPR	AdpType=Prep|Case=Gen	6	case	_	_
+6	Europas	Europas	PROPN	NE	Case=Gen|Gender=Fem|Number=Sing|Person=3	4	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18799,6 +19836,28 @@
 # text = G6:
 1	G6	G6	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Deutschland | Frankreich |
+1	Deutschland	Deutschland	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	Frankreich	Frankreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	PunctType=Peri	1	flat:name	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Vereinigtes Königreich | Italien | Japan |
+1	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+3	|	|	PUNCT	NE	Number=Plur|NumType=Card|Person=3	2	punct	_	SpacesAfter=\n
+4	Italien	Italien	PROPN	NE	Number=Sing|Person=3	2	appos	_	SpacesAfter= 
+5	|	|	PROPN	NE	_	4	flat	_	SpacesAfter=\n
+6	Japan	Japan	PROPN	NE	Number=Sing|Person=3	4	appos	_	SpacesAfter= 
+7	|	|	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Vereinigte Staaten
+1	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
+2	Staaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18811,9 +19870,20 @@
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 2
-# text = Kanada |
+# text = Kanada | (G8:
 1	Kanada	Kanada	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
-2	|	|	PROPN	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	(	(	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
+4	G8	G8	X	FM	Foreign=Yes|Person=3	1	appos	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
+
+# sent_id = 3
+# text = Russland – Mitgliedschaft suspendiert)
+1	Russland	Russland	PROPN	NE	Number=Sing|Person=3	4	nsubj	_	_
+2	–	–	PROPN	NE	Foreign=Yes|Person=3	4	advmod	_	_
+3	Mitgliedschaft	Mitgliedschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obj	_	_
+4	suspendiert	suspendieren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+5	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18821,9 +19891,85 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Australien |
+# text = Australien | Belgien | Chile | Costa Rica | Dänemark | Deutschland | Estland | Finnland | Frankreich | Griechenland | Irland | Island | Israel | Italien | Japan | Kanada | Kolumbien | Lettland | Litauen | Luxemburg | Mexiko | Neuseeland | Niederlande | Norwegen | Österreich | Polen | Portugal | Schweden | Schweiz | Südkorea | Slowakei | Slowenien | Spanien | Tschechien | Türkei | Ungarn | Vereinigtes Königreich | Vereinigte Staaten
 1	Australien	Australien	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
-2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+2	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+3	Belgien	Belgien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	Chile	Chile	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+7	Costa	Costa	PROPN	NE	Number=Sing|Person=3	3	appos	_	SpacesAfter= 
+8	Rica	Rica	PROPN	NE	Gender=Masc|Number=Sing|Person=3	7	flat:name	_	SpacesAfter= 
+9	|	|	PUNCT	$(	PunctType=Brck	10	punct	_	SpacesAfter=\n
+10	Dänemark	Dänemark	PROPN	NE	Number=Sing|Person=3	7	appos	_	SpacesAfter= 
+11	|	|	PUNCT	$(	PunctType=Brck	12	punct	_	SpacesAfter=\n
+12	Deutschland	Deutschland	PROPN	NE	Number=Sing|Person=3	7	appos	_	SpacesAfter= 
+13	|	|	PUNCT	NE	PunctType=Brck	14	punct	_	SpacesAfter=\n
+14	Estland	Estland	PROPN	NE	Person=3	7	appos	_	SpacesAfter= 
+15	|	|	PUNCT	NE	PunctType=Brck	18	punct	_	SpacesAfter=\n
+16	Finnland	Finnland	PROPN	NE	Number=Sing|Person=3	14	appos	_	SpacesAfter= 
+17	|	|	PUNCT	$(	PunctType=Brck	18	punct	_	SpacesAfter=\n
+18	Frankreich	Frankreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	12	appos	_	SpacesAfter= 
+19	|	|	PUNCT	$(	PunctType=Brck	20	punct	_	SpacesAfter=\n
+20	Griechenland	Griechenland	PROPN	NE	Person=3	18	appos	_	SpacesAfter= 
+21	|	|	PUNCT	$(	PunctType=Brck	22	punct	_	SpacesAfter=\n
+22	Irland	Irland	PROPN	NE	Number=Sing|Person=3	12	appos	_	SpacesAfter= 
+23	|	|	PUNCT	NE	_	24	punct	_	SpacesAfter=\n
+24	Island	Island	PROPN	NE	Number=Sing|Person=3	22	appos	_	SpacesAfter= 
+25	|	|	PUNCT	NE	_	26	punct	_	SpacesAfter=\n
+26	Israel	Israel	PROPN	NE	Gender=Masc|Number=Sing|Person=3	24	appos	_	SpacesAfter= 
+27	|	|	PUNCT	NE	Person=3	26	punct	_	SpacesAfter=\n
+28	Italien	Italien	PROPN	NE	Number=Sing|Person=3	26	flat:name	_	SpacesAfter= 
+29	|	|	PROPN	NE	Number=Plur|NumType=Card|Person=3	26	flat:name	_	SpacesAfter=\n
+30	Japan	Japan	PROPN	NE	Number=Sing|Person=3	26	flat:name	_	SpacesAfter= 
+31	|	|	PROPN	NE	Person=3	32	flat:name	_	SpacesAfter=\n
+32	Kanada	Kanada	PROPN	NE	Number=Sing|Person=3	26	flat:name	_	SpacesAfter= 
+33	|	|	PROPN	NE	Person=3	32	flat:name	_	SpacesAfter=\n
+34	Kolumbien	Kolumbien	PROPN	NE	Number=Sing|Person=3	28	flat:name	_	SpacesAfter= 
+35	|	|	PUNCT	NE	PunctType=Brck	36	punct	_	SpacesAfter=\n
+36	Lettland	Lettland	PROPN	NE	Person=3	28	appos	_	SpacesAfter= 
+37	|	|	PUNCT	NE	PunctType=Brck	36	punct	_	SpacesAfter=\n
+38	Litauen	Litauen	PROPN	NE	Number=Sing|Person=3	32	appos	_	SpacesAfter= 
+39	|	|	PUNCT	NE	_	40	punct	_	SpacesAfter=\n
+40	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	32	appos	_	SpacesAfter= 
+41	|	|	PUNCT	NE	PunctType=Brck	42	punct	_	SpacesAfter=\n
+42	Mexiko	Mexiko	PROPN	NE	Number=Sing|Person=3	40	appos	_	SpacesAfter= 
+43	|	|	PUNCT	$(	PunctType=Brck	44	punct	_	SpacesAfter=\n
+44	Neuseeland	Neuseeland	PROPN	NE	Number=Sing|Person=3	42	appos	_	SpacesAfter= 
+45	|	|	PUNCT	$(	PunctType=Brck	46	punct	_	SpacesAfter=\n
+46	Niederlande	Niederlande	PROPN	NE	Number=Plur|Person=3	44	appos	_	SpacesAfter= 
+47	|	|	PUNCT	$(	PunctType=Brck	48	punct	_	SpacesAfter=\n
+48	Norwegen	Norwegen	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpacesAfter= 
+49	|	|	PUNCT	$(	PunctType=Brck	50	punct	_	SpacesAfter=\n
+50	Österreich	Österreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	46	appos	_	SpacesAfter= 
+51	|	|	PUNCT	$(	PunctType=Brck	52	punct	_	SpacesAfter=\n
+52	Polen	Polen	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpacesAfter= 
+53	|	|	PUNCT	$(	PunctType=Brck	54	punct	_	SpacesAfter=\n
+54	Portugal	Portugal	PROPN	NE	Number=Sing|Person=3	52	appos	_	SpacesAfter= 
+55	|	|	PUNCT	$(	PunctType=Brck	56	punct	_	SpacesAfter=\n
+56	Schweden	Schweden	PROPN	NE	Number=Sing|Person=3	54	appos	_	SpacesAfter= 
+57	|	|	PUNCT	NE	_	58	punct	_	SpacesAfter=\n
+58	Schweiz	Schweiz	PROPN	NE	Gender=Fem|Number=Sing|Person=3	56	appos	_	SpacesAfter= 
+59	|	|	PROPN	NE	Person=3	58	flat:name	_	SpacesAfter=\n
+60	Südkorea	Südkorea	PROPN	NE	Number=Sing|Person=3	58	flat:name	_	SpacesAfter= 
+61	|	|	PUNCT	NE	Person=3	62	punct	_	SpacesAfter=\n
+62	Slowakei	Slowakei	PROPN	NE	Person=3	58	appos	_	SpacesAfter= 
+63	|	|	PUNCT	NE	PunctType=Brck	62	punct	_	SpacesAfter=\n
+64	Slowenien	Slowenien	PROPN	NE	Number=Sing|Person=3	62	appos	_	SpacesAfter= 
+65	|	|	PUNCT	$(	PunctType=Brck	66	punct	_	SpacesAfter=\n
+66	Spanien	Spanien	PROPN	NE	Number=Sing|Person=3	62	appos	_	SpacesAfter= 
+67	|	|	PUNCT	NE	PunctType=Brck	68	punct	_	SpacesAfter=\n
+68	Tschechien	Tschechien	PROPN	NE	Person=3	66	appos	_	SpacesAfter= 
+69	|	|	PUNCT	$(	PunctType=Brck	70	punct	_	SpacesAfter=\n
+70	Türkei	Türkei	PROPN	NE	Gender=Fem|Number=Sing|Person=3	68	appos	_	SpacesAfter= 
+71	|	|	PUNCT	NE	PunctType=Brck	72	punct	_	SpacesAfter=\n
+72	Ungarn	Ungarn	PROPN	NE	Number=Sing|Person=3	70	appos	_	SpacesAfter= 
+73	|	|	PUNCT	$(	PunctType=Brck	75	punct	_	SpacesAfter=\n
+74	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	75	amod	_	SpacesAfter= 
+75	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	68	appos	_	SpacesAfter= 
+76	|	|	X	CARD	Number=Plur|NumType=Card|Person=3	78	punct	_	SpacesAfter=\n
+77	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Number=Plur	78	amod	_	SpacesAfter= 
+78	Staaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	75	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18835,6 +19981,134 @@
 1	Teilnehmerstaaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Albanien | Andorra | Armenien | Aserbaidschan | Belarus | Belgien | Bosnien und Herzegowina | Bulgarien | Königreich Dänemark | Deutschland | Estland | Finnland | Frankreich | Georgien | Griechenland | Irland | Island | Italien | Kanada | Kasachstan | Kirgisistan | Kroatien | Lettland | Liechtenstein | Litauen | Luxemburg | Malta | Moldau | Monaco | Mongolei | Montenegro | Königreich der Niederlande | Nordmazedonien | Norwegen | Österreich | Polen | Portugal | Rumänien | Russland | San Marino | Schweden | Schweiz | Serbien | Slowakei | Slowenien | Spanien | Tadschikistan | Tschechien | Türkei | Turkmenistan | Ukraine | Ungarn | Usbekistan | Vatikanstadt |
+1	Albanien	Albanien	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+3	Andorra	Andorra	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	19	punct	_	SpacesAfter=\n
+5	Armenien	Armenien	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	22	punct	_	SpacesAfter=\n
+7	Aserbaidschan	Aserbaidschan	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+8	|	|	PUNCT	$(	PunctType=Brck	9	punct	_	SpacesAfter=\n
+9	Belarus	Belarus	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+10	|	|	PUNCT	$(	PunctType=Brck	11	punct	_	SpacesAfter=\n
+11	Belgien	Belgien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+12	|	|	PUNCT	$(	PunctType=Brck	13	punct	_	SpacesAfter=\n
+13	Bosnien	Bosnien	PROPN	NE	Number=Sing|Person=3	11	appos	_	_
+14	und	und	CCONJ	KON	_	15	cc	_	_
+15	Herzegowina	Herzegowina	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+16	|	|	PUNCT	NE	_	15	flat	_	SpacesAfter=\n
+17	Bulgarien	Bulgarien	PROPN	NE	Number=Sing|Person=3	15	flat:name	_	SpacesAfter= 
+18	|	|	PUNCT	$(	PunctType=Brck	19	punct	_	SpacesAfter=\n
+19	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	15	appos	_	_
+20	Dänemark	Dänemark	PROPN	NE	Number=Sing|Person=3	19	flat:name	_	SpacesAfter= 
+21	|	|	PUNCT	$(	PunctType=Brck	22	punct	_	SpacesAfter=\n
+22	Deutschland	Deutschland	PROPN	NE	Number=Sing|Person=3	19	appos	_	SpacesAfter= 
+23	|	|	PUNCT	NE	PunctType=Brck	22	punct	_	SpacesAfter=\n
+24	Estland	Estland	PROPN	NE	Person=3	19	appos	_	SpacesAfter= 
+25	|	|	PUNCT	NE	PunctType=Brck	22	punct	_	SpacesAfter=\n
+26	Finnland	Finnland	PROPN	NE	Number=Sing|Person=3	19	conj	_	SpacesAfter= 
+27	|	|	PUNCT	$(	PunctType=Brck	22	punct	_	SpacesAfter=\n
+28	Frankreich	Frankreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	19	conj	_	SpacesAfter= 
+29	|	|	PUNCT	$(	PunctType=Brck	19	punct	_	SpacesAfter=\n
+30	Georgien	Georgien	PROPN	NE	Number=Sing|Person=3	19	appos	_	SpacesAfter= 
+31	|	|	PUNCT	NE	_	19	punct	_	SpacesAfter=\n
+32	Griechenland	Griechenland	PROPN	NE	Person=3	19	conj	_	SpacesAfter= 
+33	|	|	PUNCT	$(	PunctType=Brck	19	punct	_	SpacesAfter=\n
+34	Irland	Irland	PROPN	NE	Number=Sing|Person=3	19	conj	_	SpacesAfter= 
+35	|	|	PUNCT	$(	_	19	punct	_	SpacesAfter=\n
+36	Island	Island	PROPN	NE	Number=Sing|Person=3	19	conj	_	SpacesAfter= 
+37	|	|	PUNCT	$(	PunctType=Brck	22	punct	_	SpacesAfter=\n
+38	Italien	Italien	PROPN	NE	Number=Sing|Person=3	19	conj	_	SpacesAfter= 
+39	|	|	PUNCT	NE	PunctType=Brck	22	punct	_	SpacesAfter=\n
+40	Kanada	Kanada	PROPN	NE	Number=Sing|Person=3	19	flat:name	_	SpacesAfter= 
+41	|	|	PROPN	NE	Person=3	44	flat:name	_	SpacesAfter=\n
+42	Kasachstan	Kasachstan	PROPN	NE	Person=3	19	flat:name	_	SpacesAfter= 
+43	|	|	PUNCT	NE	PunctType=Brck	44	punct	_	SpacesAfter=\n
+44	Kirgisistan	Kirgisistan	PROPN	NE	Person=3	19	appos	_	SpacesAfter= 
+45	|	|	PUNCT	NE	_	44	flat	_	SpacesAfter=\n
+46	Kroatien	Kroatien	PROPN	NE	Number=Sing|Person=3	44	flat:name	_	SpacesAfter= 
+47	|	|	PUNCT	NE	_	44	flat	_	SpacesAfter=\n
+48	Lettland	Lettland	PROPN	NE	Person=3	44	appos	_	SpacesAfter= 
+49	|	|	PUNCT	NE	_	48	flat	_	SpacesAfter=\n
+50	Liechtenstein	Liechtenstein	PROPN	NE	Person=3	48	flat:name	_	SpacesAfter= 
+51	|	|	PUNCT	NE	Person=3	54	punct	_	SpacesAfter=\n
+52	Litauen	Litauen	PROPN	NE	Number=Sing|Person=3	54	appos	_	SpacesAfter= 
+53	|	|	PUNCT	NE	_	54	punct	_	SpacesAfter=\n
+54	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	50	appos	_	SpacesAfter= 
+55	|	|	PUNCT	NE	PunctType=Brck	54	punct	_	SpacesAfter=\n
+56	Malta	Malta	PROPN	NE	Number=Sing|Person=3	54	appos	_	SpacesAfter= 
+57	|	|	PUNCT	NE	PunctType=Brck	54	punct	_	SpacesAfter=\n
+58	Moldau	Moldau	PROPN	NE	Person=3	54	appos	_	SpacesAfter= 
+59	|	|	PUNCT	$(	PunctType=Brck	54	punct	_	SpacesAfter=\n
+60	Monaco	Monaco	PROPN	NE	Person=3	54	appos	_	SpacesAfter= 
+61	|	|	PUNCT	NE	PunctType=Brck	54	flat:name	_	SpacesAfter=\n
+62	Mongolei	Mongolei	PROPN	NE	Person=3	54	flat:name	_	SpacesAfter= 
+63	|	|	PUNCT	$(	PunctType=Brck	60	punct	_	SpacesAfter=\n
+64	Montenegro	Montenegro	PROPN	NE	Person=3	56	appos	_	SpacesAfter= 
+65	|	|	PUNCT	$(	PunctType=Brck	66	punct	_	SpacesAfter=\n
+66	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	60	appos	_	_
+67	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	68	det	_	_
+68	Niederlande	Niederlande	PROPN	NE	Number=Plur|Person=3	66	nmod	_	SpacesAfter= 
+69	|	|	PUNCT	NE	PunctType=Brck	70	punct	_	SpacesAfter=\n
+70	Nordmazedonien	Nordmazedonien	PROPN	NE	Person=3	56	flat:name	_	SpacesAfter= 
+71	|	|	PUNCT	$(	PunctType=Brck	72	punct	_	SpacesAfter=\n
+72	Norwegen	Norwegen	PROPN	NE	Number=Sing|Person=3	68	appos	_	SpacesAfter= 
+73	|	|	PUNCT	$(	PunctType=Brck	74	punct	_	SpacesAfter=\n
+74	Österreich	Österreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	72	appos	_	SpacesAfter= 
+75	|	|	PUNCT	$(	PunctType=Brck	76	punct	_	SpacesAfter=\n
+76	Polen	Polen	PROPN	NE	Number=Sing|Person=3	74	appos	_	SpacesAfter= 
+77	|	|	PUNCT	$(	PunctType=Brck	78	punct	_	SpacesAfter=\n
+78	Portugal	Portugal	PROPN	NE	Number=Sing|Person=3	76	appos	_	SpacesAfter= 
+79	|	|	PUNCT	$(	PunctType=Brck	80	punct	_	SpacesAfter=\n
+80	Rumänien	Rumänien	PROPN	NE	Number=Sing|Person=3	78	appos	_	SpacesAfter= 
+81	|	|	PUNCT	$(	PunctType=Brck	82	punct	_	SpacesAfter=\n
+82	Russland	Russland	PROPN	NE	Number=Sing|Person=3	80	appos	_	SpacesAfter= 
+83	|	|	PUNCT	$(	PunctType=Brck	84	punct	_	SpacesAfter=\n
+84	San	San	PROPN	NE	Number=Sing|Person=3	82	appos	_	SpacesAfter= 
+85	Marino	Marino	PROPN	NE	Number=Sing|Person=3	84	flat:name	_	SpacesAfter= 
+86	|	|	PUNCT	$(	PunctType=Brck	87	punct	_	SpacesAfter=\n
+87	Schweden	Schweden	PROPN	NE	Number=Sing|Person=3	84	appos	_	SpacesAfter= 
+88	|	|	PUNCT	$(	PunctType=Brck	89	punct	_	SpacesAfter=\n
+89	Schweiz	Schweiz	PROPN	NE	Gender=Fem|Number=Sing|Person=3	87	appos	_	SpacesAfter= 
+90	|	|	PUNCT	NE	PunctType=Brck	89	punct	_	SpacesAfter=\n
+91	Serbien	Serbien	PROPN	NE	Number=Sing|Person=3	89	appos	_	SpacesAfter= 
+92	|	|	PUNCT	$(	PunctType=Brck	93	punct	_	SpacesAfter=\n
+93	Slowakei	Slowakei	PROPN	NE	Person=3	89	appos	_	SpacesAfter= 
+94	|	|	PUNCT	NE	PunctType=Brck	93	punct	_	SpacesAfter=\n
+95	Slowenien	Slowenien	PROPN	NE	Number=Sing|Person=3	93	appos	_	SpacesAfter= 
+96	|	|	PUNCT	$(	PunctType=Brck	93	punct	_	SpacesAfter=\n
+97	Spanien	Spanien	PROPN	NE	Number=Sing|Person=3	93	appos	_	SpacesAfter= 
+98	|	|	PUNCT	NE	_	99	punct	_	SpacesAfter=\n
+99	Tadschikistan	Tadschikistan	PROPN	NE	Person=3	93	appos	_	SpacesAfter= 
+100	|	|	PUNCT	NE	PunctType=Brck	101	punct	_	SpacesAfter=\n
+101	Tschechien	Tschechien	PROPN	NE	Person=3	93	appos	_	SpacesAfter= 
+102	|	|	PUNCT	$(	PunctType=Brck	103	punct	_	SpacesAfter=\n
+103	Türkei	Türkei	PROPN	NE	Gender=Fem|Number=Sing|Person=3	93	appos	_	SpacesAfter= 
+104	|	|	PUNCT	NE	PunctType=Brck	103	punct	_	SpacesAfter=\n
+105	Turkmenistan	Turkmenistan	PROPN	NE	Person=3	103	appos	_	SpacesAfter= 
+106	|	|	PUNCT	NE	PunctType=Brck	107	punct	_	SpacesAfter=\n
+107	Ukraine	Ukraine	PROPN	NE	Person=3	103	appos	_	SpacesAfter= 
+108	|	|	PUNCT	NE	PunctType=Brck	107	punct	_	SpacesAfter=\n
+109	Ungarn	Ungarn	PROPN	NE	Number=Sing|Person=3	107	appos	_	SpacesAfter= 
+110	|	|	PUNCT	NE	PunctType=Brck	113	punct	_	SpacesAfter=\n
+111	Usbekistan	Usbekistan	PROPN	NE	Person=3	107	appos	_	SpacesAfter= 
+112	|	|	PUNCT	NE	PunctType=Brck	113	punct	_	SpacesAfter=\n
+113	Vatikanstadt	Vatikanstadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	111	appos	_	SpacesAfter= 
+114	|	|	PUNCT	$.	PunctType=Peri	113	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Vereinigtes Königreich | Vereinigte Staaten | Republik Zypern
+1	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	SpacesAfter= 
+2	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+3	|	|	ADV	CARD	Number=Plur|NumType=Card|Person=3	2	advmod	_	SpacesAfter=\n
+4	Vereinigte	vereinigen	ADJ	ADJA	Degree=Pos|Number=Plur	5	amod	_	SpacesAfter= 
+5	Staaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	appos	_	SpacesAfter= 
+6	|	|	PUNCT	$(	_	7	punct	_	SpacesAfter=\n
+7	Republik	Republik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	appos	_	_
+8	Zypern	Zypern	PROPN	NE	Person=3	7	flat:name	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -18844,6 +20118,30 @@
 # text = Partnerstaaten:
 1	Partnerstaaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Afghanistan | Australien | Ägypten | Algerien | Israel | Japan | Jordanien | Marokko | Tunesien | Südkorea | Thailand
+1	Afghanistan	Afghanistan	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	_	1	flat	_	SpacesAfter=\n
+3	Australien	Australien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	NE	PunctType=Brck	1	flat	_	SpacesAfter=\n
+5	Ägypten	Ägypten	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+7	Algerien	Algerien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+8	|	|	X	NE	Hyph=Yes	7	flat	_	SpacesAfter=\n
+9	Israel	Israel	PROPN	NE	Gender=Masc|Number=Sing|Person=3	7	flat:name	_	SpacesAfter= 
+10	|	|	PROPN	NE	Person=3	7	flat:name	_	SpacesAfter=\n
+11	Japan	Japan	PROPN	NE	Number=Sing|Person=3	7	flat:name	_	SpacesAfter= 
+12	|	|	PROPN	NE	Person=3	13	flat:name	_	SpacesAfter=\n
+13	Jordanien	Jordanien	PROPN	NE	Person=3	7	appos	_	SpacesAfter= 
+14	|	|	X	NE	Foreign=Yes|Person=3	13	flat	_	SpacesAfter=\n
+15	Marokko	Marokko	PROPN	NE	Number=Sing|Person=3	13	flat:name	_	SpacesAfter= 
+16	|	|	X	NE	Number=Plur|NumType=Card|Person=3	15	flat	_	SpacesAfter=\n
+17	Tunesien	Tunesien	PROPN	NE	Person=3	13	flat:name	_	SpacesAfter= 
+18	|	|	PUNCT	NE	PunctType=Brck	19	punct	_	SpacesAfter=\n
+19	Südkorea	Südkorea	PROPN	NE	Number=Sing|Person=3	17	appos	_	SpacesAfter= 
+20	|	|	PROPN	NE	Person=3	19	flat:name	_	SpacesAfter=\n
+21	Thailand	Thailand	PROPN	NE	Number=Sing|Person=3	19	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18856,6 +20154,139 @@
 2	Mitgliedstaaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Antigua und Barbuda | Australien | Bahamas |
+1	Antigua	Antigua	PROPN	NE	Person=3	0	root	_	_
+2	und	und	CCONJ	KON	_	3	cc	_	_
+3	Barbuda	Barbuda	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpacesAfter=\n
+5	Australien	Australien	PROPN	NE	Number=Sing|Person=3	3	flat:name	_	SpacesAfter= 
+6	|	|	PUNCT	NE	_	7	punct	_	SpacesAfter=\n
+7	Bahamas	Bahamas	PROPN	NE	Person=3	3	appos	_	SpacesAfter= 
+8	|	|	PUNCT	$.	PunctType=Peri	7	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Bangladesch | Barbados | Belize | Botswana |
+1	Bangladesch	Bangladesch	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	Barbados	Barbados	X	NE	Foreign=Yes|Person=3	1	flat:name	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+5	Belize	Belize	X	FM	Foreign=Yes|Person=3	1	appos	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+7	Botswana	Botswana	PROPN	NE	Person=3	5	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	$.	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Brunei | Dominica | Eswatini | Fidschi | Gambia | Ghana | Grenada | Guyana | Indien | Jamaika | Kamerun | Kanada | Kenia | Kiribati | Lesotho | Malawi | Malaysia | Malta | Mauritius | Mosambik | Namibia | Nauru | Neuseeland | Nigeria | Pakistan | Papua-Neuguinea | Ruanda | Salomonen | Sambia | Samoa | Seychellen | Sierra Leone | Singapur | Sri Lanka | St. Kitts und Nevis | St. Lucia | St. Vincent und die Grenadinen | Südafrika | Tansania | Tonga | Trinidad und Tobago | Tuvalu | Uganda | Vanuatu |
+1	Brunei	Brunei	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	Dominica	Dominica	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	1	flat	_	SpacesAfter=\n
+5	Eswatini	Eswatini	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+7	Fidschi	Fidschi	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+8	|	|	PUNCT	NE	Foreign=Yes|Person=3	7	punct	_	SpacesAfter=\n
+9	Gambia	Gambia	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+10	|	|	PUNCT	NE	_	7	punct	_	SpacesAfter=\n
+11	Ghana	Ghana	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+12	|	|	PUNCT	NE	_	11	flat	_	SpacesAfter=\n
+13	Grenada	Grenada	PROPN	NE	Number=Sing|Person=3	7	flat:name	_	SpacesAfter= 
+14	|	|	PUNCT	NE	PunctType=Brck	15	punct	_	SpacesAfter=\n
+15	Guyana	Guyana	PROPN	NE	Person=3	7	appos	_	SpacesAfter= 
+16	|	|	PUNCT	$(	_	19	punct	_	SpacesAfter=\n
+17	Indien	Indien	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+18	|	|	PUNCT	NE	_	19	punct	_	SpacesAfter=\n
+19	Jamaika	Jamaika	PROPN	NE	Number=Sing|Person=3	17	appos	_	SpacesAfter= 
+20	|	|	PUNCT	NE	PunctType=Brck	23	punct	_	SpacesAfter=\n
+21	Kamerun	Kamerun	PROPN	NE	Number=Sing|Person=3	19	appos	_	SpacesAfter= 
+22	|	|	PUNCT	$(	_	23	punct	_	SpacesAfter=\n
+23	Kanada	Kanada	PROPN	NE	Number=Sing|Person=3	19	appos	_	SpacesAfter= 
+24	|	|	PROPN	NE	_	25	flat	_	SpacesAfter=\n
+25	Kenia	Kenia	PROPN	NE	Person=3	23	appos	_	SpacesAfter= 
+26	|	|	PROPN	NE	_	25	flat	_	SpacesAfter=\n
+27	Kiribati	Kiribati	PROPN	NE	Person=3	25	flat:name	_	SpacesAfter= 
+28	|	|	PUNCT	NE	_	29	punct	_	SpacesAfter=\n
+29	Lesotho	Lesotho	PROPN	NE	Person=3	23	appos	_	SpacesAfter= 
+30	|	|	PROPN	NE	_	29	flat	_	SpacesAfter=\n
+31	Malawi	Malawi	PROPN	NE	Person=3	29	flat:name	_	SpacesAfter= 
+32	|	|	PUNCT	NE	_	33	punct	_	SpacesAfter=\n
+33	Malaysia	Malaysia	PROPN	NE	Person=3	29	appos	_	SpacesAfter= 
+34	|	|	PROPN	NE	Foreign=Yes|Person=3	33	flat	_	SpacesAfter=\n
+35	Malta	Malta	PROPN	NE	Number=Sing|Person=3	33	flat:name	_	SpacesAfter= 
+36	|	|	PROPN	NE	Person=3	35	flat	_	SpacesAfter=\n
+37	Mauritius	Mauritius	PROPN	NE	Case=Nom|Number=Sing|Person=3	35	flat:name	_	SpacesAfter= 
+38	|	|	PROPN	NE	_	39	flat:name	_	SpacesAfter=\n
+39	Mosambik	Mosambik	PROPN	NE	Person=3	37	appos	_	SpacesAfter= 
+40	|	|	PROPN	NE	Foreign=Yes|Person=3	39	flat:name	_	SpacesAfter=\n
+41	Namibia	Namibia	PROPN	NE	Person=3	39	flat:name	_	SpacesAfter= 
+42	|	|	PROPN	NE	Foreign=Yes|Person=3	39	flat:name	_	SpacesAfter=\n
+43	Nauru	Nauru	PROPN	NE	Person=3	39	flat:name	_	SpacesAfter= 
+44	|	|	PUNCT	NE	Foreign=Yes|Person=3	39	flat	_	SpacesAfter=\n
+45	Neuseeland	Neuseeland	PROPN	NE	Number=Sing|Person=3	39	flat:name	_	SpacesAfter= 
+46	|	|	PUNCT	NE	PunctType=Brck	39	flat:name	_	SpacesAfter=\n
+47	Nigeria	Nigeria	PROPN	NE	Number=Sing|Person=3	39	flat:name	_	SpacesAfter= 
+48	|	|	PUNCT	NE	Foreign=Yes|Person=3	47	flat	_	SpacesAfter=\n
+49	Pakistan	Pakistan	PROPN	NE	Number=Sing|Person=3	39	flat:name	_	SpacesAfter= 
+50	|	|	X	NE	Foreign=Yes|Person=3	47	flat	_	SpacesAfter=\n
+51	Papua-Neuguinea	uua-neuguiknown	PROPN	NE	Person=3	39	flat:name	_	SpacesAfter= 
+52	|	|	X	NE	Foreign=Yes|Person=3	51	flat	_	SpacesAfter=\n
+53	Ruanda	Ruanda	PROPN	NE	Number=Sing|Person=3	51	flat:name	_	SpacesAfter= 
+54	|	|	X	NE	_	57	flat	_	SpacesAfter=\n
+55	Salomonen	unknown	NOUN	NN	Person=3	57	appos	_	SpacesAfter= 
+56	|	|	PUNCT	$(	PunctType=Brck	57	punct	_	SpacesAfter=\n
+57	Sambia	Sambia	PROPN	NE	Person=3	51	appos	_	SpacesAfter= 
+58	|	|	PUNCT	NE	PunctType=Brck	57	flat	_	SpacesAfter=\n
+59	Samoa	Samoa	PROPN	NE	Person=3	57	flat:name	_	SpacesAfter= 
+60	|	|	X	FM	Foreign=Yes|Person=3	63	flat	_	SpacesAfter=\n
+61	Seychellen	Seychelle	NOUN	NN	Gender=Fem|Number=Plur|Person=3	57	appos	_	SpacesAfter= 
+62	|	|	PUNCT	FM	_	63	punct	_	SpacesAfter=\n
+63	Sierra	Sierra	PROPN	NE	Gender=Fem|Number=Sing|Person=3	57	appos	_	_
+64	Leone	Leone	PROPN	NE	Number=Sing|Person=3	63	flat:name	_	SpacesAfter= 
+65	|	|	PUNCT	NE	PunctType=Brck	63	punct	_	SpacesAfter=\n
+66	Singapur	Singapur	PROPN	NE	Person=3	63	appos	_	SpacesAfter= 
+67	|	|	PROPN	NE	Foreign=Yes|Person=3	63	flat	_	SpacesAfter=\n
+68	Sri	Sri	PROPN	NE	Number=Sing|Person=3	63	flat:name	_	_
+69	Lanka	Lanka	PROPN	NE	Number=Sing|Person=3	63	flat:name	_	SpacesAfter= 
+70	|	|	PROPN	NE	Person=3	63	flat	_	SpacesAfter=\n
+71	St.	St.	PROPN	NE	Number=Sing|Person=3	63	flat:name	_	_
+72	Kitts	Kitts	PROPN	NE	Case=Gen|Number=Sing|Person=3	63	flat:name	_	_
+73	und	und	CCONJ	KON	_	74	cc	_	_
+74	Nevis	Nevis	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+75	|	|	PUNCT	NE	PunctType=Brck	74	flat	_	SpacesAfter=\n
+76	St.	St.	PROPN	NE	Number=Sing|Person=3	74	flat:name	_	_
+77	Lucia	Lucia	PROPN	NE	Gender=Fem|Number=Sing|Person=3	74	flat:name	_	SpacesAfter= 
+78	|	|	PROPN	NE	Person=3	74	flat:name	_	SpacesAfter=\n
+79	St	St	PROPN	NE	Number=Sing|Person=3	74	appos	_	SpaceAfter=No
+80	.	.	PUNCT	$.	PunctType=Peri	81	punct	_	_
+81	Vincent	Vincent	PROPN	NE	Number=Sing|Person=3	74	appos	_	_
+82	und	und	CCONJ	KON	_	84	cc	_	_
+83	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	84	det	_	_
+84	Grenadinen	Grenadinen	NOUN	NN	Gender=Fem|Number=Plur|Person=3	81	conj	_	SpacesAfter= 
+85	|	|	PUNCT	NE	PunctType=Brck	86	punct	_	SpacesAfter=\n
+86	Südafrika	Südafrika	PROPN	NE	Number=Sing|Person=3	74	appos	_	SpacesAfter= 
+87	|	|	PUNCT	NE	_	86	flat	_	SpacesAfter=\n
+88	Tansania	Tansania	PROPN	NE	Person=3	86	flat:name	_	SpacesAfter= 
+89	|	|	PROPN	NE	Person=3	86	flat:name	_	SpacesAfter=\n
+90	Tonga	Tonga	PROPN	NE	Person=3	86	flat:name	_	SpacesAfter= 
+91	|	|	PROPN	NE	Person=3	88	flat:name	_	SpacesAfter=\n
+92	Trinidad	Trinidad	PROPN	NE	Number=Sing|Person=3	94	flat:name	_	_
+93	und	und	CCONJ	KON	_	94	cc	_	_
+94	Tobago	Tobago	PROPN	NE	Person=3	84	conj	_	SpacesAfter= 
+95	|	|	PROPN	NE	_	94	flat	_	SpacesAfter=\n
+96	Tuvalu	Tuvalu	PROPN	NE	Person=3	94	flat:name	_	SpacesAfter= 
+97	|	|	PUNCT	NE	PunctType=Brck	94	flat	_	SpacesAfter=\n
+98	Uganda	Uganda	PROPN	NE	Number=Sing|Person=3	94	flat:name	_	SpacesAfter= 
+99	|	|	PUNCT	NE	Person=3	98	punct	_	SpacesAfter=\n
+100	Vanuatu	Vanuatu	PROPN	NE	Person=3	94	flat:name	_	SpacesAfter= 
+101	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = Vereinigtes Königreich | Zypern
+1	Vereinigtes	vereinigen	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	Königreich	Reich	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+3	|	|	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n
+4	Zypern	Zypern	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -18866,6 +20297,23 @@
 1	Ehemalige	ehemalig	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Mitgliedstaaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Dominion Neufundland | Föderation Malaya | Irland | Sultanat Sansibar | Tanganjika | Simbabwe
+1	Dominion	unknown	NOUN	NN	Person=3	0	root	_	_
+2	Neufundland	Neufundland	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+4	Föderation	Ration	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	appos	_	_
+5	Malaya	Malaya	PROPN	NE	Person=3	4	flat:name	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	4	flat	_	SpacesAfter=\n
+7	Irland	Irland	PROPN	NE	Number=Sing|Person=3	4	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	$(	PunctType=Brck	9	punct	_	SpacesAfter=\n
+9	Sultanat	unknown	NOUN	NN	Person=3	4	appos	_	_
+10	Sansibar	Sansibar	PROPN	NE	Person=3	9	flat:name	_	SpacesAfter= 
+11	|	|	X	FM	Foreign=Yes|Person=3	9	flat	_	SpacesAfter=\n
+12	Tanganjika	Tanganjika	PROPN	NE	Person=3	9	flat:name	_	SpacesAfter= 
+13	|	|	X	NE	Foreign=Yes|Person=3	9	flat	_	SpacesAfter=\n
+14	Simbabwe	Simbabwe	PROPN	NE	Person=3	9	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18884,13 +20332,4 @@
 3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
 4	0°	0°	X	FM	Foreign=Yes|Person=3	1	conj	_	SpacesAfter= 
 5	W	W	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
 

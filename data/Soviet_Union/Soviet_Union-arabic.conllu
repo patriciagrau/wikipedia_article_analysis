@@ -1,5 +1,3 @@
-# https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF_%D8%A7%D9%84%D8%B3%D9%88%D9%81%D9%8A%D8%AA%D9%8A
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	الاتحاد	اِتِّحَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	_
 3	-	-	PUNCT	G---------	_	1	punct	_	_
-4	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	dep	_	SpacesAfter=\n
+4	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	dep	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -18,9 +16,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاتحاد السوفيتي
-1	الاتحاد	اِتِّحَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+# text = إحداثيات: 65°N 90°E﻿ / ﻿65°N 90°E﻿ / 65; 90
+1	إحداثيات	إِحدَاثِيّ	ADJ	A-----FP1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	G---------	_	1	punct	_	_
+3	65°N	65°n	NUM	Q---------	NumForm=Digit	1	dep	_	_
+4	90°E﻿	90°e﻿	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+5	/	/	PUNCT	G---------	_	6	punct	_	_
+6	﻿65°N	﻿65°n	NUM	Q---------	NumForm=Digit	3	conj	_	_
+7	90°E﻿	90°e﻿	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+8	/	/	PUNCT	G---------	_	9	punct	_	_
+9	65	65	NUM	Q---------	NumForm=Digit	3	conj	_	SpaceAfter=No
+10	;	;	PUNCT	G---------	_	9	punct	_	_
+11	90	90	NUM	Q---------	NumForm=Digit	9	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -703,12 +710,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الجغرافيا والامتداد[عدل]
-1	الجغرافيا	جُغْرافِيا	X	U---------	_	0	root	_	_
-2	والامتداد	والامتداد	X	U---------	_	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+# text = الجغرافيا والامتداد
+1	الجغرافيا	جُغْرافِيا	CCONJ	C---------	_	2	cc	_	_
+2	والامتداد	والامتداد	X	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -891,7 +895,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = كما كان للاتحاد السوفيتي أطول حدود في العالم وكذلك الأمر بالنسبة للاتحاد الروسي حيث بلغ طولها حوالي 60,000 كيلومتر
+# text = كما كان للاتحاد السوفيتي أطول حدود في العالم وكذلك الأمر بالنسبة للاتحاد الروسي حيث بلغ طولها حوالي 60,000 كيلومتر وفي الاتحاد السوفيتي أكبر بحيرة مياه عذبة وهي بحيرة بايكال وهي لا تزال الآن جزءا من روسيا، أما الدول التي كانت تحد الاتحاد السوفيتي هي أفغانستان، الصين، تشيكوسلوفاكيا، فنلندا، المجر، إيران، منغوليا، كوريا الشمالية، النرويج، بولندا، رومانيا، و تركيا.
 1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
 2	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
 3-4	للاتحاد	_	_	_	_	_	_	_	_
@@ -911,7 +915,7 @@
 14	النسبة	نِسبَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	fixed	_	_
 15-16	للاتحاد	_	_	_	_	_	_	_	_
 15	ل	لِ	ADP	P---------	AdpType=Prep	13	fixed	_	_
-16	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
+16	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	obl	_	_
 17	الروسي	رُوسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	16	amod	_	_
 18	حيث	حَيثُ	CCONJ	C---------	_	19	mark	_	_
 19	بلغ	بَلَغ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	16	acl	_	_
@@ -920,7 +924,65 @@
 21	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	20	nmod	_	_
 22	حوالي	حَوَالَى	ADP	P---------	AdpType=Prep	23	case	_	_
 23	60,000	60,000	NUM	Q---------	NumForm=Digit	19	obl:arg	_	_
-24	كيلومتر	كيلومتر	X	U---------	_	23	nmod	_	SpacesAfter=\n
+24	كيلومتر	كِيلُومِتر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	23	nmod	_	SpacesAfter=\n
+25-26	وفي	_	_	_	_	_	_	_	_
+25	و	وَ	CCONJ	C---------	_	29	cc	_	_
+26	في	فِي	ADP	P---------	AdpType=Prep	27	case	_	_
+27	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	29	obl	_	_
+28	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	27	amod	_	_
+29	أكبر	أَكبَر	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	19	nsubj	_	_
+30	بحيرة	بُحَيرَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	29	nmod	_	_
+31	مياه	مَاء	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	30	nmod	_	_
+32	عذبة	عُذبَة	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	30	amod	_	_
+33-34	وهي	_	_	_	_	_	_	_	_
+33	و	وَ	CCONJ	C---------	_	30	cc	_	_
+34	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+35	بحيرة	بُحَيرَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	30	nmod	_	_
+36	بايكال	بايكال	X	X---------	Foreign=Yes	35	nmod	_	_
+37-38	وهي	_	_	_	_	_	_	_	_
+37	و	وَ	CCONJ	C---------	_	40	cc	_	_
+38	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_
+39	لا	لَا	PART	F---------	_	40	advmod	_	_
+40	تزال	زَال	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	35	acl	_	_
+41	الآن	آن	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	40	obl	_	_
+42	جزءا	جُزء	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	40	obj	_	_
+43	من	مِن	ADP	P---------	AdpType=Prep	44	case	_	_
+44	روسيا	رُوسِيَا	X	X---------	Foreign=Yes	42	nmod	_	SpaceAfter=No
+45	،	،	PUNCT	G---------	_	44	punct	_	_
+46	أما	أَمَّا	PART	F---------	_	54	advmod:emph	_	_
+47	الدول	دَولَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	46	appos	_	_
+48	التي	اَلَّذِي	DET	SR----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	49	nsubj	_	_
+49	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	47	acl:relcl	_	_
+50	تحد	أَحَدّ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	49	xcomp	_	_
+51	الاتحاد	اِتِّحَاد	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	50	obj	_	_
+52	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	51	amod	_	_
+53	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	54	nmod	_	_
+54	أفغانستان	أَفغَانِستَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	SpaceAfter=No
+55	،	،	PUNCT	G---------	_	54	punct	_	_
+56	الصين	صِين	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	54	conj	_	SpaceAfter=No
+57	،	،	PUNCT	G---------	_	58	punct	_	_
+58	تشيكوسلوفاكيا	تشيكوسلوفاكيا	X	U---------	_	54	conj	_	SpaceAfter=No
+59	،	،	PUNCT	G---------	_	60	punct	_	_
+60	فنلندا	فِنلَندَا	X	X---------	Foreign=Yes	54	conj	_	SpaceAfter=No
+61	،	،	PUNCT	G---------	_	60	punct	_	_
+62	المجر	مَجَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	54	conj	_	SpaceAfter=No
+63	،	،	PUNCT	G---------	_	60	punct	_	_
+64	إيران	إِيرَان	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	54	conj	_	SpaceAfter=No
+65	،	،	PUNCT	G---------	_	66	punct	_	_
+66	منغوليا	مُنغُولِيَا	X	X---------	Foreign=Yes	54	conj	_	SpaceAfter=No
+67	،	،	PUNCT	G---------	_	68	punct	_	_
+68	كوريا	كُورِيَا	X	X---------	Foreign=Yes	54	conj	_	_
+69	الشمالية	شَمَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	68	amod	_	SpaceAfter=No
+70	،	،	PUNCT	G---------	_	71	punct	_	_
+71	النرويج	النرويج	X	N------S1D	_	54	conj	_	SpaceAfter=No
+72	،	،	PUNCT	G---------	_	73	punct	_	_
+73	بولندا	بُولَندَا	X	X---------	Foreign=Yes	54	conj	_	SpaceAfter=No
+74	،	،	PUNCT	G---------	_	75	punct	_	_
+75	رومانيا	رُومَانِيَا	X	X---------	Foreign=Yes	54	conj	_	SpaceAfter=No
+76	،	،	PUNCT	G---------	_	75	punct	_	_
+77	و	وَ	CCONJ	C---------	_	78	cc	_	_
+78	تركيا	تُركِيَا	X	X---------	Foreign=Yes	54	conj	_	SpaceAfter=No
+79	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -928,11 +990,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التاريخ[عدل]
+# text = التاريخ
 1	التاريخ	تَارِيخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1473,12 +1532,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = فلاديمير لينين[عدل]
-1	فلاديمير	فلَادِيمِير	X	X---------	Foreign=Yes	0	root	_	_
-2	لينين	لينين	X	X---------	Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+# text = فلاديمير لينين
+1	فلاديمير	فلَادِيمِير	X	X---------	Foreign=Yes	2	nmod	_	_
+2	لينين	لينين	X	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1757,16 +1813,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الثورة وتأسيس الدولة السوفيتية[عدل]
+# text = الثورة وتأسيس الدولة السوفيتية
 1	الثورة	ثَورَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2-3	وتأسيس	_	_	_	_	_	_	_	_
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	تأسيس	تَأسِيس	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	conj	_	_
 4	الدولة	دَولَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
 5	السوفيتية	سُوفَيتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
-6	[	[	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
-7	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-8	]	]	PUNCT	G---------	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2410,14 +2463,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العلاقات المبكرة مع الصين[عدل]
+# text = العلاقات المبكرة مع الصين
 1	العلاقات	عَلَاقَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	المبكرة	مُبَكِّر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	4	case	_	_
 4	الصين	صِين	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2746,13 +2796,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = توحيد الجمهوريات السوفيتية[عدل]
+# text = توحيد الجمهوريات السوفيتية
 1	توحيد	تَوحِيد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الجمهوريات	جُمهُورِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	nmod	_	_
 3	السوفيتية	سُوفَيتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3201,12 +3248,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = حكم ستالين[عدل]
+# text = حكم ستالين
 1	حكم	حُكم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	ستالين	ستالين	X	N------D2I	_	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+2	ستالين	ستالين	X	U---------	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4230,12 +4274,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = فترة الثلاثينيات[عدل]
+# text = فترة الثلاثينيات
 1	فترة	فَترَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الثلاثينيات	ثَلاثِينِيّ	ADJ	A-----FP2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4356,13 +4397,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب العالمية الثانية[عدل]
+# text = الحرب العالمية الثانية
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	العالمية	عَالَمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	الثانية	ثَانِي	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4730,12 +4768,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب الباردة[عدل]
+# text = الحرب الباردة
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الباردة	بَارِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4795,12 +4830,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب الكورية[عدل]
+# text = الحرب الكورية
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الكورية	كُورِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4879,12 +4911,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب الفيتنامية[عدل]
+# text = الحرب الفيتنامية
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الفيتنامية	فِيَتنَامِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4938,13 +4967,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انتهاء الحرب الباردة[عدل]
+# text = انتهاء الحرب الباردة
 1	انتهاء	اِنتِهَاء	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
 3	الباردة	بَارِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4989,11 +5015,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = السياسة[عدل]
+# text = السياسة
 1	السياسة	سِيَاسَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5060,12 +5083,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحزب الشيوعي[عدل]
+# text = الحزب الشيوعي
 1	الحزب	حِزب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الشيوعي	شُيُوعِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5188,12 +5208,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العلاقات الخارجية[عدل]
+# text = العلاقات الخارجية
 1	العلاقات	عَلَاقَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5463,7 +5480,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = السياسات المبكرة (1919- 1939)[عدل]
+# text = السياسات المبكرة (1919- 1939)
 1	السياسات	سِيَاسَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	المبكرة	مُبَكِّر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
@@ -5471,9 +5488,6 @@
 5	-	-	PUNCT	G---------	_	6	punct	_	_
 6	1939	1939	NUM	Q---------	NumForm=Digit	4	conj	_	SpaceAfter=No
 7	)	)	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-8	[	[	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
-9	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-10	]	]	PUNCT	G---------	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6204,7 +6218,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب العالمية الثانية (1939- 1945)[عدل]
+# text = الحرب العالمية الثانية (1939- 1945)
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	العالمية	عَالَمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	الثانية	ثَانِي	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
@@ -6213,9 +6227,6 @@
 6	-	-	PUNCT	G---------	_	7	punct	_	_
 7	1945	1945	NUM	Q---------	NumForm=Digit	5	conj	_	SpaceAfter=No
 8	)	)	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-9	[	[	PUNCT	G---------	_	10	punct	_	SpaceAfter=No
-10	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-11	]	]	PUNCT	G---------	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6336,7 +6347,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحرب الباردة (1945- 1991)[عدل]
+# text = الحرب الباردة (1945- 1991)
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الباردة	بَارِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	(	(	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
@@ -6344,9 +6355,6 @@
 5	-	-	PUNCT	G---------	_	6	punct	_	_
 6	1991	1991	NUM	Q---------	NumForm=Digit	4	conj	_	SpaceAfter=No
 7	)	)	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-8	[	[	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
-9	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-10	]	]	PUNCT	G---------	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6521,12 +6529,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الأقسام الإدارية[عدل]
+# text = الأقسام الإدارية
 1	الأقسام	قِسم	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	الإدارية	إِدَارِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6959,11 +6964,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاقتصاد[عدل]
+# text = الاقتصاد
 1	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6971,9 +6973,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = كان اقتصاد الاتحاد السوفيتي يعتمد أسلوب التخطيط الممركز حيث وجدت خطط خماسية لكل فترة بها الأولويات الاقتصادية للدولة
-1	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
-2	اقتصاد	اِقتِصَاد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+# text = كان اقتصاد الاتحاد السوفيتي يعتمد أسلوب التخطيط الممركز حيث وجدت خطط خماسية لكل فترة بها الأولويات الاقتصادية للدولة وشملت هذه الأولويات كل القطاعات خاصة في فترة الحكم الستالينية حيث شهد الاقتصاد السوفيتي تطورا ملحوظا من دولة فلاحية إلى دولة صناعية خاصة مع عمليات التنقيب عن النفط في سبيريا واكتشاف ثروات معدنية هائلة في تلك المنطقة مما سهل عملية تعافي الاقتصاد السوفيتي وكذلك ازدهر الاقتصاد السوفيتي بوجود التعاضديات الفلاحية السفخوزات والكلخوزات وهو تعاضديات تطبق فكرة الملكية الجماعية لوسائل الإنتاج أما عن الاستثمارات فقد انعدمت الاستثمارات الفردية في الدولة السوفيتية الا بعد الاستثمارات الفلاحية الصغيرة العائلية خاصة و سيطرت الحكومة المركزية على كل فروع الاقتصاد السوفيتي منها الخدمات والصناعة والفلاحة مما دعم وجود الدولة في كل المجالات الاقتصادية لكن رغم ما حققه الاتحاد السوفيتي من نهضة اقتصادية شاملة في عهدي ستالين وخروتشوف
+1	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	اقتصاد	اِقتِصَاد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	nsubj	_	_
 3	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
 4	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
 5	يعتمد	اِعتَمَد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	xcomp	_	_
@@ -6981,12 +6983,12 @@
 7	التخطيط	تَخطِيط	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
 8	الممركز	مَمرُكز	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	7	amod	_	_
 9	حيث	حَيثُ	CCONJ	C---------	_	10	mark	_	_
-10	وجدت	وَجَد	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	5	advcl	_	_
-11	خطط	خُطَّة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	10	nsubj:pass	_	_
-12	خماسية	خَمَاسِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	_
+10	وجدت	وَجَد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	5	advcl	_	_
+11	خطط	خُطَّة	NOUN	N------P4I	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
+12	خماسية	خَمَاسِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	_
 13-14	لكل	_	_	_	_	_	_	_	_
 13	ل	لِ	ADP	P---------	AdpType=Prep	14	case	_	_
-14	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	10	obl	_	_
+14	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	nmod	_	_
 15	فترة	فَترَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	14	nmod	_	_
 16-17	بها	_	_	_	_	_	_	_	_
 16	ب	بِ	ADP	P---------	AdpType=Prep	17	case	_	_
@@ -6996,6 +6998,136 @@
 20-21	للدولة	_	_	_	_	_	_	_	SpacesAfter=\n
 20	ل	لِ	ADP	P---------	AdpType=Prep	21	case	_	_
 21	الدولة	دَولَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+22-23	وشملت	_	_	_	_	_	_	_	_
+22	و	وَ	CCONJ	C---------	_	23	cc	_	_
+23	شملت	شَمِل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	5	conj	_	_
+24	هذه	هٰذَا	DET	SD----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	25	det	_	_
+25	الأولويات	أَولوَيِاَّت	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	23	nsubj	_	_
+26	كل	كُلّ	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	23	obj	_	_
+27	القطاعات	قِطَاع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	26	nmod	_	_
+28	خاصة	خَاصّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	30	advmod:emph	_	_
+29	في	فِي	ADP	P---------	AdpType=Prep	30	case	_	_
+30	فترة	فَترَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	23	obl	_	_
+31	الحكم	حُكم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	_
+32	الستالينية	سَتالَينِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	31	amod	_	_
+33	حيث	حَيثُ	CCONJ	C---------	_	34	mark	_	_
+34	شهد	شَهِد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	5	conj	_	_
+35	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	34	nsubj	_	_
+36	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	35	amod	_	_
+37	تطورا	تَطَوُّر	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	34	obj	_	_
+38	ملحوظا	مَلحُوظ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	37	amod	_	_
+39	من	مِن	ADP	P---------	AdpType=Prep	40	case	_	_
+40	دولة	دَولَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	37	nmod	_	_
+41	فلاحية	فِلَاحِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	40	amod	_	SpacesAfter=\n
+42	إلى	إِلَى	ADP	P---------	AdpType=Prep	43	case	_	_
+43	دولة	دَولَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	34	obl:arg	_	_
+44	صناعية	صِنَاعِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	43	amod	_	_
+45	خاصة	خَاصّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	47	advmod:emph	_	_
+46	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	47	case	_	_
+47	عمليات	عَمَلِيَّة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	34	obl	_	_
+48	التنقيب	تَنقِيب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	47	nmod	_	_
+49	عن	عَن	ADP	P---------	AdpType=Prep	50	case	_	_
+50	النفط	نَفط	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	48	obl:arg	_	_
+51	في	فِي	ADP	P---------	AdpType=Prep	52	case	_	_
+52	سبيريا	سبيريا	X	X---------	Foreign=Yes	48	nmod	_	_
+53	واكتشاف	واكتشاف	X	U---------	_	54	cc	_	_
+54	ثروات	ثَروَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	48	conj	_	_
+55	معدنية	معَدَنِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	54	amod	_	_
+56	هائلة	هَائِل	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	54	amod	_	_
+57	في	فِي	ADP	P---------	AdpType=Prep	59	case	_	_
+58	تلك	ذٰلِكَ	DET	SD----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	59	det	_	_
+59	المنطقة	مِنطَقَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	54	nmod	_	SpacesAfter=\n
+60	مما	مِمَّا	CCONJ	C---------	_	61	cc	_	_
+61	سهل	سَهَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	34	conj	_	_
+62	عملية	عَمَلِيَّة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	61	obj	_	_
+63	تعافي	تَعفِيَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	62	nmod	_	_
+64	الاقتصاد	اِقتِصَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	63	nmod	_	_
+65	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	64	amod	_	SpacesAfter=\n
+66-67	وكذلك	_	_	_	_	_	_	_	_
+66	و	وَ	CCONJ	C---------	_	68	cc	_	_
+67	كذٰلك	كَذٰلِكَ	ADV	D---------	_	68	advmod:emph	_	_
+68	ازدهر	أَزدهَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	61	conj	_	_
+69	الاقتصاد	اِقتِصَاد	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	68	nsubj	_	_
+70	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	69	amod	_	_
+71-72	بوجود	_	_	_	_	_	_	_	_
+71	ب	بِ	ADP	P---------	AdpType=Prep	72	case	_	_
+72	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	68	obl:arg	_	_
+73	التعاضديات	التعاضديات	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	72	nmod	_	_
+74	الفلاحية	فَلَاحِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	73	amod	_	_
+75	السفخوزات	السفخوزات	X	U---------	_	73	nmod	_	_
+76	والكلخوزات	والكلخوزات	X	U---------	_	73	nmod	_	_
+77-78	وهو	_	_	_	_	_	_	_	_
+77	و	وَ	CCONJ	C---------	_	79	cc	_	_
+78	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	79	nsubj	_	_
+79	تعاضديات	تعاضديات	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	72	nmod	_	_
+80	تطبق	طَبَّق	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	79	acl	_	_
+81	فكرة	فِكرَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	80	obj	_	_
+82	الملكية	مِلكِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	81	nmod	_	_
+83	الجماعية	جَمَاعِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	82	amod	_	SpacesAfter=\n
+84-85	لوسائل	_	_	_	_	_	_	_	_
+84	ل	لِ	ADP	P---------	AdpType=Prep	85	case	_	_
+85	وسائل	وَسِيلَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	82	nmod	_	_
+86	الإنتاج	إِنتَاج	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	85	nmod	_	SpacesAfter=\n
+87	أما	أَمَّا	PART	F---------	_	92	advmod:emph	_	_
+88	عن	عَن	ADP	P---------	AdpType=Prep	89	case	_	_
+89	الاستثمارات	اِستِثمَار	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	140	nmod	_	_
+90-91	فقد	_	_	_	_	_	_	_	_
+90	ف	فَ	CCONJ	C---------	_	92	advmod	_	_
+91	قد	قَد	AUX	F---------	_	92	aux	_	_
+92	انعدمت	اِنعَدَم	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	5	conj	_	_
+93	الاستثمارات	اِستِثمَار	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	92	nsubj	_	_
+94	الفردية	فَردِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	93	amod	_	_
+95	في	فِي	ADP	P---------	AdpType=Prep	96	case	_	_
+96	الدولة	دَولَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	93	nmod	_	_
+97	السوفيتية	سُوفَيتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	96	amod	_	_
+98	الا	إِلَّا	PART	F---------	_	92	advmod:emph	_	_
+99	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	100	case	_	_
+100	الاستثمارات	اِستِثمَار	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	92	obl	_	_
+101	الفلاحية	فَلَاحِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	100	amod	_	_
+102	الصغيرة	صَغِير	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	100	amod	_	_
+103	العائلية	عَائِلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	100	amod	_	_
+104	خاصة	خَاصّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	34	obl	_	SpacesAfter=\n
+105	و	وَ	CCONJ	C---------	_	34	cc	_	_
+106	سيطرت	سَيطَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	34	conj	_	_
+107	الحكومة	حُكُومَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	106	nsubj	_	_
+108	المركزية	مَركَزِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	107	amod	_	_
+109	على	عَلَى	ADP	P---------	AdpType=Prep	110	case	_	_
+110	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	106	obl:arg	_	_
+111	فروع	فَرع	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	110	nmod	_	_
+112	الاقتصاد	اِقتِصَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	111	nmod	_	_
+113	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	112	amod	_	_
+114-115	منها	_	_	_	_	_	_	_	_
+114	من	مِن	ADP	P---------	AdpType=Prep	115	case	_	_
+115	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	111	nmod	_	_
+116	الخدمات	خِدمَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	115	nsubj	_	_
+117-118	والصناعة	_	_	_	_	_	_	_	_
+117	و	وَ	CCONJ	C---------	_	118	cc	_	_
+118	الصناعة	صِنَاعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	116	conj	_	_
+119	والفلاحة	والفلاحة	X	U---------	_	116	conj	_	_
+120	مما	مِمَّا	CCONJ	C---------	_	121	cc	_	_
+121	دعم	دَعَم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	34	conj	_	_
+122	وجود	وُجُود	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	121	obj	_	_
+123	الدولة	دَولَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	122	nmod	_	_
+124	في	فِي	ADP	P---------	AdpType=Prep	125	case	_	_
+125	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	122	nmod	_	_
+126	المجالات	مَجَال	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	125	nmod	_	SpacesAfter=\n
+127	الاقتصادية	اِقتِصَادِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	126	amod	_	SpacesAfter=\n
+128	لكن	لكن	CCONJ	C---------	_	130	cc	_	_
+129	رغم	رَغمَ	ADP	PI------4-	AdpType=Prep|Case=Acc	130	case	_	_
+130	ما	مَا	DET	S---------	_	92	obl	_	_
+131-132	حققه	_	_	_	_	_	_	_	_
+131	حقق	حَقَّق	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	130	acl	_	_
+132	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	131	obj	_	_
+133	الاتحاد	اِتِّحَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	131	nsubj	_	_
+134	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	133	amod	_	_
+135	من	مِن	ADP	P---------	AdpType=Prep	136	case	_	_
+136	نهضة	نَهضَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	131	obl:arg	_	_
+137	اقتصادية	اِقتِصَادِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	136	amod	_	_
+138	شاملة	شَامِل	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	136	amod	_	_
+139	في	فِي	ADP	P---------	AdpType=Prep	140	case	_	_
+140	عهدي	عهدي	NOUN	N------D2R	Case=Gen|Definite=Cons|Number=Dual	136	nmod	_	_
+141	ستالين	ستالين	X	U---------	_	142	nmod	_	_
+142	وخروتشوف	وخروتشوف	X	U---------	_	140	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7003,7 +7135,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = سرعان ما ضعفت الحكومة المركزية في موسكو مما سبب انهيار العديد من القطاعات الاقتصادية وكذلك بسبب النفقات على السلاح
+# text = سرعان ما ضعفت الحكومة المركزية في موسكو مما سبب انهيار العديد من القطاعات الاقتصادية وكذلك بسبب النفقات على السلاح والحرب السوفيتية الأفغانية إنهار الاقتصاد السوفيتي انهيارا كبيرا وذلك في آخر سنوات الاتحاد
 1	سرعان	سُرعَانَ	ADV	D---------	_	3	advmod	_	_
 2	ما	مَا	DET	S---------	_	3	obl	_	_
 3	ضعفت	ضَعَف	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
@@ -7024,9 +7156,26 @@
 17-18	بسبب	_	_	_	_	_	_	_	_
 17	ب	بِ	ADP	P---------	AdpType=Prep	19	case	_	_
 18	سبب	سَبَب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	17	fixed	_	_
-19	النفقات	نَفَقَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	conj	_	_
+19	النفقات	نَفَقَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	obl	_	_
 20	على	عَلَى	ADP	P---------	AdpType=Prep	21	case	_	_
 21	السلاح	سِلَاح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	SpacesAfter=\n
+22-23	والحرب	_	_	_	_	_	_	_	_
+22	و	وَ	CCONJ	C---------	_	23	cc	_	_
+23	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	conj	_	_
+24	السوفيتية	سُوفَيتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	amod	_	_
+25	الأفغانية	أَفغَانِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	amod	_	_
+26	إنهار	إِنهَار	NOUN	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	3	conj	_	_
+27	الاقتصاد	اِقتِصَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	_
+28	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	27	amod	_	_
+29	انهيارا	اِنهِيَار	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
+30	كبيرا	كَبِير	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	29	amod	_	_
+31-32	وذلك	_	_	_	_	_	_	_	_
+31	و	وَ	CCONJ	C---------	_	32	case	_	_
+32	ذٰلك	ذٰلِكَ	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	26	obl	_	_
+33	في	فِي	ADP	P---------	AdpType=Prep	31	fixed	_	_
+34	آخر	آخَر	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	32	obl	_	_
+35	سنوات	سَنَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	34	nmod	_	_
+36	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	35	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7034,11 +7183,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الديانات[عدل]
+# text = الديانات
 1	الديانات	دِيَانَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7162,14 +7308,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = عيد النصر على النازية[عدل]
+# text = عيد النصر على النازية
 1	عيد	عِيد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	النصر	النصر	X	U---------	_	1	nmod	_	_
 3	على	عَلَى	ADP	P---------	AdpType=Prep	4	case	_	_
 4	النازية	نَازِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7263,13 +7406,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = منظمة حلف وارسو[عدل]
+# text = منظمة حلف وارسو
 1	منظمة	مُنَظَّمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	حلف	حِلف	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 3	وارسو	وارسو	X	U---------	_	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7333,11 +7473,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الثقافة[عدل]
+# text = الثقافة
 1	الثقافة	ثَقَافَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7345,11 +7482,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الرسم[عدل]
+# text = الرسم
 1	الرسم	رَسم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7409,12 +7543,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = فن الغناء[عدل]
-1	فن	فَنّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+# text = فن الغناء
+1	فن	فِن	NOUN	U---------	_	0	root	_	_
 2	الغناء	غِنَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	2	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7469,13 +7600,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = زعماء الاتحاد السوفيتي[عدل]
-1	زعماء	زَعِيم	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	5	nsubj	_	_
+# text = زعماء الاتحاد السوفيتي
+1	زعماء	زَعِيم	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
 3	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7483,14 +7611,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الشيوعية والاشتراكية والأفكار الماركسية[عدل]
-1	الشيوعية	شُيُوعِيَّة	X	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	والاشتراكية	والاشتراكية	X	U---------	_	1	nmod	_	_
+# text = الشيوعية والاشتراكية والأفكار الماركسية
+1	الشيوعية	شُيُوعِيَّة	X	U---------	_	0	root	_	_
+2	والاشتراكية	والاشتراكية	X	U---------	_	3	cc	_	_
 3	والأفكار	والأفكار	X	U---------	_	1	conj	_	_
-4	الماركسية	مُاَركِس	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
+4	الماركسية	الماركسية	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7539,13 +7664,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = جمهوريات الاتحاد السوفيتي[عدل]
+# text = جمهوريات الاتحاد السوفيتي
 1	جمهوريات	جُمهُورِيَّة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2	الاتحاد	اِتِّحَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
 3	السوفيتي	سُوفِيتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7597,15 +7719,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انهيار اتحاد الجمهوريات السوفيتية الاشتراكية[عدل]
+# text = انهيار اتحاد الجمهوريات السوفيتية الاشتراكية
 1	انهيار	اِنهِيَار	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	اتحاد	اِتِّحَاد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 3	الجمهوريات	جُمهُورِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
 4	السوفيتية	سُوفَيتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
 5	الاشتراكية	اِشتِرَاكِيَّة	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
-6	[	[	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
-7	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-8	]	]	PUNCT	G---------	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7655,12 +7774,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاتحاد الروسي[عدل]
+# text = الاتحاد الروسي
 1	الاتحاد	اِتِّحَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الروسي	رُوسِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7724,12 +7840,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انظر أيضًا[عدل]
-1	انظر	نَظَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+# text = انظر أيضًا
+1	انظر	انظر	X	U---------	_	0	root	_	_
 2	أيضًا	أَيضاا	ADV	D---------	_	1	advmod:emph	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عدل	X	U---------	_	1	nsubj	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7737,11 +7850,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الملاحظات[عدل]
+# text = الملاحظات
 1	الملاحظات	مُلَاحَظَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7749,11 +7859,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المراجع[عدل]
+# text = المراجع
 1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7761,20 +7868,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = روابط خارجية[عدل]
+# text = روابط خارجية
 1	روابط	رَابِط	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = قائمة التصفح
-1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
 

@@ -1,5 +1,3 @@
-# https://lt.wikipedia.org/wiki/Biblija
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Biblija – Vikipedija
 1	Biblija	Biblija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	–	–	PUNCT	skyr.	_	3	punct	_	_
-3	Vikipedija	Vikipedija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = lithuanian-alksnis-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Biblija
-1	Biblija	Biblija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	Vikipedija	Vikipedija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -65,7 +54,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Biblija · Senasis Testamentas · Naujasis Testamentas ·
+# text = Biblija · Senasis Testamentas · Naujasis Testamentas · Evangelija · Mato · Morkaus · Luko · Jono · Apokrifas
 1	Biblija	biblija	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	·	·	PUNCT	skyr.	_	4	punct	_	_
 3	Senasis	senas	ADJ	bdv.nelygin.įvardž.vyr.vns.V.	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
@@ -73,7 +62,18 @@
 5	·	·	PUNCT	skyr.	_	7	punct	_	_
 6	Naujasis	naujas	ADJ	bdv.nelygin.įvardž.vyr.vns.V.	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
 7	Testamentas	testamentas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
-8	·	·	PUNCT	skyr.	_	1	punct	_	SpacesAfter=\s\n
+8	·	·	PUNCT	skyr.	_	9	punct	_	SpacesAfter=\s\n
+9	Evangelija	Evangelija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
+10	·	·	PUNCT	skyr.	_	11	punct	_	_
+11	Mato	Matas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+12	·	·	PUNCT	skyr.	_	13	punct	_	_
+13	Morkaus	morkus	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	11	conj	_	_
+14	·	·	PUNCT	skyr.	_	15	punct	_	_
+15	Luko	Lukas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+16	·	·	PUNCT	skyr.	_	17	punct	_	_
+17	Jono	Jonas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	15	conj	_	_
+18	·	·	PUNCT	skyr.	_	19	punct	_	_
+19	Apokrifas	Apokrifas	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -255,20 +255,84 @@
 14	kalbomis	kalba	NOUN	dkt.mot.dgs.Įn.	Case=Ins|Gender=Fem|Number=Plur	11	conj	_	SpaceAfter=No
 15	.	.	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\s\n
 
+# sent_id = 3
+# text = Skeptikai mano, kad kai kurios istorijos, pvz., apie
+1	Skeptikai	skeptikas	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+2	mano	manyti	VERB	vksm.asm.tiesiog.es.dgs.3.	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	skyr.	_	7	punct	_	_
+4	kad	kad	SCONJ	jng.	_	7	mark	_	_
+5	kai	kai	PRON	sampl.įv.mot.dgs.V.	Case=Nom|Definite=Ind|Gender=Fem|Hyph=Yes|Number=Plur|PronType=Ind	7	nmod	_	_
+6	kurios	kuris	X	tęs.	Hyph=Yes	5	nmod	_	_
+7	istorijos	istorija	NOUN	dkt.mot.dgs.V.	Case=Nom|Gender=Fem|Number=Plur	2	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	skyr.	_	9	punct	_	_
+9	pvz	pvz.	X	sutr.	Abbr=Yes	7	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	skyr.	_	9	punct	_	SpaceAfter=No
+11	,	,	PUNCT	skyr.	_	9	punct	_	_
+12	apie	apie	ADP	prl.G.	AdpType=Prep|Case=Acc	3	case	_	_
+
+# sent_id = 4
+# text = Pasaulio tvaną, yra paremtos šumerų mitu, kuris minimas prieš 2 tūkstančius metų iki Biblijos parašymo.
+1	Pasaulio	pasaulis	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+2	tvaną	tvanas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+3	,	,	PUNCT	skyr.	_	2	punct	_	_
+4	yra	būti	AUX	vksm.asm.tiesiog.es.dgs.3.	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	paremtos	paremti	VERB	vksm.dlv.neveik.būt.mot.dgs.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	šumerų	šumeras	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	_
+7	mitu	mitas	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No
+8	,	,	PUNCT	skyr.	_	10	punct	_	_
+9	kuris	kuris	DET	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Int,Rel	10	nsubj:pass	_	_
+10	minimas	minėti	VERB	vksm.dlv.neveik.es.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	7	acl:relcl	_	_
+11	prieš	prieš	ADP	prl.G.	AdpType=Prep|Case=Acc	14	case	_	_
+12	2	2	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	14	nummod	_	_
+13	tūkstančius	tūkstantis	NUM	sktv.raid.kiek.vyr.vns.K.	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	14	nummod:gov	_	_
+14	metų	metai	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	10	obl	_	_
+15	iki	iki	ADP	prl.K.	AdpType=Prep|Case=Gen	17	case	_	_
+16	Biblijos	Biblija	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	17	obl:arg	_	_
+17	parašymo	parašymas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	14	obl:arg	_	SpaceAfter=No
+18	.	.	PUNCT	skyr.	_	5	punct	_	_
+
+# sent_id = 5
+# text = Tiesa, nėra aišku, kuria versija galėjo remtis Biblijos autoriai, kadangi egzistuoja dar bent trys šio mito versijos (šumerų, akadų ir babiloniečių) iki Biblijos.
+1	Tiesa	tiesa	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	4	parataxis	_	SpaceAfter=No
+2	,	,	PUNCT	skyr.	_	1	punct	_	_
+3	nėra	nebūti	VERB	vksm.asm.neig.tiesiog.es.3.	Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	4	csubj	_	_
+4	aišku	aiškus	ADJ	bdv.nelygin.bev.	Definite=Ind|Degree=Pos|Gender=Neut	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	skyr.	_	8	punct	_	_
+6	kuria	kuris	DET	įv.mot.vns.Įn.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Int,Rel	7	det	_	_
+7	versija	versija	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+8	galėjo	galėti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	4	csubj	_	_
+9	remtis	remtis	VERB	vksm.bndr.sngr.	Polarity=Pos|Reflex=Yes|VerbForm=Inf	8	xcomp	_	_
+10	Biblijos	Biblija	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
+11	autoriai	autorius	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	skyr.	_	14	punct	_	_
+13	kadangi	kadangi	CCONJ	jng.	_	14	mark	_	_
+14	egzistuoja	egzistuoti	VERB	vksm.asm.tiesiog.es.dgs.3.	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	conj	_	_
+15	dar	dar	PART	dll.	_	17	advmod:emph	_	_
+16	bent	bent	PART	dll.	_	17	advmod:emph	_	_
+17	trys	trys	NUM	sktv.raid.kiek.mot.V.	Case=Nom|Gender=Fem|NumForm=Word|NumType=Card	20	nummod	_	_
+18	šio	šis	DET	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Dem	19	det	_	_
+19	mito	mitas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
+20	versijos	versija	NOUN	dkt.mot.dgs.V.	Case=Nom|Gender=Fem|Number=Plur	14	nsubj	_	_
+21	(	(	PUNCT	skyr.	_	22	punct	_	SpaceAfter=No
+22	šumerų	šumeras	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	20	flat	_	SpaceAfter=No
+23	,	,	PUNCT	skyr.	_	24	punct	_	_
+24	akadų	akadas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	22	conj	_	_
+25	ir	ir	CCONJ	jng.	_	26	cc	_	_
+26	babiloniečių	babilonietis	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No
+27	)	)	PUNCT	skyr.	_	22	punct	_	_
+28	iki	iki	ADP	prl.K.	AdpType=Prep|Case=Gen	29	case	_	_
+29	Biblijos	Biblija	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	20	obl	_	SpaceAfter=No
+30	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Biblijos struktūra[redaguoti | redaguoti vikitekstą]
+# text = Biblijos struktūra
 1	Biblijos	Biblija	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-2	struktūra[	struktūra	NOUN	dkt.mot.vns.N.	Case=Dat|Gender=Fem|Number=Sing	3	obl:arg	_	SpaceAfter=No
-3	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	skyr.	_	5	punct	_	_
-5	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	vikitekstą	vikitekstas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	skyr.	_	3	punct	_	SpacesAfter=\n
+2	struktūra	struktūra	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -486,15 +550,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lietuviška Biblija[redaguoti | redaguoti vikitekstą]
+# text = Lietuviška Biblija
 1	Lietuviška	lietuviškas	ADJ	bdv.nelygin.mot.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	Biblija	Biblija	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	skyr.	_	4	punct	_	SpaceAfter=No
-4	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	2	acl	_	_
-5	|	|	PUNCT	skyr.	_	6	punct	_	_
-6	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	4	conj	_	_
-7	vikitekstą	vikitekstas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -601,6 +659,93 @@
 8	išleido	išleisti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	_
 9	evangelijas	evangelija	NOUN	dkt.mot.dgs.G.	Case=Acc|Gender=Fem|Number=Plur	8	obj	_	SpaceAfter=No
 10	.	.	PUNCT	skyr.	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Pirmasis visą Bibliją į lietuvių kalbą 1579–1590 m. išvertė liuteronų kunigas Jonas Bretkūnas (1536–1602).
+1	Pirmasis	pirmasis	NUM	dkt.sngr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing|Reflex=Yes	10	nsubj	_	_
+2	visą	visas	DET	įv.mot.vns.G.	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Tot	3	det	_	_
+3	Bibliją	biblija	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	10	obj	_	_
+4	į	į	ADP	prl.G.	AdpType=Prep|Case=Acc	6	case	_	_
+5	lietuvių	lietuvis	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+6	kalbą	kalba	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	3	obl:arg	_	_
+7	1579–1590	1579–1590	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	8	nummod	_	SpacesAfter= 
+8	m	m.	NOUN	sutr.	Abbr=Yes	10	obl	_	SpaceAfter=No
+9	.	.	PUNCT	skyr.	_	8	punct	_	_
+10	išvertė	išversti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	_
+11	liuteronų	liuteronas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	_
+12	kunigas	kunigas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+13	Jonas	Jonas	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	12	nmod	_	_
+14	Bretkūnas	Bretkūnas	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	12	flat	_	_
+15	(	(	PUNCT	skyr.	_	16	punct	_	SpaceAfter=No
+16	1536–1602	1536–1602	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	12	nummod	_	SpaceAfter=No
+17	)	)	PUNCT	skyr.	_	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	skyr.	_	10	punct	_	_
+
+# sent_id = 8
+# text = Pirmieji katalikiški vertimai padaryti M. Daukšos ,,Katekizme" (1595 m.) ir ,,Postilėje" (1599 m.), reformatų – 1598 m. M. Petkevičiaus ,,Katekizme„.
+1	Pirmieji	pirmas	NUM	bdv.nelygin.įvardž.vyr.dgs.V.	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	3	amod	_	_
+2	katalikiški	katalikiškas	ADJ	bdv.nelygin.vyr.dgs.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	3	amod	_	_
+3	vertimai	vertimas	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	4	nsubj:pass	_	_
+4	padaryti	padaryti	VERB	vksm.dlv.neveik.būt.vyr.dgs.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	M	M.	X	sutr.	Abbr=Yes	7	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	skyr.	_	5	punct	_	_
+7	Daukšos	Daukša	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
+8	,,Katekizme	,,katekizmas	NOUN	dkt.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+9	"	"	PUNCT	skyr.	_	8	punct	_	_
+10	(	(	PUNCT	skyr.	_	12	punct	_	SpaceAfter=No
+11	1595	1595	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	12	nummod	_	SpacesAfter= 
+12	m	m.	NOUN	sutr.	Abbr=Yes	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	skyr.	_	12	punct	_	SpaceAfter=No
+14	)	)	PUNCT	skyr.	_	12	punct	_	_
+15	ir	ir	CCONJ	jng.	_	16	cc	_	_
+16	,,Postilėje	,,postilė	NOUN	dkt.mot.vns.Vt.	Case=Loc|Gender=Fem|Number=Sing	8	conj	_	SpaceAfter=No
+17	"	"	PUNCT	skyr.	_	16	punct	_	_
+18	(	(	PUNCT	skyr.	_	20	punct	_	SpaceAfter=No
+19	1599	1599	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	20	nummod	_	SpacesAfter= 
+20	m	m.	NOUN	sutr.	Abbr=Yes	16	parataxis	_	SpaceAfter=No
+21	.	.	PUNCT	skyr.	_	20	punct	_	SpaceAfter=No
+22	)	)	PUNCT	skyr.	_	20	punct	_	SpaceAfter=No
+23	,	,	PUNCT	skyr.	_	32	punct	_	_
+24	reformatų	reformatas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	32	nmod	_	SpacesAfter= 
+25	–	–	PUNCT	skyr.	_	27	punct	_	_
+26	1598	1598	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	27	nummod	_	SpacesAfter= 
+27	m	m.	NOUN	sutr.	Abbr=Yes	32	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	skyr.	_	27	punct	_	_
+29	M	M.	X	sutr.	Abbr=Yes	31	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	skyr.	_	29	punct	_	_
+31	Petkevičiaus	Petkevičius	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	_
+32	,,Katekizme	,,katekizmas	NOUN	dkt.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	8	conj	_	SpaceAfter=No
+33	„	„	PUNCT	skyr.	_	32	punct	_	SpaceAfter=No
+34	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = Visas ,,Šventasis Raštas“ lietuviškai pradėtas leisti 1657–1659 m. Londone (reformatų kunigo S. B. Chilinskio vertimas), tačiau leidimas nebaigtas.
+1	Visas	visas	DET	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Tot	3	det	_	_
+2	,,Šventasis	,,šventas	ADJ	bdv.nelygin.įvardž.vyr.vns.V.	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	Raštas	raštas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	6	nsubj:pass	_	SpaceAfter=No
+4	“	“	PUNCT	skyr.	_	3	punct	_	_
+5	lietuviškai	lietuviškai	ADV	prv.nelygin.	Degree=Pos	6	advmod	_	_
+6	pradėtas	pradėti	VERB	vksm.dlv.neveik.būt.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	leisti	leisti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	6	xcomp	_	_
+8	1657–1659	1657–1659	NUM	sktv.arab.	Definite=Ind|NumForm=Digit	9	nummod	_	SpacesAfter= 
+9	m	m.	NOUN	sutr.	Abbr=Yes	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	skyr.	_	9	punct	_	_
+11	Londone	Londonas	PROPN	dkt.tikr.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+12	(	(	PUNCT	skyr.	_	20	punct	_	SpaceAfter=No
+13	reformatų	reformatas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	14	nmod	_	_
+14	kunigo	kunigas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
+15	S	S.	X	sutr.	Abbr=Yes	14	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	skyr.	_	15	punct	_	_
+17	B	B.	X	sutr.	Abbr=Yes	14	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	skyr.	_	17	punct	_	_
+19	Chilinskio	Chilinskis	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	20	obl:arg	_	_
+20	vertimas	vertimas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	skyr.	_	20	punct	_	SpaceAfter=No
+22	,	,	PUNCT	skyr.	_	25	punct	_	_
+23	tačiau	tačiau	CCONJ	jng.	_	25	cc	_	_
+24	leidimas	leidimas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	25	nsubj:pass	_	_
+25	nebaigtas	nebaigti	VERB	vksm.dlv.neig.neveik.būt.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Pass	6	conj	_	SpaceAfter=No
+26	.	.	PUNCT	skyr.	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -1056,14 +1201,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Šaltiniai[redaguoti | redaguoti vikitekstą]
+# text = Šaltiniai
 1	Šaltiniai	šaltinis	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	skyr.	_	3	punct	_	SpaceAfter=No
-3	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	1	acl	_	_
-4	|	|	PUNCT	skyr.	_	5	punct	_	_
-5	redaguoti	redaguoti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	3	conj	_	_
-6	vikitekstą	vikitekstas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	skyr.	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = lithuanian-alksnis-ud-2.6-200830
@@ -1071,7 +1210,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Naršymo meniu
-1	Naršymo	naršymas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
-2	meniu	muo	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Vikiteka Vikicitatos
+1	Vikiteka	Vikiteka	PROPN	dkt.tikr.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	2	nmod	_	SpacesAfter=\s\n
+2	Vikicitatos	vikicitata	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	0	root	_	_
 

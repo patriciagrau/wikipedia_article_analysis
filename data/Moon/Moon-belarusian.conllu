@@ -1,5 +1,3 @@
-# https://be.wikipedia.org/wiki/%D0%9C%D0%B5%D1%81%D1%8F%D1%86_(%D1%81%D0%BF%D0%B0%D0%B4%D0%B0%D1%80%D0%BE%D0%B6%D0%BD%D1%96%D0%BA_%D0%97%D1%8F%D0%BC%D0%BB%D1%96)
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,7 +11,7 @@
 4	Зямлі	зямля	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
 5	)	)	PUNCT	PUNCT	_	3	punct	_	_
 6	—	—	PUNCT	PUNCT	_	3	punct	_	_
-7	Вікіпедыя	вікіпеды	ADJ	NNP	Case=Nom|Degree=Pos|Number=Plur	1	amod	_	SpacesAfter=\n
+7	Вікіпедыя	вікіпеды	ADJ	NNP	Case=Nom|Degree=Pos|Number=Plur	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -21,12 +19,92 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Месяц (спадарожнік Зямлі)
-1	Месяц	месяц	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	(	(	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	спадарожнік	спадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	_
-4	Зямлі	зямля	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
-5	)	)	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+# text = Ме́сяц — натуральны спадарожнік Зямлі.
+1	Ме́сяц	ме́сяц	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpacesBefore=\n|SpacesAfter= 
+2	—	—	PUNCT	_	_	4	punct	_	_
+3	натуральны	натуральны	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	спадарожнік	спадарожнік	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+5	Зямлі	зямля	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 2
+# text = Самы блізкі да Сонца спадарожнік планеты, бо ў бліжэйшых да Сонца планет, Меркурыя і Венеры, спадарожнікаў няма.
+1	Самы	самы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	блізкі	блізкі	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	да	да	ADP	IN	_	4	case	_	_
+4	Сонца	Сонца	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	obl	_	_
+5	спадарожнік	спадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+6	планеты	планет	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PUNCT	_	10	punct	_	_
+8	бо	бо	SCONJ	IN	_	10	mark	_	_
+9	ў	ў	ADP	IN	_	12	case	_	_
+10	бліжэйшых	бліжэйшы	ADJ	JJL	Case=Loc|Degree=Pos|Number=Plur	5	amod	_	_
+11	да	да	ADP	IN	_	12	case	_	_
+12	Сонца	Сонца	PROPN	NNP	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	10	obl	_	_
+13	планет	планет	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PUNCT	_	15	punct	_	_
+15	Меркурыя	Меркурыя	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	13	conj	_	_
+16	і	і	CCONJ	CC	_	17	cc	_	_
+17	Венеры	Венеры	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	15	conj	_	SpaceAfter=No
+18	,	,	PUNCT	PUNCT	_	19	punct	_	_
+19	спадарожнікаў	спадарожнік	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	13	conj	_	_
+20	няма	няма	VERB	RB	Degree=Pos	19	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+# sent_id = 3
+# text = Другі па яркасці аб'ект на зямным небасхіле пасля Сонца і пяты па велічыні натуральны спадарожнік планеты Сонечнай сістэмы.
+1	Другі	другі	ADJ	ORD	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
+2	па	па	ADP	IN	_	3	case	_	_
+3	яркасці	яркасць	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	obl	_	_
+4	аб'ект	аб'ект	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
+5	на	на	ADP	IN	_	7	case	_	_
+6	зямным	зямны	ADJ	JJL	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
+7	небасхіле	небасхіць	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	4	nmod	_	_
+8	пасля	пасля	ADP	IN	_	9	case	_	_
+9	Сонца	Сонца	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	_
+10	і	і	CCONJ	CC	_	11	cc	_	_
+11	пяты	пяты	ADJ	ORD	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	9	conj	_	_
+12	па	па	ADP	IN	_	13	case	_	_
+13	велічыні	велічыня	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	11	nmod	_	_
+14	натуральны	натуральны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	спадарожнік	спадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	_
+16	планеты	планет	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	15	nmod	_	_
+17	Сонечнай	сонечны	ADJ	JJL	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
+18	сістэмы	сістэма	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 4
+# text = Сярэдняя адлегласць паміж цэнтрамі Зямлі і Месяца — 384 467 км (0,002 57 а.
+1	Сярэдняя	сярэдні	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	адлегласць	адлегласць	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	11	nsubj	_	_
+3	паміж	паміж	ADP	IN	_	4	case	_	_
+4	цэнтрамі	цэнтр	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	2	nmod	_	_
+5	Зямлі	зямля	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	і	і	CCONJ	CC	_	7	cc	_	_
+7	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	conj	_	SpacesAfter= 
+8	—	—	PUNCT	PUNCT	_	11	punct	_	_
+9	384	384	NUM	CD	Case=Nom|NumType=Card	11	nummod:gov	_	_
+10	467	467	NUM	CD	Case=Gen|NumType=Card	11	nummod:gov	_	_
+11	км	км	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	0	root	_	_
+12	(	(	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
+13	0,002	0,002	NUM	CD	NumType=Card	15	nummod:gov	_	_
+14	57	57	NUM	CD	Case=Gen|NumType=Card	15	nummod:gov	_	_
+15	а	а	SYM	SYM	_	11	parataxis	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = 5
+# text = а. ~ 30 дыяметраў
+1	а	а	CCONJ	CC	_	5	cc	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	5	punct	_	_
+3	~	~	ADP	IN	_	5	case	_	_
+4	30	30	NUM	CD	Case=Gen|NumType=Card	5	nummod:gov	_	_
+5	дыяметраў	дыяметр	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 6
+# text = Зямлі).
+1	Зямлі	зямля	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+2	)	)	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -98,16 +176,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Месяц як нябеснае цела[правіць | правіць зыходнік]
-1	Месяц	месяц	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
-2	як	як	SCONJ	_	_	4	case	_	_
-3	нябеснае	нябесны	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	_
-4	цела[	цела[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-5	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-6	|	|	PUNCT	_	_	7	punct	_	_
-7	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-8	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+# text = Месяц як нябеснае цела
+1	Месяц	месяц	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+2	як	як	SCONJ	IN	_	4	case	_	_
+3	нябеснае	нябесны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	_
+4	цела	цела	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -115,13 +188,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Арбіта[правіць | правіць зыходнік]
-1	Арбіта[	арбіта[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+# text = Арбіта
+1	Арбіта	арбіта	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -320,7 +388,7 @@
 22	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 2
-# text = Рэальны рух Месяца даволі складаны, пры яго разліку неабходна ўлічваць мноства фактараў, напрыклад, прыплюснутасць Зямлі і моцны ўплыў Сонца, якое прыцягвае Месяц у 2,2 разы мацней, чым Зямля[кам.
+# text = Рэальны рух Месяца даволі складаны, пры яго разліку неабходна ўлічваць мноства фактараў, напрыклад, прыплюснутасць Зямлі і моцны ўплыў Сонца, якое прыцягвае Месяц у 2,2 разы мацней, чым Зямля.
 1	Рэальны	рэальны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	рух	рух	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
 3	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
@@ -335,7 +403,7 @@
 12	мноства	мноства	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	11	obj	_	_
 13	фактараў	фактар	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
 14	,	,	PUNCT	PUNCT	_	15	punct	_	_
-15	напрыклад	напрыклад	ADV	RB	Degree=Pos	11	advmod	_	SpaceAfter=No
+15	напрыклад	напрыклад	ADV	RB	Degree=Pos	11	parataxis	_	SpaceAfter=No
 16	,	,	PUNCT	PUNCT	_	15	punct	_	_
 17	прыплюснутасць	прыплюснутасць	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	11	nsubj	_	_
 18	Зямлі	зямля	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	17	nmod	_	_
@@ -353,17 +421,10 @@
 30	мацней	мацней	ADJ	NN	Degree=Cmp	25	advmod	_	SpaceAfter=No
 31	,	,	PUNCT	PUNCT	_	33	punct	_	_
 32	чым	чым	SCONJ	IN	_	33	case	_	_
-33	Зямля[	зямля[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	30	obl	_	SpaceAfter=No
-34	кам	кам	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	33	nmod	_	SpaceAfter=No
-35	.	.	PUNCT	PUNCT	_	5	punct	_	_
+33	Зямля	зямля	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	30	obl	_	SpaceAfter=No
+34	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
 # sent_id = 3
-# text = 2].
-1	2	2	NUM	_	_	2	parataxis	_	SpaceAfter=No
-2	]	]	PUNCT	_	_	0	root	_	SpaceAfter=No
-3	.	.	PUNCT	PUNCT	_	2	punct	_	_
-
-# sent_id = 4
 # text = Больш дакладна рух Месяца вакол Зямлі можна ўявіць як спалучэнне некалькіх рухаў:
 1	Больш	больш	ADV	RBR	Degree=Cmp	7	advmod	_	_
 2	дакладна	дакладна	ADV	RB	Degree=Pos	3	advmod	_	_
@@ -385,14 +446,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Агульная будова[правіць | правіць зыходнік]
+# text = Агульная будова
 1	Агульная	агульны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	будова[	будовы	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+2	будова	будова	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -544,16 +600,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Умовы на паверхні Месяца[правіць | правіць зыходнік]
-1	Умовы	умова	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nsubj	_	_
+# text = Умовы на паверхні Месяца
+1	Умовы	умова	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	0	root	_	_
 2	на	на	ADP	IN	_	3	case	_	_
 3	паверхні	паверхня	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	nmod	_	_
-4	Месяца[	месяц	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No
-5	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-6	|	|	PUNCT	_	_	7	punct	_	_
-7	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-8	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+4	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -837,14 +888,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Гравітацыйнае поле[правіць | правіць зыходнік]
+# text = Гравітацыйнае поле
 1	Гравітацыйнае	гравітацыйны	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	поле[	поле[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+2	поле	поле	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -863,6 +909,36 @@
 8	трох	тры	NUM	CD	Case=Gen|NumType=Card	9	nummod:gov	_	_
 9	складнікаў	складнік	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No
 10	:	:	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = belarusian-hse-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = W = V + Q + δ W ,
+1	W	w	X	X	Foreign=Yes	0	root	_	SpacesBefore=\n\n\n\n|SpacesAfter=\n
+2	=	=	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+3	V	v	NUM	CD	Case=Nom|NumType=Card	1	nsubj	_	SpacesAfter=\n
+4	+	+	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+5	Q	q	NUM	CD	Case=Nom|NumType=Card	8	nummod:gov	_	SpacesAfter=\n
+6	+	+	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
+7	δ	δ	NUM	CD	_	8	nummod:gov	_	SpacesAfter=\n
+8	W	w	SYM	SYM	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\n
+9	,	,	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 2
+# text = {\displaystyle W=V+Q+\delta W,}
+1	{	{	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	\displaystyle	\displaystyle	X	X	Foreign=Yes	0	root	_	_
+3	W=	w=	X	X	Foreign=Yes	2	flat:foreign	_	SpaceAfter=No
+4	V+	v+	SYM	SYM	_	2	flat:foreign	_	SpaceAfter=No
+5	Q+	q+	SYM	SYM	_	6	punct	_	SpaceAfter=No
+6	\delta	\delta	X	X	Foreign=Yes	2	flat:foreign	_	_
+7	W	w	X	X	Foreign=Yes	2	flat:foreign	_	SpaceAfter=No
+8	,	,	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
+9	}	}	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -909,6 +985,392 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = V
+1	V	v	PUNCT	PUNCT	_	0	root	_	SpacesBefore=\n\n\n\n\n\n\n\n|SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 2
+# text = =
+1	=	=	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 3
+# text = G M
+1	G	g	NOUN	NN	_	0	root	_	SpacesAfter=\n
+2	M	m	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 4
+# text = r
+1	r	r	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 5
+# text = (
+1	(	(	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 6
+# text = 1 −
+1	1	1	NUM	CD	_	0	root	_	SpacesAfter=\n
+2	−	−	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 7
+# text = ∑
+1	∑	∑	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 8
+# text = n = 2
+1	n	n	NUM	NN	_	0	root	_	SpacesAfter=\n
+2	=	=	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+3	2	2	NUM	CD	_	1	nummod:gov	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 9
+# text = ∞
+1	∞	∞	ADP	IN	_	0	root	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 10
+# text = J
+1	J	j	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 11
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n\n\n
+
+# newpar
+# sent_id = 12
+# text = (
+1	(	(	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 13
+# text = R r
+1	R	r	CCONJ	CC	_	0	root	_	SpacesAfter=\n
+2	r	r	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 14
+# text = )
+1	)	)	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 15
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 16
+# text = P
+1	P	p	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 17
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 18
+# text = ( sin ⁡ θ )
+1	(	(	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+2	sin	sin	NUM	CD	_	4	nummod:gov	_	SpacesAfter=\n
+3	⁡	⁡	ADP	IN	_	4	case	_	SpacesAfter=\n
+4	θ	θ	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+5	)	)	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n\n\n\n\n\n\n\n\n
+
+# newpar
+# sent_id = 19
+# text = +
+1	+	+	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n\n\n
+
+# newpar
+# sent_id = 20
+# text = ∑
+1	∑	∑	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 21
+# text = n = 2
+1	n	n	NUM	NN	_	0	root	_	SpacesAfter=\n
+2	=	=	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+3	2	2	NUM	CD	_	1	nummod:gov	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 22
+# text = ∞
+1	∞	∞	ADP	IN	_	0	root	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 23
+# text = ∑
+1	∑	∑	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 24
+# text = m = 1
+1	m	m	CCONJ	NN	_	0	root	_	SpacesAfter=\n
+2	=	=	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+3	1	1	NUM	CD	_	1	nummod:gov	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 25
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n\n\n
+
+# newpar
+# sent_id = 26
+# text = (
+1	(	(	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 27
+# text = R r
+1	R	r	CCONJ	CC	_	0	root	_	SpacesAfter=\n
+2	r	r	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 28
+# text = )
+1	)	)	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 29
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 30
+# text = (
+1	(	(	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 31
+# text = C
+1	C	c	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 32
+# text = n m
+1	n	n	NOUN	NN	_	0	root	_	SpacesAfter=\n
+2	m	m	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 33
+# text = cos ⁡ m λ +
+1	cos	cos	SCONJ	NN	_	4	nsubj	_	SpacesAfter=\n
+2	⁡	⁡	NOUN	IN	_	4	punct	_	SpacesAfter=\n
+3	m	m	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+4	λ	λ	SYM	VBC	_	0	root	_	SpacesAfter=\n
+5	+	+	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 34
+# text = S
+1	S	s	CCONJ	CC	_	0	root	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 35
+# text = n m
+1	n	n	NOUN	NN	_	0	root	_	SpacesAfter=\n
+2	m	m	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 36
+# text = sin ⁡ m λ )
+1	sin	sin	NOUN	NN	_	4	advmod	_	SpacesAfter=\n
+2	⁡	⁡	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+3	m	m	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+4	λ	λ	NOUN	SYM	_	0	root	_	SpacesAfter=\n
+5	)	)	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 37
+# text = P
+1	P	p	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 38
+# text = n
+1	n	n	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 39
+# text = m
+1	m	m	PUNCT	PUNCT	_	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 40
+# text = ( sin ⁡ θ )
+1	(	(	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+2	sin	sin	NUM	CD	_	4	nummod:gov	_	SpacesAfter=\n
+3	⁡	⁡	ADP	IN	_	4	case	_	SpacesAfter=\n
+4	θ	θ	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+5	)	)	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 41
+# text = )
+1	)	)	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 42
+# text = ,
+1	,	,	PUNCT	PUNCT	_	0	punct	_	SpacesAfter=\n\n\n\n\n\n\n
+
+# newpar
+# sent_id = 43
+# text = {\displaystyle {\begin{aligned}V&={\frac {GM}{r}}\left(1-\sum _{n=2}^{\infty }J_{n}\left({\frac {R}{r}}\right)^{n}P_{n}(\sin \theta )\right.
+1	{	{	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	\displaystyle	\displaystyle	X	X	Foreign=Yes	0	root	_	_
+3	{	{	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+4	\begin{	\begin{	X	X	Foreign=Yes	2	flat:foreign	_	SpaceAfter=No
+5	aligned	aligned	X	X	Foreign=Yes	2	flat:foreign	_	SpaceAfter=No
+6	}	}	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+7	V&=	v&=	SYM	X	_	2	flat:foreign	_	SpaceAfter=No
+8	{	{	ADP	PUNCT	_	10	punct	_	SpaceAfter=No
+9	\	\	NUM	SYM	_	10	nummod:gov	_	SpaceAfter=No
+10	frac	frac	SYM	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	2	parataxis	_	_
+11	{	{	ADP	SYM	_	10	punct	_	SpaceAfter=No
+12	GM	gm	SYM	SYM	_	10	nummod:gov	_	SpaceAfter=No
+13	}	}	SYM	SYM	_	10	punct	_	SpaceAfter=No
+14	{	{	ADP	IN	_	16	case	_	SpaceAfter=No
+15	r	r	NUM	CD	_	16	nummod:gov	_	SpaceAfter=No
+16	}	}	SYM	SYM	_	10	conj	_	SpaceAfter=No
+17	}	}	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+18	\le	\le	SYM	SYM	_	19	advmod	_	SpaceAfter=No
+19	ft	ft	X	SYM	_	2	flat:foreign	_	SpaceAfter=No
+20	(	(	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+21	1	1	NUM	CD	Case=Nom|NumType=Card	10	nummod:gov	_	SpaceAfter=No
+22	-	-	PUNCT	PUNCT	_	23	punct	_	SpaceAfter=No
+23	\sum	\sum	NUM	CD	_	10	nummod:gov	_	_
+24	_	_	SYM	SYM	_	10	punct	_	SpaceAfter=No
+25	{	{	SYM	SYM	_	28	advmod	_	SpaceAfter=No
+26	n	n	NUM	CD	Case=Gen|NumType=Card	10	nummod:gov	_	SpaceAfter=No
+27	=	=	SYM	SYM	_	28	advmod	_	SpaceAfter=No
+28	2}	2}	NUM	CD	Case=Gen|NumType=Card	21	nmod	_	SpaceAfter=No
+29	^{	^{	SYM	IN	_	30	advmod	_	SpaceAfter=No
+30	\infty	\infty	X	X	Foreign=Yes	10	nmod	_	_
+31	}	}	PUNCT	PUNCT	_	30	punct	_	SpaceAfter=No
+32	J_{	j_{	SYM	SYM	_	35	nummod:gov	_	SpaceAfter=No
+33	n}	n}	SYM	SYM	_	35	flat:foreign	_	SpaceAfter=No
+34	\le	\le	SYM	SYM	_	35	advmod	_	SpaceAfter=No
+35	ft	ft	X	SYM	Foreign=Yes	30	nmod	_	SpaceAfter=No
+36	(	(	PUNCT	PUNCT	_	39	punct	_	SpaceAfter=No
+37	{	{	SYM	IN	_	39	punct	_	SpaceAfter=No
+38	\	\	SYM	SYM	_	39	advmod	_	SpaceAfter=No
+39	frac	frac	NOUN	NN	_	35	parataxis	_	_
+40	{	{	ADP	IN	_	45	punct	_	SpaceAfter=No
+41	R	r	NUM	CD	Case=Gen|NumType=Card	45	nummod:gov	_	SpaceAfter=No
+42	}	}	SYM	SYM	_	45	punct	_	SpaceAfter=No
+43	{	{	ADP	IN	_	45	case	_	SpaceAfter=No
+44	r	r	NUM	CD	_	45	nummod:gov	_	SpaceAfter=No
+45	}	}	NOUN	SYM	_	39	nmod	_	SpaceAfter=No
+46	}	}	PUNCT	PUNCT	_	47	punct	_	SpaceAfter=No
+47	\right	\right	X	X	Foreign=Yes	35	parataxis	_	SpaceAfter=No
+48	)	)	PUNCT	PUNCT	_	47	punct	_	SpaceAfter=No
+49	^{	^{	SYM	SYM	_	50	case	_	SpaceAfter=No
+50	n}	n}	SYM	SYM	_	47	advmod	_	SpaceAfter=No
+51	P_	p_	SYM	SYM	_	47	advmod	_	SpaceAfter=No
+52	{	{	SYM	SYM	_	57	punct	_	SpaceAfter=No
+53	n	n	NUM	CD	Case=Gen|NumType=Card	54	nummod:gov	_	SpaceAfter=No
+54	}	}	SYM	SYM	_	47	punct	_	SpaceAfter=No
+55	(	(	PUNCT	PUNCT	_	57	punct	_	SpaceAfter=No
+56	\sin	\sin	X	X	Foreign=Yes	47	appos	_	_
+57	\theta	\theta	X	X	Foreign=Yes	47	appos	_	_
+58	)	)	PUNCT	PUNCT	_	57	punct	_	SpaceAfter=No
+59	\right	\right	X	X	Foreign=Yes	47	appos	_	SpaceAfter=No
+60	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 44
+# text = \\&+\left.
+1	\	\	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+2	\	\	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+3	&+	&+	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+4	\le	\le	X	X	_	5	parataxis	_	SpaceAfter=No
+5	ft	ft	X	X	Foreign=Yes	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 45
+# text = \sum _{n=2}^{\infty }\sum _{m=1}^{n}\left({\frac {R}{r}}\right)^{n}(C_{nm}\cos m\lambda +S_{nm}\sin m\lambda )P_{n}^{m}(\sin \theta )\right),\end{aligned}}}
+1	\sum	\sum	X	X	_	4	advmod	_	_
+2	_	_	SYM	SYM	_	4	punct	_	SpaceAfter=No
+3	{	{	SYM	SYM	_	6	punct	_	SpaceAfter=No
+4	n	n	NUM	CD	Foreign=Yes	0	root	_	SpaceAfter=No
+5	=	=	SYM	SYM	_	6	punct	_	SpaceAfter=No
+6	2}	2}	NUM	CD	Case=Nom|NumType=Card	4	nummod:gov	_	SpaceAfter=No
+7	^	^	SYM	SYM	_	6	punct	_	SpaceAfter=No
+8	{	{	SYM	NN	_	9	case	_	SpaceAfter=No
+9	\in	\in	SYM	SYM	_	4	nmod	_	SpaceAfter=No
+10	fty	fty	X	X	Foreign=Yes	6	appos	_	_
+11	}	}	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
+12	\sum	\sum	X	X	_	10	flat:foreign	_	_
+13	_{	_{	SYM	SYM	_	10	punct	_	SpaceAfter=No
+14	m	m	NUM	CD	Foreign=Yes	10	nummod:gov	_	SpaceAfter=No
+15	=	=	SYM	SYM	_	16	punct	_	SpaceAfter=No
+16	1}	1}	NUM	CD	Case=Gen|NumType=Card	10	nummod:gov	_	SpaceAfter=No
+17	^{	^{	SYM	IN	_	18	case	_	SpaceAfter=No
+18	n}	n}	SYM	SYM	_	6	nmod	_	SpaceAfter=No
+19	\le	\le	SYM	SYM	_	20	nummod:gov	_	SpaceAfter=No
+20	ft	ft	X	X	Foreign=Yes	10	nmod	_	SpaceAfter=No
+21	(	(	PUNCT	PUNCT	_	24	punct	_	SpaceAfter=No
+22	{	{	SYM	SYM	_	24	punct	_	SpaceAfter=No
+23	\	\	SYM	SYM	_	24	nummod:gov	_	SpaceAfter=No
+24	frac	frac	SYM	NN	Foreign=Yes	20	conj	_	_
+25	{	{	SYM	SYM	_	24	punct	_	SpaceAfter=No
+26	R	r	NUM	CD	NumType=Card	24	nummod:gov	_	SpaceAfter=No
+27	}	}	SYM	SYM	_	30	punct	_	SpaceAfter=No
+28	{	{	SYM	SYM	_	30	case	_	SpaceAfter=No
+29	r	r	NUM	CD	_	30	nummod:gov	_	SpaceAfter=No
+30	}	}	SYM	SYM	_	24	conj	_	SpaceAfter=No
+31	}	}	PUNCT	PUNCT	_	30	punct	_	SpaceAfter=No
+32	\right	\right	X	X	Foreign=Yes	30	appos	_	SpaceAfter=No
+33	)	)	PUNCT	PUNCT	_	32	punct	_	SpaceAfter=No
+34	^	^	SYM	SYM	_	37	advmod	_	SpaceAfter=No
+35	{	{	SYM	SYM	_	20	advmod	_	SpaceAfter=No
+36	n	n	NUM	CD	Case=Gen|NumType=Card	20	nummod:gov	_	SpaceAfter=No
+37	}	}	SYM	SYM	_	20	nmod	_	SpaceAfter=No
+38	(	(	PUNCT	PUNCT	_	40	punct	_	SpaceAfter=No
+39	C_{	c_{	SYM	SYM	_	40	nummod:gov	_	SpaceAfter=No
+40	nm	nm	SYM	SYM	_	37	appos	_	SpaceAfter=No
+41	}	}	PUNCT	PUNCT	_	40	punct	_	SpaceAfter=No
+42	\cos	\cos	SYM	SYM	_	40	nummod:gov	_	_
+43	m\lambda	m\lambda	X	X	Foreign=Yes	40	appos	_	_
+44	+	+	SYM	SYM	_	45	punct	_	SpaceAfter=No
+45	S_{	s_{	SYM	SYM	_	40	conj	_	SpaceAfter=No
+46	nm	nm	SYM	SYM	_	40	appos	_	SpaceAfter=No
+47	}	}	PUNCT	PUNCT	_	49	punct	_	SpaceAfter=No
+48	\sin	\sin	X	X	Foreign=Yes	49	nummod:gov	_	_
+49	m\lambda	m\lambda	X	X	Foreign=Yes	40	appos	_	_
+50	)	)	PUNCT	PUNCT	_	49	punct	_	SpaceAfter=No
+51	P_	p_	SYM	SYM	_	43	nsubj	_	SpaceAfter=No
+52	{	{	SYM	SYM	_	53	punct	_	SpaceAfter=No
+53	n}	n}	SYM	NN	_	51	appos	_	SpaceAfter=No
+54	^	^	SYM	SYM	_	57	case	_	SpaceAfter=No
+55	{	{	ADP	IN	_	57	case	_	SpaceAfter=No
+56	m	m	NUM	CD	_	57	nummod:gov	_	SpaceAfter=No
+57	}	}	SYM	SYM	_	53	nmod	_	SpaceAfter=No
+58	(	(	PUNCT	PUNCT	_	62	punct	_	SpaceAfter=No
+59	\sin	\sin	X	X	Foreign=Yes	62	appos	_	_
+60	\theta	\theta	X	X	Foreign=Yes	62	appos	_	_
+61	)	)	PUNCT	PUNCT	_	62	punct	_	SpaceAfter=No
+62	\right	\right	X	X	Foreign=Yes	57	appos	_	SpaceAfter=No
+63	)	)	PUNCT	PUNCT	_	65	punct	_	SpaceAfter=No
+64	,\end{	,\end{	PUNCT	PUNCT	_	65	punct	_	SpaceAfter=No
+65	aligned	aligned	X	X	Foreign=Yes	62	appos	_	SpaceAfter=No
+66	}	}	PUNCT	PUNCT	_	65	punct	_	SpaceAfter=No
+67	}	}	PUNCT	PUNCT	_	65	punct	_	SpaceAfter=No
+68	}	}	PUNCT	PUNCT	_	65	punct	_	SpacesAfter=\n\n\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = belarusian-hse-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = дзе Pnm — далучаны паліном Лежандра, G — гравітацыйная пастаянная, M — маса Месяца, λ і θ — даўгата і шырата.
 1	дзе	дзе	ADV	RB	Degree=Pos	4	advmod	_	_
 2	Pnm	pnm	NUM	X	Foreign=Yes	4	nsubj	_	_
@@ -942,15 +1404,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Прылівы і адлівы[правіць | правіць зыходнік]
-1	Прылівы	прылівы	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
+# text = Прылівы і адлівы
+1	Прылівы	прылівы	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	і	і	CCONJ	CC	_	3	cc	_	_
-3	адлівы[	адлівы	ADJ	NN	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+3	адлівы	адліва	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -1253,14 +1710,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Магнітнае поле[правіць | правіць зыходнік]
+# text = Магнітнае поле
 1	Магнітнае	магнітны	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	поле[	поле[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+2	поле	поле	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -1309,7 +1761,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = «Луна-1» у 1959 устанавіла адсутнасць аднароднага магнітнага поля на Месяцы:24.
+# text = «Луна-1» у 1959 устанавіла адсутнасць аднароднага магнітнага поля на Месяцы.
 1	«	«	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
 2	Луна-1	Луна-1	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	SpaceAfter=No
 3	»	»	PUNCT	PUNCT	_	2	punct	_	_
@@ -1321,7 +1773,7 @@
 9	магнітнага	магнітны	ADJ	JJL	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
 10	поля	поля	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	_
 11	на	на	ADP	IN	_	12	case	_	_
-12	Месяцы:24	Месяцы:24	NOUN	NNP	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+12	Месяцы	месяц	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 # sent_id = 2
@@ -1411,16 +1863,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Назіранне Месяца з Зямлі[правіць | правіць зыходнік]
-1	Назіранне	назіранне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
-2	Месяца	месяц	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	з	з	ADP	_	_	4	case	_	_
-4	Зямлі[	зямлія	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-5	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-6	|	|	PUNCT	_	_	7	punct	_	_
-7	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-8	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+# text = Назіранне Месяца з Зямлі
+1	Назіранне	назіранне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	з	з	ADP	IN	_	4	case	_	_
+4	Зямлі	зямля	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2009,13 +2456,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Селеналогія[правіць | правіць зыходнік]
-1	Селеналогія[	селеналогія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Селеналогія
+1	Селеналогія	Селеналогія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2411,13 +2853,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Пячоры[правіць | правіць зыходнік]
-1	Пячоры[	пячоры	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Пячоры
+1	Пячоры	пячора	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2580,13 +3017,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Сейсмалогія[правіць | правіць зыходнік]
-1	Сейсмалогія[	сейсмалогія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Сейсмалогія
+1	Сейсмалогія	Сейсмалогія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2757,15 +3189,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Вада на Месяцы[правіць | правіць зыходнік]
-1	Вада	вада	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
-2	на	на	ADP	_	_	3	case	_	_
-3	Месяцы[	месяцыя	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+# text = Вада на Месяцы
+1	Вада	вада	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	на	на	ADP	IN	_	3	case	_	_
+3	Месяцы	месяц	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3063,15 +3490,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Хімія месяцавых парод[правіць | правіць зыходнік]
-1	Хімія	хімія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
-2	месяцавых	месяцавы	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
-3	парод[	парод	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	1	nmod	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+# text = Хімія месяцавых парод
+1	Хімія	Хімія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	месяцавых	месяцавы	ADJ	JJL	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
+3	парод	парод	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3143,13 +3565,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Селенаграфія[правіць | правіць зыходнік]
-1	Селенаграфія[	селенаграфія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Селенаграфія
+1	Селенаграфія	Селенаграфія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3265,14 +3682,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Паходжанне кратараў[правіць | правіць зыходнік]
-1	Паходжанне	паходжанне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
-2	кратараў[	кратараў	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+# text = Паходжанне кратараў
+1	Паходжанне	паходжанне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	кратараў	кратар	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3719,14 +4131,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Месяцавыя моры[правіць | правіць зыходнік]
-1	Месяцавыя	месяцавы	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	моры[	моры[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Месяцавыя моры
+1	Месяцавыя	месяцавы	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	моры	мора	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3806,13 +4213,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Моры[правіць | правіць зыходнік]
-1	Моры[	Моры[	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Моры
+1	Моры	Моры	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3820,13 +4222,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Залівы[правіць | правіць зыходнік]
-1	Залівы[	залівы	ADJ	JJL	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	amod	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Залівы
+1	Залівы	заліва	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3834,13 +4231,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Азёры[правіць | правіць зыходнік]
-1	Азёры[	азёры[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Азёры
+1	Азёры	Азёры	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3848,13 +4240,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Балоты[правіць | правіць зыходнік]
-1	Балоты[	Балоты[	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Балоты
+1	Балоты	балота	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3862,17 +4249,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Утварэнні на адваротным баку Месяца[правіць | правіць зыходнік]
-1	Утварэнні	утварэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+# text = Утварэнні на адваротным баку Месяца
+1	Утварэнні	утварэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	на	на	ADP	IN	_	4	case	_	_
 3	адваротным	адваротны	ADJ	JJL	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 4	баку	бак	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	_
-5	Месяца[	месяц	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-7	|	|	PUNCT	_	_	8	punct	_	_
-8	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+5	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3894,14 +4276,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Унутраная структура[правіць | правіць зыходнік]
+# text = Унутраная структура
 1	Унутраная	унутраны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	структура[	структура[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+2	структура	структура	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4095,14 +4472,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Карта Месяца[правіць | правіць зыходнік]
-1	Карта	карта	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-2	Месяца[	месяц	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Карта Месяца
+1	Карта	карта	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4212,14 +4584,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Паходжанне Месяца[правіць | правіць зыходнік]
-1	Паходжанне	паходжанне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
-2	Месяца[	месяц	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Паходжанне Месяца
+1	Паходжанне	паходжанне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4267,7 +4634,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Аднак новая інфармацыя, атрыманая шляхам дэталёвага вывучэння ўзораў з Месяца, прывяла да стварэння тэорыі гіганцкага сутыкнення: 4,36 мільярда гадоў назад протапланета Зямля (Гея) сутыкнулася з протапланетой Тэя.
+# text = Аднак новая інфармацыя, атрыманая шляхам дэталёвага вывучэння ўзораў з Месяца, прывяла да стварэння тэорыі гіганцкага сутыкнення: 4,36 мільярда гадоў назад протапланета Зямля (Гея) сутыкнулася з протапланетай Тэя.
 1	Аднак	аднак	CCONJ	CC	_	13	cc	_	_
 2	новая	новы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
 3	інфармацыя	інфармацыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	13	nsubj	_	SpaceAfter=No
@@ -4298,7 +4665,7 @@
 28	)	)	PUNCT	PUNCT	_	27	punct	_	_
 29	сутыкнулася	сутыкнуцца	VERB	VBC	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	13	parataxis	_	_
 30	з	з	ADP	IN	_	31	case	_	_
-31	протапланетой	протапланет	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	29	obl	_	_
+31	протапланетай	протапланет	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	29	obl	_	_
 32	Тэя	Тэя	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No
 33	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
@@ -4482,14 +4849,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Даследаванне Месяца[правіць | правіць зыходнік]
-1	Даследаванне	даследаванне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
-2	Месяца[	месяц	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Даследаванне Месяца
+1	Даследаванне	даследаванне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4855,13 +5217,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = АМС[правіць | правіць зыходнік]
-1	АМС[	АМС[	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = АМС
+1	АМС	АМС	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4884,7 +5241,7 @@
 12	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
 # sent_id = 2
-# text = Стаў вядомы склад месяцавага грунту, навукоўцы атрымалі яго ўзоры, складзена карта адваротнага боку[ru].
+# text = Стаў вядомы склад месяцавага грунту, навукоўцы атрымалі яго ўзоры, складзена карта адваротнага боку.
 1	Стаў	стаць	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 2	вядомы	вядомы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 3	склад	склад	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	_
@@ -4899,10 +5256,8 @@
 12	складзена	складзена	VERB	VBC	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	1	conj	_	_
 13	карта	карта	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	nsubj	_	_
 14	адваротнага	адваротны	ADJ	JJL	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
-15	боку[	боку	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
-16	ru	ru	X	X	_	15	nmod	_	SpaceAfter=No
-17	]	]	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No
-18	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+15	боку	бок	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5576,13 +5931,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Месяцаходы[правіць | правіць зыходнік]
-1	Месяцаходы[	месяцаходы[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Месяцаходы
+1	Месяцаходы	месяцаход	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5688,29 +6038,29 @@
 59	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 3
-# text = Абодва апарата сабралі і перадалі на Зямлю вялікую колькасць дадзеных аб месячным грунце і мноства фотаздымкаў дэталей і панарам месяцавага рэльефу:26.
-1	Абодва	абодва	NUM	RB	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+# text = Абодва апарата сабралі і перадалі на Зямлю вялікую колькасць дадзеных аб месячным грунце і мноства фотаздымкаў дэталей і панарам месяцавага рэльефу.
+1	Абодва	абодва	ADJ	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
 2	апарата	апарата	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nsubj	_	_
-3	сабралі	сабраць	VERB	VBC	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-4	і	і	CCONJ	CC	_	5	cc	_	_
-5	перадалі	перадаць	VERB	VBC	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
-6	на	на	ADP	IN	_	7	case	_	_
-7	Зямлю	зямля	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	obl	_	_
-8	вялікую	вялікі	ADJ	JJL	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
-9	колькасць	колькасць	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
-10	дадзеных	даныя	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	9	nmod	_	_
-11	аб	аб	ADP	IN	_	13	case	_	_
-12	месячным	месячны	ADJ	JJL	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
-13	грунце	грунт	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	10	nmod	_	_
-14	і	і	CCONJ	CC	_	15	cc	_	_
-15	мноства	мноства	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	9	conj	_	_
-16	фотаздымкаў	фотаздымк	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	15	nmod	_	_
-17	дэталей	дэталы	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	16	nmod	_	_
-18	і	і	CCONJ	CC	_	19	cc	_	_
-19	панарам	панар	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	17	conj	_	_
-20	месяцавага	месяцавы	ADJ	JJL	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
-21	рэльефу:26	рэльефу:2	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+3	сабралі	сабраць	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	і	і	CCONJ	_	_	5	cc	_	_
+5	перадалі	перадаць	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	на	на	ADP	_	_	7	case	_	_
+7	Зямлю	зямля	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	obl	_	_
+8	вялікую	вялікі	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
+9	колькасць	колькасць	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
+10	дадзеных	даныя	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	9	nmod	_	_
+11	аб	аб	ADP	_	_	13	case	_	_
+12	месячным	месячны	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	грунце	грунт	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	10	nmod	_	_
+14	і	і	CCONJ	_	_	15	cc	_	_
+15	мноства	мноства	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	9	conj	_	_
+16	фотаздымкаў	фотаздымк	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	15	nmod	_	_
+17	дэталей	дэталы	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	16	nmod	_	_
+18	і	і	CCONJ	_	_	19	cc	_	_
+19	панарам	панар	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	17	conj	_	_
+20	месяцавага	месяцавы	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+21	рэльефу	рэльефа	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5718,14 +6068,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Пілатуемыя палёты[правіць | правіць зыходнік]
-1	Пілатуемыя	пілатуемы	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	палёты[	палёты	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+# text = Пілатуемыя палёты
+1	Пілатуемыя	пілатуемы	VERB	JJL	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	палёты	палёта	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5796,6 +6141,35 @@
 46	модулі	модуль	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	43	obl	_	SpaceAfter=No
 47	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = У снежні 1972 астранаўты «Апалона-17» капітан Джын Сернан і д-р Харысан Шміт сталі апошнімі (на дадзены момант) людзьмі, высадзілі на Месяц.
+1	У	у	ADP	IN	_	2	case	_	_
+2	снежні	снежня	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	15	obl	_	_
+3	1972	1972	ADJ	ORD	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	астранаўты	астранаўты	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+5	«	«	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
+6	Апалона-17	апалона-17	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No
+7	»	»	PUNCT	PUNCT	_	6	punct	_	_
+8	капітан	капітан	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	15	nsubj	_	_
+9	Джын	Джын	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	appos	_	_
+10	Сернан	Сернан	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	flat:name	_	_
+11	і	і	CCONJ	CC	_	12	cc	_	_
+12	д-р	д-р	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	conj	_	_
+13	Харысан	Харысан	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	appos	_	_
+14	Шміт	Шміт	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	13	flat:name	_	_
+15	сталі	стаць	VERB	VBC	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+16	апошнімі	апошні	ADJ	JJL	Case=Ins|Degree=Pos|Number=Plur	15	xcomp	_	_
+17	(	(	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+18	на	на	ADP	IN	_	20	case	_	_
+19	дадзены	дадзены	ADJ	JJL	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	_
+20	момант	момант	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	15	obl	_	SpaceAfter=No
+21	)	)	PUNCT	PUNCT	_	20	punct	_	_
+22	людзьмі	чалюавек	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	15	obj	_	SpaceAfter=No
+23	,	,	PUNCT	PUNCT	_	24	punct	_	_
+24	высадзілі	высадзіць	VERB	VBC	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	15	parataxis	_	_
+25	на	на	ADP	IN	_	26	case	_	_
+26	Месяц.	месяц	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	24	obl	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -5849,14 +6223,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Прыватныя праекты[правіць | правіць зыходнік]
-1	Прыватныя	прыватны	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	праекты[	праектыя	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Прыватныя праекты
+1	Прыватныя	прыватны	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	праекты	праект	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5904,13 +6273,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Асваенне[правіць | правіць зыходнік]
-1	Асваенне[	асваенне[	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Асваенне
+1	Асваенне	асваенне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5918,15 +6282,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Міжнародны прававы статус[правіць | правіць зыходнік]
+# text = Міжнародны прававы статус
 1	Міжнародны	міжнародны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-2	прававы	прававы	ADJ	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-3	статус[	статус[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+2	прававы	прававы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	статус	статус	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5986,13 +6345,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Каланізацыя[правіць | правіць зыходнік]
-1	Каланізацыя[	каланізацыя	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+# text = Каланізацыя
+1	Каланізацыя	каланізацыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6258,19 +6612,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Сумнеўныя здзелкі, звязаныя з асваеннем Месяца[правіць | правіць зыходнік]
+# text = Сумнеўныя здзелкі, звязаныя з асваеннем Месяца
 1	Сумнеўныя	сумнеўны	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	здзелкі	здзелка	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	PUNCT	_	4	punct	_	_
 4	звязаныя	звязаны	ADJ	VBNL	Case=Nom|Degree=Pos|Number=Plur	2	acl	_	_
 5	з	з	ADP	IN	_	6	case	_	_
 6	асваеннем	асваенне	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	4	obl	_	_
-7	Месяца[	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	6	nmod	_	_
-9	|	|	PUNCT	PUNCT	_	10	punct	_	_
-10	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	8	xcomp	_	_
-11	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
-12	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+7	Месяца	месяц	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6373,14 +6722,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Гл. таксама[правіць | правіць зыходнік]
-1	Гл.	гл.	ADV	_	_	3	advmod	_	_
-2	таксама[	таксама[	ADV	_	Degree=Pos	3	advmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+# text = Гл.
+1	Гл	Гл	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 2
+# text = таксама
+1	таксама	таксама	ADV	RB	Degree=Pos	0	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6388,13 +6736,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Заўвагі[правіць | правіць зыходнік]
-1	Заўвагі[	Заўвагі[	NOUN	NN	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	1	xcomp	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = Заўвагі
+1	Заўвагі	заўвы	NOUN	VBC	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6402,13 +6745,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Літаратура[правіць | правіць зыходнік]
-1	Літаратура[	літаратура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+# text = Літаратура
+1	Літаратура	літаратура	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6416,148 +6754,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Спасылкі[правіць | правіць зыходнік]
-1	Спасылкі[	спасылкі	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Унутраная структура •
-1	Унутраная	унутраны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	структура	структура	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-3	•	•	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Фазы
-1	Фазы	фазы	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Геаграфічныя структуры
-1	Геаграфічныя	геаграфічны	ADJ	JJL	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	2	amod	_	_
-2	структуры	структура	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Геалогія (храналогія) •
-1	Геалогія	Геалогія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	(	(	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	храналогія	храналогія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
-4	)	)	PUNCT	PUNCT	_	3	punct	_	_
-5	•	•	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Даследаванне •
-1	Даследаванне	даследаванне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	•	•	PUNCT	_	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Каляндар •
-1	Каляндар	каляндар	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	•	•	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Фобас • Дэймас
-1	Фобас	фобас	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	•	•	PUNCT	PUNCT	_	3	punct	_	_
-3	Дэймас	Дэймас	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpacesAfter=\s\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Месяц • Іншыя гіпатэтычныя • Квазіспадарожнікі: Круітні, 2003 YN107 , 2004 GU9 , 2010 SO16 , 2012 DA14
-1	Месяц	месяц	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	•	•	PUNCT	PUNCT	_	6	punct	_	_
-3	Іншыя	іншы	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	4	amod	_	_
-4	гіпатэтычныя	гіпатэтычны	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	1	amod	_	_
-5	•	•	PUNCT	PUNCT	_	6	punct	_	_
-6	Квазіспадарожнікі	квазіспадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-7	:	:	PUNCT	PUNCT	_	8	punct	_	_
-8	Круітні	Круітні	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No
-9	,	,	PUNCT	PUNCT	_	11	punct	_	_
-10	2003	2003	NUM	CD	Case=Nom|NumType=Card	11	nummod:gov	_	_
-11	YN107	yn107	NUM	CD	Case=Nom|NumType=Card	8	conj	_	SpacesAfter= 
-12	,	,	PUNCT	PUNCT	_	14	punct	_	_
-13	2004	2004	NUM	CD	Case=Nom|NumType=Card	14	nummod:gov	_	_
-14	GU9	gu9	NUM	CD	Case=Nom|NumType=Card	8	conj	_	SpacesAfter= 
-15	,	,	PUNCT	PUNCT	_	20	punct	_	_
-16	2010	2010	NUM	CD	Case=Nom|NumType=Card	17	nummod:gov	_	_
-17	SO16	so16	NUM	CD	Case=Nom|NumType=Card	6	conj	_	SpacesAfter= 
-18	,	,	PUNCT	PUNCT	_	20	punct	_	_
-19	2012	2012	ADJ	CD	Case=Nom|NumType=Card	20	amod	_	_
-20	DA14	da14	NUM	CD	Foreign=Yes	17	orphan	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Гіпатэтычныя спадарожнікі Венеры • Квазіспадарожнік 2002 VE68
-1	Гіпатэтычныя	гіпатэтычны	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	спадарожнікі	спадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-3	Венеры	Венеры	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-4	•	•	PUNCT	PUNCT	_	5	punct	_	_
-5	Квазіспадарожнік	квазіспадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	conj	_	_
-6	2002	2002	ADJ	ORD	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	7	flat	_	_
-7	VE68	ve68	NUM	CD	Foreign=Yes	5	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Гіпатэтычны спадарожнік Меркурыя
-1	Гіпатэтычны	гіпатэтычны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	спадарожнік	спадарожнік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-3	Меркурыя	меркуры	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навігацыя
-1	Навігацыя	навігацыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = Спасылкі
+1	Спасылкі	спасылка	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 

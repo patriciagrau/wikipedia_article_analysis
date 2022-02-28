@@ -1,5 +1,3 @@
-# https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17,7 +15,7 @@
 8	的	的	PART	DEC	Case=Gen	7	case:dec	_	SpaceAfter=No
 9	百	百	NUM	CD	NumType=Card	10	nummod	_	SpaceAfter=No
 10	科	科	NOUN	NN	_	11	nmod	_	SpaceAfter=No
-11	全书	全书	NOUN	NN	_	5	nmod	_	SpacesAfter=\n
+11	全书	全书	NOUN	NN	_	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -25,16 +23,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 美国
-1	美国	美国	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 美利堅合眾國（英語：the United States of America、U.S.A.、America、 United States、U.S.、the States），是北美洲的一个聯邦制共和國，亦是當今世上唯一的超級強國，由下轄的50個州加上联邦政府直辖的华盛顿哥伦比亚特区、五個离岸自治領土及若干外島組成[註 1]。
+# text = 美利堅合眾國（英語：the United States of America、U.S.A.、America、 United States、U.S.、the States），是北美洲的一个聯邦制共和國，亦是當今世上唯一的超級強國，由下轄的50個州加上联邦政府直辖的华盛顿哥伦比亚特区、五個离岸自治領土及若干外島組成。
 1	美利	美利	PROPN	NNP	_	2	compound	_	SpaceAfter=No
 2	堅	堅	PART	SFN	_	4	nmod	_	SpaceAfter=No
 3	合眾	合眾	VERB	VV	_	4	compound	_	SpaceAfter=No
@@ -68,7 +57,7 @@
 31	的	的	PART	DEC	Case=Gen	30	case:dec	_	SpaceAfter=No
 32	一	一	NUM	CD	NumType=Card	33	nummod	_	SpaceAfter=No
 33	个	个	NOUN	NNB	_	37	nmod	_	SpaceAfter=No
-34	聯	聯	NOUN	NN	_	37	nmod	_	SpaceAfter=No
+34	聯	聯	ADJ	JJ	_	37	nmod	_	SpaceAfter=No
 35	邦制	邦制	NOUN	NN	_	37	nmod	_	SpaceAfter=No
 36	共和	共和	NOUN	NN	_	37	compound	_	SpaceAfter=No
 37	國	國	PART	SFN	_	49	advcl	_	SpaceAfter=No
@@ -97,24 +86,21 @@
 60	的	的	PART	DEC	_	51	mark:relcl	_	SpaceAfter=No
 61	华盛顿	华盛顿	PROPN	NNP	_	63	nmod	_	SpaceAfter=No
 62	哥伦比亚特	哥伦比亚特	PROPN	NNP	_	63	compound	_	SpaceAfter=No
-63	区	区	PART	SFN	_	74	obj	_	SpaceAfter=No
-64	、	、	PUNCT	EC	_	69	punct	_	SpaceAfter=No
+63	区	区	PART	SFN	_	75	nsubj	_	SpaceAfter=No
+64	、	、	PUNCT	EC	_	70	punct	_	SpaceAfter=No
 65	五	五	NUM	CD	NumType=Card	66	nummod	_	SpaceAfter=No
 66	個	個	NOUN	NNB	_	69	clf	_	SpaceAfter=No
 67	离岸	离岸	NOUN	NN	_	69	nmod	_	SpaceAfter=No
 68	自治	自治	VERB	VV	_	69	nmod	_	SpaceAfter=No
-69	領	領	NOUN	NN	_	63	conj	_	SpaceAfter=No
-70	土及	土及	CCONJ	CC	_	73	cc	_	SpaceAfter=No
-71	若干	若干	NUM	CD	NumType=Card	73	nummod	_	SpaceAfter=No
-72	外	外	NOUN	NN	_	73	case:pref	_	SpaceAfter=No
-73	島	島	NOUN	NN	_	63	conj	_	SpaceAfter=No
-74	組	組	VERB	VV	_	49	ccomp	_	SpaceAfter=No
-75	成	成	VERB	VV	_	49	mark	_	SpaceAfter=No
-76	[	[	PUNCT	(	_	77	punct	_	SpaceAfter=No
-77	註	註	NOUN	NN	_	75	obj	_	_
-78	1	1	NUM	CD	NumType=Card	79	nummod	_	SpaceAfter=No
-79	]	]	NOUN	NN	_	77	conj	_	SpaceAfter=No
-80	。	。	PUNCT	.	_	49	punct	_	SpaceAfter=No
+69	領	領	NOUN	NN	_	70	nmod	_	SpaceAfter=No
+70	土及	土及	NOUN	NN	_	63	conj	_	SpaceAfter=No
+71	若	若	ADP	IN	_	74	case	_	SpaceAfter=No
+72	干	干	NUM	CD	_	74	nmod	_	SpaceAfter=No
+73	外	外	PART	NN	_	74	case:pref	_	SpaceAfter=No
+74	島	島	NOUN	NN	_	63	conj	_	SpaceAfter=No
+75	組	組	VERB	VV	_	76	advcl	_	SpaceAfter=No
+76	成	成	VERB	VV	_	49	ccomp	_	SpaceAfter=No
+77	。	。	PUNCT	.	_	49	punct	_	SpaceAfter=No
 
 # sent_id = 2
 # text = 美国的官方领土面积為9,833,520平方公里（3,796,740平方英里），为北美第二（次于加拿大），并位居世界第三或第四。
@@ -1333,12 +1319,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 國名[编辑]
+# text = 國名
 1	國	國	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	名	名	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	(	_	5	case:pref	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	0	root	_	SpacesAfter=\n
+2	名	名	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -1346,12 +1329,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 英文名[编辑]
-1	英	英	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
-2	文名	文名	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	PFA	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 英文名
+1	英	英	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	文	文	PART	SFN	_	3	compound	_	SpaceAfter=No
+3	名	名	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -1864,13 +1845,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 漢字名稱[编辑]
-1	漢	漢	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
+# text = 漢字名稱
+1	漢	漢	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
 2	字名	字名	NOUN	NN	_	3	compound	_	SpaceAfter=No
 3	稱	稱	PART	SFN	_	0	root	_	SpaceAfter=No
-4	[	[	CCONJ	CC	_	6	cc	_	SpaceAfter=No
-5	编辑	编辑	NOUN	NN	_	6	compound	_	SpaceAfter=No
-6	]	]	PART	SFN	_	3	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2348,12 +2326,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 歷史[编辑]
+# text = 歷史
 1	歷	歷	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	史	史	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+2	史	史	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2361,16 +2336,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 原住民與歐洲殖民者[编辑]
+# text = 原住民與歐洲殖民者
 1	原	原	PART	PFA	_	2	case:pref	_	SpaceAfter=No
-2	住民	住民	NOUN	NN	_	6	nmod	_	SpaceAfter=No
-3	與	與	CCONJ	CC	_	6	cc	_	SpaceAfter=No
-4	歐	歐	PROPN	NNP	_	5	compound	_	SpaceAfter=No
-5	洲	洲	PART	SFN	_	2	conj	_	SpaceAfter=No
-6	殖民者	殖民者	NOUN	NN	_	0	root	_	SpaceAfter=No
-7	[	[	PUNCT	(	_	9	punct	_	SpaceAfter=No
-8	编辑	编辑	VERB	VV	_	9	compound	_	SpaceAfter=No
-9	]	]	PART	SFN	_	6	appos	_	SpacesAfter=\n
+2	住民	住民	NOUN	NN	_	0	root	_	SpaceAfter=No
+3	與	與	CCONJ	CC	_	5	cc	_	SpaceAfter=No
+4	歐	歐	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
+5	洲殖民者	洲殖民者	NOUN	NN	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2737,14 +2708,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 獨立與扩张[编辑]
-1	獨	獨	NOUN	NN	_	2	advmod	_	SpaceAfter=No
-2	立	立	VERB	VV	_	0	root	_	SpaceAfter=No
-3	與	與	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	扩张	扩张	VERB	VV	_	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	(	_	7	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	2	appos	_	SpaceAfter=No
-7	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+# text = 獨立與扩张
+1	獨	獨	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
+2	立與	立與	ADV	VV	_	3	advmod	_	SpaceAfter=No
+3	扩张	扩张	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3380,20 +3347,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 奴隸制、內戰和工業城市化[编辑]
-1	奴	奴	NOUN	NN	_	3	nmod	_	SpaceAfter=No
+# text = 奴隸制、內戰和工業城市化
+1	奴	奴	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
 2	隸	隸	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	制	制	PART	SFN	_	12	nsubj	_	SpaceAfter=No
-4	、	、	PUNCT	EC	_	10	punct	_	SpaceAfter=No
-5	內	內	VERB	VV	_	10	compound	_	SpaceAfter=No
-6	戰	戰	PART	VV	_	5	conj	_	SpaceAfter=No
+3	制	制	PART	SFN	_	0	root	_	SpaceAfter=No
+4	、	、	PUNCT	EC	_	6	punct	_	SpaceAfter=No
+5	內	內	NOUN	NN	_	6	compound	_	SpaceAfter=No
+6	戰	戰	PART	SFN	_	3	conj	_	SpaceAfter=No
 7	和工	和工	NOUN	NN	_	8	compound	_	SpaceAfter=No
-8	業	業	PART	SFN	_	10	nmod	_	SpaceAfter=No
+8	業	業	PART	SFN	_	10	nsubj	_	SpaceAfter=No
 9	城市	城市	NOUN	NN	_	10	compound	_	SpaceAfter=No
-10	化	化	PART	SFV	_	3	conj	_	SpaceAfter=No
-11	[	[	ADV	RB	_	12	punct	_	SpaceAfter=No
-12	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-13	]	]	PART	SFN	_	3	appos	_	SpacesAfter=\n
+10	化	化	PART	SFV	_	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3822,19 +3786,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 兩次世界大戰與大萧条[编辑]
+# text = 兩次世界大戰與大萧条
 1	兩	兩	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
 2	次	次	NOUN	NNB	_	5	nmod	_	SpaceAfter=No
 3	世界	世界	NOUN	NN	_	5	nmod	_	SpaceAfter=No
 4	大	大	PART	PFA	_	5	compound	_	SpaceAfter=No
-5	戰	戰	PART	SFN	_	11	nsubj	_	SpaceAfter=No
-6	與	與	CCONJ	CC	_	9	cc	_	SpaceAfter=No
+5	戰	戰	PART	SFN	_	9	nmod	_	SpaceAfter=No
+6	與	與	CCONJ	VV	_	9	cc	_	SpaceAfter=No
 7	大	大	PART	PFA	_	8	case:pref	_	SpaceAfter=No
-8	萧	萧	PROPN	NNP	_	9	nmod	_	SpaceAfter=No
-9	条	条	PART	SFN	_	5	conj	_	SpaceAfter=No
-10	[	[	PUNCT	(	_	12	punct	_	SpaceAfter=No
-11	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-12	]	]	PART	SFN	_	11	obj	_	SpacesAfter=\n
+8	萧	萧	PROPN	NNP	_	9	compound	_	SpaceAfter=No
+9	条	条	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4409,19 +4370,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 冷戰時期和種族衝突[编辑]
+# text = 冷戰時期和種族衝突
 1	冷	冷	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-2	戰	戰	PROPN	NNP	_	1	conj	_	SpaceAfter=No
-3	時	時	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	期	期	PART	SFN	_	11	nsubj	_	SpaceAfter=No
+2	戰	戰	VERB	VV	_	3	compound	_	SpaceAfter=No
+3	時	時	PART	SFN	_	4	compound	_	SpaceAfter=No
+4	期	期	PART	SFN	_	0	root	_	SpaceAfter=No
 5	和	和	CCONJ	CC	_	9	cc	_	SpaceAfter=No
-6	種	種	PROPN	NNP	_	7	compound	_	SpaceAfter=No
-7	族	族	PART	SFN	_	9	nmod	_	SpaceAfter=No
-8	衝	衝	VERB	VV	_	9	compound	_	SpaceAfter=No
-9	突	突	PART	SFN	_	4	conj	_	SpaceAfter=No
-10	[	[	VERB	VV	_	12	compound	_	SpaceAfter=No
-11	编辑	编辑	VERB	VV	_	12	compound	_	SpaceAfter=No
-12	]	]	PART	SFN	_	0	root	_	SpacesAfter=\n
+6	種	種	PROPN	VV	_	7	compound	_	SpaceAfter=No
+7	族	族	PART	SFN	_	9	nsubj	_	SpaceAfter=No
+8	衝	衝	VERB	VV	_	9	advcl	_	SpaceAfter=No
+9	突	突	VERB	VV	_	4	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4748,11 +4706,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 當代[编辑]
-1	當代	當代	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 當代
+1	當代	當代	PROPN	NNP	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5369,11 +5324,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 地理[编辑]
-1	地理	地理	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	4	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	appos	_	SpacesAfter=\n
+# text = 地理
+1	地理	地理	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5420,13 +5372,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 領土面積[编辑]
+# text = 領土面積
 1	領	領	NOUN	NN	_	3	nmod	_	SpaceAfter=No
 2	土面	土面	NOUN	NN	_	3	compound	_	SpaceAfter=No
-3	積	積	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	CCONJ	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+3	積	積	PART	SFN	_	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5434,14 +5383,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 領土開拓史[编辑]
-1	領	領	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+# text = 領土開拓史
+1	領	領	VERB	VV	_	2	compound	_	SpaceAfter=No
 2	土	土	PART	SFN	_	4	nmod	_	SpaceAfter=No
-3	開	開	NOUN	NN	_	4	nmod	_	SpaceAfter=No
-4	拓史	拓史	NOUN	NN	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	CC	_	7	cc	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+3	開	開	NOUN	NN	_	4	advcl	_	SpaceAfter=No
+4	拓史	拓史	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5527,12 +5473,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 現狀[编辑]
-1	現	現	PROPN	VV	_	4	nsubj	_	SpaceAfter=No
-2	狀	狀	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	1	punct	_	SpacesAfter=\n
+# text = 現狀
+1	現	現	ADJ	VV	_	0	root	_	SpaceAfter=No
+2	狀	狀	ADJ	VV	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5698,11 +5641,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 地形[编辑]
-1	地形	地形	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	1	appos	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	appos	_	SpacesAfter=\n
+# text = 地形
+1	地形	地形	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6382,11 +6322,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 氣候[编辑]
-1	氣候	氣候	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	VERB	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 氣候
+1	氣	氣	VERB	VV	_	2	compound	_	SpaceAfter=No
+2	候	候	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6972,11 +6910,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 生物[编辑]
-1	生物	生物	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 生物
+1	生物	生物	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7306,14 +7241,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 水文與山脈[编辑]
+# text = 水文與山脈
 1	水文	水文	NOUN	NN	_	4	compound	_	SpaceAfter=No
 2	與	與	CCONJ	CC	_	3	cc	_	SpaceAfter=No
-3	山	山	NOUN	NN	_	1	conj	_	SpaceAfter=No
-4	脈	脈	PART	SFN	_	6	nsubj	_	SpaceAfter=No
-5	[	[	ADV	DT	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PART	SFN	_	6	punct	_	SpacesAfter=\n
+3	山	山	NOUN	NN	_	4	compound	_	SpaceAfter=No
+4	脈	脈	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7554,14 +7486,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 地區劃分[编辑]
+# text = 地區劃分
 1	地	地	NOUN	NN	_	4	nmod	_	SpaceAfter=No
-2	區	區	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-3	劃	劃	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	分	分	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	CC	_	7	cc	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	7	compound	_	SpaceAfter=No
-7	]	]	PART	SFN	_	4	appos	_	SpacesAfter=\n
+2	區	區	NOUN	NN	_	4	nmod	_	SpaceAfter=No
+3	劃	劃	VERB	SFN	_	4	nsubj	_	SpaceAfter=No
+4	分	分	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7601,13 +7530,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 國家公園[编辑]
-1	國	國	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
+# text = 國家公園
+1	國	國	NOUN	NN	_	3	nmod	_	SpaceAfter=No
 2	家公	家公	NOUN	NN	_	3	compound	_	SpaceAfter=No
-3	園	園	PART	SFN	_	0	root	_	SpaceAfter=No
-4	[	[	CCONJ	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
+3	園	園	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7800,13 +7726,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 法律與政治[编辑]
-1	法律	法律	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
+# text = 法律與政治
+1	法律	法律	NOUN	NN	_	0	root	_	SpaceAfter=No
 2	與	與	CCONJ	CC	_	3	cc	_	SpaceAfter=No
 3	政治	政治	NOUN	NN	_	1	conj	_	SpaceAfter=No
-4	[	[	VERB	(	_	5	mark	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7814,11 +7737,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 法律[编辑]
-1	法律	法律	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 法律
+1	法律	法律	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8172,12 +8092,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 憲法[编辑]
+# text = 憲法
 1	憲	憲	PROPN	NNP	_	2	compound	_	SpaceAfter=No
 2	法	法	PART	SFN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8369,11 +8286,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 政治[编辑]
-1	政治	政治	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	4	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	0	root	_	SpacesAfter=\n
+# text = 政治
+1	政治	政治	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8409,12 +8323,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 情报机构[编辑]
+# text = 情报机构
 1	情报	情报	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	机构	机构	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	机构	机构	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8422,12 +8333,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 國会[编辑]
+# text = 國会
 1	國	國	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	会	会	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	ADV	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	会	会	PART	SFN	_	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8675,12 +8583,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 總統[编辑]
+# text = 總統
 1	總	總	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	統	統	PROPN	NNP	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	統	統	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9482,15 +9387,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 總統行政辦公室[编辑]
+# text = 總統行政辦公室
 1	總	總	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
 2	統	統	NOUN	NN	_	5	nmod	_	SpaceAfter=No
 3	行政	行政	NOUN	NN	_	5	nmod	_	SpaceAfter=No
-4	辦	辦	NOUN	NN	_	5	nmod	_	SpaceAfter=No
-5	公室	公室	NOUN	NN	_	0	root	_	SpaceAfter=No
-6	[	[	CCONJ	(	_	8	cc	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	8	compound	_	SpaceAfter=No
-8	]	]	PART	SFN	_	5	appos	_	SpacesAfter=\n
+4	辦	辦	PART	JJ	_	5	case:pref	_	SpaceAfter=No
+5	公室	公室	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9625,14 +9527,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 聯邦行政部門[编辑]
-1	聯	聯	PROPN	NN	_	4	nmod	_	SpaceAfter=No
+# text = 聯邦行政部門
+1	聯	聯	NOUN	NN	_	4	nmod	_	SpaceAfter=No
 2	邦行	邦行	NOUN	NN	_	4	nmod	_	SpaceAfter=No
 3	政部	政部	NOUN	NN	_	4	compound	_	SpaceAfter=No
-4	門	門	PART	SFN	_	6	nsubj	_	SpaceAfter=No
-5	[	[	ADV	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PART	SFN	_	6	punct	_	SpacesAfter=\n
+4	門	門	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9705,17 +9604,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 聯邦政府獨立機構[编辑]
-1	聯	聯	PROPN	NNP	_	4	compound	_	SpaceAfter=No
-2	邦	邦	NOUN	NN	_	7	nmod	_	SpaceAfter=No
-3	政	政	NOUN	NN	_	4	compound	_	SpaceAfter=No
-4	府	府	PART	SFN	_	7	nmod	_	SpaceAfter=No
-5	獨	獨	VERB	VV	_	7	nmod	_	SpaceAfter=No
-6	立機	立機	VERB	VV	_	7	compound	_	SpaceAfter=No
-7	構	構	PART	SFN	_	9	nsubj	_	SpaceAfter=No
-8	[	[	PUNCT	(	_	9	punct	_	SpaceAfter=No
-9	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-10	]	]	PART	SFN	_	9	punct	_	SpacesAfter=\n
+# text = 聯邦政府獨立機構
+1	聯	聯	NOUN	NN	_	6	nmod	_	SpaceAfter=No
+2	邦政	邦政	NOUN	NN	_	3	compound	_	SpaceAfter=No
+3	府	府	PART	SFN	_	6	nmod	_	SpaceAfter=No
+4	獨	獨	NOUN	NN	_	5	advmod	_	SpaceAfter=No
+5	立機	立機	VERB	VV	_	6	compound	_	SpaceAfter=No
+6	構	構	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9833,13 +9728,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 聯邦司法[编辑]
-1	聯	聯	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	邦	邦	NOUN	NN	_	3	nmod	_	SpaceAfter=No
-3	司法	司法	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	VERB	VV	_	5	mark	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+# text = 聯邦司法
+1	聯	聯	PROPN	NNP	_	4	compound	_	SpaceAfter=No
+2	邦	邦	NOUN	NN	_	3	compound	_	SpaceAfter=No
+3	司	司	PART	SFN	_	4	compound	_	SpaceAfter=No
+4	法	法	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -10085,15 +9978,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 各州與地方選舉[编辑]
-1	各州	各州	NOUN	NN	_	5	nmod	_	SpaceAfter=No
+# text = 各州與地方選舉
+1	各州	各州	NOUN	NN	_	5	compound	_	SpaceAfter=No
 2	與	與	CCONJ	CC	_	3	cc	_	SpaceAfter=No
-3	地方	地方	NOUN	NN	_	1	conj	_	SpaceAfter=No
+3	地方	地方	NOUN	NN	_	4	obl	_	SpaceAfter=No
 4	選	選	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	舉	舉	PART	SFN	_	7	nsubj	_	SpaceAfter=No
-6	[	[	PUNCT	RB	_	8	punct	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-8	]	]	PART	SFN	_	7	obj	_	SpacesAfter=\n
+5	舉	舉	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -10212,18 +10102,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 聯邦與州政府的關係[编辑]
-1	聯	聯	VERB	VV	_	2	compound	_	SpaceAfter=No
-2	邦	邦	NOUN	NN	_	5	nmod	_	SpaceAfter=No
-3	與	與	VERB	VV	_	5	amod	_	SpaceAfter=No
-4	州	州	NOUN	NN	_	3	obj	_	SpaceAfter=No
+# text = 聯邦與州政府的關係
+1	聯	聯	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	邦	邦	PART	SFN	_	8	nmod	_	SpaceAfter=No
+3	與	與	CCONJ	CC	_	5	cc	_	SpaceAfter=No
+4	州	州	NOUN	NN	_	2	conj	_	SpaceAfter=No
 5	政府	政府	NOUN	NN	_	8	nmod	_	SpaceAfter=No
 6	的	的	PART	DEC	Case=Gen	5	case:dec	_	SpaceAfter=No
-7	關	關	VERB	VV	_	8	compound	_	SpaceAfter=No
+7	關	關	NOUN	NN	_	8	compound	_	SpaceAfter=No
 8	係	係	PART	SFN	_	0	root	_	SpaceAfter=No
-9	[	[	PUNCT	(	_	11	punct	_	SpaceAfter=No
-10	编辑	编辑	VERB	VV	_	11	compound	_	SpaceAfter=No
-11	]	]	PART	SFN	_	8	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -10540,12 +10427,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 政黨[编辑]
-1	政	政	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	黨	黨	PART	SFN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+# text = 政黨
+1	政	政	NOUN	NN	_	2	compound	_	SpaceAfter=No
+2	黨	黨	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -11241,12 +11125,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 行政区划[编辑]
+# text = 行政区划
 1	行政	行政	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	区划	区划	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+2	区划	区划	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -11983,11 +11864,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 城市[编辑]
-1	城市	城市	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	obj	_	SpacesAfter=\n
+# text = 城市
+1	城市	城市	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -12199,12 +12077,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 經濟[编辑]
-1	經	經	PROPN	NNP	_	0	root	_	SpaceAfter=No
-2	濟	濟	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	VERB	VV	_	5	cop	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	1	punct	_	SpacesAfter=\n
+# text = 經濟
+1	經	經	PROPN	VV	_	2	compound	_	SpaceAfter=No
+2	濟	濟	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -12335,12 +12210,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 發展史[编辑]
+# text = 發展史
 1	發	發	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	展史	展史	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	展史	展史	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -12473,14 +12345,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 宏觀經濟[编辑]
-1	宏	宏	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-2	觀	觀	PROPN	VV	_	4	nmod	_	SpaceAfter=No
+# text = 宏觀經濟
+1	宏	宏	PROPN	NNP	_	4	compound	_	SpaceAfter=No
+2	觀	觀	ADJ	JJ	_	4	amod	_	SpaceAfter=No
 3	經	經	NOUN	NN	_	4	compound	_	SpaceAfter=No
 4	濟	濟	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	(	_	7	cc	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-7	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -13660,12 +13529,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 工業[编辑]
-1	工	工	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	業	業	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	VERB	VV	_	4	advcl	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	obj	_	SpacesAfter=\n
+# text = 工業
+1	工	工	NOUN	NN	_	2	compound	_	SpaceAfter=No
+2	業	業	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -13877,12 +13743,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 農業[编辑]
-1	農	農	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	業	業	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	obj	_	SpacesAfter=\n
+# text = 農業
+1	農	農	NOUN	NN	_	2	compound	_	SpaceAfter=No
+2	業	業	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -14357,14 +14220,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 科學技術[编辑]
-1	科	科	NOUN	NN	_	3	compound	_	SpaceAfter=No
+# text = 科學技術
+1	科	科	NOUN	NN	_	2	compound	_	SpaceAfter=No
 2	學	學	PART	SFN	_	3	compound	_	SpaceAfter=No
 3	技	技	PART	SFN	_	4	compound	_	SpaceAfter=No
 4	術	術	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	(	_	6	cc	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -14892,13 +14752,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 交通運輸[编辑]
+# text = 交通運輸
 1	交通	交通	NOUN	NN	_	2	compound	_	SpaceAfter=No
-2	運	運	VERB	SFN	_	3	compound	_	SpaceAfter=No
-3	輸	輸	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	CCONJ	CC	_	5	advmod	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+2	運	運	PART	SFN	_	3	compound	_	SpaceAfter=No
+3	輸	輸	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -15027,11 +14884,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 公路[编辑]
-1	公路	公路	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	(	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 公路
+1	公路	公路	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -15256,12 +15110,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 鐵路[编辑]
+# text = 鐵路
 1	鐵	鐵	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	路	路	PART	SFN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	路	路	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -15543,12 +15394,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 城市交通[编辑]
+# text = 城市交通
 1	城市	城市	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	交通	交通	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	交通	交通	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -15716,12 +15564,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 水運[编辑]
-1	水	水	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-2	運	運	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	ADV	VV	_	4	mark	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 水運
+1	水	水	NOUN	NN	_	2	compound	_	SpaceAfter=No
+2	運	運	PART	SFN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -15863,11 +15708,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 航空[编辑]
-1	航空	航空	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 航空
+1	航空	航空	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -16186,12 +16028,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 旅遊[编辑]
-1	旅	旅	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
+# text = 旅遊
+1	旅	旅	PROPN	NNP	_	0	root	_	SpaceAfter=No
 2	遊	遊	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	CCONJ	VV	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -16372,14 +16211,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 對外貿易[编辑]
+# text = 對外貿易
 1	對	對	VERB	VV	_	4	amod	_	SpaceAfter=No
 2	外	外	NOUN	NN	_	1	obj	_	SpaceAfter=No
-3	貿	貿	PROPN	NNP	_	4	compound	_	SpaceAfter=No
-4	易	易	PART	SFN	_	6	nsubj	_	SpaceAfter=No
-5	[	[	ADV	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	6	punct	_	SpacesAfter=\n
+3	貿	貿	PART	SFN	_	4	compound	_	SpaceAfter=No
+4	易	易	NOUN	NN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -16548,11 +16384,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 人口[编辑]
-1	人口	人口	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	AUX	VV	_	3	cop	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 人口
+1	人口	人口	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -16560,11 +16393,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 历史[编辑]
-1	历史	历史	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	CCONJ	CC	_	4	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	appos	_	SpacesAfter=\n
+# text = 历史
+1	历史	历史	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -16649,11 +16479,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 现状[编辑]
-1	现状	现状	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 现状
+1	现状	现状	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -17979,18 +17806,86 @@
 27	自豪	自豪	ADJ	JJ	_	23	obj	_	SpaceAfter=No
 28	。	。	PUNCT	.	_	13	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = 2001年，911恐怖袭击前不久，盖洛普(Gallup)进行的调研显示，受访者对国家的“极度”自豪感约为55%，而在随后的三年里，恐怖袭击使美国人团结起来，这一比例飙升至65%至70%。
+1	2001	2001	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	年	年	NOUN	NNB	_	14	nmod:tmod	_	SpaceAfter=No
+3	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+4	911	911	NUM	CD	NumType=Card	6	nmod	_	SpaceAfter=No
+5	恐怖	恐怖	ADJ	JJ	_	6	nmod	_	SpaceAfter=No
+6	袭击	袭击	NOUN	NN	_	8	nmod	_	SpaceAfter=No
+7	前	前	ADP	IN	_	6	acl	_	SpaceAfter=No
+8	不久	不久	NOUN	NN	_	14	nmod:tmod	_	SpaceAfter=No
+9	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+10	盖洛普(Gallup)	盖洛普(gallup)	X	FW	_	11	nsubj	_	SpaceAfter=No
+11	进行	进行	VERB	VV	_	13	acl:relcl	_	SpaceAfter=No
+12	的	的	PART	DEC	_	11	mark:relcl	_	SpaceAfter=No
+13	调研	调研	NOUN	NN	_	14	nsubj	_	SpaceAfter=No
+14	显示	显示	VERB	VV	_	0	root	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+16	受访	受访	VERB	VV	_	17	compound	_	SpaceAfter=No
+17	者	者	PART	SFN	_	25	nsubj	_	SpaceAfter=No
+18	对	对	ADP	IN	_	22	det	_	SpaceAfter=No
+19	国家	国家	NOUN	NN	_	18	nmod	_	SpaceAfter=No
+20	的	的	PART	DEC	Case=Gen	18	case:dec	_	SpaceAfter=No
+21	“	“	PUNCT	``	_	22	punct	_	SpaceAfter=No
+22	极度	极度	NOUN	NN	_	25	nsubj	_	SpaceAfter=No
+23	”	”	PUNCT	''	_	22	punct	_	SpaceAfter=No
+24	自豪	自豪	NOUN	NN	_	25	nsubj	_	SpaceAfter=No
+25	感约	感约	VERB	VV	_	27	csubj	_	SpaceAfter=No
+26	为	为	AUX	VC	_	27	cop	_	SpaceAfter=No
+27	55%	55%	NUM	CD	NumType=Card	14	ccomp	_	SpaceAfter=No
+28	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+29	而	而	ADV	RB	_	39	mark	_	SpaceAfter=No
+30	在	在	ADP	IN	_	34	case	_	SpaceAfter=No
+31	随后	随后	ADJ	JJ	_	34	amod	_	SpaceAfter=No
+32	的	的	PART	DEC	_	31	case:dec	_	SpaceAfter=No
+33	三	三	NUM	CD	NumType=Card	34	nummod	_	SpaceAfter=No
+34	年	年	NOUN	NNB	_	39	obl	_	SpaceAfter=No
+35	里	里	ADP	IN	_	34	acl	_	SpaceAfter=No
+36	，	，	PUNCT	,	_	39	punct	_	SpaceAfter=No
+37	恐怖	恐怖	NOUN	NN	_	38	nmod	_	SpaceAfter=No
+38	袭击	袭击	NOUN	NN	_	39	nsubj	_	SpaceAfter=No
+39	使	使	VERB	VV	Voice=Cau	14	ccomp	_	SpaceAfter=No
+40	美国	美国	PROPN	NNP	_	41	nmod	_	SpaceAfter=No
+41	人团	人团	NOUN	NN	_	42	nsubj	_	SpaceAfter=No
+42	结起	结起	VERB	VV	_	39	ccomp	_	SpaceAfter=No
+43	来	来	VERB	VV	_	42	mark	_	SpaceAfter=No
+44	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+45	这	这	DET	DT	_	47	det	_	SpaceAfter=No
+46	一	一	NUM	CD	NumType=Card	47	nummod	_	SpaceAfter=No
+47	比例	比例	NOUN	NN	_	48	nsubj	_	SpaceAfter=No
+48	飙	飙	VERB	VV	_	14	parataxis	_	SpaceAfter=No
+49	升	升	VERB	VV	_	48	xcomp	_	SpaceAfter=No
+50	至	至	VERB	VV	_	49	mark	_	SpaceAfter=No
+51	65%	65%	NUM	CD	NumType=Card	49	obj	_	SpaceAfter=No
+52	至	至	CCONJ	CC	_	53	cc	_	SpaceAfter=No
+53	70%	70%	NUM	CD	NumType=Card	51	conj	_	SpaceAfter=No
+54	。	。	PUNCT	.	_	14	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 2005年下降到61%，到2015年达到54%。
+1	2005	2005	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	年	年	NOUN	NNB	_	9	nmod:tmod	_	SpaceAfter=No
+3	下降到	下降到	VERB	VV	_	9	advcl	_	SpaceAfter=No
+4	61%	61%	NUM	CD	NumType=Card	3	obj	_	SpaceAfter=No
+5	，	，	PUNCT	,	_	9	punct	_	SpaceAfter=No
+6	到	到	ADP	IN	_	8	case	_	SpaceAfter=No
+7	2015	2015	NUM	CD	NumType=Card	8	nummod	_	SpaceAfter=No
+8	年	年	NOUN	NNB	_	9	obl	_	SpaceAfter=No
+9	达到	达到	VERB	VV	_	0	root	_	SpaceAfter=No
+10	54%	54%	NUM	CD	NumType=Card	9	obj	_	SpaceAfter=No
+11	。	。	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 社会阶层[编辑]
+# text = 社会阶层
 1	社会	社会	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	阶层	阶层	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	obj	_	SpacesAfter=\n
+2	阶层	阶层	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -18210,12 +18105,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 語言[编辑]
-1	語	語	VERB	VV	_	2	compound	_	SpaceAfter=No
-2	言	言	PART	SFN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+# text = 語言
+1	語	語	PROPN	NNP	_	2	nsubj	_	SpaceAfter=No
+2	言	言	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -18410,11 +18302,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 宗教[编辑]
-1	宗教	宗教	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	CC	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	obj	_	SpacesAfter=\n
+# text = 宗教
+1	宗教	宗教	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -19000,13 +18889,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 社会与生活[编辑]
-1	社会	社会	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
+# text = 社会与生活
+1	社会	社会	NOUN	NN	_	0	root	_	SpaceAfter=No
 2	与	与	CCONJ	CC	_	3	cc	_	SpaceAfter=No
 3	生活	生活	NOUN	NN	_	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -19014,12 +18900,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 居民收入[编辑]
+# text = 居民收入
 1	居民	居民	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	收入	收入	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	PART	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+2	收入	收入	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -19624,12 +19507,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 医疗保健[编辑]
+# text = 医疗保健
 1	医疗	医疗	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	保健	保健	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	保健	保健	NOUN	NN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -20108,11 +19988,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 教育[编辑]
-1	教育	教育	NOUN	NN	_	4	compound	_	SpaceAfter=No
-2	[	[	PART	SFN	_	4	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	0	root	_	SpacesAfter=\n
+# text = 教育
+1	教育	教育	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -20656,12 +20533,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 飲食[编辑]
+# text = 飲食
 1	飲	飲	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	食	食	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	VERB	VV	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	食	食	NOUN	NN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -21259,11 +21133,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 传媒[编辑]
-1	传媒	传媒	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 传媒
+1	传媒	传媒	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -21444,11 +21315,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 电视[编辑]
-1	电视	电视	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 电视
+1	电视	电视	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -21705,12 +21573,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 广播电台[编辑]
+# text = 广播电台
 1	广播	广播	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	电台	电台	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	电台	电台	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -21806,11 +21671,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 报纸[编辑]
-1	报纸	报纸	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	CCONJ	CC	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	1	appos	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 报纸
+1	报纸	报纸	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -21997,11 +21859,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 杂志[编辑]
-1	杂志	杂志	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	PART	(	_	4	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	appos	_	SpacesAfter=\n
+# text = 杂志
+1	杂志	杂志	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -22092,12 +21951,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 互联网[编辑]
-1	互联	互联	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	网	网	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 互联网
+1	互联	互联	PROPN	VV	_	2	compound	_	SpaceAfter=No
+2	网	网	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -22322,12 +22178,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 通訊[编辑]
-1	通	通	PROPN	NNP	_	0	root	_	SpaceAfter=No
-2	訊	訊	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	1	obj	_	SpacesAfter=\n
+# text = 通訊
+1	通	通	VERB	VV	_	0	root	_	SpaceAfter=No
+2	訊	訊	PROPN	NNP	_	1	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -22542,11 +22395,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 治安[编辑]
-1	治安	治安	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	obj	_	SpacesAfter=\n
+# text = 治安
+1	治安	治安	PROPN	NNP	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23233,11 +23083,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 节日[编辑]
-1	节日	节日	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	AUX	(	_	3	cc	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	1	appos	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	punct	_	SpacesAfter=\n
+# text = 节日
+1	节日	节日	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23274,11 +23121,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 外交[编辑]
-1	外交	外交	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 外交
+1	外交	外交	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23286,12 +23130,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 外交史[编辑]
-1	外	外	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	交史	交史	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+# text = 外交史
+1	外	外	NOUN	NN	_	2	obl	_	SpaceAfter=No
+2	交	交	VERB	VV	_	3	compound	_	SpaceAfter=No
+3	史	史	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23389,16 +23231,7 @@
 18	疆土	疆土	NOUN	NN	_	20	nmod	_	SpaceAfter=No
 19	開	開	VERB	VV	_	20	amod	_	SpaceAfter=No
 20	拓	拓	VERB	VV	_	14	obj	_	SpaceAfter=No
-21	。	。	PUNCT	.	_	14	punct	_	SpaceAfter=No
-
-# sent_id = 4
-# text = [來源請求]
-1	[	[	PUNCT	(	_	5	advcl	_	SpaceAfter=No
-2	來	來	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	源	源	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	請	請	ADV	RB	_	5	mark	_	SpaceAfter=No
-5	求	求	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	)	_	5	punct	_	SpacesAfter=\n
+21	。	。	PUNCT	.	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23530,16 +23363,7 @@
 21	未受	未受	VERB	VV	_	0	root	_	SpaceAfter=No
 22	過	過	PART	AS	Aspect=Perf	21	case:aspect	_	SpaceAfter=No
 23	挑戰	挑戰	NOUN	NN	_	21	obj	_	SpaceAfter=No
-24	。	。	PUNCT	.	_	21	punct	_	SpaceAfter=No
-
-# sent_id = 5
-# text = [來源請求]
-1	[	[	PUNCT	(	_	5	advcl	_	SpaceAfter=No
-2	來	來	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	源	源	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	請	請	ADV	RB	_	5	mark	_	SpaceAfter=No
-5	求	求	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	)	_	5	punct	_	SpacesAfter=\n
+24	。	。	PUNCT	.	_	21	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23652,16 +23476,7 @@
 33	員	員	PART	SFN	_	35	nmod	_	SpaceAfter=No
 34	之	之	PART	DEC	Case=Gen	33	case:dec	_	SpaceAfter=No
 35	一	一	NUM	CD	NumType=Card	23	obj	_	SpaceAfter=No
-36	。	。	PUNCT	.	_	23	punct	_	SpaceAfter=No
-
-# sent_id = 4
-# text = [來源請求]
-1	[	[	PUNCT	(	_	5	advcl	_	SpaceAfter=No
-2	來	來	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	源	源	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	請	請	ADV	RB	_	5	mark	_	SpaceAfter=No
-5	求	求	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	)	_	5	punct	_	SpacesAfter=\n
+36	。	。	PUNCT	.	_	23	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -23827,16 +23642,7 @@
 43	人民	人民	NOUN	NN	_	45	nmod	_	SpaceAfter=No
 44	共和	共和	NOUN	NN	_	45	compound	_	SpaceAfter=No
 45	國	國	PART	SFN	_	34	obj	_	SpaceAfter=No
-46	。	。	PUNCT	.	_	27	punct	_	SpaceAfter=No
-
-# sent_id = 4
-# text = [來源請求]
-1	[	[	PUNCT	(	_	5	advcl	_	SpaceAfter=No
-2	來	來	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	源	源	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	請	請	ADV	RB	_	5	mark	_	SpaceAfter=No
-5	求	求	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	)	_	5	punct	_	SpacesAfter=\n
+46	。	。	PUNCT	.	_	27	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -24001,14 +23807,7 @@
 31	軍	軍	NOUN	NN	_	33	nmod	_	SpaceAfter=No
 32	事部	事部	NOUN	NN	_	33	compound	_	SpaceAfter=No
 33	署	署	PART	SFN	_	20	obj	_	SpaceAfter=No
-34	。	。	PUNCT	.	_	20	punct	_	SpaceAfter=No
-
-# sent_id = 4
-# text = [來源請求]
-1	[	[	ADP	IN	_	3	case	_	SpaceAfter=No
-2	來	來	ADV	VV	_	3	advcl	_	SpaceAfter=No
-3	源請求	源請求	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	)	_	3	punct	_	SpacesAfter=\n
+34	。	。	PUNCT	.	_	20	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -24016,11 +23815,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 现状[编辑]
-1	现状	现状	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 现状
+1	现状	现状	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -24609,12 +24405,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 軍事[编辑]
+# text = 軍事
 1	軍	軍	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	事	事	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	事	事	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -24767,6 +24560,78 @@
 23	實	實	VERB	VV	_	24	advcl	_	SpaceAfter=No
 24	施	施	VERB	VV	_	0	root	_	SpaceAfter=No
 25	。	。	PUNCT	.	_	24	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = 美國軍隊分為五個軍種：由國防部管理的陸軍、海軍、空軍、海軍陸戰隊和國土安全部管理的海岸警衛隊。
+1	美	美	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	國	國	PART	SFN	_	4	nmod	_	SpaceAfter=No
+3	軍	軍	NOUN	NN	_	4	nmod	_	SpaceAfter=No
+4	隊分	隊分	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
+5	為	為	VERB	VV	_	0	root	_	SpaceAfter=No
+6	五	五	NUM	CD	NumType=Card	7	nummod	_	SpaceAfter=No
+7	個	個	NOUN	NNB	_	9	nmod	_	SpaceAfter=No
+8	軍	軍	NOUN	NN	_	9	compound	_	SpaceAfter=No
+9	種	種	PART	SFN	_	5	obj	_	SpaceAfter=No
+10	：	：	PUNCT	:	_	11	punct	_	SpaceAfter=No
+11	由	由	VERB	VV	_	5	ccomp	_	SpaceAfter=No
+12	國	國	NOUN	NN	_	13	nmod	_	SpaceAfter=No
+13	防部	防部	NOUN	NN	_	14	nsubj	_	SpaceAfter=No
+14	管理	管理	VERB	VV	_	11	ccomp	_	SpaceAfter=No
+15	的	的	PART	DEC	_	14	mark:relcl	_	SpaceAfter=No
+16	陸	陸	NOUN	NN	_	17	compound	_	SpaceAfter=No
+17	軍	軍	PART	SFN	_	11	obj	_	SpaceAfter=No
+18	、	、	PUNCT	EC	_	20	punct	_	SpaceAfter=No
+19	海	海	NOUN	NN	_	20	compound	_	SpaceAfter=No
+20	軍	軍	PART	SFN	_	17	conj	_	SpaceAfter=No
+21	、	、	PUNCT	EC	_	23	punct	_	SpaceAfter=No
+22	空	空	NOUN	NN	_	23	compound	_	SpaceAfter=No
+23	軍	軍	PART	SFN	_	17	conj	_	SpaceAfter=No
+24	、	、	PUNCT	EC	_	29	punct	_	SpaceAfter=No
+25	海	海	NOUN	NN	_	26	compound	_	SpaceAfter=No
+26	軍	軍	PART	SFN	_	29	nmod	_	SpaceAfter=No
+27	陸	陸	NOUN	NN	_	28	nsubj	_	SpaceAfter=No
+28	戰	戰	NOUN	NN	_	29	compound	_	SpaceAfter=No
+29	隊	隊	PART	SFN	_	17	conj	_	SpaceAfter=No
+30	和	和	CCONJ	CC	_	39	cc	_	SpaceAfter=No
+31	國	國	NOUN	NN	_	33	nmod	_	SpaceAfter=No
+32	土安	土安	NOUN	NN	_	33	nmod	_	SpaceAfter=No
+33	全部	全部	NOUN	NN	_	34	advmod	_	SpaceAfter=No
+34	管理	管理	VERB	VV	_	39	acl:relcl	_	SpaceAfter=No
+35	的	的	PART	DEC	_	34	mark:relcl	_	SpaceAfter=No
+36	海岸	海岸	NOUN	NN	_	39	compound	_	SpaceAfter=No
+37	警	警	PART	SFN	_	38	nsubj	_	SpaceAfter=No
+38	衛	衛	VERB	VV	_	39	compound	_	SpaceAfter=No
+39	隊	隊	PART	SFN	_	17	conj	_	SpaceAfter=No
+40	。	。	PUNCT	.	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = 海岸警衛隊在和平時期由國土安全部管轄，戰争期間歸國防部的海軍部。
+1	海岸	海岸	NOUN	NN	_	2	compound	_	SpaceAfter=No
+2	警	警	PART	SFN	_	4	nmod	_	SpaceAfter=No
+3	衛	衛	VERB	VV	_	4	compound	_	SpaceAfter=No
+4	隊	隊	PART	SFN	_	19	nsubj	_	SpaceAfter=No
+5	在	在	ADP	IN	_	8	case	_	SpaceAfter=No
+6	和平	和平	NOUN	NN	_	8	compound	_	SpaceAfter=No
+7	時	時	PART	SFN	_	8	compound	_	SpaceAfter=No
+8	期	期	PART	SFN	_	9	obl	_	SpaceAfter=No
+9	由	由	VERB	VV	_	19	advcl	_	SpaceAfter=No
+10	國	國	PROPN	NNP	_	12	nmod	_	SpaceAfter=No
+11	土安	土安	NOUN	NN	_	12	nmod	_	SpaceAfter=No
+12	全部	全部	NOUN	NN	_	13	nsubj	_	SpaceAfter=No
+13	管	管	VERB	VV	_	9	ccomp	_	SpaceAfter=No
+14	轄	轄	VERB	VV	_	13	obj	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	19	punct	_	SpaceAfter=No
+16	戰	戰	NOUN	NN	_	17	nmod	_	SpaceAfter=No
+17	争期	争期	NOUN	NN	_	18	nmod	_	SpaceAfter=No
+18	間	間	ADP	IN	_	19	nmod:tmod	_	SpaceAfter=No
+19	歸	歸	VERB	VV	_	0	root	_	SpaceAfter=No
+20	國	國	PROPN	NNP	_	21	nmod	_	SpaceAfter=No
+21	防部	防部	NOUN	NN	_	25	nmod	_	SpaceAfter=No
+22	的	的	PART	DEC	Case=Gen	21	case:dec	_	SpaceAfter=No
+23	海	海	NOUN	NN	_	24	compound	_	SpaceAfter=No
+24	軍	軍	PART	SFN	_	25	compound	_	SpaceAfter=No
+25	部	部	PART	SFN	_	19	obj	_	SpaceAfter=No
+26	。	。	PUNCT	.	_	19	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -25031,11 +24896,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 文化[编辑]
-1	文化	文化	NOUN	NN	_	4	compound	_	SpaceAfter=No
-2	[	[	PART	SFN	_	4	nmod	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	0	root	_	SpacesAfter=\n
+# text = 文化
+1	文化	文化	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -25722,12 +25584,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 音樂[编辑]
-1	音	音	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-2	樂	樂	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	VERB	VV	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 音樂
+1	音	音	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
+2	樂	樂	PROPN	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -26149,12 +26008,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 文學[编辑]
-1	文	文	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
+# text = 文學
+1	文	文	PROPN	NNP	_	0	root	_	SpaceAfter=No
 2	學	學	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	VERB	VV	_	4	mark	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -26767,15 +26623,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 影視與戲劇[编辑]
-1	影	影	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
-2	視	視	PROPN	NNP	_	7	nsubj	_	SpaceAfter=No
-3	與	與	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	戲	戲	VERB	VV	_	2	conj	_	SpaceAfter=No
+# text = 影視與戲劇
+1	影	影	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	視	視	PART	SFN	_	0	root	_	SpaceAfter=No
+3	與	與	CCONJ	CC	_	5	cc	_	SpaceAfter=No
+4	戲	戲	PROPN	NNP	_	5	compound	_	SpaceAfter=No
 5	劇	劇	PART	SFN	_	2	conj	_	SpaceAfter=No
-6	[	[	PUNCT	(	_	7	punct	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	SFN	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -27188,12 +27041,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 運動[编辑]
-1	運	運	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-2	動	動	PROPN	NNP	_	1	conj	_	SpaceAfter=No
-3	[	[	VERB	VV	_	4	mark	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 運動
+1	運	運	VERB	VV	_	2	advcl	_	SpaceAfter=No
+2	動	動	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28012,12 +27862,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 旅游景点[编辑]
+# text = 旅游景点
 1	旅游	旅游	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	景点	景点	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	景点	景点	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28025,13 +27872,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 人文景观[编辑]
-1	人	人	NOUN	NN	_	2	compound	_	SpaceAfter=No
-2	文	文	PART	SFN	_	3	nmod	_	SpaceAfter=No
-3	景观	景观	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	PUNCT	CC	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+# text = 人文景观
+1	人	人	NOUN	NN	_	2	nmod	_	SpaceAfter=No
+2	文景观	文景观	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28373,12 +28216,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 自然风光[编辑]
+# text = 自然风光
 1	自然	自然	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	风光	风光	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	风光	风光	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28557,12 +28397,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 其他方面[编辑]
+# text = 其他方面
 1	其他	其他	DET	DT	_	2	det	_	SpaceAfter=No
 2	方面	方面	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PFA	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	)	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28570,13 +28407,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 美國夢[编辑]
-1	美	美	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	國	國	PROPN	NNP	_	3	compound	_	SpaceAfter=No
+# text = 美國夢
+1	美	美	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	國	國	PART	SFN	_	3	compound	_	SpaceAfter=No
 3	夢	夢	PART	SFN	_	0	root	_	SpaceAfter=No
-4	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	3	appos	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28853,16 +28687,7 @@
 32	成	成	VERB	VV	_	25	ccomp	_	SpaceAfter=No
 33	为	为	VERB	VC	_	32	mark	_	SpaceAfter=No
 34	可能	可能	NOUN	NN	_	32	obj	_	SpaceAfter=No
-35	。	。	PUNCT	.	_	25	punct	_	SpaceAfter=No
-
-# sent_id = 5
-# text = [來源請求]
-1	[	[	PUNCT	(	_	5	advcl	_	SpaceAfter=No
-2	來	來	VERB	VV	_	3	compound	_	SpaceAfter=No
-3	源	源	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	請	請	ADV	RB	_	5	mark	_	SpaceAfter=No
-5	求	求	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	)	_	5	punct	_	SpacesAfter=\n
+35	。	。	PUNCT	.	_	25	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -28870,12 +28695,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 人权状况[编辑]
+# text = 人权状况
 1	人权	人权	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	状况	状况	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	AUX	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	状况	状况	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -29435,12 +29257,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 參看[编辑]
-1	參	參	ADV	RB	_	2	nsubj	_	SpaceAfter=No
+# text = 參看
+1	參	參	PROPN	NNP	_	2	nsubj	_	SpaceAfter=No
 2	看	看	VERB	VV	_	0	root	_	SpaceAfter=No
-3	[	[	PART	PFA	_	5	case:pref	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -29448,11 +29267,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 注释[编辑]
+# text = 注释
 1	注释	注释	VERB	VV	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PFA	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	NOUN	NN	_	1	obj	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -29460,12 +29276,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 參见[编辑]
-1	參	參	ADV	RB	_	2	nsubj	_	SpaceAfter=No
+# text = 參见
+1	參	參	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
 2	见	见	VERB	VV	_	0	root	_	SpaceAfter=No
-3	[	[	DET	DT	_	4	nmod	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	5	compound	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -29473,13 +29286,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 参考資料[编辑]
+# text = 参考資料
 1	参考	参考	VERB	VV	_	3	compound	_	SpaceAfter=No
-2	資	資	VERB	VV	_	3	compound	_	SpaceAfter=No
+2	資	資	PART	SFN	_	3	compound	_	SpaceAfter=No
 3	料	料	PART	SFN	_	0	root	_	SpaceAfter=No
-4	[	[	PUNCT	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	NOUN	NN	_	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -29487,35 +29297,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 外部連結[编辑]
+# text = 外部連結
 1	外部	外部	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
-2	連	連	VERB	VV	_	5	nsubj	_	SpaceAfter=No
-3	結	結	PROPN	NNP	_	2	obj	_	SpaceAfter=No
-4	[	[	PUNCT	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = (波多黎各和美属维尔京群岛)
-1	(波多黎	(波多黎	PROPN	NNP	_	0	root	_	SpaceAfter=No
-2	各和	各和	NOUN	NN	_	6	cc	_	SpaceAfter=No
-3	美	美	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-4	属	属	VERB	VV	_	6	amod	_	SpaceAfter=No
-5	维尔京	维尔京	PROPN	NNP	_	6	nmod	_	SpaceAfter=No
-6	群岛)	群岛)	NOUN	NN	_	1	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 导航菜单
-1	导航	导航	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	菜单	菜单	NOUN	NN	_	0	nmod	_	SpacesAfter=\n
+2	連	連	VERB	VV	_	0	root	_	SpaceAfter=No
+3	結	結	VERB	VV	_	2	mark	_	SpaceAfter=No
 

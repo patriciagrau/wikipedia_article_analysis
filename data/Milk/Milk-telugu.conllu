@@ -1,5 +1,3 @@
-# https://te.wikipedia.org/wiki/%E0%B0%AA%E0%B0%BE%E0%B0%B2%E0%B1%81
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = పాలు - వికీపీడియా
 1	పాలు	_	NOUN	NOUN	_	3	nsubj	_	_
 2	-	_	PUNCT	PUNCT	_	3	punct	_	_
-3	వికీపీడియా	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = telugu-mtg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = పాలు
-1	పాలు	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+3	వికీపీడియా	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -102,9 +91,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = భాషా విశేషాలు[మార్చు]
-1	భాషా	_	NOUN	NOUN	_	2	obj	_	_
-2	విశేషాలు[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+# text = భాషా విశేషాలు
+1	భాషా	_	NOUN	NOUN	_	2	nmod	_	_
+2	విశేషాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -139,24 +128,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = సంస్కృతంలో క్షీరము [ kṣīramu ] అనగా n.
-1	సంస్కృతంలో	_	NOUN	NOUN	_	7	obl	_	_
-2	క్షీరము	_	NOUN	NOUN	_	4	obj	_	_
-3	[	_	PUNCT	PUNCT	_	4	punct	_	_
-4	kṣīramu	_	NOUN	NOUN	_	7	ccomp	_	_
-5	]	_	PUNCT	PUNCT	_	4	punct	_	_
-6	అనగా	_	VERB	VERB	_	7	compound:svc	_	_
-7	n	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-8	.	_	PUNCT	PUNCT	_	7	punct	_	_
+# text = సంస్కృతంలో క్షీరము అనగా n. Milk, పాలు.
+1	సంస్కృతంలో	_	NOUN	NOUN	_	3	obl	_	_
+2	క్షీరము	_	NOUN	NOUN	_	3	obj	_	SpacesAfter=\s\s
+3	అనగా	_	VERB	VERB	_	4	compound:svc	_	_
+4	n	_	VERB	VERB	_	8	parataxis	_	SpaceAfter=No
+5	.	_	PUNCT	PUNCT	_	8	punct	_	_
+6	Milk	_	NOUN	NOUN	_	8	parataxis	_	SpaceAfter=No
+7	,	_	PUNCT	PUNCT	_	8	punct	_	_
+8	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
+9	.	_	PUNCT	PUNCT	_	8	punct	_	_
 
 # sent_id = 2
-# text = Milk, పాలు.
-1	Milk	_	NOUN	NOUN	_	3	discourse	_	SpaceAfter=No
-2	,	_	PUNCT	PUNCT	_	1	punct	_	_
-3	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-4	.	_	PUNCT	PUNCT	_	3	punct	_	_
-
-# sent_id = 3
 # text = The milky sap of plants.
 1	The	_	DET	DET	_	2	det	_	_
 2	milky	_	NOUN	NOUN	_	5	nmod:poss	_	_
@@ -164,7 +147,7 @@
 4	of	_	NOUN	NOUN	_	5	nmod:poss	_	_
 5	plants.	_	PUNCT	PUNCT	_	0	root	_	_
 
-# sent_id = 4
+# sent_id = 3
 # text = జిల్లేడు మొదలైన వాటి పాలు.
 1	జిల్లేడు	_	NOUN	NOUN	_	4	nsubj	_	_
 2	మొదలైన	_	DET	DET	_	4	det	_	_
@@ -172,13 +155,13 @@
 4	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 5	.	_	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 4
 # text = Water ఉదకము.
 1	Water	_	NOUN	NOUN	_	2	nsubj	_	_
 2	ఉదకము	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 3	.	_	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 5
 # text = క్షీరాన్నము rice and milk boiled together.
 1	క్షీరాన్నము	_	NOUN	NOUN	_	6	obj	_	_
 2	rice	_	NOUN	NOUN	_	5	compound	_	_
@@ -188,12 +171,12 @@
 6	together	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 7	.	_	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 7
+# sent_id = 6
 # text = పరమాన్నము.
 1	పరమాన్నము	_	PROPN	PROPN	_	0	root	_	SpaceAfter=No
 2	.	_	PUNCT	PUNCT	_	1	punct	_	_
 
-# sent_id = 8
+# sent_id = 7
 # text = క్షీరోదక న్యాయము intimate union as milk and water mixed with each other.
 1	క్షీరోదక	_	NOUN	NOUN	_	4	obl	_	_
 2	న్యాయము	_	NOUN	NOUN	_	4	nsubj	_	_
@@ -209,7 +192,7 @@
 12	other	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 13	.	_	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 9
+# sent_id = 8
 # text = నీళ్లును పాలును కలిసినట్లు ఒక్కటిగా కలిసియుండు ధర్మము.
 1	నీళ్లును	_	NOUN	NOUN	_	3	obj	_	_
 2	పాలును	_	NOUN	NOUN	_	3	obj	_	_
@@ -219,7 +202,7 @@
 6	ధర్మము	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 7	.	_	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 10
+# sent_id = 9
 # text = వారు క్షీరోదక న్యాయముగా నున్నారు they are intimately associated or related.
 1	వారు	_	PRON	PRON	_	4	nsubj	_	_
 2	క్షీరోదక	_	NOUN	NOUN	_	4	obl	_	_
@@ -233,7 +216,7 @@
 10	related	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 11	.	_	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 11
+# sent_id = 10
 # text = క్షీరాబ్ధి or క్షీర సాగరము kshīr-ābdhi.
 1	క్షీరాబ్ధి	_	PROPN	PROPN	_	5	obl	_	_
 2	or	_	ADP	ADP	_	1	case	_	_
@@ -242,12 +225,12 @@
 5	kshīr-ābdhi	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 6	.	_	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 12
+# sent_id = 11
 # text = n.
 1	n	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 2	.	_	PUNCT	PUNCT	_	1	punct	_	_
 
-# sent_id = 13
+# sent_id = 12
 # text = The sea of milk పాల సముద్రము.
 1	The	_	DET	DET	_	2	det	_	_
 2	sea	_	NOUN	NOUN	_	6	compound	_	_
@@ -257,7 +240,7 @@
 6	సముద్రము	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 7	.	_	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 14
+# sent_id = 13
 # text = క్షీరాబ్ధి తనయ the goddess who sprung from this sea, i.e., Lakshmi.
 1	క్షీరాబ్ధి	_	NOUN	NOUN	_	2	nsubj	_	_
 2	తనయ	_	NOUN	NOUN	_	9	acl	_	_
@@ -276,7 +259,7 @@
 15	Lakshmi	_	PROPN	PROPN	_	0	root	_	SpaceAfter=No
 16	.	_	PUNCT	PUNCT	_	15	punct	_	_
 
-# sent_id = 15
+# sent_id = 14
 # text = పాల సముద్రం నుండి జన్మించిన లక్ష్మి.
 1	పాల	_	NOUN	NOUN	_	2	compound	_	_
 2	సముద్రం	_	NOUN	NOUN	_	5	obl	_	_
@@ -291,9 +274,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పోషక విలువలు[మార్చు]
-1	పోషక	_	NOUN	NOUN	_	2	obj	_	_
-2	విలువలు[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+# text = పోషక విలువలు
+1	పోషక	_	NOUN	NOUN	_	2	nmod	_	_
+2	విలువలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -334,10 +317,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = రకాలు :[మార్చు]
+# text = రకాలు :
 1	రకాలు	_	NOUN	NOUN	_	0	root	_	SpacesAfter= 
 2	:	_	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
-3	[మార్చు]	_	NOUN	NOUN	_	1	parataxis	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -350,18 +332,41 @@
 2	పాలు	_	NOUN	NOUN	_	0	root	_	_
 3	.	_	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = తల్లి పాలు.
+1	తల్లి	_	NOUN	NOUN	_	2	nsubj	_	_
+2	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
+3	.	_	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = ఆవు పాలు మేక పాలు, గాడిద పాలు, గొఱ్ఱెపాలు.
+1	ఆవు	_	NOUN	NOUN	_	2	nmod:poss	_	_
+2	పాలు	_	NOUN	NOUN	_	4	obj	_	SpacesAfter=\n
+3	మేక	_	NOUN	NOUN	_	4	nmod:poss	_	_
+4	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
+5	,	_	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\s\n
+6	గాడిద	_	VERB	VERB	_	7	conj	_	_
+7	పాలు	_	NOUN	NOUN	_	9	parataxis	_	SpaceAfter=No
+8	,	_	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+9	గొఱ్ఱెపాలు	_	NOUN	NOUN	_	4	parataxis	_	SpaceAfter=No
+10	.	_	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = ఒంటె పాలు
+1	ఒంటె	_	NOUN	NOUN	_	2	nmod:poss	_	_
+2	పాలు	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = పిల్లలకు త్రాగించే పాలు :[మార్చు]
+# text = పిల్లలకు త్రాగించే పాలు :
 1	పిల్లలకు	_	NOUN	NOUN	_	2	obj	_	_
 2	త్రాగించే	_	VERB	VERB	_	3	acl:relcl	_	_
 3	పాలు	_	NOUN	NOUN	_	0	root	_	SpacesAfter= 
 4	:	_	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-5	[మార్చు]	_	NOUN	NOUN	_	3	parataxis	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -901,10 +906,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = బరువు తగ్గడానికి పాలు[మార్చు]
+# text = బరువు తగ్గడానికి పాలు
 1	బరువు	_	NOUN	NOUN	_	2	nsubj	_	_
 2	తగ్గడానికి	_	VERB	VERB	_	3	acl	_	_
-3	పాలు[మార్చు]	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+3	పాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1045,12 +1050,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ఎసిడిటీని తగ్గించే పాలు :[మార్చు]
+# text = ఎసిడిటీని తగ్గించే పాలు :
 1	ఎసిడిటీని	_	NOUN	NOUN	_	2	obj	_	_
 2	తగ్గించే	_	VERB	VERB	_	3	acl:relcl	_	_
 3	పాలు	_	NOUN	NOUN	_	0	root	_	SpacesAfter= 
 4	:	_	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-5	[మార్చు]	_	NOUN	NOUN	_	3	parataxis	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1169,9 +1173,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పాలు పడకపోవటం[మార్చు]
+# text = పాలు పడకపోవటం
 1	పాలు	_	NOUN	NOUN	_	2	nsubj	_	_
-2	పడకపోవటం[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+2	పడకపోవటం	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1383,9 +1387,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పాలలో ఔషధోపయోగాలను[మార్చు]
+# text = పాలలో ఔషధోపయోగాలను
 1	పాలలో	_	NOUN	NOUN	_	2	obl	_	_
-2	ఔషధోపయోగాలను[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+2	ఔషధోపయోగాలను	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1686,6 +1690,95 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = ఎముకల ఆరోగ్యానికి: పాలు విటమిన్ డి, ప్రోటీన్, కాల్షియంని కలిగివుంటాయి.
+1	ఎముకల	_	NOUN	NOUN	_	2	nsubj	_	SpacesBefore=\n
+2	ఆరోగ్యానికి	_	NOUN	NOUN	_	11	obl	_	SpaceAfter=No
+3	:	_	PUNCT	PUNCT	_	8	punct	_	_
+4	పాలు	_	NOUN	NOUN	_	2	nsubj	_	_
+5	విటమిన్	_	NOUN	NOUN	_	2	obj	_	_
+6	డి	_	NOUN	NOUN	_	11	obj	_	SpaceAfter=No
+7	,	_	PUNCT	PUNCT	_	11	punct	_	_
+8	ప్రోటీన్	_	NOUN	NOUN	_	11	obj	_	SpaceAfter=No
+9	,	_	PUNCT	PUNCT	_	11	punct	_	_
+10	కాల్షియంని	_	NOUN	NOUN	_	11	obj	_	_
+11	కలిగివుంటాయి	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+12	.	_	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = 2
+# text = ప్రతిరోజు పాలు తగడము వలన ఎముకలు బలముగ తయారు అవుతాయి.
+1	ప్రతిరోజు	_	NOUN	NOUN	_	3	nsubj	_	_
+2	పాలు	_	NOUN	NOUN	_	3	obj	_	_
+3	తగడము	_	VERB	VERB	_	8	advcl	_	_
+4	వలన	_	ADP	ADP	_	3	mark	_	_
+5	ఎముకలు	_	NOUN	NOUN	_	8	nsubj	_	_
+6	బలముగ	_	ADV	ADV	_	8	advmod	_	_
+7	తయారు	_	NOUN	NOUN	_	8	compound:lvc	_	_
+8	అవుతాయి	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+9	.	_	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = telugu-mtg-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = హృదయ వ్యాధి : ఇటీవల జరిగిన వెల్ష్ మెన్ అధ్యయనం ప్రకారం పాలు ఎక్కువ తాగే వాళ్ళలో కంటే తక్కువ తాగే వాళ్ళలో గుండె పోటు ఎక్కువగా వచ్చే అవకాశాలు ఉన్నాయి.
+1	హృదయ	_	PROPN	PROPN	_	5	nsubj	_	_
+2	వ్యాధి	_	NOUN	NOUN	_	21	obj	_	SpacesAfter= 
+3	:	_	PUNCT	PUNCT	_	5	punct	_	_
+4	ఇటీవల	_	ADV	ADV	_	5	advmod	_	_
+5	జరిగిన	_	VERB	VERB	_	22	acl	_	_
+6	వెల్ష్	_	NUM	PROPN	_	21	nsubj	_	_
+7	మెన్	_	NOUN	NOUN	_	13	nummod	_	_
+8	అధ్యయనం	_	NOUN	NOUN	_	21	obj	_	_
+9	ప్రకారం	_	NOUN	NOUN	_	13	case	_	_
+10	పాలు	_	NOUN	NOUN	_	21	nsubj	_	_
+11	ఎక్కువ	_	DET	DET	_	21	advmod	_	_
+12	తాగే	_	VERB	VERB	_	21	compound:svc	_	_
+13	వాళ్ళలో	_	NOUN	NOUN	_	23	obl	_	_
+14	కంటే	_	ADP	ADP	_	13	case	_	_
+15	తక్కువ	_	DET	DET	_	22	det	_	_
+16	తాగే	_	VERB	VERB	_	22	amod	_	_
+17	వాళ్ళలో	_	NOUN	NOUN	_	23	obl	_	_
+18	గుండె	_	NOUN	NOUN	_	22	amod	_	_
+19	పోటు	_	NOUN	NOUN	_	21	obj	_	_
+20	ఎక్కువగా	_	ADV	ADV	_	21	advmod	_	_
+21	వచ్చే	_	VERB	VERB	_	22	acl	_	_
+22	అవకాశాలు	_	NOUN	NOUN	_	23	nsubj	_	_
+23	ఉన్నాయి	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+24	.	_	PUNCT	PUNCT	_	23	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = చర్మవ్యాధులు : పాలపైని మీగడలో కొద్దిపాటి వినెగార్‌, చిటికెడు పసుపు కలిపి గాయాలు, పుళ్ళు, గజ్జి మొదలైన వాటిమీద పూస్తే అవి త్వరలోనే తగ్గిపోతాయి.
+1	చర్మవ్యాధులు	_	NOUN	NOUN	_	18	nsubj	_	SpacesAfter= 
+2	:	_	PUNCT	PUNCT	_	1	punct	_	_
+3	పాలపైని	_	NOUN	NOUN	_	4	compound	_	_
+4	మీగడలో	_	NOUN	NOUN	_	18	obl	_	_
+5	కొద్దిపాటి	_	VERB	VERB	_	6	amod	_	_
+6	వినెగార్‌	_	NOUN	NOUN	_	18	obj	_	SpaceAfter=No
+7	,	_	PUNCT	PUNCT	_	18	punct	_	_
+8	చిటికెడు	_	NOUN	NOUN	_	4	nmod	_	_
+9	పసుపు	_	NOUN	NOUN	_	18	nsubj	_	_
+10	కలిపి	_	NOUN	NOUN	_	18	compound	_	_
+11	గాయాలు	_	NOUN	NOUN	_	18	obj	_	SpaceAfter=No
+12	,	_	PUNCT	PUNCT	_	18	punct	_	_
+13	పుళ్ళు	_	NOUN	NOUN	_	18	obj	_	SpaceAfter=No
+14	,	_	PUNCT	PUNCT	_	15	punct	_	_
+15	గజ్జి	_	NOUN	NOUN	_	18	obj	_	_
+16	మొదలైన	_	ADV	ADV	_	6	advmod	_	_
+17	వాటిమీద	_	NOUN	NOUN	_	18	obj	_	_
+18	పూస్తే	_	VERB	VERB	_	21	advcl	_	_
+19	అవి	_	PRON	PRON	_	21	nsubj	_	_
+20	త్వరలోనే	_	NOUN	NOUN	_	21	advmod	_	_
+21	తగ్గిపోతాయి	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+22	.	_	PUNCT	PUNCT	_	21	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = telugu-mtg-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = సౌందర్య సాధనంగా : కాస్మెటిక్స్‌లాంటి సౌందర్య సాధనాలలో కూడా పాలు చక్కగా ఉపకరిస్తాయి.
 1	సౌందర్య	_	PROPN	PROPN	_	2	nsubj	_	_
 2	సాధనంగా	_	ADV	ADV	_	10	advmod	_	SpacesAfter= 
@@ -1783,9 +1876,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పాల ఉత్పత్తులు[మార్చు]
-1	పాల	_	NOUN	NOUN	_	2	obj	_	_
-2	ఉత్పత్తులు[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+# text = పాల ఉత్పత్తులు
+1	పాల	_	NOUN	NOUN	_	2	nmod:poss	_	_
+2	ఉత్పత్తులు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1793,9 +1886,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పాలు ఉత్పాదకత[మార్చు]
+# text = పాలు ఉత్పాదకత
 1	పాలు	_	NOUN	NOUN	_	2	nsubj	_	_
-2	ఉత్పాదకత[మార్చు]	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+2	ఉత్పాదకత	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1876,8 +1969,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = పాలవెల్లువ[మార్చు]
-1	పాలవెల్లువ[మార్చు]	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+# text = పాలవెల్లువ
+1	పాలవెల్లువ	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1979,14 +2072,39 @@
 16	లేదు	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 17	.	_	PUNCT	PUNCT	_	16	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = telugu-mtg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = పురాణాలలో[మార్చు]
-1	పురాణాలలో[మార్చు]	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+# sent_id = 9
+# text = అయితే వ్యాపార ధోరణితో ఈ వృత్తిని చేపట్టినవారు గిట్టుబాటు కాకపోవడంతో ఆ వృత్తిని వదిలేస్తున్నారు.
+1	అయితే	_	PRON	PRON	_	6	nsubj	_	_
+2	వ్యాపార	_	NOUN	NOUN	_	6	nsubj	_	_
+3	ధోరణితో	_	NOUN	NOUN	_	11	obl	_	_
+4	ఈ	_	DET	DET	_	10	det	_	_
+5	వృత్తిని	_	NOUN	NOUN	_	6	obj	_	_
+6	చేపట్టినవారు	_	VERB	VERB	_	8	ccomp	_	_
+7	గిట్టుబాటు	_	NOUN	NOUN	_	8	nsubj	_	_
+8	కాకపోవడంతో	_	VERB	VERB	_	11	ccomp	_	_
+9	ఆ	_	DET	DET	_	10	det	_	_
+10	వృత్తిని	_	NOUN	NOUN	_	11	obj	_	_
+11	వదిలేస్తున్నారు	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+12	.	_	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = 10
+# text = గ్రామీణ ప్రాంతాల్లోని పాల కేంద్రాల వద్ద ప్రస్తుతం పాలు పోసేవారి కంటే పాలు కొనేవారే ఎక్కువ సంఖ్యలో ఉంటున్నారు.
+1	గ్రా	_	PROPN	PROPN	_	3	compound	_	SpaceAfter=No
+2	మీణ	_	PRON	PRON	_	3	compound	_	_
+3	ప్రాంతాల్లోని	_	NOUN	NOUN	_	9	obl	_	_
+4	పాల	_	NOUN	NOUN	_	5	nmod:poss	_	_
+5	కేంద్రాల	_	NOUN	NOUN	_	15	obl	_	_
+6	వద్ద	_	ADP	ADP	_	5	case	_	_
+7	ప్రస్తుతం	_	NOUN	NOUN	_	9	advmod	_	_
+8	పాలు	_	NOUN	NOUN	_	9	nsubj	_	_
+9	పోసేవారి	_	VERB	VERB	_	15	ccomp	_	_
+10	కంటే	_	SCONJ	SCONJ	_	9	mark	_	_
+11	పాలు	_	NOUN	NOUN	_	15	nsubj	_	_
+12	కొనేవారే	_	VERB	VERB	_	15	advmod	_	_
+13	ఎక్కువ	_	DET	DET	_	14	det	_	_
+14	సంఖ్యలో	_	NOUN	NOUN	_	15	obl	_	_
+15	ఉంటున్నారు	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+16	.	_	PUNCT	PUNCT	_	15	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -1994,10 +2112,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ఇవి కూడా చూడండి[మార్చు]
+# text = పురాణాలలో
+1	పురాణాలలో	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = telugu-mtg-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = ఇవి కూడా చూడండి
 1	ఇవి	_	PRON	PRON	_	3	nsubj	_	_
 2	కూడా	_	ADV	ADV	_	3	advmod	_	_
-3	చూడండి[మార్చు]	_	VERB	VERB	_	0	root	_	SpacesAfter=\n
+3	చూడండి	_	VERB	VERB	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = telugu-mtg-ud-2.6-200830
@@ -2005,16 +2132,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = మూలాలు[మార్చు]
-1	మూలాలు[మార్చు]	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = telugu-mtg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = మార్గదర్శకపు మెనూ
-1	మార్గదర్శకపు	_	NOUN	NOUN	_	0	root	_	_
-2	మెనూ	_	NOUN	PUNCT	_	1	root	_	SpacesAfter=\n
+# text = మూలాలు
+1	మూలాలు	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 

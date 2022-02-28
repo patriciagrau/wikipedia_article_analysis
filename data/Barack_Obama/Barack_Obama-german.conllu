@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/Barack_Obama
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Barack	Barack	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	Obama	Obama	PROPN	NE	Person=3	1	flat:name	_	_
 3	–	–	PROPN	NE	Person=3	1	flat:name	_	_
-4	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18,44 +16,29 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Barack Obama
-1	Barack	Barack	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-2	Obama	Obama	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Barack Hussein Obama II [bəˈɹɑːk hʊˈseɪn oʊˈbɑːmə] (* 4. August 1961 in Honolulu, Hawaii) ist ein US-amerikanischer Politiker der Demokratischen Partei.
-1	Barack	Barack	PROPN	NE	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_
+# text = Barack Hussein Obama II (* 4. August 1961 in Honolulu, Hawaii) ist ein US-amerikanischer Politiker der Demokratischen Partei.
+1	Barack	Barack	PROPN	NE	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_
 2	Hussein	Hussein	PROPN	NE	Person=3	1	flat:name	_	_
 3	Obama	Obama	PROPN	NE	Person=3	1	flat:name	_	_
-4	II	II	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpacesAfter=\s 
-5	[	[	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
-6	bəˈɹɑːk	bəˈɹɑːk	X	FM	Foreign=Yes|Person=3	1	appos	_	_
-7	hʊˈseɪn	hʊˈseɪn	X	FM	Foreign=Yes|Person=3	6	flat	_	_
-8	oʊˈbɑːmə	oʊˈbɑːmə	X	FM	Foreign=Yes|Person=3	6	flat	_	SpaceAfter=No
-9	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	_
-10	(	(	PUNCT	$(	PunctType=Brck	13	punct	_	SpaceAfter=No
-11	*	*	ADP	ADV	_	13	case	_	_
-12	4.	4.	ADJ	ADJA	Person=3	13	amod	_	_
-13	August	August	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	appos	_	_
-14	1961	1961	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nmod	_	_
-15	in	in	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
-16	Honolulu	Honolulu	PROPN	NE	Person=3	13	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
-18	Hawaii	Hawaii	PROPN	NE	Person=3	16	appos	_	SpaceAfter=No
-19	)	)	PUNCT	$(	PunctType=Brck	13	punct	_	_
-20	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_
-21	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-22	US-amerikanischer	amerikanisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	23	amod	_	_
-23	Politiker	Politiker	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-24	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-25	Demokratischen	demokratisch	ADJ	ADJA	Degree=Pos|Number=Sing	26	amod	_	_
-26	Partei	Partei	NOUN	NN	Gender=Fem|Number=Sing|Person=3	23	nmod	_	SpaceAfter=No
-27	.	.	PUNCT	$.	PunctType=Peri	23	punct	_	_
+4	II	II	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpacesAfter=\s \s
+5	(	(	PUNCT	$(	PunctType=Brck	8	punct	_	SpaceAfter=No
+6	*	*	ADP	ADV	_	8	case	_	_
+7	4.	4.	ADJ	ADJA	Person=3	8	amod	_	_
+8	August	August	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
+9	1961	1961	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	nmod	_	_
+10	in	in	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	Honolulu	Honolulu	PROPN	NE	Person=3	8	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+13	Hawaii	Hawaii	PROPN	NE	Person=3	11	appos	_	SpaceAfter=No
+14	)	)	PUNCT	$(	PunctType=Brck	8	punct	_	_
+15	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
+16	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	US-amerikanischer	amerikanisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+18	Politiker	Politiker	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+19	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+20	Demokratischen	demokratisch	ADJ	ADJA	Degree=Pos|Number=Sing	21	amod	_	_
+21	Partei	Partei	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	18	punct	_	_
 
 # sent_id = 2
 # text = Er war von 2009 bis 2017 der 44. Präsident der Vereinigten Staaten.
@@ -272,7 +255,7 @@
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
 3	Kindheit	Kindheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	_
 4	und	und	CCONJ	KON	_	5	cc	_	_
-5	Jugend	Jugend	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+5	Jugend	Jugend	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -899,7 +882,7 @@
 # text = Studium und Beruf
 1	Studium	Studium	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Beruf	Beruf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Beruf	Beruf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1183,7 +1166,7 @@
 # text = Abgeordneter in Illinois
 1	Abgeordneter	Abgeordnet	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	in	in	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
-3	Illinois	Illinois	PROPN	NE	Case=Dat|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Illinois	Illinois	PROPN	NE	Case=Dat|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1437,7 +1420,7 @@
 # newpar
 # sent_id = 1
 # text = US-Senator
-1	US-Senator	Senator	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	US-Senator	Senator	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1446,7 +1429,7 @@
 # newpar
 # sent_id = 1
 # text = Wahlkampf
-1	Wahlkampf	Wahlkampf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Wahlkampf	Wahlkampf	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1931,7 +1914,7 @@
 # text = Amtsführung und Initiativen
 1	Amtsführung	Führung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Initiativen	Initiative	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Initiativen	Initiative	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2576,7 +2559,7 @@
 # newpar
 # sent_id = 1
 # text = Präsidentschaftskandidat
-1	Präsidentschaftskandidat	Kandidat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Präsidentschaftskandidat	Kandidat	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2669,7 +2652,7 @@
 # newpar
 # sent_id = 1
 # text = Finanzierung
-1	Finanzierung	Finanzierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Finanzierung	Finanzierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2986,7 +2969,7 @@
 # newpar
 # sent_id = 1
 # text = Vorwahlen
-1	Vorwahlen	Vorwahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Vorwahlen	Vorwahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3318,7 +3301,7 @@
 # newpar
 # sent_id = 1
 # text = Hauptwahlen
-1	Hauptwahlen	Wahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Hauptwahlen	Wahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3828,7 +3811,7 @@
 # text = Rolle des Internets
 1	Rolle	Rolle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-3	Internets	Internet	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Internets	Internet	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3993,7 +3976,7 @@
 1	Rolle	Rolle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 3	afroamerikanischen	afroamerikanischen	ADJ	ADJA	_	4	amod	_	_
-4	Identität	Identität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Identität	Identität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4679,6 +4662,211 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Am 18. März 2008 bezog Obama dazu und zum Problem des Rassismus in den USA Stellung.
+1	Am	Am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	SpacesBefore=\n
+2	18.	18.	ADJ	ADJA	Person=3	3	amod	_	SpacesAfter= 
+3	März	März	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obl	_	_
+4	2008	2008	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	_
+5	bezog	beziehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	Obama	Obama	PROPN	NE	Number=Sing|Person=3	5	nsubj	_	_
+7	dazu	dazu	ADV	PROAV	_	5	advmod	_	_
+8	und	und	CCONJ	KON	_	10	cc	_	_
+9	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	10	case	_	_
+10	Problem	Problem	NOUN	NN	Gender=Neut|Number=Sing|Person=3	7	conj	_	_
+11	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Rassismus	Ismus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+13	in	in	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+14	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	15	det	_	_
+15	USA	USA	PROPN	NE	Number=Plur|Person=3	12	nmod	_	_
+16	Stellung	Stellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 2
+# text = Er sprach von der „nie ausgeräumten Rassenfrage“, die ihren Ursprung in der Sklaverei, „der Erbsünde der Nation“ und die Generation der Bürgerrechtler geprägt habe, aber die tatsächlichen Fortschritte und gemeinsamen Probleme von Schwarzen und Weißen nicht verdecken dürfe.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	sprach	sprechen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	von	von	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+4	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+5	„	„	PUNCT	$(	PunctType=Brck	8	punct	_	SpaceAfter=No
+6	nie	nie	ADV	ADV	_	7	advmod	_	_
+7	ausgeräumten	ausräumen	ADJ	ADJA	Degree=Pos|Number=Sing	8	amod	_	_
+8	Rassenfrage“	Frage“	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obl	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	27	punct	_	_
+10	die	die	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	27	nsubj	_	_
+11	ihren	sein	PRON	PPOSAT	Case=Acc|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
+12	Ursprung	Ursprung	NOUN	NN	Gender=Masc|Number=Sing|Person=3	27	obj	_	_
+13	in	in	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+14	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Sklaverei	Sklaverei	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+17	„	„	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+18	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	Erbsünde	Erbsünde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	conj	_	_
+20	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	Nation“	Nation“	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	nmod	_	_
+22	und	und	CCONJ	KON	_	24	cc	_	_
+23	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Generation	Generation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	conj	_	_
+25	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	26	det	_	_
+26	Bürgerrechtler	Bürgerrechtler	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	nmod	_	_
+27	geprägt	prägen	VERB	VVPP	Aspect=Perf|VerbForm=Part	8	acl	_	_
+28	habe	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	SpaceAfter=No
+29	,	,	PUNCT	$,	PunctType=Comm	42	punct	_	_
+30	aber	aber	CCONJ	KON	_	42	cc	_	_
+31	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	33	det	_	_
+32	tatsächlichen	tatsächlich	ADJ	ADJA	Degree=Pos|Number=Plur	33	amod	_	_
+33	Fortschritte	Fortschritt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	42	obj	_	_
+34	und	und	CCONJ	KON	_	36	cc	_	_
+35	gemeinsamen	gemeinsam	ADJ	ADJA	Degree=Pos|Number=Plur	36	amod	_	_
+36	Probleme	Problem	NOUN	NN	Gender=Neut|Number=Plur|Person=3	33	conj	_	_
+37	von	von	ADP	APPR	AdpType=Prep|Case=Dat	38	case	_	_
+38	Schwarzen	Schwarz	NOUN	NN	Case=Dat|Degree=Pos|Number=Plur|Person=3	36	nmod	_	_
+39	und	und	CCONJ	KON	_	40	cc	_	_
+40	Weißen	Weiss	NOUN	NN	Case=Dat|Degree=Pos|Number=Plur|Person=3	38	conj	_	_
+41	nicht	nicht	PART	PTKNEG	Polarity=Neg	42	advmod	_	_
+42	verdecken	verdecken	VERB	VVINF	VerbForm=Inf	27	conj	_	_
+43	dürfe	dürfen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	42	aux	_	SpaceAfter=No
+44	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Die Rede löste eine Debatte aus.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Rede	Rede	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+3	löste	lösen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Debatte	Debatte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	obj	_	_
+6	aus	aus	ADP	PTKVZ	PartType=Vbp	3	compound:prt	_	SpaceAfter=No
+7	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 4
+# text = Als Wright in einem Fernsehinterview und vor der NAACP und dem National Press Club ähnliche Aussagen wie in seinen Predigten wiederholte, distanzierte sich Obama persönlich und politisch Ende April 2008 von ihm.
+1	Als	Als	SCONJ	KOUS	_	21	mark	_	_
+2	Wright	Wright	PROPN	NE	Number=Sing|Person=3	21	nsubj	_	_
+3	in	in	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+4	einem	einem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Fernsehinterview	Interview	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	obl	_	_
+6	und	und	CCONJ	KON	_	9	cc	_	_
+7	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+8	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	NAACP	NAACP	PROPN	NE	Person=3	5	conj	_	_
+10	und	und	CCONJ	KON	_	12	cc	_	_
+11	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	National	National	X	FM	Foreign=Yes|Person=3	9	conj	_	_
+13	Press	Press	X	FM	Foreign=Yes|Person=3	12	flat	_	_
+14	Club	Club	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	appos	_	_
+15	ähnliche	ähnlich	ADJ	ADJA	Degree=Pos|Number=Plur	16	amod	_	_
+16	Aussagen	Aussage	NOUN	NN	Gender=Fem|Number=Plur|Person=3	21	obj	_	_
+17	wie	wie	CCONJ	KOKOM	ConjType=Comp	20	case	_	_
+18	in	in	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+19	seinen	sein	PRON	PPOSAT	Case=Dat|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
+20	Predigten	Predigt	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	16	obl	_	_
+21	wiederholte	wiederholen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+23	distanzierte	distanzieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+24	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	23	expl:pv	_	_
+25	Obama	Obama	PROPN	NE	Number=Sing|Person=3	23	nsubj	_	_
+26	persönlich	persönlich	ADJ	ADJD	Degree=Pos|Variant=Short	23	advcl	_	_
+27	und	und	CCONJ	KON	_	28	cc	_	_
+28	politisch	politisch	ADJ	ADJD	Degree=Pos|Variant=Short	26	conj	_	_
+29	Ende	Ende	NOUN	NN	Gender=Neut|Number=Sing|Person=3	23	obl	_	_
+30	April	April	NOUN	NN	Gender=Masc|Number=Sing|Person=3	29	appos	_	_
+31	2008	2008	NUM	CARD	Number=Plur|NumType=Card|Person=3	30	nmod	_	_
+32	von	von	ADP	APPR	AdpType=Prep|Case=Dat	33	case	_	_
+33	ihm	ihm	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obl	_	SpaceAfter=No
+34	.	.	PUNCT	$.	PunctType=Peri	23	punct	_	_
+
+# sent_id = 5
+# text = Nachdem ein Gastprediger seiner Heimatgemeinde Obamas Rivalin Hillary Clinton einen für Weiße typischen Besitzanspruch auf das Präsidentenamt nachgesagt hatte, trat das Ehepaar Obama am 31. Mai 2008 aus der Trinity United Church of Christ in Chicago aus.
+1	Nachdem	Nachdem	SCONJ	KOUS	_	18	mark	_	_
+2	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Gastprediger	Prediger	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_
+4	seiner	sein	PRON	PPOSAT	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	_	_
+5	Heimatgemeinde	Gemeinde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+6	Obamas	Obamas	PROPN	NE	Case=Gen|Number=Sing|Person=3	7	nmod	_	_
+7	Rivalin	Rivalin	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	iobj	_	_
+8	Hillary	Hillary	PROPN	NE	Gender=Fem|Number=Sing|Person=3	7	flat:name	_	_
+9	Clinton	Clinton	PROPN	NE	Gender=Masc|Number=Sing|Person=3	7	flat:name	_	_
+10	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+11	für	für	ADP	APPR	AdpType=Prep|Case=Acc	12	case	_	_
+12	Weiße	weiß	ADJ	ADJA	Degree=Pos|Number=Plur|Person=3	13	obl	_	_
+13	typischen	typisch	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	14	amod	_	_
+14	Besitzanspruch	Anspruch	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	obj	_	_
+15	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	17	case	_	_
+16	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
+17	Präsidentenamt	Präsidentenamt	NOUN	NN	Gender=Neut|Number=Sing|Person=3	14	nmod	_	_
+18	nachgesagt	nachsagen	VERB	VVPP	Aspect=Perf|VerbForm=Part	21	ccomp	_	_
+19	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+21	trat	treten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+22	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
+23	Ehepaar	Ehepaar	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	nsubj	_	_
+24	Obama	Obama	PROPN	NE	Number=Sing|Person=3	23	flat:name	_	_
+25	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	27	case	_	_
+26	31.	31.	ADJ	ADJA	Person=3	27	amod	_	_
+27	Mai	Mai	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	obl	_	_
+28	2008	2008	NUM	CARD	Number=Plur|NumType=Card|Person=3	27	nmod	_	_
+29	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	31	case	_	_
+30	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	Trinity	Trinity	X	FM	Foreign=Yes|Person=3	21	obl	_	_
+32	United	United	X	FM	Foreign=Yes|Person=3	31	flat	_	_
+33	Church	Church	X	FM	Foreign=Yes|Person=3	31	flat	_	_
+34	of	of	X	FM	Foreign=Yes|Person=3	31	flat	_	_
+35	Christ	Christ	PROPN	NE	Number=Sing|Person=3	31	flat:name	_	_
+36	in	in	ADP	APPR	AdpType=Prep|Case=Dat	37	case	_	_
+37	Chicago	Chicago	PROPN	NE	Number=Sing|Person=3	31	nmod	_	_
+38	aus	aus	ADP	PTKVZ	PartType=Vbp	21	compound:prt	_	SpaceAfter=No
+39	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Schon Obamas Vorwahlsiege wurden als „Schlag gegen die Opferidentität“ von Afroamerikanern und Indiz für die fortgeschrittene Überwindung des Rassismus in den USA gedeutet.
+1	Schon	Schon	ADV	ADV	_	3	advmod	_	_
+2	Obamas	Obamas	PROPN	NE	Case=Gen|Number=Sing|Person=3	3	nmod	_	_
+3	Vorwahlsiege	Sieg	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	nsubj:pass	_	_
+4	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	24	aux:pass	_	_
+5	als	als	CCONJ	KOKOM	ConjType=Comp	7	case	_	_
+6	„	„	PUNCT	$(	PunctType=Brck	7	punct	_	SpaceAfter=No
+7	Schlag	Schlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	24	obl	_	_
+8	gegen	gegen	ADP	APPR	AdpType=Prep|Case=Acc	10	case	_	_
+9	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Opferidentität“	Identität“	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
+11	von	von	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	Afroamerikanern	Amerikaner	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	10	nmod	_	_
+13	und	und	CCONJ	KON	_	14	cc	_	_
+14	Indiz	Indiz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	7	conj	_	_
+15	für	für	ADP	APPR	AdpType=Prep|Case=Acc	18	case	_	_
+16	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+17	fortgeschrittene	fortschreiten	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
+18	Überwindung	Überwindung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nmod	_	_
+19	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	Rassismus	Ismus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	nmod	_	_
+21	in	in	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+22	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	23	det	_	_
+23	USA	USA	PROPN	NE	Number=Plur|Person=3	20	nmod	_	_
+24	gedeutet	deuten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	24	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Rolle der Religion
+1	Rolle	Rolle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
+2	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	Religion	Religion	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Obama wuchs nach eigener Aussage nicht in einem „religiösen Haushalt“ auf, wurde aber wegen Erfahrungen mit afroamerikanischem Gemeindeleben in Chicago Christ.
 1	Obama	Obama	PROPN	NE	Person=3	2	nsubj	_	_
 2	wuchs	wachsen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -4979,7 +5167,7 @@
 # newpar
 # sent_id = 1
 # text = Präsidentschaft
-1	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4995,7 +5183,7 @@
 
 # sent_id = 2
 # text = Amtseinführung
-1	Amtseinführung	Einführung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Amtseinführung	Einführung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5147,7 +5335,7 @@
 # sent_id = 1
 # text = Erste Maßnahmen
 1	Erste	NULL	ADJ	ADJA	Degree=Sup|Number=Plur	2	amod	_	_
-2	Maßnahmen	Massnahme	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Maßnahmen	Massnahme	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5438,7 +5626,7 @@
 # newpar
 # sent_id = 1
 # text = Außenpolitik
-1	Außenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Außenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5447,7 +5635,7 @@
 # newpar
 # sent_id = 1
 # text = Diplomatie
-1	Diplomatie	Diplomatie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Diplomatie	Diplomatie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5762,7 +5950,7 @@
 # newpar
 # sent_id = 1
 # text = Abrüstung
-1	Abrüstung	Abrüstung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Abrüstung	Abrüstung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6638,7 +6826,7 @@
 # text = Entwicklungs- und Katastrophenhilfe
 1	Entwicklungs-	Entwicklungs-	NOUN	TRUNC	Hyph=Yes	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Katastrophenhilfe	Hilfe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Katastrophenhilfe	Hilfe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7053,6 +7241,36 @@
 26	Mahlzeiten	Mahlzeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	23	nmod	_	SpaceAfter=No
 27	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Die Gesamthilfe der USA wuchs bis zum 4. September auf über 230 Millionen US-Dollar; etwa 2,5 Millionen Pfund Hilfsgüter wurden verteilt und 10.051 Menschen evakuiert.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Gesamthilfe	Hilfe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+3	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	4	det	_	_
+4	USA	USA	PROPN	NE	Number=Plur|Person=3	2	nmod	_	_
+5	wuchs	wachsen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	bis	bis	ADP	APPR	AdpType=Prep	9	case	_	_
+7	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	9	case	_	_
+8	4.	4.	ADJ	ADJA	Person=3	9	amod	_	_
+9	September	September	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obl	_	_
+10	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	14	case	_	_
+11	über	über	ADV	ADV	_	12	advmod	_	_
+12	230	230	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nummod	_	_
+13	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	14	nummod	_	_
+14	US-Dollar	Dollar	NOUN	NN	Gender=Masc|Number=Plur|Person=3	5	obl	_	SpaceAfter=No
+15	;	;	PUNCT	$.	PunctType=Peri	5	punct	_	_
+16	etwa	etwa	ADV	ADV	_	17	advmod	_	_
+17	2,5	2,5	NUM	CARD	Number=Plur|NumType=Card|Person=3	18	nummod	_	_
+18	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	19	nummod	_	_
+19	Pfund	Pfund	NOUN	NN	Gender=Neut|Number=Plur|Person=3	22	nsubj:pass	_	_
+20	Hilfsgüter	Hilfsgut	NOUN	NN	Gender=Neut|Number=Plur|Person=3	19	appos	_	_
+21	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	_	_
+22	verteilt	verteilen	VERB	VVPP	Aspect=Perf|VerbForm=Part	5	parataxis	_	_
+23	und	und	CCONJ	KON	_	26	cc	_	_
+24	10.051	10.051	NUM	CARD	Number=Plur|NumType=Card|Person=3	25	nummod	_	_
+25	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	26	nsubj	_	_
+26	evakuiert	evakuieren	VERB	VVPP	Aspect=Perf|VerbForm=Part	22	conj	_	SpaceAfter=No
+27	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -7060,7 +7278,7 @@
 # newpar
 # sent_id = 1
 # text = Nahostkonflikt
-1	Nahostkonflikt	Konflikt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Nahostkonflikt	Konflikt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7189,7 +7407,7 @@
 # newpar
 # sent_id = 1
 # text = Iran
-1	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7566,7 +7784,7 @@
 # text = Saudi-Arabien und Jemen
 1	Saudi-Arabien	Saudi-Arabien	PROPN	NE	Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Jemen	Jemen	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Jemen	Jemen	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7632,7 +7850,7 @@
 # newpar
 # sent_id = 1
 # text = Irak
-1	Irak	Irak	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Irak	Irak	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7965,7 +8183,7 @@
 # text = Afghanistan und Pakistan
 1	Afghanistan	Afghanistan	PROPN	NE	Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Pakistan	Pakistan	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Pakistan	Pakistan	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8463,6 +8681,95 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Am 1. Mai 2011 wurde der Al-Qaida-Führer Osama bin Laden in Abbottabad, Pakistan, durch ein Spezialkommando der Navy SEALs erschossen.
+1	Am	Am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	SpacesBefore=\s
+2	1.	1.	ADJ	ADJA	Person=3	3	amod	_	_
+3	Mai	Mai	NOUN	NN	Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+4	2011	2011	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	_
+5	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	_	_
+6	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Al-Qaida-Führer	Führer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	22	nsubj:pass	_	_
+8	Osama	Osama	PROPN	NE	Person=3	7	flat:name	_	_
+9	bin	bin	PROPN	NE	Person=3	7	flat:name	_	_
+10	Laden	Laden	PROPN	NE	Person=3	7	flat:name	_	_
+11	in	in	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	Abbottabad	Abbottabad	PROPN	NE	Person=3	22	obl	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+14	Pakistan	Pakistan	PROPN	NE	Number=Sing|Person=3	12	appos	_	SpaceAfter=No
+15	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+16	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	18	case	_	_
+17	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	18	det	_	_
+18	Spezialkommando	Kommando	NOUN	NN	Gender=Neut|Number=Sing|Person=3	22	obl	_	_
+19	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	20	det	_	_
+20	Navy	Navy	X	FM	Foreign=Yes|Person=3	18	nmod	_	_
+21	SEALs	SEALs	X	FM	Foreign=Yes|Person=3	20	flat	_	_
+22	erschossen	erschießen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	22	punct	_	_
+
+# sent_id = 2
+# text = Danach gab Obama das Ergebnis der Operation Neptune Spear in einer Rede an die Nation bekannt.
+1	Danach	Danach	ADV	PROAV	_	2	advmod	_	_
+2	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	Obama	Obama	PROPN	NE	Number=Sing|Person=3	2	nsubj	_	_
+4	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Ergebnis	Ergebnis	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obj	_	_
+6	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Operation	Operation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nmod	_	_
+8	Neptune	Neptune	X	FM	Foreign=Yes|Person=3	7	appos	_	_
+9	Spear	Spear	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+10	in	in	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+11	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Rede	Rede	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obl	_	_
+13	an	an	ADP	APPR	AdpType=Prep|Case=Acc	15	case	_	_
+14	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Nation	Nation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obl	_	_
+16	bekannt	bekannt	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Daraufhin stiegen die Zustimmungsraten für seine Politik in repräsentativen Umfragen um neun bis elf Prozentpunkte.
+1	Daraufhin	Daraufhin	ADV	PROAV	_	2	advmod	_	_
+2	stiegen	steigen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	4	det	_	_
+4	Zustimmungsraten	Rate	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nsubj	_	_
+5	für	für	ADP	APPR	AdpType=Prep|Case=Acc	7	case	_	_
+6	seine	sein	PRON	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	Politik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+8	in	in	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+9	repräsentativen	repräsentativ	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	10	amod	_	_
+10	Umfragen	Umfrage	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	obl	_	_
+11	um	um	ADP	APPR	AdpType=Prep|Case=Acc	12	case	_	_
+12	neun	neun	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	obl	_	_
+13	bis	bis	ADP	APPR	AdpType=Prep	15	case	_	_
+14	elf	elf	NUM	CARD	Number=Plur|NumType=Card|Person=3	15	nummod	_	_
+15	Prozentpunkte	Prozentpunkt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 4
+# text = Obama erklärte am 4. Mai, wegen Sicherheitsrisiken werde er keine Fotografien des Getöteten freigeben.
+1	Obama	Obama	PROPN	NE	Number=Sing|Person=3	2	nsubj	_	_
+2	erklärte	erklären	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
+4	4.	4.	ADJ	ADJA	Person=3	5	amod	_	_
+5	Mai	Mai	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+7	wegen	wegen	ADP	APPR	AdpType=Prep	8	case	_	_
+8	Sicherheitsrisiken	Risiko	NOUN	NN	Gender=Neut|Number=Plur|Person=3	15	obl	_	_
+9	werde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+11	keine	kein	DET	PIAT	Case=Acc|Number=Plur|Person=3|PronType=Ind,Neg,Tot	12	det	_	_
+12	Fotografien	Fotografie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	obj	_	_
+13	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Getöteten	Getötet	NOUN	NN	Degree=Pos|Number=Sing|Person=3	12	nmod	_	_
+15	freigeben	freigeben	VERB	VVINF	VerbForm=Inf	2	ccomp	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Nach dem offiziellen Ende des Kampfeinsatzes in Afghanistan Ende 2014 war geplant, dass die verbleibenden 9.800 US-Soldaten in der Resolute-Support-Mission ab 2015 nur noch in sichernder und ausbildender Tätigkeit eingesetzt werden.
 1	Nach	Nach	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
 2	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
@@ -8560,7 +8867,7 @@
 # sent_id = 1
 # text = Arabischer Frühling
 1	Arabischer	arabisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	Frühling	Frühling	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Frühling	Frühling	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9375,7 +9682,7 @@
 # newpar
 # sent_id = 1
 # text = Syrien
-1	Syrien	Syrien	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Syrien	Syrien	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9476,6 +9783,54 @@
 15	Assads	Assads	PROPN	NE	Case=Gen|Person=3	14	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Nachdem die UN es nicht schaffte einen Waffenstillstand herbeizuführen und die Situation im Land sich verschlechterte, sagte Obama im August 2012, dass bei einem Einsatz von Chemiewaffen eine „rote Linie“ überschritten sei und er dann eine militärische Intervention in Erwägung ziehe.
+1	Nachdem	Nachdem	SCONJ	KOUS	_	6	mark	_	_
+2	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	UN	unknown	NOUN	NN	Person=3	6	nsubj	_	_
+4	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	expl	_	_
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	schaffte	schaffen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	_	_
+7	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Waffenstillstand	Stillstand	NOUN	NN	Gender=Masc|Number=Sing|Person=3	9	obj	_	_
+9	herbeizuführen	herbeiführen	VERB	VVIZU	VerbForm=Inf	6	xcomp	_	_
+10	und	und	CCONJ	KON	_	16	cc	_	_
+11	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Situation	Situation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	nsubj	_	_
+13	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	14	case	_	_
+14	Land	Land	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	nmod	_	_
+15	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	16	expl:pv	_	_
+16	verschlechterte	verschlechtern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	SpaceAfter=No
+17	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+18	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+19	Obama	Obama	PROPN	NE	Number=Sing|Person=3	18	nsubj	_	_
+20	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	21	case	_	_
+21	August	August	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	obl	_	_
+22	2012	2012	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	$,	PunctType=Comm	34	punct	_	_
+24	dass	dass	SCONJ	KOUS	_	34	mark	_	_
+25	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	27	case	_	_
+26	einem	einem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	Einsatz	Einsatz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	34	obl	_	_
+28	von	von	ADP	APPR	AdpType=Prep|Case=Dat	29	case	_	_
+29	Chemiewaffen	Waffe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	27	nmod	_	_
+30	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+31	„	„	PUNCT	$(	PunctType=Brck	33	punct	_	SpaceAfter=No
+32	rote	rot	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	33	amod	_	_
+33	Linie“	Linie“	NOUN	NN	Gender=Fem|Number=Sing|Person=3	34	nsubj:pass	_	_
+34	überschritten	überschreiten	VERB	VVPP	Aspect=Perf|VerbForm=Part	18	ccomp	_	_
+35	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux:pass	_	_
+36	und	und	CCONJ	KON	_	44	cc	_	_
+37	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	44	nsubj	_	_
+38	dann	dann	ADV	ADV	_	44	advmod	_	_
+39	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+40	militärische	militärisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	41	amod	_	_
+41	Intervention	Intervention	NOUN	NN	Gender=Fem|Number=Sing|Person=3	44	obj	_	_
+42	in	in	ADP	APPR	AdpType=Prep|Case=Acc	43	case	_	_
+43	Erwägung	Erwägung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	44	obl	_	_
+44	ziehe	ziehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	conj	_	SpaceAfter=No
+45	.	.	PUNCT	$.	PunctType=Peri	18	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9525,6 +9880,166 @@
 20	Untersuchung	Untersuchung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	nmod	_	_
 21	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	SpaceAfter=No
 22	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Der angestrebte Militärschlag gegen die Regierung von Baschar al-Assad war umstritten, da die Urheberschaft des Sarin-Angriffs auf die Bevölkerung nicht zweifelsfrei erwiesen war und nicht alle Beweise nachprüfbar seien.
+1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	angestrebte	anstreben	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	Militärschlag	Schlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+4	gegen	gegen	ADP	APPR	AdpType=Prep|Case=Acc	6	case	_	_
+5	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Regierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+7	von	von	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	Baschar	Baschar	PROPN	NE	Person=3	6	nmod	_	_
+9	al-Assad	al-Assad	PROPN	NE	Person=3	8	flat:name	_	_
+10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_
+11	umstritten	umstritten	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+13	da	da	SCONJ	KOUS	_	23	mark	_	_
+14	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Urheberschaft	Urheberschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	23	nsubj:pass	_	_
+16	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Sarin-Angriffs	Angriff	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+18	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
+19	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Bevölkerung	Bevölkerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nmod	_	_
+21	nicht	nicht	PART	PTKNEG	Polarity=Neg	23	advmod	_	_
+22	zweifelsfrei	zweifelsfrei	ADJ	ADJD	Degree=Pos|Variant=Short	23	advmod	_	_
+23	erwiesen	erweisen	VERB	VVPP	Aspect=Perf|VerbForm=Part	11	ccomp	_	_
+24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
+25	und	und	CCONJ	KON	_	29	cc	_	_
+26	nicht	nicht	PART	PTKNEG	Polarity=Neg	29	advmod	_	_
+27	alle	all	DET	PIDAT	Case=Nom|Number=Plur|Person=3	28	det	_	_
+28	Beweise	Beweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	29	nsubj	_	_
+29	nachprüfbar	nachprüfbar	ADJ	ADJD	Degree=Pos|Variant=Short	23	conj	_	_
+30	seien	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	cop	_	SpaceAfter=No
+31	.	.	PUNCT	$.	PunctType=Peri	11	punct	_	_
+
+# sent_id = 4
+# text = Während Russland die Rebellengruppierungen verdächtigte, beschuldigten Frankreich, die Arabische Liga und auch Großbritannien den syrischen Präsidenten Assad, die Waffen eingesetzt zu haben.
+1	Während	Während	SCONJ	KOUS	_	5	mark	_	_
+2	Russland	Russland	PROPN	NE	Number=Sing|Person=3	5	nsubj	_	_
+3	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	4	det	_	_
+4	Rebellengruppierungen	Gruppierung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	5	obj	_	_
+5	verdächtigte	verdächtigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+7	beschuldigten	beschuldigen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	Frankreich	Frankreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	7	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+11	Arabische	arabisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Liga	Liga	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	conj	_	_
+13	und	und	CCONJ	KON	_	15	cc	_	_
+14	auch	auch	ADV	ADV	_	15	advmod	_	_
+15	Großbritannien	Grossbritannien	PROPN	NE	Number=Sing|Person=3	8	conj	_	_
+16	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	syrischen	syrisch	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+18	Präsidenten	Präsident	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	obj	_	_
+19	Assad	Assad	PROPN	NE	Person=3	18	flat:name	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+21	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	22	det	_	_
+22	Waffen	Waffe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	23	obj	_	_
+23	eingesetzt	einsetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	7	xcomp	_	_
+24	zu	zu	PART	PTKZU	PartType=Inf	23	mark	_	_
+25	haben	haben	AUX	VAINF	VerbForm=Inf	23	aux	_	SpaceAfter=No
+26	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 5
+# text = Im Abschlussbericht der UN Ende 2013 bestätigte sich die Vermutung, dass mehrfach Giftgas eingesetzt, wurde.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Abschlussbericht	Bericht	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	obl	_	_
+3	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	4	det	_	_
+4	UN	unknown	PROPN	NE	Person=3	2	nmod	_	_
+5	Ende	Ende	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	nmod	_	_
+6	2013	2013	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	_
+7	bestätigte	bestätigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	7	obj	_	_
+9	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Vermutung	Vermutung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+12	dass	dass	SCONJ	KOUS	_	15	mark	_	_
+13	mehrfach	mehrfach	ADJ	ADJD	Degree=Pos|Variant=Short	15	advmod	_	_
+14	Giftgas	Giftgas	NOUN	NN	Person=3	15	nsubj:pass	_	_
+15	eingesetzt	einsetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	10	ccomp	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+17	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	SpaceAfter=No
+18	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 6
+# text = Bis 2016 wurden 9 Fälle von Giftgaseinsatz dokumentiert, davon konnten zweifelsfrei zwei der syrischen Armee unter Assad und einer der Terrororganisation IS zugeschrieben werden.
+1	Bis	Bis	ADP	APPR	AdpType=Prep	2	case	_	_
+2	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	obl	_	_
+3	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
+4	9	9	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nummod	_	_
+5	Fälle	Fall	NOUN	NN	Gender=Masc|Number=Plur|Person=3	8	nsubj:pass	_	_
+6	von	von	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+7	Giftgaseinsatz	Einsatz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+8	dokumentiert	dokumentieren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	24	punct	_	_
+10	davon	davon	ADV	PROAV	_	24	advmod	_	_
+11	konnten	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|VerbType=Mod	24	aux	_	_
+12	zweifelsfrei	zweifelsfrei	ADJ	ADJD	Degree=Pos|Variant=Short	24	advmod	_	_
+13	zwei	zwei	NUM	CARD	Number=Plur|NumType=Card|Person=3	24	nsubj:pass	_	_
+14	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+15	syrischen	syrisch	ADJ	ADJA	Degree=Pos|Number=Sing	16	amod	_	_
+16	Armee	Armee	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	obj	_	_
+17	unter	unter	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+18	Assad	Assad	PROPN	NE	Person=3	16	nmod	_	_
+19	und	und	CCONJ	KON	_	20	cc	_	_
+20	einer	ein	PRON	PIS	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Ind,Neg,Tot	16	conj	_	_
+21	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	Terrororganisation	Organisation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	nmod	_	_
+23	IS	IS	PROPN	NE	Person=3	22	flat:name	_	_
+24	zugeschrieben	zuschreiben	VERB	VVPP	Aspect=Perf|VerbForm=Part	8	conj	_	_
+25	werden	werden	AUX	VAINF	VerbForm=Inf	24	aux:pass	_	SpaceAfter=No
+26	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Zwischen 2012 und 2013 war eine militärische Intervention wahrscheinlicher geworden, der vermutete militärische Eingriff blieb jedoch aus, auch der von Obama befragte Kongress stimmte negativ über einen Militärschlag ab.
+1	Zwischen	Zwischen	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	2012	2012	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	nmod	_	_
+3	und	und	CCONJ	KON	_	4	cc	_	_
+4	2013	2013	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	conj	_	_
+5	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
+6	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	militärische	militärisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	Intervention	Intervention	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nsubj	_	_
+9	wahrscheinlicher	wahrscheinlich	ADJ	ADJD	Degree=Cmp|Variant=Short	10	advmod	_	_
+10	geworden	werden	AUX	VAPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+12	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+13	vermutete	vermuten	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+14	militärische	militärisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	Eingriff	Eingriff	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+16	blieb	bleiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
+17	jedoch	jedoch	ADV	ADV	_	16	advmod	_	_
+18	aus	aus	ADP	PTKVZ	PartType=Vbp	16	compound:prt	_	SpaceAfter=No
+19	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+20	auch	auch	ADV	ADV	_	25	advmod	_	_
+21	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+22	von	von	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+23	Obama	Obama	PROPN	NE	Number=Sing|Person=3	24	obl	_	_
+24	befragte	befragen	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	25	amod	_	_
+25	Kongress	Kongress	NOUN	NN	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_
+26	stimmte	stimmen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+27	negativ	negativ	ADJ	ADJD	Degree=Pos|Variant=Short	26	advmod	_	_
+28	über	über	ADP	APPR	AdpType=Prep|Case=Acc	30	case	_	_
+29	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	Militärschlag	Schlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	26	obl	_	_
+31	ab	ab	ADP	PTKVZ	PartType=Vbp	26	compound:prt	_	SpaceAfter=No
+32	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	_
+
+# sent_id = 8
+# text = Schließlich ließ Assad den Großteil des Chemiewaffenarsenals zerstören.
+1	Schließlich	Schliesslich	ADV	ADV	_	2	advmod	_	_
+2	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	Assad	Assad	PROPN	NE	Person=3	2	nsubj	_	_
+4	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Großteil	Grossteil	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obj	_	_
+6	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Chemiewaffenarsenals	Arsenal	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+8	zerstören	zerstören	VERB	VVINF	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9824,7 +10339,7 @@
 # newpar
 # sent_id = 1
 # text = Ukraine
-1	Ukraine	Ukraine	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+1	Ukraine	Ukraine	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9951,6 +10466,33 @@
 37	Russland	Russland	PROPN	NE	Number=Sing|Person=3	35	nmod	_	SpaceAfter=No
 38	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Während prorussische Separatisten die Unabhängigkeit in einigen Gebieten der östlichen Ukraine ausriefen, begann die neue Regierung in Kiew ihrerseits mit militärische Aktionen.
+1	Während	Während	SCONJ	KOUS	_	12	mark	_	_
+2	prorussische	prorussische	ADJ	ADJA	_	3	amod	_	_
+3	Separatisten	Separatist	NOUN	NN	Gender=Masc|Number=Plur|Person=3	12	nsubj	_	_
+4	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Unabhängigkeit	Unabhängigkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obj	_	_
+6	in	in	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+7	einigen	einig	DET	PIAT	Case=Dat|Number=Plur|Person=3|PronType=Ind,Neg,Tot	8	det	_	_
+8	Gebieten	Gebiet	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	5	nmod	_	_
+9	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	östlichen	östlich	ADJ	ADJA	Degree=Pos|Number=Sing	11	amod	_	_
+11	Ukraine	Ukraine	PROPN	NE	Person=3	8	nmod	_	_
+12	ausriefen	ausraufen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
+14	begann	beginnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+16	neue	neu	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
+17	Regierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nsubj	_	_
+18	in	in	ADP	APPR	AdpType=Prep|Case=Dat	19	case	_	_
+19	Kiew	Kiew	PROPN	NE	Number=Sing|Person=3	17	nmod	_	_
+20	ihrerseits	ihrerseits	ADV	ADV	_	14	advmod	_	_
+21	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+22	militärische	militärisch	ADJ	ADJA	Degree=Pos|Number=Plur	23	amod	_	_
+23	Aktionen	Aktion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	14	obj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	14	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10055,7 +10597,7 @@
 # newpar
 # sent_id = 1
 # text = Kuba
-1	Kuba	Kuba	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Kuba	Kuba	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10204,7 +10746,7 @@
 # newpar
 # sent_id = 1
 # text = Myanmar
-1	Myanmar	Myanmar	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+1	Myanmar	Myanmar	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10271,7 +10813,7 @@
 # newpar
 # sent_id = 1
 # text = Afrika
-1	Afrika	Afrika	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Afrika	Afrika	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10389,7 +10931,7 @@
 # newpar
 # sent_id = 1
 # text = Innenpolitik
-1	Innenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Innenpolitik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10400,7 +10942,7 @@
 # text = Wirtschaft und Soziales
 1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Soziales	sozial	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n
+3	Soziales	sozial	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10532,6 +11074,123 @@
 8	Richard	Richard	PROPN	NE	Gender=Masc|Number=Sing|Person=3	7	flat:name	_	_
 9	Thaler	Thaler	PROPN	NE	Number=Sing|Person=3	7	flat:name	_	SpaceAfter=No
 10	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Am 17. Februar 2009 unterschrieb Obama den American Recovery and Reinvestment Act, ein 787 Milliarden US-Dollar großes Konjunkturprogramm, das die Effekte der Finanzkrise ab 2007 und Wirtschaftskrise abdämpfen und vor allem durch Zuschüsse zu staatlichen und kommunalen Projekten 3,5 Millionen Arbeitsplätze erhalten oder neu schaffen sollte, vor allem bei Dienstleistungen, Infrastruktur und umweltfreundlicher Energie.
+1	Am	Am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	SpacesBefore=\n
+2	17.	17.	ADJ	ADJA	Person=3	3	amod	_	_
+3	Februar	Februar	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obl	_	_
+4	2009	2009	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	_
+5	unterschrieb	unterschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	Obama	Obama	PROPN	NE	Number=Sing|Person=3	5	nsubj	_	_
+7	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	American	American	X	FM	Foreign=Yes|Person=3	5	obj	_	_
+9	Recovery	Recovery	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+10	and	and	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+11	Reinvestment	Reinvestment	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+12	Act	Act	X	FM	Foreign=Yes|Person=3	8	flat	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+14	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	19	det	_	_
+15	787	787	NUM	CARD	Number=Plur|NumType=Card|Person=3	16	nummod	_	_
+16	Milliarden	Milliarde	NOUN	NN	Gender=Fem|Number=Plur|Person=3	17	nummod	_	_
+17	US-Dollar	Dollar	NOUN	NN	Gender=Masc|Number=Plur|Person=3	18	obl	_	_
+18	großes	groß	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	19	amod	_	_
+19	Konjunkturprogramm	Programm	NOUN	NN	Gender=Neut|Number=Sing|Person=3	8	appos	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	30	punct	_	_
+21	das	das	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Rel	30	nsubj	_	_
+22	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	23	det	_	_
+23	Effekte	Effekt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	30	obj	_	_
+24	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	Finanzkrise	Krise	NOUN	NN	Gender=Fem|Number=Sing|Person=3	23	nmod	_	_
+26	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	27	case	_	_
+27	2007	2007	NUM	CARD	Number=Plur|NumType=Card|Person=3	25	nmod	_	_
+28	und	und	CCONJ	KON	_	29	cc	_	_
+29	Wirtschaftskrise	Krise	NOUN	NN	Gender=Fem|Number=Sing|Person=3	27	conj	_	_
+30	abdämpfen	abdämpfen	VERB	VVINF	VerbForm=Inf	19	acl	_	_
+31	und	und	CCONJ	KON	_	44	cc	_	_
+32	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	33	case	_	_
+33	allem	all	PRON	PIS	Case=Dat|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	35	nmod	_	_
+34	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	35	case	_	_
+35	Zuschüsse	Zuschuss	NOUN	NN	Gender=Masc|Number=Plur|Person=3	44	obl	_	_
+36	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	40	case	_	_
+37	staatlichen	staatlich	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	40	amod	_	_
+38	und	und	CCONJ	KON	_	39	cc	_	_
+39	kommunalen	kommunal	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	37	conj	_	_
+40	Projekten	Projekt	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	35	nmod	_	_
+41	3,5	3,5	NUM	CARD	Number=Plur|NumType=Card|Person=3	42	nummod	_	SpacesAfter= 
+42	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	43	nummod	_	_
+43	Arbeitsplätze	Platz	NOUN	NN	Gender=Masc|Number=Plur|Person=3	44	obj	_	_
+44	erhalten	erhalten	VERB	VVINF	VerbForm=Inf	30	conj	_	_
+45	oder	oder	CCONJ	KON	_	47	cc	_	_
+46	neu	neu	ADJ	ADJD	Degree=Pos|Variant=Short	47	advmod	_	_
+47	schaffen	schaffen	VERB	VVINF	VerbForm=Inf	44	conj	_	_
+48	sollte	sollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	44	aux	_	SpaceAfter=No
+49	,	,	PUNCT	$,	PunctType=Comm	53	punct	_	_
+50	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	51	case	_	_
+51	allem	all	PRON	PIS	Case=Dat|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	53	nmod	_	_
+52	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	53	case	_	_
+53	Dienstleistungen	Leistung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	44	obl	_	SpaceAfter=No
+54	,	,	PUNCT	$,	PunctType=Comm	55	punct	_	_
+55	Infrastruktur	Infrastruktur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	53	conj	_	_
+56	und	und	CCONJ	KON	_	58	cc	_	_
+57	umweltfreundlicher	umweltfreundlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	58	amod	_	_
+58	Energie	Energie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	53	conj	_	SpaceAfter=No
+59	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 2
+# text = Das Programm verlangsamte den Anstieg der Arbeitslosigkeit und belebte die Binnenkonjunktur, behob aber nicht die anhaltend hohe Arbeitslosigkeit.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	Programm	Programm	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nsubj	_	_
+3	verlangsamte	verlangsamen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Anstieg	Anstieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obj	_	_
+6	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Arbeitslosigkeit	Arbeitslosigkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nmod	_	_
+8	und	und	CCONJ	KON	_	9	cc	_	_
+9	belebte	beleben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+10	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Binnenkonjunktur	Konjunktur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	obj	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+13	behob	beheben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	_	_
+14	aber	aber	ADV	ADV	_	13	advmod	_	_
+15	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
+16	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+17	anhaltend	anhalten	ADJ	ADJD	Degree=Pos|Variant=Short	18	advmod	_	_
+18	hohe	hoch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	_
+19	Arbeitslosigkeit	Arbeitslosigkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	obj	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 3
+# text = Deshalb kündigte Obama am 6. September 2010 (Labor Day) ein weiteres Konjunkturprogramm von 50 Milliarden US-Dollar zum Ausbau der Infrastruktur an.
+1	Deshalb	Deshalb	ADV	PROAV	_	2	advmod	_	_
+2	kündigte	kündigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	Obama	Obama	PROPN	NE	Number=Sing|Person=3	2	nsubj	_	_
+4	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	6.	6.	ADJ	ADJA	Person=3	6	amod	_	SpacesAfter= 
+6	September	September	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obl	_	_
+7	2010	2010	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	_
+8	(	(	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
+9	Labor	Labor	X	FM	Foreign=Yes|Person=3	6	appos	_	_
+10	Day	Day	X	FM	Foreign=Yes|Person=3	9	flat	_	SpaceAfter=No
+11	)	)	PUNCT	$(	PunctType=Brck	9	punct	_	_
+12	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
+13	weiteres	weit	ADJ	ADJA	Degree=Cmp|Gender=Neut|Number=Sing	14	amod	_	_
+14	Konjunkturprogramm	Programm	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obj	_	_
+15	von	von	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+16	50	50	NUM	CARD	Number=Plur|NumType=Card|Person=3	17	nummod	_	SpacesAfter= 
+17	Milliarden	Milliarde	NOUN	NN	Gender=Fem|Number=Plur|Person=3	18	nummod	_	_
+18	US-Dollar	Dollar	NOUN	NN	Gender=Masc|Number=Plur|Person=3	14	nmod	_	_
+19	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	20	case	_	_
+20	Ausbau	Ausbau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	14	nmod	_	_
+21	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	Infrastruktur	Infrastruktur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	nmod	_	_
+23	an	an	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11389,7 +12048,7 @@
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
 3	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
-5	Energie	Energie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+5	Energie	Energie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12630,7 +13289,7 @@
 # text = Justiz und Bürgerrechte
 1	Justiz	Justiz	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Bürgerrechte	Bürgerrecht	NOUN	NN	Gender=Neut|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Bürgerrechte	Bürgerrecht	NOUN	NN	Gender=Neut|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13625,7 +14284,7 @@
 4	und	und	CCONJ	KON	_	5	cc	_	_
 5	Whistleblower	Whistleblower	NOUN	NN	Person=3	1	conj	_	_
 6	unter	unter	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
-7	Obama	Obama	PROPN	NE	Person=3	5	nmod	_	SpacesAfter=\n
+7	Obama	Obama	PROPN	NE	Person=3	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13896,7 +14555,7 @@
 # newpar
 # sent_id = 1
 # text = Opposition
-1	Opposition	Opposition	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Opposition	Opposition	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14578,7 +15237,7 @@
 3	Beginn	Beginn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	conj	_	_
 4	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 5	zweiten	zweit	ADJ	ADJA	Degree=Pos|Number=Sing	6	amod	_	_
-6	Amtszeit	Amtszeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	SpacesAfter=\n
+6	Amtszeit	Amtszeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14843,7 +15502,7 @@
 # text = Ende der Präsidentschaft
 1	Ende	Ende	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 2	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -15643,7 +16302,7 @@
 25	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	_
 
 # sent_id = 2
-# text = Yes, we can.“ („Ja, wir haben [es] getan.
+# text = Yes, we can.“ („Ja, wir haben getan.
 1	Yes	Yes	X	FM	Foreign=Yes|Person=3	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
 3	we	we	X	FM	Foreign=Yes|Person=3	1	appos	_	_
@@ -15652,13 +16311,10 @@
 6	„	„	PUNCT	$(	PunctType=Brck	7	punct	_	SpaceAfter=No
 7	Ja	Ja	PRON	FM	_	3	appos	_	SpaceAfter=No
 8	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
-9	wir	wir	PRON	PPER	Case=Nom|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	_
-10	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	aux	_	_
-11	[	[	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
-12	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	14	obj	_	SpaceAfter=No
-13	]	]	PUNCT	$(	PunctType=Brck	12	punct	_	_
-14	getan	tun	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpaceAfter=No
-15	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
+9	wir	wir	PRON	PPER	Case=Nom|Number=Plur|Person=1|PronType=Prs	11	nsubj	_	_
+10	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	aux	_	SpacesAfter=\s\s
+11	getan	tun	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	11	punct	_	_
 
 # sent_id = 3
 # text = Ja, wir können.“) archiviert und „eingefroren“.
@@ -15699,7 +16355,7 @@
 1	Leben	Leben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 2	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
 3	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Präsidentschaft	Präsidentschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -16430,7 +17086,7 @@
 # text = Auszeichnungen und Ehrungen
 1	Auszeichnungen	Auszeichnung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Ehrungen	Ehrung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Ehrungen	Ehrung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -16449,7 +17105,7 @@
 8	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
 
 # sent_id = 2
-# text = Die wohl bekannteste war der Friedensnobelpreis, den er als dritter amtierender US-Präsident nach Theodore Roosevelt und Woodrow Wilson im Jahr seiner Amtseinführung am 10. Dezember 2009 erhielt.
+# text = Die wohl bekannteste war der Friedensnobelpreis, den er als dritter amtierender US-Präsident nach Theodore Roosevelt, Woodrow Wilson im Jahr seiner Amtseinführung am 10. Dezember 2009 erhielt.
 1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	wohl	wohl	ADV	ADV	_	3	advmod	_	_
 3	bekannteste	bekannt	ADJ	ADJA	Degree=Sup|Gender=Fem|Number=Sing	0	root	_	_
@@ -16465,9 +17121,9 @@
 13	US-Präsident	Präsident	NOUN	NN	Gender=Masc|Number=Sing|Person=3	28	obl	_	_
 14	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
 15	Theodore	Theodore	PROPN	NE	Gender=Fem|Number=Sing|Person=3	13	nmod	_	_
-16	Roosevelt	Roosevelt	PROPN	NE	Person=3	15	flat:name	_	_
-17	und	und	CCONJ	KON	_	18	cc	_	_
-18	Woodrow	Woodrow	PROPN	NE	Gender=Masc|Number=Sing|Person=3	15	conj	_	_
+16	Roosevelt	Roosevelt	PROPN	NE	Person=3	15	flat:name	_	SpaceAfter=No
+17	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+18	Woodrow	Woodrow	PROPN	NE	Gender=Masc|Number=Sing|Person=3	15	appos	_	_
 19	Wilson	Wilson	PROPN	NE	Gender=Masc|Number=Sing|Person=3	18	flat:name	_	_
 20	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	21	case	_	_
 21	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	28	obl	_	_
@@ -17142,7 +17798,7 @@
 # sent_id = 1
 # text = Siehe auch
 1	Siehe	sehen	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
-2	auch	auch	ADV	ADV	_	1	advmod	_	SpacesAfter=\n
+2	auch	auch	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17153,7 +17809,7 @@
 # text = Schriften und Reden
 1	Schriften	Schrift	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Reden	Rede	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Reden	Rede	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17162,7 +17818,7 @@
 # newpar
 # sent_id = 1
 # text = Rezeption
-1	Rezeption	Rezeption	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Rezeption	Rezeption	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17171,7 +17827,7 @@
 # newpar
 # sent_id = 1
 # text = Literatur
-1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17180,7 +17836,7 @@
 # newpar
 # sent_id = 1
 # text = Filmdokumentation
-1	Filmdokumentation	Dokumentation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Filmdokumentation	Dokumentation	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17189,7 +17845,7 @@
 # newpar
 # sent_id = 1
 # text = Weblinks
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17208,7 +17864,7 @@
 # newpar
 # sent_id = 1
 # text = Einzelnachweise
-1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17216,15 +17872,380 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = George Washington (parteilos, 1789–1797) |
+# text = George Washington (parteilos, 1789–1797) | John Adams (F, 1797–1801) | Thomas Jefferson (D-R, 1801–1809) | James Madison (D-R, 1809–1817) | James Monroe (D-R, 1817–1825) | John Quincy Adams (D-R, 1825–1829) | Andrew Jackson (D, 1829–1837) | Martin Van Buren (D, 1837–1841) | William Henry Harrison (W, 1841) | John Tyler (W/parteilos 1841–1845) | James K. Polk (D, 1845–1849) | Zachary Taylor (W, 1849–1850) | Millard Fillmore (W, 1850–1853) | Franklin Pierce (D, 1853–1857) | James Buchanan (D, 1857–1861) | Abraham Lincoln (R, 1861–1865) | Andrew Johnson (D, 1865–1869) | Ulysses S. Grant (R, 1869–1877) | Rutherford B. Hayes (R, 1877–1881) | James A. Garfield (R, 1881) | Chester A. Arthur (R, 1881–1885) | Grover Cleveland (D, 1885–1889) | Benjamin Harrison (R, 1889–1893) | Grover Cleveland (D, 1893–1897) | William McKinley (R, 1897–1901) | Theodore Roosevelt (R, 1901–1909) | William Howard Taft (R, 1909–1913) | Woodrow Wilson (D, 1913–1921) | Warren G. Harding (R, 1921–1923) | Calvin Coolidge (R, 1923–1929) | Herbert Hoover (R, 1929–1933) | Franklin D. Roosevelt (D, 1933–1945) | Harry S. Truman (D, 1945–1953) | Dwight D. Eisenhower (R, 1953–1961) | John F. Kennedy (D, 1961–1963) | Lyndon B. Johnson (D, 1963–1969) | Richard Nixon (R, 1969–1974) | Gerald Ford (R, 1974–1977) | Jimmy Carter (D, 1977–1981) | Ronald Reagan (R, 1981–1989) | George H. W. Bush (R, 1989–1993) | Bill Clinton (D, 1993–2001) | George W. Bush (R, 2001–2009) | Barack Obama (D, 2009–2017) | Donald Trump (R, 2017–2021) | Joe Biden (D, seit 2021)
 1	George	George	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	Washington	Washington	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
-3	(	(	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
+3	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
 4	parteilos	parteilos	ADJ	ADJD	Degree=Pos|Variant=Short	1	advmod	_	SpaceAfter=No
-5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	SpacesAfter= 
-6	1789–1797	1789–1797	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	appos	_	SpaceAfter=No
-7	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter= 
-8	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+5	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+6	1789–1797	1789–1797	NUM	CARD	Number=Plur|NumType=Card|Person=3	75	conj	_	SpaceAfter=No
+7	)	)	PUNCT	$(	PunctType=Brck	75	punct	_	SpacesAfter= 
+8	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+9	John	John	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
+10	Adams	Adams	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	28	flat:name	_	SpacesAfter= 
+11	(	(	PUNCT	$(	PunctType=Brck	31	punct	_	SpaceAfter=No
+12	F	F	NOUN	NN	Gender=Neut|Number=Sing|Person=3	62	appos	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	SpacesAfter= 
+14	1797–	1797–	NOUN	NN	Number=Plur|NumType=Card|Person=3	31	appos	_	SpaceAfter=No
+15	1801	1801	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	nmod	_	SpaceAfter=No
+16	)	)	PUNCT	$(	PunctType=Brck	75	punct	_	SpacesAfter= 
+17	|	|	PUNCT	$(	PunctType=Brck	28	punct	_	SpacesAfter=\n
+18	Thomas	Thomas	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	appos	_	_
+19	Jefferson	Jefferson	PROPN	NE	Number=Sing|Person=3	28	flat:name	_	SpacesAfter= 
+20	(	(	PUNCT	$(	PunctType=Brck	31	punct	_	SpaceAfter=No
+21	D-R	D-R	PROPN	NE	Person=3	28	appos	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	SpacesAfter= 
+23	1801	1801	NUM	CARD	Number=Plur|NumType=Card|Person=3	31	appos	_	SpaceAfter=No
+24	–	–	X	XY	_	93	case	_	SpaceAfter=No
+25	1809	1809	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	nmod	_	SpaceAfter=No
+26	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+27	|	|	PUNCT	$(	PunctType=Brck	28	punct	_	SpacesAfter=\n
+28	James	James	PROPN	NE	Case=Nom|Number=Sing|Person=3	126	appos	_	_
+29	Madison	Madison	PROPN	NE	Number=Sing|Person=3	28	flat:name	_	SpacesAfter= 
+30	(	(	PUNCT	$(	PunctType=Brck	31	punct	_	SpaceAfter=No
+31	D-R	D-R	PROPN	NE	Person=3	126	appos	_	SpaceAfter=No
+32	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	SpacesAfter= 
+33	1809	1809	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+34	–	–	X	XY	Foreign=Yes|Person=3	128	amod	_	SpaceAfter=No
+35	1817	1817	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	nmod	_	SpaceAfter=No
+36	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+37	|	|	PUNCT	$(	PunctType=Brck	46	punct	_	SpacesAfter=\n
+38	James	James	PROPN	NE	Case=Nom|Number=Sing|Person=3	126	appos	_	_
+39	Monroe	Monroe	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+40	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+41	D-R	D-R	NOUN	NE	Person=3	126	appos	_	SpaceAfter=No
+42	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+43	1817–1825	1817–1825	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+44	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+45	|	|	PUNCT	$(	PunctType=Brck	46	punct	_	SpacesAfter=\n
+46	John	John	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+47	Quincy	Quincy	PROPN	NE	Person=3	87	flat:name	_	_
+48	Adams	Adams	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+49	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+50	D-R	D-R	PROPN	NE	Person=3	126	appos	_	SpaceAfter=No
+51	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+52	1825–1829)	1825–1829)	NOUN	FM	Person=3	126	appos	_	SpacesAfter= 
+53	|	|	PUNCT	$(	_	71	punct	_	SpacesAfter=\n
+54	Andrew	Andrew	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+55	Jackson	Jackson	PROPN	NE	Gender=Masc|Number=Sing|Person=3	95	flat:name	_	SpacesAfter= 
+56	(	(	PUNCT	$(	PunctType=Brck	98	punct	_	SpaceAfter=No
+57	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+58	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+59	1829–1837	1829–1837	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+60	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+61	|	|	PUNCT	$(	_	46	punct	_	SpacesAfter=\n
+62	Martin	Martin	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+63	Van	Van	PROPN	NE	Gender=Masc|Number=Sing|Person=3	103	flat:name	_	_
+64	Buren	Buren	PROPN	NE	Number=Sing|Person=3	103	flat:name	_	SpacesAfter= 
+65	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+66	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+67	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+68	1837–1841	1837–1841	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	appos	_	SpaceAfter=No
+69	)	)	PUNCT	$(	PunctType=Brck	91	punct	_	SpacesAfter= 
+70	|	|	PUNCT	$(	PunctType=Brck	71	punct	_	SpacesAfter=\n
+71	William	William	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+72	Henry	Henry	PROPN	NE	Gender=Masc|Number=Sing|Person=3	95	flat:name	_	_
+73	Harrison	Harrison	PROPN	NE	Number=Sing|Person=3	71	flat:name	_	SpacesAfter= 
+74	(	(	PUNCT	$(	PunctType=Brck	98	punct	_	SpaceAfter=No
+75	W	W	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+76	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+77	1841	1841	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+78	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+79	|	|	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter=\n
+80	John	John	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+81	Tyler	Tyler	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+82	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+83	W/parteilos	W/parteilos	PROPN	NE	Person=3	87	appos	_	SpacesAfter= 
+84	1841–1845	1841–1845	NUM	CARD	Number=Plur|NumType=Card|Person=3	91	flat	_	SpaceAfter=No
+85	)	)	PUNCT	$(	PunctType=Brck	91	punct	_	SpacesAfter= 
+86	|	|	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter=\n
+87	James	James	PROPN	NE	Case=Nom|Number=Sing|Person=3	126	appos	_	_
+88	K.	K.	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	_
+89	Polk	Polk	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+90	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+91	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+92	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+93	1845–1849)	1845–1849)	X	FM	Person=3	126	appos	_	SpacesAfter= 
+94	|	|	PUNCT	$(	_	95	punct	_	SpacesAfter=\n
+95	Zachary	Zachary	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+96	Taylor	Taylor	PROPN	NE	Number=Sing|Person=3	95	flat:name	_	SpacesAfter= 
+97	(	(	PUNCT	$(	PunctType=Brck	98	punct	_	SpaceAfter=No
+98	W	W	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+99	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+100	1849–1850	1849–1850	NUM	CARD	Number=Plur|NumType=Card|Person=3	75	conj	_	SpaceAfter=No
+101	)	)	PUNCT	$(	PunctType=Brck	98	punct	_	SpacesAfter= 
+102	|	|	PUNCT	$(	PunctType=Brck	103	punct	_	SpacesAfter=\n
+103	Millard	Millard	PROPN	NE	Number=Sing|Person=3	129	conj	_	_
+104	Fillmore	Fillmore	PROPN	NE	Person=3	128	flat:name	_	SpacesAfter= 
+105	(	(	PUNCT	$(	PunctType=Brck	106	punct	_	SpaceAfter=No
+106	W	W	NOUN	NN	Gender=Neut|Number=Sing|Person=3	128	appos	_	SpaceAfter=No
+107	,	,	PUNCT	$,	PunctType=Comm	108	punct	_	SpacesAfter= 
+108	1850–1853	1850–1853	NUM	CARD	Number=Plur|NumType=Card|Person=3	106	appos	_	SpaceAfter=No
+109	)	)	PUNCT	$(	PunctType=Brck	128	punct	_	SpacesAfter= 
+110	|	|	X	FM	_	128	conj	_	SpacesAfter=\n
+111	Franklin	Franklin	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+112	Pierce	Pierce	PROPN	NE	Number=Sing|Person=3	128	flat:name	_	SpacesAfter= 
+113	(	(	PUNCT	$(	PunctType=Brck	106	punct	_	SpaceAfter=No
+114	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+115	,	,	PUNCT	$,	PunctType=Comm	108	punct	_	SpacesAfter= 
+116	1853–1857	1853–1857	NUM	CARD	Number=Plur|NumType=Card|Person=3	353	appos	_	SpaceAfter=No
+117	)	)	PUNCT	$(	PunctType=Brck	328	punct	_	SpacesAfter= 
+118	|	|	PUNCT	$(	_	129	punct	_	SpacesAfter=\n
+119	James	James	PROPN	NE	Case=Nom|Number=Sing|Person=3	126	appos	_	_
+120	Buchanan	Buchanan	PROPN	NE	Person=3	119	flat:name	_	SpacesAfter= 
+121	(	(	PUNCT	$(	PunctType=Brck	318	punct	_	SpaceAfter=No
+122	D	D	X	FM	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+123	,	,	PUNCT	$,	PunctType=Comm	330	punct	_	SpacesAfter= 
+124	1857–1861)	1857–1861)	X	FM	Person=3	353	appos	_	SpacesAfter= 
+125	|	|	PUNCT	$(	_	343	punct	_	SpacesAfter=\n
+126	Abraham	Abraham	PROPN	NE	Gender=Masc|Number=Sing|Person=3	343	appos	_	_
+127	Lincoln	Lincoln	PROPN	NE	Person=3	345	flat:name	_	SpacesAfter= 
+128	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+129	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+130	,	,	PUNCT	$,	PunctType=Comm	129	punct	_	SpacesAfter= 
+131	1861–1865)	1861–1865)	NOUN	NN	Person=3	129	appos	_	SpacesAfter= 
+132	|	|	PUNCT	KON	_	306	punct	_	SpacesAfter=\n
+133	Andrew	Andrew	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+134	Johnson	Johnson	PROPN	NE	Number=Sing|Person=3	306	flat:name	_	SpacesAfter= 
+135	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+136	D	D	X	NN	Gender=Neut|Number=Sing|Person=3	133	appos	_	SpaceAfter=No
+137	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+138	1865–1869)	1865–1869)	NOUN	NN	Person=3	129	appos	_	SpacesAfter= 
+139	|	|	PUNCT	$(	_	129	punct	_	SpacesAfter=\n
+140	Ulysses	Ulysses	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	129	appos	_	_
+141	S.	S.	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	_
+142	Grant	Grant	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+143	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+144	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	129	appos	_	SpaceAfter=No
+145	,	,	PUNCT	$,	PunctType=Comm	129	punct	_	SpacesAfter= 
+146	1869–1877	1869–1877	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	appos	_	SpaceAfter=No
+147	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+148	|	|	PUNCT	$(	_	129	punct	_	SpacesAfter=\n
+149	Rutherford	Rutherford	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+150	B.	B.	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	_
+151	Hayes	Hayes	PROPN	NE	Case=Nom|Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+152	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+153	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+154	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+155	1877–1881)	1877–1881)	X	FM	Person=3	126	appos	_	SpacesAfter= 
+156	|	|	PUNCT	$(	_	129	punct	_	SpacesAfter=\n
+157	James	James	PROPN	NE	Case=Nom|Number=Sing|Person=3	129	appos	_	_
+158	A.	A.	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	_
+159	Garfield	Garfield	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+160	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+161	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+162	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+163	1881	1881	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	appos	_	SpaceAfter=No
+164	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+165	|	|	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter=\n
+166	Chester	Chester	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+167	A.	A.	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	_
+168	Arthur	Arthur	PROPN	NE	Gender=Masc|Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+169	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+170	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	87	appos	_	SpaceAfter=No
+171	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+172	1881–1885	1881–1885	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	appos	_	SpaceAfter=No
+173	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+174	|	|	PUNCT	$(	_	129	punct	_	SpacesAfter=\n
+175	Grover	Grover	PROPN	NE	Number=Sing|Person=3	129	conj	_	_
+176	Cleveland	Cleveland	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+177	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+178	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+179	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+180	1885–1889)	1885–1889)	NOUN	FM	Person=3	126	appos	_	SpacesAfter= 
+181	|	|	X	FM	_	95	punct	_	SpacesAfter=\n
+182	Benjamin	Benjamin	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+183	Harrison	Harrison	PROPN	NE	Number=Sing|Person=3	95	flat:name	_	SpacesAfter= 
+184	(	(	PUNCT	$(	PunctType=Brck	185	punct	_	SpaceAfter=No
+185	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+186	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+187	1889–1893)	1889–1893)	NOUN	CARD	Person=3	126	appos	_	SpacesAfter= 
+188	|	|	X	FM	_	129	punct	_	SpacesAfter=\n
+189	Grover	Grover	PROPN	NE	Number=Sing|Person=3	129	appos	_	_
+190	Cleveland	Cleveland	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+191	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+192	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+193	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+194	1893–1897	1893–1897	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	conj	_	SpaceAfter=No
+195	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+196	|	|	X	FM	_	129	conj	_	SpacesAfter=\n
+197	William	William	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+198	McKinley	McKinley	PROPN	NE	Case=Nom|Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+199	(	(	PUNCT	$(	PunctType=Brck	200	punct	_	SpaceAfter=No
+200	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+201	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+202	1897–1901)	1897–1901)	NOUN	FM	Person=3	126	appos	_	SpacesAfter= 
+203	|	|	X	FM	Foreign=Yes|Person=3	129	punct	_	SpacesAfter=\n
+204	Theodore	Theodore	PROPN	NE	Gender=Fem|Number=Sing|Person=3	126	appos	_	_
+205	Roosevelt	Roosevelt	PROPN	NE	Person=3	87	flat:name	_	SpacesAfter= 
+206	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+207	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+208	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+209	1901–1909	1901–1909	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+210	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+211	|	|	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter=\n
+212	William	William	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+213	Howard	Howard	PROPN	NE	Gender=Masc|Number=Sing|Person=3	87	flat:name	_	_
+214	Taft	Taft	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+215	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+216	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+217	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+218	1909–1913	1909–1913	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	conj	_	SpaceAfter=No
+219	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+220	|	|	X	FM	_	71	appos	_	SpacesAfter=\n
+221	Woodrow	Woodrow	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+222	Wilson	Wilson	PROPN	NE	Number=Sing|Person=3	95	flat:name	_	SpacesAfter= 
+223	(	(	PUNCT	$(	PunctType=Brck	273	punct	_	SpaceAfter=No
+224	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+225	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+226	1913–1921)	1913–1921)	X	FM	Foreign=Yes|Person=3	126	appos	_	SpacesAfter= 
+227	|	|	X	FM	_	62	punct	_	SpacesAfter=\n
+228	Warren	Warren	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+229	G.	G.	PROPN	NE	Number=Sing|Person=3	103	flat:name	_	_
+230	Harding	Harding	PROPN	NE	Number=Sing|Person=3	103	flat:name	_	SpacesAfter= 
+231	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+232	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+233	,	,	PUNCT	$,	PunctType=Comm	283	punct	_	SpacesAfter= 
+234	1921–1923	1921–1923	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	conj	_	SpaceAfter=No
+235	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+236	|	|	X	FM	_	129	conj	_	SpacesAfter=\n
+237	Calvin	Calvin	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+238	Coolidge	Coolidge	PROPN	NE	Person=3	87	flat:name	_	SpacesAfter= 
+239	(	(	PUNCT	$(	PunctType=Brck	200	punct	_	SpaceAfter=No
+240	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+241	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+242	1923–1929)	1923–1929)	NOUN	FM	Person=3	126	appos	_	SpacesAfter= 
+243	|	|	X	FM	Foreign=Yes|Person=3	87	appos	_	SpacesAfter=\n
+244	Herbert	Herbert	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	flat:name	_	_
+245	Hoover	Hoover	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+246	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+247	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+248	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+249	1929–1933	1929–1933	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+250	)	)	PUNCT	$(	PunctType=Brck	185	punct	_	SpacesAfter= 
+251	|	|	X	FM	Foreign=Yes|Person=3	71	appos	_	SpacesAfter=\n
+252	Franklin	Franklin	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+253	D.	D.	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	_
+254	Roosevelt	Roosevelt	PROPN	NE	Person=3	87	flat:name	_	SpacesAfter= 
+255	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+256	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+257	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+258	1933–1945	1933–1945	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+259	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+260	|	|	X	FM	Foreign=Yes|Person=3	129	punct	_	SpacesAfter=\n
+261	Harry	Harry	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+262	S.	S.	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	_
+263	Truman	Truman	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+264	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+265	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+266	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+267	1945–1953)	1945–1953)	NOUN	NN	Person=3	126	appos	_	SpacesAfter= 
+268	|	|	X	FM	Foreign=Yes|Person=3	71	flat	_	SpacesAfter=\n
+269	Dwight	Dwight	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+270	D.	D.	PROPN	NE	Number=Sing|Person=3	95	flat:name	_	_
+271	Eisenhower	Eisenhower	PROPN	NE	Person=3	95	flat:name	_	SpacesAfter= 
+272	(	(	PUNCT	$(	PunctType=Brck	98	punct	_	SpaceAfter=No
+273	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+274	,	,	PUNCT	$,	PunctType=Comm	100	punct	_	SpacesAfter= 
+275	1953–1961)	1953–1961)	NOUN	NN	Person=3	126	appos	_	SpacesAfter= 
+276	|	|	X	FM	_	129	punct	_	SpacesAfter=\n
+277	John	John	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	appos	_	_
+278	F.	F.	PROPN	NE	Number=Sing|Person=3	103	flat:name	_	_
+279	Kennedy	Kennedy	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	SpacesAfter= 
+280	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+281	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	87	appos	_	SpaceAfter=No
+282	,	,	PUNCT	$,	PunctType=Comm	129	punct	_	SpacesAfter= 
+283	1961–1963	1961–1963	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	conj	_	SpaceAfter=No
+284	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter= 
+285	|	|	PUNCT	FM	_	129	punct	_	SpacesAfter=\n
+286	Lyndon	Lyndon	PROPN	NE	Gender=Masc|Number=Sing|Person=3	129	conj	_	_
+287	B.	B.	PROPN	NE	Number=Sing|Person=3	129	flat:name	_	_
+288	Johnson	Johnson	PROPN	NE	Number=Sing|Person=3	87	flat:name	_	SpacesAfter= 
+289	(	(	PUNCT	$(	PunctType=Brck	91	punct	_	SpaceAfter=No
+290	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+291	,	,	PUNCT	$,	PunctType=Comm	93	punct	_	SpacesAfter= 
+292	1963–1969)	1963–1969)	X	FM	Person=3	129	appos	_	SpacesAfter= 
+293	|	|	X	FM	_	95	flat	_	SpacesAfter=\n
+294	Richard	Richard	PROPN	NE	Gender=Masc|Number=Sing|Person=3	87	flat:name	_	_
+295	Nixon	Nixon	PROPN	NE	Person=3	95	flat:name	_	SpacesAfter= 
+296	(	(	PUNCT	$(	PunctType=Brck	297	punct	_	SpaceAfter=No
+297	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	87	appos	_	SpaceAfter=No
+298	,	,	PUNCT	$,	PunctType=Comm	129	punct	_	SpacesAfter= 
+299	1969–1974)	1969–1974)	NOUN	NN	Person=3	129	appos	_	SpacesAfter= 
+300	|	|	X	FM	Foreign=Yes|Person=3	129	appos	_	SpacesAfter=\n
+301	Gerald	Gerald	PROPN	NE	Gender=Masc|Number=Sing|Person=3	103	flat:name	_	_
+302	Ford	Ford	PROPN	NE	Case=Nom|Number=Sing|Person=3	103	flat:name	_	SpacesAfter= 
+303	(	(	PUNCT	$(	PunctType=Brck	304	punct	_	SpaceAfter=No
+304	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	103	appos	_	SpaceAfter=No
+305	,	,	PUNCT	$,	PunctType=Comm	306	punct	_	SpacesAfter= 
+306	1974–1977)	1974–1977)	X	FM	Person=3	91	conj	_	SpacesAfter= 
+307	|	|	X	FM	Foreign=Yes|Person=3	128	amod	_	SpacesAfter=\n
+308	Jimmy	Jimmy	PROPN	NE	Gender=Masc|Number=Sing|Person=3	128	flat:name	_	_
+309	Carter	Carter	PROPN	NE	Gender=Masc|Number=Sing|Person=3	306	flat:name	_	SpacesAfter= 
+310	(	(	PUNCT	$(	PunctType=Brck	311	punct	_	SpaceAfter=No
+311	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	128	appos	_	SpaceAfter=No
+312	,	,	PUNCT	$,	PunctType=Comm	313	punct	_	SpacesAfter= 
+313	1977–1981)	1977–1981)	X	FM	Foreign=Yes|Person=3	106	appos	_	SpacesAfter= 
+314	|	|	X	FM	Foreign=Yes|Person=3	313	flat	_	SpacesAfter=\n
+315	Ronald	Ronald	PROPN	NE	Gender=Masc|Number=Sing|Person=3	313	flat:name	_	_
+316	Reagan	Reagan	PROPN	NE	Number=Sing|Person=3	313	flat:name	_	SpacesAfter= 
+317	(	(	PUNCT	$(	PunctType=Brck	318	punct	_	SpaceAfter=No
+318	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	313	appos	_	SpaceAfter=No
+319	,	,	PUNCT	$,	PunctType=Comm	320	punct	_	SpacesAfter= 
+320	1981–1989	1981–1989	NUM	CARD	Number=Plur|NumType=Card|Person=3	318	appos	_	SpaceAfter=No
+321	)	)	PUNCT	$(	PunctType=Brck	318	punct	_	SpacesAfter= 
+322	|	|	PUNCT	$(	_	328	punct	_	SpacesAfter=\n
+323	George	George	PROPN	NE	Gender=Masc|Number=Sing|Person=3	128	conj	_	_
+324	H.	H.	PROPN	NE	Number=Sing|Person=3	323	flat:name	_	_
+325	W.	W.	PROPN	NE	Number=Sing|Person=3	323	flat:name	_	_
+326	Bush	Bush	PROPN	NE	Number=Sing|Person=3	323	flat:name	_	SpacesAfter= 
+327	(	(	PUNCT	$(	PunctType=Brck	328	punct	_	SpaceAfter=No
+328	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	128	appos	_	SpaceAfter=No
+329	,	,	PUNCT	$,	PunctType=Comm	330	punct	_	SpacesAfter= 
+330	1989–1993)	1989–1993)	NUM	CARD	Number=Plur|NumType=Card|Person=3	328	appos	_	SpacesAfter= 
+331	|	|	X	FM	_	332	flat	_	SpacesAfter=\n
+332	Bill	Bill	PROPN	NE	Gender=Masc|Number=Sing|Person=3	328	appos	_	_
+333	Clinton	Clinton	PROPN	NE	Gender=Masc|Number=Sing|Person=3	332	flat:name	_	SpacesAfter= 
+334	(	(	PUNCT	$(	PunctType=Brck	335	punct	_	SpaceAfter=No
+335	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	332	appos	_	SpaceAfter=No
+336	,	,	PUNCT	$,	PunctType=Comm	337	punct	_	SpacesAfter= 
+337	1993–2001)	1993–2001)	X	FM	Person=3	335	appos	_	SpacesAfter= 
+338	|	|	X	FM	_	337	flat	_	SpacesAfter=\n
+339	George	George	PROPN	NE	Gender=Masc|Number=Sing|Person=3	353	appos	_	_
+340	W.	W.	PROPN	NE	Number=Sing|Person=3	337	flat:name	_	_
+341	Bush	Bush	PROPN	NE	Number=Sing|Person=3	337	flat:name	_	SpacesAfter= 
+342	(	(	PUNCT	$(	PunctType=Brck	343	punct	_	SpaceAfter=No
+343	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	339	appos	_	SpaceAfter=No
+344	,	,	PUNCT	$,	PunctType=Comm	345	punct	_	SpacesAfter= 
+345	2001	2001	NUM	CARD	Number=Plur|NumType=Card|Person=3	343	appos	_	SpaceAfter=No
+346	–	–	X	XY	Gender=Neut|Number=Plur|Person=3	345	appos	_	SpaceAfter=No
+347	2009	2009	NUM	CARD	Number=Plur|NumType=Card|Person=3	345	nmod	_	SpaceAfter=No
+348	)	)	PUNCT	$(	PunctType=Brck	343	punct	_	SpacesAfter= 
+349	|	|	X	FM	Foreign=Yes|Person=3	350	appos	_	SpacesAfter=\n
+350	Barack	Barack	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	flat:name	_	_
+351	Obama	Obama	PROPN	NE	Person=3	126	flat:name	_	SpacesAfter= 
+352	(	(	PUNCT	$(	PunctType=Brck	353	punct	_	SpaceAfter=No
+353	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	350	appos	_	SpaceAfter=No
+354	,	,	PUNCT	$,	PunctType=Comm	355	punct	_	SpacesAfter= 
+355	2009–2017	2009–2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	353	appos	_	SpaceAfter=No
+356	)	)	PUNCT	$(	PunctType=Brck	353	punct	_	SpacesAfter= 
+357	|	|	X	FM	Foreign=Yes|Person=3	358	appos	_	SpacesAfter=\n
+358	Donald	Donald	PROPN	NE	Gender=Masc|Number=Sing|Person=3	126	appos	_	_
+359	Trump	Trump	PROPN	NE	Person=3	126	flat:name	_	SpacesAfter= 
+360	(	(	PUNCT	$(	PunctType=Brck	361	punct	_	SpaceAfter=No
+361	R	R	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+362	,	,	PUNCT	$,	PunctType=Comm	126	punct	_	SpacesAfter= 
+363	2017–2021	2017–2021	NUM	CARD	Number=Plur|NumType=Card|Person=3	126	appos	_	SpaceAfter=No
+364	)	)	PUNCT	$(	PunctType=Brck	126	punct	_	SpacesAfter= 
+365	|	|	X	FM	Foreign=Yes|Person=3	126	appos	_	SpacesAfter=\n
+366	Joe	Joe	PROPN	NE	Number=Sing|Person=3	126	appos	_	_
+367	Biden	Biden	PROPN	NE	Number=Sing|Person=3	126	flat:name	_	SpacesAfter= 
+368	(	(	PUNCT	$(	PunctType=Brck	129	punct	_	SpaceAfter=No
+369	D	D	NOUN	NN	Gender=Neut|Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+370	,	,	PUNCT	$,	PunctType=Comm	129	punct	_	SpacesAfter= 
+371	seit	seit	ADP	APPR	AdpType=Prep|Case=Dat	129	case	_	SpacesAfter= 
+372	2021	2021	NUM	CARD	Number=Plur|NumType=Card|Person=3	129	nmod	_	SpaceAfter=No
+373	)	)	PUNCT	$(	PunctType=Brck	129	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17237,11 +18258,862 @@
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
 
 # sent_id = 2
-# text = Dunant, Passy |
+# text = Dunant, Passy | 1902:
 1	Dunant	Dunant	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
-3	Passy	Passy	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+3	Passy	Passy	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	1902	1902	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Ducommun, Gobat | 1903:
+1	Ducommun	Ducommun	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Gobat	Gobat	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	Person=3	3	flat	_	SpacesAfter=\n
+5	1903	1903	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Cremer | 1904:
+1	Cremer	Cremer	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1904	1904	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = IDI | 1905: von Suttner | 1906:
+1	IDI	IDI	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1905	1905	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	von	von	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Suttner	Suttner	PROPN	NE	Person=3	1	nmod	_	SpacesAfter= 
+7	|	|	PROPN	NE	Person=3	6	appos	_	SpacesAfter=\n
+8	1906	1906	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Roosevelt | 1907:
+1	Roosevelt	Roosevelt	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1907	1907	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 7
+# text = Moneta, Renault | 1908:
+1	Moneta	Moneta	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Renault	Renault	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	conj	_	SpacesAfter= 
 4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1908	1908	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 8
+# text = Arnoldson, Bajer | 1909:
+1	Arnoldson	Arnoldson	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Bajer	Bajer	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1909	1909	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = Beernaert, Estournelles de Constant | 1910:
+1	Beernaert	Beernaert	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Estournelles	Estournelles	PROPN	NE	Person=3	1	appos	_	_
+4	de	de	PROPN	NE	Number=Sing|Person=3	3	flat:name	_	_
+5	Constant	Constant	PROPN	NE	Gender=Masc|Number=Sing|Person=3	3	flat:name	_	SpacesAfter= 
+6	|	|	X	FM	Person=3	3	appos	_	SpacesAfter=\n
+7	1910	1910	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = IPB | 1911:
+1	IPB	IPB	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	1911	1911	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Asser, Fried | 1912:
+1	Asser	Asser	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Fried	Fried	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1912	1912	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Root | 1913:
+1	Root	Root	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	1913	1913	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = La Fontaine | 1914–1916: nicht verliehen | 1917:
+1	La	La	X	FM	Foreign=Yes|Person=3	0	root	_	_
+2	Fontaine	Fontaine	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+4	1914–1916	1914–1916	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+6	nicht	nicht	PART	PTKNEG	Polarity=Neg	7	advmod	_	_
+7	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	appos	_	SpacesAfter= 
+8	|	|	X	FM	Foreign=Yes|Person=3	7	obj	_	SpacesAfter=\n
+9	1917	1917	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	obl	_	SpaceAfter=No
+10	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 14
+# text = IKRK | 1918: nicht verliehen | 1919:
+1	IKRK	IKRK	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1918	1918	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	appos	_	SpacesAfter= 
+7	|	|	PUNCT	FM	Foreign=Yes|Person=3	6	punct	_	SpacesAfter=\n
+8	1919	1919	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	obl	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 15
+# text = Wilson | 1920:
+1	Wilson	Wilson	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1920	1920	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 16
+# text = Bourgeois | 1921:
+1	Bourgeois	Bourgeois	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	NE	PunctType=Brck	1	appos	_	SpacesAfter=\n
+3	1921	1921	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 17
+# text = Branting, Lange | 1922:
+1	Branting	Branting	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Lange	Lange	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	1922	1922	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 18
+# text = Nansen | 1923–1924: nicht verliehen | 1925:
+1	Nansen	Nansen	NOUN	NN	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	$(	PunctType=Brck	1	appos	_	SpacesAfter=\n
+3	1923–1924	1923–1924	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	appos	_	SpacesAfter= 
+7	|	|	X	FM	Foreign=Yes|Person=3	6	obj	_	SpacesAfter=\n
+8	1925	1925	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	obl	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 19
+# text = Chamberlain, Dawes | 1926:
+1	Chamberlain	Chamberlain	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Dawes	Dawes	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	NE	PunctType=Brck	3	flat	_	SpacesAfter=\n
+5	1926	1926	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 20
+# text = Briand, Stresemann | 1927:
+1	Briand	Briand	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Stresemann	Stresemann	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	1927	1927	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 21
+# text = Buisson, Quidde | 1928: nicht verliehen | 1929:
+1	Buisson	Buisson	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Quidde	Quidde	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	1928	1928	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+7	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
+8	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpacesAfter= 
+9	|	|	PUNCT	FM	Foreign=Yes|Person=3	8	punct	_	SpacesAfter=\n
+10	1929	1929	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	obl	_	SpaceAfter=No
+11	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 22
+# text = Kellogg | 1930:
+1	Kellogg	Kellogg	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1930	1930	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 23
+# text = Söderblom | 1931:
+1	Söderblom	Söderblom	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1931	1931	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 24
+# text = Addams, Butler | 1932: nicht verliehen | 1933:
+1	Addams	Addams	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Butler	Butler	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	1932	1932	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+7	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
+8	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpacesAfter= 
+9	|	|	X	FM	Foreign=Yes|Person=3	8	obj	_	SpacesAfter=\n
+10	1933	1933	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	obl	_	SpaceAfter=No
+11	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 25
+# text = Angell | 1934:
+1	Angell	Angell	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1934	1934	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 26
+# text = Henderson | 1935: von Ossietzky | 1936:
+1	Henderson	Henderson	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1935	1935	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	von	von	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Ossietzky	Ossietzky	PROPN	NE	Person=3	1	nmod	_	SpacesAfter= 
+7	|	|	PROPN	NE	Person=3	6	flat:name	_	SpacesAfter=\n
+8	1936	1936	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 27
+# text = Lamas | 1937:
+1	Lamas	Lamas	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	1937	1937	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 28
+# text = Cecil | 1938:
+1	Cecil	Cecil	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1938	1938	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 29
+# text = Internationales Nansen-Büro für Flüchtlinge | 1939–1943: nicht verliehen | 1944:
+1	Internationales	international	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	Nansen-Büro	Büro	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
+3	für	für	ADP	APPR	AdpType=Prep|Case=Acc	4	case	_	_
+4	Flüchtlinge	Flüchtling	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nmod	_	SpacesAfter= 
+5	|	|	PUNCT	$(	PunctType=Brck	2	punct	_	SpacesAfter=\n
+6	1939–1943	1939–1943	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter= 
+8	nicht	nicht	PART	PTKNEG	Polarity=Neg	9	advmod	_	_
+9	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	2	parataxis	_	SpacesAfter= 
+10	|	|	X	FM	Foreign=Yes|Person=3	9	obj	_	SpacesAfter=\n
+11	1944	1944	NUM	CARD	Number=Plur|NumType=Card|Person=3	9	obl	_	SpaceAfter=No
+12	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter= 
+
+# sent_id = 30
+# text = IKRK | 1945:
+1	IKRK	IKRK	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1945	1945	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 31
+# text = Hull | 1946:
+1	Hull	Hull	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1946	1946	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 32
+# text = Balch, Mott | 1947:
+1	Balch	Balch	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Mott	Mott	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	Person=3	3	flat	_	SpacesAfter=\n
+5	1947	1947	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 33
+# text = The Friends Service Council, AFSC | 1948: nicht verliehen | 1949:
+1	The	The	X	FM	Foreign=Yes|Person=3	0	root	_	_
+2	Friends	Friends	X	FM	Foreign=Yes|Person=3	1	flat	_	_
+3	Service	Service	X	FM	Foreign=Yes|Person=3	1	flat	_	_
+4	Council	Council	X	FM	Foreign=Yes|Person=3	1	flat	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+6	AFSC	AFSC	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+7	|	|	PUNCT	$(	PunctType=Brck	6	punct	_	SpacesAfter=\n
+8	1948	1948	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+10	nicht	nicht	PART	PTKNEG	Polarity=Neg	11	advmod	_	_
+11	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpacesAfter= 
+12	|	|	PUNCT	FM	PunctType=Brck	11	punct	_	SpacesAfter=\n
+13	1949	1949	NUM	CARD	Number=Plur|NumType=Card|Person=3	11	obl	_	SpaceAfter=No
+14	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 34
+# text = Boyd-Orr | 1950:
+1	Boyd-Orr	Boyd-Orr	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1950	1950	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 35
+# text = Bunche | 1951:
+1	Bunche	Bunche	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1951	1951	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 36
+# text = Jouhaux | 1952:
+1	Jouhaux	Jouhaux	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1952	1952	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 37
+# text = Schweitzer | 1953:
+1	Schweitzer	Schweitzer	PROPN	NN	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1953	1953	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 38
+# text = Marshall | 1954:
+1	Marshall	Marshall	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1954	1954	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 39
+# text = UNHCR | 1955–1956: nicht verliehen | 1957:
+1	UNHCR	UNHCR	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	$(	PunctType=Brck	1	flat	_	SpacesAfter=\n
+3	1955–1956	1955–1956	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	appos	_	SpacesAfter= 
+7	|	|	X	FM	Foreign=Yes|Person=3	6	obj	_	SpacesAfter=\n
+8	1957	1957	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	obl	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 40
+# text = Pearson | 1958:
+1	Pearson	Pearson	NOUN	NN	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	1958	1958	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 41
+# text = Pire | 1959:
+1	Pire	Pire	X	FM	Foreign=Yes|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	FM	PunctType=Brck	1	flat	_	SpacesAfter=\n
+3	1959	1959	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 42
+# text = Noel-Baker | 1960:
+1	Noel-Baker	Noel-Baker	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1960	1960	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 43
+# text = Luthuli | 1961:
+1	Luthuli	Luthuli	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	appos	_	SpacesAfter=\n
+3	1961	1961	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 44
+# text = Hammarskjöld | 1962:
+1	Hammarskjöld	Hammarskjöld	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1962	1962	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 45
+# text = Pauling | 1963:
+1	Pauling	Pauling	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	1963	1963	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 46
+# text = IKRK, Liga der Rotkreuz-Gesellschaften | 1964:
+1	IKRK	IKRK	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Liga	Liga	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	_
+4	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	5	det	_	_
+5	Rotkreuz-Gesellschaften	Gesellschaft	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	nmod	_	SpacesAfter= 
+6	|	|	X	NE	Person=3	3	appos	_	SpacesAfter=\n
+7	1964	1964	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 47
+# text = King | 1965:
+1	King	King	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1965	1965	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 48
+# text = UNICEF | 1966–1967: nicht verliehen | 1968:
+1	UNICEF	UNICEF	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	$(	PunctType=Brck	1	flat	_	SpacesAfter=\n
+3	1966–1967	1966–1967	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	appos	_	SpacesAfter= 
+7	|	|	X	FM	Foreign=Yes|Person=3	6	obj	_	SpacesAfter=\n
+8	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	obl	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 49
+# text = Cassin | 1969:
+1	Cassin	Cassin	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Foreign=Yes|Person=3	1	appos	_	SpacesAfter=\n
+3	1969	1969	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 50
+# text = IAO | 1970:
+1	IAO	IAO	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1970	1970	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 51
+# text = Borlaug | 1971:
+1	Borlaug	Borlaug	PROPN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1971	1971	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 52
+# text = Brandt | 1972: nicht verliehen | 1973:
+1	Brandt	Brandt	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1972	1972	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	verliehen	verleihen	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpacesAfter= 
+7	|	|	X	FM	Foreign=Yes|Person=3	6	obj	_	SpacesAfter=\n
+8	1973	1973	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	obl	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 53
+# text = Kissinger, Lê | 1974:
+1	Kissinger	Kissinger	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Lê	Lê	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1974	1974	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 54
+# text = MacBride, Satō | 1975:
+1	MacBride	MacBride	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Satō	Satō	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1975	1975	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 55
+# text = Sacharow | 1976:
+1	Sacharow	Sacharow	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	1976	1976	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 56
+# text = Williams, Corrigan | 1977:
+1	Williams	Williams	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Corrigan	Corrigan	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1977	1977	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 57
+# text = Amnesty International | 1978:
+1	Amnesty	Amnesty	PROPN	NE	Person=3	0	root	_	_
+2	International	International	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter= 
+3	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+4	1978	1978	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 58
+# text = Sadat, Begin | 1979:
+1	Sadat	Sadat	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Begin	Begin	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1979	1979	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 59
+# text = Mutter Teresa | 1980:
+1	Mutter	Mutter	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
+2	Teresa	Teresa	PROPN	NE	Gender=Fem|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	1980	1980	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 60
+# text = Pérez Esquivel | 1981:
+1	Pérez	Pérez	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	_
+2	Esquivel	Esquivel	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PUNCT	NE	Person=3	1	appos	_	SpacesAfter=\n
+4	1981	1981	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 61
+# text = UNHCR | 1982:
+1	UNHCR	UNHCR	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1982	1982	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 62
+# text = Myrdal, García Robles | 1983:
+1	Myrdal	Myrdal	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	García	García	PROPN	NE	Person=3	1	conj	_	_
+4	Robles	Robles	PROPN	NE	Case=Gen|Number=Sing|Person=3	3	flat:name	_	SpacesAfter= 
+5	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+6	1983	1983	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 63
+# text = Wałęsa | 1984:
+1	Wałęsa	Wałęsa	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	appos	_	SpacesAfter=\n
+3	1984	1984	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 64
+# text = Tutu | 1985:
+1	Tutu	Tutu	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1985	1985	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 65
+# text = IPPNW | 1986:
+1	IPPNW	IPPNW	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1986	1986	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 66
+# text = Wiesel | 1987:
+1	Wiesel	Wiesel	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1987	1987	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 67
+# text = Arias Sánchez | 1988:
+1	Arias	Arias	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+2	Sánchez	Sánchez	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+4	1988	1988	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 68
+# text = UN-Friedenstruppen | 1989:
+1	UN-Friedenstruppen	Truppe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	appos	_	SpacesAfter=\n
+3	1989	1989	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 69
+# text = Dalai Lama | 1990:
+1	Dalai	Dalai	PROPN	NE	Person=3	0	root	_	_
+2	Lama	Lama	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	1990	1990	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 70
+# text = Gorbatschow | 1991:
+1	Gorbatschow	Gorbatschow	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1991	1991	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 71
+# text = Suu Kyi | 1992:
+1	Suu	Suu	PROPN	NE	Person=3	0	root	_	_
+2	Kyi	Kyi	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+3	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	1992	1992	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 72
+# text = Menchú | 1993:
+1	Menchú	Menchú	NOUN	NN	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	NE	PunctType=Brck	1	appos	_	SpacesAfter=\n
+3	1993	1993	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 73
+# text = Mandela, Klerk | 1994:
+1	Mandela	Mandela	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Klerk	Klerk	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1994	1994	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 74
+# text = Arafat, Peres, Rabin | 1995:
+1	Arafat	Arafat	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Peres	Peres	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Rabin	Rabin	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	5	appos	_	SpacesAfter=\n
+7	1995	1995	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 75
+# text = Rotblat, Pugwash Conferences on Science and World Affairs | 1996:
+1	Rotblat	Rotblat	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Pugwash	Pugwash	X	FM	Person=3	1	appos	_	_
+4	Conferences	Conferences	X	FM	Foreign=Yes|Person=3	3	flat	_	_
+5	on	on	X	FM	Foreign=Yes	3	flat	_	_
+6	Science	Science	X	FM	Foreign=Yes|Person=3	3	flat	_	_
+7	and	and	X	FM	Foreign=Yes|Person=3	3	flat	_	_
+8	World	World	X	FM	Foreign=Yes|Person=3	3	flat	_	_
+9	Affairs	Affairs	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter= 
+10	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+11	1996	1996	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+12	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 76
+# text = Ximenes Belo, Ramos-Horta | 1997:
+1	Ximenes	Ximenes	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+2	Belo	Belo	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
+4	Ramos-Horta	Ramos-Horta	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+5	|	|	PROPN	NE	Person=3	4	flat:name	_	SpacesAfter=\n
+6	1997	1997	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 77
+# text = ICBL, Williams | 1998:
+1	ICBL	ICBL	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Williams	Williams	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	Person=3	3	flat:name	_	SpacesAfter=\n
+5	1998	1998	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 78
+# text = Hume, Trimble | 1999:
+1	Hume	Hume	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Trimble	Trimble	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Person=3	3	flat	_	SpacesAfter=\n
+5	1999	1999	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 79
+# text = Ärzte ohne Grenzen | 2000:
+1	Ärzte	Arzt	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
+2	ohne	ohne	ADP	APPR	AdpType=Prep|Case=Acc	3	case	_	_
+3	Grenzen	Grenze	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	nmod	_	SpacesAfter= 
+4	|	|	NOUN	NE	Person=3	1	appos	_	SpacesAfter=\n
+5	2000	2000	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 80
+# text = Kim | 2001:
+1	Kim	Kim	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2001	2001	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 81
+# text = UN, Annan | 2002:
+1	UN	UN	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Annan	Annan	NOUN	NN	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Person=3	3	appos	_	SpacesAfter=\n
+5	2002	2002	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 82
+# text = Carter | 2003:
+1	Carter	Carter	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+3	2003	2003	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 83
+# text = Ebadi | 2004:
+1	Ebadi	Ebadi	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	2004	2004	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 84
+# text = Maathai | 2005:
+1	Maathai	Maathai	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2005	2005	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 85
+# text = IAEO, el-Baradei | 2006:
+1	IAEO	IAEO	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	el-Baradei	el-Baradei	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2006	2006	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 86
+# text = Yunus, Grameen Bank | 2007:
+1	Yunus	Yunus	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Grameen	Grameen	NOUN	NN	Person=3	1	appos	_	_
+4	Bank	Bank	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	appos	_	SpacesAfter= 
+5	|	|	X	FM	Person=3	4	appos	_	SpacesAfter=\n
+6	2007	2007	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 87
+# text = IPCC, Gore | 2008:
+1	IPCC	IPCC	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Gore	Gore	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2008	2008	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 88
+# text = Ahtisaari | 2009:
+1	Ahtisaari	Ahtisaari	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	NE	PunctType=Brck	1	flat	_	SpacesAfter=\n
+3	2009	2009	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 89
+# text = Obama | 2010:
+1	Obama	Obama	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	2010	2010	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 90
+# text = Liu | 2011:
+1	Liu	Liu	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	2011	2011	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 91
+# text = Sirleaf, Gbowee, Karman | 2012:
+1	Sirleaf	Sirleaf	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Gbowee	Gbowee	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Karman	Karman	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+6	|	|	X	NE	Person=3	5	appos	_	SpacesAfter=\n
+7	2012	2012	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 92
+# text = EU | 2013:
+1	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	2013	2013	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 93
+# text = OPCW | 2014:
+1	OPCW	OPCW	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	2014	2014	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 94
+# text = Satyarthi, Yousafzai | 2015:
+1	Satyarthi	Satyarthi	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Yousafzai	Yousafzai	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	Person=3	3	punct	_	SpacesAfter=\n
+5	2015	2015	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 95
+# text = Quartet du dialogue national | 2016:
+1	Quartet	Quartet	NOUN	NN	Foreign=Yes|Person=3	0	root	_	_
+2	du	du	X	FM	Foreign=Yes|Person=3	1	appos	_	_
+3	dialogue	dialogue	X	FM	Foreign=Yes|Person=3	2	flat	_	_
+4	national	national	X	FM	Foreign=Yes|Person=3	2	flat	_	SpacesAfter= 
+5	|	|	X	FM	Foreign=Yes|Person=3	2	flat	_	SpacesAfter=\n
+6	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	flat	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 96
+# text = Santos | 2017:
+1	Santos	Santos	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2017	2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 97
+# text = ICAN | 2018:
+1	ICAN	ICAN	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	2018	2018	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 98
+# text = Mukwege, Murad | 2019:
+1	Mukwege	Mukwege	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Murad	Murad	PROPN	NE	Gender=Masc|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	2019	2019	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 99
+# text = Abiy | 2020:
+1	Abiy	Abiy	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	2020	2020	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 100
+# text = WFP | 2021:
+1	WFP	WFP	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	FM	Person=3	1	flat	_	SpacesAfter=\n
+3	2021	2021	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 101
+# text = Muratow, Ressa
+1	Muratow	Muratow	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Ressa	Ressa	PROPN	NE	Person=3	1	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17254,6 +19126,59 @@
 2	2	2	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
 3	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\s\n
 
+# sent_id = 2
+# text = Thomas | McLean | Baker | Robinson | McRoberts | Semple | S. Douglas | Browning | Richardson | Yates | Logan |
+1	Thomas	Thomas	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+3	McLean	McLean	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+5	Baker	Baker	PROPN	NE	Number=Sing|Person=3	3	conj	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+7	Robinson	Robinson	PROPN	NE	Number=Sing|Person=3	3	appos	_	SpacesAfter= 
+8	|	|	PUNCT	NE	PunctType=Brck	7	punct	_	SpacesAfter=\n
+9	McRoberts	McRoberts	PROPN	NE	Case=Gen|Number=Sing|Person=3	7	appos	_	SpacesAfter= 
+10	|	|	PUNCT	$(	PunctType=Brck	11	punct	_	SpacesAfter=\n
+11	Semple	Semple	PROPN	NE	Person=3	3	conj	_	SpacesAfter= 
+12	|	|	PUNCT	$(	PunctType=Brck	11	flat	_	SpacesAfter=\n
+13	S.	S.	PROPN	NE	Number=Sing|Person=3	11	flat:name	_	SpacesAfter= 
+14	Douglas	Douglas	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	flat:name	_	SpacesAfter= 
+15	|	|	PUNCT	NE	PunctType=Brck	16	punct	_	SpacesAfter=\n
+16	Browning	Browning	PROPN	NE	Number=Sing|Person=3	11	appos	_	SpacesAfter= 
+17	|	|	PUNCT	NE	PunctType=Brck	18	punct	_	SpacesAfter=\n
+18	Richardson	Richardson	PROPN	NE	Number=Sing|Person=3	16	appos	_	SpacesAfter= 
+19	|	|	PROPN	NE	Person=3	18	flat	_	SpacesAfter=\n
+20	Yates	Yates	PROPN	NE	Case=Nom|Number=Sing|Person=3	18	flat:name	_	SpacesAfter= 
+21	|	|	X	FM	Foreign=Yes|Person=3	18	flat	_	SpacesAfter=\n
+22	Logan	Logan	PROPN	NE	Number=Sing|Person=3	18	flat:name	_	SpacesAfter= 
+23	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Davis | Cullom | Lewis | McCormick | Deneen | Lewis | Slattery | Brooks | P. Douglas | Percy | Simon | Durbin
+1	Davis	Davis	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	Cullom	Cullom	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+5	Lewis	Lewis	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+6	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+7	McCormick	McCormick	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	$(	PunctType=Brck	9	punct	_	SpacesAfter=\n
+9	Deneen	Deneen	PROPN	NE	Person=3	3	appos	_	SpacesAfter= 
+10	|	|	X	NE	Foreign=Yes|Person=3	9	flat	_	SpacesAfter=\n
+11	Lewis	Lewis	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	flat:name	_	SpacesAfter= 
+12	|	|	PROPN	NE	Person=3	9	flat	_	SpacesAfter=\n
+13	Slattery	Slattery	PROPN	NE	Number=Sing|Person=3	9	flat:name	_	SpacesAfter= 
+14	|	|	X	NE	Foreign=Yes|Person=3	15	flat	_	SpacesAfter=\n
+15	Brooks	Brooks	PROPN	NE	Case=Nom|Number=Sing|Person=3	9	flat:name	_	SpacesAfter= 
+16	|	|	X	NE	Foreign=Yes|Person=3	15	flat	_	SpacesAfter=\n
+17	P.	P.	PROPN	NE	Number=Sing|Person=3	15	flat:name	_	SpacesAfter= 
+18	Douglas	Douglas	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	flat:name	_	SpacesAfter= 
+19	|	|	X	NE	Person=3	17	flat	_	SpacesAfter=\n
+20	Percy	Percy	PROPN	NE	Gender=Masc|Number=Sing|Person=3	15	flat:name	_	SpacesAfter= 
+21	|	|	X	NE	Foreign=Yes|Person=3	20	flat	_	SpacesAfter=\n
+22	Simon	Simon	PROPN	NE	Gender=Masc|Number=Sing|Person=3	20	flat:name	_	SpacesAfter= 
+23	|	|	PROPN	NE	Person=3	20	flat:name	_	SpacesAfter=\n
+24	Durbin	Durbin	PROPN	NE	Person=3	20	flat:name	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17265,12 +19190,72 @@
 2	3	3	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpaceAfter=No
 3	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\s\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+# sent_id = 2
+# text = Edwards | McLean | Kane | Ewing | Young |
+1	Edwards	Edwards	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+3	McLean	McLean	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	_	3	flat	_	SpacesAfter=\n
+5	Kane	Kane	PROPN	NE	Number=Sing|Person=3	3	appos	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+7	Ewing	Ewing	PROPN	NE	Number=Sing|Person=3	5	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	NE	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+9	Young	Young	PROPN	NE	Number=Sing|Person=3	5	flat:name	_	SpacesAfter= 
+10	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Breese | Shields | Trumbull | Oglesby | Logan | Farwell | Palmer | Mason | Hopkins | Lorimer | Sherman | McKinley |
+1	Breese	Breese	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	FM	_	1	flat	_	SpacesAfter=\n
+3	Shields	Shields	PROPN	NE	Case=Gen|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PUNCT	NE	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+5	Trumbull	Trumbull	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+6	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+7	Oglesby	Oglesby	PROPN	NE	Person=3	3	appos	_	SpacesAfter= 
+8	|	|	PUNCT	NE	_	7	flat	_	SpacesAfter=\n
+9	Logan	Logan	PROPN	NE	Number=Sing|Person=3	7	appos	_	SpacesAfter= 
+10	|	|	X	NE	Foreign=Yes|Person=3	9	flat	_	SpacesAfter=\n
+11	Farwell	Farwell	PROPN	NE	Person=3	7	flat:name	_	SpacesAfter= 
+12	|	|	X	FM	Foreign=Yes|Person=3	11	flat	_	SpacesAfter=\n
+13	Palmer	Palmer	PROPN	NE	Number=Sing|Person=3	11	flat:name	_	SpacesAfter= 
+14	|	|	PUNCT	$(	PunctType=Brck	15	punct	_	SpacesAfter=\n
+15	Mason	Mason	PROPN	NE	Gender=Masc|Number=Sing|Person=3	11	appos	_	SpacesAfter= 
+16	|	|	PUNCT	NE	_	17	flat	_	SpacesAfter=\n
+17	Hopkins	Hopkins	PROPN	NE	Case=Nom|Number=Sing|Person=3	15	appos	_	SpacesAfter= 
+18	|	|	PUNCT	NE	Foreign=Yes|Person=3	19	punct	_	SpacesAfter=\n
+19	Lorimer	Lorimer	PROPN	NE	Person=3	17	appos	_	SpacesAfter= 
+20	|	|	PUNCT	NE	Foreign=Yes|Person=3	19	punct	_	SpacesAfter=\n
+21	Sherman	Sherman	PROPN	NE	Number=Sing|Person=3	19	appos	_	SpacesAfter= 
+22	|	|	PUNCT	NE	_	21	flat	_	SpacesAfter=\n
+23	McKinley	McKinley	PROPN	NE	Case=Nom|Number=Sing|Person=3	19	flat:name	_	SpacesAfter= 
+24	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Glenn | Dieterich | Lucas | Dirksen | Smith | Stevenson | Dixon | Moseley Braun | Fitzgerald | Obama | Burris | Kirk | Duckworth
+1	Glenn	Glenn	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PUNCT	NE	_	1	punct	_	SpacesAfter=\n
+3	Dieterich	Dieterich	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	Lucas	Lucas	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+6	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+7	Dirksen	Dirksen	PROPN	NE	Number=Sing|Person=3	3	flat:name	_	SpacesAfter= 
+8	|	|	PUNCT	$(	PunctType=Brck	9	punct	_	SpacesAfter=\n
+9	Smith	Smith	PROPN	NE	Number=Sing|Person=3	3	appos	_	SpacesAfter= 
+10	|	|	PUNCT	NE	_	9	flat	_	SpacesAfter=\n
+11	Stevenson	Stevenson	PROPN	NE	Number=Sing|Person=3	9	appos	_	SpacesAfter= 
+12	|	|	X	NE	_	11	flat	_	SpacesAfter=\n
+13	Dixon	Dixon	PROPN	NE	Case=Nom|Number=Sing|Person=3	11	flat:name	_	SpacesAfter= 
+14	|	|	X	NE	Foreign=Yes|Person=3	11	flat	_	SpacesAfter=\n
+15	Moseley	Moseley	PROPN	NE	Number=Sing|Person=3	11	flat:name	_	_
+16	Braun	Braun	PROPN	NE	Number=Sing|Person=3	13	flat:name	_	SpacesAfter= 
+17	|	|	X	NE	Foreign=Yes|Person=3	18	flat	_	SpacesAfter=\n
+18	Fitzgerald	Fitzgerald	PROPN	NE	Number=Sing|Person=3	13	appos	_	SpacesAfter= 
+19	|	|	X	NE	Foreign=Yes|Person=3	18	flat	_	SpacesAfter=\n
+20	Obama	Obama	PROPN	NE	Person=3	18	appos	_	SpacesAfter= 
+21	|	|	X	NE	Foreign=Yes|Person=3	20	flat	_	SpacesAfter=\n
+22	Burris	Burris	PROPN	NE	Person=3	20	appos	_	SpacesAfter= 
+23	|	|	X	FM	Foreign=Yes|Person=3	22	flat	_	SpacesAfter=\n
+24	Kirk	Kirk	PROPN	NE	Number=Sing|Person=3	22	flat:name	_	SpacesAfter= 
+25	|	|	X	NE	Foreign=Yes|Person=3	22	flat:name	_	SpacesAfter=\n
+26	Duckworth	Duckworth	PROPN	NE	Number=Sing|Person=3	22	flat:name	_	SpacesAfter=\n
 

@@ -1,5 +1,3 @@
-# https://ru.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Футбол — Википедия
 1	Футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	—	—	PUNCT	_	_	3	punct	_	_
-3	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Футбол
-1	Футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -71,6 +60,21 @@
 42	соперника	соперник	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
 43	.	.	PUNCT	_	_	15	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = В настоящее время самый популярный и массовый вид спорта в мире.
+1	В	в	ADP	_	_	8	advmod	_	_
+2	настоящее	настоящий	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	1	fixed	_	_
+3	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	1	fixed	_	_
+4	самый	самый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	популярный	популярный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+6	и	и	CCONJ	_	_	7	cc	_	_
+7	массовый	массовый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	conj	_	_
+8	вид	вид	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+9	спорта	спорт	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
+10	в	в	ADP	_	_	11	case	_	_
+11	мире	мир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -97,7 +101,7 @@
 # sent_id = 1
 # text = Названия игры
 1	Названия	название	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
-2	игры	игра	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	игры	игра	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -206,7 +210,7 @@
 14	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 3
-# text = Сначала в Англии было распространено сокращение «assoc.», затем в 1880-х годах от него образовался термин «соккер» (англ. soccer) путём добавления к сокращению «-soc-» суффикса «-er» на оксфордский манер[en] (по аналогии регби-футбол сокращённо назывался «раггер» (англ. rugger)).
+# text = Сначала в Англии было распространено сокращение «assoc.», затем в 1880-х годах от него образовался термин «соккер» (англ. soccer) путём добавления к сокращению «-soc-» суффикса «-er» на оксфордский манер (по аналогии регби-футбол сокращённо назывался «раггер» (англ. rugger)).
 1	Сначала	сначала	ADV	_	Degree=Pos	5	advmod	_	_
 2	в	в	ADP	_	_	3	case	_	_
 3	Англии	Англия	PROPN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	5	obl	_	_
@@ -236,27 +240,25 @@
 27	сокращению	сокращение	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	25	nmod	_	_
 28	«-soc-»	«-soc-»	PUNCT	_	_	29	punct	_	_
 29	суффикса	суффикс	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	27	nmod	_	_
-30	«-er»	«-er»	X	_	_	29	flat:foreign	_	_
+30	«-er»	«-er»	PUNCT	_	_	29	flat:foreign	_	_
 31	на	на	ADP	_	_	33	case	_	_
 32	оксфордский	оксфордский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	33	amod	_	_
-33	манер[	манер[	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
-34	en	en	X	_	Foreign=Yes	33	flat:foreign	_	SpaceAfter=No
-35	]	]	PUNCT	_	_	33	punct	_	_
-36	(	(	PUNCT	_	_	43	punct	_	SpaceAfter=No
-37	по	по	ADP	_	_	38	case	_	_
-38	аналогии	аналогия	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	43	obl	_	_
-39	регби	регби	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	41	compound	_	SpaceAfter=No
-40	-	-	PUNCT	_	_	41	punct	_	SpaceAfter=No
-41	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	43	nsubj	_	_
-42	сокращённо	сокраенный	ADV	_	Degree=Pos	43	advmod	_	_
-43	назывался	называться	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	27	parataxis	_	_
-44	«раггер»	«раггер»	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	43	obl	_	_
-45	(	(	PUNCT	_	_	46	punct	_	SpaceAfter=No
-46	англ.	английский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	44	amod	_	SpacesAfter= 
-47	rugger	rugger	X	_	Foreign=Yes	44	flat:foreign	_	SpaceAfter=No
-48	)	)	PUNCT	_	_	47	punct	_	SpaceAfter=No
-49	)	)	PUNCT	_	_	43	punct	_	SpaceAfter=No
-50	.	.	PUNCT	_	_	5	punct	_	_
+33	манер	манер	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	27	nmod	_	_
+34	(	(	PUNCT	_	_	41	punct	_	SpaceAfter=No
+35	по	по	ADP	_	_	36	case	_	_
+36	аналогии	аналогия	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	41	obl	_	_
+37	регби	регби	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	41	nsubj	_	SpaceAfter=No
+38	-	-	PUNCT	_	_	39	punct	_	SpaceAfter=No
+39	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	37	appos	_	_
+40	сокращённо	сокраенный	ADV	_	Degree=Pos	41	advmod	_	_
+41	назывался	называться	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	33	parataxis	_	_
+42	«раггер»	«раггер»	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	41	nsubj	_	_
+43	(	(	PUNCT	_	_	44	punct	_	SpaceAfter=No
+44	англ.	английский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	42	amod	_	SpacesAfter= 
+45	rugger	rugger	X	_	Foreign=Yes	42	flat:foreign	_	SpaceAfter=No
+46	)	)	PUNCT	_	_	45	punct	_	SpaceAfter=No
+47	)	)	PUNCT	_	_	41	punct	_	SpaceAfter=No
+48	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = 4
 # text = В периодике термин «соккер» используется по крайней мере с 1892 года.
@@ -483,7 +485,7 @@
 # sent_id = 1
 # text = История футбола
 1	История	история	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -494,7 +496,7 @@
 # text = Ранние разновидности футбола
 1	Ранние	ранний	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	разновидности	разновидность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
-3	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
+3	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -571,7 +573,7 @@
 # sent_id = 1
 # text = Первые правила
 1	Первые	первый	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	правила	правило	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+2	правила	правило	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -772,7 +774,7 @@
 3	и	и	CCONJ	_	_	4	cc	_	_
 4	распространение	распространение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
 5	по	по	ADP	_	_	6	case	_	_
-6	планете	планета	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	4	nmod	_	SpacesAfter=\n
+6	планете	планета	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -851,6 +853,239 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Всякий игрок клуба, получающий от клуба вознаграждение в какой-бы то ни было форме или денежное возмещение, превышающее его личные расходы или средства, в связи с выходом на ту или иную игру, автоматически отстраняется в соревнованиях на Кубок, в любых соревнованиях под эгидой ФА и в международных турнирах.
+1	Всякий	всякий	DET	_	Case=Nom|Gender=Masc|Number=Sing	2	det	_	SpacesBefore=\n
+2	игрок	игрок	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	37	nsubj:pass	_	_
+3	клуба	клуб	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	получающий	получать	VERB	_	Aspect=Imp|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	2	acl	_	_
+6	от	от	ADP	_	_	7	case	_	_
+7	клуба	клуб	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	obl	_	_
+8	вознаграждение	вознаграждение	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	5	obj	_	_
+9	в	в	ADP	_	_	14	case	_	_
+10	какой-бы	какой-бы	DET	_	Case=Loc|Gender=Fem|Number=Sing	14	det	_	_
+11	то	то	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	10	fixed	_	_
+12	ни	ни	PART	_	Polarity=Neg	10	fixed	_	_
+13	было	быть	VERB	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	10	fixed	_	_
+14	форме	форма	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	8	nmod	_	_
+15	или	или	CCONJ	_	_	17	cc	_	_
+16	денежное	денежный	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+17	возмещение	возмещение	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	8	conj	_	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	_	_
+19	превышающее	превышать	VERB	_	Aspect=Imp|Case=Acc|Gender=Neut|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	17	acl	_	_
+20	его	его	DET	_	_	22	det	_	_
+21	личные	личный	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	22	amod	_	_
+22	расходы	расход	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	19	obj	_	_
+23	или	или	CCONJ	_	_	24	cc	_	_
+24	средства	средства	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Plur	22	conj	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	19	punct	_	_
+26	в	в	ADP	_	_	29	case	_	_
+27	связи	связь	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	26	fixed	_	_
+28	с	с	ADP	_	_	26	fixed	_	_
+29	выходом	выход	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	37	obl	_	_
+30	на	на	ADP	_	_	34	case	_	_
+31	ту	тот	DET	_	Case=Acc|Gender=Fem|Number=Sing	34	det	_	_
+32	или	или	CCONJ	_	_	33	cc	_	_
+33	иную	иной	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	31	conj	_	_
+34	игру	игра	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	29	nmod	_	SpaceAfter=No
+35	,	,	PUNCT	_	_	19	punct	_	_
+36	автоматически	автоматически	ADV	_	Degree=Pos	37	advmod	_	_
+37	отстраняется	отстранять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+38	в	в	ADP	_	_	39	case	_	_
+39	соревнованиях	соревнование	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Plur	37	obl	_	_
+40	на	на	ADP	_	_	41	case	_	_
+41	Кубок	Кубок	PROPN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	39	nmod	_	SpaceAfter=No
+42	,	,	PUNCT	_	_	45	punct	_	_
+43	в	в	ADP	_	_	45	case	_	_
+44	любых	любой	DET	_	Case=Loc|Number=Plur	45	det	_	_
+45	соревнованиях	соревнование	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Plur	39	conj	_	_
+46	под	под	ADP	_	_	47	case	_	_
+47	эгидой	эгида	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	45	nmod	_	_
+48	ФА	ФА	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	47	nmod	_	_
+49	и	и	CCONJ	_	_	52	cc	_	_
+50	в	в	ADP	_	_	52	case	_	_
+51	международных	международный	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	52	amod	_	_
+52	турнирах	турнир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	39	conj	_	SpaceAfter=No
+53	.	.	PUNCT	_	_	37	punct	_	_
+
+# sent_id = 2
+# text = Клуб, нанявший такого игрока, автоматически исключается из Ассоциации.
+1	Клуб	клуб	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj:pass	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	нанявший	нанять	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	1	acl	_	_
+4	такого	такой	DET	_	Case=Acc|Gender=Masc|Number=Sing	5	det	_	_
+5	игрока	игрок	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	_	_
+7	автоматически	автоматически	ADV	_	Degree=Pos	8	advmod	_	_
+8	исключается	исключать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+9	из	из	ADP	_	_	10	case	_	_
+10	Ассоциации	Ассоциация	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	8	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = В начале 1884 года клуб «Аптон Парк» обвинил «Престон Норт Энд» в том, что футболистам этого клуба платят зарплату.
+1	В	в	ADP	_	_	2	case	_	SpacesBefore=\s
+2	начале	начало	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	8	obl	_	_
+3	1884	1884	NUM	_	_	4	nummod	_	_
+4	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+5	клуб	клуб	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
+6	«Аптон	«аптон	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	appos	_	_
+7	Парк»	Парк»	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	appos	_	_
+8	обвинил	обвинить	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	«Престон	«престон	PROPN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	_
+10	Норт	Норт	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	appos	_	_
+11	Энд»	Энд»	PROPN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	appos	_	_
+12	в	в	ADP	_	_	13	case	_	_
+13	том	то	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	8	obl	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	19	punct	_	_
+15	что	что	SCONJ	_	_	19	mark	_	_
+16	футболистам	футболист	NOUN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Plur	19	iobj	_	_
+17	этого	этот	DET	_	Case=Gen|Gender=Masc|Number=Sing	18	det	_	_
+18	клуба	клуб	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	_
+19	платят	платить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl	_	_
+20	зарплату	зарплата	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	19	obj	_	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 2
+# text = Президент «Престона» Уильям Саддел также это признал.
+1	Президент	президент	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+2	«Престона»	«престонать	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	Уильям	Уильям	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
+4	Саддел	Саддел	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	flat:name	_	_
+5	также	также	ADV	_	Degree=Pos	7	advmod	_	_
+6	это	это	PRON	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	7	obj	_	_
+7	признал	признать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 3
+# text = Клуб был исключён из ФА.
+1	Клуб	клуб	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	nsubj:pass	_	_
+2	был	быть	AUX	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	исключён	исключить	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+4	из	из	ADP	_	_	5	case	_	_
+5	ФА	ФА	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 4
+# text = А в 1885 году Футбольная ассоциация всё-таки разрешила платить футболистам зарплату.
+1	А	а	CCONJ	_	_	8	cc	_	_
+2	в	в	ADP	_	_	4	case	_	_
+3	1885	1885	NUM	_	_	4	nummod	_	_
+4	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	8	obl	_	_
+5	Футбольная	футбольный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	ассоциация	ассоциация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+7	всё-таки	все-таки	PART	_	_	8	advmod	_	_
+8	разрешила	разрешить	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	платить	платить	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	футболистам	футболист	NOUN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Plur	9	iobj	_	_
+11	зарплату	зарплата	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 5
+# text = Это привело к созданию первой в мире регулярной Футбольной лиги.
+1	Это	это	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	привело	привести	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	к	к	ADP	_	_	4	case	_	_
+4	созданию	создание	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	2	obl	_	_
+5	первой	первый	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+6	в	в	ADP	_	_	7	case	_	_
+7	мире	мир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	5	nmod	_	_
+8	регулярной	регулярный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+9	Футбольной	футбольный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	лиги	лига	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 6
+# text = Чемпионом этого турнира стал «Престон Норт Энд».
+1	Чемпионом	чемпион	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	4	obl	_	_
+2	этого	этот	DET	_	Case=Gen|Gender=Masc|Number=Sing	3	det	_	_
+3	турнира	турнир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+4	стал	стать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	_
+5	«Престон	«престон	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+6	Норт	Норт	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	appos	_	_
+7	Энд»	Энд»	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	appos	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 7
+# text = 30 ноября 1872 года был проведён первый в истории международный матч.
+1	30	30	NUM	_	_	6	nummod	_	_
+2	ноября	ноябрь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	flat	_	_
+3	1872	1872	NUM	_	_	4	nummod	_	_
+4	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+5	был	быть	AUX	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	проведён	провести	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+7	первый	первый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+8	в	в	ADP	_	_	9	case	_	_
+9	истории	история	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	7	nmod	_	_
+10	международный	международный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	матч	матч	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	nsubj:pass	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 8
+# text = Он прошёл между сборными Англии и Шотландии.
+1	Он	он	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_
+2	прошёл	пройти	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	между	между	ADP	_	_	4	case	_	_
+4	сборными	сборный	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	2	obl	_	_
+5	Англии	Англия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	и	и	CCONJ	_	_	7	cc	_	_
+7	Шотландии	Шотландия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 9
+# text = В 1904 году в Париже была основана ФИФА, управляющая организация в футболе.
+1	В	в	ADP	_	_	3	case	_	_
+2	1904	1904	NUM	_	_	3	nummod	_	_
+3	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+4	в	в	ADP	_	_	5	case	_	_
+5	Париже	Париж	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+6	была	быть	AUX	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
+7	основана	основать	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+8	ФИФА	ФИФА	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	nsubj:pass	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	_	_
+10	управляющая	управлять	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	11	amod	_	_
+11	организация	организация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	appos	_	_
+12	в	в	ADP	_	_	13	case	_	_
+13	футболе	футбол	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 10
+# text = В неё вошли: Бельгия, Дания, Франция, Нидерланды, Испания (как ФК «Мадрид»), Швеция и Швейцария.
+1	В	в	ADP	_	_	2	case	_	_
+2	неё	она	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3	3	obl	_	_
+3	вошли	войти	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	_	_	3	punct	_	_
+5	Бельгия	Бельгия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	Дания	Дания	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	Франция	Франция	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	Нидерланды	Нидерланды	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	Испания	Испания	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
+14	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No
+15	как	как	SCONJ	_	_	16	mark	_	_
+16	ФК	ФК	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	13	parataxis	_	_
+17	«Мадрид»	«мадрид»	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	16	appos	_	SpaceAfter=No
+18	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	Швеция	Швеция	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
+21	и	и	CCONJ	_	_	22	cc	_	_
+22	Швейцария	Швейцария	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = В 1901 году в Монтевидео состоялся первый в истории матч с участием сборных, не представлявших Британские острова — хозяева, сборная Уругвая в упорной борьбе уступили Аргентине со счётом 2:3.
 1	В	в	ADP	_	_	3	case	_	_
 2	1901	1901	NUM	_	_	3	nummod	_	_
@@ -896,7 +1131,7 @@
 # text = Начало международных соревнований
 1	Начало	начало	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	международных	международный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
-3	соревнований	соревнование	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpacesAfter=\n
+3	соревнований	соревнование	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1076,7 +1311,7 @@
 # newpar
 # sent_id = 1
 # text = Инвентарь
-1	Инвентарь	инвентарь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+1	Инвентарь	инвентарь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1085,7 +1320,7 @@
 # newpar
 # sent_id = 1
 # text = Мяч
-1	Мяч	мяч	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+1	Мяч	мяч	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1145,7 +1380,7 @@
 # newpar
 # sent_id = 1
 # text = Поле
-1	Поле	поле	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+1	Поле	поле	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1263,7 +1498,7 @@
 # newpar
 # sent_id = 1
 # text = Ворота
-1	Ворота	ворота	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+1	Ворота	ворота	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1321,7 +1556,7 @@
 # newpar
 # sent_id = 1
 # text = Разметка
-1	Разметка	разметка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Разметка	разметка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1371,11 +1606,41 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Название линий поля:
+# text = Название линий поля: Две длинные линии, ограничивающие поле для игры, называются боковыми линиями; две короткие линии — лицевыми линиями или линиями ворот, так как на них располагаются ворота.
 1	Название	название	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	линий	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	1	nmod	_	_
 3	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
 4	:	:	PUNCT	_	_	1	punct	_	SpacesAfter=\n
+5	Две	два	NUM	_	Case=Nom|Gender=Fem	7	nummod:gov	_	_
+6	длинные	длинный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	линии	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	14	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	ограничивающие	ограничивать	VERB	_	Aspect=Imp|Case=Nom|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+10	поле	поле	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	9	obj	_	_
+11	для	для	ADP	_	_	12	case	_	_
+12	игры	игра	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	9	punct	_	_
+14	называются	называться	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	1	parataxis	_	_
+15	боковыми	боковой	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	16	amod	_	_
+16	линиями	линия	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	14	obl	_	SpaceAfter=No
+17	;	;	PUNCT	_	_	14	punct	_	_
+18	две	два	NUM	_	Case=Nom|Gender=Fem	20	nummod:gov	_	_
+19	короткие	короткий	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	20	amod	_	_
+20	линии	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	14	conj	_	SpacesAfter= 
+21	—	—	PUNCT	_	_	23	punct	_	_
+22	лицевыми	лицевой	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	23	amod	_	_
+23	линиями	линия	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	14	conj	_	_
+24	или	или	CCONJ	_	_	25	cc	_	_
+25	линиями	линия	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	23	conj	_	_
+26	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	25	nmod	_	SpaceAfter=No
+27	,	,	PUNCT	_	_	32	punct	_	_
+28	так	так	ADV	_	Degree=Pos	32	mark	_	_
+29	как	как	SCONJ	_	_	28	fixed	_	_
+30	на	на	ADP	_	_	31	case	_	_
+31	них	они	PRON	_	Case=Loc|Number=Plur|Person=3	32	obl	_	_
+32	располагаются	располагаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	23	advcl	_	_
+33	ворота	ворота	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	32	nsubj	_	SpaceAfter=No
+34	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1388,16 +1653,261 @@
 2	линия	линия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Поле делится на две половины с помощью средней линии, соединяющей середины боковых линий.
+1	Поле	поле	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	делится	делиться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+3	на	на	ADP	_	_	5	case	_	_
+4	две	два	NUM	_	Animacy=Inan|Case=Acc|Gender=Fem	5	nummod:gov	_	_
+5	половины	половина	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	obl	_	_
+6	с	с	ADP	_	_	9	case	_	_
+7	помощью	помощь	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	6	fixed	_	_
+8	средней	средний	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
+9	линии	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	obl	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	соединяющей	соединять	VERB	_	Aspect=Imp|Case=Gen|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+12	середины	середина	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	11	obj	_	_
+13	боковых	боковой	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	14	amod	_	_
+14	линий	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 3
+# text = Посередине средней линии делается отметка центра поля — сплошной круг диаметром 0,3 м (1 фут).
+1	Посередине	посередине	ADV	_	Degree=Pos	4	advmod	_	_
+2	средней	средний	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	линии	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
+4	делается	делать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	отметка	отметка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj:pass	_	_
+6	центра	центр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+7	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	SpacesAfter= 
+8	—	—	PUNCT	_	_	10	punct	_	_
+9	сплошной	сплошной	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	круг	круг	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	parataxis	_	_
+11	диаметром	диаметр	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	10	nmod	_	_
+12	0,3	0,3	NUM	_	_	13	nummod	_	_
+13	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	_
+14	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No
+15	1	1	NUM	_	_	16	nummod	_	_
+16	фут	фут	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	13	parataxis	_	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 4
+# text = Вокруг центра поля проводится окружность радиусом 9,15 м (10 ярдов).
+1	Вокруг	вокруг	ADP	_	_	2	case	_	_
+2	центра	центр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	obl	_	_
+3	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
+4	проводится	проводить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	окружность	окружность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj:pass	_	_
+6	радиусом	радиус	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	5	nmod	_	_
+7	9,15	9,15	NUM	_	_	8	nummod	_	_
+8	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+9	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No
+10	10	10	NUM	_	_	11	nummod	_	_
+11	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	8	parataxis	_	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 5
+# text = С отметки центра поля в начале каждого из таймов основного и дополнительного времени, а также после каждого забитого гола, выполняется начальный удар.
+1	С	с	ADP	_	_	2	case	_	_
+2	отметки	отметка	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	22	obl	_	_
+3	центра	центр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+4	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	_
+5	в	в	ADP	_	_	6	case	_	_
+6	начале	начало	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	2	nmod	_	_
+7	каждого	каждый	DET	_	Case=Gen|Gender=Masc|Number=Sing	6	det	_	_
+8	из	из	ADP	_	_	9	case	_	_
+9	таймов	тайм	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	_
+10	основного	основной	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	13	amod	_	_
+11	и	и	CCONJ	_	_	12	cc	_	_
+12	дополнительного	дополнительный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	10	conj	_	_
+13	времени	время	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	9	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	20	punct	_	_
+15	а	а	CCONJ	_	_	20	cc	_	_
+16	также	также	PART	_	_	15	fixed	_	_
+17	после	после	ADP	_	_	20	case	_	_
+18	каждого	каждый	DET	_	Case=Gen|Gender=Masc|Number=Sing	20	det	_	_
+19	забитого	забить	VERB	_	Aspect=Perf|Case=Gen|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	20	amod	_	_
+20	гола	гол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	13	conj	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	2	punct	_	_
+22	выполняется	выполнять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+23	начальный	начальный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	_
+24	удар	удар	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	22	nsubj:pass	_	SpaceAfter=No
+25	.	.	PUNCT	_	_	22	punct	_	_
+
+# sent_id = 6
+# text = При исполнении начального удара все игроки должны находиться на своих половинах поля, а соперники выполняющей удар команды — и за пределами центрального круга.
+1	При	при	ADP	_	_	2	case	_	_
+2	исполнении	исполнение	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	7	obl	_	_
+3	начального	начальный	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	удара	удар	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+5	все	весь	DET	_	Case=Nom|Number=Plur	6	det	_	_
+6	игроки	игрок	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_
+7	должны	должен	ADJ	_	Degree=Pos|Number=Plur|Variant=Short	0	root	_	_
+8	находиться	находиться	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Mid	7	xcomp	_	_
+9	на	на	ADP	_	_	11	case	_	_
+10	своих	свой	DET	_	Case=Loc|Number=Plur	11	det	_	_
+11	половинах	половина	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	8	obl	_	_
+12	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	11	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	22	punct	_	_
+14	а	а	CCONJ	_	_	22	cc	_	_
+15	соперники	соперник	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	22	nsubj	_	_
+16	выполняющей	выполнять	VERB	_	Aspect=Imp|Case=Gen|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	18	acl	_	_
+17	удар	удар	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	16	obj	_	_
+18	команды	команда	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	15	nmod	_	SpacesAfter= 
+19	—	—	PUNCT	_	_	15	punct	_	_
+20	и	и	PART	_	_	22	advmod	_	_
+21	за	за	ADP	_	_	22	case	_	_
+22	пределами	предел	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	7	conj	_	_
+23	центрального	центральный	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	_
+24	круга	круг	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Штрафная площадь:
+# text = Штрафная площадь: на каждой половине поля размечается штрафная площадь — зона, в которой вратарь может играть руками, а в ворота команды, совершившей в своей штрафной площади нарушение, наказуемое штрафным ударом, будет назначен 11-метровый удар.
 1	Штрафная	штрафной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	площадь	площадь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+4	на	на	ADP	_	_	6	case	_	_
+5	каждой	каждый	DET	_	Case=Loc|Gender=Fem|Number=Sing	6	det	_	_
+6	половине	половина	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	8	obl	_	_
+7	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+8	размечается	размечать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	_
+9	штрафная	штрафной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	площадь	площадь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	nsubj:pass	_	SpacesAfter= 
+11	—	—	PUNCT	_	_	12	punct	_	_
+12	зона	зона	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10	parataxis	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	_	_
+14	в	в	ADP	_	_	15	case	_	_
+15	которой	который	PRON	_	Case=Loc	17	obl	_	_
+16	вратарь	вратарь	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	17	nsubj	_	_
+17	может	мочь	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+18	играть	играть	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	17	xcomp	_	_
+19	руками	рука	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	18	obl	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	38	punct	_	_
+21	а	а	CCONJ	_	_	38	cc	_	_
+22	в	в	ADP	_	_	23	case	_	_
+23	ворота	ворота	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Plur	38	obl	_	_
+24	команды	команда	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	совершившей	совершить	VERB	_	Aspect=Perf|Case=Gen|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	24	acl	_	_
+27	в	в	ADP	_	_	30	case	_	_
+28	своей	свой	DET	_	Case=Loc|Gender=Fem|Number=Sing	30	det	_	_
+29	штрафной	штрафной	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	30	amod	_	_
+30	площади	площадь	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	26	obl	_	_
+31	нарушение	нарушение	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	26	obj	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	_	_
+33	наказуемое	наказовать	VERB	_	Aspect=Imp|Case=Acc|Gender=Neut|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Pass	31	acl	_	_
+34	штрафным	штрафной	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	35	amod	_	_
+35	ударом	удар	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	33	obl	_	SpaceAfter=No
+36	,	,	PUNCT	_	_	38	punct	_	_
+37	будет	быть	AUX	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	38	aux:pass	_	_
+38	назначен	назначить	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	17	conj	_	_
+39	11-метровый	11-метровый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	40	amod	_	_
+40	удар	удар	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	38	nsubj:pass	_	SpaceAfter=No
+41	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 2
+# text = Размеры штрафной площади — 40,32 м (44 ярда) на 16,5 м (18 ярдов).
+1	Размеры	размер	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	_
+2	штрафной	штрафной	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	площади	площадь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter= 
+4	—	—	PUNCT	_	_	1	punct	_	_
+5	40,32	40,32	NUM	_	_	6	nummod	_	_
+6	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	0	root	_	_
+7	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No
+8	44	44	NUM	_	_	9	nummod	_	_
+9	ярда	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	parataxis	_	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	_	_
+11	на	на	ADP	_	_	13	case	_	_
+12	16,5	16,5	NUM	_	_	13	nummod	_	_
+13	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+14	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No
+15	18	18	NUM	_	_	16	nummod	_	_
+16	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	13	parataxis	_	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = В пределах штрафной площади, по центру линии ворот и на расстоянии 11 м (12 ярдов) от неё, наносится одиннадцатиметровая отметка — сплошной круг диаметром 0,3 м (1 фут).
+1	В	в	ADP	_	_	2	case	_	_
+2	пределах	предел	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	22	obl	_	_
+3	штрафной	штрафной	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	площади	площадь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	_	_
+6	по	по	ADP	_	_	7	case	_	_
+7	центру	центр	NOUN	_	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	2	conj	_	_
+8	линии	линия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	_
+9	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	8	nmod	_	_
+10	и	и	CCONJ	_	_	12	cc	_	_
+11	на	на	ADP	_	_	12	case	_	_
+12	расстоянии	расстояние	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	2	conj	_	_
+13	11	11	NUM	_	_	14	nummod	_	_
+14	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	_
+15	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No
+16	12	12	NUM	_	_	17	nummod	_	_
+17	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	14	parataxis	_	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	_	_
+19	от	от	ADP	_	_	20	case	_	_
+20	неё	она	PRON	_	Case=Gen|Gender=Fem|Number=Sing|Person=3	12	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	2	punct	_	_
+22	наносится	наносить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+23	одиннадцатиметровая	одиннадцатиметровый	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	24	amod	_	_
+24	отметка	отметка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	22	nsubj:pass	_	SpacesAfter= 
+25	—	—	PUNCT	_	_	27	punct	_	_
+26	сплошной	сплошной	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	27	amod	_	_
+27	круг	круг	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	24	parataxis	_	_
+28	диаметром	диаметр	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	27	nmod	_	_
+29	0,3	0,3	NUM	_	_	30	nummod	_	_
+30	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	28	nmod	_	_
+31	(	(	PUNCT	_	_	33	punct	_	SpaceAfter=No
+32	1	1	NUM	_	_	33	nummod	_	_
+33	фут	фут	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	30	parataxis	_	SpaceAfter=No
+34	)	)	PUNCT	_	_	33	punct	_	SpaceAfter=No
+35	.	.	PUNCT	_	_	22	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = За пределами штрафной площади проводится дуга окружности радиусом 9,15 м (10 ярдов), центр которой находится на одиннадцатиметровой отметке; данная дуга используется для расположения игроков команд при пробитии одиннадцатиметрового удара.
+1	За	за	ADP	_	_	2	case	_	_
+2	пределами	предел	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	5	obl	_	_
+3	штрафной	штрафной	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	площади	площадь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+5	проводится	проводить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	дуга	дуга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	nsubj:pass	_	_
+7	окружности	окружность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
+8	радиусом	радиус	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	7	nmod	_	_
+9	9,15	9,15	NUM	_	_	10	nummod	_	_
+10	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	8	nmod	_	_
+11	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No
+12	10	10	NUM	_	_	13	nummod	_	_
+13	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	10	parataxis	_	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	_	_
+16	центр	центр	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
+17	которой	который	PRON	_	Case=Gen	16	nmod	_	_
+18	находится	находиться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	6	acl:relcl	_	_
+19	на	на	ADP	_	_	21	case	_	_
+20	одиннадцатиметровой	одиннадцатиметровый	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	21	amod	_	_
+21	отметке	отметка	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	18	obl	_	SpaceAfter=No
+22	;	;	PUNCT	_	_	5	punct	_	_
+23	данная	данный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	24	amod	_	_
+24	дуга	дуга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	25	nsubj:pass	_	_
+25	используется	использовать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	18	conj	_	_
+26	для	для	ADP	_	_	27	case	_	_
+27	расположения	расположение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	25	obl	_	_
+28	игроков	игрок	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	27	nmod	_	_
+29	команд	команда	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	28	nmod	_	_
+30	при	при	ADP	_	_	31	case	_	_
+31	пробитии	пробитие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	27	nmod	_	_
+32	одиннадцатиметрового	одиннадцатиметровый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	33	amod	_	_
+33	удара	удар	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1405,10 +1915,46 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Площадь ворот:
+# text = Площадь ворот: на каждой половине поля размечается площадь ворот — зона, из пределов которой выполняется удар от ворот; размеры площади ворот — 18,32 м (20 ярдов) на 5,5 м (6 ярдов).
 1	Площадь	площадь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpaceAfter=No
 3	:	:	PUNCT	_	_	1	punct	_	SpacesAfter=\n
+4	на	на	ADP	_	_	6	case	_	_
+5	каждой	каждый	DET	_	Case=Loc|Gender=Fem|Number=Sing	6	det	_	_
+6	половине	половина	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	8	obl	_	_
+7	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+8	размечается	размечать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	1	parataxis	_	_
+9	площадь	площадь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	nsubj:pass	_	_
+10	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	9	nmod	_	SpacesAfter= 
+11	—	—	PUNCT	_	_	12	punct	_	_
+12	зона	зона	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	parataxis	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	_	_
+14	из	из	ADP	_	_	15	case	_	_
+15	пределов	предел	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	17	obl	_	_
+16	которой	который	PRON	_	Case=Gen	15	nmod	_	_
+17	выполняется	выполнять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	12	acl:relcl	_	_
+18	удар	удар	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	17	nsubj:pass	_	_
+19	от	от	ADP	_	_	20	case	_	_
+20	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	18	nmod	_	SpaceAfter=No
+21	;	;	PUNCT	_	_	8	punct	_	_
+22	размеры	размер	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	27	nsubj	_	_
+23	площади	площадь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	22	nmod	_	_
+24	ворот	ворота	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	23	nmod	_	SpacesAfter= 
+25	—	—	PUNCT	_	_	22	punct	_	_
+26	18,32	18,32	NUM	_	_	27	nummod	_	_
+27	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	conj	_	_
+28	(	(	PUNCT	_	_	30	punct	_	SpaceAfter=No
+29	20	20	NUM	_	_	30	nummod	_	_
+30	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	27	parataxis	_	SpaceAfter=No
+31	)	)	PUNCT	_	_	30	punct	_	_
+32	на	на	ADP	_	_	34	case	_	_
+33	5,5	5,5	NUM	_	_	34	nummod	_	_
+34	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	27	nmod	_	_
+35	(	(	PUNCT	_	_	37	punct	_	SpaceAfter=No
+36	6	6	NUM	_	_	37	nummod	_	_
+37	ярдов	ярд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	34	parataxis	_	SpaceAfter=No
+38	)	)	PUNCT	_	_	37	punct	_	SpaceAfter=No
+39	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1416,10 +1962,58 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Угловые сектора:
+# text = Угловые сектора: в каждом из четырёх углов поля проводится дуга радиусом 1 м (или 1 ярд) с центром в углу поля, ограничивающая сектор для исполнения угловых ударов.
 1	Угловые	угловой	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	сектора	сектор	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+4	в	в	ADP	_	_	5	case	_	_
+5	каждом	каждый	DET	_	Case=Loc|Gender=Masc|Number=Sing	10	det	_	_
+6	из	из	ADP	_	_	8	case	_	_
+7	четырёх	четыре	NUM	_	Case=Gen	8	nummod	_	_
+8	углов	угол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	5	nmod	_	_
+9	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
+10	проводится	проводить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	_
+11	дуга	дуга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10	nsubj:pass	_	_
+12	радиусом	радиус	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	11	nmod	_	_
+13	1	1	NUM	_	_	14	nummod	_	_
+14	м	метр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	_
+15	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No
+16	или	или	CCONJ	_	_	18	cc	_	_
+17	1	1	NUM	_	_	18	nummod	_	_
+18	ярд	ярд	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	14	parataxis	_	SpaceAfter=No
+19	)	)	PUNCT	_	_	18	punct	_	_
+20	с	с	ADP	_	_	21	case	_	_
+21	центром	центр	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	11	nmod	_	_
+22	в	в	ADP	_	_	23	case	_	_
+23	углу	угол	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	21	nmod	_	_
+24	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	23	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	ограничивающая	ограничивать	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+27	сектор	сектор	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	26	obj	_	_
+28	для	для	ADP	_	_	29	case	_	_
+29	исполнения	исполнение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	26	obl	_	_
+30	угловых	угловой	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	31	amod	_	_
+31	ударов	удар	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	29	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Также у каждого угла поля обязательно ставятся флаги на флагштоках, не имеющих сверху заострений.
+1	Также	также	ADV	_	Degree=Pos	7	advmod	_	_
+2	у	у	ADP	_	_	4	case	_	_
+3	каждого	каждый	DET	_	Case=Gen|Gender=Masc|Number=Sing	4	det	_	_
+4	угла	угол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	obl	_	_
+5	поля	поле	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	_
+6	обязательно	обязательно	ADV	_	Degree=Pos	7	advmod	_	_
+7	ставятся	ставить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+8	флаги	флаг	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	7	nsubj:pass	_	_
+9	на	на	ADP	_	_	10	case	_	_
+10	флагштоках	флагшток	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	_	_
+12	не	не	PART	_	_	13	advmod	_	_
+13	имеющих	иметь	VERB	_	Aspect=Imp|Case=Loc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	10	acl	_	_
+14	сверху	сверху	ADV	_	Degree=Pos	13	advmod	_	_
+15	заострений	заострение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1428,7 +2022,7 @@
 # newpar
 # sent_id = 1
 # text = Форма
-1	Форма	форма	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Форма	форма	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1469,7 +2063,7 @@
 # newpar
 # sent_id = 1
 # text = Команда
-1	Команда	команда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Команда	команда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1509,7 +2103,7 @@
 2	матч	матч	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	и	и	CCONJ	_	_	5	cc	_	_
 4	его	его	DET	_	_	5	det	_	_
-5	правила	правило	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	2	conj	_	SpacesAfter=\n
+5	правила	правило	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2015,7 +2609,7 @@
 # sent_id = 1
 # text = Стандартные положения
 1	Стандартные	стандартный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	положения	положение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+2	положения	положение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2074,7 +2668,7 @@
 # sent_id = 1
 # text = Нарушения правил
 1	Нарушения	нарушение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
-2	правил	правило	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpacesAfter=\n
+2	правил	правило	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2180,7 +2774,7 @@
 # newpar
 # sent_id = 1
 # text = Судьи
-1	Судьи	судья	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+1	Судьи	судья	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2327,7 +2921,7 @@
 # sent_id = 1
 # text = Помощники судьи
 1	Помощники	помощник	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-2	судьи	судья	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	судьи	судья	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2421,7 +3015,7 @@
 # text = Использование технических средств
 1	Использование	использование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	технических	технический	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
-3	средств	средства	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpacesAfter=\n
+3	средств	средства	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2576,7 +3170,7 @@
 # newpar
 # sent_id = 1
 # text = Тактика
-1	Тактика	тактика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Тактика	тактика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2858,7 +3452,7 @@
 # newpar
 # sent_id = 1
 # text = Клубы
-1	Клубы	клуб	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+1	Клубы	клуб	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2920,7 +3514,7 @@
 # newpar
 # sent_id = 1
 # text = Соревнования
-1	Соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+1	Соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3090,7 +3684,7 @@
 # text = Футбол в мире
 1	Футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	в	в	ADP	_	_	3	case	_	_
-3	мире	мир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	мире	мир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3372,7 +3966,7 @@
 # sent_id = 1
 # text = Международные соревнования
 1	Международные	международный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+2	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3442,7 +4036,7 @@
 # sent_id = 1
 # text = Футбольные структуры
 1	Футбольные	футбольный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	структуры	структура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+2	структуры	структура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3451,7 +4045,7 @@
 # newpar
 # sent_id = 1
 # text = Организации
-1	Организации	организация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Организации	организация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3642,7 +4236,7 @@
 # sent_id = 1
 # text = Молодёжный футбол
 1	Молодёжный	молодежный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3786,7 +4380,7 @@
 # sent_id = 1
 # text = Юношеские соревнования
 1	Юношеские	юношеский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+2	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3838,6 +4432,56 @@
 5	ФИФА	ФИФА	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Например в 1991 году в соревновании победила команда Португалии, ведомая такими игроками, как Луиш Фигу и Руй Кошта, а через десять лет Хавьер Савиола помог Аргентине выиграть чемпионат и стал лучшим бомбардиром турнира, обогнав не менее известных игроков Джибриля Сиссе и Адриано.
+1	Например	например	ADV	_	Degree=Pos	4	obl	_	_
+2	в	в	ADP	_	_	4	case	_	_
+3	1991	1991	NUM	_	_	4	nummod	_	_
+4	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+5	в	в	ADP	_	_	6	case	_	_
+6	соревновании	соревнование	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	7	obl	_	_
+7	победила	победить	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	команда	команда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+9	Португалии	Португалия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	ведомая	вести	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Pass	8	acl	_	_
+12	такими	такой	DET	_	Case=Ins|Number=Plur	13	det	_	_
+13	игроками	игрок	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	11	obl	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	_	_
+15	как	как	SCONJ	_	_	16	mark	_	_
+16	Луиш	Луиш	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	12	obl	_	_
+17	Фигу	Фигу	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	16	flat:name	_	_
+18	и	и	CCONJ	_	_	19	cc	_	_
+19	Руй	Руй	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	16	conj	_	_
+20	Кошта	Кошта	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	19	flat:name	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	28	punct	_	_
+22	а	а	CCONJ	_	_	28	cc	_	_
+23	через	через	ADP	_	_	25	case	_	_
+24	десять	десять	NUM	_	Case=Acc	25	nummod:gov	_	_
+25	лет	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	28	obl	_	_
+26	Хавьер	Хавьер	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	28	nsubj	_	_
+27	Савиола	Савиола	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	26	flat:name	_	_
+28	помог	помочь	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+29	Аргентине	Аргентина	PROPN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	28	iobj	_	_
+30	выиграть	выиграть	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	28	xcomp	_	_
+31	чемпионат	чемпионат	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	30	obj	_	_
+32	и	и	CCONJ	_	_	33	cc	_	_
+33	стал	стать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	7	conj	_	_
+34	лучшим	лучший	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	35	amod	_	_
+35	бомбардиром	бомбардир	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	33	obl	_	_
+36	турнира	турнир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	35	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	_	_	38	punct	_	_
+38	обогнав	обогнать	VERB	_	Aspect=Perf|Tense=Past|VerbForm=Conv|Voice=Act	33	advcl	_	_
+39	не	не	PART	_	_	40	advmod	_	_
+40	менее	менее	ADV	_	Degree=Cmp	41	obl	_	_
+41	известных	известный	ADJ	_	Animacy=Anim|Case=Acc|Degree=Pos|Number=Plur	42	amod	_	_
+42	игроков	игрок	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Plur	38	obj	_	_
+43	Джибриля	Джибриль	PROPN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	42	appos	_	_
+44	Сиссе	Сисс	PROPN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	43	flat:name	_	_
+45	и	и	CCONJ	_	_	46	cc	_	_
+46	Адриано	Адриано	PROPN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	43	conj	_	SpaceAfter=No
+47	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3846,7 +4490,7 @@
 # sent_id = 1
 # text = Профессиональный футбол
 1	Профессиональный	профессиональный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	футбол	футбол	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3855,7 +4499,7 @@
 # newpar
 # sent_id = 1
 # text = Аренды
-1	Аренды	аренда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Аренды	аренда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3979,7 +4623,7 @@
 # text = Тренировки и травмы
 1	Тренировки	тренировка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 2	и	и	CCONJ	_	_	3	cc	_	_
-3	травмы	травма	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpacesAfter=\n
+3	травмы	травма	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4087,7 +4731,7 @@
 # newpar
 # sent_id = 1
 # text = Ответственность
-1	Ответственность	ответственность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Ответственность	ответственность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4214,7 +4858,7 @@
 # sent_id = 1
 # text = Разновидности футбола
 1	Разновидности	разновидность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
-2	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	футбола	футбол	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4454,7 +5098,7 @@
 # sent_id = 1
 # text = Околофутбольная культура
 1	Околофутбольная	околофутбольный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	культура	культура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+2	культура	культура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4465,7 +5109,7 @@
 # text = См. также
 1	См	смотреть	VERB	_	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	_	_	1	punct	_	_
-3	также	также	ADV	_	Degree=Pos	1	advmod	_	SpacesAfter=\n
+3	также	также	ADV	_	Degree=Pos	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4474,7 +5118,7 @@
 # newpar
 # sent_id = 1
 # text = Примечания
-1	Примечания	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+1	Примечания	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4483,7 +5127,7 @@
 # newpar
 # sent_id = 1
 # text = Литература
-1	Литература	литература	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Литература	литература	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4492,14 +5136,5 @@
 # newpar
 # sent_id = 1
 # text = Ссылки
-1	Ссылки	ссылка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навигация
-1	Навигация	навигация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Ссылки	ссылка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 

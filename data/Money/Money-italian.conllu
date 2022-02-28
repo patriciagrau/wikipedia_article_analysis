@@ -1,5 +1,3 @@
-# https://it.wikipedia.org/wiki/Denaro
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Denaro - Wikipedia
 1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	-	-	PUNCT	FF	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Denaro
-1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -76,15 +65,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Moneta merce[modifica | modifica wikitesto]
+# text = Moneta merce
 1	Moneta	moneta	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	merce	merce	NOUN	S	Gender=Fem|Number=Sing	1	compound	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -564,22 +547,112 @@
 40	anno	anno	NOUN	S	Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No
 41	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\s\n
 
+# sent_id = 2
+# text = Come effetto secondario sul piano concettuale, ma che divenne altrettanto importante, l'introduzione denaro di fatto consentì di variare i tassi di cambio tra due beni:
+1	Come	come	ADP	E	_	2	case	_	_
+2	effetto	effetto	NOUN	S	Gender=Masc|Number=Sing	20	obl	_	_
+3	secondario	secondario	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4-5	sul	_	_	_	_	_	_	_	_
+4	su	su	ADP	E	_	6	case	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	piano	piano	NOUN	S	Gender=Masc|Number=Sing	2	nmod	_	_
+7	concettuale	concettuale	ADJ	A	Number=Sing	6	amod	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	11	punct	_	_
+9	ma	ma	CCONJ	CC	_	11	cc	_	_
+10	che	che	PRON	PR	PronType=Rel	11	nsubj	_	_
+11	divenne	divenire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	_	_
+12	altrettanto	altrettanto	ADV	B	_	13	advmod	_	_
+13	importante	importante	ADJ	A	Number=Sing	11	xcomp	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	2	punct	_	_
+15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No
+16	introduzione	introduzione	NOUN	S	Gender=Fem|Number=Sing	20	nsubj	_	_
+17	denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	16	compound	_	_
+18	di	di	ADP	E	_	19	case	_	_
+19	fatto	fatto	NOUN	S	Gender=Masc|Number=Sing	16	nmod	_	_
+20	consentì	consentire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+21	di	di	ADP	E	_	22	mark	_	_
+22	variare	variare	VERB	V	VerbForm=Inf	20	xcomp	_	_
+23	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+24	tassi	tasso	NOUN	S	Gender=Masc|Number=Plur	22	obj	_	_
+25	di	di	ADP	E	_	26	case	_	_
+26	cambio	cambio	NOUN	S	Gender=Masc|Number=Sing	24	nmod	_	_
+27	tra	tra	ADP	E	_	29	case	_	_
+28	due	due	NUM	N	NumType=Card	29	nummod	_	_
+29	beni	bene	NOUN	S	Gender=Masc|Number=Plur	22	obl	_	SpaceAfter=No
+30	:	:	PUNCT	FC	_	20	punct	_	_
+
+# sent_id = 3
+# text = semplicemente cambiando il momento in cui si vendeva in cambio di denaro il primo bene, e il momento in cui si acquistava in cambio di denaro il secondo bene, si potevano scambiare per esempio due vacche con un numero diverso di pecore agendo sul timing della compra e della vendita.
+1	semplicemente	semplicemente	ADV	B	_	2	advmod	_	_
+2	cambiando	cambiare	VERB	V	VerbForm=Ger	34	advcl	_	_
+3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	momento	momento	NOUN	S	Gender=Masc|Number=Sing	2	obj	_	_
+5	in	in	ADP	E	_	6	case	_	_
+6	cui	cui	PRON	PR	PronType=Rel	8	obl	_	_
+7	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	8	expl:impers	_	_
+8	vendeva	vendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	acl:relcl	_	_
+9	in	in	ADP	E	_	10	case	_	_
+10	cambio	cambio	NOUN	S	Gender=Masc|Number=Sing	8	obl	_	_
+11	di	di	ADP	E	_	12	case	_	_
+12	denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	10	nmod	_	_
+13	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+14	primo	primo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	15	amod	_	_
+15	bene	bene	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+16	,	,	PUNCT	FF	_	19	punct	_	_
+17	e	e	CCONJ	CC	_	19	cc	_	_
+18	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	momento	momento	NOUN	S	Gender=Masc|Number=Sing	4	conj	_	_
+20	in	in	ADP	E	_	21	case	_	_
+21	cui	cui	PRON	PR	PronType=Rel	23	obl	_	_
+22	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	23	expl:impers	_	_
+23	acquistava	acquistare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	acl:relcl	_	_
+24	in	in	ADP	E	_	25	case	_	_
+25	cambio	cambio	NOUN	S	Gender=Masc|Number=Sing	23	obl	_	_
+26	di	di	ADP	E	_	27	case	_	_
+27	denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	25	nmod	_	_
+28	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+29	secondo	secondo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	30	amod	_	_
+30	bene	bene	NOUN	S	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No
+31	,	,	PUNCT	FF	_	2	punct	_	_
+32	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	34	expl:pass	_	_
+33	potevano	potere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	34	aux	_	_
+34	scambiare	scambiare	VERB	V	VerbForm=Inf	0	root	_	_
+35	per	per	ADP	E	_	36	case	_	_
+36	esempio	esempio	NOUN	S	Gender=Masc|Number=Sing	34	obl	_	_
+37	due	due	NUM	N	NumType=Card	38	nummod	_	_
+38	vacche	vacca	NOUN	S	Gender=Fem|Number=Plur	34	obj	_	_
+39	con	con	ADP	E	_	41	case	_	_
+40	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+41	numero	numero	NOUN	S	Gender=Masc|Number=Sing	34	obl	_	_
+42	diverso	diverso	ADJ	A	Gender=Masc|Number=Sing	41	amod	_	_
+43	di	di	ADP	E	_	44	case	_	_
+44	pecore	pecora	NOUN	S	Gender=Fem|Number=Plur	41	nmod	_	_
+45	agendo	agire	VERB	V	VerbForm=Ger	34	advcl	_	_
+46-47	sul	_	_	_	_	_	_	_	_
+46	su	su	ADP	E	_	48	case	_	_
+47	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
+48	timing	timing	NOUN	S	Gender=Masc	45	obl	_	_
+49-50	della	_	_	_	_	_	_	_	_
+49	di	di	ADP	E	_	51	case	_	_
+50	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
+51	compra	compra	NOUN	S	Gender=Fem|Number=Sing	48	nmod	_	_
+52	e	e	CCONJ	CC	_	55	cc	_	_
+53-54	della	_	_	_	_	_	_	_	_
+53	di	di	ADP	E	_	55	case	_	_
+54	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
+55	vendita	vendita	NOUN	S	Gender=Fem|Number=Sing	51	conj	_	SpaceAfter=No
+56	.	.	PUNCT	FS	_	34	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Merci di scambio[modifica | modifica wikitesto]
+# text = Merci di scambio
 1	Merci	merce	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	di	di	ADP	E	_	3	case	_	_
 3	scambio	scambio	NOUN	S	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-6	|	|	SYM	SYM	_	5	dep	_	_
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	5	conj	_	_
-8	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	7	compound	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1142,14 +1215,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Monetazione standard[modifica | modifica wikitesto]
+# text = Monetazione standard
 1	Monetazione	monetazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
-2	standard[	standard[	NOUN	S	_	1	nmod	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	1	punct	_	SpacesAfter=\n
+2	standard	standard	ADJ	A	Gender=Masc	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1583,15 +1651,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Denaro convertibile[modifica | modifica wikitesto]
+# text = Denaro convertibile
 1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	convertibile	convertibile	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1884,17 +1946,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Denaro a corso legale[modifica | modifica wikitesto]
+# text = Denaro a corso legale
 1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	a	a	ADP	E	_	3	case	_	_
 3	corso	corso	NOUN	S	Gender=Masc|Number=Sing	1	nmod	_	_
 4	legale	legale	ADJ	A	Number=Sing	3	amod	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2167,16 +2223,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Denaro a credito[modifica | modifica wikitesto]
+# text = Denaro a credito
 1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	a	a	ADP	E	_	3	case	_	_
 3	credito	credito	NOUN	S	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-6	|	|	SYM	SYM	_	5	dep	_	_
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	5	conj	_	_
-8	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	7	compound	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2569,15 +2619,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Denaro digitale[modifica | modifica wikitesto]
+# text = Denaro digitale
 1	Denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	digitale	digitale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2669,18 +2713,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Filosofia del denaro[modifica | modifica wikitesto]
+# text = Filosofia del denaro
 1	Filosofia	filosofia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2-3	del	_	_	_	_	_	_	_	_
 2	di	di	ADP	E	_	4	case	_	_
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	denaro	denaro	NOUN	S	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	conj	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2782,14 +2820,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Curiosità[modifica | modifica wikitesto]
+# text = Curiosità
 1	Curiosità	curiosità	NOUN	S	Gender=Fem	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3086,14 +3118,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Note[modifica | modifica wikitesto]
+# text = Note
 1	Note	nota	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3101,14 +3127,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bibliografia[modifica | modifica wikitesto]
+# text = Bibliografia
 1	Bibliografia	bibliografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3116,15 +3136,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Voci correlate[modifica | modifica wikitesto]
+# text = Voci correlate
 1	Voci	voce	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	correlate	correlato	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3132,15 +3146,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Altri progetti[modifica | modifica wikitesto]
+# text = Altri progetti
 1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
 2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3148,24 +3156,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Collegamenti esterni[modifica | modifica wikitesto]
+# text = Altri progetti
+1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
+2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Collegamenti esterni
 1	Collegamenti	collegamento	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	esterni	esterno	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Menu di navigazione
-1	Menu	menu	NOUN	S	Gender=Masc	0	root	_	_
-2	di	di	ADP	E	_	3	case	_	_
-3	navigazione	navigazione	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
 

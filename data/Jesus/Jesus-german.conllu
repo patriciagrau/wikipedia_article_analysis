@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/Jesus_Christus
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	_
 3	–	–	PROPN	NE	Person=3	1	flat:name	_	_
-4	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18,62 +16,48 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Jesus Christus
-1	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
-2	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Jesus Christus (von altgriechisch Ἰησοῦς Χριστός Iēsoûs Chrīstós [iɛːˈsuːs kʰriːsˈtos], deutsch ‚Jesus, der Gesalbte‘) ist nach christlicher Lehre gemäß dem Neuen Testament (NT) der von Gott zur Erlösung aller Menschen gesandte Messias und Sohn Gottes.
-1	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	41	nsubj	_	_
-2	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	_
-3	(	(	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+# text = Jesus Christus (von altgriechisch Ἰησοῦς Χριστός Iēsoûs Chrīstós , deutsch ‚Jesus, der Gesalbte‘) ist nach christlicher Lehre gemäß dem Neuen Testament (NT) der von Gott zur Erlösung aller Menschen gesandte Messias und Sohn Gottes.
+1	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	37	nsubj	_	_
+2	Christus	Christus	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	flat:name	_	_
+3	(	(	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
 4	von	von	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
 5	altgriechisch	altgriechisch	ADJ	ADJD	Degree=Pos|Variant=Short	1	nmod	_	_
 6	Ἰησοῦς	ἰησοῦς	X	FM	Foreign=Yes|Person=3	1	appos	_	_
-7	Χριστός	χριστός	X	NE	Foreign=Yes|Person=3	6	flat:name	_	_
+7	Χριστός	χριστός	X	NE	Person=3	6	flat:name	_	_
 8	Iēsoûs	Iēsoûs	PROPN	NE	Case=Nom|Number=Sing|Person=3	6	flat:name	_	_
 9	Chrīstós	Chrīstós	PROPN	NE	Person=3	6	flat:name	_	_
-10	[	[	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
-11	iɛːˈsuːs	iɛːˈsuːs	X	FM	Foreign=Yes|Person=3	6	appos	_	_
-12	kʰriːsˈtos	kʰriːsˈtos	X	FM	Foreign=Yes|Person=3	11	flat	_	SpaceAfter=No
-13	]	]	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
-14	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
-15	deutsch	deutsch	ADJ	ADJD	Degree=Pos|Variant=Short	17	advmod	_	_
-16	‚	‚	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
-17	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	appos	_	SpaceAfter=No
-18	,	,	PUNCT	$,	PunctType=Comm	20	punct	_	_
-19	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	Gesalbte‘	unknown	NOUN	NN	Person=3	17	appos	_	SpaceAfter=No
-21	)	)	PUNCT	$(	PunctType=Brck	17	punct	_	_
-22	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	_
-23	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	25	case	_	_
-24	christlicher	christlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	25	amod	_	_
-25	Lehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	41	nmod	_	_
-26	gemäß	gemäß	ADP	APPR	AdpType=Prep|Case=Dat	29	case	_	_
-27	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	29	det	_	_
-28	Neuen	neu	ADJ	ADJA	Degree=Pos|Number=Sing	29	amod	_	_
-29	Testament	Testament	NOUN	NN	Gender=Neut|Number=Sing|Person=3	41	nmod	_	_
-30	(	(	PUNCT	$(	PunctType=Brck	31	punct	_	SpaceAfter=No
-31	NT	NT	PROPN	NE	Person=3	29	appos	_	SpaceAfter=No
-32	)	)	PUNCT	$(	PunctType=Brck	31	punct	_	_
-33	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-34	von	von	ADP	APPR	AdpType=Prep|Case=Dat	35	case	_	_
-35	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	40	obl	_	_
-36	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	37	case	_	_
-37	Erlösung	Erlösung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	40	obl	_	_
-38	aller	all	DET	PIDAT	Case=Gen|Number=Plur|Person=3	39	det	_	_
-39	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	37	nmod	_	_
-40	gesandte	sanden	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	41	amod	_	_
-41	Messias	Messias	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-42	und	und	CCONJ	KON	_	43	cc	_	_
-43	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	41	conj	_	_
-44	Gottes	Gottes	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	43	nmod	_	SpaceAfter=No
-45	.	.	PUNCT	$.	PunctType=Peri	41	punct	_	_
+10	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+11	deutsch	deutsch	ADJ	ADJD	Degree=Pos|Variant=Short	13	advmod	_	_
+12	‚	‚	PUNCT	$(	PunctType=Brck	13	punct	_	SpaceAfter=No
+13	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+15	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	Gesalbte‘	unknown	NOUN	NN	Person=3	13	appos	_	SpaceAfter=No
+17	)	)	PUNCT	$(	PunctType=Brck	13	punct	_	_
+18	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_
+19	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	21	case	_	_
+20	christlicher	christlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	21	amod	_	_
+21	Lehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	37	nmod	_	_
+22	gemäß	gemäß	ADP	APPR	AdpType=Prep|Case=Dat	25	case	_	_
+23	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	25	det	_	_
+24	Neuen	neu	ADJ	ADJA	Degree=Pos|Number=Sing	25	amod	_	_
+25	Testament	Testament	NOUN	NN	Gender=Neut|Number=Sing|Person=3	37	nmod	_	_
+26	(	(	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+27	NT	NT	PROPN	NE	Person=3	25	appos	_	SpaceAfter=No
+28	)	)	PUNCT	$(	PunctType=Brck	27	punct	_	_
+29	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+30	von	von	ADP	APPR	AdpType=Prep|Case=Dat	31	case	_	_
+31	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	36	obl	_	_
+32	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	33	case	_	_
+33	Erlösung	Erlösung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	36	obl	_	_
+34	aller	all	DET	PIDAT	Case=Gen|Number=Plur|Person=3	35	det	_	_
+35	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	33	nmod	_	_
+36	gesandte	sanden	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	37	amod	_	_
+37	Messias	Messias	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+38	und	und	CCONJ	KON	_	39	cc	_	_
+39	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	37	conj	_	_
+40	Gottes	Gottes	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	39	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	$.	PunctType=Peri	37	punct	_	_
 
 # sent_id = 2
 # text = Mit seinem Namen drückten bereits die Urchristen ihren Glauben aus und bezogen die Heilsverheißungen des Alten Testaments (AT) auf die historische Person Jesus von Nazaret.
@@ -115,7 +99,7 @@
 # text = Die urchristlichen Quellen
 1	Die	Die	DET	ART	Case=Acc|Number=Plur|PronType=Art	3	det	_	_
 2	urchristlichen	urchristlich	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
-3	Quellen	Quelle	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+3	Quellen	Quelle	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -713,7 +697,7 @@
 # sent_id = 1
 # text = Der Name
 1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Name	Name	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Name	Name	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -895,7 +879,7 @@
 # newpar
 # sent_id = 1
 # text = Deklination
-1	Deklination	Deklination	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Deklination	Deklination	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1007,7 +991,7 @@
 # newpar
 # sent_id = 1
 # text = Interpretationen
-1	Interpretationen	Interpretation	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Interpretationen	Interpretation	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1355,7 +1339,7 @@
 4	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	flat:name	_	_
 5	in	in	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
 6	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	7	det	_	_
-7	Paulusbriefen	Paulusbrief	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	2	nmod	_	SpacesAfter=\n
+7	Paulusbriefen	Paulusbrief	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1736,7 +1720,7 @@
 4	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Namen	Name	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	obl	_	_
 6	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	flat:name	_	_
-7	Christus“	Christus“	PROPN	NE	Person=3	5	flat:name	_	SpacesAfter=\n
+7	Christus“	Christus“	PROPN	NE	Person=3	5	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1821,7 +1805,7 @@
 3	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
 4	Namen	Name	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	nmod	_	_
 5	Jesu	Jesu	PROPN	NE	Person=3	4	flat:name	_	_
-6	Christi“	Christi“	PROPN	NE	Gender=Fem|Number=Sing|Person=3	4	flat:name	_	SpacesAfter=\n
+6	Christi“	Christi“	PROPN	NE	Gender=Fem|Number=Sing|Person=3	4	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1987,7 +1971,7 @@
 14	:	:	PUNCT	$.	PunctType=Peri	3	punct	_	_
 
 # sent_id = 3
-# text = Dahinter stehe die Vorstellung, der erhöhte Christus wirke an den Kranken, „dessen machtvoller N[ame] weit über das Christentum hinaus magische Faszination ausübte (Apg 3,6 EU).“
+# text = Dahinter stehe die Vorstellung, der erhöhte Christus wirke an den Kranken, „dessen machtvoller N weit über das Christentum hinaus magische Faszination ausübte (Apg 3,6 EU).“
 1	Dahinter	Dahinter	ADV	PROAV	_	2	advmod	_	_
 2	stehe	stehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -2000,24 +1984,23 @@
 10	an	an	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
 11	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	12	det	_	_
 12	Kranken	Krank	NOUN	NN	Degree=Pos|Number=Plur|Person=3	9	obl	_	SpaceAfter=No
-13	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
-14	„	„	PUNCT	$(	PunctType=Brck	26	punct	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	25	punct	_	_
+14	„	„	PUNCT	$(	PunctType=Brck	25	punct	_	SpaceAfter=No
 15	dessen	dessen	DET	PRELAT	PronType=Rel	17	det	_	_
 16	machtvoller	machtvoll	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
-17	N[ame	N[ame	NOUN	NN	Person=3	26	nsubj	_	SpaceAfter=No
-18	]	]	PUNCT	$(	PunctType=Brck	17	punct	_	_
-19	weit	weit	ADJ	ADJD	Degree=Pos|Variant=Short	26	advmod	_	_
-20	über	über	ADP	APPR	AdpType=Prep|Case=Acc	22	case	_	_
-21	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
-22	Christentum	Christentum	NOUN	NN	Gender=Neut|Number=Sing|Person=3	26	obl	_	_
-23	hinaus	hinaus	ADP	APZR	AdpType=Circ	22	case	_	_
-24	magische	magisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	25	amod	_	_
-25	Faszination	Faszination	NOUN	NN	Gender=Fem|Number=Sing|Person=3	26	obj	_	_
-26	ausübte	ausüben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
-27	(	(	PUNCT	$(	PunctType=Brck	28	punct	_	SpaceAfter=No
-28	Apg	Apg	PROPN	NE	Person=3	2	parataxis	_	_
-29	3,6	3,6	NUM	CARD	Number=Plur|NumType=Card|Person=3	28	flat	_	SpacesAfter= 
-30	EU).“	EU).“	PROPN	NE	Person=3	28	appos	_	SpacesAfter=\n
+17	N	N	NOUN	NN	Gender=Neut|Number=Sing|Person=3	25	nsubj	_	_
+18	weit	weit	ADJ	ADJD	Degree=Pos|Variant=Short	25	advmod	_	_
+19	über	über	ADP	APPR	AdpType=Prep|Case=Acc	21	case	_	_
+20	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	21	det	_	_
+21	Christentum	Christentum	NOUN	NN	Gender=Neut|Number=Sing|Person=3	25	obl	_	_
+22	hinaus	hinaus	ADP	APZR	AdpType=Circ	21	case	_	_
+23	magische	magisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	24	amod	_	_
+24	Faszination	Faszination	NOUN	NN	Gender=Fem|Number=Sing|Person=3	25	obj	_	_
+25	ausübte	ausüben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
+26	(	(	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+27	Apg	Apg	PROPN	NE	Person=3	24	appos	_	_
+28	3,6	3,6	NUM	CARD	Number=Plur|NumType=Card|Person=3	27	flat	_	SpacesAfter= 
+29	EU).“	EU).“	PROPN	NE	Person=3	27	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2027,7 +2010,7 @@
 # sent_id = 1
 # text = Christologische Hoheitstitel
 1	Christologische	christologisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Hoheitstitel	Titel	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Hoheitstitel	Titel	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2126,7 +2109,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In der späteren kirchlichen Auslegungsgeschichte hatten die Hoheitstitel unterschiedliches Gewicht: die Bezeichnung „Sohn Gottes“ war für die Trinitätslehre
+# text = In der späteren kirchlichen Auslegungsgeschichte hatten die Hoheitstitel unterschiedliches Gewicht: die Bezeichnung „Sohn Gottes“ war für die Trinitätslehre sehr wichtig;
 1	In	In	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 3	späteren	spät	ADJ	ADJA	Degree=Cmp|Number=Sing	5	amod	_	_
@@ -2139,14 +2122,48 @@
 10	Gewicht	Gewicht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	obj	_	SpaceAfter=No
 11	:	:	PUNCT	$.	PunctType=Peri	6	punct	_	_
 12	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	Bezeichnung	Bezeichnung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nsubj	_	_
+13	Bezeichnung	Bezeichnung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	nsubj	_	_
 14	„	„	PUNCT	$(	PunctType=Brck	15	punct	_	SpaceAfter=No
 15	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	13	appos	_	_
 16	Gottes“	Gottes“	PROPN	NE	Person=3	15	flat:name	_	_
-17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	_
+17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	_
 18	für	für	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
 19	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Trinitätslehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	obl	_	SpacesAfter=\n
+20	Trinitätslehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	obl	_	SpacesAfter=\n
+21	sehr	sehr	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	wichtig	wichtig	ADJ	ADJD	Degree=Pos|Variant=Short	6	parataxis	_	SpaceAfter=No
+23	;	;	PUNCT	$.	PunctType=Peri	6	punct	_	_
+
+# sent_id = 2
+# text = „Menschensohn“ verwies (nur noch) auf das wahre Menschsein Christi im Rahmen der Zweinaturenlehre, und Christus verblasste zum zweiten Teil des Doppelnamens Jesus Christus.
+1	„	„	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
+2	Menschensohn“	Sohn“	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	verwies	verweisen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	(	(	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
+5	nur	nur	ADV	ADV	_	6	advmod	_	_
+6	noch	noch	ADV	ADV	_	3	advmod	_	SpaceAfter=No
+7	)	)	PUNCT	$(	PunctType=Brck	6	punct	_	_
+8	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	11	case	_	_
+9	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+10	wahre	wahr	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	11	amod	_	_
+11	Menschsein	Menschsein	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obj	_	_
+12	Christi	Christi	PROPN	NE	Person=3	11	flat:name	_	_
+13	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	14	case	_	_
+14	Rahmen	Rahmen	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+15	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Zweinaturenlehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	$,	PunctType=Comm	20	punct	_	_
+18	und	und	CCONJ	KON	_	20	cc	_	_
+19	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_
+20	verblasste	verblassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+21	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	23	case	_	_
+22	zweiten	zweit	ADJ	ADJA	Degree=Pos|Number=Sing	23	amod	_	_
+23	Teil	Teil	NOUN	NN	Number=Sing|Person=3	20	obl	_	_
+24	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	Doppelnamens	Name	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	23	nmod	_	_
+26	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	flat:name	_	_
+27	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	flat:name	_	SpaceAfter=No
+28	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2155,7 +2172,7 @@
 # newpar
 # sent_id = 1
 # text = Kyrios
-1	Kyrios	Kyrios	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+1	Kyrios	Kyrios	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2803,7 +2820,7 @@
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
 3	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
-5	Messias	Messias	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+5	Messias	Messias	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3506,7 +3523,7 @@
 # sent_id = 1
 # text = Sohn Gottes
 1	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-2	Gottes	Gottes	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+2	Gottes	Gottes	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3605,20 +3622,56 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = „[Der arme Gerechte] prahlt, Gott sei sein Vater.
-1	„	„	PUNCT	$(	PunctType=Brck	7	punct	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	5	punct	_	SpaceAfter=No
-3	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	arme	arm	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
-5	Gerechte	Gerecht	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	_
-7	prahlt	prahlen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
-8	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
-9	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
-10	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
-11	sein	sein	PRON	PPOSAT	Case=Nom|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
-12	Vater	Vater	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	ccomp	_	SpaceAfter=No
-13	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	SpacesAfter=\n
+# text = „ prahlt, Gott sei sein Vater.
+1	„	„	PUNCT	$(	PunctType=Brck	2	punct	_	_
+2	prahlt	prahlen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+4	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+5	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	sein	sein	PRON	PPOSAT	Case=Nom|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	Vater	Vater	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Wir wollen sehen, ob seine Worte wahr sind, und erproben, wie es mit ihm ausgeht.
+1	Wir	Wir	PRON	PPER	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+2	wollen	wollen	AUX	VMFIN	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|VerbType=Mod	3	aux	_	_
+3	sehen	sehen	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+5	ob	ob	SCONJ	KOUS	_	8	mark	_	_
+6	seine	sein	PRON	PPOSAT	Case=Nom|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	Worte	Wort	NOUN	NN	Gender=Neut|Number=Plur|Person=3	8	nsubj	_	_
+8	wahr	wahr	ADJ	ADJD	Degree=Pos|Variant=Short	3	ccomp	_	_
+9	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	SpacesAfter=\n
+11	und	und	CCONJ	KON	_	12	cc	_	_
+12	erproben	erproben	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+14	wie	wie	ADV	PWAV	PronType=Int	18	mark	_	_
+15	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+16	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+17	ihm	ihm	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	obl	_	_
+18	ausgeht	ausgehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Wenn nämlich der Gerechte (wirklich) Gottes Sohn ist, wird er sich seiner annehmen.“
+1	Wenn	Wenn	SCONJ	KOUS	_	9	mark	_	_
+2	nämlich	nämlich	ADV	ADV	_	9	advmod	_	_
+3	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Gerechte	Gerecht	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_
+5	(	(	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
+6	wirklich	wirklich	ADJ	ADJD	Degree=Pos|Variant=Short	9	advmod	_	SpaceAfter=No
+7	)	)	PUNCT	$(	PunctType=Brck	6	punct	_	_
+8	Gottes	Gottes	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	9	nmod	_	_
+9	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	advcl	_	_
+10	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	SpacesAfter=\n
+12	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+14	sich	sich	PRON	PRF	Case=Dat|Person=3|PronType=Prs|Reflex=Yes	12	obj	_	_
+15	seiner	sein	PRON	PPOSAT	Case=Dat|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	_	_
+16	annehmen.“	annehmen.“	PROPN	NE	Number=Sing|Person=3	12	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3869,7 +3922,7 @@
 # newpar
 # sent_id = 1
 # text = Gott
-1	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Gott	Gott	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4174,7 +4227,7 @@
 # newpar
 # sent_id = 1
 # text = Menschensohn
-1	Menschensohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Menschensohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4700,7 +4753,7 @@
 # sent_id = 1
 # text = Sohn Davids
 1	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
-2	Davids	Davids	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+2	Davids	Davids	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5191,7 +5244,7 @@
 # text = Weitere Titel Christi
 1	Weitere	weit	ADJ	ADJA	Degree=Cmp|Number=Plur	2	amod	_	_
 2	Titel	Titel	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
-3	Christi	Christi	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n
+3	Christi	Christi	PROPN	NE	Person=3	2	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5200,7 +5253,7 @@
 # newpar
 # sent_id = 1
 # text = Logos
-1	Logos	Logo	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Logos	Logo	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5333,7 +5386,7 @@
 # newpar
 # sent_id = 1
 # text = Hoherpriester
-1	Hoherpriester	Priester	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Hoherpriester	Priester	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5406,7 +5459,7 @@
 # sent_id = 1
 # text = Lamm Gottes
 1	Lamm	Lamm	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
-2	Gottes	Gott	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	obj	_	SpacesAfter=\n
+2	Gottes	Gott	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5614,7 +5667,173 @@
 1	Zweiter	zweit	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 2	oder	oder	CCONJ	KON	_	3	cc	_	_
 3	letzter	NULL	ADJ	ADJA	Case=Nom|Degree=Sup|Gender=Masc|Number=Sing	1	conj	_	_
-4	Adam	Adam	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+4	Adam	Adam	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Paulus nennt Jesus den „zweiten“ oder „letzten Adam“ und bezieht ihn damit auf den ersten Menschen in der biblischen Schöpfungsgeschichte.
+1	Paulus	Paulus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nsubj	_	SpacesBefore=\n
+2	nennt	nennen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	Jesus	Jesus	PROPN	NE	Case=Dat|Number=Sing|Person=3	2	iobj	_	_
+4	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+5	„	„	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
+6	zweiten“	zweiten“	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+7	oder	oder	CCONJ	KON	_	9	cc	_	_
+8	„	„	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
+9	letzten	NULL	ADJ	ADJA	Case=Acc|Degree=Sup|Gender=Masc|Number=Sing	6	conj	_	_
+10	Adam“	Adam“	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obj	_	_
+11	und	und	CCONJ	KON	_	12	cc	_	_
+12	bezieht	beziehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+13	ihn	ihn	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
+14	damit	damit	ADV	PROAV	_	12	advmod	_	_
+15	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+16	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	18	det	_	_
+17	ersten	NULL	ADJ	ADJA	Degree=Sup|Number=Plur	18	amod	_	_
+18	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	12	obl	_	_
+19	in	in	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+20	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+21	biblischen	biblisch	ADJ	ADJA	Degree=Pos|Number=Sing	22	amod	_	_
+22	Schöpfungsgeschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 2
+# text = Er beschreibt ihn nicht als seinen Nachkommen, sondern als heilenden Gegensatz:
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	beschreibt	beschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	ihn	ihn	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	nicht	nicht	PART	PTKNEG	Polarity=Neg	7	advmod	_	_
+5	als	als	CCONJ	KOKOM	ConjType=Comp	7	case	_	_
+6	seinen	sein	PRON	PPOSAT	Case=Dat|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	Nachkommen	Nachkomme|Nachkommen	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
+9	sondern	sondern	CCONJ	KON	_	12	cc	_	_
+10	als	als	CCONJ	KOKOM	ConjType=Comp	12	case	_	_
+11	heilenden	heilen	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	_
+12	Gegensatz	Gegensatz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	conj	_	SpaceAfter=No
+13	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Gegenüber dem aus Erde geschaffenen, durch seine Sünde den Tod für die Menschen auslösenden Adam (Röm 5,12 EU) komme Jesus „vom Himmel“ (1 Kor 15,47 EU) und habe den Tod für die Menschen überwunden (Röm 5,17f EU).
+1	Gegenüber	Gegenüber	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+2	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+3	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+4	Erde	Erde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obl	_	_
+5	geschaffenen	schaffen	ADJ	ADJA	Degree=Pos|Number=Sing	16	amod	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+7	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+8	seine	sein	PRON	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	_	_
+9	Sünde	Sünde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	obl	_	_
+10	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Tod	Tod	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	obj	_	_
+12	für	für	ADP	APPR	AdpType=Prep|Case=Acc	14	case	_	_
+13	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	14	det	_	_
+14	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	11	nmod	_	_
+15	auslösenden	auslösen	ADJ	ADJA	Degree=Pos|Number=Sing	16	amod	_	_
+16	Adam	Adam	PROPN	NE	Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+17	(	(	PUNCT	$(	PunctType=Brck	18	punct	_	SpaceAfter=No
+18	Röm	Röm	NOUN	NN	Gender=Neut|Number=Sing|Person=3	16	appos	_	_
+19	5,12	5,12	NUM	CARD	Number=Plur|NumType=Card|Person=3	18	flat	_	SpacesAfter= 
+20	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	18	flat:name	_	SpaceAfter=No
+21	)	)	PUNCT	$(	PunctType=Brck	18	punct	_	_
+22	komme	kommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	Jesus	Jesus	PROPN	NE	Case=Nom|Number=Sing|Person=3	22	nsubj	_	_
+24	„	„	PUNCT	$(	PunctType=Brck	22	punct	_	SpaceAfter=No
+25	vom	vom	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	26	case	_	_
+26	Himmel“	Himmel“	NOUN	NN	Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+27	(	(	PUNCT	$(	PunctType=Brck	29	punct	_	SpaceAfter=No
+28	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	29	nummod	_	_
+29	Kor	Kor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	26	appos	_	_
+30	15,47	15,47	NUM	CARD	Number=Plur|NumType=Card|Person=3	29	flat	_	SpacesAfter= 
+31	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	29	flat:name	_	SpaceAfter=No
+32	)	)	PUNCT	$(	PunctType=Brck	29	punct	_	_
+33	und	und	CCONJ	KON	_	40	cc	_	_
+34	habe	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	aux	_	_
+35	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	Tod	Tod	NOUN	NN	Gender=Masc|Number=Sing|Person=3	40	obj	_	_
+37	für	für	ADP	APPR	AdpType=Prep|Case=Acc	39	case	_	_
+38	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	39	det	_	_
+39	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	36	nmod	_	_
+40	überwunden	überwinden	VERB	VVPP	Aspect=Perf|VerbForm=Part	22	conj	_	_
+41	(	(	PUNCT	$(	PunctType=Brck	42	punct	_	SpaceAfter=No
+42	Röm	Röm	NOUN	NN	Gender=Neut|Number=Sing|Person=3	22	parataxis	_	_
+43	5,17f	5,17f	NUM	CARD	Number=Plur|NumType=Card|Person=3	42	flat	_	SpacesAfter= 
+44	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	42	flat:name	_	SpaceAfter=No
+45	)	)	PUNCT	$(	PunctType=Brck	42	punct	_	SpaceAfter=No
+46	.	.	PUNCT	$.	PunctType=Peri	22	punct	_	_
+
+# sent_id = 4
+# text = Im Gegensatz zur irdischen (1 Kor 15,45 EU) verkörpere Jesus die pneumatische Existenzform, die er selbst wirkend erschaffe (1 Kor 15,47 EU).
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Gegensatz	Gegensatz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+3	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	4	case	_	_
+4	irdischen	irdisch	ADJ	ADJA	Degree=Pos|Number=Sing	2	nmod	_	_
+5	(	(	PUNCT	$(	PunctType=Brck	7	punct	_	SpaceAfter=No
+6	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	7	nummod	_	_
+7	Kor	Kor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
+8	15,45	15,45	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	flat	_	SpacesAfter= 
+9	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	7	flat:name	_	SpaceAfter=No
+10	)	)	PUNCT	$(	PunctType=Brck	7	punct	_	_
+11	verkörpere	verkörpern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+12	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+13	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	pneumatische	pneumatisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	Existenzform	Form	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obj	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+17	die	die	PRON	PRELS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Rel	21	obj	_	_
+18	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+19	selbst	selbst	ADV	ADV	_	18	advmod	_	_
+20	wirkend	wirken	ADJ	ADJD	Degree=Pos|Variant=Short	21	advmod	_	_
+21	erschaffe	erschaffen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
+22	(	(	PUNCT	$(	PunctType=Brck	24	punct	_	SpaceAfter=No
+23	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	24	nummod	_	_
+24	Kor	Kor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	parataxis	_	_
+25	15,47	15,47	NUM	CARD	Number=Plur|NumType=Card|Person=3	24	flat	_	SpacesAfter= 
+26	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	24	flat:name	_	SpaceAfter=No
+27	)	)	PUNCT	$(	PunctType=Brck	24	punct	_	SpaceAfter=No
+28	.	.	PUNCT	$.	PunctType=Peri	11	punct	_	_
+
+# sent_id = 5
+# text = Wie Adam zum Stammvater der sündigen Menschheit geworden sei, so gehe aus Jesus die himmlische Gemeinde als Leib Christi hervor (1 Kor 15,48 EU; vgl.
+1	Wie	Wie	ADV	PWAV	PronType=Int	8	advmod	_	_
+2	Adam	Adam	PROPN	NE	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+3	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
+4	Stammvater	Stammvater	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+5	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+6	sündigen	sündig	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Menschheit	Menschheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+8	geworden	werden	AUX	VAPP	Aspect=Perf|VerbForm=Part	12	acl	_	_
+9	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+11	so	so	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	gehe	gehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+14	Jesus	Jesus	PROPN	NE	Case=Dat|Number=Sing|Person=3	12	obl	_	_
+15	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+16	himmlische	himmlisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
+17	Gemeinde	Gemeinde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nsubj	_	_
+18	als	als	CCONJ	KOKOM	ConjType=Comp	19	case	_	_
+19	Leib	Leib	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+20	Christi	Christi	PROPN	NE	Person=3	19	flat:name	_	_
+21	hervor	hervor	ADP	PTKVZ	PartType=Vbp	12	compound:prt	_	_
+22	(	(	PUNCT	$(	PunctType=Brck	28	punct	_	SpaceAfter=No
+23	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	24	nummod	_	_
+24	Kor	Kor	NOUN	NN	Gender=Masc|Number=Sing|Person=3	19	appos	_	_
+25	15,48	15,48	NUM	CARD	Number=Plur|NumType=Card|Person=3	24	flat	_	SpacesAfter= 
+26	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	24	flat:name	_	SpaceAfter=No
+27	;	;	PUNCT	$.	PunctType=Peri	28	punct	_	_
+28	vgl.	vgl.	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	12	parataxis	_	_
+
+# sent_id = 6
+# text = Kol 1,18 EU).
+1	Kol	Kol	PROPN	NE	Number=Sing|Person=3	0	root	_	_
+2	1,18	1,18	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	flat	_	SpacesAfter= 
+3	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	1	flat:name	_	SpaceAfter=No
+4	)	)	PUNCT	$(	PunctType=Brck	1	punct	_	SpaceAfter=No
+5	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5646,7 +5865,7 @@
 # text = Leiden und Kreuzestod
 1	Leiden	Leiden	PROPN	NE	Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Kreuzestod	Kreuzestod	PROPN	NE	Person=3	1	conj	_	SpacesAfter=\n
+3	Kreuzestod	Kreuzestod	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5814,7 +6033,7 @@
 # text = Passionsbericht bei Markus
 1	Passionsbericht	Bericht	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
-3	Markus	Markus	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Markus	Markus	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6781,7 +7000,7 @@
 # text = Deutungsmotive im NT
 1	Deutungsmotive	Motiv	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
 2	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
-3	NT	NT	PROPN	NE	Person=3	1	nmod	_	SpacesAfter=\n
+3	NT	NT	PROPN	NE	Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6840,7 +7059,7 @@
 # newpar
 # sent_id = 1
 # text = Auferstehung
-1	Auferstehung	Auferstehung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Auferstehung	Auferstehung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7082,7 +7301,7 @@
 # text = Die ersten Augenzeugen
 1	Die	Die	DET	ART	Case=Acc|Number=Plur|PronType=Art	3	det	_	_
 2	ersten	NULL	ADJ	ADJA	Degree=Sup|Number=Plur	3	amod	_	_
-3	Augenzeugen	Zeuge	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+3	Augenzeugen	Zeuge	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7615,7 +7834,7 @@
 # text = Das leere Grab
 1	Das	Das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
 2	leere	leer	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
-3	Grab	Grab	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+3	Grab	Grab	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8868,7 +9087,7 @@
 # sent_id = 1
 # text = Die Emmausjünger
 1	Die	Die	DET	ART	Case=Acc|Number=Plur|PronType=Art	2	det	_	_
-2	Emmausjünger	Jünger	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Emmausjünger	Jünger	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9258,7 +9477,7 @@
 # sent_id = 1
 # text = Die Elfervision
 1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Elfervision	Vision	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Elfervision	Vision	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9726,7 +9945,7 @@
 # sent_id = 1
 # text = Spätere Erscheinungstexte
 1	Spätere	spät	ADJ	ADJA	Degree=Cmp|Number=Plur	2	amod	_	_
-2	Erscheinungstexte	Text	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Erscheinungstexte	Text	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9737,7 +9956,7 @@
 # text = Rekonstruktionsversuche des Osterereignisverlaufs
 1	Rekonstruktionsversuche	Versuch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
 2	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	Osterereignisverlaufs	Verlauf	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+3	Osterereignisverlaufs	Verlauf	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10030,7 +10249,7 @@
 1	Theologische	theologisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	Deutungsmotive	Motive	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
 3	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	4	det	_	_
-4	Ostertexte	Text	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nmod	_	SpacesAfter=\n
+4	Ostertexte	Text	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11188,7 +11407,7 @@
 2	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	_
 3	in	in	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
 4	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Frömmigkeitsgeschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+5	Frömmigkeitsgeschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11446,7 +11665,7 @@
 1	Missionsgeschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	4	cc	_	_
 3	postkoloniale	postkoloniale	ADJ	ADJA	_	4	amod	_	_
-4	Christologien	Christologie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+4	Christologien	Christologie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11694,7 +11913,7 @@
 2	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	flat:name	_	_
 3	in	in	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
 4	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Kunst	Kunst	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+5	Kunst	Kunst	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11817,6 +12036,549 @@
 14	Renaissance	Renaissance	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nmod	_	_
 15	vorausgesetzt	voraussetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	4	parataxis	_	SpaceAfter=No
 16	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Die frühchristliche Kunst, vor allem im Kontext der Bestattung (Katakomben, Sarkophage), stellte nicht Personen dar, sondern Symbole der christlichen Hoffnung.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpacesBefore=\n
+2	frühchristliche	frühchristlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	Kunst	Kunst	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+5	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	allem	all	PRON	PIS	Case=Dat|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	8	nmod	_	_
+7	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	8	case	_	_
+8	Kontext	Kontext	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+9	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Bestattung	Bestattung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nmod	_	_
+11	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+12	Katakomben	Katakomben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	10	appos	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+14	Sarkophage	Sarkophage	NOUN	NN	Gender=Neut|Number=Plur|Person=3	12	conj	_	SpaceAfter=No
+15	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+17	stellte	stellen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+18	nicht	nicht	PART	PTKNEG	Polarity=Neg	19	advmod	_	_
+19	Personen	Person	NOUN	NN	Gender=Fem|Number=Plur|Person=3	17	obj	_	_
+20	dar	dar	ADP	PTKVZ	PartType=Vbp	17	compound:prt	_	SpaceAfter=No
+21	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+22	sondern	sondern	CCONJ	KON	_	23	cc	_	_
+23	Symbole	Symbol	NOUN	NN	Gender=Neut|Number=Plur|Person=3	19	conj	_	_
+24	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+25	christlichen	christlich	ADJ	ADJA	Degree=Pos|Number=Sing	26	amod	_	_
+26	Hoffnung	Hoffnung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	23	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	_
+
+# sent_id = 2
+# text = Sie gebrauchte zunächst nichtpersonale Symbole wie Fisch oder Lamm.
+1	Sie	Sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	gebrauchte	gebrauchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	zunächst	zunächst	ADV	ADV	_	2	advmod	_	_
+4	nichtpersonale	nichtpersonale	ADJ	ADJA	_	5	amod	_	_
+5	Symbole	Symbol	NOUN	NN	Gender=Neut|Number=Plur|Person=3	2	obj	_	_
+6	wie	wie	CCONJ	KOKOM	ConjType=Comp	7	case	_	_
+7	Fisch	Fisch	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obl	_	_
+8	oder	oder	CCONJ	KON	_	9	cc	_	_
+9	Lamm	Lamm	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Einige waren bereits in der Antike bekannt und wurden christlich umgedeutet.
+1	Einige	einig	PRON	PIS	Case=Nom|Number=Plur|Person=3|PronType=Ind,Neg,Tot	7	nsubj	_	_
+2	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
+3	bereits	bereits	ADV	ADV	_	7	advmod	_	_
+4	in	in	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+5	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Antike	Antike	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	obl	_	_
+7	bekannt	bekennen	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	_
+8	und	und	CCONJ	KON	_	11	cc	_	_
+9	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
+10	christlich	christlich	ADJ	ADJD	Degree=Pos|Variant=Short	11	advmod	_	_
+11	umgedeutet	umdeuten	VERB	VVPP	Aspect=Perf|VerbForm=Part	7	conj	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 4
+# text = Das gleiche wiederholte sich, als Christen sich im 3. Jahrhundert an eine personale Darstellung von Jesus Christus wagten.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	gleiche	gleich	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	nsubj	_	_
+3	wiederholte	wiederholen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+6	als	als	SCONJ	KOUS	_	19	mark	_	_
+7	Christen	Christ	NOUN	NN	Gender=Masc|Number=Plur|Person=3	19	nsubj	_	_
+8	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	19	obj	_	_
+9	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	11	case	_	_
+10	3.	3.	ADJ	ADJA	Person=3	11	amod	_	_
+11	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	19	obl	_	_
+12	an	an	ADP	APPR	AdpType=Prep|Case=Acc	15	case	_	_
+13	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	personale	personal	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	Darstellung	Darstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	obl	_	_
+16	von	von	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+17	Jesus	Jesus	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+18	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	flat:name	_	_
+19	wagten	wagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 5
+# text = Die Künstler entwickelten keine besondere Formensprache für ihre Christusfiguren.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Künstler	Künstler	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_
+3	entwickelten	entwickeln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	keine	kein	DET	PIAT	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Ind,Neg,Tot	6	det	_	_
+5	besondere	besondere	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	Formensprache	Sprache	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	obj	_	_
+7	für	für	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+8	ihre	sein	PRON	PPOSAT	Case=Acc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	_	_
+9	Christusfiguren	Figur	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 6
+# text = Sie sind meist jugendlich, bartlos, mit Nackenlocken, gekleidet in Tunika und Pallium.
+1	Sie	Sie	PRON	PPER	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	meist	meist	ADV	ADV	Degree=Sup	4	advmod	_	_
+4	jugendlich	jugendlich	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+6	bartlos	bartlos	ADJ	ADJD	Degree=Pos|Variant=Short	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+8	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+9	Nackenlocken	Locke	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+11	gekleidet	kleiden	ADJ	ADJD	Degree=Pos|Variant=Short	4	conj	_	_
+12	in	in	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+13	Tunika	Tunika	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obl	_	_
+14	und	und	CCONJ	KON	_	15	cc	_	_
+15	Pallium	Pallium	NOUN	NN	Person=3	13	conj	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 7
+# text = Mythologische Gestalten wie Orpheus oder Helios wurden adaptiert.
+1	Mythologische	mythologisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
+2	Gestalten	Gestalt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	8	nsubj:pass	_	_
+3	wie	wie	CCONJ	KOKOM	ConjType=Comp	4	case	_	_
+4	Orpheus	Orpheus	PROPN	NE	Person=3	2	obl	_	_
+5	oder	oder	CCONJ	KON	_	6	cc	_	_
+6	Helios	Helios	PROPN	NE	Person=3	4	conj	_	_
+7	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
+8	adaptiert	adaptieren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
+
+# sent_id = 8
+# text = Auch der Schafträger (Foto) ist keine christliche Bildschöpfung, sondern eine in der antiken Hirtenidylle (Bukolik) sehr beliebte Gestalt.
+1	Auch	Auch	ADV	ADV	_	3	advmod	_	_
+2	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Schafträger	Träger	NOUN	NN	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+4	(	(	PUNCT	$(	PunctType=Brck	5	punct	_	SpaceAfter=No
+5	Foto	Foto	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	SpaceAfter=No
+6	)	)	PUNCT	$(	PunctType=Brck	5	punct	_	_
+7	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+8	keine	kein	DET	PIAT	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Ind,Neg,Tot	10	det	_	_
+9	christliche	christlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	Bildschöpfung	Schöpfung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+12	sondern	sondern	CCONJ	KON	_	23	cc	_	_
+13	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+14	in	in	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+15	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+16	antiken	antik	ADJ	ADJA	Degree=Pos|Number=Sing	17	amod	_	_
+17	Hirtenidylle	Dylle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	obl	_	_
+18	(	(	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+19	Bukolik	Bukolik	PROPN	NE	Person=3	17	appos	_	SpaceAfter=No
+20	)	)	PUNCT	$(	PunctType=Brck	19	punct	_	_
+21	sehr	sehr	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	beliebte	belieben	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
+23	Gestalt	Gestalt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	conj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	_
+
+# sent_id = 9
+# text = Ob mit der künstlerischen Darstellung eines Schafträgers im konkreten Fall Jesus Christus als Guter Hirte gemeint ist (vgl. Joh 10,11 EU), ist nicht immer eindeutig zu beantworten.
+1	Ob	Ob	SCONJ	KOUS	_	16	mark	_	_
+2	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+3	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	künstlerischen	künstlerisch	ADJ	ADJA	Degree=Pos|Number=Sing	5	amod	_	_
+5	Darstellung	Darstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	obl	_	_
+6	eines	eines	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Schafträgers	Träger	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+8	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	10	case	_	_
+9	konkreten	konkret	ADJ	ADJA	Degree=Pos|Number=Sing	10	amod	_	_
+10	Fall	Fall	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+11	Jesus	Jesus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nsubj:pass	_	_
+12	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	flat:name	_	_
+13	als	als	CCONJ	KOKOM	ConjType=Comp	15	case	_	_
+14	Guter	gut	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	Hirte	Hirt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+16	gemeint	meinen	VERB	VVPP	Aspect=Perf|VerbForm=Part	30	csubj	_	_
+17	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
+18	(	(	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+19	vgl.	vgl.	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+20	Joh	Joh	PROPN	NE	Person=3	19	obj	_	_
+21	10,11	10,11	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	flat	_	SpacesAfter= 
+22	EU	EU	PROPN	NE	Gender=Fem|Number=Sing|Person=3	20	flat:name	_	SpaceAfter=No
+23	)	)	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+24	,	,	PUNCT	$,	PunctType=Comm	30	punct	_	_
+25	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_
+26	nicht	nicht	PART	PTKNEG	Polarity=Neg	30	advmod	_	_
+27	immer	immer	ADV	ADV	_	30	advmod	_	_
+28	eindeutig	eindeutig	ADJ	ADJD	Degree=Pos|Variant=Short	30	advmod	_	_
+29	zu	zu	PART	PTKZU	PartType=Inf	30	mark	_	_
+30	beantworten	beantworten	VERB	VVINF	VerbForm=Inf	19	parataxis	_	SpaceAfter=No
+31	.	.	PUNCT	$.	PunctType=Peri	19	punct	_	_
+
+# sent_id = 10
+# text = Bestimmte Motivzyklen sind besonders beliebt:
+1	Bestimmte	bestimmen	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
+2	Motivzyklen	Vzyklus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	5	nsubj	_	_
+3	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	besonders	besonders	ADV	ADV	_	5	advmod	_	_
+5	beliebt	belieben	ADJ	ADJD	Degree=Pos|Variant=Short	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 11
+# text = Im 3. Jahrhundert Brot- und Weinvermehrung (sie weisen symbolisch auf die Eucharistiefeier hin), Christus als Heiler (mit Thaumaturgenstab) und als Lehrer sowie seine Taufe im Jordan.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+2	3.	3.	ADJ	ADJA	Person=3	3	amod	_	_
+3	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nmod	_	_
+4	Brot-	Brot-	NOUN	TRUNC	Hyph=Yes	9	nsubj	_	_
+5	und	und	CCONJ	KON	_	6	cc	_	_
+6	Weinvermehrung	Vermehrung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	conj	_	_
+7	(	(	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
+8	sie	sie	PRON	PPER	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+9	weisen	weisen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	symbolisch	symbolisch	ADJ	ADJD	Degree=Pos|Variant=Short	9	advmod	_	_
+11	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	13	case	_	_
+12	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	13	det	_	_
+13	Eucharistiefeier	Eucharistiefeier	NOUN	NN	Gender=Masc|Number=Plur|Person=3	9	obj	_	_
+14	hin	hin	ADP	PTKVZ	PartType=Vbp	9	compound:prt	_	SpaceAfter=No
+15	)	)	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+17	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	_
+18	als	als	CCONJ	KOKOM	ConjType=Comp	19	case	_	_
+19	Heiler	Heiler	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+20	(	(	PUNCT	$(	PunctType=Brck	22	punct	_	SpaceAfter=No
+21	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+22	Thaumaturgenstab	Stab	NOUN	NN	Gender=Masc|Number=Sing|Person=3	19	nmod	_	SpaceAfter=No
+23	)	)	PUNCT	$(	PunctType=Brck	22	punct	_	_
+24	und	und	CCONJ	KON	_	26	cc	_	_
+25	als	als	CCONJ	KOKOM	ConjType=Comp	26	case	_	_
+26	Lehrer	Lehrer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	19	conj	_	_
+27	sowie	sowie	CCONJ	KON	_	29	cc	_	_
+28	seine	sein	PRON	PPOSAT	Case=Nom|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	det	_	_
+29	Taufe	Taufe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	26	conj	_	_
+30	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	31	case	_	_
+31	Jordan	Jordan	PROPN	NE	Number=Sing|Person=3	29	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	$.	PunctType=Peri	9	punct	_	_
+
+# sent_id = 12
+# text = Im 4. Jahrhundert kommen Geburt und Passion Christi hinzu, Auferstehung und Himmelfahrt, Christus als Weltenrichter.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+2	4.	4.	ADJ	ADJA	Person=3	3	amod	_	_
+3	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	obl	_	_
+4	kommen	kommen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	Geburt	Geburt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+6	und	und	CCONJ	KON	_	7	cc	_	_
+7	Passion	Passion	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	conj	_	_
+8	Christi	Christi	PROPN	NE	Person=3	7	flat:name	_	_
+9	hinzu	hinzu	ADP	PTKVZ	PartType=Vbp	4	compound:prt	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+11	Auferstehung	Auferstehung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	_
+12	und	und	CCONJ	KON	_	13	cc	_	_
+13	Himmelfahrt	Fahrt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+15	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	conj	_	_
+16	als	als	CCONJ	KOKOM	ConjType=Comp	17	case	_	_
+17	Weltenrichter	Weltenrichter	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = german-hdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Der bärtige Christus mit Nackenlocken bleibt in der frühchristlichen Kunst selten; hier wirkte wohl die Darstellung antiker Philosophen ein.
+1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	bärtige	bärtig	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	Christus	Christus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+4	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+5	Nackenlocken	Locke	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nmod	_	_
+6	bleibt	bleiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	in	in	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+8	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	frühchristlichen	frühchristlich	ADJ	ADJA	Degree=Pos|Number=Sing	10	amod	_	_
+10	Kunst	Kunst	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	obl	_	_
+11	selten	selten	ADJ	ADJD	Degree=Pos|Variant=Short	6	xcomp	_	SpaceAfter=No
+12	;	;	PUNCT	$.	PunctType=Peri	6	punct	_	_
+13	hier	hier	ADV	ADV	_	14	advmod	_	_
+14	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	_	_
+15	wohl	wohl	ADV	ADV	_	14	advmod	_	_
+16	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Darstellung	Darstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	nsubj	_	_
+18	antiker	antik	ADJ	ADJA	Case=Gen|Degree=Pos|Number=Plur	19	amod	_	_
+19	Philosophen	Philosoph	NOUN	NN	Gender=Masc|Number=Plur|Person=3	17	nmod	_	_
+20	ein	ein	ADP	PTKVZ	PartType=Vbp	14	compound:prt	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	_
+
+# sent_id = 2
+# text = Dagegen kam im 4. Jahrhundert ein weiterer Bildtyp auf und wurde in der nachkonstantinischen Reichskirche dominant: der bärtige und langhaarige, erwachsene, ernst blickende Christus.
+1	Dagegen	Dagegen	ADV	PROAV	_	2	advmod	_	_
+2	kam	kommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
+4	4.	4.	ADJ	ADJA	Person=3	5	amod	_	_
+5	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obl	_	_
+6	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+7	weiterer	weit	ADJ	ADJA	Case=Nom|Degree=Cmp|Gender=Masc|Number=Sing	8	amod	_	_
+8	Bildtyp	Bildtyp	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_
+9	auf	auf	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	_
+10	und	und	CCONJ	KON	_	11	cc	_	_
+11	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+12	in	in	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+13	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	nachkonstantinischen	nachkonstantinischen	ADJ	ADJA	_	15	amod	_	_
+15	Reichskirche	Kirche	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obl	_	_
+16	dominant	dominant	ADJ	ADJD	Degree=Pos|Variant=Short	11	advmod	_	SpaceAfter=No
+17	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	_
+18	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+19	bärtige	bärtig	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	27	amod	_	_
+20	und	und	CCONJ	KON	_	21	cc	_	_
+21	langhaarige	langhaarig	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	19	conj	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+23	erwachsene	erwachsen	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	19	conj	_	SpaceAfter=No
+24	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+25	ernst	ernst	ADJ	ADJD	Degree=Pos|Variant=Short	26	advmod	_	_
+26	blickende	blicken	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	19	conj	_	_
+27	Christus	Christus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	nsubj	_	SpaceAfter=No
+28	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 3
+# text = Diese Darstellung entspricht dem zeitgenössischen repräsentativen Herrscherbildnis; der Bart ist als Zeichen der Würde zu verstehen.
+1	Diese	dies	DET	PDAT	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	Darstellung	Darstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+3	entspricht	entsprechen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+5	zeitgenössischen	zeitgenössisch	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+6	repräsentativen	repräsentativ	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Herrscherbildnis	Bildnis	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
+8	;	;	PUNCT	$.	PunctType=Peri	3	punct	_	_
+9	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Bart	Bart	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+11	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+12	als	als	CCONJ	KOKOM	ConjType=Comp	13	case	_	_
+13	Zeichen	Zeichen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	17	obl	_	_
+14	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Würde	Würde	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	nmod	_	_
+16	zu	zu	PART	PTKZU	PartType=Inf	17	mark	_	_
+17	verstehen	verstehen	VERB	VVINF	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
+18	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 4
+# text = Ein Beispiel für diesen Typ des Christusbildes ist das Apsismosaik von Santa Pudenziana (frühes 5. Jahrhundert).
+1	Ein	Ein	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	Beispiel	Beispiel	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
+3	für	für	ADP	APPR	AdpType=Prep|Case=Acc	5	case	_	_
+4	diesen	dies	DET	PDAT	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	Typ	Typ	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+6	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	Christusbildes	Bild	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	5	nmod	_	_
+8	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+9	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	10	det	_	_
+10	Apsismosaik	Mosaik	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	nsubj	_	_
+11	von	von	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	Santa	Santa	PROPN	NE	Number=Sing|Person=3	10	nmod	_	_
+13	Pudenziana	Pudenziana	PROPN	NE	Person=3	12	flat:name	_	_
+14	(	(	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
+15	frühes	früh	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+16	5.	5.	ADJ	ADJA	Person=3	17	amod	_	_
+17	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	appos	_	SpaceAfter=No
+18	)	)	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 5
+# text = Hier sieht man den im himmlischen Jerusalem zwischen den zwölf Aposteln thronenden Christus.
+1	Hier	Hier	ADV	ADV	_	2	advmod	_	_
+2	sieht	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	man	man	PRON	PIS	Case=Nom|Number=Sing|Person=3|PronType=Ind,Neg,Tot	2	nsubj	_	_
+4	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
+6	himmlischen	himmlisch	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Jerusalem	Jerusalem	NOUN	NN	Number=Sing|Person=3	12	obl	_	_
+8	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+9	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	11	det	_	_
+10	zwölf	zwölf	NUM	CARD	Number=Plur|NumType=Card|Person=3	11	nummod	_	_
+11	Aposteln	Apostel	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	12	obl	_	_
+12	thronenden	thronen	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	Christus	Christus	PROPN	NE	Gender=Masc|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 6
+# text = Die Christusikone vom Sinai (Foto) entstand im frühen 6. Jahrhundert in der Hauptstadt Konstantinopel und entspricht ebenfalls dem herrscherlich-repräsentativen Christusbild, wie es auch auf byzantinischen Münzen zu sehen ist.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Christusikone	uonknown	NOUN	NN	Person=3	8	nsubj	_	_
+3	vom	vom	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
+4	Sinai	Sinai	PROPN	NE	Person=3	2	nmod	_	_
+5	(	(	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
+6	Foto	Foto	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	SpaceAfter=No
+7	)	)	PUNCT	$(	PunctType=Brck	6	punct	_	_
+8	entstand	entstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	12	case	_	_
+10	frühen	früh	ADJ	ADJA	Degree=Pos|Number=Sing	12	amod	_	_
+11	6.	6.	ADJ	ADJA	Person=3	12	amod	_	_
+12	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	8	obl	_	_
+13	in	in	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+14	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Hauptstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	obl	_	_
+16	Konstantinopel	Konstantinopel	PROPN	NE	Person=3	15	flat:name	_	_
+17	und	und	CCONJ	KON	_	18	cc	_	_
+18	entspricht	entsprechen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
+19	ebenfalls	ebenfalls	ADV	ADV	_	18	advmod	_	_
+20	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
+21	herrscherlich-repräsentativen	herrscherlich-repräsentativ	ADJ	ADJA	Degree=Pos|Number=Sing	22	amod	_	_
+22	Christusbild	Bild	NOUN	NN	Gender=Neut|Number=Sing|Person=3	18	obj	_	SpaceAfter=No
+23	,	,	PUNCT	$,	PunctType=Comm	31	punct	_	_
+24	wie	wie	ADV	PWAV	PronType=Int	31	advmod	_	_
+25	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+26	auch	auch	ADV	ADV	_	29	advmod	_	_
+27	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	29	case	_	_
+28	byzantinischen	byzantinischen	ADJ	ADJA	_	29	amod	_	_
+29	Münzen	Münze	NOUN	NN	Gender=Fem|Number=Plur|Person=3	31	obl	_	_
+30	zu	zu	PART	PTKZU	PartType=Inf	31	mark	_	_
+31	sehen	sehen	VERB	VVINF	VerbForm=Inf	18	acl	_	_
+32	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux	_	SpaceAfter=No
+33	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
+
+# sent_id = 7
+# text = Aus dem Hofzeremoniell der Spätantike wurden verschiedene Elemente für das Christusbild übernommen:
+1	Aus	Aus	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
+2	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+3	Hofzeremoniell	Hofzeremoniell	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	obl	_	_
+4	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Spätantike	Spätantike	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+6	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+7	verschiedene	verscheiden	ADJ	ADJA	Degree=Pos|Number=Plur	8	amod	_	_
+8	Elemente	Element	NOUN	NN	Gender=Neut|Number=Plur|Person=3	12	nsubj:pass	_	_
+9	für	für	ADP	APPR	AdpType=Prep|Case=Acc	11	case	_	_
+10	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+11	Christusbild	Bild	NOUN	NN	Gender=Neut|Number=Sing|Person=3	8	nmod	_	_
+12	übernommen	übernehmen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+13	:	:	PUNCT	$.	PunctType=Peri	12	punct	_	_
+
+# sent_id = 8
+# text = Insignien, Bekleidung, Gesten (zum Beispiel den Redegestus), Szenarien wie der mit Purpurkissen ausgestattete Thron, auch der Nimbus.
+1	Insignien	Insignien	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Bekleidung	Bekleidung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Gesten	Geste	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	_
+6	(	(	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
+7	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	8	case	_	_
+8	Beispiel	Beispiel	NOUN	NN	Gender=Neut|Number=Sing|Person=3	10	nmod	_	_
+9	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Redegestus	Gestus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	appos	_	SpaceAfter=No
+11	)	)	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+13	Szenarien	Arie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	_
+14	wie	wie	CCONJ	KOKOM	ConjType=Comp	19	case	_	_
+15	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+16	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+17	Purpurkissen	Kissen	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	18	obl	_	_
+18	ausgestattete	ausstatten	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	Thron	Thron	NOUN	NN	Gender=Masc|Number=Sing|Person=3	13	obl	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+21	auch	auch	ADV	ADV	_	23	advmod	_	_
+22	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Nimbus	Nimbus	NOUN	NN	Gender=Masc|Number=Sing|Person=3	19	conj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
+
+# sent_id = 9
+# text = Die Johannesoffenbarung lieferte zahlreiche Einzelzüge für die Darstellung des thronenden Christus und sorgte zugleich für eine Verfremdung des höfischen Zeremoniells.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Johannesoffenbarung	Esoffenbarung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+3	lieferte	liefern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	zahlreiche	zahlreich	ADJ	ADJA	Degree=Pos|Number=Plur	5	amod	_	_
+5	Einzelzüge	Einzelzug	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	obj	_	_
+6	für	für	ADP	APPR	AdpType=Prep|Case=Acc	8	case	_	_
+7	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Darstellung	Darstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nmod	_	_
+9	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	thronenden	thronen	ADJ	ADJA	Degree=Pos|Number=Sing	11	amod	_	_
+11	Christus	Christus	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+12	und	und	CCONJ	KON	_	13	cc	_	_
+13	sorgte	sorgen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+14	zugleich	zugleich	ADV	ADV	_	13	advmod	_	_
+15	für	für	ADP	APPR	AdpType=Prep|Case=Acc	17	case	_	_
+16	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Verfremdung	Remdung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	obj	_	_
+18	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
+19	höfischen	höfisch	ADJ	ADJA	Degree=Pos|Number=Sing	20	amod	_	_
+20	Zeremoniells	Zeremoniell	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	17	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 10
+# text = Christus war nun vor allem Weltherrscher und Gesetzgeber, der die orthodoxe Lehre dem Petrus übergibt (Bildtyp der traditio legis) und die Huldigung verschiedener Personengruppen und himmlischer Wesen entgegennimmt.
+1	Christus	Christus	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	_
+3	nun	nun	ADV	ADV	_	6	advmod	_	_
+4	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+5	allem	all	PRON	PIS	Case=Dat|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	6	nmod	_	_
+6	Weltherrscher	Herrscher	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+7	und	und	CCONJ	KON	_	8	cc	_	_
+8	Gesetzgeber	Geber	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+10	der	der	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	16	nsubj	_	_
+11	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	orthodoxe	orthodox	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	Lehre	Lehre	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	obj	_	_
+14	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Petrus	Petrus	PROPN	NN	Gender=Masc|Number=Sing|Person=3	16	iobj	_	_
+16	übergibt	übergeben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+17	(	(	PUNCT	$(	PunctType=Brck	18	punct	_	SpaceAfter=No
+18	Bildtyp	Bildtyp	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	appos	_	_
+19	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	traditio	traditio	X	FM	Foreign=Yes|Person=3	18	nmod	_	_
+21	legis	legis	X	FM	Foreign=Yes|Person=3	20	flat	_	SpaceAfter=No
+22	)	)	PUNCT	$(	PunctType=Brck	18	punct	_	_
+23	und	und	CCONJ	KON	_	31	cc	_	_
+24	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	Huldigung	Huldigung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	31	obj	_	_
+26	verschiedener	verscheiden	ADJ	ADJA	Case=Gen|Degree=Pos|Number=Plur	27	amod	_	_
+27	Personengruppen	Gruppe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	25	nmod	_	_
+28	und	und	CCONJ	KON	_	30	cc	_	_
+29	himmlischer	himmlisch	ADJ	ADJA	Case=Gen|Degree=Pos|Number=Plur	30	amod	_	_
+30	Wesen	Wesen	NOUN	NN	Gender=Neut|Number=Plur|Person=3	27	conj	_	_
+31	entgegennimmt	entgegennehmen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	SpaceAfter=No
+32	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	_
+
+# sent_id = 11
+# text = Nach dem Vorbild römischer Kaiser wurde der Bildtyp des siegreichen Christus gestaltet.
+1	Nach	Nach	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
+2	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+3	Vorbild	Vorbild	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	obl	_	_
+4	römischer	römisch	ADJ	ADJA	Case=Gen|Degree=Pos|Number=Plur	5	amod	_	_
+5	Kaiser	Kaiser	NOUN	NN	Gender=Masc|Number=Plur|Person=3	3	nmod	_	_
+6	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+7	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Bildtyp	Bildtyp	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	nsubj:pass	_	_
+9	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	siegreichen	siegreich	ADJ	ADJA	Degree=Pos|Number=Sing	11	amod	_	_
+11	Christus	Christus	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+12	gestaltet	gestalten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
+
+# sent_id = 12
+# text = Er trägt den Kreuzstab als Sieges-, nicht Leidenssymbol.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	trägt	tragen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Kreuzstab	Stab	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obj	_	_
+5	als	als	CCONJ	KOKOM	ConjType=Comp	6	case	_	_
+6	Sieges-	Sieges-	NOUN	TRUNC	Hyph=Yes	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+8	nicht	nicht	PART	PTKNEG	Polarity=Neg	9	advmod	_	_
+9	Leidenssymbol	Symbol	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	conj	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13173,7 +13935,7 @@
 # newpar
 # sent_id = 1
 # text = Literatur
-1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13182,7 +13944,7 @@
 # newpar
 # sent_id = 1
 # text = Lexikonartikel
-1	Lexikonartikel	Artikel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Lexikonartikel	Artikel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13194,7 +13956,7 @@
 1	Exegese	Exegese	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
 3	Neuen	neu	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
-4	Testaments	Testament	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Testaments	Testament	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13207,7 +13969,7 @@
 2	Theologie	Theologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 3	(	(	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
 4	Dogmatik	Dogmatik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	appos	_	SpaceAfter=No
-5	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+5	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13217,7 +13979,7 @@
 # sent_id = 1
 # text = Sonstige Literatur
 1	Sonstige	sonstige	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13226,7 +13988,7 @@
 # newpar
 # sent_id = 1
 # text = Weblinks
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13235,7 +13997,7 @@
 # newpar
 # sent_id = 1
 # text = Einzelnachweise
-1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13264,13 +14026,4 @@
 3	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	5	case	_	_
 4	gesprochenen	sprechen	ADJ	ADJA	Degree=Pos|Number=Sing	5	amod	_	_
 5	Wikipedia	Wikipedia	NOUN	NN	Person=3	2	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
 

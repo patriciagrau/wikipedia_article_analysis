@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/Siddhartha_Gautama
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,17 +8,7 @@
 1	Siddhartha	Siddhartha	PROPN	NE	Person=3	0	root	_	_
 2	Gautama	Gautama	PROPN	NE	Person=3	1	flat:name	_	_
 3	–	–	PROPN	NE	Foreign=Yes|Person=3	1	flat:name	_	_
-4	Wikipedia	Wikipedia	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Siddhartha Gautama
-1	Siddhartha	Siddhartha	PROPN	NE	Person=3	0	root	_	_
-2	Gautama	Gautama	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	X	FM	Foreign=Yes|Person=3	1	flat	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -122,13 +110,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Chronologie[Bearbeiten | Quelltext bearbeiten]
-1	Chronologie[	Chronologie[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Chronologie
+1	Chronologie	Chronologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -730,14 +713,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Namen[Bearbeiten | Quelltext bearbeiten]
-1	Namen	Name	NOUN	NN	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Namen
+1	Namen	Name	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -921,13 +898,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Neben der Bezeichnung als Buddha – der „Erwachte“ – wurden Siddhartha Gautama auch andere Ehrennamen verliehen, darunter Tathagata (Sanskrit तथागत tathāgata „der So-Dahingelangte“) und Shakyamuni (Sanskrit शाक्यमुनि śākyamuni „der Weise [aus dem Volk] der Shakya“).
+# text = Neben der Bezeichnung als Buddha – der „Erwachte“ – wurden Siddhartha Gautama auch andere Ehrennamen verliehen, darunter Tathagata (Sanskrit तथागत tathāgata „der So-Dahingelangte“) und Shakyamuni (Sanskrit शाक्यमुनि śākyamuni „der Weise der Shakya“).
 1	Neben	Neben	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	Bezeichnung	Bezeichnung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	obl	_	_
 4	als	als	CCONJ	KOKOM	ConjType=Comp	5	case	_	_
 5	Buddha	Buddha	PROPN	NE	Person=3	3	obl	_	_
-6	–	–	PROPN	NE	Person=3	5	flat	_	_
+6	–	–	PROPN	NE	Person=3	5	flat:name	_	_
 7	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 8	„	„	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
 9	Erwachte“	Erwachte“	NOUN	NN	Person=3	5	appos	_	_
@@ -953,21 +930,16 @@
 29	und	und	CCONJ	KON	_	30	cc	_	_
 30	Shakyamuni	Shakyamuni	PROPN	NE	Person=3	22	conj	_	_
 31	(	(	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
-32	Sanskrit	Sanskrit	X	FM	Foreign=Yes|Person=3	30	appos	_	_
+32	Sanskrit	Sanskrit	NOUN	NN	Person=3	30	appos	_	_
 33	शाक्यमुनि	शाक्यमुनि	X	FM	Foreign=Yes|Person=3	32	flat	_	_
 34	śākyamuni	śākyamuni	X	FM	Foreign=Yes|Person=3	32	flat	_	_
-35	„	„	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
+35	„	„	PUNCT	$(	PunctType=Brck	37	punct	_	SpaceAfter=No
 36	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	Weise	Weis	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	32	appos	_	_
-38	[	[	PUNCT	$(	PunctType=Brck	41	punct	_	SpaceAfter=No
-39	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	41	case	_	_
-40	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	41	det	_	_
-41	Volk	Volk	NOUN	NN	Gender=Neut|Number=Sing|Person=3	37	nmod	_	SpaceAfter=No
-42	]	]	PUNCT	$(	PunctType=Brck	41	punct	_	_
-43	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	44	det	_	_
-44	Shakya“	Shakya“	NOUN	NN	Person=3	41	nmod	_	SpaceAfter=No
-45	)	)	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
-46	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	SpacesAfter=\n
+37	Weise	Weis	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	32	appos	_	SpacesAfter=\s\s
+38	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	Shakya“	Shakya“	NOUN	NN	Person=3	37	nmod	_	SpaceAfter=No
+40	)	)	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
+41	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -975,15 +947,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Überlieferte Lebensgeschichte[Bearbeiten | Quelltext bearbeiten]
+# text = Überlieferte Lebensgeschichte
 1	Überlieferte	überliefern	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	Lebensgeschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	2	appos	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1066,16 +1032,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Herkunft und Kindheit[Bearbeiten | Quelltext bearbeiten]
-1	Herkunft	Herkunft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	obj	_	_
+# text = Herkunft und Kindheit
+1	Herkunft	Herkunft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
 3	Kindheit	Kindheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	$(	PunctType=Brck	5	punct	_	SpaceAfter=No
-5	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	_
-6	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-7	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	appos	_	_
-8	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-9	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1293,6 +1253,86 @@
 17	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	SpaceAfter=No
 18	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Während seiner Geburt verkündete gemäß der Legende der Seher Asita, dass dieses Kind einmal ein großer König oder, wenn er das Leid der Welt erkennen würde, ein großer heiliger Mann werden würde.
+1	Während	Während	ADP	APPR	AdpType=Prep	3	case	_	_
+2	seiner	sein	PRON	PPOSAT	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	_	_
+3	Geburt	Geburt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+4	verkündete	verkünden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	gemäß	gemäß	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+6	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Legende	Legende	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+8	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Seher	Seher	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+10	Asita	Asita	PROPN	NE	Person=3	9	flat:name	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	34	punct	_	_
+12	dass	dass	SCONJ	KOUS	_	34	mark	_	_
+13	dieses	dies	DET	PDAT	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	14	det	_	_
+14	Kind	Kind	NOUN	NN	Gender=Neut|Number=Sing|Person=3	34	nsubj	_	_
+15	einmal	einmal	ADV	ADV	_	34	advmod	_	_
+16	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	großer	groß	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+18	König	König	NOUN	NN	Gender=Masc|Number=Sing|Person=3	34	obl	_	_
+19	oder	oder	CCONJ	KON	_	33	cc	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	27	punct	_	_
+21	wenn	wenn	SCONJ	KOUS	_	27	mark	_	_
+22	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
+23	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	24	det	_	_
+24	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	27	obj	_	_
+25	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	Welt	Welt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	nmod	_	_
+27	erkennen	erkennen	VERB	VVINF	VerbForm=Inf	34	advcl	_	_
+28	würde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	SpaceAfter=No
+29	,	,	PUNCT	$,	PunctType=Comm	27	punct	_	_
+30	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+31	großer	groß	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	33	amod	_	_
+32	heiliger	heilig	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	33	amod	_	_
+33	Mann	Mann	NOUN	NN	Gender=Masc|Number=Sing|Person=3	34	obl	_	_
+34	werden	werden	AUX	VAINF	VerbForm=Inf	4	ccomp	_	_
+35	würde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux	_	SpaceAfter=No
+36	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 4
+# text = Daraufhin, so sagt man, ließ Shuddhodana seinen Sohn, den er zu einem König machen wollte, weder religiös unterweisen, noch ließ er zu, dass Siddhartha menschliches Leid zu Gesicht bekommen sollte.
+1	Darauf	Darauf	ADV	PROAV	_	8	advmod	_	SpaceAfter=No
+2	hin	hin	ADP	APZR	AdpType=Circ	1	case	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+4	so	so	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	sagt	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_
+6	man	man	PRON	PIS	Case=Nom|Number=Sing|Person=3|PronType=Ind,Neg,Tot	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+8	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	Shuddhodana	Shuddhodana	PROPN	NE	Person=3	8	nsubj	_	_
+10	seinen	sein	PRON	PPOSAT	Case=Acc|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	_	_
+11	Sohn	Sohn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+13	den	den	PRON	PRELS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Rel	18	obj	_	_
+14	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+15	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+16	einem	einem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	König	König	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	obj	_	_
+18	machen	machen	VERB	VVINF	VerbForm=Inf	11	acl	_	_
+19	wollte	wollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|VerbType=Mod	18	aux	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+21	weder	weder	CCONJ	KON	_	23	cc	_	_
+22	religiös	religiös	ADJ	ADJD	Degree=Pos|Variant=Short	23	advmod	_	_
+23	unterweisen	unterweisen	VERB	VVINF	VerbForm=Inf	8	conj	_	SpaceAfter=No
+24	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+25	noch	noch	CCONJ	KON	_	26	cc	_	_
+26	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	_	_
+27	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+28	zu	zu	ADP	PTKVZ	PartType=Vbp	26	compound:prt	_	SpaceAfter=No
+29	,	,	PUNCT	$,	PunctType=Comm	36	punct	_	_
+30	dass	dass	SCONJ	KOUS	_	36	mark	_	_
+31	Siddhartha	Siddhartha	PROPN	NE	Person=3	36	nsubj	_	_
+32	menschliches	menschlich	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	33	amod	_	_
+33	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	36	obj	_	_
+34	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	35	case	_	_
+35	Gesicht	Gesicht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	36	obl	_	_
+36	bekommen	bekommen	VERB	VVINF	VerbForm=Inf	26	ccomp	_	_
+37	sollte	sollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	36	aux	_	SpaceAfter=No
+38	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1337,12 +1377,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ehe[Bearbeiten | Quelltext bearbeiten]
-1	Ehe[Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Ehe
+1	Ehe	Ehe	VERB	ADV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1408,15 +1444,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Die Ausfahrten[Bearbeiten | Quelltext bearbeiten]
-1	Die	Die	DET	ART	Case=Acc|Number=Plur|PronType=Art	2	det	_	_
+# text = Die Ausfahrten
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
 2	Ausfahrten	Ausfahrt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	2	appos	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1605,21 +1635,221 @@
 46	suchen	suchen	VERB	VVINF	VerbForm=Inf	35	xcomp	_	SpaceAfter=No
 47	.	.	PUNCT	$.	PunctType=Peri	35	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = Er erkannte, dass das Leid weder durch Schicksalsschläge noch soziale Ungerechtigkeit verursacht wird.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	erkannte	erkennen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+4	dass	dass	SCONJ	KOUS	_	13	mark	_	_
+5	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
+6	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	13	nsubj:pass	_	_
+7	weder	weder	CCONJ	KON	_	9	cc	_	_
+8	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	9	case	_	_
+9	Schicksalsschläge	Schlag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	6	conj	_	_
+10	noch	noch	CCONJ	KON	_	12	cc	_	_
+11	soziale	sozial	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Ungerechtigkeit	Ungerechtigkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	conj	_	_
+13	verursacht	verursachen	VERB	VVPP	Aspect=Perf|VerbForm=Part	2	ccomp	_	_
+14	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 9
+# text = Die wirklichen Ursachen des Leidens sind vielmehr die eigenen Denk- und Verhaltensmuster.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	wirklichen	wirklich	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
+3	Ursachen	Ursache	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
+4	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Leidens	Leiden	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	3	nmod	_	_
+6	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+7	vielmehr	vielmehr	ADV	ADV	_	3	advmod	_	_
+8	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	10	det	_	_
+9	eigenen	eigen	ADJ	ADJA	Degree=Pos|Number=Plur	10	amod	_	_
+10	Denk-	Denk-	NOUN	TRUNC	Hyph=Yes	3	nsubj	_	_
+11	und	und	CCONJ	KON	_	12	cc	_	_
+12	Verhaltensmuster	Muster	NOUN	NN	Gender=Neut|Number=Plur|Person=3	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 10
+# text = Gautama begriff, dass es eine Möglichkeit gibt, diesem Teufelskreis zu entkommen.
+1	Gautama	Gautama	PROPN	NE	Person=3	2	nsubj	_	_
+2	begriff	begreifen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+4	dass	dass	SCONJ	KOUS	_	8	mark	_	_
+5	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+6	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Möglichkeit	Möglichkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	obj	_	_
+8	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+10	diesem	dies	DET	PDAT	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
+11	Teufelskreis	Kreis	NOUN	NN	Gender=Masc|Number=Sing|Person=3	13	obj	_	_
+12	zu	zu	PART	PTKZU	PartType=Inf	13	mark	_	_
+13	entkommen	entkommen	VERB	VVINF	VerbForm=Inf	7	xcomp	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 11
+# text = Wenn wir eine Erfahrung – sei sie angenehm oder unangenehm – einfach als das nehmen, was sie ist, dann verursacht sie kein Leid.
+1	Wenn	Wenn	SCONJ	KOUS	_	12	mark	_	_
+2	wir	wir	PRON	PPER	Case=Nom|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
+3	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Erfahrung	Erfahrung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obj	_	_
+5	–	–	X	FM	Foreign=Yes|Person=3	4	appos	_	_
+6	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	cop	_	_
+7	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+8	angenehm	angenehm	ADJ	ADJD	Degree=Pos|Variant=Short	12	advcl	_	_
+9	oder	oder	CCONJ	KON	_	10	cc	_	_
+10	unangenehm	unangenehm	ADJ	ADJD	Degree=Pos|Variant=Short	8	conj	_	_
+11	–	–	ADV	ADV	_	12	advmod	_	_
+12	einfach	einfach	ADJ	ADJD	Degree=Pos|Variant=Short	22	advcl	_	_
+13	als	als	CCONJ	KOKOM	ConjType=Comp	15	mark	_	_
+14	das	das	PRON	PDS	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	_
+15	nehmen	nehmen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	advcl	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+17	was	was	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Rel	15	ccomp	_	_
+18	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+19	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	12	punct	_	_
+21	dann	dann	ADV	ADV	_	22	advmod	_	_
+22	verursacht	verursachen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+24	kein	kein	DET	PIAT	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	25	det	_	_
+25	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	22	obj	_	SpaceAfter=No
+26	.	.	PUNCT	$.	PunctType=Peri	22	punct	_	_
+
+# sent_id = 12
+# text = Er wies seine Anhänger an, nicht zu töten, nicht zu stehlen und sexuelle Ausschweifungen zu vermeiden, da die Handlungen das Begehren (nach Macht, Reichtum und Lust) anfachen.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	wies	weisen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	seine	sein	PRON	PPOSAT	Case=Acc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	det	_	_
+4	Anhänger	Anhänger	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	obj	_	_
+5	an	an	ADP	PTKVZ	PartType=Vbp	2	compound:prt	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+7	nicht	nicht	PART	PTKNEG	Polarity=Neg	9	advmod	_	_
+8	zu	zu	PART	PTKZU	PartType=Inf	9	mark	_	_
+9	töten	töten	VERB	VVINF	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+11	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
+12	zu	zu	PART	PTKZU	PartType=Inf	13	mark	_	_
+13	stehlen	stehlen	VERB	VVINF	VerbForm=Inf	9	conj	_	_
+14	und	und	CCONJ	KON	_	18	cc	_	_
+15	sexuelle	sexuell	ADJ	ADJA	Degree=Pos|Number=Plur	16	amod	_	_
+16	Ausschweifungen	Ausschweifung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	18	obj	_	_
+17	zu	zu	PART	PTKZU	PartType=Inf	18	mark	_	_
+18	vermeiden	vermeiden	VERB	VVINF	VerbForm=Inf	9	conj	_	SpaceAfter=No
+19	,	,	PUNCT	$,	PunctType=Comm	33	punct	_	_
+20	da	da	SCONJ	KOUS	_	33	mark	_	_
+21	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	22	det	_	_
+22	Handlungen	Handlung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	33	nsubj	_	_
+23	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	24	det	_	_
+24	Begehren	Begehren	NOUN	NN	Gender=Neut|Number=Sing|Person=3	33	obj	_	_
+25	(	(	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+26	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	27	case	_	_
+27	Macht	Macht	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	$,	PunctType=Comm	29	punct	_	_
+29	Reichtum	Reichtum	NOUN	NN	Gender=Masc|Number=Sing|Person=3	27	conj	_	_
+30	und	und	CCONJ	KON	_	31	cc	_	_
+31	Lust	Lust	NOUN	NN	Gender=Fem|Number=Sing|Person=3	27	conj	_	SpaceAfter=No
+32	)	)	PUNCT	$(	PunctType=Brck	27	punct	_	_
+33	anfachen	anfachen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	SpaceAfter=No
+34	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 13
+# text = Wenn das Feuer des
+1	Wenn	Wenn	SCONJ	KOUS	_	3	mark	_	_
+2	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+3	Feuer	Feuer	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
+4	des	des	PRON	PDS	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	3	nmod	_	_
+
+# sent_id = 14
+# text = Begehrens erloschen ist, tritt an dessen Stelle ein Zustand völliger Ruhe und Gelassenheit, der als Nirwana bezeichnet wird.
+1	Begehrens	Begehrens	NOUN	NN	Person=3	2	nsubj:pass	_	_
+2	erloschen	erloschen	VERB	VVPP	Aspect=Perf|VerbForm=Part	5	csubj	_	_
+3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	2	punct	_	_
+5	tritt	treten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	an	an	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+7	dessen	deren	DET	PDAT	PronType=Dem	8	det	_	_
+8	Stelle	Stelle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obl	_	_
+9	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Zustand	Zustand	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_
+11	völliger	völlig	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Ruhe	Ruhe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+13	und	und	CCONJ	KON	_	14	cc	_	_
+14	Gelassenheit	Gelassenheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	conj	_	SpaceAfter=No
+15	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+16	der	der	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	19	nsubj:pass	_	_
+17	als	als	CCONJ	KOKOM	ConjType=Comp	18	case	_	_
+18	Nirwana	Nirwana	PROPN	NE	Person=3	19	obl	_	_
+19	bezeichnet	bezeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	10	acl	_	_
+20	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 15
+# text = Wer das Nirwana erreicht, lässt alles Leid hinter sich und erkennt die Wirklichkeit mit größter Klarheit, ohne jedes Wunschdenken.
+1	Wer	Wer	PRON	PWS	Case=Nom|Number=Sing|Person=3|PronType=Int	4	nsubj	_	_
+2	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+3	Nirwana	Nirwana	NOUN	NN	Person=3	4	obj	_	_
+4	erreicht	erreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	csubj	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
+6	lässt	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	alles	all	DET	PIDAT	Case=Acc|Gender=Neut|Number=Sing|Person=3	8	det	_	_
+8	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	obj	_	_
+9	hinter	hinter	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	sich	sich	PRON	PRF	Case=Dat|Person=3|PronType=Prs|Reflex=Yes	6	obl	_	_
+11	und	und	CCONJ	KON	_	12	cc	_	_
+12	erkennt	erkennen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+13	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Wirklichkeit	Wirklichkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obj	_	_
+15	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+16	größter	groß	ADJ	ADJA	Degree=Sup|Gender=Fem|Number=Sing	17	amod	_	_
+17	Klarheit	Klarheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obl	_	SpaceAfter=No
+18	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+19	ohne	ohne	ADP	APPR	AdpType=Prep|Case=Acc	21	case	_	_
+20	jedes	jede	DET	PIDAT	Case=Acc|Gender=Neut|Number=Sing|Person=3	21	det	_	_
+21	Wunschdenken	Denken	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	obl	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	_
+
+# sent_id = 16
+# text = Er macht nach wie vor unangenehme Erfahrungen, aber diese verursachen kein Leid mehr.
+1	Er	Er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	macht	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	nach	nach	ADV	ADV	_	2	advcl	_	_
+4	wie	wie	CCONJ	KOKOM	ConjType=Comp	5	mark	_	_
+5	vor	vor	ADV	ADV	_	3	advcl	_	_
+6	unangenehme	unangenehm	ADJ	ADJA	Degree=Pos|Number=Plur	7	amod	_	_
+7	Erfahrungen	Erfahrung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	obj	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+9	aber	aber	CCONJ	KON	_	11	cc	_	_
+10	diese	diese	PRON	PDS	Case=Nom|Number=Plur|Person=3|PronType=Dem	11	nsubj	_	_
+11	verursachen	verursachen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+12	kein	kein	DET	PIAT	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	13	det	_	_
+13	Leid	Leid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	11	obj	_	_
+14	mehr	mehr	ADV	ADV	_	13	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 17
+# text = Ein Mensch, der nichts begehrt, kann nicht leiden.
+1	Ein	Ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Mensch	Mensch	NOUN	NN	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+4	der	der	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	6	nsubj	_	_
+5	nichts	nichts	PRON	PIS	Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	6	obj	_	_
+6	begehrt	begehren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+8	kann	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	10	aux	_	_
+9	nicht	nicht	PART	PTKNEG	Polarity=Neg	10	advmod	_	_
+10	leiden	leiden	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Leben als Asket[Bearbeiten | Quelltext bearbeiten]
-1	Leben	Leben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	7	nsubj	_	_
+# text = Leben als Asket
+1	Leben	Leben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 2	als	als	CCONJ	KOKOM	ConjType=Comp	3	case	_	_
 3	Asket	Asket	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	obl	_	SpaceAfter=No
-4	[Bearbeiten	[Bearbeiten	X	FM	Foreign=Yes|Person=3	3	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	obj	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1830,14 +2060,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Erwachen[Bearbeiten | Quelltext bearbeiten]
+# text = Erwachen
 1	Erwachen	erwachen	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	obj	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1926,21 +2150,101 @@
 8	Erwachten	Erwachten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	conj	_	SpaceAfter=No
 9	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Dies geschah am Ufer des Neranjara-Flusses bei Bodhgaya (nahe Gaya im heutigen Bihar).
+1	Dies	Dies	PRON	PDS	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_
+2	geschah	geschehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
+4	Ufer	Ufer	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obl	_	_
+5	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Neranjara-Flusses	Fluss	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+7	bei	bei	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	Bodhgaya	Bodhgaya	PROPN	NE	Person=3	6	nmod	_	_
+9	(	(	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+10	nahe	nahe	ADP	APPR	AdpType=Prep	11	case	_	_
+11	Gaya	Gaya	PROPN	NE	Person=3	8	nmod	_	_
+12	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	14	case	_	_
+13	heutigen	heutig	ADJ	ADJA	Degree=Pos|Number=Sing	14	amod	_	_
+14	Bihar	Bihar	PROPN	NE	Person=3	11	nmod	_	SpaceAfter=No
+15	)	)	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 6
+# text = Ein Ableger eben jenes Feigenbaumes wurde der Legende nach auf Ceylon eingepflanzt, während der indische Baum verdorrte.
+1	Ein	Ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Ableger	Ableger	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	nsubj:pass	_	_
+3	eben	eben	ADV	ADV	_	4	advmod	_	_
+4	jenes	jene	DET	PDAT	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	Feigenbaumes	Baum	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+6	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+7	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Legende	Legende	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obl	_	_
+9	nach	nach	ADP	APPO	AdpType=Post|Case=Dat	8	case	_	_
+10	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	Ceylon	Ceylon	PROPN	NE	Number=Sing|Person=3	12	obl	_	_
+12	eingepflanzt	einpflanzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+14	während	während	SCONJ	KOUS	_	18	mark	_	_
+15	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+16	indische	indisch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	Baum	Baum	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_
+18	verdorrte	verdorren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
+
+# sent_id = 7
+# text = Von dort wurde später wiederum ein Ableger entnommen und an die ursprüngliche Stelle in Indien (nahe dem 1931 ausgegrabenen Tempelbezirk von Sarnath) gepflanzt.
+1	Von	Von	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	dort	dort	ADV	ADV	_	8	obl	_	_
+3	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
+4	später	spät	ADJ	ADJD	Degree=Cmp|Variant=Short	8	advmod	_	_
+5	wiederum	wiederum	ADV	ADV	_	8	advmod	_	_
+6	ein	ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Ableger	Ableger	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	nsubj:pass	_	_
+8	entnommen	entnehmen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+9	und	und	CCONJ	KON	_	25	cc	_	_
+10	an	an	ADP	APPR	AdpType=Prep|Case=Acc	13	case	_	_
+11	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	ursprüngliche	ursprünglich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	Stelle	Stelle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+14	in	in	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+15	Indien	Indien	PROPN	NE	Number=Sing|Person=3	13	nmod	_	_
+16	(	(	PUNCT	$(	PunctType=Brck	21	punct	_	SpaceAfter=No
+17	nahe	nahe	ADP	APPR	AdpType=Prep	21	case	_	_
+18	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+19	1931	1931	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	obl	_	_
+20	ausgegrabenen	ausgraben	ADJ	ADJA	Degree=Pos|Number=Sing	21	amod	_	_
+21	Tempelbezirk	Bezirk	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+22	von	von	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+23	Sarnath	Sarnath	PROPN	NE	Person=3	21	nmod	_	SpaceAfter=No
+24	)	)	PUNCT	$(	PunctType=Brck	21	punct	_	_
+25	gepflanzt	pflanzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	8	conj	_	SpaceAfter=No
+26	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
+
+# sent_id = 8
+# text = Oft haben buddhistische Klöster einen Ableger des Baumes in ihrem Besitz.
+1	Oft	Oft	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	buddhistische	buddhistische	ADJ	ADJA	_	4	amod	_	_
+4	Klöster	Klöster	NOUN	NN	Gender=Neut|Number=Plur|Person=3	2	nsubj	_	_
+5	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Ableger	Ableger	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obj	_	_
+7	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Baumes	Baum	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+9	in	in	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+10	ihrem	sein	PRON	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	_	_
+11	Besitz	Besitz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obl	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Siddhartha als Lehrer[Bearbeiten | Quelltext bearbeiten]
-1	Siddhartha	Siddhartha	PROPN	NE	Person=3	7	nsubj	_	_
+# text = Siddhartha als Lehrer
+1	Siddhartha	Siddhartha	PROPN	NE	Person=3	0	root	_	_
 2	als	als	CCONJ	KOKOM	ConjType=Comp	3	case	_	_
 3	Lehrer	Lehrer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	obl	_	SpaceAfter=No
-4	[Bearbeiten	[Bearbeiten	X	FM	Foreign=Yes|Person=3	3	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1994,7 +2298,7 @@
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 4
-# text = Dhammacakkappavattanasutta) und verkündete die vier Wahrheiten des [geistig] Edlen.
+# text = Dhammacakkappavattanasutta) und verkündete die vier Wahrheiten des Edlen.
 1	Dhammacakkappavattanasutta	Dhammacakkappavattanasutta	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 2	)	)	PUNCT	$(	PunctType=Brck	1	punct	_	_
 3	und	und	CCONJ	KON	_	4	cc	_	_
@@ -2002,12 +2306,9 @@
 5	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	7	det	_	_
 6	vier	vier	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	nummod	_	_
 7	Wahrheiten	Wahrheit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	obj	_	_
-8	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-9	[	[	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
-10	geistig	geistig	ADJ	ADJD	Degree=Pos|Variant=Short	12	advmod	_	SpaceAfter=No
-11	]	]	PUNCT	$(	PunctType=Brck	10	punct	_	_
-12	Edlen	Edle	NOUN	NN	Person=3	7	nmod	_	SpaceAfter=No
-13	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
+8	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpacesAfter=\s\s
+9	Edlen	Edle	NOUN	NN	Person=3	7	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 5
 # text = Die fünf Gefährten wurden damit die ersten Mitglieder der buddhistischen (Mönchs-)Gemeinschaft (Saṅgha).
@@ -2168,6 +2469,39 @@
 19	gehen	gehen	VERB	VVINF	VerbForm=Inf	16	conj	_	SpaceAfter=No
 20	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Auch seine frühere Frau Yasodhara trat gemeinsam mit ihrer Schwiegermutter Pajapati, der Ziehmutter Siddharthas, als Nonne in den Orden des Buddha ein und wurde schließlich zur Arhat.
+1	Auch	Auch	ADV	ADV	_	4	advmod	_	_
+2	seine	sein	PRON	PPOSAT	Case=Nom|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	_	_
+3	frühere	früh	ADJ	ADJA	Degree=Cmp|Gender=Fem|Number=Sing	4	amod	_	_
+4	Frau	Frau	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	nsubj	_	_
+5	Yasodhara	Yasodhara	PROPN	NE	Person=3	4	flat:name	_	_
+6	trat	treten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	gemeinsam	gemeinsam	ADJ	ADJD	Degree=Pos|Variant=Short	6	advmod	_	_
+8	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+9	ihrer	sein	PRON	PPOSAT	Case=Dat|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	_	_
+10	Schwiegermutter	Mutter	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	obl	_	_
+11	Pajapati	Pajapati	PROPN	NE	Person=3	10	flat:name	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+13	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Ziehmutter	Mutter	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	appos	_	_
+15	Siddharthas	Siddharthas	PROPN	NE	Case=Gen|Person=3	14	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+17	als	als	CCONJ	KOKOM	ConjType=Comp	18	case	_	_
+18	Nonne	Nonne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	obl	_	_
+19	in	in	ADP	APPR	AdpType=Prep|Case=Acc	21	case	_	_
+20	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	Orden	Orden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	obl	_	_
+22	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Buddha	Buddha	PROPN	NE	Person=3	21	nmod	_	_
+24	ein	ein	ADP	PTKVZ	PartType=Vbp	6	compound:prt	_	_
+25	und	und	CCONJ	KON	_	26	cc	_	_
+26	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
+27	schließlich	schließlich	ADV	ADV	_	26	advmod	_	_
+28	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	29	case	_	_
+29	Arhat	unknown	NOUN	NN	Person=3	26	obl	_	SpaceAfter=No
+30	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2197,12 +2531,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sterben[Bearbeiten | Quelltext bearbeiten]
-1	Sterben[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Sterben
+1	Sterben	Sterben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2562,15 +2892,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hagiographische Quellen[Bearbeiten | Quelltext bearbeiten]
-1	Hagiographische	Hagiographische	ADJ	ADJA	_	2	amod	_	_
+# text = Hagiographische Quellen
+1	Hagiographische	hagiographisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Quellen	Quelle	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	2	appos	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2676,13 +3000,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mahavastu[Bearbeiten | Quelltext bearbeiten]
-1	Mahavastu[	Mahavastu[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Mahavastu
+1	Mahavastu	Mahavastu	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2871,12 +3190,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Buddhacarita[Bearbeiten | Quelltext bearbeiten]
-1	Buddhacarita[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Buddhacarita
+1	Buddhacarita	Buddhacarita	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3035,12 +3350,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lalitavistara[Bearbeiten | Quelltext bearbeiten]
-1	Lalitavistara[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Lalitavistara
+1	Lalitavistara	Lalitavistara	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3351,14 +3662,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Jataka-Erzählungen[Bearbeiten | Quelltext bearbeiten]
+# text = Jataka-Erzählungen
 1	Jataka-Erzählungen	Erzählung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3847,14 +4152,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Reliquien[Bearbeiten | Quelltext bearbeiten]
-1	Reliquien	Reliquie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Reliquien
+1	Reliquien	Reliquie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4244,15 +4543,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Siehe auch[Bearbeiten | Quelltext bearbeiten]
+# text = Siehe auch
 1	Siehe	sehen	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 2	auch	auch	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	[	[	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	obj	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	ccomp	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4260,14 +4553,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Übersetzungen[Bearbeiten | Quelltext bearbeiten]
+# text = Übersetzungen
 1	Übersetzungen	Übersetzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4275,13 +4562,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Literatur[Bearbeiten | Quelltext bearbeiten]
-1	Literatur[	Literatur[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Literatur
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4289,14 +4571,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Weblinks[Bearbeiten | Quelltext bearbeiten]
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Weblinks
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4304,23 +4580,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Einzelnachweise und Anmerkungen[Bearbeiten | Quelltext bearbeiten]
-1	Einzelnachweise	Nachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
+# text = Einzelnachweise und Anmerkungen
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
 3	Anmerkungen	Anmerkung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	$(	PunctType=Brck	5	punct	_	SpaceAfter=No
-5	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	_
-6	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-7	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	appos	_	_
-8	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	3	appos	_	SpaceAfter=No
-9	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
 

@@ -1,5 +1,3 @@
-# https://gd.wikipedia.org/wiki/Uisge
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Uisge - Uicipeid
 1	Uisge	Uisge	PROPN	Nn	_	0	root	_	_
 2	-	-	PUNCT	Fb	_	3	punct	_	_
-3	Uicipeid	Uicipeid	PROPN	Nn	_	1	appos	_	SpacesAfter=\n
+3	Uicipeid	Uicipeid	PROPN	Nn	_	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -17,8 +15,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Uisge
-1	Uisge	Uisge	PROPN	Nn	_	0	root	_	SpacesAfter=\n
+# text = Is docha tha thu lorg uisge-adhair
+1	Is	is	AUX	Wp-i	_	2	cop	_	_
+2	docha	docha	NOUN	Uf	_	0	root	_	_
+3	tha	bi	VERB	V-p	Tense=Pres	2	csubj:cop	_	_
+4	thu	thu	PRON	Pp2s	Number=Sing|Person=2	3	nsubj	_	_
+5	lorg	lorg	NOUN	Nv	_	3	xcomp:pred	_	_
+6	uisge-adhair	uisge-adhair	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	5	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -64,13 +67,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Beartan fiosaigeach[deasaich | deasaich an tùs]
-1	Beartan	beartan	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	fiosaigeach[deasaich	fiosaigeach[deasach	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	|	|	PUNCT	Fz	_	1	punct	_	_
-4	deasaich	deasach	VERB	V-s	Tense=Past	1	parataxis	_	_
-5	an	an	DET	Tdsf	_	6	det	_	_
-6	tùs]	tùs]	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	4	obj	_	SpacesAfter=\n
+# text = Beartan fiosaigeach
+1	Beartan	Beartan	NOUN	Ncsmn	_	0	root	_	_
+2	fiosaigeach	fiosaigeach	ADJ	Aq-smn	Case=Nom|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -110,19 +109,158 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Chan eil cuideam moileciuileachd de uisge ach 18 Da agus tha puing
+# text = Chan eil cuideam moileciuileachd de uisge ach 18 Da agus tha puing a' ghoillidh anabarrach ard airson moileacul cho aotrom.
 1	Chan	chan	PART	Qn	PartType=Cmpl|Polarity=Neg	2	mark:prt	_	_
 2	eil	bi	VERB	V-p--d	Tense=Pres	0	root	_	_
 3	cuideam	cuideam	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 4	moileciuileachd	moileciuileachd	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
 5	de	de	ADP	Sp	_	6	case	_	_
-6	uisge	uisge	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	2	xcomp:pred	_	_
+6	uisge	uisge	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 7	ach	ach	ADP	Sp	_	8	case	_	_
 8	18	18	NUM	Mn	_	2	obl	_	_
 9	Da	da	NOUN	Ap	_	8	flat	_	_
 10	agus	agus	CCONJ	Cc	_	11	cc	_	_
 11	tha	bi	VERB	V-p	Tense=Pres	2	conj	_	_
 12	puing	puing	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	11	nsubj	_	SpacesAfter=\n
+13	a'	an	DET	Tdsmg	Case=Gen|Gender=Masc|Number=Sing	14	det	_	_
+14	ghoillidh	goillidh	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	_
+15	anabarrach	anabarrach	ADV	Rg	_	16	advmod	_	_
+16	ard	ard	ADJ	Ap	_	11	xcomp:pred	_	_
+17	airson	airson	ADP	Nf	_	18	case	_	_
+18	moileacul	moileacul	NOUN	Ncsmn	Case=Gen|Gender=Masc|Number=Sing	16	obl	_	_
+19	cho	cho	ADV	Rg	_	20	advmod	_	_
+20	aotrom	aotrom	ADJ	Ap	_	11	xcomp:pred	_	SpaceAfter=No
+21	.	.	PUNCT	Fe	_	2	punct	_	_
+
+# sent_id = 2
+# text = Is e brigh don fheart seo de uisge gum bithidh co-taruinn lag eadar moileaculan uisge fa-leth gan cruinneachadh nan sianaran.
+1	Is	is	AUX	Wp-i	_	3	cop	_	_
+2	e	e	PRON	Pp3sm	Gender=Masc|Number=Sing|Person=3	1	fixed	_	_
+3	brigh	brigh	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+4	don	don	ADP	Spa-s	_	5	case	_	_
+5	fheart	feart	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
+6	seo	seo	DET	Dd	_	5	det	_	_
+7	de	de	ADP	Sp	_	8	case	_	_
+8	uisge	uisge	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
+9	gum	gum	PART	Qa	_	10	mark:prt	_	_
+10	bithidh	bith	VERB	V-f--d	Tense=Fut	3	csubj:cop	_	_
+11	co-taruinn	co-taruinn	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+12	lag	lag	ADJ	Aq-sfn	_	11	amod	_	_
+13	eadar	eadar	ADP	Sp	_	14	case	_	_
+14	moileaculan	moileacul	NOUN	Ncpmn	Case=Nom|Gender=Masc|Number=Plur	10	obl	_	_
+15	uisge	uisge	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	14	nmod	_	_
+16	fa-leth	fa-leth	ADJ	Aq	_	15	amod	_	_
+17	gan	gan	PART	Sap3p	_	18	case	_	_
+18	cruinneachadh	cruinnich	NOUN	Nv	VerbForm=Vnoun	10	xcomp	_	_
+19	nan	an	DET	Tdpmg	Case=Gen|Gender=Masc|Number=Plur	20	det	_	_
+20	sianaran	sianar	NOUN	Ncpmg	Case=Gen|Gender=Masc|Number=Plur	18	obj	_	SpaceAfter=No
+21	.	.	PUNCT	Fe	_	3	punct	_	_
+
+# sent_id = 3
+# text = An luib sin bithidh cuideam moileciulachd eifigeachd de uisge nas fhaisg air 108 Da agus tha teothachd ghoillidh de 373 K na cho-dhearbhadh.
+1	An	an	ADP	Sp	_	2	case	_	_
+2	luib	luib	NOUN	Ncsfd	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
+3	sin	sin	PRON	Pd	_	4	obl	_	_
+4	bithidh	bith	VERB	V-f	Tense=Fut	0	root	_	_
+5	cuideam	cuideam	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+6	moileciulachd	moileciulachd	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
+7	eifigeachd	eifigeachd	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	4	obj	_	_
+8	de	de	ADP	Sp	_	9	case	_	_
+9	uisge	uisge	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	4	obl	_	_
+10	nas	nas	PART	Uc	PartType=Comp	11	mark:prt	_	_
+11	fhaisg	fasg	ADJ	Apc	Degree=Cmp,Sup	9	amod	_	_
+12	air	air	ADP	Sp	_	13	case	_	_
+13	108	108	NUM	Mn	_	11	obl	_	_
+14	Da	da	NUM	Mc	_	13	nmod	_	_
+15	agus	agus	CCONJ	Cc	_	16	cc	_	_
+16	tha	bi	VERB	V-p	Tense=Pres	4	conj	_	_
+17	teothachd	teothachd	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	16	nsubj	_	_
+18	ghoillidh	goillidh	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	17	nmod	_	_
+19	de	de	ADP	Sp	_	20	case	_	_
+20	373	373	NUM	Mn	_	17	obl	_	_
+21	K	k	NOUN	Y	_	17	nmod	_	_
+22	na	an	ADP	Spp3sm	_	23	case	_	_
+23	cho-dhearbhadh	co-dhearbhadh	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	16	xcomp:pred	_	SpaceAfter=No
+24	.	.	PUNCT	Fe	_	4	punct	_	_
+
+# sent_id = 4
+# text = Nuair a ghoilleas uisge, theid sgaradh air na moileciulan fa-leth agus tha seo aig adhbharachadh meudachadh mor an toirt an stoith an co-mheas le toirt an uisge, (Theid meudachadh an toirt de mu deidhinn 1400 uraid nuair a rachas iompachadh de uisge ri stoth fo brùthadh abhaisteach).
+1	Nuair	nuair	SCONJ	Cs	_	3	mark	_	_
+2	a	a	PART	Q-r	PartType=Vb|PronType=Rel	3	mark:prt	_	_
+3	ghoilleas	ghoill	VERB	V-f--r	Tense=Fut	6	advcl	_	_
+4	uisge	uisge	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Fi	_	3	punct	_	_
+6	theid	abaid	VERB	V-f	Tense=Fut	0	root	_	_
+7	sgaradh	sgaradh	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+8	air	air	ADP	Sp	_	10	case	_	_
+9	na	an	DET	Tdpm	Gender=Masc|Number=Plur	10	det	_	_
+10	moileciulan	moileciulan	NOUN	Ncpmd	Case=Dat|Gender=Masc|Number=Plur	6	obl	_	_
+11	fa-leth	fa-leth	ADJ	Aq	_	10	amod	_	_
+12	agus	agus	CCONJ	Cc	_	13	cc	_	_
+13	tha	bi	VERB	V-p	Tense=Pres	6	conj	_	_
+14	seo	seo	PRON	Pd	_	13	nsubj	_	_
+15	aig	aig	ADP	Sp	_	16	case	_	_
+16	adhbharachadh	adhbharaich	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	13	xcomp:pred	_	_
+17	meudachadh	meudachadh	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	16	obj	_	_
+18	mor	mor	ADJ	Aq-smn	Case=Nom|Gender=Masc|Number=Sing	17	amod	_	_
+19	an	an	DET	Dp3p	Number=Plur|Person=3	20	obj	_	_
+20	toirt	toir	NOUN	Nv	VerbForm=Inf	17	xcomp	_	_
+21	an	an	ADP	Sp	_	22	case	_	_
+22	stoith	stoith	NOUN	Ncsfd	Case=Dat|Gender=Fem|Number=Sing	20	obl	_	_
+23	an	an	DET	Tdsmg	_	24	det	_	_
+24	co-mheas	co-mheas	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	22	nmod	_	_
+25	le	le	ADP	Sp	_	26	case	_	_
+26	toirt	toir	NOUN	Ncsfd	Case=Dat|Gender=Fem|Number=Sing	20	obl	_	_
+27	an	an	DET	Tdsmg	Case=Gen|Gender=Masc|Number=Sing	28	det	_	_
+28	uisge	uisge	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	Fi	_	31	punct	_	_
+30	(	(	PUNCT	Fb	_	31	punct	_	SpaceAfter=No
+31	Theid	rach	VERB	V-f	Tense=Fut	6	parataxis	_	_
+32	meudachadh	meudachadh	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	31	nsubj	_	_
+33	an	an	DET	Dp3p	Number=Plur|Person=3	34	obj	_	_
+34	toirt	toir	NOUN	Nv	Case=Gen|Gender=Masc|Number=Sing	31	xcomp	_	_
+35	de	de	ADP	Sp	_	38	case	_	_
+36	mu	mu	ADP	Sp	_	38	case	_	_
+37	deidhinn	deidhinn	ADP	Nf	_	36	fixed	_	_
+38	1400	1400	NUM	Mn	_	34	obl	_	_
+39	uraid	uraid	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	34	nmod	_	_
+40	nuair	nuair	SCONJ	Cs	_	42	mark	_	_
+41	a	a	PART	Q-r	PartType=Vb|PronType=Rel	42	mark:prt	_	_
+42	rachas	rac	VERB	V-f--r	Mood=Cnd	34	advcl	_	_
+43	iompachadh	iompachadh	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	42	nsubj	_	_
+44	de	de	ADP	Sp	_	45	case	_	_
+45	uisge	uisge	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	43	obl	_	_
+46	ri	ri	ADP	Sp	_	47	case	_	_
+47	stoth	stoth	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	42	obl	_	_
+48	fo	fo	ADP	Sp	_	49	case	_	_
+49	brùthadh	brùthadh	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	42	obl	_	_
+50	abhaisteach	abhaisteach	ADJ	Aq-smd	Case=Dat|Gender=Masc|Number=Sing	49	amod	_	SpaceAfter=No
+51	)	)	PUNCT	Fb	_	49	punct	_	SpaceAfter=No
+52	.	.	PUNCT	Fe	_	6	punct	_	_
+
+# sent_id = 5
+# text = Is e am feart meudachaidh seo a tha na h-adhbhar gu bheil stoth na struthach-iomain eifigeachd airson gne de innealan-teis.
+1	Is	is	AUX	Wp-i	_	4	cop	_	_
+2	e	e	PRON	Pp3sm	Gender=Masc|Number=Sing|Person=3	1	fixed	_	_
+3	am	an	DET	Tdsm	Gender=Masc|Number=Sing	4	det	_	_
+4	feart	feart	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+5	meudachaidh	meudachaidh	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+6	seo	seo	DET	Dd	_	4	det	_	_
+7	a	a	PART	Q-r	PartType=Vb|PronType=Rel	8	mark:prt	_	_
+8	tha	bi	VERB	V-p	Tense=Pres	4	csubj:cleft	_	_
+9	na	an	DET	Tdpm	Gender=Masc|Number=Plur	10	det	_	_
+10	h-adhbhar	adhbhar	NOUN	Ncpmn	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	_
+11	gu	gu	PART	Qa	_	12	mark:prt	_	_
+12	bheil	bi	VERB	V-p--d	Tense=Pres	10	ccomp	_	_
+13	stoth	stoth	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
+14	na	an	DET	Tdsfg	Case=Gen|Gender=Fem|Number=Sing	15	det	_	_
+15	struthach-iomain	struthach-iomain	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	13	nmod	_	_
+16	eifigeachd	eifigeachd	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	12	nsubj	_	_
+17	airson	airson	ADP	Nf	_	18	case	_	_
+18	gne	gne	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	16	obl	_	_
+19	de	de	ADP	Sp	_	20	case	_	_
+20	innealan-teis	innealan-teis	NOUN	Ncsfd	Case=Dat|Gender=Fem|Number=Sing	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	Fe	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -130,12 +268,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ainmean[deasaich | deasaich an tùs]
-1	Ainmean[deasaich	ainmean[deasach	NOUN	Ncpmn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-2	|	|	PUNCT	Fb	_	1	punct	_	_
-3	deasaich	deasach	VERB	Vm-2s	Mood=Imp|Person=2	1	parataxis	_	_
-4	an	an	ADP	Sp	_	5	case	_	_
-5	tùs]	tùs]	NOUN	Ncsfd	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	SpacesAfter=\n
+# text = Ainmean
+1	Ainmean	ainm	NOUN	Ncpmn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -158,19 +292,39 @@
 12	ghasach	gasach	ADJ	Aq-sfd	Case=Dat|Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
 13	.	.	PUNCT	Fe	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Nuair nach eil salann ann, tha cuid de dhualchainntean a' toirt “bùrn” air, le frith-fhacal sàl.
+1	Nuair	nuair	SCONJ	Cs	_	3	mark	_	_
+2	nach	nach	PART	Qnr	PartType=Vb|Polarity=Neg|PronType=Rel	3	mark:prt	_	_
+3	eil	bi	VERB	V-p--d	Tense=Pres	7	advcl	_	_
+4	salann	salann	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+5	ann	ann	ADP	Pr3sm	Gender=Masc|Number=Sing|Person=3	3	xcomp:pred	_	SpaceAfter=No
+6	,	,	PUNCT	Fi	_	3	punct	_	_
+7	tha	bi	VERB	V-p	Tense=Pres	0	root	_	_
+8	cuid	cuid	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+9	de	de	ADP	Sp	_	10	case	_	_
+10	dhualchainntean	dhualchainnt	NOUN	Ncpfd	Case=Dat|Gender=Fem|Number=Plur	8	obl	_	_
+11	a'	ag	PART	Sa	_	12	case	_	_
+12	toirt	toir	NOUN	Nv	VerbForm=Vnoun	7	xcomp:pred	_	_
+13	“	“	PUNCT	Fq	_	14	punct	_	SpaceAfter=No
+14	bùrn	bùrn	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	12	parataxis	_	SpaceAfter=No
+15	”	”	PUNCT	Fz	_	14	punct	_	_
+16	air	air	ADP	Pr3sm	Gender=Masc|Number=Sing|Person=3	14	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Fi	_	19	punct	_	_
+18	le	le	ADP	Sp	_	19	case	_	_
+19	frith-fhacal	frith-fhacal	NOUN	Ncsmd	Case=Dat|Gender=Masc|Number=Sing	14	obl	_	_
+20	sàl	sàl	NOUN	Aq-smd	Case=Dat|Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	Fe	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Faic cuideachd[deasaich | deasaich an tùs]
+# text = Faic cuideachd
 1	Faic	faic	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	cuideachd[deasaich	cuideachd[deasach	NOUN	Ncsmg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	|	|	PUNCT	Fz	_	4	punct	_	_
-4	deasaich	deasach	VERB	V-s	Tense=Past	1	parataxis	_	_
-5	an	an	DET	Tdsf	Gender=Fem|Number=Sing	6	det	_	_
-6	tùs]	tùs]	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	4	obj	_	SpacesAfter=\n
+2	cuideachd	cuideachd	ADV	Rg	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
@@ -178,21 +332,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ceanglaichean-amach[deasaich | deasaich an tùs]
-1	Ceanglaichean-amach[deasaich	ceanglaichean-amach[deasach	NOUN	Ncpmn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-2	|	|	PUNCT	Fb	_	1	punct	_	_
-3	deasaich	deasach	VERB	V-s	Tense=Past	1	parataxis	_	_
-4	an	an	DET	Tdsf	Gender=Fem|Number=Sing	5	det	_	_
-5	tùs]	tùs]	NOUN	Ncsfn	Case=Nom|Gender=Fem|Number=Sing	3	obj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = scottish_gaelic-arcosg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Clàr-taice na seòladaireachd
-1	Clàr-taice	clàr-taice	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	na	an	DET	Tdsfg	Case=Gen|Gender=Fem|Number=Sing	3	det	_	_
-3	seòladaireachd	seòladaireachd	NOUN	Ncsfg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+# text = Ceanglaichean-amach
+1	Ceanglaichean-amach	Ceanglaichean-amach	NOUN	Ncsmn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 

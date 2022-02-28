@@ -1,5 +1,3 @@
-# https://ar.wikipedia.org/wiki/%D8%A5%D9%86%D8%B3%D8%A7%D9%86
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = إنسان - ويكيبيديا
 1	إنسان	إِنسَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	-	-	PUNCT	G---------	_	3	punct	_	_
-3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpacesAfter=\n
+3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17,18 +15,171 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = إنسان
-1	إنسان	إِنسَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpacesAfter=\n
+# text = الإنسان العاقل (الاسم العلمي: Homo sapiens) هو النوع الوحيد المتبقي من جنس البشراني (الأناسي)، وهو العاقل الوحيد، الذي يمتلك -خلافاً لبقية الحيوانات على الأرض- دماغا عالي التطور، قادر على التفكير المجرد واستخدام اللغة والنطق والتفكير الداخلي الذاتي وإعطاء حلول للمشاكل التي يواجهها.
+1	الإنسان	إِنسَان	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesBefore=\n
+2	العاقل	عَاقِل	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	_
+3	(	(	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
+4	الاسم	اِسم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
+5	العلمي	عِلمِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No
+6	:	:	PUNCT	G---------	_	4	punct	_	_
+7	Homo	hَomَo	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	11	nsubj	_	_
+8	sapiens	Sapiens	X	U---------	_	7	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	G---------	_	4	punct	_	_
+10	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nmod	_	_
+11	النوع	نَوع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	parataxis	_	_
+12	الوحيد	وَحِيد	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	11	amod	_	_
+13-14	المتبقي	_	_	_	_	_	_	_	_
+13	الم	الَم	PART	F---------	_	14	advmod	_	_
+14	تبقي	أَبقَى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	11	acl	_	_
+15	من	مِن	ADP	P---------	AdpType=Prep	16	case	_	_
+16	جنس	جَنس	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	obl:arg	_	_
+17	البشراني	البشراني	X	U---------	_	16	nmod	_	SpacesAfter= 
+18	(	(	PUNCT	G---------	_	19	punct	_	SpaceAfter=No
+19	الأناسي	أَنَاسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No
+20	)	)	PUNCT	G---------	_	19	punct	_	SpaceAfter=No
+21	،	،	PUNCT	G---------	_	19	punct	_	_
+22-23	وهو	_	_	_	_	_	_	_	_
+22	و	وَ	CCONJ	C---------	_	24	cc	_	_
+23	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+24	العاقل	عَاقِل	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	11	conj	_	_
+25	الوحيد	وَحِيد	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
+26	،	،	PUNCT	G---------	_	25	punct	_	_
+27	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	28	nsubj	_	_
+28	يمتلك	اِمتَلَك	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	24	acl:relcl	_	_
+29	-	-	PUNCT	G---------	_	31	punct	_	SpaceAfter=No
+30	خلافاً	خِلَاف	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	31	nmod	_	_
+31	لبقية	لَبقِيَّة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	28	obl	_	_
+32-33	الحيوانات	_	_	_	_	_	_	_	_
+32	ال	اَل	PART	F---------	_	33	cc	_	_
+33	حيوانات	حَيَوَان	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	31	nmod	_	_
+34	على	عَلَى	ADP	P---------	AdpType=Prep	35	case	_	_
+35	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	31	nmod	_	SpaceAfter=No
+36	-	-	PUNCT	G---------	_	35	punct	_	_
+37	دماغا	دَمَاغ	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
+38	عالي	عَالِيّ	ADJ	A-----MS4R	Case=Acc|Definite=Cons|Gender=Masc|Number=Sing	37	amod	_	_
+39	التطور	تَطَوُّر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	38	nmod	_	SpaceAfter=No
+40	،	،	PUNCT	G---------	_	39	punct	_	_
+41	قادر	قَادِر	ADJ	A-----MS4I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	28	xcomp	_	_
+42	على	عَلَى	ADP	P---------	AdpType=Prep	43	case	_	_
+43	التفكير	تَفكِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	41	obl:arg	_	_
+44-45	المجرد	_	_	_	_	_	_	_	_
+44	ال	اَل	PART	F---------	_	45	cc	_	_
+45	مجرد	مُجَرَّد	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	43	amod	_	_
+46-47	واستخدام	_	_	_	_	_	_	_	_
+46	و	وَ	CCONJ	C---------	_	47	cc	_	_
+47	استخدام	اِستِخدَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	43	conj	_	_
+48	اللغة	لُغَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	47	nmod	_	_
+49	والنطق	والنطق	X	U---------	_	48	nmod	_	_
+50-51	والتفكير	_	_	_	_	_	_	_	_
+50	و	وَ	CCONJ	C---------	_	51	cc	_	_
+51	التفكير	تَفكِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	conj	_	_
+52	الداخلي	دَاخِلِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	51	amod	_	_
+53	الذاتي	ذَاوتِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	51	amod	_	_
+54-55	وإعطاء	_	_	_	_	_	_	_	_
+54	و	وَ	CCONJ	C---------	_	55	cc	_	_
+55	إعطاء	إِعطَاء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	43	conj	_	_
+56	حلول	حَلّ	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	55	nmod	_	_
+57	للمشاكل	مُشكِلَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	56	nmod	_	_
+58	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	59	nsubj	_	_
+59-60	يواجهها	_	_	_	_	_	_	_	SpaceAfter=No
+59	يواجه	وَاجَه	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	57	acl:relcl	_	_
+60	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	59	obj	_	_
+61	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = الإنسان العاقل
-1	الإنسان	إِنسَان	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	العاقل	عَاقِل	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+# sent_id = 2
+# text = ليس هذا فحسب بل إن الإنسان يمتلك جسماً منتصباً ذا أطراف مفصلية علوية وسفلية يسهل تحريكها وتعمل بالتناسق التام مع الدماغ، وهي خاصية تجعل من الإنسان الكائن الحي الوحيد على البسيطة الذي يستطيع توظيف قدراته العقلية والجسمية واستخدام يديه بمهارة لصناعة أدوات دقيقة وغير الدقيقة التي يحتاجها في حياته اليومية.
+1	ليس	لَيس	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	هذا	هٰذَا	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	1	nsubj	_	_
+3-4	فحسب	_	_	_	_	_	_	_	_
+3	ف	فَ	CCONJ	C---------	_	4	cc	_	_
+4	حسب	حَسب	ADV	D---------	_	1	advmod:emph	_	_
+5	بل	بَل	CCONJ	C---------	_	8	advmod	_	_
+6	إن	إِنَّ	SCONJ	C---------	_	8	mark	_	_
+7	الإنسان	إِنسَان	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	8	nsubj	_	_
+8	يمتلك	اِمتَلَك	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+9	جسماً	جِسم	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+10	منتصباً	مُنتَصِب	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	9	amod	_	_
+11	ذا	ذُو	DET	SD----MS4-	_	12	cc	_	_
+12	أطراف	طَرَف	NOUN	N------P4I	Case=Acc|Definite=Ind|Number=Plur	9	nmod	_	_
+13	مفصلية	مَفصِلِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	12	amod	_	_
+14	علوية	عُلوِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	12	amod	_	_
+15	وسفلية	وسفلية	X	U---------	_	12	amod	_	_
+16	يسهل	سَهَّل	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	acl	_	_
+17-18	تحريكها	_	_	_	_	_	_	_	_
+17	تحريك	تَحرِيك	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	16	obj	_	_
+18	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nmod	_	_
+19-20	وتعمل	_	_	_	_	_	_	_	_
+19	و	وَ	CCONJ	C---------	_	20	cc	_	_
+20	تعمل	عَمِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	16	conj	_	_
+21	بالتناسق	بالتناسق	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	20	obj	_	_
+22	التام	تَامّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	21	amod	_	_
+23	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	24	case	_	_
+24	الدماغ	دِمَاغ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	SpaceAfter=No
+25	،	،	PUNCT	G---------	_	24	punct	_	_
+26-27	وهي	_	_	_	_	_	_	_	_
+26	و	وَ	CCONJ	C---------	_	28	cc	_	_
+27	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+28	خاصية	خَاصِي	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	_
+29	تجعل	جَعَل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	28	acl	_	_
+30	من	مِن	ADP	P---------	AdpType=Prep	31	case	_	_
+31	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	29	obl:arg	_	_
+32	الكائن	كَائِن	ADJ	N------S4D	Case=Acc|Definite=Def|Number=Sing	29	obj	_	_
+33	الحي	حُيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	32	amod	_	_
+34	الوحيد	وَحِيد	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	32	amod	_	_
+35	على	عَلَى	ADP	P---------	AdpType=Prep	36	case	_	_
+36	البسيطة	بَسِيطَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	_
+37	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	38	nsubj	_	_
+38	يستطيع	اِستَطَاع	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	36	acl:relcl	_	_
+39	توظيف	تَوظِيف	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	38	obj	_	_
+40-41	قدراته	_	_	_	_	_	_	_	_
+40	قدرات	قُدرَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	39	nmod	_	_
+41	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	nmod	_	_
+42	العقلية	عَقلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	40	amod	_	_
+43	والجسمية	والجسمية	X	U---------	_	40	nmod	_	_
+44-45	واستخدام	_	_	_	_	_	_	_	_
+44	و	وَ	CCONJ	C---------	_	45	cc	_	_
+45	استخدام	اِستِخدَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	39	conj	_	_
+46-47	يديه	_	_	_	_	_	_	_	_
+46	يدي	يَد	NOUN	N------D2R	Case=Gen|Definite=Cons|Number=Dual	45	nmod	_	_
+47	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	nmod	_	_
+48	بمهارة	بُمهَار	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	39	nmod	_	_
+49-50	لصناعة	_	_	_	_	_	_	_	_
+49	ل	لِ	ADP	P---------	AdpType=Prep	50	case	_	_
+50	صناعة	صِنَاعَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	48	nmod	_	_
+51	أدوات	أَدَاة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	50	nmod	_	_
+52	دقيقة	دَقِيق	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	51	amod	_	_
+53-54	وغير	_	_	_	_	_	_	_	_
+53	و	وَ	CCONJ	C---------	_	54	cc	_	_
+54	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	52	conj	_	_
+55	الدقيقة	دَقِيق	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	54	amod	_	_
+56	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	57	nsubj	_	_
+57-58	يحتاجها	_	_	_	_	_	_	_	_
+57	يحتاج	اِحتَاج	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	51	acl:relcl	_	_
+58	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	57	obj	_	_
+59	في	فِي	ADP	P---------	AdpType=Prep	60	case	_	_
+60-61	حياته	_	_	_	_	_	_	_	_
+60	حياة	حَيَاة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	57	obl	_	_
+61	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	60	nmod	_	_
+62	اليومية	يَومِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	60	amod	_	SpaceAfter=No
+63	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = كما أن له تكوين حنجرة معقدة تعينه على الكلام.
+1	كما	كَمَا	CCONJ	C---------	_	4	cc	_	_
+2	أن	أَنَّ	SCONJ	C---------	_	4	mark	_	_
+3-4	له	_	_	_	_	_	_	_	_
+3	ل	لِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+5	تكوين	تَكوِين	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	4	nsubj	_	_
+6	حنجرة	حَنجَرَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	nmod	_	_
+7	معقدة	مُعَقَّد	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	6	amod	_	_
+8-10	تعينه	_	_	_	_	_	_	_	_
+8	ت	َتّ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	acl	_	_
+9	عين	عَين	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	8	obj	_	_
+10	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nmod	_	_
+11	على	عَلَى	ADP	P---------	AdpType=Prep	12	case	_	_
+12	الكلام	كَلَام	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	obl:arg	_	SpaceAfter=No
+13	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -402,11 +553,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التسمية[عدل]
+# text = التسمية
 1	التسمية	تَسمِيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -414,7 +562,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = هناك اختلاف في أصل الكلمة العربية "إنسان" من قبل علماء اللغة، فقال البعض أن الكلمة مشتقة من "النسيان" لطبيعة الإنسان كثيرة النسيان، ومنهم من قال أن الكلمة مشتقة من "الإيناس" أي الرؤية و البصر لتمييز الإنس عن الجن غير المرئيين، وقيل أنها مشتقة من كلمة "الانس" من الونس لإيناس البشر للأرض.[بحاجة لمصدر]
+# text = هناك اختلاف في أصل الكلمة العربية "إنسان" من قبل علماء اللغة، فقال البعض أن الكلمة مشتقة من "النسيان" لطبيعة الإنسان كثيرة النسيان، ومنهم من قال أن الكلمة مشتقة من "الإيناس" أي الرؤية و البصر لتمييز الإنس عن الجن غير المرئيين، وقيل أنها مشتقة من كلمة "الانس" من الونس لإيناس البشر للأرض.
 1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	_
 2	اختلاف	اِختِلَاف	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
 3	في	فِي	ADP	P---------	AdpType=Prep	4	case	_	_
@@ -465,8 +613,8 @@
 45	و	وَ	CCONJ	C---------	_	47	cc	_	_
 46-47	البصر	_	_	_	_	_	_	_	_
 46	ال	اَل	PART	F---------	_	47	nmod	_	_
-47	بصر	بصر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	44	conj	_	_
-48	لتمييز	لتمييز	NOUN	U---------	_	44	nmod	_	_
+47	بصر	بصر	NOUN	N------S2I	_	44	conj	_	_
+48	لتمييز	لتمييز	NOUN	U---------	_	47	nmod	_	_
 49	الإنس	إِنس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	48	nmod	_	_
 50	عن	عَن	ADP	P---------	AdpType=Prep	51	case	_	_
 51	الجن	جَنّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	48	nmod	_	_
@@ -492,13 +640,7 @@
 69-70	للأرض	_	_	_	_	_	_	_	SpaceAfter=No
 69	ل	لِ	ADP	P---------	AdpType=Prep	70	case	_	_
 70	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	68	nmod	_	_
-71	.	.	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
-72	[	[	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
-73-74	بحاجة	_	_	_	_	_	_	_	_
-73	ب	بِ	ADP	P---------	AdpType=Prep	74	case	_	_
-74	حاجة	حَاجَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	59	obl	_	_
-75	لمصدر	صَدَر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	74	nmod	_	SpaceAfter=No
-76	]	]	PUNCT	G---------	_	74	punct	_	SpacesAfter=\n
+71	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -564,11 +706,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التطور[عدل]
+# text = التطور
 1	التطور	تَطَوُّر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -705,6 +844,163 @@
 4	لوريسيات	لوريسيات	X	U---------	_	3	nmod	_	_
 5	الشكل	شَكل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	SpaceAfter=No
 6	)	)	PUNCT	G---------	_	3	punct	_	SpacesAfter= \n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = تعتمد نظرية التطور على التفسیر العلمي وعلى الحفريات والتجارب المقارنة والدراسات الجينية في التحقيق بأصول الإنسان.
+1	تعتمد	اِعتَمَد	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	نظرية	نَظَرِيَّة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	التطور	تَطَوُّر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+4	على	عَلَى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	التفسیر	تَفسِیر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+6	العلمي	عِلمِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	5	amod	_	_
+7-8	وعلى	_	_	_	_	_	_	_	_
+7	و	وَ	CCONJ	C---------	_	10	cc	_	_
+8	على	عَلَى	ADP	P---------	AdpType=Prep	10	case	_	_
+9-10	الحفريات	_	_	_	_	_	_	_	_
+9	ال	اَل	PART	F---------	_	10	cc	_	_
+10	حفريات	حَفرِيَّة	X	N------P2R	Case=Gen|Definite=Cons|Number=Plur	5	conj	_	_
+11	والتجارب	والتجارب	X	U---------	_	10	cc	_	_
+12	المقارنة	مُقَارَنَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+13	والدراسات	والدراسات	X	U---------	_	10	nmod	_	_
+14	الجينية	جِينِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	_
+15	في	فِي	ADP	P---------	AdpType=Prep	16	case	_	_
+16	التحقيق	تَحقِيق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+17	بأصول	بأصول	NOUN	U---------	_	16	nmod	_	_
+18	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = الإنسان ككائن حي له صفات عدیدة مشترکة مع الثدیيات الأخرى، مثل وجود العمود الفقري والثدیین والدماغ (رغم کبر وتعقید دماغ الإنسان البالغ) والأرجل والأذرع والیدین بالإضافة إلى وجود الحمض النووي والمیتوکوندریا وغیرها من التشابهات الكثیرة الأخرى.
+1	الإنسان	إِنسَان	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	2	nsubj	_	_
+2	ككائن	كَكِينَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+3	حي	حَيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	amod	_	_
+4-5	له	_	_	_	_	_	_	_	_
+4	ل	لِ	ADP	P---------	AdpType=Prep	5	case	_	_
+5	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obl:arg	_	_
+6	صفات	صِفَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
+7	عدیدة	عَدِید	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	6	amod	_	_
+8	مشترکة	مُشتَرَک	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	6	amod	_	_
+9	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	10	case	_	_
+10	الثدیيات	ثَدیِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	nmod	_	_
+11	الأخرى	آخَر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	11	punct	_	_
+13	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	14	case	_	_
+14	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	nmod	_	_
+15	العمود	عُمُود	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+16	الفقري	فَقرِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	15	amod	_	_
+17	والثدیین	والثدیین	X	U---------	_	18	cc	_	_
+18	والدماغ	والدماغ	X	U---------	_	15	conj	_	_
+19	(	(	PUNCT	G---------	_	21	punct	_	SpaceAfter=No
+20	رغم	رَغمَ	ADP	PI------4-	AdpType=Prep|Case=Acc	21	case	_	_
+21	کبر	کَبر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	obl	_	_
+22	وتعقید	وتعقید	X	U---------	_	21	nmod	_	_
+23	دماغ	دِمَاغ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	nmod	_	_
+24	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	nmod	_	_
+25	البالغ	بَالِغ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
+26	)	)	PUNCT	G---------	_	21	punct	_	_
+27	والأرجل	والأرجلَ	X	U---------	_	21	cc	_	_
+28	والأذرع	والأذرع	X	U---------	_	21	conj	_	_
+29	والیدین	والیدین	X	U---------	_	28	nmod	_	_
+30-31	بالإضافة	_	_	_	_	_	_	_	_
+30	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+31	الإضافة	إِضَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+32	إلى	إِلَى	ADP	P---------	AdpType=Prep	33	cc	_	_
+33	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	conj	_	_
+34	الحمض	حَمض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	33	nmod	_	_
+35	النووي	نَوَوِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	34	amod	_	_
+36	والمیتوکوندریا	والمیتوکوندریا	X	U---------	_	34	nmod	_	_
+37-38	وغیرها	_	_	_	_	_	_	_	_
+37	وغیر	وَغیَر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	34	conj	_	_
+38	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	37	nmod	_	_
+39	من	مِن	ADP	P---------	AdpType=Prep	40	case	_	_
+40	التشابهات	تَشَابُه	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	37	nmod	_	_
+41	الكثیرة	كَثِیر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	40	amod	_	_
+42	الأخرى	آخَر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	40	amod	_	SpaceAfter=No
+43	.	.	PUNCT	G---------	_	2	punct	_	_
+
+# sent_id = 3
+# text = الدراسات العلمية التي تتناول التاريخ التطوري للإنسان تشمل كل ما يتعلق بجنس الإنسان (Homo sapiens) لكن الدراسات عادة ما تتوسع وترتبط بدراسة الرئيسيات مثل فصيلة البشرانيات وأسرة البشراناوات محاولة منها لمعرفة أقرب أجداد البشر في السلم التطوري.
+1	الدراسات	دِرَاسَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	8	nsubj	_	_
+2	العلمية	عِلمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
+3	التي	اَلَّذِي	DET	SR----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	تتناول	تَنَاوَل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	التاريخ	تَارِيخ	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	4	obj	_	_
+6	التطوري	تطُوَرِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	5	amod	_	_
+7	للإنسان	إِنسَان	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	4	obj	_	_
+8	تشمل	شَمِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+9	كل	كُلّ	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	8	obj	_	_
+10	ما	مَا	DET	S---------	_	9	det	_	_
+11	يتعلق	تَعَلَّق	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	acl	_	_
+12	بجنس	بَجنس	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	11	obj	_	_
+13	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
+14	(	(	PUNCT	G---------	_	15	punct	_	SpaceAfter=No
+15	Homo	homo	NOUN	U---------	_	12	appos	_	_
+16	sapiens	Sapiens	X	U---------	_	15	nmod	_	SpaceAfter=No
+17	)	)	PUNCT	G---------	_	15	punct	_	_
+18	لكن	لٰكِنَّ	CCONJ	C---------	_	22	cc	_	_
+19	الدراسات	دِرَاسَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	22	nsubj	_	_
+20	عادة	عَادَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+21	ما	مَا	DET	S---------	_	22	obl	_	_
+22	تتوسع	تَوَسَّع	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	conj	_	_
+23-24	وترتبط	_	_	_	_	_	_	_	_
+23	و	وَ	CCONJ	C---------	_	24	cc	_	_
+24	ترتبط	اِرتَبَط	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	conj	_	_
+25-26	بدراسة	_	_	_	_	_	_	_	_
+25	ب	بِ	ADP	P---------	AdpType=Prep	26	case	_	_
+26	دراسة	دِرَاسَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	24	obl:arg	_	_
+27	الرئيسيات	رَئِيسِيّ	NOUN	A-----FP2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	26	nmod	_	_
+28	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	29	case	_	_
+29	فصيلة	فَصِيلَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	nmod	_	_
+30	البشرانيات	البشرانيات	X	N------P2D	Case=Gen|Definite=Def|Number=Plur	29	nmod	_	_
+31	وأسرة	وأسرة	X	U---------	_	29	nmod	_	_
+32	البشراناوات	البشراناوات	X	U---------	_	29	nmod	_	_
+33	محاولة	مُحَاوَلَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+34-35	منها	_	_	_	_	_	_	_	_
+34	من	مِن	ADP	P---------	AdpType=Prep	35	case	_	_
+35	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	obl:arg	_	_
+36-37	لمعرفة	_	_	_	_	_	_	_	_
+36	ل	لِ	ADP	P---------	AdpType=Prep	37	case	_	_
+37	معرفة	مَعرِفَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	33	obl:arg	_	_
+38	أقرب	أَقرَب	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	37	amod	_	_
+39	أجداد	جَدَد	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	38	nmod	_	_
+40	البشر	بَشَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	39	nmod	_	_
+41	في	فِي	ADP	P---------	AdpType=Prep	42	case	_	_
+42	السلم	سِلم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	37	nmod	_	_
+43	التطوري	تَطوِري	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	42	amod	_	SpaceAfter=No
+44	.	.	PUNCT	G---------	_	8	punct	_	_
+
+# sent_id = 4
+# text = يطلق دارسو الأنثروبولوجيا على الإنسان الحديث نوع الإنسان العاقل.
+1	يطلق	أَطلَق	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	دارسو	دارسو	X	U---------	_	1	nsubj	_	_
+3	الأنثروبولوجيا	الأنثروبولوجيا	X	U---------	_	1	obj	_	_
+4	على	عَلَى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+6	الحديث	حَدِيث	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	5	amod	_	_
+7	نوع	نَوع	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+8	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9	العاقل	عَاقِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 5
+# text = وهو الوحيد المتبقي من جنس الإنسان العاقل.
+1-2	وهو	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	الوحيد	وَحِيد	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	parataxis	_	_
+4-5	المتبقي	_	_	_	_	_	_	_	_
+4	الم	الَم	PART	F---------	_	5	advmod	_	_
+5	تبقي	أَبقَى	VERB	VP-A-3MS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	acl	_	_
+6	من	مِن	ADP	P---------	AdpType=Prep	7	case	_	_
+7	جنس	جَنس	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl:arg	_	_
+8	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9	العاقل	عَاقِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1427,12 +1723,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التشريح والفسيولوجية[عدل]
+# text = التشريح والفسيولوجية
 1	التشريح	تَشرِيح	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	والفسيولوجية	والفسيولوجية	X	U---------	_	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1917,12 +2210,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = علم الأحياء[عدل]
+# text = علم الأحياء
 1	علم	عِلم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الأحياء	حَيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1930,12 +2220,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العقل والدماغ[عدل]
+# text = العقل والدماغ
 1	العقل	عَقل	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	والدماغ	والدماغ	X	U---------	_	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2225,11 +2512,231 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العواطف[عدل]
-1	العواطف	العواطف	X	U---------	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
+# text = العواطف
+1	العواطف	العواطف	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = العواطف الإنسانية هي حالات بيولوجية ذات صلة بالجهاز العصبي، تتحكم بها عدد من الخلايا والغدد الهرمونية وتنتج عن تغيرات فزيولوجية عصبية التي تسبب الضحك والبكاء والحب والكره وغيرها من المشاعر التي تُدرج تحت إطار العواطف الإنسانية.
+1	العواطف	عَاطِفَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	5	nsubj	_	_
+2-3	الإنسانية	_	_	_	_	_	_	_	_
+2	ال	اَل	PART	F---------	_	1	nmod	_	_
+3	إنسانية	إِنسَانِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	_
+4	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
+5	حالات	حَالَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+6	بيولوجية	وِلُُوجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	5	amod	_	_
+7	ذات	ذَات	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	nmod	_	_
+8	صلة	صِلَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	nmod	_	_
+9	بالجهاز	لِجَهاز	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+10	العصبي	عَصَبِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	،	،	PUNCT	G---------	_	10	punct	_	_
+12	تتحكم	تَحَكَّم	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	acl	_	_
+13-14	بها	_	_	_	_	_	_	_	_
+13	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	obl:arg	_	_
+15	عدد	عَدَد	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+16	من	مِن	ADP	P---------	AdpType=Prep	17	case	_	_
+17	الخلايا	خَلِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	15	nmod	_	_
+18	والغدد	والغدد	X	U---------	_	17	nmod	_	_
+19	الهرمونية	هِرمَونِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	17	amod	_	_
+20-21	وتنتج	_	_	_	_	_	_	_	_
+20	و	وَ	CCONJ	C---------	_	21	cc	_	_
+21	تنتج	أَنتَج	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	conj	_	_
+22	عن	عَن	ADP	P---------	AdpType=Prep	23	case	_	_
+23	تغيرات	تَغَيُّر	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	21	obl:arg	_	_
+24	فزيولوجية	فِزيُولُوجِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	23	amod	_	_
+25	عصبية	عَصَبِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	23	amod	_	_
+26	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
+27	تسبب	سَبَّب	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	23	acl:relcl	_	_
+28	الضحك	ضَحك	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	27	obj	_	_
+29	والبكاء	والبكاء	X	U---------	_	28	conj	_	_
+30	والحب	والحب	X	U---------	_	28	conj	_	_
+31	والكره	والكره	X	U---------	_	30	conj	_	_
+32-34	وغيرها	_	_	_	_	_	_	_	_
+32	و	وَ	CCONJ	C---------	_	33	cc	_	_
+33	غير	غَير	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	28	conj	_	_
+34	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	nmod	_	_
+35	من	مِن	ADP	P---------	AdpType=Prep	36	case	_	_
+36	المشاعر	مَشعَر	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	33	nmod	_	_
+37	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	38	nsubj	_	_
+38	تُدرج	دَرَج	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	36	acl:relcl	_	_
+39	تحت	تَحتَ	ADP	PI------4-	AdpType=Prep|Case=Acc	40	case	_	_
+40	إطار	إِطَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	38	obl	_	_
+41	العواطف	عَاطِفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	40	nmod	_	_
+42-43	الإنسانية	_	_	_	_	_	_	_	SpaceAfter=No
+42	ال	اَل	PART	F---------	_	41	nmod	_	_
+43	إنسانية	إِنسَانِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	41	amod	_	_
+44	.	.	PUNCT	G---------	_	5	punct	_	_
+
+# sent_id = 2
+# text = تعتبر العاطفة من مميزات السلوك البشري سواء بالاتجاه الإيجابي أو السلبي، أما على المستوى الفردي أو الجماعي، فيظهر الإنسان ميلاً إلى شخص معين (كالحب والغرام من جهة والحقد والكره من جهة أخرى) أو مكان (كالحنين إلى الوطن) ويصعب حصر جميع العواطف والمشاعر البشرية وذلك لتنوعها وتطورها، هناك محاولات عديدة لتصنيف العواطف البشرية كعجلة بلوتشك وغيرها.
+1	تعتبر	اِعتَبَر	VERB	VIIP-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	العاطفة	عَاطِفَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj:pass	_	_
+3	من	مِن	ADP	P---------	AdpType=Prep	4	case	_	_
+4	مميزات	مُمَيِّز	ADJ	A-----FP2R	Case=Gen|Definite=Cons|Gender=Fem|Number=Plur	1	obl:arg	_	_
+5	السلوك	سُلُوك	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+6-7	البشري	_	_	_	_	_	_	_	_
+6	البشر	البشر	X	U---------	_	5	nmod	_	_
+7	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nmod	_	_
+8	سواء	سَوَاء	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	10	nmod	_	_
+9-10	بالاتجاه	_	_	_	_	_	_	_	_
+9	ب	بِ	ADP	P---------	AdpType=Prep	10	case	_	_
+10	الاتجاه	اِتِّجَاه	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+11	الإيجابي	إِيجَابِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	10	amod	_	_
+12	أو	أَو	CCONJ	C---------	_	13	cc	_	_
+13	السلبي	سَلبِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15	أما	أَمَّا	PART	F---------	_	23	advmod:emph	_	_
+16	على	عَلَى	ADP	P---------	AdpType=Prep	17	case	_	_
+17	المستوى	مُستَوَى	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	obl	_	_
+18	الفردي	فَردِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	17	amod	_	_
+19	أو	أَو	CCONJ	C---------	_	20	cc	_	_
+20	الجماعي	جِمَاعِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	18	conj	_	SpaceAfter=No
+21	،	،	PUNCT	G---------	_	20	punct	_	_
+22-23	فيظهر	_	_	_	_	_	_	_	_
+22	ف	فَ	CCONJ	C---------	_	23	cc	_	_
+23	يظهر	ظَهَر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+24	الإنسان	إِنسَان	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	23	nsubj	_	_
+25	ميلاً	مِيلَاً	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
+26	إلى	إِلَى	ADP	P---------	AdpType=Prep	27	case	_	_
+27	شخص	شَخص	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	25	nmod	_	_
+28	معين	مُعَيَّن	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	27	amod	_	_
+29	(	(	PUNCT	G---------	_	30	punct	_	SpaceAfter=No
+30	كالحب	كَالحب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	appos	_	_
+31	والغرام	والغرام	X	U---------	_	30	nmod	_	_
+32	من	مِن	ADP	P---------	AdpType=Prep	33	case	_	_
+33	جهة	جِهَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	30	obl	_	_
+34	والحقد	والحقد	X	U---------	_	33	cc	_	_
+35	والكره	والكره	X	U---------	_	30	conj	_	_
+36	من	مِن	ADP	P---------	AdpType=Prep	37	case	_	_
+37	جهة	جِهَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	30	obl	_	_
+38	أخرى	آخَر	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	37	amod	_	SpaceAfter=No
+39	)	)	PUNCT	G---------	_	30	punct	_	_
+40	أو	أَو	CCONJ	C---------	_	41	cc	_	_
+41	مكان	مَكَان	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	25	conj	_	_
+42	(	(	PUNCT	G---------	_	43	punct	_	SpaceAfter=No
+43	كالحنين	كالحنين	X	U---------	_	41	nmod	_	_
+44	إلى	إِلَى	ADP	P---------	AdpType=Prep	45	case	_	_
+45	الوطن	وَطَن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	nmod	_	SpaceAfter=No
+46	)	)	PUNCT	G---------	_	43	punct	_	_
+47-48	ويصعب	_	_	_	_	_	_	_	_
+47	و	وَ	CCONJ	C---------	_	48	cc	_	_
+48	يصعب	صَعُب	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	23	conj	_	_
+49	حصر	حَصر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	48	nsubj	_	_
+50	جميع	جَمِيع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	49	nmod	_	_
+51	العواطف	عَاطِفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	50	nmod	_	_
+52	والمشاعر	والمشاعر	X	U---------	_	51	nmod	_	_
+53	البشرية	بَشَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	51	amod	_	_
+54-55	وذلك	_	_	_	_	_	_	_	_
+54	و	وَ	CCONJ	C---------	_	55	case	_	_
+55	ذٰلك	ذٰلِكَ	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	48	obl	_	_
+56-58	لتنوعها	_	_	_	_	_	_	_	_
+56	ل	لِ	ADP	P---------	AdpType=Prep	54	fixed	_	_
+57	تنوع	تَنَوُّع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	48	obl	_	_
+58	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	57	nmod	_	_
+59-60	وتطورها	_	_	_	_	_	_	_	SpaceAfter=No
+59	وتطور	وُتُطور	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	57	nmod	_	_
+60	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	59	nmod	_	_
+61	،	،	PUNCT	G---------	_	60	punct	_	_
+62	هناك	هُنَاكَ	ADV	D---------	_	23	conj	_	_
+63	محاولات	مُحَاوَلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	62	nsubj	_	_
+64	عديدة	عَدِيد	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	63	amod	_	_
+65	لتصنيف	لتصنيف	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	63	nmod	_	_
+66	العواطف	عَاطِف	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	65	nmod	_	_
+67	البشرية	بَشَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	66	amod	_	_
+68	كعجلة	كَعجَلَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	65	nmod	_	_
+69	بلوتشك	بلوتشك	X	U---------	_	68	nmod	_	_
+70-72	وغيرها	_	_	_	_	_	_	_	SpaceAfter=No
+70	و	وَ	CCONJ	C---------	_	71	cc	_	_
+71	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	69	conj	_	_
+72	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	71	nmod	_	_
+73	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = تظهر نتائج العواطف البشرية في الفن والأدب بوجه الخصوص والحضارة والحروب وغيرها من سلوكيات الجماعات البشرية.
+1	تظهر	ظَهَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	نتائج	نَتِيجَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
+3	العواطف	عَاطِفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
+4	البشرية	بَشَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	الفن	فَنّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+7-8	والأدب	_	_	_	_	_	_	_	_
+7	و	وَ	CCONJ	C---------	_	8	cc	_	_
+8	الأدب	أَدَب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	conj	_	_
+9-10	بوجه	_	_	_	_	_	_	_	_
+9	ب	بِ	ADP	P---------	AdpType=Prep	10	case	_	_
+10	وجه	وَجه	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+11	الخصوص	خُصُوص	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+12-13	والحضارة	_	_	_	_	_	_	_	_
+12	وا	واَ	CCONJ	C---------	_	13	cc	_	_
+13	الحضارة	حَضَارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	conj	_	_
+14-15	والحروب	_	_	_	_	_	_	_	_
+14	و	وَ	CCONJ	C---------	_	15	cc	_	_
+15	الحروب	حَرب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	13	conj	_	_
+16-18	وغيرها	_	_	_	_	_	_	_	_
+16	و	وَ	CCONJ	C---------	_	17	cc	_	_
+17	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	conj	_	_
+18	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nmod	_	_
+19	من	مِن	ADP	P---------	AdpType=Prep	20	case	_	_
+20	سلوكيات	سُلُوكِيّ	ADJ	A-----FP2R	Case=Gen|Definite=Cons|Gender=Fem|Number=Plur	17	amod	_	_
+21	الجماعات	جَمَاعَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	20	nmod	_	_
+22	البشرية	بَشَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No
+23	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = هناك عواطف يعتبرها الإنسان إيجابية وغيرها سلبية، ومن أمثلة العواطف الإيجابية: السعادة، الاهتمام، والطمأنينة.
+1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	_
+2	عواطف	عَاطِفَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3-4	يعتبرها	_	_	_	_	_	_	_	_
+3	يعتبر	اِعتَبَر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	acl	_	_
+4	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	الإنسان	إِنسَان	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	_
+6	إيجابية	إِيجَابِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	3	xcomp	_	_
+7-9	وغيرها	_	_	_	_	_	_	_	_
+7	و	وَ	CCONJ	C---------	_	8	cc	_	_
+8	غير	غَير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	6	conj	_	_
+9	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
+10	سلبية	سَلبِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No
+11	،	،	PUNCT	G---------	_	10	punct	_	_
+12-13	ومن	_	_	_	_	_	_	_	_
+12	و	وَ	CCONJ	C---------	_	14	cc	_	_
+13	من	مِن	ADP	P---------	AdpType=Prep	14	case	_	_
+14	أمثلة	مِثَال	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	conj	_	_
+15	العواطف	عَاطِفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	14	nmod	_	_
+16	الإيجابية	إِيجَابِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	:	:	PUNCT	G---------	_	18	punct	_	_
+18	السعادة	سَعَادَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	14	nsubj	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	20	punct	_	_
+20	الاهتمام	اِهتِمَام	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	18	conj	_	SpaceAfter=No
+21	،	،	PUNCT	G---------	_	20	punct	_	_
+22-23	والطمأنينة	_	_	_	_	_	_	_	SpaceAfter=No
+22	وال	وَالِي	CCONJ	C---------	_	23	cc	_	_
+23	طمأنينة	طُمَأنِينَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	18	conj	_	_
+24	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 5
+# text = أما من الأمثلة علي العواطف السلبية: التوتر، الحزن، اليأس، والغضب.
+1	أما	أَمَّا	PART	F---------	_	3	advmod:emph	_	_
+2	من	مِن	ADP	P---------	AdpType=Prep	3	case	_	_
+3-4	الأمثلة	_	_	_	_	_	_	_	_
+3	ال	اَل	PART	F---------	_	0	root	_	_
+4	أمثلة	أمثلة	X	U---------	_	3	nmod	_	_
+5	علي	عَلَى	ADP	P---------	AdpType=Prep	6	case	_	_
+6	العواطف	عَاطِفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	nmod	_	_
+7	السلبية	سَلبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No
+8	:	:	PUNCT	G---------	_	9	punct	_	_
+9	التوتر	تَوَتُّر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	11	punct	_	_
+11	الحزن	حِزن	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	9	conj	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	13	punct	_	_
+13	اليأس	يَأس	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	9	conj	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15	والغضب	والغضب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	9	conj	_	SpaceAfter=No
+16	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2370,14 +2877,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = النوم والحلم[عدل]
+# text = النوم والحلم
 1	النوم	نَوم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2-3	والحلم	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	الحلم	حُلم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2646,12 +3150,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الجنسانية والحب[عدل]
-1	الجنسانية	الجنسانية	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	والحب	والحب	X	U---------	_	1	dep	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+# text = الجنسانية والحب
+1	الجنسانية	الجنسانية	X	U---------	_	2	cc	_	_
+2	والحب	والحب	NOUN	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2883,12 +3384,153 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = علم الوراثة[عدل]
+# text = يوصف الحب كشعور قوي بالانجذاب أو التعلق العاطفي.
+1	يوصف	وَصَف	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpacesBefore=\n
+2	الحب	حُبّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	كشعور	كشعور	X	U---------	_	1	obj	_	_
+4	قوي	قَوِيّ	ADJ	U---------	_	3	amod	_	_
+5	بالانجذاب	بالانجذاب	X	U---------	_	3	nmod	_	_
+6	أو	أَو	CCONJ	C---------	_	7	cc	_	_
+7	التعلق	تَعَلُّق	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	3	conj	_	_
+8	العاطفي	عَاطِفِيّ	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No
+9	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = يمكن للحب أن يكون شخصي (مثل الحب بين شخصين) أو غير شخصي (مثل حب شئ، رأي سياسي، أو توجه ديني قوي).
+1	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	للحب	للحب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	أن	أَن	SCONJ	C---------	_	5	mark	_	_
+4	يكون	كَان	AUX	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	شخصي	شَخصِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	ccomp	_	_
+6	(	(	PUNCT	G---------	_	8	punct	_	SpaceAfter=No
+7	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	8	case	_	_
+8	الحب	حُبّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+9	بين	بَينَ	ADP	PI------4-	AdpType=Prep|Case=Acc	10	case	_	_
+10	شخصين	شَخص	NOUN	N------D2I	Case=Gen|Definite=Ind|Number=Dual	8	nmod	_	SpaceAfter=No
+11	)	)	PUNCT	G---------	_	8	punct	_	_
+12	أو	أَو	CCONJ	C---------	_	13	cc	_	_
+13	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	conj	_	_
+14	شخصي	شَخصِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	13	amod	_	_
+15	(	(	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
+16	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	17	case	_	_
+17	حب	حُبّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl	_	_
+18	شئ	شئ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	20	punct	_	_
+20	رأي	رَأي	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	conj	_	_
+21	سياسي	سِيَاسِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No
+22	،	،	PUNCT	G---------	_	21	punct	_	_
+23	أو	أَو	CCONJ	C---------	_	24	cc	_	_
+24	توجه	تَوَجُّه	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	conj	_	_
+25	ديني	دِينِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	24	amod	_	_
+26	قوي	قَوِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
+27	)	)	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
+28	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = هناك أنواع مختلفة من الحب، كالحب الأسري، الحب الأفلاطوني (مثل حب الأصدقاء)، حب الضيف (حسن الضيافة)، أو الحب الرومنسي (حب جنسي).
+1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	_
+2	أنواع	نَوع	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3	مختلفة	مُختَلِف	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	amod	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	الحب	حُبّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	SpaceAfter=No
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7	كالحب	كَالحب	NOUN	U---------	_	2	nmod	_	_
+8	الأسري	أُسرِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No
+9	،	،	PUNCT	G---------	_	8	punct	_	_
+10	الحب	حُبّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	7	conj	_	_
+11	الأفلاطوني	الأفلاطوني	X	U---------	_	10	nmod	_	_
+12	(	(	PUNCT	G---------	_	14	punct	_	SpaceAfter=No
+13	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	14	case	_	_
+14	حب	حُبّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	10	nmod	_	_
+15	الأصدقاء	صَدِيق	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	14	nmod	_	SpaceAfter=No
+16	)	)	PUNCT	G---------	_	14	punct	_	SpaceAfter=No
+17	،	،	PUNCT	G---------	_	18	punct	_	_
+18	حب	حُبّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
+19	الضيف	ضَيف	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+20	(	(	PUNCT	G---------	_	21	punct	_	SpaceAfter=No
+21	حسن	حُسن	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	18	appos	_	_
+22	الضيافة	ضِيَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	SpaceAfter=No
+23	)	)	PUNCT	G---------	_	21	punct	_	SpaceAfter=No
+24	،	،	PUNCT	G---------	_	18	punct	_	_
+25	أو	أَو	CCONJ	C---------	_	26	cc	_	_
+26	الحب	حُبّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	18	conj	_	_
+27	الرومنسي	الرومنسي	X	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	26	amod	_	_
+28	(	(	PUNCT	G---------	_	29	punct	_	SpaceAfter=No
+29	حب	حُبّ	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	26	appos	_	_
+30	جنسي	جُنسِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No
+31	)	)	PUNCT	G---------	_	29	punct	_	SpaceAfter=No
+32	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = ينتج عن الحب الرومنسي إشارات دماغية تتماثل مع تلك التي تنتج عن الإدمان.
+1	ينتج	أَنتَج	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	عن	عَن	ADP	P---------	AdpType=Prep	3	case	_	_
+3	الحب	حُبّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+4	الرومنسي	رُومَنسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
+5	إشارات	إِشَارَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj:pass	_	_
+6	دماغية	دَمَاغِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	5	amod	_	_
+7	تتماثل	تَمَاثَل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	acl	_	_
+8	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	9	case	_	_
+9	تلك	ذٰلِكَ	DET	SD----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	7	obl:arg	_	_
+10	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	تنتج	أَنتَج	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+12	عن	عَن	ADP	P---------	AdpType=Prep	13	case	_	_
+13	الإدمان	إِدمَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	obl:arg	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 5
+# text = عندما يكون الشخص تحت تأثير الحب، يحفز الدوبامين، النورإبينفرين، السيروتونين وكيماويات أخري مركز المتعة بالدماغ، مؤديون إلي أعراض جانبية مثل زيادة معدل ضربات القلب، فقدان الشهية والقدرة علي النوم، وشعور قوي بالابتهاج.
+1	عندما	عِندَمَا	CCONJ	C---------	_	2	mark	_	_
+2	يكون	كَان	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	advcl	_	_
+3	الشخص	شَخص	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	2	nsubj	_	_
+4	تحت	تَحتَ	ADP	PI------4-	AdpType=Prep|Case=Acc	5	case	_	_
+5	تأثير	تَأثِير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl	_	_
+6	الحب	حُبّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	يحفز	حَفَز	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+9	الدوبامين	الدوبامين	X	U---------	_	8	obj	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	11	punct	_	_
+11	النورإبينفرين	النورإبينفرين	X	N------P4D	Case=Acc|Definite=Def|Number=Plur	9	conj	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	11	punct	_	_
+13	السيروتونين	السيروتونين	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	9	conj	_	_
+14	وكيماويات	وكيماويات	X	U---------	_	11	nmod	_	_
+15	أخري	آخَر	ADJ	A-----MD4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	amod	_	_
+16	مركز	مَركَز	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	13	nmod	_	_
+17	المتعة	مُتعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+18	بالدماغ	بالدماغ	X	U---------	_	16	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	18	punct	_	_
+20	مؤديون	مؤديون	ADJ	A-----MP4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	8	xcomp	_	_
+21	إلي	إِلَى	ADP	P---------	AdpType=Prep	22	case	_	_
+22	أعراض	عَرَض	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	20	obl:arg	_	_
+23	جانبية	جَانَبِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	22	amod	_	_
+24	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	25	case	_	_
+25	زيادة	زِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	nmod	_	_
+26	معدل	مُعَدَّل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	25	nmod	_	_
+27	ضربات	ضَربَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	26	nmod	_	_
+28	القلب	قَلب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	27	nmod	_	SpaceAfter=No
+29	،	،	PUNCT	G---------	_	30	punct	_	_
+30	فقدان	فِقدَان	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	25	conj	_	_
+31	الشهية	شُهيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	_
+32	والقدرة	والقدرة	X	A-----FS2D	_	31	amod	_	_
+33	علي	عَلَى	ADP	P---------	AdpType=Prep	34	case	_	_
+34	النوم	نَوم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	obl:arg	_	SpaceAfter=No
+35	،	،	PUNCT	G---------	_	34	punct	_	_
+36-37	وشعور	_	_	_	_	_	_	_	_
+36	و	وَ	CCONJ	C---------	_	37	cc	_	_
+37	شعور	شُعُور	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	25	conj	_	_
+38	قوي	قَوِيّ	ADJ	A-----MS2R	_	37	amod	_	_
+39	بالابتهاج	بالابتهاج	X	U---------	_	38	nmod	_	SpaceAfter=No
+40	.	.	PUNCT	G---------	_	8	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = علم الوراثة
 1	علم	عِلم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الوراثة	وِرَاثَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3316,12 +3958,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = دورة الحياة[عدل]
+# text = دورة الحياة
 1	دورة	دَورَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الحياة	حَيَاة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4004,12 +4643,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = حمية غذائية[عدل]
+# text = حمية غذائية
 1	حمية	حُمِّيَّة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	غذائية	غِذَائِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4447,12 +5083,149 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = اختلافات بيولوجية[عدل]
+# text = اختلافات بيولوجية
 1	اختلافات	اِختِلَاف	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	بيولوجية	وِلُُوجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = هناك تنوع بيولوجي في الجنس البشري، فالصفات مثل فئات الدم، الأمراض الوراثية، شكل الجمجمة، ملامح الوجه، الأنظمة الأحيائية، لون العين، لون الشعر وملمسه، الطول والبنية، ولون البشرة تختلف من مكان لآخر على سطح الأرض.
+1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	SpacesBefore=\n
+2	تنوع	تَنَوُّع	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+3	بيولوجي	بِيَولوجِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	amod	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	الجنس	جِنس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+6-7	البشري	_	_	_	_	_	_	_	SpaceAfter=No
+6	البشر	بَشَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	6	nmod	_	_
+8	،	،	PUNCT	G---------	_	7	punct	_	_
+9	فالصفات	فَالصِف	NOUN	N------P1D	_	1	nsubj	_	_
+10	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+11	فئات	فِئَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	9	nmod	_	_
+12	الدم	دَم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	nmod	_	SpaceAfter=No
+13	،	،	PUNCT	G---------	_	14	punct	_	_
+14	الأمراض	مَرَض	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	conj	_	_
+15	الوراثية	وِرَاثِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	17	punct	_	_
+17	شكل	شَكل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	conj	_	_
+18	الجمجمة	جُمجُمَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	20	punct	_	_
+20	ملامح	مَلَامِح	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	11	conj	_	_
+21	الوجه	وَجه	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	SpaceAfter=No
+22	،	،	PUNCT	G---------	_	23	punct	_	_
+23	الأنظمة	نِظَام	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	conj	_	_
+24	الأحيائية	أَحيَائِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No
+25	،	،	PUNCT	G---------	_	26	punct	_	_
+26	لون	لَون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	9	conj	_	_
+27	العين	عَين	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	SpaceAfter=No
+28	،	،	PUNCT	G---------	_	29	punct	_	_
+29	لون	لَون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	11	conj	_	_
+30	الشعر	شَعر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	29	nmod	_	_
+31-32	وملمسه	_	_	_	_	_	_	_	SpaceAfter=No
+31	وملمس	وملمس	CCONJ	U---------	_	29	cc	_	_
+32	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nmod	_	_
+33	،	،	PUNCT	G---------	_	32	punct	_	_
+34	الطول	طُول	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	9	conj	_	_
+35-36	والبنية	_	_	_	_	_	_	_	SpaceAfter=No
+35	و	وَ	CCONJ	C---------	_	36	cc	_	_
+36	البنية	بِنيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	34	conj	_	_
+37	،	،	PUNCT	G---------	_	36	punct	_	_
+38	ولون	وُلُون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	40	nsubj	_	_
+39	البشرة	بَشرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	38	nmod	_	_
+40	تختلف	اِختَلَف	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	conj	_	_
+41	من	مِن	ADP	P---------	AdpType=Prep	42	case	_	_
+42	مكان	مَكَان	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	40	obl	_	_
+43-44	لآخر	_	_	_	_	_	_	_	_
+43	ل	لِ	ADP	P---------	AdpType=Prep	44	case	_	_
+44	آخر	آخَر	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	42	amod	_	_
+45	على	عَلَى	ADP	P---------	AdpType=Prep	46	case	_	_
+46	سطح	سَطح	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	40	obl	_	_
+47	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	46	nmod	_	SpaceAfter=No
+48	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = بالرغم من اختلاف الطول حسب الجنس، والأصل العرقي، فمتوسط طول الإنسان البالغ هو 1.4 و 1.9 م (4 قدم 7 بوصة و 6 قدم 3 بوصة).
+1-2	بالرغم	_	_	_	_	_	_	_	_
+1	ب	بِ	ADP	P---------	AdpType=Prep	4	case	_	_
+2	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	fixed	_	_
+3	من	مِن	ADP	P---------	AdpType=Prep	1	fixed	_	_
+4	اختلاف	اِختِلَاف	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	17	obl	_	_
+5	الطول	طُول	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+6	حسب	حَسَبَ	ADP	PI------4-	AdpType=Prep|Case=Acc	7	case	_	_
+7	الجنس	جِنس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	SpaceAfter=No
+8	،	،	PUNCT	G---------	_	7	punct	_	_
+9	والأصل	والأصل	X	U---------	_	7	conj	_	_
+10	العرقي	عَرقِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	،	،	PUNCT	G---------	_	10	punct	_	_
+12	فمتوسط	فمتوسط	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	17	nsubj	_	_
+13	طول	طُول	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	nmod	_	_
+14	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15	البالغ	بَالِغ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	14	amod	_	_
+16	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	obl	_	_
+17	1.4	1.4	NUM	Q---------	NumForm=Digit	0	root	_	_
+18	و	وَ	CCONJ	C---------	_	19	cc	_	_
+19	1.9	1.9	NUM	Q---------	NumForm=Digit	17	conj	_	SpacesAfter= 
+20	م	م	X	Y---------	Abbr=Yes	19	nmod	_	_
+21	(	(	PUNCT	G---------	_	22	punct	_	SpaceAfter=No
+22	4	4	NUM	Q---------	NumForm=Digit	17	appos	_	SpacesAfter= 
+23	قدم	قدم	X	Y---------	Abbr=Yes	22	nmod	_	_
+24	7	7	NUM	Q---------	NumForm=Digit	22	nummod	_	SpacesAfter= 
+25	بوصة	بُوصَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	24	nmod	_	_
+26	و	وَ	CCONJ	C---------	_	27	cc	_	_
+27	6	6	NUM	Q---------	NumForm=Digit	22	conj	_	SpacesAfter= 
+28	قدم	قدم	NOUN	Y---------	_	27	nmod	_	_
+29	3	3	NUM	Q---------	NumForm=Digit	27	nummod	_	SpacesAfter= 
+30	بوصة	بُوصَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	29	nmod	_	SpaceAfter=No
+31	)	)	PUNCT	G---------	_	22	punct	_	SpaceAfter=No
+32	.	.	PUNCT	G---------	_	12	punct	_	_
+
+# sent_id = 3
+# text = تحدد الجينات شكل الجسم، كما يتأثر أيضًا بشكل كبير بالعوامل البيئية كالحمية الغذائية، ممارسة الرياضة، وأنماط النوم.
+1	تحدد	حَدَّد	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	الجينات	جِينَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	شكل	شَكل	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+4	الجسم	جِسم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	SpaceAfter=No
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	كما	كَمَا	CCONJ	C---------	_	7	cc	_	_
+7	يتأثر	تَأَثَّر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+8	أيضًا	أَيضاا	ADV	D---------	_	7	advmod:emph	_	_
+9-10	بشكل	_	_	_	_	_	_	_	_
+9	ب	بِ	ADP	P---------	AdpType=Prep	10	case	_	_
+10	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	7	obl	_	_
+11	كبير	كَبِير	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	amod	_	_
+12	بالعوامل	بالعوامل	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	7	obj	_	_
+13	البيئية	بِيئِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	_
+14	كالحمية	كالحمية	X	U---------	_	12	nmod	_	_
+15	الغذائية	غِذَائِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	17	punct	_	_
+17	ممارسة	مُمَارَسَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	12	conj	_	_
+18	الرياضة	رِيَاضَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	18	punct	_	_
+20	وأنماط	وأنماط	NOUN	U---------	_	12	conj	_	_
+21	النوم	نَوم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = يتبع الطول لكل جنس في أي مجموعة عرقية معينة توزيع احتمالي طبيعي.
+1	يتبع	تَبِع	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	الطول	طُول	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3-4	لكل	_	_	_	_	_	_	_	_
+3	ل	لِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+5	جنس	جَنس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	nmod	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	أي	أَيّ	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	1	obl	_	_
+8	مجموعة	مَجمُوعَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	7	nmod	_	_
+9	عرقية	عِرقِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	8	amod	_	_
+10	معينة	مُعَيَّن	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	8	amod	_	_
+11	توزيع	تَوزِيع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
+12	احتمالي	اِحتِمَالِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13	طبيعي	طَبِيعِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4654,6 +5427,288 @@
 24	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	obl	_	_
 25	كبير	كَبِير	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
 26	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = يتراوح لون جلد الإنسان من أغمق درجات اللون البني إلي أفتح درجات اللون الوردي، أو حتي شبه أبيض أو عديم اللون في حالة البرص.
+1	يتراوح	تَرَاوَح	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpacesBefore=\n
+2	لون	لَون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	جلد	جَلَد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+4	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+5	من	مِن	ADP	P---------	AdpType=Prep	6	case	_	_
+6	أغمق	أَغمَق	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	1	obl:arg	_	_
+7	درجات	دَرَجَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	6	nmod	_	_
+8	اللون	لَون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9-10	البني	_	_	_	_	_	_	_	_
+9	الب	آلب	NOUN	N------S2D	Foreign=Yes	8	nmod	_	_
+10	ني	هُوَ	PRON	X---------	Foreign=Yes	9	nmod	_	_
+11	إلي	إِلَى	ADP	P---------	AdpType=Prep	12	case	_	_
+12	أفتح	أَفتَح	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+13	درجات	دَرَجَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	12	nmod	_	_
+14	اللون	لَون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15	الوردي	وَردِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17	أو	أَو	CCONJ	C---------	_	19	cc	_	_
+18	حتي	حتَيَّ	ADP	P---------	AdpType=Prep	19	case	_	_
+19	شبه	شِبه	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	conj	_	_
+20	أبيض	أَبِيض	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	19	amod	_	_
+21	أو	أَو	CCONJ	C---------	_	22	cc	_	_
+22	عديم	عَدِيم	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	20	conj	_	_
+23	اللون	لَون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
+24	في	فِي	ADP	P---------	AdpType=Prep	25	case	_	_
+25	حالة	حَالَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+26	البرص	بَرص	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	25	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = هناك ألوان عديدة لشعر الإنسان فهناك لون أبيض، أحمر، أشقر، بني وأسود، وهو الأكثر انتشارًا.
+1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	_
+2	ألوان	لَون	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3	عديدة	عَدِيد	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	amod	_	_
+4	لشعر	لَشعَر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	2	nmod	_	_
+5	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+6-7	فهناك	_	_	_	_	_	_	_	_
+6	ف	فَ	CCONJ	C---------	_	7	cc	_	_
+7	هناك	هُنَاكَ	ADV	D---------	_	1	conj	_	_
+8	لون	لَون	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+9	أبيض	أَبِيض	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	11	punct	_	_
+11	أحمر	أَحمَر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	11	punct	_	_
+13	أشقر	أَشقَر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15	بني	بني	NOUN	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	8	conj	_	_
+16	وأسود	وأسود	X	U---------	_	15	nmod	_	SpaceAfter=No
+17	،	،	PUNCT	G---------	_	16	punct	_	_
+18-19	وهو	_	_	_	_	_	_	_	_
+18	و	وَ	CCONJ	C---------	_	20	cc	_	_
+19	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+20	الأكثر	أَكثَر	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	8	conj	_	_
+21	انتشارًا	اِنتِشَار	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = يعتمد لون الشعر على نسبة الميلانين، الذي تقل نسبته مع التقدم في السن، مؤديًا إلى شيب الشعر.
+1	يعتمد	اِعتَمَد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	لون	لُون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	الشعر	شَعر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+4	على	عَلَى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	نسبة	نِسبَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+6	الميلانين	الميلانين	X	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	تقل	قَلّ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10-11	نسبته	_	_	_	_	_	_	_	_
+10	نسبة	نِسبَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	9	obj	_	_
+11	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
+12	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	13	case	_	_
+13	التقدم	تَقَدُّم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	obl	_	_
+14	في	فِي	ADP	P---------	AdpType=Prep	15	case	_	_
+15	السن	سِنّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17	مؤديًا	مُؤَدِّي	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	xcomp	_	_
+18	إلى	إِلَى	ADP	P---------	AdpType=Prep	19	case	_	_
+19	شيب	شَيب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	17	obl:arg	_	_
+20	الشعر	شَعر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = يعتقد أغلب الباحثون أن غمق الجلد هو تكيف تطور للحماية من الآشعة فوق البنفسجية الآتية من الشمس.
+1	يعتقد	اِعتَقَد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	أغلب	أَغلَب	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	nsubj	_	_
+3	الباحثون	بَاحِث	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
+4	أن	أَنَّ	SCONJ	C---------	_	8	mark	_	_
+5	غمق	غَمق	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	8	nsubj	_	_
+6	الجلد	جَلَد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
+8	تكيف	تَكَيُّف	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	obj	_	_
+9	تطور	تَطَوُّر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	8	nmod	_	_
+10-11	للحماية	_	_	_	_	_	_	_	_
+10	ل	لِ	ADP	P---------	AdpType=Prep	11	case	_	_
+11	الحماية	حِمَايَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+12	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
+13	الآشعة	شُعَاع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	nmod	_	_
+14	فوق	فَوقَ	ADP	PI------4-	AdpType=Prep|Case=Acc	15	case	_	_
+15	البنفسجية	وَلبنفسجيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+16	الآتية	آتِي	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	_
+17	من	مِن	ADP	P---------	AdpType=Prep	18	case	_	_
+18	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 5
+# text = تحمي البشرة البيضاء من نقص فيتامين د في البيئات حيث تندر أشعة الشمس، فيتطلب تصنيع فيتامين د وفرة من أشعة الشمس.
+1	تحمي	حَمَى	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	البشرة	بَشرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	البيضاء	أَبيَض	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	نقص	نَقص	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+6	فيتامين	فيتامين	X	U---------	_	5	nmod	_	_
+7	د	د	X	Y---------	Abbr=Yes	6	nmod	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	البيئات	بِيئَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	5	nmod	_	_
+10	حيث	حَيثُ	CCONJ	C---------	_	11	mark	_	_
+11	تندر	نَدَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	acl	_	_
+12	أشعة	أَشعَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	11	nsubj	_	_
+13	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15-16	فيتطلب	_	_	_	_	_	_	_	_
+15	ف	فَ	CCONJ	C---------	_	16	cc	_	_
+16	يتطلب	تَطَلَّب	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+17	تصنيع	تَصنِيع	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	16	nsubj	_	_
+18	فيتامين	فيتامين	X	X---------	Foreign=Yes	17	nmod	_	_
+19	د	د	X	X---------	Foreign=Yes	18	nmod	_	_
+20	وفرة	وَفرَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
+21	من	مِن	ADP	P---------	AdpType=Prep	22	case	_	_
+22	أشعة	أَشعَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	20	nmod	_	_
+23	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 6
+# text = لدي جلد الإنسان القدرة على الإسمرار في حالة التعرض للأشعة فوق البنفسجية.
+1-2	لدي	_	_	_	_	_	_	_	_
+1	لدي	لَدَى	ADP	P---------	AdpType=Prep	2	mark	_	_
+2	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	جلد	جَلَد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	2	nsubj	_	_
+4	الإنسان	إِنسَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+5	القدرة	قُدرَة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	2	obj	_	_
+6	على	عَلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	الإسمرار	اِسمِرَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	حالة	حَالَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	nmod	_	_
+10	التعرض	تَعَرُّض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+11	للأشعة	للأشعة	X	U---------	_	10	nmod	_	_
+12	فوق	فَوقَ	ADP	PI------4-	AdpType=Prep|Case=Acc	13	case	_	_
+13	البنفسجية	وَلبنفسجيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	2	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = أظهرت الأبحاث الجينية المعاصرة أن سكان أفريقيا هم الأكثر تنوعًا من الناحية الجينية.
+1	أظهرت	أَظهَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	SpacesBefore=\s
+2	الأبحاث	بَحث	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	الجينية	جِينِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	المعاصرة	مُعَاصِر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+5	أن	أَنَّ	SCONJ	C---------	_	9	mark	_	_
+6	سكان	سَاكِن	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	9	nsubj	_	_
+7	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	6	nmod	_	_
+8	هم	هُوَ	PRON	SP---3MP1-	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	obl	_	_
+9	الأكثر	أَكثَر	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	obj	_	_
+10	تنوعًا	تَنَوُّع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	9	nmod	_	_
+11	من	مِن	ADP	P---------	AdpType=Prep	12	case	_	_
+12	الناحية	نَاحِيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	obl	_	_
+13	الجينية	جِينِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = يقل التنوع الجيني البشري في السكان الأصليين مع زيادة المسافة من أفريقيا، ويعتقد أنها نتيجة لتكرر ظاهرة عنق الزجاجة سكانية أثناء الهجرة خارج أفريقيا.
+1	يقل	قَلّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	التنوع	تَنَوُّع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	الجيني	جِينِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	_
+4-5	البشري	_	_	_	_	_	_	_	_
+4	البشر	بَشَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	obj	_	_
+5	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nmod	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	السكان	سَاكِن	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	obl	_	_
+8	الأصليين	أَصلِيّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	7	amod	_	_
+9	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	10	case	_	_
+10	زيادة	زِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+11	المسافة	مَسَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+12	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
+13	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	11	nmod	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15-16	ويعتقد	_	_	_	_	_	_	_	_
+15	و	وَ	CCONJ	C---------	_	16	cc	_	_
+16	يعتقد	اِعتَقَد	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	1	conj	_	_
+17-18	أنها	_	_	_	_	_	_	_	_
+17	أن	أَنَّ	SCONJ	C---------	_	19	mark	_	_
+18	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	نتيجة	نَتِيجَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+20	لتكرر	لتكرر	NOUN	N------S2R	_	19	nmod	_	_
+21	ظاهرة	ظَاهِرَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+22	عنق	عَنق	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	21	nmod	_	_
+23	الزجاجة	زِجَاجَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
+24	سكانية	سِكَانِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	22	amod	_	_
+25	أثناء	أَثنَاءَ	ADP	PI------4-	AdpType=Prep|Case=Acc	26	case	_	_
+26	الهجرة	هِجرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	obl	_	_
+27	خارج	خَارِجَ	ADP	PI------4-	AdpType=Prep|Case=Acc	28	case	_	_
+28	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	26	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = عاش البشر في أفريقيا لزمن طويل، وهاجر جزء من السكان خارج القارة إلي أوراسيا، جالبون جزء من التنوع الجيني الأفريقي معهم.
+1	عاش	عَاش	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	البشر	بَشَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	في	فِي	ADP	P---------	AdpType=Prep	4	case	_	_
+4	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	1	obl	_	_
+5	لزمن	لَزمَن	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
+6	طويل	طَوِيل	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	وهاجر	وهاجر	X	U---------	_	1	conj	_	_
+9	جزء	جُزء	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+10	من	مِن	ADP	P---------	AdpType=Prep	11	case	_	_
+11	السكان	سَاكِن	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	9	nmod	_	_
+12	خارج	خَارِجَ	ADP	PI------4-	AdpType=Prep|Case=Acc	13	case	_	_
+13	القارة	قَارَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+14	إلي	إِلَى	ADP	P---------	AdpType=Prep	15	case	_	_
+15	أوراسيا	أوراسيا	X	X---------	Foreign=Yes	8	obl	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17	جالبون	جَالِب	ADJ	A-----MP1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	1	conj	_	_
+18	جزء	جُزء	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
+19	من	مِن	ADP	P---------	AdpType=Prep	20	case	_	_
+20	التنوع	تَنَوُّع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+21	الجيني	جِينِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	20	amod	_	_
+22	الأفريقي	أَفرِيقِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	20	amod	_	_
+23-24	معهم	_	_	_	_	_	_	_	SpaceAfter=No
+23	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	24	case	_	_
+24	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nmod	_	_
+25	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = بالرغم من ذلك، جني السكان خارج أفريقيا دخل جيني جديد نتيجة للاختلاط مع البشر القدامي، والذي نتج عنه تنوع أكبر من النياندرتال والدينيسوفان عن الموجود في أفريقيا.
+1-2	بالرغم	_	_	_	_	_	_	_	_
+1	ب	بِ	ADP	P---------	AdpType=Prep	4	case	_	_
+2	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	fixed	_	_
+3	من	مِن	ADP	P---------	AdpType=Prep	1	fixed	_	_
+4	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	10	obl	_	SpaceAfter=No
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	جني	جنَيّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	10	nsubj	_	_
+7	السكان	سَاكِن	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	nmod	_	_
+8	خارج	خَارِجَ	ADP	PI------4-	AdpType=Prep|Case=Acc	9	case	_	_
+9	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	7	nmod	_	_
+10	دخل	دَخَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+11	جيني	جِينِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	nsubj	_	_
+12	جديد	جَدِيد	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13	نتيجة	نَتِيجَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	14	nmod	_	_
+14	للاختلاط	للاختلاط	NOUN	U---------	Case=Gen|Definite=Def|Number=Sing	10	obl	_	_
+15	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	16	case	_	_
+16	البشر	بَشَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+17	القدامي	قِدَامِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No
+18	،	،	PUNCT	G---------	_	17	punct	_	_
+19-20	والذي	_	_	_	_	_	_	_	_
+19	و	وَ	CCONJ	C---------	_	16	cc	_	_
+20	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	21	nsubj	_	_
+21	نتج	نَتَج	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	16	acl:relcl	_	_
+22-23	عنه	_	_	_	_	_	_	_	_
+22	عن	عَن	ADP	P---------	AdpType=Prep	23	case	_	_
+23	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obl:arg	_	_
+24	تنوع	تَنَوُّع	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
+25	أكبر	أَكبَر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	24	amod	_	_
+26	من	مِن	ADP	P---------	AdpType=Prep	27	case	_	_
+27	النياندرتال	النياندرتال	X	U---------	_	24	nmod	_	_
+28	والدينيسوفان	والدينيسوفان	X	U---------	_	27	nmod	_	_
+29	عن	عَن	ADP	P---------	AdpType=Prep	30	case	_	_
+30	الموجود	مَوجُود	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	24	amod	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	أفريقيا	أَفرِيقِيَا	X	X---------	Foreign=Yes	30	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	G---------	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4962,11 +6017,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الثقافة[عدل]
+# text = الثقافة
 1	الثقافة	ثَقَافَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5208,11 +6260,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الدين[عدل]
+# text = الدين
 1	الدين	دِين	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عدل	X	U---------	_	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5353,6 +6402,134 @@
 12	بين	بَينَ	ADP	PI------4-	AdpType=Prep|Case=Acc	13	case	_	_
 13	البشر	بَشَر	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = ليس هناك مصطلح أكاديمي متفق عليه عما يعرف بالدين.
+1	ليس	لَيس	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	SpacesBefore=\n
+2	هناك	هُنَاكَ	ADV	D---------	_	1	advmod	_	_
+3	مصطلح	مُصطَلَح	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	أكاديمي	أَكَاِديِمَّي	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	amod	_	_
+5	متفق	مُتَّفَق	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	amod	_	_
+6-7	عليه	_	_	_	_	_	_	_	_
+6	علي	عَلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obl:arg	_	_
+8-9	عما	_	_	_	_	_	_	_	_
+8	عن	عَن	ADP	P---------	AdpType=Prep	9	case	_	_
+9	ما	مَا	DET	S---------	_	1	obl:arg	_	_
+10	يعرف	عَرَف	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	9	acl	_	_
+11-12	بالدين	_	_	_	_	_	_	_	SpaceAfter=No
+11	ب	بِ	ADP	P---------	AdpType=Prep	12	case	_	_
+12	الدين	دِين	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	obl:arg	_	_
+13	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = اختلفت ملامح الأديان مع اختلاف الثقافات و أوجه النظر الفردية بخصوص التنوع الجغرافي، الاجتماعي، واللغوي في العالم.
+1	اختلفت	اِختَلَف	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	ملامح	مَلَامِح	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
+3	الأديان	دِين	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
+4	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	5	case	_	_
+5	اختلاف	اِختِلَاف	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+6	الثقافات	ثَقَافَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	5	nmod	_	_
+7	و	وَ	CCONJ	C---------	_	8	cc	_	_
+8	أوجه	وَجه	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	5	conj	_	_
+9	النظر	نَظَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+10	الفردية	فَردِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	9	amod	_	_
+11-12	بخصوص	_	_	_	_	_	_	_	_
+11	ب	بِ	ADP	P---------	AdpType=Prep	13	case	_	_
+12	خصوص	خُصُوص	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	fixed	_	_
+13	التنوع	تَنَوُّع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+14	الجغرافي	جُغرَافِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No
+15	،	،	PUNCT	G---------	_	14	punct	_	_
+16	الاجتماعي	اِجتِمَاعِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	14	conj	_	SpaceAfter=No
+17	،	،	PUNCT	G---------	_	16	punct	_	_
+18	واللغوي	واللغوي	X	U---------	_	14	conj	_	_
+19	في	فِي	ADP	P---------	AdpType=Prep	20	case	_	_
+20	العالم	عَالَم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = يمكن للدين أن يحتوي علي اعتقاد في حياة بعد الموت (الحياة الآخرة)، أصل الحياة، طبيعة الكون (أصل الكون في الأديان) ومصيره المحتوم (علم الآخرات)، وما هو أخلاقي أو غير أخلاقي.
+1	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2-3	للدين	_	_	_	_	_	_	_	_
+2	ل	لِ	ADP	P---------	AdpType=Prep	3	case	_	_
+3	الدين	دِين	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+4	أن	أَن	SCONJ	C---------	_	5	mark	_	_
+5	يحتوي	اِحتَوَى	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	csubj	_	_
+6	علي	عَلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	اعتقاد	اِعتِقَاد	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl:arg	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	حياة	حَيَاة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	7	nmod	_	_
+10	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+11	الموت	مَوت	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+12	(	(	PUNCT	G---------	_	13	punct	_	SpaceAfter=No
+13	الحياة	حَيَاة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	9	appos	_	_
+14	الآخرة	آخرَة	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
+15	)	)	PUNCT	G---------	_	13	punct	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	17	punct	_	_
+17	أصل	أَصل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	conj	_	_
+18	الحياة	حَيَاة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	20	punct	_	_
+20	طبيعة	طَبِيعَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	conj	_	_
+21	الكون	كَون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	_
+22	(	(	PUNCT	G---------	_	23	punct	_	SpaceAfter=No
+23	أصل	أَصل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	21	nmod	_	_
+24	الكون	كَون	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	nmod	_	_
+25	في	فِي	ADP	P---------	AdpType=Prep	26	case	_	_
+26	الأديان	دِين	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	23	nmod	_	SpaceAfter=No
+27	)	)	PUNCT	G---------	_	23	punct	_	_
+28-29	ومصيره	_	_	_	_	_	_	_	_
+28	ومصير	وَمِصير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	20	nmod	_	_
+29	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	nmod	_	_
+30	المحتوم	مَحتُوم	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	28	amod	_	_
+31	(	(	PUNCT	G---------	_	32	punct	_	SpaceAfter=No
+32	علم	عِلم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	28	appos	_	_
+33	الآخرات	آخَر	ADJ	A-----FP2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	32	amod	_	SpaceAfter=No
+34	)	)	PUNCT	G---------	_	32	punct	_	SpaceAfter=No
+35	،	،	PUNCT	G---------	_	32	punct	_	_
+36-37	وما	_	_	_	_	_	_	_	_
+36	و	وَ	CCONJ	C---------	_	37	cc	_	_
+37	ما	مَا	DET	S---------	_	7	conj	_	_
+38	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	_	_
+39	أخلاقي	إِخلَاقِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	37	amod	_	_
+40	أو	أَو	CCONJ	C---------	_	41	cc	_	_
+41	غير	غَير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	39	conj	_	_
+42	أخلاقي	إِخلَاقِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	41	amod	_	SpaceAfter=No
+43	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = تتشارك العديد من الأديان في الاعتقاد في كائنات إلهية متعالية كالإيمان بالألهة أو الله، بالرغم من وجود بعض الديانات غير الألوهية.
+1-2	تتشارك	_	_	_	_	_	_	_	_
+1	ت	َتّ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	تشارك	شَارَك	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	xcomp	_	_
+3	العديد	عَدِيد	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	nsubj	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	الأديان	دِين	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	3	nmod	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	الاعتقاد	اِعتِقَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	obl:arg	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	كائنات	كَائِنَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	7	nmod	_	_
+10	إلهية	إلهِيَة	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	9	nmod	_	_
+11	متعالية	مُتَعَالِي	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	9	amod	_	_
+12	كالإيمان	كالإيمان	NOUN	U---------	_	11	nmod	_	_
+13	بالألهة	لَألهَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
+14	أو	أَو	CCONJ	C---------	_	15	cc	_	_
+15	الله	اَللّٰه	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	conj	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17-18	بالرغم	_	_	_	_	_	_	_	_
+17	ب	بِ	ADP	P---------	AdpType=Prep	20	case	_	_
+18	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	fixed	_	_
+19	من	مِن	ADP	P---------	AdpType=Prep	17	fixed	_	_
+20	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl	_	_
+21	بعض	بَعض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+22	الديانات	دِيَانَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	21	nmod	_	_
+23	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	nmod	_	_
+24	الألوهية	أَلوهِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No
+25	.	.	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5885,11 +7062,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الفلسفة[عدل]
+# text = الفلسفة
 1	الفلسفة	فَلسَفَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6272,11 +7446,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العلوم[عدل]
+# text = العلوم
 1	العلوم	عِلم	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6516,11 +7687,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الفن[عدل]
+# text = الفن
 1	الفن	فَنّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6921,11 +8089,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = اللغة[عدل]
+# text = اللغة
 1	اللغة	لُغَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7135,11 +8300,135 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المجتمع[عدل]
+# text = المجتمع
 1	المجتمع	مُجتَمَع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = المجتمع هو نظام من المؤسسات ناتج عن التفاعل بين البشر.
+1	المجتمع	مُجتَمَع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	_
+2	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
+3	نظام	نِظَام	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	المؤسسات	مُؤَسَّسَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	3	nmod	_	_
+6	ناتج	نَاتِج	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	amod	_	_
+7	عن	عَن	ADP	P---------	AdpType=Prep	8	case	_	_
+8	التفاعل	تَفَاعُل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	obl:arg	_	_
+9	بين	بَينَ	ADP	PI------4-	AdpType=Prep|Case=Acc	10	case	_	_
+10	البشر	بَشَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	G---------	_	3	punct	_	_
+
+# sent_id = 2
+# text = البشر كائنات اجتماعية بشكل كبير وتميل إلي العيش في جماعات كبيرة ومعقدة.
+1	البشر	بَشَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	2	nsubj	_	_
+2	كائنات	كَائِنَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+3	اجتماعية	اِجتِمَاعِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	amod	_	_
+4-5	بشكل	_	_	_	_	_	_	_	_
+4	ب	بِ	ADP	P---------	AdpType=Prep	5	case	_	_
+5	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
+6	كبير	كَبِير	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	5	amod	_	_
+7	وتميل	وتميل	VERB	U---------	_	2	conj	_	_
+8	إلي	إِلَى	ADP	P---------	AdpType=Prep	9	case	_	_
+9	العيش	عَيش	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	obl:arg	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
+11	جماعات	جَمَاعَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
+12	كبيرة	كَبِير	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	_
+13	ومعقدة	ُعَقَّد	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	2	punct	_	_
+
+# sent_id = 3
+# text = يمكن أن يقسم المجتمع إلي ثلاث مجموعات حسب الدخل، الثروة، النفوذ، السمعة وعوامل أخري.
+1	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	أن	أَن	SCONJ	C---------	_	3	mark	_	_
+3	يقسم	قَسَّم	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	csubj	_	_
+4	المجتمع	مُجتَمَع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	_
+5	إلي	إِلَى	ADP	P---------	AdpType=Prep	6	case	_	_
+6	ثلاث	ثَلَاثَة	NUM	QV----F-2R	Case=Gen|Definite=Cons|Gender=Fem|NumForm=Word|NumValue=3	3	obl:arg	_	_
+7	مجموعات	مَجمُوعَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	6	nmod	_	_
+8	حسب	حَسَبَ	ADP	PI------4-	AdpType=Prep|Case=Acc	9	case	_	_
+9	الدخل	دَخل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	obl	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	9	punct	_	_
+11	الثروة	ثَروَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	conj	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	13	punct	_	_
+13	النفوذ	نُفُوذ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	conj	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15-16	السمعة	_	_	_	_	_	_	_	_
+15	ا	أَ	PART	F---------	_	16	cc	_	_
+16	السمعة	سُمعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	conj	_	_
+17	وعوامل	وعوامل	NOUN	U---------	_	16	nmod	_	_
+18	أخري	أَخرِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No
+19	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = يختلف التدرج الاجتماعي ودرجة الحراك الاجتماعي من مجتمع إلي آخر، خصوصًا بين المجتمعات المتقدمة والتقليدية.
+1	يختلف	اِختَلَف	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	التدرج	تَدَرُّج	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	الاجتماعي	اِجتِمَاعِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	_
+4-5	ودرجة	_	_	_	_	_	_	_	_
+4	و	وَ	CCONJ	C---------	_	5	cc	_	_
+5	درجة	دَرَجَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	2	conj	_	_
+6	الحراك	حَرَاك	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	الاجتماعي	اِجتِمَاعِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	6	amod	_	_
+8	من	مِن	ADP	P---------	AdpType=Prep	9	case	_	_
+9	مجتمع	مُجتَمَع	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	1	obl	_	_
+10	إلي	إِلَى	ADP	P---------	AdpType=Prep	11	case	_	_
+11	آخر	آخَر	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	11	punct	_	_
+13	خصوصًا	خُصُوص	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	15	nmod	_	_
+14	بين	بَينَ	ADP	PI------4-	AdpType=Prep|Case=Acc	15	case	_	_
+15	المجتمعات	مُجتَمَع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	obl	_	_
+16	المتقدمة	مُتَقَدِّم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	_
+17	والتقليدية	والتقليدية	ADJ	A-----FS2D	_	15	amod	_	SpaceAfter=No
+18	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 5
+# text = تختلف الجماعات البشرية في الحجم من الأسر إلي الدول.
+1	تختلف	اِختَلَف	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	الجماعات	جَمَاعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	البشرية	بَشَرِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	الحجم	حَجم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+6	من	مِن	ADP	P---------	AdpType=Prep	7	case	_	_
+7	الأسر	أُسرَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	5	nmod	_	_
+8	إلي	إِلَى	ADP	P---------	AdpType=Prep	9	case	_	_
+9	الدول	دَولَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	5	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 6
+# text = كان أول شكل من التنظيم الاجتماعي البشري هو أسر تعيش في عصب من الصيادين وجامعي الثمار.
+1	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	10	cop	_	_
+2	أول	أَوَّل	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	10	nsubj	_	_
+3	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	التنظيم	تَنظِيم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+6	الاجتماعي	اِجتِمَاعِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	5	amod	_	_
+7-8	البشري	_	_	_	_	_	_	_	_
+7	البشر	بَشَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	5	nmod	_	_
+8	ي	هُوَ	PRON	SP---1MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	10	nmod	_	_
+9	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
+10	أسر	أُسرَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+11	تعيش	عَاش	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	10	acl	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	عصب	عَصب	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
+14	من	مِن	ADP	P---------	AdpType=Prep	15	case	_	_
+15	الصيادين	الصيادين	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	13	nmod	_	_
+16	وجامعي	وُجَامِع	NOUN	N------P2R	_	15	nmod	_	_
+17	الثمار	ثَمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	G---------	_	10	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = بناء الحضارات
+1	بناء	بِنَاء	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+2	الحضارات	حَضَارَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7453,14 +8742,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحكومات والسياسة[عدل]
+# text = الحكومات والسياسة
 1	الحكومات	حُكُومَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2-3	والسياسة	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	السياسة	سِيَاسَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7736,14 +9022,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التجارة والاقتصاد[عدل]
+# text = التجارة والاقتصاد
 1	التجارة	تِجَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2-3	والاقتصاد	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8036,11 +9319,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحروب[عدل]
+# text = الحروب
 1	الحروب	حَرب	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8450,12 +9730,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انظر أيضًا[عدل]
-1	انظر	نَظَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+# text = انظر أيضًا
+1	انظر	انظر	X	U---------	_	0	root	_	_
 2	أيضًا	أَيضاا	ADV	D---------	_	1	advmod:emph	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عدل	X	U---------	_	1	nsubj	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8463,11 +9740,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المراجع[عدل]
+# text = المراجع
 1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8475,20 +9749,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = وصلات خارجية[عدل]
+# text = وصلات خارجية
 1	وصلات	وُصلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = قائمة التصفح
-1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
 

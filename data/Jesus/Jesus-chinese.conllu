@@ -1,5 +1,3 @@
-# https://zh.wikipedia.org/wiki/%E8%80%B6%E7%A8%A3
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17,16 +15,7 @@
 8	的	的	PART	DEC	Case=Gen	7	case:dec	_	SpaceAfter=No
 9	百	百	NUM	CD	NumType=Card	10	nummod	_	SpaceAfter=No
 10	科	科	NOUN	NN	_	11	nmod	_	SpaceAfter=No
-11	全书	全书	NOUN	NN	_	5	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 耶稣
-1	耶稣	耶稣	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
+11	全书	全书	NOUN	NN	_	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -237,14 +226,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 名號釋義[编辑]
+# text = 名號釋義
 1	名	名	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	號	號	NOUN	NN	_	6	nsubj	_	SpaceAfter=No
+2	號	號	NOUN	NN	_	0	root	_	SpaceAfter=No
 3	釋	釋	PROPN	NNP	_	2	appos	_	SpaceAfter=No
 4	義	義	PROPN	NNP	_	3	flat:name	_	SpaceAfter=No
-5	[	[	ADV	VV	_	6	cop	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PART	SFN	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -699,11 +685,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 基督[编辑]
-1	基督	基督	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
-2	[	[	AUX	(	_	3	cop	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 基督
+1	基督	基督	PROPN	NNP	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -873,7 +856,105 @@
 6	麼	麼	ADV	RB	_	5	obj	_	SpaceAfter=No
 7	記	記	VERB	VV	_	8	advcl	_	SpaceAfter=No
 8	載	載	VERB	VV	_	0	root	_	SpaceAfter=No
-9	：	：	PUNCT	:	_	8	punct	_	SpacesAfter=\n
+9	：	：	PUNCT	:	_	8	punct	_	SpacesAfter=\n\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 他（安得烈）先找到自己的哥哥西門，對他說：“我們遇見彌賽亞了（‘彌賽亞’翻出來就是‘基督’）！”
+1	他	他	PRON	PRP	Person=3	14	nsubj	_	SpaceAfter=No
+2	（	（	PUNCT	(	_	3	punct	_	SpaceAfter=No
+3	安得烈	安得烈	PROPN	NNP	_	1	appos	_	SpaceAfter=No
+4	）	）	PUNCT	)	_	3	punct	_	SpaceAfter=No
+5	先找	先找	VERB	VV	_	14	advcl	_	SpaceAfter=No
+6	到	到	VERB	VV	_	5	mark	_	SpaceAfter=No
+7	自己	自己	PRON	PRD	_	9	det	_	SpaceAfter=No
+8	的	的	PART	DEC	Case=Gen	7	case:dec	_	SpaceAfter=No
+9	哥哥西	哥哥西	PROPN	NNP	_	5	obj	_	SpaceAfter=No
+10	門	門	PROPN	NNP	_	9	appos	_	SpaceAfter=No
+11	，	，	PUNCT	,	_	14	punct	_	SpaceAfter=No
+12	對	對	ADP	IN	_	13	case	_	SpaceAfter=No
+13	他	他	PRON	PRP	Person=3	14	obl	_	SpaceAfter=No
+14	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+15	：	：	PUNCT	:	_	14	punct	_	SpaceAfter=No
+16	“	“	PUNCT	``	_	19	punct	_	SpaceAfter=No
+17	我	我	PRON	PRP	Person=1	19	nsubj	_	SpaceAfter=No
+18	們	們	ADV	RB	_	19	advmod	_	SpaceAfter=No
+19	遇	遇	VERB	VV	_	14	ccomp	_	SpaceAfter=No
+20	見	見	VERB	VV	_	19	mark	_	SpaceAfter=No
+21	彌	彌	PROPN	NNP	_	23	nmod	_	SpaceAfter=No
+22	賽	賽	PROPN	NNP	_	21	flat:name	_	SpaceAfter=No
+23	亞	亞	PROPN	NNP	_	19	obj	_	SpaceAfter=No
+24	了	了	PART	UH	_	19	discourse	_	SpaceAfter=No
+25	（	（	PUNCT	(	_	31	punct	_	SpaceAfter=No
+26	‘	‘	PUNCT	``	_	31	punct	_	SpaceAfter=No
+27	彌	彌	PROPN	NNP	_	29	compound	_	SpaceAfter=No
+28	賽	賽	PROPN	NNP	_	29	compound	_	SpaceAfter=No
+29	亞	亞	PART	SFN	_	31	nsubj	_	SpaceAfter=No
+30	’	’	PUNCT	''	_	31	punct	_	SpaceAfter=No
+31	翻出	翻出	VERB	VV	_	36	csubj	_	SpaceAfter=No
+32	來	來	VERB	VV	_	31	mark	_	SpaceAfter=No
+33	就是	就是	AUX	VC	_	35	cop	_	SpaceAfter=No
+34	‘	‘	PUNCT	``	_	35	punct	_	SpaceAfter=No
+35	基督	基督	PROPN	NNP	_	36	advcl	_	SpaceAfter=No
+36	’	’	PART	SFN	_	19	ccomp	_	SpaceAfter=No
+37	）	）	PUNCT	)	_	31	punct	_	SpaceAfter=No
+38	！	！	PUNCT	.	_	19	punct	_	SpaceAfter=No
+39	”	”	PUNCT	''	_	19	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = （約翰福音1:41，圓括號內字是聖經原文，此處‘彌賽亞’原文是Μεσσίαν，是彌賽亞用希臘文音譯，‘基督’就是Χριστός，是彌賽亞用希臘文意譯）
+1	（	（	PUNCT	(	_	3	punct	_	SpaceAfter=No
+2	約翰福音	約翰福音	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
+3	1:41	1:41	NUM	CD	NumType=Card	12	nmod:tmod	_	SpaceAfter=No
+4	，	，	PUNCT	,	_	12	punct	_	SpaceAfter=No
+5	圓	圓	PART	PFA	_	6	case:pref	_	SpaceAfter=No
+6	括號	括號	NOUN	NN	_	8	nmod	_	SpaceAfter=No
+7	內	內	VERB	VV	_	8	compound	_	SpaceAfter=No
+8	字	字	PART	SFN	_	12	nsubj	_	SpaceAfter=No
+9	是	是	AUX	VC	_	12	cop	_	SpaceAfter=No
+10	聖	聖	PROPN	NNP	_	12	nmod	_	SpaceAfter=No
+11	經	經	PROPN	NNP	_	12	nmod	_	SpaceAfter=No
+12	原文	原文	NOUN	NN	_	0	root	_	SpaceAfter=No
+13	，	，	PUNCT	,	_	12	punct	_	SpaceAfter=No
+14	此	此	DET	DT	_	15	det	_	SpaceAfter=No
+15	處	處	NOUN	NN	_	32	nsubj	_	SpaceAfter=No
+16	‘	‘	PUNCT	``	_	21	nmod	_	SpaceAfter=No
+17	彌	彌	PROPN	NNP	_	19	nmod	_	SpaceAfter=No
+18	賽	賽	PROPN	NNP	_	19	compound	_	SpaceAfter=No
+19	亞	亞	PART	SFN	_	21	nmod	_	SpaceAfter=No
+20	’	’	PUNCT	SFN	_	21	nmod	_	SpaceAfter=No
+21	原文	原文	NOUN	NN	_	23	nsubj	_	SpaceAfter=No
+22	是	是	AUX	VC	_	23	cop	_	SpaceAfter=No
+23	Μεσσίαν	μεσσίαν	PROPN	NNP	_	32	acl	_	SpaceAfter=No
+24	，	，	PUNCT	,	_	32	punct	_	SpaceAfter=No
+25	是	是	AUX	VC	_	32	cop	_	SpaceAfter=No
+26	彌	彌	PROPN	NNP	_	28	nmod	_	SpaceAfter=No
+27	賽	賽	PROPN	NNP	_	28	compound	_	SpaceAfter=No
+28	亞	亞	PROPN	NNP	_	32	nmod	_	SpaceAfter=No
+29	用希	用希	PROPN	NNP	_	32	amod	_	SpaceAfter=No
+30	臘	臘	PROPN	NNP	_	32	nmod	_	SpaceAfter=No
+31	文音	文音	NOUN	NN	_	32	compound	_	SpaceAfter=No
+32	譯	譯	PART	SFN	_	12	parataxis	_	SpaceAfter=No
+33	，	，	PUNCT	,	_	12	punct	_	SpaceAfter=No
+34	‘	‘	PUNCT	``	_	36	nmod	_	SpaceAfter=No
+35	基督	基督	PROPN	NNP	_	36	compound	_	SpaceAfter=No
+36	’	’	PART	SFN	_	47	nsubj	_	SpaceAfter=No
+37	就是	就是	AUX	VC	_	38	cop	_	SpaceAfter=No
+38	Χριστός	χριστός	PROPN	NNP	_	47	acl	_	SpaceAfter=No
+39	，	，	PUNCT	,	_	47	punct	_	SpaceAfter=No
+40	是	是	AUX	VC	_	47	cop	_	SpaceAfter=No
+41	彌	彌	PROPN	NNP	_	43	nmod	_	SpaceAfter=No
+42	賽	賽	PROPN	NNP	_	43	compound	_	SpaceAfter=No
+43	亞	亞	PROPN	NNP	_	47	nmod	_	SpaceAfter=No
+44	用希	用希	PROPN	NNP	_	47	nmod	_	SpaceAfter=No
+45	臘	臘	PROPN	NNP	_	47	nmod	_	SpaceAfter=No
+46	文意	文意	NOUN	NN	_	47	compound	_	SpaceAfter=No
+47	譯	譯	PART	SFN	_	12	parataxis	_	SpaceAfter=No
+48	）	）	PUNCT	)	_	47	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -1112,16 +1193,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 聖經中的耶穌[编辑]
+# text = 聖經中的耶穌
 1	聖	聖	PROPN	NNP	_	2	compound	_	SpaceAfter=No
 2	經	經	PART	SFN	_	5	nmod	_	SpaceAfter=No
 3	中	中	ADP	IN	_	2	acl	_	SpaceAfter=No
 4	的	的	PART	DEC	Case=Gen	2	case:dec	_	SpaceAfter=No
-5	耶	耶	PROPN	NNP	_	8	nsubj	_	SpaceAfter=No
+5	耶	耶	PROPN	NNP	_	0	root	_	SpaceAfter=No
 6	穌	穌	PROPN	NNP	_	5	flat:name	_	SpaceAfter=No
-7	[	[	VERB	VV	_	8	cop	_	SpaceAfter=No
-8	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-9	]	]	PART	SFN	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -1199,11 +1277,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 早年[编辑]
-1	早年	早年	NOUN	NN	_	3	nmod:tmod	_	SpaceAfter=No
-2	[	[	PART	PFA	_	3	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 早年
+1	早年	早年	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -1795,12 +1870,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 傳道[编辑]
-1	傳	傳	VERB	VV	_	2	compound	_	SpaceAfter=No
-2	道	道	PART	SFN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 傳道
+1	傳	傳	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	道	道	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2107,12 +2179,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 受難[编辑]
+# text = 受難
 1	受	受	VERB	VV	_	0	root	_	SpaceAfter=No
-2	難	難	PROPN	NNP	_	1	obj	_	SpaceAfter=No
-3	[	[	AUX	CC	_	4	cop	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	1	parataxis	_	SpaceAfter=No
-5	]	]	PART	SFN	_	1	punct	_	SpacesAfter=\n
+2	難	難	PROPN	VV	_	1	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2253,6 +2322,107 @@
 12	如此	如此	VERB	VV	_	13	advcl	_	SpaceAfter=No
 13	记载	记载	VERB	VV	_	0	root	_	SpaceAfter=No
 14	：	：	PUNCT	:	_	13	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 耶穌又拿起餅來，祝謝了，就掰開，遞給他們，說：“這是我的身體，為你們捨的，你們也應當如此行，為的是紀念我”。
+1	耶	耶	PROPN	NNP	_	21	nsubj	_	SpaceAfter=No
+2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
+3	又	又	ADV	RB	_	4	mark	_	SpaceAfter=No
+4	拿起	拿起	VERB	VV	_	21	advcl	_	SpaceAfter=No
+5	餅	餅	NOUN	NN	_	6	nsubj	_	SpaceAfter=No
+6	來	來	VERB	VV	_	4	ccomp	_	SpaceAfter=No
+7	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+8	祝	祝	VERB	VV	_	21	advcl	_	SpaceAfter=No
+9	謝	謝	VERB	VV	_	8	xcomp	_	SpaceAfter=No
+10	了	了	PART	UH	_	8	discourse	_	SpaceAfter=No
+11	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+12	就	就	ADV	RB	_	14	mark	_	SpaceAfter=No
+13	掰	掰	VERB	VV	_	14	advcl	_	SpaceAfter=No
+14	開	開	VERB	VV	_	21	advcl	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+16	遞	遞	VERB	VV	_	21	advcl	_	SpaceAfter=No
+17	給	給	VERB	VV	_	16	mark	_	SpaceAfter=No
+18	他	他	PRON	PRP	Person=3	16	obj	_	SpaceAfter=No
+19	們	們	PRON	VV	_	16	obj	_	SpaceAfter=No
+20	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+21	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+22	：	：	PUNCT	:	_	21	punct	_	SpaceAfter=No
+23	“	“	PUNCT	``	_	46	punct	_	SpaceAfter=No
+24	這	這	PRON	PRD	_	28	nsubj	_	SpaceAfter=No
+25	是	是	AUX	VC	_	28	cop	_	SpaceAfter=No
+26	我	我	PRON	PRP	Person=1	28	det	_	SpaceAfter=No
+27	的	的	PART	DEC	Case=Gen	26	case:dec	_	SpaceAfter=No
+28	身體	身體	NOUN	NN	_	46	advcl	_	SpaceAfter=No
+29	，	，	PUNCT	,	_	46	punct	_	SpaceAfter=No
+30	為	為	VERB	IN	_	46	advcl	_	SpaceAfter=No
+31	你	你	PRON	PRP	Person=2	33	nsubj	_	SpaceAfter=No
+32	們	們	ADV	RB	_	33	advmod	_	SpaceAfter=No
+33	捨	捨	VERB	VV	_	30	ccomp	_	SpaceAfter=No
+34	的	的	PART	UH	_	33	discourse	_	SpaceAfter=No
+35	，	，	PUNCT	,	_	46	punct	_	SpaceAfter=No
+36	你	你	PRON	PRP	Person=2	41	nsubj	_	SpaceAfter=No
+37	們	們	PRON	RB	_	41	nsubj	_	SpaceAfter=No
+38	也	也	ADV	RB	_	41	mark	_	SpaceAfter=No
+39	應	應	VERB	VV	_	41	advcl	_	SpaceAfter=No
+40	當	當	AUX	MD	_	41	aux	_	SpaceAfter=No
+41	如	如	VERB	VV	_	46	advcl	_	SpaceAfter=No
+42	此行	此行	NOUN	NN	_	41	obj	_	SpaceAfter=No
+43	，	，	PUNCT	,	_	46	punct	_	SpaceAfter=No
+44	為	為	VERB	VV	_	46	csubj	_	SpaceAfter=No
+45	的	的	PART	DEC	_	44	mark:relcl	_	SpaceAfter=No
+46	是	是	VERB	VC	_	21	ccomp	_	SpaceAfter=No
+47	紀	紀	ADV	RB	_	48	advmod	_	SpaceAfter=No
+48	念	念	VERB	VV	_	46	xcomp	_	SpaceAfter=No
+49	我	我	PRON	PRP	Person=1	48	obj	_	SpaceAfter=No
+50	”	”	PUNCT	''	_	48	punct	_	SpaceAfter=No
+51	。	。	PUNCT	.	_	21	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 飯後也照樣拿起杯來，說：“這杯是用我血所立的新約，是為你們流出來的”。
+1	飯	飯	PROPN	NNP	_	9	nsubj	_	SpaceAfter=No
+2	後	後	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
+3	也照	也照	VERB	VV	_	9	advcl	_	SpaceAfter=No
+4	樣	樣	VERB	VV	_	3	xcomp	_	SpaceAfter=No
+5	拿起	拿起	VERB	VV	_	3	xcomp	_	SpaceAfter=No
+6	杯	杯	NOUN	NN	_	5	obj	_	SpaceAfter=No
+7	來	來	VERB	VV	_	3	xcomp	_	SpaceAfter=No
+8	，	，	PUNCT	,	_	9	punct	_	SpaceAfter=No
+9	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+10	：	：	PUNCT	:	_	9	punct	_	SpaceAfter=No
+11	“	“	PUNCT	``	_	22	punct	_	SpaceAfter=No
+12	這	這	DET	DT	_	22	nsubj	_	SpaceAfter=No
+13	杯是	杯是	AUX	VC	_	20	cop	_	SpaceAfter=No
+14	用	用	VERB	VV	_	20	acl:relcl	_	SpaceAfter=No
+15	我	我	PRON	PRP	Person=1	17	nsubj	_	SpaceAfter=No
+16	血所	血所	NOUN	NN	_	17	advmod	_	SpaceAfter=No
+17	立	立	VERB	VV	_	20	acl:relcl	_	SpaceAfter=No
+18	的	的	PART	DEC	_	17	mark:relcl	_	SpaceAfter=No
+19	新	新	PART	PFA	_	20	case:pref	_	SpaceAfter=No
+20	約	約	NOUN	NN	_	22	advcl	_	SpaceAfter=No
+21	，	，	PUNCT	,	_	22	punct	_	SpaceAfter=No
+22	是	是	VERB	VC	_	9	ccomp	_	SpaceAfter=No
+23	為	為	ADP	IN	_	22	xcomp	_	SpaceAfter=No
+24	你	你	PRON	PRP	Person=2	26	nsubj	_	SpaceAfter=No
+25	們	們	ADV	RB	_	26	nsubj	_	SpaceAfter=No
+26	流出	流出	VERB	VV	_	23	ccomp	_	SpaceAfter=No
+27	來	來	VERB	VV	_	26	mark	_	SpaceAfter=No
+28	的	的	PART	UH	_	22	discourse	_	SpaceAfter=No
+29	”	”	PUNCT	''	_	22	punct	_	SpaceAfter=No
+30	。	。	PUNCT	.	_	9	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = （路加福音22:19-20）
+1	（	（	PUNCT	(	_	5	punct	_	SpaceAfter=No
+2	路加福音	路加福音	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
+3	22:19	22:19	NUM	CD	NumType=Card	5	nummod	_	SpaceAfter=No
+4	-	-	PUNCT	HYPH	_	5	punct	_	SpaceAfter=No
+5	20	20	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No
+6	）	）	PUNCT	)	_	5	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -2843,6 +3013,51 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = 世人都犯了罪，虧缺了神的榮耀。
+1	世人	世人	NOUN	NN	_	8	nsubj	_	SpaceAfter=No
+2	都	都	ADV	RB	_	3	mark	_	SpaceAfter=No
+3	犯	犯	VERB	VV	_	8	advcl	_	SpaceAfter=No
+4	了	了	PART	AS	Aspect=Perf	3	case:aspect	_	SpaceAfter=No
+5	罪	罪	NOUN	NN	_	3	obj	_	SpaceAfter=No
+6	，	，	PUNCT	,	_	8	punct	_	SpaceAfter=No
+7	虧	虧	ADV	RB	_	8	mark	_	SpaceAfter=No
+8	缺	缺	VERB	VV	_	0	root	_	SpaceAfter=No
+9	了	了	PART	AS	Aspect=Perf	8	case:aspect	_	SpaceAfter=No
+10	神	神	NOUN	NN	_	13	nmod	_	SpaceAfter=No
+11	的	的	PART	DEC	Case=Gen	10	case:dec	_	SpaceAfter=No
+12	榮	榮	VERB	VV	_	13	compound	_	SpaceAfter=No
+13	耀	耀	PART	SFN	_	8	obj	_	SpaceAfter=No
+14	。	。	PUNCT	.	_	8	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = ...罪的工價乃是死（羅馬書3：23，6：23）
+1	...	...	NUM	CD	_	2	nummod	_	SpaceAfter=No
+2	罪	罪	NOUN	NN	_	5	nmod	_	SpaceAfter=No
+3	的	的	PART	DEC	Case=Gen	2	case:dec	_	SpaceAfter=No
+4	工	工	VERB	VV	_	5	compound	_	SpaceAfter=No
+5	價	價	PART	SFN	_	8	nsubj	_	SpaceAfter=No
+6	乃	乃	VERB	VV	_	8	advcl	_	SpaceAfter=No
+7	是	是	AUX	VC	_	8	cop	_	SpaceAfter=No
+8	死	死	VERB	VV	_	0	root	_	SpaceAfter=No
+9	（	（	PUNCT	(	_	12	punct	_	SpaceAfter=No
+10	羅	羅	PROPN	NNP	_	12	compound	_	SpaceAfter=No
+11	馬	馬	PROPN	NNP	_	10	conj	_	SpaceAfter=No
+12	書	書	PART	SFN	_	8	parataxis	_	SpaceAfter=No
+13	3	3	NUM	CD	NumType=Card	12	nummod	_	SpaceAfter=No
+14	：	：	PUNCT	:	_	15	punct	_	SpaceAfter=No
+15	23	23	NUM	CD	NumType=Card	8	parataxis	_	SpaceAfter=No
+16	，	，	PUNCT	,	_	19	punct	_	SpaceAfter=No
+17	6	6	NUM	CD	NumType=Card	15	conj	_	SpaceAfter=No
+18	：	：	PUNCT	:	_	19	punct	_	SpaceAfter=No
+19	23	23	NUM	CD	NumType=Card	15	conj	_	SpaceAfter=No
+20	）	）	PUNCT	)	_	19	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = 按照定命，人人都有一死，死後且有審判。
 1	按照	按照	ADP	IN	_	2	case	_	SpaceAfter=No
 2	定命	定命	NOUN	NN	_	6	obl	_	SpaceAfter=No
@@ -2970,6 +3185,53 @@
 6	：	：	PUNCT	:	_	7	punct	_	SpaceAfter=No
 7	8	8	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
 8	）	）	PUNCT	)	_	7	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 神愛世人，甚至將他的獨生子賜給人們，叫一切信他的，不致滅亡，反得永生。
+1	神	神	NOUN	NN	_	2	nsubj	_	SpacesBefore=\n|SpaceAfter=No
+2	愛	愛	VERB	VV	_	16	advcl	_	SpaceAfter=No
+3	世人	世人	NOUN	NN	_	2	obj	_	SpaceAfter=No
+4	，	，	PUNCT	,	_	16	punct	_	SpaceAfter=No
+5	甚至	甚至	ADV	RB	_	16	mark	_	SpaceAfter=No
+6	將	將	VERB	VV	_	16	advcl	_	SpaceAfter=No
+7	他	他	PRON	PRP	Person=3	10	det	_	SpaceAfter=No
+8	的	的	PART	DEC	Case=Gen	7	case:dec	_	SpaceAfter=No
+9	獨	獨	PART	PFA	_	10	case:pref	_	SpaceAfter=No
+10	生子	生子	NOUN	NN	_	11	nsubj	_	SpaceAfter=No
+11	賜	賜	VERB	VV	_	16	ccomp	_	SpaceAfter=No
+12	給	給	VERB	VV	_	11	mark	_	SpaceAfter=No
+13	人	人	NOUN	NN	_	12	obj	_	SpaceAfter=No
+14	們	們	PART	SFN	_	12	obj	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	16	punct	_	SpaceAfter=No
+16	叫	叫	VERB	VV	_	28	advcl	_	SpaceAfter=No
+17	一	一	NUM	CD	NumType=Card	18	nummod	_	SpaceAfter=No
+18	切信	切信	VERB	VV	_	28	advcl	_	SpaceAfter=No
+19	他	他	PRON	PRP	Person=3	18	obj	_	SpaceAfter=No
+20	的	的	PART	UH	_	18	mark:relcl	_	SpaceAfter=No
+21	，	，	PUNCT	,	_	28	punct	_	SpaceAfter=No
+22	不致	不致	VERB	VV	_	28	advcl	_	SpaceAfter=No
+23	滅	滅	VERB	VV	_	24	advcl	_	SpaceAfter=No
+24	亡	亡	VERB	VV	_	22	xcomp	_	SpaceAfter=No
+25	，	，	PUNCT	,	_	28	punct	_	SpaceAfter=No
+26	反	反	VERB	VV	_	28	advcl	_	SpaceAfter=No
+27	得	得	PART	DEV	_	26	case:aspect	_	SpaceAfter=No
+28	永生	永生	VERB	VV	_	0	root	_	SpaceAfter=No
+29	。	。	PUNCT	.	_	28	punct	_	_
+
+# sent_id = 2
+# text = （約翰福音3：16）
+1	（	（	PUNCT	(	_	4	punct	_	SpaceAfter=No
+2	約	約	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
+3	翰福音	翰福音	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
+4	3	3	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No
+5	：	：	PUNCT	:	_	6	punct	_	SpaceAfter=No
+6	16	16	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
+7	）	）	PUNCT	)	_	6	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3120,12 +3382,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 復活[编辑]
-1	復	復	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
-2	活	活	PROPN	NNP	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	parataxis	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	punct	_	SpacesAfter=\n
+# text = 復活
+1	復	復	PROPN	NNP	_	2	nsubj	_	SpaceAfter=No
+2	活	活	ADJ	JJ	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3333,11 +3592,180 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 升天[编辑]
-1	升天	升天	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	SFN	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 基督已经从死裏复活，成为睡了之人初熟的果子。
+1	基督	基督	PROPN	NNP	_	7	nsubj	_	SpacesBefore=\s|SpaceAfter=No
+2	已经	已经	ADV	RB	_	5	advmod	_	SpaceAfter=No
+3	从死	从死	VERB	VV	_	5	advcl	_	SpaceAfter=No
+4	裏	裏	ADP	IN	_	3	mark	_	SpaceAfter=No
+5	复活	复活	VERB	VV	_	7	advcl	_	SpaceAfter=No
+6	，	，	PUNCT	,	_	7	punct	_	SpaceAfter=No
+7	成	成	VERB	VV	_	0	root	_	SpaceAfter=No
+8	为	为	VERB	VC	_	7	mark	_	SpaceAfter=No
+9	睡	睡	VERB	VV	_	12	acl:relcl	_	SpaceAfter=No
+10	了	了	PART	AS	Aspect=Perf	9	case:aspect	_	SpaceAfter=No
+11	之	之	PART	DEC	_	9	mark:relcl	_	SpaceAfter=No
+12	人	人	NOUN	NN	_	13	nsubj	_	SpaceAfter=No
+13	初熟	初熟	ADJ	JJ	_	15	acl:relcl	_	SpaceAfter=No
+14	的	的	PART	DEC	_	13	mark:relcl	_	SpaceAfter=No
+15	果子	果子	NOUN	NN	_	7	obj	_	SpaceAfter=No
+16	。	。	PUNCT	.	_	7	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 死既是因一人而来，死人复活也是因一人而来。
+1	死既是	死既是	VERB	VV	_	9	advcl	_	SpaceAfter=No
+2	因	因	ADP	IN	_	4	case	_	SpaceAfter=No
+3	一	一	NUM	CD	NumType=Card	4	nummod	_	SpaceAfter=No
+4	人	人	NOUN	NN	_	6	obl	_	SpaceAfter=No
+5	而	而	ADV	RB	_	6	mark	_	SpaceAfter=No
+6	来	来	VERB	VV	_	1	xcomp	_	SpaceAfter=No
+7	，	，	PUNCT	,	_	10	punct	_	SpaceAfter=No
+8	死人	死人	NOUN	NN	_	9	nsubj	_	SpaceAfter=No
+9	复活	复活	VERB	VV	_	10	csubj	_	SpaceAfter=No
+10	也是	也是	VERB	VC	_	0	root	_	SpaceAfter=No
+11	因	因	ADP	IN	_	13	case	_	SpaceAfter=No
+12	一	一	NUM	CD	NumType=Card	13	nummod	_	SpaceAfter=No
+13	人	人	NOUN	NN	_	14	obl	_	SpaceAfter=No
+14	而来	而来	VERB	VV	_	10	mark	_	SpaceAfter=No
+15	。	。	PUNCT	.	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 在亚当裏众人都死了；照样，在基督裏众人也都要复活......就在一霎时，眨眼之间，号筒末次吹响的时候；因号筒要响，死人要复活成为不朽坏的，我们也要改变。
+1	在	在	ADP	IN	_	6	case	_	SpaceAfter=No
+2	亚当	亚当	PROPN	NNP	_	3	compound	_	SpaceAfter=No
+3	裏	裏	PART	SFN	_	4	nmod	_	SpaceAfter=No
+4	众人	众人	NOUN	NN	_	6	nsubj	_	SpaceAfter=No
+5	都	都	ADV	RB	_	6	mark	_	SpaceAfter=No
+6	死	死	VERB	VV	_	18	advcl	_	SpaceAfter=No
+7	了	了	PART	UH	_	6	discourse	_	SpaceAfter=No
+8	；	；	PUNCT	:	_	18	punct	_	SpaceAfter=No
+9	照样	照样	ADJ	JJ	_	18	advcl	_	SpaceAfter=No
+10	，	，	PUNCT	,	_	18	punct	_	SpaceAfter=No
+11	在	在	ADP	IN	_	14	case	_	SpaceAfter=No
+12	基督	基督	PROPN	NNP	_	13	compound	_	SpaceAfter=No
+13	裏	裏	PART	SFN	_	14	nmod	_	SpaceAfter=No
+14	众人	众人	NOUN	NN	_	18	nsubj	_	SpaceAfter=No
+15	也	也	ADV	RB	_	18	mark	_	SpaceAfter=No
+16	都	都	ADV	RB	_	18	mark	_	SpaceAfter=No
+17	要	要	AUX	MD	_	18	aux	_	SpaceAfter=No
+18	复活	复活	VERB	VV	_	0	root	_	SpaceAfter=No
+19	......	......	NUM	CD	NumType=Card	18	obj	_	SpaceAfter=No
+20	就	就	ADV	RB	_	32	mark	_	SpaceAfter=No
+21	在	在	ADP	IN	_	23	case	_	SpaceAfter=No
+22	一	一	NUM	CD	NumType=Card	23	nummod	_	SpaceAfter=No
+23	霎	霎	NOUN	NNB	_	32	obl	_	SpaceAfter=No
+24	时	时	ADP	IN	_	23	acl	_	SpaceAfter=No
+25	，	，	PUNCT	,	_	32	punct	_	SpaceAfter=No
+26	眨	眨	PART	VV	_	27	compound	_	SpaceAfter=No
+27	眼	眼	NOUN	SFN	_	32	nsubj	_	SpaceAfter=No
+28	之间	之间	ADP	IN	_	27	acl	_	SpaceAfter=No
+29	，	，	PUNCT	,	_	32	punct	_	SpaceAfter=No
+30	号筒末	号筒末	VERB	VV	_	31	nmod	_	SpaceAfter=No
+31	次	次	NOUN	NNB	_	32	advmod	_	SpaceAfter=No
+32	吹响	吹响	VERB	VV	_	34	acl:relcl	_	SpaceAfter=No
+33	的	的	PART	DEC	_	32	mark:relcl	_	SpaceAfter=No
+34	时候	时候	NOUN	NN	_	18	obj	_	SpaceAfter=No
+35	；	；	PUNCT	:	_	53	punct	_	SpaceAfter=No
+36	因	因	ADP	IN	_	39	case	_	SpaceAfter=No
+37	号	号	NOUN	NN	_	39	nsubj	_	SpaceAfter=No
+38	筒要	筒要	NOUN	NN	_	39	nsubj	_	SpaceAfter=No
+39	响	响	VERB	VV	_	43	ccomp	_	SpaceAfter=No
+40	，	，	PUNCT	,	_	43	punct	_	SpaceAfter=No
+41	死人	死人	NOUN	NN	_	43	nsubj	_	SpaceAfter=No
+42	要	要	AUX	MD	_	43	aux	_	SpaceAfter=No
+43	复活	复活	VERB	VV	_	53	advcl	_	SpaceAfter=No
+44	成	成	VERB	VV	_	43	mark	_	SpaceAfter=No
+45	为	为	VERB	VC	_	43	mark	_	SpaceAfter=No
+46	不	不	ADV	RB	Polarity=Neg	47	advmod	_	SpaceAfter=No
+47	朽坏	朽坏	ADJ	JJ	_	44	xcomp	_	SpaceAfter=No
+48	的	的	PART	UH	_	43	discourse	_	SpaceAfter=No
+49	，	，	PUNCT	,	_	53	punct	_	SpaceAfter=No
+50	我们	我	PRON	PRP	Number=Plur|Person=1	53	nsubj	_	SpaceAfter=No
+51	也	也	ADV	RB	_	53	mark	_	SpaceAfter=No
+52	要	要	AUX	MD	_	53	aux	_	SpaceAfter=No
+53	改变	改变	VERB	VV	_	18	parataxis	_	SpaceAfter=No
+54	。	。	PUNCT	.	_	18	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = 这必朽坏的总要变成不朽坏的；这必死的总要变成不死的；这必朽坏的既变成不朽坏的；这必死的既变成不死的；那时经上所记“死被得胜吞灭”的话就应验了。
+1	这	这	DET	DT	_	3	nsubj	_	SpaceAfter=No
+2	必	必	AUX	MD	_	3	aux	_	SpaceAfter=No
+3	朽坏	朽坏	VERB	VV	_	5	acl:relcl	_	SpaceAfter=No
+4	的	的	PART	DEC	_	3	mark:relcl	_	SpaceAfter=No
+5	总要	总要	NOUN	NN	_	6	nsubj	_	SpaceAfter=No
+6	变成	变成	VERB	VV	_	0	root	_	SpaceAfter=No
+7	不	不	ADV	RB	Polarity=Neg	8	advmod	_	SpaceAfter=No
+8	朽坏	朽坏	VERB	VV	_	6	xcomp	_	SpaceAfter=No
+9	的	的	PART	UH	_	6	discourse	_	SpaceAfter=No
+10	；	；	PUNCT	:	_	6	punct	_	SpaceAfter=No
+11	这	这	DET	DT	_	12	nsubj	_	SpaceAfter=No
+12	必死	必死	VERB	VV	_	15	csubj	_	SpaceAfter=No
+13	的	的	PART	DEC	_	12	mark:relcl	_	SpaceAfter=No
+14	总要	总要	NOUN	NN	_	15	nsubj	_	SpaceAfter=No
+15	变成	变成	VERB	VV	_	6	parataxis	_	SpaceAfter=No
+16	不死	不死	ADJ	JJ	_	15	xcomp	_	SpaceAfter=No
+17	的	的	PART	UH	_	15	discourse	_	SpaceAfter=No
+18	；	；	PUNCT	:	_	6	punct	_	SpaceAfter=No
+19	这	这	DET	DT	_	24	nsubj	_	SpaceAfter=No
+20	必	必	AUX	MD	_	21	aux	_	SpaceAfter=No
+21	朽坏	朽坏	VERB	VV	_	24	csubj	_	SpaceAfter=No
+22	的	的	PART	DEC	_	21	mark:relcl	_	SpaceAfter=No
+23	既	既	CCONJ	CC	_	24	cc	_	SpaceAfter=No
+24	变成	变成	VERB	VV	_	6	parataxis	_	SpaceAfter=No
+25	不	不	ADV	RB	Polarity=Neg	26	advmod	_	SpaceAfter=No
+26	朽坏	朽坏	VERB	VV	_	24	xcomp	_	SpaceAfter=No
+27	的	的	PART	UH	_	24	discourse	_	SpaceAfter=No
+28	；	；	PUNCT	:	_	51	punct	_	SpaceAfter=No
+29	这	这	DET	DT	_	31	nsubj	_	SpaceAfter=No
+30	必	必	AUX	MD	_	31	aux	_	SpaceAfter=No
+31	死	死	VERB	VV	_	34	csubj	_	SpaceAfter=No
+32	的	的	PART	DEC	_	31	mark:relcl	_	SpaceAfter=No
+33	既	既	CCONJ	CC	_	34	cc	_	SpaceAfter=No
+34	变成	变成	VERB	VV	_	6	parataxis	_	SpaceAfter=No
+35	不死	不死	ADJ	JJ	_	34	obj	_	SpaceAfter=No
+36	的	的	PART	UH	_	34	discourse	_	SpaceAfter=No
+37	；	；	PUNCT	:	_	51	punct	_	SpaceAfter=No
+38	那	那	DET	DT	_	39	det	_	SpaceAfter=No
+39	时	时	NOUN	NN	_	51	nmod:tmod	_	SpaceAfter=No
+40	经	经	ADP	IN	_	47	case	_	SpaceAfter=No
+41	上	上	NOUN	NN	_	42	nmod	_	SpaceAfter=No
+42	所记	所记	DET	DT	_	47	punct	_	SpaceAfter=No
+43	“	“	PUNCT	``	_	47	punct	_	SpaceAfter=No
+44	死	死	NOUN	NN	_	47	nsubj:pass	_	SpaceAfter=No
+45	被	被	VERB	BB	Voice=Pass	46	aux:pass	_	SpaceAfter=No
+46	得胜	得胜	VERB	VV	_	47	advcl	_	SpaceAfter=No
+47	吞灭	吞灭	VERB	VV	_	51	xcomp	_	SpaceAfter=No
+48	”	”	PUNCT	''	_	47	punct	_	SpaceAfter=No
+49	的话	的话	PART	UH	_	51	discourse	_	SpaceAfter=No
+50	就	就	ADV	RB	_	51	mark	_	SpaceAfter=No
+51	应验	应验	VERB	VV	_	6	parataxis	_	SpaceAfter=No
+52	了	了	PART	UH	_	51	discourse	_	SpaceAfter=No
+53	。	。	PUNCT	.	_	6	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = （哥林多前書15章20-22，52-54）
+1	（	（	PUNCT	(	_	9	punct	_	SpaceAfter=No
+2	哥林	哥林	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
+3	多	多	PROPN	NNP	_	5	compound	_	SpaceAfter=No
+4	前	前	NOUN	NN	_	5	compound	_	SpaceAfter=No
+5	書	書	PART	SFN	_	9	nmod	_	SpaceAfter=No
+6	15章	15章	PROPN	NN	_	9	nmod	_	SpaceAfter=No
+7	20	20	NUM	CD	NumType=Card	9	nummod	_	SpaceAfter=No
+8	-	-	PUNCT	HYPH	_	9	punct	_	SpaceAfter=No
+9	22	22	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No
+10	，	，	PUNCT	,	_	13	punct	_	SpaceAfter=No
+11	52	52	NUM	CD	NumType=Card	13	nummod	_	SpaceAfter=No
+12	-	-	PUNCT	HYPH	_	13	punct	_	SpaceAfter=No
+13	54	54	NUM	CD	NumType=Card	9	conj	_	SpaceAfter=No
+14	）	）	PUNCT	)	_	13	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 升天
+1	升天	升天	VERB	VV	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3388,6 +3816,110 @@
 40	他	他	PRON	PRP	Person=3	41	nmod	_	SpaceAfter=No
 41	們	們	PRON	SFN	_	38	obj	_	SpaceAfter=No
 42	：	：	PUNCT	:	_	37	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 耶穌進前來，對他們說：「天上地下所有的權柄都賜給我了。
+1	耶	耶	PROPN	NNP	_	10	nsubj	_	SpaceAfter=No
+2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
+3	進	進	VERB	VV	_	5	advcl	_	SpaceAfter=No
+4	前	前	ADP	IN	_	3	mark	_	SpaceAfter=No
+5	來	來	VERB	VV	_	10	advcl	_	SpaceAfter=No
+6	，	，	PUNCT	,	_	10	punct	_	SpaceAfter=No
+7	對	對	ADP	IN	_	8	case	_	SpaceAfter=No
+8	他	他	PRON	PRP	Person=3	10	obl	_	SpaceAfter=No
+9	們	們	VERB	VV	_	10	advcl	_	SpaceAfter=No
+10	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+11	：	：	PUNCT	:	_	10	punct	_	SpaceAfter=No
+12	「	「	VERB	VV	_	19	advcl	_	SpaceAfter=No
+13	天上	天上	NOUN	NN	_	17	nmod	_	SpaceAfter=No
+14	地下	地下	NOUN	NN	_	17	nmod	_	SpaceAfter=No
+15	所有	所有	DET	DT	_	17	det	_	SpaceAfter=No
+16	的	的	PART	DEC	Case=Gen	15	case:dec	_	SpaceAfter=No
+17	權	權	NOUN	NN	_	19	nsubj	_	SpaceAfter=No
+18	柄都	柄都	NOUN	NN	_	19	nsubj	_	SpaceAfter=No
+19	賜	賜	VERB	VV	_	10	ccomp	_	SpaceAfter=No
+20	給	給	VERB	VV	_	19	mark	_	SpaceAfter=No
+21	我	我	PRON	PRP	Person=1	19	obj	_	SpaceAfter=No
+22	了	了	PART	UH	_	19	discourse	_	SpaceAfter=No
+23	。	。	PUNCT	.	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 所以，你們要去，使萬民作我的門徒，奉父、子、聖靈的名給他們施洗。
+1	所以	所以	ADV	RB	_	8	mark	_	SpaceAfter=No
+2	，	，	PUNCT	,	_	8	punct	_	SpaceAfter=No
+3	你	你	PRON	PRP	Person=2	8	nsubj	_	SpaceAfter=No
+4	們	們	ADV	RB	_	8	nsubj	_	SpaceAfter=No
+5	要	要	AUX	MD	_	8	aux	_	SpaceAfter=No
+6	去	去	VERB	VV	_	8	advcl	_	SpaceAfter=No
+7	，	，	PUNCT	,	_	8	punct	_	SpaceAfter=No
+8	使	使	VERB	VV	Voice=Cau	0	root	_	SpaceAfter=No
+9	萬	萬	PROPN	NNP	_	10	nsubj	_	SpaceAfter=No
+10	民作	民作	VERB	VV	_	8	ccomp	_	SpaceAfter=No
+11	我	我	PRON	PRP	Person=1	14	det	_	SpaceAfter=No
+12	的	的	PART	DEC	Case=Gen	11	case:dec	_	SpaceAfter=No
+13	門	門	NOUN	NN	_	14	compound	_	SpaceAfter=No
+14	徒	徒	PART	SFN	_	10	obj	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	8	punct	_	SpaceAfter=No
+16	奉父	奉父	VERB	VV	_	23	nmod	_	SpaceAfter=No
+17	、	、	PUNCT	EC	_	18	punct	_	SpaceAfter=No
+18	子	子	NOUN	NN	_	16	conj	_	SpaceAfter=No
+19	、	、	PUNCT	EC	_	21	punct	_	SpaceAfter=No
+20	聖	聖	NOUN	NN	_	21	compound	_	SpaceAfter=No
+21	靈	靈	NOUN	NN	_	16	conj	_	SpaceAfter=No
+22	的	的	PART	DEC	Case=Gen	16	case:dec	_	SpaceAfter=No
+23	名	名	NOUN	NN	_	24	nsubj	_	SpaceAfter=No
+24	給	給	VERB	VV	Voice=Cau	8	parataxis	_	SpaceAfter=No
+25	他	他	PRON	PRP	Person=3	27	nsubj	_	SpaceAfter=No
+26	們	們	ADV	RB	_	27	nsubj	_	SpaceAfter=No
+27	施洗	施洗	VERB	VV	_	24	ccomp	_	SpaceAfter=No
+28	。	。	PUNCT	.	_	8	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 凡我所吩咐你們的，都教訓他們遵守，我就常與你們同在，直到世界的末了。」（馬太福音28：18-20）
+1	凡	凡	ADV	RB	_	4	mark	_	SpaceAfter=No
+2	我	我	PRON	PRP	Person=1	4	nsubj	_	SpaceAfter=No
+3	所	所	ADV	RB	_	4	mark	_	SpaceAfter=No
+4	吩咐	吩咐	VERB	VV	_	11	advcl	_	SpaceAfter=No
+5	你	你	PRON	PRP	Person=2	6	nmod	_	SpaceAfter=No
+6	們	們	NOUN	SFN	_	4	obj	_	SpaceAfter=No
+7	的	的	PART	UH	_	4	discourse	_	SpaceAfter=No
+8	，	，	PUNCT	,	_	11	punct	_	SpaceAfter=No
+9	都	都	ADV	RB	_	11	mark	_	SpaceAfter=No
+10	教	教	VERB	VV	_	11	advcl	_	SpaceAfter=No
+11	訓	訓	VERB	VV	_	0	root	_	SpaceAfter=No
+12	他	他	PRON	PRP	Person=3	14	nsubj	_	SpaceAfter=No
+13	們	們	ADV	RB	_	14	nsubj	_	SpaceAfter=No
+14	遵守	遵守	VERB	VV	_	11	ccomp	_	SpaceAfter=No
+15	，	，	PUNCT	,	_	11	punct	_	SpaceAfter=No
+16	我	我	PRON	PRP	Person=1	21	nsubj	_	SpaceAfter=No
+17	就常	就常	ADV	RB	_	21	advmod	_	SpaceAfter=No
+18	與	與	ADP	IN	_	20	case	_	SpaceAfter=No
+19	你	你	PRON	PRP	Person=2	20	nmod	_	SpaceAfter=No
+20	們	們	NOUN	NN	_	21	obl	_	SpaceAfter=No
+21	同在	同在	VERB	VV	_	11	parataxis	_	SpaceAfter=No
+22	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+23	直到	直到	ADP	IN	_	26	case	_	SpaceAfter=No
+24	世界	世界	NOUN	NN	_	26	nmod	_	SpaceAfter=No
+25	的	的	PART	DEC	Case=Gen	24	case:dec	_	SpaceAfter=No
+26	末	末	NOUN	NN	_	29	obl	_	SpaceAfter=No
+27	了	了	PART	UH	_	26	discourse	_	SpaceAfter=No
+28	。	。	PUNCT	.	_	11	punct	_	SpaceAfter=No
+29	」	」	ADV	RB	_	11	parataxis	_	SpaceAfter=No
+30	（	（	PUNCT	(	_	35	punct	_	SpaceAfter=No
+31	馬	馬	PROPN	NNP	_	33	nmod	_	SpaceAfter=No
+32	太福	太福	PROPN	NNP	_	33	compound	_	SpaceAfter=No
+33	音	音	PART	SFN	_	29	nmod	_	SpaceAfter=No
+34	2	2	NUM	CD	NumType=Card	35	nummod	_	SpaceAfter=No
+35	8	8	NUM	CD	NumType=Card	33	appos	_	SpaceAfter=No
+36	：	：	PUNCT	:	_	37	punct	_	SpaceAfter=No
+37	18	18	NUM	CD	NumType=Card	35	nummod	_	SpaceAfter=No
+38	-20	-20	NUM	CD	NumType=Card	35	nummod	_	SpaceAfter=No
+39	）	）	PUNCT	)	_	38	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3866,13 +4398,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 末日再来[编辑]
-1	末	末	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	日	日	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-3	再来	再来	VERB	VV	_	0	root	_	SpaceAfter=No
-4	[	[	PART	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	3	parataxis	_	SpaceAfter=No
-6	]	]	PART	SFN	_	3	punct	_	SpacesAfter=\n
+# text = 末日再来
+1	末	末	ADP	NN	_	2	nmod	_	SpaceAfter=No
+2	日	日	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
+3	再	再	ADV	RB	_	4	advmod	_	SpaceAfter=No
+4	来	来	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -3980,14 +4510,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 耶穌的家谱[编辑]
+# text = 耶穌的家谱
 1	耶	耶	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
 2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
 3	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
-4	家谱	家谱	NOUN	NN	_	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	6	punct	_	SpacesAfter=\n
+4	家谱	家谱	NOUN	NN	_	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4331,12 +4858,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 诞生年份[编辑]
+# text = 诞生年份
 1	诞生	诞生	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	年份	年份	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	CC	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	4	punct	_	SpacesAfter=\n
+2	年份	年份	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4455,21 +4979,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 公曆以耶穌的出生為參照[註 5]。
+# text = 公曆以耶穌的出生為參照。
 1	公	公	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	曆	曆	PART	SFN	_	9	nsubj	_	SpaceAfter=No
-3	以耶	以耶	PROPN	NNP	_	6	nmod	_	SpaceAfter=No
-4	穌	穌	PROPN	NNP	_	6	nmod	_	SpaceAfter=No
-5	的	的	PART	DEC	Case=Gen	4	case:dec	_	SpaceAfter=No
-6	出生	出生	NOUN	NN	_	9	nsubj	_	SpaceAfter=No
-7	為	為	VERB	VV	_	9	advcl	_	SpaceAfter=No
-8	參	參	NOUN	NN	_	7	obj	_	SpaceAfter=No
-9	照	照	VERB	VV	_	0	root	_	SpaceAfter=No
-10	[	[	PUNCT	(	_	9	punct	_	SpaceAfter=No
-11	註	註	PROPN	NNP	_	9	obj	_	_
-12	5	5	NUM	CD	NumType=Card	13	nummod	_	SpaceAfter=No
-13	]	]	NOUN	NN	_	11	appos	_	SpaceAfter=No
-14	。	。	PUNCT	.	_	9	punct	_	SpaceAfter=No
+2	曆	曆	PART	SFN	_	3	nsubj	_	SpaceAfter=No
+3	以	以	VERB	VV	Voice=Cau	0	root	_	SpaceAfter=No
+4	耶	耶	PROPN	NNP	_	7	nmod	_	SpaceAfter=No
+5	穌	穌	PROPN	NNP	_	4	flat:name	_	SpaceAfter=No
+6	的	的	PART	DEC	Case=Gen	4	case:dec	_	SpaceAfter=No
+7	出生	出生	NOUN	NN	_	8	nsubj	_	SpaceAfter=No
+8	為	為	VERB	VC	_	10	ccomp	_	SpaceAfter=No
+9	參	參	VERB	VV	_	10	compound	_	SpaceAfter=No
+10	照	照	VERB	VV	_	3	ccomp	_	SpaceAfter=No
+11	。	。	PUNCT	.	_	3	punct	_	SpaceAfter=No
 
 # sent_id = 2
 # text = 6世紀時，東羅馬帝國為了修訂曆法，以替代非常混亂的羅馬曆法，就請當時精通天文的僧侶建議一個更合理的紀年標準。
@@ -4641,15 +5162,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 屠殺嬰兒前[编辑]
-1	屠	屠	VERB	VV	_	4	amod	_	SpaceAfter=No
-2	殺	殺	PROPN	NNP	_	1	obj	_	SpaceAfter=No
-3	嬰	嬰	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	兒	兒	PART	SFN	_	7	nsubj	_	SpaceAfter=No
-5	前	前	ADP	IN	_	4	acl	_	SpaceAfter=No
-6	[	[	VERB	VV	_	7	cop	_	SpaceAfter=No
-7	编辑	编辑	NOUN	NN	_	0	root	_	SpaceAfter=No
-8	]	]	PART	SFN	_	7	punct	_	SpacesAfter=\n
+# text = 屠殺嬰兒前
+1	屠	屠	VERB	VV	_	0	root	_	SpaceAfter=No
+2	殺	殺	VERB	VV	_	1	mark	_	SpaceAfter=No
+3	嬰	嬰	PART	VV	_	4	amod	_	SpaceAfter=No
+4	兒	兒	NOUN	NN	_	1	obj	_	SpaceAfter=No
+5	前	前	ADP	IN	_	1	mark	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4726,13 +5244,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 人口普查時[编辑]
-1	人口	人口	NOUN	NN	_	3	nmod	_	SpaceAfter=No
-2	普查	普查	NOUN	NN	_	3	compound	_	SpaceAfter=No
-3	時	時	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	PUNCT	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	NOUN	NN	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
+# text = 人口普查時
+1	人口	人口	NOUN	NN	_	2	nmod	_	SpaceAfter=No
+2	普查	普查	NOUN	NN	_	0	root	_	SpaceAfter=No
+3	時	時	ADP	IN	_	2	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -4989,16 +5504,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 史學中的耶穌[编辑]
+# text = 史學中的耶穌
 1	史	史	NOUN	NN	_	2	compound	_	SpaceAfter=No
 2	學	學	PART	SFN	_	5	nmod	_	SpaceAfter=No
 3	中	中	ADP	IN	_	2	acl	_	SpaceAfter=No
 4	的	的	PART	DEC	Case=Gen	2	case:dec	_	SpaceAfter=No
-5	耶	耶	PROPN	NNP	_	8	nsubj	_	SpaceAfter=No
+5	耶	耶	PROPN	NNP	_	0	root	_	SpaceAfter=No
 6	穌	穌	PROPN	NNP	_	5	flat:name	_	SpaceAfter=No
-7	[	[	VERB	VV	_	8	mark	_	SpaceAfter=No
-8	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-9	]	]	PART	SFN	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5173,14 +5685,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 旁證資料[编辑]
-1	旁	旁	NOUN	NN	_	4	nmod	_	SpaceAfter=No
-2	證	證	VERB	VV	_	4	nmod	_	SpaceAfter=No
-3	資	資	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	料	料	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	CC	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 旁證資料
+1	旁	旁	NOUN	NN	_	3	nmod	_	SpaceAfter=No
+2	證	證	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
+3	資料	資料	NOUN	NN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5188,14 +5696,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 謝拉皮翁家書[编辑]
-1	謝	謝	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-2	拉皮翁	拉皮翁	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	家	家	PART	SFN	_	4	nmod	_	SpaceAfter=No
-4	書	書	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 謝拉皮翁家書
+1	謝	謝	PROPN	NNP	_	0	root	_	SpaceAfter=No
+2	拉皮翁	拉皮翁	PROPN	NNP	_	3	compound	_	SpaceAfter=No
+3	家	家	PART	SFN	_	4	compound	_	SpaceAfter=No
+4	書	書	NOUN	NN	_	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5529,13 +6034,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 猶太古史[编辑]
+# text = 猶太古史
 1	猶	猶	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
 2	太古	太古	PROPN	NNP	_	3	compound	_	SpaceAfter=No
-3	史	史	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	CCONJ	CC	_	5	cc	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+3	史	史	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -5996,11 +6498,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 书信[编辑]
-1	书信	书信	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PART	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	1	punct	_	SpacesAfter=\n
+# text = 书信
+1	书信	书信	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6119,12 +6618,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 編年史[编辑]
+# text = 編年史
 1	編	編	PART	PFA	_	2	case:pref	_	SpaceAfter=No
-2	年史	年史	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	2	appos	_	SpaceAfter=No
-5	]	]	PART	SFN	_	2	appos	_	SpacesAfter=\n
+2	年史	年史	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6345,15 +6841,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 羅馬十二帝王傳[编辑]
+# text = 羅馬十二帝王傳
 1	羅	羅	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
-2	馬	馬	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
+2	馬	馬	PROPN	NNP	_	5	compound	_	SpaceAfter=No
 3	十二	十二	NUM	CD	NumType=Card	4	nummod	_	SpaceAfter=No
 4	帝王	帝王	NOUN	NN	_	5	compound	_	SpaceAfter=No
 5	傳	傳	PART	SFN	_	0	root	_	SpaceAfter=No
-6	[	[	PUNCT	(	_	7	punct	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	5	appos	_	SpaceAfter=No
-8	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6465,11 +6958,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 塔木德[编辑]
-1	塔木德	塔木德	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	)	_	3	punct	_	SpacesAfter=\n
+# text = 塔木德
+1	塔木德	塔木德	PROPN	NNP	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -6672,14 +7162,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 學界態度[编辑]
+# text = 學界態度
 1	學	學	NOUN	NN	_	2	compound	_	SpaceAfter=No
-2	界	界	PART	SFN	_	4	nmod	_	SpaceAfter=No
-3	態	態	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	度	度	PART	SFN	_	6	nsubj	_	SpaceAfter=No
-5	[	[	CCONJ	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	6	punct	_	SpacesAfter=\n
+2	界	界	PART	SFN	_	3	nmod	_	SpaceAfter=No
+3	態度	態度	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7105,13 +7591,344 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 耶穌之墓[编辑]
-1	耶	耶	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
+# text = 耶穌之墓
+1	耶	耶	PROPN	NNP	_	0	root	_	SpaceAfter=No
 2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	之墓	之墓	NOUN	NN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	VERB	(	_	5	det	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+3	之墓	之墓	NOUN	NN	_	1	acl	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 耶路撒冷的圣墓教堂传统上被认为是耶稣被钉死、入葬的地方。
+1	耶路撒冷	耶路撒冷	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
+2	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
+3	圣墓	圣墓	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
+4	教堂	教堂	NOUN	NN	_	5	nmod	_	SpaceAfter=No
+5	传统	传统	NOUN	NN	_	8	advmod	_	SpaceAfter=No
+6	上	上	ADP	IN	_	5	acl	_	SpaceAfter=No
+7	被	被	VERB	BB	Voice=Pass	8	aux:pass	_	SpaceAfter=No
+8	认为	认为	VERB	VV	_	0	root	_	SpaceAfter=No
+9	是	是	AUX	VC	_	16	cop	_	SpaceAfter=No
+10	耶稣	耶稣	PROPN	NNP	_	12	nsubj:pass	_	SpaceAfter=No
+11	被	被	VERB	BB	Voice=Pass	12	aux:pass	_	SpaceAfter=No
+12	钉死	钉死	VERB	VV	_	16	acl:relcl	_	SpaceAfter=No
+13	、	、	PUNCT	EC	_	14	punct	_	SpaceAfter=No
+14	入葬	入葬	VERB	VV	_	12	conj	_	SpaceAfter=No
+15	的	的	PART	DEC	_	12	mark:relcl	_	SpaceAfter=No
+16	地方	地方	NOUN	NN	_	8	xcomp	_	SpaceAfter=No
+17	。	。	PUNCT	.	_	8	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 耶路撒冷的花園墓地、陶比奧古墓（英语：Talpiot Tomb）、克什米尔的Roza Bal（英语：Roza Bal）、日本新郷村也有耶穌之墓的传说。
+1	耶路撒冷	耶路撒冷	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
+2	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
+3	花	花	VERB	VV	_	4	compound	_	SpaceAfter=No
+4	園	園	PART	SFN	_	5	nmod	_	SpaceAfter=No
+5	墓地	墓地	NOUN	NN	_	36	nsubj	_	SpaceAfter=No
+6	、	、	PUNCT	EC	_	10	punct	_	SpaceAfter=No
+7	陶比	陶比	PROPN	NNP	_	8	compound	_	SpaceAfter=No
+8	奧	奧	PROPN	NNP	_	10	nmod	_	SpaceAfter=No
+9	古	古	PART	PFA	_	10	case:pref	_	SpaceAfter=No
+10	墓	墓	PART	SFN	_	5	conj	_	SpaceAfter=No
+11	（	（	PUNCT	(	_	15	punct	_	SpaceAfter=No
+12	英	英	PROPN	NNP	_	13	compound	_	SpaceAfter=No
+13	语	语	PART	SFN	_	15	advcl	_	SpaceAfter=No
+14	：	：	PUNCT	:	_	15	punct	_	SpaceAfter=No
+15	Talpiot	Talpiot	X	FW	_	10	appos	_	_
+16	Tomb	Tomb	X	FW	_	15	flat:foreign	_	SpaceAfter=No
+17	）	）	PUNCT	)	_	15	punct	_	SpaceAfter=No
+18	、	、	PUNCT	EC	_	21	punct	_	SpaceAfter=No
+19	克什米尔	克什米尔	PROPN	NNP	_	21	nmod	_	SpaceAfter=No
+20	的	的	PART	DEC	Case=Gen	19	case:dec	_	SpaceAfter=No
+21	Roza	Roza	X	FW	_	5	conj	_	_
+22	Bal	Bal	X	FW	_	21	flat:foreign	_	SpaceAfter=No
+23	（	（	PUNCT	(	_	27	punct	_	SpaceAfter=No
+24	英	英	PROPN	NNP	_	25	compound	_	SpaceAfter=No
+25	语	语	PART	SFN	_	27	nmod	_	SpaceAfter=No
+26	：	：	PUNCT	:	_	27	punct	_	SpaceAfter=No
+27	Roza	Roza	X	FW	_	21	appos	_	_
+28	Bal	Bal	X	FW	_	27	flat:foreign	_	SpaceAfter=No
+29	）	）	PUNCT	)	_	27	punct	_	SpaceAfter=No
+30	、	、	PUNCT	EC	_	34	punct	_	SpaceAfter=No
+31	日本	日本	PROPN	NNP	_	34	nmod	_	SpaceAfter=No
+32	新	新	PART	PFA	_	33	case:pref	_	SpaceAfter=No
+33	郷	郷	PROPN	NNP	_	34	compound	_	SpaceAfter=No
+34	村	村	PART	SFN	_	5	conj	_	SpaceAfter=No
+35	也	也	ADV	RB	_	36	mark	_	SpaceAfter=No
+36	有耶	有耶	VERB	VV	_	0	root	_	SpaceAfter=No
+37	穌	穌	PROPN	NNP	_	39	nmod	_	SpaceAfter=No
+38	之	之	PART	DEC	Case=Gen	37	case:dec	_	SpaceAfter=No
+39	墓	墓	NOUN	NN	_	41	nmod	_	SpaceAfter=No
+40	的	的	PART	DEC	Case=Gen	39	case:dec	_	SpaceAfter=No
+41	传说	传说	NOUN	NN	_	36	obj	_	SpaceAfter=No
+42	。	。	PUNCT	.	_	36	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 纪录片The Lost Tomb of Jesus（英语：The Lost Tomb of Jesus）的导演辛卡‧傑科波維奇（英语：Simcha Jacobovici）及其宗教顾问James Tabor（英语：James Tabor）認為陶比奧古墓是耶穌及其家族之墓，著有耶穌家族之墓一書，但是被考古学界质疑。
+1	纪录	纪录	VERB	VV	_	2	compound	_	SpaceAfter=No
+2	片	片	PART	SFN	_	19	nmod	_	SpaceAfter=No
+3	The	The	X	FW	_	19	nmod	_	_
+4	Lost	Lost	X	FW	_	3	flat:foreign	_	_
+5	Tomb	Tomb	X	FW	_	3	flat:foreign	_	_
+6	of	of	X	FW	_	3	flat:foreign	_	_
+7	Jesus	Jesus	X	FW	_	3	flat:foreign	_	SpaceAfter=No
+8	（	（	PUNCT	(	_	12	punct	_	SpaceAfter=No
+9	英	英	PROPN	NNP	_	10	compound	_	SpaceAfter=No
+10	语	语	PART	SFN	_	12	advcl	_	SpaceAfter=No
+11	：	：	PUNCT	:	_	12	punct	_	SpaceAfter=No
+12	The	The	X	FW	_	3	appos	_	_
+13	Lost	Lost	X	FW	_	12	flat:foreign	_	_
+14	Tomb	Tomb	X	FW	_	12	flat:foreign	_	_
+15	of	of	X	FW	_	12	flat:foreign	_	_
+16	Jesus	Jesus	X	FW	_	12	flat:foreign	_	SpaceAfter=No
+17	）	）	PUNCT	)	_	12	punct	_	SpaceAfter=No
+18	的	的	PART	DEC	Case=Gen	3	case:dec	_	SpaceAfter=No
+19	导演	导演	NOUN	NN	_	0	root	_	SpaceAfter=No
+20	辛卡	辛卡	PROPN	NNP	_	19	appos	_	SpaceAfter=No
+21	‧	‧	PUNCT	/	_	3	punct	_	SpaceAfter=No
+22	傑	傑	PROPN	NNP	_	20	flat:name	_	SpaceAfter=No
+23	科波	科波	PROPN	NNP	_	19	appos	_	SpaceAfter=No
+24	維	維	PROPN	NNP	_	3	flat:name	_	SpaceAfter=No
+25	奇	奇	PROPN	NNP	_	19	appos	_	SpaceAfter=No
+26	（	（	PUNCT	(	_	30	punct	_	SpaceAfter=No
+27	英	英	PROPN	NNP	_	28	compound	_	SpaceAfter=No
+28	语	语	PART	SFN	_	30	advcl	_	SpaceAfter=No
+29	：	：	PUNCT	:	_	30	punct	_	SpaceAfter=No
+30	Simcha	Simcha	X	FW	_	25	appos	_	_
+31	Jacobovici	Jacobovici	X	FW	_	30	flat:foreign	_	SpaceAfter=No
+32	）	）	PUNCT	)	_	30	punct	_	SpaceAfter=No
+33	及	及	CCONJ	CC	_	36	cc	_	SpaceAfter=No
+34	其	其	PRON	PRP	Person=3	36	nmod	_	SpaceAfter=No
+35	宗教	宗教	NOUN	NN	_	36	nmod	_	SpaceAfter=No
+36	顾问	顾问	NOUN	NN	_	25	conj	_	SpaceAfter=No
+37	James	James	X	FW	_	36	appos	_	_
+38	Tabor	Tabor	X	FW	_	37	flat:foreign	_	SpaceAfter=No
+39	（	（	PUNCT	(	_	43	punct	_	SpaceAfter=No
+40	英	英	PROPN	NNP	_	41	compound	_	SpaceAfter=No
+41	语	语	PART	SFN	_	43	nmod	_	SpaceAfter=No
+42	：	：	PUNCT	:	_	43	punct	_	SpaceAfter=No
+43	James	James	X	FW	_	37	appos	_	_
+44	Tabor	Tabor	X	FW	_	43	flat:foreign	_	SpaceAfter=No
+45	）	）	PUNCT	)	_	43	punct	_	SpaceAfter=No
+46	認	認	VERB	VV	_	72	advcl	_	SpaceAfter=No
+47	為	為	VERB	VV	_	46	xcomp	_	SpaceAfter=No
+48	陶比	陶比	PROPN	NNP	_	49	compound	_	SpaceAfter=No
+49	奧	奧	PART	SFN	_	51	nmod	_	SpaceAfter=No
+50	古	古	PART	PFA	_	51	case:pref	_	SpaceAfter=No
+51	墓	墓	PART	SFN	_	60	nsubj	_	SpaceAfter=No
+52	是	是	AUX	VC	_	53	cop	_	SpaceAfter=No
+53	耶	耶	PROPN	NNP	_	60	nsubj	_	SpaceAfter=No
+54	穌	穌	PROPN	NNP	_	53	flat:name	_	SpaceAfter=No
+55	及	及	CCONJ	CC	_	57	cc	_	SpaceAfter=No
+56	其	其	PRON	PRP	Person=3	57	nmod	_	SpaceAfter=No
+57	家族	家族	NOUN	NN	_	53	conj	_	SpaceAfter=No
+58	之墓	之墓	ADP	NN	_	53	acl	_	SpaceAfter=No
+59	，	，	PUNCT	,	_	72	punct	_	SpaceAfter=No
+60	著有	著有	VERB	VV	_	72	advcl	_	SpaceAfter=No
+61	耶	耶	PROPN	NNP	_	63	nmod	_	SpaceAfter=No
+62	穌	穌	PROPN	NNP	_	63	nmod	_	SpaceAfter=No
+63	家族	家族	NOUN	NN	_	66	nmod	_	SpaceAfter=No
+64	之墓	之墓	NOUN	NN	_	66	nmod	_	SpaceAfter=No
+65	一	一	NUM	CD	NumType=Card	66	nummod	_	SpaceAfter=No
+66	書	書	NOUN	NN	_	60	obj	_	SpaceAfter=No
+67	，	，	PUNCT	,	_	72	punct	_	SpaceAfter=No
+68	但是	但是	ADV	RB	_	72	mark	_	SpaceAfter=No
+69	被	被	VERB	BB	Voice=Pass	72	aux:pass	_	SpaceAfter=No
+70	考古	考古	NOUN	NN	_	71	nmod	_	SpaceAfter=No
+71	学界	学界	NOUN	NN	_	72	nsubj	_	SpaceAfter=No
+72	质疑	质疑	VERB	VV	_	19	dislocated	_	SpaceAfter=No
+73	。	。	PUNCT	.	_	19	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = 2015年在動用過廣泛的化學檢測法之後，並與詹姆士骨棺（英语：James Ossuary）作比對，以色列地質學家席姆倫（Arye Shimron）表示，他已肯定發現於1980年的陶比奧古墓屬於耶穌、他的兒子及親屬。
+1	2015	2015	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	年	年	NOUN	NNB	_	28	nmod:tmod	_	SpaceAfter=No
+3	在	在	ADP	IN	_	15	case	_	SpaceAfter=No
+4	動	動	ADV	RB	_	5	advmod	_	SpaceAfter=No
+5	用	用	VERB	VV	_	15	acl:relcl	_	SpaceAfter=No
+6	過	過	PART	AS	Aspect=Perf	5	case:aspect	_	SpaceAfter=No
+7	廣泛	廣泛	ADJ	JJ	_	13	amod	_	SpaceAfter=No
+8	的	的	PART	DEC	_	7	mark:relcl	_	SpaceAfter=No
+9	化	化	PART	VV	_	13	compound	_	SpaceAfter=No
+10	學	學	NOUN	NN	_	5	obj	_	SpaceAfter=No
+11	檢	檢	NOUN	NN	_	12	compound	_	SpaceAfter=No
+12	測	測	VERB	VV	_	13	compound	_	SpaceAfter=No
+13	法	法	PART	SFN	_	5	obj	_	SpaceAfter=No
+14	之	之	PART	DEC	_	5	mark:relcl	_	SpaceAfter=No
+15	後	後	NOUN	NN	_	28	obl	_	SpaceAfter=No
+16	，	，	PUNCT	,	_	28	punct	_	SpaceAfter=No
+17	並	並	ADV	RB	_	28	mark	_	SpaceAfter=No
+18	與	與	ADP	IN	_	20	case	_	SpaceAfter=No
+19	詹姆士骨	詹姆士骨	PROPN	NNP	_	20	compound	_	SpaceAfter=No
+20	棺	棺	PART	SFN	_	28	obl	_	SpaceAfter=No
+21	（	（	PUNCT	(	_	25	punct	_	SpaceAfter=No
+22	英	英	PROPN	NNP	_	23	compound	_	SpaceAfter=No
+23	语	语	PART	SFN	_	25	advcl	_	SpaceAfter=No
+24	：	：	PUNCT	:	_	25	punct	_	SpaceAfter=No
+25	James	James	X	FW	_	20	appos	_	_
+26	Ossuary	Ossuary	X	FW	_	25	flat:foreign	_	SpaceAfter=No
+27	）	）	PUNCT	)	_	25	punct	_	SpaceAfter=No
+28	作比	作比	VERB	VV	_	42	advcl	_	SpaceAfter=No
+29	對	對	NOUN	NN	_	28	obj	_	SpaceAfter=No
+30	，	，	PUNCT	,	_	42	punct	_	SpaceAfter=No
+31	以色列	以色列	PROPN	NNP	_	32	compound	_	SpaceAfter=No
+32	地	地	PART	SFN	_	35	nmod	_	SpaceAfter=No
+33	質	質	VERB	VV	_	34	compound	_	SpaceAfter=No
+34	學	學	PART	SFN	_	35	nmod	_	SpaceAfter=No
+35	家席	家席	NOUN	NN	_	42	nsubj	_	SpaceAfter=No
+36	姆	姆	PROPN	NNP	_	35	appos	_	SpaceAfter=No
+37	倫	倫	PROPN	NNP	_	36	flat:name	_	SpaceAfter=No
+38	（	（	PUNCT	(	_	39	punct	_	SpaceAfter=No
+39	Arye	Arye	X	FW	_	36	appos	_	_
+40	Shimron	Shimron	X	FW	_	39	flat:foreign	_	SpaceAfter=No
+41	）	）	PUNCT	)	_	39	punct	_	SpaceAfter=No
+42	表示	表示	VERB	VV	_	0	root	_	SpaceAfter=No
+43	，	，	PUNCT	,	_	42	punct	_	SpaceAfter=No
+44	他	他	PRON	PRP	Person=3	46	nsubj	_	SpaceAfter=No
+45	已	已	ADV	RB	_	46	advmod	_	SpaceAfter=No
+46	肯定	肯定	VERB	VV	_	42	ccomp	_	SpaceAfter=No
+47	發	發	VERB	VV	_	46	xcomp	_	SpaceAfter=No
+48	現	現	VERB	VV	_	56	acl:relcl	_	SpaceAfter=No
+49	於	於	ADP	IN	_	51	case	_	SpaceAfter=No
+50	1980	1980	NUM	CD	NumType=Card	51	nummod	_	SpaceAfter=No
+51	年	年	NOUN	NNB	_	48	obl	_	SpaceAfter=No
+52	的	的	PART	DEC	_	48	mark:relcl	_	SpaceAfter=No
+53	陶比	陶比	PROPN	NNP	_	54	compound	_	SpaceAfter=No
+54	奧	奧	PART	SFN	_	56	nmod	_	SpaceAfter=No
+55	古	古	PART	PFA	_	56	case:pref	_	SpaceAfter=No
+56	墓	墓	PART	SFN	_	57	nsubj	_	SpaceAfter=No
+57	屬	屬	VERB	VV	_	46	xcomp	_	SpaceAfter=No
+58	於	於	VERB	VV	_	57	mark	_	SpaceAfter=No
+59	耶	耶	PROPN	NNP	_	57	obj	_	SpaceAfter=No
+60	穌	穌	PROPN	NNP	_	59	flat:name	_	SpaceAfter=No
+61	、	、	PUNCT	EC	_	65	punct	_	SpaceAfter=No
+62	他	他	PRON	PRP	Person=3	65	det	_	SpaceAfter=No
+63	的	的	PART	DEC	Case=Gen	62	case:dec	_	SpaceAfter=No
+64	兒	兒	NOUN	NN	_	65	compound	_	SpaceAfter=No
+65	子	子	PART	SFN	_	59	conj	_	SpaceAfter=No
+66	及	及	CCONJ	CC	_	68	cc	_	SpaceAfter=No
+67	親	親	VERB	VV	_	68	compound	_	SpaceAfter=No
+68	屬	屬	PART	SFN	_	59	conj	_	SpaceAfter=No
+69	。	。	PUNCT	.	_	42	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = 這項研究認定耶穌有結婚、生了孩子，而且肉身復活並沒發生。
+1	這	這	DET	DT	_	2	det	_	SpaceAfter=No
+2	項	項	NOUN	NNB	_	3	clf	_	SpaceAfter=No
+3	研究	研究	NOUN	NN	_	4	nsubj	_	SpaceAfter=No
+4	認	認	VERB	VV	_	0	root	_	SpaceAfter=No
+5	定耶	定耶	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
+6	穌	穌	PROPN	NNP	_	7	nsubj	_	SpaceAfter=No
+7	有	有	VERB	VV	_	4	ccomp	_	SpaceAfter=No
+8	結	結	VERB	VV	_	9	compound	_	SpaceAfter=No
+9	婚	婚	PART	SFN	_	7	obj	_	SpaceAfter=No
+10	、	、	PUNCT	EC	_	11	punct	_	SpaceAfter=No
+11	生	生	VERB	VV	_	7	conj	_	SpaceAfter=No
+12	了	了	PART	AS	Aspect=Perf	11	case:aspect	_	SpaceAfter=No
+13	孩子	孩子	NOUN	NN	_	11	obj	_	SpaceAfter=No
+14	，	，	PUNCT	,	_	21	punct	_	SpaceAfter=No
+15	而且	而且	ADV	RB	_	21	mark	_	SpaceAfter=No
+16	肉身	肉身	NOUN	NN	_	18	nsubj	_	SpaceAfter=No
+17	復	復	VERB	VV	_	18	advcl	_	SpaceAfter=No
+18	活	活	NOUN	NN	_	21	nsubj	_	SpaceAfter=No
+19	並	並	ADV	RB	_	21	mark	_	SpaceAfter=No
+20	沒	沒	ADV	RB	Polarity=Neg	21	advmod	_	SpaceAfter=No
+21	發	發	VERB	VV	_	4	ccomp	_	SpaceAfter=No
+22	生	生	NOUN	NN	_	21	obj	_	SpaceAfter=No
+23	。	。	PUNCT	.	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = 但也有一些學者持反對意見，認為當時猶太人沒有姓，同名的極多，而且無論是陶比奧古墓中的骨棺還是詹姆士骨棺，其上都有不準確因素，例如：“耶穌的骨棺”上面的名字也可以拼做其他名字，而詹姆士骨棺上有明顯篡改過的痕跡。
+1	但	但	ADV	RB	_	3	mark	_	SpaceAfter=No
+2	也	也	ADV	RB	_	3	mark	_	SpaceAfter=No
+3	有	有	VERB	VV	_	0	root	_	SpaceAfter=No
+4	一些	一些	ADJ	JJ	_	6	amod	_	SpaceAfter=No
+5	學	學	NOUN	NN	_	6	compound	_	SpaceAfter=No
+6	者	者	PART	SFN	_	11	nsubj	_	SpaceAfter=No
+7	持反對	持反對	VERB	VV	_	3	advcl	_	SpaceAfter=No
+8	意	意	NOUN	NN	_	9	compound	_	SpaceAfter=No
+9	見	見	VERB	VV	_	7	obj	_	SpaceAfter=No
+10	，	，	PUNCT	,	_	3	punct	_	SpaceAfter=No
+11	認	認	VERB	VV	_	3	ccomp	_	SpaceAfter=No
+12	為	為	VERB	VV	_	11	mark	_	SpaceAfter=No
+13	當	當	DET	NN	_	14	nmod	_	SpaceAfter=No
+14	時	時	NOUN	NN	_	31	nmod	_	SpaceAfter=No
+15	猶	猶	PROPN	NNP	_	16	nmod	_	SpaceAfter=No
+16	太人	太人	NOUN	NN	_	18	nsubj	_	SpaceAfter=No
+17	沒	沒	ADV	RB	_	18	advmod	_	SpaceAfter=No
+18	有姓	有姓	VERB	VV	_	23	advcl	_	SpaceAfter=No
+19	，	，	PUNCT	,	_	23	punct	_	SpaceAfter=No
+20	同名	同名	NOUN	NN	_	23	nsubj	_	SpaceAfter=No
+21	的	的	PART	DEC	_	20	case:dec	_	SpaceAfter=No
+22	極	極	ADV	RB	_	23	advmod	_	SpaceAfter=No
+23	多	多	ADJ	JJ	_	11	ccomp	_	SpaceAfter=No
+24	，	，	PUNCT	,	_	3	punct	_	SpaceAfter=No
+25	而且	而且	ADV	RB	_	43	mark	_	SpaceAfter=No
+26	無	無	ADV	RB	_	28	advmod	_	SpaceAfter=No
+27	論	論	NOUN	NN	_	43	nsubj	_	SpaceAfter=No
+28	是	是	VERB	VC	_	3	parataxis	_	SpaceAfter=No
+29	陶比	陶比	PROPN	NNP	_	30	compound	_	SpaceAfter=No
+30	奧	奧	PART	SFN	_	31	nmod	_	SpaceAfter=No
+31	古墓	古墓	NOUN	NN	_	35	nmod	_	SpaceAfter=No
+32	中	中	ADP	IN	_	31	acl	_	SpaceAfter=No
+33	的	的	PART	DEC	Case=Gen	31	case:dec	_	SpaceAfter=No
+34	骨	骨	NOUN	NN	_	35	compound	_	SpaceAfter=No
+35	棺	棺	PART	SFN	_	39	nsubj	_	SpaceAfter=No
+36	還	還	ADV	RB	_	39	mark	_	SpaceAfter=No
+37	是	是	AUX	VC	_	39	cop	_	SpaceAfter=No
+38	詹姆士骨	詹姆士骨	PROPN	NNP	_	39	compound	_	SpaceAfter=No
+39	棺	棺	PART	SFN	_	28	ccomp	_	SpaceAfter=No
+40	，	，	PUNCT	,	_	3	punct	_	SpaceAfter=No
+41	其上	其上	NOUN	NN	_	43	nsubj	_	SpaceAfter=No
+42	都	都	ADV	RB	_	43	mark	_	SpaceAfter=No
+43	有	有	VERB	VV	_	3	parataxis	_	SpaceAfter=No
+44	不準	不準	ADJ	JJ	_	45	compound	_	SpaceAfter=No
+45	確	確	PART	SFN	_	46	amod	_	SpaceAfter=No
+46	因素	因素	NOUN	NN	_	43	obj	_	SpaceAfter=No
+47	，	，	PUNCT	,	_	43	punct	_	SpaceAfter=No
+48	例如	例如	VERB	VV	_	3	parataxis	_	SpaceAfter=No
+49	：	：	PUNCT	:	_	48	punct	_	SpaceAfter=No
+50	“	“	PUNCT	``	_	55	punct	_	SpaceAfter=No
+51	耶	耶	PROPN	NNP	_	52	nmod	_	SpaceAfter=No
+52	穌	穌	PROPN	NNP	_	55	nmod	_	SpaceAfter=No
+53	的	的	PART	DEC	Case=Gen	52	case:dec	_	SpaceAfter=No
+54	骨	骨	NOUN	NN	_	55	compound	_	SpaceAfter=No
+55	棺	棺	PART	SFN	_	59	nmod	_	SpaceAfter=No
+56	”	”	PUNCT	''	_	55	punct	_	SpaceAfter=No
+57	上面	上面	NOUN	NN	_	55	appos	_	SpaceAfter=No
+58	的	的	PART	DEC	Case=Gen	55	case:dec	_	SpaceAfter=No
+59	名字	名字	NOUN	NN	_	62	nsubj	_	SpaceAfter=No
+60	也	也	ADV	RB	_	62	mark	_	SpaceAfter=No
+61	可以	可以	AUX	MD	_	62	aux	_	SpaceAfter=No
+62	拼做	拼做	VERB	VV	_	70	advcl	_	SpaceAfter=No
+63	其他	其他	DET	DT	_	64	det	_	SpaceAfter=No
+64	名字	名字	NOUN	NN	_	62	obj	_	SpaceAfter=No
+65	，	，	PUNCT	,	_	70	punct	_	SpaceAfter=No
+66	而	而	ADV	RB	_	70	mark	_	SpaceAfter=No
+67	詹姆士骨	詹姆士骨	PROPN	NNP	_	68	compound	_	SpaceAfter=No
+68	棺	棺	PART	SFN	_	70	nsubj	_	SpaceAfter=No
+69	上	上	ADP	IN	_	68	acl	_	SpaceAfter=No
+70	有明	有明	VERB	VV	_	3	parataxis	_	SpaceAfter=No
+71	顯	顯	ADV	RB	_	72	advmod	_	SpaceAfter=No
+72	篡改	篡改	VERB	VV	_	76	acl:relcl	_	SpaceAfter=No
+73	過	過	PART	VV	_	72	mark	_	SpaceAfter=No
+74	的	的	PART	DEC	_	72	mark:relcl	_	SpaceAfter=No
+75	痕	痕	NOUN	NN	_	76	compound	_	SpaceAfter=No
+76	跡	跡	PART	SFN	_	70	obj	_	SpaceAfter=No
+77	。	。	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = chinese-gsdsimp-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 背景研究
+1	背景	背景	NOUN	NN	_	2	obl	_	SpaceAfter=No
+2	研究	研究	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7272,7 +8089,7 @@
 22	。	。	PUNCT	.	_	3	punct	_	SpaceAfter=No
 
 # sent_id = 2
-# text = 耶穌其實亦是法利賽人的一份子[註 6]。
+# text = 耶穌其實亦是法利賽人的一份子。
 1	耶	耶	PROPN	NNP	_	11	nsubj	_	SpaceAfter=No
 2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
 3	其	其	PRON	PRP	Person=3	4	nmod	_	SpaceAfter=No
@@ -7284,11 +8101,7 @@
 9	的	的	PART	DEC	Case=Gen	8	case:dec	_	SpaceAfter=No
 10	一	一	NUM	CD	NumType=Card	11	nummod	_	SpaceAfter=No
 11	份子	份子	NOUN	NN	_	0	root	_	SpaceAfter=No
-12	[	[	PUNCT	(	_	15	punct	_	SpaceAfter=No
-13	註	註	PROPN	NNP	_	15	nmod	_	_
-14	6	6	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
-15	]	]	NOUN	NN	_	11	parataxis	_	SpaceAfter=No
-16	。	。	PUNCT	.	_	11	punct	_	SpaceAfter=No
+12	。	。	PUNCT	.	_	11	punct	_	SpaceAfter=No
 
 # sent_id = 3
 # text = 在耶穌時代，法利賽人的學說有兩個主流，分別是：希列派及煞買派。
@@ -7665,15 +8478,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 与其他宗教的关系[编辑]
+# text = 与其他宗教的关系
 1	与	与	ADP	IN	_	5	det	_	SpaceAfter=No
 2	其他	其他	DET	DT	_	3	det	_	SpaceAfter=No
 3	宗教	宗教	NOUN	NN	_	5	nmod	_	SpaceAfter=No
-4	的	的	PART	DEC	Case=Gen	3	case:dec	_	SpaceAfter=No
-5	关系	关系	NOUN	NN	_	7	obl	_	SpaceAfter=No
-6	[	[	PUNCT	(	_	7	punct	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-8	]	]	PART	SFN	_	7	punct	_	SpacesAfter=\n
+4	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
+5	关系	关系	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -7681,14 +8491,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 伊斯兰教中的耶稣[编辑]
+# text = 伊斯兰教中的耶稣
 1	伊斯兰	伊斯兰	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
 2	教中	教中	NOUN	NN	_	4	nmod	_	SpaceAfter=No
 3	的	的	PART	DEC	Case=Gen	2	case:dec	_	SpaceAfter=No
-4	耶稣	耶稣	PROPN	NNP	_	0	root	_	SpaceAfter=No
-5	[	[	CCONJ	CC	_	6	cc	_	SpaceAfter=No
-6	编辑	编辑	NOUN	NN	_	4	appos	_	SpaceAfter=No
-7	]	]	PART	SFN	_	6	punct	_	SpacesAfter=\n
+4	耶稣	耶稣	PROPN	NNP	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8211,14 +9018,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 耶穌與佛教[编辑]
-1	耶	耶	PROPN	NNP	_	6	nsubj	_	SpaceAfter=No
+# text = 耶穌與佛教
+1	耶	耶	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
 2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	與	與	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	佛教	佛教	PROPN	NNP	_	1	conj	_	SpaceAfter=No
-5	[	[	ADV	RB	_	6	mark	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-7	]	]	PART	SFN	_	6	punct	_	SpacesAfter=\n
+3	與	與	VERB	VV	_	0	root	_	SpaceAfter=No
+4	佛教	佛教	PROPN	NNP	_	3	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8226,13 +9030,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 水徒行紀[编辑]
-1	水	水	PROPN	NNP	_	5	nsubj	_	SpaceAfter=No
-2	徒行	徒行	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
+# text = 水徒行紀
+1	水	水	PROPN	NNP	_	0	root	_	SpaceAfter=No
+2	徒行	徒行	PROPN	NNP	_	3	flat:name	_	SpaceAfter=No
 3	紀	紀	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-4	[	[	PUNCT	(	_	5	punct	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8622,14 +9423,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 諾托維奇論[编辑]
+# text = 諾托維奇論
 1	諾	諾	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-2	托維	托維	PROPN	NNP	_	3	compound	_	SpaceAfter=No
-3	奇	奇	PART	NNP	_	4	compound	_	SpaceAfter=No
+2	托維	托維	PROPN	NNP	_	4	compound	_	SpaceAfter=No
+3	奇	奇	PROPN	NNP	_	4	compound	_	SpaceAfter=No
 4	論	論	PART	SFN	_	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	(	_	6	punct	_	SpaceAfter=No
-6	编辑	编辑	VERB	VV	_	4	appos	_	SpaceAfter=No
-7	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8732,13 +9530,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 移居印度說[编辑]
-1	移居	移居	VERB	VV	_	3	compound	_	SpaceAfter=No
+# text = 移居印度說
+1	移居	移居	VERB	VV	_	3	advcl	_	SpaceAfter=No
 2	印度	印度	PROPN	NNP	_	1	obj	_	SpaceAfter=No
-3	說	說	PART	SFN	_	5	nsubj	_	SpaceAfter=No
-4	[	[	VERB	(	_	5	cop	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SFN	_	5	punct	_	SpacesAfter=\n
+3	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -8833,15 +9628,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 耶穌與猶太教[编辑]
-1	耶	耶	PROPN	NNP	_	7	nsubj	_	SpaceAfter=No
+# text = 耶穌與猶太教
+1	耶	耶	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
 2	穌	穌	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-3	與	與	CCONJ	CC	_	5	cc	_	SpaceAfter=No
+3	與	與	VERB	VV	_	0	root	_	SpaceAfter=No
 4	猶	猶	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
-5	太教	太教	PROPN	NNP	_	1	conj	_	SpaceAfter=No
-6	[	[	ADV	(	_	7	mark	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-8	]	]	PART	SFN	_	7	obj	_	SpacesAfter=\n
+5	太教	太教	PROPN	NNP	_	3	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9012,15 +9804,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 犹太教經典記載[编辑]
+# text = 犹太教經典記載
 1	犹太	犹太	PROPN	NNP	_	2	compound	_	SpaceAfter=No
 2	教	教	PART	SFN	_	5	nmod	_	SpaceAfter=No
 3	經	經	NOUN	NN	_	5	nmod	_	SpaceAfter=No
 4	典記	典記	NOUN	NN	_	5	compound	_	SpaceAfter=No
-5	載	載	PART	SFN	_	0	root	_	SpaceAfter=No
-6	[	[	PUNCT	(	_	7	punct	_	SpaceAfter=No
-7	编辑	编辑	VERB	VV	_	5	appos	_	SpaceAfter=No
-8	]	]	PART	SFN	_	5	punct	_	SpacesAfter=\n
+5	載	載	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9374,12 +10163,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 神道教[编辑]
-1	神道	神道	NOUN	NN	_	2	compound	_	SpaceAfter=No
-2	教	教	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	CC	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+# text = 神道教
+1	神道	神道	PROPN	NNP	_	2	compound	_	SpaceAfter=No
+2	教	教	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9462,12 +10248,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 摩尼教[编辑]
+# text = 摩尼教
 1	摩尼	摩尼	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	教	教	PART	SFN	_	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	(	_	4	cc	_	SpaceAfter=No
-4	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+2	教	教	PART	SFN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9575,13 +10358,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 耶稣与道教[编辑]
-1	耶稣	耶稣	PROPN	NNP	_	5	nsubj	_	SpaceAfter=No
+# text = 耶稣与道教
+1	耶稣	耶稣	PROPN	NNP	_	0	root	_	SpaceAfter=No
 2	与	与	CCONJ	CC	_	3	cc	_	SpaceAfter=No
 3	道教	道教	PROPN	NNP	_	1	conj	_	SpaceAfter=No
-4	[	[	VERB	VV	_	5	mark	_	SpaceAfter=No
-5	编辑	编辑	VERB	VV	_	0	root	_	SpaceAfter=No
-6	]	]	PART	SFN	_	5	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9622,17 +10402,137 @@
 30	”	”	PUNCT	''	_	28	punct	_	SpaceAfter=No
 31	。	。	PUNCT	.	_	16	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = 其文稱： 「遠西國，人云去中國九萬七千里……彼國初有童貞瑪利亞，於辛酉歲（實漢元始元年），天神嘉俾厄爾恭報：『天主特選爾為母。
+1	其文	其文	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
+2	稱	稱	VERB	VV	_	0	root	_	SpaceAfter=No
+3	：	：	PUNCT	:	_	2	punct	_	SpacesAfter=\n
+4	「	「	PUNCT	VV	_	2	xcomp	_	SpaceAfter=No
+5	遠	遠	PROPN	NNP	_	7	compound	_	SpaceAfter=No
+6	西	西	NOUN	NN	_	5	acl	_	SpaceAfter=No
+7	國	國	PART	SFN	_	10	obj	_	SpaceAfter=No
+8	，	，	PUNCT	,	_	10	punct	_	SpaceAfter=No
+9	人	人	NOUN	NN	_	10	nsubj	_	SpaceAfter=No
+10	云去	云去	VERB	VV	_	19	advcl	_	SpaceAfter=No
+11	中	中	PROPN	NNP	_	12	compound	_	SpaceAfter=No
+12	國	國	PART	SFN	_	15	nmod	_	SpaceAfter=No
+13	九	九	NUM	CD	NumType=Card	14	nummod	_	SpaceAfter=No
+14	萬	萬	NOUN	NNB	_	15	clf	_	SpaceAfter=No
+15	七千里	七千里	NUM	CD	NumType=Card	10	obj	_	SpaceAfter=No
+16	……彼	……彼	PUNCT	,	_	19	punct	_	SpaceAfter=No
+17	國	國	NOUN	NN	_	19	nsubj	_	SpaceAfter=No
+18	初	初	ADP	IN	_	17	acl	_	SpaceAfter=No
+19	有	有	VERB	VV	_	39	advcl	_	SpaceAfter=No
+20	童	童	NOUN	NN	_	21	nsubj	_	SpaceAfter=No
+21	貞	貞	PART	SFN	_	23	nmod	_	SpaceAfter=No
+22	瑪利	瑪利	PROPN	NNP	_	23	compound	_	SpaceAfter=No
+23	亞	亞	PART	SFN	_	19	obj	_	SpaceAfter=No
+24	，	，	PUNCT	,	_	39	punct	_	SpaceAfter=No
+25	於	於	ADP	IN	_	27	case	_	SpaceAfter=No
+26	辛酉	辛酉	PROPN	NNP	_	27	compound	_	SpaceAfter=No
+27	歲	歲	PART	SFN	_	39	obl	_	SpaceAfter=No
+28	（	（	PUNCT	(	_	32	punct	_	SpaceAfter=No
+29	實	實	PROPN	NNP	_	32	nmod	_	SpaceAfter=No
+30	漢	漢	PROPN	NNP	_	29	flat:name	_	SpaceAfter=No
+31	元始	元始	PROPN	NNP	_	32	nmod	_	SpaceAfter=No
+32	元年	元年	NOUN	NN	_	27	appos	_	SpaceAfter=No
+33	）	）	PUNCT	)	_	32	punct	_	SpaceAfter=No
+34	，	，	PUNCT	,	_	39	punct	_	SpaceAfter=No
+35	天神	天神	NOUN	NN	_	39	nsubj	_	SpaceAfter=No
+36	嘉俾	嘉俾	PROPN	NNP	_	37	compound	_	SpaceAfter=No
+37	厄	厄	PROPN	SFN	_	35	appos	_	SpaceAfter=No
+38	爾	爾	PROPN	NNP	_	37	flat:name	_	SpaceAfter=No
+39	恭報	恭報	VERB	VV	_	2	ccomp	_	SpaceAfter=No
+40	：	：	PUNCT	:	_	39	punct	_	SpaceAfter=No
+41	『	『	PUNCT	``	_	44	punct	_	SpaceAfter=No
+42	天主	天主	NOUN	NN	_	44	nsubj	_	SpaceAfter=No
+43	特	特	ADV	RB	_	44	advmod	_	SpaceAfter=No
+44	選	選	VERB	VV	_	2	parataxis	_	SpaceAfter=No
+45	爾	爾	PROPN	NNP	_	44	obj	_	SpaceAfter=No
+46	為	為	AUX	VC	_	47	cop	_	SpaceAfter=No
+47	母	母	NOUN	NN	_	44	obj	_	SpaceAfter=No
+48	。	。	PUNCT	.	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 』已而果孕降生。
+1	』	』	PUNCT	''	_	5	punct	_	SpaceAfter=No
+2	已	已	ADV	RB	_	5	advmod	_	SpaceAfter=No
+3	而	而	ADV	RB	_	5	mark	_	SpaceAfter=No
+4	果孕	果孕	VERB	VV	_	5	advcl	_	SpaceAfter=No
+5	降生	降生	VERB	VV	_	0	root	_	SpaceAfter=No
+6	。	。	PUNCT	.	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = 母極喜敬，裹以常衣，置於馬槽。
+1	母	母	NOUN	NN	_	9	nsubj	_	SpaceAfter=No
+2	極	極	PROPN	NNP	_	1	appos	_	SpaceAfter=No
+3	喜敬	喜敬	VERB	VV	_	9	advcl	_	SpaceAfter=No
+4	，	，	PUNCT	,	_	9	punct	_	SpaceAfter=No
+5	裹	裹	VERB	VV	_	9	advcl	_	SpaceAfter=No
+6	以	以	VERB	VV	_	9	advcl	_	SpaceAfter=No
+7	常衣	常衣	NOUN	NN	_	6	obj	_	SpaceAfter=No
+8	，	，	PUNCT	,	_	9	punct	_	SpaceAfter=No
+9	置	置	VERB	VV	_	0	root	_	SpaceAfter=No
+10	於	於	VERB	VV	_	9	mark	_	SpaceAfter=No
+11	馬	馬	NOUN	NN	_	12	compound	_	SpaceAfter=No
+12	槽	槽	PART	SFN	_	9	obj	_	SpaceAfter=No
+13	。	。	PUNCT	.	_	9	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = 群天神奏樂於空。
+1	群天	群天	NOUN	NN	_	2	nmod	_	SpaceAfter=No
+2	神奏	神奏	NOUN	NN	_	3	nsubj	_	SpaceAfter=No
+3	樂	樂	VERB	VV	_	0	root	_	SpaceAfter=No
+4	於	於	VERB	VV	_	3	mark	_	SpaceAfter=No
+5	空	空	NOUN	NN	_	3	obj	_	SpaceAfter=No
+6	。	。	PUNCT	.	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = 後四十日，母抱獻於聖師罷德肋，取名耶穌。
+1	後	後	DET	DT	_	3	det	_	SpaceAfter=No
+2	四十	四十	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
+3	日	日	NOUN	NNB	_	13	nmod:tmod	_	SpaceAfter=No
+4	，	，	PUNCT	,	_	13	punct	_	SpaceAfter=No
+5	母抱	母抱	NOUN	NN	_	13	nsubj	_	SpaceAfter=No
+6	獻	獻	VERB	VV	_	13	advcl	_	SpaceAfter=No
+7	於	於	VERB	VV	_	6	mark	_	SpaceAfter=No
+8	聖	聖	PROPN	NNP	_	9	compound	_	SpaceAfter=No
+9	師	師	PART	SFN	_	6	obj	_	SpaceAfter=No
+10	罷德	罷德	PROPN	NNP	_	9	appos	_	SpaceAfter=No
+11	肋	肋	PROPN	NNP	_	10	flat:name	_	SpaceAfter=No
+12	，	，	PUNCT	,	_	13	punct	_	SpaceAfter=No
+13	取名耶	取名耶	VERB	VV	_	0	root	_	SpaceAfter=No
+14	穌	穌	PART	NNP	_	13	obj	_	SpaceAfter=No
+15	。	。	PUNCT	.	_	13	punct	_	SpaceAfter=No
+
+# sent_id = 7
+# text = 」反映了明朝時期道教廣納其他宗教並融合於自身的手法。
+1	」	」	ADV	RB	_	2	nsubj	_	SpaceAfter=No
+2	反映	反映	VERB	VV	_	0	root	_	SpaceAfter=No
+3	了	了	PART	AS	Aspect=Perf	2	case:aspect	_	SpaceAfter=No
+4	明朝	明朝	PROPN	NNP	_	6	nmod	_	SpaceAfter=No
+5	時期道	時期道	NOUN	NN	_	6	compound	_	SpaceAfter=No
+6	教	教	PART	SFN	_	12	nsubj	_	SpaceAfter=No
+7	廣	廣	VERB	VV	_	12	advmod	_	SpaceAfter=No
+8	納	納	VERB	VV	_	7	mark	_	SpaceAfter=No
+9	其他	其他	DET	DT	_	10	det	_	SpaceAfter=No
+10	宗教	宗教	NOUN	NN	_	7	obj	_	SpaceAfter=No
+11	並	並	ADV	RB	_	12	mark	_	SpaceAfter=No
+12	融合	融合	VERB	VV	_	16	acl:relcl	_	SpaceAfter=No
+13	於	於	VERB	VV	_	12	mark	_	SpaceAfter=No
+14	自身	自身	PRON	PRD	_	12	obj	_	SpaceAfter=No
+15	的	的	PART	DEC	_	12	mark:relcl	_	SpaceAfter=No
+16	手法	手法	NOUN	NN	_	2	obj	_	SpaceAfter=No
+17	。	。	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 注释[编辑]
+# text = 注释
 1	注释	注释	VERB	VV	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PFA	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	NOUN	NN	_	1	obj	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9640,12 +10540,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 参考文献[编辑]
+# text = 参考文献
 1	参考	参考	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	文献	文献	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	CCONJ	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+2	文献	文献	NOUN	NN	_	0	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9653,11 +10550,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 引用[编辑]
+# text = 引用
 1	引用	引用	VERB	VV	_	0	root	_	SpaceAfter=No
-2	[	[	PART	PFA	_	4	case:pref	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	obj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9665,11 +10559,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 来源[编辑]
+# text = 来源
 1	来源	来源	NOUN	NN	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	(	_	3	punct	_	SpaceAfter=No
-3	编辑	编辑	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	]	]	PART	SFN	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9677,12 +10568,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 外部链接[编辑]
+# text = 外部链接
 1	外部	外部	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	链接	链接	NOUN	NN	_	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	(	_	4	punct	_	SpaceAfter=No
-4	编辑	编辑	NOUN	NN	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	SFN	_	4	punct	_	SpacesAfter=\n
+2	链	链	PART	SFN	_	3	nsubj	_	SpaceAfter=No
+3	接	接	VERB	VV	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = chinese-gsdsimp-ud-2.6-200830
@@ -9690,299 +10579,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 参见[编辑]
+# text = 参见
 1	参见	参见	VERB	VV	_	0	root	_	SpaceAfter=No
-2	[	[	PART	DT	_	3	case:pref	_	SpaceAfter=No
-3	编辑	编辑	NOUN	NN	_	1	obj	_	SpaceAfter=No
-4	]	]	PUNCT	SFN	_	1	obj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 阿丹亞當
-1	阿丹	阿丹	PROPN	NNP	_	2	nmod	_	SpaceAfter=No
-2	亞	亞	PROPN	NNP	_	0	root	_	SpaceAfter=No
-3	當	當	PROPN	NNP	_	2	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 易德立斯以挪士
-1	易德立斯	易德立斯	PROPN	NNP	_	2	nsubj	_	SpaceAfter=No
-2	以	以	VERB	VV	_	0	root	_	SpaceAfter=No
-3	挪士	挪士	PROPN	NNP	_	2	iobj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 努哈挪亞
-1	努哈挪	努哈挪	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	亞	亞	PROPN	NNP	_	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 呼德希伯
-1	呼德希伯	呼德希伯	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 撒立哈示拉
-1	撒立	撒立	PROPN	NNP	_	0	root	_	SpaceAfter=No
-2	哈示拉	哈示拉	PROPN	NNP	_	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 易卜拉欣亞伯拉罕
-1	易卜拉欣	易卜拉欣	PROPN	NNP	_	2	nsubj	_	SpaceAfter=No
-2	亞	亞	PART	SFN	_	0	root	_	SpaceAfter=No
-3	伯拉罕	伯拉罕	PROPN	NNP	_	2	iobj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 魯特羅得
-1	魯	魯	NOUN	NN	_	4	nmod	_	SpaceAfter=No
-2	特	特	PROPN	NNP	_	4	compound	_	SpaceAfter=No
-3	羅	羅	VERB	VV	_	4	compound	_	SpaceAfter=No
-4	得	得	PART	NNP	_	0	case:pref	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 易斯馬儀以實瑪利
-1	易斯	易斯	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
-2	馬	馬	PROPN	NNP	_	5	appos	_	SpaceAfter=No
-3	儀	儀	PROPN	NNP	_	6	flat:name	_	SpaceAfter=No
-4	以	以	ADP	IN	_	5	case	_	SpaceAfter=No
-5	實	實	NOUN	NN	_	0	root	_	SpaceAfter=No
-6	瑪利	瑪利	PROPN	NNP	_	5	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 易斯哈格以撒
-1	易斯哈格	易斯哈格	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	以撒	以撒	PART	SFN	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 葉爾孤白雅各
-1	葉	葉	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	爾	爾	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-3	孤白雅	孤白雅	PROPN	NNP	_	0	root	_	SpaceAfter=No
-4	各	各	DET	DT	_	3	det	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 優素福約瑟
-1	優	優	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	素福	素福	NOUN	NN	_	3	nmod	_	SpaceAfter=No
-3	約	約	PROPN	NNP	_	0	root	_	SpaceAfter=No
-4	瑟	瑟	PROPN	NNP	_	3	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 安優卜约伯
-1	安	安	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	優	優	PROPN	NNP	_	3	flat:name	_	SpaceAfter=No
-3	卜约伯	卜约伯	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 舒阿卜葉忒羅
-1	舒	舒	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-2	阿卜	阿卜	PROPN	NNP	_	3	nmod	_	SpaceAfter=No
-3	葉	葉	PROPN	NNP	_	0	root	_	SpaceAfter=No
-4	忒	忒	PROPN	NNP	_	3	flat:name	_	SpaceAfter=No
-5	羅	羅	PROPN	NNP	_	3	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 穆撒摩西
-1	穆撒摩西	穆撒摩西	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 哈倫亞倫
-1	哈	哈	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-2	倫	倫	PROPN	NNP	_	4	nmod	_	SpaceAfter=No
-3	亞	亞	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-4	倫	倫	PROPN	NNP	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 助勒基福勒以西結
-1	助勒基	助勒基	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-2	福勒	福勒	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-3	以西	以西	NOUN	NN	_	2	acl	_	SpaceAfter=No
-4	結	結	VERB	VV	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 達五德大衛
-1	達	達	NOUN	NN	_	3	compound	_	SpaceAfter=No
-2	五德大	五德大	PROPN	NNP	_	3	compound	_	SpaceAfter=No
-3	衛	衛	PART	SFN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 素萊曼所羅門
-1	素	素	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
-2	萊	萊	PROPN	NNP	_	5	nmod	_	SpaceAfter=No
-3	曼所	曼所	NOUN	NN	_	5	nmod	_	SpaceAfter=No
-4	羅	羅	PROPN	VV	_	5	compound	_	SpaceAfter=No
-5	門	門	PART	SFN	_	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 易勒雅斯以利亞
-1	易勒雅斯以利	易勒雅斯以利	PROPN	NNP	_	2	compound	_	SpaceAfter=No
-2	亞	亞	PART	SFN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 艾勒·葉賽以利沙
-1	艾勒	艾勒	PROPN	NNP	_	5	nsubj	_	SpaceAfter=No
-2	·	·	PUNCT	/	_	1	punct	_	SpaceAfter=No
-3	葉	葉	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-4	賽	賽	PROPN	NNP	_	1	flat:name	_	SpaceAfter=No
-5	以	以	ADP	IN	_	0	root	_	SpaceAfter=No
-6	利沙	利沙	PROPN	NNP	_	5	obj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 優努斯約拿
-1	優	優	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-2	努斯	努斯	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-3	約	約	PROPN	NNP	_	4	nsubj	_	SpaceAfter=No
-4	拿	拿	VERB	VV	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 宰凱里雅撒迦利亚
-1	宰	宰	NOUN	NN	_	2	nsubj	_	SpaceAfter=No
-2	凱	凱	PROPN	NNP	_	0	root	_	SpaceAfter=No
-3	里雅撒迦利亚	里雅撒迦利亚	PROPN	NNP	_	2	iobj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 葉哈雅施洗約翰
-1	葉	葉	NOUN	NN	_	3	nmod	_	SpaceAfter=No
-2	哈雅施洗約	哈雅施洗約	PROPN	NNP	_	3	compound	_	SpaceAfter=No
-3	翰	翰	PROPN	NNP	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 爾撒耶稣
-1	爾	爾	VERB	VV	_	0	root	_	SpaceAfter=No
-2	撒耶稣	撒耶稣	PROPN	NNP	_	1	obj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 穆罕默德
-1	穆罕默德	穆罕默德	PROPN	NNP	_	0	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = chinese-gsdsimp-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 导航菜单
-1	导航	导航	NOUN	NN	_	2	nmod	_	SpaceAfter=No
-2	菜单	菜单	NOUN	NN	_	0	nmod	_	SpacesAfter=\n
 

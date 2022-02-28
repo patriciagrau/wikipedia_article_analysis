@@ -1,5 +1,3 @@
-# https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%93%D7%99%D7%A7%D7%98%D7%95%D7%A1_%D7%94%D7%A9%D7%99%D7%A9%D7%94_%D7%A2%D7%A9%D7%A8
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,29 +11,7 @@
 3	שישה	שישה	NUM	NUM	Gender=Masc|Number=Sing	6	nmod	_	_
 4	עשר	עשר	NUM	NUM	Gender=Masc|Number=Sing	6	nummod	_	_
 5	–	–	ADP	ADP	_	6	case	_	_
-6	ויקיפדיה	ויקיפדיה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = שפות
-1	שפות	שפה	NOUN	NOUN	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = בנדיקטוס השישה עשר
-1	בנדיקטוס	בנדיקטוס	PROPN	PROPN	_	0	root	_	_
-2-3	השישה	_	_	_	_	_	_	_	_
-2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
-3	שישה	שישה	NUM	NUM	Gender=Fem|Number=Sing	1	nummod	_	_
-4	עשר	עשר	NUM	NUM	Gender=Fem|Number=Sing	3	nummod	_	SpacesAfter=\n
+6	ויקיפדיה	ויקיפדיה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -305,14 +281,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = נעוריו[עריכת קוד מקור | עריכה]
-1	נעוריו[	נעוריו[	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
-3	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	compound:smixut	_	_
-4	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = נעוריו
+1-3	נעוריו	_	_	_	_	_	_	_	SpaceAfter=No
+1	נעור_	נעור	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
+2	_של_	של	ADP	ADP	_	3	case:gen	_	_
+3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -674,9 +647,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = השכלתו ותפקידיו הראשונים[עריכת קוד מקור | עריכה]
+# text = השכלתו ותפקידיו הראשונים
 1-3	השכלתו	_	_	_	_	_	_	_	_
-1	השכלה_	השכלה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	11	nsubj	_	_
+1	השכלה_	השכלה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
 4-7	ותפקידיו	_	_	_	_	_	_	_	_
@@ -687,13 +660,6 @@
 8-9	הראשונים	_	_	_	_	_	_	_	SpaceAfter=No
 8	ה	ה	DET	DET	PronType=Art	9	det:def	_	_
 9	ראשונים	_	ADJ	ADJ	Gender=Masc|Number=Plur	5	amod	_	_
-10	[	[	PUNCT	PUNCT	_	11	case	_	SpaceAfter=No
-11	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-12	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	11	compound:smixut	_	_
-13	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	12	compound:smixut	_	_
-14	|	|	PUNCT	PUNCT	_	15	punct	_	_
-15	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
-16	]	]	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1201,23 +1167,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = מועמדותו ובחירתו כיורש האפיפיור[עריכת קוד מקור | עריכה]
+# text = מועמדותו ובחירתו כיורש האפיפיור
 1-3	מועמדותו	_	_	_	_	_	_	_	_
 1	מועמדות_	מועמדות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	7	nsubj	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
 4-6	ובחירתו	_	_	_	_	_	_	_	_
-4	ובחירה_	ובחירה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	1	nmod	_	_
-5	_של_	של	ADP	ADP	_	6	case:gen	_	_
+4	ובחירה_	ובחירה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	1	appos	_	_
+5	_של_	של	ADP	ADP	_	3	case:gen	_	_
 6	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
 7	כיורש	כיורש	VERB	VERB	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	_
-8	האפיפיור[	האפיפיור[	PROPN	PROPN	_	7	nsubj	_	SpaceAfter=No
-9	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	7	obj	_	_
-10	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	9	compound:smixut	_	_
-11	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	10	compound:smixut	_	_
-12	|	|	PUNCT	PUNCT	_	13	punct	_	_
-13	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	7	parataxis	_	SpaceAfter=No
-14	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
+8-9	האפיפיור	_	_	_	_	_	_	_	SpaceAfter=No
+8	ה	ה	DET	DET	PronType=Art	9	det:def	_	_
+9	אפיפיור	אפיפיור	NOUN	NOUN	Gender=Masc|Number=Sing	7	nsubj	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1592,14 +1554,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = עמדותיו[עריכת קוד מקור | עריכה]
-1	עמדותיו[	עמדותיו[	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
-3	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	compound:smixut	_	_
-4	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = עמדותיו
+1-3	עמדותיו	_	_	_	_	_	_	_	SpaceAfter=No
+1	עמד_	עמד	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
+2	_של_	של	ADP	ADP	_	3	case:gen	_	_
+3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1854,18 +1813,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = יהדות ויהודים[עריכת קוד מקור | עריכה]
+# text = יהדות ויהודים
 1	יהדות	יהדות	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
 2-3	ויהודים	_	_	_	_	_	_	_	SpaceAfter=No
 2	ו	ו	CCONJ	CCONJ	_	3	cc	_	_
 3	יהודים	יהודי	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
-4	[	[	ADP	ADP	_	5	case	_	SpaceAfter=No
-5	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-6	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -2698,16 +2650,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = דרשות וגינויים[עריכת קוד מקור | עריכה]
-1	דרשות	דרשה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	4	nsubj	_	_
+# text = דרשות וגינויים
+1	דרשות	דרשה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	0	root	_	_
 2	וגינויים	וגינוי	NOUN	NOUN	Gender=Masc|Number=Plur	1	compound:smixut	_	SpaceAfter=No
-3	[	[	ADP	ADP	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -3542,18 +3487,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = התפטרותו[עריכת קוד מקור | עריכה]
+# text = התפטרותו
 1-3	התפטרותו	_	_	_	_	_	_	_	SpaceAfter=No
-1	התפטרות_	התפטרות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	5	nsubj	_	_
+1	התפטרות_	התפטרות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
-4	[	[	ADP	ADP	_	5	case	_	SpaceAfter=No
-5	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-6	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -3810,14 +3748,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ספריו[עריכת קוד מקור | עריכה]
-1	ספריו[	ספריו[	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
-3	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	compound:smixut	_	_
-4	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = ספריו
+1-3	ספריו	_	_	_	_	_	_	_	SpaceAfter=No
+1	ספר_	ספר	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
+2	_של_	של	ADP	ADP	_	3	case:gen	_	_
+3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -3923,14 +3858,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = סמלו[עריכת קוד מקור | עריכה]
-1	סמלו[	סמלו[	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
-3	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	compound:smixut	_	_
-4	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = סמלו
+1	סמלו	סמל	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -4248,16 +4177,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ראו גם[עריכת קוד מקור | עריכה]
+# text = ראו גם
 1	ראו	ראה	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
-2	גם	גם	ADV	ADV	_	4	det	_	SpaceAfter=No
-3	[	[	ADP	ADP	_	4	det	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nsubj	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+2	גם	גם	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -4265,16 +4187,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = קישורים חיצוניים[עריכת קוד מקור | עריכה]
+# text = קישורים חיצוניים
 1	קישורים	קישור	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
 2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -4282,14 +4197,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = הערות שוליים[עריכת קוד מקור | עריכה]
-1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	4	nsubj	_	_
-2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	compound:smixut	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+# text = הערות שוליים
+1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	0	root	_	_
+2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
 

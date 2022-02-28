@@ -1,5 +1,3 @@
-# http://en.wikipedia.org/wiki/Iraq
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Iraq - Wikipedia
 1	Iraq	Iraq	PROPN	NNP	Number=Sing	0	root	_	_
 2	-	-	PUNCT	:	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	1	appos	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17,8 +15,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Iraq
-1	Iraq	Iraq	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+# text = Coordinates: 33°N 44°E﻿ / ﻿33°N 44°E﻿ / 33; 44
+1	Coordinates	coordinate	NOUN	NNS	Number=Plur	0	root	_	SpacesBefore=\n|SpaceAfter=No
+2	:	:	PUNCT	:	_	1	punct	_	_
+3	33°N	33°n	NOUN	NN	Number=Sing	4	appos	_	_
+4	44°E﻿	44°e﻿	NOUN	NN	Number=Sing	1	appos	_	_
+5	/	/	PUNCT	,	_	6	punct	_	_
+6	﻿33°N	﻿33°n	NOUN	NN	Number=Sing	4	conj	_	_
+7	44°E﻿	44°e﻿	NOUN	NN	Number=Sing	4	appos	_	_
+8	/	/	PUNCT	,	_	7	punct	_	_
+9	33	33	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
+10	;	;	PUNCT	,	_	1	punct	_	_
+11	44	44	NUM	CD	NumType=Card	4	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -830,7 +838,35 @@
 # newpar
 # sent_id = 1
 # text = Name
-1	Name	name	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Name	name	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = The Arabic name al-ʿIrāq (العراق) has been in use since before the 6th century CE.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	SpacesBefore=\n
+2	Arabic	Arabic	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	name	name	NOUN	NN	Number=Sing	13	nsubj	_	_
+4	al	al	PROPN	NNP	Number=Sing	6	compound	_	SpaceAfter=No
+5	-	-	PUNCT	HYPH	_	6	punct	_	SpaceAfter=No
+6	ʿIrāq	ʿirāq	PROPN	NNP	Number=Sing	13	nsubj	_	_
+7	(	(	PUNCT	-LRB-	_	8	punct	_	SpaceAfter=No
+8	العراق	العراق	PROPN	NNP	Number=Sing	6	appos	_	SpaceAfter=No
+9	)	)	PUNCT	-RRB-	_	8	punct	_	_
+10	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+11	been	be	AUX	VBN	Tense=Past|VerbForm=Part	13	cop	_	_
+12	in	in	ADP	IN	_	13	case	_	_
+13	use	use	NOUN	NN	Number=Sing	0	root	_	_
+14	since	since	ADP	IN	_	18	case	_	_
+15	before	before	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+17	6th	6th	ADJ	JJ	Degree=Pos|NumType=Ord	18	amod	_	_
+18	century	century	NOUN	NN	Number=Sing	13	obl	_	_
+19	CE	ce	NOUN	NN	Number=Sing	13	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1214,15 +1250,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = The Arabic pronunciation is [ʕiˈrɑːq].
+# text = The Arabic pronunciation is .
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	Arabic	arabic	ADJ	JJ	Degree=Pos	3	amod	_	_
-3	pronunciation	pronunciation	NOUN	NN	Number=Sing	6	nsubj	_	_
-4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
-5	[	[	PUNCT	-LRB-	_	6	punct	_	SpaceAfter=No
-6	ʕiˈrɑːq	ʕiˈrɑːq	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	-RRB-	_	6	punct	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	6	punct	_	_
+3	pronunciation	pronunciation	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 2
 # text = In English, it is either /ɪˈrɑːk/ (the only pronunciation listed in the Oxford English Dictionary and the first one in Merriam-Webster's Online Dictionary) or /ɪˈræk/ (listed first by MQD), the American Heritage Dictionary, and the Random House Dictionary.
@@ -1292,14 +1325,8 @@
 8	heard	hear	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
 9	in	in	ADP	IN	_	11	case	_	_
 10	US	US	PROPN	NNP	Number=Sing	11	compound	_	_
-11	media.	media.	NOUN	NN	Number=Sing	8	obl	_	SpaceAfter=No
-
-# sent_id = 4
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
+11	media	media	NOUN	NN	Number=Sing	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1347,7 +1374,7 @@
 # newpar
 # sent_id = 1
 # text = History
-1	History	history	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	History	history	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1357,7 +1384,7 @@
 # sent_id = 1
 # text = Prehistoric era
 1	Prehistoric	prehistoric	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	era	era	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	era	era	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1645,7 +1672,7 @@
 # sent_id = 1
 # text = Ancient Mesopotamia
 1	Ancient	ancient	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+2	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1920,7 +1947,7 @@
 
 # sent_id = 2
 # text = Age
-1	Age	Age	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Age	Age	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -2444,16 +2471,9 @@
 54	law	law	NOUN	NN	Number=Sing	52	nmod	_	_
 55	yet	yet	ADV	RB	_	56	advmod	_	_
 56	written	write	VERB	VBN	Tense=Past|VerbForm=Part	52	acl	_	SpaceAfter=No
-57	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
+57	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 4
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	_
-
-# sent_id = 5
 # text = The south broke up into a number of Akkadian speaking states, Isin, Larsa and Eshnunna being the major ones.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	south	south	NOUN	NN	Number=Sing	3	nsubj	_	_
@@ -2607,7 +2627,7 @@
 # newpar
 # sent_id = 1
 # text = Babylonia
-1	Babylonia	Babylonia	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Babylonia	Babylonia	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3007,6 +3027,165 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = The Middle Assyrian Empire (1365–1020 BC) saw Assyria rise to be the most powerful nation in the known world.
+1	The	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+2	Middle	Middle	PROPN	NNP	Number=Sing	4	compound	_	_
+3	Assyrian	Assyrian	PROPN	NNP	Number=Sing	4	compound	_	_
+4	Empire	Empire	PROPN	NNP	Number=Sing	9	nsubj	_	_
+5	(	(	PUNCT	-LRB-	_	7	punct	_	SpaceAfter=No
+6	1365–1020	1365–1020	NUM	CD	NumType=Card	7	nummod	_	_
+7	BC	bc	NOUN	NN	Number=Sing	4	appos	_	SpaceAfter=No
+8	)	)	PUNCT	-RRB-	_	7	punct	_	_
+9	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	Assyria	Assyria	PROPN	NNP	Number=Sing	11	nsubj	_	_
+11	rise	rise	VERB	VB	VerbForm=Inf	9	ccomp	_	_
+12	to	to	PART	TO	_	17	mark	_	_
+13	be	be	AUX	VB	VerbForm=Inf	17	cop	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+15	most	most	ADV	RBS	_	16	advmod	_	_
+16	powerful	powerful	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	nation	nation	NOUN	NN	Number=Sing	11	xcomp	_	_
+18	in	in	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	known	know	VERB	VBN	Tense=Past|VerbForm=Part	21	amod	_	_
+21	world	world	NOUN	NN	Number=Sing	17	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 2
+# text = Beginning with the campaigns of Ashur-uballit I, Assyria destroyed the rival Hurrian-Mitanni Empire, annexed huge swathes of the Hittite Empire for itself, annexed northern Babylonia from the Kassites, forced the Egyptian Empire from the region, and defeated the Elamites, Phrygians, Canaanites, Phoenicians, Cilicians, Gutians, Dilmunites and Arameans.
+1	Beginning	begin	VERB	VBG	VerbForm=Ger	10	advcl	_	_
+2	with	with	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	campaigns	campaign	NOUN	NNS	Number=Plur	1	obl	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	Ashur-uballit	Ashur-uballit	PROPN	NNP	Number=Sing	4	nmod	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	Assyria	Assyria	PROPN	NNP	Number=Sing	10	nsubj	_	_
+10	destroyed	destroy	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+12	rival	rival	ADJ	JJ	Degree=Pos	16	amod	_	_
+13	Hurrian	Hurrian	PROPN	NNP	Number=Sing	15	compound	_	SpaceAfter=No
+14	-	-	PUNCT	HYPH	_	15	punct	_	SpaceAfter=No
+15	Mitanni	Mitanni	PROPN	NNP	Number=Sing	16	compound	_	_
+16	Empire	Empire	PROPN	NNP	Number=Sing	10	obj	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	annexed	annex	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+19	huge	huge	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	swathes	swathe	NOUN	NNS	Number=Plur	18	obj	_	_
+21	of	of	ADP	IN	_	24	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	Hittite	Hittite	PROPN	NNP	Number=Sing	24	compound	_	_
+24	Empire	Empire	PROPN	NNP	Number=Sing	20	nmod	_	_
+25	for	for	ADP	IN	_	26	case	_	_
+26	itself	itself	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	18	obl	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	annexed	annex	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+29	northern	northern	ADJ	JJ	Degree=Pos	30	amod	_	_
+30	Babylonia	Babylonia	PROPN	NNP	Number=Sing	28	obj	_	_
+31	from	from	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	Kassites	Kassites	PROPN	NNPS	Number=Plur	28	obl	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	35	punct	_	_
+35	forced	force	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+37	Egyptian	egyptian	ADJ	JJ	Degree=Pos	38	amod	_	_
+38	Empire	Empire	PROPN	NNP	Number=Sing	35	obj	_	_
+39	from	from	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	region	region	NOUN	NN	Number=Sing	35	obl	_	SpaceAfter=No
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	and	and	CCONJ	CC	_	44	cc	_	_
+44	defeated	defeat	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	Elamites	Elamites	PROPN	NNPS	Number=Plur	44	obj	_	SpaceAfter=No
+47	,	,	PUNCT	,	_	48	punct	_	_
+48	Phrygians	Phrygians	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+49	,	,	PUNCT	,	_	50	punct	_	_
+50	Canaanites	Canaanites	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+51	,	,	PUNCT	,	_	52	punct	_	_
+52	Phoenicians	Phoenicians	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+53	,	,	PUNCT	,	_	54	punct	_	_
+54	Cilicians	Cilicians	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+55	,	,	PUNCT	,	_	56	punct	_	_
+56	Gutians	Gutians	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+57	,	,	PUNCT	,	_	58	punct	_	_
+58	Dilmunites	Dilmunites	PROPN	NNPS	Number=Plur	46	conj	_	_
+59	and	and	CCONJ	CC	_	60	cc	_	_
+60	Arameans	Arameans	PROPN	NNPS	Number=Plur	46	conj	_	SpaceAfter=No
+61	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = 3
+# text = At its height, the Middle Assyrian Empire stretched from The Caucasus to Dilmun (modern Bahrain), and from the Mediterranean coasts of Phoenicia to the Zagros Mountains of Iran.
+1	At	at	ADP	IN	_	3	case	_	_
+2	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	height	height	NOUN	NN	Number=Sing	9	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	9	punct	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+6	Middle	Middle	PROPN	NNP	Number=Sing	8	compound	_	_
+7	Assyrian	Assyrian	PROPN	NNP	Number=Sing	8	compound	_	_
+8	Empire	Empire	PROPN	NNP	Number=Sing	9	nsubj	_	_
+9	stretched	stretch	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	from	from	ADP	IN	_	12	case	_	_
+11	The	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Caucasus	Caucasus	PROPN	NNP	Number=Sing	9	obl	_	_
+13	to	to	ADP	IN	_	14	case	_	_
+14	Dilmun	Dilmun	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	(	(	PUNCT	-LRB-	_	17	punct	_	SpaceAfter=No
+16	modern	modern	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	Bahrain	Bahrain	PROPN	NNP	Number=Sing	14	appos	_	SpaceAfter=No
+18	)	)	PUNCT	-RRB-	_	17	punct	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	from	from	ADP	IN	_	24	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	Mediterranean	mediterranean	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	coasts	coast	NOUN	NNS	Number=Plur	12	conj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Phoenicia	Phoenicia	PROPN	NNP	Number=Sing	24	nmod	_	_
+27	to	to	ADP	IN	_	30	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+29	Zagros	Zagros	PROPN	NNP	Number=Sing	30	compound	_	_
+30	Mountains	Mountains	PROPN	NNPS	Number=Plur	24	nmod	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	Iran	Iran	PROPN	NNP	Number=Sing	30	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 4
+# text = In 1235 BC, Tukulti-Ninurta I of Assyria took the throne of Babylon, thus becoming the first native Mesopotamian to rule the state.
+1	In	in	ADP	IN	_	3	case	_	_
+2	1235	1235	NUM	CD	NumType=Card	3	nummod	_	_
+3	BC	bc	NOUN	NN	Number=Sing	10	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	10	punct	_	_
+5	Tukulti	Tukulti	PROPN	NNP	Number=Sing	10	nsubj	_	SpaceAfter=No
+6	-Ninurta	-Ninurta	PROPN	NNP	Number=Sing	5	flat	_	_
+7	I	I	NUM	CD	NumType=Card	5	flat	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	Assyria	Assyria	PROPN	NNP	Number=Sing	5	nmod	_	_
+10	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	throne	throne	NOUN	NN	Number=Sing	10	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Babylon	Babylon	PROPN	NNP	Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	10	punct	_	_
+16	thus	thus	ADV	RB	_	17	advmod	_	_
+17	becoming	become	VERB	VBG	VerbForm=Ger	10	advcl	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+19	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	21	amod	_	_
+20	native	native	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	Mesopotamian	mesopotamian	NOUN	NN	Number=Sing	17	xcomp	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	rule	rule	VERB	VB	VerbForm=Inf	21	acl	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	state	state	NOUN	NN	Number=Sing	23	obj	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = During the Bronze Age collapse (1200–900 BC), Babylonia was in a state of chaos, dominated for long periods by Assyria and Elam.
 1	During	during	ADP	IN	_	5	case	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
@@ -3146,7 +3325,7 @@
 # sent_id = 1
 # text = Iron Age
 1	Iron	iron	PROPN	NNP	Number=Sing	2	compound	_	_
-2	Age	age	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	Age	age	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3157,7 +3336,7 @@
 # text = Neo-Assyrian Empire
 1	Neo	neo	ADJ	JJ	Degree=Pos	3	amod	_	SpaceAfter=No
 2	-Assyrian	-assyrian	ADJ	JJ	Degree=Pos	3	amod	_	_
-3	Empire	empire	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+3	Empire	empire	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3353,6 +3532,311 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = It was during this period that an Akkadian influenced form of Eastern Aramaic was adopted by the Assyrians as the lingua franca of their vast empire, and Mesopotamian Aramaic began to supplant Akkadian as the spoken language of the general populace of both Assyria and Babylonia.
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	expl	_	SpacesBefore=\n
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
+3	during	during	ADP	IN	_	5	case	_	_
+4	this	this	DET	DT	Number=Sing|PronType=Dem	5	det	_	_
+5	period	period	NOUN	NN	Number=Sing	0	root	_	_
+6	that	that	ADV	WRB	PronType=Rel	15	mark	_	_
+7	an	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+8	Akkadian	akkadian	ADJ	JJ	Degree=Pos	10	amod	_	_
+9	influenced	influence	VERB	VBN	Tense=Past|VerbForm=Part	10	amod	_	_
+10	form	form	NOUN	NN	Number=Sing	15	nsubj:pass	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	Eastern	eastern	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	Aramaic	Aramaic	PROPN	NNP	Number=Sing	10	nmod	_	_
+14	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
+15	adopted	adopt	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	csubj	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	Assyrians	Assyrians	PROPN	NNPS	Number=Plur	15	obl	_	_
+19	as	as	ADP	IN	_	22	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+21	lingua	lingua	NOUN	NN	Number=Sing	22	compound	_	_
+22	franca	franca	NOUN	NN	Number=Sing	15	obl	_	_
+23	of	of	ADP	IN	_	26	case	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	26	nmod:poss	_	_
+25	vast	vast	ADJ	JJ	Degree=Pos	26	amod	_	_
+26	empire	empire	NOUN	NN	Number=Sing	22	nmod	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	and	and	CCONJ	CC	_	31	cc	_	_
+29	Mesopotamian	mesopotamian	ADJ	JJ	Degree=Pos	30	amod	_	_
+30	Aramaic	Aramaic	PROPN	NNP	Number=Sing	31	nsubj	_	_
+31	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	conj	_	_
+32	to	to	PART	TO	_	33	mark	_	_
+33	supplant	supplant	VERB	VB	VerbForm=Inf	31	xcomp	_	_
+34	Akkadian	Akkadian	PROPN	NNP	Number=Sing	33	obj	_	_
+35	as	as	ADP	IN	_	38	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+37	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	38	amod	_	_
+38	language	language	NOUN	NN	Number=Sing	33	obl	_	_
+39	of	of	ADP	IN	_	42	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+41	general	general	ADJ	JJ	Degree=Pos	42	amod	_	_
+42	populace	populace	NOUN	NN	Number=Sing	38	nmod	_	_
+43	of	of	ADP	IN	_	45	case	_	_
+44	both	both	CCONJ	CC	_	45	cc:preconj	_	_
+45	Assyria	Assyria	PROPN	NNP	Number=Sing	42	nmod	_	_
+46	and	and	CCONJ	CC	_	47	cc	_	_
+47	Babylonia	Babylonia	PROPN	NNP	Number=Sing	45	conj	_	SpaceAfter=No
+48	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 2
+# text = The descendant dialects of this tongue survive amongst the Mandaeans of southern Iraq and Assyrians of northern Iraq to this day.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+2	descendant	descendant	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	dialects	dialect	NOUN	NNS	Number=Plur	7	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	this	this	DET	DT	Number=Sing|PronType=Dem	6	det	_	_
+6	tongue	tongue	NOUN	NN	Number=Sing	3	nmod	_	_
+7	survive	survive	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	amongst	amongst	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	Mandaeans	Mandaeans	PROPN	NNPS	Number=Plur	7	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	southern	southern	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	Iraq	Iraq	PROPN	NNP	Number=Sing	10	nmod	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	Assyrians	Assyrians	PROPN	NNPS	Number=Plur	10	conj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	northern	northern	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	Iraq	Iraq	PROPN	NNP	Number=Sing	15	nmod	_	_
+19	to	to	ADP	IN	_	21	case	_	_
+20	this	this	DET	DT	Number=Sing|PronType=Dem	21	det	_	_
+21	day	day	NOUN	NN	Number=Sing	7	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 3
+# text = The Arabs and the Chaldeans are first mentioned in written history (circa 850 BC) in the annals of Shalmaneser III.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	Arabs	Arabs	PROPN	NNPS	Number=Plur	8	nsubj:pass	_	_
+3	and	and	CCONJ	CC	_	5	cc	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	Chaldeans	Chaldeans	PROPN	NNPS	Number=Plur	2	conj	_	_
+6	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+7	first	first	ADV	RB	_	8	advmod	_	_
+8	mentioned	mention	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	written	write	VERB	VBN	Tense=Past|VerbForm=Part	11	amod	_	_
+11	history	history	NOUN	NN	Number=Sing	8	obl	_	_
+12	(	(	PUNCT	-LRB-	_	15	punct	_	SpaceAfter=No
+13	circa	circa	X	IN	_	15	advmod	_	_
+14	850	850	NUM	CD	NumType=Card	15	nummod	_	_
+15	BC	bc	NOUN	NN	Number=Sing	11	appos	_	SpaceAfter=No
+16	)	)	PUNCT	-RRB-	_	15	punct	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	annals	annal	NOUN	NNS	Number=Plur	8	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Shalmaneser	Shalmaneser	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	III	III	PROPN	NNP	Number=Sing	21	flat	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	8	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = The Neo-Assyrian Empire left a legacy of great cultural significance.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+2	Neo-Assyrian	neo-assyrian	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	Empire	Empire	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	left	leave	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
+6	legacy	legacy	NOUN	NN	Number=Sing	4	obj	_	_
+7	of	of	ADP	IN	_	10	case	_	_
+8	great	great	ADJ	JJ	Degree=Pos	10	amod	_	_
+9	cultural	cultural	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	significance	significance	NOUN	NN	Number=Sing	6	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 2
+# text = The political structures established by the Neo-Assyrian Empire became the model for the later empires that succeeded it and the ideology of universal rule promulgated by the Neo-Assyrian kings inspired, through the concept of translatio imperii, similar ideas of rights to world domination in later empires as late as the early modern period.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+2	political	political	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	structures	structure	NOUN	NNS	Number=Plur	9	nsubj	_	_
+4	established	establish	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	_
+5	by	by	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+7	Neo-Assyrian	neo-assyrian	PROPN	NNP	Number=Sing	8	compound	_	_
+8	Empire	Empire	PROPN	NNP	Number=Sing	4	obl	_	_
+9	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	model	model	NOUN	NN	Number=Sing	9	xcomp	_	_
+12	for	for	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+14	later	later	ADJ	JJR	Degree=Cmp	15	amod	_	_
+15	empires	empire	NOUN	NNS	Number=Plur	11	nmod	_	_
+16	that	that	PRON	WDT	PronType=Rel	17	nsubj	_	_
+17	succeeded	succeed	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	acl:relcl	_	_
+18	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	17	obj	_	_
+19	and	and	CCONJ	CC	_	30	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	ideology	ideology	NOUN	NN	Number=Sing	30	nsubj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	universal	universal	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	rule	rule	NOUN	NN	Number=Sing	21	nmod	_	_
+25	promulgated	promulgate	VERB	VBN	Tense=Past|VerbForm=Part	24	acl	_	_
+26	by	by	ADP	IN	_	29	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+28	Neo-Assyrian	neo-assyrian	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	kings	king	NOUN	NNS	Number=Plur	25	obl	_	_
+30	inspired	inspire	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	conj	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	through	through	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	concept	concept	NOUN	NN	Number=Sing	30	obl	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	translatio	translatio	NOUN	NN	Number=Sing	37	compound	_	_
+37	imperii	imperii	NOUN	NN	Number=Sing	34	nmod	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	30	punct	_	_
+39	similar	similar	ADJ	JJ	Degree=Pos	40	amod	_	_
+40	ideas	idea	NOUN	NNS	Number=Plur	30	obj	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	rights	rights	NOUN	NNS	Number=Plur	40	nmod	_	_
+43	to	to	ADP	IN	_	45	case	_	_
+44	world	world	NOUN	NN	Number=Sing	45	compound	_	_
+45	domination	domination	NOUN	NN	Number=Sing	42	nmod	_	_
+46	in	in	ADP	IN	_	48	case	_	_
+47	later	later	ADJ	JJR	Degree=Cmp	48	amod	_	_
+48	empires	empire	NOUN	NNS	Number=Plur	42	nmod	_	_
+49	as	as	ADV	RB	_	50	advmod	_	_
+50	late	late	ADV	RB	Degree=Pos	40	advmod	_	_
+51	as	as	ADP	IN	_	55	case	_	_
+52	the	the	DET	DT	Definite=Def|PronType=Art	55	det	_	_
+53	early	early	ADJ	JJ	Degree=Pos	55	amod	_	_
+54	modern	modern	ADJ	JJ	Degree=Pos	55	amod	_	_
+55	period	period	NOUN	NN	Number=Sing	50	obl	_	SpaceAfter=No
+56	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 3
+# text = The Neo-Assyrian Empire became an important part of later folklore and literary traditions in northern Mesopotamia through the subsequent post-imperial period and beyond.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+2	Neo-Assyrian	neo-assyrian	PROPN	JJ	Degree=Pos	3	amod	_	_
+3	Empire	Empire	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	an	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_
+6	important	important	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	part	part	NOUN	NN	Number=Sing	4	xcomp	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	later	later	ADJ	JJR	Degree=Cmp	10	amod	_	_
+10	folklore	folklore	NOUN	NN	Number=Sing	7	nmod	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	literary	literary	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	traditions	tradition	NOUN	NNS	Number=Plur	10	conj	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	northern	northern	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	7	nmod	_	_
+17	through	through	ADP	IN	_	21	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+19	subsequent	subsequent	ADJ	JJ	Degree=Pos	21	amod	_	_
+20	post-imperial	post-imperial	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	period	period	NOUN	NN	Number=Sing	7	nmod	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	beyond	beyond	ADV	RB	_	21	conj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 4
+# text = Judaism, and thus in turn also Christianity and Islam, was profoundly affected by the period of Neo-Assyrian rule; numerous Biblical stories appear to draw on earlier Assyrian mythology and history and the Assyrian impact on early Jewish theology was immense.
+1	Judaism	Judaism	PROPN	NNP	Number=Sing	14	nsubj:pass	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	8	punct	_	_
+3	and	and	CCONJ	CC	_	8	cc	_	_
+4	thus	thus	ADV	RB	_	8	advmod	_	_
+5	in	in	ADP	IN	_	6	case	_	_
+6	turn	turn	NOUN	NN	Number=Sing	8	nmod	_	_
+7	also	also	ADV	RB	_	8	advmod	_	_
+8	Christianity	Christianity	PROPN	NNP	Number=Sing	1	conj	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	Islam	Islam	PROPN	NNP	Number=Sing	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+13	profoundly	profoundly	ADV	RB	_	14	advmod	_	_
+14	affected	affect	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+15	by	by	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	period	period	NOUN	NN	Number=Sing	14	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	Neo-Assyrian	neo-assyrian	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	rule	rule	NOUN	NN	Number=Sing	17	nmod	_	SpaceAfter=No
+21	;	;	PUNCT	,	_	14	punct	_	_
+22	numerous	numerous	ADJ	JJ	Degree=Pos	24	amod	_	_
+23	Biblical	biblical	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	stories	story	NOUN	NNS	Number=Plur	25	nsubj	_	_
+25	appear	appear	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	14	parataxis	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	draw	draw	VERB	VB	VerbForm=Inf	25	xcomp	_	_
+28	on	on	ADP	IN	_	31	case	_	_
+29	earlier	earlier	ADJ	JJR	Degree=Cmp	31	amod	_	_
+30	Assyrian	assyrian	ADJ	JJ	Degree=Pos	31	amod	_	_
+31	mythology	mythology	NOUN	NN	Number=Sing	27	obl	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	history	history	NOUN	NN	Number=Sing	31	conj	_	_
+34	and	and	CCONJ	CC	_	43	cc	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+36	Assyrian	assyrian	ADJ	JJ	Degree=Pos	37	amod	_	_
+37	impact	impact	NOUN	NN	Number=Sing	43	nsubj	_	_
+38	on	on	ADP	IN	_	41	case	_	_
+39	early	early	ADJ	JJ	Degree=Pos	41	amod	_	_
+40	Jewish	jewish	ADJ	JJ	Degree=Pos	41	amod	_	_
+41	theology	theology	NOUN	NN	Number=Sing	37	nmod	_	_
+42	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	cop	_	_
+43	immense	immense	ADJ	JJ	Degree=Pos	25	conj	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = 5
+# text = Although the Neo-Assyrian Empire is prominently remembered today for the supposed excessive brutality of the Neo-Assyrian army, the Assyrians were not excessively brutal when compared to other civilizations of their time, nor when compared to other civilizations throughout human history.
+1	Although	although	SCONJ	IN	_	7	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	Neo-Assyrian	neo-assyrian	PROPN	NNP	Number=Sing	4	compound	_	_
+4	Empire	Empire	PROPN	NNP	Number=Sing	7	nsubj:pass	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+6	prominently	prominently	ADV	RB	_	7	advmod	_	_
+7	remembered	remember	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	24	advcl	_	_
+8	today	today	NOUN	NN	Number=Sing	7	obl:tmod	_	_
+9	for	for	ADP	IN	_	13	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+11	supposed	suppose	VERB	VBN	Tense=Past|VerbForm=Part	13	amod	_	_
+12	excessive	excessive	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	brutality	brutality	NOUN	NN	Number=Sing	7	obl	_	_
+14	of	of	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	Neo-Assyrian	neo-assyrian	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	army	army	NOUN	NN	Number=Sing	13	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	24	punct	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	Assyrians	Assyrians	PROPN	NNPS	Number=Plur	24	nsubj	_	_
+21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	cop	_	_
+22	not	not	PART	RB	_	24	advmod	_	_
+23	excessively	excessively	ADV	RB	_	24	advmod	_	_
+24	brutal	brutal	ADJ	JJ	Degree=Pos	0	root	_	_
+25	when	when	ADV	WRB	PronType=Int	26	mark	_	_
+26	compared	compare	VERB	VBN	Tense=Past|VerbForm=Part	24	advcl	_	_
+27	to	to	ADP	IN	_	29	case	_	_
+28	other	other	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	civilizations	civilization	NOUN	NNS	Number=Plur	26	obl	_	_
+30	of	of	ADP	IN	_	32	case	_	_
+31	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	time	time	NOUN	NN	Number=Sing	29	nmod	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	36	punct	_	_
+34	nor	nor	CCONJ	CC	_	36	cc	_	_
+35	when	when	ADV	WRB	PronType=Int	36	mark	_	_
+36	compared	compare	VERB	VBN	Tense=Past|VerbForm=Part	26	conj	_	_
+37	to	to	ADP	IN	_	39	case	_	_
+38	other	other	ADJ	JJ	Degree=Pos	39	amod	_	_
+39	civilizations	civilization	NOUN	NNS	Number=Plur	36	obl	_	_
+40	throughout	throughout	ADP	IN	_	42	case	_	_
+41	human	human	ADJ	JJ	Degree=Pos	42	amod	_	_
+42	history	history	NOUN	NN	Number=Sing	36	obl	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	24	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = In the late 7th century BC, the Assyrian Empire tore itself apart with a series of brutal civil wars, weakening itself to such a degree that a coalition of its former subjects; the Babylonians, Chaldeans, Medes, Persians, Parthians, Scythians and Cimmerians, were able to attack Assyria, finally bringing its empire down by 605 BC.
 1	In	in	ADP	IN	_	6	case	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
@@ -3430,7 +3914,547 @@
 1	Neo	neo	ADJ	JJ	Degree=Pos	3	advmod	_	SpaceAfter=No
 2	-	-	PUNCT	HYPH	_	3	punct	_	SpaceAfter=No
 3	Babylonian	babylonian	ADJ	JJ	Degree=Pos	4	amod	_	_
-4	period	period	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+4	period	period	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = The short-lived Neo-Babylonian Empire (620–539 BC) succeeded that of Assyria.
+1	The	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+2	short	short	ADJ	JJ	Degree=Pos	4	amod	_	SpaceAfter=No
+3	-	-	PUNCT	HYPH	_	4	punct	_	SpaceAfter=No
+4	lived	live	VERB	VBN	Tense=Past|VerbForm=Part	6	amod	_	_
+5	Neo-Babylonian	neo-babylonian	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	Empire	Empire	PROPN	NNP	Number=Sing	11	nsubj	_	_
+7	(	(	PUNCT	-LRB-	_	9	punct	_	SpaceAfter=No
+8	620–539	620–539	NUM	CD	NumType=Card	9	nummod	_	_
+9	BC	bc	NOUN	NN	Number=Sing	6	appos	_	SpaceAfter=No
+10	)	)	PUNCT	-RRB-	_	9	punct	_	_
+11	succeeded	succeed	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+12	that	that	PRON	DT	Number=Sing|PronType=Dem	11	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Assyria	Assyria	PROPN	NNP	Number=Sing	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = 2
+# text = It failed to attain the size, power or longevity of its predecessor; however, it came to dominate
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	failed	fail	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	to	to	PART	TO	_	4	mark	_	_
+4	attain	attain	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	size	size	NOUN	NN	Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	power	power	NOUN	NN	Number=Sing	6	conj	_	_
+9	or	or	CCONJ	CC	_	10	cc	_	_
+10	longevity	longevity	NOUN	NN	Number=Sing	6	conj	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
+13	predecessor	predecessor	NOUN	NN	Number=Sing	6	nmod	_	SpaceAfter=No
+14	;	;	PUNCT	,	_	2	punct	_	_
+15	however	however	ADV	RB	_	18	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	parataxis	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	dominate	dominate	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+
+# sent_id = 3
+# text = The Levant, Canaan, Arabia, Israel and Judah, and to defeat Egypt.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	Levant	Levant	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	Canaan	Canaan	PROPN	NNP	Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	Arabia	Arabia	PROPN	NNP	Number=Sing	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	Israel	Israel	PROPN	NNP	Number=Sing	2	conj	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	Judah	Judah	PROPN	NNP	Number=Sing	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	defeat	defeat	VERB	VB	VerbForm=Inf	2	conj	_	_
+15	Egypt	Egypt	PROPN	NNP	Number=Sing	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 4
+# text = Initially, Babylon was ruled by yet another foreign dynasty, that of the Chaldeans, who had migrated to the region in the late 10th or early 9th century BC.
+1	Initially	initially	ADV	RB	_	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	Babylon	Babylon	PROPN	NNP	Number=Sing	5	nsubj:pass	_	_
+4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	_	_
+5	ruled	rule	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	by	by	ADP	IN	_	10	case	_	_
+7	yet	yet	ADV	RB	_	10	advmod	_	_
+8	another	another	DET	DT	_	10	det	_	_
+9	foreign	foreign	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	dynasty	dynasty	NOUN	NN	Number=Sing	5	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	that	that	PRON	DT	Number=Sing|PronType=Dem	10	appos	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Chaldeans	Chaldeans	PROPN	NNPS	Number=Plur	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	who	who	PRON	WP	PronType=Rel	19	nsubj	_	_
+18	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	aux	_	_
+19	migrated	migrate	VERB	VBN	Tense=Past|VerbForm=Part	15	acl:relcl	_	_
+20	to	to	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	region	region	NOUN	NN	Number=Sing	19	obl	_	_
+23	in	in	ADP	IN	_	31	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+25	late	late	ADJ	JJ	Degree=Pos	30	amod	_	_
+26	10th	10th	ADJ	JJ	Degree=Pos|NumType=Ord	30	amod	_	_
+27	or	or	CCONJ	CC	_	29	cc	_	_
+28	early	early	ADJ	JJ	Degree=Pos	26	conj	_	_
+29	9th	9th	ADJ	JJ	Degree=Pos|NumType=Ord	26	conj	_	_
+30	century	century	NOUN	NN	Number=Sing	19	obl	_	_
+31	BC	bc	NOUN	NN	Number=Sing	19	obl	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 5
+# text = Its greatest king, Nebuchadnezzar II, rivalled another non native ruler, the ethnically unrelated Amorite king Hammurabi, as the greatest king of Babylon.
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	SpaceAfter=No
+2	s	's	PART	POS	_	1	case	_	_
+3	greatest	greatest	ADJ	JJS	Degree=Sup	4	amod	_	_
+4	king	king	NOUN	NN	Number=Sing	9	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Nebuchadnezzar	Nebuchadnezzar	PROPN	NNP	Number=Sing	4	appos	_	_
+7	II	II	PROPN	NNP	Number=Sing	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	rivalled	rival	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	another	another	DET	DT	_	13	det	_	_
+11	non	non	ADV	RB	_	12	advmod	_	_
+12	native	native	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	ruler	ruler	NOUN	NN	Number=Sing	9	obj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+16	ethnically	ethnically	ADV	RB	_	17	advmod	_	_
+17	unrelated	unrelated	ADJ	JJ	Degree=Pos	19	amod	_	_
+18	Amorite	amorite	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	king	king	NOUN	NN	Number=Sing	13	appos	_	_
+20	Hammurabi	Hammurabi	PROPN	NNP	Number=Sing	19	appos	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	9	punct	_	_
+22	as	as	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+24	greatest	greatest	ADJ	JJS	Degree=Sup	25	amod	_	_
+25	king	king	NOUN	NN	Number=Sing	9	obl	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	Babylon	Babylon	PROPN	NNP	Number=Sing	25	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 6
+# text = However, by 556 BC, the Chaldeans had been deposed from power by the Assyrian born Nabonidus and his son and regent Belshazzar.
+1	However	however	ADV	RB	_	11	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	11	punct	_	_
+3	by	by	ADP	IN	_	5	case	_	_
+4	556	556	NUM	CD	NumType=Card	5	nummod	_	_
+5	BC	bc	NOUN	NN	Number=Sing	11	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Chaldeans	Chaldeans	PROPN	NNPS	Number=Plur	11	nsubj:pass	_	_
+9	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	aux	_	_
+10	been	be	AUX	VBN	Tense=Past|VerbForm=Part	11	aux:pass	_	_
+11	deposed	depose	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+12	from	from	ADP	IN	_	13	case	_	_
+13	power	power	NOUN	NN	Number=Sing	11	obl	_	_
+14	by	by	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	Assyrian	assyrian	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	born	bear	VERB	VBN	Tense=Past|VerbForm=Part	11	obl	_	_
+18	Nabonidus	Nabonidus	PROPN	NNP	Number=Sing	17	appos	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	son	son	NOUN	NN	Number=Sing	18	conj	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	regent	regent	NOUN	NN	Number=Sing	21	conj	_	_
+24	Belshazzar	Belshazzar	PROPN	NNP	Number=Sing	21	appos	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = 7
+# text = The defeat of the Assyrians and the transfer of empire to Babylon marked the first time the city, and southern Mesopotamia in general, had risen to dominate the Ancient Near East since the collapse of Hammurabi's Old Babylonian Empire nearly a thousand years prior.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	defeat	defeat	NOUN	NN	Number=Sing	13	nsubj	_	_
+3	of	of	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	Assyrians	Assyrians	PROPN	NNPS	Number=Plur	2	nmod	_	_
+6	and	and	CCONJ	CC	_	8	cc	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	transfer	transfer	NOUN	NN	Number=Sing	2	conj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	empire	empire	NOUN	NN	Number=Sing	8	nmod	_	_
+11	to	to	ADP	IN	_	12	case	_	_
+12	Babylon	Babylon	PROPN	NNP	Number=Sing	8	nmod	_	_
+13	marked	mark	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	16	amod	_	_
+16	time	time	NOUN	NN	Number=Sing	13	obj	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	city	city	NOUN	NN	Number=Sing	27	nsubj	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	southern	southern	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	18	conj	_	_
+23	in	in	ADP	IN	_	24	case	_	_
+24	general	general	ADJ	JJ	Degree=Pos	22	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux	_	_
+27	risen	rise	VERB	VBN	Tense=Past|VerbForm=Part	16	acl:relcl	_	_
+28	to	to	PART	TO	_	29	mark	_	_
+29	dominate	dominate	VERB	VB	VerbForm=Inf	27	xcomp	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+31	Ancient	ancient	ADJ	JJ	Degree=Pos	33	amod	_	_
+32	Near	Near	PROPN	NNP	Number=Sing	33	compound	_	_
+33	East	East	PROPN	NNP	Number=Sing	29	obj	_	_
+34	since	since	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	collapse	collapse	NOUN	NN	Number=Sing	29	obl	_	_
+37	of	of	ADP	IN	_	42	case	_	_
+38	Hammurabi	Hammurabi	PROPN	NNP	Number=Sing	42	nmod:poss	_	SpaceAfter=No
+39	's	's	PART	POS	_	38	case	_	_
+40	Old	old	ADJ	JJ	Degree=Pos	42	amod	_	_
+41	Babylonian	Babylonian	PROPN	NNP	Number=Sing	42	amod	_	_
+42	Empire	Empire	PROPN	NNP	Number=Sing	36	nmod	_	_
+43	nearly	nearly	ADV	RB	_	45	advmod	_	_
+44	a	a	DET	DT	Definite=Ind|PronType=Art	45	det	_	_
+45	thousand	thousand	NUM	CD	NumType=Card	46	nummod	_	_
+46	years	year	NOUN	NNS	Number=Plur	47	obl:npmod	_	_
+47	prior	prior	ADV	RB	Degree=Pos	36	advmod	_	SpaceAfter=No
+48	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = 8
+# text = The period of Neo-Babylonian rule thus saw unprecedented economic and population growth throughout Babylonia and a renaissance of culture and artwork, with the Neo-Babylonian kings conducting massive building projects, especially in Babylon itself, and bringing back many elements from the previous 2,000 or so years of Sumero-Akkadian culture.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	period	period	NOUN	NN	Number=Sing	9	nsubj	_	_
+3	of	of	ADP	IN	_	7	case	_	_
+4	Neo	neo	ADJ	AFX	_	6	amod	_	SpaceAfter=No
+5	-	-	PUNCT	HYPH	_	6	punct	_	SpaceAfter=No
+6	Babylonian	babylonian	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	rule	rule	NOUN	NN	Number=Sing	2	nmod	_	_
+8	thus	thus	ADV	RB	_	9	advmod	_	_
+9	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	unprecedented	unprecedented	ADJ	JJ	Degree=Pos	14	amod	_	_
+11	economic	economic	ADJ	JJ	Degree=Pos	14	amod	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	population	population	NOUN	NN	Number=Sing	11	conj	_	_
+14	growth	growth	NOUN	NN	Number=Sing	9	obj	_	_
+15	throughout	throughout	ADP	IN	_	16	case	_	_
+16	Babylonia	Babylonia	PROPN	NNP	Number=Sing	14	nmod	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	_
+19	renaissance	renaissance	NOUN	NN	Number=Sing	14	conj	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	culture	culture	NOUN	NN	Number=Sing	19	nmod	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	artwork	artwork	NOUN	NN	Number=Sing	21	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	9	punct	_	_
+25	with	with	SCONJ	IN	_	29	mark	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+27	Neo-Babylonian	neo-babylonian	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	kings	king	NOUN	NNS	Number=Plur	29	nsubj	_	_
+29	conducting	conduct	VERB	VBG	VerbForm=Ger	9	advcl	_	_
+30	massive	massive	ADJ	JJ	Degree=Pos	32	amod	_	_
+31	building	building	NOUN	NN	Number=Sing	32	compound	_	_
+32	projects	project	NOUN	NNS	Number=Plur	29	obj	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	especially	especially	ADV	RB	_	36	advmod	_	_
+35	in	in	ADP	IN	_	36	case	_	_
+36	Babylon	Babylon	PROPN	NNP	Number=Sing	29	obl	_	_
+37	itself	itself	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	36	nmod:npmod	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	40	punct	_	_
+39	and	and	CCONJ	CC	_	40	cc	_	_
+40	bringing	bring	VERB	VBG	VerbForm=Ger	29	conj	_	_
+41	back	back	ADV	RB	_	40	advmod	_	_
+42	many	many	ADJ	JJ	Degree=Pos	43	amod	_	_
+43	elements	element	NOUN	NNS	Number=Plur	40	obj	_	_
+44	from	from	ADP	IN	_	50	case	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	50	det	_	_
+46	previous	previous	ADJ	JJ	Degree=Pos	50	amod	_	_
+47	2,000	2,000	NUM	CD	NumType=Card	50	nummod	_	_
+48	or	or	CCONJ	CC	_	49	cc	_	_
+49	so	so	ADV	RB	_	47	conj	_	_
+50	years	year	NOUN	NNS	Number=Plur	40	obl	_	_
+51	of	of	ADP	IN	_	55	case	_	_
+52	Sumero	sumero	ADJ	AFX	Number=Sing	54	compound	_	SpaceAfter=No
+53	-	-	PUNCT	HYPH	_	54	punct	_	SpaceAfter=No
+54	Akkadian	akkadian	ADJ	JJ	Degree=Pos	55	amod	_	_
+55	culture	culture	NOUN	NN	Number=Sing	50	nmod	_	SpaceAfter=No
+56	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 9
+# text = The empire was the last of the Mesopotamian empires to be ruled by monarchs native to Mesopotamia.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	empire	empire	NOUN	NN	Number=Sing	5	nsubj	_	_
+3	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	last	last	ADJ	JJ	Degree=Pos	0	root	_	_
+6	of	of	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	Mesopotamian	mesopotamian	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	empires	empire	NOUN	NNS	Number=Plur	5	obl	_	_
+10	to	to	PART	TO	_	12	mark	_	_
+11	be	be	AUX	VB	VerbForm=Inf	12	aux:pass	_	_
+12	ruled	rule	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	xcomp	_	_
+13	by	by	ADP	IN	_	14	case	_	_
+14	monarchs	monarch	NOUN	NNS	Number=Plur	12	obl	_	_
+15	native	native	ADJ	JJ	Degree=Pos	14	amod	_	_
+16	to	to	ADP	IN	_	17	case	_	_
+17	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 10
+# text = Nebuchadnezzar II succeeded Nabopolassar in 605 BC following the death of his father.
+1	Nebuchadnezzar	Nebuchadnezzar	PROPN	NNP	Number=Sing	3	nsubj	_	_
+2	II	II	NUM	CD	NumType=Card	1	nummod	_	_
+3	succeeded	succeed	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	Nabopolassar	Nabopolassar	PROPN	NNP	Number=Sing	3	obj	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	605	605	NUM	CD	NumType=Card	7	nummod	_	_
+7	BC	bc	NOUN	NN	Number=Sing	3	obl	_	_
+8	following	follow	VERB	VBG	VerbForm=Ger	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	death	death	NOUN	NN	Number=Sing	3	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
+13	father	father	NOUN	NN	Number=Sing	10	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 11
+# text = The empire Nebuchadnezzar inherited was among the most powerful in the world, in which he quickly reinforced his father's alliance with the Medes by marrying Cyaxares's daughter or granddaughter, Amytis.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	empire	empire	NOUN	NN	Number=Sing	9	nsubj	_	_
+3	Nebuchadnezzar	Nebuchadnezzar	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	inherited	inherit	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
+5	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
+6	among	among	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	most	most	ADV	RBS	_	9	advmod	_	_
+9	powerful	powerful	ADJ	JJ	Degree=Pos	0	root	_	_
+10	in	in	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	world	world	NOUN	NN	Number=Sing	9	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	9	punct	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	which	which	PRON	WDT	PronType=Rel	18	obl	_	_
+16	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+17	quickly	quickly	ADV	RB	_	18	advmod	_	_
+18	reinforced	reinforce	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
+19	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	father	father	NOUN	NN	Number=Sing	22	nmod:poss	_	SpaceAfter=No
+21	's	's	PART	POS	_	20	case	_	_
+22	alliance	alliance	NOUN	NN	Number=Sing	18	obj	_	_
+23	with	with	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	Medes	Medes	PROPN	NNPS	Number=Plur	22	nmod	_	_
+26	by	by	SCONJ	IN	_	27	mark	_	_
+27	marrying	marry	VERB	VBG	VerbForm=Ger	18	advcl	_	_
+28	Cyaxares	Cyaxares	PROPN	NNP	Number=Sing	30	nmod:poss	_	SpaceAfter=No
+29	's	's	PART	POS	_	28	case	_	_
+30	daughter	daughter	NOUN	NN	Number=Sing	27	obj	_	_
+31	or	or	CCONJ	CC	_	32	cc	_	_
+32	granddaughter	granddaughter	NOUN	NN	Number=Sing	30	conj	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	30	punct	_	_
+34	Amytis	Amytis	PROPN	NNP	Number=Sing	30	appos	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 12
+# text = Some sources suggest that the famous Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World, were built by Nebuchadnezzar for his wife as to remind her of her homeland (though the existence of these gardens is debated).
+1	Some	some	DET	DT	_	2	det	_	_
+2	sources	source	NOUN	NNS	Number=Plur	3	nsubj	_	_
+3	suggest	suggest	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	that	that	SCONJ	IN	_	23	mark	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+6	famous	famous	ADJ	JJ	Degree=Pos	8	amod	_	_
+7	Hanging	Hanging	PROPN	NNP	Number=Sing	8	compound	_	_
+8	Gardens	Garden	PROPN	NNPS	Number=Plur	23	nsubj:pass	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Babylon	Babylon	PROPN	NNP	Number=Sing	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	8	punct	_	_
+12	one	one	NUM	CD	NumType=Card	8	appos	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	Seven	Seven	PROPN	NNP	Number=Sing	16	compound	_	_
+16	Wonders	Wonders	PROPN	NNPS	Number=Plur	12	nmod	_	_
+17	of	of	ADP	IN	_	20	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	Ancient	Ancient	PROPN	NNP	Number=Sing	20	compound	_	_
+20	World	World	PROPN	NNP	Number=Sing	16	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
+23	built	build	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	ccomp	_	_
+24	by	by	ADP	IN	_	25	case	_	_
+25	Nebuchadnezzar	Nebuchadnezzar	PROPN	NNP	Number=Sing	23	obl	_	_
+26	for	for	ADP	IN	_	28	case	_	_
+27	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	nmod:poss	_	_
+28	wife	wife	NOUN	NN	Number=Sing	23	obl	_	_
+29	as	as	SCONJ	IN	_	31	mark	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	remind	remind	VERB	VB	VerbForm=Inf	23	advcl	_	_
+32	her	she	PRON	PRP	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	31	obj	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	35	nmod:poss	_	_
+35	homeland	homeland	NOUN	NN	Number=Sing	31	obl	_	_
+36	(	(	PUNCT	-LRB-	_	44	punct	_	SpaceAfter=No
+37	though	though	SCONJ	IN	_	44	mark	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	existence	existence	NOUN	NN	Number=Sing	44	nsubj:pass	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	these	these	DET	DT	Number=Plur|PronType=Dem	42	det	_	_
+42	gardens	garden	NOUN	NNS	Number=Plur	39	nmod	_	_
+43	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	aux:pass	_	_
+44	debated	debate	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	23	advcl	_	SpaceAfter=No
+45	)	)	PUNCT	-RRB-	_	44	punct	_	SpaceAfter=No
+46	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 13
+# text = Nebuchadnezzar's 43-year reign would bring with it a golden age for Babylon, which was to become the most powerful kingdom in the Middle East.
+1	Nebuchadnezzar	Nebuchadnezzar	PROPN	NNP	Number=Sing	6	nmod:poss	_	SpaceAfter=No
+2	's	's	PART	POS	_	1	case	_	_
+3	43	43	NUM	CD	NumType=Card	5	nummod	_	SpaceAfter=No
+4	-	-	PUNCT	HYPH	_	5	punct	_	SpaceAfter=No
+5	year	year	NOUN	NN	Number=Sing	6	compound	_	_
+6	reign	reign	NOUN	NN	Number=Sing	8	nsubj	_	_
+7	would	would	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	bring	bring	VERB	VB	VerbForm=Inf	0	root	_	_
+9	with	with	ADP	IN	_	10	case	_	_
+10	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	obl	_	_
+11	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+12	golden	golden	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	age	age	NOUN	NN	Number=Sing	8	obj	_	_
+14	for	for	ADP	IN	_	15	case	_	_
+15	Babylon	Babylon	PROPN	NNP	Number=Sing	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	which	which	PRON	WDT	PronType=Rel	18	nsubj	_	_
+18	was	be	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	become	become	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+22	most	most	ADV	RBS	_	23	advmod	_	_
+23	powerful	powerful	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	kingdom	kingdom	NOUN	NN	Number=Sing	20	xcomp	_	_
+25	in	in	ADP	IN	_	28	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+27	Middle	Middle	PROPN	NNP	Number=Sing	28	compound	_	_
+28	East	East	PROPN	NNP	Number=Sing	24	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = In the 6th century BC, Cyrus the Great of neighbouring Persia defeated the Neo-Babylonian Empire at the Battle of Opis and Mesopotamia was subsumed into the Achaemenid Empire for nearly two centuries.
+1	In	in	ADP	IN	_	5	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+3	6th	6th	ADJ	JJ	Degree=Pos|NumType=Ord	4	amod	_	_
+4	century	century	NOUN	NN	Number=Sing	5	compound	_	_
+5	BC	bc	NOUN	NN	Number=Sing	13	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	13	punct	_	_
+7	Cyrus	Cyrus	PROPN	NNP	Number=Sing	13	nsubj	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	Great	Great	PROPN	NNP	Number=Sing	7	appos	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	neighbouring	neighbour	VERB	VBG	VerbForm=Ger	12	amod	_	_
+12	Persia	Persia	PROPN	NNP	Number=Sing	9	nmod	_	_
+13	defeated	defeat	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	Neo-Babylonian	neo-babylonian	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	Empire	Empire	PROPN	NNP	Number=Sing	13	obj	_	_
+17	at	at	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	Battle	Battle	PROPN	NNP	Number=Sing	13	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Opis	Opis	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	25	nsubj:pass	_	_
+24	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	_	_
+25	subsumed	subsume	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	conj	_	_
+26	into	into	ADP	IN	_	29	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+28	Achaemenid	Achaemenid	PROPN	NNP	Number=Sing	29	compound	_	_
+29	Empire	Empire	PROPN	NNP	Number=Sing	25	obl	_	_
+30	for	for	ADP	IN	_	33	case	_	_
+31	nearly	nearly	ADV	RB	_	32	advmod	_	_
+32	two	two	NUM	CD	NumType=Card	33	nummod	_	_
+33	centuries	century	NOUN	NNS	Number=Plur	25	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = 2
+# text = The Achaemenids made Babylon their main capital.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	Achaemenids	Achaemenids	PROPN	NNPS	Number=Plur	3	nsubj	_	_
+3	made	make	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	Babylon	Babylon	PROPN	NNP	Number=Sing	3	obj	_	_
+5	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+6	main	main	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	capital	capital	NOUN	NN	Number=Sing	3	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 3
+# text = The Chaldeans and Chaldea disappeared at around this time, though both Assyria and Babylonia endured and thrived under Achaemenid rule (see Achaemenid Assyria).
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	Chaldeans	Chaldeans	PROPN	NNPS	Number=Plur	5	nsubj	_	_
+3	and	and	CCONJ	CC	_	4	cc	_	_
+4	Chaldea	Chaldea	PROPN	NNP	Number=Sing	2	conj	_	_
+5	disappeared	disappear	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	at	at	ADP	IN	_	9	case	_	_
+7	around	around	ADP	IN	_	9	advmod	_	_
+8	this	this	DET	DT	Number=Sing|PronType=Dem	9	det	_	_
+9	time	time	NOUN	NN	Number=Sing	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	5	punct	_	_
+11	though	though	SCONJ	IN	_	16	mark	_	_
+12	both	both	CCONJ	CC	_	13	cc:preconj	_	_
+13	Assyria	Assyria	PROPN	NNP	Number=Sing	16	nsubj	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	Babylonia	Babylonia	PROPN	NNP	Number=Sing	13	conj	_	_
+16	endured	endure	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	thrived	thrive	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	conj	_	_
+19	under	under	ADP	IN	_	21	case	_	_
+20	Achaemenid	Achaemenid	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	rule	rule	NOUN	NN	Number=Sing	18	obl	_	_
+22	(	(	PUNCT	-LRB-	_	23	punct	_	SpaceAfter=No
+23	see	see	VERB	VB	Mood=Imp|VerbForm=Fin	5	parataxis	_	_
+24	Achaemenid	Achaemenid	PROPN	NNP	Number=Sing	25	compound	_	_
+25	Assyria	Assyria	PROPN	NNP	Number=Sing	23	obj	_	SpaceAfter=No
+26	)	)	PUNCT	-RRB-	_	23	punct	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 4
+# text = Their kings retained Assyrian Imperial Aramaic as the language of empire, together with the Assyrian imperial infrastructure, and an Assyrian style of art and architecture.
+1	Their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	_
+2	kings	king	NOUN	NNS	Number=Plur	3	nsubj	_	_
+3	retained	retain	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	Assyrian	assyrian	ADJ	JJ	Degree=Pos	6	amod	_	_
+5	Imperial	imperial	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	Aramaic	Aramaic	PROPN	NNP	Number=Sing	3	obj	_	_
+7	as	as	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	language	language	NOUN	NN	Number=Sing	3	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	empire	empire	NOUN	NN	Number=Sing	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	3	punct	_	_
+13	together	together	ADV	RB	_	18	advmod	_	_
+14	with	with	ADP	IN	_	18	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+16	Assyrian	assyrian	ADJ	JJ	Degree=Pos	18	amod	_	_
+17	imperial	imperial	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	infrastructure	infrastructure	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	23	punct	_	_
+20	and	and	CCONJ	CC	_	23	cc	_	_
+21	an	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_
+22	Assyrian	assyrian	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	style	style	NOUN	NN	Number=Sing	18	conj	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	art	art	NOUN	NN	Number=Sing	23	nmod	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	architecture	architecture	NOUN	NN	Number=Sing	25	conj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3793,7 +4817,7 @@
 # sent_id = 1
 # text = Middle Ages
 1	Middle	Middle	PROPN	NNP	Number=Sing	2	compound	_	_
-2	Ages	Ages	PROPN	NNPS	Number=Plur	0	root	_	SpacesAfter=\n
+2	Ages	Ages	PROPN	NNPS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4376,7 +5400,7 @@
 # sent_id = 1
 # text = Ottoman Iraq
 1	Ottoman	ottoman	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	Iraq	Iraq	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+2	Iraq	Iraq	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4963,14 +5987,7 @@
 20	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
 21	combat	combat	NOUN	NN	Number=Sing	22	compound	_	_
 22	troops	troops	NOUN	NNS	Number=Plur	12	acl:relcl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	10	punct	_	SpaceAfter=No
-
-# sent_id = 10
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4980,7 +5997,7 @@
 # sent_id = 1
 # text = Contemporary period
 1	Contemporary	contemporary	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	period	period	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	period	period	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4995,7 +6012,7 @@
 4	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	2	nmod	_	_
 5	and	and	CCONJ	CC	_	7	cc	_	_
 6	independent	independent	ADJ	JJ	Degree=Pos	7	amod	_	_
-7	kingdom	kingdom	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+7	kingdom	kingdom	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5170,17 +6187,202 @@
 16	and	and	CCONJ	CC	_	17	cc	_	_
 17	ministry	ministry	NOUN	NN	Number=Sing	15	conj	_	_
 18	offices	office	NOUN	NNS	Number=Plur	13	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	5	punct	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
 
-# sent_id = 6
-# text = [specify][page needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	specify	specify	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	-RRB-	_	2	punct	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	page	page	NOUN	NN	Number=Sing	2	appos	_	SpacesAfter= 
-6	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	5	acl	_	SpaceAfter=No
-7	]	]	PUNCT	-RRB-	_	5	punct	_	SpacesAfter=\n
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Faced with spiraling costs and influenced by the public protestations of the war hero T. E. Lawrence in The Times, Britain replaced Arnold Wilson in October 1920 with a new Civil Commissioner, Sir Percy Cox.
+1	Faced	face	VERB	VBN	Tense=Past|VerbForm=Part	23	advcl	_	SpacesBefore=\n
+2	with	with	ADP	IN	_	4	case	_	_
+3	spiraling	spiral	VERB	VBG	VerbForm=Ger	4	amod	_	_
+4	costs	cost	NOUN	NNS	Number=Plur	1	obl	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	influenced	influence	VERB	VBN	Tense=Past|VerbForm=Part	1	conj	_	_
+7	by	by	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+9	public	public	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	protestations	protestation	NOUN	NNS	Number=Plur	6	obl	_	_
+11	of	of	ADP	IN	_	15	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+13	war	war	NOUN	NN	Number=Sing	14	compound	_	_
+14	hero	hero	NOUN	NN	Number=Sing	15	compound	_	_
+15	T.	T.	PROPN	NNP	Number=Sing	10	nmod	_	_
+16	E.	E.	PROPN	NNP	Number=Sing	15	flat	_	_
+17	Lawrence	Lawrence	PROPN	NNP	Number=Sing	15	flat	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	The	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	Times	Times	PROPN	NNP	Number=Sing	10	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	Britain	Britain	PROPN	NNP	Number=Sing	23	nsubj	_	_
+23	replaced	replace	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+24	Arnold	Arnold	PROPN	NNP	Number=Sing	23	obj	_	_
+25	Wilson	Wilson	PROPN	NNP	Number=Sing	24	flat	_	_
+26	in	in	ADP	IN	_	27	case	_	_
+27	October	October	PROPN	NNP	Number=Sing	23	obl	_	_
+28	1920	1920	NUM	CD	NumType=Card	27	nummod	_	_
+29	with	with	ADP	IN	_	33	case	_	_
+30	a	a	DET	DT	Definite=Ind|PronType=Art	33	det	_	_
+31	new	new	ADJ	JJ	Degree=Pos	33	amod	_	_
+32	Civil	civil	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	Commissioner	commissioner	NOUN	NN	Number=Sing	23	obl	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	Sir	Sir	PROPN	NNP	Number=Sing	33	appos	_	_
+36	Percy	Percy	PROPN	NNP	Number=Sing	35	flat	_	_
+37	Cox	Cox	PROPN	NNP	Number=Sing	35	flat	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = 2
+# text = Cox managed to quell a rebellion, yet was also responsible for implementing the fateful policy of close co-operation with Iraq's Sunni minority.
+1	Cox	Cox	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	managed	manage	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	to	to	PART	TO	_	4	mark	_	_
+4	quell	quell	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
+6	rebellion	rebellion	NOUN	NN	Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	11	punct	_	_
+8	yet	yet	CCONJ	CC	_	11	cc	_	_
+9	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_
+10	also	also	ADV	RB	_	11	advmod	_	_
+11	responsible	responsible	ADJ	JJ	Degree=Pos	2	conj	_	_
+12	for	for	SCONJ	IN	_	13	mark	_	_
+13	implementing	implement	VERB	VBG	VerbForm=Ger	11	advcl	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	fateful	fateful	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	policy	policy	NOUN	NN	Number=Sing	13	obj	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	close	close	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	co-operation	co-operation	NOUN	NN	Number=Sing	16	nmod	_	_
+20	with	with	ADP	IN	_	24	case	_	_
+21	Iraq	Iraq	PROPN	NNP	Number=Sing	24	nmod:poss	_	SpaceAfter=No
+22	's	's	PART	POS	_	21	case	_	_
+23	Sunni	sunni	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	minority	minority	NOUN	NN	Number=Sing	19	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 3
+# text = The institution of slavery was abolished in the 1920s.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	institution	institution	NOUN	NN	Number=Sing	6	nsubj:pass	_	_
+3	of	of	ADP	IN	_	4	case	_	_
+4	slavery	slavery	NOUN	NN	Number=Sing	2	nmod	_	_
+5	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	_	_
+6	abolished	abolish	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	1920s	1920	NOUN	NNS	Number=Plur	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Britain granted independence to the Kingdom of Iraq in 1932, on the urging of King Faisal, though the British retained military bases, local militia in the form of Assyrian Levies, and transit rights for their forces.
+1	Britain	Britain	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	granted	grant	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	independence	independence	NOUN	NN	Number=Sing	2	obj	_	_
+4	to	to	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	Kingdom	Kingdom	PROPN	NNP	Number=Sing	2	obl	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	Iraq	Iraq	PROPN	NNP	Number=Sing	6	nmod	_	_
+9	in	in	ADP	IN	_	10	case	_	_
+10	1932	1932	NUM	CD	NumType=Card	2	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	2	punct	_	_
+12	on	on	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	urging	urging	NOUN	NN	Number=Sing	2	obl	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	King	King	PROPN	NNP	Number=Sing	14	nmod	_	_
+17	Faisal	Faisal	PROPN	NNP	Number=Sing	16	flat	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	2	punct	_	_
+19	though	though	SCONJ	IN	_	22	mark	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	British	british	ADJ	JJ	Degree=Pos	22	nsubj	_	_
+22	retained	retain	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	advcl	_	_
+23	military	military	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	bases	basis	NOUN	NNS	Number=Plur	22	obj	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	local	local	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	militia	militia	NOUN	NN	Number=Sing	24	conj	_	_
+28	in	in	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	form	form	NOUN	NN	Number=Sing	22	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	Assyrian	assyrian	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	Levies	Levies	NOUN	NNS	Number=Plur	30	nmod	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	and	and	CCONJ	CC	_	37	cc	_	_
+36	transit	transit	NOUN	NN	Number=Sing	37	compound	_	_
+37	rights	right	NOUN	NNS	Number=Plur	24	conj	_	_
+38	for	for	ADP	IN	_	40	case	_	_
+39	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	40	nmod:poss	_	_
+40	forces	force	NOUN	NNS	Number=Plur	37	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 2
+# text = King Ghazi ruled as a figurehead after King Faisal's death in 1933, while undermined by attempted military coups, until his death in 1939.
+1	King	King	PROPN	NNP	Number=Sing	3	nsubj	_	_
+2	Ghazi	Ghazi	PROPN	NNP	Number=Sing	1	flat	_	_
+3	ruled	rule	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	as	as	ADP	IN	_	6	case	_	_
+5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
+6	figurehead	figurehead	NOUN	NN	Number=Sing	3	obl	_	_
+7	after	after	ADP	IN	_	11	case	_	_
+8	King	King	PROPN	NNP	Number=Sing	11	nmod:poss	_	_
+9	Faisal	Faisal	PROPN	NNP	Number=Sing	8	flat	_	SpaceAfter=No
+10	's	's	PART	POS	_	8	case	_	_
+11	death	death	NOUN	NN	Number=Sing	3	obl	_	_
+12	in	in	ADP	IN	_	13	case	_	_
+13	1933	1933	NUM	CD	NumType=Card	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	3	punct	_	_
+15	while	while	SCONJ	IN	_	16	mark	_	_
+16	undermined	undermine	VERB	VBN	Tense=Past|VerbForm=Part	3	advcl	_	_
+17	by	by	ADP	IN	_	20	case	_	_
+18	attempted	attempt	VERB	VBN	Tense=Past|VerbForm=Part	20	amod	_	_
+19	military	military	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	coups	coup	NOUN	NNS	Number=Plur	16	obl	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	3	punct	_	_
+22	until	until	ADP	IN	_	24	case	_	_
+23	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	death	death	NOUN	NN	Number=Sing	3	obl	_	_
+25	in	in	ADP	IN	_	26	case	_	_
+26	1939	1939	NUM	CD	NumType=Card	24	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ghazi was followed by his underage son, Faisal II.
+1	Ghazi	Ghazi	PROPN	NNP	Number=Sing	3	nsubj:pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
+3	followed	follow	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	by	by	ADP	IN	_	7	case	_	_
+5	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+6	underage	underage	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	son	son	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	Faisal	Faisal	PROPN	NNP	Number=Sing	7	appos	_	_
+10	II	II	PROPN	NNP	Number=Sing	9	flat	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 4
+# text = 'Abd al-Ilah served as Regent during Faisal's minority.
+1	'Abd	'Abd	PROPN	NNP	Number=Sing	5	nsubj	_	_
+2	al	al	PROPN	NNP	Number=Sing	1	flat	_	SpaceAfter=No
+3	-	-	PUNCT	HYPH	_	1	punct	_	SpaceAfter=No
+4	Ilah	Ilah	PROPN	NNP	Number=Sing	1	flat	_	_
+5	served	serve	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	as	as	ADP	IN	_	7	case	_	_
+7	Regent	Regent	PROPN	NNP	Number=Sing	5	obl	_	_
+8	during	during	ADP	IN	_	11	case	_	_
+9	Faisal	Faisal	PROPN	NNP	Number=Sing	11	nmod:poss	_	SpaceAfter=No
+10	's	's	PART	POS	_	9	case	_	_
+11	minority	minority	NOUN	NN	Number=Sing	5	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5426,7 +6628,7 @@
 1	Republic	Republic	PROPN	NNP	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	4	cc	_	_
 3	Ba'athist	Ba'athist	PROPN	NNP	Number=Sing	4	compound	_	_
-4	Iraq	Iraq	PROPN	NNP	Number=Sing	1	conj	_	SpacesAfter=\n
+4	Iraq	Iraq	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5646,6 +6848,222 @@
 50	July	July	PROPN	NNP	Number=Sing	27	obl	_	_
 51	1979	1979	NUM	CD	NumType=Card	50	nummod	_	SpaceAfter=No
 52	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = In 1979, the Iranian Revolution took place.
+1	In	in	ADP	IN	_	2	case	_	SpacesBefore=\n
+2	1979	1979	NUM	CD	NumType=Card	7	obl	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	7	punct	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+5	Iranian	Iranian	PROPN	NNP	Number=Sing	6	compound	_	_
+6	Revolution	Revolution	PROPN	NNP	Number=Sing	7	nsubj	_	_
+7	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+8	place	place	NOUN	NN	Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 2
+# text = Following months of cross-border raids between the two countries, Saddam declared war on Iran in September 1980, initiating the Iran–Iraq War (or First Persian Gulf War).
+1	Following	follow	VERB	VBG	VerbForm=Ger	2	case	_	_
+2	months	month	NOUN	NNS	Number=Plur	14	obl	_	_
+3	of	of	ADP	IN	_	7	case	_	_
+4	cross	cross	NOUN	NN	Number=Sing	6	compound	_	SpaceAfter=No
+5	-	-	PUNCT	HYPH	_	6	punct	_	SpaceAfter=No
+6	border	border	NOUN	NN	Number=Sing	7	compound	_	_
+7	raids	raid	NOUN	NNS	Number=Plur	2	nmod	_	_
+8	between	between	ADP	IN	_	11	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+10	two	two	NUM	CD	NumType=Card	11	nummod	_	_
+11	countries	country	NOUN	NNS	Number=Plur	7	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	Saddam	Saddam	PROPN	NNP	Number=Sing	14	nsubj	_	_
+14	declared	declare	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+15	war	war	NOUN	NN	Number=Sing	14	obj	_	_
+16	on	on	ADP	IN	_	17	case	_	_
+17	Iran	Iran	PROPN	NNP	Number=Sing	14	obl	_	_
+18	in	in	ADP	IN	_	19	case	_	_
+19	September	September	PROPN	NNP	Number=Sing	14	obl	_	_
+20	1980	1980	NUM	CD	NumType=Card	19	nummod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	14	punct	_	_
+22	initiating	initiate	VERB	VBG	VerbForm=Ger	14	advcl	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+24	Iran	Iran	PROPN	NNP	Number=Sing	26	compound	_	SpaceAfter=No
+25	–	–	PUNCT	HYPH	_	26	punct	_	SpaceAfter=No
+26	Iraq	Iraq	PROPN	NNP	Number=Sing	27	compound	_	_
+27	War	War	PROPN	NNP	Number=Sing	22	obj	_	_
+28	(	(	PUNCT	-LRB-	_	27	punct	_	SpaceAfter=No
+29	or	or	CCONJ	CC	_	33	cc	_	_
+30	First	First	PROPN	NNP	Number=Sing	33	amod	_	_
+31	Persian	Persian	PROPN	NNP	Number=Sing	32	compound	_	_
+32	Gulf	Gulf	PROPN	NNP	Number=Sing	33	compound	_	_
+33	War	War	PROPN	NNP	Number=Sing	27	conj	_	SpaceAfter=No
+34	)	)	PUNCT	-RRB-	_	33	punct	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = 3
+# text = Taking advantage of the post-revolution chaos in Iran, Iraq captured some territories in southwest of Iran, but Iran recaptured all of the lost territories within two years, and for the next six years Iran was on the offensive.
+1	Taking	take	VERB	VBG	VerbForm=Ger	11	advcl	_	_
+2	advantage	advantage	NOUN	NN	Number=Sing	1	obj	_	_
+3	of	of	ADP	IN	_	6	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+5	post-revolution	post-revolution	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	chaos	chaos	NOUN	NN	Number=Sing	2	nmod	_	_
+7	in	in	ADP	IN	_	8	case	_	_
+8	Iran	Iran	PROPN	NNP	Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	Iraq	Iraq	PROPN	NNP	Number=Sing	11	nsubj	_	_
+11	captured	capture	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+12	some	some	DET	DT	_	13	det	_	_
+13	territories	territory	NOUN	NNS	Number=Plur	11	obj	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	southwest	southwest	NOUN	NN	Number=Sing	13	nmod	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Iran	Iran	PROPN	NNP	Number=Sing	15	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	but	but	CCONJ	CC	_	21	cc	_	_
+20	Iran	Iran	PROPN	NNP	Number=Sing	21	nsubj	_	_
+21	recaptured	recapture	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+22	all	all	DET	DT	_	21	obj	_	_
+23	of	of	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+25	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part	26	amod	_	_
+26	territories	territory	NOUN	NNS	Number=Plur	22	nmod	_	_
+27	within	within	ADP	IN	_	29	case	_	_
+28	two	two	NUM	CD	NumType=Card	29	nummod	_	_
+29	years	year	NOUN	NNS	Number=Plur	21	obl	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	41	punct	_	_
+31	and	and	CCONJ	CC	_	41	cc	_	_
+32	for	for	ADP	IN	_	36	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+34	next	next	ADJ	JJ	Degree=Pos	36	amod	_	_
+35	six	six	NUM	CD	NumType=Card	36	nummod	_	_
+36	years	year	NOUN	NNS	Number=Plur	41	obl	_	_
+37	Iran	Iran	PROPN	NNP	Number=Sing	41	nsubj	_	_
+38	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	cop	_	_
+39	on	on	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	offensive	offensive	NOUN	NN	Number=Sing	21	conj	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = 4
+# text = The war, which ended in stalemate in 1988, had cost the lives of between half a million and 1.5 million people.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	war	war	NOUN	NN	Number=Sing	12	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	which	which	PRON	WDT	PronType=Rel	5	nsubj	_	_
+5	ended	end	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
+6	in	in	ADP	IN	_	7	case	_	_
+7	stalemate	stalemate	NOUN	NN	Number=Sing	5	obl	_	_
+8	in	in	ADP	IN	_	9	case	_	_
+9	1988	1988	NUM	CD	NumType=Card	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	cost	cost	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	lives	life	NOUN	NNS	Number=Plur	12	obj	_	_
+15	of	of	ADP	IN	_	23	case	_	_
+16	between	between	ADP	IN	_	19	advmod	_	_
+17	half	half	DET	PDT	_	19	det:predet	_	_
+18	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	_
+19	million	million	NUM	CD	NumType=Card	23	nummod	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	1.5	1.5	NUM	CD	NumType=Card	22	compound	_	_
+22	million	million	NUM	CD	NumType=Card	19	conj	_	_
+23	people	people	NOUN	NNS	Number=Plur	14	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = 5
+# text = In 1981, Israeli aircraft bombed an Iraqi nuclear materials testing reactor at Osirak and was widely criticised at the United Nations.
+1	In	in	ADP	IN	_	2	case	_	_
+2	1981	1981	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	Israeli	israeli	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	aircraft	aircraft	NOUN	NN	Number=Sing	6	nsubj	_	_
+6	bombed	bomb	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+7	an	a	DET	DT	Definite=Ind|PronType=Art	12	det	_	_
+8	Iraqi	iraqi	ADJ	JJ	Degree=Pos	12	amod	_	_
+9	nuclear	nuclear	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	materials	material	NOUN	NNS	Number=Plur	12	compound	_	_
+11	testing	testing	NOUN	NN	Number=Sing	12	compound	_	_
+12	reactor	reactor	NOUN	NN	Number=Sing	6	obj	_	_
+13	at	at	ADP	IN	_	14	case	_	_
+14	Osirak	Osirak	PROPN	NNP	Number=Sing	6	obl	_	_
+15	and	and	CCONJ	CC	_	18	cc	_	_
+16	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux:pass	_	_
+17	widely	widely	ADV	RB	_	18	advmod	_	_
+18	criticised	criticise	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	6	conj	_	_
+19	at	at	ADP	IN	_	22	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+21	United	United	PROPN	NNP	Number=Sing	22	compound	_	_
+22	Nations	Nations	PROPN	NNP	Number=Sing	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 6
+# text = During the eight-year war with Iran, Saddam Hussein extensively used chemical weapons against Iranians.
+1	During	during	ADP	IN	_	6	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+3	eight	eight	NUM	CD	NumType=Card	5	nummod	_	SpaceAfter=No
+4	-	-	PUNCT	HYPH	_	5	punct	_	SpaceAfter=No
+5	year	year	NOUN	NN	Number=Sing	6	compound	_	_
+6	war	war	NOUN	NN	Number=Sing	13	obl	_	_
+7	with	with	ADP	IN	_	8	case	_	_
+8	Iran	Iran	PROPN	NNP	Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	Saddam	Saddam	PROPN	NNP	Number=Sing	13	nsubj	_	_
+11	Hussein	Hussein	PROPN	NNP	Number=Sing	10	flat	_	_
+12	extensively	extensively	ADV	RB	_	13	advmod	_	_
+13	used	use	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+14	chemical	chemical	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	weapons	weapon	NOUN	NNS	Number=Plur	13	obj	_	_
+16	against	against	ADP	IN	_	17	case	_	_
+17	Iranians	Iranians	PROPN	NNPS	Number=Plur	13	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = 7
+# text = In the final stages of the Iran–Iraq War, the Ba'athist Iraqi regime led the Al-Anfal Campaign, a genocidal campaign that targeted Iraqi Kurds, and led to the killing of 50,000–100,000 civilians.
+1	In	in	ADP	IN	_	4	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	final	final	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	stages	stage	NOUN	NNS	Number=Plur	16	obl	_	_
+5	of	of	ADP	IN	_	10	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+7	Iran	Iran	PROPN	NNP	Number=Sing	10	compound	_	SpaceAfter=No
+8	–	-	PUNCT	HYPH	_	9	punct	_	SpaceAfter=No
+9	Iraq	Iraq	PROPN	NNP	Number=Sing	10	compound	_	_
+10	War	War	PROPN	NNP	Number=Sing	4	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	16	punct	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+13	Ba'athist	Ba'athist	PROPN	NNP	Number=Sing	15	compound	_	_
+14	Iraqi	iraqi	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	regime	regime	NOUN	NN	Number=Sing	16	nsubj	_	_
+16	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+18	Al	Al	PROPN	NNP	Number=Sing	20	compound	_	SpaceAfter=No
+19	-	-	PUNCT	HYPH	_	20	punct	_	SpaceAfter=No
+20	Anfal	Anfal	PROPN	NNP	Number=Sing	21	compound	_	_
+21	Campaign	Campaign	PROPN	NNP	Number=Sing	16	obj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	a	a	DET	DT	Definite=Ind|PronType=Art	25	det	_	_
+24	genocidal	genocidal	ADJ	JJ	Degree=Pos	25	amod	_	_
+25	campaign	campaign	NOUN	NN	Number=Sing	21	appos	_	_
+26	that	that	PRON	WDT	PronType=Rel	27	nsubj	_	_
+27	targeted	target	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	25	acl:relcl	_	_
+28	Iraqi	iraqi	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	Kurds	Kurds	PROPN	NNPS	Number=Plur	27	obj	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	32	punct	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	conj	_	_
+33	to	to	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	killing	killing	NOUN	NN	Number=Sing	32	obl	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	50,000–100,000	50,000–100,000	NUM	CD	NumType=Card	38	nummod	_	_
+38	civilians	civilian	NOUN	NNS	Number=Plur	35	nmod	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	16	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6101,7 +7519,7 @@
 # sent_id = 1
 # text = 21st century
 1	21st	21st	ADJ	JJ	Degree=Pos|NumType=Ord	2	amod	_	_
-2	century	century	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	century	century	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6117,7 +7535,7 @@
 # text = Invasion and occupation
 1	Invasion	invasion	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	occupation	occupation	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	occupation	occupation	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6673,6 +8091,56 @@
 57	hanged	hang	VERB	VBN	Tense=Past|VerbForm=Part	49	conj	_	SpaceAfter=No
 58	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = In late 2006, the US government's Iraq Study Group recommended that the US begin focusing on training Iraqi military personnel and in January 2007 US President George W. Bush announced a "Surge" in the number of US troops deployed to the country.
+1	In	in	ADP	IN	_	3	case	_	_
+2	late	late	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	2006	2006	NUM	CD	NumType=Card	12	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	12	punct	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+6	US	US	PROPN	NNP	Number=Sing	7	compound	_	_
+7	government	government	NOUN	NN	Number=Sing	11	nmod:poss	_	SpaceAfter=No
+8	's	's	PART	POS	_	7	case	_	_
+9	Iraq	Iraq	PROPN	NNP	Number=Sing	11	compound	_	_
+10	Study	Study	PROPN	NNP	Number=Sing	11	compound	_	_
+11	Group	Group	PROPN	NNP	Number=Sing	12	nsubj	_	_
+12	recommended	recommend	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+13	that	that	SCONJ	IN	_	16	mark	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	US	US	PROPN	NNP	Number=Sing	16	nsubj	_	_
+16	begin	begin	VERB	VB	VerbForm=Inf	12	ccomp	_	_
+17	focusing	focus	VERB	VBG	VerbForm=Ger	16	xcomp	_	_
+18	on	on	SCONJ	IN	_	19	mark	_	_
+19	training	train	VERB	VBG	VerbForm=Ger	17	advcl	_	_
+20	Iraqi	iraqi	ADJ	JJ	Degree=Pos	22	amod	_	_
+21	military	military	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	personnel	personnel	NOUN	NNS	Number=Plur	19	obj	_	_
+23	and	and	CCONJ	CC	_	32	cc	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	January	January	PROPN	NNP	Number=Sing	32	obl	_	_
+26	2007	2007	NUM	CD	NumType=Card	25	nummod	_	_
+27	US	US	PROPN	NNP	Number=Sing	28	compound	_	_
+28	President	President	PROPN	NNP	Number=Sing	32	nsubj	_	_
+29	George	George	PROPN	NNP	Number=Sing	28	flat	_	_
+30	W.	W.	PROPN	NNP	Number=Sing	28	flat	_	_
+31	Bush	Bush	PROPN	NNP	Number=Sing	28	flat	_	_
+32	announced	announce	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	conj	_	_
+33	a	a	DET	DT	Definite=Ind|PronType=Art	35	det	_	_
+34	"	"	PUNCT	``	_	35	punct	_	SpaceAfter=No
+35	Surge	surge	NOUN	NN	Number=Sing	32	obj	_	SpaceAfter=No
+36	"	"	PUNCT	''	_	35	punct	_	_
+37	in	in	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	number	number	NOUN	NN	Number=Sing	35	nmod	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	US	US	PROPN	NNP	Number=Sing	42	compound	_	_
+42	troops	troops	NOUN	NNS	Number=Plur	39	nmod	_	_
+43	deployed	deploy	VERB	VBN	Tense=Past|VerbForm=Part	42	acl	_	_
+44	to	to	ADP	IN	_	46	case	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	country	country	NOUN	NN	Number=Sing	43	obl	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -6750,7 +8218,7 @@
 # text = Instability and ISIS
 1	Instability	instability	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	ISIS	ISIS	PROPN	NNP	Number=Sing	1	conj	_	SpacesAfter=\n
+3	ISIS	ISIS	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7384,57 +8852,53 @@
 18	new	new	ADJ	JJ	Degree=Pos	20	amod	_	_
 19	prime	prime	ADJ	JJ	Degree=Pos	20	amod	_	_
 20	minister	minister	NOUN	NN	Number=Sing	16	xcomp	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	11	punct	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = 6
-# text = [citation needed] Intermittent conflict between Sunni, Shiite and Kurdish factions has led to increasing debate about the splitting of Iraq into three autonomous regions, including Sunni Kurdistan in the northeast, a Sunnistan in the west and a Shiastan in the southeast.
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	15	nsubj	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	_
-5	Intermittent	intermittent	ADJ	JJ	Degree=Pos	6	amod	_	_
-6	conflict	conflict	NOUN	NN	Number=Sing	15	nsubj	_	_
-7	between	between	ADP	IN	_	13	case	_	_
-8	Sunni	sunni	ADJ	JJ	Degree=Pos	13	amod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	10	punct	_	_
-10	Shiite	shiite	ADJ	JJ	Degree=Pos	8	conj	_	_
-11	and	and	CCONJ	CC	_	12	cc	_	_
-12	Kurdish	kurdish	ADJ	JJ	Degree=Pos	8	conj	_	_
-13	factions	faction	NOUN	NNS	Number=Plur	6	nmod	_	_
-14	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
-15	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-16	to	to	ADP	IN	_	18	case	_	_
-17	increasing	increase	VERB	VBG	VerbForm=Ger	18	amod	_	_
-18	debate	debate	NOUN	NN	Number=Sing	15	obl	_	_
-19	about	about	ADP	IN	_	21	case	_	_
-20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
-21	splitting	splitting	NOUN	NN	Number=Sing	18	nmod	_	_
-22	of	of	ADP	IN	_	23	case	_	_
-23	Iraq	Iraq	PROPN	NNP	Number=Sing	21	nmod	_	_
-24	into	into	ADP	IN	_	27	case	_	_
-25	three	three	NUM	CD	NumType=Card	27	nummod	_	_
-26	autonomous	autonomous	ADJ	JJ	Degree=Pos	27	amod	_	_
-27	regions	region	NOUN	NNS	Number=Plur	15	obl	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	27	punct	_	_
-29	including	include	VERB	VBG	VerbForm=Ger	31	case	_	_
-30	Sunni	sunni	ADJ	JJ	Degree=Pos	31	amod	_	_
-31	Kurdistan	Kurdistan	PROPN	NNP	Number=Sing	27	nmod	_	_
-32	in	in	ADP	IN	_	34	case	_	_
-33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
-34	northeast	northeast	NOUN	NN	Number=Sing	31	nmod	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	37	punct	_	_
-36	a	a	DET	DT	Definite=Ind|PronType=Art	37	det	_	_
-37	Sunnistan	Sunnistan	PROPN	NNP	Number=Sing	31	conj	_	_
-38	in	in	ADP	IN	_	40	case	_	_
-39	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
-40	west	west	NOUN	NN	Number=Sing	37	nmod	_	_
-41	and	and	CCONJ	CC	_	43	cc	_	_
-42	a	a	DET	DT	Definite=Ind|PronType=Art	43	det	_	_
-43	Shiastan	Shiastan	PROPN	NNP	Number=Sing	31	conj	_	_
-44	in	in	ADP	IN	_	46	case	_	_
-45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
-46	southeast	southeast	NOUN	NN	Number=Sing	43	nmod	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n
+# text = Intermittent conflict between Sunni, Shiite and Kurdish factions has led to increasing debate about the splitting of Iraq into three autonomous regions, including Sunni Kurdistan in the northeast, a Sunnistan in the west and a Shiastan in the southeast.
+1	Intermittent	intermittent	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	conflict	conflict	NOUN	NN	Number=Sing	11	nsubj	_	_
+3	between	between	ADP	IN	_	9	case	_	_
+4	Sunni	sunni	ADJ	JJ	Degree=Pos	9	amod	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	Shiite	shiite	ADJ	JJ	Degree=Pos	4	conj	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	Kurdish	kurdish	ADJ	JJ	Degree=Pos	4	conj	_	_
+9	factions	faction	NOUN	NNS	Number=Plur	2	nmod	_	_
+10	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+12	to	to	ADP	IN	_	14	case	_	_
+13	increasing	increase	VERB	VBG	VerbForm=Ger	14	amod	_	_
+14	debate	debate	NOUN	NN	Number=Sing	11	obl	_	_
+15	about	about	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	splitting	splitting	NOUN	NN	Number=Sing	14	nmod	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Iraq	Iraq	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	into	into	ADP	IN	_	23	case	_	_
+21	three	three	NUM	CD	NumType=Card	23	nummod	_	_
+22	autonomous	autonomous	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	regions	region	NOUN	NNS	Number=Plur	11	obl	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	including	include	VERB	VBG	VerbForm=Ger	27	case	_	_
+26	Sunni	sunni	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	Kurdistan	Kurdistan	PROPN	NNP	Number=Sing	23	nmod	_	_
+28	in	in	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	northeast	northeast	NOUN	NN	Number=Sing	27	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	33	punct	_	_
+32	a	a	DET	DT	Definite=Ind|PronType=Art	33	det	_	_
+33	Sunnistan	Sunnistan	PROPN	NNP	Number=Sing	27	conj	_	_
+34	in	in	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	west	west	NOUN	NN	Number=Sing	33	nmod	_	_
+37	and	and	CCONJ	CC	_	39	cc	_	_
+38	a	a	DET	DT	Definite=Ind|PronType=Art	39	det	_	_
+39	Shiastan	Shiastan	PROPN	NNP	Number=Sing	27	conj	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	southeast	southeast	NOUN	NN	Number=Sing	39	nmod	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7812,7 +9276,7 @@
 # sent_id = 2
 # text = Civil unrest
 1	Civil	civil	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	unrest	unrest	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	unrest	unrest	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8552,7 +10016,7 @@
 # newpar
 # sent_id = 1
 # text = Geography
-1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8957,7 +10421,7 @@
 # newpar
 # sent_id = 1
 # text = Climate
-1	Climate	climate	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Climate	climate	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9166,7 +10630,7 @@
 # text = Government and politics
 1	Government	government	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpacesAfter=\n
+3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9607,7 +11071,7 @@
 19	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 3
-# text = In combination with decreased oil prices, the government budget deficit is near 25% of GDP as of 2016[update].
+# text = In combination with decreased oil prices, the government budget deficit is near 25% of GDP as of 2016.
 1	In	in	ADP	IN	_	2	case	_	_
 2	combination	combination	NOUN	NN	Number=Sing	15	nmod	_	_
 3	with	with	ADP	IN	_	6	case	_	_
@@ -9620,7 +11084,7 @@
 10	budget	budget	NOUN	NN	Number=Sing	11	compound	_	_
 11	deficit	deficit	NOUN	NN	Number=Sing	15	nsubj	_	_
 12	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
-13	near	near	ADP	IN	_	15	case	_	_
+13	near	near	ADP	IN	_	15	advmod	_	_
 14	25	25	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
 15	%	%	SYM	NN	Number=Sing	0	root	_	_
 16	of	of	ADP	IN	_	17	case	_	_
@@ -9628,9 +11092,7 @@
 18	as	as	ADP	IN	_	20	case	_	_
 19	of	of	ADP	IN	_	18	fixed	_	_
 20	2016	2016	NUM	CD	NumType=Card	15	nmod	_	SpaceAfter=No
-21	[	[	PUNCT	-LRB-	_	22	punct	_	SpaceAfter=No
-22	update	update	NOUN	NN	Number=Sing	15	appos	_	SpaceAfter=No
-23	].	].	PUNCT	.	_	15	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9661,14 +11123,7 @@
 20	own	own	ADJ	JJ	Degree=Pos	22	amod	_	_
 21	autonomous	autonomous	ADJ	JJ	Degree=Pos	22	amod	_	_
 22	region	region	NOUN	NN	Number=Sing	18	obj	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	18	punct	_	SpaceAfter=No
-
-# sent_id = 2
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9677,7 +11132,7 @@
 # newpar
 # sent_id = 1
 # text = Law
-1	Law	law	NOUN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Law	law	NOUN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9787,6 +11242,133 @@
 18	minorities	minority	NOUN	NNS	Number=Plur	14	nsubj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Law no.
+1	Law	law	NOUN	NN	Number=Sing	0	root	_	_
+2	no	no	INTJ	UH	_	1	discourse	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 6
+# text = 188 of the year 1959 (Personal Status Law) made polygamy extremely difficult, granted child custody to the mother in case of divorce, prohibited repudiation and marriage under the age of 16.
+1	188	188	NUM	CD	NumType=Card	11	nsubj	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	year	year	NOUN	NN	Number=Sing	1	nmod	_	_
+5	1959	1959	NUM	CD	NumType=Card	4	nummod	_	_
+6	(	(	PUNCT	-LRB-	_	9	punct	_	SpaceAfter=No
+7	Personal	Personal	PROPN	NNP	Number=Sing	8	amod	_	_
+8	Status	Status	PROPN	NNP	Number=Sing	9	compound	_	_
+9	Law	Law	PROPN	NNP	Number=Sing	4	appos	_	SpaceAfter=No
+10	)	)	PUNCT	-RRB-	_	9	punct	_	_
+11	made	make	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+12	polygamy	polygamy	NOUN	NN	Number=Sing	11	obj	_	_
+13	extremely	extremely	ADV	RB	_	14	advmod	_	_
+14	difficult	difficult	ADJ	JJ	Degree=Pos	11	xcomp	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	granted	grant	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+17	child	child	NOUN	NN	Number=Sing	18	compound	_	_
+18	custody	custody	NOUN	NN	Number=Sing	16	obj	_	_
+19	to	to	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	mother	mother	NOUN	NN	Number=Sing	16	obl	_	_
+22	in	in	ADP	IN	_	25	case	_	_
+23	case	case	NOUN	NN	Number=Sing	22	fixed	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	divorce	divorce	NOUN	NN	Number=Sing	16	obl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	prohibited	prohibit	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+28	repudiation	repudiation	NOUN	NN	Number=Sing	27	obj	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	marriage	marriage	NOUN	NN	Number=Sing	28	conj	_	_
+31	under	under	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	age	age	NOUN	NN	Number=Sing	30	nmod	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	16	16	NUM	CD	NumType=Card	33	nmod	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 7
+# text = Article 1 of Civil Code also identifies Islamic law as a formal source of law.
+1	Article	article	NOUN	NN	Number=Sing	7	nsubj	_	_
+2	1	1	NUM	CD	NumType=Card	1	nummod	_	_
+3	of	of	ADP	IN	_	5	case	_	_
+4	Civil	Civil	PROPN	NNP	Number=Sing	5	compound	_	_
+5	Code	Code	PROPN	NNP	Number=Sing	1	nmod	_	_
+6	also	also	ADV	RB	_	7	advmod	_	_
+7	identifies	identify	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	Islamic	islamic	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	law	law	NOUN	NN	Number=Sing	7	obj	_	_
+10	as	as	ADP	IN	_	13	case	_	_
+11	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+12	formal	formal	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	source	source	NOUN	NN	Number=Sing	7	obl	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	law	law	NOUN	NN	Number=Sing	13	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 8
+# text = Iraq had no Sharia courts but civil courts used Sharia for issues of personal status including marriage and divorce.
+1	Iraq	Iraq	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	no	no	DET	DT	_	5	det	_	_
+4	Sharia	Sharia	PROPN	NNP	Number=Sing	5	compound	_	_
+5	courts	court	NOUN	NNS	Number=Plur	2	obj	_	_
+6	but	but	CCONJ	CC	_	9	cc	_	_
+7	civil	civil	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	courts	court	NOUN	NNS	Number=Plur	9	nsubj	_	_
+9	used	use	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_
+10	Sharia	Sharia	PROPN	NNP	Number=Sing	9	obj	_	_
+11	for	for	ADP	IN	_	12	case	_	_
+12	issues	issue	NOUN	NNS	Number=Plur	9	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	personal	personal	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	status	status	NOUN	NN	Number=Sing	12	nmod	_	_
+16	including	include	VERB	VBG	VerbForm=Ger	17	case	_	_
+17	marriage	marriage	NOUN	NN	Number=Sing	12	nmod	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	divorce	divorce	NOUN	NN	Number=Sing	17	conj	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 9
+# text = In 1995 Iraq introduced Sharia punishment for certain types of criminal offences.
+1	In	in	ADP	IN	_	2	case	_	_
+2	1995	1995	NUM	CD	NumType=Card	4	obl	_	_
+3	Iraq	Iraq	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	introduced	introduce	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Sharia	Sharia	PROPN	NNP	Number=Sing	6	compound	_	_
+6	punishment	punishment	NOUN	NN	Number=Sing	4	obj	_	_
+7	for	for	ADP	IN	_	9	case	_	_
+8	certain	certain	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	types	type	NOUN	NNS	Number=Plur	4	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	criminal	criminal	ADJ	JJ	Degree=Pos	12	amod	_	_
+12	offences	offence	NOUN	NNS	Number=Plur	9	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 10
+# text = The code is based on French civil law as well as Sunni and Jafari (Shi'ite) interpretations of Sharia.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	code	code	NOUN	NN	Number=Sing	4	nsubj:pass	_	_
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	based	base	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	on	on	ADP	IN	_	8	case	_	_
+6	French	french	ADJ	JJ	Degree=Pos	8	amod	_	_
+7	civil	civil	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	law	law	NOUN	NN	Number=Sing	4	obl	_	_
+9	as	as	ADV	RB	_	18	cc	_	_
+10	well	well	ADV	RB	Degree=Pos	9	fixed	_	_
+11	as	as	ADP	IN	_	9	fixed	_	_
+12	Sunni	sunni	ADJ	JJ	Degree=Pos	18	amod	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	Jafari	jafari	ADJ	JJ	Degree=Pos	12	conj	_	_
+15	(	(	PUNCT	-LRB-	_	16	punct	_	SpaceAfter=No
+16	Shi'ite	shi'ite	ADJ	JJ	Degree=Pos	18	amod	_	SpaceAfter=No
+17	)	)	PUNCT	-RRB-	_	16	punct	_	_
+18	interpretations	interpretation	NOUN	NNS	Number=Plur	8	conj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Sharia	Sharia	PROPN	NNP	Number=Sing	18	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9892,7 +11474,39 @@
 # newpar
 # sent_id = 1
 # text = Military
-1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Iraqi security forces are composed of forces serving under the Ministry of Interior (which controls the Police and Popular Mobilization Forces) and
+1	Iraqi	iraqi	ADJ	JJ	Degree=Pos	3	amod	_	_
+2	security	security	NOUN	NN	Number=Sing	3	compound	_	_
+3	forces	force	NOUN	NNS	Number=Plur	5	nsubj:pass	_	_
+4	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_
+5	composed	compose	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	forces	force	NOUN	NNS	Number=Plur	5	obl	_	_
+8	serving	serve	VERB	VBG	VerbForm=Ger	7	acl	_	_
+9	under	under	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	Ministry	Ministry	PROPN	NNP	Number=Sing	8	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Interior	Interior	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	(	(	PUNCT	-LRB-	_	16	punct	_	SpaceAfter=No
+15	which	which	PRON	WDT	PronType=Rel	16	nsubj	_	_
+16	controls	control	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	Police	Police	PROPN	NNPS	Number=Plur	16	obj	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	Popular	popular	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	Mobilization	mobilization	NOUN	NN	Number=Sing	22	compound	_	_
+22	Forces	force	NOUN	NNS	Number=Plur	18	conj	_	SpaceAfter=No
+23	)	)	PUNCT	-RRB-	_	16	punct	_	_
+24	and	and	CCONJ	CC	_	22	cc	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10326,7 +11940,7 @@
 # sent_id = 1
 # text = Foreign relations
 1	Foreign	foreign	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10553,16 +12167,9 @@
 42	in	in	ADP	IN	_	44	case	_	_
 43	all	all	DET	DT	_	44	det	_	_
 44	fields	field	NOUN	NNS	Number=Plur	39	obl	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
+45	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 2
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	_
-
-# sent_id = 3
 # text = A conflict occurred in December 2009, when Iraq accused Iran of seizing an oil well on the border.
 1	A	a	DET	DT	Definite=Ind|PronType=Art	2	det	_	_
 2	conflict	conflict	NOUN	NN	Number=Sing	3	nsubj	_	_
@@ -11052,7 +12659,7 @@
 # sent_id = 1
 # text = Human rights
 1	Human	human	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	rights	rights	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	rights	rights	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11206,7 +12813,7 @@
 # sent_id = 1
 # text = Administrative divisions
 1	Administrative	administrative	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11273,7 +12880,7 @@
 # newpar
 # sent_id = 1
 # text = Economy
-1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11857,7 +13464,7 @@
 # newpar
 # sent_id = 1
 # text = Tourism
-1	Tourism	tourism	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Tourism	tourism	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12176,7 +13783,7 @@
 # text = Oil and energy
 1	Oil	oil	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	energy	energy	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	energy	energy	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12385,45 +13992,42 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = As of 2010[update], despite improved security and billions of dollars in oil revenue, Iraq still generates about half the electricity that customers demand, leading to protests during the hot summer months.
+# text = As of 2010, despite improved security and billions of dollars in oil revenue, Iraq still generates about half the electricity that customers demand, leading to protests during the hot summer months.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2010	2010	NUM	CD	NumType=Card	21	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	21	obl:npmod	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	21	punct	_	_
-8	despite	despite	ADP	IN	_	10	case	_	_
-9	improved	improve	VERB	VBN	Tense=Past|VerbForm=Part	10	amod	_	_
-10	security	security	NOUN	NN	Number=Sing	21	obl	_	_
-11	and	and	CCONJ	CC	_	12	cc	_	_
-12	billions	billion	NOUN	NNS	Number=Plur	10	conj	_	_
-13	of	of	ADP	IN	_	14	case	_	_
-14	dollars	dollar	NOUN	NNS	Number=Plur	12	nmod	_	_
-15	in	in	ADP	IN	_	17	case	_	_
-16	oil	oil	NOUN	NN	Number=Sing	17	compound	_	_
-17	revenue	revenue	NOUN	NN	Number=Sing	14	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	21	punct	_	_
-19	Iraq	Iraq	PROPN	NNP	Number=Sing	21	nsubj	_	_
-20	still	still	ADV	RB	_	21	advmod	_	_
-21	generates	generate	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-22	about	about	ADV	RB	_	23	advmod	_	_
-23	half	half	DET	PDT	_	25	det:predet	_	_
-24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
-25	electricity	electricity	NOUN	NN	Number=Sing	21	obj	_	_
-26	that	that	PRON	WDT	PronType=Rel	28	obj	_	_
-27	customers	customer	NOUN	NNS	Number=Plur	28	nsubj	_	_
-28	demand	demand	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	21	punct	_	_
-30	leading	lead	VERB	VBG	VerbForm=Ger	21	advcl	_	_
-31	to	to	ADP	IN	_	32	case	_	_
-32	protests	protest	NOUN	NNS	Number=Plur	30	obl	_	_
-33	during	during	ADP	IN	_	37	case	_	_
-34	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
-35	hot	hot	ADJ	JJ	Degree=Pos	37	amod	_	_
-36	summer	summer	NOUN	NN	Number=Sing	37	compound	_	_
-37	months	month	NOUN	NNS	Number=Plur	32	nmod	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	21	punct	_	SpacesAfter=\n
+3	2010	2010	NUM	CD	NumType=Card	18	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	18	punct	_	_
+5	despite	despite	ADP	IN	_	7	case	_	_
+6	improved	improve	VERB	VBN	Tense=Past|VerbForm=Part	7	amod	_	_
+7	security	security	NOUN	NN	Number=Sing	18	obl	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	billions	billion	NOUN	NNS	Number=Plur	7	conj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	dollars	dollar	NOUN	NNS	Number=Plur	9	nmod	_	_
+12	in	in	ADP	IN	_	14	case	_	_
+13	oil	oil	NOUN	NN	Number=Sing	14	compound	_	_
+14	revenue	revenue	NOUN	NN	Number=Sing	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	Iraq	Iraq	PROPN	NNP	Number=Sing	18	nsubj	_	_
+17	still	still	ADV	RB	_	18	advmod	_	_
+18	generates	generate	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+19	about	about	ADV	RB	_	20	advmod	_	_
+20	half	half	DET	PDT	_	22	det:predet	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	electricity	electricity	NOUN	NN	Number=Sing	18	obj	_	_
+23	that	that	PRON	WDT	PronType=Rel	25	obj	_	_
+24	customers	customer	NOUN	NNS	Number=Plur	25	nsubj	_	_
+25	demand	demand	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	18	punct	_	_
+27	leading	lead	VERB	VBG	VerbForm=Ger	18	advcl	_	_
+28	to	to	ADP	IN	_	29	case	_	_
+29	protests	protest	NOUN	NNS	Number=Plur	27	obl	_	_
+30	during	during	ADP	IN	_	34	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+32	hot	hot	ADJ	JJ	Degree=Pos	34	amod	_	_
+33	summer	summer	NOUN	NN	Number=Sing	34	compound	_	_
+34	months	month	NOUN	NNS	Number=Plur	29	nmod	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12958,7 +14562,7 @@
 1	Water	water	NOUN	NN	Number=Sing	2	compound	_	_
 2	supply	supply	NOUN	NN	Number=Sing	0	root	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
-4	sanitation	sanitation	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+4	sanitation	sanitation	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13006,6 +14610,80 @@
 19	system	system	NOUN	NN	Number=Sing	13	obj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Access to potable water differs significantly among governorates and between urban and rural areas.
+1	Access	access	NOUN	NN	Number=Sing	5	nsubj	_	_
+2	to	to	ADP	IN	_	4	case	_	_
+3	potable	potable	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	water	water	NOUN	NN	Number=Sing	1	nmod	_	_
+5	differs	differ	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	significantly	significantly	ADV	RB	_	5	advmod	_	_
+7	among	among	ADP	IN	_	8	case	_	_
+8	governorates	governorate	NOUN	NNS	Number=Plur	5	obl	_	_
+9	and	and	CCONJ	CC	_	14	cc	_	_
+10	between	between	ADP	IN	_	14	case	_	_
+11	urban	urban	ADJ	JJ	Degree=Pos	14	amod	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	rural	rural	ADJ	JJ	Degree=Pos	11	conj	_	_
+14	areas	area	NOUN	NNS	Number=Plur	8	conj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = 91% of the entire population has access to potable water.
+1	91	91	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	%	%	SYM	NN	Number=Sing	7	nsubj	_	_
+3	of	of	ADP	IN	_	6	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+5	entire	entire	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	population	population	NOUN	NN	Number=Sing	2	nmod	_	_
+7	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	access	access	NOUN	NN	Number=Sing	7	obj	_	_
+9	to	to	ADP	IN	_	11	case	_	_
+10	potable	potable	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	water	water	NOUN	NN	Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 5
+# text = But in rural areas, only 77% of the population has access to improved drinking water sources compared to 98% in urban areas.
+1	But	but	CCONJ	CC	_	12	cc	_	_
+2	in	in	ADP	IN	_	4	case	_	_
+3	rural	rural	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	areas	area	NOUN	NNS	Number=Plur	12	obl	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	12	punct	_	_
+6	only	only	ADV	RB	_	8	advmod	_	_
+7	77	77	NUM	CD	NumType=Card	8	nummod	_	SpaceAfter=No
+8	%	%	SYM	NN	Number=Sing	12	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	population	population	NOUN	NN	Number=Sing	8	nmod	_	_
+12	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	access	access	NOUN	NN	Number=Sing	12	obj	_	_
+14	to	to	ADP	IN	_	18	case	_	_
+15	improved	improve	VERB	VBN	Tense=Past|VerbForm=Part	18	amod	_	_
+16	drinking	drinking	NOUN	NN	Number=Sing	17	compound	_	_
+17	water	water	NOUN	NN	Number=Sing	18	compound	_	_
+18	sources	source	NOUN	NNS	Number=Plur	13	nmod	_	_
+19	compared	compare	VERB	VBN	Tense=Past|VerbForm=Part	18	case	_	_
+20	to	to	ADP	IN	_	22	case	_	_
+21	98	98	NUM	CD	NumType=Card	22	nummod	_	SpaceAfter=No
+22	%	%	SYM	NN	Number=Sing	19	obl	_	_
+23	in	in	ADP	IN	_	25	case	_	_
+24	urban	urban	ADJ	JJ	Degree=Pos	25	amod	_	_
+25	areas	area	NOUN	NNS	Number=Plur	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Large amounts of water are wasted during production.
+1	Large	large	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	amounts	amount	NOUN	NNS	Number=Plur	6	nsubj:pass	_	_
+3	of	of	ADP	IN	_	4	case	_	_
+4	water	water	NOUN	NN	Number=Sing	2	nmod	_	_
+5	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_
+6	wasted	waste	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	during	during	ADP	IN	_	8	case	_	_
+8	production	production	NOUN	NN	Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13013,7 +14691,7 @@
 # newpar
 # sent_id = 1
 # text = Infrastructure
-1	Infrastructure	infrastructure	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Infrastructure	infrastructure	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13084,7 +14762,7 @@
 # newpar
 # sent_id = 1
 # text = Demographics
-1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13145,7 +14823,7 @@
 # sent_id = 1
 # text = Ethnic groups
 1	Ethnic	ethnic	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	groups	group	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	groups	group	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13575,7 +15253,7 @@
 # newpar
 # sent_id = 1
 # text = Languages
-1	Languages	language	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Languages	language	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13818,7 +15496,7 @@
 # sent_id = 1
 # text = Urban areas
 1	Urban	urban	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	areas	area	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	areas	area	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13827,7 +15505,7 @@
 # newpar
 # sent_id = 1
 # text = Religion
-1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14302,7 +15980,7 @@
 # text = Diaspora and refugees
 1	Diaspora	diaspora	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	refugees	refugee	NOUN	NNS	Number=Plur	1	conj	_	SpacesAfter=\n
+3	refugees	refugee	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14437,6 +16115,38 @@
 16	countries	country	NOUN	NNS	Number=Plur	12	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Subsequently, the diaspora seemed to be returning, as security improved; the Iraqi government claimed that 46,000 refugees returned to their homes in October 2007 alone.
+1	Subsequently	subsequently	ADV	RB	_	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	diaspora	diaspora	NOUN	NN	Number=Sing	5	nsubj	_	_
+5	seemed	seem	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	to	to	PART	TO	_	8	mark	_	_
+7	be	be	AUX	VB	VerbForm=Inf	8	aux	_	_
+8	returning	return	VERB	VBG	Tense=Pres|VerbForm=Part	5	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	as	as	SCONJ	IN	_	12	mark	_	_
+11	security	security	NOUN	NN	Number=Sing	12	nsubj	_	_
+12	improved	improve	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	advcl	_	SpaceAfter=No
+13	;	;	PUNCT	,	_	5	punct	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	Iraqi	iraqi	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	government	government	NOUN	NN	Number=Sing	17	nsubj	_	_
+17	claimed	claim	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	parataxis	_	_
+18	that	that	SCONJ	IN	_	21	mark	_	_
+19	46,000	46,000	NUM	CD	NumType=Card	20	nummod	_	_
+20	refugees	refugee	NOUN	NNS	Number=Plur	21	nsubj	_	_
+21	returned	return	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	ccomp	_	_
+22	to	to	ADP	IN	_	24	case	_	_
+23	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	homes	home	NOUN	NNS	Number=Plur	21	obl	_	_
+25	in	in	ADP	IN	_	26	case	_	_
+26	October	October	PROPN	NNP	Number=Sing	21	obl	_	_
+27	2007	2007	NUM	CD	NumType=Card	26	nummod	_	_
+28	alone	alone	ADV	RB	_	21	advmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -14495,7 +16205,7 @@
 18	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 3
-# text = According to official United States Citizenship and Immigration Services statistics, 58,811 Iraqis had been granted refugee-status citizenship as of 25 May 2011[update].
+# text = According to official United States Citizenship and Immigration Services statistics, 58,811 Iraqis had been granted refugee-status citizenship as of 25 May 2011.
 1	According	accord	VERB	VBG	VerbForm=Ger	11	case	_	_
 2	to	to	ADP	IN	_	11	case	_	_
 3	official	official	ADJ	JJ	Degree=Pos	11	amod	_	_
@@ -14522,10 +16232,7 @@
 24	25	25	NUM	CD	NumType=Card	25	nummod	_	SpacesAfter= 
 25	May	May	PROPN	NNP	Number=Sing	17	obl	_	SpacesAfter= 
 26	2011	2011	NUM	CD	NumType=Card	25	nummod	_	SpaceAfter=No
-27	[	[	PUNCT	-LRB-	_	28	punct	_	SpaceAfter=No
-28	update	update	NOUN	NN	Number=Sing	17	parataxis	_	SpaceAfter=No
-29	]	]	PUNCT	-RRB-	_	28	punct	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	17	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	.	_	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14588,7 +16295,7 @@
 # newpar
 # sent_id = 1
 # text = Health
-1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14854,7 +16561,7 @@
 # newpar
 # sent_id = 1
 # text = Education
-1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15656,6 +17363,376 @@
 20	children	child	NOUN	NNS	Number=Plur	15	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = There are also the differing enrollment rates between boys and girls.
+1	There	there	PRON	EX	_	2	expl	_	_
+2	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	also	also	ADV	RB	_	2	advmod	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+5	differing	differ	VERB	VBG	VerbForm=Ger	7	amod	_	_
+6	enrollment	enrollment	NOUN	NN	Number=Sing	7	compound	_	_
+7	rates	rate	NOUN	NNS	Number=Plur	2	nsubj	_	_
+8	between	between	ADP	IN	_	9	case	_	_
+9	boys	boy	NOUN	NNS	Number=Plur	7	nmod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	girls	girl	NOUN	NNS	Number=Plur	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 9
+# text = UNICEF found that in 2013–2014, enrollment numbers for boys was at about five million while girls were at about 4.2 million.
+1	UNICEF	UNICEF	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	found	find	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	that	that	SCONJ	IN	_	15	mark	_	_
+4	in	in	ADP	IN	_	5	case	_	_
+5	2013–2014	2013–2014	NUM	CD	NumType=Card	15	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	15	punct	_	_
+7	enrollment	enrollment	NOUN	NN	Number=Sing	8	compound	_	_
+8	numbers	number	NOUN	NNS	Number=Plur	15	nsubj	_	_
+9	for	for	ADP	IN	_	10	case	_	_
+10	boys	boy	NOUN	NNS	Number=Plur	8	nmod	_	_
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
+12	at	at	ADP	IN	_	15	case	_	_
+13	about	about	ADV	RB	_	14	advmod	_	_
+14	five	five	NUM	CD	NumType=Card	15	compound	_	_
+15	million	million	NUM	CD	NumType=Card	2	ccomp	_	_
+16	while	while	SCONJ	IN	_	22	mark	_	_
+17	girls	girl	NOUN	NNS	Number=Plur	22	nsubj	_	_
+18	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
+19	at	at	ADP	IN	_	22	case	_	_
+20	about	about	ADV	RB	_	21	advmod	_	_
+21	4.2	4.2	NUM	CD	NumType=Card	22	compound	_	_
+22	million	million	NUM	CD	NumType=Card	15	advcl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 10
+# text = While the out-of-school rate for girls is at about 11%, boys are at less than half of that.
+1	While	while	SCONJ	IN	_	15	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+3	out	out	ADP	IN	_	8	compound	_	SpaceAfter=No
+4	-	-	PUNCT	HYPH	_	3	punct	_	SpaceAfter=No
+5	of	of	ADP	IN	_	7	case	_	SpaceAfter=No
+6	-	-	PUNCT	HYPH	_	7	punct	_	SpaceAfter=No
+7	school	school	NOUN	NN	Number=Sing	3	nmod	_	_
+8	rate	rate	NOUN	NN	Number=Sing	15	nsubj	_	_
+9	for	for	ADP	IN	_	10	case	_	_
+10	girls	girl	NOUN	NNS	Number=Plur	8	nmod	_	_
+11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+12	at	at	ADP	IN	_	15	case	_	_
+13	about	about	ADV	RB	_	14	advmod	_	_
+14	11	11	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
+15	%	%	SYM	NN	Number=Sing	22	advcl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	22	punct	_	_
+17	boys	boy	NOUN	NNS	Number=Plur	22	nsubj	_	_
+18	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	22	cop	_	_
+19	at	at	ADP	IN	_	22	case	_	_
+20	less	less	ADJ	JJR	Degree=Cmp	22	advmod	_	_
+21	than	than	ADP	IN	_	20	fixed	_	_
+22	half	half	NOUN	NN	Number=Sing	0	root	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	that	that	PRON	DT	Number=Sing|PronType=Dem	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = 11
+# text = There is still a gap between boys and girls in terms of educational opportunities.
+1	There	there	PRON	EX	_	2	expl	_	_
+2	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	still	still	ADV	RB	_	2	advmod	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	gap	gap	NOUN	NN	Number=Sing	2	nsubj	_	_
+6	between	between	ADP	IN	_	7	case	_	_
+7	boys	boy	NOUN	NNS	Number=Plur	5	nmod	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	girls	girl	NOUN	NNS	Number=Plur	7	conj	_	_
+10	in	in	ADP	IN	_	11	case	_	_
+11	terms	term	NOUN	NNS	Number=Plur	5	nmod	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	educational	educational	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	opportunities	opportunity	NOUN	NNS	Number=Plur	11	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 12
+# text = However, the rate of enrollments for girls has been increasing at a higher rate than for boys.
+1	However	however	ADV	RB	_	11	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	11	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	rate	rate	NOUN	NN	Number=Sing	11	nsubj	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	enrollments	enrollment	NOUN	NNS	Number=Plur	4	nmod	_	_
+7	for	for	ADP	IN	_	8	case	_	_
+8	girls	girl	NOUN	NNS	Number=Plur	6	nmod	_	_
+9	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+10	been	be	AUX	VBN	Tense=Past|VerbForm=Part	11	aux	_	_
+11	increasing	increase	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	_
+12	at	at	ADP	IN	_	15	case	_	_
+13	a	a	DET	DT	Definite=Ind|PronType=Art	15	det	_	_
+14	higher	higher	ADJ	JJR	Degree=Cmp	15	amod	_	_
+15	rate	rate	NOUN	NN	Number=Sing	11	obl	_	_
+16	than	than	ADP	IN	_	18	case	_	_
+17	for	for	ADP	IN	_	18	case	_	_
+18	boys	boy	NOUN	NNS	Number=Plur	11	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = 13
+# text = In 2015–2016, the enrollment numbers for girls increased by 400,000 from the previous year where a large number of them were located in Iraq Centre.
+1	In	in	ADP	IN	_	2	case	_	_
+2	2015–2016	2015–2016	NUM	CD	NumType=Card	9	obl	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	9	punct	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+5	enrollment	enrollment	NOUN	NN	Number=Sing	6	compound	_	_
+6	numbers	number	NOUN	NNS	Number=Plur	9	nsubj	_	_
+7	for	for	ADP	IN	_	8	case	_	_
+8	girls	girl	NOUN	NNS	Number=Plur	6	nmod	_	_
+9	increased	increase	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+10	by	by	ADP	IN	_	11	case	_	_
+11	400,000	400,000	NUM	CD	NumType=Card	9	obl	_	_
+12	from	from	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+14	previous	previous	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	year	year	NOUN	NN	Number=Sing	9	obl	_	_
+16	where	where	ADV	WRB	PronType=Rel	23	advmod	_	_
+17	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	_
+18	large	large	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	number	number	NOUN	NN	Number=Sing	23	nsubj:pass	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	19	nmod	_	_
+22	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
+23	located	locate	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	15	acl:relcl	_	_
+24	in	in	ADP	IN	_	26	case	_	_
+25	Iraq	Iraq	PROPN	NNP	Number=Sing	26	compound	_	_
+26	Centre	Centre	PROPN	NNP	Number=Sing	23	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 14
+# text = Not only that, UNICEF found that the increase of girls going to school was across all levels of education.
+1	Not	not	ADV	RB	_	2	advmod	_	_
+2	only	only	ADV	RB	_	3	advmod	_	_
+3	that	that	DET	DT	Number=Sing|PronType=Dem	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	UNICEF	UNICEF	PROPN	NNP	Number=Sing	6	nsubj	_	_
+6	found	find	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+7	that	that	SCONJ	IN	_	18	mark	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	increase	increase	NOUN	NN	Number=Sing	18	nsubj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	girls	girl	NOUN	NNS	Number=Plur	9	nmod	_	_
+12	going	go	VERB	VBG	VerbForm=Ger	11	acl	_	_
+13	to	to	ADP	IN	_	14	case	_	_
+14	school	school	NOUN	NN	Number=Sing	12	obl	_	_
+15	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	_
+16	across	across	ADP	IN	_	18	case	_	_
+17	all	all	DET	DT	_	18	det	_	_
+18	levels	level	NOUN	NNS	Number=Plur	6	ccomp	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	education	education	NOUN	NN	Number=Sing	18	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 15
+# text = Therefore, the unequal enrollment numbers between boys and girls could potentially change so that universal education can be achieved by all at equal rates.
+1	Therefore	therefore	ADV	RB	_	13	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	13	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+4	unequal	unequal	ADJ	JJ	Degree=Pos	6	amod	_	_
+5	enrollment	enrollment	NOUN	NN	Number=Sing	6	compound	_	_
+6	numbers	number	NOUN	NNS	Number=Plur	13	nsubj	_	_
+7	between	between	ADP	IN	_	8	case	_	_
+8	boys	boy	NOUN	NNS	Number=Plur	6	nmod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	girls	girl	NOUN	NNS	Number=Plur	8	conj	_	_
+11	could	could	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	potentially	potentially	ADV	RB	_	13	advmod	_	_
+13	change	change	VERB	VB	VerbForm=Inf	0	root	_	_
+14	so	so	SCONJ	IN	_	20	mark	_	_
+15	that	that	SCONJ	IN	_	14	fixed	_	_
+16	universal	universal	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	education	education	NOUN	NN	Number=Sing	20	nsubj:pass	_	_
+18	can	can	AUX	MD	VerbForm=Fin	20	aux	_	_
+19	be	be	AUX	VB	VerbForm=Inf	20	aux:pass	_	_
+20	achieved	achieve	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	advcl	_	_
+21	by	by	ADP	IN	_	22	case	_	_
+22	all	all	DET	DT	_	20	obl	_	_
+23	at	at	ADP	IN	_	25	case	_	_
+24	equal	equal	ADJ	JJ	Degree=Pos	25	amod	_	_
+25	rates	rate	NOUN	NNS	Number=Plur	20	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Although the numbers suggest a dramatic increase of enrollment rates for primary education in total, a large number of children still remain out of the education system.
+1	Although	although	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	number	number	NOUN	NN	Number=Sing	5	nsubj	_	SpaceAfter=No
+4	s	's	PART	POS	_	3	case	_	_
+5	suggest	suggest	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	24	advcl	_	_
+6	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+7	dramatic	dramatic	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	increase	increase	NOUN	NN	Number=Sing	5	obj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	enrollment	enrollment	NOUN	NN	Number=Sing	11	compound	_	_
+11	rates	rate	NOUN	NNS	Number=Plur	8	nmod	_	_
+12	for	for	ADP	IN	_	14	case	_	_
+13	primary	primary	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	education	education	NOUN	NN	Number=Sing	11	nmod	_	_
+15	in	in	ADP	IN	_	16	case	_	_
+16	total	total	ADJ	JJ	Degree=Pos	5	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	24	punct	_	_
+18	a	a	DET	DT	Definite=Ind|PronType=Art	20	det	_	_
+19	large	large	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	number	number	NOUN	NN	Number=Sing	24	nsubj	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	children	child	NOUN	NNS	Number=Plur	20	nmod	_	_
+23	still	still	ADV	RB	_	24	advmod	_	_
+24	remain	remain	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+25	out	out	ADP	IN	_	29	case	_	_
+26	of	of	ADP	IN	_	29	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+28	education	education	NOUN	NN	Number=Sing	29	compound	_	_
+29	system	system	NOUN	NN	Number=Sing	24	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = 2
+# text = Many of these children fall under the category of internally displaced children due to the conflict in Syria and the takeover by ISIL.
+1	Many	many	ADJ	JJ	Degree=Pos	5	nsubj	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	these	these	DET	DT	Number=Plur|PronType=Dem	4	det	_	_
+4	children	child	NOUN	NNS	Number=Plur	1	nmod	_	_
+5	fall	fall	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	under	under	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	category	category	NOUN	NN	Number=Sing	5	obl	_	_
+9	of	of	ADP	IN	_	12	case	_	_
+10	internally	internally	ADV	RB	_	11	advmod	_	_
+11	displaced	displace	VERB	VBN	Tense=Past|VerbForm=Part	12	amod	_	_
+12	children	child	NOUN	NNS	Number=Plur	8	nmod	_	_
+13	due	due	ADP	IN	_	16	case	_	_
+14	to	to	ADP	IN	_	13	fixed	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	conflict	conflict	NOUN	NN	Number=Sing	5	obl	_	_
+17	in	in	ADP	IN	_	18	case	_	_
+18	Syria	Syria	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	takeover	takeover	NOUN	NN	Number=Sing	16	conj	_	_
+22	by	by	ADP	IN	_	23	case	_	_
+23	ISIL	ISIL	PROPN	NNP	Number=Sing	21	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 3
+# text = This causes a disruption for children who are attempting to go to school and holds them back from completing their education, no matter what level they are at.
+1	This	this	PRON	DT	Number=Sing|PronType=Dem	2	nsubj	_	_
+2	causes	cause	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	a	DET	DT	Definite=Ind|PronType=Art	4	det	_	_
+4	disruption	disruption	NOUN	NN	Number=Sing	2	obj	_	_
+5	for	for	ADP	IN	_	6	case	_	_
+6	children	child	NOUN	NNS	Number=Plur	4	nmod	_	_
+7	who	who	PRON	WP	PronType=Rel	9	nsubj	_	_
+8	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	attempting	attempt	VERB	VBG	Tense=Pres|VerbForm=Part	6	acl:relcl	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	go	go	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+12	to	to	ADP	IN	_	13	case	_	_
+13	school	school	NOUN	NN	Number=Sing	11	obl	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	holds	hold	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+16	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
+17	back	back	ADV	RB	_	15	advmod	_	_
+18	from	from	SCONJ	IN	_	19	mark	_	_
+19	completing	complete	VERB	VBG	VerbForm=Ger	15	advcl	_	_
+20	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	education	education	NOUN	NN	Number=Sing	19	obj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	15	punct	_	_
+23	no	no	ADV	RB	_	24	advmod	_	_
+24	matter	matter	ADV	RB	_	15	advmod	_	_
+25	what	what	DET	WDT	PronType=Int	26	det	_	_
+26	level	level	NOUN	NN	Number=Sing	24	obj	_	_
+27	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	29	nsubj	_	_
+28	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	29	cop	_	_
+29	at	at	ADP	IN	_	26	acl:relcl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 4
+# text = Internally displaced children are specifically recorded to track children who have been forced to move within their country due to these types of conflicts.
+1	Internally	internally	ADV	RB	_	2	advmod	_	_
+2	displaced	displace	VERB	VBN	Tense=Past|VerbForm=Part	3	amod	_	_
+3	children	child	NOUN	NNS	Number=Plur	6	nsubj:pass	_	_
+4	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_
+5	specifically	specifically	ADV	RB	_	6	advmod	_	_
+6	recorded	record	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	track	track	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+9	children	child	NOUN	NNS	Number=Plur	8	obj	_	_
+10	who	who	PRON	WP	PronType=Rel	13	nsubj:pass	_	_
+11	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	13	aux	_	_
+12	been	be	AUX	VBN	Tense=Past|VerbForm=Part	13	aux:pass	_	_
+13	forced	force	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	9	acl:relcl	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	move	move	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	within	within	ADP	IN	_	18	case	_	_
+17	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	country	country	NOUN	NN	Number=Sing	15	obl	_	_
+19	due	due	ADP	IN	_	22	case	_	_
+20	to	to	ADP	IN	_	19	fixed	_	_
+21	these	these	DET	DT	Number=Plur|PronType=Dem	22	det	_	_
+22	types	type	NOUN	NNS	Number=Plur	15	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	conflicts	conflict	NOUN	NNS	Number=Plur	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 5
+# text = About 355,000 of internally displaced children are not in the education system.
+1	About	about	ADV	RB	_	2	advmod	_	_
+2	355,000	355,000	NUM	CD	NumType=Card	12	nsubj	_	_
+3	of	of	ADP	IN	_	6	case	_	_
+4	internally	internally	ADV	RB	_	5	advmod	_	_
+5	displaced	displace	VERB	VBN	Tense=Past|VerbForm=Part	6	amod	_	_
+6	children	child	NOUN	NNS	Number=Plur	2	nmod	_	_
+7	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	12	cop	_	_
+8	not	not	PART	RB	_	12	advmod	_	_
+9	in	in	ADP	IN	_	12	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+11	education	education	NOUN	NN	Number=Sing	12	compound	_	_
+12	system	system	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = 6
+# text = 330,000 of those children live in Iraq Centre.
+1	330,000	330,000	NUM	CD	NumType=Card	5	nsubj	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	those	those	DET	DT	Number=Plur|PronType=Dem	4	det	_	_
+4	children	child	NOUN	NNS	Number=Plur	1	nmod	_	_
+5	live	live	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	Iraq	Iraq	PROPN	NNP	Number=Sing	8	compound	_	_
+8	Centre	Centre	PROPN	NNP	Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 7
+# text = The rates among internally displaced children continue to remain higher in Iraq Centre than other areas such as the KRI.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	rates	rate	NOUN	NNS	Number=Plur	7	nsubj	_	_
+3	among	among	ADP	IN	_	6	case	_	_
+4	internally	internally	ADV	RB	_	5	advmod	_	_
+5	displaced	displace	VERB	VBN	Tense=Past|VerbForm=Part	6	amod	_	_
+6	children	child	NOUN	NNS	Number=Plur	2	nmod	_	_
+7	continue	continue	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	remain	remain	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+10	higher	higher	ADJ	JJR	Degree=Cmp	9	xcomp	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	Iraq	Iraq	PROPN	NNP	Number=Sing	13	compound	_	_
+13	Centre	Centre	PROPN	NNP	Number=Sing	10	obl	_	_
+14	than	than	ADP	IN	_	16	case	_	_
+15	other	other	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	areas	area	NOUN	NNS	Number=Plur	10	obl	_	_
+17	such	such	ADJ	JJ	Degree=Pos	20	case	_	_
+18	as	as	ADP	IN	_	17	fixed	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	KRI	KRI	PROPN	NNP	Number=Sing	16	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -15874,7 +17951,7 @@
 # newpar
 # sent_id = 1
 # text = Culture
-1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16203,7 +18280,7 @@
 # newpar
 # sent_id = 1
 # text = Art
-1	Art	Art	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Art	Art	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16465,7 +18542,70 @@
 # newpar
 # sent_id = 1
 # text = Architecture
-1	Architecture	architecture	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Architecture	architecture	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = The architecture of Iraq has a long history, encompassing several distinct cultures and spanning a period from the 10th millennium BC and feautres both Mesopotamian and Abbasid architecture.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	architecture	architecture	NOUN	NN	Number=Sing	5	nsubj	_	_
+3	of	of	ADP	IN	_	4	case	_	_
+4	Iraq	Iraq	PROPN	NNP	Number=Sing	2	nmod	_	_
+5	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+7	long	long	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	history	history	NOUN	NN	Number=Sing	5	obj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	5	punct	_	_
+10	encompassing	encompass	VERB	VBG	VerbForm=Ger	8	acl	_	_
+11	several	several	ADJ	JJ	Degree=Pos	13	amod	_	_
+12	distinct	distinct	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	cultures	culture	NOUN	NNS	Number=Plur	10	obj	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	spanning	span	VERB	VBG	VerbForm=Ger	10	conj	_	_
+16	a	a	DET	DT	Definite=Ind|PronType=Art	17	det	_	_
+17	period	period	NOUN	NN	Number=Sing	15	obj	_	_
+18	from	from	ADP	IN	_	22	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+20	10th	10th	ADJ	JJ	Degree=Pos|NumType=Ord	21	amod	_	_
+21	millennium	millennium	NOUN	NN	Number=Sing	22	compound	_	_
+22	BC	bc	NOUN	NN	Number=Sing	17	nmod	_	_
+23	and	and	CCONJ	CC	_	24	cc	_	_
+24	feautres	feautre	NOUN	NNS	Number=Plur	22	conj	_	_
+25	both	both	CCONJ	CC	_	29	cc	_	_
+26	Mesopotamian	mesopotamian	ADJ	JJ	Degree=Pos	29	amod	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	Abbasid	abbasid	ADJ	JJ	Degree=Pos	26	conj	_	_
+29	architecture	architecture	NOUN	NN	Number=Sing	22	conj	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 2
+# text = Modern prominent architects include Zaha Hadid, Basil Bayati, Rifat Chadirji and Hisham N.
+1	Modern	modern	ADJ	JJ	Degree=Pos	3	amod	_	_
+2	prominent	prominent	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	architects	architect	NOUN	NNS	Number=Plur	4	nsubj	_	_
+4	include	include	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	Zaha	Zaha	PROPN	NNP	Number=Sing	4	obj	_	_
+6	Hadid	Hadid	PROPN	NNP	Number=Sing	5	flat	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	Basil	Basil	PROPN	NNP	Number=Sing	5	conj	_	_
+9	Bayati	Bayati	PROPN	NNP	Number=Sing	8	flat	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	Rifat	Rifat	PROPN	NNP	Number=Sing	5	conj	_	_
+12	Chadirji	Chadirji	PROPN	NNP	Number=Sing	11	flat	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	Hisham	Hisham	PROPN	NNP	Number=Sing	5	conj	_	_
+15	N.	N.	PROPN	NNP	Number=Sing	14	flat	_	_
+
+# sent_id = 3
+# text = Ashkouri among others.
+1	Ashkouri	Ashkouri	PROPN	NNP	Number=Sing	0	root	_	_
+2	among	among	ADP	IN	_	3	case	_	_
+3	others	other	NOUN	NNS	Number=Plur	1	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16847,7 +18987,7 @@
 # newpar
 # sent_id = 1
 # text = Literature
-1	Literature	literature	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Literature	literature	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17194,7 +19334,7 @@
 # newpar
 # sent_id = 1
 # text = Music
-1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17202,94 +19342,42 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = [[File:The
-1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-2	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-3	File	file	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
-4	:	:	PUNCT	:	_	3	punct	_	SpaceAfter=No
-5	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+# text = Iraq is known primarily for its rich maqam heritage which has been passed down orally by the masters of the maqam in an unbroken chain of transmission leading up to the present.
+1	Iraq	Iraq	PROPN	NNP	Number=Sing	3	nsubj:pass	_	_
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
+3	known	know	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	primarily	primarily	ADV	RB	_	3	advmod	_	_
+5	for	for	ADP	IN	_	9	case	_	_
+6	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+7	rich	rich	ADJ	JJ	Degree=Pos	9	amod	_	_
+8	maqam	maqam	NOUN	NN	Number=Sing	9	compound	_	_
+9	heritage	heritage	NOUN	NN	Number=Sing	3	obl	_	_
+10	which	which	PRON	WDT	PronType=Rel	13	nsubj:pass	_	_
+11	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+12	been	be	AUX	VBN	Tense=Past|VerbForm=Part	13	aux:pass	_	_
+13	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	9	acl:relcl	_	_
+14	down	down	ADP	RP	_	13	compound:prt	_	_
+15	orally	orally	ADV	RB	_	13	advmod	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	masters	master	NOUN	NNS	Number=Plur	13	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	maqam	maqam	NOUN	NN	Number=Sing	18	nmod	_	_
+22	in	in	ADP	IN	_	25	case	_	_
+23	an	a	DET	DT	Definite=Ind|PronType=Art	25	det	_	_
+24	unbroken	unbroken	ADJ	JJ	Degree=Pos	25	amod	_	_
+25	chain	chain	NOUN	NN	Number=Sing	13	obl	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	transmission	transmission	NOUN	NN	Number=Sing	25	nmod	_	_
+28	leading	lead	VERB	VBG	VerbForm=Ger	27	acl	_	_
+29	up	up	ADP	IN	_	32	case	_	_
+30	to	to	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	present	present	NOUN	NN	Number=Sing	28	obl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 2
-# text = Queen's gold lyre from the Royal Cemetery at Ur. C. 2500 BCE.
-1	Queen	Queen	PROPN	NNP	Number=Sing	4	nmod:poss	_	SpaceAfter=No
-2	's	's	PART	POS	_	1	case	_	_
-3	gold	gold	NOUN	NN	Number=Sing	4	compound	_	_
-4	lyre	lyre	NOUN	NN	Number=Sing	0	root	_	_
-5	from	from	ADP	IN	_	8	case	_	_
-6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-7	Royal	Royal	PROPN	NNP	Number=Sing	8	compound	_	_
-8	Cemetery	Cemetery	PROPN	NNP	Number=Sing	4	nmod	_	_
-9	at	at	ADP	IN	_	10	case	_	_
-10	Ur	Ur	PROPN	NNP	Number=Sing	8	nmod	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	4	punct	_	_
-12	C.	C.	PROPN	NNP	Number=Sing	14	compound	_	_
-13	2500	2500	NUM	CD	NumType=Card	14	nummod	_	_
-14	BCE	bce	NOUN	NN	Number=Sing	4	nmod:tmod	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = 3
-# text = Iraq Museum.jpg|left|thumb|The Queen's gold lyre from the Royal Cemetery at Ur. Iraq Museum, Baghdad.|upright=0.8]Iraq is known primarily for its rich maqam heritage which has been passed down orally by the masters of the maqam in an unbroken chain of transmission leading up to the present.
-1	Iraq	Iraq	PROPN	NNP	Number=Sing	2	compound	_	_
-2	Museum.jpg	Museum.jpg	PROPN	NN	Number=Sing	0	root	_	SpaceAfter=No
-3	|	|	PUNCT	NFP	_	2	punct	_	SpaceAfter=No
-4	left	left	VERB	VBN	Degree=Pos	2	parataxis	_	SpaceAfter=No
-5	|	|	PUNCT	NFP	_	6	punct	_	SpaceAfter=No
-6	thumb	thumb	NOUN	NN	Number=Sing	1	list	_	SpaceAfter=No
-7	|	|	PUNCT	NFP	_	6	punct	_	SpaceAfter=No
-8	The	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
-9	Queen	Queen	PROPN	NNP	Number=Sing	12	nmod:poss	_	SpaceAfter=No
-10	's	's	PART	POS	_	9	case	_	_
-11	gold	gold	NOUN	NN	Number=Sing	12	compound	_	_
-12	lyre	lyre	NOUN	NN	Number=Sing	6	appos	_	_
-13	from	from	ADP	IN	_	16	case	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
-15	Royal	Royal	PROPN	NNP	Number=Sing	16	compound	_	_
-16	Cemetery	Cemetery	PROPN	NNP	Number=Sing	12	nmod	_	_
-17	at	at	ADP	IN	_	18	case	_	_
-18	Ur	Ur	PROPN	NNP	Number=Sing	16	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	,	_	21	punct	_	_
-20	Iraq	Iraq	PROPN	NNP	Number=Sing	21	compound	_	_
-21	Museum	Museum	PROPN	NNP	Number=Sing	16	appos	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	21	punct	_	_
-23	Baghdad	Baghdad	PROPN	NNP	Number=Sing	21	appos	_	SpaceAfter=No
-24	.|	.|	PUNCT	,	_	21	punct	_	SpaceAfter=No
-25	upright=0.8	upright=0.8	NUM	CD	NumType=Card	21	appos	_	SpaceAfter=No
-26	]	]	PUNCT	-RRB-	_	25	punct	_	SpaceAfter=No
-27	Iraq	Iraq	PROPN	NNP	Number=Sing	29	nsubj:pass	_	_
-28	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	_	_
-29	known	know	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	2	parataxis	_	_
-30	primarily	primarily	ADV	RB	_	29	advmod	_	_
-31	for	for	ADP	IN	_	35	case	_	_
-32	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	35	nmod:poss	_	_
-33	rich	rich	ADJ	JJ	Degree=Pos	35	amod	_	_
-34	maqam	maqam	NOUN	NN	Number=Sing	35	compound	_	_
-35	heritage	heritage	NOUN	NN	Number=Sing	29	obl	_	_
-36	which	which	PRON	WDT	PronType=Rel	39	nsubj:pass	_	_
-37	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	aux	_	_
-38	been	be	AUX	VBN	Tense=Past|VerbForm=Part	39	aux:pass	_	_
-39	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	35	acl:relcl	_	_
-40	down	down	ADP	RP	_	39	compound:prt	_	_
-41	orally	orally	ADV	RB	_	39	advmod	_	_
-42	by	by	ADP	IN	_	44	case	_	_
-43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
-44	masters	master	NOUN	NNS	Number=Plur	39	obl	_	_
-45	of	of	ADP	IN	_	47	case	_	_
-46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
-47	maqam	maqam	NOUN	NN	Number=Sing	44	nmod	_	_
-48	in	in	ADP	IN	_	51	case	_	_
-49	an	a	DET	DT	Definite=Ind|PronType=Art	51	det	_	_
-50	unbroken	unbroken	ADJ	JJ	Degree=Pos	51	amod	_	_
-51	chain	chain	NOUN	NN	Number=Sing	39	obl	_	_
-52	of	of	ADP	IN	_	53	case	_	_
-53	transmission	transmission	NOUN	NN	Number=Sing	51	nmod	_	_
-54	leading	lead	VERB	VBG	VerbForm=Ger	53	acl	_	_
-55	up	up	ADP	IN	_	58	case	_	_
-56	to	to	ADP	IN	_	58	case	_	_
-57	the	the	DET	DT	Definite=Def|PronType=Art	58	det	_	_
-58	present	present	NOUN	NN	Number=Sing	54	obl	_	SpaceAfter=No
-59	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = 4
 # text = The Iraqi maqam is considered to be the most noble and perfect form of maqam.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	Iraqi	iraqi	ADJ	JJ	Degree=Pos	3	amod	_	_
@@ -17308,7 +19396,7 @@
 15	maqam	maqam	NOUN	NN	Number=Sing	13	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 3
 # text = Al-maqam al-Iraqi is the collection of sung poems written either in one of the sixteen meters of classical Arabic or in Iraqi dialect (Zuhayri).
 1	Al	Al	PROPN	NNP	Number=Sing	6	compound	_	SpaceAfter=No
 2	-	-	PUNCT	HYPH	_	6	punct	_	SpaceAfter=No
@@ -17342,7 +19430,7 @@
 30	)	)	PUNCT	-RRB-	_	29	punct	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 6
+# sent_id = 4
 # text = This form of art is recognised by UNESCO as "an intangible heritage of humanity".
 1	This	this	DET	DT	Number=Sing|PronType=Dem	2	det	_	_
 2	form	form	NOUN	NN	Number=Sing	6	nsubj:pass	_	_
@@ -17540,16 +19628,9 @@
 21	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	_
 22	Yusuf	Yusuf	PROPN	NNP	Number=Sing	9	advcl	_	_
 23	Za'arur	Za'arur	PROPN	NNP	Number=Sing	22	flat	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	9	punct	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 2
-# text = [citation needed]
-1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
-2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
-3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
-4	]	]	PUNCT	-RRB-	_	2	punct	_	_
-
-# sent_id = 3
 # text = Za'arus formed the official ensemble for the Iraqi radio station and were responsible for introducing the cello and ney into the traditional ensemble.
 1	Za'arus	Za'arus	PROPN	NNP	Number=Sing	2	nsubj	_	_
 2	formed	form	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -17583,7 +19664,7 @@
 # newpar
 # sent_id = 1
 # text = Media
-1	Media	Media	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Media	Media	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17837,7 +19918,7 @@
 53	.	.	PUNCT	.	_	19	punct	_	_
 
 # sent_id = 2
-# text = Stages are: pre-invasion preparation, and the war and the actual choice of targets, the first post-war period, and a growing insurgency and hand over power to the Iraqi Interim Government (IIG) and Prime Minister Iyad Allawi.[page needed]
+# text = Stages are: pre-invasion preparation, and the war and the actual choice of targets, the first post-war period, and a growing insurgency and hand over power to the Iraqi Interim Government (IIG) and Prime Minister Iyad Allawi.
 1	Stages	stage	NOUN	NNS	Number=Plur	5	nsubj	_	_
 2	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	SpaceAfter=No
 3	:	:	PUNCT	:	_	5	punct	_	_
@@ -17863,8 +19944,8 @@
 23	a	a	DET	DT	Definite=Ind|PronType=Art	25	det	_	_
 24	growing	grow	VERB	VBG	VerbForm=Ger	25	amod	_	_
 25	insurgency	insurgency	NOUN	NN	Number=Sing	5	conj	_	_
-26	and	and	CCONJ	CC	_	27	cc	_	_
-27	hand	hand	NOUN	NN	Number=Sing	5	conj	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	hand	hand	NOUN	NN	Number=Sing	25	compound	_	_
 28	over	over	ADP	RP	_	27	compound:prt	_	_
 29	power	power	NOUN	NN	Number=Sing	27	conj	_	_
 30	to	to	ADP	IN	_	34	case	_	_
@@ -17880,11 +19961,7 @@
 40	Minister	Minister	PROPN	NNP	Number=Sing	34	conj	_	_
 41	Iyad	Iyad	PROPN	NNP	Number=Sing	40	flat	_	_
 42	Allawi	Allawi	PROPN	NNP	Number=Sing	40	flat	_	SpaceAfter=No
-43	.	.	PUNCT	.	_	5	punct	_	SpaceAfter=No
-44	[	[	PUNCT	-LRB-	_	45	punct	_	SpaceAfter=No
-45	page	page	NOUN	NN	Number=Sing	5	parataxis	_	SpacesAfter= 
-46	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	45	acl	_	SpaceAfter=No
-47	]	]	PUNCT	-RRB-	_	45	punct	_	SpacesAfter=\n
+43	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17944,7 +20021,7 @@
 # newpar
 # sent_id = 1
 # text = Cuisine
-1	Cuisine	cuisine	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Cuisine	cuisine	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17952,23 +20029,147 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = [[File:Masgouf.jpg|thumb|Masgouf, a popular Iraqi dish.]]
-1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-2	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-3	File	file	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
-4	:	:	PUNCT	:	_	3	punct	_	SpaceAfter=No
-5	Masgouf.jpg	masgouf.jpg	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-6	|	|	PUNCT	NFP	_	5	punct	_	SpaceAfter=No
-7	thumb|	thumb|	NOUN	NN	Number=Sing	5	compound	_	SpaceAfter=No
-8	Masgouf	masgouf	PROPN	NNP	Number=Sing	5	flat	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	5	punct	_	_
-10	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
-11	popular	popular	ADJ	JJ	Degree=Pos	13	amod	_	_
-12	Iraqi	iraqi	ADJ	JJ	Degree=Pos	13	amod	_	_
-13	dish	dish	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	3	punct	_	SpaceAfter=No
-15	]	]	PUNCT	-RRB-	_	3	punct	_	SpaceAfter=No
-16	]	]	PUNCT	-RRB-	_	3	punct	_	SpacesAfter=\n
+# text = Iraqi cuisine can be traced back some 10,000 years – to the Sumerians, Akkadians, Babylonians, Assyrians and Ancient Persians.
+1	Iraqi	iraqi	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	cuisine	cuisine	NOUN	NN	Number=Sing	5	nsubj:pass	_	_
+3	can	can	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	be	be	AUX	VB	VerbForm=Inf	5	aux:pass	_	_
+5	traced	trace	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	back	back	ADV	RB	_	5	advmod	_	_
+7	some	some	DET	DT	_	9	det	_	_
+8	10,000	10,000	NUM	CD	NumType=Card	9	nummod	_	_
+9	years	year	NOUN	NNS	Number=Plur	5	obl:tmod	_	_
+10	–	-	PUNCT	,	_	5	punct	_	_
+11	to	to	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	Sumerians	Sumerians	PROPN	NNPS	Number=Plur	5	obl	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	Akkadians	Akkadians	PROPN	NNPS	Number=Plur	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	17	punct	_	_
+17	Babylonians	Babylonians	PROPN	NNPS	Number=Plur	13	conj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	Assyrians	Assyrians	PROPN	NNPS	Number=Plur	13	conj	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	Ancient	ancient	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	Persians	Persians	PROPN	NNPS	Number=Plur	13	conj	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 2
+# text = Tablets found in ancient ruins in Iraq show recipes prepared in the temples during religious festivals – the first cookbooks in the world.
+1	Tablets	tablet	NOUN	NNS	Number=Plur	8	nsubj	_	_
+2	found	find	VERB	VBN	Tense=Past|VerbForm=Part	1	acl	_	_
+3	in	in	ADP	IN	_	5	case	_	_
+4	ancient	ancient	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	ruins	ruin	NOUN	NNS	Number=Plur	2	obl	_	_
+6	in	in	ADP	IN	_	7	case	_	_
+7	Iraq	Iraq	PROPN	NNP	Number=Sing	5	nmod	_	_
+8	show	show	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	recipes	recipe	NOUN	NNS	Number=Plur	8	obj	_	_
+10	prepared	prepare	VERB	VBN	Tense=Past|VerbForm=Part	9	acl	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	temples	temple	NOUN	NNS	Number=Plur	10	obl	_	_
+14	during	during	ADP	IN	_	16	case	_	_
+15	religious	religious	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	festivals	festival	NOUN	NNS	Number=Plur	10	obl	_	_
+17	–	-	PUNCT	,	_	9	punct	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	20	amod	_	_
+20	cookbooks	cookbook	NOUN	NNS	Number=Plur	9	appos	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	world	world	NOUN	NN	Number=Sing	20	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 3
+# text = Ancient Iraq, or Mesopotamia, was home to many sophisticated and highly advanced civilisations, in all fields of knowledge – including the culinary arts.
+1	Ancient	ancient	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	Iraq	Iraq	PROPN	NNP	Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	or	or	CCONJ	CC	_	5	cc	_	_
+5	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+8	home	home	NOUN	NN	Number=Sing	0	root	_	_
+9	to	to	ADP	IN	_	15	case	_	_
+10	many	many	ADJ	JJ	Degree=Pos	15	amod	_	_
+11	sophisticated	sophisticated	ADJ	JJ	Degree=Pos	15	amod	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	highly	highly	ADV	RB	_	14	advmod	_	_
+14	advanced	advanced	ADJ	JJ	Degree=Pos	11	conj	_	_
+15	civilisations	civilisation	NOUN	NNS	Number=Plur	8	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	all	all	DET	DT	_	19	det	_	_
+19	fields	field	NOUN	NNS	Number=Plur	15	nmod	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	knowledge	knowledge	NOUN	NN	Number=Sing	19	nmod	_	_
+22	–	-	PUNCT	,	_	15	punct	_	_
+23	including	include	VERB	VBG	VerbForm=Ger	26	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+25	culinary	culinary	ADJ	JJ	Degree=Pos	26	amod	_	_
+26	arts	art	NOUN	NNS	Number=Plur	19	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 4
+# text = However, it was in the medieval era when Baghdad was the capital of the Abbasid Caliphate that the Iraqi kitchen reached its zenith.
+1	However	however	ADV	RB	_	8	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	8	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+5	in	in	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+7	medieval	medieval	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	era	era	NOUN	NN	Number=Sing	0	root	_	_
+9	when	when	ADV	WRB	PronType=Int	13	mark	_	_
+10	Baghdad	Baghdad	PROPN	NNP	Number=Sing	13	nsubj	_	_
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	capital	capital	NOUN	NN	Number=Sing	8	advcl	_	_
+14	of	of	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	Abbasid	Abbasid	PROPN	NNP	Number=Sing	17	compound	_	_
+17	Caliphate	Caliphate	PROPN	NNP	Number=Sing	13	nmod	_	_
+18	that	that	SCONJ	IN	_	22	mark	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	Iraqi	iraqi	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	kitchen	kitchen	NOUN	NN	Number=Sing	22	nsubj	_	_
+22	reached	reach	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	acl:relcl	_	_
+23	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	zenith	zenith	NOUN	NN	Number=Sing	22	obj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 5
+# text = Today the cuisine of Iraq reflects this rich inheritance as well as strong influences from the culinary traditions of neighbouring Turkey, Iran and the Greater Syria area.
+1	Today	today	NOUN	NN	Number=Sing	6	obl:tmod	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	cuisine	cuisine	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Iraq	Iraq	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	reflects	reflect	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	this	this	DET	DT	Number=Sing|PronType=Dem	9	det	_	_
+8	rich	rich	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	inheritance	inheritance	NOUN	NN	Number=Sing	6	obj	_	_
+10	as	as	ADV	RB	_	14	cc	_	_
+11	well	well	ADV	RB	Degree=Pos	10	fixed	_	_
+12	as	as	ADP	IN	_	10	fixed	_	_
+13	strong	strong	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	influences	influence	NOUN	NNS	Number=Plur	9	conj	_	_
+15	from	from	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+17	culinary	culinary	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	traditions	tradition	NOUN	NNS	Number=Plur	14	nmod	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	neighbouring	neighbour	VERB	VBG	VerbForm=Ger	21	amod	_	_
+21	Turkey	Turkey	PROPN	NNP	Number=Sing	18	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	Iran	Iran	PROPN	NNP	Number=Sing	21	conj	_	_
+24	and	and	CCONJ	CC	_	28	cc	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+26	Greater	Greater	PROPN	NNP	Number=Sing	27	amod	_	_
+27	Syria	Syria	PROPN	NNP	Number=Sing	28	compound	_	_
+28	area	area	NOUN	NN	Number=Sing	21	conj	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18132,7 +20333,7 @@
 # newpar
 # sent_id = 1
 # text = Sport
-1	Sport	sport	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Sport	sport	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18308,7 +20509,7 @@
 # sent_id = 1
 # text = See also
 1	See	see	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
-2	also	also	ADV	RB	_	1	advmod	_	SpacesAfter=\n
+2	also	also	ADV	RB	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18317,7 +20518,7 @@
 # newpar
 # sent_id = 1
 # text = References
-1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18326,7 +20527,7 @@
 # newpar
 # sent_id = 1
 # text = Bibliography
-1	Bibliography	bibliography	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Bibliography	bibliography	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18336,7 +20537,7 @@
 # sent_id = 1
 # text = Further reading
 1	Further	further	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18346,7 +20547,7 @@
 # sent_id = 1
 # text = External links
 1	External	external	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18366,26 +20567,4 @@
 # text = General information
 1	General	general	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	information	information	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Mamluk dynasty of Mesopotamia
-1	Mamluk	Mamluk	PROPN	NNP	Number=Sing	2	compound	_	_
-2	dynasty	dynasty	NOUN	NN	Number=Sing	0	root	_	_
-3	of	of	ADP	IN	_	4	case	_	_
-4	Mesopotamia	Mesopotamia	PROPN	NNP	Number=Sing	2	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigation menu
-1	Navigation	navigation	NOUN	NN	Number=Sing	2	compound	_	_
-2	menu	menu	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
 

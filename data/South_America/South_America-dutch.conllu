@@ -1,5 +1,3 @@
-# https://nl.wikipedia.org/wiki/Zuid-Amerika
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Zuid-Amerika - Wikipedia
 1	Zuid-Amerika	Zuid-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
 2	-	-	PUNCT	LET	_	3	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = dutch-alpino-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Zuid-Amerika
-1	Zuid-Amerika	Zuid-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -76,13 +65,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Definitie[bewerken | brontekst bewerken]
-1	Definitie[	definitie[	NOUN	N|soort|ev|basis|onz|stan	Degree=Pos	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Definitie
+1	Definitie	definitie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -133,7 +117,7 @@
 20	.	.	PUNCT	LET	_	7	punct	_	_
 
 # sent_id = 3
-# text = Hoewel verschillende Caribische eilanden, waaronder Aruba, Bonaire, Curaçao, Trinidad en Tobago geologisch gezien op het Zuid-Amerikaans continentaal plat liggen worden zij in de praktijk tot Noord-Amerika gerekend.[bron?]
+# text = Hoewel verschillende Caribische eilanden, waaronder Aruba, Bonaire, Curaçao, Trinidad en Tobago geologisch gezien op het Zuid-Amerikaans continentaal plat liggen worden zij in de praktijk tot Noord-Amerika gerekend.
 1	Hoewel	hoewel	SCONJ	VG|onder	_	23	mark	_	_
 2	verschillende	verschillend	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	4	amod	_	_
 3	Caribische	Caribisch	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	4	amod	_	_
@@ -148,7 +132,7 @@
 12	,	,	PUNCT	LET	_	13	punct	_	_
 13	Trinidad	Trinidad	PROPN	SPEC|deeleigen	_	7	conj	_	_
 14	en	en	CCONJ	VG|neven	_	13	flat	_	_
-15	Tobago	Tobago	PROPN	SPEC|deeleigen	_	13	flat	_	_
+15	Tobago	Tobago	PROPN	SPEC|deeleigen	Gender=Neut|Number=Sing	13	flat	_	_
 16	geologisch	geologisch	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	17	advmod	_	_
 17	gezien	zien	VERB	WW|vd|vrij|zonder	VerbForm=Part	23	advcl	_	_
 18	op	op	ADP	VZ|init	_	22	case	_	_
@@ -156,18 +140,16 @@
 20	Zuid-Amerikaans	Zuid-Amerikaans	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	22	amod	_	_
 21	continentaal	continentaal	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	22	amod	_	_
 22	plat	plat	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	23	obl	_	_
-23	liggen	liggen	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	32	acl:relcl	_	_
-24	worden	worden	AUX	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
-25	zij	zij	PRON	VNW|pers|pron|nomin|vol|3p|mv	Case=Nom|Person=3|PronType=Prs	24	nsubj	_	_
+23	liggen	liggen	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	31	advcl	_	_
+24	worden	worden	AUX	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	31	aux:pass	_	_
+25	zij	zij	PRON	VNW|pers|pron|nomin|vol|3p|mv	Case=Nom|Person=3|PronType=Prs	31	nsubj:pass	_	_
 26	in	in	ADP	VZ|init	_	28	case	_	_
 27	de	de	DET	LID|bep|stan|rest	Definite=Def	28	det	_	_
 28	praktijk	praktijk	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	31	obl	_	_
 29	tot	tot	ADP	VZ|init	_	30	case	_	_
 30	Noord-Amerika	Noord-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	31	obl	_	_
-31	gerekend.[	rekend.[	VERB	WW|vd|vrij|zonder	VerbForm=Part	32	acl	_	SpaceAfter=No
-32	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	24	xcomp	_	SpaceAfter=No
-33	?	?	PUNCT	LET	_	32	punct	_	SpaceAfter=No
-34	]	]	PUNCT	LET	_	32	punct	_	_
+31	gerekend	rekenen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
+32	.	.	PUNCT	LET	_	31	punct	_	_
 
 # sent_id = 4
 # text = De Venezolaanse Federale gebieden en de Colombiaanse eilandengroepen in de Caribische Zee gelden dan weer als Zuid-Amerikaans.
@@ -284,15 +266,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Overlap met Latijns-Amerika[bewerken | brontekst bewerken]
+# text = Overlap met Latijns-Amerika
 1	Overlap	overlap	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
 2	met	met	ADP	VZ|init	_	3	case	_	_
-3	Latijns-Amerika[	Latijns-aMerika[	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-4	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	acl	_	_
-5	|	|	PUNCT	LET	_	7	punct	_	_
-6	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	7	obj	_	_
-7	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	4	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	LET	_	4	punct	_	SpacesAfter=\n
+3	Latijns-Amerika	Latijns-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -387,13 +364,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografie[bewerken | brontekst bewerken]
-1	Geografie[	geografie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Geografie
+1	Geografie	geografie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -417,13 +389,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geologie[bewerken | brontekst bewerken]
-1	Geologie[	geologie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Geologie
+1	Geologie	geologie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -497,15 +464,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Landen en gebieden[bewerken | brontekst bewerken]
-1	Landen	land	NOUN	N|soort|mv|basis	Number=Plur	4	nsubj	_	_
+# text = Landen en gebieden
+1	Landen	land	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	_
 2	en	en	CCONJ	VG|neven	_	3	cc	_	_
-3	gebieden[	gebieden	NOUN	N|soort|mv|basis	Number=Plur	1	conj	_	SpaceAfter=No
-4	bewerken	bewerken	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	|	|	PUNCT	LET	_	7	punct	_	_
-6	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	7	obj	_	_
-7	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	4	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	LET	_	4	punct	_	SpacesAfter=\n
+3	gebieden	gebied	NOUN	N|soort|mv|basis	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -530,14 +492,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Onafhankelijke landen[bewerken | brontekst bewerken]
+# text = Onafhankelijke landen
 1	Onafhankelijke	onafhankelijk	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	landen[	landen[	NOUN	N|soort|mv|basis	Number=Plur	3	nsubj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	landen	land	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -545,14 +502,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Afhankelijke gebieden[bewerken | brontekst bewerken]
+# text = Afhankelijke gebieden
 1	Afhankelijke	afhankelijk	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	gebieden[	gebieden	NOUN	N|soort|mv|basis	Number=Plur	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	gebieden	gebied	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -560,13 +512,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Klimaat[bewerken | brontekst bewerken]
-1	Klimaat[	klimaat[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Klimaat
+1	Klimaat	klimaat	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -714,13 +661,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Metropolen[bewerken | brontekst bewerken]
-1	Metropolen[	metropolen[	NOUN	N|soort|ev|basis|zijd|stan	Degree=Pos	2	amod	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Metropolen
+1	Metropolen	metropool	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -741,13 +683,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geschiedenis[bewerken | brontekst bewerken]
-1	Geschiedenis[	geschiedenis[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+# text = Geschiedenis
+1	Geschiedenis	geschiedenis	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1562,13 +1499,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Demografie[bewerken | brontekst bewerken]
-1	Demografie[	demografie[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Demografie
+1	Demografie	demografie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1576,13 +1508,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Taal[bewerken | brontekst bewerken]
-1	Taal[	taal[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Taal
+1	Taal	taal	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1646,20 +1573,58 @@
 17	gesproken	spreken	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
 18	.	.	PUNCT	LET	_	17	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = De Spaans, Portugees en Frans sprekende landen behoren met Mexico en andere Frans- en Spaanstalige landen in Midden-Amerika tot Latijns-Amerika.
+1	De	de	DET	LID|bep|stan|rest	Definite=Def	8	det	_	_
+2	Spaans	Spaans	PROPN	N|eigen|ev|basis|onz|stan	Degree=Pos	8	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	LET	_	4	punct	_	_
+4	Portugees	Portugees	PROPN	N|eigen|ev|basis|zijd|stan	Degree=Pos	2	conj	_	_
+5	en	en	CCONJ	VG|neven	_	6	cc	_	_
+6	Frans	Frans	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	conj	_	_
+7	sprekende	spreken	VERB	WW|od|prenom|met-e	VerbForm=Part	2	conj	_	_
+8	landen	land	NOUN	N|soort|mv|basis	Number=Plur	9	nsubj	_	_
+9	behoren	behoren	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	met	met	ADP	VZ|init	_	11	case	_	_
+11	Mexico	Mexico	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	9	obl	_	_
+12	en	en	CCONJ	VG|neven	_	17	cc	_	_
+13	andere	ander	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	17	amod	_	_
+14	Frans-	Frans-	X	SPEC|afgebr	_	17	nmod	_	_
+15	en	en	CCONJ	VG|neven	_	16	cc	_	_
+16	Spaanstalige	Spaanstalig	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	14	conj	_	_
+17	landen	land	NOUN	N|soort|mv|basis	Number=Plur	11	conj	_	_
+18	in	in	ADP	VZ|init	_	19	case	_	_
+19	Midden-Amerika	Midden-aMerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	17	nmod	_	_
+20	tot	tot	ADP	VZ|init	_	21	case	_	_
+21	Latijns-Amerika	Latijns-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	9	obl	_	SpaceAfter=No
+22	.	.	PUNCT	LET	_	9	punct	_	_
+
+# sent_id = 5
+# text = Guyana en Suriname worden zo wél tot Zuid-Amerika, maar niet tot Latijns-Amerika gerekend.
+1	Guyana	Guyana	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	4	nsubj	_	_
+2	en	en	CCONJ	VG|neven	_	3	cc	_	_
+3	Suriname	Suriname	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+4	worden	worden	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	zo	zo	ADV	BW	_	4	advmod	_	_
+6	wél	wél	ADV	BW	_	4	advmod	_	_
+7	tot	tot	ADP	VZ|init	_	8	case	_	_
+8	Zuid-Amerika	Zuid-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	LET	_	14	punct	_	_
+10	maar	maar	CCONJ	VG|neven	_	13	cc	_	_
+11	niet	niet	ADV	BW	_	13	amod	_	_
+12	tot	tot	ADP	VZ|init	_	13	case	_	_
+13	Latijns-Amerika	Latijns-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	8	conj	_	_
+14	gerekend	rekenen	VERB	WW|vd|vrij|zonder	VerbForm=Part	4	conj	_	SpaceAfter=No
+15	.	.	PUNCT	LET	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etnische samenstelling[bewerken | brontekst bewerken]
+# text = Etnische samenstelling
 1	Etnische	etnisch	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	samenstelling[	samenstelling[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	samenstelling	samenstelling	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1836,13 +1801,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Inwoners[bewerken | brontekst bewerken]
-1	Inwoners[	inwoners[	ADJ	N|soort|ev|basis|zijd|stan	Degree=Pos	2	amod	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Inwoners
+1	Inwoners	inwoner	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1875,13 +1835,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Economie[bewerken | brontekst bewerken]
-1	Economie[	economie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Economie
+1	Economie	economie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1889,13 +1844,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Landbouw[bewerken | brontekst bewerken]
-1	Landbouw[	landbouw[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	4	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Landbouw
+1	Landbouw	landbouw	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1929,13 +1879,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vee[bewerken | brontekst bewerken]
-1	Vee[	vee[	DET	SPEC|symb	_	2	det	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Vee
+1	Vee	vee	NOUN	TSW	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2228,13 +2173,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mijnbouw[bewerken | brontekst bewerken]
-1	Mijnbouw[	mijnbouw[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Mijnbouw
+1	Mijnbouw	mijnbouw	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2385,15 +2325,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Olie en gas[bewerken | brontekst bewerken]
-1	Olie	olie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	4	nsubj	_	_
+# text = Olie en gas
+1	Olie	olie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	_
 2	en	en	CCONJ	VG|neven	_	3	cc	_	_
-3	gas[	gas[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
-4	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-5	|	|	PUNCT	LET	_	7	punct	_	_
-6	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	7	obj	_	_
-7	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	4	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	LET	_	4	punct	_	SpacesAfter=\n
+3	gas	gas	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2602,13 +2537,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Industrieën[bewerken | brontekst bewerken]
-1	Industrieën[	industrieën[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Industrieën
+1	Industrieën	industrie	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3127,13 +3057,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Toerisme[bewerken | brontekst bewerken]
-1	Toerisme[	toerisme	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Toerisme
+1	Toerisme	toerisme	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3408,13 +3333,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Galerij[bewerken | brontekst bewerken]
-1	Galerij[	galerij[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Galerij
+1	Galerij	galerij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3965,13 +3885,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Infrastructuur[bewerken | brontekst bewerken]
-1	Infrastructuur[	infrastructuur[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Infrastructuur
+1	Infrastructuur	infrastructuur	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5280,13 +5195,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Energie[bewerken | brontekst bewerken]
-1	Energie[	energie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Energie
+1	Energie	energie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5294,13 +5204,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Brazilië[bewerken | brontekst bewerken]
-1	Brazilië[	Brazilië[	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Brazilië
+1	Brazilië	Brazilië	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6328,13 +6233,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politiek[bewerken | brontekst bewerken]
-1	Politiek[	politiek[	NOUN	N|soort|ev|basis|zijd|stan	Degree=Pos	2	amod	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Politiek
+1	Politiek	politiek	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6446,14 +6346,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Internationale samenwerking[bewerken | brontekst bewerken]
+# text = Internationale samenwerking
 1	Internationale	internationaal	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	samenwerking[	samenwerking[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	samenwerking	samenwerking	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6744,14 +6639,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zie ook[bewerken | brontekst bewerken]
+# text = Zie ook
 1	Zie	zien	VERB	WW|pv|tgw|ev	Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	ook[	ook[	ADV	BW	_	3	advmod	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	obj	_	_
-4	|	|	PUNCT	LET	_	5	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	xcomp	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+2	ook	ook	ADV	BW	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6759,9 +6649,33 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Noord-Amerika ·
+# text = Noord-Amerika · Midden-Amerika (Centraal-Amerika) · Zuid-Amerika
 1	Noord-Amerika	Noord-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
-2	·	·	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+2	·	·	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+3	Midden-Amerika	Midden-aMerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+4	(	(	PUNCT	LET	_	5	punct	_	SpaceAfter=No
+5	Centraal-Amerika	Centraal-aMerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	3	nmod	_	SpaceAfter=No
+6	)	)	PUNCT	LET	_	5	punct	_	_
+7	·	·	CCONJ	LET	_	8	cc	_	SpacesAfter=\n
+8	Zuid-Amerika	Zuid-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 2
+# text = Anglo-Amerika · Latijns-Amerika · Hispano-Amerika
+1	Anglo-Amerika	Anglo-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
+2	·	·	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+3	Latijns-Amerika	Latijns-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+4	·	·	PUNCT	LET	_	5	punct	_	SpacesAfter=\n
+5	Hispano-Amerika	Hispano-Amerika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 3
+# text = Antillen · Caraïben · Guyana
+1	Antillen	Antillen	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
+2	·	·	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+3	Caraïben	Caraïben	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+4	·	·	PUNCT	LET	_	5	punct	_	SpacesAfter=\n
+5	Guyana	Guyana	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6793,13 +6707,4 @@
 21	Uruguay	Uruguay	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
 22	·	·	CCONJ	LET	_	23	cc	_	_
 23	Venezuela	Venezuela	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = dutch-alpino-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigatiemenu
-1	Navigatiemenu	navigatiemenu	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
 

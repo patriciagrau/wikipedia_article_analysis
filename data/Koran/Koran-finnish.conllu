@@ -1,5 +1,3 @@
-# https://fi.wikipedia.org/wiki/Koraani
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Koraani – Wikipedia
 1	Koraani	kora	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	_
 2	–	–	PUNCT	Punct	_	3	punct	_	_
-3	Wikipedia	wikipedia	NOUN	N	Case=Nom|Number=Sing	1	appos	_	SpacesAfter=\n
+3	Wikipedia	wikipedia	NOUN	N	Case=Nom|Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -17,17 +15,57 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraani
-1	Koraani	kora	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpacesAfter=\n
+# text = Koraani (arab. القرآن‎, al-Qurʼān) on islaminuskon pyhin teksti.
+1	Koraani	koraani	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+2	(	(	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+3	arab.	arab.	NOUN	N	Abbr=Yes|Case=Tra|Number=Sing	4	nmod	_	_
+4	القرآن‎	القرآن‎	X	Foreign	Foreign=Yes	1	appos	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	al-Qurʼān	al-qurʼān	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+7	)	)	PUNCT	Punct	_	4	punct	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+9	islaminuskon	islaminusko	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	pyhin	pyhä	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	11	amod	_	_
+11	teksti	teksti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	11	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = finnish-tdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Islam
-1	Islam	Islam	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpacesBefore=\s|SpacesAfter=\s\n
+# sent_id = 2
+# text = Muslimit uskovat, että se sisältää profeetta Muhammedin Jumalalta saamat ilmestykset, jotka alkoivat vuonna 610 ja jatkuivat profeetan kuolemaan saakka vuoteen 632.
+1	Muslimit	muslimi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	uskovat	uskoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+6	sisältää	sisältää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	profeetta	profe	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	Muhammedin	Muhammedi	PROPN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+9	Jumalalta	Jumala	PROPN	N	Case=Abl|Number=Sing	10	obl	_	_
+10	saamat	saada	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Agt|VerbForm=Part|Voice=Act	11	acl	_	_
+11	ilmestykset	ilmestys	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	14	nsubj	_	_
+14	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	14	obl	_	_
+16	610	610	NUM	Num	NumType=Card	15	nummod	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	jatkuivat	jatkua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	conj	_	_
+19	profeetan	profeetta	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	kuolemaan	kuolema	NOUN	N	Case=Ill|Number=Sing	18	obl	_	_
+21	saakka	saakka	ADP	Adp	AdpType=Post	20	case	_	_
+22	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	18	obl	_	_
+23	632	632	NUM	Num	NumType=Card	22	nummod	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Pituudeltaan kirja on vajaa puolet Uudesta Testamentista.
+1	Pituudeltaan	pituus	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	5	obl	_	_
+2	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	vajaa	vajaa	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	puolet	puoli	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+6	Uudesta	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	7	amod	_	_
+7	Testamentista	testamentti	PROPN	N	Case=Ela|Number=Sing	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -324,14 +362,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin asema islamissa[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+# text = Koraanin asema islamissa
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	asema	asema	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
-3	islamissa[muokkaa	islam#issa[muokka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	islamissa	islama	NOUN	N	Case=Ine|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -779,15 +813,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin kieli ja tyyli[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin kieli ja tyyli
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	kieli	kieli	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
 3	ja	ja	CCONJ	C	_	4	cc	_	_
-4	tyyli[muokkaa	tyyli#[muokka	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
-5	|	|	PUNCT	Punct	_	7	punct	_	_
-6	muokkaa	muokka	NOUN	N	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
-7	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punct	_	7	punct	_	SpacesAfter=\n
+4	tyyli	tyyli	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1038,15 +1068,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraani islamilaisen käsityksen mukaisesti[muokkaa | muokkaa wikitekstiä]
+# text = Koraani islamilaisen käsityksen mukaisesti
 1	Koraani	koraani	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
 2	islamilaisen	islamilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	3	amod	_	_
 3	käsityksen	käsitys	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
-4	mukaisesti[muokkaa	mukaisesti[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-5	|	|	PUNCT	Punct	_	6	punct	_	_
-6	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	conj	_	_
-7	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+4	mukaisesti	mukaisesti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1184,13 +1210,97 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Muhammedin ilmestykset[muokkaa | muokkaa wikitekstiä]
+# text = Muhammedin ilmestykset
 1	Muhammedin	Muhammedi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	ilmestykset[muokkaa	ilmestykset[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	ilmestykset	ilmestys	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ibn Ishaq kertoo yli sata vuotta Muhammedin kerrotun kuoleman jälkeen tehdyssä elämäkerrassa, että profeetta olisi syntynyt noin vuonna 570 Arabian niemimaalla sijainneessa Mekan kaupungissa sitä hallitsevaan quraiš-heimoon.
+1	Ibn	Ibn	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Ishaq	Ishaq	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	kertoo	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	sata	sata	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+7	Muhammedin	Muhammedi	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+8	kerrotun	kerroa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	kuoleman	kuolema	NOUN	N	Case=Gen|Number=Sing	11	obl	_	_
+10	jälkeen	jälkeen	ADP	Adp	AdpType=Post	9	case	_	_
+11	tehdyssä	tehdä	VERB	V	Case=Ine|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	12	acl	_	_
+12	elämäkerrassa	elämä#kerta	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	17	punct	_	_
+14	että	että	SCONJ	C	_	17	mark	_	_
+15	profeetta	profeetta	NOUN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+16	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	syntynyt	syntyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	acl:relcl	_	_
+18	noin	noin	ADV	Adv	_	19	advmod	_	_
+19	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	17	obl	_	_
+20	570	570	NUM	Num	NumType=Card	19	nummod	_	_
+21	Arabian	Arabia	PROPN	N	Case=Gen|Number=Sing	22	nmod:poss	_	_
+22	niemimaalla	niemi#maa	NOUN	N	Case=Ade|Number=Sing	23	obl	_	_
+23	sijainneessa	sijaita	VERB	V	Case=Ine|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	25	acl	_	_
+24	Mekan	Meka	PROPN	N	Case=Gen|Number=Sing	25	nmod:poss	_	_
+25	kaupungissa	kaupunki	NOUN	N	Case=Ine|Number=Sing	17	obl	_	_
+26	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	27	obj	_	_
+27	hallitsevaan	hallitseva	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	28	acl	_	_
+28	quraiš-heimoon	quraiš-heimo	NOUN	N	Case=Ill|Number=Sing	17	obl	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kaupunki oli ahdas ja köyhä, mutta siellä sijaitsi Kaaban temppeli, jonka profeetta Abraham oli jälleenrakentanut vedenpaisumuksen jälkeen.
+1	Kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	ahdas	ahdas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	köyhä	köyhä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	siellä	siellä	ADV	Adv	_	9	advmod	_	_
+9	sijaitsi	sijaita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	Kaaban	Kaaba	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	temppeli	temppeli	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	17	punct	_	_
+13	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	17	obj	_	_
+14	profeetta	profeetta	NOUN	N	Case=Nom|Number=Sing	15	compound:nn	_	_
+15	Abraham	Abraham	PROPN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+16	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	jälleenrakentanut	jälleenrakentaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	acl:relcl	_	_
+18	vedenpaisumuksen	veden#paisumus	NOUN	N	Case=Gen|Number=Sing	17	obl	_	_
+19	jälkeen	jälkeen	ADP	Adp	AdpType=Post	18	case	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Monet ihmeet ennakoivat Muhammedin syntymistä, josta jinnit saivat tiedon ennen ihmisiä.
+1	Monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	det	_	_
+2	ihmeet	ihme	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	ennakoivat	ennakoida	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Muhammedin	Muhammedi	PROPN	N	Case=Gen|Number=Sing	5	nmod:gobj	_	_
+5	syntymistä	syntyminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	josta	joka	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	9	obl	_	_
+8	jinnit	jinni	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+10	tiedon	tieto	NOUN	N	Case=Gen|Number=Sing	9	obj	_	_
+11	ennen	ennen	ADP	Adp	AdpType=Prep	12	case	_	_
+12	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Vartuttuaan Muhammed toimi kauppiaana tulevan vaimonsa Khadijan palveluksessa.
+1	Vartuttuaan	vartua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	3	advcl	_	_
+2	Muhammed	Muhammed	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	toimi	toimia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kauppiaana	kauppias	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+5	tulevan	tuleva	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	vaimonsa	vaimo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	8	nmod:poss	_	_
+7	Khadijan	Khadija	PROPN	N	Case=Gen|Number=Sing	6	appos	_	_
+8	palveluksessa	palvelus	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1526,13 +1636,105 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ilmestyksien kirjaaminen[muokkaa | muokkaa wikitekstiä]
-1	Ilmestyksien	ilmestys	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
-2	kirjaaminen[muokkaa	kirjaaminen[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = Ilmestyksien kirjaaminen
+1	Ilmestyksien	ilmestys	NOUN	N	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	kirjaaminen	kirjaaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ibn Hisham ei kerro mitään Koraanin muistiin kirjoittamisesta ja mainitsee sanan "Koraani" vain kymmenkunta kertaa, vaikka esittääkin siitä lainauksia.
+1	Ibn	Ibn	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpacesBefore=\n
+2	Hisham	Hisham	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kerro	kertoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	_
+6	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	muistiin	muisti	NOUN	N	Case=Ill|Number=Sing	8	nmod	_	_
+8	kirjoittamisesta	kirjoittaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	4	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	mainitsee	mainita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	sanan	sana	NOUN	N	Case=Gen|Number=Sing	10	obj	_	_
+12	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+13	Koraani	Koraani	PROPN	N	Case=Nom|Number=Sing	11	appos	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	13	punct	_	_
+15	vain	vain	ADV	Adv	_	16	advmod	_	_
+16	kymmenkunta	kymmen#kunta	NUM	Num	Case=Nom|Number=Sing|NumType=Card	17	nummod	_	_
+17	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	10	obl	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	vaikka	vaikka	SCONJ	C	_	20	mark	_	_
+20	esittääkin	esittää	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	_
+21	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	20	obl	_	_
+22	lainauksia	lainaus	NOUN	N	Case=Par|Number=Plur	20	obj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 2
+# text = Muhammedin lukutaidottomuus vakiintui myöhemmin opinkappaleeksi.
+1	Muhammedin	Muhammedi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	lukutaidottomuus	lukut#aidottomuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	3	nsubj	_	_
+3	vakiintui	vakiintua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	myöhemmin	myöhemmin	ADV	Adv	_	3	advmod	_	_
+5	opinkappaleeksi	opinkappale	NOUN	N	Case=Tra|Number=Sing	3	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ibn Hisham ei siitä puhu, vaan kertoo, että Muhammed "luki" Koraania ääneen.
+1	Ibn	Ibn	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+2	Hisham	Hisham	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	obl	_	_
+5	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	vaan	vaan	CCONJ	C	_	8	cc	_	_
+8	kertoo	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	että	että	SCONJ	C	_	13	mark	_	_
+11	Muhammed	Muhammed	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+12	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+13	luki	lukea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	ccomp	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	13	punct	_	_
+15	Koraania	koraani	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+16	ääneen	ääneen	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = 800-luvun islamilaisen käsityksen mukaan ainakin jotain kirjoitettiin heti muistiin.
+1	800-luvun	800#luku	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	islamilaisen	islamilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	3	amod	_	_
+3	käsityksen	käsitys	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+4	mukaan	mukaan	ADP	Adp	AdpType=Post	3	case	_	_
+5	ainakin	ainakin	ADV	Adv	_	6	advmod	_	_
+6	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	obj	_	_
+7	kirjoitettiin	kirjoittaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+8	heti	heti	ADV	Adv	_	7	advmod	_	_
+9	muistiin	muisti	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Väitteen perusteluina käytetään Koraanin sanoja (80: 13-16) sekä al-Tirmidhin (nro 1531) ja eräiden muiden haditheja.
+1	Väitteen	väite	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	perusteluina	perustelu	NOUN	N	Case=Ess|Derivation=Ja|Number=Plur	3	obl	_	_
+3	käytetään	käyttää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	Koraanin	Koraan	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	sanoja	sana	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+6	(	(	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+7	80:	80:	NUM	Num	_	5	appos	_	_
+8	13-16	13-16	NUM	Num	NumType=Card	7	nummod	_	SpaceAfter=No
+9	)	)	PUNCT	Punct	_	7	punct	_	_
+10	sekä	sekä	CCONJ	C	_	11	cc	_	_
+11	al-Tirmidhin	al-tirmidta	PROPN	N	Case=Gen|Number=Sing	5	conj	_	_
+12	(	(	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+13	nro	nro	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	11	nmod	_	_
+14	1531	1531	NUM	Num	NumType=Card	13	nummod	_	SpaceAfter=No
+15	)	)	PUNCT	Punct	_	13	punct	_	_
+16	ja	ja	CCONJ	C	_	19	cc	_	_
+17	eräiden	eräs	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	19	det	_	_
+18	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	19	nmod:poss	_	_
+19	haditheja	hadita	NOUN	N	Case=Par|Number=Plur	5	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1666,14 +1868,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin ensimmäinen kokoaminen[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin ensimmäinen kokoaminen
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	ensimmäinen	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	amod	_	_
-3	kokoaminen[muokkaa	kokoamin#en[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	kokoaminen	kokoaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1805,14 +2003,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin toinen kokoaminen[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+# text = Koraanin toinen kokoaminen
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:gobj	_	_
 2	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	amod	_	_
-3	kokoaminen[muokkaa	kokoamin#en[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	kokoaminen	kokoaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1921,14 +2115,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin tekstien vakiintuminen[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	tekstien	teksti	NOUN	N	Case=Gen|Number=Plur	3	nmod:poss	_	_
-3	vakiintuminen[muokkaa	vakiintuminen[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+# text = Koraanin tekstien vakiintuminen
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tekstien	teksti	NOUN	N	Case=Gen|Number=Plur	3	nmod:gobj	_	_
+3	vakiintuminen	vakiintuminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -2082,15 +2272,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin luomattomuus ja pyhyys[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin luomattomuus ja pyhyys
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	luomattomuus	luomattomuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	0	root	_	_
 3	ja	ja	CCONJ	C	_	4	cc	_	_
-4	pyhyys[muokkaa	pyhyy#s[muokka	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
-5	|	|	PUNCT	Punct	_	7	punct	_	_
-6	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	7	amod	_	_
-7	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punct	_	7	punct	_	SpacesAfter=\n
+4	pyhyys	pyhyys	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -2371,14 +2557,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraani ja tiede[muokkaa | muokkaa wikitekstiä]
+# text = Koraani ja tiede
 1	Koraani	kora	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
 2	ja	ja	CCONJ	C	_	3	cc	_	_
-3	tiede[muokkaa	tiede[#muokka	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	tiede	tiede	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -2509,13 +2691,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Historiakriittinen tutkimus[muokkaa | muokkaa wikitekstiä]
+# text = Historiakriittinen tutkimus
 1	Historiakriittinen	histor#iakriittinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
-2	tutkimus[muokkaa	tutkimu#s[muok	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	tutkimus	tutkimus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -2909,16 +3087,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vanhimmat tekstit ja viittaukset Koraaniin[muokkaa | muokkaa wikitekstiä]
+# text = Vanhimmat tekstit ja viittaukset
 1	Vanhimmat	vanha	ADJ	A	Case=Nom|Degree=Sup|Number=Plur	2	amod	_	_
 2	tekstit	teksti	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
 3	ja	ja	CCONJ	C	_	4	cc	_	_
 4	viittaukset	viittaus	NOUN	N	Case=Nom|Number=Plur	2	conj	_	_
-5	Koraaniin[muokkaa	koraaniin[muokka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-6	|	|	PUNCT	Punct	_	8	punct	_	_
-7	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	8	amod	_	_
-8	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-9	]	]	PUNCT	Punct	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Koraaniin
+1	Koraaniin	koraani	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -3134,6 +3311,236 @@
 1	Teksti	teksti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
 2	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	Punct	_	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = “Kuten on kerrottu, tämä Muhammed kirjoitti monia naurettavia teoksia, jotka hän jokaisen nimesi.
+1	“	“	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+2	Kuten	kuten	SCONJ	C	_	4	mark	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	kerrottu	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	det	_	_
+7	Muhammed	Muhammed	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kirjoitti	kirjoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	monia	moni	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	11	det	_	_
+10	naurettavia	naurettava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	11	amod	_	_
+11	teoksia	teos	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	16	punct	_	_
+13	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	16	obj	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+15	jokaisen	jokainen	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	16	obj	_	_
+16	nimesi	nimetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = On esimerkiksi Naisen kirja , sitten on kirja Jumalan kameli - - edelleen Pöydän kirja ja edelleen Hiehon kirja .
+1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+3	Naisen	nainen	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	sitten	sitten	ADV	Adv	_	1	conj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+8	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+9	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	kameli	kameli	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpacesAfter=\s\s
+11	-	-	PUNCT	Punct	_	15	punct	_	_
+12	-	-	PUNCT	Punct	_	15	punct	_	_
+13	edelleen	edelleen	ADV	Adv	_	15	advmod	_	_
+14	Pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	10	appos	_	SpacesAfter=\s\s
+16	ja	ja	CCONJ	C	_	19	cc	_	_
+17	edelleen	edelleen	ADV	Adv	_	19	advmod	_	_
+18	Hiehon	Hieho	PROPN	N	Case=Gen|Number=Sing	19	nmod:poss	_	_
+19	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	15	conj	_	_
+20	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Koraanin syntyvaiheista löytyy merkintöjä Bysantin keisarin Leo III:n (717–741) ja kalifi Umar II:n (717–720) kirjeenvaihdosta.
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	SpacesBefore=\n
+2	syntyvaiheista	syntyv#aihe	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+3	löytyy	löytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	merkintöjä	merkintä	NOUN	N	Case=Par|Number=Plur	3	nsubj	_	_
+5	Bysantin	Bysantti	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	keisarin	keisari	NOUN	N	Case=Gen|Number=Sing	19	nmod:poss	_	_
+7	Leo	Leo	PROPN	N	Case=Nom|Number=Sing	6	appos	_	_
+8	III:n	III	ADJ	Num	Case=Gen|NumType=Ord	7	flat:name	_	_
+9	(	(	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+10	717–741	717–741	NUM	Num	NumType=Card	7	appos	_	SpaceAfter=No
+11	)	)	PUNCT	Punct	_	10	punct	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	kalifi	kalifi	NOUN	N	Case=Nom|Number=Sing	14	compound:nn	_	_
+14	Umar	Umar	PROPN	N	Case=Nom|Number=Sing	6	appos	_	_
+15	II:n	II	ADJ	Num	Case=Gen|NumType=Ord	14	flat:name	_	_
+16	(	(	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+17	717–720	717–720	NUM	Num	NumType=Card	14	appos	_	SpaceAfter=No
+18	)	)	PUNCT	Punct	_	17	punct	_	_
+19	kirjeenvaihdosta	kirjeen#vaihto	NOUN	N	Case=Ela|Number=Sing	4	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Sen alkuperäinen kreikkalainen versio on kateissa, ja vanhimmat säilyneet käännökset, armenian ja latinankieliset, poikkeavat toisistaan ja ovat aikaisintaan 700-luvun lopulta.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	nmod:poss	_	_
+2	alkuperäinen	alku#peräinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	_
+3	kreikkalainen	kreikkalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	versio	versio	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	kateissa	kateissa	ADV	Adv	_	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	17	punct	_	_
+8	ja	ja	CCONJ	C	_	17	cc	_	_
+9	vanhimmat	vanha	ADJ	A	Case=Nom|Degree=Sup|Number=Plur	11	amod	_	_
+10	säilyneet	säilyä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	11	acl	_	_
+11	käännökset	käännös	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	armenian	armenia	NOUN	N	Case=Gen|Number=Sing	11	appos	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	latinankieliset	latinan#kielinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	13	punct	_	_
+17	poikkeavat	poiketa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+18	toisistaan	toinen	PRON	Pron	Case=Ela|Number=Plur|Person[psor]=3	17	obl	_	_
+19	ja	ja	CCONJ	C	_	23	cc	_	_
+20	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	aux	_	_
+21	aikaisintaan	aikaisintaan	ADV	Adv	_	23	advmod	_	_
+22	700-luvun	700#luku	NOUN	N	Case=Gen|Number=Sing	23	nmod:poss	_	_
+23	lopulta	lopulta	ADV	Adv	AdpType=Post	17	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Säilynyt teksti ei mainitse
+1	Säilynyt	säilyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl	_	_
+2	teksti	teksti	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	mainitse	mainita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+# sent_id = 4
+# text = Koraania oikealla nimellä eikä siteeraa sitä.
+1	Koraania	koraani	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+2	oikealla	oikea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	3	amod	_	_
+3	nimellä	nimi	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+4	eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	siteeraa	siteerata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Siinä kuitenkin esitetään kiinnostavia väitteitä Koraanin kokoamisesta:
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	obl	_	_
+2	kuitenkin	kuitenkin	ADV	Adv	_	3	advmod	_	_
+3	esitetään	esittää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	kiinnostavia	kiinnostaa	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+5	väitteitä	väite	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+6	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	7	nmod:gobj	_	_
+7	kokoamisesta	kokoaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	5	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = “Umar , Abu Turab ja Salman Persialainen kokosivat sen vaikka keskuudessanne onkin levitetty tietoa, että Jumala olisi lähettänyt sen taivaasta...
+1	“	“	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+2	Umar	Umar	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	Abu	Abu	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	Turab	Turab	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	SpacesAfter=\s\s
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	Salman	Salman	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+8	Persialainen	Persialainen	PROPN	N	Case=Nom|Derivation=Lainen|Number=Sing	7	flat:name	_	_
+9	kokosivat	koota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	SpacesAfter=\s\s
+11	vaikka	vaikka	SCONJ	C	_	14	mark	_	_
+12	keskuudessanne	keskuudessa	ADV	Adv	_	14	advmod	_	_
+13	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	_	_
+14	levitetty	levittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	advcl	_	_
+15	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	14	obj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	20	punct	_	_
+17	että	että	SCONJ	C	_	20	mark	_	_
+18	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	20	nsubj	_	_
+19	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	lähettänyt	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	15	ccomp	_	_
+21	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	20	obj	_	_
+22	taivaasta	taivas	NOUN	N	Case=Ela|Number=Sing	20	obl	_	SpaceAfter=No
+23	...	...	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 2
+# text = Mitä kirjaanne tulee, olette jo antaneet näytteitä sellaisista väärennöksistä, ja muiden ohella tunnetaan muuan Hajjaj, nimittämänne Persian kuvernööri, joka lähetti miehiä kokoamaan muinaisen kirjanne, jonka hän korvasi toisilla, itse kirjoittamillaan ja mieleisillään, jotka hän levitti kaikkialle valtakunnassanne...
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+2	kirjaanne	kirja	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=2	3	nsubj	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	jo	jo	ADV	Adv	_	7	advmod	_	_
+7	antaneet	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+8	näytteitä	näyte	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+9	sellaisista	sellainen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Lainen|Number=Plur	10	amod	_	_
+10	väärennöksistä	väärennös	NOUN	N	Case=Ela|Number=Plur	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	ja	ja	CCONJ	C	_	15	cc	_	_
+13	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	15	obl	_	_
+14	ohella	ohella	ADP	Adp	AdpType=Post	13	case	_	_
+15	tunnetaan	tuntea	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	conj	_	_
+16	muuan	muuan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	17	det	_	_
+17	Hajjaj	Hajjaj	PROPN	N	Case=Nom|Number=Sing	15	obj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	21	punct	_	_
+19	nimittämänne	nimittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	21	acl	_	_
+20	Persian	Persia	PROPN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	kuvernööri	kuvernööri	NOUN	N	Case=Nom|Number=Sing	17	appos	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	24	nsubj	_	_
+24	lähetti	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	acl:relcl	_	_
+25	miehiä	mies	NOUN	N	Case=Par|Number=Plur	26	nsubj	_	_
+26	kokoamaan	koota	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	24	xcomp:ds	_	_
+27	muinaisen	muinainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	28	amod	_	_
+28	kirjanne	kirja	NOUN	N	Case=Nom|Number=Sing	26	obj	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	32	punct	_	_
+30	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	32	obj	_	_
+31	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_
+32	korvasi	korvata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	28	acl:relcl	_	_
+33	toisilla	toinen	PRON	Pron	Case=Ade|Number=Plur|PronType=Ind	32	obl	_	SpaceAfter=No
+34	,	,	PUNCT	Punct	_	36	punct	_	_
+35	itse	itse	ADV	Adv	_	36	advmod	_	_
+36	kirjoittamillaan	kirjoittamillaan	VERB	V	Case=Ade|Number=Plur|Person[psor]=3	33	appos	_	_
+37	ja	ja	CCONJ	C	_	38	cc	_	_
+38	mieleisillään	mieleisillään	NOUN	A	Case=Ade|Number=Plur|Person[psor]=3	33	conj	_	SpaceAfter=No
+39	,	,	PUNCT	Punct	_	42	punct	_	_
+40	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	42	obj	_	_
+41	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	42	nsubj	_	_
+42	levitti	levittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	28	acl:relcl	_	_
+43	kaikkialle	kaikkialle	ADV	Adv	_	44	advmod	_	_
+44	valtakunnassanne	valtakunnassannen	NOUN	N	Case=Ine|Number=Sing	42	obl	_	SpaceAfter=No
+45	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Tästä hävityksestä kuitenkin pelastui osa Abu Turabin teoksista, koska Hajjaj ei kyennyt hävittämään kaikkea".
+1	Tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	det	_	_
+2	hävityksestä	hävitys	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	4	advmod	_	_
+4	pelastui	pelastua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	osa	osa	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+6	Abu	Abu	PROPN	N	Case=Nom|Number=Sing	8	nmod:poss	_	_
+7	Turabin	Turab	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	teoksista	teos	NOUN	N	Case=Ela|Number=Plur	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	koska	koska	SCONJ	C	_	13	mark	_	_
+11	Hajjaj	Hajjaj	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+12	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	kyennyt	kyetä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	advcl	_	_
+14	hävittämään	hävittää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+15	kaikkea	kaikki	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	14	obj	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -3525,18 +3932,6 @@
 3	tausta	tausta	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
 
-# sent_id = 2
-# text = [
-1	[	[	PUNCT	Punct	_	0	root	_	SpaceAfter=No
-
-# sent_id = 3
-# text = muokkaa | muokkaa wikitekstiä]
-1	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3845,14 +4240,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin alkuperäinen kieli[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin alkuperäinen kieli
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
 2	alkuperäinen	alku#peräinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
-3	kieli[muokkaa	kieli#[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	kieli	kieli	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -3922,7 +4313,7 @@
 8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
 
 # sent_id = 5
-# text = Siitä esimerkkinä on Voiman suura (96), joka Hämeen-Anttilan suomentamana kuuluu seuraavasti:”
+# text = Siitä esimerkkinä on Voiman suura (96), joka Hämeen-Anttilan suomentamana kuuluu seuraavasti:
 1	Siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	det	_	_
 2	esimerkkinä	esimerkki	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
 3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
@@ -3937,19 +4328,24 @@
 12	suomentamana	suomentaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	13	advcl	_	SpacesAfter=\s\s
 13	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
 14	seuraavasti	seuraavasti	ADV	Adv	Derivation=Sti	13	advmod	_	SpaceAfter=No
-15	:	:	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
-16	”	”	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
 
-# sent_id = 6
-# text = Olemme lähettäneet tämän Voiman yönä.
-1	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
-2	lähettäneet	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
-3	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	det	_	_
-4	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
-5	yönä	yö	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
-6	.	.	PUNCT	Punct	_	2	punct	_	_
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = ”Olemme lähettäneet tämän Voiman yönä.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lähettäneet	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	det	_	_
+5	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+6	yönä	yö	NOUN	N	Case=Ess|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
 
-# sent_id = 7
+# sent_id = 2
 # text = Mistäpä tietäisit, mikä Voiman yö on!
 1	Mistäpä	mistä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	2	obl	_	_
 2	tietäisit	tietää	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
@@ -3960,7 +4356,7 @@
 7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	SpaceAfter=No
 8	!	!	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 8
+# sent_id = 3
 # text = Voiman yö on parempi kuin tuhat kuukautta.
 1	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	yö	yö	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
@@ -3971,7 +4367,7 @@
 7	kuukautta	kuukausi	NOUN	N	Case=Par|Number=Sing	4	advcl	_	SpaceAfter=No
 8	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 9
+# sent_id = 4
 # text = Silloin enkelit ja Henki laskeutuvat taivaasta kaikissa asioissa Herran luvalla.
 1	Silloin	silloin	ADV	Adv	_	5	advmod	_	_
 2	enkelit	enkeli	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
@@ -3985,7 +4381,7 @@
 10	luvalla	lupa	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	Punct	_	5	punct	_	_
 
-# sent_id = 10
+# sent_id = 5
 # text = Silloin vallitsee rauha aina aamunkoihin asti.”
 1	Silloin	silloin	ADV	Adv	_	2	advmod	_	_
 2	vallitsee	vallita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -3996,7 +4392,12 @@
 7	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
 8	”	”	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 11
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Islamilaisen Koraanin selityksen (tafsir) mukaan suura kertoo, että juuri tuona yönä Koraani laskeutui profeetta Muhammedille.
 1	Islamilaisen	islamilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
 2	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
@@ -4018,7 +4419,7 @@
 18	Muhammedille	Muhammed	PROPN	N	Case=All|Number=Sing	16	obl	_	SpaceAfter=No
 19	.	.	PUNCT	Punct	_	9	punct	_	_
 
-# sent_id = 12
+# sent_id = 2
 # text = Muslimit viettävät Voiman yötä vuosittain paastokuukauden aikana, jolloin suoritetut rukoukset ovat tehokkaampia kuin vastaavat teot "tuhantena kuukautena", joihin ei sisälly Voiman yötä.
 1	Muslimit	muslimi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
 2	viettävät	viettää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -4048,35 +4449,32 @@
 26	yötä	yö	NOUN	N	Case=Par|Number=Sing	24	nsubj	_	SpaceAfter=No
 27	.	.	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 13
-# text = Muslimit eivät ole varmoja siitä, mikä Ramadan-kuukauden öistä on varsinainen
+# sent_id = 3
+# text = Muslimit eivät ole varmoja siitä, mikä Ramadan-kuukauden öistä on varsinainen Voiman yö, joten tämän takia rukoillaan kaikkina viimeisinä öinä.
 1	Muslimit	muslimi	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
 2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
 3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
 4	varmoja	varma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	_
 5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	nmod	_	SpaceAfter=No
-6	,	,	PUNCT	Punct	_	11	punct	_	_
-7	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	11	nsubj:cop	_	_
+6	,	,	PUNCT	Punct	_	13	punct	_	_
+7	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	13	nsubj:cop	_	_
 8	Ramadan-kuukauden	ramadan-kuu#kausi	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
-9	öistä	yö	NOUN	N	Case=Ela|Number=Plur	11	nmod	_	_
-10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
-11	varsinainen	varsinainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	ccomp	_	_
+9	öistä	yö	NOUN	N	Case=Ela|Number=Plur	7	nmod	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+11	varsinainen	varsinainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	13	amod	_	_
+12	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	yö	yö	NOUN	N	Case=Nom|Number=Sing	5	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	joten	joten	ADV	Adv	_	18	advmod	_	_
+16	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	18	obl	_	_
+17	takia	takia	ADP	Adp	AdpType=Post	16	case	_	_
+18	rukoillaan	rukoilla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	13	acl:relcl	_	_
+19	kaikkina	kaikki	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	21	det	_	_
+20	viimeisinä	viimeinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Plur	21	amod	_	_
+21	öinä	yö	NOUN	N	Case=Ess|Number=Plur	18	obl	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 14
-# text = Voiman yö, joten tämän takia rukoillaan kaikkina viimeisinä öinä.
-1	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	yö	yö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
-3	,	,	PUNCT	Punct	_	7	punct	_	_
-4	joten	joten	ADV	Adv	_	7	advmod	_	_
-5	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obl	_	_
-6	takia	takia	ADP	Adp	AdpType=Post	5	case	_	_
-7	rukoillaan	rukoilla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	acl:relcl	_	_
-8	kaikkina	kaikki	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	10	det	_	_
-9	viimeisinä	viimeinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
-10	öinä	yö	NOUN	N	Case=Ess|Number=Plur	7	obl	_	SpaceAfter=No
-11	.	.	PUNCT	Punct	_	2	punct	_	_
-
-# sent_id = 15
+# sent_id = 4
 # text = Brittiläinen orientalisti Richard Bell (1876–1952) näki kuitenkin Voiman suurassa kuvauksen jouluyöstä.
 1	Brittiläinen	brittiläinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
 2	orientalisti	orientalisti	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
@@ -4093,7 +4491,7 @@
 13	jouluyöstä	joul#uyö	NOUN	N	Case=Ela|Number=Sing	12	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	Punct	_	8	punct	_	_
 
-# sent_id = 16
+# sent_id = 5
 # text = Myös Günter Lüling katsoi vuonna 1970, että Voiman suura on kristillinen hymni, jossa saarnaaja puhuu seurakunnalle.
 1	Myös	myös	ADV	Adv	_	2	advmod	_	_
 2	Günter	Günter	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
@@ -4115,7 +4513,7 @@
 18	seurakunnalle	seura#kunta	NOUN	N	Case=All|Number=Sing	17	obl	_	SpaceAfter=No
 19	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 17
+# sent_id = 6
 # text = Luxenbergin tekstianalyysi tukee näitä väitteitä.
 1	Luxenbergin	Luxenberg	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	tekstianalyysi	teksti#analyysi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
@@ -4124,7 +4522,7 @@
 5	väitteitä	väite	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
 6	.	.	PUNCT	Punct	_	3	punct	_	_
 
-# sent_id = 18
+# sent_id = 7
 # text = Luxenbergin mukaan arabian sana al-qadr tarkoittaa myös kohtaloa ja sanan sisältyvä konsonanttiyhdistelmä q-d-r tarkoittaa syyro-arameassa syntymää tai ”onnentähteä”, jonka merkeissä ihminen on syntynyt sekä myös joulua.
 1	Luxenbergin	Luxenberg	PROPN	N	Case=Gen|Number=Sing	6	obl	_	_
 2	mukaan	mukaan	ADP	Adp	AdpType=Post	1	case	_	_
@@ -4157,7 +4555,7 @@
 29	joulua	joulu	NOUN	N	Case=Par|Number=Sing	26	conj	_	SpaceAfter=No
 30	.	.	PUNCT	Punct	_	6	punct	_	_
 
-# sent_id = 19
+# sent_id = 8
 # text = Myöhäisantiikissa astrologia oli suosittua.
 1	Myöhäisantiikissa	myöhäis#antiikki	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
 2	astrologia	astrologia	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
@@ -4165,7 +4563,7 @@
 4	suosittua	suosittu	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 20
+# sent_id = 9
 # text = Se näkyy Jeesuksen syntymää koskevissa kertomuksissa, joissa joulutähti johdatti itämaan tietäjiä.
 1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	näkyy	näkyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -4181,7 +4579,7 @@
 12	tietäjiä	tietäjä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 21
+# sent_id = 10
 # text = Koska islamissa ei tunneta yöjumalanpalvelusta, Luxenberg näkee aamunkoittoon ulottuvassa valvomisessa viittauksen Syyrian kirkon joulunviettoon.
 1	Koska	koska	SCONJ	C	_	4	mark	_	_
 2	islamissa	islama	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
@@ -4200,7 +4598,7 @@
 15	joulunviettoon	joulu#nvietto	NOUN	N	Case=Ill|Number=Sing	12	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	Punct	_	8	punct	_	_
 
-# sent_id = 22
+# sent_id = 11
 # text = Analyysin lopputuloksena Luxenberg kääntää suuran seuraavasti:
 1	Analyysin	analyysi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	lopputuloksena	loppu#tulos	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
@@ -4210,7 +4608,12 @@
 6	seuraavasti	seuraavasti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
 7	:	:	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 23
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = ”Olemme antaneet hänen (=Jeesuksen) laskeutua alas jouluyönä.
 1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
 2	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
@@ -4225,7 +4628,7 @@
 11	jouluyönä	joulu#yö	NOUN	N	Case=Ess|Number=Sing	9	obl	_	SpaceAfter=No
 12	.	.	PUNCT	Punct	_	3	punct	_	_
 
-# sent_id = 24
+# sent_id = 2
 # text = Mistäpä tietäisit, mikä on jouluyö?
 1	Mistäpä	mistä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	2	obl	_	_
 2	tietäisit	tietää	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
@@ -4235,7 +4638,7 @@
 6	jouluyö	jouluyö	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
 7	?	?	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 25
+# sent_id = 3
 # text = Jouluyö on rikkaampi armosta kuin tuhat yöjumalanpalvelusta.
 1	Jouluyö	jouluyö	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
 2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
@@ -4246,7 +4649,7 @@
 7	yöjumalanpalvelusta	yöjumalanpa#lvelust	NOUN	N	Case=Ela|Derivation=U|Number=Sing	3	advcl	_	SpaceAfter=No
 8	.	.	PUNCT	Punct	_	3	punct	_	_
 
-# sent_id = 26
+# sent_id = 4
 # text = Enkelit, henkien seuraamina, tuovat silloin Herransa luvalla alas kaikenlaisia hymnejä.
 1	Enkelit	enkeli	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	Punct	_	4	punct	_	_
@@ -4262,7 +4665,7 @@
 12	hymnejä	hymni	NOUN	N	Case=Par|Number=Plur	6	obj	_	SpaceAfter=No
 13	.	.	PUNCT	Punct	_	6	punct	_	_
 
-# sent_id = 27
+# sent_id = 5
 # text = Silloin vallitsee rauha aamunkoittoon asti.”
 1	Silloin	silloin	ADV	Adv	_	2	advmod	_	_
 2	vallitsee	vallita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -4272,7 +4675,12 @@
 6	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
 7	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
 
-# sent_id = 28
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Koraanin scripta defectaa luetaan Luxenbergin metodilla siten, että myöhemmin lisätyt diakriittiset merkit poistetaan ja tulkinnassa otetaan huomioon myös mahdolliset arameankieliset vaihtoehdot.
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	scripta	scripta	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
@@ -4298,7 +4706,7 @@
 22	vaihtoehdot	vaihto#ehto	NOUN	N	Case=Nom|Number=Plur	17	obj	_	SpaceAfter=No
 23	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 29
+# sent_id = 2
 # text = Voiman suura muuttuu tällöin jouluyötä ja Jeesuksen syntymää ylistäväksi hymniksi.
 1	Voiman	voima	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	suura	suura	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
@@ -4312,7 +4720,7 @@
 10	hymniksi	hymni	NOUN	N	Case=Tra|Number=Sing	5	conj	_	SpaceAfter=No
 11	.	.	PUNCT	Punct	_	3	punct	_	_
 
-# sent_id = 30
+# sent_id = 3
 # text = Vastaavalla tavalla monista Koraanin kohdista löytyy uusia tulkintoja.
 1	Vastaavalla	vastaava	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	2	amod	_	_
 2	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
@@ -4324,7 +4732,7 @@
 8	tulkintoja	tulkinto	NOUN	N	Case=Par|Number=Plur	6	nsubj	_	SpaceAfter=No
 9	.	.	PUNCT	Punct	_	6	punct	_	_
 
-# sent_id = 31
+# sent_id = 4
 # text = Luxenbergin tunnetuin esimerkki koskee Paratiisin neitsyitä, joita hän pitää käännösvirheenä; kyse olisi todellisuudessa viinirypäleistä.
 1	Luxenbergin	Luxenberg	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
 2	tunnetuin	tunnettu	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	3	amod	_	_
@@ -4344,14 +4752,14 @@
 16	viinirypäleistä	viin#irypäleinen	NOUN	N	Case=Ela|Number=Plur	10	parataxis	_	SpaceAfter=No
 17	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 32
+# sent_id = 5
 # text = Muita esimerkkejä taustaltaan kristillisistä
 1	Muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	2	det	_	_
 2	esimerkkejä	esimerkki	NOUN	N	Case=Par|Number=Plur	0	root	_	_
 3	taustaltaan	tausta	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	2	nmod	_	_
 4	kristillisistä	kristillinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Llinen|Number=Plur	2	nmod	_	_
 
-# sent_id = 33
+# sent_id = 6
 # text = Koraanin suurista ovat al-Fil eli Norsun suura (105) ja al-Masad eli Niiniköyden suura (111).
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	suurista	suuri	NOUN	A	Case=Ela|Number=Plur	0	root	_	_
@@ -4373,7 +4781,7 @@
 18	)	)	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
 19	.	.	PUNCT	Punct	_	2	punct	_	_
 
-# sent_id = 34
+# sent_id = 7
 # text = Luxenbergin tulokset ovat yllättäviä, mutta eivät ole saavuttaneet yleistä hyväksyntää arabistien keskuudessa.
 1	Luxenbergin	Luxenberg	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	tulokset	tulos	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
@@ -4555,13 +4963,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin eheys[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin eheys
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	eheys[muokkaa	eheys#[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	eheys	eheys	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -4569,13 +4973,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Suullinen perinne[muokkaa | muokkaa wikitekstiä]
+# text = Suullinen perinne
 1	Suullinen	suullinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	2	amod	_	_
-2	perinne[muokkaa	perinne[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	2	punct	_	SpacesAfter=\n
+2	perinne	perinne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -4727,14 +5127,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin kirjalliset versiot[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin kirjalliset versiot
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
 2	kirjalliset	kirjallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Plur	3	amod	_	_
-3	versiot[muokkaa	versiot[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	versiot	versio	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -4960,13 +5356,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Jakeiden kumoaminen[muokkaa | muokkaa wikitekstiä]
-1	Jakeiden	jakea	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
-2	kumoaminen[muokkaa	kumo#aminen[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = Jakeiden kumoaminen
+1	Jakeiden	jakea	NOUN	N	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	kumoaminen	kumoaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -5215,13 +5607,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Puuttuvat osat[muokkaa | muokkaa wikitekstiä]
+# text = Puuttuvat osat
 1	Puuttuvat	puuttua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	2	acl	_	_
-2	osat[muokkaa	osat[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	osat	osa	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -5385,8 +5773,8 @@
 11	.	.	PUNCT	Punct	_	2	punct	_	_
 
 # sent_id = 11
-# text = Sunan Ibn Majan hadith kertoo eräästä toisesta puutteesta:”Aishan kerrotaan sanoneen: kivittämistä ja aikuisen rintaruokintaa koskevista jakeista tuli kymmenen kertaa ilmoitus, ja niitä koskeva paperi oli tyynyni alla.
-1	Sunan	Sunan	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
+# text = Sunan Ibn Majan hadith kertoo eräästä toisesta puutteesta:
+1	Sunan	Sunan	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
 2	Ibn	Ibn	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
 3	Majan	Maja	PROPN	N	Case=Gen|Number=Sing	2	flat:name	_	_
 4	hadith	hadith	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
@@ -5394,33 +5782,41 @@
 6	eräästä	eräs	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	8	det	_	_
 7	toisesta	toinen	ADJ	Num	Case=Ela|Derivation=Inen|Number=Sing|NumType=Ord	8	amod	_	_
 8	puutteesta	puute	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
-9	:	:	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
-10	”	”	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
-11	Aishan	Aisha	PROPN	N	Case=Gen|Number=Sing	13	nsubj	_	_
-12	kerrotaan	kertoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	5	parataxis	_	_
-13	sanoneen	sanoa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	ccomp	_	SpaceAfter=No
-14	:	:	PUNCT	Punct	_	21	punct	_	_
-15	kivittämistä	kivittäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	21	nsubj	_	_
-16	ja	ja	CCONJ	C	_	18	cc	_	_
-17	aikuisen	aikuinen	NOUN	N	Case=Gen|Number=Sing	18	nmod:poss	_	_
-18	rintaruokintaa	rinta#ruokinta	NOUN	N	Case=Par|Number=Sing	15	conj	_	_
-19	koskevista	koskea	VERB	V	Case=Ela|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	20	acl	_	_
-20	jakeista	jakea	NOUN	N	Case=Ela|Number=Plur	15	nmod	_	_
-21	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	parataxis	_	_
-22	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	23	nummod	_	_
-23	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	21	obl	_	_
-24	ilmoitus	ilmoitus	NOUN	N	Case=Nom|Number=Sing	21	nsubj	_	SpaceAfter=No
-25	,	,	PUNCT	Punct	_	31	punct	_	_
-26	ja	ja	CCONJ	C	_	31	cc	_	_
-27	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	28	obj	_	_
-28	koskeva	koskea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	29	acl	_	_
-29	paperi	paperi	NOUN	N	Case=Nom|Number=Sing	31	nsubj:cop	_	_
-30	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	cop	_	_
-31	tyynyni	tyyny	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	21	conj	_	_
-32	alla	alla	ADP	Adp	AdpType=Post	31	case	_	SpaceAfter=No
-33	.	.	PUNCT	Punct	_	5	punct	_	_
+9	:	:	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
 
-# sent_id = 12
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = ”Aishan kerrotaan sanoneen: kivittämistä ja aikuisen rintaruokintaa koskevista jakeista tuli kymmenen kertaa ilmoitus, ja niitä koskeva paperi oli tyynyni alla.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Aishan	Aisha	PROPN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+3	kerrotaan	kertoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	sanoneen	sanoa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	ccomp	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	12	punct	_	_
+6	kivittämistä	kivittäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	12	nsubj	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	aikuisen	aikuinen	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	rintaruokintaa	rinta#ruokinta	NOUN	N	Case=Par|Number=Sing	6	conj	_	_
+10	koskevista	koskea	VERB	V	Case=Ela|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+11	jakeista	jakea	NOUN	N	Case=Ela|Number=Plur	6	nmod	_	_
+12	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+13	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	14	nummod	_	_
+14	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	12	obl	_	_
+15	ilmoitus	ilmoitus	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	22	punct	_	_
+17	ja	ja	CCONJ	C	_	22	cc	_	_
+18	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	19	obj	_	_
+19	koskeva	koskea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	20	acl	_	_
+20	paperi	paperi	NOUN	N	Case=Nom|Number=Sing	22	nsubj:cop	_	_
+21	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	cop	_	_
+22	tyynyni	tyyny	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	12	conj	_	_
+23	alla	alla	ADP	Adp	AdpType=Post	22	case	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
 # text = Kun Jumalan lähettiläs kuoli, olimme kaikki mietteissämme hänen kuolemastaan, ja kesy lammas söi paperin.”
 1	Kun	kun	SCONJ	C	_	4	mark	_	_
 2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
@@ -5441,7 +5837,12 @@
 17	.	.	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
 18	”	”	PUNCT	Punct	_	8	punct	_	_
 
-# sent_id = 13
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Aikuisten rintaruokinnassa kyse oli siitä, että nainen voi toimia miehen työtoverina ainoastaan, jos he ovat sukulaisia.
 1	Aikuisten	aikuinen	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
 2	rintaruokinnassa	rinta#ruokinta	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
@@ -5463,7 +5864,7 @@
 18	sukulaisia	sukulainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	10	advcl	_	SpaceAfter=No
 19	.	.	PUNCT	Punct	_	5	punct	_	_
 
-# sent_id = 14
+# sent_id = 2
 # text = Sukulaisuussuhde voidaan kuitenkin luoda siten, että nainen imettää miestä.
 1	Sukulaisuussuhde	sukulaisuus#suhde	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
 2	voidaan	voida	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	aux	_	_
@@ -5477,7 +5878,7 @@
 10	miestä	mies	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	Punct	_	4	punct	_	_
 
-# sent_id = 15
+# sent_id = 3
 # text = Tämä "aikuisten rintaruokinta" on vahvistettu keinoksi ei-sukulaisten työtoveruuteen useissa luotettavissa haditheissa ja etenkin kokoelmassa Sunan an-Nasa'i.
 1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
 2	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
@@ -5499,7 +5900,7 @@
 18	an-Nasa'i	an-nasa'i	PROPN	N	Case=Nom|Number=Sing	17	flat:name	_	SpaceAfter=No
 19	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\s
 
-# sent_id = 16
+# sent_id = 4
 # text = Siitä tuli näin osa islamia, vaikka tieto puuttuukin Koraanista.
 1	Siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	obl	_	_
 2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -5638,13 +6039,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vieraat osat[muokkaa | muokkaa wikitekstiä]
+# text = Vieraat osat
 1	Vieraat	vieras	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	osat[muokkaa	osat[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	2	punct	_	SpacesAfter=\n
+2	osat	osa	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -5837,13 +6234,70 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin suurat[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	suurat[muokkaa	suura#t[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = »Aina ennenkin, kun olemme lähettäneet lähettilään tai profeetan, on Saatana saanut pujotetuksi omia toiveitaan hänen toiveidensa lomaan, mutta Jumala pyyhkii pois sen, mitä Saatana on saanut niihin sekoitetuksi, ja sitten Hän vahvistaa omat merkkinsä.
+1	»	»	PUNCT	Punct	_	14	punct	_	SpaceAfter=No
+2	Aina	aina	ADV	Adv	_	3	advmod	_	_
+3	ennenkin	ennen	ADV	Adv	Clitic=Kin	14	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	kun	kun	SCONJ	C	_	7	mark	_	_
+6	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	lähettäneet	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	14	advcl	_	_
+8	lähettilään	lähettilä	NOUN	N	Case=Gen|Number=Sing	7	obj	_	_
+9	tai	tai	CCONJ	C	_	10	cc	_	_
+10	profeetan	profeetta	NOUN	N	Case=Gen|Number=Sing	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	7	punct	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	_
+13	Saatana	saatana	PROPN	N	_	14	nsubj	_	_
+14	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+15	pujotetuksi	pujottaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	14	xcomp	_	_
+16	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	17	amod	_	_
+17	toiveitaan	toive	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	15	obj	_	_
+18	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	nmod:poss	_	_
+19	toiveidensa	toiveis	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	20	nmod:poss	_	_
+20	lomaan	loma	NOUN	N	Case=Ill|Number=Sing	15	obl	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	24	punct	_	_
+22	mutta	mutta	CCONJ	C	_	24	cc	_	_
+23	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	24	nsubj	_	_
+24	pyyhkii	pyyhkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	conj	_	_
+25	pois	pois	ADV	Adv	_	24	advmod	_	_
+26	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	24	obj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	31	punct	_	_
+28	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	31	obj	_	_
+29	Saatana	saatana	PROPN	N	Case=Nom|Number=Sing	31	nsubj	_	_
+30	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	aux	_	_
+31	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	26	acl:relcl	_	_
+32	niihin	se	PRON	Pron	Case=Ill|Number=Plur|PronType=Dem	33	obl	_	_
+33	sekoitetuksi	sekoittaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	31	xcomp	_	SpaceAfter=No
+34	,	,	PUNCT	Punct	_	38	punct	_	_
+35	ja	ja	CCONJ	C	_	38	cc	_	_
+36	sitten	sitten	ADV	Adv	_	38	advmod	_	_
+37	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_
+38	vahvistaa	vahvistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	conj	_	_
+39	omat	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	40	amod	_	_
+40	merkkinsä	merkki	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	38	obj	_	SpaceAfter=No
+41	.	.	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 2
+# text = Jumala on Tietävä, Viisas.»
+1	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	Tietävä	tietävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Viisas	Viisas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	»	»	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = (Koraani 22:52, suomennos Hämeen-Anttila, 1995)
+1	(	(	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Koraani	kora	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	22:52	22:52	NUM	Num	NumType=Card	2	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	suomennos	suomennos	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	Hämeen-Anttila	Hämeen-anttila	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	1995	1995	NUM	Num	NumType=Card	6	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -5851,14 +6305,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rakenne ja muodot[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin suurat
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	suurat	suura	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Rakenne ja muodot
 1	Rakenne	rakenne	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
 2	ja	ja	CCONJ	C	_	3	cc	_	_
-3	muodot[muokkaa	muodo#t[muokka	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	muodot	muoto	NOUN	N	Case=Nom|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6028,6 +6488,75 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = »"Totisesti, Jumala tietää tuomion hetken, Hän lähettää sateen maan päälle ja Hän tietää, mitkä ihmiskohtalot äitien kohtuihin kätketyt ovat.
+1	»	»	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+3	Totisesti	totisesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	tuomion	tuomio	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	lähettää	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+12	sateen	sade	NOUN	N	Case=Gen|Number=Sing	11	obj	_	_
+13	maan	maa	NOUN	N	Case=Gen|Number=Sing	11	obl	_	_
+14	päälle	päälle	ADP	Adp	AdpType=Post	13	case	_	_
+15	ja	ja	CCONJ	C	_	17	cc	_	_
+16	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	mitkä	mikä	PRON	Pron	Case=Nom|Number=Plur|PronType=Int	20	det	_	_
+20	ihmiskohtalot	ihmis#kohtalo	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	_
+21	äitien	äiti	NOUN	N	Case=Gen|Number=Plur	22	nmod:poss	_	_
+22	kohtuihin	kohtu	NOUN	N	Case=Ill|Number=Plur	23	obl	_	_
+23	kätketyt	kätkeä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	20	acl	_	_
+24	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Yksikään sielu ei aavista, mitä hänen on huomenna koettava, eikä sitä, missä maassa hän on kuoleva.
+1	Yksikään	yksi	NUM	Num	Case=Nom|Clitic=Kaan|Number=Sing|NumType=Card	2	nummod	_	_
+2	sielu	sielu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	aavista	aavistaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	10	obj	_	_
+7	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	huomenna	huomenna	ADV	Adv	_	10	advmod	_	_
+10	koettava	koeta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	4	ccomp	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	10	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	19	punct	_	_
+15	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	16	det	_	_
+16	maassa	maa	NOUN	N	Case=Ine|Number=Sing	19	obl	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	kuoleva	kuoleva	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	13	acl:relcl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Totisesti, Jumala on tietävä, tarkkanäköinen."»
+1	Totisesti	totisesti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	tietävä	tietää	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	tarkkanäköinen	tarkkanäköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+10	»	»	PUNCT	Punct	_	5	punct	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Ikäjärjestys kulkee pääosin taaksepäin siten, että Koraanin lopussa olevat lyhyemmät suurat ovat vanhimpia ja alussa olevat pidemmät suurat nuorimpia.
 1	Ikäjärjestys	ikä#järjestys	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
 2	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -6184,12 +6713,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sisältö[muokkaa | muokkaa wikitekstiä]
-1	Sisältö[muokkaa	sisältö[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Sisältö
+1	Sisältö	sisältö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6396,15 +6921,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin suhde muihin uskontoihin[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin suhde muihin uskontoihin
 1	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
 2	suhde	suhde	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
 3	muihin	muu	PRON	Pron	Case=Ill|Number=Plur|PronType=Ind	4	det	_	_
-4	uskontoihin[muokkaa	uskontoihin[muokka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-5	|	|	PUNCT	Punct	_	7	punct	_	_
-6	muokkaa	muokka	NOUN	N	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
-7	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Punct	_	7	punct	_	SpacesAfter=\n
+4	uskontoihin	uskonta	NOUN	N	Case=Ill|Number=Plur	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6530,6 +7051,67 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = »Niitä uskovista sekä juutalaisista, kristityistä ja saabilaisista, jotka uskovat Jumalaan ja viimeiseen päivään ja tekevät hyviä töitä, odottaa palkka heidän Herransa luona.
+1	»	»	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+2	Niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	3	det	_	_
+3	uskovista	uskova	NOUN	N	Case=Ela|Number=Plur	22	obl	_	_
+4	sekä	sekä	CCONJ	C	_	5	cc	_	_
+5	juutalaisista	juutalainen	NOUN	N	Case=Ela|Derivation=Lainen|Number=Plur	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	kristityistä	kristityinen	NOUN	N	Case=Ela|Number=Plur	5	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	saabilaisista	saabilainen	NOUN	N	Case=Ela|Derivation=Lainen|Number=Plur	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	12	nsubj	_	_
+12	uskovat	uskoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+13	Jumalaan	Jumala	PROPN	N	Case=Ill|Number=Sing	12	obl	_	_
+14	ja	ja	CCONJ	C	_	16	cc	_	_
+15	viimeiseen	viimeinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Sing	16	amod	_	_
+16	päivään	päivä	NOUN	N	Case=Ill|Number=Sing	13	conj	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	_
+19	hyviä	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	20	amod	_	_
+20	töitä	työ	NOUN	N	Case=Par|Number=Plur	18	obj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	12	punct	_	_
+22	odottaa	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+23	palkka	palkka	NOUN	N	Case=Nom|Number=Sing	22	nsubj	_	_
+24	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	25	nmod:poss	_	_
+25	Herransa	herra	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	22	obl	_	_
+26	luona	luona	ADP	Adp	AdpType=Post	25	case	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	22	punct	_	_
+
+# sent_id = 2
+# text = Ei heidän tarvitse pelätä, eivätkä he joudu suremaan.»
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	tarvitse	tarvita	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	pelätä	pelätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	eivätkä	ei	AUX	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+7	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	joudu	joutua	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	suremaan	surea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+11	»	»	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = (Koraani 2:62, suomennos Hämeen-Anttila, 1995)
+1	(	(	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Koraani	kora	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	2:62	2:62	NUM	Num	NumType=Card	2	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	suomennos	suomennos	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	Hämeen-Anttila	Hämeen-anttila	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	1995	1995	NUM	Num	NumType=Card	6	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Toisaalta Koraanissa on kohtia, joissa erkaannutaan muista uskonnoista ja rakennetaan omaa identiteettiä palaamalla niiden ohi Abrahamiin - keino, jota myös apostoli Paavali käytti puolustaessaan kristinuskoa.
 1	Toisaalta	toisaalta	ADV	Adv	_	2	advmod	_	_
 2	Koraanissa	koraani	PROPN	N	Case=Ine|Number=Sing	0	root	_	_
@@ -6559,6 +7141,67 @@
 26	puolustaessaan	puolustaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	25	advcl	_	_
 27	kristinuskoa	kristinusko	NOUN	N	Case=Par|Number=Sing	26	obj	_	SpaceAfter=No
 28	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = finnish-tdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = »He sanovat: ”Kääntykää juutalaisiksi!”
+1	»	»	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	sanovat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	6	punct	_	_
+5	”	”	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+6	Kääntykää	kääntyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	juutalaisiksi	juutalainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	6	xcomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = – tai ”kristityiksi” – ”niin saatte johdatuksen!”
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	tai	tai	CCONJ	C	_	4	cc	_	_
+3	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+4	kristityiksi	kristityt	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	9	xcomp	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	4	punct	_	_
+6	–	–	PUNCT	Punct	_	9	punct	_	_
+7	”	”	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+8	niin	niin	ADV	Adv	_	9	advmod	_	_
+9	saatte	saada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	johdatuksen	johdatus	NOUN	N	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+12	”	”	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Sano: Me olemme hanifeja Abrahamin uskossa; hän ei ollut monijumalainen.»
+1	Sano	sanoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	Punct	_	5	punct	_	_
+3	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj:cop	_	_
+4	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	hanifeja	hanifi	NOUN	N	Case=Par|Number=Plur	1	parataxis	_	_
+6	Abrahamin	Abraham	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	uskossa	usko	NOUN	N	Case=Ine|Number=Sing	5	nmod	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	12	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj:cop	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+12	monijumalainen	monijumalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	1	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+14	»	»	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = (Koraani 2:135, suomennos Hämeen-Anttila, 1995)
+1	(	(	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Koraani	kora	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	2:135	2:135	NUM	Num	NumType=Card	2	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	suomennos	suomennos	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	Hämeen-Anttila	Hämeen-anttila	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	1995	1995	NUM	Num	NumType=Card	6	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6719,13 +7362,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin laki[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	Koraani	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	laki[muokkaa	laki[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = Koraanin laki
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	laki	laki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6880,13 +7519,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin tutkimus[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	tutkimus[muokkaa	tutkimu#s[muok	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = Koraanin tutkimus
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:gobj	_	_
+2	tutkimus	tutkimus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -6972,13 +7607,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Suurien ajoitus[muokkaa | muokkaa wikitekstiä]
-1	Suurien	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	2	amod	_	_
-2	ajoitus[muokkaa	ajoitus[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+# text = Suurien ajoitus
+1	Suurien	suuri	ADJ	A	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	ajoitus	ajoitus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -7178,13 +7809,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin alkuperä[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin alkuperä
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	alkuperä[muokkaa	alkup#erä[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	alkuperä	alku#perä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -7383,14 +8010,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kriittisen koulukunnan ongelmia[muokkaa | muokkaa wikitekstiä]
+# text = Kriittisen koulukunnan ongelmia
 1	Kriittisen	kriittinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
 2	koulukunnan	koulu#kunta	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
-3	ongelmia[muokkaa	ongelmia[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Degree=Pos|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	ongelmia	ongelma	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -7516,14 +8139,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin islamilainen tulkinta[muokkaa | muokkaa wikitekstiä]
-1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+# text = Koraanin islamilainen tulkinta
+1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	3	nmod:gobj	_	_
 2	islamilainen	islamilainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	3	amod	_	_
-3	tulkinta[muokkaa	tulkinta[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	3	punct	_	SpacesAfter=\n
+3	tulkinta	tulkinta	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8019,15 +8638,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin kääntäminen eri kielille[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin kääntäminen eri kielille
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:gobj	_	_
 2	kääntäminen	kääntäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	_
 3	eri	eri	ADJ	A	_	4	amod	_	_
-4	kielille[muokkaa	kielille[muokka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-5	|	|	PUNCT	Punct	_	7	punct	_	_
-6	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	7	amod	_	_
-7	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Punct	_	7	punct	_	SpacesAfter=\n
+4	kielille	kieli	NOUN	N	Case=All|Number=Plur	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8300,13 +8915,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ensimmäiset käännökset[muokkaa | muokkaa wikitekstiä]
+# text = Ensimmäiset käännökset
 1	Ensimmäiset	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Plur|NumType=Ord	2	amod	_	_
-2	käännökset[muokkaa	käännöks#et[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	käännökset	käännös	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8400,12 +9011,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Suomennokset[muokkaa | muokkaa wikitekstiä]
-1	Suomennokset[muokkaa	suome#nnokset[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Suomennokset
+1	Suomennokset	suomennos	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8525,12 +9132,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koranismi[muokkaa | muokkaa wikitekstiä]
-1	Koranismi[muokkaa	koranismi[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Koranismi
+1	Koranismi	koranismi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8618,13 +9221,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koraanin arvostelua[muokkaa | muokkaa wikitekstiä]
+# text = Koraanin arvostelua
 1	Koraanin	koraani	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
-2	arvostelua[muokkaa	arvostelua[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	arvostelua	arvostelu	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8702,13 +9301,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Katso myös[muokkaa | muokkaa wikitekstiä]
+# text = Katso myös
 1	Katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-2	myös[muokkaa	myös[m#uokka	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
-3	|	|	PUNCT	Punct	_	4	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	1	punct	_	SpacesAfter=\n
+2	myös	myös	ADV	Adv	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8716,14 +9311,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Suomalaisia kirjoja Koraanista[muokkaa | muokkaa wikitekstiä]
+# text = Suomalaisia kirjoja Koraanista
 1	Suomalaisia	suomalainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
 2	kirjoja	kirja	NOUN	N	Case=Par|Number=Plur	0	root	_	_
-3	Koraanista[muokkaa	koraanista[#muokka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-4	|	|	PUNCT	Punct	_	6	punct	_	_
-5	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	6	amod	_	_
-6	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Punct	_	6	punct	_	SpacesAfter=\n
+3	Koraanista	koraani	PROPN	N	Case=Ela|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8731,12 +9322,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lähteet[muokkaa | muokkaa wikitekstiä]
-1	Lähteet[muokkaa	lähteet[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Lähteet
+1	Lähteet	lähte	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8744,13 +9331,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Islamilaiset lähteet[muokkaa | muokkaa wikitekstiä]
+# text = Islamilaiset lähteet
 1	Islamilaiset	islamilainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
-2	lähteet[muokkaa	lähteet[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	2	punct	_	SpacesAfter=\n
+2	lähteet	lähte	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8758,12 +9341,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Viitteet[muokkaa | muokkaa wikitekstiä]
-1	Viitteet[muokkaa	viitteet[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Viitteet
+1	Viitteet	viite	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8771,12 +9350,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kirjallisuutta[muokkaa | muokkaa wikitekstiä]
-1	Kirjallisuutta[muokkaa	kirj#allisuutta[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Kirjallisuutta
+1	Kirjallisuutta	kirjallisuus	NOUN	N	Case=Par|Derivation=Llinen,Vs|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -8784,23 +9359,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Aiheesta muualla[muokkaa | muokkaa wikitekstiä]
+# text = Aiheesta muualla
 1	Aiheesta	aihe	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	_
-2	muualla[muokkaa	muualla[muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+2	muualla	muualla	ADV	Adv	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = finnish-tdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigointivalikko
-1	Navigointivalikko	navi#gointivalikko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
-

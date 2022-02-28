@@ -1,5 +1,3 @@
-# https://vi.wikipedia.org/wiki/Gi%C3%A1o_h%E1%BB%99i_C%C3%B4ng_gi%C3%A1o
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,27 +11,7 @@
 4	–	–	PUNCT	-	_	2	punct	_	_
 5	Wikipedia	Wikipedia	NOUN	Np	_	2	compound	_	_
 6	tiếng	tiếng	NOUN	N	_	5	compound	_	_
-7	Việt	Việt	NOUN	Np	_	6	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ngôn ngữ
-1	Ngôn ngữ	Ngôn ngữ	CCONJ	N	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Giáo hội Công giáo
-1	Giáo	Giáo	NOUN	N	_	2	discourse	_	_
-2	hội	hội	NOUN	N	_	0	root	_	_
-3	Công giáo	Công giáo	NOUN	N	_	2	compound	_	SpacesAfter=\n
+7	Việt	Việt	NOUN	Np	_	6	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -45,7 +23,7 @@
 1	Loạt	Loạt	NOUN	Np	_	2	nsubj	_	_
 2	bài	bài	NOUN	N	_	0	root	_	_
 3	viết	viết	VERB	V	_	2	xcomp	_	_
-4	về	về	ADP	E	_	1	case	_	SpacesAfter=\n
+4	về	về	ADP	E	_	1	case	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -53,15 +31,21 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Biên niên sử ·
-1	Biên niên	Biên niên	NOUN	N	_	2	nsubj	_	_
-2	sử ·	sử ·	VERB	V	_	0	root	_	_
+# text = Biên niên sử · Mười hai Tông đồ Phêrô ·
+1	Biên niên	Biên niên	NOUN	N	_	2	obj	_	_
+2	sử ·	sử ·	NOUN	N	_	0	root	_	_
+3	Mười	Mười	NOUN	Np	_	2	compound	_	_
+4	hai	hai	NUM	M	NumType=Card	5	nummod	_	_
+5	Tông đồ Phêrô ·	Tông đỒ PHêrÔ ·	NOUN	Np	_	2	compound	_	_
 
 # sent_id = 2
-# text = Mười hai Tông đồ
-1	Mười	Mười	NUM	M	NumType=Card	3	nummod	_	_
-2	hai	hai	NUM	M	NumType=Card	3	nummod	_	_
-3	Tông đồ	Tông đồ	NOUN	N	_	0	root	_	SpacesAfter=\n
+# text = Phaolô Đại Ly GiáoKháng CáchCông đồng Vatican II
+1	Phaolô	Phaolô	NOUN	Np	_	0	root	_	SpacesAfter=\n
+2	Đại	Đại	NOUN	Np	_	1	compound	_	_
+3	Ly GiáoKháng	Ly GiáOkháng	NOUN	Np	_	1	compound	_	_
+4	CáchCông đồng	Cáchcông đồng	NOUN	Np	_	1	compound	_	_
+5	Vatican	Vatican	NOUN	Np	_	2	compound	_	_
+6	II	II	NUM	M	NumType=Card	5	nummod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -74,9 +58,23 @@
 2	Thiên Chúa ·	Thiên cHúa ·	NOUN	Np	_	0	root	_	_
 
 # sent_id = 2
-# text = Ba Ngôi
+# text = Ba Ngôi Sự chết và sự phục sinhSự trở lại của Chúa Giêsu Đức Mẹ ·
 1	Ba	Ba	NUM	M	NumType=Card	2	nummod	_	_
-2	Ngôi	Ngôi	NOUN	Np	_	0	root	_	SpacesAfter=\s\n
+2	Ngôi	Ngôi	NOUN	Np	_	4	nsubj	_	SpacesAfter=\s\n
+3	Sự	Sự	NOUN	Np	_	4	nsubj	_	_
+4	chết	chết	VERB	V	_	0	root	_	_
+5	và	và	SCONJ	CC	_	6	cc	_	_
+6	sự phục	sự phục	VERB	V	_	4	conj	_	_
+7	sinhSự	sinhsự	NOUN	Np	_	6	obj	_	_
+8	trở lại	trở lại	VERB	V	_	7	xcomp	_	_
+9	của	của	ADP	E	_	10	case	_	_
+10	Chúa Giêsu	Chúa GIêsu	NOUN	Np	_	8	obl	_	SpacesAfter=\n
+11	Đức Mẹ ·	Đức Mẹ ·	NOUN	Np	_	10	compound	_	_
+
+# sent_id = 3
+# text = Các Thánh
+1	Các	Các	DET	L	_	2	det	_	_
+2	Thánh	Thánh	NOUN	Np	_	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -89,8 +87,11 @@
 2	Ước ·	ước ·	ADJ	A	_	0	root	_	_
 
 # sent_id = 2
-# text = Tân Ước
-1	Tân Ước	Tân ước	X	N	_	0	root	_	SpacesAfter=\s\n
+# text = Tân Ước Bộ Giáo luật
+1	Tân Ước	Tân ước	NOUN	N	_	4	nsubj	_	SpacesAfter=\s\n
+2	Bộ	Bộ	NOUN	N	_	4	nsubj	_	_
+3	Giáo	Giáo	NOUN	Np	_	2	compound	_	_
+4	luật	luật	NOUN	N	_	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -98,12 +99,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nghi lễ Latinh · Nghi lễ Rôma
+# text = Nghi lễ Latinh · Nghi lễ Rôma Năm phụng vụ · Giờ phụng vụ Bảy bí tích · Cầu nguyện
 1	Nghi	Nghi	NOUN	Np	_	2	nsubj	_	_
 2	lễ Latinh ·	lễ latinh ·	VERB	V	_	0	root	_	_
-3	Nghi	Nghi	NOUN	Np	_	4	compound	_	_
+3	Nghi	Nghi	NOUN	Np	_	2	obj	_	_
 4	lễ	lễ	NOUN	N	_	2	obj	_	_
 5	Rôma	Rôma	NOUN	Np	_	4	compound	_	SpacesAfter=\s\n
+6	Năm	Năm	NOUN	Np	_	4	compound	_	_
+7	phụng vụ	phụng vụ	NOUN	N	_	4	compound	_	SpacesAfter= 
+8	· Giờ phụng	· giờ phụng	VERB	V	_	7	xcomp	_	_
+9	vụ	vụ	NOUN	N	_	7	compound	_	_
+10	Bảy	Bảy	NUM	M	NumType=Card	11	nummod	_	_
+11	bí tích	bí tích	NOUN	N	_	9	compound	_	SpacesAfter= 
+12	· Cầu nguyện	· cầu nguyện	NOUN	N	_	11	compound	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -157,10 +165,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Giáo triều Rôma
-1	Giáo	Giáo	NOUN	N	_	2	compound	_	_
+# text = Giáo triều Rôma Hiệp ước Latêranô Giáo hoàng Phanxicô
+1	Giáo	Giáo	NOUN	N	_	2	discourse	_	_
 2	triều	triều	NOUN	N	_	0	root	_	_
 3	Rôma	Rôma	NOUN	Np	_	2	compound	_	SpacesAfter=\n
+4	Hiệp ước	Hiệp ước	NOUN	N	_	2	compound	_	_
+5	Latêranô Giáo hoàng	Latêranô giáo hoàng	NOUN	Np	_	2	compound	_	_
+6	Phanxicô	Phanxicô	NOUN	Np	_	2	compound	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -476,7 +487,7 @@
 # sent_id = 1
 # text = Thuật ngữ
 1	Thuật	Thuật	NOUN	Np	_	2	nsubj	_	_
-2	ngữ	ngữ	VERB	V	_	0	root	_	SpacesAfter=\n
+2	ngữ	ngữ	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -936,7 +947,7 @@
 1	Tổ chức	Tổ chức	VERB	V	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
 3	quản	quản	NOUN	N	_	1	conj	_	_
-4	trị	trị	NOUN	N	_	3	compound	_	SpacesAfter=\n
+4	trị	trị	NOUN	N	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -948,7 +959,7 @@
 1	Giáo huấn	Giáo huấn	NOUN	N	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
 3	Giáo	Giáo	NOUN	Np	_	1	conj	_	_
-4	Triều	Triều	NOUN	Np	_	3	compound	_	SpacesAfter=\n
+4	Triều	Triều	NOUN	Np	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1362,7 +1373,7 @@
 1	Các	Các	DET	L	_	2	det	_	_
 2	phương quản	phương quản	NOUN	N	_	4	nsubj	_	_
 3	trị	trị	VERB	V	_	2	xcomp	_	_
-4	đặc biệt	đặc biệt	ADJ	A	_	0	root	_	SpacesAfter=\n
+4	đặc biệt	đặc biệt	ADJ	A	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -1753,75 +1764,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Giáo hội Công giáo Ethiopia (Addis Ababa: Ethiopia)
-1	Giáo	Giáo	NOUN	N	_	2	discourse	_	_
-2	hội	hội	NOUN	N	_	5	nsubj	_	_
-3	Công giáo	Công giáo	NOUN	N	_	2	compound	_	_
-4	Ethiopia	Ethiopia	NOUN	Np	_	2	compound	_	_
-5	(Addis Ababa	(addis ababa	NOUN	Np	_	0	root	_	SpaceAfter=No
-6	:	:	PUNCT	:	_	5	punct	_	_
-7	Ethiopia)	Ethiopia)	NOUN	Np	_	5	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Giáo hội Công giáo Syria (Beirut: Liban, Iraq, Jordan, Kuwait, Palestine, Ai Cập, Sudan, Syria, Thổ Nhĩ Kỳ, Hoa Kỳ và Canada, Venezuela)
-1	Giáo	Giáo	NUM	M	_	2	nummod	_	_
-2	hội	hội	NOUN	N	_	7	nsubj	_	_
-3	Công giáo	Công giáo	NOUN	N	_	2	compound	_	_
-4	Syria	Syria	NOUN	Np	_	2	compound	_	_
-5	(Beirut	(BEIRUT	NOUN	Np	_	2	compound	_	SpaceAfter=No
-6	:	:	PUNCT	:	_	2	punct	_	_
-7	Liban	Liban	NOUN	Np	_	0	root	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	9	punct	_	_
-9	Iraq	Iraq	NOUN	Np	_	7	conj	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	Jordan	Jordan	NOUN	Np	_	7	conj	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	15	punct	_	_
-13	Kuwait	Kuwait	NOUN	Np	_	7	conj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	15	punct	_	_
-15	Palestine	Palestine	NOUN	Np	_	7	conj	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	31	punct	_	_
-17	Ai	Ai	NOUN	N	_	7	conj	_	_
-18	Cập	Cập	NOUN	Np	_	7	appos	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	31	punct	_	_
-20	Sudan	Sudan	NOUN	Np	_	7	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	22	punct	_	_
-22	Syria	Syria	NOUN	Np	_	7	conj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	31	punct	_	_
-24	Thổ Nhĩ	Thổ Nhĩ	NOUN	Np	_	7	conj	_	_
-25	Kỳ	Kỳ	NOUN	Np	_	18	compound	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	31	punct	_	_
-27	Hoa Kỳ	Hoa Kỳ	NOUN	Np	_	7	conj	_	_
-28	và	và	SCONJ	CC	_	29	cc	_	_
-29	Canada	Canada	NOUN	Np	_	7	conj	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	31	punct	_	_
-31	Venezuela)	Venezuela)	NOUN	Np	_	7	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Giáo hội Công giáo Hy Lạp Belarus (Belarus)
-1	Giáo	Giáo	NOUN	N	_	2	compound	_	_
-2	hội	hội	NOUN	N	_	0	root	_	_
-3	Công giáo	Công giáo	NOUN	N	_	2	compound	_	_
-4	Hy	Hy	NOUN	Np	_	2	compound	_	_
-5	Lạp	Lạp	NOUN	Np	_	2	compound	_	_
-6	Belarus	Belarus	NOUN	Np	_	2	compound	_	_
-7	(Belarus)	(belarus)	NOUN	Np	_	2	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = Các giáo phận, giáo xứ và dòng tu
 1	Các	Các	DET	L	_	2	det	_	_
 2	giáo	giáo	NOUN	N	_	0	root	_	_
@@ -1830,7 +1772,7 @@
 5	giáo	giáo	NOUN	N	_	3	conj	_	_
 6	xứ	xứ	NOUN	N	_	5	compound	_	_
 7	và	và	SCONJ	CC	_	8	cc	_	_
-8	dòng tu	dòng tu	NOUN	N	_	3	conj	_	SpacesAfter=\n
+8	dòng tu	dòng tu	NOUN	N	_	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2122,7 +2064,7 @@
 # sent_id = 1
 # text = Hàng Giáo phẩm
 1	Hàng Giáo	Hàng Giáo	NOUN	Np	_	2	nsubj	_	_
-2	phẩm	phẩm	VERB	V	_	0	root	_	SpacesAfter=\n
+2	phẩm	phẩm	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2281,7 +2223,7 @@
 # text = Thực hành tôn giáo
 1	Thực hành	Thực hành	NOUN	N	_	3	nsubj	_	_
 2	tôn	tôn	NOUN	N	_	3	nsubj	_	_
-3	giáo	giáo	VERB	V	_	0	root	_	SpacesAfter=\n
+3	giáo	giáo	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2381,7 +2323,7 @@
 # sent_id = 1
 # text = Thánh lễ
 1	Thánh	Thánh	NOUN	Np	_	2	nsubj	_	_
-2	lễ	lễ	ADJ	A	_	0	root	_	SpacesAfter=\n
+2	lễ	lễ	ADJ	A	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -2884,7 +2826,7 @@
 1	Lễ	Lễ	NOUN	N	_	2	nsubj	_	_
 2	nghi	nghi	VERB	V	_	0	root	_	_
 3	Tây	Tây	NOUN	Nc	_	4	compound	_	_
-4	Phương	Phương	NOUN	Np	_	2	obj	_	SpacesAfter=\n
+4	Phương	Phương	NOUN	Np	_	2	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3124,7 +3066,7 @@
 # text = Lễ nghi Đông Phương
 1	Lễ	Lễ	NOUN	N	_	2	nsubj	_	_
 2	nghi	nghi	VERB	V	_	0	root	_	_
-3	Đông Phương	Đông Phương	NOUN	Np	_	2	obj	_	SpacesAfter=\n
+3	Đông Phương	Đông Phương	NOUN	Np	_	2	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3309,7 +3251,7 @@
 # sent_id = 1
 # text = Các Bí tích
 1	Các	Các	DET	L	_	2	det	_	_
-2	Bí tích	Bí tích	NOUN	N	_	0	root	_	SpacesAfter=\n
+2	Bí tích	Bí tích	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3438,7 +3380,7 @@
 # text = Các Giờ Kinh Phụng vụ
 1	Các Giờ Kinh	Các Giờ Kinh	NOUN	Np	_	3	nsubj	_	_
 2	Phụng	Phụng	NOUN	Np	_	3	compound	_	_
-3	vụ	vụ	NOUN	N	_	0	root	_	SpacesAfter=\n
+3	vụ	vụ	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3721,7 +3663,7 @@
 # text = Giáo lý Đức tin
 1	Giáo lý	Giáo lý	NOUN	N	_	3	nsubj	_	_
 2	Đức	Đức	NOUN	Np	_	1	compound	_	_
-3	tin	tin	VERB	V	_	0	root	_	SpacesAfter=\n
+3	tin	tin	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -3856,7 +3798,7 @@
 # text = Thiên Chúa Ba Ngôi
 1	Thiên Chúa	Thiên cHúa	NOUN	Np	_	0	root	_	_
 2	Ba	Ba	NUM	M	NumType=Card	3	nummod	_	_
-3	Ngôi	Ngôi	NOUN	Np	_	1	compound	_	SpacesAfter=\n
+3	Ngôi	Ngôi	NOUN	Np	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -4348,7 +4290,7 @@
 # sent_id = 1
 # text = Tội nguyên tổ
 1	Tội	Tội	NOUN	N	_	2	nsubj	_	_
-2	nguyên tổ	nguyên tổ	ADJ	V	_	0	root	_	SpacesAfter=\n
+2	nguyên tổ	nguyên tổ	ADJ	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -4534,7 +4476,7 @@
 # sent_id = 1
 # text = Cứu rỗi
 1	Cứu	Cứu	VERB	V	_	0	root	_	_
-2	rỗi	rỗi	X	R	_	1	advmod	_	SpacesAfter=\n
+2	rỗi	rỗi	X	R	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -5103,7 +5045,7 @@
 # text = Thánh Kinh và Thánh Truyền
 1	Thánh Kinh	Thánh Kinh	NOUN	Np	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
-3	Thánh Truyền	Thánh tRuyền	NOUN	Np	_	1	conj	_	SpacesAfter=\n
+3	Thánh Truyền	Thánh tRuyền	NOUN	Np	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -5481,7 +5423,7 @@
 # text = Giáo hội Tông Truyền
 1	Giáo	Giáo	NOUN	N	_	2	compound	_	_
 2	hội	hội	NOUN	N	_	0	root	_	_
-3	Tông Truyền	Tông truyền	NOUN	Np	_	2	compound	_	SpacesAfter=\n
+3	Tông Truyền	Tông truyền	NOUN	Np	_	2	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -5675,7 +5617,7 @@
 1	Niềm tin	Niềm tin	NOUN	N	_	2	nsubj	_	_
 2	về	về	ADP	V	_	0	root	_	_
 3	cái	cái	NOUN	Nc	_	2	obj	_	_
-4	chết	chết	VERB	V	_	3	xcomp	_	SpacesAfter=\n
+4	chết	chết	VERB	V	_	3	xcomp	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -5857,7 +5799,7 @@
 1	Maria	Maria	NOUN	Np	_	0	root	_	_
 2	và	và	SCONJ	CC	_	4	cc	_	_
 3	các	các	DET	L	_	4	det	_	_
-4	Thánh	Thánh	NOUN	Np	_	1	conj	_	SpacesAfter=\n
+4	Thánh	Thánh	NOUN	Np	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -6257,7 +6199,7 @@
 1	Đời	Đời	NOUN	N	_	2	nsubj	_	_
 2	sống	sống	VERB	V	_	0	root	_	_
 3	thường	thường	ADJ	A	_	4	amod	_	_
-4	ngày	ngày	NOUN	N	_	2	obl	_	SpacesAfter=\n
+4	ngày	ngày	NOUN	N	_	2	obl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -6478,7 +6420,7 @@
 1	Nguồn	Nguồn	NOUN	N	_	0	root	_	_
 2	gốc	gốc	NOUN	N	_	1	compound	_	_
 3	và	và	SCONJ	CC	_	4	cc	_	_
-4	lịch sử	lịch sử	NOUN	N	_	2	conj	_	SpacesAfter=\n
+4	lịch sử	lịch sử	NOUN	N	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -6525,7 +6467,7 @@
 36	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 2
-# text = "Giáo hội Công giáo" là thuật ngữ đầu tiên được sử dụng bởi Thánh Inhaxiô Antiôkhia (Ignatius Antioch) vào năm 107, [đại ý rằng]: nơi nào có Đấng Kitô ngự trị, nơi đó là Giáo hội Công giáo, như là sự tuyệt đối hóa vai trò của Giáo hội và Giáo hoàng.
+# text = "Giáo hội Công giáo" là thuật ngữ đầu tiên được sử dụng bởi Thánh Inhaxiô Antiôkhia (Ignatius Antioch) vào năm 107, : nơi nào có Đấng Kitô ngự trị, nơi đó là Giáo hội Công giáo, như là sự tuyệt đối hóa vai trò của Giáo hội và Giáo hoàng.
 1	"	"	PUNCT	"	_	7	punct	_	SpaceAfter=No
 2	Giáo	Giáo	NOUN	N	_	3	compound	_	_
 3	hội	hội	NOUN	N	_	7	nsubj	_	_
@@ -6536,43 +6478,42 @@
 8	ngữ	ngữ	NOUN	N	_	7	compound	_	_
 9	đầu tiên	đầu tiên	ADJ	A	_	7	amod	_	_
 10	được	được	VERB	V	_	11	aux:pass	_	_
-11	sử dụng	sử dụng	VERB	V	_	21	xcomp	_	_
+11	sử dụng	sử dụng	VERB	V	_	7	xcomp	_	_
 12	bởi	bởi	ADP	E	_	13	case	_	_
 13	Thánh Inhaxiô	Thánh inhaxiô	NOUN	Np	_	11	obl	_	_
 14	Antiôkhia	Antiôkhia	NOUN	Np	_	13	compound	_	_
 15	(Ignatius	(ignatius	NOUN	Np	_	13	compound	_	_
-16	Antioch)	Antioch)	NOUN	Np	_	13	compound	_	_
+16	Antioch)	Antioch)	NOUN	Np	_	32	compound	_	_
 17	vào	vào	ADP	E	_	18	case	_	_
 18	năm	năm	NOUN	N	_	11	obl	_	_
 19	107	107	NUM	M	NumType=Card	18	nummod	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	21	punct	_	_
-21	[đại ý	[đại ý	VERB	V	_	7	conj	_	_
-22	rằng]	rằng]	VERB	V	_	21	xcomp	_	SpaceAfter=No
-23	:	:	PUNCT	:	_	21	punct	_	_
-24	nơi	nơi	NOUN	N	_	11	nsubj	_	_
-25	nào	nào	PROPN	P	_	24	det	_	_
-26	có	có	VERB	V	_	21	ccomp	_	_
-27	Đấng Kitô	Đấng Kitô	NOUN	Np	_	26	obj	_	_
-28	ngự trị	ngự trị	ADJ	A	_	26	xcomp	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	39	punct	_	_
-30	nơi	nơi	NOUN	N	_	33	nsubj	_	_
-31	đó	đó	PROPN	P	_	30	det	_	_
-32	là	là	AUX	V	_	33	cop	_	_
-33	Giáo	Giáo	NOUN	Np	_	39	parataxis	_	_
-34	hội	hội	NOUN	N	_	33	compound	_	_
-35	Công giáo	Công giáo	NOUN	N	_	34	compound	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	39	punct	_	_
-37	như	như	CCONJ	C	_	39	cc	_	_
-38	là	là	AUX	V	_	39	cop	_	_
-39	sự tuyệt đối hóa	sự tuyệt đối hóa	NOUN	N	_	7	conj	_	_
-40	vai	vai	NOUN	N	_	39	compound	_	_
-41	trò	trò	NOUN	N	_	40	compound	_	_
-42	của	của	ADP	E	_	43	case	_	_
-43	Giáo	Giáo	NOUN	N	_	40	nmod	_	_
-44	hội	hội	NOUN	N	_	43	compound	_	_
-45	và	và	SCONJ	CC	_	46	cc	_	_
-46	Giáo hoàng	Giáo hoàng	NOUN	N	_	44	conj	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	7	punct	_	_
+20	,	,	PUNCT	,	_	7	punct	_	_
+21	:	:	PUNCT	:	_	7	punct	_	_
+22	nơi	nơi	NOUN	N	_	7	nsubj	_	_
+23	nào	nào	PROPN	P	_	22	det	_	_
+24	có	có	VERB	V	_	9	xcomp	_	_
+25	Đấng Kitô	Đấng Kitô	NOUN	Np	_	24	obj	_	_
+26	ngự trị	ngự trị	ADJ	V	_	24	xcomp	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	37	punct	_	_
+28	nơi	nơi	NOUN	N	_	31	nsubj	_	_
+29	đó	đó	PROPN	P	_	28	det	_	_
+30	là	là	AUX	V	_	31	cop	_	_
+31	Giáo	Giáo	NOUN	Np	_	37	parataxis	_	_
+32	hội	hội	NOUN	N	_	31	compound	_	_
+33	Công giáo	Công giáo	NOUN	N	_	32	compound	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	như	như	CCONJ	C	_	37	cc	_	_
+36	là	là	AUX	V	_	37	cop	_	_
+37	sự tuyệt đối	sự tuyệt đối	NOUN	N	_	7	conj	_	_
+38	hóa	hóa	VERB	V	_	37	xcomp	_	_
+39	vai	vai	NOUN	N	_	38	obj	_	_
+40	trò	trò	NOUN	N	_	39	compound	_	_
+41	của	của	ADP	E	_	42	case	_	_
+42	Giáo	Giáo	NOUN	N	_	39	nmod	_	_
+43	hội	hội	NOUN	N	_	42	compound	_	_
+44	và	và	SCONJ	CC	_	45	cc	_	_
+45	Giáo hoàng	Giáo hoàng	NOUN	N	_	43	conj	_	SpaceAfter=No
+46	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 3
 # text = Đồng thời, những văn sĩ Công giáo cũng liệt kê một số trích ngôn từ những thầy giảng sơ khai để củng cố luận cứ này theo ngụ ý của Tòa Thánh, trong khi các văn sĩ Chính Thống giáo lại không chấp nhận điều này vì cho rằng, vị Giáo hoàng đầu tiên - Thánh Phêrô - chỉ là một chức vị đứng đầu mang tính danh dự.
@@ -6681,25 +6622,26 @@
 4	hữu	hữu	NOUN	N	_	6	nsubj	_	_
 5	Đông phương	Đông phương	NOUN	Np	_	4	compound	_	_
 6	dùng	dùng	VERB	V	_	0	root	_	_
-7	nguyên bản Tín	nguyên bản tÍn	NOUN	Np	_	6	obj	_	_
-8	điều	điều	NOUN	N	_	7	compound	_	_
-9	Nicea	Nicea	NOUN	Np	_	8	compound	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	6	punct	_	_
-11	theo	theo	ADP	E	_	12	case	_	_
-12	đó	đó	PROPN	P	_	17	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	17	punct	_	_
-14	Chúa	Chúa	NOUN	Nc	_	15	compound	_	_
-15	Thánh Thần	Thánh Thần	NOUN	Np	_	17	nsubj	_	_
-16	được	được	VERB	V	_	17	aux:pass	_	_
-17	tin	tin	VERB	V	_	6	parataxis	_	_
-18	là	là	CCONJ	C	_	21	cc	_	_
-19	chỉ	chỉ	X	R	_	21	advmod	_	_
-20	"	"	PUNCT	"	_	21	punct	_	SpaceAfter=No
-21	xuất phát	xuất phát	VERB	V	_	17	ccomp	_	_
-22	từ	từ	ADP	E	_	23	case	_	_
-23	Chúa Cha	Chúa Cha	NOUN	Np	_	21	obl	_	SpaceAfter=No
-24	"	"	PUNCT	"	_	21	punct	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	6	punct	_	_
+7	nguyên bản	nguyên bản	NOUN	N	_	6	obj	_	_
+8	Tín	Tín	NOUN	Np	_	7	compound	_	_
+9	điều	điều	NOUN	N	_	7	compound	_	_
+10	Nicea	Nicea	NOUN	Np	_	9	compound	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	theo	theo	ADP	E	_	13	case	_	_
+13	đó	đó	PROPN	P	_	18	obl	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	Chúa	Chúa	NOUN	Nc	_	16	compound	_	_
+16	Thánh Thần	Thánh Thần	NOUN	Np	_	18	nsubj	_	_
+17	được	được	VERB	V	_	18	aux:pass	_	_
+18	tin	tin	VERB	V	_	6	parataxis	_	_
+19	là	là	CCONJ	C	_	22	cc	_	_
+20	chỉ	chỉ	X	R	_	22	advmod	_	_
+21	"	"	PUNCT	"	_	22	punct	_	SpaceAfter=No
+22	xuất phát	xuất phát	VERB	V	_	18	ccomp	_	_
+23	từ	từ	ADP	E	_	24	case	_	_
+24	Chúa Cha	Chúa Cha	NOUN	Np	_	22	obl	_	SpaceAfter=No
+25	"	"	PUNCT	"	_	22	punct	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 6
 # text = Đây là những nguyên nhân chính dẫn đến sự chia rẽ giữa họ.
@@ -6719,9 +6661,9 @@
 # text = Qua nhiều thế kỷ, sự khác biệt về giáo lý thần học, văn hóa và chính trị ngày càng lớn cho đến khi hai hệ thống giáo hội này chính thức tách rời (Đại Ly Giáo) vào năm 1054.
 1	Qua nhiều	Qua nhiều	X	A	_	3	advmod	_	_
 2	thế	thế	PROPN	P	_	3	det	_	_
-3	kỷ	kỷ	NOUN	N	_	16	obj	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	16	punct	_	_
-5	sự	sự	NOUN	Nc	_	16	nsubj	_	_
+3	kỷ	kỷ	NOUN	N	_	15	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	15	punct	_	_
+5	sự	sự	NOUN	Nc	_	15	nsubj	_	_
 6	khác biệt	khác biệt	VERB	V	_	5	xcomp	_	_
 7	về	về	ADP	E	_	8	case	_	_
 8	giáo lý	giáo lý	NOUN	N	_	5	nmod	_	_
@@ -6730,25 +6672,24 @@
 11	văn hóa	văn hóa	NOUN	N	_	8	conj	_	_
 12	và	và	SCONJ	CC	_	13	cc	_	_
 13	chính trị	chính trị	NOUN	N	_	8	conj	_	_
-14	ngày	ngày	NOUN	N	_	16	nmod	_	_
-15	càng	càng	X	R	_	16	advmod	_	_
-16	lớn	lớn	ADJ	A	_	0	root	_	_
-17	cho	cho	ADP	E	_	19	case	_	_
-18	đến	đến	ADP	E	_	19	case	_	_
-19	khi	khi	NOUN	N	_	16	nmod	_	_
-20	hai	hai	NUM	M	NumType=Card	21	nummod	_	_
-21	hệ thống	hệ thống	NOUN	N	_	25	nsubj	_	_
-22	giáo	giáo	NOUN	N	_	21	compound	_	_
-23	hội	hội	NOUN	N	_	21	compound	_	_
-24	này	này	PROPN	P	_	23	det	_	_
-25	chính thức	chính thức	ADJ	A	_	19	ccomp	_	_
-26	tách rời	tách rời	VERB	V	_	25	xcomp	_	_
-27	(Đại	(đại	NOUN	Ny	_	26	obj	_	_
-28	Ly Giáo)	Ly GIÁo)	NOUN	Np	_	27	compound	_	_
-29	vào	vào	ADP	E	_	30	case	_	_
-30	năm	năm	NOUN	N	_	25	nmod	_	_
-31	1054	1054	NUM	M	NumType=Card	30	nummod	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	16	punct	_	_
+14	ngày càng	ngày càng	X	X	_	15	advmod	_	_
+15	lớn	lớn	ADJ	A	_	0	root	_	_
+16	cho	cho	ADP	E	_	18	case	_	_
+17	đến	đến	ADP	E	_	18	case	_	_
+18	khi	khi	NOUN	N	_	15	nmod	_	_
+19	hai	hai	NUM	M	NumType=Card	20	nummod	_	_
+20	hệ thống	hệ thống	NOUN	N	_	24	nsubj	_	_
+21	giáo	giáo	NOUN	N	_	20	compound	_	_
+22	hội	hội	NOUN	N	_	20	compound	_	_
+23	này	này	PROPN	P	_	22	det	_	_
+24	chính thức	chính thức	ADJ	A	_	18	ccomp	_	_
+25	tách rời	tách rời	VERB	V	_	24	xcomp	_	_
+26	(Đại	(đại	NOUN	Ny	_	25	obj	_	_
+27	Ly Giáo)	Ly GIÁo)	NOUN	Np	_	26	compound	_	_
+28	vào	vào	ADP	E	_	29	case	_	_
+29	năm	năm	NOUN	N	_	24	nmod	_	_
+30	1054	1054	NUM	M	NumType=Card	29	nummod	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = 8
 # text = Năm 1204, những đạo quân Thập tự chinh Công giáo bị đẩy khỏi Constantinople.
@@ -6827,7 +6768,7 @@
 # text = Giáo hội Sơ khai
 1	Giáo	Giáo	NOUN	N	_	2	compound	_	_
 2	hội	hội	NOUN	N	_	0	root	_	_
-3	Sơ khai	Sơ khai	NOUN	Np	_	2	compound	_	SpacesAfter=\n
+3	Sơ khai	Sơ khai	NOUN	Np	_	2	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -7291,7 +7232,7 @@
 # sent_id = 1
 # text = Thời Trung Cổ
 1	Thời Trung	Thời tRung	NOUN	Np	_	0	root	_	_
-2	Cổ	Cổ	X	Np	_	1	advmod	_	SpacesAfter=\n
+2	Cổ	Cổ	X	Np	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -7601,7 +7542,7 @@
 # sent_id = 1
 # text = Thượng Trung Cổ
 1	Thượng	Thượng	X	R	_	2	advmod	_	_
-2	Trung Cổ	Trung Cổ	NOUN	Np	_	0	root	_	SpacesAfter=\n
+2	Trung Cổ	Trung Cổ	NOUN	Np	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -8038,7 +7979,7 @@
 # sent_id = 1
 # text = Đại Ly Giáo
 1	Đại	Đại	NOUN	Np	_	0	root	_	_
-2	Ly Giáo	Ly giáo	NOUN	Np	_	1	compound	_	SpacesAfter=\n
+2	Ly Giáo	Ly giáo	NOUN	Np	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -8205,7 +8146,7 @@
 # text = Cải cách Kháng nghị
 1	Cải cách	Cải cách	NOUN	N	_	3	nsubj	_	_
 2	Kháng	Kháng	NOUN	N	_	1	compound	_	_
-3	nghị	nghị	VERB	V	_	0	root	_	SpacesAfter=\n
+3	nghị	nghị	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -8510,7 +8451,7 @@
 1	Hậu kỳ	Hậu kỳ	NOUN	N	_	0	root	_	_
 2	Trung Cổ	Trung Cổ	NOUN	Np	_	1	compound	_	_
 3	và	và	SCONJ	CC	_	4	cc	_	_
-4	Phục Hưng	Phục Hưng	NOUN	Np	_	2	conj	_	SpacesAfter=\n
+4	Phục Hưng	Phục Hưng	NOUN	Np	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -8670,7 +8611,7 @@
 3	Chấn	Chấn	NOUN	Np	_	4	nsubj	_	_
 4	hưng	hưng	NOUN	Np	_	0	root	_	_
 5	và	và	SCONJ	CC	_	6	cc	_	_
-6	Khai sáng	Khai sáng	NOUN	Np	_	4	conj	_	SpacesAfter=\n
+6	Khai sáng	Khai sáng	NOUN	Np	_	4	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -8981,7 +8922,7 @@
 # newpar
 # sent_id = 1
 # text = Hiện đại
-1	Hiện đại	Hiện đại	NOUN	N	_	0	root	_	SpacesAfter=\n
+1	Hiện đại	Hiện đại	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -9078,7 +9019,7 @@
 # text = Công đồng Vatican II
 1	Công đồng	Công đồng	NOUN	N	_	0	root	_	_
 2	Vatican	Vatican	NOUN	Np	_	1	compound	_	_
-3	II	II	NUM	M	NumType=Card	2	nummod	_	SpacesAfter=\n
+3	II	II	NUM	M	NumType=Card	2	nummod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -9369,7 +9310,7 @@
 1	Đương đại	Đương đại	NOUN	N	_	0	root	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
 3	tân	tân	NOUN	N	_	1	conj	_	_
-4	Phúc Âm hóa	Phúc âm hóa	NOUN	Np	_	3	compound	_	SpacesAfter=\n
+4	Phúc Âm hóa	Phúc âm hóa	NOUN	Np	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -9621,7 +9562,7 @@
 1	Tu	Tu	NOUN	N	_	2	nsubj	_	_
 2	trì	trì	VERB	V	_	0	root	_	_
 3	và	và	SCONJ	CC	_	4	cc	_	_
-4	đoàn thể	đoàn thể	ADJ	A	_	2	conj	_	SpacesAfter=\n
+4	đoàn thể	đoàn thể	ADJ	A	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -9734,7 +9675,7 @@
 # sent_id = 1
 # text = Tu trì
 1	Tu	Tu	NOUN	Np	_	2	nsubj	_	_
-2	trì	trì	PROPN	P	_	0	root	_	SpacesAfter=\n
+2	trì	trì	PROPN	P	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -9960,7 +9901,7 @@
 # newpar
 # sent_id = 1
 # text = Đoàn thể
-1	Đoàn thể	Đoàn thể	X	R	_	0	root	_	SpacesAfter=\n
+1	Đoàn thể	Đoàn thể	X	R	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -10076,7 +10017,7 @@
 # newpar
 # sent_id = 1
 # text = Thống kê thành viên
-1	Thống kê thành viên	Thống kê thành viên	NOUN	N	_	0	root	_	SpacesAfter=\n
+1	Thống kê thành viên	Thống kê thành viên	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -10262,7 +10203,7 @@
 # newpar
 # sent_id = 1
 # text = Phân bố
-1	Phân bố	Phân bố	NOUN	N	_	0	root	_	SpacesAfter=\n
+1	Phân bố	Phân bố	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -10703,7 +10644,7 @@
 # sent_id = 1
 # text = Gia nhập đạo
 1	Gia	Gia	PROPN	P	_	2	nsubj	_	_
-2	nhập đạo	nhập đạo	VERB	V	_	0	root	_	SpacesAfter=\n
+2	nhập đạo	nhập đạo	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -10801,7 +10742,7 @@
 2	học thuyết	học thuyết	NOUN	N	_	0	root	_	_
 3	về	về	ADP	E	_	4	case	_	_
 4	xã	xã	NOUN	N	_	2	nmod	_	_
-5	hội	hội	NOUN	N	_	4	compound	_	SpacesAfter=\n
+5	hội	hội	NOUN	N	_	4	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -10812,7 +10753,7 @@
 # text = Phẩm giá con người
 1	Phẩm giá	Phẩm giá	NOUN	N	_	2	nsubj	_	_
 2	con	con	NOUN	N	_	0	root	_	_
-3	người	người	NOUN	N	_	2	compound	_	SpacesAfter=\n
+3	người	người	NOUN	N	_	2	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -11004,7 +10945,7 @@
 1	Vấn đề	Vấn đề	NOUN	N	_	2	nsubj	_	_
 2	giới tính	giới tính	NOUN	N	_	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	4	punct	_	_
-4	tình dục	tình dục	VERB	V	_	2	conj	_	SpacesAfter=\n
+4	tình dục	tình dục	VERB	V	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -11195,7 +11136,7 @@
 # sent_id = 1
 # text = Vấn đề môi trường
 1	Vấn đề	Vấn đề	NOUN	N	_	0	root	_	_
-2	môi trường	môi trường	NOUN	N	_	1	compound	_	SpacesAfter=\n
+2	môi trường	môi trường	NOUN	N	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -11371,7 +11312,7 @@
 1	Vai trò	Vai trò	NOUN	N	_	0	root	_	_
 2	trên	trên	ADP	E	_	3	case	_	_
 3	thế	thế	PROPN	P	_	1	nmod	_	_
-4	giới	giới	NOUN	N	_	1	compound	_	SpacesAfter=\n
+4	giới	giới	NOUN	N	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -11382,7 +11323,7 @@
 # text = Đức tin và khoa học
 1	Đức tin	Đức tin	NOUN	N	_	3	nsubj	_	_
 2	và	và	SCONJ	CC	_	3	cc	_	_
-3	khoa học	khoa học	VERB	V	_	0	root	_	SpacesAfter=\n
+3	khoa học	khoa học	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -11734,6 +11675,235 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Những giáo sĩ khoa học của Giáo hội (nhiều người trong số họ thuộc Dòng Tên) đã ảnh hưởng lớn đến nền thiên văn học, di truyền học, khí tượng học, địa chấn học và vũ trụ học.
+1	Những	Những	DET	L	_	2	det	_	SpacesBefore=\s
+2	giáo sĩ	giáo sĩ	NOUN	N	_	16	nsubj	_	_
+3	khoa học	khoa học	VERB	V	_	2	xcomp	_	_
+4	của	của	ADP	E	_	5	case	_	_
+5	Giáo	Giáo	NOUN	Np	_	2	nmod	_	_
+6	hội	hội	NOUN	N	_	2	nmod	_	_
+7	(nhiều	(nhiều	ADJ	A	_	8	amod	_	_
+8	người	người	NOUN	N	_	16	obj	_	_
+9	trong	trong	ADP	E	_	10	case	_	_
+10	số	số	NOUN	N	_	8	nmod	_	_
+11	họ	họ	PROPN	P	_	10	det	_	_
+12	thuộc	thuộc	VERB	V	_	2	xcomp	_	_
+13	Dòng	Dòng	NOUN	Np	_	12	obj	_	_
+14	Tên)	Tên)	NOUN	Np	_	13	compound	_	_
+15	đã	đã	X	R	_	16	advmod	_	_
+16	ảnh hưởng	ảnh hưởng	VERB	V	_	0	root	_	_
+17	lớn	lớn	ADJ	A	_	16	xcomp	_	_
+18	đến	đến	ADP	E	_	19	case	_	_
+19	nền	nền	NOUN	N	_	16	obl	_	_
+20	thiên văn học	thiên văn học	NOUN	N	_	19	compound	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	22	punct	_	_
+22	di truyền học	di truyền học	NOUN	N	_	20	conj	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	khí tượng	khí tượng	NOUN	N	_	20	conj	_	_
+25	học	học	NOUN	N	_	19	compound	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	địa chấn học	địa chấn học	NOUN	N	_	25	conj	_	_
+28	và	và	SCONJ	CC	_	29	cc	_	_
+29	vũ	vũ	NOUN	N	_	25	conj	_	_
+30	trụ học	trụ học	NOUN	N	_	29	compound	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = 2
+# text = Các giáo sĩ đã đánh dấu tên tuổi của mình trong nền khoa học thế giới như là Gregor Mendel thuộc Dòng Augustine (đi tiên phong trong nghiên cứu di truyền học), Roger Bacon thuộc Dòng Phanxicô (nhà triết học kinh điển, người tiên đoán ra nhiều phát minh khoa học) và linh mục Georges Lemaître (đề xuất thuyết Vụ Nổ Lớn).
+1	Các	Các	DET	L	_	2	det	_	_
+2	giáo sĩ	giáo sĩ	NOUN	N	_	4	nsubj	_	_
+3	đã	đã	X	R	_	4	advmod	_	_
+4	đánh	đánh	VERB	V	_	0	root	_	_
+5	dấu	dấu	VERB	V	_	4	xcomp	_	_
+6	tên	tên	NOUN	N	_	4	obj	_	_
+7	tuổi	tuổi	NOUN	N	_	6	compound	_	_
+8	của	của	ADP	E	_	9	case	_	_
+9	mình	mình	PROPN	P	_	6	nmod	_	_
+10	trong	trong	ADP	E	_	11	case	_	_
+11	nền	nền	NOUN	N	_	6	nmod	_	_
+12	khoa	khoa	NOUN	N	_	11	compound	_	_
+13	học	học	VERB	V	_	12	xcomp	_	_
+14	thế	thế	PROPN	P	_	15	det	_	_
+15	giới	giới	NOUN	N	_	32	compound	_	_
+16	như	như	CCONJ	C	_	4	cc	_	_
+17	là Gregor	là gregor	NOUN	Np	_	19	nsubj	_	_
+18	Mendel	Mendel	NOUN	Np	_	17	compound	_	_
+19	thuộc	thuộc	VERB	V	_	4	parataxis	_	_
+20	Dòng Augustine	Dòng Augustine	NOUN	Np	_	19	obj	_	_
+21	(đi	(đi	VERB	V	_	19	ccomp	_	_
+22	tiên phong	tiên phong	VERB	V	_	36	xcomp	_	_
+23	trong	trong	ADP	E	_	24	case	_	_
+24	nghiên cứu	nghiên cứu	VERB	V	_	22	obl	_	_
+25	di truyền học)	di truyền học)	NOUN	N	_	24	obj	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	4	punct	_	_
+27	Roger	Roger	NOUN	Np	_	17	compound	_	_
+28	Bacon thuộc	Bacon thuộc	NOUN	N	_	6	compound	_	_
+29	Dòng	Dòng	NOUN	Np	_	17	compound	_	_
+30	Phanxicô	Phanxicô	NOUN	Np	_	17	compound	_	_
+31	(nhà	(nhà	NOUN	N	_	6	compound	_	_
+32	triết học	triết học	NOUN	N	_	19	obj	_	_
+33	kinh điển	kinh điển	NOUN	N	_	32	amod	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	35	punct	_	_
+35	người	người	NOUN	N	_	19	nsubj	_	_
+36	tiên	tiên	VERB	V	_	35	xcomp	_	_
+37	đoán ra	đoán ra	VERB	V	_	36	xcomp	_	_
+38	nhiều	nhiều	ADJ	A	_	39	amod	_	_
+39	phát minh	phát minh	NOUN	N	_	36	obj	_	_
+40	khoa học)	khoa học)	VERB	V	_	39	xcomp	_	_
+41	và	và	SCONJ	CC	_	42	cc	_	_
+42	linh mục	linh mục	NOUN	N	_	39	conj	_	_
+43	Georges	Georges	NOUN	Np	_	42	compound	_	_
+44	Lemaître	Lemaître	NOUN	Np	_	42	compound	_	_
+45	(đề	(đề	VERB	V	_	39	conj	_	_
+46	xuất thuyết	xuất thuyết	VERB	V	_	45	xcomp	_	_
+47	Vụ	Vụ	NOUN	N	_	46	obj	_	_
+48	Nổ Lớn)	Nổ lớn)	NOUN	Np	_	47	compound	_	SpaceAfter=No
+49	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 3
+# text = Thậm chí nhiều giáo dân Công giáo cũng bị thu hút vào khoa học: Henri Becquerel khám phá ra chất phóng xạ; Luigi Galvani, Alessandro Volta, André-Marie Ampère, Guglielmo Marconi mở đường trong lĩnh vực điện năng và viễn thông; Antoine Lavoisier – "cha đẻ" của hoá học hiện đại; Andreas Vesalius khai sinh ra ngành giải phẫu học; Augustin Louis Cauchy là một trong những nhà toán học đặt nền tảng về đại số; Giáo hoàng Grêgôriô XIII được coi là tác giả loại lịch mà cả thế giới đang sử dụng phổ biến.
+1	Thậm chí	Thậm chí	X	R	_	7	advmod	_	_
+2	nhiều	nhiều	ADJ	A	_	3	amod	_	_
+3	giáo dân	giáo dân	NOUN	N	_	7	nsubj	_	_
+4	Công giáo	Công giáo	NOUN	N	_	3	compound	_	_
+5	cũng	cũng	X	R	_	7	advmod	_	_
+6	bị	bị	VERB	V	_	7	aux:pass	_	_
+7	thu hút	thu hút	VERB	V	_	0	root	_	_
+8	vào	vào	ADP	E	_	9	case	_	_
+9	khoa	khoa	NOUN	N	_	7	obl	_	_
+10	học	học	NOUN	N	_	9	compound	_	SpaceAfter=No
+11	:	:	PUNCT	:	_	7	punct	_	_
+12	Henri	Henri	NOUN	Np	_	14	nsubj	_	_
+13	Becquerel	Becquerel	NOUN	Np	_	56	compound	_	_
+14	khám	khám	VERB	V	_	7	ccomp	_	_
+15	phá	phá	VERB	V	_	14	xcomp	_	_
+16	ra	ra	X	R	_	58	advmod	_	_
+17	chất phóng xạ	chất phóng xạ	NOUN	Np	_	58	obj	_	SpaceAfter=No
+18	;	;	PUNCT	,	_	23	punct	_	_
+19	Luigi Galvani	Luigi galVani	NOUN	Np	_	17	appos	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	Alessandro Volta	AlessanDRo voLta	NOUN	Np	_	17	conj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	André-Marie Ampère	André-mArie aMpère	NOUN	Np	_	17	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	Guglielmo Marconi	GuglielMO MarConi	NOUN	Np	_	56	conj	_	_
+26	mở đường	mở đường	VERB	V	_	7	parataxis	_	_
+27	trong	trong	ADP	E	_	28	case	_	_
+28	lĩnh vực	lĩnh vực	NOUN	N	_	26	obl	_	_
+29	điện năng	điện năng	NOUN	N	_	28	compound	_	_
+30	và	và	SCONJ	CC	_	31	cc	_	_
+31	viễn thông	viễn thông	NOUN	N	_	17	conj	_	SpaceAfter=No
+32	;	;	PUNCT	,	_	7	punct	_	_
+33	Antoine Lavoisier	Antoine lavoisier	NOUN	Np	_	56	compound	_	_
+34	–	–	PUNCT	-	_	7	punct	_	_
+35	"	"	PUNCT	"	_	36	punct	_	SpaceAfter=No
+36	cha	cha	NOUN	N	_	7	obj	_	_
+37	đẻ	đẻ	ADJ	A	_	36	amod	_	SpaceAfter=No
+38	"	"	PUNCT	"	_	36	punct	_	_
+39	của	của	ADP	E	_	40	case	_	_
+40	hoá học	hoá học	NOUN	N	_	36	nmod	_	_
+41	hiện đại	hiện đại	NOUN	N	_	40	compound	_	SpaceAfter=No
+42	;	;	PUNCT	-	_	7	punct	_	_
+43	Andreas Vesalius	Andreas vesAlius	NOUN	Np	_	56	nsubj	_	_
+44	khai sinh	khai sinh	VERB	V	_	7	parataxis	_	_
+45	ra	ra	X	R	_	44	advmod	_	_
+46	ngành	ngành	NOUN	N	_	14	obj	_	_
+47	giải phẫu	giải phẫu	VERB	V	_	46	xcomp	_	_
+48	học	học	NOUN	N	_	46	compound	_	SpaceAfter=No
+49	;	;	PUNCT	,	_	7	punct	_	_
+50	Augustin Louis	AugustiN lOuis	NOUN	Np	_	56	nsubj	_	_
+51	Cauchy	Cauchy	NOUN	Np	_	65	compound	_	_
+52	là	là	AUX	V	_	56	cop	_	_
+53	một	một	NUM	M	NumType=Card	56	nummod	_	_
+54	trong	trong	ADP	E	_	56	case	_	_
+55	những	những	DET	L	_	56	det	_	_
+56	nhà toán	nhà toán	NOUN	N	_	7	ccomp	_	_
+57	học	học	VERB	V	_	56	xcomp	_	_
+58	đặt	đặt	VERB	V	_	14	xcomp	_	_
+59	nền	nền	NOUN	N	_	58	obj	_	_
+60	tảng	tảng	NOUN	N	_	59	compound	_	_
+61	về	về	ADP	E	_	62	case	_	_
+62	đại số	đại số	NOUN	N	_	59	nmod	_	SpaceAfter=No
+63	;	;	PUNCT	,	_	7	punct	_	_
+64	Giáo	Giáo	NOUN	Np	_	3	compound	_	_
+65	hoàng	hoàng	NOUN	N	_	56	compound	_	_
+66	Grêgôriô	Grêgôriô	NOUN	Np	_	65	compound	_	_
+67	XIII	XIII	PUNCT	Np	_	65	nummod	_	_
+68	được	được	VERB	V	_	69	aux:pass	_	_
+69	coi	coi	VERB	V	_	7	parataxis	_	_
+70	là	là	AUX	V	_	71	cop	_	_
+71	tác giả	tác giả	NOUN	N	_	69	ccomp	_	_
+72	loại lịch	loại lịch	VERB	V	_	71	xcomp	_	_
+73	mà	mà	CCONJ	C	_	71	cc	_	_
+74	cả	cả	PROPN	P	_	76	det	_	_
+75	thế	thế	PROPN	P	_	76	det	_	_
+76	giới	giới	NOUN	N	_	78	nsubj	_	_
+77	đang	đang	X	R	_	78	advmod	_	_
+78	sử dụng	sử dụng	VERB	V	_	71	ccomp	_	_
+79	phổ biến	phổ biến	VERB	V	_	78	xcomp	_	SpaceAfter=No
+80	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 4
+# text = Những vị trí này đã làm thay đổi cách nhìn của những người hay chỉ trích rằng những học thuyết của Giáo hội làm cho giáo dân và giáo sĩ mê muội và cản trở sự tiến bộ của nền văn minh nhân loại.
+1	Những	Những	DET	L	_	2	det	_	_
+2	vị trí	vị trí	NOUN	N	_	5	nsubj	_	_
+3	này	này	PROPN	P	_	2	det	_	_
+4	đã	đã	X	R	_	5	advmod	_	_
+5	làm	làm	VERB	V	_	0	root	_	_
+6	thay đổi	thay đổi	VERB	V	_	5	xcomp	_	_
+7	cách	cách	NOUN	N	_	6	obj	_	_
+8	nhìn	nhìn	VERB	V	_	7	xcomp	_	_
+9	của	của	ADP	E	_	11	case	_	_
+10	những	những	DET	L	_	11	det	_	_
+11	người	người	NOUN	N	_	7	nmod	_	_
+12	hay	hay	CCONJ	C	_	25	cc	_	_
+13	chỉ	chỉ	X	R	_	14	advmod	_	_
+14	trích	trích	VERB	V	_	11	conj	_	_
+15	rằng	rằng	CCONJ	C	_	21	mark	_	_
+16	những	những	DET	L	_	17	det	_	_
+17	học thuyết	học thuyết	NOUN	N	_	21	nsubj	_	_
+18	của	của	ADP	E	_	19	case	_	_
+19	Giáo	Giáo	NOUN	N	_	17	nmod	_	_
+20	hội	hội	NOUN	N	_	19	compound	_	_
+21	làm	làm	VERB	V	_	5	ccomp	_	_
+22	cho	cho	ADP	E	_	23	case	_	_
+23	giáo dân	giáo dân	NOUN	N	_	26	obl	_	_
+24	và	và	SCONJ	CC	_	25	cc	_	_
+25	giáo sĩ	giáo sĩ	NOUN	N	_	23	conj	_	_
+26	mê	mê	VERB	V	_	21	ccomp	_	_
+27	muội	muội	ADJ	A	_	26	xcomp	_	_
+28	và	và	SCONJ	CC	_	29	cc	_	_
+29	cản	cản	VERB	V	_	21	conj	_	_
+30	trở	trở	VERB	V	_	29	xcomp	_	_
+31	sự	sự	NOUN	Nc	_	32	compound	_	_
+32	tiến bộ	tiến bộ	NOUN	N	_	29	obj	_	_
+33	của	của	ADP	E	_	34	case	_	_
+34	nền	nền	NOUN	N	_	32	nmod	_	_
+35	văn minh	văn minh	NOUN	N	_	34	compound	_	_
+36	nhân loại	nhân loại	NOUN	N	_	35	compound	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 5
+# text = Thế kỷ XX đánh dấu sự phát triển nghiên cứu khoa học của Dòng Tên.
+1	Thế	Thế	PROPN	P	_	2	discourse	_	_
+2	kỷ XX	KỶ XX	NOUN	Np	_	3	nsubj	_	_
+3	đánh	đánh	VERB	V	_	0	root	_	_
+4	dấu	dấu	NOUN	N	_	3	obj	_	_
+5	sự	sự	NOUN	Nc	_	4	compound	_	_
+6	phát triển	phát triển	VERB	V	_	5	xcomp	_	_
+7	nghiên cứu	nghiên cứu	VERB	V	_	5	xcomp	_	_
+8	khoa học	khoa học	VERB	V	_	7	xcomp	_	_
+9	của	của	ADP	E	_	10	case	_	_
+10	Dòng	Dòng	NOUN	Np	_	8	obl	_	_
+11	Tên	Tên	NOUN	Np	_	10	compound	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = vietnamese-vtb-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Đối với trường hợp của Galileo Galilei, năm 1633, ông bị Giáo hội kết án vì khẳng định thuyết nhật tâm mà Nicolaus Copernicus đề xuất trước đó (cũng là một giáo sĩ Công giáo).
 1	Đối với	Đối với	ADP	E	_	2	case	_	_
 2	trường hợp	trường hợp	NOUN	N	_	11	advcl	_	_
@@ -11925,7 +12095,7 @@
 # newpar
 # sent_id = 1
 # text = Nghệ thuật
-1	Nghệ thuật	Nghệ thuật	NOUN	N	_	0	root	_	SpacesAfter=\n
+1	Nghệ thuật	Nghệ thuật	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -12171,7 +12341,7 @@
 # newpar
 # sent_id = 1
 # text = Giáo dục
-1	Giáo dục	Giáo dục	NOUN	N	_	0	root	_	SpacesAfter=\n
+1	Giáo dục	Giáo dục	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -12354,7 +12524,7 @@
 # sent_id = 1
 # text = Phát triển kinh tế
 1	Phát triển	Phát triển	VERB	V	_	2	csubj	_	_
-2	kinh tế	kinh tế	NOUN	N	_	0	root	_	SpacesAfter=\n
+2	kinh tế	kinh tế	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -12482,7 +12652,7 @@
 2	và	và	SCONJ	CC	_	3	cc	_	_
 3	phúc lợi	phúc lợi	VERB	V	_	0	root	_	_
 4	xã	xã	NOUN	N	_	3	obj	_	_
-5	hội	hội	NOUN	N	_	4	compound	_	SpacesAfter=\n
+5	hội	hội	NOUN	N	_	4	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -12816,7 +12986,7 @@
 2	xã	xã	NOUN	N	_	1	compound	_	_
 3	hội	hội	NOUN	N	_	2	compound	_	_
 4	đương	đương	NOUN	N	_	3	compound	_	_
-5	đại	đại	PROPN	P	_	4	discourse	_	SpacesAfter=\n
+5	đại	đại	PROPN	P	_	4	discourse	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -13000,7 +13170,7 @@
 # text = Các vụ bê bối
 1	Các	Các	DET	L	_	2	det	_	_
 2	vụ	vụ	NOUN	N	_	3	nsubj	_	_
-3	bê bối	bê bối	ADJ	A	_	0	root	_	SpacesAfter=\n
+3	bê bối	bê bối	ADJ	A	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -13465,7 +13635,7 @@
 # sent_id = 1
 # text = Xem thêm
 1	Xem	Xem	VERB	V	_	2	nsubj	_	_
-2	thêm	thêm	VERB	V	_	0	root	_	SpacesAfter=\n
+2	thêm	thêm	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -13474,7 +13644,7 @@
 # newpar
 # sent_id = 1
 # text = Chú giải
-1	Chú giải	Chú giải	VERB	N	_	0	root	_	SpacesAfter=\n
+1	Chú giải	Chú giải	VERB	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -13483,7 +13653,7 @@
 # newpar
 # sent_id = 1
 # text = Chú thích
-1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpacesAfter=\n
+1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = vietnamese-vtb-ud-2.6-200830
@@ -13493,5 +13663,5 @@
 # sent_id = 1
 # text = Liên kết ngoài
 1	Liên	Liên	NOUN	Np	_	2	nsubj	_	_
-2	kết ngoài	kết ngoài	VERB	V	_	0	root	_	SpacesAfter=\n
+2	kết ngoài	kết ngoài	VERB	V	_	0	root	_	SpaceAfter=No
 

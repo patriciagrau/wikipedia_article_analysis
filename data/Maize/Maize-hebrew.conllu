@@ -1,5 +1,3 @@
-# https://he.wikipedia.org/wiki/%D7%AA%D7%99%D7%A8%D7%A1
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,25 +7,7 @@
 # text = תירס – ויקיפדיה
 1	תירס	תירס	PROPN	PROPN	_	0	root	_	_
 2	–	–	PROPN	PROPN	_	3	nummod	_	_
-3	ויקיפדיה	ויקיפדיה	PROPN	PROPN	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = שפות
-1	שפות	שפה	NOUN	NOUN	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = תירס
-1	תירס	תירס	PROPN	PROPN	_	0	root	_	SpacesAfter=\n
+3	ויקיפדיה	ויקיפדיה	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -83,21 +63,61 @@
 20	ואורז	ואורז	PROPN	PROPN	_	19	amod	_	SpaceAfter=No
 21	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = צמח התירס מגיע לגובה של כ-3 מטר.
+1	צמח	צמח	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	התירס	התירס	ADJ	ADJ	_	1	amod	_	_
+3	מגיע	הגיע	VERB	VERB	Gender=Masc|HebBinyan=HIFIL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
+4-5	לגובה	_	_	_	_	_	_	_	_
+4	ל	ל	ADP	ADP	_	5	case	_	_
+5	גובה	גובה	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl	_	_
+6	של	של	ADP	ADP	Case=Gen	10	case:gen	_	_
+7	כ	כ	ADV	ADV	_	10	advmod	_	SpaceAfter=No
+8	-	-	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+9	3	3	NUM	NUM	_	10	nummod	_	_
+10	מטר	מטר	NOUN	NOUN	Gender=Masc|Number=Sing	5	nmod:poss	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 4
+# text = הוא נזרע באביב ונקצר באביב/קיץ.
+1	הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2-3	נזרע	_	_	_	_	_	_	_	_
+2	נ	ן	PROPN	PROPN	_	3	advmod	_	_
+3	זרע	זרע	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
+4-6	באביב	_	_	_	_	_	_	_	_
+4	ב	ב	ADP	ADP	_	6	case	_	_
+5	ה_	ה	DET	DET	PronType=Art	6	det:def	_	_
+6	אביב	אביב	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl	_	_
+7	ונקצר	ונקצר	VERB	VERB	_	3	dep	_	_
+8-10	באביב/קיץ	_	_	_	_	_	_	_	SpaceAfter=No
+8	באביב/	באביב/	ADV	ADV	_	10	case	_	_
+9	ה_	ה	DET	DET	PronType=Art	10	det:def	_	_
+10	קיץ	קיץ	NOUN	NOUN	Gender=Masc|Number=Sing	7	obl	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 5
+# text = הצמח זקוק לאספקת מים שוטפת ולאקלים חם.
+1-2	הצמח	_	_	_	_	_	_	_	_
+1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
+2	צמח	צמח	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	זקוק	_	AUX	AUX	Gender=Masc|Number=Sing|Person=1,2,3|VerbType=Mod	0	root	_	_
+4-5	לאספקת	_	_	_	_	_	_	_	_
+4	ל	ל	ADP	ADP	_	5	case	_	_
+5	אספקת	אספקה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	3	obl	_	_
+6	מים	מים	NOUN	NOUN	Gender=Masc|Number=Plur	5	compound:smixut	_	_
+7	שוטפת	שוטף	ADJ	ADJ	Definite=Cons|Gender=Fem|Number=Sing	5	amod	_	_
+8	ולאקלים	ולאקל	NOUN	NOUN	Gender=Masc|Number=Plur	7	compound:smixut	_	_
+9	חם	חם	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = היסטוריה[עריכת קוד מקור | עריכה]
+# text = היסטוריה
 1	היסטוריה	היסטוריה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	ADP	ADP	_	3	case	_	SpaceAfter=No
-3	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-4	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	3	appos	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -126,24 +146,82 @@
 16	שנים	שנה	NOUN	NOUN	Gender=Fem|Number=Plur	11	obl	_	SpaceAfter=No
 17	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = הראשונים לגדל תירס היו שבט המאיה ועוד שבטים אינדיאניים באותו אזור.
+1-2	הראשונים	_	_	_	_	_	_	_	_
+1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
+2	ראשונים	_	NOUN	NOUN	Gender=Masc|Number=Plur	6	nsubj	_	_
+3	לגדל	גידל	VERB	VERB	HebBinyan=PIEL|VerbForm=Inf|Voice=Act	2	acl	_	_
+4	תירס	תירס	PROPN	PROPN	_	3	obl	_	_
+5	היו	היה	AUX	AUX	Gender=Fem,Masc|Number=Plur|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	6	cop	_	_
+6	שבט	שבט	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	_
+7	המאיה	המאיה	PROPN	PROPN	_	6	compound:smixut	_	_
+8-9	ועוד	_	_	_	_	_	_	_	_
+8	ו	ו	CCONJ	CCONJ	_	10	cc	_	_
+9	עוד	עוד	ADV	ADV	_	10	det	_	_
+10	שבטים	שבט	NOUN	NOUN	Gender=Masc|Number=Plur	6	conj	_	_
+11	אינדיאניים	אינדיאני	ADJ	ADJ	Gender=Masc|Number=Plur	10	amod	_	_
+12-13	באותו	_	_	_	_	_	_	_	_
+12	ב	ב	ADP	ADP	_	14	case	_	_
+13	אותו	אותו	PRON	PRON	Definite=Def|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	det	_	_
+14	אזור	אזור	NOUN	NOUN	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+# sent_id = 3
+# text = בנוסף, בני המאיה האמינו שהאדם עשוי מתירס.
+1-2	בנוסף	_	_	_	_	_	_	_	SpaceAfter=No
+1	ב	ב	ADP	ADP	_	4	case	_	_
+2	נוסף	נוסף	VERB	VERB	Gender=Masc|HebBinyan=NIFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Mid	1	fixed	_	_
+3	,	,	PUNCT	PUNCT	_	6	punct	_	_
+4	בני	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	6	nsubj	_	_
+5	המאיה	המאיה	NOUN	NOUN	Gender=Fem|Number=Sing	4	compound:smixut	_	_
+6	האמינו	האמין	VERB	VERB	Gender=Fem,Masc|HebBinyan=HIFIL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
+7-8	שהאדם	_	_	_	_	_	_	_	_
+7	שה	שה	SCONJ	SCONJ	_	9	mark	_	_
+8	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	9	nsubj	_	_
+9	עשוי	עשוי	ADJ	ADJ	Gender=Masc|Number=Sing	6	ccomp	_	_
+10	מתירס	התירס	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = עם גילוי יבשת אמריקה במאה ה-15, הופץ השימוש בתירס לכל העולם.
+1	עם	עם	ADP	ADP	_	2	case	_	_
+2	גילוי	גילוי	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	12	obl	_	_
+3	יבשת	יבשת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	2	compound:smixut	_	_
+4	אמריקה	אמריקה	PROPN	PROPN	_	3	compound:smixut	_	_
+5-7	במאה	_	_	_	_	_	_	_	_
+5	ב	ב	ADP	ADP	_	7	case	_	_
+6	ה_	ה	DET	DET	PronType=Art	7	det:def	_	_
+7	מאה	מאה	NUM	NUM	Gender=Fem|Number=Sing	2	nmod	_	_
+8	ה	ה	DET	DET	PronType=Art	10	dep	_	SpaceAfter=No
+9	-	-	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+10	15	15	NUM	NUM	_	7	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	הופץ	הופץ	VERB	VERB	Gender=Masc|HebBinyan=HUFAL|Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+13-14	השימוש	_	_	_	_	_	_	_	_
+13	ה	ה	DET	DET	PronType=Art	14	det:def	_	_
+14	שימוש	שימוש	NOUN	NOUN	Gender=Masc|Number=Sing	12	nsubj	_	_
+15	בתירס	בתירס	PROPN	PROPN	_	14	flat:name	_	_
+16-17	לכל	_	_	_	_	_	_	_	_
+16	ל	ל	ADP	ADP	_	19	case	_	_
+17	כל	כול	DET	DET	Definite=Cons	19	det	_	_
+18-19	העולם	_	_	_	_	_	_	_	SpaceAfter=No
+18	ה	ה	DET	DET	PronType=Art	19	det:def	_	_
+19	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	12	obl	_	_
+20	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = מקור השם העברי[עריכת קוד מקור | עריכה]
+# text = מקור השם העברי
 1	מקור	מקור	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	nsubj	_	_
 2-3	השם	_	_	_	_	_	_	_	_
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
 3	שם	שם	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	_
-4	העברי[	העברי[	VERB	VERB	Gender=Masc|HebBinyan=HIFIL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
-5	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	4	obj	_	_
-6	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+4	העברי	העברי	ADJ	ADJ	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -236,15 +314,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = שימושים[עריכת קוד מקור | עריכה]
+# text = שימושים
 1	שימושים	שימוש	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	ADP	ADP	_	3	case	_	SpaceAfter=No
-3	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-4	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -385,14 +456,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = מחקר[עריכת קוד מקור | עריכה]
-1	מחקר[	חיקר[	VERB	VERB	Gender=Masc|HebBinyan=PIEL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
-2	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nsubj	_	_
-3	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	compound:smixut	_	_
-4	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	3	compound:smixut	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = מחקר
+1	מחקר	מחקר	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -629,18 +694,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = גידול בישראל[עריכת קוד מקור | עריכה]
-1	גידול	גידול	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
+# text = גידול בישראל
+1	גידול	גידול	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	_
 2-3	בישראל	_	_	_	_	_	_	_	SpaceAfter=No
 2	ב	ב	ADP	ADP	_	3	case	_	_
 3	ישראל	ישראל	PROPN	PROPN	_	1	nmod	_	_
-4	[	[	ADP	ADP	_	5	case	_	SpaceAfter=No
-5	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-6	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -866,7 +924,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = התוצרת העולמית והתפלגותה בין המדינות[עריכת קוד מקור | עריכה]
+# text = התוצרת העולמית והתפלגותה בין המדינות
 1-2	התוצרת	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
 2	תוצרת	תוצרת	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
@@ -874,20 +932,13 @@
 3	ה	ה	DET	DET	PronType=Art	4	det:def	_	_
 4	עולמית	עולמי	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
 5-7	והתפלגותה	_	_	_	_	_	_	_	_
-5	והתפלגות_	והתפלגות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	2	dep	_	_
+5	והתפלגות_	והתפלגות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	2	appos	_	_
 6	_של_	של	ADP	ADP	_	7	case:gen	_	_
 7	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
 8	בין	בין	ADP	ADP	_	10	case	_	_
 9-10	המדינות	_	_	_	_	_	_	_	SpaceAfter=No
 9	ה	ה	DET	DET	PronType=Art	10	det:def	_	_
 10	מדינות	מדינה	NOUN	NOUN	Gender=Fem|Number=Plur	2	nmod	_	_
-11	[	[	PUNCT	PUNCT	_	12	case	_	SpaceAfter=No
-12	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	2	nmod	_	_
-13	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	12	compound:smixut	_	_
-14	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	13	compound:smixut	_	_
-15	|	|	PUNCT	PUNCT	_	16	punct	_	_
-16	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
-17	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1014,16 +1065,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = גלריית תמונות[עריכת קוד מקור | עריכה]
+# text = גלריית תמונות
 1	גלריית	גלרייה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
 2	תמונות	תמונה	NOUN	NOUN	Gender=Fem|Number=Plur	1	compound:smixut	_	SpaceAfter=No
-3	[	[	ADP	ADP	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1093,16 +1137,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ראו גם[עריכת קוד מקור | עריכה]
+# text = ראו גם
 1	ראו	ראה	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
-2	גם	גם	ADV	ADV	_	4	det	_	SpaceAfter=No
-3	[	[	ADP	ADP	_	4	det	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nsubj	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+2	גם	גם	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1110,16 +1147,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = קישורים חיצוניים[עריכת קוד מקור | עריכה]
+# text = קישורים חיצוניים
 1	קישורים	קישור	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
 2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	nmod	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1127,14 +1157,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = הערות שוליים[עריכת קוד מקור | עריכה]
-1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	4	nsubj	_	_
-2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	compound:smixut	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	case	_	SpaceAfter=No
-4	עריכת	עריכה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-5	קוד	קוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	compound:smixut	_	_
-6	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	5	compound:smixut	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+# text = הערות שוליים
+1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	0	root	_	_
+2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
 

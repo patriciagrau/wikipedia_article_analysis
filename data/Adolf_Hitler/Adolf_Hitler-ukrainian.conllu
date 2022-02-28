@@ -1,5 +1,3 @@
-# https://uk.wikipedia.org/wiki/%D0%90%D0%B4%D0%BE%D0%BB%D1%8C%D1%84_%D0%93%D1%96%D1%82%D0%BB%D0%B5%D1%80
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,28 +8,7 @@
 1	Адольф	Адольф	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	4	nsubj	_	_
 2	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
 3	—	—	PUNCT	U	PunctType=Dash	4	punct	_	_
-4	Вікіпедія	вікіпедія	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Адольф Гітлер
-1	Адольф	Адольф	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Медіафайли у Вікісховищі
-1	Медіафайли	медіафайл	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesBefore=\s |SpacesAfter=\s\s
-2	у	у	ADP	Spsl	Case=Loc	3	case	_	_
-3	Вікісховищі	вікісховище	NOUN	Ncnsln	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	1	nmod	_	SpacesAfter=\n
+4	Вікіпедія	вікіпедія	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -47,83 +24,79 @@
 5	.	.	PUNCT	U	_	4	punct	_	_
 
 # sent_id = 2
-# text = Adolf Hitler, Німецька: [ˈadɔlf ˈhɪtlɐ] ( прослухати)) (20 квітня 1889(18890420), Браунау-на-Інні, Австро-Угорщина — 30 квітня 1945, Берлін, Німеччина) — політичний та державний діяч Веймарської республіки та Третього Райху, Райхсканцлер (1933—1945), лідер Націонал-соціалістичної робітничої партії Німеччини — НСРПН (нім. Nationalsozialistische Deutsche Arbeiterpartei; NSDAP).
-1	Adolf	Adolf	X	X	Foreign=Yes	44	nsubj	_	_
+# text = Adolf Hitler, Німецька: ( прослухати)) (20 квітня 1889(18890420), Браунау-на-Інні, Австро-Угорщина — 30 квітня 1945, Берлін, Німеччина) — політичний та державний діяч Веймарської республіки та Третього Райху, Райхсканцлер (1933—1945), лідер Націонал-соціалістичної робітничої партії Німеччини — НСРПН (нім. Nationalsozialistische Deutsche Arbeiterpartei; NSDAP).
+1	Adolf	Adolf	X	X	Foreign=Yes	40	nsubj	_	_
 2	Hitler	Hitler	X	X	Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
 3	,	,	PUNCT	U	_	4	punct	_	_
 4	Німецька	німецький	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-5	:	:	PUNCT	U	_	7	punct	_	_
-6	[	[	PUNCT	U	PunctType=Quot	7	punct	_	SpaceAfter=No
-7	ˈadɔlf	ˈadɔlf	X	X	Foreign=Yes	1	parataxis	_	_
-8	ˈhɪtlɐ	ˈhɪtlɐ	X	X	Foreign=Yes	7	flat:foreign	_	SpaceAfter=No
-9	]	]	PUNCT	U	PunctType=Quot	7	punct	_	SpacesAfter= 
-10	(	(	PUNCT	U	_	11	punct	_	_
-11	прослухати	прослухати	VERB	Vmen	Aspect=Perf|VerbForm=Inf	1	parataxis	_	SpaceAfter=No
-12	)	)	PUNCT	U	_	11	punct	_	SpaceAfter=No
-13	)	)	PUNCT	U	_	7	punct	_	_
+5	:	:	PUNCT	U	_	7	punct	_	SpacesAfter=\s 
+6	(	(	PUNCT	U	_	7	punct	_	_
+7	прослухати	прослухати	VERB	Vmen	Aspect=Perf|VerbForm=Inf	4	parataxis	_	SpaceAfter=No
+8	)	)	PUNCT	U	_	7	punct	_	SpaceAfter=No
+9	)	)	PUNCT	U	_	7	punct	_	_
+10	(	(	PUNCT	U	_	11	punct	_	SpaceAfter=No
+11	20	20	ADJ	Mlonsn	Case=Nom|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	1	parataxis	_	SpacesAfter= 
+12	квітня	квітень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	_
+13	1889	1889	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	12	nmod	_	SpaceAfter=No
 14	(	(	PUNCT	U	_	15	punct	_	SpaceAfter=No
-15	20	20	ADJ	Mlonsn	Case=Nom|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	1	parataxis	_	SpacesAfter= 
-16	квітня	квітень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	_
-17	1889	1889	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	16	nmod	_	SpaceAfter=No
-18	(	(	PUNCT	U	_	19	punct	_	SpaceAfter=No
-19	18890420	1990420	NUM	Mlc-n	Case=Nom|NumType=Card|Uninflect=Yes	17	parataxis	_	SpaceAfter=No
-20	)	)	PUNCT	U	_	7	punct	_	SpaceAfter=No
-21	,	,	PUNCT	U	_	22	punct	_	_
-22	Браунау	Браунау	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	15	parataxis	_	SpaceAfter=No
-23	-	-	PUNCT	U	PunctType=Hyph	26	punct	_	SpaceAfter=No
-24	на	на	ADP	Spsl	Case=Loc	26	case	_	SpaceAfter=No
-25	-	-	PUNCT	U	PunctType=Hyph	28	punct	_	SpaceAfter=No
-26	Інні	Інна	PROPN	Npmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	22	flat:range	_	SpaceAfter=No
-27	,	,	PUNCT	U	_	30	punct	_	_
-28	Австро	австрійський	ADJ	A	Hyph=Yes	30	compound	_	SpaceAfter=No
-29	-	-	PUNCT	U	PunctType=Hyph	28	punct	_	SpaceAfter=No
-30	Угорщина	Угорщина	PROPN	Npfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	22	appos	_	SpacesAfter= 
-31	—	—	PUNCT	U	PunctType=Dash	32	punct	_	_
-32	30	30	ADJ	Mlonsn	Case=Nom|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	22	flat:range	_	SpacesAfter= 
-33	квітня	квітень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	_
-34	1945	1945	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	33	nmod	_	SpaceAfter=No
-35	,	,	PUNCT	U	_	36	punct	_	_
-36	Берлін	Берлін	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	32	parataxis	_	SpaceAfter=No
-37	,	,	PUNCT	U	_	38	punct	_	_
-38	Німеччина	Німеччина	PROPN	Npfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	32	parataxis	_	SpaceAfter=No
-39	)	)	PUNCT	U	_	15	punct	_	SpacesAfter= 
-40	—	—	PUNCT	U	PunctType=Dash	44	punct	_	_
-41	політичний	політичний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	44	amod	_	_
-42	та	та	CCONJ	Ccs	_	43	cc	_	_
-43	державний	державний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	41	conj	_	_
-44	діяч	діяч	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-45	Веймарської	веймарський	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	46	amod	_	_
-46	республіки	республіка	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	44	nmod	_	_
-47	та	та	CCONJ	Ccs	_	49	cc	_	_
-48	Третього	третій	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord	49	amod	_	_
-49	Райху	райх	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	46	conj	_	SpaceAfter=No
-50	,	,	PUNCT	U	_	51	punct	_	_
-51	Райхсканцлер	райхсканцлер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	44	conj	_	_
-52	(	(	PUNCT	U	_	53	punct	_	SpaceAfter=No
-53	1933	1933	NOUN	Ao-msnf	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	51	parataxis	_	SpaceAfter=No
-54	—	—	PUNCT	U	PunctType=Ndash	55	punct	_	SpaceAfter=No
-55	1945	1945	NOUN	Ao-msnf	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	53	flat:range	_	SpaceAfter=No
-56	)	)	PUNCT	U	_	53	punct	_	SpaceAfter=No
-57	,	,	PUNCT	U	_	58	punct	_	_
-58	лідер	лідер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	44	conj	_	_
-59	Націонал	націоний	ADJ	A	Hyph=Yes	61	compound	_	SpaceAfter=No
-60	-	-	PUNCT	U	PunctType=Hyph	59	punct	_	SpaceAfter=No
-61	соціалістичної	соціалістичний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	63	amod	_	_
-62	робітничої	робітничий	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	63	amod	_	_
-63	партії	партія	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	58	nmod	_	_
-64	Німеччини	Німеччина	PROPN	Npfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	63	nmod	_	SpacesAfter= 
-65	—	—	PUNCT	U	PunctType=Dash	66	punct	_	_
-66	НСРПН	Нсрпн	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	63	appos	_	_
-67	(	(	PUNCT	U	_	70	punct	_	SpaceAfter=No
-68	нім	нім.	ADJ	Y	Abbr=Yes|Case=Nom|Gender=Neut|Number=Sing|Uninflect=Yes	70	amod	_	SpaceAfter=No
-69	.	.	PUNCT	U	_	68	punct	_	_
-70	Nationalsozialistische	Nationalsozialistische	X	X	Foreign=Yes	63	appos	_	_
-71	Deutsche	Deutsche	X	X	Foreign=Yes	70	flat:foreign	_	_
-72	Arbeiterpartei	Arbeiterpartei	X	X	Foreign=Yes	70	flat:foreign	_	SpaceAfter=No
-73	;	;	PUNCT	U	_	74	punct	_	_
-74	NSDAP	NSDAP	X	X	Foreign=Yes	70	appos	_	SpaceAfter=No
-75	)	)	PUNCT	U	_	70	punct	_	SpaceAfter=No
-76	.	.	PUNCT	U	_	44	punct	_	_
+15	18890420	1990420	NUM	Mlc-n	Case=Nom|NumType=Card|Uninflect=Yes	13	parataxis	_	SpaceAfter=No
+16	)	)	PUNCT	U	_	7	punct	_	SpaceAfter=No
+17	,	,	PUNCT	U	_	18	punct	_	_
+18	Браунау	Браунау	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	parataxis	_	SpaceAfter=No
+19	-	-	PUNCT	U	PunctType=Hyph	22	punct	_	SpaceAfter=No
+20	на	на	ADP	Spsl	Case=Loc	22	case	_	SpaceAfter=No
+21	-	-	PUNCT	U	PunctType=Hyph	24	punct	_	SpaceAfter=No
+22	Інні	Інні	PROPN	Npmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	18	flat:range	_	SpaceAfter=No
+23	,	,	PUNCT	U	_	26	punct	_	_
+24	Австро	австрійський	ADJ	A	Hyph=Yes	26	compound	_	SpaceAfter=No
+25	-	-	PUNCT	U	PunctType=Hyph	24	punct	_	SpaceAfter=No
+26	Угорщина	Угорщина	PROPN	Npfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	18	appos	_	SpacesAfter= 
+27	—	—	PUNCT	U	PunctType=Dash	28	punct	_	_
+28	30	30	ADJ	Mlonsn	Case=Nom|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	18	flat:range	_	SpacesAfter= 
+29	квітня	квітень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	28	nmod	_	_
+30	1945	1945	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	29	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	U	_	32	punct	_	_
+32	Берлін	Берлін	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	28	parataxis	_	SpaceAfter=No
+33	,	,	PUNCT	U	_	34	punct	_	_
+34	Німеччина	Німеччина	PROPN	Npfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	28	parataxis	_	SpaceAfter=No
+35	)	)	PUNCT	U	_	11	punct	_	SpacesAfter= 
+36	—	—	PUNCT	U	PunctType=Dash	40	punct	_	_
+37	політичний	політичний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	40	amod	_	_
+38	та	та	CCONJ	Ccs	_	39	cc	_	_
+39	державний	державний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	37	conj	_	_
+40	діяч	діяч	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+41	Веймарської	веймарський	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	42	amod	_	_
+42	республіки	республіка	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	40	nmod	_	_
+43	та	та	CCONJ	Ccs	_	45	cc	_	_
+44	Третього	третій	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord	45	amod	_	_
+45	Райху	райх	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	42	conj	_	SpaceAfter=No
+46	,	,	PUNCT	U	_	47	punct	_	_
+47	Райхсканцлер	райхсканцлер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	40	conj	_	_
+48	(	(	PUNCT	U	_	49	punct	_	SpaceAfter=No
+49	1933	1933	NOUN	Ao-msnf	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	47	parataxis	_	SpaceAfter=No
+50	—	—	PUNCT	U	PunctType=Ndash	51	punct	_	SpaceAfter=No
+51	1945	1945	NOUN	Ao-msnf	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	49	flat:range	_	SpaceAfter=No
+52	)	)	PUNCT	U	_	49	punct	_	SpaceAfter=No
+53	,	,	PUNCT	U	_	54	punct	_	_
+54	лідер	лідер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	40	conj	_	_
+55	Націонал	націоний	ADJ	A	Hyph=Yes	57	compound	_	SpaceAfter=No
+56	-	-	PUNCT	U	PunctType=Hyph	55	punct	_	SpaceAfter=No
+57	соціалістичної	соціалістичний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	59	amod	_	_
+58	робітничої	робітничий	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	59	amod	_	_
+59	партії	партія	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	54	nmod	_	_
+60	Німеччини	Німеччина	PROPN	Npfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	59	nmod	_	SpacesAfter= 
+61	—	—	PUNCT	U	PunctType=Dash	62	punct	_	_
+62	НСРПН	Нсрпн	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	59	appos	_	_
+63	(	(	PUNCT	U	_	66	punct	_	SpaceAfter=No
+64	нім	нім.	ADJ	Y	Abbr=Yes|Case=Nom|Gender=Neut|Number=Sing|Uninflect=Yes	66	amod	_	SpaceAfter=No
+65	.	.	PUNCT	U	_	64	punct	_	_
+66	Nationalsozialistische	Nationalsozialistische	X	X	Foreign=Yes	59	appos	_	_
+67	Deutsche	Deutsche	X	X	Foreign=Yes	66	flat:foreign	_	_
+68	Arbeiterpartei	Arbeiterpartei	X	X	Foreign=Yes	66	flat:foreign	_	SpaceAfter=No
+69	;	;	PUNCT	U	_	70	punct	_	_
+70	NSDAP	NSDAP	X	X	Foreign=Yes	66	appos	_	SpaceAfter=No
+71	)	)	PUNCT	U	_	66	punct	_	SpaceAfter=No
+72	.	.	PUNCT	U	_	40	punct	_	_
 
 # sent_id = 3
 # text = Гітлер прийшов до влади, як канцлер Німеччини 1933 року, а пізніше, як Фюрер і Райхсканцлер від 1934 до 1945 року.
@@ -837,7 +810,7 @@
 # sent_id = 1
 # text = Ранні роки
 1	Ранні	ранній	ADJ	Afp-pns	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	роки	рік	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	роки	рік	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -846,7 +819,7 @@
 # newpar
 # sent_id = 1
 # text = Прізвище
-1	Прізвище	прізвище	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+1	Прізвище	прізвище	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -942,7 +915,7 @@
 # text = Дитинство та юність
 1	Дитинство	дитинство	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	та	та	CCONJ	Ccs	_	3	cc	_	_
-3	юність	юність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+3	юність	юність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2118,7 +2091,7 @@
 2	у	у	ADP	Spsl	Case=Loc	5	case	_	_
 3	Першій	перший	ADJ	Mlofsl	Case=Loc|Gender=Fem|Number=Sing|NumType=Ord	5	amod	_	_
 4	світовій	світовий	ADJ	Ao-fslf	Case=Loc|Gender=Fem|Number=Sing	5	amod	_	_
-5	війні	війна	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+5	війні	війна	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2194,6 +2167,61 @@
 27	командира	командир	NOUN	Ncmsgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
 28	)	)	PUNCT	U	_	21	punct	_	SpaceAfter=No
 29	.	.	PUNCT	U	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = 16 серпня він був зарахований у 6-й резервний батальйон 2-го баварського піхотного полку № 16, що складався з добровольців.
+1	16	16	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	5	obl	_	_
+2	серпня	серпень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	був	бути	AUX	Vapis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	5	cop	_	_
+5	зарахований	зарахований	ADJ	Ap-msnf-ep	Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+6	у	у	ADP	Spsa	Case=Acc	9	case	_	_
+7	6-й	6-й	ADJ	Mlomsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|NumType=Ord	9	amod	_	_
+8	резервний	резервний	ADJ	Ao-msafn	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	amod	_	_
+9	батальйон	батальйон	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obl	_	_
+10	2-го	2-ий	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord	13	amod	_	_
+11	баварського	баварський	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	13	amod	_	_
+12	піхотного	піхотний	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	13	amod	_	_
+13	полку	полк	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+14	№	№	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	13	flat:title	_	SpacesAfter= 
+15	16	16	NUM	Mlc-n	Case=Nom|NumType=Card|Uninflect=Yes	14	flat:title	_	SpaceAfter=No
+16	,	,	PUNCT	U	_	18	punct	_	_
+17	що	що	SCONJ	Css	_	18	mark	_	_
+18	складався	складатися	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	13	acl:relcl	_	_
+19	з	з	ADP	Spsg	Case=Gen	20	case	_	_
+20	добровольців	доброволець	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	U	_	5	punct	_	_
+
+# sent_id = 6
+# text = 1 вересня переведений в 1-у роту Баварського резервного піхотного полку № 16.
+1	1	1	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	3	obl	_	_
+2	вересня	вересень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	переведений	переведений	ADJ	Ap-msnf-ep	Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+4	в	в	ADP	Spsa	Case=Acc	6	case	_	_
+5	1-у	1-ий	ADJ	Mlofsa	Case=Acc|Gender=Fem|Number=Sing|NumType=Ord	6	amod	_	_
+6	роту	рота	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
+7	Баварського	баварський	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	10	amod	_	_
+8	резервного	резервний	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	10	amod	_	_
+9	піхотного	піхотний	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	10	amod	_	_
+10	полку	полк	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
+11	№	№	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	10	flat:title	_	SpacesAfter= 
+12	16	16	NUM	Mlc-n	Case=Nom|NumType=Card|Uninflect=Yes	11	flat:title	_	SpaceAfter=No
+13	.	.	PUNCT	U	_	3	punct	_	_
+
+# sent_id = 7
+# text = 8 жовтня присягнув на вірність королю Баварії та імператору Францу Йозефу.
+1	8	8	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	3	obl	_	_
+2	жовтня	жовтень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	присягнув	присягнути	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	на	на	ADP	Spsa	Case=Acc	5	case	_	_
+5	вірність	вірність	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
+6	королю	король	NOUN	Ncmsdy	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	5	nmod	_	_
+7	Баварії	Баварія	PROPN	Npfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
+8	та	та	CCONJ	Ccs	_	9	cc	_	_
+9	імператору	імператор	NOUN	Ncmsdy	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	6	conj	_	_
+10	Францу	Франц	PROPN	Npmsdy	Animacy=Anim|Case=Dat|Gender=Masc|NameType=Giv|Number=Sing	9	flat:title	_	_
+11	Йозефу	Йозеф	PROPN	Npmsdy	Animacy=Anim|Case=Dat|Gender=Masc|NameType=Giv|Number=Sing	10	flat:name	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2799,7 +2827,7 @@
 # sent_id = 1
 # text = Формування світогляду
 1	Формування	формування	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	світогляду	світогляд	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	світогляду	світогляд	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2832,7 +2860,7 @@
 22	.	.	PUNCT	U	_	6	punct	_	_
 
 # sent_id = 2
-# text = В її основі лежали ідеї шовінізму, соціалізму та антисемітизму, увібрані ним від низки австрійських ідеологів: Ґеорга фон Шенерера, Карла Люґера, Ріхарда Ваґнера[de].
+# text = В її основі лежали ідеї шовінізму, соціалізму та антисемітизму, увібрані ним від низки австрійських ідеологів: Ґеорга фон Шенерера, Карла Люґера, Ріхарда Ваґнера.
 1	В	в	ADP	Spsl	Case=Loc	3	case	_	_
 2	її	її	DET	Pps3f-sla	Case=Loc|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs|Uninflect=Yes	3	det	_	_
 3	основі	основа	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	4	obl	_	_
@@ -2860,10 +2888,7 @@
 25	,	,	PUNCT	U	_	26	punct	_	_
 26	Ріхарда	Ріхард	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	19	conj	_	_
 27	Ваґнера	Ваґнер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	26	flat:name	_	SpaceAfter=No
-28	[	[	PUNCT	U	_	29	punct	_	SpaceAfter=No
-29	de	de	X	X	Foreign=Yes	26	appos	_	SpaceAfter=No
-30	]	]	PUNCT	U	_	29	punct	_	SpaceAfter=No
-31	.	.	PUNCT	U	_	4	punct	_	_
+28	.	.	PUNCT	U	_	4	punct	_	_
 
 # sent_id = 3
 # text = Перший з них був ідеологом пангерманізму, який прагнув возз'єднання Німеччини з Австрією.
@@ -3108,7 +3133,7 @@
 # sent_id = 1
 # text = Партійна діяльність
 1	Партійна	партійний	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
-2	діяльність	діяльність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+2	діяльність	діяльність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -3119,7 +3144,7 @@
 # text = Діяльність після війни
 1	Діяльність	діяльність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	після	після	ADP	Spsg	Case=Gen	3	case	_	_
-3	війни	війна	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	війни	війна	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -3293,6 +3318,166 @@
 16	членом	член	NOUN	Ncmsiy	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	13	xcomp:sp	_	SpaceAfter=No
 17	.	.	PUNCT	U	_	7	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = За особистого сприяння Гітлера 1 квітня 1920 року було проголошено основну програму, названу «25 пунктів».
+1	За	за	ADP	Spsg	Case=Gen	3	case	_	_
+2	особистого	особистий	ADJ	Afpnsgf	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	сприяння	сприяння	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	10	obl	_	_
+4	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	3	nmod	_	_
+5	1	1	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	10	obl	_	_
+6	квітня	квітень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+7	1920	1920	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	8	amod	_	_
+8	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
+9	було	бути	AUX	Vapis-sn	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	10	aux	_	_
+10	проголошено	проголошити	VERB	Vmeo	Aspect=Perf|Mood=Ind|Person=0|VerbForm=Fin	0	root	_	_
+11	основну	основний	ADJ	Ao-fsas	Case=Acc|Gender=Fem|Number=Sing	12	amod	_	_
+12	програму	програма	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No
+13	,	,	PUNCT	U	_	14	punct	_	_
+14	названу	названий	ADJ	Ap-fsas-ep	Aspect=Perf|Case=Acc|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	12	amod	_	_
+15	«	«	PUNCT	U	PunctType=Quot	17	punct	_	SpaceAfter=No
+16	25	25	NUM	Mlc-a	Case=Acc|NumType=Card|Uninflect=Yes	17	nummod:gov	_	_
+17	пунктів	пункт	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	14	obj	_	SpaceAfter=No
+18	»	»	PUNCT	U	PunctType=Quot	17	punct	_	SpaceAfter=No
+19	.	.	PUNCT	U	_	10	punct	_	_
+
+# sent_id = 6
+# text = В одній зі своїх промов у серпні 1920 року Гітлер уперше ґрунтовно розкрив засади свого антисемітизму, звинувативши євреїв мало не в усіх бідах та назвавши їх нездарами та кровопивцями.
+1	В	в	ADP	Spsl	Case=Loc	2	case	_	_
+2	одній	один	DET	Pi--f-sla	Case=Loc|Gender=Fem|Number=Sing|PronType=Ind	13	obl	_	_
+3	зі	зі	ADP	Spsg	Case=Gen	5	case	_	_
+4	своїх	свій	DET	Pps---pga	Case=Gen|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	5	det	_	_
+5	промов	промова	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+6	у	у	ADP	Spsl	Case=Loc	7	case	_	_
+7	серпні	серпень	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	13	obl	_	_
+8	1920	1920	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	9	amod	_	_
+9	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	_
+10	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	13	nsubj	_	_
+11	уперше	уперше	ADV	R	_	13	advmod	_	_
+12	ґрунтовно	ґрунтовно	ADV	Rp	Degree=Pos	13	advmod	_	_
+13	розкрив	розкрити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+14	засади	засада	NOUN	Ncmpan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	13	obj	_	_
+15	свого	свій	DET	Pps-m-sga	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	16	det	_	_
+16	антисемітизму	антисемітизм	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	U	_	18	punct	_	_
+18	звинувативши	звинуватити	VERB	Vmegs	Aspect=Perf|Tense=Past|VerbForm=Conv	13	advcl	_	_
+19	євреїв	єврей	NOUN	Ncmpay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Plur	18	obj	_	_
+20	мало	мало	ADV	Rp	Degree=Pos	24	advmod	_	_
+21	не	не	PART	Q	Polarity=Neg	24	advmod	_	_
+22	в	в	ADP	Spsl	Case=Loc	24	case	_	_
+23	усіх	увесь	DET	Pg----pla	Case=Loc|Number=Plur|PronType=Tot	24	det	_	_
+24	бідах	бід	NOUN	Ncmpln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	18	obl	_	_
+25	та	та	CCONJ	Ccs	_	26	cc	_	_
+26	назвавши	назвати	VERB	Vmegs	Aspect=Perf|Tense=Past|VerbForm=Conv	18	conj	_	_
+27	їх	вони	PRON	Pp-3--pan	Case=Acc|Number=Plur|Person=3|PronType=Prs	26	obj	_	_
+28	нездарами	нездар	NOUN	Ncmpiy	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	26	xcomp:sp	_	_
+29	та	та	CCONJ	Ccs	_	30	cc	_	_
+30	кровопивцями	кровопивець	NOUN	Ncmpiy	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	28	conj	_	SpaceAfter=No
+31	.	.	PUNCT	U	_	13	punct	_	_
+
+# sent_id = 7
+# text = Впливовий у колі своїх однопартійців Гітлер усе ще не мав провідної партійної посади, тоді майбутній фюрер вирішив вдатися до хитрощів: 11 липня 1921 року він демонстративно вийшов з партії, а головною умовою свого повернення поставив призначення його «головою партії з диктаторськими повноваженнями».
+1	Впливовий	впливовий	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	17	amod	_	_
+2	у	у	ADP	Spsl	Case=Loc	3	case	_	_
+3	колі	коло	NOUN	Ncnsln	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	1	obl	_	_
+4	своїх	свій	DET	Pps---pga	Case=Gen|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	5	det	_	_
+5	однопартійців	однопартійець	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	3	nmod	_	_
+6	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	10	nsubj	_	_
+7	усе	усе	ADV	R	_	10	advmod	_	_
+8	ще	ще	ADV	R	_	10	advmod	_	_
+9	не	не	PART	Q	Polarity=Neg	10	advmod	_	_
+10	мав	мати	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+11	провідної	провідний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	13	amod	_	_
+12	партійної	партійний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	13	amod	_	_
+13	посади	посада	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No
+14	,	,	PUNCT	U	_	18	punct	_	_
+15	тоді	тоді	ADV	Pd------r	PronType=Dem	18	advmod	_	_
+16	майбутній	майбутній	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	17	amod	_	_
+17	фюрер	фюрер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
+18	вирішив	вирішити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	10	parataxis	_	_
+19	вдатися	вдатися	VERB	Vmen	Aspect=Perf|VerbForm=Inf	18	xcomp	_	_
+20	до	до	ADP	Spsg	Case=Gen	21	case	_	_
+21	хитрощів	хитрощі	NOUN	Nc-pgn	Animacy=Inan|Case=Gen|Number=Ptan	19	obl	_	SpaceAfter=No
+22	:	:	PUNCT	U	_	29	punct	_	_
+23	11	11	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	29	obl	_	_
+24	липня	липень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	23	nmod	_	_
+25	1921	1921	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	26	amod	_	_
+26	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	24	nmod	_	_
+27	він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+28	демонстративно	демонстративно	ADV	Rp	Degree=Pos	29	advmod	_	_
+29	вийшов	вийти	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	10	parataxis	_	_
+30	з	з	ADP	Spsg	Case=Gen	31	case	_	_
+31	партії	партія	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	29	obl	_	SpaceAfter=No
+32	,	,	PUNCT	U	_	38	punct	_	_
+33	а	а	CCONJ	Ccs	_	38	cc	_	_
+34	головною	головний	ADJ	Afpfsif	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	35	amod	_	_
+35	умовою	умова	NOUN	Ncfsin	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	38	obl	_	_
+36	свого	свій	DET	Pps-n-sga	Case=Gen|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	37	det	_	_
+37	повернення	повернення	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	35	nmod	_	_
+38	поставив	поставити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	29	conj	_	_
+39	призначення	призначення	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	38	obj	_	_
+40	його	він	PRON	Pp-3m-sgn	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nmod	_	_
+41	«	«	PUNCT	U	PunctType=Quot	42	punct	_	SpaceAfter=No
+42	головою	голова	NOUN	Ncmsiy	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	39	nmod	_	_
+43	партії	партія	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	42	nmod	_	_
+44	з	з	ADP	Spsi	Case=Ins	46	case	_	_
+45	диктаторськими	диктаторський	ADJ	Ao--pif	Case=Ins|Number=Plur	46	amod	_	_
+46	повноваженнями	повноваження	NOUN	Ncnpin	Animacy=Inan|Case=Ins|Gender=Neut|Number=Plur	42	nmod	_	SpaceAfter=No
+47	»	»	PUNCT	U	PunctType=Quot	42	punct	_	SpaceAfter=No
+48	.	.	PUNCT	U	_	10	punct	_	_
+
+# sent_id = 8
+# text = Керівництво пішло йому на поступки й уже 29 липня він повернувся до лав НСДАП.
+1	Керівництво	керівництво	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	пішло	піти	VERB	Vmeis-sn	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	йому	він	PRON	Pp-3m-sdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	на	на	ADP	Spsa	Case=Acc	5	case	_	_
+5	поступки	поступок	NOUN	Ncmpan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	2	obl	_	_
+6	й	й	CCONJ	Ccs	_	11	cc	_	_
+7	уже	уже	ADV	R	_	8	advmod	_	_
+8	29	29	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	11	obl	_	_
+9	липня	липень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
+10	він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	повернувся	повернутися	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	2	conj	_	_
+12	до	до	ADP	Spsg	Case=Gen	13	case	_	_
+13	лав	лава	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	11	obl	_	_
+14	НСДАП	НСДАП	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	13	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = Ставши місцевим партійним лідером, він почав розширювати свій вплив, виголошуючи промови на дедалі вищому й вищому рівні.
+1	Ставши	стати	VERB	Vmegs	Aspect=Perf|Tense=Past|VerbForm=Conv	7	advcl	_	_
+2	місцевим	місцевий	ADJ	Ao-msif	Case=Ins|Gender=Masc|Number=Sing	4	amod	_	_
+3	партійним	партійний	ADJ	Ao-msif	Case=Ins|Gender=Masc|Number=Sing	4	amod	_	_
+4	лідером	лідер	NOUN	Ncmsiy	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	1	xcomp:sp	_	SpaceAfter=No
+5	,	,	PUNCT	U	_	1	punct	_	_
+6	він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	почав	почати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+8	розширювати	розширювати	VERB	Vmpn	Aspect=Imp|VerbForm=Inf	7	xcomp	_	_
+9	свій	свій	DET	Pps-mnsaa	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	10	det	_	_
+10	вплив	вплив	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	U	_	12	punct	_	_
+12	виголошуючи	виголошувати	VERB	Vmpgp	Aspect=Imp|Tense=Pres|VerbForm=Conv	8	advcl	_	_
+13	промови	промова	NOUN	Ncfpan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	12	obj	_	_
+14	на	на	ADP	Spsl	Case=Loc	19	case	_	_
+15	дедалі	дедалі	ADV	R	_	16	advmod	_	_
+16	вищому	вищий	ADJ	Afpmslf	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+17	й	й	CCONJ	Ccs	_	18	cc	_	_
+18	вищому	вищий	ADJ	Afcmslf	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	16	conj	_	_
+19	рівні	рівень	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	12	obl	_	SpaceAfter=No
+20	.	.	PUNCT	U	_	7	punct	_	_
+
+# sent_id = 10
+# text = Його навіть стали називати «німецьким Муссоліні».
+1	Його	він	PRON	Pp-3m-san	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+2	навіть	навіть	PART	Q	_	3	discourse	_	_
+3	стали	стати	VERB	Vmeis-p	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
+4	називати	називати	VERB	Vmpn	Aspect=Imp|VerbForm=Inf	3	xcomp	_	_
+5	«	«	PUNCT	U	PunctType=Quot	7	punct	_	SpaceAfter=No
+6	німецьким	німецький	ADJ	Ao-msif	Case=Ins|Gender=Masc|Number=Sing	7	amod	_	_
+7	Муссоліні	Муссоліні	PROPN	Npmsiy	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Uninflect=Yes	4	xcomp:sp	_	SpaceAfter=No
+8	»	»	PUNCT	U	PunctType=Quot	7	punct	_	SpaceAfter=No
+9	.	.	PUNCT	U	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3305,7 +3490,7 @@
 3	путч	путч	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 4	»	»	PUNCT	U	PunctType=Quot	3	punct	_	_
 5	та	та	CCONJ	Ccs	_	6	cc	_	_
-6	ув'язнення	ув’язнення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	conj	_	SpacesAfter=\n
+6	ув'язнення	ув’язнення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -4170,6 +4355,75 @@
 13	поплічників	поплічник	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No
 14	.	.	PUNCT	U	_	7	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Суд засудив Гітлера за державну зраду до 5 років ув'язнення і штрафу розміром у 200 золотих марок.
+1	Суд	суд	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	засудив	засудити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	Гітлера	Гітлер	PROPN	Npmsay	Animacy=Anim|Case=Acc|Gender=Masc|NameType=Sur|Number=Sing	2	obj	_	_
+4	за	за	ADP	Spsa	Case=Acc	6	case	_	_
+5	державну	державний	ADJ	Ao-fsas	Case=Acc|Gender=Fem|Number=Sing	6	amod	_	_
+6	зраду	зрада	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
+7	до	до	ADP	Spsg	Case=Gen	9	case	_	_
+8	5	5	NUM	Mlc-g	Case=Gen|NumType=Card|Uninflect=Yes	9	nummod	_	_
+9	років	рік	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+10	ув'язнення	ув’язнення	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	9	nmod	_	_
+11	і	і	CCONJ	Ccs	_	12	cc	_	_
+12	штрафу	штраф	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	conj	_	_
+13	розміром	розмір	NOUN	Ncmsin	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	12	nmod	_	_
+14	у	у	ADP	Spsa	Case=Acc	17	case	_	_
+15	200	200	NUM	Mlc-a	Case=Acc|NumType=Card|Uninflect=Yes	17	nummod:gov	_	_
+16	золотих	золотий	ADJ	Ao--pgf	Case=Gen|Number=Plur	17	amod	_	_
+17	марок	марка	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	U	_	2	punct	_	_
+
+# sent_id = 4
+# text = Гітлер відбував покарання у в'язниці Ландсберг.
+1	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	відбував	відбувати	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	покарання	покарання	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
+4	у	у	ADP	Spsl	Case=Loc	5	case	_	_
+5	в'язниці	в'язника	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	3	nmod	_	_
+6	Ландсберг	Ландсберг	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	flat:title	_	SpaceAfter=No
+7	.	.	PUNCT	U	_	2	punct	_	_
+
+# sent_id = 5
+# text = Під час ув'язнення, за допомоги Рудольфа Гесса, Гітлер написав свою працю «Моя боротьба».
+1	Під	під	ADP	Spsa	Case=Acc	2	case	_	_
+2	час	час	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	obl	_	_
+3	ув'язнення	ув’язнення	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	U	_	6	punct	_	_
+5	за	за	ADP	Spsg	Case=Gen	6	case	_	_
+6	допомоги	допомога	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	11	obl	_	_
+7	Рудольфа	Рудольф	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	6	nmod	_	_
+8	Гесса	Гесс	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	,	,	PUNCT	U	_	6	punct	_	_
+10	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	11	nsubj	_	_
+11	написав	написати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+12	свою	свій	DET	Pps-f-saa	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	13	det	_	_
+13	працю	праця	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	11	obj	_	_
+14	«	«	PUNCT	U	PunctType=Quot	16	punct	_	SpaceAfter=No
+15	Моя	мій	DET	Pps1f-sna	Case=Nom|Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	det	_	_
+16	боротьба	боротьба	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	13	flat:title	_	SpaceAfter=No
+17	»	»	PUNCT	U	PunctType=Quot	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	U	_	11	punct	_	_
+
+# sent_id = 6
+# text = Через 9 місяців, у грудні 1924 року, його випустили на волю.
+1	Через	через	ADP	Spsa	Case=Acc	3	case	_	_
+2	9	9	NUM	Mlc-a	Case=Acc|NumType=Card|Uninflect=Yes	3	nummod:gov	_	_
+3	місяців	місяць	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	11	obl	_	SpaceAfter=No
+4	,	,	PUNCT	U	_	6	punct	_	_
+5	у	у	ADP	Spsl	Case=Loc	6	case	_	_
+6	грудні	грудень	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	appos	_	_
+7	1924	1924	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	8	amod	_	_
+8	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	U	_	6	punct	_	_
+10	його	він	PRON	Pp-3m-san	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+11	випустили	випустити	VERB	Vmeis-p	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
+12	на	на	ADP	Spsa	Case=Acc	13	case	_	_
+13	волю	воля	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	U	_	11	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -4178,7 +4432,7 @@
 # sent_id = 1
 # text = Модернізація НСДАП
 1	Модернізація	модернізація	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	НСДАП	НСДАП	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	1	nmod	_	SpacesAfter=\n
+2	НСДАП	НСДАП	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -4356,7 +4610,7 @@
 # text = На чолі Рейху
 1	На	на	ADP	Spsl	Case=Loc	2	case	_	_
 2	чолі	чоло	NOUN	Ncnsln	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	0	root	_	_
-3	Рейху	рейх	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
+3	Рейху	рейх	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -4370,7 +4624,7 @@
 3	влади	влада	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
 4	та	та	CCONJ	Ccs	_	6	cc	_	_
 5	внутрішня	внутрішній	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	політика	політика	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+6	політика	політика	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -4873,7 +5127,7 @@
 # sent_id = 1
 # text = Зовнішньополітична діяльність
 1	Зовнішньополітична	зовнішньополітичний	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
-2	діяльність	діяльність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+2	діяльність	діяльність	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -5435,7 +5689,7 @@
 # text = Замахи на Гітлера
 1	Замахи	замах	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	на	на	ADP	Spsa	Case=Acc	3	case	_	_
-3	Гітлера	Гітлер	PROPN	Npmsay	Animacy=Anim|Case=Acc|Gender=Masc|NameType=Sur|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	Гітлера	Гітлер	PROPN	Npmsay	Animacy=Anim|Case=Acc|Gender=Masc|NameType=Sur|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -5525,6 +5779,30 @@
 3	не	не	PART	Q	Polarity=Neg	4	advmod	_	_
 4	постраждав	постраждати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	U	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = 4 липня 1932 року невідомі обстріляли автомобіль з Гітлером в Нюрнберзі.
+1	4	4	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	6	obl	_	_
+2	липня	липень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	1932	1932	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	4	amod	_	_
+4	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+5	невідомі	невідомий	ADJ	Ao--pns	Case=Nom|Number=Plur	6	nsubj	_	_
+6	обстріляли	обстріляти	VERB	Vmpis-p	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
+7	автомобіль	автомобіль	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	_
+8	з	з	ADP	Spsi	Case=Ins	9	case	_	_
+9	Гітлером	Гітлер	PROPN	Npmsiy	Animacy=Anim|Case=Ins|Gender=Masc|NameType=Sur|Number=Sing	7	nmod	_	_
+10	в	в	ADP	Spsl	Case=Loc	11	case	_	_
+11	Нюрнберзі	Нюрнберз	PROPN	Npmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	6	punct	_	_
+
+# sent_id = 4
+# text = Гітлер отримав дотичне поранення руки.
+1	Гітлер	гітлер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	отримав	отримати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	дотичне	дотичний	ADJ	Afpnsas	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	_
+4	поранення	поранення	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
+5	руки	рука	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -6179,7 +6457,7 @@
 # text = Друга світова війна
 1	Друга	другий	ADJ	Mlofsn	Case=Nom|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
 2	світова	світовий	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
-3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -6189,7 +6467,7 @@
 # sent_id = 1
 # text = Ескалація конфлікту
 1	Ескалація	ескалація	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	конфлікту	конфлікт	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	конфлікту	конфлікт	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -6531,6 +6809,57 @@
 14	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	13	nmod	_	SpaceAfter=No
 15	.	.	PUNCT	U	_	11	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Залишалися лише острівна Британія на Північному Заході та СРСР на Сході.
+1	Залишалися	залишатися	VERB	Vmpis-p	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
+2	лише	лише	PART	Q	_	4	discourse	_	_
+3	острівна	острівний	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	4	amod	_	_
+4	Британія	Британія	PROPN	Npfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+5	на	на	ADP	Spsl	Case=Loc	7	case	_	_
+6	Північному	північний	ADJ	Afpmslf	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
+7	Заході	захід	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	1	obl	_	_
+8	та	та	CCONJ	Ccs	_	9	cc	_	_
+9	СРСР	СРСР	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	7	conj	_	_
+10	на	на	ADP	Spsl	Case=Loc	11	case	_	_
+11	Сході	схід	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	1	punct	_	_
+
+# sent_id = 3
+# text = Проти першої Гітлер планував розпочати морську операцію з вторгненням, яка отримала назву «Морський лев».
+1	Проти	проти	ADP	Spsg	Case=Gen	2	case	_	_
+2	першої	перший	ADJ	Mlofsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	5	obl	_	_
+3	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	4	nsubj	_	_
+4	планував	планувати	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+5	розпочати	розпочати	VERB	Vmen	Aspect=Perf|VerbForm=Inf	4	xcomp	_	_
+6	морську	морський	ADJ	Ao-fsas	Case=Acc|Gender=Fem|Number=Sing	7	amod	_	_
+7	операцію	операція	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
+8	з	з	ADP	Spsi	Case=Ins	9	case	_	_
+9	вторгненням	вторгнення	NOUN	Ncnsin	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	7	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	U	_	12	punct	_	_
+11	яка	який	DET	Pr--f-sna	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	12	nsubj	_	_
+12	отримала	отримати	VERB	Vmeis-sf	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
+13	назву	назва	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	12	obj	_	_
+14	«	«	PUNCT	U	PunctType=Quot	16	punct	_	SpaceAfter=No
+15	Морський	морський	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	16	amod	_	_
+16	лев	лев	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	13	flat:title	_	SpaceAfter=No
+17	»	»	PUNCT	U	PunctType=Quot	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	U	_	4	punct	_	_
+
+# sent_id = 4
+# text = Але 9 січня 1941 року фюрер віддав наказ скасувати цей план.
+1	Але	але	CCONJ	Ccs	_	7	cc	_	_
+2	9	9	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	7	obl	_	_
+3	січня	січень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+4	1941	1941	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	5	amod	_	_
+5	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
+6	фюрер	фюрер	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+7	віддав	віддати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+8	наказ	наказ	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	_
+9	скасувати	скасувати	VERB	Vmen	Aspect=Perf|VerbForm=Inf	8	acl	_	_
+10	цей	цей	DET	Pd--mnsaa	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
+11	план	план	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -6540,7 +6869,7 @@
 # text = Вторгнення в СРСР
 1	Вторгнення	вторгнення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	в	в	ADP	Spsl	Case=Loc	3	case	_	_
-3	СРСР	СРСР	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Uninflect=Yes	1	nmod	_	SpacesAfter=\n
+3	СРСР	СРСР	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Uninflect=Yes	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -6825,7 +7154,7 @@
 2	планів	план	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	_
 3	про	про	ADP	Spsa	Case=Acc	5	case	_	_
 4	світове	світовий	ADJ	Ao-nsas	Case=Acc|Gender=Neut|Number=Sing	5	amod	_	_
-5	панування	панування	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	SpacesAfter=\n
+5	панування	панування	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -7015,7 +7344,7 @@
 # text = Останні дні Гітлера
 1	Останні	останній	ADJ	Afp-pns	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	дні	день	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	nmod	_	SpacesAfter=\n
+3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -7602,7 +7931,7 @@
 2	смерть	смерть	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	nmod	_	_
 4	в	в	ADP	Spsl	Case=Loc	5	case	_	_
-5	Аргентині	Аргентина	PROPN	Npfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	SpacesAfter=\n
+5	Аргентині	Аргентина	PROPN	Npfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -7802,7 +8131,7 @@
 1	Воєнні	воєнний	ADJ	Ao--pns	Case=Nom|Number=Plur	2	amod	_	_
 2	злочини	злочин	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 3	та	та	CCONJ	Ccs	_	4	cc	_	_
-4	Голокост	голокост	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	conj	_	SpacesAfter=\n
+4	Голокост	голокост	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8029,7 +8358,7 @@
 # sent_id = 1
 # text = Особисте життя
 1	Особисте	особистий	ADJ	Afpnsns	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	життя	життя	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+2	життя	життя	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8116,7 +8445,7 @@
 # text = Переконання і звички
 1	Переконання	переконання	NOUN	Ncnpnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
 2	і	і	CCONJ	Ccs	_	3	cc	_	_
-3	звички	звичка	NOUN	Ncfpnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpacesAfter=\n
+3	звички	звичка	NOUN	Ncfpnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8383,7 +8712,7 @@
 # text = Нагороди Адольфа Гітлера
 1	Нагороди	нагород	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	Адольфа	Адольф	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	1	nmod	_	_
-3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	flat:name	_	SpacesAfter=\n
+3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8394,7 +8723,7 @@
 # text = Перша світова війна
 1	Перша	перший	ADJ	Mlofsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
 2	світова	світовий	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
-3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8404,7 +8733,7 @@
 # sent_id = 1
 # text = Міжвоєнний період
 1	Міжвоєнний	міжвоєнний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	період	період	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	період	період	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8415,7 +8744,7 @@
 # text = Друга світова війна
 1	Друга	другий	ADJ	Mlofsn	Case=Nom|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
 2	світова	світовий	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
-3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	війна	війна	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8427,7 +8756,7 @@
 1	Адольф	Адольф	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	4	nsubj	_	_
 2	Гітлер	Гітлер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
 3	в	в	ADP	Spsl	Case=Loc	4	case	_	_
-4	нумізматиці	нумізматиця	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+4	нумізматиці	нумізматиця	NOUN	Ncfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8609,7 +8938,7 @@
 2	Адольфа	Адольф	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	1	nmod	_	_
 3	Гітлера	Гітлер	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Sur|Number=Sing	2	flat:name	_	_
 4	у	у	ADP	Spsl	Case=Loc	5	case	_	_
-5	кінофільмах	кінофільм	NOUN	Ncmpln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	1	nmod	_	SpacesAfter=\n
+5	кінофільмах	кінофільм	NOUN	Ncmpln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8659,7 +8988,7 @@
 # sent_id = 1
 # text = Цікаві факти
 1	Цікаві	цікавий	ADJ	Afp-pns	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	факти	факт	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	факти	факт	NOUN	Ncmpnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8668,7 +8997,7 @@
 # newpar
 # sent_id = 1
 # text = Примітки
-1	Примітки	примітка	NOUN	Ncfpnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Примітки	примітка	NOUN	Ncfpnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8677,7 +9006,7 @@
 # newpar
 # sent_id = 1
 # text = Джерела
-1	Джерела	джерело	NOUN	Ncnpnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+1	Джерела	джерело	NOUN	Ncnpnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8686,7 +9015,7 @@
 # newpar
 # sent_id = 1
 # text = Література
-1	Література	література	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Література	література	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -8695,174 +9024,5 @@
 # newpar
 # sent_id = 1
 # text = Посилання
-1	Посилання	посилання	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Фрідріх Еберт •
-1	Фрідріх	Фрідріх	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Еберт	Еберт	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	1	flat:name	_	_
-3	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Пауль фон Гінденбург •
-1	Пауль	Пауль	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	фон	фон	PART	Q	PronType=Prs	1	flat:name	_	_
-3	Гінденбург	Гінденбург	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-4	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Теодор Гойс •
-1	Теодор	Теодор	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Гойс	Гойс	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Йоханнес Дікман (в. о.) •
-1	Йоханнес	Йоханнес	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Дікман	Дікман	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	(	(	PUNCT	U	_	6	punct	_	SpaceAfter=No
-4	в	в.	ADJ	Y	Abbr=Yes|Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	6	amod	_	SpaceAfter=No
-5	.	.	PUNCT	U	_	4	punct	_	_
-6	о	о.	NOUN	Y	Abbr=Yes|Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing|Uninflect=Yes	1	parataxis	_	SpaceAfter=No
-7	.	.	PUNCT	U	_	6	punct	_	SpaceAfter=No
-8	)	)	PUNCT	U	_	6	punct	_	SpacesAfter=\s\s
-9	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ріхард фон Вайцзеккер •
-1	Ріхард	Ріхард	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	фон	фон	PART	Q	PronType=Prs	1	discourse	_	_
-3	Вайцзеккер	Вайцзеккер	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-4	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Мартін Борман (заочно) •
-1	Мартін	Мартін	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Борман	Борман	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	(	(	PUNCT	U	_	4	punct	_	SpaceAfter=No
-4	заочно	заочно	ADV	R	_	1	parataxis	_	SpaceAfter=No
-5	)	)	PUNCT	U	_	4	punct	_	_
-6	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Рудольф Гесс •
-1	Рудольф	Рудольф	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Гесс	Гесс	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бальдур фон Ширах •
-1	Бальдур	Бальдур	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	фон	фон	PART	Q	PronType=Prs	3	discourse	_	_
-3	Ширах	Ширах	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-4	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Константін фон Нейрат
-1	Константін	Константін	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	фон	фон	PART	Q	PronType=Prs	3	discourse	_	_
-3	Нейрат	Нейрат	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Карл Деніц
-1	Карл	Карл	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Деніц	Деніц	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Франц фон Папен •
-1	Франц	Франц	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	фон	фон	PROPN	Npmsny	PronType=Prs	1	flat:name	_	_
-3	Папен	Папен	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-4	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Густав Крупп •
-1	Густав	густати	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Крупп	Крупп	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Мартін Борман (пропав безвісти) •
-1	Мартін	Мартін	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	0	root	_	_
-2	Борман	Борман	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	_	_
-3	(	(	PUNCT	U	_	4	punct	_	SpaceAfter=No
-4	пропав	пропасти	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	1	parataxis	_	_
-5	безвісти	безвісти	NOUN	R	_	4	obj	_	SpaceAfter=No
-6	)	)	PUNCT	U	_	4	punct	_	_
-7	•	•	PUNCT	U	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = ukrainian-iu-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навігаційне меню
-1	Навігаційне	навігаційний	ADJ	Ao-nsns	Case=Nom|Gender=Neut|Number=Sing	2	amod	_	_
-2	меню	меню	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+1	Посилання	посилання	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 

@@ -1,5 +1,3 @@
-# http://en.wikipedia.org/wiki/Russia
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Russia - Wikipedia
 1	Russia	Russia	PROPN	NNP	Number=Sing	0	root	_	_
 2	-	-	PUNCT	:	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	1	appos	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17,8 +15,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Russia
-1	Russia	Russia	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+# text = Coordinates: 66°N 94°E﻿ / ﻿66°N 94°E﻿ / 66; 94
+1	Coordinates	coordinate	NOUN	NNS	Number=Plur	0	root	_	SpacesBefore=\n|SpaceAfter=No
+2	:	:	PUNCT	:	_	1	punct	_	_
+3	66°N	66°n	NUM	CD	NumType=Card	4	appos	_	_
+4	94°E﻿	94°e﻿	NOUN	NN	Number=Sing	1	appos	_	_
+5	/	/	PUNCT	,	_	6	punct	_	_
+6	﻿66°N	﻿66°n	NOUN	NN	Number=Sing	4	appos	_	_
+7	94°E﻿	94°e﻿	NOUN	NN	Number=Sing	4	appos	_	_
+8	/	/	PUNCT	,	_	7	punct	_	_
+9	66	66	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
+10	;	;	PUNCT	,	_	1	punct	_	_
+11	94	94	NUM	CD	NumType=Card	4	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -33,35 +41,32 @@
 4	:	:	PUNCT	:	_	1	punct	_	_
 
 # sent_id = 2
-# text = Россия, tr. Rossiya, pronounced [rɐˈsʲijə]), or the Russian Federation, is a transcontinental country spanning Eastern Europe and Northern Asia.
-1	Россия	россия	PROPN	NNP	Number=Sing	21	nsubj	_	SpaceAfter=No
+# text = Россия, tr. Rossiya, pronounced ), or the Russian Federation, is a transcontinental country spanning Eastern Europe and Northern Asia.
+1	Россия	россия	PROPN	NNP	Number=Sing	18	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	tr	tr	X	NN	_	5	compound	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	1	punct	_	_
+4	.	.	PUNCT	.	_	5	punct	_	_
 5	Rossiya	Rossiya	PROPN	NNP	Number=Sing	1	appos	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
-7	pronounced	pronounce	VERB	VBN	Tense=Past|VerbForm=Part	5	acl	_	SpacesAfter= 
-8	[	[	PUNCT	-LRB-	_	9	punct	_	SpaceAfter=No
-9	rɐˈsʲijə	rɐˈsʲijə	PROPN	NNP	Number=Sing	7	xcomp	_	SpaceAfter=No
-10	]	]	PUNCT	-RRB-	_	9	punct	_	SpaceAfter=No
-11	)	)	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	16	punct	_	_
-13	or	or	CCONJ	CC	_	16	cc	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
-15	Russian	Russian	PROPN	NNP	Number=Sing	16	compound	_	_
-16	Federation	Federation	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	21	punct	_	_
-18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
-19	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	_
-20	transcontinental	transcontinental	ADJ	JJ	Degree=Pos	21	amod	_	_
-21	country	country	NOUN	NN	Number=Sing	0	root	_	_
-22	spanning	span	VERB	VBG	VerbForm=Ger	21	acl	_	_
-23	Eastern	Eastern	PROPN	NNP	Number=Sing	24	amod	_	_
-24	Europe	Europe	PROPN	NNP	Number=Sing	22	obj	_	_
-25	and	and	CCONJ	CC	_	27	cc	_	_
-26	Northern	northern	ADJ	JJ	Degree=Pos	27	amod	_	_
-27	Asia	Asia	PROPN	NNP	Number=Sing	24	conj	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	21	punct	_	_
+7	pronounced	pronounce	VERB	VBN	Tense=Past|VerbForm=Part	1	acl	_	SpacesAfter= 
+8	)	)	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	or	or	CCONJ	CC	_	13	cc	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+12	Russian	Russian	PROPN	NNP	Number=Sing	13	compound	_	_
+13	Federation	Federation	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
+16	a	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	_
+17	transcontinental	transcontinental	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	country	country	NOUN	NN	Number=Sing	0	root	_	_
+19	spanning	span	VERB	VBG	VerbForm=Ger	18	acl	_	_
+20	Eastern	Eastern	PROPN	NNP	Number=Sing	21	amod	_	_
+21	Europe	Europe	PROPN	NNP	Number=Sing	19	obj	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	Northern	northern	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	Asia	Asia	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = 3
 # text = It is the largest country in the world, covering over 17,125,191 square kilometres (6,612,073 sq mi), and encompassing one-eighth of Earth's inhabitable landmass.
@@ -98,59 +103,57 @@
 31	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 4
-# text = Russia extends across eleven time zones, and borders sixteen sovereign nations, the most of any country in the world.
+# text = Russia extends across eleven time zones and borders sixteen sovereign nations, the most of any country in the world.
 1	Russia	Russia	PROPN	NNP	Number=Sing	2	nsubj	_	_
 2	extends	extend	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	across	across	ADP	IN	_	6	case	_	_
 4	eleven	eleven	NUM	CD	NumType=Card	6	nummod	_	_
 5	time	time	NOUN	NN	Number=Sing	6	compound	_	_
-6	zones	zone	NOUN	NNS	Number=Plur	2	obl	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	9	punct	_	_
-8	and	and	CCONJ	CC	_	9	cc	_	_
-9	borders	border	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-10	sixteen	sixteen	NUM	CD	NumType=Card	12	nummod	_	_
-11	sovereign	sovereign	ADJ	JJ	Degree=Pos	12	amod	_	_
-12	nations	nation	NOUN	NNS	Number=Plur	9	obj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
-15	most	most	ADJ	JJS	Degree=Sup	12	appos	_	_
-16	of	of	ADP	IN	_	18	case	_	_
-17	any	any	DET	DT	_	18	det	_	_
-18	country	country	NOUN	NN	Number=Sing	15	obl	_	_
-19	in	in	ADP	IN	_	21	case	_	_
-20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
-21	world	world	NOUN	NN	Number=Sing	18	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
+6	zones	zone	NOUN	NNS	Number=Plur	2	obl	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	borders	border	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+9	sixteen	sixteen	NUM	CD	NumType=Card	11	nummod	_	_
+10	sovereign	sovereign	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	nations	nation	NOUN	NNS	Number=Plur	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	most	most	ADJ	JJS	Degree=Sup	11	appos	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	any	any	DET	DT	_	17	det	_	_
+17	country	country	NOUN	NN	Number=Sing	14	obl	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	world	world	NOUN	NN	Number=Sing	17	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 5
-# text = It is the ninth-most populous country, and the most populous country in Europe, with a population of 145.5 million.
+# text = It is the ninth-most populous country and the most populous country in Europe, with a population of 145.5 million.
 1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 3	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-4	ninth	ninth	ADJ	JJ	Degree=Pos|NumType=Ord	7	advmod	_	SpaceAfter=No
+4	ninth	ninth	ADV	RB	Degree=Pos|NumType=Ord	7	advmod	_	SpaceAfter=No
 5	-	-	PUNCT	HYPH	_	7	punct	_	SpaceAfter=No
 6	most	most	ADV	RBS	_	7	advmod	_	_
 7	populous	populous	ADJ	JJ	Degree=Pos	8	amod	_	_
-8	country	country	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	14	punct	_	_
-10	and	and	CCONJ	CC	_	14	cc	_	_
-11	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-12	most	most	ADV	RBS	_	13	advmod	_	_
-13	populous	populous	ADJ	JJ	Degree=Pos	14	amod	_	_
-14	country	country	NOUN	NN	Number=Sing	8	conj	_	_
-15	in	in	ADP	IN	_	16	case	_	_
-16	Europe	Europe	PROPN	NNP	Number=Sing	14	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	14	punct	_	_
-18	with	with	ADP	IN	_	20	case	_	_
-19	a	a	DET	DT	Definite=Ind|PronType=Art	20	det	_	_
-20	population	population	NOUN	NN	Number=Sing	8	nmod	_	_
-21	of	of	ADP	IN	_	23	case	_	_
-22	145.5	145.5	NUM	CD	NumType=Card	23	compound	_	_
-23	million	million	NUM	CD	NumType=Card	20	nmod	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	8	punct	_	_
+8	country	country	NOUN	NN	Number=Sing	0	root	_	_
+9	and	and	CCONJ	CC	_	13	cc	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+11	most	most	ADV	RBS	_	12	advmod	_	_
+12	populous	populous	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	country	country	NOUN	NN	Number=Sing	8	conj	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	Europe	Europe	PROPN	NNP	Number=Sing	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	8	punct	_	_
+17	with	with	ADP	IN	_	19	case	_	_
+18	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	_
+19	population	population	NOUN	NN	Number=Sing	8	nmod	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	145.5	145.5	NUM	CD	NumType=Card	22	compound	_	_
+22	million	million	NUM	CD	NumType=Card	19	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 6
-# text = Moscow, the capital, is the largest city entirely within Europe; while Saint Petersburg is the country's second-largest city and cultural centre.
+# text = Moscow, the capital, is the largest city entirely within Europe, while Saint Petersburg is the country's second-largest city and its cultural centre.
 1	Moscow	Moscow	PROPN	NNP	Number=Sing	9	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
@@ -163,7 +166,7 @@
 10	entirely	entirely	ADV	RB	_	9	advmod	_	_
 11	within	within	ADP	IN	_	12	case	_	_
 12	Europe	Europe	PROPN	NNP	Number=Sing	9	nmod	_	SpaceAfter=No
-13	;	;	PUNCT	,	_	9	punct	_	_
+13	,	,	PUNCT	,	_	9	punct	_	_
 14	while	while	SCONJ	IN	_	24	mark	_	_
 15	Saint	Saint	PROPN	NNP	Number=Sing	24	nsubj	_	_
 16	Petersburg	Petersburg	PROPN	NNP	Number=Sing	15	flat	_	_
@@ -175,10 +178,11 @@
 22	-	-	PUNCT	HYPH	_	23	punct	_	SpaceAfter=No
 23	largest	largest	ADJ	JJS	Degree=Sup	24	amod	_	_
 24	city	city	NOUN	NN	Number=Sing	9	advcl	_	_
-25	and	and	CCONJ	CC	_	27	cc	_	_
-26	cultural	cultural	ADJ	JJ	Degree=Pos	27	amod	_	_
-27	centre	centre	NOUN	NN	Number=Sing	24	conj	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+25	and	and	CCONJ	CC	_	28	cc	_	_
+26	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	nmod:poss	_	_
+27	cultural	cultural	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	centre	centre	NOUN	NN	Number=Sing	24	conj	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -296,7 +300,7 @@
 31	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 6
-# text = Following the Russian Revolution, the Russian SFSR became the largest and principal constituent of the Soviet Union, the world's first constitutionally socialist state.
+# text = Following the Russian Revolution, the Russian SFSR became the largest and the principal constituent of the Soviet Union, the world's first constitutionally socialist state.
 1	Following	follow	VERB	VBG	VerbForm=Ger	4	case	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
 3	Russian	Russian	PROPN	NNP	Number=Sing	4	compound	_	_
@@ -306,27 +310,28 @@
 7	Russian	Russian	PROPN	NNP	Number=Sing	8	compound	_	_
 8	SFSR	SFSR	PROPN	NNP	Number=Sing	9	nsubj	_	_
 9	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-11	largest	largest	ADJ	JJS	Degree=Sup	14	amod	_	_
-12	and	and	CCONJ	CC	_	13	cc	_	_
-13	principal	principal	ADJ	JJ	Degree=Pos	11	conj	_	_
-14	constituent	constituent	NOUN	NN	Number=Sing	9	xcomp	_	_
-15	of	of	ADP	IN	_	18	case	_	_
-16	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
-17	Soviet	Soviet	PROPN	NNP	Number=Sing	18	compound	_	_
-18	Union	Union	PROPN	NNP	Number=Sing	14	nmod	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	18	punct	_	_
-20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
-21	world	world	NOUN	NN	Number=Sing	26	nmod:poss	_	SpaceAfter=No
-22	's	's	PART	POS	_	21	case	_	_
-23	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	26	amod	_	_
-24	constitutionally	constitutionally	ADV	RB	_	25	advmod	_	_
-25	socialist	socialist	ADJ	JJ	Degree=Pos	26	amod	_	_
-26	state	state	NOUN	NN	Number=Sing	18	appos	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	9	punct	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+11	largest	largest	ADJ	JJS	Degree=Sup	15	amod	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+14	principal	principal	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	constituent	constituent	NOUN	NN	Number=Sing	9	xcomp	_	_
+16	of	of	ADP	IN	_	19	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+18	Soviet	Soviet	PROPN	NNP	Number=Sing	19	compound	_	_
+19	Union	Union	PROPN	NNP	Number=Sing	15	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	world	world	NOUN	NN	Number=Sing	27	nmod:poss	_	SpaceAfter=No
+23	's	's	PART	POS	_	22	case	_	_
+24	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	27	amod	_	_
+25	constitutionally	constitutionally	ADV	RB	_	26	advmod	_	_
+26	socialist	socialist	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	state	state	NOUN	NN	Number=Sing	19	appos	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 7
-# text = The Soviet Union played a decisive role in the Allied victory in World War II, and emerged as a superpower and rival to the United States during the Cold War.
+# text = The Soviet Union played a decisive role in the Allied victory in World War II and emerged as a superpower and rival to the United States during the Cold War.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	Soviet	Soviet	PROPN	NNP	Number=Sing	3	compound	_	_
 3	Union	Union	PROPN	NNP	Number=Sing	4	nsubj	_	_
@@ -341,24 +346,23 @@
 12	in	in	ADP	IN	_	14	case	_	_
 13	World	World	PROPN	NNP	Number=Sing	14	compound	_	_
 14	War	War	PROPN	NNP	Number=Sing	11	nmod	_	_
-15	II	II	NUM	CD	NumType=Card	14	nummod	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	18	punct	_	_
-17	and	and	CCONJ	CC	_	18	cc	_	_
-18	emerged	emerge	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
-19	as	as	ADP	IN	_	21	case	_	_
-20	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	_
-21	superpower	superpower	NOUN	NN	Number=Sing	18	obl	_	_
-22	and	and	CCONJ	CC	_	23	cc	_	_
-23	rival	rival	NOUN	NN	Number=Sing	21	conj	_	_
-24	to	to	ADP	IN	_	27	case	_	_
-25	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
-26	United	United	PROPN	NNP	Number=Sing	27	compound	_	_
-27	States	States	PROPN	NNP	Number=Sing	23	nmod	_	_
-28	during	during	ADP	IN	_	31	case	_	_
-29	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
-30	Cold	Cold	PROPN	NNP	Number=Sing	31	compound	_	_
-31	War	War	PROPN	NNP	Number=Sing	18	obl	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	4	punct	_	_
+15	II	II	NUM	CD	NumType=Card	14	nummod	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	emerged	emerge	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+18	as	as	ADP	IN	_	20	case	_	_
+19	a	a	DET	DT	Definite=Ind|PronType=Art	20	det	_	_
+20	superpower	superpower	NOUN	NN	Number=Sing	17	obl	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	rival	rival	NOUN	NN	Number=Sing	20	conj	_	_
+23	to	to	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+25	United	United	PROPN	NNP	Number=Sing	26	compound	_	_
+26	States	States	PROPN	NNP	Number=Sing	22	nmod	_	_
+27	during	during	ADP	IN	_	30	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+29	Cold	Cold	PROPN	NNP	Number=Sing	30	compound	_	_
+30	War	War	PROPN	NNP	Number=Sing	17	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 8
 # text = The Soviet era saw some of the most significant technological achievements of the 20th century, including the world's first human-made satellite and the launching of the first human into space.
@@ -459,7 +463,7 @@
 28	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = 3
-# text = Vladimir Putin has dominated Russia's political system since 2000; during the period Russia has experienced democratic backsliding, and has shifted into an authoritarian state.
+# text = Vladimir Putin has dominated Russia's political system since 2000; during that period, Russia has experienced democratic backsliding and has shifted into an authoritarian state.
 1	Vladimir	Vladimir	PROPN	NNP	Number=Sing	4	nsubj	_	_
 2	Putin	Putin	PROPN	NNP	Number=Sing	1	flat	_	_
 3	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
@@ -472,17 +476,17 @@
 10	2000	2000	NUM	CD	NumType=Card	4	obl	_	SpaceAfter=No
 11	;	;	PUNCT	,	_	4	punct	_	_
 12	during	during	ADP	IN	_	14	case	_	_
-13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-14	period	period	NOUN	NN	Number=Sing	17	obl	_	_
-15	Russia	Russia	PROPN	NNP	Number=Sing	17	nsubj	_	_
-16	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	experienced	experience	VERB	VBN	Tense=Past|VerbForm=Part	4	parataxis	_	_
-18	democratic	democratic	ADJ	JJ	Degree=Pos	19	amod	_	_
-19	backsliding	backsliding	NOUN	NN	Number=Sing	17	obj	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	23	punct	_	_
+13	that	that	DET	DT	Number=Sing|PronType=Dem	14	det	_	_
+14	period	period	NOUN	NN	Number=Sing	18	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	Russia	Russia	PROPN	NNP	Number=Sing	18	nsubj	_	_
+17	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
+18	experienced	experience	VERB	VBN	Tense=Past|VerbForm=Part	4	parataxis	_	_
+19	democratic	democratic	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	backsliding	backsliding	NOUN	NN	Number=Sing	18	obj	_	_
 21	and	and	CCONJ	CC	_	23	cc	_	_
 22	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-23	shifted	shift	VERB	VBN	Tense=Past|VerbForm=Part	17	conj	_	_
+23	shifted	shift	VERB	VBN	Tense=Past|VerbForm=Part	18	conj	_	_
 24	into	into	ADP	IN	_	27	case	_	_
 25	an	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
 26	authoritarian	authoritarian	ADJ	JJ	Degree=Pos	27	amod	_	_
@@ -507,12 +511,12 @@
 9	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 2
-# text = It is ranked 52nd in the Human Development Index, with a universal healthcare system and free university education.
+# text = It is ranked 52nd on the Human Development Index, with a universal healthcare system and free university education.
 1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
 3	ranked	rank	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
-4	52nd	52nd	ADJ	JJ	Degree=Pos	3	xcomp	_	_
-5	in	in	ADP	IN	_	9	case	_	_
+4	52nd	52nd	ADJ	JJ	Degree=Pos|NumType=Ord	3	xcomp	_	_
+5	on	on	ADP	IN	_	9	case	_	_
 6	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
 7	Human	Human	PROPN	NNP	Number=Sing	8	compound	_	_
 8	Development	Development	PROPN	NNP	Number=Sing	9	compound	_	_
@@ -557,7 +561,7 @@
 24	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 4
-# text = It is a recognized nuclear-weapons state, possessing the world's largest stockpile of nuclear weapons; with the second-most powerful military, and the fourth-highest military expenditure.
+# text = It is a recognized nuclear-weapons state, possessing the world's largest stockpile of nuclear weapons, with the second-most powerful military and the fourth-highest military expenditure.
 1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 3	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
@@ -576,23 +580,22 @@
 16	of	of	ADP	IN	_	18	case	_	_
 17	nuclear	nuclear	ADJ	JJ	Degree=Pos	18	amod	_	_
 18	weapons	weapon	NOUN	NNS	Number=Plur	15	nmod	_	SpaceAfter=No
-19	;	;	PUNCT	,	_	8	punct	_	_
+19	,	,	PUNCT	,	_	8	punct	_	_
 20	with	with	ADP	IN	_	26	case	_	_
 21	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
 22	second	second	ADJ	JJ	Degree=Pos|NumType=Ord	25	advmod	_	SpaceAfter=No
 23	-	-	PUNCT	HYPH	_	25	punct	_	SpaceAfter=No
 24	most	most	ADV	RBS	_	25	advmod	_	_
 25	powerful	powerful	ADJ	JJ	Degree=Pos	26	amod	_	_
-26	military	military	NOUN	NN	Number=Sing	8	nmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	34	punct	_	_
-28	and	and	CCONJ	CC	_	34	cc	_	_
-29	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
-30	fourth	fourth	ADJ	JJ	Degree=Pos|NumType=Ord	32	advmod	_	SpaceAfter=No
-31	-	-	PUNCT	HYPH	_	32	punct	_	SpaceAfter=No
-32	highest	highest	ADJ	JJS	Degree=Sup	34	amod	_	_
-33	military	military	ADJ	JJ	Degree=Pos	34	amod	_	_
-34	expenditure	expenditure	NOUN	NN	Number=Sing	26	conj	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	8	punct	_	_
+26	military	military	NOUN	NN	Number=Sing	8	nmod	_	_
+27	and	and	CCONJ	CC	_	33	cc	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+29	fourth	fourth	ADJ	JJ	Degree=Pos|NumType=Ord	31	advmod	_	SpaceAfter=No
+30	-	-	PUNCT	HYPH	_	31	punct	_	SpaceAfter=No
+31	highest	highest	ADJ	JJS	Degree=Sup	33	amod	_	_
+32	military	military	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	expenditure	expenditure	NOUN	NN	Number=Sing	26	conj	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 5
 # text = Russia's extensive mineral and energy resources are the world's largest, and it is among the leading producers of oil and natural gas globally.
@@ -705,7 +708,7 @@
 # newpar
 # sent_id = 1
 # text = Etymology
-1	Etymology	etymology	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Etymology	etymology	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -884,7 +887,7 @@
 40	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = 2
-# text = The current name of the country, Россия (Rossiya), comes from the Byzantine Greek designation of the Rus', Ρωσσία Rossía – spelled Ρωσία (Rosía pronounced [roˈsia]) in Modern
+# text = The current name of the country, Россия (Rossiya), comes from the Byzantine Greek designation of the Rus', Ρωσσία Rossía – spelled Ρωσία (Rosía pronounced ) in Modern Greek.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	current	current	ADJ	JJ	Degree=Pos	3	amod	_	_
 3	name	name	NOUN	NN	Number=Sing	13	nsubj	_	_
@@ -911,24 +914,18 @@
 24	Ρωσσία	ρωσσία	PROPN	NNP	Number=Sing	21	appos	_	_
 25	Rossía	Rossía	PROPN	NNP	Number=Sing	21	appos	_	SpacesAfter= 
 26	–	-	PUNCT	,	_	21	punct	_	_
-27	spelled	spell	VERB	VBN	Tense=Past|VerbForm=Part	18	acl	_	_
+27	spelled	spell	VERB	VBN	Tense=Past|VerbForm=Part	25	acl	_	_
 28	Ρωσία	ρωσία	PROPN	NNP	Number=Sing	27	xcomp	_	_
 29	(	(	PUNCT	-LRB-	_	30	punct	_	SpaceAfter=No
 30	Rosía	Rosía	PROPN	NNP	Number=Sing	28	appos	_	_
 31	pronounced	pronounce	VERB	VBN	Tense=Past|VerbForm=Part	28	acl	_	SpacesAfter= 
-32	[	[	PUNCT	-LRB-	_	33	punct	_	SpaceAfter=No
-33	roˈsia	roˈsia	PROPN	NNP	Number=Sing	31	xcomp	_	SpaceAfter=No
-34	]	]	PUNCT	-RRB-	_	33	punct	_	SpaceAfter=No
-35	)	)	PUNCT	-RRB-	_	30	punct	_	_
-36	in	in	ADP	IN	_	37	case	_	_
-37	Modern	modern	ADJ	JJ	Degree=Pos	18	nmod	_	_
+32	)	)	PUNCT	-RRB-	_	30	punct	_	_
+33	in	in	ADP	IN	_	35	case	_	_
+34	Modern	modern	ADJ	JJ	Degree=Pos	35	amod	_	_
+35	Greek	Greek	PROPN	NNP	Number=Sing	27	obl	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = 3
-# text = Greek.
-1	Greek	greek	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = 4
 # text = The standard way to refer to the citizens of Russia is "Russians" in English.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	standard	standard	ADJ	JJ	Degree=Pos	3	amod	_	_
@@ -948,7 +945,7 @@
 16	English	English	PROPN	NNP	Number=Sing	13	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 5
+# sent_id = 4
 # text = There are two words in Russian which are commonly translated into English as "Russians" – one is "русские" (russkiye), which most often refers to ethnic Russians – and the other is "россияне" (rossiyane), which refers to citizens of Russia, regardless of ethnicity.
 1	There	there	PRON	EX	_	2	expl	_	_
 2	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -1014,7 +1011,7 @@
 # newpar
 # sent_id = 1
 # text = History
-1	History	history	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	History	history	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1024,7 +1021,7 @@
 # sent_id = 1
 # text = Early history
 1	Early	early	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	history	history	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	history	history	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1590,7 +1587,7 @@
 # text = Kievan Rus'
 1	Kievan	Kievan	PROPN	NNP	Number=Sing	2	compound	_	_
 2	Rus	Rus	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
-3	'	'	PUNCT	''	_	2	punct	_	SpacesAfter=\n
+3	'	'	PUNCT	''	_	2	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -2063,7 +2060,7 @@
 1	Grand	Grand	PROPN	NNP	Number=Sing	2	compound	_	_
 2	Duchy	Duchy	PROPN	NNP	Number=Sing	0	root	_	_
 3	of	of	ADP	IN	_	4	case	_	_
-4	Moscow	Moscow	PROPN	NNP	Number=Sing	2	nmod	_	SpacesAfter=\n
+4	Moscow	Moscow	PROPN	NNP	Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -2382,7 +2379,7 @@
 # text = Tsardom of Russia
 1	Tsardom	Tsardom	PROPN	NNP	Number=Sing	0	root	_	_
 2	of	of	ADP	IN	_	3	case	_	_
-3	Russia	Russia	PROPN	NNP	Number=Sing	1	nmod	_	SpacesAfter=\n
+3	Russia	Russia	PROPN	NNP	Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -2942,7 +2939,7 @@
 # sent_id = 1
 # text = Imperial Russia
 1	Imperial	imperial	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	Russia	Russia	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+2	Russia	Russia	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3154,36 +3151,35 @@
 22	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = 2
-# text = She extended Russian political control over the Polish-Lithuanian Commonwealth and incorporated most of its territories into Russia, making it the most populous country in Europe.
+# text = She extended Russian political control over the Polish–Lithuanian Commonwealth and annexed most of its territories into Russia, making it the most populous country in Europe.
 1	She	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	extended	extend	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
 3	Russian	russian	ADJ	JJ	Degree=Pos	5	amod	_	_
 4	political	political	ADJ	JJ	Degree=Pos	5	amod	_	_
 5	control	control	NOUN	NN	Number=Sing	2	obj	_	_
-6	over	over	ADP	IN	_	11	case	_	_
-7	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
-8	Polish	Polish	PROPN	NNP	Number=Sing	10	compound	_	SpaceAfter=No
-9	-	-	PUNCT	HYPH	_	10	punct	_	SpaceAfter=No
-10	Lithuanian	Lithuanian	PROPN	NNP	Number=Sing	11	compound	_	_
-11	Commonwealth	Commonwealth	PROPN	NNP	Number=Sing	5	nmod	_	_
-12	and	and	CCONJ	CC	_	13	cc	_	_
-13	incorporated	incorporate	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_
-14	most	most	ADJ	JJS	Degree=Sup	13	obj	_	_
-15	of	of	ADP	IN	_	17	case	_	_
-16	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
-17	territories	territory	NOUN	NNS	Number=Plur	14	nmod	_	_
-18	into	into	ADP	IN	_	19	case	_	_
-19	Russia	Russia	PROPN	NNP	Number=Sing	13	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	13	punct	_	_
-21	making	make	VERB	VBG	VerbForm=Ger	13	advcl	_	_
-22	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
-23	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
-24	most	most	ADV	RBS	_	25	advmod	_	_
-25	populous	populous	ADJ	JJ	Degree=Pos	26	amod	_	_
-26	country	country	NOUN	NN	Number=Sing	21	xcomp	_	_
-27	in	in	ADP	IN	_	28	case	_	_
-28	Europe	Europe	PROPN	NNP	Number=Sing	26	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	2	punct	_	_
+6	over	over	ADP	IN	_	10	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+8	Polish–	Polish–	PROPN	NNP	Number=Sing	10	compound	_	SpaceAfter=No
+9	Lithuanian	Lithuanian	PROPN	NNP	Number=Sing	10	compound	_	_
+10	Commonwealth	Commonwealth	PROPN	NNP	Number=Sing	5	nmod	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	annexed	annex	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_
+13	most	most	ADJ	JJS	Degree=Sup	12	obj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	territories	territory	NOUN	NNS	Number=Plur	13	nmod	_	_
+17	into	into	ADP	IN	_	18	case	_	_
+18	Russia	Russia	PROPN	NNP	Number=Sing	12	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	12	punct	_	_
+20	making	make	VERB	VBG	VerbForm=Ger	12	advcl	_	_
+21	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+23	most	most	ADV	RBS	_	24	advmod	_	_
+24	populous	populous	ADJ	JJ	Degree=Pos	25	amod	_	_
+25	country	country	NOUN	NN	Number=Sing	20	xcomp	_	_
+26	in	in	ADP	IN	_	27	case	_	_
+27	Europe	Europe	PROPN	NNP	Number=Sing	25	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 3
 # text = In the south, after the successful Russo-Turkish Wars against the Ottoman Empire, Catherine advanced Russia's boundary to the Black Sea, by dissolving the Crimean Khanate, and annexing Crimea.
@@ -3448,38 +3444,40 @@
 53	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = 3
-# text = Led by Mikhail Kutuzov and Barclay de Tolly, the Imperial Russian Army ousted Napoleon and drove throughout Europe in the War of the Sixth Coalition, ultimately entering Paris.
-1	Led	lead	VERB	VBN	Tense=Past|VerbForm=Part	14	advcl	_	_
+# text = Led by Mikhail Kutuzov and Michael Andreas Barclay de Tolly, the Imperial Russian Army ousted Napoleon and drove throughout Europe in the War of the Sixth Coalition, ultimately entering Paris.
+1	Led	lead	VERB	VBN	Tense=Past|VerbForm=Part	16	advcl	_	_
 2	by	by	ADP	IN	_	3	case	_	_
 3	Mikhail	Mikhail	PROPN	NNP	Number=Sing	1	obl	_	_
 4	Kutuzov	Kutuzov	PROPN	NNP	Number=Sing	3	flat	_	_
 5	and	and	CCONJ	CC	_	6	cc	_	_
-6	Barclay	Barclay	PROPN	NNP	Number=Sing	3	conj	_	_
-7	de	de	PROPN	NNP	Number=Sing	6	flat	_	_
-8	Tolly	Tolly	PROPN	NNP	Number=Sing	6	flat	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	14	punct	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
-11	Imperial	Imperial	PROPN	NNP	Number=Sing	13	compound	_	_
-12	Russian	Russian	PROPN	NNP	Number=Sing	13	compound	_	_
-13	Army	Army	PROPN	NNP	Number=Sing	14	nsubj	_	_
-14	ousted	oust	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-15	Napoleon	Napoleon	PROPN	NNP	Number=Sing	14	obj	_	_
-16	and	and	CCONJ	CC	_	17	cc	_	_
-17	drove	drive	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	conj	_	_
-18	throughout	throughout	ADP	IN	_	19	case	_	_
-19	Europe	Europe	PROPN	NNP	Number=Sing	17	obl	_	_
-20	in	in	ADP	IN	_	22	case	_	_
-21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
-22	War	War	PROPN	NNP	Number=Sing	17	obl	_	_
-23	of	of	ADP	IN	_	26	case	_	_
-24	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
-25	Sixth	Sixth	PROPN	NNP	Number=Sing	26	amod	_	_
-26	Coalition	Coalition	PROPN	NNP	Number=Sing	22	nmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	17	punct	_	_
-28	ultimately	ultimately	ADV	RB	_	29	advmod	_	_
-29	entering	enter	VERB	VBG	VerbForm=Ger	17	advcl	_	_
-30	Paris	Paris	PROPN	NNP	Number=Sing	29	obj	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	14	punct	_	_
+6	Michael	Michael	PROPN	NNP	Number=Sing	3	conj	_	_
+7	Andreas	Andreas	PROPN	NNP	Number=Sing	6	flat	_	_
+8	Barclay	Barclay	PROPN	NNP	Number=Sing	6	flat	_	_
+9	de	de	PROPN	NNP	Number=Sing	6	flat	_	_
+10	Tolly	Tolly	PROPN	NNP	Number=Sing	6	flat	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	16	punct	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+13	Imperial	Imperial	PROPN	NNP	Number=Sing	15	compound	_	_
+14	Russian	Russian	PROPN	NNP	Number=Sing	15	compound	_	_
+15	Army	Army	PROPN	NNP	Number=Sing	16	nsubj	_	_
+16	ousted	oust	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+17	Napoleon	Napoleon	PROPN	NNP	Number=Sing	16	obj	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	drove	drive	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	conj	_	_
+20	throughout	throughout	ADP	IN	_	21	case	_	_
+21	Europe	Europe	PROPN	NNP	Number=Sing	19	obl	_	_
+22	in	in	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	War	War	PROPN	NNP	Number=Sing	19	obl	_	_
+25	of	of	ADP	IN	_	28	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+27	Sixth	Sixth	PROPN	NNP	Number=Sing	28	amod	_	_
+28	Coalition	Coalition	PROPN	NNP	Number=Sing	24	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	19	punct	_	_
+30	ultimately	ultimately	ADV	RB	_	31	advmod	_	_
+31	entering	enter	VERB	VBG	VerbForm=Ger	19	advcl	_	_
+32	Paris	Paris	PROPN	NNP	Number=Sing	31	obj	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	16	punct	_	_
 
 # sent_id = 4
 # text = Alexander I controlled Russia's delegation at the Congress of Vienna, which defined the map of post-Napoleonic Europe.
@@ -3724,12 +3722,124 @@
 10	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 3
-# text = The reign of his son
+# text = The reign of his son Alexander III (1881–94) was less liberal but more peaceful.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
-2	reign	reign	NOUN	NN	Number=Sing	0	root	_	_
+2	reign	reign	NOUN	NN	Number=Sing	13	nsubj	_	_
 3	of	of	ADP	IN	_	5	case	_	_
 4	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	_
 5	son	son	NOUN	NN	Number=Sing	2	nmod	_	SpacesAfter=\n
+6	Alexander	Alexander	PROPN	NNP	Number=Sing	5	appos	_	SpacesAfter= 
+7	III	III	PROPN	NNP	Number=Sing	6	flat	_	_
+8	(	(	PUNCT	-LRB-	_	9	punct	_	SpaceAfter=No
+9	1881–94	1881–94	NUM	CD	NumType=Card	6	appos	_	SpaceAfter=No
+10	)	)	PUNCT	-RRB-	_	9	punct	_	_
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
+12	less	less	ADV	RBR	Degree=Cmp	13	advmod	_	_
+13	liberal	liberal	ADJ	JJ	Degree=Pos	0	root	_	_
+14	but	but	CCONJ	CC	_	16	cc	_	_
+15	more	more	ADV	RBR	_	16	advmod	_	_
+16	peaceful	peaceful	ADJ	JJ	Degree=Pos	13	conj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = 4
+# text = The last Russian emperor, Nicholas II (1894–1917), was unable to prevent the events of the Russian Revolution of 1905, triggered by the humiliating Russo-Japanese
+1	The	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+2	last	last	ADJ	JJ	Degree=Pos	4	amod	_	_
+3	Russian	russian	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	emperor	emperor	NOUN	NN	Number=Sing	13	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Nicholas	Nicholas	PROPN	NNP	Number=Sing	4	appos	_	SpacesAfter= 
+7	II	II	PROPN	NNP	Number=Sing	6	flat	_	_
+8	(	(	PUNCT	-LRB-	_	9	punct	_	SpaceAfter=No
+9	1894–1917	1894–1917	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
+10	)	)	PUNCT	-RRB-	_	9	punct	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
+13	unable	unable	ADJ	JJ	Degree=Pos	0	root	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	prevent	prevent	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	events	event	NOUN	NNS	Number=Plur	15	obj	_	_
+18	of	of	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	Russian	Russian	PROPN	NNP	Number=Sing	21	compound	_	_
+21	Revolution	Revolution	PROPN	NNP	Number=Sing	17	nmod	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	1905	1905	NUM	CD	NumType=Card	21	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	21	punct	_	_
+25	triggered	trigger	VERB	VBN	Tense=Past|VerbForm=Part	21	acl	_	_
+26	by	by	ADP	IN	_	31	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+28	humiliating	humiliate	ADJ	JJ	Degree=Pos	31	amod	_	_
+29	Russo	russo	PROPN	NNP	Number=Sing	31	compound	_	SpaceAfter=No
+30	-	-	PUNCT	HYPH	_	31	punct	_	SpaceAfter=No
+31	Japanese	japanese	ADJ	JJ	Degree=Pos	25	obl	_	_
+
+# sent_id = 5
+# text = War and the demonstration incident known as Bloody Sunday.
+1	War	war	NOUN	NN	Number=Sing	0	root	_	_
+2	and	and	CCONJ	CC	_	5	cc	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+4	demonstration	demonstration	NOUN	NN	Number=Sing	5	compound	_	_
+5	incident	incident	NOUN	NN	Number=Sing	1	conj	_	_
+6	known	know	VERB	VBN	Tense=Past|VerbForm=Part	5	acl	_	_
+7	as	as	ADP	IN	_	9	case	_	_
+8	Bloody	Bloody	PROPN	NNP	Number=Sing	9	compound	_	_
+9	Sunday	Sunday	PROPN	NNP	Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 6
+# text = The uprising was put down, but the government was forced to concede major reforms (Russian Constitution of 1906), including granting the freedoms of speech and assembly, the legalisation of political parties, and the creation of an elected legislative body, the State Duma.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	uprising	uprising	NOUN	NN	Number=Sing	4	nsubj:pass	_	_
+3	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	put	put	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	down	down	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	but	but	CCONJ	CC	_	11	cc	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	government	government	NOUN	NN	Number=Sing	11	nsubj:pass	_	_
+10	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
+11	forced	force	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+12	to	to	PART	TO	_	13	mark	_	_
+13	concede	concede	VERB	VB	VerbForm=Inf	11	xcomp	_	_
+14	major	major	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	reforms	reform	NOUN	NNS	Number=Plur	13	obj	_	_
+16	(	(	PUNCT	-LRB-	_	18	punct	_	SpaceAfter=No
+17	Russian	Russian	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	Constitution	Constitution	PROPN	NNP	Number=Sing	15	appos	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	1906	1906	NUM	CD	NumType=Card	18	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	-RRB-	_	18	punct	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	15	punct	_	_
+23	including	include	VERB	VBG	VerbForm=Ger	24	mark	_	_
+24	granting	grant	VERB	VBG	VerbForm=Ger	15	acl	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	freedoms	freedom	NOUN	NNS	Number=Plur	24	obj	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	speech	speech	NOUN	NN	Number=Sing	26	nmod	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	assembly	assembly	NOUN	NN	Number=Sing	28	conj	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	33	punct	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	legalisation	legalisation	NOUN	NN	Number=Sing	26	conj	_	_
+34	of	of	ADP	IN	_	36	case	_	_
+35	political	political	ADJ	JJ	Degree=Pos	36	amod	_	_
+36	parties	party	NOUN	NNS	Number=Plur	33	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	,	_	40	punct	_	_
+38	and	and	CCONJ	CC	_	40	cc	_	_
+39	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
+40	creation	creation	NOUN	NN	Number=Sing	26	conj	_	_
+41	of	of	ADP	IN	_	45	case	_	_
+42	an	a	DET	DT	Definite=Ind|PronType=Art	45	det	_	_
+43	elected	elect	VERB	VBN	Tense=Past|VerbForm=Part	45	amod	_	_
+44	legislative	legislative	ADJ	JJ	Degree=Pos	45	amod	_	_
+45	body	body	NOUN	NN	Number=Sing	40	nmod	_	SpaceAfter=No
+46	,	,	PUNCT	,	_	45	punct	_	_
+47	the	the	DET	DT	Definite=Def|PronType=Art	49	det	_	_
+48	State	State	PROPN	NNP	Number=Sing	49	compound	_	_
+49	Duma	Duma	PROPN	NNP	Number=Sing	45	appos	_	SpaceAfter=No
+50	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3741,7 +3851,7 @@
 1	Revolution	revolution	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	4	cc	_	_
 3	civil	civil	ADJ	JJ	Degree=Pos	4	amod	_	_
-4	war	war	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+4	war	war	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4284,7 +4394,7 @@
 # sent_id = 1
 # text = Soviet Union
 1	Soviet	Soviet	PROPN	NNP	Number=Sing	2	compound	_	_
-2	Union	Union	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+2	Union	Union	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4642,7 +4752,7 @@
 # text = World War II
 1	World	World	PROPN	NNP	Number=Sing	2	compound	_	_
 2	War	War	PROPN	NNP	Number=Sing	0	root	_	_
-3	II	ii	NUM	CD	NumType=Card	2	nummod	_	SpacesAfter=\n
+3	II	ii	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4685,7 +4795,7 @@
 32	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 2
-# text = The Soviet Union later invaded Finland, and occupied and annexed the Baltic states, as well as parts of Romania.: 91–95
+# text = The Soviet Union later invaded Finland, and occupied and annexed the Baltic states, as well as parts of Romania.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	Soviet	Soviet	PROPN	NNP	Number=Sing	3	compound	_	_
 3	Union	Union	PROPN	NNP	Number=Sing	5	nsubj	_	_
@@ -4707,11 +4817,10 @@
 19	parts	part	NOUN	NNS	Number=Plur	14	conj	_	_
 20	of	of	ADP	IN	_	21	case	_	_
 21	Romania	Romania	PROPN	NNP	Number=Sing	19	nmod	_	SpaceAfter=No
-22	.:	.:	PUNCT	:	_	5	punct	_	SpacesAfter= 
-23	91–95	91–95	NUM	CD	NumType=Card	5	parataxis	_	SpacesAfter= \s
+22	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 3
-# text = On 22 June 1941, Germany invaded the Soviet Union, opening the Eastern Front, the largest theater of World War II.:
+# text = On 22 June 1941, Germany invaded the Soviet Union, opening the Eastern Front, the largest theater of World War II.
 1	On	on	ADP	IN	_	3	case	_	_
 2	22	22	NUM	CD	NumType=Card	3	nummod	_	_
 3	June	June	PROPN	NNP	Number=Sing	7	obl	_	_
@@ -4734,11 +4843,8 @@
 20	of	of	ADP	IN	_	22	case	_	_
 21	World	World	PROPN	NNP	Number=Sing	22	compound	_	_
 22	War	War	PROPN	NNP	Number=Sing	19	nmod	_	SpacesAfter= 
-23	II.:	II.:	PROPN	NNP	Number=Sing	19	nmod	_	SpacesAfter= 
-
-# sent_id = 4
-# text = 7
-1	7	7	X	LS	_	0	root	_	SpacesAfter= \n
+23	II	II	NUM	CD	NumType=Card	22	nummod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4746,7 +4852,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Eventually, some 5 million Red Army troops were captured by the Nazis;: 272 the latter deliberately starved to death or otherwise killed 3.3 million Soviet POWs, and a vast number of civilians, as the "Hunger Plan" sought to fulfill Generalplan Ost.: 175–186 Although the Wehrmacht had considerable early success, their attack was halted in the Battle of Moscow.
+# text = Eventually, some 5 million Red Army troops were captured by the Nazis; the latter deliberately starved to death or otherwise killed 3.3 million Soviet POWs, and a vast number of civilians, as the "Hunger Plan" sought to fulfill Generalplan Ost.
 1	Eventually	eventually	ADV	RB	_	10	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	10	punct	_	_
 3	some	some	DET	DT	_	8	det	_	_
@@ -4760,64 +4866,63 @@
 11	by	by	ADP	IN	_	13	case	_	_
 12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
 13	Nazis	Nazis	PROPN	NNPS	Number=Plur	10	obl	_	SpaceAfter=No
-14	;	;	PUNCT	,	_	10	punct	_	SpaceAfter=No
-15	:	:	PUNCT	:	_	10	punct	_	SpacesAfter= 
-16	272	272	NUM	CD	NumType=Card	10	nummod	_	SpacesAfter= \s
-17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
-18	latter	latter	ADJ	JJ	Degree=Pos	20	nsubj	_	_
-19	deliberately	deliberately	ADV	RB	_	20	advmod	_	_
-20	starved	starve	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	parataxis	_	_
-21	to	to	ADP	IN	_	22	case	_	_
-22	death	death	NOUN	NN	Number=Sing	20	obl	_	_
-23	or	or	CCONJ	CC	_	25	cc	_	_
-24	otherwise	otherwise	ADV	RB	_	25	advmod	_	_
-25	killed	kill	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	conj	_	_
-26	3.3	3.3	NUM	CD	NumType=Card	27	compound	_	SpacesAfter= 
-27	million	million	NUM	CD	NumType=Card	29	nummod	_	_
-28	Soviet	soviet	ADJ	JJ	Degree=Pos	29	amod	_	_
-29	POWs	pow	NOUN	NNS	Number=Plur	25	obj	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	34	punct	_	_
-31	and	and	CCONJ	CC	_	34	cc	_	_
-32	a	a	DET	DT	Definite=Ind|PronType=Art	34	det	_	_
-33	vast	vast	ADJ	JJ	Degree=Pos	34	amod	_	_
-34	number	number	NOUN	NN	Number=Sing	29	conj	_	_
-35	of	of	ADP	IN	_	36	case	_	_
-36	civilians	civilian	NOUN	NNS	Number=Plur	34	nmod	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	25	punct	_	_
-38	as	as	SCONJ	IN	_	44	mark	_	_
-39	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
-40	"	"	PUNCT	``	_	42	punct	_	SpaceAfter=No
-41	Hunger	Hunger	PROPN	NNP	Number=Sing	42	compound	_	_
-42	Plan	Plan	PROPN	NNP	Number=Sing	44	nsubj	_	SpaceAfter=No
-43	"	"	PUNCT	''	_	42	punct	_	_
-44	sought	seek	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	25	advcl	_	_
-45	to	to	PART	TO	_	46	mark	_	_
-46	fulfill	fulfill	VERB	VB	VerbForm=Inf	44	xcomp	_	_
-47	Generalplan	Generalplan	PROPN	NNP	Number=Sing	48	compound	_	_
-48	Ost.	Ost.	PROPN	NNP	Number=Sing	46	obj	_	SpaceAfter=No
-49	:	:	PUNCT	:	_	48	punct	_	SpacesAfter= 
-50	175–	175–	NUM	CD	NumType=Card	51	nummod	_	SpaceAfter=No
-51	186	186	NUM	CD	NumType=Card	48	nummod	_	SpacesAfter= \s
-52	Although	although	SCONJ	IN	_	55	mark	_	_
-53	the	the	DET	DT	Definite=Def|PronType=Art	54	det	_	_
-54	Wehrmacht	Wehrmacht	PROPN	NNP	Number=Sing	55	nsubj	_	_
-55	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	63	advcl	_	_
-56	considerable	considerable	ADJ	JJ	Degree=Pos	58	amod	_	_
-57	early	early	ADJ	JJ	Degree=Pos	58	amod	_	_
-58	success	success	NOUN	NN	Number=Sing	55	obj	_	SpaceAfter=No
-59	,	,	PUNCT	,	_	63	punct	_	_
-60	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	61	nmod:poss	_	_
-61	attack	attack	NOUN	NN	Number=Sing	63	nsubj:pass	_	_
-62	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	63	aux:pass	_	_
-63	halted	halt	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	10	parataxis	_	_
-64	in	in	ADP	IN	_	66	case	_	_
-65	the	the	DET	DT	Definite=Def|PronType=Art	66	det	_	_
-66	Battle	Battle	PROPN	NNP	Number=Sing	63	obl	_	_
-67	of	of	ADP	IN	_	68	case	_	_
-68	Moscow	Moscow	PROPN	NNP	Number=Sing	66	nmod	_	SpaceAfter=No
-69	.	.	PUNCT	.	_	10	punct	_	_
+14	;	;	PUNCT	,	_	10	punct	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	latter	latter	ADJ	JJ	Degree=Pos	18	nsubj	_	_
+17	deliberately	deliberately	ADV	RB	_	18	advmod	_	_
+18	starved	starve	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	parataxis	_	_
+19	to	to	ADP	IN	_	20	case	_	_
+20	death	death	NOUN	NN	Number=Sing	18	obl	_	_
+21	or	or	CCONJ	CC	_	23	cc	_	_
+22	otherwise	otherwise	ADV	RB	_	23	advmod	_	_
+23	killed	kill	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	conj	_	_
+24	3.3	3.3	NUM	CD	NumType=Card	25	compound	_	SpacesAfter= 
+25	million	million	NUM	CD	NumType=Card	27	nummod	_	_
+26	Soviet	soviet	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	POWs	pow	NOUN	NNS	Number=Plur	23	obj	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	a	a	DET	DT	Definite=Ind|PronType=Art	32	det	_	_
+31	vast	vast	ADJ	JJ	Degree=Pos	32	amod	_	_
+32	number	number	NOUN	NN	Number=Sing	27	conj	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	civilians	civilian	NOUN	NNS	Number=Plur	32	nmod	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	23	punct	_	_
+36	as	as	SCONJ	IN	_	42	mark	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
+38	"	"	PUNCT	``	_	40	punct	_	SpaceAfter=No
+39	Hunger	Hunger	PROPN	NNP	Number=Sing	40	compound	_	_
+40	Plan	Plan	PROPN	NNP	Number=Sing	42	nsubj	_	SpaceAfter=No
+41	"	"	PUNCT	''	_	40	punct	_	_
+42	sought	seek	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	advcl	_	_
+43	to	to	PART	TO	_	44	mark	_	_
+44	fulfill	fulfill	VERB	VB	VerbForm=Inf	42	xcomp	_	_
+45	Generalplan	Generalplan	PROPN	NNP	Number=Sing	46	compound	_	_
+46	Ost	Ost	PROPN	NNP	Number=Sing	44	obj	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 2
+# text = Although the Wehrmacht had considerable early success, their attack was halted in the Battle of Moscow.
+1	Although	although	SCONJ	IN	_	4	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Wehrmacht	Wehrmacht	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	advcl	_	_
+5	considerable	considerable	ADJ	JJ	Degree=Pos	7	amod	_	_
+6	early	early	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	success	success	NOUN	NN	Number=Sing	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	attack	attack	NOUN	NN	Number=Sing	12	nsubj:pass	_	_
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+12	halted	halt	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Battle	Battle	PROPN	NNP	Number=Sing	12	obl	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Moscow	Moscow	PROPN	NNP	Number=Sing	15	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = 3
 # text = Subsequently, the Germans were dealt major defeats first at the Battle of Stalingrad in the winter of 1942–43, and then in the Battle of Kursk in the summer of 1943.
 1	Subsequently	subsequently	ADV	RB	_	6	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	6	punct	_	_
@@ -4853,7 +4958,7 @@
 32	1943	1943	NUM	CD	NumType=Card	30	nmod	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Another German failure was the Siege of Leningrad, in which the city was fully blockaded on land between 1941 and 1944 by German and Finnish forces, and suffered starvation and more than a million deaths, but never surrendered.
 1	Another	another	DET	DT	_	3	det	_	_
 2	German	german	ADJ	JJ	Degree=Pos	3	amod	_	_
@@ -4898,7 +5003,7 @@
 41	surrendered	surrender	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	conj	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = Soviet forces steamrolled through Eastern and Central Europe in 1944–45 and captured Berlin in May 1945.
 1	Soviet	soviet	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	forces	force	NOUN	NNS	Number=Plur	3	nsubj	_	_
@@ -4918,7 +5023,7 @@
 16	1945	1945	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = In August 1945, the Soviet Army invaded Manchuria and ousted the Japanese from Northeast Asia, contributing to the Allied victory over Japan.
 1	In	in	ADP	IN	_	2	case	_	_
 2	August	August	PROPN	NNP	Number=Sing	8	obl	_	_
@@ -4972,7 +5077,7 @@
 17	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 2
-# text = The Soviet Union, along with the United States, the United Kingdom and China were considered the Big Four of Allied powers in World War II, and later became the Four Policemen, which was the foundation of the United Nations Security Council.:
+# text = The Soviet Union, along with the United States, the United Kingdom and China were considered the Big Four of Allied powers in World War II, and later became the Four Policemen, which was the foundation of the United Nations Security Council.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	Soviet	Soviet	PROPN	NNP	Number=Sing	3	compound	_	_
 3	Union	Union	PROPN	NNP	Number=Sing	17	nsubj:pass	_	SpaceAfter=No
@@ -4994,7 +5099,7 @@
 19	Big	Big	PROPN	NNP	Number=Sing	20	compound	_	_
 20	Four	Four	PROPN	NNP	NumType=Card	17	xcomp	_	_
 21	of	of	ADP	IN	_	23	case	_	_
-22	Allied	Allied	PROPN	NNP	Number=Sing	23	compound	_	_
+22	Allied	Allied	PROPN	NNP	Number=Sing	23	amod	_	_
 23	powers	power	NOUN	NNS	Number=Plur	20	nmod	_	_
 24	in	in	ADP	IN	_	26	case	_	_
 25	World	World	PROPN	NNP	Number=Sing	26	compound	_	_
@@ -5017,56 +5122,58 @@
 42	United	United	PROPN	NNP	Number=Sing	43	compound	_	_
 43	Nations	Nations	PROPN	NNP	Number=Sing	45	compound	_	_
 44	Security	Security	PROPN	NNP	Number=Sing	45	compound	_	_
-45	Council.:	Council.:	PROPN	NNP	Number=Sing	39	nmod	_	SpacesAfter= 
+45	Council	Council	PROPN	NNP	Number=Sing	39	nmod	_	SpaceAfter=No
+46	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = 3
-# text = 27 During the war, Soviet civilian and military death were about 26–27 million, accounting for about half of all World War II casualties.: 295 The Soviet economy and infrastructure suffered massive devastation, which caused the Soviet famine of 1946–47.
-1	27	27	NUM	CD	NumType=Card	14	nummod	_	SpacesAfter= \s
-2	During	during	ADP	IN	_	4	case	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
-4	war	war	NOUN	NN	Number=Sing	14	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	14	punct	_	_
-6	Soviet	soviet	ADJ	JJ	Degree=Pos	10	amod	_	_
-7	civilian	civilian	ADJ	JJ	Degree=Pos	10	amod	_	_
-8	and	and	CCONJ	CC	_	9	cc	_	_
-9	military	military	ADJ	JJ	Degree=Pos	7	conj	_	_
-10	death	death	NOUN	NN	Number=Sing	14	nsubj	_	_
-11	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	cop	_	_
-12	about	about	ADV	RB	_	14	advmod	_	_
-13	26–27	26–27	NUM	CD	NumType=Card	14	compound	_	_
-14	million	million	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	14	punct	_	_
-16	accounting	account	VERB	VBG	VerbForm=Ger	14	advcl	_	_
-17	for	for	ADP	IN	_	19	case	_	_
-18	about	about	ADV	RB	_	19	advmod	_	_
-19	half	half	NOUN	NN	Number=Sing	16	obl	_	_
-20	of	of	ADP	IN	_	25	case	_	_
-21	all	all	DET	DT	_	25	det	_	_
-22	World	World	PROPN	NNP	Number=Sing	23	compound	_	_
-23	War	War	PROPN	NNP	Number=Sing	25	compound	_	SpacesAfter= 
-24	II	II	NUM	CD	NumType=Card	25	compound	_	_
-25	casualties	casualty	NOUN	NNS	Number=Plur	19	nmod	_	SpaceAfter=No
-26	.:	.:	PUNCT	:	_	14	punct	_	SpacesAfter= 
-27	295	295	NUM	CD	NumType=Card	33	nummod	_	SpacesAfter= \s
-28	The	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
-29	Soviet	soviet	ADJ	JJ	Degree=Pos	30	amod	_	_
-30	economy	economy	NOUN	NN	Number=Sing	33	nsubj	_	_
-31	and	and	CCONJ	CC	_	32	cc	_	_
-32	infrastructure	infrastructure	NOUN	NN	Number=Sing	30	conj	_	_
-33	suffered	suffer	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	parataxis	_	_
-34	massive	massive	ADJ	JJ	Degree=Pos	35	amod	_	_
-35	devastation	devastation	NOUN	NN	Number=Sing	33	obj	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	35	punct	_	_
-37	which	which	PRON	WDT	PronType=Rel	38	nsubj	_	_
-38	caused	cause	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	35	acl:relcl	_	_
-39	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
-40	Soviet	Soviet	ADJ	JJ	Degree=Pos	41	amod	_	_
-41	famine	famine	NOUN	NN	Number=Sing	38	obj	_	_
-42	of	of	ADP	IN	_	43	case	_	_
-43	1946–47	1946–47	NUM	CD	NumType=Card	41	nmod	_	SpaceAfter=No
-44	.	.	PUNCT	.	_	14	punct	_	_
+# text = During the war, Soviet civilian and military death were about 26–27 million, accounting for about half of all World War II casualties.
+1	During	during	ADP	IN	_	3	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	war	war	NOUN	NN	Number=Sing	13	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	13	punct	_	_
+5	Soviet	soviet	ADJ	JJ	Degree=Pos	9	amod	_	_
+6	civilian	civilian	ADJ	JJ	Degree=Pos	9	amod	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	military	military	ADJ	JJ	Degree=Pos	6	conj	_	_
+9	death	death	NOUN	NN	Number=Sing	13	nsubj	_	_
+10	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	cop	_	_
+11	about	about	ADV	RB	_	13	advmod	_	_
+12	26–27	26–27	NUM	CD	NumType=Card	13	compound	_	_
+13	million	million	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	accounting	account	VERB	VBG	VerbForm=Ger	13	advcl	_	_
+16	for	for	ADP	IN	_	18	case	_	_
+17	about	about	ADV	RB	_	18	advmod	_	_
+18	half	half	NOUN	NN	Number=Sing	15	obl	_	_
+19	of	of	ADP	IN	_	24	case	_	_
+20	all	all	DET	DT	_	24	det	_	_
+21	World	World	PROPN	NNP	Number=Sing	22	compound	_	_
+22	War	War	PROPN	NNP	Number=Sing	24	compound	_	SpacesAfter= 
+23	II	II	NUM	CD	NumType=Card	22	nummod	_	_
+24	casualties	casualty	NOUN	NNS	Number=Plur	18	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = 4
+# text = The Soviet economy and infrastructure suffered massive devastation, which caused the Soviet famine of 1946–47.
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+2	Soviet	soviet	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	economy	economy	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	infrastructure	infrastructure	NOUN	NN	Number=Sing	3	conj	_	_
+6	suffered	suffer	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+7	massive	massive	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	devastation	devastation	NOUN	NN	Number=Sing	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	which	which	PRON	WDT	PronType=Rel	11	nsubj	_	_
+11	caused	cause	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	acl:relcl	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+13	Soviet	soviet	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	famine	famine	NOUN	NN	Number=Sing	11	obj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	1946–47	1946–47	NUM	CD	NumType=Card	14	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 5
 # text = However, at the expense of a large sacrifice, the Soviet Union emerged as a global superpower.
 1	However	however	ADV	RB	_	14	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	14	punct	_	_
@@ -5096,7 +5203,7 @@
 # sent_id = 1
 # text = Cold War
 1	Cold	cold	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	War	war	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	War	war	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5764,7 +5871,7 @@
 6	1991	1991	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
 7	–	-	ADP	IN	_	8	case	_	SpaceAfter=No
 8	present	present	NOUN	NN	Number=Sing	6	nmod	_	SpaceAfter=No
-9	)	)	PUNCT	-RRB-	_	6	punct	_	SpacesAfter=\n
+9	)	)	PUNCT	-RRB-	_	6	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6066,7 +6173,7 @@
 26	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = 6
-# text = Terrorist attacks against civilians were carried out by separatists, claiming thousands of lives.
+# text = Terrorist attacks against civilians were carried out by Chechen separatists, claiming the lives of thousands of Russian civilians.
 1	Terrorist	terrorist	NOUN	NN	Number=Sing	2	compound	_	_
 2	attacks	attack	NOUN	NNS	Number=Plur	6	nsubj:pass	_	_
 3	against	against	ADP	IN	_	4	case	_	_
@@ -6074,14 +6181,19 @@
 5	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	aux:pass	_	_
 6	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
 7	out	out	ADP	RP	_	6	compound:prt	_	_
-8	by	by	ADP	IN	_	9	case	_	_
-9	separatists	separatist	NOUN	NNS	Number=Plur	6	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	6	punct	_	_
-11	claiming	claim	VERB	VBG	VerbForm=Ger	6	advcl	_	_
-12	thousands	thousand	NOUN	NNS	Number=Plur	11	obj	_	_
-13	of	of	ADP	IN	_	14	case	_	_
-14	lives	life	NOUN	NNS	Number=Plur	12	nmod	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+8	by	by	ADP	IN	_	10	case	_	_
+9	Chechen	chechen	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	separatists	separatist	NOUN	NNS	Number=Plur	6	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	claiming	claim	VERB	VBG	VerbForm=Ger	6	advcl	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	lives	life	NOUN	NNS	Number=Plur	12	obj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	thousands	thousand	NOUN	NNS	Number=Plur	14	nmod	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	Russian	russian	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	civilians	civilian	NOUN	NNS	Number=Plur	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6089,7 +6201,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = After the dissolution of the Soviet Union, Russia took up the responsibility for settling the latter's external debts.
+# text = After the dissolution of the Soviet Union, Russia assumed responsibility for settling the latter's external debts.
 1	After	after	ADP	IN	_	3	case	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 3	dissolution	dissolution	NOUN	NN	Number=Sing	10	obl	_	_
@@ -6099,18 +6211,16 @@
 7	Union	Union	PROPN	NNP	Number=Sing	3	nmod	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	10	punct	_	_
 9	Russia	Russia	PROPN	NNP	Number=Sing	10	nsubj	_	_
-10	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-11	up	up	ADP	RP	_	10	compound:prt	_	_
-12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
-13	responsibility	responsibility	NOUN	NN	Number=Sing	10	obj	_	_
-14	for	for	SCONJ	IN	_	15	mark	_	_
-15	settling	settle	VERB	VBG	VerbForm=Ger	13	acl	_	_
-16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
-17	latter	latter	ADJ	JJ	Degree=Pos	20	nmod:poss	_	SpaceAfter=No
-18	's	's	PART	POS	_	17	case	_	_
-19	external	external	ADJ	JJ	Degree=Pos	20	amod	_	_
-20	debts	debt	NOUN	NNS	Number=Plur	15	obj	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	10	punct	_	_
+10	assumed	assume	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+11	responsibility	responsibility	NOUN	NN	Number=Sing	10	obj	_	_
+12	for	for	SCONJ	IN	_	13	mark	_	_
+13	settling	settle	VERB	VBG	VerbForm=Ger	11	acl	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	latter	latter	ADJ	JJ	Degree=Pos	18	nmod:poss	_	SpaceAfter=No
+16	's	's	PART	POS	_	15	case	_	_
+17	external	external	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	debts	debt	NOUN	NNS	Number=Plur	13	obj	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 2
 # text = In 1992, most consumer price controls were eliminated, causing extreme inflation and significantly devaluing the ruble.
@@ -6175,7 +6285,7 @@
 # sent_id = 1
 # text = Putin era
 1	Putin	Putin	PROPN	NNP	Number=Sing	2	compound	_	_
-2	era	era	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	era	era	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6538,8 +6648,56 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = On 24 February 2022, Russia launched an invasion of Ukraine.
+1	On	on	ADP	IN	_	3	case	_	_
+2	24	24	NUM	CD	NumType=Card	3	nummod	_	_
+3	February	February	PROPN	NNP	Number=Sing	7	obl	_	_
+4	2022	2022	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	Russia	Russia	PROPN	NNP	Number=Sing	7	nsubj	_	_
+7	launched	launch	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+8	an	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+9	invasion	invasion	NOUN	NN	Number=Sing	7	obj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Ukraine	Ukraine	PROPN	NNP	Number=Sing	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 2
+# text = At about 06:00 Moscow time, Putin announced a military operation on Ukraine, minutes later, cities of Ukraine were attacked by missiles.
+1	At	at	ADP	IN	_	3	case	_	_
+2	about	about	ADV	RB	_	3	advmod	_	_
+3	06:00	06:00	NUM	CD	NumType=Card	8	obl	_	_
+4	Moscow	Moscow	PROPN	NNP	Number=Sing	5	compound	_	_
+5	time	time	NOUN	NN	Number=Sing	3	nmod:tmod	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	Putin	Putin	PROPN	NNP	Number=Sing	8	nsubj	_	_
+8	announced	announce	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+9	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	_
+10	military	military	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	operation	operation	NOUN	NN	Number=Sing	8	obj	_	_
+12	on	on	ADP	IN	_	13	case	_	_
+13	Ukraine	Ukraine	PROPN	NNP	Number=Sing	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	8	punct	_	_
+15	minutes	minute	NOUN	NNS	Number=Plur	16	obl:npmod	_	_
+16	later	later	ADV	RBR	Degree=Cmp	22	advmod	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	22	punct	_	_
+18	cities	city	NOUN	NNS	Number=Plur	22	nsubj:pass	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Ukraine	Ukraine	PROPN	NNP	Number=Sing	18	nmod	_	_
+21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux:pass	_	_
+22	attacked	attack	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	parataxis	_	_
+23	by	by	ADP	IN	_	24	case	_	_
+24	missiles	missile	NOUN	NNS	Number=Plur	22	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Geography
-1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7094,7 +7252,7 @@
 # newpar
 # sent_id = 1
 # text = Climate
-1	Climate	climate	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Climate	climate	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7528,7 +7686,7 @@
 # newpar
 # sent_id = 1
 # text = Biodiversity
-1	Biodiversity	biodiversity	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Biodiversity	biodiversity	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7879,7 +8037,7 @@
 # text = Government and politics
 1	Government	government	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpacesAfter=\n
+3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8053,7 +8211,7 @@
 # sent_id = 1
 # text = Political divisions
 1	Political	political	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8201,7 +8359,7 @@
 # sent_id = 1
 # text = Foreign relations
 1	Foreign	foreign	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8602,7 +8760,7 @@
 # newpar
 # sent_id = 1
 # text = Military
-1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8650,43 +8808,40 @@
 37	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 2
-# text = As of 2021[update], the military have around a million active-duty personnel, which is the world's fifth-largest, and about 2-20 million reserve personnel.
+# text = As of 2021, the military have around a million active-duty personnel, which is the world's fifth-largest, and about 2-20 million reserve personnel.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2021	2021	NUM	CD	NumType=Card	10	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	10	punct	_	_
-8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
-9	military	military	NOUN	NN	Number=Sing	10	nsubj	_	_
-10	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	around	around	ADV	RB	_	13	advmod	_	_
-12	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
-13	million	million	NUM	CD	NumType=Card	17	nummod	_	_
-14	active	active	ADJ	JJ	Degree=Pos	16	amod	_	SpaceAfter=No
-15	-	-	PUNCT	HYPH	_	16	punct	_	SpaceAfter=No
-16	duty	duty	NOUN	NN	Number=Sing	17	compound	_	_
-17	personnel	personnel	NOUN	NNS	Number=Plur	10	obj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	which	which	PRON	WDT	PronType=Rel	26	nsubj	_	_
-20	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	_
-21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
-22	world	world	NOUN	NN	Number=Sing	26	nmod:poss	_	SpaceAfter=No
-23	's	's	PART	POS	_	22	case	_	_
-24	fifth	fifth	ADV	RB	_	26	advmod	_	SpaceAfter=No
-25	-	-	PUNCT	HYPH	_	26	punct	_	SpaceAfter=No
-26	largest	largest	ADJ	JJS	Degree=Sup	17	acl:relcl	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	35	punct	_	_
-28	and	and	CCONJ	CC	_	35	cc	_	_
-29	about	about	ADV	RB	_	30	advmod	_	_
-30	2	2	NUM	CD	NumType=Card	35	nummod	_	SpaceAfter=No
-31	-	-	SYM	SYM	_	32	case	_	SpaceAfter=No
-32	20	20	NUM	CD	NumType=Card	30	nmod	_	_
-33	million	million	NUM	CD	NumType=Card	35	nummod	_	_
-34	reserve	reserve	NOUN	NN	Number=Sing	35	compound	_	_
-35	personnel	personnel	NOUN	NNS	Number=Plur	17	conj	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	10	punct	_	_
+3	2021	2021	NUM	CD	NumType=Card	7	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	military	military	NOUN	NN	Number=Sing	7	nsubj	_	_
+7	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	around	around	ADV	RB	_	10	advmod	_	_
+9	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+10	million	million	NUM	CD	NumType=Card	14	nummod	_	_
+11	active	active	ADJ	JJ	Degree=Pos	13	amod	_	SpaceAfter=No
+12	-	-	PUNCT	HYPH	_	13	punct	_	SpaceAfter=No
+13	duty	duty	NOUN	NN	Number=Sing	14	compound	_	_
+14	personnel	personnel	NOUN	NNS	Number=Plur	7	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	which	which	PRON	WDT	PronType=Rel	23	nsubj	_	_
+17	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	world	world	NOUN	NN	Number=Sing	23	nmod:poss	_	SpaceAfter=No
+20	's	's	PART	POS	_	19	case	_	_
+21	fifth	fifth	ADV	RB	_	23	advmod	_	SpaceAfter=No
+22	-	-	PUNCT	HYPH	_	23	punct	_	SpaceAfter=No
+23	largest	largest	ADJ	JJS	Degree=Sup	14	acl:relcl	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	32	punct	_	_
+25	and	and	CCONJ	CC	_	32	cc	_	_
+26	about	about	ADV	RB	_	27	advmod	_	_
+27	2	2	NUM	CD	NumType=Card	32	nummod	_	SpaceAfter=No
+28	-	-	SYM	SYM	_	29	case	_	SpaceAfter=No
+29	20	20	NUM	CD	NumType=Card	27	nmod	_	_
+30	million	million	NUM	CD	NumType=Card	32	nummod	_	_
+31	reserve	reserve	NOUN	NN	Number=Sing	32	compound	_	_
+32	personnel	personnel	NOUN	NNS	Number=Plur	14	conj	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 3
 # text = It is mandatory for all male citizens aged 18–27 to be drafted for a year of service in the Armed Forces.
@@ -8884,7 +9039,7 @@
 1	Human	human	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	rights	rights	NOUN	NNS	Number=Plur	0	root	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
-4	corruption	corruption	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+4	corruption	corruption	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9248,7 +9403,7 @@
 # newpar
 # sent_id = 1
 # text = Economy
-1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9519,7 +9674,7 @@
 # text = Transport and energy
 1	Transport	transport	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	energy	energy	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	energy	energy	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9576,45 +9731,42 @@
 26	.	.	PUNCT	.	_	16	punct	_	_
 
 # sent_id = 3
-# text = As of 2016[update], Russia has the world's fifth-largest road network, with some 1,452.2 thousand km of roads, while its road density is among the world's lowest.
+# text = As of 2016, Russia has the world's fifth-largest road network, with some 1,452.2 thousand km of roads, while its road density is among the world's lowest.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2016	2016	NUM	CD	NumType=Card	9	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	9	punct	_	_
-8	Russia	Russia	PROPN	NNP	Number=Sing	9	nsubj	_	_
-9	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
-11	world	world	NOUN	NN	Number=Sing	17	nmod:poss	_	SpaceAfter=No
-12	's	's	PART	POS	_	11	case	_	_
-13	fifth	fifth	ADV	RB	_	15	advmod	_	SpaceAfter=No
-14	-	-	PUNCT	HYPH	_	15	punct	_	SpaceAfter=No
-15	largest	largest	ADJ	JJS	Degree=Sup	17	amod	_	_
-16	road	road	NOUN	NN	Number=Sing	17	compound	_	_
-17	network	network	NOUN	NN	Number=Sing	9	obj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	with	with	ADP	IN	_	23	case	_	_
-20	some	some	DET	DT	_	23	det	_	_
-21	1,452.2	1,452.2	NUM	CD	NumType=Card	22	compound	_	_
-22	thousand	thousand	NUM	CD	NumType=Card	23	nummod	_	SpacesAfter= 
-23	km	km	NOUN	NN	Number=Sing	17	nmod	_	_
-24	of	of	ADP	IN	_	25	case	_	_
-25	roads	road	NOUN	NNS	Number=Plur	23	nmod	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	9	punct	_	_
-27	while	while	SCONJ	IN	_	37	mark	_	_
-28	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	31	nmod:poss	_	SpaceAfter=No
-29	s	's	PART	POS	_	35	case	_	_
-30	road	road	NOUN	NN	Number=Sing	31	compound	_	_
-31	density	density	NOUN	NN	Number=Sing	37	nsubj	_	_
-32	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_
-33	among	among	ADP	IN	_	37	case	_	_
-34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
-35	world	world	NOUN	NN	Number=Sing	37	nmod:poss	_	SpaceAfter=No
-36	's	's	PART	POS	_	35	case	_	_
-37	lowest	lowest	ADJ	JJS	Degree=Sup	9	advcl	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	9	punct	_	_
+3	2016	2016	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	Russia	Russia	PROPN	NNP	Number=Sing	6	nsubj	_	_
+6	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	world	world	NOUN	NN	Number=Sing	14	nmod:poss	_	SpaceAfter=No
+9	's	's	PART	POS	_	8	case	_	_
+10	fifth	fifth	ADV	RB	_	12	advmod	_	SpaceAfter=No
+11	-	-	PUNCT	HYPH	_	12	punct	_	SpaceAfter=No
+12	largest	largest	ADJ	JJS	Degree=Sup	14	amod	_	_
+13	road	road	NOUN	NN	Number=Sing	14	compound	_	_
+14	network	network	NOUN	NN	Number=Sing	6	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	with	with	ADP	IN	_	20	case	_	_
+17	some	some	DET	DT	_	20	det	_	_
+18	1,452.2	1,452.2	NUM	CD	NumType=Card	19	compound	_	_
+19	thousand	thousand	NUM	CD	NumType=Card	20	nummod	_	SpacesAfter= 
+20	km	km	NOUN	NN	Number=Sing	14	nmod	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	roads	road	NOUN	NNS	Number=Plur	20	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	6	punct	_	_
+24	while	while	SCONJ	IN	_	34	mark	_	_
+25	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	28	nmod:poss	_	SpaceAfter=No
+26	s	's	PART	POS	_	32	case	_	_
+27	road	road	NOUN	NN	Number=Sing	28	compound	_	_
+28	density	density	NOUN	NN	Number=Sing	34	nsubj	_	_
+29	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	_	_
+30	among	among	ADP	IN	_	34	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	world	world	NOUN	NN	Number=Sing	34	nmod:poss	_	SpaceAfter=No
+33	's	's	PART	POS	_	32	case	_	_
+34	lowest	lowest	ADJ	JJS	Degree=Sup	6	advcl	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 4
 # text = Russia's inland waterways are the world's second-longest, and total 102,000 km (63,380 mi).
@@ -9927,7 +10079,7 @@
 # text = Agriculture and fishery
 1	Agriculture	agriculture	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	fishery	fishery	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	fishery	fishery	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10224,7 +10376,7 @@
 # text = Science and technology
 1	Science	science	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	technology	technology	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	technology	technology	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10753,7 +10905,7 @@
 # sent_id = 1
 # text = Space exploration
 1	Space	space	NOUN	NN	Number=Sing	2	compound	_	_
-2	exploration	exploration	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	exploration	exploration	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10772,7 +10924,7 @@
 8	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 2
-# text = The country's achievements in the field of space technology and space exploration can be traced back to Konstantin Tsiolkovsky, the father of theoretical astronautics, whose works had inspired leading Soviet rocket engineers, such as Sergey Korolyov, Valentin Glushko, and many others who contributed to the success of the Soviet space program in the early stages of the Space Race and beyond.: 6–7, 333
+# text = The country's achievements in the field of space technology and space exploration can be traced back to Konstantin Tsiolkovsky, the father of theoretical astronautics, whose works had inspired leading Soviet rocket engineers, such as Sergey Korolyov, Valentin Glushko, and many others who contributed to the success of the Soviet space program in the early stages of the Space Race and beyond.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	country	country	NOUN	NN	Number=Sing	4	nmod:poss	_	SpaceAfter=No
 3	's	's	PART	POS	_	2	case	_	_
@@ -10833,18 +10985,14 @@
 58	in	in	ADP	IN	_	61	case	_	_
 59	the	the	DET	DT	Definite=Def|PronType=Art	61	det	_	_
 60	early	early	ADJ	JJ	Degree=Pos	61	amod	_	_
-61	stages	stage	NOUN	NNS	Number=Plur	52	nmod	_	_
+61	stages	stage	NOUN	NNS	Number=Plur	49	obl	_	_
 62	of	of	ADP	IN	_	65	case	_	_
 63	the	the	DET	DT	Definite=Def|PronType=Art	65	det	_	_
 64	Space	Space	PROPN	NNP	Number=Sing	65	compound	_	_
 65	Race	Race	PROPN	NNP	Number=Sing	61	nmod	_	_
 66	and	and	CCONJ	CC	_	67	cc	_	_
 67	beyond	beyond	ADV	RB	_	65	conj	_	SpaceAfter=No
-68	.	.	PUNCT	.	_	16	punct	_	SpaceAfter=No
-69	:	:	PUNCT	:	_	16	punct	_	SpacesAfter= 
-70	6–7	6–7	NUM	CD	NumType=Card	16	parataxis	_	SpaceAfter=No
-71	,	,	PUNCT	,	_	72	punct	_	SpacesAfter= 
-72	333	333	NUM	CD	NumType=Card	70	appos	_	SpacesAfter= \n
+68	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11059,7 +11207,7 @@
 17	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 5
-# text = In 1971, Mars 3 became the first spacecraft to land on Mars.: 34–60 During the same period, Lunokhod 1 became the first space exploration rover, while Salyut 1 became the world's first space station.
+# text = In 1971, Mars 3 became the first spacecraft to land on Mars.
 1	In	in	ADP	IN	_	2	case	_	_
 2	1971	1971	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	6	punct	_	_
@@ -11073,35 +11221,37 @@
 11	land	land	VERB	VB	VerbForm=Inf	9	acl	_	_
 12	on	on	ADP	IN	_	13	case	_	_
 13	Mars	Mars	PROPN	NNP	Number=Sing	11	obl	_	SpaceAfter=No
-14	.:	.:	PUNCT	:	_	9	punct	_	SpacesAfter= 
-15	34–60	34–60	NUM	CD	NumType=Card	9	appos	_	SpacesAfter= \s
-16	During	during	ADP	IN	_	19	case	_	_
-17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
-18	same	same	ADJ	JJ	Degree=Pos	19	amod	_	_
-19	period	period	NOUN	NN	Number=Sing	23	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	23	punct	_	_
-21	Lunokhod	Lunokhod	PROPN	NNP	Number=Sing	23	nsubj	_	_
-22	1	1	NUM	CD	NumType=Card	21	nummod	_	_
-23	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	parataxis	_	_
-24	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
-25	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	28	amod	_	_
-26	space	space	NOUN	NN	Number=Sing	27	compound	_	_
-27	exploration	exploration	NOUN	NN	Number=Sing	28	compound	_	_
-28	rover	rover	NOUN	NN	Number=Sing	23	xcomp	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	23	punct	_	_
-30	while	while	SCONJ	IN	_	33	mark	_	_
-31	Salyut	Salyut	PROPN	NNP	Number=Sing	33	nsubj	_	SpacesAfter= 
-32	1	1	NUM	CD	NumType=Card	31	nummod	_	_
-33	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	advcl	_	_
-34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
-35	world	world	NOUN	NN	Number=Sing	39	nmod:poss	_	SpaceAfter=No
-36	's	's	PART	POS	_	35	case	_	_
-37	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	39	amod	_	_
-38	space	space	NOUN	NN	Number=Sing	39	compound	_	_
-39	station	station	NOUN	NN	Number=Sing	33	xcomp	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	_
+14	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 6
+# text = During the same period, Lunokhod 1 became the first space exploration rover, while Salyut 1 became the world's first space station.
+1	During	during	ADP	IN	_	4	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	same	same	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	period	period	NOUN	NN	Number=Sing	8	obl	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	Lunokhod	Lunokhod	PROPN	NNP	Number=Sing	8	nsubj	_	_
+7	1	1	NUM	CD	NumType=Card	6	nummod	_	_
+8	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+10	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	13	amod	_	_
+11	space	space	NOUN	NN	Number=Sing	12	compound	_	_
+12	exploration	exploration	NOUN	NN	Number=Sing	13	compound	_	_
+13	rover	rover	NOUN	NN	Number=Sing	8	xcomp	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	8	punct	_	_
+15	while	while	SCONJ	IN	_	18	mark	_	_
+16	Salyut	Salyut	PROPN	NNP	Number=Sing	18	nsubj	_	SpacesAfter= 
+17	1	1	NUM	CD	NumType=Card	16	nummod	_	_
+18	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	advcl	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	world	world	NOUN	NN	Number=Sing	24	nmod:poss	_	SpaceAfter=No
+21	's	's	PART	POS	_	20	case	_	_
+22	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	24	amod	_	_
+23	space	space	NOUN	NN	Number=Sing	24	compound	_	_
+24	station	station	NOUN	NN	Number=Sing	18	xcomp	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 7
 # text = Russia had 167 active satellites in space in September 2021, the world's third-highest.
 1	Russia	Russia	PROPN	NNP	Number=Sing	2	nsubj	_	_
 2	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -11129,7 +11279,7 @@
 # newpar
 # sent_id = 1
 # text = Tourism
-1	Tourism	tourism	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Tourism	tourism	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11486,15 +11636,7 @@
 14	landmarks	landmark	NOUN	NNS	Number=Plur	0	root	_	_
 15	of	of	ADP	IN	_	16	case	_	_
 16	Russia	Russia	PROPN	NNP	Number=Sing	14	nmod	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	14	punct	_	SpaceAfter=No
-
-# sent_id = 6
-# text = [better source needed]
-1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
-3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
-4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
-5	]	]	PUNCT	-RRB-	_	3	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	.	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11503,7 +11645,7 @@
 # newpar
 # sent_id = 1
 # text = Demographics
-1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11910,7 +12052,7 @@
 # newpar
 # sent_id = 1
 # text = Language
-1	Language	language	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Language	language	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11966,48 +12108,34 @@
 30	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 3
-# text = Russian is the second-most used language on the Internet after English, and is one of two official languages aboard the International Space Station, as well as one of the six official languages of the United Nations.
-1	Russian	Russian	PROPN	NNP	Number=Sing	8	nsubj	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-4	second	second	ADJ	JJ	Degree=Pos|NumType=Ord	7	advmod	_	SpaceAfter=No
-5	-	-	PUNCT	HYPH	_	7	punct	_	SpaceAfter=No
-6	most	most	ADV	RBS	_	7	advmod	_	_
-7	used	use	VERB	VBN	Tense=Past|VerbForm=Part	8	amod	_	_
-8	language	language	NOUN	NN	Number=Sing	0	root	_	_
-9	on	on	ADP	IN	_	11	case	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
-11	Internet	Internet	NOUN	NN	Number=Sing	8	nmod	_	_
-12	after	after	ADP	IN	_	13	case	_	_
-13	English	English	PROPN	NNP	Number=Sing	8	nmod	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	17	punct	_	_
-15	and	and	CCONJ	CC	_	17	cc	_	_
-16	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
-17	one	one	NUM	CD	NumType=Card	8	conj	_	_
-18	of	of	ADP	IN	_	21	case	_	_
-19	two	two	NUM	CD	NumType=Card	21	nummod	_	_
-20	official	official	ADJ	JJ	Degree=Pos	21	amod	_	_
-21	languages	language	NOUN	NNS	Number=Plur	17	nmod	_	_
-22	aboard	aboard	ADP	IN	_	26	case	_	_
-23	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
-24	International	International	PROPN	NNP	Number=Sing	26	compound	_	_
-25	Space	Space	PROPN	NNP	Number=Sing	26	compound	_	_
-26	Station	Station	PROPN	NNP	Number=Sing	21	nmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	31	punct	_	_
-28	as	as	ADV	RB	_	31	cc	_	_
-29	well	well	ADV	RB	Degree=Pos	28	fixed	_	_
-30	as	as	ADP	IN	_	28	fixed	_	_
-31	one	one	NUM	CD	NumType=Card	21	conj	_	_
-32	of	of	ADP	IN	_	36	case	_	_
-33	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
-34	six	six	NUM	CD	NumType=Card	36	nummod	_	_
-35	official	official	ADJ	JJ	Degree=Pos	36	amod	_	_
-36	languages	language	NOUN	NNS	Number=Plur	31	nmod	_	_
-37	of	of	ADP	IN	_	40	case	_	_
-38	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
-39	United	United	PROPN	NNP	Number=Sing	40	compound	_	_
-40	Nations	Nations	PROPN	NNP	Number=Sing	36	nmod	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+# text = Russian is one of two official languages aboard the International Space Station, as well as one of the six official languages of the United Nations.
+1	Russian	Russian	PROPN	NNP	Number=Sing	3	nsubj	_	_
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	one	one	NUM	CD	NumType=Card	0	root	_	_
+4	of	of	ADP	IN	_	7	case	_	_
+5	two	two	NUM	CD	NumType=Card	7	nummod	_	_
+6	official	official	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	languages	language	NOUN	NNS	Number=Plur	3	nmod	_	_
+8	aboard	aboard	ADP	IN	_	12	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+10	International	International	PROPN	NNP	Number=Sing	12	compound	_	_
+11	Space	Space	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Station	Station	PROPN	NNP	Number=Sing	7	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	as	as	ADV	RB	_	17	cc	_	_
+15	well	well	ADV	RB	Degree=Pos	14	fixed	_	_
+16	as	as	ADP	IN	_	14	fixed	_	_
+17	one	one	NUM	CD	NumType=Card	7	conj	_	_
+18	of	of	ADP	IN	_	22	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+20	six	six	NUM	CD	NumType=Card	22	nummod	_	_
+21	official	official	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	languages	language	NOUN	NNS	Number=Plur	17	nmod	_	_
+23	of	of	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+25	United	United	PROPN	NNP	Number=Sing	26	compound	_	_
+26	Nations	Nations	PROPN	NNP	Number=Sing	22	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12142,7 +12270,7 @@
 # newpar
 # sent_id = 1
 # text = Religion
-1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12400,7 +12528,7 @@
 # newpar
 # sent_id = 1
 # text = Education
-1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12733,7 +12861,7 @@
 # newpar
 # sent_id = 1
 # text = Health
-1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13066,7 +13194,7 @@
 # newpar
 # sent_id = 1
 # text = Culture
-1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13292,7 +13420,7 @@
 # newpar
 # sent_id = 1
 # text = Holidays
-1	Holidays	holiday	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Holidays	holiday	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13706,7 +13834,7 @@
 # text = Art and architecture
 1	Art	art	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	architecture	architecture	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	architecture	architecture	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14277,7 +14405,7 @@
 # newpar
 # sent_id = 1
 # text = Music
-1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14643,7 +14771,7 @@
 # text = Literature and philosophy
 1	Literature	literature	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	philosophy	philosophy	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	philosophy	philosophy	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15348,7 +15476,7 @@
 # newpar
 # sent_id = 1
 # text = Cuisine
-1	Cuisine	cuisine	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Cuisine	cuisine	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15492,26 +15620,22 @@
 12	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 7
-# text = Beef Stroganoff,: 266 Chicken Kiev,: 320 pelmeni, and shashlyk are popular meat dishes.
-1	Beef	Beef	PROPN	NNP	Number=Sing	2	compound	_	_
-2	Stroganoff	Stroganoff	PROPN	NNP	Number=Sing	18	nsubj	_	SpaceAfter=No
-3	,	,	PUNCT	,	_	2	punct	_	SpaceAfter=No
-4	:	:	PUNCT	:	_	2	punct	_	SpacesAfter= 
-5	266	266	NUM	CD	NumType=Card	7	nummod	_	SpacesAfter= \s
-6	Chicken	Chicken	PROPN	NNP	Number=Sing	7	compound	_	_
-7	Kiev	Kiev	PROPN	NNP	Number=Sing	2	appos	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	2	punct	_	SpaceAfter=No
-9	:	:	PUNCT	:	_	11	punct	_	SpacesAfter= 
-10	320	320	NUM	CD	NumType=Card	11	nummod	_	SpacesAfter= \s
-11	pelmeni	pelmeni	NOUN	NN	Number=Sing	2	list	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	14	punct	_	_
-13	and	and	CCONJ	CC	_	14	cc	_	_
-14	shashlyk	shashlyk	NOUN	NN	Number=Sing	2	conj	_	_
-15	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	18	cop	_	_
-16	popular	popular	ADJ	JJ	Degree=Pos	18	amod	_	_
-17	meat	meat	NOUN	NN	Number=Sing	18	compound	_	_
-18	dishes	dish	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	18	punct	_	_
+# text = Beef Stroganoff, Chicken Kiev, pelmeni, and shashlyk are popular meat dishes.
+1	Beef	beef	NOUN	NN	Number=Sing	2	compound	_	_
+2	Stroganoff	stroganoff	NOUN	NN	Number=Sing	14	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	Chicken	chicken	NOUN	NN	Number=Sing	5	compound	_	_
+5	Kiev	kiev	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	7	punct	_	_
+7	pelmeni	pelmeni	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	shashlyk	shashlyk	NOUN	NN	Number=Sing	2	conj	_	_
+11	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	14	cop	_	_
+12	popular	popular	ADJ	JJ	Degree=Pos	14	amod	_	_
+13	meat	meat	NOUN	NN	Number=Sing	14	compound	_	_
+14	dishes	dish	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = 8
 # text = Other meat dishes include stuffed cabbage rolls (golubtsy) usually filled with meat.
@@ -15642,7 +15766,7 @@
 1	Mass	mass	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	media	media	NOUN	NN	Number=Sing	0	root	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
-4	cinema	cinema	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+4	cinema	cinema	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15703,54 +15827,19 @@
 25	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 3
-# text = Television is the most popular media in Russia, as 99% of the Russian population receives at least one television channel, and roughly 60% of Russians watch television on a daily basis.
+# text = Television is the most popular medium in Russia.
 1	Television	television	NOUN	NN	Number=Sing	6	nsubj	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 3	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
 4	most	most	ADV	RBS	_	5	advmod	_	_
 5	popular	popular	ADJ	JJ	Degree=Pos	6	amod	_	_
-6	media	media	NOUN	NN	Number=Sing	0	root	_	_
+6	medium	medium	NOUN	NN	Number=Sing	0	root	_	_
 7	in	in	ADP	IN	_	8	case	_	_
 8	Russia	Russia	PROPN	NNP	Number=Sing	6	nmod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	6	punct	_	_
-10	as	as	SCONJ	IN	_	17	mark	_	_
-11	99	99	NUM	CD	NumType=Card	12	nummod	_	SpaceAfter=No
-12	%	%	SYM	NN	Number=Sing	17	nsubj	_	_
-13	of	of	ADP	IN	_	16	case	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
-15	Russian	russian	ADJ	JJ	Degree=Pos	16	amod	_	_
-16	population	population	NOUN	NN	Number=Sing	12	nmod	_	_
-17	receives	receive	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
-18	at	at	ADV	RB	_	19	case	_	_
-19	least	least	ADV	RBS	Degree=Sup	20	nmod	_	_
-20	one	one	NUM	CD	NumType=Card	22	nummod	_	_
-21	television	television	NOUN	NN	Number=Sing	22	compound	_	_
-22	channel	channel	NOUN	NN	Number=Sing	17	obj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	30	punct	_	_
-24	and	and	CCONJ	CC	_	30	cc	_	_
-25	roughly	roughly	ADV	RB	_	26	advmod	_	_
-26	60	60	NUM	CD	NumType=Card	27	nummod	_	SpaceAfter=No
-27	%	%	SYM	NN	Number=Sing	30	nsubj	_	_
-28	of	of	ADP	IN	_	29	case	_	_
-29	Russians	Russians	PROPN	NNPS	Number=Plur	27	nmod	_	_
-30	watch	watch	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	17	conj	_	_
-31	television	television	NOUN	NN	Number=Sing	30	obj	_	_
-32	on	on	ADP	IN	_	35	case	_	_
-33	a	a	DET	DT	Definite=Ind|PronType=Art	35	det	_	_
-34	daily	daily	ADJ	JJ	Degree=Pos	35	amod	_	_
-35	basis	basis	NOUN	NN	Number=Sing	30	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 4
-# text = [better source needed]
-1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
-3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
-4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
-5	]	]	PUNCT	-RRB-	_	3	punct	_	_
-
-# sent_id = 5
-# text = Among the 3,000 licensed radio stations nationwide, popular ones include Radio Rossii, Vesti FM, Echo of Moscow, Radio Mayak, and Russkoye Radio.
+# text = Among the 3,000 licensed radio stations nationwide, notable ones include Radio Rossii, Vesti FM, Echo of Moscow, Radio Mayak, and Russkoye Radio.
 1	Among	among	ADP	IN	_	6	case	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
 3	3,000	3,000	NUM	CD	NumType=Card	6	nummod	_	_
@@ -15759,7 +15848,7 @@
 6	stations	station	NOUN	NNS	Number=Plur	11	obl	_	_
 7	nationwide	nationwide	ADV	RB	_	6	advmod	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	11	punct	_	_
-9	popular	popular	ADJ	JJ	Degree=Pos	10	amod	_	_
+9	notable	notable	ADJ	JJ	Degree=Pos	10	amod	_	_
 10	ones	one	NOUN	NNS	Number=Plur	11	nsubj	_	_
 11	include	include	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	Radio	Radio	PROPN	NNP	Number=Sing	13	compound	_	_
@@ -15780,41 +15869,41 @@
 27	Radio	Radio	PROPN	NNP	Number=Sing	13	conj	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 6
-# text = Leading newspapers include Argumenty i Fakty, Komsomolskaya Pravda, Rossiyskaya Gazeta, Izvestia, and Moskovskij Komsomolets.
-1	Leading	lead	VERB	VBG	VerbForm=Ger	2	amod	_	_
-2	newspapers	newspaper	NOUN	NNS	Number=Plur	3	nsubj	_	_
-3	include	include	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	Argumenty	Argumenty	PROPN	NNP	Number=Sing	3	obj	_	_
-5	i	i	PRON	PRP	Number=Sing	6	compound	_	_
-6	Fakty	Fakty	PROPN	NNP	Number=Sing	4	conj	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	9	punct	_	_
-8	Komsomolskaya	Komsomolskaya	PROPN	NNP	Number=Sing	9	compound	_	_
-9	Pravda	Pravda	PROPN	NNP	Number=Sing	4	conj	_	SpaceAfter=No
+# sent_id = 5
+# text = Of the 16,000 registered newspapers, Argumenty i Fakty, Komsomolskaya Pravda, Rossiyskaya Gazeta, Izvestia, and Moskovskij Komsomolets are popular.
+1	Of	of	ADP	IN	_	5	case	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+3	16,000	16,000	NUM	CD	NumType=Card	5	nummod	_	_
+4	registered	register	VERB	VBN	Tense=Past|VerbForm=Part	5	amod	_	_
+5	newspapers	newspaper	NOUN	NNS	Number=Plur	23	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	23	punct	_	_
+7	Argumenty	Argumenty	PROPN	NNP	Number=Sing	23	nsubj	_	_
+8	i	i	PRON	NNP	Number=Sing	9	compound	_	_
+9	Fakty	Fakty	PROPN	NNP	Number=Sing	7	conj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	12	punct	_	_
-11	Rossiyskaya	Rossiyskaya	PROPN	NNP	Number=Sing	12	compound	_	_
-12	Gazeta	Gazeta	PROPN	NNP	Number=Sing	4	conj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	14	punct	_	_
-14	Izvestia	Izvestia	PROPN	NNP	Number=Sing	4	conj	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	18	punct	_	_
-16	and	and	CCONJ	CC	_	18	cc	_	_
-17	Moskovskij	Moskovskij	PROPN	NNP	Number=Sing	18	compound	_	_
-18	Komsomolets	Komsomolets	PROPN	NNPS	Number=Plur	4	conj	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	3	punct	_	SpaceAfter=No
+11	Komsomolskaya	Komsomolskaya	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Pravda	Pravda	PROPN	NNP	Number=Sing	7	conj	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	Rossiyskaya	Rossiyskaya	PROPN	NNP	Number=Sing	15	compound	_	_
+15	Gazeta	Gazeta	PROPN	NNP	Number=Sing	7	conj	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	17	punct	_	_
+17	Izvestia	Izvestia	PROPN	NNP	Number=Sing	7	conj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	Moskovskij	Moskovskij	PROPN	NNP	Number=Sing	21	compound	_	_
+21	Komsomolets	Komsomolets	PROPN	NNPS	Number=Plur	7	conj	_	_
+22	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	23	cop	_	_
+23	popular	popular	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = 6
+# text = State-run Channel
+1	State	state	NOUN	NN	Number=Sing	3	compound	_	SpaceAfter=No
+2	-	-	PUNCT	HYPH	_	3	punct	_	SpaceAfter=No
+3	run	run	VERB	NN	Number=Sing	4	compound	_	_
+4	Channel	channel	NOUN	NN	Number=Sing	0	root	_	_
 
 # sent_id = 7
-# text = [better source needed] State-run Channel
-1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
-2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
-3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
-4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
-5	]	]	PUNCT	-RRB-	_	3	punct	_	_
-6	State	state	NOUN	NN	Number=Sing	8	obl:npmod	_	SpaceAfter=No
-7	-	-	PUNCT	HYPH	_	8	punct	_	SpaceAfter=No
-8	run	run	VERB	VBN	Tense=Past|VerbForm=Part	9	amod	_	_
-9	Channel	channel	NOUN	NN	Number=Sing	3	appos	_	_
-
-# sent_id = 8
 # text = One and Russia-1 are the leading news channels, while RT is the flagship of Russia's international media operations.
 1	One	one	NUM	CD	NumType=Card	10	nsubj	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
@@ -15840,7 +15929,7 @@
 22	operations	operation	NOUN	NNS	Number=Plur	16	nmod	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 9
+# sent_id = 8
 # text = Russia has the largest video gaming market in Europe, with over 65 million players nationwide.
 1	Russia	Russia	PROPN	NNP	Number=Sing	2	nsubj	_	_
 2	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -16201,7 +16290,7 @@
 # newpar
 # sent_id = 1
 # text = Sports
-1	Sports	sport	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Sports	sport	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16593,7 +16682,7 @@
 # sent_id = 1
 # text = See also
 1	See	see	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
-2	also	also	ADV	RB	_	1	advmod	_	SpacesAfter=\n
+2	also	also	ADV	RB	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16602,7 +16691,7 @@
 # newpar
 # sent_id = 1
 # text = Notes
-1	Notes	note	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\n
+1	Notes	note	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16611,7 +16700,7 @@
 # newpar
 # sent_id = 1
 # text = References
-1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16621,7 +16710,7 @@
 # sent_id = 1
 # text = Further reading
 1	Further	further	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16631,7 +16720,7 @@
 # sent_id = 1
 # text = External links
 1	External	external	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16660,14 +16749,4 @@
 # sent_id = 1
 # text = Other
 1	Other	other	ADJ	JJ	Degree=Pos	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigation menu
-1	Navigation	navigation	NOUN	NN	Number=Sing	2	compound	_	_
-2	menu	menu	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
 

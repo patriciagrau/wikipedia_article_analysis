@@ -1,5 +1,3 @@
-# https://ko.wikipedia.org/wiki/%EB%AC%BC
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,25 +11,7 @@
 4	,	,	PUNCT	sp	_	3	punct	_	_
 5	우리	우리	PRON	npp	_	6	compound	_	_
 6	모두의	모두+의	NOUN	ncn+jcm	_	7	nmod	_	_
-7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 언어
-1	언어	언어	NOUN	ncn	_	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 물
-1	물	물	NOUN	ncn	_	0	root	_	SpacesAfter=\n
+7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -173,11 +153,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 특성[편집]
+# text = 특성
 1	특성	특성	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -185,30 +162,28 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 물 분자는 두 개의 수소 원자와, 하나의 산소 원자가 공유결합(결합 길이 0.096 nm)을 한 H-O-H의 굽은형의 물질이다.
+# text = 물 분자는 두 개의 수소 원자와, 하나의 산소 원자가 0.096 nm의 결합 길이를 가진 공유결합을 한 H-O-H의 굽은형의 물질이다.
 1	물	물	NOUN	ncn	_	2	compound	_	_
-2	분자는	분자+는	NOUN	ncn+jxt	_	22	dislocated	_	_
+2	분자는	분자+는	NOUN	ncn+jxt	_	20	dislocated	_	_
 3	두	두	NUM	nnc	_	4	nummod	_	_
 4	개의	개+의	NOUN	nbu+jcm	_	6	nmod	_	_
 5	수소	수소	NOUN	ncn	_	6	compound	_	_
-6	원자와	원자+와	CCONJ	ncn+jcj	_	19	nsubj	_	SpaceAfter=No
+6	원자와	원자+와	CCONJ	ncn+jcj	_	15	nsubj	_	SpaceAfter=No
 7	,	,	PUNCT	sp	_	6	punct	_	_
 8	하나의	하나+의	NUM	nnc+jcm	_	10	nmod	_	_
 9	산소	산소	NOUN	ncn	_	10	compound	_	_
 10	원자가	원자+가	NOUN	ncn+jcs	_	6	conj	_	_
-11	공유결합	공유+결합	NOUN	ncn+ncpa	_	19	obj	_	SpaceAfter=No
-12	(	(	PUNCT	sl	_	14	punct	_	SpaceAfter=No
+11	0.096	0.096	NUM	nnc	_	12	nummod	_	SpacesAfter= 
+12	nm의	nm+의	NOUN	f+jcm	_	14	nmod	_	_
 13	결합	결합	NOUN	ncpa	_	14	compound	_	_
-14	길이	길이	NOUN	ncn	_	16	dep	_	_
-15	0.096	0.096	NUM	nnc	_	16	nummod	_	SpacesAfter= 
-16	nm	nm	X	f	_	11	appos	_	SpaceAfter=No
-17	)	)	PUNCT	sr	_	16	punct	_	SpaceAfter=No
-18	을	을	ADP	jco	_	11	case	_	_
-19	한	하+ㄴ	VERB	pvg+etm	_	21	acl	_	_
-20	H-O-H의	h-+o-h+의	NOUN	f+jcm	_	21	nmod	_	_
-21	굽은형의	굽은형+의	NOUN	ncn+jcm	_	22	nmod	_	_
-22	물질이다	물질+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
-23	.	.	PUNCT	sf	_	22	punct	_	_
+14	길이를	길이+를	NOUN	ncn+jco	_	15	obj	_	_
+15	가진	가지+ㄴ	VERB	pvg+etm	_	16	acl	_	_
+16	공유결합을	공유+결합+을	NOUN	ncn+ncpa+jco	_	17	obj	_	_
+17	한	하+ㄴ	VERB	pvg+etm	_	20	ccomp	_	_
+18	H-O-H의	h-+o-h+의	NOUN	f+jcm	_	19	nmod	_	_
+19	굽은형의	굽은형+의	NOUN	ncn+jcm	_	20	nmod	_	_
+20	물질이다	물질+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
+21	.	.	PUNCT	sf	_	20	punct	_	_
 
 # sent_id = 2
 # text = 물 분자는 수소 원자와 산소 원자가 각각 전자를 내놓아 전자 쌍을 만들고, 이 전자쌍을 함께 나누어 가짐(공유)으로써 결합되어 있다.
@@ -291,12 +266,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 화학적 성질[편집]
+# text = 화학적 성질
 1	화학적	화학+적	NOUN	ncn+xsn	_	2	amod	_	_
-2	성질	성질	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	성질	성질	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -339,11 +311,94 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 수소결합[편집]
+# text = 수소결합
 1	수소결합	수소+결합	NOUN	ncn+ncpa	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 물에서의 수소결합(평균 결합 길이: 0.197 nm)은 전자를 끌어당기는 힘이 상대적으로 약한 수소 원자가 약한 세기의 양이온의 성질을 띠고 전자를 끌어당기는 힘이 강한 산소원자가 강한 세기의 음이온의 성질을 띰으로써 나타나게 된다.
+1	물에서의	물+에서+의	NOUN	ncn+jca+jcm	_	2	nmod	_	SpacesBefore=\s
+2	수소결합	수소+결합	NOUN	ncn+ncpa	_	34	dislocated	_	SpaceAfter=No
+3	(	(	PUNCT	sl	_	5	punct	_	SpaceAfter=No
+4	평균	평균	NOUN	ncn	_	5	compound	_	_
+5	결합	결합	NOUN	ncpa	_	6	compound	_	_
+6	길이	길이	NOUN	ncn	_	2	conj	_	SpaceAfter=No
+7	:	:	PUNCT	sp	_	6	punct	_	_
+8	0.197	0.197	NUM	nnc	_	9	nummod	_	SpacesAfter= 
+9	nm	nm	X	f	_	6	appos	_	SpaceAfter=No
+10	)	)	PUNCT	sr	_	9	punct	_	SpaceAfter=No
+11	은	은	ADP	jxt	_	2	case	_	_
+12	전자를	전자+를	NOUN	ncn+jco	_	13	obj	_	_
+13	끌어당기는	끌어당기+는	VERB	pvg+etm	_	14	acl	_	_
+14	힘이	힘+이	NOUN	ncn+jcs	_	16	nsubj	_	_
+15	상대적으로	상대+적+으로	ADV	ncpa+xsn+jca	_	16	advcl	_	_
+16	약한	약하+ㄴ	ADJ	paa+etm	_	18	amod	_	_
+17	수소	수소	NOUN	ncn	_	18	compound	_	_
+18	원자가	원자+가	NOUN	ncn+jcs	_	23	nsubj	_	_
+19	약한	약하+ㄴ	ADJ	paa+etm	_	20	amod	_	_
+20	세기의	세기+의	NOUN	ncn+jcm	_	21	nmod	_	_
+21	양이온의	양이온+의	NOUN	ncn+jcm	_	22	nmod	_	_
+22	성질을	성질+을	NOUN	ncn+jco	_	23	obj	_	_
+23	띠고	띠+고	CCONJ	pvg+ecc	_	0	root	_	_
+24	전자를	전자+를	NOUN	ncn+jco	_	25	obj	_	_
+25	끌어당기는	끌어당기+는	VERB	pvg+etm	_	26	acl	_	_
+26	힘이	힘+이	NOUN	ncn+jcs	_	27	nsubj	_	_
+27	강한	강하+ㄴ	ADJ	paa+etm	_	28	amod	_	_
+28	산소원자가	산소+원자+가	NOUN	ncn+ncn+jcs	_	33	nsubj	_	_
+29	강한	강하+ㄴ	ADJ	paa+etm	_	30	amod	_	_
+30	세기의	세기+의	NOUN	ncn+jcm	_	31	nmod	_	_
+31	음이온의	음이온+의	NOUN	ncn+jcm	_	32	nmod	_	_
+32	성질을	성질+을	NOUN	ncn+jco	_	33	obj	_	_
+33	띰으로써	주+ㅁ+으로써	ADV	pvg+etn+jca	_	23	conj	_	_
+34	나타나게	나타나+게	VERB	pvg+ecx	_	23	conj	_	_
+35	된다	되+ㄴ다	AUX	px+ef	_	34	aux	_	SpaceAfter=No
+36	.	.	PUNCT	sf	_	35	punct	_	_
+
+# sent_id = 2
+# text = 따라서 물은 극성 공유결합 물질이다.
+1	따라서	따라서	CCONJ	maj	_	5	cc	_	_
+2	물은	물+은	NOUN	ncn+jxt	_	5	dislocated	_	_
+3	극성	극성	NOUN	ncn	_	5	compound	_	_
+4	공유결합	공유+결합	NOUN	ncn+ncpa	_	5	compound	_	_
+5	물질이다	물질+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	sf	_	5	punct	_	_
+
+# sent_id = 3
+# text = 또한, 중심 원자로 작용하는 수소 원자의 비공유 전자쌍과 산소와의 결합 고리인 수소결합(공유 전자쌍)의 작용력을 비교할 때 쌍극자 모멘트 값이 0이 아니므로 극성 분자로 분류된다.
+1	또한	또한	CCONJ	maj	_	29	cc	_	SpaceAfter=No
+2	,	,	PUNCT	sp	_	1	punct	_	_
+3	중심	중심	NOUN	ncn	_	4	compound	_	_
+4	원자로	원자+로	ADV	ncn+jca	_	5	advcl	_	_
+5	작용하는	작용+하+는	VERB	ncpa+xsv+etm	_	9	acl	_	_
+6	수소	수소	NOUN	ncn	_	7	compound	_	_
+7	원자의	원자+의	NOUN	ncn+jcm	_	9	nmod	_	_
+8	비공유	비공유	NOUN	ncn	_	9	compound	_	_
+9	전자쌍과	전자+쌍+과	CCONJ	ncn+jcj	_	19	nmod	_	_
+10	산소와의	산소+와+의	NOUN	ncn+jct+jcm	_	9	conj	_	_
+11	결합	결합	NOUN	ncpa	_	12	compound	_	_
+12	고리인	고리+이+ㄴ	VERB	ncn+jp+etm	_	13	acl	_	_
+13	수소결합	수소+결합	NOUN	ncn+ncpa	_	19	nmod	_	SpaceAfter=No
+14	(	(	PUNCT	sl	_	16	punct	_	SpaceAfter=No
+15	공유	공유	NOUN	ncn	_	16	compound	_	_
+16	전자쌍	전자쌍	NOUN	ncn	_	13	appos	_	SpaceAfter=No
+17	)	)	PUNCT	sr	_	16	punct	_	SpaceAfter=No
+18	의	의	ADP	jcm	_	13	case	_	_
+19	작용력을	작용력+을	NOUN	ncn+jco	_	20	obj	_	_
+20	비교할	비교+하+ㄹ	VERB	ncpa+xsv+etm	_	21	acl	_	_
+21	때	때	NOUN	ncn	_	29	advmod	_	_
+22	쌍극자	쌍극자	NOUN	ncn	_	23	compound	_	_
+23	모멘트	모멘트	NOUN	ncn	_	24	compound	_	_
+24	값이	값+이	NOUN	ncn+jcs	_	26	nsubj	_	_
+25	0이	0+이	NUM	ncn+jcc	_	26	csubj	_	_
+26	아니므로	아니+므로	SCONJ	paa+ecs	_	29	xcomp	_	_
+27	극성	극성	NOUN	ncn	_	28	compound	_	_
+28	분자로	분자+로	ADV	ncn+jca	_	29	advcl	_	_
+29	분류된다	분류+되+ㄴ다	VERB	ncpa+xsv+ef	_	0	root	_	SpaceAfter=No
+30	.	.	PUNCT	sf	_	29	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -554,12 +609,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 산과 염기[편집]
-1	산과	산+과	CCONJ	ncn+jcj	_	4	compound	_	_
+# text = 산과 염기
+1	산과	산+과	CCONJ	ncn+jcj	_	0	root	_	_
 2	염기	염기	NOUN	ncn	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -676,14 +728,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 금속과의 결합 및 부식[편집]
-1	금속과의	금속+과+의	NOUN	ncn+jct+jcm	_	4	nmod	_	_
-2	결합	결합	NOUN	ncpa	_	6	compound	_	_
+# text = 금속과의 결합 및 부식
+1	금속과의	금속+과+의	NOUN	ncn+jct+jcm	_	2	nmod	_	_
+2	결합	결합	NOUN	ncpa	_	0	root	_	_
 3	및	및	CCONJ	maj	_	4	cc	_	_
 4	부식	부식	NOUN	ncn	_	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	sl	_	6	punct	_	SpaceAfter=No
-6	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	sr	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -825,12 +874,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 공학에서의 물[편집]
+# text = 공학에서의 물
 1	공학에서의	공학+에서+의	NOUN	ncn+jca+jcm	_	2	nmod	_	_
-2	물	물	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	물	물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -893,14 +939,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 맛과 냄새 그리고 색깔[편집]
-1	맛과	맛+과	CCONJ	ncn+jcj	_	6	compound	_	_
+# text = 맛과 냄새 그리고 색깔
+1	맛과	맛+과	CCONJ	ncn+jcj	_	0	root	_	_
 2	냄새	냄새	NOUN	ncn	_	1	conj	_	_
 3	그리고	그리고	CCONJ	maj	_	4	cc	_	_
 4	색깔	색깔	NOUN	ncn	_	1	conj	_	SpaceAfter=No
-5	[	[	PUNCT	sl	_	6	punct	_	SpaceAfter=No
-6	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	sr	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -986,12 +1029,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 자연의 물[편집]
+# text = 자연의 물
 1	자연의	자연+의	NOUN	ncps+jcm	_	2	nmod	_	_
-2	물	물	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	물	물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -999,13 +1039,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 우주 속의 물[편집]
+# text = 우주 속의 물
 1	우주	우주	NOUN	ncn	_	2	compound	_	_
 2	속의	속+의	NOUN	ncn+jcm	_	3	nmod	_	_
-3	물	물	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	물	물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1077,13 +1114,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 물과 거주가능 영역[편집]
+# text = 물과 거주가능 영역
 1	물과	물+과	CCONJ	ncn+jcj	_	3	compound	_	_
-2	거주가능	거주+가능	NOUN	ncpa+ncn	_	1	conj	_	_
-3	영역	영역	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+2	거주가능	거주+가능	NOUN	ncpa+ncn	_	3	compound	_	_
+3	영역	영역	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1364,13 +1398,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 지구 상의 물[편집]
+# text = 지구 상의 물
 1	지구	지구	NOUN	ncn	_	2	compound	_	_
 2	상의	상+의	NOUN	ncn+jcm	_	3	nmod	_	_
-3	물	물	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	물	물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1559,12 +1590,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 물의 순환[편집]
+# text = 물의 순환
 1	물의	물+의	NOUN	ncn+jcm	_	2	nmod	_	_
-2	순환	순환	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	순환	순환	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1629,11 +1657,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 민물[편집]
-1	민물	민물	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 민물
+1	민물	민물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1746,11 +1771,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 조석[편집]
-1	조석	조석	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sf	_	3	punct	_	SpacesAfter=\n
+# text = 조석
+1	조석	조석	PROPN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1816,11 +1838,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 바닷물[편집]
-1	바닷물	바닷물	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 바닷물
+1	바닷물	바닷물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1904,13 +1923,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 삶에 미치는 영향[편집]
+# text = 삶에 미치는 영향
 1	삶에	삶+에	ADV	ncn+jca	_	2	obl	_	_
 2	미치는	미치+는	VERB	pvg+etm	_	3	acl	_	_
-3	영향	영향	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	영향	영향	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2094,13 +2110,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 물 속 생활[편집]
+# text = 물 속 생활
 1	물	물	NOUN	ncn	_	2	compound	_	_
 2	속	속	NOUN	ncn	_	3	compound	_	_
-3	생활	생활	NOUN	ncpa	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	생활	생활	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2266,13 +2279,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 문명에 미치는 효과[편집]
+# text = 문명에 미치는 효과
 1	문명에	문명+에	ADV	ncn+jca	_	2	obl	_	_
 2	미치는	미치+는	VERB	pvg+etm	_	3	acl	_	_
-3	효과	효과	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	효과	효과	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2390,12 +2400,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 건강과 오염[편집]
-1	건강과	건강+과	CCONJ	ncpa+jcj	_	4	compound	_	_
+# text = 건강과 오염
+1	건강과	건강+과	CCONJ	ncpa+jcj	_	0	root	_	_
 2	오염	오염	NOUN	ncn	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2500,12 +2507,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 사람의 이용[편집]
+# text = 사람의 이용
 1	사람의	사람+의	NOUN	ncn+jcm	_	2	nmod	_	_
-2	이용	이용	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	이용	이용	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2513,11 +2517,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 농업[편집]
+# text = 농업
 1	농업	농업	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2576,11 +2577,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 음수[편집]
-1	음수	음수	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 음수
+1	음수	음수	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2726,13 +2724,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 여러 곳의 물[편집]
+# text = 여러 곳의 물
 1	여러	여러	ADJ	mma	_	2	amod	_	_
 2	곳의	곳+의	NOUN	ncn+jcm	_	3	nmod	_	_
-3	물	물	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	물	물	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2848,12 +2843,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 일산화 이수소[편집]
+# text = 일산화 이수소
 1	일산화	일산화	PROPN	nq	_	2	compound	_	_
 2	이수소	이수소	PROPN	nq	_	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2903,12 +2895,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 같이 보기[편집]
+# text = 같이 보기
 1	같이	같이	ADV	mag	_	2	advmod	_	_
-2	보기	보+기	VERB	pvg+etn	_	4	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	보기	보+기	VERB	pvg+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2916,11 +2905,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 기타[편집]
+# text = 기타
 1	기타	기타	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2928,11 +2914,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 출처[편집]
-1	출처	출처	NOUN	ncpa	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 출처
+1	출처	출처	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2940,10 +2923,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 외부 링크[편집]
+# text = 외부 링크
 1	외부	외부	NOUN	ncn	_	2	compound	_	_
-2	링크	링크	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	링크	링크	NOUN	ncn	_	0	root	_	SpaceAfter=No
 

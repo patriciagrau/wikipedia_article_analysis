@@ -1,5 +1,3 @@
-# https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%97%D7%9E%D7%93
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,25 +7,7 @@
 # text = מוחמד – ויקיפדיה
 1	מוחמד	מוחמד	PROPN	PROPN	_	0	root	_	_
 2	–	–	PROPN	PROPN	_	3	flat:name	_	_
-3	ויקיפדיה	ויקיפדיה	PROPN	PROPN	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = שפות
-1	שפות	שפה	NOUN	NOUN	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = מוחמד
-1	מוחמד	מוחמד	PROPN	PROPN	_	0	root	_	SpacesAfter=\n
+3	ויקיפדיה	ויקיפדיה	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -199,7 +179,7 @@
 6	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
 7	של	של	ADP	ADP	Case=Gen	8	case:gen	_	_
 8	מוחמד	מוחמד	PROPN	PROPN	_	4	nmod:poss	_	_
-9-11	ואמינותם	_	_	_	_	_	_	_	SpacesAfter=\n
+9-11	ואמינותם	_	_	_	_	_	_	_	SpaceAfter=No
 9	ואמינות_	ואמינות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	8	compound:smixut	_	_
 10	_של_	של	ADP	ADP	_	11	case:gen	_	_
 11	_הם	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	nmod:poss	_	_
@@ -836,7 +816,48 @@
 9-10	המסורת	_	_	_	_	_	_	_	_
 9	ה	ה	DET	DET	PronType=Art	10	det:def	_	_
 10	מסורת	מסורת	NOUN	NOUN	Gender=Fem|Number=Sing	7	obl	_	_
-11	המוסלמית	המוסלמי	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	SpacesAfter=\n
+11	המוסלמית	המוסלמי	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = hebrew-htb-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = פרק זה דורש עריכה.
+1	פרק	פרק	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	SpacesBefore=\n
+2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	det	_	_
+3	דורש	דרש	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
+4	עריכה	עריכה	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 2
+# text = אתם מוזמנים לתרום לוויקיפדיה ולערוך אותו.
+1	אתם	הוא	PRON	PRON	Gender=Masc|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+2-3	מוזמנים	_	_	_	_	_	_	_	_
+2	מו	מו	ADP	ADP	_	3	case	_	_
+3	זמנים	זמן	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
+4	לתרום	תרם	VERB	VERB	HebBinyan=PAAL|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	לוויקיפדיה	לוויקיפדיה	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+6	ולערוך	לערך	VERB	VERB	HebBinyan=PAAL|VerbForm=Inf|Voice=Act	5	acl	_	_
+7-8	אותו	_	_	_	_	_	_	_	SpaceAfter=No
+7	את_	את	ADP	ADP	Case=Acc	8	case:acc	_	_
+8	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 3
+# text = הסיבה לכך: משלב לא אנציקלופדי.
+1-2	הסיבה	_	_	_	_	_	_	_	_
+1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
+2	סיבה	סיבה	NOUN	NOUN	Gender=Fem|Number=Sing	6	nsubj	_	_
+3-4	לכך	_	_	_	_	_	_	_	SpaceAfter=No
+3	ל	ל	ADP	ADP	_	4	case	_	_
+4	כך	כך	PRON	PRON	Person=3|PronType=Dem	2	nmod	_	_
+5	:	:	PUNCT	PUNCT	_	6	punct	_	_
+6	משלב	משלב	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	_
+7	לא	לא	ADV	ADV	Polarity=Neg	8	advmod	_	_
+8	אנציקלופדי	אנציקלופדי	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -849,7 +870,7 @@
 1	שושלה_	שושלה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
-4-7	ומשפחתו	_	_	_	_	_	_	_	SpacesAfter=\n
+4-7	ומשפחתו	_	_	_	_	_	_	_	SpaceAfter=No
 4	ו	ו	CCONJ	CCONJ	_	5	cc	_	_
 5	משפחה_	משפחה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	1	conj	_	_
 6	_של_	של	ADP	ADP	_	7	case:gen	_	_
@@ -869,236 +890,10 @@
 4-5	ותחילת	_	_	_	_	_	_	_	_
 4	ו	ו	CCONJ	CCONJ	_	5	cc	_	_
 5	תחילת	תחילה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	conj	_	_
-6-8	דרכו	_	_	_	_	_	_	_	SpacesAfter=\n
+6-8	דרכו	_	_	_	_	_	_	_	SpaceAfter=No
 6	דרך_	דרך	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	5	compound:smixut	_	_
 7	_של_	של	ADP	ADP	_	8	case:gen	_	_
 8	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = "מוחמד בן עבד אללה בן עבד אלמטלבּ (שׁייבּה) בן האשׁם (עמרו) בן עבד מנאף (אלמוג’ירה) בן קוסאי (זיד) בן קלאבּ בן מורּה בן כעבּ בן לואי בן ג’אליבּ בן פהר (המכונה קוריישׁ) בן מאלק בן אל-נדר (קייס) בן קנאנה בן ח’וזיימה בן מודרכּה (עאמר) בן אליאס בן מודַר בן מעד בן עדנאן בן אודד בן אלהמיידע בן סלאמאן בן עוץ בן בוז בן קמוואל בן אבי בן עוואם בן נָאשיד בן חזא בן בלדאש בן ידלף בן טאבח’ בן גאחם בן נאחש בן מאכי בן עיץ’ בן עבקר בן עובייד בן אלדעא בן חמדאן בן שנבר בן ית’רבי בן יחזן בן ילחן בן ארעווי בן עיץ’ בן דישאן בן עייסר בן אפנאד בן איהאם בן מקסר בן נאחת’ בן זראח בן שמי בן מזי בן עודא בן עראם בן קידאר בן ישמעאל בן אברהם בן תרח בן נחור בן סרוע בן רעו בן פאלח’ בן עבר בן שאלח’ בן ארפח’שד בן שאם בן נוח עליו השלום בן לאמק בן מתושלח בן אחנוך (הנביא אדריס) בן ירד בן מהלאל בן קינאן בן אנוש בן שית’ בן אדם עליו השלום"
-1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
-2	מוחמד	מוחמד	PROPN	PROPN	_	0	root	_	_
-3	בן	בן	PROPN	PROPN	_	2	flat:name	_	_
-4	עבד	עבד	PROPN	PROPN	_	3	flat:name	_	_
-5	אללה	אללה	PROPN	PROPN	_	3	flat:name	_	_
-6	בן	בן	NOUN	NOUN	HebSource=ConvUncertainHead	2	dep	_	_
-7	עבד	עבד	PROPN	PROPN	_	3	flat:name	_	_
-8	אלמטלבּ	אלמטלבּ	PROPN	PROPN	_	7	flat:name	_	_
-9	(	(	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
-10	שׁייבּה	שׁייבּה	PROPN	PROPN	_	6	appos	_	SpaceAfter=No
-11	)	)	PUNCT	PUNCT	_	10	punct	_	_
-12	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-13	האשׁם	האשׁם	PROPN	PROPN	_	12	compound:smixut	_	_
-14	(	(	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
-15	עמרו	עמרו	PROPN	PROPN	_	12	appos	_	SpaceAfter=No
-16	)	)	PUNCT	PUNCT	_	15	punct	_	_
-17	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-18	עבד	עבד	PROPN	PROPN	_	17	flat:name	_	_
-19	מנאף	מנאף	PROPN	PROPN	_	18	flat:name	_	_
-20	(	(	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
-21	אלמוג’ירה	אלמוג’ירה	PROPN	PROPN	_	17	appos	_	SpaceAfter=No
-22	)	)	PUNCT	PUNCT	_	21	punct	_	_
-23	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-24	קוסאי	קוסאי	PROPN	PROPN	_	23	flat:name	_	_
-25	(	(	PUNCT	PUNCT	_	26	punct	_	SpaceAfter=No
-26	זיד	זיד	PROPN	PROPN	_	24	appos	_	SpaceAfter=No
-27	)	)	PUNCT	PUNCT	_	26	punct	_	_
-28	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-29	קלאבּ	קלאבּ	PROPN	PROPN	_	28	flat:name	_	_
-30	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-31	מורּה	מורּה	PROPN	PROPN	_	30	compound:smixut	_	_
-32	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	35	dep	_	_
-33	כעבּ	כעבּ	PROPN	PROPN	_	32	flat:name	_	_
-34	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-35	לואי	לואי	PROPN	PROPN	_	34	flat:name	_	_
-36	בן	בן	PROPN	PROPN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	35	flat:name	_	_
-37	ג’אליבּ	ג’אליבּ	PROPN	PROPN	_	36	flat:name	_	_
-38	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	35	acl	_	_
-39	פהר	פהר	NOUN	NOUN	Gender=Masc|Number=Sing	38	compound:smixut	_	_
-40	(	(	PUNCT	PUNCT	_	42	punct	_	SpaceAfter=No
-41-42	המכונה	_	_	_	_	_	_	_	_
-41	ה	ה	DET	DET	PronType=Art	42	mark	_	_
-42	מכונה	כונה	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	17	appos	_	_
-43	קוריישׁ	קוריישׁ	PROPN	PROPN	_	42	dep	_	SpaceAfter=No
-44	)	)	PUNCT	PUNCT	_	42	punct	_	_
-45	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-46	מאלק	מאלק	PROPN	PROPN	HebSource=ConvUncertainHead	45	compound:smixut	_	_
-47	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	46	acl	_	_
-48	אל	אל	PROPN	PROPN	_	47	flat:name	_	SpaceAfter=No
-49	-	-	PUNCT	PUNCT	_	48	flat:name	_	SpaceAfter=No
-50	נדר	נדר	PROPN	PROPN	_	48	flat:name	_	_
-51	(	(	PUNCT	PUNCT	_	52	punct	_	SpaceAfter=No
-52	קייס	קייס	PROPN	PROPN	_	46	appos	_	SpaceAfter=No
-53	)	)	PUNCT	PUNCT	_	52	punct	_	_
-54	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-55	קנאנה	קנאנה	PROPN	PROPN	_	54	compound:smixut	_	_
-56	בן	בן	PROPN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-57	ח’וזיימה	ח’וזיימה	PROPN	PROPN	_	93	flat:name	_	_
-58	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-59	מודרכּה	מודרכּה	PROPN	PROPN	_	171	flat:name	_	_
-60	(	(	PUNCT	PUNCT	_	61	punct	_	SpaceAfter=No
-61	עאמר	עאמר	PROPN	PROPN	_	186	appos	_	SpaceAfter=No
-62	)	)	PUNCT	PUNCT	_	61	punct	_	_
-63	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-64	אליאס	אליאס	PROPN	PROPN	_	2	dep	_	_
-65	בן	בן	PROPN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-66	מודַר	מודַר	PROPN	PROPN	_	65	flat:name	_	_
-67	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-68	מעד	מעד	PROPN	PROPN	_	199	flat:name	_	_
-69	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-70	עדנאן	עדנאן	PROPN	PROPN	_	69	flat:name	_	_
-71	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-72	אודד	אודד	PROPN	PROPN	_	69	flat:name	_	_
-73	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-74	אלהמיידע	אלהמיידע	PROPN	PROPN	_	73	dep	_	_
-75	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-76	סלאמאן	סלאמאן	PROPN	PROPN	_	77	flat:name	_	_
-77	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-78	עוץ	עוץ	NOUN	NOUN	Gender=Masc|Number=Sing	77	flat:name	_	_
-79	בן	בן	NOUN	NOUN	HebSource=ConvUncertainHead	2	dep	_	_
-80	בוז	בוז	PROPN	PROPN	_	77	flat:name	_	_
-81	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-82	קמוואל	קמוואל	PROPN	PROPN	_	77	flat:name	_	_
-83	בן	בן	NOUN	NOUN	HebSource=ConvUncertainHead	82	dep	_	_
-84	אבי	אבי	PROPN	PROPN	_	83	flat:name	_	_
-85	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-86	עוואם	עוואם	PROPN	PROPN	_	85	flat:name	_	_
-87	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-88	נָאשיד	נָאשיד	PROPN	PROPN	_	85	flat:name	_	_
-89	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-90	חזא	חזא	PROPN	PROPN	_	85	flat:name	_	_
-91	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-92	בלדאש	בלדאש	PROPN	PROPN	_	85	flat:name	_	_
-93	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-94	ידלף	ידלף	PROPN	PROPN	_	93	flat:name	_	_
-95	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-96	טאבח’	טאבח’	PROPN	PROPN	_	93	flat:name	_	_
-97	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-98	גאחם	גאחם	PROPN	PROPN	_	97	dep	_	_
-99	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-100	נאחש	נאחש	PROPN	PROPN	_	99	flat:name	_	_
-101	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-102	מאכי	מאכי	PROPN	PROPN	_	99	flat:name	_	_
-103	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-104	עיץ	עיץ	NOUN	NOUN	Gender=Masc|Number=Sing	103	flat:name	_	SpaceAfter=No
-105	’	’	PROPN	PROPN	_	103	flat:name	_	_
-106	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-107	עבקר	עבקר	PROPN	PROPN	_	106	flat:name	_	_
-108	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-109	עובייד	עובייד	PROPN	PROPN	_	137	flat:name	_	_
-110	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-111	אלדעא	אלדעא	PROPN	PROPN	_	110	flat:name	_	_
-112	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-113	חמדאן	חמדאן	PROPN	PROPN	_	110	flat:name	_	_
-114	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-115	שנבר	שנבר	PROPN	PROPN	_	112	flat:name	_	_
-116	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-117	ית’רבי	ית’רבי	PROPN	PROPN	_	32	flat:name	_	_
-118	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-119	יחזן	יחזן	PROPN	PROPN	_	118	flat:name	_	_
-120	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	118	dep	_	_
-121	ילחן	ילחן	PROPN	PROPN	_	120	flat:name	_	_
-122	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	118	dep	_	_
-123	ארעווי	ארעווי	PROPN	PROPN	_	122	flat:name	_	_
-124	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	42	dep	_	_
-125	עיץ	עיץ	NOUN	NOUN	_	124	flat:name	_	SpaceAfter=No
-126	’	’	PROPN	PROPN	_	159	nmod	_	_
-127	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-128	דישאן	דישאן	PROPN	PROPN	_	159	flat:name	_	_
-129	בן	בן	PROPN	PROPN	_	46	nmod	_	_
-130	עייסר	עייסר	PROPN	PROPN	_	167	flat:name	_	_
-131	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	54	dep	_	_
-132	אפנאד	אפנאד	PROPN	PROPN	_	93	flat:name	_	_
-133	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	176	dep	_	_
-134	איהאם	איהאם	PROPN	PROPN	_	95	flat:name	_	_
-135	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	176	dep	_	_
-136	מקסר	מקסר	PROPN	PROPN	_	103	flat:name	_	_
-137	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	136	dep	_	_
-138	נאחת’	נאחת’	PROPN	PROPN	_	137	flat:name	_	_
-139	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	106	dep	_	_
-140-141	זראח	_	_	_	_	_	_	_	_
-140	זר	זר	NOUN	NOUN	Gender=Masc|Number=Sing	139	flat:name	_	_
-141	אח	אח	NOUN	NOUN	_	139	flat:name	_	_
-142	בן	בן	PROPN	PROPN	_	193	dep	_	_
-143-144	שמי	_	_	_	_	_	_	_	_
-143	ש	ש	SCONJ	SCONJ	_	144	mark	_	_
-144	מי	מי	ADV	ADV	_	34	acl:relcl	_	_
-145	בן	בן	PROPN	PROPN	_	144	dep	_	_
-146	מזי	מזי	PROPN	PROPN	_	145	flat:name	_	_
-147	בן	בן	PROPN	PROPN	_	144	dep	_	_
-148	עודא	עודא	PROPN	PROPN	_	145	flat:name	_	_
-149	בן	בן	PROPN	PROPN	_	35	flat:name	_	_
-150	עראם	עראם	PROPN	PROPN	_	32	flat:name	_	_
-151	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	144	dep	_	_
-152	קידאר	קידאר	PROPN	PROPN	_	120	flat:name	_	_
-153	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	144	dep	_	_
-154	ישמעאל	ישמעאל	PROPN	PROPN	_	120	flat:name	_	_
-155	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	118	dep	_	_
-156	אברהם	אברהם	PROPN	PROPN	_	155	flat:name	_	_
-157	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	118	dep	_	_
-158	תרח	תרח	PROPN	PROPN	Gender=Masc|Number=Sing	157	flat:name	_	_
-159	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-160	נחור	נחור	PROPN	PROPN	_	159	flat:name	_	_
-161	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	46	dep	_	_
-162	סרוע	סרוע	PROPN	PROPN	_	159	flat:name	_	_
-163	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	46	dep	_	_
-164	רעו	רעו	PROPN	PROPN	_	159	flat:name	_	_
-165	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	46	dep	_	_
-166	פאלח’	פאלח’	PROPN	PROPN	_	167	flat:name	_	_
-167	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-168	עבר	עבר	NOUN	NOUN	Gender=Masc|Number=Sing	167	flat:name	_	_
-169	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-170	שאלח’	שאלח’	PROPN	PROPN	_	169	flat:name	_	_
-171	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	2	dep	_	_
-172	ארפח’שד	ארפח’שד	PROPN	PROPN	_	171	flat:name	_	_
-173	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-174-175	שאם	_	_	_	_	_	_	_	_
-174	ש	ש	SCONJ	SCONJ	_	176	mark	_	_
-175	אם	אם	NOUN	NOUN	_	176	dep	_	_
-176	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	2	dep	_	_
-177	נוח	נוח	NOUN	NOUN	Gender=Masc|Number=Sing	176	flat:name	_	_
-178-179	עליו	_	_	_	_	_	_	_	_
-178	על_	על	ADP	ADP	_	179	case	_	_
-179	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	176	nmod	_	_
-180-181	השלום	_	_	_	_	_	_	_	_
-180	ה	ה	DET	DET	PronType=Art	181	det:def	_	_
-181	שלום	שלום	NOUN	NOUN	Gender=Masc|Number=Sing	176	nsubj	_	_
-182	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	181	dep	_	_
-183	לאמק	לאמק	PROPN	PROPN	_	176	flat:name	_	_
-184	בן	בן	PROPN	PROPN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	181	dep	_	_
-185	מתושלח	מתושלח	PROPN	PROPN	_	184	compound:smixut	_	_
-186	בן	בן	PROPN	PROPN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	181	dep	_	_
-187	אחנוך	אחנוך	PROPN	PROPN	_	186	flat:name	_	_
-188	(	(	PUNCT	PUNCT	_	190	punct	_	SpaceAfter=No
-189-190	הנביא	_	_	_	_	_	_	_	_
-189	ה	ה	DET	DET	PronType=Art	190	det:def	_	_
-190	נביא	נביא	NOUN	NOUN	Gender=Masc|Number=Sing	186	appos	_	_
-191	אדריס	אדריס	PROPN	PROPN	_	190	flat:name	_	SpaceAfter=No
-192	)	)	PUNCT	PUNCT	_	190	punct	_	_
-193	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	2	dep	_	_
-194	ירד	ירד	PROPN	PROPN	_	193	compound:smixut	_	_
-195	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	193	dep	_	_
-196	מהלאל	מהלאל	PROPN	PROPN	_	195	flat:name	_	_
-197	בן	בן	PROPN	PROPN	HebSource=ConvUncertainHead	193	dep	_	_
-198	קינאן	קינאן	PROPN	PROPN	_	195	flat:name	_	_
-199	בן	בן	PROPN	PROPN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	195	dep	_	_
-200	אנוש	אנוש	PROPN	PROPN	_	199	flat:name	_	_
-201	בן	בן	PROPN	PROPN	Definite=Cons|Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	193	dep	_	_
-202	שית’	שית’	PROPN	PROPN	_	199	flat:name	_	_
-203	בן	בן	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	193	nmod	_	_
-204	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	203	compound:smixut	_	_
-205-206	עליו	_	_	_	_	_	_	_	_
-205	על_	על	ADP	ADP	_	206	case	_	_
-206	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	203	nmod	_	_
-207-208	השלום	_	_	_	_	_	_	_	SpaceAfter=No
-207	ה	ה	DET	DET	PronType=Art	208	det:def	_	_
-208	שלום	שלום	NOUN	NOUN	Gender=Masc|Number=Sing	203	compound:smixut	_	_
-209	"	"	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -2302,7 +2097,7 @@
 # newpar
 # sent_id = 1
 # text = ההתגלות
-1-2	ההתגלות	_	_	_	_	_	_	_	SpacesAfter=\n
+1-2	ההתגלות	_	_	_	_	_	_	_	SpaceAfter=No
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
 2	התגלות	התגלות	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
 
@@ -3342,7 +3137,7 @@
 # newpar
 # sent_id = 1
 # text = ההג'רה
-1	ההג'רה	ההג'ר	VERB	VERB	Gender=Fem|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	0	root	_	SpacesAfter=\n
+1	ההג'רה	ההג'ר	VERB	VERB	Gender=Fem|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -4329,7 +4124,7 @@
 1-2	התפשטות	_	_	_	_	_	_	_	_
 1	הת	הת	DET	DET	PronType=Art	2	det:def	_	_
 2	פשטות	פשטות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	3	nsubj	_	_
-3	האסלאם	האסלאם	PROPN	PROPN	_	0	root	_	SpacesAfter=\n
+3	האסלאם	האסלאם	PROPN	PROPN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -5324,7 +5119,7 @@
 # sent_id = 1
 # text = כיבוש מכה
 1	כיבוש	כיבוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	0	root	_	_
-2	מכה	מכה	PROPN	PROPN	_	1	compound:smixut	_	SpacesAfter=\n
+2	מכה	מכה	PROPN	PROPN	_	1	compound:smixut	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -5687,7 +5482,7 @@
 # newpar
 # sent_id = 1
 # text = מותו
-1-3	מותו	_	_	_	_	_	_	_	SpacesAfter=\n
+1-3	מותו	_	_	_	_	_	_	_	SpaceAfter=No
 1	מוות_	מוות	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
@@ -5903,7 +5698,7 @@
 1	משפחה_	משפחה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
 2	_של_	של	ADP	ADP	_	3	case:gen	_	_
 3	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod:poss	_	_
-4	וצאצאיו	וצאצאיו	PROPN	PROPN	_	1	appos	_	SpacesAfter=\n
+4	וצאצאיו	וצאצאיו	PROPN	PROPN	_	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -6228,7 +6023,7 @@
 4-5	ליהודים	_	_	_	_	_	_	_	_
 4	ל	ל	ADP	ADP	_	5	case	_	_
 5	יהודים	יהודי	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
-6	ולנוצרים	ולנוצר	ADJ	ADJ	Gender=Masc|Number=Plur	5	amod	_	SpacesAfter=\n
+6	ולנוצרים	ולנוצר	ADJ	ADJ	Gender=Masc|Number=Plur	5	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -7053,7 +6848,7 @@
 # sent_id = 1
 # text = ראו גם
 1	ראו	ראה	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
-2	גם	גם	ADV	ADV	_	1	advmod	_	SpacesAfter=\n
+2	גם	גם	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -7065,7 +6860,7 @@
 1-2	לקריאה	_	_	_	_	_	_	_	_
 1	ל	ל	ADP	ADP	_	2	case	_	_
 2	קריאה	קריאה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
-3	נוספת	נוסף	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	SpacesAfter=\n
+3	נוספת	נוסף	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -7075,7 +6870,7 @@
 # sent_id = 1
 # text = קישורים חיצוניים
 1	קישורים	קישור	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
-2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpacesAfter=\n
+2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -7085,5 +6880,5 @@
 # sent_id = 1
 # text = הערות שוליים
 1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	0	root	_	_
-2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpacesAfter=\n
+2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
 

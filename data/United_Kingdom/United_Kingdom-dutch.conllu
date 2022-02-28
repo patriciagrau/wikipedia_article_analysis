@@ -1,5 +1,3 @@
-# https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,17 +8,7 @@
 1	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	0	root	_	_
 2	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	1	flat	_	_
 3	-	-	PUNCT	LET	_	4	punct	_	_
-4	Wikipedia	Wikipedia	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = dutch-alpino-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Verenigd Koninkrijk
-1	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	0	root	_	_
-2	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	1	flat	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -541,21 +529,33 @@
 22	.	.	PUNCT	LET	_	8	punct	_	_
 
 # sent_id = 4
-# text = Enkele kleinere eilandengroepen (de Hebriden, de Scillys, de Orkneys, Shetlandeilanden
+# text = Enkele kleinere eilandengroepen (de Hebriden, de Scillys, de Orkneys, Shetlandeilanden et cetera) behoren dan weer wél bij het Verenigd Koninkrijk.
 1	Enkele	enkel	DET	VNW|onbep|det|stan|prenom|met-e|rest	_	3	det	_	_
 2	kleinere	klein	ADJ	ADJ|prenom|comp|met-e|stan	Degree=Cmp	3	amod	_	_
-3	eilandengroepen	eilandengroep	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	_
+3	eilandengroepen	eilandengroep	NOUN	N|soort|mv|basis	Number=Plur	18	nsubj	_	_
 4	(	(	PUNCT	LET	_	6	punct	_	SpaceAfter=No
 5	de	de	DET	LID|bep|stan|rest	Definite=Def	6	det	_	_
-6	Hebriden	hebride	PROPN	N|soort|mv|basis	Number=Plur	3	nmod	_	SpaceAfter=No
+6	Hebriden	Hebriden	PROPN	N|soort|mv|basis	Number=Plur	3	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	LET	_	9	punct	_	_
 8	de	de	DET	LID|bep|stan|rest	Definite=Def	9	det	_	_
-9	Scillys	Scillys	PROPN	N|eigen|mv|basis	Number=Plur	6	conj	_	SpaceAfter=No
+9	Scillys	Scillys	PROPN	N|eigen|ev|basis|genus|stan	Number=Plur	6	conj	_	SpaceAfter=No
 10	,	,	PUNCT	LET	_	12	punct	_	_
 11	de	de	DET	LID|bep|stan|rest	Definite=Def	12	det	_	_
 12	Orkneys	orkney	PROPN	N|eigen|mv|basis	Number=Plur	6	conj	_	SpaceAfter=No
 13	,	,	PUNCT	LET	_	14	punct	_	_
-14	Shetlandeilanden	shetlandeiland	NOUN	N|soort|mv|basis	Number=Plur	6	conj	_	SpacesAfter=\n
+14	Shetlandeilanden	shetlandeiland	NOUN	N|soort|mv|basis	Number=Plur	6	conj	_	SpacesAfter=\s\s\n
+15	et	et	CCONJ	VG|neven	_	16	cc	_	_
+16	cetera	cetera	X	N|soort|mv|basis	Number=Plur	14	conj	_	SpaceAfter=No
+17	)	)	PUNCT	LET	_	6	punct	_	_
+18	behoren	behoren	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
+19	dan	dan	ADV	BW	_	18	advmod	_	_
+20	weer	weer	ADV	BW	_	18	advmod	_	_
+21	wél	wél	ADV	BW	_	18	advmod	_	_
+22	bij	bij	ADP	VZ|init	_	24	case	_	_
+23	het	het	DET	LID|bep|stan|evon	Definite=Def	24	det	_	_
+24	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	18	obl	_	_
+25	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	24	flat	_	SpaceAfter=No
+26	.	.	PUNCT	LET	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -563,13 +563,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Naamgeving[bewerken | brontekst bewerken]
-1	Naamgeving[	naamgeving[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Naamgeving
+1	Naamgeving	naamgeving	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -843,13 +838,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geschiedenis[bewerken | brontekst bewerken]
-1	Geschiedenis[	geschiedenis[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+# text = Geschiedenis
+1	Geschiedenis	geschiedenis	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -857,13 +847,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografie[bewerken | brontekst bewerken]
-1	Geografie[	geografie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Geografie
+1	Geografie	geografie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1099,13 +1084,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Staatsstructuur[bewerken | brontekst bewerken]
-1	Staatsstructuur[	staatsstructuur[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Staatsstructuur
+1	Staatsstructuur	staatsstructuur	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1185,14 +1165,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Koninklijke familie[bewerken | brontekst bewerken]
+# text = Koninklijke familie
 1	Koninklijke	koninklijk	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	familie[	familie[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	familie	familie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1200,13 +1175,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Regering[bewerken | brontekst bewerken]
-1	Regering[	regering[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Regering
+1	Regering	regering	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1907,14 +1877,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Wetgevende macht[bewerken | brontekst bewerken]
+# text = Wetgevende macht
 1	Wetgevende	wetgeven	VERB	WW|od|prenom|met-e	VerbForm=Part	2	amod	_	_
-2	macht[	macht[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	macht	macht	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -1993,13 +1958,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lagerhuis[bewerken | brontekst bewerken]
-1	Lagerhuis[	lagerhuis[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Lagerhuis
+1	Lagerhuis	lagerhuis	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2173,13 +2133,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hogerhuis[bewerken | brontekst bewerken]
-1	Hogerhuis[	hogerhuis[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	amod	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Hogerhuis
+1	Hogerhuis	Hogerhuis	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2381,14 +2336,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politieke partijen[bewerken | brontekst bewerken]
+# text = Politieke partijen
 1	Politieke	politiek	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	partijen[	partijen	NOUN	N|soort|mv|basis	Number=Plur	3	nsubj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	partijen	partij	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -2462,14 +2412,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politieke cultuur[bewerken | brontekst bewerken]
+# text = Politieke cultuur
 1	Politieke	politiek	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	cultuur[	cultuur[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	cultuur	cultuur	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3219,19 +3164,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Het Verenigd Koninkrijk en de Europese Unie[bewerken | brontekst bewerken]
+# text = Het Verenigd Koninkrijk en de Europese Unie
 1	Het	het	DET	LID|bep|stan|evon	Definite=Def	2	det	_	_
-2	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	8	nsubj	_	_
+2	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	0	root	_	_
 3	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	2	flat	_	_
 4	en	en	CCONJ	VG|neven	_	6	cc	_	_
 5	de	de	DET	LID|bep|stan|rest	Definite=Def	6	det	_	_
 6	Europese	Europees	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	conj	_	_
-7	Unie[	unie[	NOUN	N|soort|ev|basis|zijd|stan	_	6	fixed	_	SpaceAfter=No
-8	bewerken	bewerken	VERB	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	|	|	PUNCT	LET	_	11	punct	_	_
-10	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	11	obj	_	_
-11	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	8	parataxis	_	SpaceAfter=No
-12	]	]	PUNCT	LET	_	8	punct	_	SpacesAfter=\n
+7	Unie	unie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	fixed	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3569,14 +3509,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bestuurlijke indeling[bewerken | brontekst bewerken]
+# text = Bestuurlijke indeling
 1	Bestuurlijke	bestuurlijk	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	indeling[	indeling[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	_
-4	|	|	PUNCT	LET	_	5	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	5	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+2	indeling	indeling	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3584,29 +3519,26 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In de laatste dertig jaar[bron?] zijn er in het Verenigd Koninkrijk grote veranderingen in het lokaal bestuur geweest.
+# text = In de laatste dertig jaar zijn er in het Verenigd Koninkrijk grote veranderingen in het lokaal bestuur geweest.
 1	In	in	ADP	VZ|init	_	5	case	_	_
 2	de	de	DET	LID|bep|stan|rest	Definite=Def	5	det	_	_
 3	laatste	laat	ADJ	ADJ|prenom|sup|met-e|stan	Degree=Sup	5	amod	_	_
 4	dertig	dertig	NUM	TW|hoofd|prenom|stan	_	5	nummod	_	_
-5	jaar[	jaar[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	21	obl	_	SpaceAfter=No
-6	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	nmod	_	SpaceAfter=No
-7	?	?	PUNCT	LET	_	6	punct	_	SpaceAfter=No
-8	]	]	PUNCT	LET	_	6	punct	_	_
-9	zijn	zijn	AUX	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	21	aux	_	_
-10	er	er	ADV	VNW|aanw|adv-pron|stan|red|3|getal	_	21	advmod	_	_
-11	in	in	ADP	VZ|init	_	13	case	_	_
-12	het	het	DET	LID|bep|stan|evon	Definite=Def	13	det	_	_
-13	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	16	nmod	_	_
-14	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	13	flat	_	_
-15	grote	groot	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	16	amod	_	_
-16	veranderingen	verandering	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	_
-17	in	in	ADP	VZ|init	_	20	case	_	_
-18	het	het	DET	LID|bep|stan|evon	Definite=Def	20	det	_	_
-19	lokaal	lokaal	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	20	amod	_	_
-20	bestuur	bestuur	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	16	nmod	_	_
-21	geweest	zijn	AUX	WW|vd|vrij|zonder	VerbForm=Part	16	cop	_	SpaceAfter=No
-22	.	.	PUNCT	LET	_	16	punct	_	_
+5	jaar	jaar	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	18	obl	_	_
+6	zijn	zijn	AUX	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	13	aux	_	_
+7	er	er	ADV	VNW|aanw|adv-pron|stan|red|3|getal	_	18	advmod	_	_
+8	in	in	ADP	VZ|init	_	10	case	_	_
+9	het	het	DET	LID|bep|stan|evon	Definite=Def	10	det	_	_
+10	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	13	nmod	_	_
+11	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	10	flat	_	_
+12	grote	groot	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	13	amod	_	_
+13	veranderingen	verandering	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	_
+14	in	in	ADP	VZ|init	_	17	case	_	_
+15	het	het	DET	LID|bep|stan|evon	Definite=Def	17	det	_	_
+16	lokaal	lokaal	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	17	amod	_	_
+17	bestuur	bestuur	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	13	nmod	_	_
+18	geweest	zijn	AUX	WW|vd|vrij|zonder	VerbForm=Part	13	cop	_	SpaceAfter=No
+19	.	.	PUNCT	LET	_	13	punct	_	_
 
 # sent_id = 2
 # text = De bestuurlijke indeling is bovendien voor elk van de landen binnen het koninkrijk weer anders geregeld.
@@ -3805,17 +3737,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Overzeese gebiedsdelen en Brits Kroonbezit[bewerken | brontekst bewerken]
+# text = Overzeese gebiedsdelen en Brits Kroonbezit
 1	Overzeese	overzeese	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	gebiedsdelen	gebiedsdeel	NOUN	N|soort|mv|basis	Number=Plur	6	obj	_	_
+2	gebiedsdelen	gebiedsdeel	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	_
 3	en	en	CCONJ	VG|neven	_	5	cc	_	_
 4	Brits	Brits	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	5	amod	_	_
-5	Kroonbezit[	kroonbezit[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	conj	_	SpaceAfter=No
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-7	|	|	PUNCT	LET	_	9	punct	_	_
-8	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	9	obj	_	_
-9	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	6	parataxis	_	SpaceAfter=No
-10	]	]	PUNCT	LET	_	6	punct	_	SpacesAfter=\n
+5	Kroonbezit	kroonbezit	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -4145,13 +4072,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bevolking[bewerken | brontekst bewerken]
-1	Bevolking[	bevolking[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Bevolking
+1	Bevolking	bevolking	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -4222,13 +4144,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Taal[bewerken | brontekst bewerken]
-1	Taal[	taal[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Taal
+1	Taal	taal	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -4404,13 +4321,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Religie[bewerken | brontekst bewerken]
-1	Religie[	religie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Religie
+1	Religie	religie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -4505,13 +4417,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Christendom[bewerken | brontekst bewerken]
-1	Christendom[	Christendom[	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Christendom
+1	Christendom	Christendom	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -4966,14 +4873,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Andere religies[bewerken | brontekst bewerken]
+# text = Andere religies
 1	Andere	ander	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
-2	religies[	religies[	NOUN	N|soort|mv|basis	Number=Plur	3	obj	_	SpaceAfter=No
-3	bewerken	bewerken	VERB	WW|pv|tgw|mv	VerbForm=Inf	0	root	_	_
-4	|	|	PUNCT	LET	_	6	punct	_	_
-5	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	obj	_	_
-6	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+2	religies	religie	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5343,13 +5245,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cultuur[bewerken | brontekst bewerken]
-1	Cultuur[	cultuur[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Cultuur
+1	Cultuur	cultuur	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5490,13 +5387,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Film[bewerken | brontekst bewerken]
-1	Film[	film[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Film
+1	Film	film	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5760,13 +5652,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Literatuur[bewerken | brontekst bewerken]
-1	Literatuur[	literatuur[	NOUN	N|soort|mv|basis	Gender=Com|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Literatuur
+1	Literatuur	literatuur	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -5894,13 +5781,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Media[bewerken | brontekst bewerken]
-1	Media[	media[	NOUN	N|soort|mv|basis	Number=Plur	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Media
+1	Media	media	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6291,13 +6173,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bezienswaardigheden[bewerken | brontekst bewerken]
-1	Bezienswaardigheden[	bezienswaardigheden[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Bezienswaardigheden
+1	Bezienswaardigheden	bezienswaardigheid	NOUN	N|soort|mv|basis	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6305,13 +6182,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Onderwijs[bewerken | brontekst bewerken]
-1	Onderwijs[	onderwijs[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Onderwijs
+1	Onderwijs	onderwijs	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6576,13 +6448,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sport[bewerken | brontekst bewerken]
-1	Sport[	sport[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	5	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Sport
+1	Sport	sport	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6756,13 +6623,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Economie[bewerken | brontekst bewerken]
-1	Economie[	economie[	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	2	parataxis	_	SpaceAfter=No
-2	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	LET	_	4	punct	_	_
-4	brontekst	brontekst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	obj	_	_
-5	bewerken	bewerken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	2	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+# text = Economie
+1	Economie	economie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -6991,11 +6853,128 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Antigua en Barbuda ·
+# text = Antigua en Barbuda · Australië · Bahama's · Bangladesh · Barbados · Belize · Botswana · Brunei · Canada · Cyprus · Dominica · Fiji · Ghana · Grenada · Guyana · India · Jamaica · Kameroen · Kenia · Kiribati · Lesotho · Malawi · Maleisië · Malta · Mauritius · Mozambique · Namibië · Nauru · Nieuw-Zeeland · Nigeria · Oeganda · Pakistan · Papoea-Nieuw-Guinea · Rwanda · Saint Kitts en Nevis · Saint Lucia · Saint Vincent en de Grenadines · Salomonseilanden · Samoa · Seychellen · Sierra Leone · Singapore · Sri Lanka · Swaziland · Tanzania · Tonga · Trinidad en Tobago · Tuvalu ·
 1	Antigua	Antigua	PROPN	SPEC|deeleigen	_	0	root	_	_
 2	en	en	PROPN	SPEC|deeleigen	_	1	flat	_	_
 3	Barbuda	Barbuda	PROPN	SPEC|deeleigen	_	1	flat	_	_
-4	·	·	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+4	·	·	PUNCT	LET	_	5	punct	_	SpacesAfter=\n
+5	Australië	Australië	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+6	·	·	PUNCT	LET	_	7	punct	_	SpacesAfter=\n
+7	Bahama's	Bahama's	PROPN	N|soort|mv|basis	Number=Plur	1	conj	_	_
+8	·	·	PUNCT	LET	_	5	punct	_	SpacesAfter=\n
+9	Bangladesh	Bangladesh	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+10	·	·	PUNCT	LET	_	15	punct	_	SpacesAfter=\n
+11	Barbados	Barbados	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+12	·	·	PUNCT	LET	_	13	punct	_	SpacesAfter=\n
+13	Belize	Belize	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+14	·	·	PUNCT	LET	_	15	punct	_	SpacesAfter=\n
+15	Botswana	Botswana	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+16	·	·	PUNCT	LET	_	17	punct	_	SpacesAfter=\n
+17	Brunei	Brunei	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+18	·	·	PUNCT	LET	_	19	punct	_	SpacesAfter=\n
+19	Canada	Canada	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+20	·	·	PUNCT	LET	_	17	punct	_	SpacesAfter=\n
+21	Cyprus	Cyprus	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+22	·	·	PUNCT	LET	_	19	punct	_	SpacesAfter=\s\n
+23	Dominica	Dominica	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+24	·	·	PUNCT	LET	_	17	punct	_	SpacesAfter=\n
+25	Fiji	Fiji	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+26	·	·	PUNCT	LET	_	49	punct	_	SpacesAfter=\n
+27	Ghana	Ghana	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+28	·	·	PUNCT	LET	_	19	punct	_	SpacesAfter=\n
+29	Grenada	Grenada	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+30	·	·	PUNCT	LET	_	17	punct	_	SpacesAfter=\n
+31	Guyana	Guyana	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+32	·	·	PUNCT	LET	_	51	punct	_	SpacesAfter=\n
+33	India	India	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+34	·	·	PUNCT	LET	_	49	punct	_	SpacesAfter=\n
+35	Jamaica	Jamaica	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+36	·	·	PUNCT	LET	_	51	punct	_	SpacesAfter=\n
+37	Kameroen	Kameroen	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+38	·	·	PUNCT	LET	_	53	punct	_	SpacesAfter=\n
+39	Kenia	Kenia	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+40	·	·	PUNCT	LET	_	49	punct	_	SpacesAfter=\n
+41	Kiribati	Kiribati	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+42	·	·	PUNCT	LET	_	51	punct	_	SpacesAfter=\n
+43	Lesotho	Lesotho	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+44	·	·	PUNCT	LET	_	51	punct	_	SpacesAfter=\n
+45	Malawi	Malawi	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+46	·	·	PUNCT	LET	_	53	punct	_	SpacesAfter=\n
+47	Maleisië	Maleisië	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+48	·	·	PUNCT	LET	_	49	punct	_	SpacesAfter=\n
+49	Malta	Malta	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+50	·	·	PUNCT	LET	_	51	punct	_	SpacesAfter=\n
+51	Mauritius	Mauritius	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+52	·	·	PUNCT	LET	_	53	punct	_	SpacesAfter=\n
+53	Mozambique	Mozambique	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+54	·	·	PUNCT	LET	_	59	punct	_	SpacesAfter=\n
+55	Namibië	Namibië	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+56	·	·	PUNCT	LET	_	59	punct	_	SpacesAfter=\n
+57	Nauru	Nauru	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+58	·	·	PUNCT	LET	_	59	punct	_	SpacesAfter=\n
+59	Nieuw-Zeeland	Nieuw-Zeeland	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+60	·	·	PUNCT	LET	_	69	punct	_	SpacesAfter=\n
+61	Nigeria	Nigeria	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+62	·	·	PUNCT	LET	_	63	punct	_	SpacesAfter=\n
+63	Oeganda	Oeganda	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+64	·	·	PUNCT	LET	_	65	punct	_	SpacesAfter=\n
+65	Pakistan	Pakistan	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	71	conj	_	_
+66	·	·	PUNCT	LET	_	67	punct	_	SpacesAfter=\n
+67	Papoea-Nieuw-Guinea	Papoea-nieuw-Guinea	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+68	·	·	PUNCT	LET	_	69	punct	_	SpacesAfter=\n
+69	Rwanda	Rwanda	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+70	·	·	PUNCT	LET	_	71	punct	_	SpacesAfter=\n
+71	Saint	Saint	PROPN	SPEC|deeleigen	_	1	conj	_	_
+72	Kitts	Kitts	PROPN	SPEC|deeleigen	_	71	flat	_	_
+73	en	en	CCONJ	VG|neven	_	71	flat	_	_
+74	Nevis	Nevis	PROPN	SPEC|deeleigen	_	71	flat	_	_
+75	·	·	PUNCT	LET	_	76	punct	_	SpacesAfter=\n
+76	Saint	Saint	PROPN	SPEC|deeleigen	_	1	conj	_	_
+77	Lucia	Lucia	PROPN	SPEC|deeleigen	_	71	flat	_	_
+78	·	·	PUNCT	LET	_	79	punct	_	SpacesAfter=\n
+79	Saint	Saint	PROPN	SPEC|deeleigen	_	1	conj	_	_
+80	Vincent	Vincent	PROPN	SPEC|deeleigen	_	79	flat	_	_
+81	en	en	CCONJ	VG|neven	_	79	flat	_	_
+82	de	de	PROPN	SPEC|deeleigen	_	79	flat	_	_
+83	Grenadines	Grenadines	PROPN	SPEC|deeleigen	_	79	flat	_	_
+84	·	·	PUNCT	LET	_	85	punct	_	SpacesAfter=\n
+85	Salomonseilanden	Salomonseilanden	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	1	conj	_	_
+86	·	·	PUNCT	LET	_	91	punct	_	SpacesAfter=\n
+87	Samoa	Samoa	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+88	·	·	PUNCT	LET	_	89	punct	_	SpacesAfter=\n
+89	Seychellen	Seychellen	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+90	·	·	PUNCT	LET	_	91	punct	_	SpacesAfter=\n
+91	Sierra	Sierra	PROPN	SPEC|deeleigen	_	1	conj	_	_
+92	Leone	Leone	PROPN	SPEC|deeleigen	_	91	flat	_	_
+93	·	·	PUNCT	LET	_	94	punct	_	SpacesAfter=\n
+94	Singapore	Singapore	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+95	·	·	PUNCT	LET	_	96	punct	_	SpacesAfter=\n
+96	Sri	Sri	PROPN	SPEC|deeleigen	_	1	conj	_	_
+97	Lanka	Lanka	PROPN	SPEC|deeleigen	_	96	flat	_	_
+98	·	·	PUNCT	LET	_	99	punct	_	SpacesAfter=\n
+99	Swaziland	Swaziland	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+100	·	·	PUNCT	LET	_	105	punct	_	SpacesAfter=\n
+101	Tanzania	Tanzania	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+102	·	·	PUNCT	LET	_	103	punct	_	SpacesAfter=\n
+103	Tonga	Tonga	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+104	·	·	PUNCT	LET	_	105	punct	_	SpacesAfter=\n
+105	Trinidad	Trinidad	PROPN	SPEC|deeleigen	_	1	conj	_	_
+106	en	en	CCONJ	VG|neven	_	105	flat	_	_
+107	Tobago	Tobago	PROPN	SPEC|deeleigen	_	105	flat	_	_
+108	·	·	PUNCT	LET	_	109	punct	_	SpacesAfter=\n
+109	Tuvalu	Tuvalu	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+110	·	·	PUNCT	LET	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Vanuatu · Verenigd Koninkrijk · Zambia · Zuid-Afrika
+1	Vanuatu	Vanuatu	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
+2	·	·	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+3	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	1	conj	_	_
+4	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	3	flat	_	_
+5	·	·	PUNCT	LET	_	6	punct	_	SpacesAfter=\n
+6	Zambia	Zambia	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	_
+7	·	·	PUNCT	LET	_	8	cc	_	SpacesAfter=\n
+8	Zuid-Afrika	Zuid-Afrika	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -7249,13 +7228,4 @@
 1	Zweden	Zweden	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	_
 2	·	·	PUNCT	LET	_	3	punct	_	_
 3	Zwitserland	Zwitserland	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = dutch-alpino-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigatiemenu
-1	Navigatiemenu	navigatiemenu	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
 

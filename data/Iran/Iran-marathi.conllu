@@ -1,5 +1,3 @@
-# https://mr.wikipedia.org/wiki/%E0%A4%87%E0%A4%B0%E0%A4%BE%E0%A4%A3
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = इराण - विकिपीडिया
 1	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	-	-	PUNCT	_	_	3	punct	_	_
-3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -17,17 +15,65 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इराण
-1	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = इराण हा मध्यपूर्वेतील एक देश आहे.
+1	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	SpacesBefore=\n
+2	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+3	मध्यपूर्वेतील	मध्यपूर्वेणे	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	obl	_	_
+4	एक	एक	DET	_	Number=Sing|PronType=Ind	5	det	_	_
+5	देश	देश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+6	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = {{{लोकसंख्या_गणना_वर्ष}}}
-1	{{{लोकसंख्या_गणना_वर्ष}}}	{{{लोकसंख्या_गणना_वर्ष}}}	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# sent_id = 2
+# text = इराण चे पूर्वीचे नाव पर्शिया असे होते.
+1	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	चे	चे	DET	_	_	3	det	_	_
+3	पूर्वीचे	पूर्वीचे	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	6	obl	_	_
+4	नाव	नाव	CCONJ	_	_	6	cc	_	_
+5	पर्शिया	पर्शा	ADJ	_	Case=Obl	3	amod	_	_
+6	असे	असे	SCONJ	_	_	0	root	_	_
+7	होते	असणे	AUX	_	Gender=Neut|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 3
+# text = पर्शियन संस्कृती जगातील सर्वात प्राचीन संस्कृतीपैकी एक आहे.
+1	पर्शियन	पर्शियन	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	संस्कृती	संस्कृती	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+3	जगातील	जगाणे	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	5	obl	_	_
+4	सर्वात	सर्व	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	6	obl	_	_
+5	प्राचीन	प्राची	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	6	obl	_	_
+6	संस्कृतीपैकी	संस्कृतीपैकी	ADV	_	_	0	root	_	_
+7	एक	एक	DET	_	Number=Sing|PronType=Ind	6	det	_	_
+8	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 4
+# text = खनिज तेल साठयात संपूर्ण जगात क्रमांक तिसरा तर वायुसाठ्यात दुसऱ्या क्रमांकाचा देश आहे.
+1	खनिज	खनिज	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+2	तेल	तेा	PRON	_	Case=Dat|Number=Sing|Person=2	5	obj	_	_
+3	साठयात	साठय	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	5	obl	_	_
+4	संपूर्ण	संपूर्ण	ADJ	_	Case=Nom	5	amod	_	_
+5	जगात	जग	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	12	obl	_	_
+6	क्रमांक	क्रमांक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
+7	तिसरा	तिसरा	ADJ	_	_	12	amod	_	_
+8	तर	तर	CCONJ	_	_	12	cc	_	_
+9	वायुसाठ्यात	वायुसाठ्यात	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	12	obl	_	_
+10	दुसऱ्या	दुसरा	NUM	_	_	11	amod	_	_
+11	क्रमांकाचा	क्रमांकाचा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	12	obl	_	_
+12	देश	देश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+13	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	_	_
+
+# sent_id = 5
+# text = इराकविरुद्ध ९ वर्षे चाललेले युद्ध यादेशाने केले.
+1	इराकविरुद्ध	इराकविरुद्ध	NOUN	_	_	4	nsubj	_	_
+2	९	९	NUM	_	_	3	nummod	_	_
+3	वर्षे	वर्ष	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	obj	_	_
+4	चाललेले	चारणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	5	acl	_	_
+5	युद्ध	युद्ध	NOUN	_	_	7	obj	_	_
+6	यादेशाने	यादेश	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	7	obl	_	_
+7	केले	करणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -60,8 +106,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इतिहास[संपादन]
-1	इतिहास[संपादन]	इतिहास[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = इतिहास
+1	इतिहास	इतिहास	ADV	_	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -69,9 +115,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = नावाची व्युत्पत्ती[संपादन]
-1	नावाची	नावाची	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
-2	व्युत्पत्ती[संपादन]	व्युत्पत्ती[संपादन]	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = नावाची व्युत्पत्ती
+1	नावाची	नावाची	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
+2	व्युत्पत्ती	व्युत्पत्ती	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -255,9 +301,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = प्रागैतिहासिक कालखंड[संपादन]
-1	प्रागैतिहासिक	प्रागैतिहासिक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	कालखंड[संपादन]	कालखंड[संप	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = प्रागैतिहासिक कालखंड
+1	प्रागैतिहासिक	प्रागैतिहासिक	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
+2	कालखंड	कालखंड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -265,8 +311,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भूगोल[संपादन]
-1	भूगोल[संपादन]	भूगोल[संप	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	nsubj	_	SpacesAfter=\n
+# text = भूगोल
+1	भूगोल	भूगणे	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -274,8 +320,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = चतु:सीमा[संपादन]
-1	चतु:सीमा[संपादन]	चतु:सीमा[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = चतु:सीमा
+1	चतु:सीमा	चतु:सीमा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -283,9 +329,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = राजकीय विभाग[संपादन]
+# text = राजकीय विभाग
 1	राजकीय	राजकीय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	विभाग[संपादन]	विभाग[संपादन]	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	विभाग	विभाग	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -362,9 +408,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = मोठी शहरे[संपादन]
+# text = मोठी शहरे
 1	मोठी	मोठी	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
-2	शहरे[संपादन]	शहरे[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+2	शहरे	शहरे	NOUN	_	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -372,8 +418,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = समाजव्यवस्था[संपादन]
-1	समाजव्यवस्था[संपादन]	समाजव्यवस्था[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = समाजव्यवस्था
+1	समाजव्यवस्था	समाजव्यवस्था	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -381,8 +427,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = वस्तीविभागणी[संपादन]
-1	वस्तीविभागणी[संपादन]	वस्तीविभागणी[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = वस्तीविभागणी
+1	वस्तीविभागणी	वस्तीविभागणी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -390,8 +436,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = धर्म[संपादन]
-1	धर्म[संपादन]	धर्म[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = धर्म
+1	धर्म	धर्म	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -414,8 +460,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = शिक्षण[संपादन]
-1	शिक्षण[संपादन]	शिक्षण[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = शिक्षण
+1	शिक्षण	शिक्षण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -423,8 +469,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = संस्कृती[संपादन]
-1	संस्कृती[संपादन]	संस्कृती[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = संस्कृती
+1	संस्कृती	संस्कृती	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -447,8 +493,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = राजकारण[संपादन]
-1	राजकारण[संपादन]	राजकारण[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = राजकारण
+1	राजकारण	राजकारण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -456,8 +502,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = अर्थतंत्र[संपादन]
-1	अर्थतंत्र[संपादन]	अर्थतंत्र[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = अर्थतंत्र
+1	अर्थतंत्र	अर्थतंत्र	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -557,65 +603,28 @@
 14	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	SpaceAfter=No
 15	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = हे सुद्धा पहा[संपादन]
-1	हे	हा	DET	_	Distance=Prox|Gender=Neut|Number=Sing|Person=3	3	det	_	_
-2	सुद्धा	सुद्धा	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	3	amod	_	_
-3	पहा[संपादन]	पहा[संपादन]	NOUN	_	Case=Dat|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = बाह्य दुवे[संपादन]
-1	बाह्य	बाह्य	ADJ	_	_	2	amod	_	_
-2	दुवे[संपादन]	दुवे[संूक	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = बांगलादेश ·
-1	बांगलादेश	बांगलादणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 2
-# text = भूतान ·
-1	भूतान	भूतान	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 3
-# text = भारत ·
-1	भारत	भारत	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 4
-# text = मालदीव ·
-1	मालदीव	मालदीव	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 5
-# text = नेपाळ ·
-1	नेपाळ	नेपाळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 6
-# text = पाकिस्तान ·
-1	पाकिस्तान	पाकिस्तान	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
 # sent_id = 7
-# text = श्रीलंका
-1	श्रीलंका	श्रीलंका	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = इराणमध्ये केशराचे उत्पादनही होते.
+1	इराणमध्ये	इराणमध्ये	ADJ	_	_	2	amod	_	_
+2	केशराचे	केशर	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	3	obl	_	_
+3	उत्पादनही	उत्पादनही	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+4	होते	असणे	AUX	_	Gender=Neut|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = इराण मध्ये पिकणारे केशर हे स्वाद आणि रंगात अव्वल मानले जाते.
+1	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	मध्ये	मधे	ADV	_	_	3	advmod	_	_
+3	पिकणारे	पिकणे	VERB	_	Aspect=Prosp|VerbForm=Fin	0	root	_	_
+4	केशर	केशर	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+5	हे	हा	DET	_	Distance=Prox|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	_
+6	स्वाद	स्वाद	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+7	आणि	आणि	CCONJ	_	_	10	cc	_	_
+8	रंगात	रंग	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	10	obl	_	_
+9	अव्वल	अव्वल	ADJ	_	_	10	compound:lvc	_	_
+10	मानले	मानणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	3	conj	_	_
+11	जाते	जाणे	VERB	_	Aspect=Imp|Gender=Neut|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	compound:svc	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -623,21 +632,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = क्वचित समाविष्ट केले जाणारे अन्य देश: अफगाणिस्तान · इराण ·
-1	क्वचित	क्वचित	ADV	_	_	3	advmod	_	_
-2	समाविष्ट	समाविष्ट	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-3	केले	करणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	6	acl	_	_
-4	जाणारे	जाणे	VERB	_	Case=Erg|Gender=Masc|Number=Sing	3	aux	_	_
-5	अन्य	अन्य	ADJ	_	_	6	amod	_	_
-6	देश:	देश:	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	SpacesAfter=  
-7	अफगाणिस्तान	अफगाणिस्तान	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	SpacesAfter= 
-8	·	·	PUNCT	_	_	9	punct	_	_
-9	इराण	इराण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-10	·	·	PUNCT	_	_	9	punct	_	_
-
-# sent_id = 2
-# text = म्यानमार
-1	म्यानमार	म्यानमार	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = हे सुद्धा पहा
+1	हे	हा	PRON	_	Distance=Prox|Gender=Neut|Number=Sing|Person=3	2	obj	_	_
+2	सुद्धा	सुद्धा	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+3	पहा	पहा	PUNCT	_	_	2	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -645,7 +643,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = दिक्चालन यादी
-1	दिक्चालन	दिक्च	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
-2	यादी	यादी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\n
+# text = बाह्य दुवे
+1	बाह्य	बाह्य	ADJ	_	_	2	amod	_	_
+2	दुवे	दुवे	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 

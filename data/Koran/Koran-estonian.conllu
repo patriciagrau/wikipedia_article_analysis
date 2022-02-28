@@ -1,5 +1,3 @@
-# https://et.wikipedia.org/wiki/Koraan
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Koraan – Vikipeedia
 1	Koraan	koraan	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
 2	–	-	PUNCT	Z	_	1	punct	_	_
-3	Vikipeedia	viki_peedia	NOUN	S	Case=Nom|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Koraan
-1	Koraan	koraan	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
+3	Vikipeedia	viki_peedia	NOUN	S	Case=Nom|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -95,10 +84,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = See on Raamat, milles ei ole midagi kahtlemisväärset ja mis on teejuhiks jumalakartlikele,
+# text = See on Raamat, milles ei ole midagi kahtlemisväärset ja mis on teejuhiks jumalakartlikele, neile, kes usuvad seda, mis on salajas, peavad palvust ja jagavad almust sellest, mis me neile osaks oleme andnud; neile, kes usuvad seda, mis on ilmutatud sulle ja mis läkitatud enne sind, ning on veendunud, et on olemas tulevane elu.
 1	See	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
 2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
-3	Raamat	Raamat	PROPN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	Raamat	raamat	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	Z	_	5	punct	_	_
 5	milles	mis	PRON	P	Case=Ine|Number=Sing|PronType=Int,Rel	3	acl:relcl	_	_
 6	ei	ei	AUX	V	Polarity=Neg	5	aux	_	_
@@ -109,8 +98,66 @@
 11	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	13	nsubj:cop	_	_
 12	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
 13	teejuhiks	tee_juht	NOUN	S	Case=Tra|Number=Sing	5	conj	_	_
-14	jumalakartlikele	jumala_kartlikele	ADJ	A	Case=All|Degree=Pos|Number=Plur	13	obl	_	SpaceAfter=No
-15	,	,	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+14	jumalakartlikele	jumala_kartlikele	ADJ	A	Case=All|Degree=Pos|Number=Plur	13	amod	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	16	punct	_	SpacesAfter=\n
+16	neile	tema	PRON	P	Case=All|Number=Plur|Person=3|PronType=Prs	13	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Z	_	19	punct	_	_
+18	kes	kes	PRON	P	Case=Nom|Number=Plur|PronType=Int,Rel	19	nsubj	_	_
+19	usuvad	uskuma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	acl:relcl	_	_
+20	seda	see	PRON	P	Case=Par|Number=Sing|PronType=Dem	19	obj	_	SpaceAfter=No
+21	,	,	PUNCT	Z	_	24	punct	_	_
+22	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	24	nsubj:cop	_	_
+23	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	cop	_	_
+24	salajas	salajas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	20	acl:relcl	_	SpaceAfter=No
+25	,	,	PUNCT	Z	_	26	punct	_	_
+26	peavad	pidama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+27	palvust	palvus	NOUN	S	Case=Par|Number=Sing	26	obj	_	_
+28	ja	ja	CCONJ	J	_	29	cc	_	_
+29	jagavad	jagama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	conj	_	_
+30	almust	alm	NOUN	S	Case=Par|Number=Sing	29	obj	_	_
+31	sellest	see	PRON	P	Case=Ela|Number=Sing|PronType=Dem	29	obl	_	SpaceAfter=No
+32	,	,	PUNCT	Z	_	38	punct	_	_
+33	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	38	obj	_	_
+34	me	mina	PRON	P	Case=Nom|Number=Plur|Person=1|PronType=Prs	38	nsubj	_	_
+35	neile	tema	PRON	P	Case=All|Number=Plur|Person=3|PronType=Prs	38	obl	_	_
+36	osaks	osa	NOUN	S	Case=Tra|Number=Sing	38	xcomp	_	_
+37	oleme	olema	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	38	aux	_	_
+38	andnud	andma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	31	acl:relcl	_	SpaceAfter=No
+39	;	;	PUNCT	Z	_	40	punct	_	SpacesAfter=\n
+40	neile	tema	PRON	P	Case=All|Number=Plur|Person=3|PronType=Prs	29	obl	_	SpaceAfter=No
+41	,	,	PUNCT	Z	_	43	punct	_	_
+42	kes	kes	PRON	P	Case=Nom|Number=Plur|PronType=Int,Rel	43	nsubj	_	_
+43	usuvad	uskuma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	40	acl:relcl	_	_
+44	seda	see	PRON	P	Case=Par|Number=Sing|PronType=Dem	43	obj	_	SpaceAfter=No
+45	,	,	PUNCT	Z	_	48	punct	_	_
+46	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	48	obj	_	_
+47	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	48	aux	_	_
+48	ilmutatud	ilmutama	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	44	acl:relcl	_	_
+49	sulle	sina	PRON	P	Case=All|Number=Sing|Person=2|PronType=Prs	48	obl	_	_
+50	ja	ja	CCONJ	J	_	52	cc	_	_
+51	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	52	obj	_	_
+52	läkitatud	läkitama	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	48	conj	_	_
+53	enne	enne	ADP	K	AdpType=Prep	54	case	_	_
+54	sind	sina	PRON	P	Case=Par|Number=Sing|Person=2|PronType=Prs	52	obl	_	SpaceAfter=No
+55	,	,	PUNCT	Z	_	58	punct	_	_
+56	ning	ning	CCONJ	J	_	58	cc	_	_
+57	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	58	aux	_	_
+58	veendunud	veenduma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	43	conj	_	SpaceAfter=No
+59	,	,	PUNCT	Z	_	61	punct	_	_
+60	et	et	SCONJ	J	_	61	mark	_	_
+61	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	58	ccomp	_	_
+62	olemas	olema	VERB	V	Case=Ine|VerbForm=Sup|Voice=Act	61	xcomp	_	_
+63	tulevane	tulevane	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	64	amod	_	_
+64	elu	elu	NOUN	S	Case=Nom|Number=Sing	61	nsubj	_	SpaceAfter=No
+65	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2
+# text = (2. suura).
+1	(	(	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+2	2.	2.	ADJ	N	NumForm=Digit|NumType=Ord	3	amod	_	_
+3	suura	suur	NOUN	S	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	)	)	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+5	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -597,13 +644,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Suurad[muuda | muuda lähteteksti]
-1	Suurad[	suur	NOUN	V	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	1	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+# text = Suurad
+1	Suurad	suur	NOUN	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -611,13 +653,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Viited[muuda | muuda lähteteksti]
-1	Viited[	vii_ted[	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	VerbForm=Inf	1	acl	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+# text = Viited
+1	Viited	viide	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -625,13 +662,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kirjandus[muuda | muuda lähteteksti]
-1	Kirjandus[	kirjandus	NOUN	S	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	ADJ	A	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	1	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Kirjandus
+1	Kirjandus	kirjandus	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -639,20 +671,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Välislingid[muuda | muuda lähteteksti]
-1	Välislingid[	välis_ling	NOUN	S	Case=Gen|Number=Plur	5	nmod	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	VerbForm=Inf	5	amod	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	ADJ	A	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigeerimismenüü
-1	Navigeerimismenüü	navi_geerimismenüü	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Välislingid
+1	Välislingid	välis_ling	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 

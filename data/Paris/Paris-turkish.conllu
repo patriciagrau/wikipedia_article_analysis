@@ -1,5 +1,3 @@
-# https://tr.wikipedia.org/wiki/Paris
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Paris - Vikipedi
 1	Paris	paris	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
 2	-	-	PUNCT	Punc	_	3	punct	_	_
-3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpacesAfter=\n
+3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -17,17 +15,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Languages
-1	Languages	languages	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Paris
-1	Paris	paris	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+# text = DoğrulukGörüldü
+1	DoğrulukGörüldü	doğruluk	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -136,7 +125,24 @@
 31-32	merkezidir	_	_	_	_	_	_	_	SpaceAfter=No
 31	merkezi	merkez	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	0	root	_	_
 32	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	31	cop	_	_
-33	.	.	PUNCT	Punc	_	31	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	Punc	_	31	punct	_	SpacesAfter=\s\n
+
+# sent_id = 2
+# text = Paris Bölgesinin 2017'de 709 milyar € (808 milyar $) GSYİH'sı vardı.
+1	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2	Bölgesinin	bölge	NOUN	Noun	Case=Gen|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	3	nmod:poss	_	_
+3	2017'de	2017	NUM	NNum	Case=Loc|Number=Sing|NumType=Card|Person=3	13	nummod	_	_
+4	709	709	NUM	ANum	NumType=Card	13	obj	_	_
+5	milyar	milyar	NUM	ANum	NumType=Card	4	flat	_	_
+6	€	€	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	flat	_	_
+7	(	(	PUNCT	Punc	_	8	punct	_	SpaceAfter=No
+8	808	808	NUM	ANum	NumType=Card	4	appos	_	_
+9	milyar	milyar	NUM	ANum	NumType=Card	8	flat	_	_
+10	$	$	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	flat	_	SpaceAfter=No
+11	)	)	PUNCT	Punc	_	8	punct	_	_
+12	GSYİH'sı	Gsyi̇h	PROPN	Prop	Case=Acc|Number=Sing|Person=3	13	obj	_	_
+13	vardı	var	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	Punc	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -476,6 +482,74 @@
 48	dır	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	47	cop	_	_
 49	.	.	PUNCT	Punc	_	47	punct	_	SpacesAfter=\s\n
 
+# sent_id = 2
+# text = Diğer popüler turistik yerler arasında yine Île de la Cité'de bulunan Sainte-Chapelle'in Gotik kraliyet şapeli; 1889 Paris Evrensel Sergisi için inşa edilen Eyfel Kulesi; 1900 Paris Evrensel Sergisi için inşa edilen Grand Palais ve Petit Palais; Champs-Élysées üzerindeki Arc de Triomphe ve sanat tarihiyle ve Sacré-Coeur Bazilikası ile Montmartre tepesi vardır.
+1	Diğer	diğer	ADJ	Adj	_	4	amod	_	_
+2	popüler	popü	NOUN	Noun	Case=Nom|Number=Plur|Person=3	11	nsubj	_	_
+3	turistik	turistik	ADJ	Adj	_	4	amod	_	_
+4	yerler	yer	NOUN	Noun	Case=Nom|Number=Plur|Person=3	5	nmod:poss	_	_
+5	arasında	ara	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	61	amod	_	_
+6	yine	yine	ADV	Adverb	_	11	advmod	_	_
+7	Île	île	ADV	Adverb	Case=Nom|Number=Sing|Person=3	11	obl	_	_
+8	de	de	CCONJ	Conj	_	7	advmod:emph	_	_
+9	la	la	PROPN	Noun	Case=Nom|Number=Sing|Person=3	11	obl	_	_
+10	Cité'de	Cité	PROPN	Prop	Case=Loc|Number=Sing|Person=3	9	flat	_	_
+11	bulunan	bulun	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	12	acl	_	_
+12	Sainte	Sainte	PROPN	Prop	Case=Nom|Number=Sing|Person=3	17	nmod:poss	_	SpaceAfter=No
+13	-	-	PUNCT	Punc	_	61	punct	_	SpaceAfter=No
+14	Chapelle'in	Chapelle	PROPN	Prop	Case=Gen|Number=Sing|Person=3	12	compound	_	_
+15	Gotik	gotik	ADJ	Adj	_	16	amod	_	_
+16	kraliyet	kraliyet	NOUN	Noun	Case=Nom|Number=Sing|Person=3	17	nmod:poss	_	_
+17	şapeli	şapel	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	26	compound	_	SpaceAfter=No
+18	;	;	PUNCT	Punc	_	26	punct	_	_
+19	1889	1889	NUM	NNum	_	24	nmod	_	_
+20	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	24	nmod	_	_
+21	Evrensel	evrensel	ADJ	Adj	Case=Nom|Number=Sing|Person=3	20	flat	_	_
+22	Sergisi	sergi	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	20	compound	_	_
+23	için	için	ADP	PCNom	_	20	case	_	_
+24	inşa	inşa	NOUN	Noun	Case=Nom|Number=Sing|Person=3	26	nmod	_	_
+25	edilen	et	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	24	compound:lvc	_	_
+26	Eyfel	Eyfel	PROPN	Prop	Case=Nom|Number=Sing|Person=3	61	nsubj	_	_
+27	Kulesi	kule	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	26	flat	_	SpaceAfter=No
+28	;	;	PUNCT	Punc	_	39	punct	_	_
+29	1900	1900	NUM	NNum	NumType=Card	45	nummod	_	_
+30	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	45	nmod	_	_
+31	Evrensel	evrensel	ADJ	Adj	_	30	flat	_	_
+32	Sergisi	sergi	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	30	flat	_	_
+33	için	için	ADP	PCNom	_	30	case	_	_
+34	inşa	inşa	NOUN	Noun	Case=Nom|Number=Sing|Person=3	36	nmod	_	_
+35	edilen	et	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	24	compound:lvc	_	_
+36	Grand	grand	ADJ	Prop	Case=Nom|Number=Sing|Person=3	61	nsubj	_	_
+37	Palais	palais	NOUN	Noun	Case=Nom|Number=Sing|Person=3	36	flat	_	_
+38	ve	ve	CCONJ	Conj	_	39	cc	_	_
+39	Petit	Petit	PROPN	Prop	Case=Nom|Number=Sing|Person=3	36	conj	_	_
+40	Palais	Palais	NOUN	Noun	Case=Nom|Number=Sing|Person=3	36	flat	_	SpaceAfter=No
+41	;	;	PUNCT	Punc	_	39	punct	_	_
+42	Champs	Champs	PROPN	Prop	Case=Nom|Number=Sing|Person=3	45	nmod:poss	_	SpaceAfter=No
+43	-	-	PUNCT	Punc	_	39	punct	_	SpaceAfter=No
+44	Élysées	élysées	NOUN	Noun	Case=Nom|Number=Sing|Person=3	42	flat	_	_
+45-46	üzerindeki	_	_	_	_	_	_	_	_
+45	üzerinde	üzer	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	26	nmod	_	_
+46	ki	ki	ADP	Rel	_	45	case	_	_
+47	Arc	Arc	PROPN	Prop	Case=Nom|Number=Sing|Person=3	52	nmod:poss	_	_
+48	de	de	CCONJ	Conj	_	36	advmod:emph	_	_
+49	Triomphe	Triomphe	PROPN	Prop	Case=Nom|Number=Sing|Person=3	36	flat	_	_
+50	ve	ve	CCONJ	Conj	_	39	cc	_	_
+51	sanat	sanat	NOUN	Noun	Case=Nom|Number=Sing|Person=3	52	nmod:poss	_	_
+52	tarihiyle	tarih	NOUN	Noun	Case=Ins|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	61	obl	_	_
+53	ve	ve	CCONJ	Conj	_	60	cc	_	_
+54	Sacré	sacré	PROPN	Prop	Case=Nom|Number=Sing|Person=3	52	nmod:poss	_	SpaceAfter=No
+55	-	-	PUNCT	Punc	_	54	punct	_	SpaceAfter=No
+56	Coeur	Coeur	NOUN	Noun	Case=Nom|Number=Sing|Person=3	54	flat	_	_
+57	Bazilikası	bazilika	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	54	flat	_	_
+58	ile	ile	CCONJ	Conj	_	60	cc	_	_
+59	Montmartre	montmartre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	60	nmod:poss	_	_
+60	tepesi	tepe	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	54	conj	_	_
+61-62	vardır	_	_	_	_	_	_	_	SpaceAfter=No
+61	var	var	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	0	root	_	_
+62	dır	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	61	cop	_	_
+63	.	.	PUNCT	Punc	_	61	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -712,6 +786,69 @@
 10	edilir	et	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass	9	compound:lvc	_	SpaceAfter=No
 11	.	.	PUNCT	Punc	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Tüm dünyada anıtları, sanatsal ve kültürel yaşamı ile bilinen ve dünya tarihinde önemli bir yeri olan Paris, başlıca ekonomik ve politik merkezler arasında yer almakta ve uluslararası taşımacılığın geçiş noktalarından birini oluşturmaktadır.
+1	Tüm	tüm	DET	Det	_	2	det	_	_
+2	dünyada	dünya	NOUN	Noun	Case=Loc|Number=Sing|Person=3	10	obl	_	_
+3	anıtları	anıt	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	10	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punc	_	5	punct	_	_
+5	sanatsal	sanatsal	ADJ	Adj	_	8	amod	_	_
+6	ve	ve	CCONJ	Conj	_	7	cc	_	_
+7	kültürel	kültürel	ADJ	Adj	_	5	conj	_	_
+8	yaşamı	yaşam	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	3	conj	_	_
+9	ile	ile	CCONJ	Conj	_	10	nmod	_	_
+10	bilinen	bil	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	19	acl	_	_
+11	ve	ve	CCONJ	Conj	_	18	cc	_	_
+12	dünya	dünya	NOUN	Noun	Case=Nom|Number=Sing|Person=3	13	nmod:poss	_	_
+13	tarihinde	tarih	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	nmod	_	_
+14-15	önemli	_	_	_	_	_	_	_	_
+14	önem	önem	NOUN	Noun	Case=Nom|Number=Sing|Person=3	17	nmod	_	_
+15	li	li	ADP	With	_	14	case	_	_
+16	bir	bir	NUM	ANum	NumType=Card	17	det	_	_
+17	yeri	yer	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	18	obj	_	_
+18	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	19	acl	_	_
+19	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	35	nsubj	_	SpaceAfter=No
+20	,	,	PUNCT	Punc	_	35	punct	_	_
+21	başlıca	başlıca	ADV	Adverb	_	22	advmod	_	_
+22	ekonomik	ekonomik	ADJ	Adj	_	25	amod	_	_
+23	ve	ve	CCONJ	Conj	_	24	cc	_	_
+24	politik	politik	ADJ	Adj	_	22	conj	_	_
+25	merkezler	merkez	NOUN	Noun	Case=Nom|Number=Plur|Person=3	26	nmod:poss	_	_
+26	arasında	ara	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	27	amod	_	_
+27	yer	yer	NOUN	Noun	Case=Nom|Number=Sing|Person=3	35	obj	_	_
+28	almakta	al	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres	27	compound	_	_
+29	ve	ve	CCONJ	Conj	_	35	cc	_	_
+30	uluslararası	uluslararası	ADJ	Adj	_	31	amod	_	_
+31	taşımacılığın	taşımacılık	NOUN	Noun	Case=Gen|Number=Sing|Person=3	33	nmod:poss	_	_
+32	geçiş	geçiş	ADJ	Noun	Case=Nom|Number=Sing|Person=3	33	nmod:poss	_	_
+33	noktalarından	nokta	NOUN	Noun	Case=Abl|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	34	nmod:poss	_	_
+34	birini	bir	NUM	NNum	Case=Acc|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	35	obj	_	_
+35	oluşturmaktadır	oluş	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres|Voice=Cau	0	root	_	SpaceAfter=No
+36	.	.	PUNCT	Punc	_	35	punct	_	_
+
+# sent_id = 4
+# text = Moda ve lüksün dünya başkenti olan Paris, "Işık Şehir" (Ville Lumière) diye de anılmaktadır.
+1	Moda	moda	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	nmod:poss	_	_
+2	ve	ve	CCONJ	Conj	_	3	cc	_	_
+3	lüksün	lüksün	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	conj	_	_
+4	dünya	dünya	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	nmod:poss	_	_
+5	başkenti	başkent	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	6	obj	_	_
+6	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	7	acl	_	_
+7	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	19	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punc	_	19	punct	_	_
+9	"	"	PUNCT	Punc	_	10	punct	_	SpaceAfter=No
+10	Işık	işık	NOUN	Noun	Case=Nom|Number=Sing|Person=3	19	obl	_	_
+11	Şehir	Şehir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	10	compound	_	SpaceAfter=No
+12	"	"	PUNCT	Punc	_	14	punct	_	_
+13	(	(	PUNCT	Punc	_	14	punct	_	SpaceAfter=No
+14	Ville	Ville	PROPN	Prop	Case=Nom|Number=Sing|Person=3	10	appos	_	_
+15	Lumière	Lumière	PROPN	Prop	Case=Nom|Number=Sing|Person=3	14	compound	_	SpaceAfter=No
+16	)	)	PUNCT	Punc	_	14	punct	_	_
+17	diye	diye	ADP	PCNom	_	10	case	_	_
+18	de	de	CCONJ	Conj	_	14	advmod:emph	_	_
+19	anılmaktadır	anıl	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres	0	root	_	SpaceAfter=No
+20	.	.	PUNCT	Punc	_	19	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -814,14 +951,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tarihçe[değiştir | kaynağı değiştir]
-1	Tarihçe	Tarihçe	ADV	Adverb	Case=Nom|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
-2	[	[	PRON	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Tarihçe
+1	Tarihçe	Tarihçe	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -829,14 +960,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etimoloji[değiştir | kaynağı değiştir]
-1	Etimoloji	etimoloji	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	Punc	_	3	discourse	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Etimoloji
+1	Etimoloji	etimoloji	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -923,22 +1048,193 @@
 16	rastlanır	rastlan	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	Punc	_	16	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Bu adın kaynağı tam olarak bilinememektedir.
+1	Bu	bu	DET	Det	_	2	det	_	_
+2	adın	ad	NOUN	Noun	Case=Gen|Number=Sing|Person=3	3	nmod:poss	_	_
+3	kaynağı	kaynak	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	6	nsubj	_	_
+4	tam	tam	ADJ	Adj	_	6	amod	_	_
+5	olarak	olarak	ADP	PCNom	_	4	case	_	_
+6	bilinememektedir	bili	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punc	_	6	punct	_	_
+
+# sent_id = 7
+# text = Paris bölgesinde çokça bulunan taş ocaklarına istinaden Galce "kwar" (taş ocağı) kelimesinden geliyor olabilir.
+1	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2	bölgesinde	bölge	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obl	_	_
+3	çokça	çokça	ADV	Adverb	_	4	advmod	_	_
+4	bulunan	bulun	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	6	acl	_	_
+5	taş	taş	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	nmod:poss	_	_
+6	ocaklarına	ocak	NOUN	Noun	Case=Dat|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	7	obl	_	_
+7	istinaden	istina	NOUN	Noun	Case=Abl|Number=Sing|Person=3	18	obl	_	_
+8	Galce	Galce	PROPN	Prop	Case=Nom|Number=Sing|Person=3	16	nmod:poss	_	_
+9	"	"	PUNCT	Punc	_	10	punct	_	SpaceAfter=No
+10	kwar	kwar	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	nmod:poss	_	SpaceAfter=No
+11	"	"	PUNCT	Punc	_	14	punct	_	_
+12	(	(	PUNCT	Punc	_	14	punct	_	SpaceAfter=No
+13	taş	taş	NOUN	Noun	Case=Nom|Number=Sing|Person=3	14	nmod:poss	_	_
+14	ocağı	ocak	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	10	conj	_	SpaceAfter=No
+15	)	)	PUNCT	Punc	_	14	punct	_	_
+16	kelimesinden	kelime	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	17	obl	_	_
+17	geliyor	gel	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres	18	obj	_	_
+18	olabilir	ol	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	Punc	_	18	punct	_	_
+
+# sent_id = 8
+# text = Başka etimolojilerde önerilmiştir.
+1	Başka	başka	ADJ	Adj	_	2	amod	_	_
+2	etimolojilerde	etimoloji	NOUN	Noun	Case=Loc|Number=Plur|Person=3	3	obl	_	_
+3	önerilmiştir	öner	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punc	_	3	punct	_	_
+
+# sent_id = 9
+# text = Pierre Hubac ve Cheikh Anta Diop'a göre, Parisiilerin adı Mısır tanrıçası İsis'ten gelmektedir çünkü Paris bölgesinde İsis'e adanmış birçok tapınak ya da Eski Mısır dilinde "per Isis" bulunmaktaydı.
+1	Pierre	Pierre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	14	obl	_	_
+2	Hubac	Hubac	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	_
+3	ve	ve	CCONJ	Conj	_	4	cc	_	_
+4	Cheikh	Cheikh	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	conj	_	_
+5	Anta	Anta	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	_
+6	Diop'a	Diop	PROPN	Prop	Case=Dat|Number=Sing|Person=3	1	flat	_	_
+7	göre	göre	ADP	PCDat	_	1	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punc	_	14	punct	_	_
+9	Parisiilerin	parisii	NOUN	Noun	Case=Gen|Number=Plur|Person=3	10	nmod:poss	_	_
+10	adı	ad	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	nsubj	_	_
+11	Mısır	Misir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	13	nmod:poss	_	_
+12	tanrıçası	tanrıça	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	11	compound	_	_
+13	İsis'ten	İsis	PROPN	Prop	Case=Abl|Number=Sing|Person=3	14	obl	_	_
+14	gelmektedir	gel	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres	0	root	_	_
+15	çünkü	çünkü	CCONJ	Conj	_	30	cc	_	_
+16	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	17	nmod:poss	_	_
+17	bölgesinde	bölge	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	19	obl	_	_
+18	İsis'e	İsis	PROPN	Prop	Case=Dat|Number=Sing|Person=3	19	obl	_	_
+19	adanmış	adan	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part	21	acl	_	_
+20	birçok	birçok	DET	Det	_	21	det	_	_
+21	tapınak	tapınak	NOUN	Noun	Case=Nom|Number=Sing|Person=3	30	nsubj	_	_
+22	ya	ya	CCONJ	Conj	_	21	compound	_	_
+23	da	da	CCONJ	Conj	_	21	advmod:emph	_	_
+24	Eski	eski	ADJ	Adj	_	26	amod	_	_
+25	Mısır	Misir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	28	compound	_	_
+26	dilinde	dil	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	30	obl	_	_
+27	"	"	PUNCT	Punc	_	28	punct	_	SpaceAfter=No
+28	per	per	NOUN	Noun	Case=Nom|Number=Sing|Person=3	30	obj	_	_
+29	Isis"	Isis"	PROPN	Prop	Case=Nom|Number=Sing|Person=3	28	compound	_	_
+30	bulunmaktaydı	bulun	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Past	14	conj	_	SpaceAfter=No
+31	.	.	PUNCT	Punc	_	30	punct	_	_
+
+# sent_id = 10
+# text = Bir efsane de Paris adını dalgalar altında kalıp denize batan efsanevi Ys şehriyle birlikte anar.
+1	Bir	bir	NUM	ANum	NumType=Card	2	det	_	_
+2	efsane	efsane	NOUN	Noun	Case=Nom|Number=Sing|Person=3	15	nsubj	_	_
+3	de	de	CCONJ	Conj	_	2	advmod:emph	_	_
+4	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	5	nmod:poss	_	_
+5	adını	ad	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	obj	_	_
+6	dalgalar	dalga	NOUN	Noun	Case=Nom|Number=Plur|Person=3	7	nmod:poss	_	_
+7	altında	alt	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	amod	_	_
+8	kalıp	kal	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv	10	nmod	_	_
+9	denize	deniz	NOUN	Noun	Case=Dat|Number=Sing|Person=3	10	obl	_	_
+10	batan	bat	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	11	acl	_	_
+11	efsanevi	efsanevi	NOUN	Noun	Case=Nom|Number=Sing|Person=3	13	nmod:poss	_	_
+12	Ys	Ys	AUX	Zero	Case=Nom|Number=Sing|Person=3	11	cop	_	_
+13	şehriyle	şehr	NOUN	Noun	Case=Ins|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	15	obl	_	_
+14	birlikte	birlikte	ADV	Adverb	_	15	advmod	_	_
+15	anar	ana	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	Punc	_	15	punct	_	_
+
+# sent_id = 11
+# text = Maurice Druon "Paris de César à Saint Louis" (Sezar'dan St.Louis'ye kadar Paris) adlı kitabında Paris adının Galce "par" (gemi) sözcüğünden geldiğini iddia eder.
+1	Maurice	Maurice	PROPN	Prop	Case=Nom|Number=Sing|Person=3	31	nsubj	_	_
+2	Druon	Druon	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	_
+3	"	"	PUNCT	Punc	_	6	punct	_	SpaceAfter=No
+4	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	17	nmod	_	_
+5	de	de	CCONJ	Conj	_	4	advmod:emph	_	_
+6	César	César	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	nmod	_	_
+7	à	à	PROPN	Prop	_	4	compound	_	_
+8	Saint	Saint	PROPN	Prop	Case=Nom|Number=Sing|Person=3	4	compound	_	_
+9	Louis"	Louis"	PROPN	Prop	Case=Nom|Number=Sing|Person=3	4	compound	_	_
+10	(	(	PUNCT	Punc	_	15	punct	_	SpaceAfter=No
+11	Sezar'dan	Sezar	PROPN	Prop	Case=Abl|Number=Sing|Person=3	17	nmod	_	_
+12	St.Louis	St.louis	PROPN	Prop	Case=Nom|Number=Sing|Person=3	15	nmod	_	SpaceAfter=No
+13	'ye	'ye	ADP	Punc	_	12	case	_	_
+14	kadar	kadar	ADP	PCDat	_	12	case	_	_
+15	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	17	nmod	_	SpaceAfter=No
+16	)	)	PUNCT	Punc	_	15	punct	_	_
+17-18	adlı	_	_	_	_	_	_	_	_
+17	ad	ad	NOUN	Noun	Case=Nom|Number=Sing|Person=3	19	nmod	_	_
+18	lı	li	ADP	With	_	17	case	_	_
+19	kitabında	kitap	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	30	obl	_	_
+20	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	21	nmod:poss	_	_
+21	adının	ad	NOUN	Noun	Case=Gen|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	30	nmod:poss	_	_
+22	Galce	Galce	PROPN	Prop	Case=Nom|Number=Sing|Person=3	29	nmod:poss	_	_
+23	"	"	PUNCT	Punc	_	24	punct	_	SpaceAfter=No
+24	par	par	NOUN	Noun	Case=Nom|Number=Sing|Person=3	22	conj	_	SpaceAfter=No
+25	"	"	PUNCT	Punc	_	24	punct	_	_
+26	(	(	PUNCT	Punc	_	27	punct	_	SpaceAfter=No
+27	gemi	gemi	NOUN	Noun	Case=Nom|Number=Sing|Person=3	22	conj	_	SpaceAfter=No
+28	)	)	PUNCT	Punc	_	24	punct	_	_
+29	sözcüğünden	sözcük	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	30	obl	_	_
+30	geldiğini	gel	VERB	Verb	Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part	31	obj	_	_
+31	iddia	iddia	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+32	eder	et	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	31	compound:lvc	_	SpaceAfter=No
+33	.	.	PUNCT	Punc	_	31	punct	_	_
+
+# sent_id = 12
+# text = Şekli gemiye benzeyen, su üzerine kurulmuş, geçimini suya borçlu olan ve ismini de belki sudan almış olan bir şehir.
+1	Şekli	şekli	ADJ	Adj	_	2	amod	_	_
+2	gemiye	gemi	NOUN	Noun	Case=Dat|Number=Sing|Person=3	3	obl	_	_
+3	benzeyen	benze	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	21	acl	_	SpaceAfter=No
+4	,	,	PUNCT	Punc	_	7	punct	_	_
+5	su	su	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	nmod:poss	_	_
+6	üzerine	üzer	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	7	obl	_	_
+7	kurulmuş	kur	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punc	_	12	punct	_	_
+9	geçimini	geçim	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	12	obj	_	_
+10	suya	su	NOUN	Noun	Case=Dat|Number=Sing|Person=3	11	obl	_	_
+11	borçlu	borçlu	ADJ	Adj	_	12	amod	_	_
+12	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	3	conj	_	_
+13	ve	ve	CCONJ	Conj	_	18	cc	_	_
+14	ismini	isim	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	18	obj	_	_
+15	de	de	CCONJ	Conj	_	14	advmod:emph	_	_
+16	belki	belki	ADV	Adverb	_	18	advmod	_	_
+17	sudan	su	NOUN	Noun	Case=Abl|Number=Sing|Person=3	18	obl	_	_
+18	almış	al	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	19	obj	_	_
+19	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	21	acl	_	_
+20	bir	bir	NUM	ANum	NumType=Card	21	det	_	_
+21	şehir	şehir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	Punc	_	21	punct	_	_
+
+# sent_id = 13
+# text = Bir ada olan Lutèce'in refahı "gemiciler" tarafından sağlanıyordu ve bu gemicilerin sembolü olan gemi de şehir armasını oluşturmuştur.
+1	Bir	bir	NUM	ANum	NumType=Card	2	det	_	_
+2	ada	ada	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	obj	_	_
+3	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	4	acl	_	_
+4	Lutèce'in	Lutèce	PROPN	Prop	Case=Gen|Number=Sing|Person=3	5	nmod:poss	_	_
+5	refahı	refah	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	9	nsubj	_	_
+6	"gemiciler	"gemici	NOUN	Noun	Case=Nom|Number=Plur|Person=3	8	nmod:poss	_	SpaceAfter=No
+7	"	"	PUNCT	Punc	_	6	punct	_	_
+8	tarafından	taraf	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	9	obl	_	_
+9	sağlanıyordu	sağla	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Past|Voice=Pass	0	root	_	_
+10	ve	ve	CCONJ	Conj	_	19	cc	_	_
+11	bu	bu	DET	Det	_	12	det	_	_
+12	gemicilerin	gemici	NOUN	Noun	Case=Gen|Number=Plur|Person=3	13	nmod:poss	_	_
+13	sembolü	sembol	ADJ	NAdj	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	amod	_	_
+14	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	15	acl	_	_
+15	gemi	gemi	NOUN	Noun	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+16	de	de	CCONJ	Conj	_	15	advmod:emph	_	_
+17	şehir	şehir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	18	nmod:poss	_	_
+18	armasını	arma	ADJ	NAdj	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	19	obj	_	_
+19	oluşturmuştur	oluş	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Past|Voice=Cau	9	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Punc	_	19	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Paris'in Tarih öncesi[değiştir | kaynağı değiştir]
+# text = Paris'in Tarih öncesi
 1	Paris'in	Paris	PROPN	Prop	Case=Gen|Number=Sing|Person=3	3	nmod:poss	_	_
 2	Tarih	tarih	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nmod:poss	_	_
-3	öncesi	önce	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	5	nsubj	_	SpaceAfter=No
-4	[	[	PRON	Conj	_	5	nsubj	_	SpaceAfter=No
-5	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-6	|	|	PUNCT	Punc	_	8	punct	_	_
-7	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	8	obj	_	_
-8	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	5	conj	_	SpaceAfter=No
-9	]	]	PUNCT	Punc	_	8	punct	_	SpacesAfter=\n
+3	öncesi	önce	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1075,21 +1371,50 @@
 26	aletlerdi	alet	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
 27	.	.	PUNCT	Punc	_	26	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = Diğer buluşlar da 14.
+1	Diğer	diğer	ADJ	Adj	_	2	amod	_	_
+2	buluşlar	buluş	NOUN	Noun	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+3	da	da	CCONJ	Conj	_	2	advmod:emph	_	_
+4	14	14	PRON	Pers	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punc	_	4	punct	_	_
+
+# sent_id = 6
+# text = bölge ile 13.
+1	bölge	bölge	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+2	ile	ile	CCONJ	Conj	_	3	cc	_	_
+3	13	13	PRON	NNum	_	1	conj	_	SpaceAfter=No
+4	.	.	PUNCT	Punc	_	3	punct	_	_
+
+# sent_id = 7
+# text = bölge arasındaki su kemerleridir.
+1	bölge	bölge	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2-3	arasındaki	_	_	_	_	_	_	_	_
+2	arasında	ara	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	5	amod	_	_
+3	ki	ki	ADP	Rel	_	2	case	_	_
+4	su	su	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	nmod:poss	_	_
+5-6	kemerleridir	_	_	_	_	_	_	_	SpaceAfter=No
+5	kemerleri	kemer	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	0	root	_	_
+6	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	5	cop	_	_
+7	.	.	PUNCT	Punc	_	5	punct	_	_
+
+# sent_id = 8
+# text = Aşıklar şehri olarak bilinir.
+1	Aşıklar	aşık	ADJ	NAdj	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+2	şehri	şehir	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obl	_	_
+3	olarak	olarak	ADP	PCNom	_	2	case	_	_
+4	bilinir	bil	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punc	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Antik Çağ[değiştir | kaynağı değiştir]
+# text = Antik Çağ
 1	Antik	antik	ADJ	Adj	_	2	amod	_	_
-2	Çağ	çağ	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	Punc	_	2	punct	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
+2	Çağ	çağ	ADJ	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1305,21 +1630,103 @@
 20	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	19	cop	_	_
 21	.	.	PUNCT	Punc	_	19	punct	_	SpacesAfter=\n
 
+# sent_id = 10
+# text = Roma şehri 1. yüzyılda nehrin sol kıyısına kurulmuştur.
+1	Roma	Roma	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2	şehri	şehir	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	nsubj	_	_
+3	1.	1.	PUNCT	Det	_	8	det	_	_
+4	yüzyılda	yüzyıl	NOUN	Noun	Case=Loc|Number=Sing|Person=3	8	obl	_	_
+5	nehrin	nehir	NOUN	Noun	Case=Gen|Number=Sing|Person=3	7	nmod:poss	_	_
+6	sol	sol	ADJ	Adj	_	7	amod	_	_
+7	kıyısına	kıyı	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	obl	_	_
+8	kurulmuştur	kur	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punc	_	8	punct	_	_
+
+# sent_id = 11
+# text = Şehrin Saint-Germain Bulvarı'ndan Val-de-Grâce'a ve rue Descartes'tan jardins du Luxembourg'a kadar uzandığı düşünülmektedir.
+1	Şehrin	şehir	NOUN	Noun	Case=Gen|Number=Sing|Person=3	18	nsubj	_	_
+2	Saint	Saint	PROPN	Prop	Case=Nom|Number=Sing|Person=3	18	obl	_	SpaceAfter=No
+3	-	-	PUNCT	Punc	_	19	punct	_	SpaceAfter=No
+4	Germain	Germain	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	flat	_	_
+5	Bulvarı'ndan	bulvar	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	2	compound	_	_
+6	Val	val	PROPN	Prop	Case=Nom|Number=Sing|Person=3	18	obl	_	SpaceAfter=No
+7	-	-	PUNCT	Punc	_	19	punct	_	SpaceAfter=No
+8	de	de	CCONJ	Conj	_	2	advmod:emph	_	SpaceAfter=No
+9	-	-	PUNCT	Punc	_	19	punct	_	SpaceAfter=No
+10	Grâce'a	Grâce	PROPN	Prop	Case=Dat|Number=Sing|Person=3	6	flat	_	_
+11	ve	ve	CCONJ	Conj	_	12	cc	_	_
+12	rue	rue	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	conj	_	_
+13	Descartes'tan	Descartes	PROPN	Prop	Case=Abl|Number=Sing|Person=3	12	flat	_	_
+14	jardins	jardins	NOUN	Noun	Case=Nom|Number=Sing|Person=3	18	obl	_	_
+15	du	du	AUX	Conj	_	14	compound	_	_
+16	Luxembourg'a	Luxembourg	PROPN	Prop	Case=Dat|Number=Sing|Person=3	14	flat	_	_
+17	kadar	kadar	ADP	PCDat	_	14	case	_	_
+18	uzandığı	uza	VERB	Verb	Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	19	obj	_	_
+19	düşünülmektedir	düşün	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
+20	.	.	PUNCT	Punc	_	19	punct	_	_
+
+# sent_id = 12
+# text = Lutèce şehri bir cardo (Roma şehirlerinde kuzey-güney doğrultusundaki ana cadde) olan rue Saint-Jacques çevresinde dik kesen sokaklardan oluşan bir şehir yapısıyla yerleşmişti.
+1	Lutèce	Lutèce	PROPN	Prop	Case=Nom|Number=Sing|Person=3	29	nsubj	_	_
+2	şehri	şehir	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	1	flat	_	_
+3	bir	bir	NUM	ANum	NumType=Card	4	det	_	_
+4	cardo	cardo	NOUN	Noun	Case=Nom|Number=Sing|Person=3	28	nmod:poss	_	_
+5	(	(	PUNCT	Punc	_	14	punct	_	SpaceAfter=No
+6	Roma	Roma	PROPN	Prop	Case=Nom|Number=Sing|Person=3	7	nmod:poss	_	_
+7	şehirlerinde	şehir	NOUN	Noun	Case=Loc|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	8	obl	_	_
+8	kuzey	kuzey	ADJ	Adj	_	11	amod	_	SpaceAfter=No
+9	-	-	PUNCT	Punc	_	10	punct	_	SpaceAfter=No
+10	güney	güney	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	conj	_	_
+11-12	doğrultusundaki	_	_	_	_	_	_	_	_
+11	doğrultusunda	doğrultu	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	nmod	_	_
+12	ki	ki	ADP	Rel	_	11	case	_	_
+13	ana	ana	ADJ	Adj	_	14	amod	_	_
+14	cadde	cadde	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	obj	_	SpaceAfter=No
+15	)	)	PUNCT	Punc	_	14	punct	_	_
+16	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	17	acl	_	_
+17	rue	rue	NOUN	Noun	Case=Nom|Number=Sing|Person=3	21	nmod:poss	_	_
+18	Saint	Saint	PROPN	Prop	Case=Nom|Number=Sing|Person=3	17	flat	_	SpaceAfter=No
+19	-	-	PUNCT	Punc	_	29	punct	_	SpaceAfter=No
+20	Jacques	jacques	NOUN	Noun	Case=Nom|Number=Sing|Person=3	17	flat	_	_
+21	çevresinde	çevre	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	25	obl	_	_
+22	dik	dik	ADJ	Adj	_	23	amod	_	_
+23	kesen	kes	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	24	acl	_	_
+24	sokaklardan	sokak	NOUN	Noun	Case=Abl|Number=Plur|Person=3	25	obl	_	_
+25	oluşan	oluş	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	28	acl	_	_
+26	bir	bir	NUM	ANum	NumType=Card	28	det	_	_
+27	şehir	şehir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	28	nmod:poss	_	_
+28	yapısıyla	yapı	NOUN	Noun	Case=Ins|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	29	obl	_	_
+29	yerleşmişti	yerleş	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pqp	0	root	_	SpaceAfter=No
+30	.	.	PUNCT	Punc	_	29	punct	_	_
+
+# sent_id = 13
+# text = Roma şehirlerinde olduğu gibi forum, hamamlar, tiyatro, arena ve nekropol bu şehirde bulunmaktaydı
+1	Roma	Roma	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2	şehirlerinde	şehir	NOUN	Noun	Case=Loc|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	3	obl	_	_
+3	olduğu	ol	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part	16	acl	_	_
+4	gibi	gibi	ADP	PCNom	_	3	case	_	_
+5	forum	forum	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punc	_	7	punct	_	_
+7	hamamlar	hamam	NOUN	Noun	Case=Nom|Number=Plur|Person=3	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punc	_	9	punct	_	_
+9	tiyatro	tiyatro	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punc	_	11	punct	_	_
+11	arena	arena	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	conj	_	_
+12	ve	ve	CCONJ	Conj	_	13	cc	_	_
+13	nekropol	nekropol	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	conj	_	_
+14	bu	bu	DET	Det	_	15	det	_	_
+15	şehirde	şehir	NOUN	Noun	Case=Loc|Number=Sing|Person=3	16	obl	_	_
+16	bulunmaktaydı	bulun	VERB	Verb	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Past	0	root	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Orta Çağ[değiştir | kaynağı değiştir]
-1	Orta	orta	ADJ	Adj	_	2	amod	_	_
-2	Çağ	çağ	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	Punc	_	4	punct	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
+# text = Orta Çağ
+1	Orta	orta	ADJ	Adj	_	0	root	_	_
+2	Çağ	çağ	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1483,14 +1890,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 20. yüzyıl[değiştir | kaynağı değiştir]
-1	20.	20.	NUM	ANum	NumType=Card	3	nummod	_	_
-2	yüzyıl[	yüzyıl	NOUN	Noun	Case=Acc|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = 20. yüzyıl
+1	20.	20.	NUM	ANum	NumType=Card	2	nummod	_	_
+2	yüzyıl	yüzyıl	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1563,14 +1965,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ekonomi[değiştir | kaynağı değiştir]
-1	Ekonomi	ekonomi	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	Punc	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Ekonomi
+1	Ekonomi	ekonomi	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1615,7 +2011,38 @@
 33	.8'i	.8	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	31	flat	_	_
 34	sanayide	sanayi	NOUN	Noun	Case=Loc|Number=Sing|Person=3	35	obl	_	_
 35	çalışır	çalış	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	9	conj	_	SpaceAfter=No
-36	.	.	PUNCT	Punc	_	35	punct	_	SpacesAfter=\n
+36	.	.	PUNCT	Punc	_	35	punct	_	SpacesAfter=\s\n
+
+# sent_id = 2
+# text = Hikâye Paris Bölgesi (Île-de-France) için de benzer: Girişimlerin yüzde 76.7'si ticaret ve hizmetlerle ve yüzde 3,4'ü sanayiyle uğraşır.
+1	Hikâye	hikâ	NOUN	Noun	Case=Dat|Number=Sing|Person=3	13	obl	_	_
+2	Paris	Paris	PROPN	Prop	Case=Nom|Number=Sing|Person=3	3	nmod:poss	_	_
+3	Bölgesi	bölge	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	13	obl	_	_
+4	(	(	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
+5	Île	île	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	conj	_	SpaceAfter=No
+6	-	-	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
+7	de	de	CCONJ	Conj	_	5	advmod:emph	_	SpaceAfter=No
+8	-	-	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
+9	France	France	PROPN	Prop	Case=Nom|Number=Sing|Person=3	5	compound	_	SpaceAfter=No
+10	)	)	PUNCT	Punc	_	5	punct	_	_
+11	için	için	ADP	PCNom	_	5	case	_	_
+12	de	de	CCONJ	Conj	_	5	advmod:emph	_	_
+13	benzer	benze	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+14	:	:	PUNCT	Punc	_	27	punct	_	_
+15	Girişimlerin	girişim	NOUN	Noun	Case=Gen|Number=Plur|Person=3	16	nmod	_	_
+16	yüzde	yüz	NUM	NNum	Case=Loc|Number=Sing|NumType=Card|Person=3	27	nsubj	_	_
+17	76	76	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	16	flat	_	SpaceAfter=No
+18	.7'si	.7	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	16	flat	_	_
+19	ticaret	ticaret	NOUN	Noun	Case=Nom|Number=Sing|Person=3	27	obl	_	_
+20	ve	ve	CCONJ	Conj	_	21	cc	_	_
+21	hizmetlerle	hizmet	NOUN	Noun	Case=Ins|Number=Plur|Person=3	19	conj	_	_
+22	ve	ve	CCONJ	Conj	_	26	cc	_	_
+23	yüzde	yüz	NUM	NNum	Case=Loc|Number=Sing|NumType=Card|Person=3	27	obj	_	_
+24	3	3	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	23	flat	_	SpaceAfter=No
+25	,4'ü	,4	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	23	flat	_	_
+26	sanayiyle	sanayi	NOUN	Noun	Case=Ins|Number=Sing|Person=3	27	obl	_	_
+27	uğraşır	uğraş	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	13	conj	_	SpaceAfter=No
+28	.	.	PUNCT	Punc	_	27	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2430,14 +2857,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Turizm[değiştir | kaynağı değiştir]
-1	Turizm	turizm	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	CCONJ	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Turizm
+1	Turizm	turizm	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2445,16 +2866,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Notre Dame Katedrali[değiştir | kaynağı değiştir]
-1	Notre	Notre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
-2	Dame	Dame	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	_
+# text = Notre Dame Katedrali
+1	Notre	Notre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	_
+2	Dame	dame	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	_
 3	Katedrali	katedral	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	1	flat	_	SpaceAfter=No
-4	[	[	CCONJ	Conj	_	5	discourse	_	SpaceAfter=No
-5	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-6	|	|	PUNCT	Punc	_	8	punct	_	_
-7	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	8	obj	_	_
-8	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	5	conj	_	SpaceAfter=No
-9	]	]	PUNCT	Punc	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2539,15 +2954,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Louvre Müzesi[değiştir | kaynağı değiştir]
-1	Louvre	Louvre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	4	nsubj	_	_
+# text = Louvre Müzesi
+1	Louvre	Louvre	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	_
 2	Müzesi	müze	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	1	flat	_	SpaceAfter=No
-3	[	[	CCONJ	Conj	_	4	nmod	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2643,17 +3052,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Église de la Madeleine[değiştir | kaynağı değiştir]
-1	Église	église	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	nsubj	_	_
+# text = Église de la Madeleine
+1	Église	église	ADV	Adverb	_	4	compound	_	_
 2	de	de	CCONJ	Conj	_	1	advmod:emph	_	_
-3	la	la	PROPN	Noun	_	6	obl	_	_
-4	Madeleine	Madeleine	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	compound	_	SpaceAfter=No
-5	[	[	PUNCT	Conj	_	6	discourse	_	SpaceAfter=No
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-7	|	|	PUNCT	Punc	_	9	punct	_	_
-8	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	9	obj	_	_
-9	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	6	conj	_	SpaceAfter=No
-10	]	]	PUNCT	Punc	_	9	punct	_	SpacesAfter=\n
+3	la	la	ADV	Adverb	_	4	advmod:emph	_	_
+4	Madeleine	Madeleine	NOUN	Noun	Case=Dat|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2715,19 +3118,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Champs-Élysées (Şanzelize)[değiştir | kaynağı değiştir]
-1	Champs	Champs	PROPN	Prop	Case=Nom|Number=Sing|Person=3	8	nsubj	_	SpaceAfter=No
-2	-	-	PUNCT	Punc	_	8	punct	_	SpaceAfter=No
-3	Élysées	élysées	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	compound	_	_
+# text = Champs-Élysées (Şanzelize)
+1	Champs	Champs	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	-	-	PUNCT	Punc	_	1	punct	_	SpaceAfter=No
+3	Élysées	élysées	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	flat	_	_
 4	(	(	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
 5	Şanzelize	şanzelize	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
 6	)	)	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
-7	[	[	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	obj	_	SpaceAfter=No
-8	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-9	|	|	PUNCT	Punc	_	11	punct	_	_
-10	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	11	obj	_	_
-11	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	8	conj	_	SpaceAfter=No
-12	]	]	PUNCT	Punc	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2799,15 +3196,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Eyfel Kulesi[değiştir | kaynağı değiştir]
+# text = Eyfel Kulesi
 1	Eyfel	Eyfel	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
-2	Kulesi	kule	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	nsubj	_	SpaceAfter=No
-3	[	[	CCONJ	Conj	_	4	discourse	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
+2	Kulesi	kule	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2887,16 +3278,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Paris'ten bazı resimler[değiştir | kaynağı değiştir]
-1	Paris'ten	Paris	PROPN	Prop	Case=Abl|Number=Sing|Person=3	5	obl	_	_
+# text = Paris'ten bazı resimler
+1	Paris'ten	Paris	PROPN	Prop	Case=Abl|Number=Sing|Person=3	3	nmod	_	_
 2	bazı	bazı	DET	Det	_	3	det	_	_
-3	resimler	resim	NOUN	Noun	Case=Nom|Number=Plur|Person=3	5	nsubj	_	SpaceAfter=No
-4	[	[	PUNCT	Punc	_	5	punct	_	SpaceAfter=No
-5	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-6	|	|	PUNCT	Punc	_	8	punct	_	_
-7	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	8	obj	_	_
-8	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	5	conj	_	SpaceAfter=No
-9	]	]	PUNCT	Punc	_	8	punct	_	SpacesAfter=\n
+3	resimler	resim	NOUN	Noun	Case=Nom|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2987,14 +3372,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kültür[değiştir | kaynağı değiştir]
-1	Kültür	kültür	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Kültür
+1	Kültür	kültür	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -3002,15 +3381,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Resim ve heykel[değiştir | kaynağı değiştir]
-1	Resim	resim	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nsubj	_	_
+# text = Resim ve heykel
+1	Resim	resim	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
 2	ve	ve	CCONJ	Conj	_	3	cc	_	_
-3	heykel[	heykel[	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
+3	heykel	heykel	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -3529,14 +3903,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Müzik[değiştir | kaynağı değiştir]
-1	Müzik	müzik	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	PRON	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Müzik
+1	Müzik	müzik	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -4455,14 +4823,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ayrıca bakınız[değiştir | kaynağı değiştir]
-1	Ayrıca	ayrıca	ADV	Adverb	_	3	advmod	_	_
-2	bakınız[	bak	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Plur|Person=3|Person[psor]=2	3	obj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Ayrıca bakınız
+1	Ayrıca	ayrıca	ADV	Adverb	_	2	advmod	_	_
+2	bakınız	bak	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -4470,99 +4833,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 1.
-1	1	1	PRON	Verb	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	Punc	_	1	punct	_	_
-
-# sent_id = 2
-# text = Tokyo-Yokohama, Japonya
-1	Tokyo	Tokyo	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	-	-	PUNCT	Punc	_	1	punct	_	SpaceAfter=No
-3	Yokohama	Yokohama	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	,	,	PUNCT	Punc	_	5	punct	_	_
-5	Japonya	japonya	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 11.
-1	11	11	PRON	NNum	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	Punc	_	1	punct	_	_
-
-# sent_id = 2
-# text = New York, ABD
-1	New	New	PROPN	Prop	Case=Nom|Number=Sing|Person=3	2	nsubj	_	_
-2	York	York	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	,	,	PUNCT	Punc	_	4	punct	_	_
-4	ABD	Abd	NOUN	Abr	Abbr=Yes|Case=Nom|Number=Sing|Person=3	2	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 21.
-1	21.	21.	PUNCT	Punc	_	0	root	_	_
-
-# sent_id = 2
-# text = Los Angeles, ABD
-1	Los	Los	ADJ	Adj	Case=Nom|Number=Sing|Person=3	0	root	_	_
-2	Angeles	Angeles	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	flat	_	SpaceAfter=No
-3	,	,	PUNCT	Punc	_	4	punct	_	_
-4	ABD	Abd	NOUN	Abr	Abbr=Yes|Case=Nom|Number=Sing|Person=3	1	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 31.
-1	31.	31.	PUNCT	Punc	_	0	root	_	_
-
-# sent_id = 2
-# text = Çengdu, Çin
-1	Çengdu	Çengdu	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	Punc	_	1	punct	_	_
-3	Çin	Çin	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 41.
-1	41	41	PRON	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	Punc	_	1	punct	_	_
-
-# sent_id = 2
-# text = Taipei, Tayvan/
-1	Taipei	Taipei	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	Punc	_	3	punct	_	_
-3	Tayvan	Tayvan	PROPN	Prop	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	/	/	PUNCT	Punc	_	3	punct	_	SpaceAfter=No
-
-# sent_id = 3
-# text = Çin1
-1	Çin1	Çin1	PROPN	Prop	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Kaynakça[değiştir | kaynağı değiştir]
-1	Kaynakça	kaynakça	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
-2	[	[	PRON	Noun	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Kaynakça
+1	Kaynakça	kaynakça	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 

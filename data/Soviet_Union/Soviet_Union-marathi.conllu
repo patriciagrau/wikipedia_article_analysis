@@ -1,5 +1,3 @@
-# https://mr.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A4%BF%E0%A4%AF%E0%A5%87%E0%A4%A4_%E0%A4%B8%E0%A4%82%E0%A4%98
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,17 +8,7 @@
 1	सोव्हियेत	सोव्हिा	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	2	obl	_	_
 2	संघ	संघ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	-	-	PUNCT	_	_	2	punct	_	_
-4	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = सोव्हियेत संघ
-1	सोव्हियेत	सोव्हिा	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	2	obl	_	_
-2	संघ	सणे	VERB	_	Aspect=Perf|VerbForm=Conv	0	root	_	SpacesAfter=\n
+4	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -404,8 +392,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = मॅनिफेस्टो
-1	मॅनिफेस्टो	मॅनिफेस्टो	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = मॅनिफेस्टो मार्क्स ·
+1	मॅनिफेस्टो	मॅनिफेस्टो	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpacesAfter=\n
+2	मार्क्स	मार्क्स	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+3	·	·	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 2
+# text = लेनिन
+1	लेनिन	लेनिन	VERB	_	Aspect=Perf|VerbForm=Conv	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -413,9 +407,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = कम्युनिस्ट पक्ष
-1	कम्युनिस्ट	कम्युनिस्ट	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	पक्ष	पक्ष	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = कम्युनिस्ट पक्ष भाकप ·
+1	कम्युनिस्ट	कम्युनिस्ट	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	पक्ष	पक्ष	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpacesAfter=\n
+3	भाकप	भाकप	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+4	·	·	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 2
+# text = माकप
+1	माकप	माकप	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -423,8 +423,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = देशात
-1	देशात	देश	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	0	obl	_	SpacesAfter=\n
+# text = देशात सोवियत संघ चीन क्युबा व्हियेतनाम उत्तर कोरिया लाओस
+1	देशात	देश	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	3	obl	_	SpacesAfter=\n
+2	सोवियत	सोवियत	ADJ	_	_	3	amod	_	_
+3	संघ	संघ	NOUN	_	Aspect=Perf|VerbForm=Conv	0	root	_	SpacesAfter=\n
+4	चीन	चीन	ADV	_	_	9	amod	_	SpacesAfter=\n
+5	क्युबा	क्युबा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpacesAfter=\n
+6	व्हियेतनाम	व्हियेतनाम	NOUN	_	_	9	amod	_	SpacesAfter=\n
+7	उत्तर	उत्तर	ADV	_	_	9	amod	_	_
+8	कोरिया	कोरा	ADJ	_	Case=Obl	9	amod	_	SpacesAfter=\n
+9	लाओस	लाओस	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	5	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -799,8 +807,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = गणराज्ये[संपादन]
-1	गणराज्ये[संपादन]	गणराज्ये[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = गणराज्ये
+1	गणराज्ये	गणराज्ये	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -808,17 +816,41 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बाह्य दुवे[संपादन]
+# text = सोव्हियेत संघामध्ये एकूण १५ संघीय गणराज्ये होती.
+1	सोव्हियेत	सोव्हिा	NOUN	_	_	6	obl	_	SpacesBefore=\n
+2	संघामध्ये	संघामध्ये	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	6	obl	_	_
+3	एकूण	एकूण	PRON	_	_	6	nsubj	_	_
+4	१५	१५	NUM	_	_	5	nummod	_	_
+5	संघीय	संघीय	ADJ	_	Case=Nom	6	amod	_	_
+6	गणराज्ये	गणराज्ये	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
+7	होती	असणे	AUX	_	Gender=Neut|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 2
+# text = १९९१ साली सोव्हियेत संघाचे विघटन झाल्यानंतर ह्या १५ गणराज्यांचे रुपांतर १५ स्वतंत्र देशांमध्ये झाले.
+1	१९९१	१९९१	ADV	_	_	5	advmod	_	_
+2	साली	साली	ADV	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	4	amod	_	_
+3	सोव्हियेत	सोव्हिा	NOUN	_	_	5	obl	_	_
+4	संघाचे	संघाचे	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	5	obl	_	_
+5	विघटन	विघणे	VERB	_	Aspect=Perf|VerbForm=Conv	14	advcl	_	_
+6	झाल्यानंतर	झाल्यानंतर	CCONJ	_	_	14	cc	_	_
+7	ह्या	हा	DET	_	Case=Obl|Distance=Prox|PronType=Dem	9	det	_	_
+8	१५	१५	NUM	_	_	9	amod	_	_
+9	गणराज्यांचे	गणराज्ा	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	14	obl	_	_
+10	रुपांतर	रुपांतर	NOUN	_	_	14	nsubj	_	_
+11	१५	१५	NUM	_	_	12	nummod	_	_
+12	स्वतंत्र	स्वतंत्र	NOUN	_	_	14	nsubj	_	_
+13	देशांमध्ये	देशांमध्ये	NOUN	_	Case=Nom	14	obl	_	_
+14	झाले	होणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	14	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = marathi-ufal-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = बाह्य दुवे
 1	बाह्य	बाह्य	ADJ	_	_	2	amod	_	_
-2	दुवे[संपादन]	दुवे[संूक	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन यादी
-1	दिक्चालन	दिक्च	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
-2	यादी	यादी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\n
+2	दुवे	दुवे	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 

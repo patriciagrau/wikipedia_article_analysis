@@ -1,18 +1,10 @@
-# https://kk.wikipedia.org/wiki/%D0%95%D1%83%D1%80%D0%BE%D0%BF%D0%B0
-
 # newdoc
 # newpar
 # sent_id = 1
 # text = Еуропа — Уикипедия
 1	Еуропа	Еуропа	PROPN	np	Case=Nom|Gender=Fem	0	root	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
-3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	1	flat:name	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Еуропа
-1	Еуропа	еуропа	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
+3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	1	flat:name	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -98,14 +90,15 @@
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = 4
-# text = Азиямен арадағы шекарасы шартты түрде алынған.
+# text = Азиямен арадағы шекарасы шартты түрде алынған материк.
 1	Азиямен	Азия	NOUN	n	Case=Ins	6	obl	_	_
-2	арадағы	арадақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	amod	_	_
-3	шекарасы	шекара	DET	det	PronType=Dem	4	nmod:poss	_	_
-4	шартты	шартт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+2	арадағы	арадақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
+3	шекарасы	шекара	DET	det	PronType=Dem	2	flat:name	_	_
+4	шартты	шартт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	түрде	түр	NOUN	n	Case=Loc	6	obl	_	_
-6	алынған	алын	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	sent	_	6	punct	_	_
+6	алынған	алын	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	advcl	_	_
+7	материк	материк	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = 5
 # text = Ол құрлықта Орал тауы, Жем өзенін бойлай Каспий теңізіне дейін, одан әрі Кума және Маныч өзендері бойымен Донның сағасына жетіп, Азов, Қара теңіздерге ұласады.
@@ -716,15 +709,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Жер бедері[өңдеу | қайнарын өңдеу]
-1	Жер	Жер	ADJ	adj	_	3	amod	_	_
-2	бедері	бедері	ADJ	adj	_	3	amod	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-4	өңдеу	өңдеу	ADJ	adj	_	5	amod	_	SpacesAfter= 
-5	|	|	SYM	_	_	7	nsubj	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	3	conj	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Жер бедері
+1	Жер	Жер	ADJ	adj	_	2	advmod	_	_
+2	бедері	бедері	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -959,15 +946,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Геологиялық құрылысы[өңдеу | қайнарын өңдеу]
+# text = Геологиялық құрылысы
 1	Геологиялық	Геологиялық	ADJ	adj	_	2	amod	_	_
 2	құрылысы	құрылы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	2	punct	_	SpaceAfter=No
-4	өңдеу	өңдеу	ADJ	adj	_	5	amod	_	SpacesAfter= 
-5	|	|	SYM	_	_	3	conj	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	advmod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	5	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1397,15 +1378,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Кен байлықтары[өңдеу | қайнарын өңдеу]
+# text = Кен байлықтары
 1	Кен	кен	ADJ	adj	_	2	amod	_	_
-2	байлықтары	байлықтар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	7	obl	_	SpaceAfter=No
-4	өңдеу	өңдеу	PART	mod_emo	_	3	case	_	SpacesAfter= 
-5	|	|	SYM	_	_	6	advmod	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+2	байлықтары	байлықтар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1556,14 +1531,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Климаты[өңдеу | қайнарын өңдеу]
-1	Климаты	Клима	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	1	punct	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	punct	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	advmod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Климаты
+1	Климаты	Климат	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1866,15 +1835,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ішкі сулары[өңдеу | қайнарын өңдеу]
-1	Ішкі	Ішкі	NUM	num	NumType=Card	2	amod	_	_
-2	сулары	сулар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	7	obl	_	SpaceAfter=No
-4	өңдеу	өңдеу	PART	mod_emo	_	3	case	_	SpacesAfter= 
-5	|	|	SYM	_	_	6	advmod	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Ішкі сулары
+1	Ішкі	Ішкі	NUM	num	NumType=Card	2	nummod	_	_
+2	сулары	сулар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2505,14 +2468,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Топырағы[өңдеу | қайнарын өңдеу]
-1	Топырағы	Топырақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	4	punct	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	0	root	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	advmod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	4	parataxis	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Топырағы
+1	Топырағы	Топырақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2776,14 +2733,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Өсімдігі[өңдеу | қайнарын өңдеу]
-1	Өсімдігі	Өсімдігі	ADJ	adj	_	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	nsubj	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Өсімдігі
+1	Өсімдігі	Өсімдігі	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3011,14 +2962,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Жануарлары[өңдеу | қайнарын өңдеу]
-1	Жануарлары	Жануарлар	NOUN	n	Case=Nom	2	nmod:poss	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Жануарлары
+1	Жануарлары	Жануарлар	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3225,15 +3170,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Саяси бөлінуі[өңдеу | қайнарын өңдеу]
-1	Саяси	Саяси	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	бөлінуі	бөлін	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	2	punct	_	SpaceAfter=No
-4	өңдеу	өңдеу	PART	mod_emo	_	3	case	_	SpacesAfter= 
-5	|	|	SYM	_	_	7	punct	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	3	conj	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Саяси бөлінуі
+1	Саяси	Саяси	SCONJ	cnjsub	_	2	advmod	_	_
+2	бөлінуі	бөліну	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3392,14 +3331,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Мемлекеттер[өңдеу | қайнарын өңдеу]
-1	Мемлекеттер	Мемлекетте	ADJ	adj	_	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	nsubj	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Мемлекеттер
+1	Мемлекеттер	Мемлекеттер	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3433,32 +3366,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Тағы қараңыз[өңдеу | қайнарын өңдеу]
-1	Тағы	Тақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
-2	қараңыз	қараңыз	ADJ	adj	_	3	amod	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-4	өңдеу	өңдеу	ADJ	adj	_	5	amod	_	SpacesAfter= 
-5	|	|	SYM	_	_	3	conj	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	advmod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	5	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Тағы қараңыз
+1	Тағы	Тақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	_
+2	қараңыз	қараңыз	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Дереккөздер[өңдеу | қайнарын өңдеу]
-1	Дереккөздер	Дереккөзде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	2	conj	_	_
-6	өңдеу	өңдеу	PART	mod_emo	_	5	discourse	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	5	punct	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+# text = Дереккөздер
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 

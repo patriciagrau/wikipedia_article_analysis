@@ -1,5 +1,3 @@
-# https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A7%88
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,25 +11,7 @@
 4	,	,	PUNCT	sp	_	3	punct	_	_
 5	우리	우리	PRON	npp	_	6	compound	_	_
 6	모두의	모두+의	NOUN	ncn+jcm	_	7	nmod	_	_
-7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 언어
-1	언어	언어	NOUN	ncn	_	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 로마
-1	로마	로마	PROPN	nq	_	0	root	_	SpacesAfter=\n
+7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -336,11 +316,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 이름[편집]
-1	이름	이름	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 이름
+1	이름	이름	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -400,11 +377,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 역사[편집]
-1	역사	역사	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 역사
+1	역사	역사	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -412,13 +386,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 로마가 세워지기 전[편집]
+# text = 로마가 세워지기 전
 1	로마가	로마+가	PROPN	nq+jcs	_	2	nsubj	_	_
-2	세워지기	세우+어+지+기	AUX	pvg+ecx+px+etn	_	3	nmod	_	_
-3	전	전	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+2	세워지기	세우+어+지+기	AUX	pvg+ecx+px+etn	_	3	acl	_	_
+3	전	전	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -595,12 +566,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 로마의 설립[편집]
+# text = 로마의 설립
 1	로마의	로마+의	PROPN	nq+jcm	_	2	nmod	_	_
-2	설립	설립	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	설립	설립	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -756,18 +724,29 @@
 14	않는다	않+는다	AUX	px+ef	_	13	aux	_	SpaceAfter=No
 15	.	.	PUNCT	sf	_	14	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = 로마는 라틴족의 도시 국가 건설로 출발했다는 게 사실로 여겨지고 있다.
+1	로마는	로마+는	PROPN	nq+jxt	_	6	dislocated	_	_
+2	라틴족의	라틴족+의	PROPN	nq+jcm	_	5	nmod	_	_
+3	도시	도시	NOUN	ncn	_	4	compound	_	_
+4	국가	국가	NOUN	ncn	_	5	compound	_	_
+5	건설로	건설+로	ADV	ncpa+jca	_	6	advcl	_	_
+6	출발했다는	출발+하+었+다는	VERB	ncpa+xsv+ep+etm	_	7	acl	_	_
+7	게	거+이	NOUN	nbn+jcs	_	9	nsubj	_	_
+8	사실로	사실+로	ADV	ncn+jca	_	9	advcl	_	_
+9	여겨지고	여기+어+지+고	AUX	pvg+ecx+px+ecx	_	0	root	_	_
+10	있다	있+다	AUX	px+ef	_	9	aux	_	SpaceAfter=No
+11	.	.	PUNCT	sf	_	10	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 로마 제국[편집]
+# text = 로마 제국
 1	로마	로마	PROPN	nq	_	2	compound	_	_
-2	제국	제국	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	제국	제국	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1296,12 +1275,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 르네상스의 중심지[편집]
+# text = 르네상스의 중심지
 1	르네상스의	르네상스+의	PROPN	nq+jcm	_	2	nmod	_	_
-2	중심지	중심지	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	중심지	중심지	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1597,11 +1573,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 현재[편집]
-1	현재	현재	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 현재
+1	현재	현재	NOUN	ncn	_	0	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1721,11 +1694,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 행정[편집]
-1	행정	행정	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 행정
+1	행정	행정	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1733,12 +1703,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 지역 정부[편집]
-1	지역	지역	NOUN	ncn	_	2	compound	_	_
-2	정부	정부	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 지역 정부
+1	지역	지역	NOUN	ncn	_	2	xcomp	_	_
+2	정부	정부	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1823,14 +1790,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 행정 구역 및 역사[편집]
+# text = 행정 구역 및 역사
 1	행정	행정	NOUN	ncn	_	2	compound	_	_
 2	구역	구역	NOUN	ncn	_	0	root	_	_
 3	및	및	CCONJ	maj	_	4	cc	_	_
 4	역사	역사	NOUN	ncn	_	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	sl	_	6	punct	_	SpaceAfter=No
-6	편집	편집	NOUN	ncn	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	sr	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2146,14 +2110,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 광역 및 지방 정부[편집]
-1	광역	광역	NOUN	ncn	_	4	compound	_	_
-2	및	및	CCONJ	maj	_	3	cc	_	_
+# text = 광역 및 지방 정부
+1	광역	광역	NOUN	ncn	_	0	root	_	_
+2	및	및	CCONJ	maj	_	4	cc	_	_
 3	지방	지방	NOUN	ncn	_	4	compound	_	_
-4	정부	정부	NOUN	ncn	_	6	compound	_	SpaceAfter=No
-5	[	[	PUNCT	sl	_	6	punct	_	SpaceAfter=No
-6	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	sr	_	6	punct	_	SpacesAfter=\n
+4	정부	정부	NOUN	ncn	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2222,12 +2183,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 행정 수도[편집]
+# text = 행정 수도
 1	행정	행정	NOUN	ncn	_	2	compound	_	_
-2	수도	수도	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	수도	수+도	ADV	ncn+jxc	_	0	advcl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2304,11 +2262,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 관광지[편집]
-1	관광지	관광지	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 관광지
+1	관광지	관광지	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2316,13 +2271,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 고대 로마 유적[편집]
-1	고대	고대	NOUN	ncn	_	2	compound	_	_
-2	로마	로마	PROPN	nq	_	3	compound	_	_
-3	유적	유적	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+# text = 고대 로마 유적
+1	고대	고대	NOUN	ncn	_	3	compound	_	_
+2	로마	로마	PROPN	nq	_	3	xcomp	_	_
+3	유적	유적	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2330,11 +2282,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 광장·공원[편집]
-1	광장·공원	광장+·공원	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 광장·공원
+1	광장·공원	광장+·공원	NOUN	ncn+ncn	_	0	dep	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2342,11 +2291,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 성당[편집]
-1	성당	성당	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 성당
+1	성당	성당	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2354,11 +2300,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 궁전[편집]
-1	궁전	궁전	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 궁전
+1	궁전	궁전	NOUN	ncn	_	0	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2366,11 +2309,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 미술관·박물관[편집]
-1	미술관·박물관	미술+관·박+물관	NOUN	ncn+ncpa+ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 미술관·박물관
+1	미술관·박물관	미술+관·박+물관	NOUN	ncn+ncpa+ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2378,12 +2318,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 그 외[편집]
+# text = 그 외
 1	그	그	DET	mmd	_	2	det	_	_
-2	외	외	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	외	외	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2391,11 +2328,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 인구[편집]
+# text = 인구
 1	인구	인구	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2403,11 +2337,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 기후[편집]
+# text = 기후
 1	기후	기후	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2415,11 +2346,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 스포츠[편집]
-1	스포츠	스포츠	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 스포츠
+1	스포츠	스포츠	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2716,12 +2644,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 자매 도시[편집]
+# text = 자매 도시
 1	자매	자매	NOUN	ncn	_	2	compound	_	_
-2	도시	도시	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	도시	도시	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2762,12 +2687,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 흥미로운 사실[편집]
-1	흥미로운	흥미+롭+ㄴ	VERB	ncps+xsm+etm	_	2	amod	_	_
-2	사실	사실	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 흥미로운 사실
+1	흥미로운	흥미+롭+ㄴ	VERB	ncn+xsm+etm	_	2	amod	_	_
+2	사실	사실	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2775,11 +2697,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 각주[편집]
-1	각주	각주	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 각주
+1	각주	각주	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2787,10 +2706,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 외부 링크[편집]
+# text = 외부 링크
 1	외부	외부	NOUN	ncn	_	2	compound	_	_
-2	링크	링크	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	링크	링크	NOUN	ncn	_	0	root	_	SpaceAfter=No
 

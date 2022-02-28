@@ -1,5 +1,3 @@
-# https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,7 +11,7 @@
 4	,	,	PUNCT	sp	_	3	punct	_	_
 5	우리	우리	PRON	npp	_	6	compound	_	_
 6	모두의	모두+의	NOUN	ncn+jcm	_	7	nmod	_	_
-7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpacesAfter=\n
+7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -21,79 +19,55 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 언어
-1	언어	언어	NOUN	ncn	_	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 이탈리아
-1	이탈리아	이탈리아	PROPN	nq	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 이탈리아 공화국(Repubblica Italiana 레푸블리카 이탈리아나[*
+# text = 이탈리아 공화국(Repubblica Italiana 레푸블리카 이탈리아나), 약칭 이탈리아(이탈리아어: Italia, 약자: IT, 문화어: 이딸리아, 음역어: 이태리)은 남유럽의 이탈리아반도와 지중해의 두 개의 섬으로 이루어진 시칠리아 및 사르데냐로 이루어진 단일 의회 공화국이다.
 1	이탈리아	이탈리아	PROPN	nq	_	2	compound	_	_
-2	공화국	공화국	NOUN	ncn	_	0	root	_	SpaceAfter=No
+2	공화국	공화국	NOUN	ncn	_	43	compound	_	SpaceAfter=No
 3	(	(	PUNCT	sl	_	4	punct	_	SpaceAfter=No
 4	Repubblica	Repubblica	X	f	_	2	appos	_	_
 5	Italiana	Italiana	X	f	_	4	flat	_	_
-6	레푸블리카	레푸블리카	X	f	_	4	flat	_	_
-7	이탈리아나	이탈리아나	PROPN	nq	_	2	flat	_	SpaceAfter=No
-8	[	[	PUNCT	sr	_	4	punct	_	SpaceAfter=No
-9	*	*	PUNCT	sf	_	7	punct	_	SpaceAfter=No
+6	레푸블리카	레푸블리카	X	nq	_	4	flat	_	_
+7	이탈리아나	이탈리아나	PROPN	nq	_	4	flat	_	SpaceAfter=No
+8	)	)	PUNCT	sr	_	4	punct	_	SpaceAfter=No
+9	,	,	PUNCT	sp	_	2	punct	_	_
+10	약칭	약칭	NOUN	ncn	_	11	compound	_	_
+11	이탈리아	이탈리아	PROPN	nq	_	43	dislocated	_	SpaceAfter=No
+12	(	(	PUNCT	sl	_	11	appos	_	SpaceAfter=No
+13	이탈리아어	이탈리아어	PROPN	nq	_	12	conj	_	SpaceAfter=No
+14	:	:	PUNCT	sp	_	13	punct	_	_
+15	Italia	Italia	X	f	_	12	conj	_	SpaceAfter=No
+16	,	,	PUNCT	sp	_	15	punct	_	_
+17	약자	약자	NOUN	ncn	_	12	conj	_	SpaceAfter=No
+18	:	:	PUNCT	sp	_	17	punct	_	_
+19	IT	IT	X	f	_	12	conj	_	SpaceAfter=No
+20	,	,	PUNCT	sp	_	17	punct	_	_
+21	문화어	문화어	NOUN	ncn	_	12	conj	_	SpaceAfter=No
+22	:	:	PUNCT	sp	_	21	punct	_	_
+23	이딸리아	이딸리아	PROPN	nq	_	12	conj	_	SpaceAfter=No
+24	,	,	PUNCT	sp	_	23	punct	_	_
+25	음역어	음역어	NOUN	ncn	_	12	conj	_	SpaceAfter=No
+26	:	:	PUNCT	sp	_	23	punct	_	_
+27	이태리	이태리	PROPN	nq	_	11	appos	_	SpaceAfter=No
+28	)	)	PUNCT	sr	_	27	punct	_	SpaceAfter=No
+29	은	은	ADP	jxt	_	11	case	_	_
+30	남유럽의	남유럽+의	PROPN	nq+jcm	_	31	nmod	_	_
+31	이탈리아반도와	이탈리아반도+와	CCONJ	nq+jcj	_	36	advcl	_	_
+32	지중해의	지중해+의	NOUN	ncn+jcm	_	35	nmod	_	_
+33	두	두	NUM	nnc	_	34	nummod	_	_
+34	개의	개+의	NOUN	nbu+jcm	_	35	nmod	_	_
+35	섬으로	섬+으로	ADV	ncn+jca	_	36	advcl	_	_
+36	이루어진	이루+어+지+ㄴ	AUX	pvg+ecx+px+etm	_	39	acl	_	_
+37	시칠리아	시칠리아	PROPN	nq	_	40	advcl	_	_
+38	및	및	CCONJ	maj	_	39	cc	_	_
+39	사르데냐로	사르데냐+로	ADV	nq+jca	_	37	conj	_	_
+40	이루어진	이루+어+지+ㄴ	AUX	pvg+ecx+px+etm	_	43	ccomp	_	_
+41	단일	단일	NOUN	ncps	_	42	compound	_	_
+42	의회	의회	NOUN	ncn	_	43	compound	_	_
+43	공화국이다	공화국+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
+44	.	.	PUNCT	sf	_	43	punct	_	_
 
 # sent_id = 2
-# text = ]), 약칭 이탈리아(이탈리아어: Italia, 약자: IT, 문화어: 이딸리아, 음역어: 이태리)은 남유럽의 이탈리아반도와 지중해의 두 개의 섬으로 이루어진 시칠리아 및 사르데냐로 이루어진 단일 의회 공화국이다.
-1	]	]	PUNCT	sl	_	7	punct	_	SpaceAfter=No
-2	)	)	PUNCT	sr	_	7	punct	_	SpaceAfter=No
-3	,	,	PUNCT	sp	_	5	punct	_	_
-4	약칭	약칭	NOUN	ncn	_	5	compound	_	_
-5	이탈리아	이탈리아	PROPN	nq	_	37	dislocated	_	SpaceAfter=No
-6	(	(	PUNCT	sl	_	5	appos	_	SpaceAfter=No
-7	이탈리아어	이탈리아어	PROPN	nq	_	6	conj	_	SpaceAfter=No
-8	:	:	PUNCT	sp	_	7	punct	_	_
-9	Italia	Italia	X	f	_	6	conj	_	SpaceAfter=No
-10	,	,	PUNCT	sp	_	9	punct	_	_
-11	약자	약자	NOUN	ncn	_	6	conj	_	SpaceAfter=No
-12	:	:	PUNCT	sp	_	11	punct	_	_
-13	IT	IT	X	f	_	6	conj	_	SpaceAfter=No
-14	,	,	PUNCT	sp	_	13	punct	_	_
-15	문화어	문화어	PROPN	nq	_	6	conj	_	SpaceAfter=No
-16	:	:	PUNCT	sp	_	15	punct	_	_
-17	이딸리아	이딸리아	PROPN	nq	_	6	conj	_	SpaceAfter=No
-18	,	,	PUNCT	sp	_	17	punct	_	_
-19	음역어	음역어	PROPN	nq	_	5	conj	_	SpaceAfter=No
-20	:	:	PUNCT	sp	_	19	punct	_	_
-21	이태리	이태리	PROPN	nq	_	5	appos	_	SpaceAfter=No
-22	)	)	PUNCT	sr	_	21	punct	_	SpaceAfter=No
-23	은	은	ADP	jxt	_	5	case	_	_
-24	남유럽의	남유럽+의	PROPN	nq+jcm	_	25	nmod	_	_
-25	이탈리아반도와	이탈리아반도+와	CCONJ	nq+jcj	_	29	nmod	_	_
-26	지중해의	지중해+의	NOUN	nq+jcm	_	25	conj	_	_
-27	두	두	NUM	nnc	_	28	nummod	_	_
-28	개의	개+의	NOUN	nbu+jcm	_	29	nmod	_	_
-29	섬으로	섬+으로	ADV	ncn+jca	_	30	advcl	_	_
-30	이루어진	이루+어+지+ㄴ	AUX	pvg+ecx+px+etm	_	33	acl	_	_
-31	시칠리아	시칠리아	PROPN	nq	_	34	advcl	_	_
-32	및	및	CCONJ	maj	_	33	cc	_	_
-33	사르데냐로	사르데냐+로	ADV	nq+jca	_	31	conj	_	_
-34	이루어진	이루+어+지+ㄴ	AUX	pvg+ecx+px+etm	_	37	ccomp	_	_
-35	단일	단일	NOUN	ncps	_	36	compound	_	_
-36	의회	의회	NOUN	ncn	_	37	compound	_	_
-37	공화국이다	공화국+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
-38	.	.	PUNCT	sf	_	37	punct	_	_
-
-# sent_id = 3
-# text = 북쪽 알프스산맥을 경계로 프랑스, 스위스, 오스트리아, 슬로베니아와 국경을 맞대고 있다.우리나라와 같이 반도이다.
-1	북쪽	북쪽	NOUN	ncn	_	2	compound	_	_
+# text = 북쪽 알프스산맥을 경계로 프랑스, 스위스, 오스트리아, 슬로베니아와 국경을 맞대고 있다.
+1	북쪽	북쪽	NOUN	ncn+xsn	_	2	compound	_	_
 2	알프스산맥을	알프스산맥+을	PROPN	nq+jco	_	3	obj	_	_
 3	경계로	경계+로	ADV	ncn+jca	_	12	advcl	_	_
 4	프랑스	프랑스	PROPN	nq	_	0	root	_	SpaceAfter=No
@@ -104,11 +78,15 @@
 9	,	,	PUNCT	sp	_	8	punct	_	_
 10	슬로베니아와	슬로베니아+와	CCONJ	nq+jct	_	4	conj	_	_
 11	국경을	국경+을	NOUN	ncn+jco	_	12	obj	_	_
-12	맞대고	맞대+고	CCONJ	pvg+ecc	_	4	conj	_	_
-13	있다.우리나라와	있+다.우리나라+와	CCONJ	nq+jct	_	15	xcomp	_	_
-14	같이	같+이	SCONJ	paa+ecs	_	13	conj	_	_
-15	반도이다	반도+이+다	VERB	ncn+jp+ef	_	4	conj	_	SpaceAfter=No
-16	.	.	PUNCT	sf	_	15	punct	_	_
+12	맞대고	맞대+고	VERB	pvg+ecx	_	4	conj	_	_
+13	있다.	있+다.	SCONJ	px+ecs	_	12	aux	_	SpaceAfter=No
+
+# sent_id = 3
+# text = 우리나라와 같이 반도이다.
+1	우리나라와	우리+나라+와	CCONJ	ncn+jct	_	3	xcomp	_	_
+2	같이	같+이	SCONJ	paa+ecs	_	1	conj	_	_
+3	반도이다	반도+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	sf	_	3	punct	_	_
 
 # sent_id = 4
 # text = 주변 바다로는 동쪽의 아드리아해, 남쪽의 이오니아해, 서쪽의 티레니아해와 리구리아해가 있다.
@@ -699,11 +677,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 역사[편집]
-1	역사	역사	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 역사
+1	역사	역사	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -711,12 +686,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 고대 시기[편집]
+# text = 고대 시기
 1	고대	고대	NOUN	ncn	_	2	compound	_	_
-2	시기	시기	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	시기	시기	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -862,12 +834,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 로마 제국[편집]
+# text = 로마 제국
 1	로마	로마	PROPN	nq	_	2	compound	_	_
-2	제국	제국	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	제국	제국	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1294,11 +1263,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 중세[편집]
-1	중세	중세	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 중세
+1	중세	중세	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2145,11 +2111,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 근대[편집]
-1	근대	근대	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 근대
+1	근대	근대	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -3334,11 +3297,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 통일[편집]
+# text = 통일
 1	통일	통일	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -3729,11 +3689,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 왕정기[편집]
-1	왕정기	왕정기	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 왕정기
+1	왕정기	왕정기	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -4182,12 +4139,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 파시즘 독재[편집]
+# text = 파시즘 독재
 1	파시즘	파시즘	NOUN	ncn	_	2	compound	_	_
-2	독재	독재	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	독재	독재	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -4579,7 +4533,7 @@
 8	.	.	PUNCT	sf	_	7	punct	_	_
 
 # sent_id = 6
-# text = 이로 인하여 본격적인 이탈리아 본토 침공이 시작되자, 무솔리니는 얼마 가지 못하고 실각하였으며 국왕 비토리오 에마누엘레 3세와 파시즘 대평의회 의원들 대다수의 동의를 얻어 권좌에서 쫒겨났다.
+# text = 이로 인하여 본격적인 이탈리아 본토 침공이 시작되자, 무솔리니는 얼마 가지 못하고 실각하였으며 국왕 비토리오 에마누엘레 3세와 파시즘 대평의회 의원들 대다수의 동의를 얻어 권좌에서 쫓겨났다.
 1	이로	이+로	ADV	npd+jca	_	2	advcl	_	_
 2	인하여	인하+어	SCONJ	pvg+ecs	_	7	ccomp	_	_
 3	본격적인	본격+적+이+ㄴ	VERB	ncn+xsn+jp+etm	_	6	acl	_	_
@@ -4604,7 +4558,7 @@
 22	동의를	동의+를	NOUN	ncn+jco	_	23	obj	_	_
 23	얻어	얻+어	SCONJ	pvg+ecs	_	25	ccomp	_	_
 24	권좌에서	권좌+에서	ADV	ncn+jca	_	25	advcl	_	_
-25	쫒겨났다	쫒기+어+나+ㅆ+다	AUX	pvg+ecx+px+ep+ef	_	7	conj	_	SpaceAfter=No
+25	쫓겨났다	쫓기+어+나+ㅆ+다	AUX	pvg+ecx+px+ep+ef	_	7	conj	_	SpaceAfter=No
 26	.	.	PUNCT	sf	_	25	punct	_	_
 
 # sent_id = 7
@@ -4860,11 +4814,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 공화정[편집]
-1	공화정	공화정	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 공화정
+1	공화정	공화정	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -4906,7 +4857,7 @@
 9	.	.	PUNCT	sf	_	8	punct	_	_
 
 # sent_id = 3
-# text = 비토리오 에마누엘레 3세의 아들인 움베르토 2세는 왕위에서 퇴위하도록 강요당했고, 사보이아 왕가는 이탈리아에서 쫒겨났다.
+# text = 비토리오 에마누엘레 3세의 아들인 움베르토 2세는 왕위에서 퇴위하도록 강요당했고, 사보이아 왕가는 이탈리아에서 쫓겨났다.
 1	비토리오	비토리오	PROPN	nq	_	3	compound	_	_
 2	에마누엘레	에마누엘레	PROPN	nq	_	1	flat	_	_
 3	3세의	3+세+의	NUM	nnc+nbu+jcm	_	4	nmod	_	_
@@ -4920,7 +4871,7 @@
 11	사보이아	사보이아	PROPN	nq	_	12	compound	_	_
 12	왕가는	왕가+는	NOUN	ncn+jxt	_	14	dislocated	_	_
 13	이탈리아에서	이탈리아+에서	ADV	nq+jca	_	14	advcl	_	_
-14	쫒겨났다	쫒기+어+나+ㅆ+다	AUX	pvg+ecx+px+ep+ef	_	9	conj	_	SpaceAfter=No
+14	쫓겨났다	쫓기+어+나+ㅆ+다	AUX	pvg+ecx+px+ep+ef	_	9	conj	_	SpaceAfter=No
 15	.	.	PUNCT	sf	_	14	punct	_	_
 
 # sent_id = 4
@@ -5804,11 +5755,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 정치[편집]
+# text = 정치
 1	정치	정치	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -5892,11 +5840,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 정부[편집]
-1	정부	정부	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 정부
+1	정부	정부	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -6549,11 +6494,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 국방[편집]
-1	국방	국방	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 국방
+1	국방	국방	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -6889,12 +6831,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 행정 구역[편집]
+# text = 행정 구역
 1	행정	행정	NOUN	ncn	_	2	compound	_	_
-2	구역	구역	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	구역	구역	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -6945,11 +6884,54 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 지리[편집]
-1	지리	지리	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 지리
+1	지리	지리	NOUN	ncn	_	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 이탈리아 영토의 대부분은 지중해에 뻗은 커다란 반도와 시칠리아, 사르데냐 이 두 섬으로 이루어져 있는데 이들은 주변 바다를 몇 구역으로 나눈다.
+1	이탈리아	이탈리아	PROPN	nq	_	2	compound	_	_
+2	영토의	영토+의	NOUN	ncn+jcm	_	3	nmod	_	_
+3	대부분은	대부분+은	NOUN	ncn+jxt	_	14	dislocated	_	_
+4	지중해에	지중해+에	ADV	nq+jca	_	5	obl	_	_
+5	뻗은	뻗+ㄴ	VERB	pvg+etm	_	13	acl	_	_
+6	커다란	커다랗+ㄴ	ADJ	paa+etm	_	7	amod	_	_
+7	반도와	반도+와	CCONJ	ncn+jcj	_	13	compound	_	_
+8	시칠리아	시칠리아	PROPN	nq	_	7	conj	_	SpaceAfter=No
+9	,	,	PUNCT	sp	_	8	punct	_	_
+10	사르데냐	사르데냐	PROPN	nq	_	7	conj	_	_
+11	이	이	DET	mmd	_	13	det	_	_
+12	두	두	NUM	nnc	_	13	nummod	_	_
+13	섬으로	섬+으로	ADV	nbu+jca	_	14	advcl	_	_
+14	이루어져	이루+어+지+어	AUX	pvg+ecx+px+ecx	_	21	ccomp	_	_
+15	있는데	있+는데	SCONJ	px+ecs	_	14	aux	_	_
+16	이들은	이+들+은	PRON	npp+xsn+jxt	_	21	dislocated	_	_
+17	주변	주변	NOUN	ncn	_	18	compound	_	_
+18	바다를	바다+를	NOUN	ncn+jco	_	21	obj	_	_
+19	몇	몇	ADJ	mma	_	20	amod	_	_
+20	구역으로	구역+으로	ADV	ncn+jca	_	21	advcl	_	_
+21	나눈다	나누+ㄴ다	VERB	pvg+ef	_	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	sf	_	21	punct	_	_
+
+# sent_id = 2
+# text = 북동쪽으로는 아드리아해, 남동쪽으로는 이오니아해, 남서쪽으로는 티레니아해, 북서쪽으로는 리구리아해를 형성한다.
+1	북동쪽으로는	북동쪽+으로+는	NOUN	ncn+xsn+jca+jxt	_	2	dislocated	_	_
+2	아드리아해	아드리아해	PROPN	nq	_	11	compound	_	SpaceAfter=No
+3	,	,	PUNCT	sp	_	2	punct	_	_
+4	남동쪽으로는	남동+쪽+으로+는	NOUN	ncn+xsn+jca+jxt	_	5	dislocated	_	_
+5	이오니아해	이오니아해	PROPN	nq	_	11	compound	_	SpaceAfter=No
+6	,	,	PUNCT	sp	_	5	punct	_	_
+7	남서쪽으로는	남서쪽+으로+는	NOUN	ncn+jca+jxt	_	8	dislocated	_	_
+8	티레니아해	티레니아해	PROPN	nq	_	11	compound	_	SpaceAfter=No
+9	,	,	PUNCT	sp	_	8	punct	_	_
+10	북서쪽으로는	북서쪽+으로+는	NOUN	ncn+jca+jxt	_	11	dislocated	_	_
+11	리구리아해를	리구리아해+를	PROPN	nq+jco	_	12	obj	_	_
+12	형성한다	형성+하+ㄴ다	VERB	ncpa+xsv+ef	_	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	sf	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -7061,11 +7043,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 경제[편집]
+# text = 경제
 1	경제	경제	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -7659,11 +7638,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 농업[편집]
+# text = 농업
 1	농업	농업	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -7896,11 +7872,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 중소기업[편집]
-1	중소기업	중소기업	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 중소기업
+1	중소기업	중소기업	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -8089,11 +8062,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 협동조합[편집]
-1	협동조합	협동조합	NOUN	ncpa+ncpa	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 협동조합
+1	협동조합	협동+조합	NOUN	ncpa+ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -8220,17 +8190,9 @@
 6	볼로냐	볼로냐	PROPN	nq	_	5	conj	_	_
 7	-	-	PUNCT	sr	_	6	punct	_	_
 8	한국기독공보”	한국기독공보”	PROPN	nq	_	5	conj	_	SpaceAfter=No
-9	.	.	PUNCT	sf	_	8	punct	_	_
+9	.	.	PUNCT	sf	_	8	punct	_	SpacesAfter= 
 
 # sent_id = 7
-# text = 2017년 12월 20일에 확인함.
-1	2017년	2017+년	NOUN	nno+nbu	_	3	compound	_	_
-2	12월	12+월	NOUN	nno+nbu	_	3	compound	_	_
-3	20일에	20+일+에	ADV	nno+nbu+jca	_	4	obl	_	_
-4	확인함	확인+하+ㅁ	VERB	ncpa+xsv+etn	_	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	sf	_	4	punct	_	SpacesAfter= 
-
-# sent_id = 8
 # text = </ref>
 1	<	<	PUNCT	sl	_	2	punct	_	SpaceAfter=No
 2	/ref	/ref	X	f	_	0	root	_	SpaceAfter=No
@@ -8242,11 +8204,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 관광업[편집]
-1	관광업	관광업	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 관광업
+1	관광업	관광업	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -8404,11 +8363,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 인구[편집]
+# text = 인구
 1	인구	인구	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -8842,11 +8798,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 민족[편집]
-1	민족	민족	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 민족
+1	민족	민족	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -8942,11 +8895,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 문화[편집]
-1	문화	문화	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 문화
+1	문화	문화	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -9118,11 +9068,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 건축[편집]
+# text = 건축
 1	건축	건축	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -9575,11 +9522,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 그림[편집]
-1	그림	그림	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 그림
+1	그림	그림	VERB	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -10073,11 +10017,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 문학[편집]
-1	문학	문학	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 문학
+1	문학	문학	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -10693,11 +10634,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 음악[편집]
+# text = 음악
 1	음악	음악	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -11128,11 +11066,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 패션[편집]
+# text = 패션
 1	패션	패션	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -11410,11 +11345,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 음식[편집]
+# text = 음식
 1	음식	음식	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -11676,11 +11608,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 스포츠[편집]
-1	스포츠	스포츠	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 스포츠
+1	스포츠	스포츠	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -12460,17 +12389,261 @@
 9	정착했다	정착+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sf	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = 축구 이외에 전국적인 인기를 모으는 스포츠로는 자전거 경주가 있다.
+1	축구	축구	NOUN	ncn	_	2	compound	_	_
+2	이외에	이외+에	ADV	ncn+jca	_	5	obl	_	_
+3	전국적인	전국+적+이+ㄴ	VERB	ncn+xsn+jp+etm	_	4	acl	_	_
+4	인기를	인기+를	NOUN	ncn+jco	_	5	obj	_	_
+5	모으는	모으+는	VERB	pvg+etm	_	6	acl	_	_
+6	스포츠로는	스포츠+로+는	NOUN	ncn+jca+jxt	_	9	dislocated	_	_
+7	자전거	자전거	NOUN	ncn	_	8	compound	_	_
+8	경주가	경주+가	NOUN	ncn+jcs	_	9	nsubj	_	_
+9	있다	있+다	ADJ	paa+ef	_	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	sf	_	9	punct	_	_
+
+# sent_id = 5
+# text = 유명한 자전거 경주인 '지로 디탈리아 (Giro d'Italia)' 나 '투르 드 프랑스(Tour de France)'에서 이탈리아 선수가 나타나면 사람들은 환호성을 지르면서 따라 달리곤 한다.
+1	유명한	유명+하+ㄴ	VERB	ncps+xsm+etm	_	3	amod	_	_
+2	자전거	자전거	NOUN	ncn	_	3	compound	_	_
+3	경주인	경주+이+ㄴ	VERB	ncn+jp+etm	_	18	acl	_	_
+4	'	'	PUNCT	sl	_	5	punct	_	SpaceAfter=No
+5	지로	지로	PROPN	nq	_	28	advcl	_	_
+6	디탈리아	디탈리아	PROPN	nq	_	5	flat	_	_
+7	(	(	PUNCT	sl	_	8	punct	_	SpaceAfter=No
+8	Giro	Giro	X	f	_	5	appos	_	_
+9	d	d	X	f	_	8	flat	_	SpaceAfter=No
+10	'	'	PUNCT	sr	_	8	punct	_	SpaceAfter=No
+11	Italia	Italia	X	f	_	5	flat	_	SpaceAfter=No
+12	)	)	PUNCT	sr	_	8	punct	_	SpaceAfter=No
+13	'	'	PUNCT	sr	_	5	punct	_	_
+14	나	나	CCONJ	jcj	_	5	case	_	_
+15	'	'	PUNCT	sl	_	16	punct	_	SpaceAfter=No
+16	투르	투르	PROPN	nq	_	18	compound	_	_
+17	드	드	PROPN	nq	_	16	flat	_	_
+18	프랑스	프랑스	PROPN	nq	_	5	conj	_	SpaceAfter=No
+19	(	(	PUNCT	sl	_	20	punct	_	SpaceAfter=No
+20	Tour	Tour	X	f	_	18	appos	_	_
+21	de	de	X	f	_	20	flat	_	_
+22	France	France	X	f	_	20	flat	_	SpaceAfter=No
+23	)	)	PUNCT	sr	_	20	punct	_	SpaceAfter=No
+24	'	'	PUNCT	sr	_	18	punct	_	SpaceAfter=No
+25	에서	에서	ADP	jca	_	18	case	_	_
+26	이탈리아	이탈리아	PROPN	nq	_	27	compound	_	_
+27	선수가	선수+가	NOUN	ncn+jcs	_	28	nsubj	_	_
+28	나타나면	나타나+면	SCONJ	pvg+ecs	_	33	ccomp	_	_
+29	사람들은	사람+들+은	NOUN	ncn+xsn+jxt	_	33	dislocated	_	_
+30	환호성을	환호성+을	NOUN	ncn+jco	_	31	obj	_	_
+31	지르면서	지르+면서	SCONJ	pvg+ecc	_	33	ccomp	_	_
+32	따라	따르+아	SCONJ	pvg+ecs	_	33	ccomp	_	_
+33	달리곤	달리+곤	VERB	pvg+ecx	_	0	root	_	_
+34	한다	하+ㄴ다	AUX	px+ef	_	33	aux	_	SpaceAfter=No
+35	.	.	PUNCT	sf	_	34	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = 이탈리아는 체육수업이 거의 없다.
+1	이탈리아는	이탈리아+는	PROPN	nq+jxt	_	4	dislocated	_	_
+2	체육수업이	체육+수업+이	NOUN	ncpa+ncn+jcs	_	4	nsubj	_	_
+3	거의	거의	ADV	mag	_	4	advmod	_	_
+4	없다	없+다	ADJ	paa+ef	_	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	sf	_	4	punct	_	_
+
+# sent_id = 7
+# text = 그럼에도 이탈리아는 수영이나 펜싱은 물론 조정과 사격에 이르기까지 다양한 분야에서 세계 챔피언과 올림픽 챔피언을 적지 않게 배출했으며, 선수들 모두 스포츠 무대의 중심을 차지하기 위하여 분투하고 있다.
+1	그럼에도	그럼에도	CCONJ	maj	_	26	cc	_	_
+2	이탈리아는	이탈리아+는	PROPN	nq+jxt	_	26	dislocated	_	_
+3	수영이나	수영+이나	CCONJ	ncn+jcj	_	8	dislocated	_	_
+4	펜싱은	펜싱+은	NOUN	ncn+jxt	_	3	conj	_	_
+5	물론	물론	ADV	mag	_	8	advmod	_	_
+6	조정과	조정+과	CCONJ	ncpa+jcj	_	8	obl	_	_
+7	사격에	사격+에	ADV	ncn+jca	_	6	conj	_	_
+8	이르기까지	이르+기+까지	ADV	pvg+etn+jxc	_	17	advcl	_	_
+9	다양한	다양+하+ㄴ	VERB	ncps+xsm+etm	_	10	amod	_	_
+10	분야에서	분야+에서	ADV	ncn+jca	_	17	advcl	_	_
+11	세계	세계	NOUN	ncn	_	12	compound	_	_
+12	챔피언과	챔피언+과	CCONJ	ncn+jcj	_	17	obj	_	_
+13	올림픽	올림픽	NOUN	ncn	_	14	compound	_	_
+14	챔피언을	챔피언+을	NOUN	ncn+jco	_	12	conj	_	_
+15	적지	적+지	ADJ	paa+ecx	_	17	amod	_	_
+16	않게	않+게	SCONJ	px+ecs	_	15	aux	_	_
+17	배출했으며	배출+하+었+으며	SCONJ	ncpa+xsv+ep+ecc	_	0	root	_	SpaceAfter=No
+18	,	,	PUNCT	sp	_	17	punct	_	_
+19	선수들	선수+들	NOUN	ncn+xsn	_	20	compound	_	_
+20	모두	모두	ADV	mag	_	26	advmod	_	_
+21	스포츠	스포츠	NOUN	ncn	_	22	compound	_	_
+22	무대의	무대+의	NOUN	ncn+jcm	_	23	nmod	_	_
+23	중심을	중심+을	NOUN	ncn+jco	_	24	obj	_	_
+24	차지하기	차지+하+기	VERB	ncpa+xsv+etn	_	25	nmod	_	_
+25	위하여	위하+어	SCONJ	pvg+ecs	_	26	ccomp	_	_
+26	분투하고	분투+하+고	VERB	ncpa+xsv+ecx	_	17	conj	_	_
+27	있다	있+다	AUX	px+ef	_	26	aux	_	SpaceAfter=No
+28	.	.	PUNCT	sf	_	27	punct	_	_
+
+# sent_id = 8
+# text = 이밖에 농구와 배구, 핸드볼도 인기 있으며 이탈리아 북부와 지방 항구도시에서는 제2차 세계대전 당시 미군의 영향으로 야구가 가장 인기있는 스포츠이다.
+1	이밖에	이+밖에	ADV	npd+jxc	_	7	advcl	_	_
+2	농구와	농구+와	CCONJ	ncn+jcj	_	7	advcl	_	_
+3	배구	배구	NOUN	ncn	_	2	conj	_	SpaceAfter=No
+4	,	,	PUNCT	sp	_	3	punct	_	_
+5	핸드볼도	핸드볼+도	ADV	ncn+jxc	_	2	conj	_	_
+6	인기	인기	NOUN	ncn	_	7	dep	_	_
+7	있으며	있+으며	CCONJ	paa+ecc	_	0	root	_	_
+8	이탈리아	이탈리아	PROPN	nq	_	9	compound	_	_
+9	북부와	북부+와	CCONJ	ncn+jcj	_	21	dislocated	_	_
+10	지방	지방	NOUN	ncn	_	11	compound	_	_
+11	항구도시에서는	항구+도시+에서+는	NOUN	ncn+ncn+jca+jxt	_	9	conj	_	_
+12	제2차	제+2+차	PART	xp+nno+nbu	_	13	compound	_	_
+13	세계대전	세계+대전	NOUN	ncn+ncn	_	14	compound	_	_
+14	당시	당시	NOUN	ncn	_	20	dep	_	_
+15	미군의	미군+의	NOUN	ncn+jcm	_	16	nmod	_	_
+16	영향으로	영향+으로	ADV	ncn+jca	_	20	advcl	_	_
+17	야구가	야구+가	NOUN	ncn+jcs	_	20	nsubj	_	_
+18	가장	가장	ADV	mag	_	20	advmod	_	_
+19	인기	인기	NOUN	ncn	_	20	dep	_	SpaceAfter=No
+20	있는	있+는	ADJ	paa+etm	_	21	amod	_	_
+21	스포츠이다	스포츠+이+다	VERB	ncn+jp+ef	_	7	conj	_	SpaceAfter=No
+22	.	.	PUNCT	sf	_	21	punct	_	_
+
+# sent_id = 9
+# text = 이탈리아의 성악가 체칠리아 바르톨리, 안드레아 보첼리, 루치아노 파바로티, 레나타 테발디 등이 이탈리아를 빛내고 있다.
+1	이탈리아의	이탈리아+의	PROPN	nq+jcm	_	2	nmod	_	_
+2	성악가	성악가	NOUN	ncn	_	3	compound	_	_
+3	체칠리아	체칠리아	PROPN	nq	_	14	compound	_	_
+4	바르톨리	바르톨리	PROPN	nq	_	3	flat	_	SpaceAfter=No
+5	,	,	PUNCT	sp	_	3	punct	_	_
+6	안드레아	안드레아	PROPN	nq	_	3	conj	_	_
+7	보첼리	보첼리	PROPN	nq	_	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	sp	_	6	punct	_	_
+9	루치아노	루치아노	PROPN	nq	_	3	conj	_	_
+10	파바로티	파바로티	PROPN	nq	_	9	flat	_	SpaceAfter=No
+11	,	,	PUNCT	sp	_	9	punct	_	_
+12	레나타	레나타	PROPN	nq	_	3	conj	_	_
+13	테발디	테발디	PROPN	nq	_	9	flat	_	_
+14	등이	등+이	NOUN	nbn+jcs	_	16	nsubj	_	_
+15	이탈리아를	이탈리아+를	PROPN	nq+jco	_	16	obj	_	_
+16	빛내고	빛내+고	VERB	pvg+ecx	_	0	root	_	_
+17	있다	있+다	AUX	px+ef	_	16	aux	_	SpaceAfter=No
+18	.	.	PUNCT	sf	_	17	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 교육[편집]
-1	교육	교육	NOUN	ncpa	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 교육
+1	교육	교육	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 이탈리아에서 교육은 자유이나, 6세에서 16세까지는 의무교육이다.
+1	이탈리아에서	이탈리아+에서	ADV	nq+jca	_	3	advcl	_	_
+2	교육은	교육+은	NOUN	ncpa+jxt	_	3	dislocated	_	_
+3	자유이나	자유+이나	CCONJ	ncpa+jcj	_	7	ccomp	_	SpaceAfter=No
+4	,	,	PUNCT	sp	_	3	punct	_	_
+5	6세에서	6+세+에서	ADV	nnc+nbu+jca	_	6	advcl	_	_
+6	16세까지는	16+세+까지+는	NUM	nno+nbu+jxc	_	7	dislocated	_	_
+7	의무교육이다	의무+교육+이+다	VERB	ncn+ncpa+jp+ef	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	sf	_	7	punct	_	_
+
+# sent_id = 2
+# text = 이탈리아의 교육 체계는 총 5단계로 이루어져 있는데, 가장 하위 단계가 3년의 유치원, 그다음이 초등학교로 5년제, 그 다음이 중학교로 3년제이다.
+1	이탈리아의	이탈리아+의	PROPN	nq+jcm	_	3	nmod	_	_
+2	교육	교육	NOUN	ncpa	_	3	compound	_	_
+3	체계는	체계+는	NOUN	ncn+jxt	_	6	dislocated	_	_
+4	총	총	NOUN	mma	_	5	amod	_	_
+5	5단계로	5+단계+로	ADV	nnc+nbu+jca	_	6	advcl	_	_
+6	이루어져	이루+어+지+어	AUX	pvg+ecx+px+ecx	_	22	ccomp	_	_
+7	있는데	있+는데	SCONJ	px+ecs	_	6	aux	_	SpaceAfter=No
+8	,	,	PUNCT	sp	_	7	punct	_	_
+9	가장	가장	ADV	mag	_	11	advmod	_	_
+10	하위	하위	NOUN	ncn	_	11	compound	_	_
+11	단계가	단계+가	NOUN	ncn+jcs	_	13	nsubj	_	_
+12	3년의	3+년+의	NUM	nno+nbu+jcm	_	13	nmod	_	_
+13	유치원	유치원	NOUN	ncn	_	22	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	sp	_	13	punct	_	_
+15	그다음이	그다음+이	PRON	ncn+jcs	_	17	nsubj	_	_
+16	초등학교로	초등학교+로	ADV	ncn+jca	_	17	advcl	_	_
+17	5년제	5+년+제	NOUN	nnc+nbu	_	22	advmod	_	SpaceAfter=No
+18	,	,	PUNCT	sp	_	17	punct	_	_
+19	그	그	DET	mmd	_	20	det	_	_
+20	다음이	다음+이	NOUN	ncn+jcs	_	22	nsubj	_	_
+21	중학교로	중학교+로	ADV	ncn+jca	_	22	advcl	_	_
+22	3년제이다	3+년+제+이+다	VERB	nnc+nbu+jp+ef	_	0	root	_	SpaceAfter=No
+23	.	.	PUNCT	sf	_	22	punct	_	_
+
+# sent_id = 3
+# text = 학년은 9월부터 6월까지로, 총 3학기제이다.
+1	학년은	학년+은	NOUN	ncn+jxt	_	6	dislocated	_	_
+2	9월부터	9+월+부터	ADV	nno+nbu+jxc	_	3	advcl	_	_
+3	6월까지로	6+월+까지+로	ADV	nno+nbu+jxc+jca	_	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	sp	_	3	punct	_	_
+5	총	총	ADJ	mma	_	6	amod	_	_
+6	3학기제이다	3+학+기제+이+다	VERB	ncpa+ncn+jp+ef	_	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 4
+# text = 중학교 과정을 이수한 이후에는 고등학교로 진학하는데, 현재 5년제의 고등학교를 두 부분으로 나누어 첫 2년(Biennio)은 대부분 학교의 교육과정이 같으며 의무교육이다.
+1	중학교	중학교	NOUN	ncn	_	2	compound	_	_
+2	과정을	과정+을	NOUN	ncn+jco	_	3	obj	_	_
+3	이수한	이수+하+ㄴ	VERB	ncpa+xsv+etm	_	4	acl	_	_
+4	이후에는	이후+에+는	NOUN	ncn+jca+jxt	_	6	dislocated	_	_
+5	고등학교로	고등학교+로	ADV	ncn+jca	_	6	advcl	_	_
+6	진학하는데	진학+하+는데	SCONJ	ncpa+xsv+ecs	_	24	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	sp	_	6	punct	_	_
+8	현재	현재	NOUN	ncn	_	9	compound	_	_
+9	5년제의	5+년+제+의	NUM	nno+nbu+jcm	_	10	nmod	_	_
+10	고등학교를	고등학교+를	NOUN	ncn+jco	_	13	obj	_	_
+11	두	두	NUM	nnc	_	12	nummod	_	_
+12	부분으로	부분+으로	ADV	ncn+jca	_	13	advcl	_	_
+13	나누어	나누+어	SCONJ	pvg+ecs	_	24	ccomp	_	_
+14	첫	첫	NUM	nnc	_	15	nummod	_	_
+15	2년	2+년	NOUN	nno+nbu	_	24	dislocated	_	SpaceAfter=No
+16	(	(	PUNCT	sl	_	17	punct	_	SpaceAfter=No
+17	Biennio	Biennio	X	f	_	15	appos	_	SpaceAfter=No
+18	)	)	PUNCT	sr	_	17	punct	_	SpaceAfter=No
+19	은	은	ADP	jxt	_	15	case	_	_
+20	대부분	대부분	NOUN	ncn	_	23	advmod	_	_
+21	학교의	학교+의	NOUN	ncn+jcm	_	22	nmod	_	_
+22	교육과정이	교육+과정+이	NOUN	ncpa+ncn+jcs	_	23	nsubj	_	_
+23	같으며	같+으며	SCONJ	paa+ecs	_	24	xcomp	_	_
+24	의무교육이다	의무+교육+이+다	VERB	ncn+ncpa+jp+ef	_	0	root	_	SpaceAfter=No
+25	.	.	PUNCT	sf	_	24	punct	_	_
+
+# sent_id = 5
+# text = 이후 3년(Triennio)은 본인이 원하는 고등교육기관으로 선택해 진학한다.
+1	이후	이후	NOUN	ncn	_	11	advmod	_	_
+2	3년	3+년	NOUN	nno+nbu	_	11	dislocated	_	SpaceAfter=No
+3	(	(	PUNCT	sl	_	4	punct	_	SpaceAfter=No
+4	Triennio	Triennio	X	f	_	2	appos	_	SpaceAfter=No
+5	)	)	PUNCT	sr	_	4	punct	_	SpaceAfter=No
+6	은	은	ADP	jxt	_	2	case	_	_
+7	본인이	본인+이	NOUN	ncn+jcs	_	8	nsubj	_	_
+8	원하는	원하+는	VERB	pvg+etm	_	9	acl	_	_
+9	고등교육기관으로	고등교육+기관+으로	ADV	ncn+ncn+jca	_	10	advcl	_	_
+10	선택해	선택+하+어	SCONJ	ncpa+xsv+ecs	_	11	ccomp	_	_
+11	진학한다	진학+하+ㄴ다	VERB	ncpa+xsv+ef	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	_
+
+# sent_id = 6
+# text = 고등학교를 우수한 성적으로 마쳤을 경우에는 대학교로 진학하여 대학 교육을 받을 수 있다.
+1	고등학교를	고등학교+를	NOUN	ncn+jco	_	4	obj	_	_
+2	우수한	우수+하+ㄴ	VERB	ncps+xsm+etm	_	3	amod	_	_
+3	성적으로	성+적+으로	ADV	ncn+xsn+jca	_	4	advcl	_	_
+4	마쳤을	마치+었+을	VERB	pvg+ep+etm	_	5	acl	_	_
+5	경우에는	경우+에+는	NOUN	ncn+jca+jxt	_	10	dislocated	_	_
+6	대학교로	대학교+로	ADV	ncn+jca	_	7	advcl	_	_
+7	진학하여	진학+하+어	SCONJ	ncpa+xsv+ecs	_	10	ccomp	_	_
+8	대학	대학	NOUN	ncn	_	9	compound	_	_
+9	교육을	교육+을	NOUN	ncpa+jco	_	10	obj	_	_
+10	받을	받+ㄹ	VERB	pvg+etm	_	0	root	_	_
+11	수	수	NOUN	nbn	_	10	aux	_	_
+12	있다	있+다	ADJ	paa+ef	_	11	fixed	_	SpaceAfter=No
+13	.	.	PUNCT	sf	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -12681,11 +12854,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 종교[편집]
-1	종교	종교	NOUN	ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sf	_	3	punct	_	SpacesAfter=\n
+# text = 종교
+1	종교	종교	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -12925,12 +13095,12 @@
 18	.	.	PUNCT	sf	_	17	punct	_	_
 
 # sent_id = 8
-# text = 이탈리아는 스페인 등 유럽에서 쫒겨난 유대인들을 상대적으로 관용적으로 받아들였는데, 허나 2차 세계대전의 홀로코스트 중에 이탈리아 유대인의 20%를 죽이는 대참사를 저지르기도 하였다.
+# text = 이탈리아는 스페인 등 유럽에서 쫓겨난 유대인들을 상대적으로 관용적으로 받아들였는데, 허나 2차 세계대전의 홀로코스트 중에 이탈리아 유대인의 20%를 죽이는 대참사를 저지르기도 하였다.
 1	이탈리아는	이탈리아+는	PROPN	nq+jxt	_	23	dislocated	_	_
 2	스페인	스페인	PROPN	nq	_	3	compound	_	_
 3	등	등	NOUN	nbn	_	4	mark	_	_
 4	유럽에서	유럽+에서	ADV	nq+jca	_	5	advcl	_	_
-5	쫒겨난	쫒기+어+나+ㄴ	AUX	pvg+ecx+px+etm	_	6	acl	_	_
+5	쫓겨난	쫓기+어+나+ㄴ	AUX	pvg+ecx+px+etm	_	6	acl	_	_
 6	유대인들을	유대인+들+을	NOUN	ncn+xsn+jco	_	9	obj	_	_
 7	상대적으로	상대+적+으로	ADV	ncpa+xsn+jca	_	9	advcl	_	_
 8	관용적으로	관용+적+으로	ADV	ncpa+xsn+jca	_	9	advcl	_	_
@@ -13087,11 +13257,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 각주[편집]
-1	각주	각주	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 각주
+1	각주	각주	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -13099,166 +13266,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 외부 링크[편집]
+# text = 외부 링크
 1	외부	외부	NOUN	ncn	_	2	compound	_	_
-2	링크	링크	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 그리스 네덜란드 노르웨이 뉴질랜드 대한민국 덴마크
-1	그리스	그리스	PROPN	nq	_	4	nsubj	_	SpacesBefore=\s
-2	네덜란드	네덜란드	PROPN	nq	_	1	flat	_	_
-3	노르웨이	노르웨+이	PROPN	nq+jcs	_	1	flat	_	_
-4	뉴질랜드	뉴질랜드	PROPN	nq	_	0	root	_	_
-5	대한민국	대한민국	PROPN	nq	_	4	flat	_	_
-6	덴마크	덴마크	PROPN	nq	_	4	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 독일 라트비아 룩셈부르크 리투아니아 멕시코 미국
-1	독일	독일	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	라트비아	라트비아	PROPN	nq	_	1	flat	_	_
-3	룩셈부르크	룩셈부르크	PROPN	nq	_	1	flat	_	_
-4	리투아니아	리투아니아	PROPN	nq	_	1	flat	_	_
-5	멕시코	멕시코	PROPN	nq	_	1	flat	_	_
-6	미국	미국	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 벨기에 스웨덴 스위스 스페인 슬로바키아
-1	벨기에	벨기+에	ADV	nq+jca	_	2	obl	_	SpacesBefore=\s
-2	스웨덴	스웨덴	PROPN	nq	_	0	root	_	_
-3	스위스	스위스	PROPN	nq	_	2	flat	_	_
-4	스페인	스페인	PROPN	nq	_	2	flat	_	_
-5	슬로바키아	슬로바키아	PROPN	nq	_	2	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 슬로베니아 아이슬란드 아일랜드 에스토니아 영국
-1	슬로베니아	슬로베니아	PROPN	nq	_	3	compound	_	SpacesBefore=\s
-2	아이슬란드	아이슬란드	PROPN	nq	_	1	flat	_	_
-3	아일랜드	아일랜드	PROPN	nq	_	0	root	_	_
-4	에스토니아	에스토니아	PROPN	nq	_	1	flat	_	_
-5	영국	영국	PROPN	nq	_	3	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 오스트레일리아 오스트리아 이스라엘 이탈리아 일본
-1	오스트레일리아	오스트레일리아	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	오스트리아	오스트리아	PROPN	nq	_	1	flat	_	_
-3	이스라엘	이스라엘	PROPN	nq	_	1	flat	_	_
-4	이탈리아	이탈리아	PROPN	nq	_	1	flat	_	_
-5	일본	일본	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 체코 칠레 캐나다 코스타리카 콜롬비아 터키
-1	체코	체코	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	칠레	칠레	PROPN	nq	_	1	flat	_	_
-3	캐나다	캐나다	PROPN	nq	_	1	flat	_	_
-4	코스타리카	코스타리카	PROPN	nq	_	1	flat	_	_
-5	콜롬비아	콜롬비아	PROPN	nq	_	1	flat	_	_
-6	터키	터키	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 포르투갈 폴란드 프랑스 핀란드 헝가리
-1	포르투갈	포르투갈	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	폴란드	폴란드	PROPN	nq	_	1	flat	_	_
-3	프랑스	프랑스	PROPN	nq	_	1	flat	_	_
-4	핀란드	핀란드	PROPN	nq	_	1	flat	_	_
-5	헝가리	헝가리	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 네덜란드 노르웨이 대한민국 덴마크 독일
-1	네덜란드	네덜란드	PROPN	nq	_	3	nsubj	_	SpacesBefore=\s
-2	노르웨이	노르웨+이	PROPN	nq+jcs	_	1	flat	_	_
-3	대한민국	대한민국	PROPN	nq	_	0	root	_	_
-4	덴마크	덴마크	PROPN	nq	_	3	flat	_	_
-5	독일	독일	PROPN	nq	_	3	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 러시아 미국 벨기에 브라질 스웨덴
-1	러시아	러시아	PROPN	nq	_	4	obl	_	SpacesBefore=\s
-2	미국	미국	PROPN	nq	_	1	flat	_	_
-3	벨기에	벨기+에	ADV	nq+jca	_	1	flat	_	_
-4	브라질	브라질	PROPN	nq	_	0	root	_	_
-5	스웨덴	스웨덴	PROPN	nq	_	4	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 스위스 스페인 아일랜드 영국 오스트레일리아
-1	스위스	스위스	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	스페인	스페인	PROPN	nq	_	1	flat	_	_
-3	아일랜드	아일랜드	PROPN	nq	_	1	flat	_	_
-4	영국	영국	PROPN	nq	_	1	flat	_	_
-5	오스트레일리아	오스트레일리아	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 오스트리아 이스라엘 이탈리아 일본 캐나다
-1	오스트리아	오스트리아	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	이스라엘	이스라엘	PROPN	nq	_	1	flat	_	_
-3	이탈리아	이탈리아	PROPN	nq	_	1	flat	_	SpacesAfter=\s\s
-4	일본	일본	PROPN	nq	_	1	flat	_	_
-5	캐나다	캐나다	PROPN	nq	_	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 프랑스 핀란드
-1	프랑스	프랑스	PROPN	nq	_	0	root	_	SpacesBefore=\s
-2	핀란드	핀란드	PROPN	nq	_	1	flat	_	SpacesAfter=\n
+2	링크	링크	NOUN	ncn	_	0	root	_	SpaceAfter=No
 

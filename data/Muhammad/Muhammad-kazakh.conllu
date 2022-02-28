@@ -1,18 +1,10 @@
-# https://kk.wikipedia.org/wiki/%D0%9C%D2%B1%D1%85%D0%B0%D0%BC%D0%BC%D0%B5%D0%B4
-
 # newdoc
 # newpar
 # sent_id = 1
 # text = Мұхаммед — Уикипедия
 1	Мұхаммед	Мұхаммед	NOUN	n	Case=Nom	3	nmod:poss	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
-3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Мұхаммед
-1	Мұхаммед	Мұхаммед	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -565,7 +557,7 @@
 # newpar
 # sent_id = 1
 # text = Аты
-1	Аты	ат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+1	Аты	ат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -982,7 +974,7 @@
 # sent_id = 1
 # text = Сырт бет-әлпеті
 1	Сырт	Сырт	ADJ	adj	_	2	advmod	_	_
-2	бет-әлпеті	бет-әлпеті	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	бет-әлпеті	бет-әлпеті	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1242,7 +1234,7 @@
 4	пайғамбарларының	пайғамбарлар	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	арасындағы	арас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	алатын	алатын	ADJ	adj	_	7	acl:relcl	_	_
-7	орны	орн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+7	орны	орн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1499,19 +1491,60 @@
 2	.	.	PUNCT	sent	_	1	punct	_	_
 
 # sent_id = 3
-# text = Мұхаммедтің исламдағы орны мен оның шариғаты туралы былай жазады:
+# text = Мұхаммедтің исламдағы орны мен оның шариғаты туралы былай жазады: «Монотеистік діндерде еш айырмашылық жоқ , өйткені олардың барлығында — Мұхаммедтің миссиясы адамзаттың барлық діни дамудың шыңы болғандықтан, олар бір Құдай тізбегінің түйіні.
 1	Мұхаммедтің	Мұхаммедтің	NOUN	n	Case=Nom	3	nmod:poss	_	_
 2	исламдағы	исламдақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	1	flat:name	_	_
 3	орны	орн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
-4	мен	мен	NOUN	n	Case=Nom	10	obl	_	_
-5	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
-6	шариғаты	шариғат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+4	мен	мен	NOUN	n	Case=Nom	10	nsubj	_	_
+5	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+6	шариғаты	шариғат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 7-8	туралы	_	_	_	_	_	_	_	_
 7	тура	тура	NOUN	n	Case=Nom	10	obl	_	_
 8	лы	лы	ADP	post	_	7	case	_	_
 9	былай	былай	NOUN	n	Case=Nom	10	obl	_	_
 10	жазады	жаза	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-11	:	:	PUNCT	sent	_	10	punct	_	SpacesAfter=\n
+11	:	:	PUNCT	sent	_	29	punct	_	SpacesAfter=\n
+12	«	«	PUNCT	lquot	_	29	punct	_	SpaceAfter=No
+13	Монотеистік	Монотеистік	NOUN	n	Case=Nom	14	nmod:poss	_	_
+14	діндерде	діндер	NOUN	n	Case=Loc	29	nsubj	_	_
+15	еш	еш	NUM	num	NumType=Card	29	advmod	_	_
+16	айырмашылық	айырмашылық	NOUN	n	Case=Nom	29	nsubj	_	_
+17	жоқ	жоқ	ADJ	adj	_	29	advmod	_	_
+18	,	,	PUNCT	cm	_	29	punct	_	_
+19	өйткені	өйткен	ADJ	adj	_	20	amod	_	_
+20	олардың	олар	NOUN	n	Case=Gen	21	nmod:poss	_	_
+21	барлығында	барлығ	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	29	nsubj	_	SpacesAfter= 
+22	—	—	PUNCT	guio	_	29	punct	_	_
+23	Мұхаммедтің	Мұхаммедтің	NOUN	n	Case=Nom	29	nsubj	_	_
+24	миссиясы	миссиясы	DET	det	PronType=Dem	29	nsubj	_	_
+25	адамзаттың	адамзат	NOUN	n	Case=Gen	29	nsubj	_	_
+26	барлық діни	барлық діни	SCONJ	cnjsub	_	29	cc	_	_
+27	дамудың	даму	NOUN	n	Case=Gen	28	nmod:poss	_	_
+28	шыңы	шың	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	29	nsubj	_	_
+29	болғандықтан	болғандықтан	ADJ	adj	_	10	conj	_	SpaceAfter=No
+30	,	,	PUNCT	cm	_	29	punct	_	_
+31	олар	олар	NOUN	n	Case=Nom|Number=Plur	32	nmod:poss	_	_
+32	бір	бір	DET	det	PronType=Ind	33	obj	_	_
+33	Құдай	құдай	ADV	adv	_	29	conj	_	_
+34	тізбегінің	тізбег	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	35	nsubj	_	_
+35	түйіні	түйіні	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	33	conj	_	SpaceAfter=No
+36	.	.	PUNCT	sent	_	35	punct	_	_
+
+# sent_id = 4
+# text = Алайда, пайғамбарлармен жіберілген заңдардың (шариғаттардың) арасында өзгешеліктер бар».
+1	Алайда	алайда	NOUN	n	Case=Loc	4	advcl	_	SpaceAfter=No
+2	,	,	PUNCT	cm	_	4	obl	_	_
+3	пайғамбарлармен	пайғамбарлар	NOUN	n	Case=Ins	4	obl	_	_
+4	жіберілген	жібер	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	заңдардың	заңдар	NOUN	n	Case=Gen	11	nsubj	_	_
+6	(	(	PUNCT	lpar	_	11	punct	_	SpaceAfter=No
+7	шариғаттардың	шариғаттар	NOUN	n	Case=Gen	9	nmod:poss	_	SpaceAfter=No
+8	)	)	PUNCT	rpar	_	7	case	_	_
+9	арасында	ара	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod:poss	_	_
+10	өзгешеліктер	өзгешеліктер	NOUN	n	Case=Nom	11	obl	_	_
+11	бар	бар	ADJ	adj	_	4	conj	_	SpaceAfter=No
+12	»	»	PUNCT	rquot	_	11	punct	_	SpaceAfter=No
+13	.	.	PUNCT	sent	_	11	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1708,7 +1741,7 @@
 # sent_id = 1
 # text = Діни оқуы
 1	Діни	Діни	SCONJ	cnjsub	_	2	amod	_	_
-2	оқуы	оқу	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+2	оқуы	оқу	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1996,7 +2029,7 @@
 2	Мұхаммедтің	Мұхаммедтің	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	келуі	келу	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	4	nmod:poss	_	_
 4	жайлы	жайл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
-5	болжамдар	болжамдар	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+5	болжамдар	болжамдар	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2028,6 +2061,52 @@
 21	айтылады	айтыла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	22	obl	_	_
 22	дейді	дей	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
 23	.	.	PUNCT	sent	_	22	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Құранда ол былай айтылады: «Өздеріне кітап бергендеріміз (Мұхаммед F.C. ды) ұлдарын танығандай таниды.
+1	Құранда	Құранда	NOUN	n	Case=Loc	2	nmod:poss	_	_
+2	ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	былай	былай	ADV	adv	_	4	advmod	_	_
+4	айтылады	айтыла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	sent	_	16	punct	_	_
+6	«	«	PUNCT	lquot	_	16	punct	_	SpaceAfter=No
+7	Өздеріне	Өздеріне	PRON	prn	Case=Nom|PronType=Int	16	nsubj	_	_
+8	кітап	кіта	VERB	v	Aspect=Perf|VerbForm=Conv	16	obl	_	_
+9	бергендеріміз	бергендеріміз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	11	amod	_	_
+10	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
+11	Мұхаммед	мұхаммед	NOUN	n	Case=Nom	16	obl	_	_
+12	F.C. ды	F.C. 	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	nsubj	_	SpaceAfter=No
+13	)	)	PUNCT	rpar	_	16	obl	_	_
+14	ұлдарын	ұлдарын	ADJ	adj	_	15	amod	_	_
+15	танығандай	танығандай	NOUN	n	Case=Nom	16	obl	_	_
+16	таниды	тани	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	SpaceAfter=No
+17	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = 3
+# text = Негізінен олардан бip тобы (ғалымдары) шындықты біле тұра жасырады.
+1	Негізінен	Негіз	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+2	олардан	олардан	NOUN	n	Case=Nom	11	obl	_	_
+3	бip	бip	NOUN	n	Case=Nom	4	nmod:poss	_	_
+4	тобы	тоб	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+5	(	(	PUNCT	lpar	_	11	obl	_	SpaceAfter=No
+6	ғалымдары	ғалымдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	SpaceAfter=No
+7	)	)	PUNCT	rpar	_	11	obl	_	_
+8	шындықты	шындық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	amod	_	_
+9	біле	біле	X	x	_	10	amod	_	_
+10	тұра	тұра	NOUN	n	Case=Nom	11	nsubj	_	_
+11	жасырады	жасыра	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sent	_	11	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = »
+1	»	»	PUNCT	rquot	_	0	root	_	_
+
+# sent_id = 5
+# text = (2:146)
+1	(	(	PUNCT	lpar	_	2	punct	_	SpaceAfter=No
+2	2:14	2:14	NUM	num	NumType=Ord	0	root	_	SpaceAfter=No
+3	6	6	NUM	num	NumType=Ord	2	flat:name	_	SpaceAfter=No
+4	)	)	PUNCT	rpar	_	2	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -2108,45 +2187,147 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Мен олардың ағайындарының арасынан, оларға сен тәрізді ["бұл сөздер Моисейге (Мұсаға) айтылған"] Пайғамбар жасаймын, және Менің сөздерімді оның аузына саламын, және Ол, Менің Оған бұйырғандарымның барлығын оларға айтады
+# text = Мен олардың ағайындарының арасынан, оларға сен тәрізді Пайғамбар жасаймын, және Менің сөздерімді оның аузына саламын, және Ол, Менің Оған бұйырғандарымның барлығын оларға айтады Ал Менің сөздерімді, Менің атыммен сөйлеген сол Пайғамбардың сөздерін тыңдамаса, Мен соны жазалаймын; Бірақ пайғамбардың, Менің атымнан, Мен бұйырмағандарды айтуға батылы жетсе, және басқа құдайлардың атымен сөйлесе, сол пайғамбарды өлімге жіберіңдер.
 1	Мен	Мен	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	олардың	олар	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	ағайындарының	ағайындар	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	арасынан	арас	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	8	punct	_	_
 6	оларға	олар	NOUN	n	Case=Dat	8	obl	_	_
-7	сен	сен	NOUN	n	Case=Nom	8	obl	_	_
-8	тәрізді	тәріз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	[	[	PUNCT	cm	_	38	punct	_	SpaceAfter=No
-10	"	"	PUNCT	cm	_	38	punct	_	SpaceAfter=No
-11	бұл	бұл	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_
-12	сөздер	сөзде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	38	advcl	_	_
-13	Моисейге	Моисейге	NOUN	n	Case=Dat	38	obl	_	_
-14	(	(	PUNCT	lpar	_	38	punct	_	SpaceAfter=No
-15	Мұсаға	Мұса	NOUN	n	Case=Dat	38	nsubj	_	SpaceAfter=No
-16	)	)	PUNCT	rpar	_	38	punct	_	_
-17	айтылған	айт	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	38	advcl	_	SpaceAfter=No
-18	"	"	PUNCT	cm	_	38	punct	_	SpaceAfter=No
-19	]	]	PUNCT	cm	_	38	punct	_	_
-20	Пайғамбар	Пайғамбар	PART	mod	_	38	advcl	_	_
-21	жасаймын	жасаймын	ADJ	adj	Case=Nom	20	flat:name	_	SpaceAfter=No
-22	,	,	PUNCT	cm	_	21	punct	_	_
-23	және	және	PRON	prn	Case=Nom|PronType=Int	25	obl	_	_
-24	Менің	Менің	NOUN	n	Case=Nom	25	obl	_	_
-25	сөздерімді	сөздерім	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	advcl	_	_
-26	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	27	nmod:poss	_	_
-27	аузына	аузына	NOUN	n	Case=Nom	28	nsubj	_	_
-28	саламын	саламын	ADJ	adj	_	33	amod	_	SpaceAfter=No
-29	,	,	PUNCT	cm	_	28	punct	_	_
-30	және	және	PRON	prn	Case=Nom|PronType=Int	31	nsubj	_	_
-31	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	28	conj	_	SpaceAfter=No
-32	,	,	PUNCT	cm	_	31	punct	_	_
-33	Менің	Менің	NOUN	n	Case=Nom	38	nsubj	_	_
-34	Оған	ол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	obl	_	_
-35	бұйырғандарымның	бұйырғандарым	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	37	nmod:poss	_	_
-36	барлығын	барлығын	ADJ	adj	Case=Nom	37	amod	_	_
-37	оларға	олар	NOUN	n	Case=Dat|Number=Plur	38	obj	_	_
-38	айтады	айт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	8	appos	_	SpacesAfter=\n
+7	сен	сен	NOUN	n	Case=Nom	8	obj	_	_
+8	тәрізді	тәрізлы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	_	SpacesAfter=\s\s
+9	Пайғамбар	Пайғамбар	PART	mod	_	8	case	_	_
+10	жасаймын	жасаймын	ADJ	adj	Case=Nom	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	10	punct	_	_
+12	және	және	PRON	prn	Case=Nom|PronType=Int	14	obl	_	_
+13	Менің	Менің	NOUN	n	Case=Nom	14	obl	_	_
+14	сөздерімді	сөздерім	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	advcl	_	_
+15	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	16	nmod:poss	_	_
+16	аузына	аузына	NOUN	n	Case=Nom	17	nsubj	_	_
+17	саламын	саламын	ADJ	adj	_	22	amod	_	SpaceAfter=No
+18	,	,	PUNCT	cm	_	17	punct	_	_
+19	және	және	PRON	prn	Case=Nom|PronType=Int	20	nsubj	_	_
+20	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	conj	_	SpaceAfter=No
+21	,	,	PUNCT	cm	_	20	punct	_	_
+22	Менің	Менің	NOUN	n	Case=Nom	23	obl	_	_
+23	Оған	ол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	advcl	_	_
+24	бұйырғандарымның	бұйырғандарым	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	27	advmod	_	_
+25	барлығын	барлығын	ADJ	adj	Case=Nom	26	amod	_	_
+26	оларға	олар	NOUN	n	Case=Dat|Number=Plur	27	nmod:poss	_	_
+27	айтады	айт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	28	acl:relcl	_	SpacesAfter=\n
+28	Ал	Ал	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	30	obl	_	_
+29	Менің	Менің	NOUN	n	Case=Nom	30	obl	_	_
+30	сөздерімді	сөздерім	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+31	,	,	PUNCT	cm	_	32	punct	_	_
+32	Менің	Менің	NOUN	n	Case=Nom	30	conj	_	_
+33	атыммен	атым	NOUN	n	Case=Ins	34	obl	_	_
+34	сөйлеген	сөйле	VERB	v	Tense=Past|VerbForm=Part	38	advcl	_	_
+35	сол	сол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	36	nmod:poss	_	_
+36	Пайғамбардың	Пайғамбар	NOUN	n	Case=Gen	38	obl	_	_
+37	сөздерін	сөздер	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	38	obj	_	_
+38	тыңдамаса	тыңдама	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	32	conj	_	SpaceAfter=No
+39	,	,	PUNCT	cm	_	51	punct	_	_
+40	Мен	Мен	NOUN	n	Case=Nom	41	nmod:poss	_	_
+41	соны	сон	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	51	obl	_	_
+42	жазалаймын	жазалаймын	ADJ	adj	_	51	advmod	_	SpaceAfter=No
+43	;	;	PUNCT	cm	_	51	punct	_	SpacesAfter=\n
+44	Бірақ	бірақ	CCONJ	cnjcoo	_	51	cc	_	_
+45	пайғамбардың	пайғамбар	NOUN	n	Case=Gen	51	nsubj	_	SpaceAfter=No
+46	,	,	PUNCT	cm	_	51	punct	_	_
+47	Менің	Менің	NOUN	n	Case=Nom	48	nmod:poss	_	_
+48	атымнан	атым	NOUN	n	Case=Abl	51	obl	_	SpaceAfter=No
+49	,	,	PUNCT	cm	_	51	obl	_	_
+50	Мен	Мен	NOUN	n	Case=Nom	51	obj	_	_
+51	бұйырмағандарды	бұйырмағандар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	conj	_	_
+52	айтуға	айт	VERB	v	Case=Dat|VerbForm=Ger	53	nmod:poss	_	_
+53	батылы	батыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	54	nsubj	_	_
+54	жетсе	жетсе	X	x	_	51	punct	_	SpaceAfter=No
+55	,	,	PUNCT	cm	_	54	punct	_	_
+56	және	және	PRON	prn	Case=Nom|PronType=Int	58	nmod	_	_
+57	басқа	басқа	ADP	post	_	56	case	_	_
+58	құдайлардың	құдайлар	NOUN	n	Case=Gen	59	nmod:poss	_	_
+59	атымен	аты	NOUN	n	Case=Ins	60	obl	_	_
+60	сөйлесе	сөйлесе	X	x	_	65	advcl	_	SpaceAfter=No
+61	,	,	PUNCT	cm	_	65	punct	_	_
+62	сол	сол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	65	nsubj	_	_
+63	пайғамбарды	пайғамбар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	64	amod	_	_
+64	өлімге	өлімге	NOUN	n	Case=Dat	65	obl	_	_
+65	жіберіңдер	жіберіңдер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	54	conj	_	SpaceAfter=No
+66	.	.	PUNCT	sent	_	65	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Және сен өз жүрегіңде айтсаң: «Құдай сөйлемеген сөзді, біз қалай білеміз?» Егер пайғамбар Құдай атымен айтса, бірақ сол сөз орындалмаса, онда ол сөзді Құдай айтпаған, бірақ сол пайғамбар өз батылдығымен сөйлеген, — қорықпа одан.
+1	Және	Және	PRON	prn	Case=Nom|PronType=Int	2	nmod:poss	_	_
+2	сен	сен	NOUN	n	Case=Nom	10	obl	_	_
+3	өз	өз	ADP	post	_	2	case	_	_
+4	жүрегіңде	жүрегің	NOUN	n	Case=Loc	10	obl	_	_
+5	айтсаң	айтсаң	NOUN	n	Case=Nom	10	obj	_	SpaceAfter=No
+6	:	:	PUNCT	sent	_	10	punct	_	_
+7	«	«	PUNCT	lquot	_	10	punct	_	SpaceAfter=No
+8	Құдай	құдай	ADV	adv	_	9	advmod	_	_
+9	сөйлемеген	сөйле	VERB	v	Polarity=Neg|Tense=Past|VerbForm=Part	10	nmod:poss	_	_
+10	сөзді	сөз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	12	punct	_	_
+12	біз	біз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	10	conj	_	_
+13	қалай	қалай	X	x	_	14	dep	_	_
+14	білеміз	білеміз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	12	parataxis	_	SpaceAfter=No
+15	?	?	PUNCT	sent	_	14	punct	_	SpaceAfter=No
+16	»	»	PUNCT	rquot	_	17	punct	_	SpacesAfter=\n
+17	Егер	Еге	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	conj	_	_
+18	пайғамбар	пайғамбар	PART	mod	_	19	advmod	_	_
+19	Құдай	құдай	ADV	adv	_	17	punct	_	_
+20	атымен	аты	NOUN	n	Case=Ins	21	obl	_	_
+21	айтса	айт	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	22	advcl	_	SpaceAfter=No
+22	,	,	PUNCT	cm	_	26	punct	_	_
+23	бірақ	бірақ	CCONJ	cnjcoo	_	26	cc	_	_
+24	сол	сол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	25	nmod:poss	_	_
+25	сөз	сөз	NOUN	n	Case=Nom	26	obl	_	_
+26	орындалмаса	орындалма	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	19	conj	_	SpaceAfter=No
+27	,	,	PUNCT	cm	_	26	punct	_	_
+28	онда	онда	CCONJ	cnjcoo	_	32	cc	_	_
+29	ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	30	nmod:poss	_	_
+30	сөзді	сөз	NOUN	n	Case=Acc	31	nmod:poss	_	_
+31	Құдай	Құдай	NOUN	n	Case=Nom	32	obl	_	_
+32	айтпаған	айтпа	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	SpaceAfter=No
+33	,	,	PUNCT	cm	_	26	punct	_	_
+34	бірақ	бірақ	CCONJ	cnjcoo	_	36	cc	_	_
+35	сол	сол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	36	nsubj	_	_
+36	пайғамбар	пайғамбар	PART	mod	_	26	conj	_	_
+37	өз	өз	ADP	post	_	36	punct	_	_
+38	батылдығымен	батылдығы	NOUN	n	Case=Ins	39	obl	_	_
+39	сөйлеген	сөйле	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	parataxis	_	SpaceAfter=No
+40	,	,	PUNCT	cm	_	39	punct	_	SpacesAfter= 
+41	—	—	PUNCT	guio	_	43	punct	_	_
+42	қорықпа	қорықпа	SCONJ	cnjadv	_	43	cc	_	_
+43	одан	одан	NOUN	n	Case=Nom	40	conj	_	SpaceAfter=No
+44	.	.	PUNCT	sent	_	43	punct	_	SpacesAfter=\n
+
+# newdoc
+# newpar
+# sent_id = 1
+# text = (Библия.
+1	(	(	PUNCT	lpar	_	2	punct	_	SpacesBefore=\n|SpaceAfter=No
+2	Библия	Библия	PROPN	np	Case=Nom	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = 2
+# text = Екінші заң бөл.
+1	Екінші	Ек	ADJ	adj	_	2	amod	_	_
+2	заң	заң	NOUN	n	Case=Nom	3	nmod:poss	_	_
+3	бөл	бөл	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = 3
+# text = 18, бап.
+1	18	18	NUM	num	NumType=Ord	3	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	cm	_	1	punct	_	_
+3	бап	ба	VERB	v	Aspect=Perf|VerbForm=Conv	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = 4
+# text = 18-22)
+1	18-22	18-22	NUM	num	NumType=Ord	0	root	_	SpaceAfter=No
+2	)	)	PUNCT	rpar	_	1	punct	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2302,7 +2483,7 @@
 4	дейінгі	дейінгі	ADJ	adj	_	5	amod	_	_
 5	Арабия	Арабия	PROPN	np	Case=Nom	6	nmod:poss	_	_
 6	мен	мен	NOUN	n	Case=Nom	7	obl	_	_
-7	Мекке	мекке	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+7	Мекке	мекке	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2499,7 +2680,7 @@
 # newpar
 # sent_id = 1
 # text = Отбасы
-1	Отбасы	Отбасы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+1	Отбасы	Отбасы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2986,6 +3167,17 @@
 9	салынған	салын	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = Төменде Мұхаммед пайғамбардың 13 әйелінің тізімі көрсетілген:
+1	Төменде	Төмен	NOUN	n	Case=Loc	7	obl	_	_
+2	Мұхаммед	Мұхаммед	PROPN	np	Case=Nom	3	nmod:poss	_	_
+3	пайғамбардың	пайғамбар	NOUN	n	Case=Gen	5	nmod:poss	_	_
+4	13	13	NUM	num	NumType=Ord	5	amod	_	_
+5	әйелінің	әйел	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
+6	тізімі	тізімі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	7	obl	_	_
+7	көрсетілген	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	:	:	PUNCT	sent	_	7	punct	_	SpacesAfter=\n
+
 # newdoc
 # newpar
 # sent_id = 1
@@ -2997,6 +3189,87 @@
 5	Хадишадан	Хадишадан	NOUN	n	Case=Nom	6	obl	_	_
 6	болған	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Хадишадан бірінші баласы - әл-Қасым, одан кейін ат-Таһир, ат-Таййиб, Зейнеп, Рукайиа, Умм Күлсүм, Фатима туды.
+1	Хадишадан	Хадишадан	NOUN	n	Case=Nom	3	nmod:poss	_	_
+2	бірінші	бір	NUM	num	NumType=Ord	3	amod	_	_
+3	баласы	бала	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	21	obl	_	_
+4	-	-	PUNCT	guio	_	9	punct	_	_
+5	әл-Қасым	әл-Қасым	CCONJ	cnjcoo	_	9	cc	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	9	punct	_	_
+7	одан	одан	NOUN	n	Case=Nom	9	obj	_	_
+8	кейін	кейін	ADP	post	_	9	punct	_	_
+9	ат-Таһир	ат-Таһи	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	appos	_	SpaceAfter=No
+10	,	,	PUNCT	cm	_	13	obl	_	_
+11	ат-Таййиб	ат-Таййиб	NOUN	n	Case=Nom	13	obj	_	SpaceAfter=No
+12	,	,	PUNCT	cm	_	11	punct	_	_
+13	Зейнеп	Зейне	VERB	v	Aspect=Perf|VerbForm=Conv	9	conj	_	SpaceAfter=No
+14	,	,	PUNCT	cm	_	3	case	_	_
+15	Рукайиа	Рукайиа	ADV	postadv	_	21	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	cm	_	21	punct	_	_
+17	Умм	Умм	PRON	prn	Case=Nom|PronType=Int	21	obl	_	_
+18	Күлсүм	Күлсүм	PRON	prn	Case=Nom|PronType=Int	21	obl	_	SpaceAfter=No
+19	,	,	PUNCT	cm	_	21	obl	_	_
+20	Фатима	Фатима	NOUN	n	Case=Nom	21	nsubj	_	_
+21	туды	ту	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	sent	_	21	punct	_	_
+
+# sent_id = 3
+# text = Ұлдары балалық шақтарында қайтыс болған.
+1	Ұлдары	Ұлдар	NOUN	n	Case=Nom	3	nmod:poss	_	_
+2	балалық	балалық	ADJ	adj	_	3	amod	_	_
+3	шақтарында	шақтар	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
+4	қайтыс	қайтыс	ADJ	adj	_	5	advmod	_	_
+5	болған	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = 4
+# text = Қыздары Мұхаммедтің пайғамбарлық миссиясы басталғанға дейін тірі болып, исламды қабылдады, барлығы Меккеден Мединеге көшті.
+1	Қыздары	Қыздар	NOUN	n	Case=Nom	2	nmod:poss	_	_
+2	Мұхаммедтің	Мұхаммедтің	NOUN	n	Case=Nom	8	obl	_	_
+3	пайғамбарлық	пайғамбарлық	ADJ	adj	_	4	amod	_	_
+4	миссиясы	миссия	DET	det	PronType=Dem	7	nmod:poss	_	_
+5	басталғанға	басталған	NOUN	n	Case=Dat	7	nmod	_	_
+6	дейін	дей	ADP	post	_	5	case	_	_
+7	тірі	тір	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+8	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	cm	_	8	punct	_	_
+10	исламды	ислам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+11	қабылдады	қабылда	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	parataxis	_	SpaceAfter=No
+12	,	,	PUNCT	cm	_	11	punct	_	_
+13	барлығы	барлық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	amod	_	_
+14	Меккеден	Мекке	NOUN	n	Case=Abl	15	nmod:poss	_	_
+15	Мединеге	Медине	NOUN	n	Case=Nom	16	obl	_	_
+16	көшті	көшті	ADJ	adj	_	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	sent	_	16	punct	_	_
+
+# sent_id = 5
+# text = Фатимадан басқасының барлығы Мұхаммедтің өліміне дейін қайтыс болды.
+1	Фатимадан	Фатимадан	NOUN	n	Case=Nom	2	nmod:poss	_	_
+2	басқасының	басқас	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
+3	барлығы	барлық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	amod	_	_
+4	Мұхаммедтің	Мұхаммедтің	NOUN	n	Case=Nom	6	nmod:poss	_	_
+5	өліміне	өліміне	PRON	prn	Case=Nom|PronType=Int	6	nmod:poss	_	_
+6	дейін	дей	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
+7	қайтыс	қайтыс	ADJ	adj	_	0	root	_	_
+8	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	SpaceAfter=No
+9	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = 6
+# text = Ал Фатима оның өлімінен кейін, алты айдан соң қайтыс болды.
+1	Ал	Ал	NOUN	n	Case=Nom	3	nmod	_	_
+2	Фатима	фатима	SCONJ	cnjadv	_	1	case	_	_
+3	оның	о	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	өлімінен	өлім	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+5	кейін	кейін	ADP	post	_	4	case	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	8	punct	_	_
+7	алты	алт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
+8	айдан	айдан	NOUN	n	Case=Nom	4	conj	_	_
+9	соң	соң	ADP	post	_	4	case	_	_
+10	қайтыс	қайтыс	NUM	num	NumType=Card	11	nummod	_	_
+11	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	SpaceAfter=No
+12	.	.	PUNCT	sent	_	4	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -3062,7 +3335,7 @@
 # sent_id = 1
 # text = Қысқаша жылнама
 1	Қысқаша	Қысқаша	ADJ	adj	_	2	amod	_	_
-2	жылнама	жылнама	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+2	жылнама	жылнама	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3076,7 +3349,7 @@
 # newpar
 # sent_id = 1
 # text = Замандастары
-1	Замандастары	Замандастар	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+1	Замандастары	Замандастар	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3185,7 +3458,7 @@
 # sent_id = 1
 # text = Тарихтағы рөлі
 1	Тарихтағы	Тарихтақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	_
-2	рөлі	рөлі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	рөлі	рөлі	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3223,7 +3496,7 @@
 1	Мұхаммедтен	Мұхаммедтен	NOUN	n	Case=Nom	3	nmod:poss	_	_
 2	кейінгі	кейінгі	ADJ	adj	_	3	amod	_	_
 3	араб	араб	NOUN	n	Case=Nom	4	obl	_	_
-4	әлемі	әлемі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+4	әлемі	әлемі	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3293,7 +3566,7 @@
 3	(	(	PUNCT	lpar	_	4	punct	_	SpaceAfter=No
 4	қоштасу	қоштасу	ADJ	adj	_	0	root	_	SpaceAfter=No
 5	)	)	PUNCT	rpar	_	4	punct	_	_
-6	хутбасы	хутба	DET	det	PronType=Dem	4	punct	_	SpacesAfter=\n
+6	хутбасы	хутба	DET	det	PronType=Dem	4	punct	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3368,12 +3641,21 @@
 18	сөйлесті	сөйлесті	ADJ	adj	_	17	advmod	_	SpaceAfter=No
 19	.	.	PUNCT	sent	_	9	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = Сол уағызда айтылған кейбір цитаталар:
+1	Сол	Сол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	уағызда	уағызда	NOUN	n	Case=Loc	3	obl	_	_
+3	айтылған	айт	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	advcl	_	_
+4	кейбір	кейбір	DET	det	PronType=Ind	5	nsubj	_	_
+5	цитаталар	цитаталар	NOUN	n	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	sent	_	5	punct	_	SpacesAfter=\n
+
 # newdoc
 # newpar
 # sent_id = 1
 # text = Мұхаммед Құранда
 1	Мұхаммед	Мұхаммед	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	Құранда	құранда	NOUN	n	Case=Loc	0	root	_	SpacesAfter=\n
+2	Құранда	құранда	NOUN	n	Case=Loc	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3465,13 +3747,13 @@
 # sent_id = 1
 # text = Қызықты фактілер
 1	Қызықты	Қызықт	NOUN	n	Case=Nom	2	obj	_	_
-2	фактілер	фактілер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpacesAfter=\n
+2	фактілер	фактілер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Мінезі
-1	Мінезі	Мінезі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Мінезі	Мінезі	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3510,7 +3792,7 @@
 # newpar
 # sent_id = 1
 # text = Ерушілері
-1	Ерушілері	Ерушілері	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Ерушілері	Ерушілері	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -3557,31 +3839,24 @@
 # newpar
 # sent_id = 1
 # text = Өнерде
-1	Өнерде	Өнер	NOUN	n	Case=Loc	0	root	_	SpacesAfter=\n
+1	Өнерде	Өнер	NOUN	n	Case=Loc	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Дереккөздер
-1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Әдебиет
-1	Әдебиет	Әдебиет	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Әдебиет	Әдебиет	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Сыртқы сілтемелер
 1	Сыртқы	Сыртқы	ADJ	adj	_	2	advmod	_	_
-2	сілтемелер	сілтемелер	PART	mod	_	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	сілтемелер	сілтемелер	PART	mod	_	0	root	_	SpaceAfter=No
 

@@ -1,5 +1,3 @@
-# https://id.wikipedia.org/wiki/Amerika_Serikat
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -15,7 +13,7 @@
 6	Indonesia	indonesia	PROPN	NSD	Number=Sing	5	flat	_	SpaceAfter=No
 7	,	,	PUNCT	Z--	_	1	punct	_	_
 8	ensiklopedia	ensiklopedia	NOUN	X--	_	1	appos	_	_
-9	bebas	bebas	ADJ	ASP	Degree=Pos|Number=Sing	8	amod	_	SpacesAfter=\n
+9	bebas	bebas	ADJ	ASP	Degree=Pos|Number=Sing	8	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -23,8 +21,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bahasa
-1	Bahasa	bahasa	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+# text = Koordinat: 40°N 100°W﻿ / ﻿40°N 100°W﻿ / 40; -100
+1	Koordinat	koordinat	PROPN	X--	_	0	root	_	SpacesBefore=\n|SpaceAfter=No
+2	:	:	PUNCT	Z--	_	1	punct	_	_
+3	40°N	40°n	NUM	X--	NumType=Card	1	nummod	_	_
+4	100°	100°	NUM	CC-	NumType=Card	5	nummod	_	SpaceAfter=No
+5	W﻿	w﻿	PROPN	X--	_	3	flat	_	_
+6	/	/	SYM	Z--	_	5	punct	_	_
+7	﻿40°N	﻿40°n	PROPN	X--	_	5	flat	_	_
+8	100°	100°	NUM	CC-	NumType=Card	5	nummod	_	SpaceAfter=No
+9	W﻿	w﻿	PROPN	X--	_	5	flat	_	_
+10	/	/	SYM	Z--	_	9	punct	_	_
+11	40	40	NUM	CC-	NumType=Card	9	nummod	_	SpaceAfter=No
+12	;	;	PUNCT	Z--	_	1	punct	_	_
+13	-100	-100	PUNCT	Z--	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -32,17 +42,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Amerika Serikat
-1	Amerika	amerika	PROPN	NSD	Number=Sing	0	root	_	_
-2	Serikat	serikat	PROPN	NSD	Number=Sing	1	flat	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Amerika Serikat, disingkat dengan AS (bahasa Inggris: United States of America/U.S.A. disingkat United States/US, harafiah: "Persatuan Negara-Negara Amerika"), atau secara umum dikenal dengan Amerika saja,[catatan 1] adalah sebuah negara republik konstitusional federal yang terdiri dari lima puluh negara bagian dan sebuah distrik federal.
+# text = Amerika Serikat, disingkat dengan AS (bahasa Inggris: United States of America/U.S.A. disingkat United States/US, harfiah: "Persatuan Negara Bagian-Negara Bagian Amerika"), atau secara umum dikenal dengan Amerika saja, adalah sebuah negara republik konstitusional federal yang terdiri dari lima puluh negara bagian dan sebuah distrik federal.
 1	Amerika	amerika	PROPN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	Serikat	serikat	PROPN	NSD	Number=Sing	1	flat	_	SpaceAfter=No
 3	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -62,47 +62,46 @@
 17	United	united	PROPN	ASP	Degree=Pos|Number=Sing	16	obj	_	_
 18	States/US	states/us	PROPN	X--	_	17	flat	_	SpaceAfter=No
 19	,	,	PUNCT	Z--	_	20	punct	_	_
-20	harafiah	harafiah	NOUN	X--	_	17	conj	_	SpaceAfter=No
+20	harfiah	harfiah	NOUN	X--	_	17	conj	_	SpaceAfter=No
 21	:	:	PUNCT	Z--	_	20	punct	_	_
 22	"	"	PUNCT	Z--	_	23	punct	_	SpaceAfter=No
 23	Persatuan	persatuan	PROPN	NSD	Number=Sing	20	appos	_	_
-24	Negara-Negara	negara	PROPN	NPD	Number=Plur	23	flat	_	_
-25	Amerika	amerika	PROPN	NSD	Number=Sing	24	flat	_	SpaceAfter=No
-26	"	"	PUNCT	Z--	_	23	punct	_	SpaceAfter=No
-27	)	)	PUNCT	Z--	_	8	punct	_	SpaceAfter=No
-28	,	,	PUNCT	Z--	_	32	punct	_	_
-29	atau	atau	CCONJ	H--	_	32	cc	_	_
-30	secara	secara	ADP	R--	_	32	case	_	_
-31	umum	umum	ADJ	ASP	Degree=Pos|Number=Sing	32	amod	_	_
-32	dikenal	dikenal	VERB	VSP	Number=Sing|Voice=Pass	4	conj	_	_
-33	dengan	dengan	ADP	R--	_	34	case	_	_
-34	Amerika	amerika	PROPN	NSD	Number=Sing	32	obl	_	_
-35	saja,	saja,	PUNCT	D--	_	34	flat	_	SpaceAfter=No
-36	[	[	PUNCT	Z--	_	37	punct	_	SpaceAfter=No
-37	catatan	catatan	NOUN	NSD	Number=Sing	34	appos	_	_
-38	1	1	NUM	CC-	NumType=Card	37	nummod	_	SpaceAfter=No
-39	]	]	PUNCT	Z--	_	37	punct	_	_
-40	adalah	adalah	AUX	O--	_	42	cop	_	_
-41	sebuah	sebuah	DET	B--	PronType=Ind	42	det	_	_
-42	negara	negara	NOUN	NSD	Number=Sing	4	dep	_	_
-43	republik	republik	NOUN	F--	_	42	compound	_	_
-44	konstitusional	konstitusional	ADJ	ASP	Degree=Pos|Number=Sing	43	amod	_	_
-45	federal	federal	ADJ	NSD	Number=Sing	42	amod	_	_
-46	yang	yang	PRON	S--	PronType=Rel	47	nsubj:pass	_	_
-47	terdiri	terdiri	VERB	VSP	Number=Sing|Voice=Pass	42	acl	_	_
-48	dari	dari	ADP	R--	_	51	case	_	_
-49	lima	lima	NUM	CC-	NumType=Card	51	nummod	_	_
-50	puluh	puluh	NUM	CC-	NumType=Card	49	nummod	_	_
-51	negara	negara	NOUN	NSD	Number=Sing	47	obl	_	_
-52	bagian	bagian	NOUN	NSD	Number=Sing	51	compound	_	_
-53	dan	dan	CCONJ	H--	_	55	cc	_	_
-54	sebuah	sebuah	DET	B--	PronType=Ind	55	det	_	_
-55	distrik	distrik	NOUN	NSD	Number=Sing	51	conj	_	_
-56	federal	federal	ADJ	NSD	Number=Sing	55	amod	_	SpaceAfter=No
-57	.	.	PUNCT	Z--	_	42	punct	_	_
+24	Negara	negara	PROPN	NSD	Number=Sing	23	flat	_	_
+25	Bagian-Negara	bagian-negara	PROPN	NPD	Number=Plur	24	flat	_	_
+26	Bagian	bagian	PROPN	NSD	Number=Sing	25	flat	_	_
+27	Amerika	amerika	PROPN	NSD	Number=Sing	26	flat	_	SpaceAfter=No
+28	"	"	PUNCT	Z--	_	23	punct	_	SpaceAfter=No
+29	)	)	PUNCT	Z--	_	8	punct	_	SpaceAfter=No
+30	,	,	PUNCT	Z--	_	41	punct	_	_
+31	atau	atau	CCONJ	H--	_	34	cc	_	_
+32	secara	secara	ADP	R--	_	34	case	_	_
+33	umum	umum	ADJ	ASP	Degree=Pos|Number=Sing	34	amod	_	_
+34	dikenal	dikenal	VERB	VSP	Number=Sing|Voice=Pass	41	acl	_	_
+35	dengan	dengan	ADP	R--	_	36	case	_	_
+36	Amerika	amerika	PROPN	NSD	Number=Sing	34	obl	_	_
+37	saja	saja	ADV	D--	_	36	advmod	_	SpaceAfter=No
+38	,	,	PUNCT	Z--	_	34	punct	_	_
+39	adalah	adalah	AUX	O--	_	41	cop	_	_
+40	sebuah	sebuah	DET	B--	PronType=Ind	41	det	_	_
+41	negara	negara	NOUN	NSD	Number=Sing	4	dep	_	_
+42	republik	republik	NOUN	F--	_	41	compound	_	_
+43	konstitusional	konstitusional	ADJ	ASP	Degree=Pos|Number=Sing	42	amod	_	_
+44	federal	federal	ADJ	NSD	Number=Sing	41	amod	_	_
+45	yang	yang	PRON	S--	PronType=Rel	46	nsubj:pass	_	_
+46	terdiri	terdiri	VERB	VSP	Number=Sing|Voice=Pass	41	acl	_	_
+47	dari	dari	ADP	R--	_	50	case	_	_
+48	lima	lima	NUM	CC-	NumType=Card	50	nummod	_	_
+49	puluh	puluh	NUM	CC-	NumType=Card	48	nummod	_	_
+50	negara	negara	NOUN	NSD	Number=Sing	46	obl	_	_
+51	bagian	bagian	NOUN	NSD	Number=Sing	50	compound	_	_
+52	dan	dan	CCONJ	H--	_	54	cc	_	_
+53	sebuah	sebuah	DET	B--	PronType=Ind	54	det	_	_
+54	distrik	distrik	NOUN	NSD	Number=Sing	50	conj	_	_
+55	federal	federal	ADJ	NSD	Number=Sing	54	amod	_	SpaceAfter=No
+56	.	.	PUNCT	Z--	_	41	punct	_	_
 
 # sent_id = 2
-# text = Negara ini terletak di bagian tengah Amerika Utara, yang menjadi lokasi dari empat puluh delapan negara bagian yang saling bersebelahan, beserta distrik ibu kota Washington, D.C.. Amerika Serikat diapit oleh Samudra Pasifik dan Atlantik di sebelah barat dan timur, berbatasan dengan Kanada di sebelah utara, dan Meksiko di sebelah selatan.
+# text = Negara ini terletak di bagian tengah Amerika Utara, yang menjadi lokasi dari empat puluh lima negara bagian yang saling bersebelahan, beserta distrik ibu kota Washington, D.C.. Amerika Serikat diapit oleh Samudra Pasifik dan Atlantik di sebelah barat dan timur, berbatasan dengan Kanada di sebelah utara, dan Meksiko di sebelah selatan.
 1	Negara	negara	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
 3	terletak	terletak	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -118,7 +117,7 @@
 13	dari	dari	ADP	R--	_	17	case	_	_
 14	empat	empat	NUM	CC-	NumType=Card	17	nummod	_	_
 15	puluh	puluh	NUM	CC-	NumType=Card	14	nummod	_	_
-16	delapan	delapan	NUM	CC-	NumType=Card	14	nummod	_	_
+16	lima	lima	NUM	CC-	NumType=Card	14	nummod	_	_
 17	negara	negara	NOUN	NSD	Number=Sing	12	nmod	_	_
 18	bagian	bagian	NOUN	NSD	Number=Sing	17	compound	_	_
 19	yang	yang	PRON	S--	PronType=Rel	21	nsubj	_	_
@@ -163,8 +162,8 @@
 58	.	.	PUNCT	Z--	_	34	punct	_	_
 
 # sent_id = 3
-# text = Dua negara bagian lainnya, yaitu Alaska dan Hawaii, terletak terpisah dari dataran utama Amerika Serikat.
-1	Dua	dua	NUM	CC-	NumType=Card	2	nummod	_	_
+# text = Lima negara bagian lainnya, yaitu Alaska dan Hawaii, terletak terpisah dari dataran utama Amerika Serikat.
+1	Lima	lima	NUM	CC-	NumType=Card	2	nummod	_	_
 2	negara	negara	NOUN	NSD	Number=Sing	11	nsubj:pass	_	_
 3	bagian	bagian	NOUN	NSD	Number=Sing	2	compound	_	_
 4	lainnya	lainnya	ADJ	D--	_	2	amod	_	SpaceAfter=No
@@ -288,7 +287,7 @@
 38	.	.	PUNCT	Z--	_	23	punct	_	_
 
 # sent_id = 8
-# text = Amerika Serikat adalah salah satu negara multietnik dan multikultural di dunia.
+# text = Amerika Serikat adalah salah satu negara multietnik dan multikultural di dunia seperti halnya Indonesia.
 1	Amerika	amerika	PROPN	NSD	Number=Sing	6	nsubj	_	_
 2	Serikat	serikat	PROPN	NSD	Number=Sing	1	flat	_	_
 3	adalah	adalah	AUX	O--	_	6	cop	_	_
@@ -299,8 +298,11 @@
 8	dan	dan	CCONJ	H--	_	9	cc	_	_
 9	multikultural	multikultural	ADJ	X--	_	6	conj	_	_
 10	di	di	ADP	R--	_	11	case	_	_
-11	dunia	dunia	NOUN	NSD	Number=Sing	6	nmod	_	SpaceAfter=No
-12	.	.	PUNCT	Z--	_	6	punct	_	_
+11	dunia	dunia	NOUN	NSD	Number=Sing	6	nmod	_	_
+12	seperti	seperti	ADP	R--	_	13	case	_	_
+13	halnya	hal	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	11	nmod	_	_
+14	Indonesia	indonesia	PROPN	NSD	Number=Sing	13	flat	_	SpaceAfter=No
+15	.	.	PUNCT	Z--	_	6	punct	_	_
 
 # sent_id = 9
 # text = Hal tersebut muncul akibat adanya imigrasi besar-besaran dari berbagai penjuru dunia.
@@ -344,65 +346,72 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bangsa Indian mulai bermigrasi dari Asia ke daratan yang saat ini menjadi Amerika Serikat sekitar 15.000 tahun yang lalu.
-1	Bangsa	bangsa	PROPN	NSD	Number=Sing	4	nsubj	_	_
-2	Indian	indian	NOUN	F--	_	1	compound	_	_
-3	mulai	mulai	ADV	VSA	Number=Sing|Voice=Act	4	advmod	_	_
-4	bermigrasi	bermigrasi	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
-5	dari	dari	ADP	R--	_	6	case	_	_
-6	Asia	asia	PROPN	NSD	Number=Sing	4	obl	_	_
-7	ke	ke	ADP	R--	_	8	case	_	_
-8	daratan	daratan	NOUN	NSD	Number=Sing	4	obl	_	_
-9	yang	yang	PRON	S--	PronType=Rel	12	nsubj	_	_
-10	saat	saat	NOUN	NSD	Number=Sing	12	obl	_	_
-11	ini	ini	DET	B--	PronType=Dem	10	det	_	_
-12	menjadi	menjadi	VERB	VSA	Number=Sing|Voice=Act	8	acl	_	_
-13	Amerika	amerika	PROPN	NSD	Number=Sing	12	obj	_	_
-14	Serikat	serikat	PROPN	NSD	Number=Sing	13	flat	_	_
-15	sekitar	sekitar	ADP	D--	_	17	case	_	_
-16	15.000	15.000	NUM	CC-	NumType=Card	17	nummod	_	_
-17	tahun	tahun	NOUN	NSD	Number=Sing	12	obl	_	_
-18	yang	yang	PRON	S--	PronType=Rel	19	nsubj	_	_
-19	lalu	lalu	ADJ	ASP	Degree=Pos|Number=Sing	17	amod	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	4	punct	_	_
+# text = Penduduk Asli Amerika/Bangsa Indian mulai bermigrasi dari Asia ke daratan yang saat ini menjadi Amerika Serikat sekitar 15.000 tahun yang lalu.
+1	Penduduk	penduduk	PROPN	NSD	Number=Sing	6	nsubj	_	_
+2	Asli	asli	PROPN	ASP	Degree=Pos|Number=Sing	1	flat	_	_
+3	Amerika/Bangsa	amerika/bangsa	PROPN	NSD	Number=Sing	1	flat	_	_
+4	Indian	indian	NOUN	F--	_	3	compound	_	_
+5	mulai	mulai	ADV	VSA	Number=Sing|Voice=Act	0	root	_	_
+6	bermigrasi	bermigrasi	VERB	VSA	Number=Sing|Voice=Act	5	xcomp	_	_
+7	dari	dari	ADP	R--	_	8	case	_	_
+8	Asia	asia	PROPN	NSD	Number=Sing	6	obl	_	_
+9	ke	ke	ADP	R--	_	10	case	_	_
+10	daratan	daratan	NOUN	NSD	Number=Sing	6	obl	_	_
+11	yang	yang	PRON	S--	PronType=Rel	14	nsubj	_	_
+12	saat	saat	NOUN	NSD	Number=Sing	14	obl	_	_
+13	ini	ini	DET	B--	PronType=Dem	12	det	_	_
+14	menjadi	menjadi	VERB	VSA	Number=Sing|Voice=Act	10	acl	_	_
+15	Amerika	amerika	PROPN	NSD	Number=Sing	14	obj	_	_
+16	Serikat	serikat	PROPN	NSD	Number=Sing	15	flat	_	_
+17	sekitar	sekitar	ADP	D--	_	19	case	_	_
+18	15.000	15.000	NUM	CC-	NumType=Card	19	nummod	_	_
+19	tahun	tahun	NOUN	NSD	Number=Sing	14	obl	_	_
+20	yang	yang	PRON	S--	PronType=Rel	21	nsubj	_	_
+21	lalu	lalu	ADJ	ASP	Degree=Pos|Number=Sing	19	amod	_	SpaceAfter=No
+22	.	.	PUNCT	Z--	_	6	punct	_	_
 
 # sent_id = 2
-# text = Setelah tahun 1500 M, kedatangan bangsa Eropa dan wabah penyakit secara perlahan-lahan mulai mengurangi jumlah populasi mereka.
+# text = Setelah tahun 1500 M, kedatangan Bangsa Kaukasia dari Eropa dan wabah penyakit secara perlahan-lahan mulai mengurangi jumlah populasi mereka.
 1	Setelah	setelah	ADP	R--	_	2	case	_	_
-2	tahun	tahun	NOUN	NSD	Number=Sing	15	obl	_	_
+2	tahun	tahun	NOUN	NSD	Number=Sing	17	obl	_	_
 3	1500	1500	NUM	CC-	NumType=Card	4	nummod	_	_
 4	M	m	NOUN	F--	_	2	compound	_	SpaceAfter=No
 5	,	,	PUNCT	Z--	_	2	punct	_	_
-6	kedatangan	kedatangan	NOUN	NSD	Number=Sing	15	nsubj	_	_
-7	bangsa	bangsa	NOUN	NSD	Number=Sing	6	compound	_	_
-8	Eropa	eropa	PROPN	NSD	Number=Sing	7	flat	_	_
-9	dan	dan	CCONJ	H--	_	10	cc	_	_
-10	wabah	wabah	NOUN	NSD	Number=Sing	6	conj	_	_
-11	penyakit	pensakit	NOUN	NSD	Number=Sing	10	compound	_	_
-12	secara	secara	ADP	R--	_	13	case	_	_
-13	perlahan-lahan	perlahan	NOUN	NPD	Number=Plur	10	nmod	_	_
-14	mulai	mulai	ADV	VSA	Number=Sing|Voice=Act	15	advmod	_	_
-15	mengurangi	menkurangi	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
-16	jumlah	jumlah	NOUN	NSD	Number=Sing	15	obj	_	_
-17	populasi	populasi	NOUN	NSD	Number=Sing	16	compound	_	_
-18	mereka	mereka	PRON	PP3	Number=Plur|Person=3|PronType=Prs	16	det	_	SpaceAfter=No
-19	.	.	PUNCT	Z--	_	15	punct	_	_
+6	kedatangan	kedatangan	NOUN	NSD	Number=Sing	17	nsubj	_	_
+7	Bangsa	bangsa	PROPN	NSD	Number=Sing	6	flat	_	_
+8	Kaukasia	kaukasia	PROPN	NSD	Number=Sing	7	flat	_	_
+9	dari	dari	ADP	R--	_	10	case	_	_
+10	Eropa	eropa	PROPN	NSD	Number=Sing	6	nmod	_	_
+11	dan	dan	CCONJ	H--	_	12	cc	_	_
+12	wabah	wabah	NOUN	NSD	Number=Sing	6	conj	_	_
+13	penyakit	pensakit	NOUN	NSD	Number=Sing	12	compound	_	_
+14	secara	secara	ADP	R--	_	15	case	_	_
+15	perlahan-lahan	perlahan	NOUN	NPD	Number=Plur	12	nmod	_	_
+16	mulai	mulai	ADV	VSA	Number=Sing|Voice=Act	17	advmod	_	_
+17	mengurangi	menkurangi	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
+18	jumlah	jumlah	NOUN	NSD	Number=Sing	17	obj	_	_
+19	populasi	populasi	NOUN	NSD	Number=Sing	18	compound	_	_
+20	mereka	mereka	PRON	PP3	Number=Plur|Person=3|PronType=Prs	18	det	_	SpaceAfter=No
+21	.	.	PUNCT	Z--	_	17	punct	_	_
 
 # sent_id = 3
-# text = Migrasi dan Kolonisasi Eropa dimulai sekitar tahun 1600, terutama dari Inggris.
-1	Migrasi	migrasi	PROPN	NSD	Number=Sing	5	nsubj:pass	_	_
+# text = Migrasi dan Kolonisasi Bangsa Kaukasia dari Eropa dimulai sekitar tahun 1600, terutama dari Inggris.
+1	Migrasi	migrasi	PROPN	NSD	Number=Sing	8	nsubj:pass	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
 3	Kolonisasi	kolonisasi	PROPN	NSD	Number=Sing	1	conj	_	_
-4	Eropa	eropa	PROPN	NSD	Number=Sing	3	flat	_	_
-5	dimulai	dimulai	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
-6	sekitar	sekitar	ADP	D--	_	7	case	_	_
-7	tahun	tahun	NOUN	NSD	Number=Sing	5	obl	_	_
-8	1600	1600	NUM	CC-	NumType=Card	7	nummod	_	SpaceAfter=No
-9	,	,	PUNCT	Z--	_	5	punct	_	_
-10	terutama	terutama	ADV	ASS	Degree=Sup|Number=Sing	12	advmod	_	_
-11	dari	dari	ADP	R--	_	12	case	_	_
-12	Inggris	inggris	PROPN	NSD	Number=Sing	5	obl	_	SpaceAfter=No
-13	.	.	PUNCT	Z--	_	5	punct	_	_
+4	Bangsa	bangsa	PROPN	NSD	Number=Sing	3	flat	_	_
+5	Kaukasia	kaukasia	PROPN	NSD	Number=Sing	4	flat	_	_
+6	dari	dari	ADP	R--	_	7	case	_	_
+7	Eropa	eropa	PROPN	NSD	Number=Sing	1	nmod	_	_
+8	dimulai	dimulai	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
+9	sekitar	sekitar	ADP	D--	_	10	case	_	_
+10	tahun	tahun	NOUN	NSD	Number=Sing	8	obl	_	_
+11	1600	1600	NUM	CC-	NumType=Card	10	nummod	_	SpaceAfter=No
+12	,	,	PUNCT	Z--	_	8	punct	_	_
+13	terutama	terutama	ADV	ASS	Degree=Sup|Number=Sing	15	advmod	_	_
+14	dari	dari	ADP	R--	_	15	case	_	_
+15	Inggris	inggris	PROPN	NSD	Number=Sing	8	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Z--	_	8	punct	_	_
 
 # sent_id = 4
 # text = Amerika Serikat terbentuk dari Tiga Belas Koloni Inggris yang membentang di sepanjang pesisir Atlantik, yang mengembangkan sistem ekonomi dan sistem politik demokratis tersendiri yang terpisah dari Inggris.
@@ -736,7 +745,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Amerika Serikat tergolong ke dalam negara maju pascaindustri, dan merupakan negara dengan perekonomian termaju di dunia, dengan perkiraan PDB 2012 sekitar $15,6 triliun – 19% dari PDB global menurut kemampuan berbelanja pada tahun 2011.[catatan 2] PDB per kapita AS adalah yang terbesar keenam di dunia pada 2010.
+# text = Amerika Serikat tergolong ke dalam negara maju pascaindustri, dan merupakan negara dengan perekonomian termaju di dunia, dengan perkiraan PDB 2012 sekitar $15,6 triliun – 19% dari PDB global menurut kemampuan berbelanja pada tahun 2011.
 1	Amerika	amerika	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	Serikat	serikat	PROPN	NSD	Number=Sing	1	flat	_	_
 3	tergolong	tergolong	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -754,9 +763,9 @@
 15	termaju	termaju	ADJ	ASS	Degree=Sup|Number=Sing	14	amod	_	_
 16	di	di	ADP	R--	_	17	case	_	_
 17	dunia	dunia	NOUN	NSD	Number=Sing	14	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	Z--	_	3	punct	_	_
+18	,	,	PUNCT	Z--	_	11	punct	_	_
 19	dengan	dengan	ADP	R--	_	20	case	_	_
-20	perkiraan	perkiraan	NOUN	NSD	Number=Sing	11	obl	_	_
+20	perkiraan	perkiraan	NOUN	NSD	Number=Sing	12	nmod	_	_
 21	PDB	pdb	PROPN	F--	_	20	flat	_	_
 22	2012	2012	NUM	CC-	NumType=Card	21	nummod	_	_
 23	sekitar	sekitar	ADP	D--	_	25	case	_	_
@@ -765,32 +774,33 @@
 26	–	–	PUNCT	Z--	_	25	punct	_	SpacesAfter=\s\s
 27	19%	19%	NUM	CC-	NumType=Card	25	nummod	_	_
 28	dari	dari	ADP	R--	_	29	case	_	_
-29	PDB	pdb	NOUN	F--	_	20	nmod	_	_
+29	PDB	pdb	NOUN	F--	_	27	nmod	_	_
 30	global	global	ADJ	F--	_	29	amod	_	_
 31	menurut	menurut	ADP	R--	_	32	case	_	_
 32	kemampuan	kemampuan	NOUN	NSD	Number=Sing	29	nmod	_	_
 33	berbelanja	berbelanja	VERB	VSA	Number=Sing|Voice=Act	32	acl	_	_
 34	pada	pada	ADP	R--	_	35	case	_	_
 35	tahun	tahun	NOUN	NSD	Number=Sing	32	nmod	_	_
-36	2011.[	2011.[	NUM	CC-	NumType=Card	37	nummod	_	SpaceAfter=No
-37	catatan	catatan	NOUN	NSD	Number=Sing	35	compound	_	_
-38	2	2	NUM	CC-	NumType=Card	37	nummod	_	SpaceAfter=No
-39	]	]	PUNCT	Z--	_	37	punct	_	_
-40	PDB	pdb	PROPN	F--	_	46	nsubj	_	_
-41	per	per	ADP	R--	_	42	case	_	_
-42	kapita	kapita	NOUN	NSD	Number=Sing	40	nmod	_	_
-43	AS	as	PROPN	NSD	Number=Sing	42	flat	_	_
-44	adalah	adalah	AUX	O--	_	46	cop	_	_
-45	yang	yang	PRON	S--	PronType=Rel	46	nsubj	_	_
-46	terbesar	terbesar	ADJ	ASS	Degree=Sup|Number=Sing	3	parataxis	_	_
-47	keenam	keenam	NUM	CO-	NumType=Card	46	nummod	_	_
-48	di	di	ADP	R--	_	49	case	_	_
-49	dunia	dunia	NOUN	NSD	Number=Sing	46	nmod	_	_
-50	pada	pada	ADP	R--	_	46	case	_	_
-51	2010	2010	NUM	CC-	NumType=Card	46	nummod	_	SpaceAfter=No
-52	.	.	PUNCT	Z--	_	3	punct	_	_
+36	2011	2011	NUM	CC-	NumType=Card	35	nummod	_	SpaceAfter=No
+37	.	.	PUNCT	Z--	_	3	punct	_	_
 
 # sent_id = 2
+# text = PDB per kapita AS adalah yang terbesar keenam di dunia pada 2010.
+1	PDB	pdb	PROPN	F--	_	7	nsubj	_	_
+2	per	per	ADP	R--	_	3	case	_	_
+3	kapita	kapita	NOUN	NSD	Number=Sing	1	nmod	_	_
+4	AS	as	PROPN	NSD	Number=Sing	3	flat	_	_
+5	adalah	adalah	AUX	O--	_	7	cop	_	_
+6	yang	yang	PRON	S--	PronType=Rel	7	nsubj	_	_
+7	terbesar	terbesar	ADJ	ASS	Degree=Sup|Number=Sing	0	root	_	_
+8	keenam	keenam	NUM	CO-	NumType=Card	7	nummod	_	_
+9	di	di	ADP	R--	_	10	case	_	_
+10	dunia	dunia	NOUN	NSD	Number=Sing	7	nmod	_	_
+11	pada	pada	ADP	R--	_	7	case	_	_
+12	2010	2010	NUM	CC-	NumType=Card	7	nummod	_	SpaceAfter=No
+13	.	.	PUNCT	Z--	_	7	punct	_	_
+
+# sent_id = 3
 # text = Majunya perekonomian Amerika Serikat didorong oleh ketersediaan sumber daya alam yang melimpah, infrastruktur yang dikembangkan dengan baik, dan produktivitas yang tinggi.
 1	Majunya	maju	NOUN	VSA+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3|Voice=Act	5	nsubj:pass	_	_
 2	perekonomian	perekonomian	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -817,7 +827,7 @@
 23	tinggi	tinggi	ADJ	ASP	Degree=Pos|Number=Sing	21	amod	_	SpaceAfter=No
 24	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Meskipun negara ini tergolong ke dalam negara pascaindustri, Amerika Serikat tetap menjadi produsen terbesar di dunia.
 1	Meskipun	meskipun	SCONJ	S--	_	4	mark	_	_
 2	negara	negara	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
@@ -838,7 +848,7 @@
 17	dunia	dunia	NOUN	NSD	Number=Sing	14	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = Amerika Serikat juga menjadi negara dengan pengeluaran militer tertinggi di dunia, dan menjadi yang terdepan dalam bidang ekonomi, budaya, dan politik, serta pemimpin dalam riset ilmiah dan inovasi teknologi.
 1	Amerika	amerika	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	Serikat	serikat	PROPN	NSD	Number=Sing	1	flat	_	_
@@ -875,7 +885,7 @@
 33	teknologi	teknologi	NOUN	NSD	Number=Sing	32	compound	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = ️
 1	️	️	DET	F--	_	0	root	_	SpacesAfter=\n
 
@@ -886,7 +896,7 @@
 # newpar
 # sent_id = 1
 # text = Etimologi
-1	Etimologi	etimologi	PROPN	X--	_	0	root	_	SpacesAfter=\n
+1	Etimologi	etimologi	PROPN	X--	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -1574,7 +1584,7 @@
 # newpar
 # sent_id = 1
 # text = Sejarah
-1	Sejarah	sejarah	NOUN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Sejarah	sejarah	NOUN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -1588,7 +1598,7 @@
 3	Amerika	amerika	PROPN	NSD	Number=Sing	1	flat	_	_
 4	dan	dan	CCONJ	H--	_	5	cc	_	_
 5	pemukiman	penmukiman	NOUN	NSD	Number=Sing	1	conj	_	_
-6	Eropa	eropa	PROPN	NSD	Number=Sing	5	flat	_	SpacesAfter=\n
+6	Eropa	eropa	PROPN	NSD	Number=Sing	5	flat	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -2174,7 +2184,7 @@
 # text = Kemerdekaan dan perluasan
 1	Kemerdekaan	kemerdekaan	NOUN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
-3	perluasan	perluasan	NOUN	NSD	Number=Sing	1	conj	_	SpacesAfter=\n
+3	perluasan	perluasan	NOUN	NSD	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -3048,7 +3058,7 @@
 4	saudara	saudara	NOUN	NSD	Number=Sing	3	compound	_	SpaceAfter=No
 5	,	,	PUNCT	Z--	_	7	punct	_	_
 6	dan	dan	CCONJ	H--	_	7	cc	_	_
-7	industrialisasi	industrialisasi	NOUN	NSD	Number=Sing	1	conj	_	SpacesAfter=\n
+7	industrialisasi	industrialisasi	NOUN	NSD	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -3656,7 +3666,7 @@
 8	dan	dan	CCONJ	H--	_	9	cc	_	_
 9	Perang	perang	PROPN	NSD	Number=Sing	1	conj	_	_
 10	Dunia	dunia	PROPN	NSD	Number=Sing	9	flat	_	_
-11	II	ii	NUM	F--	NumType=Card	10	nummod	_	SpacesAfter=\n
+11	II	ii	NUM	F--	NumType=Card	10	nummod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -4149,7 +4159,7 @@
 2	Dingin	dingin	PROPN	ASP	Degree=Pos|Number=Sing	1	flat	_	_
 3	dan	dan	CCONJ	H--	_	4	cc	_	_
 4	protes	protes	NOUN	NSD	Number=Sing	1	conj	_	_
-5	politik	politik	NOUN	NSD	Number=Sing	4	amod	_	SpacesAfter=\n
+5	politik	politik	NOUN	NSD	Number=Sing	4	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -4730,7 +4740,7 @@
 # sent_id = 1
 # text = Era kontemporer
 1	Era	era	PROPN	F--	_	0	root	_	_
-2	kontemporer	kontemporer	PROPN	X--	_	1	amod	_	SpacesAfter=\n
+2	kontemporer	kontemporer	PROPN	X--	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -5124,7 +5134,7 @@
 # newpar
 # sent_id = 1
 # text = Geografi
-1	Geografi	geografi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Geografi	geografi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -5615,7 +5625,7 @@
 # newpar
 # sent_id = 1
 # text = Iklim
-1	Iklim	iklim	NOUN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Iklim	iklim	NOUN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -5795,7 +5805,7 @@
 # newpar
 # sent_id = 1
 # text = Biodiversitas
-1	Biodiversitas	biodiversitas	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Biodiversitas	biodiversitas	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -6020,7 +6030,7 @@
 # newpar
 # sent_id = 1
 # text = Politik
-1	Politik	politik	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Politik	politik	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -6030,7 +6040,7 @@
 # sent_id = 1
 # text = Sistem pemerintahan
 1	Sistem	sistem	PROPN	NSD	Number=Sing	0	root	_	_
-2	pemerintahan	penperintahan	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n
+2	pemerintahan	penperintahan	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -6674,7 +6684,7 @@
 # sent_id = 1
 # text = Pembagian administratif
 1	Pembagian	penbagian	NOUN	NSD	Number=Sing	0	root	_	_
-2	administratif	administratif	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpacesAfter=\n
+2	administratif	administratif	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -7060,7 +7070,7 @@
 # text = Partai dan ideologi
 1	Partai	partai	PROPN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
-3	ideologi	ideologi	NOUN	NSD	Number=Sing	1	conj	_	SpacesAfter=\n
+3	ideologi	ideologi	NOUN	NSD	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -7500,7 +7510,7 @@
 2	luar	luar	ADP	ASP	Degree=Pos|Number=Sing	3	case	_	_
 3	negeri	negeri	NOUN	NSD	Number=Sing	1	nmod	_	_
 4	dan	dan	CCONJ	H--	_	5	cc	_	_
-5	militer	militer	ADJ	NSD	Number=Sing	3	amod	_	SpacesAfter=\n
+5	militer	militer	ADJ	NSD	Number=Sing	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -8295,7 +8305,7 @@
 1	Kriminalitas	kriminalitas	NOUN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
 3	penegakan	pentegakan	NOUN	NSD	Number=Sing	1	conj	_	_
-4	hukum	hukum	NOUN	VSA	Number=Sing|Voice=Act	3	compound	_	SpacesAfter=\n
+4	hukum	hukum	NOUN	VSA	Number=Sing|Voice=Act	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -8881,7 +8891,7 @@
 # newpar
 # sent_id = 1
 # text = Ekonomi
-1	Ekonomi	ekonomi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Ekonomi	ekonomi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -9704,7 +9714,7 @@
 1	Pendapatan	pendapatan	NOUN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
 3	pembangunan	penbangunan	NOUN	NSD	Number=Sing	1	conj	_	_
-4	manusia	manusia	NOUN	NSD	Number=Sing	3	compound	_	SpacesAfter=\n
+4	manusia	manusia	NOUN	NSD	Number=Sing	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -10283,7 +10293,7 @@
 1	Ilmu	ilmu	NOUN	NSD	Number=Sing	0	root	_	_
 2	pengetahuan	pengetahuan	NOUN	NSD	Number=Sing	1	compound	_	_
 3	dan	dan	CCONJ	H--	_	4	cc	_	_
-4	teknologi	teknologi	NOUN	NSD	Number=Sing	2	conj	_	SpacesAfter=\n
+4	teknologi	teknologi	NOUN	NSD	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -10640,7 +10650,7 @@
 # newpar
 # sent_id = 1
 # text = Transportasi
-1	Transportasi	transportasi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Transportasi	transportasi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -10956,7 +10966,7 @@
 # newpar
 # sent_id = 1
 # text = Energi
-1	Energi	energi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Energi	energi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -11136,7 +11146,7 @@
 # newpar
 # sent_id = 1
 # text = Demografi
-1	Demografi	demografi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Demografi	demografi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -11145,7 +11155,7 @@
 # newpar
 # sent_id = 1
 # text = Populasi
-1	Populasi	populasi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Populasi	populasi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -12011,7 +12021,7 @@
 # newpar
 # sent_id = 1
 # text = Bahasa
-1	Bahasa	bahasa	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Bahasa	bahasa	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -12321,7 +12331,7 @@
 # newpar
 # sent_id = 1
 # text = Agama
-1	Agama	agama	NOUN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Agama	agama	NOUN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -12650,7 +12660,7 @@
 # sent_id = 1
 # text = Struktur keluarga
 1	Struktur	struktur	NOUN	NSD	Number=Sing	0	root	_	_
-2	keluarga	keluarga	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n
+2	keluarga	keluarga	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -12961,7 +12971,7 @@
 # newpar
 # sent_id = 1
 # text = Pendidikan
-1	Pendidikan	pendidikan	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Pendidikan	pendidikan	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -13271,7 +13281,7 @@
 # newpar
 # sent_id = 1
 # text = Kesehatan
-1	Kesehatan	kesehatan	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Kesehatan	kesehatan	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -13768,7 +13778,7 @@
 # newpar
 # sent_id = 1
 # text = Budaya
-1	Budaya	budaya	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Budaya	budaya	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -14080,7 +14090,7 @@
 # sent_id = 1
 # text = Media populer
 1	Media	media	PROPN	NSD	Number=Sing	0	root	_	_
-2	populer	populer	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpacesAfter=\n
+2	populer	populer	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -14581,7 +14591,7 @@
 3	filsafat	filsafat	NOUN	X--	_	1	conj	_	SpaceAfter=No
 4	,	,	PUNCT	Z--	_	6	punct	_	_
 5	dan	dan	CCONJ	H--	_	6	cc	_	_
-6	seni	seni	NOUN	NSD	Number=Sing	1	conj	_	SpacesAfter=\n
+6	seni	seni	NOUN	NSD	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -15406,7 +15416,7 @@
 # newpar
 # sent_id = 1
 # text = Kuliner
-1	Kuliner	kuliner	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Kuliner	kuliner	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -15760,7 +15770,7 @@
 # newpar
 # sent_id = 1
 # text = Olahraga
-1	Olahraga	olahraga	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Olahraga	olahraga	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16031,7 +16041,7 @@
 # sent_id = 1
 # text = Sistem pengukuran
 1	Sistem	sistem	PROPN	NSD	Number=Sing	0	root	_	_
-2	pengukuran	penukuran	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n
+2	pengukuran	penukuran	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16222,7 +16232,7 @@
 # sent_id = 1
 # text = Lihat pula
 1	Lihat	lihat	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
-2	pula	pula	ADV	D--	_	1	advmod	_	SpacesAfter=\n
+2	pula	pula	ADV	D--	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16231,7 +16241,7 @@
 # newpar
 # sent_id = 1
 # text = Catatan
-1	Catatan	catatan	NOUN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Catatan	catatan	NOUN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16242,7 +16252,7 @@
 # text = Bacaan lebih lanjut
 1	Bacaan	bacaan	NOUN	NSD	Number=Sing	3	nsubj	_	_
 2	lebih	lebih	ADV	D--	_	3	advmod	_	_
-3	lanjut	lanjut	ADJ	VSA	Number=Sing|Voice=Act	0	root	_	SpacesAfter=\n
+3	lanjut	lanjut	ADJ	VSA	Number=Sing|Voice=Act	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16251,7 +16261,7 @@
 # newpar
 # sent_id = 1
 # text = Referensi
-1	Referensi	referensi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n
+1	Referensi	referensi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830
@@ -16261,7 +16271,7 @@
 # sent_id = 1
 # text = Pranala luar
 1	Pranala	pranala	PROPN	NSD	Number=Sing	0	root	_	_
-2	luar	luar	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpacesAfter=\n
+2	luar	luar	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = indonesian-gsd-ud-2.6-200830

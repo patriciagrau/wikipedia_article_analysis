@@ -1,5 +1,3 @@
-# https://fi.wikipedia.org/wiki/Jaksollinen_j%C3%A4rjestelm%C3%A4
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Jaksollinen	jaksollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	2	amod	_	_
 2	järjestelmä	järjestelmä	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
 3	–	–	PUNCT	Punct	_	4	punct	_	_
-4	Wikipedia	wikipedia	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpacesAfter=\n
+4	Wikipedia	wikipedia	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -18,9 +16,73 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Jaksollinen järjestelmä
+# text = Alkuaineiden jaksollinen järjestelmä eli alkuainetaulukko on taulukko tunnetuista alkuaineista ryhmiteltynä niiden elektronirakenteen mukaan.
+1	Alkuaineiden	alku#aine	NOUN	N	Case=Gen|Number=Plur	3	nmod:poss	_	SpacesBefore=\n
+2	jaksollinen	jaksollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	3	amod	_	_
+3	järjestelmä	järjestelmä	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+4	eli	eli	CCONJ	C	_	5	cc	_	_
+5	alkuainetaulukko	alkuainetaulukko	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	taulukko	taulukko	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+8	tunnetuista	tunnettu	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	9	amod	_	_
+9	alkuaineista	alku#aine	NOUN	N	Case=Ela|Number=Plur	10	obl	_	_
+10	ryhmiteltynä	ryhmitellä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	advcl	_	_
+11	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	12	nmod:poss	_	_
+12	elektronirakenteen	elektron#irakenne	NOUN	N	Case=Gen|Number=Sing	7	nmod	_	_
+13	mukaan	mukaan	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = Jaksollinen järjestelmä on kemian perustyökaluja.
 1	Jaksollinen	jaksollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	2	amod	_	_
-2	järjestelmä	järjestelmä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
+2	järjestelmä	järjestelmä	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	kemian	kemia	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	perustyökaluja	perustyö#kalu	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Sen avulla voidaan arvioida, mitkä alkuaineet muistuttavat toisiaan ja miten taulukossa lähekkäin olevat alkuaineet eroavat toisistaan.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	4	obl	_	_
+3	voidaan	voida	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	aux	_	_
+4	arvioida	arvioida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mitkä	mikä	PRON	Pron	Case=Nom|Number=Plur|PronType=Int	7	det	_	_
+7	alkuaineet	alku#aine	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	muistuttavat	muistuttaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3|PronType=Rcp	8	obj	_	_
+10	ja	ja	CCONJ	C	_	16	cc	_	_
+11	miten	miten	ADV	Adv	_	16	advmod	_	_
+12	taulukossa	taulukko	NOUN	N	Case=Ine|Number=Sing	14	obl	_	_
+13	lähekkäin	lähekkäin	ADV	Adv	_	14	advmod	_	_
+14	olevat	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
+15	alkuaineet	alku#aine	NOUN	N	Case=Nom|Number=Plur	16	nsubj	_	_
+16	eroavat	erota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+17	toisistaan	toinen	PRON	Pron	Case=Ela|Number=Plur|Person[psor]=3	16	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Lisäksi alkuaineiden ominaisuuksia, esimerkiksi atomimassoja, voidaan taulukoida jaksolliseen järjestelmään, mikä helpottaa tietojen löytämistä ja vertailemista.
+1	Lisäksi	lisäksi	ADV	Adv	_	9	advmod	_	_
+2	alkuaineiden	alku#aine	NOUN	N	Case=Gen|Number=Plur	3	nmod:poss	_	_
+3	ominaisuuksia	ominaisuus	NOUN	N	Case=Par|Derivation=Vs|Number=Plur	9	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	esimerkiksi	esimerkiksi	ADV	Adv	_	6	advmod	_	_
+6	atomimassoja	atomim#ass	NOUN	N	Case=Par|Number=Plur	3	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	voidaan	voida	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	9	aux	_	_
+9	taulukoida	taulukoida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+10	jaksolliseen	jaksollinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Llinen|Number=Sing	11	amod	_	_
+11	järjestelmään	järjestelmä	NOUN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+14	helpottaa	helpottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+15	tietojen	tieto	NOUN	N	Case=Gen|Number=Plur	16	nmod:gobj	_	_
+16	löytämistä	löytäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	14	obj	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	vertailemista	vertaileminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	16	conj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -28,16 +90,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ryhmät, jaksot ja lohkot[muokkaa | muokkaa wikitekstiä]
+# text = Ryhmät, jaksot ja lohkot
 1	Ryhmät	ryhmä	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	Punct	_	3	punct	_	_
 3	jaksot	jakso	NOUN	N	Case=Nom|Number=Plur	1	conj	_	_
 4	ja	ja	CCONJ	C	_	5	cc	_	_
-5	lohkot[muokkaa	lohkot[#muokka	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
-6	|	|	PUNCT	Punct	_	8	punct	_	_
-7	muokkaa	muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	_
-8	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-9	]	]	PUNCT	Punct	_	8	punct	_	SpacesAfter=\n
+5	lohkot	lohko	NOUN	N	Case=Nom|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -438,12 +496,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Säännönmukaisuudet[muokkaa | muokkaa wikitekstiä]
-1	Säännönmukaisuudet[muokkaa	sään#nönmukaisuudet[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Säännönmukaisuudet
+1	Säännönmukaisuudet	säänn#önmukaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -487,12 +541,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Historia[muokkaa | muokkaa wikitekstiä]
-1	Historia[muokkaa	historia[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Historia
+1	Historia	historia	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1075,16 +1125,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Järjestelmän lyhyt ja pitkä muoto[muokkaa | muokkaa wikitekstiä]
+# text = Järjestelmän lyhyt ja pitkä muoto
 1	Järjestelmän	järjestelmä	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
 2	lyhyt	lyhyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
 3	ja	ja	CCONJ	C	_	4	cc	_	_
 4	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	_
-5	muoto[muokkaa	muoto#[muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-6	|	|	PUNCT	Punct	_	8	punct	_	_
-7	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	5	amod	_	_
-8	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
+5	muoto	muoto	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1214,13 +1260,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Katso myös[muokkaa | muokkaa wikitekstiä]
+# text = Katso myös
 1	Katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
-2	myös[muokkaa	myös[m#uokka	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
-3	|	|	PUNCT	Punct	_	4	punct	_	_
-4	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	1	punct	_	SpacesAfter=\n
+2	myös	myös	ADV	Adv	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1228,12 +1270,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lähteet[muokkaa | muokkaa wikitekstiä]
-1	Lähteet[muokkaa	lähteet[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Lähteet
+1	Lähteet	lähte	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1241,12 +1279,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Viitteet[muokkaa | muokkaa wikitekstiä]
-1	Viitteet[muokkaa	viitteet[#muokka	NOUN	N	Case=Par|Number=Sing	0	root	_	_
-2	|	|	PUNCT	Punct	_	4	punct	_	_
-3	muokkaa	muokka	NOUN	N	Case=Par|Number=Sing	4	amod	_	_
-4	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	Punct	_	4	punct	_	SpacesAfter=\n
+# text = Viitteet
+1	Viitteet	viite	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -1254,20 +1288,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Aiheesta muualla[muokkaa | muokkaa wikitekstiä]
+# text = Aiheesta muualla
 1	Aiheesta	aihe	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	_
-2	muualla[muokkaa	muualla[muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
-3	|	|	PUNCT	Punct	_	5	punct	_	_
-4	muokkaa	muokka	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
-5	wikitekstiä	wikiteksti	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = finnish-tdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigointivalikko
-1	Navigointivalikko	navi#gointivalikko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
+2	muualla	muualla	ADV	Adv	_	0	root	_	SpaceAfter=No
 

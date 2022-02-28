@@ -114,7 +114,11 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 
 22/02
 
-- gold standards French: 
-- gold standards French: 
-- gold standards French: 
-- gold standards French: 
+- Meeting with Aarne to fix missing the text. Very helpful! 😊
+
+23/02
+
+- Fixing script for the Wikipedia articles with most text. I decide to get rid of everything inside square brackets, because it's (from what I've seen) "edit".
+
+24/02
+- Trying to get rid of text that I'm getting but I do not want (from the infobox, etc.)

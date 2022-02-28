@@ -1,5 +1,3 @@
-# https://ko.wikipedia.org/wiki/%EB%A7%88%ED%95%98%ED%8A%B8%EB%A7%88_%EA%B0%84%EB%94%94
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -14,26 +12,7 @@
 5	,	,	PUNCT	sp	_	4	punct	_	_
 6	우리	우리	PRON	npp	_	7	compound	_	_
 7	모두의	모두+의	NOUN	ncn+jcm	_	8	nmod	_	_
-8	백과사전	백과+사전	NOUN	ncn+ncn	_	4	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 언어
-1	언어	언어	NOUN	ncn	_	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 마하트마 간디
-1	마하트마	마하트마	PROPN	nq	_	2	compound	_	_
-2	간디	간디	NOUN	ncn	_	0	root	_	SpacesAfter=\n
+8	백과사전	백과+사전	NOUN	ncn+ncn	_	4	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -281,11 +260,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 생애[편집]
-1	생애	생애	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 생애
+1	생애	생애	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -293,12 +269,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 생애 초기[편집]
+# text = 생애 초기
 1	생애	생애	NOUN	ncn	_	2	compound	_	_
-2	초기	초기	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	초기	초기	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -399,11 +372,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 결혼[편집]
-1	결혼	결혼	NOUN	ncpa	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 결혼
+1	결혼	결혼	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -487,18 +457,39 @@
 15	한다	하+ㄴ다	VERB	pvg+ef	_	0	root	_	SpaceAfter=No
 16	.	.	PUNCT	sf	_	15	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = 그는 보어 전쟁과 아프리카 전쟁 그리고 제1차 세계대전에 참전하려고 영국군에 지원했으나 참전하기 며칠 전 결핵에 의한 염증에 걸려서 포기해야만 했다.
+1	그는	그+는	PRON	npp+jxt	_	19	dislocated	_	_
+2	보어	보어	NOUN	ncn	_	3	compound	_	_
+3	전쟁과	전쟁+과	CCONJ	ncpa+jcj	_	9	obl	_	_
+4	아프리카	아프리카	PROPN	nq	_	5	compound	_	_
+5	전쟁	전쟁	NOUN	ncpa	_	3	conj	_	_
+6	그리고	그리고	CCONJ	maj	_	8	cc	_	_
+7	제1차	제+1+차	PART	xp+nno+nbu	_	8	compound	_	_
+8	세계대전에	세계+대전+에	ADV	ncn+ncn+jca	_	3	conj	_	_
+9	참전하려고	참전+하+려고	SCONJ	ncpa+xsv+ecs	_	11	ccomp	_	_
+10	영국군에	영국군+에	ADV	ncn+jca	_	11	obl	_	_
+11	지원했으나	지원+하+었+으나	SCONJ	ncpa+xsv+ep+ecs	_	19	ccomp	_	_
+12	참전하기	참전+하+기	VERB	ncpa+xsv+etn	_	13	nmod	_	_
+13	며칠	며칠	NOUN	ncn	_	14	compound	_	_
+14	전	전	NOUN	ncn	_	19	advmod	_	_
+15	결핵에	결핵+에	ADV	ncn+jca	_	16	obl	_	_
+16	의한	의하+ㄴ	VERB	pvg+etm	_	17	acl	_	_
+17	염증에	염증+에	ADV	ncpa+jca	_	18	obl	_	_
+18	걸려서	걸리+어서	SCONJ	pvg+ecs	_	19	ccomp	_	_
+19	포기해야만	포기+하+어야+만	ADV	ncpa+xsv+ecx+jxc	_	0	root	_	_
+20	했다	하+었+다	AUX	px+ep+ef	_	19	aux	_	SpaceAfter=No
+21	.	.	PUNCT	sf	_	20	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 영국 유학[편집]
+# text = 영국 유학
 1	영국	영국	PROPN	nq	_	2	compound	_	_
-2	유학	유학	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	유학	유학	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -664,17 +655,41 @@
 23	한다	하+ㄴ다	VERB	pvg+ef	_	22	conj	_	SpaceAfter=No
 24	.	.	PUNCT	sf	_	23	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = 간디는 영국 런던 대학교 유니버시티 칼리지 런던 (University College London: UCL)에 입학, 법학을 공부하여 1891년 변호사 자격을 취득했다.
+1	간디는	간디+는	NOUN	ncn+jxt	_	23	dislocated	_	_
+2	영국	영국	PROPN	nq	_	4	compound	_	_
+3	런던	런던	PROPN	nq	_	2	flat	_	_
+4	대학교	대학교	NOUN	ncn	_	5	compound	_	_
+5	유니버시티	유니버시티	PROPN	nq	_	16	obl	_	_
+6	칼리지	칼리지	PROPN	nq	_	5	flat	_	_
+7	런던	런던	PROPN	nq	_	5	flat	_	_
+8	(	(	PUNCT	sl	_	9	punct	_	SpaceAfter=No
+9	University	University	X	f	_	5	appos	_	_
+10	College	College	X	f	_	9	flat	_	_
+11	London	London	X	f	_	9	flat	_	SpaceAfter=No
+12	:	:	PUNCT	sp	_	9	punct	_	_
+13	UCL	UCL	X	f	_	5	appos	_	SpaceAfter=No
+14	)	)	PUNCT	sr	_	9	punct	_	SpaceAfter=No
+15	에	에	ADP	jca	_	5	case	_	_
+16	입학	입학	NOUN	ncpa	_	23	advmod	_	SpaceAfter=No
+17	,	,	PUNCT	sp	_	16	punct	_	_
+18	법학을	법학+을	NOUN	ncn+jco	_	19	obj	_	_
+19	공부하여	공부+하+어	SCONJ	ncpa+xsv+ecs	_	23	ccomp	_	_
+20	1891년	1891+년	NOUN	nno+nbu	_	23	advmod	_	_
+21	변호사	변호사	NOUN	ncn	_	22	compound	_	_
+22	자격을	자격+을	NOUN	ncn+jco	_	23	obj	_	_
+23	취득했다	취득+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	sf	_	23	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 독립운동[편집]
-1	독립운동	독립+운동	NOUN	ncpa+ncpa	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 독립운동
+1	독립운동	독립+운동	NOUN	ncpa+ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1204,12 +1219,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 독립 이후[편집]
-1	독립	독립	NOUN	ncpa	_	2	compound	_	_
-2	이후	이후	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 독립 이후
+1	독립	독립	NOUN	ncpa	_	2	<pad>	_	_
+2	이후	이후	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1340,12 +1352,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 가족 관계[편집]
+# text = 가족 관계
 1	가족	가족	NOUN	ncn	_	2	compound	_	_
-2	관계	관계	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	관계	관계	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1353,11 +1362,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 저서[편집]
+# text = 저서
 1	저서	저서	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncpa	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1365,12 +1371,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 평가와 비판[편집]
-1	평가와	평가+와	CCONJ	ncpa+jcj	_	4	compound	_	_
-2	비판	비판	NOUN	ncpa	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 평가와 비판
+1	평가와	평가+와	CCONJ	ncpa+jcj	_	0	root	_	_
+2	비판	비판	NOUN	ncpa	_	1	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1378,11 +1381,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 평화주의자[편집]
-1	평화주의자	평화주의자	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 평화주의자
+1	평화주의자	평화주의자	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1460,18 +1460,132 @@
 13	되었다	되+었+다	VERB	pvg+ep+ef	_	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	sf	_	13	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = 그는 일생 동안 정치적인 목적을 위한 폭력을 거부했는데, 그의 비폭력주의는 나라 안뿐만 아니라 국제적으로도 큰 영향을 주었다.
+1	그는	그+는	PRON	npp+jxt	_	8	dislocated	_	_
+2	일생	일생	NOUN	ncn	_	3	compound	_	_
+3	동안	동안	NOUN	ncn	_	8	advmod	_	_
+4	정치적인	정치+적+이+ㄴ	VERB	ncpa+xsn+jp+etm	_	5	acl	_	_
+5	목적을	목적+을	NOUN	ncpa+jco	_	6	obj	_	_
+6	위한	위하+ㄴ	VERB	pvg+etm	_	7	acl	_	_
+7	폭력을	폭력+을	NOUN	ncn+jco	_	8	obj	_	_
+8	거부했는데	거부+하+었+는데	SCONJ	ncpa+xsv+ep+ecs	_	18	ccomp	_	SpaceAfter=No
+9	,	,	PUNCT	sp	_	8	punct	_	_
+10	그의	그+의	PRON	npp+jcm	_	11	nmod	_	_
+11	비폭력주의는	비폭력주의+는	NOUN	ncn+jxt	_	18	dislocated	_	_
+12	나라	나라	NOUN	ncn	_	13	compound	_	_
+13	안뿐만	안+뿐+만	ADV	ncn+xsn+jxc	_	14	advcl	_	_
+14	아니라	아니+라	SCONJ	paa+ecs	_	18	xcomp	_	_
+15	국제적으로도	국제+적+으로+도	ADV	ncn+xsn+jca+jxc	_	18	advcl	_	_
+16	큰	크+ㄴ	ADJ	paa+etm	_	17	amod	_	_
+17	영향을	영향+을	NOUN	ncn+jco	_	18	obj	_	_
+18	주었다	주+었+다	VERB	pvg+ep+ef	_	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	sf	_	18	punct	_	_
+
+# sent_id = 6
+# text = 1918년 인도 국민회의의 지도자 역할을 맡은 것을 전후로 자유를 얻기 위한 투쟁의 선봉에 서면서, 간디는 인도의 상징 중 하나가 되었다고 평가된다.
+1	1918년	1918+년	NOUN	nno+nbu	_	6	advmod	_	_
+2	인도	인도	PROPN	nq	_	3	compound	_	_
+3	국민회의의	국민회의+의	NOUN	ncn+jcm	_	4	nmod	_	_
+4	지도자	지도자	NOUN	ncn	_	5	compound	_	_
+5	역할을	역할+을	NOUN	ncn+jco	_	6	obj	_	_
+6	맡은	맡+ㄴ	VERB	pvg+etm	_	7	acl	_	_
+7	것을	것+을	NOUN	nbn+jco	_	14	obj	_	_
+8	전후로	전후+로	ADV	ncn+jca	_	14	advcl	_	_
+9	자유를	자유+를	NOUN	ncps+jco	_	10	obj	_	_
+10	얻기	얻+기	VERB	pvg+etn	_	11	nmod	_	_
+11	위한	위하+ㄴ	VERB	pvg+etm	_	12	acl	_	_
+12	투쟁의	투쟁+의	NOUN	ncpa+jcm	_	13	nmod	_	_
+13	선봉에	선봉+에	ADV	ncn+jca	_	14	obl	_	_
+14	서면서	서+면서	SCONJ	pvg+ecs	_	0	root	_	SpaceAfter=No
+15	,	,	PUNCT	sp	_	14	punct	_	_
+16	간디는	간디+는	NOUN	ncn+jxt	_	21	dislocated	_	_
+17	인도의	인도+의	PROPN	nq+jcm	_	18	nmod	_	_
+18	상징	상징	NOUN	ncpa	_	19	compound	_	_
+19	중	중	NOUN	nbn	_	20	mark	_	_
+20	하나가	하나+가	NUM	nnc+jcs	_	21	nsubj	_	_
+21	되었다고	되+었+다+고	VERB	pvg+ep+ef+jcr	_	14	conj	_	_
+22	평가된다	평가+되+ㄴ다	VERB	ncpa+xsv+ef	_	21	conj	_	SpaceAfter=No
+23	.	.	PUNCT	sf	_	22	punct	_	_
+
+# sent_id = 7
+# text = 또 그 때부터 ‘위대한 영혼’이라는 뜻의 ‘마하트마(Mahatma)’로 불리게 되었다.
+1	또	또	CCONJ	maj	_	12	cc	_	_
+2	그	그	DET	mmd	_	3	det	_	_
+3	때부터	때+부터	ADV	ncn+jxc	_	12	advcl	_	_
+4	‘위대한	‘위대+하+ㄴ	VERB	ncps+xsm+etm	_	5	amod	_	_
+5	영혼’이라는	영혼’+이+라는	VERB	ncn+jp+etm	_	6	acl	_	_
+6	뜻의	뜻+의	NOUN	ncn+jcm	_	7	nmod	_	_
+7	‘마하트마	‘마하트마	PROPN	nq	_	12	advcl	_	SpaceAfter=No
+8	(	(	PUNCT	sl	_	9	punct	_	SpaceAfter=No
+9	Mahatma	Mahatma	X	f	_	7	appos	_	SpaceAfter=No
+10	)	)	PUNCT	sr	_	9	punct	_	SpaceAfter=No
+11	’로	’로	ADP	jca	_	7	case	_	_
+12	불리게	불리+게	VERB	pvg+ecx	_	0	root	_	_
+13	되었다	되+었+다	AUX	px+ep+ef	_	12	aux	_	SpaceAfter=No
+14	.	.	PUNCT	sf	_	13	punct	_	_
+
+# sent_id = 8
+# text = 간디 자신은 이런 명예를 좋아하지는 않았지만 지금도 마하트마 간디로 불린다.
+1	간디	간디	NOUN	ncn	_	2	compound	_	_
+2	자신은	자신+은	NOUN	ncn+jxt	_	5	dislocated	_	_
+3	이런	이렇+ㄴ	VERB	pad+etm	_	4	det	_	_
+4	명예를	명예+를	NOUN	ncn+jco	_	5	obj	_	_
+5	좋아하지는	좋아하+지+는	NOUN	pvg+ecx+jxt	_	10	ccomp	_	_
+6	않았지만	않+았+지만	SCONJ	px+ep+ecs	_	5	aux	_	_
+7	지금도	지금+도	ADV	ncn+jxc	_	10	advcl	_	_
+8	마하트마	마하트마	PROPN	nq	_	9	compound	_	_
+9	간디로	간디+로	ADV	ncn+jca	_	10	advcl	_	_
+10	불린다	불리+ㄴ다	VERB	pvg+ef	_	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	sf	_	10	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = 1999년 4월 18일 미국의 뉴욕타임스는 지난 1천 년간의 최고의 혁명으로 영국의 식민통치에 저항한 간디의 비폭력 무저항운동을 선정하였다.
+1	1999년	1999+년	NOUN	nno+nbu	_	3	compound	_	_
+2	4월	4+월	NOUN	nno+nbu	_	3	compound	_	_
+3	18일	18+일	NOUN	nno+nbu	_	17	advmod	_	_
+4	미국의	미국+의	PROPN	nq+jcm	_	5	nmod	_	_
+5	뉴욕타임스는	뉴욕타임스+는	PROPN	nq+jxt	_	17	dislocated	_	_
+6	지난	지나+ㄴ	VERB	pvg+etm	_	10	acl	_	_
+7	1천	1+천	NUM	nnc+nnc	_	8	compound	_	_
+8	년간의	년+간+의	NOUN	nbu+xsn+jcm	_	10	nmod	_	_
+9	최고의	최고+의	NOUN	ncn+jcm	_	10	nmod	_	_
+10	혁명으로	혁명+으로	ADV	ncpa+jca	_	17	advcl	_	_
+11	영국의	영국+의	PROPN	nq+jcm	_	12	nmod	_	_
+12	식민통치에	식민+통치+에	ADV	ncn+ncpa+jca	_	13	obl	_	_
+13	저항한	저항+하+ㄴ	VERB	ncpa+xsv+etm	_	16	acl	_	_
+14	간디의	간디+의	NOUN	ncn+jcm	_	16	nmod	_	_
+15	비폭력	비폭력	NOUN	ncn	_	16	compound	_	_
+16	무저항운동을	무저항+운동+을	NOUN	ncn+ncpa+jco	_	17	obj	_	_
+17	선정하였다	선정+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	sf	_	17	punct	_	SpaceAfter=No
+
+# sent_id = 10
+# text = 뉴욕타임스 1999년 4월 18일자 "Best Revolution;
+1	뉴욕타임스	뉴욕타임스	PROPN	nq	_	4	compound	_	_
+2	1999년	1999+년	NOUN	nno+nbu	_	4	compound	_	_
+3	4월	4+월	NOUN	nno+nbu	_	4	compound	_	_
+4	18일자	18+일자	NOUN	nno+ncn	_	6	compound	_	_
+5	"	"	PUNCT	sl	_	6	punct	_	SpaceAfter=No
+6	Best	Best	X	f	_	0	root	_	_
+7	Revolution	Revolution	X	f	_	6	flat	_	SpaceAfter=No
+8	;	;	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 11
+# text = The Peacemaker"
+1	The	The	X	f	_	0	root	_	_
+2	Peacemaker	Peacemaker	X	f	_	1	flat	_	SpaceAfter=No
+3	"	"	PUNCT	sr	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 종교적 너그러움[편집]
+# text = 종교적 너그러움
 1	종교적	종교+적	NOUN	ncn+xsn	_	2	amod	_	_
-2	너그러움	너그러움	ADJ	pvg+etn	_	4	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	너그러움	너그러움	ADJ	paa+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1531,11 +1645,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 비판[편집]
-1	비판	비판	NOUN	ncpa	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sf	_	3	punct	_	SpacesAfter=\n
+# text = 비판
+1	비판	비판	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1543,12 +1654,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 사회운동의 모순[편집]
+# text = 사회운동의 모순
 1	사회운동의	사회+운동+의	NOUN	ncn+ncpa+jcm	_	2	nmod	_	_
-2	모순	모순	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	모순	모순	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1748,12 +1856,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 모순된 행동[편집]
+# text = 모순된 행동
 1	모순된	모순+되+ㄴ	VERB	ncpa+xsv+etm	_	2	acl	_	_
-2	행동	행동	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	행동	행동	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2070,12 +2175,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 같이 보기[편집]
+# text = 같이 보기
 1	같이	같이	ADV	mag	_	2	advmod	_	_
-2	보기	보+기	VERB	pvg+etn	_	4	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	보기	보+기	VERB	pvg+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2083,9 +2185,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 각주[편집]
-1	각주	각주	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 각주
+1	각주	각주	NOUN	ncn	_	0	root	_	SpaceAfter=No
 

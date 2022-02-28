@@ -1,5 +1,3 @@
-# https://hr.wikipedia.org/wiki/Pariz
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Pariz – Wikipedija
 1	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	–	–	PUNCT	Z	_	1	punct	_	_
-3	Wikipedija	wikipedija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Pariz
-1	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	Wikipedija	wikipedija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -33,12 +22,98 @@
 4	.	.	PUNCT	Z	_	1	punct	_	_
 
 # sent_id = 2
-# text = Paris [paʁi])
-1	Paris	Paris	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	paʁi	paʁi	VERB	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	1	parataxis	_	SpaceAfter=No
-4	]	]	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-5	)	)	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+# text = Paris ) je glavni i najveći grad Francuske.
+1	Paris	Paris	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	parataxis	_	_
+2	)	)	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+4	glavni	glavni	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
+5	i	i	CCONJ	Cc	_	6	cc	_	_
+6	najveći	velik	ADJ	Agsmsny	Case=Nom|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	4	conj	_	_
+7	grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+8	Francuske	Francuska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 3
+# text = Smješten je na obalama rijeke Seine u sjevernoj Francuskoj, u središtu pokrajine Île-de-France, također poznate kao "Pariška regija" (fra.
+1	Smješten	smjestiti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	na	na	ADP	Sl	Case=Loc	4	case	_	_
+4	obalama	obala	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	1	obl	_	_
+5	rijeke	rijeka	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	Seine	Seine	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	5	appos	_	_
+7	u	u	ADP	Sl	Case=Loc	9	case	_	_
+8	sjevernoj	sjeverni	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
+9	Francuskoj	Francuska	PROPN	Npfsl	Case=Loc|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	12	punct	_	_
+11	u	u	ADP	Sl	Case=Loc	12	case	_	_
+12	središtu	središte	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	1	obl	_	_
+13	pokrajine	pokrajina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	_
+14	Île-de-France	Île-dE-France	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	13	appos	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	17	punct	_	_
+16	također	također	ADV	Rgp	Degree=Pos	17	advmod	_	_
+17	poznate	poznat	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	acl	_	_
+18	kao	kao	SCONJ	Cs	_	21	case	_	_
+19	"	"	PUNCT	Z	_	21	punct	_	SpaceAfter=No
+20	Pariška	pariški	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	21	compound	_	_
+21	regija	regija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	17	obl	_	SpaceAfter=No
+22	"	"	PUNCT	Z	_	21	punct	_	_
+23	(	(	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+24	fra	fra	X	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	21	appos	_	SpaceAfter=No
+25	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 4
+# text = Région parisienne).
+1	Région	Région	X	Xf	_	0	root	_	_
+2	parisienne	parisienne	X	Xf	_	1	compound	_	SpaceAfter=No
+3	)	)	PUNCT	Z	_	1	punct	_	SpaceAfter=No
+4	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 5
+# text = Stanovništvo grada Pariza, u svojim od 1860. uvelike nepromijenjenim granicama, procijenjuje se na 2 167 994 (siječanj 2006.), ali metropolitansko područje (aire urbaine) naseljava više od 11 milijuna stanovnika, kao najnaseljenije metropolitansko područje u Eurozoni.
+1	Stanovništvo	stanovništvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	13	nsubj	_	_
+2	grada	grad	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	11	punct	_	_
+5	u	u	ADP	Sl	Case=Loc	11	case	_	_
+6	svojim	svoj	DET	Px-fpl	Case=Loc|Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	11	det	_	_
+7	od	od	ADP	Sg	Case=Gen	8	case	_	_
+8	1860.	1860.	ADJ	Mdo	NumType=Ord	11	amod	_	_
+9	uvelike	uvelike	ADV	Rgp	Degree=Pos	10	advmod	_	_
+10	nepromijenjenim	nepromijenjen	ADJ	Agpfply	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	11	amod	_	_
+11	granicama	granica	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	13	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	11	punct	_	_
+13	procijenjuje	procijenjivati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	13	expl	_	_
+15	na	na	ADP	Sa	Case=Acc	18	case	_	_
+16	2	2	NUM	Mdc	NumType=Card	18	nummod	_	_
+17	167	167	NUM	Mdc	NumType=Card	18	nummod	_	_
+18	994	994	NUM	Mdc	NumType=Card	13	obl	_	_
+19	(	(	PUNCT	Z	_	20	punct	_	SpaceAfter=No
+20	siječanj	siječanj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	18	parataxis	_	_
+21	2006.	2006.	ADJ	Mdo	NumType=Ord	20	amod	_	SpaceAfter=No
+22	)	)	PUNCT	Z	_	20	punct	_	SpaceAfter=No
+23	,	,	PUNCT	Z	_	31	punct	_	_
+24	ali	ali	CCONJ	Cc	_	31	cc	_	_
+25	metropolitansko	metropolitanski	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	26	amod	_	_
+26	područje	područje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	31	nsubj	_	_
+27	(	(	PUNCT	Z	_	29	punct	_	SpaceAfter=No
+28	aire	aire	X	Xf	_	26	appos	_	_
+29	urbaine	urbaine	X	Xf	_	28	flat	_	SpaceAfter=No
+30	)	)	PUNCT	Z	_	29	punct	_	_
+31	naseljava	naseljavati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
+32	više	mnogo	ADV	Rgc	Degree=Cmp	35	advmod	_	_
+33	od	od	ADP	Sg	Case=Gen	35	case	_	_
+34	11	11	NUM	Mdc	NumType=Card	35	nummod	_	_
+35	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	31	obj	_	_
+36	stanovnika	stanovnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	35	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	Z	_	41	punct	_	_
+38	kao	kao	SCONJ	Cs	_	41	case	_	_
+39	najnaseljenije	naseljen	ADJ	Agsnsny	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	41	amod	_	_
+40	metropolitansko	metropolitanski	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	41	amod	_	_
+41	područje	područje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	31	obl	_	_
+42	u	u	ADP	Sl	Case=Loc	43	case	_	_
+43	Eurozoni	Eurozona	PROPN	Npfsl	Case=Loc|Gender=Fem|Number=Sing	41	nmod	_	SpaceAfter=No
+44	.	.	PUNCT	Z	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -275,14 +350,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etimologija[uredi | uredi kôd]
+# text = Etimologija
 1	Etimologija	etimologija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -309,7 +378,7 @@
 16	.	.	PUNCT	Z	_	3	punct	_	_
 
 # sent_id = 2
-# text = Grad je bio nazivan Lutecija (ili potpuno Lutecija Parisiorum) za vrijeme rimske okupacije od prvog do šestog stoljeća, ali za vrijeme vladavine
+# text = Grad je bio nazivan Lutecija (ili potpuno Lutecija Parisiorum) za vrijeme rimske okupacije od prvog do šestog stoljeća, ali za vrijeme vladavine Julijana Apostate (360. – 363.) grad je preimenovan u Paris.
 1	Grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
 2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 3	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	aux	_	_
@@ -330,11 +399,24 @@
 18	do	do	ADP	Sg	Case=Gen	20	case	_	_
 19	šestog	šesti	ADJ	Agpnsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	_
 20	stoljeća	stoljeće	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	13	nmod	_	SpaceAfter=No
-21	,	,	PUNCT	Z	_	24	punct	_	_
-22	ali	ali	CCONJ	Cc	_	24	cc	_	_
+21	,	,	PUNCT	Z	_	35	punct	_	_
+22	ali	ali	CCONJ	Cc	_	35	cc	_	_
 23	za	za	ADP	Sa	Case=Acc	24	case	_	_
-24	vrijeme	vrijeme	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	conj	_	_
+24	vrijeme	vrijeme	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	35	obl	_	_
 25	vladavine	vladavina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	SpacesAfter=\s\n
+26	Julijana	Julijan	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	25	nmod	_	_
+27	Apostate	Apostata	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	26	flat	_	_
+28	(	(	PUNCT	Z	_	29	punct	_	SpaceAfter=No
+29	360.	360.	ADJ	Mdo	NumType=Ord	26	parataxis	_	_
+30	–	–	PUNCT	Z	_	31	punct	_	_
+31	363.	363.	ADJ	Mdo	NumType=Ord	29	conj	_	SpaceAfter=No
+32	)	)	PUNCT	Z	_	29	punct	_	_
+33	grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	35	nsubj	_	_
+34	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux	_	_
+35	preimenovan	preimenovati	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	_	_
+36	u	u	ADP	Sa	Case=Acc	37	case	_	_
+37	Paris	Paris	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	35	obl	_	SpaceAfter=No
+38	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -466,11 +548,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Stanovnici Pariza na hrvatskome nazivaju se "Parižani", i na francuskome Parisiens ([paʁizjɛ̃]).
+# text = Stanovnici Pariza na hrvatskome nazivaju se "Parižani", i na francuskome Parisiens ().
 1	Stanovnici	stanovnik	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
 2	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 3	na	na	ADP	Sl	Case=Loc	4	case	_	_
-4	hrvatskome	hrvatski	ADJ	Ncmsl	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	obl	_	_
+4	hrvatskome	hrvatski	ADJ	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	5	obl	_	_
 5	nazivaju	nazivati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
 7	"	"	PUNCT	Z	_	8	punct	_	SpaceAfter=No
@@ -479,49 +561,43 @@
 10	,	,	PUNCT	Z	_	13	punct	_	_
 11	i	i	CCONJ	Cc	_	13	cc	_	_
 12	na	na	ADP	Sl	Case=Loc	13	case	_	_
-13	francuskome	francuski	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	5	obl	_	_
+13	francuskome	francuski	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	5	conj	_	_
 14	Parisiens	Parisiens	X	Xf	_	13	appos	_	_
-15	(	(	PUNCT	Z	_	17	punct	_	SpaceAfter=No
-16	[	[	PUNCT	Z	_	17	punct	_	SpaceAfter=No
-17	paʁizjɛ̃	paʁizjɛ̃	X	Xf	_	14	parataxis	_	SpaceAfter=No
-18	]	]	PUNCT	Z	_	17	punct	_	SpaceAfter=No
-19	)	)	PUNCT	Z	_	17	punct	_	SpaceAfter=No
-20	.	.	PUNCT	Z	_	5	punct	_	_
+15	(	(	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+16	)	)	PUNCT	Z	_	13	punct	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 2
-# text = Parižani često se pogrdno nazivaju Parigots ([paʁiɡo]), izraz prvi puta upotrijebljen 1900., od stanovnika izvan Pariške regije, ali danas omiljen i među samim Parižanima.
+# text = Parižani često se pogrdno nazivaju Parigots (), izraz prvi puta upotrijebljen 1900., od stanovnika izvan Pariške regije, ali danas omiljen i među samim Parižanima.
 1	Parižani	Parižanin	PROPN	Npmpn	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
 2	često	često	ADV	Rgp	Degree=Pos	5	advmod	_	_
 3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
 4	pogrdno	pogrdno	ADV	Rgp	Degree=Pos	5	advmod	_	_
 5	nazivaju	nazivati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	Parigots	Parigots	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	5	xcomp	_	_
-7	(	(	PUNCT	Z	_	9	punct	_	SpaceAfter=No
-8	[	[	PUNCT	Z	_	9	punct	_	SpaceAfter=No
-9	paʁiɡo	paʁiɡo	X	Rgp	_	6	parataxis	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	9	punct	_	SpaceAfter=No
-11	)	)	PUNCT	Z	_	9	punct	_	SpaceAfter=No
-12	,	,	PUNCT	Z	_	16	punct	_	_
-13	izraz	izraz	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
-14	prvi	prvi	ADJ	Mlomsan	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
-15	puta	put	ADV	Rgp	Degree=Pos	16	obl	_	_
-16	upotrijebljen	upotrijebiti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	parataxis	_	_
-17	1900.	1900.	ADJ	Mdo	NumType=Ord	16	amod	_	SpaceAfter=No
-18	,	,	PUNCT	Z	_	20	punct	_	_
-19	od	od	ADP	Sg	Case=Gen	20	case	_	_
-20	stanovnika	stanovnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	16	obl	_	_
-21	izvan	izvan	ADP	Sg	Case=Gen	23	case	_	_
-22	Pariške	pariški	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
-23	regije	regija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
-24	,	,	PUNCT	Z	_	27	punct	_	_
-25	ali	ali	CCONJ	Cc	_	27	cc	_	_
-26	danas	danas	ADV	Rgp	Degree=Pos	27	advmod	_	_
-27	omiljen	omiliti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	conj	_	_
-28	i	i	CCONJ	Cc	_	31	discourse	_	_
-29	među	među	ADP	Si	Case=Ins	31	case	_	_
-30	samim	sam	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	31	amod	_	_
-31	Parižanima	Parižan	PROPN	Npmpi	Case=Ins|Gender=Masc|Number=Plur	27	obl	_	SpaceAfter=No
-32	.	.	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+7	(	(	PUNCT	Z	_	6	punct	_	SpaceAfter=No
+8	)	)	PUNCT	Z	_	6	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	13	punct	_	_
+10	izraz	izraz	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	obj	_	_
+11	prvi	prvi	ADJ	Mlomsan	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	_
+12	puta	put	ADV	Rgp	Degree=Pos	13	advmod	_	_
+13	upotrijebljen	upotrijebiti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	advcl	_	_
+14	1900.	1900.	ADJ	Mdo	NumType=Ord	13	amod	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	17	punct	_	_
+16	od	od	ADP	Sg	Case=Gen	17	case	_	_
+17	stanovnika	stanovnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	13	obl	_	_
+18	izvan	izvan	ADP	Sg	Case=Gen	20	case	_	_
+19	Pariške	pariški	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	_
+20	regije	regija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	Z	_	24	punct	_	_
+22	ali	ali	CCONJ	Cc	_	24	cc	_	_
+23	danas	danas	ADV	Rgp	Degree=Pos	24	advmod	_	_
+24	omiljen	omiliti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	_	_
+25	i	i	CCONJ	Cc	_	28	discourse	_	_
+26	među	među	ADP	Si	Case=Ins	28	case	_	_
+27	samim	sam	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	28	amod	_	_
+28	Parižanima	Parižan	PROPN	Npmpi	Case=Ins|Gender=Masc|Number=Plur	24	obl	_	SpaceAfter=No
+29	.	.	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -529,13 +605,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zemljopis[uredi | uredi kôd]
-1	Zemljopis[	zemljopis[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Zemljopis
+1	Zemljopis	Zemljopis	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -543,15 +614,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Položaj i reljef[uredi | uredi kôd]
+# text = Položaj i reljef
 1	Položaj	položaj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
-3	reljef[	reljef[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+3	reljef	reljef	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -743,14 +809,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Klima[uredi | uredi kôd]
+# text = Klima
 1	Klima	klima	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -953,13 +1013,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Povijest[uredi | uredi kôd]
-1	Povijest[	povijest[	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
-5	kôd	kôd	NOUN	Sg	Case=Gen	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Povijest
+1	Povijest	povijest	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -967,16 +1022,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Prapovijest i Stari vijek[uredi | uredi kôd]
-1	Prapovijest	prapovijest	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+# text = Prapovijest i Stari vijek
+1	Prapovijest	prapovijest	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	i	i	CCONJ	Cc	_	4	cc	_	_
 3	Stari	star	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
-4	vijek[	vijek[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Sg	Case=Gen	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
+4	vijek	vijek	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1185,14 +1235,290 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Srednji vijek[uredi | uredi kôd]
+# text = Srednji vijek
 1	Srednji	srednji	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	vijek[	vijek[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	nmod	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	vijek	vijek	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = croatian-set-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kuga je stigla u Pariz 1348., s najmanje 800 mrtvih dnevno, u doba kada je Pariz imao oko 200 000 stanovnika.
+1	Kuga	kuga	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	stigla	stići	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	u	u	ADP	Sa	Case=Acc	5	case	_	_
+5	Pariz	Pariz	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	obl	_	_
+6	1348.	1348.	ADJ	Mdo	NumType=Ord	5	amod	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	12	punct	_	_
+8	s	sa	ADP	Si	Case=Ins	12	case	_	_
+9	najmanje	malo	ADV	Rgs	Degree=Sup	10	advmod	_	_
+10	800	800	NUM	Mdc	NumType=Card	12	nummod	_	_
+11	mrtvih	mrtav	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	3	obl	_	_
+12	dnevno	dnevno	ADV	Rgp	Degree=Pos	3	advmod	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	15	punct	_	_
+14	u	u	ADP	Sa	Case=Acc	15	case	_	_
+15	doba	doba	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
+16	kada	kada	ADV	Rgp	Degree=Pos|PronType=Int,Rel	19	advmod	_	_
+17	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+18	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	19	nsubj	_	_
+19	imao	imati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	15	acl	_	_
+20	oko	oko	ADV	Rgp	Degree=Pos	21	advmod	_	_
+21	200	200	NUM	Mdc	NumType=Card	23	nummod	_	_
+22	000	000	NUM	Mdc	NumType=Card	23	nummod	_	_
+23	stanovnika	stanovnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	19	obj	_	SpaceAfter=No
+24	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2
+# text = Također i 1466.
+1	Također	također	ADV	Rgp	Degree=Pos	3	advmod	_	_
+2	i	i	CCONJ	Cc	_	3	cc	_	_
+3	1466.	1466.	ADJ	Mdo	NumType=Ord	0	root	_	_
+
+# sent_id = 3
+# text = 40 000 ljudi je umrlo od kuge u Parizu.
+1	40	40	NUM	Mdc	NumType=Card	3	nummod	_	_
+2	000	000	NUM	Mdc	NumType=Card	3	nummod	_	_
+3	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	5	nsubj	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	umrlo	umrijeti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	od	od	ADP	Sg	Case=Gen	7	case	_	_
+7	kuge	kuga	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	obl	_	_
+8	u	u	ADP	Sl	Case=Loc	9	case	_	_
+9	Parizu	Pariz	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 4
+# text = Pariz je izgubio svoju poziciju sjedišta francuskog kraljevstva za vrijeme okupacije od Burgundijaca, tada engleskih saveznika, u doba Stogodišnjeg rata, kada je Henrik VI okrunjen za francuskog kralja 1431., naslov koji je izgubio kada je Karlo VII vratio grad Francuskoj 1436.
+1	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	izgubio	izgubiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	svoju	svoj	DET	Px-fsa	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	5	det	_	_
+5	poziciju	pozicija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	3	obj	_	_
+6	sjedišta	sjedište	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	_
+7	francuskog	francuski	ADJ	Agpnsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	_
+8	kraljevstva	kraljevstvo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+9	za	za	ADP	Sa	Case=Acc	10	case	_	_
+10	vrijeme	vrijeme	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
+11	okupacije	okupacija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
+12	od	od	ADP	Sg	Case=Gen	13	case	_	_
+13	Burgundijaca	Burgundijac	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	Z	_	17	punct	_	_
+15	tada	tada	ADV	Rgp	Degree=Pos|PronType=Dem	17	advmod	_	_
+16	engleskih	engleski	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	17	amod	_	_
+17	saveznika	saveznik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	13	appos	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	20	punct	_	_
+19	u	u	ADP	Sa	Case=Acc	20	case	_	_
+20	doba	doba	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
+21	Stogodišnjeg	stogodišnji	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	22	amod	_	_
+22	rata	rat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	Z	_	28	punct	_	_
+24	kada	kada	ADV	Rgp	Degree=Pos|PronType=Int,Rel	28	advmod	_	_
+25	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
+26	Henrik	Henrik	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	28	nsubj	_	_
+27	VI	VI	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	26	flat	_	_
+28	okrunjen	okruniti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	22	acl	_	_
+29	za	za	ADP	Sa	Case=Acc	31	case	_	_
+30	francuskog	francuski	ADJ	Agpmsayy	Animacy=Anim|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	31	amod	_	_
+31	kralja	kralj	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	28	obl	_	_
+32	1431.	1431.	ADJ	Mdo	NumType=Ord	31	amod	_	SpaceAfter=No
+33	,	,	PUNCT	Z	_	34	punct	_	_
+34	naslov	naslov	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	28	obj	_	_
+35	koji	koji	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	37	nsubj	_	_
+36	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux	_	_
+37	izgubio	izgubiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	34	acl	_	_
+38	kada	kada	ADV	Rgp	Degree=Pos|PronType=Int,Rel	42	advmod	_	_
+39	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux	_	_
+40	Karlo	Karlo	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	42	nsubj	_	_
+41	VII	VII	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	40	flat	_	_
+42	vratio	vratiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	37	advcl	_	_
+43	grad	grad	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	42	obj	_	_
+44	Francuskoj	Francuska	PROPN	Npfsd	Case=Dat|Gender=Fem|Number=Sing	42	iobj	_	_
+45	1436.	1436.	ADJ	Mdo	NumType=Ord	42	amod	_	_
+
+# sent_id = 5
+# text = Premda je Pariz ponovo postao prijestolnicom, francuski vladari boravili su u Dolini Loire. 1528., kralj Franjo I, vratio je sjedište iz Doline Loire natrag u Pariz.
+1	Premda	premda	SCONJ	Cs	_	5	mark	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+4	ponovo	ponovo	ADV	Rgp	Degree=Pos	5	advmod	_	_
+5	postao	postati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	advcl	_	_
+6	prijestolnicom	prijestolnica	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	5	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	5	punct	_	_
+8	francuski	francuski	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	9	amod	_	_
+9	vladari	vladar	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	10	nsubj	_	_
+10	boravili	boraviti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+11	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+12	u	u	ADP	Sl	Case=Loc	13	case	_	_
+13	Dolini	dolina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	10	obl	_	_
+14	Loire	Loira	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Z	_	22	punct	_	_
+16	1528.	1528.	ADJ	Mdo	NumType=Ord	22	amod	_	SpaceAfter=No
+17	,	,	PUNCT	Z	_	16	punct	_	_
+18	kralj	kralj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	22	nsubj	_	_
+19	Franjo	Franjo	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	18	appos	_	_
+20	I	I	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	19	flat	_	SpaceAfter=No
+21	,	,	PUNCT	Z	_	18	punct	_	_
+22	vratio	vratiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	parataxis	_	_
+23	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+24	sjedište	sjedište	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	22	obj	_	_
+25	iz	iz	ADP	Sg	Case=Gen	26	case	_	_
+26	Doline	dolina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	_
+27	Loire	Loira	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	26	nmod	_	_
+28	natrag	natrag	ADV	Rgp	Degree=Pos	22	advmod	_	_
+29	u	u	ADP	Sa	Case=Acc	30	case	_	_
+30	Pariz	Pariz	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	22	obl	_	SpaceAfter=No
+31	.	.	PUNCT	Z	_	10	punct	_	_
+
+# sent_id = 6
+# text = U doba francuskih vjerskih ratova, Pariz je bio uporište francuske katoličke lige.
+1	U	u	ADP	Sa	Case=Acc	2	case	_	_
+2	doba	doba	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	10	nmod	_	_
+3	francuskih	francuski	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	5	amod	_	_
+4	vjerskih	vjerski	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	5	amod	_	_
+5	ratova	rat	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	2	punct	_	_
+7	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+9	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+10	uporište	uporište	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+11	francuske	francuski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+12	katoličke	katolički	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	lige	liga	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	10	punct	_	_
+
+# sent_id = 7
+# text = Kolovoza 1572., za vrijeme vladavine Karla IX, dok su se u gradu nalazili mnogi protestantski plemići radi vjenčanja Henrika od Navarre, budućeg kralja Henrika IV, za Margaretu Valois, dogodio se pokolj Hugenota na dan svetog Bartolomeja, koji je počevši od 24. kolovoza, u cijeloj zemlji potrajao nekoliko dana.
+1	Kolovoza	kolovoz	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	34	obl	_	_
+2	1572.	1572.	ADJ	Mdo	NumType=Ord	1	amod	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	5	punct	_	_
+4	za	za	ADP	Sa	Case=Acc	5	case	_	_
+5	vrijeme	vrijeme	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	34	obl	_	_
+6	vladavine	vladavina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
+7	Karla	Karl	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
+8	IX	IX	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	flat	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	15	punct	_	_
+10	dok	dok	SCONJ	Cs	_	15	mark	_	_
+11	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+12	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	15	expl	_	_
+13	u	u	ADP	Sl	Case=Loc	14	case	_	_
+14	gradu	grad	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	15	obl	_	_
+15	nalazili	nalaziti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	34	advcl	_	_
+16	mnogi	mnogi	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	18	amod	_	_
+17	protestantski	protestantski	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	18	amod	_	_
+18	plemići	plemić	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	15	nsubj	_	_
+19	radi	radi	ADP	Sg	Case=Gen	20	case	_	_
+20	vjenčanja	vjenčanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	15	obl	_	_
+21	Henrika	Henrik	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
+22	od	od	ADP	Sg	Case=Gen	23	case	_	_
+23	Navarre	Navarra	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	Z	_	26	punct	_	_
+25	budućeg	budući	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	26	amod	_	_
+26	kralja	kralj	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	21	appos	_	_
+27	Henrika	Henrik	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	26	appos	_	_
+28	IV	IV	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	27	flat	_	SpaceAfter=No
+29	,	,	PUNCT	Z	_	26	punct	_	_
+30	za	za	ADP	Sa	Case=Acc	31	case	_	_
+31	Margaretu	Margareta	PROPN	Npfsa	Case=Acc|Gender=Fem|Number=Sing	20	nmod	_	_
+32	Valois	Valois	PROPN	Npfsa	Case=Acc|Gender=Fem|Number=Sing	31	flat	_	SpaceAfter=No
+33	,	,	PUNCT	Z	_	15	punct	_	_
+34	dogodio	dogoditi	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+35	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	34	expl	_	_
+36	pokolj	pokolj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	34	nsubj	_	_
+37	Hugenota	Hugenot	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	36	nmod	_	_
+38	na	na	ADP	Sa	Case=Acc	39	case	_	_
+39	dan	dan	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	34	obl	_	_
+40	svetog	svet	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	41	amod	_	_
+41	Bartolomeja	Bartolome	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	39	nmod	_	SpaceAfter=No
+42	,	,	PUNCT	Z	_	45	punct	_	_
+43	koji	koji	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	45	nsubj	_	_
+44	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux	_	_
+45	počevši	početi	ADV	Rr	Tense=Past|VerbForm=Conv	41	acl	_	_
+46	od	od	ADP	Sg	Case=Gen	48	case	_	_
+47	24.	24.	ADJ	Mdo	NumType=Ord	48	amod	_	_
+48	kolovoza	kolovoz	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	45	obl	_	SpaceAfter=No
+49	,	,	PUNCT	Z	_	45	punct	_	_
+50	u	u	ADP	Sl	Case=Loc	52	case	_	_
+51	cijeloj	cijel	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	52	amod	_	_
+52	zemlji	zemlja	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	53	obl	_	_
+53	potrajao	potrajati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	34	conj	_	_
+54	nekoliko	nekoliko	ADV	Rgp	Degree=Pos|PronType=Ind	55	advmod	_	_
+55	dana	dan	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	53	obl	_	SpaceAfter=No
+56	.	.	PUNCT	Z	_	34	punct	_	_
+
+# sent_id = 8
+# text = Za vrijeme Fronde, Parižani su se pobunili te je kraljevska obitelj 1648. napustila grad.
+1	Za	za	ADP	Sa	Case=Acc	2	case	_	_
+2	vrijeme	vrijeme	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	8	obl	_	_
+3	Fronde	Fronda	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	2	punct	_	_
+5	Parižani	Parižanin	PROPN	Npmpn	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	_
+6	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	8	expl	_	_
+8	pobunili	pobuniti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	te	te	CCONJ	Cc	_	14	cc	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+11	kraljevska	kraljevski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	obitelj	obitelj	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	14	nsubj	_	_
+13	1648.	1648.	ADJ	Mdo	NumType=Ord	14	amod	_	_
+14	napustila	napustiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
+15	grad	grad	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Z	_	8	punct	_	_
+
+# sent_id = 9
+# text = Kralj Luj XIV kraljevski dvor je 1628. trajno preselio u Versailles.
+1	Kralj	kralj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+2	Luj	Luj	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
+3	XIV	XIV	ADJ	Npmsn	Case=Nom|Gender=Masc|Number=Sing	2	flat	_	_
+4	kraljevski	kraljevski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	dvor	dvor	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	9	obj	_	_
+6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+7	1628.	1628.	ADJ	Mdo	NumType=Ord	9	amod	_	_
+8	trajno	trajno	ADV	Rgp	Degree=Pos	9	advmod	_	_
+9	preselio	preseliti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+10	u	u	ADP	Sa	Case=Acc	11	case	_	_
+11	Versailles	Versailles	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	9	punct	_	_
+
+# sent_id = 10
+# text = Stotinu godina kasnije, Pariz je bio glavna pozornica Francuske revolucije, s padom Bastille 14. srpnja, 1789. i ukidanjem monarhije u rujnu 1792.
+1	Stotinu	stotina	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	9	nmod	_	_
+2	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	1	nmod	_	_
+3	kasnije	kasno	ADV	Rgc	Degree=Cmp	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	1	punct	_	_
+5	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+7	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	cop	_	_
+8	glavna	glavni	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
+9	pozornica	pozornica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+10	Francuske	francuski	ADJ	Npfsg	Case=Gen|Gender=Fem|Number=Sing	11	amod	_	_
+11	revolucije	revolucija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	14	punct	_	_
+13	s	sa	ADP	Si	Case=Ins	14	case	_	_
+14	padom	pad	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	9	nmod	_	_
+15	Bastille	Bastilla	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	14	nmod	_	_
+16	14.	14.	ADJ	Mdo	NumType=Ord	17	amod	_	_
+17	srpnja	srpanj	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	19	punct	_	_
+19	1789.	1789.	ADJ	Mdo	NumType=Ord	17	amod	_	_
+20	i	i	CCONJ	Cc	_	21	cc	_	_
+21	ukidanjem	ukidanje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	14	conj	_	_
+22	monarhije	monarhija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
+23	u	u	ADP	Sl	Case=Loc	24	case	_	_
+24	rujnu	rujan	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	21	nmod	_	_
+25	1792.	1792.	ADJ	Mdo	NumType=Ord	24	amod	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = croatian-set-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Devetnaesto stoljeće
+1	Devetnaesto	devetnaesti	ADJ	Mlonsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	stoljeće	stoljeće	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1629,15 +1955,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dvadeseto stoljeće[uredi | uredi kôd]
+# text = Dvadeseto stoljeće
 1	Dvadeseto	dvadeseti	ADJ	Mlonsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
 2	stoljeće	stoljeće	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2062,7 +2382,7 @@
 27	oko	oko	ADP	Sg	Case=Gen	29	case	_	_
 28	sjeveroistočnih	sjeveroistočni	ADJ	Agpnpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur	29	amod	_	_
 29	predgrađa	predgrađe	NOUN	Ncnpg	Case=Gen|Gender=Neut|Number=Plur	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	Z	_	9	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	Z	_	9	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2070,15 +2390,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dvadesetprvo stoljeće[uredi | uredi kôd]
+# text = Dvadesetprvo stoljeće
 1	Dvadesetprvo	dvadesetprvi	ADJ	Mlonsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
 2	stoljeće	stoljeće	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2379,13 +2693,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Stanovništvo[uredi | uredi kôd]
-1	Stanovništvo[	stanovništvo[	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Stanovništvo
+1	Stanovništvo	stanovništvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2560,15 +2869,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gustoća naseljenosti[uredi | uredi kôd]
+# text = Gustoća naseljenosti
 1	Gustoća	gustoća	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	naseljenosti	naseljenost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
-7	kôd	kôd	ADP	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2730,15 +3033,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pariška aglomeracija[uredi | uredi kôd]
+# text = Pariška aglomeracija
 1	Pariška	pariški	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	aglomeracija	aglomeracija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2958,14 +3255,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Imigracija[uredi | uredi kôd]
+# text = Imigracija
 1	Imigracija	imigracija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3194,14 +3485,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Uprava[uredi | uredi kôd]
+# text = Uprava
 1	Uprava	uprava	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3270,15 +3555,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Prijestolnica Francuske[uredi | uredi kôd]
+# text = Prijestolnica Francuske
 1	Prijestolnica	prijestolnica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	Francuske	Francuska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3323,6 +3602,47 @@
 20	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	18	nsubj	_	SpaceAfter=No
 21	.	.	PUNCT	Z	_	8	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Predsjednik Francuske boravi u Elizejskoj palači u 8. arondismanu, dok premijer ima sjedište u Hôtel Matignon u 7. arondismanu.
+1	Predsjednik	predsjednik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	Francuske	Francuska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
+3	boravi	boraviti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	u	u	ADP	Sl	Case=Loc	6	case	_	_
+5	Elizejskoj	elizejski	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	palači	palača	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	3	obl	_	_
+7	u	u	ADP	Sl	Case=Loc	9	case	_	_
+8	8.	8.	ADJ	Mdo	NumType=Ord	9	amod	_	_
+9	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	13	punct	_	_
+11	dok	dok	SCONJ	Cs	_	13	cc	_	_
+12	premijer	premijer	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	_
+13	ima	imati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+14	sjedište	sjedište	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	_
+15	u	u	ADP	Sl	Case=Loc	16	case	_	_
+16	Hôtel	Hôtel	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	13	obl	_	_
+17	Matignon	Matignon	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	16	flat	_	_
+18	u	u	ADP	Sl	Case=Loc	20	case	_	_
+19	7.	7.	ADJ	Mdo	NumType=Ord	20	amod	_	_
+20	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 4
+# text = Vladina ministarstva locirana su u raznim dijelovima grada, mnoga u 7. arondismanu.
+1	Vladina	vladin	ADJ	Aspfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur|VerbForm=Part|Voice=Pass	2	amod	_	_
+2	ministarstva	ministarstvo	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	3	nsubj	_	_
+3	locirana	locirati	ADJ	Appnpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+4	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+5	u	u	ADP	Sl	Case=Loc	7	case	_	_
+6	raznim	razni	ADJ	Agpmply	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	7	amod	_	_
+7	dijelovima	dio	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	3	obl	_	_
+8	grada	grad	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	13	punct	_	_
+10	mnoga	mnogi	ADV	Rgp	Degree=Pos	13	advmod	_	_
+11	u	u	ADP	Sl	Case=Loc	13	case	_	_
+12	7.	7.	ADJ	Mdo	NumType=Ord	13	amod	_	_
+13	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3342,7 +3662,7 @@
 10	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 2
-# text = Gornji dom, ili Senat, smješten je u Palais du Luxembourg u 6. arondismanu, dok je značajniji donji dom, nacionalna skupština, u
+# text = Gornji dom, ili Senat, smješten je u Palais du Luxembourg u 6. arondismanu, dok je značajniji donji dom, nacionalna skupština, u Palais Bourbonu, u 7. arondismanu.
 1	Gornji	gornji	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	dom	dom	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	Z	_	5	punct	_	_
@@ -3353,13 +3673,13 @@
 8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 9	u	u	ADP	Sl	Case=Loc	10	case	_	_
 10	Palais	Palais	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	obl	_	_
-11	du	du	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	10	flat	_	_
+11	du	du	PROPN	Xf	Case=Loc|Gender=Masc|Number=Sing	10	flat	_	_
 12	Luxembourg	Luxembourg	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	10	flat	_	_
 13	u	u	ADP	Sl	Case=Loc	15	case	_	_
 14	6.	6.	ADJ	Mdo	NumType=Ord	15	amod	_	_
 15	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
-16	,	,	PUNCT	Z	_	24	punct	_	_
-17	dok	dok	SCONJ	Cs	_	24	cc	_	_
+16	,	,	PUNCT	Z	_	19	punct	_	_
+17	dok	dok	SCONJ	Cs	_	27	cc	_	_
 18	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
 19	značajniji	značajan	ADJ	Agcmsny	Case=Nom|Definite=Def|Degree=Cmp|Gender=Masc|Number=Sing	21	amod	_	_
 20	donji	donji	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
@@ -3368,7 +3688,39 @@
 23	nacionalna	nacionalan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	24	amod	_	_
 24	skupština	skupština	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	21	appos	_	SpaceAfter=No
 25	,	,	PUNCT	Z	_	24	punct	_	_
-26	u	u	ADP	Sl	Case=Loc	7	case	_	SpacesAfter=\s\n
+26	u	u	ADP	Sl	Case=Loc	27	case	_	SpacesAfter=\s\n
+27	Palais	Palais	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	21	nmod	_	_
+28	Bourbonu	Bourbon	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	27	flat	_	SpaceAfter=No
+29	,	,	PUNCT	Z	_	32	punct	_	_
+30	u	u	ADP	Sl	Case=Loc	32	case	_	_
+31	7.	7.	ADJ	Mdo	NumType=Ord	32	amod	_	_
+32	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 3
+# text = Predsjednik senata, druga najviša funkcija nakon predsjednika republike, ima ured u Petit Luxembourg, manjoj palači aneksu palače Luxembourg.
+1	Predsjednik	predsjednik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+2	senata	senat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	6	punct	_	_
+4	druga	drugi	ADJ	Mlofsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+5	najviša	najviši	ADJ	Agsfsny	Case=Nom|Definite=Def|Degree=Sup|Gender=Fem|Number=Sing	6	amod	_	_
+6	funkcija	funkcija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	_
+7	nakon	nakon	ADP	Sg	Case=Gen	8	case	_	_
+8	predsjednika	predsjednik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
+9	republike	republika	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	6	punct	_	_
+11	ima	imati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+12	ured	ured	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	obj	_	_
+13	u	u	ADP	Sl	Case=Loc	14	case	_	_
+14	Petit	Petit	PROPN	Npmsl	Case=Nom|Gender=Masc|Number=Sing	12	nmod	_	_
+15	Luxembourg	Luxembourg	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	14	flat	_	SpaceAfter=No
+16	,	,	PUNCT	Z	_	18	punct	_	_
+17	manjoj	mali	ADJ	Agcfsly	Case=Loc|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	18	amod	_	_
+18	palači	palača	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	14	appos	_	_
+19	aneksu	aneks	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	18	nmod	_	_
+20	palače	palača	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	18	nmod	_	_
+21	Luxembourg	Luxembourg	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	20	appos	_	SpaceAfter=No
+22	.	.	PUNCT	Z	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3487,15 +3839,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gradska vlada[uredi | uredi kôd]
+# text = Gradska vlada
 1	Gradska	gradski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	vlada	vlada	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3710,14 +4056,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Općinski uredi[uredi | uredi kôd]
+# text = Općinski uredi
 1	Općinski	općinski	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
-2	uredi[	uredi[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	appos	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -3769,6 +4110,333 @@
 18	gradonačelnika	gradonačelnik	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	17	obj	_	_
 19	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = croatian-set-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = U srednjovjekovno doba, Parizom je upravljala općina koju su birali trgovci, čiji je glavar bio predstojnik trgovaca.
+1	U	u	ADP	Sa	Case=Acc	3	case	_	SpacesBefore=\n
+2	srednjovjekovno	srednjovjekovni	ADJ	Agpnsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	doba	doba	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	3	punct	_	_
+5	Parizom	pariza	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	7	obl	_	_
+6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	upravljala	upravljati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	općina	općina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+9	koju	koji	DET	Pi-fsa	Case=Acc|Gender=Fem|Number=Sing|PronType=Int,Rel	11	obj	_	_
+10	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	birali	birati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	8	acl	_	_
+12	trgovci	trgovac	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	11	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	18	punct	_	_
+14	čiji	čiji	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|Poss=Yes|PronType=Int,Rel	16	det	_	_
+15	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
+16	glavar	glavar	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
+17	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	18	cop	_	_
+18	predstojnik	predstojnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	12	acl	_	_
+19	trgovaca	trgovac	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 2
+# text = Osim što je regulirao gradski promet robom, predstojnik je bio odgovoran i za neke javne dužnosti kao nadgledanje gradskih zidina i čišćenje ulica.
+1	Osim	osim	SCONJ	Cs	_	4	mark	_	_
+2	što	što	SCONJ	Cs	_	1	fixed	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	regulirao	regulirati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	12	advcl	_	_
+5	gradski	gradski	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	promet	promet	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	_
+7	robom	roba	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	4	punct	_	_
+9	predstojnik	predstojnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+11	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+12	odgovoran	odgovoran	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
+13	i	i	PART	Cc	_	17	discourse	_	_
+14	za	za	ADP	Sa	Case=Acc	17	case	_	_
+15	neke	neki	DET	Pi-fpa	Case=Acc|Gender=Fem|Number=Plur|PronType=Ind	17	det	_	_
+16	javne	javan	ADJ	Agpfpay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	17	amod	_	_
+17	dužnosti	dužnost	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	12	obl	_	_
+18	kao	kao	SCONJ	Cs	_	19	case	_	_
+19	nadgledanje	nadgledanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	17	nmod	_	_
+20	gradskih	gradski	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	21	amod	_	_
+21	zidina	zidin	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	19	nmod	_	_
+22	i	i	CCONJ	Cc	_	23	cc	_	_
+23	čišćenje	čišćenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	19	conj	_	_
+24	ulica	ulica	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	23	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	Z	_	12	punct	_	_
+
+# sent_id = 3
+# text = Kreiranje pariškog civilnog predstojnika u 13. stoljeću, znatno je smanjilo je dužnosti i ovlasti predstojnika trgovaca.
+1	Kreiranje	kreiranje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	_
+2	pariškog	pariški	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+3	civilnog	civilan	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	predstojnika	predstojnik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+5	u	u	ADP	Sl	Case=Loc	7	case	_	_
+6	13.	13.	ADJ	Mdo	NumType=Ord	7	amod	_	_
+7	stoljeću	stoljeće	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	1	punct	_	_
+9	znatno	znatno	ADV	Rgp	Degree=Pos	11	advmod	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	smanjilo	smanjiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+12	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+13	dužnosti	dužnost	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	11	obj	_	_
+14	i	i	CCONJ	Cc	_	15	cc	_	_
+15	ovlasti	ovlast	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	13	conj	_	_
+16	predstojnika	predstojnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	15	nmod	_	_
+17	trgovaca	trgovac	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	11	punct	_	_
+
+# sent_id = 4
+# text = Kao direktni predstavnik kralja, u ulozi koja donekle podsjeća na prefekta kasnijih godina, predstojnik (prévôt) Pariza nadgledao je primjenu i izvršenje zakona i reda u gradu i okolnoj prévôté (okrugu) iz svog ureda u Grand Châtelet.
+1	Kao	kao	SCONJ	Cs	_	3	case	_	_
+2	direktni	direktan	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	predstavnik	predstavnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	21	obl	_	_
+4	kralja	kralj	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	Z	_	7	punct	_	_
+6	u	u	ADP	Sl	Case=Loc	7	case	_	_
+7	ulozi	uloga	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	3	nmod	_	_
+8	koja	koji	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	10	nsubj	_	_
+9	donekle	donekle	ADV	Rgp	Degree=Pos	10	advmod	_	_
+10	podsjeća	podsjećati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+11	na	na	ADP	Sa	Case=Acc	12	case	_	_
+12	prefekta	prefekt	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	10	obl	_	_
+13	kasnijih	kasan	ADJ	Agcfpgy	Case=Gen|Definite=Def|Degree=Cmp|Gender=Fem|Number=Plur	14	amod	_	_
+14	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	3	punct	_	_
+16	predstojnik	predstojnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	21	nsubj	_	_
+17	(	(	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+18	prévôt	prévôt	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	16	appos	_	SpaceAfter=No
+19	)	)	PUNCT	Z	_	18	punct	_	_
+20	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	_
+21	nadgledao	nadgledati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+22	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
+23	primjenu	primjena	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	21	obj	_	_
+24	i	i	CCONJ	Cc	_	25	cc	_	_
+25	izvršenje	izvršenje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	23	conj	_	_
+26	zakona	zakon	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	25	nmod	_	_
+27	i	i	CCONJ	Cc	_	28	cc	_	_
+28	reda	red	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	26	conj	_	_
+29	u	u	ADP	Sl	Case=Loc	30	case	_	_
+30	gradu	grad	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	26	nmod	_	_
+31	i	i	CCONJ	Cc	_	33	cc	_	_
+32	okolnoj	okolni	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	33	amod	_	_
+33	prévôté	prévôt	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	30	conj	_	_
+34	(	(	PUNCT	Z	_	35	punct	_	SpaceAfter=No
+35	okrugu	okrug	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	33	appos	_	SpaceAfter=No
+36	)	)	PUNCT	Z	_	35	punct	_	_
+37	iz	iz	ADP	Sg	Case=Gen	39	case	_	_
+38	svog	svoj	DET	Px-msg	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	39	det	_	_
+39	ureda	ured	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	21	obl	_	_
+40	u	u	ADP	Sl	Case=Loc	41	case	_	_
+41	Grand	Grand	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	39	nmod	_	_
+42	Châtelet	Châtelet	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	41	flat	_	SpaceAfter=No
+43	.	.	PUNCT	Z	_	21	punct	_	_
+
+# sent_id = 5
+# text = Mnoge ovlasti iz ureda oba predstojnika prebačene su nakon osnivanja 1667. na ured generalnog namjesnika policije.
+1	Mnoge	mnogi	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
+2	ovlasti	ovlast	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	7	nsubj	_	_
+3	iz	iz	ADP	Sg	Case=Gen	4	case	_	_
+4	ureda	ured	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+5	oba	oba	NUM	Mls	NumType=Mult	6	nummod	_	_
+6	predstojnika	predstojnik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+7	prebačene	prebačiti	ADJ	Appfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+8	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+9	nakon	nakon	ADP	Sg	Case=Gen	10	case	_	_
+10	osnivanja	osnivanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	7	obl	_	_
+11	1667.	1667.	ADJ	Mdo	NumType=Ord	10	amod	_	_
+12	na	na	ADP	Sa	Case=Acc	13	case	_	_
+13	ured	ured	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obl	_	_
+14	generalnog	generalan	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	namjesnika	namjesnik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	_
+16	policije	policija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 6
+# text = Stoljećima, prévôt i upravitelji Châteleta sukobljavali su se s Hôtel de Ville oko jurisdikcija; tj. s gradskom upravom koja je obuhvaćala i quartiniers, od kojih svaki odgovoran za jednu od šesnaest četvrti (koje su bile podijeljene na četiri cinquantaines, svaka sa svojim cinquantainier, i dalje podijeljenih na dizaines, kojima su upravljali dizainiers):
+1	Stoljećima	stoljeće	NOUN	Ncnpi	Case=Ins|Gender=Neut|Number=Plur	7	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Z	_	1	punct	_	_
+3	prévôt	prévôt	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+4	i	i	CCONJ	Cc	_	5	cc	_	_
+5	upravitelji	upravitelj	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+6	Châteleta	Châtelet	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+7	sukobljavali	sukobljavati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+9	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
+10	s	sa	ADP	Si	Case=Ins	11	case	_	_
+11	Hôtel	Hôtel	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	7	obl	_	_
+12	de	de	X	Xf	_	11	compound	_	_
+13	Ville	Ville	X	Xf	_	11	compound	_	_
+14	oko	oko	ADP	Sg	Case=Gen	15	case	_	_
+15	jurisdikcija	jurisdikcija	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	7	obl	_	SpaceAfter=No
+16	;	;	PUNCT	Z	_	20	punct	_	_
+17	tj.	tj.	PART	Y	_	20	discourse	_	_
+18	s	sa	ADP	Si	Case=Ins	20	case	_	_
+19	gradskom	gradski	ADJ	Agpfsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	_
+20	upravom	uprava	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	11	appos	_	_
+21	koja	koji	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	23	nsubj	_	_
+22	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
+23	obuhvaćala	obuhvaćati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	20	acl	_	_
+24	i	i	PART	Qo	_	25	discourse	_	_
+25	quartiniers	quartiniers	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No
+26	,	,	PUNCT	Z	_	30	punct	_	_
+27	od	od	ADP	Sg	Case=Gen	28	case	_	_
+28	kojih	koji	DET	Pi-mpg	Case=Gen|Gender=Masc|Number=Plur|PronType=Int,Rel	30	obl	_	_
+29	svaki	svaki	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Tot	30	nsubj	_	_
+30	odgovoran	odgovoran	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	25	acl	_	_
+31	za	za	ADP	Sa	Case=Acc	32	case	_	_
+32	jednu	jedan	NUM	Mlcfsa	Case=Acc|Gender=Fem|Number=Sing|NumType=Card	35	nummod	_	_
+33	od	od	ADP	Sg	Case=Gen	35	case	_	_
+34	šesnaest	šesnaest	NUM	Mlc	NumType=Card	35	nummod	_	_
+35	četvrti	četvrt	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	30	obl	_	_
+36	(	(	PUNCT	Z	_	40	punct	_	SpaceAfter=No
+37	koje	koji	DET	Pi-fpn	Case=Nom|Gender=Fem|Number=Plur|PronType=Int,Rel	40	nsubj	_	_
+38	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	40	aux	_	_
+39	bile	biti	AUX	Vap-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	40	aux	_	_
+40	podijeljene	podijeliti	ADJ	Appfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	35	acl	_	_
+41	na	na	ADP	Sa	Case=Acc	43	case	_	_
+42	četiri	četiri	NUM	Mlc	NumType=Card	43	nummod	_	_
+43	cinquantaines	cinquantaines	NOUN	Xf	_	40	obl	_	SpaceAfter=No
+44	,	,	PUNCT	Z	_	40	punct	_	_
+45	svaka	svaki	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Tot	43	conj	_	_
+46	sa	sa	ADP	Si	Case=Ins	48	case	_	_
+47	svojim	svoj	DET	Px-mpi	Case=Ins|Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	48	det	_	_
+48	cinquantainier	cinquantainier	NOUN	Xf	_	40	obl	_	SpaceAfter=No
+49	,	,	PUNCT	Z	_	52	punct	_	_
+50	i	i	CCONJ	Cc	_	52	cc	_	_
+51	dalje	daleko	ADV	Rgc	Degree=Cmp	52	advmod	_	_
+52	podijeljenih	podijeliti	ADJ	Appmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	43	acl	_	_
+53	na	na	ADP	Sa	Case=Acc	54	case	_	_
+54	dizaines	dizaines	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	52	obl	_	SpaceAfter=No
+55	,	,	PUNCT	Z	_	58	punct	_	_
+56	kojima	koji	DET	Pi-mpi	Case=Ins|Gender=Masc|Number=Plur|PronType=Int,Rel	58	obl	_	_
+57	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	58	aux	_	_
+58	upravljali	upravljati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	54	acl	_	_
+59	dizainiers	dizainiers	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	58	nsubj	_	SpaceAfter=No
+60	)	)	PUNCT	Z	_	40	punct	_	SpaceAfter=No
+61	:	:	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = croatian-set-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Svaki od tih ljudi bili su načelno izabrani od lokalnih buržuja.
+1	Svaki	svaki	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Tot	4	det	_	_
+2	od	od	ADP	Sg	Case=Gen	4	case	_	_
+3	tih	taj	DET	Pd-mpg	Case=Gen|Gender=Masc|Number=Plur|PronType=Dem	4	det	_	_
+4	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	8	nsubj	_	_
+5	bili	biti	AUX	Vap-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+6	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	načelno	načelno	ADV	Rgp	Degree=Pos	8	advmod	_	_
+8	izabrani	izabrati	ADJ	Appmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+9	od	od	ADP	Sg	Case=Gen	11	case	_	_
+10	lokalnih	lokalan	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	11	amod	_	_
+11	buržuja	buržuja	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	8	punct	_	_
+
+# sent_id = 2
+# text = U svako doba, prema tome, 336 ljudi dijelilo je administrativnu odgovornost za čistoću i održavanje ulica, za javno zdravstvo, zakon i red. Quartiniers održavali su službene liste bourgeois de Paris, lokalne izbore, mogli su nametnuti globe za prekršaje lokalnih propisa, a imali su i ulogu u poreznom sistemu.
+1	U	u	ADP	Sa	Case=Acc	3	case	_	_
+2	svako	svaki	DET	Pi-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	3	det	_	_
+3	doba	doba	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	10	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	6	punct	_	_
+5	prema	prema	ADP	Sl	Case=Loc	6	case	_	_
+6	tome	taj	DET	Pd-nsl	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	10	parataxis	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	6	punct	_	_
+8	336	336	NUM	Mdc	NumType=Card	9	nummod	_	_
+9	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	10	nsubj	_	_
+10	dijelilo	dijeliti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+11	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+12	administrativnu	administrativan	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	odgovornost	odgovornost	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	10	obj	_	_
+14	za	za	ADP	Sa	Case=Acc	15	case	_	_
+15	čistoću	čistoća	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	13	nmod	_	_
+16	i	i	CCONJ	Cc	_	17	cc	_	_
+17	održavanje	održavanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	15	conj	_	_
+18	ulica	ulica	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	15	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	Z	_	22	punct	_	_
+20	za	za	ADP	Sa	Case=Acc	22	case	_	_
+21	javno	javan	ADJ	Agpnsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	22	amod	_	_
+22	zdravstvo	zdravstvo	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	15	conj	_	SpaceAfter=No
+23	,	,	PUNCT	Z	_	24	punct	_	_
+24	zakon	zakon	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	15	conj	_	_
+25	i	i	CCONJ	Cc	_	26	cc	_	_
+26	red.	red.	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	15	conj	_	_
+27	Quartiniers	Quartiniers	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	26	appos	_	_
+28	održavali	održavati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	10	conj	_	_
+29	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
+30	službene	služben	ADJ	Agpfpay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	31	amod	_	_
+31	liste	lista	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	28	obj	_	_
+32	bourgeois	bourgeois	X	Xf	_	31	nmod	_	_
+33	de	de	X	Xf	_	32	flat	_	_
+34	Paris	Paris	X	Xf	_	32	flat	_	SpaceAfter=No
+35	,	,	PUNCT	Z	_	37	punct	_	_
+36	lokalne	lokalan	ADJ	Agpmpay	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	37	amod	_	_
+37	izbore	izbor	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	31	conj	_	SpaceAfter=No
+38	,	,	PUNCT	Z	_	39	punct	_	_
+39	mogli	moći	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	10	conj	_	_
+40	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	aux	_	_
+41	nametnuti	nametnuti	VERB	Vmn	VerbForm=Inf	39	xcomp	_	_
+42	globe	globa	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	41	obj	_	_
+43	za	za	ADP	Sa	Case=Acc	44	case	_	_
+44	prekršaje	prekršaj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	42	nmod	_	_
+45	lokalnih	lokalan	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	46	amod	_	_
+46	propisa	propis	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	44	nmod	_	SpaceAfter=No
+47	,	,	PUNCT	Z	_	49	punct	_	_
+48	a	a	CCONJ	Cc	_	49	cc	_	_
+49	imali	imati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	10	conj	_	_
+50	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	aux	_	_
+51	i	i	PART	Qo	_	52	discourse	_	_
+52	ulogu	uloga	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	49	obj	_	_
+53	u	u	ADP	Sl	Case=Loc	55	case	_	_
+54	poreznom	porezni	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	55	amod	_	_
+55	sistemu	sistem	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	52	nmod	_	SpaceAfter=No
+56	.	.	PUNCT	Z	_	10	punct	_	_
+
+# sent_id = 3
+# text = Sastajali su se u Hôtel de Ville radi vijećanja o pitanjima opće gradske važnosti i svake bi godine izabrali osam među "najistaknutijim stanovnicima četvrti", koji bi zajedno s drugim lokalnim službenicima birali gradski savjet.
+1	Sastajali	sastajati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	_
+3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	1	expl	_	_
+4	u	u	ADP	Sl	Case=Loc	5	case	_	_
+5	Hôtel	Hôtel	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	obl	_	_
+6	de	de	X	Xf	_	5	flat	_	_
+7	Ville	Ville	PROPN	Npmsl	_	5	flat	_	_
+8	radi	radi	ADP	Sg	Case=Gen	9	case	_	_
+9	vijećanja	vijećanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	obl	_	_
+10	o	o	ADP	Sl	Case=Loc	11	case	_	_
+11	pitanjima	pitanje	NOUN	Ncnpl	Case=Loc|Gender=Neut|Number=Plur	9	nmod	_	_
+12	opće	opći	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+13	gradske	gradski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	važnosti	važnost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
+15	i	i	CCONJ	Cc	_	19	cc	_	_
+16	svake	svaki	DET	Pi-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Tot	18	det	_	_
+17	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
+18	godine	godina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	19	obl	_	_
+19	izabrali	izabrati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+20	osam	osam	NUM	Mlc	NumType=Card	19	obj	_	_
+21	među	među	ADP	Si	Case=Ins	24	case	_	_
+22	"	"	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+23	najistaknutijim	istaknut	ADJ	Agsmply	Case=Loc|Definite=Def|Degree=Sup|Gender=Masc|Number=Plur	24	amod	_	_
+24	stanovnicima	stanovnik	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	19	obl	_	_
+25	četvrti	četvrt	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No
+26	"	"	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+27	,	,	PUNCT	Z	_	35	punct	_	_
+28	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	35	nsubj	_	_
+29	bi	biti	AUX	Vaa3p	Mood=Cnd|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	35	aux	_	_
+30	zajedno	zajedno	ADV	Rgp	Degree=Pos	35	advmod	_	_
+31	s	sa	ADP	Si	Case=Ins	34	case	_	_
+32	drugim	drugi	ADJ	Mlompi	Case=Ins|Degree=Pos|Gender=Masc|Number=Plur	34	amod	_	_
+33	lokalnim	lokalan	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	34	amod	_	_
+34	službenicima	službenik	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	35	obl	_	_
+35	birali	birati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	24	acl	_	_
+36	gradski	gradski	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	37	amod	_	_
+37	savjet	savjet	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	35	obj	_	SpaceAfter=No
+38	.	.	PUNCT	Z	_	1	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -4164,17 +4832,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Glavni grad regije Île-de-France[uredi | uredi kôd]
+# text = Glavni grad regije Île-de-France
 1	Glavni	glavni	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	regije	regija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 4	Île-de-France	Île-dE-France	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	3	appos	_	SpaceAfter=No
-5	[	[	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	parataxis	_	_
-9	kôd	kôd	NOUN	Sg	Case=Gen	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -4279,13 +4941,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Intercommunalité[uredi | uredi kôd]
-1	Intercommunalité[	intercommunalité[	X	Xf	_	2	amod	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Intercommunalité
+1	Intercommunalité	Intercommunalité	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -4431,13 +5088,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zdravstvo[uredi | uredi kôd]
-1	Zdravstvo[	zdravstvo[	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Zdravstvo
+1	Zdravstvo	zdravstvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -4540,15 +5192,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gradski prijevoz[uredi | uredi kôd]
+# text = Gradski prijevoz
 1	Gradski	gradski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	prijevoz	prijevoz	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5189,8 +5835,107 @@
 41	.	.	PUNCT	Z	_	6	punct	_	_
 
 # sent_id = 2
-# text = Pariz
-1	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n
+# text = Pariz ima opsežnu cestovnu mrežu s preko 2000 km autocesta.
+1	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpacesAfter=\s\n
+2	ima	imati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	opsežnu	opsežan	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+4	cestovnu	cestovan	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+5	mrežu	mreža	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	2	obj	_	_
+6	s	sa	ADP	Si	Case=Ins	9	case	_	_
+7	preko	preko	ADP	Sg	Case=Gen	8	case	_	_
+8	2000	2000	NUM	Mdc	NumType=Card	9	nummod	_	SpacesAfter= 
+9	km	km	NOUN	Y	_	2	obl	_	_
+10	autocesta	autocesta	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 3
+# text = Cestovnim putem, do Bruxellesa se putuje tri sata, Frankfurta šest, i do Barcelone dvanaest sati.
+1	Cestovnim	cestovan	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	putem	put	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	2	punct	_	_
+4	do	do	ADP	Sg	Case=Gen	5	case	_	_
+5	Bruxellesa	Bruxelles	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	7	obl	_	_
+6	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
+7	putuje	putovati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	tri	tri	NUM	Mlc	NumType=Card	9	nummod	_	_
+9	sata	sat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	11	punct	_	_
+11	Frankfurta	Frankfurt	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	9	conj	_	_
+12	šest	šest	NUM	Mlc	NumType=Card	16	orphan	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	16	punct	_	_
+14	i	i	CCONJ	Cc	_	16	cc	_	_
+15	do	do	ADP	Sg	Case=Gen	16	case	_	_
+16	Barcelone	Barcelona	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	7	conj	_	_
+17	dvanaest	dvanaest	NUM	Mlc	NumType=Card	18	nummod	_	_
+18	sati	sat	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	16	orphan	_	SpaceAfter=No
+19	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 4
+# text = Vlakom, London je udaljen samo 2 sata i 15 minuta, Bruxelles 1 sat i 22 minute (do 25 polazaka dnevno), Amsterdam 4 sata i 13 minuta (do 8 polazaka dnevno), Köln 3 sata i 51 minuta (6 polazaka dnevno), i Marseille, Bordeaux, i drugi gradovi na jugu Francuske 3 sata.
+1	Vlakom	vlak	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Z	_	1	punct	_	_
+3	London	London	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	udaljen	udaliti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+6	samo	samo	ADV	Rgp	Degree=Pos	8	advmod	_	_
+7	2	2	NUM	Mdc	NumType=Card	8	nummod	_	_
+8	sata	sat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	5	obl	_	_
+9	i	i	CCONJ	Cc	_	11	cc	_	_
+10	15	15	NUM	Mdc	NumType=Card	11	nummod	_	_
+11	minuta	minuta	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	13	punct	_	_
+13	Bruxelles	Bruxelles	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	8	conj	_	_
+14	1	1	NUM	Mdc	NumType=Card	15	nummod	_	_
+15	sat	sat	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	26	orphan	_	_
+16	i	i	CCONJ	Cc	_	18	cc	_	_
+17	22	22	NUM	Mdc	NumType=Card	18	nummod	_	_
+18	minute	minuta	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	conj	_	_
+19	(	(	PUNCT	Z	_	22	punct	_	SpaceAfter=No
+20	do	do	ADP	Sg	Case=Gen	22	case	_	_
+21	25	25	NUM	Mdc	NumType=Card	22	nummod	_	_
+22	polazaka	polazak	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	15	parataxis	_	_
+23	dnevno	dnevno	ADV	Rgp	Degree=Pos	22	advmod	_	SpaceAfter=No
+24	)	)	PUNCT	Z	_	22	punct	_	SpaceAfter=No
+25	,	,	PUNCT	Z	_	26	punct	_	_
+26	Amsterdam	Amsterdam	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	8	conj	_	_
+27	4	4	NUM	Mdc	NumType=Card	28	nummod	_	_
+28	sata	sat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	26	orphan	_	_
+29	i	i	CCONJ	Cc	_	31	cc	_	_
+30	13	13	NUM	Mdc	NumType=Card	31	nummod	_	_
+31	minuta	minuta	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	28	conj	_	_
+32	(	(	PUNCT	Z	_	35	punct	_	SpaceAfter=No
+33	do	do	ADP	Sg	Case=Gen	35	case	_	_
+34	8	8	NUM	Mdc	NumType=Card	35	nummod	_	_
+35	polazaka	polazak	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	28	parataxis	_	_
+36	dnevno	dnevno	ADV	Rgp	Degree=Pos	35	advmod	_	SpaceAfter=No
+37	)	)	PUNCT	Z	_	35	punct	_	SpaceAfter=No
+38	,	,	PUNCT	Z	_	39	punct	_	_
+39	Köln	Köln	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	28	conj	_	_
+40	3	3	NUM	Mdc	NumType=Card	41	nummod	_	_
+41	sata	sat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	39	orphan	_	_
+42	i	i	CCONJ	Cc	_	44	cc	_	_
+43	51	51	NUM	Mdc	NumType=Card	44	nummod	_	_
+44	minuta	minuta	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	41	conj	_	_
+45	(	(	PUNCT	Z	_	47	punct	_	SpaceAfter=No
+46	6	6	NUM	Mdc	NumType=Card	47	nummod	_	_
+47	polazaka	polazak	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	44	parataxis	_	_
+48	dnevno	dnevno	ADV	Rgp	Degree=Pos	47	advmod	_	SpaceAfter=No
+49	)	)	PUNCT	Z	_	47	punct	_	SpaceAfter=No
+50	,	,	PUNCT	Z	_	52	punct	_	_
+51	i	i	CCONJ	Cc	_	52	cc	_	_
+52	Marseille	Marseille	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	41	conj	_	SpaceAfter=No
+53	,	,	PUNCT	Z	_	54	punct	_	_
+54	Bordeaux	Bordeaux	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	52	conj	_	SpaceAfter=No
+55	,	,	PUNCT	Z	_	58	punct	_	_
+56	i	i	CCONJ	Cc	_	58	cc	_	_
+57	drugi	drugi	ADJ	Mlompn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	58	amod	_	_
+58	gradovi	grad	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	52	conj	_	_
+59	na	na	ADP	Sl	Case=Loc	60	case	_	_
+60	jugu	jug	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	58	nmod	_	_
+61	Francuske	Francuska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	60	nmod	_	_
+62	3	3	NUM	Mdc	NumType=Card	63	nummod	_	_
+63	sata	sat	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	52	nmod	_	SpaceAfter=No
+64	.	.	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5198,17 +5943,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vode i odvodni sustavi[uredi | uredi kôd]
-1	Vode	voda	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	6	nsubj	_	_
+# text = Vode i odvodni sustavi
+1	Vode	voda	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 2	i	i	CCONJ	Cc	_	4	cc	_	_
 3	odvodni	odvodni	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	4	amod	_	_
 4	sustavi	sustav	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-5	[	[	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	parataxis	_	_
-9	kôd	kôd	NOUN	Sg	Case=Gen	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5506,15 +6245,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Međunarodni odnosi[uredi | uredi kôd]
+# text = Međunarodni odnosi
 1	Međunarodni	međunarodni	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
 2	odnosi	odnos	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	appos	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	ADP	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5540,14 +6273,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bratimljeni grad[uredi | uredi kôd]
-1	Bratimljeni	bratimljen	ADJ	Appmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	amod	_	_
-2	grad[	grad[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	appos	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Bratimljeni grad
+1	Bratimljeni	bratimljen	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5555,15 +6283,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gradovi partneri[uredi | uredi kôd]
+# text = Gradovi partneri
 1	Gradovi	grad	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
 2	partneri	partner	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5571,13 +6293,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gospodarstvo[uredi | uredi kôd]
-1	Gospodarstvo[	gospodarstvo[	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Gospodarstvo
+1	Gospodarstvo	gospodarstvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -5992,14 +6709,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Turizam[uredi | uredi kôd]
+# text = Turizam
 1	Turizam	turizam	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6124,13 +6835,108 @@
 12	.	.	PUNCT	Z	_	3	punct	_	_
 
 # sent_id = 2
-# text = Najcjenjeniji gradski muzej Louvre, posjećuje
+# text = Najcjenjeniji gradski muzej Louvre, posjećuje preko 8 milijuna ljudi godišnje, što ga čini najposjećenijim svjetskim umjetničkim muzejem.
 1	Najcjenjeniji	cjenjen	ADJ	Agsmsny	Case=Nom|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	3	amod	_	_
 2	gradski	gradski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 3	muzej	muzej	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
 4	Louvre	Louvre	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	3	appos	_	SpaceAfter=No
-5	,	,	PUNCT	Z	_	6	punct	_	_
+5	,	,	PUNCT	Z	_	3	punct	_	_
 6	posjećuje	posjećivati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n
+7	preko	preko	ADP	Sg	Case=Gen	9	case	_	_
+8	8	8	NUM	Mdc	NumType=Card	9	nummod	_	_
+9	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	6	obl	_	_
+10	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	9	nmod	_	_
+11	godišnje	godišnje	ADV	Rgp	Degree=Pos	6	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	15	punct	_	_
+13	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	15	nsubj	_	_
+14	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
+15	čini	činiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
+16	najposjećenijim	posjećen	ADJ	Agsmsiy	Case=Ins|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	19	amod	_	_
+17	svjetskim	svjetski	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+18	umjetničkim	umjetnički	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	muzejem	muzej	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	15	xcomp	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 3
+# text = Još jedna od glavnih atrakcija gradske su crkve: Notre-Dame i Bazilika Sacré-Coeur svake godine primaju 12 i 8 milijuna posjetitelja.
+1	Još	još	ADV	Rgp	Degree=Pos	2	advmod	_	_
+2	jedna	jedan	NUM	Mlcfsn	Case=Nom|Gender=Fem|Number=Sing|NumType=Card	5	nummod	_	_
+3	od	od	ADP	Sg	Case=Gen	5	case	_	_
+4	glavnih	glavni	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	5	amod	_	_
+5	atrakcija	atrakcija	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	0	root	_	_
+6	gradske	gradski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+7	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	crkve	crkva	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	5	nsubj	_	SpaceAfter=No
+9	:	:	PUNCT	Z	_	16	punct	_	_
+10	Notre-Dame	Notre-dama	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Plur	16	nsubj	_	_
+11	i	i	CCONJ	Cc	_	12	cc	_	_
+12	Bazilika	bazilika	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	10	conj	_	_
+13	Sacré-Coeur	Sacré-cOeur	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	12	flat	_	_
+14	svake	svaki	DET	Pi-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Tot	15	det	_	_
+15	godine	godina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	16	obl	_	_
+16	primaju	primati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+17	12	12	NUM	Mdc	NumType=Card	20	nummod	_	_
+18	i	i	CCONJ	Cc	_	19	cc	_	_
+19	8	8	NUM	Mdc	NumType=Card	17	conj	_	_
+20	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	16	obj	_	_
+21	posjetitelja	posjetitelj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 4
+# text = Eiffelov toranj, najpoznatiju parišku znamenitost, posjećuje prosječno 6 milijuna ljudi godišnje, i do danas posjetilo ga je ukupno 200 milijuna ljudi.
+1	Eiffelov	Eiffelov	ADJ	Aspmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Poss=Yes	2	amod	_	_
+2	toranj	toranj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	6	punct	_	_
+4	najpoznatiju	poznat	ADJ	Agsfsay	Case=Acc|Definite=Def|Degree=Sup|Gender=Fem|Number=Sing	6	amod	_	_
+5	parišku	pariški	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	znamenitost	znamenitost	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	2	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	6	punct	_	_
+8	posjećuje	posjećivati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	prosječno	prosječno	ADV	Rgp	Degree=Pos	11	advmod	_	_
+10	6	6	NUM	Mdc	NumType=Card	11	compound	_	_
+11	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	12	nummod	_	_
+12	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	8	obj	_	_
+13	godišnje	godišnje	ADV	Rgp	Degree=Pos	8	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Z	_	18	punct	_	_
+15	i	i	CCONJ	Cc	_	18	cc	_	_
+16	do	do	ADP	Sg	Case=Gen	17	case	_	_
+17	danas	danas	ADV	Rgp	Degree=Pos	18	advmod	_	_
+18	posjetilo	posjetiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
+19	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	obj	_	_
+20	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
+21	ukupno	ukupno	ADV	Rgp	Degree=Pos	22	advmod	_	_
+22	200	200	NUM	Mdc	NumType=Card	23	nummod	_	_
+23	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	18	nsubj	_	_
+24	ljudi	čovjek	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	23	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	Z	_	8	punct	_	_
+
+# sent_id = 5
+# text = Disneyland Resort Paris velika je turistička atrakcija ne samo za posjetitelje Pariza već i za posjetitelje Europe, s 14 milijuna posjeta 2007. godine.
+1	Disneyland	Disneyland	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+2	Resort	Resort	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	compound	_	_
+3	Paris	Paris	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	compound	_	_
+4	velika	velik	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+5	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	turistička	turistički	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	atrakcija	atrakcija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+8	ne	ne	PART	Qz	Polarity=Neg	9	advmod	_	_
+9	samo	samo	ADV	Rgp	Degree=Pos	11	advmod	_	_
+10	za	za	ADP	Sa	Case=Acc	11	case	_	_
+11	posjetitelje	posjetitelj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	7	nmod	_	_
+12	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	_
+13	već	već	ADV	Rgp	Degree=Pos	16	cc	_	_
+14	i	i	CCONJ	Cc	_	16	discourse	_	_
+15	za	za	ADP	Sa	Case=Acc	16	case	_	_
+16	posjetitelje	posjetitelj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	11	conj	_	_
+17	Europe	Europa	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	21	punct	_	_
+19	s	sa	ADP	Si	Case=Ins	21	case	_	_
+20	14	14	NUM	Mdc	NumType=Card	21	nummod	_	_
+21	milijuna	milijun	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	_
+22	posjeta	posjet	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	21	nmod	_	_
+23	2007.	2007.	ADJ	Mdo	NumType=Ord	24	amod	_	_
+24	godine	godina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6384,14 +7190,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kultura[uredi | uredi kôd]
+# text = Kultura
 1	Kultura	kultura	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6399,14 +7199,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Gradski pejzaž[uredi | uredi kôd]
+# text = Gradski pejzaž
 1	Gradski	gradski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	pejzaž[	pejzaž[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	appos	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	pejzaž	pejzaž	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6414,14 +7209,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Arhitektura[uredi | uredi kôd]
+# text = Arhitektura
 1	Arhitektura	arhitektura	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6639,16 +7428,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Obale rijeke Seine[uredi | uredi kôd]
+# text = Obale rijeke Seine
 1	Obale	obala	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 2	rijeke	rijeka	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
-3	Seine	Seine	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	2	appos	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	appos	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	ADP	Sg	Case=Gen	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+3	Seine	Seine	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	2	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6761,17 +7544,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Četvrti i povijesna središta[uredi | uredi kôd]
-1	Četvrti	četvrt	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	amod	_	_
+# text = Četvrti i povijesna središta
+1	Četvrti	četvrt	ADJ	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	amod	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
 3	povijesna	povijesni	ADJ	Agpnpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur	1	conj	_	_
 4	središta	središte	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	appos	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	conj	_	_
-9	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6779,14 +7556,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Grad Pariz[uredi | uredi kôd]
+# text = Grad Pariz
 1	Grad	grad	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	Pariz[	Pariz[	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	appos	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	Pariz	Pariz	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6794,16 +7566,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = U zoni Pariza[uredi | uredi kôd]
+# text = U zoni Pariza
 1	U	u	ADP	Sl	Case=Loc	2	case	_	_
 2	zoni	zona	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	0	root	_	_
 3	Pariza	Pariz	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	appos	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Sg	Case=Gen	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -6811,16 +7577,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Spomenici i znamenitosti[uredi | uredi kôd]
+# text = Spomenici i znamenitosti
 1	Spomenici	spomenik	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
 3	znamenitosti	znamenitost	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7121,16 +7881,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Parkovi i vrtovi[uredi | uredi kôd]
+# text = Parkovi i vrtovi
 1	Parkovi	park	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
 3	vrtovi	vrt	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7215,18 +7969,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nekoliko ostalih velikih parkova kreacije su drugog carstva: bivši parkovi u predgrađima Montsouris, Parc des Buttes Chaumont, i Parc Monceau, kreacije su inženjera
+# text = Nekoliko ostalih velikih parkova kreacije su drugog carstva: bivši parkovi u predgrađima Montsouris, Parc des Buttes Chaumont, i Parc Monceau, kreacije su inženjera Napoleona III, Jeana-Charlesa Alphanda.
 1	Nekoliko	nekoliko	ADV	Rgp	Degree=Pos|PronType=Ind	4	advmod	_	_
 2	ostalih	ostali	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	4	amod	_	_
 3	velikih	velik	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	4	amod	_	_
-4	parkova	park	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	27	nsubj	_	_
+4	parkova	park	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	25	nsubj	_	_
 5	kreacije	kreacija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
-6	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
+6	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
 7	drugog	drugi	ADJ	Mlonsg	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	_
-8	carstva	carstvo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	27	nmod	_	SpaceAfter=No
-9	:	:	PUNCT	Z	_	27	punct	_	_
+8	carstva	carstvo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	SpaceAfter=No
+9	:	:	PUNCT	Z	_	25	punct	_	_
 10	bivši	bivši	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	11	amod	_	_
-11	parkovi	park	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	27	nsubj	_	_
+11	parkovi	park	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	25	nsubj	_	_
 12	u	u	ADP	Sl	Case=Loc	13	case	_	_
 13	predgrađima	predgrađo	NOUN	Ncnpl	Case=Loc|Gender=Neut|Number=Plur	11	nmod	_	_
 14	Montsouris	Montsouris	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	13	appos	_	SpaceAfter=No
@@ -7239,10 +7993,51 @@
 21	i	i	CCONJ	Cc	_	22	cc	_	_
 22	Parc	Parc	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	11	conj	_	_
 23	Monceau	Monceau	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	22	flat	_	SpaceAfter=No
-24	,	,	PUNCT	Z	_	27	punct	_	_
-25	kreacije	kreacija	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	27	nsubj	_	_
-26	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
-27	inženjera	inženjer	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\n
+24	,	,	PUNCT	Z	_	11	punct	_	_
+25	kreacije	kreacija	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
+26	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
+27	inženjera	inženjer	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	25	nmod	_	SpacesAfter=\s\n
+28	Napoleona	Napoleon	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	27	nmod	_	_
+29	III	III	PROPN	Mro	NumType=Ord	28	flat	_	SpaceAfter=No
+30	,	,	PUNCT	Z	_	31	punct	_	_
+31	Jeana-Charlesa	Jeana-charles	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	28	appos	_	_
+32	Alphanda	Alphand	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	31	flat	_	SpaceAfter=No
+33	.	.	PUNCT	Z	_	25	punct	_	_
+
+# sent_id = 2
+# text = Još jedan projekt kojeg je ostvario Baron Haussmann bilo je uređivanje pariške zapadne Bulonjske šume, dok je Bois de Vincennes, na istočnom kraju grada, slično uređena idućih godina.
+1	Još	još	ADV	Rgp	Degree=Pos	2	advmod	_	_
+2	jedan	jedan	NUM	Mlcmsn	Case=Nom|Gender=Masc|Number=Sing|NumType=Card	3	nummod	_	_
+3	projekt	projekt	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+4	kojeg	koji	DET	Pi-msay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing|PronType=Int,Rel	6	obj	_	_
+5	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	ostvario	ostvariti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	acl	_	_
+7	Baron	Baron	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+8	Haussmann	Haussmann	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	flat	_	_
+9	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	11	cop	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	uređivanje	uređivanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+12	pariške	pariški	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+13	zapadne	zapadni	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+14	Bulonjske	bulonjski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	šume	šuma	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	Z	_	29	punct	_	_
+17	dok	dok	SCONJ	Cs	_	29	cc	_	_
+18	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
+19	Bois	Bois	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	29	nsubj	_	_
+20	de	de	X	Xf	_	19	flat	_	_
+21	Vincennes	Vincennes	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	19	flat	_	SpaceAfter=No
+22	,	,	PUNCT	Z	_	25	punct	_	_
+23	na	na	ADP	Sl	Case=Loc	25	case	_	_
+24	istočnom	istočni	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	25	amod	_	_
+25	kraju	kraj	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	19	nmod	_	_
+26	grada	grad	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
+27	,	,	PUNCT	Z	_	25	punct	_	_
+28	slično	slično	ADV	Rgp	Degree=Pos	29	advmod	_	_
+29	uređena	urediti	ADJ	Appfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	11	conj	_	_
+30	idućih	idući	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	31	amod	_	_
+31	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	29	obl	_	SpaceAfter=No
+32	.	.	PUNCT	Z	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7302,14 +8097,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Glazba[uredi | uredi kôd]
+# text = Glazba
 1	Glazba	glazba	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	3	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7340,16 +8129,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Opera i kazalište[uredi | uredi kôd]
+# text = Opera i kazalište
 1	Opera	opera	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
 3	kazalište	kazalište	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7634,14 +8417,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Filmska umjetnost[uredi | uredi kôd]
+# text = Filmska umjetnost
 1	Filmska	filmski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	umjetnost[	umjetnost[	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	umjetnost	umjetnost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -7853,14 +8631,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Obrazovanje[uredi | uredi kôd]
+# text = Obrazovanje
 1	Obrazovanje	obrazovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8041,17 +8813,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Osnovno i srednje obrazovanje[uredi | uredi kôd]
+# text = Osnovno i srednje obrazovanje
 1	Osnovno	osnovan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
 3	srednje	srednji	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	1	conj	_	_
 4	obrazovanje	obrazovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	parataxis	_	_
-9	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8108,15 +8874,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Više obrazovanje[uredi | uredi kôd]
+# text = Više obrazovanje
 1	Više	visok	ADJ	Agcnsny	Case=Acc|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	2	amod	_	_
 2	obrazovanje	obrazovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8198,14 +8958,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sveučilišta[uredi | uredi kôd]
+# text = Sveučilišta
 1	Sveučilišta	sveučilište	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8588,14 +9342,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Grandes écoles[uredi | uredi kôd]
-1	Grandes	Grandes	X	Xf	_	3	amod	_	_
-2	écoles[	écoles[	X	Xf	_	3	amod	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+# text = Grandes écoles
+1	Grandes	grandes	X	Xf	_	2	compound	_	_
+2	écoles	écoles	X	Xf	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8669,7 +9418,7 @@
 40	.	.	PUNCT	Z	_	4	punct	_	_
 
 # sent_id = 3
-# text = Pariško područje ima veliki broj tehničkih škola, predvođenih prestižnim Pariškim tehnološkim institutom (ParisTech), koji sadrži nekoliko koledža kao
+# text = Pariško područje ima veliki broj tehničkih škola, predvođenih prestižnim Pariškim tehnološkim institutom (ParisTech), koji sadrži nekoliko koledža kao École Polytechnique, École des Mines, Télécom Paris, Arts et Métiers, i École des Ponts et Chaussées.
 1	Pariško	pariški	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
 2	područje	područje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
 3	ima	imati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -8691,7 +9440,81 @@
 19	sadrži	sadržati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
 20	nekoliko	nekoliko	ADV	Rgp	Degree=Pos|PronType=Ind	21	advmod	_	_
 21	koledža	koledž	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	19	obj	_	_
-22	kao	kao	SCONJ	Cs	_	3	mark	_	SpacesAfter=\s\n
+22	kao	kao	SCONJ	Cs	_	23	case	_	SpacesAfter=\s\n
+23	École	école	X	Xf	_	21	nmod	_	_
+24	Polytechnique	Polytechnique	X	Xf	_	23	flat	_	SpaceAfter=No
+25	,	,	PUNCT	Z	_	26	punct	_	_
+26	École	école	X	Xf	_	23	conj	_	_
+27	des	des	X	Xf	_	28	compound	_	_
+28	Mines	Mines	X	Xf	_	26	compound	_	SpaceAfter=No
+29	,	,	PUNCT	Z	_	30	punct	_	_
+30	Télécom	Télécom	X	Xf	_	23	conj	_	_
+31	Paris	Paris	X	Xf	_	30	compound	_	SpaceAfter=No
+32	,	,	PUNCT	Z	_	33	punct	_	_
+33	Arts	Arts	X	Xf	_	23	conj	_	_
+34	et	et	X	Xf	_	35	compound	_	_
+35	Métiers	Métiers	X	Xf	_	33	compound	_	SpaceAfter=No
+36	,	,	PUNCT	Z	_	38	punct	_	_
+37	i	i	CCONJ	Cc	_	38	cc	_	_
+38	École	école	NOUN	Xf	_	23	conj	_	_
+39	des	des	X	Xf	_	40	compound	_	_
+40	Ponts	ponts	X	Xf	_	38	appos	_	_
+41	et	et	X	Xf	_	40	compound	_	_
+42	Chaussées	Chaussées	X	Xf	_	40	compound	_	SpaceAfter=No
+43	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 4
+# text = Postoje također i mnoge poslovne škole, uključujući HEC, ESSEC, INSEAD, i ESCP Europe Europska škola menadžmenta.
+1	Postoje	postojati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	također	također	ADV	Rgp	Degree=Pos	1	advmod	_	_
+3	i	i	PART	Qo	_	6	discourse	_	_
+4	mnoge	mnogi	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	6	amod	_	_
+5	poslovne	poslovan	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	6	amod	_	_
+6	škole	škola	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	1	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	8	punct	_	_
+8	uključujući	uključivati	ADV	Rr	Tense=Pres|VerbForm=Conv	6	xcomp	_	_
+9	HEC	HEC	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	11	punct	_	_
+11	ESSEC	ESSEC	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	13	punct	_	_
+13	INSEAD	INSEAD	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Z	_	16	punct	_	_
+15	i	i	CCONJ	Cc	_	16	cc	_	SpacesAfter=\s\s
+16	ESCP	ESCP	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	conj	_	_
+17	Europe	Europa	PROPN	Npmsan	Case=Acc|Gender=Fem|Number=Plur	16	compound	_	_
+18	Europska	europski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	compound	_	_
+19	škola	škola	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	16	appos	_	_
+20	menadžmenta	menadžment	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	19	compound	_	SpaceAfter=No
+21	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 5
+# text = Iako je elitna upravna škola ENA preseljena u Strasbourg, škola političkih nauka Sciences-Po još se nalazi u Parizu na lijevoj obali u 7. arondismanu.
+1	Iako	iako	SCONJ	Cs	_	7	mark	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+3	elitna	elitan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+4	upravna	upravan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+5	škola	škola	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+6	ENA	ENA	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	5	appos	_	_
+7	preseljena	preseliti	ADJ	Appfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	advcl	_	_
+8	u	u	ADP	Sa	Case=Acc	9	case	_	_
+9	Strasbourg	Strasbourg	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	7	punct	_	_
+11	škola	škola	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	17	nsubj	_	_
+12	političkih	politički	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	13	amod	_	_
+13	nauka	nauka	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	11	nmod	_	_
+14	Sciences-Po	Sciences-po	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	13	appos	_	_
+15	još	još	ADV	Rgp	Degree=Pos	17	advmod	_	_
+16	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	17	expl	_	_
+17	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	u	u	ADP	Sl	Case=Loc	19	case	_	_
+19	Parizu	Pariz	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	17	obl	_	_
+20	na	na	ADP	Sl	Case=Loc	22	case	_	_
+21	lijevoj	lijev	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+22	obali	obala	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	17	obl	_	_
+23	u	u	ADP	Sl	Case=Loc	25	case	_	_
+24	7.	7.	ADJ	Mdo	NumType=Ord	25	amod	_	_
+25	arondismanu	arondisman	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	17	obl	_	SpaceAfter=No
+26	.	.	PUNCT	Z	_	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8836,14 +9659,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Knjižnice[uredi | uredi kôd]
+# text = Knjižnice
 1	Knjižnice	knjižnica	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8922,7 +9739,7 @@
 13	vojnicima	vojnik	NOUN	Ncmpd	Case=Dat|Gender=Masc|Number=Plur	10	nmod	_	_
 14	u	u	ADP	Sl	Case=Loc	15	case	_	_
 15	Francuskoj	Francuska	PROPN	Npfsl	Case=Loc|Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -8930,13 +9747,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sport[uredi | uredi kôd]
-1	Sport[	sport[	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-3	|	|	PUNCT	Z	_	4	punct	_	_
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+# text = Sport
+1	Sport	sport	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9278,14 +10090,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kuhinja[uredi | uredi kôd]
+# text = Kuhinja
 1	Kuhinja	kuhinja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	appos	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9403,7 +10209,7 @@
 21	.	.	PUNCT	Z	_	6	punct	_	_
 
 # sent_id = 2
-# text = Među najekskluzivnijima, Hôtel Ritz je otvoren 1898. na Place Vendôme, dok je Hôtel de Crillon
+# text = Među najekskluzivnijima, Hôtel Ritz je otvoren 1898. na Place Vendôme, dok je Hôtel de Crillon svoja vrata na sjevernoj strani trga Concorde otvorio 1909.
 1	Među	među	ADP	Si	Case=Ins	2	case	_	_
 2	najekskluzivnijima	ekskluzivnan	ADJ	Agsfpiy	Case=Ins|Definite=Def|Degree=Sup|Gender=Fem|Number=Plur	7	parataxis	_	SpaceAfter=No
 3	,	,	PUNCT	Z	_	2	punct	_	_
@@ -9414,13 +10220,22 @@
 8	1898.	1898.	ADJ	Mdo	NumType=Ord	7	amod	_	_
 9	na	na	ADP	Sl	Case=Loc	10	case	_	_
 10	Place	Place	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
-11	Vendôme	Vendôme	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	10	flat	_	SpaceAfter=No
-12	,	,	PUNCT	Z	_	15	punct	_	_
-13	dok	dok	SCONJ	Cs	_	15	cc	_	_
-14	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-15	Hôtel	Hôtel	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
-16	de	de	X	Xf	_	15	flat	_	_
-17	Crillon	Crillon	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	15	flat	_	SpacesAfter=\n
+11	Vendôme	Vendôme	PROPN	Npmsn	Case=Loc|Gender=Masc|Number=Sing	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	25	punct	_	_
+13	dok	dok	SCONJ	Cs	_	25	cc	_	_
+14	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
+15	Hôtel	Hôtel	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	25	nsubj	_	_
+16	de	de	X	Xf	Case=Nom|Gender=Masc|Number=Sing	15	flat	_	_
+17	Crillon	Crillon	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	16	flat	_	SpacesAfter=\s\n
+18	svoja	svoj	DET	Px-npa	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	19	det	_	_
+19	vrata	vrata	NOUN	Ncnpa	Case=Acc|Gender=Neut|Number=Plur	25	obj	_	_
+20	na	na	ADP	Sl	Case=Loc	22	case	_	_
+21	sjevernoj	sjeverni	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+22	strani	strana	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	25	obl	_	_
+23	trga	trg	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	22	nmod	_	_
+24	Concorde	Concorde	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	23	appos	_	_
+25	otvorio	otvoriti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	7	conj	_	_
+26	1909.	1909.	ADJ	Mdo	NumType=Ord	25	amod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9428,14 +10243,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Izvori[uredi | uredi kôd]
+# text = Izvori
 1	Izvori	izvor	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9443,14 +10252,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Povezani članci[uredi | uredi kôd]
+# text = Povezani članci
 1	Povezani	povezan	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
-2	članci[	članci[	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	ADP	Sg	Case=Gen	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+2	članci	članak	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9458,15 +10262,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vanjske poveznice[uredi | uredi kôd]
+# text = Vanjske poveznice
 1	Vanjske	vanjski	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	2	amod	_	_
 2	poveznice	poveznica	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -9480,41 +10278,4 @@
 3	Paris	Paris	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
 4	na	na	ADP	Sl	Case=Loc	5	case	_	_
 5	Wikivoyageu	Wikivoyage	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 01 Ain |
-1	01	01	NUM	Mdc	NumType=Card	2	nummod	_	SpacesAfter= 
-2	Ain	Ain	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-3	|	|	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 1) Zajednička svjetska baština Belgije i Francuske
-1	1	1	NUM	Mdc	NumType=Card	5	parataxis	_	SpaceAfter=No
-2	)	)	PUNCT	Z	_	1	punct	_	SpacesAfter= 
-3	Zajednička	zajednički	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
-4	svjetska	svjetski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
-5	baština	baština	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-6	Belgije	Belgija	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
-7	i	i	CCONJ	Cc	_	8	cc	_	_
-8	Francuske	Francuska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	6	conj	_	SpacesAfter= \s\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigacijski izbornik
-1	Navigacijski	navigacijski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	izbornik	izbornik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
 

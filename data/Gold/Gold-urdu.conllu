@@ -1,5 +1,3 @@
-# https://ur.wikipedia.org/wiki/%D8%B3%D9%88%D9%86%D8%A7
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,16 +11,7 @@
 4	دائرۃ	دائرۃ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	compound	_	_
 5	المعارف	المعارف	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	SpaceAfter=No
 6	،	،	PUNCT	SYM	_	5	punct	_	_
-7	ویکیپیڈیا	ویکیپیڈیا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = urdu-udtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = سونا
-1	سونا	سونا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+7	ویکیپیڈیا	ویکیپیڈیا	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -149,12 +138,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = سونے کے رنگ[ترمیم]
-1	سونے	سو	VERB	VM	Case=Acc|VerbForm=Inf	4	nmod	_	_
-2	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	mark	_	_
-3	رنگ[	رنگ[	ADJ	JJ	Case=Nom	4	amod	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = سونے کے رنگ
+1	سونے	سو	VERB	VM	Case=Acc|VerbForm=Inf	3	nmod	_	_
+2	کے	کا	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	0	case	_	_
+3	رنگ	رنگ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -296,10 +283,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = قیراط[ترمیم]
-1	قیراط[	قیراط[	ADJ	JJ	Case=Nom	2	amod	_	SpaceAfter=No
-2	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-3	]	]	PUNCT	SYM	_	2	punct	_	SpacesAfter=\n
+# text = قیراط
+1	قیراط	قیراط	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -345,18 +330,30 @@
 7	ہے	ہے	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	SpaceAfter=No
 8	۔	۔	PUNCT	SYM	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = دس قیراط سے کم سونا قانونی طور پر سونا نہیں کہلاتا۔
+1	دس	دس	NUM	QC	NumType=Card	2	nummod	_	_
+2	قیراط	قیراط	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+3	سے	سے	ADP	PSP	AdpType=Post	2	case	_	_
+4	کم	کم	ADJ	JJ	Case=Nom	5	amod	_	_
+5	سونا	سونا	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+6	قانونی	قانونی	ADJ	JJ	Case=Acc	7	amod	_	_
+7	طور	طور	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+8	پر	پر	ADP	PSP	AdpType=Post	7	case	_	_
+9	سونا	سونا	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	obj	_	_
+10	نہیں	نہیں	PART	NEG	Polarity=Neg|PronType=Neg	11	advmod	_	_
+11	کہلاتا	کہلا	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+12	۔	۔	PUNCT	SYM	_	11	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = مزید دیکھیے[ترمیم]
+# text = مزید دیکھیے
 1	مزید	مزید	ADJ	JJ	_	2	compound	_	_
 2	دیکھیے	دیکھ	VERB	VM	VerbForm=Inf	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
-4	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -364,11 +361,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = نگار خانہ[ترمیم]
-1	نگار	نگار	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
-2	خانہ[	خانہ[	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	SpaceAfter=No
-3	ترمیم	ترمیم	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+# text = نگار خانہ
+1	نگار	نگار	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	خانہ	خانہ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -376,11 +371,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = بیرونی روابط[ترمیم]
+# text = بیرونی روابط
 1	بیرونی	بیرونی	ADJ	JJ	Case=Nom	2	amod	_	_
-2	روابط[	روابط[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-3	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+2	روابط	ربط	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = urdu-udtb-ud-2.6-200830
@@ -388,19 +381,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = حوالے[ترمیم]
-1	حوالے	حوالہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
-2	[	[	PUNCT	SYM	_	3	punct	_	SpaceAfter=No
-3	ترمیم	ترمیم	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = urdu-udtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = فہرست رہنمائی
-1	فہرست	فہرست	ADJ	JJ	Case=Nom	2	amod	_	_
-2	رہنمائی	رہنمائی	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+# text = حوالے
+1	حوالے	حوالہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 

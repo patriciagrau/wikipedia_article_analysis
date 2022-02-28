@@ -1,5 +1,3 @@
-# https://be.wikipedia.org/wiki/%D0%86%D1%81%D1%83%D1%81_%D0%A5%D1%80%D1%8B%D1%81%D1%82%D0%BE%D1%81
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Ісус	ісус	NOUN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	Хрыстос	хрыстос	NOUN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
 3	—	—	PUNCT	PUNCT	_	2	punct	_	_
-4	Вікіпедыя	вікіпеды	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	1	amod	_	SpacesAfter=\n
+4	Вікіпедыя	вікіпеды	ADJ	JJL	Case=Nom|Degree=Pos|Number=Plur	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -18,9 +16,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ісус Хрыстос
-1	Ісус	Ісус	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	Хрыстос	хрыстос	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpacesAfter=\n
+# text = Біблія Стары Запавет · Новы Запавет Апокрыфы Евангелле Дзесяць запаведзей Нагорная пропаведзь
+1	Біблія	Біблія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	nsubj	_	SpacesAfter=\n
+2	Стары	стары	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	Запавет	запавет	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	_
+4	·	·	PUNCT	PUNCT	_	6	punct	_	_
+5	Новы	новы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	Запавет	запавет	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	conj	_	SpacesAfter=\n
+7	Апокрыфы	апокрыфа	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	SpacesAfter=\n
+8	Евангелле	Евангелле	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	7	flat:name	_	SpacesAfter=\n
+9	Дзесяць	дзесяць	NUM	CD	Case=Nom|NumType=Card	10	nummod:gov	_	_
+10	запаведзей	запаведзць	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+11	Нагорная	нагорны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	пропаведзь	пропаведзь	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -28,8 +36,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Біблія
-1	Біблія	Біблія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = Бог Айцец Ісус Хрыстос Святы Дух Тройца Анёлы Д'ябал
+1	Бог	бог	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	Айцец	айцец	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n\s
+3	Ісус	Ісус	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+4	Хрыстос	хрыстос	NOUN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	appos	_	SpacesAfter=\n
+5	Святы	святы	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	Дух	дух	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpacesAfter=\n
+7	Тройца	Тройца	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	appos	_	SpacesAfter=\n
+8	Анёлы	Анёлы	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	appos	_	SpacesAfter=\n
+9	Д'ябал	Д'ябал	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -37,19 +53,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Бог Айцец
-1	Бог	Бог	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	Айцец	айцец	PROPN	VBC	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Гісторыя хрысціянства
+# text = Гісторыя хрысціянства Храналогія хрысціянства Апосталы Сусветныя саборы Вялікі раскол Крыжовыя паходы Рэфармацыя
 1	Гісторыя	Гісторыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	хрысціянства	хрысціянства	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	Храналогія	Храналогія	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nmod	_	_
+4	хрысціянства	хрысціянства	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpacesAfter=\n
+5	Апосталы	апостала	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpacesAfter=\n
+6	Сусветныя	сусветны	ADJ	JJL	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	7	amod	_	_
+7	саборы	сабора	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	4	nmod	_	SpacesAfter=\n
+8	Вялікі	вялікі	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+9	раскол	раскол	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	7	nmod	_	SpacesAfter=\n
+10	Крыжовыя	крыжовы	ADJ	JJL	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	11	amod	_	_
+11	паходы	паход	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	9	nmod	_	SpacesAfter=\n
+12	Рэфармацыя	Рэфармацыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	11	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -57,9 +73,25 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Хрысціянскае багаслоўе
+# text = Хрысціянскае багаслоўе Грэхападзенне · Грэх · Дабрадзейнасць Выкупленне Выратаванне · Уваскрэсенне Другое прышэсце · Богаслужэнне Дабрадзейнасці · Таінствы
 1	Хрысціянскае	хрысціянскі	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
 2	багаслоўе	багаслоў	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+3	Грэхападзенне	грэхападзенне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nmod	_	_
+4	·	·	PUNCT	PUNCT	_	5	punct	_	_
+5	Грэх	Грэх	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	conj	_	_
+6	·	·	PUNCT	PUNCT	_	7	punct	_	_
+7	Дабрадзейнасць	дабрадзейнасць	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	conj	_	SpacesAfter=\n
+8	Выкупленне	выкупленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	7	nmod	_	SpacesAfter=\n
+9	Выратаванне	выратаванне	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	8	nmod	_	_
+10	·	·	PUNCT	PUNCT	_	11	punct	_	_
+11	Уваскрэсенне	уваскрэсенне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	conj	_	SpacesAfter=\n
+12	Другое	другі	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	13	amod	_	_
+13	прышэсце	прышэсце	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	11	nmod	_	_
+14	·	·	PUNCT	PUNCT	_	15	punct	_	_
+15	Богаслужэнне	богаслужэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	13	conj	_	SpacesAfter=\n
+16	Дабрадзейнасці	дабрадзейнасць	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	15	nmod	_	_
+17	·	·	PUNCT	PUNCT	_	18	punct	_	SpacesAfter=\n
+18	Таінствы	Таінствы	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -67,9 +99,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Галіны хрысціянства
-1	Галіны	галіна	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	0	root	_	_
+# text = Галіны хрысціянства Каталіцтва · Праваслаўе Пратэстанцызм Антытрынітарыі
+1	Галіны	галіна	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	0	root	_	_
 2	хрысціянства	хрысціянства	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	Каталіцтва	каталіцтва	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
+4	·	·	PUNCT	_	_	5	punct	_	_
+5	Праваслаўе	праваслаў	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	appos	_	SpacesAfter=\n
+6	Пратэстанцызм	пратэстанцыз	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	5	nmod	_	SpacesAfter=\n
+7	Антытрынітарыі	антытрынітарыя	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -584,14 +621,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Этымалогія імя[правіць | правіць зыходнік]
-1	Этымалогія	этымалогія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-2	імя[	імя[	PRON	_	_	3	advmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Этымалогія імя
+1	Этымалогія	Этымалогія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	імя	імя	ADP	IN	_	1	case	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -992,14 +1024,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Крыніцы інфармацыі[правіць | правіць зыходнік]
-1	Крыніцы	крынік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	_
-2	інфармацыі[	інфармацыія	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+# text = Крыніцы інфармацыі
+1	Крыніцы	крынік	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	інфармацыі	інфармацыя	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -1263,18 +1290,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Жыццё Ісуса згодна апавядання Новага Запавета[правіць | правіць зыходнік]
-1	Жыццё	жыццё	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
-2	Ісуса	ісус	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	згодна	згодна	ADP	_	_	4	case	_	_
-4	апавядання	апавяданне	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	obl	_	_
-5	Новага	новы	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
-6	Запавета[	запавет	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
-7	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-8	|	|	PUNCT	_	_	9	punct	_	_
-9	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	7	xcomp	_	_
-10	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
+# text = Жыццё Ісуса згодна апавядання Новага Запавета
+1	Жыццё	жыццё	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	Ісуса	ісус	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	згодна	згодна	ADP	IN	_	4	case	_	_
+4	апавядання	апавяданне	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
+5	Новага	новы	ADJ	JJL	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	Запавета	запавет	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -1282,15 +1304,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Генеалогія і нараджэнне[правіць | правіць зыходнік]
-1	Генеалогія	Генеалогія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-2	і	і	CCONJ	_	_	3	cc	_	_
-3	нараджэнне[	нараджэнне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	3	nmod	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+# text = Генеалогія і нараджэнне
+1	Генеалогія	Генеалогія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	і	і	CCONJ	CC	_	3	cc	_	_
+3	нараджэнне	нараджэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -1877,15 +1894,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Маленства і прафесія[правіць | правіць зыходнік]
-1	Маленства	маленства	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
-2	і	і	CCONJ	_	_	3	cc	_	_
-3	прафесія[	прафесія	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+# text = Маленства і прафесія
+1	Маленства	маленства	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	і	і	CCONJ	CC	_	3	cc	_	_
+3	прафесія	прафесія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2201,15 +2213,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Хрышчэнне і выпрабаванне[правіць | правіць зыходнік]
-1	Хрышчэнне	хрышчэнне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	і	і	CCONJ	_	_	3	cc	_	_
-3	выпрабаванне[	выпрабаванне	NOUN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	3	nmod	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+# text = Хрышчэнне і выпрабаванне
+1	Хрышчэнне	хрышчэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	і	і	CCONJ	CC	_	3	cc	_	_
+3	выпрабаванне	выпрабаванне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -2661,15 +2668,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Пакліканне дванаццаці вучняў[правіць | правіць зыходнік]
-1	Пакліканне	пакліканне	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	4	nsubj	_	_
-2	дванаццаці	дванаццаці	NUM	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	nummod:gov	_	_
-3	вучняў[	вучнць	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+# text = Пакліканне дванаццаці вучняў
+1	Пакліканне	пакліканне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	дванаццаці	дванаццаці	NUM	CD	Case=Gen|NumType=Card	3	nummod:gov	_	_
+3	вучняў	вувень	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3087,13 +3089,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Служэнне[правіць | правіць зыходнік]
-1	Служэнне[	служэнне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+# text = Служэнне
+1	Служэнне	служэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -3626,17 +3623,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Вучэнне, пропаведзь і цуды[правіць | правіць зыходнік]
-1	Вучэнне	вучэнне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	пропаведзь	пропаведзь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
-4	і	і	CCONJ	_	_	5	cc	_	_
-5	цуды[	цуды[	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
-6	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-7	|	|	PUNCT	_	_	8	punct	_	_
-8	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	1	punct	_	SpacesAfter=\n
+# text = Вучэнне, пропаведзь і цуды
+1	Вучэнне	вучэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	пропаведзь	пропаведзь	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
+4	і	і	CCONJ	CC	_	5	cc	_	_
+5	цуды	цуды	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -4559,17 +4551,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Вызнанне Ісуса Месіяй і Праабражэнне[правіць | правіць зыходнік]
+# text = Вызнанне Ісуса Месіяй і Праабражэнне
 1	Вызнанне	вызнанне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	Ісуса	ісус	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 3	Месіяй	Месіяй	PROPN	NNP	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	2	nmod	_	_
 4	і	і	CCONJ	CC	_	5	cc	_	_
-5	Праабражэнне[	праабражэнне	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+5	Праабражэнне	праабражэнне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5013,7 +5000,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Апошні тыдзень: здрада, арышт, суд і смерць[правіць | правіць зыходнік]
+# text = Апошні тыдзень: здрада, арышт, суд і смерць
 1	Апошні	апошні	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	тыдзень	тыдзень	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	PUNCT	_	4	punct	_	_
@@ -5023,12 +5010,7 @@
 7	,	,	PUNCT	PUNCT	_	8	punct	_	_
 8	суд	суд	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	conj	_	_
 9	і	і	CCONJ	CC	_	10	cc	_	_
-10	смерць[	смерць[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	conj	_	SpaceAfter=No
-11	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	10	xcomp	_	_
-12	|	|	PUNCT	PUNCT	_	13	punct	_	_
-13	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	11	xcomp	_	_
-14	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No
-15	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+10	смерць	смерць	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5457,16 +5439,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Апошні ўезд у Іерусалім[правіць | правіць зыходнік]
+# text = Апошні ўезд у Іерусалім
 1	Апошні	апошні	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	ўезд	ўезд	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+2	ўезд	ўезд	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	у	у	ADP	IN	_	4	case	_	_
-4	Іерусалім[	Іерусалім	PROPN	NNP	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	2	obl	_	SpaceAfter=No
-5	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-8	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+4	Іерусалім	Іерусалім	PROPN	NNP	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	obl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -5750,14 +5727,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Тайная вячэра[правіць | правіць зыходнік]
+# text = Тайная вячэра
 1	Тайная	тайны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	вячэра[	вячэра[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+2	вячэра	вячэра	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6210,19 +6182,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Агонія ў садзе, здрада і арышт[правіць | правіць зыходнік]
-1	Агонія	агонія	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+# text = Агонія ў садзе, здрада і арышт
+1	Агонія	Агонія	NOUN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	ў	ў	ADP	IN	_	3	case	_	_
 3	садзе	сад	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 4	,	,	PUNCT	PUNCT	_	5	punct	_	_
 5	здрада	здрада	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
 6	і	і	CCONJ	CC	_	7	cc	_	_
-7	арышт[	арышт[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	7	xcomp	_	_
-9	|	|	PUNCT	PUNCT	_	10	punct	_	_
-10	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	8	xcomp	_	_
-11	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
-12	]	]	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+7	арышт	арышт	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -6545,21 +6512,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Допыты Ісуса ў Сінедрыёне, у Ірада і Пілата[правіць | правіць зыходнік]
+# text = Допыты Ісуса ў Сінедрыёне, у Ірада і Пілата
 1	Допыты	допыт	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	Ісуса	ісус	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 3	ў	ў	ADP	IN	_	4	case	_	_
-4	Сінедрыёне	Сінедрыёне	PROPN	NNP	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+4	Сінедрыёне	Сінедрыёне	PROPN	NNP	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
 5	,	,	PUNCT	PUNCT	_	7	punct	_	_
 6	у	у	ADP	IN	_	7	case	_	_
 7	Ірада	Ірад	PROPN	NNP	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	4	conj	_	_
 8	і	і	CCONJ	CC	_	9	cc	_	_
-9	Пілата[	пілата	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No
-10	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	9	xcomp	_	_
-11	|	|	PUNCT	PUNCT	_	12	punct	_	_
-12	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	10	xcomp	_	_
-13	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No
-14	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+9	Пілата	пілата	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -7197,14 +7159,57 @@
 4	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = 3
-# text = 15:17-19 і Ян. 19:2-3),
-1	15:17-19	15:17-19	NUM	CD	Case=Nom|NumType=Card	0	root	_	_
+# text = 15:17-19 і Ян. 19:2-3), Пілат спабуе вызваліць Ісуса, але паколькі натоўп настойваў на смяротным пакаранні, Пілат аддаў загад распяць Ісуса, перад гэтым сімвалічным чынам умыўшы рукі, паказваючы сваю недатычнасць.
+1	15:17-19	15:17-19	NUM	CD	Case=Nom|NumType=Card	10	nsubj	_	_
 2	і	і	CCONJ	CC	_	3	cc	_	_
-3	Ян	ян	PRON	PRP	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
+3	Ян	ян	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	conj	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	5	punct	_	_
-5	19:2-3	19:2-3	NUM	CD	Case=Nom|NumType=Card	3	parataxis	_	SpaceAfter=No
-6	)	)	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+5	19:2	19:2	NUM	CD	Case=Nom|NumType=Card	3	parataxis	_	SpaceAfter=No
+6	-3	-3	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
+7	)	)	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+8	,	,	PUNCT	PUNCT	_	23	punct	_	SpacesAfter=\n
+9	Пілат	пілат	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+10	спабуе	спабаваць	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	вызваліць	вызваліць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	Ісуса	ісус	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	PUNCT	_	17	punct	_	_
+14	але	але	CCONJ	CC	_	17	cc	_	_
+15	паколькі	паколькі	ADV	RB	Degree=Pos	16	advmod	_	_
+16	натоўп	натоўп	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	17	nsubj	_	_
+17	настойваў	настойваць	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+18	на	на	ADP	IN	_	20	case	_	_
+19	смяротным	смяротны	ADJ	JJL	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	_
+20	пакаранні	пакаранне	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	17	obl	_	SpaceAfter=No
+21	,	,	PUNCT	PUNCT	_	23	punct	_	_
+22	Пілат	пілат	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	23	nsubj	_	_
+23	аддаў	аддаць	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+24	загад	загад	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	23	obj	_	_
+25	распяць	распяць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	24	nmod	_	_
+26	Ісуса	ісус	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+27	,	,	PUNCT	PUNCT	_	35	punct	_	_
+28	перад	перад	ADP	IN	_	29	case	_	_
+29	гэтым	гэта	PRON	DT	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	23	obl	_	_
+30	сімвалічным	сімвалічны	ADJ	JJL	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	31	amod	_	_
+31	чынам	Чын	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	23	obl	_	_
+32	умыўшы	умыўша	VERB	JJL	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	31	amod	_	_
+33	рукі	рукі	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	32	obj	_	SpaceAfter=No
+34	,	,	PUNCT	PUNCT	_	35	punct	_	_
+35	паказваючы	паказваць	VERB	VBG	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	10	advcl	_	_
+36	сваю	свой	DET	PRP$	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	37	det	_	_
+37	недатычнасць	недатычнасць	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	35	obj	_	SpaceAfter=No
+38	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+# sent_id = 4
+# text = Пасля гэтага Ісуса адпраўляюць на Галгофу для распяцця.
+1	Пасля	пасля	ADP	IN	_	2	case	_	_
+2	гэтага	гэта	PRON	DT	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	4	obl	_	_
+3	Ісуса	ісус	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nsubj	_	_
+4	адпраўляюць	адпраўляць	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	на	на	ADP	IN	_	6	case	_	_
+6	Галгофу	галгофа	PROPN	NNP	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	4	obl	_	_
+7	для	для	ADP	IN	_	8	case	_	_
+8	распяцця	распяцця	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -7212,15 +7217,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Укрыжаванне і пахаванне[правіць | правіць зыходнік]
-1	Укрыжаванне	укрыжаванне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	і	і	CCONJ	_	_	3	cc	_	_
-3	пахаванне[	пахаванне	NOUN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	3	nmod	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+# text = Укрыжаванне і пахаванне
+1	Укрыжаванне	укрыжаванне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	і	і	CCONJ	CC	_	3	cc	_	_
+3	пахаванне	пахаванне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -7720,15 +7720,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Уваскрасенне і Ушэсце[правіць | правіць зыходнік]
-1	Уваскрасенне	уваскрасенне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+# text = Уваскрасенне і Ушэсце
+1	Уваскрасенне	уваскрасенне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
 2	і	і	CCONJ	CC	_	3	cc	_	_
-3	Ушэсце[	ушэсце[	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+3	Ушэсце	ушэсце	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -8199,15 +8194,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Гістарычнае існаванне Ісуса[правіць | правіць зыходнік]
-1	Гістарычнае	гістарычны	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	існаванне	існаванне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
-3	Ісуса[	ісус	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
-4	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+# text = Гістарычнае існаванне Ісуса
+1	Гістарычнае	гістарычны	ADJ	JJL	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	існаванне	існаванне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+3	Ісуса	ісус	PROPN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -8736,19 +8726,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Стаўленне да Хрыста сярод вернікаў розных рэлігій[правіць | правіць зыходнік]
-1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
+# text = Стаўленне да Хрыста сярод вернікаў розных рэлігій
+1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	да	да	ADP	IN	_	3	case	_	_
-3	Хрыста	хрыст	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-4	сярод	сярод	NOUN	NN	_	5	case	_	_
-5	вернікаў	вернік	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	_
+3	Хрыста	хрыст	NOUN	NNP	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+4	сярод	сярод	NOUN	NN	_	3	case	_	_
+5	вернікаў	вернік	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	_
 6	розных	розны	ADJ	JJL	Case=Gen|Degree=Pos|Number=Plur	7	amod	_	_
-7	рэлігій[	рэлігійя	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	5	nmod	_	SpaceAfter=No
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-9	|	|	PUNCT	PUNCT	_	10	punct	_	_
-10	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	8	xcomp	_	_
-11	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
-12	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+7	рэлігій	рэлігія	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -8756,17 +8741,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Стаўленне да Хрыста ў хрысціянстве[правіць | правіць зыходнік]
-1	Стаўленне	стаўленне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
-2	да	да	ADP	_	_	3	case	_	_
-3	Хрыста	хрыст	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-4	ў	ў	ADP	_	_	5	case	_	_
-5	хрысціянстве[	хрысціянстве	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-6	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-7	|	|	PUNCT	_	_	8	punct	_	_
-8	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+# text = Стаўленне да Хрыста ў хрысціянстве
+1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	да	да	ADP	IN	_	3	case	_	_
+3	Хрыста	хрыст	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+4	ў	ў	ADP	IN	_	5	case	_	_
+5	хрысціянстве	хрысціянства	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -9216,17 +9196,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Стаўленне да Хрыста ў іўдаізме[правіць | правіць зыходнік]
-1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+# text = Стаўленне да Хрыста ў іўдаізме
+1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	да	да	ADP	IN	_	3	case	_	_
 3	Хрыста	хрыст	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 4	ў	ў	ADP	IN	_	5	case	_	_
-5	іўдаізме[	іўдаізм	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-6	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+5	іўдаізме	іўдаізма	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -9590,17 +9565,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Стаўленне да Хрыста ў ісламе[правіць | правіць зыходнік]
-1	Стаўленне	стаўленне	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
-2	да	да	ADP	_	_	3	case	_	_
-3	Хрыста	хрыст	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-4	ў	ў	ADP	_	_	5	case	_	_
-5	ісламе[	ісламе[	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-6	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+# text = Стаўленне да Хрыста ў ісламе
+1	Стаўленне	стаўленне	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	да	да	ADP	IN	_	3	case	_	_
+3	Хрыста	хрыст	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+4	ў	ў	ADP	IN	_	5	case	_	_
+5	ісламе	Іслам	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -10215,14 +10185,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Гл. таксама[правіць | правіць зыходнік]
-1	Гл.	гл.	ADV	_	_	3	advmod	_	_
-2	таксама[	таксама[	ADV	_	Degree=Pos	3	advmod	_	SpaceAfter=No
-3	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-6	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+# text = Гл.
+1	Гл	Гл	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 2
+# text = таксама
+1	таксама	таксама	ADV	RB	Degree=Pos	0	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -10230,13 +10199,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Зноскі[правіць | правіць зыходнік]
-1	Зноскі[	зноскі[	ADJ	RB	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	VB	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	PUNCT	_	4	punct	_	_
-4	правіць	правіць	VERB	VB	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+# text = Зноскі
+1	Зноскі	зноскі	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = belarusian-hse-ud-2.6-200830
@@ -10244,20 +10208,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Літаратура[правіць | правіць зыходнік]
-1	Літаратура[	літаратура	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
-2	правіць	правіць	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	0	root	_	_
-3	|	|	PUNCT	_	_	4	punct	_	_
-4	правіць	правіць	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	зыходнік	зыходнік	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = belarusian-hse-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навігацыя
-1	Навігацыя	навігацыя	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = Літаратура
+1	Літаратура	літаратура	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 

@@ -1,5 +1,3 @@
-# https://mr.wikipedia.org/wiki/%E0%A4%87%E0%A4%9F%E0%A4%B2%E0%A5%80
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = इटली - विकिपीडिया
 1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 2	-	-	PUNCT	_	_	1	punct	_	_
-3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	SpacesAfter=\n
+3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -17,8 +15,111 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इटली
-1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpacesAfter=\n
+# text = इटली हा दक्षिण युरोपातील एक देश आहे.
+1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpacesBefore=\n
+2	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
+3	दक्षिण	दक्षिण	NOUN	_	_	6	amod	_	_
+4	युरोपातील	युरोपाणे	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	6	obl	_	_
+5	एक	एक	DET	_	Number=Sing|PronType=Ind	6	det	_	_
+6	देश	देश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	1	root	_	_
+7	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 2
+# text = हा देश विकसित देशांपैकी एक असून तो जी-७चा सदस्य आहे.
+1	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	देश	देश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+3	विकसित	विकसित	NOUN	_	_	6	amod	_	_
+4	देशांपैकी	देशांपैका	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	amod	_	_
+5	एक	एक	DET	_	Number=Sing|PronType=Ind	6	det	_	_
+6	असून	असणे	VERB	_	Aspect=Perf|VerbForm=Conv	11	advcl	_	_
+7	तो	तो	PRON	_	Case=Nom|Distance=Dist|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+8	जी	जी	NOUN	_	_	11	nsubj	_	SpaceAfter=No
+9	-	-	PUNCT	_	_	8	punct	_	SpaceAfter=No
+10	७चा	७चा	ADJ	_	_	11	amod	_	_
+11	सदस्य	सदस्य	ADJ	_	Case=Nom	0	root	_	_
+12	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = 3
+# text = इटली चे क्षेत्रफळ ३,०१,२५३ चौ.किमी एवढे आहे.
+1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+2	चे	चे	DET	_	_	1	nsubj	_	_
+3	क्षेत्रफळ	क्षेत्रफळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	_
+4	३,	३,	PUNCT	_	_	5	punct	_	SpaceAfter=No
+5	०१	०१	NOUN	_	_	10	discourse	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	२५३	२५३	CCONJ	_	_	10	discourse	_	_
+8	चौ.	चौ.	PUNCT	_	_	5	punct	_	SpaceAfter=No
+9	किमी	किमी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+10	एवढे	एवढा	ADJ	_	_	1	conj	_	_
+11	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 4
+# text = लिरा हे इटली चे चलन असून इटली ची साक्षरता ९७ टक्के आहे.
+1	लिरा	लिरा	ADJ	_	_	3	amod	_	_
+2	हे	हा	DET	_	Distance=Prox|Gender=Neut|Number=Sing|PronType=Dem	3	det	_	_
+3	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	5	acl	_	_
+4	चे	चे	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	5	det	_	_
+5	चलन	चलन	VERB	_	Aspect=Perf|VerbForm=Conv	7	advcl	_	_
+6	असून	असणे	VERB	_	Aspect=Perf|VerbForm=Conv	7	advcl	_	_
+7	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+8	ची	ची	ADJ	_	_	9	amod	_	_
+9	साक्षरता	साक्षरता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	11	nsubj	_	_
+10	९७	९७	ADV	_	_	11	amod	_	_
+11	टक्के	टक्के	ADV	_	_	7	conj	_	_
+12	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = 5
+# text = ख्रिश्चन हा येथील प्रमुख धर्म असून इटालियन ही प्रमुख भाषा आहे.
+1	ख्रिश्चन	ख्रिश्चन	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+2	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+3	येथील	येथे	ADJ	_	_	4	amod	_	_
+4	प्रमुख	प्रमुख	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+5	धर्म	धर्म	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	6	obj	_	_
+6	असून	असणे	VERB	_	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
+7	इटालियन	इटालियन	NOUN	_	_	10	nsubj	_	_
+8	ही	हा	DET	_	Distance=Prox|Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_
+9	प्रमुख	प्रमुख	NOUN	_	Case=Nom	10	nsubj	_	_
+10	भाषा	भाषा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+11	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 6
+# text = रोम ही इटलीची राजधानी व सर्वात मोठे शहर आहे.
+1	रोम	रोम	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	ही	हा	DET	_	Distance=Prox|Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
+3	इटलीची	इटलीची	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	4	amod	_	_
+4	राजधानी	राजधानी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+5	व	व	CCONJ	_	_	8	cc	_	_
+6	सर्वात	सर्व	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	_
+7	मोठे	मोठे	ADV	_	_	8	amod	_	_
+8	शहर	शहर	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	conj	_	_
+9	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 7
+# text = हा देश गंधकाच्या उत्पादनात जगात प्रथम क्रमांकावर आहे.
+1	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	देश	देश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+3	गंधकाच्या	गंधकाच्या	ADJ	_	Case=Obl	4	amod	_	_
+4	उत्पादनात	उत्पादन	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+5	जगात	जग	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	7	obl	_	_
+6	प्रथम	प्रथम	NOUN	_	_	7	compound:lvc	_	_
+7	क्रमांकावर	क्रमांकावर	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+8	आहे.	आहे.	AUX	_	_	7	cop	_	SpaceAfter=No
+
+# sent_id = 8
+# text = इटली तील प्रमुख खेळ फुटबॉल आहे.
+1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	5	advcl	_	_
+2	तील	ो	PRON	_	Distance=Dist|Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
+3	प्रमुख	प्रमुख	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+4	खेळ	खेळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	obj	_	_
+5	फुटबॉल	फुटबणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+6	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -26,17 +127,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = {{{लोकसंख्या_गणना_वर्ष}}}
-1	{{{लोकसंख्या_गणना_वर्ष}}}	{{{लोकसंख्या_गणना_वर्ष}}}	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = इतिहास[संपादन]
-1	इतिहास[संपादन]	इतिहास[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = इतिहास
+1	इतिहास	इतिहास	ADV	_	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -93,9 +185,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = प्रागैतिहासिक कालखंड[संपादन]
-1	प्रागैतिहासिक	प्रागैतिहासिक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	कालखंड[संपादन]	कालखंड[संप	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = प्रागैतिहासिक कालखंड
+1	प्रागैतिहासिक	प्रागैतिहासिक	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
+2	कालखंड	कालखंड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -103,8 +195,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भूगोल[संपादन]
-1	भूगोल[संपादन]	भूगोल[संप	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	nsubj	_	SpacesAfter=\n
+# text = भूगोल
+1	भूगोल	भूगणे	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -112,8 +204,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = चतु:सीमा[संपादन]
-1	चतु:सीमा[संपादन]	चतु:सीमा[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = चतु:सीमा
+1	चतु:सीमा	चतु:सीमा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -158,9 +250,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = राजकीय विभाग[संपादन]
+# text = राजकीय विभाग
 1	राजकीय	राजकीय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	विभाग[संपादन]	विभाग[संपादन]	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	विभाग	विभाग	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -228,9 +320,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = प्रमुख शहरे[संपादन]
-1	प्रमुख	प्रमुख	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	शहरे[संपादन]	शहरे[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+# text = प्रमुख शहरे
+1	प्रमुख	प्रमुख	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	शहरे	शहरे	NOUN	_	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -238,8 +330,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = समाजव्यवस्था[संपादन]
-1	समाजव्यवस्था[संपादन]	समाजव्यवस्था[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = समाजव्यवस्था
+1	समाजव्यवस्था	समाजव्यवस्था	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -247,8 +339,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = वस्तीविभागणी[संपादन]
-1	वस्तीविभागणी[संपादन]	वस्तीविभागणी[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = वस्तीविभागणी
+1	वस्तीविभागणी	वस्तीविभागणी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -256,8 +348,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = धर्म[संपादन]
-1	धर्म[संपादन]	धर्म[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = धर्म
+1	धर्म	धर्म	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -349,8 +441,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = संस्कृती[संपादन]
-1	संस्कृती[संपादन]	संस्कृती[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = संस्कृती
+1	संस्कृती	संस्कृती	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -358,8 +450,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = राजकारण[संपादन]
-1	राजकारण[संपादन]	राजकारण[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = राजकारण
+1	राजकारण	राजकारण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -692,7 +784,7 @@
 38	करण्यास	करण्ा	VERB	_	Case=Loc|InfForm=Dict|VerbForm=Inf	40	advcl	_	_
 39	अधिकृत	अधिकृत	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	40	compound:lvc	_	_
 40	करा	करणे	VERB	_	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	2	conj	_	SpaceAfter=No
-41	.	.	PUNCT	_	_	40	punct	_	SpacesAfter=\s\n
+41	.	.	PUNCT	_	_	40	punct	_	SpacesAfter=\s\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -700,8 +792,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = अर्थव्यवस्था[संपादन]
-1	अर्थव्यवस्था[संपादन]	अर्थव्यवस्था[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = अर्थव्यवस्था
+1	अर्थव्यवस्था	अर्थव्यवस्था	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -870,8 +962,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = खेळ[संपादन]
-1	खेळ[संपादन]	खेळ[संूक	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = खेळ
+1	खेळ	खेळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -879,8 +971,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = संदर्भ[संपादन]
-1	संदर्भ[संपादन]	संदर्भ[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = संदर्भ
+1	संदर्भ	संदर्भ	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -888,262 +980,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बाह्य दुवे[संपादन]
+# text = बाह्य दुवे
 1	बाह्य	बाह्य	ADJ	_	_	2	amod	_	_
-2	दुवे[संपादन]	दुवे[संूक	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = अझरबैजान१ ·
-1	अझरबैजान१	अझरबैजान१	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 2
-# text = आइसलँड · आर्मेनिया२ ·
-1	आइसलँड	आइसलँड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpacesAfter=\s 
-2	·	·	CCONJ	_	_	3	punct	_	_
-3	आर्मेनिया२	आर्मेनिया२	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-4	·	·	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 3
-# text = आयर्लंड ·
-1	आयर्लंड	आयर्लंड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 4
-# text = आल्बेनिया ·
-1	आल्बेनिया	येणे	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 5
-# text = इटली ·
-1	इटली	इटणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 6
-# text = एस्टोनिया ·
-1	एस्टोनिया	एस्टोनिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 7
-# text = आंदोरा४ ·
-1	आंदोरा४	आंदोरा४	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 8
-# text = ऑस्ट्रिया · कझाकस्तान१ ·
-1	ऑस्ट्रिया	ऑस्ट्रिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	3	amod	_	_
-3	कझाकस्तान१	कझाकस्तान१	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-4	·	·	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 9
-# text = क्रो‌एशिया ·
-1	क्रो‌एशिया	क्रो‌एशिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 10
-# text = ग्रीस ·
-1	ग्रीस	ग्रीस	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 11
-# text = चेक प्रजासत्ताक ·
-1	चेक	चेक	DET	_	_	2	det	_	_
-2	प्रजासत्ताक	प्रजासत्ताक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-3	·	·	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 12
-# text = जर्मनी ·
-1	जर्मनी	जर्मनी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 13
-# text = जॉर्जिया१ ·
-1	जॉर्जिया१	जॉर्जिा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 14
-# text = डेन्मार्क · तुर्कस्तान१ ·
-1	डेन्मार्क	डेन्मार्क	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	3	amod	_	_
-3	तुर्कस्तान१	तुर्कस्तान१	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-4	·	·	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 15
-# text = नेदरलँड्स ·
-1	नेदरलँड्स	नेदरलँड्स	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 16
-# text = नॉर्वे३ ·
-1	नॉर्वे३	नॉर्वे३	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 17
-# text = पोर्तुगाल ·
-1	पोर्तुगाल	पोर्तु	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 18
-# text = पोलंड ·
-1	पोलंड	पोलंड	VERB	_	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 19
-# text = फ्रान्स ·
-1	फ्रान्स	फ्रान्स	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 20
-# text = फिनलंड ·
-1	फिनलंड	फिनलंड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 21
-# text = बल्गेरिया ·
-1	बल्गेरिया	बल्गेरिया	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 22
-# text = बेल्जियम ·
-1	बेल्जियम	बेल्जियम	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 23
-# text = बेलारूस ·
-1	बेलारूस	बेलारूस	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 24
-# text = बॉस्निया आणि हर्झगोव्हिना ·
-1	बॉस्निया	बॉस्निया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	आणि	आणि	CCONJ	_	_	3	cc	_	_
-3	हर्झगोव्हिना	हर्झगोव्हिना	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\s 
-4	·	·	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 25
-# text = माल्टा ·
-1	माल्टा	माल्टा	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 26
-# text = मोनॅको४ ·
-1	मोनॅको४	मोनॅकणे	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 27
-# text = मोल्दोव्हा ·
-1	मोल्दोव्हा	मोल्दोव्हा	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 28
-# text = मॅसिडोनिया ·
-1	मॅसिडोनिया	मॅसिडोनिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 29
-# text = माँटेनिग्रो ·
-1	माँटेनिग्रो	माँटेनिग्रो	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 30
-# text = युक्रेन ·
-1	युक्रेन	युक्रेन	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 31
-# text = युनायटेड किंग्डम · रशिया१ ·
-1	युनायटेड	युनायटेड	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	किंग्डम	किंग्डम	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpacesAfter=\s 
-3	·	·	PUNCT	_	_	4	punct	_	_
-4	रशिया१	रशिया१	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-5	·	·	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 32
-# text = रोमेनिया ·
-1	रोमेनिया	रोमेनिया	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 33
-# text = लक्झेंबर्ग ·
-1	लक्झेंबर्ग	लक्झेंबर्ग	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 34
-# text = लात्व्हिया · लिश्टनस्टाइन४ ·
-1	लात्व्हिया	लात्व्हिया	NOUN	_	_	3	amod	_	SpacesAfter=\s 
-2	·	·	ADV	_	_	3	punct	_	_
-3	लिश्टनस्टाइन४	लिश्टनस्टा	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\s 
-4	·	·	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 35
-# text = लिथुएनिया ·
-1	लिथुएनिया	लिथुएनिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 36
-# text = व्हॅटिकन सिटी ·
-1	व्हॅटिकन	व्हॅटिकन	ADV	_	_	2	advmod	_	_
-2	सिटी	सिटा	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s 
-3	·	·	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 37
-# text = स्पेन ·
-1	स्पेन	स्पणे	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 38
-# text = सर्बिया ·
-1	सर्बिया	सर्बा	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 39
-# text = स्वित्झर्लंड ·
-1	स्वित्झर्लंड	स्वित्झर्लंड	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 40
-# text = स्वीडन ·
-1	स्वीडन	स्वीणे	VERB	_	Aspect=Perf|VerbForm=Conv	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 41
-# text = सान मारिनो ·
-1	सान	सान	ADJ	_	_	2	obj	_	_
-2	मारिनो	मारिनो	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s 
-3	·	·	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 42
-# text = सायप्रस२ ·
-1	सायप्रस२	सायप्रस२	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 43
-# text = स्लोव्हाकिया ·
-1	स्लोव्हाकिया	स्लोव्हाकिया	ADJ	_	Case=Obl	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 44
-# text = स्लोव्हेनिया ·
-1	स्लोव्हेनिया	स्लोव्हेनिया	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s 
-2	·	·	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 45
-# text = हंगेरी
-1	हंगेरी	हंगेरा	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन यादी
-1	दिक्चालन	दिक्च	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
-2	यादी	यादी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\n
+2	दुवे	दुवे	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 

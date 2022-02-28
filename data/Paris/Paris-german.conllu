@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/Paris
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Paris – Wikipedia
 1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	_
 2	–	–	PROPN	NE	Person=3	1	flat:name	_	_
-3	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17,44 +15,29 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Paris
-1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Paris (deutsch: [paˈʁiːs]; französisch: [paʁi]) ist die Hauptstadt der Französischen Republik, Hauptort der Region Île-de-France und Globalstadt.
-1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	17	nsubj	_	_
+# text = Paris (deutsch: ; französisch: ) ist die Hauptstadt der Französischen Republik, Hauptort der Region Île-de-France und Globalstadt.
+1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
 2	(	(	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
 3	deutsch	deutsch	ADJ	ADJD	Degree=Pos|Variant=Short	1	advmod	_	SpaceAfter=No
-4	:	:	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\s 
-5	[	[	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
-6	paˈʁiːs	paˈʁiːs	X	FM	Foreign=Yes|Person=3	3	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
-8	;	;	PUNCT	$.	PunctType=Peri	1	punct	_	_
-9	französisch	französisch	ADJ	ADJD	Degree=Pos|Variant=Short	6	advmod	_	SpaceAfter=No
-10	:	:	PUNCT	$.	PunctType=Peri	12	punct	_	SpacesAfter=\s 
-11	[	[	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
-12	paʁi	paʁi	X	FM	Foreign=Yes|Person=3	9	appos	_	SpaceAfter=No
-13	]	]	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
-14	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	_
-15	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
-16	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Hauptstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
-18	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-19	Französischen	französisch	ADJ	ADJA	Degree=Pos|Number=Sing	20	amod	_	_
-20	Republik	Republik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nmod	_	SpaceAfter=No
-21	,	,	PUNCT	$,	PunctType=Comm	22	punct	_	_
-22	Hauptort	Hauptort	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	conj	_	_
-23	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	Region	Region	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	nmod	_	_
-25	Île-de-France	Île-de-France	PROPN	NE	Person=3	24	flat:name	_	_
-26	und	und	CCONJ	KON	_	27	cc	_	_
-27	Globalstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	conj	_	SpaceAfter=No
-28	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	_
+4	:	:	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\s 
+5	;	;	PUNCT	$.	PunctType=Peri	3	punct	_	_
+6	französisch	französisch	ADJ	ADJD	Degree=Pos|Variant=Short	3	advmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\s 
+8	)	)	PUNCT	$(	PunctType=Brck	3	punct	_	_
+9	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Hauptstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
+12	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+13	Französischen	französisch	ADJ	ADJA	Degree=Pos|Number=Sing	14	amod	_	_
+14	Republik	Republik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+16	Hauptort	Hauptort	NOUN	NN	Gender=Masc|Number=Sing|Person=3	11	conj	_	_
+17	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	Region	Region	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	nmod	_	_
+19	Île-de-France	Île-de-France	PROPN	NE	Person=3	18	flat:name	_	_
+20	und	und	CCONJ	KON	_	21	cc	_	_
+21	Globalstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	conj	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	11	punct	_	_
 
 # sent_id = 2
 # text = Mit rund 2,17 Millionen Einwohnern ist Paris die viertgrößte Stadt der Europäischen Union (EU).
@@ -183,6 +166,108 @@
 25	Megastädten	Megastadt	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur|Person=3	26	obl	_	_
 26	zählt	zählen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	_	SpaceAfter=No
 27	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Paris ist das politische, wirtschaftliche sowie kulturelle Zentrum des zentralistisch organisierten Frankreichs und mit vier Flughäfen und sechs Kopfbahnhöfen dessen größter Verkehrsknotenpunkt.
+1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	9	nsubj	_	_
+2	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+3	das	das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	9	det	_	_
+4	politische	politisch	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+6	wirtschaftliche	wirtschaftlich	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	4	conj	_	_
+7	sowie	sowie	CCONJ	KON	_	8	cc	_	_
+8	kulturelle	kulturell	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	4	conj	_	_
+9	Zentrum	Zentrum	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
+10	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
+11	zentralistisch	zentralistisch	ADJ	ADJD	Degree=Pos|Variant=Short	12	advmod	_	_
+12	organisierten	organisieren	ADJ	ADJA	Degree=Pos|Number=Sing	13	amod	_	_
+13	Frankreichs	Frankreich	PROPN	NE	Case=Gen|Number=Sing|Person=3	9	nmod	_	_
+14	und	und	CCONJ	KON	_	23	cc	_	_
+15	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	17	case	_	_
+16	vier	vier	NUM	CARD	Number=Plur|NumType=Card|Person=3	17	nummod	_	_
+17	Flughäfen	Flughafen	NOUN	NN	Gender=Masc|Number=Plur|Person=3	23	nmod	_	_
+18	und	und	CCONJ	KON	_	20	cc	_	_
+19	sechs	sechs	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	nummod	_	_
+20	Kopfbahnhöfen	Kopfbahnhof	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	17	conj	_	_
+21	dessen	deren	DET	PDAT	PronType=Dem	23	det	_	_
+22	größter	groß	ADJ	ADJA	Case=Nom|Degree=Sup|Gender=Masc|Number=Sing	23	amod	_	_
+23	Verkehrsknotenpunkt	Knotenpunkt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	9	conj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	9	punct	_	_
+
+# sent_id = 5
+# text = Teile des Seineufers zählen heute zum UNESCO-Welterbe.
+1	Teile	Teil	NOUN	NN	Number=Plur|Person=3	4	nsubj	_	_
+2	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Seineufers	Seineufer	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	1	nmod	_	_
+4	zählen	zählen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	heute	heute	ADV	ADV	_	4	advmod	_	_
+6	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
+7	UNESCO-Welterbe	Welterb	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing|Person=3	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 6
+# text = Die Stadt ist Sitz der UNESCO und darüber hinaus der OECD und der ICC.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	Sitz	Sitz	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+5	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	UNESCO	UNESCO	PROPN	NE	Person=3	4	nmod	_	_
+7	und	und	CCONJ	KON	_	11	cc	_	_
+8	darüber	darüber	ADV	PROAV	_	11	advmod	_	_
+9	hinaus	hinaus	ADP	APZR	AdpType=Circ	8	case	_	_
+10	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	11	det	_	_
+11	OECD	OECD	PROPN	NE	Person=3	6	conj	_	_
+12	und	und	CCONJ	KON	_	14	cc	_	_
+13	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	ICC	ICC	PROPN	NE	Person=3	11	conj	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Sehenswürdigkeiten wie der Eiffelturm, die Kathedrale Notre-Dame oder der Louvre machen die Stadt zu einem beliebten Touristenziel.
+1	Sehenswürdigkeiten	Sehenswürdigkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	nsubj	_	_
+2	wie	wie	CCONJ	KOKOM	ConjType=Comp	4	case	_	_
+3	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Eiffelturm	Turm	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+6	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Kathedrale	Kathedrale	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	conj	_	_
+8	Notre-Dame	Dame	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	appos	_	_
+9	oder	oder	CCONJ	KON	_	11	cc	_	_
+10	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Louvre	Louvre	NOUN	NN	Person=3	4	conj	_	_
+12	machen	machen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obj	_	_
+15	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+16	einem	einem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	18	det	_	_
+17	beliebten	belieben	ADJ	ADJA	Degree=Pos|Number=Sing	18	amod	_	_
+18	Touristenziel	Ziel	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	obj	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
+
+# sent_id = 8
+# text = Mit rund 16 Millionen ausländischen Touristen pro Jahr ist die Stadt hinter London und Bangkok eine der meistbesuchten Städte weltweit.
+1	Mit	Mit	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+2	rund	rund	ADV	ADV	_	3	advmod	_	_
+3	16	16	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nummod	_	SpacesAfter= 
+4	Millionen	Million	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nummod	_	_
+5	ausländischen	ausländisch	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	6	amod	_	_
+6	Touristen	Tourist	NOUN	NN	Gender=Masc|Number=Plur|Person=3	16	nmod	_	_
+7	pro	pro	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	nmod	_	_
+9	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	nsubj	_	_
+12	hinter	hinter	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+13	London	London	PROPN	NE	Number=Sing|Person=3	16	nmod	_	_
+14	und	und	CCONJ	KON	_	15	cc	_	_
+15	Bangkok	Bangkok	PROPN	NE	Number=Sing|Person=3	13	conj	_	_
+16	eine	ein	PRON	PIS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Ind,Neg,Tot	0	root	_	_
+17	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	19	det	_	_
+18	meistbesuchten	meistbesuchten	ADJ	ADJA	_	19	amod	_	_
+19	Städte	Stadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	16	nmod	_	_
+20	weltweit	weltweit	ADJ	ADJD	Degree=Pos|Variant=Short	16	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	16	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -322,6 +407,70 @@
 21	Landes	Land	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	19	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	SpacesAfter=\n
 
+# sent_id = 7
+# text = Mit der Französischen Revolution kam ihr ab 1789 eine welthistorische Bedeutung zu.
+1	Mit	Mit	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	Französischen	französisch	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
+4	Revolution	Revolution	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obl	_	_
+5	kam	kommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	ihr	ihr	PRON	PPER	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+7	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	1789	1789	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	obl	_	_
+9	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	welthistorische	welthistorische	ADJ	ADJA	_	11	amod	_	_
+11	Bedeutung	Bedeutung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+12	zu	zu	ADP	PTKVZ	PartType=Vbp	5	compound:prt	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 8
+# text = Die Industrialisierung führte im 19. Jahrhundert zu einem enormen Bevölkerungszuwachs, sodass 1846 erstmals die Grenze von einer Million Einwohnern überschritten wurde.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Industrialisierung	Industrialisierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+3	führte	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	19.	19.	ADJ	ADJA	Person=3	6	amod	_	SpacesAfter= 
+6	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obl	_	_
+7	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+8	einem	einem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+9	enormen	enorm	ADJ	ADJA	Degree=Pos|Number=Sing	10	amod	_	_
+10	Bevölkerungszuwachs	Zuwachs	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+12	sodass	sodass	SCONJ	KOUS	_	21	mark	_	_
+13	1846	1846	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	obl	_	_
+14	erstmals	erstmals	ADV	ADV	_	21	advmod	_	_
+15	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Grenze	Grenze	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nsubj:pass	_	_
+17	von	von	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+18	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	Million	Million	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	nummod	_	_
+20	Einwohnern	Einwohner	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	16	nmod	_	_
+21	überschritten	überschreiten	VERB	VVPP	Aspect=Perf|VerbForm=Part	3	ccomp	_	_
+22	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 9
+# text = In den folgenden Jahrzehnten bekam die Stadt durch die sogenannte Belle Époque und sechs Weltausstellungen weltweite Beachtung.
+1	In	In	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+2	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	4	det	_	_
+3	folgenden	folgen	ADJ	ADJA	Degree=Pos|Number=Plur	4	amod	_	_
+4	Jahrzehnten	Jahrzehnt	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur|Person=3	5	obl	_	_
+5	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+8	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	12	case	_	_
+9	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+10	so	so	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
+11	genannte	nennen	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Belle	Belle	X	FM	Foreign=Yes|Person=3	5	obl	_	_
+13	Époque	Époque	X	FM	Foreign=Yes|Person=3	12	flat	_	_
+14	und	und	CCONJ	KON	_	16	cc	_	_
+15	sechs	sechs	NUM	CARD	Number=Plur|NumType=Card|Person=3	16	nummod	_	_
+16	Weltausstellungen	Weltausstellung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	conj	_	_
+17	weltweite	weltweit	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
+18	Beachtung	Beachtung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -329,7 +478,7 @@
 # newpar
 # sent_id = 1
 # text = Geografie
-1	Geografie	Geografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Geografie	Geografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -338,7 +487,7 @@
 # newpar
 # sent_id = 1
 # text = Lage
-1	Lage	Lage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Lage	Lage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -476,7 +625,7 @@
 # newpar
 # sent_id = 1
 # text = Klima
-1	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -650,7 +799,7 @@
 # newpar
 # sent_id = 1
 # text = Geologie
-1	Geologie	Geologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Geologie	Geologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -860,7 +1009,7 @@
 # newpar
 # sent_id = 1
 # text = Seine
-1	Seine	sein	PRON	PPOSAT	Case=Nom|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	0	root	_	SpacesAfter=\n
+1	Seine	sein	PRON	PPOSAT	Case=Nom|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1022,7 +1171,7 @@
 # newpar
 # sent_id = 1
 # text = Inseln
-1	Inseln	Insel	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Inseln	Insel	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1429,7 +1578,7 @@
 # newpar
 # sent_id = 1
 # text = Hügel
-1	Hügel	Hügel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Hügel	Hügel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1517,7 +1666,7 @@
 # newpar
 # sent_id = 1
 # text = Stadtgliederung
-1	Stadtgliederung	Stadtgliederung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Stadtgliederung	Stadtgliederung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1806,7 +1955,7 @@
 # newpar
 # sent_id = 1
 # text = Geschichte
-1	Geschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Geschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1815,7 +1964,7 @@
 # newpar
 # sent_id = 1
 # text = Antike
-1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2063,7 +2212,7 @@
 # newpar
 # sent_id = 1
 # text = Mittelalter
-1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2327,7 +2476,7 @@
 # newpar
 # sent_id = 1
 # text = Neuzeit
-1	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3232,6 +3381,93 @@
 24	ab	ab	ADP	PTKVZ	PartType=Vbp	5	compound:prt	_	SpaceAfter=No
 25	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = 1943/44 unterhielt die Kriegsmarine ein Marinelazarett in der Stadt.
+1	1943/44	1943/44	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	obl	_	_
+2	unterhielt	unterhalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Kriegsmarine	Marine	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	nsubj	_	_
+5	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
+6	Marinelazarett	Elazarett	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obj	_	_
+7	in	in	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+8	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	6	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 5
+# text = Von größeren Zerstörungen blieb die Stadt verschont.
+1	Von	Von	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
+2	größeren	groß	ADJ	ADJA	Case=Dat|Degree=Cmp|Number=Plur	3	amod	_	_
+3	Zerstörungen	Zerstörung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	obl	_	_
+4	blieb	bleiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+7	verschont	verschonen	VERB	VVPP	Aspect=Perf|VerbForm=Part	4	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 6
+# text = Bis zur Befreiung am 25. August 1944 war Paris von der deutschen Wehrmacht besetzt.
+1	Bis	Bis	ADP	APPR	AdpType=Prep	3	case	_	_
+2	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	3	case	_	_
+3	Befreiung	Befreiung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	obl	_	_
+4	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+5	25.	25.	ADJ	ADJA	Person=3	6	amod	_	SpacesAfter= 
+6	August	August	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+7	1944	1944	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	_
+8	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+9	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	14	nsubj:pass	_	_
+10	von	von	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+11	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	deutschen	deutsch	ADJ	ADJA	Degree=Pos|Number=Sing	13	amod	_	_
+13	Wehrmacht	Wehrmacht	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	obl	_	_
+14	besetzt	besetzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	14	punct	_	_
+
+# sent_id = 7
+# text = Der deutsche Stadtkommandant von Paris, General Dietrich von Choltitz (1894–1966), kapitulierte an diesem Tag und verweigerte damit einen Befehl Hitlers, Paris zu verteidigen oder „nur als Trümmerfeld in die Hand des Feindes fallen“ zu lassen.
+1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	deutsche	deutsch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	Stadtkommandant	Kommandant	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	nsubj	_	_
+4	von	von	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+5	Paris	Paris	PROPN	NE	Case=Dat|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+7	General	General	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
+8	Dietrich	Dietrich	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	flat:name	_	_
+9	von	von	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	Choltitz	Choltitz	PROPN	NE	Person=3	7	nmod	_	_
+11	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+12	1894–1966	1894–1966	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	appos	_	SpaceAfter=No
+13	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+15	kapitulierte	kapitulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+16	an	an	ADP	APPR	AdpType=Prep|Case=Dat	18	case	_	_
+17	diesem	dies	DET	PDAT	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	18	det	_	_
+18	Tag	Tag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	15	obl	_	_
+19	und	und	CCONJ	KON	_	20	cc	_	_
+20	verweigerte	verweigern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
+21	damit	damit	ADV	PROAV	_	20	advmod	_	_
+22	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Befehl	Befehl	NOUN	NN	Gender=Masc|Number=Sing|Person=3	20	obj	_	_
+24	Hitlers	Hitlers	PROPN	NE	Case=Gen|Number=Sing|Person=3	23	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	$,	PunctType=Comm	28	punct	_	_
+26	Paris	Paris	PROPN	NE	Case=Acc|Number=Sing|Person=3	28	obj	_	_
+27	zu	zu	PART	PTKZU	PartType=Inf	28	mark	_	_
+28	verteidigen	verteidigen	VERB	VVINF	VerbForm=Inf	23	xcomp	_	_
+29	oder	oder	CCONJ	KON	_	41	cc	_	_
+30	„	„	PUNCT	$(	PunctType=Brck	41	punct	_	SpaceAfter=No
+31	nur	nur	ADV	ADV	_	33	advmod	_	_
+32	als	als	CCONJ	KOKOM	ConjType=Comp	33	case	_	_
+33	Trümmerfeld	Feld	NOUN	NN	Gender=Neut|Number=Sing|Person=3	41	obl	_	_
+34	in	in	ADP	APPR	AdpType=Prep|Case=Acc	36	case	_	_
+35	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
+36	Hand	Hand	NOUN	NN	Gender=Fem|Number=Sing|Person=3	41	obl	_	_
+37	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	Feindes	Feind	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	36	nmod	_	_
+39	fallen“	fallen“	ADJ	ADJD	Degree=Pos|Variant=Short	41	xcomp	_	_
+40	zu	zu	PART	PTKZU	PartType=Inf	41	mark	_	_
+41	lassen	lassen	VERB	VVINF	VerbForm=Inf	28	conj	_	SpaceAfter=No
+42	.	.	PUNCT	$.	PunctType=Peri	15	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3505,7 +3741,7 @@
 # newpar
 # sent_id = 1
 # text = Hoheitssymbole
-1	Hoheitssymbole	Symbol	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Hoheitssymbole	Symbol	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3835,7 +4071,7 @@
 # newpar
 # sent_id = 1
 # text = Gesellschaft
-1	Gesellschaft	Gesellschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Gesellschaft	Gesellschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3844,7 +4080,7 @@
 # newpar
 # sent_id = 1
 # text = Demografie
-1	Demografie	Demografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Demografie	Demografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4121,7 +4357,7 @@
 # newpar
 # sent_id = 1
 # text = Einwanderung
-1	Einwanderung	Einwanderung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Einwanderung	Einwanderung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4623,7 +4859,7 @@
 # newpar
 # sent_id = 1
 # text = Religionen
-1	Religionen	Religion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Religionen	Religion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4765,7 +5001,7 @@
 # newpar
 # sent_id = 1
 # text = Politik
-1	Politik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Politik	Politik	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4774,7 +5010,7 @@
 # newpar
 # sent_id = 1
 # text = Stadtregierung
-1	Stadtregierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Stadtregierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5188,7 +5424,7 @@
 3	Conseil	Conseil	X	FM	Foreign=Yes|Person=3	1	appos	_	_
 4	de	de	X	FM	Foreign=Yes	3	flat	_	_
 5	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	3	flat:name	_	SpaceAfter=No
-6	)	)	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+6	)	)	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5348,7 +5584,7 @@
 # newpar
 # sent_id = 1
 # text = Städtepartnerschaften
-1	Städtepartnerschaften	Partnerschaft	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Städtepartnerschaften	Partnerschaft	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5402,7 +5638,7 @@
 # text = Kultur und Sehenswürdigkeiten
 1	Kultur	Kultur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Sehenswürdigkeiten	Sehenswürdigkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Sehenswürdigkeiten	Sehenswürdigkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5573,7 +5809,7 @@
 # newpar
 # sent_id = 1
 # text = Theater
-1	Theater	Theater	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Theater	Theater	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -6340,7 +6576,7 @@
 # newpar
 # sent_id = 1
 # text = Museen
-1	Museen	Museum	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Museen	Museum	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7179,7 +7415,7 @@
 # newpar
 # sent_id = 1
 # text = Bauwerke
-1	Bauwerke	Bauwerk	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Bauwerke	Bauwerk	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7188,7 +7424,7 @@
 # newpar
 # sent_id = 1
 # text = Brücken
-1	Brücken	Brücke	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Brücken	Brücke	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -7508,7 +7744,7 @@
 # text = Plätze und Straßen
 1	Plätze	Platz	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Straßen	Strasse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+3	Straßen	Strasse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8193,7 +8429,7 @@
 # sent_id = 1
 # text = Weltliche Bauwerke
 1	Weltliche	weltlich	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Bauwerke	Bauwerk	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Bauwerke	Bauwerk	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8202,7 +8438,7 @@
 # newpar
 # sent_id = 1
 # text = Antike
-1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Antike	antik	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8310,7 +8546,7 @@
 # newpar
 # sent_id = 1
 # text = Mittelalter
-1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -8673,7 +8909,7 @@
 # sent_id = 1
 # text = Frühe Neuzeit
 1	Frühe	früh	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9121,7 +9357,7 @@
 # sent_id = 1
 # text = 17. Jahrhundert
 1	17.	17.	ADJ	ADJA	Person=3	2	amod	_	_
-2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9389,7 +9625,7 @@
 # sent_id = 1
 # text = 18. Jahrhundert
 1	18.	18.	ADJ	ADJA	Person=3	2	amod	_	_
-2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -9931,7 +10167,7 @@
 # sent_id = 1
 # text = 19. Jahrhundert
 1	19.	19.	ADJ	ADJA	Person=3	2	amod	_	_
-2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -10582,7 +10818,7 @@
 # sent_id = 1
 # text = 20. Jahrhundert
 1	20.	20.	ADJ	ADJA	Person=3	2	amod	_	_
-2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11401,7 +11637,7 @@
 # sent_id = 1
 # text = 21. Jahrhundert
 1	21.	21.	ADJ	ADJA	Person=3	2	amod	_	_
-2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	Jahrhundert	Jahrhundert	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11537,7 +11773,7 @@
 13	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
 
 # sent_id = 9
-# text = Seit 2017 im Bau befinden sich die 180 m und 122 m hohen Tours Duo im 13. Bezirk im Südwesten der Stadt (geplante Fertigstellung 2020).[veraltet]
+# text = Seit 2017 im Bau befinden sich die 180 m und 122 m hohen Tours Duo im 13. Bezirk im Südwesten der Stadt (geplante Fertigstellung 2020).
 1	Seit	Seit	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
 2	2017	2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	obl	_	_
 3	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
@@ -11565,53 +11801,49 @@
 25	Fertigstellung	Fertigstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	14	appos	_	_
 26	2020	2020	NUM	CARD	Number=Plur|NumType=Card|Person=3	25	nmod	_	SpaceAfter=No
 27	)	)	PUNCT	$(	PunctType=Brck	25	punct	_	SpaceAfter=No
-28	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpaceAfter=No
-29	[	[	PUNCT	$(	PunctType=Brck	30	punct	_	SpaceAfter=No
-30	veraltet	veralten	VERB	VVPP	Aspect=Perf|VerbForm=Part	5	parataxis	_	SpaceAfter=No
-31	]	]	PUNCT	$(	PunctType=Brck	30	punct	_	_
+28	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
 
 # sent_id = 10
-# text = Laufende
-1	Laufende	laufen	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	0	root	_	_
+# text = Laufende Großprojekte sind der Umbau und die Aufstockung der Tour Montparnasse, die Erweiterung der Gare du Nord und die Errichtung der 180 m hohen Tour Triangle im 15.
+1	Laufende	laufen	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
+2	Großprojekte	Projekt	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
+3	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+4	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Umbau	Umbau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_
+6	und	und	CCONJ	KON	_	8	cc	_	_
+7	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Aufstockung	Stockung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	conj	_	_
+9	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Tour	Tour	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nmod	_	_
+11	Montparnasse	Parnasse	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	appos	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+13	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Erweiterung	Erweiterung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	conj	_	_
+15	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Gare	Gare	X	FM	Foreign=Yes|Person=3	14	nmod	_	_
+17	du	du	X	FM	Foreign=Yes|Person=3	16	flat	_	_
+18	Nord	Nord	X	FM	Foreign=Yes|Person=3	16	flat	_	_
+19	und	und	CCONJ	KON	_	21	cc	_	_
+20	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	Errichtung	Errichtung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	conj	_	_
+22	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+23	180	180	NUM	CARD	Number=Plur|NumType=Card|Person=3	24	nummod	_	SpacesAfter= 
+24	m	m	NOUN	NN	Gender=Masc|Number=Plur|Person=3	25	obl	_	_
+25	hohen	hoch	ADJ	ADJA	Degree=Pos|Number=Sing	26	amod	_	_
+26	Tour	Tour	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nmod	_	_
+27	Triangle	Triangle	PROPN	NE	Person=3	26	flat:name	_	_
+28	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	29	case	_	_
+29	15.	15.	ADJ	ADJA	Person=3	26	nmod	_	_
 
 # sent_id = 11
-# text = Großprojekte sind der Umbau und die Aufstockung der Tour Montparnasse, die Erweiterung der Gare du Nord und die Errichtung der 180 m hohen Tour Triangle im 15. Bezirk (geplanter Baubeginn 2020).[veraltet]
-1	Großprojekte	Projekt	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
-2	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
-3	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Umbau	Umbau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	nsubj	_	_
-5	und	und	CCONJ	KON	_	7	cc	_	_
-6	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Aufstockung	Stockung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	conj	_	_
-8	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Tour	Tour	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
-10	Montparnasse	Parnasse	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	appos	_	SpaceAfter=No
-11	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
-12	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	Erweiterung	Erweiterung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	_
-14	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Gare	Gare	X	FM	Foreign=Yes|Person=3	13	nmod	_	_
-16	du	du	X	FM	Foreign=Yes|Person=3	15	flat	_	_
-17	Nord	Nord	X	FM	Foreign=Yes|Person=3	15	flat	_	_
-18	und	und	CCONJ	KON	_	20	cc	_	_
-19	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Errichtung	Errichtung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	_
-21	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-22	180	180	NUM	CARD	Number=Plur|NumType=Card|Person=3	23	nummod	_	SpacesAfter= 
-23	m	m	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	obl	_	_
-24	hohen	hoch	ADJ	ADJA	Degree=Pos|Number=Sing	25	amod	_	_
-25	Tour	Tour	NOUN	NN	Gender=Fem|Number=Sing|Person=3	20	nmod	_	_
-26	Triangle	Triangle	PROPN	NE	Person=3	25	flat:name	_	_
-27	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	29	case	_	_
-28	15.	15.	ADJ	ADJA	Person=3	29	amod	_	_
-29	Bezirk	Bezirk	NOUN	NN	Gender=Masc|Number=Sing|Person=3	25	nmod	_	_
-30	(	(	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
-31	geplanter	planen	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	32	amod	_	_
-32	Baubeginn	Beginn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	25	appos	_	_
-33	2020)	2020)	NUM	CARD	Number=Plur|NumType=Card|Person=3	32	flat	_	SpaceAfter=No
-34	.[	.[	PUNCT	$.	PunctType=Peri	32	punct	_	SpaceAfter=No
-35	veraltet	veralten	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	parataxis	_	SpaceAfter=No
-36	]	]	PUNCT	$(	PunctType=Brck	35	punct	_	SpacesAfter=\n
+# text = Bezirk (geplanter Baubeginn 2020).
+1	Bezirk	Bezirk	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+2	(	(	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
+3	geplanter	planen	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	Baubeginn	Beginn	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
+5	2020	2020	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	SpaceAfter=No
+6	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
+7	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11620,7 +11852,7 @@
 # newpar
 # sent_id = 1
 # text = Kirchen
-1	Kirchen	Kirche	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Kirchen	Kirche	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -11629,7 +11861,7 @@
 # newpar
 # sent_id = 1
 # text = Mittelalter
-1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Mittelalter	Mittelalter	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12150,7 +12382,7 @@
 # newpar
 # sent_id = 1
 # text = Neuzeit
-1	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Neuzeit	Neuzeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12589,7 +12821,7 @@
 # newpar
 # sent_id = 1
 # text = Grünflächen
-1	Grünflächen	Grünfläche	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Grünflächen	Grünfläche	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -12865,7 +13097,7 @@
 2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
 3	Parks	Park	NOUN	NN	Gender=Masc|Number=Plur|Person=3	1	conj	_	_
 4	und	und	CCONJ	KON	_	5	cc	_	_
-5	Gärten	Gärten	NOUN	NN	Gender=Masc|Number=Plur|Person=3	1	conj	_	SpacesAfter=\n
+5	Gärten	Gärten	NOUN	NN	Gender=Masc|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13547,7 +13779,7 @@
 # newpar
 # sent_id = 1
 # text = Friedhöfe
-1	Friedhöfe	Friedhof	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Friedhöfe	Friedhof	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -13876,7 +14108,7 @@
 # newpar
 # sent_id = 1
 # text = Film
-1	Film	Film	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Film	Film	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14115,7 +14347,7 @@
 # newpar
 # sent_id = 1
 # text = Sport
-1	Sport	Sport	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Sport	Sport	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14124,7 +14356,7 @@
 # newpar
 # sent_id = 1
 # text = Sportveranstaltungen
-1	Sportveranstaltungen	Veranstaltung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Sportveranstaltungen	Veranstaltung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14363,7 +14595,7 @@
 # newpar
 # sent_id = 1
 # text = Sportstätten
-1	Sportstätten	Sportstätte	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Sportstätten	Sportstätte	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -14922,7 +15154,7 @@
 # sent_id = 1
 # text = Regelmäßige Veranstaltungen
 1	Regelmäßige	regelmäßig	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
-2	Veranstaltungen	Veranstaltung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+2	Veranstaltungen	Veranstaltung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -15779,7 +16011,7 @@
 # newpar
 # sent_id = 1
 # text = Gastronomie
-1	Gastronomie	Gastronomie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Gastronomie	Gastronomie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -16156,7 +16388,7 @@
 # newpar
 # sent_id = 1
 # text = Einkaufen
-1	Einkaufen	einkaufen	VERB	VVINF	VerbForm=Inf	0	root	_	SpacesAfter=\n
+1	Einkaufen	einkaufen	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -16683,7 +16915,7 @@
 1	Sehenswürdigkeiten	Sehenswürdigkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 2	in	in	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
 3	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Umgebung	Umgebung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpacesAfter=\n
+4	Umgebung	Umgebung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17232,7 +17464,7 @@
 # text = Wirtschaft und Infrastruktur
 1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Infrastruktur	Infrastruktur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Infrastruktur	Infrastruktur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17317,7 +17549,7 @@
 # newpar
 # sent_id = 1
 # text = Wirtschaft
-1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17811,7 +18043,7 @@
 # newpar
 # sent_id = 1
 # text = Verkehr
-1	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -17820,7 +18052,7 @@
 # newpar
 # sent_id = 1
 # text = Fernverkehr
-1	Fernverkehr	Fernverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Fernverkehr	Fernverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18329,7 +18561,7 @@
 # newpar
 # sent_id = 1
 # text = Nahverkehr
-1	Nahverkehr	Nahverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Nahverkehr	Nahverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18431,6 +18663,159 @@
 9	Menschen	Mensch	NOUN	NN	Gender=Masc|Number=Plur|Person=3	10	obl	_	_
 10	genutzt	nutzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Ergänzend zum Métro-Netz gibt es das Réseau Express Régional (RER), dessen Züge Paris mit den Vororten (Banlieues) verbinden.
+1	Ergänzend	ergänzen	ADJ	ADJD	Degree=Pos|Variant=Short	4	advcl	_	_
+2	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+3	Métro-Netz	Netz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	obl	_	_
+4	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	das	das	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	Réseau	Réseau	NOUN	NN	Person=3	4	obj	_	_
+8	Express	Express	PROPN	NE	Case=Nom|Number=Sing|Person=3	7	flat:name	_	_
+9	Régional	Régional	X	FM	Foreign=Yes|Person=3	7	flat	_	_
+10	(	(	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+11	RER	RER	PROPN	NE	Person=3	7	appos	_	SpaceAfter=No
+12	)	)	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	23	punct	_	_
+14	dessen	dessen	DET	PRELAT	PronType=Rel	15	det	_	_
+15	Züge	Zug	NOUN	NN	Gender=Masc|Number=Plur|Person=3	23	nsubj	_	_
+16	Paris	Paris	PROPN	NE	Case=Acc|Number=Sing|Person=3	23	obj	_	_
+17	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	19	case	_	_
+18	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	19	det	_	_
+19	Vororten	Vorort	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	23	obl	_	_
+20	(	(	PUNCT	$(	PunctType=Brck	21	punct	_	SpaceAfter=No
+21	Banlieues	Banlieues	NOUN	NN	Person=3	19	appos	_	SpaceAfter=No
+22	)	)	PUNCT	$(	PunctType=Brck	21	punct	_	_
+23	verbinden	verbinden	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 7
+# text = Zum RER-Netz gehören die Linien A bis E, die auf den zentralen Streckenabschnitten Zugfolgen von bis zu zwei Minuten erreichen.
+1	Zum	Zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	RER-Netz	Netz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	obj	_	_
+3	gehören	gehören	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	5	det	_	_
+5	Linien	Linie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	nsubj	_	_
+6	A	A	NOUN	NN	Gender=Neut|Number=Sing|Person=3	5	appos	_	_
+7	bis	bis	ADP	APPR	AdpType=Prep	8	case	_	_
+8	E	E	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+10	die	die	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	21	nsubj	_	_
+11	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+12	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	14	det	_	_
+13	zentralen	zentral	ADJ	ADJA	Degree=Pos|Number=Plur	14	amod	_	_
+14	Streckenabschnitten	Abschnitt	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	21	obl	_	_
+15	Zugfolgen	Zugfolge	NOUN	NN	Gender=Fem|Number=Plur|Person=3	21	obj	_	_
+16	von	von	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+17	bis	bis	ADP	APPR	AdpType=Prep	18	case	_	_
+18	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	19	nmod	_	_
+19	zwei	zwei	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	nummod	_	_
+20	Minuten	Minute	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	nmod	_	_
+21	erreichen	erreichen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = Das jetzige RER hat seine Ursprünge in den von der staatlichen französischen Eisenbahngesellschaft SNCF oder ihren Vorgängern stillgelegten Vorortbahnen, von denen eine Linie (der heutige südliche Abschnitt des RER B) schon 1937 von der Pariser Métro übernommen wurde.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+2	jetzige	jetzig	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	RER	RER	PROPN	NE	Person=3	4	nsubj	_	_
+4	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	seine	sein	PRON	PPOSAT	Case=Acc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	_	_
+6	Ursprünge	Ursprung	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	obj	_	_
+7	in	in	ADP	APPR	AdpType=Prep|Case=Dat	19	case	_	_
+8	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	19	det	_	_
+9	von	von	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+10	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+11	staatlichen	staatlich	ADJ	ADJA	Degree=Pos|Number=Sing	13	amod	_	_
+12	französischen	französisch	ADJ	ADJA	Degree=Pos|Number=Sing	13	amod	_	_
+13	Eisenbahngesellschaft	Gesellschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	obl	_	_
+14	SNCF	SNCF	PROPN	NE	Person=3	13	flat:name	_	_
+15	oder	oder	CCONJ	KON	_	17	cc	_	_
+16	ihren	sein	PRON	PPOSAT	Case=Dat|Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	det	_	_
+17	Vorgängern	Vorgänger	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	13	conj	_	_
+18	stillgelegten	stilllegen	ADJ	ADJA	Degree=Pos|Number=Plur	19	amod	_	_
+19	Vorortbahnen	Bahn	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	obl	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	40	punct	_	_
+21	von	von	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+22	denen	denen	PRON	PRELS	Case=Dat|Number=Plur|Person=3|PronType=Rel	40	obl	_	_
+23	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Linie	Linie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	40	nsubj:pass	_	_
+25	(	(	PUNCT	$(	PunctType=Brck	29	punct	_	SpaceAfter=No
+26	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+27	heutige	heutig	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
+28	südliche	südlich	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
+29	Abschnitt	Abschnitt	NOUN	NN	Gender=Masc|Number=Sing|Person=3	24	appos	_	_
+30	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	RER	RER	PROPN	NN	Person=3	29	nmod	_	_
+32	B	B	NOUN	NN	Gender=Neut|Number=Sing|Person=3	31	appos	_	SpaceAfter=No
+33	)	)	PUNCT	$(	PunctType=Brck	29	punct	_	_
+34	schon	schon	ADV	ADV	_	35	advmod	_	_
+35	1937	1937	NUM	CARD	Number=Plur|NumType=Card|Person=3	40	obl	_	_
+36	von	von	ADP	APPR	AdpType=Prep|Case=Dat	39	case	_	_
+37	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+38	Pariser	Pariser	ADJ	ADJA	Degree=Pos	39	amod	_	_
+39	Métro	Métro	NOUN	NN	Gender=Fem|Number=Sing|Person=3	40	obl	_	_
+40	übernommen	übernehmen	VERB	VVPP	Aspect=Perf|VerbForm=Part	19	acl	_	_
+41	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	aux:pass	_	SpaceAfter=No
+42	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 9
+# text = Von 1862 an bestand auch ein Personenverkehrsangebot auf einer Ringbahn entlang der Thiersschen Stadtbefestigung, dem Chemin de Fer de Petite Ceinture (deutsch „kleine Gürtelbahn“), die auch für den Güterverkehr genutzt wurde.
+1	Von	Von	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	1862	1862	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	obl	_	_
+3	an	an	ADP	APZR	AdpType=Circ	2	case	_	_
+4	bestand	bestehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	auch	auch	ADV	ADV	_	7	advmod	_	_
+6	ein	ein	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	Personenverkehrsangebot	Angebot	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
+8	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+9	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Ringbahn	Ringbahn	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
+11	entlang	entlang	ADP	APPR	AdpType=Prep	14	case	_	_
+12	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+13	Thiersschen	Thiersschen	ADJ	ADJA	_	14	amod	_	_
+14	Stadtbefestigung	Befestigung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+16	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Chemin	Chemin	X	FM	Foreign=Yes|Person=3	10	appos	_	_
+18	de	de	X	FM	Foreign=Yes	17	flat	_	_
+19	Fer	Fer	X	FM	Foreign=Yes|Person=3	17	flat	_	_
+20	de	de	X	FM	Foreign=Yes	17	flat	_	_
+21	Petite	Petite	X	FM	Foreign=Yes|Person=3	17	flat	_	_
+22	Ceinture	Ceinture	X	FM	Foreign=Yes|Person=3	17	flat	_	_
+23	(	(	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+24	deutsch	deutsch	ADJ	ADJD	Degree=Pos|Variant=Short	27	advmod	_	_
+25	„	„	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+26	kleine	klein	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	27	amod	_	_
+27	Gürtelbahn“	Bahn“	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	appos	_	SpaceAfter=No
+28	)	)	PUNCT	$(	PunctType=Brck	27	punct	_	SpaceAfter=No
+29	,	,	PUNCT	$,	PunctType=Comm	35	punct	_	_
+30	die	die	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	35	nsubj:pass	_	_
+31	auch	auch	ADV	ADV	_	34	advmod	_	_
+32	für	für	ADP	APPR	AdpType=Prep|Case=Acc	34	case	_	_
+33	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	Güterverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	35	obl	_	_
+35	genutzt	nutzen	VERB	VVPP	Aspect=Perf|VerbForm=Part	17	acl	_	_
+36	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	aux:pass	_	SpaceAfter=No
+37	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 10
+# text = Der Personenverkehr auf der Petite centure wurde 1934 zugunsten von Omnibuslinien eingestellt.
+1	Der	Der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Personenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	nsubj:pass	_	_
+3	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+4	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Petite	Petite	X	FM	Foreign=Yes|Person=3	2	nmod	_	_
+6	centure	centure	X	FM	Foreign=Yes|Person=3	5	flat	_	_
+7	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+8	1934	1934	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	obl	_	_
+9	zugunsten	zugunsten	ADP	APPR	AdpType=Prep|Case=Gen	11	case	_	_
+10	von	von	ADP	APPR	AdpType=Prep|Case=Dat	11	case	_	_
+11	Omnibuslinien	Linie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	obl	_	_
+12	eingestellt	einstellen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18631,6 +19016,266 @@
 18	Stationen	Station	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\n
 
+# sent_id = 7
+# text = Die neue Linie T3 führt entlang der Boulevards des Maréchaux in zwei Abschnitten von der Seine-Brücke Pont du Garigliano im Südwesten bis zur Porte de Vincennes im Osten von Paris und von dort zur Porte de la Chapelle im Norden der Stadt.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	neue	neu	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	Linie	Linie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_
+4	T3	T3	X	FM	Foreign=Yes|Person=3	3	appos	_	_
+5	führt	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	entlang	entlang	ADP	APPR	AdpType=Prep	8	case	_	_
+7	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	8	det	_	_
+8	Boulevards	Boulevards	NOUN	NN	Person=3	5	obl	_	_
+9	des	des	X	FM	Foreign=Yes|Person=3	8	flat	_	_
+10	Maréchaux	Maréchaux	PROPN	NE	Person=3	8	flat:name	_	_
+11	in	in	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+12	zwei	zwei	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	nummod	_	_
+13	Abschnitten	Abschnitt	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	5	obl	_	_
+14	von	von	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+15	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Seine-Brücke	Brücke	NOUN	NN	Gender=Fem|Number=Sing|Person=3	5	obl	_	_
+17	Pont	Pont	PROPN	NE	Person=3	16	flat:name	_	_
+18	du	du	PROPN	NE	Foreign=Yes|Person=3	17	flat:name	_	_
+19	Garigliano	Garigliano	PROPN	NE	Person=3	17	flat:name	_	_
+20	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	21	case	_	_
+21	Südwesten	Südwesten	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+22	bis	bis	ADP	APPR	AdpType=Prep	24	case	_	_
+23	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	24	case	_	_
+24	Porte	Porte	X	FM	Foreign=Yes|Person=3	5	obl	_	_
+25	de	de	PROPN	FM	Foreign=Yes	24	flat	_	_
+26	Vincennes	Vincennes	PROPN	NE	Foreign=Yes|Person=3	24	flat:name	_	_
+27	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	28	case	_	_
+28	Osten	Osten	NOUN	NN	Gender=Masc|Number=Sing|Person=3	24	nmod	_	_
+29	von	von	ADP	APPR	AdpType=Prep|Case=Dat	30	case	_	_
+30	Paris	Paris	PROPN	NE	Case=Dat|Number=Sing|Person=3	28	nmod	_	_
+31	und	und	CCONJ	KON	_	35	cc	_	_
+32	von	von	ADP	APPR	AdpType=Prep|Case=Dat	33	case	_	_
+33	dort	dort	ADV	ADV	_	35	nmod	_	_
+34	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	35	case	_	_
+35	Porte	Porte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	conj	_	_
+36	de	de	X	FM	Foreign=Yes	35	flat	_	_
+37	la	la	X	FM	Foreign=Yes|Person=3	35	flat	_	_
+38	Chapelle	Chapelle	PROPN	NE	Person=3	35	flat:name	_	_
+39	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	40	case	_	_
+40	Norden	Norden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	35	nmod	_	_
+41	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	40	nmod	_	SpaceAfter=No
+43	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
+
+# sent_id = 8
+# text = Die seit der Verlängerung im Dezember 2012 gut 22 Kilometer lange Strecke ist überwiegend als Rasengleis ausgeführt und für 270.000 Fahrgäste pro Tag ausgelegt.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+2	seit	seit	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+3	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Verlängerung	Verlängerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obl	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+6	Dezember	Dezember	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+7	2012	2012	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	nmod	_	_
+8	gut	gut	ADJ	ADJD	Degree=Pos|Variant=Short	9	advmod	_	_
+9	22	22	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	nummod	_	SpacesAfter= 
+10	Kilometer	Kilometer	NOUN	NN	Gender=Masc|Number=Plur|Person=3	11	obl	_	_
+11	lange	lang	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Strecke	Strecke	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nsubj:pass	_	_
+13	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:pass	_	_
+14	überwiegend	überwiegen	ADJ	ADJD	Degree=Pos|Variant=Short	17	advmod	_	_
+15	als	als	CCONJ	KOKOM	ConjType=Comp	16	case	_	_
+16	Rasengleis	Gleis	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+17	ausgeführt	ausführen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+18	und	und	CCONJ	KON	_	24	cc	_	_
+19	für	für	ADP	APPR	AdpType=Prep|Case=Acc	21	case	_	_
+20	270.000	270.000	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	nummod	_	_
+21	Fahrgäste	Fahrgast	NOUN	NN	Gender=Masc|Number=Plur|Person=3	24	obl	_	_
+22	pro	pro	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+23	Tag	Tag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	nmod	_	_
+24	ausgelegt	auslegen	VERB	VVPP	Aspect=Perf|VerbForm=Part	17	conj	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	_
+
+# sent_id = 9
+# text = Zugleich mit dem Streckenbau wurden die Straßen entlang der Strecke architektonisch neu gestaltet, eine Auflage der Pariser Behörden.
+1	Zugleich	Zugleich	ADV	ADV	_	4	advmod	_	_
+2	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+3	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Streckenbau	Streckenbau	NOUN	NN	Person=3	13	obl	_	_
+5	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	_	_
+6	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	7	det	_	_
+7	Straßen	Strasse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	13	nsubj:pass	_	_
+8	entlang	entlang	ADP	APPR	AdpType=Prep	10	case	_	_
+9	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Strecke	Strecke	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
+11	architektonisch	architektonisch	ADJ	ADJD	Degree=Pos|Variant=Short	13	advmod	_	_
+12	neu	neu	ADJ	ADJD	Degree=Pos|Variant=Short	13	advmod	_	_
+13	gestaltet	gestalten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+15	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Auflage	Auflage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	13	parataxis	_	_
+17	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	19	det	_	_
+18	Pariser	Pariser	ADJ	ADJA	Degree=Pos	19	amod	_	_
+19	Behörden	Behörde	NOUN	NN	Gender=Fem|Number=Plur|Person=3	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	13	punct	_	_
+
+# sent_id = 10
+# text = Dazu gehören auch zahlreiche neu gepflanzte Bäume, Freiluftkunstwerke und neu gestaltete Fahrrad- und Fußwege.
+1	Dazu	Dazu	ADV	PROAV	_	2	obj	_	_
+2	gehören	gehören	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	auch	auch	ADV	ADV	_	7	advmod	_	_
+4	zahlreiche	zahlreich	ADJ	ADJA	Degree=Pos|Number=Plur	7	amod	_	_
+5	neu	neu	ADJ	ADJD	Degree=Pos|Variant=Short	6	advmod	_	_
+6	gepflanzte	pflanzen	ADJ	ADJA	Degree=Pos|Number=Plur	7	amod	_	_
+7	Bäume	Baum	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+9	Freiluftkunstwerke	Werk	NOUN	NN	Gender=Neut|Number=Plur|Person=3	7	conj	_	_
+10	und	und	CCONJ	KON	_	13	cc	_	_
+11	neu	neu	ADJ	ADJD	Degree=Pos|Variant=Short	12	advmod	_	_
+12	gestaltete	gestalten	ADJ	ADJA	Degree=Pos|Number=Plur	13	amod	_	_
+13	Fahrrad-	Fahrrad-	NOUN	TRUNC	Hyph=Yes	7	conj	_	_
+14	und	und	CCONJ	KON	_	15	cc	_	_
+15	Fußwege	Fussweg	NOUN	NN	Gender=Masc|Number=Plur|Person=3	13	conj	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+
+# sent_id = 11
+# text = Paris ist auch von einem dichten Netz aus Buslinien durchzogen.
+1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	10	nsubj:pass	_	_
+2	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
+3	auch	auch	ADV	ADV	_	7	advmod	_	_
+4	von	von	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+5	einem	einem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+6	dichten	dicht	ADJ	ADJA	Degree=Pos|Number=Sing	7	amod	_	_
+7	Netz	Netz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	10	obl	_	_
+8	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+9	Buslinien	Buslinie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	7	nmod	_	_
+10	durchzogen	durchziehen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	_
+
+# sent_id = 12
+# text = Die Busse mit den dreistelligen Nummern fahren in die Vororte, die Busse mit zweistelligen Nummern verkehren nur innerhalb der Stadt.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Busse	Bus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	7	nsubj	_	_
+3	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+4	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	6	det	_	_
+5	dreistelligen	dreistelligen	ADJ	ADJA	_	6	amod	_	_
+6	Nummern	Nummer	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nmod	_	_
+7	fahren	fahren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	in	in	ADP	APPR	AdpType=Prep|Case=Acc	10	case	_	_
+9	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	10	det	_	_
+10	Vororte	Vorort	NOUN	NN	Gender=Masc|Number=Plur|Person=3	7	obl	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+12	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	13	det	_	_
+13	Busse	Bus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	17	nsubj	_	_
+14	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+15	zweistelligen	zweistellig	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	16	amod	_	_
+16	Nummern	Nummer	NOUN	NN	Gender=Fem|Number=Plur|Person=3	13	nmod	_	_
+17	verkehren	verkehren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+18	nur	nur	ADV	ADV	_	21	advmod	_	_
+19	innerhalb	innerhalb	ADP	APPR	AdpType=Prep	21	case	_	_
+20	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	obl	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 13
+# text = Die meisten Omnibusse fahren zwischen 6:30 Uhr und 20:30 Uhr, die wichtigsten Linien länger bis etwa 1 Uhr nachts.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	meisten	meist	ADJ	PIDAT	Degree=Sup|Number=Plur|Person=3	3	amod	_	_
+3	Omnibusse	Omnibus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	nsubj	_	_
+4	fahren	fahren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+6	6:30	6:30	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	nummod	_	SpacesAfter= 
+7	Uhr	Uhr	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+8	und	und	CCONJ	KON	_	10	cc	_	_
+9	20:30	20:30	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	nummod	_	SpacesAfter= 
+10	Uhr	Uhr	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	conj	_	SpaceAfter=No
+11	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+12	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	14	det	_	_
+13	wichtigsten	wichtig	ADJ	ADJA	Degree=Sup|Number=Plur	14	amod	_	_
+14	Linien	Linie	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	conj	_	_
+15	länger	lang	ADJ	ADJD	Degree=Cmp|Variant=Short	14	advmod	_	_
+16	bis	bis	ADP	APPR	AdpType=Prep	19	case	_	_
+17	etwa	etwa	ADV	ADV	_	18	advmod	_	_
+18	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	19	nummod	_	_
+19	Uhr	Uhr	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	obl	_	_
+20	nachts	nachts	ADV	ADV	_	19	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 14
+# text = Die Nachtbusse Noctilien verkehren täglich die ganze Nacht.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
+2	Nachtbusse	Bus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	nsubj	_	_
+3	Noctilien	Noctilien	PROPN	NE	Person=3	2	flat:name	_	_
+4	verkehren	verkehren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	täglich	täglich	ADJ	ADJD	Degree=Pos|Variant=Short	4	advmod	_	_
+6	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	ganze	ganz	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	Nacht	Nacht	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
+
+# sent_id = 15
+# text = Trolleybusse fuhren zum ersten Mal während der Weltausstellung in Paris zwischen April 1900 und November 1900, ein weiteres Mal zwischen 1912 und 1914 sowie nach einer Unterbrechung durch den Ersten Weltkrieg von April 1925 bis Juli 1935.
+1	Trolleybusse	Eybus	NOUN	NN	Gender=Masc|Number=Plur|Person=3	2	nsubj	_	_
+2	fuhren	fahren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	zum	zum	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
+4	ersten	NULL	ADJ	ADJA	Degree=Sup|Number=Sing	5	amod	_	_
+5	Mal	Mal	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	obl	_	_
+6	während	während	ADP	APPR	AdpType=Prep	8	case	_	_
+7	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Weltausstellung	Weltausstellung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	obl	_	_
+9	in	in	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+10	Paris	Paris	PROPN	NE	Case=Dat|Number=Sing|Person=3	8	nmod	_	_
+11	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+12	April	April	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	obl	_	_
+13	1900	1900	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	nmod	_	_
+14	und	und	CCONJ	KON	_	15	cc	_	_
+15	November	November	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	conj	_	_
+16	1900	1900	NUM	CARD	Number=Plur|NumType=Card|Person=3	15	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	$,	PunctType=Comm	20	punct	_	_
+18	ein	ein	DET	ART	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
+19	weiteres	weit	ADJ	ADJA	Degree=Cmp|Gender=Neut|Number=Sing	20	amod	_	_
+20	Mal	Mal	NOUN	NN	Gender=Neut|Number=Sing|Person=3	22	nmod	_	_
+21	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+22	1912	1912	NUM	CARD	Number=Plur|NumType=Card|Person=3	12	conj	_	_
+23	und	und	CCONJ	KON	_	24	cc	_	_
+24	1914	1914	NUM	CARD	Number=Plur|NumType=Card|Person=3	22	conj	_	_
+25	sowie	sowie	CCONJ	KON	_	37	cc	_	_
+26	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	28	case	_	_
+27	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	Unterbrechung	Unterbrechung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	37	nmod	_	_
+29	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	32	case	_	_
+30	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+31	Ersten	NULL	ADJ	ADJA	Case=Acc|Degree=Sup|Gender=Masc|Number=Sing	32	amod	_	_
+32	Weltkrieg	Weltkrieg	NOUN	NN	Gender=Masc|Number=Sing|Person=3	28	nmod	_	_
+33	von	von	ADP	APPR	AdpType=Prep|Case=Dat	34	case	_	_
+34	April	April	NOUN	NN	Gender=Masc|Number=Sing|Person=3	28	nmod	_	_
+35	1925	1925	NUM	CARD	Number=Plur|NumType=Card|Person=3	34	nmod	_	_
+36	bis	bis	ADP	APPR	AdpType=Prep	37	case	_	_
+37	Juli	Juli	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	conj	_	_
+38	1935	1935	NUM	CARD	Number=Plur|NumType=Card|Person=3	37	nmod	_	SpaceAfter=No
+39	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+
+# sent_id = 16
+# text = Nach einer siebeneinhalbjährigen Pause wurde der Betrieb noch während des Zweiten Weltkrieges im Januar 1943 wieder aufgenommen und im April 1966 endgültig eingestellt.
+1	Nach	Nach	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+2	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	siebeneinhalbjährigen	siebeneinhalbjährigen	ADJ	ADJA	_	4	amod	_	_
+4	Pause	Pause	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	obl	_	_
+5	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	_	_
+6	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Betrieb	Betrieb	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	nsubj:pass	_	_
+8	noch	noch	ADV	ADV	_	12	advmod	_	_
+9	während	während	ADP	APPR	AdpType=Prep	12	case	_	_
+10	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	Zweiten	zweit	ADJ	ADJA	Degree=Pos|Number=Sing	12	amod	_	_
+12	Weltkrieges	Weltkrieg	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+13	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	14	case	_	_
+14	Januar	Januar	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+15	1943	1943	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	nmod	_	_
+16	wieder	wieder	ADV	ADV	_	17	advmod	_	_
+17	aufgenommen	aufnehmen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+18	und	und	CCONJ	KON	_	23	cc	_	_
+19	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	20	case	_	_
+20	April	April	NOUN	NN	Gender=Masc|Number=Sing|Person=3	23	obl	_	_
+21	1966	1966	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	nmod	_	_
+22	endgültig	endgültig	ADJ	ADJD	Degree=Pos|Variant=Short	23	advmod	_	_
+23	eingestellt	einstellen	VERB	VVPP	Aspect=Perf|VerbForm=Part	17	conj	_	SpaceAfter=No
+24	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -18749,7 +19394,7 @@
 # newpar
 # sent_id = 1
 # text = Luftqualität
-1	Luftqualität	Qualität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Luftqualität	Qualität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18810,6 +19455,131 @@
 13	häufig	häufig	ADJ	ADJD	Degree=Pos|Variant=Short	14	advmod	_	_
 14	überschritten	überschreiten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
 15	.	.	PUNCT	$.	PunctType=Peri	14	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Die Stadtverwaltung erließ mehrere Maßnahmen, darunter sowohl zeitlich beschränkte als auch dauerhafte, um die Luftverschmutzung zu verringern und den Kraftverkehr zu reduzieren:
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Stadtverwaltung	Verwaltung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+3	erließ	erlassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	mehrere	mehrer	DET	PIAT	Case=Acc|Number=Plur|Person=3|PronType=Ind,Neg,Tot	5	det	_	_
+5	Maßnahmen	Massnahme	NOUN	NN	Gender=Fem|Number=Plur|Person=3	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+7	darunter	darunter	ADV	PROAV	_	10	advmod	_	_
+8	sowohl	sowohl	CCONJ	KON	_	10	cc	_	_
+9	zeitlich	zeitlich	ADJ	ADJD	Degree=Pos|Variant=Short	10	advmod	_	_
+10	beschränkte	beschränken	ADJ	ADJA	Degree=Pos|Number=Plur	5	conj	_	_
+11	als	als	CCONJ	KOKOM	ConjType=Comp	13	mark	_	_
+12	auch	auch	ADV	ADV	_	13	advmod	_	_
+13	dauerhafte	dauerhaft	ADJ	ADJA	Degree=Pos|Number=Plur	10	advcl	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+15	um	um	SCONJ	KOUI	_	19	mark	_	_
+16	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Luftverschmutzung	Verschmutzung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	obj	_	_
+18	zu	zu	PART	PTKZU	PartType=Inf	19	mark	_	_
+19	verringern	verringern	VERB	VVINF	VerbForm=Inf	3	advcl	_	_
+20	und	und	CCONJ	KON	_	24	cc	_	_
+21	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Kraftverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	24	obj	_	_
+23	zu	zu	PART	PTKZU	PartType=Inf	24	mark	_	_
+24	reduzieren	reduzieren	VERB	VVINF	VerbForm=Inf	19	conj	_	SpaceAfter=No
+25	:	:	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 5
+# text = Bereits im Jahr 2013 wurde die südliche Seineuferstraße im Bereich der Innenstadt für den Autoverkehr gesperrt und in eine Fußgängerzone umgewandelt, im September 2016 folgte die nördlichen Uferstraße.
+1	Bereits	Bereits	ADV	ADV	_	3	advmod	_	_
+2	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+3	Jahr	Jahr	NOUN	NN	Gender=Neut|Number=Sing|Person=3	16	obl	_	_
+4	2013	2013	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	_
+5	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
+6	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	südliche	südlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	Seineuferstraße	Strasse	NOUN	NN	Gender=Fem|Number=Sing|Person=3	16	nsubj:pass	_	_
+9	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	10	case	_	_
+10	Bereich	Bereich	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+11	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Innenstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+13	für	für	ADP	APPR	AdpType=Prep|Case=Acc	15	case	_	_
+14	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Autoverkehr	Autoverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+16	gesperrt	sperren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+17	und	und	CCONJ	KON	_	21	cc	_	_
+18	in	in	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
+19	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Fußgängerzone	Zone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	obl	_	_
+21	umgewandelt	umwandeln	VERB	VVPP	Aspect=Perf|VerbForm=Part	16	conj	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
+23	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	24	case	_	_
+24	September	September	NOUN	NN	Gender=Masc|Number=Sing|Person=3	26	obl	_	_
+25	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	24	nmod	_	_
+26	folgte	folgen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_
+27	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+28	nördlichen	nördlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	29	amod	_	_
+29	Uferstraße	Strasse	NOUN	NN	Gender=Fem|Number=Sing|Person=3	26	nsubj	_	SpaceAfter=No
+30	.	.	PUNCT	$.	PunctType=Peri	16	punct	_	_
+
+# sent_id = 6
+# text = Im Oktober 2015 ordnete Hidalgo einen autofreien Tag für einen kleinen Teil der Innenstadt an.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Oktober	Oktober	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+3	2015	2015	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	_
+4	ordnete	ordnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Hidalgo	Hidalgo	PROPN	NE	Person=3	4	nsubj	_	_
+6	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+7	autofreien	autofrei	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	Tag	Tag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obj	_	_
+9	für	für	ADP	APPR	AdpType=Prep|Case=Acc	12	case	_	_
+10	einen	einen	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	kleinen	klein	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	_
+12	Teil	Teil	NOUN	NN	Number=Sing|Person=3	8	nmod	_	_
+13	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Innenstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	nmod	_	_
+15	an	an	ADP	PTKVZ	PartType=Vbp	4	compound:prt	_	SpaceAfter=No
+16	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 7
+# text = Seit Mai 2016 werden die Champs-Elysées am jeweils ersten Sonntag des Monats für den Kraftverkehr gesperrt.
+1	Seit	Seit	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	Mai	Mai	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+3	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nmod	_	_
+4	werden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
+5	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	6	det	_	_
+6	Champs-Elysées	unknown	NOUN	NN	Person=3	16	nsubj:pass	_	_
+7	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	10	case	_	_
+8	jeweils	jeweils	ADV	ADV	_	9	advmod	_	_
+9	ersten	NULL	ADJ	ADJA	Degree=Sup|Number=Sing	10	amod	_	_
+10	Sonntag	Sonntag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+11	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Monats	Monat	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+13	für	für	ADP	APPR	AdpType=Prep|Case=Acc	15	case	_	_
+14	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Kraftverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+16	gesperrt	sperren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	16	punct	_	_
+
+# sent_id = 8
+# text = 2016 wurden am Wochenende nach dem weltweiten autofreien Tag, dem 22. September, über 640 Kilometer für motorisierten Verkehr gesperrt.
+1	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	21	obl	_	_
+2	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+3	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	4	case	_	_
+4	Wochenende	Wochenende	NOUN	NN	Gender=Neut|Number=Sing|Person=3	21	obl	_	_
+5	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+6	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+7	weltweiten	weltweit	ADJ	ADJA	Degree=Pos|Number=Sing	9	amod	_	_
+8	autofreien	autofreien	ADJ	ADJA	_	9	amod	_	_
+9	Tag	Tag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	obl	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+11	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+12	22.	22.	ADJ	ADJA	Person=3	13	amod	_	SpacesAfter= 
+13	September	September	NOUN	NN	Gender=Masc|Number=Sing|Person=3	9	appos	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+15	über	über	ADV	ADV	_	16	advmod	_	_
+16	640	640	NUM	CARD	Number=Plur|NumType=Card|Person=3	17	nummod	_	SpacesAfter= 
+17	Kilometer	Kilometer	NOUN	NN	Gender=Masc|Number=Plur|Person=3	21	nsubj:pass	_	_
+18	für	für	ADP	APPR	AdpType=Prep|Case=Acc	20	case	_	_
+19	motorisierten	motorisieren	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	_
+20	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	obl	_	_
+21	gesperrt	sperren	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+22	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -18873,6 +19643,112 @@
 53	eingeführt	einführen	VERB	VVPP	Aspect=Perf|VerbForm=Part	46	conj	_	SpaceAfter=No
 54	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Seit Sonntag, 15. Januar 2017, wurde eine Umweltzone in der Innenstadt, die Zone à circulation restreinte, eingerichtet, die auch für Fahrzeuge aus dem Ausland gilt.
+1	Seit	Seit	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	Sonntag	Sonntag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	obl	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+4	15.	15.	ADJ	ADJA	Person=3	5	amod	_	SpacesAfter= 
+5	Januar	Januar	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
+6	2017	2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+8	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+9	eine	eine	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Umweltzone	Zone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nsubj:pass	_	_
+11	in	in	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
+12	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	Innenstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+15	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Zone	Zone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	appos	_	_
+17	à	à	X	FM	Foreign=Yes|Person=3	16	appos	_	_
+18	circulation	circulation	X	FM	Foreign=Yes|Person=3	17	flat	_	_
+19	restreinte	restreinte	X	FM	Foreign=Yes|Person=3	17	flat	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	16	punct	_	_
+21	eingerichtet	einrichten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	30	punct	_	_
+23	die	die	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	30	nsubj	_	_
+24	auch	auch	ADV	ADV	_	26	advmod	_	_
+25	für	für	ADP	APPR	AdpType=Prep|Case=Acc	26	case	_	_
+26	Fahrzeuge	Fahrzeug	NOUN	NN	Gender=Neut|Number=Plur|Person=3	30	obl	_	_
+27	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	29	case	_	_
+28	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	29	det	_	_
+29	Ausland	Ausland	NOUN	NN	Gender=Neut|Number=Sing|Person=3	26	nmod	_	_
+30	gilt	gelten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl	_	SpaceAfter=No
+31	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	_
+
+# sent_id = 3
+# text = Ausgenommen ist die Stadtautobahn Boulevard périphérique.
+1	Ausgenommen	ausnehmen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+2	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	aux:pass	_	_
+3	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Stadtautobahn	Autobahn	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nsubj:pass	_	_
+5	Boulevard	Boulevard	X	FM	Foreign=Yes|Person=3	4	appos	_	_
+6	périphérique	périphérique	X	FM	Foreign=Yes|Person=3	5	flat	_	SpaceAfter=No
+7	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
+
+# sent_id = 4
+# text = Die erforderliche Plakette ist nach Schadstoffklassen gestaffelt und erlaubt differenziertere Fahrverbote je nach Belastung.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	erforderliche	erforderlich	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	Plakette	Plakette	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nsubj:pass	_	_
+4	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+5	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+6	Schadstoffklassen	Klasse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	7	obl	_	_
+7	gestaffelt	staffeln	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
+8	und	und	CCONJ	KON	_	9	cc	_	_
+9	erlaubt	erlauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+10	differenziertere	differenziertere	ADJ	ADJA	Degree=Cmp|Number=Plur	11	amod	_	_
+11	Fahrverbote	Verbot	NOUN	NN	Gender=Neut|Number=Plur|Person=3	9	obj	_	_
+12	je	je	ADV	ADV	_	14	advmod	_	_
+13	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	14	case	_	_
+14	Belastung	Belastung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	obl	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 5
+# text = Bürgermeisterin Anne Hidalgo beabsichtigt die Zahl der Personenkraftwagen langfristig zu halbieren und damit vor allem die Luftqualität bezüglich Stickstoffdioxid und der Feinstaubwerte zu verbessern.
+1	Bürgermeisterin	Meisterin	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+2	Anne	Anne	PROPN	NE	Gender=Fem|Number=Sing|Person=3	1	flat:name	_	_
+3	Hidalgo	Hidalgo	PROPN	NE	Person=3	1	flat:name	_	_
+4	beabsichtigt	beabsichtigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Zahl	Zahl	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obj	_	_
+7	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	8	det	_	_
+8	Personenkraftwagen	Kraftwagen	NOUN	NN	Gender=Masc|Number=Plur|Person=3	6	nmod	_	_
+9	langfristig	langfristig	ADJ	ADJD	Degree=Pos|Variant=Short	11	advmod	_	_
+10	zu	zu	PART	PTKZU	PartType=Inf	11	mark	_	_
+11	halbieren	halbieren	VERB	VVINF	VerbForm=Inf	4	xcomp	_	_
+12	und	und	CCONJ	KON	_	24	cc	_	_
+13	damit	damit	ADV	PROAV	_	24	advmod	_	_
+14	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+15	allem	all	PRON	PIS	Case=Dat|Gender=Neut|Number=Sing|Person=3|PronType=Ind,Neg,Tot	17	nmod	_	_
+16	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Luftqualität	Qualität	NOUN	NN	Gender=Fem|Number=Sing|Person=3	24	obj	_	_
+18	bezüglich	bezüglich	ADP	APPR	AdpType=Prep	19	case	_	_
+19	Stickstoffdioxid	Offdioxid	NOUN	NN	Gender=Neut|Number=Sing|Person=3	17	nmod	_	_
+20	und	und	CCONJ	KON	_	22	cc	_	_
+21	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	22	det	_	_
+22	Feinstaubwerte	Aubwert	NOUN	NN	Gender=Masc|Number=Plur|Person=3	19	conj	_	_
+23	zu	zu	PART	PTKZU	PartType=Inf	24	mark	_	_
+24	verbessern	verbessern	VERB	VVINF	VerbForm=Inf	11	conj	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 6
+# text = Per 30. August 2021 wurde auf den meisten Straßen Tempo 30 eingeführt.
+1	Per	Per	ADP	APPR	AdpType=Prep	3	case	_	_
+2	30.	30.	ADJ	ADJA	Person=3	3	amod	_	_
+3	August	August	NOUN	NN	Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+4	2021	2021	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	_
+5	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+6	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
+7	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	9	det	_	_
+8	meisten	meist	ADJ	PIDAT	Degree=Sup|Number=Plur|Person=3	9	amod	_	_
+9	Straßen	Strasse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	obl	_	_
+10	Tempo	Tempo	NOUN	NN	Gender=Neut|Number=Sing|Person=3	12	nsubj:pass	_	_
+11	30	30	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	flat	_	_
+12	eingeführt	einführen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -18882,7 +19758,7 @@
 # text = Wissenschaft und Bildung
 1	Wissenschaft	Wissenschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Bildung	Bildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
+3	Bildung	Bildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -19563,7 +20439,7 @@
 # newpar
 # sent_id = 1
 # text = Persönlichkeiten
-1	Persönlichkeiten	Persönlichkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Persönlichkeiten	Persönlichkeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -19572,7 +20448,7 @@
 # newpar
 # sent_id = 1
 # text = Ehrenbürger
-1	Ehrenbürger	Bürger	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Ehrenbürger	Bürger	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -19738,7 +20614,7 @@
 2	und	und	CCONJ	KON	_	3	cc	_	_
 3	Töchter	Tochter	NOUN	NN	Gender=Fem|Number=Plur|Person=3	1	conj	_	_
 4	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	SpacesAfter=\n
+5	Stadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -19904,7 +20780,7 @@
 4	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
 5	Ort	Ort	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	obl	_	_
 6	gewirkt	wirken	VERB	VVPP	Aspect=Perf|VerbForm=Part	1	acl	_	_
-7	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	SpacesAfter=\n
+7	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20184,7 +21060,7 @@
 # sent_id = 1
 # text = Siehe auch
 1	Siehe	sehen	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
-2	auch	auch	ADV	ADV	_	1	advmod	_	SpacesAfter=\n
+2	auch	auch	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20193,7 +21069,7 @@
 # newpar
 # sent_id = 1
 # text = Literatur
-1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20202,7 +21078,7 @@
 # newpar
 # sent_id = 1
 # text = Weblinks
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20211,7 +21087,7 @@
 # newpar
 # sent_id = 1
 # text = Einzelnachweise
-1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20219,12 +21095,141 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Brüssel (Belgien) |
+# text = Brüssel (Belgien) | Sofia (Bulgarien) | Kopenhagen (Dänemark) | Berlin (Deutschland) | Tallinn (Estland) | Helsinki (Finnland) | Paris (Frankreich) | Athen (Griechenland) | Dublin (Irland) | Rom (Italien) | Zagreb (Kroatien) | Riga (Lettland) | Vilnius (Litauen) | Luxemburg (Luxemburg) | Valletta (Malta) | Amsterdam (Niederlande) | Wien (Österreich) | Warschau (Polen) | Lissabon (Portugal) | Bukarest (Rumänien) | Stockholm (Schweden) | Bratislava (Slowakei) | Ljubljana (Slowenien) | Madrid (Spanien) | Prag (Tschechien) | Budapest (Ungarn) | Nikosia (Zypern)
 1	Brüssel	Brüssel	PROPN	NE	Person=3	0	root	_	_
 2	(	(	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
 3	Belgien	Belgien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpaceAfter=No
 4	)	)	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	|	|	PROPN	$.	Person=3	1	appos	_	SpacesAfter=\n
+5	|	|	PUNCT	$(	_	1	punct	_	SpacesAfter=\n
+6	Sofia	Sofia	PROPN	NE	Person=3	1	appos	_	_
+7	(	(	PUNCT	$(	PunctType=Brck	43	punct	_	SpaceAfter=No
+8	Bulgarien	Bulgarien	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpaceAfter=No
+9	)	)	PUNCT	$(	PunctType=Brck	43	punct	_	_
+10	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+11	Kopenhagen	Kopenhagen	PROPN	NE	Number=Sing|Person=3	3	appos	_	_
+12	(	(	PUNCT	$(	PunctType=Brck	43	punct	_	SpaceAfter=No
+13	Dänemark	Dänemark	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpaceAfter=No
+14	)	)	PUNCT	$(	PunctType=Brck	43	punct	_	_
+15	|	|	PUNCT	$(	PunctType=Brck	16	punct	_	SpacesAfter=\n
+16	Berlin	Berlin	PROPN	NE	Number=Sing|Person=3	3	appos	_	_
+17	(	(	PUNCT	$(	PunctType=Brck	53	punct	_	SpaceAfter=No
+18	Deutschland	Deutschland	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpaceAfter=No
+19	)	)	PUNCT	$(	PunctType=Brck	53	punct	_	_
+20	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+21	Tallinn	Tallinn	PROPN	NE	Number=Sing|Person=3	3	appos	_	_
+22	(	(	PUNCT	$(	PunctType=Brck	43	punct	_	SpaceAfter=No
+23	Estland	Estland	PROPN	NE	Person=3	46	appos	_	SpaceAfter=No
+24	)	)	PUNCT	$(	PunctType=Brck	13	punct	_	_
+25	|	|	PUNCT	$(	_	46	punct	_	SpacesAfter=\n
+26	Helsinki	Helsinki	PROPN	NE	Number=Sing|Person=3	3	conj	_	_
+27	(	(	PUNCT	$(	PunctType=Brck	38	punct	_	SpaceAfter=No
+28	Finnland	Finnland	PROPN	NE	Number=Sing|Person=3	26	appos	_	SpaceAfter=No
+29	)	)	PUNCT	$(	PunctType=Brck	8	punct	_	_
+30	|	|	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
+31	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	3	appos	_	_
+32	(	(	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
+33	Frankreich	Frankreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
+34	)	)	PUNCT	$(	PunctType=Brck	8	punct	_	_
+35	|	|	PUNCT	$(	PunctType=Brck	36	punct	_	SpacesAfter=\n
+36	Athen	Athen	PROPN	NE	Person=3	123	appos	_	_
+37	(	(	PUNCT	$(	PunctType=Brck	53	punct	_	SpaceAfter=No
+38	Griechenland	Griechenland	PROPN	NE	Person=3	116	appos	_	SpaceAfter=No
+39	)	)	PUNCT	$(	PunctType=Brck	53	punct	_	_
+40	|	|	PUNCT	$(	PunctType=Brck	41	punct	_	SpacesAfter=\n
+41	Dublin	Dublin	PROPN	NE	Number=Sing|Person=3	123	appos	_	_
+42	(	(	PUNCT	$(	PunctType=Brck	43	punct	_	SpaceAfter=No
+43	Irland	Irland	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpaceAfter=No
+44	)	)	PUNCT	$(	PunctType=Brck	43	punct	_	_
+45	|	|	PUNCT	$(	PunctType=Brck	46	punct	_	SpacesAfter=\n
+46	Rom	Rom	PROPN	NE	Number=Sing|Person=3	3	conj	_	_
+47	(	(	PUNCT	$(	PunctType=Brck	48	punct	_	SpaceAfter=No
+48	Italien	Italien	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpaceAfter=No
+49	)	)	PUNCT	$(	PunctType=Brck	48	punct	_	_
+50	|	|	PUNCT	NE	_	51	punct	_	SpacesAfter=\n
+51	Zagreb	Zagreb	PROPN	NE	Person=3	53	appos	_	_
+52	(	(	PUNCT	$(	PunctType=Brck	53	punct	_	SpaceAfter=No
+53	Kroatien	Kroatien	PROPN	NE	Number=Sing|Person=3	46	appos	_	SpaceAfter=No
+54	)	)	PUNCT	$(	PunctType=Brck	53	punct	_	_
+55	|	|	PUNCT	$(	PunctType=Brck	56	punct	_	SpacesAfter=\n
+56	Riga	Riga	PROPN	NE	Number=Sing|Person=3	53	conj	_	_
+57	(	(	PUNCT	$(	PunctType=Brck	58	punct	_	SpaceAfter=No
+58	Lettland	Lettland	PROPN	NE	Person=3	46	appos	_	SpaceAfter=No
+59	)	)	PUNCT	$(	PunctType=Brck	63	punct	_	_
+60	|	|	PUNCT	$(	_	61	punct	_	SpacesAfter=\n
+61	Vilnius	Vilnius	PROPN	NE	Person=3	58	appos	_	_
+62	(	(	PUNCT	$(	PunctType=Brck	63	punct	_	SpaceAfter=No
+63	Litauen	Litauen	PROPN	NE	Number=Sing|Person=3	61	appos	_	SpaceAfter=No
+64	)	)	PUNCT	$(	PunctType=Brck	63	punct	_	_
+65	|	|	PUNCT	$(	PunctType=Brck	66	punct	_	SpacesAfter=\n
+66	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	63	appos	_	_
+67	(	(	PUNCT	$(	PunctType=Brck	68	punct	_	SpaceAfter=No
+68	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	61	appos	_	SpaceAfter=No
+69	)	)	PUNCT	$(	PunctType=Brck	68	punct	_	_
+70	|	|	PUNCT	$(	PunctType=Brck	71	punct	_	SpacesAfter=\n
+71	Valletta	Valletta	PROPN	NE	Person=3	73	appos	_	_
+72	(	(	PUNCT	$(	PunctType=Brck	73	punct	_	SpaceAfter=No
+73	Malta)	Malta)	PROPN	NE	Person=3	66	appos	_	_
+74	|	|	PUNCT	NE	_	73	punct	_	SpacesAfter=\n
+75	Amsterdam	Amsterdam	PROPN	NE	Person=3	73	appos	_	_
+76	(	(	PUNCT	$(	PunctType=Brck	77	punct	_	SpaceAfter=No
+77	Niederlande	Niederlande	PROPN	NE	Number=Plur|Person=3	75	appos	_	SpaceAfter=No
+78	)	)	PUNCT	$(	PunctType=Brck	77	punct	_	_
+79	|	|	PUNCT	$(	PunctType=Brck	80	punct	_	SpacesAfter=\n
+80	Wien	Wien	PROPN	NE	Number=Sing|Person=3	73	appos	_	_
+81	(	(	PUNCT	$(	PunctType=Brck	82	punct	_	SpaceAfter=No
+82	Österreich	Österreich	PROPN	NE	Case=Nom|Number=Sing|Person=3	80	appos	_	SpaceAfter=No
+83	)	)	PUNCT	$(	PunctType=Brck	82	punct	_	_
+84	|	|	PUNCT	$(	PunctType=Brck	85	punct	_	SpacesAfter=\n
+85	Warschau	Warschau	PROPN	NE	Number=Sing|Person=3	73	appos	_	_
+86	(	(	PUNCT	$(	PunctType=Brck	87	punct	_	SpaceAfter=No
+87	Polen	Polen	PROPN	NE	Number=Sing|Person=3	85	appos	_	SpaceAfter=No
+88	)	)	PUNCT	$(	PunctType=Brck	87	punct	_	_
+89	|	|	PUNCT	$(	PunctType=Brck	90	punct	_	SpacesAfter=\n
+90	Lissabon	Lissabon	PROPN	NE	Person=3	87	appos	_	_
+91	(	(	PUNCT	$(	PunctType=Brck	92	punct	_	SpaceAfter=No
+92	Portugal	Portugal	PROPN	NE	Number=Sing|Person=3	85	appos	_	SpaceAfter=No
+93	)	)	PUNCT	$(	PunctType=Brck	92	punct	_	_
+94	|	|	PUNCT	$(	_	95	punct	_	SpacesAfter=\n
+95	Bukarest	Bukarest	PROPN	NE	Person=3	82	appos	_	_
+96	(	(	PUNCT	$(	PunctType=Brck	97	punct	_	SpaceAfter=No
+97	Rumänien	Rumänien	PROPN	NE	Number=Sing|Person=3	95	appos	_	SpaceAfter=No
+98	)	)	PUNCT	$(	PunctType=Brck	97	punct	_	_
+99	|	|	PUNCT	$(	_	100	punct	_	SpacesAfter=\n
+100	Stockholm	Stockholm	PROPN	NE	Number=Sing|Person=3	87	appos	_	_
+101	(	(	PUNCT	$(	PunctType=Brck	102	punct	_	SpaceAfter=No
+102	Schweden	Schweden	PROPN	NE	Number=Sing|Person=3	100	appos	_	SpaceAfter=No
+103	)	)	PUNCT	$(	PunctType=Brck	102	punct	_	_
+104	|	|	PUNCT	NE	_	105	punct	_	SpacesAfter=\n
+105	Bratislava	Bratislava	PROPN	NE	Person=3	102	appos	_	_
+106	(	(	PUNCT	$(	PunctType=Brck	107	punct	_	SpaceAfter=No
+107	Slowakei	Slowakei	PROPN	NE	Person=3	100	appos	_	SpaceAfter=No
+108	)	)	PUNCT	$(	PunctType=Brck	107	punct	_	_
+109	|	|	PUNCT	NE	_	110	punct	_	SpacesAfter=\n
+110	Ljubljana	Ljubljana	PROPN	NE	Person=3	107	appos	_	_
+111	(	(	PUNCT	$(	PunctType=Brck	112	punct	_	SpaceAfter=No
+112	Slo	Slo	PROPN	NE	Person=3	110	appos	_	SpaceAfter=No
+113	wenien	wenien	PROPN	NE	Number=Sing|Person=3	112	flat:name	_	SpaceAfter=No
+114	)	)	PUNCT	$(	PunctType=Brck	112	punct	_	_
+115	|	|	PUNCT	$(	PunctType=Brck	116	punct	_	SpacesAfter=\n
+116	Madrid	Madrid	PROPN	NE	Number=Sing|Person=3	112	appos	_	_
+117	(	(	PUNCT	$(	PunctType=Brck	118	punct	_	SpaceAfter=No
+118	Spanien	Spanien	PROPN	NE	Number=Sing|Person=3	116	appos	_	SpaceAfter=No
+119	)	)	PUNCT	$(	PunctType=Brck	118	punct	_	_
+120	|	|	PUNCT	NE	_	121	punct	_	SpacesAfter=\n
+121	Prag	Prag	PROPN	NE	Person=3	118	appos	_	_
+122	(	(	PUNCT	$(	PunctType=Brck	123	punct	_	SpaceAfter=No
+123	Tschechien	unknown	PROPN	NE	Person=3	121	appos	_	SpaceAfter=No
+124	)	)	PUNCT	$(	PunctType=Brck	123	punct	_	_
+125	|	|	PUNCT	NE	_	126	appos	_	SpacesAfter=\n
+126	Budapest	Budapest	PROPN	NE	Person=3	123	appos	_	_
+127	(	(	PUNCT	$(	PunctType=Brck	128	punct	_	SpaceAfter=No
+128	Ungarn	Ungarn	PROPN	NE	Number=Sing|Person=3	126	appos	_	SpaceAfter=No
+129	)	)	PUNCT	$(	PunctType=Brck	128	punct	_	_
+130	|	|	X	NE	Foreign=Yes|Person=3	128	appos	_	SpacesAfter=\n
+131	Nikosia	Nikosia	PROPN	NE	Person=3	128	appos	_	_
+132	(	(	PUNCT	$(	PunctType=Brck	133	punct	_	SpaceAfter=No
+133	Zypern	Zypern	PROPN	NE	Person=3	131	appos	_	SpaceAfter=No
+134	)	)	PUNCT	$(	PunctType=Brck	133	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20236,9 +21241,326 @@
 1	01	01	NUM	CARD	Number=Plur|NumType=Card|Person=3	0	root	_	_
 
 # sent_id = 2
-# text = Ain |
-1	Ain	Ain	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
-2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+# text = Ain | 02 Aisne | 03 Allier | 04 Alpes-de-Haute-Provence | 05 Hautes-Alpes | 06 Alpes-Maritimes | 07 Ardèche | 08 Ardennes | 09 Ariège | 10 Aube | 11 Aude | 12 Aveyron | 13 Bouches-du-Rhône | 14 Calvados | 15 Cantal | 16 Charente | 17 Charente-Maritime | 18 Cher | 19 Corrèze | 21 Côte-d’Or | 22 Côtes-d’Armor | 23 Creuse | 24 Dordogne | 25 Doubs | 26 Drôme | 27 Eure | 28 Eure-et-Loir | 29 Finistère | 30 Gard | 31 Haute-Garonne | 32 Gers | 33 Gironde | 34 Hérault | 35 Ille-et-Vilaine | 36 Indre | 37 Indre-et-Loire | 38 Isère | 39 Jura | 40 Landes | 41 Loir-et-Cher | 42 Loire | 43 Haute-Loire | 44 Loire-Atlantique | 45 Loiret | 46 Lot | 47 Lot-et-Garonne | 48 Lozère | 49 Maine-et-Loire | 50 Manche | 51 Marne | 52 Haute-Marne | 53 Mayenne | 54 Meurthe-et-Moselle | 55 Meuse | 56 Morbihan | 57 Moselle | 58 Nièvre | 59 Nord | 60 Oise | 61 Orne | 62 Pas-de-Calais | 63 Puy-de-Dôme | 64 Pyrénées-Atlantiques | 65 Hautes-Pyrénées | 66 Pyrénées-Orientales | 67 Bas-Rhin | 68 Haut-Rhin | 69D Rhône | 69M Métropole de Lyon (ab 2015) | 70 Haute-Saône | 71 Saône-et-Loire | 72 Sarthe | 73 Savoie | 74 Haute-Savoie | 75 Paris (ab 1968) | 76 Seine-Maritime | 77 Seine-et-Marne | 78 Yvelines (ab 1968) | 79 Deux-Sèvres | 80 Somme | 81 Tarn | 82 Tarn-et-Garonne | 83 Var | 84 Vaucluse | 85 Vendée | 86 Vienne | 87 Haute-Vienne | 88 Vosges | 89 Yonne | 90 Territoire de Belfort | 91 Essonne (ab 1968) | 92 Hauts-de-Seine (ab 1968) | 93 Seine-Saint-Denis (ab 1968) | 94 Val-de-Marne (ab 1968) | 95 Val-d’Oise (ab 1968)
+1	Ain	Ain	NOUN	NN	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	10	flat:name	_	SpacesAfter=\n
+3	02	02	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	flat	_	_
+4	Aisne	Aisne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+5	|	|	X	FM	Person=3	10	flat	_	SpacesAfter=\n
+6	03	03	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	flat	_	_
+7	Allier	Allier	PROPN	NE	Number=Sing|Person=3	10	flat:name	_	SpacesAfter= 
+8	|	|	X	$(	Person=3	144	flat	_	SpacesAfter=\n
+9	04	04	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+10	Alpes-de-Haute-Provence	alpes-de-haute-provence	X	FM	Foreign=Yes|Person=3	152	flat	_	SpacesAfter= 
+11	|	|	PUNCT	$(	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+12	05	05	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+13	Hautes-Alpes	Hautes-Alpes	NOUN	NN	Person=3	144	appos	_	SpacesAfter= 
+14	|	|	X	$(	Foreign=Yes|Person=3	144	flat:name	_	SpacesAfter=\n
+15	06	06	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+16	Alpes-Maritimes	Maritime	X	FM	Foreign=Yes|Person=3	152	flat	_	SpacesAfter= 
+17	|	|	X	FM	Foreign=Yes|Person=3	151	flat:name	_	SpacesAfter=\n
+18	07	07	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+19	Ardèche	Ardèche	X	NN	Person=3	151	appos	_	SpacesAfter= 
+20	|	|	X	$(	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+21	08	08	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+22	Ardennes	Ardennes	X	FM	Person=3	151	appos	_	SpacesAfter= 
+23	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+24	09	09	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+25	Ariège	Ariège	X	FM	Foreign=Yes|Person=3	151	flat	_	SpacesAfter= 
+26	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+27	10	10	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+28	Aube	Aube	X	FM	Foreign=Yes|Person=3	151	flat:name	_	SpacesAfter= 
+29	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+30	11	11	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+31	Aude	Aude	X	FM	Foreign=Yes|Person=3	154	flat:name	_	SpacesAfter= 
+32	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+33	12	12	NUM	CARD	Number=Plur|NumType=Card|Person=3	145	flat	_	_
+34	Aveyron	Aveyron	X	NE	Person=3	155	flat:name	_	SpacesAfter= 
+35	|	|	X	$(	Foreign=Yes|Person=3	156	punct	_	SpacesAfter=\n
+36	13	13	NUM	CARD	Number=Plur|NumType=Card|Person=3	37	flat	_	_
+37	Bouches-du-Rhône	Rhône	X	FM	Foreign=Yes|Person=3	252	appos	_	SpacesAfter= 
+38	|	|	X	FM	Foreign=Yes|Person=3	37	flat	_	SpacesAfter=\n
+39	14	14	NUM	CARD	Number=Plur|NumType=Card|Person=3	85	flat	_	_
+40	Calvados	Calvados	X	FM	Foreign=Yes|Person=3	43	flat:name	_	SpacesAfter= 
+41	|	|	X	FM	Foreign=Yes|Person=3	88	flat:name	_	SpacesAfter=\n
+42	15	15	NUM	CARD	Number=Plur|NumType=Card|Person=3	85	flat	_	_
+43	Cantal	Cantal	X	FM	Person=3	49	flat:name	_	SpacesAfter= 
+44	|	|	X	FM	Foreign=Yes|Person=3	49	flat	_	SpacesAfter=\n
+45	16	16	NUM	CARD	Number=Plur|NumType=Card|Person=3	49	flat	_	_
+46	Charente	Charente	X	FM	Foreign=Yes|Person=3	49	flat:name	_	SpacesAfter= 
+47	|	|	X	FM	Foreign=Yes|Person=3	142	flat:name	_	SpacesAfter=\n
+48	17	17	NUM	CARD	Number=Plur|NumType=Card|Person=3	49	flat	_	_
+49	Charente-Maritime	Maritime	X	FM	Foreign=Yes|Person=3	85	appos	_	SpacesAfter= 
+50	|	|	X	FM	Foreign=Yes|Person=3	49	flat	_	SpacesAfter=\n
+51	18	18	NUM	CARD	Number=Plur|NumType=Card|Person=3	49	flat	_	_
+52	Cher	Cher	X	FM	Person=3	49	flat:name	_	SpacesAfter= 
+53	|	|	X	FM	Foreign=Yes|Person=3	54	flat	_	SpacesAfter=\n
+54	19	19	NUM	CARD	Number=Plur|NumType=Card|Person=3	282	flat	_	_
+55	Corrèze	Corrèze	NOUN	NN	Person=3	282	flat:name	_	SpacesAfter= 
+56	|	|	PUNCT	$(	Person=3	55	flat:name	_	SpacesAfter=\n
+57	21	21	NUM	CARD	Number=Plur|NumType=Card|Person=3	58	flat	_	_
+58	Côte-d’Or	Côte-d’or	NOUN	NN	Person=3	300	flat:name	_	SpacesAfter= 
+59	|	|	X	FM	Foreign=Yes|Person=3	58	flat	_	SpacesAfter=\n
+60	22	22	NUM	CARD	Number=Plur|NumType=Card|Person=3	58	flat	_	_
+61	Côtes-d’Armor	Armor	X	NE	Person=3	16	flat:name	_	SpacesAfter= 
+62	|	|	X	FM	Foreign=Yes|Person=3	16	flat	_	SpacesAfter=\n
+63	23	23	NUM	CARD	Number=Plur|NumType=Card|Person=3	64	flat	_	_
+64	Creuse	Creuse	X	NN	Person=3	154	appos	_	SpacesAfter= 
+65	|	|	X	FM	Foreign=Yes|Person=3	154	flat	_	SpacesAfter=\n
+66	24	24	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+67	Dordogne	Dordogne	X	NN	Person=3	155	appos	_	SpacesAfter= 
+68	|	|	PUNCT	$(	_	155	flat	_	SpacesAfter=\n
+69	25	25	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+70	Doubs	Doubs	NOUN	NN	Gender=Masc|Number=Plur|Person=3	25	appos	_	SpacesAfter= 
+71	|	|	X	$(	Foreign=Yes|Person=3	142	flat:name	_	SpacesAfter=\n
+72	26	26	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+73	Drôme	Drôme	NOUN	NN	Person=3	25	appos	_	SpacesAfter= 
+74	|	|	PUNCT	$(	Person=3	142	amod	_	SpacesAfter=\n
+75	27	27	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+76	Eure	Eure	X	NN	Person=3	9	appos	_	SpacesAfter= 
+77	|	|	PUNCT	$(	PunctType=Brck	55	punct	_	SpacesAfter=\n
+78	28	28	NUM	CARD	Number=Plur|NumType=Card|Person=3	58	flat	_	_
+79	Eure-et-Loir	Eure-et-Loir	NOUN	NN	Person=3	300	flat:name	_	SpacesAfter= 
+80	|	|	X	FM	Person=3	58	flat	_	SpacesAfter=\n
+81	29	29	NUM	CARD	Number=Plur|NumType=Card|Person=3	82	flat	_	_
+82	Finistère	Finistère	X	NN	Person=3	294	appos	_	SpacesAfter= 
+83	|	|	PUNCT	$(	PunctType=Brck	85	punct	_	SpacesAfter=\n
+84	30	30	NUM	CARD	Number=Plur|NumType=Card|Person=3	85	flat	_	_
+85	Gard	Gard	X	NE	Foreign=Yes|Person=3	64	flat:name	_	SpacesAfter= 
+86	|	|	X	FM	Foreign=Yes|Person=3	88	flat	_	SpacesAfter=\n
+87	31	31	NUM	CARD	Number=Plur|NumType=Card|Person=3	88	flat	_	_
+88	Haute-Garonne	Garonne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	85	appos	_	SpacesAfter= 
+89	|	|	X	NE	Person=3	142	flat:name	_	SpacesAfter=\n
+90	32	32	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+91	Gers	Gers	X	FM	Foreign=Yes|Person=3	85	flat:name	_	SpacesAfter= 
+92	|	|	PUNCT	$(	PunctType=Brck	142	ccomp	_	SpacesAfter=\n
+93	33	33	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+94	Gironde	Gironde	NOUN	NN	Person=3	24	appos	_	SpacesAfter= 
+95	|	|	PUNCT	$(	_	142	amod	_	SpacesAfter=\n
+96	34	34	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+97	Hérault	Hérault	PROPN	NE	Person=3	10	appos	_	SpacesAfter= 
+98	|	|	PUNCT	$(	PunctType=Brck	144	amod	_	SpacesAfter=\n
+99	35	35	NUM	CARD	Number=Plur|NumType=Card|Person=3	58	flat	_	_
+100	Ille-et-Vilaine	Ille-et-Vilaine	NOUN	NN	Person=3	58	appos	_	SpacesAfter= 
+101	|	|	PUNCT	$(	_	146	flat	_	SpacesAfter=\n
+102	36	36	NUM	CARD	Number=Plur|NumType=Card|Person=3	146	flat	_	_
+103	Indre	Indre	NOUN	NN	Person=3	58	flat:name	_	SpacesAfter= 
+104	|	|	PUNCT	$(	PunctType=Brck	121	punct	_	SpacesAfter=\n
+105	37	37	NUM	CARD	Number=Plur|NumType=Card|Person=3	121	flat	_	_
+106	Indre-et-Loire	sre-et-loirein	NOUN	NN	Gender=Neut|Number=Plur|Person=3	121	appos	_	SpacesAfter= 
+107	|	|	X	NE	Person=3	142	flat:name	_	SpacesAfter=\n
+108	38	38	NUM	CARD	Number=Plur|NumType=Card|Person=3	121	flat	_	_
+109	Isère	Isère	PROPN	NE	Person=3	124	flat:name	_	SpacesAfter= 
+110	|	|	PUNCT	$(	_	142	flat:name	_	SpacesAfter=\n
+111	39	39	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+112	Jura	Jura	X	NN	Person=3	124	flat:name	_	SpacesAfter= 
+113	|	|	X	CARD	Foreign=Yes|Person=3	142	flat	_	SpacesAfter=\n
+114	40	40	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	nummod	_	_
+115	Landes	Land	NOUN	NN	Gender=Neut|Number=Plur|Person=3	121	appos	_	SpacesAfter= 
+116	|	|	X	NE	Person=3	142	flat:name	_	SpacesAfter=\n
+117	41	41	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+118	Loir-et-Cher	Cher	NOUN	NN	Gender=Masc|Number=Plur|Person=3	121	appos	_	SpacesAfter= 
+119	|	|	X	FM	_	142	flat:name	_	SpacesAfter=\n
+120	42	42	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+121	Loire	Loire	X	FM	Foreign=Yes|Person=3	124	flat:name	_	SpacesAfter= 
+122	|	|	PUNCT	$(	_	142	flat:name	_	SpacesAfter=\n
+123	43	43	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	flat	_	_
+124	Haute-Loire	Loir	NOUN	NN	Foreign=Yes|Person=3	143	appos	_	SpacesAfter= 
+125	|	|	X	NE	_	142	flat:name	_	SpacesAfter=\n
+126	44	44	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+127	Loire-Atlantique	Atlantique	NOUN	NN	Person=3	143	appos	_	SpacesAfter= 
+128	|	|	X	NE	Person=3	144	flat:name	_	SpacesAfter=\n
+129	45	45	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+130	Loiret	Loiret	X	NN	Person=3	143	flat:name	_	SpacesAfter= 
+131	|	|	X	FM	Foreign=Yes|Person=3	144	flat:name	_	SpacesAfter=\n
+132	46	46	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+133	Lot	Lot	X	NN	Foreign=Yes|Person=3	143	appos	_	SpacesAfter= 
+134	|	|	PUNCT	$(	_	144	flat:name	_	SpacesAfter=\n
+135	47	47	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+136	Lot-et-Garonne	Garonne	NOUN	NN	Person=3	143	appos	_	SpacesAfter= 
+137	|	|	X	FM	_	144	flat:name	_	SpacesAfter=\n
+138	48	48	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+139	Lozère	Lozère	NOUN	NN	Person=3	143	appos	_	SpacesAfter= 
+140	|	|	X	FM	Foreign=Yes|Person=3	144	flat:name	_	SpacesAfter=\n
+141	49	49	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+142	Maine-et-Loire	Loire	NOUN	NN	Person=3	1	flat	_	SpacesAfter= 
+143	|	|	X	NE	Person=3	144	nmod	_	SpacesAfter=\n
+144	50	50	NUM	CARD	Number=Plur|NumType=Card|Person=3	142	nmod	_	_
+145	Manche	Manche	PROPN	NE	Number=Sing|Person=3	144	conj	_	SpacesAfter= 
+146	|	|	X	FM	Foreign=Yes|Person=3	145	appos	_	SpacesAfter=\n
+147	51	51	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+148	Marne	Marne	PROPN	NE	Gender=Fem|Number=Sing|Person=3	154	flat:name	_	SpacesAfter= 
+149	|	|	PUNCT	$(	Person=3	154	punct	_	SpacesAfter=\n
+150	52	52	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+151	Haute-Marne	Haute-Marne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	145	conj	_	SpacesAfter= 
+152	|	|	X	NE	Person=3	154	flat	_	SpacesAfter=\n
+153	53	53	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+154	Mayenne	Mayenne	PROPN	NE	Person=3	151	appos	_	SpacesAfter= 
+155	|	|	X	FM	Foreign=Yes|Person=3	154	appos	_	SpacesAfter=\n
+156	54	54	NUM	CARD	Number=Plur|NumType=Card|Person=3	249	flat	_	_
+157	Meurthe-et-Moselle	Moselle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	270	appos	_	SpacesAfter= 
+158	|	|	X	NE	Person=3	252	flat	_	SpacesAfter=\n
+159	55	55	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+160	Meuse	Meuse	PROPN	NE	Person=3	154	appos	_	SpacesAfter= 
+161	|	|	X	$(	_	154	appos	_	SpacesAfter=\n
+162	56	56	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+163	Morbihan	Morbihan	NOUN	NE	Person=3	154	appos	_	SpacesAfter= 
+164	|	|	X	FM	_	154	appos	_	SpacesAfter=\n
+165	57	57	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+166	Moselle	Moselle	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+167	|	|	PUNCT	$(	_	144	conj	_	SpacesAfter=\n
+168	58	58	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	conj	_	_
+169	Nièvre	Nièvre	NOUN	NN	Person=3	152	appos	_	SpacesAfter= 
+170	|	|	X	FM	_	144	conj	_	SpacesAfter=\n
+171	59	59	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+172	Nord	Norden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	152	appos	_	SpacesAfter= 
+173	|	|	X	FM	_	144	conj	_	SpacesAfter=\n
+174	60	60	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	nummod	_	_
+175	Oise	Oise	X	NN	Foreign=Yes|Person=3	152	appos	_	SpacesAfter= 
+176	|	|	PUNCT	$(	Foreign=Yes|Person=3	145	flat	_	SpacesAfter=\n
+177	61	61	NUM	CARD	Number=Plur|NumType=Card|Person=3	145	flat	_	_
+178	Orne	Orne	PROPN	NE	Person=3	145	appos	_	SpacesAfter= 
+179	|	|	X	FM	Foreign=Yes|Person=3	145	flat	_	SpacesAfter=\n
+180	62	62	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+181	Pas-de-Calais	Pas-de-Calais	X	FM	Foreign=Yes|Person=3	151	appos	_	SpacesAfter= 
+182	|	|	X	FM	Foreign=Yes|Person=3	154	appos	_	SpacesAfter=\n
+183	63	63	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+184	Puy-de-Dôme	Puy-de-Dôme	X	FM	Foreign=Yes|Person=3	151	appos	_	SpacesAfter= 
+185	|	|	X	FM	Foreign=Yes|Person=3	144	appos	_	SpacesAfter=\n
+186	64	64	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+187	Pyrénées-Atlantiques	Pyrénées-Atlantiques	X	FM	Person=3	151	appos	_	SpacesAfter= 
+188	|	|	X	FM	Foreign=Yes|Person=3	144	flat:name	_	SpacesAfter=\n
+189	65	65	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+190	Hautes-Pyrénées	Hautes-pyRénées	X	FM	Foreign=Yes|Person=3	144	conj	_	SpacesAfter= 
+191	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+192	66	66	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+193	Pyrénées-Orientales	Oriental	X	FM	Foreign=Yes|Person=3	144	conj	_	SpacesAfter= 
+194	|	|	X	FM	Foreign=Yes|Person=3	144	flat	_	SpacesAfter=\n
+195	67	67	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+196	Bas-Rhin	Bas-Rhin	X	FM	Foreign=Yes|Person=3	144	conj	_	SpacesAfter= 
+197	|	|	X	FM	Foreign=Yes|Person=3	144	conj	_	SpacesAfter=\n
+198	68	68	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	flat	_	_
+199	Haut-Rhin	Haut-Rhin	X	FM	Foreign=Yes|Person=3	145	appos	_	SpacesAfter= 
+200	|	|	X	FM	Foreign=Yes|Person=3	145	flat	_	SpacesAfter=\n
+201	69D	unknown	X	FM	Foreign=Yes|Person=3	145	appos	_	_
+202	Rhône	Rhône	X	FM	Foreign=Yes|Person=3	145	flat	_	SpacesAfter= 
+203	|	|	X	FM	Foreign=Yes|Person=3	148	appos	_	SpacesAfter=\n
+204	69M	unknown	X	FM	Foreign=Yes|Person=3	151	appos	_	_
+205	Métropole	Métropole	X	FM	Foreign=Yes|Person=3	151	appos	_	_
+206	de	de	PROPN	NE	Foreign=Yes|Person=3	151	flat:name	_	_
+207	Lyon	Lyon	PROPN	NE	Number=Sing|Person=3	151	flat:name	_	_
+208	(	(	PUNCT	$(	PunctType=Brck	154	punct	_	SpaceAfter=No
+209	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	154	case	_	_
+210	2015	2015	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	nmod	_	SpaceAfter=No
+211	)	)	PUNCT	$(	PunctType=Brck	154	punct	_	SpacesAfter= 
+212	|	|	X	FM	Person=3	151	appos	_	SpacesAfter=\n
+213	70	70	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+214	Haute-Saône	Saône	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+215	|	|	X	FM	_	154	appos	_	SpacesAfter=\n
+216	71	71	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	flat	_	_
+217	Saône-et-Loire	Loire	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+218	|	|	PUNCT	$(	_	144	conj	_	SpacesAfter=\n
+219	72	72	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	nummod	_	_
+220	Sarthe	Sarthe	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+221	|	|	PUNCT	$(	_	144	conj	_	SpacesAfter=\n
+222	73	73	NUM	CARD	Number=Plur|NumType=Card|Person=3	144	conj	_	_
+223	Savoie	Savoie	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+224	|	|	PUNCT	$(	_	145	flat	_	SpacesAfter=\n
+225	74	74	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+226	Haute-Savoie	Haute-savoie	NOUN	NN	Person=3	151	appos	_	SpacesAfter= 
+227	|	|	X	NE	Foreign=Yes|Person=3	151	appos	_	SpacesAfter=\n
+228	75	75	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+229	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	154	flat:name	_	_
+230	(	(	PUNCT	$(	PunctType=Brck	154	punct	_	SpaceAfter=No
+231	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	154	case	_	_
+232	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	nmod	_	SpaceAfter=No
+233	)	)	PUNCT	$(	PunctType=Brck	154	punct	_	SpacesAfter= 
+234	|	|	PUNCT	FM	Foreign=Yes|Person=3	154	appos	_	SpacesAfter=\n
+235	76	76	NUM	CARD	Number=Plur|NumType=Card|Person=3	151	appos	_	_
+236	Seine-Maritime	Seine-Maritime	X	NN	Foreign=Yes|Person=3	151	appos	_	SpacesAfter= 
+237	|	|	X	NE	Person=3	154	flat:name	_	SpacesAfter=\n
+238	77	77	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+239	Seine-et-Marne	Seine-et-Marne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	151	appos	_	SpacesAfter= 
+240	|	|	X	NE	Person=3	154	appos	_	SpacesAfter=\n
+241	78	78	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	flat	_	_
+242	Yvelines	Yvelines	PROPN	NE	Person=3	154	flat:name	_	_
+243	(	(	PUNCT	$(	PunctType=Brck	144	punct	_	SpaceAfter=No
+244	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	144	case	_	_
+245	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	154	nmod	_	SpaceAfter=No
+246	)	)	PUNCT	$(	PunctType=Brck	155	punct	_	SpacesAfter=\s 
+247	|	|	PUNCT	FM	Person=3	155	appos	_	SpacesAfter=\n
+248	79	79	NUM	CARD	Number=Plur|NumType=Card|Person=3	155	appos	_	_
+249	Deux-Sèvres	Deux-SÈvres	X	FM	Person=3	155	appos	_	SpacesAfter= 
+250	|	|	X	FM	Foreign=Yes|Person=3	155	flat	_	SpacesAfter=\n
+251	80	80	NUM	CARD	Number=Plur|NumType=Card|Person=3	155	flat	_	_
+252	Somme	Somme	X	FM	Foreign=Yes|Person=3	155	appos	_	SpacesAfter= 
+253	|	|	X	FM	Foreign=Yes|Person=3	155	flat	_	SpacesAfter=\n
+254	81	81	NUM	CARD	Number=Plur|NumType=Card|Person=3	155	flat	_	_
+255	Tarn	Tarn	X	FM	Foreign=Yes|Person=3	155	appos	_	SpacesAfter= 
+256	|	|	PUNCT	$(	_	155	flat	_	SpacesAfter=\n
+257	82	82	NUM	CARD	Number=Plur|NumType=Card|Person=3	155	flat	_	_
+258	Tarn-et-Garonne	Garonne	NOUN	NN	Person=3	155	appos	_	SpacesAfter= 
+259	|	|	X	FM	Foreign=Yes|Person=3	258	flat	_	SpacesAfter=\n
+260	83	83	NUM	CARD	Number=Plur|NumType=Card|Person=3	258	flat	_	_
+261	Var	Var	PROPN	NE	Person=3	155	appos	_	SpacesAfter= 
+262	|	|	X	FM	Foreign=Yes|Person=3	258	flat	_	SpacesAfter=\n
+263	84	84	NUM	CARD	Number=Plur|NumType=Card|Person=3	258	flat	_	_
+264	Vaucluse	Vaucluse	NOUN	NN	Person=3	155	appos	_	SpacesAfter= 
+265	|	|	X	$(	Foreign=Yes|Person=3	264	flat	_	SpacesAfter=\n
+266	85	85	NUM	CARD	Number=Plur|NumType=Card|Person=3	264	flat	_	_
+267	Vendée	Vendée	X	FM	Person=3	258	appos	_	SpacesAfter= 
+268	|	|	X	FM	Foreign=Yes|Person=3	267	flat	_	SpacesAfter=\n
+269	86	86	NUM	CARD	Number=Plur|NumType=Card|Person=3	267	flat	_	_
+270	Vienne	Vienne	X	NN	Gender=Fem|Number=Sing|Person=3	252	appos	_	SpacesAfter= 
+271	|	|	PUNCT	$(	PunctType=Brck	273	punct	_	SpacesAfter=\n
+272	87	87	NUM	CARD	Number=Plur|NumType=Card|Person=3	273	flat	_	_
+273	Haute-Vienne	Vienne	NOUN	NN	Gender=Fem|Number=Sing|Person=3	258	appos	_	SpacesAfter= 
+274	|	|	PUNCT	$(	_	273	flat	_	SpacesAfter=\n
+275	88	88	NUM	CARD	Number=Plur|NumType=Card|Person=3	273	flat	_	_
+276	Vosges	Vosges	NOUN	NN	Person=3	273	appos	_	SpacesAfter= 
+277	|	|	PUNCT	$(	_	278	punct	_	SpacesAfter=\n
+278	89	89	NUM	CARD	Number=Plur|NumType=Card|Person=3	276	appos	_	_
+279	Yonne	Yonne	PROPN	NE	Person=3	276	flat:name	_	SpacesAfter= 
+280	|	|	PUNCT	$(	PunctType=Brck	278	punct	_	SpacesAfter=\n
+281	90	90	NUM	CARD	Number=Plur|NumType=Card|Person=3	278	flat	_	_
+282	Territoire	Territoire	X	FM	Foreign=Yes|Person=3	278	appos	_	_
+283	de	de	X	NE	Foreign=Yes|Person=3	278	flat	_	_
+284	Belfort	Belfort	PROPN	NE	Number=Sing|Person=3	278	flat:name	_	SpacesAfter= 
+285	|	|	X	FM	Foreign=Yes|Person=3	278	flat	_	SpacesAfter=\n
+286	91	91	NUM	CARD	Number=Plur|NumType=Card|Person=3	287	flat	_	_
+287	Essonne	Essonne	NOUN	NN	Person=3	157	flat:name	_	_
+288	(	(	PUNCT	$(	PunctType=Brck	304	punct	_	SpaceAfter=No
+289	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	290	case	_	_
+290	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	294	nmod	_	SpaceAfter=No
+291	)	)	PUNCT	$(	PunctType=Brck	297	punct	_	SpacesAfter= 
+292	|	|	PUNCT	$(	PunctType=Brck	294	punct	_	SpacesAfter=\n
+293	92	92	NUM	CARD	Number=Plur|NumType=Card|Person=3	294	nummod	_	_
+294	Hauts-de-Seine	Sein	NOUN	NN	Gender=Masc|Number=Plur|Person=3	300	appos	_	_
+295	(	(	PUNCT	$(	PunctType=Brck	297	punct	_	SpaceAfter=No
+296	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	297	case	_	_
+297	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	294	nmod	_	SpaceAfter=No
+298	)	)	PUNCT	$(	PunctType=Brck	297	punct	_	SpacesAfter= 
+299	|	|	PUNCT	$(	PunctType=Brck	301	punct	_	SpacesAfter=\n
+300	93	93	NUM	CARD	Number=Plur|NumType=Card|Person=3	301	nummod	_	_
+301	Seine-Saint-Denis	Denis	NOUN	NN	Person=3	306	appos	_	_
+302	(	(	PUNCT	$(	PunctType=Brck	304	punct	_	SpaceAfter=No
+303	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	304	case	_	_
+304	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	301	nmod	_	SpaceAfter=No
+305	)	)	PUNCT	$(	PunctType=Brck	304	punct	_	SpacesAfter= 
+306	|	|	PUNCT	FM	Person=3	307	appos	_	SpacesAfter=\n
+307	94	94	NUM	CARD	Number=Plur|NumType=Card|Person=3	10	conj	_	_
+308	Val-de-Marne	Val-de-Marne	PROPN	NE	Person=3	10	conj	_	_
+309	(	(	PUNCT	$(	PunctType=Brck	146	punct	_	SpaceAfter=No
+310	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	146	case	_	_
+311	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	308	nmod	_	SpaceAfter=No
+312	)	)	PUNCT	$(	PunctType=Brck	311	punct	_	SpacesAfter= 
+313	|	|	PUNCT	FM	Person=3	314	appos	_	SpacesAfter=\n
+314	95	95	NUM	CARD	Number=Plur|NumType=Card|Person=3	16	conj	_	_
+315	Val-d’Oise	Val-d’Oise	PROPN	NE	Person=3	16	appos	_	_
+316	(	(	PUNCT	$(	PunctType=Brck	154	punct	_	SpaceAfter=No
+317	ab	ab	ADP	APPR	AdpType=Prep|Case=Dat	144	case	_	_
+318	1968	1968	NUM	CARD	Number=Plur|NumType=Card|Person=3	152	obl	_	SpaceAfter=No
+319	)	)	PUNCT	$(	PunctType=Brck	318	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20246,13 +21568,27 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Départements in Übersee (DOM)
+# text = Départements in Übersee (DOM) 971 Guadeloupe | 972 Martinique | 973 Französisch-Guayana | 974 Réunion | 976 Mayotte
 1	Départements	Département	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
 2	in	in	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
 3	Übersee	Übersee	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpacesAfter= 
 4	(	(	PUNCT	$(	PunctType=Brck	5	punct	_	SpaceAfter=No
 5	DOM	DOM	PROPN	NE	Person=3	1	appos	_	SpaceAfter=No
 6	)	)	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+7	971	971	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nummod	_	_
+8	Guadeloupe	Guadeloupe	NOUN	NN	Person=3	5	appos	_	SpacesAfter= 
+9	|	|	X	FM	Foreign=Yes|Person=3	8	flat	_	SpacesAfter=\n
+10	972	972	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	flat	_	_
+11	Martinique	Martinique	NOUN	NN	Person=3	8	appos	_	SpacesAfter= 
+12	|	|	X	FM	Foreign=Yes|Person=3	11	appos	_	SpacesAfter=\n
+13	973	973	NUM	CARD	Number=Plur|NumType=Card|Person=3	11	flat	_	_
+14	Französisch-Guayana	Französisch-guayana	X	FM	Person=3	11	appos	_	SpacesAfter= 
+15	|	|	X	FM	Foreign=Yes|Person=3	14	flat	_	SpacesAfter=\n
+16	974	974	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	flat	_	_
+17	Réunion	Réunion	X	FM	Foreign=Yes|Person=3	14	appos	_	SpacesAfter= 
+18	|	|	X	FM	Foreign=Yes|Person=3	17	appos	_	SpacesAfter=\n
+19	976	976	NUM	CARD	Number=Plur|NumType=Card|Person=3	20	nummod	_	_
+20	Mayotte	Mayotte	NOUN	NN	Person=3	17	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20260,11 +21596,43 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nach 1962 aufgelöste Départements
+# text = Nach 1962 aufgelöste Départements 20 Corse (bis 1975) | 2A Corse-du-Sud (1976–2017) | 2B Haute-Corse (1976–2017) | 75 Seine (bis 1967) | 78 Seine-et-Oise (bis 1967)
 1	Nach	Nach	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
 2	1962	1962	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	obl	_	_
 3	aufgelöste	auflösen	ADJ	ADJA	Degree=Pos|Number=Plur	4	amod	_	_
 4	Départements	Département	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
+5	20	20	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	flat	_	_
+6	Corse	Corse	PROPN	NE	Number=Sing|Person=3	4	flat:name	_	_
+7	(	(	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
+8	bis	bis	ADP	APPR	AdpType=Prep	9	case	_	_
+9	1975	1975	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	nmod	_	SpaceAfter=No
+10	)	)	PUNCT	$(	PunctType=Brck	9	punct	_	SpacesAfter= 
+11	|	|	X	FM	Person=3	4	appos	_	SpacesAfter=\n
+12	2A	unknown	X	CARD	Person=3	11	appos	_	_
+13	Corse-du-Sud	Corse-du-Sud	NOUN	NE	Person=3	12	flat:name	_	_
+14	(	(	PUNCT	$(	PunctType=Brck	15	punct	_	SpaceAfter=No
+15	1976–2017	1976–2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	13	appos	_	SpaceAfter=No
+16	)	)	PUNCT	$(	PunctType=Brck	15	punct	_	SpacesAfter= 
+17	|	|	X	FM	Foreign=Yes|Person=3	18	appos	_	SpacesAfter=\n
+18	2B	unknown	NOUN	NN	Person=3	15	appos	_	_
+19	Haute-Corse	Haute-Corse	PROPN	NE	Person=3	18	flat:name	_	_
+20	(	(	PUNCT	$(	PunctType=Brck	21	punct	_	SpaceAfter=No
+21	1976–2017	1976–2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	18	appos	_	SpaceAfter=No
+22	)	)	PUNCT	$(	PunctType=Brck	21	punct	_	SpacesAfter= 
+23	|	|	X	FM	Foreign=Yes|Person=3	21	appos	_	SpacesAfter=\n
+24	75	75	NUM	CARD	Number=Plur|NumType=Card|Person=3	23	flat	_	_
+25	Seine	Seine	PROPN	NE	Foreign=Yes|Person=3	23	flat	_	_
+26	(	(	PUNCT	$(	PunctType=Brck	28	punct	_	SpaceAfter=No
+27	bis	bis	ADP	APPR	AdpType=Prep	28	case	_	_
+28	1967	1967	NUM	CARD	Number=Plur|NumType=Card|Person=3	23	nmod	_	SpaceAfter=No
+29	)	)	PUNCT	$(	PunctType=Brck	28	punct	_	SpacesAfter= 
+30	|	|	X	FM	Foreign=Yes|Person=3	23	appos	_	SpacesAfter=\n
+31	78	78	NUM	CARD	Number=Plur|NumType=Card|Person=3	30	flat	_	_
+32	Seine-et-Oise	Seine-et-Oise	PROPN	NE	Person=3	30	appos	_	_
+33	(	(	PUNCT	$(	PunctType=Brck	35	punct	_	SpaceAfter=No
+34	bis	bis	ADP	APPR	AdpType=Prep	35	case	_	_
+35	1967	1967	NUM	CARD	Number=Plur|NumType=Card|Person=3	30	nmod	_	SpaceAfter=No
+36	)	)	PUNCT	$(	PunctType=Brck	35	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20272,10 +21640,30 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 75 Paris |
+# text = 75 Paris | 77 Seine-et-Marne | 78 Yvelines | 91 Essonne | 92 Hauts-de-Seine | 93 Seine-Saint-Denis | 94 Val-de-Marne | 95 Val-d’Oise
 1	75	75	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	nummod	_	_
-2	Paris	Paris	PROPN	NE	Case=Acc|Number=Sing|Person=3	0	root	_	SpacesAfter= 
-3	|	|	PROPN	NE	Person=3	2	flat:name	_	SpacesAfter=\n
+2	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+3	|	|	X	FM	Person=3	2	flat	_	SpacesAfter=\n
+4	77	77	NUM	CARD	Number=Plur|NumType=Card|Person=3	2	flat	_	_
+5	Seine-et-Marne	Seine-et-Marne	NOUN	NN	Person=3	2	appos	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	5	appos	_	SpacesAfter=\n
+7	78	78	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	flat	_	_
+8	Yvelines	Yvelines	X	FM	Foreign=Yes|Person=3	5	appos	_	SpacesAfter= 
+9	|	|	X	FM	Foreign=Yes|Person=3	8	appos	_	SpacesAfter=\n
+10	91	91	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	flat	_	_
+11	Essonne	Essonne	X	FM	Person=3	8	appos	_	SpacesAfter= 
+12	|	|	X	FM	Foreign=Yes|Person=3	11	appos	_	SpacesAfter=\n
+13	92	92	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	flat	_	_
+14	Hauts-de-Seine	Sein	X	FM	Foreign=Yes|Person=3	12	appos	_	SpacesAfter= 
+15	|	|	X	FM	Foreign=Yes|Person=3	14	appos	_	SpacesAfter=\n
+16	93	93	NUM	CARD	Number=Plur|NumType=Card|Person=3	14	flat	_	_
+17	Seine-Saint-Denis	Denis	X	FM	Foreign=Yes|Person=3	15	flat	_	SpacesAfter= 
+18	|	|	X	FM	Foreign=Yes|Person=3	14	flat	_	SpacesAfter=\n
+19	94	94	NUM	CARD	Number=Plur|NumType=Card|Person=3	15	flat	_	_
+20	Val-de-Marne	Val-de-Marne	X	FM	Foreign=Yes|Person=3	15	flat:name	_	SpacesAfter= 
+21	|	|	X	FM	Foreign=Yes|Person=3	15	flat	_	SpacesAfter=\n
+22	95	95	NUM	CARD	Number=Plur|NumType=Card|Person=3	15	flat	_	_
+23	Val-d’Oise	Val-d’Oise	PROPN	NE	Person=3	15	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -20287,6 +21675,106 @@
 1	Kulturstädte	Kulturstadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = 1985:
+1	1985	1985	NUM	CARD	Number=Plur|NumType=Card|Person=3	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Athen | 1986:
+1	Athen	Athen	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1986	1986	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Florenz | 1987:
+1	Florenz	Florenz	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1987	1987	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Amsterdam | 1988:
+1	Amsterdam	Amsterdam	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1988	1988	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = West-Berlin | 1989:
+1	West-Berlin	West-Berlin	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	appos	_	SpacesAfter=\n
+3	1989	1989	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 7
+# text = Paris | 1990:
+1	Paris	Paris	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1990	1990	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 8
+# text = Glasgow | 1991:
+1	Glasgow	Glasgow	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1991	1991	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = Dublin | 1992:
+1	Dublin	Dublin	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1992	1992	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Madrid | 1993:
+1	Madrid	Madrid	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1993	1993	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Antwerpen | 1994:
+1	Antwerpen	Antwerpen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Foreign=Yes|Person=3	1	appos	_	SpacesAfter=\n
+3	1994	1994	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Lissabon | 1995:
+1	Lissabon	Lissabon	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1995	1995	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = Luxemburg | 1996:
+1	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1996	1996	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 14
+# text = Kopenhagen | 1997:
+1	Kopenhagen	Kopenhagen	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	1997	1997	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 15
+# text = Thessaloniki | 1998:
+1	Thessaloniki	Thessaloniki	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat	_	SpacesAfter=\n
+3	1998	1998	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 16
+# text = Stockholm
+1	Stockholm	Stockholm	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -20297,12 +21785,280 @@
 1	Kulturhauptstädte	Kulturhauptstadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
+# sent_id = 2
+# text = 1999:
+1	1999	1999	NUM	CARD	Number=Plur|NumType=Card|Person=3	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Weimar | 2000:
+1	Weimar	Weimar	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2000	2000	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Avignon, Bergen, Bologna, Brüssel, Helsinki, Krakau, Prag, Reykjavík, Santiago de Compostela | 2001:
+1	Avignon	Avignon	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Bergen	Bergen	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Bologna	Bologna	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
+7	Brüssel	Brüssel	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	9	punct	_	_
+9	Helsinki	Helsinki	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+11	Krakau	Krakau	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+13	Prag	Prag	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+14	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+15	Reykjavík	Reykjavík	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+17	Santiago	Santiago	PROPN	NE	Number=Sing|Person=3	1	conj	_	_
+18	de	de	PROPN	NE	Number=Sing|Person=3	17	flat:name	_	_
+19	Compostela	Compostela	PROPN	NE	Person=3	17	flat:name	_	SpacesAfter= 
+20	|	|	PROPN	NE	Person=3	17	flat:name	_	SpacesAfter=\n
+21	2001	2001	NUM	CARD	Number=Plur|NumType=Card|Person=3	17	nmod	_	SpaceAfter=No
+22	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Porto, Rotterdam | 2002:
+1	Porto	Porto	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Rotterdam	Rotterdam	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	2002	2002	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Brügge, Salamanca | 2003:
+1	Brügge	Brügge	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Salamanca	Salamanca	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	2003	2003	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 7
+# text = Graz | 2004:
+1	Graz	Graz	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2004	2004	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 8
+# text = Genua, Lille | 2005:
+1	Genua	Genua	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Lille	Lille	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	PROPN	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2005	2005	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = Cork | 2006:
+1	Cork	Cork	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	|	|	X	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2006	2006	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Patras | 2007:
+1	Patras	Patras	PROPN	NE	Person=3	0	root	_	SpacesAfter= 
+2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+3	2007	2007	NUM	CARD	Number=Plur|NumType=Card|Person=3	1	nmod	_	SpaceAfter=No
+4	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Hermannstadt, Luxemburg und Großregion | 2008:
+1	Hermannstadt	Stadt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Luxemburg	Luxemburg	PROPN	NE	Number=Sing|Person=3	1	conj	_	_
+4	und	und	CCONJ	KON	_	5	cc	_	_
+5	Großregion	Region	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+6	|	|	X	FM	Person=3	5	appos	_	SpacesAfter=\n
+7	2008	2008	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Liverpool, Stavanger | 2009:
+1	Liverpool	Liverpool	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Stavanger	Stavanger	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	2009	2009	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = Linz, Vilnius | 2010:
+1	Linz	Linz	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Vilnius	Vilnius	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2010	2010	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 14
+# text = Istanbul, Pécs, Ruhrgebiet | 2011:
+1	Istanbul	Istanbul	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Pécs	Pécs	PROPN	NE	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Ruhrgebiet	Ruhrgebiet	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+7	2011	2011	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	nmod	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 15
+# text = Tallinn, Turku | 2012:
+1	Tallinn	Tallinn	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Turku	Turku	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2012	2012	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 16
+# text = Guimarães, Maribor | 2013:
+1	Guimarães	Guimarães	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Maribor	Maribor	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	2013	2013	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 17
+# text = Košice, Marseille | 2014:
+1	Košice	Košice	NOUN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Marseille	unknown	NOUN	NN	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	appos	_	SpacesAfter=\n
+5	2014	2014	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 18
+# text = Riga, Umeå | 2015:
+1	Riga	Riga	PROPN	NE	Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Umeå	Umeå	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat	_	SpacesAfter=\n
+5	2015	2015	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 19
+# text = Mons, Pilsen | 2016:
+1	Mons	Mons	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Pilsen	Pilsen	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	2016	2016	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 20
+# text = Breslau, Donostia-San Sebastián | 2017:
+1	Breslau	Breslau	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Donostia-San	Donostia-san	PROPN	NE	Person=3	1	conj	_	_
+4	Sebastián	Sebastián	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter= 
+5	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+6	2017	2017	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 21
+# text = Aarhus, Paphos | 2018:
+1	Aarhus	Aarhus	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Paphos	Paphos	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Person=3	3	appos	_	SpacesAfter=\n
+5	2018	2018	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 22
+# text = Leeuwarden, Valletta | 2019:
+1	Leeuwarden	Leeuwarden	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Valletta	Valletta	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	2019	2019	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 23
+# text = Matera, Plowdiw | 2020–2021*:
+1	Matera	Matera	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Plowdiw	Plowdiw	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	2020–2021*	2020–2021*	X	FM	Foreign=Yes|Person=3	3	appos	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 24
+# text = Galway, Rijeka | 2022:
+1	Galway	Galway	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Rijeka	Rijeka	PROPN	NE	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+5	2022	2022	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+6	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 25
+# text = Esch an der Alzette, Kaunas, Novi Sad | 2023:
+1	Esch	Esch	PROPN	NE	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	an	an	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	SpacesAfter= 
+3	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpacesAfter= 
+4	Alzette	Alzette	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+6	Kaunas	Kaunas	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	8	punct	_	_
+8	Novi	Novi	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+9	Sad	Sad	PROPN	NE	Person=3	8	flat:name	_	SpacesAfter= 
+10	|	|	X	NE	Person=3	8	flat:name	_	SpacesAfter=\n
+11	2023	2023	NUM	CARD	Number=Plur|NumType=Card|Person=3	8	flat	_	SpaceAfter=No
+12	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 26
+# text = Eleusis, Timișoara, Veszprém | 2024:
+1	Eleusis	Eleusis	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Timișoara	Timișoara	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+5	Veszprém	Veszprém	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+6	|	|	X	FM	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+7	2024	2024	NUM	CARD	Number=Plur|NumType=Card|Person=3	5	flat	_	SpaceAfter=No
+8	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 27
+# text = Bad Ischl, Bodø, Tartu | 2025:
+1	Bad	Bad	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
+2	Ischl	Ischl	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
+4	Bodø	Bodø	PROPN	NE	Person=3	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
+6	Tartu	Tartu	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter= 
+7	|	|	X	FM	Foreign=Yes|Person=3	6	flat	_	SpacesAfter=\n
+8	2025	2025	NUM	CARD	Number=Plur|NumType=Card|Person=3	6	flat	_	SpaceAfter=No
+9	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 28
+# text = Chemnitz, Nova Gorica | 2026:
+1	Chemnitz	Chemnitz	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Nova	Nova	PROPN	NE	Person=3	1	conj	_	SpacesAfter= 
+4	Gorica	Gorica	PROPN	NE	Person=3	3	flat:name	_	SpacesAfter= 
+5	|	|	X	NE	Person=3	3	flat:name	_	SpacesAfter=\n
+6	2026	2026	NUM	CARD	Number=Plur|NumType=Card|Person=3	3	flat	_	SpaceAfter=No
+7	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter= 
+
+# sent_id = 29
+# text = Oulu, Trenčín *Von der EU-Kommission wegen Corona-Pandemie vorgeschlagene Verlängerung
+1	Oulu	Oulu	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	$,	PunctType=Comm	3	punct	_	_
+3	Trenčín	Trenčín	PROPN	NE	Person=3	1	conj	_	SpacesAfter=\n
+4	*Von	*Von	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
+5	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	EU-Kommission	Kommission	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+7	wegen	wegen	ADP	APPR	AdpType=Prep	8	case	_	_
+8	Corona-Pandemie	Pandemie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	9	obl	_	_
+9	vorgeschlagene	vorschlagen	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	Verlängerung	Verlängerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	appos	_	SpacesAfter=\n
 

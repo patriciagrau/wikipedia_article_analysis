@@ -1,5 +1,3 @@
-# https://de.wikipedia.org/wiki/S%C3%BCdamerika
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Südamerika – Wikipedia
 1	Südamerika	Südamerika	PROPN	NE	Number=Sing|Person=3	0	root	_	_
 2	–	–	X	FM	Foreign=Yes|Person=3	1	flat	_	_
-3	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Südamerika
-1	Südamerika	Südamerika	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	NE	Person=3	1	flat:name	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -142,13 +131,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geographie[Bearbeiten | Quelltext bearbeiten]
-1	Geographie[	Geographie[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Geographie
+1	Geographie	Geographie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -489,7 +473,48 @@
 39	bis	bis	ADP	APPR	AdpType=Prep	40	case	_	_
 40	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	41	nmod	_	_
 41	2800	2800	NUM	CARD	Number=Plur|NumType=Card|Person=3	42	nummod	_	_
-42	m.	m.	NOUN	NN	Person=3	37	nmod	_	SpacesAfter=\n
+42	m	m	NOUN	NN	Gender=Masc|Number=Plur|Person=3	37	nmod	_	SpaceAfter=No
+43	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Das Zentralbrasilianische Bergland dominiert Zentralsüdamerika und zieht sich bis an die Küste Brasiliens bzw. die Pampa Argentiniens im Süden.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+2	Zentralbrasilianische	Zentralbrasilianische	ADJ	ADJA	_	3	amod	_	_
+3	Bergland	Bergland	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
+4	dominiert	dominieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	Zentralsüdamerika	Zentralsüdamerika	PROPN	NE	Number=Sing|Person=3	4	obj	_	_
+6	und	und	CCONJ	KON	_	7	cc	_	_
+7	zieht	ziehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+8	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	7	expl:pv	_	_
+9	bis	bis	ADP	APPR	AdpType=Prep	12	case	_	_
+10	an	an	ADP	APPR	AdpType=Prep|Case=Acc	12	case	_	_
+11	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Küste	Küste	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	obl	_	_
+13	Brasiliens	Brasiliens	PROPN	NE	Case=Gen|Number=Sing|Person=3	12	nmod	_	_
+14	bzw.	bzw.	CCONJ	KON	_	16	cc	_	_
+15	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Pampa	Pampa	NOUN	NN	Person=3	12	conj	_	_
+17	Argentiniens	Argentiniens	PROPN	NE	Case=Gen|Number=Sing|Person=3	16	nmod	_	_
+18	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	19	case	_	_
+19	Süden	Süden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 4
+# text = Das Ostpatagonische Bergland erhebt sich im Osten der Anden an der Südspitze Südamerikas.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+2	Ostpatagonische	Ostpatagonische	ADJ	ADJA	_	3	amod	_	_
+3	Bergland	Bergland	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
+4	erhebt	erheben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	4	obj	_	_
+6	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	7	case	_	_
+7	Osten	Osten	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+8	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	9	det	_	_
+9	Anden	Ande	NOUN	NN	Gender=Masc|Number=Plur|Person=3	7	nmod	_	_
+10	an	an	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+11	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Südspitze	Südspitze	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+13	Südamerikas	Südamerikas	PROPN	NE	Case=Gen|Number=Sing|Person=3	12	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -511,15 +536,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geologie und Geomorphologie[Bearbeiten | Quelltext bearbeiten]
-1	Geologie	Geologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nsubj	_	_
+# text = Geologie und Geomorphologie
+1	Geologie	Geologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Geomorphologie[	Geomorphologie[	NOUN	NN	Person=3	1	conj	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	obj	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+3	Geomorphologie	Phologie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -767,12 +787,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Klima[Bearbeiten | Quelltext bearbeiten]
-1	Klima[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Klima
+1	Klima	Klima	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -897,6 +913,114 @@
 8	Küsten	Küste	NOUN	NN	Gender=Fem|Number=Plur|Person=3	5	nmod	_	SpaceAfter=No
 9	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Die äquatoriale Tropenlage bewirkt im Südwinter eine Ausbildung einer innertropischen Konvektionszone über der Zentralen Amazonasregion und führt zu starken Niederschlägen.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	äquatoriale	äquatoriale	ADJ	ADJA	_	3	amod	_	_
+3	Tropenlage	Lage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+4	bewirkt	bewirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+6	Südwinter	Südwinter	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+7	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Ausbildung	Ausbildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obj	_	_
+9	einer	einer	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	innertropischen	innertropisch	ADJ	ADJA	Degree=Pos|Number=Sing	11	amod	_	_
+11	Konvektionszone	Zone	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nmod	_	_
+12	über	über	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
+13	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	Zentralen	zentral	ADJ	ADJA	Degree=Pos|Number=Sing	15	amod	_	_
+15	Amazonasregion	Region	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+16	und	und	CCONJ	KON	_	17	cc	_	_
+17	führt	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+18	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+19	starken	stark	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	20	amod	_	_
+20	Niederschlägen	Niederschlag	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	17	obj	_	SpaceAfter=No
+21	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 7
+# text = Im Sommer verlagert sie sich weiter nach Süden, somit sind die inneren Tropen durch ganzjährigen Niederschlag gekennzeichnet.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Sommer	Sommer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+3	verlagert	verlagern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+5	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	_	_
+6	weiter	weiter	ADV	ADV	Degree=Cmp	3	advmod	_	_
+7	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+8	Süden	Süden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
+9	,	,	PUNCT	$,	PunctType=Comm	18	punct	_	_
+10	somit	somit	ADV	ADV	_	18	advmod	_	_
+11	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_
+12	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	14	det	_	_
+13	inneren	innere	ADJ	ADJA	Degree=Pos|Number=Plur	14	amod	_	_
+14	Tropen	Trope	NOUN	NN	Gender=Fem|Number=Plur|Person=3	18	nsubj:pass	_	_
+15	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	17	case	_	_
+16	ganzjährigen	ganzjährig	ADJ	ADJA	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	Niederschlag	Niederschlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	18	obl	_	_
+18	gekennzeichnet	kennzeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	3	conj	_	SpaceAfter=No
+19	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+
+# sent_id = 8
+# text = Ebenfalls im Sommer bildet sich ein kontinentales Hitzetief aus, welches sehr niederschlagsreich ist.
+1	Ebenfalls	Ebenfalls	ADV	ADV	_	3	advmod	_	_
+2	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	3	case	_	_
+3	Sommer	Sommer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	obl	_	_
+4	bildet	bilden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	4	obj	_	_
+6	ein	ein	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
+7	kontinentales	kontinentales	ADJ	ADJA	Gender=Neut|Number=Sing	8	amod	_	_
+8	Hitzetief	Tief	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	nsubj	_	_
+9	aus	aus	ADP	PTKVZ	PartType=Vbp	4	compound:prt	_	SpaceAfter=No
+10	,	,	PUNCT	$,	PunctType=Comm	13	punct	_	_
+11	welches	welches	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Rel	13	nsubj	_	_
+12	sehr	sehr	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	niederschlagsreich	niederschlagsreich	ADJ	ADJD	Degree=Pos|Variant=Short	8	acl	_	_
+14	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	SpaceAfter=No
+15	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 9
+# text = Die südlichen Randtropen sind somit durch (Süd-)Sommerniederschlag geprägt.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	südlichen	südlich	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
+3	Randtropen	Trope	NOUN	NN	Gender=Fem|Number=Plur|Person=3	8	nsubj:pass	_	_
+4	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+5	somit	somit	ADV	ADV	_	8	advmod	_	_
+6	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	7	case	_	_
+7	(Süd-)Sommerniederschlag	Niederschlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+8	geprägt	prägen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
+
+# sent_id = 10
+# text = Die nördlichen Randtropen sind durch Passatstau im Osten (ganzjährig hoher Niederschlag) und durch kühle Meereswasser an der Küste im Norden (sehr geringer Niederschlag) gekennzeichnet.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	nördlichen	nördlich	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
+3	Randtropen	Trope	NOUN	NN	Gender=Fem|Number=Plur|Person=3	28	nsubj:pass	_	_
+4	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	_
+5	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	6	case	_	_
+6	Passatstau	Stau	NOUN	NN	Gender=Masc|Number=Sing|Person=3	28	obl	_	_
+7	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	8	case	_	_
+8	Osten	Osten	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+9	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+10	ganzjährig	ganzjährig	ADJ	ADJD	Degree=Pos|Variant=Short	11	advmod	_	_
+11	hoher	hoch	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	_
+12	Niederschlag	Niederschlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	appos	_	SpaceAfter=No
+13	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	_
+14	und	und	CCONJ	KON	_	17	cc	_	_
+15	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	17	case	_	_
+16	kühle	kühl	ADJ	ADJA	Degree=Pos|Number=Plur	17	amod	_	_
+17	Meereswasser	Wasser	NOUN	NN	Gender=Neut|Number=Plur|Person=3	6	conj	_	_
+18	an	an	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+19	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Küste	Küste	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	nmod	_	_
+21	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	22	case	_	_
+22	Norden	Norden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+23	(	(	PUNCT	$(	PunctType=Brck	26	punct	_	SpaceAfter=No
+24	sehr	sehr	ADV	ADV	Degree=Pos	25	advmod	_	_
+25	geringer	gering	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	26	amod	_	_
+26	Niederschlag	Niederschlag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	22	appos	_	SpaceAfter=No
+27	)	)	PUNCT	$(	PunctType=Brck	26	punct	_	_
+28	gekennzeichnet	kennzeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+29	.	.	PUNCT	$.	PunctType=Peri	28	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -934,6 +1058,156 @@
 28	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	29	det	_	_
 29	Küstenregionen	Region	NOUN	NN	Gender=Fem|Number=Plur|Person=3	26	nmod	_	SpaceAfter=No
 30	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Das stabile Hochdrucksystem am Westrand Südamerikas im Zusammenspiel mit den kalten Luftmassen der südlichen polaren Regionen führt zur Ausbildung von außertropischen Zyklonen vor der Küste Westpatagoniens.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
+2	stabile	stabil	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	Hochdrucksystem	System	NOUN	NN	Gender=Neut|Number=Sing|Person=3	17	nsubj	_	_
+4	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
+5	Westrand	Westrand	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+6	Südamerikas	Südamerikas	PROPN	NE	Case=Gen|Number=Sing|Person=3	5	nmod	_	_
+7	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	8	case	_	_
+8	Zusammenspiel	Spiel	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nmod	_	_
+9	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	12	case	_	_
+10	den	den	DET	ART	Case=Dat|Number=Plur|PronType=Art	12	det	_	_
+11	kalten	kalt	ADJ	ADJA	Degree=Pos|Number=Plur	12	amod	_	_
+12	Luftmassen	Masse	NOUN	NN	Gender=Fem|Number=Plur|Person=3	8	nmod	_	_
+13	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	16	det	_	_
+14	südlichen	südlich	ADJ	ADJA	Degree=Pos|Number=Plur	16	amod	_	_
+15	polaren	polar	ADJ	ADJA	Degree=Pos|Number=Plur	16	amod	_	_
+16	Regionen	Region	NOUN	NN	Gender=Fem|Number=Plur|Person=3	12	nmod	_	_
+17	führt	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	zur	zur	ADP	APPRART	AdpType=Prep|Case=Dat|Gender=Fem|PronType=Art	19	case	_	_
+19	Ausbildung	Ausbildung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	obj	_	_
+20	von	von	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+21	außertropischen	außertropisch	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	22	amod	_	_
+22	Zyklonen	Zyklone	NOUN	NN	Gender=Fem|Number=Plur|Person=3	19	nmod	_	_
+23	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	25	case	_	_
+24	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	Küste	Küste	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	nmod	_	_
+26	Westpatagoniens	Westpatagoniens	PROPN	NE	Case=Gen|Person=3	25	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	_
+
+# sent_id = 3
+# text = Die zyklonalen Fronten variieren in ihrer Lage im Südsommer und Südwinter.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	zyklonalen	zyklonal	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
+3	Fronten	Front	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
+4	variieren	variieren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	in	in	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+6	ihrer	sein	PRON	PPOSAT	Case=Dat|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	Lage	Lage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+8	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	9	case	_	_
+9	Südsommer	Sommer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+10	und	und	CCONJ	KON	_	11	cc	_	_
+11	Südwinter	Südwinter	NOUN	NN	Gender=Masc|Number=Sing|Person=3	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 4
+# text = Die Verlagerung nach Norden im Südwinter führt zu periodischen Winterniederschlägen im Großen Süden Chiles (Urwaldchile) sowie zu sporadischen Winterniederschlägen im Kleinen Süden Chiles.
+1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Verlagerung	Verlagerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	nsubj	_	_
+3	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
+4	Norden	Norden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+5	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	6	case	_	_
+6	Südwinter	Südwinter	NOUN	NN	Person=3	4	nmod	_	_
+7	führt	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+9	periodischen	periodisch	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	10	amod	_	_
+10	Winterniederschlägen	Schlägen	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	7	obj	_	_
+11	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	13	case	_	_
+12	Großen	groß	ADJ	ADJA	Degree=Pos|Number=Sing	13	amod	_	_
+13	Süden	Süden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+14	Chiles	Chiles	PROPN	NE	Case=Gen|Number=Sing|Person=3	13	nmod	_	_
+15	(	(	PUNCT	$(	PunctType=Brck	16	punct	_	SpaceAfter=No
+16	Urwaldchile	Urwaldchile	NOUN	NN	Person=3	13	appos	_	SpaceAfter=No
+17	)	)	PUNCT	$(	PunctType=Brck	16	punct	_	_
+18	sowie	sowie	CCONJ	KON	_	21	cc	_	_
+19	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	21	case	_	_
+20	sporadischen	sporadisch	ADJ	ADJA	Case=Dat|Degree=Pos|Number=Plur	21	amod	_	_
+21	Winterniederschlägen	Schlägen	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	10	conj	_	_
+22	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	24	case	_	_
+23	Kleinen	klein	ADJ	ADJA	Degree=Pos|Number=Sing	24	amod	_	_
+24	Süden	Süden	NOUN	NN	Gender=Masc|Number=Sing|Person=3	21	nmod	_	_
+25	Chiles	Chiles	PROPN	NE	Case=Gen|Number=Sing|Person=3	24	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	_
+
+# sent_id = 5
+# text = Im Gegenzug führt die Verlagerung der zyklonalen Fronten im Südsommer (beeinflusst durch die veränderte Lage der ITCZ) zu einer ausgeprägten Sommertrockenheit in ganz Südchile, ausgenommen Patagonien.
+1	Im	Im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	2	case	_	_
+2	Gegenzug	Gegenzug	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+3	führt	führen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Verlagerung	Verlagerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	nsubj	_	_
+6	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	8	det	_	_
+7	zyklonalen	zyklonalen	ADJ	ADJA	_	8	amod	_	_
+8	Fronten	Front	NOUN	NN	Gender=Fem|Number=Plur|Person=3	5	nmod	_	_
+9	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	10	case	_	_
+10	Südsommer	Sommer	NOUN	NN	Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+11	(	(	PUNCT	$(	PunctType=Brck	12	punct	_	SpaceAfter=No
+12	beeinflusst	beeinflussen	VERB	VVPP	Aspect=Perf|VerbForm=Part	8	advmod	_	_
+13	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	16	case	_	_
+14	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+15	veränderte	verändern	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	16	amod	_	_
+16	Lage	Lage	NOUN	NN	Gender=Fem|Number=Sing|Person=3	12	obl	_	_
+17	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	18	det	_	_
+18	ITCZ	ITCZ	PROPN	NE	Person=3	16	nmod	_	SpaceAfter=No
+19	)	)	PUNCT	$(	PunctType=Brck	12	punct	_	_
+20	zu	zu	ADP	APPR	AdpType=Prep|Case=Dat	23	case	_	_
+21	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+22	ausgeprägten	ausprägen	ADJ	ADJA	Degree=Pos|Number=Sing	23	amod	_	_
+23	Sommertrockenheit	Sommertrockenheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	obj	_	_
+24	in	in	ADP	APPR	AdpType=Prep|Case=Dat	26	case	_	_
+25	ganz	ganz	ADJ	PIDAT	Number=Sing	26	amod	_	_
+26	Südchile	Südchile	NOUN	NN	Person=3	23	nmod	_	SpaceAfter=No
+27	,	,	PUNCT	$,	PunctType=Comm	28	punct	_	_
+28	ausgenommen	ausnehmen	ADJ	ADJD	Degree=Pos|Variant=Short	29	advmod	_	_
+29	Patagonien	Patagonien	PROPN	NE	Person=3	26	appos	_	SpaceAfter=No
+30	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Die Zyklonalen Fronten bilden an der Anden-Luvseite des patagonischen Gebirges heftige Stauniederschläge, welche als hypermaritim bezeichnet werden können.
+1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
+2	Zyklonalen	Zyklonalen	ADJ	ADJA	_	3	amod	_	_
+3	Fronten	Front	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
+4	bilden	bilden	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	an	an	ADP	APPR	AdpType=Prep|Case=Dat	7	case	_	_
+6	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Anden-Luvseite	Seite	NOUN	NN	Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+8	des	des	DET	ART	Case=Gen|Gender=Neut|Number=Sing|PronType=Art	10	det	_	_
+9	patagonischen	patagonischen	ADJ	ADJA	_	10	amod	_	_
+10	Gebirges	Gebirge	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing|Person=3	7	nmod	_	_
+11	heftige	heftig	ADJ	ADJA	Degree=Pos|Number=Plur	12	amod	_	_
+12	Stauniederschläge	Stauniederschlag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	obj	_	SpaceAfter=No
+13	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
+14	welche	welche	PRON	PRELS	Case=Nom|Number=Plur|Person=3|PronType=Rel	17	nsubj:pass	_	_
+15	als	als	CCONJ	KOKOM	ConjType=Comp	16	mark	_	_
+16	hypermaritim	hypermaritim	ADJ	ADJD	Degree=Pos|Variant=Short	17	advcl	_	_
+17	bezeichnet	bezeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	12	acl	_	_
+18	werden	werden	AUX	VAINF	VerbForm=Inf	17	aux:pass	_	_
+19	können	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	17	aux	_	SpaceAfter=No
+20	.	.	PUNCT	$.	PunctType=Peri	4	punct	_	_
+
+# sent_id = 7
+# text = Diese Stauniederschläge auf der Westseite führen dazu, dass die Anden-Leeseite Patagoniens durch Trockenheit gekennzeichnet ist.
+1	Diese	dies	DET	PDAT	Case=Nom|Number=Plur|PronType=Dem	2	det	_	_
+2	Stauniederschläge	Stauniederschlag	NOUN	NN	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_
+3	auf	auf	ADP	APPR	AdpType=Prep|Case=Dat	5	case	_	_
+4	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Westseite	Seite	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	nmod	_	_
+6	führen	führen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	dazu	dazu	ADV	PROAV	_	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	$,	PunctType=Comm	15	punct	_	_
+9	dass	dass	SCONJ	KOUS	_	15	mark	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Anden-Leeseite	Leeseite	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	nsubj:pass	_	_
+12	Patagoniens	Patagoniens	PROPN	NE	Case=Gen|Number=Sing|Person=3	11	nmod	_	_
+13	durch	durch	ADP	APPR	AdpType=Prep|Case=Acc	14	case	_	_
+14	Trockenheit	Trockenheit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	15	obl	_	_
+15	gekennzeichnet	kennzeichnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	6	ccomp	_	_
+16	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	SpaceAfter=No
+17	.	.	PUNCT	$.	PunctType=Peri	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1180,15 +1454,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Flora und Fauna[Bearbeiten | Quelltext bearbeiten]
-1	Flora	Flora	PROPN	NE	Gender=Fem|Number=Sing|Person=3	7	nsubj	_	_
+# text = Flora und Fauna
+1	Flora	Flora	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Fauna[	Fauna[	NOUN	NE	Person=3	1	conj	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+3	Fauna	Fauna	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1657,14 +1926,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geschichte[Bearbeiten | Quelltext bearbeiten]
+# text = Geschichte
 1	Geschichte	Geschichte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1672,14 +1935,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vor der Konquista[Bearbeiten | Quelltext bearbeiten]
+# text = Vor der Konquista
 1	Vor	Vor	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	Konquista[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	obl	_	_
-4	|	|	PUNCT	FM	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	SpacesAfter=\n
+3	Konquista	Konquista	NOUN	NN	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -1877,12 +2136,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Konquista[Bearbeiten | Quelltext bearbeiten]
-1	Konquista[Bearbeiten	Bearbeit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	nsubj	_	_
-2	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-3	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	1	appos	_	_
-4	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	$(	PunctType=Brck	4	punct	_	SpacesAfter=\n
+# text = Konquista
+1	Konquista	Konquista	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2072,14 +2327,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Unabhängigkeit[Bearbeiten | Quelltext bearbeiten]
+# text = Unabhängigkeit
 1	Unabhängigkeit	Unabhängigkeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2373,14 +2622,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bevölkerung[Bearbeiten | Quelltext bearbeiten]
+# text = Bevölkerung
 1	Bevölkerung	Bevölkerung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2545,14 +2788,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sprachen[Bearbeiten | Quelltext bearbeiten]
+# text = Sprachen
 1	Sprachen	Sprache	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2941,14 +3178,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Religionen[Bearbeiten | Quelltext bearbeiten]
+# text = Religionen
 1	Religionen	Religion	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3063,13 +3294,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sklaverei[Bearbeiten | Quelltext bearbeiten]
-1	Sklaverei[	Sklaverei[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Sklaverei
+1	Sklaverei	Sklaverei	NOUN	NN	Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3193,13 +3419,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Wirtschaft[Bearbeiten | Quelltext bearbeiten]
+# text = Wirtschaft
 1	Wirtschaft	Wirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[Bearbeiten	[Bearbeiten	X	FM	Foreign=Yes|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	5	obj	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3207,14 +3428,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bodenschätze[Bearbeiten | Quelltext bearbeiten]
+# text = Bodenschätze
 1	Bodenschätze	Bodenschatz	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	acl	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3552,14 +3767,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Landwirtschaft[Bearbeiten | Quelltext bearbeiten]
+# text = Landwirtschaft
 1	Landwirtschaft	Landwirtschaft	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3946,17 +4155,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Organisationen der wirtschaftlichen Zusammenarbeit[Bearbeiten | Quelltext bearbeiten]
+# text = Organisationen der wirtschaftlichen Zusammenarbeit
 1	Organisationen	Organisation	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 2	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 3	wirtschaftlichen	wirtschaftlich	ADJ	ADJA	Degree=Pos|Number=Sing	4	amod	_	_
 4	Zusammenarbeit	Zusammenarbeit	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
-6	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-7	|	|	PUNCT	$(	PunctType=Brck	6	punct	_	_
-8	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	appos	_	_
-9	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	acl	_	SpaceAfter=No
-10	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4031,13 +4234,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Verkehr[Bearbeiten | Quelltext bearbeiten]
-1	Verkehr[	Verkehr[	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	2	appos	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Verkehr
+1	Verkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4045,14 +4243,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Allgemeines[Bearbeiten | Quelltext bearbeiten]
-1	Allgemeines	allgemein	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	obj	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Allgemeines
+1	Allgemeines	allgemein	ADJ	ADJA	Degree=Pos|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4127,13 +4319,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Flugverkehr[Bearbeiten | Quelltext bearbeiten]
-1	Flugverkehr[	Flugverkehr[	NOUN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Flugverkehr
+1	Flugverkehr	Flugverkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4202,14 +4389,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Schiffsverkehr[Bearbeiten | Quelltext bearbeiten]
+# text = Schiffsverkehr
 1	Schiffsverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4437,15 +4618,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Straßen- und Fernbusnetz[Bearbeiten | Quelltext bearbeiten]
-1	Straßen-	Strassen-	NOUN	TRUNC	Hyph=Yes	7	nsubj	_	_
+# text = Straßen- und Fernbusnetz
+1	Straßen-	Strassen-	NOUN	TRUNC	Hyph=Yes	0	root	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
-3	Fernbusnetz[	Fernbusnetz[	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	appos	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	7	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	7	punct	_	SpacesAfter=\n
+3	Fernbusnetz	Netz	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4659,13 +4835,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Schienenverkehr[Bearbeiten | Quelltext bearbeiten]
-1	Schienenverkehr[	Schienenverkehr[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Schienenverkehr
+1	Schienenverkehr	Verkehr	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4909,14 +5080,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pipelines[Bearbeiten | Quelltext bearbeiten]
-1	Pipelines	Pipeline	NOUN	NN	Gender=Fem|Number=Plur|Person=3	6	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Pipelines
+1	Pipelines	Pipeline	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -4978,14 +5143,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politische Geografie[Bearbeiten | Quelltext bearbeiten]
+# text = Politische Geografie
 1	Politische	politisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	Geografie[	Geografie[	NOUN	NN	Person=3	0	root	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	6	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	obj	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	2	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	SpacesAfter=\n
+2	Geografie	Geografie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5010,18 +5170,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Staaten und abhängige Gebiete in Südamerika[Bearbeiten | Quelltext bearbeiten]
-1	Staaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	10	nsubj	_	_
+# text = Staaten und abhängige Gebiete in Südamerika
+1	Staaten	Staat	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	_
 2	und	und	CCONJ	KON	_	4	cc	_	_
 3	abhängige	abhängig	ADJ	ADJA	Degree=Pos|Number=Plur	4	amod	_	_
 4	Gebiete	Gebiet	NOUN	NN	Gender=Neut|Number=Plur|Person=3	1	conj	_	_
 5	in	in	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
-6	Südamerika[	Südamerika[	PROPN	NE	Person=3	4	nmod	_	SpaceAfter=No
-7	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	6	appos	_	_
-8	|	|	PUNCT	FM	PunctType=Brck	10	punct	_	_
-9	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	7	appos	_	_
-10	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-11	]	]	PUNCT	$(	PunctType=Brck	10	punct	_	SpacesAfter=\n
+6	Südamerika	Südamerika	PROPN	NE	Number=Sing|Person=3	4	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5029,11 +5184,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 1 Beansprucht von Argentinien
+# text = 1 Beansprucht von Argentinien 2 Wird kulturgeografisch meist Nordamerika zugerechnet
 1	1	1	NUM	CARD	Number=Sing|NumType=Card|Person=3	2	nummod	_	_
-2	Beansprucht	Beansprucht	NOUN	NN	Gender=Masc|Number=Sing|Person=3	0	root	_	_
+2	Beansprucht	Beansprucht	NOUN	NN	Gender=Neut|Number=Sing|Person=3	10	nsubj:pass	_	_
 3	von	von	ADP	APPR	AdpType=Prep|Case=Dat	4	case	_	_
 4	Argentinien	Argentinien	PROPN	NE	Number=Sing|Person=3	2	nmod	_	SpacesAfter=\n
+5	2	2	NUM	CARD	Number=Plur|NumType=Card|Person=3	4	flat	_	_
+6	Wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
+7	kulturgeografisch	kulturgeografisch	ADJ	ADJD	Degree=Pos|Variant=Short	10	advmod	_	_
+8	meist	meist	ADV	ADV	Degree=Sup	10	advmod	_	_
+9	Nordamerika	Nordamerika	PROPN	NE	Number=Sing|Person=3	10	obj	_	_
+10	zugerechnet	zurechnen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5041,17 +5202,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politische Bündnisse und Organisationen[Bearbeiten | Quelltext bearbeiten]
+# text = Politische Bündnisse und Organisationen
 1	Politische	politisch	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Bündnisse	Bündnis	NOUN	NN	Gender=Neut|Number=Plur|Person=3	0	root	_	_
 3	und	und	CCONJ	KON	_	4	cc	_	_
 4	Organisationen	Organisation	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	$(	PunctType=Brck	6	punct	_	SpaceAfter=No
-6	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	appos	_	_
-7	|	|	PUNCT	$(	PunctType=Brck	6	punct	_	_
-8	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	6	appos	_	_
-9	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	4	appos	_	SpaceAfter=No
-10	]	]	PUNCT	$(	PunctType=Brck	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5130,6 +5285,34 @@
 21	erreicht	erreichen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
 22	werden	werden	AUX	VAINF	VerbForm=Inf	21	aux:pass	_	SpaceAfter=No
 23	.	.	PUNCT	$.	PunctType=Peri	21	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Mit Französisch-Guayana, einem Übersee-Département Frankreichs, erstreckt sich die Europäische Union selbst bis nach Südamerika und hat mit Suriname und Brasilien eine Außengrenze.
+1	Mit	Mit	ADP	APPR	AdpType=Prep|Case=Dat	2	case	_	_
+2	Französisch-Guayana	Französisch-guayana	PROPN	NE	Person=3	8	obl	_	SpaceAfter=No
+3	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+4	einem	einem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Übersee-Département	Département	NOUN	NN	Gender=Neut|Number=Sing|Person=3	2	appos	_	_
+6	Frankreichs	Frankreichs	PROPN	NE	Case=Gen|Number=Sing|Person=3	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	$,	PunctType=Comm	5	punct	_	_
+8	erstreckt	erstrecken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	sich	sich	PRON	PRF	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	8	obj	_	_
+10	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+11	Europäische	europäisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Union	Union	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	nsubj	_	_
+13	selbst	selbst	ADV	ADV	_	12	advmod	_	_
+14	bis	bis	ADP	APPR	AdpType=Prep	16	case	_	_
+15	nach	nach	ADP	APPR	AdpType=Prep|Case=Dat	16	case	_	_
+16	Südamerika	Südamerika	PROPN	NE	Number=Sing|Person=3	8	obl	_	_
+17	und	und	CCONJ	KON	_	18	cc	_	_
+18	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
+19	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	20	case	_	_
+20	Suriname	Suriname	PROPN	NE	Person=3	18	obl	_	_
+21	und	und	CCONJ	KON	_	22	cc	_	_
+22	Brasilien	Brasilien	PROPN	NE	Number=Sing|Person=3	20	conj	_	_
+23	eine	eine	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Außengrenze	Grenze	NOUN	NN	Gender=Fem|Number=Sing|Person=3	18	obj	_	SpaceAfter=No
+25	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5300,15 +5483,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Siehe auch[Bearbeiten | Quelltext bearbeiten]
+# text = Siehe auch
 1	Siehe	sehen	VERB	VVIMP	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 2	auch	auch	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	[	[	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	obj	_	_
-5	|	|	PUNCT	$(	PunctType=Brck	4	punct	_	_
-6	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	appos	_	_
-7	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	ccomp	_	SpaceAfter=No
-8	]	]	PUNCT	$(	PunctType=Brck	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5316,13 +5493,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Literatur[Bearbeiten | Quelltext bearbeiten]
-1	Literatur[	Literatur[	PROPN	NE	Person=3	5	nsubj	_	SpaceAfter=No
-2	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-3	|	|	PUNCT	$(	PunctType=Brck	5	punct	_	_
-4	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	2	appos	_	_
-5	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	$(	PunctType=Brck	5	punct	_	SpacesAfter=\n
+# text = Literatur
+1	Literatur	Literatur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5330,14 +5502,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Weblinks[Bearbeiten | Quelltext bearbeiten]
-1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Weblinks
+1	Weblinks	Weblinks	PROPN	NE	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5345,14 +5511,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Einzelnachweise[Bearbeiten | Quelltext bearbeiten]
-1	Einzelnachweise	Nachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
-3	Bearbeiten	Bearbeiten	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	_
-4	|	|	PUNCT	$(	PunctType=Brck	3	punct	_	_
-5	Quelltext	Text	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	appos	_	_
-6	bearbeiten	bearbeiten	VERB	VVINF	VerbForm=Inf	1	appos	_	SpaceAfter=No
-7	]	]	PUNCT	$(	PunctType=Brck	3	punct	_	SpacesAfter=\n
+# text = Einzelnachweise
+1	Einzelnachweise	Einzelnachweis	NOUN	NN	Gender=Masc|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5360,9 +5520,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Afrika |
+# text = Afrika | Antarktika | Asien | Australien | Europa | Nordamerika | Südamerika
 1	Afrika	Afrika	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
-2	|	|	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter=\n
+2	|	|	PROPN	NE	Number=Plur|NumType=Card|Person=3	1	flat	_	SpacesAfter=\n
+3	Antarktika	Antarktika	PROPN	NE	Person=3	1	flat:name	_	SpacesAfter= 
+4	|	|	X	NE	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+5	Asien	Asien	PROPN	NE	Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+6	|	|	X	FM	Number=Plur|NumType=Card|Person=3	1	flat	_	SpacesAfter=\n
+7	Australien	Australien	PROPN	NE	Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+8	|	|	X	NE	Number=Plur|NumType=Card|Person=3	9	flat	_	SpacesAfter=\n
+9	Europa	Europa	PROPN	NE	Gender=Fem|Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+10	|	|	X	NE	Person=3	9	flat	_	SpacesAfter=\n
+11	Nordamerika	Nordamerika	PROPN	NE	Number=Sing|Person=3	9	flat:name	_	SpacesAfter= 
+12	|	|	X	NE	_	13	amod	_	SpacesAfter=\n
+13	Südamerika	Südamerika	PROPN	NE	Number=Sing|Person=3	11	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5370,9 +5541,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Afrika-Eurasien |
+# text = Afrika-Eurasien | Amerika | Eurasien | Australien und Ozeanien
 1	Afrika-Eurasien	Afrika-euRasien	PROPN	NE	Number=Sing|Person=3	0	root	_	SpacesAfter= 
-2	|	|	PUNCT	$.	PunctType=Peri	1	punct	_	SpacesAfter=\n
+2	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	Amerika	Amerika	PROPN	NE	Number=Sing|Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	NE	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	Eurasien	Eurasien	PROPN	NE	Number=Sing|Person=3	1	flat:name	_	SpacesAfter= 
+6	|	|	X	NE	Foreign=Yes|Person=3	5	flat	_	SpacesAfter=\n
+7	Australien	Australien	PROPN	NE	Number=Sing|Person=3	5	flat:name	_	_
+8	und	und	CCONJ	KON	_	9	cc	_	_
+9	Ozeanien	Ozeanien	PROPN	NE	Number=Sing|Person=3	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5380,9 +5558,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ostfeste |
+# text = Ostfeste | Westfeste | Südfeste
 1	Ostfeste	Ostfeste	NOUN	NN	Person=3	0	root	_	SpacesAfter= 
-2	|	|	PROPN	$.	Person=3	1	flat:name	_	SpacesAfter=\n
+2	|	|	X	FM	Foreign=Yes|Person=3	1	flat	_	SpacesAfter=\n
+3	Westfeste	Westfeste	NOUN	NN	Person=3	1	appos	_	SpacesAfter= 
+4	|	|	X	FM	Foreign=Yes|Person=3	3	flat	_	SpacesAfter=\n
+5	Südfeste	Südfeste	NOUN	NN	Person=3	3	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -5401,13 +5582,4 @@
 3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
 4	59°	59°	X	FM	Foreign=Yes|Person=3	2	appos	_	SpacesAfter= 
 5	W	W	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = german-hdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigationsmenü
-1	Navigationsmenü	Navigationsmenü	PROPN	NE	Person=3	0	root	_	SpacesAfter=\n
 

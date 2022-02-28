@@ -1,5 +1,3 @@
-# https://kk.wikipedia.org/wiki/%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0_%D2%9A%D2%B1%D1%80%D0%B0%D0%BC%D0%B0_%D0%A8%D1%82%D0%B0%D1%82%D1%82%D0%B0%D1%80%D1%8B
-
 # newdoc
 # newpar
 # sent_id = 1
@@ -8,15 +6,7 @@
 2	Құрама	Құрама	PROPN	np	Case=Nom|Gender=Fem	1	flat:name	_	_
 3	Штаттары	Штаттар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 4	—	—	PUNCT	guio	_	5	punct	_	_
-5	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Америка Құрама Штаттары
-1	Америка	америка	PROPN	np	Case=Nom|Gender=Fem	3	nmod:poss	_	_
-2	Құрама	Құрама	PROPN	np	Case=Nom|Gender=Fem	1	flat:name	_	_
-3	Штаттары	Штаттар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+5	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -204,7 +194,7 @@
 # newpar
 # sent_id = 1
 # text = Географиясы
-1	Географиясы	Географиясы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+1	Географиясы	Географиясы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -673,6 +663,43 @@
 10	орналасқан	орналас	VERB	v	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	SpacesAfter=\n
 
+# sent_id = 12
+# text = АҚШ аумағында 270-ке жуық мемлекет қорғауындағы табиғи аймақтар (ұлттық саябақтар, табиғат ескерткіштері, қорықтар) бар.
+1	АҚШ аумағында	АҚШ аумағ	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod:poss	_	_
+2	27	27	NUM	num	NumType=Ord	3	amod	_	SpaceAfter=No
+3	0-ке	0-ке	X	x	_	5	nmod:poss	_	_
+4	жуық	жуық	ADJ	adj	_	5	amod	_	_
+5	мемлекет	мемлекет	NOUN	n	Case=Nom	6	nmod:poss	_	_
+6	қорғауындағы	қорғау	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+7	табиғи	табиғи	ADV	adv	_	8	advmod	_	_
+8	аймақтар	аймақтар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	conj	_	_
+9	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
+10	ұлттық	ұлттық	NOUN	n	Case=Nom	11	obl	_	_
+11	саябақтар	саябақтар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No
+12	,	,	PUNCT	cm	_	11	case	_	_
+13	табиғат	табиғат	NOUN	n	_	16	obl	_	_
+14	ескерткіштері	ескерткіштер	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	16	nsubj	_	SpaceAfter=No
+15	,	,	PUNCT	cm	_	16	punct	_	_
+16	қорықтар	қорықтар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	conj	_	SpaceAfter=No
+17	)	)	PUNCT	rpar	_	18	advmod	_	_
+18	бар	бар	ADJ	adj	_	16	conj	_	SpaceAfter=No
+19	.	.	PUNCT	sent	_	18	punct	_	_
+
+# sent_id = 13
+# text = Олардың ірілері: Йеллоустон, Йосемит, Секвойя, Гранд-Каньон, т.б.
+1	Олардың	Олар	NOUN	n	Case=Gen	0	root	_	_
+2	ірілері	ірілері	ADJ	adj	_	3	amod	_	SpaceAfter=No
+3	:	:	PUNCT	sent	_	1	punct	_	_
+4	Йеллоустон	Йеллоустон	ADJ	adj	_	5	amod	_	SpaceAfter=No
+5	,	,	PUNCT	cm	_	3	punct	_	_
+6	Йосемит	Йосемит	ADJ	adj	_	7	amod	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	5	punct	_	_
+8	Секвойя	Секвойя	PROPN	np	Case=Nom	7	parataxis	_	SpaceAfter=No
+9	,	,	PUNCT	cm	_	10	punct	_	_
+10	Гранд-Каньон	Гранд-Каньон	ADJ	adj	_	8	flat:name	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	10	punct	_	_
+12	т.б.	т.б.	PUNCT	sent	_	8	punct	_	SpacesAfter=\n
+
 # newdoc
 # newpar
 # sent_id = 1
@@ -704,7 +731,7 @@
 # newpar
 # sent_id = 1
 # text = Тарихы
-1	Тарихы	Тарих	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+1	Тарихы	Тарих	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1247,7 +1274,7 @@
 # text = Қысқаша хронологиялық кесте
 1	Қысқаша	Қысқаша	ADJ	adj	_	2	advmod	_	_
 2	хронологиялық	хронологиялық	ADJ	adj	_	0	root	_	_
-3	кесте	кесте	X	x	_	2	punct	_	SpacesAfter=\n
+3	кесте	кесте	X	x	_	2	punct	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1582,7 +1609,7 @@
 # sent_id = 1
 # text = Мемлекеттік құрылысы
 1	Мемлекеттік	Мемлекеттік	NOUN	n	Case=Nom	2	obl	_	_
-2	құрылысы	құрылы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+2	құрылысы	құрылы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1682,7 +1709,7 @@
 # sent_id = 1
 # text = Сыртқы саясаты
 1	Сыртқы	Сыртқы	ADJ	adj	_	2	amod	_	_
-2	саясаты	саясат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+2	саясаты	саясат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1722,7 +1749,7 @@
 # sent_id = 1
 # text = Әкімшілік құрылысы
 1	Әкімшілік	Әкімшілік	NOUN	n	Case=Nom	2	obl	_	_
-2	құрылысы	құрылы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+2	құрылысы	құрылы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1779,7 +1806,7 @@
 # newpar
 # sent_id = 1
 # text = Экономикасы
-1	Экономикасы	Экономикасы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+1	Экономикасы	Экономикасы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2048,7 +2075,7 @@
 # newpar
 # sent_id = 1
 # text = Халқы
-1	Халқы	Халқы	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Халқы	Халқы	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2317,7 +2344,7 @@
 # sent_id = 1
 # text = Медицина-санитарлық жағдайы
 1	Медицина-санитарлық	Медицина-санитарлық	ADJ	adj	_	2	amod	_	_
-2	жағдайы	жағдай	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+2	жағдайы	жағдай	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2441,7 +2468,7 @@
 # newpar
 # sent_id = 1
 # text = Музыкасы
-1	Музыкасы	Музыкасы	DET	det	PronType=Dem	0	root	_	SpacesAfter=\n
+1	Музыкасы	Музыкасы	DET	det	PronType=Dem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2604,406 +2631,51 @@
 9	атқарды	атқар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	SpacesAfter=\s\n
 
+# sent_id = 11
+# text = АҚШ – көптеген атақты тұлғалардың отаны.
+1	АҚШ –	Ақш –	PUNCT	guio	_	5	punct	_	_
+2	көптеген	көпте	VERB	v	Tense=Past|VerbForm=Part	3	advcl	_	_
+3	атақты	атақ	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	_	_
+4	тұлғалардың	тұлғалар	NOUN	n	Case=Gen	5	nmod:poss	_	_
+5	отаны	отан	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = 12
+# text = Соның ішінде аса көрнекті саяси қайраткерлер Бенджамин Франклин, Авраам Линкольн, Роберт Фултон, Томас Эдисон, Марк Твен және т.б. бар.
+1	Соның	Со	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	3	obl	_	_
+3	аса	а	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	8	advcl	_	_
+4	көрнекті	көрнекті	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	7	nmod:poss	_	_
+5	саяси	саяси	ADV	adv	_	7	nmod:poss	_	_
+6	қайраткерлер	қайраткерлер	ADJ	adj	_	7	amod	_	_
+7	Бенджамин	Бенджамин	NOUN	n	Case=Nom	8	nsubj	_	_
+8	Франклин	Франклин	ADJ	adj	_	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	cm	_	17	punct	_	_
+10	Авраам	Авраам	CCONJ	cnjcoo	_	17	cc	_	_
+11	Линкольн	Линкольн	ADJ	adj	_	13	amod	_	SpaceAfter=No
+12	,	,	PUNCT	cm	_	11	punct	_	_
+13	Роберт	Роберт	NOUN	n	_	17	advcl	_	_
+14	Фултон	Фултон	NOUN	n	Case=Nom	15	nmod:poss	_	SpaceAfter=No
+15	,	,	PUNCT	cm	_	17	punct	_	_
+16	Томас	Томас	NUM	num	NumType=Card	17	cc	_	_
+17	Эдисон	Эдисон	ADJ	adj	_	8	conj	_	SpaceAfter=No
+18	,	,	PUNCT	cm	_	20	punct	_	_
+19	Марк	Марк	NOUN	n	Case=Nom	20	nmod:poss	_	_
+20	Твен	Твен	NOUN	n	Case=Nom	17	conj	_	_
+21	және	және	PRON	prn	Case=Nom|PronType=Int	20	appos	_	_
+22	т.б.	т.б.	PUNCT	sent	_	23	punct	_	_
+23	бар	бар	ADJ	adj	_	21	appos	_	SpaceAfter=No
+24	.	.	PUNCT	sent	_	23	punct	_	SpacesAfter=\n
+
 # newdoc
 # newpar
 # sent_id = 1
 # text = Мейрамдар
-1	Мейрамдар	Мейрамдар	PART	mod	_	0	root	_	SpacesAfter=\n
+1	Мейрамдар	Мейрамдар	PART	mod	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Дереккөздер
-1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Айдахо •
-1	Айдахо	Айдахо	NOUN	n	Case=Nom	0	root	_	_
-2	•	•	PUNCT	cm	_	1	punct	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Колумбия округы
-1	Колумбия	Колумбия	PROPN	np	Case=Nom|Gender=Fem	2	nmod:poss	_	_
-2	округы	округ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Америкалық Вирджин аралдары •
-1	Америкалық	Америкалық	ADJ	adj	_	3	amod	_	_
-2	Вирджин	Вирджин	ADJ	adj	_	3	amod	_	_
-3	аралдары	аралдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
-4	•	•	PUNCT	cm	_	3	punct	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бейкер •
-1	Бейкер	Бейке	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-2	•	•	PUNCT	cm	_	1	punct	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Антигуа және Барбуда • Аргентина • Багам аралдары • Барбадос • Белиз • Боливия • Бразилия • Венесуэла • Гаити • Гайана • Гватемала • Гондурас • Гренада • Доминика • Доминикан Республикасы • Канада • Колумбия • Коста-Рика • Куба • Мексика • Никарагуа • Панама • Парагвай • Перу • Сальвадор • Сент-Винсент және Гренадиндер • Сент-Китс және Невис • Сент-Люсия • Суринам • Тринидад және Тобаго • Уругвай • Чили • Эквадор • Ямайка
-1	АҚШ	Ақш	NUM	num	NumType=Card	14	nsubj	_	_
-2	•	•	PUNCT	cm	_	14	punct	_	_
-3	Антигуа	антигуа	SCONJ	cnjadv	_	4	amod	_	_
-4	және	және	PRON	prn	Case=Nom|PronType=Int	14	nsubj	_	_
-5	Барбуда	Барбуда	NOUN	n	Case=Loc	14	obl	_	_
-6	•	•	PUNCT	cm	_	14	punct	_	_
-7	Аргентина	аргентина	ADV	postadv	_	14	cc	_	_
-8	•	•	PUNCT	cm	_	14	punct	_	_
-9	Багам	Багам	PRON	prn	Case=Nom|PronType=Int	10	nmod:poss	_	_
-10	аралдары	аралдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
-11	•	•	PUNCT	cm	_	14	punct	_	_
-12	Барбадос	барбадос	NUM	num	NumType=Card	14	nsubj	_	_
-13	•	•	PUNCT	cm	_	14	punct	_	_
-14	Белиз	Белиз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
-15	•	•	PUNCT	cm	_	16	punct	_	_
-16	Боливия	Боливия	PROPN	np	Case=Nom	14	conj	_	_
-17	•	•	PUNCT	cm	_	18	punct	_	_
-18	Бразилия	Бразилия	PROPN	np	Case=Nom	16	appos	_	_
-19	•	•	PUNCT	cm	_	20	punct	_	_
-20	Венесуэла	Венесуэла	X	x	_	18	flat:name	_	_
-21	•	•	PUNCT	cm	_	22	punct	_	_
-22	Гаити	Гаити	ADV	adv	_	20	conj	_	_
-23	•	•	PUNCT	cm	_	26	punct	_	_
-24	Гайана	Гайана	ADV	postadv	_	26	cc	_	_
-25	•	•	PUNCT	cm	_	26	punct	_	_
-26	Гватемала	Гватемала	X	x	_	22	conj	_	_
-27	•	•	PUNCT	cm	_	28	punct	_	_
-28	Гондурас	Гондурас	NUM	num	NumType=Card	26	conj	_	_
-29	•	•	PUNCT	cm	_	28	punct	_	_
-30	Гренада	Гренада	CCONJ	cnjcoo	_	32	punct	_	_
-31	•	•	PUNCT	cm	_	32	punct	_	_
-32	Доминика	Доминика	ADV	postadv	_	29	conj	_	_
-33	•	•	PUNCT	cm	_	34	punct	_	_
-34	Доминикан	Доминикан	NOUN	n	Case=Nom	32	conj	_	_
-35	Республикасы	Республика	DET	det	PronType=Dem	34	appos	_	_
-36	•	•	PUNCT	cm	_	53	punct	_	_
-37	Канада	Канада	CCONJ	cnjcoo	_	53	cc	_	_
-38	•	•	PUNCT	cm	_	53	punct	_	_
-39	Колумбия	Колумбия	PROPN	np	Case=Nom	53	nsubj	_	_
-40	•	•	PUNCT	cm	_	53	punct	_	_
-41	Коста-Рика	Коста-Рика	ADV	postadv	_	53	advmod	_	_
-42	•	•	PUNCT	cm	_	53	punct	_	_
-43	Куба	куба	ADV	postadv	_	53	advmod	_	_
-44	•	•	PUNCT	cm	_	53	punct	_	_
-45	Мексика	Мексика	ADV	postadv	_	53	advmod	_	_
-46	•	•	PUNCT	cm	_	53	punct	_	_
-47	Никарагуа	никарагуа	ADV	postadv	_	53	advmod	_	_
-48	•	•	PUNCT	cm	_	53	punct	_	_
-49	Панама	Панама	ADV	postadv	_	53	advmod	_	_
-50	•	•	PUNCT	cm	_	53	punct	_	_
-51	Парагвай	парагвай	ADV	adv	_	53	advmod	_	_
-52	•	•	PUNCT	cm	_	53	punct	_	_
-53	Перу	Перу	PART	mod_emo	_	35	appos	_	_
-54	•	•	PUNCT	cm	_	63	punct	_	_
-55	Сальвадор	Сальвадо	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	60	ccomp	_	_
-56	•	•	PUNCT	cm	_	59	punct	_	_
-57	Сент-Винсент	Сент-Винсент	NOUN	n	_	58	nmod:poss	_	_
-58	және	және	PRON	prn	Case=Nom|PronType=Int	59	ccomp	_	_
-59	Гренадиндер	Гренадинде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	55	conj	_	_
-60	•	•	PUNCT	cm	_	63	cc	_	_
-61	Сент-Китс	Сент-китс	NUM	num	NumType=Card	62	amod	_	_
-62	және	және	PRON	prn	Case=Nom|PronType=Int	63	nmod:poss	_	_
-63	Невис	Невис	NUM	num	NumType=Card	53	conj	_	_
-64	•	•	PUNCT	cm	_	63	punct	_	_
-65	Сент-Люсия	Сент-Люсия	PROPN	np	Case=Nom	63	conj	_	_
-66	•	•	PUNCT	cm	_	70	punct	_	_
-67	Суринам	Суринам	CCONJ	cnjcoo	_	70	cc	_	_
-68	•	•	PUNCT	cm	_	70	punct	_	_
-69	Тринидад	Тринидад	PROPN	np	Case=Nom	70	cc	_	_
-70	және	және	PRON	prn	Case=Nom|PronType=Int	65	conj	_	_
-71	Тобаго	Тобаго	NOUN	n	Case=Nom	70	appos	_	_
-72	•	•	PUNCT	cm	_	79	punct	_	_
-73	Уругвай	Уругвай	ADV	adv	_	79	amod	_	_
-74	•	•	PUNCT	cm	_	75	punct	_	_
-75	Чили	Чили	ADV	adv	_	73	conj	_	_
-76	•	•	PUNCT	cm	_	75	punct	_	_
-77	Эквадор	Эквадо	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	76	conj	_	_
-78	•	•	PUNCT	cm	_	77	punct	_	_
-79	Ямайка	ямайка	PROPN	np	Case=Nom|Gender=Fem	71	appos	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Канада • Мексика
-1	АҚШ	Ақш	NUM	num	NumType=Card	3	nummod	_	SpacesBefore= 
-2	•	•	PUNCT	cm	_	1	punct	_	SpacesAfter=\s 
-3	Канада	Канада	NOUN	n	Case=Loc	4	nmod:poss	_	_
-4	•	•	PUNCT	cm	_	5	obl	_	SpacesAfter=\s 
-5	Мексика	мексика	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Германия • Жапония • Италия • Канада • Ресей (мүшелігі тоқтатылған) • Ұлыбритания • Франция
-1	АҚШ	Ақш	NUM	num	NumType=Card	0	root	_	_
-2	•	•	PUNCT	cm	_	1	punct	_	_
-3	Германия	Германия	PROPN	np	Case=Nom	2	conj	_	_
-4	•	•	PUNCT	cm	_	3	flat:name	_	_
-5	Жапония	Жапония	PROPN	np	Case=Nom	3	appos	_	_
-6	•	•	PUNCT	cm	_	7	punct	_	_
-7	Италия	Италия	PROPN	np	Case=Nom	5	flat:name	_	_
-8	•	•	PUNCT	cm	_	9	punct	_	_
-9	Канада	Канада	ADV	adv	_	7	conj	_	_
-10	•	•	PUNCT	cm	_	19	punct	_	_
-11	Ресей	Ресей	ADV	adv	_	19	amod	_	_
-12	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
-13	мүшелігі	мүшелігі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	14	nsubj	_	_
-14	тоқтатылған	тоқтат	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	11	conj	_	SpaceAfter=No
-15	)	)	PUNCT	rpar	_	16	punct	_	_
-16	•	•	PUNCT	cm	_	14	punct	_	_
-17	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	16	flat:name	_	_
-18	•	•	PUNCT	cm	_	17	punct	_	_
-19	Франция	Франция	PROPN	np	Case=Nom|Gender=Fem	9	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бақылаушы: Еуропа одағы
-1	Бақылаушы	Бақыла	VERB	v	Mood=Pot|VerbForm=Part	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	sent	_	4	punct	_	_
-3	Еуропа	еуропа	SCONJ	cnjadv	_	4	cc	_	_
-4	одағы	одақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	1	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Аргентина • Аустралия • Бразилия • Германия • Еуропа одағы • Жапония • Индонезия • Италия • Канада • Оңтүстік Корея • Қытай • Мексика • ОАР • Ресей • Сауд Арабиясы • Түркия • Ұлыбритания • Үндістан • Франция
-1	АҚШ	Ақш	NUM	num	NumType=Card	29	nsubj	_	_
-2	•	•	PUNCT	cm	_	29	punct	_	_
-3	Аргентина	аргентина	ADV	postadv	_	29	cc	_	_
-4	•	•	PUNCT	cm	_	29	punct	_	_
-5	Аустралия	Аустралия	PROPN	np	Case=Nom	29	nsubj	_	_
-6	•	•	PUNCT	cm	_	5	flat:name	_	_
-7	Бразилия	Бразилия	PROPN	np	Case=Nom	29	nsubj	_	_
-8	•	•	PUNCT	cm	_	29	punct	_	_
-9	Германия	Германия	PROPN	np	Case=Nom	29	nsubj	_	_
-10	•	•	PUNCT	cm	_	29	punct	_	_
-11	Еуропа	еуропа	SCONJ	cnjadv	_	29	cc	_	_
-12	одағы	одақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	29	nsubj	_	_
-13	•	•	PUNCT	cm	_	29	punct	_	_
-14	Жапония	Жапония	PROPN	np	Case=Nom	29	nsubj	_	_
-15	•	•	PUNCT	cm	_	29	punct	_	_
-16	Индонезия	Индонезия	PROPN	np	Case=Nom	29	nsubj	_	_
-17	•	•	PUNCT	cm	_	29	punct	_	_
-18	Италия	Италия	PROPN	np	Case=Nom	29	nsubj	_	_
-19	•	•	PUNCT	cm	_	29	punct	_	_
-20	Канада	Канада	NOUN	n	Case=Loc	29	nsubj	_	_
-21	•	•	PUNCT	cm	_	29	punct	_	_
-22	Оңтүстік	Оңтүстік	NOUN	n	Case=Nom	29	nsubj	_	_
-23	Корея	Корея	PROPN	np	Case=Nom	29	nsubj	_	_
-24	•	•	PUNCT	cm	_	29	punct	_	_
-25	Қытай	Қы	ADV	adv	_	29	cc	_	_
-26	•	•	PUNCT	cm	_	29	punct	_	_
-27	Мексика	мексика	PROPN	np	Case=Nom|Gender=Fem	29	nsubj	_	_
-28	•	•	PUNCT	cm	_	29	punct	_	_
-29	ОАР	Оар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-30	•	•	PUNCT	cm	_	42	punct	_	_
-31	Ресей	Ресей	ADV	adv	_	42	cc	_	_
-32	•	•	PUNCT	cm	_	42	punct	_	_
-33	Сауд	Сауд	PROPN	np	Case=Nom	42	nsubj	_	_
-34	Арабиясы	Арабиясы	DET	det	PronType=Dem	42	nsubj	_	_
-35	•	•	PUNCT	cm	_	42	punct	_	_
-36	Түркия	Түркия	PROPN	np	Case=Nom	42	nsubj	_	_
-37	•	•	PUNCT	cm	_	42	punct	_	_
-38	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	42	advcl	_	_
-39	•	•	PUNCT	cm	_	40	punct	_	_
-40	Үндістан	Үндістан	ADJ	adj	_	38	conj	_	_
-41	•	•	PUNCT	cm	_	40	punct	_	_
-42	Франция	Франция	PROPN	np	Case=Nom	29	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Аустралия • Бруней • Вьетнам • Жаңа Зеландия • Жапония • Индонезия • Камбоджа • Қытай • Лаос • Малайзия • Мьянма • Ресей • Оңтүстік Корея • Сингапур • Тайланд • Үндістан • Филиппиндер
-1	АҚШ	Ақш	NUM	num	NumType=Card	0	root	_	_
-2	•	•	PUNCT	cm	_	1	punct	_	_
-3	Аустралия	Аустралия	PROPN	np	Case=Nom	1	conj	_	_
-4	•	•	PUNCT	cm	_	5	punct	_	_
-5	Бруней	Бруней	ADV	adv	_	3	flat:name	_	_
-6	•	•	PUNCT	cm	_	12	punct	_	_
-7	Вьетнам	Вьетнам	PRON	prn	Case=Nom|PronType=Int	12	nsubj	_	_
-8	•	•	PUNCT	cm	_	12	punct	_	_
-9	Жаңа	жаңа	PROPN	np	Case=Nom|Gender=Fem	12	nsubj	_	_
-10	Зеландия	Зеландия	PROPN	np	Case=Nom|Gender=Fem	12	nsubj	_	_
-11	•	•	PUNCT	cm	_	12	punct	_	_
-12	Жапония	Жапония	PROPN	np	Case=Nom	5	conj	_	_
-13	•	•	PUNCT	cm	_	20	punct	_	_
-14	Индонезия	Индонезия	PROPN	np	Case=Nom	20	nsubj	_	_
-15	•	•	PUNCT	cm	_	20	punct	_	_
-16	Камбоджа	камбоджа	ADV	postadv	_	20	cc	_	_
-17	•	•	PUNCT	cm	_	20	punct	_	_
-18	Қытай	Қы	ADV	adv	_	20	cc	_	_
-19	•	•	PUNCT	cm	_	20	punct	_	_
-20	Лаос	Лаос	NUM	num	NumType=Card	12	appos	_	_
-21	•	•	PUNCT	cm	_	20	punct	_	_
-22	Малайзия	Малайзия	PROPN	np	Case=Nom	20	punct	_	_
-23	•	•	PUNCT	cm	_	31	punct	_	_
-24	Мьянма	мьянма	ADV	postadv	_	31	cc	_	_
-25	•	•	PUNCT	cm	_	31	punct	_	_
-26	Ресей	Ресей	ADV	adv	_	31	cc	_	_
-27	•	•	PUNCT	cm	_	31	punct	_	_
-28	Оңтүстік	Оңтүстік	NOUN	n	Case=Nom	31	obj	_	_
-29	Корея	Корея	PROPN	np	Case=Nom	31	obj	_	_
-30	•	•	PUNCT	cm	_	31	punct	_	_
-31	Сингапур	Сингапур	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	appos	_	_
-32	•	•	PUNCT	cm	_	33	punct	_	_
-33	Тайланд	Тайланд	PROPN	np	Case=Nom	31	conj	_	_
-34	•	•	PUNCT	cm	_	37	punct	_	_
-35	Үндістан	Үндістан	ADJ	adj	_	37	ccomp	_	_
-36	•	•	PUNCT	cm	_	35	punct	_	_
-37	Филиппиндер	Филиппиндер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	33	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Албания • Армения • Әзірбайжан • Болгария • Грекия • Грузия • Молдова • Румыния • Ресей • Сербия • Түркия • Украина
-1	Албания	Албания	PROPN	np	Case=Nom	13	nsubj	_	SpacesBefore= 
-2	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-3	Армения	Армения	PROPN	np	Case=Nom	13	nsubj	_	_
-4	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-5	Әзірбайжан	Әзірбайжан	NOUN	n	Case=Nom	13	nsubj	_	_
-6	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-7	Болгария	Болгария	PROPN	np	Case=Nom	13	nsubj	_	_
-8	•	•	PUNCT	cm	_	7	flat:name	_	SpacesAfter=\s 
-9	Грекия	Грекия	PROPN	np	Case=Nom	13	nsubj	_	_
-10	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-11	Грузия	Грузия	PROPN	np	Case=Nom	13	nsubj	_	_
-12	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-13	Молдова	молдова	SCONJ	cnjadv	_	0	root	_	_
-14	•	•	PUNCT	cm	_	15	punct	_	SpacesAfter=\s 
-15	Румыния	Румыния	PROPN	np	Case=Nom	13	conj	_	_
-16	•	•	PUNCT	cm	_	17	punct	_	SpacesAfter=\s 
-17	Ресей	Ресей	ADV	adv	_	15	appos	_	_
-18	•	•	PUNCT	cm	_	19	punct	_	SpacesAfter=\s 
-19	Сербия	Сербия	PROPN	np	Case=Nom	17	conj	_	_
-20	•	•	PUNCT	cm	_	19	punct	_	SpacesAfter=\s 
-21	Түркия	Түркия	PROPN	np	Case=Nom	20	conj	_	_
-22	•	•	PUNCT	cm	_	21	punct	_	SpacesAfter=\s 
-23	Украина	украина	ADV	postadv	_	21	punct	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Аустрия • Беларусь • Германия • Израиль • Италия • Мысыр • Польша • Словакия • Тунис • Франция • Хорватия • Чехия
-1	АҚШ	Ақш	NUM	num	NumType=Card	0	root	_	SpacesBefore= 
-2	•	•	PUNCT	cm	_	5	punct	_	SpacesAfter=\s 
-3	Аустрия	Аустрия	PROPN	np	Case=Nom	5	nsubj	_	_
-4	•	•	PUNCT	cm	_	5	punct	_	SpacesAfter=\s 
-5	Беларусь	Беларусь	NOUN	n	Case=Nom	1	conj	_	_
-6	•	•	PUNCT	cm	_	9	punct	_	SpacesAfter=\s 
-7	Германия	Германия	PROPN	np	Case=Nom	9	nsubj	_	_
-8	•	•	PUNCT	cm	_	9	punct	_	SpacesAfter=\s 
-9	Израиль	Израиль	NOUN	n	Case=Nom	5	appos	_	_
-10	•	•	PUNCT	cm	_	11	punct	_	SpacesAfter=\s 
-11	Италия	Италия	PROPN	np	Case=Nom	9	appos	_	_
-12	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-13	Мысыр	Мысы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	conj	_	_
-14	•	•	PUNCT	cm	_	13	punct	_	SpacesAfter=\s 
-15	Польша	Польша	ADJ	adj	_	16	amod	_	_
-16	•	•	PUNCT	cm	_	17	cc	_	SpacesAfter=\s 
-17	Словакия	Словакия	PROPN	np	Case=Nom	14	conj	_	_
-18	•	•	PUNCT	cm	_	17	punct	_	SpacesAfter=\s 
-19	Тунис	Тунис	NUM	num	NumType=Card	18	conj	_	_
-20	•	•	PUNCT	cm	_	19	punct	_	SpacesAfter=\s 
-21	Франция	Франция	PROPN	np	Case=Nom	25	nmod:poss	_	_
-22	•	•	PUNCT	cm	_	25	obl	_	SpacesAfter=\s 
-23	Хорватия	Хорватия	PROPN	np	Case=Nom	22	conj	_	_
-24	•	•	PUNCT	cm	_	23	punct	_	SpacesAfter=\s 
-25	Чехия	Чехия	PROPN	np	Case=Nom|Gender=Fem	19	conj	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = АҚШ • Аустралия • Аустрия • Бельгия • Германия • Грекия • Дания • Жаңа Зеландия • Жапония • Израиль • Ирландия • Исландия • Испания • Италия • Канада • Колумбия • Корея Республикасы • Латвия • Литва • Люксембург • Мажарстан • Мексика • Нидерланд • Норвегия • Польша • Португалия • Словакия • Словения • Түркия • Ұлыбритания • Финляндия • Франция • Чехия • Чили • Швейцария • Швеция • Эстония
-1	АҚШ	Ақш	NUM	num	NumType=Card	43	nsubj	_	_
-2	•	•	PUNCT	cm	_	43	punct	_	_
-3	Аустралия	Аустралия	PROPN	np	Case=Nom	43	nsubj	_	_
-4	•	•	PUNCT	cm	_	43	punct	_	_
-5	Аустрия	Аустрия	PROPN	np	Case=Nom	43	nsubj	_	_
-6	•	•	PUNCT	cm	_	43	punct	_	_
-7	Бельгия	Бельгия	PROPN	np	Case=Nom	43	nsubj	_	_
-8	•	•	PUNCT	cm	_	43	punct	_	_
-9	Германия	Германия	PROPN	np	Case=Nom	43	nsubj	_	_
-10	•	•	PUNCT	cm	_	43	punct	_	_
-11	Грекия	Грекия	PROPN	np	Case=Nom	43	nsubj	_	_
-12	•	•	PUNCT	cm	_	43	punct	_	_
-13	Дания	Дания	PROPN	np	Case=Nom	43	nsubj	_	_
-14	•	•	PUNCT	cm	_	43	punct	_	_
-15	Жаңа	жаңа	PROPN	np	Case=Nom|Gender=Fem	43	nsubj	_	_
-16	Зеландия	Зеландия	PROPN	np	Case=Nom|Gender=Fem	43	nsubj	_	_
-17	•	•	PUNCT	cm	_	43	punct	_	_
-18	Жапония	Жапония	PROPN	np	Case=Nom	43	nsubj	_	_
-19	•	•	PUNCT	cm	_	43	punct	_	_
-20	Израиль	Израиль	NOUN	n	Case=Nom	43	nsubj	_	_
-21	•	•	PUNCT	cm	_	43	punct	_	_
-22	Ирландия	Ирландия	PROPN	np	Case=Nom	43	nsubj	_	_
-23	•	•	PUNCT	cm	_	43	punct	_	_
-24	Исландия	Исландия	PROPN	np	Case=Nom	43	nsubj	_	_
-25	•	•	PUNCT	cm	_	43	punct	_	_
-26	Испания	Испания	PROPN	np	Case=Nom	43	nsubj	_	_
-27	•	•	PUNCT	cm	_	43	punct	_	_
-28	Италия	Италия	PROPN	np	Case=Nom	43	nsubj	_	_
-29	•	•	PUNCT	cm	_	43	punct	_	_
-30	Канада	Канада	NOUN	n	Case=Loc	43	nsubj	_	_
-31	•	•	PUNCT	cm	_	43	punct	_	_
-32	Колумбия	Колумбия	PROPN	np	Case=Nom	43	nsubj	_	_
-33	•	•	PUNCT	cm	_	32	punct	_	_
-34	Корея	Корея	PROPN	np	Case=Nom	43	nsubj	_	_
-35	Республикасы	Республика	DET	det	PronType=Dem	43	nsubj	_	_
-36	•	•	PUNCT	cm	_	43	punct	_	_
-37	Латвия	Латвия	PROPN	np	Case=Nom	43	nsubj	_	_
-38	•	•	PUNCT	cm	_	43	punct	_	_
-39	Литва	литва	SCONJ	cnjadv	_	43	cc	_	_
-40	•	•	PUNCT	cm	_	43	punct	_	_
-41	Люксембург	Люксембург	NOUN	n	Case=Nom	43	nsubj	_	_
-42	•	•	PUNCT	cm	_	43	punct	_	_
-43	Мажарстан	Мажарстан	ADJ	adj	_	0	root	_	_
-44	•	•	PUNCT	cm	_	49	punct	_	_
-45	Мексика	мексика	PROPN	np	Case=Nom|Gender=Fem	49	nsubj	_	_
-46	•	•	PUNCT	cm	_	49	punct	_	_
-47	Нидерланд	Нидерланд	PROPN	np	Case=Nom	49	nsubj	_	_
-48	•	•	PUNCT	cm	_	49	punct	_	_
-49	Норвегия	Норвегия	PROPN	np	Case=Nom	43	conj	_	_
-50	•	•	PUNCT	cm	_	65	punct	_	_
-51	Польша	Польша	ADJ	adj	_	52	amod	_	_
-52	•	•	PUNCT	cm	_	65	cc	_	_
-53	Португалия	Португалия	PROPN	np	Case=Nom	65	nsubj	_	_
-54	•	•	PUNCT	cm	_	65	punct	_	_
-55	Словакия	Словакия	PROPN	np	Case=Nom	65	nsubj	_	_
-56	•	•	PUNCT	cm	_	65	punct	_	_
-57	Словения	Словения	PROPN	np	Case=Nom	65	nsubj	_	_
-58	•	•	PUNCT	cm	_	65	punct	_	_
-59	Түркия	Түркия	PROPN	np	Case=Nom	65	nsubj	_	_
-60	•	•	PUNCT	cm	_	65	punct	_	_
-61	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	65	nsubj	_	_
-62	•	•	PUNCT	cm	_	65	punct	_	_
-63	Финляндия	Финляндия	PROPN	np	Case=Nom	65	nsubj	_	_
-64	•	•	PUNCT	cm	_	65	punct	_	_
-65	Франция	Франция	PROPN	np	Case=Nom	49	appos	_	_
-66	•	•	PUNCT	cm	_	67	punct	_	_
-67	Чехия	Чехия	PROPN	np	Case=Nom	65	appos	_	_
-68	•	•	PUNCT	cm	_	75	punct	_	_
-69	Чили	Чили	ADV	adv	_	75	advmod	_	_
-70	•	•	PUNCT	cm	_	71	punct	_	_
-71	Швейцария	Швейцария	PROPN	np	Case=Nom	69	conj	_	_
-72	•	•	PUNCT	cm	_	71	punct	_	_
-73	Швеция	Швеция	PROPN	np	Case=Nom	72	conj	_	_
-74	•	•	PUNCT	cm	_	73	punct	_	_
-75	Эстония	Эстония	PROPN	np	Case=Nom|Gender=Fem	67	flat:name	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 

@@ -1,5 +1,3 @@
-# https://hi.wikipedia.org/wiki/%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE_(%E0%A4%AA%E0%A4%82%E0%A4%A5)
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12,7 +10,7 @@
 3	पंथ	पंथ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
 4	)	)	PUNCT	SYM	_	3	punct	_	_
 5	-	-	PUNCT	SYM	_	3	punct	_	_
-6	विकिपीडिया	विकिपीडिया	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+6	विकिपीडिया	विकिपीडिया	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -20,11 +18,29 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = धर्म (पंथ)
-1	धर्म	धर्म	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
-2	(	(	PUNCT	SYM	_	3	punct	_	SpaceAfter=No
-3	पंथ	पंथ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	nmod	_	SpaceAfter=No
-4	)	)	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+# text = यह लेख धर्म (पंथ) के विषय में है।
+1	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	लेख	लेख	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+3	धर्म	धर्म	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+4	(	(	PUNCT	SYM	_	5	punct	_	SpaceAfter=No
+5	पंथ	पंथ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	SpaceAfter=No
+6	)	)	PUNCT	SYM	_	5	punct	_	_
+7	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	dislocated	_	_
+8	विषय	विषय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	SpaceAfter=No
+11	।	।	PUNCT	SYM	_	8	punct	_	SpacesAfter=\s\s
+
+# sent_id = 2
+# text = भारतीय दर्शन धर्म के लिए धर्म देखें।
+1	भारतीय	भारतीय	PROPN	NNPC	Case=Nom	2	compound	_	_
+2	दर्शन	दर्शन	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+3	धर्म	धर्म	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	obl	_	_
+4	के	के	ADP	PSP	AdpType=Post	3	case	_	_
+5	लिए	लिए	ADP	PSP	AdpType=Post	3	case	_	_
+6	धर्म	धर्म	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	obj	_	_
+7	देखें	देख	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	।	।	PUNCT	SYM	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -736,13 +752,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = धर्म की अवधारणा[संपादित करें]
+# text = धर्म की अवधारणा
 1	धर्म	धर्म	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
 2	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	1	case	_	_
-3	अवधारणा[	अवधारणा[	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
-4	संपादित	संपादित	ADJ	JJ	_	5	compound	_	_
-5	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+3	अवधारणा	अवधारणा	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -750,12 +763,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = हिन्दू धर्म[संपादित करें]
-1	हिन्दू	हिन्दू	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	धर्म[	धर्म[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = हिन्दू धर्म
+1	हिन्दू	हिन्दू	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	धर्म	धर्म	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -826,18 +836,90 @@
 20	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	SpaceAfter=No
 21	।	।	PUNCT	SYM	_	13	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = वेद विशुद्ध अध्यात्मिक और वैज्ञानिक ग्रंथ हैं।
+1	वेद	वेद	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+2	विशुद्ध	विशुद्ध	ADJ	JJ	Case=Nom	6	amod	_	_
+3	अध्यात्मिक	अध्यात्मिक	ADJ	JJ	Case=Nom	6	amod	_	_
+4	और	और	CCONJ	CC	_	5	cc	_	_
+5	वैज्ञानिक	वैज्ञानिक	ADJ	JJ	Case=Nom	3	conj	_	_
+6	ग्रंथ	ग्रंथ	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	0	root	_	_
+7	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+8	।	।	PUNCT	SYM	_	6	punct	_	SpacesAfter=\s\n
+
+# sent_id = 4
+# text = वेद पश्चिमी धर्म की परिभाषा तथा पंथ, संप्रदाय के विश्वास तथा दर्शन से परे शाश्वत सत्य ज्ञान सागर हैं।
+1	वेद	वेद	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
+2	पश्चिमी	पश्चिमी	ADJ	JJ	Case=Acc	3	amod	_	_
+3	धर्म	धर्म	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	3	case	_	_
+5	परिभाषा	परिभाषा	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	19	nmod	_	_
+6	तथा	तथा	CCONJ	CC	_	11	cc	_	_
+7	पंथ	पंथ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	SpaceAfter=No
+8	,	COMMA	PUNCT	SYM	_	9	punct	_	_
+9	संप्रदाय	संप्रदाय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+10	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	9	case	_	_
+11	विश्वास	विश्वास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	conj	_	_
+12	तथा	तथा	CCONJ	CC	_	13	cc	_	_
+13	दर्शन	दर्शन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	conj	_	_
+14	से	से	ADP	PSP	AdpType=Post	13	case	_	_
+15	परे	परे	ADP	PSP	AdpType=Post	13	case	_	_
+16	शाश्वत	शाश्वत	ADJ	JJ	Case=Nom	19	amod	_	_
+17	सत्य	सत्य	ADJ	JJ	Case=Nom	16	amod	_	_
+18	ज्ञान	ज्ञान	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	compound	_	_
+19	सागर	सागर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+20	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	SpaceAfter=No
+21	।	।	PUNCT	SYM	_	19	punct	_	_
+
+# sent_id = 5
+# text = वेदों की रचना मानव को सत्य ज्ञान से परिचित कराने के लिए की गई है।
+1	वेदों	वेद	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	3	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	1	case	_	_
+3	रचना	रचना	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	13	compound	_	_
+4	मानव	मानव	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	obj	_	_
+5	को	को	ADP	PSP	AdpType=Post	4	case	_	_
+6	सत्य	सत्य	ADJ	JJ	Case=Acc	7	amod	_	_
+7	ज्ञान	ज्ञान	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	obl	_	_
+8	से	से	ADP	PSP	AdpType=Post	7	case	_	_
+9	परिचित	परिचित	ADJ	JJ	_	10	compound	_	_
+10	कराने	करा	VERB	VM	Case=Acc|VerbForm=Inf	13	advcl	_	_
+11	के	के	ADP	PSP	AdpType=Post	10	mark	_	_
+12	लिए	लिए	ADP	PSP	AdpType=Post	10	mark	_	_
+13	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	0	root	_	_
+14	गई	जा	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	13	aux:pass	_	_
+15	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	_	SpaceAfter=No
+16	।	।	PUNCT	SYM	_	13	punct	_	_
+
+# sent_id = 6
+# text = वेद पंथ, संप्रदाय, मजहब, रिलीजन आदि का प्रतिनिधित्व न करके मानव के लिए हैं।
+1	वेद	वेद	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	14	nsubj	_	_
+2	पंथ	पंथ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	SpaceAfter=No
+3	,	COMMA	PUNCT	SYM	_	4	punct	_	_
+4	संप्रदाय	संप्रदाय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	2	conj	_	SpaceAfter=No
+5	,	COMMA	PUNCT	SYM	_	6	punct	_	_
+6	मजहब	मजहब	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	2	conj	_	SpaceAfter=No
+7	,	COMMA	PUNCT	SYM	_	8	cc	_	_
+8	रिलीजन	रिलीजन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	2	conj	_	_
+9	आदि	आदि	PART	RP	_	8	dep	_	_
+10	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	8	case	_	_
+11	प्रतिनिधित्व	प्रतिनिधित्व	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	compound	_	_
+12	न	न	PART	NEG	Polarity=Neg|PronType=Neg	13	advmod	_	_
+13	करके	कर	VERB	VM	VerbForm=Conv	14	advcl	_	_
+14	मानव	मानव	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+15	के	के	ADP	PSP	AdpType=Post	14	case	_	_
+16	लिए	लिए	ADP	PSP	AdpType=Post	14	case	_	_
+17	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	SpaceAfter=No
+18	।	।	PUNCT	SYM	_	14	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = जैन धर्म[संपादित करें]
-1	जैन	जैन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	धर्म[	धर्म[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = जैन धर्म
+1	जैन	जैन	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	धर्म	धर्म	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1023,12 +1105,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इस्लाम धर्म[संपादित करें]
-1	इस्लाम	इस्लाम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
-2	धर्म[	धर्म[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = इस्लाम धर्म
+1	इस्लाम	इस्लाम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	धर्म	धर्म	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1476,12 +1555,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ईसाई पन्थ[संपादित करें]
-1	ईसाई	ईसाई	NOUN	NNC	Case=Nom	2	compound	_	_
-2	पन्थ[	पन्थ[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = ईसाई पन्थ
+1	ईसाई	ईसाई	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	पन्थ	पन्थ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1564,12 +1640,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = सिख पन्थ[संपादित करें]
-1	सिख	सिख	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	पन्थ[	पन्थ[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = सिख पन्थ
+1	सिख	सिख	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	पन्थ	पन्थ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1636,12 +1709,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बौद्ध धर्म[संपादित करें]
-1	बौद्ध	बौद्ध	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	धर्म[	धर्म[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
+# text = बौद्ध धर्म
+1	बौद्ध	बौद्ध	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	धर्म	धर्म	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1822,13 +1892,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = पन्थ और संप्रदाय[संपादित करें]
-1	पन्थ	पन्थ	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	5	obj	_	_
+# text = पन्थ और संप्रदाय
+1	पन्थ	पन्थ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
 2	और	और	CCONJ	CC	_	3	cc	_	_
-3	संप्रदाय[	संप्रदाय[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	1	conj	_	SpaceAfter=No
-4	संपादित	संपादित	ADJ	JJ	_	5	compound	_	_
-5	करें	कर	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+3	संप्रदाय	संप्रदाय	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1958,13 +2025,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इन्हें भी देखें[संपादित करें]
-1	इन्हें	यह	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=3|PronType=Prs	5	obj	_	_
+# text = इन्हें भी देखें
+1	इन्हें	यह	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=3|PronType=Prs	3	obj	_	_
 2	भी	भी	PART	RP	_	1	dep	_	_
-3	देखें[	देखें[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	5	obj	_	SpaceAfter=No
-4	संपादित	संपादित	ADJ	JJ	_	5	compound	_	_
-5	करें	कर	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+3	देखें	देख	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1972,9 +2036,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ]]
-1	]	]	PUNCT	SYM	_	0	root	_	SpaceAfter=No
-2	]	]	PUNCT	SYM	_	1	punct	_	SpacesAfter=\n
+# text = सन्दर्भ
+1	सन्दर्भ	सन्दर्भ	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1982,32 +2045,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = सन्दर्भ[संपादित करें]
-1	सन्दर्भ[	सन्दर्भ[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
-2	संपादित	संपादित	ADJ	JJ	_	3	compound	_	_
-3	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hindi-hdtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = बाहरी कड़ियाँ[संपादित करें]
+# text = बाहरी कड़ियाँ
 1	बाहरी	बाहरी	ADJ	JJ	Case=Nom	2	amod	_	_
-2	कड़ियाँ[	कड़िी	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	4	obj	_	SpaceAfter=No
-3	संपादित	संपादित	ADJ	JJ	_	4	compound	_	_
-4	करें	कर	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	SYM	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hindi-hdtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन सूची
-1	दिक्चालन	दिक्चालन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	सूची	सूची	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+2	कड़ियाँ	कड़ी	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 

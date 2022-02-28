@@ -1,5 +1,3 @@
-# https://zh-classical.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -19,7 +17,7 @@
 # sent_id = 3
 # text = 大典
 1	大	大	VERB	v,動詞,描写,量	Degree=Pos|VerbForm=Part	2	amod	_	SpaceAfter=No
-2	典	典	NOUN	n,名詞,制度,儀礼	_	0	root	_	SpacesAfter=\n
+2	典	典	NOUN	n,名詞,制度,儀礼	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
@@ -27,9 +25,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 日本
-1	日	日	NOUN	n,名詞,時,*	Case=Tem	2	obl:tmod	_	SpaceAfter=No
-2	本	本	VERB	v,動詞,行為,動作	_	0	root	_	SpacesAfter=\n
+# text = 質
+1	質	質	VERB	v,動詞,行為,動作	_	0	root	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 素尚可
+1	素	素	ADV	v,動詞,描写,形質	Degree=Pos|VerbForm=Conv	2	advmod	_	SpaceAfter=No
+2	尚	尙	VERB	v,動詞,行為,態度	_	3	csubj	_	SpaceAfter=No
+3	可	可	VERB	v,動詞,描写,態度	Degree=Pos	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
@@ -199,7 +202,7 @@
 # newpar
 # sent_id = 1
 # text = 史
-1	史	史	NOUN	n,名詞,人,役割	_	0	root	_	SpacesAfter=\n
+1	史	史	NOUN	n,名詞,人,役割	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
@@ -2752,7 +2755,7 @@
 # sent_id = 1
 # text = 行政
 1	行	行	VERB	v,動詞,行為,動作	_	0	root	_	SpaceAfter=No
-2	政	政	NOUN	n,名詞,制度,儀礼	_	1	obj	_	SpacesAfter=\n
+2	政	政	NOUN	n,名詞,制度,儀礼	_	1	obj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
@@ -3674,7 +3677,7 @@
 # sent_id = 1
 # text = 地方
 1	地	地	NOUN	n,名詞,固定物,地形	Case=Loc	2	nsubj	_	SpaceAfter=No
-2	方	方	NOUN	n,名詞,固定物,関係	Case=Loc	0	root	_	SpacesAfter=\n
+2	方	方	NOUN	n,名詞,固定物,関係	Case=Loc	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
@@ -4547,16 +4550,139 @@
 3	利	利	NOUN	n,名詞,描写,形質	_	1	obj	_	SpaceAfter=No
 
 # sent_id = 2
-# text = 亞｜
-1	亞	亞	NUM	n,数詞,数字,*	_	2	nsubj	_	SpaceAfter=No
-2	｜	｜	VERB	v,動詞,行為,移動	_	0	root	_	SpacesAfter=\n
+# text = 亞｜ 文萊｜ 加拿大｜
+1	亞	亞	NUM	n,数詞,数字,*	_	2	nummod	_	SpaceAfter=No
+2	｜	｜	NOUN	n,名詞,人,名	_	3	nmod	_	SpacesAfter=\n
+3	文	文	PROPN	n,名詞,可搬,伝達	_	5	nsubj	_	SpaceAfter=No
+4	萊｜	萊｜	PROPN	n,名詞,人,名	NameType=Giv	3	flat	_	SpacesAfter=\n
+5	加	加	VERB	v,動詞,行為,得失	_	8	amod	_	SpaceAfter=No
+6	拿	拿	NOUN	n,名詞,主体,動物	_	8	nmod	_	SpaceAfter=No
+7	大	大	VERB	v,動詞,描写,量	Degree=Pos|VerbForm=Part	8	amod	_	SpaceAfter=No
+8	｜	｜	NOUN	n,名詞,描写,形質	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = 智利｜
+1	智	智	NOUN	n,名詞,描写,形質	_	2	nmod	_	SpaceAfter=No
+2	利	利	NOUN	n,名詞,描写,形質	_	3	nsubj	_	SpaceAfter=No
+3	｜	｜	VERB	v,動詞,行為,移動	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = 中華人民共和國｜
+1	中	中	NOUN	n,名詞,固定物,関係	Case=Loc	3	nmod	_	SpaceAfter=No
+2	華	華	NOUN	n,名詞,描写,形質	_	1	flat	_	SpaceAfter=No
+3	人	人	NOUN	n,名詞,人,人	_	5	nsubj	_	SpaceAfter=No
+4	民	民	NOUN	n,名詞,人,人	_	5	nsubj	_	SpaceAfter=No
+5	共	共	VERB	v,動詞,行為,交流	_	0	root	_	SpaceAfter=No
+6	和	和	VERB	v,動詞,描写,形質	Degree=Pos|VerbForm=Part	7	amod	_	SpaceAfter=No
+7	國	國	NOUN	n,名詞,主体,集団	_	5	obj	_	SpaceAfter=No
+8	｜	｜	VERB	v,動詞,行為,移動	_	5	parataxis	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = 中國香港｜
+1	中	中	NOUN	n,名詞,固定物,関係	Case=Loc	2	nmod	_	SpaceAfter=No
+2	國	國	NOUN	n,名詞,主体,集団	_	3	nsubj	_	SpaceAfter=No
+3	香	香	VERB	v,動詞,描写,形質	Degree=Pos	0	root	_	SpaceAfter=No
+4	港	港	VERB	v,動詞,描写,形質	_	3	flat:vv	_	SpaceAfter=No
+5	｜	｜	VERB	v,動詞,行為,移動	_	3	conj	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = 印度尼西亞｜ 日本｜
+1	印	印	NOUN	n,名詞,描写,形質	_	2	nmod	_	SpaceAfter=No
+2	度	度	NOUN	n,名詞,制度,儀礼	_	3	nmod	_	SpaceAfter=No
+3	尼	尼	NOUN	n,名詞,人,名	_	5	nmod	_	SpaceAfter=No
+4	西	西	NOUN	n,名詞,固定物,関係	Case=Loc	5	nmod	_	SpaceAfter=No
+5	亞	亞	NOUN	n,数詞,数字,*	_	6	nmod	_	SpaceAfter=No
+6	｜	｜	NOUN	n,名詞,可搬,道具	_	0	root	_	SpacesAfter=\n
+7	日	日	NOUN	n,名詞,時,*	Case=Tem	8	nmod	_	SpaceAfter=No
+8	本	本	NOUN	n,名詞,描写,形質	_	6	conj	_	SpaceAfter=No
+9	｜	｜	NOUN	n,名詞,描写,形質	_	8	flat	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = 大韓民國｜
+1	大	大	VERB	v,動詞,描写,量	Degree=Pos|VerbForm=Part	3	amod	_	SpaceAfter=No
+2	韓	韓	PROPN	n,名詞,主体,国名	Case=Loc|NameType=Nat	3	nmod	_	SpaceAfter=No
+3	民	民	NOUN	n,名詞,人,人	_	5	nsubj	_	SpaceAfter=No
+4	國	國	NOUN	n,名詞,主体,集団	_	5	nsubj	_	SpaceAfter=No
+5	｜	｜	VERB	v,動詞,行為,移動	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = 馬來西亞｜ 墨西哥｜
+1	馬	馬	NOUN	n,名詞,主体,動物	_	2	nsubj	_	SpaceAfter=No
+2	來	來	VERB	v,動詞,行為,移動	_	0	root	_	SpaceAfter=No
+3	西	西	NOUN	n,名詞,固定物,関係	Case=Loc	2	obj	_	SpaceAfter=No
+4	亞	亞	NUM	n,数詞,数字,*	_	2	conj	_	SpaceAfter=No
+5	｜	｜	NOUN	n,名詞,可搬,道具	_	2	conj	_	SpacesAfter=\n
+6	墨	墨	NOUN	n,名詞,可搬,道具	_	5	conj	_	SpaceAfter=No
+7	西	西	NOUN	n,名詞,固定物,関係	Case=Loc	6	flat	_	SpaceAfter=No
+8	哥	哥	NOUN	n,名詞,描写,形質	_	2	conj	_	SpaceAfter=No
+9	｜	｜	NOUN	v,動詞,行為,移動	_	8	flat	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = 新西蘭｜ 巴布亞新幾內
+1	新	新	VERB	v,動詞,描写,形質	Degree=Pos|VerbForm=Part	3	amod	_	SpaceAfter=No
+2	西	西	NOUN	n,名詞,固定物,関係	Case=Loc	3	nmod	_	SpaceAfter=No
+3	蘭	蘭	NOUN	n,名詞,可搬,道具	_	10	nsubj	_	SpaceAfter=No
+4	｜	｜	NOUN	n,名詞,可搬,道具	_	3	conj	_	SpacesAfter=\n
+5	巴	巴	NOUN	n,名詞,描写,形質	_	6	nmod	_	SpaceAfter=No
+6	布	布	NOUN	n,名詞,可搬,成果物	_	3	conj	_	SpaceAfter=No
+7	亞	亞	NUM	n,数詞,数字,*	_	6	nummod	_	SpaceAfter=No
+8	新	新	VERB	v,動詞,描写,形質	Degree=Pos	4	conj	_	SpaceAfter=No
+9	幾	幾	ADV	v,副詞,判断,推定	_	10	advmod	_	SpaceAfter=No
+10	內	內	NOUN	n,名詞,固定物,関係	Case=Loc	0	root	_	SpaceAfter=No
+
+# sent_id = 10
+# text = 亞｜ 祕魯｜
+1	亞	亞	NUM	n,数詞,数字,*	_	2	nummod	_	SpaceAfter=No
+2	｜	｜	NOUN	n,名詞,可搬,道具	_	5	nsubj	_	SpacesAfter=\n
+3	祕	祕	PROPN	n,名詞,人,名	NameType=Giv	2	conj	_	SpaceAfter=No
+4	魯	魯	PROPN	n,名詞,主体,国名	Case=Loc|NameType=Nat	5	nsubj	_	SpaceAfter=No
+5	｜	｜	VERB	v,動詞,行為,移動	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 11
+# text = 菲律賓｜
+1	菲	菲	VERB	v,動詞,描写,量	Degree=Pos|VerbForm=Part	2	amod	_	SpaceAfter=No
+2	律	律	NOUN	n,名詞,可搬,道具	_	4	nsubj	_	SpaceAfter=No
+3	賓	賓	NOUN	n,名詞,人,人	_	4	nmod	_	SpaceAfter=No
+4	｜	｜	NOUN	n,名詞,描写,形質	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 12
+# text = 俄羅斯｜
+1	俄羅	俄羅	PROPN	n,名詞,人,その他の人名	NameType=Prs	3	nsubj	_	SpaceAfter=No
+2	斯	斯	PRON	n,代名詞,指示,*	PronType=Dem	3	nsubj	_	SpaceAfter=No
+3	｜	｜	VERB	v,動詞,描写,態度	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 13
+# text = 新加坡｜
+1	新	新	ADV	v,動詞,描写,形質	Degree=Pos|VerbForm=Conv	2	advmod	_	SpaceAfter=No
+2	加	加	VERB	v,動詞,行為,得失	_	0	root	_	SpaceAfter=No
+3	坡	坡	NOUN	n,名詞,可搬,糧食	_	2	obj	_	SpaceAfter=No
+4	｜	｜	NOUN	n,名詞,可搬,道具	_	3	conj	_	SpacesAfter=\n
+
+# sent_id = 14
+# text = 中華臺北｜
+1	中	中	NOUN	n,名詞,固定物,関係	Case=Loc	2	nmod	_	SpaceAfter=No
+2	華	華	NOUN	n,名詞,固定物,樹木	_	5	nsubj	_	SpaceAfter=No
+3	臺	臺	NOUN	n,名詞,固定物,建造物	Case=Loc	4	nmod	_	SpaceAfter=No
+4	北	北	NOUN	n,名詞,固定物,関係	Case=Loc	5	obl:lmod	_	SpaceAfter=No
+5	｜	｜	VERB	v,動詞,行為,設置	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 15
+# text = 泰國｜
+1	泰	泰	VERB	v,動詞,描写,態度	Degree=Pos|VerbForm=Part	2	amod	_	SpaceAfter=No
+2	國	國	NOUN	n,名詞,主体,集団	_	3	nsubj	_	SpaceAfter=No
+3	｜	｜	VERB	v,動詞,行為,設置	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 16
+# text = 美國｜
+1	美	美	NOUN	n,名詞,描写,形質	_	2	nmod	_	SpaceAfter=No
+2	國	國	NOUN	n,名詞,主体,集団	_	3	nsubj	_	SpaceAfter=No
+3	｜	｜	VERB	v,動詞,行為,移動	_	0	root	_	SpacesAfter=\n
+
+# sent_id = 17
+# text = 越南
+1	越	越	NOUN	v,動詞,行為,動作	Case=Loc	2	nmod	_	SpaceAfter=No
+2	南	南	NOUN	n,名詞,固定物,関係	Case=Loc	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = classical_chinese-kyoto-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 導
-1	導	導	VERB	v,動詞,行為,動作	_	0	root	_	SpacesAfter=\n
-

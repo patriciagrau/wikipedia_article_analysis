@@ -1,5 +1,3 @@
-# https://ko.wikipedia.org/wiki/%EB%8B%AC
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,25 +11,7 @@
 4	,	,	PUNCT	sp	_	3	punct	_	_
 5	우리	우리	PRON	npp	_	6	compound	_	_
 6	모두의	모두+의	NOUN	ncn+jcm	_	7	nmod	_	_
-7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 언어
-1	언어	언어	NOUN	ncn	_	0	compound	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 달
-1	달	달	NOUN	ncn	_	0	root	_	SpacesAfter=\n
+7	백과사전	백과+사전	NOUN	ncn+ncn	_	3	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -74,7 +54,7 @@
 9	.	.	PUNCT	sf	_	8	punct	_	_
 
 # sent_id = 3
-# text = 지구 중심으로부터 달 중심까지의 거리는 평균 38만 4400 km로, 지구가 30개가 들어가는 거리이며, 지구에서 태양까지 거리(1AU)의 1/389 보다 작다.
+# text = 지구 중심으로부터 달 중심까지의 거리는 평균 38만 4400 km로, 지구가 30개가 들어가는 거리이며 다양한 게 모든 행성이 들어가는 거리이며 거리가 조금 남는다, 지구에서 태양까지 거리(1AU)의 1/389 보다 작다.
 1	지구	지구	NOUN	ncn	_	2	compound	_	_
 2	중심으로부터	중심+으로+부터	ADV	ncn+jca+jxc	_	4	advcl	_	_
 3	달	달	NOUN	ncn	_	4	compound	_	_
@@ -83,24 +63,33 @@
 6	평균	평균	NOUN	ncn	_	9	compound	_	_
 7	38만	38+만	NUM	nnc+nnc	_	8	compound	_	_
 8	4400	4400	NUM	nnc	_	9	nummod	_	_
-9	km로	km+로	ADV	nbu+jca	_	25	dep	_	SpaceAfter=No
+9	km로	km+로	ADV	nbu+jca	_	34	dep	_	SpaceAfter=No
 10	,	,	PUNCT	sp	_	9	punct	_	_
 11	지구가	지구+가	NOUN	ncn+jcs	_	13	nsubj	_	_
 12	30개가	30+개+가	NUM	nnc+nbu+jcs	_	13	nsubj	_	_
 13	들어가는	들+어+가+는	AUX	pvg+ecx+px+etm	_	14	ccomp	_	_
-14	거리이며	거리+이+며	CCONJ	ncn+jp+ecc	_	0	root	_	SpaceAfter=No
-15	,	,	PUNCT	sp	_	14	punct	_	_
-16	지구에서	지구+에서	ADV	ncn+jca	_	25	advcl	_	_
-17	태양까지	태양+까지	ADV	ncn+jxc	_	25	advcl	_	_
-18	거리	거리	NOUN	ncn	_	23	nmod	_	SpaceAfter=No
-19	(	(	PUNCT	sl	_	20	punct	_	SpaceAfter=No
-20	1AU	1+AU	X	f	_	18	appos	_	SpaceAfter=No
-21	)	)	PUNCT	sr	_	20	punct	_	SpaceAfter=No
-22	의	의	ADP	jcm	_	18	case	_	_
-23	1/389	1/389	NUM	nnc	_	24	nummod	_	_
-24	보다	보다	ADV	mag	_	25	advmod	_	_
-25	작다	작+다	ADJ	paa+ef	_	14	conj	_	SpaceAfter=No
-26	.	.	PUNCT	sf	_	25	punct	_	_
+14	거리이며	거리+이+며	CCONJ	ncn+jp+ecc	_	0	root	_	_
+15	다양한	다양+하+ㄴ	VERB	ncps+xsm+etm	_	16	amod	_	_
+16	게	거+이	NOUN	nbn+jcs	_	19	nsubj	_	_
+17	모든	모든	ADJ	mma	_	18	amod	_	_
+18	행성이	행성+이	NOUN	ncn+jcs	_	19	nsubj	_	_
+19	들어가는	들+어+가+는	AUX	pvg+ecx+px+etm	_	20	ccomp	_	_
+20	거리이며	거리+이+며	CCONJ	ncn+jp+ecc	_	14	conj	_	_
+21	거리가	거리+가	NOUN	ncn+jcs	_	23	nsubj	_	_
+22	조금	조금	NOUN	mag	_	23	dep	_	_
+23	남는다	남+는다	SCONJ	pvg+ecs	_	14	conj	_	SpaceAfter=No
+24	,	,	PUNCT	sp	_	23	punct	_	_
+25	지구에서	지구+에서	ADV	ncn+jca	_	34	advcl	_	_
+26	태양까지	태양+까지	ADV	ncn+jxc	_	34	advcl	_	_
+27	거리	거리	NOUN	ncn	_	32	nmod	_	SpaceAfter=No
+28	(	(	PUNCT	sl	_	29	punct	_	SpaceAfter=No
+29	1AU	1+AU	X	f	_	27	appos	_	SpaceAfter=No
+30	)	)	PUNCT	sr	_	29	punct	_	SpaceAfter=No
+31	의	의	ADP	jcm	_	27	case	_	_
+32	1/389	1/389	NUM	nnc	_	33	nummod	_	_
+33	보다	보다	ADV	mag	_	34	advmod	_	_
+34	작다	작+다	ADJ	paa+ef	_	14	conj	_	SpaceAfter=No
+35	.	.	PUNCT	sf	_	34	punct	_	_
 
 # sent_id = 4
 # text = 달의 질량은 지구의 약 4분의 1, 태양의 약 400분의 1인 3,476 km이다.
@@ -257,17 +246,16 @@
 16	발견하였다	발견+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	sf	_	16	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = korean-kaist-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 지형[편집]
-1	지형	지형	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# sent_id = 2
+# text = 또 옛날에 소행성이 달과 충돌하여 카모오알레바가 생겨났다.
+1	또	또	CCONJ	maj	_	7	cc	_	_
+2	옛날에	옛날+에	ADV	ncn+jca	_	7	obl	_	_
+3	소행성이	소행성+이	NOUN	ncn+jcs	_	5	nsubj	_	_
+4	달과	달+과	CCONJ	ncn+jct	_	7	ccomp	_	_
+5	충돌하여	충돌+하+어	SCONJ	ncpa+xsv+ecs	_	4	conj	_	_
+6	카모오알레바가	카모오알레바+가	PROPN	nq+jcs	_	7	nsubj	_	_
+7	생겨났다	생기+어+나+ㅆ+다	AUX	pvg+ecx+px+ep+ef	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	sf	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -275,11 +263,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 바다[편집]
+# text = 지형
+1	지형	지형	NOUN	ncn	_	0	compound	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 바다
 1	바다	바다	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -369,11 +363,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 고지[편집]
-1	고지	고지	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 고지
+1	고지	고지	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -439,11 +430,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 크레이터[편집]
+# text = 크레이터
 1	크레이터	크레이터	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -522,12 +510,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 산과 산맥[편집]
-1	산과	산+과	CCONJ	ncn+jcj	_	4	compound	_	_
-2	산맥	산맥	PROPN	ncn	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 산과 산맥
+1	산과	산+과	CCONJ	ncn+jcj	_	0	root	_	_
+2	산맥	산맥	NOUN	ncn	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -560,11 +545,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 계곡[편집]
-1	계곡	계곡	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 계곡
+1	계곡	계곡	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -597,13 +579,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 달의 내부 구조[편집]
+# text = 달의 내부 구조
 1	달의	달+의	NOUN	ncn+jcm	_	3	nmod	_	_
 2	내부	내부	NOUN	ncn	_	3	compound	_	_
-3	구조	구조	NOUN	ncpa	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	구조	구조	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -728,11 +707,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 밝기[편집]
-1	밝기	밝+기	VERB	pvg+etn	_	3	nmod	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 밝기
+1	밝기	밝+기	VERB	pvg+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -877,12 +853,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 달의 기원설[편집]
+# text = 달의 기원설
 1	달의	달+의	NOUN	ncn+jcm	_	2	nmod	_	_
-2	기원설	기원설	NOUN	ncn	_	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	기원설	기원설	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -927,11 +900,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 쌍둥이설[편집]
-1	쌍둥이설	쌍둥이설	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 쌍둥이설
+1	쌍둥이설	쌍둥이설	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -977,11 +947,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 포획설[편집]
+# text = 포획설
 1	포획설	포획설	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1026,11 +993,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 분리설[편집]
+# text = 분리설
 1	분리설	분리설	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1058,11 +1022,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 충돌설[편집]
+# text = 충돌설
 1	충돌설	충돌설	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1198,12 +1159,79 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 지구와의 관계[편집]
+# text = 지구와의 관계
 1	지구와의	지구+와+의	NOUN	ncn+jct+jcm	_	2	nmod	_	_
-2	관계	관계	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	관계	관계	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 달은 지구와 45도 각도로 충돌함으로써 지구의 중력에 끌려 지구를 도는 위성이 되었다.
+1	달은	달+은	NOUN	ncn+jxt	_	12	dislocated	_	SpacesBefore=\s
+2	지구와	지구+와	CCONJ	ncn+jct	_	5	advcl	_	_
+3	45도	45+도	NOUN	nnc+nbu	_	4	compound	_	_
+4	각도로	각도+로	ADV	ncn+jca	_	2	conj	_	_
+5	충돌함으로써	충돌+하+ㅁ+으로써	ADV	ncpa+xsv+etn+jca	_	12	advcl	_	_
+6	지구의	지구+의	NOUN	ncn+jcm	_	7	nmod	_	_
+7	중력에	중력+에	ADV	ncn+jca	_	8	obl	_	_
+8	끌려	끌리+어	SCONJ	pvg+ecs	_	10	ccomp	_	_
+9	지구를	지구+를	NOUN	ncn+jco	_	10	obj	_	_
+10	도는	돌+는	VERB	pvg+etm	_	11	acl	_	_
+11	위성이	위성+이	NOUN	ncn+jcc	_	12	csubj	_	_
+12	되었다	되+었+다	VERB	pvg+ep+ef	_	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	sf	_	12	punct	_	_
+
+# sent_id = 2
+# text = 이런 인연으로 인해 달은 엄청난 영향을 지구에게 주고 있으며 실제로 태양 다음으로 지구에 없어서는 안되는 소중한 천체이다.
+1	이런	이렇+ㄴ	VERB	pad+etm	_	2	amod	_	_
+2	인연으로	인연+으로	ADV	ncpa+jca	_	3	advcl	_	_
+3	인해	인하+어	SCONJ	pvg+ecs	_	17	ccomp	_	_
+4	달은	달+은	NOUN	ncn+jxt	_	8	dislocated	_	_
+5	엄청난	엄청나+ㄴ	ADJ	paa+etm	_	6	amod	_	_
+6	영향을	영향+을	NOUN	ncn+jco	_	8	obj	_	_
+7	지구에게	지구+에게	ADV	ncn+jca	_	8	iobj	_	_
+8	주고	주+고	VERB	pvg+ecx	_	17	ccomp	_	_
+9	있으며	있+으며	SCONJ	px+ecc	_	8	aux	_	_
+10	실제로	실제로	ADV	mag	_	15	advmod	_	_
+11	태양	태양	NOUN	ncn	_	12	compound	_	_
+12	다음으로	다음+으로	ADV	ncn+jca	_	15	advcl	_	_
+13	지구에	지구+에	ADV	ncn+jca	_	14	obl	_	_
+14	없어서는	없+어서+는	NOUN	paa+ecs+jxt	_	15	amod	_	_
+15	안되는	안되+는	VERB	pvg+etm	_	17	ccomp	_	_
+16	소중한	소중+하+ㄴ	VERB	ncps+xsm+etm	_	17	amod	_	_
+17	천체이다	천체+이+다	VERB	ncn+jp+ef	_	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	sf	_	17	punct	_	_
+
+# sent_id = 3
+# text = 달이 없다면 지금 지구의 생명체가 존재할 수 없으며 달로 인해 생명의 움직임이 활발하게 되었다.
+1	달이	달+이	NOUN	ncn+jcs	_	2	nsubj	_	_
+2	없다면	없+다면	SCONJ	paa+ecs	_	13	xcomp	_	_
+3	지금	지금	NOUN	ncn	_	6	advmod	_	_
+4	지구의	지구+의	NOUN	ncn+jcm	_	5	nmod	_	_
+5	생명체가	생명체+가	NOUN	ncn+jcs	_	6	nsubj	_	_
+6	존재할	존재+하+ㄹ	VERB	ncpa+xsv+etm	_	0	root	_	_
+7	수	수	NOUN	nbn	_	6	aux	_	_
+8	없으며	없+으며	SCONJ	paa+ecs	_	7	fixed	_	_
+9	달로	달+로	ADV	ncn+jca	_	10	advcl	_	_
+10	인해	인하+어	SCONJ	pvg+ecs	_	13	ccomp	_	_
+11	생명의	생명+의	NOUN	ncn+jcm	_	12	nmod	_	_
+12	움직임이	움직이+ㅁ+이	NOUN	pvg+etn+jcs	_	13	nsubj	_	_
+13	활발하게	활발+하+게	VERB	ncpa+xsv+ecx	_	6	conj	_	_
+14	되었다	되+었+다	AUX	px+ep+ef	_	13	aux	_	SpaceAfter=No
+15	.	.	PUNCT	sf	_	14	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = korean-kaist-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 달의 궤도
+1	달의	달+의	NOUN	ncn+jcm	_	2	nmod	_	_
+2	궤도	궤도	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1482,12 +1510,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 상대적인 크기[편집]
+# text = 상대적인 크기
 1	상대적인	상대+적+이+ㄴ	VERB	ncn+xsn+jp+etm	_	2	acl	_	_
-2	크기	크기	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	크기	크+기	ADJ	paa+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1586,13 +1611,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 지구에서 본 모습[편집]
+# text = 지구에서 본 모습
 1	지구에서	지구+에서	ADV	ncn+jca	_	2	advcl	_	_
 2	본	보+ㄴ	VERB	pvg+etm	_	3	acl	_	_
-3	모습	모습	NOUN	ncn	_	5	compound	_	SpaceAfter=No
-4	[	[	PUNCT	sl	_	5	punct	_	SpaceAfter=No
-5	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	sr	_	5	punct	_	SpacesAfter=\n
+3	모습	모습	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1626,18 +1648,130 @@
 10	물체이다	물체+이+다	VERB	ncn+jp+ef	_	2	conj	_	SpaceAfter=No
 11	.	.	PUNCT	sf	_	10	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = 이것은 부분적으로 반대효과(opposition effect)의 밝기향상 때문이다.
+1	이것은	이것+은	PRON	npd+jxt	_	10	dislocated	_	_
+2	부분적으로	부분+적+으로	ADV	ncn+xsn+jca	_	10	advcl	_	_
+3	반대효과	반대+효과	NOUN	f	_	9	nmod	_	SpaceAfter=No
+4	(	(	PUNCT	sl	_	5	punct	_	SpaceAfter=No
+5	opposition	opposition	X	f	_	3	appos	_	_
+6	effect	effect	X	f	_	5	flat	_	SpaceAfter=No
+7	)	)	PUNCT	sr	_	5	punct	_	SpaceAfter=No
+8	의	의	ADP	jcm	_	3	case	_	_
+9	밝기향상	밝기+향상	NOUN	ncn+ncn	_	10	compound	_	_
+10	때문이다	때문+이+다	VERB	nbn+jp+ef	_	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	sf	_	10	punct	_	_
+
+# sent_id = 4
+# text = 달이 1/4일때, 보름달 일때의 1/10 정도의 밝기이며 반달의 1/2정도의 밝기이다.
+1	달이	달+이	NOUN	ncn+jcs	_	2	nsubj	_	_
+2	1/4일때	1+/+4+일+때	NOUN	nnc+nbu+xsn	_	8	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	sp	_	2	punct	_	_
+4	보름달	보름달	NOUN	ncn	_	5	compound	_	_
+5	일때의	일+때+의	NOUN	ncn+jcm	_	8	nmod	_	_
+6	1/10	1/10	NUM	nnc	_	7	nummod	_	_
+7	정도의	정도+의	NOUN	ncn+jcm	_	8	nmod	_	_
+8	밝기이며	밝+기+이+며	CCONJ	ncn+jp+ecc	_	0	root	_	_
+9	반달의	반달+의	NOUN	ncpa+jcm	_	10	nmod	_	_
+10	1/2정도의	1+/+2정도+의	NUM	nnc+su+jcm	_	11	nmod	_	_
+11	밝기이다	밝기+이+다	VERB	ncn+jp+ef	_	8	conj	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = 부가적으로 시각계에서 색의 항상성은 물체와 그 물체 주위의 색깔 관계를 재조정한다.
+1	부가적으로	부가+적+으로	ADV	ncn+xsn+jca	_	11	advcl	_	_
+2	시각계에서	시각계+에서	ADV	ncn+jca	_	11	advcl	_	_
+3	색의	색+의	NOUN	ncn+jcm	_	4	nmod	_	_
+4	항상성은	항상성+은	NOUN	ncn+jxt	_	11	dislocated	_	_
+5	물체와	물체+와	CCONJ	ncn+jcj	_	11	obj	_	_
+6	그	그	DET	mmd	_	7	det	_	_
+7	물체	물체	NOUN	ncn	_	8	compound	_	_
+8	주위의	주위+의	NOUN	ncn+jcm	_	10	nmod	_	_
+9	색깔	색깔	NOUN	ncn	_	10	compound	_	_
+10	관계를	관계+를	NOUN	ncpa+jco	_	5	conj	_	_
+11	재조정한다	재조정+하+ㄴ다	VERB	ncpa+xsv+ef	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	_
+
+# sent_id = 6
+# text = 따라서 둘러싸고 있는 하늘이 비교적으로 어둡기때문에 햇빛 비치는 달을 밝은 물체로 인식한다.
+1	따라서	따라서	CCONJ	maj	_	12	cc	_	_
+2	둘러싸고	둘러싸+고	VERB	pvg+ecx	_	4	acl	_	_
+3	있는	있+는	AUX	px+etm	_	2	aux	_	_
+4	하늘이	하늘+이	NOUN	ncn+jcs	_	6	nsubj	_	_
+5	비교적으로	비교+적+으로	ADV	ncpa+xsn+jca	_	6	advcl	_	_
+6	어둡기때문에	어둡+기때문+에	ADV	ncn+ncn+jca	_	12	obl	_	_
+7	햇빛	햇빛	NOUN	ncn	_	8	dep	_	_
+8	비치는	비치+는	VERB	pvg+etm	_	9	acl	_	_
+9	달을	달+을	NOUN	ncn+jco	_	12	obj	_	_
+10	밝은	밝+ㄴ	VERB	pvg+etm	_	11	acl	_	_
+11	물체로	물체+로	ADV	ncn+jca	_	12	advcl	_	_
+12	인식한다	인식+하+ㄴ다	VERB	ncpa+xsv+ef	_	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	sf	_	12	punct	_	_
+
+# sent_id = 7
+# text = 주연 감광없이 보름달의 끝부분은 달의 중심만큼 밝아 보인다.
+1	주연	주연	NOUN	ncn	_	2	dep	_	_
+2	감광없이	감광없이	ADV	mag	_	8	advmod	_	_
+3	보름달의	보름달+의	NOUN	ncn+jcm	_	4	nmod	_	_
+4	끝부분은	끝+부분+은	NOUN	ncn+ncn+jxt	_	8	dislocated	_	_
+5	달의	달+의	NOUN	ncn+jcm	_	6	nmod	_	_
+6	중심만큼	중심+만큼	ADV	ncn+jca	_	7	advcl	_	_
+7	밝아	밝+아	SCONJ	paa+ecs	_	8	xcomp	_	_
+8	보인다	보이+ㄴ다	VERB	pvg+ef	_	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	sf	_	8	punct	_	_
+
+# sent_id = 8
+# text = 이는 어느 방향보다도 태양쪽으로 더 많은 빛을 반사하는 달의 토양의 반사적인 특징 때문이다.
+1	이는	이+는	PRON	npd+jxt	_	13	dislocated	_	_
+2	어느	어느	DET	mmd	_	3	det	_	_
+3	방향보다도	방향+보다+도	ADV	ncn+jca+jxc	_	8	advcl	_	_
+4	태양쪽으로	태양+쪽+으로	ADV	ncn+xsn+jca	_	8	advcl	_	_
+5	더	더	ADV	mag	_	6	advmod	_	_
+6	많은	많+ㄴ	ADJ	paa+etm	_	7	amod	_	_
+7	빛을	빛+을	NOUN	ncn+jco	_	8	obj	_	_
+8	반사하는	반사+하+는	VERB	ncpa+xsv+etm	_	12	acl	_	_
+9	달의	달+의	NOUN	ncn+jcm	_	10	nmod	_	_
+10	토양의	토양+의	NOUN	ncn+jcm	_	12	nmod	_	_
+11	반사적인	반사+적+이+ㄴ	VERB	ncpa+xsn+jp+etm	_	12	acl	_	_
+12	특징	특징	NOUN	ncn	_	13	compound	_	_
+13	때문이다	때문+이+다	VERB	nbn+jp+ef	_	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	sf	_	13	punct	_	_
+
+# sent_id = 9
+# text = 달은 지평선에 가까워질 때 더 커보인다.
+1	달은	달+은	NOUN	ncn+jxt	_	6	dislocated	_	_
+2	지평선에	지평선+에	ADV	ncn+jca	_	3	obl	_	_
+3	가까워질	가깝+어+지+ㄹ	AUX	paa+ecx+px+etm	_	4	amod	_	_
+4	때	때	NOUN	ncn	_	6	advmod	_	_
+5	더	더	ADV	mag	_	6	advmod	_	_
+6	커보인다	커보이+ㄴ다	AUX	paa+ecx+px+ef	_	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 10
+# text = 그러나 그것은 BC 7세기에 처음으로 묘사된 달의 착시라고 알려진 단순한 정신적 작용이다.
+1	그러나	그러나	CCONJ	maj	_	12	cc	_	_
+2	그것은	그것+은	PRON	npd+jxt	_	12	dislocated	_	_
+3	BC	BC	X	f	_	4	compound	_	_
+4	7세기에	7+세기+에	ADV	nnc+ncn+jca	_	6	obl	_	_
+5	처음으로	처음+으로	ADV	ncn+jca	_	6	advcl	_	_
+6	묘사된	묘사+되+ㄴ	VERB	ncpa+xsv+etm	_	8	acl	_	_
+7	달의	달+의	NOUN	ncn+jcm	_	8	nmod	_	_
+8	착시라고	착시+이+라+고	VERB	ncpa+jp+ef+jcr	_	12	ccomp	_	_
+9	알려진	알리+어+지+ㄴ	AUX	pvg+ecx+px+etm	_	8	conj	_	_
+10	단순한	단순+하+ㄴ	VERB	ncps+xsm+etm	_	12	amod	_	_
+11	정신적	정신+적	NOUN	ncn+xsn	_	12	amod	_	_
+12	작용이다	작용+이+다	VERB	ncpa+jp+ef	_	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	sf	_	12	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 달의 위상변화[편집]
+# text = 달의 위상변화
 1	달의	달+의	NOUN	ncn+jcm	_	2	nmod	_	_
-2	위상변화	위상+변화	NOUN	ncn+ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	위상변화	위상+변화	NOUN	ncn+ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1754,12 +1888,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 개기월식과 부분월식[편집]
+# text = 개기월식과 부분월식
 1	개기월식과	개기+월식+과	CCONJ	ncn+ncn+jcj	_	0	root	_	_
 2	부분월식	부분월식	NOUN	ncn	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	1	conj	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1836,12 +1967,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 달 탐사[편집]
+# text = 달 탐사
 1	달	달	NOUN	ncn	_	2	compound	_	_
-2	탐사	탐사	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	탐사	탐사	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -1946,11 +2074,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 미국[편집]
-1	미국	미국	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 미국
+1	미국	미국	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2082,12 +2207,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 아폴로 계획[편집]
+# text = 아폴로 계획
 1	아폴로	아폴로	PROPN	nq	_	2	compound	_	_
-2	계획	계획	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	계획	계획	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2188,11 +2310,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 구소련[편집]
+# text = 구소련
 1	구소련	구소련	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2200,12 +2319,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 루나 계획[편집]
+# text = 루나 계획
 1	루나	루나	PROPN	nq	_	2	compound	_	_
-2	계획	계획	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	계획	계획	NOUN	ncpa	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2343,6 +2459,43 @@
 20	성공했다	성공+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
 21	.	.	PUNCT	sf	_	20	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = 1968년 9월 15일에 구소련이 발사한 존드 5호는 달을 돌고 나서 6일 후에 인도양으로 되돌아옴으로써 구소련의 유인 달 비행의 가능성을 시사하였다.
+1	1968년	1968+년	NOUN	nno+nbu	_	3	compound	_	_
+2	9월	9+월	NOUN	nno+nbu	_	3	compound	_	_
+3	15일에	15+일+에	ADV	nno+nbu+jca	_	5	obl	_	_
+4	구소련이	구소련+이	PROPN	nq+jcs	_	5	nsubj	_	_
+5	발사한	발사+하+ㄴ	VERB	ncpa+xsv+etm	_	7	acl	_	_
+6	존드	존드	PROPN	nq	_	7	compound	_	_
+7	5호는	5+호+는	NUM	nnc+nbu+jxt	_	20	dislocated	_	_
+8	달을	달+을	NOUN	ncn+jco	_	9	obj	_	_
+9	돌고	돌+고	VERB	pvg+ecx	_	20	ccomp	_	_
+10	나서	나+서	SCONJ	px+ecs	_	9	aux	_	_
+11	6일	6+일	NOUN	nno+nbu	_	12	compound	_	_
+12	후에	후+에	ADV	ncn+jca	_	14	obl	_	_
+13	인도양으로	인도양+으로	ADV	nq+jca	_	14	advcl	_	_
+14	되돌아옴으로써	되돌아옴+으+가+ㅆ+써	ADV	pvg+etn+jca	_	20	advcl	_	_
+15	구소련의	구소련+의	PROPN	nq+jcm	_	18	nmod	_	_
+16	유인	유인	NOUN	ncn	_	17	compound	_	_
+17	달	달	NOUN	ncn	_	18	compound	_	_
+18	비행의	비행+의	NOUN	ncpa+jcm	_	19	nmod	_	_
+19	가능성을	가능성+을	NOUN	ncn+jco	_	20	obj	_	_
+20	시사하였다	시사+하+었+다	VERB	ncpa+xsv+ep+ef	_	0	root	_	SpaceAfter=No
+21	.	.	PUNCT	sf	_	20	punct	_	_
+
+# sent_id = 5
+# text = 하지만, 구소련은 결국 달에 유인 우주선을 보내지는 못했다.
+1	하지만	하지만	CCONJ	maj	_	8	cc	_	SpaceAfter=No
+2	,	,	PUNCT	sp	_	1	punct	_	_
+3	구소련은	구소련+은	PROPN	nq+jxt	_	8	dislocated	_	_
+4	결국	결국	ADV	mag	_	8	advmod	_	_
+5	달에	달+에	ADV	ncn+jca	_	8	obl	_	_
+6	유인	유인	NOUN	ncn	_	7	compound	_	_
+7	우주선을	우주선+을	NOUN	ncn+jco	_	8	obj	_	_
+8	보내지는	보내+지+는	NOUN	pvg+ecx+jxt	_	0	root	_	_
+9	못했다	못하+었+다	AUX	px+ep+ef	_	8	aux	_	SpaceAfter=No
+10	.	.	PUNCT	sf	_	9	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2372,11 +2525,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 한국[편집]
-1	한국	한국	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 한국
+1	한국	한국	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2384,11 +2534,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 인도[편집]
+# text = 인도
 1	인도	인도	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2396,11 +2543,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 중국[편집]
-1	중국	중국	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 중국
+1	중국	중국	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2408,11 +2552,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 일본[편집]
-1	일본	일본	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 일본
+1	일본	일본	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2420,12 +2561,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 탐사 계획[편집]
-1	탐사	탐사	NOUN	ncn	_	2	compound	_	_
-2	계획	계획	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 탐사 계획
+1	탐사	탐사	NOUN	ncpa	_	2	compound	_	_
+2	계획	계획	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2433,12 +2571,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 관련 법률[편집]
+# text = 관련 법률
 1	관련	관련	NOUN	ncpa	_	2	compound	_	_
-2	법률	법률	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	법률	법률	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2518,7 +2653,7 @@
 18	없게	없+게	ADJ	paa+ecx	_	17	fixed	_	_
 19	되어	되+어	AUX	px+ecx	_	16	aux	_	_
 20	있다	있+다	AUX	px+ef	_	16	aux	_	SpaceAfter=No
-21	.	.	PUNCT	sf	_	20	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	sf	_	20	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2562,12 +2697,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 관련 문화[편집]
+# text = 관련 문화
 1	관련	관련	NOUN	ncpa	_	2	compound	_	_
-2	문화	문화	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	문화	문화	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2633,12 +2765,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 일반적인 인식[편집]
+# text = 일반적인 인식
 1	일반적인	일반+적+이+ㄴ	VERB	ncn+xsn+jp+etm	_	2	acl	_	_
-2	인식	인식	NOUN	ncpa	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	인식	인식	NOUN	ncpa	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2665,11 +2794,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 동아시아[편집]
+# text = 동아시아
 1	동아시아	동아시아	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2677,11 +2803,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 유럽[편집]
-1	유럽	유럽	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 유럽
+1	유럽	유럽	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2715,12 +2838,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 달의 명칭[편집]
+# text = 달의 명칭
 1	달의	달+의	NOUN	ncn+jcm	_	2	nmod	_	_
-2	명칭	명칭	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	명칭	명칭	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2728,11 +2848,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 동아시아[편집]
+# text = 동아시아
 1	동아시아	동아시아	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2767,11 +2884,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 유럽[편집]
-1	유럽	유럽	PROPN	nq	_	3	compound	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 유럽
+1	유럽	유럽	PROPN	nq	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2779,11 +2893,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 기타[편집]
+# text = 기타
 1	기타	기타	NOUN	ncn	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2791,12 +2902,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 같이 보기[편집]
+# text = 같이 보기
 1	같이	같이	ADV	mag	_	2	advmod	_	_
-2	보기	보+기	VERB	pvg+etn	_	4	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncpa	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	보기	보+기	VERB	pvg+etn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2804,11 +2912,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 각주[편집]
-1	각주	각주	PROPN	nq	_	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	sl	_	3	punct	_	SpaceAfter=No
-3	편집	편집	NOUN	ncn	_	1	appos	_	SpaceAfter=No
-4	]	]	PUNCT	sr	_	3	punct	_	SpacesAfter=\n
+# text = 각주
+1	각주	각주	NOUN	ncn	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2816,12 +2921,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 참고 문헌[편집]
-1	참고	참고	CCONJ	pvg+ecc	_	0	root	_	_
-2	문헌	문헌	PROPN	nq	_	1	conj	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	2	appos	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+# text = 참고 문헌
+1	참고	참고	CCONJ	pvg+ecc	_	2	acl	_	_
+2	문헌	문헌	NOUN	ncn	_	0	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = korean-kaist-ud-2.6-200830
@@ -2829,10 +2931,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 외부 링크[편집]
+# text = 외부 링크
 1	외부	외부	NOUN	ncn	_	2	compound	_	_
-2	링크	링크	NOUN	ncn	_	4	compound	_	SpaceAfter=No
-3	[	[	PUNCT	sl	_	4	punct	_	SpaceAfter=No
-4	편집	편집	NOUN	ncn	_	0	root	_	SpaceAfter=No
-5	]	]	PUNCT	sr	_	4	punct	_	SpacesAfter=\n
+2	링크	링크	NOUN	ncn	_	0	root	_	SpaceAfter=No
 

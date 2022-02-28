@@ -1,5 +1,3 @@
-# https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D0%B0%D0%BC%D0%B0,_%D0%91%D0%B0%D1%80%D0%B0%D0%BA
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -11,7 +9,7 @@
 2	,	,	PUNCT	_	_	3	punct	_	_
 3	Барак	Барак	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
 4	—	—	PUNCT	_	_	5	punct	_	_
-5	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
+5	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -19,19 +17,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Обама, Барак
-1	Обама	обама	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	Барак	Барак	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бара́к Хуссе́йн Оба́ма II (англ. Barack Hussein Obama II, произносится [bəˈrɑːk huːˈseɪn oʊˈbɑːmə] амер.: i/bəˈrɑːk huːˈseɪn ɵˈbɑːmə ði ˈsɛkənd/; род.
-1	Бара́к	бара́к	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+# text = Бара́к Хуссе́йн Оба́ма II (англ. Barack Hussein Obama II, произносится амер.: i/bəˈrɑːk huːˈseɪn ɵˈbɑːmə ði ˈsɛkənd/; род.
+1	Бара́к	бара́к	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	13	nsubj:pass	_	_
 2	Хуссе́йн	хуссовать	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
 3	Оба́ма	обаем	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	flat:name	_	_
 4	II	ii	NUM	_	_	2	nummod	_	_
@@ -42,26 +29,21 @@
 9	Hussein	Hussein	PROPN	_	Foreign=Yes	2	flat:foreign	_	_
 10	Obama	Obama	PROPN	_	Foreign=Yes	2	flat:foreign	_	_
 11	II	ii	NUM	_	_	2	nummod	_	SpaceAfter=No
-12	,	,	PUNCT	_	_	13	punct	_	_
-13	произносится	произносить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	1	conj	_	_
-14	[	[	PUNCT	_	_	15	punct	_	SpaceAfter=No
-15	bəˈrɑːk	bəˈrɑːk	X	_	Foreign=Yes	13	flat:foreign	_	_
-16	huːˈseɪn	huːˈseɪn	X	_	Foreign=Yes	13	flat:foreign	_	_
-17	oʊˈbɑːmə	oʊˈbɑːmə	X	_	Foreign=Yes	15	flat:foreign	_	SpaceAfter=No
-18	]	]	PUNCT	_	_	15	punct	_	_
-19	амер.	амер.	X	_	Foreign=Yes	13	obl	_	SpaceAfter=No
-20	:	:	PUNCT	_	_	13	punct	_	_
-21	i	i	X	_	Foreign=Yes	19	flat:foreign	_	SpaceAfter=No
-22	/	/	PUNCT	_	_	23	punct	_	SpaceAfter=No
-23	bəˈrɑːk	bəˈrɑːk	X	_	Foreign=Yes	19	flat:foreign	_	_
-24	huːˈseɪn	huːˈseɪn	X	_	Foreign=Yes	19	flat:foreign	_	_
-25	ɵˈbɑːmə	ɵˈbɑːmə	X	_	Foreign=Yes	19	flat:foreign	_	_
-26	ði	ði	X	_	Foreign=Yes	19	flat:foreign	_	_
-27	ˈsɛkənd	ˈsɛkənd	X	_	Foreign=Yes	19	flat:foreign	_	SpaceAfter=No
-28	/	/	PUNCT	_	_	27	punct	_	SpaceAfter=No
-29	;	;	PUNCT	_	_	1	punct	_	_
-30	род	род	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
-31	.	.	PUNCT	_	_	1	punct	_	_
+12	,	,	PUNCT	_	_	1	punct	_	_
+13	произносится	произносить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpacesAfter=\s\s
+14	амер.	амер.	NOUN	_	Foreign=Yes	13	obl	_	SpaceAfter=No
+15	:	:	PUNCT	_	_	14	punct	_	_
+16	i	i	X	_	Foreign=Yes	14	flat:foreign	_	SpaceAfter=No
+17	/	/	PUNCT	_	_	18	punct	_	SpaceAfter=No
+18	bəˈrɑːk	bəˈrɑːk	X	_	Foreign=Yes	14	flat:foreign	_	_
+19	huːˈseɪn	huːˈseɪn	X	_	Foreign=Yes	14	flat:foreign	_	_
+20	ɵˈbɑːmə	ɵˈbɑːmə	X	_	Foreign=Yes	14	flat:foreign	_	_
+21	ði	ði	X	_	Foreign=Yes	14	flat:foreign	_	_
+22	ˈsɛkənd	ˈsɛkənd	X	_	Foreign=Yes	14	flat:foreign	_	SpaceAfter=No
+23	/	/	PUNCT	_	_	22	punct	_	SpaceAfter=No
+24	;	;	PUNCT	_	_	13	punct	_	_
+25	род	род	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
+26	.	.	PUNCT	_	_	13	punct	_	_
 
 # sent_id = 2
 # text = 4 августа 1961 (1961-08-04), Гонолулу, Гавайи, США) — американский государственный и политический деятель, 44-й президент США с 20 января 2009 года по 20 января 2017 года.
@@ -716,7 +698,7 @@
 3	образование	образование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 4	,	,	PUNCT	_	_	5	punct	_	_
 5	начало	начало	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
-6	карьеры	карьера	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpacesAfter=\n
+6	карьеры	карьера	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1277,7 +1259,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Мать вскоре после развода познакомилась с другим иностранным студентом — индонезийцем Лоло Суторо[en], вышла за него замуж и в 1967 году уехала с ним и с маленьким Бараком в Джакарту.
+# text = Мать вскоре после развода познакомилась с другим иностранным студентом — индонезийцем Лоло Суторо, вышла за него замуж и в 1967 году уехала с ним и с маленьким Бараком в Джакарту.
 1	Мать	мать	NOUN	_	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	вскоре	вскоре	ADV	_	Degree=Pos	5	advmod	_	_
 3	после	после	ADP	_	_	4	case	_	_
@@ -1290,28 +1272,26 @@
 10	—	—	PUNCT	_	_	11	punct	_	_
 11	индонезийцем	индонезиец	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	9	appos	_	_
 12	Лоло	Лоло	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	11	appos	_	_
-13	Суторо[	Суторо[	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	12	flat:name	_	SpaceAfter=No
-14	en	en	X	_	Foreign=Yes	12	flat:foreign	_	SpaceAfter=No
-15	]	]	PUNCT	_	_	14	punct	_	SpaceAfter=No
-16	,	,	PUNCT	_	_	17	punct	_	_
-17	вышла	выйти	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
-18	за	за	ADP	_	_	19	case	_	_
-19	него	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	obl	_	_
-20	замуж	замуж	ADV	_	Degree=Pos	17	advmod	_	_
-21	и	и	CCONJ	_	_	25	cc	_	_
-22	в	в	ADP	_	_	24	case	_	_
-23	1967	1967	NUM	_	_	24	nummod	_	_
-24	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	25	obl	_	_
-25	уехала	уехать	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
-26	с	с	ADP	_	_	27	case	_	_
-27	ним	он	PRON	_	Case=Ins|Gender=Masc|Number=Sing|Person=3	25	obl	_	_
-28	и	и	CCONJ	_	_	31	cc	_	_
-29	с	с	ADP	_	_	31	case	_	_
-30	маленьким	маленький	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	31	amod	_	_
-31	Бараком	Барак	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	27	conj	_	_
-32	в	в	ADP	_	_	33	case	_	_
-33	Джакарту	Джакарта	PROPN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	25	obl	_	SpaceAfter=No
-34	.	.	PUNCT	_	_	5	punct	_	_
+13	Суторо	Суторо	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	12	flat:name	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	_	_
+15	вышла	выйти	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+16	за	за	ADP	_	_	17	case	_	_
+17	него	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	obl	_	_
+18	замуж	замуж	ADV	_	Degree=Pos	15	advmod	_	_
+19	и	и	CCONJ	_	_	23	cc	_	_
+20	в	в	ADP	_	_	22	case	_	_
+21	1967	1967	NUM	_	_	22	nummod	_	_
+22	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	23	obl	_	_
+23	уехала	уехать	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+24	с	с	ADP	_	_	25	case	_	_
+25	ним	он	PRON	_	Case=Ins|Gender=Masc|Number=Sing|Person=3	23	obl	_	_
+26	и	и	CCONJ	_	_	29	cc	_	_
+27	с	с	ADP	_	_	29	case	_	_
+28	маленьким	маленький	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
+29	Бараком	Барак	PROPN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	25	conj	_	_
+30	в	в	ADP	_	_	31	case	_	_
+31	Джакарту	Джакарта	PROPN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	23	obl	_	SpaceAfter=No
+32	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = 2
 # text = От этого брака у Барака появилась единоутробная сестра Майя.
@@ -1592,7 +1572,7 @@
 # text = Сенатор штата Иллинойс
 1	Сенатор	сенатор	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	штата	штат	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	Иллинойс	Иллинойс	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	appos	_	SpacesAfter=\n
+3	Иллинойс	Иллинойс	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1777,7 +1757,7 @@
 5	2005	2005	NUM	_	_	3	nummod	_	SpaceAfter=No
 6	—	—	PUNCT	_	_	7	punct	_	SpaceAfter=No
 7	2008	2008	NUM	_	_	5	nummod	_	SpaceAfter=No
-8	)	)	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+8	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2052,7 +2032,7 @@
 # sent_id = 1
 # text = Президентская гонка
 1	Президентская	президентский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
-2	гонка	гонка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+2	гонка	гонка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2311,7 +2291,7 @@
 # text = Ход предвыборной кампании
 1	Ход	ход	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	предвыборной	предвыборный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
-3	кампании	кампания	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	кампании	кампания	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2407,7 +2387,7 @@
 # sent_id = 1
 # text = Предварительные выборы
 1	Предварительные	предварительный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	выборы	выборы	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	выборы	выборы	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2415,7 +2395,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Обама уверенно побеждал в штатах с высокой урбанизацией и уровнем образования[источник не указан 4188 дней], но при этом действительно сильно пострадавших от кризиса 2008 года; наиболее сложными для Обамы были штаты, в которых преобладает белоe население, как, например, Западная Виргиния, Техас, Оклахома, Флорида и другие, менее пострадавшие от кризиса.
+# text = Обама уверенно побеждал в штатах с высокой урбанизацией и уровнем образования, но при этом действительно сильно пострадавших от кризиса 2008 года; наиболее сложными для Обамы были штаты, в которых преобладает белоe население, как, например, Западная Виргиния, Техас, Оклахома, Флорида и другие, менее пострадавшие от кризиса.
 1	Обама	Обама	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
 2	уверенно	уверенно	ADV	_	Degree=Pos	3	advmod	_	_
 3	побеждал	побеждать	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -2427,58 +2407,51 @@
 9	и	и	CCONJ	_	_	10	cc	_	_
 10	уровнем	уровень	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	8	conj	_	_
 11	образования	образование	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	10	nmod	_	SpaceAfter=No
-12	[	[	PUNCT	_	_	15	punct	_	SpaceAfter=No
-13	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	15	nsubj:pass	_	_
-14	не	не	PART	_	_	15	advmod	_	_
-15	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	11	parataxis	_	_
-16	4188	4188	NUM	_	_	17	nummod	_	_
-17	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	15	obl	_	SpaceAfter=No
-18	]	]	PUNCT	_	_	15	punct	_	SpaceAfter=No
-19	,	,	PUNCT	_	_	25	punct	_	_
-20	но	но	CCONJ	_	_	25	cc	_	_
-21	при	при	ADP	_	_	22	case	_	_
-22	этом	это	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	25	obl	_	_
-23	действительно	действительно	ADV	_	Degree=Pos	24	advmod	_	_
-24	сильно	сильно	ADV	_	Degree=Pos	25	advmod	_	_
-25	пострадавших	страдать	VERB	_	Aspect=Perf|Case=Gen|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	15	conj	_	_
-26	от	от	ADP	_	_	27	case	_	_
-27	кризиса	кризис	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	25	obl	_	_
-28	2008	2008	NUM	_	_	29	nummod	_	_
-29	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
-30	;	;	PUNCT	_	_	3	punct	_	_
-31	наиболее	наиболее	ADV	_	Degree=Pos	32	obl	_	_
-32	сложными	сложный	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	3	conj	_	_
-33	для	для	ADP	_	_	34	case	_	_
-34	Обамы	Обама	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	32	obl	_	_
-35	были	быть	AUX	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	32	cop	_	_
-36	штаты	штат	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	32	nsubj	_	SpaceAfter=No
-37	,	,	PUNCT	_	_	40	punct	_	_
-38	в	в	ADP	_	_	39	case	_	_
-39	которых	который	PRON	_	Case=Loc	40	obl	_	_
-40	преобладает	преобладать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	36	acl:relcl	_	_
-41	белоe	белый	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	42	amod	_	_
-42	население	население	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	40	nsubj	_	SpaceAfter=No
-43	,	,	PUNCT	_	_	49	punct	_	_
-44	как	как	SCONJ	_	_	49	mark	_	SpaceAfter=No
-45	,	,	PUNCT	_	_	44	punct	_	_
-46	например	например	ADV	_	Degree=Pos	49	parataxis	_	SpaceAfter=No
-47	,	,	PUNCT	_	_	46	punct	_	_
-48	Западная	Западный	PROPN	_	_	49	amod	_	_
-49	Виргиния	Виргиния	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	36	acl	_	SpaceAfter=No
-50	,	,	PUNCT	_	_	51	punct	_	_
-51	Техас	Техас	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	49	conj	_	SpaceAfter=No
-52	,	,	PUNCT	_	_	53	punct	_	_
-53	Оклахома	Оклахома	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	49	conj	_	SpaceAfter=No
-54	,	,	PUNCT	_	_	55	punct	_	_
-55	Флорида	Флорида	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	49	conj	_	_
-56	и	и	CCONJ	_	_	57	cc	_	_
-57	другие	другой	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	49	conj	_	SpaceAfter=No
-58	,	,	PUNCT	_	_	60	punct	_	_
-59	менее	менее	ADV	_	Degree=Cmp	60	advmod	_	_
-60	пострадавшие	страдать	VERB	_	Aspect=Perf|Case=Nom|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	57	acl	_	_
-61	от	от	ADP	_	_	62	case	_	_
-62	кризиса	кризис	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	60	obl	_	SpaceAfter=No
-63	.	.	PUNCT	_	_	3	punct	_	_
+12	,	,	PUNCT	_	_	18	punct	_	_
+13	но	но	CCONJ	_	_	18	cc	_	_
+14	при	при	ADP	_	_	15	case	_	_
+15	этом	это	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	18	obl	_	_
+16	действительно	действительно	ADV	_	Degree=Pos	17	advmod	_	_
+17	сильно	сильно	ADV	_	Degree=Pos	18	advmod	_	_
+18	пострадавших	страдать	VERB	_	Aspect=Perf|Case=Gen|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+19	от	от	ADP	_	_	20	case	_	_
+20	кризиса	кризис	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	18	obl	_	_
+21	2008	2008	NUM	_	_	22	nummod	_	_
+22	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
+23	;	;	PUNCT	_	_	3	punct	_	_
+24	наиболее	наиболее	ADV	_	Degree=Pos	25	obl	_	_
+25	сложными	сложный	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	3	conj	_	_
+26	для	для	ADP	_	_	27	case	_	_
+27	Обамы	Обама	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	25	obl	_	_
+28	были	быть	AUX	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	_
+29	штаты	штат	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	25	nsubj	_	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	_	_
+31	в	в	ADP	_	_	32	case	_	_
+32	которых	который	PRON	_	Case=Loc	33	obl	_	_
+33	преобладает	преобладать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	29	acl:relcl	_	_
+34	белоe	белый	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	35	amod	_	_
+35	население	население	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	33	nsubj	_	SpaceAfter=No
+36	,	,	PUNCT	_	_	42	punct	_	_
+37	как	как	SCONJ	_	_	42	mark	_	SpaceAfter=No
+38	,	,	PUNCT	_	_	37	punct	_	_
+39	например	например	ADV	_	Degree=Pos	42	parataxis	_	SpaceAfter=No
+40	,	,	PUNCT	_	_	39	punct	_	_
+41	Западная	Западный	PROPN	_	_	42	amod	_	_
+42	Виргиния	Виргиния	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	29	acl	_	SpaceAfter=No
+43	,	,	PUNCT	_	_	44	punct	_	_
+44	Техас	Техас	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	42	conj	_	SpaceAfter=No
+45	,	,	PUNCT	_	_	46	punct	_	_
+46	Оклахома	Оклахома	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	42	conj	_	SpaceAfter=No
+47	,	,	PUNCT	_	_	48	punct	_	_
+48	Флорида	Флорида	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	42	conj	_	_
+49	и	и	CCONJ	_	_	50	cc	_	_
+50	другие	другой	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	42	conj	_	SpaceAfter=No
+51	,	,	PUNCT	_	_	53	punct	_	_
+52	менее	менее	ADV	_	Degree=Cmp	53	advmod	_	_
+53	пострадавшие	страдать	VERB	_	Aspect=Perf|Case=Nom|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	50	acl	_	_
+54	от	от	ADP	_	_	55	case	_	_
+55	кризиса	кризис	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	53	obl	_	SpaceAfter=No
+56	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 2
 # text = Также Обама одержал победы в традиционно республиканских штатах (например, на Аляске и Миссисипи, где традиционно поддерживают республиканцев с 1980 года), и в то же время, в традиционно либеральных штатах, таких как Вашингтон и Миннесота и в некоторых штатах «перевёртышах».
@@ -2588,7 +2561,7 @@
 3	США	США	PROPN	_	Animacy=Inan|Case=Loc|Number=Plur	1	nmod	_	_
 4	и	и	CCONJ	_	_	6	cc	_	_
 5	иных	иной	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	6	amod	_	_
-6	странах	страна	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	3	conj	_	SpacesAfter=\n
+6	странах	страна	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2841,7 +2814,7 @@
 # newpar
 # sent_id = 1
 # text = Президентство
-1	Президентство	президентство	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+1	Президентство	президентство	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2852,7 +2825,7 @@
 # text = Первый президентский срок
 1	Первый	первый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 2	президентский	президентский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-3	срок	срок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	срок	срок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2861,7 +2834,7 @@
 # newpar
 # sent_id = 1
 # text = Инаугурация
-1	Инаугурация	инаугурация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Инаугурация	инаугурация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3092,7 +3065,7 @@
 2	в	в	ADP	_	_	5	case	_	_
 3	первый	первый	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
 4	президентский	президентский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
-5	срок	срок	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+5	срок	срок	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3411,7 +3384,7 @@
 # text = Нобелевская премия мира
 1	Нобелевская	Нобелевский	ADJ	_	_	2	amod	_	_
 2	премия	премия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-3	мира	мир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
+3	мира	мир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3541,7 +3514,7 @@
 # text = Ирак и Афганистан
 1	Ирак	Ирак	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	и	и	CCONJ	_	_	3	cc	_	_
-3	Афганистан	Афганистан	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+3	Афганистан	Афганистан	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3778,52 +3751,50 @@
 23	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 4
-# text = В настоящее время[уточнить] американский контингент в Афганистане уже насчитывает около 70 тыс. военнослужащих, и после прибытия подкрепления достигнет 100 тыс., что сравнимо с численностью советского контингента на пике войны СССР в Афганистане (около 109 тыс. человек).
-1	В	в	ADP	_	_	12	advmod	_	_
+# text = В настоящее время американский контингент в Афганистане уже насчитывает около 70 тыс. военнослужащих, и после прибытия подкрепления достигнет 100 тыс., что сравнимо с численностью советского контингента на пике войны СССР в Афганистане (около 109 тыс. человек).
+1	В	в	ADP	_	_	9	advmod	_	_
 2	настоящее	настоящий	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	1	fixed	_	_
-3	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	1	fixed	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	уточнить	уточнить	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	12	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	_	_	5	punct	_	_
-7	американский	американский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
-8	контингент	контингент	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
-9	в	в	ADP	_	_	10	case	_	_
-10	Афганистане	Афганистан	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	8	nmod	_	_
-11	уже	уже	ADV	_	Degree=Pos	12	advmod	_	_
-12	насчитывает	насчитывать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-13	около	около	ADP	_	_	15	case	_	_
-14	70	70	NUM	_	_	15	nummod	_	_
-15	тыс.	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	12	obl	_	_
-16	военнослужащих	военнослужащий	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	_	_	22	punct	_	_
-18	и	и	CCONJ	_	_	22	cc	_	_
-19	после	после	ADP	_	_	20	case	_	_
-20	прибытия	прибытие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	22	obl	_	_
-21	подкрепления	подкрепление	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	20	nmod	_	_
-22	достигнет	достичь	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	12	conj	_	_
-23	100	100	NUM	_	_	24	nummod	_	_
-24	тыс.	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	22	nsubj	_	SpaceAfter=No
-25	,	,	PUNCT	_	_	27	punct	_	_
-26	что	что	PRON	_	Case=Nom	27	nsubj	_	_
-27	сравнимо	сравнимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	22	parataxis	_	_
-28	с	с	ADP	_	_	29	case	_	_
-29	численностью	численность	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	27	obl	_	_
-30	советского	советский	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	31	amod	_	_
-31	контингента	контингент	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	29	nmod	_	_
-32	на	на	ADP	_	_	33	case	_	_
-33	пике	пик	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	29	nmod	_	_
-34	войны	война	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	33	nmod	_	_
-35	СССР	СССР	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	34	nmod	_	_
-36	в	в	ADP	_	_	37	case	_	_
-37	Афганистане	Афганистан	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	34	nmod	_	_
-38	(	(	PUNCT	_	_	41	punct	_	SpaceAfter=No
-39	около	около	ADP	_	_	41	case	_	_
-40	109	109	NUM	_	_	41	nummod	_	_
-41	тыс	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	37	parataxis	_	SpaceAfter=No
-42	.	.	PUNCT	_	_	41	punct	_	_
-43	человек	человек	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	41	nmod	_	SpaceAfter=No
-44	)	)	PUNCT	_	_	41	punct	_	SpaceAfter=No
-45	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n
+3	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	1	fixed	_	_
+4	американский	американский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	контингент	контингент	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+6	в	в	ADP	_	_	7	case	_	_
+7	Афганистане	Афганистан	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	5	nmod	_	_
+8	уже	уже	ADV	_	Degree=Pos	9	advmod	_	_
+9	насчитывает	насчитывать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	около	около	ADP	_	_	12	case	_	_
+11	70	70	NUM	_	_	12	nummod	_	_
+12	тыс	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	12	punct	_	_
+14	военнослужащих	военнослужащий	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	_	_
+16	и	и	CCONJ	_	_	20	cc	_	_
+17	после	после	ADP	_	_	18	case	_	_
+18	прибытия	прибытие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	20	obl	_	_
+19	подкрепления	подкрепление	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	18	nmod	_	_
+20	достигнет	достичь	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	9	conj	_	_
+21	100	100	NUM	_	_	22	nummod	_	_
+22	тыс.	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	20	nsubj	_	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	_	_
+24	что	что	PRON	_	Case=Nom	25	nsubj	_	_
+25	сравнимо	сравнимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	20	parataxis	_	_
+26	с	с	ADP	_	_	27	case	_	_
+27	численностью	численность	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	25	obl	_	_
+28	советского	советский	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
+29	контингента	контингент	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	27	nmod	_	_
+30	на	на	ADP	_	_	31	case	_	_
+31	пике	пик	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	27	nmod	_	_
+32	войны	война	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	31	nmod	_	_
+33	СССР	СССР	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	_
+34	в	в	ADP	_	_	35	case	_	_
+35	Афганистане	Афганистан	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	32	nmod	_	_
+36	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No
+37	около	около	ADP	_	_	39	case	_	_
+38	109	109	NUM	_	_	39	nummod	_	_
+39	тыс	тысяча	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	35	parataxis	_	SpaceAfter=No
+40	.	.	PUNCT	_	_	39	punct	_	_
+41	человек	человек	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	39	nmod	_	SpaceAfter=No
+42	)	)	PUNCT	_	_	39	punct	_	SpaceAfter=No
+43	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3984,7 +3955,7 @@
 # text = Второй президентский срок
 1	Второй	второй	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 2	президентский	президентский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-3	срок	срок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	срок	срок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3996,7 +3967,7 @@
 1	Президентские	президентский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	выборы	выборы	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 3	2012	2012	NUM	_	_	4	nummod	_	_
-4	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
+4	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4248,7 +4219,7 @@
 2	во	в	ADP	_	_	5	case	_	_
 3	второй	второй	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
 4	президентский	президентский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
-5	срок	срок	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+5	срок	срок	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4258,7 +4229,7 @@
 # sent_id = 1
 # text = Снижение рейтинга
 1	Снижение	снижение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	рейтинга	рейтинг	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	рейтинга	рейтинг	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4585,7 +4556,7 @@
 # sent_id = 1
 # text = После президентства
 1	После	после	ADP	_	_	2	case	_	_
-2	президентства	президентство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n
+2	президентства	президентство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -5674,7 +5645,7 @@
 1	Политические	политический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	взгляды	взгляд	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 3	и	и	CCONJ	_	_	4	cc	_	_
-4	высказывания	высказывание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	2	conj	_	SpacesAfter=\n
+4	высказывания	высказывание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6202,7 +6173,87 @@
 23	в	в	ADP	_	_	25	case	_	_
 24	свободный	свободный	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	25	amod	_	_
 25	рынок	рынок	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No
-26	:	:	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+26	:	:	PUNCT	_	_	11	punct	_	SpacesAfter=\n\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = «Если все семьи и все фирмы в Америке одновременно урежут свои расходы, то денег тратить никто не будет, упадёт число потребителей, что в свою очередь приведёт к новым увольнениям и ситуация в экономике ухудшится ещё сильнее.
+1	«Если	«если	SCONJ	_	_	10	mark	_	SpacesBefore=\n
+2	все	весь	DET	_	Case=Nom|Number=Plur	3	det	_	_
+3	семьи	семья	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	10	nsubj	_	_
+4	и	и	CCONJ	_	_	6	cc	_	_
+5	все	весь	DET	_	Case=Nom|Number=Plur	6	det	_	_
+6	фирмы	фирма	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	3	conj	_	_
+7	в	в	ADP	_	_	8	case	_	_
+8	Америке	Америка	PROPN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	6	nmod	_	_
+9	одновременно	одновременно	ADV	_	Degree=Pos	10	advmod	_	_
+10	урежут	урезать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	16	advcl	_	_
+11	свои	свой	DET	_	Case=Acc|Number=Plur	12	det	_	_
+12	расходы	расход	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	10	punct	_	_
+14	то	то	SCONJ	_	_	16	mark	_	_
+15	денег	деньги	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	16	obl	_	_
+16	тратить	тратить	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	0	root	_	_
+17	никто	никто	PRON	_	Case=Nom	16	nsubj	_	_
+18	не	не	PART	_	_	16	advmod	_	_
+19	будет	быть	AUX	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	aux	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	_	_
+21	упадёт	падать	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	16	conj	_	_
+22	число	число	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	21	nsubj	_	_
+23	потребителей	потребитель	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	29	punct	_	_
+25	что	что	PRON	_	Case=Nom	29	nsubj	_	_
+26	в	в	ADP	_	_	28	case	_	_
+27	свою	свой	DET	_	Case=Acc|Gender=Fem|Number=Sing	28	det	_	_
+28	очередь	очередь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	29	obl	_	_
+29	приведёт	привести	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	16	parataxis	_	_
+30	к	к	ADP	_	_	32	case	_	_
+31	новым	новый	ADJ	_	Case=Dat|Degree=Pos|Number=Plur	32	amod	_	_
+32	увольнениям	увольнение	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Plur	29	obl	_	_
+33	и	и	CCONJ	_	_	37	cc	_	_
+34	ситуация	ситуация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	37	nsubj	_	_
+35	в	в	ADP	_	_	36	case	_	_
+36	экономике	экономика	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	34	nmod	_	_
+37	ухудшится	ухудшиться	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Mid	29	conj	_	_
+38	ещё	еще	ADV	_	Degree=Pos	39	advmod	_	_
+39	сильнее	сильно	ADV	_	Degree=Cmp	37	advmod	_	SpaceAfter=No
+40	.	.	PUNCT	_	_	16	punct	_	_
+
+# sent_id = 2
+# text = Вот поэтому правительству пришлось вмешаться и временно увеличить расходы, чтобы стимулировать спрос.
+1	Вот	вот	PART	_	_	2	advmod	_	_
+2	поэтому	поэтому	ADV	_	Degree=Pos	4	advmod	_	_
+3	правительству	правительство	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	4	iobj	_	_
+4	пришлось	прийтись	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	_
+5	вмешаться	вмешаться	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Mid	4	csubj	_	_
+6	и	и	CCONJ	_	_	8	cc	_	_
+7	временно	временно	ADV	_	Degree=Pos	8	advmod	_	_
+8	увеличить	увеличить	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	5	conj	_	_
+9	расходы	расход	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	_	_
+11	чтобы	чтобы	SCONJ	_	Mood=Cnd	12	mark	_	_
+12	стимулировать	стимулировать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	8	advcl	_	_
+13	спрос	спрос	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 3
+# text = Именно это мы сейчас и делаем», — заявил американский президент.
+1	Именно	именно	PART	_	_	2	advmod	_	_
+2	это	это	PRON	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	6	obj	_	_
+3	мы	мы	PRON	_	Case=Nom|Number=Plur|Person=1	6	nsubj	_	_
+4	сейчас	сейчас	ADV	_	Degree=Pos	6	advmod	_	_
+5	и	и	PART	_	_	6	advmod	_	_
+6	делаем»	делать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	_	SpacesAfter= 
+8	—	—	PUNCT	_	_	9	punct	_	_
+9	заявил	заявить	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+10	американский	американский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	президент	президент	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6221,6 +6272,25 @@
 8	перераспределения	перераспределение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
 9	доходов	доход	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Ромни называет избирателей Обамы людьми, «не способными обеспечить себя и живущими за счёт государства».
+1	Ромни	Ромни	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	называет	называть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	избирателей	избиратель	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Plur	2	obj	_	_
+4	Обамы	Обама	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
+5	людьми	человек	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	«не	«не	PART	_	_	8	advmod	_	_
+8	способными	способный	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	5	acl	_	_
+9	обеспечить	обеспечить	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	себя	себя	PRON	_	Case=Acc	9	obj	_	_
+11	и	и	CCONJ	_	_	12	cc	_	_
+12	живущими	жить	VERB	_	Aspect=Imp|Case=Ins|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	9	conj	_	_
+13	за	за	ADP	_	_	15	case	_	_
+14	счёт	счет	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	13	fixed	_	_
+15	государства»	государство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6394,7 +6464,7 @@
 # newpar
 # sent_id = 1
 # text = Критика
-1	Критика	критика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Критика	критика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6467,6 +6537,29 @@
 20	как	как	SCONJ	_	_	21	mark	_	_
 21	поражение	поражение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	19	advcl	_	SpaceAfter=No
 22	:	:	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Исключение военного вмешательства вдохновляет тех, кто считает это знаком готовности Запада стерпеть всё.
+1	Исключение	исключение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
+2	военного	военный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	вмешательства	вмешательство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
+4	вдохновляет	вдохновлять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	тех	тот	DET	_	Case=Acc|Number=Plur	4	det	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	кто	кто	PRON	_	Case=Nom	8	nsubj	_	_
+8	считает	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	это	это	PRON	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	8	obj	_	_
+10	знаком	знак	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	8	obl	_	_
+11	готовности	готовность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
+12	Запада	Запад	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	_
+13	стерпеть	стерпеть	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	11	obl	_	_
+14	всё	все	PRON	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6573,7 +6666,7 @@
 29	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 2
-# text = Так, по словам Хэйгела, 30 августа 2013 года Обама отказался отдать приказ о нанесении ракетного удара по Дамаску, несмотря на то, что сирийские войска применили против оппозиции отравляющий газ[прим.
+# text = Так, по словам Хэйгела, 30 августа 2013 года Обама отказался отдать приказ о нанесении ракетного удара по Дамаску, несмотря на то, что сирийские войска применили против оппозиции отравляющий газ, то есть перешли «красную черту», объявленную ранее самим Обамой.
 1	Так	так	ADV	_	Degree=Pos	12	parataxis	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	по	по	ADP	_	_	4	case	_	_
@@ -6606,28 +6699,22 @@
 30	против	против	ADP	_	_	31	case	_	_
 31	оппозиции	оппозиция	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	29	obl	_	_
 32	отравляющий	отравлять	VERB	_	Animacy=Inan|Aspect=Imp|Case=Acc|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	33	amod	_	_
-33	газ[	газ[	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	29	obj	_	SpaceAfter=No
-34	прим.	примечание	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	33	nmod	_	_
+33	газ	газ	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	29	obj	_	SpaceAfter=No
+34	,	,	PUNCT	_	_	37	punct	_	_
+35	то	то	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	37	mark	_	_
+36	есть	быть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	fixed	_	_
+37	перешли	перейти	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	29	parataxis	_	_
+38	«красную	«красный	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	39	amod	_	_
+39	черту»	черту»	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	37	obj	_	SpaceAfter=No
+40	,	,	PUNCT	_	_	41	punct	_	_
+41	объявленную	объявить	VERB	_	Aspect=Perf|Case=Acc|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	39	acl	_	_
+42	ранее	ранее	ADV	_	Degree=Pos	41	advmod	_	_
+43	самим	сам	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	44	amod	_	_
+44	Обамой	Обама	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	41	obl	_	SpaceAfter=No
+45	.	.	PUNCT	_	_	12	punct	_	_
 
 # sent_id = 3
-# text = 1], то есть перешли «красную черту», объявленную ранее самим Обамой.
-1	1	1	NUM	_	_	0	root	_	SpaceAfter=No
-2	]	]	PUNCT	_	_	1	punct	_	SpaceAfter=No
-3	,	,	PUNCT	_	_	6	punct	_	_
-4	то	то	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	mark	_	_
-5	есть	быть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	fixed	_	_
-6	перешли	перейти	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
-7	«красную	«красный	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
-8	черту»	черту»	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No
-9	,	,	PUNCT	_	_	10	punct	_	_
-10	объявленную	объявить	VERB	_	Aspect=Perf|Case=Acc|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
-11	ранее	ранее	ADV	_	Degree=Pos	10	advmod	_	_
-12	самим	сам	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
-13	Обамой	Обама	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	10	obl	_	SpaceAfter=No
-14	.	.	PUNCT	_	_	1	punct	_	_
-
-# sent_id = 4
-# text = Как считает Хэйгел, отказ от решительных действий в критический момент нанёс сокрушительный удар по репутации как самого президента Обамы, так и США в целом[прим. 2].
+# text = Как считает Хэйгел, отказ от решительных действий в критический момент нанёс сокрушительный удар по репутации как самого президента Обамы, так и США в целом.
 1	Как	как	SCONJ	_	_	2	mark	_	_
 2	считает	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	parataxis	_	_
 3	Хэйгел	Хэйгел	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
@@ -6654,11 +6741,7 @@
 24	США	США	PROPN	_	Animacy=Inan|Case=Gen|Number=Plur	19	conj	_	_
 25	в	в	ADP	_	_	26	case	_	_
 26	целом	целое	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	24	nmod	_	SpaceAfter=No
-27	[	[	PUNCT	_	_	28	punct	_	SpaceAfter=No
-28	прим.	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	16	parataxis	_	_
-29	2	2	NUM	_	_	28	nummod	_	SpaceAfter=No
-30	]	]	PUNCT	_	_	28	punct	_	SpaceAfter=No
-31	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6668,7 +6751,27 @@
 # sent_id = 1
 # text = Список произведений
 1	Список	список	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	произведений	произведение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpacesAfter=\n
+2	произведений	произведение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	1	nmod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = На английском
+1	На	на	ADP	_	_	2	case	_	_
+2	английском	английский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = На русском
+1	На	на	ADP	_	_	2	case	_	_
+2	русском	русский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6680,7 +6783,7 @@
 1	Семья	семья	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	и	и	CCONJ	_	_	4	cc	_	_
 3	личная	личный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
-4	жизнь	жизнь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+4	жизнь	жизнь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6759,7 +6862,7 @@
 # newpar
 # sent_id = 1
 # text = Награды
-1	Награды	награда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Награды	награда	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6768,7 +6871,7 @@
 # newpar
 # sent_id = 1
 # text = Американские
-1	Американские	американский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpacesAfter=\n
+1	Американские	американский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6777,7 +6880,7 @@
 # newpar
 # sent_id = 1
 # text = Государственные
-1	Государственные	государственный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpacesAfter=\n
+1	Государственные	государственный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6786,7 +6889,7 @@
 # newpar
 # sent_id = 1
 # text = Общественные
-1	Общественные	общественный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpacesAfter=\n
+1	Общественные	общественный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6795,7 +6898,7 @@
 # newpar
 # sent_id = 1
 # text = Иностранные
-1	Иностранные	иностранный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpacesAfter=\n
+1	Иностранные	иностранный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6835,7 +6938,7 @@
 # newpar
 # sent_id = 1
 # text = Память
-1	Память	память	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Память	память	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6863,7 +6966,7 @@
 # text = См. также
 1	См	смотреть	VERB	_	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	_	_	1	punct	_	_
-3	также	также	ADV	_	Degree=Pos	1	advmod	_	SpacesAfter=\n
+3	также	также	ADV	_	Degree=Pos	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6872,7 +6975,7 @@
 # newpar
 # sent_id = 1
 # text = Примечания
-1	Примечания	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpacesAfter=\n
+1	Примечания	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6881,7 +6984,7 @@
 # newpar
 # sent_id = 1
 # text = Литература
-1	Литература	литература	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Литература	литература	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6890,14 +6993,5 @@
 # newpar
 # sent_id = 1
 # text = Ссылки
-1	Ссылки	ссылка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навигация
-1	Навигация	навигация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Ссылки	ссылка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 

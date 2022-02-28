@@ -1,5 +1,3 @@
-# https://tr.wikipedia.org/wiki/Nijer
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,25 +7,7 @@
 # text = Nijer - Vikipedi
 1	Nijer	Nijer	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	3	nsubj	_	_
 2	-	-	PUNCT	Punc	_	3	punct	_	_
-3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Languages
-1	Languages	languages	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Nijer
-1	Nijer	Nijer	PROPN	Prop	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpacesAfter=\n
+3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -431,14 +411,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tarih[değiştir | kaynağı değiştir]
-1	Tarih	tarih	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	CCONJ	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Tarih
+1	Tarih	tarih	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1170,6 +1144,54 @@
 2	idi	i	AUX	Zero	Number=Sing|Person=3|Tense=Past	1	cop	_	SpaceAfter=No
 3	.	.	PUNCT	Punc	_	1	punct	_	SpacesAfter=\s\n
 
+# sent_id = 5
+# text = Merkezi Bilma şehri olan Kavar'ın Osmanlı idaresine alındığı 22 Şubat 1852 tarihli ve 1268 sayılı İrâde-i Dâhiliye ile onaylandı.
+1	Merkezi	merkez	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obj	_	_
+2	Bilma	Bilma	VERB	Verb	Case=Nom|Number=Sing|Person=3	3	nmod:poss	_	_
+3	şehri	şehir	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obj	_	_
+4	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	5	acl	_	_
+5	Kavar'ın	Kavar	PROPN	Prop	Case=Gen|Number=Sing|Person=3	8	nmod:poss	_	_
+6	Osmanlı	OsmanliCA	PROPN	Prop	Case=Nom|Number=Sing|Person=3	7	nmod:poss	_	_
+7	idaresine	idare	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	obl	_	_
+8	alındığı	al	VERB	Verb	Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	22	nsubj	_	_
+9	22	22	NUM	ANum	NumType=Card	12	nummod	_	_
+10	Şubat	şubat	NOUN	Noun	Case=Nom|Number=Sing|Person=3	9	flat	_	_
+11	1852	1852	NUM	ANum	NumType=Card	9	flat	_	_
+12-13	tarihli	_	_	_	_	_	_	_	_
+12	tarih	tarih	NOUN	Noun	Case=Nom|Number=Sing|Person=3	21	nmod	_	_
+13	li	li	ADP	With	_	12	case	_	_
+14	ve	ve	CCONJ	Conj	_	16	cc	_	_
+15	1268	1268	NUM	NNum	_	12	conj	_	_
+16	sayılı	sayılı	ADJ	Adj	_	12	conj	_	_
+17	İrâde	İrâde	PROPN	Prop	Case=Nom|Number=Sing|Person=3	12	conj	_	SpaceAfter=No
+18	-	-	PUNCT	Punc	_	17	punct	_	SpaceAfter=No
+19	i	i	NOUN	Noun	Case=Nom|Number=Sing|Person=3	17	compound	_	_
+20	Dâhiliye	Dâhiliye	PROPN	Prop	Case=Nom|Number=Sing|Person=3	21	nmod	_	_
+21	ile	ile	CCONJ	Conj	_	22	nmod	_	_
+22	onaylandı	onayla	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass	0	root	_	SpaceAfter=No
+23	.	.	PUNCT	Punc	_	22	punct	_	_
+
+# sent_id = 6
+# text = Bu şekilde Sahra ticaretinde önemli rol oynayan Bilma Tuzlası da Osmanlı Devleti'ne ilhak edilmiş oldu.
+1	Bu	bu	DET	Det	_	16	det	_	_
+2	şekilde	şekil	NOUN	Noun	Case=Loc|Number=Sing|Person=3	1	compound	_	_
+3	Sahra	Sahra	PROPN	Prop	Case=Nom|Number=Sing|Person=3	4	nmod:poss	_	_
+4	ticaretinde	ticaret	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	8	obl	_	_
+5-6	önemli	_	_	_	_	_	_	_	_
+5	önem	önem	NOUN	Noun	Case=Nom|Number=Sing|Person=3	7	nmod	_	_
+6	li	li	ADP	With	_	5	case	_	_
+7	rol	rol	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	obj	_	_
+8	oynayan	oyna	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	9	acl	_	_
+9	Bilma	Bilma	PROPN	Prop	Case=Nom|Number=Sing|Person=3	14	nsubj	_	_
+10	Tuzlası	tuzla	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	9	compound	_	_
+11	da	da	CCONJ	Conj	_	10	advmod:emph	_	_
+12	Osmanlı	OsmanliCA	PROPN	Prop	Case=Nom|Number=Sing|Person=3	14	nmod	_	_
+13	Devleti'ne	devlet	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	12	flat	_	_
+14	ilhak	ilhak	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	obj	_	_
+15	edilmiş	et	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	14	compound:lvc	_	_
+16	oldu	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	Punc	_	16	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1242,14 +1264,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Coğrafya[değiştir | kaynağı değiştir]
-1	Coğrafya	coğrafya	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	PRON	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Coğrafya
+1	Coğrafya	coğrafya	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1385,20 +1401,65 @@
 6	bulunmaktadır	bulun	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 8
+# text = Ülke toplam sınırı olan 5.697 km'den 1.
+1	Ülke	ülke	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	obl	_	_
+2	toplam	toplam	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nmod:poss	_	_
+3	sınırı	sınır	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obj	_	_
+4	olan	ol	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	6	acl	_	_
+5	5.697	5.697	NUM	ANum	NumType=Card	6	nummod	_	SpacesAfter= 
+6	km'den	km	NOUN	NNum	Case=Abl|Number=Sing|Person=3	0	root	_	_
+7	1.	1.	PUNCT	Punc	_	6	punct	_	SpaceAfter=No
+
+# sent_id = 9
+# text = 497 km'si ve böylelikle en uzun ülke sınırını Nijerya, 1.175 km'si Çad, 956 km'si Cezayir, 821 km'si Mali, 628 km'si Burkina Faso, 354 km'si Libya ve 266 km'si ise Benin sınırından oluşmaktadır.
+1	497	497	NUM	ANum	NumType=Card	2	nummod	_	SpacesAfter= 
+2	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	9	flat	_	_
+3	ve	ve	CCONJ	Conj	_	2	cc	_	_
+4	böylelikle	böylelikle	ADV	Adverb	_	6	advmod	_	_
+5	en	en	ADV	Adverb	_	6	advmod	_	_
+6	uzun	uzun	ADJ	Adj	_	7	amod	_	_
+7	ülke	ülke	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	nmod:poss	_	_
+8	sınırını	sınır	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	9	obj	_	_
+9	Nijerya	Nijerya	PROPN	Prop	Case=Nom|Number=Sing|Person=3	37	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punc	_	13	punct	_	_
+11	1.175	1.175	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	9	conj	_	SpacesAfter= 
+12	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	11	flat	_	_
+13	Çad	Çad	PROPN	Prop	Case=Nom|Number=Sing|Person=3	9	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punc	_	13	punct	_	_
+15	956	956	NUM	Adj	_	9	conj	_	SpacesAfter= 
+16	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	11	flat	_	_
+17	Cezayir	Cezayir	PROPN	Prop	Case=Nom|Number=Sing|Person=3	9	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punc	_	19	punct	_	_
+19	821	821	NUM	Adj	_	9	conj	_	SpacesAfter= 
+20	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	19	flat	_	_
+21	Mali	Mali	PROPN	Prop	Case=Nom|Number=Sing|Person=3	9	conj	_	SpaceAfter=No
+22	,	,	PUNCT	Punc	_	23	punct	_	_
+23	628	628	NUM	Adj	_	9	conj	_	SpacesAfter= 
+24	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	23	flat	_	_
+25	Burkina	Burkina	PROPN	Prop	Case=Nom|Number=Sing|Person=3	9	conj	_	_
+26	Faso	Faso	PROPN	Prop	Case=Nom|Number=Sing|Person=3	23	flat	_	SpaceAfter=No
+27	,	,	PUNCT	Punc	_	28	punct	_	_
+28	354	354	NUM	ANum	NumType=Card	9	conj	_	SpacesAfter= 
+29	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	28	flat	_	_
+30	Libya	Libya	PROPN	Prop	Case=Nom|Number=Sing|Person=3	9	conj	_	_
+31	ve	ve	CCONJ	Conj	_	32	cc	_	_
+32	266	266	NUM	ANum	_	9	conj	_	SpacesAfter= 
+33	km'si	km	NUM	NNum	Case=Nom|Number=Sing|Number[psor]=Sing|NumType=Card|Person=3|Person[psor]=3	32	flat	_	_
+34	ise	i	AUX	Conj	_	32	discourse	_	_
+35	Benin	ben	PRON	Pers	Case=Nom|Number=Sing|Person=3	36	nmod:poss	_	_
+36	sınırından	sınır	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	37	obl	_	_
+37	oluşmaktadır	oluş	VERB	Verb	Aspect=Prog|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres	0	root	_	SpaceAfter=No
+38	.	.	PUNCT	Punc	_	37	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = İklim[değiştir | kaynağı değiştir]
-1	İklim	iklim	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	INTJ	Conj	_	3	discourse	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = İklim
+1	İklim	iklim	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1488,14 +1549,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nüfus[değiştir | kaynağı değiştir]
-1	Nüfus	nüfus	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	CCONJ	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Nüfus
+1	Nüfus	nüfus	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1642,21 +1697,85 @@
 6	%	%	PUNCT	Punc	_	4	punct	_	SpaceAfter=No
 
 # sent_id = 2
-# text = 48.68 (erkek 4,878,031/kadın 4,793,021)
-1	4	4	NUM	NNum	_	0	root	_	SpaceAfter=No
-2	8.68	8.68	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	compound	_	_
+# text = 48.68 (erkek 4,878,031/kadın 4,793,021) 15-24 yaş: %19.36 (erkek 1,899,879/kadın 1,945,806) 25-54 yaş: %26.02 (erkek 2,581,597/kadın 2,587,913) 55-64 yaş: %3.3 (erkek 340,032/kadın 315,142) 65 yaş ve üzeri: %2.64 (erkek 268,072/kadın 256,738)
+1	4	4	NOUN	Noun	_	54	punct	_	SpaceAfter=No
+2	8.68	8.68	PUNCT	Punc	_	1	compound	_	_
 3	(	(	PUNCT	Punc	_	4	punct	_	SpaceAfter=No
 4	erkek	erkek	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	conj	_	_
-5	4	4	NOUN	Noun	_	4	flat	_	SpaceAfter=No
-6	,	,	PUNCT	Punc	_	7	punct	_	SpaceAfter=No
+5	4	4	ADJ	NAdj	_	4	compound	_	SpaceAfter=No
+6	,	,	PUNCT	Punc	_	11	punct	_	SpaceAfter=No
 7	878	878	NUM	ANum	Case=Nom|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
-8	,031/kadın	,031/ka	NOUN	Noun	Case=Gen|Number=Sing|Person=3	4	compound	_	_
-9	4	4	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+8	,031/kadın	,031/kadın	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	compound	_	_
+9	4	4	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
 10	,	,	PUNCT	Punc	_	11	punct	_	SpaceAfter=No
-11	793	793	NUM	Prop	Case=Nom|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
+11	793	793	NUM	NNum	Case=Nom|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
 12	,	,	PUNCT	Punc	_	11	punct	_	SpaceAfter=No
 13	021	021	NUM	NNum	Case=Nom|Number=Sing|Person=3	4	conj	_	SpaceAfter=No
 14	)	)	PUNCT	Punc	_	11	punct	_	SpacesAfter=\s\n
+15	15	15	NUM	ANum	NumType=Card	19	nummod	_	SpaceAfter=No
+16	-	-	PUNCT	Punc	_	35	punct	_	SpaceAfter=No
+17	2	2	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	4	compound	_	SpaceAfter=No
+18	4	4	NUM	ANum	_	15	compound	_	_
+19	yaş	yaş	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	compound	_	SpaceAfter=No
+20	:	:	PUNCT	Punc	_	21	punct	_	_
+21	%19.36	%19.36	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	conj	_	_
+22	(	(	PUNCT	Punc	_	23	punct	_	SpaceAfter=No
+23	erkek	erkek	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	15	conj	_	_
+24	1	1	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	23	compound	_	SpaceAfter=No
+25	,	,	PUNCT	Punc	_	30	punct	_	SpaceAfter=No
+26	899,	899,	PUNCT	Punc	Case=Nom|Number=Sing|Person=3	23	punct	_	SpaceAfter=No
+27	879/kadın	879/ka	NOUN	Noun	Case=Nom|Number=Sing|Person=3	23	compound	_	_
+28	1,945	1,945	NUM	NNum	Case=Nom|Number=Sing|Person=3	23	conj	_	SpaceAfter=No
+29	,	,	PUNCT	Punc	_	30	punct	_	SpaceAfter=No
+30	806	806	NUM	NNum	Case=Nom|Number=Sing|Person=3	23	conj	_	SpaceAfter=No
+31	)	)	PUNCT	Punc	_	30	punct	_	SpacesAfter=\s\n
+32	25	25	NUM	ANum	NumType=Card	35	nummod	_	SpaceAfter=No
+33	-	-	PUNCT	Punc	_	35	punct	_	SpaceAfter=No
+34	54	54	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	32	compound	_	_
+35	yaş	yaş	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+36	:	:	PUNCT	Punc	_	37	punct	_	_
+37	%26	%26	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+38	.02	.02	PUNCT	Punc	_	37	punct	_	_
+39	(	(	PUNCT	Punc	_	37	punct	_	SpaceAfter=No
+40	erkek	erkek	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	37	conj	_	_
+41	2	2	NUM	NAdj	_	40	flat	_	SpaceAfter=No
+42	,581	,581	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	40	flat	_	SpaceAfter=No
+43	,	,	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+44	597	597	NUM	Noun	Case=Nom|Number=Sing|Person=3	40	conj	_	SpaceAfter=No
+45	/kadın	/kadın	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	37	conj	_	_
+46	2	2	NUM	NNum	Case=Nom|Number=Sing|Person=3	37	conj	_	SpaceAfter=No
+47	,587	,587	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+48	,913	,913	PUNCT	Punc	_	37	punct	_	SpaceAfter=No
+49	)	)	PUNCT	Punc	_	66	punct	_	SpacesAfter=\s\n
+50	55	55	NUM	ANum	NumType=Card	54	nummod	_	SpaceAfter=No
+51	-	-	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+52	6	6	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	40	compound	_	SpaceAfter=No
+53	4	4	NUM	ANum	_	54	det	_	_
+54	yaş	yaş	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
+55	:	:	PUNCT	Punc	_	68	punct	_	_
+56	%3	%3	ADJ	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+57	.3	.3	PUNCT	Punc	_	68	punct	_	_
+58	(	(	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+59	erkek	erkek	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	74	amod	_	_
+60	340,032/kadın	340,032/kadın	NOUN	Noun	Case=Nom|Number=Sing|Person=3	59	flat	_	_
+61	315,142	315,142	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	40	flat	_	SpaceAfter=No
+62	)	)	PUNCT	Punc	_	66	punct	_	SpacesAfter=\s\n
+63	65	65	NUM	Adj	_	64	amod	_	_
+64	yaş	yaş	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	54	amod	_	_
+65	ve	ve	CCONJ	Conj	_	66	cc	_	_
+66	üzeri	üzeri	ADJ	Adj	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	1	conj	_	SpaceAfter=No
+67	:	:	PUNCT	Punc	_	66	punct	_	_
+68	%2	%2	NUM	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+69	.6	.6	PUNCT	Punc	_	68	punct	_	SpaceAfter=No
+70	4	4	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	68	cop	_	_
+71	(	(	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+72	erkek	erkek	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	74	nsubj	_	_
+73	268,072	268,072	NUM	NNum	Case=Nom|Number=Sing|NumType=Card|Person=3	72	flat	_	SpaceAfter=No
+74	/kadın	/kadın	NOUN	Noun	Case=Nom|Number=Sing|Person=3	68	conj	_	_
+75	256	256	NUM	ANum	Case=Nom|Number=Sing|Person=3	68	flat	_	SpaceAfter=No
+76	,	,	PUNCT	Punc	_	66	punct	_	SpaceAfter=No
+77	738	738	NUM	NNum	Case=Nom|Number=Sing|Person=3	68	conj	_	SpaceAfter=No
+78	)	)	PUNCT	Punc	_	68	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1699,14 +1818,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Din[değiştir | kaynağı değiştir]
-1	Din	din	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
-2	[	[	PUNCT	Punc	_	1	compound	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Din
+1	Din	din	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1755,13 +1868,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dil[değiştir | kaynağı değiştir]
-1	Dil[	dil[	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	obj	_	SpaceAfter=No
-2	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-3	|	|	PUNCT	Punc	_	5	punct	_	_
-4	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	5	obj	_	_
-5	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Punc	_	5	punct	_	SpacesAfter=\n
+# text = Dil
+1	Dil	dil	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1803,14 +1911,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Siyaset[değiştir | kaynağı değiştir]
-1	Siyaset	siyaset	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
-2	[	[	CCONJ	Conj	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Siyaset
+1	Siyaset	siyaset	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -1984,17 +2086,33 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nijer Cumhuriyeti Devlet Başkanları[değiştir | kaynağı değiştir]
+# text = Nijer Cumhuriyeti Devlet Başkanları
 1	Nijer	Nijer	PROPN	Prop	Case=Nom|Number=Sing|Person=3	4	nmod:poss	_	_
-2	Cumhuriyeti	cumhuriyet	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	1	flat	_	_
+2	Cumhuriyeti	cumhuriyet	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	compound	_	_
 3	Devlet	devlet	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nmod:poss	_	_
-4	Başkanları	başkan	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	6	nsubj	_	SpaceAfter=No
-5	[	[	CCONJ	Conj	_	6	punct	_	SpaceAfter=No
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-7	|	|	PUNCT	Punc	_	9	punct	_	_
-8	kaynağı	kaynak	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	9	obj	_	_
-9	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	6	conj	_	SpaceAfter=No
-10	]	]	PUNCT	Punc	_	9	punct	_	SpacesAfter=\n
+4	Başkanları	başkan	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = turkish-imst-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = saï mouhammad bazoum 2021
+1	saï	saï	ADV	Adverb	_	3	advmod	_	SpacesBefore=\s
+2	mouhammad	mouhammad	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nmod	_	_
+3	bazoum	bazoum	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1	0	root	_	_
+4	2021	2021	PUNCT	Punc	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = turkish-imst-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = İdarî yapılanma
+1	İdarî	idarî	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	obj	_	_
+2	yapılanma	yapılan	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2056,14 +2174,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ulaşım[değiştir | kaynağı değiştir]
-1	Ulaşım	ulaşım	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1	3	nsubj	_	SpaceAfter=No
-2	[	[	PRON	Noun	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Ulaşım
+1	Ulaşım	ulaşım	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2171,14 +2283,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Kaynakça[değiştir | kaynağı değiştir]
-1	Kaynakça	kaynakça	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
-2	[	[	PRON	Noun	_	3	nsubj	_	SpaceAfter=No
-3	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-4	|	|	PUNCT	Punc	_	6	punct	_	_
-5	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	6	obj	_	_
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	Punc	_	6	punct	_	SpacesAfter=\n
+# text = Kaynakça
+1	Kaynakça	kaynakça	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -2186,13 +2292,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dış bağlantılar[değiştir | kaynağı değiştir]
+# text = Dış bağlantılar
 1	Dış	dış	ADJ	Adj	_	2	amod	_	_
-2	bağlantılar	bağlantı	NOUN	Noun	Case=Nom|Number=Plur|Person=3	4	nsubj	_	SpaceAfter=No
-3	[	[	PRON	Punc	_	4	nsubj	_	SpaceAfter=No
-4	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-5	|	|	PUNCT	Punc	_	7	punct	_	_
-6	kaynağı	kaynak	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	7	obj	_	_
-7	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	4	conj	_	SpaceAfter=No
-8	]	]	PUNCT	Punc	_	7	punct	_	SpacesAfter=\n
+2	bağlantılar	bağlantı	NOUN	Noun	Case=Nom|Number=Plur|Person=3	0	root	_	SpaceAfter=No
 

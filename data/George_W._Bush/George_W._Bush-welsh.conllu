@@ -1,5 +1,3 @@
-# https://cy.wikipedia.org/wiki/George_W._Bush
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = welsh-ccg-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -15,22 +13,7 @@
 # text = Bush - Wicipedia
 1	Bush	Bush	PROPN	person	Gender=Masc|Number=Sing	0	root	_	_
 2	-	-	PUNCT	punct	_	3	punct	_	_
-3	Wicipedia	Wicipedia	NOUN	noun	Gender=Fem|Number=Sing	1	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = welsh-ccg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = George W.
-1	George	George	PROPN	person	_	0	root	_	_
-2	W	W	PROPN	person	_	1	flat:name	_	SpaceAfter=No
-3	.	.	PUNCT	punct	_	1	punct	_	_
-
-# sent_id = 2
-# text = Bush
-1	Bush	Bush	NOUN	noun	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+3	Wicipedia	Wicipedia	NOUN	noun	Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = welsh-ccg-ud-2.6-200830
@@ -84,13 +67,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Yn ôl pôl piniwn a gyhoeddwyd yn y papur newydd Prydeinig, The Guardian
+# text = Yn ôl pôl piniwn a gyhoeddwyd yn y papur newydd Prydeinig, The Guardian cyn etholiad 2009, roedd 54% o bobl mewn deg gwlad ar draws y byd yn cefnogi John Kerry a dim ond 27% yn cefnogi George Bush.
 1	Yn	yn	ADP	prep	_	2	case	_	_
-2	ôl	ôl	NOUN	noun	Gender=Masc|Number=Sing	6	obl	_	_
+2	ôl	ôl	NOUN	noun	Gender=Masc|Number=Sing	20	obl	_	_
 3	pôl	pôl	NOUN	noun	Gender=Masc|Number=Sing	2	nmod	_	_
 4	piniwn	piniwn	NOUN	noun	Gender=Masc|Number=Sing	3	nmod	_	_
 5	a	a	PRON	rel	PronType=Rel	6	obj	_	_
-6	gyhoeddwyd	gyhoeddi	VERB	verb	Mood=Ind|Person=0|Tense=Past	0	root	_	_
+6	gyhoeddwyd	gyhoeddi	VERB	verb	Mood=Ind|Person=0|Tense=Past	4	acl:relcl	_	_
 7	yn	yn	ADP	prep	_	9	case	_	_
 8	y	y	DET	art	_	9	det	_	_
 9	papur	papur	NOUN	noun	Gender=Masc|Number=Sing	6	obl	_	_
@@ -98,7 +81,54 @@
 11	Prydeinig	prydeinig	ADJ	pos	Degree=Pos	9	amod	_	SpaceAfter=No
 12	,	,	PUNCT	punct	_	13	punct	_	_
 13	The	The	PROPN	org	Gender=Masc|Number=Sing	9	appos	_	_
-14	Guardian	Guardian	PROPN	person	Gender=Masc|Number=Sing	13	flat:name	_	SpacesAfter=\n
+14	Guardian	Guardian	PROPN	place	Gender=Masc|Number=Sing	13	flat:name	_	SpacesAfter=\n\s
+15	cyn	cyn	ADP	prep	_	16	case	_	_
+16	etholiad	etholiad	NOUN	noun	Gender=Masc|Number=Sing	6	obl	_	_
+17	2009	2009	NUM	num	_	16	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	punct	_	20	punct	_	_
+19-20	roedd	_	_	_	_	_	_	_	_
+19	yr	y	PART	aff	_	20	advmod	_	_
+20	oedd	bod	VERB	verb	Mood=Ind|Number=Sing|Person=3|Tense=Imp	0	root	_	_
+21	54%	54%	NUM	num	_	20	nsubj	_	_
+22	o	o	ADP	prep	_	23	case	_	_
+23	bobl	pobl	NOUN	noun	Gender=Fem|Mutation=SM|Number=Sing	21	nmod	_	_
+24	mewn	mewn	ADP	prep	_	26	case	_	_
+25	deg	deg	NUM	num	_	26	nummod	_	_
+26	gwlad	gwlad	NOUN	noun	Gender=Fem|Number=Sing	23	nmod	_	_
+27	ar	ar	ADP	prep	_	30	case	_	_
+28	draws	traws	NOUN	noun	Gender=Masc|Mutation=SM|Number=Sing	27	fixed	_	_
+29	y	y	DET	art	_	30	det	_	_
+30	byd	byd	NOUN	noun	Gender=Masc|Number=Sing	26	nmod	_	_
+31	yn	yn	AUX	impf	_	32	aux	_	_
+32	cefnogi	cefnogi	NOUN	verbnoun	Number=Sing|VerbForm=Vnoun	20	xcomp	_	_
+33	John	John	PROPN	person	_	32	obj	_	_
+34	Kerry	Kerry	PROPN	person	Gender=Masc|Number=Sing	33	flat:name	_	_
+35	a	a	CCONJ	cconj	_	38	cc	_	_
+36	dim	dim	ADV	adv	_	38	advmod	_	_
+37	ond	ond	CCONJ	cconj	_	36	fixed	_	_
+38	27%	27%	NUM	num	_	32	conj	_	_
+39	yn	yn	AUX	impf	_	40	aux	_	_
+40	cefnogi	cefnogi	NOUN	verbnoun	Number=Sing|VerbForm=Vnoun	38	xcomp	_	_
+41	George	George	PROPN	person	Gender=Masc|Number=Sing	40	obj	_	_
+42	Bush	Bush	PROPN	person	Gender=Masc|Number=Sing	41	flat:name	_	SpaceAfter=No
+43	.	.	PUNCT	punct	_	20	punct	_	SpacesAfter=\s\s
+
+# sent_id = 2
+# text = Ond roedd Bush yn boblogaidd iawn o fewn yr Unol Daleithiau.
+1	Ond	ond	CCONJ	cconj	_	6	cc	_	_
+2-3	roedd	_	_	_	_	_	_	_	_
+2	yr	y	PART	aff	_	6	advmod	_	_
+3	oedd	bod	AUX	aux	Mood=Ind|Number=Sing|Person=3|Tense=Imp	6	cop	_	_
+4	Bush	Bush	PROPN	person	_	6	nsubj	_	_
+5	yn	yn	PART	pred	_	6	case:pred	_	_
+6	boblogaidd	poblogaidd	ADJ	pos	Degree=Pos|Mutation=SM	0	root	_	_
+7	iawn	iawn	ADV	adv	_	6	advmod	_	_
+8	o	o	ADP	prep	_	12	case	_	_
+9	fewn	mewn	ADP	prep	Mutation=SM	8	fixed	_	_
+10	yr	y	DET	art	_	12	det	_	_
+11	Unol	unol	ADJ	pos	Degree=Pos	12	amod	_	_
+12	Daleithiau	dalaith	NOUN	noun	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
+13	.	.	PUNCT	punct	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = welsh-ccg-ud-2.6-200830
@@ -106,23 +136,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dolen allanol[golygu | golygu cod y dudalen]
+# text = Dolen allanol
 1	Dolen	dolen	NOUN	noun	Gender=Masc|Number=Sing	0	root	_	_
 2	allanol	allanol	ADJ	pos	Degree=Pos	1	amod	_	SpaceAfter=No
-3	[golygu	golygu	NOUN	verbnoun	Mutation=SM|Number=Sing|VerbForm=Vnoun	1	acl	_	_
-4	|	|	PUNCT	punct	_	5	punct	_	_
-5	golygu	golygu	NOUN	verbnoun	Number=Sing|VerbForm=Vnoun	1	acl	_	_
-6	cod	cod	NOUN	noun	Number=Sing|VerbForm=Vnoun	5	obj	_	_
-7	y	y	DET	art	_	8	det	_	_
-8	dudalen	dudalen	NOUN	noun	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = welsh-ccg-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Llywio
-1	Llywio	llywio	NOUN	verbnoun	Number=Sing|VerbForm=Vnoun	0	root	_	SpacesAfter=\n
 

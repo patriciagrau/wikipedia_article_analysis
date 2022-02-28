@@ -1,5 +1,3 @@
-# https://ar.wikipedia.org/wiki/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = إيطاليا - ويكيبيديا
 1	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	0	root	_	_
 2	-	-	PUNCT	G---------	_	1	punct	_	_
-3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = إيطاليا
-1	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	0	root	_	SpacesAfter=\n
+3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -816,7 +805,7 @@
 # sent_id = 1
 # text = أصل التسمية
 1	أصل	أَصل	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التسمية	تَسمِيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	التسمية	تَسمِيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -824,7 +813,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التسمية "إيطاليا" أصلها لاتيني "إيتاليا" (تلفظ ‎[iˈta:lja]‏).
+# text = التسمية "إيطاليا" أصلها لاتيني "إيتاليا" (تلفظ ‎‏).
 1	التسمية	تَسمِيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	5	nsubj	_	_
 2	"	"	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
 3	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	1	nmod	_	SpaceAfter=No
@@ -832,21 +821,15 @@
 5-6	أصلها	_	_	_	_	_	_	_	_
 5	أصل	أَصل	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 6	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
-7	لاتيني	لاتيني	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	nsubj	_	_
+7	لاتيني	لاتيني	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	amod	_	_
 8	"	"	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
 9	إيتاليا	إيتاليا	X	U---------	_	5	nmod	_	SpaceAfter=No
 10	"	"	PUNCT	G---------	_	9	punct	_	_
 11	(	(	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
-12	تلفظ	لَفَظ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	acl	_	_
-13	‎	‎	X	U---------	_	12	obj	_	SpaceAfter=No
-14	[	[	PUNCT	G---------	_	15	punct	_	SpaceAfter=No
-15	iˈta	iˈta	X	U---------	_	12	obj	_	SpaceAfter=No
-16	:	:	PUNCT	G---------	_	15	punct	_	SpaceAfter=No
-17	lja	lja	X	U---------	_	15	nmod	_	SpaceAfter=No
-18	]	]	PUNCT	G---------	_	15	punct	_	SpaceAfter=No
-19	‏	‏	X	U---------	_	15	nmod	_	SpaceAfter=No
-20	)	)	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	5	punct	_	_
+12	تلفظ	تَلَفُّظ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	dep	_	_
+13	‎‏	‎‏	X	G---------	_	12	nmod	_	SpaceAfter=No
+14	)	)	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
+15	.	.	PUNCT	G---------	_	5	punct	_	_
 
 # sent_id = 2
 # text = أما مصدر التسمية اللاتينية فهو غير مؤكد.
@@ -1033,7 +1016,7 @@
 # newpar
 # sent_id = 1
 # text = التاريخ
-1	التاريخ	تَارِيخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	التاريخ	تَارِيخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1047,7 +1030,7 @@
 3	قبل	قَبلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	4	case	_	_
 4	التاريخ	تَارِيخ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
 5	والعصور	والعصور	CCONJ	C---------	_	4	cc	_	_
-6	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpacesAfter=\n
+6	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1360,7 +1343,7 @@
 # sent_id = 1
 # text = العصور الوسطى
 1	العصور	عَصر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الوسطى	أَوسَط	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الوسطى	أَوسَط	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1850,7 +1833,7 @@
 # newpar
 # sent_id = 1
 # text = النهضة
-1	النهضة	نَهضَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	النهضة	نَهضَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2854,7 +2837,7 @@
 1	الهيمنة	هَيمَنَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	وعصر	وعصر	ADJ	U---------	_	1	dep	_	_
-4	التنوير	تَنوِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	SpacesAfter=\n
+4	التنوير	تَنوِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3515,7 +3498,7 @@
 1	توحيد	تَوحِيد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	1	nmod	_	_
 3	والعهد	والعهد	X	U---------	_	2	cc	_	_
-4	الملكي	مَلَكِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	SpacesAfter=\n
+4	الملكي	مَلَكِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4646,7 +4629,7 @@
 # sent_id = 1
 # text = الجمهورية الإيطالية
 1	الجمهورية	جُمهُورِيَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5545,7 +5528,7 @@
 # newpar
 # sent_id = 1
 # text = الجغرافيا
-1	الجغرافيا	جُغْرافِيا	X	U---------	_	0	root	_	SpacesAfter=\n
+1	الجغرافيا	جُغْرافِيا	X	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5554,7 +5537,7 @@
 # newpar
 # sent_id = 1
 # text = التضاريس
-1	التضاريس	تَضرِيس	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n
+1	التضاريس	تَضرِيس	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5844,7 +5827,7 @@
 26	.	.	PUNCT	G---------	_	1	punct	_	_
 
 # sent_id = 3
-# text = أكبر خمس بحيرات في البلاد حسب الحجم هي:
+# text = أكبر خمس بحيرات في البلاد حسب الحجم هي: بحيرة غاردا (367.94 كم2) وبحيرة ماغيوري (212.51 كم2) وبحيرة كومو (145.9 كم2) وبحيرة تراسيمينو (124.29 كم2) وبحيرة بولزينا (113.55 كم2).
 1	أكبر	أَكبَر	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	0	root	_	_
 2	خمس	خَمسَة	NUM	QV----F-2R	Case=Gen|Definite=Cons|Gender=Fem|NumForm=Word|NumValue=3	1	nummod	_	_
 3	بحيرات	بَحِيرَات	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	2	nmod	_	_
@@ -5854,6 +5837,42 @@
 7	الحجم	حَجم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
 8	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	obl	_	SpaceAfter=No
 9	:	:	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+10	بحيرة	بُحَيرَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	8	nsubj	_	_
+11	غاردا	غاردا	X	U---------	_	10	nmod	_	_
+12	(	(	PUNCT	G---------	_	13	punct	_	SpaceAfter=No
+13	367.94	367.94	NUM	Q---------	NumForm=Digit	10	dep	_	_
+14	كم	كم	X	Y---------	Abbr=Yes	13	nmod	_	SpaceAfter=No
+15	2	2	NUM	Q---------	NumForm=Digit	13	nummod	_	SpaceAfter=No
+16	)	)	PUNCT	G---------	_	13	punct	_	_
+17	وبحيرة	وبحيرة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	10	conj	_	_
+18	ماغيوري	ماغيوري	X	U---------	_	17	nmod	_	_
+19	(	(	PUNCT	G---------	_	20	punct	_	SpaceAfter=No
+20	212.51	212.51	NUM	Q---------	NumForm=Digit	17	dep	_	_
+21	كم	كم	X	Y---------	Abbr=Yes	20	nmod	_	SpaceAfter=No
+22	2	2	NUM	Q---------	NumForm=Digit	20	nummod	_	SpaceAfter=No
+23	)	)	PUNCT	G---------	_	20	punct	_	_
+24	وبحيرة	وبحيرة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	10	conj	_	_
+25	كومو	كومو	X	X---------	Foreign=Yes	24	nmod	_	_
+26	(	(	PUNCT	G---------	_	27	punct	_	SpaceAfter=No
+27	145.9	145.9	NUM	Q---------	NumForm=Digit	24	dep	_	_
+28	كم	كم	X	Y---------	Abbr=Yes	27	nmod	_	SpaceAfter=No
+29	2	2	NUM	Q---------	NumForm=Digit	27	nummod	_	SpaceAfter=No
+30	)	)	PUNCT	G---------	_	27	punct	_	_
+31	وبحيرة	وبحيرة	X	U---------	_	10	conj	_	_
+32	تراسيمينو	تراسيمينو	X	U---------	_	31	nmod	_	_
+33	(	(	PUNCT	G---------	_	34	punct	_	SpaceAfter=No
+34	124.29	124.29	NUM	Q---------	NumForm=Digit	31	dep	_	_
+35	كم	كم	X	Y---------	Abbr=Yes	34	nmod	_	SpaceAfter=No
+36	2	2	NUM	Q---------	NumForm=Digit	34	nummod	_	SpaceAfter=No
+37	)	)	PUNCT	G---------	_	34	punct	_	_
+38	وبحيرة	وبحيرة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	10	conj	_	_
+39	بولزينا	بولزينا	X	X---------	Foreign=Yes	38	nmod	_	_
+40	(	(	PUNCT	G---------	_	41	punct	_	SpaceAfter=No
+41	113.55	113.55	NUM	Q---------	NumForm=Digit	38	dep	_	_
+42	كم	كم	X	Y---------	Abbr=Yes	41	nmod	_	SpaceAfter=No
+43	2	2	NUM	Q---------	NumForm=Digit	41	nummod	_	SpaceAfter=No
+44	)	)	PUNCT	G---------	_	41	punct	_	SpaceAfter=No
+45	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5863,7 +5882,7 @@
 # sent_id = 1
 # text = النشاط البركاني
 1	النشاط	نَشَاط	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	البركاني	البركاني	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+2	البركاني	البركاني	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5972,7 +5991,7 @@
 # newpar
 # sent_id = 1
 # text = المناخ
-1	المناخ	مُنَاخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	المناخ	مُنَاخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6131,7 +6150,7 @@
 # newpar
 # sent_id = 1
 # text = الطبيعة
-1	الطبيعة	طَبِيعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الطبيعة	طَبِيعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6378,7 +6397,7 @@
 # sent_id = 1
 # text = الحكومة والسياسة
 1	الحكومة	حُكُومَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2-3	والسياسة	_	_	_	_	_	_	_	SpacesAfter=\n
+2-3	والسياسة	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	السياسة	سِيَاسَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
 
@@ -7047,7 +7066,7 @@
 # newpar
 # sent_id = 1
 # text = القانون
-1	القانون	قَانُون	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	القانون	قَانُون	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7118,7 +7137,7 @@
 # sent_id = 1
 # text = العلاقات الخارجية
 1	العلاقات	عَلَاقَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7457,7 +7476,7 @@
 # newpar
 # sent_id = 1
 # text = الجيش
-1	الجيش	جَيش	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الجيش	جَيش	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7601,7 +7620,7 @@
 # sent_id = 1
 # text = القوة البرية
 1	القوة	قُوَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	البرية	بَرِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	البرية	بَرِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7725,7 +7744,7 @@
 # sent_id = 1
 # text = القوة البحرية
 1	القوة	قُوَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	البحرية	بَحرِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	البحرية	بَحرِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7835,7 +7854,7 @@
 # sent_id = 1
 # text = القوة الجوية
 1	القوة	قُوَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الجوية	جَوِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الجوية	جَوِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8038,7 +8057,7 @@
 # sent_id = 1
 # text = قوات الدرك
 1	قوات	قُوَّة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
-2	الدرك	دَرك	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	الدرك	دَرك	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8183,7 +8202,7 @@
 # sent_id = 1
 # text = التقسيمات الإدارية
 1	التقسيمات	تَقسِيم	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الإدارية	إِدَارِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الإدارية	إِدَارِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8290,7 +8309,7 @@
 # newpar
 # sent_id = 1
 # text = الديموغرافيا
-1	الديموغرافيا	الديموغرافيا	X	U---------	_	0	root	_	SpacesAfter=\n
+1	الديموغرافيا	الديموغرافيا	X	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8299,7 +8318,7 @@
 # newpar
 # sent_id = 1
 # text = السكان
-1	السكان	سَاكِن	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n
+1	السكان	سَاكِن	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8570,25 +8589,7 @@
 2-3	والمناطق	_	_	_	_	_	_	_	_
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	المناطق	مِنطَقَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	conj	_	_
-4	الحضرية	حَضَرِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = روما
-1	روما	رُومَا	X	X---------	Foreign=Yes	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = تورينو
-1	تورينو	تورينو	X	U---------	_	0	root	_	SpacesAfter=\n
+4	الحضرية	حَضَرِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8600,7 +8601,7 @@
 1	تقديرات	تَقدِير	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	مستقلة	مُستَقِلّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	_
 3	للمناطق	مِنطَقَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	nmod	_	_
-4	الحضرية	حَضَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpacesAfter=\n
+4	الحضرية	حَضَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8635,7 +8636,7 @@
 # newpar
 # sent_id = 1
 # text = الهجرة
-1	الهجرة	هِجرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الهجرة	هِجرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8991,7 +8992,7 @@
 # sent_id = 1
 # text = الشتات الإيطالي
 1	الشتات	شَتَات	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الإيطالي	إِيطَالِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الإيطالي	إِيطَالِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9199,7 +9200,7 @@
 3	ولغات	وَلغَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	dep	_	_
 4	الأقليات	أَقلِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	3	nmod	_	_
 5	المعترف	مُعتَرِف	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
-6-7	بها	_	_	_	_	_	_	_	SpacesAfter=\n
+6-7	بها	_	_	_	_	_	_	_	SpaceAfter=No
 6	ب	بِ	ADP	P---------	AdpType=Prep	7	case	_	_
 7	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obl:arg	_	_
 
@@ -9427,7 +9428,7 @@
 # newpar
 # sent_id = 1
 # text = اللغة
-1	اللغة	لُغَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	اللغة	لُغَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9437,7 +9438,7 @@
 # sent_id = 1
 # text = اللغة الإيطالية
 1	اللغة	لُغَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9645,7 +9646,7 @@
 # text = اللهجات واللغات الأخرى
 1	اللهجات	اللهجات	X	U---------	_	0	root	_	_
 2	واللغات	واللغات	X	U---------	_	1	conj	_	_
-3	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+3	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9846,7 +9847,7 @@
 # newpar
 # sent_id = 1
 # text = الدين
-1	الدين	دِين	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الدين	دِين	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9962,7 +9963,7 @@
 # newpar
 # sent_id = 1
 # text = المسيحية
-1	المسيحية	مَسِيحِيَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	المسيحية	مَسِيحِيَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -9972,7 +9973,7 @@
 # sent_id = 1
 # text = الرومانية الكاثوليكية
 1	الرومانية	رُومَانِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
-2	الكاثوليكية	كَاثوُليِكيِةّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الكاثوليكية	كَاثوُليِكيِةّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -10233,7 +10234,7 @@
 # text = الطوائف المسيحية الأخرى
 1	الطوائف	طَائِفَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	المسيحية	مَسِيحِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
-3	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+3	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -10476,7 +10477,7 @@
 # sent_id = 1
 # text = الديانات الأخرى
 1	الديانات	دِيَانَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -10776,7 +10777,7 @@
 # newpar
 # sent_id = 1
 # text = الجريمة
-1	الجريمة	جَرِيمَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الجريمة	جَرِيمَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -11062,7 +11063,7 @@
 # newpar
 # sent_id = 1
 # text = الاقتصاد
-1	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الاقتصاد	اِقتِصَاد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -12213,7 +12214,7 @@
 # newpar
 # sent_id = 1
 # text = السياحة
-1	السياحة	سِيَاحَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	السياحة	سِيَاحَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -12484,7 +12485,7 @@
 # sent_id = 1
 # text = البنية التحتية
 1	البنية	بِنيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	التحتية	تَحتِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	التحتية	تَحتِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -12917,7 +12918,7 @@
 # newpar
 # sent_id = 1
 # text = الصادرات
-1	الصادرات	صَادِر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n
+1	الصادرات	صَادِر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -13130,7 +13131,7 @@
 # sent_id = 1
 # text = الخدمات العامة
 1	الخدمات	خِدمَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	العامة	عَامّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	العامة	عَامّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -13140,7 +13141,7 @@
 # sent_id = 1
 # text = الرعاية الصحية
 1	الرعاية	رِعَايَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الصحية	صِحِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الصحية	صِحِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -13459,7 +13460,7 @@
 # newpar
 # sent_id = 1
 # text = التعليم
-1	التعليم	تَعلِيم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	التعليم	تَعلِيم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -14195,7 +14196,7 @@
 # sent_id = 1
 # text = الاتصالات والإعلام
 1	الاتصالات	اِتِّصَال	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	والإعلام	والإعلام	NOUN	N------S2D	_	1	nmod	_	SpacesAfter=\n
+2	والإعلام	والإعلام	NOUN	N------S2D	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -14620,7 +14621,7 @@
 # newpar
 # sent_id = 1
 # text = المجتمع
-1	المجتمع	مُجتَمَع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	المجتمع	مُجتَمَع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -14722,7 +14723,7 @@
 1	ا	أَ	PART	F---------	_	0	root	_	_
 2	الطبقات	طَبَقَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	dep	_	_
 3	الاجتماعية	اِجتِمَاعِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
-4-5	والحقوق	_	_	_	_	_	_	_	SpacesAfter=\n
+4-5	والحقوق	_	_	_	_	_	_	_	SpaceAfter=No
 4	و	وَ	CCONJ	C---------	_	5	cc	_	_
 5	الحقوق	حَقّ	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	2	conj	_	_
 
@@ -15116,7 +15117,7 @@
 # text = الحياة اليومية والترفيه
 1	الحياة	حَيَاة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	اليومية	يَومِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
-3	والترفيه	والترفيه	X	U---------	_	1	conj	_	SpacesAfter=\n
+3	والترفيه	والترفيه	X	U---------	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -15330,7 +15331,7 @@
 # text = التقاليد وآداب المائدة
 1	التقاليد	تَقلِيد	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	وآداب	وآداب	NOUN	U---------	_	1	nmod	_	_
-3	المائدة	مَائِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	SpacesAfter=\n
+3	المائدة	مَائِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -15459,7 +15460,7 @@
 # text = الأعياد والعطل الرسمية
 1	الأعياد	عِيد	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	والعطل	والعطل	X	U---------	_	1	nmod	_	_
-3	الرسمية	رَسمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+3	الرسمية	رَسمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -15482,7 +15483,7 @@
 # newpar
 # sent_id = 1
 # text = البيئة
-1	البيئة	بِيئَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	البيئة	بِيئَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -15978,7 +15979,7 @@
 # newpar
 # sent_id = 1
 # text = الثقافة
-1	الثقافة	ثَقَافَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الثقافة	ثَقَافَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16182,7 +16183,7 @@
 # newpar
 # sent_id = 1
 # text = الفنون
-1	الفنون	فَنّ	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n
+1	الفنون	فَنّ	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16191,7 +16192,7 @@
 # newpar
 # sent_id = 1
 # text = العمارة
-1	العمارة	عَمَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	العمارة	عَمَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16369,7 +16370,7 @@
 # sent_id = 1
 # text = الفن المرئي
 1	الفن	فَنّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	المرئي	مِرئِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+2	المرئي	مِرئِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16475,6 +16476,91 @@
 25	ورفائيل	ورفائيل	X	U---------	_	23	conj	_	SpaceAfter=No
 26	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = بعد ذلك عانت إيطاليا من تجربة الخضوع المستمر للقوى الأجنبية التي تسببت في تحول التركيز إلى المسائل السياسية مما أدى إلى تراجعها كمصدر للسلطة الفنية في أوروبا.
+1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
+2	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	3	obl	_	_
+3	عانت	عَانَى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+4	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	3	nsubj	_	_
+5	من	مِن	ADP	P---------	AdpType=Prep	6	case	_	_
+6	تجربة	تَجرِبَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	obl:arg	_	_
+7	الخضوع	خُضُوع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	المستمر	مُستَمِرّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	7	amod	_	_
+9-10	للقوى	_	_	_	_	_	_	_	_
+9	ل	لِ	ADP	P---------	AdpType=Prep	10	case	_	_
+10	القوى	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	nmod	_	_
+11	الأجنبية	أَجنَبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+12	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	_	_
+13	تسببت	تَسَبَّب	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	10	acl:relcl	_	_
+14	في	فِي	ADP	P---------	AdpType=Prep	15	case	_	_
+15	تحول	تَحَوُّل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	obl:arg	_	_
+16	التركيز	تَركِيز	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+17	إلى	إِلَى	ADP	P---------	AdpType=Prep	18	case	_	_
+18	المسائل	مَسأَلَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	15	nmod	_	_
+19	السياسية	سِيَاسِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	_
+20	مما	مِمَّا	CCONJ	C---------	_	21	cc	_	_
+21	أدى	أَدَّى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	13	conj	_	_
+22	إلى	إِلَى	ADP	P---------	AdpType=Prep	23	case	_	_
+23-24	تراجعها	_	_	_	_	_	_	_	_
+23	تراجع	تَرَاجُع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	21	obl:arg	_	_
+24	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nmod	_	_
+25-26	كمصدر	_	_	_	_	_	_	_	_
+25	ك	كَ	ADP	P---------	AdpType=Prep	26	case	_	_
+26	مصدر	مَصدَر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	23	xcomp	_	_
+27-28	للسلطة	_	_	_	_	_	_	_	_
+27	ل	لِ	ADP	P---------	AdpType=Prep	28	case	_	_
+28	السلطة	سُلطَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	_
+29	الفنية	فَنِّيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	28	amod	_	_
+30	في	فِي	ADP	P---------	AdpType=Prep	31	case	_	_
+31	أوروبا	أُورُوبَا	X	X---------	Foreign=Yes	28	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	G---------	_	3	punct	_	_
+
+# sent_id = 6
+# text = لم تستعد إيطاليا أياً من مجدها الفني السابق حتى القرن العشرين عبر أعمال أومبرتو بوكيوني وجياكومو بالا المستقبلية.
+1	لم	لَم	PART	F---------	_	2	advmod	_	_
+2	تستعد	اِستَعَدّ	VERB	VIJA-3FS--	Aspect=Imp|Gender=Fem|Mood=Jus|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	2	nsubj	_	_
+4	أياً	أَيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	_
+5	من	مِن	ADP	P---------	AdpType=Prep	6	case	_	_
+6-7	مجدها	_	_	_	_	_	_	_	_
+6	مجد	مَجد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	nmod	_	_
+7	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nmod	_	_
+8	الفني	فَنِّيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	6	amod	_	_
+9	السابق	سَابِق	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	6	amod	_	_
+10	حتى	حَتَّى	ADP	P---------	AdpType=Prep	11	case	_	_
+11	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	obl	_	_
+12	العشرين	عِشرُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	11	nummod	_	_
+13	عبر	عَبرَ	ADP	PI------4-	AdpType=Prep|Case=Acc	14	case	_	_
+14	أعمال	عَمَل	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	2	obl	_	_
+15	أومبرتو	أومبرتو	X	X---------	Foreign=Yes	16	nmod	_	_
+16	بوكيوني	بوكيوني	X	U---------	_	14	nmod	_	_
+17	وجياكومو	وجياكومو	X	U---------	_	18	nmod	_	_
+18	بالا	بالا	X	U---------	_	14	nmod	_	_
+19	المستقبلية	مُستَقبَلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
+20	.	.	PUNCT	G---------	_	2	punct	_	_
+
+# sent_id = 7
+# text = تبع المرحلة المستقبلية اللوحات الميتافيزيقية لجورجيو دي شيريكو الذي مارس نفوذاً قوياً على السرياليين وأجيال من الفنانين اللاحقين.
+1	تبع	تَبِع	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	المرحلة	مَرحَلَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	المستقبلية	مُستَقبَلِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	اللوحات	لَوحَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	1	obj	_	_
+5	الميتافيزيقية	الميتافيزيقية	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	_
+6	لجورجيو	لجورجيو	X	U---------	_	8	nmod	_	_
+7	دي	دِي	X	X---------	Foreign=Yes	8	nmod	_	_
+8	شيريكو	شيريكو	X	U---------	_	4	nmod	_	_
+9	الذي	اَلَّذِي	DET	SR----MS4-	Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	مارس	مَارَس	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	4	acl:relcl	_	_
+11	نفوذاً	نُفُوذ	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+12	قوياً	قوَيِاّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13	على	عَلَى	ADP	P---------	AdpType=Prep	14	case	_	_
+14	السرياليين	شِمَالسِيّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	10	obl:arg	_	_
+15	وأجيال	وأجيال	X	U---------	_	14	nmod	_	_
+16	من	مِن	ADP	P---------	AdpType=Prep	17	case	_	_
+17	الفنانين	فَنَّان	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	14	nmod	_	_
+18	اللاحقين	لَاحِق	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	17	amod	_	SpaceAfter=No
+19	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -16482,7 +16568,7 @@
 # newpar
 # sent_id = 1
 # text = الأدب
-1	الأدب	أَدَب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الأدب	أَدَب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16558,6 +16644,82 @@
 26	السونيت	سُوَنيت	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	obl	_	SpaceAfter=No
 27	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = تضم قائمة الفلاسفة المشاهير: جوردانو برونو ومارسيليو فيسينو ونيكولو مكيافيلي وجيامباتيستا فيكو.
+1	تضم	ضَمّ	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	الفلاسفة	فُلَاسَفَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+4	المشاهير	مَشهُور	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	2	amod	_	SpaceAfter=No
+5	:	:	PUNCT	G---------	_	4	punct	_	_
+6	جوردانو	جوردانو	X	U---------	_	7	nmod	_	_
+7	برونو	برونو	X	U---------	_	1	nsubj	_	_
+8	ومارسيليو	ومارسيليو	X	U---------	_	9	nmod	_	_
+9	فيسينو	فيسينو	X	U---------	_	7	conj	_	_
+10	ونيكولو	ونيكولو	X	U---------	_	11	nmod	_	_
+11	مكيافيلي	مكيافيلي	X	U---------	_	7	conj	_	_
+12	وجيامباتيستا	وجيامباتيستا	X	U---------	_	13	nmod	_	_
+13	فيكو	فيكو	X	U---------	_	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = أما أعلام الأدب الحاليون والحائزون على جائزة نوبل فهم: الشاعر القومي جيوسي كاردوتشي في عام 1906 والكاتبة الواقعية غراتسيا ديليدا في عام 1926 والمؤلف المسرحي الحديث لويجي بيرانديلو في عام 1936 والشعراء سالفاتوري كوازيمودو في عام 1959 وأوجينيو مونتالي في عام 1975 ومؤلف المسرح الساخر داريو فو في عام 1997.
+1	أما	أَمَّا	PART	F---------	_	10	advmod:emph	_	_
+2	أعلام	عُلم	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	appos	_	_
+3	الأدب	أَدَب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+4	الحاليون	حَالِيّ	ADJ	A-----MP1D	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	2	amod	_	_
+5	والحائزون	والحائزون	ADJ	A-----MP1D	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	2	amod	_	_
+6	على	عَلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	جائزة	جَائِزَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl:arg	_	_
+8	نوبل	نُوبِل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	7	nmod	_	_
+9-10	فهم	_	_	_	_	_	_	_	SpaceAfter=No
+9	ف	فَ	CCONJ	C---------	_	10	cc	_	_
+10	هم	هُوَ	PRON	SP---3MP1-	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+11	:	:	PUNCT	G---------	_	10	punct	_	_
+12	الشاعر	شَاعِر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	10	nsubj	_	_
+13	القومي	قَومِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	12	amod	_	_
+14	جيوسي	جيوسي	X	U---------	_	15	nmod	_	_
+15	كاردوتشي	كاردوتشي	X	U---------	_	12	nmod	_	_
+16	في	فِي	ADP	P---------	AdpType=Prep	17	case	_	_
+17	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	nmod	_	_
+18	1906	1906	NUM	Q---------	NumForm=Digit	17	nummod	_	_
+19	والكاتبة	والكاتبة	X	U---------	_	12	conj	_	_
+20	الواقعية	وَاقِعِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	19	amod	_	_
+21	غراتسيا	غراتسيا	X	U---------	_	22	nmod	_	_
+22	ديليدا	ديليدا	X	U---------	_	19	nmod	_	_
+23	في	فِي	ADP	P---------	AdpType=Prep	24	case	_	_
+24	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	nmod	_	_
+25	1926	1926	NUM	Q---------	NumForm=Digit	24	nummod	_	_
+26	والمؤلف	والمؤلف	X	U---------	_	19	nmod	_	_
+27	المسرحي	مَسرِحِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	26	amod	_	_
+28	الحديث	حَدِيث	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	26	amod	_	_
+29	لويجي	لويجي	X	U---------	_	30	nmod	_	_
+30	بيرانديلو	بيرانديلو	X	U---------	_	26	nmod	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	26	nmod	_	_
+33	1936	1936	NUM	Q---------	NumForm=Digit	32	nummod	_	_
+34-35	والشعراء	_	_	_	_	_	_	_	_
+34	و	وَ	CCONJ	C---------	_	35	cc	_	_
+35	الشعراء	شَاعِر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	12	conj	_	_
+36	سالفاتوري	سالفاتوري	X	U---------	_	37	nmod	_	_
+37	كوازيمودو	كوازيمودو	X	U---------	_	35	nmod	_	_
+38	في	فِي	ADP	P---------	AdpType=Prep	39	case	_	_
+39	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	35	nmod	_	_
+40	1959	1959	NUM	Q---------	NumForm=Digit	39	nummod	_	_
+41	وأوجينيو	وأوجينيو	X	U---------	_	42	nmod	_	_
+42	مونتالي	مونتالي	X	U---------	_	35	nmod	_	_
+43	في	فِي	ADP	P---------	AdpType=Prep	44	case	_	_
+44	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	35	nmod	_	_
+45	1975	1975	NUM	Q---------	NumForm=Digit	44	nummod	_	_
+46	ومؤلف	ومؤلف	X	U---------	_	12	conj	_	_
+47	المسرح	مَسرَح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	46	nmod	_	_
+48	الساخر	سَاخِر	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	47	amod	_	_
+49	داريو	داريو	X	U---------	_	50	nmod	_	_
+50	فو	فو	X	U---------	_	46	nmod	_	_
+51	في	فِي	ADP	P---------	AdpType=Prep	52	case	_	_
+52	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	46	nmod	_	_
+53	1997	1997	NUM	Q---------	NumForm=Digit	52	nummod	_	SpaceAfter=No
+54	.	.	PUNCT	G---------	_	10	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -16565,7 +16727,7 @@
 # newpar
 # sent_id = 1
 # text = المسرح
-1	المسرح	مَسرَح	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	المسرح	مَسرَح	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16731,7 +16893,7 @@
 # newpar
 # sent_id = 1
 # text = الموسيقى
-1	الموسيقى	الموسيقى	X	U---------	_	0	root	_	SpacesAfter=\n
+1	الموسيقى	الموسيقى	X	U---------	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -16927,6 +17089,277 @@
 12	المعاصرة	مُعَاصِر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No
 13	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = تشتهر إيطاليا بكونها مهد الأوبرا.
+1	تشتهر	اِشتَهَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	1	nsubj	_	_
+3-5	بكونها	_	_	_	_	_	_	_	_
+3	ب	بِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	كون	كَون	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+5	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nmod	_	_
+6	مهد	مَهد	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+7	الأوبرا	الأوبرا	X	U---------	_	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 6
+# text = يُعتقد أن الأوبرا الإيطالية قد تأسست في أوائل القرن السابع عشر في المدن الإيطالية مثل البندقية ومانتوفا.
+1	يُعتقد	اُِعتَقَد	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	أن	أَنَّ	SCONJ	C---------	_	6	mark	_	_
+3	الأوبرا	الأوبرا	X	U---------	Case=Acc|Definite=Def|Number=Plur	6	nsubj	_	_
+4	الإيطالية	إِيطَالِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	قد	قَد	AUX	F---------	_	6	aux	_	_
+6	تأسست	تَأَسَّس	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	csubj	_	_
+7	في	فِي	ADP	P---------	AdpType=Prep	8	case	_	_
+8	أوائل	أَوَّل	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	6	obl	_	_
+9	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+10	السابع	سَابِع	ADJ	A-----MS4C	Case=Acc|Definite=Com|Gender=Masc|Number=Sing	9	amod	_	_
+11	عشر	عَشَر	NUM	QY----M---	Gender=Masc|NumForm=Word|NumValue=2	10	nummod	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	المدن	مَدِينَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	obl	_	_
+14	الإيطالية	إِيطَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	_
+15	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	16	case	_	_
+16	البندقية	بَندَقِيّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+17	ومانتوفا	ومانتوفا	X	U---------	_	16	conj	_	SpaceAfter=No
+18	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 7
+# text = كما كانت المقطوعات الفنية الأخرى من تلحين الملحنين الطليان في القرن التاسع عشر وأوائل القرن العشرين مثل روسيني وبيليني ودونيزيتي وبوتشيني وفيردي من بين أشهرها من أي وقت مضى وتؤدى اليوم في دور الأوبرا في العالم.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3	المقطوعات	مَقطُوع	ADJ	A-----FP1D	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	2	nsubj	_	_
+4	الفنية	فَنِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+6	من	مِن	ADP	P---------	AdpType=Prep	7	case	_	_
+7	تلحين	تَلحِين	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	nmod	_	_
+8	الملحنين	مُلَحِّن	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	nmod	_	_
+9	الطليان	طَلَيِاّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	8	amod	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
+11	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	obl	_	_
+12	التاسع	تَاسِع	ADJ	A-----MS4C	Case=Acc|Definite=Com|Gender=Masc|Number=Sing	11	amod	_	_
+13	عشر	عَشَر	NUM	QY----M---	Gender=Masc|NumForm=Word|NumValue=2	12	nummod	_	_
+14	وأوائل	وأَوِيلَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	13	nmod	_	_
+15	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+16	العشرين	عِشرُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	15	nummod	_	_
+17	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	18	case	_	_
+18	روسيني	روسيني	X	U---------	_	8	nmod	_	_
+19	وبيليني	وبيليني	X	U---------	_	18	nmod	_	_
+20	ودونيزيتي	ودونيزيتي	X	U---------	_	18	nmod	_	_
+21	وبوتشيني	وبوتشيني	X	U---------	_	22	nmod	_	_
+22	وفيردي	وفيردي	X	U---------	_	18	conj	_	_
+23	من	مِن	ADP	P---------	AdpType=Prep	25	case	_	_
+24	بين	بَينَ	ADP	PI------2-	AdpType=Prep|Case=Gen	23	fixed	_	_
+25-26	أشهرها	_	_	_	_	_	_	_	_
+25	أشهر	أَشهَر	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	2	obl	_	_
+26	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	25	nmod	_	_
+27	من	مِن	ADP	P---------	AdpType=Prep	28	case	_	_
+28	أي	أَيّ	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	25	amod	_	_
+29	وقت	وَقت	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	28	nmod	_	_
+30	مضى	مَضَى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	29	acl	_	_
+31-32	وتؤدى	_	_	_	_	_	_	_	_
+31	و	وَ	CCONJ	C---------	_	32	cc	_	_
+32	تؤدى	أَدَّى	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	30	conj	_	_
+33	اليوم	يَوم	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	32	obl	_	_
+34	في	فِي	ADP	P---------	AdpType=Prep	35	case	_	_
+35	دور	دَور	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	32	obl	_	_
+36	الأوبرا	الأوبرا	X	U---------	_	35	nmod	_	_
+37	في	فِي	ADP	P---------	AdpType=Prep	38	case	_	_
+38	العالم	عَالَم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	35	nmod	_	SpaceAfter=No
+39	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 8
+# text = تشتهر أيضاً لا سكالا في ميلانو باعتبارها واحدة من أفضل دور الأوبرا في العالم.
+1	تشتهر	اِشتَهَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	أيضاً	أَيضًا	ADV	D---------	_	1	advmod:emph	_	_
+3	لا	لَا	PART	F---------	_	1	advmod	_	_
+4	سكالا	سكالا	X	U---------	_	1	nsubj	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	ميلانو	مِيلَانُو	X	X---------	Foreign=Yes	1	obl	_	_
+7-9	باعتبارها	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	9	case	_	_
+8	اعتبار	اِعتِبَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	fixed	_	_
+9	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	obl	_	_
+10	واحدة	وَاحِد	NUM	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	nsubj	_	_
+11	من	مِن	ADP	P---------	AdpType=Prep	12	case	_	_
+12	أفضل	أَفضَل	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	10	amod	_	_
+13	دور	دَور	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	nmod	_	_
+14	الأوبرا	الأوبرا	X	U---------	_	13	nmod	_	_
+15	في	فِي	ADP	P---------	AdpType=Prep	16	case	_	_
+16	العالم	عَالَم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 9
+# text = من أشهر مغني الأوبرا الإيطالية: إنريكو كاروسو وأليساندرو بونتشي والراحل لوتشانو بافاروتي وأندريا بوتشيلي على سبيل المثال لا الحصر.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2	أشهر	أَشهَر	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	0	root	_	_
+3	مغني	ُمَغِّن	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	2	nmod	_	_
+4	الأوبرا	الأوبرا	X	U---------	_	3	nmod	_	_
+5	الإيطالية	إِيطَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
+6	:	:	PUNCT	G---------	_	2	punct	_	_
+7	إنريكو	إنريكو	X	U---------	_	8	nmod	_	_
+8	كاروسو	كاروسو	X	U---------	_	2	nsubj	_	_
+9	وأليساندرو	وأليساندرو	X	U---------	_	10	nmod	_	_
+10	بونتشي	بونتشي	X	U---------	_	8	conj	_	_
+11	والراحل	والراحل	X	U---------	_	8	conj	_	_
+12	لوتشانو	لوتشانو	X	U---------	_	13	nmod	_	_
+13	بافاروتي	بافاروتي	X	U---------	_	8	conj	_	_
+14	وأندريا	وأندريا	X	U---------	_	15	nmod	_	_
+15	بوتشيلي	بوتشيلي	X	U---------	_	8	conj	_	_
+16	على	عَلَى	ADP	P---------	AdpType=Prep	17	case	_	_
+17	سبيل	سَبِيل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	obl	_	_
+18	المثال	مِثَال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	_
+19	لا	لَا	PART	F---------	_	2	advmod	_	_
+20	الحصر	حَصر	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	19	nsubj	_	SpaceAfter=No
+21	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 10
+# text = ظهرت موسيقى الجاز في عشرينات القرن العشرين وحصلت على موطئ قدم قوي في إيطاليا وظلت شعبية على الرغم من السياسات الثقافية المعادية للأجانب من النظام الفاشي.
+1	ظهرت	ظَهَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	موسيقى	مُوسِيقَى	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
+3	الجاز	جَاز	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	عشرينات	عَشرَيِنّ	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	1	obl	_	_
+6	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	العشرين	عِشرُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	6	nummod	_	_
+8-9	وحصلت	_	_	_	_	_	_	_	_
+8	و	وَ	CCONJ	C---------	_	9	cc	_	_
+9	حصلت	حَصَل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+10	على	عَلَى	ADP	P---------	AdpType=Prep	11	case	_	_
+11	موطئ	مَوطَأ	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	9	obl:arg	_	_
+12	قدم	قَدَم	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	11	nmod	_	_
+13	قوي	قَوِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	12	amod	_	_
+14	في	فِي	ADP	P---------	AdpType=Prep	15	case	_	_
+15	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	9	obl	_	_
+16	وظلت	وَظَل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	xcomp	_	_
+17	شعبية	شَعبِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	16	obj	_	_
+18	على	عَلَى	ADP	P---------	AdpType=Prep	21	case	_	_
+19	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	fixed	_	_
+20	من	مِن	ADP	P---------	AdpType=Prep	18	fixed	_	_
+21	السياسات	سِيَاسَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	obl	_	_
+22	الثقافية	ثَقَافِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	21	amod	_	_
+23	المعادية	مُعَادِي	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	21	amod	_	_
+24-25	للأجانب	_	_	_	_	_	_	_	_
+24	ل	لِ	ADP	P---------	AdpType=Prep	25	case	_	_
+25	الأجانب	أَجنَبِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	23	obl:arg	_	_
+26	من	مِن	ADP	P---------	AdpType=Prep	27	case	_	_
+27	النظام	نِظَام	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	_
+28	الفاشي	فَاشِي	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	27	amod	_	SpaceAfter=No
+29	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 11
+# text = أما اليوم فأبرز مراكز موسيقى الجاز في إيطاليا تشمل ميلان وروما وصقلية.
+1	أما	أَمَّا	PART	F---------	_	9	advmod:emph	_	_
+2	اليوم	يَوم	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	1	appos	_	_
+3	فأبرز	فأبرز	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	appos	_	_
+4	مراكز	مَركَز	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	3	nmod	_	_
+5	موسيقى	مُوسِيقَى	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	nmod	_	_
+6	الجاز	جَاز	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	في	فِي	ADP	P---------	AdpType=Prep	8	case	_	_
+8	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	4	nmod	_	_
+9	تشمل	شَمِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+10	ميلان	مِيلَان	NOUN	N------S4I	Case=Acc|Definite=Cons|Number=Sing	9	obj	_	_
+11	وروما	وروما	X	U---------	_	10	nmod	_	_
+12	وصقلية	وصقلية	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	G---------	_	9	punct	_	_
+
+# sent_id = 12
+# text = في وقت لاحق كانت إيطاليا في طليعة حركة بروغريسيف روك في السبعينات بوجود فرق مثل بي.إم.إف وغوبلن.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	وقت	وَقت	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
+3	لاحق	لَاحِق	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	2	amod	_	_
+4	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+5	إيطاليا	إِيطَالِيَا	X	X---------	Foreign=Yes	4	nsubj	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	طليعة	طَلِيعَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	obl	_	_
+8	حركة	حَرَكَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	nmod	_	_
+9	بروغريسيف	بروغريسيف	X	U---------	_	8	nmod	_	_
+10	روك	رُوك	X	X---------	Foreign=Yes	9	nmod	_	_
+11	في	فِي	ADP	P---------	AdpType=Prep	12	case	_	_
+12	السبعينات	سَبعِينَات	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	8	nmod	_	_
+13-14	بوجود	_	_	_	_	_	_	_	_
+13	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	obl	_	_
+15	فرق	فِرقَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	14	nmod	_	_
+16	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	17	case	_	_
+17	بي	بِي	X	X---------	Foreign=Yes	15	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
+19	إم	إِم	X	X---------	Foreign=Yes	17	flat:foreign	_	SpaceAfter=No
+20	.	.	PUNCT	G---------	_	17	punct	_	SpaceAfter=No
+21	إف	إِف	X	X---------	Foreign=Yes	17	flat:foreign	_	_
+22	وغوبلن	وغوبلن	X	X---------	Foreign=Yes	17	flat:foreign	_	SpaceAfter=No
+23	.	.	PUNCT	G---------	_	4	punct	_	_
+
+# sent_id = 13
+# text = أما في الوقت الحالي فإن موسيقى البوب الإيطالية تمثل سنوياً في مهرجان موسيقى سان ريمو والذي كان بمثابة إلهام لمسابقة الأغنية الأوروبية "يوروفيجن" ومهرجان العالمين في سبوليتو.
+1	أما	أَمَّا	PART	F---------	_	10	advmod:emph	_	_
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	الوقت	وَقت	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+4	الحالي	حَالِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
+5-6	فإن	_	_	_	_	_	_	_	_
+5	ف	فَ	CCONJ	C---------	_	6	cc	_	_
+6	إن	إِنَّ	PART	F---------	_	10	advmod:emph	_	_
+7	موسيقى	مُوسِيقَى	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	6	nsubj	_	_
+8	البوب	بَوب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9	الإيطالية	إِيطَالِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	_
+10	تمثل	مَثَّل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+11	سنوياً	سَنَوِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	مهرجان	مَهرَجَان	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	10	obl	_	_
+14	موسيقى	مُوسِيقَى	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	nmod	_	_
+15	سان	سَان	X	X---------	Foreign=Yes	16	nmod	_	_
+16	ريمو	ريمو	X	U---------	_	14	nmod	_	_
+17-18	والذي	_	_	_	_	_	_	_	_
+17	و	وَ	CCONJ	C---------	_	13	cc	_	_
+18	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	22	nsubj	_	_
+19	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	22	cop	_	_
+20-21	بمثابة	_	_	_	_	_	_	_	_
+20	ب	بِ	ADP	P---------	AdpType=Prep	22	case	_	_
+21	مثابة	مَثَابَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	fixed	_	_
+22	إلهام	إِلهَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	acl:relcl	_	_
+23	لمسابقة	سُاَبَقَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	nsubj	_	_
+24	الأغنية	غِنَاء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	23	nmod	_	_
+25	الأوروبية	أُورُوبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	24	amod	_	_
+26	"	"	PUNCT	G---------	_	27	punct	_	SpaceAfter=No
+27	يوروفيجن	يوروفيجن	X	U---------	_	24	nmod	_	SpaceAfter=No
+28	"	"	PUNCT	G---------	_	27	punct	_	_
+29	ومهرجان	ومهرجان	X	U---------	_	23	conj	_	_
+30	العالمين	عَالَم	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	29	amod	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	سبوليتو	سبوليتو	X	U---------	_	29	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	G---------	_	10	punct	_	_
+
+# sent_id = 14
+# text = كما حصل المغنون مثل مغنية البوب مينا والعلم في الموسيقى الكلاسيكية الفنان أندريا بوتشيلي والفائزة بجائزة غرامي لاورا باوزيني وإروس رامادزوتي، متصدر الألبومات الأوروبية، على إشادة عالمية.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	حصل	حَصَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3	المغنون	مَغنُون	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	nsubj	_	_
+4	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	5	case	_	_
+5	مغنية	مَغنِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	nmod	_	_
+6	البوب	بَوب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	مينا	مينا	X	U---------	_	5	nmod	_	_
+8	والعلم	والعلم	X	U---------	_	5	nmod	_	_
+9	في	فِي	ADP	P---------	AdpType=Prep	10	case	_	_
+10	الموسيقى	الموسيقى	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+11	الكلاسيكية	كلاَسيِكيِةّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+12	الفنان	فَنَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+13	أندريا	أَندرِيَا	X	X---------	Foreign=Yes	14	nmod	_	_
+14	بوتشيلي	بوتشيلي	X	U---------	_	12	nmod	_	_
+15	والفائزة	والفائزة	X	U---------	_	14	nmod	_	_
+16	بجائزة	بُجَائَزَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	15	nmod	_	_
+17	غرامي	غرامي	NOUN	N------D2R	Case=Gen|Definite=Cons|Number=Dual	16	nmod	_	_
+18	لاورا	لاورا	X	U---------	_	19	nmod	_	_
+19	باوزيني	باوزيني	X	X---------	Foreign=Yes	17	nmod	_	_
+20	وإروس	وإروس	X	U---------	_	21	nmod	_	_
+21	رامادزوتي	رامادزوتي	X	X---------	Foreign=Yes	17	nmod	_	SpaceAfter=No
+22	،	،	PUNCT	G---------	_	21	punct	_	_
+23	متصدر	مُتَصَدِّر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	3	nmod	_	_
+24	الألبومات	الألبومات	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	23	nmod	_	_
+25	الأوروبية	أُورُوبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
+26	،	،	PUNCT	G---------	_	25	punct	_	_
+27	على	عَلَى	ADP	P---------	AdpType=Prep	28	case	_	_
+28	إشادة	إِشَادَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	obl:arg	_	_
+29	عالمية	عَالَمِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
+30	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -16934,7 +17367,7 @@
 # newpar
 # sent_id = 1
 # text = السينما
-1	السينما	سِينَمَا	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	السينما	سِينَمَا	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17068,6 +17501,108 @@
 21	الثانية	ثَانِي	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
 22	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = بعد الحرب حصلت السينما الإيطالية على شهرة واسعة وصدرت بشكل كبير حتى التراجع الفني في ثمانينات القرن العشرين.
+1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
+2	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	obl	_	_
+3	حصلت	حَصَل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+4	السينما	سِينَمَا	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	_
+5	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	_
+6	على	عَلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	شهرة	شُهرَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	3	obl:arg	_	_
+8	واسعة	وَاسِع	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	7	amod	_	_
+9	وصدرت	وَصدَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	7	acl	_	_
+10-11	بشكل	_	_	_	_	_	_	_	_
+10	ب	بِ	ADP	P---------	AdpType=Prep	11	case	_	_
+11	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	9	obl	_	_
+12	كبير	كَبِير	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13	حتى	حَتَّى	ADP	P---------	AdpType=Prep	14	case	_	_
+14	التراجع	تَرَاجُع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	obl	_	_
+15	الفني	فَنِّيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	14	amod	_	_
+16	في	فِي	ADP	P---------	AdpType=Prep	17	case	_	_
+17	ثمانينات	ثَمانِينَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	14	nmod	_	_
+18	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	_
+19	العشرين	عِشرُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	18	nummod	_	SpaceAfter=No
+20	.	.	PUNCT	G---------	_	3	punct	_	_
+
+# sent_id = 7
+# text = من مخرجي الأفلام الطليان المشاهير من تلك الفترة: فيتوريو دي سيكا وفيديريكو فليني وسيرجيو ليون وبيير باولو باسوليني وميكيلانجيلو أنطونيوني وداريو أرجنتو.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2	مخرجي	مُخَرِّج	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	0	root	_	_
+3	الأفلام	فِيلم	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
+4	الطليان	الطليان	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	3	amod	_	_
+5	المشاهير	مَشهُور	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	2	amod	_	_
+6	من	مِن	ADP	P---------	AdpType=Prep	8	case	_	_
+7	تلك	ذٰلِكَ	DET	SD----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_
+8	الفترة	فَترَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	SpaceAfter=No
+9	:	:	PUNCT	G---------	_	2	punct	_	_
+10	فيتوريو	فيتوريو	X	U---------	_	12	nmod	_	_
+11	دي	دِي	X	X---------	Foreign=Yes	12	nmod	_	_
+12	سيكا	سيكا	X	X---------	Foreign=Yes	2	nmod	_	_
+13	وفيديريكو	وفيديريكو	X	U---------	_	14	nmod	_	_
+14	فليني	فليني	X	U---------	_	2	dep	_	_
+15	وسيرجيو	وسيرجيو	X	U---------	_	16	cc	_	_
+16	ليون	لِيُون	X	X---------	Foreign=Yes	14	conj	_	_
+17	وبيير	وبيير	X	U---------	_	16	cc	_	_
+18	باولو	بَاولُو	X	X---------	Foreign=Yes	14	nmod	_	_
+19	باسوليني	باسوليني	X	U---------	_	14	conj	_	_
+20	وميكيلانجيلو	وميكيلانجيلو	X	U---------	_	21	nmod	_	_
+21	أنطونيوني	أنطونيوني	X	X---------	Foreign=Yes	19	conj	_	_
+22	وداريو	وداريو	X	U---------	_	23	nmod	_	_
+23	أرجنتو	أَرَجن	X	X---------	Foreign=Yes	21	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	G---------	_	2	punct	_	_
+
+# sent_id = 8
+# text = تشمل الأفلام المقدمة كنوزاً من السينما العالمية مثل لا دولتشي فيتا والطبيب والشرس والقبيح وسارق الدراجة.
+1	تشمل	شَمِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	الأفلام	فِيلم	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	المقدمة	مُقَدَّم	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	كنوزاً	كنوزاً	NOUN	N------P4I	_	3	obj	_	_
+5	من	مِن	ADP	P---------	AdpType=Prep	6	case	_	_
+6	السينما	سِينَمَا	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+7	العالمية	عَالَمِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	_
+8	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+9	لا	لَا	PART	F---------	_	11	cc	_	_
+10	دولتشي	دولتشي	X	U---------	_	11	nmod	_	_
+11	فيتا	فيتا	X	U---------	_	1	obl	_	_
+12	والطبيب	والطبيب	X	U---------	_	11	conj	_	_
+13	والشرس	والشرس	X	U---------	_	11	conj	_	_
+14	والقبيح	والقبيح	X	U---------	_	11	conj	_	_
+15	وسارق	وسارق	X	U---------	_	11	conj	_	_
+16-17	الدراجة	_	_	_	_	_	_	_	SpaceAfter=No
+16	ال	اَل	PART	F---------	_	15	nmod	_	_
+17	دراجة	دَرَّاجَة	NOUN	U---------	_	15	nmod	_	_
+18	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 9
+# text = في السنوات الأخيرة تلقت السينما الإيطالية اهتماماً دولياً ضئيلاً مع أفلام مثل لا فيتا إي بيلا من إخراج روبيرتو بينيني وإل بوستينو مع ماسيمو ترويزي.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	السنوات	سَنَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	obl	_	_
+3	الأخيرة	أَخِير	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	تلقت	تَلَقَّى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+5	السينما	سِينَمَا	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	4	nsubj	_	_
+6	الإيطالية	إِيطَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
+7	اهتماماً	اِهتِمَام	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+8	دولياً	دُوَلِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	amod	_	_
+9	ضئيلاً	ضَئِيل	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	amod	_	_
+10	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+11	أفلام	فِيلم	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	7	nmod	_	_
+12	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	14	case	_	_
+13	لا	لَا	PART	F---------	_	14	cc	_	_
+14	فيتا	فيتا	X	U---------	Foreign=Yes	11	nmod	_	_
+15	إي	إِي	X	X---------	Foreign=Yes	14	nmod	_	_
+16	بيلا	بيلا	X	U---------	_	14	nmod	_	_
+17	من	مِن	ADP	P---------	AdpType=Prep	18	case	_	_
+18	إخراج	إِخرَاج	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	nmod	_	_
+19	روبيرتو	روبيرتو	X	X---------	Foreign=Yes	18	nmod	_	_
+20	بينيني	بينيني	X	X---------	Foreign=Yes	19	flat:foreign	_	_
+21	وإل	وإل	X	U---------	_	22	cc	_	_
+22	بوستينو	بوستينو	X	U---------	_	18	conj	_	_
+23	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	25	case	_	_
+24	ماسيمو	ماسيمو	X	U---------	_	25	nmod	_	_
+25	ترويزي	ترويزي	X	U---------	_	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17076,7 +17611,7 @@
 # sent_id = 1
 # text = العلوم والتقنية
 1	العلوم	عِلم	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2-3	والتقنية	_	_	_	_	_	_	_	SpacesAfter=\n
+2-3	والتقنية	_	_	_	_	_	_	_	SpaceAfter=No
 2	و	وَ	CCONJ	C---------	_	3	cc	_	_
 3	التقنية	تَقنِيَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	conj	_	_
 
@@ -17227,6 +17762,159 @@
 35	الكم	كَمّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	34	nmod	_	SpaceAfter=No
 36	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = بلمحة موجزة عن بعض الشخصيات البارزة الأخرى يذكر عالم الفلك جيوفاني دومينيكو كاسيني الذي سجل العديد من الاكتشافات الهامة حول النظام الشمسي، والفيزيائي أليساندرو فولتا مخترع البطارية الكهربائية، والرياضيين لاغرانج وفيبوناتشي وجيرولامو كاردانو الذي يعرف كتابه "آرس ماجنا" أو "الفن الكبير" عموماً كأول معالجة حديثة في الرياضيات وإحراز تقدم أساسي في الميدان؛
+1	بلمحة	بَلمَحَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+2	موجزة	مُوَجَّز	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	_
+3	عن	عَن	ADP	P---------	AdpType=Prep	4	case	_	_
+4	بعض	بَعض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
+5	الشخصيات	شَخصِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	nmod	_	_
+6	البارزة	بَارِز	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
+7	الأخرى	آخَر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
+8	يذكر	ذَكَر	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	_
+9	عالم	عَالَم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	8	nsubj	_	_
+10	الفلك	فَلك	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+11	جيوفاني	جيوفاني	X	X---------	Foreign=Yes	13	nmod	_	_
+12	دومينيكو	دومينيكو	X	U---------	_	13	nmod	_	_
+13	كاسيني	كاسيني	X	U---------	_	9	nmod	_	_
+14	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
+15	سجل	سَجَّل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	acl:relcl	_	_
+16	العديد	عَدِيد	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	15	obj	_	_
+17	من	مِن	ADP	P---------	AdpType=Prep	18	case	_	_
+18	الاكتشافات	اِكتِشَاف	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	nmod	_	_
+19	الهامة	هَامّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	_
+20	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	21	case	_	_
+21	النظام	نِظَام	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+22	الشمسي	شَمسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	21	amod	_	SpaceAfter=No
+23	،	،	PUNCT	G---------	_	22	punct	_	_
+24	والفيزيائي	والفيزيائي	X	U---------	_	9	conj	_	_
+25	أليساندرو	أليساندرو	X	X---------	Foreign=Yes	26	nmod	_	_
+26	فولتا	فولتا	X	U---------	_	24	nmod	_	_
+27	مخترع	مُختَرِع	ADJ	A-----MS4R	Case=Acc|Definite=Cons|Gender=Masc|Number=Sing	24	nmod	_	_
+28	البطارية	بَطَّارِيّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	27	nmod	_	_
+29	الكهربائية	كَهرَبَائِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	28	nmod	_	SpaceAfter=No
+30	،	،	PUNCT	G---------	_	29	punct	_	_
+31	والرياضيين	والرياضيين	X	U---------	_	24	conj	_	_
+32	لاغرانج	لاغرانج	X	U---------	_	35	nmod	_	_
+33	وفيبوناتشي	وفيبوناتشي	X	U---------	_	35	nmod	_	_
+34	وجيرولامو	وجيرولامو	X	U---------	_	35	nmod	_	_
+35	كاردانو	كاردانو	X	U---------	_	31	nmod	_	_
+36	الذي	اَلَّذِي	DET	SR----MS4-	Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	37	nsubj	_	_
+37	يعرف	عَرَف	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	31	acl:relcl	_	_
+38-39	كتابه	_	_	_	_	_	_	_	_
+38	كتاب	كِتَاب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	37	obj	_	_
+39	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	nmod	_	_
+40	"	"	PUNCT	G---------	_	41	punct	_	SpaceAfter=No
+41	آرس	آرس	X	U---------	_	38	nmod	_	_
+42-43	ماجنا	_	_	_	_	_	_	_	SpaceAfter=No
+42	ماج	مَاج	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	41	nmod	_	_
+43	نا	هُوَ	PRON	SP---1MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=1|PronType=Prs	42	nmod	_	_
+44	"	"	PUNCT	G---------	_	41	punct	_	_
+45	أو	أَو	CCONJ	C---------	_	47	cc	_	_
+46	"	"	PUNCT	G---------	_	47	punct	_	SpaceAfter=No
+47	الفن	فَنّ	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	38	conj	_	_
+48	الكبير	كَبِير	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	47	amod	_	SpaceAfter=No
+49	"	"	PUNCT	G---------	_	47	punct	_	_
+50	عموماً	عُمُوم	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	47	obl	_	_
+51-52	كأول	_	_	_	_	_	_	_	_
+51	ك	كَ	ADP	P---------	AdpType=Prep	52	case	_	_
+52	أول	أَوَّل	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	37	obl	_	_
+53	معالجة	مُعَالَجَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	52	nmod	_	_
+54	حديثة	حَدِيث	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	53	amod	_	_
+55	في	فِي	ADP	P---------	AdpType=Prep	56	case	_	_
+56	الرياضيات	رِيَاضِيّ	ADJ	A-----FP2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	53	nmod	_	_
+57	وإحراز	وإحراز	X	U---------	_	52	conj	_	_
+58	تقدم	تَقَدُّم	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	57	nmod	_	_
+59	أساسي	أَسَاسِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	58	amod	_	_
+60	في	فِي	ADP	P---------	AdpType=Prep	61	case	_	_
+61	الميدان	مَيدَان	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	58	nmod	_	SpaceAfter=No
+62	؛	؛	PUNCT	G---------	_	8	punct	_	_
+
+# sent_id = 7
+# text = أما مارتشيلو مالبيكي فهو طبيب ومؤسس علم التشريح المجهري وعالم الأحياء لادزارو سبالانساني الذي أجرى أبحاثاً هامة في الوظائف البدنية والاستنساخ الحيواني والنظرية الخلوية ويضاف إليهم الطبيب وعالم التشريح المرضي والحائز على جائزة نوبل كاميلو غولجي والذي تشمل إنجازاته العديدة اكتشاف جهاز غولجي ودوره في تمهيد الطريق لقبول مبدأ العصبية، وغولييلمو ماركوني الذي حصل على جائزة نوبل في الفيزياء لاختراعه الراديو.
+1	أما	أَمَّا	PART	F---------	_	6	advmod:emph	_	_
+2	مارتشيلو	مارتشيلو	X	U---------	_	1	appos	_	_
+3	مالبيكي	مالبيكي	X	U---------	_	1	appos	_	_
+4-5	فهو	_	_	_	_	_	_	_	_
+4	ف	فَ	CCONJ	C---------	_	6	cc	_	_
+5	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nmod	_	_
+6	طبيب	طَبِيب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+7	ومؤسس	ومؤسس	X	U---------	_	6	nmod	_	_
+8	علم	عِلم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	nmod	_	_
+9	التشريح	تَشرِيح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+10	المجهري	المجهري	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	8	amod	_	_
+11	وعالم	وَعلَم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	6	nmod	_	_
+12	الأحياء	حَيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	nmod	_	_
+13	لادزارو	لادزارو	X	U---------	_	14	nmod	_	_
+14	سبالانساني	سبالانساني	X	U---------	_	11	nmod	_	_
+15	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
+16	أجرى	أَجرَى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	11	acl:relcl	_	_
+17	أبحاثاً	بَحَث	NOUN	N------P4I	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
+18	هامة	هَامّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	17	amod	_	_
+19	في	فِي	ADP	P---------	AdpType=Prep	20	case	_	_
+20	الوظائف	وَظِيفَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	17	nmod	_	_
+21	البدنية	بَدَنِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	20	amod	_	_
+22	والاستنساخ	والاستنساخ	X	U---------	_	20	conj	_	_
+23	الحيواني	حَيوَانِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	20	amod	_	_
+24-25	والنظرية	_	_	_	_	_	_	_	_
+24	وال	وَالِي	CCONJ	C---------	_	25	cc	_	_
+25	نظرية	نَظَرِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	conj	_	_
+26	الخلوية	خَلوِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	25	nmod	_	_
+27-28	ويضاف	_	_	_	_	_	_	_	_
+27	و	وَ	CCONJ	C---------	_	28	cc	_	_
+28	يضاف	أَضَاف	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	6	conj	_	_
+29-30	إليهم	_	_	_	_	_	_	_	_
+29	إلي	إِلَى	ADP	P---------	AdpType=Prep	30	case	_	_
+30	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	28	obl:arg	_	_
+31	الطبيب	طَبِيب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	28	nsubj	_	_
+32	وعالم	وعالم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	31	nmod	_	_
+33	التشريح	تَشرِيح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	_
+34	المرضي	مِرضِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	33	amod	_	_
+35	والحائز	والحائز	X	U---------	_	31	amod	_	_
+36	على	عَلَى	ADP	P---------	AdpType=Prep	37	case	_	_
+37	جائزة	جَائِزَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	35	obl:arg	_	_
+38	نوبل	نُوبِل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	37	nmod	_	_
+39	كاميلو	كاميلو	X	U---------	_	40	nmod	_	_
+40	غولجي	غولجي	X	U---------	_	37	nmod	_	_
+41-42	والذي	_	_	_	_	_	_	_	_
+41	و	وَ	CCONJ	C---------	_	31	cc	_	_
+42	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	43	nsubj	_	_
+43	تشمل	شَمِل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	31	acl:relcl	_	_
+44-45	إنجازاته	_	_	_	_	_	_	_	_
+44	إنجازات	إِنجَاز	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	43	obj	_	_
+45	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	44	nmod	_	_
+46	العديدة	عَدِيد	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	44	amod	_	_
+47	اكتشاف	اِكتِشَاف	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	43	obj	_	_
+48	جهاز	جِهَاز	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	47	nmod	_	_
+49	غولجي	غولجي	X	U---------	_	48	nmod	_	_
+50-52	ودوره	_	_	_	_	_	_	_	_
+50	و	وَ	CCONJ	C---------	_	51	cc	_	_
+51	دور	دَور	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	47	conj	_	_
+52	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	51	nmod	_	_
+53	في	فِي	ADP	P---------	AdpType=Prep	54	case	_	_
+54	تمهيد	تَمهِيد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	51	nmod	_	_
+55	الطريق	طَرِيق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	54	nmod	_	_
+56-57	لقبول	_	_	_	_	_	_	_	_
+56	ل	لِ	ADP	P---------	AdpType=Prep	57	case	_	_
+57	قبول	قُبُول	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	55	nmod	_	_
+58	مبدأ	مبدأ	X	U---------	_	57	nmod	_	_
+59	العصبية	عَصَبِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	58	nmod	_	SpaceAfter=No
+60	،	،	PUNCT	G---------	_	59	punct	_	_
+61	وغولييلمو	وغولييلمو	X	U---------	_	62	nmod	_	_
+62	ماركوني	ماركوني	X	U---------	_	47	conj	_	_
+63	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	64	nsubj	_	_
+64	حصل	حَصَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	62	acl:relcl	_	_
+65	على	عَلَى	ADP	P---------	AdpType=Prep	66	case	_	_
+66	جائزة	جَائِزَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	64	obl:arg	_	_
+67	نوبل	أَوبَل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	66	nmod	_	_
+68	في	فِي	ADP	P---------	AdpType=Prep	69	case	_	_
+69	الفيزياء	فِيزِيَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	66	nmod	_	_
+70-71	لاختراعه	_	_	_	_	_	_	_	_
+70	لاختراع	لِاَختراع	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	64	obj	_	_
+71	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	70	nmod	_	_
+72	الراديو	الراديو	X	U---------	_	70	nmod	_	SpaceAfter=No
+73	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17234,7 +17922,7 @@
 # newpar
 # sent_id = 1
 # text = الرياضة
-1	الرياضة	رِيَاضَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	الرياضة	رِيَاضَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17307,6 +17995,189 @@
 33	2006	2006	NUM	Q---------	NumForm=Digit	32	nummod	_	SpaceAfter=No
 34	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = من الرياضات الأخرى ذات الشعبية، كرة السلة والكرة الطائرة وكرة الماء واتحاد الركبي ودوري الركبي وركوب الدراجات والمبارزة وهوكي الجليد (لا سيما في ميلانو وترينتينو ألتو أديجي وفينيتو) وهوكي الحقل وسباقات السيارات والسباحة.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2	الرياضات	رِيَاضَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	0	root	_	_
+3	الأخرى	آخَر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	ذات	ذَات	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+5	الشعبية	شَعبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7	كرة	كُرَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	2	nsubj	_	_
+8	السلة	سَلَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9-10	والكرة	_	_	_	_	_	_	_	_
+9	و	وَ	CCONJ	C---------	_	10	cc	_	_
+10	الكرة	كُرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	7	conj	_	_
+11	الطائرة	طَائِر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+12-13	وكرة	_	_	_	_	_	_	_	_
+12	و	وَ	CCONJ	C---------	_	13	cc	_	_
+13	كرة	كُرَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	7	conj	_	_
+14	الماء	مَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15-16	واتحاد	_	_	_	_	_	_	_	_
+15	و	وَ	CCONJ	C---------	_	16	cc	_	_
+16	اتحاد	اِتِّحَاد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	7	conj	_	_
+17	الركبي	الركبي	ADJ	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+18-19	ودوري	_	_	_	_	_	_	_	_
+18	و	وَ	CCONJ	C---------	_	19	cc	_	_
+19	دوري	دَورِيّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	7	conj	_	_
+20	الركبي	رَكبِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	19	amod	_	_
+21	وركوب	وركوب	X	U---------	_	7	conj	_	_
+22	الدراجات	دَرَّاجَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	21	nmod	_	_
+23	والمبارزة	والمبارزة	X	U---------	_	24	cc	_	_
+24	وهوكي	وهوكي	X	U---------	_	7	conj	_	_
+25	الجليد	جَلِيد	X	U---------	_	24	nmod	_	_
+26	(	(	PUNCT	G---------	_	30	punct	_	SpaceAfter=No
+27	لا	لَا	PART	F---------	_	30	cc	_	_
+28	سيما	سِيَّمَا	ADV	D---------	_	30	advmod:emph	_	_
+29	في	فِي	ADP	P---------	AdpType=Prep	30	case	_	_
+30	ميلانو	مِيلَانُو	X	X---------	Foreign=Yes	24	nmod	_	_
+31	وترينتينو	وترينتينو	X	U---------	_	30	nmod	_	_
+32	ألتو	ألتو	X	X---------	Foreign=Yes	34	nmod	_	_
+33	أديجي	أديجي	X	U---------	_	34	nmod	_	_
+34	وفينيتو	وفينيتو	X	U---------	_	30	conj	_	SpaceAfter=No
+35	)	)	PUNCT	G---------	_	30	punct	_	_
+36	وهوكي	وهوكي	X	U---------	_	7	conj	_	_
+37	الحقل	حَقل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	36	nmod	_	_
+38	وسباقات	وسباقات	X	U---------	_	7	conj	_	_
+39	السيارات	سَيَّارَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	38	nmod	_	_
+40	والسباحة	والسباحة	X	U---------	_	38	cc	_	SpaceAfter=No
+41	.	.	PUNCT	G---------	_	2	punct	_	_
+
+# sent_id = 4
+# text = الرياضات الشتوية هي الأكثر شعبية في المناطق الشمالية حيث ينافس الإيطاليون في المباريات الدولية والملاعب الأولمبية.
+1	الرياضات	الرياضات	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	4	nsubj	_	_
+2	الشتوية	شَتوِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
+3	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+4	الأكثر	أَكثَر	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
+5	شعبية	شَعبِيَّة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	المناطق	مِنطَقَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	obl	_	_
+8	الشمالية	شَمَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	_
+9	حيث	حَيثُ	CCONJ	C---------	_	10	mark	_	_
+10	ينافس	نَافَس	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	advcl	_	_
+11	الإيطاليون	إِيطَالِيّ	ADJ	A-----MP1D	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	10	nsubj	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	المباريات	مُبَارَاة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	obl:arg	_	_
+14	الدولية	دُوَلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	_
+15	والملاعب	والملاعب	X	U---------	_	13	nmod	_	_
+16	الأولمبية	أُولِمبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
+17	.	.	PUNCT	G---------	_	4	punct	_	_
+
+# sent_id = 5
+# text = استضافت مدينة تورينو عام 2006 دورة الألعاب الأولمبية الشتوية.
+1	استضافت	اِستَضَاف	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	مدينة	مَدِينَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	تورينو	تورينو	X	U---------	_	2	nmod	_	_
+4	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obl	_	_
+5	2006	2006	NUM	Q---------	NumForm=Digit	4	nummod	_	_
+6	دورة	دَورَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+7	الألعاب	لَعب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	nmod	_	_
+8	الأولمبية	أُولِمبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	_
+9	الشتوية	شَتوِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No
+10	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = تمارس عدة ألعاب شعبية في جميع أنحاء البلاد وفي بعض الأحيان تدمج في الاحتفالات الإيطالية.
+1	تمارس	مَارَس	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	عدة	عِدَّة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+3	ألعاب	لَعب	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	2	nmod	_	_
+4	شعبية	شَعبِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	3	amod	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	جميع	جَمِيع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+7	أنحاء	نَحو	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	6	nmod	_	_
+8	البلاد	بَلَد	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	nmod	_	_
+9-10	وفي	_	_	_	_	_	_	_	_
+9	و	وَ	CCONJ	C---------	_	13	cc	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
+11	بعض	بَعض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	obl	_	_
+12	الأحيان	حِين	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	nmod	_	_
+13	تدمج	دَمَج	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	1	conj	_	_
+14	في	فِي	ADP	P---------	AdpType=Prep	15	case	_	_
+15	الاحتفالات	اِحتِفَال	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	13	obl	_	_
+16	الإيطالية	إِيطَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 7
+# text = من الأمثلة على ذلك سباق الخيل "باليو" (يشتهر باسم باليو دي سيينا) وسباقات القوارب التقليدية مثل سباق قوارب الجندول في البندقية وسباق القوارب السنوي للجمهوريات البحرية وإعادة تمثيل الرياضات القديمة مثل كالتشيو فيورنتينو.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2-3	الأمثلة	_	_	_	_	_	_	_	_
+2	ال	اَل	PART	F---------	_	0	root	_	_
+3	أمثلة	مِثَال	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	2	nsubj	_	_
+4	على	عَلَى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+6	سباق	سِبَاق	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	3	nsubj	_	_
+7	الخيل	خَيل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	"	"	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
+9	باليو	باليو	X	X---------	Foreign=Yes	7	nmod	_	SpaceAfter=No
+10	"	"	PUNCT	G---------	_	9	punct	_	_
+11	(	(	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
+12	يشتهر	اِشتَهَر	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	6	acl	_	_
+13-14	باسم	_	_	_	_	_	_	_	_
+13	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	اسم	اِسم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	obl:arg	_	_
+15	باليو	بَالِيو	X	X---------	Foreign=Yes	14	nmod	_	_
+16	دي	دِي	X	X---------	Foreign=Yes	15	flat:foreign	_	_
+17	سيينا	سِيِينَّا	X	X---------	Foreign=Yes	15	flat:foreign	_	SpaceAfter=No
+18	)	)	PUNCT	G---------	_	12	punct	_	_
+19	وسباقات	وسباقات	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	3	nsubj	_	_
+20	القوارب	قَارِب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	19	nmod	_	_
+21	التقليدية	تَقلِيدِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	20	amod	_	_
+22	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	23	case	_	_
+23	سباق	سِبَاق	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+24	قوارب	قَارِب	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	23	nmod	_	_
+25	الجندول	جُندُول	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	24	nmod	_	_
+26	في	فِي	ADP	P---------	AdpType=Prep	27	case	_	_
+27	البندقية	بَندَقِيّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	nmod	_	_
+28	وسباق	سَبَق	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	23	nmod	_	_
+29	القوارب	قَارِب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	28	nmod	_	_
+30	السنوي	سَنَوِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	29	amod	_	_
+31	للجمهوريات	للجمهوريات	ADJ	U---------	_	29	nmod	_	_
+32	البحرية	بَحرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	31	amod	_	_
+33-34	وإعادة	_	_	_	_	_	_	_	_
+33	و	وَ	CCONJ	C---------	_	34	cc	_	_
+34	إعادة	إِعَادَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	28	conj	_	_
+35	تمثيل	تَمثِيل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	34	nmod	_	_
+36	الرياضات	رِيَاضَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	35	nmod	_	_
+37	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	_
+38	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	40	case	_	_
+39	كالتشيو	كالتشيو	X	U---------	_	40	nmod	_	_
+40	فيورنتينو	فيورنتينو	X	U---------	_	36	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = من الرياضات الشعبية الأخرى الممارسة بانتظام أو تمتلك دوري خاص بها: التامبوريللو وبوتشي وبوتشيا سو سترادا، وهي لعبة مشابهة لكلوتشيتن.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2	الرياضات	رِيَاضَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	0	root	_	_
+3	الشعبية	شَعبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	الأخرى	آخَر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+5-6	الممارسة	_	_	_	_	_	_	_	_
+5	ال	اَل	PART	F---------	_	6	advmod	_	_
+6	ممارسة	مُمَارِس	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	nsubj	_	_
+7-8	بانتظام	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+8	انتظام	اِنتِظَام	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+9	أو	أَو	CCONJ	C---------	_	10	cc	_	_
+10	تمتلك	اِمتَلَك	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	conj	_	_
+11	دوري	دَورِيّ	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	10	obj	_	_
+12	خاص	خَاصّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13-14	بها	_	_	_	_	_	_	_	SpaceAfter=No
+13	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	nmod	_	_
+15	:	:	PUNCT	G---------	_	14	punct	_	_
+16	التامبوريللو	التامبوريللو	X	U---------	_	14	nsubj	_	_
+17	وبوتشي	وبوتشي	X	U---------	_	16	nmod	_	_
+18	وبوتشيا	وبوتشيا	X	U---------	_	16	conj	_	_
+19	سو	سو	X	U---------	_	20	cc	_	_
+20	سترادا	سترادا	X	U---------	_	16	conj	_	SpaceAfter=No
+21	،	،	PUNCT	G---------	_	20	punct	_	_
+22-23	وهي	_	_	_	_	_	_	_	_
+22	و	وَ	CCONJ	C---------	_	24	cc	_	_
+23	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+24	لعبة	لَعبَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	16	conj	_	_
+25	مشابهة	مُشَابَهَة	ADJ	A-----FS1I	Case=Nom|Definite=Cons|Number=Sing	24	amod	_	_
+26	لكلوتشيتن	لكلوتشيتن	X	U---------	_	25	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17314,7 +18185,7 @@
 # newpar
 # sent_id = 1
 # text = الموضة
-1-2	الموضة	_	_	_	_	_	_	_	SpacesAfter=\n
+1-2	الموضة	_	_	_	_	_	_	_	SpaceAfter=No
 1	ال	اَل	PART	F---------	_	2	cc	_	_
 2	موضة	موضة	NOUN	U---------	_	0	root	_	_
 
@@ -17476,7 +18347,7 @@
 # newpar
 # sent_id = 1
 # text = التصميم
-1	التصميم	تَصمِيم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	التصميم	تَصمِيم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17654,7 +18525,7 @@
 # newpar
 # sent_id = 1
 # text = المطبخ
-1	المطبخ	مَطبَخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
+1	المطبخ	مَطبَخ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17833,7 +18704,7 @@
 # sent_id = 1
 # text = التصنيفات الدولية
 1	التصنيفات	تَصنِيف	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الدولية	دُوَلِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
+2	الدولية	دُوَلِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17843,7 +18714,7 @@
 # sent_id = 1
 # text = انظر أيضا
 1	انظر	نَظَر	VERB	U---------	_	0	root	_	_
-2	أيضا	أَيضًا	ADV	D---------	_	1	advmod:emph	_	SpacesAfter=\n
+2	أيضا	أَيضًا	ADV	D---------	_	1	advmod:emph	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17852,7 +18723,7 @@
 # newpar
 # sent_id = 1
 # text = المراجع
-1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n
+1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17862,25 +18733,5 @@
 # sent_id = 1
 # text = وصلات خارجية
 1	وصلات	وُصلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
-2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = أستراليا ·
-1	أستراليا	أُستُرَالِيَا	X	X---------	Foreign=Yes	0	root	_	SpacesAfter= 
-2	·	·	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = قائمة التصفح
-1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 

@@ -1,5 +1,3 @@
-# https://el.wikipedia.org/wiki/%CE%A3%CE%B9%CE%BD%CF%84%CE%AC%CF%81%CF%84%CE%B1_%CE%93%CE%BA%CE%B1%CE%BF%CF%85%CF%84%CE%AC%CE%BC%CE%B1
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Σιντάρτα	Σιντάρτα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	Γκαουτάμα	Γκαουτάμα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	1	flat	_	_
 3	-	-	PUNCT	PUNCT	_	4	punct	_	_
-4	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
+4	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -18,19 +16,127 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σιντάρτα Γκαουτάμα
-1	Σιντάρτα	Σιντάρτα	X	X	Foreign=Yes	0	root	_	_
-2	Γκαουτάμα	Γκαουτάμα	X	X	Foreign=Yes	1	flat	_	SpacesAfter=\n
+# text = Ο Σιντάρτα Γκαουτάμα ή Σιντάτα/Σιδάρτα Γκοτάμα (στα σανσκριτικά सिद्धार्थ गौतम Σιντάρτα
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpacesBefore=\s
+2	Σιντάρτα	Σιντάρτα	X	X	Foreign=Yes	0	root	_	_
+3	Γκαουτάμα	Γκαουτάμα	X	X	Foreign=Yes	2	flat	_	_
+4	ή	ή	CCONJ	CCONJ	_	5	cc	_	_
+5	Σιντάτα/Σιδάρτα	Σιντάτα/σιδάρτα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+6	Γκοτάμα	Γκοτάμα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	5	flat	_	_
+7	(	(	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No
+8-9	στα	_	_	_	_	_	_	_	_
+8	σ	σε	ADP	AsPpSp	_	11	case	_	_
+9	τα	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Plur	11	det	_	_
+10	σανσκριτικά	σανσκριτικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	11	amod	_	_
+11	सिद्धार्थ	सिद्धार्थ	X	X	Foreign=Yes	2	conj	_	_
+12	गौतम	गौतम	X	X	Foreign=Yes	11	flat	_	_
+13	Σιντάρτα	Σιντάρτα	X	X	Foreign=Yes	11	flat	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ο Γκαουτάμα, γνωστός και ως Σακιαμούνι που σημαίνει «σοφός (ή άρχοντας) [της φυλής] των Σάκυα» (Σάκυα στη Σανσκριτική, Σάκκα στη γλώσσα Πάλι), αποτελεί κεντρική μορφή του Βουδισμού.
+# sent_id = 2
+# text = Γκαουτάμα, στα παλικά Σιντάτα Γκοτάμα) υπήρξε πνευματικός δάσκαλος από την αρχαία Ινδία και ιστορικός ιδρυτής του Βουδισμού, που γεννήθηκε στο σημερινό Νεπάλ.
+1	Γκαουτάμα	Γκαουτάμα	X	X	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	PUNCT	_	5	punct	_	_
+3-4	στα	_	_	_	_	_	_	_	_
+3	σ	σε	ADP	AsPpSp	_	5	case	_	_
+4	τα	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Plur	5	det	_	_
+5	παλικά	παλικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	1	nmod	_	_
+6	Σιντάτα	Σιντάτα	PROPN	PROPN	Case=Acc|Gender=Neut|Number=Plur	5	flat	_	_
+7	Γκοτάμα	Γκοτάμα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	5	flat	_	SpaceAfter=No
+8	)	)	PUNCT	PUNCT	_	5	punct	_	_
+9	υπήρξε	υπάρχω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	πνευματικός	πνευματικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	11	amod	_	_
+11	δάσκαλος	δάσκαλος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+12	από	από	ADP	ADP	_	15	case	_	_
+13	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	αρχαία	αρχαίος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	15	amod	_	_
+15	Ινδία	Ινδία	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
+16	και	και	CCONJ	CCONJ	_	18	cc	_	_
+17	ιστορικός	ιστορικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	18	amod	_	_
+18	ιδρυτής	ιδρυτή	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	11	conj	_	_
+19	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	Βουδισμού	βουδισμός	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	PUNCT	_	23	punct	_	_
+22	που	που	PRON	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	23	nsubj	_	_
+23	γεννήθηκε	γεννώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	18	acl:relcl	_	_
+24-25	στο	_	_	_	_	_	_	_	_
+24	σ	σε	ADP	AsPpSp	_	27	case	_	_
+25	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	27	det	_	_
+26	σημερινό	σημερινός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	27	amod	_	_
+27	Νεπάλ	Νεπάλ	X	X	Foreign=Yes	23	obl	_	SpaceAfter=No
+28	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+# sent_id = 3
+# text = Αναγνωρίζεται ευρέως από τους βουδιστές ως ο Υπέρτατος Βούδας της εποχής μας.
+1	Αναγνωρίζεται	αναγνωρίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	ευρέως	ευρέως	ADV	ADV	_	1	advmod	_	_
+3	από	από	ADP	ADP	_	5	case	_	_
+4	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	βουδιστές	βουδιστής	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	1	obl:agent	_	_
+6	ως	ως	ADV	ADV	_	9	case	_	_
+7	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	Υπέρτατος	υπέρτατος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	9	amod	_	_
+9	Βούδας	Βούδα	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	1	obl	_	_
+10	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	εποχής	εποχή	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	_
+12	μας	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 4
+# text = Ο χρόνος της γέννησης και του θανάτου του είναι ανεξακρίβωτα·
 1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Γκαουτάμα	Γκαουτάμα	X	X	Foreign=Yes	36	nsubj	_	SpaceAfter=No
+2	χρόνος	χρόνος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+3	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	γέννησης	γέννηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+5	και	και	CCONJ	CCONJ	_	7	cc	_	_
+6	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	θανάτου	θάνατος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	conj	_	_
+8	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod	_	_
+9	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	10	cop	_	_
+10	ανεξακρίβωτα	ανεξακρίβωτα	ADV	ADV	_	0	root	_	SpaceAfter=No
+11	·	·	PUNCT	PUNCT	_	10	punct	_	_
+
+# sent_id = 5
+# text = οι περισσότεροι σύγχρονοι ιστορικοί χρονολογούν τη ζωή του από το 563 ως το 483 ΠΚΕ, αν και έχει προταθεί από άλλους χρονολόγηση κατά έναν αιώνα αργότερα από αυτή.
+1	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+2	περισσότεροι	πολύς	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	4	amod	_	_
+3	σύγχρονοι	σύγχρονος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	4	amod	_	_
+4	ιστορικοί	ιστορικός	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
+5	χρονολογούν	χρονολογώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	ζωή	ζωή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
+8	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod	_	_
+9	από	από	ADP	ADP	_	11	case	_	_
+10	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
+11	563	563	NUM	NUM	NumType=Card	7	nmod	_	SpacesAfter=\s\s
+12	ως	ως	ADV	ADV	_	14	case	_	_
+13	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
+14	483	483	NUM	NUM	NumType=Card	11	nmod	_	_
+15	ΠΚΕ	ΠΚΕ	NOUN	NOUN	Abbr=Yes	14	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PUNCT	_	20	punct	_	_
+17	αν	αν	SCONJ	SCONJ	_	20	mark	_	_
+18	και	και	CCONJ	CCONJ	_	17	fixed	_	_
+19	έχει	έχω	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	προταθεί	προτείνω	VERB	VERB	Aspect=Perf|VerbForm=Inf|Voice=Pass	5	advcl	_	_
+21	από	από	ADP	ADP	_	23	case	_	_
+22	άλλους	άλλος	PRON	PRON	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Ind	23	det	_	_
+23	χρονολόγηση	χρονολόγηση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	20	obl	_	_
+24	κατά	κατά	ADP	ADP	_	26	case	_	_
+25	έναν	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	αιώνα	αιώνας	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	20	obl	_	_
+27	αργότερα	αργά	ADV	ADV	Degree=Cmp	26	advmod	_	_
+28	από	από	ADP	ADP	_	29	case	_	_
+29	αυτή	αυτός	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	27	obl	_	SpaceAfter=No
+30	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = greek-gdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ο Γκαουτάμα, γνωστός και ως Σακιαμούνι που σημαίνει «σοφός (ή άρχοντας) των Σάκυα» (Σάκυα στη Σανσκριτική, Σάκκα στη γλώσσα Πάλι), αποτελεί κεντρική μορφή του Βουδισμού.
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Γκαουτάμα	Γκαουτάμα	X	X	Foreign=Yes	32	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PUNCT	_	4	punct	_	_
 4	γνωστός	γνωστός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
 5	και	και	CCONJ	CCONJ	_	7	cc	_	_
@@ -43,35 +149,31 @@
 12	(	(	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
 13	ή	ή	CCONJ	CCONJ	_	14	cc	_	_
 14	άρχοντας	άρχω	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
-15	)	)	PUNCT	PUNCT	_	14	punct	_	_
-16	[	[	PUNCT	PUNCT	_	18	case	_	SpaceAfter=No
-17	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	φυλής	φυλή	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
-19	]	]	PUNCT	PUNCT	_	18	punct	_	_
-20	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	Σάκυα	Σάκυα	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No
-22	»	»	PUNCT	PUNCT	_	11	punct	_	_
-23	(	(	PUNCT	PUNCT	_	24	punct	_	SpaceAfter=No
-24	Σάκυα	Σάκυα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	11	appos	_	_
-25-26	στη	_	_	_	_	_	_	_	_
-25	σ	σε	ADP	AsPpSp	_	27	case	_	_
-26	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	27	det	_	_
-27	Σανσκριτική	Σανσκριτική	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No
-28	,	,	PUNCT	PUNCT	_	29	punct	_	_
-29	Σάκκα	Σάκκα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	27	conj	_	_
-30-31	στη	_	_	_	_	_	_	_	_
-30	σ	σε	ADP	AsPpSp	_	32	case	_	_
-31	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	32	det	_	_
-32	γλώσσα	γλώσσα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	29	nmod	_	_
-33	Πάλι	Πάλι	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	32	flat	_	SpaceAfter=No
-34	)	)	PUNCT	PUNCT	_	24	punct	_	SpaceAfter=No
-35	,	,	PUNCT	PUNCT	_	36	punct	_	_
-36	αποτελεί	αποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-37	κεντρική	κεντρικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	38	amod	_	_
-38	μορφή	μορφή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	36	obj	_	_
-39	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	Βουδισμού	βουδισμός	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	38	nmod	_	SpaceAfter=No
-41	.	.	PUNCT	PUNCT	_	36	punct	_	_
+15	)	)	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\s\s
+16	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	Σάκυα	Σάκυα	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No
+18	»	»	PUNCT	PUNCT	_	11	punct	_	_
+19	(	(	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+20	Σάκυα	Σάκυα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	11	appos	_	_
+21-22	στη	_	_	_	_	_	_	_	_
+21	σ	σε	ADP	AsPpSp	_	23	case	_	_
+22	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	23	det	_	_
+23	Σανσκριτική	Σανσκριτική	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	PUNCT	_	25	punct	_	_
+25	Σάκκα	Σάκκα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	23	conj	_	_
+26-27	στη	_	_	_	_	_	_	_	_
+26	σ	σε	ADP	AsPpSp	_	28	case	_	_
+27	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	28	det	_	_
+28	γλώσσα	γλώσσα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	25	nmod	_	_
+29	Πάλι	Πάλι	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No
+30	)	)	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+31	,	,	PUNCT	PUNCT	_	32	punct	_	_
+32	αποτελεί	αποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+33	κεντρική	κεντρικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	34	amod	_	_
+34	μορφή	μορφή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	32	obj	_	_
+35	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	Βουδισμού	βουδισμός	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No
+37	.	.	PUNCT	PUNCT	_	32	punct	_	_
 
 # sent_id = 2
 # text = Βιογραφικές αφηγήσεις, ομιλίες και μοναστικοί κανόνες συγκεντρώθηκαν μετά το θάνατό του και απομνημονεύτηκαν από τις σάνγκα, δηλαδή τάγματα βουδιστών μοναχών.
@@ -155,16 +257,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ο ιστορικός Σιντάρτα Γκαουτάμα[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ο ιστορικός Σιντάρτα
 1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	ιστορικός	ιστορικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	3	amod	_	_
-3	Σιντάρτα	Σιντάρτα	X	X	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-4	Γκαουτάμα[	Γκαουτάμα[	X	X	Foreign=Yes	3	flat	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	flat	_	_
-6	|	|	PUNCT	PUNCT	_	8	punct	_	_
-7	επεξεργασία	επεξεργασία	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	appos	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+3	Σιντάρτα	Σιντάρτα	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Γκαουτάμα
+1	Γκαουτάμα	Γκαουτάμα	NOUN	NOUN	Foreign=Yes	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -554,7 +654,138 @@
 20	και	και	CCONJ	CCONJ	_	22	cc	_	_
 21	έναν	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	ασκητή	ασκητής	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	19	conj	_	SpaceAfter=No
-23	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\s\n
+23	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\s\s\n
+
+# sent_id = 3
+# text = Η εμπειρία αυτή τον έκανε να επανεξετάσει την αξία της ζωής, συνειδητοποιώντας τον επώδυνο χαρακτήρα του Είναι (η συνάντηση με τους τρεις πρώτους), αλλά και να μην προσκολληθεί στα πράγματα του κόσμου (η συνάντηση με τον τέταρτο), με αποτέλεσμα να εγκαταλείψει την οικία του και να στραφεί στην αναζήτηση μιας πνευματικού περιεχομένου λύσης για τα προβλήματα του κόσμου και των ανθρώπων.
+1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	εμπειρία	εμπειρία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+3	αυτή	αυτός	PRON	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+4	τον	εγώ	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	έκανε	κάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	να	να	AUX	AUX	_	7	aux	_	_
+7	επανεξετάσει	επανεξετάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	xcomp	_	_
+8	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	αξία	αξία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
+10	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	ζωής	ζωή	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	συνειδητοποιώντας	συνειδητοποιώ	VERB	VERB	Aspect=Imp|VerbForm=Conv|Voice=Act	5	advcl	_	_
+14	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+15	επώδυνο	επώδυνος	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	16	amod	_	_
+16	χαρακτήρα	χαρακτήρας	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	13	obj	_	_
+17	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod	_	_
+18	Είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	21	cop	_	_
+19	(	(	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+20	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	συνάντηση	συνάντηση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	16	appos	_	_
+22	με	με	ADP	ADP	_	25	case	_	_
+23	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+24	τρεις	τρεις	NUM	NUM	Case=Acc|Gender=Masc|Number=Plur|NumType=Card	25	nummod	_	_
+25	πρώτους	πρώτος	NUM	NUM	Case=Acc|Degree=Cmp|Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No
+26	)	)	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+27	,	,	PUNCT	PUNCT	_	32	punct	_	_
+28	αλλά	αλλά	CCONJ	CCONJ	_	32	cc	_	_
+29	και	και	CCONJ	CCONJ	_	32	cc	_	_
+30	να	να	AUX	AUX	_	32	aux	_	_
+31	μην	μην	PART	PART	_	32	advmod	_	_
+32	προσκολληθεί	προσκολάλλω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	7	conj	_	_
+33-34	στα	_	_	_	_	_	_	_	_
+33	σ	σε	ADP	AsPpSp	_	35	case	_	_
+34	τα	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Plur	35	det	_	_
+35	πράγματα	πράγμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	32	obl	_	_
+36	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	κόσμου	κόσμος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	35	nmod	_	_
+38	(	(	PUNCT	PUNCT	_	40	punct	_	SpaceAfter=No
+39	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+40	συνάντηση	συνάντηση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	35	appos	_	_
+41	με	με	ADP	ADP	_	43	case	_	_
+42	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
+43	τέταρτο	τέταρτος	NUM	NUM	Case=Acc|Gender=Masc|Number=Sing	40	nmod	_	SpaceAfter=No
+44	)	)	PUNCT	PUNCT	_	40	punct	_	SpaceAfter=No
+45	,	,	PUNCT	PUNCT	_	47	punct	_	_
+46	με	με	ADP	ADP	_	47	case	_	_
+47	αποτέλεσμα	αποτέλεσμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	32	obl	_	_
+48	να	να	AUX	AUX	_	49	aux	_	_
+49	εγκαταλείψει	εγκαταλείπω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	47	acl	_	_
+50	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
+51	οικία	οικία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	49	obj	_	_
+52	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	51	nmod	_	_
+53	και	και	CCONJ	CCONJ	_	55	cc	_	_
+54	να	να	AUX	AUX	_	55	aux	_	_
+55	στραφεί	στραφώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	49	conj	_	_
+56-57	στην	_	_	_	_	_	_	_	_
+56	σ	σε	ADP	AsPpSp	_	58	case	_	_
+57	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	58	det	_	_
+58	αναζήτηση	αναζήτηση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	55	obl	_	_
+59	μιας	ένας	DET	DET	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	61	det	_	_
+60	πνευματικού	πνευματικός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	61	amod	_	_
+61	περιεχομένου	περιεχόμενο	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	58	nmod	_	_
+62	λύσης	λύση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	61	nmod	_	_
+63	για	για	ADP	ADP	_	65	case	_	_
+64	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	65	det	_	_
+65	προβλήματα	πρόβλημα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	58	nmod	_	_
+66	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	67	det	_	_
+67	κόσμου	κόσμος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	65	nmod	_	_
+68	και	και	CCONJ	CCONJ	_	70	cc	_	_
+69	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	70	det	_	_
+70	ανθρώπων	άνθρωπος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	67	conj	_	SpaceAfter=No
+71	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+# sent_id = 4
+# text = Αυτές οι περίφημες τέσσερις συναντήσεις, απουσιάζουν από το στρώμα των παλαιότερων κειμένων, αργότερα όμως θα αποτελέσουν μόνιμο μοτίβο.
+1	Αυτές	αυτός	PRON	PRON	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Dem	5	det	_	_
+2	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+3	περίφημες	περίφημος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	5	amod	_	_
+4	τέσσερις	τέσσερις	NUM	NUM	Case=Nom|Gender=Fem|Number=Plur|NumType=Card	5	nummod	_	_
+5	συναντήσεις	συνάντηση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	7	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	απουσιάζουν	απουσιάζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	από	από	ADP	ADP	_	10	case	_	_
+9	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	10	det	_	_
+10	στρώμα	στρώμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
+11	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
+12	παλαιότερων	παλαιός	ADJ	ADJ	Case=Gen|Degree=Cmp|Gender=Neut|Number=Plur	13	amod	_	_
+13	κειμένων	κείμενο	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Plur	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PUNCT	_	18	punct	_	_
+15	αργότερα	αργά	ADV	ADV	Degree=Cmp	18	advmod	_	_
+16	όμως	όμως	CCONJ	CCONJ	_	18	cc	_	_
+17	θα	θα	AUX	AUX	_	18	aux	_	_
+18	αποτελέσουν	αποτελώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	7	conj	_	_
+19	μόνιμο	μόνιμος	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	20	amod	_	_
+20	μοτίβο	μοτίβος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No
+21	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+# sent_id = 5
+# text = Οι διαφορετικές παραλλαγές αυτής της διήγησης καθιστούν φανερό ότι δεν ανάγονται σε μια αρχική μορφή αφήγησης, «αλλά αισθητοποιούν μια πνευματική κατάσταση του νεαρού Σιντάρτα».
+1	Οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+2	διαφορετικές	διαφορετικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	3	amod	_	_
+3	παραλλαγές	παραλλαγή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	7	nsubj	_	_
+4	αυτής	αυτός	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Dem	6	det	_	_
+5	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	διήγησης	διήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
+7	καθιστούν	καθιστώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	φανερό	φανερός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	7	xcomp	_	_
+9	ότι	ότι	SCONJ	SCONJ	_	11	mark	_	_
+10	δεν	δεν	PART	PART	_	11	advmod	_	_
+11	ανάγονται	ανάγω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	7	ccomp	_	_
+12	σε	σε	ADP	ADP	_	15	case	_	_
+13	μια	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	αρχική	αρχικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	15	amod	_	_
+15	μορφή	μορφή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	11	obl	_	_
+16	αφήγησης	αφήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	PUNCT	_	20	punct	_	_
+18	«	«	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+19	αλλά	αλλά	CCONJ	CCONJ	_	20	cc	_	_
+20	αισθητοποιούν	αισθητοποιώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	_
+21	μια	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+22	πνευματική	πνευματικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	23	amod	_	_
+23	κατάσταση	κατάσταση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	20	obj	_	_
+24	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+25	νεαρού	νεαρός	ADJ	ADJ	Case=Gen|Gender=Masc|Number=Sing	26	amod	_	_
+26	Σιντάρτα	Σιντάρτα	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
+27	»	»	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No
+28	.	.	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -562,14 +793,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Υποσημειώσεις[Επεξεργασία | επεξεργασία κώδικα]
+# text = Υποσημειώσεις
 1	Υποσημειώσεις	υποσημείωση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -577,14 +802,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Βιβλιογραφία[Επεξεργασία | επεξεργασία κώδικα]
-1	Βιβλιογραφία	βιβλιογραφία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+# text = Βιβλιογραφία
+1	Βιβλιογραφία	Βιβλιογραφία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -592,15 +811,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Βλέπε επίσης[Επεξεργασία | επεξεργασία κώδικα]
+# text = Βλέπε επίσης
 1	Βλέπε	βλέγω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 2	επίσης	επίσης	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	obj	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	nmod	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -608,15 +821,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εξωτερικοί Σύνδεσμοι[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εξωτερικοί Σύνδεσμοι
 1	Εξωτερικοί	εξωτερικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	2	amod	_	_
 2	Σύνδεσμοι	σύνδεσμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -624,19 +831,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σοφές ρήσεις του Βούδα
+# text = Σοφές ρήσεις του Βούδα Αποφθέγματα του Βούδα
 1	Σοφές	σοφή	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	2	amod	_	_
 2	ρήσεις	ρήση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	Βούδα	Βούδα	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Μενού πλοήγησης
-1	Μενού	μενός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	2	amod	_	_
-2	πλοήγησης	πλοήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+5	Αποφθέγματα	αποέλεσμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	2	nmod	_	_
+6	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Βούδα	Βούδα	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	SpacesAfter=\n
 

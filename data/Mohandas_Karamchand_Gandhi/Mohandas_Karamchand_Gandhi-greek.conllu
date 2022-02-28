@@ -1,5 +1,3 @@
-# https://el.wikipedia.org/wiki/%CE%9C%CE%B1%CF%87%CE%AC%CF%84%CE%BC%CE%B1_%CE%93%CE%BA%CE%AC%CE%BD%CF%84%CE%B9
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,17 +8,7 @@
 1	Μαχάτμα	Μαχάτμα	PROPN	PROPN	Foreign=Yes	0	root	_	_
 2	Γκάντι	Γκάντι	X	X	Foreign=Yes	1	flat	_	_
 3	-	-	PUNCT	PUNCT	_	4	punct	_	_
-4	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Μαχάτμα Γκάντι
-1	Μαχάτμα	Μαχάτμα	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	Γκάντι	Γκάντι	X	X	Foreign=Yes	1	flat	_	SpacesAfter=\n
+4	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -252,16 +240,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Τα πρώτα χρόνια[Επεξεργασία | επεξεργασία κώδικα]
+# text = Τα πρώτα χρόνια
 1	Τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	3	det	_	_
 2	πρώτα	πρώτα	NUM	NUM	Case=Nom|Gender=Neut|Number=Plur|NumType=Ord	3	amod	_	_
 3	χρόνια	χρόνος	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-4	[	[	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	appos	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -596,18 +578,222 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Η μετάβαση στο Λονδίνο[Επεξεργασία | επεξεργασία κώδικα]
+# text = Η μετάβαση στο Λονδίνο
 1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	μετάβαση	μετάβαση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3-4	στο	_	_	_	_	_	_	_	_
 3	σ	σε	ADP	AsPpSp	_	5	case	_	_
 4	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	5	det	_	_
-5	Λονδίνο[	Λονδίνο[	PROPN	PROPN	Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
-6	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	nmod	_	_
-7	|	|	PUNCT	PUNCT	_	8	punct	_	_
-8	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	_
-9	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+5	Λονδίνο	Λονδίνος	PROPN	PROPN	Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = greek-gdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Στις 16 Νοεμβρίου 1885 πέθανε ο πατέρας του σε ηλικία 63 ετών.
+1-2	Στις	_	_	_	_	_	_	_	SpacesBefore=\n
+1	Σ	σε	ADP	AsPpSp	_	3	case	_	_
+2	τις	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Plur	3	det	_	_
+3	16	16	NUM	NUM	NumType=Card	6	obl	_	_
+4	Νοεμβρίου	Νοέμβριος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
+5	1885	1885	NUM	NUM	NumType=Card	4	nmod	_	_
+6	πέθανε	πεθαίνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	πατέρας	πατέρας	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+9	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod	_	_
+10	σε	σε	ADP	ADP	_	11	case	_	_
+11	ηλικία	ηλικία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	6	obl	_	_
+12	63	63	NUM	NUM	NumType=Card	13	nummod	_	_
+13	ετών	έτος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Plur	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+# sent_id = 2
+# text = Το 1887 επέτυχε στις εισαγωγικές εξετάσεις και εισήλθε στο Κολλέγιο Σαμάλντας, αλλά οι σπουδές εκεί του φάνηκαν δύσκολες και η ατμόσφαιρα δυσάρεστη ώστε παρακολούθησε μόνο ένα ακαδημαϊκό έτος.
+1	Το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	1887	1887	NOUN	NOUN	_	3	obl	_	_
+3	επέτυχε	επιτυγχάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4-5	στις	_	_	_	_	_	_	_	_
+4	σ	σε	ADP	AsPpSp	_	7	case	_	_
+5	τις	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Plur	7	det	_	_
+6	εισαγωγικές	εισαγωγικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Plur	7	amod	_	_
+7	εξετάσεις	εέμβαση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	3	obl	_	_
+8	και	και	CCONJ	CCONJ	_	9	cc	_	_
+9	εισήλθε	εισέρχομαι	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	3	conj	_	_
+10-11	στο	_	_	_	_	_	_	_	_
+10	σ	σε	ADP	AsPpSp	_	12	case	_	_
+11	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	12	det	_	_
+12	Κολλέγιο	κολλέγιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	9	obl	_	_
+13	Σαμάλντας	Σαμάλντας	PROPN	PROPN	Case=Gen|Gender=Fem|Number=Sing	12	flat	_	SpaceAfter=No
+14	,	,	PUNCT	PUNCT	_	20	punct	_	_
+15	αλλά	αλλά	CCONJ	CCONJ	_	20	cc	_	_
+16	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+17	σπουδές	σπουδή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	20	nsubj:pass	_	_
+18	εκεί	εκεί	ADV	ADV	_	17	advmod	_	_
+19	του	εγώ	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	iobj	_	_
+20	φάνηκαν	φάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	3	conj	_	_
+21	δύσκολες	δύσκολος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	20	xcomp	_	_
+22	και	και	CCONJ	CCONJ	_	25	cc	_	_
+23	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	ατμόσφαιρα	ατμόσφαιρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	20	nsubj:pass	_	_
+25	δυσάρεστη	δυσάρεστος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	20	conj	_	_
+26	ώστε	ώστε	SCONJ	SCONJ	_	27	mark	_	_
+27	παρακολούθησε	παρακολουθώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	advcl	_	_
+28	μόνο	μόνο	ADV	ADV	_	31	advmod	_	_
+29	ένα	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	31	det	_	_
+30	ακαδημαϊκό	ακαδημαϊκός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	31	amod	_	_
+31	έτος	έτος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	27	obj	_	SpaceAfter=No
+32	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 3
+# text = Έτσι εγκατέλειψε το φθηνότερο κολλέγιο που μπορούσε να παρακολουθήσει.
+1	Έτσι	έτσι	ADV	ADV	_	2	advmod	_	_
+2	εγκατέλειψε	εγκαταδεικνύω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+4	φθηνότερο	φτηνός	ADJ	ADJ	Case=Acc|Degree=Cmp|Gender=Neut|Number=Sing	5	amod	_	_
+5	κολλέγιο	κολλέγιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
+6	που	που	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Rel	9	obj	_	_
+7	μπορούσε	μπορώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+8	να	να	AUX	AUX	_	9	aux	_	_
+9	παρακολουθήσει	παρακολουθώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+# sent_id = 4
+# text = Μετά από αυτό ένας οικογενειακός φίλος, ο Μάβτζι Ντάβε Τζοσίτζι, πρότεινε πως εάν ο Μαχάτμα επιθυμούσε να αναλάβει τη θέση του πατέρα του θα ήταν καλό να σπουδάσει νομικά, σπουδές που θα διαρκούσαν τρία χρόνια στο Λονδίνο.
+1	Μετά	μετά	ADV	ADV	_	13	advmod	_	_
+2	από	από	ADP	ADP	_	3	case	_	_
+3	αυτό	αυτός	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Dem	1	obl	_	_
+4	ένας	ένας	DET	DET	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	οικογενειακός	οικογενειακός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	6	amod	_	_
+6	φίλος	φίλος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	PUNCT	_	9	punct	_	_
+8	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Μάβτζι	Μάβτζι	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	6	appos	_	_
+10	Ντάβε	Ντάβε	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	9	flat	_	_
+11	Τζοσίτζι	Τζοσίτζι	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	9	flat	_	SpaceAfter=No
+12	,	,	PUNCT	PUNCT	_	9	punct	_	_
+13	πρότεινε	προτείνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	πως	πως	SCONJ	SCONJ	_	28	mark	_	_
+15	εάν	αν	SCONJ	SCONJ	_	18	mark	_	_
+16	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Μαχάτμα	Μαχάτμα	PROPN	PROPN	Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
+18	επιθυμούσε	επιθυμώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	28	advcl	_	_
+19	να	να	AUX	AUX	_	20	aux	_	_
+20	αναλάβει	αναλαμβάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	18	ccomp	_	_
+21	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	θέση	θέση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	20	obj	_	_
+23	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	πατέρα	πατέρας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	22	nmod	_	_
+25	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod	_	_
+26	θα	θα	AUX	AUX	_	28	aux	_	_
+27	ήταν	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	28	cop	_	_
+28	καλό	καλός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	13	ccomp	_	_
+29	να	να	AUX	AUX	_	30	aux	_	_
+30	σπουδάσει	σπουδάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	28	csubj	_	_
+31	νομικά	νομικά	ADV	ADV	_	30	advmod	_	SpaceAfter=No
+32	,	,	PUNCT	PUNCT	_	33	punct	_	_
+33	σπουδές	σπουδή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	30	appos	_	_
+34	που	που	PRON	PRON	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Rel	36	nsubj	_	_
+35	θα	θα	AUX	AUX	_	36	aux	_	_
+36	διαρκούσαν	διαρκώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	33	acl:relcl	_	_
+37	τρία	τρεις	NUM	NUM	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	38	nummod	_	_
+38	χρόνια	χρόνος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	36	obl	_	_
+39-40	στο	_	_	_	_	_	_	_	_
+39	σ	σε	ADP	AsPpSp	_	41	case	_	_
+40	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	41	det	_	_
+41	Λονδίνο	Λονδίνο	PROPN	PROPN	Case=Acc|Gender=Neut|Number=Sing	36	obl	_	SpaceAfter=No
+42	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+# sent_id = 5
+# text = Έτσι ο νεαρός Γκάντι εκμεταλλευόμενος αυτήν την πρόταση μετέβη στην πρωτεύουσα της τότε Βρετανικής Αυτοκρατορίας στις 4 Σεπτεμβρίου 1888 και εγγράφηκε στο Γιουνιβέρσιτι Κόλετζ του Λονδίνου.
+1	Έτσι	έτσι	ADV	ADV	_	9	advmod	_	_
+2	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	νεαρός	νεαρός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
+4	Γκάντι	Γκάντι	X	X	Foreign=Yes	9	nsubj	_	_
+5	εκμεταλλευόμενος	εκμεταλλευόμενος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
+6	αυτήν	αυτός	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	8	det	_	_
+7	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	πρόταση	πρόταση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	9	obj	_	_
+9	μετέβη	μεταβαίνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10-11	στην	_	_	_	_	_	_	_	_
+10	σ	σε	ADP	AsPpSp	_	12	case	_	_
+11	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	12	det	_	_
+12	πρωτεύουσα	πρωτεύουσα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
+13	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+14	τότε	τότε	ADV	ADV	_	15	advmod	_	_
+15	Βρετανικής	βρετανικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	16	amod	_	_
+16	Αυτοκρατορίας	αυτοκρατορία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	_
+17-18	στις	_	_	_	_	_	_	_	_
+17	σ	σε	ADP	AsPpSp	_	19	case	_	_
+18	τις	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Plur	19	det	_	_
+19	4	4	NUM	NUM	NumType=Card	9	obl	_	_
+20	Σεπτεμβρίου	Σεπτέμβριος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	19	nmod	_	_
+21	1888	1888	NUM	NUM	NumType=Card	20	nmod	_	_
+22	και	και	CCONJ	CCONJ	_	23	cc	_	_
+23	εγγράφηκε	εγγράομαι	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	9	conj	_	_
+24-25	στο	_	_	_	_	_	_	_	_
+24	σ	σε	ADP	AsPpSp	_	26	case	_	_
+25	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	26	det	_	_
+26	Γιουνιβέρσιτι	Γιουνιβέρσιτι	X	X	Foreign=Yes	23	obl	_	_
+27	Κόλετζ	Κόλετζ	X	X	Foreign=Yes	26	flat	_	_
+28	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	29	det	_	_
+29	Λονδίνου	Λονδίνο	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+# sent_id = 6
+# text = Ο Γκάντι φανταζόταν την Αγγλία σαν το κέντρο του πολιτισμού, χώρα φιλοσόφων και ποιητών.
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Γκάντι	Γκάντι	X	X	Foreign=Yes	3	nsubj	_	_
+3	φανταζόταν	φαντάζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Αγγλία	Αγγλία	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	3	obj	_	_
+6	σαν	σαν	ADV	ADV	_	8	case	_	_
+7	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
+8	κέντρο	κέντρο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
+9	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	πολιτισμού	πολιτισμός	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	χώρα	χώρα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	_
+13	φιλοσόφων	φιλοσόφος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	_
+14	και	και	CCONJ	CCONJ	_	15	cc	_	_
+15	ποιητών	ποιίτης	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	13	conj	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+# sent_id = 7
+# text = Η φανταστική του εικόνα όμως υπεχώρησε όταν βρέθηκε αντιμέτωπος με τον χλευασμό συμφοιτητών για τις ιδιαίτερες πολιτισμικές του συνήθειες ενώ συνάμα δυσκολευόταν να προσαρμοστεί προς τον δυτικό τρόπο ένδυσης και συμπεριφοράς.
+1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+2	φανταστική	φανταστικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	4	amod	_	_
+3	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod	_	_
+4	εικόνα	εικόνα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+5	όμως	όμως	CCONJ	CCONJ	_	6	advmod	_	_
+6	υπεχώρησε	υπεχωρώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	όταν	όταν	SCONJ	SCONJ	_	8	mark	_	_
+8	βρέθηκε	βρίσκω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	6	advcl	_	_
+9	αντιμέτωπος	αντιμέτωπος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	8	xcomp	_	_
+10	με	με	ADP	ADP	_	12	case	_	_
+11	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	χλευασμό	χλευασμός	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	8	obl	_	_
+13	συμφοιτητών	συμφοιτητής	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	_
+14	για	για	ADP	ADP	_	19	case	_	_
+15	τις	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+16	ιδιαίτερες	ιδιαίτερος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Plur	19	amod	_	_
+17	πολιτισμικές	πολιτισμικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Plur	19	amod	_	_
+18	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	nmod	_	_
+19	συνήθειες	συνήθεια	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	12	nmod	_	_
+20	ενώ	ενώ	SCONJ	SCONJ	_	22	mark	_	_
+21	συνάμα	συνάμα	ADV	ADV	_	22	advmod	_	_
+22	δυσκολευόταν	δυσκολίνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	8	advcl	_	_
+23	να	να	AUX	AUX	_	24	aux	_	_
+24	προσαρμοστεί	προσαρμοστώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	22	xcomp	_	_
+25	προς	προς	ADP	ADP	_	28	case	_	_
+26	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+27	δυτικό	δυτικός	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	28	amod	_	_
+28	τρόπο	τρόπος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	24	obl	_	_
+29	ένδυσης	ένδυση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	28	nmod	_	_
+30	και	και	CCONJ	CCONJ	_	31	cc	_	_
+31	συμπεριφοράς	συμπεριφορά	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	29	conj	_	SpaceAfter=No
+32	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -852,17 +1038,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Επιστροφή στην Ινδία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Επιστροφή στην Ινδία
 1	Επιστροφή	επιστροφή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2-3	στην	_	_	_	_	_	_	_	_
 2	σ	σε	ADP	AsPpSp	_	4	case	_	_
 3	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	4	det	_	_
-4	Ινδία[	Ινδία[	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+4	Ινδία	Ινδία	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1125,16 +1306,217 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Κατά του απαρτχάιντ[Επεξεργασία | επεξεργασία κώδικα]
+# text = Κατά του απαρτχάιντ
 1	Κατά	κατά	ADP	ADP	_	3	case	_	_
-2	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
 3	απαρτχάιντ	απαρτχάιντ	X	X	Foreign=Yes	0	root	_	SpaceAfter=No
-4	[	[	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	flat	_	_
-6	|	|	PUNCT	PUNCT	_	7	punct	_	_
-7	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = greek-gdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Φτάνοντας στη Νότια Αφρική βρέθηκε αντιμέτωπος με τον φυλετικό διαχωρισμό του απαρτχάιντ, ο οποίος εκδηλωνόταν από τους λευκούς εποίκους εις βάρος των ντόπιων έγχρωμων και των Ινδών μεταναστών.
+1	Φτάνοντας	φτάνω	VERB	VERB	Aspect=Imp|VerbForm=Conv|Voice=Act	6	advcl	_	SpacesBefore=\n
+2-3	στη	_	_	_	_	_	_	_	_
+2	σ	σε	ADP	AsPpSp	_	5	case	_	_
+3	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	5	det	_	_
+4	Νότια	νότιος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	5	amod	_	_
+5	Αφρική	Αφρική	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	1	obl	_	_
+6	βρέθηκε	βρίσκω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	αντιμέτωπος	αντιμέτωπος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	6	xcomp	_	_
+8	με	με	ADP	ADP	_	11	case	_	_
+9	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	φυλετικό	φυλετικός	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	11	amod	_	_
+11	διαχωρισμό	διαχωρισμός	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	6	obl	_	_
+12	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
+13	απαρτχάιντ	απαρτχάιντ	X	X	Foreign=Yes	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PUNCT	_	17	punct	_	_
+15	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	οποίος	οποίος	PRON	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	17	nsubj:pass	_	_
+17	εκδηλωνόταν	εκδηλίνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	11	acl:relcl	_	_
+18	από	από	ADP	ADP	_	21	case	_	_
+19	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+20	λευκούς	λευκός	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Plur	21	amod	_	_
+21	εποίκους	άποικος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	17	obl:agent	_	_
+22	εις	εις	ADP	ADP	_	23	case	_	_
+23	βάρος	βάρος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	17	obl	_	_
+24	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
+25	ντόπιων	ντόπιος	ADJ	ADJ	Case=Gen|Gender=Masc|Number=Plur	26	amod	_	_
+26	έγχρωμων	έγχρωμος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	23	nmod	_	_
+27	και	και	CCONJ	CCONJ	_	30	cc	_	_
+28	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
+29	Ινδών	ινδός	ADJ	ADJ	Case=Gen|Gender=Masc|Number=Plur	30	amod	_	_
+30	μεταναστών	μεταναστής	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	26	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+# sent_id = 2
+# text = Ο ίδιος ο Γκάντι εκδιώχθηκε από την αίθουσα του δικαστηρίου επειδή αρνούταν να βγάλει το παραδοσιακό ινδικό τουρμπάνι ενώ ακόμη μία φορά δέχθηκε βία από τον οδηγό ταχυδρομικής άμαξας λόγω του ότι αρνήθηκε να παραχωρήσει τη θέση του σε κάποιον Ευρωπαίο επιβάτη.
+1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+2	ίδιος	ίδιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
+3	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Γκάντι	Γκάντι	X	X	Foreign=Yes	5	nsubj:pass	_	_
+5	εκδιώχθηκε	εκδιώχνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	από	από	ADP	ADP	_	8	case	_	_
+7	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	αίθουσα	αίθουσα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	5	obl:agent	_	_
+9	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	10	det	_	_
+10	δικαστηρίου	δικαστήριο	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
+11	επειδή	επειδή	SCONJ	SCONJ	_	12	mark	_	_
+12	αρνούταν	αρνομαι	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	_
+13	να	να	AUX	AUX	_	14	aux	_	_
+14	βγάλει	βγάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	xcomp	_	_
+15	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	18	det	_	_
+16	παραδοσιακό	παραδοσιακός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	18	amod	_	_
+17	ινδικό	ινδικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	18	amod	_	_
+18	τουρμπάνι	τουρμπάνι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	14	obj	_	_
+19	ενώ	ενώ	SCONJ	SCONJ	_	23	mark	_	_
+20	ακόμη	ακόμα	ADV	ADV	_	22	advmod	_	_
+21	μία	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	φορά	φορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	23	obl	_	_
+23	δέχθηκε	δέχομαι	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	5	advcl	_	_
+24	βία	βία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	23	obj	_	_
+25	από	από	ADP	ADP	_	27	case	_	_
+26	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	οδηγό	οδηγός	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	23	obl	_	_
+28	ταχυδρομικής	ταχυδρομικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	29	amod	_	_
+29	άμαξας	άμαξα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	27	nmod	_	_
+30	λόγω	λόγω	ADP	ADP	_	33	case	_	_
+31	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	33	det	_	_
+32	ότι	ότι	SCONJ	SCONJ	_	33	mark	_	_
+33	αρνήθηκε	αρνιέμαι	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	23	advcl	_	_
+34	να	να	AUX	AUX	_	35	aux	_	_
+35	παραχωρήσει	παραχωρώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	33	xcomp	_	_
+36	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	θέση	θέση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	35	obj	_	_
+38	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	nmod	_	_
+39	σε	σε	ADP	ADP	_	42	case	_	_
+40	κάποιον	κάποιος	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Ind	42	det	_	_
+41	Ευρωπαίο	Ευρωπαίος	PROPN	PROPN	Case=Acc|Gender=Masc|Number=Sing	42	nmod	_	_
+42	επιβάτη	επιβάτης	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	35	obl	_	SpaceAfter=No
+43	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+# sent_id = 3
+# text = Αυτή η κατάσταση τον οδήγησε να δραστηριοποιηθεί πολιτικά, υπερασπιζόμενος τα ανθρώπινα δικαιώματα των συμπατριωτών του.
+1	Αυτή	αυτός	PRON	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Dem	3	det	_	_
+2	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	κατάσταση	κατάσταση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+4	τον	εγώ	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	οδήγησε	οδηγώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	να	να	AUX	AUX	_	7	aux	_	_
+7	δραστηριοποιηθεί	δραστηριοποιώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	5	xcomp	_	_
+8	πολιτικά	πολιτικά	ADV	ADV	_	7	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	υπερασπιζόμενος	υπερασπιζόμενος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	7	advcl	_	_
+11	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
+12	ανθρώπινα	ανθρώπινος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	13	amod	_	_
+13	δικαιώματα	δικαίωμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	10	obj	_	_
+14	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+15	συμπατριωτών	συμπατριωτής	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	13	nmod	_	_
+16	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = greek-gdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Κατά την εικοσάχρονη παραμονή στη Ν. Αφρική φυλακίστηκε πολλές φορές για τους αγώνες του.
+1	Κατά	κατά	ADP	ADP	_	4	case	_	SpacesBefore=\n
+2	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	εικοσάχρονη	εικοσάχρονος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	4	amod	_	_
+4	παραμονή	παραμονή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
+5-6	στη	_	_	_	_	_	_	_	_
+5	σ	σε	ADP	AsPpSp	_	8	case	_	_
+6	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	8	det	_	_
+7	Ν.	Ν.	NOUN	NOUN	_	8	amod	_	_
+8	Αφρική	Αφρική	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	4	nmod	_	_
+9	φυλακίστηκε	φυλακίζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+10	πολλές	πολύς	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Plur	11	amod	_	_
+11	φορές	φορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	9	obl	_	_
+12	για	για	ADP	ADP	_	14	case	_	_
+13	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	αγώνες	αγώνας	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	9	obl	_	_
+15	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+# sent_id = 2
+# text = Εκεί πρώτη φορά ξεκίνησε να διδάσκει την τακτική της παθητικής αντίστασης, μιας μεθόδου με σαφείς αναφορές στη σκέψη του κορυφαίου Ρώσου συγγραφέα Λέοντα Τολστόι.
+1	Εκεί	εκεί	ADV	ADV	_	3	advmod	_	_
+2	πρώτη	πρώτος	NUM	NUM	Case=Acc|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
+3	φορά	φορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	obl	_	_
+4	ξεκίνησε	ξεκινώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	να	να	AUX	AUX	_	6	aux	_	_
+6	διδάσκει	διδάσκω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	xcomp	_	_
+7	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	τακτική	τακτικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	6	obj	_	_
+9	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	παθητικής	παθητικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	11	amod	_	_
+11	αντίστασης	αντίσταση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PUNCT	_	14	punct	_	_
+13	μιας	ένας	DET	DET	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	μεθόδου	μεθόδου	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	8	appos	_	_
+15	με	με	ADP	ADP	_	17	case	_	_
+16	σαφείς	σαφής	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Plur	17	amod	_	_
+17	αναφορές	αναφορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	14	nmod	_	_
+18-19	στη	_	_	_	_	_	_	_	_
+18	σ	σε	ADP	AsPpSp	_	20	case	_	_
+19	τη	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	20	det	_	_
+20	σκέψη	σκέψη	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	14	nmod	_	_
+21	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+22	κορυφαίου	κορυφαίος	ADJ	ADJ	Case=Gen|Gender=Masc|Number=Sing	24	amod	_	_
+23	Ρώσου	Ρώσος	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	24	nmod	_	_
+24	συγγραφέα	συγγραφέα	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
+25	Λέοντα	Λέοντας	PROPN	PROPN	Foreign=Yes	24	flat	_	_
+26	Τολστόι	Τολστόι	PROPN	PROPN	Foreign=Yes	24	flat	_	SpaceAfter=No
+27	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+# sent_id = 3
+# text = Στην άρνηση για τη χρήση βίας έναντι των καταπιεστών επηρεάστηκε, όπως ο ίδιος έλεγε, από τη διδασκαλία του Ιησού Χριστού και τον Αμερικανό συγγραφέα Χένρι Θορό, ο οποίος είχε γράψει ένα δοκίμιο για την πολιτική ανυπακοή.
+1-2	Στην	_	_	_	_	_	_	_	_
+1	Σ	σε	ADP	AsPpSp	_	3	case	_	_
+2	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	3	det	_	_
+3	άρνηση	άρνηση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	11	obl	_	_
+4	για	για	ADP	ADP	_	6	case	_	_
+5	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	χρήση	χρήση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	3	nmod	_	_
+7	βίας	βία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
+8	έναντι	έναντι	ADP	ADP	_	10	case	_	_
+9	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	καταπιεστών	καταπιεστής	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+11	επηρεάστηκε	επηρεάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+12	,	,	PUNCT	PUNCT	_	16	punct	_	_
+13	όπως	όπως	ADV	ADV	_	16	advmod	_	_
+14	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	ίδιος	ίδιος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
+16	έλεγε	λέγω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	PUNCT	_	16	punct	_	_
+18	από	από	ADP	ADP	_	20	case	_	_
+19	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	διδασκαλία	διδασκαλία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	11	obl:agent	_	_
+21	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Ιησού	Ιησός	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
+23	Χριστού	χριστός	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Sing	22	flat	_	_
+24	και	και	CCONJ	CCONJ	_	27	cc	_	_
+25	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+26	Αμερικανό	Αμερικανός	PROPN	PROPN	Case=Acc|Gender=Masc|Number=Sing	27	nmod	_	_
+27	συγγραφέα	συγγραφέα	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	20	conj	_	_
+28	Χένρι	Χένρι	PROPN	PROPN	Case=Acc|Gender=Masc|Number=Sing	27	flat	_	_
+29	Θορό	θορός	PROPN	PROPN	Case=Acc|Gender=Masc|Number=Sing	27	flat	_	SpaceAfter=No
+30	,	,	PUNCT	PUNCT	_	34	punct	_	_
+31	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	οποίος	οποίος	PRON	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Rel	34	nsubj	_	_
+33	είχε	έχω	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	34	aux	_	_
+34	γράψει	γράπτω	VERB	VERB	Aspect=Perf|VerbForm=Inf|Voice=Act	27	acl:relcl	_	_
+35	ένα	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	36	det	_	_
+36	δοκίμιο	δοκίμιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	34	obj	_	_
+37	για	για	ADP	ADP	_	40	case	_	_
+38	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+39	πολιτική	πολιτικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	40	amod	_	_
+40	ανυπακοή	ανυπακοή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	36	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1277,18 +1659,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Πορεία προς την ινδική ανεξαρτησία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Πορεία προς την ινδική ανεξαρτησία
 1	Πορεία	πορεία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	προς	προς	ADP	ADP	_	5	case	_	_
 3	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 4	ινδική	ινδικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	5	amod	_	_
 5	ανεξαρτησία	ανεξαρτησία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-6	[	[	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No
-7	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	conj	_	_
-10	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-11	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1647,14 +2023,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Θάνατος[Επεξεργασία | επεξεργασία κώδικα]
+# text = Θάνατος
 1	Θάνατος	θάνατος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1692,14 +2062,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Πηγές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Πηγές
 1	Πηγές	πηγή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	6	punct	_	_
-5	επεξεργασία	επεξεργασία	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1707,15 +2071,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εξωτερικοί σύνδεσμοι[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εξωτερικοί σύνδεσμοι
 1	Εξωτερικοί	εξωτερικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	2	amod	_	_
 2	σύνδεσμοι	σύνδεσμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1741,22 +2099,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Παραπομπές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Παραπομπές
 1	Παραπομπές	παραπομπή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Μενού πλοήγησης
-1	Μενού	μενός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	2	amod	_	_
-2	πλοήγησης	πλοήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 

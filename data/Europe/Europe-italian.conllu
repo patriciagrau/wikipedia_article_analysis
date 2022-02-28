@@ -1,5 +1,3 @@
-# https://it.wikipedia.org/wiki/Europa
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Europa - Wikipedia
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	-	-	PUNCT	FF	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Europa
-1	Europa	Europa	PROPN	SP	_	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -199,14 +188,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etimologia[modifica | modifica wikitesto]
+# text = Etimologia
 1	Etimologia	etimologia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -373,6 +356,46 @@
 4	e	e	CCONJ	CC	_	5	cc	_	_
 5	Radamanto	Radamanto	PROPN	SP	_	1	conj	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = Minosse divenne re di Creta e diede vita alla civiltà cretese.
+1	Minosse	Minosse	PROPN	SP	_	2	nsubj	_	_
+2	divenne	divenire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	re	re	NOUN	S	Gender=Masc	2	xcomp	_	_
+4	di	di	ADP	E	_	5	case	_	_
+5	Creta	Creta	PROPN	SP	_	3	nmod	_	_
+6	e	e	CCONJ	CC	_	7	cc	_	_
+7	diede	dare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+8	vita	vita	NOUN	S	Gender=Fem|Number=Sing	7	obj	_	_
+9-10	alla	_	_	_	_	_	_	_	_
+9	a	a	ADP	E	_	11	case	_	_
+10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	civiltà	civiltà	NOUN	S	Gender=Fem	7	obl	_	_
+12	cretese	cretese	ADJ	A	Number=Sing	11	amod	_	SpaceAfter=No
+13	.	.	PUNCT	FS	_	2	punct	_	_
+
+# sent_id = 10
+# text = Il nome Europa, da quel momento, indicò le terre poste a nord del Mar Mediterraneo.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	nome	nome	NOUN	S	Gender=Masc|Number=Sing	9	nsubj	_	_
+3	Europa	Europa	PROPN	SP	_	2	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	2	punct	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	quel	quello	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
+7	momento	momento	NOUN	S	Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	7	punct	_	_
+9	indicò	indicare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+11	terre	terra	NOUN	S	Gender=Fem|Number=Plur	9	obj	_	_
+12	poste	porre	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_
+13	a	a	ADP	E	_	14	case	_	_
+14	nord	nord	NOUN	S	Gender=Masc|Number=Sing	12	obl	_	_
+15-16	del	_	_	_	_	_	_	_	_
+15	di	di	ADP	E	_	17	case	_	_
+16	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Mar	Mar	NOUN	S	Gender=Masc|Number=Sing	14	nmod	_	_
+18	Mediterraneo	mediterraneo	ADJ	A	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No
+19	.	.	PUNCT	FS	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -652,38 +675,192 @@
 27	.	.	PUNCT	FS	_	11	punct	_	_
 
 # sent_id = 2
-# text = Se per Teopompo "[...]Filippo[...]deve regnare su tutta l'Europa", per Alessandro l'Europa diventa un'appendice dell'Asia.
-1	Se	se	SCONJ	CS	_	13	mark	_	_
+# text = Se per Teopompo "Filippodeve regnare su tutta l'Europa", per Alessandro l'Europa diventa un'appendice dell'Asia.
+1	Se	se	SCONJ	CS	_	5	mark	_	_
 2	per	per	ADP	E	_	3	case	_	_
-3	Teopompo	Teopompo	PROPN	SP	_	13	obl	_	_
-4	"	"	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-6	...	...	PUNCT	FF	_	8	punct	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-8	Filippo	Filippo	PROPN	SP	_	13	nsubj	_	SpaceAfter=No
-9	[	[	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-10	...	...	PUNCT	FF	_	8	punct	_	SpaceAfter=No
-11	]	]	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-12	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-13	regnare	regnare	VERB	V	VerbForm=Inf	24	advcl	_	_
-14	su	su	ADP	E	_	17	case	_	_
-15	tutta	tutto	DET	T	Gender=Fem|Number=Sing|PronType=Tot	17	det:predet	_	_
-16	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No
-17	Europa	Europa	PROPN	SP	_	13	obl	_	SpaceAfter=No
-18	"	"	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-19	,	,	PUNCT	FF	_	13	punct	_	_
-20	per	per	ADP	E	_	21	case	_	_
-21	Alessandro	Alessandro	PROPN	SP	_	24	obl	_	_
-22	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No
-23	Europa	Europa	PROPN	SP	_	24	nsubj	_	_
-24	diventa	diventare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-25	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
-26	appendice	appendice	NOUN	S	Gender=Fem|Number=Sing	24	xcomp	_	_
-27-28	dell'	_	_	_	_	_	_	_	SpaceAfter=No
-27	di	di	ADP	E	_	29	case	_	_
-28	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	29	det	_	_
-29	Asia	Asia	PROPN	SP	_	26	nmod	_	SpaceAfter=No
-30	.	.	PUNCT	FS	_	24	punct	_	SpacesAfter=\s\n
+3	Teopompo	Teopompo	PROPN	SP	_	5	obl	_	_
+4	"	"	PUNCT	FB	_	5	punct	_	SpaceAfter=No
+5	Filippodeve	Filippodeve	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	_	_
+6	regnare	regnare	VERB	V	VerbForm=Inf	5	ccomp	_	_
+7	su	su	ADP	E	_	10	case	_	_
+8	tutta	tutto	DET	T	Gender=Fem|Number=Sing|PronType=Tot	10	det:predet	_	_
+9	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No
+10	Europa	Europa	PROPN	SP	_	6	obl	_	SpaceAfter=No
+11	"	"	PUNCT	FB	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	5	punct	_	_
+13	per	per	ADP	E	_	14	case	_	_
+14	Alessandro	Alessandro	PROPN	SP	_	17	obl	_	_
+15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No
+16	Europa	Europa	PROPN	SP	_	17	nsubj	_	_
+17	diventa	diventare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No
+19	appendice	appendice	NOUN	S	Gender=Fem|Number=Sing	17	xcomp	_	_
+20-21	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+20	di	di	ADP	E	_	22	case	_	_
+21	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	22	det	_	_
+22	Asia	Asia	PROPN	SP	_	19	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	FS	_	17	punct	_	SpacesAfter=\s\n
+
+# sent_id = 3
+# text = Per Strabone l'Europa di Teopompo è definita dai due mari Adriatico e Ponto:
+1	Per	per	ADP	E	_	2	case	_	_
+2	Strabone	Strabone	PROPN	SP	_	8	obl	_	_
+3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No
+4	Europa	Europa	PROPN	SP	_	8	nsubj:pass	_	_
+5	di	di	ADP	E	_	6	case	_	_
+6	Teopompo	Teopompo	PROPN	SP	_	4	nmod	_	_
+7	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+8	definita	definire	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+9-10	dai	_	_	_	_	_	_	_	_
+9	da	da	ADP	E	_	12	case	_	_
+10	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+11	due	due	NUM	N	NumType=Card	12	nummod	_	_
+12	mari	mare	NOUN	S	Gender=Masc|Number=Plur	8	obl:agent	_	_
+13	Adriatico	Adriatico	PROPN	SP	_	12	nmod	_	_
+14	e	e	CCONJ	CC	_	15	cc	_	_
+15	Ponto	Ponto	PROPN	SP	_	13	conj	_	SpaceAfter=No
+16	:	:	PUNCT	FC	_	8	punct	_	_
+
+# sent_id = 4
+# text = "essa si trova a meridione dell'Istro ed è circondata dal mare.
+1	"	"	PUNCT	FB	_	4	punct	_	SpaceAfter=No
+2	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	4	expl	_	_
+4	trova	trovare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	E	_	6	case	_	_
+6	meridione	meridione	NOUN	S	Gender=Masc|Number=Sing	4	obl	_	_
+7-8	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+7	di	di	ADP	E	_	9	case	_	_
+8	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	Istro	Istro	PROPN	SP	_	6	nmod	_	_
+10	ed	e	CCONJ	CC	_	12	cc	_	_
+11	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_
+12	circondata	circondare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_
+13-14	dal	_	_	_	_	_	_	_	_
+13	da	da	ADP	E	_	15	case	_	_
+14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	mare	mare	NOUN	S	Gender=Masc|Number=Sing	12	obl:agent	_	SpaceAfter=No
+16	.	.	PUNCT	FS	_	4	punct	_	_
+
+# sent_id = 5
+# text = Inizia nella parte più interna dell'Adriatico e si estende fin quello pontico".
+1	Inizia	iniziare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2-3	nella	_	_	_	_	_	_	_	_
+2	in	in	ADP	E	_	4	case	_	_
+3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	parte	parte	NOUN	S	Gender=Fem|Number=Sing	1	obl	_	_
+5	più	più	ADV	B	_	6	advmod	_	_
+6	interna	interno	ADJ	A	Gender=Fem|Number=Sing	4	amod	_	_
+7-8	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+7	di	di	ADP	E	_	9	case	_	_
+8	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	Adriatico	Adriatico	PROPN	SP	_	4	nmod	_	_
+10	e	e	CCONJ	CC	_	12	cc	_	_
+11	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	12	expl	_	_
+12	estende	estendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	SpacesAfter=\s\s
+13	fin	fino	ADP	E	_	14	case	_	_
+14	quello	quello	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	12	obl	_	_
+15	pontico	pontico	ADJ	A	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
+16	"	"	PUNCT	FB	_	15	punct	_	SpaceAfter=No
+17	.	.	PUNCT	FS	_	1	punct	_	_
+
+# sent_id = 6
+# text = Ancora, Livio racconta che Filippo "era stato preso dalla smania di salire fino alla vetta del monte Emo, credendo alla comune diceria che da essa il panorama si slargasse dal Ponto all'Adriatico, dal Danubio alle Alpi":
+1	Ancora	ancora	ADV	B	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	FF	_	1	punct	_	_
+3	Livio	Livio	PROPN	SP	_	4	nsubj	_	_
+4	racconta	raccontare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	che	che	SCONJ	CS	_	10	mark	_	_
+6	Filippo	Filippo	PROPN	SP	_	10	nsubj:pass	_	_
+7	"	"	PUNCT	FB	_	10	punct	_	SpaceAfter=No
+8	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux	_	_
+9	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	aux:pass	_	_
+10	preso	prendere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	ccomp	_	_
+11-12	dalla	_	_	_	_	_	_	_	_
+11	da	da	ADP	E	_	13	case	_	_
+12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	smania	smania	NOUN	S	Gender=Fem|Number=Sing	10	obl:agent	_	_
+14	di	di	ADP	E	_	15	mark	_	_
+15	salire	salire	VERB	V	VerbForm=Inf	10	xcomp	_	_
+16	fino	fino	ADV	B	_	19	case	_	_
+17-18	alla	_	_	_	_	_	_	_	_
+17	a	a	ADP	E	_	16	fixed	_	_
+18	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	vetta	vetta	NOUN	S	Gender=Fem|Number=Sing	15	obl	_	_
+20-21	del	_	_	_	_	_	_	_	_
+20	di	di	ADP	E	_	22	case	_	_
+21	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	monte	monte	NOUN	S	Gender=Masc|Number=Sing	19	nmod	_	_
+23	Emo	Emo	PROPN	SP	_	22	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	FF	_	15	punct	_	_
+25	credendo	credere	VERB	V	VerbForm=Ger	15	advcl	_	_
+26-27	alla	_	_	_	_	_	_	_	_
+26	a	a	ADP	E	_	29	case	_	_
+27	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+28	comune	comune	ADJ	A	Number=Sing	25	obl	_	_
+29	diceria	diceria	NOUN	S	Gender=Fem|Number=Sing	25	obj	_	_
+30	che	che	SCONJ	CS	_	36	mark	_	_
+31	da	da	ADP	E	_	32	case	_	_
+32	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	36	obl	_	_
+33	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	panorama	panorama	NOUN	S	Gender=Masc|Number=Sing	36	nsubj	_	_
+35	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	36	expl	_	_
+36	slargasse	slargare	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	29	acl	_	_
+37-38	dal	_	_	_	_	_	_	_	_
+37	da	da	ADP	E	_	39	case	_	_
+38	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
+39	Ponto	Ponto	PROPN	SP	_	36	obl	_	_
+40-41	all'	_	_	_	_	_	_	_	SpaceAfter=No
+40	a	a	ADP	E	_	42	case	_	_
+41	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	42	det	_	_
+42	Adriatico	Adriatico	PROPN	SP	_	36	obl	_	SpaceAfter=No
+43	,	,	PUNCT	FF	_	46	punct	_	_
+44-45	dal	_	_	_	_	_	_	_	_
+44	da	da	ADP	E	_	46	case	_	_
+45	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
+46	Danubio	Danubio	PROPN	SP	_	42	conj	_	_
+47-48	alle	_	_	_	_	_	_	_	_
+47	a	a	ADP	E	_	49	case	_	_
+48	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_
+49	Alpi	Alpi	PROPN	SP	_	36	obl	_	SpaceAfter=No
+50	"	"	PUNCT	FB	_	10	punct	_	SpaceAfter=No
+51	:	:	PUNCT	FC	_	4	punct	_	_
+
+# sent_id = 7
+# text = è lo stesso monte che salirà Filippo V cento anni dopo la morte del grande Filippo, dal quale osservò l'ideale orizzonte delle sue conquiste.
+1	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+2	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	4	amod	_	_
+4	monte	monte	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+5	che	che	PRON	PR	PronType=Rel	6	obj	_	_
+6	salirà	salire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	acl:relcl	_	_
+7	Filippo	Filippo	PROPN	SP	_	6	nsubj	_	_
+8	V	V	PROPN	NO	Number=Sing|NumType=Ord	7	flat:name	_	_
+9	cento	cento	NUM	N	NumType=Card	10	nummod	_	_
+10	anni	anno	NOUN	S	Gender=Masc|Number=Plur	6	obl	_	_
+11	dopo	dopo	ADP	E	_	13	case	_	_
+12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	morte	morte	NOUN	S	Gender=Fem|Number=Sing	10	nmod	_	_
+14-15	del	_	_	_	_	_	_	_	_
+14	di	di	ADP	E	_	17	case	_	_
+15	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+16	grande	grande	ADJ	A	Number=Sing	17	amod	_	_
+17	Filippo	Filippo	PROPN	SP	_	13	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	FF	_	17	punct	_	_
+19-20	dal	_	_	_	_	_	_	_	_
+19	da	da	ADP	E	_	21	case	_	_
+20	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	quale	quale	PRON	PR	Number=Sing|PronType=Rel	22	obl	_	_
+22	osservò	osservare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	_	_
+23	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No
+24	ideale	ideale	ADJ	A	Number=Sing	25	amod	_	_
+25	orizzonte	orizzonte	NOUN	S	Gender=Masc|Number=Sing	22	obj	_	_
+26-27	delle	_	_	_	_	_	_	_	_
+26	di	di	ADP	E	_	29	case	_	_
+27	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
+28	sue	suo	DET	AP	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	29	det:poss	_	_
+29	conquiste	conquista	NOUN	S	Gender=Fem|Number=Plur	25	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -774,6 +951,106 @@
 49	Gregorio	Gregorio	PROPN	SP	_	48	nmod	_	_
 50	Magno	Magno	PROPN	SP	_	49	flat:name	_	_
 51	.	.	PUNCT	FS	_	12	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Anche il monaco Isidoro Pacensis usò il termine per indicare i soldati che sotto la guida di Carlo Martello avevano combattuto a Poitiers (prospiciunt Europenses Arabum tentoria, nescientes cuncta esse pervacua).
+1	Anche	anche	ADV	B	_	3	advmod	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	monaco	monaco	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+4	Isidoro	Isidoro	PROPN	SP	_	3	nmod	_	_
+5	Pacensis	Pacensis	PROPN	SP	_	4	flat:name	_	_
+6	usò	usare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	termine	termine	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	_
+9	per	per	ADP	E	_	10	mark	_	_
+10	indicare	indicare	VERB	V	VerbForm=Inf	6	advcl	_	_
+11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	soldati	soldato	NOUN	S	Gender=Masc|Number=Plur	10	obj	_	_
+13	che	che	PRON	PR	PronType=Rel	21	nsubj	_	_
+14	sotto	sotto	ADP	E	_	16	case	_	_
+15	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	guida	guida	NOUN	S	Gender=Fem|Number=Sing	21	obl	_	_
+17	di	di	ADP	E	_	18	case	_	_
+18	Carlo	Carlo	PROPN	SP	_	16	nmod	_	_
+19	Martello	Martello	PROPN	SP	_	18	flat:name	_	_
+20	avevano	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	aux	_	_
+21	combattuto	combattere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl:relcl	_	_
+22	a	a	ADP	E	_	23	case	_	_
+23	Poitiers	Poitiers	PROPN	SP	_	21	obl	_	_
+24	(	(	PUNCT	FB	_	25	punct	_	SpaceAfter=No
+25	prospiciunt	prospiciunt	X	SW	Foreign=Yes	21	obl	_	_
+26	Europenses	Europenses	X	SW	Foreign=Yes	25	flat:foreign	_	_
+27	Arabum	Arabum	X	SW	Foreign=Yes	25	flat:foreign	_	_
+28	tentoria	tentoria	X	SW	Foreign=Yes	25	flat:foreign	_	SpaceAfter=No
+29	,	,	PUNCT	FF	_	25	punct	_	_
+30	nescientes	nescientes	X	SW	Foreign=Yes	25	flat:foreign	_	_
+31	cuncta	cuncta	X	SW	Foreign=Yes	30	flat:foreign	_	_
+32	esse	esse	PRON	PE	Foreign=Yes	30	flat:foreign	_	_
+33	pervacua	pervacua	X	SW	Foreign=Yes	25	flat:foreign	_	SpaceAfter=No
+34	)	)	PUNCT	FB	_	25	punct	_	SpaceAfter=No
+35	.	.	PUNCT	FS	_	6	punct	_	_
+
+# sent_id = 4
+# text = La battaglia aveva assunto infatti un grande valore simbolico:
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	battaglia	battaglia	NOUN	S	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	assunto	assumere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	infatti	infatti	ADV	B	_	4	advmod	_	_
+6	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+7	grande	grande	ADJ	A	Number=Sing	8	amod	_	_
+8	valore	valore	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	_
+9	simbolico	simbolico	ADJ	A	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	:	:	PUNCT	FC	_	4	punct	_	_
+
+# sent_id = 5
+# text = l'Occidente cristiano era idealmente rappresentato dall'Europa, che aveva fermato l'espansione araba.
+1	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
+2	Occidente	occidente	NOUN	S	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
+3	cristiano	cristiano	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:pass	_	_
+5	idealmente	idealmente	ADV	B	_	6	advmod	_	_
+6	rappresentato	rappresentare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+7-8	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+7	da	da	ADP	E	_	9	case	_	_
+8	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	Europa	Europa	PROPN	SP	_	6	obl:agent	_	SpaceAfter=No
+10	,	,	PUNCT	FF	_	9	punct	_	_
+11	che	che	PRON	PR	PronType=Rel	13	nsubj	_	_
+12	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	aux	_	_
+13	fermato	fermare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_
+14	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No
+15	espansione	espansione	NOUN	S	Gender=Fem|Number=Sing	13	obj	_	_
+16	araba	arabo	ADJ	A	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	FS	_	6	punct	_	_
+
+# sent_id = 6
+# text = Isidoro aveva quindi usato l'aggettivo "europeo" per attribuire un'identità collettiva ai guerrieri che avevano fermato gli invasori musulmani.
+1	Isidoro	Isidoro	PROPN	SP	_	4	nsubj	_	_
+2	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+3	quindi	quindi	ADV	B	_	4	advmod	_	_
+4	usato	usare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No
+6	aggettivo	aggettivo	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	_
+7	"	"	PUNCT	FB	_	8	punct	_	SpaceAfter=No
+8	europeo	europeo	ADJ	A	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+9	"	"	PUNCT	FB	_	8	punct	_	_
+10	per	per	ADP	E	_	11	mark	_	_
+11	attribuire	attribuire	VERB	V	VerbForm=Inf	4	advcl	_	_
+12	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No
+13	identità	identità	NOUN	S	Gender=Fem	11	obj	_	_
+14	collettiva	collettivo	ADJ	A	Gender=Fem|Number=Sing	13	amod	_	_
+15-16	ai	_	_	_	_	_	_	_	_
+15	a	a	ADP	E	_	17	case	_	_
+16	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	guerrieri	guerriero	NOUN	S	Gender=Masc|Number=Plur	11	obl	_	_
+18	che	che	PRON	PR	PronType=Rel	20	nsubj	_	_
+19	avevano	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	20	aux	_	_
+20	fermato	fermare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl:relcl	_	_
+21	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	invasori	invasore	NOUN	S	Gender=Masc|Number=Plur	20	obj	_	_
+23	musulmani	musulmano	ADJ	A	Gender=Masc|Number=Plur	22	amod	_	SpaceAfter=No
+24	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -922,15 +1199,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vecchio continente[modifica | modifica wikitesto]
-1	Vecchio	vecchio	ADJ	A	Gender=Masc|Number=Sing	0	root	_	_
-2	continente	continente	NOUN	S	Gender=Masc|Number=Sing	1	compound	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
+# text = Vecchio continente
+1	Vecchio	vecchio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+2	continente	continente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1027,14 +1298,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Storia[modifica | modifica wikitesto]
-1	Storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
+# text = Storia
+1	Storia	Storia	PROPN	SP	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1042,14 +1307,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Preistoria[modifica | modifica wikitesto]
+# text = Preistoria
 1	Preistoria	preistoria	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1480,15 +1739,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Evo antico[modifica | modifica wikitesto]
+# text = Evo antico
 1	Evo	evo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	antico	antico	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1539,6 +1792,194 @@
 37	poemi	poema	NOUN	S	Gender=Masc|Number=Plur	34	obl:agent	_	_
 38	omerici	omerico	ADJ	A	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No
 39	.	.	PUNCT	FS	_	8	punct	_	SpacesAfter=\s\n
+
+# sent_id = 2
+# text = A seguito dell'invasione dei Popoli del Mare nelle coste mediterranee nel 1200 a.C. vi fu una decadenza delle città-stato.
+1	A	a	ADP	E	_	2	case	_	_
+2	seguito	seguito	NOUN	S	Gender=Masc|Number=Sing	21	obl	_	_
+3-4	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+3	di	di	ADP	E	_	5	case	_	_
+4	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+5	invasione	invasione	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
+6-7	dei	_	_	_	_	_	_	_	_
+6	di	di	ADP	E	_	8	case	_	_
+7	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	Popoli	popolo	NOUN	S	Gender=Masc|Number=Plur	5	nmod	_	_
+9-10	del	_	_	_	_	_	_	_	_
+9	di	di	ADP	E	_	11	case	_	_
+10	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Mare	Mare	PROPN	SP	_	8	nmod	_	_
+12-13	nelle	_	_	_	_	_	_	_	_
+12	in	in	ADP	E	_	14	case	_	_
+13	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	coste	costa	NOUN	S	Gender=Fem|Number=Plur	5	nmod	_	_
+15	mediterranee	mediterraneo	ADJ	A	Gender=Fem|Number=Plur	14	amod	_	_
+16-17	nel	_	_	_	_	_	_	_	_
+16	in	in	ADP	E	_	18	case	_	_
+17	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	1200	1200	NUM	N	NumType=Card	21	obl	_	_
+19	a.C.	a.c.	ADJ	A	_	18	amod	_	_
+20	vi	vi	PRON	PC	Clitic=Yes|PronType=Prs	21	expl	_	_
+21	fu	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+22	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	decadenza	decadenza	NOUN	S	Gender=Fem|Number=Sing	21	nsubj	_	_
+24-25	delle	_	_	_	_	_	_	_	_
+24	di	di	ADP	E	_	26	case	_	_
+25	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
+26	città	città	NOUN	S	Gender=Fem	23	nmod	_	SpaceAfter=No
+27	-	-	PUNCT	FF	_	26	punct	_	SpaceAfter=No
+28	stato	stato	NOUN	S	Gender=Masc|Number=Sing	26	compound	_	SpaceAfter=No
+29	.	.	PUNCT	FS	_	21	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = In questo periodo anche in Europa continentale riemersero le religioni pre-indoeuropee, con la pratica dell'incenerazione dei defunti e loro conservazione in urne, come nella cultura villanoviana dell'Italia settentrionale.
+1	In	in	ADP	E	_	3	case	_	_
+2	questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	periodo	periodo	NOUN	S	Gender=Masc|Number=Sing	8	obl	_	_
+4	anche	anche	ADV	B	_	6	advmod	_	_
+5	in	in	ADP	E	_	6	case	_	_
+6	Europa	Europa	PROPN	SP	_	8	obl	_	_
+7	continentale	continentale	ADJ	A	Number=Sing	6	amod	_	_
+8	riemersero	riemerrere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	8	nsubj	_	_
+11	pre	pre	ADJ	A	Gender=Fem|Number=Plur	10	amod	_	SpaceAfter=No
+12	-	-	PUNCT	FF	_	11	punct	_	SpaceAfter=No
+13	indoeuropee	indoeuropeo	ADJ	A	Gender=Fem|Number=Plur	10	amod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	8	punct	_	_
+15	con	con	ADP	E	_	17	case	_	_
+16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	pratica	pratica	NOUN	S	Gender=Fem|Number=Sing	8	obl	_	_
+18-19	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+18	di	di	ADP	E	_	20	case	_	_
+19	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	20	det	_	_
+20	incenerazione	incenerazione	NOUN	S	Gender=Fem|Number=Sing	17	nmod	_	_
+21-22	dei	_	_	_	_	_	_	_	_
+21	di	di	ADP	E	_	23	case	_	_
+22	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+23	defunti	defunto	NOUN	S	Gender=Masc|Number=Plur	20	nmod	_	_
+24	e	e	CCONJ	CC	_	26	cc	_	_
+25	loro	loro	DET	AP	Poss=Yes|PronType=Prs	26	det:poss	_	_
+26	conservazione	conservazione	NOUN	S	Gender=Fem|Number=Sing	20	conj	_	_
+27	in	in	ADP	E	_	28	case	_	_
+28	urne	urna	NOUN	S	Gender=Fem|Number=Plur	26	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	FF	_	8	punct	_	_
+30	come	come	ADP	E	_	33	case	_	_
+31-32	nella	_	_	_	_	_	_	_	_
+31	in	in	ADP	E	_	30	fixed	_	_
+32	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	cultura	cultura	NOUN	S	Gender=Fem|Number=Sing	8	obl	_	_
+34	villanoviana	villanoviano	ADJ	A	Gender=Fem|Number=Sing	33	amod	_	_
+35-36	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+35	di	di	ADP	E	_	37	case	_	_
+36	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	37	det	_	_
+37	Italia	Italia	PROPN	SP	_	33	nmod	_	_
+38	settentrionale	settentrionale	ADJ	A	Number=Sing	37	amod	_	SpaceAfter=No
+39	.	.	PUNCT	FS	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Trascorso il Medioevo ellenico seguito alle invasioni dei Popoli del mare, si ebbe una ripresa dei commerci tra le città della Grecia e dell'Anatolia attraverso l'Egeo, e la nascita delle poleis, non più basate sulla monarchia e l'acropoli, bensì sulla democrazia e l'agora, che diffusero le loro colonie anche nella Magna Grecia in competizione con i Fenici, mentre nell'Italia centrale fiorirono la civiltà etrusca e quella romana.
+1	Trascorso	trascorrere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	advcl	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Medioevo	Medioevo	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	_
+4	ellenico	ellenico	ADJ	A	Gender=Masc|Number=Sing	3	amod	_	_
+5	seguito	seguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_
+6-7	alle	_	_	_	_	_	_	_	_
+6	a	a	ADP	E	_	8	case	_	_
+7	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	invasioni	invasione	NOUN	S	Gender=Fem|Number=Plur	5	obl	_	_
+9-10	dei	_	_	_	_	_	_	_	_
+9	di	di	ADP	E	_	11	case	_	_
+10	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	Popoli	popolo	NOUN	S	Gender=Masc|Number=Plur	8	nmod	_	_
+12-13	del	_	_	_	_	_	_	_	_
+12	di	di	ADP	E	_	14	case	_	_
+13	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	mare	mare	NOUN	S	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	FF	_	1	punct	_	_
+16	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	17	expl	_	_
+17	ebbe	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+18	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	ripresa	ripresa	NOUN	S	Gender=Fem|Number=Sing	17	nsubj	_	_
+20-21	dei	_	_	_	_	_	_	_	_
+20	di	di	ADP	E	_	22	case	_	_
+21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	commerci	commerco	NOUN	S	Gender=Masc|Number=Plur	19	nmod	_	_
+23	tra	tra	ADP	E	_	25	case	_	_
+24	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
+25	città	città	NOUN	S	Gender=Fem	22	nmod	_	_
+26-27	della	_	_	_	_	_	_	_	_
+26	di	di	ADP	E	_	28	case	_	_
+27	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	Grecia	Grecia	PROPN	SP	_	25	nmod	_	_
+29	e	e	CCONJ	CC	_	32	cc	_	_
+30-31	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+30	di	di	ADP	E	_	32	case	_	_
+31	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
+32	Anatolia	Anatolia	PROPN	SP	_	28	conj	_	_
+33	attraverso	attraverso	ADP	E	_	35	case	_	_
+34	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No
+35	Egeo	Egeo	PROPN	SP	_	25	nmod	_	SpaceAfter=No
+36	,	,	PUNCT	FF	_	39	punct	_	_
+37	e	e	CCONJ	CC	_	39	cc	_	_
+38	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	nascita	nascita	NOUN	S	Gender=Fem|Number=Sing	19	conj	_	_
+40-41	delle	_	_	_	_	_	_	_	_
+40	di	di	ADP	E	_	42	case	_	_
+41	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	42	det	_	_
+42	poleis	poleis	NOUN	S	Gender=Fem	39	nmod	_	SpaceAfter=No
+43	,	,	PUNCT	FF	_	42	punct	_	_
+44	non	non	ADV	BN	PronType=Neg	45	advmod	_	_
+45	più	più	ADV	B	_	46	advmod	_	_
+46	basate	basare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	42	amod	_	_
+47-48	sulla	_	_	_	_	_	_	_	_
+47	su	su	ADP	E	_	49	case	_	_
+48	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
+49	monarchia	monarchia	NOUN	S	Gender=Fem|Number=Sing	46	obl	_	_
+50	e	e	CCONJ	CC	_	52	cc	_	_
+51	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	52	det	_	SpaceAfter=No
+52	acropoli	acropoli	NOUN	S	Gender=Fem	49	conj	_	SpaceAfter=No
+53	,	,	PUNCT	FF	_	57	punct	_	_
+54	bensì	bensì	CCONJ	CC	_	57	cc	_	_
+55-56	sulla	_	_	_	_	_	_	_	_
+55	su	su	ADP	E	_	57	case	_	_
+56	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
+57	democrazia	democrazia	NOUN	S	Gender=Fem|Number=Sing	49	conj	_	_
+58	e	e	CCONJ	CC	_	60	cc	_	_
+59	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	60	det	_	SpaceAfter=No
+60	agora	agora	NOUN	S	Gender=Fem|Number=Sing	49	conj	_	SpaceAfter=No
+61	,	,	PUNCT	FF	_	42	punct	_	_
+62	che	che	PRON	PR	PronType=Rel	63	nsubj	_	_
+63	diffusero	diffrre	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	42	acl:relcl	_	_
+64	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	66	det	_	_
+65	loro	loro	DET	AP	Poss=Yes|PronType=Prs	66	det:poss	_	_
+66	colonie	colonia	NOUN	S	Gender=Fem|Number=Plur	63	obj	_	_
+67	anche	anche	ADV	B	_	70	advmod	_	_
+68-69	nella	_	_	_	_	_	_	_	_
+68	in	in	ADP	E	_	70	case	_	_
+69	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	70	det	_	_
+70	Magna	Magna	PROPN	SP	_	63	obl	_	_
+71	Grecia	Grecia	PROPN	SP	_	70	flat:name	_	_
+72	in	in	ADP	E	_	73	case	_	_
+73	competizione	competizione	NOUN	S	Gender=Fem|Number=Sing	63	obl	_	_
+74	con	con	ADP	E	_	76	case	_	_
+75	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	76	det	_	_
+76	Fenici	Fenici	PROPN	SP	_	73	nmod	_	SpaceAfter=No
+77	,	,	PUNCT	FF	_	63	punct	_	_
+78	mentre	mentre	SCONJ	CS	_	83	mark	_	_
+79-80	nell'	_	_	_	_	_	_	_	SpaceAfter=No
+79	in	in	ADP	E	_	81	case	_	_
+80	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	81	det	_	_
+81	Italia	Italia	PROPN	SP	_	83	obl	_	_
+82	centrale	centrale	ADJ	A	Number=Sing	81	amod	_	_
+83	fiorirono	fiorire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	63	conj	_	_
+84	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	85	det	_	_
+85	civiltà	civiltà	NOUN	S	Gender=Fem	83	nsubj	_	_
+86	etrusca	etrusco	ADJ	A	Gender=Fem|Number=Sing	85	amod	_	_
+87	e	e	CCONJ	CC	_	88	cc	_	_
+88	quella	quello	PRON	PD	Gender=Fem|Number=Sing|PronType=Dem	85	conj	_	_
+89	romana	romano	ADJ	A	Gender=Fem|Number=Sing	88	amod	_	SpaceAfter=No
+90	.	.	PUNCT	FS	_	17	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1654,14 +2095,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Medioevo[modifica | modifica wikitesto]
-1	Medioevo	medioevo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
+# text = Medioevo
+1	Medioevo	medioevo	ADJ	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1952,21 +2387,166 @@
 51	araba	arabo	ADJ	A	Gender=Fem|Number=Sing	50	amod	_	SpaceAfter=No
 52	.	.	PUNCT	FS	_	18	punct	_	SpacesAfter=\s\n
 
+# sent_id = 2
+# text = Le repubbliche marinare furono anche un motore della Reconquista europea di alcune terre sottratte dagli Arabi nella loro espansione, sia in occidente (penisola iberica) che in oriente (soccorso contro i Turchi all'impero bizantino).
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	repubbliche	repubblica	NOUN	S	Gender=Fem|Number=Plur	7	nsubj	_	_
+3	marinare	marinaro	ADJ	A	Gender=Fem|Number=Plur	2	amod	_	_
+4	furono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
+5	anche	anche	ADV	B	_	7	advmod	_	_
+6	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	motore	motore	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+8-9	della	_	_	_	_	_	_	_	_
+8	di	di	ADP	E	_	10	case	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Reconquista	reconquista	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	_
+11	europea	europeo	ADJ	A	Gender=Fem|Number=Sing	10	amod	_	_
+12	di	di	ADP	E	_	14	case	_	_
+13	alcune	alcuno	DET	DI	Gender=Fem|Number=Plur|PronType=Ind	14	det	_	_
+14	terre	terra	NOUN	S	Gender=Fem|Number=Plur	10	nmod	_	_
+15	sottratte	sottrarre	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	14	acl	_	_
+16-17	dagli	_	_	_	_	_	_	_	_
+16	da	da	ADP	E	_	18	case	_	_
+17	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
+18	Arabi	Arabi	PROPN	SP	_	15	obl:agent	_	_
+19-20	nella	_	_	_	_	_	_	_	_
+19	in	in	ADP	E	_	22	case	_	_
+20	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+21	loro	loro	DET	AP	Poss=Yes|PronType=Prs	22	det:poss	_	_
+22	espansione	espansione	NOUN	S	Gender=Fem|Number=Sing	15	obl	_	SpaceAfter=No
+23	,	,	PUNCT	FF	_	14	punct	_	_
+24	sia	sia	CCONJ	CC	_	26	cc	_	_
+25	in	in	ADP	E	_	26	case	_	_
+26	occidente	occidente	NOUN	S	Gender=Masc|Number=Sing	14	nmod	_	_
+27	(	(	PUNCT	FB	_	28	punct	_	SpaceAfter=No
+28	penisola	penisola	NOUN	S	Gender=Fem|Number=Sing	26	nmod	_	_
+29	iberica	iberico	ADJ	A	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
+30	)	)	PUNCT	FB	_	28	punct	_	_
+31	che	che	CCONJ	CC	_	33	cc	_	_
+32	in	in	ADP	E	_	33	case	_	_
+33	oriente	oriente	NOUN	S	Gender=Masc|Number=Sing	26	conj	_	_
+34	(	(	PUNCT	FB	_	35	punct	_	SpaceAfter=No
+35	soccorso	soccorso	NOUN	S	Gender=Masc|Number=Sing	33	appos	_	_
+36	contro	contro	ADP	E	_	38	case	_	_
+37	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
+38	Turchi	Turchi	PROPN	SP	_	35	nmod	_	_
+39-40	all'	_	_	_	_	_	_	_	SpaceAfter=No
+39	a	a	ADP	E	_	41	case	_	_
+40	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	41	det	_	_
+41	impero	impero	NOUN	S	Gender=Masc|Number=Sing	35	nmod	_	_
+42	bizantino	bizantino	ADJ	A	Gender=Masc|Number=Sing	41	amod	_	SpaceAfter=No
+43	)	)	PUNCT	FB	_	35	punct	_	SpaceAfter=No
+44	.	.	PUNCT	FS	_	7	punct	_	_
+
+# sent_id = 3
+# text = Attraverso i rapporti con gli Arabi, vi fu una riscoperta dell'aristotelismo e un'attenzione maggiore allo studio del mondo della natura, favorita anche dalla nascita di un ceto borghese di mercanti e artigiani interessato all'acquisizione di un sapere tecnico-pratico che è all'origine del progresso della civiltà europea.
+1	Attraverso	attraverso	ADP	E	_	3	case	_	_
+2	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	rapporti	rapporto	NOUN	S	Gender=Masc|Number=Plur	9	obl	_	_
+4	con	con	ADP	E	_	6	case	_	_
+5	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	Arabi	Arabi	PROPN	SP	_	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	FF	_	3	punct	_	_
+8	vi	vi	PRON	PC	Clitic=Yes|PronType=Prs	9	expl	_	_
+9	fu	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	riscoperta	riscoperta	NOUN	S	Gender=Fem|Number=Sing	9	nsubj	_	_
+12-13	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+12	di	di	ADP	E	_	14	case	_	_
+13	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
+14	aristotelismo	aristotelismo	NOUN	S	Gender=Masc|Number=Sing	11	nmod	_	_
+15	e	e	CCONJ	CC	_	17	cc	_	_
+16	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No
+17	attenzione	attenzione	NOUN	S	Gender=Fem|Number=Sing	11	conj	_	_
+18	maggiore	maggiore	ADJ	A	Degree=Cmp|Number=Sing	17	amod	_	_
+19-20	allo	_	_	_	_	_	_	_	_
+19	a	a	ADP	E	_	21	case	_	_
+20	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	studio	studio	NOUN	S	Gender=Masc|Number=Sing	17	nmod	_	_
+22-23	del	_	_	_	_	_	_	_	_
+22	di	di	ADP	E	_	24	case	_	_
+23	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	mondo	mondo	NOUN	S	Gender=Masc|Number=Sing	21	nmod	_	_
+25-26	della	_	_	_	_	_	_	_	_
+25	di	di	ADP	E	_	27	case	_	_
+26	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	natura	natura	NOUN	S	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	FF	_	17	punct	_	_
+29	favorita	favorire	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_
+30	anche	anche	ADV	B	_	33	advmod	_	_
+31-32	dalla	_	_	_	_	_	_	_	_
+31	da	da	ADP	E	_	33	case	_	_
+32	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	nascita	nascita	NOUN	S	Gender=Fem|Number=Sing	29	obl:agent	_	_
+34	di	di	ADP	E	_	36	case	_	_
+35	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	ceto	ceto	NOUN	S	Gender=Masc|Number=Sing	33	nmod	_	_
+37	borghese	borghese	ADJ	A	Number=Sing	36	amod	_	_
+38	di	di	ADP	E	_	39	case	_	_
+39	mercanti	mercante	NOUN	S	Gender=Masc|Number=Plur	36	nmod	_	_
+40	e	e	CCONJ	CC	_	41	cc	_	_
+41	artigiani	artigiano	NOUN	S	Gender=Masc|Number=Plur	39	conj	_	_
+42	interessato	interessato	ADJ	A	Gender=Masc|Number=Sing	36	amod	_	_
+43-44	all'	_	_	_	_	_	_	_	SpaceAfter=No
+43	a	a	ADP	E	_	45	case	_	_
+44	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	45	det	_	_
+45	acquisizione	acquisizione	NOUN	S	Gender=Fem|Number=Sing	42	obl	_	_
+46	di	di	ADP	E	_	48	case	_	_
+47	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
+48	sapere	sapere	NOUN	S	Gender=Masc|Number=Sing	45	nmod	_	_
+49	tecnico	tecnico	ADJ	A	Gender=Masc|Number=Sing	48	amod	_	SpaceAfter=No
+50	-	-	PUNCT	FF	_	49	punct	_	SpaceAfter=No
+51	pratico	pratico	ADJ	A	Gender=Masc|Number=Sing	49	conj	_	_
+52	che	che	PRON	PR	PronType=Rel	56	nsubj	_	_
+53	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	cop	_	_
+54-55	all'	_	_	_	_	_	_	_	SpaceAfter=No
+54	a	a	ADP	E	_	56	case	_	_
+55	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	56	det	_	_
+56	origine	origine	NOUN	S	Gender=Fem|Number=Sing	48	acl:relcl	_	_
+57-58	del	_	_	_	_	_	_	_	_
+57	di	di	ADP	E	_	59	case	_	_
+58	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
+59	progresso	progresso	NOUN	S	Gender=Masc|Number=Sing	56	nmod	_	_
+60-61	della	_	_	_	_	_	_	_	_
+60	di	di	ADP	E	_	62	case	_	_
+61	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	_	_
+62	civiltà	civiltà	NOUN	S	Gender=Fem	59	nmod	_	_
+63	europea	europeo	ADJ	A	Gender=Fem|Number=Sing	62	amod	_	SpaceAfter=No
+64	.	.	PUNCT	FS	_	9	punct	_	_
+
+# sent_id = 4
+# text = La crisi del XIV secolo, fenomeno di ampia portata, caratterizzò la storia europea per vari decenni.
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	crisi	crisi	NOUN	S	Gender=Fem	13	nsubj	_	_
+3-4	del	_	_	_	_	_	_	_	_
+3	di	di	ADP	E	_	6	case	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	XIV	XIV	ADJ	NO	Number=Sing|NumType=Ord	6	amod	_	_
+6	secolo	secolo	NOUN	S	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	FF	_	6	punct	_	_
+8	fenomeno	fenomeno	NOUN	S	Gender=Masc|Number=Sing	2	appos	_	_
+9	di	di	ADP	E	_	11	case	_	_
+10	ampia	ampio	ADJ	A	Gender=Fem|Number=Sing	11	amod	_	_
+11	portata	portata	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	2	punct	_	_
+13	caratterizzò	caratterizzare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+14	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	storia	storia	NOUN	S	Gender=Fem|Number=Sing	13	obj	_	_
+16	europea	europeo	ADJ	A	Gender=Fem|Number=Sing	15	amod	_	_
+17	per	per	ADP	E	_	19	case	_	_
+18	vari	vario	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	19	det	_	_
+19	decenni	decennio	NOUN	S	Gender=Masc|Number=Plur	13	obl	_	SpaceAfter=No
+20	.	.	PUNCT	FS	_	13	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Evo moderno[modifica | modifica wikitesto]
-1	Evo	evo	NOUN	S	Gender=Masc	0	root	_	_
+# text = Evo moderno
+1	Evo	evo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	moderno	moderno	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2220,21 +2800,108 @@
 56	commerciali	commerciale	ADJ	A	Number=Plur	55	amod	_	SpaceAfter=No
 57	.	.	PUNCT	FS	_	38	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Nel XV secolo il Portogallo e la Spagna aprirono le rotte atlantiche, presto imitati da Paesi Bassi, Gran Bretagna e Francia.
+1-2	Nel	_	_	_	_	_	_	_	_
+1	In	in	ADP	E	_	4	case	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	XV	XV	ADJ	NO	Number=Sing|NumType=Ord	4	amod	_	_
+4	secolo	secolo	NOUN	S	Gender=Masc|Number=Sing	10	obl	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Portogallo	Portogallo	PROPN	SP	_	10	nsubj	_	_
+7	e	e	CCONJ	CC	_	9	cc	_	_
+8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Spagna	Spagna	PROPN	SP	_	6	conj	_	_
+10	aprirono	aprire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+12	rotte	rotta	NOUN	S	Gender=Fem|Number=Plur	10	obj	_	_
+13	atlantiche	atlantico	ADJ	A	Gender=Fem|Number=Plur	12	amod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	12	punct	_	_
+15	presto	presto	ADV	B	_	16	advmod	_	_
+16	imitati	imitare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_
+17	da	da	ADP	E	_	18	case	_	_
+18	Paesi	Paesi	PROPN	SP	_	16	obl:agent	_	_
+19	Bassi	Bassi	PROPN	SP	_	18	flat:name	_	SpaceAfter=No
+20	,	,	PUNCT	FF	_	21	punct	_	_
+21	Gran	Gran	PROPN	SP	_	18	conj	_	_
+22	Bretagna	Bretagna	PROPN	SP	_	21	flat:name	_	_
+23	e	e	CCONJ	CC	_	24	cc	_	_
+24	Francia	Francia	PROPN	SP	_	18	conj	_	SpaceAfter=No
+25	.	.	PUNCT	FS	_	10	punct	_	_
+
+# sent_id = 3
+# text = Queste Nazioni costruirono vasti imperi coloniali lungo le coste di tutti i continenti.
+1	Queste	questo	DET	DD	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
+2	Nazioni	nazione	NOUN	S	Gender=Fem|Number=Plur	3	nsubj	_	_
+3	costruirono	costruire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	vasti	vasto	ADJ	A	Gender=Masc|Number=Plur	5	amod	_	_
+5	imperi	impero	NOUN	S	Gender=Masc|Number=Plur	3	obj	_	_
+6	coloniali	coloniale	ADJ	A	Number=Plur	5	amod	_	_
+7	lungo	lungo	ADP	E	_	9	case	_	_
+8	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
+9	coste	costa	NOUN	S	Gender=Fem|Number=Plur	3	obl	_	_
+10	di	di	ADP	E	_	13	case	_	_
+11	tutti	tutto	DET	T	Gender=Masc|Number=Plur|PronType=Tot	13	det:predet	_	_
+12	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	continenti	continente	NOUN	S	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	FS	_	3	punct	_	_
+
+# sent_id = 4
+# text = Alla ribellione all'autorità papale dei riformatori religiosi umanisti, seguì presto la ribellione dei Protestanti anche all'autorità regale con l'affermazione della democrazia in Inghilterra nel 1689.
+1-2	Alla	_	_	_	_	_	_	_	_
+1	A	a	ADP	E	_	3	case	_	_
+2	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	ribellione	ribellione	NOUN	S	Gender=Fem|Number=Sing	14	obl	_	_
+4-5	all'	_	_	_	_	_	_	_	SpaceAfter=No
+4	a	a	ADP	E	_	6	case	_	_
+5	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	autorità	autorità	NOUN	S	Gender=Fem	3	nmod	_	_
+7	papale	papale	ADJ	A	Number=Sing	6	amod	_	_
+8-9	dei	_	_	_	_	_	_	_	_
+8	di	di	ADP	E	_	10	case	_	_
+9	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	riformatori	riformatore	NOUN	S	Gender=Masc|Number=Plur	6	nmod	_	_
+11	religiosi	religioso	ADJ	A	Gender=Masc|Number=Plur	10	amod	_	_
+12	umanisti	umanista	ADJ	A	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
+13	,	,	PUNCT	FF	_	3	punct	_	_
+14	seguì	seguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	presto	presto	ADV	B	_	14	advmod	_	_
+16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	ribellione	ribellione	NOUN	S	Gender=Fem|Number=Sing	14	nsubj	_	_
+18-19	dei	_	_	_	_	_	_	_	_
+18	di	di	ADP	E	_	20	case	_	_
+19	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+20	Protestanti	Protestanti	NOUN	S	Number=Plur	17	nmod	_	_
+21	anche	anche	ADV	B	_	24	advmod	_	_
+22-23	all'	_	_	_	_	_	_	_	SpaceAfter=No
+22	a	a	ADP	E	_	24	case	_	_
+23	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	24	det	_	_
+24	autorità	autorità	NOUN	S	Gender=Fem	17	nmod	_	_
+25	regale	regale	ADJ	A	Number=Sing	24	amod	_	_
+26	con	con	ADP	E	_	28	case	_	_
+27	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No
+28	affermazione	affermazione	NOUN	S	Gender=Fem|Number=Sing	14	obl	_	_
+29-30	della	_	_	_	_	_	_	_	_
+29	di	di	ADP	E	_	31	case	_	_
+30	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	democrazia	democrazia	NOUN	S	Gender=Fem|Number=Sing	28	nmod	_	_
+32	in	in	ADP	E	_	33	case	_	_
+33	Inghilterra	Inghilterra	PROPN	SP	_	31	nmod	_	_
+34-35	nel	_	_	_	_	_	_	_	_
+34	in	in	ADP	E	_	36	case	_	_
+35	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	1689	1689	NUM	N	NumType=Card	28	nmod	_	SpaceAfter=No
+37	.	.	PUNCT	FS	_	14	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Evo contemporaneo[modifica | modifica wikitesto]
-1	Evo	evo	NOUN	S	Gender=Masc	0	root	_	_
+# text = Evo contemporaneo
+1	Evo	evo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	contemporaneo	contemporaneo	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2624,6 +3291,132 @@
 64	russo	russo	ADJ	A	Gender=Masc|Number=Sing	63	amod	_	SpaceAfter=No
 65	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Le tensioni sociali e quelle fra gli stati europei crebbero nuovamente, soprattutto in Germania, paese gravato dalle pesanti sanzioni post-belliche imposte dagli alleati su espressa richiesta della Francia, e sfociarono nella seconda guerra mondiale, la quale fu principalmente provocata dall'aggressiva politica revanscistica messa in atto dalla Germania nazista e successivamente dall'Italia fascista, appoggiate in Asia dall'Impero giapponese.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	tensioni	tensione	NOUN	S	Gender=Fem|Number=Plur	10	nsubj	_	_
+3	sociali	sociale	ADJ	A	Number=Plur	2	amod	_	_
+4	e	e	CCONJ	CC	_	5	cc	_	_
+5	quelle	quello	PRON	PD	Gender=Fem|Number=Plur|PronType=Dem	2	conj	_	_
+6	fra	fra	ADP	E	_	8	case	_	_
+7	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	stati	stato	NOUN	S	Gender=Masc|Number=Plur	5	nmod	_	_
+9	europei	europeo	ADJ	A	Gender=Masc|Number=Plur	8	amod	_	_
+10	crebbero	cere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	nuovamente	nuovamente	ADV	B	_	10	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	10	punct	_	_
+13	soprattutto	soprattutto	ADV	B	_	15	advmod	_	_
+14	in	in	ADP	E	_	15	case	_	_
+15	Germania	Germania	PROPN	SP	_	10	obl	_	SpaceAfter=No
+16	,	,	PUNCT	FF	_	15	punct	_	_
+17	paese	paese	NOUN	S	Gender=Masc|Number=Sing	15	appos	_	_
+18	gravato	gravare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_
+19-20	dalle	_	_	_	_	_	_	_	_
+19	da	da	ADP	E	_	22	case	_	_
+20	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+21	pesanti	pesante	ADJ	A	Number=Plur	22	amod	_	_
+22	sanzioni	sanzione	NOUN	S	Gender=Fem|Number=Plur	18	obl:agent	_	_
+23	post	post	ADV	A	_	25	advmod	_	SpaceAfter=No
+24	-	-	PUNCT	FF	_	23	punct	_	SpaceAfter=No
+25	belliche	bellico	ADJ	A	Gender=Fem|Number=Plur	22	amod	_	_
+26	imposte	imporre	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	22	acl	_	_
+27-28	dagli	_	_	_	_	_	_	_	_
+27	da	da	ADP	E	_	29	case	_	_
+28	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
+29	alleati	alleato	NOUN	S	Gender=Masc|Number=Plur	26	obl:agent	_	_
+30	su	su	ADP	E	_	32	case	_	_
+31	espressa	espresso	ADJ	A	Gender=Fem|Number=Sing	32	amod	_	_
+32	richiesta	richiesta	NOUN	S	Gender=Fem|Number=Sing	26	obl	_	_
+33-34	della	_	_	_	_	_	_	_	_
+33	di	di	ADP	E	_	35	case	_	_
+34	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+35	Francia	Francia	PROPN	SP	_	32	nmod	_	SpaceAfter=No
+36	,	,	PUNCT	FF	_	38	punct	_	_
+37	e	e	CCONJ	CC	_	38	cc	_	_
+38	sfociarono	sfociare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
+39-40	nella	_	_	_	_	_	_	_	_
+39	in	in	ADP	E	_	42	case	_	_
+40	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+41	seconda	secondo	ADJ	NO	Gender=Fem|Number=Sing|NumType=Ord	42	amod	_	_
+42	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	38	obl	_	_
+43	mondiale	mondiale	ADJ	A	Number=Sing	42	amod	_	SpaceAfter=No
+44	,	,	PUNCT	FF	_	42	punct	_	_
+45	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
+46	quale	quale	PRON	PR	Number=Sing|PronType=Rel	49	nsubj:pass	_	_
+47	fu	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	49	aux:pass	_	_
+48	principalmente	principalmente	ADV	B	_	49	advmod	_	_
+49	provocata	provocare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	42	acl:relcl	_	_
+50-51	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+50	da	da	ADP	E	_	53	case	_	_
+51	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	53	det	_	_
+52	aggressiva	aggressivo	ADJ	A	Gender=Fem|Number=Sing	53	amod	_	_
+53	politica	politica	NOUN	S	Gender=Fem|Number=Sing	49	obl:agent	_	_
+54	revanscistica	revanscistico	ADJ	A	Gender=Fem|Number=Sing	53	amod	_	_
+55	messa	mettere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	53	acl	_	_
+56	in	in	ADP	E	_	57	case	_	_
+57	atto	atto	NOUN	S	Gender=Masc|Number=Sing	55	obl	_	_
+58-59	dalla	_	_	_	_	_	_	_	_
+58	da	da	ADP	E	_	60	case	_	_
+59	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	_	_
+60	Germania	Germania	PROPN	SP	_	55	obl:agent	_	_
+61	nazista	nazista	ADJ	A	Number=Sing	60	amod	_	_
+62	e	e	CCONJ	CC	_	66	cc	_	_
+63	successivamente	successivamente	ADV	B	_	66	advmod	_	_
+64-65	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+64	da	da	ADP	E	_	66	case	_	_
+65	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	66	det	_	_
+66	Italia	Italia	PROPN	SP	_	60	conj	_	_
+67	fascista	fascista	ADJ	A	Number=Sing	66	amod	_	SpaceAfter=No
+68	,	,	PUNCT	FF	_	66	punct	_	_
+69	appoggiate	appoggiare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	66	acl	_	_
+70	in	in	ADP	E	_	71	case	_	_
+71	Asia	Asia	PROPN	SP	_	69	obl	_	_
+72-73	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+72	da	da	ADP	E	_	74	case	_	_
+73	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	74	det	_	_
+74	Impero	impero	NOUN	S	Gender=Masc|Number=Sing	69	obl:agent	_	_
+75	giapponese	giapponese	ADJ	A	Number=Sing	74	amod	_	SpaceAfter=No
+76	.	.	PUNCT	FS	_	10	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Le due guerre spezzarono l'egemonia del Continente sul resto del pianeta lasciando il posto di leader mondiali agli Stati Uniti e all'Unione Sovietica.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+2	due	due	NUM	N	NumType=Card	3	nummod	_	_
+3	guerre	guerra	NOUN	S	Gender=Fem|Number=Plur	4	nsubj	_	_
+4	spezzarono	spezzare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No
+6	egemonia	egemonia	NOUN	S	Gender=Fem|Number=Sing	4	obj	_	_
+7-8	del	_	_	_	_	_	_	_	_
+7	di	di	ADP	E	_	9	case	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Continente	continente	NOUN	S	Gender=Masc|Number=Sing	6	nmod	_	_
+10-11	sul	_	_	_	_	_	_	_	_
+10	su	su	ADP	E	_	12	case	_	_
+11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	resto	resto	NOUN	S	Gender=Masc|Number=Sing	4	obl	_	_
+13-14	del	_	_	_	_	_	_	_	_
+13	di	di	ADP	E	_	15	case	_	_
+14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	pianeta	pianeta	NOUN	S	Gender=Masc|Number=Sing	12	nmod	_	_
+16	lasciando	lasciare	VERB	V	VerbForm=Ger	4	advcl	_	_
+17	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	posto	posto	NOUN	S	Gender=Masc|Number=Sing	16	obj	_	_
+19	di	di	ADP	E	_	20	case	_	_
+20	leader	leader	NOUN	S	_	18	nmod	_	_
+21	mondiali	mondiale	ADJ	A	Number=Plur	20	amod	_	_
+22-23	agli	_	_	_	_	_	_	_	_
+22	a	a	ADP	E	_	24	case	_	_
+23	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+24	Stati	Stati	PROPN	SP	_	16	obl	_	_
+25	Uniti	Uniti	PROPN	SP	_	24	flat:name	_	_
+26	e	e	CCONJ	CC	_	29	cc	_	_
+27-28	all'	_	_	_	_	_	_	_	SpaceAfter=No
+27	a	a	ADP	E	_	29	case	_	_
+28	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	29	det	_	_
+29	Unione	Unione	PROPN	SP	_	24	conj	_	_
+30	Sovietica	sovietica	ADJ	A	Gender=Fem|Number=Sing	29	amod	_	SpaceAfter=No
+31	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2879,14 +3672,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografia[modifica | modifica wikitesto]
+# text = Geografia
 1	Geografia	geografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2936,7 +3723,7 @@
 8	:	:	PUNCT	FC	_	2	punct	_	_
 
 # sent_id = 3
-# text = la sua superficie si estende per soli 10091000 km², estensione poco superiore a quella dell'Oceania, il continente più piccolo della Terra; nello stesso tempo, il continente europeo è il secondo per densità di popolazione[N 1];
+# text = la sua superficie si estende per soli 10091000 km², estensione poco superiore a quella dell'Oceania, il continente più piccolo della Terra; nello stesso tempo, il continente europeo è il secondo per densità di popolazione; il fatto si spiega notando che la stragrande maggioranza dei territori europei gode di clima temperato;
 1	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det:poss	_	_
 3	superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -2977,40 +3764,33 @@
 35	europeo	europeo	ADJ	A	Gender=Masc|Number=Sing	34	amod	_	_
 36	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	cop	_	_
 37	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	secondo	secondo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	parataxis	_	_
+38	secondo	secondo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	conj	_	_
 39	per	per	ADP	E	_	40	case	_	_
 40	densità	densità	NOUN	S	Gender=Fem	38	obl	_	_
 41	di	di	ADP	E	_	42	case	_	_
 42	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No
-43	[	[	PUNCT	FB	_	44	punct	_	SpaceAfter=No
-44	N	N	PROPN	SP	_	40	nmod	_	_
-45	1	1	NUM	N	NumType=Card	44	nummod	_	SpaceAfter=No
-46	]	]	PUNCT	FB	_	44	punct	_	SpaceAfter=No
-47	;	;	PUNCT	FC	_	5	punct	_	_
+43	;	;	PUNCT	FC	_	38	punct	_	_
+44	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	fatto	fatto	NOUN	S	Gender=Masc|Number=Sing	47	nsubj	_	_
+46	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	47	expl:impers	_	_
+47	spiega	spiegare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	_
+48	notando	notare	VERB	V	VerbForm=Ger	47	advcl	_	_
+49	che	che	SCONJ	CS	_	57	mark	_	_
+50	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
+51	stragrande	stragrande	ADJ	A	Number=Sing	52	amod	_	_
+52	maggioranza	maggioranza	NOUN	S	Gender=Fem|Number=Sing	57	nsubj	_	_
+53-54	dei	_	_	_	_	_	_	_	_
+53	di	di	ADP	E	_	55	case	_	_
+54	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_
+55	territori	territorio	NOUN	S	Gender=Masc|Number=Plur	52	nmod	_	_
+56	europei	europeo	ADJ	A	Gender=Masc|Number=Plur	55	amod	_	_
+57	gode	godere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	ccomp	_	_
+58	di	di	ADP	E	_	59	case	_	_
+59	clima	clima	NOUN	S	Gender=Masc|Number=Sing	57	obl	_	_
+60	temperato	temperato	ADJ	A	Gender=Masc|Number=Sing	59	amod	_	SpaceAfter=No
+61	;	;	PUNCT	FC	_	5	punct	_	_
 
 # sent_id = 4
-# text = il fatto si spiega notando che la stragrande maggioranza dei territori europei gode di clima temperato;
-1	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	fatto	fatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
-3	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	4	expl:impers	_	_
-4	spiega	spiegare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	notando	notare	VERB	V	VerbForm=Ger	4	advcl	_	_
-6	che	che	SCONJ	CS	_	14	mark	_	_
-7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-8	stragrande	stragrande	ADJ	A	Number=Sing	9	amod	_	_
-9	maggioranza	maggioranza	NOUN	S	Gender=Fem|Number=Sing	14	nsubj	_	_
-10-11	dei	_	_	_	_	_	_	_	_
-10	di	di	ADP	E	_	12	case	_	_
-11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	territori	territorio	NOUN	S	Gender=Masc|Number=Plur	9	nmod	_	_
-13	europei	europeo	ADJ	A	Gender=Masc|Number=Plur	12	amod	_	_
-14	gode	godere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
-15	di	di	ADP	E	_	16	case	_	_
-16	clima	clima	NOUN	S	Gender=Masc|Number=Sing	14	obl	_	_
-17	temperato	temperato	ADJ	A	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No
-18	;	;	PUNCT	FC	_	4	punct	_	_
-
-# sent_id = 5
 # text = un altro fattore che favorisce il popolamento è l'assenza di zone inabitabili come deserti o calotte glaciali, caratteristica unica tra tutti i continenti.
 1	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	altro	altro	ADJ	A	Gender=Masc|Number=Sing	3	amod	_	_
@@ -3039,7 +3819,7 @@
 25	continenti	continente	NOUN	S	Gender=Masc|Number=Plur	21	obl	_	SpaceAfter=No
 26	.	.	PUNCT	FS	_	10	punct	_	_
 
-# sent_id = 6
+# sent_id = 5
 # text = Con i suoi 747 747 395 abitanti risulta invece al quarto posto.
 1	Con	con	ADP	E	_	7	case	_	_
 2	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -3162,15 +3942,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Confini naturali[modifica | modifica wikitesto]
+# text = Confini naturali
 1	Confini	confine	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	naturali	naturale	ADJ	A	Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3975,15 +4749,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Caratteristiche fisiche[modifica | modifica wikitesto]
+# text = Caratteristiche fisiche
 1	Caratteristiche	caratteristica	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	fisiche	fisico	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -4430,16 +5198,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Flora e fauna[modifica | modifica wikitesto]
+# text = Flora e fauna
 1	Flora	flora	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	e	e	CCONJ	CC	_	3	cc	_	_
 3	fauna	fauna	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-6	|	|	SYM	SYM	_	5	dep	_	_
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	7	compound	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5696,15 +6458,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Stati europei[modifica | modifica wikitesto]
+# text = Stati europei
 1	Stati	stato	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	europei	europeo	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5784,7 +6540,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Superficie, popolazione e densità degli Stati europei[modifica | modifica wikitesto]
+# text = Superficie, popolazione e densità degli Stati europei
 1	Superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	3	punct	_	_
 3	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	_
@@ -5795,12 +6551,6 @@
 7	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 8	Stati	stato	NOUN	S	Gender=Masc|Number=Plur	5	nmod	_	_
 9	europei	europeo	ADJ	A	Gender=Masc|Number=Plur	8	amod	_	SpaceAfter=No
-10	[	[	PUNCT	FB	_	11	punct	_	SpaceAfter=No
-11	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	parataxis	_	_
-12	|	|	SYM	SYM	_	11	dep	_	_
-13	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	11	nmod	_	_
-14	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	13	compound	_	SpaceAfter=No
-15	]	]	PUNCT	FB	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5841,19 +6591,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dipendenze o territori con status speciali[modifica | modifica wikitesto]
+# text = Dipendenze o territori con status speciali
 1	Dipendenze	dipendenza	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	o	o	CCONJ	CC	_	3	cc	_	_
 3	territori	territorio	NOUN	S	Gender=Masc|Number=Plur	1	conj	_	_
 4	con	con	ADP	E	_	5	case	_	_
 5	status	status	NOUN	S	Gender=Masc	3	nmod	_	_
 6	speciali	speciale	ADJ	A	Number=Plur	5	amod	_	SpaceAfter=No
-7	[	[	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-9	|	|	SYM	SYM	_	8	dep	_	_
-10	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	10	compound	_	SpaceAfter=No
-12	]	]	PUNCT	FB	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5861,7 +6605,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Superficie, popolazione e densità dei principali Stati transcontinentali[modifica | modifica wikitesto]
+# text = Superficie, popolazione e densità dei principali Stati transcontinentali
 1	Superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	3	punct	_	_
 3	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	_
@@ -5873,12 +6617,6 @@
 8	principali	principale	ADJ	A	Number=Plur	9	amod	_	_
 9	Stati	stato	NOUN	S	Gender=Masc|Number=Plur	5	nmod	_	_
 10	transcontinentali	transcontinentale	ADJ	A	Number=Plur	9	amod	_	SpaceAfter=No
-11	[	[	PUNCT	FB	_	12	punct	_	SpaceAfter=No
-12	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	parataxis	_	_
-13	|	|	SYM	SYM	_	12	dep	_	_
-14	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	14	compound	_	SpaceAfter=No
-16	]	]	PUNCT	FB	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5886,7 +6624,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Superficie, popolazione e densità degli Stati del Caucaso[modifica | modifica wikitesto]
+# text = Superficie, popolazione e densità degli Stati del Caucaso
 1	Superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	3	punct	_	_
 3	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	_
@@ -5900,12 +6638,6 @@
 9	di	di	ADP	E	_	11	case	_	_
 10	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	Caucaso	Caucaso	PROPN	SP	_	8	nmod	_	SpaceAfter=No
-12	[	[	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-13	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	parataxis	_	_
-14	|	|	SYM	SYM	_	13	dep	_	_
-15	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	15	compound	_	SpaceAfter=No
-17	]	]	PUNCT	FB	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5913,7 +6645,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Superficie, popolazione e densità degli Stati a riconoscimento limitato[modifica | modifica wikitesto]
+# text = Superficie, popolazione e densità degli Stati a riconoscimento limitato
 1	Superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	3	punct	_	_
 3	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	_
@@ -5926,12 +6658,6 @@
 9	a	a	ADP	E	_	10	case	_	_
 10	riconoscimento	riconoscimento	NOUN	S	Gender=Masc|Number=Sing	8	nmod	_	_
 11	limitato	limitato	ADJ	A	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No
-12	[	[	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-13	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	parataxis	_	_
-14	|	|	SYM	SYM	_	13	dep	_	_
-15	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	15	compound	_	SpaceAfter=No
-17	]	]	PUNCT	FB	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5939,18 +6665,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Regioni dell'Europa[modifica | modifica wikitesto]
+# text = Regioni dell'Europa
 1	Regioni	regione	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2-3	dell'	_	_	_	_	_	_	_	SpaceAfter=No
 2	di	di	ADP	E	_	4	case	_	_
 3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
 4	Europa	Europa	PROPN	SP	_	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	conj	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6091,15 +6811,49 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Europa occidentale[modifica | modifica wikitesto]
+# text = Europa settentrionale
+1	Europa	Europa	PROPN	SP	_	0	root	_	SpacesBefore=     
+2	settentrionale	settentrionale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Europa occidentale
+1	Europa	Europa	PROPN	SP	_	0	root	_	SpacesBefore=     
+2	occidentale	occidentale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Europa orientale
+1	Europa	Europa	PROPN	SP	_	0	root	_	SpacesBefore=     
+2	orientale	orientale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Europa meridionale
+1	Europa	Europa	PROPN	SP	_	0	root	_	SpacesBefore=     
+2	meridionale	meridionale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Europa occidentale
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	occidentale	occidentale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6363,15 +7117,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Europa orientale[modifica | modifica wikitesto]
+# text = Europa orientale
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	orientale	orientale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6649,15 +7397,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Europa centrale[modifica | modifica wikitesto]
+# text = Europa centrale
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	centrale	centrale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6767,15 +7509,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Europa settentrionale[modifica | modifica wikitesto]
+# text = Europa settentrionale
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	settentrionale	settentrionale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6930,15 +7666,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Europa meridionale[modifica | modifica wikitesto]
+# text = Europa meridionale
 1	Europa	Europa	PROPN	SP	_	0	root	_	_
 2	meridionale	meridionale	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7176,19 +7906,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = A cavallo tra Europa e Asia[modifica | modifica wikitesto]
+# text = A cavallo tra Europa e Asia
 1	A	a	ADP	E	_	2	case	_	_
 2	cavallo	cavallo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 3	tra	tra	ADP	E	_	4	case	_	_
 4	Europa	Europa	PROPN	SP	_	2	nmod	_	_
 5	e	e	CCONJ	CC	_	6	cc	_	_
 6	Asia	Asia	PROPN	SP	_	4	conj	_	SpaceAfter=No
-7	[	[	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	appos	_	_
-9	|	|	SYM	SYM	_	8	dep	_	_
-10	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	10	compound	_	SpaceAfter=No
-12	]	]	PUNCT	FB	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7229,14 +7953,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Popolazione[modifica | modifica wikitesto]
+# text = Popolazione
 1	Popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7353,6 +8071,66 @@
 31	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
 32	Asia	Asia	PROPN	SP	_	29	nmod	_	SpaceAfter=No
 33	.	.	PUNCT	FS	_	19	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Le cause di tale concentrazione sono da ricercarsi in molteplici fattori, in primo luogo la posizione geografica:
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	cause	causa	NOUN	S	Gender=Fem|Number=Plur	6	nsubj	_	_
+3	di	di	ADP	E	_	5	case	_	_
+4	tale	tale	DET	DD	Number=Sing|PronType=Dem	5	det	_	_
+5	concentrazione	concentrazione	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
+6	sono	essere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	da	da	ADP	E	_	8	mark	_	_
+8-9	ricercarsi	_	_	_	_	_	_	_	_
+8	ricercar	ricercare	VERB	V	VerbForm=Inf	6	ccomp	_	_
+9	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	8	expl:pass	_	_
+10	in	in	ADP	E	_	12	case	_	_
+11	molteplici	molteplice	ADJ	A	Number=Plur	12	amod	_	_
+12	fattori	fattore	NOUN	S	Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No
+13	,	,	PUNCT	FF	_	12	punct	_	_
+14	in	in	ADP	E	_	16	case	_	_
+15	primo	primo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	16	amod	_	_
+16	luogo	luogo	NOUN	S	Gender=Masc|Number=Sing	18	nmod	_	_
+17	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	posizione	posizione	NOUN	S	Gender=Fem|Number=Sing	12	appos	_	_
+19	geografica	geografico	ADJ	A	Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
+20	:	:	PUNCT	FC	_	6	punct	_	_
+
+# sent_id = 3
+# text = l'Europa è infatti quasi del tutto compresa nella fascia temperata e l'80% del territorio è utilizzabile per l'agricoltura e le attività umane.
+1	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
+2	Europa	Europa	PROPN	SP	_	9	nsubj	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	_
+4	infatti	infatti	ADV	B	_	9	advmod	_	_
+5	quasi	quasi	ADV	B	_	8	advmod	_	_
+6-7	del	_	_	_	_	_	_	_	_
+6	di	di	ADP	E	_	8	case	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	tutto	tutto	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	9	obl	_	_
+9	compresa	comprendere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+10-11	nella	_	_	_	_	_	_	_	_
+10	in	in	ADP	E	_	12	case	_	_
+11	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	fascia	fascia	NOUN	S	Gender=Fem|Number=Sing	9	obl	_	_
+13	temperata	temperato	ADJ	A	Gender=Fem|Number=Sing	12	amod	_	_
+14	e	e	CCONJ	CC	_	22	cc	_	_
+15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No
+16	80	80	NUM	N	NumType=Card	17	nummod	_	SpaceAfter=No
+17	%	%	SYM	SYM	_	22	nsubj	_	_
+18-19	del	_	_	_	_	_	_	_	_
+18	di	di	ADP	E	_	20	case	_	_
+19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	territorio	territorio	NOUN	S	Gender=Masc|Number=Sing	17	nmod	_	_
+21	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
+22	utilizzabile	utilizzabile	ADJ	A	Number=Sing	9	conj	_	_
+23	per	per	ADP	E	_	25	case	_	_
+24	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No
+25	agricoltura	agricoltura	NOUN	S	Gender=Fem|Number=Sing	22	obl	_	_
+26	e	e	CCONJ	CC	_	28	cc	_	_
+27	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
+28	attività	attività	NOUN	S	Gender=Fem	25	conj	_	_
+29	umane	umano	ADJ	A	Gender=Fem|Number=Plur	28	amod	_	SpaceAfter=No
+30	.	.	PUNCT	FS	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7732,7 +8510,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Da quella data in poi l'incremento demografico fu continuo nonostante l'emigrazione in altri continenti in seguito al quale, già nel 1800, avevano lasciato l'Europa 180 milioni di persone che divennero 390 milioni nel 1900, 500 milioni nel 1930, 540 milioni nel 1950 e 700 milioni nel 2000[senza fonte].
+# text = Da quella data in poi l'incremento demografico fu continuo nonostante l'emigrazione in altri continenti in seguito al quale, già nel 1800, avevano lasciato l'Europa 180 milioni di persone che divennero 390 milioni nel 1900, 500 milioni nel 1930, 540 milioni nel 1950 e 700 milioni nel 2000.
 1	Da	da	ADP	E	_	3	case	_	_
 2	quella	quello	DET	DD	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	data	data	NOUN	S	Gender=Fem|Number=Sing	10	obl	_	_
@@ -7755,7 +8533,7 @@
 19	a	a	ADP	E	_	21	case	_	_
 20	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	quale	quale	PRON	PR	Number=Sing|PronType=Rel	18	nmod	_	SpaceAfter=No
-22	,	,	PUNCT	FF	_	26	punct	_	_
+22	,	,	PUNCT	FF	_	21	punct	_	_
 23	già	già	ADV	B	_	26	advmod	_	_
 24-25	nel	_	_	_	_	_	_	_	_
 24	in	in	ADP	E	_	26	case	_	_
@@ -7794,16 +8572,12 @@
 54	1950	1950	NUM	N	NumType=Card	51	nummod	_	_
 55	e	e	CCONJ	CC	_	57	cc	_	_
 56	700	700	NUM	N	NumType=Card	57	nummod	_	_
-57	milioni	milione	NOUN	S	Gender=Masc|Number=Plur	37	conj	_	_
+57	milioni	milione	NOUN	S	Gender=Masc|Number=Plur	33	conj	_	_
 58-59	nel	_	_	_	_	_	_	_	_
 58	in	in	ADP	E	_	60	case	_	_
 59	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
 60	2000	2000	NUM	N	NumType=Card	57	nmod	_	SpaceAfter=No
-61	[	[	PUNCT	FB	_	63	punct	_	SpaceAfter=No
-62	senza	senza	ADP	E	_	63	case	_	SpacesAfter= 
-63	fonte	fonte	NOUN	S	Gender=Fem|Number=Sing	57	nmod	_	SpaceAfter=No
-64	]	]	PUNCT	FB	_	63	punct	_	SpaceAfter=No
-65	.	.	PUNCT	FS	_	10	punct	_	SpacesAfter=\n
+61	.	.	PUNCT	FS	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7868,14 +8642,104 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lingue[modifica | modifica wikitesto]
+# text = Albanese
+1	Albanese	albanese	NOUN	S	Number=Sing	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Armeno
+1	Armeno	armeno	ADV	B	_	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lingue baltiche
+1	Lingue	lingua	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     
+2	baltiche	baltico	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Celtiche
+1	Celtiche	celtica	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Germaniche
+1	Germaniche	germanico	ADJ	A	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Greco
+1	Greco	greco	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Indo-Iraniche
+1	Indo	Indo	ADJ	A	_	0	root	_	SpacesBefore=     |SpaceAfter=No
+2	-	-	PUNCT	FF	_	1	punct	_	SpaceAfter=No
+3	Iraniche	Iraniche	PROPN	SP	_	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Romanze
+1	Romanze	romanza	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     |SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lingue slave
+1	Lingue	lingua	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     
+2	slave	slavo	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lingue non indoeuropee
+1	Lingue	lingua	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesBefore=     
+2	non	non	ADV	BN	PronType=Neg	3	advmod	_	_
+3	indoeuropee	indoeuropeo	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lingue
 1	Lingue	lingua	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8729,18 +9593,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Città principali e aree urbane[modifica | modifica wikitesto]
+# text = Città principali e aree urbane
 1	Città	città	NOUN	S	Gender=Fem	0	root	_	_
 2	principali	principale	ADJ	A	Number=Plur	1	amod	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
 4	aree	area	NOUN	S	Gender=Fem|Number=Plur	1	conj	_	_
 5	urbane	urbano	ADJ	A	Gender=Fem|Number=Plur	4	amod	_	SpaceAfter=No
-6	[	[	PUNCT	FB	_	7	punct	_	SpaceAfter=No
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-8	|	|	SYM	SYM	_	7	dep	_	_
-9	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	_
-10	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	9	compound	_	SpaceAfter=No
-11	]	]	PUNCT	FB	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8838,14 +9696,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Economia[modifica | modifica wikitesto]
+# text = Economia
 1	Economia	economia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9424,14 +10276,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Trasporti[modifica | modifica wikitesto]
+# text = Trasporti
 1	Trasporti	trasporto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9772,14 +10618,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cultura[modifica | modifica wikitesto]
+# text = Cultura
 1	Cultura	cultura	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modificare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10219,14 +11059,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Religione[modifica | modifica wikitesto]
+# text = Religione
 1	Religione	religione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10387,15 +11221,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Santo Patrono[modifica | modifica wikitesto]
-1	Santo	Santo	PROPN	SP	_	0	root	_	_
-2	Patrono	Patrono	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
+# text = Santo Patrono
+1	Santo	santo	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+2	Patrono	Patrono	PROPN	SP	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10435,13 +11263,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sport[modifica | modifica wikitesto]
-1	Sport[	sporta	NOUN	S	Gender=Masc	0	root	_	SpaceAfter=No
-2	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-3	|	|	SYM	SYM	_	2	dep	_	_
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	conj	_	_
-5	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	4	compound	_	SpaceAfter=No
-6	]	]	PUNCT	FB	_	1	punct	_	SpacesAfter=\n
+# text = Sport
+1	Sport	sport	NOUN	S	Gender=Masc	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10590,14 +11413,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Note[modifica | modifica wikitesto]
+# text = Note
 1	Note	nota	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10605,14 +11422,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Bibliografia[modifica | modifica wikitesto]
+# text = Bibliografia
 1	Bibliografia	bibliografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10620,15 +11431,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Voci correlate[modifica | modifica wikitesto]
+# text = Voci correlate
 1	Voci	voce	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	correlate	correlato	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10636,15 +11441,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Altri progetti[modifica | modifica wikitesto]
+# text = Altri progetti
 1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
 2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -10652,24 +11451,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Collegamenti esterni[modifica | modifica wikitesto]
+# text = Altri progetti
+1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
+2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Collegamenti esterni
 1	Collegamenti	collegamento	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	esterni	esterno	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Menu di navigazione
-1	Menu	menu	NOUN	S	Gender=Masc	0	root	_	_
-2	di	di	ADP	E	_	3	case	_	_
-3	navigazione	navigazione	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
 

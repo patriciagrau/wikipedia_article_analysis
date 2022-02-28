@@ -1,5 +1,3 @@
-# https://it.wikipedia.org/wiki/Religione
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Religione - Wikipedia
 1	Religione	religione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	-	-	PUNCT	FF	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Religione
-1	Religione	religione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -193,14 +182,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Etimologia[modifica | modifica wikitesto]
+# text = Etimologia
 1	Etimologia	etimologia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -557,7 +540,7 @@
 20	.	.	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 4
-# text = Inoltre «parla spesso dei “nodi stretti” [...] della religio, dai quali Epicuro avrebbe liberato l'umanità».
+# text = Inoltre «parla spesso dei “nodi stretti” della religio, dai quali Epicuro avrebbe liberato l'umanità».
 1	Inoltre	inoltre	ADV	B	_	3	advmod	_	_
 2	«	«	PUNCT	FB	_	3	punct	_	SpaceAfter=No
 3	parla	parlare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -568,27 +551,101 @@
 7	“	“	PUNCT	FB	_	8	punct	_	SpaceAfter=No
 8	nodi	nodo	NOUN	S	Gender=Masc|Number=Plur	3	obl	_	_
 9	stretti	stretto	ADJ	A	Gender=Masc|Number=Plur	8	amod	_	SpaceAfter=No
-10	”	”	PUNCT	FB	_	8	punct	_	_
-11	[	[	PUNCT	FB	_	17	punct	_	SpaceAfter=No
-12	..	..	PUNCT	FF	_	8	punct	_	SpaceAfter=No
-13	.	.	PUNCT	FF	_	8	punct	_	SpaceAfter=No
-14	]	]	PUNCT	FB	_	17	punct	_	_
-15-16	della	_	_	_	_	_	_	_	_
-15	di	di	ADP	E	_	17	case	_	_
-16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	religio	religio	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	FF	_	17	punct	_	_
-19-20	dai	_	_	_	_	_	_	_	_
-19	da	da	ADP	E	_	21	case	_	_
-20	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	quali	quale	PRON	PR	Number=Plur|PronType=Rel	24	obl	_	_
-22	Epicuro	Epicuro	PROPN	SP	_	24	nsubj	_	_
-23	avrebbe	avere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-24	liberato	liberare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl:relcl	_	_
-25	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
-26	umanità	umanità	NOUN	S	Gender=Fem	24	obj	_	SpaceAfter=No
-27	»	»	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-28	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n
+10	”	”	PUNCT	FB	_	8	punct	_	SpacesAfter=\s\s
+11-12	della	_	_	_	_	_	_	_	_
+11	di	di	ADP	E	_	13	case	_	_
+12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	religio	religio	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	13	punct	_	_
+15-16	dai	_	_	_	_	_	_	_	_
+15	da	da	ADP	E	_	17	case	_	_
+16	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	quali	quale	PRON	PR	Number=Plur|PronType=Rel	20	obl	_	_
+18	Epicuro	Epicuro	PROPN	SP	_	20	nsubj	_	_
+19	avrebbe	avere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
+20	liberato	liberare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl:relcl	_	_
+21	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No
+22	umanità	umanità	NOUN	S	Gender=Fem	20	obj	_	SpaceAfter=No
+23	»	»	PUNCT	FB	_	3	punct	_	SpaceAfter=No
+24	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n\s
+
+# sent_id = 5
+# text = Un significato simile le aveva attribuito lo storico greco Polibio, dando alla religione, ma con particolare riguardo alla tradizione e ai costumi dei Romani, il senso di un instrumentum regni.
+1	Un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	significato	significato	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	simile	simile	ADJ	A	Number=Sing	2	amod	_	_
+4	le	le	PRON	PC	Clitic=Yes|Gender=Fem|Person=3|PronType=Prs	6	iobj	_	_
+5	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux	_	_
+6	attribuito	attribuire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+7	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	storico	storico	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+9	greco	greco	ADJ	A	Gender=Masc|Number=Sing	8	amod	_	_
+10	Polibio	Polibio	PROPN	SP	_	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	FF	_	6	punct	_	_
+12	dando	dare	VERB	V	VerbForm=Ger	6	advcl	_	_
+13-14	alla	_	_	_	_	_	_	_	_
+13	a	a	ADP	E	_	15	case	_	_
+14	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	religione	religione	NOUN	S	Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
+16	,	,	PUNCT	FF	_	20	punct	_	_
+17	ma	ma	CCONJ	CC	_	20	cc	_	_
+18	con	con	ADP	E	_	20	case	_	_
+19	particolare	particolare	ADJ	A	Gender=Masc|Number=Sing	20	amod	_	_
+20	riguardo	riguardo	NOUN	S	Gender=Masc|Number=Sing	12	obl	_	_
+21-22	alla	_	_	_	_	_	_	_	_
+21	a	a	ADP	E	_	23	case	_	_
+22	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	tradizione	tradizione	NOUN	S	Gender=Fem|Number=Sing	20	nmod	_	_
+24	e	e	CCONJ	CC	_	27	cc	_	_
+25-26	ai	_	_	_	_	_	_	_	_
+25	a	a	ADP	E	_	27	case	_	_
+26	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
+27	costumi	costume	NOUN	S	Gender=Masc|Number=Plur	23	conj	_	_
+28-29	dei	_	_	_	_	_	_	_	_
+28	di	di	ADP	E	_	30	case	_	_
+29	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
+30	Romani	Romani	PROPN	SP	_	27	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	FF	_	12	punct	_	_
+32	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+33	senso	senso	NOUN	S	Gender=Masc|Number=Sing	12	obj	_	_
+34	di	di	ADP	E	_	36	case	_	_
+35	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	instrumentum	instrumentum	X	SW	Foreign=Yes	33	nmod	_	_
+37	regni	regni	X	SW	Foreign=Yes	36	flat:foreign	_	SpaceAfter=No
+38	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Nello specifico Lattanzio (250-327), che fu ripreso anche da Agostino d'Ippona (354-430), correggendo Cicerone, sostiene:
+1-2	Nello	_	_	_	_	_	_	_	_
+1	In	in	ADP	E	_	4	case	_	_
+2	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	specifico	specifico	ADJ	A	Gender=Masc|Number=Sing	4	amod	_	_
+4	Lattanzio	Lattanzio	PROPN	SP	_	28	obl	_	_
+5	(	(	PUNCT	FB	_	6	punct	_	SpaceAfter=No
+6	250	250	NUM	N	NumType=Card	4	nummod	_	SpaceAfter=No
+7	-	-	PUNCT	FF	_	6	punct	_	SpaceAfter=No
+8	327	327	NUM	N	NumType=Card	6	compound	_	SpaceAfter=No
+9	)	)	PUNCT	FB	_	6	punct	_	SpaceAfter=No
+10	,	,	PUNCT	FF	_	4	punct	_	_
+11	che	che	PRON	PR	PronType=Rel	13	nsubj:pass	_	_
+12	fu	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	_	_
+13	ripreso	riprendere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl:relcl	_	_
+14	anche	anche	ADV	B	_	16	advmod	_	_
+15	da	da	ADP	E	_	16	case	_	_
+16	Agostino	Agostino	PROPN	SP	_	13	obl:agent	_	_
+17	d'	di	ADP	E	_	18	case	_	SpaceAfter=No
+18	Ippona	Ippona	PROPN	SP	_	16	nmod	_	_
+19	(	(	PUNCT	FB	_	20	punct	_	SpaceAfter=No
+20	354	354	NUM	N	NumType=Card	16	nummod	_	SpaceAfter=No
+21	-	-	PUNCT	FF	_	20	punct	_	SpaceAfter=No
+22	430	430	NUM	N	NumType=Card	20	compound	_	SpaceAfter=No
+23	)	)	PUNCT	FB	_	20	punct	_	SpaceAfter=No
+24	,	,	PUNCT	FF	_	13	punct	_	_
+25	correggendo	correggere	VERB	V	VerbForm=Ger	13	advcl	_	_
+26	Cicerone	Cicerone	PROPN	SP	_	25	obj	_	SpaceAfter=No
+27	,	,	PUNCT	FF	_	4	punct	_	_
+28	sostiene	sostenere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+29	:	:	PUNCT	FC	_	28	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1121,18 +1178,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Storia della definizione[modifica | modifica wikitesto]
+# text = Storia della definizione
 1	Storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2-3	della	_	_	_	_	_	_	_	_
 2	di	di	ADP	E	_	4	case	_	_
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	definizione	definizione	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	conj	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1140,14 +1191,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Occidente[modifica | modifica wikitesto]
-1	Occidente	Occidente	PROPN	SP	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
+# text = Occidente
+1	Occidente	occidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1155,15 +1200,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Grecia antica[modifica | modifica wikitesto]
-1	Grecia	grecia	PROPN	SP	_	0	root	_	_
+# text = Grecia antica
+1	Grecia	grecia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	antica	antico	ADJ	A	Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1344,15 +1383,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Roma antica[modifica | modifica wikitesto]
+# text = Roma antica
 1	Roma	Roma	PROPN	SP	_	0	root	_	_
 2	antica	antico	ADJ	A	Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1905,15 +1938,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Occidente cristiano[modifica | modifica wikitesto]
+# text = Occidente cristiano
 1	Occidente	occidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	cristiano	cristiano	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2697,17 +2724,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Occidente moderno e contemporaneo[modifica | modifica wikitesto]
+# text = Occidente moderno e contemporaneo
 1	Occidente	occidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	moderno	moderno	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
 4	contemporaneo	contemporaneo	ADJ	A	Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2845,7 +2866,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Altri autori, come l'irlandese John Toland (1670-1722) o il francese Voltaire (1694-1778) furono propugnatori del deismo, un lettura decisamente razionalista della religione.
+# text = Altri autori, come l'irlandese John Toland (1670-1722) o il francese Voltaire (1694-1778) furono propugnatori del deismo, una lettura decisamente razionalista della religione.
 1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
 2	autori	autore	NOUN	S	Gender=Masc|Number=Plur	24	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	FF	_	2	punct	_	_
@@ -2875,7 +2896,7 @@
 26	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	deismo	deismo	NOUN	S	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No
 28	,	,	PUNCT	FF	_	27	punct	_	_
-29	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+29	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	lettura	lettura	NOUN	S	Gender=Fem|Number=Sing	27	appos	_	_
 31	decisamente	decisamente	ADV	B	_	32	advmod	_	_
 32	razionalista	razionalista	ADJ	A	Number=Sing	30	amod	_	_
@@ -3069,50 +3090,47 @@
 22	.	.	PUNCT	FS	_	16	punct	_	_
 
 # sent_id = 2
-# text = La paura non crea che schiavi [...] che credono che tutto divenga lecito quando si tratta o di guadagnarsi la benevolenza del loro Signore, o di sottrarsi ai suoi temuti castighi.
+# text = La paura non crea che schiavi che credono che tutto divenga lecito quando si tratta o di guadagnarsi la benevolenza del loro Signore, o di sottrarsi ai suoi temuti castighi.
 1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	paura	paura	NOUN	S	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	non	non	ADV	BN	PronType=Neg	4	advmod	_	_
 4	crea	creare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	che	che	SCONJ	CS	_	6	mark	_	_
-6	schiavi	schiavo	NOUN	S	Gender=Masc|Number=Plur	4	obj	_	_
-7	[	[	PUNCT	FB	_	8	punct	_	SpaceAfter=No
-8	...	...	PUNCT	FF	_	6	punct	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	8	punct	_	_
-10	che	che	PRON	PR	PronType=Rel	11	nsubj	_	_
-11	credono	credere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
-12	che	che	SCONJ	CS	_	14	mark	_	_
-13	tutto	tutto	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	14	nsubj	_	_
-14	divenga	divenire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
-15	lecito	lecito	ADJ	A	Gender=Masc|Number=Sing	14	xcomp	_	_
-16	quando	quando	SCONJ	CS	_	18	mark	_	_
-17	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	18	expl	_	_
-18	tratta	trattare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	_	_
-19	o	o	CCONJ	CC	_	21	cc	_	_
-20	di	di	ADP	E	_	21	mark	_	_
-21-22	guadagnarsi	_	_	_	_	_	_	_	_
-21	guadagnar	guadagnare	VERB	V	VerbForm=Inf	18	conj	_	_
-22	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	21	expl	_	_
-23	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	benevolenza	benevolenza	NOUN	S	Gender=Fem|Number=Sing	21	obj	_	_
-25-26	del	_	_	_	_	_	_	_	_
-25	di	di	ADP	E	_	28	case	_	_
-26	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-27	loro	loro	DET	AP	Poss=Yes|PronType=Prs	28	det:poss	_	_
-28	Signore	Signore	NOUN	S	_	24	nmod	_	SpaceAfter=No
-29	,	,	PUNCT	FF	_	32	punct	_	_
-30	o	o	CCONJ	CC	_	32	cc	_	_
-31	di	di	ADP	E	_	32	mark	_	_
-32-33	sottrarsi	_	_	_	_	_	_	_	_
-32	sottrar	sottrare	VERB	V	VerbForm=Inf	21	conj	_	_
-33	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	32	expl	_	_
-34-35	ai	_	_	_	_	_	_	_	_
-34	a	a	ADP	E	_	38	case	_	_
-35	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
-36	suoi	suo	DET	AP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	38	det:poss	_	_
-37	temuti	temuto	ADJ	A	Gender=Masc|Number=Plur	38	amod	_	_
-38	castighi	castigo	NOUN	S	Gender=Masc|Number=Plur	32	obl	_	SpaceAfter=No
-39	.	.	PUNCT	FS	_	4	punct	_	_
+6	schiavi	schiavo	NOUN	S	Gender=Masc|Number=Plur	4	nsubj	_	SpacesAfter=\s\s
+7	che	che	PRON	PR	PronType=Rel	8	nsubj	_	_
+8	credono	credere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
+9	che	che	SCONJ	CS	_	11	mark	_	_
+10	tutto	tutto	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	11	nsubj	_	_
+11	divenga	divenire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+12	lecito	lecito	ADJ	A	Gender=Masc|Number=Sing	11	xcomp	_	_
+13	quando	quando	SCONJ	CS	_	15	mark	_	_
+14	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	15	expl	_	_
+15	tratta	trattare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
+16	o	o	CCONJ	CC	_	18	cc	_	_
+17	di	di	ADP	E	_	18	mark	_	_
+18-19	guadagnarsi	_	_	_	_	_	_	_	_
+18	guadagnar	guadagnare	VERB	V	VerbForm=Inf	15	conj	_	_
+19	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	18	expl	_	_
+20	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	benevolenza	benevolenza	NOUN	S	Gender=Fem|Number=Sing	18	obj	_	_
+22-23	del	_	_	_	_	_	_	_	_
+22	di	di	ADP	E	_	25	case	_	_
+23	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+24	loro	loro	DET	AP	Poss=Yes|PronType=Prs	25	det:poss	_	_
+25	Signore	Signore	NOUN	S	_	21	nmod	_	SpaceAfter=No
+26	,	,	PUNCT	FF	_	29	punct	_	_
+27	o	o	CCONJ	CC	_	29	cc	_	_
+28	di	di	ADP	E	_	29	mark	_	_
+29-30	sottrarsi	_	_	_	_	_	_	_	_
+29	sottrar	sottrare	VERB	V	VerbForm=Inf	18	conj	_	_
+30	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	29	expl	_	_
+31-32	ai	_	_	_	_	_	_	_	_
+31	a	a	ADP	E	_	35	case	_	_
+32	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
+33	suoi	suo	DET	AP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	35	det:poss	_	_
+34	temuti	temuto	ADJ	A	Gender=Masc|Number=Plur	35	amod	_	_
+35	castighi	castigo	NOUN	S	Gender=Masc|Number=Plur	29	obl	_	SpaceAfter=No
+36	.	.	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 3
 # text = La nozione di un Dio-tiranno non può produrre che schiavi meschini, infelici, rissosi, intolleranti.»
@@ -3143,16 +3161,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Culture non occidentali[modifica | modifica wikitesto]
+# text = Culture non occidentali
 1	Culture	cultura	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	non	non	ADV	BN	PronType=Neg	3	advmod	_	_
 3	occidentali	occidentale	ADJ	A	Number=Plur	1	amod	_	SpaceAfter=No
-4	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-6	|	|	SYM	SYM	_	5	dep	_	_
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	7	compound	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3295,17 +3307,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vicino e Medio Oriente[modifica | modifica wikitesto]
+# text = Vicino e Medio Oriente
 1	Vicino	Vicino	PROPN	SP	_	0	root	_	_
 2	e	e	CCONJ	CC	_	3	cc	_	_
 3	Medio	Medio	PROPN	SP	_	1	conj	_	_
 4	Oriente	Oriente	PROPN	SP	_	3	flat:name	_	SpaceAfter=No
-5	[	[	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-7	|	|	SYM	SYM	_	6	dep	_	_
-8	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	8	compound	_	SpaceAfter=No
-10	]	]	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3848,15 +3854,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Subcontinente indiano[modifica | modifica wikitesto]
+# text = Subcontinente indiano
 1	Subcontinente	subcontinente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	indiano	indiano	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -4336,15 +4336,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Estremo Oriente[modifica | modifica wikitesto]
-1	Estremo	Estremo	PROPN	SP	_	0	root	_	_
-2	Oriente	Oriente	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
+# text = Estremo Oriente
+1	Estremo	estremo	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+2	Oriente	Oriente	PROPN	SP	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -4749,14 +4743,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Descrizione[modifica | modifica wikitesto]
+# text = Descrizione
 1	Descrizione	descrizione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -4764,7 +4752,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Il dibattito sulla nozione di religione[modifica | modifica wikitesto]
+# text = Il dibattito sulla nozione di religione
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	dibattito	dibattito	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 3-4	sulla	_	_	_	_	_	_	_	_
@@ -4773,12 +4761,6 @@
 5	nozione	nozione	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
 6	di	di	ADP	E	_	7	case	_	_
 7	religione	religione	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-8	[	[	PUNCT	FB	_	9	punct	_	SpaceAfter=No
-9	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	appos	_	_
-10	|	|	SYM	SYM	_	9	dep	_	_
-11	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	9	nmod	_	_
-12	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	11	compound	_	SpaceAfter=No
-13	]	]	PUNCT	FB	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5100,106 +5082,102 @@
 68	e	e	CCONJ	CC	_	70	cc	_	_
 69	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	70	det	_	SpaceAfter=No
 70	utilizzo	utilizzo	NOUN	S	Gender=Masc|Number=Sing	67	conj	_	SpaceAfter=No
-71	.	.	PUNCT	FS	_	23	punct	_	_
+71	.	.	PUNCT	FS	_	23	punct	_	SpacesAfter=\s\s
 
 # sent_id = 2
-# text = [...] Considerata questa prospettiva, la definizione della "religione" è per sua natura operativa e non reale: essa, cioè, non persegue lo scopo di cogliere la "realtà" della religione, ma di definire in modo provvisorio, come work in progress, che cosa sia "religione" in quelle società e in quelle tradizioni oggetto di indagine e che si differenziano nei loro esiti e nelle loro manifestazioni dai modi a noi abituali.»
-1	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-2	..	..	PUNCT	FF	_	19	punct	_	SpaceAfter=No
-3	.	.	PUNCT	FF	_	5	punct	_	SpaceAfter=No
-4	]	]	PUNCT	FB	_	5	punct	_	_
-5	Considerata	considerare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	advcl	_	_
-6	questa	questo	DET	DD	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
-7	prospettiva	prospettiva	NOUN	S	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
-8	,	,	PUNCT	FF	_	5	punct	_	_
-9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	definizione	definizione	NOUN	S	Gender=Fem|Number=Sing	19	nsubj	_	_
-11-12	della	_	_	_	_	_	_	_	_
-11	di	di	ADP	E	_	14	case	_	_
-12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-13	"	"	PUNCT	FB	_	14	punct	_	SpaceAfter=No
-14	religione	religione	NOUN	S	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
-15	"	"	PUNCT	FB	_	14	punct	_	_
-16	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
-17	per	per	ADP	E	_	19	case	_	_
-18	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	19	det:poss	_	_
-19	natura	natura	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
-20	operativa	operativo	ADJ	A	Gender=Fem|Number=Sing	19	amod	_	_
-21	e	e	CCONJ	CC	_	23	cc	_	_
-22	non	non	ADV	BN	PronType=Neg	23	advmod	_	_
-23	reale	reale	ADJ	A	Number=Sing	20	conj	_	SpaceAfter=No
-24	:	:	PUNCT	FC	_	19	punct	_	_
-25	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	30	nsubj	_	SpaceAfter=No
-26	,	,	PUNCT	FF	_	25	punct	_	_
-27	cioè	cioè	ADV	B	_	30	advmod	_	SpaceAfter=No
-28	,	,	PUNCT	FF	_	27	punct	_	_
-29	non	non	ADV	BN	PronType=Neg	30	advmod	_	_
-30	persegue	perseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	parataxis	_	_
-31	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	scopo	scopo	NOUN	S	Gender=Masc|Number=Sing	30	obj	_	_
-33	di	di	ADP	E	_	34	mark	_	_
-34	cogliere	cogliere	VERB	V	VerbForm=Inf	32	acl	_	_
-35	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-36	"	"	PUNCT	FB	_	37	punct	_	SpaceAfter=No
-37	realtà	realtà	NOUN	S	Gender=Fem	34	obj	_	SpaceAfter=No
-38	"	"	PUNCT	FB	_	37	punct	_	_
-39-40	della	_	_	_	_	_	_	_	_
-39	di	di	ADP	E	_	41	case	_	_
-40	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	religione	religione	NOUN	S	Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No
-42	,	,	PUNCT	FF	_	45	punct	_	_
-43	ma	ma	CCONJ	CC	_	45	cc	_	_
-44	di	di	ADP	E	_	45	mark	_	_
-45	definire	definire	VERB	V	VerbForm=Inf	34	conj	_	_
-46	in	in	ADP	E	_	47	case	_	_
-47	modo	modo	NOUN	S	Gender=Masc|Number=Sing	45	obl	_	_
-48	provvisorio	provvisorio	ADJ	A	Gender=Masc|Number=Sing	47	amod	_	SpaceAfter=No
-49	,	,	PUNCT	FF	_	45	punct	_	_
-50	come	come	ADP	E	_	51	case	_	_
-51	work	work	NOUN	S	_	45	obl	_	_
-52	in	in	ADP	E	_	53	case	_	_
-53	progress	progress	NOUN	S	_	51	nmod	_	SpaceAfter=No
-54	,	,	PUNCT	FF	_	45	punct	_	_
-55	che	che	DET	DQ	PronType=Int	56	det	_	_
-56	cosa	cosa	PRON	PQ	Number=Sing|PronType=Int	45	obj	_	_
-57	sia	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	59	cop	_	_
-58	"	"	PUNCT	FB	_	59	punct	_	SpaceAfter=No
-59	religione	religione	NOUN	S	Gender=Fem|Number=Sing	45	ccomp	_	SpaceAfter=No
-60	"	"	PUNCT	FB	_	59	punct	_	_
+# text = Considerata questa prospettiva, la definizione della "religione" è per sua natura operativa e non reale: essa, cioè, non persegue lo scopo di cogliere la "realtà" della religione, ma di definire in modo provvisorio, come work in progress, che cosa sia "religione" in quelle società e in quelle tradizioni oggetto di indagine e che si differenziano nei loro esiti e nelle loro manifestazioni dai modi a noi abituali.»
+1	Considerata	considerare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	15	advcl	_	_
+2	questa	questo	DET	DD	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
+3	prospettiva	prospettiva	NOUN	S	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	1	punct	_	_
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	definizione	definizione	NOUN	S	Gender=Fem|Number=Sing	15	nsubj	_	_
+7-8	della	_	_	_	_	_	_	_	_
+7	di	di	ADP	E	_	10	case	_	_
+8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	"	"	PUNCT	FB	_	10	punct	_	SpaceAfter=No
+10	religione	religione	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
+11	"	"	PUNCT	FB	_	10	punct	_	_
+12	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+13	per	per	ADP	E	_	15	case	_	_
+14	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det:poss	_	_
+15	natura	natura	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
+16	operativa	operativo	ADJ	A	Gender=Fem|Number=Sing	15	amod	_	_
+17	e	e	CCONJ	CC	_	19	cc	_	_
+18	non	non	ADV	BN	PronType=Neg	19	advmod	_	_
+19	reale	reale	ADJ	A	Number=Sing	16	conj	_	SpaceAfter=No
+20	:	:	PUNCT	FC	_	15	punct	_	_
+21	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	SpaceAfter=No
+22	,	,	PUNCT	FF	_	21	punct	_	_
+23	cioè	cioè	ADV	B	_	26	advmod	_	SpaceAfter=No
+24	,	,	PUNCT	FF	_	23	punct	_	_
+25	non	non	ADV	BN	PronType=Neg	26	advmod	_	_
+26	persegue	perseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	parataxis	_	_
+27	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	scopo	scopo	NOUN	S	Gender=Masc|Number=Sing	26	obj	_	_
+29	di	di	ADP	E	_	30	mark	_	_
+30	cogliere	cogliere	VERB	V	VerbForm=Inf	28	acl	_	_
+31	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+32	"	"	PUNCT	FB	_	33	punct	_	SpaceAfter=No
+33	realtà	realtà	NOUN	S	Gender=Fem	30	obj	_	SpaceAfter=No
+34	"	"	PUNCT	FB	_	33	punct	_	_
+35-36	della	_	_	_	_	_	_	_	_
+35	di	di	ADP	E	_	37	case	_	_
+36	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	religione	religione	NOUN	S	Gender=Fem|Number=Sing	33	nmod	_	SpaceAfter=No
+38	,	,	PUNCT	FF	_	41	punct	_	_
+39	ma	ma	CCONJ	CC	_	41	cc	_	_
+40	di	di	ADP	E	_	41	mark	_	_
+41	definire	definire	VERB	V	VerbForm=Inf	30	conj	_	_
+42	in	in	ADP	E	_	43	case	_	_
+43	modo	modo	NOUN	S	Gender=Masc|Number=Sing	41	obl	_	_
+44	provvisorio	provvisorio	ADJ	A	Gender=Masc|Number=Sing	43	amod	_	SpaceAfter=No
+45	,	,	PUNCT	FF	_	41	punct	_	_
+46	come	come	ADP	E	_	47	case	_	_
+47	work	work	NOUN	S	_	41	obl	_	_
+48	in	in	ADP	E	_	49	case	_	_
+49	progress	progress	NOUN	S	_	47	nmod	_	SpaceAfter=No
+50	,	,	PUNCT	FF	_	41	punct	_	_
+51	che	che	DET	DQ	PronType=Int	52	det	_	_
+52	cosa	cosa	PRON	PQ	Number=Sing|PronType=Int	41	obj	_	_
+53	sia	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	cop	_	_
+54	"	"	PUNCT	FB	_	55	punct	_	SpaceAfter=No
+55	religione	religione	NOUN	S	Gender=Fem|Number=Sing	41	ccomp	_	SpaceAfter=No
+56	"	"	PUNCT	FB	_	55	punct	_	_
+57	in	in	ADP	E	_	59	case	_	_
+58	quelle	quello	DET	DD	Gender=Fem|Number=Plur|PronType=Dem	59	det	_	_
+59	società	società	NOUN	S	Gender=Fem	55	nmod	_	_
+60	e	e	CCONJ	CC	_	63	cc	_	_
 61	in	in	ADP	E	_	63	case	_	_
 62	quelle	quello	DET	DD	Gender=Fem|Number=Plur|PronType=Dem	63	det	_	_
-63	società	società	NOUN	S	Gender=Fem	59	nmod	_	_
-64	e	e	CCONJ	CC	_	67	cc	_	_
-65	in	in	ADP	E	_	67	case	_	_
-66	quelle	quello	DET	DD	Gender=Fem|Number=Plur|PronType=Dem	67	det	_	_
-67	tradizioni	tradizione	NOUN	S	Gender=Fem|Number=Plur	63	conj	_	_
-68	oggetto	oggetto	NOUN	S	Gender=Masc|Number=Sing	67	compound	_	_
-69	di	di	ADP	E	_	70	case	_	_
-70	indagine	indagine	NOUN	S	Gender=Fem|Number=Sing	68	nmod	_	_
-71	e	e	CCONJ	CC	_	74	cc	_	_
-72	che	che	PRON	PR	PronType=Rel	74	nsubj:pass	_	_
-73	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	74	expl	_	_
-74	differenziano	differenziare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	59	conj	_	_
-75-76	nei	_	_	_	_	_	_	_	_
-75	in	in	ADP	E	_	78	case	_	_
-76	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	78	det	_	_
-77	loro	loro	DET	AP	Poss=Yes|PronType=Prs	78	det:poss	_	_
-78	esiti	esito	NOUN	S	Gender=Masc|Number=Plur	74	obl	_	_
-79	e	e	CCONJ	CC	_	83	cc	_	_
-80-81	nelle	_	_	_	_	_	_	_	_
-80	in	in	ADP	E	_	83	case	_	_
-81	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	83	det	_	_
-82	loro	loro	DET	AP	Poss=Yes|PronType=Prs	83	det:poss	_	_
-83	manifestazioni	manifestazione	NOUN	S	Gender=Fem|Number=Plur	78	conj	_	_
-84-85	dai	_	_	_	_	_	_	_	_
-84	da	da	ADP	E	_	86	case	_	_
-85	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	86	det	_	_
-86	modi	modo	NOUN	S	Gender=Masc|Number=Plur	74	obl	_	_
-87	a	a	ADP	E	_	88	case	_	_
-88	noi	noi	PRON	PE	Number=Plur|Person=1|PronType=Prs	86	nmod	_	_
-89	abituali	abituale	ADJ	A	Number=Plur	88	amod	_	SpaceAfter=No
-90	.	.	PUNCT	FS	_	19	punct	_	SpaceAfter=No
-91	»	»	PUNCT	FB	_	19	punct	_	SpacesAfter=\n
+63	tradizioni	tradizione	NOUN	S	Gender=Fem|Number=Plur	59	conj	_	_
+64	oggetto	oggetto	NOUN	S	Gender=Masc|Number=Sing	63	compound	_	_
+65	di	di	ADP	E	_	66	case	_	_
+66	indagine	indagine	NOUN	S	Gender=Fem|Number=Sing	64	nmod	_	_
+67	e	e	CCONJ	CC	_	70	cc	_	_
+68	che	che	PRON	PR	PronType=Rel	70	nsubj:pass	_	_
+69	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	70	expl	_	_
+70	differenziano	differenziare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	55	conj	_	_
+71-72	nei	_	_	_	_	_	_	_	_
+71	in	in	ADP	E	_	74	case	_	_
+72	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	74	det	_	_
+73	loro	loro	DET	AP	Poss=Yes|PronType=Prs	74	det:poss	_	_
+74	esiti	esito	NOUN	S	Gender=Masc|Number=Plur	70	obl	_	_
+75	e	e	CCONJ	CC	_	79	cc	_	_
+76-77	nelle	_	_	_	_	_	_	_	_
+76	in	in	ADP	E	_	79	case	_	_
+77	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	79	det	_	_
+78	loro	loro	DET	AP	Poss=Yes|PronType=Prs	79	det:poss	_	_
+79	manifestazioni	manifestazione	NOUN	S	Gender=Fem|Number=Plur	74	conj	_	_
+80-81	dai	_	_	_	_	_	_	_	_
+80	da	da	ADP	E	_	82	case	_	_
+81	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	82	det	_	_
+82	modi	modo	NOUN	S	Gender=Masc|Number=Plur	70	obl	_	_
+83	a	a	ADP	E	_	84	case	_	_
+84	noi	noi	PRON	PE	Number=Plur|Person=1|PronType=Prs	82	nmod	_	_
+85	abituali	abituale	ADJ	A	Number=Plur	84	amod	_	SpaceAfter=No
+86	.	.	PUNCT	FS	_	15	punct	_	SpaceAfter=No
+87	»	»	PUNCT	FB	_	15	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5466,15 +5444,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Analisi filosofica[modifica | modifica wikitesto]
+# text = Analisi filosofica
 1	Analisi	analisi	NOUN	S	Gender=Fem	0	root	_	_
 2	filosofica	filosofico	ADJ	A	Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5482,8 +5454,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Natura problematica della definizione di "religione" Max Weber (1864-1920) sostenne che la definizione di "religione" si può declinare alla fine della ricerca su di essa.
-1	Natura	natura	NOUN	S	Gender=Fem|Number=Sing	17	nsubj	_	_
+# text = Natura problematica della definizione di "religione"
+1	Natura	natura	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	problematica	problematico	ADJ	A	Gender=Fem|Number=Sing	1	amod	_	_
 3-4	della	_	_	_	_	_	_	_	_
 3	di	di	ADP	E	_	5	case	_	_
@@ -5492,37 +5464,7 @@
 6	di	di	ADP	E	_	8	case	_	_
 7	"	"	PUNCT	FB	_	8	punct	_	SpaceAfter=No
 8	religione	religione	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-9	"	"	PUNCT	FB	_	8	punct	_	_
-10	Max	Max	PROPN	SP	_	17	nsubj	_	_
-11	Weber	Weber	PROPN	SP	_	10	flat:name	_	_
-12	(	(	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-13	1864	1864	NUM	N	NumType=Card	10	nummod	_	SpaceAfter=No
-14	-	-	PUNCT	FF	_	13	punct	_	SpaceAfter=No
-15	1920	1920	NUM	N	NumType=Card	13	compound	_	SpaceAfter=No
-16	)	)	PUNCT	FB	_	13	punct	_	_
-17	sostenne	sostenere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-18	che	che	SCONJ	CS	_	27	mark	_	_
-19	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	definizione	definizione	NOUN	S	Gender=Fem|Number=Sing	27	nsubj:pass	_	_
-21	di	di	ADP	E	_	23	case	_	_
-22	"	"	PUNCT	FB	_	23	punct	_	SpaceAfter=No
-23	religione	religione	NOUN	S	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
-24	"	"	PUNCT	FB	_	23	punct	_	_
-25	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	27	expl:pass	_	_
-26	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
-27	declinare	declinare	VERB	V	VerbForm=Inf	17	ccomp	_	_
-28-29	alla	_	_	_	_	_	_	_	_
-28	a	a	ADP	E	_	30	case	_	_
-29	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-30	fine	fine	NOUN	S	Gender=Fem|Number=Sing	27	obl	_	_
-31-32	della	_	_	_	_	_	_	_	_
-31	di	di	ADP	E	_	33	case	_	_
-32	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	ricerca	ricerca	NOUN	S	Gender=Fem|Number=Sing	30	nmod	_	_
-34	su	su	ADP	E	_	36	case	_	_
-35	di	di	ADP	E	_	34	fixed	_	_
-36	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	nmod	_	SpaceAfter=No
-37	.	.	PUNCT	FS	_	17	punct	_	SpacesAfter=\n
+9	"	"	PUNCT	FB	_	8	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5864,6 +5806,32 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Le spiegazioni sulla natura e le ragioni dell'esistenza dei credi religiosi
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	spiegazioni	spiegazione	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
+3-4	sulla	_	_	_	_	_	_	_	_
+3	su	su	ADP	E	_	5	case	_	_
+4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	natura	natura	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
+6	e	e	CCONJ	CC	_	8	cc	_	_
+7	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	ragioni	ragione	NOUN	S	Gender=Fem|Number=Plur	2	conj	_	_
+9-10	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+9	di	di	ADP	E	_	11	case	_	_
+10	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
+11	esistenza	esistenza	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	_
+12-13	dei	_	_	_	_	_	_	_	_
+12	di	di	ADP	E	_	14	case	_	_
+13	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	credi	crede	NOUN	S	Gender=Masc|Number=Plur	11	nmod	_	_
+15	religiosi	religioso	ADJ	A	Gender=Masc|Number=Plur	14	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Il filosofo tedesco Ludwig Feuerbach (1804-1872) sosteneva che:
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	filosofo	filosofo	NOUN	S	Gender=Masc|Number=Sing	11	nsubj	_	_
@@ -5879,13 +5847,144 @@
 12	che	che	SCONJ	CS	_	11	mark	_	SpaceAfter=No
 13	:	:	PUNCT	FC	_	11	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = la religione consiste di idee e valori prodotti dagli esseri umani, erroneamente proiettati su forze e personificazioni divine.
+1	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	religione	religione	NOUN	S	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	consiste	consistere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	di	di	ADP	E	_	5	case	_	_
+5	idee	idea	NOUN	S	Gender=Fem|Number=Plur	3	obl	_	_
+6	e	e	CCONJ	CC	_	7	cc	_	_
+7	valori	valore	NOUN	S	Gender=Masc|Number=Plur	5	conj	_	_
+8	prodotti	produrre	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_
+9-10	dagli	_	_	_	_	_	_	_	_
+9	da	da	ADP	E	_	11	case	_	_
+10	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	esseri	essere	NOUN	S	Gender=Masc|Number=Plur	8	obl:agent	_	_
+12	umani	umano	ADJ	A	Gender=Masc|Number=Plur	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	FF	_	11	punct	_	_
+14	erroneamente	erroneamente	ADV	B	_	15	advmod	_	_
+15	proiettati	proiettare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_
+16	su	su	ADP	E	_	17	case	_	_
+17	forze	forza	NOUN	S	Gender=Fem|Number=Plur	15	obl	_	_
+18	e	e	CCONJ	CC	_	19	cc	_	_
+19	personificazioni	personificazione	NOUN	S	Gender=Fem|Number=Plur	17	conj	_	_
+20	divine	divino	ADJ	A	Gender=Fem|Number=Plur	19	amod	_	SpaceAfter=No
+21	.	.	PUNCT	FS	_	3	punct	_	_
+
+# sent_id = 3
+# text = Dio sarebbe quindi la costruzione di un Super uomo (uomo potenziato con attribuiti ideali dati dall'uomo stesso).
+1	Dio	Dio	PROPN	SP	_	5	nsubj	_	_
+2	sarebbe	essere	AUX	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	quindi	quindi	ADV	B	_	5	advmod	_	_
+4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	costruzione	costruzione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
+6	di	di	ADP	E	_	9	case	_	_
+7	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	Super	super	ADJ	A	_	9	amod	_	_
+9	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	5	nmod	_	_
+10	(	(	PUNCT	FB	_	11	punct	_	SpaceAfter=No
+11	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	9	appos	_	_
+12	potenziato	potenziare	ADJ	A	Gender=Masc|Number=Sing	11	amod	_	_
+13	con	con	ADP	E	_	15	case	_	_
+14	attribuiti	attribuire	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	acl	_	_
+15	ideali	ideale	NOUN	S	Gender=Masc|Number=Plur	12	obl	_	_
+16	dati	dare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	acl	_	_
+17-18	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+17	da	da	ADP	E	_	19	case	_	_
+18	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
+19	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	16	obl:agent	_	_
+20	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No
+21	)	)	PUNCT	FB	_	11	punct	_	SpaceAfter=No
+22	.	.	PUNCT	FS	_	5	punct	_	_
+
+# sent_id = 4
+# text = È una forma di alienazione (che non ha lo stesso significato attribuito da Marx), in quanto la religione estranea l'uomo da sé stesso facendogli credere di non essere in prima persona:
+1	È	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	forma	forma	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
+4	di	di	ADP	E	_	5	case	_	_
+5	alienazione	alienazione	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
+6	(	(	PUNCT	FB	_	9	punct	_	SpaceAfter=No
+7	che	che	PRON	PR	PronType=Rel	9	nsubj	_	_
+8	non	non	ADV	BN	PronType=Neg	9	advmod	_	_
+9	ha	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_
+10	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	12	amod	_	_
+12	significato	significato	NOUN	S	Gender=Masc|Number=Sing	9	obj	_	_
+13	attribuito	attribuire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	_
+14	da	da	ADP	E	_	15	case	_	_
+15	Marx	Marx	PROPN	SP	_	13	obl:agent	_	SpaceAfter=No
+16	)	)	PUNCT	FB	_	9	punct	_	SpaceAfter=No
+17	,	,	PUNCT	FF	_	3	punct	_	_
+18	in	in	ADP	E	_	22	mark	_	_
+19	quanto	quanto	ADV	B	_	18	fixed	_	_
+20	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	religione	religione	NOUN	S	Gender=Fem|Number=Sing	22	nsubj	_	_
+22	estranea	estraneare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+23	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No
+24	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	22	obj	_	_
+25	da	da	ADP	E	_	26	case	_	_
+26	sé	sé	PRON	PE	Clitic=Yes|Person=3|PronType=Prs	22	obl	_	_
+27	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	26	amod	_	_
+28-29	facendogli	_	_	_	_	_	_	_	_
+28	facendo	fare	VERB	V	VerbForm=Ger	22	advcl	_	_
+29	gli	gli	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	iobj	_	_
+30	credere	credere	VERB	V	VerbForm=Inf	28	ccomp	_	_
+31	di	di	ADP	E	_	36	mark	_	_
+32	non	non	ADV	BN	PronType=Neg	36	advmod	_	_
+33	essere	essere	AUX	V	VerbForm=Inf	36	cop	_	_
+34	in	in	ADP	E	_	36	case	_	_
+35	prima	primo	ADJ	NO	Gender=Fem|Number=Sing|NumType=Ord	36	amod	_	_
+36	persona	persona	NOUN	S	Gender=Fem|Number=Sing	30	ccomp	_	SpaceAfter=No
+37	:	:	PUNCT	FC	_	3	punct	_	_
+
+# sent_id = 5
+# text = l'uomo è sottomesso da sé stesso.
+1	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
+2	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	sottomesso	sottomettere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	da	da	ADP	E	_	6	case	_	_
+6	sé	sé	PRON	PE	Clitic=Yes|Person=3|PronType=Prs	4	obl:agent	_	_
+7	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	_
+
+# sent_id = 6
+# text = La religione si trova ad essere dunque un rifugio dell'uomo di fronte alla durezza della realtà quotidiana.
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	religione	religione	NOUN	S	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	4	expl	_	_
+4	trova	trovare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	ad	a	ADP	E	_	9	mark	_	_
+6	essere	essere	AUX	V	VerbForm=Inf	9	cop	_	_
+7	dunque	dunque	ADV	B	_	9	advmod	_	_
+8	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	rifugio	rifugio	NOUN	S	Gender=Masc|Number=Sing	4	xcomp	_	_
+10-11	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+10	di	di	ADP	E	_	12	case	_	_
+11	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	12	det	_	_
+12	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	9	nmod	_	_
+13	di	di	ADP	E	_	14	case	_	_
+14	fronte	fronte	NOUN	S	Number=Sing	9	obl	_	_
+15-16	alla	_	_	_	_	_	_	_	_
+15	a	a	ADP	E	_	17	case	_	_
+16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	durezza	durezza	NOUN	S	Gender=Fem|Number=Sing	14	nmod	_	_
+18-19	della	_	_	_	_	_	_	_	_
+18	di	di	ADP	E	_	20	case	_	_
+19	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	realtà	realtà	NOUN	S	Gender=Fem	17	nmod	_	_
+21	quotidiana	quotidiano	ADJ	A	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No
+22	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Karl Marx (1818-1883) affermò che:
+# text = Karl Marx (1818-1883) affermò che: la Religione è «il gemito della creatura oppressa, l'animo di un mondo senza cuore, così come è lo spirito d'una condizione di vita priva di spiritualità.
 1	Karl	Karl	PROPN	SP	_	8	nsubj	_	_
 2	Marx	Marx	PROPN	SP	_	1	flat:name	_	_
 3	(	(	PUNCT	FB	_	4	punct	_	SpaceAfter=No
@@ -5894,8 +5993,55 @@
 6	1883	1883	NUM	N	NumType=Card	4	compound	_	SpaceAfter=No
 7	)	)	PUNCT	FB	_	4	punct	_	_
 8	affermò	affermare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	che	che	SCONJ	CS	_	8	mark	_	SpaceAfter=No
-10	:	:	PUNCT	FC	_	8	punct	_	SpacesAfter=\n
+9	che	che	SCONJ	CS	_	16	mark	_	SpaceAfter=No
+10	:	:	PUNCT	FC	_	16	punct	_	SpacesAfter=\n
+11	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Religione	Religione	PROPN	SP	_	16	nsubj	_	_
+13	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
+14	«	«	PUNCT	FB	_	16	punct	_	SpaceAfter=No
+15	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	gemito	gemito	NOUN	S	Gender=Masc|Number=Sing	8	ccomp	_	_
+17-18	della	_	_	_	_	_	_	_	_
+17	di	di	ADP	E	_	19	case	_	_
+18	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	creatura	creatura	NOUN	S	Gender=Fem|Number=Sing	16	nmod	_	_
+20	oppressa	oppresso	ADJ	A	Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
+21	,	,	PUNCT	FF	_	23	punct	_	_
+22	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No
+23	animo	animo	NOUN	S	Gender=Masc|Number=Sing	16	conj	_	_
+24	di	di	ADP	E	_	26	case	_	_
+25	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	mondo	mondo	NOUN	S	Gender=Masc|Number=Sing	23	nmod	_	_
+27	senza	senza	ADP	E	_	28	case	_	_
+28	cuore	cuore	NOUN	S	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	FF	_	16	punct	_	_
+30	così	così	ADV	B	_	34	advmod	_	_
+31	come	come	SCONJ	CS	_	34	mark	_	_
+32	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	_	_
+33	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	spirito	spirito	NOUN	S	Gender=Masc|Number=Sing	16	conj	_	_
+35	d'	di	ADP	E	_	37	case	_	SpaceAfter=No
+36	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	condizione	condizione	NOUN	S	Gender=Fem|Number=Sing	34	nmod	_	_
+38	di	di	ADP	E	_	39	case	_	_
+39	vita	vita	NOUN	S	Gender=Fem|Number=Sing	37	nmod	_	_
+40	priva	privo	ADJ	A	Gender=Fem|Number=Sing	37	amod	_	_
+41	di	di	ADP	E	_	42	case	_	_
+42	spiritualità	spiritualità	NOUN	S	Gender=Fem	40	obl	_	SpaceAfter=No
+43	.	.	PUNCT	FS	_	8	punct	_	_
+
+# sent_id = 2
+# text = Essa è l'oppio dei popoli».
+1	Essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No
+4	oppio	oppio	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+5-6	dei	_	_	_	_	_	_	_	_
+5	di	di	ADP	E	_	7	case	_	_
+6	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	popoli	popolo	NOUN	S	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
+8	»	»	PUNCT	FB	_	4	punct	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5916,6 +6062,256 @@
 10	1920	1920	NUM	N	NumType=Card	8	compound	_	SpaceAfter=No
 11	)	)	PUNCT	FB	_	8	punct	_	SpaceAfter=No
 12	:	:	PUNCT	FC	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = le Religioni mondiali sarebbero capaci di raccogliere vaste masse di credenti e di influenzare il corso della storia universale.
+1	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	Religioni	religione	NOUN	S	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	mondiali	mondiale	ADJ	A	Number=Plur	2	amod	_	_
+4	sarebbero	essere	AUX	V	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	capaci	capace	ADJ	A	Number=Plur	0	root	_	_
+6	di	di	ADP	E	_	7	mark	_	_
+7	raccogliere	raccogliere	VERB	V	VerbForm=Inf	5	advcl	_	_
+8	vaste	vasto	ADJ	A	Gender=Fem|Number=Plur	9	amod	_	_
+9	masse	massa	NOUN	S	Gender=Fem|Number=Plur	7	obj	_	_
+10	di	di	ADP	E	_	11	case	_	_
+11	credenti	credente	NOUN	S	Number=Plur	9	nmod	_	_
+12	e	e	CCONJ	CC	_	14	cc	_	_
+13	di	di	ADP	E	_	14	mark	_	_
+14	influenzare	influenzare	VERB	V	VerbForm=Inf	7	conj	_	_
+15	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	corso	corso	NOUN	S	Gender=Masc|Number=Sing	14	obj	_	_
+17-18	della	_	_	_	_	_	_	_	_
+17	di	di	ADP	E	_	19	case	_	_
+18	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	storia	storia	NOUN	S	Gender=Fem|Number=Sing	16	nmod	_	_
+20	universale	universale	ADJ	A	Number=Sing	19	amod	_	SpaceAfter=No
+21	.	.	PUNCT	FS	_	5	punct	_	_
+
+# sent_id = 3
+# text = Weber non crede che la religione sia una forza conservatrice (Karl Marx), bensì crede che essa possa provocare enormi trasformazioni sociali:
+1	Weber	Weber	PROPN	SP	_	3	nsubj	_	_
+2	non	non	ADV	BN	PronType=Neg	3	advmod	_	_
+3	crede	credere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	che	che	SCONJ	CS	_	9	mark	_	_
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	religione	religione	NOUN	S	Gender=Fem|Number=Sing	9	nsubj	_	_
+7	sia	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	forza	forza	NOUN	S	Gender=Fem|Number=Sing	3	ccomp	_	_
+10	conservatrice	conservatore	ADJ	A	Gender=Fem|Number=Sing	9	amod	_	_
+11	(	(	PUNCT	FB	_	12	punct	_	SpaceAfter=No
+12	Karl	Karl	PROPN	SP	_	9	appos	_	_
+13	Marx	Marx	PROPN	SP	_	12	flat:name	_	SpaceAfter=No
+14	)	)	PUNCT	FB	_	12	punct	_	SpaceAfter=No
+15	,	,	PUNCT	FF	_	17	punct	_	_
+16	bensì	bensì	CCONJ	CC	_	17	cc	_	_
+17	crede	credere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+18	che	che	SCONJ	CS	_	21	mark	_	_
+19	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+20	possa	potere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
+21	provocare	provocare	VERB	V	VerbForm=Inf	17	ccomp	_	_
+22	enormi	enorme	ADJ	A	Number=Plur	23	amod	_	_
+23	trasformazioni	trasformazione	NOUN	S	Gender=Fem|Number=Plur	21	obj	_	_
+24	sociali	sociale	ADJ	A	Number=Plur	23	amod	_	SpaceAfter=No
+25	:	:	PUNCT	FC	_	3	punct	_	_
+
+# sent_id = 4
+# text = La religione influisce sulla vita sociale ed economica.
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	religione	religione	NOUN	S	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	influisce	influire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4-5	sulla	_	_	_	_	_	_	_	_
+4	su	su	ADP	E	_	6	case	_	_
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	vita	vita	NOUN	S	Gender=Fem|Number=Sing	3	obl	_	_
+7	sociale	sociale	ADJ	A	Number=Sing	6	amod	_	_
+8	ed	e	CCONJ	CC	_	9	cc	_	_
+9	economica	economico	ADJ	A	Gender=Fem|Number=Sing	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	3	punct	_	_
+
+# sent_id = 5
+# text = Il Puritanesimo e il protestantesimo, ad esempio, furono all'origine del modo di pensare capitalistico.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Puritanesimo	Puritanesimo	PROPN	SP	_	10	nsubj	_	_
+3	e	e	CCONJ	CC	_	5	cc	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	protestantesimo	protestantesimo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	FF	_	2	punct	_	_
+7	ad	a	ADP	E	_	8	case	_	_
+8	esempio	esempio	NOUN	S	Gender=Masc|Number=Sing	10	obl	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	8	punct	_	_
+10	furono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11-12	all'	_	_	_	_	_	_	_	SpaceAfter=No
+11	a	a	ADP	E	_	13	case	_	_
+12	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	13	det	_	_
+13	origine	origine	NOUN	S	Gender=Fem|Number=Sing	10	obl	_	_
+14-15	del	_	_	_	_	_	_	_	_
+14	di	di	ADP	E	_	16	case	_	_
+15	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	modo	modo	NOUN	S	Gender=Masc|Number=Sing	13	nmod	_	_
+17	di	di	ADP	E	_	18	mark	_	_
+18	pensare	pensare	VERB	V	VerbForm=Inf	16	acl	_	_
+19	capitalistico	capitalistico	ADJ	A	Gender=Masc|Number=Sing	18	xcomp	_	SpaceAfter=No
+20	.	.	PUNCT	FS	_	10	punct	_	_
+
+# sent_id = 6
+# text = Ne ”L'etica protestante e lo spirito del capitalismo” Weber discusse ampiamente l'influenza del cristianesimo sulla storia dell'Occidente moderno.
+1	Ne	ne	ADP	E	_	4	case	_	_
+2	”	”	PUNCT	FB	_	4	punct	_	SpaceAfter=No
+3	L'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No
+4	etica	etica	NOUN	S	Gender=Fem|Number=Sing	14	obl	_	_
+5	protestante	protestante	ADJ	A	Number=Sing	4	amod	_	_
+6	e	e	CCONJ	CC	_	8	cc	_	_
+7	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	spirito	spirito	NOUN	S	Gender=Masc|Number=Sing	4	conj	_	_
+9-10	del	_	_	_	_	_	_	_	_
+9	di	di	ADP	E	_	11	case	_	_
+10	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	capitalismo	capitalismo	NOUN	S	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+12	”	”	PUNCT	FB	_	4	punct	_	_
+13	Weber	Weber	PROPN	SP	_	14	nsubj	_	_
+14	discusse	discutere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	ampiamente	ampiamente	ADV	B	_	14	advmod	_	_
+16	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No
+17	influenza	influenza	NOUN	S	Gender=Fem|Number=Sing	14	obj	_	_
+18-19	del	_	_	_	_	_	_	_	_
+18	di	di	ADP	E	_	20	case	_	_
+19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	cristianesimo	cristianesimo	NOUN	S	Gender=Masc|Number=Sing	17	nmod	_	_
+21-22	sulla	_	_	_	_	_	_	_	_
+21	su	su	ADP	E	_	23	case	_	_
+22	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	storia	storia	NOUN	S	Gender=Fem|Number=Sing	17	nmod	_	_
+24-25	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+24	di	di	ADP	E	_	26	case	_	_
+25	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	26	det	_	_
+26	Occidente	Occidente	PROPN	SP	_	23	nmod	_	_
+27	moderno	moderno	ADJ	A	Gender=Masc|Number=Sing	26	amod	_	SpaceAfter=No
+28	.	.	PUNCT	FS	_	14	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Weber scoprì che effettivamente alcune religioni sono caratterizzate da un ascetismo ultramondano, che privilegia la fuga dai problemi terreni, distogliendo gli sforzi dallo sviluppo economico.
+1	Weber	Weber	PROPN	SP	_	2	nsubj	_	_
+2	scoprì	scoprire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	che	che	SCONJ	CS	_	8	mark	_	_
+4	effettivamente	effettivamente	ADV	B	_	8	advmod	_	_
+5	alcune	alcuno	DET	DI	Gender=Fem|Number=Plur|PronType=Ind	6	det	_	_
+6	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	8	nsubj:pass	_	_
+7	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+8	caratterizzate	caratterizzare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	ccomp	_	_
+9	da	da	ADP	E	_	11	case	_	_
+10	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	ascetismo	ascetismo	NOUN	S	Gender=Masc|Number=Sing	8	obl:agent	_	_
+12	ultramondano	ultramondano	ADJ	A	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	FF	_	11	punct	_	_
+14	che	che	PRON	PR	PronType=Rel	15	nsubj	_	_
+15	privilegia	privilegiare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	fuga	fuga	NOUN	S	Gender=Fem|Number=Sing	15	obj	_	_
+18-19	dai	_	_	_	_	_	_	_	_
+18	da	da	ADP	E	_	20	case	_	_
+19	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+20	problemi	problema	NOUN	S	Gender=Masc|Number=Plur	17	nmod	_	_
+21	terreni	terreno	ADJ	A	Gender=Masc|Number=Plur	20	amod	_	SpaceAfter=No
+22	,	,	PUNCT	FF	_	15	punct	_	_
+23	distogliendo	distogliere	VERB	V	VerbForm=Ger	15	advcl	_	_
+24	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+25	sforzi	sforzo	NOUN	S	Gender=Masc|Number=Plur	23	obj	_	_
+26-27	dallo	_	_	_	_	_	_	_	_
+26	da	da	ADP	E	_	28	case	_	_
+27	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	sviluppo	sviluppo	NOUN	S	Gender=Masc|Number=Sing	23	obl	_	_
+29	economico	economico	ADJ	A	Gender=Masc|Number=Sing	28	amod	_	SpaceAfter=No
+30	.	.	PUNCT	FS	_	2	punct	_	_
+
+# sent_id = 8
+# text = Il cristianesimo sarebbe una religione di salvezza per Weber, poiché è incentrata sulla convinzione che gli esseri umani possano essere salvati purché scelgano la fede e seguano le sue prescrizioni morali.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cristianesimo	cristianesimo	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	sarebbe	essere	AUX	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	religione	religione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
+6	di	di	ADP	E	_	7	case	_	_
+7	salvezza	salvezza	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
+8	per	per	ADP	E	_	9	case	_	_
+9	Weber	Weber	PROPN	SP	_	5	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	FF	_	5	punct	_	_
+11	poiché	poiché	SCONJ	CS	_	13	mark	_	_
+12	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	incentrata	incentrare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	advcl	_	_
+14-15	sulla	_	_	_	_	_	_	_	_
+14	su	su	ADP	E	_	16	case	_	_
+15	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	convinzione	convinzione	NOUN	S	Gender=Fem|Number=Sing	13	obl	_	_
+17	che	che	SCONJ	CS	_	23	mark	_	_
+18	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	esseri	essere	NOUN	S	Gender=Masc|Number=Plur	23	nsubj:pass	_	_
+20	umani	umano	ADJ	A	Gender=Masc|Number=Plur	19	amod	_	_
+21	possano	potere	AUX	VM	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
+22	essere	essere	AUX	VA	VerbForm=Inf	23	aux:pass	_	_
+23	salvati	salvare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	acl	_	_
+24	purché	purché	SCONJ	CS	_	25	mark	_	_
+25	scelgano	scelgere	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	_
+26	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	fede	fede	NOUN	S	Gender=Fem|Number=Sing	25	obj	_	_
+28	e	e	CCONJ	CC	_	29	cc	_	_
+29	seguano	seguire	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_
+30	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
+31	sue	suo	DET	AP	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	32	det:poss	_	_
+32	prescrizioni	prescrizione	NOUN	S	Gender=Fem|Number=Plur	29	obj	_	_
+33	morali	morale	ADJ	A	Number=Plur	32	amod	_	SpaceAfter=No
+34	.	.	PUNCT	FS	_	5	punct	_	_
+
+# sent_id = 9
+# text = Le religioni di salvezza presentano un aspetto rivoluzionario perché sono caratterizzate da un ascetismo intramondano, cioè uno spirito religioso che privilegia la condotta virtuosa in questo mondo.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	di	di	ADP	E	_	4	case	_	_
+4	salvezza	salvezza	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
+5	presentano	presentare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	aspetto	aspetto	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	_
+8	rivoluzionario	rivoluzionario	ADJ	A	Gender=Masc|Number=Sing	7	amod	_	_
+9	perché	perché	SCONJ	CS	_	11	mark	_	_
+10	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_
+11	caratterizzate	caratterizzare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	advcl	_	_
+12	da	da	ADP	E	_	14	case	_	_
+13	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	ascetismo	ascetismo	NOUN	S	Gender=Masc|Number=Sing	11	obl:agent	_	_
+15	intramondano	intramondano	ADJ	A	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
+16	,	,	PUNCT	FF	_	19	punct	_	_
+17	cioè	cioè	CCONJ	CC	_	19	cc	_	_
+18	uno	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	spirito	spirito	NOUN	S	Gender=Masc|Number=Sing	14	conj	_	_
+20	religioso	religioso	ADJ	A	Gender=Masc|Number=Sing	19	amod	_	_
+21	che	che	PRON	PR	PronType=Rel	22	nsubj	_	_
+22	privilegia	privilegiare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_
+23	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	condotta	condotta	NOUN	S	Gender=Fem|Number=Sing	22	obj	_	_
+25	virtuosa	virtuoso	ADJ	A	Gender=Fem|Number=Sing	24	amod	_	_
+26	in	in	ADP	E	_	28	case	_	_
+27	questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	28	det	_	_
+28	mondo	mondo	NOUN	S	Gender=Masc|Number=Sing	22	obl	_	SpaceAfter=No
+29	.	.	PUNCT	FS	_	5	punct	_	_
+
+# sent_id = 10
+# text = Le religioni asiatiche invece avevano un atteggiamento di passività rispetto all'esistente.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	asiatiche	asiatico	ADJ	A	Gender=Fem|Number=Plur	2	amod	_	_
+4	invece	invece	ADV	B	_	5	advmod	_	_
+5	avevano	avere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+6	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	atteggiamento	atteggiamento	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	_
+8	di	di	ADP	E	_	9	case	_	_
+9	passività	passività	NOUN	S	Gender=Fem	7	nmod	_	_
+10	rispetto	rispetto	ADV	B	_	13	case	_	_
+11-12	all'	_	_	_	_	_	_	_	SpaceAfter=No
+11	a	a	ADP	E	_	10	fixed	_	_
+12	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	13	det	_	_
+13	esistente	esistente	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	9	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6207,7 +6603,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Alcuni termini classificatori e descrittivi delle religioni[modifica | modifica wikitesto]
+# text = Alcuni termini classificatori e descrittivi delle religioni
 1	Alcuni	alcuno	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	termini	termine	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 3	classificatori	classificatore	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
@@ -6217,12 +6613,6 @@
 6	di	di	ADP	E	_	8	case	_	_
 7	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 8	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	2	nmod	_	SpaceAfter=No
-9	[	[	PUNCT	FB	_	10	punct	_	SpaceAfter=No
-10	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	appos	_	_
-11	|	|	SYM	SYM	_	10	dep	_	_
-12	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	10	nmod	_	_
-13	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	12	compound	_	SpaceAfter=No
-14	]	]	PUNCT	FB	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6230,14 +6620,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Animismo[modifica | modifica wikitesto]
+# text = Animismo
 1	Animismo	animismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6442,6 +6826,20 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Tuttavia, come nota Jacques Vidal
+1	Tuttavia	tuttavia	ADV	B	_	4	advmod	_	SpacesBefore=\n|SpaceAfter=No
+2	,	,	PUNCT	FF	_	1	punct	_	_
+3	come	come	SCONJ	CS	_	4	mark	_	_
+4	nota	notare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	Jacques	Jacques	PROPN	SP	_	4	nsubj	_	_
+6	Vidal	Vidal	PROPN	SP	_	5	flat:name	_	_
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = «in mancanza di altre espressioni l'uso del termine rimane frequente.»
 1	«	«	PUNCT	FB	_	12	punct	_	SpaceAfter=No
 2	in	in	ADP	E	_	3	case	_	_
@@ -6508,14 +6906,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ateismo[modifica | modifica wikitesto]
+# text = Ateismo
 1	Ateismo	ateismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	VERB	V	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modificare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6626,14 +7018,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Deismo[modifica | modifica wikitesto]
+# text = Deismo
 1	Deismo	deismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6941,14 +7327,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Enoteismo[modifica | modifica wikitesto]
+# text = Enoteismo
 1	Enoteismo	enoteismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7182,14 +7562,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Monoteismo[modifica | modifica wikitesto]
+# text = Monoteismo
 1	Monoteismo	monoteismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7455,20 +7829,139 @@
 13	Islām	Islām	PROPN	SP	_	7	conj	_	SpaceAfter=No
 14	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Di tutt'altro avviso è invece, ad esempio, Theodore M. Ludwig che nella Encyclopedia of Religion nata dal progetto internazionale proposto da Mircea Eliade include, sia nell'edizione del 1987 che nella seconda edizione del 2005, nella voce Monotheism, altre religioni oltre quelle qui sopra citate come lo Zoroastrismo, la Religione greca nella forma di alcuni culti e nel pensiero di alcuni teologi greci, la Religione egizia del culto di Aton, il Buddhismo nella forma della Terra Pura, l'Induismo in alcune sue particolari manifestazioni e il Sikhismo.
+1	Di	di	ADP	E	_	4	case	_	_
+2	tutt'	tutto	DET	DI	Number=Sing|PronType=Ind	4	det	_	SpaceAfter=No
+3	altro	altro	ADJ	A	Gender=Masc|Number=Sing	4	amod	_	_
+4	avviso	avviso	NOUN	S	Gender=Masc|Number=Sing	5	obl	_	_
+5	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	invece	invece	ADV	B	_	5	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	FF	_	9	punct	_	_
+8	ad	a	ADP	E	_	9	case	_	_
+9	esempio	esempio	NOUN	S	Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	FF	_	9	punct	_	_
+11	Theodore	Theodore	PROPN	SP	_	5	nsubj	_	_
+12	M.	M.	PROPN	SP	_	11	flat:name	_	_
+13	Ludwig	Ludwig	PROPN	SP	_	11	flat:name	_	_
+14	che	che	PRON	PR	PronType=Rel	29	nsubj	_	_
+15-16	nella	_	_	_	_	_	_	_	_
+15	in	in	ADP	E	_	17	case	_	_
+16	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Encyclopedia	Encyclopedia	PROPN	SP	_	29	obl	_	_
+18	of	of	ADP	E	_	19	case	_	_
+19	Religion	Religion	PROPN	SP	_	17	nmod	_	_
+20	nata	nascere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_
+21-22	dal	_	_	_	_	_	_	_	_
+21	da	da	ADP	E	_	23	case	_	_
+22	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	progetto	progetto	NOUN	S	Gender=Masc|Number=Sing	20	obl:agent	_	_
+24	internazionale	internazionale	ADJ	A	Number=Sing	23	amod	_	_
+25	proposto	proporre	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	acl	_	_
+26	da	da	ADP	E	_	27	case	_	_
+27	Mircea	Mircea	PROPN	SP	_	25	obl:agent	_	_
+28	Eliade	Eliade	PROPN	SP	_	27	flat:name	_	_
+29	include	includere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	SpaceAfter=No
+30	,	,	PUNCT	FF	_	29	punct	_	_
+31	sia	sia	CCONJ	CC	_	34	cc	_	_
+32-33	nell'	_	_	_	_	_	_	_	SpaceAfter=No
+32	in	in	ADP	E	_	34	case	_	_
+33	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	34	det	_	_
+34	edizione	edizione	NOUN	S	Gender=Fem|Number=Sing	29	obl	_	_
+35-36	del	_	_	_	_	_	_	_	_
+35	di	di	ADP	E	_	37	case	_	_
+36	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	1987	1987	NUM	N	NumType=Card	34	nmod	_	_
+38	che	che	CCONJ	CC	_	42	cc	_	_
+39-40	nella	_	_	_	_	_	_	_	_
+39	in	in	ADP	E	_	42	case	_	_
+40	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+41	seconda	secondo	ADJ	NO	Gender=Fem|Number=Sing|NumType=Ord	42	amod	_	_
+42	edizione	edizione	NOUN	S	Gender=Fem|Number=Sing	34	conj	_	_
+43-44	del	_	_	_	_	_	_	_	_
+43	di	di	ADP	E	_	45	case	_	_
+44	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	2005	2005	NUM	N	NumType=Card	42	nmod	_	SpaceAfter=No
+46	,	,	PUNCT	FF	_	29	punct	_	_
+47-48	nella	_	_	_	_	_	_	_	_
+47	in	in	ADP	E	_	49	case	_	_
+48	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
+49	voce	voce	NOUN	S	Gender=Fem|Number=Sing	29	obl	_	_
+50	Monotheism	Monotheism	PROPN	SP	_	49	nmod	_	SpaceAfter=No
+51	,	,	PUNCT	FF	_	29	punct	_	_
+52	altre	altro	ADJ	A	Gender=Fem|Number=Plur	53	amod	_	_
+53	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	29	obj	_	_
+54	oltre	oltre	ADP	E	_	55	case	_	_
+55	quelle	quello	PRON	PD	Gender=Fem|Number=Plur|PronType=Dem	53	nmod	_	_
+56	qui	qui	ADV	B	_	57	advmod	_	_
+57	sopra	sopra	ADV	B	_	58	advmod	_	_
+58	citate	citato	ADJ	A	Gender=Fem|Number=Plur	55	amod	_	_
+59	come	come	ADP	E	_	61	case	_	_
+60	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
+61	Zoroastrismo	Zoroastrismo	PROPN	SP	_	53	nmod	_	SpaceAfter=No
+62	,	,	PUNCT	FF	_	64	punct	_	_
+63	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
+64	Religione	religione	NOUN	S	Gender=Fem|Number=Sing	61	conj	_	_
+65	greca	greco	ADJ	A	Gender=Fem|Number=Sing	64	amod	_	_
+66-67	nella	_	_	_	_	_	_	_	_
+66	in	in	ADP	E	_	68	case	_	_
+67	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	68	det	_	_
+68	forma	forma	NOUN	S	Gender=Fem|Number=Sing	64	nmod	_	_
+69	di	di	ADP	E	_	71	case	_	_
+70	alcuni	alcuno	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	71	det	_	_
+71	culti	culto	NOUN	S	Gender=Masc|Number=Plur	68	nmod	_	_
+72	e	e	CCONJ	CC	_	75	cc	_	_
+73-74	nel	_	_	_	_	_	_	_	_
+73	in	in	ADP	E	_	75	case	_	_
+74	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	75	det	_	_
+75	pensiero	pensiero	NOUN	S	Gender=Masc|Number=Sing	61	conj	_	_
+76	di	di	ADP	E	_	78	case	_	_
+77	alcuni	alcuno	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	78	det	_	_
+78	teologi	teologo	NOUN	S	Gender=Masc|Number=Plur	75	nmod	_	_
+79	greci	greco	ADJ	A	Gender=Masc|Number=Plur	78	amod	_	SpaceAfter=No
+80	,	,	PUNCT	FF	_	82	punct	_	_
+81	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	82	det	_	_
+82	Religione	religione	NOUN	S	Gender=Fem|Number=Sing	61	conj	_	_
+83	egizia	egizio	ADJ	A	Gender=Fem|Number=Sing	82	amod	_	_
+84-85	del	_	_	_	_	_	_	_	_
+84	di	di	ADP	E	_	86	case	_	_
+85	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	86	det	_	_
+86	culto	culto	NOUN	S	Gender=Masc|Number=Sing	82	nmod	_	_
+87	di	di	ADP	E	_	88	case	_	_
+88	Aton	Aton	PROPN	SP	_	86	nmod	_	SpaceAfter=No
+89	,	,	PUNCT	FF	_	91	punct	_	_
+90	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	91	det	_	_
+91	Buddhismo	Buddhismo	PROPN	SP	_	61	conj	_	_
+92-93	nella	_	_	_	_	_	_	_	_
+92	in	in	ADP	E	_	94	case	_	_
+93	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	94	det	_	_
+94	forma	forma	NOUN	S	Gender=Fem|Number=Sing	91	nmod	_	_
+95-96	della	_	_	_	_	_	_	_	_
+95	di	di	ADP	E	_	97	case	_	_
+96	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	97	det	_	_
+97	Terra	terra	NOUN	S	Gender=Fem|Number=Sing	94	nmod	_	_
+98	Pura	puro	ADJ	A	Gender=Fem|Number=Sing	97	amod	_	SpaceAfter=No
+99	,	,	PUNCT	FF	_	101	punct	_	_
+100	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	101	det	_	SpaceAfter=No
+101	Induismo	Induismo	NOUN	S	Gender=Masc|Number=Sing	61	conj	_	_
+102	in	in	ADP	E	_	106	case	_	_
+103	alcune	alcuno	DET	DI	Gender=Fem|Number=Plur|PronType=Ind	106	det	_	_
+104	sue	suo	DET	AP	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	106	det:poss	_	_
+105	particolari	particolare	ADJ	A	Number=Plur	106	amod	_	_
+106	manifestazioni	manifestazione	NOUN	S	Gender=Fem|Number=Plur	101	nmod	_	_
+107	e	e	CCONJ	CC	_	109	cc	_	_
+108	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	109	det	_	_
+109	Sikhismo	Sikhismo	PROPN	SP	_	61	conj	_	SpaceAfter=No
+110	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Panteismo[modifica | modifica wikitesto]
+# text = Panteismo
 1	Panteismo	panteismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7710,14 +8203,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politeismo[modifica | modifica wikitesto]
+# text = Politeismo
 1	Politeismo	politeismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8144,7 +8631,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Religioni (in ordine alfabetico) con maggior numero di fedeli[modifica | modifica wikitesto]
+# text = Religioni (in ordine alfabetico) con maggior numero di fedeli
 1	Religioni	religione	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	(	(	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 3	in	in	ADP	E	_	4	case	_	_
@@ -8156,12 +8643,6 @@
 9	numero	numero	NOUN	S	Gender=Masc|Number=Sing	1	nmod	_	_
 10	di	di	ADP	E	_	11	case	_	_
 11	fedeli	fedele	NOUN	S	Number=Plur	9	nmod	_	SpaceAfter=No
-12	[	[	PUNCT	FB	_	13	punct	_	SpaceAfter=No
-13	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-14	|	|	SYM	SYM	_	13	dep	_	_
-15	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	15	compound	_	SpaceAfter=No
-17	]	]	PUNCT	FB	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8169,14 +8650,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Buddhismo[modifica | modifica wikitesto]
+# text = Buddhismo
 1	Buddhismo	buddhismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8355,14 +8830,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cristianesimo[modifica | modifica wikitesto]
+# text = Cristianesimo
 1	Cristianesimo	cristianesimo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8671,14 +9140,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Induismo[modifica | modifica wikitesto]
+# text = Induismo
 1	Induismo	induismo	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	conj	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -8803,13 +9266,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Islam[modifica | modifica wikitesto]
-1	Islam[	Islam[	PROPN	SP	_	2	nsubj	_	SpaceAfter=No
-2	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
-3	|	|	SYM	SYM	_	4	dep	_	_
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	conj	_	_
-5	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	4	compound	_	SpaceAfter=No
-6	]	]	PUNCT	FB	_	2	punct	_	SpacesAfter=\n
+# text = Islam
+1	Islam	Islam	PROPN	SP	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9035,15 +9493,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Altre religioni[modifica | modifica wikitesto]
-1	Altre	altro	DET	DI	Gender=Fem|Number=Plur|PronType=Ind	2	det	_	_
+# text = Altre religioni
+1	Altre	altro	ADJ	A	Gender=Fem|Number=Plur	2	amod	_	_
 2	religioni	religione	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9069,16 +9521,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nuovi movimenti religiosi[modifica | modifica wikitesto]
+# text = Nuovi movimenti religiosi
 1	Nuovi	nuovo	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
 2	movimenti	movimento	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 3	religiosi	religioso	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	appos	_	_
-6	|	|	SYM	SYM	_	5	dep	_	_
-7	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	7	compound	_	SpaceAfter=No
-9	]	]	PUNCT	FB	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9086,14 +9532,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Note[modifica | modifica wikitesto]
+# text = Note
 1	Note	nota	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9101,402 +9541,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ««le fait de se lier vis-à-vis des dieux», symbolisé par l'emploi des uittæ et des στέμματα dans le culte.»
-1	«	«	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-2	«	«	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-3	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
-4	fait	fait	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
-5	de	de	ADP	E	_	7	mark	_	_
-6	se	se	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	7	mark	_	_
-7	lier	lier	VERB	V	VerbForm=Inf	4	acl	_	_
-8	vis	vis	ADV	E	_	12	case	_	SpaceAfter=No
-9	-	-	PUNCT	FF	_	8	punct	_	SpaceAfter=No
-10	à	à	ADV	B	_	7	advmod	_	SpaceAfter=No
-11	-	-	PUNCT	FF	_	10	punct	_	SpaceAfter=No
-12	vis	vis	ADV	B	_	7	obl	_	_
-13	des	des	ADP	E	_	14	case	_	_
-14	dieux	dieux	NOUN	S	Gender=Masc	7	obl	_	SpaceAfter=No
-15	»	»	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-16	,	,	PUNCT	FF	_	4	punct	_	_
-17	symbolisé	symbolidere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_
-18	par	par	ADP	E	_	20	case	_	_
-19	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No
-20	emploi	emploi	NOUN	S	Gender=Masc|Number=Plur	17	obl	_	_
-21	des	des	ADP	E	_	22	case	_	_
-22	uittæ	uittæ	NOUN	S	_	20	nmod	_	_
-23	et	et	CCONJ	CC	_	25	cc	_	_
-24	des	des	ADP	E	_	25	case	_	_
-25	στέμματα	στέμματα	NOUN	S	Gender=Masc|Number=Sing	22	conj	_	_
-26	dans	dans	ADP	E	_	28	case	_	_
-27	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	culte	culte	NOUN	S	Gender=Fem|Number=Plur	20	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
-30	»	»	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = «Eleggendo quindi Dio, o piuttosto rieleggendolo (da cui verrebbe il termine religione) avendolo perduto per nostra negligenza»
-1	«	«	PUNCT	FB	_	2	punct	_	SpaceAfter=No
-2	Eleggendo	eleggere	VERB	V	VerbForm=Ger	0	root	_	_
-3	quindi	quindi	ADV	B	_	2	advmod	_	_
-4	Dio	Dio	PROPN	SP	_	2	obj	_	SpaceAfter=No
-5	,	,	PUNCT	FF	_	8	punct	_	_
-6	o	o	CCONJ	CC	_	8	cc	_	_
-7	piuttosto	piuttosto	ADV	B	_	8	advmod	_	_
-8	rieleggendolo	rieleggendolo	VERB	V	Gender=Masc|Number=Sing	4	conj	_	_
-9	(	(	PUNCT	FB	_	12	punct	_	SpaceAfter=No
-10	da	da	ADP	E	_	11	case	_	_
-11	cui	cui	PRON	PR	PronType=Rel	12	obl	_	_
-12	verrebbe	venire	VERB	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
-13	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	termine	termine	NOUN	S	Gender=Masc|Number=Sing	12	nsubj	_	_
-15	religione	religione	NOUN	S	Gender=Fem|Number=Sing	14	compound	_	SpaceAfter=No
-16	)	)	PUNCT	FB	_	12	punct	_	_
-17	avendolo	avendolo	AUX	VA	Gender=Masc|Number=Sing	18	aux	_	_
-18	perduto	perdere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	advcl	_	_
-19	per	per	ADP	E	_	21	case	_	_
-20	nostra	nostro	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	21	det:poss	_	_
-21	negligenza	negligenza	NOUN	S	Gender=Fem|Number=Sing	18	obl	_	SpaceAfter=No
-22	»	»	PUNCT	FB	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = «Per i Romani religio stava a indicare una serie di precetti e di proibizioni e, in senso lato, precisione, rigida osservanza, sollecitudine, venerazione e timore degli dèi.»
-1	«	«	PUNCT	FB	_	6	punct	_	SpaceAfter=No
-2	Per	per	ADP	E	_	4	case	_	_
-3	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	Romani	Romani	PROPN	SP	_	6	obl	_	_
-5	religio	religio	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
-6	stava	stare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-7	a	a	ADP	E	_	8	mark	_	_
-8	indicare	indicare	VERB	V	VerbForm=Inf	6	xcomp	_	_
-9	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	serie	serie	NOUN	S	Gender=Fem	8	obj	_	_
-11	di	di	ADP	E	_	12	case	_	_
-12	precetti	precetto	NOUN	S	Gender=Masc|Number=Plur	10	nmod	_	_
-13	e	e	CCONJ	CC	_	15	cc	_	_
-14	di	di	ADP	E	_	15	case	_	_
-15	proibizioni	proibizione	NOUN	S	Gender=Fem|Number=Plur	12	conj	_	_
-16	e	e	CCONJ	CC	_	22	cc	_	SpaceAfter=No
-17	,	,	PUNCT	FF	_	22	punct	_	_
-18	in	in	ADP	E	_	19	case	_	_
-19	senso	senso	NOUN	S	Gender=Masc|Number=Sing	22	nmod	_	_
-20	lato	lato	ADJ	A	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No
-21	,	,	PUNCT	FF	_	19	punct	_	_
-22	precisione	precisione	NOUN	S	Gender=Fem|Number=Sing	10	conj	_	SpaceAfter=No
-23	,	,	PUNCT	FF	_	25	punct	_	_
-24	rigida	rigido	ADJ	A	Gender=Fem|Number=Sing	25	amod	_	_
-25	osservanza	osservanza	NOUN	S	Gender=Fem|Number=Sing	22	conj	_	SpaceAfter=No
-26	,	,	PUNCT	FF	_	27	punct	_	_
-27	sollecitudine	sollecitudine	NOUN	S	Gender=Fem|Number=Sing	22	conj	_	SpaceAfter=No
-28	,	,	PUNCT	FF	_	29	punct	_	_
-29	venerazione	venerazione	NOUN	S	Gender=Fem|Number=Sing	22	conj	_	_
-30	e	e	CCONJ	CC	_	31	cc	_	_
-31	timore	timore	NOUN	S	Gender=Masc|Number=Sing	22	conj	_	_
-32-33	degli	_	_	_	_	_	_	_	_
-32	di	di	ADP	E	_	34	case	_	_
-33	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
-34	dèi	dèi	NOUN	S	Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No
-35	.	.	PUNCT	FS	_	6	punct	_	SpaceAfter=No
-36	»	»	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = «Coloro che hanno vissuto secondo il Logos sono cristiani, anche se sono stati considerati atei, come, tra i Greci, Socrate ed Eraclito, ad altri simili, e tra i barbari, Abramo, Anania, Azaria, Misael, Elia, e molti altri ancora, dei quali ora non elenchiamo le opere e i nomi, sapendo che sarebbe troppo lungo.
-1	«	«	PUNCT	FB	_	10	punct	_	SpaceAfter=No
-2	Coloro	coloro	PRON	PD	Number=Plur|PronType=Dem	10	nsubj	_	_
-3	che	che	PRON	PR	PronType=Rel	5	nsubj	_	_
-4	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	vissuto	vivere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_
-6	secondo	secondo	ADP	E	_	8	case	_	_
-7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Logos	Logos	PROPN	SP	_	5	obl	_	_
-9	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
-10	cristiani	cristiano	ADJ	A	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-11	,	,	PUNCT	FF	_	10	punct	_	_
-12	anche	anche	ADV	B	_	16	mark	_	_
-13	se	se	SCONJ	CS	_	12	fixed	_	_
-14	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
-15	stati	essere	AUX	VA	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	aux:pass	_	_
-16	considerati	considerare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	10	advcl	_	_
-17	atei	ateo	ADJ	A	Gender=Masc|Number=Plur	16	xcomp	_	SpaceAfter=No
-18	,	,	PUNCT	FF	_	16	punct	_	_
-19	come	come	ADP	E	_	23	case	_	SpaceAfter=No
-20	,	,	PUNCT	FF	_	23	punct	_	_
-21	tra	tra	ADP	E	_	23	case	_	_
-22	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-23	Greci	Greci	PROPN	SP	_	16	obl	_	SpaceAfter=No
-24	,	,	PUNCT	FF	_	25	punct	_	_
-25	Socrate	Socrate	PROPN	SP	_	23	conj	_	_
-26	ed	e	CCONJ	CC	_	27	cc	_	_
-27	Eraclito	Eraclito	PROPN	SP	_	23	conj	_	SpaceAfter=No
-28	,	,	PUNCT	FF	_	31	punct	_	_
-29	ad	a	ADP	E	_	31	case	_	_
-30	altri	altro	ADJ	PI	Gender=Masc|Number=Plur|PronType=Ind	31	amod	_	_
-31	simili	simile	ADJ	A	Number=Plur	23	conj	_	SpaceAfter=No
-32	,	,	PUNCT	FF	_	36	punct	_	_
-33	e	e	CCONJ	CC	_	36	cc	_	_
-34	tra	tra	ADP	E	_	36	case	_	_
-35	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
-36	barbari	barbaro	NOUN	S	Gender=Masc|Number=Plur	23	conj	_	SpaceAfter=No
-37	,	,	PUNCT	FF	_	38	punct	_	_
-38	Abramo	Abramo	PROPN	SP	_	23	conj	_	SpaceAfter=No
-39	,	,	PUNCT	FF	_	40	punct	_	_
-40	Anania	Anania	PROPN	SP	_	23	conj	_	SpaceAfter=No
-41	,	,	PUNCT	FF	_	42	punct	_	_
-42	Azaria	Azaria	PROPN	SP	_	23	conj	_	SpaceAfter=No
-43	,	,	PUNCT	FF	_	44	punct	_	_
-44	Misael	Misael	PROPN	SP	_	23	conj	_	SpaceAfter=No
-45	,	,	PUNCT	FF	_	46	punct	_	_
-46	Elia	Elia	PROPN	SP	_	23	conj	_	SpaceAfter=No
-47	,	,	PUNCT	FF	_	50	punct	_	_
-48	e	e	CCONJ	CC	_	50	cc	_	_
-49	molti	molto	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	50	det	_	_
-50	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	23	conj	_	_
-51	ancora	ancora	ADV	B	_	50	advmod	_	SpaceAfter=No
-52	,	,	PUNCT	FF	_	50	punct	_	_
-53-54	dei	_	_	_	_	_	_	_	_
-53	di	di	ADP	E	_	55	case	_	_
-54	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_
-55	quali	quale	PRON	PR	Number=Plur|PronType=Rel	58	obl	_	_
-56	ora	ora	ADV	B	_	58	advmod	_	_
-57	non	non	ADV	BN	PronType=Neg	58	advmod	_	_
-58	elenchiamo	elencare	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	50	acl:relcl	_	_
-59	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	60	det	_	_
-60	opere	opera	NOUN	S	Gender=Fem|Number=Plur	58	obj	_	_
-61	e	e	CCONJ	CC	_	63	cc	_	_
-62	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	63	det	_	_
-63	nomi	nome	NOUN	S	Gender=Masc|Number=Plur	60	conj	_	SpaceAfter=No
-64	,	,	PUNCT	FF	_	58	punct	_	_
-65	sapendo	sapere	VERB	V	VerbForm=Ger	58	advcl	_	_
-66	che	che	SCONJ	CS	_	69	mark	_	_
-67	sarebbe	essere	AUX	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	69	cop	_	_
-68	troppo	troppo	ADV	B	_	69	advmod	_	_
-69	lungo	lungo	ADJ	A	Gender=Masc|Number=Sing	65	ccomp	_	SpaceAfter=No
-70	.	.	PUNCT	FS	_	10	punct	_	_
-
-# sent_id = 2
-# text = Di conseguenza coloro che hanno vissuto prima di Cristo, ma non secondo il Logos, sono stati malvagi, nemici di Cristo e assassini di quelli che vivevano secondo il Logos; al contrario coloro, quelli che hanno vissuto e vivono secondo il Logos sono cristiani, non soggetti a paure e turbamenti»
-1	Di	di	ADP	E	_	2	case	_	_
-2	conseguenza	conseguenza	NOUN	S	Gender=Fem|Number=Sing	19	obl	_	_
-3	coloro	coloro	PRON	PD	Number=Plur|PronType=Dem	19	nsubj	_	_
-4	che	che	PRON	PR	PronType=Rel	6	nsubj	_	_
-5	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	vissuto	vivere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl:relcl	_	_
-7	prima	prima	ADV	B	_	9	case	_	_
-8	di	di	ADP	E	_	7	fixed	_	_
-9	Cristo	Cristo	PROPN	SP	_	6	obl	_	SpaceAfter=No
-10	,	,	PUNCT	FF	_	15	punct	_	_
-11	ma	ma	CCONJ	CC	_	15	cc	_	_
-12	non	non	ADV	BN	PronType=Neg	15	advmod	_	_
-13	secondo	secondo	ADP	E	_	15	case	_	_
-14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Logos	Logos	PROPN	SP	_	9	conj	_	SpaceAfter=No
-16	,	,	PUNCT	FF	_	3	punct	_	_
-17	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-18	stati	essere	AUX	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	19	cop	_	_
-19	malvagi	malvagio	ADJ	A	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-20	,	,	PUNCT	FF	_	21	punct	_	_
-21	nemici	nemico	NOUN	S	Gender=Masc|Number=Plur	19	conj	_	_
-22	di	di	ADP	E	_	23	case	_	_
-23	Cristo	Cristo	PROPN	SP	_	21	nmod	_	_
-24	e	e	CCONJ	CC	_	25	cc	_	_
-25	assassini	assassino	NOUN	S	Gender=Masc|Number=Plur	19	conj	_	_
-26	di	di	ADP	E	_	27	case	_	_
-27	quelli	quello	PRON	PD	Gender=Masc|Number=Plur|PronType=Dem	25	nmod	_	_
-28	che	che	PRON	PR	PronType=Rel	29	nsubj	_	_
-29	vivevano	vivere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	27	acl:relcl	_	_
-30	secondo	secondo	ADP	E	_	32	case	_	_
-31	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	Logos	Logos	PROPN	SP	_	29	obl	_	SpaceAfter=No
-33	;	;	PUNCT	FC	_	19	punct	_	_
-34-35	al	_	_	_	_	_	_	_	_
-34	a	a	ADP	E	_	36	case	_	_
-35	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	contrario	contrario	NOUN	S	Gender=Masc|Number=Sing	49	obl	_	_
-37	coloro	coloro	PRON	PD	Number=Plur|PronType=Dem	49	nsubj	_	SpaceAfter=No
-38	,	,	PUNCT	FF	_	37	punct	_	_
-39	quelli	quello	PRON	PD	Gender=Masc|Number=Plur|PronType=Dem	37	appos	_	_
-40	che	che	PRON	PR	PronType=Rel	42	nsubj	_	_
-41	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	aux	_	_
-42	vissuto	vivere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	39	acl:relcl	_	_
-43	e	e	CCONJ	CC	_	44	cc	_	_
-44	vivono	vivere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	conj	_	_
-45	secondo	secondo	ADP	E	_	47	case	_	_
-46	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
-47	Logos	Logos	PROPN	SP	_	44	obl	_	_
-48	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	cop	_	_
-49	cristiani	cristiano	ADJ	A	Gender=Masc|Number=Plur	19	conj	_	SpaceAfter=No
-50	,	,	PUNCT	FF	_	52	punct	_	_
-51	non	non	ADV	BN	PronType=Neg	52	advmod	_	_
-52	soggetti	soggetto	ADJ	A	Gender=Masc|Number=Plur	49	conj	_	_
-53	a	a	ADP	E	_	54	case	_	_
-54	paure	paura	NOUN	S	Gender=Fem|Number=Plur	52	obl	_	_
-55	e	e	CCONJ	CC	_	56	cc	_	_
-56	turbamenti	turbamento	NOUN	S	Gender=Masc|Number=Plur	54	conj	_	SpaceAfter=No
-57	»	»	PUNCT	FB	_	19	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = «Nel XIII sec. una religione è un Ordine religioso»
-1	«	«	PUNCT	FB	_	11	punct	_	SpaceAfter=No
-2-3	Nel	_	_	_	_	_	_	_	_
-2	In	in	ADP	E	_	5	case	_	_
-3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	XIII	XIII	ADJ	NO	Number=Sing|NumType=Ord	5	amod	_	_
-5	sec	sec	NOUN	S	Gender=Masc	11	obl	_	SpaceAfter=No
-6	.	.	PUNCT	FF	_	5	punct	_	_
-7	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	religione	religione	NOUN	S	Gender=Fem|Number=Sing	11	nsubj	_	_
-9	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-10	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Ordine	ordine	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
-12	religioso	religioso	ADJ	A	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No
-13	»	»	PUNCT	FB	_	11	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = «DlN, I.
-1	«	«	PUNCT	FB	_	2	punct	_	SpaceAfter=No
-2	DlN	Dln	PROPN	SP	_	0	root	_	SpaceAfter=No
-3	,	,	PUNCT	FF	_	2	punct	_	_
-4	I	I	ADJ	NO	Number=Sing|NumType=Ord	2	amod	_	SpaceAfter=No
-5	.	.	PUNCT	FS	_	2	punct	_	_
-
-# sent_id = 2
-# text = Definition and general notion.
-1	Definition	definition	NOUN	S	Gender=Masc	0	root	_	_
-2	and	and	CCONJ	CC	_	4	cc	_	_
-3	general	general	NOUN	S	_	4	amod	_	_
-4	notion	notion	NOUN	S	_	1	conj	_	SpaceAfter=No
-5	.	.	PUNCT	FS	_	1	punct	_	_
-
-# sent_id = 3
-# text = It is usual to emphasize three distinct senses of din: (i) judgment, retribution; (2) custom, sage;
-1	It	it	PRON	PC	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
-2	is	is	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	usual	usual	ADJ	A	Number=Sing	0	root	_	_
-4	to	to	ADP	E	_	5	mark	_	_
-5	emphasize	emphasize	VERB	V	VerbForm=Inf	3	advcl	_	_
-6	three	three	NUM	N	NumType=Card	8	nummod	_	_
-7	distinct	distinct	ADJ	A	_	8	amod	_	_
-8	senses	senses	NOUN	S	_	5	obj	_	_
-9	of	of	ADP	E	_	10	case	_	_
-10	din	din	NOUN	S	_	8	nmod	_	SpaceAfter=No
-11	:	:	PUNCT	FC	_	8	punct	_	_
-12	(	(	PUNCT	FB	_	15	punct	_	SpaceAfter=No
-13	i	i	ADJ	NO	Number=Sing|NumType=Ord	15	amod	_	SpaceAfter=No
-14	)	)	PUNCT	FB	_	13	punct	_	_
-15	judgment	judgment	NOUN	S	_	8	appos	_	SpaceAfter=No
-16	,	,	PUNCT	FF	_	17	punct	_	_
-17	retribution	retribution	NOUN	S	Gender=Fem	15	conj	_	SpaceAfter=No
-18	;	;	PUNCT	FC	_	22	punct	_	_
-19	(	(	PUNCT	FB	_	20	punct	_	SpaceAfter=No
-20	2	2	NUM	N	NumType=Card	22	nummod	_	SpaceAfter=No
-21	)	)	PUNCT	FB	_	20	punct	_	_
-22	custom	custom	NOUN	S	Gender=Masc	15	conj	_	SpaceAfter=No
-23	,	,	PUNCT	FF	_	24	punct	_	_
-24	sage	sage	NOUN	S	Gender=Fem|Number=Plur	15	conj	_	SpaceAfter=No
-25	;	;	PUNCT	FC	_	3	punct	_	_
-
-# sent_id = 4
-# text = (3) religion.
-1	(	(	PUNCT	FB	_	2	punct	_	SpaceAfter=No
-2	3	3	NUM	N	NumType=Card	4	nummod	_	SpaceAfter=No
-3	)	)	PUNCT	FB	_	2	punct	_	_
-4	religion	religion	NOUN	S	Gender=Masc	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	FS	_	4	punct	_	_
-
-# sent_id = 5
-# text = The first refers to the Hebraeo-Aramaic root, the second to the Arabic root ddna, dayn (debt, money owing), the third to the Pehlevi dēn (revelation, religion).
-1	The	the	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	first	first	NOUN	S	_	3	nsubj	_	_
-3	refers	referare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	to	to	ADP	E	_	6	case	_	_
-5	the	the	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Hebraeo	Hebraeo	PROPN	SP	_	3	obl	_	SpaceAfter=No
-7	-	-	PUNCT	FF	_	6	punct	_	SpaceAfter=No
-8	Aramaic	Aramaic	PROPN	SP	_	6	flat:name	_	_
-9	root	root	NOUN	S	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-10	,	,	PUNCT	FF	_	12	punct	_	_
-11	the	the	DET	RD	Definite=Def|PronType=Art	12	det	_	_
-12	second	second	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	6	conj	_	_
-13	to	to	ADP	E	_	15	case	_	_
-14	the	the	DET	RD	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
-15	Arabic	Arabic	PROPN	SP	_	12	obl	_	_
-16	root	root	NOUN	S	_	15	nmod	_	_
-17	ddna	ddna	NOUN	S	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	FF	_	19	punct	_	_
-19	dayn	dayn	NOUN	S	_	17	conj	_	_
-20	(	(	PUNCT	FB	_	21	punct	_	SpaceAfter=No
-21	debt	debt	NOUN	S	Gender=Masc	19	appos	_	SpaceAfter=No
-22	,	,	PUNCT	FF	_	23	punct	_	_
-23	money	money	NOUN	S	_	21	conj	_	_
-24	owing	owing	NOUN	S	_	23	compound	_	SpaceAfter=No
-25	)	)	PUNCT	FB	_	21	punct	_	SpaceAfter=No
-26	,	,	PUNCT	FF	_	28	punct	_	_
-27	the	the	DET	RD	Definite=Def|PronType=Art	28	det	_	_
-28	third	third	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	6	conj	_	_
-29	to	to	ADP	E	_	31	case	_	_
-30	the	the	DET	RD	Definite=Def|PronType=Art	31	det	_	_
-31	Pehlevi	Pehlevi	PROPN	SP	_	28	obl	_	_
-32	dēn	dēn	X	SW	_	31	nmod	_	_
-33	(	(	PUNCT	FB	_	34	punct	_	SpaceAfter=No
-34	revelation	revelation	NOUN	S	Gender=Fem|Number=Sing	31	appos	_	SpaceAfter=No
-35	,	,	PUNCT	FF	_	36	punct	_	_
-36	religion	religion	NOUN	S	Gender=Fem|Number=Sing	34	conj	_	SpaceAfter=No
-37	)	)	PUNCT	FB	_	34	punct	_	SpaceAfter=No
-38	.	.	PUNCT	FS	_	3	punct	_	_
-
-# sent_id = 6
-# text = This third etymology has been exploited by Noldeke and Vollers.»
-1	This	this	DET	DD	_	3	det	_	_
-2	third	third	ADJ	NO	_	3	amod	_	_
-3	etymology	etymology	NOUN	S	_	6	nsubj:pass	_	_
-4	has	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	been	beene	ADV	B	_	6	advmod	_	_
-6	exploited	exploited	VERB	V	_	0	root	_	_
-7	by	by	ADP	E	_	8	case	_	_
-8	Noldeke	Noldeke	PROPN	SP	_	6	obl	_	_
-9	and	and	CCONJ	CC	_	10	cc	_	_
-10	Vollers	Vollers	PROPN	SP	_	8	conj	_	SpaceAfter=No
-11	.	.	PUNCT	FS	_	6	punct	_	SpaceAfter=No
-12	»	»	PUNCT	FB	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Bibliografia[modifica | modifica wikitesto]
+# text = Bibliografia
 1	Bibliografia	bibliografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	SYM	SYM	_	3	dep	_	_
-5	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	5	compound	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9504,15 +9550,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Voci correlate[modifica | modifica wikitesto]
+# text = Voci correlate
 1	Voci	voce	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	correlate	correlato	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9520,15 +9560,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Altri progetti[modifica | modifica wikitesto]
+# text = Altri progetti
 1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
 2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9536,24 +9570,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Collegamenti esterni[modifica | modifica wikitesto]
+# text = Altri progetti
+1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
+2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Collegamenti esterni
 1	Collegamenti	collegamento	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	esterni	esterno	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	|	|	SYM	SYM	_	4	dep	_	_
-6	modifica	modifica	NOUN	S	Gender=Fem|Number=Sing	4	conj	_	_
-7	wikitesto	wikitesto	NOUN	S	Gender=Masc|Number=Sing	6	compound	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Menu di navigazione
-1	Menu	menu	NOUN	S	Gender=Masc	0	root	_	_
-2	di	di	ADP	E	_	3	case	_	_
-3	navigazione	navigazione	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
 

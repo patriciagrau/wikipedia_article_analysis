@@ -1,5 +1,3 @@
-# https://mr.wikipedia.org/wiki/%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82_%E0%A4%AF%E0%A5%89%E0%A4%B0%E0%A5%8D%E0%A4%95_%E0%A4%B6%E0%A4%B9%E0%A4%B0
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -11,7 +9,7 @@
 2	यॉर्क	यॉर्क	ADJ	_	Case=Nom	3	amod	_	_
 3	शहर	शहर	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 4	-	-	PUNCT	_	_	5	punct	_	_
-5	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Obl	3	conj	_	SpacesAfter=\n
+5	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Obl	3	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -19,35 +17,41 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = न्यू यॉर्क शहर
-1	न्यू	न्यू	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
-2	यॉर्क	यॉर्क	ADJ	_	Case=Nom	0	root	_	_
-3	शहर	शहर	PUNCT	_	_	2	advmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = गुणक: 40°43′N 74°00′W﻿ /
-1	गुणक:	गुणक:	ADV	_	_	3	advmod	_	_
-2	40°43′N	40°43′n	NOUN	_	_	3	compound:lvc	_	_
-3	74°00′W﻿	74°00′w﻿	VERB	_	Aspect=Imp|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	/	/	PUNCT	_	_	3	punct	_	_
+# text = न्यू यॉर्क हे लोकसंख्येच्या दृष्टीने अमेरिकेतील सगळ्यात मोठे शहर व जगातील सर्वाधिक लोकसंख्येच्या महानगरांच्या यादीत समाविष्ट आहे.
+1	न्यू	न्यू	ADJ	_	_	9	amod	_	SpacesBefore=\n
+2	यॉर्क	यॉर्क	ADJ	_	_	9	nsubj	_	_
+3	हे	हा	DET	_	Distance=Prox|Gender=Neut|Number=Sing|PronType=Dem	5	det	_	_
+4	लोकसंख्येच्या	लोकसंख्येच्या	ADJ	_	Case=Obl	5	amod	_	_
+5	दृष्टीने	दृष्ट	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	9	obl	_	_
+6	अमेरिकेतील	अमेरिकेणे	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+7	सगळ्यात	सगळ्ा	ADJ	_	_	9	amod	_	_
+8	मोठे	मोठे	ADJ	_	_	9	amod	_	_
+9	शहर	शहर	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
+10	व	व	CCONJ	_	_	16	cc	_	_
+11	जगातील	जगाणे	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	9	conj	_	_
+12	सर्वाधिक	सर्वाधिक	ADJ	_	Case=Nom	15	amod	_	_
+13	लोकसंख्येच्या	लोकसंख्येच्या	ADJ	_	Case=Obl	15	amod	_	_
+14	महानगरांच्या	महानगरांच्या	ADJ	_	Case=Obl	15	amod	_	_
+15	यादीत	यादणे	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	16	obl	_	_
+16	समाविष्ट	समाविष्ट	ADJ	_	Case=Nom	0	root	_	_
+17	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	_	_
 
 # sent_id = 2
-# text = ﻿40.717°N 74.000°W﻿ /
-1	﻿40.717°N	﻿40.717°n	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	74.000°W﻿	74.000°w﻿	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-3	/	/	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 3
-# text = 40.717; -74.000
-1	40.717	40.717	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	;	;	PUNCT	_	_	4	punct	_	_
-3	-	-	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	74.000	74.000	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+# text = संयुक्त राष्ट्रसंघाचे मुख्यालय असलेले हे शहर जगातील सर्वात महत्त्वपूर्ण शहरांपैकी एक आहे.
+1	संयुक्त	संयुक्त	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
+2	राष्ट्रसंघाचे	राष्ट्रसंघाचे	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	3	nsubj	_	_
+3	मुख्यालय	मुखा	VERB	_	Case=Dat|Gender=Masc|Number=Sing	4	advcl	_	_
+4	असलेले	अरणे	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin	6	acl	_	_
+5	हे	हा	DET	_	Distance=Prox|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	_
+6	शहर	शहर	NOUN	_	_	11	nsubj	_	_
+7	जगातील	जगाणे	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
+8	सर्वात	सर्व	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	11	obl	_	_
+9	महत्त्वपूर्ण	महत्त्वपूर्ण	NOUN	_	_	11	amod	_	_
+10	शहरांपैकी	शहरांपैकी	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+11	एक	एक	DET	_	Number=Sing|PronType=Ind	0	root	_	_
+12	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -418,8 +422,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भूगोल[संपादन]
-1	भूगोल[संपादन]	भूगोल[संप	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	nsubj	_	SpacesAfter=\n
+# text = भूगोल
+1	भूगोल	भूगणे	VERB	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -427,9 +431,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = नागरी व्यवस्था[संपादन]
+# text = नागरी व्यवस्था
 1	नागरी	नागरी	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
-2	व्यवस्था[संपादन]	व्यवस्था[संपादन]	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	व्यवस्था	व्यवस्था	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -437,8 +441,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = संस्कृती[संपादन]
-1	संस्कृती[संपादन]	संस्कृती[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = संस्कृती
+1	संस्कृती	संस्कृती	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -446,8 +450,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = सरकार[संपादन]
-1	सरकार[संपादन]	सरकार[संप	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = सरकार
+1	सरकार	सरकार	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -455,8 +459,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = दळणवळण[संपादन]
-1	दळणवळण[संपादन]	दळणवळण[संपादन]	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	nsubj	_	SpacesAfter=\n
+# text = दळणवळण
+1	दळणवळण	दळणवळण	VERB	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -575,8 +579,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = शिक्षणसंस्था[संपादन]
-1	शिक्षणसंस्था[संपादन]	शिक्षणसंस्था[संपादन]	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = शिक्षणसंस्था
+1	शिक्षणसंस्था	शिक्षणसंस्था	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -584,16 +588,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = संदर्भ[संपादन]
-1	संदर्भ[संपादन]	संदर्भ[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन यादी
-1	दिक्चालन	दिक्च	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
-2	यादी	यादी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\n
+# text = संदर्भ
+1	संदर्भ	संदर्भ	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	nsubj	_	SpaceAfter=No
 

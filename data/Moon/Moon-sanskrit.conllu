@@ -1,5 +1,3 @@
-# https://sa.wikipedia.org/wiki/%E0%A4%9A%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%83
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12,16 +10,7 @@
 # sent_id = 2
 # text = - विकिपीडिया
 1	-	-	ADV	_	_	2	advmod	_	_
-2	विकिपीडिया	विकिपीडियa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = sanskrit-vedic-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = चन्द्रः
-1	चन्द्रः	चन्द्रa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	विकिपीडिया	विकिपीडियa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -48,13 +37,17 @@
 1	नमः	नमः	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
 # sent_id = 2
-# text = सूर्याय चन्द्राय मङ्गलाय बुधाय च ।
-1	सूर्याय	सूर्यa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	_
-2	चन्द्राय	चन्द्राa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+# text = सूर्याय चन्द्राय मङ्गलाय बुधाय च । गुरुशुक्रशनिभ्यश्च राहवे केतवे नमः॥
+1	सूर्याय	सूर्यa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	advcl	_	_
+2	चन्द्राय	चन्द्रa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
 3	मङ्गलाय	मङ्गलa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
 4	बुधाय	बुधाय	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
-5	च	च	ADV	_	_	6	advmod	_	_
-6	।	।	ADV	_	_	0	root	_	SpacesAfter=\n
+5	च	च	ADV	_	_	7	advmod	_	_
+6	।	।	ADV	_	_	7	advmod	_	SpacesAfter=\n
+7	गुरुशुक्रशनिभ्यश्च	गुरुशुक्रशनिभ्यश्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+8	राहवे	राहवे	NOUN	_	Gender=Fem	7	nmod	_	_
+9	केतवे	केतवे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	obl	_	_
+10	नमः॥	नमः॥	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	obl	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -363,20 +356,38 @@
 3	month)	month)	NOUN	_	Case=Voc|Gender=Masc|Number=Sing	0	root	_	_
 
 # sent_id = 15
-# text = इति कथ्यते । अयं
+# text = इति कथ्यते
 1	इति	इति	ADV	_	_	2	advmod	_	_
-2	कथ्यते	कथ्यते	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	obl	_	_
-3	।	।	ADV	_	_	4	advmod	_	_
-4	अयं	अयं	ADV	_	_	0	root	_	_
+2	कथ्यते	कथ्यते	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
 # sent_id = 16
-# text = कालः २७.५५४६ सौरदिनसमं भवति
-1	कालः	कालः	NOUN	_	Gender=Masc	2	nmod	_	_
-2	२७.५५४६	२७.५५४a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-3	सौरदिनसमं	सौरदिनसमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
-4	भवति	भवति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+# text = । अयं कालः २७.५५४६ सौरदिनसमं भवति
+1	।	।	ADV	_	_	3	advmod	_	_
+2	अयं	अयं	ADV	_	_	3	advmod	_	_
+3	कालः	कालः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nmod	_	_
+4	२७.५५४६	२७.५५४a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+5	सौरदिनसमं	सौरदिनसमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
+6	भवति	भवति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
 
 # sent_id = 17
+# text = । चन्द्रस्य कक्षा भूचक्रात् अधिकतरं नाम ५ डिग्रि
+1	।	।	ADV	_	_	2	advmod	_	SpacesAfter=\n
+2	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	8	advcl	_	_
+3	कक्षा	कक्षा	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+4	भूचक्रात्	भूचक्रातa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	अधिकतरं	अधिकतरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+6	नाम	नाम	ADV	_	_	8	advmod	_	_
+7	५	५	PART	_	_	8	advmod	_	_
+8	डिग्रि	डिग्रि	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 18
+# text = १५ कोणे नत्वा भ्रमति
+1	१५	१५	ADV	_	_	3	advmod	_	_
+2	कोणे	कोणे	NOUN	_	Gender=Masc	3	nmod	_	_
+3	नत्वा	नत्वा	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nmod	_	_
+4	भ्रमति	भ्रमतa	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+
+# sent_id = 19
 # text = ।
 1	।	।	PRON	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
@@ -386,8 +397,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = कक्षागुणाः[सम्पादयतु]
-1	कक्षागुणाः[सम्पादयतु]	कक्षागुणाः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = कक्षागुणाः
+1	कक्षागुणाः	कक्षागुणाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -395,8 +406,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भौतिकगुणलक्षणानि[सम्पादयतु]
-1	भौतिकगुणलक्षणानि[सम्पादयतु]	भौतिकगुणलक्षणानि[सम्पादयतa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = भौतिकगुणलक्षणानि
+1	भौतिकगुणलक्षणानि	भौतिकगुणलक्षणाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -404,9 +415,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बाह्य-उष्णांशः(समभाजकवृत्ते )[सम्पादयतु]
-1	बाह्य-उष्णांशः(समभाजकवृत्ते	बाह्य-उष्णांशः(समभाजकवृत्a	ADJ	_	Case=Nom|Gender=Neut|Number=Dual	0	root	_	_
-2	)[सम्पादयतु]	)[सम्पादयतुa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	acl	_	SpacesAfter=\n
+# text = बाह्य-उष्णांशः(समभाजकवृत्ते
+1	बाह्य-उष्णांशः(समभाजकवृत्ते	बाह्य-उष्णांशः(समभाजकवृत्a	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	_
+
+# sent_id = 2
+# text = )
+1	)	)	ADV	_	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -414,8 +428,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = वायुमण्डलम्[सम्पादयतु]
-1	वायुमण्डलम्[सम्पादयतु]	वायुमण्डलम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = वायुमण्डलम्
+1	वायुमण्डलम्	वायुमण्डलमa	ADJ	_	Case=Nom|Gender=Neut|Number=Dual	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -423,8 +437,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = सान्द्रता[सम्पादयतु]
-1	सान्द्रता[सम्पादयतु]	सान्द्रता[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = सान्द्रता
+1	सान्द्रता	सान्द्रतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -477,8 +491,400 @@
 3	आवश्यकानि	आवश्यकानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
 
 # sent_id = 8
+# text = । चन्द्रस्य व्यासः
+1	।	।	ADV	_	_	3	advmod	_	SpacesAfter=\s\n
+2	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	acl	_	_
+3	व्यासः	व्यासः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\s
+
+# sent_id = 9
+# text = ३,४७४ कि.मी
+1	३,४७४	३,४७४	NOUN	_	Gender=Fem	2	nmod	_	_
+2	कि.मी	कि.मी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 10
+# text = परिमितं भवति (२,१५९ मैल्) (भूग्रहात् ३.७ गुणितम्
+1	परिमितं	परिमिa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_
+2	भवति	भवति	NOUN	_	Gender=Masc	1	conj	_	_
+3	(२,१५९	(२,१५९	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	मैल्)	मैल्)	NOUN	_	Gender=Masc	1	conj	_	_
+5	(भूग्रहात्	(भूग्रहातa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	३.७	३.७	PRON	_	_	7	nsubj	_	_
+7	गुणितम्	गुणितमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 11
+# text = न्यूनम् ।) एषः सौरमण्डलस्य पञ्चमः अतिभारयुकः
+1	न्यूनम्	न्यूनमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	।)	।)	ADV	_	_	1	advmod	_	_
+3	एषः	एषः	ADV	_	_	4	advmod	_	_
+4	सौरमण्डलस्य	सौरमण्डलस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	acl	_	_
+5	पञ्चमः	पञ्चमः	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	6	obl	_	_
+6	अतिभारयुकः	अतिभारयुकa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
+
+# sent_id = 12
+# text = तथा अतिविस्तृतः उपग्रहः
+1	तथा	तथा	ADV	_	_	2	advmod	_	_
+2	अतिविस्तृतः	अतिविस्तृतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	उपग्रहः	उपग्रहa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+
+# sent_id = 13
+# text = । ग्यानिमिड्ड्, टैटन्, क्यालिष्टो,
+1	।	।	ADV	_	_	2	nsubj	_	_
+2	ग्यानिमिड्ड्,	ग्यानिमिड्ड्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	टैटन्,	टैटन्,	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	2	obl	_	_
+4	क्यालिष्टो,	क्यालिष्टोa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 14
+# text = एवं ऐओ चन्द्रात्
+1	एवं	एवं	ADV	_	_	3	advmod	_	_
+2	ऐओ	ऐओ	ADV	_	_	3	discourse	_	_
+3	चन्द्रात्	चन्द्रातa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 15
+# text = बृहत् उपग्रहाः
+1	बृहत्	बृहत्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+2	उपग्रहाः	उपग्रहाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 16
+# text = । सागरस्य उत्कर्षापकर्षयोः चन्द्रस्य गुरुत्वाकर्षणमेव कारणम्
+1	।	।	ADV	_	_	2	advmod	_	_
+2	सागरस्य	सागरस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	उत्कर्षापकर्षयोः	उत्कर्षापकर्षयa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	गुरुत्वाकर्षणमेव	गुरुत्वाकर्षणमेa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+6	कारणम्	कारणम्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+
+# sent_id = 17
+# text = । एकवारं
+1	।	।	ADV	_	_	2	advmod	_	_
+2	एकवारं	एकवारं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 18
+# text = भूमिं परितः परिभ्रमणं कर्तुम् एषः २७.३ दिनानि स्वीकरोति
+1	भूमिं	भूमिं	NOUN	_	Gender=Masc	2	nmod	_	_
+2	परितः	परितः	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	7	nmod	_	_
+3	परिभ्रमणं	परिभ्रमणa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	कर्तुम्	कर्तुa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	एषः	एषः	ADV	_	_	7	advmod	_	_
+6	२७.३	२७.३	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nmod	_	_
+7	दिनानि	दिनानि	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	8	obl	_	_
+8	स्वीकरोति	स्वीकरोतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 19
+# text = । भूमि-चन्द्र-सूर्याणां व्यवस्थायाम् आवर्तमानेभ्यः
+1	।	।	PRON	_	_	2	nsubj	_	_
+2	भूमि-चन्द्र-सूर्याणां	भूमि-चन्द्र-सूर्याणa	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
+3	व्यवस्थायाम्	व्यवस्थायामa	ADJ	_	Case=Nom|Gender=Neut|Number=Dual	2	conj	_	_
+4	आवर्तमानेभ्यः	आवर्तमानेभ्यa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	2	conj	_	_
+
+# sent_id = 20
+# text = परिवर्तनेभ्यः चन्द्रस्य कलाः सम्भवन्ति
+1	परिवर्तनेभ्यः	परिवर्तनेभ्यa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\s
+2	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	कलाः	कलाः	NOUN	_	Gender=Fem	4	nmod	_	_
+4	सम्भवन्ति	सम्भवन्तa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 21
+# text = । एताः कलाः २७.५ दिनेषु एकवारम्
+1	।	।	ADV	_	_	3	advmod	_	_
+2	एताः	एताः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
+3	कलाः	कलाः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+4	२७.५	२७.५	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
+5	दिनेषु	दिनेषु	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	6	nmod	_	_
+6	एकवारम्	एकवारमa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
+
+# sent_id = 22
+# text = आवर्तिताः भवन्ति
+1	आवर्तिताः	आवर्तिताa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	भवन्ति	भवन्ति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+
+# sent_id = 23
+# text = । भूमिं विहाय मानवैः यत्र पदं न्यस्तं तादृशः
+1	।	।	ADV	_	_	3	advmod	_	SpacesAfter=\n
+2	भूमिं	भूमिं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
+3	विहाय	विहाय	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	5	nmod	_	_
+4	मानवैः	मानवa	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
+5	यत्र	यत्र	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	obj	_	_
+6	पदं	पदं	ADV	_	_	7	advmod	_	_
+7	न्यस्तं	न्यस्तa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+8	तादृशः	तादृशः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	conj	_	_
+
+# sent_id = 24
+# text = एकैकः आकाशकायः
+1	एकैकः	एकैकः	NOUN	_	Gender=Masc	2	nsubj	_	_
+2	आकाशकायः	आकाशकायa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 25
+# text = नाम चन्द्रः
+1	नाम	नाम	PRON	_	_	2	nsubj	_	_
+2	चन्द्रः	चन्द्रa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 26
+# text = । रष्यादेशस्य लूनयोजनायाः
+1	।	।	ADV	_	_	2	advmod	_	_
+2	रष्यादेशस्य	रष्यादेशस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	लूनयोजनायाः	लूनयोजनायाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	acl	_	_
+
+# sent_id = 27
+# text = गगननौका तावत् चन्द्रग्रहं प्रति ऐदम्प्राथम्येन प्रेषिता मानवर्राहतगगननौका।
+1	गगननौका	गगननौकa	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	7	obl	_	_
+2	तावत्	तावत्	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	1	conj	_	_
+3	चन्द्रग्रहं	चन्द्रग्रहa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	प्रति	प्रति	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	7	obl	_	_
+5	ऐदम्प्राथम्येन	ऐदम्प्राथम्येa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	प्रेषिता	प्रेषितa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	obl	_	_
+7	मानवर्राहतगगननौका।	मानवर्राहतगगननौकa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 28
+# text = लूना-१ भूगुरुत्वं
+1	लूना-१	लूना-१	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	भूगुरुत्वं	भूगुरुत्वa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+
+# sent_id = 29
+# text = अतीत्य चन्द्रस्य समीपं गतवत् प्रथमं मानवेन निर्मितं वस्तु
+1	अतीत्य	अतीत्य	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	8	nmod	_	_
+2	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	समीपं	समीपं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
+4	गतवत्	गतवत्	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	5	nmod	_	_
+5	प्रथमं	प्रथमं	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	1	conj	_	_
+6	मानवेन	मानवेन	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	8	nmod	_	_
+7	निर्मितं	निर्मितa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+8	वस्तु	वस्तु	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 30
+# text = । लुना-२ चन्द्रस्य बाह्यस्तरं प्रति प्रेषितं प्रथमं
+1	।	।	ADV	_	_	2	advmod	_	_
+2	लुना-२	लुना-२	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	बाह्यस्तरं	बाह्यस्तरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	प्रति	प्रति	NOUN	_	Gender=Masc	7	nmod	_	_
+6	प्रेषितं	प्रेषितa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+7	प्रथमं	प्रथमं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+
+# sent_id = 31
+# text = मानवनिर्मितं वस्तु
+1	मानवनिर्मितं	मानवनिर्मितa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	वस्तु	वस्तु	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+
+# sent_id = 32
+# text = । सामान्यतः
+1	।	।	ADV	_	_	2	advmod	_	_
+2	सामान्यतः	सामान्यतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 33
+# text = अस्माकं दर्शनेन विमुखस्य चन्द्रस्य अपरमुखम् लूना-३-द्वारा चित्रीकृतम्
+1	अस्माकं	अस्माa	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	0	root	_	_
+2	दर्शनेन	दर्शनेa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	विमुखस्य	विमुखस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+5	अपरमुखम्	अपरमुखमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	लूना-३-द्वारा	लूना-३-द्वारa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+7	चित्रीकृतम्	चित्रीकृतमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 34
+# text = । एतत्सर्वम्
+1	।	।	ADV	_	_	2	advmod	_	_
+2	एतत्सर्वम्	एतत्सर्वमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 35
+# text = १९५९ तमे वर्षे जातम्
+1	१९५९	१९५९	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	तमे	तमे	ADV	_	_	4	advmod	_	_
+3	वर्षे	वर्षे	NOUN	_	Gender=Fem	4	nmod	_	_
+4	जातम्	जातम्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	obl	_	_
+
+# sent_id = 36
+# text = । चन्द्रस्य उपरि
+1	।	।	ADV	_	_	2	advmod	_	_
+2	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	उपरि	उपरि	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+
+# sent_id = 37
+# text = पदं न्यस्तवत् प्रथमं मानवर्राहतम् नौकायानं
+1	पदं	पदं	NUM	_	_	2	nummod	_	_
+2	न्यस्तवत्	न्यस्तवतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	प्रथमं	प्रथमं	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	2	nsubj	_	_
+4	मानवर्राहतम्	मानवर्राहतमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	नौकायानं	नौकायानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 38
+# text = लूना ९। एवं चन्द्रस्य परिभ्रमणं कृतम् प्रप्रथमनौकायानम् लूना -२० । १९६६तमे
+1	लूना	लूना	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	obl	_	_
+2	९।	९।	ADV	_	_	1	conj	_	SpacesAfter=\s\s
+3	एवं	एवं	ADV	_	_	1	advmod	_	SpacesAfter=\s\s
+4	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+5	परिभ्रमणं	परिभ्रमणa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	कृतम्	कृतम्	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	7	obl	_	_
+7	प्रप्रथमनौकायानम्	प्रप्रथमनौकायानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	9	acl	_	_
+8	लूना	लूना	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+9	-२०	-२०	NOUN	_	_	11	nsubj	_	_
+10	।	।	ADV	_	_	11	advmod	_	_
+11	१९६६तमे	१९६६तमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 39
+# text = वर्षे अमेरिका-संस्थानस्य
+1	वर्षे	वर्षे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	obl	_	_
+2	अमेरिका-संस्थानस्य	अमेरिका-संस्थानसa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 40
+# text = अपोलोयोजनायाः
+1	अपोलोयोजनायाः	अपोलोयोजनायाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\s
+
+# sent_id = 41
+# text = अङ्गतया चन्द्रस्य उपरि प्रथमं मानवसहितं नौकायानं १९६८ तमे वर्षे चन्द्ं परितः भ्रमणम् अकरोत्
+1	अङ्गतया	अङ्गतa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	acl	_	_
+2	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	उपरि	उपरि	NOUN	_	Gender=Masc	4	nmod	_	_
+4	प्रथमं	प्रथमं	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	1	conj	_	_
+5	मानवसहितं	मानवसहितa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	नौकायानं	नौकायानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+7	१९६८	१९६८	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_
+8	तमे	तमे	PRON	_	_	9	nmod	_	_
+9	वर्षे	वर्षे	NOUN	_	Gender=Neut	10	nmod	_	_
+10	चन्द्ं	चन्द्ं	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	11	conj	_	_
+11	परितः	परितः	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	13	nmod	_	_
+12	भ्रमणम्	भ्रमणमa	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	13	nmod	_	_
+13	अकरोत्	अकरोतa	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\s
+
+# sent_id = 42
+# text = । अनन्तरं
+1	।	।	ADV	_	_	2	advmod	_	_
+2	अनन्तरं	अनन्तरa	NOUN	_	Case=Voc|Gender=Masc|Number=Dual	0	root	_	_
+
+# sent_id = 43
+# text = १९६९ तमे वर्षे अपोलो- २२ मानवस्य साक्षात्
+1	१९६९	१९६९	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+2	तमे	तमे	ADJ	_	_	3	amod	_	_
+3	वर्षे	वर्षे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
+4	अपोलो-	अपोलो-	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	1	conj	_	_
+5	२२	२२	ADV	_	_	6	advmod	_	_
+6	मानवस्य	मानवस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+7	साक्षात्	साक्षातa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 44
+# text = चन्द्रस्य उपरि पादार्पणम् अकारयत्
+1	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	उपरि	उपरि	NOUN	_	Gender=Masc	1	nsubj	_	_
+3	पादार्पणम्	पादार्पणमa	ADJ	_	Case=Voc|Gender=Masc|Number=Dual	1	conj	_	_
+4	अकारयत्	अकारयतa	NOUN	_	Case=Voc|Gender=Masc|Number=Dual	1	conj	_	_
+
+# sent_id = 45
+# text = । एषः मनुकुलस्य इतिहासे स्वर्णाक्षरैः लेखितुम् योग्यः कार्यक्रमः आसीत् । एवम् १९६८ तमे आरब्धा अपोलोयोजना
+1	।	।	ADV	_	_	3	advmod	_	_
+2	एषः	एषः	ADV	_	_	3	advmod	_	_
+3	मनुकुलस्य	मनुकुलस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	12	acl	_	_
+4	इतिहासे	इतिहाa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+5	स्वर्णाक्षरैः	स्वर्णाक्षरैa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+6	लेखितुम्	लेखितुमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+7	योग्यः	योग्यः	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+8	कार्यक्रमः	कार्यक्रमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+9	आसीत्	आसीत्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
+10	।	।	ADV	_	_	11	advmod	_	SpacesAfter=\n
+11	एवम्	एवम्	NOUN	_	Case=Acc|Gender=Masc|Number=Plur	12	nmod	_	_
+12	१९६८	१९६८	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+13	तमे	तमे	PRON	_	_	14	advmod	_	_
+14	आरब्धा	आरब्धा	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	15	conj	_	_
+15	अपोलोयोजना	अपोलोयोजनa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	12	acl	_	_
+
+# sent_id = 46
+# text = मानवस्य चन्द्रस्योपरि पादार्पणेन
+1	मानवस्य	मानवस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+2	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	पादार्पणेन	पादार्पणेa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 47
+# text = १९६९ तमे वर्षे परिसमाप्तिं
+1	१९६९	१९६९	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	तमे	तमे	PRON	_	_	3	amod	_	_
+3	वर्षे	वर्षे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+4	परिसमाप्तिं	परिसमाप्तिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	acl	_	SpacesAfter=\s\s
+
+# sent_id = 48
+# text = गता
+1	गता	गता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 49
+# text = । तथापि भविष्ये चन्द्रस्य दिशि मानवसहित /रहितगगननौकायानानां
+1	।	।	ADV	_	_	2	advmod	_	_
+2	तथापि	तथापि	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
+3	भविष्ये	भविष्a	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	conj	_	_
+4	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	दिशि	दिशि	NOUN	_	Gender=Masc	7	obl	_	_
+6	मानवसहित	मानवसहिa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_
+7	/रहितगगननौकायानानां	/रहितगगननौकायानानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 50
+# text = प्रेषणे अनेकेदेशाः
+1	प्रेषणे	प्रेषa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\s
+2	अनेकेदेशाः	अनेकेदेशाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+
+# sent_id = 51
+# text = प्रयतन्ते स्म। मङ्गलग्रहस्य यात्रार्थं
+1	प्रयतन्ते	प्रयतन्तa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	स्म।	स्म।	NOUN	_	Gender=Masc	1	nsubj	_	_
+3	मङ्गलग्रहस्य	मङ्गलग्रहस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	यात्रार्थं	यात्रार्थa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpacesAfter=\s\s
+
+# sent_id = 52
+# text = चन्द्रस्योपरि
+1	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 53
+# text = एकं शाश्वतं गगननौकास्थानं स्थापयितुं
+1	एकं	एकं	ADV	_	_	2	advmod	_	_
+2	शाश्वतं	शाश्वतa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	गगननौकास्थानं	गगननौकास्थानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	acl	_	_
+4	स्थापयितुं	स्थापयितुa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 54
+# text = डिसेम्बरमासस्य
+1	डिसेम्बरमासस्य	डिसेम्बरमासस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 55
+# text = ४ दिनाङ्के
+1	४	४	ADV	_	_	2	advmod	_	_
+2	दिनाङ्के	दिनाङ्कa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 56
+# text = २००६ वर्षे नासासंस्थया
+1	२००६	२००६	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+2	वर्षे	वर्षे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	नासासंस्थया	नासासंस्थयa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	acl	_	_
+
+# sent_id = 57
+# text = सूचना दत्ता । निर्माणकार्ये
+1	सूचना	सूचना	NOUN	_	Gender=Masc	2	nmod	_	_
+2	दत्ता	दत्ता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	।	।	ADV	_	_	4	advmod	_	_
+4	निर्माणकार्ये	निर्माणकार्यa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	acl	_	_
+
+# sent_id = 58
+# text = पञ्चवर्षीणि अपेक्षितानि भवेयुः इति निरीक्षा वर्तते । तदनन्तरं
+1	पञ्चवर्षीणि	पञ्चवर्षीणa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	8	acl	_	_
+2	अपेक्षितानि	अपेक्षितानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	भवेयुः	भवेयa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	इति	इति	ADV	_	_	5	advmod	_	_
+5	निरीक्षा	निरीक्षa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	वर्तते	वर्तते	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	_
+7	।	।	ADV	_	_	8	advmod	_	_
+8	तदनन्तरं	तदनन्तरa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 59
+# text = २०२० तमे वर्षे प्रथम-अन्तरिक्षयानानाम्
+1	२०२०	२०२०	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	तमे	तमे	PRON	_	_	3	nmod	_	_
+3	वर्षे	वर्षे	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	4	nsubj	_	_
+4	प्रथम-अन्तरिक्षयानानाम्	प्रथम-अन्तरिक्षयानानाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 60
+# text = आरम्भः भवेत् इति निरीक्ष्यते
+1	आरम्भः	आरम्भः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	भवेत्	भवेत्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\s\s
+3	इति	इति	ADV	_	_	4	advmod	_	_
+4	निरीक्ष्यते	निरीक्ष्यतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 61
 # text = ।
-1	।	।	PRON	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n
+1	।	।	PRON	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -486,9 +892,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = चन्द्रस्य मुखद्वयम्[सम्पादयतु]
-1	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	obl	_	_
-2	मुखद्वयम्[सम्पादयतु]	मुखद्वयम्[सम्पादयतa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = चन्द्रस्य मुखद्वयम्
+1	चन्द्रस्य	चन्द्रस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	मुखद्वयम्	मुखद्वयमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -604,13 +1010,23 @@
 4	पुरोमुखं	पुरोमुखa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
 
 # sent_id = 19
-# text = दृष्तं चेत् अपरमुखे अमावास्या भवति ।
-1	दृष्तं	दृष्तं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+# text = दृष्तं चेत् अपरमुखे अमावास्या भवति
+1	दृष्तं	दृष्तं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
 2	चेत्	चेत्	NOUN	_	Gender=Masc	1	conj	_	SpacesAfter=\s\s
-3	अपरमुखे	अपरमुखa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpacesAfter=\s\s
-4	अमावास्या	अमावास्यa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
-5	भवति	भवति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	6	nmod	_	SpacesAfter=\s\s
-6	।	।	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpacesAfter=\s\n
+3	अपरमुखे	अपरमुखa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\s
+4	अमावास्या	अमावास्यa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+5	भवति	भवति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpacesAfter=\s\s
+
+# sent_id = 20
+# text = । अमावास्यायाम् अदृश्यमुखे पूर्णिमा
+1	।	।	ADV	_	_	2	advmod	_	SpacesAfter=\s\n
+2	अमावास्यायाम्	अमावास्यायामa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	अदृश्यमुखे	अदृश्यमुखa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	पूर्णिमा	पूर्णिमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 21
+# text = भवति।
+1	भवति।	भवति।	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -618,8 +1034,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = समतलप्रदेशाः[सम्पादयतु]
-1	समतलप्रदेशाः[सम्पादयतु]	समतलप्रदेशाः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = समतलप्रदेशाः
+1	समतलप्रदेशाः	समतलप्रदेशाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -816,8 +1232,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = उन्नतप्रदेशाः[सम्पादयतु]
-1	उन्नतप्रदेशाः[सम्पादयतु]	उन्नतप्रदेशाः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = उन्नतप्रदेशाः
+1	उन्नतप्रदेशाः	उन्नतप्रदेशाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -880,8 +1296,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = सङ्घट्टितगर्ताः[सम्पादयतु]
-1	सङ्घट्टितगर्ताः[सम्पादयतु]	सङ्घट्टितगर्ताः[सम्पादयतa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = सङ्घट्टितगर्ताः
+1	सङ्घट्टितगर्ताः	सङ्घट्टितगर्तa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -978,9 +1394,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = जलस्य अस्तित्वम्[सम्पादयतु]
-1	जलस्य	जलस्य	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	2	obl	_	_
-2	अस्तित्वम्[सम्पादयतु]	अस्तित्वम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+# text = जलस्य अस्तित्वम्
+1	जलस्य	जलस्य	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	अस्तित्वम्	अस्तित्वमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1120,8 +1536,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = गुरुत्वक्षेत्रम्[सम्पादयतु]
-1	गुरुत्वक्षेत्रम्[सम्पादयतु]	गुरुत्वक्षेत्रम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = गुरुत्वक्षेत्रम्
+1	गुरुत्वक्षेत्रम्	गुरुत्वक्षेत्रa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1239,8 +1655,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = कान्तक्षेत्रम्[सम्पादयतु]
-1	कान्तक्षेत्रम्[सम्पादयतु]	कान्तक्षेत्रम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = कान्तक्षेत्रम्
+1	कान्तक्षेत्रम्	कान्तक्षेत्रमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1306,8 +1722,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = वायुमण्डलम्[सम्पादयतु]
-1	वायुमण्डलम्[सम्पादयतु]	वायुमण्डलम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = वायुमण्डलम्
+1	वायुमण्डलम्	वायुमण्डलमa	ADJ	_	Case=Nom|Gender=Neut|Number=Dual	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1410,8 +1826,8 @@
 1	उद्भवः	उद्भवः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
 # sent_id = 2
-# text = भूवैज्ञानिकविकसनञ्च[सम्पादयतु]
-1	भूवैज्ञानिकविकसनञ्च[सम्पादयतु]	भूवैज्ञानिकविकसनञ्च[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = भूवैज्ञानिकविकसनञ्च
+1	भूवैज्ञानिकविकसनञ्च	भूवैज्ञानिकविकसनञa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1576,9 +1992,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = चन्द्रस्य शिलापाकसागरः[सम्पादयतु]
-1	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
-2	शिलापाकसागरः[सम्पादयतु]	शिलापाकसागरः[सम्पादयतa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = चन्द्रस्य शिलापाकसागरः
+1	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	शिलापाकसागरः	शिलापाकसागरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	acl	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1649,8 +2065,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भूवैज्ञानिकविकसनम्[सम्पादयतु]
-1	भूवैज्ञानिकविकसनम्[सम्पादयतु]	भूवैज्ञानिकविकसनम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = भूवैज्ञानिकविकसनम्
+1	भूवैज्ञानिकविकसनम्	भूवैज्ञानिकविकसनa	ADJ	_	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1692,15 +2108,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = कक्षया
+# text = कक्षया एवं भूम्याः
 1	कक्षया	कक्षया	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	एवं	एवं	ADV	_	_	1	cc	_	_
+3	भूम्याः	भूम्याa	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\s\s
 
 # sent_id = 2
-# text = एवं भूम्याः साकम् सम्वन्धः[सम्पादयतु]
-1	एवं	एवं	ADV	_	_	2	advmod	_	_
-2	भूम्याः	भूम्याa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	4	obl	_	SpacesAfter=\s\s
-3	साकम्	साकम्	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	4	obl	_	_
-4	सम्वन्धः[सम्पादयतु]	सम्वन्धः[सम्पादयतa	ADJ	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpacesAfter=\n
+# text = साकम् सम्वन्धः
+1	साकम्	साकम्	NOUN	_	Gender=Fem	2	nsubj	_	_
+2	सम्वन्धः	सम्वन्धa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1817,8 +2233,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ग्रहणम्[सम्पादयतु]
-1	ग्रहणम्[सम्पादयतु]	ग्रहणम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = ग्रहणम्
+1	ग्रहणम्	ग्रहणमa	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -1994,8 +2410,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = अन्वेषणम्[सम्पादयतु]
-1	अन्वेषणम्[सम्पादयतु]	अन्वेषणम्[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = अन्वेषणम्
+1	अन्वेषणम्	अन्वेषणमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -2089,28 +2505,246 @@
 4	अपोलो-११,१२,१४,१५,१६	अपोलो-११,१२,१४,१५,a	ADJ	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
 
 # sent_id = 14
-# text = १७ एताः गगननौकाः चन्द्रस्योपरि
+# text = १७ एताः गगननौकाः चन्द्रस्योपरि विद्यमानं शिलाखण्डं
 1	१७	१७	ADV	_	_	3	advmod	_	_
-2	एताः	एताः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
-3	गगननौकाः	गगननौकाa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
-4	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	एताः	एताः	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	nmod	_	_
+3	गगननौकाः	गगननौकाa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+4	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	amod	_	_
+5	विद्यमानं	विद्यमानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
+6	शिलाखण्डं	शिलाखण्डa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
 
 # sent_id = 15
-# text = विद्यमानं शिलाखण्डं
-1	विद्यमानं	विद्यमानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-2	शिलाखण्डं	शिलाखण्डa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
-
-# sent_id = 16
 # text = मृत्तिकां
 1	मृत्तिकां	मृत्तिकाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\s
 
-# sent_id = 17
+# sent_id = 16
 # text = च अत्र आनीतवन्तः
 1	च	च	ADV	_	_	2	advmod	_	_
 2	अत्र	अत्र	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	आनीतवन्तः	आनीतवन्तa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	acl	_	_
 
+# sent_id = 17
+# text = । अमेरिकादेशस्य अपोलो-११ यात्रायाः नायकः नील-आर्मस्ट्रांग्
+1	।	।	ADV	_	_	2	advmod	_	SpacesAfter=\n
+2	अमेरिकादेशस्य	अमेरिकादेशस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	5	acl	_	_
+3	अपोलो-११	अपोलो-१a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	यात्रायाः	यात्रायाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	नायकः	नायकः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+6	नील-आर्मस्ट्रांग्	नील-आर्मस्ट्रांa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
 # sent_id = 18
+# text = ’ महोदयः
+1	’	’	ADV	_	_	2	advmod	_	_
+2	महोदयः	महोदयः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 19
+# text = १९६९ तमवर्षस्य जुलैमासस्य ११ दिनाङ्के १२.५६ U.T.C समये चन्द्रस्योपरि आदौ स्वपादं न्यस्तवान्
+1	१९६९	१९६९	NOUN	_	Gender=Masc	2	nsubj	_	_
+2	तमवर्षस्य	तमवर्षस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	9	advcl	_	_
+3	जुलैमासस्य	जुलैमासस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	११	११	PRON	_	_	5	advmod	_	_
+5	दिनाङ्के	दिनाङ्कa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+6	१२.५६	१२.५६	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	9	obl	_	_
+7	U.T.C	u.t.c	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nmod	_	_
+8	समये	समये	NOUN	_	Gender=Masc	9	nsubj	_	_
+9	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+10	आदौ	आदौ	NOUN	_	_	11	nsubj	_	_
+11	स्वपादं	स्वपादa	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
+12	न्यस्तवान्	न्यस्तवानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	9	conj	_	_
+
+# sent_id = 20
+# text = । चन्द्रस्योपरि
+1	।	।	ADV	_	_	2	advmod	_	_
+2	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 21
+# text = (२००७ तमे वर्षे) पादं न्यस्तवत्सु अन्तिममानवः युजीन सेरनात्
+1	(२००७	(२००७	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+2	तमे	तमे	PRON	_	_	1	conj	_	_
+3	वर्षे)	वर्षे)	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	1	conj	_	_
+4	पादं	पादं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+5	न्यस्तवत्सु	न्यस्तवत्सa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	अन्तिममानवः	अन्तिममानवa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+7	युजीन	युजीन	NOUN	_	_	8	nmod	_	_
+8	सेरनात्	सेरनातa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 22
+# text = । अपोलोयात्रासु
+1	।	।	ADV	_	_	2	advmod	_	_
+2	अपोलोयात्रासु	अपोलोयात्रासa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 23
+# text = चन्द्रस्योपरि अनेकानि वैज्ञानिक- उपकरणानि उपस्यापितानि।
+1	चन्द्रस्योपरि	चन्द्रस्योपरa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	अनेकानि	अनेकानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	obl	_	_
+3	वैज्ञानिक-	वैज्ञानिकa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	उपकरणानि	उपकरणानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+5	उपस्यापितानि।	उपस्यापितानिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 24
+# text = तेषु उष्णप्रवाहशोधकाः चन्द्रकम्पनमापकाः,
+1	तेषु	तेषु	NOUN	_	_	2	obl	_	_
+2	उष्णप्रवाहशोधकाः	उष्णप्रवाहशोधकa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	acl	_	_
+3	चन्द्रकम्पनमापकाः,	चन्द्रकम्पनमापकाa	ADJ	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
+
+# sent_id = 25
+# text = कान्तत्वमापकाः प्रमुखाः।
+1	कान्तत्वमापकाः	कान्तत्वमापकाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	प्रमुखाः।	प्रमुखाःa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+
+# sent_id = 26
+# text = २०२० तमे वर्षे अमेरिकादेशः
+1	२०२०	२०२०	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	तमे	तमे	PRON	_	_	3	nmod	_	_
+3	वर्षे	वर्षे	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	SpacesAfter=\s\s
+4	अमेरिकादेशः	अमेरिकादेशa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 27
+# text = पुनः मानवसहितचन्द्रयोजनां प्राकटयत्
+1	पुनः	पुनः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+2	मानवसहितचन्द्रयोजनां	मानवसहितचन्द्रयोजनa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	प्राकटयत्	प्राकटयतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+
+# sent_id = 28
+# text = । जपानदेशः
+1	।	।	ADV	_	_	2	advmod	_	_
+2	जपानदेशः	जपानदेशa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 29
+# text = ‘लूनार्- ए’
+1	‘लूनार्-	‘लूनार्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	ए’	ए’	ADV	_	_	1	advmod	_	_
+
+# sent_id = 30
+# text = एवं ‘सेलीन्’
+1	एवं	एवं	ADV	_	_	2	advmod	_	_
+2	‘सेलीन्’	‘सेलीन्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 31
+# text = इति योजनादयस्य सज्जतायाम् अस्ति । भारतदेशोऽपि
+1	इति	इति	ADV	_	_	2	advmod	_	_
+2	योजनादयस्य	योजनादयस्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	acl	_	_
+3	सज्जतायाम्	सज्जतायामa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	अस्ति	अस्ति	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	6	obl	_	_
+5	।	।	ADV	_	_	6	advmod	_	_
+6	भारतदेशोऽपि	भारतदेशोऽपa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 32
+# text = २००८ तमे वर्षे ‘चन्द्रयानम्- २’ इति योजनाम् आरभ्य अनेकेषां मानवरहितचन्द्रयानस्य योजनां प्रयोजयन् अस्ति । ‘चन्द्रयानम्- २’ एकं यान्त्रिकं चन्द्रपर्यटकम् आप्नोति
+1	२००८	२००८	NOUN	_	_	3	nummod	_	_
+2	तमे	तमे	PRON	_	Case=Acc|Gender=Masc|Number=Sing	3	det	_	_
+3	वर्षे	वर्षे	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	20	obl	_	_
+4	‘चन्द्रयानम्-	‘चन्द्रयानमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	acl	_	_
+5	२’	२’	PRON	_	_	7	advmod	_	_
+6	इति	इति	NOUN	_	_	7	acl	_	_
+7	योजनाम्	योजनाa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+8	आरभ्य	आरभ्य	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	10	obj	_	_
+9	अनेकेषां	अनेकेषa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	SpacesAfter=\s\s
+10	मानवरहितचन्द्रयानस्य	मानवरहितचन्द्रयानसa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+11	योजनां	योजनां	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	15	obl	_	_
+12	प्रयोजयन्	प्रयोजयनa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+13	अस्ति	अस्ति	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	15	nsubj	_	_
+14	।	।	NOUN	_	_	15	advmod	_	_
+15	‘चन्द्रयानम्-	‘चन्द्रयानम्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
+16	२’	२’	ADV	_	_	15	advmod	_	SpacesAfter=\s\s
+17	एकं	एकं	ADV	_	_	18	advmod	_	_
+18	यान्त्रिकं	यान्त्रिकa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	15	conj	_	_
+19	चन्द्रपर्यटकम्	चन्द्रपर्यटकमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	20	acl	_	_
+20	आप्नोति	आप्नोतa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 33
+# text = । रष्या देशः अपि
+1	।	।	ADV	_	_	2	advmod	_	_
+2	रष्या	रष्या	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nmod	_	_
+3	देशः	देशः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+4	अपि	अपि	ADV	_	_	0	root	_	_
+
+# sent_id = 34
+# text = स्व ‘लूना- ग्लोब्’ कार्यक्रमं पुनः उपस्थापयति
+1	स्व	स्व	ADV	_	_	2	advmod	_	_
+2	‘लूना-	‘लूना-	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	ग्लोब्’	ग्लोब्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	कार्यक्रमं	कार्यक्रमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	पुनः	पुनः	NOUN	_	Gender=Fem	6	nsubj	_	_
+6	उपस्थापयति	उपस्थापयतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 35
+# text = इति घोषणां कृतवान् अस्ति
+1	इति	इति	ADV	_	_	2	advmod	_	_
+2	घोषणां	घोषणां	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	कृतवान्	कृतवानa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
+4	अस्ति	अस्ति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+
+# sent_id = 36
+# text = । भूरासायनिकनक्षा
+1	।	।	ADV	_	_	2	advmod	_	SpacesAfter=\n
+2	भूरासायनिकनक्षा	भूरासायनिकनक्a	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	_
+
+# sent_id = 37
+# text = द्वारा चन्द्रस्य बाह्यकवचम्, अल्युमिनियुं, सिलिकेट्,
+1	द्वारा	द्वारा	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+2	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	बाह्यकवचम्,	बाह्यकवचम्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	अल्युमिनियुं,	अल्युमिनियुंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+5	सिलिकेट्,	सिलिकेट्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 38
+# text = पोट्याषियं, सोडियं, क्याल्शियम्
+1	पोट्याषियं,	पोट्याषियंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	सोडियं,	सोडियंa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+3	क्याल्शियम्	क्याल्शियमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 39
+# text = इत्यादिनां लवणैः संपन्नम् अस्ति
+1	इत्यादिनां	इत्यादिनाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	लवणैः	लवणैः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+3	संपन्नम्	संपन्नमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	अस्ति	अस्ति	NOUN	_	Case=Voc|Gender=Masc|Number=Dual	1	obl	_	_
+
+# sent_id = 40
+# text = । चन्द्रस्य बाह्यकवचं
+1	।	।	ADV	_	_	2	advmod	_	_
+2	चन्द्रस्य	चन्द्रस्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	बाह्यकवचं	बाह्यकवचa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 41
+# text = मुख्यतः आम्लजनकं, सिलिकान्,
+1	मुख्यतः	मुख्यतa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	आम्लजनकं,	आम्लजनकंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	सिलिकान्,	सिलिकान्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 42
+# text = मेग्नेषियं,
+1	मेग्नेषियं,	मेग्नेषियंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 43
+# text = अयः क्याल्शियं
+1	अयः	अयः	ADV	_	_	2	advmod	_	_
+2	क्याल्शियं	क्याल्शियa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 44
+# text = तथा पित्तलेन समृद्धम् अस्ति। अल्पप्रमाणेन टैटोनियं,
+1	तथा	तथा	NUM	_	_	2	advmod	_	_
+2	पित्तलेन	पित्तलेa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	समृद्धम्	समृद्धमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	अस्ति।	अस्तिa	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	2	conj	_	_
+5	अल्पप्रमाणेन	अल्पप्रमाणेa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	SpacesAfter=\s\s
+6	टैटोनियं,	टैटोनियंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 45
+# text = युरेनियं, योरियम्, पोटाषियं,
+1	युरेनियं,	युरेनियंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	योरियम्,	योरियम्a	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+3	पोटाषियं,	पोटाषियंa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+
+# sent_id = 46
+# text = एवं जलजनकैः युक्तम् अस्ति
+1	एवं	एवं	ADV	_	_	2	advmod	_	_
+2	जलजनकैः	जलजनकैa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	युक्तम्	युक्तमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	अस्ति	अस्ति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+
+# sent_id = 47
 # text = ।
 1	।	।	PRON	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
@@ -2120,8 +2754,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इतिहासः[सम्पादयतु]
-1	इतिहासः[सम्पादयतु]	इतिहासः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = इतिहासः
+1	इतिहासः	इतिहासa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -2240,8 +2874,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बाह्यानुबन्धाः[सम्पादयतु]
-1	बाह्यानुबन्धाः[सम्पादयतु]	बाह्यानुबन्धाः[सम्पादयतa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = बाह्यानुबन्धाः
+1	बाह्यानुबन्धाः	बाह्यानुबन्धाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -2263,9 +2897,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cartographic resources[सम्पादयतु]
-1	Cartographic	cartographic	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
-2	resources[सम्पादयतु]	resources[सम्पादयतुa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Cartographic resources
+1	Cartographic	cartographic	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	resources	resourcea	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -2273,16 +2907,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Observation tools[सम्पादयतु]
+# text = Observation tools
 1	Observation	observati	ADJ	_	Case=Loc|Gender=Neut|Number=Sing	0	root	_	_
-2	tools[सम्पादयतु]	tools[सम्पादयतुa	ADJ	_	Case=Voc|Gender=Masc|Number=Dual	1	conj	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = sanskrit-vedic-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = सञ्चरणावलिः
-1	सञ्चरणावलिः	सञ्चरणावलिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	tools	tools	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
 

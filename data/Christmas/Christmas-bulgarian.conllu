@@ -1,5 +1,3 @@
-# https://bg.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%BE
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
 2	Христово	христов	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
 3	–	–	PUNCT	punct	_	4	punct	_	_
-4	Уикипедия	уикипедия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+4	Уикипедия	уикипедия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -18,9 +16,198 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Рождество Христово
-1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
-2	Христово	христов	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	1	amod	_	SpacesAfter=\n
+# text = Рождество Христово, също Коледа, Божик или Божич, е един от най-големите християнски празници.
+1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	12	nsubj	_	SpacesBefore=\n
+2	Христово	христово	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	punct	_	5	punct	_	_
+4	също	също	ADV	Dm	Degree=Pos	5	advmod	_	_
+5	Коледа	коледа	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	punct	_	7	punct	_	_
+7	Божик	божик	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	5	conj	_	_
+8	или	или	CCONJ	Cp	_	9	cc	_	_
+9	Божич	божич	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	punct	_	5	punct	_	_
+11	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	един	един	NUM	Mcmsi	Definite=Ind|Gender=Masc|Number=Sing|NumType=Card	0	root	_	_
+13	от	от	ADP	R	_	16	case	_	_
+14	най-големите	голям	ADJ	A-pd	Definite=Def|Degree=Sup|Number=Plur	16	amod	_	_
+15	християнски	християнски	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	16	amod	_	_
+16	празници	празник	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	punct	_	12	punct	_	_
+
+# sent_id = 2
+# text = На него християните честват раждането на Сина Божий Иисус Христос.
+1	На	на	ADP	R	_	2	case	_	_
+2	него	аз	PRON	Ppelas3m	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+3	християните	християн	NOUN	Ncmpd	Definite=Def|Gender=Masc|Number=Plur	4	nsubj	_	_
+4	честват	чествам	VERB	Vpitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	раждането	раждане	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	4	obj	_	_
+6	на	на	ADP	R	_	7	case	_	_
+7	Сина	син	PROPN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	5	nmod	_	_
+8	Божий	божий	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	7	nmod	_	_
+9	Иисус	иисус	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	7	nmod	_	_
+10	Христос	христос	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	9	flat	_	SpaceAfter=No
+11	.	.	PUNCT	punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Според Евангелието от Лука това станало в град Витлеем, провинция Юдея.
+1	Според	според	ADP	R	_	2	case	_	_
+2	Евангелието	евангелие	PROPN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	6	obl	_	_
+3	от	от	ADP	R	_	4	case	_	_
+4	Лука	лука	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	2	nmod	_	_
+5	това	този	PRON	Pde-os-n	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	nsubj	_	_
+6	станало	стана	VERB	Vppicao-sni	Aspect=Perf|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	в	в	ADP	R	_	8	case	_	_
+8	град	град	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	6	iobj	_	_
+9	Витлеем	витлеем	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	punct	_	11	punct	_	_
+11	провинция	провинция	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	8	nmod	_	_
+12	Юдея	юдея	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Православните християни честват Рождество Христово.
+1	Православните	православен	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	2	amod	_	_
+2	християни	християнин	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	3	nsubj	_	_
+3	честват	чествам	VERB	Vpitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	obj	_	_
+5	Христово	христово	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = При католиците и протестантите
+1	При	при	ADP	R	_	2	case	_	_
+2	католиците	католик	NOUN	Ncmpd	Definite=Def|Gender=Masc|Number=Plur	0	root	_	_
+3	и	и	CCONJ	Cp	_	4	cc	_	_
+4	протестантите	протестант	NOUN	Ncmpd	Definite=Def|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 6
+# text = Рождество е най-почитаният празник.
+1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	4	nsubj	_	_
+2	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	най-почитаният	почитам	ADJ	Amsf	Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	4	amod	_	_
+4	празник	празник	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Рождество Христово е един от 20-те църковни празници в България.
+1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	4	nsubj	_	_
+2	Христово	христово	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
+3	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	един	един	NUM	Mcmsi	Definite=Ind|Gender=Masc|Number=Sing|NumType=Card	0	root	_	_
+5	от	от	ADP	R	_	8	case	_	_
+6	20-те	двадесети	ADJ	Mo-pd	Definite=Def|Degree=Pos|Number=Plur|NumType=Ord	8	amod	_	_
+7	църковни	църковен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	8	amod	_	_
+8	празници	празник	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	4	nmod	_	_
+9	в	в	ADP	R	_	10	case	_	_
+10	България	българия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Отбелязва се на 25 декември (по григорианския и новоюлианския календар), на 6 януари от арменската църква, а след 31 март 1916 г. (когато в България като държавен календар е приет т. нар. „нов стил“ – Григорианския календар) на 7 януари по официалния граждански календар, който ден се отбелязва като 25 декември (по юлианския календар).
+1	Отбелязва	отбелязвам	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	1	expl	_	_
+3	на	на	ADP	R	_	5	case	_	_
+4	25	25	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
+5	декември	декември	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	1	iobj	_	_
+6	(	(	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+7	по	по	ADP	R	_	11	case	_	_
+8	григорианския	григориански	ADJ	Amsh	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+9	и	и	CCONJ	Cp	_	10	cc	_	_
+10	новоюлианския	новоюлиански	ADJ	Amsh	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	conj	_	_
+11	календар	календар	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+13	,	,	PUNCT	punct	_	16	punct	_	_
+14	на	на	ADP	R	_	16	case	_	_
+15	6	шести	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	16	amod	_	_
+16	януари	януари	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	5	conj	_	_
+17	от	от	ADP	R	_	19	case	_	_
+18	арменската	арменски	ADJ	Afsd	Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	_
+19	църква	църква	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	punct	_	21	punct	_	_
+21	а	а	CCONJ	Cp	_	24	cc	_	_
+22	след	след	ADP	R	_	24	case	_	_
+23	31	31	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	24	amod	_	_
+24	март	март	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	_
+25	1916	1916	ADJ	Mofsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	26	amod	_	_
+26	г.	година	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	24	nmod	_	_
+27	(	(	PUNCT	punct	_	35	punct	_	SpaceAfter=No
+28	когато	когато	ADV	Prt	PronType=Rel	35	advmod	_	_
+29	в	в	ADP	R	_	30	case	_	_
+30	България	българия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	35	obl	_	_
+31	като	като	ADP	R	_	33	case	_	_
+32	държавен	държавен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	33	amod	_	_
+33	календар	календар	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	35	obl	_	_
+34	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	aux:pass	_	_
+35	приет	приема	VERB	Vpptcv--smi	Aspect=Perf|Definite=Ind|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	24	acl:relcl	_	_
+36	т.	точка	ADJ	A	Definite=Ind|Gender=Masc|Number=Sing	40	amod	_	_
+37	нар.	нар.	ADJ	A	Degree=Pos	40	amod	_	_
+38	„	„	PUNCT	punct	_	40	punct	_	SpaceAfter=No
+39	нов	нов	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	40	amod	_	_
+40	стил“	стил“	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	35	nsubj:pass	_	_
+41	–	–	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	40	nmod	_	_
+42	Григорианския	григориански	ADJ	Amsh	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	43	amod	_	_
+43	календар	календар	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	40	nmod	_	SpaceAfter=No
+44	)	)	PUNCT	punct	_	40	punct	_	_
+45	на	на	ADP	R	_	47	case	_	_
+46	7	седми	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	47	amod	_	_
+47	януари	януари	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	35	obl	_	_
+48	по	по	ADP	R	_	51	case	_	_
+49	официалния	официален	ADJ	Amsh	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	51	amod	_	_
+50	граждански	граждански	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	51	amod	_	_
+51	календар	календар	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	47	nmod	_	SpaceAfter=No
+52	,	,	PUNCT	punct	_	56	punct	_	_
+53	който	който	DET	Pre-os-m	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	54	det	_	_
+54	ден	ден	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	56	nsubj:pass	_	_
+55	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	56	expl	_	_
+56	отбелязва	отбелязвам	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	51	acl:relcl	_	_
+57	като	като	ADP	R	_	59	case	_	_
+58	25	25	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	59	amod	_	_
+59	декември	декември	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	56	iobj	_	_
+60	(	(	PUNCT	punct	_	63	punct	_	SpaceAfter=No
+61	по	по	ADP	R	_	63	case	_	_
+62	юлианския	юлиански	ADJ	Amsh	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	63	amod	_	_
+63	календар	календар	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	56	obl	_	SpaceAfter=No
+64	)	)	PUNCT	punct	_	63	punct	_	SpaceAfter=No
+65	.	.	PUNCT	punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = През 1968 г.
+1	През	през	ADP	R	_	3	case	_	_
+2	1968	1968	ADJ	Mofsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
+3	г.	година	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 10
+# text = Българската православна църква установява честването на 25 декември.
+1	Българската	български	ADJ	Afsd	Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+2	православна	православен	ADJ	Afsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	църква	църква	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	4	nsubj	_	_
+4	установява	установявам-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	честването	честване	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	4	obj	_	_
+6	на	на	ADP	R	_	8	case	_	_
+7	25	25	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	8	amod	_	_
+8	декември	декември	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	4	iobj	_	SpaceAfter=No
+9	.	.	PUNCT	punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = В България отново е официален празник с решение на 9-ото Народно събрание от 28 март 1990 г.
+1	В	в	ADP	R	_	2	case	_	_
+2	България	българия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	6	nmod	_	_
+3	отново	отново	ADV	Dt	Degree=Pos	6	advmod	_	_
+4	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	официален	официален	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	празник	празник	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
+7	с	с	ADP	R	_	8	case	_	_
+8	решение	решение	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	6	nmod	_	_
+9	на	на	ADP	R	_	12	case	_	_
+10	9-ото	девети	ADJ	Monsd	Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|NumType=Ord	12	amod	_	_
+11	Народно	народен	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	_
+12	събрание	събрание	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	8	nmod	_	_
+13	от	от	ADP	R	_	15	case	_	_
+14	28	28	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	15	amod	_	_
+15	март	март	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	8	nmod	_	_
+16	1990	1990	ADJ	Mofsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	17	amod	_	_
+17	г.	година	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	15	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -28,17 +215,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Произход на понятието[редактиране | редактиране на кода]
+# text = Произход на понятието
 1	Произход	произход	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
 2	на	на	ADP	R	_	3	case	_	_
 3	понятието	понятие	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	punct	_	5	punct	_	SpaceAfter=No
-5	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	nmod	_	_
-6	|	|	PUNCT	punct	_	7	punct	_	_
-7	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	_
-8	на	на	ADP	R	_	9	case	_	_
-9	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -108,14 +288,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Християнство[редактиране | редактиране на кода]
-1	Християнство[	християнство[	ADJ	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
-2	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
-3	|	|	PUNCT	punct	_	4	punct	_	_
-4	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	2	conj	_	_
-5	на	на	ADP	R	_	6	case	_	_
-6	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	punct	_	2	punct	_	SpacesAfter=\n
+# text = Християнство
+1	Християнство	християнство	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -411,7 +585,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Рождество Христово в евангелията на Лука и Матей[редактиране | редактиране на кода]
+# text = Рождество Христово в евангелията на Лука и Матей
 1	Рождество	рождество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
 2	Христово	христов	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	1	nmod	_	_
 3	в	в	ADP	R	_	4	case	_	_
@@ -419,13 +593,7 @@
 5	на	на	ADP	R	_	6	case	_	_
 6	Лука	лука	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	4	nmod	_	_
 7	и	и	CCONJ	Cp	_	8	cc	_	_
-8	Матей[	матей[	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
-9	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
-10	|	|	PUNCT	punct	_	11	punct	_	_
-11	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	9	conj	_	_
-12	на	на	ADP	R	_	13	case	_	_
-13	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
-14	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+8	Матей	матей	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -990,15 +1158,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Обичаи[редактиране | редактиране на кода]
+# text = Обичаи
 1	Обичаи	обичай	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-3	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	punct	_	5	punct	_	_
-5	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	conj	_	_
-6	на	на	ADP	R	_	7	case	_	_
-7	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -1006,14 +1167,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Именици[редактиране | редактиране на кода]
-1	Именици[	именици[	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
-3	|	|	PUNCT	punct	_	4	punct	_	_
-4	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	conj	_	_
-5	на	на	ADP	R	_	6	case	_	_
-6	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+# text = Именици
+1	Именици	именик	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -1072,16 +1227,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Коледа по света[редактиране | редактиране на кода]
+# text = Коледа по света
 1	Коледа	коледа	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
 2	по	по	ADP	R	_	3	case	_	_
-3	света[	света[	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-4	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
-5	|	|	PUNCT	punct	_	6	punct	_	_
-6	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	4	conj	_	_
-7	на	на	ADP	R	_	8	case	_	_
-8	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+3	света	свят	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -1089,15 +1238,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Светски празник[редактиране | редактиране на кода]
+# text = Светски празник
 1	Светски	светски	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	празник[	празник[	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	2	nmod	_	_
-4	|	|	PUNCT	punct	_	5	punct	_	_
-5	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	conj	_	_
-6	на	на	ADP	R	_	7	case	_	_
-7	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	punct	_	3	punct	_	SpacesAfter=\n
+2	празник	празник	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -1167,15 +1310,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Вижте също[редактиране | редактиране на кода]
+# text = Вижте също
 1	Вижте	видя-(се)	VERB	Vpptz--2p	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	_
-2	също[	също[	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	SpaceAfter=No
-3	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	obj	_	_
-4	|	|	PUNCT	punct	_	5	punct	_	_
-5	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	conj	_	_
-6	на	на	ADP	R	_	7	case	_	_
-7	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+2	също	също	ADV	Dm	Degree=Pos	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -1183,22 +1320,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Бележки[редактиране | редактиране на кода]
-1	Бележки	бележка	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-3	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	punct	_	5	punct	_	_
-5	редактиране	редактиране	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	3	conj	_	_
-6	на	на	ADP	R	_	7	case	_	_
-7	кода	код	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = bulgarian-btb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навигация
-1	Навигация	навигация	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+# text = Бележки
+1	Бележки	бележка	PROPN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 

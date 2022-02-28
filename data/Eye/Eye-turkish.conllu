@@ -1,5 +1,3 @@
-# https://tr.wikipedia.org/wiki/G%C3%B6z
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Göz - Vikipedi
 1	Göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	obj	_	_
 2	-	-	PUNCT	Punc	_	3	punct	_	_
-3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpacesAfter=\n
+3	Vikipedi	vikipe	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -17,17 +15,26 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Diller
-1	Diller	dil	PROPN	Prop	Case=Nom|Number=Plur|Person=3	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = turkish-imst-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Göz
-1	Göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+# text = Göz, göz çukurunda bulunan, iri bir bilye büyüklüğünde, görmeyi sağlayan küremsi bir organdır.
+1	Göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	nsubj	_	SpacesBefore=\n|SpaceAfter=No
+2	,	,	PUNCT	Punc	_	16	punct	_	_
+3	göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nmod:poss	_	_
+4	çukurunda	çukur	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	5	obl	_	_
+5	bulunan	bulun	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	16	acl	_	SpaceAfter=No
+6	,	,	PUNCT	Punc	_	5	punct	_	_
+7	iri	iri	ADJ	Adj	_	9	amod	_	_
+8	bir	bir	NUM	ANum	NumType=Card	9	det	_	_
+9	bilye	bilye	NOUN	Noun	Case=Nom|Number=Sing|Person=3	10	nmod:poss	_	_
+10	büyüklüğünde	büyüklük	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	5	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punc	_	13	punct	_	_
+12	görmeyi	gör	VERB	Verb	Aspect=Perf|Case=Acc|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	13	obj	_	_
+13	sağlayan	sağla	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	16	acl	_	_
+14	küremsi	küremsi	ADJ	Adj	_	16	amod	_	_
+15	bir	bir	NUM	ANum	NumType=Card	16	det	_	_
+16-17	organdır	_	_	_	_	_	_	_	SpaceAfter=No
+16	organ	organ	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+17	dır	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	16	cop	_	_
+18	.	.	PUNCT	Punc	_	16	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -347,23 +354,144 @@
 21	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	20	cop	_	_
 22	.	.	PUNCT	Punc	_	20	punct	_	SpacesAfter=\n
 
+# sent_id = 4
+# text = Gözün arka kutbuna giren görme siniri, damartabakaya doğru birçok sinir teli halinde yayılır ve üç tabaka halinde dizili nöronlarla sona erer.
+1	Gözün	göz	NOUN	Noun	Case=Gen|Number=Sing|Person=3	3	nmod:poss	_	_
+2	arka	arka	ADJ	Adj	_	3	amod	_	_
+3	kutbuna	kutp	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obl	_	_
+4	giren	gir	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	6	acl	_	_
+5	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	6	nmod:poss	_	_
+6	siniri	sinir	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punc	_	14	punct	_	_
+8	damartabakaya	damartabaka	NOUN	Noun	Case=Dat|Number=Sing|Person=3	14	obl	_	_
+9	doğru	doğru	ADP	PCDat	_	8	case	_	_
+10	birçok	birçok	DET	Det	_	12	det	_	_
+11	sinir	sinir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	12	nmod:poss	_	_
+12	teli	tel	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	13	nmod:poss	_	_
+13	halinde	hal	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	obl	_	_
+14	yayılır	yay	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass	0	root	_	_
+15	ve	ve	CCONJ	Conj	_	21	cc	_	_
+16	üç	üç	NUM	ANum	NumType=Card	17	nummod	_	_
+17	tabaka	tabaka	NOUN	Noun	Case=Nom|Number=Sing|Person=3	18	nmod:poss	_	_
+18	halinde	hal	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	21	obl	_	_
+19	dizili	dizili	ADJ	Adj	_	20	amod	_	_
+20	nöronlarla	nöron	NOUN	Noun	Case=Ins|Number=Plur|Person=3	21	obl	_	_
+21	sona	son	ADJ	NAdj	Case=Dat|Number=Sing|Person=3	14	conj	_	_
+22	erer	er	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	21	compound	_	SpaceAfter=No
+23	.	.	PUNCT	Punc	_	21	punct	_	_
+
+# sent_id = 5
+# text = Birinci tabakadaki nöronların (çok kutuplu nöronlar) silindir ekseni, görme sinirinde sürer; ön uzantılarıysa, ikinci tabakanın iki kutuplu nöronlarıyla bağlantı kurar; ikinci tabakanın nöronları da, üçüncü tabakanın görme nöronlarının silindir eksenlerine bitişir.
+1	Birinci	bir	NUM	NNum	Case=Nom|Number=Sing|NumType=Ord|Person=3	2	amod	_	_
+2-3	tabakadaki	_	_	_	_	_	_	_	_
+2	tabakada	tabaka	NOUN	Noun	Case=Loc|Number=Sing|Person=3	4	nmod	_	_
+3	ki	ki	ADP	Rel	_	2	case	_	_
+4	nöronların	nöron	NOUN	Noun	Case=Gen|Number=Plur|Person=3	12	nmod:poss	_	_
+5	(	(	PUNCT	Punc	_	8	punct	_	SpaceAfter=No
+6	çok	çok	ADV	Adverb	_	7	advmod	_	_
+7	kutuplu	kutuplu	ADJ	Adj	_	8	amod	_	_
+8	nöronlar	nöron	NOUN	Noun	Case=Nom|Number=Plur|Person=3	4	conj	_	SpaceAfter=No
+9	)	)	PUNCT	Punc	_	8	punct	_	_
+10-11	silindir	_	_	_	_	_	_	_	_
+10	silin	silin	NOUN	Noun	Case=Nom|Number=Sing|Person=3	12	nmod:poss	_	_
+11	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	10	cop	_	_
+12	ekseni	eksen	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	16	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Punc	_	16	punct	_	_
+14	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	25	nmod:poss	_	_
+15	sinirinde	sinir	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	compound	_	_
+16	sürer	sür	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+17	;	;	PUNCT	Punc	_	41	punct	_	_
+18	ön	ön	ADJ	Adj	_	19	amod	_	_
+19	uzantılarıysa	uzantı	NOUN	Noun	Case=Ins|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	26	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	Punc	_	16	punct	_	_
+21	ikinci	iki	NUM	NNum	Case=Nom|Number=Sing|NumType=Ord|Person=3	22	amod	_	_
+22	tabakanın	tabaka	NOUN	Noun	Case=Gen|Number=Sing|Person=3	25	nmod:poss	_	_
+23	iki	iki	NUM	ANum	NumType=Card	24	nummod	_	_
+24	kutuplu	kutuplu	ADJ	Adj	_	25	amod	_	_
+25	nöronlarıyla	nöron	NOUN	Noun	Case=Ins|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	26	nmod	_	_
+26	bağlantı	bağlantı	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	conj	_	_
+27	kurar	kur	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	26	compound	_	SpaceAfter=No
+28	;	;	PUNCT	Punc	_	41	punct	_	_
+29	ikinci	iki	NUM	NNum	Case=Nom|Number=Sing|NumType=Ord|Person=3	35	amod	_	_
+30	tabakanın	tabaka	NOUN	Noun	Case=Gen|Number=Sing|Person=3	31	nmod:poss	_	_
+31	nöronları	nöron	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	41	nsubj	_	_
+32	da	da	CCONJ	Conj	_	31	advmod:emph	_	SpaceAfter=No
+33	,	,	PUNCT	Punc	_	41	punct	_	_
+34	üçüncü	üç	NUM	NNum	Case=Nom|Number=Sing|NumType=Ord|Person=3	35	amod	_	_
+35	tabakanın	tabaka	NOUN	Noun	Case=Gen|Number=Sing|Person=3	37	nmod:poss	_	_
+36	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	37	nmod:poss	_	_
+37	nöronlarının	nöron	NOUN	Noun	Case=Gen|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	41	obl	_	_
+38-39	silindir	_	_	_	_	_	_	_	_
+38	silin	silin	ADJ	NAdj	Case=Nom|Number=Sing|Person=3	40	amod	_	_
+39	dir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	38	cop	_	_
+40	eksenlerine	eksen	NOUN	Noun	Case=Dat|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	41	obl	_	_
+41	bitişir	bitiş	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	16	conj	_	SpaceAfter=No
+42	.	.	PUNCT	Punc	_	41	punct	_	_
+
+# sent_id = 6
+# text = Bu tabakada, bir ucu ağ tabakanın kırmızı bölümüne giren, koni ve çubuk biçimindeki nöronlar yer alır.
+1	Bu	bu	DET	Det	_	2	det	_	_
+2	tabakada	tabaka	NOUN	Noun	Case=Loc|Number=Sing|Person=3	18	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punc	_	18	punct	_	_
+4	bir	bir	NUM	ANum	NumType=Card	5	nummod	_	_
+5	ucu	ucu	ADJ	Adj	_	7	amod	_	_
+6	ağ	ağ	NOUN	Noun	Case=Nom|Number=Sing|Person=3	7	compound	_	_
+7	tabakanın	tabaka	NOUN	Noun	Case=Gen|Number=Sing|Person=3	9	nmod:poss	_	_
+8	kırmızı	kırmızı	ADJ	Adj	_	9	amod	_	_
+9	bölümüne	bölüm	NOUN	Noun	Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	10	obl	_	_
+10	giren	gir	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	17	acl	_	SpaceAfter=No
+11	,	,	PUNCT	Punc	_	10	punct	_	_
+12	koni	koni	NOUN	Noun	Case=Nom|Number=Sing|Person=3	15	nmod:poss	_	_
+13	ve	ve	CCONJ	Conj	_	14	cc	_	_
+14	çubuk	çubuk	NOUN	Noun	Case=Nom|Number=Sing|Person=3	12	conj	_	_
+15-16	biçimindeki	_	_	_	_	_	_	_	_
+15	biçiminde	biçim	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	17	nmod	_	_
+16	ki	ki	ADP	Rel	_	15	case	_	_
+17	nöronlar	nöron	NOUN	Noun	Case=Nom|Number=Plur|Person=3	18	nsubj	_	_
+18	yer	yer	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+19	alır	al	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	18	compound	_	SpaceAfter=No
+20	.	.	PUNCT	Punc	_	18	punct	_	SpacesAfter=\s\n
+
+# sent_id = 7
+# text = Koni ve çubukların serbest uçları, damar tabakadan yana yöneliktir: Damar tabakaya gelen ışık ışınları kırılır ve ağtabaka hücrelerinin sinir uçlarını etkiler.
+1	Koni	koni	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	nmod:poss	_	_
+2	ve	ve	CCONJ	Conj	_	3	cc	_	_
+3	çubukların	çubuk	NOUN	Noun	Case=Gen|Number=Plur|Person=3	1	conj	_	_
+4	serbest	serbest	ADJ	Adj	_	5	amod	_	_
+5	uçları	uç	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	10	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punc	_	12	punct	_	_
+7	damar	damar	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	amod	_	_
+8	tabakadan	tabaka	NOUN	Noun	Case=Abl|Number=Sing|Person=3	9	obl	_	_
+9	yana	yan	ADJ	PCAbl	_	10	amod	_	_
+10-11	yöneliktir	_	_	_	_	_	_	_	SpaceAfter=No
+10	yönelik	yönelik	ADP	PCDat	_	0	root	_	_
+11	tir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	10	cop	_	_
+12	:	:	PUNCT	Punc	_	18	punct	_	_
+13	Damar	damar	NOUN	Noun	Case=Nom|Number=Sing|Person=3	14	nmod	_	_
+14	tabakaya	tabaka	NOUN	Noun	Case=Dat|Number=Sing|Person=3	15	obl	_	_
+15	gelen	gel	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	17	acl	_	_
+16	ışık	ışık	NOUN	Noun	Case=Nom|Number=Sing|Person=3	17	nmod:poss	_	_
+17	ışınları	ışın	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	18	nsubj	_	_
+18	kırılır	kır	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass	10	conj	_	_
+19	ve	ve	CCONJ	Conj	_	24	cc	_	_
+20	ağtabaka	ağtabaka	NOUN	Noun	Case=Nom|Number=Sing|Person=3	21	nmod:poss	_	_
+21	hücrelerinin	hücre	NOUN	Noun	Case=Gen|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	23	nmod:poss	_	_
+22	sinir	sinir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	23	nmod:poss	_	_
+23	uçlarını	uç	NOUN	Noun	Case=Acc|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	24	obj	_	_
+24	etkiler	etkile	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	10	conj	_	SpaceAfter=No
+25	.	.	PUNCT	Punc	_	24	punct	_	SpacesAfter=\s\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Canlılarda göz ve görme[değiştir | kaynağı değiştir]
-1	Canlılarda	canlı	ADJ	NAdj	Case=Loc|Number=Plur|Person=3	6	amod	_	_
-2	göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	obj	_	_
+# text = Canlılarda göz ve görme
+1	Canlılarda	canlı	ADJ	NAdj	Case=Loc|Number=Plur|Person=3	2	amod	_	_
+2	göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
 3	ve	ve	CCONJ	Conj	_	4	cc	_	_
-4	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	Punc	_	2	punct	_	SpaceAfter=No
-6	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	0	root	_	_
-7	|	|	PUNCT	Punc	_	9	punct	_	_
-8	kaynağı	kaynak	NOUN	Noun	Case=Acc|Number=Sing|Person=3	9	obj	_	_
-9	değiştir	değiş	VERB	Verb	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|Voice=Cau	6	conj	_	SpaceAfter=No
-10	]	]	PUNCT	Punc	_	9	punct	_	SpacesAfter=\n
+4	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	2	compound	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830
@@ -433,6 +561,191 @@
 10	yapıda	yapı	NOUN	Noun	Case=Loc|Number=Sing|Person=3	0	root	_	_
 11	dır	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	10	cop	_	_
 12	.	.	PUNCT	Punc	_	10	punct	_	SpacesAfter=\s\n
+
+# sent_id = 5
+# text = Avcı kuşlarınkiler, insanda olduğu gibi başın önünde buna karşılık başka kuşlar tarafından avlanan kuşların gözleriyse daha geniş bir görme alanını kaplayacak biçimde başın iki yanında yer alır.
+1	Avcı	avcı	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	nmod	_	_
+2	kuşlarınkiler	kuş	NOUN	Noun	Case=Nom|Number=Plur|Person=3	27	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punc	_	27	punct	_	_
+4	insanda	insan	NOUN	Noun	Case=Loc|Number=Sing|Person=3	5	obl	_	_
+5	olduğu	ol	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part	27	acl	_	_
+6	gibi	gibi	ADP	PCNom	_	5	case	_	_
+7	başın	baş	NOUN	Noun	Case=Gen|Number=Sing|Person=3	8	nmod:poss	_	_
+8	önünde	ön	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	amod	_	_
+9	buna	bu	PRON	Demons	Case=Dat|Number=Sing|Person=3|PronType=Dem	10	nmod	_	_
+10	karşılık	karşılık	NOUN	Noun	Case=Nom|Number=Sing|Person=3	20	obl	_	_
+11	başka	başka	ADJ	Adj	_	12	amod	_	_
+12	kuşlar	kuş	NOUN	Noun	Case=Nom|Number=Plur|Person=3	13	nmod:poss	_	_
+13	tarafından	taraf	NOUN	Noun	Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	obl	_	_
+14	avlanan	avla	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	15	acl	_	_
+15	kuşların	kuş	NOUN	Noun	Case=Gen|Number=Plur|Person=3	16	nmod:poss	_	_
+16	gözleriyse	göz	NOUN	Noun	Case=Ins|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	22	obl	_	_
+17	daha	daha	ADV	Adverb	_	18	advmod	_	_
+18	geniş	geniş	ADJ	Adj	_	20	amod	_	_
+19	bir	bir	NUM	ANum	NumType=Card	20	det	_	_
+20	görme	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	21	nmod:poss	_	_
+21	alanını	alan	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	22	obj	_	_
+22	kaplayacak	kapla	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Fut|VerbForm=Part	23	acl	_	_
+23	biçimde	biçim	NOUN	Noun	Case=Loc|Number=Sing|Person=3	27	nmod	_	_
+24	başın	baş	NOUN	Noun	Case=Gen|Number=Sing|Person=3	26	nmod:poss	_	_
+25	iki	iki	NUM	ANum	NumType=Card	26	nummod	_	_
+26	yanında	yan	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	27	amod	_	_
+27	yer	yer	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+28	alır	al	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	27	compound	_	SpaceAfter=No
+29	.	.	PUNCT	Punc	_	27	punct	_	SpacesAfter=\s\n
+
+# sent_id = 6
+# text = İnsan, maymun ve bazı başka gelişmiş canlıların gözleri, özel biçimleri seçip tanıyabilirler.
+1	İnsan	insan	NOUN	Noun	Case=Nom|Number=Sing|Person=3	13	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Punc	_	3	punct	_	_
+3	maymun	maymun	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	_
+4	ve	ve	CCONJ	Conj	_	8	cc	_	_
+5	bazı	bazı	DET	Det	_	6	det	_	_
+6	başka	başka	ADJ	Adj	_	7	det	_	_
+7	gelişmiş	geliş	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part	8	acl	_	_
+8	canlıların	canlı	ADJ	NAdj	Case=Gen|Number=Plur|Person=3	9	nmod:poss	_	_
+9	gözleri	göz	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Plur|Person=3|Person[psor]=3	14	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punc	_	12	punct	_	_
+11	özel	özel	ADJ	Adj	_	12	amod	_	_
+12	biçimleri	biçim	NOUN	Noun	Case=Acc|Number=Plur|Person=3	1	conj	_	_
+13	seçip	seç	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv	14	nmod	_	_
+14	tanıyabilirler	tanı	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	Punc	_	14	punct	_	_
+
+# sent_id = 7
+# text = Buna karşılık hayvanların çoğu, renkleri ancak bir ölçüde algılarlar.
+1	Buna	bu	PRON	Demons	Case=Dat|Number=Sing|Person=3|PronType=Dem	2	nmod	_	_
+2	karşılık	karşılık	NOUN	Noun	Case=Nom|Number=Sing|Person=3	10	obl	_	_
+3	hayvanların	hayvan	ADJ	NAdj	Case=Gen|Number=Plur|Person=3	4	nmod:poss	_	_
+4	çoğu	çok	ADJ	NAdj	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	10	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punc	_	10	punct	_	_
+6	renkleri	renk	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	10	obj	_	_
+7	ancak	ancak	ADV	Adverb	_	9	advmod	_	_
+8	bir	bir	NUM	ANum	NumType=Card	9	det	_	_
+9	ölçüde	ölçü	NOUN	Noun	Case=Loc|Number=Sing|Person=3	10	obl	_	_
+10	algılarlar	algıla	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punc	_	10	punct	_	_
+
+# sent_id = 8
+# text = Bazı hayvanlarsa renk körüdür.
+1	Bazı	bazı	DET	Det	_	2	det	_	_
+2	hayvanlarsa	hayvan	NOUN	Noun	Case=Loc|Number=Plur|Person=3	4	obl	_	_
+3	renk	renk	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	obj	_	_
+4	körüdür	körü	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punc	_	4	punct	_	SpacesAfter=\s\n
+
+# sent_id = 9
+# text = Toprak altında ya da denizin derinliklerinde yaşayan bazı canlılarda, gözler işlevlerini bütünüyle yitirmiştir.
+1	Toprak	toprak	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	nmod:poss	_	_
+2	altında	alt	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	7	amod	_	_
+3	ya	ya	CCONJ	Conj	_	2	compound	_	_
+4	da	da	CCONJ	Conj	_	2	compound	_	_
+5	denizin	deniz	NOUN	Noun	Case=Gen|Number=Sing|Person=3	2	conj	_	_
+6	derinliklerinde	derinlik	NOUN	Noun	Case=Loc|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	7	obl	_	_
+7	yaşayan	yaşa	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	9	acl	_	_
+8	bazı	bazı	DET	Det	_	9	det	_	_
+9	canlılarda	canlı	ADJ	NAdj	Case=Loc|Number=Plur|Person=3	14	amod	_	SpaceAfter=No
+10	,	,	PUNCT	Punc	_	14	punct	_	_
+11	gözler	göz	NOUN	Noun	Case=Nom|Number=Plur|Person=3	14	nsubj	_	_
+12	işlevlerini	işlev	NOUN	Noun	Case=Acc|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	14	obj	_	_
+13	bütünüyle	bütün	ADJ	NAdj	Case=Ins|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	14	amod	_	_
+14	yitirmiştir	yitir	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
+15	.	.	PUNCT	Punc	_	14	punct	_	_
+
+# sent_id = 10
+# text = Memelilerin gözleri kafatasının içindeki boşluklarda (göz çukurları) yerleşmiştir ve kaslar sayesinde her yönde hareket edebilir.
+1	Memelilerin	memeli	ADJ	NAdj	Case=Gen|Number=Plur|Person=3	2	nmod:poss	_	_
+2	gözleri	göz	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	11	nsubj	_	_
+3	kafatasının	kafata	NOUN	Noun	Case=Gen|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	nmod:poss	_	_
+4-5	içindeki	_	_	_	_	_	_	_	_
+4	içinde	iç	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	6	amod	_	_
+5	ki	ki	ADP	Rel	_	4	case	_	_
+6	boşluklarda	boşluk	NOUN	Noun	Case=Loc|Number=Plur|Person=3	11	obl	_	_
+7	(	(	PUNCT	Punc	_	8	punct	_	SpaceAfter=No
+8	göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+9	çukurları	çukur	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	8	compound	_	SpaceAfter=No
+10	)	)	PUNCT	Punc	_	8	punct	_	_
+11	yerleşmiştir	yerleş	VERB	Verb	Aspect=Perf|Evident=Nfh|Mood=Gen|Number=Sing|Person=3|Polarity=Pos|Tense=Past	0	root	_	_
+12	ve	ve	CCONJ	Conj	_	17	cc	_	_
+13	kaslar	kas	NOUN	Noun	Case=Nom|Number=Plur|Person=3	14	nmod:poss	_	_
+14	sayesinde	saye	NOUN	Noun	Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	17	nmod	_	_
+15	her	her	DET	Det	_	17	det	_	_
+16	yönde	yön	NOUN	Noun	Case=Loc|Number=Sing|Person=3	15	compound	_	_
+17	hareket	hareket	NOUN	Noun	Case=Nom|Number=Sing|Person=3	11	conj	_	_
+18	edebilir	et	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	17	compound:lvc	_	SpaceAfter=No
+19	.	.	PUNCT	Punc	_	17	punct	_	SpacesAfter=\s\n
+
+# sent_id = 11
+# text = Salyangozlar ve solucanlar ancak karanlık ile aydınlığı ayırt edebilirler; yalın gözlü eklembacaklılarsa ışığın yanı sıra, hareketi de belirleyebilirler.
+1	Salyangozlar	salyangoz	NOUN	Noun	Case=Nom|Number=Plur|Person=3	8	nsubj	_	_
+2	ve	ve	CCONJ	Conj	_	3	cc	_	_
+3	solucanlar	solucan	ADJ	NAdj	Case=Nom|Number=Plur|Person=3	1	conj	_	_
+4	ancak	ancak	ADV	Adverb	_	7	advmod	_	_
+5	karanlık	karanlık	ADJ	Adj	_	8	amod	_	_
+6	ile	ile	CCONJ	Conj	_	7	cc	_	_
+7	aydınlığı	aydınlık	NOUN	Noun	Case=Acc|Number=Sing|Person=3	1	conj	_	_
+8	ayırt	ayırt	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+9	edebilirler	et	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	8	compound:lvc	_	SpaceAfter=No
+10	;	;	PUNCT	Punc	_	21	punct	_	_
+11	yalın	yalın	NOUN	Noun	Case=Nom|Number=Sing|Person=3	12	nmod	_	_
+12-13	gözlü	_	_	_	_	_	_	_	_
+12	göz	göz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	14	obl	_	_
+13	lü	li	ADP	With	_	12	case	_	_
+14	eklembacaklılarsa	eklembacaklıl	VERB	Verb	Aspect=Hab|Mood=Cnd|Number=Sing|Person=3|Polarity=Pos|Tense=Pres	21	nmod	_	_
+15	ışığın	ışık	NOUN	Noun	Case=Gen|Number=Sing|Person=3	16	nmod:poss	_	_
+16	yanı	yan	ADJ	NAdj	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	17	amod	_	_
+17	sıra	sıra	NOUN	Noun	Case=Nom|Number=Sing|Person=3	21	obl	_	SpaceAfter=No
+18	,	,	PUNCT	Punc	_	21	punct	_	_
+19	hareketi	hareket	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	21	obj	_	_
+20	de	de	CCONJ	Conj	_	19	advmod:emph	_	_
+21	belirleyebilirler	belirle	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	8	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Punc	_	21	punct	_	SpacesAfter=\s\n
+
+# sent_id = 12
+# text = Sinekler ve arılar küçük hareketleri, genel biçimi ve rengi algılayabilirler; ayrıca böceklerin birçoğu, insanların göremedikleri morötesi ışığı da görebilirler.
+1	Sinekler	sinek	NOUN	Noun	Case=Nom|Number=Plur|Person=3	11	nsubj	_	_
+2	ve	ve	CCONJ	Conj	_	3	cc	_	_
+3	arılar	arı	ADJ	NAdj	Case=Nom|Number=Plur|Person=3	1	conj	_	_
+4	küçük	küçük	ADJ	Adj	_	5	amod	_	_
+5	hareketleri	hareket	NOUN	Noun	Case=Acc|Number=Plur|Person=3	11	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punc	_	8	punct	_	_
+7	genel	genel	ADJ	Adj	_	8	amod	_	_
+8	biçimi	biçim	NOUN	Noun	Case=Acc|Number=Sing|Person=3	5	conj	_	_
+9	ve	ve	CCONJ	Conj	_	10	cc	_	_
+10	rengi	renk	NOUN	Noun	Case=Acc|Number=Sing|Person=3	5	conj	_	_
+11	algılayabilirler	algıla	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	0	root	_	SpaceAfter=No
+12	;	;	PUNCT	Punc	_	22	punct	_	_
+13	ayrıca	ayrıca	ADV	Adverb	_	22	advmod	_	_
+14	böceklerin	böcek	NOUN	Noun	Case=Gen|Number=Plur|Person=3	15	nmod:poss	_	_
+15	birçoğu	birçoğu	PRON	Quant	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	22	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	Punc	_	22	punct	_	_
+17	insanların	insan	NOUN	Noun	Case=Gen|Number=Plur|Person=3	18	nmod:poss	_	_
+18	göremedikleri	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Pot|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part	19	acl	_	_
+19	morötesi	moröte	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	20	nmod:poss	_	_
+20	ışığı	ışık	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	22	obj	_	_
+21	da	da	CCONJ	Conj	_	20	advmod:emph	_	_
+22	görebilirler	gör	VERB	Verb	Aspect=Hab|Mood=Pot|Number=Plur|Person=3|Polarity=Pos|Tense=Pres	11	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Punc	_	22	punct	_	_
+
+# sent_id = 13
+# text = Gözlerinin yapısı omurgalılara benzeyen ahtapot ve mürekkepbalığı, cisimleri net görebildikleri halde, üç boyutlu göremezler.
+1	Gözlerinin	göz	NOUN	Noun	Case=Gen|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	2	nmod:poss	_	_
+2	yapısı	yapı	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	nsubj	_	_
+3	omurgalılara	omurgalı	ADJ	NAdj	Case=Dat|Number=Plur|Person=3	4	amod	_	_
+4	benzeyen	benze	VERB	Verb	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part	5	acl	_	_
+5	ahtapot	ahtapot	NOUN	Noun	Case=Nom|Number=Sing|Person=3	16	nsubj	_	_
+6	ve	ve	CCONJ	Conj	_	7	cc	_	_
+7	mürekkepbalığı	mürekkepbalık	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punc	_	7	punct	_	_
+9	cisimleri	cisim	NOUN	Noun	Case=Nom|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	11	obj	_	_
+10	net	net	NOUN	Noun	Case=Nom|Number=Sing|Person=3	11	obl	_	_
+11	görebildikleri	gör	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Pot|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part	12	acl	_	_
+12	halde	hal	NOUN	Noun	Case=Loc|Number=Sing|Person=3	16	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punc	_	16	punct	_	_
+14	üç	üç	NUM	ANum	NumType=Card	15	nummod	_	_
+15	boyutlu	boyutlu	ADJ	Adj	_	16	amod	_	_
+16	göremezler	gör	VERB	Verb	Aspect=Hab|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	Punc	_	16	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = turkish-imst-ud-2.6-200830

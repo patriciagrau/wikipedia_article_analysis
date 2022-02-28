@@ -1,5 +1,3 @@
-# https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%B1
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = القمر - ويكيبيديا
 1	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	-	-	PUNCT	G---------	_	1	punct	_	_
-3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	dep	_	SpacesAfter=\n
+3	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	dep	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -17,43 +15,30 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = القمر
-1	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = القمر هو القمر الطبيعي الوَحيد للأرض [ملاحظة 1] بالإضافة إلى أنه خامس أكبر قمرٍ طبيعيٍ في المجموعة الشمسية.
+# text = القمر هو القمر الطبيعي الوَحيد للأرض بالإضافة إلى أنه خامس أكبر قمرٍ طبيعيٍ في المجموعة الشمسية.
 1	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	3	nsubj	_	_
 2	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
 3	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 4	الطبيعي	طَبِيعِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
 5	الوَحيد	وََِحيد	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
-6-7	للأرض	_	_	_	_	_	_	_	_
+6-7	للأرض	_	_	_	_	_	_	_	SpacesAfter=\s\s
 6	ل	لِ	ADP	P---------	AdpType=Prep	7	case	_	_
-7	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
-8	[	[	PUNCT	G---------	_	9	punct	_	SpaceAfter=No
-9	ملاحظة	مُلَاحَظَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	3	dep	_	_
-10	1	1	NUM	Q---------	NumForm=Digit	9	nummod	_	SpaceAfter=No
-11	]	]	PUNCT	G---------	_	9	punct	_	_
-12-13	بالإضافة	_	_	_	_	_	_	_	_
-12	ب	بِ	ADP	P---------	AdpType=Prep	17	case	_	_
-13	الإضافة	إِضَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	fixed	_	_
-14	إلى	إِلَى	ADP	P---------	AdpType=Prep	12	fixed	_	_
-15-16	أنه	_	_	_	_	_	_	_	_
-15	أن	أَنَّ	SCONJ	C---------	_	17	mark	_	_
-16	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
-17	خامس	خَامِس	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	3	conj	_	_
-18	أكبر	أَكبَر	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	17	amod	_	_
-19	قمرٍ	قَمرٍ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	18	nmod	_	_
-20	طبيعيٍ	طَبِيعِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	19	amod	_	_
-21	في	فِي	ADP	P---------	AdpType=Prep	22	case	_	_
-22	المجموعة	مَجمُوعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	_
-23	الشمسية	شَمسِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	22	amod	_	SpaceAfter=No
-24	.	.	PUNCT	G---------	_	3	punct	_	_
+7	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	obl:arg	_	_
+8-9	بالإضافة	_	_	_	_	_	_	_	_
+8	ب	بِ	ADP	P---------	AdpType=Prep	13	case	_	_
+9	الإضافة	إِضَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+10	إلى	إِلَى	ADP	P---------	AdpType=Prep	13	case	_	_
+11-12	أنه	_	_	_	_	_	_	_	_
+11	أن	أَنَّ	SCONJ	C---------	_	13	mark	_	_
+12	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	خامس	خَامِس	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	3	conj	_	_
+14	أكبر	أَكبَر	ADJ	A-----MS1R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	13	amod	_	_
+15	قمرٍ	قَمرٍ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	14	nmod	_	_
+16	طبيعيٍ	طَبِيعِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	15	amod	_	_
+17	في	فِي	ADP	P---------	AdpType=Prep	18	case	_	_
+18	المجموعة	مَجمُوعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+19	الشمسية	شَمسِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
+20	.	.	PUNCT	G---------	_	3	punct	_	_
 
 # sent_id = 2
 # text = فهو يُعَدُ أكبر قمرٍ طبيعيٍ في المجموعة الشمسية من ناحية نسبة حجمه إلى كوكبه التابع له، حيث أن قطره يصل إلى ربع قطر الأرض، كما أن كتلته تصل إلى 1 على 81 من كتلة الأرض، هذا بالإضافة إلى أنه يُعَدُ ثاني أعلى قمرٍ من ناحية الكثافة بعد قمر إيو.
@@ -227,12 +212,12 @@
 41	.	.	PUNCT	G---------	_	1	punct	_	_
 
 # sent_id = 6
-# text = كان بروز القمر في السماء المظلمة ليلاً، ودورته المنتظمة الأطوار (المراحل) قد جعل له على مر العصور القديمة تأثيراً ثقافياً هاماً على كلٍ من اللغة، التقويم القمري، الفنون [الإنجليزية]، والأساطير القديمة، المتمثلة في آلهة القمر والتي منها عبر الحضارات: "خونسو" في الديانة المصرية القديمة، "تشانغ" في الحضارة الصينية وكذلك "ماما قيلا" في حضارة الإنكا.
+# text = كان بروز القمر في السماء المظلمة ليلاً، ودورته المنتظمة الأطوار (المراحل) قد جعل له على مر العصور القديمة تأثيراً ثقافياً هاماً على كلٍ من اللغة، التقويم القمري، الفنون ، والأساطير القديمة، المتمثلة في آلهة القمر والتي منها عبر الحضارات: "خونسو" في الديانة المصرية القديمة، "تشانغ" في الحضارة الصينية وكذلك "ماما قيلا" في حضارة الإنكا.
 1	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بروز	بُرُوز	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
 3	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
 4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
-5	السماء	سَمَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+5	السماء	سَمَاء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
 6	المظلمة	مُظلِم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
 7	ليلاً	لَيل	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	2	nmod	_	SpaceAfter=No
 8	،	،	PUNCT	G---------	_	7	punct	_	_
@@ -267,53 +252,50 @@
 34	القمري	قَمَرِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No
 35	،	،	PUNCT	G---------	_	36	punct	_	_
 36	الفنون	فَنّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	30	conj	_	_
-37	[	[	PUNCT	G---------	_	36	punct	_	SpaceAfter=No
-38	الإنجليزية	إِنجلِيزِيَّة	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
-39	]	]	PUNCT	G---------	_	36	punct	_	SpaceAfter=No
-40	،	،	PUNCT	G---------	_	36	punct	_	_
-41	والأساطير	والأساطير	X	U---------	_	30	conj	_	_
-42	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	41	amod	_	SpaceAfter=No
-43	،	،	PUNCT	G---------	_	42	punct	_	_
-44	المتمثلة	مُتَمَثِّل	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	_
-45	في	فِي	ADP	P---------	AdpType=Prep	46	case	_	_
-46	آلهة	آلِهَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	44	obl:arg	_	_
-47	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	46	nmod	_	_
-48-49	والتي	_	_	_	_	_	_	_	_
-48	و	وَ	CCONJ	C---------	_	46	cc	_	_
-49	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	51	nsubj	_	_
-50-51	منها	_	_	_	_	_	_	_	_
-50	من	مِن	ADP	P---------	AdpType=Prep	51	case	_	_
-51	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	44	obl:arg	_	_
-52	عبر	عَبرَ	ADP	PI------4-	AdpType=Prep|Case=Acc	53	case	_	_
-53	الحضارات	حَضَارَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	51	obl	_	SpaceAfter=No
-54	:	:	PUNCT	G---------	_	53	punct	_	_
-55	"	"	PUNCT	G---------	_	56	punct	_	SpaceAfter=No
-56	خونسو	خونسو	X	U---------	_	51	nsubj	_	SpaceAfter=No
-57	"	"	PUNCT	G---------	_	56	punct	_	_
-58	في	فِي	ADP	P---------	AdpType=Prep	59	case	_	_
-59	الديانة	دِيَانَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	56	nmod	_	_
-60	المصرية	مِصرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	59	amod	_	_
-61	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	59	amod	_	SpaceAfter=No
-62	،	،	PUNCT	G---------	_	64	punct	_	_
-63	"	"	PUNCT	G---------	_	64	punct	_	SpaceAfter=No
-64	تشانغ	تشَانغ	X	X---------	Foreign=Yes	56	conj	_	SpaceAfter=No
-65	"	"	PUNCT	G---------	_	64	punct	_	_
-66	في	فِي	ADP	P---------	AdpType=Prep	67	case	_	_
-67-68	الحضارة	_	_	_	_	_	_	_	_
-67	ا	أَ	PRON	SP---3FS2-	_	56	nmod	_	_
-68	الحضارة	حَضَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	56	nmod	_	_
-69	الصينية	صِينِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	68	amod	_	_
-70-71	وكذلك	_	_	_	_	_	_	_	_
-70	و	وَ	CCONJ	C---------	_	74	cc	_	_
-71	كذٰلك	كَذٰلِكَ	ADV	D---------	_	74	advmod:emph	_	_
-72	"	"	PUNCT	G---------	_	74	punct	_	SpaceAfter=No
-73	ماما	ماما	X	U---------	_	74	nmod	_	_
-74	قيلا	قيلا	X	U---------	_	56	conj	_	SpaceAfter=No
-75	"	"	PUNCT	G---------	_	74	punct	_	_
-76	في	فِي	ADP	P---------	AdpType=Prep	77	case	_	_
-77	حضارة	حَضَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	74	nmod	_	_
-78	الإنكا	الإنكا	X	U---------	_	77	nmod	_	SpaceAfter=No
-79	.	.	PUNCT	G---------	_	1	punct	_	_
+37	،	،	PUNCT	G---------	_	36	punct	_	_
+38	والأساطير	والأساطير	X	U---------	_	30	conj	_	_
+39	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	38	amod	_	SpaceAfter=No
+40	،	،	PUNCT	G---------	_	39	punct	_	_
+41	المتمثلة	مُتَمَثِّل	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	30	amod	_	_
+42	في	فِي	ADP	P---------	AdpType=Prep	43	case	_	_
+43	آلهة	آلِهَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	41	obl:arg	_	_
+44	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	nmod	_	_
+45-46	والتي	_	_	_	_	_	_	_	_
+45	و	وَ	CCONJ	C---------	_	43	cc	_	_
+46	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	48	nsubj	_	_
+47-48	منها	_	_	_	_	_	_	_	_
+47	من	مِن	ADP	P---------	AdpType=Prep	48	case	_	_
+48	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	43	obl:arg	_	_
+49	عبر	عَبرَ	ADP	PI------4-	AdpType=Prep|Case=Acc	50	case	_	_
+50	الحضارات	حَضَارَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	48	obl	_	SpaceAfter=No
+51	:	:	PUNCT	G---------	_	50	punct	_	_
+52	"	"	PUNCT	G---------	_	53	punct	_	SpaceAfter=No
+53	خونسو	خونسو	X	U---------	_	48	nsubj	_	SpaceAfter=No
+54	"	"	PUNCT	G---------	_	53	punct	_	_
+55	في	فِي	ADP	P---------	AdpType=Prep	56	case	_	_
+56	الديانة	دِيَانَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	53	nmod	_	_
+57	المصرية	مِصرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	56	amod	_	_
+58	القديمة	قَدِيم	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	56	amod	_	SpaceAfter=No
+59	،	،	PUNCT	G---------	_	61	punct	_	_
+60	"	"	PUNCT	G---------	_	61	punct	_	SpaceAfter=No
+61	تشانغ	تشَانغ	X	X---------	Foreign=Yes	53	conj	_	SpaceAfter=No
+62	"	"	PUNCT	G---------	_	61	punct	_	_
+63	في	فِي	ADP	P---------	AdpType=Prep	64	case	_	_
+64-65	الحضارة	_	_	_	_	_	_	_	_
+64	ا	أَ	X	SP---3FS2-	_	53	nmod	_	_
+65	الحضارة	حَضَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	53	nmod	_	_
+66	الصينية	صِينِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	65	amod	_	_
+67-68	وكذلك	_	_	_	_	_	_	_	_
+67	و	وَ	CCONJ	C---------	_	71	cc	_	_
+68	كذٰلك	كَذٰلِكَ	ADV	D---------	_	71	advmod:emph	_	_
+69	"	"	PUNCT	G---------	_	71	punct	_	SpaceAfter=No
+70	ماما	ماما	X	U---------	_	71	nmod	_	_
+71	قيلا	قيلا	X	U---------	_	53	conj	_	SpaceAfter=No
+72	"	"	PUNCT	G---------	_	71	punct	_	_
+73	في	فِي	ADP	P---------	AdpType=Prep	74	case	_	_
+74	حضارة	حَضَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	71	nmod	_	_
+75	الإنكا	الإنكا	X	U---------	_	74	nmod	_	SpaceAfter=No
+76	.	.	PUNCT	G---------	_	1	punct	_	_
 
 # sent_id = 7
 # text = ومن السمات الكامنة للقمر كذلك، تأثير جاذبيته التي تسفر عن وقوع عمليتي مد وجزر المحيطات وإطالة الدقيقة (نتيجة تسارع المد والجزر) لليوم.
@@ -831,12 +813,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = نشوء القمر[عدل]
+# text = نشوء القمر
 1	نشوء	نُشُوء	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1201,18 +1180,49 @@
 26	هما	هُوَ	PRON	SP---3MD2-	Case=Gen|Gender=Masc|Number=Dual|Person=3|PronType=Prs	21	nmod	_	_
 27	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = الخصائص الفيزيائية[عدل]
-1	الخصائص	خَصِيصَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الفيزيائية	فِيزِيَائِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+# sent_id = 9
+# text = وقد أدى تحرر الطاقة الهائلة ما بعد الاصطدام ضمن مجال المدار الأرضي إلى انصهار القشرة الخارجية من الأرض مشكلة محيط الصهارة.
+1-2	وقد	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	قد	قَد	AUX	F---------	_	3	aux	_	_
+3	أدى	أَدَّى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+4	تحرر	تَحَرُّر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	3	nsubj	_	_
+5	الطاقة	طَاقَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+6	الهائلة	هَائِل	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
+7	ما	مَا	DET	S---------	_	6	obl	_	_
+8	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	9	case	_	_
+9	الاصطدام	اِصطِدَام	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+10	ضمن	ضِمنَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+11	مجال	مَجَال	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	obl	_	_
+12	المدار	مَدَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	nmod	_	_
+13	الأرضي	أَرضِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	12	amod	_	_
+14	إلى	إِلَى	ADP	P---------	AdpType=Prep	15	case	_	_
+15	انصهار	اِنصِهَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	obl:arg	_	_
+16	القشرة	قَشَرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+17	الخارجية	خَارِجِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	16	amod	_	_
+18	من	مِن	ADP	P---------	AdpType=Prep	19	case	_	_
+19	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+20	مشكلة	مُشكِلَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	15	nmod	_	_
+21	محيط	مُحِيط	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	20	amod	_	_
+22	الصهارة	صَهَارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 10
+# text = وكذلك حدث أمر مماثل للقمر بتشكل محيط صهارة قمري.
+1-2	وكذلك	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	كذٰلك	كَذٰلِكَ	ADV	D---------	_	3	advmod:emph	_	_
+3	حدث	حَدَث	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+4	أمر	أَمر	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+5	مماثل	مُمَاثِل	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	amod	_	_
+6	للقمر	قَمَر	NOUN	N------S2D	Case=Nom|Definite=Def|Number=Sing	4	nmod	_	_
+7-8	بتشكل	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+8	تشكل	شَكَّل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	obl:arg	_	_
+9	محيط	مُحِيط	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	8	amod	_	_
+10	صهارة	صَهَارَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	9	nmod	_	_
+11	قمري	قَمَرِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No
+12	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1220,12 +1230,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التركيب الداخلي[عدل]
+# text = الخصائص الفيزيائية
+1	الخصائص	خَصِيصَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
+2	الفيزيائية	فِيزِيَائِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = التركيب الداخلي
 1	التركيب	تَركِيب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الداخلي	دَاخِلِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1281,6 +1298,197 @@
 25	مليارات	مِليَار	NUM	QM-----P2R	Case=Gen|Definite=Cons|Number=Plur|NumForm=Word	24	nummod	_	_
 26	سنة	سَنَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	25	nmod	_	SpaceAfter=No
 27	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = أدت عملية التبلور إلى تشكل معدن قاتم نتيجة ترسيب مركبات معدنية مثل الأوليفين والبيروكسين بعد أن تبلور ثلاث أرباع محيط الصهارة القمري.
+1	أدت	أَدَّى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	عملية	عَمَلِيَّة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3-4	التبلور	_	_	_	_	_	_	_	_
+3	الت	الت	X	U---------	_	2	nmod	_	_
+4	بلور	بلور	X	U---------	_	3	nmod	_	_
+5	إلى	إِلَى	ADP	P---------	AdpType=Prep	6	case	_	_
+6	تشكل	تَشَكُّل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+7	معدن	مَعدِن	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	6	nmod	_	_
+8	قاتم	قَاتِم	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	7	amod	_	_
+9	نتيجة	نَتِيجَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	10	nmod	_	_
+10	ترسيب	تَرسِيب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+11	مركبات	مُرَكَّب	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	10	nmod	_	_
+12	معدنية	معَدَنِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	_
+13	مثل	مِثلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	14	case	_	_
+14	الأوليفين	الأوليفين	X	U---------	_	11	nmod	_	_
+15	والبيروكسين	والبيروكسين	X	U---------	_	14	nmod	_	_
+16	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	18	mark	_	_
+17	أن	أَن	SCONJ	C---------	_	18	mark	_	_
+18-19	تبلور	_	_	_	_	_	_	_	_
+18	ت	َتّ	VERB	VISA-3FS--	Aspect=Imp|Gender=Fem|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	advcl	_	_
+19	بلور	بلور	X	U---------	_	18	nsubj	_	_
+20	ثلاث	ثَلَاثَة	NUM	QV----F-4R	Case=Acc|Definite=Cons|Gender=Fem|NumForm=Word|NumValue=3	18	obj	_	_
+21	أرباع	رُبع	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	20	nmod	_	_
+22	محيط	مُحِيط	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	21	amod	_	_
+23	الصهارة	صَهَارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
+24	القمري	قَمَرِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No
+25	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = كما يمكن أن تتشكل وتطفو طبقة ذات كثافة منخفضة من البلاغيوكلاس في أعلى القشرة القمرية.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+3	أن	أَن	SCONJ	C---------	_	4	mark	_	_
+4-5	تتشكل	_	_	_	_	_	_	_	_
+4	ت	َتّ	VERB	VISA-3FS--	Aspect=Imp|Gender=Fem|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	csubj	_	_
+5	تشكل	شَكَّل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	xcomp	_	_
+6	وتطفو	وتطفو	X	U---------	_	5	obj	_	_
+7	طبقة	طَبَقَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+8	ذات	ذَات	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	nmod	_	_
+9	كثافة	كَثَافَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	8	nmod	_	_
+10	منخفضة	مُنخَفِض	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	9	amod	_	_
+11	من	مِن	ADP	P---------	AdpType=Prep	12	case	_	_
+12	البلاغيوكلاس	البلاغيوكلاس	X	U---------	_	9	nmod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	أعلى	أَعلَى	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	5	obl	_	_
+15	القشرة	قَشَرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+16	القمرية	قَمَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = أما آخر السوائل المتبلورة فسوف تنحصر ما بين القشرة والدثار، مشكلةً مركبات غير متجانسة وعناصر مُنتجة عند درجات حرارة عالية.
+1	أما	أَمَّا	PART	F---------	_	8	advmod:emph	_	_
+2	آخر	آخِر	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	appos	_	_
+3	السوائل	سَائِل	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	2	nmod	_	_
+4-5	المتبلورة	_	_	_	_	_	_	_	_
+4	المت	المت	NUM	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	3	nummod	_	_
+5	بلورة	بلورة	X	U---------	_	3	nmod	_	_
+6-7	فسوف	_	_	_	_	_	_	_	_
+6	ف	فَ	CCONJ	C---------	_	8	advmod	_	_
+7	سوف	سَوفَ	AUX	F---------	_	8	aux	_	_
+8	تنحصر	اِنحَصَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+9	ما	مَا	DET	S---------	_	8	obj	_	_
+10	بين	بَينَ	ADP	PI------4-	AdpType=Prep|Case=Acc	11	case	_	_
+11	القشرة	قَشَرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+12	والدثار	والدثار	X	U---------	_	11	conj	_	SpaceAfter=No
+13	،	،	PUNCT	G---------	_	12	punct	_	_
+14	مشكلةً	مُشكلِةًَ	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	8	conj	_	_
+15	مركبات	مُرَكَّب	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	14	nmod	_	_
+16	غير	غَير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	15	nmod	_	_
+17	متجانسة	مُتَجَانِس	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	16	amod	_	_
+18-19	وعناصر	_	_	_	_	_	_	_	_
+18	و	وَ	CCONJ	C---------	_	19	cc	_	_
+19	عناصر	عُنصُر	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	14	conj	_	_
+20	مُنتجة	مَُنتِج	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	19	amod	_	_
+21	عند	عِندَ	ADP	PI------4-	AdpType=Prep|Case=Acc	22	case	_	_
+22	درجات	دَرَجَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	19	nmod	_	_
+23	حرارة	حَرَارَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	22	nmod	_	_
+24	عالية	عَالِي	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	22	amod	_	SpaceAfter=No
+25	.	.	PUNCT	G---------	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = وهذا يتناسق مع التخطيط الرإداري لقشرة المركبة التي تمت من خلال المركبات المدارية، والتي أظهرت أن معظم تركيب القشرة هو الآنورثوسايت.
+1-2	وهذا	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	هٰذا	هٰذَا	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	يتناسق	تَنَاسَق	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+4	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	5	case	_	_
+5	التخطيط	تَخطِيط	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	obl:arg	_	_
+6	الرإداري	رُإدَارِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	5	amod	_	_
+7	لقشرة	لَقشَرَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	5	nmod	_	_
+8	المركبة	مَركَبَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	تمت	تَمّ	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	8	acl:relcl	_	_
+11	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
+12	خلال	خِلَالَ	ADP	PI------2-	AdpType=Prep|Case=Gen	11	fixed	_	_
+13	المركبات	مَركَبَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	obl	_	_
+14	المدارية	مِدَارِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
+15	،	،	PUNCT	G---------	_	14	punct	_	_
+16-17	والتي	_	_	_	_	_	_	_	_
+16	و	وَ	CCONJ	C---------	_	5	cc	_	_
+17	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	18	nsubj	_	_
+18	أظهرت	أَظهَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	5	acl:relcl	_	_
+19	أن	أَنَّ	SCONJ	C---------	_	24	mark	_	_
+20	معظم	مُعظَم	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	24	nsubj	_	_
+21	تركيب	تَركِيب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+22	القشرة	قَشَرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	_
+23	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nmod	_	_
+24	الآنورثوسايت	الآنورثوسايت	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	18	obj	_	SpaceAfter=No
+25	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 7
+# text = كما أظهرت العينات المأخوذة من الصخور القمرية ذات المنشأ البركاني الناشئة نتيجة تجمد الصهارة المتدفقة، من أن هذه الصخور غنية بالحديد.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	أظهرت	أَظهَر	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3	العينات	عِينَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	2	nsubj	_	_
+4	المأخوذة	مَأخُوذ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	من	مِن	ADP	P---------	AdpType=Prep	6	case	_	_
+6	الصخور	صَخر	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	obl:arg	_	_
+7	القمرية	قَمَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	_
+8	ذات	ذَات	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	nmod	_	_
+9	المنشأ	مَنشَأ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+10	البركاني	بَرَكَانِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	9	amod	_	_
+11	الناشئة	نَاشِئ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	9	amod	_	_
+12	نتيجة	نَتِيجَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	13	nmod	_	_
+13	تجمد	تَجَمُّد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl	_	_
+14	الصهارة	صَهَارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15	المتدفقة	مُتَدَفِّق	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17	من	مِن	ADP	P---------	AdpType=Prep	21	case	_	_
+18	أن	أَنَّ	SCONJ	C---------	_	21	mark	_	_
+19	هذه	هٰذَا	DET	SD----FS4-	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_
+20	الصخور	صَخر	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	21	nsubj	_	_
+21	غنية	غَنِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	13	obl	_	_
+22-23	بالحديد	_	_	_	_	_	_	_	SpaceAfter=No
+22	ب	بِ	ADP	P---------	AdpType=Prep	23	case	_	_
+23	الحديد	حَدِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	obl:arg	_	_
+24	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 8
+# text = وهذا يدل على غنى القمر بالحديد ومن خلال الدراسة يتوقع أنه ذو تركيب حديد أغنى مما هو عليه في الأرض.
+1-2	وهذا	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	هٰذا	هٰذَا	DET	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	يدل	دَلّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+4	على	عَلَى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	غنى	غِنَى	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	obl:arg	_	_
+6	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7-8	بالحديد	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+8	الحديد	حَدِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+9-10	ومن	_	_	_	_	_	_	_	_
+9	و	وَ	CCONJ	C---------	_	13	cc	_	_
+10	من	مِن	ADP	P---------	AdpType=Prep	12	case	_	_
+11	خلال	خِلَالَ	ADP	PI------2-	AdpType=Prep|Case=Gen	10	fixed	_	_
+12	الدراسة	دِرَاسَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	obl	_	_
+13	يتوقع	تَوَقَّع	VERB	VIIP-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	3	conj	_	_
+14-15	أنه	_	_	_	_	_	_	_	_
+14	أن	أَنَّ	SCONJ	C---------	_	17	mark	_	_
+15	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	fixed	_	_
+16	ذو	ذُو	DET	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	تركيب	تَركِيب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	13	nsubj	_	_
+18	حديد	حَدِيد	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	nmod	_	_
+19	أغنى	أَغنَى	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	17	amod	_	_
+20	مما	مِمَّا	CCONJ	C---------	_	21	cc	_	_
+21	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+22-23	عليه	_	_	_	_	_	_	_	_
+22	علي	عَلَى	ADP	P---------	AdpType=Prep	21	case	_	_
+23	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obl:arg	_	_
+24	في	فِي	ADP	P---------	AdpType=Prep	25	case	_	_
+25	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	obl	_	SpaceAfter=No
+26	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = يقترح الجيولوجيون من أن متوسط سمك القشرة القمرية حوالي 50 كم.
+1	يقترح	اِقتَرَح	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	الجيولوجيون	جيولوجَين	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	من	مِن	ADP	P---------	AdpType=Prep	11	case	_	_
+4	أن	أَنَّ	SCONJ	C---------	_	11	mark	_	_
+5	متوسط	مُتَوَسِّط	ADJ	A-----MS4R	Case=Acc|Definite=Cons|Gender=Masc|Number=Sing	1	nsubj	_	_
+6-7	سمك	_	_	_	_	_	_	_	_
+6	سم	سَمّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	nmod	_	_
+7	ك	هُوَ	PRON	SP---2MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=2|PronType=Prs	6	nmod	_	_
+8	القشرة	قَشَرَة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	6	nmod	_	_
+9	القمرية	قَمَرِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	8	amod	_	_
+10	حوالي	حَوَالَى	ADP	P---------	AdpType=Prep	11	case	_	_
+11	50	50	NUM	Q---------	NumForm=Digit	1	obl:arg	_	_
+12	كم	كم	X	Y---------	Abbr=Yes	11	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1417,12 +1625,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = جيولوجيا السطح[عدل]
-1	جيولوجيا	جيولوجيا	X	N------S1R	_	0	root	_	_
+# text = جيولوجيا السطح
+1	جيولوجيا	جيولوجيا	X	U---------	_	0	root	_	_
 2	السطح	سَطح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -1799,12 +2004,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = التضاريس البركانية[عدل]
+# text = التضاريس البركانية
 1	التضاريس	تَضرِيس	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	البركانية	بُركَانِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2244,12 +2446,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الفوهات الصدمية[عدل]
+# text = الفوهات الصدمية
 1	الفوهات	فَوهَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
-2	الصدمية	صَدَمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+2	الصدمية	صِدمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2257,8 +2456,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الظاهرة الجيولوجية الكبيرة الأخرى الأخرى التي تؤثر على سطح القمر[ملاحظة 2] هي الاصطدامات، التي تخلف الفوهات عندما يَصطدم كويكب أو مذنب بسطح القمر.
-1	الظاهرة	ظَاهِرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	16	nsubj	_	_
+# text = الظاهرة الجيولوجية الكبيرة الأخرى الأخرى التي تؤثر على سطح القمر هي الاصطدامات، التي تخلف الفوهات عندما يَصطدم كويكب أو مذنب بسطح القمر.
+1	الظاهرة	ظَاهِرَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	12	nsubj	_	_
 2	الجيولوجية	جِيُولُوجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 3	الكبيرة	كَبِير	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
 4	الأخرى	آخَر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	_
@@ -2267,25 +2466,21 @@
 7	تؤثر	أَثَّر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
 8	على	عَلَى	ADP	P---------	AdpType=Prep	9	case	_	_
 9	سطح	سَطح	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	obl:arg	_	_
-10	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	SpaceAfter=No
-11	[	[	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
-12	ملاحظة	مُلَاحَظَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
-13	2	2	NUM	Q---------	NumForm=Digit	12	nummod	_	SpaceAfter=No
-14	]	]	PUNCT	G---------	_	12	punct	_	_
-15	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nmod	_	_
-16	الاصطدامات	اِصطِدَام	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-17	،	،	PUNCT	G---------	_	16	punct	_	_
-18	التي	اَلَّذِي	DET	SR----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	19	nsubj	_	_
-19	تخلف	خَلَف	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	16	acl:relcl	_	_
-20	الفوهات	فَوهَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	19	obj	_	_
-21	عندما	عِندَمَا	CCONJ	C---------	_	22	mark	_	_
-22	يَصطدم	اَِصطَدَم	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	19	advcl	_	_
-23	كويكب	كويكب	X	U---------	_	22	nsubj	_	_
-24	أو	أَو	CCONJ	C---------	_	25	cc	_	_
-25	مذنب	مِذنَب	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	23	conj	_	_
-26	بسطح	بُسطَح	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	22	obl	_	_
-27	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	SpaceAfter=No
-28	.	.	PUNCT	G---------	_	16	punct	_	_
+10	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+11	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
+12	الاصطدامات	اِصطِدَام	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
+13	،	،	PUNCT	G---------	_	12	punct	_	_
+14	التي	اَلَّذِي	DET	SR----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
+15	تخلف	خَلَف	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+16	الفوهات	فَوهَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	15	obj	_	_
+17	عندما	عِندَمَا	CCONJ	C---------	_	18	mark	_	_
+18	يَصطدم	اَِصطَدَم	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	advcl	_	_
+19	كويكب	كويكب	X	U---------	_	18	nsubj	_	_
+20	أو	أَو	CCONJ	C---------	_	21	cc	_	_
+21	مذنب	مِذنَب	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	19	conj	_	_
+22	بسطح	بُسطَح	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	18	obl	_	_
+23	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	G---------	_	12	punct	_	_
 
 # sent_id = 2
 # text = يُقدر أن هناك 300,000 فوهة تقريباً قطرها أعلى من كيلومتر واحد على جانب القمر القريب وحده، بعضها مسماة نسبة إلى أكادميين وعلماء وفنانين ومستكشفين.
@@ -2548,12 +2743,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = وجود الماء[عدل]
+# text = وجود الماء
 1	وجود	وُجُود	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الماء	مَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -2850,19 +3042,91 @@
 27	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nmod	_	_
 28	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
+# sent_id = 5
+# text = ووجدت في الصور الطيفية للمسبار شاندرايان 1 كميات من الماء والهيدروكسيل منعكسة في ضوء الشمس، وهي دلالة على وجود كميات كبيرة من الماء، حيث كانت كميات المياه في الأشعة تصل إلى جزئ في 1000 مليون.
+1	ووجدت	ووجدت	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	الصور	صَور	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	obl	_	_
+4	الطيفية	طَيفِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	للمسبار	للمسبار	X	U---------	_	3	nmod	_	_
+6	شاندرايان	شاندرايان	X	U---------	_	5	nmod	_	_
+7	1	1	NUM	Q---------	NumForm=Digit	1	obj	_	_
+8	كميات	كَمِّيَّة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	7	nmod	_	_
+9	من	مِن	ADP	P---------	AdpType=Prep	10	case	_	_
+10	الماء	مَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+11	والهيدروكسيل	والهيدروكسيل	X	U---------	_	10	nmod	_	_
+12	منعكسة	مُنعَكِس	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	7	amod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	ضوء	ضَوء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	obl	_	_
+15	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	SpaceAfter=No
+16	،	،	PUNCT	G---------	_	15	punct	_	_
+17-18	وهي	_	_	_	_	_	_	_	_
+17	و	وَ	CCONJ	C---------	_	19	cc	_	_
+18	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	دلالة	دَلَالَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	_
+20	على	عَلَى	ADP	P---------	AdpType=Prep	21	case	_	_
+21	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	nmod	_	_
+22	كميات	كَمِّيَّة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	21	nmod	_	_
+23	كبيرة	كَبِير	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	22	amod	_	_
+24	من	مِن	ADP	P---------	AdpType=Prep	25	case	_	_
+25	الماء	مَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	SpaceAfter=No
+26	،	،	PUNCT	G---------	_	25	punct	_	_
+27	حيث	حَيثُ	CCONJ	C---------	_	28	mark	_	_
+28	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	19	advcl	_	_
+29	كميات	كَمِّيَّة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	28	nsubj	_	_
+30	المياه	مَاء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	29	nmod	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	الأشعة	شُعَاع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	29	nmod	_	_
+33	تصل	وَصَل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	28	xcomp	_	_
+34	إلى	إِلَى	ADP	P---------	AdpType=Prep	35	case	_	_
+35	جزئ	جزئ	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	33	obl:arg	_	_
+36	في	فِي	ADP	P---------	AdpType=Prep	37	case	_	_
+37	1000	1000	NUM	Q---------	NumForm=Digit	35	nummod	_	_
+38	مليون	مِليُون	NUM	QM-----S2I	Case=Gen|Definite=Ind|Number=Sing|NumForm=Word	37	nummod	_	SpaceAfter=No
+39	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 6
+# text = وبعد بضع أسابيع، أصطدم إلكروس في فوهة مظلمة بشكل دائم ونجح في اكتشاف كميات من الجليد يصل تقديرها إلى 100 كغ.
+1-2	وبعد	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	3	case	_	_
+3	بضع	بِضع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+4	أسابيع	أُسبُوع	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	3	nmod	_	SpaceAfter=No
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	أصطدم	أَصطدَم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+7	إلكروس	إلكروس	X	U---------	_	6	nsubj	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	فوهة	فَوهَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+10	مظلمة	مُظلِم	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	9	amod	_	_
+11-12	بشكل	_	_	_	_	_	_	_	_
+11	ب	بِ	ADP	P---------	AdpType=Prep	12	case	_	_
+12	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	9	nmod	_	_
+13	دائم	دَائِم	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	12	amod	_	_
+14	ونجح	نَجَح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	acl	_	_
+15	في	فِي	ADP	P---------	AdpType=Prep	16	case	_	_
+16	اكتشاف	اِكتِشَاف	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	obl:arg	_	_
+17	كميات	كَمِّيَّة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	16	nmod	_	_
+18	من	مِن	ADP	P---------	AdpType=Prep	19	case	_	_
+19	الجليد	جَلِيد	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	17	amod	_	_
+20	يصل	وَصَل	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	17	acl	_	_
+21-22	تقديرها	_	_	_	_	_	_	_	_
+21	تقدير	تَقدِير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	20	nsubj	_	_
+22	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nmod	_	_
+23	إلى	إِلَى	ADP	P---------	AdpType=Prep	24	case	_	_
+24	100	100	NUM	Q---------	NumForm=Digit	20	obl:arg	_	_
+25	كغ	كغ	NOUN	Y---------	Abbr=Yes	24	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = الجاذبية والحقل المغناطيسي[عدل]
-1	الجاذبية	جَاذِبِيَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	والحقل	والحقل	X	U---------	_	1	dep	_	_
-3	المغناطيسي	مِغنَاطِيسِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
+# text = الجاذبية والحقل المغناطيسي
+1	الجاذبية	الجاذبية	X	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
+2	والحقل	والحقل	X	U---------	_	1	conj	_	_
+3	المغناطيسي	مِغنَاطِيسِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3242,12 +3506,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الغلاف الجوي[عدل]
+# text = الغلاف الجوي
 1	الغلاف	غِلَاف	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	الجوي	جَوِّيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3578,11 +3839,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الفصول[عدل]
+# text = الفصول
 1	الفصول	فَصل	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3840,13 +4098,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = العلاقة مع الأرض[عدل]
+# text = العلاقة مع الأرض
 1	العلاقة	عَلَاقَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	3	case	_	_
 3	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -3854,11 +4109,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المدار[عدل]
+# text = المدار
 1	المدار	مَدَار	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عدل	X	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4020,12 +4272,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الحجم النسبي[عدل]
+# text = الحجم النسبي
 1	الحجم	حَجم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	النسبي	نِسبِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4170,13 +4419,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الرؤية من الأرض[عدل]
+# text = الرؤية من الأرض
 1	الرؤية	رُؤيَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	من	مِن	ADP	P---------	AdpType=Prep	3	case	_	_
 3	الأرض	أَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4450,6 +4696,117 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = يختلف أعلى ارتفاع للقمر في السماء، فيتغير تبعاً لطور القمر والتغيرات الفصلية السنوية.ويكون أكثر ارتفاع للقمر خلال الشتاء.
+1	يختلف	اِختَلَف	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpacesBefore=\n
+2	أعلى	أَعلَى	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	nsubj	_	_
+3	ارتفاع	اِرتِفَاع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+4	للقمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	السماء	سَمَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	فيتغير	فيتغير	ADJ	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	xcomp	_	_
+9	تبعاً	تَبع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	10	nmod	_	_
+10	لطور	لُطُور	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obl	_	_
+11	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+12	والتغيرات	والتغيرات	X	U---------	_	11	nmod	_	_
+13	الفصلية	فَصلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	_
+14	السنوية	سَنَوِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No
+15	.	.	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
+16-17	ويكون	_	_	_	_	_	_	_	_
+16	و	وَ	CCONJ	C---------	_	1	cc	_	_
+17	يكون	كَان	AUX	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	18	cop	_	_
+18	أكثر	أَكثَر	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	parataxis	_	_
+19	ارتفاع	اِرتِفَاع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	18	nmod	_	_
+20	للقمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	_
+21	خلال	خِلَالَ	ADP	PI------4-	AdpType=Prep|Case=Acc	22	case	_	_
+22	الشتاء	شِتَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 2
+# text = كما أن النقطة القمرية ذات الدور 18.6 سنة لها تأثير أيضاً، عندما تكون نقطة الاعتدال في الاعتدالان فإن الانحراف يمكن أن يصل إلى 28 درجة كل شهر.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	أن	أَنَّ	SCONJ	C---------	_	11	mark	_	_
+3	النقطة	نُقطَة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	11	nsubj	_	_
+4	القمرية	قَمَرِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	3	amod	_	_
+5	ذات	ذَات	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	3	nmod	_	_
+6	الدور	دَور	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	nmod	_	_
+7	18.6	18.6	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+8	سنة	سَنَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	7	nmod	_	_
+9-10	لها	_	_	_	_	_	_	_	_
+9	ل	لِ	ADP	P---------	AdpType=Prep	10	case	_	_
+10	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obl:arg	_	_
+11	تأثير	تَأثِير	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	parataxis	_	_
+12	أيضاً	أَيضًا	ADV	D---------	_	11	advmod:emph	_	SpaceAfter=No
+13	،	،	PUNCT	G---------	_	12	punct	_	_
+14	عندما	عِندَمَا	CCONJ	C---------	_	15	mark	_	_
+15	تكون	كَان	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	cop	_	_
+16	نقطة	نُقطَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	15	nsubj	_	_
+17	الاعتدال	اِعتِدَال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+18	في	فِي	ADP	P---------	AdpType=Prep	19	case	_	_
+19	الاعتدالان	اِعتِدَال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+20-21	فإن	_	_	_	_	_	_	_	_
+20	ف	فَ	CCONJ	C---------	_	21	cc	_	_
+21	إن	إِنَّ	PART	F---------	_	23	advmod:emph	_	_
+22	الانحراف	اِنحِرَاف	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	21	nsubj	_	_
+23	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	conj	_	_
+24	أن	أَن	SCONJ	C---------	_	25	mark	_	_
+25	يصل	وَصَل	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	23	csubj	_	_
+26	إلى	إِلَى	ADP	P---------	AdpType=Prep	27	case	_	_
+27	28	28	NUM	Q---------	NumForm=Digit	25	obl:arg	_	_
+28	درجة	دَرَجَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	27	nmod	_	_
+29	كل	كُلّ	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	25	obl	_	_
+30	شهر	شَهر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	29	nmod	_	SpaceAfter=No
+31	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 3
+# text = ويعني هذا أن القمر يظهر على ارتفاع 28 درجة فوق خط الاستواء عوضاً عن 18 درجة في الأحوال العادية.
+1-2	ويعني	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	يعني	عَنَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+3	هذا	هذا	X	SD----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
+4	أن	أَنَّ	SCONJ	C---------	_	6	mark	_	_
+5	القمر	قَمَر	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	6	nsubj	_	_
+6	يظهر	ظَهَر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	على	عَلَى	ADP	P---------	AdpType=Prep	8	case	_	_
+8	ارتفاع	اِرتِفَاع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+9	28	28	NUM	Q---------	NumForm=Digit	8	nummod	_	_
+10	درجة	دَرَجَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	9	nmod	_	_
+11	فوق	فَوقَ	ADP	PI------4-	AdpType=Prep|Case=Acc	12	case	_	_
+12	خط	خَطّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	9	nmod	_	_
+13	الاستواء	اِستِوَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
+14	عوضاً	عَوض	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
+15	عن	عَن	ADP	P---------	AdpType=Prep	14	fixed	_	_
+16	18	18	NUM	Q---------	NumForm=Digit	6	obl	_	_
+17	درجة	دَرَجَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	16	nmod	_	_
+18	في	فِي	ADP	P---------	AdpType=Prep	19	case	_	_
+19	الأحوال	حَال	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	nmod	_	_
+20	العادية	عَادِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
+21	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = كما يعتمد اتجاه الهلال على خط العرض الذي يتم رصد القمر منه.
+1	كما	كَمَا	CCONJ	C---------	_	2	advmod	_	_
+2	يعتمد	اِعتَمَد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	اتجاه	اِتِّجَاه	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	2	nsubj	_	_
+4	الهلال	هِلَال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+5	على	عَلَى	ADP	P---------	AdpType=Prep	6	case	_	_
+6	خط	خَطّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl:arg	_	_
+7	العرض	عَرض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	يتم	تَمّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+10	رصد	رَصد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	9	nsubj	_	_
+11	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+12-13	منه	_	_	_	_	_	_	_	SpaceAfter=No
+12	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
+13	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+14	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = تتغير المسافة بين الأرض والقمر تقريبا من 356,400 كم عند الحضيض إلى 406,700 كم عند الأوج، (الأقرب والأبعد على التوالي).
 1	تتغير	تَغَيَّر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
 2	المسافة	مَسَافَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -4575,7 +4932,130 @@
 32	بـ	بِ	ADP	P---------	AdpType=Prep	33	case	_	_
 33	14	14	NUM	Q---------	NumForm=Digit	14	obl	_	SpaceAfter=No
 34	%	%	SYM	G---------	_	21	nmod	_	_
-35	لأن	لِأَنَّ	CCONJ	C---------	_	15	mark	_	SpacesAfter=\s\n
+35	لأن	لِأَنَّ	CCONJ	C---------	_	15	mark	_	SpacesAfter=\s\n\n\n\n\n
+
+# newpar
+# sent_id = 5
+# text = 1.14
+1	1.14	1.14	NUM	Q---------	NumForm=Digit	0	root	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 6
+# text = 2
+1	2	2	NUM	Q---------	NumForm=Digit	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 7
+# text = ≃ 1.30
+1	≃	≃	X	G---------	_	2	cc	_	SpacesAfter=\n
+2	1.30	1.30	NUM	Q---------	NumForm=Digit	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 8
+# text = {\displaystyle 1.14^{2}\simeq 1.30}
+1	{\displaystyle	{\displaystyle	X	U---------	_	0	root	_	_
+2	1.14^{2	1.14^{2	NUM	Q---------	NumForm=Digit	1	dep	_	SpaceAfter=No
+3	}	}	PUNCT	G---------	_	2	punct	_	SpaceAfter=No
+4	\simeq	\simeq	X	U---------	_	1	dep	_	_
+5	1.30	1.30	NUM	Q---------	NumForm=Digit	1	dep	_	SpaceAfter=No
+6	}	}	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n\n\n\n
+
+# newpar
+# sent_id = 9
+# text = تحدَد النسبة المئوية لانخفاض السطوع التي تظهر للملاحظ بالعلاقة التالية:
+1	تحدَد	اِحدَََد	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	النسبة	نِسبَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	المئوية	مَئَوِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4-5	لانخفاض	_	_	_	_	_	_	_	_
+4	ل	لِ	ADP	P---------	AdpType=Prep	5	case	_	_
+5	انخفاض	اِنخِفَاض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+6	السطوع	سَطع	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	5	nmod	_	_
+7	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	تظهر	ظَهَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+9	للملاحظ	للملاحظ	X	U---------	_	8	obj	_	_
+10-11	بالعلاقة	_	_	_	_	_	_	_	_
+10	ب	بِ	ADP	P---------	AdpType=Prep	11	case	_	_
+11	العلاقة	عَلَاقَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+12	التالية	تَالِي	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+13	:	:	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = arabic-padt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = p e r c e i v e d r e d u c t i o n % = 100
+1	p	p	X	Y---------	Abbr=Yes	0	root	_	SpacesBefore=\n\n\n\n|SpacesAfter=\n
+2	e	e	PUNCT	Y---------	Abbr=Yes	1	punct	_	SpacesAfter=\n
+3	r	r	PUNCT	G---------	NumForm=Digit	1	dep	_	SpacesAfter=\n
+4	c	c	X	Y---------	Abbr=Yes	1	dep	_	SpacesAfter=\n
+5	e	e	X	Y---------	Abbr=Yes	4	nmod	_	SpacesAfter=\n
+6	i	i	X	Y---------	Abbr=Yes	4	conj	_	SpacesAfter=\n
+7	v	v	X	Y---------	Abbr=Yes	4	conj	_	SpacesAfter=\n
+8	e	e	X	Y---------	Abbr=Yes	9	nmod	_	SpacesAfter=\n
+9	d	d	X	Y---------	Abbr=Yes	4	conj	_	SpacesAfter=\n \n
+10	r	r	X	Y---------	Abbr=Yes	12	nmod	_	SpacesAfter=\n
+11	e	e	X	Y---------	Abbr=Yes	14	nmod	_	SpacesAfter=\n
+12	d	d	X	Y---------	Abbr=Yes	14	nmod	_	SpacesAfter=\n
+13	u	u	X	Y---------	Abbr=Yes	14	nmod	_	SpacesAfter=\n
+14	c	c	X	Y---------	Abbr=Yes	1	dep	_	SpacesAfter=\n
+15	t	t	X	Y---------	Abbr=Yes	14	nmod	_	SpacesAfter=\n
+16	i	i	X	Y---------	Abbr=Yes	18	nmod	_	SpacesAfter=\n
+17	o	o	X	Y---------	_	18	nmod	_	SpacesAfter=\n
+18	n	n	X	Y---------	Abbr=Yes	1	dep	_	SpacesAfter=\n
+19	%	%	SYM	G---------	_	18	nmod	_	SpacesAfter=\n
+20	=	=	PUNCT	G---------	_	21	punct	_	SpacesAfter=\n
+21	100	100	NUM	Q---------	NumForm=Digit	1	dep	_	SpacesAfter=\n \n\n\n\n\n
+
+# newpar
+# sent_id = 2
+# text = a c t u a l r e d u c t i o n %
+1	a	a	ADP	P---------	AdpType=Prep	2	case	_	SpacesAfter=\n
+2	c	c	X	Y---------	Abbr=Yes	0	root	_	SpacesAfter=\n
+3	t	t	X	G---------	_	2	punct	_	SpacesAfter=\n
+4	u	u	X	Y---------	Abbr=Yes	2	nmod	_	SpacesAfter=\n
+5	a	a	X	Y---------	Abbr=Yes	7	nmod	_	SpacesAfter=\n
+6	l	l	X	Y---------	Abbr=Yes	7	nmod	_	SpacesAfter=\n \n
+7	r	r	X	Y---------	Abbr=Yes	2	dep	_	SpacesAfter=\n
+8	e	e	X	Y---------	_	9	cc	_	SpacesAfter=\n
+9	d	d	X	Y---------	Abbr=Yes	2	dep	_	SpacesAfter=\n
+10	u	u	X	Y---------	Abbr=Yes	2	dep	_	SpacesAfter=\n
+11	c	c	X	Y---------	Abbr=Yes	13	nmod	_	SpacesAfter=\n
+12	t	t	X	Y---------	_	13	nmod	_	SpacesAfter=\n
+13	i	i	X	Y---------	Abbr=Yes	2	dep	_	SpacesAfter=\n
+14	o	o	X	Y---------	_	15	nmod	_	SpacesAfter=\n
+15	n	n	X	Y---------	Abbr=Yes	2	dep	_	SpacesAfter=\n
+16	%	%	SYM	G---------	_	15	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 3
+# text = 100
+1	100	100	NUM	Q---------	NumForm=Digit	0	root	_	SpacesAfter=\n\n\n\n\n\n
+
+# newpar
+# sent_id = 4
+# text = {\displaystyle perceived\ reduction\%=100\ {\sqrt {\frac {actual\ reduction\%}{100}}}}
+1	{\displaystyle	{\displaystyle	X	U---------	_	0	root	_	_
+2	perceived\	perceived\	PUNCT	G---------	_	1	punct	_	_
+3	reductio	reductio	X	U---------	_	1	nmod	_	SpaceAfter=No
+4	n\	n\	SYM	G---------	_	3	punct	_	SpaceAfter=No
+5	%	%	SYM	G---------	_	3	nmod	_	SpaceAfter=No
+6	=	=	ADP	G---------	_	7	case	_	SpaceAfter=No
+7	100\	100\	NUM	Q---------	NumForm=Digit	1	dep	_	_
+8	{\sqrt	{\sqrt	X	U---------	_	7	nmod	_	_
+9	{\frac	{\frac	X	Q---------	_	1	dep	_	_
+10	{actual\	{actual\	PUNCT	G---------	_	9	punct	_	_
+11	reductio	reductio	X	U---------	_	9	nmod	_	SpaceAfter=No
+12	n	n	X	Y---------	Abbr=Yes	11	nmod	_	SpaceAfter=No
+13	\	\	PUNCT	G---------	_	11	punct	_	SpaceAfter=No
+14	%	%	SYM	G---------	_	11	nmod	_	SpaceAfter=No
+15	}	}	ADP	G---------	_	16	cc	_	SpaceAfter=No
+16	{100	{100	NUM	Q---------	NumForm=Digit	9	nummod	_	SpaceAfter=No
+17	}	}	PUNCT	G---------	_	16	punct	_	SpaceAfter=No
+18	}	}	PUNCT	G---------	_	16	punct	_	SpaceAfter=No
+19	}	}	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
+20	}	}	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4627,7 +5107,7 @@
 37	ل	لِ	ADP	P---------	AdpType=Prep	35	fixed	_	_
 38	نفس	نَفس	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	24	obl	_	_
 39	الطور	طَور	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	38	nmod	_	SpaceAfter=No
-40	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
+40	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -4731,16 +5211,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الخسوف والكسوف[عدل]
+# text = الخسوف والكسوف
 1-2	الخسوف	_	_	_	_	_	_	_	_
-1	الخ	الخ	X	N------S1D	_	0	root	_	_
+1	الخ	الخ	X	U---------	_	0	root	_	_
 2	سوف	سَوفَ	AUX	F---------	_	3	aux	_	_
 3-4	والكسوف	_	_	_	_	_	_	_	SpaceAfter=No
 3	والك	والك	X	U---------	_	1	dep	_	_
 4	سوف	سَوفَ	AUX	F---------	_	3	aux	_	_
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عدل	X	U---------	_	3	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5200,15 +5677,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = تأثير المد والجزر[عدل]
+# text = تأثير المد والجزر
 1	تأثير	تَأثِير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	المد	مَدّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
+2	المد	مُدّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
 3-4	والجزر	_	_	_	_	_	_	_	SpaceAfter=No
-3	وال	وَالِي	CCONJ	C---------	_	4	cc	_	_
+3	وال	وال	CCONJ	C---------	_	4	cc	_	_
 4	جزر	جَزِيرَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	2	conj	_	_
-5	[	[	PUNCT	G---------	_	6	punct	_	SpaceAfter=No
-6	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-7	]	]	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5732,14 +6206,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = تاريخ الاستكشاف[عدل]
+# text = تاريخ الاستكشاف
 1	تاريخ	تَارِيخ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2-3	الاستكشاف	_	_	_	_	_	_	_	SpaceAfter=No
-2	ال	اَل	X	F---------	_	1	nmod	_	_
+2	ال	اَل	PART	F---------	_	1	nmod	_	_
 3	استكشاف	اِستِكشَاف	X	U---------	_	1	nmod	_	_
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عدل	X	U---------	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -5747,12 +6218,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الدراسات المبكرة[عدل]
+# text = الدراسات المبكرة
 1	الدراسات	دِرَاسَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	المبكرة	مُبَكِّر	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6340,12 +6808,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاستكشافات الأولى[عدل]
+# text = الاستكشافات الأولى
 1	الاستكشافات	اِستِكشَاف	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	الأولى	أَوَّل	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -6695,13 +7160,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = رحلات الولايات المتحدة[عدل]
+# text = رحلات الولايات المتحدة
 1	رحلات	رِحلَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	nmod	_	_
 3	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7156,16 +7618,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الاستكشافات منذ سنة 1990 إلى الآن[عدل]
+# text = الاستكشافات منذ سنة 1990 إلى الآن
 1	الاستكشافات	اِستِكشَاف	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	_
 2	منذ	مُنذُ	ADP	P---------	AdpType=Prep	3	case	_	_
 3	سنة	سَنَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 4	1990	1990	NUM	Q---------	NumForm=Digit	3	nummod	_	_
 5	إلى	إِلَى	ADP	P---------	AdpType=Prep	6	case	_	_
 6	الآن	آن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-7	[	[	PUNCT	G---------	_	8	punct	_	SpaceAfter=No
-8	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-9	]	]	PUNCT	G---------	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7554,19 +8013,121 @@
 18	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 9
+# text = أما أول مهمة لمنظمة بحوث الفضاء الهندية فكانت شاندرايان 1 والذي تموضع في مداره حول القمر في 8 نوفمبر 2008 حتى فقد الاتصال به في 27 أغسطس 2009، ليحصل على صور عالية الدقة لتضاريس القمر ودراسة معدنية التربة وكيميائيتها، كما تم التأكد بواسطته من وجود جزيئات الماء في التربة القمرية.
+1	أما	أَمَّا	PART	F---------	_	10	advmod:emph	_	_
+2	أول	أَوَّل	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	1	appos	_	_
+3	مهمة	مَهَمَّة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+4-5	لمنظمة	_	_	_	_	_	_	_	_
+4	ل	لِ	ADP	P---------	AdpType=Prep	5	case	_	_
+5	منظمة	مُنَظَّمَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	nmod	_	_
+6	بحوث	بَحث	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	5	nmod	_	_
+7	الفضاء	فَضَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	الهندية	هِندِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	amod	_	_
+9-10	فكانت	_	_	_	_	_	_	_	_
+9	ف	فَ	CCONJ	C---------	_	10	advmod	_	_
+10	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+11	شاندرايان	شاندرايان	X	U---------	_	10	nsubj	_	_
+12	1	1	NUM	Q---------	NumForm=Digit	11	nummod	_	_
+13-14	والذي	_	_	_	_	_	_	_	_
+13	و	وَ	CCONJ	C---------	_	11	cc	_	_
+14	الذي	اَلَّذِي	DET	SR----MS1-	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
+15	تموضع	موَضَّع	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	11	acl	_	_
+16	في	فِي	ADP	P---------	AdpType=Prep	17	case	_	_
+17-18	مداره	_	_	_	_	_	_	_	_
+17	مدار	مَدَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	15	obl	_	_
+18	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nmod	_	_
+19	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	20	case	_	_
+20	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	obl	_	_
+21	في	فِي	ADP	P---------	AdpType=Prep	22	case	_	_
+22	8	8	NUM	Q---------	NumForm=Digit	15	obl	_	_
+23	نوفمبر	نُوفِمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	22	nmod	_	_
+24	2008	2008	NUM	Q---------	NumForm=Digit	23	nummod	_	_
+25	حتى	حَتَّى	ADV	D---------	_	28	advmod:emph	_	_
+26-27	فقد	_	_	_	_	_	_	_	_
+26	ف	فَ	CCONJ	C---------	_	28	cc	_	_
+27	قد	قَد	AUX	F---------	_	28	aux	_	_
+28	الاتصال	اِتِّصَال	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	10	nsubj	_	_
+29-30	به	_	_	_	_	_	_	_	_
+29	ب	بِ	ADP	P---------	AdpType=Prep	30	case	_	_
+30	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	obl:arg	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	27	27	NUM	Q---------	NumForm=Digit	28	obl	_	_
+33	أغسطس	أَغُسطُس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	32	nmod	_	_
+34	2009	2009	NUM	Q---------	NumForm=Digit	33	nummod	_	SpaceAfter=No
+35	،	،	PUNCT	G---------	_	34	punct	_	_
+36-37	ليحصل	_	_	_	_	_	_	_	_
+36	ل	لِ	CCONJ	C---------	_	37	mark	_	_
+37	يحصل	حَصَل	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	28	advcl	_	_
+38	على	عَلَى	ADP	P---------	AdpType=Prep	39	case	_	_
+39	صور	صُورَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	37	obl:arg	_	_
+40	عالية	عَالِي	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	39	amod	_	_
+41-42	الدقة	_	_	_	_	_	_	_	_
+41	ا	أَ	PART	F---------	_	42	cc	_	_
+42	الدقة	دِقَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	40	nmod	_	_
+43	لتضاريس	لتضاريس	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	37	obj	_	_
+44	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	nmod	_	_
+45	ودراسة	ودراسة	X	U---------	_	39	nmod	_	_
+46	معدنية	معدنية	X	U---------	_	45	nmod	_	_
+47	التربة	تَرَبُّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	46	nmod	_	_
+48-49	وكيميائيتها	_	_	_	_	_	_	_	SpaceAfter=No
+48	وكيميائيت	وُكَيمياَئَة	ADJ	N------P2R	_	46	nmod	_	_
+49	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	48	nmod	_	_
+50	،	،	PUNCT	G---------	_	49	punct	_	_
+51	كما	كَمَا	CCONJ	C---------	_	52	cc	_	_
+52	تم	تَمّ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	10	conj	_	_
+53	التأكد	تَأَكُّد	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	52	nsubj	_	_
+54-55	بواسطته	_	_	_	_	_	_	_	_
+54	بواسطت	بَاسطِتَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	53	nmod	_	_
+55	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	54	nmod	_	_
+56	من	مِن	ADP	P---------	AdpType=Prep	57	case	_	_
+57	وجود	وُجُود	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	53	nmod	_	_
+58	جزيئات	جزيئات	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	57	nmod	_	_
+59	الماء	مَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	58	nmod	_	_
+60	في	فِي	ADP	P---------	AdpType=Prep	61	case	_	_
+61	التربة	تَرَبُّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	57	nmod	_	_
+62	القمرية	قَمَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	61	amod	_	SpaceAfter=No
+63	.	.	PUNCT	G---------	_	10	punct	_	_
+
+# sent_id = 10
+# text = ومن المقرر أن ترسل منظمة بحوث الفضاء الهندية المسبار شاندرايان 2 في سنة 2013 وسيضم هذا المسبار مع عربة فضائية روسية.
+1-2	ومن	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	من	مِن	ADP	P---------	AdpType=Prep	3	case	_	_
+3	المقرر	مُقَرَّر	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	1	parataxis	_	_
+4	أن	أَن	SCONJ	C---------	_	5	mark	_	_
+5	ترسل	أَرسَل	VERB	VISA-3FS--	Aspect=Imp|Gender=Fem|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	csubj	_	_
+6	منظمة	مُنَظَّمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	nsubj	_	_
+7	بحوث	بَحث	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	6	nmod	_	_
+8	الفضاء	فَضَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9	الهندية	هِندِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	_
+10	المسبار	مِسبَار	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	5	obj	_	_
+11	شاندرايان	شاندرايان	X	U---------	_	10	nmod	_	_
+12	2	2	NUM	Q---------	NumForm=Digit	11	nummod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	سنة	سَنَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl	_	_
+15	2013	2013	NUM	Q---------	NumForm=Digit	14	nummod	_	_
+16-17	وسيضم	_	_	_	_	_	_	_	_
+16	وس	وسَ	CCONJ	C---------	_	17	cc	_	_
+17	يضم	ضَمّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	conj	_	_
+18	هذا	هٰذَا	DET	SD----MS1-	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	19	det	_	_
+19	المسبار	مُسبَار	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	17	nsubj	_	_
+20	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	21	case	_	_
+21	عربة	عَرَبَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	17	obl:arg	_	_
+22	فضائية	فَضَائِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	21	amod	_	_
+23	روسية	رُوسِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No
+24	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = القمر في الثقافة[عدل]
+# text = القمر في الثقافة
 1	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
 3	الثقافة	ثَقَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	G---------	_	5	punct	_	SpaceAfter=No
-5	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-6	]	]	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -7729,6 +8290,122 @@
 56	الشمسي	شَمسِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	55	amod	_	SpaceAfter=No
 57	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = كشفت بعثات ألمانية، فرنسية، وبريطانية أثناء تنقيبها في اليمن عن معابد خاصة بآلهة القمر والشمس بمدينة مأرب، تعود للقرن الثامن، كان منها إله المقة، أو إله القمر وطبقاته، إلى جانب الكشف عن بعض المقابر الكهفية المجاورة للمعبد.
+1	كشفت	كَشَف	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	بعثات	بَعثَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3	ألمانية	أَلمَانِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
+4	،	،	PUNCT	G---------	_	5	punct	_	_
+5	فرنسية	فَرَنسِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7-8	وبريطانية	_	_	_	_	_	_	_	_
+7	و	وَ	CCONJ	C---------	_	8	cc	_	_
+8	بريطانية	برِيطَانِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	conj	_	_
+9	أثناء	أَثنَاءَ	ADP	PI------4-	AdpType=Prep|Case=Acc	10	case	_	_
+10-11	تنقيبها	_	_	_	_	_	_	_	_
+10	تنقيب	تَنقِيب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+11	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
+12	في	فِي	ADP	P---------	AdpType=Prep	13	case	_	_
+13	اليمن	يَمَن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+14	عن	عَن	ADP	P---------	AdpType=Prep	15	case	_	_
+15-16	معابد	_	_	_	_	_	_	_	_
+15	معا	مَعًا	ADV	D---------	_	1	obl:arg	_	_
+16	بد	بُدّ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	15	nmod	_	_
+17	خاصة	خَاصّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	16	amod	_	_
+18	بآلهة	بَآلِهَة	NOUN	A-----FS2R	Case=Gen|Definite=Cons|Gender=Fem|Number=Sing	16	nmod	_	_
+19	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+20-21	والشمس	_	_	_	_	_	_	_	_
+20	و	وَ	CCONJ	C---------	_	21	cc	_	_
+21	الشمس	شَمس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	conj	_	_
+22-23	بمدينة	_	_	_	_	_	_	_	_
+22	ب	بِ	ADP	P---------	AdpType=Prep	23	case	_	_
+23	مدينة	مَدِينَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	nmod	_	_
+24	مأرب	مأرب	X	U---------	_	23	nmod	_	SpaceAfter=No
+25	،	،	PUNCT	G---------	_	24	punct	_	_
+26	تعود	عَاد	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	16	acl	_	_
+27-28	للقرن	_	_	_	_	_	_	_	_
+27	ل	لِ	ADP	P---------	AdpType=Prep	28	case	_	_
+28	القرن	قَرن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	obl:arg	_	_
+29	الثامن	ثَامِن	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	28	amod	_	SpaceAfter=No
+30	،	،	PUNCT	G---------	_	29	punct	_	_
+31	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	16	acl	_	_
+32-33	منها	_	_	_	_	_	_	_	_
+32	من	مِن	ADP	P---------	AdpType=Prep	33	case	_	_
+33	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	31	obl:arg	_	_
+34	إله	إِلَه	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	33	nsubj	_	_
+35	المقة	مَقَّة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	34	nmod	_	SpaceAfter=No
+36	،	،	PUNCT	G---------	_	35	punct	_	_
+37	أو	أَو	CCONJ	C---------	_	38	cc	_	_
+38	إله	إِلَه	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	35	conj	_	_
+39	القمر	قَمَر	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	38	nmod	_	_
+40-41	وطبقاته	_	_	_	_	_	_	_	SpaceAfter=No
+40	وطبقات	وطَبِيق	ADJ	N------P1R	Case=Nom|Definite=Cons|Number=Plur	34	conj	_	_
+41	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	nmod	_	_
+42	،	،	PUNCT	G---------	_	41	punct	_	_
+43	إلى	إِلَى	ADP	P---------	AdpType=Prep	45	case	_	_
+44	جانب	جَانِب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	43	fixed	_	_
+45	الكشف	كَشف	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	34	conj	_	_
+46	عن	عَن	ADP	P---------	AdpType=Prep	47	case	_	_
+47	بعض	بَعض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	45	nmod	_	_
+48	المقابر	مَقبَر	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	47	nmod	_	_
+49	الكهفية	كَهفِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	48	amod	_	_
+50	المجاورة	مُجَاوِر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	48	amod	_	_
+51	للمعبد	للمعبد	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	50	amod	_	SpaceAfter=No
+52	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 4
+# text = أكدّت هذه البعثات أن معبد برآن شُيد أكثر من مرة ليصبح مجمعاً فخماً يتسع لإقامة الاحتفالات للمعبود السبأي (المقه) إله القمر عند اليمنيين القدماء، وظل على مدى عدة قرون قبل الميلاد متنسكاً يحج إليه الناس من كل مكان.
+1	أكدّت	أَكدَّ	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	هذه	هٰذَا	DET	SD----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
+3	البعثات	بَعثَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+4	أن	أَنَّ	SCONJ	C---------	_	7	mark	_	_
+5	معبد	مَعبَد	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	7	nsubj	_	_
+6	برآن	برآن	X	U---------	_	5	nmod	_	_
+7	شُيد	شَُِيد	VERB	VP-P-3MS--	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	ccomp	_	_
+8	أكثر	أَكثَر	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	_
+9	من	مِن	ADP	P---------	AdpType=Prep	10	case	_	_
+10	مرة	مَرَّة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	8	obl	_	_
+11	ليصبح	ليصبح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	12	acl	_	_
+12	مجمعاً	مَجمَع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
+13	فخماً	فَخم	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	12	amod	_	_
+14	يتسع	اِتَّسَع	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	acl	_	_
+15-16	لإقامة	_	_	_	_	_	_	_	_
+15	ل	لِ	ADP	P---------	AdpType=Prep	16	case	_	_
+16	إقامة	إِقَامَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	14	obl	_	_
+17	الاحتفالات	اِحتِفَال	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	nmod	_	_
+18	للمعبود	مَعبُود	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	17	amod	_	_
+19	السبأي	سَبَأِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	18	amod	_	_
+20	(	(	PUNCT	G---------	_	21	punct	_	SpaceAfter=No
+21-22	المقه	_	_	_	_	_	_	_	SpaceAfter=No
+21	المق	أَلمَق	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	17	appos	_	_
+22	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nmod	_	_
+23	)	)	PUNCT	G---------	_	21	punct	_	_
+24	إله	إِلَه	NOUN	P---------	AdpType=Prep	25	nmod	_	_
+25	القمر	قَمَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	_
+26	عند	عِندَ	ADP	PI------4-	AdpType=Prep|Case=Acc	27	case	_	_
+27	اليمنيين	يَمَنِيّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	17	amod	_	_
+28	القدماء	قَدِيم	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	27	amod	_	SpaceAfter=No
+29	،	،	PUNCT	G---------	_	28	punct	_	_
+30-31	وظل	_	_	_	_	_	_	_	_
+30	و	وَ	CCONJ	C---------	_	31	cc	_	_
+31	ظل	ظَلّ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	7	conj	_	_
+32	على	عَلَى	ADP	P---------	AdpType=Prep	34	case	_	_
+33	مدى	مدى	X	U---------	_	32	fixed	_	_
+34	عدة	عِدَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	31	obl	_	_
+35	قرون	قَرن	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	34	nmod	_	_
+36	قبل	قَبلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	37	case	_	_
+37	الميلاد	مِيلَاد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	35	nmod	_	_
+38	متنسكاً	مُتَنَسِّك	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	31	xcomp	_	_
+39	يحج	حَجّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	38	acl	_	_
+40-41	إليه	_	_	_	_	_	_	_	_
+40	إلي	إِلَى	ADP	P---------	AdpType=Prep	41	case	_	_
+41	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	obl:arg	_	_
+42	الناس	إِنسَان	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	39	nsubj	_	_
+43	من	مِن	ADP	P---------	AdpType=Prep	44	case	_	_
+44	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	39	obl	_	_
+45	مكان	مَكَان	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	44	nmod	_	SpaceAfter=No
+46	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -7880,12 +8557,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الوضع القانوني[عدل]
+# text = الوضع القانوني
 1	الوضع	وَضع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	القانوني	قَانُونِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8096,12 +8770,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = انظر أيضًا[عدل]
-1	انظر	نَظَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+# text = انظر أيضًا
+1	انظر	انظر	X	U---------	_	0	root	_	_
 2	أيضًا	أَيضاا	ADV	D---------	_	1	advmod:emph	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عدل	X	U---------	_	1	nsubj	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8109,11 +8780,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = الملاحظات[عدل]
+# text = الملاحظات
 1	الملاحظات	مُلَاحَظَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8121,11 +8789,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المراجع[عدل]
+# text = المراجع
 1	المراجع	مَرجَعَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8133,11 +8798,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = المصادر[عدل]
+# text = المصادر
 1	المصادر	مَصدَر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	G---------	_	3	punct	_	SpaceAfter=No
-3	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-4	]	]	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = arabic-padt-ud-2.6-200830
@@ -8145,89 +8807,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = وصلات خارجية[عدل]
+# text = وصلات خارجية
 1	وصلات	وُصلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
-3	[	[	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	عدل	عَدَل	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	dep	_	SpaceAfter=No
-5	]	]	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = المجموعة الشمسية ← السحابة البينجمية المحلية ← الفقاعة المحلية ← حزام غولد ← ذراع الجبار ← درب التبانة ← المجموعة الفرعية لدرب التبانة ← المجموعة المحلية ← الصفيحة المحلية ← عنقود مجرات العذراء العظيم ← عنقود لانياكيا ← الكون المرصود ← الفضاء الكونييمكن قراءة كل سهم (←) بعبارة "ضمن" أو "جزء من".
-1	المجموعة	مَجمُوعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الشمسية	شَمسِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter= 
-3	←	←	PUNCT	G---------	_	4	punct	_	_
-4	السحابة	سَحَابَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
-5	البينجمية	بِينَجمِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	_
-6	المحلية	مَحَلِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpacesAfter= 
-7	←	←	PUNCT	G---------	_	4	punct	_	_
-8	الفقاعة	فِقَاعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
-9	المحلية	مَحَلِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpacesAfter= 
-10	←	←	PUNCT	G---------	_	11	punct	_	_
-11	حزام	حِزَام	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
-12	غولد	غَولَد	X	X---------	Foreign=Yes	11	nmod	_	SpacesAfter= 
-13	←	←	PUNCT	G---------	_	14	punct	_	_
-14	ذراع	ذَرَاع	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
-15	الجبار	جِبَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	SpacesAfter= 
-16	←	←	ADP	G---------	_	17	punct	_	_
-17	درب	دَرب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
-18	التبانة	تِبَانَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	SpacesAfter= 
-19	←	←	PUNCT	G---------	_	20	punct	_	_
-20	المجموعة	مَجمُوعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
-21	الفرعية	فَرعِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	20	amod	_	_
-22	لدرب	لَدرَب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	20	nmod	_	_
-23	التبانة	تِبَانَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	SpacesAfter= 
-24	←	←	PUNCT	G---------	_	20	punct	_	_
-25	المجموعة	مَجمُوعَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
-26	المحلية	مَحَلِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	25	amod	_	SpacesAfter= 
-27	←	←	PUNCT	G---------	_	25	punct	_	_
-28	الصفيحة	صَفِيحَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	25	nmod	_	_
-29	المحلية	مَحَلِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	28	amod	_	SpacesAfter= 
-30	←	←	PUNCT	G---------	_	31	punct	_	_
-31	عنقود	عَنقُود	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	25	nmod	_	_
-32	مجرات	مَجَرّ	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	31	nmod	_	_
-33	العذراء	عَذرَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	_
-34	العظيم	عَظِيم	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	33	amod	_	SpacesAfter= 
-35	←	←	PUNCT	G---------	_	36	punct	_	_
-36	عنقود	عَنقُود	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	dep	_	_
-37	لانياكيا	لانياكيا	X	X---------	Foreign=Yes	36	nmod	_	SpacesAfter= 
-38	←	←	PUNCT	G---------	_	36	punct	_	_
-39	الكون	كَون	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	36	nmod	_	_
-40	المرصود	مَرصُود	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	39	amod	_	SpacesAfter= 
-41	←	←	PUNCT	G---------	_	42	punct	_	_
-42	الفضاء	فَضَاء	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	44	nsubj	_	_
-43-44	الكونييمكن	_	_	_	_	_	_	_	_
-43	الكوني	كُونِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	42	amod	_	_
-44	يمكن	أَمكَن	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
-45	قراءة	قِرَاءَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	44	nsubj	_	_
-46	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	45	nmod	_	_
-47	سهم	سَهم	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	46	nmod	_	_
-48	(	(	PUNCT	G---------	_	49	punct	_	SpaceAfter=No
-49	←	←	SYM	G---------	_	47	nmod	_	SpaceAfter=No
-50	)	)	PUNCT	G---------	_	49	punct	_	_
-51	بعبارة	بِعَبارَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	46	nmod	_	_
-52	"	"	PUNCT	G---------	_	51	punct	_	SpaceAfter=No
-53	ضمن	ضِمنَ	ADP	PI------4-	AdpType=Prep|Case=Acc	51	case	_	SpaceAfter=No
-54	"	"	PUNCT	G---------	_	51	punct	_	_
-55	أو	أَو	CCONJ	C---------	_	57	cc	_	_
-56	"	"	PUNCT	G---------	_	57	punct	_	SpaceAfter=No
-57	جزء	جُزء	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	51	conj	_	_
-58	من	مِن	ADP	P---------	AdpType=Prep	57	case	_	SpaceAfter=No
-59	"	"	PUNCT	G---------	_	57	punct	_	SpaceAfter=No
-60	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = قائمة التصفح
-1	قائمة	قَائِمَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	التصفح	تَصَفُّح	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n
 

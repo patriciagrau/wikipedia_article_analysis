@@ -1,5 +1,3 @@
-# http://en.wikipedia.org/wiki/United_States
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	United	United	PROPN	NNP	Number=Sing	2	compound	_	_
 2	States	States	PROPN	NNP	Number=Sing	4	compound	_	_
 3	-	-	PUNCT	:	_	4	punct	_	_
-4	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+4	Wikipedia	Wikipedia	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18,9 +16,22 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = United States
-1	United	United	PROPN	NNP	Number=Sing	2	compound	_	_
-2	States	States	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+# text = Coordinates: 40°N 100°W﻿ / ﻿40°N
+1	Coordinates	coordinate	NOUN	NNS	Number=Plur	0	root	_	SpacesBefore=\n|SpaceAfter=No
+2	:	:	PUNCT	:	_	1	punct	_	_
+3	40°N	40°n	NOUN	NN	Number=Sing	4	compound	_	_
+4	100°W﻿	100°w﻿	NOUN	NN	Number=Sing	1	appos	_	_
+5	/	/	PUNCT	,	_	6	cc	_	_
+6	﻿40°N	﻿40°n	NOUN	NN	Number=Sing	4	conj	_	_
+
+# sent_id = 2
+# text = 100°W﻿ / 40; -100
+1	100°W﻿	100°w﻿	NOUN	NN	Number=Sing	0	root	_	_
+2	/	/	PUNCT	,	_	1	punct	_	_
+3	40	40	NUM	CD	NumType=Card	1	appos	_	SpaceAfter=No
+4	;	;	PUNCT	,	_	1	punct	_	_
+5	-	-	SYM	NFP	_	6	punct	_	SpaceAfter=No
+6	100	100	NUM	CD	NumType=Card	1	parataxis	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -65,7 +76,7 @@
 34	.	.	PUNCT	.	_	28	punct	_	_
 
 # sent_id = 2
-# text = It consists of 50 states, a federal district, five major unincorporated territories, 326 Indian reservations, and some minor possessions.
+# text = It consists of 50 states, a federal district, five major unincorporated territories, 326 Indian reservations, and nine minor outlying islands.
 1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	consists	consist	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	of	of	ADP	IN	_	5	case	_	_
@@ -84,12 +95,13 @@
 16	326	326	NUM	CD	NumType=Card	18	nummod	_	_
 17	Indian	indian	ADJ	JJ	Degree=Pos	18	amod	_	_
 18	reservations	reservation	NOUN	NNS	Number=Plur	5	conj	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	23	punct	_	_
-20	and	and	CCONJ	CC	_	23	cc	_	_
-21	some	some	DET	DT	_	23	det	_	_
-22	minor	minor	ADJ	JJ	Degree=Pos	23	amod	_	_
-23	possessions	possession	NOUN	NNS	Number=Plur	5	conj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	2	punct	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	nine	nine	NUM	CD	NumType=Card	24	nummod	_	_
+22	minor	minor	ADJ	JJ	Degree=Pos	24	amod	_	_
+23	outlying	outly	VERB	VBG	VerbForm=Ger	24	amod	_	_
+24	islands	island	NOUN	NNS	Number=Plur	5	conj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 3
 # text = At nearly 3.8 million square miles (9.8 million square kilometers), it is the world's third- or fourth-largest country by geographic area.
@@ -160,14 +172,14 @@
 33	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 5
-# text = With a population of more than 331 million people, it is the third most populous country in the world.
+# text = With a population of more than 332 million people, it is the third most populous country in the world.
 1	With	with	ADP	IN	_	3	case	_	_
 2	a	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	_
 3	population	population	NOUN	NN	Number=Sing	17	nmod	_	_
 4	of	of	ADP	IN	_	9	case	_	_
 5	more	more	ADJ	JJR	Degree=Cmp	8	advmod	_	_
 6	than	than	ADP	IN	_	5	fixed	_	_
-7	331	331	NUM	CD	NumType=Card	8	compound	_	_
+7	332	332	NUM	CD	NumType=Card	8	compound	_	_
 8	million	million	NUM	CD	NumType=Card	9	nummod	_	_
 9	people	people	NOUN	NNS	Number=Plur	3	nmod	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	17	punct	_	_
@@ -448,7 +460,7 @@
 20	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 9
-# text = They competed in the Space Race, culminating in the 1969 spaceflight that first landed humans on the Moon.
+# text = They competed in the Space Race, culminating in the 1969 spaceflight in which the United States became the only country to have landed humans on the Moon.
 1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
 2	competed	compete	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
 3	in	in	ADP	IN	_	6	case	_	_
@@ -461,14 +473,23 @@
 10	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
 11	1969	1969	NUM	CD	NumType=Card	12	nummod	_	_
 12	spaceflight	spaceflight	NOUN	NN	Number=Sing	8	obl	_	_
-13	that	that	PRON	WDT	PronType=Rel	15	nsubj	_	_
-14	first	first	ADV	RB	_	15	advmod	_	_
-15	landed	land	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	acl:relcl	_	_
-16	humans	human	NOUN	NNS	Number=Plur	15	obj	_	_
-17	on	on	ADP	IN	_	19	case	_	_
-18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
-19	Moon	moon	NOUN	NN	Number=Sing	15	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	2	punct	_	_
+13	in	in	ADP	IN	_	14	case	_	_
+14	which	which	PRON	WDT	PronType=Rel	18	obl	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	United	United	PROPN	NNP	Number=Sing	17	compound	_	_
+17	States	States	PROPN	NNP	Number=Sing	18	nsubj	_	_
+18	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	acl:relcl	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	only	only	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	country	country	NOUN	NN	Number=Sing	18	xcomp	_	_
+22	to	to	PART	TO	_	24	mark	_	_
+23	have	have	AUX	VB	VerbForm=Inf	24	aux	_	_
+24	landed	land	VERB	VBN	Tense=Past|VerbForm=Part	21	acl	_	_
+25	humans	human	NOUN	NNS	Number=Plur	24	obj	_	_
+26	on	on	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	Moon	moon	NOUN	NN	Number=Sing	24	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = 10
 # text = The Soviet Union's dissolution in 1991 ended the Cold War, leaving the United States as the world's sole superpower.
@@ -630,35 +651,39 @@
 30	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 6
-# text = However, it has been criticized for racial, wealth, and income inequality; capital punishment and mass incarceration; and lack of universal health care.
+# text = However, it has been criticized by scholars and historians for racial, wealth, and income inequality; capital punishment and mass incarceration; and lack of universal health care.
 1	However	however	ADV	RB	_	6	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	6	punct	_	_
 3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	nsubj:pass	_	_
 4	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
 5	been	be	AUX	VBN	Tense=Past|VerbForm=Part	6	aux:pass	_	_
 6	criticized	criticize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
-7	for	for	ADP	IN	_	14	case	_	_
-8	racial	racial	ADJ	JJ	Degree=Pos	14	amod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	10	punct	_	_
-10	wealth	wealth	NOUN	NN	Number=Sing	8	conj	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	13	punct	_	_
-12	and	and	CCONJ	CC	_	13	cc	_	_
-13	income	income	NOUN	NN	Number=Sing	8	conj	_	_
-14	inequality	inequality	NOUN	NN	Number=Sing	6	obl	_	SpaceAfter=No
-15	;	;	PUNCT	,	_	14	punct	_	_
-16	capital	capital	ADJ	JJ	Degree=Pos	17	amod	_	_
-17	punishment	punishment	NOUN	NN	Number=Sing	14	conj	_	_
-18	and	and	CCONJ	CC	_	20	cc	_	_
-19	mass	mass	ADJ	JJ	Degree=Pos	20	amod	_	_
-20	incarceration	incarceration	NOUN	NN	Number=Sing	17	conj	_	SpaceAfter=No
-21	;	;	PUNCT	,	_	14	punct	_	_
-22	and	and	CCONJ	CC	_	23	cc	_	_
-23	lack	lack	NOUN	NN	Number=Sing	14	conj	_	_
-24	of	of	ADP	IN	_	27	case	_	_
-25	universal	universal	ADJ	JJ	Degree=Pos	27	amod	_	_
-26	health	health	NOUN	NN	Number=Sing	27	compound	_	_
-27	care	care	NOUN	NN	Number=Sing	23	nmod	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+7	by	by	ADP	IN	_	8	case	_	_
+8	scholars	scholar	NOUN	NNS	Number=Plur	6	obl	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	historians	historian	NOUN	NNS	Number=Plur	8	conj	_	_
+11	for	for	ADP	IN	_	18	case	_	_
+12	racial	racial	ADJ	JJ	Degree=Pos	18	amod	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	wealth	wealth	NOUN	NN	Number=Sing	12	conj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	income	income	NOUN	NN	Number=Sing	12	conj	_	_
+18	inequality	inequality	NOUN	NN	Number=Sing	6	obl	_	SpaceAfter=No
+19	;	;	PUNCT	,	_	18	punct	_	_
+20	capital	capital	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	punishment	punishment	NOUN	NN	Number=Sing	18	conj	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	mass	mass	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	incarceration	incarceration	NOUN	NN	Number=Sing	21	conj	_	SpaceAfter=No
+25	;	;	PUNCT	,	_	18	punct	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	lack	lack	NOUN	NN	Number=Sing	18	conj	_	_
+28	of	of	ADP	IN	_	31	case	_	_
+29	universal	universal	ADJ	JJ	Degree=Pos	31	amod	_	_
+30	health	health	NOUN	NN	Number=Sing	31	compound	_	_
+31	care	care	NOUN	NN	Number=Sing	27	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -802,7 +827,7 @@
 # newpar
 # sent_id = 1
 # text = Etymology
-1	Etymology	etymology	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Etymology	etymology	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1521,7 +1546,7 @@
 # newpar
 # sent_id = 1
 # text = History
-1	History	history	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	History	history	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1534,7 +1559,7 @@
 2	peoples	people	NOUN	NNS	Number=Plur	0	root	_	_
 3	and	and	CCONJ	CC	_	5	cc	_	_
 4	pre-Columbian	pre-columbian	ADJ	JJ	Degree=Pos	5	amod	_	_
-5	history	history	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+5	history	history	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -1916,7 +1941,7 @@
 # sent_id = 1
 # text = European settlements
 1	European	european	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	settlements	settlement	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	settlements	settlement	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -2819,7 +2844,7 @@
 # text = Independence and expansion
 1	Independence	independence	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	expansion	expansion	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	expansion	expansion	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3558,7 +3583,7 @@
 2	War	war	NOUN	NN	Number=Sing	5	compound	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
 4	Reconstruction	reconstruction	NOUN	NN	Number=Sing	2	conj	_	_
-5	era	era	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+5	era	era	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4029,7 +4054,7 @@
 4	expansion	expansion	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 5	,	,	PUNCT	,	_	7	punct	_	_
 6	and	and	CCONJ	CC	_	7	cc	_	_
-7	industrialization	industrialization	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+7	industrialization	industrialization	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4504,7 +4529,7 @@
 8	and	and	CCONJ	CC	_	10	cc	_	_
 9	World	World	PROPN	NNP	Number=Sing	10	compound	_	_
 10	War	War	PROPN	NNP	Number=Sing	3	conj	_	_
-11	II	II	PROPN	NNP	Number=Sing	10	nummod	_	SpacesAfter=\n
+11	II	II	PROPN	NNP	Number=Sing	10	nummod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5115,7 +5140,7 @@
 3	and	and	CCONJ	CC	_	6	cc	_	_
 4	late	late	ADJ	JJ	Degree=Pos	6	amod	_	_
 5	20th	20th	ADJ	JJ	Degree=Pos|NumType=Ord	6	amod	_	_
-6	century	century	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+6	century	century	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6012,7 +6037,7 @@
 # sent_id = 1
 # text = 21st century
 1	21st	21st	ADJ	JJ	Degree=Pos|NumType=Ord	2	amod	_	_
-2	century	century	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	century	century	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -6438,7 +6463,7 @@
 # newpar
 # sent_id = 1
 # text = Geography
-1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Geography	geography	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7169,7 +7194,7 @@
 # newpar
 # sent_id = 1
 # text = Biodiversity
-1	Biodiversity	biodiversity	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Biodiversity	biodiversity	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7551,7 +7576,7 @@
 # text = Government and politics
 1	Government	government	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpacesAfter=\n
+3	politics	politics	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7624,30 +7649,29 @@
 24	"	"	PUNCT	''	_	5	punct	_	_
 
 # sent_id = 4
-# text = Since 2015, the U.S. has ranked 25th on the Democracy Index, and is described as a "flawed democracy".
-1	Since	since	ADP	IN	_	2	case	_	_
-2	2015	2015	NUM	CD	NumType=Card	7	obl	_	SpaceAfter=No
-3	,	,	PUNCT	,	_	7	punct	_	_
+# text = In 2021, the U.S. ranked 26th on the Democracy Index, and is described as a "flawed democracy".
+1	In	in	ADP	IN	_	2	case	_	_
+2	2021	2021	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	6	punct	_	_
 4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
-5	U.S.	U.S.	PROPN	NNP	Number=Sing	7	nsubj	_	_
-6	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	ranked	rank	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-8	25th	25th	ADJ	NN	Number=Sing	7	obj	_	_
-9	on	on	ADP	IN	_	12	case	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
-11	Democracy	Democracy	PROPN	NNP	Number=Sing	12	compound	_	_
-12	Index	Index	PROPN	NNP	Number=Sing	7	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	16	punct	_	_
-14	and	and	CCONJ	CC	_	16	cc	_	_
-15	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
-16	described	describe	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	7	conj	_	_
-17	as	as	ADP	IN	_	21	case	_	_
-18	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	_
-19	"	"	PUNCT	``	_	21	punct	_	SpaceAfter=No
-20	flawed	flaw	ADJ	VBN	Tense=Past|VerbForm=Part	21	amod	_	_
-21	democracy	democracy	NOUN	NN	Number=Sing	16	obl	_	SpaceAfter=No
-22	"	"	PUNCT	''	_	21	punct	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	7	punct	_	_
+5	U.S.	U.S.	PROPN	NNP	Number=Sing	6	nsubj	_	_
+6	ranked	rank	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+7	26th	26th	ADJ	JJ	Degree=Pos|NumType=Ord	6	xcomp	_	_
+8	on	on	ADP	IN	_	11	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+10	Democracy	Democracy	PROPN	NNP	Number=Sing	11	compound	_	_
+11	Index	Index	PROPN	NNP	Number=Sing	6	obl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
+15	described	describe	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	6	conj	_	_
+16	as	as	ADP	IN	_	20	case	_	_
+17	a	a	DET	DT	Definite=Ind|PronType=Art	20	det	_	_
+18	"	"	PUNCT	``	_	20	punct	_	SpaceAfter=No
+19	flawed	flaw	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	democracy	democracy	NOUN	NN	Number=Sing	15	obl	_	SpaceAfter=No
+21	"	"	PUNCT	''	_	20	punct	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 5
 # text = On Transparency International's 2019 Corruption
@@ -8191,7 +8215,7 @@
 # sent_id = 1
 # text = Political divisions
 1	Political	political	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	divisions	division	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8540,7 +8564,7 @@
 # text = Parties and elections
 1	Parties	party	NOUN	NNS	Number=Plur	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	elections	election	NOUN	NNS	Number=Plur	1	conj	_	SpacesAfter=\n
+3	elections	election	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9001,7 +9025,7 @@
 # sent_id = 1
 # text = Foreign relations
 1	Foreign	foreign	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+2	relations	relation	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9147,7 +9171,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = The United States has a "Special Relationship" with the United Kingdom and strong ties with Canada, India, Australia, New Zealand, the Philippines, Japan, South Korea, Israel, and several European Union countries, including France, Italy, Germany, Spain, and Poland.
+# text = The United States has a "Special Relationship" with the United Kingdom and strong ties with Canada, Australia, New Zealand, the Philippines, Japan, South Korea, Israel, and several European Union countries, including France, Italy, Germany, Spain, and Poland.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	United	United	PROPN	NNP	Number=Sing	3	compound	_	_
 3	States	States	PROPN	NNP	Number=Sing	4	nsubj	_	_
@@ -9167,41 +9191,39 @@
 17	with	with	ADP	IN	_	18	case	_	_
 18	Canada	Canada	PROPN	NNP	Number=Sing	16	nmod	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	20	punct	_	_
-20	India	India	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	22	punct	_	_
-22	Australia	Australia	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	25	punct	_	_
-24	New	New	PROPN	NNP	Number=Sing	25	compound	_	_
-25	Zealand	Zealand	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	28	punct	_	_
-27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
-28	Philippines	Philippines	PROPN	NNPS	Number=Plur	18	conj	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	30	punct	_	_
-30	Japan	Japan	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	33	punct	_	_
-32	South	South	PROPN	NNP	Number=Sing	33	compound	_	_
-33	Korea	Korea	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	35	punct	_	_
-35	Israel	Israel	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	41	punct	_	_
-37	and	and	CCONJ	CC	_	41	cc	_	_
-38	several	several	ADJ	JJ	Degree=Pos	41	amod	_	_
-39	European	European	ADJ	JJ	Degree=Pos	40	amod	_	_
-40	Union	Union	PROPN	NNP	Number=Sing	41	compound	_	_
-41	countries	country	NOUN	NNS	Number=Plur	18	conj	_	SpaceAfter=No
-42	,	,	PUNCT	,	_	41	punct	_	_
-43	including	include	VERB	VBG	VerbForm=Ger	44	case	_	_
-44	France	France	PROPN	NNP	Number=Sing	41	nmod	_	SpaceAfter=No
+20	Australia	Australia	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	New	New	PROPN	NNP	Number=Sing	23	compound	_	_
+23	Zealand	Zealand	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	Philippines	Philippines	PROPN	NNPS	Number=Plur	18	conj	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	Japan	Japan	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	31	punct	_	_
+30	South	South	PROPN	NNP	Number=Sing	31	compound	_	_
+31	Korea	Korea	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	33	punct	_	_
+33	Israel	Israel	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	39	punct	_	_
+35	and	and	CCONJ	CC	_	39	cc	_	_
+36	several	several	ADJ	JJ	Degree=Pos	39	amod	_	_
+37	European	European	ADJ	JJ	Degree=Pos	38	amod	_	_
+38	Union	Union	PROPN	NNP	Number=Sing	39	compound	_	_
+39	countries	country	NOUN	NNS	Number=Plur	18	conj	_	SpaceAfter=No
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	including	include	VERB	VBG	VerbForm=Ger	42	case	_	_
+42	France	France	PROPN	NNP	Number=Sing	39	nmod	_	SpaceAfter=No
+43	,	,	PUNCT	,	_	44	punct	_	_
+44	Italy	Italy	PROPN	NNP	Number=Sing	42	conj	_	SpaceAfter=No
 45	,	,	PUNCT	,	_	46	punct	_	_
-46	Italy	Italy	PROPN	NNP	Number=Sing	44	conj	_	SpaceAfter=No
+46	Germany	Germany	PROPN	NNP	Number=Sing	42	conj	_	SpaceAfter=No
 47	,	,	PUNCT	,	_	48	punct	_	_
-48	Germany	Germany	PROPN	NNP	Number=Sing	44	conj	_	SpaceAfter=No
-49	,	,	PUNCT	,	_	50	punct	_	_
-50	Spain	Spain	PROPN	NNP	Number=Sing	44	conj	_	SpaceAfter=No
-51	,	,	PUNCT	,	_	53	punct	_	_
-52	and	and	CCONJ	CC	_	53	cc	_	_
-53	Poland	Poland	PROPN	NNP	Number=Sing	44	conj	_	SpaceAfter=No
-54	.	.	PUNCT	.	_	4	punct	_	_
+48	Spain	Spain	PROPN	NNP	Number=Sing	42	conj	_	SpaceAfter=No
+49	,	,	PUNCT	,	_	51	punct	_	_
+50	and	and	CCONJ	CC	_	51	cc	_	_
+51	Poland	Poland	PROPN	NNP	Number=Sing	42	conj	_	SpaceAfter=No
+52	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 2
 # text = It works closely with fellow NATO members on military and security issues and with its neighbors through the Organization of American States and free trade agreements such as the trilateral United States–Mexico–Canada Agreement.
@@ -9303,7 +9325,7 @@
 # sent_id = 1
 # text = Government finance
 1	Government	government	NOUN	NN	Number=Sing	2	compound	_	_
-2	finance	finance	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	finance	finance	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9699,7 +9721,7 @@
 # newpar
 # sent_id = 1
 # text = Military
-1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Military	military	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10332,7 +10354,7 @@
 1	Law	law	NOUN	NN	Number=Sing	2	compound	_	_
 2	enforcement	enforcement	NOUN	NN	Number=Sing	0	root	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
-4	crime	crime	NOUN	NN	Number=Sing	2	conj	_	SpacesAfter=\n
+4	crime	crime	NOUN	NN	Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10507,6 +10529,73 @@
 22	criminal	criminal	ADJ	JJ	Degree=Pos	23	amod	_	_
 23	courts	court	NOUN	NNS	Number=Plur	18	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = english-ewt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = A cross-sectional analysis of the World Health Organization Mortality Database from 2010 showed that United States homicide rates "were 7.0 times higher than in other high-income countries, driven by a gun homicide rate that was 25.2 times higher."
+1	A	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	SpacesBefore=\n
+2	cross-sectional	cross-sectional	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	analysis	analysis	NOUN	NN	Number=Sing	13	nsubj	_	_
+4	of	of	ADP	IN	_	10	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+6	World	World	PROPN	NNP	Number=Sing	8	compound	_	_
+7	Health	Health	PROPN	NNP	Number=Sing	8	compound	_	_
+8	Organization	Organization	PROPN	NNP	Number=Sing	10	compound	_	_
+9	Mortality	Mortality	PROPN	NNP	Number=Sing	10	compound	_	_
+10	Database	Database	PROPN	NNP	Number=Sing	3	nmod	_	_
+11	from	from	ADP	IN	_	12	case	_	_
+12	2010	2010	NUM	CD	NumType=Card	10	nmod	_	_
+13	showed	show	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+14	that	that	SCONJ	IN	_	23	mark	_	_
+15	United	United	PROPN	NNP	Number=Sing	16	compound	_	_
+16	States	States	PROPN	NNP	Number=Sing	18	compound	_	_
+17	homicide	homicide	NOUN	NN	Number=Sing	18	compound	_	_
+18	rates	rate	NOUN	NNS	Number=Plur	23	nsubj	_	_
+19	"	"	PUNCT	``	_	23	punct	_	SpaceAfter=No
+20	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	cop	_	_
+21	7.0	7.0	NUM	CD	NumType=Card	22	nummod	_	_
+22	times	time	NOUN	NNS	Number=Plur	23	obl:npmod	_	_
+23	higher	higher	ADJ	JJR	Degree=Cmp	13	ccomp	_	_
+24	than	than	ADP	IN	_	30	case	_	_
+25	in	in	ADP	IN	_	30	case	_	_
+26	other	other	ADJ	JJ	Degree=Pos	30	amod	_	_
+27	high	high	ADJ	JJ	Degree=Pos	29	amod	_	SpaceAfter=No
+28	-	-	PUNCT	HYPH	_	29	punct	_	SpaceAfter=No
+29	income	income	NOUN	NN	Number=Sing	30	compound	_	_
+30	countries	country	NOUN	NNS	Number=Plur	23	obl	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	23	punct	_	_
+32	driven	drive	VERB	VBN	Tense=Past|VerbForm=Part	30	acl	_	_
+33	by	by	ADP	IN	_	37	case	_	_
+34	a	a	DET	DT	Definite=Ind|PronType=Art	37	det	_	_
+35	gun	gun	NOUN	NN	Number=Sing	37	compound	_	_
+36	homicide	homicide	NOUN	NN	Number=Sing	37	compound	_	_
+37	rate	rate	NOUN	NN	Number=Sing	32	obl	_	_
+38	that	that	PRON	WDT	PronType=Rel	42	nsubj	_	_
+39	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	cop	_	_
+40	25.2	25.2	NUM	CD	NumType=Card	41	nummod	_	_
+41	times	time	NOUN	NNS	Number=Plur	42	obl:npmod	_	_
+42	higher	higher	ADJ	JJR	Degree=Cmp	37	acl:relcl	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	13	punct	_	SpaceAfter=No
+44	"	"	PUNCT	''	_	13	punct	_	_
+
+# sent_id = 2
+# text = In 2016, the U.S. murder rate was 5.4 per 100,000.
+1	In	in	ADP	IN	_	2	case	_	_
+2	2016	2016	NUM	CD	NumType=Card	9	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	9	punct	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+5	U.S.	U.S.	PROPN	NNP	Number=Sing	7	compound	_	_
+6	murder	murder	NOUN	NN	Number=Sing	7	compound	_	_
+7	rate	rate	NOUN	NN	Number=Sing	9	nsubj	_	_
+8	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
+9	5.4	5.4	NUM	CD	NumType=Card	0	root	_	_
+10	per	per	ADP	IN	_	11	case	_	_
+11	100,000	100,000	NUM	CD	NumType=Card	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	9	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10971,7 +11060,7 @@
 # newpar
 # sent_id = 1
 # text = Economy
-1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Economy	economy	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11022,24 +11111,25 @@
 40	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = 2
-# text = In January 2, 2022 the United States had a national debt of $30 trillion.
-1	In	in	ADP	IN	_	2	case	_	_
-2	January	January	PROPN	NNP	Number=Sing	9	obl	_	_
+# text = On January 2, 2022, the United States had a national debt of $30 trillion.
+1	On	on	ADP	IN	_	2	case	_	_
+2	January	January	PROPN	NNP	Number=Sing	10	obl	_	_
 3	2	2	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	2	punct	_	_
-5	2022	2022	NUM	CD	NumType=Card	2	nummod	_	_
-6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-7	United	United	PROPN	NNP	Number=Sing	8	compound	_	_
-8	States	States	PROPN	NNP	Number=Sing	9	nsubj	_	_
-9	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-10	a	a	DET	DT	Definite=Ind|PronType=Art	12	det	_	_
-11	national	national	ADJ	JJ	Degree=Pos	12	amod	_	_
-12	debt	debt	NOUN	NN	Number=Sing	9	obj	_	_
-13	of	of	ADP	IN	_	14	case	_	_
-14	$	$	SYM	$	_	12	nmod	_	SpaceAfter=No
-15	30	30	NUM	CD	NumType=Card	16	compound	_	_
-16	trillion	trillion	NUM	CD	NumType=Card	14	nummod	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+5	2022	2022	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	10	punct	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	United	United	PROPN	NNP	Number=Sing	9	compound	_	_
+9	States	States	PROPN	NNP	Number=Sing	10	nsubj	_	_
+10	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+11	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+12	national	national	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	debt	debt	NOUN	NN	Number=Sing	10	obj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	$	$	SYM	$	_	13	nmod	_	SpaceAfter=No
+16	30	30	NUM	CD	NumType=Card	17	compound	_	_
+17	trillion	trillion	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11404,7 +11494,7 @@
 # text = Science and technology
 1	Science	science	NOUN	NN	Number=Sing	0	root	_	_
 2	and	and	CCONJ	CC	_	3	cc	_	_
-3	technology	technology	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+3	technology	technology	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -11973,7 +12063,7 @@
 3	wealth	wealth	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	6	punct	_	_
 5	and	and	CCONJ	CC	_	6	cc	_	_
-6	poverty	poverty	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+6	poverty	poverty	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -12571,37 +12661,34 @@
 52	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 3
-# text = As of June 2018[update], 40 million people, roughly 12.7% of the U.S. population, were living in poverty, including 13.3 million children.
+# text = As of June 2018, 40 million people, roughly 12.7% of the U.S. population, were living in poverty, including 13.3 million children.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	June	June	PROPN	NNP	Number=Sing	22	obl	_	SpacesAfter= 
+3	June	June	PROPN	NNP	Number=Sing	19	obl	_	SpacesAfter= 
 4	2018	2018	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
-5	[	[	PUNCT	-LRB-	_	6	punct	_	SpaceAfter=No
-6	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-7	]	]	PUNCT	-RRB-	_	6	punct	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	22	punct	_	_
-9	40	40	NUM	CD	NumType=Card	10	compound	_	_
-10	million	million	NUM	CD	NumType=Card	11	nummod	_	_
-11	people	people	NOUN	NNS	Number=Plur	22	nsubj	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	11	punct	_	_
-13	roughly	roughly	ADV	RB	_	15	advmod	_	_
-14	12.7	12.7	NUM	CD	NumType=Card	15	nummod	_	SpaceAfter=No
-15	%	%	SYM	NN	Number=Sing	11	appos	_	_
-16	of	of	ADP	IN	_	19	case	_	_
-17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
-18	U.S.	U.S.	PROPN	NNP	Number=Sing	19	compound	_	_
-19	population	population	NOUN	NN	Number=Sing	15	nmod	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	22	punct	_	_
-21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux	_	_
-22	living	live	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	_
-23	in	in	ADP	IN	_	24	case	_	_
-24	poverty	poverty	NOUN	NN	Number=Sing	22	obl	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	22	punct	_	_
-26	including	include	VERB	VBG	VerbForm=Ger	29	case	_	_
-27	13.3	13.3	NUM	CD	NumType=Card	28	compound	_	_
-28	million	million	NUM	CD	NumType=Card	29	nummod	_	_
-29	children	child	NOUN	NNS	Number=Plur	22	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	22	punct	_	_
+5	,	,	PUNCT	,	_	19	punct	_	_
+6	40	40	NUM	CD	NumType=Card	7	compound	_	_
+7	million	million	NUM	CD	NumType=Card	8	nummod	_	_
+8	people	people	NOUN	NNS	Number=Plur	19	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	roughly	roughly	ADV	RB	_	12	advmod	_	_
+11	12.7	12.7	NUM	CD	NumType=Card	12	nummod	_	SpaceAfter=No
+12	%	%	SYM	NN	Number=Sing	8	appos	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	U.S.	U.S.	PROPN	NNP	Number=Sing	16	compound	_	_
+16	population	population	NOUN	NN	Number=Sing	12	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	aux	_	_
+19	living	live	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	_
+20	in	in	ADP	IN	_	21	case	_	_
+21	poverty	poverty	NOUN	NN	Number=Sing	19	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	19	punct	_	_
+23	including	include	VERB	VBG	VerbForm=Ger	26	case	_	_
+24	13.3	13.3	NUM	CD	NumType=Card	25	compound	_	_
+25	million	million	NUM	CD	NumType=Card	26	nummod	_	_
+26	children	child	NOUN	NNS	Number=Plur	19	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	19	punct	_	_
 
 # sent_id = 4
 # text = Of those impoverished, 18.5 million live in deep poverty (family income below one-half of the poverty threshold) and over five million live "in 'Third World' conditions".
@@ -12769,7 +12856,7 @@
 # newpar
 # sent_id = 1
 # text = Transportation
-1	Transportation	transportation	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Transportation	transportation	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13094,7 +13181,7 @@
 # newpar
 # sent_id = 1
 # text = Energy
-1	Energy	energy	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Energy	energy	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13102,28 +13189,25 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = As of 2019[update], the United States receives approximately 80% of its energy from fossil fuels.
+# text = As of 2019, the United States receives approximately 80% of its energy from fossil fuels.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2019	2019	NUM	CD	NumType=Card	11	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	11	punct	_	_
-8	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
-9	United	United	PROPN	NNP	Number=Sing	10	compound	_	_
-10	States	States	PROPN	NNP	Number=Sing	11	nsubj	_	_
-11	receives	receive	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-12	approximately	approximately	ADV	RB	_	13	advmod	_	_
-13	80	80	NUM	CD	NumType=Card	14	nummod	_	SpaceAfter=No
-14	%	%	SYM	NN	Number=Sing	11	obj	_	_
-15	of	of	ADP	IN	_	17	case	_	_
-16	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
-17	energy	energy	NOUN	NN	Number=Sing	14	nmod	_	_
-18	from	from	ADP	IN	_	20	case	_	_
-19	fossil	fossil	NOUN	NN	Number=Sing	20	compound	_	_
-20	fuels	fuel	NOUN	NNS	Number=Plur	11	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	11	punct	_	_
+3	2019	2019	NUM	CD	NumType=Card	8	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	8	punct	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+6	United	United	PROPN	NNP	Number=Sing	7	compound	_	_
+7	States	States	PROPN	NNP	Number=Sing	8	nsubj	_	_
+8	receives	receive	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	approximately	approximately	ADV	RB	_	10	advmod	_	_
+10	80	80	NUM	CD	NumType=Card	11	nummod	_	SpaceAfter=No
+11	%	%	SYM	NN	Number=Sing	8	obj	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	energy	energy	NOUN	NN	Number=Sing	11	nmod	_	_
+15	from	from	ADP	IN	_	17	case	_	_
+16	fossil	fossil	NOUN	NN	Number=Sing	17	compound	_	_
+17	fuels	fuel	NOUN	NNS	Number=Plur	8	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = 2
 # text = In 2019, the largest source of the country's energy came from petroleum (36.6%), followed by natural gas (32%), coal (11.4%), renewable sources (11.4%) and nuclear power (8.4%).
@@ -13233,7 +13317,7 @@
 # newpar
 # sent_id = 1
 # text = Demographics
-1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Demographics	demographic	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13242,7 +13326,7 @@
 # newpar
 # sent_id = 1
 # text = Population
-1	Population	population	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Population	population	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13781,43 +13865,40 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = As of 2018[update], 52% of Americans age 15 and over were married, 6% were widowed, 10% were divorced, and 32% had never been married.
+# text = As of 2018, 52% of Americans age 15 and over were married, 6% were widowed, 10% were divorced, and 32% had never been married.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2018	2018	NUM	CD	NumType=Card	17	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	17	punct	_	_
-8	52	52	NUM	CD	NumType=Card	9	nummod	_	SpaceAfter=No
-9	%	%	SYM	NN	Number=Sing	17	nsubj	_	_
-10	of	of	ADP	IN	_	11	case	_	_
-11	Americans	Americans	PROPN	NNPS	Number=Plur	9	nmod	_	_
-12	age	age	VERB	NN	Number=Sing	9	acl:relcl	_	_
-13	15	15	NUM	CD	NumType=Card	12	obj	_	_
-14	and	and	CCONJ	CC	_	15	cc	_	_
-15	over	over	ADV	RB	_	13	conj	_	_
-16	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	cop	_	_
-17	married	married	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	22	punct	_	_
-19	6	6	NUM	CD	NumType=Card	20	nummod	_	SpaceAfter=No
-20	%	%	SYM	NN	Number=Sing	22	nsubj	_	_
-21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
-22	widowed	widowed	ADJ	JJ	Degree=Pos	17	conj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	27	punct	_	_
-24	10	10	NUM	CD	NumType=Card	25	nummod	_	SpaceAfter=No
-25	%	%	SYM	NN	Number=Sing	27	nsubj	_	_
-26	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	cop	_	_
-27	divorced	divorced	ADJ	JJ	Degree=Pos	17	conj	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	35	punct	_	_
-29	and	and	CCONJ	CC	_	35	cc	_	_
-30	32	32	NUM	CD	NumType=Card	31	nummod	_	SpaceAfter=No
-31	%	%	SYM	NN	Number=Sing	35	nsubj:pass	_	_
-32	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	35	aux	_	_
-33	never	never	ADV	RB	_	35	advmod	_	_
-34	been	be	AUX	VBN	Tense=Past|VerbForm=Part	35	aux:pass	_	_
-35	married	marry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	17	conj	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	17	punct	_	_
+3	2018	2018	NUM	CD	NumType=Card	14	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	14	punct	_	_
+5	52	52	NUM	CD	NumType=Card	6	nummod	_	SpaceAfter=No
+6	%	%	SYM	NN	Number=Sing	14	nsubj	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	Americans	Americans	PROPN	NNPS	Number=Plur	6	nmod	_	_
+9	age	age	NOUN	NN	Number=Sing	8	appos	_	_
+10	15	15	NUM	CD	NumType=Card	9	nummod	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	over	over	ADV	RB	_	10	conj	_	_
+13	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	cop	_	_
+14	married	married	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	6	6	NUM	CD	NumType=Card	17	nummod	_	SpaceAfter=No
+17	%	%	SYM	NN	Number=Sing	19	nsubj	_	_
+18	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	cop	_	_
+19	widowed	widowed	ADJ	JJ	Degree=Pos	14	conj	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	24	punct	_	_
+21	10	10	NUM	CD	NumType=Card	22	nummod	_	SpaceAfter=No
+22	%	%	SYM	NN	Number=Sing	24	nsubj:pass	_	_
+23	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux:pass	_	_
+24	divorced	divorced	ADJ	JJ	Degree=Pos	14	conj	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	32	punct	_	_
+26	and	and	CCONJ	CC	_	32	cc	_	_
+27	32	32	NUM	CD	NumType=Card	28	nummod	_	SpaceAfter=No
+28	%	%	SYM	NN	Number=Sing	32	nsubj:pass	_	_
+29	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+30	never	never	ADV	RB	_	32	advmod	_	_
+31	been	be	AUX	VBN	Tense=Past|VerbForm=Part	32	aux:pass	_	_
+32	married	marry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	14	conj	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = 2
 # text = As of 2020, the total fertility rate stood at 1.64 children per woman.
@@ -13911,7 +13992,7 @@
 # newpar
 # sent_id = 1
 # text = Language
-1	Language	language	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Language	language	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14267,7 +14348,7 @@
 # newpar
 # sent_id = 1
 # text = Religion
-1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Religion	religion	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14686,7 +14767,7 @@
 # newpar
 # sent_id = 1
 # text = Health
-1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Health	health	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15406,7 +15487,7 @@
 30	legacy	legacy	NOUN	NN	Number=Sing	31	nsubj	_	_
 31	remains	remain	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
 32	controversial	controversial	ADJ	JJ	Degree=Pos	31	xcomp	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\s\n
+33	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15474,7 +15555,7 @@
 # newpar
 # sent_id = 1
 # text = Education
-1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Education	education	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -15591,7 +15672,7 @@
 14	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 2
-# text = 3.4% of children are homeschooled as of 2012[update].
+# text = 3.4% of children are homeschooled as of 2012.
 1	3.4	3.4	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
 2	%	%	SYM	NN	Number=Sing	6	nsubj:pass	_	_
 3	of	of	ADP	IN	_	4	case	_	_
@@ -15601,9 +15682,7 @@
 7	as	as	ADP	IN	_	9	case	_	_
 8	of	of	ADP	IN	_	7	fixed	_	_
 9	2012	2012	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
-10	[	[	PUNCT	-LRB-	_	11	punct	_	SpaceAfter=No
-11	update	update	NOUN	NN	Number=Sing	6	parataxis	_	SpaceAfter=No
-12	].	].	PUNCT	.	_	6	punct	_	_
+10	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 3
 # text = The U.S. spends more on education per student than any nation in the world, spending an average of $12,794 per year on public elementary and secondary school students in the 2016–2017 school year.
@@ -15934,7 +16013,7 @@
 # newpar
 # sent_id = 1
 # text = Culture
-1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Culture	culture	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16285,7 +16364,7 @@
 4	,	,	PUNCT	,	_	7	punct	_	_
 5	and	and	CCONJ	CC	_	7	cc	_	_
 6	visual	visual	ADJ	JJ	Degree=Pos	7	amod	_	_
-7	art	art	NOUN	NN	Number=Sing	1	conj	_	SpacesAfter=\n
+7	art	art	NOUN	NN	Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16842,7 +16921,7 @@
 # newpar
 # sent_id = 1
 # text = Food
-1	Food	food	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Food	food	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17083,7 +17162,7 @@
 # newpar
 # sent_id = 1
 # text = Music
-1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Music	Music	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17514,6 +17593,104 @@
 15	music	music	NOUN	NN	Number=Sing	7	conj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Mid-20th-century
+1	Mid-20th-century	mid-20th-century	NOUN	NN	Number=Sing	0	root	_	_
+
+# sent_id = 3
+# text = American pop stars such as Bing Crosby, Frank Sinatra, and Elvis Presley became global celebrities, as have artists of the late 20th century such as Michael Jackson, Prince, Madonna and Whitney Houston.
+1	American	american	ADJ	JJ	Degree=Pos	3	amod	_	_
+2	pop	pop	NOUN	NN	Number=Sing	3	compound	_	_
+3	stars	star	NOUN	NNS	Number=Plur	15	nsubj	_	_
+4	such	such	ADJ	JJ	Degree=Pos	6	case	_	_
+5	as	as	ADP	IN	_	4	fixed	_	_
+6	Bing	Bing	PROPN	NNP	Number=Sing	3	nmod	_	_
+7	Crosby	Crosby	PROPN	NNP	Number=Sing	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	Frank	Frank	PROPN	NNP	Number=Sing	6	conj	_	_
+10	Sinatra	Sinatra	PROPN	NNP	Number=Sing	9	flat	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	Elvis	Elvis	PROPN	NNP	Number=Sing	6	conj	_	_
+14	Presley	Presley	PROPN	NNP	Number=Sing	13	flat	_	_
+15	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+16	global	global	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	celebrities	celebrity	NOUN	NNS	Number=Plur	15	xcomp	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	15	punct	_	_
+19	as	as	SCONJ	IN	_	20	mark	_	_
+20	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	15	advcl	_	_
+21	artists	artist	NOUN	NNS	Number=Plur	20	obj	_	_
+22	of	of	ADP	IN	_	26	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+24	late	late	ADJ	JJ	Degree=Pos	26	amod	_	_
+25	20th	20th	ADJ	JJ	Degree=Pos|NumType=Ord	26	amod	_	_
+26	century	century	NOUN	NN	Number=Sing	21	nmod	_	_
+27	such	such	ADJ	JJ	Degree=Pos	29	case	_	_
+28	as	as	ADP	IN	_	27	fixed	_	_
+29	Michael	Michael	PROPN	NNP	Number=Sing	21	nmod	_	_
+30	Jackson	Jackson	PROPN	NNP	Number=Sing	29	flat	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	32	punct	_	_
+32	Prince	Prince	PROPN	NNP	Number=Sing	29	conj	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	34	punct	_	_
+34	Madonna	Madonna	PROPN	NNP	Number=Sing	29	conj	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	Whitney	Whitney	PROPN	NNP	Number=Sing	29	conj	_	_
+37	Houston	Houston	PROPN	NNP	Number=Sing	36	flat	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = 4
+# text = Popular artists from the mid-1990s to late 2000s include Mariah Carey, Britney Spears, Justin Timberlake, Christina Aguilera and Beyoncé.
+1	Popular	popular	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	artists	artist	NOUN	NNS	Number=Plur	9	nsubj	_	_
+3	from	from	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	mid-1990s	mid-1990	NOUN	NNS	Number=Plur	2	nmod	_	_
+6	to	to	ADP	IN	_	8	case	_	_
+7	late	late	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	2000s	2000	NOUN	NNS	Number=Plur	5	nmod	_	_
+9	include	include	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	Mariah	Mariah	PROPN	NNP	Number=Sing	9	obj	_	_
+11	Carey	Carey	PROPN	NNP	Number=Sing	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	13	punct	_	_
+13	Britney	Britney	PROPN	NNP	Number=Sing	10	conj	_	_
+14	Spears	Spears	PROPN	NNP	Number=Sing	13	flat	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	Justin	Justin	PROPN	NNP	Number=Sing	10	conj	_	_
+17	Timberlake	Timberlake	PROPN	NNP	Number=Sing	16	flat	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	Christina	Christina	PROPN	NNP	Number=Sing	10	conj	_	_
+20	Aguilera	Aguilera	PROPN	NNP	Number=Sing	19	flat	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	Beyoncé	Beyoncé	PROPN	NNP	Number=Sing	10	conj	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 5
+# text = Well-known American singers of the 2010s include Katy Perry, Bruno Mars, Lady Gaga, Taylor Swift and Ariana Grande.
+1	Well	well	ADV	RB	Degree=Pos	3	advmod	_	SpaceAfter=No
+2	-	-	PUNCT	HYPH	_	3	punct	_	SpaceAfter=No
+3	known	know	VERB	VBN	Tense=Past|VerbForm=Part	5	amod	_	_
+4	American	american	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	singers	singer	NOUN	NNS	Number=Plur	9	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	2010s	2010	NOUN	NNS	Number=Plur	5	nmod	_	_
+9	include	include	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	Katy	Katy	PROPN	NNP	Number=Sing	9	obj	_	_
+11	Perry	Perry	PROPN	NNP	Number=Sing	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	13	punct	_	_
+13	Bruno	Bruno	PROPN	NNP	Number=Sing	10	conj	_	_
+14	Mars	Mars	PROPN	NNP	Number=Sing	13	flat	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	Lady	Lady	PROPN	NNP	Number=Sing	10	conj	_	_
+17	Gaga	Gaga	PROPN	NNP	Number=Sing	16	flat	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	Taylor	Taylor	PROPN	NNP	Number=Sing	10	conj	_	_
+20	Swift	Swift	PROPN	NNP	Number=Sing	19	flat	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	Ariana	Ariana	PROPN	NNP	Number=Sing	10	conj	_	_
+23	Grande	Grande	PROPN	NNP	Number=Sing	22	flat	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -17521,7 +17698,7 @@
 # newpar
 # sent_id = 1
 # text = Cinema
-1	Cinema	Cinema	PROPN	NNP	Number=Sing	0	root	_	SpacesAfter=\n
+1	Cinema	Cinema	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17998,7 +18175,7 @@
 # newpar
 # sent_id = 1
 # text = Theater
-1	Theater	theater	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+1	Theater	theater	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18159,7 +18336,7 @@
 # newpar
 # sent_id = 1
 # text = Sports
-1	Sports	sport	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	Sports	sport	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18510,47 +18687,124 @@
 22	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = 3
-# text = As of 2021[update], the United States has won 2,629 medals at the Summer Olympic Games, more than any other country, and 305 in the Winter Olympic Games, the second most behind Norway.
+# text = As of 2021, the United States has won 2,629 medals at the Summer Olympic Games, more than any other country, and 305 in the Winter Olympic Games, the second most behind Norway.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2021	2021	NUM	CD	NumType=Card	12	obl	_	SpaceAfter=No
-4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
-5	update	update	NOUN	NN	Number=Sing	12	parataxis	_	SpaceAfter=No
-6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	12	punct	_	_
-8	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
-9	United	United	PROPN	NNP	Number=Sing	10	compound	_	_
-10	States	States	PROPN	NNP	Number=Sing	12	nsubj	_	_
-11	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-12	won	win	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-13	2,629	2,629	NUM	CD	NumType=Card	14	nummod	_	_
-14	medals	medal	NOUN	NNS	Number=Plur	12	obj	_	_
-15	at	at	ADP	IN	_	19	case	_	_
-16	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
-17	Summer	Summer	PROPN	NNP	Number=Sing	19	compound	_	_
-18	Olympic	Olympic	PROPN	NNP	Number=Sing	19	compound	_	_
-19	Games	Games	PROPN	NNPS	Number=Plur	12	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	more	more	ADJ	JJR	Degree=Cmp	19	amod	_	_
-22	than	than	ADP	IN	_	25	case	_	_
-23	any	any	DET	DT	_	25	det	_	_
-24	other	other	ADJ	JJ	Degree=Pos	25	amod	_	_
-25	country	country	NOUN	NN	Number=Sing	21	obl	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	28	punct	_	_
-27	and	and	CCONJ	CC	_	28	cc	_	_
-28	305	305	NUM	CD	NumType=Card	12	conj	_	_
-29	in	in	ADP	IN	_	33	case	_	_
-30	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
-31	Winter	Winter	PROPN	NNP	Number=Sing	33	compound	_	_
-32	Olympic	Olympic	PROPN	NNP	Number=Sing	33	compound	_	_
-33	Games	Games	PROPN	NNPS	Number=Plur	28	nmod	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	33	punct	_	_
-35	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
-36	second	second	ADJ	JJ	Degree=Pos|NumType=Ord	37	amod	_	_
-37	most	most	ADJ	JJS	Degree=Sup	33	appos	_	_
-38	behind	behind	ADP	IN	_	39	case	_	_
-39	Norway	Norway	PROPN	NNP	Number=Sing	37	obl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+3	2021	2021	NUM	CD	NumType=Card	9	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	9	punct	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+6	United	United	PROPN	NNP	Number=Sing	7	compound	_	_
+7	States	States	PROPN	NNP	Number=Sing	9	nsubj	_	_
+8	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	won	win	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+10	2,629	2,629	NUM	CD	NumType=Card	11	nummod	_	_
+11	medals	medal	NOUN	NNS	Number=Plur	9	obj	_	_
+12	at	at	ADP	IN	_	16	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+14	Summer	Summer	PROPN	NNP	Number=Sing	16	compound	_	_
+15	Olympic	Olympic	PROPN	NNP	Number=Sing	16	compound	_	_
+16	Games	Games	PROPN	NNPS	Number=Plur	9	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	more	more	ADJ	JJR	Degree=Cmp	16	amod	_	_
+19	than	than	ADP	IN	_	22	case	_	_
+20	any	any	DET	DT	_	22	det	_	_
+21	other	other	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	country	country	NOUN	NN	Number=Sing	18	obl	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	305	305	NUM	CD	NumType=Card	9	conj	_	_
+26	in	in	ADP	IN	_	30	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+28	Winter	Winter	PROPN	NNP	Number=Sing	30	compound	_	_
+29	Olympic	Olympic	PROPN	NNP	Number=Sing	30	compound	_	_
+30	Games	Games	PROPN	NNPS	Number=Plur	25	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+33	second	second	ADJ	JJ	Degree=Pos|NumType=Ord	34	amod	_	_
+34	most	most	ADJ	JJS	Degree=Sup	30	appos	_	_
+35	behind	behind	ADP	IN	_	36	case	_	_
+36	Norway	Norway	PROPN	NNP	Number=Sing	34	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = While most major U.S. sports such as baseball and American football have evolved out of European practices, basketball, volleyball, skateboarding, and snowboarding are American inventions, some of which have become popular worldwide.
+1	While	while	SCONJ	IN	_	13	mark	_	_
+2	most	most	ADJ	JJS	Degree=Sup	5	amod	_	_
+3	major	major	ADJ	JJ	Degree=Pos	5	amod	_	_
+4	U.S.	U.S.	PROPN	NNP	Number=Sing	5	compound	_	_
+5	sports	sport	NOUN	NNS	Number=Plur	13	nsubj	_	_
+6	such	such	ADJ	JJ	Degree=Pos	8	case	_	_
+7	as	as	ADP	IN	_	6	fixed	_	_
+8	baseball	baseball	NOUN	NN	Number=Sing	5	nmod	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	American	american	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	football	football	NOUN	NN	Number=Sing	8	conj	_	_
+12	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	evolved	evolve	VERB	VBN	Tense=Past|VerbForm=Part	29	advcl	_	_
+14	out	out	ADP	IN	_	17	case	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	European	european	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	practices	practice	NOUN	NNS	Number=Plur	13	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	29	punct	_	_
+19	basketball	basketball	NOUN	NN	Number=Sing	29	nsubj	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	volleyball	volleyball	NOUN	NN	Number=Sing	19	conj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	skateboarding	skateboarding	NOUN	NN	Number=Sing	19	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	snowboarding	snowboarding	NOUN	NN	Number=Sing	19	conj	_	_
+27	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	29	cop	_	_
+28	American	american	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	inventions	invention	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	some	some	DET	DT	_	35	nsubj	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	which	which	PRON	WDT	PronType=Int	31	nmod	_	_
+34	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	35	aux	_	_
+35	become	become	VERB	VBN	Tense=Past|VerbForm=Part	29	acl:relcl	_	_
+36	popular	popular	ADJ	JJ	Degree=Pos	35	xcomp	_	_
+37	worldwide	worldwide	ADV	RB	_	36	advmod	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	29	punct	_	_
+
+# sent_id = 5
+# text = Lacrosse and surfing arose from Native American and Native Hawaiian activities that predate Western contact.
+1	Lacrosse	lacrosse	NOUN	NN	Number=Sing	4	nsubj	_	_
+2	and	and	CCONJ	CC	_	3	cc	_	_
+3	surfing	surfing	NOUN	NN	Number=Sing	1	conj	_	_
+4	arose	arise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	from	from	ADP	IN	_	11	case	_	_
+6	Native	native	ADJ	JJ	Degree=Pos	11	amod	_	_
+7	American	american	ADJ	JJ	Degree=Pos	11	amod	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	Native	native	ADJ	JJ	Degree=Pos	7	conj	_	_
+10	Hawaiian	hawaiian	ADJ	JJ	Degree=Pos	7	conj	_	_
+11	activities	activity	NOUN	NNS	Number=Plur	4	obl	_	_
+12	that	that	PRON	WDT	PronType=Rel	13	nsubj	_	_
+13	predate	predate	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+14	Western	western	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	contact	contact	NOUN	NN	Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 6
+# text = The most-watched individual sports are golf and auto racing, particularly NASCAR and IndyCar.
+1	The	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+2	most	most	ADV	RBS	_	4	advmod	_	SpaceAfter=No
+3	-	-	PUNCT	HYPH	_	4	punct	_	SpaceAfter=No
+4	watched	watch	VERB	VBN	Tense=Past|VerbForm=Part	6	amod	_	_
+5	individual	individual	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	sports	sport	NOUN	NNS	Number=Plur	8	nsubj	_	_
+7	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	golf	golf	NOUN	NN	Number=Sing	0	root	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	auto	auto	NOUN	NN	Number=Sing	11	compound	_	_
+11	racing	racing	NOUN	NN	Number=Sing	8	conj	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	8	punct	_	_
+13	particularly	particularly	ADV	RB	_	14	advmod	_	_
+14	NASCAR	NASCAR	PROPN	NNP	Number=Sing	8	appos	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	IndyCar	IndYcar	PROPN	NNP	Number=Sing	14	conj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18560,7 +18814,7 @@
 # sent_id = 1
 # text = Mass media
 1	Mass	mass	NOUN	NN	Number=Sing	2	compound	_	_
-2	media	media	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	media	media	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18783,40 +19037,37 @@
 27	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 7
-# text = As of September 30, 2014[update], there are 15,433 licensed full-power radio stations in the U.S. according to the U.S. Federal Communications Commission (FCC).
+# text = As of September 30, 2014, there are 15,433 licensed full-power radio stations in the U.S. according to the U.S. Federal Communications Commission (FCC).
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	September	September	PROPN	NNP	Number=Sing	12	obl	_	SpacesAfter= 
+3	September	September	PROPN	NNP	Number=Sing	9	obl	_	SpacesAfter= 
 4	30	30	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
 5	,	,	PUNCT	,	_	3	punct	_	_
 6	2014	2014	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
-7	[	[	PUNCT	-LRB-	_	8	punct	_	SpaceAfter=No
-8	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
-9	]	]	PUNCT	-RRB-	_	8	punct	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	12	punct	_	_
-11	there	there	PRON	EX	_	12	expl	_	_
-12	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	15,433	15,433	NUM	CD	NumType=Card	19	nummod	_	_
-14	licensed	license	VERB	VBN	Tense=Past|VerbForm=Part	19	amod	_	_
-15	full	full	ADJ	JJ	Degree=Pos	17	amod	_	SpaceAfter=No
-16	-	-	PUNCT	HYPH	_	17	punct	_	SpaceAfter=No
-17	power	power	NOUN	NN	Number=Sing	19	compound	_	_
-18	radio	radio	NOUN	NN	Number=Sing	19	compound	_	_
-19	stations	station	NOUN	NNS	Number=Plur	12	nsubj	_	_
-20	in	in	ADP	IN	_	22	case	_	_
-21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
-22	U.S.	U.S.	PROPN	NNP	Number=Sing	19	nmod	_	_
-23	according	accord	VERB	VBG	VerbForm=Ger	29	case	_	_
-24	to	to	ADP	IN	_	23	fixed	_	_
-25	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
-26	U.S.	U.S.	PROPN	NNP	Number=Sing	29	compound	_	_
-27	Federal	Federal	PROPN	NNP	Number=Sing	28	compound	_	_
-28	Communications	Communications	PROPN	NNPS	Number=Plur	29	compound	_	_
-29	Commission	Commission	PROPN	NNP	Number=Sing	12	obl	_	_
-30	(	(	PUNCT	-LRB-	_	31	punct	_	SpaceAfter=No
-31	FCC	FCC	PROPN	NNP	Number=Sing	29	appos	_	SpaceAfter=No
-32	)	)	PUNCT	-RRB-	_	31	punct	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+7	,	,	PUNCT	,	_	9	punct	_	_
+8	there	there	PRON	EX	_	9	expl	_	_
+9	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	15,433	15,433	NUM	CD	NumType=Card	16	nummod	_	_
+11	licensed	license	VERB	VBN	Tense=Past|VerbForm=Part	16	amod	_	_
+12	full	full	ADJ	JJ	Degree=Pos	14	amod	_	SpaceAfter=No
+13	-	-	PUNCT	HYPH	_	14	punct	_	SpaceAfter=No
+14	power	power	NOUN	NN	Number=Sing	16	compound	_	_
+15	radio	radio	NOUN	NN	Number=Sing	16	compound	_	_
+16	stations	station	NOUN	NNS	Number=Plur	9	nsubj	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	U.S.	U.S.	PROPN	NNP	Number=Sing	16	nmod	_	_
+20	according	accord	VERB	VBG	VerbForm=Ger	26	case	_	_
+21	to	to	ADP	IN	_	20	fixed	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+23	U.S.	U.S.	PROPN	NNP	Number=Sing	26	compound	_	_
+24	Federal	Federal	PROPN	NNP	Number=Sing	25	compound	_	_
+25	Communications	Communications	PROPN	NNPS	Number=Plur	26	compound	_	_
+26	Commission	Commission	PROPN	NNP	Number=Sing	9	obl	_	_
+27	(	(	PUNCT	-LRB-	_	28	punct	_	SpaceAfter=No
+28	FCC	FCC	PROPN	NNP	Number=Sing	26	appos	_	SpaceAfter=No
+29	)	)	PUNCT	-RRB-	_	28	punct	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19087,7 +19338,7 @@
 # sent_id = 1
 # text = See also
 1	See	see	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
-2	also	also	ADV	RB	_	1	advmod	_	SpacesAfter=\n
+2	also	also	ADV	RB	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19096,7 +19347,7 @@
 # newpar
 # sent_id = 1
 # text = Notes
-1	Notes	note	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\n
+1	Notes	note	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19105,7 +19356,7 @@
 # newpar
 # sent_id = 1
 # text = References
-1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
+1	References	reference	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19115,7 +19366,7 @@
 # sent_id = 1
 # text = Further reading
 1	Further	further	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	reading	reading	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19135,15 +19386,5 @@
 # sent_id = 1
 # text = External links
 1	External	external	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigation menu
-1	Navigation	navigation	NOUN	NN	Number=Sing	2	compound	_	_
-2	menu	menu	NOUN	NN	Number=Sing	0	root	_	SpacesAfter=\n
+2	links	link	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
 

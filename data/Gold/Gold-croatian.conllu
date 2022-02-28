@@ -1,5 +1,3 @@
-# https://hr.wikipedia.org/wiki/Zlato
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Zlato – Wikipedija
 1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	–	–	PUNCT	Z	_	1	punct	_	_
-3	Wikipedija	wikipedija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Zlato
-1	Zlato	zlato	ADV	Rgp	Degree=Pos	0	root	_	SpacesAfter=\n
+3	Wikipedija	wikipedija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -40,13 +29,23 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 1 pri standardnom tlaku i temperaturi
+# text = 1 pri standardnom tlaku i temperaturi 2 pri konstantnom tlaku ili volumenu 3 pri standardnom tlaku
 1	1	1	NUM	Mdc	NumType=Card	0	root	_	_
 2	pri	pri	ADP	Sl	Case=Loc	4	case	_	_
 3	standardnom	standardan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 4	tlaku	tlak	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	_
 5	i	i	CCONJ	Cc	_	6	cc	_	_
 6	temperaturi	temperatura	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	4	conj	_	SpacesAfter=\n
+7	2	2	NUM	Mdc	NumType=Card	4	nummod	_	_
+8	pri	pri	ADP	Sl	Case=Loc	10	case	_	_
+9	konstantnom	konstantan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	tlaku	tlak	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	4	nmod	_	_
+11	ili	ili	CCONJ	Cc	_	12	cc	_	_
+12	volumenu	volumen	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	10	conj	_	SpacesAfter=\n
+13	3	3	NUM	Mdc	NumType=Card	16	nummod	_	_
+14	pri	pri	ADP	Sl	Case=Loc	16	case	_	_
+15	standardnom	standardan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	_
+16	tlaku	tlak	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	10	nmod	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -89,14 +88,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Osobine[uredi | uredi kôd]
+# text = Osobine
 1	Osobine	osobina	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	appos	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -175,6 +168,23 @@
 8	sjajne	sjajan	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
 9	boje	boja	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Zlato je jedan od samo tri obojena metala; uz bakar i cezij.
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+3	jedan	jedan	NUM	Mlcmsn	Case=Nom|Gender=Masc|Number=Sing|NumType=Card	8	nummod	_	_
+4	od	od	ADP	Sg	Case=Gen	8	case	_	_
+5	samo	samo	ADV	Rgp	Degree=Pos	6	advmod	_	_
+6	tri	tri	NUM	Mlc	NumType=Card	8	nummod	_	_
+7	obojena	obojiti	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	metala	metal	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+9	;	;	PUNCT	Z	_	11	punct	_	_
+10	uz	uz	ADP	Sa	Case=Acc	11	case	_	_
+11	bakar	bakar	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	parataxis	_	_
+12	i	i	CCONJ	Cc	_	13	cc	_	_
+13	cezij	cezij	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -484,6 +494,143 @@
 12	zlatotopka	zlatotopka	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	9	appos	_	SpaceAfter=No
 13	“	“	PUNCT	Z	_	2	punct	_	SpacesAfter=\s\n
 
+# sent_id = 2
+# text = Sama klorovodična kiselina ne može otopiti zlato, jer protoni ne mogu oksidirati zlato (redukcijski potencijal mu je pozitivan).
+1	Sama	sam	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+2	klorovodična	klorovodičan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	kiselina	kiselina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+4	ne	ne	PART	Qz	Polarity=Neg	5	advmod	_	_
+5	može	moći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	otopiti	otopiti	VERB	Vmn	VerbForm=Inf	5	xcomp	_	_
+7	zlato	zlato	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	12	punct	_	_
+9	jer	jer	SCONJ	Cs	_	12	mark	_	_
+10	protoni	proton	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	12	nsubj	_	_
+11	ne	ne	PART	Qz	Polarity=Neg	12	advmod	_	_
+12	mogu	moći	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
+13	oksidirati	oksidirati	VERB	Vmn	VerbForm=Inf	12	xcomp	_	_
+14	zlato	zlato	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	_
+15	(	(	PUNCT	Z	_	20	punct	_	SpaceAfter=No
+16	redukcijski	redukcijski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	potencijal	potencijal	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	20	nsubj	_	_
+18	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+19	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
+20	pozitivan	pozitivan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	12	parataxis	_	SpaceAfter=No
+21	)	)	PUNCT	Z	_	20	punct	_	SpaceAfter=No
+22	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 3
+# text = Zato se, uz klorovodičnu kiselinu kao izvor kloridnih aniona, za otapanje zlata koristi još i dušična kiselina koja tada može oksidirati zlato do tetraklorozlatove(III) kiseline (osim te kiseline, otapanjem zlata u zlatotopci nastaju i dušikov(II) i dušikov(IV) oksid).
+1	Zato	zato	ADV	Rgp	Degree=Pos|PronType=Dem	15	advmod	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	15	expl	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	6	punct	_	_
+4	uz	uz	ADP	Sa	Case=Acc	6	case	_	_
+5	klorovodičnu	klorovodičan	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	kiselinu	kiselina	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	15	obl	_	_
+7	kao	kao	SCONJ	Cs	_	8	case	_	_
+8	izvor	izvor	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	_
+9	kloridnih	kloridan	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	10	amod	_	_
+10	aniona	anion	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	6	punct	_	_
+12	za	za	ADP	Sa	Case=Acc	13	case	_	_
+13	otapanje	otapanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	15	obl	_	_
+14	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	13	nmod	_	_
+15	koristi	koristiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+16	još	još	ADV	Rgp	Degree=Pos	19	advmod	_	_
+17	i	i	PART	Qo	_	19	discourse	_	_
+18	dušična	dušičan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	_
+19	kiselina	kiselina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	_
+20	koja	koji	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	22	nsubj	_	_
+21	tada	tada	ADV	Rgp	Degree=Pos|PronType=Dem	22	advmod	_	_
+22	može	moći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl	_	_
+23	oksidirati	oksidirati	VERB	Vmn	VerbForm=Inf	22	xcomp	_	_
+24	zlato	zlato	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	23	obj	_	_
+25	do	do	ADP	Sg	Case=Gen	30	case	_	_
+26	tetraklorozlatove	tetraklorozlat	ADJ	Aspfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	30	amod	_	SpaceAfter=No
+27	(	(	PUNCT	Z	_	28	punct	_	SpaceAfter=No
+28	III	III	ADJ	Mro	NumType=Ord	26	conj	_	SpaceAfter=No
+29	)	)	PUNCT	Z	_	28	punct	_	_
+30	kiseline	kiselina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	23	obl	_	_
+31	(	(	PUNCT	Z	_	40	punct	_	SpaceAfter=No
+32	osim	osim	ADP	Sg	Case=Gen	34	case	_	_
+33	te	taj	DET	Pd-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	34	det	_	_
+34	kiseline	kiselina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	40	obl	_	SpaceAfter=No
+35	,	,	PUNCT	Z	_	34	punct	_	_
+36	otapanjem	otapanje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	40	obl	_	_
+37	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	36	nmod	_	_
+38	u	u	ADP	Sl	Case=Loc	39	case	_	_
+39	zlatotopci	zlatotopka	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	40	obl	_	_
+40	nastaju	nastajati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	parataxis	_	_
+41	i	i	CCONJ	Cc	_	42	discourse	_	_
+42	dušikov(	dušik	ADJ	Aspmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Poss=Yes	49	amod	_	SpaceAfter=No
+43	II	II	ADJ	Mro	NumType=Ord	49	amod	_	SpaceAfter=No
+44	)	)	PUNCT	Z	_	43	punct	_	_
+45	i	i	CCONJ	Cc	_	46	cc	_	_
+46	dušikov(	dušik	ADJ	Aspmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Poss=Yes	43	conj	_	SpaceAfter=No
+47	IV	IV	ADJ	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	49	amod	_	SpaceAfter=No
+48	)	)	PUNCT	Z	_	47	punct	_	_
+49	oksid	oksid	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	40	nsubj	_	SpaceAfter=No
+50	)	)	PUNCT	Z	_	40	punct	_	SpaceAfter=No
+51	.	.	PUNCT	Z	_	15	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Sama dušična kiselina također ne može otopiti zlato, jer nedostaje ionâ kojima bi se zlato kompleksiralo.
+1	Sama	sam	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+2	dušična	dušičan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	kiselina	kiselina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+4	također	također	ADV	Rgp	Degree=Pos	6	advmod	_	_
+5	ne	ne	PART	Qz	Polarity=Neg	6	advmod	_	_
+6	može	moći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	otopiti	otopiti	VERB	Vmn	VerbForm=Inf	6	xcomp	_	_
+8	zlato	zlato	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	11	punct	_	_
+10	jer	jer	SCONJ	Cs	_	11	mark	_	_
+11	nedostaje	nedostajati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+12	ionâ	ion	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	11	nsubj	_	_
+13	kojima	koji	DET	Pi-mpi	Case=Ins|Gender=Masc|Number=Plur|PronType=Int,Rel	17	obl	_	_
+14	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
+15	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	17	expl	_	_
+16	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	17	nsubj	_	_
+17	kompleksiralo	kompleksirati	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	12	acl	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 5
+# text = Inače, postoje i druge metode prevođenja zlata u njegove spojeve, poput danas najraširenijeg cijanidnog postupka, kod kojeg se zlato kompleksira cijanidnim anionima, a kao oksidans služi kisik iz zraka.
+1	Inače	inače	ADV	Rgp	Degree=Pos	3	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Z	_	1	punct	_	_
+3	postoje	postojati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	i	i	PART	Qo	_	6	discourse	_	_
+5	druge	drugi	ADJ	Mlofpn	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur	6	amod	_	_
+6	metode	metoda	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	3	nsubj	_	_
+7	prevođenja	prevođenje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+8	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
+9	u	u	ADP	Sa	Case=Acc	11	case	_	_
+10	njegove	njegov	DET	Ps3mpa	Case=Acc|Gender=Masc|Gender[psor]=Masc,Neut|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	_	_
+11	spojeve	spoj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	17	punct	_	_
+13	poput	poput	ADP	Sg	Case=Gen	17	case	_	_
+14	danas	danas	ADV	Rgp	Degree=Pos	15	advmod	_	_
+15	najraširenijeg	raširen	ADJ	Agsmsgy	Case=Gen|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	17	amod	_	_
+16	cijanidnog	cijanidan	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	postupka	postupak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	23	punct	_	_
+19	kod	kod	ADP	Sg	Case=Gen	20	case	_	_
+20	kojeg	koji	DET	Pi-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Int,Rel	23	obl	_	_
+21	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	23	expl	_	_
+22	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	23	nsubj	_	_
+23	kompleksira	kompleksirati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl	_	_
+24	cijanidnim	cijanidan	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	25	amod	_	_
+25	anionima	anion	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	23	obl	_	SpaceAfter=No
+26	,	,	PUNCT	Z	_	30	punct	_	_
+27	a	a	CCONJ	Cc	_	30	cc	_	_
+28	kao	kao	SCONJ	Cs	_	29	case	_	_
+29	oksidans	oksidans	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	30	obl	_	_
+30	služi	služiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
+31	kisik	kisik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	30	nsubj	_	_
+32	iz	iz	ADP	Sg	Case=Gen	33	case	_	_
+33	zraka	zrak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -539,14 +686,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Svojstva[uredi | uredi kôd]
+# text = Svojstva
 1	Svojstva	svojstvo	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -571,6 +712,26 @@
 14	svih	sav	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	15	amod	_	_
 15	elemenata	element	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
 16	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Toplinska provodnost zlata iznosi 75% toplinske provodnosti srebra, a električna provodnost 70% električne provodnosti srebra.
+1	Toplinska	toplinski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	provodnost	provodnost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+3	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
+4	iznosi	iznositi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	75%	75%	SYM	Mds	NumType=Mult	7	nummod	_	_
+6	toplinske	toplinski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	provodnosti	provodnost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
+8	srebra	srebar	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	15	punct	_	_
+10	a	a	CCONJ	Cc	_	15	cc	_	_
+11	električna	električan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	provodnost	provodnost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	_
+13	70%	70%	SYM	Mds	NumType=Mult	15	nummod	_	_
+14	električne	električan	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	provodnosti	provodnost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	conj	_	_
+16	srebra	srebar	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	15	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -660,21 +821,67 @@
 7	metabolizam	metabolizam	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
 8	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Zlato se slabo apsorbira u tijelu i trovanje zlatom i njegovim spojevima je jako rijetko i nema smrtonosnu dozu.
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
+3	slabo	slabo	ADV	Rgp	Degree=Pos	4	advmod	_	_
+4	apsorbira	apsorbirati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	u	u	ADP	Sl	Case=Loc	6	case	_	_
+6	tijelu	tijelo	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	4	obl	_	_
+7	i	i	CCONJ	Cc	_	15	cc	_	_
+8	trovanje	trovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
+9	zlatom	zlat	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	8	nmod	_	_
+10	i	i	CCONJ	Cc	_	12	cc	_	_
+11	njegovim	njegov	DET	Ps3mpd	Case=Gen|Gender=Masc|Gender[psor]=Masc,Neut|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
+12	spojevima	spoj	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	9	conj	_	_
+13	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+14	jako	jako	ADV	Rgp	Degree=Pos	15	advmod	_	_
+15	rijetko	rijetko	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	4	conj	_	_
+16	i	i	CCONJ	Cc	_	17	cc	_	_
+17	nema	nemati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
+18	smrtonosnu	smrtonosan	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	_
+19	dozu	doza	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Lijekovi protiv artritisa na bazi zlata mogu uzrokovati oštećenje jetre i bubrega.
+1	Lijekovi	lijek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_
+2	protiv	protiv	ADP	Sg	Case=Gen	3	case	_	_
+3	artritisa	artritis	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+4	na	na	ADP	Sl	Case=Loc	5	case	_	_
+5	bazi	baza	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	3	nmod	_	_
+6	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	_
+7	mogu	moći	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	uzrokovati	uzrokovati	VERB	Vmn	VerbForm=Inf	7	xcomp	_	_
+9	oštećenje	oštećenje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	8	obj	_	_
+10	jetre	jetra	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	_
+11	i	i	CCONJ	Cc	_	12	cc	_	_
+12	bubrega	bubreg	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Zlato i njegove topljive soli imaju nisku toksičnost.
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+2	i	i	CCONJ	Cc	_	5	cc	_	_
+3	njegove	njegov	DET	Ps3fpn	Case=Nom|Gender=Fem|Gender[psor]=Masc,Neut|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	_	_
+4	topljive	topljiv	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	5	amod	_	_
+5	soli	sol	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	1	conj	_	_
+6	imaju	imati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	nisku	nizak	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	toksičnost	toksičnost	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nalazišta i rasprostranjenost[uredi | uredi kôd]
+# text = Nalazišta i rasprostranjenost
 1	Nalazišta	nalazište	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
 2	i	i	CCONJ	Cc	_	3	cc	_	_
-3	rasprostranjenost[	rasprostranjenost[	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	nmod	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Sg	Case=Gen	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+3	rasprostranjenost	rasprostranjenost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -715,6 +922,42 @@
 30	po	po	ADP	Sl	Case=Loc	31	case	_	_
 31	toni	tona	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	29	nmod	_	SpaceAfter=No
 32	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Često se nalazi na sekundarnim ležištima, aluvionima, naplavinama ili pijescima, koji potječu od trošenja zlatonosnih stijena i nakupljanja zlatnih zrnaca taloženjem iz vode u rijekama i na obalama mora.
+1	Često	često	ADV	Rgp	Degree=Pos	3	advmod	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	3	expl	_	_
+3	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	na	na	ADP	Sl	Case=Loc	6	case	_	_
+5	sekundarnim	sekundaran	ADJ	Agpnply	Case=Loc|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur	6	amod	_	_
+6	ležištima	ležište	NOUN	Ncnpl	Case=Loc|Gender=Neut|Number=Plur	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	8	punct	_	_
+8	aluvionima	aluvion	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	10	punct	_	_
+10	naplavinama	naplavina	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	6	conj	_	_
+11	ili	ili	CCONJ	Cc	_	12	cc	_	_
+12	pijescima	pijesac	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	15	punct	_	_
+14	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	15	nsubj	_	_
+15	potječu	potjecati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+16	od	od	ADP	Sg	Case=Gen	17	case	_	_
+17	trošenja	trošenje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	15	obl	_	_
+18	zlatonosnih	zlatonosan	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	19	amod	_	_
+19	stijena	stijena	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	17	nmod	_	_
+20	i	i	CCONJ	Cc	_	21	cc	_	_
+21	nakupljanja	nakupljanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	17	conj	_	_
+22	zlatnih	zlatan	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	23	amod	_	_
+23	zrnaca	zrnac	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	21	nmod	_	_
+24	taloženjem	taloženje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	21	nmod	_	_
+25	iz	iz	ADP	Sg	Case=Gen	26	case	_	_
+26	vode	voda	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	_
+27	u	u	ADP	Sl	Case=Loc	28	case	_	_
+28	rijekama	rijeka	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	24	nmod	_	_
+29	i	i	CCONJ	Cc	_	31	cc	_	_
+30	na	na	ADP	Sl	Case=Loc	31	case	_	_
+31	obalama	obala	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	28	conj	_	_
+32	mora	more	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	31	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -825,6 +1068,23 @@
 50	stijena	stijena	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	49	nmod	_	SpaceAfter=No
 51	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Gotovo uvijek ga prati srebro, ponekad i pirit, arsenopirit i bakar.
+1	Gotovo	gotovo	ADV	Rgp	Degree=Pos	2	advmod	_	_
+2	uvijek	uvijek	ADV	Rgp	Degree=Pos|PronType=Tot	4	advmod	_	_
+3	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+4	prati	pratiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	srebro	srebro	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	9	punct	_	_
+7	ponekad	ponekad	ADV	Rgp	Degree=Pos|PronType=Ind	9	advmod	_	_
+8	i	i	PART	Qo	_	9	discourse	_	_
+9	pirit	pirit	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	11	punct	_	_
+11	arsenopirit	arsenopirit	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	9	conj	_	_
+12	i	i	CCONJ	Cc	_	13	cc	_	_
+13	bakar	bakar	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -889,21 +1149,43 @@
 27	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	25	nmod	_	SpaceAfter=No
 28	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Druga značajna nalazišta su u SAD-u (Kalifornija, Kolorado, Aljaska), Kanada, Australija, Rusija (Ural) i Peru.
+1	Druga	drugi	ADJ	Mlonpn	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur	3	amod	_	_
+2	značajna	značajan	ADJ	Agpnpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur	3	amod	_	_
+3	nalazišta	nalazište	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
+4	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+5	u	u	ADP	Sl	Case=Loc	6	case	_	_
+6	SAD-u	SAD	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	_
+7	(	(	PUNCT	Z	_	8	punct	_	SpaceAfter=No
+8	Kalifornija	Kalifornija	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	6	appos	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	10	punct	_	_
+10	Kolorado	Kolorado	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	12	punct	_	_
+12	Aljaska	Aljaska	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	SpaceAfter=No
+13	)	)	PUNCT	Z	_	8	punct	_	SpaceAfter=No
+14	,	,	PUNCT	Z	_	15	punct	_	_
+15	Kanada	Kanada	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Z	_	17	punct	_	_
+17	Australija	Australija	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	19	punct	_	_
+19	Rusija	Rusija	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	_
+20	(	(	PUNCT	Z	_	21	punct	_	SpaceAfter=No
+21	Ural	Ural	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	19	parataxis	_	SpaceAfter=No
+22	)	)	PUNCT	Z	_	21	punct	_	_
+23	i	i	CCONJ	Cc	_	24	cc	_	_
+24	Peru	Peru	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
+25	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dobivanje zlata[uredi | uredi kôd]
+# text = Dobivanje zlata
 1	Dobivanje	dobivanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -966,6 +1248,64 @@
 52	tvari	tvar	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	48	obl	_	SpaceAfter=No
 53	.	.	PUNCT	Z	_	15	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = U najjednostavnijoj izvedbi radi se s drvenim koristima kroz koje materijal prolazi u brzoj vodenoj struji, a zrnca manje gustoće voda lakše odnosi, pa će se većinom preliti preko ruba korita prije nego što padnu na dno, a zrnca zlata, zbog veće gustoće, uglavnom će se taložiti po dnu.
+1	U	u	ADP	Sl	Case=Loc	3	case	_	_
+2	najjednostavnijoj	jednostavan	ADJ	Agsfsly	Case=Loc|Definite=Def|Degree=Sup|Gender=Fem|Number=Sing	3	amod	_	_
+3	izvedbi	izvedba	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	4	obl	_	_
+4	radi	raditi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
+6	s	sa	ADP	Si	Case=Ins	8	case	_	_
+7	drvenim	drven	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	8	amod	_	_
+8	koristima	korist	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	4	obl	_	_
+9	kroz	kroz	ADP	Sa	Case=Acc	10	case	_	_
+10	koje	koji	DET	Pi-mpa	Case=Acc|Gender=Masc|Number=Plur|PronType=Int,Rel	12	obj	_	_
+11	materijal	materijal	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
+12	prolazi	prolaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+13	u	u	ADP	Sl	Case=Loc	16	case	_	_
+14	brzoj	brz	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	16	amod	_	_
+15	vodenoj	voden	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	16	amod	_	_
+16	struji	struja	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Z	_	24	punct	_	_
+18	a	a	CCONJ	Cc	_	24	cc	_	_
+19	zrnca	zrnca	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	24	nsubj	_	_
+20	manje	malo	ADJ	Agcfsgy	Case=Gen|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	21	amod	_	_
+21	gustoće	gustoća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	19	nmod	_	_
+22	voda	voda	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	24	nsubj	_	_
+23	lakše	lako	ADV	Rgc	Degree=Cmp	24	advmod	_	_
+24	odnosi	odnositi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	SpaceAfter=No
+25	,	,	PUNCT	Z	_	30	punct	_	_
+26	pa	pa	CCONJ	Cc	_	30	cc	_	_
+27	će	htjeti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_
+28	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	30	expl	_	_
+29	većinom	većinom	ADV	Rgp	Degree=Pos	30	advmod	_	_
+30	preliti	preliti	VERB	Vmn	VerbForm=Inf	24	conj	_	_
+31	preko	preko	ADP	Sg	Case=Gen	32	case	_	_
+32	ruba	rub	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	30	obl	_	_
+33	korita	korit	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	_
+34	prije	prije	SCONJ	Cs	_	37	mark	_	_
+35	nego	nego	SCONJ	Cs	_	34	fixed	_	_
+36	što	što	SCONJ	Cs	_	34	fixed	_	_
+37	padnu	padnuti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	advcl	_	_
+38	na	na	ADP	Sa	Case=Acc	39	case	_	_
+39	dno	dno	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	37	obl	_	SpaceAfter=No
+40	,	,	PUNCT	Z	_	52	punct	_	_
+41	a	a	CCONJ	Cc	_	52	cc	_	_
+42	zrnca	zrnca	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	52	nsubj	_	_
+43	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	42	nmod	_	SpaceAfter=No
+44	,	,	PUNCT	Z	_	47	punct	_	_
+45	zbog	zbog	ADP	Sg	Case=Gen	47	case	_	_
+46	veće	velik	ADJ	Agcfsgy	Case=Gen|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	47	amod	_	_
+47	gustoće	gustoća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	52	obl	_	SpaceAfter=No
+48	,	,	PUNCT	Z	_	47	punct	_	_
+49	uglavnom	uglavnom	ADV	Rgp	Degree=Pos	52	advmod	_	_
+50	će	htjeti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	aux	_	_
+51	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	52	expl	_	_
+52	taložiti	taložiti	VERB	Vmn	VerbForm=Inf	30	conj	_	_
+53	po	po	ADP	Sl	Case=Loc	54	case	_	_
+54	dnu	dno	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	52	obl	_	SpaceAfter=No
+55	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1013,19 +1353,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Postupak sa živom (amalgamacija/amalgamiranje)[uredi | uredi kôd]
+# text = Postupak sa živom (amalgamacija/amalgamiranje)
 1	Postupak	postupak	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	sa	sa	ADP	Si	Case=Ins	3	case	_	_
 3	živom	živ	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	1	nmod	_	_
 4	(	(	PUNCT	Z	_	5	punct	_	SpaceAfter=No
 5	amalgamacija/amalgamiranje	amalgamacija/amalgamiranje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	1	parataxis	_	SpaceAfter=No
 6	)	)	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-7	[	[	PUNCT	Z	_	8	punct	_	SpaceAfter=No
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-9	|	|	PUNCT	Z	_	10	punct	_	_
-10	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	8	parataxis	_	_
-11	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
-12	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1050,6 +1384,56 @@
 14	pomoću	pomoću	ADP	Sg	Case=Gen	15	case	_	_
 15	žive	živa	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Kod ovog postupka prethodno se rude podvrgavaju drobljenju i mljevenju, a zatim smrvljena ruda temeljito se obradi vodom i živom pri čemu se velik dio zlata pri miješanju amalgamira živom uz stvaranje amalgama zlata u vodi otopljene rude, uz istovremeno nastajanje grubozrnatog zlatonosnog mulja.
+1	Kod	kod	ADP	Sg	Case=Gen	3	case	_	_
+2	ovog	ovaj	DET	Pd-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	postupka	postupak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	obl	_	_
+4	prethodno	prethodno	ADV	Rgp	Degree=Pos	7	advmod	_	_
+5	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
+6	rude	ruda	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	7	nsubj	_	_
+7	podvrgavaju	podvrgavati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	drobljenju	drobljenje	NOUN	Ncnsd	Case=Dat|Gender=Neut|Number=Sing	7	obj	_	_
+9	i	i	CCONJ	Cc	_	10	cc	_	_
+10	mljevenju	mljevenje	NOUN	Ncnsd	Case=Dat|Gender=Neut|Number=Sing	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	18	punct	_	_
+12	a	a	CCONJ	Cc	_	18	cc	_	_
+13	zatim	zatim	ADV	Rgp	Degree=Pos	18	advmod	_	_
+14	smrvljena	smrviti	ADJ	Appfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	amod	_	_
+15	ruda	ruda	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	18	nsubj	_	_
+16	temeljito	temeljito	ADV	Rgp	Degree=Pos	18	advmod	_	_
+17	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	18	expl	_	_
+18	obradi	obraditi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+19	vodom	voda	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	18	obl	_	_
+20	i	i	CCONJ	Cc	_	21	cc	_	_
+21	živom	živ	NOUN	Ncfsi	Case=Ins|Gender=Masc|Number=Sing	19	conj	_	_
+22	pri	pri	ADP	Sl	Case=Loc	23	case	_	_
+23	čemu	što	PRON	Pi3n-l	Case=Loc|Gender=Neut|PronType=Int,Rel	30	obl	_	_
+24	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	30	expl	_	_
+25	velik	velik	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	26	amod	_	_
+26	dio	dio	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	30	nsubj	_	_
+27	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	26	nmod	_	_
+28	pri	pri	ADP	Sl	Case=Loc	29	case	_	_
+29	miješanju	miješanje	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	30	obl	_	_
+30	amalgamira	amalgamirati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	_
+31	živom	živ	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	30	obl	_	_
+32	uz	uz	ADP	Sa	Case=Acc	33	case	_	_
+33	stvaranje	stvaranje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	30	obl	_	_
+34	amalgama	amalga	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	33	nmod	_	_
+35	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	34	nmod	_	_
+36	u	u	ADP	Sl	Case=Loc	37	case	_	_
+37	vodi	voda	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	34	nmod	_	_
+38	otopljene	otopljen	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	39	amod	_	_
+39	rude	ruda	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No
+40	,	,	PUNCT	Z	_	43	punct	_	_
+41	uz	uz	ADP	Sa	Case=Acc	43	case	_	_
+42	istovremeno	istovremen	ADJ	Agpnsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	43	amod	_	_
+43	nastajanje	nastajanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	30	obl	_	_
+44	grubozrnatog	grubozrnat	ADJ	Agpnsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	46	amod	_	_
+45	zlatonosnog	zlatonosan	ADJ	Agpnsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	46	amod	_	_
+46	mulja	mulje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	43	nmod	_	SpaceAfter=No
+47	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1148,14 +1532,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cijanidni postupak[uredi | uredi kôd]
-1	Cijanidni	cijanidni	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
-2	postupak[	postupak	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Sg	Case=Gen	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Cijanidni postupak
+1	Cijanidni	cijanidni	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	postupak	postupak	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1202,6 +1581,28 @@
 11	50	50	NUM	Mdc	NumType=Card	12	nummod	_	_
 12	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	4	obl	_	SpaceAfter=No
 13	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Suprotno živinom postupku, cijanidni postupak omogućava izdvajanje zlata gotovo u potpunosti, čak i iz najsiromašnijih stijena.
+1	Suprotno	suprotno	ADV	Rgp	Degree=Pos	7	advmod	_	_
+2	živinom	živin	ADJ	Agpmsdy	Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	postupku	postupak	NOUN	Ncmsd	Case=Dat|Gender=Masc|Number=Sing	7	iobj	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	3	punct	_	_
+5	cijanidni	cijanidni	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	postupak	postupak	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+7	omogućava	omogućavati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	izdvajanje	izdvajanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	7	obj	_	_
+9	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
+10	gotovo	gotovo	ADV	Rgp	Degree=Pos	11	advmod	_	_
+11	u	u	ADP	Sl	Case=Loc	12	case	_	_
+12	potpunosti	potpunost	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	18	punct	_	_
+14	čak	čak	PART	Qo	_	18	discourse	_	_
+15	i	i	PART	Qo	_	18	discourse	_	_
+16	iz	iz	ADP	Sg	Case=Gen	18	case	_	_
+17	najsiromašnijih	siromašan	ADJ	Agsfpgy	Case=Gen|Definite=Def|Degree=Sup|Gender=Fem|Number=Plur	18	amod	_	_
+18	stijena	stijena	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	7	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1263,13 +1664,23 @@
 51	cijanid	cijanid	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	46	obl	_	SpaceAfter=No
 52	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Zlato prelazi u otopinu po reakciji:
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	prelazi	prelaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	u	u	ADP	Sa	Case=Acc	4	case	_	_
+4	otopinu	otopina	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
+5	po	po	ADP	Sl	Case=Loc	6	case	_	_
+6	reakciji	reakcija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	2	obl	_	SpaceAfter=No
+7	:	:	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = 4Au + 8NaCN + 2H2O + O2 --> 4Na[Au(CN)2] + 4NaOH
+# text = 4Au + 8NaCN + 2H2O + O2 --> 4Na + 4NaOH
 1	4Au	4au	X	Xf	_	0	root	_	_
 2	+	+	PUNCT	Z	_	3	punct	_	_
 3	8NaCN	8nacn	X	Xf	_	1	conj	_	_
@@ -1277,14 +1688,10 @@
 5	2H2O	2h2o	X	Xf	_	1	conj	_	_
 6	+	+	PUNCT	Z	_	7	punct	_	_
 7	O2	o2	X	Y	_	1	conj	_	_
-8	-->	-->	PUNCT	Z	_	10	punct	_	_
-9	4Na[	4na[	X	Xf	_	10	amod	_	SpaceAfter=No
-10	Au	au	X	Xf	_	1	conj	_	SpaceAfter=No
-11	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
-12	CN)2	Cn)2	X	Xf	_	10	appos	_	SpaceAfter=No
-13	]	]	PUNCT	Z	_	12	punct	_	_
-14	+	+	PUNCT	Z	_	15	punct	_	_
-15	4NaOH	4NAOH	X	Xf	_	1	conj	_	SpacesAfter=\n
+8	-->	-->	PUNCT	Z	_	9	punct	_	_
+9	4Na	4na	NUM	Mdc	NumType=Card	1	conj	_	_
+10	+	+	PUNCT	Z	_	11	punct	_	_
+11	4NaOH	4NAOH	X	Xf	_	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1356,22 +1763,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2Na[Au(CN)2] + Zn --> Na2[Zn(CN)4] + 2Au
-1	2Na[	2na[	X	Xf	_	0	root	_	SpaceAfter=No
-2	Au	au	X	Xf	_	1	appos	_	SpaceAfter=No
-3	(	(	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	CN)2	Cn)2	X	Xf	_	2	parataxis	_	SpaceAfter=No
-5	]	]	PUNCT	Z	_	4	punct	_	_
+# text = 2Na + Zn --> Na2 + 2Au
+1	2Na	2na	X	Xf	_	0	root	_	_
+2	+	+	PUNCT	Z	_	3	punct	_	_
+3	Zn	zn	X	Xf	_	1	conj	_	_
+4	-->	-->	PUNCT	Z	_	5	punct	_	_
+5	Na2	na2	X	Xf	_	1	conj	_	_
 6	+	+	PUNCT	Z	_	7	punct	_	_
-7	Zn	zn	X	Xf	_	2	conj	_	_
-8	-->	-->	PUNCT	Z	_	10	punct	_	_
-9	Na2[	na2[	X	Xf	_	10	amod	_	SpaceAfter=No
-10	Zn	zn	X	Xf	_	1	conj	_	SpaceAfter=No
-11	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
-12	CN)4	Cn)4	X	Xf	_	10	parataxis	_	SpaceAfter=No
-13	]	]	PUNCT	Z	_	12	punct	_	_
-14	+	+	PUNCT	Z	_	15	punct	_	_
-15	2Au	2au	X	Xf	_	10	conj	_	SpacesAfter=\n
+7	2Au	2au	X	Xf	_	5	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1439,16 +1838,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Elektrolitska rafinacija bakra[uredi | uredi kôd]
+# text = Elektrolitska rafinacija bakra
 1	Elektrolitska	elektrolitski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	rafinacija	rafinacija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	bakra	bakr	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-6	|	|	PUNCT	Z	_	7	punct	_	_
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	parataxis	_	_
-8	kôd	kôd	NOUN	Sg	Case=Gen	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1471,6 +1864,18 @@
 12	i	i	CCONJ	Cc	_	13	cc	_	_
 13	srebra	srebro	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	11	conj	_	SpaceAfter=No
 14	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Pri tome se anodni mulj rafinira elektrolitskim postupkom.
+1	Pri	pri	ADP	Sl	Case=Loc	2	case	_	_
+2	tome	taj	DET	Pd-nsl	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	6	obl	_	_
+3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	6	expl	_	_
+4	anodni	anodni	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	mulj	mulj	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+6	rafinira	rafinirati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	elektrolitskim	elektrolitski	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	postupkom	postupak	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1507,21 +1912,64 @@
 7	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 3
+# text = Kao elektrolit služi otopina tetrakloroauratne(III) kiseline, za anode se koriste blokovi sirovog zlata, a za katode fini zlatni lim (legura Au - Ag).
+1	Kao	kao	SCONJ	Cs	_	2	case	_	_
+2	elektrolit	elektrolit	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	3	obl	_	_
+3	služi	služiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	otopina	otopina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+5	tetrakloroauratne	tetrakloroauratni	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No
+6	(	(	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+7	III	III	ADJ	Mro	NumType=Ord	5	conj	_	SpaceAfter=No
+8	)	)	PUNCT	Z	_	7	punct	_	_
+9	kiseline	kiselina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	14	punct	_	_
+11	za	za	ADP	Sa	Case=Acc	12	case	_	_
+12	anode	anod	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	14	obl	_	_
+13	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	14	expl	_	_
+14	koriste	koristiti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+15	blokovi	blok	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	14	nsubj	_	_
+16	sirovog	sirov	ADJ	Agpnsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
+17	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	15	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	24	punct	_	_
+19	a	a	CCONJ	Cc	_	24	cc	_	_
+20	za	za	ADP	Sa	Case=Acc	21	case	_	_
+21	katode	katod	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	24	nmod	_	_
+22	fini	fini	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	_
+23	zlatni	zlatan	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	_
+24	lim	lim	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	14	nsubj	_	_
+25	(	(	PUNCT	Z	_	26	punct	_	SpaceAfter=No
+26	legura	legura	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	24	appos	_	_
+27	Au	Au	X	Xf	_	26	flat	_	_
+28	-	-	PUNCT	Z	_	26	punct	_	_
+29	Ag	Ag	X	Xf	_	26	appos	_	SpaceAfter=No
+30	)	)	PUNCT	Z	_	26	punct	_	SpaceAfter=No
+31	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 4
+# text = U tijeku elektrolize na katodi se izlučuje zlato čistoće 99,98 %.
+1	U	u	ADP	Sl	Case=Loc	2	case	_	_
+2	tijeku	tijek	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
+3	elektrolize	elektroliza	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+4	na	na	ADP	Sl	Case=Loc	5	case	_	_
+5	katodi	katoda	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	_
+6	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
+7	izlučuje	izlučivati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
+9	čistoće	čistoća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
+10	99,98	99,98	NUM	Mdc	NumType=Card	11	nummod	_	SpacesAfter= 
+11	%	%	SYM	Z	_	9	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Recikliranjem otpada[uredi | uredi kôd]
+# text = Recikliranjem otpada
 1	Recikliranjem	recikliranje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	0	root	_	_
 2	otpada	otpad	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1566,15 +2014,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ostala dobivanja[uredi | uredi kôd]
+# text = Ostala dobivanja
 1	Ostala	ostali	ADJ	Agpnpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur	2	amod	_	_
 2	dobivanja	dobivanje	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1643,14 +2085,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Upotreba[uredi | uredi kôd]
+# text = Upotreba
 1	Upotreba	upotreba	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -1746,6 +2182,47 @@
 9	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
 10	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Radioaktivni izotop 198Au, s vremenom poluraspada 2,67 dana, koristi se u medicinskoj radioterapiji za tretiranje kancerogenih tumora.
+1	Radioaktivni	radioaktivan	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	izotop	izotop	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+3	198Au	198au	NUM	Mdc	NumType=Card	2	appos	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	6	punct	_	_
+5	s	sa	ADP	Si	Case=Ins	6	case	_	_
+6	vremenom	vrijeme	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	2	nmod	_	_
+7	poluraspada	poluraspad	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
+8	2,67	2,67	NUM	Mdc	NumType=Card	9	nummod	_	_
+9	dana	dan	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Z	_	6	punct	_	_
+11	koristi	koristiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+12	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	11	expl	_	_
+13	u	u	ADP	Sl	Case=Loc	15	case	_	_
+14	medicinskoj	medicinski	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	radioterapiji	radioterapija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	11	obl	_	_
+16	za	za	ADP	Sa	Case=Acc	17	case	_	_
+17	tretiranje	tretiranje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	11	obl	_	_
+18	kancerogenih	kancerogen	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	19	amod	_	_
+19	tumora	tumor	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	11	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Zlato se nalazi u sastavu nekih farmaceutskih spojeva koji se koriste u terapiji artritisa.
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	3	expl	_	_
+3	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	u	u	ADP	Sl	Case=Loc	5	case	_	_
+5	sastavu	sastav	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	3	obl	_	_
+6	nekih	neki	DET	Pi-mpg	Case=Gen|Gender=Masc|Number=Plur|PronType=Ind	8	det	_	_
+7	farmaceutskih	farmaceutski	ADJ	Agpmpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	8	amod	_	_
+8	spojeva	spoj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	5	nmod	_	_
+9	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	11	nsubj	_	_
+10	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	11	expl	_	_
+11	koriste	koristiti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+12	u	u	ADP	Sl	Case=Loc	13	case	_	_
+13	terapiji	terapija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	11	obl	_	_
+14	artritisa	artritis	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1833,6 +2310,119 @@
 16	nenadoknadivo	nenadoknadiv	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	6	conj	_	SpaceAfter=No
 17	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = U većini zemalja zlato služi kako monetarni standard i kao pokriće platne moći.
+1	U	u	ADP	Sl	Case=Loc	2	case	_	_
+2	većini	većina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	5	obl	_	_
+3	zemalja	zemlja	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+4	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
+5	služi	služiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	kako	kako	SCONJ	Cs	_	8	case	_	_
+7	monetarni	monetaran	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	standard	standard	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	obl	_	_
+9	i	i	CCONJ	Cc	_	11	cc	_	_
+10	kao	kao	SCONJ	Cs	_	11	case	_	_
+11	pokriće	pokriće	NOUN	Ncmsn	Case=Nom|Gender=Neut|Number=Sing	8	conj	_	_
+12	platne	platni	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	moći	moć	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 3
+# text = Dvije trećine svjetskih zaliha zlata nalazi se u obliku zlatnoga novca i zlatnih poluga u bankovnim trezorima.
+1	Dvije	dva	NUM	Mlcf-n	Case=Nom|Gender=Fem|Number=Plur|NumType=Card	2	nummod	_	_
+2	trećine	trećina	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	6	nsubj	_	_
+3	svjetskih	svjetski	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	4	amod	_	_
+4	zaliha	zaliha	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+5	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	_
+6	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	6	expl	_	_
+8	u	u	ADP	Sl	Case=Loc	9	case	_	_
+9	obliku	oblik	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	6	obl	_	_
+10	zlatnoga	zlatni	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	novca	novac	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+12	i	i	CCONJ	Cc	_	14	cc	_	_
+13	zlatnih	zlatan	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	14	amod	_	_
+14	poluga	poluga	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	11	conj	_	_
+15	u	u	ADP	Sl	Case=Loc	17	case	_	_
+16	bankovnim	bankovan	ADJ	Agpmply	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	17	amod	_	_
+17	trezorima	trezor	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Procjenjuje se da je do kraja 1973. u svijetu bilo proizvedeno ukupno oko 80 950 tona zlata.
+1	Procjenjuje	procjenjivati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	1	expl	_	_
+3	da	da	SCONJ	Cs	_	11	mark	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+5	do	do	ADP	Sg	Case=Gen	6	case	_	_
+6	kraja	kraj	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	11	obl	_	_
+7	1973.	1973.	ADJ	Mdo	NumType=Ord	6	amod	_	_
+8	u	u	ADP	Sl	Case=Loc	9	case	_	_
+9	svijetu	svijet	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	11	obl	_	_
+10	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	11	aux	_	_
+11	proizvedeno	proizvesti	ADJ	Appnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Pass	1	csubj	_	_
+12	ukupno	ukupno	ADV	Rgp	Degree=Pos	14	advmod	_	_
+13	oko	oko	ADV	Rgp	Degree=Pos	14	advmod	_	_
+14	80	80	NUM	Mdc	NumType=Card	16	nummod	_	_
+15	950	950	NUM	Mdc	NumType=Card	16	nummod	_	_
+16	tona	tona	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	11	nsubj	_	_
+17	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 5
+# text = Godišnja svjetska proizvodnja zlata iznosi oko 1000 t.
+1	Godišnja	godišnji	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+2	svjetska	svjetski	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	proizvodnja	proizvodnja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+4	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	_
+5	iznosi	iznositi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	oko	oko	ADV	Rgp	Degree=Pos	7	advmod	_	_
+7	1000	1000	NUM	Mdc	NumType=Card	8	nummod	_	_
+8	t	t	NOUN	Y	_	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 6
+# text = Ukupna vrijednost svjetskih zaliha zlata iznosi danas oko 70 milijardi dolara.
+1	Ukupna	ukupan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	vrijednost	vrijednost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+3	svjetskih	svjetski	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	4	amod	_	_
+4	zaliha	zaliha	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+5	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	_
+6	iznosi	iznositi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	danas	danas	ADV	Rgp	Degree=Pos	6	advmod	_	_
+8	oko	oko	ADV	Rgp	Degree=Pos	10	advmod	_	_
+9	70	70	NUM	Mdc	NumType=Card	10	compound	_	_
+10	milijardi	milijarda	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	11	nummod	_	_
+11	dolara	dolar	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 7
+# text = Dvije trećine od toga iznosa nalazi se u obliku zlatnog novca ili zlatnih poluga u trezorima emisionih banaka (poglavito u SAD).
+1	Dvije	dva	NUM	Mlcf-n	Case=Nom|Gender=Fem|Number=Plur|NumType=Card	2	nummod	_	_
+2	trećine	trećina	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	6	nsubj	_	_
+3	od	od	ADP	Sg	Case=Gen	5	case	_	_
+4	toga	taj	DET	Pd-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	iznosa	iznos	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+6	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	6	expl	_	_
+8	u	u	ADP	Sl	Case=Loc	9	case	_	_
+9	obliku	oblik	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	6	obl	_	_
+10	zlatnog	zlatan	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	novca	novac	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+12	ili	ili	CCONJ	Cc	_	14	cc	_	_
+13	zlatnih	zlatan	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	14	amod	_	_
+14	poluga	poluga	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	11	conj	_	_
+15	u	u	ADP	Sl	Case=Loc	16	case	_	_
+16	trezorima	trezor	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	6	obl	_	_
+17	emisionih	emisioan	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	18	amod	_	_
+18	banaka	banka	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	16	nmod	_	_
+19	(	(	PUNCT	Z	_	22	punct	_	SpaceAfter=No
+20	poglavito	poglavito	ADV	Rgp	Degree=Pos	22	advmod	_	_
+21	u	u	ADP	Sl	Case=Loc	22	case	_	_
+22	SAD	SAD	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	18	parataxis	_	SpaceAfter=No
+23	)	)	PUNCT	Z	_	22	punct	_	SpaceAfter=No
+24	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -1863,15 +2453,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Legure zlata[uredi | uredi kôd]
+# text = Legure zlata
 1	Legure	legura	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 2	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2163,17 +2747,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = "Boje zlata"[uredi | uredi kôd]
+# text = "Boje zlata"
 1	"	"	PUNCT	Z	_	2	punct	_	SpaceAfter=No
 2	Boje	boja	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 3	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
-4	"	"	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-5	[	[	PUNCT	Z	_	6	punct	_	SpaceAfter=No
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	parataxis	_	_
-9	kôd	kôd	NOUN	Ncmsn	Case=Gen	8	nmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+4	"	"	PUNCT	Z	_	2	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2208,18 +2786,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Označavanje zlata – prije i sad[uredi | uredi kôd]
+# text = Označavanje zlata – prije i sad
 1	Označavanje	označavanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
-3	–	–	PUNCT	Z	_	7	punct	_	_
-4	prije	prije	ADV	Rgp	Degree=Pos	7	advmod	_	_
+3	–	–	PUNCT	Z	_	4	punct	_	_
+4	prije	prije	ADV	Rgp	Degree=Pos	1	advmod	_	_
 5	i	i	CCONJ	Cc	_	6	cc	_	_
-6	sad[	sad[	ADV	Rgp	Degree=Pos|PronType=Dem	4	conj	_	SpaceAfter=No
-7	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-8	|	|	PUNCT	Z	_	9	punct	_	_
-9	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	parataxis	_	_
-10	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
-11	]	]	PUNCT	Z	_	9	punct	_	SpacesAfter=\n
+6	sad	sad	ADV	Rgp	Degree=Pos|PronType=Dem	4	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2389,6 +2962,35 @@
 49	)	)	PUNCT	Z	_	48	punct	_	SpaceAfter=No
 50	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Oznake zlata koje su danas najčešće u upotrebi su u pravilu izvedenice čistoće zlata, tako na primjer zlato 585 predstavlja zlato čistoće 58,5%.
+1	Oznake	oznaka	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	11	nsubj	_	_
+2	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
+3	koje	koji	DET	Pi-fpn	Case=Nom|Gender=Fem|Number=Plur|PronType=Int,Rel	8	nsubj	_	_
+4	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+5	danas	danas	ADV	Rgp	Degree=Pos	8	advmod	_	_
+6	najčešće	često	ADV	Rgs	Degree=Sup	8	advmod	_	_
+7	u	u	ADP	Sl	Case=Loc	8	case	_	_
+8	upotrebi	upotreba	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	1	acl	_	_
+9	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	u	u	ADP	Sl	Case=Loc	11	case	_	_
+11	pravilu	pravilo	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	0	root	_	_
+12	izvedenice	izvedenica	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
+13	čistoće	čistoća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	_
+14	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	13	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	21	punct	_	_
+16	tako	tako	ADV	Cs	_	21	advmod	_	_
+17	na	na	ADP	Sa	Case=Acc	18	case	_	_
+18	primjer	primjer	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	21	obl	_	_
+19	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	21	nsubj	_	_
+20	585	585	NUM	Mdc	NumType=Card	19	nummod	_	_
+21	predstavlja	predstavljati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
+22	zlato	zlato	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	21	obj	_	_
+23	čistoće	čistoća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	22	nmod	_	_
+24	58,5	58	NUM	Mdc	NumType=Card	25	nummod	_	SpaceAfter=No
+25	%	%	SYM	Z	_	22	advmod	_	SpaceAfter=No
+26	.	.	PUNCT	Z	_	11	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -2434,15 +3036,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Spojevi zlata[uredi | uredi kôd]
+# text = Spojevi zlata
 1	Spojevi	spoj	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2486,6 +3082,119 @@
 13	čisto	čist	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	_
 14	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	12	nsubj	_	SpaceAfter=No
 15	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Zlato pravi spojeve i u kojima ima oksidacijski broj +2 (nalazi se samo u kompleksima sa S-ligandima) i +5 (postoji samo u spoju s fluorom (AuFs)).
+1	Zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	pravi	praviti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	spojeve	spoj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	2	obj	_	_
+4	i	i	CCONJ	Cc	_	7	cc	_	_
+5	u	u	ADP	Sl	Case=Loc	6	case	_	_
+6	kojima	koji	DET	Pi-mpl	Case=Loc|Gender=Masc|Number=Plur|PronType=Int,Rel	7	obl	_	_
+7	ima	imati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
+8	oksidacijski	oksidacijski	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+9	broj	broj	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	_
+10	+2	+2	NUM	Mdc	NumType=Card	9	nummod	_	_
+11	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
+12	nalazi	nalaziti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
+13	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	12	expl	_	_
+14	samo	samo	ADV	Rgp	Degree=Pos	16	advmod	_	_
+15	u	u	ADP	Sl	Case=Loc	16	case	_	_
+16	kompleksima	kompleks	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	12	obl	_	_
+17	sa	sa	ADP	Si	Case=Ins	18	case	_	_
+18	S-ligandima	S-ligandi	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No
+19	)	)	PUNCT	Z	_	12	punct	_	_
+20	i	i	CCONJ	Cc	_	21	cc	_	_
+21	+5	+5	NUM	Mdc	NumType=Card	9	conj	_	_
+22	(	(	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+23	postoji	postojati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	parataxis	_	_
+24	samo	samo	ADV	Rgp	Degree=Pos	26	advmod	_	_
+25	u	u	ADP	Sl	Case=Loc	26	case	_	_
+26	spoju	spoj	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	23	obl	_	_
+27	s	sa	ADP	Si	Case=Ins	28	case	_	_
+28	fluorom	fluor	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	26	nmod	_	_
+29	(	(	PUNCT	Z	_	30	punct	_	SpaceAfter=No
+30	AuFs	Aufs	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	26	appos	_	SpaceAfter=No
+31	)	)	PUNCT	Z	_	30	punct	_	SpaceAfter=No
+32	)	)	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+33	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Spojevi u kojima je zlato jednovalentno (Au+) mogu postojati u vodenim otopinama samo ako su netopljivi ili se nalaze vezani u kompleksnim ionima, kao što su: zlatovi(I) halogenidi (AuBr, AuI i AuCl), zlatov(I) hidroksid (AuOH), zlatov(I) oksid (Au2O), halogeno-kompleksi (AuX2-), cijano-kompleksi (KAu(CN)2) i drugi.
+1	Spojevi	spoj	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	10	nsubj	_	_
+2	u	u	ADP	Sl	Case=Loc	3	case	_	_
+3	kojima	koji	DET	Pi-mpl	Case=Loc|Gender=Masc|Number=Plur|PronType=Int,Rel	6	obl	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	zlato	zlato	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+6	jednovalentno	jednovalentan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	1	acl	_	_
+7	(	(	PUNCT	Z	_	8	punct	_	SpaceAfter=No
+8	Au+	Au+	X	Xf	_	6	parataxis	_	SpaceAfter=No
+9	)	)	PUNCT	Z	_	8	punct	_	_
+10	mogu	moći	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	postojati	postojati	VERB	Vmn	VerbForm=Inf	10	xcomp	_	_
+12	u	u	ADP	Sl	Case=Loc	14	case	_	_
+13	vodenim	voden	ADJ	Agpfply	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	14	amod	_	_
+14	otopinama	otopina	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	11	obl	_	_
+15	samo	samo	ADV	Rgp	Degree=Pos	18	advmod	_	_
+16	ako	ako	SCONJ	Cs	_	18	mark	_	_
+17	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
+18	netopljivi	netopljiv	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	10	advcl	_	_
+19	ili	ili	CCONJ	Cc	_	21	cc	_	_
+20	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	21	expl	_	_
+21	nalaze	nalaziti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
+22	vezani	vezan	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	21	xcomp	_	_
+23	u	u	ADP	Sl	Case=Loc	25	case	_	_
+24	kompleksnim	kompleksan	ADJ	Agpmply	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	25	amod	_	_
+25	ionima	ion	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	22	obl	_	SpaceAfter=No
+26	,	,	PUNCT	Z	_	29	punct	_	_
+27	kao	kao	SCONJ	Cs	_	29	mark	_	_
+28	što	što	SCONJ	Cs	_	27	fixed	_	_
+29	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl	_	SpaceAfter=No
+30	:	:	PUNCT	Z	_	31	punct	_	_
+31	zlatovi	zlat	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	29	nsubj	_	SpaceAfter=No
+32	(	(	PUNCT	Z	_	33	punct	_	SpaceAfter=No
+33	I	i	X	Y	_	31	conj	_	SpaceAfter=No
+34	)	)	PUNCT	Z	_	33	punct	_	_
+35	halogenidi	halogenid	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	31	appos	_	_
+36	(	(	PUNCT	Z	_	37	punct	_	SpaceAfter=No
+37	AuBr	AUBR	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	31	appos	_	SpaceAfter=No
+38	,	,	PUNCT	Z	_	39	punct	_	_
+39	AuI	AUI	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	37	conj	_	_
+40	i	i	CCONJ	Cc	_	41	cc	_	_
+41	AuCl	AUCL	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	37	conj	_	SpaceAfter=No
+42	)	)	PUNCT	Z	_	37	punct	_	SpaceAfter=No
+43	,	,	PUNCT	Z	_	48	punct	_	_
+44	zlatov	zlatov	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	48	amod	_	SpaceAfter=No
+45	(	(	PUNCT	Z	_	46	punct	_	SpaceAfter=No
+46	I	i	CCONJ	Cc	_	44	conj	_	SpaceAfter=No
+47	)	)	PUNCT	Z	_	46	punct	_	_
+48	hidroksid	hidroksid	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	31	conj	_	_
+49	(	(	PUNCT	Z	_	50	punct	_	SpaceAfter=No
+50	AuOH	AUOH	X	Npmsn	_	48	appos	_	SpaceAfter=No
+51	)	)	PUNCT	Z	_	50	punct	_	SpaceAfter=No
+52	,	,	PUNCT	Z	_	57	punct	_	_
+53	zlatov	zlat	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	57	amod	_	SpaceAfter=No
+54	(	(	PUNCT	Z	_	55	punct	_	SpaceAfter=No
+55	I	i	ADJ	Cc	_	53	conj	_	SpaceAfter=No
+56	)	)	PUNCT	Z	_	55	punct	_	_
+57	oksid	oksid	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	31	conj	_	_
+58	(	(	PUNCT	Z	_	59	punct	_	SpaceAfter=No
+59	Au2O	au2o	X	Xf	_	57	appos	_	SpaceAfter=No
+60	)	)	PUNCT	Z	_	59	punct	_	SpaceAfter=No
+61	,	,	PUNCT	Z	_	62	punct	_	_
+62	halogeno-kompleksi	halogeno-kompleks	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	31	conj	_	_
+63	(	(	PUNCT	Z	_	64	punct	_	SpaceAfter=No
+64	AuX2-	aux2-	X	Y	_	62	parataxis	_	SpaceAfter=No
+65	)	)	PUNCT	Z	_	64	punct	_	SpaceAfter=No
+66	,	,	PUNCT	Z	_	67	punct	_	_
+67	cijano-kompleksi	cijano-kompleks	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	31	conj	_	_
+68	(	(	PUNCT	Z	_	69	punct	_	SpaceAfter=No
+69	KAu(	kau(	X	Xf	_	67	appos	_	SpaceAfter=No
+70	CN)2	Cn)2	X	Xf	_	69	flat	_	SpaceAfter=No
+71	)	)	PUNCT	Z	_	69	punct	_	_
+72	i	i	CCONJ	Cc	_	73	cc	_	_
+73	drugi	drugi	ADJ	Mlompn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	31	conj	_	SpaceAfter=No
+74	.	.	PUNCT	Z	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2584,7 +3293,7 @@
 9	.	.	PUNCT	Z	_	1	punct	_	_
 
 # sent_id = 2
-# text = To su bezbojni, vrlo postojani natrijev cijanoaurat, koji sadrže anion [Au(CN)2]- i nastaju pri dobivanju zlata cijanizacijom.
+# text = To su bezbojni, vrlo postojani natrijev cijanoaurat, koji sadrže anion - i nastaju pri dobivanju zlata cijanizacijom.
 1	To	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	8	nsubj	_	_
 2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 3	bezbojni	bezbojan	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	8	amod	_	SpaceAfter=No
@@ -2597,18 +3306,14 @@
 10	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	11	nsubj	_	_
 11	sadrže	sadržati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
 12	anion	anion	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	obj	_	_
-13	[	[	PUNCT	Z	_	14	punct	_	SpaceAfter=No
-14	Au(	au(	X	Xf	_	12	appos	_	SpaceAfter=No
-15	CN	CN	X	Xf	_	14	flat:foreign	_	SpaceAfter=No
-16	)	)	PUNCT	Z	_	14	punct	_	SpaceAfter=No
-17	2]-	2]-	ADJ	Mdo	NumType=Ord	14	amod	_	_
-18	i	i	CCONJ	Cc	_	19	cc	_	_
-19	nastaju	nastajati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-20	pri	pri	ADP	Sl	Case=Loc	21	case	_	_
-21	dobivanju	dobivanje	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	19	obl	_	_
-22	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	21	nmod	_	_
-23	cijanizacijom	cijanizacija	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	19	obl	_	SpaceAfter=No
-24	.	.	PUNCT	Z	_	8	punct	_	SpacesAfter=\n
+13	-	-	PUNCT	Z	_	15	punct	_	_
+14	i	i	CCONJ	Cc	_	15	cc	_	_
+15	nastaju	nastajati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+16	pri	pri	ADP	Sl	Case=Loc	17	case	_	_
+17	dobivanju	dobivanje	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	15	obl	_	_
+18	zlata	zlato	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	17	nmod	_	_
+19	cijanizacijom	cijanizacija	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2653,14 +3358,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zanimljivosti[uredi | uredi kôd]
+# text = Zanimljivosti
 1	Zanimljivosti	zanimljivost	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2668,15 +3367,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Zlatna groznica[uredi | uredi kôd]
+# text = Zlatna groznica
 1	Zlatna	zlatan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	groznica	groznica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2811,15 +3504,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Dodatna literatura[uredi | uredi kôd]
+# text = Dodatna literatura
 1	Dodatna	dodatan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	literatura	literatura	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-4	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	2	parataxis	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	4	parataxis	_	_
-7	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = croatian-set-ud-2.6-200830
@@ -2920,22 +3607,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Izvori[uredi | uredi kôd]
+# text = Izvori
 1	Izvori	izvor	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-3	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	1	parataxis	_	_
-4	|	|	PUNCT	Z	_	5	punct	_	_
-5	uredi	ured	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	parataxis	_	_
-6	kôd	kôd	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = croatian-set-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigacijski izbornik
-1	Navigacijski	navigacijski	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
-2	izbornik	izbornik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
 

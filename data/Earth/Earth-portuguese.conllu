@@ -1,5 +1,3 @@
-# https://pt.wikipedia.org/wiki/Terra
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -13,25 +11,7 @@
 4	,	_	PUNCT	.	_	6	punct	_	_
 5	a	_	DET	DET	_	6	det	_	_
 6	enciclopédia	enciclopédia	NOUN	NOUN	_	1	appos	_	_
-7	livre	livre	ADJ	ADJ	_	6	amod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Idiomas
-1	Idiomas	idioma	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Terra
-1	Terra	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
+7	livre	livre	ADJ	ADJ	_	6	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -355,7 +335,7 @@
 42	.	_	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 3
-# text = Não se conhece a existência de água no estado líquido em equilíbrio, necessária à manutenção da vida como a conhecemos, na superfície de qualquer outro planeta.[nota 5] Os polos geográficos da Terra encontram-se maioritariamente cobertos por mantos de gelo ou por banquisas.
+# text = Não se conhece a existência de água no estado líquido em equilíbrio, necessária à manutenção da vida como a conhecemos, na superfície de qualquer outro planeta.
 1	Não	não	ADV	ADV	Polarity=Neg	3	advmod	_	_
 2	se	_	PART	PRT	_	3	expl:pv	_	_
 3	conhece	conhecer	VERB	VERB	_	0	root	_	_
@@ -382,39 +362,40 @@
 21	vida	vida	NOUN	NOUN	_	18	nmod	_	_
 22	como	_	CCONJ	CONJ	_	24	mark	_	_
 23	a	_	PRON	PRON	_	24	obj	_	_
-24	conhecemos	conhecer	VERB	VERB	_	21	acl:relcl	_	SpaceAfter=No
+24	conhecemos	conhecer	VERB	VERB	_	15	advcl	_	SpaceAfter=No
 25	,	_	PUNCT	.	_	28	punct	_	_
 26-27	na	_	_	_	_	_	_	_	_
 26	em	em	ADP	ADP	_	28	case	_	_
 27	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	superfície	superfície	NOUN	NOUN	_	5	nmod	_	_
+28	superfície	superfície	NOUN	NOUN	_	24	nmod	_	_
 29	de	_	ADP	ADP	_	32	case	_	_
 30	qualquer	_	DET	DET	_	32	det	_	_
 31	outro	_	DET	DET	_	32	det	_	_
-32	planeta.[	_	NOUN	NOUN	_	28	nmod	_	SpaceAfter=No
-33	nota	nota	NOUN	NOUN	_	32	appos	_	_
-34	5	_	NUM	NUM	NumType=Card	33	appos	_	SpaceAfter=No
-35	]	_	PUNCT	.	_	28	punct	_	_
-36	Os	_	DET	DET	_	37	det	_	_
-37	polos	polo	NOUN	NOUN	_	44	nsubj:pass	_	_
-38	geográficos	geográfico	ADJ	ADJ	_	37	amod	_	_
-39-40	da	_	_	_	_	_	_	_	_
-39	de	de	ADP	ADP	_	41	case	_	_
-40	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Terra	_	PROPN	PNOUN	_	37	nmod	_	_
-42	encontram-se	encontram-se	ADV	ADV	_	44	advmod	_	_
-43	maioritariamente	maioritariamente	ADV	ADV	_	44	advmod	_	_
-44	cobertos	cobrir	VERB	VERB	_	3	acl:part	_	_
-45	por	_	ADP	ADP	_	46	case	_	_
-46	mantos	manto	NOUN	NOUN	_	44	nmod	_	_
-47	de	_	ADP	ADP	_	48	case	_	_
-48	gelo	gelo	NOUN	NOUN	_	46	nmod	_	_
-49	ou	_	CCONJ	CONJ	_	51	cc	_	_
-50	por	_	ADP	ADP	_	51	case	_	_
-51	banquisas	banquisa	NOUN	NOUN	_	46	conj	_	SpaceAfter=No
-52	.	_	PUNCT	.	_	3	punct	_	_
+32	planeta	planeta	NOUN	NOUN	_	28	nmod	_	SpaceAfter=No
+33	.	_	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 4
+# text = Os polos geográficos da Terra encontram-se maioritariamente cobertos por mantos de gelo ou por banquisas.
+1	Os	_	DET	DET	_	2	det	_	_
+2	polos	polo	NOUN	NOUN	_	9	nsubj:pass	_	_
+3	geográficos	geográfico	ADJ	ADJ	_	2	amod	_	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	ADP	_	6	case	_	_
+5	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Terra	_	PROPN	PNOUN	_	2	nmod	_	_
+7	encontram-se	encontram-se	ADV	ADV	_	9	advmod	_	_
+8	maioritariamente	maioritariamente	ADV	ADV	_	9	advmod	_	_
+9	cobertos	cobrir	VERB	VERB	_	0	root	_	_
+10	por	_	ADP	ADP	_	11	case	_	_
+11	mantos	manto	NOUN	NOUN	_	9	nmod	_	_
+12	de	_	ADP	ADP	_	13	case	_	_
+13	gelo	gelo	NOUN	NOUN	_	11	nmod	_	_
+14	ou	_	CCONJ	CONJ	_	16	cc	_	_
+15	por	_	ADP	ADP	_	16	case	_	_
+16	banquisas	banquisa	NOUN	NOUN	_	11	conj	_	SpaceAfter=No
+17	.	_	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 5
 # text = O interior da Terra permanece ativo, com um manto espesso e relativamente sólido, um núcleo externo líquido que gera um campo magnético, e um núcleo interno sólido, composto sobretudo por ferro.
 1	O	_	DET	DET	_	2	det	_	_
 2	interior	interior	NOUN	NOUN	_	6	nsubj	_	_
@@ -484,7 +465,7 @@
 19	.	_	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 2
-# text = No presente, a Terra orbita o Sol uma vez por cada 366,26 rotações sobre o seu próprio eixo, o que equivale a 365,26 dias solares ou um ano sideral.[nota 6]
+# text = No presente, a Terra orbita o Sol uma vez por cada 366,26 rotações sobre o seu próprio eixo, o que equivale a 365,26 dias solares ou um ano sideral.
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	ADP	_	3	case	_	_
 2	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -517,10 +498,8 @@
 29	ou	_	CCONJ	CONJ	_	31	cc	_	_
 30	um	_	NUM	NUM	NumType=Card	31	nummod	_	_
 31	ano	ano	NOUN	NOUN	_	27	conj	_	_
-32	sideral.[	_	ADJ	ADJ	_	31	amod	_	SpaceAfter=No
-33	nota	nota	NOUN	NOUN	_	31	appos	_	_
-34	6	_	NUM	NUM	NumType=Card	33	appos	_	SpaceAfter=No
-35	]	_	PUNCT	.	_	24	punct	_	_
+32	sideral	sideral	ADJ	ADJ	_	31	amod	_	SpaceAfter=No
+33	.	_	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 3
 # text = O eixo de rotação da Terra possui uma inclinação de 23,4° em relação à perpendicular ao seu plano orbital, produzindo variações sazonais na superfície do planeta com período igual a um ano tropical (365,24 dias solares).
@@ -797,13 +776,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cronologia[editar | editar código-fonte]
-1	Cronologia[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Cronologia
+1	Cronologia	cronologia	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1087,14 +1061,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = História geológica[editar | editar código-fonte]
+# text = História geológica
 1	História	história	NOUN	NOUN	_	0	root	_	_
-2	geológica[	geológico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	geológica	geológico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1459,17 +1428,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Evolução da vida[editar | editar código-fonte]
+# text = Evolução da vida
 1	Evolução	evolução	NOUN	NOUN	_	0	root	_	_
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	ADP	_	4	case	_	_
 3	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	vida[	vida[	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
-5	editar	editar	VERB	VERB	_	1	nmod	_	_
-6	|	_	PUNCT	.	_	7	punct	_	_
-7	editar	editar	VERB	VERB	_	5	conj	_	_
-8	código-fonte	código-fonte	NOUN	NOUN	_	7	obj	_	SpaceAfter=No
-9	]	_	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+4	vida	vida	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -1571,7 +1535,7 @@
 21	;	_	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 4
-# text = o oxigênio resultante acumulou-se na atmosfera e formou uma camada de ozônio (uma forma de oxigênio molecular [O3]) na alta atmosfera.
+# text = o oxigênio resultante acumulou-se na atmosfera e formou uma camada de ozônio (uma forma de oxigênio molecular ) na alta atmosfera.
 1	o	_	DET	DET	_	2	det	_	_
 2	oxigênio	oxigênio	NOUN	NOUN	_	4	nsubj	_	_
 3	resultante	resultante	ADJ	ADJ	_	2	amod	_	_
@@ -1592,16 +1556,13 @@
 17	de	_	ADP	ADP	_	18	case	_	_
 18	oxigênio	oxigênio	NOUN	NOUN	_	16	nmod	_	_
 19	molecular	molecular	ADJ	ADJ	_	18	amod	_	_
-20	[	_	PUNCT	.	_	21	punct	_	SpaceAfter=No
-21	O3	_	PROPN	PNOUN	_	18	appos	_	SpaceAfter=No
-22	]	_	PUNCT	.	_	21	punct	_	SpaceAfter=No
-23	)	_	PUNCT	.	_	16	punct	_	_
-24-25	na	_	_	_	_	_	_	_	_
-24	em	em	ADP	ADP	_	27	case	_	_
-25	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-26	alta	alto	ADJ	ADJ	_	27	amod	_	_
-27	atmosfera	atmosfera	NOUN	NOUN	_	9	nmod	_	SpaceAfter=No
-28	.	_	PUNCT	.	_	4	punct	_	_
+20	)	_	PUNCT	.	_	16	punct	_	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	ADP	_	24	case	_	_
+22	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+23	alta	alto	ADJ	ADJ	_	24	amod	_	_
+24	atmosfera	atmosfera	NOUN	NOUN	_	9	nmod	_	SpaceAfter=No
+25	.	_	PUNCT	.	_	4	punct	_	_
 
 # sent_id = 5
 # text = A incorporação de células mais pequenas no interior de outras maiores resultou no desenvolvimento de células complexas ditas eucariotas.
@@ -2090,13 +2051,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Futuro[editar | editar código-fonte]
-1	Futuro[	futuro[	NOUN	NOUN	_	2	parataxis	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	0	root	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+# text = Futuro
+1	Futuro	futuro	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -2734,15 +2690,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Composição e estrutura[editar | editar código-fonte]
-1	Composição	composição	NOUN	NOUN	_	4	nsubj	_	_
+# text = Composição e estrutura
+1	Composição	composição	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	estrutura[	estrutura[	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	0	root	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	estrutura	estrutura	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -2854,13 +2805,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Forma[editar | editar código-fonte]
-1	Forma[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Forma
+1	Forma	forma	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -3184,14 +3130,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Composição química[editar | editar código-fonte]
+# text = Composição química
 1	Composição	composição	NOUN	NOUN	_	0	root	_	_
-2	química[	químico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	química	químico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -3511,14 +3452,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Estrutura interna[editar | editar código-fonte]
+# text = Estrutura interna
 1	Estrutura	estrutura	NOUN	NOUN	_	0	root	_	_
-2	interna[	interno	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	interna	interno	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -3818,14 +3754,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Energia interna[editar | editar código-fonte]
+# text = Energia interna
 1	Energia	energia	NOUN	NOUN	_	0	root	_	_
-2	interna[	interno	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	interna	interno	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -4246,14 +4177,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Placas tectônicas[editar | editar código-fonte]
+# text = Placas tectônicas
 1	Placas	placa	NOUN	NOUN	_	0	root	_	_
-2	tectônicas[	tectônicas[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	parataxis	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	tectônicas	tectônico	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -4740,13 +4666,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Superfície[editar | editar código-fonte]
-1	Superfície[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Superfície
+1	Superfície	superfície	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -5363,13 +5284,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Hidrosfera[editar | editar código-fonte]
-1	Hidrosfera[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Hidrosfera
+1	Hidrosfera	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -5461,7 +5377,7 @@
 41	.	_	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 3
-# text = O local situado a maior profundidade debaixo de água é a depressão Challenger na fossa das Marianas, no Oceano Pacífico, com uma profundidade de -10 911,4 m.[nota 10]
+# text = O local situado a maior profundidade debaixo de água é a depressão Challenger na fossa das Marianas, no Oceano Pacífico, com uma profundidade de -10 911,4 m.
 1	O	_	DET	DET	_	2	det	_	_
 2	local	local	NOUN	NOUN	_	12	nsubj	_	_
 3	situado	situar	VERB	VERB	_	2	acl:part	_	_
@@ -5496,10 +5412,8 @@
 29	de	_	ADP	ADP	_	32	case	_	_
 30	-10	_	NUM	NUM	NumType=Card	31	nummod	_	SpacesAfter= 
 31	911,4	_	NUM	NUM	NumType=Card	32	nummod	_	_
-32	m.[	_	NOUN	NOUN	_	28	nmod	_	SpaceAfter=No
-33	nota	nota	NOUN	NOUN	_	32	appos	_	_
-34	10	_	NUM	NUM	NumType=Card	33	appos	_	SpaceAfter=No
-35	]	_	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+32	m	m	NOUN	NOUN	_	28	nmod	_	SpaceAfter=No
+33	.	_	PUNCT	.	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -5567,7 +5481,7 @@
 26	.	_	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 3
-# text = Se toda a superfície da Terra fosse estendida de maneira uniforme, a água atingiria uma altitude superior a 2,7 km.[nota 11] Cerca de 97,5% da água é salgada, sendo os 2,5% restantes água doce.
+# text = Se toda a superfície da Terra fosse estendida de maneira uniforme, a água atingiria uma altitude superior a 2,7 km.
 1	Se	_	CCONJ	CONJ	_	9	mark	_	_
 2	toda	_	DET	DET	_	4	det	_	_
 3	a	_	DET	DET	_	4	det	_	_
@@ -5590,29 +5504,30 @@
 19	superior	superior	ADJ	ADJ	_	18	amod	_	_
 20	a	_	ADP	ADP	_	22	case	_	_
 21	2,7	_	NUM	NUM	NumType=Card	22	nummod	_	_
-22	km.[	_	NOUN	NOUN	_	19	nmod	_	SpaceAfter=No
-23	nota	nota	NOUN	NOUN	_	22	appos	_	_
-24	11	_	NUM	NUM	NumType=Card	23	appos	_	SpaceAfter=No
-25	]	_	PUNCT	.	_	32	punct	_	_
-26	Cerca	cerca	ADV	ADV	_	28	advmod	_	_
-27	de	_	ADP	ADP	_	26	case	_	_
-28	97,5%	_	NUM	NUM	NumType=Card	32	nsubj	_	_
-29-30	da	_	_	_	_	_	_	_	_
-29	de	de	ADP	ADP	_	31	case	_	_
-30	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	água	água	NOUN	NOUN	_	28	nmod	_	_
-32	é	ser	VERB	VERB	_	16	parataxis	_	_
-33	salgada	salgado	ADJ	ADJ	_	32	xcomp:adj	_	SpaceAfter=No
-34	,	_	PUNCT	.	_	39	punct	_	_
-35	sendo	ser	AUX	AUX	_	39	cop	_	_
-36	os	_	DET	DET	_	39	det	_	_
-37	2,5%	_	NUM	NUM	NumType=Card	39	nummod	_	_
-38	restantes	restante	ADJ	ADJ	_	39	amod	_	_
-39	água	água	NOUN	NOUN	_	32	nsubj	_	_
-40	doce	doce	ADJ	ADJ	_	39	amod	_	SpaceAfter=No
-41	.	_	PUNCT	.	_	16	punct	_	_
+22	km	km	NOUN	NOUN	_	19	nmod	_	SpaceAfter=No
+23	.	_	PUNCT	.	_	16	punct	_	_
 
 # sent_id = 4
+# text = Cerca de 97,5% da água é salgada, sendo os 2,5% restantes água doce.
+1	Cerca	cerca	ADV	ADV	_	3	advmod	_	_
+2	de	_	ADP	ADP	_	1	case	_	_
+3	97,5%	_	NUM	NUM	NumType=Card	8	nsubj:pass	_	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	ADP	_	6	case	_	_
+5	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	água	água	NOUN	NOUN	_	3	nmod	_	_
+7	é	ser	AUX	AUX	_	8	aux:pass	_	_
+8	salgada	salgar	VERB	VERB	_	0	root	_	SpaceAfter=No
+9	,	_	PUNCT	.	_	14	punct	_	_
+10	sendo	ser	AUX	AUX	_	14	cop	_	_
+11	os	_	DET	DET	_	14	det	_	_
+12	2,5%	_	NUM	NUM	NumType=Card	14	nummod	_	_
+13	restantes	restante	ADJ	ADJ	_	14	amod	_	_
+14	água	água	NOUN	NOUN	_	8	nsubj:pass	_	_
+15	doce	doce	ADJ	ADJ	_	14	amod	_	SpaceAfter=No
+16	.	_	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 5
 # text = A maior parte da água doce, cerca de 68,7%, é atualmente gelo.
 1	A	_	DET	DET	_	3	det	_	_
 2	maior	maior	ADJ	ADJ	_	3	amod	_	_
@@ -5789,13 +5704,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Atmosfera[editar | editar código-fonte]
-1	Atmosfera[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Atmosfera
+1	Atmosfera	atmosfera	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -6215,15 +6125,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tempo e clima[editar | editar código-fonte]
-1	Tempo	tempo	NOUN	NOUN	_	4	nsubj	_	_
+# text = Tempo e clima
+1	Tempo	tempo	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	clima[	clima[	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	0	root	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+3	clima	clima	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -6881,14 +6786,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Alta atmosfera[editar | editar código-fonte]
+# text = Alta atmosfera
 1	Alta	alto	ADJ	ADJ	_	2	amod	_	_
-2	atmosfera[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	2	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+2	atmosfera	atmosfera	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7343,14 +7243,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Campo magnético[editar | editar código-fonte]
+# text = Campo magnético
 1	Campo	campo	NOUN	NOUN	_	0	root	_	_
-2	magnético[	magnético[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	magnético	magnético	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7675,15 +7570,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rotação e translação[editar | editar código-fonte]
-1	Rotação	rotação	NOUN	NOUN	_	4	nsubj	_	_
+# text = Rotação e translação
+1	Rotação	rotação	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
-3	translação[	_	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
-4	editar	editar	VERB	VERB	_	0	root	_	_
-5	|	_	PUNCT	.	_	6	punct	_	_
-6	editar	editar	VERB	VERB	_	4	conj	_	_
-7	código-fonte	código-fonte	NOUN	NOUN	_	6	obj	_	SpaceAfter=No
-8	]	_	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+3	translação	translação	NOUN	NOUN	_	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7691,13 +7581,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rotação[editar | editar código-fonte]
-1	Rotação[	rotação[	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Rotação
+1	Rotação	rotação	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -7792,7 +7677,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = O período de rotação da Terra relativamente às estrelas fixas, o chamado dia estelar de acordo com o Serviço Internacional da Rotação da Terra (SIRT), é de 86 164,098903691 segundos de tempo solar médio (UT1), ou 23 horas, 56 minutos, 4,098903691 segundos.[nota 12] O período de rotação da Terra relativamente à precessão dos equinócios, o chamado dia sideral, é de 86 164,09053083288 segundos de tempo solar médio, ou 23 horas, 56 minutos, 4,09053083288 segundos.
+# text = O período de rotação da Terra relativamente às estrelas fixas, o chamado dia estelar de acordo com o Serviço Internacional da Rotação da Terra (SIRT), é de 86 164,098903691 segundos de tempo solar médio (UT1), ou 23 horas, 56 minutos, 4,098903691 segundos.
 1	O	_	DET	DET	_	2	det	_	_
 2	período	período	NOUN	NOUN	_	34	nsubj	_	_
 3	de	_	ADP	ADP	_	4	case	_	_
@@ -7848,58 +7733,59 @@
 49	horas	hora	NOUN	NOUN	_	38	conj	_	SpaceAfter=No
 50	,	_	PUNCT	.	_	52	punct	_	_
 51	56	_	NUM	NUM	NumType=Card	52	nummod	_	_
-52	minutos	minuto	NOUN	NOUN	_	49	appos	_	SpaceAfter=No
-53	,	_	PUNCT	.	_	54	punct	_	_
-54	4,098903691	_	NUM	NUM	NumType=Card	49	appos	_	_
-55	segundos.[	_	NOUN	NOUN	_	49	appos	_	SpaceAfter=No
-56	nota	nota	NOUN	NOUN	_	54	appos	_	_
-57	12	_	NUM	NUM	NumType=Card	56	appos	_	SpaceAfter=No
-58	]	_	PUNCT	.	_	54	punct	_	_
-59	O	_	DET	DET	_	60	det	_	_
-60	período	período	NOUN	NOUN	_	79	nsubj	_	_
-61	de	_	ADP	ADP	_	62	case	_	_
-62	rotação	rotação	NOUN	NOUN	_	60	nmod	_	_
-63-64	da	_	_	_	_	_	_	_	_
-63	de	de	ADP	ADP	_	65	case	_	_
-64	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_
-65	Terra	_	PROPN	PNOUN	_	62	nmod	_	_
-66	relativamente	relativamente	ADV	ADV	_	60	advmod	_	_
-67-68	à	_	_	_	_	_	_	_	_
-67	a	a	ADP	ADP	_	69	case	_	_
-68	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	69	det	_	_
-69	precessão	precessão	NOUN	NOUN	_	66	nmod	_	_
-70-71	dos	_	_	_	_	_	_	_	_
-70	de	de	ADP	ADP	_	72	case	_	_
-71	os	o	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	72	det	_	_
-72	equinócios	equinócio	NOUN	NOUN	_	69	nmod	_	SpaceAfter=No
-73	,	_	PUNCT	.	_	76	punct	_	_
-74	o	_	DET	DET	_	76	det	_	_
-75	chamado	chamado	ADJ	ADJ	_	76	amod	_	_
-76	dia	dia	NOUN	NOUN	_	69	appos	_	_
-77	sideral	sideral	ADJ	ADJ	_	76	amod	_	SpaceAfter=No
-78	,	_	PUNCT	.	_	76	punct	_	_
-79	é	ser	VERB	VERB	_	34	parataxis	_	_
-80	de	_	ADP	ADP	_	83	case	_	_
-81	86	_	NUM	NUM	NumType=Card	83	nummod	_	_
-82	164,09053083288	_	NUM	NUM	NumType=Card	83	nummod	_	_
-83	segundos	segundo	NOUN	NOUN	_	79	nmod	_	_
-84	de	_	ADP	ADP	_	85	case	_	_
-85	tempo	tempo	NOUN	NOUN	_	83	nmod	_	_
-86	solar	solar	ADJ	ADJ	_	85	amod	_	_
-87	médio	médio	ADJ	ADJ	_	85	amod	_	SpaceAfter=No
-88	,	_	PUNCT	.	_	91	punct	_	_
-89	ou	_	CCONJ	CONJ	_	91	cc	_	_
-90	23	_	NUM	NUM	NumType=Card	91	nummod	_	_
-91	horas	hora	NOUN	NOUN	_	83	conj	_	SpaceAfter=No
-92	,	_	PUNCT	.	_	94	punct	_	_
-93	56	_	NUM	NUM	NumType=Card	94	nummod	_	_
-94	minutos	minuto	NOUN	NOUN	_	91	appos	_	SpaceAfter=No
-95	,	_	PUNCT	.	_	97	punct	_	_
-96	4,09053083288	_	NUM	NUM	NumType=Card	97	nummod	_	_
-97	segundos	segundo	NOUN	NOUN	_	91	appos	_	SpaceAfter=No
-98	.	_	PUNCT	.	_	34	punct	_	_
+52	minutos	minuto	NOUN	NOUN	_	49	conj	_	SpaceAfter=No
+53	,	_	PUNCT	.	_	55	punct	_	_
+54	4,098903691	_	NUM	NUM	NumType=Card	55	nummod	_	_
+55	segundos	segundo	NOUN	NOUN	_	49	appos	_	SpaceAfter=No
+56	.	_	PUNCT	.	_	34	punct	_	_
 
 # sent_id = 2
+# text = O período de rotação da Terra relativamente à precessão dos equinócios, o chamado dia sideral, é de 86 164,09053083288 segundos de tempo solar médio, ou 23 horas, 56 minutos, 4,09053083288 segundos.
+1	O	_	DET	DET	_	2	det	_	_
+2	período	período	NOUN	NOUN	_	21	nsubj	_	_
+3	de	_	ADP	ADP	_	4	case	_	_
+4	rotação	rotação	NOUN	NOUN	_	2	nmod	_	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	ADP	_	7	case	_	_
+6	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Terra	_	PROPN	PNOUN	_	2	nmod	_	_
+8	relativamente	relativamente	ADV	ADV	_	2	advmod	_	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	ADP	_	11	case	_	_
+10	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	precessão	precessão	NOUN	NOUN	_	8	nmod	_	_
+12-13	dos	_	_	_	_	_	_	_	_
+12	de	de	ADP	ADP	_	14	case	_	_
+13	os	o	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	equinócios	equinócio	NOUN	NOUN	_	11	nmod	_	SpaceAfter=No
+15	,	_	PUNCT	.	_	18	punct	_	_
+16	o	_	DET	DET	_	18	det	_	_
+17	chamado	chamado	ADJ	ADJ	_	18	amod	_	_
+18	dia	dia	NOUN	NOUN	_	11	appos	_	_
+19	sideral	sideral	ADJ	ADJ	_	18	amod	_	SpaceAfter=No
+20	,	_	PUNCT	.	_	18	punct	_	_
+21	é	ser	VERB	VERB	_	0	root	_	_
+22	de	_	ADP	ADP	_	25	case	_	_
+23	86	_	NUM	NUM	NumType=Card	24	nummod	_	_
+24	164,09053083288	_	NUM	NUM	NumType=Card	25	nummod	_	_
+25	segundos	segundo	NOUN	NOUN	_	21	nmod	_	_
+26	de	_	ADP	ADP	_	27	case	_	_
+27	tempo	tempo	NOUN	NOUN	_	25	nmod	_	_
+28	solar	solar	ADJ	ADJ	_	27	amod	_	_
+29	médio	médio	ADJ	ADJ	_	27	amod	_	SpaceAfter=No
+30	,	_	PUNCT	.	_	33	punct	_	_
+31	ou	_	CCONJ	CONJ	_	33	cc	_	_
+32	23	_	NUM	NUM	NumType=Card	33	nummod	_	_
+33	horas	hora	NOUN	NOUN	_	25	conj	_	SpaceAfter=No
+34	,	_	PUNCT	.	_	36	punct	_	_
+35	56	_	NUM	NUM	NumType=Card	36	nummod	_	_
+36	minutos	minuto	NOUN	NOUN	_	33	conj	_	SpaceAfter=No
+37	,	_	PUNCT	.	_	39	punct	_	_
+38	4,09053083288	_	NUM	NUM	NumType=Card	39	nummod	_	_
+39	segundos	segundo	NOUN	NOUN	_	33	appos	_	SpaceAfter=No
+40	.	_	PUNCT	.	_	21	punct	_	_
+
+# sent_id = 3
 # text = Portanto, o dia sideral é menor do que o dia estelar em cerca de 8,4 milissegundos.
 1	Portanto	_	ADV	ADV	_	6	advmod	_	SpaceAfter=No
 2	,	_	PUNCT	.	_	1	punct	_	_
@@ -7922,7 +7808,7 @@
 18	milissegundos	milissegundo	NOUN	NOUN	_	6	nmod	_	SpaceAfter=No
 19	.	_	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = A duração do dia solar médio em segundos SI está disponível no SIRT para os períodos 1623–2005 e 1962–2005.
 1	A	_	DET	DET	_	2	det	_	_
 2	duração	duração	NOUN	NOUN	_	11	nsubj	_	_
@@ -8211,13 +8097,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Órbita[editar | editar código-fonte]
-1	Órbita[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Órbita
+1	Órbita	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -8652,7 +8533,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = O raio da esfera de Hill, ou esfera de influência gravitacional, da Terra é de 1,5 Gm (1 500 000 km).[nota 13] Esta é a distância máxima dentro do qual a influência da gravidade da Terra é maior do que a influência da gravidade do Sol e dos outros planetas.
+# text = O raio da esfera de Hill, ou esfera de influência gravitacional, da Terra é de 1,5 Gm (1 500 000 km).
 1	O	_	DET	DET	_	2	det	_	_
 2	raio	raio	NOUN	NOUN	_	18	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -8667,11 +8548,11 @@
 11	de	_	ADP	ADP	_	12	case	_	_
 12	influência	influência	NOUN	NOUN	_	10	nmod	_	_
 13	gravitacional	gravitacional	ADJ	ADJ	_	12	amod	_	SpaceAfter=No
-14	,	_	PUNCT	.	_	10	punct	_	_
+14	,	_	PUNCT	.	_	17	punct	_	_
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	ADP	_	17	case	_	_
 16	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Terra	_	PROPN	PNOUN	_	5	nmod	_	_
+17	Terra	_	PROPN	PNOUN	_	2	nmod	_	_
 18	é	ser	VERB	VERB	_	0	root	_	_
 19	de	_	ADP	ADP	_	21	case	_	_
 20	1,5	_	NUM	NUM	NumType=Card	21	nummod	_	_
@@ -8682,55 +8563,55 @@
 25	000	_	NUM	NUM	NumType=Card	26	nummod	_	_
 26	km	km	NOUN	NOUN	_	21	appos	_	SpaceAfter=No
 27	)	_	PUNCT	.	_	26	punct	_	SpaceAfter=No
-28	.[	_	PUNCT	.	_	29	punct	_	SpaceAfter=No
-29	nota	nota	NOUN	NOUN	_	21	appos	_	_
-30	13	_	NUM	NUM	NumType=Card	29	appos	_	SpaceAfter=No
-31	]	_	PUNCT	.	_	29	punct	_	_
-32	Esta	_	PRON	PRON	_	35	nsubj	_	_
-33	é	ser	AUX	AUX	_	35	cop	_	_
-34	a	_	DET	DET	_	35	det	_	_
-35	distância	distância	NOUN	NOUN	_	18	parataxis	_	_
-36	máxima	máximo	ADJ	ADJ	_	35	amod	_	_
-37	dentro	dentro	ADV	ADV	_	35	advmod	_	_
-38-39	do	_	_	_	_	_	_	_	_
-38	de	de	ADP	ADP	_	40	case	_	_
-39	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	qual	_	PRON	PRON	_	49	nmod	_	_
-41	a	_	DET	DET	_	42	det	_	_
-42	influência	influência	NOUN	NOUN	_	49	nsubj	_	_
-43-44	da	_	_	_	_	_	_	_	_
-43	de	de	ADP	ADP	_	45	case	_	_
-44	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-45	gravidade	gravidade	NOUN	NOUN	_	42	nmod	_	_
-46-47	da	_	_	_	_	_	_	_	_
-46	de	de	ADP	ADP	_	48	case	_	_
-47	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
-48	Terra	_	PROPN	PNOUN	_	45	nmod	_	_
-49	é	ser	VERB	VERB	_	35	acl:relcl	_	_
-50	maior	maior	ADJ	ADJ	_	49	xcomp:adj	_	_
-51-52	do	_	_	_	_	_	_	_	_
-51	de	de	ADP	ADP	_	55	case	_	_
-52	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
-53	que	_	ADP	ADP	_	51	fixed	_	_
-54	a	_	DET	DET	_	55	det	_	_
-55	influência	influência	NOUN	NOUN	_	49	nmod	_	_
-56-57	da	_	_	_	_	_	_	_	_
-56	de	de	ADP	ADP	_	58	case	_	_
-57	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	_	_
-58	gravidade	gravidade	NOUN	NOUN	_	55	nmod	_	_
-59-60	do	_	_	_	_	_	_	_	_
-59	de	de	ADP	ADP	_	61	case	_	_
-60	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
-61	Sol	_	PROPN	PNOUN	_	58	nmod	_	_
-62	e	_	CCONJ	CONJ	_	66	cc	_	_
-63-64	dos	_	_	_	_	_	_	_	_
-63	de	de	ADP	ADP	_	66	case	_	_
-64	os	o	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	66	det	_	_
-65	outros	_	DET	DET	_	66	det	_	_
-66	planetas	planeta	NOUN	NOUN	_	61	conj	_	SpaceAfter=No
-67	.	_	PUNCT	.	_	18	punct	_	_
+28	.	_	PUNCT	.	_	18	punct	_	_
 
 # sent_id = 2
+# text = Esta é a distância máxima dentro do qual a influência da gravidade da Terra é maior do que a influência da gravidade do Sol e dos outros planetas.
+1	Esta	_	PRON	PRON	_	4	nsubj	_	_
+2	é	ser	AUX	AUX	_	4	cop	_	_
+3	a	_	DET	DET	_	4	det	_	_
+4	distância	distância	NOUN	NOUN	_	0	root	_	_
+5	máxima	máximo	ADJ	ADJ	_	4	amod	_	_
+6	dentro	dentro	ADV	ADV	_	4	advmod	_	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	ADP	_	9	case	_	_
+8	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	qual	_	PRON	PRON	_	18	nmod	_	_
+10	a	_	DET	DET	_	11	det	_	_
+11	influência	influência	NOUN	NOUN	_	18	nsubj	_	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	ADP	_	14	case	_	_
+13	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	gravidade	gravidade	NOUN	NOUN	_	11	nmod	_	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	ADP	_	17	case	_	_
+16	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Terra	_	PROPN	PNOUN	_	14	nmod	_	_
+18	é	ser	VERB	VERB	_	4	acl:relcl	_	_
+19	maior	maior	ADJ	ADJ	_	18	xcomp:adj	_	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	ADP	_	24	case	_	_
+21	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+22	que	_	ADP	ADP	_	20	fixed	_	_
+23	a	_	DET	DET	_	24	det	_	_
+24	influência	influência	NOUN	NOUN	_	18	nmod	_	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	ADP	_	27	case	_	_
+26	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	gravidade	gravidade	NOUN	NOUN	_	24	nmod	_	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	ADP	_	30	case	_	_
+29	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	Sol	_	PROPN	PNOUN	_	27	nmod	_	_
+31	e	_	CCONJ	CONJ	_	35	cc	_	_
+32-33	dos	_	_	_	_	_	_	_	_
+32	de	de	ADP	ADP	_	35	case	_	_
+33	os	o	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
+34	outros	_	DET	DET	_	35	det	_	_
+35	planetas	planeta	NOUN	NOUN	_	30	conj	_	SpaceAfter=No
+36	.	_	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 3
 # text = Objetos orbitando a Terra precisam ficar dentro desta esfera, ou poderão ser libertados pela perturbação gravitacional do Sol.
 1	Objetos	objeto	NOUN	NOUN	_	5	nsubj	_	_
 2	orbitando	orbitar	VERB	VERB	_	1	acl:part	_	_
@@ -8837,14 +8718,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Inclinação axial[editar | editar código-fonte]
+# text = Inclinação axial
 1	Inclinação	inclinação	NOUN	NOUN	_	0	root	_	_
-2	axial[	_	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	axial	axial	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -9497,7 +9373,7 @@
 30	.	_	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 3
-# text = A distância variável entre a Terra e o Sol resulta em um aumento de 6,9%[nota 14] na energia solar que alcança a Terra no periélio, relativamente ao afélio.
+# text = A distância variável entre a Terra e o Sol resulta em um aumento de 6,9% na energia solar que alcança a Terra no periélio, relativamente ao afélio.
 1	A	_	DET	DET	_	2	det	_	_
 2	distância	distância	NOUN	NOUN	_	10	nsubj	_	_
 3	variável	variável	ADJ	ADJ	_	2	amod	_	_
@@ -9511,31 +9387,28 @@
 11	em	_	ADP	ADP	_	13	case	_	_
 12	um	_	DET	DET	_	13	det	_	_
 13	aumento	aumento	NOUN	NOUN	_	10	nmod	_	_
-14	de	_	ADP	ADP	_	16	case	_	_
-15	6,9%[	_	NUM	NUM	NumType=Card	16	nummod	_	SpaceAfter=No
-16	nota	nota	NOUN	NOUN	_	13	nmod	_	_
-17	14	_	NUM	NUM	NumType=Card	16	appos	_	SpaceAfter=No
-18	]	_	PUNCT	.	_	16	punct	_	_
-19-20	na	_	_	_	_	_	_	_	_
-19	em	em	ADP	ADP	_	21	case	_	_
-20	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	energia	energia	NOUN	NOUN	_	13	nmod	_	_
-22	solar	solar	ADJ	ADJ	_	21	amod	_	_
-23	que	_	PRON	PRON	_	24	nsubj	_	_
-24	alcança	alcançar	VERB	VERB	_	21	acl:relcl	_	_
-25	a	_	DET	DET	_	26	det	_	_
-26	Terra	_	PROPN	PNOUN	_	24	obj	_	_
-27-28	no	_	_	_	_	_	_	_	_
-27	em	em	ADP	ADP	_	29	case	_	_
-28	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	periélio	periélio	NOUN	NOUN	_	24	nmod	_	SpaceAfter=No
-30	,	_	PUNCT	.	_	31	punct	_	_
-31	relativamente	relativamente	ADV	ADV	_	24	advmod	_	_
-32-33	ao	_	_	_	_	_	_	_	_
-32	a	a	ADP	ADP	_	34	case	_	_
-33	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	afélio	afélio	NOUN	NOUN	_	31	nmod	_	SpaceAfter=No
-35	.	_	PUNCT	.	_	10	punct	_	_
+14	de	_	ADP	ADP	_	15	case	_	_
+15	6,9%	_	NUM	NUM	NumType=Card	13	nmod	_	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	ADP	_	18	case	_	_
+17	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	energia	energia	NOUN	NOUN	_	13	nmod	_	_
+19	solar	solar	ADJ	ADJ	_	18	amod	_	_
+20	que	_	PRON	PRON	_	21	nsubj	_	_
+21	alcança	alcançar	VERB	VERB	_	18	acl:relcl	_	_
+22	a	_	DET	DET	_	23	det	_	_
+23	Terra	_	PROPN	PNOUN	_	21	obj	_	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	ADP	_	26	case	_	_
+25	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	periélio	periélio	NOUN	NOUN	_	21	nmod	_	SpaceAfter=No
+27	,	_	PUNCT	.	_	28	punct	_	_
+28	relativamente	relativamente	ADV	ADV	_	21	advmod	_	_
+29-30	ao	_	_	_	_	_	_	_	_
+29	a	a	ADP	ADP	_	31	case	_	_
+30	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	afélio	afélio	NOUN	NOUN	_	28	nmod	_	SpaceAfter=No
+32	.	_	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 4
 # text = Visto que o hemisfério sul da Terra está inclinado em direção ao Sol aproximadamente no mesmo período do periélio, a quantidade de energia solar recebida pelo hemisfério sul é ligeiramente maior do que a recebida pelo hemisfério norte, ao longo de um ano.
@@ -9659,13 +9532,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lua[editar | editar código-fonte]
-1	Lua[	_	PRON	PRON	_	2	nsubj	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	0	root	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+# text = Lua
+1	Lua	lua	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -10360,16 +10228,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Asteroides e satélites artificiais[editar | editar código-fonte]
-1	Asteroides	asteroide	NOUN	NOUN	_	5	nsubj	_	_
+# text = Asteroides e satélites artificiais
+1	Asteroides	asteroide	NOUN	NOUN	_	0	root	_	_
 2	e	_	CCONJ	CONJ	_	3	cc	_	_
 3	satélites	satélite	NOUN	NOUN	_	1	conj	_	_
-4	artificiais[	artificiais[	ADJ	ADJ	_	3	amod	_	SpaceAfter=No
-5	editar	editar	VERB	VERB	_	0	root	_	_
-6	|	_	PUNCT	.	_	7	punct	_	_
-7	editar	editar	VERB	VERB	_	5	conj	_	_
-8	código-fonte	código-fonte	NOUN	NOUN	_	7	obj	_	SpaceAfter=No
-9	]	_	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+4	artificiais	artificial	ADJ	ADJ	_	3	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -10531,13 +10394,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Habitabilidade[editar | editar código-fonte]
-1	Habitabilidade[	_	NOUN	NOUN	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	csubj	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Habitabilidade
+1	Habitabilidade	habitabilidade	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -10676,13 +10534,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Biosfera[editar | editar código-fonte]
-1	Biosfera[	_	VERB	VERB	_	0	root	_	SpaceAfter=No
-2	editar	editar	VERB	VERB	_	1	xcomp	_	_
-3	|	_	PUNCT	.	_	4	punct	_	_
-4	editar	editar	VERB	VERB	_	2	conj	_	_
-5	código-fonte	código-fonte	NOUN	NOUN	_	4	obj	_	SpaceAfter=No
-6	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Biosfera
+1	Biosfera	_	PROPN	PNOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -10845,20 +10698,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Recursos naturais e uso da terra[editar | editar código-fonte]
-1	Recursos	recurso	NOUN	NOUN	_	8	nsubj	_	_
+# text = Recursos naturais e uso da terra
+1	Recursos	recurso	NOUN	NOUN	_	0	root	_	_
 2	naturais	natural	ADJ	ADJ	_	1	amod	_	_
 3	e	_	CCONJ	CONJ	_	4	cc	_	_
 4	uso	uso	NOUN	NOUN	_	1	conj	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	ADP	_	7	case	_	_
 6	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	terra[	terra[	NOUN	NOUN	_	4	nmod	_	SpaceAfter=No
-8	editar	editar	VERB	VERB	_	0	root	_	_
-9	|	_	PUNCT	.	_	10	punct	_	_
-10	editar	editar	VERB	VERB	_	8	conj	_	_
-11	código-fonte	código-fonte	NOUN	NOUN	_	10	obj	_	SpaceAfter=No
-12	]	_	PUNCT	.	_	10	punct	_	SpacesAfter=\n
+7	terra	terra	NOUN	NOUN	_	4	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -11159,16 +11007,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Perigos naturais e ambientais[editar | editar código-fonte]
+# text = Perigos naturais e ambientais
 1	Perigos	perigo	NOUN	NOUN	_	0	root	_	_
 2	naturais	natural	ADJ	ADJ	_	1	amod	_	_
 3	e	_	CCONJ	CONJ	_	4	cc	_	_
-4	ambientais[	ambientais[	ADJ	ADJ	_	2	conj	_	SpaceAfter=No
-5	editar	editar	VERB	VERB	_	1	parataxis	_	_
-6	|	_	PUNCT	.	_	7	punct	_	_
-7	editar	editar	VERB	VERB	_	5	conj	_	_
-8	código-fonte	código-fonte	NOUN	NOUN	_	7	obj	_	SpaceAfter=No
-9	]	_	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+4	ambientais	ambiental	ADJ	ADJ	_	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -11419,14 +11262,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geografia humana[editar | editar código-fonte]
+# text = Geografia humana
 1	Geografia	geografia	NOUN	NOUN	_	0	root	_	_
-2	humana[	humana[	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+2	humana	humano	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12103,18 +11941,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = A Terra na cultura[editar | editar código-fonte]
+# text = A Terra na cultura
 1	A	_	DET	DET	_	2	det	_	_
-2	Terra	_	PROPN	PNOUN	_	6	nsubj	_	_
+2	Terra	_	PROPN	PNOUN	_	0	root	_	_
 3-4	na	_	_	_	_	_	_	_	_
 3	em	em	ADP	ADP	_	5	case	_	_
 4	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	cultura[	cultura[	NOUN	NOUN	_	2	nmod	_	SpaceAfter=No
-6	editar	editar	VERB	VERB	_	0	root	_	_
-7	|	_	PUNCT	.	_	8	punct	_	_
-8	editar	editar	VERB	VERB	_	6	conj	_	_
-9	código-fonte	código-fonte	NOUN	NOUN	_	8	obj	_	SpaceAfter=No
-10	]	_	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+5	cultura	cultura	NOUN	NOUN	_	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12531,14 +12364,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ver também[editar | editar código-fonte]
+# text = Ver também
 1	Ver	ver	VERB	VERB	_	0	root	_	_
-2	também[	também[	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	xcomp	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	também	também	ADV	ADV	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12547,7 +12375,7 @@
 # newpar
 # sent_id = 1
 # text = Notas
-1	Notas	nota	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+1	Notas	nota	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12556,7 +12384,7 @@
 # newpar
 # sent_id = 1
 # text = Referências
-1	Referências	referência	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
+1	Referências	referência	NOUN	NOUN	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = portuguese-gsd-ud-2.6-200830
@@ -12564,119 +12392,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ligações externas[editar | editar código-fonte]
+# text = Ligações externas
 1	Ligações	ligação	NOUN	NOUN	_	0	root	_	_
-2	externas[	externaso	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
-3	editar	editar	VERB	VERB	_	1	csubj	_	_
-4	|	_	PUNCT	.	_	5	punct	_	_
-5	editar	editar	VERB	VERB	_	3	conj	_	_
-6	código-fonte	código-fonte	NOUN	NOUN	_	5	obj	_	SpaceAfter=No
-7	]	_	PUNCT	.	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = África
-1	África	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = América
-1	América	_	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Antártida
-1	Antártida	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ásia
-1	Ásia	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Austrália
-1	Austrália	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Europa
-1	Europa	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Eurafrásia
-1	Eurafrásia	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Eurásia
-1	Eurásia	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = América do Norte
-1	América	_	NOUN	NOUN	_	0	root	_	_
-2-3	do	_	_	_	_	_	_	_	_
-2	de	de	ADP	ADP	_	4	case	_	_
-3	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Norte	_	PROPN	PNOUN	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = América do Sul
-1	América	_	NOUN	NOUN	_	0	root	_	_
-2-3	do	_	_	_	_	_	_	_	_
-2	de	de	ADP	ADP	_	4	case	_	_
-3	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Sul	_	PROPN	PNOUN	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = portuguese-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Oceania
-1	Oceania	_	PROPN	PNOUN	_	0	root	_	SpacesAfter=\n
+2	externas	externo	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
 

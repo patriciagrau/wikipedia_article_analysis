@@ -1,5 +1,3 @@
-# https://ug.wikipedia.org/wiki/%DA%BE%D9%89%D9%86%D8%AF%D9%89%D8%B3%D8%AA%D8%A7%D9%86
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = uyghur-udt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = ھىندىستان - Wikipedia
 1	ھىندىستان	_	NOUN	N	_	3	appos	_	_
 2	-	-	PUNCT	Y	_	1	punct	_	_
-3	Wikipedia	_	NOUN	N	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = uyghur-udt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = ھىندىستان
-1	ھىندىستان	_	NOUN	N	_	0	root	_	SpacesAfter=\n
+3	Wikipedia	_	NOUN	N	_	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = uyghur-udt-ud-2.6-200830
@@ -35,11 +24,76 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = ھىندىستان بولسا ئاسىياغاجايلاشقان بىر
+# text = ھىندىستان بولسا ئاسىياغاجايلاشقان بىر دۆلەت.
 1	ھىندىستان	_	NOUN	N	_	3	nsubj	_	_
 2	بولسا	بول	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	1	cop	_	_
-3	ئاسىياغاجايلاشقان	_	VERB	N	_	4	amod	_	_
-4	بىر	بىر	NUM	M	_	0	root	_	SpacesAfter=\s\n
+3	ئاسىياغاجايلاشقان	_	NOUN	N	_	5	amod	_	_
+4	بىر	بىر	NUM	M	_	5	nummod	_	SpacesAfter=\s\n
+5	دۆلەت	دۆلەت	NOUN	N	Case=Nom	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Y	_	5	punct	_	_
+
+# sent_id = 2
+# text = ئۇنىڭ پايتەختى بولسا يېڭى دېھلى،
+1	ئۇنىڭ	ئۇ	PRON	P	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	پايتەختى	_	NOUN	N	_	5	nsubj	_	_
+3	بولسا	بول	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	2	cop	_	_
+4	يېڭى	يەڭ	NOUN	A	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	amod	_	_
+5	دېھلى	_	VERB	V	_	0	root	_	SpaceAfter=No
+6	،	،	PUNCT	Y	_	5	punct	_	_
+
+# sent_id = 3
+# text = ئەڭ چوڭ شەھرى بومباي. دۆلەت تىلى بولسا ھىندى تىلى ۋە ئىنگلىزچە.
+1	ئەڭ	ئەڭ	PRON	D	Case=Nom	2	advmod	_	_
+2	چوڭ	چوڭ	ADJ	A	_	3	amod	_	_
+3	شەھرى	_	NOUN	N	_	4	nsubj	_	_
+4	بومباي	_	VERB	V	_	12	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Y	_	4	punct	_	_
+6	دۆلەت	دۆلەت	NOUN	N	Case=Nom	7	nmod	_	_
+7	تىلى	تىل	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
+8	بولسا	بول	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	7	cop	_	_
+9	ھىندى	_	NOUN	N	_	10	nmod	_	_
+10	تىلى	تىل	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+11	ۋە	ۋە	CCONJ	C	_	12	cc	_	_
+12	ئىنگلىزچە	_	NOUN	N	_	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Y	_	10	punct	_	_
+
+# sent_id = 4
+# text = ھازىرقى زۇڭتۇڭ مودى ئەپەندى .
+1	ھازىرقى	ھازىرقى	NOUN	N	Case=Nom	3	amod	_	_
+2	زۇڭتۇڭ	_	NOUN	N	_	3	nsubj	_	_
+3	مودى	مودى	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+4	ئەپەندى	ئەپەندى	NOUN	N	Case=Nom	3	appos	_	_
+5	.	.	PUNCT	Y	_	3	punct	_	_
+
+# sent_id = 5
+# text = بۇ دۆلەت1947 يىلى 8 ئاينىڭ 15 كۇنى مۇستەقىل بولغان,يەر مەيدانى3 مىليون 287 مىڭ 240 كۋادرات كىلومېتىر، نوپۇسى 1 مىليارد 500مىليون ئەتراپىدا قېلىپ:ئوتىرا جەنۇبى ئاسىيا
+1	بۇ	بۇ	PRON	P	Case=Nom|PronType=Dem	2	det	_	_
+2	دۆلەت1947	_	NOUN	N	_	3	nmod	_	_
+3	يىلى	يىل	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
+4	8	8	NUM	M	NumType=Ord	5	nummod	_	_
+5	ئاينىڭ	ئاي	NOUN	N	Case=Gen	7	nmod:poss	_	_
+6	15	15	NUM	M	NumType=Ord	7	nummod	_	_
+7	كۇنى	كۇن	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
+8	مۇستەقىل	مۇستەقىل	ADJ	A	Case=Nom	9	compound	_	_
+9	بولغان,يەر	_	VERB	V	_	10	acl	_	_
+10	مەيدانى3	_	NOUN	N	_	16	nmod:poss	_	_
+11	مىليون	مىليون	NUM	M	Case=Nom|NumType=Ord	13	compound	_	_
+12	287	287	NUM	M	NumType=Ord	13	compound	_	_
+13	مىڭ	مىڭ	NUM	M	_	15	nummod	_	_
+14	240	240	NUM	M	NumType=Ord	15	nummod	_	_
+15	كۋادرات	كۋادرات	NOUN	N	Case=Nom	16	amod	_	_
+16	كىلومېتىر	كىلومېتىر	NOUN	N	Case=Nom	0	root	_	SpaceAfter=No
+17	،	،	PUNCT	Y	_	16	punct	_	_
+18	نوپۇسى	نوپۇس	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	27	nmod	_	_
+19	1	1	NUM	M	NumType=Ord	20	compound	_	_
+20	مىليارد	مىليارد	NOUN	M	Case=Nom	21	nummod	_	_
+21	500مىليون	500مىليون	NOUN	N	Case=Nom	22	nmod	_	_
+22	ئەتراپىدا	ئەتراپىدا	NOUN	N	_	23	obl	_	SpacesAfter=\s\n
+23	قېلىپ	قال	VERB	V	Aspect=Perf|VerbForm=Conv	27	case	_	SpaceAfter=No
+24	:	:	PUNCT	Y	_	23	punct	_	SpaceAfter=No
+25	ئوتىرا	_	NOUN	N	_	26	nmod	_	_
+26	جەنۇبى	جەنۇب	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	27	nmod	_	_
+27	ئاسىيا	_	NOUN	N	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = uyghur-udt-ud-2.6-200830
@@ -55,14 +109,4 @@
 5	ago	ago	X	Y	_	7	nmod	_	_
 6	by	by	PUNCT	Y	_	5	punct	_	_
 7	YiFeiBot	_	NOUN	N	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = uyghur-udt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = يولباشچى تىزىملىكى
-1	يولباشچى	_	NOUN	N	_	2	nmod	_	_
-2	تىزىملىكى	تىزىملىك	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
 

@@ -1,5 +1,3 @@
-# https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D1%8F
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Библия — Википедия
 1	Библия	библия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	—	—	PUNCT	_	_	3	punct	_	_
-3	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
+3	Википедия	Википедия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -17,24 +15,29 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библия
-1	Библия	библия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Танах (Тора • Невиим • Ктувим)
+# text = Танах (Тора • Невиим • Ктувим) Ветхий Завет • Новый Завет Масора • Апокрифы Неканонические книги Второканонические книги Самаритянское Пятикнижие
 1	Танах	танах	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No
 3	Тора	Тора	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
 4	•	•	PUNCT	_	_	5	punct	_	_
 5	Невиим	Невиим	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	conj	_	_
 6	•	•	PUNCT	_	_	7	cc	_	_
-7	Ктувим	Ктувим	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No
+7	Ктувим	Ктувим	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No
 8	)	)	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+9	Ветхий	ветхий	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	Завет	Завет	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
+11	•	•	CCONJ	_	_	13	cc	_	_
+12	Новый	новый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	Завет	Завет	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	10	conj	_	SpacesAfter=\n
+14	Масора	Масор	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	_
+15	•	•	CCONJ	_	_	16	cc	_	_
+16	Апокрифы	Апокрифа	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	14	conj	_	SpacesAfter=\s\n
+17	Неканонические	неканонический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	18	amod	_	_
+18	книги	книга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	13	nmod	_	SpacesAfter=\n
+19	Второканонические	второканонический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	20	amod	_	_
+20	книги	книга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	18	nmod	_	SpacesAfter=\n
+21	Самаритянское	самаритянский	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	22	amod	_	_
+22	Пятикнижие	Пятикнижие	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	18	appos	_	SpacesAfter= \n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -42,10 +45,26 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Таргум • Септуагинта
+# text = Таргум • Септуагинта Старолатинский перевод Вульгата • Пешитта Древнеармянский перевод Острожская Библия Библия Лютера Библия короля Якова Синодальный перевод
 1	Таргум	таргум	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	•	•	PUNCT	_	_	3	punct	_	_
-3	Септуагинта	Септуагинта	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	•	•	CCONJ	_	_	3	cc	_	_
+3	Септуагинта	Септуагинта	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+4	Старолатинский	старолатинский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	перевод	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+6	Вульгата	Вульгат	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+7	•	•	CCONJ	_	_	8	cc	_	_
+8	Пешитта	Пешитт	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	conj	_	SpacesAfter=\n
+9	Древнеармянский	древнеармянский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	перевод	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+11	Острожская	острожский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	Библия	Библия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10	appos	_	SpacesAfter=\n
+13	Библия	Библия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	appos	_	_
+14	Лютера	Лютер	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	SpacesAfter=\n
+15	Библия	Библия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	appos	_	_
+16	короля	король	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	_
+17	Якова	Яков	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	16	appos	_	SpacesAfter=\n
+18	Синодальный	синодальный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	перевод	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -53,9 +72,22 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библейская хронология
+# text = Библейская хронология Кумранские рукописи Рукописи Библии Каирская гениза Библейская археология Библейская география Исагогика Библейская критика
 1	Библейская	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	хронология	хронология	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+3	Кумранские	кумранский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	4	amod	_	_
+4	рукописи	рукопись	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	2	nsubj	_	SpacesAfter=\n
+5	Рукописи	Рукопись	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpacesAfter=\n
+7	Каирская	каирский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	гениза	гениза	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	appos	_	SpacesAfter=\n
+9	Библейская	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+10	археология	археология	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	appos	_	SpacesAfter=\n
+11	Библейская	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
+12	география	география	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10	appos	_	SpacesAfter=\n
+13	Исагогика	Исагогика	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	appos	_	SpacesAfter=\n
+14	Библейская	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	критика	критика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	appos	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -63,10 +95,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Герменевтика • Экзегетика
+# text = Герменевтика • Экзегетика Пешер • Мидраш • Пардес Аллегоризм • Буквализм
 1	Герменевтика	герменевтика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	•	•	CCONJ	_	_	3	cc	_	_
 3	Экзегетика	Экзегетика	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+4	Пешер	Пешер	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	appos	_	_
+5	•	•	PUNCT	_	_	6	punct	_	_
+6	Мидраш	Мидраш	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+7	•	•	CCONJ	_	_	8	cc	_	_
+8	Пардес	Пардес	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+9	Аллегоризм	Аллегоризм	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	appos	_	_
+10	•	•	CCONJ	_	_	11	cc	_	_
+11	Буквализм	Буквализм	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -74,10 +114,22 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Пророчества • Мессия
+# text = Пророчества • Мессия Второе пришествие • Антихрист Армагеддон • Страшный суд Хилиазм • Вечная жизнь
 1	Пророчества	пророчество	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
-2	•	•	SYM	_	_	3	cc	_	_
+2	•	•	CCONJ	_	_	3	cc	_	_
 3	Мессия	Мессия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+4	Второе	второй	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	_
+5	пришествие	пришествие	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
+6	•	•	PUNCT	_	_	7	cc	_	_
+7	Антихрист	Антихрист	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+8	Армагеддон	Армагеддон	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	flat:name	_	_
+9	•	•	CCONJ	_	_	11	cc	_	_
+10	Страшный	страшный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	суд	суд	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+12	Хилиазм	Хилиазм	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	appos	_	SpacesAfter=\s\s
+13	•	•	CCONJ	_	_	15	cc	_	_
+14	Вечная	вечный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	жизнь	жизнь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -85,10 +137,32 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Адам • Ной
-1	Адам	адам	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-2	•	•	SYM	_	_	3	cc	_	_
-3	Ной	Ной	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	appos	_	SpacesAfter=\n
+# text = Адам • Ной Авраам • Исаак • Иаков Моисей Давид • Соломон Исаия • Иезекииль Дева Мария • Иисус Христос Апостол Пётр • Апостол Павел
+1	Адам	Адам	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+2	•	•	CCONJ	_	_	3	cc	_	_
+3	Ной	Ной	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+4	Авраам	Авраам	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	flat:name	_	_
+5	•	•	CCONJ	_	_	6	cc	_	_
+6	Исаак	Исаак	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+7	•	•	CCONJ	_	_	8	cc	_	_
+8	Иаков	Иаков	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+9	Моисей	Моисей	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	flat:name	_	SpacesAfter=\n
+10	Давид	Давид	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	flat:name	_	_
+11	•	•	CCONJ	_	_	12	cc	_	_
+12	Соломон	Соломон	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+13	Исаия	Исаия	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	12	flat:name	_	_
+14	•	•	PUNCT	_	_	15	cc	_	_
+15	Иезекииль	Иезекииль	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\n
+16	Дева	Дева	PROPN	_	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	15	appos	_	_
+17	Мария	Мария	PROPN	_	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	16	flat:name	_	_
+18	•	•	PUNCT	_	_	19	cc	_	_
+19	Иисус	Иисус	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+20	Христос	Христос	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	19	flat:name	_	SpacesAfter=\n
+21	Апостол	Апостол	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	19	flat:name	_	_
+22	Пётр	Петр	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	21	flat:name	_	_
+23	•	•	CCONJ	_	_	24	cc	_	_
+24	Апостол	Апостол	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+25	Павел	Павел	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	24	flat:name	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -96,11 +170,29 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Сотворение мира • Грехопадение
+# text = Сотворение мира • Грехопадение Всемирный потоп Вавилонская башня Содом и Гоморра Жертвоприношение Исаака Исход • Золотой телец Рождество • Преображение • Воскресение
 1	Сотворение	сотворение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	мира	мир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	•	•	SYM	_	_	4	cc	_	_
+3	•	•	CCONJ	_	_	4	cc	_	_
 4	Грехопадение	Грехопадение	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	SpacesAfter=\n
+5	Всемирный	всемирный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	потоп	потоп	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	SpacesAfter=\n
+7	Вавилонская	вавилонский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	башня	башня	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n
+9	Содом	Сод	PROPN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	8	nmod	_	_
+10	и	и	CCONJ	_	_	11	cc	_	_
+11	Гоморра	Гоморр	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	conj	_	SpacesAfter=\n
+12	Жертвоприношение	Жертвоприношение	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	8	appos	_	_
+13	Исаака	Исаак	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	SpacesAfter=\n
+14	Исход	Исход	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	12	appos	_	_
+15	•	•	PUNCT	_	_	17	cc	_	_
+16	Золотой	золотой	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	телец	телец	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\s\n
+18	Рождество	Рождество	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	17	appos	_	_
+19	•	•	PUNCT	_	_	20	punct	_	_
+20	Преображение	Преображение	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
+21	•	•	PUNCT	_	_	22	punct	_	_
+22	Воскресение	Воскресение	PROPN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	18	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -623,14 +715,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Этимология[править | править код]
+# text = Этимология
 1	Этимология	этимология	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -715,14 +801,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Название[править | править код]
+# text = Название
 1	Название	название	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -793,15 +873,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библейский канон[править | править код]
+# text = Библейский канон
 1	Библейский	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	канон	канон	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -906,15 +980,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Состав Библии[править | править код]
+# text = Состав Библии
 1	Состав	состав	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -966,15 +1034,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ветхий Завет[править | править код]
+# text = Ветхий Завет
 1	Ветхий	ветхий	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	Завет	Завет	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1247,14 +1309,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Танах[править | править код]
-1	Танах	танах	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+# text = Танах
+1	Танах	тана	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -1776,17 +1832,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Второканонические и неканонические книги[править | править код]
+# text = Второканонические и неканонические книги
 1	Второканонические	второканонический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	4	amod	_	_
 2	и	и	CCONJ	_	_	3	cc	_	_
 3	неканонические	неканонический	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	1	conj	_	_
 4	книги	книга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-5	[	[	PUNCT	_	_	6	punct	_	SpaceAfter=No
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	parataxis	_	_
-7	|	|	PUNCT	_	_	6	punct	_	_
-8	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	6	xcomp	_	_
-9	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -2453,6 +2503,158 @@
 22	принято	принять	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
 23	постановление	постановление	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	22	nsubj:pass	_	SpaceAfter=No
 24	:	:	PUNCT	_	_	22	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Следуя правилу Кафолической Церкви, называем Священным Писанием все те книги, которые признал Лаодикийский собор, а также:
+1	Следуя	следовать	VERB	_	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	6	advcl	_	SpacesBefore=\n
+2	правилу	правило	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	1	iobj	_	_
+3	Кафолической	кафолический	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	Церкви	Церковь	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	_	_
+6	называем	называть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Священным	священный	ADJ	_	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	_
+8	Писанием	Писание	PROPN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	6	obl	_	_
+9	все	весь	DET	_	Case=Acc|Number=Plur	11	det	_	_
+10	те	тот	DET	_	Case=Acc|Number=Plur	11	det	_	_
+11	книги	книга	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	6	obj	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	_	_
+13	которые	который	PRON	_	Case=Acc	14	obj	_	_
+14	признал	признать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	Лаодикийский	лаодикийский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	_
+16	собор	собор	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	14	nsubj	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	_	_
+18	а	а	CCONJ	_	_	11	cc	_	_
+19	также	также	PART	_	_	18	fixed	_	SpaceAfter=No
+20	:	:	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 2
+# text = Премудрость Соломона, Иудифь, Товия, Даниил 13—14 главы (повесть о Сусанне и история о Виле и Драконе), книги Маккавейские и Премудрость Сираха.
+1	Премудрость	премудрость	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	Соломона	Соломон	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	Иудифь	Иудифь	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	_	_
+6	Товия	Товия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	_	_
+8	Даниил	Даниил	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+9	13	13	NUM	_	_	8	nummod	_	SpaceAfter=No
+10	—	—	PUNCT	_	_	11	punct	_	SpaceAfter=No
+11	14	14	NUM	_	_	9	nummod	_	_
+12	главы	глава	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	8	parataxis	_	_
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No
+14	повесть	повесть	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	parataxis	_	_
+15	о	о	ADP	_	_	16	case	_	_
+16	Сусанне	Сусанн	PROPN	_	Animacy=Anim|Case=Loc|Gender=Masc|Number=Sing	14	nmod	_	_
+17	и	и	CCONJ	_	_	18	cc	_	_
+18	история	история	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	14	conj	_	_
+19	о	о	ADP	_	_	20	case	_	_
+20	Виле	Вил	PROPN	_	Animacy=Anim|Case=Loc|Gender=Masc|Number=Sing	18	nmod	_	_
+21	и	и	CCONJ	_	_	22	cc	_	_
+22	Драконе	Дракон	PROPN	_	Animacy=Anim|Case=Loc|Gender=Masc|Number=Sing	20	conj	_	SpaceAfter=No
+23	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	_	_
+25	книги	книга	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	conj	_	_
+26	Маккавейские	Маккавейский	PROPN	_	_	25	appos	_	_
+27	и	и	CCONJ	_	_	28	cc	_	_
+28	Премудрость	Премудрость	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	_	_
+29	Сираха	Сирах	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 3
+# text = Их признаём наравне с другими книгами неизменной и действительной частью Священного Писания.
+1	Их	они	PRON	_	Case=Acc|Number=Plur|Person=3	2	obj	_	_
+2	признаём	признавать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	наравне	наравне	ADV	_	Degree=Pos	6	case	_	_
+4	с	с	ADP	_	_	3	fixed	_	_
+5	другими	другой	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	6	amod	_	_
+6	книгами	книга	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	2	obl	_	_
+7	неизменной	неизменный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+8	и	и	CCONJ	_	_	9	cc	_	_
+9	действительной	действительный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	7	conj	_	_
+10	частью	часть	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	2	obl	_	_
+11	Священного	священный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	_
+12	Писания	Писание	PROPN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 4
+# text = Как преданы Церковью действительной частью Священного Писания Евангелия, так и сии преданы без сомнения такой же частью Священного Писания, и кто отвергает их, тот и Евангелия отвергает.
+1	Как	как	SCONJ	_	_	2	mark	_	_
+2	преданы	предать	VERB	_	Aspect=Perf|Number=Plur|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+3	Церковью	Церковь	PROPN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	2	obl	_	_
+4	действительной	действительный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+5	частью	часть	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	2	obl	_	_
+6	Священного	священный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	_
+7	Писания	Писание	PROPN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	_
+8	Евангелия	Евангелие	PROPN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	_	_
+10	так	так	ADV	_	Degree=Pos	13	advmod	_	_
+11	и	и	PART	_	_	10	fixed	_	_
+12	сии	сей	NOUN	_	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	13	nsubj:pass	_	_
+13	преданы	предать	VERB	_	Aspect=Perf|Number=Plur|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	2	conj	_	_
+14	без	без	ADP	_	_	15	case	_	_
+15	сомнения	сомнение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	13	obl	_	_
+16	такой	такой	DET	_	Case=Ins|Gender=Fem|Number=Sing	18	det	_	_
+17	же	же	PART	_	_	16	advmod	_	_
+18	частью	часть	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	13	obl	_	_
+19	Священного	священный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	_
+20	Писания	Писание	PROPN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	18	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	_	_
+22	и	и	CCONJ	_	_	24	cc	_	_
+23	кто	кто	PRON	_	Case=Nom	24	nsubj	_	_
+24	отвергает	отвергать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
+25	их	они	PRON	_	Case=Acc|Number=Plur|Person=3	24	obj	_	SpaceAfter=No
+26	,	,	PUNCT	_	_	30	punct	_	_
+27	тот	тот	DET	_	Case=Nom|Gender=Masc|Number=Sing	30	nsubj	_	_
+28	и	и	PART	_	_	29	advmod	_	_
+29	Евангелия	Евангелие	PROPN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Plur	30	obj	_	_
+30	отвергает	отвергать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+31	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 5
+# text = И всё то, что всегда, всеми соборами, древнейшими в Кафолической Церкви и знаменитейшими богословами, счисляется и включается в Священное Писание, — всё то и мы считаем каноническими книгами и признаём Священным Писанием.
+1	И	и	CCONJ	_	_	31	cc	_	_
+2	всё	весь	DET	_	Case=Nom|Gender=Neut|Number=Sing	3	det	_	_
+3	то	то	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	31	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	_	_
+5	что	что	PRON	_	Case=Nom	6	nsubj	_	_
+6	всегда	всегда	ADV	_	Degree=Pos	19	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	_	_
+8	всеми	весь	DET	_	Case=Ins|Number=Plur	9	det	_	_
+9	соборами	собор	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	древнейшими	древнеий	ADJ	_	Case=Ins|Degree=Sup|Number=Plur	9	amod	_	_
+12	в	в	ADP	_	_	14	case	_	_
+13	Кафолической	кафолический	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	Церкви	Церковь	PROPN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	11	nmod	_	_
+15	и	и	CCONJ	_	_	17	cc	_	_
+16	знаменитейшими	знаменитый	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	17	amod	_	_
+17	богословами	богослов	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No
+18	,	,	PUNCT	_	_	3	punct	_	_
+19	счисляется	счислять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	3	acl	_	_
+20	и	и	CCONJ	_	_	21	cc	_	_
+21	включается	включать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	19	conj	_	_
+22	в	в	ADP	_	_	24	case	_	_
+23	Священное	священный	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	24	amod	_	_
+24	Писание	Писание	PROPN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	21	obl	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	24	punct	_	SpacesAfter= 
+26	—	—	PUNCT	_	_	31	punct	_	_
+27	всё	весь	DET	_	Case=Acc|Gender=Neut|Number=Sing	28	det	_	_
+28	то	то	PRON	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	31	obj	_	_
+29	и	и	PART	_	_	30	advmod	_	_
+30	мы	мы	PRON	_	Case=Nom|Number=Plur|Person=1	31	nsubj	_	_
+31	считаем	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+32	каноническими	канонический	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	33	amod	_	_
+33	книгами	книга	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Plur	31	obl	_	_
+34	и	и	CCONJ	_	_	35	cc	_	_
+35	признаём	признавать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	19	conj	_	_
+36	Священным	священный	ADJ	_	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing	37	amod	_	_
+37	Писанием	Писание	PROPN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	35	obl	_	SpaceAfter=No
+38	.	.	PUNCT	_	_	31	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3137,6 +3339,14 @@
 50	)	)	PUNCT	_	_	47	punct	_	SpaceAfter=No
 51	.	.	PUNCT	_	_	30	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Среди этих семи книг:
+1	Среди	среди	ADP	_	_	4	case	_	_
+2	этих	этот	DET	_	Case=Gen|Number=Plur	4	det	_	_
+3	семи	семь	NUM	_	Case=Gen	4	nummod	_	_
+4	книг	книга	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -3372,15 +3582,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Новый Завет[править | править код]
+# text = Новый Завет
 1	Новый	новый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	Завет	Завет	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3780,14 +3984,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Апокрифы[править | править код]
+# text = Апокрифы
 1	Апокрифы	апокриф	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4093,14 +4291,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Авторство[править | править код]
+# text = Авторство
 1	Авторство	авторство	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4334,15 +4526,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = История Библии[править | править код]
+# text = История Библии
 1	История	история	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4350,16 +4536,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Текст Ветхого Завета[править | править код]
+# text = Текст Ветхого Завета
 1	Текст	текст	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	Ветхого	ветхий	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 3	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-6	|	|	PUNCT	_	_	5	punct	_	_
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	conj	_	_
-8	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4984,16 +5164,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = История канона Библии[править | править код]
+# text = История канона Библии
 1	История	история	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	канона	канон	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 3	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-6	|	|	PUNCT	_	_	5	punct	_	_
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	conj	_	_
-8	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -5594,15 +5768,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Рукописи Библии[править | править код]
+# text = Рукописи Библии
 1	Рукописи	рукопись	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 2	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -5698,18 +5866,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Деление на главы и стихи[править | править код]
+# text = Деление на главы и стихи
 1	Деление	деление	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	на	на	ADP	_	_	3	case	_	_
 3	главы	глава	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	1	nmod	_	_
 4	и	и	CCONJ	_	_	5	cc	_	_
 5	стихи	стих	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	3	conj	_	SpaceAfter=No
-6	[	[	PUNCT	_	_	7	punct	_	SpaceAfter=No
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-8	|	|	PUNCT	_	_	7	punct	_	_
-9	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	7	conj	_	_
-10	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	_	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6103,17 +6265,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библия в религиях мира[править | править код]
+# text = Библия в религиях мира
 1	Библия	библия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	в	в	ADP	_	_	3	case	_	_
 3	религиях	религия	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	1	nmod	_	_
 4	мира	мир	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-5	[	[	PUNCT	_	_	6	punct	_	SpaceAfter=No
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-7	|	|	PUNCT	_	_	6	punct	_	_
-8	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	6	conj	_	_
-9	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6121,14 +6277,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Иудаизм[править | править код]
+# text = Иудаизм
 1	Иудаизм	иудаизм	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6136,14 +6286,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Христианство[править | править код]
+# text = Христианство
 1	Христианство	христианство	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6829,14 +6973,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ислам[править | править код]
+# text = Ислам
 1	Ислам	ислам	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -7177,51 +7315,48 @@
 23	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 4
-# text = Согласно профессору апологетики и теологии Норману Гайслеру[en], нет абсолютно никаких сведений о том, что содержание Нового Завета было искажено, как считают мусульмане, и отрицание мусульманами подлинности Нового Завета несовместимо с их собственной верой в богодухновенность Корана.
+# text = Согласно профессору апологетики и теологии Норману Гайслеру, нет абсолютно никаких сведений о том, что содержание Нового Завета было искажено, как считают мусульмане, и отрицание мусульманами подлинности Нового Завета несовместимо с их собственной верой в богодухновенность Корана.
 1	Согласно	согласно	ADP	_	_	2	case	_	_
-2	профессору	профессор	NOUN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	12	obl	_	_
+2	профессору	профессор	NOUN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
 3	апологетики	апологетика	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 4	и	и	CCONJ	_	_	5	cc	_	_
 5	теологии	теология	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	3	conj	_	_
 6	Норману	Норман	PROPN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	2	appos	_	_
 7	Гайслеру	Гайслер	PROPN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	6	flat:name	_	SpaceAfter=No
-8	[	[	PUNCT	_	_	9	punct	_	SpaceAfter=No
-9	en	en	X	_	Foreign=Yes	6	flat:foreign	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	9	punct	_	SpaceAfter=No
-11	,	,	PUNCT	_	_	2	punct	_	_
-12	нет	нет	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-13	абсолютно	абсолютно	ADV	_	Degree=Pos	14	obl	_	_
-14	никаких	никакой	DET	_	Case=Gen|Number=Plur	15	det	_	_
-15	сведений	сведение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	12	nsubj	_	_
-16	о	о	ADP	_	_	17	case	_	_
-17	том	то	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	15	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	_	_	24	punct	_	_
-19	что	что	SCONJ	_	_	24	mark	_	_
-20	содержание	содержание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	24	nsubj:pass	_	_
-21	Нового	новый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	22	amod	_	_
-22	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
-23	было	быть	AUX	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	24	aux:pass	_	_
-24	искажено	искадить	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	17	acl	_	SpaceAfter=No
-25	,	,	PUNCT	_	_	27	punct	_	_
-26	как	как	SCONJ	_	_	27	mark	_	_
-27	считают	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	parataxis	_	_
-28	мусульмане	мусульманин	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	27	nsubj	_	SpaceAfter=No
-29	,	,	PUNCT	_	_	36	punct	_	_
-30	и	и	CCONJ	_	_	36	cc	_	_
-31	отрицание	отрицание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	36	nsubj	_	_
-32	мусульманами	мусульманин	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	31	nmod	_	_
-33	подлинности	подлинность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	31	nmod	_	_
-34	Нового	новый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	35	amod	_	_
-35	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	33	nmod	_	_
-36	несовместимо	несовместимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	24	conj	_	_
-37	с	с	ADP	_	_	40	case	_	_
-38	их	их	DET	_	_	40	det	_	_
-39	собственной	собственный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	40	amod	_	_
-40	верой	вера	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	36	obl	_	_
-41	в	в	ADP	_	_	42	case	_	_
-42	богодухновенность	богодухновенность	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	40	nmod	_	_
-43	Корана	Коран	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	42	nmod	_	SpaceAfter=No
-44	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n
+8	,	,	PUNCT	_	_	2	punct	_	_
+9	нет	нет	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	абсолютно	абсолютно	ADV	_	Degree=Pos	11	obl	_	_
+11	никаких	никакой	DET	_	Case=Gen|Number=Plur	12	det	_	_
+12	сведений	сведение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	9	nsubj	_	_
+13	о	о	ADP	_	_	14	case	_	_
+14	том	то	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	21	punct	_	_
+16	что	что	SCONJ	_	_	21	mark	_	_
+17	содержание	содержание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	21	nsubj:pass	_	_
+18	Нового	новый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	17	nmod	_	_
+20	было	быть	AUX	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	21	aux:pass	_	_
+21	искажено	искадить	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	14	acl	_	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	_	_
+23	как	как	SCONJ	_	_	24	mark	_	_
+24	считают	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	parataxis	_	_
+25	мусульмане	мусульманин	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	24	nsubj	_	SpaceAfter=No
+26	,	,	PUNCT	_	_	33	punct	_	_
+27	и	и	CCONJ	_	_	33	cc	_	_
+28	отрицание	отрицание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	33	nsubj	_	_
+29	мусульманами	мусульманин	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	28	nmod	_	_
+30	подлинности	подлинность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	28	nmod	_	_
+31	Нового	новый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	32	amod	_	_
+32	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	30	nmod	_	_
+33	несовместимо	несовместимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	21	conj	_	_
+34	с	с	ADP	_	_	37	case	_	_
+35	их	их	DET	_	_	37	det	_	_
+36	собственной	собственный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	37	amod	_	_
+37	верой	вера	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	33	obl	_	_
+38	в	в	ADP	_	_	39	case	_	_
+39	богодухновенность	богодухновенность	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	37	nmod	_	_
+40	Корана	Коран	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	39	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -7411,14 +7546,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Прочие[править | править код]
+# text = Прочие
 1	Прочие	прочий	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -7465,15 +7594,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Переводы Библии[править | править код]
+# text = Переводы Библии
 1	Переводы	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -7739,15 +7862,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Древнеармянский перевод[править | править код]
+# text = Древнеармянский перевод
 1	Древнеармянский	древнеармянский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	перевод	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	xcomp	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -7891,15 +8008,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Церковнославянские переводы[править | править код]
+# text = Церковнославянские переводы
 1	Церковнославянские	церковнославянский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	переводы	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -8504,18 +8615,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Краткая история русского перевода Библии[править | править код]
+# text = Краткая история русского перевода Библии
 1	Краткая	краткий	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	история	история	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	русского	русский	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 4	перевода	перевод	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
 5	Библии	Библия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-6	[	[	PUNCT	_	_	7	punct	_	SpaceAfter=No
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-8	|	|	PUNCT	_	_	7	punct	_	_
-9	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	7	xcomp	_	_
-10	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
-11	]	]	PUNCT	_	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9051,6 +9156,40 @@
 26	достоинствами	достоинство	NOUN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Plur	24	obl	_	SpaceAfter=No
 27	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = В 1862 году, сорок лет спустя после первого издания русскоязычного Нового Завета, было выпущено в свет его второе издание — несколько улучшенное, на более современном русском языке.
+1	В	в	ADP	_	_	3	case	_	_
+2	1862	1862	NUM	_	_	3	nummod	_	_
+3	году	год	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	16	obl	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	_	_
+5	сорок	сорок	NUM	_	Case=Acc	6	nummod:gov	_	_
+6	лет	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	3	conj	_	_
+7	спустя	спустя	ADP	_	_	10	case	_	_
+8	после	после	ADP	_	_	10	case	_	_
+9	первого	первый	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
+10	издания	издание	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+11	русскоязычного	русскоязычный	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+12	Нового	новый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	Завета	Завет	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	_	_
+15	было	быть	AUX	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	16	aux:pass	_	_
+16	выпущено	выпустить	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+17	в	в	ADP	_	_	18	case	_	_
+18	свет	свет	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	16	obl	_	_
+19	его	его	DET	_	_	21	det	_	_
+20	второе	второй	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	21	amod	_	_
+21	издание	издание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	16	nsubj:pass	_	SpacesAfter= 
+22	—	—	PUNCT	_	_	24	punct	_	_
+23	несколько	несколько	ADV	_	Degree=Pos	24	advmod	_	_
+24	улучшенное	улучшить	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	21	acl	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	30	punct	_	_
+26	на	на	ADP	_	_	30	case	_	_
+27	более	более	ADV	_	Degree=Cmp	28	obl	_	_
+28	современном	современный	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	30	amod	_	_
+29	русском	русский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	30	amod	_	_
+30	языке	язык	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	24	obl	_	SpaceAfter=No
+31	.	.	PUNCT	_	_	16	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9452,15 +9591,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библейские персонажи[править | править код]
+# text = Библейские персонажи
 1	Библейские	библейский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	персонажи	персонаж	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	6	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9489,14 +9622,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Исследования[править | править код]
+# text = Исследования
 1	Исследования	исследование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9749,15 +9876,117 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Библейская критика[править | править код]
+# text = Библейская критика
 1	Библейская	библейский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	критика	критика	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = russian-syntagrus-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Она вдохновляла на создание великих памятников человеческой мысли, литературы и искусства, и в то же время потворствовала худшим проявлениям человеческой жестокости, корыстолюбия и ограниченности.
+1	Она	она	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	nsubj	_	SpacesBefore=\n
+2	вдохновляла	вдохновлять	VERB	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	на	на	ADP	_	_	4	case	_	_
+4	создание	создание	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	obl	_	_
+5	великих	великий	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+6	памятников	памятник	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	_
+7	человеческой	человеческий	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	_
+8	мысли	мысль	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	литературы	литература	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	8	conj	_	_
+11	и	и	CCONJ	_	_	12	cc	_	_
+12	искусства	искусство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	conj	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	19	punct	_	_
+14	и	и	CCONJ	_	_	19	cc	_	_
+15	в	в	ADP	_	_	18	case	_	_
+16	то	тот	DET	_	Case=Acc|Gender=Neut|Number=Sing	18	det	_	_
+17	же	же	PART	_	_	16	advmod	_	_
+18	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	19	obl	_	_
+19	потворствовала	потворствовать	VERB	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+20	худшим	худший	ADJ	_	Case=Dat|Degree=Pos|Number=Plur	21	amod	_	_
+21	проявлениям	проявление	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Plur	19	iobj	_	_
+22	человеческой	человеческий	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
+23	жестокости	жестокость	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	_	_
+25	корыстолюбия	корыстолюбие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	23	conj	_	_
+26	и	и	CCONJ	_	_	27	cc	_	_
+27	ограниченности	ограниченность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	23	conj	_	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 2
+# text = Она побуждала к великим свершениям во имя свободы и развития человечества, и в то же время служила идеологической подпиткой для порабощения и угнетения народов.
+1	Она	она	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	nsubj	_	_
+2	побуждала	побуждать	VERB	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	к	к	ADP	_	_	5	case	_	_
+4	великим	великий	ADJ	_	Case=Dat|Degree=Pos|Number=Plur	5	amod	_	_
+5	свершениям	свершение	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Plur	2	obl	_	_
+6	во	в	ADP	_	_	7	case	_	_
+7	имя	имя	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	5	nmod	_	_
+8	свободы	свобода	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	_
+9	и	и	CCONJ	_	_	10	cc	_	_
+10	развития	развитие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	conj	_	_
+11	человечества	человечество	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	10	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	18	punct	_	_
+13	и	и	CCONJ	_	_	18	cc	_	_
+14	в	в	ADP	_	_	17	case	_	_
+15	то	тот	DET	_	Case=Acc|Gender=Neut|Number=Sing	17	det	_	_
+16	же	же	PART	_	_	15	advmod	_	_
+17	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	18	obl	_	_
+18	служила	служить	VERB	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+19	идеологической	идеологический	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	_
+20	подпиткой	подпитка	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	18	obl	_	_
+21	для	для	ADP	_	_	22	case	_	_
+22	порабощения	порабощение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	20	nmod	_	_
+23	и	и	CCONJ	_	_	24	cc	_	_
+24	угнетения	угнетение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	22	conj	_	_
+25	народов	народ	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	24	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 3
+# text = Этот источник религиозных и нравственных норм объединяет людей, помогает заботиться друг о друге и защищать ближнего своего; но именно это сильное чувство принадлежности служит благодатной почвой для роста этнической, расовой и международной напряжённости и развития конфликтов.
+1	Этот	этот	DET	_	Case=Nom|Gender=Masc|Number=Sing	2	det	_	_
+2	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+3	религиозных	религиозный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+4	и	и	CCONJ	_	_	5	cc	_	_
+5	нравственных	нравственный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	3	conj	_	_
+6	норм	норма	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+7	объединяет	объединять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	людей	человек	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	помогает	помогать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+11	заботиться	заботиться	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Mid	10	xcomp	_	_
+12	друг	друг	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	11	obl	_	_
+13	о	о	ADP	_	_	12	fixed	_	_
+14	друге	друг	NOUN	_	Animacy=Anim|Case=Loc|Gender=Masc|Number=Sing	12	fixed	_	_
+15	и	и	CCONJ	_	_	16	cc	_	_
+16	защищать	защищать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	11	conj	_	_
+17	ближнего	ближний	ADJ	_	Animacy=Anim|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	16	obj	_	_
+18	своего	свой	DET	_	Case=Acc|Gender=Masc|Number=Sing	17	det	_	SpaceAfter=No
+19	;	;	PUNCT	_	_	7	punct	_	_
+20	но	но	CCONJ	_	_	26	cc	_	_
+21	именно	именно	PART	_	_	22	advmod	_	_
+22	это	этот	DET	_	Case=Nom|Gender=Neut|Number=Sing	24	det	_	_
+23	сильное	сильный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	24	amod	_	_
+24	чувство	чувство	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	26	nsubj	_	_
+25	принадлежности	принадлежность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	_
+26	служит	служить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+27	благодатной	благодатный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	28	amod	_	_
+28	почвой	почва	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	26	obl	_	_
+29	для	для	ADP	_	_	30	case	_	_
+30	роста	рост	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	28	nmod	_	_
+31	этнической	этнический	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	_	_
+33	расовой	расовый	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	31	conj	_	_
+34	и	и	CCONJ	_	_	35	cc	_	_
+35	международной	международный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	31	conj	_	_
+36	напряжённости	напряженность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	30	nmod	_	_
+37	и	и	CCONJ	_	_	38	cc	_	_
+38	развития	развитие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	36	conj	_	_
+39	конфликтов	конфликт	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	38	nmod	_	SpaceAfter=No
+40	.	.	PUNCT	_	_	7	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9918,7 +10147,7 @@
 14	.	.	PUNCT	_	_	8	punct	_	_
 
 # sent_id = 2
-# text = Иудеи не принимают Новый Завет (так как не считают Иисуса Христа обещанным Мессией), большинство христиан отрицает легитимность апокрифов Нового Завета как противоречащих Новому Завету, а некоторые из христиан[en] отрицают вообще все библейские тексты, кроме евангельского учения Христа.
+# text = Иудеи не принимают Новый Завет (так как не считают Иисуса Христа обещанным Мессией), большинство христиан отрицает легитимность апокрифов Нового Завета как противоречащих Новому Завету, а некоторые из христиан отрицают вообще все библейские тексты, кроме евангельского учения Христа.
 1	Иудеи	иудей	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	_
 2	не	не	PART	_	_	3	advmod	_	_
 3	принимают	принимать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -9946,24 +10175,22 @@
 25	противоречащих	противоречить	VERB	_	Aspect=Imp|Case=Gen|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	21	acl	_	_
 26	Новому	новый	ADJ	_	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	27	amod	_	_
 27	Завету	Завет	PROPN	_	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	25	iobj	_	SpaceAfter=No
-28	,	,	PUNCT	_	_	35	punct	_	_
-29	а	а	CCONJ	_	_	35	cc	_	_
-30	некоторые	некоторый	DET	_	Case=Nom|Number=Plur	35	nsubj	_	_
+28	,	,	PUNCT	_	_	33	punct	_	_
+29	а	а	CCONJ	_	_	33	cc	_	_
+30	некоторые	некоторый	DET	_	Case=Nom|Number=Plur	33	nsubj	_	_
 31	из	из	ADP	_	_	32	case	_	_
-32	христиан[	христиан[	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	30	nmod	_	SpaceAfter=No
-33	en	en	X	_	Foreign=Yes	32	flat:foreign	_	SpaceAfter=No
-34	]	]	PUNCT	_	_	30	punct	_	_
-35	отрицают	отрицать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
-36	вообще	вообще	ADV	_	Degree=Pos	37	obl	_	_
-37	все	весь	DET	_	Case=Acc|Number=Plur	39	det	_	_
-38	библейские	библейский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	39	amod	_	_
-39	тексты	текст	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	35	obj	_	SpaceAfter=No
-40	,	,	PUNCT	_	_	43	punct	_	_
-41	кроме	кроме	ADP	_	_	43	case	_	_
-42	евангельского	евангельский	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	43	amod	_	_
-43	учения	учение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	39	nmod	_	_
-44	Христа	Христос	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	43	nmod	_	SpaceAfter=No
-45	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+32	христиан	христианин	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	30	nmod	_	_
+33	отрицают	отрицать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+34	вообще	вообще	ADV	_	Degree=Pos	35	obl	_	_
+35	все	весь	DET	_	Case=Acc|Number=Plur	37	det	_	_
+36	библейские	библейский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	37	amod	_	_
+37	тексты	текст	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	33	obj	_	SpaceAfter=No
+38	,	,	PUNCT	_	_	41	punct	_	_
+39	кроме	кроме	ADP	_	_	41	case	_	_
+40	евангельского	евангельский	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	41	amod	_	_
+41	учения	учение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	37	nmod	_	_
+42	Христа	Христос	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
+43	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9971,19 +10198,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Связанные с Библией науки и учения[править | править код]
+# text = Связанные с Библией науки и учения
 1	Связанные	связать	VERB	_	Aspect=Perf|Case=Nom|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
 2	с	с	ADP	_	_	3	case	_	_
 3	Библией	Библия	PROPN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	1	obl	_	_
 4	науки	наука	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
 5	и	и	CCONJ	_	_	6	cc	_	_
 6	учения	учение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	4	conj	_	SpaceAfter=No
-7	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No
-8	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	parataxis	_	_
-9	|	|	PUNCT	_	_	8	punct	_	_
-10	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	8	xcomp	_	_
-11	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
-12	]	]	PUNCT	_	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -9991,15 +10212,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Интересные факты[править | править код]
+# text = Интересные факты
 1	Интересные	интересный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	факты	факт	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10007,16 +10222,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = См. также[править | править код]
+# text = См. также
 1	См	смотреть	VERB	_	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	_	_	1	punct	_	_
-3	также	также	ADV	_	Degree=Pos	5	advmod	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	xcomp	_	_
-6	|	|	PUNCT	_	_	7	punct	_	_
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	conj	_	_
-8	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	1	punct	_	SpacesAfter=\n
+3	также	также	ADV	_	Degree=Pos	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10024,14 +10233,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Примечания[править | править код]
+# text = Примечания
 1	Примечания	примечание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10039,14 +10242,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Литература[править | править код]
+# text = Литература
 1	Литература	литература	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10054,15 +10251,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Учебные Библии[править | править код]
+# text = Учебные Библии
 1	Учебные	учебный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	Библии	Библия	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10070,14 +10261,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Монографии[править | править код]
+# text = Монографии
 1	Монографии	монография	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	3	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10085,15 +10270,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Научно-популярные издания[править | править код]
+# text = Научно-популярные издания
 1	Научно-популярные	научно-популярный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	издания	издание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No
-4	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	parataxis	_	_
-5	|	|	PUNCT	_	_	4	punct	_	_
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	conj	_	_
-7	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10101,14 +10280,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Статьи[править | править код]
+# text = Статьи
 1	Статьи	статья	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10116,14 +10289,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ссылки[править | править код]
+# text = Ссылки
 1	Ссылки	ссылка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No
-3	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1	parataxis	_	_
-4	|	|	PUNCT	_	_	5	punct	_	_
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	conj	_	_
-6	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
-7	]	]	PUNCT	_	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10131,16 +10298,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Тексты и переводы[править | править код]
+# text = Тексты и переводы
 1	Тексты	текст	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 2	и	и	CCONJ	_	_	3	cc	_	_
 3	переводы	перевод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	parataxis	_	_
-6	|	|	PUNCT	_	_	5	punct	_	_
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	conj	_	_
-8	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10148,17 +10309,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Справочные издания и ресурсы[править | править код]
+# text = Справочные издания и ресурсы
 1	Справочные	справочный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
 2	издания	издание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
 3	и	и	CCONJ	_	_	4	cc	_	_
 4	ресурсы	ресурс	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	2	conj	_	SpaceAfter=No
-5	[	[	PUNCT	_	_	6	punct	_	SpaceAfter=No
-6	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	4	parataxis	_	_
-7	|	|	PUNCT	_	_	6	punct	_	_
-8	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	6	conj	_	_
-9	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
-10	]	]	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -10166,23 +10321,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Толкования и комментарии[править | править код]
+# text = Толкования и комментарии
 1	Толкования	толкование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
 2	и	и	CCONJ	_	_	3	cc	_	_
 3	комментарии	комментарий	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
-4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
-5	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	parataxis	_	_
-6	|	|	PUNCT	_	_	5	punct	_	_
-7	править	править	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	xcomp	_	_
-8	код	код	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
-9	]	]	PUNCT	_	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = russian-syntagrus-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Навигация
-1	Навигация	навигация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 

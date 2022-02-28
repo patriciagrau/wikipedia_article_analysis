@@ -1,5 +1,3 @@
-# https://mr.wikipedia.org/wiki/%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%AC%E0%A5%89%E0%A4%B2
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = फुटबॉल - विकिपीडिया
 1	फुटबॉल	फुटबणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 2	-	-	PUNCT	_	_	3	punct	_	_
-3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Obl	1	conj	_	SpacesAfter=\n
+3	विकिपीडिया	विकिपीडिया	NOUN	_	Case=Obl	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -17,21 +15,85 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = फुटबॉल
-1	फुटबॉल	फुटबणे	VERB	_	_	0	root	_	SpacesAfter=\n
+# text = फुटबॉल हा जगातील सर्वांत लोकप्रिय खेळ आहे.
+1	फुटबॉल	फुटबॉल	ADJ	_	_	6	nsubj	_	_
+2	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	जगातील	जगाणे	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	6	obl	_	_
+4	सर्वांत	सर्वांत	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	6	obl	_	_
+5	लोकप्रिय	लोकप्रिय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	amod	_	_
+6	खेळ	खेळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+7	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = [[चित्र:La mejor Hinchada de Futboll
-1	[[चित्र:La	[[चित्र:la	ADV	_	_	3	nsubj	_	_
-2	mejor	mejor	ADJ	_	_	3	amod	_	_
-3	Hinchada	hinchada	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-4	de	de	ADV	_	_	3	cc	_	_
-5	Futboll	futboll	ADJ	_	_	3	amod	_	SpacesAfter=\n
+# sent_id = 2
+# text = फुटबॉलच्या संघात ११ खेळाडूंचा समावेश असतो.
+1	फुटबॉलच्या	फुटबॉलच्या	ADJ	_	Case=Obl	2	amod	_	_
+2	संघात	संघ	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	5	obl	_	_
+3	११	११	NUM	_	_	4	nummod	_	_
+4	खेळाडूंचा	खेळाडूंचा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+5	समावेश	समावेश	ADV	_	_	0	root	_	_
+6	असतो	असणे	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	compound:svc	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 3
+# text = हा मैदानी खेळ मुख्यतः हिरवळ असलेल्या मैदानात खेळला जातो.
+1	हा	हा	DET	_	Distance=Prox|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	मैदानी	मैदानी	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
+3	खेळ	खेळ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
+4	मुख्यतः	मुख्यतः	ADJ	_	_	8	advmod	_	_
+5	हिरवळ	हिरवळ	ADV	_	_	8	advmod	_	_
+6	असलेल्या	असलेल्या	ADJ	_	Case=Obl	7	amod	_	_
+7	मैदानात	मैदान	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	_
+8	खेळला	खेळणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+9	जातो	जाणे	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	compound:svc	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 4
+# text = मैदानाच्या दोन टोकांना उभारलेल्या गोलजाळ्यात चेंडू पोहोचवणे असे या खेळातील खेळाडूंचे उद्दिष्ट असते.
+1	मैदानाच्या	मैदानाच्या	ADJ	_	Case=Obl	3	amod	_	_
+2	दोन	दोन	NUM	_	_	3	nummod	_	_
+3	टोकांना	टोक	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	4	nsubj	_	_
+4	उभारलेल्या	उभारलेल्या	VERB	_	Case=Obl	10	acl	_	_
+5	गोलजाळ्यात	गोलजाळा	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	4	obl	_	_
+6	चेंडू	चेंडू	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	7	obj	_	_
+7	पोहोचवणे	पोहोचवणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|VerbForm=Fin	13	aux	_	_
+8	असे	असे	SCONJ	_	_	13	mark	_	_
+9	या	हा	DET	_	Distance=Prox|PronType=Dem	10	det	_	_
+10	खेळातील	खेळाणे	VERB	_	Case=Dat|Gender=Fem|Number=Sing	13	obl	_	_
+11	खेळाडूंचे	खेळाडूंचे	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	13	nsubj	_	_
+12	उद्दिष्ट	उद्दिष्ट	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	13	compound:lvc	_	_
+13	असते	असणे	VERB	_	Aspect=Imp|Gender=Neut|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	13	punct	_	_
+
+# sent_id = 5
+# text = गोलरक्षक वगळता इतर दहा खेळाडूंनी चेंडूला हात लावणे नियमबाह्य ठरते.
+1	गोलरक्षक	गोलरक्षक	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	_
+2	वगळता	वगळणे	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	इतर	इतर	ADV	_	_	8	cc	_	_
+4	दहा	दहा	NUM	_	_	5	nummod	_	_
+5	खेळाडूंनी	खेळाड	NOUN	_	Case=Erg|Gender=Masc|Number=Plur	10	nsubj	_	_
+6	चेंडूला	चेंडूणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	8	advcl	_	_
+7	हात	हात	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	8	obj	_	_
+8	लावणे	लावणे	VERB	_	Case=Nom|InfForm=Dict|VerbForm=Inf	10	advcl	_	_
+9	नियमबाह्य	नियमबाह्य	ADJ	_	_	10	compound:lvc	_	_
+10	ठरते	ठरणे	VERB	_	Aspect=Imp|Gender=Neut|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 6
+# text = जो संघ अधिक वेळा गोलजाळ्यात चेंडू (गोल करेल) तो संघ विजेता ठरतो.
+1	जो	जो	DET	_	Distance=Dist|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	संघ	संघ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+3	अधिक	अधिक	ADJ	_	_	4	amod	_	_
+4	वेळा	वेळा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+5	गोलजाळ्यात	गोलजाळा	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	6	obl	_	_
+6	चेंडू	चेंडणे	VERB	_	InfForm=Incp|VerbForm=Inf	12	advcl	_	_
+7	(गोल	(गोल	AUX	_	_	6	aux	_	_
+8	करेल)	करे	VERB	_	Aspect=Perf|VerbForm=Conv	12	advcl	_	_
+9	तो	तो	PRON	_	Case=Nom|Distance=Dist|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+10	संघ	संघ	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	12	nsubj	_	_
+11	विजेता	विजेता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	12	compound:lvc	_	_
+12	ठरतो	ठरणे	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -148,14 +210,14 @@
 26	.	.	PUNCT	_	_	24	punct	_	_
 
 # sent_id = 2
-# text = त्यानंतर १९७०च्या जागतिक स्पर्धेत या कार्ड्‌सची सुरुवात झाली आणि त्यानंतर संपूर्ण जगभरात याला मान्यता मिळाली.
+# text = त्यानंतर १९७०च्या जागतिक स्पर्धेत या कार्ड्‌सची सुरूवात झाली आणि त्यानंतर संपूर्ण जगभरात याला मान्यता मिळाली.
 1	त्यानंतर	त्यानंतर	PRON	_	_	8	nsubj	_	_
 2	१९७०च्या	१९७०च्या	ADJ	_	Case=Obl	3	amod	_	_
 3	जागतिक	जागतिक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
 4	स्पर्धेत	स्पर्ध	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	_
 5	या	हा	DET	_	Distance=Prox|PronType=Dem	6	det	_	_
-6	कार्ड्‌सची	कार्ड्‌सची	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	8	nsubj	_	_
-7	सुरुवात	सुरुव	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	_
+6	कार्ड्‌सची	कार्ड्‌सची	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
+7	सुरूवात	सुरूव	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	8	obl	_	_
 8	झाली	होणे	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 9	आणि	आणि	CCONJ	_	_	15	cc	_	_
 10	त्यानंतर	त्यानंतर	PRON	_	_	15	cc	_	_
@@ -182,6 +244,56 @@
 12	केला	करणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	2	conj	_	_
 13	जातो	जाणे	VERB	_	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	SpaceAfter=No
 14	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\s\n
+
+# sent_id = 4
+# text = फुटबॉल म्हणजे पायचेंडू.
+1	फुटबॉल	फुटबणे	ADJ	_	_	3	amod	_	_
+2	म्हणजे	म्हणणे	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	3	nsubj	_	_
+3	पायचेंडू	पायचेंडू	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 5
+# text = पायाने खेळविला जाणारा, हवा भरलेला मोठा कातडी चेंडू.
+1	पायाने	पाया	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	खेळविला	खेळवी	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	3	obj	_	_
+3	जाणारा	जाणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	हवा	हवा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+6	भरलेला	भरणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Fin	9	advcl	_	_
+7	मोठा	मोठा	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	9	amod	_	_
+8	कातडी	कातडी	ADV	_	_	9	advmod	_	_
+9	चेंडू	चेंडू	VERB	_	Case=Nom|Gender=Masc|Number=Sing	3	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	_
+
+# sent_id = 6
+# text = या सांघिक व मैदानी खेळाचे अनेक प्रकार आहे.
+1	या	हा	DET	_	Distance=Prox|PronType=Dem	2	det	_	_
+2	सांघिक	सांघिक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+3	व	व	CCONJ	_	_	4	cc	_	_
+4	मैदानी	मैदानी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+5	खेळाचे	खेळ	VERB	_	Case=Ins|Gender=Masc|Number=Sing	7	advcl	_	_
+6	अनेक	अनेक	ADV	_	_	7	advmod	_	_
+7	प्रकार	प्रकार	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+8	आहे	असणे	AUX	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 7
+# text = त्यांपैकी दोन प्रमुख प्रकार पुढीलप्रमाणे : 1 असोसिएशन फुटबॉल अथवा सॉकर आणि 2 रग्बी.
+1	त्यांपैकी	त्यांपैकी	DET	_	_	3	det	_	_
+2	दोन	दोन	NUM	_	_	3	nummod	_	_
+3	प्रमुख	प्रमुख	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
+4	प्रकार	प्रकार	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	_
+5	पुढीलप्रमाणे	पुढीलप्रमाण	VERB	_	_	0	root	_	SpacesAfter= 
+6	:	:	PUNCT	_	_	5	punct	_	_
+7	1	1	DET	_	_	4	det	_	_
+8	असोसिएशन	असोसिएशन	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+9	फुटबॉल	फुटबणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|VerbForm=Fin	5	parataxis	_	_
+10	अथवा	अथवा	CCONJ	_	_	14	cc	_	_
+11	सॉकर	सॉकर	ADV	_	_	14	advmod	_	_
+12	आणि	आणि	CCONJ	_	_	14	cc	_	_
+13	2	2	DET	_	_	14	det	_	SpacesAfter=\s\s
+14	रग्बी	रग्बी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -388,19 +500,24 @@
 14	.	.	PUNCT	_	_	12	punct	_	_
 
 # sent_id = 13
-# text = भारतात ब्रिटिशांच्या बरोबर आलेला फुटबॉल म्हणजे सॉकरच होय., फुटबॉल मध्ये
+# text = भारतात ब्रिटिशांच्या बरोबर आलेला फुटबॉल म्हणजे सॉकरच होय., फुटबॉल मध्ये भारत प्रथम क्रमांकावर आहे.by Shreyash
 1	भारतात	भारत	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	4	obl	_	_
-2	ब्रिटिशांच्या	ब्रिटिशांच्या	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
+2	ब्रिटिशांच्या	ब्रिटिशांच्या	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	4	amod	_	_
 3	बरोबर	बरोबर	ADV	_	_	4	advmod	_	_
 4	आलेला	येणे	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part	5	acl	_	_
 5	फुटबॉल	फुटबणे	ADJ	_	_	8	amod	_	_
-6	म्हणजे	म्हणणे	NOUN	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	nsubj	_	_
+6	म्हणजे	म्हणणे	AUX	_	_	8	nsubj	_	_
 7	सॉकरच	सॉकरच	ADV	_	_	8	advmod	_	_
-8	होय	होय	VERB	_	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	होय	होय	AUX	_	Gender=Neut|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	8	punct	_	SpaceAfter=No
 10	,	,	PUNCT	_	_	8	punct	_	_
-11	फुटबॉल	फुटबणे	NOUN	_	_	8	parataxis	_	_
-12	मध्ये	मधे	PUNCT	_	_	4	advmod	_	SpacesAfter=\n
+11	फुटबॉल	फुटबणे	NOUN	_	_	15	nsubj	_	_
+12	मध्ये	मधे	ADV	_	_	13	amod	_	SpacesAfter=\n
+13	भारत	भारत	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	15	nsubj	_	_
+14	प्रथम	प्रथम	NOUN	_	_	15	advmod	_	_
+15	क्रमांकावर	क्रमांकावर	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	conj	_	_
+16	आहे.by	आहे.by	AUX	_	_	15	aux	_	_
+17	Shreyash	shreyash	NOUN	_	_	15	obl	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -408,9 +525,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = खेळाचे स्वरूप[संपादन]
-1	खेळाचे	खेळ	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	root	_	_
-2	स्वरूप[संपादन]	स्वरूप[संप	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	1	obj	_	SpacesAfter=\n
+# text = खेळाचे स्वरूप
+1	खेळाचे	खेळ	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	स्वरूप	स्वरूप	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -463,9 +580,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = महत्त्वाच्या संघटना[संपादन]
+# text = महत्त्वाच्या संघटना
 1	महत्त्वाच्या	महत्त्वाच्या	ADJ	_	Case=Obl	2	amod	_	_
-2	संघटना[संपादन]	संघटना[संप	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	nsubj	_	SpacesAfter=\n
+2	संघटना	सं	NOUN	_	Case=Dat|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -473,10 +590,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = मुख्य आंतरराष्ट्रीय स्पर्धा[संपादन]
-1	मुख्य	मुख्य	ADJ	_	_	3	amod	_	_
-2	आंतरराष्ट्रीय	आंतरराष्ट्रीय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	amod	_	_
-3	स्पर्धा[संपादन]	स्पर्धा[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+# text = मुख्य आंतरराष्ट्रीय स्पर्धा
+1	मुख्य	मुख्य	ADV	_	_	3	amod	_	_
+2	आंतरराष्ट्रीय	आंतरराष्ट्रीय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+3	स्पर्धा	स्पर्धा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -484,10 +601,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = राष्ट्रांतर्गत/आंतरराष्ट्रीय क्लब स्पर्धा[संपादन]
-1	राष्ट्रांतर्गत/आंतरराष्ट्रीय	राष्ट्रांतर्गत/आंतरराष्ट्रीय	ADJ	_	_	2	amod	_	_
-2	क्लब	क्लब	NOUN	_	Case=Acc|Gender=Neut|Number=Plur	0	root	_	_
-3	स्पर्धा[संपादन]	स्पर्धा[संपा	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	2	nsubj	_	SpacesAfter=\n
+# text = राष्ट्रांतर्गत/आंतरराष्ट्रीय क्लब स्पर्धा
+1	राष्ट्रांतर्गत/आंतरराष्ट्रीय	राष्ट्रांतर्गत/आंतरराष्ट्रीय	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
+2	क्लब	क्लब	NOUN	_	Case=Nom	0	root	_	_
+3	स्पर्धा	स्पर्धा	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -495,9 +612,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = बाह्य दुवे[संपादन]
+# text = बाह्य दुवे
 1	बाह्य	बाह्य	ADJ	_	_	2	amod	_	_
-2	दुवे[संपादन]	दुवे[संूक	NOUN	_	Case=Erg|Gender=Masc|Number=Sing	0	nsubj	_	SpacesAfter=\n
+2	दुवे	दुवे	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = marathi-ufal-ud-2.6-200830
@@ -529,14 +646,4 @@
 3	नियम]	नियम]	ADJ	_	_	5	amod	_	_
 4	(इंग्लिश	(इंग्लिश	ADJ	_	Case=Nom	5	amod	_	_
 5	मजकूर)	मजकूर)	VERB	_	_	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = marathi-ufal-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन यादी
-1	दिक्चालन	दिक्च	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
-2	यादी	यादी	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpacesAfter=\n
 

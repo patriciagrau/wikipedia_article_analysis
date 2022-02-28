@@ -1,5 +1,3 @@
-# https://sa.wikipedia.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AE%E0%A5%8D
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -12,7 +10,7 @@
 # sent_id = 2
 # text = - विकिपीडिया
 1	-	-	ADV	_	_	2	advmod	_	_
-2	विकिपीडिया	विकिपीडियa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	विकिपीडिया	विकिपीडियa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -21,7 +19,50 @@
 # newpar
 # sent_id = 1
 # text = सुवर्णम्
-1	सुवर्णम्	सुवर्णमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+1	सुवर्णम्	सुवर्णमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 2
+# text = एकं मरालं गुरुभारिकं पीतं प्रदीप्तं
+1	एकं	एकं	ADV	_	_	2	advmod	_	_
+2	मरालं	मरालं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	गुरुभारिकं	गुरुभारिकa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	पीतं	पीतं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+5	प्रदीप्तं	प्रदीप्तa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+
+# sent_id = 3
+# text = धातुः। अनेन आभरणानि नाणकानि
+1	धातुः।	धातुः।	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	अनेन	अनेन	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
+3	आभरणानि	आभरणानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	नाणकानि	नाणकानa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+
+# sent_id = 4
+# text = विद्युतयन्त्राणि चित्रपलकानि
+1	विद्युतयन्त्राणि	विद्युतयन्त्राa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	चित्रपलकानि	चित्रपलकानa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+
+# sent_id = 5
+# text = इत्यादि वस्तूनि
+1	इत्यादि	इत्यादa	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+2	वस्तूनि	वस्तूनa	NOUN	_	Case=Nom|Gender=Fem|Number=Dual	1	nsubj	_	_
+
+# sent_id = 6
+# text = निर्माणन्ति। औषधानि च सिद्धं
+1	निर्माणन्ति।	निर्माणन्तिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	औषधानि	औषधानि	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+3	च	च	ADV	_	_	4	discourse	_	_
+4	सिद्धं	सिद्धं	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+
+# sent_id = 7
+# text = कुर्वन्ति
+1	कुर्वन्ति	कुर्वन्तa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 8
+# text = । सुवर्णम् महार्घम् अस्ति।
+1	।	।	ADV	_	_	2	advmod	_	_
+2	सुवर्णम्	सुवर्णमa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	महार्घम्	महार्घमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	अस्ति।	अस्तिa	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	2	conj	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -166,11 +207,55 @@
 1	पीतम्	पीतम्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
 # sent_id = 4
-# text = इति अनेकधा भवति ।
+# text = इति अनेकधा भवति
 1	इति	इति	ADV	_	_	2	advmod	_	_
 2	अनेकधा	अनेकधा	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	भवति	भवति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
-4	।	।	ADV	_	_	2	nsubj	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = । सुवर्णं
+1	।	।	ADV	_	_	2	advmod	_	SpacesAfter=\n
+2	सुवर्णं	सुवर्णa	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+
+# sent_id = 6
+# text = पञ्चविधम् इत्यन्यत्र - प्राकृतं
+1	पञ्चविधम्	पञ्चविधमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	इत्यन्यत्र	इत्यन्यत्a	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	-	-	ADV	_	_	4	advmod	_	_
+4	प्राकृतं	प्राकृतa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	_
+
+# sent_id = 7
+# text = सहजं वह्निसम्भूतं खनिसम्भूतं रसेन्द्रवेधसञ्जातं चेति
+1	सहजं	सहजं	NOUN	_	Gender=Masc	2	nsubj	_	_
+2	वह्निसम्भूतं	वह्निसम्भूतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+3	खनिसम्भूतं	खनिसम्भूतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+4	रसेन्द्रवेधसञ्जातं	रसेन्द्रवेधसञ्जाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
+5	चेति	चेति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+
+# sent_id = 8
+# text = । तेषु रजोगुणसमुद्भवं प्राकृतम्
+1	।	।	ADV	_	_	3	advmod	_	_
+2	तेषु	तेषु	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+3	रजोगुणसमुद्भवं	रजोगुणसमुद्भवa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+4	प्राकृतम्	प्राकृतमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+
+# sent_id = 9
+# text = । मेरूद्भवं सहजम् । वह्निसम्भूतम्
+1	।	।	ADV	_	_	2	advmod	_	_
+2	मेरूद्भवं	मेरूद्भवa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	3	amod	_	_
+3	सहजम्	सहजम्	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	5	obl	_	_
+4	।	।	ADV	_	_	5	advmod	_	_
+5	वह्निसम्भूतम्	वह्निसम्भूतमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+
+# sent_id = 10
+# text = - त्रिविधमेतत्सुवर्णं षोडशवर्णयुतम्
+1	-	-	PRON	_	_	2	nsubj	_	_
+2	त्रिविधमेतत्सुवर्णं	त्रिविधमेतत्सुवर्a	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
+3	षोडशवर्णयुतम्	षोडशवर्णयुतमa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	2	acl	_	_
+
+# sent_id = 11
+# text = ।
+1	।	।	PRON	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -245,8 +330,8 @@
 1	सुवर्णादिनाणकनिर्माणशाला	सुवर्णादिनाणकनिर्माणशाa	VERB	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	_
 
 # sent_id = 2
-# text = (Mint)[सम्पादयतु]
-1	(Mint)[सम्पादयतु]	(mint)[सम्पादयa	ADJ	_	Case=Nom|Gender=Fem|Number=Dual	0	root	_	SpacesAfter=\n
+# text = (Mint)
+1	(Mint)	(m	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -339,8 +424,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = रसायनिकभावाः[सम्पादयतु]
-1	रसायनिकभावाः[सम्पादयतु]	रसायनिकभावाः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\n
+# text = रसायनिकभावाः
+1	रसायनिकभावाः	रसायनिकभावाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -369,17 +454,30 @@
 10	उर्द्वतनीयम्	उर्द्वतनीयमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	4	conj	_	_
 
 # sent_id = 3
-# text = आनत्यम्
-1	आनत्यम्	आनत्यमa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+# text = आनत्यम् च अस्ति। अस्य सन्ततिः १३९०० kg/m
+1	आनत्यम्	आनत्यa	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	च	च	ADV	_	_	1	advmod	_	_
+3	अस्ति।	अस्ति।	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+4	अस्य	अस्य	NOUN	_	Gender=Fem	5	nsubj	_	_
+5	सन्ततिः	सन्ततa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+6	१३९००	१३९००	NOUN	_	Gender=Fem	7	nmod	_	SpacesAfter= 
+7	kg/m	kg/	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	conj	_	SpacesAfter=\n\n\n\n
 
+# newpar
 # sent_id = 4
-# text = च अस्ति। अस्य सन्ततिः १३९०० kg/m
-1	च	च	ADV	_	_	2	advmod	_	_
-2	अस्ति।	अस्तa	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	0	root	_	_
-3	अस्य	अस्य	NOUN	_	Gender=Masc	2	nmod	_	_
-4	सन्ततिः	सन्ततिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	2	conj	_	_
-5	१३९००	१३९००	NOUN	_	Gender=Fem	6	nmod	_	SpacesAfter= 
-6	kg/m	kg/	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	2	conj	_	SpacesAfter=\n
+# text = 3
+1	3	3	ADV	_	_	0	root	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 5
+# text = {\displaystyle 3}
+1	{\displaystyle	{\displaystyla	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	0	root	_	_
+2	3}	3}	ADV	_	_	1	nsubj	_	SpacesAfter=\n\n\n
+
+# newpar
+# sent_id = 6
+# text = ]
+1	]	]	ADV	_	_	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = sanskrit-vedic-ud-2.6-200830
@@ -391,15 +489,6 @@
 1	सम्बद्धाः	सम्बद्धाa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 
 # sent_id = 2
-# text = लेखाः[सम्पादयतु]
-1	लेखाः[सम्पादयतु]	लेखाः[सम्पादयतa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = sanskrit-vedic-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = सञ्चरणावलिः
-1	सञ्चरणावलिः	सञ्चरणावलिa	ADJ	_	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+# text = लेखाः
+1	लेखाः	लेखाः	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 

@@ -1,34 +1,86 @@
-# https://kk.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB
-
 # newdoc
 # newpar
 # sent_id = 1
 # text = Футбол — Уикипедия
 1	Футбол	Футбол	NOUN	n	Case=Nom	3	nmod:poss	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
-3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
+3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Футбол
-1	Футбол	Футбол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	0	root	_	SpacesAfter=\n
+# text = Футбол (ағылш.
+1	Футбол	Футбол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	SpacesBefore=\n
+2	(	(	PUNCT	lpar	_	3	punct	_	SpaceAfter=No
+3	ағылш	ағылш	NUM	num	NumType=Card	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = 2
+# text = foot — аяқ, ball — доп) — спорттың командалық ойын түрі.
+1	foot	foot	NOUN	n	Case=Nom	7	nmod:poss	_	SpacesAfter= 
+2	—	—	PUNCT	guio	_	7	punct	_	_
+3	аяқ	аяқ	ADJ	adj	_	5	amod	_	SpaceAfter=No
+4	,	,	PUNCT	cm	_	3	punct	_	_
+5	ball	ball	NOUN	n	Case=Nom	7	nmod:poss	_	SpacesAfter= 
+6	—	—	PUNCT	guio	_	7	punct	_	_
+7	доп	до	VERB	v	Aspect=Perf|VerbForm=Conv	13	advcl	_	SpaceAfter=No
+8	)	)	PUNCT	rpar	_	12	punct	_	_
+9	—	—	PUNCT	guio	_	12	punct	_	_
+10	спорттың	спорт	ADJ	adj	Case=Gen	11	amod	_	_
+11	командалық	командалық	NOUN	n	Case=Nom	12	nmod:poss	_	_
+12	ойын	ойын	ADJ	adj	_	7	appos	_	_
+13	түрі	түр	ADJ	adj	_	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	sent	_	13	punct	_	_
+
+# sent_id = 3
+# text = Футбол – әлемге аса танымал ойындардың бірі.
+1	Футбол	Футбол	NOUN	n	Case=Nom	0	root	_	_
+2	–	–	PUNCT	guio	_	7	punct	_	_
+3	әлемге	әлем	NOUN	n	Case=Dat	7	cc	_	_
+4	аса	а	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	5	nmod:poss	_	_
+5	танымал	танымал	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	ойындардың	ойындар	NOUN	n	Case=Gen	7	obl	_	_
+7	бірі	бірі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = 4
+# text = Ойынның негізгі мақсаты қарсылас команданың қақпасына аяқпен немесе басқа да дене мүшелерімен (қолдан басқа) қарсылас команда салған саннан көбірек доп салу болып табылады.
+1	Ойынның	Ойын	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
+2	негізгі	негізгі	ADJ	adj	_	3	amod	_	_
+3	мақсаты	мақсат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
+4	қарсылас	қарсылас	ADJ	adj	_	5	amod	_	_
+5	команданың	команда	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	қақпасына	қақпа	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
+7	аяқпен	аяқпен	NOUN	n	Case=Nom	9	obl	_	_
+8	немесе	немесе	X	x	_	7	case	_	_
+9	басқа	бас	NOUN	n	Case=Dat	25	obl	_	_
+10	да	да	ADV	postadv	_	25	cc	_	_
+11	дене	дене	PRON	prn	Case=Nom|PronType=Int	25	nsubj	_	_
+12	мүшелерімен	мүшелер	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	25	nsubj	_	_
+13	(	(	PUNCT	lpar	_	25	obl	_	SpaceAfter=No
+14	қолдан	қолдан	NOUN	n	Case=Nom	25	nsubj	_	_
+15	басқа	басқа	NOUN	n	Case=Dat	25	obl	_	SpaceAfter=No
+16	)	)	PUNCT	rpar	_	25	punct	_	_
+17	қарсылас	қарсылас	NUM	num	NumType=Card	18	amod	_	_
+18	команда	команда	NOUN	n	Case=Loc	19	nmod:poss	_	_
+19	салған	сал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	advcl	_	_
+20	саннан	сан	NOUN	n	Case=Abl	19	case	_	_
+21	көбірек	көбірек	NOUN	n	Case=Nom	19	conj	_	_
+22	доп	до	VERB	v	Aspect=Perf|VerbForm=Conv	25	advcl	_	_
+23	салу	салу	PART	mod_emo	_	22	cop	_	_
+24	болып	болып	X	x	_	22	punct	_	_
+25	табылады	табыла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+26	.	.	PUNCT	sent	_	25	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Матч сипаттамасы (ережелері)[өңдеу | қайнарын өңдеу]
-1	Матч	Матч	NOUN	n	Case=Nom	0	root	_	_
-2	сипаттамасы	сипаттама	DET	det	PronType=Dem	1	appos	_	_
-3	(	(	PUNCT	lpar	_	5	punct	_	SpaceAfter=No
-4	ережелері	ережелер	ADJ	adj	_	5	amod	_	SpaceAfter=No
-5	)	)	PUNCT	rpar	_	2	appos	_	SpaceAfter=No
-6	[	[	PUNCT	cm	_	5	punct	_	SpaceAfter=No
-7	өңдеу	өңдеу	ADJ	adj	_	8	amod	_	SpacesAfter= 
-8	|	|	SYM	_	_	10	nsubj	_	_
-9	қайнарын	қайнарын	ADJ	adj	_	10	amod	_	_
-10	өңдеу	өңдеу	ADJ	adj	_	6	conj	_	SpaceAfter=No
-11	]	]	PUNCT	cm	_	10	punct	_	SpacesAfter=\n
+# text = Матч сипаттамасы (ережелері)
+1	Матч	Матч	NOUN	n	Case=Nom	2	obl	_	_
+2	сипаттамасы	сипаттама	DET	det	PronType=Dem	0	root	_	_
+3	(	(	PUNCT	lpar	_	4	punct	_	SpaceAfter=No
+4	ережелері	ережелер	ADJ	adj	_	2	appos	_	SpaceAfter=No
+5	)	)	PUNCT	rpar	_	4	punct	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -252,15 +304,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ойын алаңы[өңдеу | қайнарын өңдеу]
+# text = Ойын алаңы
 1	Ойын	Ойын	ADJ	adj	_	2	amod	_	_
-2	алаңы	алаң	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	7	obl	_	SpaceAfter=No
-4	өңдеу	өңдеу	PART	mod_emo	_	3	case	_	SpacesAfter= 
-5	|	|	SYM	_	_	6	advmod	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+2	алаңы	алаң	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -309,14 +355,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Футбол добы[өңдеу | қайнарын өңдеу]
-1	Футбол добы	Футбол доб	NOUN	n	Case=Nom	2	nmod:poss	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Футбол добы
+1	Футбол	Футбол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	добы	доб	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -338,16 +379,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ойын шарттарын бұзу[өңдеу | қайнарын өңдеу]
+# text = Ойын шарттарын бұзу
 1	Ойын	Ойын	ADJ	adj	_	2	advmod	_	_
-2	шарттарын	шарттарын	ADJ	adj	_	3	amod	_	_
+2	шарттарын	шарттарын	ADJ	adj	_	3	advcl	_	_
 3	бұзу	бұзу	ADJ	adj	_	0	root	_	SpaceAfter=No
-4	[	[	PUNCT	cm	_	6	punct	_	SpaceAfter=No
-5	өңдеу	өңдеу	ADJ	adj	_	6	amod	_	SpacesAfter= 
-6	|	|	SYM	_	_	3	conj	_	_
-7	қайнарын	қайнарын	ADJ	adj	_	8	amod	_	_
-8	өңдеу	өңдеу	ADJ	adj	_	6	parataxis	_	SpaceAfter=No
-9	]	]	PUNCT	cm	_	8	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -388,18 +423,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Фол (тәртіпті бұзу)[өңдеу | қайнарын өңдеу]
+# text = Фол (тәртіпті бұзу)
 1	Фол	Фол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 2	(	(	PUNCT	lpar	_	4	punct	_	SpaceAfter=No
-3	тәртіпті	тәртіпті	ADJ	adj	_	4	amod	_	_
-4	бұзу	бұзу	PART	mod_emo	_	0	root	_	SpaceAfter=No
+3	тәртіпті	тәртіпті	ADJ	adj	_	4	advmod	_	_
+4	бұзу	бұзу	ADJ	adj	_	0	root	_	SpaceAfter=No
 5	)	)	PUNCT	rpar	_	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	cm	_	8	punct	_	SpaceAfter=No
-7	өңдеу	өңдеу	ADJ	adj	_	8	amod	_	SpacesAfter= 
-8	|	|	SYM	_	_	5	conj	_	_
-9	қайнарын	қайнарын	ADJ	adj	_	10	advmod	_	_
-10	өңдеу	өңдеу	ADJ	adj	_	8	parataxis	_	SpaceAfter=No
-11	]	]	PUNCT	cm	_	10	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -415,14 +444,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Тәртіпсіздік[өңдеу | қайнарын өңдеу]
-1	Тәртіпсіздік	Тәртіпсіздік	ADJ	adj	_	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	nsubj	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Тәртіпсіздік
+1	Тәртіпсіздік	Тәртіпсіздік	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -435,14 +458,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Тарихы[өңдеу | қайнарын өңдеу]
-1	Тарихы	Тарих	NOUN	n	Case=Nom	2	nmod:poss	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Тарихы
+1	Тарихы	Тарих	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -462,19 +479,87 @@
 3	дамыды	дамы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sent	_	3	punct	_	SpacesAfter=\s\n
 
+# sent_id = 3
+# text = Саяхатшы Гастон де Фуа өз заманында футболды бар ынтасымен бақылап, «Ағылшындар футболды ойын деп есептесе, онда төбелесті не дейді?» деп жазып кеткен екен.
+1	Саяхатшы	Саяхатш	NOUN	n	Case=Nom	10	nsubj	_	_
+2-3	Гастон де	_	_	_	_	_	_	_	_
+2	Гастон	Гастон	ADJ	adj	_	3	amod	_	_
+3	де	да	ADV	postadv	_	10	advcl	_	_
+4	Фуа	фуа	NOUN	n	Case=Nom	6	nmod	_	_
+5	өз	өз	ADP	post	_	4	case	_	_
+6	заманында	заман	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
+7	футболды	футбол	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+8	бар	бар	ADJ	adj	_	9	amod	_	_
+9	ынтасымен	ынтасы	NOUN	n	Case=Ins	10	obl	_	_
+10	бақылап	бақыла	VERB	v	Aspect=Perf|VerbForm=Conv	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	16	punct	_	_
+12	«	«	PUNCT	lquot	_	16	punct	_	SpaceAfter=No
+13	Ағылшындар	Ағылшындар	PART	mod	_	16	cc	_	_
+14	футболды	футбол	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nsubj	_	_
+15	ойын	ойын	ADJ	adj	_	16	advmod	_	_
+16	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	10	parataxis	_	_
+17	есептесе	есептесе	X	x	_	19	amod	_	SpaceAfter=No
+18	,	,	PUNCT	cm	_	19	punct	_	_
+19	онда	онда	NOUN	n	Case=Loc	16	conj	_	_
+20	төбелесті	төбелеслы	ADP	post	_	22	obl	_	_
+21	не	не	PRON	prn	Case=Nom|PronType=Int	22	nsubj	_	_
+22	дейді	дей	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	SpaceAfter=No
+23	?	?	PUNCT	sent	_	22	punct	_	SpaceAfter=No
+24	»	»	PUNCT	rquot	_	27	punct	_	_
+25	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	26	ccomp	_	_
+26	жазып	жаз	VERB	v	Aspect=Perf|VerbForm=Conv	27	advcl	_	_
+27	кеткен	кет	VERB	v	Tense=Past|VerbForm=Part	28	ccomp	_	_
+28	екен	е	VERB	v	Tense=Past|VerbForm=Part	22	parataxis	_	SpaceAfter=No
+29	.	.	PUNCT	sent	_	28	punct	_	SpacesAfter=\s\n
+
+# sent_id = 4
+# text = Футболға қарсылық көрсеткендер болды.
+1	Футболға	Футбол	NOUN	n	Case=Dat	3	obl	_	_
+2	қарсылық	қарсылық	ADJ	adj	_	3	amod	_	_
+3	көрсеткендер	көрсеткендер	NOUN	n	Case=Nom	0	root	_	_
+4	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	SpaceAfter=No
+5	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = 5
+# text = Мысалы, шіркеудегі діндарлар, феодалдар футболға тыйым салынуын талап еткен екен.
+1-2	Мысалы	_	_	_	_	_	_	_	SpaceAfter=No
+1	Мыса	мыса	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	4	nmod:poss	_	_
+2	лы	лы	ADP	post	_	1	case	_	_
+3	,	,	PUNCT	cm	_	1	punct	_	_
+4	шіркеудегі	шіркеудегі	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
+5	діндарлар	діндарлар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	13	punct	_	_
+7	феодалдар	феодалдар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	nsubj	_	_
+8	футболға	футбол	NOUN	n	Case=Dat	13	obl	_	_
+9	тыйым	тыйым	NOUN	n	Case=Nom	11	nmod:poss	_	_
+10	салынуын	салынуын	ADJ	adj	_	11	amod	_	_
+11	талап	тала	VERB	v	Aspect=Perf|VerbForm=Conv	12	ccomp	_	_
+12	еткен	еткен	VERB	v	Tense=Past|VerbForm=Part	13	advcl	_	_
+13	екен	е	VERB	v	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	sent	_	13	punct	_	_
+
+# sent_id = 6
+# text = Өйткені, бүгінгі күнге дейін футбол өте қауіпті ойын саналып келеді.
+1	Өйткені	Өйткені	ADJ	adj	_	11	cc	_	SpaceAfter=No
+2	,	,	PUNCT	cm	_	11	punct	_	_
+3	бүгінгі	бүгінгі	ADJ	adj	_	4	amod	_	_
+4	күнге	күн	NOUN	n	Case=Dat	11	obl	_	_
+5	дейін	дейін	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
+6	футбол	футбол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+7	өте	өте	X	x	_	11	dep	_	_
+8	қауіпті	қауіпті	ADJ	adj	_	9	amod	_	_
+9	ойын	ойын	ADJ	adj	Case=Nom	10	ccomp	_	_
+10	саналып	саналып	VERB	v	Aspect=Perf|VerbForm=Conv	11	advcl	_	_
+11	келеді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sent	_	11	punct	_	SpacesAfter=\s\n
+
 # newdoc
 # newpar
 # sent_id = 1
-# text = Футболдың таралу тарихы[өңдеу | қайнарын өңдеу]
+# text = Футболдың таралу тарихы
 1	Футболдың	Футбол	NOUN	n	Case=Gen	3	nmod:poss	_	_
 2	таралу	таралу	ADJ	adj	_	3	amod	_	_
-3	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	SpaceAfter=No
-4	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-5	өңдеу	өңдеу	PART	mod_emo	_	4	case	_	SpacesAfter= 
-6	|	|	SYM	_	_	7	advmod	_	_
-7	қайнарын	қайнарын	ADJ	adj	_	8	amod	_	_
-8	өңдеу	өңдеу	ADJ	adj	_	4	conj	_	SpaceAfter=No
-9	]	]	PUNCT	cm	_	8	punct	_	SpacesAfter=\n
+3	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -627,17 +712,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Қазақстан футболының таралу тарихы[өңдеу | қайнарын өңдеу]
+# text = Қазақстан футболының таралу тарихы
 1	Қазақстан	Қазақстан	ADJ	adj	_	2	amod	_	_
 2	футболының	футбол	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 3	таралу	таралу	ADJ	adj	_	4	amod	_	_
-4	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	SpaceAfter=No
-5	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-6	өңдеу	өңдеу	PART	mod_emo	_	5	case	_	SpacesAfter= 
-7	|	|	SYM	_	_	8	advmod	_	_
-8	қайнарын	қайнарын	ADJ	adj	_	9	amod	_	_
-9	өңдеу	өңдеу	ADJ	adj	_	5	conj	_	SpaceAfter=No
-10	]	]	PUNCT	cm	_	9	punct	_	SpacesAfter=\n
+4	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1555,28 +1634,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Футбол ұйымдары[өңдеу | қайнарын өңдеу]
+# text = Футбол ұйымдары
 1	Футбол	Футбол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
-2	ұйымдары	ұйымдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-4	өңдеу	өңдеу	PART	mod_emo	_	3	case	_	SpacesAfter= 
-5	|	|	SYM	_	_	6	advmod	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	3	conj	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+2	ұйымдары	ұйымдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Халықаралық ұйымдар[өңдеу | қайнарын өңдеу]
-1	Халықаралық	Халықаралық	ADJ	adj	_	3	amod	_	_
-2	ұйымдар	ұйымдар	PART	mod	_	1	case	_	SpaceAfter=No
-3	[	[	PUNCT	cm	_	5	nmod:poss	_	SpaceAfter=No
-4	өңдеу	өңдеу	ADJ	adj	_	5	amod	_	SpacesAfter= 
-5	|	|	SYM	_	_	0	root	_	_
-6	қайнарын	қайнарын	ADJ	adj	_	7	amod	_	_
-7	өңдеу	өңдеу	ADJ	adj	_	5	parataxis	_	SpaceAfter=No
-8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
+# text = Халықаралық ұйымдар
+1	Халықаралық	Халықаралық	ADJ	adj	_	2	advmod	_	_
+2	ұйымдар	ұйымдар	PART	mod	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1724,14 +1791,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Клубтар[өңдеу | қайнарын өңдеу]
-1	Клубтар	Клубтар	ADJ	adj	_	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	nsubj	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Клубтар
+1	Клубтар	Клубтар	PART	mod	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1766,18 +1827,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Әлем чемпионатында жеңіске жеткендер:[өңдеу | қайнарын өңдеу]
+# text = Әлем чемпионатында жеңіске жеткендер:
 1	Әлем	Әлем	PRON	prn	Case=Nom|PronType=Int	2	nmod:poss	_	_
 2	чемпионатында	чемпионат	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	жеңіске	жеңіске	X	x	_	4	dep	_	_
 4	жеткендер	жеткенде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	:	:	PUNCT	sent	_	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	cm	_	5	punct	_	SpaceAfter=No
-7	өңдеу	өңдеу	PART	mod_emo	_	6	case	_	SpacesAfter= 
-8	|	|	SYM	_	_	9	advmod	_	_
-9	қайнарын	қайнарын	ADJ	adj	_	6	conj	_	_
-10	өңдеу	өңдеу	PART	mod_emo	_	9	discourse	_	SpaceAfter=No
-11	]	]	PUNCT	cm	_	9	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1826,26 +1881,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Дереккөздер[өңдеу | қайнарын өңдеу]
-1	Дереккөздер	Дереккөзде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	PART	mod_emo	_	2	case	_	SpacesAfter= 
-4	|	|	SYM	_	_	5	advmod	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	2	conj	_	_
-6	өңдеу	өңдеу	PART	mod_emo	_	5	discourse	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	5	punct	_	SpacesAfter=\n
+# text = Дереккөздер
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Сілтемелер[өңдеу | қайнарын өңдеу]
-1	Сілтемелер	Сілтемеле	ADJ	adj	_	2	amod	_	SpaceAfter=No
-2	[	[	PUNCT	cm	_	0	root	_	SpaceAfter=No
-3	өңдеу	өңдеу	ADJ	adj	_	4	amod	_	SpacesAfter= 
-4	|	|	SYM	_	_	6	nsubj	_	_
-5	қайнарын	қайнарын	ADJ	adj	_	6	amod	_	_
-6	өңдеу	өңдеу	ADJ	adj	_	2	conj	_	SpaceAfter=No
-7	]	]	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+# text = Сілтемелер
+1	Сілтемелер	Сілтемелер	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1857,26 +1900,4 @@
 4	"	"	PUNCT	cm	_	3	punct	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	3	punct	_	_
 6	9 том	9 том	PRON	prn	Case=Nom|PronType=Int	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = ФИФА · Әлем чемпионаты · Конфедерациялар Кубогы · Олимпиада ойындары
-1	ФИФА	ФИФА	PROPN	np	Case=Nom|Gender=Fem	4	nsubj	_	SpacesAfter= 
-2	·	·	PUNCT	cm	_	4	punct	_	_
-3	Әлем	Әлем	NOUN	n	Case=Nom	4	obj	_	_
-4	чемпионаты	чемпиона	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter= 
-5	·	·	PUNCT	cm	_	7	punct	_	_
-6	Конфедерациялар	Конфедерациялар	NOUN	n	Case=Nom|Number=Plur	7	nmod:poss	_	_
-7	Кубогы	Кубог	NOUN	n	Case=Nom	4	conj	_	SpacesAfter= 
-8	·	·	PUNCT	cm	_	10	punct	_	_
-9	Олимпиада	Олимпиада	CCONJ	cnjcoo	_	10	cc	_	_
-10	ойындары	ойындар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	appos	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
 

@@ -1,32 +1,21 @@
-# https://kk.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82
-
 # newdoc
 # newpar
 # sent_id = 1
 # text = Интернет — Уикипедия
 1	Интернет	Интернет	ADJ	adj	_	3	amod	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
-3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpacesAfter=\n
+3	Уикипедия	Уикипедия	PROPN	np	Case=Nom|Gender=Fem	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Интернет
-1	Интернет	Интернет	ADJ	adj	_	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Интернет (оқылуы [интэрнэ́т]; ағылш.
+# text = Интернет (оқылуы ; ағылш.
 1	Интернет	Интернет	ADJ	adj	_	3	amod	_	_
 2	(	(	PUNCT	lpar	_	1	punct	_	SpaceAfter=No
 3	оқылуы	оқылу	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
-4	[	[	PUNCT	cm	_	8	punct	_	SpaceAfter=No
-5	интэрнэ́т	интэрнэ́т	ADJ	adj	_	8	ccomp	_	SpaceAfter=No
-6	]	]	PUNCT	cm	_	5	case	_	SpaceAfter=No
-7	;	;	PUNCT	cm	_	5	punct	_	_
-8	ағылш	ағылш	NUM	num	NumType=Card	3	appos	_	SpaceAfter=No
-9	.	.	PUNCT	sent	_	8	punct	_	_
+4	;	;	PUNCT	cm	_	3	punct	_	_
+5	ағылш	ағылш	NUM	num	NumType=Card	4	appos	_	SpaceAfter=No
+6	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = 2
 # text = Internet — International Network) — компьютерлік серверлердің бүкіләлемдік желісі.
@@ -160,12 +149,24 @@
 8	айтылмайды	айтылмай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	8	punct	_	SpacesAfter=\s\n
 
+# sent_id = 3
+# text = Көбінесе, бұл екі түсінікті бір-бірінен ажыратып жатпайды.
+1	Көбінесе	көбінесе	NOUN	n	Case=Nom	8	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	cm	_	8	punct	_	_
+3	бұл	бұл	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	obl	_	_
+4	екі	екі	NUM	num	NumType=Card	6	amod	_	_
+5	түсінікті	түсініклы	ADP	post	_	4	punct	_	_
+6	бір-бірінен	бір-бір	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
+7	ажыратып	ажырат	VERB	v	Aspect=Perf|VerbForm=Conv	8	obl	_	_
+8	жатпайды	жатпай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	sent	_	8	punct	_	SpacesAfter=\n
+
 # newdoc
 # newpar
 # sent_id = 1
 # text = Интернет туралы
 1	Интернет	Интернет	ADJ	adj	_	2	amod	_	_
-2-3	туралы	_	_	_	_	_	_	_	SpacesAfter=\n
+2-3	туралы	_	_	_	_	_	_	_	SpaceAfter=No
 2	тура	тура	NOUN	n	Case=Nom	0	root	_	_
 3	лы	лы	ADP	post	_	2	punct	_	_
 
@@ -190,6 +191,19 @@
 15	желілер	желіле	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	nsubj	_	_
 16	жүйесі	жүйе	ADJ	adj	_	14	parataxis	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	SpacesAfter=\s\n
+
+# sent_id = 2
+# text = Интернет - байланыс араларын өзара біріктіретін, тораптардың жиынтығы.
+1	Интернет	Интернет	ADJ	adj	_	2	amod	_	_
+2	-	-	PUNCT	guio	_	9	punct	_	_
+3	байланыс	байланыс	ADJ	adj	_	4	amod	_	_
+4	араларын	араларын	ADJ	adj	_	5	amod	_	_
+5	өзара	өзара	NOUN	n	Case=Nom	2	conj	_	_
+6	біріктіретін	біріктіретін	ADP	post	_	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	5	punct	_	_
+8	тораптардың	тораптар	NOUN	n	Case=Gen	9	nsubj	_	_
+9	жиынтығы	жиынтық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	sent	_	9	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -598,7 +612,7 @@
 # text = Интернет желісінің тарихы
 1	Интернет	Интернет	ADJ	adj	_	2	amod	_	_
 2	желісінің	желіс	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
-3	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+3	тарихы	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -718,6 +732,13 @@
 15	қолдана	қолдана	NOUN	n	Case=Nom	16	nsubj	_	_
 16	бастады	баста	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	SpacesAfter=\n
+
+# newdoc
+# newpar
+# sent_id = 1
+# text = ]]
+1	]	]	PUNCT	cm	_	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	cm	_	1	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1368,7 +1389,7 @@
 # sent_id = 1
 # text = Интернеттің жетістіктері
 1	Интернеттің	Интернеттің	NOUN	n	Case=Nom	2	nsubj	_	_
-2	жетістіктері	жетістіктері	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	жетістіктері	жетістіктері	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -1969,7 +1990,7 @@
 # sent_id = 1
 # text = Қазақстандағы Интернет
 1	Қазақстандағы	Қазақстандақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	_
-2	Интернет	Интернет	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	Интернет	Интернет	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2339,16 +2360,26 @@
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = 2
-# text = Оның бір мысалы мынадай болу керек:
-1	Оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
-2	бір	бір	DET	det	PronType=Ind	0	root	_	_
+# text = Оның бір мысалы мынадай болу керек: Open named password-FTP -серверге кірердегі сұраныс тізбегі, мұндағы:
+1	Оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	бір	бір	DET	det	PronType=Ind	3	nsubj	_	_
 3-4	мысалы	_	_	_	_	_	_	_	_
-3	мыса	мы	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	5	nmod	_	_
+3	мыса	мы	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	0	root	_	_
 4	лы	лы	ADP	post	_	3	case	_	_
-5	мынадай	мынадай	NOUN	n	Case=Nom	6	obl	_	_
-6	болу	болу	ADJ	adj	_	7	acl:relcl	_	_
-7	керек	керек	NOUN	n	Case=Nom	2	parataxis	_	SpaceAfter=No
-8	:	:	PUNCT	sent	_	7	punct	_	SpacesAfter=\n
+5	мынадай	мынадай	NOUN	n	Case=Nom	15	nsubj	_	_
+6	болу	болу	ADJ	adj	_	15	advmod	_	_
+7	керек	керек	NOUN	n	Case=Nom	15	nsubj	_	SpaceAfter=No
+8	:	:	PUNCT	sent	_	15	punct	_	SpacesAfter=\n
+9	Open	Open	NOUN	n	Case=Nom	10	nmod:poss	_	_
+10	named	named	NOUN	n	Case=Nom	11	nmod:poss	_	SpacesAfter=\s\s
+11	password-FTP	password-FTP	NOUN	n	Case=Nom	15	obl	_	_
+12	-серверге	-сервер	PRON	prn	Case=Dat|PronType=Neg	13	nmod:poss	_	_
+13	кірердегі	кірердегі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	14	nmod:poss	_	_
+14	сұраныс	сұраныс	ADJ	adj	_	15	obl	_	_
+15	тізбегі	тізбегі	ADJ	adj	_	3	conj	_	SpaceAfter=No
+16	,	,	PUNCT	cm	_	15	punct	_	_
+17	мұндағы	мұндақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	conj	_	SpaceAfter=No
+18	:	:	PUNCT	sent	_	17	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -2356,7 +2387,7 @@
 # text = Интернеттің негізгі принциптері
 1	Интернеттің	Интернеттің	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	негізгі	негізгі	ADJ	adj	_	3	advmod	_	_
-3	принциптері	принциптері	ADJ	adj	_	0	root	_	SpacesAfter=\n
+3	принциптері	принциптері	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2587,7 +2618,7 @@
 # sent_id = 1
 # text = Интернет протоколдары
 1	Интернет	Интернет	ADJ	adj	_	2	amod	_	_
-2	протоколдары	протоколдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpacesAfter=\n
+2	протоколдары	протоколдар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2655,7 +2686,7 @@
 # text = Бас жол мәтіні
 1	Бас	Бас	NUM	num	NumType=Card	2	nummod	_	_
 2	жол	жол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-3	мәтіні	мәтіні	ADJ	adj	_	0	root	_	SpacesAfter=\n
+3	мәтіні	мәтіні	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -2709,18 +2740,11 @@
 # sent_id = 1
 # text = Тағы қараңыз
 1	Тағы	Тақ	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	_
-2	қараңыз	қараңыз	ADJ	adj	_	0	root	_	SpacesAfter=\n
+2	қараңыз	қараңыз	ADJ	adj	_	0	root	_	SpaceAfter=No
 
 # newdoc
 # newpar
 # sent_id = 1
 # text = Дереккөздер
-1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpacesAfter=\n
-
-# newdoc
-# newpar
-# sent_id = 1
-# text = Бағыттау мәзірі
-1	Бағыттау	Бағыттау	ADJ	adj	_	2	advmod	_	_
-2	мәзірі	мәзірі	ADJ	adj	_	0	root	_	SpacesAfter=\n
+1	Дереккөздер	Дереккөздер	ADJ	adj	_	0	root	_	SpaceAfter=No
 

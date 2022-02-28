@@ -1,5 +1,3 @@
-# https://ga.wikipedia.org/wiki/T%C3%A1bla_peiriadach
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -10,7 +8,7 @@
 1	Tábla	tábla	NOUN	Noun	Case=NomAcc|Gender=Masc|Number=Sing	0	root	_	_
 2	peiriadach	peiriadach	ADJ	Adj	Case=NomAcc|Gender=Masc|Number=Sing	1	amod	_	_
 3	-	-	PUNCT	Punct	_	4	punct	_	_
-4	Vicipéid	Vicipéid	PROPN	Noun	Case=NomAcc|Gender=Masc|Number=Sing	1	parataxis	_	SpacesAfter=\n
+4	Vicipéid	Vicipéid	PROPN	Noun	Case=NomAcc|Gender=Masc|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -18,9 +16,40 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tábla peiriadach
-1	Tábla	tábla	NOUN	Noun	Case=NomAcc|Gender=Masc|Number=Sing	0	root	_	_
-2	peiriadach	peiriadach	ADJ	Adj	Case=NomAcc|Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n
+# text = Is cóiriú ar dhúile de réir méid na huimhreach adamhaí é an Tábla Peiriadach.
+1	Is	is	AUX	Cop	Tense=Pres|VerbForm=Cop	2	cop	_	_
+2	cóiriú	cóiriú	NOUN	Noun	VerbForm=Inf	0	root	_	_
+3	ar	ar	ADP	Simp	_	4	case	_	_
+4	dhúile	dúil	NOUN	Noun	Case=NomAcc|Form=Len|Gender=Fem|Number=Plur	2	nmod	_	_
+5	de	de	ADP	Cmpd	PrepForm=Cmpd	7	case	_	_
+6	réir	réir	ADP	Cmpd	PrepForm=Cmpd	5	fixed	_	_
+7	méid	méid	NOUN	Noun	Gender=Masc|Number=Sing	4	nmod	_	_
+8	na	na	DET	Art	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	huimhreach	uimhreach	NOUN	Noun	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	nmod	_	_
+10	adamhaí	adamhach	ADJ	Adj	Case=Gen|Gender=Fem|Number=Sing	9	amod	_	_
+11	é	é	PRON	Pers	Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+12	an	an	DET	Art	Definite=Def|Number=Sing|PronType=Art	13	det	_	_
+13	Tábla	tábla	PROPN	Noun	Definite=Def|Gender=Masc|Number=Sing	2	nsubj	_	_
+14	Peiriadach	peiriadach	ADJ	Adj	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 2
+# text = ar a dtugtar tábla peiriadach Meindeiléiv uaireanta (nó clár peiriadach na ndúl).
+1	ar	ar	ADP	Simp	_	3	case	_	_
+2	a	a	PART	Vb	PartType=Vb|PronType=Rel	3	mark:prt	_	_
+3	dtugtar	tabhair	VERB	VTI	Form=Ecl|Mood=Ind|Tense=Pres|Voice=Auto	0	root	_	_
+4	tábla	tábla	NOUN	Noun	Gender=Masc|Number=Sing	3	obj	_	_
+5	peiriadach	peiriadach	ADJ	Adj	Gender=Masc|Number=Sing	4	amod	_	_
+6	Meindeiléiv	Meindeiléiv	PROPN	Noun	Gender=Masc|Number=Sing	4	nmod	_	_
+7	uaireanta	uaireanta	ADV	Gn	_	3	advmod	_	_
+8	(	(	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+9	nó	nó	CCONJ	Coord	_	10	cc	_	_
+10	clár	clár	NOUN	Noun	Gender=Masc|Number=Sing	4	conj	_	_
+11	peiriadach	peiriadach	ADJ	Adj	Gender=Masc|Number=Sing	10	amod	_	_
+12	na	na	DET	Art	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	ndúl	dúl	NOUN	Noun	Case=Gen|Definite=Def|Gender=Masc|NounType=Weak|Number=Plur	10	nmod	_	SpaceAfter=No
+14	)	)	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -28,15 +57,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Struchtúr[cuir in eagar | athraigh foinse]
-1	Struchtúr[	struchtúr[	NOUN	Noun	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-2	cuir	cuir	NOUN	Noun	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
-3	in	i	ADP	Simp	_	4	case	_	_
-4	eagar	eagar	NOUN	Noun	Gender=Masc|Number=Sing	1	nmod	_	_
-5	|	|	PUNCT	Punct	_	6	punct	_	_
-6	athraigh	athraigh	NOUN	Noun	Gender=Fem|Number=Sing	1	parataxis	_	_
-7	foinse	foinse	NOUN	Noun	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = Struchtúr
+1	Struchtúr	struchtúr	NOUN	Noun	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -153,15 +175,54 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Stair[cuir in eagar | athraigh foinse]
-1	Stair[	stair[	NOUN	Noun	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	cuir	cuir	NOUN	Noun	Mood=Imp|Number=Sing|Person=2	1	nmod	_	_
-3	in	i	ADP	Simp	_	4	case	_	_
-4	eagar	eagar	NOUN	Noun	Gender=Masc|Number=Sing	1	nmod	_	_
-5	|	|	PUNCT	Punct	_	6	punct	_	_
-6	athraigh	athraigh	NOUN	Noun	Gender=Fem|Number=Sing	1	parataxis	_	_
-7	foinse	foinse	NOUN	Noun	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+# text = 1 uimhir adamhach
+1	1	1	NUM	Num	_	2	nummod	_	_
+2	uimhir	uimhir	NOUN	Noun	Case=NomAcc|Gender=Fem|Number=Sing	0	root	_	_
+3	adamhach	adamhach	ADJ	Adj	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = irish-idt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = H siombail
+1	H	H	NUM	Num	_	2	nummod	_	_
+2	siombail	siombail	NOUN	Noun	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = irish-idt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = hidrigin ainm
+1	hidrigin	idrigin	VERB	VT	Form=Emp|Mood=Ind|Number=Sing|Person=1|Tense=Pres	0	root	_	_
+2	ainm	ainm	NOUN	Noun	Case=NomAcc|Gender=Masc|Number=Sing	1	obj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = irish-idt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 1.
+1	1.	1.	NUM	Num	_	0	root	_	SpaceAfter=No
+
+# sent_id = 2
+# text = 00797 mais adamhach
+1	00797	00797	NUM	Num	_	0	root	_	_
+2	mais	mais	ADV	Noun	_	3	advmod	_	_
+3	adamhach	adamhach	ADJ	Adj	Degree=Pos	1	amod	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = irish-idt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Stair
+1	Stair	stair	NOUN	Noun	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -434,16 +495,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cód datha[cuir in eagar | athraigh foinse]
+# text = Cód datha
 1	Cód	cód	NOUN	Noun	Gender=Masc|Number=Sing	0	root	_	_
-2	datha[	datha[	NOUN	Noun	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
-3	cuir	cuir	VERB	VTI	Mood=Imp|Number=Sing|Person=2	1	parataxis	_	_
-4	in	i	ADP	Simp	_	5	case	_	_
-5	eagar	eagar	NOUN	Noun	Gender=Masc|Number=Sing	3	obl	_	_
-6	|	|	PUNCT	Punct	_	7	punct	_	_
-7	athraigh	athraigh	NOUN	Noun	Gender=Fem|Number=Sing	1	parataxis	_	_
-8	foinse	foinse	NOUN	Noun	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	datha	datha	NOUN	Noun	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -451,16 +505,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Féach freisin[cuir in eagar | athraigh foinse]
+# text = Féach freisin
 1	Féach	féach	VERB	VTI	Mood=Imp|Number=Sing|Person=2	0	root	_	_
-2	freisin[	freisin[	ADV	Gn	_	1	advmod	_	SpaceAfter=No
-3	cuir	cuir	NOUN	Noun	Mood=Imp|Number=Sing|Person=2	1	obj	_	_
-4	in	i	ADP	Simp	_	5	case	_	_
-5	eagar	eagar	NOUN	Noun	Gender=Masc|Number=Sing	3	obl	_	_
-6	|	|	PUNCT	Punct	_	7	punct	_	_
-7	athraigh	athraigh	NOUN	Noun	Case=NomAcc|Gender=Fem|Number=Sing	1	parataxis	_	_
-8	foinse	foinse	NOUN	Noun	Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+2	freisin	freisin	ADV	Gn	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = irish-idt-ud-2.6-200830
@@ -468,24 +515,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tagairtí[cuir in eagar | athraigh foinse]
+# text = Tagairtí
 1	Tagairtí	Tagairtí	NOUN	Noun	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
-3	cuir	cuir	VERB	VTI	Mood=Imp|Number=Sing|Person=2	1	parataxis	_	_
-4	in	i	ADP	Simp	_	5	case	_	_
-5	eagar	eagar	NOUN	Noun	Gender=Masc|Number=Sing	3	obl	_	_
-6	|	|	PUNCT	Punct	_	7	punct	_	_
-7	athraigh	athraigh	NOUN	Noun	Gender=Fem|Number=Sing	1	parataxis	_	_
-8	foinse	foinse	NOUN	Noun	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
-9	]	]	PUNCT	.	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = irish-idt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Roghchlár nascleanúna
-1	Roghchlár	roghchlár	NOUN	Noun	Gender=Masc|Number=Sing	0	root	_	_
-2	nascleanúna	nascleanúna	ADJ	Adj	NounType=NotSlender|Number=Plur	1	amod	_	SpacesAfter=\n
 

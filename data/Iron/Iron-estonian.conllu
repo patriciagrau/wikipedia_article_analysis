@@ -1,5 +1,3 @@
-# https://et.wikipedia.org/wiki/Raud
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Raud – Vikipeedia
 1	Raud	raud	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
 2	–	-	PUNCT	Z	_	1	punct	_	_
-3	Vikipeedia	viki_peedia	NOUN	S	Case=Nom|Number=Sing	1	parataxis	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Raud
-1	Raud	raud	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
+3	Vikipeedia	viki_peedia	NOUN	S	Case=Nom|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -157,18 +146,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Raua asetus perioodilisussüsteemis ja aatomi ehitus[muuda | muuda lähteteksti]
+# text = Raua asetus perioodilisussüsteemis ja aatomi ehitus
 1	Raua	raud	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
 2	asetus	asetus	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
 3	perioodilisussüsteemis	per_ioodilisussüsteem	NOUN	S	Case=Ine|Number=Sing	2	nmod	_	_
 4	ja	ja	CCONJ	J	_	6	cc	_	_
 5	aatomi	aatom	NOUN	S	Case=Gen|Number=Sing	6	nmod	_	_
-6	ehitus[	ehitus	NOUN	S	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
-7	muuda	muutma	VERB	V	VerbForm=Inf	2	acl	_	_
-8	|	|	PUNCT	Z	_	9	punct	_	_
-9	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
-10	lähteteksti	lähte_teks	NOUN	S	_	9	advmod	_	SpaceAfter=No
-11	]	]	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+6	ehitus	ehitus	NOUN	S	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -244,7 +228,7 @@
 25	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 4
-# text = Raua aatomi elektronkonfiguratsioon on lühendatud kujul järgmine:
+# text = Raua aatomi elektronkonfiguratsioon on lühendatud kujul järgmine: (Argooni aatomi elektronkonfiguratsioon pluss 8 ülejäänud raua elektroni) Ar 3d6 4s2.
 1	Raua	raud	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
 2	aatomi	aatom	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
 3	elektronkonfiguratsioon	elektro_nkonfiguratsioon	NOUN	S	Case=Nom|Number=Sing	7	nsubj:cop	_	_
@@ -252,7 +236,21 @@
 5	lühendatud	lühenda=tud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
 6	kujul	kuju	NOUN	S	Case=Ade|Number=Sing	7	obl	_	_
 7	järgmine	järgmine	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
-8	:	:	PUNCT	Z	_	7	punct	_	SpacesAfter=\s\s\n
+8	:	:	PUNCT	Z	_	12	punct	_	SpacesAfter=\s\s\n
+9	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
+10	Argooni	Argoon	PROPN	S	Case=Gen|Number=Sing	11	nmod	_	_
+11	aatomi	aatom	NOUN	S	Case=Gen|Number=Sing	12	nmod	_	_
+12	elektronkonfiguratsioon	elektro_nkonfiguratsioon	NOUN	S	Case=Nom|Number=Sing	7	parataxis	_	_
+13	pluss	pluss	NOUN	S	Case=Nom|Number=Sing	12	nmod	_	_
+14	8	8	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	17	nummod	_	_
+15	ülejäänud	üle_jäänud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Act	17	acl	_	_
+16	raua	raud	NOUN	S	Case=Gen|Number=Sing	17	nmod	_	_
+17	elektroni	elektron	NOUN	S	Case=Par|Number=Sing	12	nmod	_	SpaceAfter=No
+18	)	)	PUNCT	Z	_	12	punct	_	SpacesAfter=\s\s
+19	Ar	Ar	NOUN	Y	Abbr=Yes	7	parataxis	_	_
+20	3d6	3d6	NUM	N	NumForm=Digit|NumType=Card	19	flat	_	_
+21	4s2	4s2	NUM	N	NumForm=Digit|NumType=Card	19	nummod	_	SpaceAfter=No
+22	.	.	PUNCT	Z	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -392,14 +390,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Raud looduses[muuda | muuda lähteteksti]
+# text = Raud looduses
 1	Raud	raud	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
-2	looduses[	loodus	NOUN	S	Case=Ela|Number=Sing	1	nmod	_	SpaceAfter=No
-3	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl	_	_
-4	|	|	PUNCT	Z	_	6	punct	_	_
-5	muuda	muutma	ADJ	A	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	amod	_	_
-6	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	1	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+2	looduses	loodus	NOUN	S	Case=Ine|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -563,17 +556,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Raua füüsikalised ja keemilised omadused[muuda | muuda lähteteksti]
+# text = Raua füüsikalised ja keemilised omadused
 1	Raua	raud	NOUN	S	Case=Gen|Number=Sing	5	nmod	_	_
 2	füüsikalised	füüsikaline	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	amod	_	_
 3	ja	ja	CCONJ	J	_	4	cc	_	_
 4	keemilised	keemiline	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	conj	_	_
-5	omadused[	omadus	NOUN	S	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No
-6	muuda	muutma	VERB	V	VerbForm=Inf	0	root	_	_
-7	|	|	PUNCT	Z	_	8	punct	_	_
-8	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
-9	lähteteksti	lähte_teks	ADV	D	_	8	advmod	_	SpaceAfter=No
-10	]	]	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+5	omadused	omadus	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -719,13 +707,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rauasoolad[muuda | muuda lähteteksti]
-1	Rauasoolad[	rauas_oola	NOUN	S	Case=Gen|Number=Plur	2	obl	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	VerbForm=Inf	0	root	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Rauasoolad
+1	Rauasoolad	raua_sool	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -764,15 +747,34 @@
 8	.	.	PUNCT	Z	_	7	punct	_	_
 
 # sent_id = 3
-# text = Raud(II)sulfaat saadakse raua reageerimisel lahjendatud väävelhappega: Fe+H2SO4=FeSO4+H2
+# text = Raud(II)sulfaat saadakse raua reageerimisel lahjendatud väävelhappega: Fe+H2SO4=FeSO4+H2 Raud(II)sulfaati kasutatakse taimekahjurite tõrjevahendina, värvainetes ja tindi saamisel, puiduimmutuslahuste valmistamiseks, et kaitsta puitu mädanemise eest.
 1	Raud(II)sulfaat	raud(ii)sulfaa	NOUN	S	Case=Par|Number=Sing	2	obj	_	_
 2	saadakse	saama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 3	raua	raud	NOUN	S	Case=Gen|Number=Sing	4	nmod	_	_
 4	reageerimisel	reageerimine	NOUN	S	Case=Ade|Number=Sing	2	obl	_	_
 5	lahjendatud	lahjenda=tud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
 6	väävelhappega	väävel_hape	NOUN	S	Case=Com|Number=Sing	2	obl	_	SpaceAfter=No
-7	:	:	PUNCT	Z	_	2	punct	_	_
-8	Fe+H2SO4=FeSO4+H2	fe+h2so4=feso4+h2	SYM	Y	Abbr=Yes	2	parataxis	_	SpacesAfter=\n
+7	:	:	PUNCT	Z	_	10	punct	_	_
+8	Fe+H2SO4=FeSO4+H2	fe+h2so4=feso4+h2	SYM	Y	Abbr=Yes	10	obj	_	SpacesAfter=\n
+9	Raud(II)sulfaati	Raud(ii)sulfaat	NOUN	S	Case=Par|Number=Sing	8	flat	_	_
+10	kasutatakse	kasutama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	_
+11	taimekahjurite	taime_kahjur	NOUN	S	Case=Gen|Number=Plur	12	nmod	_	_
+12	tõrjevahendina	tõrje_vahend	NOUN	S	Case=Ess|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Z	_	14	punct	_	_
+14	värvainetes	värv_aine	NOUN	S	Case=Ine|Number=Plur	12	conj	_	_
+15	ja	ja	CCONJ	J	_	17	cc	_	_
+16	tindi	tint	NOUN	S	Case=Gen|Number=Sing	17	nmod	_	_
+17	saamisel	saamine	NOUN	S	Case=Ade|Number=Sing	12	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Z	_	20	punct	_	_
+19	puiduimmutuslahuste	puiduimmutuslahustt	NOUN	S	Case=Gen|Number=Plur	20	nmod	_	_
+20	valmistamiseks	valmistamine	NOUN	S	Case=Tra|Number=Sing	12	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Z	_	23	punct	_	_
+22	et	et	SCONJ	J	_	23	mark	_	_
+23	kaitsta	kaitsma	VERB	V	VerbForm=Inf	10	advcl	_	_
+24	puitu	puit	NOUN	S	Case=Gen|Number=Sing	25	nmod	_	_
+25	mädanemise	mädanemine	NOUN	S	Case=Gen|Number=Sing	23	obl	_	_
+26	eest	eest	ADP	K	AdpType=Post	25	case	_	SpaceAfter=No
+27	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -797,22 +799,56 @@
 14	)	)	PUNCT	Z	_	11	punct	_	SpaceAfter=No
 15	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
+# sent_id = 2
+# text = Raud(III)kloriidi võib saada vastavate lihtainete otsesel reageerimisel ja raud(III)oksiidi või -hüdroksiidi reageerimisel vesinikkloriidhappega: Fe2O3+6HCl= 2FeCl3+3H2O Fe(OH)3+3HCl=FeCl3+3H2O
+1	Raud(III)kloriidi	raud(iii)kloriid	NOUN	S	Case=Par|Number=Sing	3	obj	_	_
+2	võib	võima	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saada	saama	VERB	V	VerbForm=Inf	0	root	_	_
+4	vastavate	vastav	ADJ	A	Case=Gen|Degree=Pos|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	5	acl	_	_
+5	lihtainete	liht_aine	NOUN	S	Case=Gen|Number=Plur	7	nmod	_	_
+6	otsesel	otsene	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	7	amod	_	_
+7	reageerimisel	reageerimine	NOUN	S	Case=Ade|Number=Sing	3	obl	_	_
+8	ja	ja	CCONJ	J	_	12	cc	_	_
+9	raud(III)oksiidi	raud(_iii)oksiid	NOUN	S	Case=Gen|Number=Sing	12	nmod	_	_
+10	või	või	CCONJ	J	_	11	cc	_	_
+11	-hüdroksiidi	hüdroksiidi	NOUN	S	Case=Gen|Number=Sing	9	conj	_	_
+12	reageerimisel	reageerimine	NOUN	S	Case=Ade|Number=Sing	3	obl	_	_
+13	vesinikkloriidhappega	vesini_kkloriidhapp	NOUN	S	Case=Com|Number=Sing	12	nmod	_	SpaceAfter=No
+14	:	:	PUNCT	Z	_	15	punct	_	_
+15	Fe2O3+6HCl=	fe2o3_+6h=	SYM	Y	Abbr=Yes	3	parataxis	_	_
+16	2FeCl3+3H2O	2fecl3+3h2o	SYM	Y	Abbr=Yes	15	flat	_	SpacesAfter=\n
+17	Fe(OH)3+3HCl=FeCl3+3H2O	Fe(oh)3+3hcl=fecl3+3h2o	SYM	Y	Abbr=Yes	15	flat	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Kasutades vesinikkloriidhappe asemel väävelhapet, saadakse raud(III)sulfaat: 2Fe(OH)3+3H2SO4=Fe2(SO4)3+6H2O Raud(III)kloriidi ja –sulfaati kasutatakse reaktiividena keemialaborites.
+1	Kasutades	kasutama	VERB	V	VerbForm=Conv	6	advcl	_	_
+2	vesinikkloriidhappe	vesinikkloriid_hape	NOUN	S	Case=Gen|Number=Sing	1	obl	_	_
+3	asemel	asemel	ADP	K	AdpType=Post	2	case	_	_
+4	väävelhapet	väävel_hape	NOUN	S	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Z	_	6	punct	_	_
+6	saadakse	saama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	raud(III)sulfaat	raud(iii)sulfaat	NOUN	S	Case=Nom|Number=Sing	6	obj	_	SpaceAfter=No
+8	:	:	PUNCT	Z	_	13	punct	_	_
+9	2Fe(OH)3+3H2SO4=Fe2(SO4)3+6H2O	2fe(oh)3+3h2so4=fe2(so4)3+6h2o	SYM	Y	Abbr=Yes	10	nmod	_	SpacesAfter=\n
+10	Raud(III)kloriidi	Raud(iii)kloriid	NOUN	S	Case=Par|Number=Sing	13	obj	_	_
+11	ja	ja	CCONJ	J	_	12	cc	_	_
+12	–sulfaati	–sulfaat	NOUN	S	Case=Par|Number=Sing	10	conj	_	_
+13	kasutatakse	kasutama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	parataxis	_	_
+14	reaktiividena	reaktiiv	NOUN	S	Case=Ess|Number=Plur	13	obl	_	_
+15	keemialaborites	keemia_labor	NOUN	S	Case=Ine|Number=Plur	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = VIII rühma kõrvalalarühma metallid[muuda | muuda lähteteksti]
+# text = VIII rühma kõrvalalarühma metallid
 1	VIII	VIII	ADJ	N	Case=Gen|Number=Sing|NumForm=Roman|NumType=Ord	2	amod	_	_
 2	rühma	rühm	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
 3	kõrvalalarühma	kõrv_alala_rühm	NOUN	S	Case=Gen|Number=Sing	4	nmod	_	_
-4	metallid[	metall	NOUN	S	Case=Gen|Number=Plur	8	nmod	_	SpaceAfter=No
-5	muuda	muutma	DET	P	Case=Par|Number=Sing|PronType=Ind	8	det	_	_
-6	|	|	PUNCT	Z	_	8	punct	_	_
-7	muuda	muutma	DET	P	Case=Par|Number=Sing|PronType=Ind	8	amod	_	_
-8	lähteteksti	lähtetekstk	NOUN	S	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
-9	]	]	PUNCT	Z	_	8	punct	_	SpacesAfter=\n
+4	metallid	metall	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -898,13 +934,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rauasulamid[muuda | muuda lähteteksti]
-1	Rauasulamid[	rau_asulam	NOUN	S	Case=Gen|Number=Plur	0	root	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	VerbForm=Inf	1	acl	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	ADJ	A	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	2	conj	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Rauasulamid
+1	Rauasulamid	raua_sulam	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1178,15 +1209,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Raua saamine soomaagist[muuda | muuda lähteteksti]
+# text = Raua saamine soomaagist
 1	Raua	raud	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
 2	saamine	saamine	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
-3	soomaagist[	soomaag	NOUN	S	Case=Add|Number=Sing	2	nmod	_	SpaceAfter=No
-4	muuda	muutma	VERB	V	VerbForm=Inf	2	acl	_	_
-5	|	|	PUNCT	Z	_	6	punct	_	_
-6	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	lähteteksti	lähte_teks	ADV	S	_	6	obj	_	SpaceAfter=No
-8	]	]	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+3	soomaagist	soomaag	NOUN	S	Case=Ela|Number=Sing	2	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1194,7 +1220,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Eestis algas rauatootmine umbes 2000 aastat tagasi ja kestis arvatavasti kuni 18. sajandini[viide?].
+# text = Eestis algas rauatootmine umbes 2000 aastat tagasi ja kestis arvatavasti kuni 18. sajandini.
 1	Eestis	Eesti	PROPN	S	Case=Ine|Number=Sing	2	obl	_	_
 2	algas	algama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 3	rauatootmine	raua_tootmine	NOUN	S	Case=Nom|Number=Sing	2	nsubj	_	_
@@ -1207,11 +1233,8 @@
 10	arvatavasti	arvatavasti	ADV	D	_	9	advmod	_	_
 11	kuni	kuni	ADP	K	AdpType=Prep	13	case	_	_
 12	18.	18.	ADJ	N	Case=Gen|Number=Sing|NumForm=Digit|NumType=Ord	13	amod	_	_
-13	sajandini[	sajandin	NOUN	S	Case=Ter|Number=Sing	9	obl	_	SpaceAfter=No
-14	viide	viide	NOUN	S	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No
-15	?	?	PUNCT	Z	_	2	punct	_	SpaceAfter=No
-16	]	]	PUNCT	Z	_	2	punct	_	SpaceAfter=No
-17	.	.	PUNCT	Z	_	2	punct	_	_
+13	sajandini	sajand	NOUN	S	Case=Ter|Number=Sing	9	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	2	punct	_	_
 
 # sent_id = 2
 # text = Raud oli ainus metall, mida Eestis sai toota kohalikust toorainest, soomaagist.
@@ -1294,7 +1317,7 @@
 15	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 3
-# text = 1988. aastal tehti seal esimene katse esivanemate eeskujul soomaagist rauda sulatada, tulemuseks oli 680 g rauda, 1990 saadi seda juba rohkem kui kaks kilogrammi[viide?].
+# text = 1988. aastal tehti seal esimene katse esivanemate eeskujul soomaagist rauda sulatada, tulemuseks oli 680 g rauda, 1990 saadi seda juba rohkem kui kaks kilogrammi.
 1	1988.	1988.	ADJ	N	Case=Ade|Number=Sing|NumForm=Digit|NumType=Ord	2	amod	_	_
 2	aastal	aasta	NOUN	S	Case=Ade|Number=Sing	3	obl	_	_
 3	tehti	tegema	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -1320,11 +1343,8 @@
 23	rohkem	rohkem	ADV	D	_	20	advmod	_	_
 24	kui	kui	SCONJ	J	_	23	fixed	_	_
 25	kaks	kaks	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	26	nummod	_	_
-26	kilogrammi[	kilo_gramm	NOUN	S	Case=Par|Number=Sing	27	nmod	_	SpaceAfter=No
-27	viide	viide	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	23	advcl	_	SpaceAfter=No
-28	?	?	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-29	]	]	PUNCT	Z	_	27	punct	_	SpaceAfter=No
-30	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+26	kilogrammi	kilo_gramm	NOUN	S	Case=Par|Number=Sing	23	advcl	_	SpaceAfter=No
+27	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1332,15 +1352,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Rauasulatusahju kaks põhilist protsessi[viide?]:
-1	Rauasulatusahju	rauasulatusahju	NOUN	S	Case=Gen|Number=Sing	4	nmod	_	_
+# text = Rauasulatusahju kaks põhilist protsessi:
+1	Rauasulatusahju	rau-asulatusahju	NOUN	S	Case=Gen|Number=Sing	4	nmod	_	_
 2	kaks	kaks	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	4	nummod	_	_
 3	põhilist	põhiline	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
-4	protsessi[	protsess	NOUN	S	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
-5	viide	viide	NOUN	S	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
-6	?	?	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-8	:	:	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+4	protsessi	protsess	NOUN	S	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1394,14 +1411,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Vaata ka[muuda | muuda lähteteksti]
+# text = Vaata ka
 1	Vaata	vaatama	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-2	ka[	ka[	ADV	D	_	3	advmod	_	SpaceAfter=No
-3	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	obj	_	_
-4	|	|	PUNCT	Z	_	6	punct	_	_
-5	muuda	muutma	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	amod	_	_
-6	lähteteksti	lähte_teks	NOUN	S	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
-7	]	]	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+2	ka	ka	ADV	D	_	1	advmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1409,13 +1421,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Välislingid[muuda | muuda lähteteksti]
-1	Välislingid[	välis_ling	NOUN	S	Case=Gen|Number=Plur	5	nmod	_	SpaceAfter=No
-2	muuda	muutma	VERB	V	VerbForm=Inf	5	amod	_	_
-3	|	|	PUNCT	Z	_	5	punct	_	_
-4	muuda	muutma	ADJ	A	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	amod	_	_
-5	lähteteksti	lähte_teks	NOUN	S	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
+# text = Välislingid
+1	Välislingid	välis_ling	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1525,13 +1532,4 @@
 99	Fleroovium	Fleroovium	PROPN	S	Case=Nom|Number=Sing	1	conj	_	_
 100	-	-	PUNCT	Z	_	101	punct	_	_
 101	Moskoovium	Moskoovium	PROPN	S	Case=Nom|Number=Sing	99	appos	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Navigeerimismenüü
-1	Navigeerimismenüü	navi_geerimismenüü	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpacesAfter=\n
 

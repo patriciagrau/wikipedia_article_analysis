@@ -1,5 +1,3 @@
-# https://hi.wikipedia.org/wiki/%E0%A4%AF%E0%A5%82%E0%A4%B0%E0%A5%8B%E0%A4%AA
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = यूरोप - विकिपीडिया
 1	यूरोप	यूरोप	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	compound	_	_
 2	-	-	PUNCT	SYM	_	3	punct	_	_
-3	विकिपीडिया	विकिपीडिया	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+3	विकिपीडिया	विकिपीडिया	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -17,8 +15,233 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = यूरोप
-1	यूरोप	यूरोप	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	nsubj	_	SpacesAfter=\n
+# text = यूरोप पृथ्वी पर स्थित सात महाद्वीपों में से एक महाद्वीप है।
+1	यूरोप	यूरोप	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+2	पृथ्वी	पृथ्वी	PROPN	NNP	Case=Acc|Gender=Fem|Number=Sing|Person=3	4	obl	_	_
+3	पर	पर	ADP	PSP	AdpType=Post	2	case	_	_
+4	स्थित	स्थित	ADJ	JJ	Case=Acc	6	amod	_	_
+5	सात	सात	NUM	QC	NumType=Card	6	nummod	_	_
+6	महाद्वीपों	महाद्वीप	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	10	nmod	_	_
+7	में	में	ADP	PSP	AdpType=Post	6	case	_	_
+8	से	से	ADP	PSP	AdpType=Post	6	case	_	_
+9	एक	एक	NUM	QC	NumType=Card	10	nummod	_	_
+10	महाद्वीप	महाद्वीप	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+11	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	SpaceAfter=No
+12	।	।	PUNCT	SYM	_	10	punct	_	_
+
+# sent_id = 2
+# text = यूरोप, एशिया से पूरी तरह जुड़ा हुआ है।
+1	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	obl	_	SpaceAfter=No
+2	,	COMMA	PUNCT	SYM	_	3	punct	_	_
+3	एशिया	एशिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
+4	से	से	ADP	PSP	AdpType=Post	1	case	_	_
+5	पूरी	पूरा	ADJ	JJ	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
+6	तरह	तरह	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	7	obl	_	_
+7	जुड़ा	जुड़	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+8	हुआ	हो	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	7	aux	_	_
+9	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	SpaceAfter=No
+10	।	।	PUNCT	SYM	_	7	punct	_	_
+
+# sent_id = 3
+# text = यूरोप और एशिया वस्तुतः यूरेशिया के खण्ड हैं और यूरोप यूरेशिया का सबसे पश्चिमी प्रायद्वीपीय खंड है।
+1	यूरोप	यूरोप	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+2	और	और	CCONJ	CC	_	3	cc	_	_
+3	एशिया	एशिया	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
+4	वस्तुतः	वस्तुतः	ADV	RB	_	7	advmod	_	_
+5	यूरेशिया	यूरेशिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+6	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	5	case	_	_
+7	खण्ड	खण्ड	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	0	root	_	_
+8	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+9	और	और	CCONJ	CC	_	16	cc	_	_
+10	यूरोप	यूरोप	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+11	यूरेशिया	यूरेशिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+12	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	11	case	_	_
+13	सबसे	सबसे	ADV	INTF	AdvType=Deg	14	advmod	_	_
+14	पश्चिमी	पश्चिमी	ADJ	JJ	Case=Nom	16	amod	_	_
+15	प्रायद्वीपीय	प्रायद्वीपीय	ADJ	JJ	Case=Nom	14	amod	_	_
+16	खंड	खंड	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	conj	_	_
+17	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	SpaceAfter=No
+18	।	।	PUNCT	SYM	_	7	punct	_	_
+
+# sent_id = 4
+# text = एशिया से यूरोप का विभाजन इसके पूर्व में स्थित यूराल पर्वत के जल विभाजक जैसे यूराल नदी, कैस्पियन सागर, कॉकस पर्वत शृंखला और दक्षिण पश्चिम में स्थित काले सागर के द्वारा होता है।
+1	एशिया	एशिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	34	obl	_	_
+2	से	से	ADP	PSP	AdpType=Post	1	case	_	_
+3	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	3	case	_	_
+5	विभाजन	विभाजन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	nsubj	_	_
+6	इसके	यह	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod	_	_
+7	पूर्व	पूर्व	ADP	NST	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing|Person=3	9	obl	_	_
+8	में	में	ADP	PSP	AdpType=Post	7	case	_	_
+9	स्थित	स्थित	ADJ	JJ	Case=Acc	11	amod	_	_
+10	यूराल	यूराल	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+11	पर्वत	पर्वत	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	nmod	_	_
+12	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	11	case	_	_
+13	जल	जल	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	compound	_	_
+14	विभाजक	विभाजक	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	34	obl	_	_
+15	जैसे	जैसा	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	14	case	_	_
+16	यूराल	यूराल	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
+17	नदी	नदी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	34	obl	_	SpaceAfter=No
+18	,	COMMA	PUNCT	SYM	_	20	punct	_	_
+19	कैस्पियन	कैस्पियन	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	compound	_	_
+20	सागर	सागर	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	conj	_	SpaceAfter=No
+21	,	COMMA	PUNCT	SYM	_	24	punct	_	_
+22	कॉकस	कॉकस	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	compound	_	_
+23	पर्वत	पर्वत	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	compound	_	_
+24	शृंखला	शृंखला	PROPN	NNP	Case=Acc|Gender=Fem|Number=Sing|Person=3	17	conj	_	_
+25	और	और	CCONJ	CC	_	31	cc	_	_
+26	दक्षिण	दक्षिण	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	27	compound	_	_
+27	पश्चिम	पश्चिम	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	29	obl	_	_
+28	में	में	ADP	PSP	AdpType=Post	27	case	_	_
+29	स्थित	स्थित	ADJ	JJ	Case=Acc	31	amod	_	_
+30	काले	काला	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	31	amod	_	_
+31	सागर	सागर	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	conj	_	_
+32	के	के	ADP	PSP	AdpType=Post	31	case	_	_
+33	द्वारा	द्वारा	ADP	PSP	AdpType=Post	31	case	_	_
+34	होता	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+35	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux	_	SpaceAfter=No
+36	।	।	PUNCT	SYM	_	34	punct	_	_
+
+# sent_id = 5
+# text = यूरोप के उत्तर में आर्कटिक महासागर और अन्य जल निकाय, पश्चिम में अटलांटिक महासागर, दक्षिण में भूमध्य सागर और दक्षिण पूर्व में काला सागर और इससे जुड़े जलमार्ग स्थित हैं।
+1	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	case	_	_
+3	उत्तर	उत्तर	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	31	nmod	_	_
+4	में	में	ADP	PSP	AdpType=Post	3	case	_	_
+5	आर्कटिक	आर्कटिक	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	compound	_	_
+6	महासागर	महासागर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	31	nsubj	_	_
+7	और	और	CCONJ	CC	_	10	cc	_	_
+8	अन्य	अन्य	ADJ	JJ	Case=Nom	10	amod	_	_
+9	जल	जल	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	compound	_	_
+10	निकाय	निकाय	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	SpaceAfter=No
+11	,	COMMA	PUNCT	SYM	_	15	punct	_	_
+12	पश्चिम	पश्चिम	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+13	में	में	ADP	PSP	AdpType=Post	12	case	_	_
+14	अटलांटिक	अटलांटिक	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	compound	_	_
+15	महासागर	महासागर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	SpaceAfter=No
+16	,	COMMA	PUNCT	SYM	_	20	punct	_	_
+17	दक्षिण	दक्षिण	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+18	में	में	ADP	PSP	AdpType=Post	17	case	_	_
+19	भूमध्य	भूमध्य	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	compound	_	_
+20	सागर	सागर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	_
+21	और	और	CCONJ	CC	_	26	cc	_	_
+22	दक्षिण	दक्षिण	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	23	compound	_	_
+23	पूर्व	पूर्व	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	26	nmod	_	_
+24	में	में	ADP	PSP	AdpType=Post	23	case	_	_
+25	काला	काला	ADJ	NNPC	Case=Nom|Gender=Masc|Number=Sing	26	compound	_	_
+26	सागर	सागर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	conj	_	_
+27	और	और	CCONJ	CC	_	30	cc	_	_
+28	इससे	यह	PRON	PRP	Case=Acc,Ins|Number=Sing|Person=3|PronType=Prs	29	obl	_	_
+29	जुड़े	जुड	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	30	acl	_	_
+30	जलमार्ग	जलमार्ग	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	6	conj	_	_
+31	स्थित	स्थित	ADJ	JJ	_	0	root	_	_
+32	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	cop	_	SpaceAfter=No
+33	।	।	PUNCT	SYM	_	31	punct	_	_
+
+# sent_id = 6
+# text = इस सबके बावजूद यूरोप की सीमायें बहुत हद तक काल्पनिक हैं और इसे एक महाद्वीप की संज्ञा देना भौगोलिक आधार पर कम, सांस्कृतिक और ऐतिहासिक आधार पर अधिक है।
+1	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	सबके	सब	PRON	PRP	Case=Acc,Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod	_	_
+3	बावजूद	बावजूद	ADP	PSP	AdpType=Post	2	case	_	_
+4	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+5	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Plur	4	case	_	_
+6	सीमायें	सीमाय	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	10	nsubj	_	_
+7	बहुत	बहुत	DET	QF	PronType=Ind	8	det	_	_
+8	हद	हद	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+9	तक	तक	ADP	PSP	AdpType=Post	8	case	_	_
+10	काल्पनिक	काल्पनिक	ADJ	JJ	_	0	root	_	_
+11	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+12	और	और	CCONJ	CC	_	30	cc	_	_
+13	इसे	यह	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=3|PronType=Prs	18	iobj	_	_
+14	एक	एक	NUM	QC	NumType=Card	15	nummod	_	_
+15	महाद्वीप	महाद्वीप	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
+16	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	15	case	_	_
+17	संज्ञा	संज्ञा	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	18	obj	_	_
+18	देना	दे	VERB	VM	Case=Nom|VerbForm=Inf	30	nsubj	_	_
+19	भौगोलिक	भौगोलिक	ADJ	JJ	Case=Acc	20	amod	_	_
+20	आधार	आधार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	obl	_	_
+21	पर	पर	ADP	PSP	AdpType=Post	20	case	_	_
+22	कम	कम	DET	QF	PronType=Ind	30	obl	_	SpaceAfter=No
+23	,	COMMA	PUNCT	SYM	_	24	punct	_	_
+24	सांस्कृतिक	सांस्कृतिक	ADJ	JJ	Case=Acc	27	amod	_	_
+25	और	और	CCONJ	CC	_	26	cc	_	_
+26	ऐतिहासिक	ऐतिहासिक	ADJ	JJ	Case=Acc	22	conj	_	_
+27	आधार	आधार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	obl	_	_
+28	पर	पर	ADP	PSP	AdpType=Post	27	case	_	_
+29	अधिक	अधिक	DET	QF	PronType=Ind	30	obj	_	_
+30	है	है	VERB	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	conj	_	SpaceAfter=No
+31	।	।	PUNCT	SYM	_	10	punct	_	_
+
+# sent_id = 7
+# text = ब्रिटेन, आयरलैंड और आइसलैंड जैसे देश एक द्वीप होते हुए भी यूरोप का हिस्सा हैं, पर ग्रीनलैंड उत्तरी अमरीका का हिस्सा है।
+1	ब्रिटेन	ब्रिटेन	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	SpaceAfter=No
+2	,	COMMA	PUNCT	SYM	_	3	punct	_	_
+3	आयरलैंड	आयरलैंड	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
+4	और	और	CCONJ	CC	_	5	cc	_	_
+5	आइसलैंड	आइसलैंड	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	1	conj	_	_
+6	जैसे	जैसा	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	1	case	_	_
+7	देश	देश	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	15	nsubj	_	_
+8	एक	एक	NUM	QC	NumType=Card	9	nummod	_	_
+9	द्वीप	द्वीप	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	xcomp	_	_
+10	होते	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	_	_
+11	हुए	हो	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	10	aux	_	_
+12	भी	भी	PART	RP	_	10	dep	_	_
+13	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+14	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	13	case	_	_
+15	हिस्सा	हिस्सा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+16	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	SpaceAfter=No
+17	,	COMMA	PUNCT	SYM	_	23	punct	_	_
+18	पर	पर	CCONJ	CC	_	23	cc	_	_
+19	ग्रीनलैंड	ग्रीनलैंड	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_
+20	उत्तरी	उत्तरी	ADJ	JJ	Case=Acc	21	amod	_	_
+21	अमरीका	अमरीका	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	23	nmod	_	_
+22	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	21	case	_	_
+23	हिस्सा	हिस्सा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	conj	_	_
+24	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	_	SpaceAfter=No
+25	।	।	PUNCT	SYM	_	15	punct	_	_
+
+# sent_id = 8
+# text = रूस सांस्कृतिक दृष्टिकोण से यूरोप में ही माना जाता है, हालाँकि इसका सारा साइबेरियाई इलाका एशिया का हिस्सा है।
+1	रूस	रूस	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj:pass	_	_
+2	सांस्कृतिक	सांस्कृतिक	ADJ	JJ	Case=Acc	3	amod	_	_
+3	दृष्टिकोण	दृष्टिकोण	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+4	से	से	ADP	PSP	AdpType=Post	3	case	_	_
+5	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+6	में	में	ADP	PSP	AdpType=Post	5	case	_	_
+7	ही	ही	PART	RP	_	5	dep	_	_
+8	माना	मान	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+9	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	8	aux:pass	_	_
+10	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	SpaceAfter=No
+11	,	COMMA	PUNCT	SYM	_	8	punct	_	_
+12	हालाँकि	हालाँकि	SCONJ	CC	_	19	mark	_	_
+13	इसका	यह	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod	_	_
+14	सारा	सारा	DET	QF	Case=Nom|Gender=Masc|Number=Sing	16	det	_	_
+15	साइबेरियाई	साइबेरियाई	ADJ	JJ	Case=Nom	16	amod	_	_
+16	इलाका	इलाका	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
+17	एशिया	एशिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
+18	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	17	case	_	_
+19	हिस्सा	हिस्सा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+20	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	SpaceAfter=No
+21	।	।	PUNCT	SYM	_	8	punct	_	_
+
+# sent_id = 9
+# text = आज ज़्यादातर यूरोपीय देशों के लोग दुनिया के सबसे ऊँचे जीवनस्तर का आनन्द लेते हैं।
+1	आज	आज	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+2	ज़्यादातर	ज्यादातर	ADJ	JJ	Case=Acc	4	amod	_	_
+3	यूरोपीय	यूरोपीय	ADJ	JJ	Case=Acc	2	amod	_	_
+4	देशों	देश	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	6	nmod	_	_
+5	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	4	case	_	_
+6	लोग	लोग	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	14	nsubj	_	_
+7	दुनिया	दुनिया	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+8	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	7	case	_	_
+9	सबसे	सबसे	ADV	INTF	AdvType=Deg	10	advmod	_	_
+10	ऊँचे	ऊँचा	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	11	amod	_	_
+11	जीवनस्तर	जीवनस्तर	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+12	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	11	case	_	_
+13	आनन्द	आनन्द	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	obj	_	_
+14	लेते	ले	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+15	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	SpaceAfter=No
+16	।	।	PUNCT	SYM	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -400,13 +623,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = यूरोप का इतिहास[संपादित करें]
+# text = यूरोप का इतिहास
 1	यूरोप	यूरोप	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
 2	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	1	case	_	_
-3	इतिहास[	इतिहास[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	obj	_	SpaceAfter=No
-4	संपादित	संपादित	ADJ	JJ	_	5	compound	_	_
-5	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+3	इतिहास	इतिहास	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1144,11 +1364,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = भूगोल[संपादित करें]
-1	भूगोल[	भूगोल[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
-2	संपादित	संपादित	ADJ	JJ	_	3	compound	_	_
-3	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+# text = भूगोल
+1	भूगोल	भूगोल	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1278,11 +1495,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = जलवायु[संपादित करें]
-1	जलवायु[	जलवायु[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	obj	_	SpaceAfter=No
-2	संपादित	संपादित	ADJ	JJ	_	3	compound	_	_
-3	करें	कर	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-4	]	]	PUNCT	SYM	_	3	punct	_	SpacesAfter=\n
+# text = जलवायु
+1	जलवायु	जलवायु	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	nsubj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1428,15 +1642,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = प्राकृतिक वनस्पति एवं वन्य जीव[संपादित करें]
+# text = प्राकृतिक वनस्पति एवं वन्य जीव
 1	प्राकृतिक	प्राकृतिक	ADJ	JJ	Case=Nom	2	amod	_	_
-2	वनस्पति	वनस्पति	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	7	nsubj	_	_
+2	वनस्पति	वनस्पति	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	_
 3	एवं	एवं	CCONJ	CC	_	5	cc	_	_
 4	वन्य	वन्य	ADJ	JJ	Case=Nom	5	amod	_	_
-5	जीव[	जीव[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	2	conj	_	SpaceAfter=No
-6	संपादित	संपादित	ADJ	JJ	_	7	compound	_	_
-7	करें	कर	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-8	]	]	PUNCT	SYM	_	7	punct	_	SpacesAfter=\n
+5	जीव	जीव	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -1895,21 +2106,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = इन्हें भी देखें[संपादित करें]
-1	इन्हें	यह	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=3|PronType=Prs	5	obj	_	_
+# text = इन्हें भी देखें
+1	इन्हें	यह	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=3|PronType=Prs	3	obj	_	_
 2	भी	भी	PART	RP	_	1	dep	_	_
-3	देखें[	देखें[	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	5	obj	_	SpaceAfter=No
-4	संपादित	संपादित	ADJ	JJ	_	5	compound	_	_
-5	करें	कर	VERB	VM	Mood=Sub|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-6	]	]	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hindi-hdtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = दिक्चालन सूची
-1	दिक्चालन	दिक्चालन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
-2	सूची	सूची	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	SpacesAfter=\n
+3	देखें	देख	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 

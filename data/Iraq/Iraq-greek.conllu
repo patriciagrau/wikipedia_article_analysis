@@ -1,5 +1,3 @@
-# https://el.wikipedia.org/wiki/%CE%99%CF%81%CE%AC%CE%BA
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,7 +7,7 @@
 # text = Ιράκ - Βικιπαίδεια
 1	Ιράκ	Ιράκ	X	X	Foreign=Yes	0	root	_	_
 2	-	-	PUNCT	PUNCT	_	3	punct	_	_
-3	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpacesAfter=\n
+3	Βικιπαίδεια	βικιπαίδεια	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -17,8 +15,21 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ιράκ
-1	Ιράκ	Ιράκ	X	X	Foreign=Yes	0	root	_	SpacesAfter=\n
+# text = Συντεταγμένες: 32°52′30″N 43°03′20″E﻿ / ﻿32.875°N 43.0556°E﻿ / 32.875;
+1	Συντεταγμένες	συντεταγμένος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	32°52′30″N	32°52′30″n	NOUN	NOUN	_	1	parataxis	_	_
+4	43°03′20″E﻿	43°03′20″e﻿	NUM	NUM	NumType=Card	3	nmod	_	_
+5	/	/	PUNCT	PUNCT	_	6	punct	_	_
+6	﻿32.875°N	﻿32.875°n	NOUN	NOUN	NumType=Card	3	conj	_	_
+7	43.0556°E﻿	43.0556°e﻿	NUM	NUM	NumType=Card	6	nmod	_	_
+8	/	/	PUNCT	PUNCT	_	9	punct	_	_
+9	32.875	32.875	NUM	NUM	NumType=Card	1	conj	_	SpaceAfter=No
+10	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 2
+# text = 43.0556
+1	43.0556	43.0556	NOUN	NOUN	_	0	root	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -109,7 +120,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Η έκτασή του είναι 437.072 τετρ. χλμ. και ο πληθυσμός του 41.190.700 κατοίκους, σύμφωνα με επίσημη εκτίμηση για το 2021.
+# text = Η έκτασή του είναι 437.072 τετρ. χλμ. και ο πληθυσμός του 42.248.900 κατοίκους, σύμφωνα με επίσημη εκτίμηση για το 2022.
 1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	έκτασή	έκταση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
 3	του	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod	_	_
@@ -121,7 +132,7 @@
 9	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	πληθυσμός	πληθυσμός	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	7	conj	_	_
 11	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
-12	41.190.700	41.190.700	NUM	NUM	NumType=Card	13	nummod	_	_
+12	42.248.900	42.248.900	NUM	NUM	NumType=Card	13	nummod	_	_
 13	κατοίκους	κάτοικος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No
 14	,	,	PUNCT	PUNCT	_	15	punct	_	_
 15	σύμφωνα	σύμφωνα	ADV	ADV	_	10	advmod	_	_
@@ -130,7 +141,7 @@
 18	εκτίμηση	εκτίμηση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	15	obl	_	_
 19	για	για	ADP	ADP	_	21	case	_	_
 20	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	21	det	_	_
-21	2021	2021	NUM	NUM	NumType=Card	15	obl	_	SpaceAfter=No
+21	2022	2022	NUM	NUM	NumType=Card	15	obl	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
@@ -139,14 +150,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ετυμολογία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ετυμολογία
 1	Ετυμολογία	ετυμολογία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -460,14 +465,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ιστορία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ιστορία
 1	Ιστορία	ιστορία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -475,7 +474,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Από την αρχαιότητα ως τα Οθωμανικά χρόνια[Επεξεργασία | επεξεργασία κώδικα]
+# text = Από την αρχαιότητα ως τα Οθωμανικά χρόνια
 1	Από	από	ADP	ADP	_	3	case	_	_
 2	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	αρχαιότητα	αρχαιότητα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
@@ -483,12 +482,6 @@
 5	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	7	det	_	_
 6	Οθωμανικά	οθωμανικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	7	amod	_	_
 7	χρόνια	χρόνος	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	3	nmod	_	SpaceAfter=No
-8	[	[	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
-9	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	appos	_	_
-10	|	|	PUNCT	PUNCT	_	11	punct	_	_
-11	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	9	conj	_	_
-12	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
-13	]	]	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -747,20 +740,40 @@
 30	Κούρδων	Κούρδος	PROPN	PROPN	Case=Gen|Gender=Masc|Number=Plur	21	conj	_	SpaceAfter=No
 31	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n
 
+# sent_id = 6
+# text = Από το 17ο αιώνα ώς το 1918, το Ιράκ αποτέλεσε τμήμα της Οθωμανικής Αυτοκρατορίας, αν και διατηρούσε καθεστώς μερικής αυτονομίας.
+1	Από	από	ADP	ADP	_	4	case	_	_
+2	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	17ο	17ος	NUM	NUM	Case=Acc|Gender=Masc|Number=Sing|NumType=Ord	4	amod	_	_
+4	αιώνα	αιώνας	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	11	obl	_	_
+5	ώς	ώς	ADV	ADV	_	7	case	_	_
+6	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	1918	1918	NOUN	NOUN	_	4	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PUNCT	_	4	punct	_	_
+9	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	10	det	_	_
+10	Ιράκ	Ιράκ	X	X	Foreign=Yes	11	nsubj	_	_
+11	αποτέλεσε	αποτελώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	τμήμα	τμήμα	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	11	obj	_	_
+13	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	Οθωμανικής	οθωμανικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	15	amod	_	_
+15	Αυτοκρατορίας	αυτοκρατορία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PUNCT	_	19	punct	_	_
+17	αν	αν	SCONJ	SCONJ	_	19	mark	_	_
+18	και	και	CCONJ	CCONJ	_	17	fixed	_	_
+19	διατηρούσε	διατηρώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	advcl	_	_
+20	καθεστώς	καθεστώς	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	19	obj	_	_
+21	μερικής	μερικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	22	amod	_	_
+22	αυτονομίας	αυτονομία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
+
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ανεξαρτησία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Ανεξαρτησία
 1	Ανεξαρτησία	ανεξαρτησία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -928,19 +941,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Το Μπάαθ στην εξουσία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Το Μπάαθ στην εξουσία
 1	Το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
 2	Μπάαθ	Μπάαθ	PROPN	PROPN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3-4	στην	_	_	_	_	_	_	_	_
 3	σ	σε	ADP	AsPpSp	_	5	case	_	_
 4	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	5	det	_	_
 5	εξουσία	εξουσία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
-6	[	[	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No
-7	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	conj	_	_
-10	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-11	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1263,16 +1270,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Διακυβέρνηση Σαντάμ Χουσεΐν[Επεξεργασία | επεξεργασία κώδικα]
+# text = Διακυβέρνηση Σαντάμ Χουσεΐν
 1	Διακυβέρνηση	διακυβέρνηση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	Σαντάμ	Σαντάμ	X	X	Foreign=Yes	1	flat	_	_
 3	Χουσεΐν	Χουσεΐν	X	X	Foreign=Yes	2	flat	_	SpaceAfter=No
-4	[	[	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-5	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-6	|	|	PUNCT	PUNCT	_	8	punct	_	_
-7	επεξεργασία	επεξεργασία	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	8	amod	_	_
-8	κώδικα	κώδικας	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
-9	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1280,18 +1281,12 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Πόλεμος Ιράν-Ιράκ (1980-1988)[Επεξεργασία | επεξεργασία κώδικα]
+# text = Πόλεμος Ιράν-Ιράκ (1980-1988)
 1	Πόλεμος	πόλεμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	Ιράν-Ιράκ	Ιράν-ιράκ	X	X	Foreign=Yes	1	flat	_	_
 3	(	(	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	1980-1988	1980-1988	NOUN	NOUN	_	1	appos	_	SpaceAfter=No
+4	1980-1988	1980-1988	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
 5	)	)	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-6	[	[	PUNCT	PUNCT	_	7	case	_	SpaceAfter=No
-7	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-8	|	|	PUNCT	PUNCT	_	9	punct	_	_
-9	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	7	conj	_	_
-10	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
-11	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1372,19 +1367,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Πόλεμος του Κόλπου (1990-1991)[Επεξεργασία | επεξεργασία κώδικα]
+# text = Πόλεμος του Κόλπου (1990-1991)
 1	Πόλεμος	πόλεμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 2	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Κόλπου	κόλπος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
 4	(	(	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
 5	1990-1991	1990-1991	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
 6	)	)	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
-7	[	[	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No
-8	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-9	|	|	PUNCT	PUNCT	_	10	punct	_	_
-10	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	_
-11	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
-12	]	]	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -1992,15 +1981,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εισβολή του 2003[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εισβολή του 2003
 1	Εισβολή	εισβολή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-3	2003[	2003[	NOUN	NOUN	_	4	nmod	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+3	2003	2003	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -2155,14 +2139,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σύγχρονο Ιράκ[Επεξεργασία | επεξεργασία κώδικα]
+# text = Σύγχρονο Ιράκ
 1	Σύγχρονο	σύγχρονος	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	2	amod	_	_
-2	Ιράκ[	Ιράκ[	X	X	Foreign=Yes	0	root	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+2	Ιράκ	Ιράκ	X	X	Foreign=Yes	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -2419,14 +2398,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Γεωγραφία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Γεωγραφία
 1	Γεωγραφία	Γεωγραφία	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	ADJ	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -2839,14 +2812,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Δημογραφία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Δημογραφία
 1	Δημογραφία	δημογραφία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -2854,16 +2821,16 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ο πληθυσμός της χώρας είναι 41.190.700 κάτοικοι (2021).
+# text = Ο πληθυσμός της χώρας είναι 42.248.900 κάτοικοι (2022).
 1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	πληθυσμός	πληθυσμός	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
 3	της	ο	DET	DET	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	χώρας	χώρα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 5	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	7	cop	_	_
-6	41.190.700	41.190.700	NUM	NUM	NumType=Card	7	nummod	_	_
+6	42.248.900	42.248.900	NUM	NUM	NumType=Card	7	nummod	_	_
 7	κάτοικοι	κάτοικος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 8	(	(	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
-9	2021	2021	NUM	NUM	NumType=Card	7	parataxis	_	SpaceAfter=No
+9	2022	2022	NUM	NUM	NumType=Card	7	parataxis	_	SpaceAfter=No
 10	)	)	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
 11	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
@@ -2942,15 +2909,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εθνοτικές ομάδες[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εθνοτικές ομάδες
 1	Εθνοτικές	εθνοτικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	2	amod	_	_
 2	ομάδες	ομάδα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3184,14 +3145,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Γλώσσες[Επεξεργασία | επεξεργασία κώδικα]
+# text = Γλώσσες
 1	Γλώσσες	Γλώσσες	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3384,14 +3339,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Θρησκεία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Θρησκεία
 1	Θρησκεία	θρησκεία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3718,15 +3667,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Αστικές περιοχές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Αστικές περιοχές
 1	Αστικές	αστικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	2	amod	_	_
 2	περιοχές	περιοχή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3833,14 +3776,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Διακυβέρνηση[Επεξεργασία | επεξεργασία κώδικα]
+# text = Διακυβέρνηση
 1	Διακυβέρνηση	διακυβέρνηση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3911,14 +3848,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εκλογές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εκλογές
 1	Εκλογές	εκλογή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	6	punct	_	_
-5	επεξεργασία	επεξεργασία	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -3946,14 +3877,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Οικονομία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Οικονομία
 1	Οικονομία	οικονομία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	6	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4194,14 +4119,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Μεταφορές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Μεταφορές
 1	Μεταφορές	μεταφορά	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	parataxis	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4225,14 +4144,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Παραπομπές[Επεξεργασία | επεξεργασία κώδικα]
+# text = Παραπομπές
 1	Παραπομπές	παραπομπή	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-2	[	[	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
-3	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	_
-4	|	|	PUNCT	PUNCT	_	5	punct	_	_
-5	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	amod	_	_
-6	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
-7	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4240,15 +4153,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Σχετική βιβλιογραφία[Επεξεργασία | επεξεργασία κώδικα]
+# text = Σχετική βιβλιογραφία
 1	Σχετική	σχετικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	2	amod	_	_
 2	βιβλιογραφία	βιβλιογραφία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4256,15 +4163,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Δείτε επίσης[Επεξεργασία | επεξεργασία κώδικα]
+# text = Δείτε επίσης
 1	Δείτε	βλέπω	VERB	VERB	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
 2	επίσης	επίσης	ADV	ADV	_	1	advmod	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	obj	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	nmod	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -4272,23 +4173,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Εξωτερικοί σύνδεσμοι[Επεξεργασία | επεξεργασία κώδικα]
+# text = Εξωτερικοί σύνδεσμοι
 1	Εξωτερικοί	εξωτερικός	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	2	amod	_	_
 2	σύνδεσμοι	σύνδεσμος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
-3	[	[	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
-4	Επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
-5	|	|	PUNCT	PUNCT	_	6	punct	_	_
-6	επεξεργασία	επεξεργασία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
-7	κώδικα	κώδικας	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-8	]	]	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = greek-gdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Μενού πλοήγησης
-1	Μενού	μενός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Sing	2	amod	_	_
-2	πλοήγησης	πλοήγηση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
 

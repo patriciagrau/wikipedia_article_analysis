@@ -1,5 +1,3 @@
-# https://it.wikipedia.org/wiki/Wikipedia
-
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
 # udpipe_model_licence = CC BY-NC-SA
@@ -9,16 +7,7 @@
 # text = Wikipedia - Wikipedia
 1	Wikipedia	Wikipedia	PROPN	SP	_	0	root	_	_
 2	-	-	PUNCT	FF	_	1	punct	_	_
-3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Wikipedia
-1	Wikipedia	Wikipedia	PROPN	SP	_	0	root	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -289,7 +278,7 @@
 # newpar
 # sent_id = 1
 # text = Storia
-1	Storia	Storia	PROPN	SP	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Storia	Storia	PROPN	SP	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -1266,7 +1255,66 @@
 # newpar
 # sent_id = 1
 # text = Descrizione
-1	Descrizione	descrizione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Descrizione	descrizione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = L'obiettivo di Wikipedia è creare un'enciclopedia libera, ovvero liberamente accessibile, a contenuto libero, aperto, e "universale" in termini di ampiezza di argomenti trattati.
+1	L'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpacesBefore=\n|SpaceAfter=No
+2	obiettivo	obiettivo	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	di	di	ADP	E	_	4	case	_	_
+4	Wikipedia	Wikipedia	PROPN	SP	_	2	nmod	_	_
+5	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	creare	creare	VERB	V	VerbForm=Inf	0	root	_	_
+7	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No
+8	enciclopedia	enciclopedia	NOUN	S	Gender=Fem|Number=Sing	6	obj	_	_
+9	libera	libero	ADJ	A	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No
+10	,	,	PUNCT	FF	_	13	punct	_	_
+11	ovvero	ovvero	CCONJ	CC	_	13	cc	_	_
+12	liberamente	liberamente	ADV	B	_	13	advmod	_	_
+13	accessibile	accessibile	ADJ	A	Number=Sing	9	conj	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	8	punct	_	_
+15	a	a	ADP	E	_	16	case	_	_
+16	contenuto	contenuto	NOUN	S	Gender=Masc|Number=Sing	8	nmod	_	_
+17	libero	libero	ADJ	A	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No
+18	,	,	PUNCT	FF	_	19	punct	_	_
+19	aperto	aperto	ADJ	A	Gender=Masc|Number=Sing	17	conj	_	SpaceAfter=No
+20	,	,	PUNCT	FF	_	23	punct	_	_
+21	e	e	CCONJ	CC	_	23	cc	_	_
+22	"	"	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+23	universale	universale	ADJ	A	Number=Sing	17	conj	_	SpaceAfter=No
+24	"	"	PUNCT	FB	_	23	punct	_	_
+25	in	in	ADP	E	_	26	case	_	_
+26	termini	termine	NOUN	S	Gender=Masc|Number=Plur	23	obl	_	_
+27	di	di	ADP	E	_	28	case	_	_
+28	ampiezza	ampiezza	NOUN	S	Gender=Fem|Number=Sing	26	nmod	_	_
+29	di	di	ADP	E	_	30	case	_	_
+30	argomenti	argomento	NOUN	S	Gender=Masc|Number=Plur	28	nmod	_	_
+31	trattati	trattato	ADJ	A	Gender=Masc|Number=Plur	30	amod	_	SpaceAfter=No
+32	.	.	PUNCT	FS	_	6	punct	_	_
+
+# sent_id = 2
+# text = Wikipedia è stata descritta da Jimmy Wales, uno dei suoi fondatori, come
+1	Wikipedia	Wikipedia	PROPN	SP	_	4	nsubj:pass	_	_
+2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	stata	essere	AUX	VA	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	aux:pass	_	_
+4	descritta	descrivere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	da	da	ADP	E	_	6	case	_	_
+6	Jimmy	Jimmy	PROPN	SP	_	4	obl:agent	_	_
+7	Wales	Wales	PROPN	SP	_	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	6	punct	_	_
+9	uno	uno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	6	appos	_	_
+10-11	dei	_	_	_	_	_	_	_	_
+10	di	di	ADP	E	_	13	case	_	_
+11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+12	suoi	suo	DET	AP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	13	det:poss	_	_
+13	fondatori	fondatore	NOUN	S	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	4	punct	_	_
+15	come	come	ADP	E	_	6	case	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2090,48 +2138,28 @@
 14	settembre	settembre	NOUN	S	Gender=Masc|Number=Sing	1	obl	_	_
 15	2015	2015	NUM	N	NumType=Card	14	flat	_	SpaceAfter=No
 16	)	)	PUNCT	FB	_	14	punct	_	SpaceAfter=No
-17	.	.	PUNCT	FS	_	1	punct	_	SpaceAfter=No
+17	.	.	PUNCT	FS	_	1	punct	_	_
 
 # sent_id = 4
-# text = [che sito si intende?
-1	[	[	PUNCT	FB	_	5	punct	_	SpaceAfter=No
-2	che	che	DET	DQ	PronType=Int	3	det	_	_
-3	sito	sito	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
-4	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	5	expl:pass	_	_
-5	intende	intendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
-6	?	?	PUNCT	FS	_	5	punct	_	_
-
-# sent_id = 5
-# text = wikipedia.org, en.wikipedia.org o tutte le edizioni linguistiche assieme?] Le voci di Wikipedia sono spesso citate dai mass media tradizionali e da istituti accademici.
-1	wikipedia.org	wikipedia.org	NOUN	S	_	18	obl	_	SpaceAfter=No
-2	,	,	PUNCT	FF	_	3	punct	_	_
-3	en.wikipedia.org	en.wikipedia.org	NOUN	S	_	1	conj	_	_
-4	o	o	CCONJ	CC	_	7	cc	_	_
-5	tutte	tutto	DET	T	Gender=Fem|Number=Plur|PronType=Tot	7	det:predet	_	_
-6	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	edizioni	edizione	NOUN	S	Gender=Fem|Number=Plur	1	conj	_	_
-8	linguistiche	linguistico	ADJ	A	Gender=Fem|Number=Plur	7	amod	_	_
-9	assieme	assieme	ADV	B	_	7	advmod	_	SpaceAfter=No
-10	?	?	PUNCT	FS	_	1	punct	_	SpaceAfter=No
-11	]	]	PUNCT	FB	_	1	punct	_	_
-12	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
-13	voci	voce	NOUN	S	Gender=Fem|Number=Plur	18	nsubj:pass	_	_
-14	di	di	ADP	E	_	15	case	_	_
-15	Wikipedia	Wikipedia	PROPN	SP	_	13	nmod	_	_
-16	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_
-17	spesso	spesso	ADV	B	_	18	advmod	_	_
-18	citate	citare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
-19-20	dai	_	_	_	_	_	_	_	_
-19	da	da	ADP	E	_	21	case	_	_
-20	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	mass	mass	NOUN	S	_	18	obl:agent	_	_
-22	media	media	NOUN	S	Gender=Fem|Number=Sing	21	compound	_	_
-23	tradizionali	tradizionale	ADJ	A	Number=Plur	21	amod	_	_
-24	e	e	CCONJ	CC	_	26	cc	_	_
-25	da	da	ADP	E	_	26	case	_	_
-26	istituti	istituto	NOUN	S	Gender=Masc|Number=Plur	21	conj	_	_
-27	accademici	accademico	ADJ	A	Gender=Masc|Number=Plur	26	amod	_	SpaceAfter=No
-28	.	.	PUNCT	FS	_	18	punct	_	SpacesAfter=\n
+# text = Le voci di Wikipedia sono spesso citate dai mass media tradizionali e da istituti accademici.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	voci	voce	NOUN	S	Gender=Fem|Number=Plur	7	nsubj:pass	_	_
+3	di	di	ADP	E	_	4	case	_	_
+4	Wikipedia	Wikipedia	PROPN	SP	_	2	nmod	_	_
+5	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+6	spesso	spesso	ADV	B	_	7	advmod	_	_
+7	citate	citare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
+8-9	dai	_	_	_	_	_	_	_	_
+8	da	da	ADP	E	_	10	case	_	_
+9	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	mass	mass	NOUN	S	_	7	obl:agent	_	_
+11	media	media	NOUN	S	Gender=Fem|Number=Sing	10	compound	_	_
+12	tradizionali	tradizionale	ADJ	A	Number=Plur	10	amod	_	_
+13	e	e	CCONJ	CC	_	15	cc	_	_
+14	da	da	ADP	E	_	15	case	_	_
+15	istituti	istituto	NOUN	S	Gender=Masc|Number=Plur	10	conj	_	_
+16	accademici	accademico	ADJ	A	Gender=Masc|Number=Plur	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2140,7 +2168,7 @@
 # newpar
 # sent_id = 1
 # text = Caratteristiche
-1	Caratteristiche	caratteristica	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Caratteristiche	caratteristica	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -2803,7 +2831,7 @@
 1	Contenuto	contenuto	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2	libero	libero	ADJ	A	Gender=Masc|Number=Sing	1	amod	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
-4	aperto	aperto	ADJ	A	Gender=Masc|Number=Sing	2	conj	_	SpacesAfter=\n
+4	aperto	aperto	ADJ	A	Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3216,7 +3244,7 @@
 # text = Software e hardware
 1	Software	software	NOUN	S	Gender=Masc	0	root	_	_
 2	e	e	CCONJ	CC	_	3	cc	_	_
-3	hardware	hardware	NOUN	S	Gender=Masc	1	conj	_	SpacesAfter=\n
+3	hardware	hardware	NOUN	S	Gender=Masc	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3284,7 +3312,7 @@
 # sent_id = 1
 # text = Edizioni linguistiche
 1	Edizioni	edizione	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
-2	linguistiche	linguistico	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpacesAfter=\n
+2	linguistiche	linguistico	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3324,7 +3352,7 @@
 4	e	e	CCONJ	CC	_	6	cc	_	_
 5	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	lingue	lingua	NOUN	S	Gender=Fem|Number=Plur	1	conj	_	_
-7	minori	minore	ADJ	A	Degree=Cmp|Number=Plur	6	amod	_	SpacesAfter=\n
+7	minori	minore	ADJ	A	Degree=Cmp|Number=Plur	6	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3519,7 +3547,7 @@
 # text = Pronuncia di Wikipedia
 1	Pronuncia	pronuncia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
 2	di	di	ADP	E	_	3	case	_	_
-3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpacesAfter=\n
+3	Wikipedia	Wikipedia	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3529,7 +3557,7 @@
 # sent_id = 1
 # text = In italiano
 1	In	in	ADP	E	_	2	case	_	_
-2	italiano	italiano	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n
+2	italiano	italiano	NOUN	S	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3787,7 +3815,7 @@
 # sent_id = 1
 # text = In inglese
 1	In	in	ADP	E	_	2	case	_	_
-2	inglese	inglese	NOUN	S	Number=Sing	0	root	_	SpacesAfter=\n
+2	inglese	inglese	NOUN	S	Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3795,27 +3823,21 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In inglese si dice comunemente [ˌwɪkiˈpiːdiə] o [ˌwiːkiˈpiːdiə], ma non esiste una pronuncia ufficiale.
+# text = In inglese si dice comunemente o , ma non esiste una pronuncia ufficiale.
 1	In	in	ADP	E	_	2	case	_	_
 2	inglese	inglese	NOUN	S	Number=Sing	4	obl	_	_
 3	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	4	expl:impers	_	_
 4	dice	dire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	comunemente	comunemente	ADV	B	_	4	advmod	_	_
-6	[	[	PUNCT	FB	_	7	punct	_	SpaceAfter=No
-7	ˌwɪkiˈpiːdiə	ˌwɪkiˈpiːdiə	NOUN	S	_	4	xcomp	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	7	punct	_	_
-9	o	o	CCONJ	CC	_	11	cc	_	_
-10	[	[	PUNCT	FB	_	11	punct	_	SpaceAfter=No
-11	ˌwiːkiˈpiːdiə	ˌwiːkiˈpiːdiə	NOUN	S	_	7	conj	_	SpaceAfter=No
-12	]	]	PUNCT	FB	_	11	punct	_	SpaceAfter=No
-13	,	,	PUNCT	FF	_	16	punct	_	_
-14	ma	ma	CCONJ	CC	_	16	cc	_	_
-15	non	non	ADV	BN	PronType=Neg	16	advmod	_	_
-16	esiste	esistere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-17	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	pronuncia	pronuncia	NOUN	S	Gender=Fem|Number=Sing	16	nsubj	_	_
-19	ufficiale	ufficiale	ADJ	A	Number=Sing	18	amod	_	SpaceAfter=No
-20	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+5	comunemente	comunemente	ADV	B	_	4	advmod	_	SpacesAfter=\s\s
+6	o	o	CCONJ	CC	_	10	cc	_	_
+7	,	,	PUNCT	FF	_	10	punct	_	_
+8	ma	ma	CCONJ	CC	_	10	cc	_	_
+9	non	non	ADV	BN	PronType=Neg	10	advmod	_	_
+10	esiste	esistere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+11	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	pronuncia	pronuncia	NOUN	S	Gender=Fem|Number=Sing	10	nsubj	_	_
+13	ufficiale	ufficiale	ADJ	A	Number=Sing	12	amod	_	SpaceAfter=No
+14	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -3824,7 +3846,7 @@
 # newpar
 # sent_id = 1
 # text = Redazione
-1	Redazione	redazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Redazione	redazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -4494,7 +4516,7 @@
 # newpar
 # sent_id = 1
 # text = Autori
-1	Autori	autore	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+1	Autori	autore	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5157,7 +5179,7 @@
 # newpar
 # sent_id = 1
 # text = Comunità
-1	Comunità	comunità	NOUN	S	Gender=Fem	0	root	_	SpacesAfter=\n
+1	Comunità	comunità	NOUN	S	Gender=Fem	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5342,7 +5364,7 @@
 # text = Linee di condotta
 1	Linee	linea	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
 2	di	di	ADP	E	_	3	case	_	_
-3	condotta	condotta	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+3	condotta	condotta	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -5768,7 +5790,7 @@
 # newpar
 # sent_id = 1
 # text = Distribuzione
-1	Distribuzione	distribuzione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Distribuzione	distribuzione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6124,7 +6146,7 @@
 # sent_id = 1
 # text = Wikipedia mobile
 1	Wikipedia	Wikipedia	PROPN	SP	_	0	root	_	_
-2	mobile	mobile	ADJ	A	Number=Sing	1	amod	_	SpacesAfter=\n
+2	mobile	mobile	ADJ	A	Number=Sing	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -6274,7 +6296,7 @@
 # newpar
 # sent_id = 1
 # text = Reputazione
-1	Reputazione	reputazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Reputazione	reputazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7244,7 +7266,7 @@
 2	,	,	PUNCT	FF	_	3	punct	_	_
 3	critiche	critica	NOUN	S	Gender=Fem|Number=Plur	1	conj	_	_
 4	e	e	CCONJ	CC	_	5	cc	_	_
-5	apprezzamenti	apprezzamento	NOUN	S	Gender=Masc|Number=Plur	1	conj	_	SpacesAfter=\n
+5	apprezzamenti	apprezzamento	NOUN	S	Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7269,6 +7291,48 @@
 14	prodotto	prodotto	NOUN	S	Gender=Masc|Number=Sing	11	xcomp	_	_
 15	inaffidabile	inaffidabile	ADJ	A	Number=Sing	14	amod	_	SpaceAfter=No
 16	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Wikipedia non contiene alcun processo formale e sistematico di revisione e, dunque, di controllo dei fatti:
+1	Wikipedia	Wikipedia	PROPN	SP	_	3	nsubj	_	_
+2	non	non	ADV	BN	PronType=Neg	3	advmod	_	_
+3	contiene	contenere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	alcun	alcuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	5	det	_	_
+5	processo	processo	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	_
+6	formale	formale	ADJ	A	Number=Sing	5	amod	_	_
+7	e	e	CCONJ	CC	_	8	cc	_	_
+8	sistematico	sistematico	ADJ	A	Gender=Masc|Number=Sing	6	conj	_	_
+9	di	di	ADP	E	_	10	case	_	_
+10	revisione	revisione	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
+11	e	e	CCONJ	CC	_	16	cc	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	16	punct	_	_
+13	dunque	dunque	ADV	B	_	16	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	13	punct	_	_
+15	di	di	ADP	E	_	16	case	_	_
+16	controllo	controllo	NOUN	S	Gender=Masc|Number=Sing	10	conj	_	_
+17-18	dei	_	_	_	_	_	_	_	_
+17	di	di	ADP	E	_	19	case	_	_
+18	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	fatti	fatto	NOUN	S	Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No
+20	:	:	PUNCT	FC	_	3	punct	_	_
+
+# sent_id = 3
+# text = gli stessi contributori potrebbero non essere esperti negli argomenti di cui scrivono.
+1	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+2	stessi	stesso	ADJ	A	Gender=Masc|Number=Plur	3	amod	_	_
+3	contributori	contributore	NOUN	S	Gender=Masc|Number=Plur	7	nsubj:pass	_	_
+4	potrebbero	potere	AUX	VM	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+5	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+6	essere	essere	AUX	VA	VerbForm=Inf	7	aux:pass	_	_
+7	esperti	esprire	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
+8-9	negli	_	_	_	_	_	_	_	_
+8	in	in	ADP	E	_	10	case	_	_
+9	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	argomenti	argomento	NOUN	S	Gender=Masc|Number=Plur	7	obl	_	_
+11	di	di	ADP	E	_	12	case	_	_
+12	cui	cui	PRON	PR	PronType=Rel	13	obl	_	_
+13	scrivono	scrivere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	SpaceAfter=No
+14	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7434,7 +7498,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nel discutere su Wikipedia come fonte accademica Danah Boyd, ricercatrice presso la School of Information Management and Systems (SIMS) dell'Università della California a Berkeley, scrisse nel 2005 che «[Wikipedia] non sarà mai un'enciclopedia, ma conterrà una vasta conoscenza piuttosto valida per diversi scopi».
+# text = Nel discutere su Wikipedia come fonte accademica Danah Boyd, ricercatrice presso la School of Information Management and Systems (SIMS) dell'Università della California a Berkeley, scrisse nel 2005 che « non sarà mai un'enciclopedia, ma conterrà una vasta conoscenza piuttosto valida per diversi scopi».
 1-2	Nel	_	_	_	_	_	_	_	_
 1	In	in	ADP	E	_	3	case	_	_
 2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -7475,29 +7539,58 @@
 34	in	in	ADP	E	_	36	case	_	_
 35	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	2005	2005	NUM	N	NumType=Card	33	obl	_	_
-37	che	che	SCONJ	CS	_	46	mark	_	_
-38	«	«	PUNCT	FB	_	46	punct	_	SpaceAfter=No
-39	[	[	PUNCT	FB	_	40	punct	_	SpaceAfter=No
-40	Wikipedia	Wikipedia	PROPN	SP	_	46	nsubj	_	SpaceAfter=No
-41	]	]	PUNCT	FB	_	40	punct	_	_
-42	non	non	ADV	BN	PronType=Neg	46	advmod	_	_
-43	sarà	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	46	cop	_	_
-44	mai	mai	ADV	B	_	46	advmod	_	_
-45	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	46	det	_	SpaceAfter=No
-46	enciclopedia	enciclopedia	NOUN	S	Gender=Fem|Number=Sing	33	ccomp	_	SpaceAfter=No
-47	,	,	PUNCT	FF	_	49	punct	_	_
-48	ma	ma	CCONJ	CC	_	49	cc	_	_
-49	conterrà	contenere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	46	conj	_	_
-50	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-51	vasta	vasto	ADJ	A	Gender=Fem|Number=Sing	52	amod	_	_
-52	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	49	obj	_	_
-53	piuttosto	piuttosto	ADV	B	_	54	advmod	_	_
-54	valida	valido	ADJ	A	Gender=Fem|Number=Sing	52	amod	_	_
-55	per	per	ADP	E	_	57	case	_	_
-56	diversi	diverso	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	57	det	_	_
-57	scopi	scopo	NOUN	S	Gender=Masc|Number=Plur	54	obl	_	SpaceAfter=No
-58	»	»	PUNCT	FB	_	46	punct	_	SpaceAfter=No
-59	.	.	PUNCT	FS	_	33	punct	_	SpacesAfter=\n
+37	che	che	SCONJ	CS	_	43	mark	_	_
+38	«	«	PUNCT	FB	_	43	punct	_	_
+39	non	non	ADV	BN	PronType=Neg	43	advmod	_	_
+40	sarà	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	43	cop	_	_
+41	mai	mai	ADV	B	_	43	advmod	_	_
+42	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	43	det	_	SpaceAfter=No
+43	enciclopedia	enciclopedia	NOUN	S	Gender=Fem|Number=Sing	33	ccomp	_	SpaceAfter=No
+44	,	,	PUNCT	FF	_	46	punct	_	_
+45	ma	ma	CCONJ	CC	_	46	cc	_	_
+46	conterrà	contenere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	43	conj	_	_
+47	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
+48	vasta	vasto	ADJ	A	Gender=Fem|Number=Sing	49	amod	_	_
+49	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	46	obj	_	_
+50	piuttosto	piuttosto	ADV	B	_	51	advmod	_	_
+51	valida	valido	ADJ	A	Gender=Fem|Number=Sing	49	amod	_	_
+52	per	per	ADP	E	_	54	case	_	_
+53	diversi	diverso	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	54	det	_	_
+54	scopi	scopo	NOUN	S	Gender=Masc|Number=Plur	51	obl	_	SpaceAfter=No
+55	»	»	PUNCT	FB	_	43	punct	_	SpaceAfter=No
+56	.	.	PUNCT	FS	_	33	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Alcuni articoli accademici sottoposti a revisione paritaria, come quelli pubblicati sulla rivista scientifica Science, hanno riportato dei riferimenti a voci di Wikipedia.
+1	Alcuni	alcuno	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
+2	articoli	articolo	NOUN	S	Gender=Masc|Number=Plur	19	nsubj	_	_
+3	accademici	accademico	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
+4	sottoposti	sottoporre	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_
+5	a	a	ADP	E	_	6	case	_	_
+6	revisione	revisione	NOUN	S	Gender=Fem|Number=Sing	4	obl	_	_
+7	paritaria	paritario	ADJ	A	Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	2	punct	_	_
+9	come	come	ADP	E	_	10	case	_	_
+10	quelli	quello	PRON	PD	Gender=Masc|Number=Plur|PronType=Dem	2	nmod	_	_
+11	pubblicati	pubblicare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	10	acl	_	_
+12-13	sulla	_	_	_	_	_	_	_	_
+12	su	su	ADP	E	_	14	case	_	_
+13	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	rivista	rivista	NOUN	S	Gender=Fem|Number=Sing	11	obl	_	_
+15	scientifica	scientifico	ADJ	A	Gender=Fem|Number=Sing	14	amod	_	_
+16	Science	Science	PROPN	SP	_	14	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	FF	_	2	punct	_	_
+18	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+19	riportato	riportare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+20-21	dei	_	_	_	_	_	_	_	_
+20	di	di	ADP	E	_	22	case	_	_
+21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	riferimenti	riferimento	NOUN	S	Gender=Masc|Number=Plur	19	obl	_	_
+23	a	a	ADP	E	_	24	case	_	_
+24	voci	voce	NOUN	S	Gender=Fem|Number=Plur	19	obl	_	_
+25	di	di	ADP	E	_	26	case	_	_
+26	Wikipedia	Wikipedia	PROPN	SP	_	24	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	FS	_	19	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7562,6 +7655,91 @@
 29	di	di	ADP	E	_	30	case	_	_
 30	Science	Science	PROPN	SP	_	28	nmod	_	SpaceAfter=No
 31	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Il primo di tali abstract ad avere un link a Wikipedia fu A White Collar Protein Senses Blue Light (Linden, 2002), e da allora altre ne seguirono.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	primo	primo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	14	nsubj	_	_
+3	di	di	ADP	E	_	5	case	_	_
+4	tali	tale	DET	DD	Number=Plur|PronType=Dem	5	det	_	_
+5	abstract	abstract	NOUN	S	_	2	obl	_	_
+6	ad	a	ADP	E	_	7	mark	_	_
+7	avere	avere	VERB	V	VerbForm=Inf	2	advcl	_	_
+8	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	link	link	NOUN	S	_	7	obj	_	_
+10	a	a	ADP	E	_	11	case	_	_
+11	Wikipedia	Wikipedia	PROPN	SP	_	9	nmod	_	_
+12	fu	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	_
+13	A	A	ADP	E	_	14	case	_	_
+14	White	White	PROPN	SP	_	0	root	_	_
+15	Collar	Collar	PROPN	SP	_	14	flat:name	_	_
+16	Protein	Protein	PROPN	SP	_	14	flat:name	_	_
+17	Senses	Senses	PROPN	SP	_	14	flat:name	_	_
+18	Blue	Blue	PROPN	SP	_	14	flat:name	_	_
+19	Light	Light	PROPN	SP	_	14	flat:name	_	_
+20	(	(	PUNCT	FB	_	21	punct	_	SpaceAfter=No
+21	Linden	Linden	PROPN	SP	_	14	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	FF	_	21	punct	_	_
+23	2002	2002	NUM	N	NumType=Card	21	nummod	_	SpaceAfter=No
+24	)	)	PUNCT	FB	_	21	punct	_	SpaceAfter=No
+25	,	,	PUNCT	FF	_	31	punct	_	_
+26	e	e	CCONJ	CC	_	31	cc	_	_
+27	da	da	ADP	E	_	28	case	_	_
+28	allora	allora	ADV	B	_	31	advmod	_	_
+29	altre	altro	PRON	PI	Gender=Fem|Number=Plur|PronType=Ind	31	nsubj	_	_
+30	ne	ne	PRON	PC	Clitic=Yes|PronType=Prs	31	iobj	_	_
+31	seguirono	seguire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	conj	_	SpaceAfter=No
+32	.	.	PUNCT	FS	_	14	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Tali collegamenti, tuttavia, sono proposti al lettore solo come letture supplementari e non come fonti usate dall'autore dell'articolo, e le enhanced perspectives non sono pensate per servire, esse stesse, da materiale di riferimento.
+1	Tali	tale	DET	DD	Number=Plur|PronType=Dem	2	det	_	_
+2	collegamenti	collegamento	NOUN	S	Gender=Masc|Number=Plur	7	nsubj:pass	_	SpaceAfter=No
+3	,	,	PUNCT	FF	_	2	punct	_	_
+4	tuttavia	tuttavia	ADV	B	_	7	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	FF	_	4	punct	_	_
+6	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+7	proposti	proporre	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
+8-9	al	_	_	_	_	_	_	_	_
+8	a	a	ADP	E	_	10	case	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	lettore	lettore	NOUN	S	Gender=Masc|Number=Sing	7	obl	_	_
+11	solo	solo	ADV	B	_	13	advmod	_	_
+12	come	come	ADP	E	_	13	case	_	_
+13	letture	lettura	NOUN	S	Gender=Fem|Number=Plur	7	obl	_	_
+14	supplementari	supplementare	ADJ	A	Number=Plur	13	amod	_	_
+15	e	e	CCONJ	CC	_	18	cc	_	_
+16	non	non	ADV	BN	PronType=Neg	18	advmod	_	_
+17	come	come	ADP	E	_	18	case	_	_
+18	fonti	fonte	NOUN	S	Gender=Fem|Number=Plur	13	conj	_	_
+19	usate	usare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	18	acl	_	_
+20-21	dall'	_	_	_	_	_	_	_	SpaceAfter=No
+20	da	da	ADP	E	_	22	case	_	_
+21	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	22	det	_	_
+22	autore	autore	NOUN	S	Gender=Masc|Number=Sing	19	obl:agent	_	_
+23-24	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+23	di	di	ADP	E	_	25	case	_	_
+24	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	25	det	_	_
+25	articolo	articolo	NOUN	S	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No
+26	,	,	PUNCT	FF	_	33	punct	_	_
+27	e	e	CCONJ	CC	_	33	cc	_	_
+28	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_
+29	enhanced	enhanced	ADJ	A	_	30	amod	_	_
+30	perspectives	perspectives	NOUN	S	_	33	nsubj:pass	_	_
+31	non	non	ADV	BN	PronType=Neg	33	advmod	_	_
+32	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	aux:pass	_	_
+33	pensate	pensare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	conj	_	_
+34	per	per	ADP	E	_	35	mark	_	_
+35	servire	servire	VERB	V	VerbForm=Inf	33	advcl	_	SpaceAfter=No
+36	,	,	PUNCT	FF	_	35	punct	_	_
+37	esse	esso	PRON	PE	Gender=Fem|Number=Plur|Person=3|PronType=Prs	35	obl	_	_
+38	stesse	stesso	ADJ	A	Gender=Fem|Number=Plur	37	amod	_	SpaceAfter=No
+39	,	,	PUNCT	FF	_	35	punct	_	_
+40	da	da	ADP	E	_	41	case	_	_
+41	materiale	materiale	NOUN	S	Gender=Masc|Number=Sing	35	obl	_	_
+42	di	di	ADP	E	_	43	case	_	_
+43	riferimento	riferimento	NOUN	S	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
+44	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7773,6 +7951,110 @@
 20	di	di	ADP	E	_	21	case	_	_
 21	Wikipedia	Wikipedia	PROPN	SP	_	19	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	FS	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = L'idea è di fornire una provenienza della fonte su ciascun intervallo del testo di una voce, e una provenienza temporale per indicarne l'annata.
+1	L'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
+2	idea	idea	NOUN	S	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	di	di	ADP	E	_	5	mark	_	_
+5	fornire	fornire	VERB	V	VerbForm=Inf	3	ccomp	_	_
+6	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	provenienza	provenienza	NOUN	S	Gender=Fem|Number=Sing	5	obj	_	_
+8-9	della	_	_	_	_	_	_	_	_
+8	di	di	ADP	E	_	10	case	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	fonte	fonte	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	_
+11	su	su	ADP	E	_	13	case	_	_
+12	ciascun	ciascuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	13	det	_	_
+13	intervallo	intervallo	NOUN	S	Gender=Masc|Number=Sing	7	nmod	_	_
+14-15	del	_	_	_	_	_	_	_	_
+14	di	di	ADP	E	_	16	case	_	_
+15	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	testo	testo	NOUN	S	Gender=Masc|Number=Sing	13	nmod	_	_
+17	di	di	ADP	E	_	19	case	_	_
+18	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	voce	voce	NOUN	S	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	FF	_	23	punct	_	_
+21	e	e	CCONJ	CC	_	23	cc	_	_
+22	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	provenienza	provenienza	NOUN	S	Gender=Fem|Number=Sing	7	conj	_	_
+24	temporale	temporale	ADJ	A	Number=Sing	23	amod	_	_
+25	per	per	ADP	E	_	26	mark	_	_
+26-27	indicarne	_	_	_	_	_	_	_	_
+26	indicar	indicare	VERB	V	VerbForm=Inf	23	acl	_	_
+27	ne	ne	PRON	PC	Clitic=Yes|PronType=Prs	26	iobj	_	_
+28	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No
+29	annata	annata	NOUN	S	Gender=Fem|Number=Sing	26	obj	_	SpaceAfter=No
+30	.	.	PUNCT	FS	_	3	punct	_	_
+
+# sent_id = 3
+# text = In questo modo il lettore può conoscere «chi ha usato i servizi prima di lui» e quanto tempo la comunità ha impiegato per elaborare e giudicare le informazioni contenute in una voce allo scopo di fornire una calibratura sul "senso di sicurezza".
+1	In	in	ADP	E	_	3	case	_	_
+2	questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	modo	modo	NOUN	S	Gender=Masc|Number=Sing	7	obl	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	lettore	lettore	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	conoscere	conoscere	VERB	V	VerbForm=Inf	0	root	_	_
+8	«	«	PUNCT	FB	_	9	punct	_	SpaceAfter=No
+9	chi	chi	PRON	PR	Number=Sing|PronType=Rel	7	obj	_	_
+10	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	usato	usare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_
+12	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	servizi	servizio	NOUN	S	Gender=Masc|Number=Plur	11	obj	_	_
+14	prima	prima	ADV	B	_	16	case	_	_
+15	di	di	ADP	E	_	14	fixed	_	_
+16	lui	lui	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obl	_	SpaceAfter=No
+17	»	»	PUNCT	FB	_	11	punct	_	_
+18	e	e	CCONJ	CC	_	24	cc	_	_
+19	quanto	quanto	DET	DQ	Gender=Masc|Number=Sing|PronType=Int	20	det	_	_
+20	tempo	tempo	NOUN	S	Gender=Masc|Number=Sing	24	obl	_	_
+21	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	comunità	comunità	NOUN	S	Gender=Fem	24	nsubj	_	_
+23	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
+24	impiegato	impiegare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	conj	_	_
+25	per	per	ADP	E	_	26	mark	_	_
+26	elaborare	elaborare	VERB	V	VerbForm=Inf	24	advcl	_	_
+27	e	e	CCONJ	CC	_	28	cc	_	_
+28	giudicare	giudicare	VERB	V	VerbForm=Inf	26	conj	_	_
+29	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_
+30	informazioni	informazione	NOUN	S	Gender=Fem|Number=Plur	28	obj	_	_
+31	contenute	contenere	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	30	acl	_	_
+32	in	in	ADP	E	_	34	case	_	_
+33	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
+34	voce	voce	NOUN	S	Gender=Fem|Number=Sing	31	obl	_	_
+35-36	allo	_	_	_	_	_	_	_	_
+35	a	a	ADP	E	_	37	case	_	_
+36	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	scopo	scopo	NOUN	S	Gender=Masc|Number=Sing	28	obl	_	_
+38	di	di	ADP	E	_	39	mark	_	_
+39	fornire	fornire	VERB	V	VerbForm=Inf	37	acl	_	_
+40	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	calibratura	calibratura	NOUN	S	Gender=Fem|Number=Sing	39	obj	_	_
+42-43	sul	_	_	_	_	_	_	_	_
+42	su	su	ADP	E	_	45	case	_	_
+43	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+44	"	"	PUNCT	FB	_	45	punct	_	SpaceAfter=No
+45	senso	senso	NOUN	S	Gender=Masc|Number=Sing	41	nmod	_	_
+46	di	di	ADP	E	_	47	case	_	_
+47	sicurezza	sicurezza	NOUN	S	Gender=Fem|Number=Sing	45	nmod	_	SpaceAfter=No
+48	"	"	PUNCT	FB	_	45	punct	_	SpaceAfter=No
+49	.	.	PUNCT	FS	_	7	punct	_	_
+
+# sent_id = 4
+# text = Comunque, queste proposte riguardanti la provenienza sono abbastanza controverse.
+1	Comunque	comunque	ADV	B	_	10	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	FF	_	1	punct	_	_
+3	queste	questo	DET	DD	Gender=Fem|Number=Plur|PronType=Dem	4	det	_	_
+4	proposte	proposta	NOUN	S	Gender=Fem|Number=Plur	10	nsubj	_	_
+5	riguardanti	riguardare	VERB	V	Number=Plur|Tense=Pres|VerbForm=Part	4	acl	_	_
+6	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	provenienza	provenienza	NOUN	S	Gender=Fem|Number=Sing	5	obj	_	_
+8	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+9	abbastanza	abbastanza	ADV	B	_	10	advmod	_	_
+10	controverse	controverso	ADJ	A	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9037,7 +9319,7 @@
 # text = Premi e riconoscimenti
 1	Premi	premio	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
 2	e	e	CCONJ	CC	_	3	cc	_	_
-3	riconoscimenti	riconoscimento	NOUN	S	Gender=Masc|Number=Plur	1	conj	_	SpacesAfter=\n
+3	riconoscimenti	riconoscimento	NOUN	S	Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9286,7 +9568,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Wikipedia ha ricevuto plausi da fonti giornalistiche quali BBC News, USA Today, The Economist, Newsweek, BusinessWeek, il Chicago Sun-Times, Time Magazine e Wired Magazine[senza fonte].
+# text = Wikipedia ha ricevuto plausi da fonti giornalistiche quali BBC News, USA Today, The Economist, Newsweek, BusinessWeek, il Chicago Sun-Times, Time Magazine e Wired Magazine.
 1	Wikipedia	Wikipedia	PROPN	SP	_	3	nsubj	_	_
 2	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	ricevuto	ricevere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
@@ -9319,11 +9601,7 @@
 30	e	e	CCONJ	CC	_	31	cc	_	_
 31	Wired	Wired	PROPN	SP	_	9	conj	_	_
 32	Magazine	Magazine	PROPN	SP	_	31	flat:name	_	SpaceAfter=No
-33	[	[	PUNCT	FB	_	35	punct	_	SpaceAfter=No
-34	senza	senza	ADP	E	_	35	case	_	SpacesAfter= 
-35	fonte	fonte	NOUN	S	Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No
-36	]	]	PUNCT	FB	_	35	punct	_	SpaceAfter=No
-37	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9508,7 +9786,7 @@
 # newpar
 # sent_id = 1
 # text = Onorificenze
-1	Onorificenze	onorificenza	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Onorificenze	onorificenza	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9517,7 +9795,7 @@
 # newpar
 # sent_id = 1
 # text = Note
-1	Note	nota	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n
+1	Note	nota	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9526,7 +9804,7 @@
 # newpar
 # sent_id = 1
 # text = Bibliografia
-1	Bibliografia	bibliografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n
+1	Bibliografia	bibliografia	NOUN	S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9536,7 +9814,7 @@
 # sent_id = 1
 # text = Voci correlate
 1	Voci	voce	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
-2	correlate	correlato	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpacesAfter=\n
+2	correlate	correlato	ADJ	A	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9546,7 +9824,17 @@
 # sent_id = 1
 # text = Altri progetti
 1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
-2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n
+2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = italian-isdt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Altri progetti
+1	Altri	altro	ADJ	A	Gender=Masc|Number=Plur	2	amod	_	_
+2	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -9556,16 +9844,5 @@
 # sent_id = 1
 # text = Collegamenti esterni
 1	Collegamenti	collegamento	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
-2	esterni	esterno	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = italian-isdt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Menu di navigazione
-1	Menu	menu	NOUN	S	Gender=Masc	0	root	_	_
-2	di	di	ADP	E	_	3	case	_	_
-3	navigazione	navigazione	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpacesAfter=\n
+2	esterni	esterno	ADJ	A	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
 
