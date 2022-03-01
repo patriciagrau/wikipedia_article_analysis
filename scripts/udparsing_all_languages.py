@@ -126,7 +126,10 @@ def clean_text_api(tag, model):
     api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
 
     cleantext = tag.get_text()
-    cleantext = re.sub(r'\[(.*?)\]', '', cleantext) # remove [anything in square brackets]
+    # cleantext = re.sub(r'\[(.*?)\]', '', cleantext) # remove [anything in square brackets]
+    cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
+    cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
+    cleantext = re.sub(r'\[n. \d+\]', '', cleantext) # remove references [n. digit]
     cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
     
     if len(cleantext) != 0 and cleantext!='\n':
@@ -168,6 +171,9 @@ def udparsing(url, lang, name, path, getting_lang = False):
     for div in htmlParse.find_all(regex, {'class': [infobox, references, navigationmenu, toclev, vectormenu]}): 
         div.decompose()
     
+    for div in htmlParse.find_all("span", id="coordinates"):
+        div.decompose()
+
     model = models[lang][0]
     lang_in_article = []
     

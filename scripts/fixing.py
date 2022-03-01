@@ -31,6 +31,8 @@ if __name__ == '__main__':
         # n += 1
         div.decompose()
 
+    for div in htmlParse.find_all("span", id="coordinates"):
+        div.decompose()
     # print(n)
 
 
