@@ -130,3 +130,9 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
   - \[cite required\]
   - parts of some text that are missing: Peter Harvey also agrees that “much” of the Pali Canon “must derive from his **\[the Buddha's\]** teachings.” Likewise, A. K. Warder has written that “there is no evidence to suggest that it **\[the shared teaching of the early schools\]** was formulated by anyone other than the Buddha and his immediate followers.”
 - Since I reran the data, now I have to get the gold standard in the same format... so I have to check everything (some articles were edited too)
+
+
+01/03
+
+- rerunning main script keeping \[things inside square brackets\] (except for references like \[a\], \[1\], \[n. 1\]).
+- gold standard English: line 315 ?? xcomp??
