@@ -1475,7 +1475,14 @@
 33	35	35	NUM	C=-------------	NumForm=Digit|NumType=Card	27	dep	_	SpacesAfter= 
 34	%	%	SYM	Z:-------------	_	33	nmod	_	SpaceAfter=No
 35	)	)	PUNCT	Z:-------------	_	27	punct	_	SpaceAfter=No
-36	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+36	.	.	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [zdroj?]
+1	[	[	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+2	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+4	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -3263,7 +3270,7 @@
 22	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
 # sent_id = 3
-# text = Zelená barva vznikající v oblasti viditelného spektra železnatých sloučenin je dána díky komplexu 2+.
+# text = Zelená barva vznikající v oblasti viditelného spektra železnatých sloučenin je dána díky komplexu [Fe(H2O)6]2+.
 1	Zelená	zelený	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	barva	barva	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	11	nsubj	_	_
 3	vznikající	vznikající	ADJ	AGFS1-----A----	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	2	amod	_	_
@@ -3277,9 +3284,18 @@
 11	dána	daný	ADJ	VsQW---XX-AP---	Gender=Fem,Neut|Number=Plur,Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
 12	díky	díky	ADP	RR--3----------	AdpType=Prep|Case=Dat	13	case	_	_
 13	komplexu	komplex	NOUN	NNIS3-----A----	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing|Polarity=Pos	11	obl	_	_
-14	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
-15	+	+	SYM	Z:-------------	_	13	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	Z:-------------	_	11	punct	_	SpacesAfter=\n
+14	[	[	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	13	nmod	_	SpaceAfter=No
+16	(	(	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+17	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	15	nmod	_	SpaceAfter=No
+18	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	17	nummod	_	SpaceAfter=No
+19	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	17	nmod	_	SpaceAfter=No
+20	)	)	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+21	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+22	]	]	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
+23	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+24	+	+	SYM	Z:-------------	_	23	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	Z:-------------	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -5950,7 +5966,7 @@
 22	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 3
-# text = Soli se dají získat z roztoků v podobě krystalických světle růžových nebo světle fialových hydrátů s hexaaquaželezitým kationtem 3+.
+# text = Soli se dají získat z roztoků v podobě krystalických světle růžových nebo světle fialových hydrátů s hexaaquaželezitým kationtem [Fe(H2O)6]3+.
 1	Soli	sůl	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	3	nsubj:pass	_	_
 2	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	3	expl:pass	_	_
 3	dají	dát	VERB	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -5969,31 +5985,58 @@
 16	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	18	case	_	_
 17	hexaaquaželezitým	hexaaquaželezitý	ADJ	AAIS7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	18	amod	_	_
 18	kationtem	kationt	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	15	nmod	_	_
-19	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
-20	+	+	SYM	Z:-------------	_	19	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+19	[	[	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+20	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	18	nmod	_	SpaceAfter=No
+21	(	(	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+22	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	20	nmod	_	SpaceAfter=No
+23	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	22	nummod	_	SpaceAfter=No
+24	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	22	nmod	_	SpaceAfter=No
+25	)	)	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+26	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	20	nummod	_	SpaceAfter=No
+27	]	]	PUNCT	Z:-------------	_	28	punct	_	SpaceAfter=No
+28	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	20	nummod	_	SpaceAfter=No
+29	+	+	SYM	Z:-------------	_	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 4
-# text = Je rovněž přítomen v kamencích (SO4)2, které se používají v barvířství jako mořidla.
+# text = Je rovněž přítomen v kamencích [MI(H2O)6][Fe(H2O)6](SO4)2, které se používají v barvířství jako mořidla.
 1	Je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
 2	rovněž	rovněž	ADV	Db-------------	_	3	advmod	_	_
 3	přítomen	přítomný	ADJ	ACYS------A----	Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short	0	root	_	_
 4	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	5	case	_	_
 5	kamencích	kamenec	NOUN	NNIP6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur|Polarity=Pos	3	obl	_	_
-6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-7	SO	SO	NOUN	NNIXX-----A---8	Abbr=Yes|Polarity=Pos	5	dep	_	SpaceAfter=No
-8	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
-9	)	)	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-10	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
-11	,	,	PUNCT	Z:-------------	_	14	punct	_	_
-12	které	který	DET	P4IP1----------	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	14	nsubj:pass	_	_
-13	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	14	expl:pass	_	_
-14	používají	používat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
-15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	_
-16	barvířství	barvířství	NOUN	NNNS6-----A----	Case=Loc|Gender=Neut|Number=Sing|Polarity=Pos	14	obl	_	_
-17	jako	jako	SCONJ	J,-------------	_	18	mark	_	_
-18	mořidla	mořidlo	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	12	xcomp	_	SpaceAfter=No
-19	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	MI	MI	NOUN	NNXXX-----A---8	Abbr=Yes|Polarity=Pos	5	nmod	_	SpaceAfter=No
+8	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	dep	_	SpaceAfter=No
+10	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+11	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+13	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+14	]	]	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+15	[	[	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+16	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
+17	(	(	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+18	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	16	nmod	_	SpaceAfter=No
+19	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+20	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	18	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+22	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	SpaceAfter=No
+23	]	]	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+24	(	(	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+25	SO	SO	NOUN	NNIXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	16	dep	_	SpaceAfter=No
+26	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	SpaceAfter=No
+27	)	)	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+28	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	SpaceAfter=No
+29	,	,	PUNCT	Z:-------------	_	32	punct	_	_
+30	které	který	DET	P4IP1----------	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	32	nsubj:pass	_	_
+31	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	32	expl:pass	_	_
+32	používají	používat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+33	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	34	case	_	_
+34	barvířství	barvířství	NOUN	NNNS6-----A----	Case=Loc|Gender=Neut|Number=Sing|Polarity=Pos	32	obl	_	_
+35	jako	jako	SCONJ	J,-------------	_	36	mark	_	_
+36	mořidla	mořidlo	NOUN	NNNP1-----A----	Case=Nom|Gender=Neut|Number=Plur|Polarity=Pos	30	xcomp	_	SpaceAfter=No
+37	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 5
 # text = Nejlevnější solí je síran železitý Fe2(SO4)3·
@@ -6222,39 +6265,53 @@
 12	.	.	PUNCT	Z:-------------	_	6	punct	_	_
 
 # sent_id = 5
-# text = Například tmavě červený 2+ je ve vodném roztoku velice stálý, zatímco tmavě modrý 3+ se hydrolyzuje za vzniku polymerních hydroxo-částic a roztok mění barvu na khaki.
+# text = Například tmavě červený [Fe(phen)3]2+ je ve vodném roztoku velice stálý, zatímco tmavě modrý [Fe(phen)3]3+ se hydrolyzuje za vzniku polymerních hydroxo-částic a roztok mění barvu na khaki.
 1	Například	například	ADV	Db-------------	_	3	advmod:emph	_	_
 2	tmavě	tmavě	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	3	advmod	_	_
-3	červený	červený	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	11	nsubj	_	_
-4	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
-5	+	+	SYM	Z:-------------	_	3	advmod	_	_
-6	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
-7	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	9	case	_	_
-8	vodném	vodný	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	9	amod	_	_
-9	roztoku	roztok	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	11	obl	_	_
-10	velice	velice	ADV	Db-------------	_	11	advmod	_	_
-11	stálý	stálý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
-12	,	,	PUNCT	Z:-------------	_	19	punct	_	_
-13	zatímco	zatímco	SCONJ	J,-------------	_	19	mark	_	_
-14	tmavě	tmavě	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	15	advmod	_	_
-15	modrý	modrý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	19	dep	_	_
-16	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	17	nummod	_	SpaceAfter=No
-17	+	+	SYM	Z:-------------	_	15	nmod	_	_
-18	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	19	expl:pass	_	_
-19	hydrolyzuje	hydrolyzovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	advcl	_	_
-20	za	za	ADP	RR--2----------	AdpType=Prep|Case=Gen	21	case	_	_
-21	vzniku	vznik	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	19	obl	_	_
-22	polymerních	polymerní	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	25	amod	_	_
-23	hydroxo	hydroxo	ADJ	A2--------A----	Hyph=Yes|Polarity=Pos	25	amod	_	SpaceAfter=No
-24	-	-	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
-25	částic	částice	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	21	nmod	_	_
-26	a	a	CCONJ	J^-------------	_	28	cc	_	_
-27	roztok	roztok	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	28	nsubj	_	_
-28	mění	měnit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	19	conj	_	_
-29	barvu	barva	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	28	obj	_	_
-30	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	31	case	_	_
-31	khaki	khaki	NOUN	NNNXX-----A----	Foreign=Yes|Gender=Neut|Polarity=Pos	28	obl:arg	_	SpaceAfter=No
-32	.	.	PUNCT	Z:-------------	_	11	punct	_	SpacesAfter=\n
+3	červený	červený	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	18	nsubj	_	_
+4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+5	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	18	nsubj	_	SpaceAfter=No
+6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	phen	phen	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	5	appos	_	SpaceAfter=No
+8	)	)	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+10	]	]	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+11	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+12	+	+	SYM	Z:-------------	_	9	nmod	_	_
+13	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	_
+14	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	16	case	_	_
+15	vodném	vodný	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	16	amod	_	_
+16	roztoku	roztok	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	18	obl	_	_
+17	velice	velice	ADV	Db-------------	_	18	advmod	_	_
+18	stálý	stálý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+19	,	,	PUNCT	Z:-------------	_	33	punct	_	_
+20	zatímco	zatímco	SCONJ	J,-------------	_	33	mark	_	_
+21	tmavě	tmavě	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	22	advmod	_	_
+22	modrý	modrý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	33	dep	_	_
+23	[	[	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+24	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	33	nsubj	_	SpaceAfter=No
+25	(	(	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+26	phen	phen	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	24	appos	_	SpaceAfter=No
+27	)	)	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+28	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
+29	]	]	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+30	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
+31	+	+	SYM	Z:-------------	_	30	nmod	_	_
+32	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	33	expl:pass	_	_
+33	hydrolyzuje	hydrolyzovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	advcl	_	_
+34	za	za	ADP	RR--2----------	AdpType=Prep|Case=Gen	35	case	_	_
+35	vzniku	vznik	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	33	obl	_	_
+36	polymerních	polymerní	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	39	amod	_	_
+37	hydroxo	hydroxo	ADJ	A2--------A----	Hyph=Yes|Polarity=Pos	39	amod	_	SpaceAfter=No
+38	-	-	PUNCT	Z:-------------	_	37	punct	_	SpaceAfter=No
+39	částic	částice	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	35	nmod	_	_
+40	a	a	CCONJ	J^-------------	_	42	cc	_	_
+41	roztok	roztok	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	42	nsubj	_	_
+42	mění	měnit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	33	conj	_	_
+43	barvu	barva	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	42	obj	_	_
+44	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	45	case	_	_
+45	khaki	khaki	NOUN	NNNXX-----A----	Foreign=Yes|Gender=Neut|Polarity=Pos	42	obl:arg	_	SpaceAfter=No
+46	.	.	PUNCT	Z:-------------	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6281,7 +6338,7 @@
 16	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
 # sent_id = 2
-# text = Přidáním kyseliny fosforečné do žlutého roztoku FeCl3 vznikají bezbarvé komplexy 6− a 3−.
+# text = Přidáním kyseliny fosforečné do žlutého roztoku FeCl3 vznikají bezbarvé komplexy [Fe(PO4)3]6− a [Fe(HPO4)3]3−.
 1	Přidáním	přidání	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	9	obl	_	_
 2	kyseliny	kyselina	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	fosforečné	fosforečný	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
@@ -6293,15 +6350,31 @@
 9	vznikají	vznikat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 10	bezbarvé	bezbarvý	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	11	amod	_	_
 11	komplexy	komplex	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	9	nsubj	_	_
-12	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	11	nummod	_	SpaceAfter=No
-13	−	−	SYM	Z:-------------	_	12	nmod	_	_
-14	a	a	CCONJ	J^-------------	_	15	cc	_	_
-15	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	13	conj	_	SpaceAfter=No
-16	−	−	SYM	Z:-------------	_	12	nmod	_	SpaceAfter=No
-17	.	.	PUNCT	Z:-------------	_	9	punct	_	_
+12	[	[	PUNCT	Z:-------------	_	13	punct	_	SpaceAfter=No
+13	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	11	nmod	_	SpaceAfter=No
+14	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	PO	PO	PROPN	NNXXX-----A---8	Abbr=Yes|Polarity=Pos	13	dep	_	SpaceAfter=No
+16	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+17	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+18	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+19	]	]	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+20	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	13	nummod	_	SpaceAfter=No
+21	−	−	SYM	Z:-------------	_	20	nmod	_	_
+22	a	a	CCONJ	J^-------------	_	24	cc	_	_
+23	[	[	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+24	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	13	conj	_	SpaceAfter=No
+25	(	(	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+26	HPO	HPO	NOUN	NNIXX-----A---8	Abbr=Yes|Polarity=Pos	24	nmod	_	SpaceAfter=No
+27	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	26	nummod	_	SpaceAfter=No
+28	)	)	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+29	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	26	nummod	_	SpaceAfter=No
+30	]	]	PUNCT	Z:-------------	_	31	punct	_	SpaceAfter=No
+31	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
+32	−	−	SYM	Z:-------------	_	31	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	Z:-------------	_	9	punct	_	_
 
 # sent_id = 3
-# text = Dalšími komplexy s kyslíkatými donory jsou zelené oxalatoželezitany 3− a tmavě červený .
+# text = Dalšími komplexy s kyslíkatými donory jsou zelené oxalatoželezitany [Fe(C2O4)3]3− a tmavě červený [Fe(acac)3].
 1	Dalšími	další	ADJ	AAIP7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
 2	komplexy	komplex	NOUN	NNIP7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 3	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	5	case	_	_
@@ -6309,13 +6382,30 @@
 5	donory	donor	NOUN	NNIP7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur|Polarity=Pos	2	nmod	_	_
 6	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
 7	zelené	zelený	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	8	amod	_	_
-8	oxalatoželezitany	oxalatoželezitana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	2	nsubj	_	_
-9	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	8	nummod	_	SpaceAfter=No
-10	−	−	SYM	Z:-------------	_	9	nmod	_	_
-11	a	a	CCONJ	J^-------------	_	13	cc	_	_
-12	tmavě	tmavě	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	13	advmod	_	_
-13	červený	červený	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	8	conj	_	_
-14	.	.	PUNCT	Z:-------------	_	2	punct	_	_
+8	oxalatoželezitany	oxalatoželezitan	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	2	nsubj	_	_
+9	[	[	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+10	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	8	nmod	_	SpaceAfter=No
+11	(	(	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+12	C	c	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	10	nmod	_	SpaceAfter=No
+13	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
+14	O	O	NOUN	NNIXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	10	nmod	_	SpaceAfter=No
+15	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
+16	)	)	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+17	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	SpaceAfter=No
+18	]	]	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+19	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	SpaceAfter=No
+20	−	−	SYM	Z:-------------	_	19	nmod	_	_
+21	a	a	CCONJ	J^-------------	_	23	cc	_	_
+22	tmavě	tmavě	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	23	advmod	_	_
+23	červený	červený	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	8	conj	_	_
+24	[	[	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+25	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	23	dep	_	SpaceAfter=No
+26	(	(	PUNCT	Z:-------------	_	27	punct	_	SpaceAfter=No
+27	acac	acac	NOUN	NNXXX-----A---8	Gender=Neut|Polarity=Pos	25	appos	_	SpaceAfter=No
+28	)	)	PUNCT	Z:-------------	_	27	punct	_	SpaceAfter=No
+29	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	SpaceAfter=No
+30	]	]	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+31	.	.	PUNCT	Z:-------------	_	2	punct	_	_
 
 # sent_id = 4
 # text = Oxalatoželezitany jsou sice stálé vůči disociaci, ale jsou fotosensitivní a rozkládají se na Fe(C2O4)2 a CO2.
@@ -6375,27 +6465,44 @@
 20	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 2
-# text = V − je koordinační číslo 7 (pentagonální bipyramida) a v koordinační číslo 5 (čtvercová pyramida).
-1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	2	case	_	_
-2	−	−	SYM	Z:-------------	Gender=Neut|Polarity=Pos	5	nmod	_	_
-3	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
-4	koordinační	koordinační	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	5	amod	_	_
-5	číslo	číslo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
-6	7	7	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	_
-7	(	(	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
-8	pentagonální	pentagonální	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	9	amod	_	_
-9	bipyramida	bipyramida	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	5	dep	_	SpaceAfter=No
-10	)	)	PUNCT	Z:-------------	_	9	punct	_	_
-11	a	a	CCONJ	J^-------------	_	14	cc	_	_
-12	v	v	ADP	RR--4----------	AdpType=Prep|Case=Acc	14	case	_	SpacesAfter=\s\s
-13	koordinační	koordinační	ADJ	AANS4----1A----	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	14	amod	_	_
-14	číslo	číslo	NOUN	NNNS4-----A----	Case=Acc|Gender=Neut|Number=Sing|Polarity=Pos	5	conj	_	_
-15	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	_
-16	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
-17	čtvercová	čtvercový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	18	amod	_	_
-18	pyramida	pyramida	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	14	dep	_	SpaceAfter=No
-19	)	)	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-20	.	.	PUNCT	Z:-------------	_	5	punct	_	SpacesAfter=\n
+# text = V [Fe(H2O)(edta)]− je koordinační číslo 7 (pentagonální bipyramida) a v [FeCl(salen)] koordinační číslo 5 (čtvercová pyramida).
+1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
+2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+3	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	17	obl	_	SpaceAfter=No
+4	(	(	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+5	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	3	nmod	_	SpaceAfter=No
+6	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+7	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	5	nmod	_	SpaceAfter=No
+8	)	)	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+9	(	(	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+10	edta	edta	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	3	appos	_	SpaceAfter=No
+11	)	)	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+12	]	]	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+13	−	−	SYM	Z:-------------	_	3	nmod	_	_
+14	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+15	koordinační	koordinační	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	16	amod	_	_
+16	číslo	číslo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
+17	7	7	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	_
+18	(	(	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+19	pentagonální	pentagonální	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	20	amod	_	_
+20	bipyramida	bipyramida	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	16	dep	_	SpaceAfter=No
+21	)	)	PUNCT	Z:-------------	_	20	punct	_	_
+22	a	a	CCONJ	J^-------------	_	25	cc	_	_
+23	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	25	case	_	_
+24	[	[	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+25	FeCl	fecl	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	17	conj	_	SpaceAfter=No
+26	(	(	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+27	salen	salen	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	25	dep	_	SpaceAfter=No
+28	)	)	PUNCT	Z:-------------	_	25	punct	_	SpaceAfter=No
+29	]	]	PUNCT	Z:-------------	_	25	punct	_	_
+30	koordinační	koordinační	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	31	amod	_	_
+31	číslo	číslo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	25	orphan	_	_
+32	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	31	nummod	_	_
+33	(	(	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+34	čtvercová	čtvercový	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	35	amod	_	_
+35	pyramida	pyramida	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	31	dep	_	SpaceAfter=No
+36	)	)	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+37	.	.	PUNCT	Z:-------------	_	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6420,30 +6527,48 @@
 14	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 2
-# text = Nejstálejší jsou fluoroželezitany, nejčastěji 2−, ale existují i komplexní sloučeniny typu 3−, a −.
+# text = Nejstálejší jsou fluoroželezitany, nejčastěji [Fe(H2O)F5]2−, ale existují i komplexní sloučeniny typu [FeF6]3−, a [FeF4]−.
 1	Nejstálejší	stálý	ADJ	AAIP1----3A----	Animacy=Inan|Case=Nom|Degree=Sup|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 2	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
 3	fluoroželezitany	fluoroželezitan	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	1	nsubj	_	SpaceAfter=No
 4	,	,	PUNCT	Z:-------------	_	5	punct	_	_
 5	nejčastěji	často	ADV	Dg-------3A----	Degree=Sup|Polarity=Pos	1	dep	_	_
-6	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
-7	−	−	SYM	Z:-------------	_	3	nmod	_	SpaceAfter=No
-8	,	,	PUNCT	Z:-------------	_	10	punct	_	_
-9	ale	ale	CCONJ	J^-------------	_	10	cc	_	_
-10	existují	existovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
-11	i	i	CCONJ	J^-------------	_	13	advmod:emph	_	_
-12	komplexní	komplexní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	13	amod	_	_
-13	sloučeniny	sloučenina	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	10	nsubj	_	_
-14	typu	typ	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	13	nmod	_	_
-15	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
-16	−	−	SYM	Z:-------------	_	15	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	Z:-------------	_	19	punct	_	_
-18	a	a	CCONJ	J^-------------	_	19	cc	_	_
-19	−	−	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	16	conj	_	SpaceAfter=No
-20	.	.	PUNCT	Z:-------------	_	1	punct	_	_
+6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	3	appos	_	SpaceAfter=No
+8	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+11	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+13	F	F	NOUN	NNNXX-----A----	Abbr=Yes|Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
+14	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	13	nummod	_	SpaceAfter=No
+15	]	]	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+16	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	13	nummod	_	SpaceAfter=No
+17	−	−	SYM	Z:-------------	_	13	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Z:-------------	_	20	punct	_	_
+19	ale	ale	CCONJ	J^-------------	_	20	cc	_	_
+20	existují	existovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+21	i	i	CCONJ	J^-------------	_	23	advmod:emph	_	_
+22	komplexní	komplexní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	23	amod	_	_
+23	sloučeniny	sloučenina	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	20	nsubj	_	_
+24	typu	typ	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	23	nmod	_	_
+25	[	[	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+26	FeF	FEF	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	24	nmod	_	SpaceAfter=No
+27	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	26	nummod	_	SpaceAfter=No
+28	]	]	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+29	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	26	nummod	_	SpaceAfter=No
+30	−	−	SYM	Z:-------------	_	29	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	Z:-------------	_	34	punct	_	_
+32	a	a	CCONJ	J^-------------	_	34	cc	_	_
+33	[	[	PUNCT	Z:-------------	_	34	punct	_	SpaceAfter=No
+34	FeF	FEF	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	26	conj	_	SpaceAfter=No
+35	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	34	nummod	_	SpaceAfter=No
+36	]	]	PUNCT	Z:-------------	_	37	punct	_	SpaceAfter=No
+37	−	−	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	34	nmod	_	SpaceAfter=No
+38	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 3
-# text = Chloroželezitany se častěji vyskytují v tetraedrickém uspořádání − a méně častý je 2−.
+# text = Chloroželezitany se častěji vyskytují v tetraedrickém uspořádání [FeCl4]− a méně častý je [FeCl5]2−.
 1	Chloroželezitany	chloroželezitan	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	4	nsubj	_	_
 2	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pv	_	_
 3	častěji	často	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	4	advmod	_	_
@@ -6451,32 +6576,44 @@
 5	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	7	case	_	_
 6	tetraedrickém	tetraedrický	ADJ	AANS6----1A----	Case=Loc|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	7	amod	_	_
 7	uspořádání	uspořádání	NOUN	NNNS6-----A----	Case=Loc|Gender=Neut|Number=Sing|Polarity=Pos	4	obl	_	_
-8	−	−	PUNCT	Z:-------------	_	7	nmod	_	_
-9	a	a	CCONJ	J^-------------	_	11	cc	_	_
-10	méně	málo	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	11	advmod	_	_
-11	častý	častý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	4	conj	_	_
-12	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
-13	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
-14	−	−	SYM	Z:-------------	_	11	nsubj	_	SpaceAfter=No
-15	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+8	[	[	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	FeCl	fecl	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|NameType=Pro|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+11	]	]	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+12	−	−	PUNCT	Z:-------------	_	9	nmod	_	_
+13	a	a	CCONJ	J^-------------	_	15	cc	_	_
+14	méně	málo	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	15	advmod	_	_
+15	častý	častý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	4	conj	_	_
+16	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	FeCl	fecl	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	15	nsubj	_	SpaceAfter=No
+19	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+20	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+21	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+22	−	−	SYM	Z:-------------	_	18	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 4
-# text = Bromoželezitany − jsou tepelně nestálé vlivem redoxních procesů (FeII a Br2).
-1	Bromoželezitany	bromoželezitan	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	5	nsubj	_	_
-2	−	−	PUNCT	Z:-------------	_	1	punct	_	_
-3	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
-4	tepelně	tepelně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	5	advmod	_	_
-5	nestálé	stálý	ADJ	AAIP1----1N----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Neg	0	root	_	_
-6	vlivem	vliv	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	8	case	_	_
-7	redoxních	redoxní	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	8	amod	_	_
-8	procesů	proces	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	5	obl	_	_
-9	(	(	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
-10	FeII	FEII	NOUN	NNXXX-----A---8	Abbr=Yes|Foreign=Yes|Gender=Fem|Polarity=Pos	8	dep	_	_
-11	a	a	CCONJ	J^-------------	_	12	cc	_	_
-12	Br	br	NOUN	NNXXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	10	conj	_	SpaceAfter=No
-13	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
-14	)	)	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
-15	.	.	PUNCT	Z:-------------	_	5	punct	_	SpacesAfter=\n
+# text = Bromoželezitany [FeBr4]− jsou tepelně nestálé vlivem redoxních procesů (FeII a Br2).
+1	Bromoželezitany	bromoželezitana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	9	nsubj	_	_
+2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+3	FeBr	FEBR	PROPN	NNXXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|NameType=Pro|Polarity=Pos	1	nmod	_	SpaceAfter=No
+4	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	3	nummod	_	SpaceAfter=No
+5	]	]	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+6	−	−	PUNCT	Z:-------------	_	3	nmod	_	_
+7	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	tepelně	tepelně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	9	advmod	_	_
+9	nestálé	stálý	ADJ	AAIP1----1N----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Neg	0	root	_	_
+10	vlivem	vliv	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	12	case	_	_
+11	redoxních	redoxní	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	12	amod	_	_
+12	procesů	proces	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	9	obl	_	_
+13	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+14	FeII	FEII	NOUN	NNFXX-----A---8	Abbr=Yes|Foreign=Yes|Gender=Fem|Polarity=Pos	12	dep	_	_
+15	a	a	CCONJ	J^-------------	_	16	cc	_	_
+16	Br	Br	NOUN	NNXXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	14	conj	_	SpaceAfter=No
+17	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	SpaceAfter=No
+18	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+19	.	.	PUNCT	Z:-------------	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6499,7 +6636,7 @@
 12	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
 # sent_id = 2
-# text = Způsobují ho vznikající thiokyanatoželezitany (rhodanoželezitany) 3−, −, Fe(SCN)3 a převládající 2+.
+# text = Způsobují ho vznikající thiokyanatoželezitany (rhodanoželezitany) [Fe(SCN)6]3−, [Fe(SCN)4]−, Fe(SCN)3 a převládající [Fe(H2O)5(SCN)]2+.
 1	Způsobují	způsobovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	ho	on	PRON	PHZS4--3-------	Case=Acc|Gender=Masc,Neut|Number=Sing|Person=3|PronType=Prs|Variant=Short	1	obj	_	_
 3	vznikající	vznikající	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	4	amod	_	_
@@ -6507,21 +6644,47 @@
 5	(	(	PUNCT	Z:-------------	_	6	punct	_	SpaceAfter=No
 6	rhodanoželezitany	rhodanoželezitana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	4	appos	_	SpaceAfter=No
 7	)	)	PUNCT	Z:-------------	_	6	punct	_	_
-8	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	4	nummod	_	SpaceAfter=No
-9	−	−	SYM	Z:-------------	_	8	nmod	_	SpaceAfter=No
-10	,	,	PUNCT	Z:-------------	_	11	punct	_	_
-11	−	−	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	conj	_	SpaceAfter=No
-12	,	,	PUNCT	Z:-------------	_	13	punct	_	_
-13	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	8	conj	_	SpaceAfter=No
-14	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-15	SCN	SCN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	13	appos	_	SpaceAfter=No
-16	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
-17	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	13	nummod	_	_
-18	a	a	CCONJ	J^-------------	_	19	cc	_	_
-19	převládající	převládající	ADJ	AGIP1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	4	conj	_	_
-20	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	21	nummod	_	SpaceAfter=No
-21	+	+	SYM	Z:-------------	_	19	advmod	_	SpaceAfter=No
-22	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+8	[	[	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	4	nmod	_	SpaceAfter=No
+10	(	(	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
+11	SCN	SCN	NOUN	NNNXX-----A---8	Abbr=Yes|Polarity=Pos	9	dep	_	SpaceAfter=No
+12	)	)	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
+13	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+14	]	]	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+16	−	−	SYM	Z:-------------	_	15	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	Z:-------------	_	19	punct	_	_
+18	[	[	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+19	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	conj	_	SpaceAfter=No
+20	(	(	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
+21	SCN	SCN	NOUN	NNNXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	19	dep	_	SpaceAfter=No
+22	)	)	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
+23	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	19	nummod	_	SpaceAfter=No
+24	]	]	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
+25	−	−	NOUN	Z:-------------	_	19	conj	_	SpaceAfter=No
+26	,	,	PUNCT	Z:-------------	_	27	punct	_	_
+27	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	19	conj	_	SpaceAfter=No
+28	(	(	PUNCT	Z:-------------	_	29	punct	_	SpaceAfter=No
+29	SCN	SCN	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	27	dep	_	SpaceAfter=No
+30	)	)	PUNCT	Z:-------------	_	29	punct	_	SpaceAfter=No
+31	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	29	nummod	_	_
+32	a	a	CCONJ	J^-------------	_	33	cc	_	_
+33	převládající	převládající	ADJ	AGIS1-----A----	Animacy=Inan|Aspect=Imp|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Act	4	conj	_	_
+34	[	[	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+35	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	33	dep	_	SpaceAfter=No
+36	(	(	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+37	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	35	nmod	_	SpaceAfter=No
+38	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	37	nummod	_	SpaceAfter=No
+39	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	37	nmod	_	SpaceAfter=No
+40	)	)	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+41	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	35	nummod	_	SpaceAfter=No
+42	(	(	PUNCT	Z:-------------	_	43	punct	_	SpaceAfter=No
+43	SCN	SCN	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	35	appos	_	SpaceAfter=No
+44	)	)	PUNCT	Z:-------------	_	43	punct	_	SpaceAfter=No
+45	]	]	PUNCT	Z:-------------	_	35	punct	_	SpaceAfter=No
+46	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	47	nummod	_	SpaceAfter=No
+47	+	+	SYM	Z:-------------	_	35	nmod	_	SpaceAfter=No
+48	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6529,18 +6692,25 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Nejznámější nízkospinové komplexy jsou kyanoželezitany 3−.
+# text = Nejznámější nízkospinové komplexy jsou kyanoželezitany [Fe(CN)6]3−.
 1	Nejznámější	známý	ADJ	AAIP1----3A----	Animacy=Inan|Case=Nom|Degree=Sup|Gender=Masc|Number=Plur|Polarity=Pos	3	amod	_	_
 2	nízkospinové	nízkospinový	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	3	amod	_	_
 3	komplexy	komplex	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
 4	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
 5	kyanoželezitany	kyanoželezitan	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	3	nsubj	_	_
-6	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
-7	−	−	SYM	Z:-------------	_	5	nmod	_	SpaceAfter=No
-8	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	Fe	fe	NOUN	NNXXX-----A---8	Gender=Neut|Polarity=Pos	5	nmod	_	SpaceAfter=No
+8	(	(	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	)	)	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+11	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+12	]	]	PUNCT	Z:-------------	_	13	punct	_	SpaceAfter=No
+13	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+14	−	−	SYM	Z:-------------	_	13	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 2
-# text = Patří sem např. červená krevní sůl (hexakyanoželezitan draselný, ferrikyanid draselný) K3, který se získává oxidací 4− např. chlorem.
+# text = Patří sem např. červená krevní sůl (hexakyanoželezitan draselný, ferrikyanid draselný) K3[Fe(CN)6], který se získává oxidací [Fe(CN)6]4− např. chlorem.
 1	Patří	patřit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	sem	sem	ADV	Db-------------	_	1	advmod	_	_
 3	např	například	ADV	Db------------8	Abbr=Yes	7	advmod:emph	_	SpaceAfter=No
@@ -6555,19 +6725,33 @@
 12	ferrikyanid	ferrikyanid	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	9	conj	_	_
 13	draselný	draselný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	12	amod	_	SpaceAfter=No
 14	)	)	PUNCT	Z:-------------	_	9	punct	_	_
-15	K	K	NOUN	NNXXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	7	nmod	_	SpaceAfter=No
+15	K	K	NOUN	NNXXX-----A---8	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
 16	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
-17	,	,	PUNCT	Z:-------------	_	20	punct	_	_
-18	který	který	DET	P4YS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	20	nsubj:pass	_	_
-19	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	20	expl:pass	_	_
-20	získává	získávat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
-21	oxidací	oxidace	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	20	obl	_	_
-22	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	21	nummod	_	SpaceAfter=No
-23	−	−	SYM	Z:-------------	_	26	punct	_	_
-24	např	například	ADV	Db------------8	Abbr=Yes	26	advmod:emph	_	SpaceAfter=No
-25	.	.	PUNCT	Z:-------------	_	24	punct	_	_
-26	chlorem	chlor	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	21	appos	_	SpaceAfter=No
-27	.	.	PUNCT	Z:-------------	_	1	punct	_	_
+17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	15	nmod	_	SpaceAfter=No
+19	(	(	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+20	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	18	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+22	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	20	nummod	_	SpaceAfter=No
+23	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+24	,	,	PUNCT	Z:-------------	_	27	punct	_	_
+25	který	který	DET	P4YS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	27	nsubj:pass	_	_
+26	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	27	expl:pass	_	_
+27	získává	získávat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+28	oxidací	oxidace	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	27	obl	_	_
+29	[	[	PUNCT	Z:-------------	_	30	punct	_	SpaceAfter=No
+30	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	28	nmod	_	SpaceAfter=No
+31	(	(	PUNCT	Z:-------------	_	32	punct	_	SpaceAfter=No
+32	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	30	appos	_	SpaceAfter=No
+33	)	)	PUNCT	Z:-------------	_	32	punct	_	SpaceAfter=No
+34	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	32	nummod	_	SpaceAfter=No
+35	]	]	PUNCT	Z:-------------	_	30	punct	_	SpaceAfter=No
+36	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	30	nummod	_	SpaceAfter=No
+37	−	−	SYM	Z:-------------	_	40	nmod	_	_
+38	např	například	ADV	Db------------8	Abbr=Yes	40	advmod:emph	_	SpaceAfter=No
+39	.	.	PUNCT	Z:-------------	_	38	punct	_	_
+40	chlorem	chlor	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	28	appos	_	SpaceAfter=No
+41	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 3
 # text = Kyanidové ligandy jsou však vázány natolik slabě, že jsou hexakyanoželezitany toxické.
@@ -6648,45 +6832,84 @@
 13	.	.	PUNCT	Z:-------------	_	11	punct	_	_
 
 # sent_id = 2
-# text = Z 3− můžeme působením zředěných kyselin připravit 2−.
+# text = Z [Fe(CN)6]3− můžeme působením zředěných kyselin připravit [Fe(H2O)(CN)5]2−.
 1	Z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	3	case	_	_
-2	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	3	nummod	_	SpaceAfter=No
-3	−	−	SYM	Z:-------------	_	4	advmod	_	_
-4	můžeme	moci	VERB	VB-P---1P-AA---	Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-5	působením	působení	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	8	obl	_	_
-6	zředěných	zředěný	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	7	amod	_	_
-7	kyselin	kyselina	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	5	nmod	_	_
-8	připravit	připravit	VERB	Vf--------A----	Aspect=Perf|Polarity=Pos|VerbForm=Inf	4	xcomp	_	_
-9	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	SpaceAfter=No
-10	−	−	SYM	Z:-------------	_	8	obj	_	SpaceAfter=No
-11	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+2	[	[	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+3	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	15	obl	_	SpaceAfter=No
+4	(	(	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+5	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	3	appos	_	SpaceAfter=No
+6	)	)	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+7	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	3	nummod	_	SpaceAfter=No
+8	]	]	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+9	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	3	nummod	_	SpaceAfter=No
+10	−	−	SYM	Z:-------------	_	9	nmod	_	_
+11	můžeme	moci	VERB	VB-P---1P-AA---	Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+12	působením	působení	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	15	obl	_	_
+13	zředěných	zředěný	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	14	amod	_	_
+14	kyselin	kyselina	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	12	nmod	_	_
+15	připravit	připravit	VERB	Vf--------A----	Aspect=Perf|Polarity=Pos|VerbForm=Inf	11	xcomp	_	_
+16	[	[	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+17	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	15	obj	_	SpaceAfter=No
+18	(	(	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+19	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	17	nmod	_	SpaceAfter=No
+20	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	19	nummod	_	SpaceAfter=No
+21	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	19	nmod	_	SpaceAfter=No
+22	)	)	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+23	(	(	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+24	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	17	appos	_	SpaceAfter=No
+25	)	)	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+26	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	17	nummod	_	SpaceAfter=No
+27	]	]	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+28	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	29	nummod	_	SpaceAfter=No
+29	−	−	SYM	Z:-------------	_	17	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	Z:-------------	_	11	punct	_	_
 
 # sent_id = 3
-# text = Nejznámější je ale nitroprussid sodný Na2.
+# text = Nejznámější je ale nitroprussid sodný Na2[Fe(CN)5(NO)].
 1	Nejznámější	známý	ADJ	AAIS1----3A----	Animacy=Inan|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	_
 2	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
 3	ale	ale	CCONJ	J^-------------	_	1	cc	_	_
 4	nitroprussid	nitroprussid	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	1	nsubj	_	_
 5	sodný	sodný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	4	amod	_	_
 6	Na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	7	case	_	SpaceAfter=No
-7	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	obl	_	SpaceAfter=No
-8	.	.	PUNCT	Z:-------------	_	1	punct	_	_
+7	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+8	[	[	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	4	nmod	_	SpaceAfter=No
+10	(	(	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
+11	CN	CN	NOUN	NNXXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	9	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
+13	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+14	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	NO	NO	NOUN	NNXXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	9	appos	_	SpaceAfter=No
+16	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+17	]	]	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+18	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 4
-# text = Nitroprussidy slouží k důkazu S2− za vzniku červeného 4−.
+# text = Nitroprussidy slouží k důkazu S2− za vzniku červeného [Fe(CN)5(NOS)]4−.
 1	Nitroprussidy	nitroprussid	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	2	nsubj	_	_
 2	slouží	sloužit	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	k	k	ADP	RR--3----------	AdpType=Prep|Case=Dat	4	case	_	_
 4	důkazu	důkaz	NOUN	NNIS3-----A----	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing|Polarity=Pos	2	obl	_	_
-5	S	s	NOUN	NNXXX-----A---8	AdpType=Prep|Case=Ins	4	nmod	_	SpaceAfter=No
+5	S	S	NOUN	NNXXX-----A---8	Gender=Neut|Polarity=Pos	4	nmod	_	SpaceAfter=No
 6	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
-7	−	−	SYM	Z:-------------	_	4	nmod	_	_
+7	−	−	SYM	Z:-------------	_	5	nmod	_	_
 8	za	za	ADP	RR--2----------	AdpType=Prep|Case=Gen	9	case	_	_
 9	vzniku	vznik	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	2	obl	_	_
-10	červeného	červený	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	12	amod	_	_
-11	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
-12	−	−	SYM	Z:-------------	_	9	nmod	_	SpaceAfter=No
-13	.	.	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
+10	červeného	červený	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	9	amod	_	_
+11	[	[	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+12	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	nmod	_	SpaceAfter=No
+13	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+14	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	12	nmod	_	SpaceAfter=No
+15	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+16	5	5	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
+17	(	(	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	NOS	NOS	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	12	appos	_	SpaceAfter=No
+19	)	)	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+20	]	]	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+21	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	22	nummod	_	SpaceAfter=No
+22	−	−	SYM	Z:-------------	_	12	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -6745,50 +6968,59 @@
 33	.	.	PUNCT	Z:-------------	_	9	punct	_	_
 
 # sent_id = 2
-# text = Tyto roztoky obsahují hexaaquaželeznaté kationty 2+, který se také vyskytuje např. v Fe(ClO4)2·6H2O, FeSO4·7H2O (zelená skalice) a (NH4)2SO4·
+# text = Tyto roztoky obsahují hexaaquaželeznaté kationty [Fe(H2O)6]2+, který se také vyskytuje např. v Fe(ClO4)2·6H2O, FeSO4·7H2O (zelená skalice) a (NH4)2SO4·
 1	Tyto	tento	DET	PDIP1----------	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	roztoky	roztok	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	3	nsubj	_	_
 3	obsahují	obsahovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 4	hexaaquaželeznaté	hexaaquaželeznatý	ADJ	AAIP4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	5	amod	_	_
 5	kationty	kationt	NOUN	NNIP4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur|Polarity=Pos	3	obj	_	_
-6	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
-7	+	+	SYM	Z:-------------	_	6	nmod	_	SpaceAfter=No
-8	,	,	PUNCT	Z:-------------	_	12	punct	_	_
-9	který	který	DET	P4YS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	12	nsubj	_	_
-10	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	12	expl:pv	_	_
-11	také	také	ADV	Db-------------	_	12	advmod	_	_
-12	vyskytuje	vyskytovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
-13	např	například	ADV	Db------------8	Abbr=Yes	16	advmod:emph	_	SpaceAfter=No
-14	.	.	PUNCT	Z:-------------	_	13	punct	_	_
-15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	_
-16	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	12	obl	_	SpaceAfter=No
-17	(	(	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-18	ClO	CLO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	16	dep	_	SpaceAfter=No
-19	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
-20	)	)	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
-21	2·6	2·6	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	SpaceAfter=No
-22	H	H	NOUN	NNNXX-----A----	Abbr=Yes|Gender=Neut|Polarity=Pos	21	nmod	_	SpaceAfter=No
-23	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	22	nummod	_	SpaceAfter=No
-24	O	o	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	22	nmod	_	SpaceAfter=No
-25	,	,	PUNCT	Z:-------------	_	26	punct	_	_
-26	FeSO	FESO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	16	conj	_	SpaceAfter=No
-27	4·7	4·7	NUM	C=-------------	NumForm=Digit|NumType=Card	26	nummod	_	SpaceAfter=No
-28	H	H	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	26	nmod	_	SpaceAfter=No
-29	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	28	nummod	_	SpaceAfter=No
-30	O	o	NOUN	NNNXX-----A----	Abbr=Yes|Gender=Neut|Polarity=Pos	28	nmod	_	_
-31	(	(	PUNCT	Z:-------------	_	33	punct	_	SpaceAfter=No
-32	zelená	zelený	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	33	amod	_	_
-33	skalice	skalice	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	26	dep	_	SpaceAfter=No
-34	)	)	PUNCT	Z:-------------	_	33	punct	_	_
-35	a	a	CCONJ	J^-------------	_	37	cc	_	_
-36	(	(	PUNCT	Z:-------------	_	37	punct	_	SpaceAfter=No
-37	NH	NH	NOUN	NNIXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	16	conj	_	SpaceAfter=No
-38	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	37	nummod	_	SpaceAfter=No
-39	)	)	PUNCT	Z:-------------	_	37	punct	_	SpaceAfter=No
-40	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	41	nummod	_	SpaceAfter=No
-41	SO	SO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	37	nmod	_	SpaceAfter=No
-42	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	41	nummod	_	SpaceAfter=No
-43	·	·	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+6	[	[	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	5	nmod	_	SpaceAfter=No
+8	(	(	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	H	H	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nummod	_	SpaceAfter=No
+11	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	9	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+13	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+14	]	]	PUNCT	Z:-------------	_	13	punct	_	SpaceAfter=No
+15	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+16	+	+	SYM	Z:-------------	_	15	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	Z:-------------	_	21	punct	_	_
+18	který	který	DET	P4YS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	21	nsubj	_	_
+19	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	21	expl:pv	_	_
+20	také	také	ADV	Db-------------	_	21	advmod	_	_
+21	vyskytuje	vyskytovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+22	např	například	ADV	Db------------8	Abbr=Yes	25	advmod:emph	_	SpaceAfter=No
+23	.	.	PUNCT	Z:-------------	_	22	punct	_	_
+24	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	25	case	_	_
+25	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	21	obl	_	SpaceAfter=No
+26	(	(	PUNCT	Z:-------------	_	27	punct	_	SpaceAfter=No
+27	ClO	CLO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	25	dep	_	SpaceAfter=No
+28	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	27	nummod	_	SpaceAfter=No
+29	)	)	PUNCT	Z:-------------	_	27	punct	_	SpaceAfter=No
+30	2·6	2·6	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	SpaceAfter=No
+31	H	h	NOUN	NNNXX-----A----	Abbr=Yes|Gender=Neut|Polarity=Pos	30	nmod	_	SpaceAfter=No
+32	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	31	nummod	_	SpaceAfter=No
+33	O	o	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	31	nmod	_	SpaceAfter=No
+34	,	,	PUNCT	Z:-------------	_	35	punct	_	_
+35	FeSO	FESO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	25	conj	_	SpaceAfter=No
+36	4·7	4·7	NUM	C=-------------	NumForm=Digit|NumType=Card	35	nummod	_	SpaceAfter=No
+37	H	H	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	35	nmod	_	SpaceAfter=No
+38	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	37	nummod	_	SpaceAfter=No
+39	O	o	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	37	nmod	_	_
+40	(	(	PUNCT	Z:-------------	_	42	punct	_	SpaceAfter=No
+41	zelená	zelený	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	42	amod	_	_
+42	skalice	skalice	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	35	dep	_	SpaceAfter=No
+43	)	)	PUNCT	Z:-------------	_	42	punct	_	_
+44	a	a	CCONJ	J^-------------	_	46	cc	_	_
+45	(	(	PUNCT	Z:-------------	_	46	punct	_	SpaceAfter=No
+46	NH	NH	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	25	conj	_	SpaceAfter=No
+47	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	46	nummod	_	SpaceAfter=No
+48	)	)	PUNCT	Z:-------------	_	46	punct	_	SpaceAfter=No
+49	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	50	nummod	_	SpaceAfter=No
+50	SO	SO	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	46	nmod	_	SpaceAfter=No
+51	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	50	nummod	_	SpaceAfter=No
+52	·	·	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
 
 # sent_id = 3
 # text = FeSO4·7H2O (Mohrova sůl používaná v odměrné analýze).
@@ -6976,22 +7208,30 @@
 28	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 2
-# text = Např. existuje 2+ a méně stále komplexy s acac a šťavelanovým aniontem.
+# text = Např. existuje [Fe(NH3)6]2+ a méně stále komplexy s acac a šťavelanovým aniontem.
 1	Např	například	ADV	Db------------8	Abbr=Yes	3	advmod	_	SpaceAfter=No
 2	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 3	existuje	existovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
-5	+	+	SYM	Z:-------------	_	3	nsubj	_	_
-6	a	a	CCONJ	J^-------------	_	7	cc	_	_
-7	méně	málo	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	3	conj	_	_
-8	stále	stále	ADV	Db-------------	_	7	orphan	_	_
-9	komplexy	komplex	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	7	orphan	_	_
-10	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	11	case	_	_
-11	acac	acac	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	9	nmod	_	_
-12	a	a	CCONJ	J^-------------	_	14	cc	_	_
-13	šťavelanovým	šťavelanový	ADJ	AAIS7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	14	amod	_	_
-14	aniontem	aniont	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	11	conj	_	SpaceAfter=No
-15	.	.	PUNCT	Z:-------------	_	3	punct	_	SpacesAfter=\n
+4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+5	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	3	nsubj	_	SpaceAfter=No
+6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	NH	NH	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	5	appos	_	SpaceAfter=No
+8	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	7	nummod	_	SpaceAfter=No
+9	)	)	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+10	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+11	]	]	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+12	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+13	+	+	SYM	Z:-------------	_	12	nmod	_	_
+14	a	a	CCONJ	J^-------------	_	15	cc	_	_
+15	méně	málo	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	3	conj	_	_
+16	stále	stále	ADV	Db-------------	_	15	orphan	_	_
+17	komplexy	komplex	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	15	orphan	_	_
+18	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	19	case	_	_
+19	acac	acac	NOUN	NNIS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	17	nmod	_	_
+20	a	a	CCONJ	J^-------------	_	22	cc	_	_
+21	šťavelanovým	šťavelanový	ADJ	AAIS7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	22	amod	_	_
+22	aniontem	aniont	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	19	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Z:-------------	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -7009,7 +7249,7 @@
 7	.	.	PUNCT	Z:-------------	_	6	punct	_	_
 
 # sent_id = 2
-# text = K tetraedrickým komplexům patří komplexy s chlorem, bromem, jodem a rhodanidem 2−.
+# text = K tetraedrickým komplexům patří komplexy s chlorem, bromem, jodem a rhodanidem [FeX4]2−.
 1	K	k	ADP	RR--3----------	AdpType=Prep|Case=Dat	3	case	_	_
 2	tetraedrickým	tetraedrický	ADJ	AAIP3----1A----	Animacy=Inan|Case=Dat|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	3	amod	_	_
 3	komplexům	komplex	NOUN	NNIP3-----A----	Animacy=Inan|Case=Dat|Gender=Masc|Number=Plur|Polarity=Pos	4	obl:arg	_	_
@@ -7023,9 +7263,13 @@
 11	jodem	jodo	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	7	conj	_	_
 12	a	a	CCONJ	J^-------------	_	13	cc	_	_
 13	rhodanidem	rhodanid	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	7	conj	_	_
-14	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
-15	−	−	SYM	Z:-------------	_	13	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+14	[	[	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	FeX	FEX	NOUN	NNIXX-----A---8	Abbr=Yes|Polarity=Pos	13	nmod	_	SpaceAfter=No
+16	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+17	]	]	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+18	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+19	−	−	SYM	Z:-------------	_	18	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 3
 # text = Železnaté komplexy jsou častěji vysokospinové, nízkospinové komplexy tvoří železo pouze s bipyridylen (bipy), fenanthrolinem (phen) a kyanidovými anionty.
@@ -7061,20 +7305,34 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2+ a 2+ jsou intenzivně červeně zbarvené.
-1	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	9	nsubj	_	SpaceAfter=No
-2	+	+	SYM	Z:-------------	_	1	nmod	_	_
-3	a	a	CCONJ	J^-------------	_	4	cc	_	_
-4	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	2	conj	_	SpaceAfter=No
-5	+	+	SYM	Z:-------------	_	1	nmod	_	_
-6	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
-7	intenzivně	intenzivně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	9	advmod	_	_
-8	červeně	červeně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	9	advmod	_	_
-9	zbarvené	zbarvený	ADJ	AAFP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
-10	.	.	PUNCT	Z:-------------	_	9	punct	_	_
+# text = [Fe(bipy)3]2+ a [Fe(phen)3]2+ jsou intenzivně červeně zbarvené.
+1	[	[	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+2	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	23	nsubj	_	SpaceAfter=No
+3	(	(	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
+4	bipy	bip	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	2	appos	_	SpaceAfter=No
+5	)	)	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
+6	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	2	nummod	_	SpaceAfter=No
+7	]	]	PUNCT	Z:-------------	_	6	punct	_	SpaceAfter=No
+8	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	2	nummod	_	SpaceAfter=No
+9	+	+	SYM	Z:-------------	_	8	nmod	_	_
+10	a	a	CCONJ	J^-------------	_	12	cc	_	_
+11	[	[	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+12	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	2	conj	_	SpaceAfter=No
+13	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+14	phen	phen	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	12	appos	_	SpaceAfter=No
+15	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+16	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
+17	]	]	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
+18	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	16	compound	_	SpaceAfter=No
+19	+	+	SYM	Z:-------------	_	16	nmod	_	_
+20	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	_	_
+21	intenzivně	intenzivně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	23	advmod	_	_
+22	červeně	červeně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	23	advmod	_	_
+23	zbarvené	zbarvený	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	Z:-------------	_	23	punct	_	_
 
 # sent_id = 2
-# text = Druhý jmenovaný komplex slouží v analytické chemii jako redoxní indikátor ferroin, protože se při styku s oxidačním činidlem oxiduje na modrý 3+.
+# text = Druhý jmenovaný komplex slouží v analytické chemii jako redoxní indikátor ferroin, protože se při styku s oxidačním činidlem oxiduje na modrý [Fe(phen)3]3+.
 1	Druhý	druhý	ADJ	CrIS1----------	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	_
 2	jmenovaný	jmenovaný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	3	amod	_	_
 3	komplex	komplex	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	4	nsubj	_	_
@@ -7095,11 +7353,18 @@
 18	oxidačním	oxidační	ADJ	AANS7----1A----	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	19	amod	_	_
 19	činidlem	činidlo	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	16	nmod	_	_
 20	oxiduje	oxidovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	_	_
-21	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	24	case	_	_
-22	modrý	modrý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	24	amod	_	_
-23	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
-24	+	+	SYM	Z:-------------	_	20	advmod	_	SpaceAfter=No
-25	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+21	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	22	case	_	_
+22	modrý	modrý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	20	dep	_	_
+23	[	[	PUNCT	Z:-------------	_	24	punct	_	SpaceAfter=No
+24	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	20	obl	_	SpaceAfter=No
+25	(	(	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+26	phen	phen	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	24	appos	_	SpaceAfter=No
+27	)	)	PUNCT	Z:-------------	_	26	punct	_	SpaceAfter=No
+28	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
+29	]	]	PUNCT	Z:-------------	_	30	punct	_	SpaceAfter=No
+30	3	3	NUM	C=-------------	NumForm=Digit|NumType=Card	24	nummod	_	SpaceAfter=No
+31	+	+	SYM	Z:-------------	_	30	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 3
 # text = Vysokospinové mono- a bisfenathrolinové komplexy lze připravit obtížně.
@@ -7120,28 +7385,42 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mezi nejznámější kyanoželeznatany 4− patří světle žlutý hexakyanoželeznatan draselný K4 (žlutá krevní sůl, ferrokyanid draselný).
+# text = Mezi nejznámější kyanoželeznatany [Fe(CN)6]4− patří světle žlutý hexakyanoželeznatan draselný K4[Fe(CN)6] (žlutá krevní sůl, ferrokyanid draselný).
 1	Mezi	mezi	ADP	RR--4----------	AdpType=Prep|Case=Acc	3	case	_	_
 2	nejznámější	známý	ADJ	AAFP4----3A----	Case=Acc|Degree=Sup|Gender=Fem|Number=Plur|Polarity=Pos	3	amod	_	_
-3	kyanoželeznatany	kyanoželeznatana	NOUN	NNFP4-----A----	Case=Acc|Gender=Fem|Number=Plur|Polarity=Pos	6	obl	_	_
-4	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
-5	−	−	SYM	Z:-------------	_	3	nmod	_	_
-6	patří	patřit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-7	světle	světle	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	8	advmod	_	_
-8	žlutý	žlutý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	9	amod	_	_
-9	hexakyanoželeznatan	hexakyanoželeznatan	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	6	nsubj	_	_
-10	draselný	draselný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	9	amod	_	_
-11	K	K	NOUN	NNXXX-----A---8	Abbr=Yes|Polarity=Pos	9	nmod	_	SpaceAfter=No
-12	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	11	nummod	_	_
-13	(	(	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
-14	žlutá	žlutý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
-15	krevní	krevní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
-16	sůl	sůl	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	9	appos	_	SpaceAfter=No
-17	,	,	PUNCT	Z:-------------	_	18	punct	_	_
-18	ferrokyanid	ferrokyanid	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	16	conj	_	_
-19	draselný	draselný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	18	amod	_	SpaceAfter=No
-20	)	)	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
-21	.	.	PUNCT	Z:-------------	_	6	punct	_	_
+3	kyanoželeznatany	kyanoželeznatana	NOUN	NNFP4-----A----	Case=Acc|Gender=Fem|Number=Plur|Polarity=Pos	13	obl	_	_
+4	[	[	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+5	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	3	nmod	_	SpaceAfter=No
+6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+7	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	5	nmod	_	SpaceAfter=No
+8	)	)	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+9	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+10	]	]	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
+11	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+12	−	−	SYM	Z:-------------	_	11	nmod	_	_
+13	patří	patřit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+14	světle	světle	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	15	advmod	_	_
+15	žlutý	žlutý	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	16	amod	_	_
+16	hexakyanoželeznatan	hexakyanoželeznatan	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	13	nsubj	_	_
+17	draselný	draselný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	16	amod	_	_
+18	K	K	NOUN	NNXXX-----A---8	Abbr=Yes|Polarity=Pos	17	obj	_	SpaceAfter=No
+19	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+20	[	[	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
+21	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	18	nmod	_	SpaceAfter=No
+22	(	(	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
+23	CN	CN	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	21	nmod	_	SpaceAfter=No
+24	)	)	PUNCT	Z:-------------	_	23	punct	_	SpaceAfter=No
+25	6	6	NUM	C=-------------	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+26	]	]	PUNCT	Z:-------------	_	21	punct	_	_
+27	(	(	PUNCT	Z:-------------	_	30	punct	_	SpaceAfter=No
+28	žlutá	žlutý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	30	amod	_	_
+29	krevní	krevní	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	30	amod	_	_
+30	sůl	sůl	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	16	appos	_	SpaceAfter=No
+31	,	,	PUNCT	Z:-------------	_	32	punct	_	_
+32	ferrokyanid	ferrokyanid	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	30	conj	_	_
+33	draselný	draselný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	32	amod	_	SpaceAfter=No
+34	)	)	PUNCT	Z:-------------	_	30	punct	_	SpaceAfter=No
+35	.	.	PUNCT	Z:-------------	_	13	punct	_	_
 
 # sent_id = 2
 # text = Dříve se připravoval tavením dusíkatých živočišných zbytků (kůže, rohy, atd.) se železem a K2CO3.
@@ -7219,8 +7498,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Oxalatoželeznatany jsou komplexní sloučeniny s obecným vzorcem M2I
-1	Oxalatoželeznatany	Oxalatoželeznatany	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	4	nsubj	_	_
+# text = Oxalatoželeznatany jsou komplexní sloučeniny s obecným vzorcem M2I[Fe(C2O4)2]
+1	Oxalatoželeznatany	oxalatoželeznatana	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	4	nsubj	_	_
 2	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
 3	komplexní	komplexní	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	4	amod	_	_
 4	sloučeniny	sloučenina	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	0	root	_	_
@@ -7229,7 +7508,17 @@
 7	vzorcem	vzorec	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	4	nmod	_	_
 8	M	m	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
 9	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	8	nummod	_	SpaceAfter=No
-10	I	I	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpacesAfter=\n
+10	I	i	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	8	nmod	_	SpaceAfter=No
+11	[	[	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+12	Fe	fe	NOUN	NNNXX-----A----	Gender=Neut|Polarity=Pos	7	nmod	_	SpaceAfter=No
+13	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+14	C	C	NOUN	NNNXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	12	nmod	_	SpaceAfter=No
+15	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	14	nummod	_	SpaceAfter=No
+16	O	O	NOUN	NNIXX-----A---8	Abbr=Yes|Gender=Neut|Polarity=Pos	12	nmod	_	SpaceAfter=No
+17	4	4	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod	_	SpaceAfter=No
+18	)	)	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+19	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	12	nummod	_	SpaceAfter=No
+20	]	]	PUNCT	Z:-------------	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830

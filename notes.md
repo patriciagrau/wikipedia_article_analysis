@@ -136,3 +136,11 @@ On text allignment: reading "Iterative, MT-based sentence alignment of parallel 
 
 - rerunning main script keeping \[things inside square brackets\] (except for references like \[a\], \[1\], \[n. 1\]).
 - gold standard English: line 315 ?? xcomp??
+
+03/03
+
+- gold standard French: "à près de 146 millions..." (line 247)--> following the structure of # newdoc id = w01026 # sent_id = w01026024 in fr_pud-ud-test.conllu --> Is the dependency of "près" case or advmod of 146? I'd say the latter.
+- gold standard French: "le plus peuplé" (line 270) --> following the same file, decided on DET of plus, advmod of peuplé
+- gold standard French: "La Révolution russe **consécutive** \[à la Première Guerre mondiale\]" --> amod of "consécutive"?
+- gold standard French: in the ud file of reference, it says that "dont" is an ADP??? Isn't it a pron??line 448
+- problem (maybe): sentence ids repeat themselves for every paragraph!

@@ -816,7 +816,7 @@
 48	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 2
-# text = Michael A. Barry Princeton Unibetsitateko irakasleak Ereb hitzaren mentzioa aurkitu du asiriar estela batean, "gaua, ilunabar" esanahiarekin, Asurekin kontrajarriz "egunsentia", hau da, Asia.
+# text = Michael A. Barry Princeton Unibetsitateko irakasleak Ereb hitzaren mentzioa aurkitu du asiriar estela batean, "gaua, ilunabar[reko herrialdea]" esanahiarekin, Asurekin kontrajarriz "egunsentia[ren herrialdea]", hau da, Asia.
 1	Michael	Michael	PROPN	_	_	5	nmod	_	_
 2	A.	a	NOUN	_	_	1	flat	_	_
 3	Barry	Barry	PROPN	_	_	2	flat	_	_
@@ -833,23 +833,29 @@
 14	batean	bat	NUM	_	NumType=Card	13	nummod	_	SpaceAfter=No
 15	,	,	PUNCT	_	_	10	punct	_	_
 16	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No
-17	gaua	gau	NOUN	_	Animacy=Inan|Case=Abs|Definite=Def|Number=Sing	13	appos	_	SpaceAfter=No
+17	gaua	gau	NOUN	_	Animacy=Inan|Case=Abs|Definite=Def|Number=Sing	10	obj	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	19	punct	_	_
-19	ilunabar	ilunabar	NOUN	_	_	17	conj	_	SpaceAfter=No
-20	"	"	PUNCT	_	_	21	punct	_	_
-21	esanahiarekin	esanahi	NOUN	_	Animacy=Inan|Case=Com|Definite=Def|Number=Sing	17	conj	_	SpaceAfter=No
-22	,	,	PUNCT	_	_	10	punct	_	_
-23	Asurekin	Asu	PROPN	_	Case=Com|Definite=Def|Number=Sing	24	obl	_	_
-24	kontrajarriz	kontrajarri	VERB	_	Case=Ins|Definite=Ind|VerbForm=Part	30	advcl	_	_
-25	"	"	PUNCT	_	_	26	punct	_	SpaceAfter=No
-26	egunsentia	egunsentia	NOUN	_	Case=Abs|Definite=Def|Number=Sing	10	advcl	_	SpaceAfter=No
-27	"	"	PUNCT	_	_	26	punct	_	SpaceAfter=No
-28	,	,	PUNCT	_	_	10	punct	_	_
-29	hau	hau	DET	_	Case=Abs|Definite=Def|Number=Sing	26	nsubj	_	_
-30	da	izan	AUX	_	Aspect=Prog|Mood=Ind|Number[abs]=Sing|Person[abs]=3	26	cop	_	SpaceAfter=No
-31	,	,	PUNCT	_	_	10	punct	_	_
-32	Asia	Asia	PROPN	_	Case=Abs|Definite=Def|Number=Sing	10	nsubj	_	SpaceAfter=No
-33	.	.	PUNCT	_	_	10	punct	_	_
+19	ilunabar[	ilunabar[	NOUN	_	_	21	nmod	_	SpaceAfter=No
+20	reko	reko	NOUN	_	_	19	flat	_	_
+21	herrialdea	herrialde	NOUN	_	Case=Abs|Definite=Def|Number=Sing	17	conj	_	SpaceAfter=No
+22	]	]	PUNCT	_	_	24	punct	_	SpaceAfter=No
+23	"	"	PUNCT	_	_	24	punct	_	_
+24	esanahiarekin	esanahi	NOUN	_	Animacy=Inan|Case=Com|Definite=Def|Number=Sing	10	obl	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	10	punct	_	_
+26	Asurekin	Asu	PROPN	_	Case=Com|Definite=Def|Number=Sing	27	obl	_	_
+27	kontrajarriz	kontrajarri	VERB	_	Case=Ins|Definite=Ind|VerbForm=Part	36	advcl	_	_
+28	"	"	PUNCT	_	_	17	punct	_	SpaceAfter=No
+29	egunsentia[	egunsentia	ADJ	_	Case=Ine|Definite=Def|Number=Sing	31	nmod	_	SpaceAfter=No
+30	ren	ra	DET	_	Case=Gen|Definite=Def|Number=Sing	31	nmod	_	_
+31	herrialdea	herrialde	NOUN	_	Case=Abs|Definite=Def|Number=Sing	17	conj	_	SpaceAfter=No
+32	]	]	PUNCT	_	_	17	punct	_	SpaceAfter=No
+33	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No
+34	,	,	PUNCT	_	_	10	punct	_	_
+35	hau	hau	DET	_	Case=Abs|Definite=Def|Number=Sing	10	nsubj	_	_
+36	da	izan	AUX	_	Aspect=Prog|Mood=Ind|Number[abs]=Sing|Person[abs]=3	35	cop	_	SpaceAfter=No
+37	,	,	PUNCT	_	_	10	punct	_	_
+38	Asia	Asia	PROPN	_	Case=Abs|Definite=Def|Number=Sing	10	nsubj	_	SpaceAfter=No
+39	.	.	PUNCT	_	_	10	punct	_	_
 
 # sent_id = 3
 # text = Eredu bera agertzen da izendapenean greziar konbentzio kartografikoan:
@@ -864,23 +870,26 @@
 9	:	:	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 4
-# text = Ἀνατολή (Anatolḗ " irtetzea", "ekialdea", eta hortik Anatolia).
+# text = Ἀνατολή (Anatolḗ "[eguzkia] irtetzea", "ekialdea", eta hortik Anatolia).
 1	Ἀνατολή	ἀνατολή	NOUN	_	_	0	root	_	_
 2	(	(	PUNCT	_	_	1	punct	_	SpaceAfter=No
 3	Anatolḗ	Anatolḗ	PROPN	_	Case=Abs|Definite=Def|Number=Sing	1	appos	_	_
-4	"	"	PUNCT	_	_	5	punct	_	_
-5	irtetzea	irten	VERB	_	Case=Abs	1	appos	_	SpaceAfter=No
-6	"	"	PUNCT	_	_	5	punct	_	SpaceAfter=No
-7	,	,	PUNCT	_	_	9	punct	_	_
-8	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No
-9	ekialdea	ekialde	NOUN	_	Case=Abs|Definite=Def|Number=Sing	1	conj	_	SpaceAfter=No
-10	"	"	PUNCT	_	_	5	punct	_	SpaceAfter=No
-11	,	,	PUNCT	_	_	1	punct	_	_
-12	eta	eta	CCONJ	_	_	14	cc	_	_
-13	hortik	hortik	ADV	_	Case=Abl	12	nmod	_	_
-14	Anatolia	Anatolia	PROPN	_	Case=Abs|Definite=Def|Number=Sing	1	conj	_	SpaceAfter=No
-15	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No
-16	.	.	PUNCT	_	_	5	punct	_	_
+4	"	"	PUNCT	_	_	8	punct	_	SpaceAfter=No
+5	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No
+6	eguzkia	eguzki	NOUN	_	Case=Abs|Definite=Def|Number=Sing	1	appos	_	SpaceAfter=No
+7	]	]	PUNCT	_	_	8	punct	_	_
+8	irtetzea	irten	VERB	_	Case=Abs	1	appos	_	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	_	_
+11	"	"	PUNCT	_	_	12	punct	_	SpaceAfter=No
+12	ekialdea	ekialde	NOUN	_	Case=Abs|Definite=Def|Number=Sing	1	conj	_	SpaceAfter=No
+13	"	"	PUNCT	_	_	8	punct	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	1	punct	_	_
+15	eta	eta	CCONJ	_	_	17	cc	_	_
+16	hortik	hortik	ADV	_	Case=Abl	15	nmod	_	_
+17	Anatolia	Anatolia	PROPN	_	Case=Abs|Definite=Def|Number=Sing	1	conj	_	SpaceAfter=No
+18	)	)	PUNCT	_	_	8	punct	_	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	_	_
 
 # sent_id = 5
 # text = Martin Litchfield Westen arabera "fonologikoki, Europaren izena eta edozein hitz semitikoren arteko lotura oso pobrea da".

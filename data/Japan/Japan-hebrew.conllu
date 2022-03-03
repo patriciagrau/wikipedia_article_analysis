@@ -6339,7 +6339,7 @@
 17	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # sent_id = 5
-# text = הגירה אינה פופולרית ביותר שכן שיעורי הפשע העולים ביפן מיוחסים לעיתים קרובות לזרים הגרים ביפן.
+# text = הגירה אינה פופולרית ביותר שכן שיעורי הפשע העולים ביפן מיוחסים לעיתים קרובות לזרים הגרים ביפן[דרוש מקור].
 1	הגירה	הגירה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	אינה	אינו	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Neg|VerbForm=Part|VerbType=Cop	3	advmod	_	_
 3	פופולרית	פופולרי	ADJ	ADJ	Gender=Fem|Number=Sing	0	root	_	_
@@ -6360,9 +6360,13 @@
 15	ל	ל	ADP	ADP	_	17	case	_	_
 16	ה_	ה	DET	DET	PronType=Art	17	det:def	_	_
 17	זרים	זר	NOUN	NOUN	Gender=Masc|Number=Plur	12	obl	_	_
-18	הגרים	הגרים	ADJ	ADJ	Gender=Masc|Number=Plur	17	amod	_	_
+18	הגרים	הגר	ADJ	ADJ	Gender=Masc|Number=Plur	17	amod	_	_
 19	ביפן	ביפן	ADV	ADV	_	18	advmod	_	SpaceAfter=No
-20	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
+20	[	[	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+21	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	17	appos	_	_
+22	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	21	compound:smixut	_	SpaceAfter=No
+23	]	]	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -9193,7 +9197,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = המחוזות הגדולים ביותר מבחינת אוכלוסייה הם: טוקיו, קנאגווה, אוסקה, אאיצ'י, סאיטאמה וצ'יבה.
+# text = המחוזות הגדולים ביותר מבחינת אוכלוסייה הם: טוקיו, קנאגאווה, אוסקה, אאיצ'י, סאיטאמה וצ'יבה.
 1-2	המחוזות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
 2	מחוזות	מחוז	NOUN	NOUN	Gender=Masc|Number=Plur	11	nsubj:cop	_	_
@@ -9212,15 +9216,17 @@
 12	_של_	של	ADP	ADP	_	13	case:gen	_	_
 13	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
 14	,	,	PUNCT	PUNCT	_	11	punct	_	_
-15	קנאגווה	קנאגבה	PROPN	PROPN	_	11	conj	_	SpaceAfter=No
-16	,	,	PUNCT	PUNCT	_	11	punct	_	_
-17	אוסקה	אוסקה	PROPN	PROPN	_	11	conj	_	SpaceAfter=No
-18	,	,	PUNCT	PUNCT	_	11	punct	_	_
-19	אאיצ'י	אאיצ'י	PROPN	PROPN	_	11	conj	_	SpaceAfter=No
-20	,	,	PUNCT	PUNCT	_	11	punct	_	_
-21	סאיטאמה	סאיטאמה	PROPN	PROPN	_	11	conj	_	_
-22	וצ'יבה	וצ'יבה	PROPN	PROPN	_	21	flat:name	_	SpaceAfter=No
-23	.	.	PUNCT	PUNCT	_	11	punct	_	_
+15-16	קנאגאווה	_	_	_	_	_	_	_	SpaceAfter=No
+15	קנא	קנא	PROPN	PROPN	_	11	conj	_	_
+16	גאווה	גאווה	PROPN	PROPN	_	15	flat:name	_	_
+17	,	,	PUNCT	PUNCT	_	11	punct	_	_
+18	אוסקה	אוסקה	PROPN	PROPN	_	11	conj	_	SpaceAfter=No
+19	,	,	PUNCT	PUNCT	_	11	punct	_	_
+20	אאיצ'י	אאיצ'י	PROPN	PROPN	_	11	conj	_	SpaceAfter=No
+21	,	,	PUNCT	PUNCT	_	11	punct	_	_
+22	סאיטאמה	סאיטאמה	PROPN	PROPN	_	11	conj	_	_
+23	וצ'יבה	וצ'יבה	PROPN	PROPN	_	22	flat:name	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
 # sent_id = 2
 # text = כולם נמצאים בהונשו, האי המרכזי ביפן.

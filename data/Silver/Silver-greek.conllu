@@ -10705,7 +10705,7 @@
 39	.	.	PUNCT	PUNCT	_	14	punct	_	_
 
 # sent_id = 4
-# text = Με προσθήκη αμμωνίας, και εφόσον υπάρχει Ag στο δείγμα, σχηματίζεται το ευδιάλυτο σύμπλοκο + από το οποίο σχηματίζεται λευκό ίζημα AgCl με οξίνιση με νιτρικό οξύ.
+# text = Με προσθήκη αμμωνίας, και εφόσον υπάρχει Ag στο δείγμα, σχηματίζεται το ευδιάλυτο σύμπλοκο [Ag(NH3)
 1	Με	με	ADP	ADP	_	2	case	_	_
 2	προσθήκη	προσθήκη	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	13	obl	_	_
 3	αμμωνίας	αμμωνία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
@@ -10723,20 +10723,28 @@
 14	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	16	det	_	_
 15	ευδιάλυτο	ευδιάλυτος	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	16	amod	_	_
 16	σύμπλοκο	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	13	nsubj:pass	_	_
-17	+	+	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	16	nmod	_	_
-18	από	από	ADP	ADP	_	20	case	_	_
-19	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
-20	οποίο	οποίος	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Rel	21	obl	_	_
-21	σχηματίζεται	σχηματίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	16	acl:relcl	_	_
-22	λευκό	λευκός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	23	amod	_	_
-23	ίζημα	ίζημα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	21	nsubj:pass	_	_
-24	AgCl	Agcl	X	X	Foreign=Yes	23	flat	_	_
-25	με	με	ADP	ADP	_	26	case	_	_
-26	οξίνιση	οξίνιση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-27	με	με	ADP	ADP	_	29	case	_	_
-28	νιτρικό	νιτρικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	29	amod	_	_
-29	οξύ	οξύ	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	26	nmod	_	SpaceAfter=No
-30	.	.	PUNCT	PUNCT	_	13	punct	_	SpacesAfter=\n
+17	[	[	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No
+18	Ag(	Ag(	X	X	Foreign=Yes	16	nmod	_	SpaceAfter=No
+19	NH3	nh3	X	X	Foreign=Yes	18	flat	_	SpaceAfter=No
+20	)	)	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = 2]+ από το οποίο σχηματίζεται λευκό ίζημα AgCl με οξίνιση με νιτρικό οξύ.
+1	2]	2]	NUM	NUM	_	0	root	_	SpaceAfter=No
+2	+	+	ADV	ADV	_	1	advmod	_	_
+3	από	από	ADP	ADP	_	5	case	_	_
+4	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+5	οποίο	οποίος	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Rel	6	obl	_	_
+6	σχηματίζεται	σχηματίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	acl:relcl	_	_
+7	λευκό	λευκός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	8	amod	_	_
+8	ίζημα	ίζημα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	6	nsubj:pass	_	_
+9	AgCl	Agcl	X	X	Foreign=Yes	8	flat	_	_
+10	με	με	ADP	ADP	_	11	case	_	_
+11	οξίνιση	οξίνιση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	8	nmod	_	_
+12	με	με	ADP	ADP	_	14	case	_	_
+13	νιτρικό	νιτρικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	14	amod	_	_
+14	οξύ	οξύ	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	11	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -11782,25 +11790,31 @@
 83	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # sent_id = 4
-# text = +4, όπως στο K2. Μικρότερο από +1, όπως Ag2F, Ag3O.
+# text = +4, όπως στο K2[AgF6].
 1	+4	+4	NUM	NUM	NumType=Card	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	PUNCT	_	6	punct	_	_
-3	όπως	όπως	ADV	ADV	_	6	case	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	όπως	όπως	ADV	ADV	_	1	advmod	_	_
 4-5	στο	_	_	_	_	_	_	_	_
 4	σ	σε	ADP	AsPpSp	_	6	case	_	_
 5	το	ο	DET	AtDf	Case=Acc|Gender=Neut|Number=Sing	6	det	_	_
-6	K2.	k2.	NOUN	NOUN	_	1	nmod	_	SpacesAfter=\n
-7	Μικρότερο	μικρός	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Neut|Number=Sing	1	amod	_	_
-8	από	από	ADP	ADP	_	9	case	_	_
-9	+1	+1	NUM	NUM	NumType=Card	7	obl	_	SpaceAfter=No
-10	,	,	PUNCT	PUNCT	_	12	punct	_	_
-11	όπως	όπως	ADV	ADV	_	12	case	_	_
-12	Ag2F	ag2f	X	X	Foreign=Yes	7	nmod	_	SpaceAfter=No
-13	,	,	PUNCT	PUNCT	_	14	punct	_	_
-14	Ag3O	Ag3o	X	X	Foreign=Yes	12	conj	_	SpaceAfter=No
-15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+6	K2[	k2[	X	X	NumType=Card	3	obl	_	SpaceAfter=No
+7	AgF6	Agf6	X	X	Foreign=Yes	6	flat	_	SpaceAfter=No
+8	]	]	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # sent_id = 5
+# text = Μικρότερο από +1, όπως Ag2F, Ag3O.
+1	Μικρότερο	μικρός	ADJ	ADJ	Case=Nom|Degree=Cmp|Gender=Neut|Number=Sing	0	root	_	_
+2	από	από	ADP	ADP	_	3	case	_	_
+3	+1	+1	NUM	NUM	NumType=Card	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	όπως	όπως	ADV	ADV	_	6	case	_	_
+6	Ag2F	ag2f	X	X	Foreign=Yes	1	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Ag3O	Ag3o	X	X	Foreign=Yes	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = 6
 # text = Αυτές οι ενώσεις είναι ελάχιστες.
 1	Αυτές	αυτός	PRON	PRON	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Dem	3	det	_	_
 2	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
@@ -11809,12 +11823,12 @@
 5	ελάχιστες	ελάχιστος	ADJ	ADJ	Case=Nom|Degree=Sup|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\s\n
 
-# sent_id = 6
+# sent_id = 7
 # text = -1.
 1	-1	-1	PUNCT	PUNCT	_	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
-# sent_id = 7
+# sent_id = 8
 # text = Παρόλο που το ανιόν Ag– δεν έχει παρατηρηθεί σε κάποια χημική ένωση, φασματοσκοπικά και ηλεκτροχημικά δεδομένα αποδεικνύουν το σχηματισμό του μέσα σε υγρή αμμωνία.
 1	Παρόλο	παρόλο	ADV	ADV	_	8	mark	_	_
 2	που	που	ADV	ADV	_	8	advmod	_	_
@@ -12840,7 +12854,7 @@
 24	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = 3
-# text = Αποτελεί πολύ ισχυρό οξειδωτικό και οξειδώνει ακόμα και το Mn(II) προς υπερμαγγανικά ανιόντα, - σε όξινο περιβάλλον.
+# text = Αποτελεί πολύ ισχυρό οξειδωτικό και οξειδώνει ακόμα και το Mn(II) προς υπερμαγγανικά ανιόντα, [MnO4]- σε όξινο περιβάλλον.
 1	Αποτελεί	αποτελώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	πολύ	πολύ	ADV	ADV	_	3	advmod	_	_
 3	ισχυρό	ισχυρός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	4	amod	_	_
@@ -12856,12 +12870,15 @@
 13	προς	προς	ADP	ADP	_	15	case	_	_
 14	υπερμαγγανικά	υπερμαγγανικός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	15	amod	_	_
 15	ανιόντα	ανιόν	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	6	obl	_	SpaceAfter=No
-16	,	,	PUNCT	PUNCT	_	20	punct	_	_
-17	-	-	PUNCT	PUNCT	_	20	punct	_	_
-18	σε	σε	ADP	ADP	_	20	case	_	_
-19	όξινο	όξινος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	20	amod	_	_
-20	περιβάλλον	περιβάλλον	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	6	obl	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+16	,	,	PUNCT	PUNCT	_	18	punct	_	_
+17	[	[	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No
+18	MnO4	mno4	X	X	Foreign=Yes	15	appos	_	SpaceAfter=No
+19	]	]	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No
+20	-	-	PUNCT	PUNCT	_	18	punct	_	_
+21	σε	σε	ADP	ADP	_	23	case	_	_
+22	όξινο	όξινος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	23	amod	_	_
+23	περιβάλλον	περιβάλλον	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	15	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = 4
 # text = Επειδή περιέχει στο κρυσταλλικό του πλέγμα τα ιόντα Ag+ και Ag3+ μπορεί να ονομαστεί και οξείδιο του αργύρου (Ι, ΙΙΙ)
@@ -13269,7 +13286,7 @@
 26	.	.	PUNCT	PUNCT	_	15	punct	_	_
 
 # sent_id = 2
-# text = Έχουν μελετηθεί όμως και σύμπλοκα με αριθμούς συναρμογής 3, όπως το 3–, με 4 αλλά και με 6.
+# text = Έχουν μελετηθεί όμως και σύμπλοκα με αριθμούς συναρμογής 3, όπως το [AgTe7]3–, με 4 αλλά και με 6.
 1	Έχουν	έχω	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
 2	μελετηθεί	μελετώ	VERB	VERB	Aspect=Perf|VerbForm=Inf|Voice=Pass	0	root	_	_
 3	όμως	όμως	CCONJ	CCONJ	_	2	cc	_	_
@@ -13282,25 +13299,26 @@
 10	,	,	PUNCT	PUNCT	_	13	punct	_	_
 11	όπως	όπως	ADV	ADV	_	13	case	_	_
 12	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
-13	3–	3–	NUM	NUM	NumType=Card	5	nmod	_	SpaceAfter=No
-14	,	,	PUNCT	PUNCT	_	16	punct	_	_
-15	με	με	ADP	ADP	_	16	case	_	_
-16	4	4	NUM	NUM	NumType=Card	13	conj	_	_
-17	αλλά	αλλά	CCONJ	CCONJ	_	20	cc	_	_
-18	και	και	CCONJ	CCONJ	_	20	cc	_	_
-19	με	με	ADP	ADP	_	20	case	_	_
-20	6	6	NUM	NUM	NumType=Card	13	conj	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	2	punct	_	_
+13	[	[	PUNCT	PUNCT	_	7	nmod	_	SpaceAfter=No
+14	AgTe7]3–	Agte7]3–	X	X	Foreign=Yes	13	flat	_	SpaceAfter=No
+15	,	,	PUNCT	PUNCT	_	17	punct	_	_
+16	με	με	ADP	ADP	_	17	case	_	_
+17	4	4	NUM	NUM	NumType=Card	13	conj	_	_
+18	αλλά	αλλά	CCONJ	CCONJ	_	21	cc	_	_
+19	και	και	CCONJ	CCONJ	_	21	cc	_	_
+20	με	με	ADP	ADP	_	21	case	_	_
+21	6	6	NUM	NUM	NumType=Card	13	conj	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # sent_id = 3
-# text = Ο Ag(I) σχηματίζει αρκετά σταθερά σύμπλοκα με οργανικές αμίνες, με την αμμωνία, όπως π.χ. + που χρησιμοποιείται ως αντιδραστήριο Tollens στην οργανική χημεία αλλά και με αλογόνα π.χ. 1−n (n = 2,3,4).
+# text = Ο Ag(I) σχηματίζει αρκετά σταθερά σύμπλοκα με οργανικές αμίνες, με την αμμωνία, όπως π.χ. [Ag(NH3)
 1	Ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Ag	Ag	X	X	Foreign=Yes	6	nsubj	_	SpaceAfter=No
 3	(	(	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
 4	I	I	X	X	Foreign=Yes	2	appos	_	SpaceAfter=No
 5	)	)	PUNCT	PUNCT	_	4	punct	_	_
 6	σχηματίζει	σχηματίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-7	αρκετά	αρκετά	ADV	ADV	_	6	advmod	_	_
+7	αρκετά	αρκετός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	9	advmod	_	_
 8	σταθερά	σταθερός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	9	amod	_	_
 9	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	6	obj	_	_
 10	με	με	ADP	ADP	_	12	case	_	_
@@ -13310,46 +13328,55 @@
 14	με	με	ADP	ADP	_	16	case	_	_
 15	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	αμμωνία	αμμωνία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	PUNCT	_	20	punct	_	_
-18	όπως	όπως	ADV	ADV	_	20	case	_	_
-19	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	20	advmod	_	_
-20	+	+	NOUN	NOUN	Abbr=Yes	16	nmod	_	_
-21	που	που	PRON	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Rel	22	nsubj:pass	_	_
-22	χρησιμοποιείται	χρησιμοποιώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	20	acl:relcl	_	_
-23	ως	ως	ADV	ADV	_	24	case	_	_
-24	αντιδραστήριο	αντιδραστήριο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	22	obl	_	_
-25	Tollens	Tollens	X	X	Foreign=Yes	24	flat	_	_
-26-27	στην	_	_	_	_	_	_	_	_
-26	σ	σε	ADP	AsPpSp	_	29	case	_	_
-27	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	29	det	_	_
-28	οργανική	οργανικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	29	amod	_	_
-29	χημεία	χημεία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	22	obl	_	_
-30	αλλά	αλλά	CCONJ	CCONJ	_	33	cc	_	_
-31	και	και	CCONJ	CCONJ	_	33	cc	_	_
-32	με	με	ADP	ADP	_	33	case	_	_
-33	αλογόνα	αλογόνο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	20	conj	_	_
-34	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	33	nmod	_	_
-35	1−n	1−n	NUM	NUM	NumType=Card	33	nmod	_	_
-36	(	(	PUNCT	PUNCT	_	37	punct	_	SpaceAfter=No
-37	n	n	X	X	Foreign=Yes	35	appos	_	_
-38	=	=	NOUN	NOUN	_	37	nmod	_	_
-39	2,	2,	NUM	NUM	NumType=Card	37	nmod	_	SpaceAfter=No
-40	3,4	3,4	NUM	NUM	NumType=Card	37	nmod	_	SpaceAfter=No
-41	)	)	PUNCT	PUNCT	_	37	punct	_	SpaceAfter=No
-42	.	.	PUNCT	PUNCT	_	6	punct	_	_
+17	,	,	PUNCT	PUNCT	_	21	punct	_	_
+18	όπως	όπως	ADV	ADV	_	21	case	_	_
+19	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	16	nmod	_	_
+20	[	[	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+21	Ag(	Ag(	X	X	Foreign=Yes	16	nmod	_	SpaceAfter=No
+22	NH3	nh3	X	X	Foreign=Yes	21	flat	_	SpaceAfter=No
+23	)	)	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No
 
 # sent_id = 4
-# text = Σημαντικά σύμπλοκα, από εμπορικής άποψης, είναι τα θειο-θειικά που χρησιμοποιούνται στη «σταθεροποίηση» των φωτογραφικών φιλμ όπως π.χ. το 3−.Σύμπλοκα του Ag(II) περιλαμβάνουν το +2 και το +2 όπου ο υποκαταστάτης py είναι η πυριδίνη, C5H5N και ο υποκαταστάτης bipy είναι η 2,2'-διπυριδίνη, (C5H4N)2.
+# text = 2]+ που χρησιμοποιείται ως αντιδραστήριο Tollens στην οργανική χημεία αλλά και με αλογόνα π.χ. [AgXn]1−n (n = 2,3,4).
+1	2]	2]	NUM	NUM	NumType=Card	2	nmod	_	SpaceAfter=No
+2	+	+	ADV	NUM	_	0	root	_	_
+3	που	που	PRON	PRON	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Rel	4	nsubj:pass	_	_
+4	χρησιμοποιείται	χρησιμοποιώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	acl:relcl	_	_
+5	ως	ως	ADV	ADV	_	6	case	_	_
+6	αντιδραστήριο	αντιδραστήριο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	4	obl	_	_
+7	Tollens	Tollens	X	X	Foreign=Yes	6	flat	_	_
+8-9	στην	_	_	_	_	_	_	_	_
+8	σ	σε	ADP	AsPpSp	_	11	case	_	_
+9	την	ο	DET	AtDf	Case=Acc|Gender=Fem|Number=Sing	11	det	_	_
+10	οργανική	οργανικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	11	amod	_	_
+11	χημεία	χημεία	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	6	nmod	_	_
+12	αλλά	αλλά	CCONJ	CCONJ	_	15	cc	_	_
+13	και	και	CCONJ	CCONJ	_	15	cc	_	_
+14	με	με	ADP	ADP	_	15	case	_	_
+15	αλογόνα	αλογόνο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	6	conj	_	_
+16	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	15	advmod	_	_
+17	[	[	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No
+18	AgXn]1−n	Agxn]1−n	X	X	Foreign=Yes	15	nmod	_	_
+19	(	(	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+20	n	n	X	X	Foreign=Yes	18	appos	_	_
+21	=	=	NOUN	NOUN	_	20	flat	_	_
+22	2,	2,	NUM	NUM	NumType=Card	20	punct	_	SpaceAfter=No
+23	3,4	3,4	NUM	NUM	NumType=Card	20	nmod	_	SpaceAfter=No
+24	)	)	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+25	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+# sent_id = 5
+# text = Σημαντικά σύμπλοκα, από εμπορικής άποψης, είναι τα θειο-θειικά που χρησιμοποιούνται στη «σταθεροποίηση» των φωτογραφικών φιλμ όπως π.χ. το [Ag(S2O3)2]3−.Σύμπλοκα του Ag(II) περιλαμβάνουν το [Ag(py)4]+2 και το [Ag(bipy)2]+2 όπου ο υποκαταστάτης py είναι η πυριδίνη, C5H5N και ο υποκαταστάτης bipy είναι η 2,2'-διπυριδίνη, (C5H4N)2.
 1	Σημαντικά	σημαντικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	2	amod	_	_
-2	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	29	nsubj	_	SpaceAfter=No
+2	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	31	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PUNCT	_	6	punct	_	_
 4	από	από	ADP	ADP	_	6	case	_	_
 5	εμπορικής	εμπορικός	ADJ	ADJ	Case=Gen|Gender=Fem|Number=Sing	6	amod	_	_
 6	άποψης	άποψη	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	PUNCT	_	6	punct	_	_
-8	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	29	cop	_	_
+8	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	10	cop	_	_
 9	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	10	det	_	_
-10	θειο-θειικά	θειο-θειικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	29	nsubj	_	_
+10	θειο-θειικά	θειο-θειικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
 11	που	που	PRON	PRON	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Rel	12	nsubj:pass	_	_
 12	χρησιμοποιούνται	χρησιμοποιώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	10	acl:relcl	_	_
 13-14	στη	_	_	_	_	_	_	_	_
@@ -13360,41 +13387,47 @@
 17	»	»	PUNCT	PUNCT	_	16	punct	_	_
 18	των	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	20	det	_	_
 19	φωτογραφικών	φωτογραφικός	ADJ	ADJ	Case=Gen|Gender=Neut|Number=Plur	20	amod	_	_
-20	φιλμ	φιλμς	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Plur	16	nmod	_	_
-21	όπως	όπως	ADV	ADV	_	24	case	_	_
-22	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	24	advmod	_	_
-23	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	24	det	_	_
-24	3−.Σύμπλοκα	3−.σύμπλοκα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	12	nsubj:pass	_	_
-25	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	26	det	_	_
-26	Ag(	Ag(	X	X	Foreign=Yes	24	nmod	_	SpaceAfter=No
-27	II	II	X	X	Foreign=Yes	26	flat	_	SpaceAfter=No
-28	)	)	PUNCT	PUNCT	_	24	punct	_	_
-29	περιλαμβάνουν	περιλαμβάνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-30	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	31	det	_	_
-31	+2	+2	NUM	NUM	NumType=Card	29	obj	_	_
-32	και	και	CCONJ	CCONJ	_	34	cc	_	_
-33	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	34	det	_	_
-34	+2	+2	NUM	NUM	NumType=Card	31	conj	_	_
-35	όπου	όπου	ADV	ADV	_	41	advmod	_	_
-36	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	υποκαταστάτης	υποκαταστάτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	41	nsubj	_	_
-38	py	py	X	X	Foreign=Yes	37	nmod	_	_
-39	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	41	cop	_	_
-40	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	πυριδίνη	πυριδίνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	34	acl:relcl	_	SpaceAfter=No
-42	,	,	PUNCT	PUNCT	_	43	punct	_	_
-43	C5H5N	c5h5n	NUM	NUM	NumType=Card	41	conj	_	_
-44	και	και	CCONJ	CCONJ	_	46	cc	_	_
-45	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
-46	υποκαταστάτης	υποκαταστάτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	41	conj	_	_
-47	bipy	bipy	X	X	Foreign=Yes	46	flat	_	_
-48	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	50	cop	_	_
-49	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
-50	2,2'-διπυριδίνη	2,2'-διπυριδίνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	46	nsubj	_	SpaceAfter=No
-51	,	,	PUNCT	PUNCT	_	53	punct	_	_
-52	(	(	PUNCT	PUNCT	_	53	punct	_	SpaceAfter=No
-53	C5H4N)2	c5h4n)2	NUM	NUM	NumType=Card	50	appos	_	SpaceAfter=No
-54	.	.	PUNCT	PUNCT	_	29	punct	_	SpacesAfter=\n
+20	φιλμ	φιλμ	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Plur	16	nmod	_	_
+21	όπως	όπως	ADV	ADV	_	22	case	_	_
+22	π.χ.	π.χ.	ADV	ADV	Abbr=Yes	20	advmod	_	_
+23	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	26	det	_	_
+24	[	[	PUNCT	PUNCT	_	26	punct	_	SpaceAfter=No
+25	Ag(	Ag(	X	X	Foreign=Yes	26	nmod	_	SpaceAfter=No
+26	S2O3)2]3−.Σύμπλοκα	s2o3)2]3−.σύμπλοκα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	34	flat	_	_
+27	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	28	det	_	_
+28	Ag(	Ag(	X	X	Foreign=Yes	26	nmod	_	SpaceAfter=No
+29	II	II	X	X	Foreign=Yes	28	flat	_	SpaceAfter=No
+30	)	)	PUNCT	PUNCT	_	26	punct	_	_
+31	περιλαμβάνουν	περιλαμβάνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl:relcl	_	_
+32	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	34	det	_	_
+33	[	[	PUNCT	PUNCT	_	34	punct	_	SpaceAfter=No
+34	Ag(	Ag(	X	X	Foreign=Yes	31	obj	_	SpaceAfter=No
+35	py)4]+2	py)4]+2	NUM	NUM	NumType=Card	34	nmod	_	_
+36	και	και	CCONJ	CCONJ	_	39	cc	_	_
+37	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	39	det	_	_
+38	[	[	PUNCT	PUNCT	_	39	punct	_	SpaceAfter=No
+39	Ag(	Ag(	X	X	Foreign=Yes	34	conj	_	SpaceAfter=No
+40	bipy)2]+2	bipy)2]+2	NUM	NUM	NumType=Card	39	nmod	_	_
+41	όπου	όπου	ADV	ADV	_	47	advmod	_	_
+42	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
+43	υποκαταστάτης	υποκαταστάτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	47	nsubj	_	_
+44	py	py	NUM	NUM	Foreign=Yes	43	nmod	_	_
+45	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	47	cop	_	_
+46	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
+47	πυριδίνη	πυριδίνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	39	acl:relcl	_	SpaceAfter=No
+48	,	,	PUNCT	PUNCT	_	49	punct	_	_
+49	C5H5N	c5h5n	NUM	NUM	NumType=Card	47	conj	_	_
+50	και	και	CCONJ	CCONJ	_	52	cc	_	_
+51	ο	ο	DET	DET	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
+52	υποκαταστάτης	υποκαταστάτης	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	47	conj	_	_
+53	bipy	bipy	X	X	Foreign=Yes	52	nmod	_	_
+54	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	56	cop	_	_
+55	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	_	_
+56	2,2'-διπυριδίνη	2,2'-διπυριδίνη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	52	conj	_	SpaceAfter=No
+57	,	,	PUNCT	PUNCT	_	59	punct	_	_
+58	(	(	PUNCT	PUNCT	_	59	punct	_	SpaceAfter=No
+59	C5H4N)2	c5h4n)2	NUM	NUM	NumType=Card	56	appos	_	SpaceAfter=No
+60	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -13402,7 +13435,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ελάχιστα σύμπλοκα του Ag(III) είναι γνωστά όπως το παραμαγνητικό οκταεδρικό CsK2AgF6, το διαμαγνητικό επίπεδο τετραγωνικό Κ και τα ένυδρα K6H·10H2Ο και Na6H3·18H2O.
+# text = Ελάχιστα σύμπλοκα του Ag(III) είναι γνωστά όπως το παραμαγνητικό οκταεδρικό CsK2AgF6, το διαμαγνητικό επίπεδο τετραγωνικό Κ[AgF4] και τα ένυδρα K6H[Ag(IO6)2]·10H2Ο και Na6H3[Ag(TeO6)2]·18H2O.
 1	Ελάχιστα	λίγο	ADJ	ADJ	Case=Nom|Degree=Sup|Gender=Neut|Number=Plur	2	amod	_	_
 2	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	8	nsubj	_	_
 3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -13421,14 +13454,22 @@
 16	διαμαγνητικό	διαμαγνητικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	17	amod	_	_
 17	επίπεδο	επίπεδο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	13	conj	_	_
 18	τετραγωνικό	τετραγωνικός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	19	amod	_	_
-19	Κ	κ	NOUN	NOUN	Abbr=Yes	17	nmod	_	_
-20	και	και	CCONJ	CCONJ	_	22	cc	_	_
-21	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	22	det	_	_
-22	ένυδρα	ένυδρο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	13	conj	_	_
-23	K6H·10H2Ο	k6h·10h2ο	NOUN	NOUN	NumType=Card	22	nmod	_	_
-24	και	και	CCONJ	CCONJ	_	25	cc	_	_
-25	Na6H3·18H2O	Na6h3·18h2o	NUM	NUM	NumType=Card	23	conj	_	SpaceAfter=No
-26	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+19	Κ[	κ[	NOUN	NOUN	Abbr=Yes	17	nmod	_	SpaceAfter=No
+20	AgF4	agf4	X	X	Foreign=Yes	19	flat	_	SpaceAfter=No
+21	]	]	PUNCT	PUNCT	_	17	punct	_	_
+22	και	και	CCONJ	CCONJ	_	24	cc	_	_
+23	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	24	det	_	_
+24	ένυδρα	ένυδρο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	13	conj	_	_
+25	K6H[	K6H[	X	X	Foreign=Yes	24	flat	_	SpaceAfter=No
+26	Ag(	Ag(	X	X	Foreign=Yes	25	flat	_	SpaceAfter=No
+27	IO6)2]	io6)2]	NOUN	NOUN	NumType=Card	25	flat	_	SpaceAfter=No
+28	·10H2Ο	·10h2ο	NUM	NUM	NumType=Card	25	nmod	_	_
+29	και	και	CCONJ	CCONJ	_	30	cc	_	_
+30	Na6H3[	na6h3[	NUM	NUM	NumType=Card	13	conj	_	SpaceAfter=No
+31	Ag(	Ag(	X	X	Foreign=Yes	30	flat	_	SpaceAfter=No
+32	TeO6)2]	teo6)2]	NOUN	NUM	NumType=Card	30	nmod	_	SpaceAfter=No
+33	·18H2O	·18h2o	NUM	NUM	NumType=Card	30	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -13458,35 +13499,39 @@
 19	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # sent_id = 2
-# text = Έτσι, τα σύμπλοκα Ag και Ag μπορούν να παρασκευαστούν μέσα σε υγρό φθοριούχο βρώμιο (BrF3) απ' ευθείας από τα στοιχεία τους.
-1	Έτσι	έτσι	ADV	ADV	_	8	advmod	_	SpaceAfter=No
+# text = Έτσι, τα σύμπλοκα Ag[SbF6] και Ag[AuF4] μπορούν να παρασκευαστούν μέσα σε υγρό φθοριούχο βρώμιο (BrF3) απ' ευθείας από τα στοιχεία τους.
+1	Έτσι	έτσι	ADV	ADV	_	12	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PUNCT	_	1	punct	_	_
 3	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	4	det	_	_
-4	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	8	nsubj	_	_
-5	Ag	Ag	X	X	Foreign=Yes	4	flat	_	_
-6	και	και	CCONJ	CCONJ	_	7	cc	_	_
-7	Ag	Ag	X	X	Foreign=Yes	5	conj	_	_
-8	μπορούν	μπορώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-9	να	να	AUX	AUX	_	10	aux	_	_
-10	παρασκευαστούν	παρασκευάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Pass	8	xcomp	_	_
-11	μέσα	μέσα	ADV	ADV	_	10	advmod	_	_
-12	σε	σε	ADP	ADP	_	15	case	_	_
-13	υγρό	υγρός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	15	amod	_	_
-14	φθοριούχο	φθοριούχος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	15	amod	_	_
-15	βρώμιο	βρώμιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	11	obl	_	_
-16	(	(	PUNCT	PUNCT	_	17	punct	_	SpaceAfter=No
-17	BrF3	brf3	X	X	Foreign=Yes	15	appos	_	SpaceAfter=No
-18	)	)	PUNCT	PUNCT	_	17	punct	_	_
-19	απ'	από	ADP	ADP	_	20	case	_	_
-20	ευθείας	ευθεία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	10	obl	_	_
-21	από	από	ADP	ADP	_	23	case	_	_
-22	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	23	det	_	_
-23	στοιχεία	στοιχείο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	10	obl	_	_
-24	τους	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	nmod	_	SpaceAfter=No
-25	.	.	PUNCT	PUNCT	_	8	punct	_	_
+4	σύμπλοκα	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	12	nsubj	_	_
+5	Ag[	Ag[	X	X	Foreign=Yes	4	flat	_	SpaceAfter=No
+6	SbF6	Sbf6	X	X	Foreign=Yes	4	flat	_	SpaceAfter=No
+7	]	]	PUNCT	PUNCT	_	5	punct	_	_
+8	και	και	CCONJ	CCONJ	_	9	cc	_	_
+9	Ag[	Ag[	X	X	Foreign=Yes	4	conj	_	SpaceAfter=No
+10	AuF4	Auf4	X	X	Foreign=Yes	9	flat	_	SpaceAfter=No
+11	]	]	PUNCT	PUNCT	_	9	punct	_	_
+12	μπορούν	μπορώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	να	να	AUX	AUX	_	14	aux	_	_
+14	παρασκευαστούν	παρασκευάζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Pass	12	xcomp	_	_
+15	μέσα	μέσα	ADV	ADV	_	14	advmod	_	_
+16	σε	σε	ADP	ADP	_	19	case	_	_
+17	υγρό	υγρός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	19	amod	_	_
+18	φθοριούχο	φθοριούχος	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	19	amod	_	_
+19	βρώμιο	βρώμιο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	15	obl	_	_
+20	(	(	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+21	BrF3	brf3	X	X	Foreign=Yes	19	appos	_	SpaceAfter=No
+22	)	)	PUNCT	PUNCT	_	21	punct	_	_
+23	απ'	από	ADP	ADP	_	24	case	_	_
+24	ευθείας	ευθεία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	14	obl	_	_
+25	από	από	ADP	ADP	_	27	case	_	_
+26	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	27	det	_	_
+27	στοιχεία	στοιχείο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	14	obl	_	_
+28	τους	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	27	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
 # sent_id = 3
-# text = Το φθόριο προφανώς προέρχεται από το διαλύτη: Ag + Sb → Ag και Ag + Au → Ag.
+# text = Το φθόριο προφανώς προέρχεται από το διαλύτη: Ag + Sb → Ag[SbF6] και Ag + Au → Ag[AuF4].
 1	Το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
 2	φθόριο	φθόριο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
 3	προφανώς	προφανώς	ADV	ADV	_	4	advmod	_	_
@@ -13496,20 +13541,24 @@
 7	διαλύτη	διαλύτη	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	4	obl	_	SpaceAfter=No
 8	:	:	PUNCT	PUNCT	_	7	punct	_	_
 9	Ag	Ag	X	X	Foreign=Yes	7	appos	_	_
-10	+	+	PUNCT	PUNCT	_	11	punct	_	_
-11	Sb	Sb	X	X	Foreign=Yes	9	conj	_	_
+10	+	+	ADP	ADP	_	11	case	_	_
+11	Sb	Sb	X	X	Foreign=Yes	9	nmod	_	_
 12	→	→	ADP	ADP	_	13	case	_	_
-13	Ag	Ag	X	X	Foreign=Yes	9	conj	_	_
-14	και	και	CCONJ	CCONJ	_	15	cc	_	_
-15	Ag	Ag	X	X	Foreign=Yes	9	conj	_	_
-16	+	+	X	X	Foreign=Yes	15	punct	_	_
-17	Au	Au	X	X	Foreign=Yes	15	flat	_	_
-18	→	→	ADP	ADP	_	19	case	_	_
-19	Ag	Ag	X	X	Foreign=Yes	15	nmod	_	SpaceAfter=No
-20	.	.	PUNCT	PUNCT	_	4	punct	_	_
+13	Ag[	Ag[	X	X	Foreign=Yes	9	nmod	_	SpaceAfter=No
+14	SbF6	Sbf6	X	X	Foreign=Yes	13	flat	_	SpaceAfter=No
+15	]	]	PUNCT	PUNCT	_	13	punct	_	_
+16	και	και	CCONJ	CCONJ	_	17	cc	_	_
+17	Ag	Ag	X	X	Foreign=Yes	9	conj	_	_
+18	+	+	X	X	Foreign=Yes	17	flat	_	_
+19	Au	Au	X	X	Foreign=Yes	17	flat	_	_
+20	→	→	ADP	ADP	_	21	case	_	_
+21	Ag[	Ag[	X	X	Foreign=Yes	17	orphan	_	SpaceAfter=No
+22	AuF4	Auf4	X	X	Foreign=Yes	21	flat	_	SpaceAfter=No
+23	]	]	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 4
-# text = Αν χρησιμοποιηθεί ως διαλύτης αμμωνία σε υπερκρίσιμες συνθήκες (θερμοκρασία 133,44 °C και πίεση 11,28 MPa) μπορεί να σχηματιστεί το άλας K2Ag6S4 από την αντίδραση K2S4 και Ag αλλά και το σύμπλοκο από Yb, Ag και S8.
+# text = Αν χρησιμοποιηθεί ως διαλύτης αμμωνία σε υπερκρίσιμες συνθήκες (θερμοκρασία 133,44 °C και πίεση 11,28 MPa) μπορεί να σχηματιστεί το άλας K2Ag6S4 από την αντίδραση K2S4 και Ag αλλά και το σύμπλοκο [Yb(NH3)9][Ag(S4)2] από Yb, Ag και S8.
 1	Αν	αν	SCONJ	SCONJ	_	2	mark	_	_
 2	χρησιμοποιηθεί	χρησιμοποιώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	18	advcl	_	_
 3	ως	ως	ADV	ADV	_	5	case	_	_
@@ -13531,7 +13580,7 @@
 19	να	να	AUX	AUX	_	20	aux	_	_
 20	σχηματιστεί	σχηματίζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	18	csubj	_	_
 21	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
-22	άλας	άλας	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	20	nsubj:pass	_	_
+22	άλας	άλας	PRON	PRON	Case=Nom|Gender=Neut|Number=Sing	20	nsubj:pass	_	_
 23	K2Ag6S4	K2ag6s4	X	X	Foreign=Yes	22	flat	_	_
 24	από	από	ADP	ADP	_	26	case	_	_
 25	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
@@ -13542,14 +13591,23 @@
 30	αλλά	αλλά	CCONJ	CCONJ	_	33	cc	_	_
 31	και	και	CCONJ	CCONJ	_	33	cc	_	_
 32	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	33	det	_	_
-33	σύμπλοκο	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	26	conj	_	SpacesAfter=\s\s
-34	από	από	ADP	ADP	_	35	case	_	_
-35	Yb	yb	NUM	NUM	Foreign=Yes	33	nmod	_	SpaceAfter=No
-36	,	,	PUNCT	PUNCT	_	37	punct	_	_
-37	Ag	Ag	X	X	Foreign=Yes	35	conj	_	_
-38	και	και	CCONJ	CCONJ	_	39	cc	_	_
-39	S8	s8	NUM	NUM	NumType=Card	35	conj	_	SpaceAfter=No
-40	.	.	PUNCT	PUNCT	_	18	punct	_	SpacesAfter=\n
+33	σύμπλοκο	σύμπλοκο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	26	conj	_	_
+34	[	[	PUNCT	PUNCT	_	35	punct	_	SpaceAfter=No
+35	Yb(	yb(	X	X	Foreign=Yes	33	nmod	_	SpaceAfter=No
+36	NH3	nh3	X	X	Foreign=Yes	35	flat	_	SpaceAfter=No
+37	)	)	PUNCT	PUNCT	_	35	punct	_	SpaceAfter=No
+38	9]	9]	NUM	NUM	NumType=Card	33	nmod	_	SpaceAfter=No
+39	[	[	PUNCT	PUNCT	_	40	punct	_	SpaceAfter=No
+40	Ag(	Ag(	X	X	Foreign=Yes	33	nmod	_	SpaceAfter=No
+41	S4)2	s4)2	NUM	NUM	NumType=Card	40	nmod	_	SpaceAfter=No
+42	]	]	PUNCT	PUNCT	_	40	punct	_	_
+43	από	από	ADP	ADP	_	44	case	_	_
+44	Yb	yb	NUM	NUM	Foreign=Yes	33	nmod	_	SpaceAfter=No
+45	,	,	PUNCT	PUNCT	_	46	punct	_	_
+46	Ag	Ag	X	X	Foreign=Yes	44	conj	_	_
+47	και	και	CCONJ	CCONJ	_	48	cc	_	_
+48	S8	s8	NUM	NUM	NumType=Card	44	conj	_	SpaceAfter=No
+49	.	.	PUNCT	PUNCT	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830

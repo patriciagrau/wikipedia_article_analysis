@@ -2626,7 +2626,15 @@
 41	numeri	numero	NOUN	S	Gender=Masc|Number=Plur	39	nmod	_	_
 42	IP	IP	PROPN	SP	_	41	nmod	_	_
 43	indirizzabili	indirizzabile	ADJ	A	Number=Plur	41	amod	_	SpaceAfter=No
-44	.	.	PUNCT	FS	_	9	punct	_	SpacesAfter=\n
+44	.	.	PUNCT	FS	_	9	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = [Oggi quando?]
+1	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
+2	Oggi	oggi	ADV	B	_	3	advmod	_	_
+3	quando	quando	ADV	B	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+5	]	]	PUNCT	FB	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = italian-isdt-ud-2.6-200830
@@ -7929,60 +7937,64 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In statistica e informatica, la locuzione inglese big data ("grandi dati", o in italiano megadati) indica genericamente una raccolta di dati informativi così estesa in termini di volume, velocità e varietà da richiedere tecnologie e metodi analitici specifici per l'estrazione di valore o conoscenza.
+# text = In statistica e informatica, la locuzione inglese big data ("grandi [masse di] dati", o in italiano megadati) indica genericamente una raccolta di dati informativi così estesa in termini di volume, velocità e varietà da richiedere tecnologie e metodi analitici specifici per l'estrazione di valore o conoscenza.
 1	In	in	ADP	E	_	2	case	_	_
-2	statistica	statistica	NOUN	S	Gender=Fem|Number=Sing	22	obl	_	_
+2	statistica	statistica	NOUN	S	Gender=Fem|Number=Sing	26	obl	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
 4	informatica	informatica	NOUN	S	Gender=Fem|Number=Sing	2	conj	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	2	punct	_	_
 6	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	locuzione	locuzione	NOUN	S	Gender=Fem|Number=Sing	22	nsubj	_	_
+7	locuzione	locuzione	NOUN	S	Gender=Fem|Number=Sing	26	nsubj	_	_
 8	inglese	inglese	ADJ	A	Number=Sing	7	amod	_	_
 9	big	big	ADJ	A	_	10	amod	_	_
 10	data	data	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	_
-11	(	(	PUNCT	FB	_	14	punct	_	SpaceAfter=No
-12	"	"	PUNCT	FB	_	14	punct	_	SpaceAfter=No
-13	grandi	grande	ADJ	A	Number=Plur	14	amod	_	SpacesAfter=\s\s
-14	dati	dato	NOUN	S	Gender=Masc|Number=Plur	7	appos	_	SpaceAfter=No
-15	"	"	PUNCT	FB	_	14	punct	_	SpaceAfter=No
-16	,	,	PUNCT	FF	_	20	punct	_	_
-17	o	o	CCONJ	CC	_	20	cc	_	_
-18	in	in	ADP	E	_	19	case	_	_
-19	italiano	italiano	NOUN	S	Gender=Masc|Number=Sing	20	obl	_	_
-20	megadati	megadato	VERB	V	Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No
-21	)	)	PUNCT	FB	_	14	punct	_	_
-22	indica	indicare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-23	genericamente	genericamente	ADV	B	_	22	advmod	_	_
-24	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	raccolta	raccolta	NOUN	S	Gender=Fem|Number=Sing	22	obj	_	_
-26	di	di	ADP	E	_	27	case	_	_
-27	dati	dato	NOUN	S	Gender=Masc|Number=Plur	25	nmod	_	_
-28	informativi	informativo	ADJ	A	Gender=Masc|Number=Plur	27	amod	_	_
-29	così	così	ADV	B	_	30	advmod	_	_
-30	estesa	estendere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	27	acl	_	_
-31	in	in	ADP	E	_	32	case	_	_
-32	termini	termine	NOUN	S	Gender=Masc|Number=Plur	30	obl	_	_
-33	di	di	ADP	E	_	34	case	_	_
-34	volume	volume	NOUN	S	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
-35	,	,	PUNCT	FF	_	36	punct	_	_
-36	velocità	velocità	NOUN	S	Gender=Fem	34	conj	_	_
-37	e	e	CCONJ	CC	_	38	cc	_	_
-38	varietà	varietà	NOUN	S	Gender=Fem	34	conj	_	_
-39	da	da	ADP	E	_	40	mark	_	_
-40	richiedere	richiedere	VERB	V	VerbForm=Inf	30	advcl	_	_
-41	tecnologie	tecnologia	NOUN	S	Gender=Fem|Number=Plur	40	obj	_	_
-42	e	e	CCONJ	CC	_	43	cc	_	_
-43	metodi	metodo	NOUN	S	Gender=Masc|Number=Plur	41	conj	_	_
-44	analitici	analitico	ADJ	A	Gender=Masc|Number=Plur	43	amod	_	_
-45	specifici	specifico	ADJ	A	Gender=Masc|Number=Plur	43	amod	_	_
-46	per	per	ADP	E	_	48	case	_	_
-47	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	48	det	_	SpaceAfter=No
-48	estrazione	estrazione	NOUN	S	Gender=Fem|Number=Sing	43	nmod	_	_
-49	di	di	ADP	E	_	50	case	_	_
-50	valore	valore	NOUN	S	Gender=Masc|Number=Sing	48	nmod	_	_
-51	o	o	CCONJ	CC	_	52	cc	_	_
-52	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	50	conj	_	SpaceAfter=No
-53	.	.	PUNCT	FS	_	22	punct	_	_
+11	(	(	PUNCT	FB	_	15	punct	_	SpaceAfter=No
+12	"	"	PUNCT	FB	_	15	punct	_	SpaceAfter=No
+13	grandi	grande	ADJ	A	Number=Plur	15	amod	_	_
+14	[	[	PUNCT	FB	_	15	punct	_	SpaceAfter=No
+15	masse	massa	NOUN	S	Gender=Fem|Number=Plur	7	appos	_	_
+16	di	di	ADP	E	_	18	case	_	SpaceAfter=No
+17	]	]	PUNCT	FB	_	15	punct	_	_
+18	dati	dato	NOUN	S	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No
+19	"	"	PUNCT	FB	_	15	punct	_	SpaceAfter=No
+20	,	,	PUNCT	FF	_	24	punct	_	_
+21	o	o	CCONJ	CC	_	24	cc	_	_
+22	in	in	ADP	E	_	23	case	_	_
+23	italiano	italiano	NOUN	S	Gender=Masc|Number=Sing	24	obl	_	_
+24	megadati	megadato	VERB	V	Gender=Masc|Number=Plur	15	conj	_	SpaceAfter=No
+25	)	)	PUNCT	FB	_	15	punct	_	_
+26	indica	indicare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+27	genericamente	genericamente	ADV	B	_	26	advmod	_	_
+28	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+29	raccolta	raccolta	NOUN	S	Gender=Fem|Number=Sing	26	obj	_	_
+30	di	di	ADP	E	_	31	case	_	_
+31	dati	dato	NOUN	S	Gender=Masc|Number=Plur	29	nmod	_	_
+32	informativi	informativo	ADJ	A	Gender=Masc|Number=Plur	31	amod	_	_
+33	così	così	ADV	B	_	34	advmod	_	_
+34	estesa	estendere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_
+35	in	in	ADP	E	_	36	case	_	_
+36	termini	termine	NOUN	S	Gender=Masc|Number=Plur	34	obl	_	_
+37	di	di	ADP	E	_	38	case	_	_
+38	volume	volume	NOUN	S	Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No
+39	,	,	PUNCT	FF	_	40	punct	_	_
+40	velocità	velocità	NOUN	S	Gender=Fem	38	conj	_	_
+41	e	e	CCONJ	CC	_	42	cc	_	_
+42	varietà	varietà	NOUN	S	Gender=Fem	38	conj	_	_
+43	da	da	ADP	E	_	44	mark	_	_
+44	richiedere	richiedere	VERB	V	VerbForm=Inf	34	advcl	_	_
+45	tecnologie	tecnologia	NOUN	S	Gender=Fem|Number=Plur	44	obj	_	_
+46	e	e	CCONJ	CC	_	47	cc	_	_
+47	metodi	metodo	NOUN	S	Gender=Masc|Number=Plur	45	conj	_	_
+48	analitici	analitico	ADJ	A	Gender=Masc|Number=Plur	47	amod	_	_
+49	specifici	specifico	ADJ	A	Gender=Masc|Number=Plur	47	amod	_	_
+50	per	per	ADP	E	_	52	case	_	_
+51	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	52	det	_	SpaceAfter=No
+52	estrazione	estrazione	NOUN	S	Gender=Fem|Number=Sing	47	nmod	_	_
+53	di	di	ADP	E	_	54	case	_	_
+54	valore	valore	NOUN	S	Gender=Masc|Number=Sing	52	nmod	_	_
+55	o	o	CCONJ	CC	_	56	cc	_	_
+56	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	54	conj	_	SpaceAfter=No
+57	.	.	PUNCT	FS	_	26	punct	_	_
 
 # sent_id = 2
 # text = Il termine è utilizzato dunque in riferimento alla capacità (propria della scienza dei dati) di analizzare ovvero estrapolare e mettere in relazione un'enorme mole di dati eterogenei, strutturati e non strutturati (grazie a sofisticati metodi statistici e informatici di elaborazione), allo scopo di scoprire i legami tra fenomeni diversi (ad esempio correlazioni) e prevedere quelli futuri.

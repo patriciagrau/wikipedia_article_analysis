@@ -295,14 +295,14 @@
 18	.	.	PUNCT	PERIOD	_	2	punct	_	_
 
 # sent_id = 6
-# text = Așa cum în spațiul eterat se ține vântul puternic, suflând peste tot, astfel să știți că în mine se țin toate existențele.
+# text = Așa cum în spațiul eterat se ține vântul puternic, suflând peste tot, astfel să știți că în mine se țin toate existențele.[necesită citare].
 1	Așa	așa	ADV	Rgp	Degree=Pos	7	advmod	_	_
 2	cum	cum	ADV	Rw	PronType=Int,Rel	1	fixed	_	_
 3	în	în	ADP	Spsa	AdpType=Prep|Case=Acc	4	case	_	_
 4	spațiul	spațiu	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	7	obl	_	_
 5	eterat	eterat	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 6	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	7	expl:pv	_	_
-7	ține	ține	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	ține	ține	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
 8	vântul	vânt	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	7	nsubj	_	_
 9	puternic	puternic	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
 10	,	,	PUNCT	COMMA	_	11	punct	_	_
@@ -312,18 +312,18 @@
 14	,	,	PUNCT	COMMA	_	11	punct	_	_
 15	astfel	astfel	ADV	Rgp	Degree=Pos	17	advmod	_	_
 16	să	să	PART	Qs	Mood=Sub	17	mark	_	_
-17	știți	ști	VERB	Vmip2p	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	conj	_	_
+17	știți	ști	VERB	Vmip2p	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 18	că	că	SCONJ	Csssp	Polarity=Pos	22	mark	_	_
 19	în	în	ADP	Spsa	AdpType=Prep|Case=Acc	20	case	_	_
 20	mine	eu	PRON	Pp1-sa--------s	Case=Acc|Number=Sing|Person=1|PronType=Prs|Strength=Strong	22	obl	_	_
 21	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	22	expl:pv	_	_
 22	țin	ține	VERB	Vmip3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
 23	toate	tot	DET	Di3fpr	Case=Acc,Nom|Gender=Fem|Number=Plur|Person=3|PronType=Ind	24	det	_	_
-24	existențele.	existențele.	NOUN	Ncfpry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Plur	22	nsubj	_	SpaceAfter=No
-
-# sent_id = 7
-# text = .
-1	.	.	PUNCT	PERIOD	_	0	root	_	SpacesAfter=\n
+24	existențele.[	existențele.[	NOUN	Ncfpry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Plur	22	nsubj	_	SpaceAfter=No
+25	necesită	necesita	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	advcl	_	SpacesAfter= 
+26	citare	citare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	25	obj	_	SpaceAfter=No
+27	]	]	PUNCT	RSQR	_	17	punct	_	SpaceAfter=No
+28	.	.	PUNCT	PERIOD	_	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = romanian-rrt-ud-2.6-200830
@@ -1036,8 +1036,14 @@
 18	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	20	case	_	_
 19	către	către	ADP	Spsa	AdpType=Prep|Case=Acc	18	fixed	_	_
 20	zeul	zeu	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	15	nmod:agent	_	_
-21	Krishna	Krishna	PROPN	Np	_	20	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	PERIOD	_	3	punct	_	SpacesAfter=\n
+21	Krishna.	Krishna.	PROPN	Np	_	20	nmod	_	SpaceAfter=No
+
+# sent_id = 4
+# text = [necesită citare]
+1	[	[	PUNCT	LSQR	_	2	punct	_	SpaceAfter=No
+2	necesită	necesita	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter= 
+3	citare	citare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
+4	]	]	PUNCT	RSQR	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = romanian-rrt-ud-2.6-200830

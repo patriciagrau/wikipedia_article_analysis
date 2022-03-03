@@ -15,7 +15,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Iran, auch: der Iran (mit Artikel), persisch ايران, DMG Īrān, , Vollform:
+# text = Iran, auch: der Iran (mit Artikel), persisch ايران, DMG Īrān, [ʔiːˈɾɒːn], Vollform:
 1	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	$,	PunctType=Comm	6	punct	_	_
 3	auch	auch	ADV	ADV	_	6	advmod	_	SpaceAfter=No
@@ -33,9 +33,12 @@
 15	DMG	DMG	PROPN	NE	Person=3	13	appos	_	_
 16	Īrān	īrān	PROPN	NE	Number=Sing|Person=3	15	flat:name	_	SpaceAfter=No
 17	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	SpacesAfter=\s 
-18	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
-19	Vollform	Form	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
-20	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
+18	[	[	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+19	ʔiːˈɾɒːn	ʔiːˈɾɒːn	PROPN	NE	Person=3	15	appos	_	SpaceAfter=No
+20	]	]	PUNCT	$(	PunctType=Brck	19	punct	_	SpaceAfter=No
+21	,	,	PUNCT	$,	PunctType=Comm	22	punct	_	_
+22	Vollform	Vollform	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	appos	_	SpaceAfter=No
+23	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 2
 # text = Islamische Republik Iran, vor 1935 auf internationaler Ebene (exonym) auch Persien, ist ein Staat in Vorderasien.
@@ -8513,7 +8516,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = „Niemand kümmert sich um die Armen und Barfüßigen
+# text = „Niemand kümmert sich um die Armen und Barfüßigen […]
 1	„	„	PUNCT	$(	PunctType=Brck	3	punct	_	SpaceAfter=No
 2	Niemand	niemand	PRON	PIS	Case=Nom|Number=Sing|Person=3|PronType=Ind,Neg,Tot	3	nsubj	_	_
 3	kümmert	kümmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -8522,7 +8525,10 @@
 6	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	7	det	_	_
 7	Armen	Arm	NOUN	NN	Degree=Pos|Number=Plur|Person=3	3	obl	_	_
 8	und	und	CCONJ	KON	_	9	cc	_	_
-9	Barfüßigen	barfüßig	NOUN	NN	Person=3	7	conj	_	SpacesAfter=\s\s
+9	Barfüßigen	Barfüssig	NOUN	NN	Person=3	7	conj	_	_
+10	[	[	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+11	…	…	X	FM	Foreign=Yes|Person=3	3	parataxis	_	SpaceAfter=No
+12	]	]	PUNCT	$(	PunctType=Brck	11	punct	_	_
 
 # sent_id = 2
 # text = Der Islam löst das Problem der Armut.
@@ -8536,7 +8542,7 @@
 8	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
 
 # sent_id = 3
-# text = Dieses Problem steht in seinem Programm an oberster Stelle .
+# text = Dieses Problem steht in seinem Programm an oberster Stelle […].
 1	Dieses	dies	DET	PDAT	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	det	_	_
 2	Problem	Problem	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nsubj	_	_
 3	steht	stehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -8546,7 +8552,10 @@
 7	an	an	ADP	APPR	AdpType=Prep|Case=Dat	9	case	_	_
 8	oberster	NULL	ADJ	ADJA	Degree=Sup|Gender=Fem|Number=Sing	9	amod	_	_
 9	Stelle	Stelle	NOUN	NN	Gender=Fem|Number=Sing|Person=3	3	obl	_	_
-10	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
+10	[	[	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+11	…	…	X	FM	Foreign=Yes|Person=3	9	appos	_	SpaceAfter=No
+12	]	]	PUNCT	$(	PunctType=Brck	11	punct	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
 
 # sent_id = 4
 # text = Nach den Grundsätzen des Islam muß zuerst das Leben der Armen, der Hilflosen verbessert werden.“
@@ -20241,7 +20250,7 @@
 21	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	_
 
 # sent_id = 4
-# text = Oppositionsgruppen kritisierten jedoch die verbreitete Einschätzung Chātamis als eines Reformers und wiesen anlässlich der zurückgehenden internationalen Isolierung des Iran darauf hin, dass weiterhin „die echten Reformer in Iran im Gefängnis “, die Opposition im Iran wie im Ausland verfolgt werde und die Menschenrechtsverletzungen fortbestünden.
+# text = Oppositionsgruppen kritisierten jedoch die verbreitete Einschätzung Chātamis als eines Reformers und wiesen anlässlich der zurückgehenden internationalen Isolierung des Iran darauf hin, dass weiterhin „die echten Reformer in Iran im Gefängnis [sitzen]“, die Opposition im Iran wie im Ausland verfolgt werde und die Menschenrechtsverletzungen fortbestünden.
 1	Oppositionsgruppen	Gruppe	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nsubj	_	_
 2	kritisierten	kritisieren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	jedoch	jedoch	ADV	ADV	_	2	advmod	_	_
@@ -20263,33 +20272,36 @@
 19	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
 20	darauf	darauf	ADV	PROAV	_	12	obj	_	_
 21	hin	hin	ADP	PTKVZ	PartType=Vbp	12	compound:prt	_	SpaceAfter=No
-22	,	,	PUNCT	$,	PunctType=Comm	33	punct	_	_
-23	dass	dass	SCONJ	KOUS	_	33	mark	_	_
-24	weiterhin	weiterhin	ADV	ADV	_	33	advmod	_	_
-25	„	„	PUNCT	$(	PunctType=Brck	33	punct	_	SpaceAfter=No
+22	,	,	PUNCT	$,	PunctType=Comm	36	punct	_	_
+23	dass	dass	SCONJ	KOUS	_	36	mark	_	_
+24	weiterhin	weiterhin	ADV	ADV	_	36	advmod	_	_
+25	„	„	PUNCT	$(	PunctType=Brck	34	punct	_	SpaceAfter=No
 26	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	28	det	_	_
 27	echten	echt	ADJ	ADJA	Degree=Pos|Number=Plur	28	amod	_	_
-28	Reformer	Reformer	NOUN	NN	Gender=Masc|Number=Plur|Person=3	33	nsubj	_	_
+28	Reformer	Reformer	NOUN	NN	Gender=Masc|Number=Plur|Person=3	36	nsubj	_	_
 29	in	in	ADP	APPR	AdpType=Prep|Case=Dat	30	case	_	SpacesAfter=\s\s
 30	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	28	nmod	_	_
 31	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	32	case	_	_
-32	Gefängnis	Gefängnis	NOUN	NN	Gender=Neut|Number=Sing|Person=3	33	obl	_	_
-33	“	“	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	SpaceAfter=No
-34	,	,	PUNCT	$,	PunctType=Comm	42	punct	_	_
-35	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	Opposition	Opposition	NOUN	NN	Gender=Fem|Number=Sing|Person=3	42	nsubj:pass	_	_
-37	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	38	case	_	_
-38	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	36	nmod	_	_
-39	wie	wie	CCONJ	KOKOM	ConjType=Comp	41	case	_	_
+32	Gefängnis	Gefängnis	NOUN	NN	Gender=Neut|Number=Sing|Person=3	34	obl	_	_
+33	[	[	PUNCT	$(	PunctType=Brck	34	punct	_	SpaceAfter=No
+34	sitzen	sitzen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	ccomp	_	SpaceAfter=No
+35	]	]	PUNCT	$(	PunctType=Brck	34	punct	_	SpaceAfter=No
+36	“	“	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	SpaceAfter=No
+37	,	,	PUNCT	$,	PunctType=Comm	45	punct	_	_
+38	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	Opposition	Opposition	NOUN	NN	Gender=Fem|Number=Sing|Person=3	45	nsubj:pass	_	_
 40	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	41	case	_	_
-41	Ausland	Ausland	NOUN	NN	Gender=Neut|Number=Sing|Person=3	42	obl	_	_
-42	verfolgt	verfolgen	VERB	VVPP	Aspect=Perf|VerbForm=Part	33	conj	_	_
-43	werde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux:pass	_	_
-44	und	und	CCONJ	KON	_	47	cc	_	_
-45	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	46	det	_	_
-46	Menschenrechtsverletzungen	Rechtsverletzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	47	obj	_	_
-47	fortbestünden	fortbestünden	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	conj	_	SpaceAfter=No
-48	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+41	Iran	Iran	PROPN	NE	Gender=Masc|Number=Sing|Person=3	39	nmod	_	_
+42	wie	wie	CCONJ	KOKOM	ConjType=Comp	44	case	_	_
+43	im	im	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	44	case	_	_
+44	Ausland	Ausland	NOUN	NN	Gender=Neut|Number=Sing|Person=3	45	obl	_	_
+45	verfolgt	verfolgen	VERB	VVPP	Aspect=Perf|VerbForm=Part	36	conj	_	_
+46	werde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux:pass	_	_
+47	und	und	CCONJ	KON	_	50	cc	_	_
+48	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	49	det	_	_
+49	Menschenrechtsverletzungen	Rechtsverletzung	NOUN	NN	Gender=Fem|Number=Plur|Person=3	50	obj	_	_
+50	fortbestünden	fortbestünden	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	conj	_	SpaceAfter=No
+51	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 5
 # text = Auch Amnesty International berichtete von anhaltenden massiven Menschenrechtsverletzungen in großer Zahl, unter anderem von 73 Toten und mehreren Hundert Verletzten bei Übergriffen von Polizei- und Sicherheitskräften bei drei öffentlichen Kundgebungen im Jahr 2005.
@@ -21434,11 +21446,11 @@
 8	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 2
-# text = Für „sexuelle Handlung zwischen Männern, entweder mit Eindringen oder in Form von Tafkhiz (Aneinanderreiben von Oberschenkel und Penis)“ gilt die Todesstrafe, häufig in Verbindung mit einer öffentlichen Auspeitschung.
+# text = Für „sexuelle Handlung zwischen Männern, entweder mit Eindringen oder in Form von Tafkhiz [تفخيذ] (Aneinanderreiben von Oberschenkel und Penis)“ gilt die Todesstrafe, häufig in Verbindung mit einer öffentlichen Auspeitschung.
 1	Für	Für	ADP	APPR	AdpType=Prep|Case=Acc	4	case	_	_
 2	„	„	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
 3	sexuelle	sexuell	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
-4	Handlung	Handlung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	obl	_	_
+4	Handlung	Handlung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	25	obl	_	_
 5	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	6	case	_	_
 6	Männern	Mann	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur|Person=3	4	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	$,	PunctType=Comm	10	punct	_	_
@@ -21449,25 +21461,28 @@
 12	in	in	ADP	APPR	AdpType=Prep|Case=Dat	13	case	_	_
 13	Form	Form	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	conj	_	_
 14	von	von	ADP	APPR	AdpType=Prep|Case=Dat	15	case	_	_
-15	Tafkhiz	Tafkhiz	PROPN	NE	Person=3	13	nmod	_	SpacesAfter=\s\s
-16	(	(	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
-17	Aneinanderreiben	Aneinanderreiben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	15	appos	_	_
-18	von	von	ADP	APPR	AdpType=Prep|Case=Dat	19	case	_	_
-19	Oberschenkel	Oberschenkel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
-20	und	und	CCONJ	KON	_	21	cc	_	_
-21	Penis)“	Penis)“	NOUN	NN	Person=3	19	conj	_	_
-22	gilt	gelten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-23	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	Todesstrafe	Strafe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	nsubj	_	SpaceAfter=No
-25	,	,	PUNCT	$,	PunctType=Comm	26	punct	_	_
-26	häufig	häufig	ADJ	ADJD	Degree=Pos|Variant=Short	22	advmod	_	_
-27	in	in	ADP	APPR	AdpType=Prep|Case=Dat	28	case	_	_
-28	Verbindung	Verbindung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	22	obl	_	_
-29	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	32	case	_	_
-30	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-31	öffentlichen	öffentlich	ADJ	ADJA	Degree=Pos|Number=Sing	32	amod	_	_
-32	Auspeitschung	Auspeitschung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	28	nmod	_	SpaceAfter=No
-33	.	.	PUNCT	$.	PunctType=Peri	22	punct	_	_
+15	Tafkhiz	Tafkhiz	PROPN	NE	Person=3	13	nmod	_	_
+16	[	[	PUNCT	$(	PunctType=Brck	17	punct	_	SpaceAfter=No
+17	تفخيذ	تفخيذ	X	FM	Foreign=Yes|Person=3	15	appos	_	SpaceAfter=No
+18	]	]	PUNCT	$(	PunctType=Brck	17	punct	_	_
+19	(	(	PUNCT	$(	PunctType=Brck	20	punct	_	SpaceAfter=No
+20	Aneinanderreiben	Aneinanderreiben	NOUN	NN	Gender=Neut|Number=Sing|Person=3	17	appos	_	_
+21	von	von	ADP	APPR	AdpType=Prep|Case=Dat	22	case	_	_
+22	Oberschenkel	Oberschenkel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+23	und	und	CCONJ	KON	_	24	cc	_	_
+24	Penis)“	Penis)“	NOUN	NN	Person=3	22	conj	_	_
+25	gilt	gelten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+26	die	die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	Todesstrafe	Strafe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	25	nsubj	_	SpaceAfter=No
+28	,	,	PUNCT	$,	PunctType=Comm	29	punct	_	_
+29	häufig	häufig	ADJ	ADJD	Degree=Pos|Variant=Short	25	advmod	_	_
+30	in	in	ADP	APPR	AdpType=Prep|Case=Dat	31	case	_	_
+31	Verbindung	Verbindung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+32	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	35	case	_	_
+33	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+34	öffentlichen	öffentlich	ADJ	ADJA	Degree=Pos|Number=Sing	35	amod	_	_
+35	Auspeitschung	Auspeitschung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	31	nmod	_	SpaceAfter=No
+36	.	.	PUNCT	$.	PunctType=Peri	25	punct	_	_
 
 # sent_id = 3
 # text = Im Juli 2005 sorgte die öffentliche Auspeitschung (228 Peitschenhiebe) und Hinrichtung von zwei Jugendlichen wegen homosexueller Handlungen weltweit für Aufsehen, auch weil vermutet wurde, dass der offizielle Grund der Hinrichtung, Vergewaltigung eines Dreizehnjährigen, von den Behörden erst nachträglich hinzugefügt worden sei.
@@ -24406,15 +24421,18 @@
 10	.	.	PUNCT	$.	PunctType=Peri	8	punct	_	_
 
 # sent_id = 3
-# text = Die getesteten Raketen „ grundsätzlich Atomsprengköpfe transportieren“.
+# text = Die getesteten Raketen „[könnten] grundsätzlich Atomsprengköpfe transportieren“.
 1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	3	det	_	_
 2	getesteten	testen	ADJ	ADJA	Degree=Pos|Number=Plur	3	amod	_	_
-3	Raketen	Rakete	NOUN	NN	Gender=Fem|Number=Plur|Person=3	7	nsubj	_	_
-4	„	„	PUNCT	$(	PunctType=Brck	7	punct	_	_
-5	grundsätzlich	grundsätzlich	ADJ	ADJD	Degree=Pos|Variant=Short	7	advmod	_	_
-6	Atomsprengköpfe	Atomsprengkopf	NOUN	NN	Gender=Masc|Number=Plur|Person=3	7	obj	_	_
-7	transportieren“	transportieren“	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	$.	PunctType=Peri	7	punct	_	SpacesAfter=\n
+3	Raketen	Rakete	NOUN	NN	Gender=Fem|Number=Plur|Person=3	10	nsubj	_	_
+4	„	„	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
+5	[	[	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
+6	könnten	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|VerbType=Mod	10	aux	_	SpaceAfter=No
+7	]	]	PUNCT	$(	PunctType=Brck	10	punct	_	_
+8	grundsätzlich	grundsätzlich	ADJ	ADJD	Degree=Pos|Variant=Short	10	advmod	_	_
+9	Atomsprengköpfe	Atomsprengkopf	NOUN	NN	Gender=Masc|Number=Plur|Person=3	10	obj	_	_
+10	transportieren“	transportieren“	VERB	VVINF	VerbForm=Inf	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	$.	PunctType=Peri	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -34999,15 +35017,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 32.49611111111154.295Koordinaten:
-1	32.49611111111154.295Koordinaten	32.49611111111154.295koOrdinaten	NOUN	NN	Person=3	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
-
-# sent_id = 2
-# text = 32° N, 54° O
-1	32°	32°	X	FM	Foreign=Yes|Person=3	0	root	_	SpacesAfter= 
-2	N	N	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
-3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
-4	54°	54°	NOUN	NN	Person=3	1	appos	_	SpacesAfter= 
-5	O	O	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	appos	_	SpacesAfter=\n
+# text = 32.49611111111154.295
+1	32.49611111111154.295	32.49611111111154.295	NUM	CARD	Number=Plur|NumType=Card|Person=3	0	root	_	SpacesAfter=\n
 

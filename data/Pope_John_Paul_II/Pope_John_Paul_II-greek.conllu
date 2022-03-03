@@ -542,7 +542,7 @@
 18	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # sent_id = 2
-# text = Ήταν σταθερά αντίθετος στην έκτρωση και υπερασπίστηκε την παραδοσιακή άποψη της Ρωμαιοκαθολικής Εκκλησίας για την ανθρώπινη σεξουαλικότητα.
+# text = Ήταν σταθερά αντίθετος στην έκτρωση και υπερασπίστηκε την παραδοσιακή άποψη της Ρωμαιοκαθολικής Εκκλησίας για την ανθρώπινη σεξουαλικότητα.[εκκρεμεί παραπομπή]
 1	Ήταν	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	3	cop	_	_
 2	σταθερά	σταθερά	ADV	ADV	_	3	advmod	_	_
 3	αντίθετος	αντίθετος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
@@ -562,7 +562,10 @@
 16	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 17	ανθρώπινη	ανθρώπινος	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	18	amod	_	_
 18	σεξουαλικότητα	σεξουαλικότητα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+19	.[	.[	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+20	εκκρεμεί	εκκρεμώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpacesAfter= 
+21	παραπομπή	παραπομπή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	20	obj	_	SpaceAfter=No
+22	]	]	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830
@@ -669,7 +672,14 @@
 9	αγιοποίησε	αγιοποιώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	csubj:pass	_	_
 10	1340	1340	NUM	NUM	NumType=Card	11	nummod	_	_
 11	ανθρώπους	άνθρωπος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	9	obj	_	SpaceAfter=No
-12	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [εκκρεμεί παραπομπή]
+1	[	[	PUNCT	PUNCT	_	2	advmod	_	SpaceAfter=No
+2	εκκρεμεί	εκκρεμώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter= 
+3	παραπομπή	παραπομπή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
+4	]	]	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = greek-gdt-ud-2.6-200830

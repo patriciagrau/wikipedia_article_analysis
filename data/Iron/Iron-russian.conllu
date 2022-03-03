@@ -464,14 +464,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = В древности мастерами железных изделий слыли халибы.
+# text = В древности мастерами железных изделий считались халибы.
 1	В	в	ADP	_	_	2	case	_	_
 2	древности	древность	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	6	obl	_	_
 3	мастерами	мастер	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	6	obl	_	_
 4	железных	железный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	5	amod	_	_
 5	изделий	изделие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	3	nmod	_	_
-6	слыли	слыть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-7	халибы	халиб	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	SpaceAfter=No
+6	считались	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	халибы	халиб	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	6	nsubj:pass	_	SpaceAfter=No
 8	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
@@ -689,36 +689,40 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = В дальнейшем научились делать более эффективные печи (в русском языке — домна, домница) для производства стали, и применили меха для подачи воздуха в горн.
+# text = В дальнейшем научились[кто?] делать более эффективные печи (в русском языке — домна, домница) для производства стали, и применили меха для подачи воздуха в горн.
 1	В	в	ADP	_	_	2	case	_	_
 2	дальнейшем	дальнейший	ADJ	_	Case=Loc|Degree=Pos|Gender=Neut|Number=Sing	3	obl	_	_
-3	научились	научиться	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	_
-4	делать	делать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-5	более	более	ADV	_	Degree=Cmp	6	obl	_	_
-6	эффективные	эффективный	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	7	amod	_	_
-7	печи	печь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	4	obj	_	_
-8	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No
-9	в	в	ADP	_	_	11	case	_	_
-10	русском	русский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
-11	языке	язык	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	parataxis	_	SpacesAfter= 
-12	—	—	PUNCT	_	_	13	punct	_	_
-13	домна	домна	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	parataxis	_	SpaceAfter=No
-14	,	,	PUNCT	_	_	15	punct	_	_
-15	домница	домница	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	13	conj	_	SpaceAfter=No
-16	)	)	PUNCT	_	_	13	punct	_	_
-17	для	для	ADP	_	_	18	case	_	_
-18	производства	производство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	4	obl	_	_
-19	стали	сталь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No
-20	,	,	PUNCT	_	_	22	punct	_	_
-21	и	и	CCONJ	_	_	22	cc	_	_
-22	применили	применить	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
-23	меха	мех	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	22	obj	_	_
-24	для	для	ADP	_	_	25	case	_	_
-25	подачи	подача	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	22	obl	_	_
-26	воздуха	воздух	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	25	nmod	_	_
-27	в	в	ADP	_	_	28	case	_	_
-28	горн	горн	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	_	_	3	punct	_	_
+3	научились	научиться	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	SpaceAfter=No
+4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
+5	кто	кто	PRON	_	Case=Nom	3	nsubj	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	]	]	PUNCT	_	_	5	punct	_	_
+8	делать	делать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+9	более	более	ADV	_	Degree=Cmp	10	obl	_	_
+10	эффективные	эффективный	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	11	amod	_	_
+11	печи	печь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	8	obj	_	_
+12	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No
+13	в	в	ADP	_	_	15	case	_	_
+14	русском	русский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	языке	язык	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	11	parataxis	_	SpacesAfter= 
+16	—	—	PUNCT	_	_	15	punct	_	_
+17	домна	домна	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	11	parataxis	_	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	_	_
+19	домница	домница	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	17	conj	_	SpaceAfter=No
+20	)	)	PUNCT	_	_	17	punct	_	_
+21	для	для	ADP	_	_	22	case	_	_
+22	производства	производство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	obl	_	_
+23	стали	сталь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	_	_
+25	и	и	CCONJ	_	_	26	cc	_	_
+26	применили	применить	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+27	меха	мех	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	26	obj	_	_
+28	для	для	ADP	_	_	29	case	_	_
+29	подачи	подача	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	26	obl	_	_
+30	воздуха	воздух	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	29	nmod	_	_
+31	в	в	ADP	_	_	32	case	_	_
+32	горн	горн	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	29	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 2
 # text = Уже римляне умели доводить температуру в печи до плавления стали (около 1400 °C, а чистое железо плавится при 1535 °C).
@@ -748,7 +752,7 @@
 24	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 3
-# text = При этом образуется чугун с температурой плавления 1100—1200 °C, очень хрупкий в твёрдом состоянии (даже не поддающийся ковке) и не обладающий упругостью стали.
+# text = При этом образуется чугун с температурой плавления 1100—1200 °C, очень хрупкий в твёрдом состоянии (даже не поддающийся ковке) и не обладающий упругостью стали.[неавторитетный источник?]
 1	При	при	ADP	_	_	2	case	_	_
 2	этом	это	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	3	obl	_	_
 3	образуется	образовываться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
@@ -777,67 +781,80 @@
 26	обладающий	обладать	VERB	_	Aspect=Imp|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	14	conj	_	_
 27	упругостью	упругость	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	26	obl	_	_
 28	стали	сталь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	27	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	_	_	3	punct	_	_
+29	.	.	PUNCT	_	_	32	punct	_	SpaceAfter=No
+30	[	[	PUNCT	_	_	32	punct	_	SpaceAfter=No
+31	неавторитетный	неавторитетный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	32	amod	_	_
+32	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	parataxis	_	SpaceAfter=No
+33	?	?	PUNCT	_	_	32	punct	_	SpaceAfter=No
+34	]	]	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 4
-# text = Первоначально его считали вредным побочным продуктом (англ. pig iron, по-русски, свинское железо, чушки, откуда, собственно, и происходит слово чугун), но потом обнаружилось, что при повторной переплавке в печи с усиленным продуванием через него воздуха чугун превращается в сталь хорошего качества, так как лишний углерод выгорает.
+# text = Первоначально его считали[кто?] вредным побочным продуктом (англ. pig iron, по-русски, свинское железо, чушки, откуда, собственно, и происходит слово чугун), но потом обнаружилось[кем?], что при повторной переплавке в печи с усиленным продуванием через него воздуха чугун превращается в сталь хорошего качества, так как лишний углерод выгорает.
 1	Первоначально	первоначально	ADV	_	Degree=Pos	3	advmod	_	_
 2	его	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obj	_	_
-3	считали	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-4	вредным	вредный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
-5	побочным	побочный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
-6	продуктом	продукт	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	3	obl	_	_
-7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No
-8	англ.	английский	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	6	amod	_	SpacesAfter= 
-9	pig	pig	X	_	Foreign=Yes	6	flat:foreign	_	_
-10	iron	iron	X	_	Foreign=Yes	6	flat:foreign	_	SpaceAfter=No
-11	,	,	PUNCT	_	_	15	punct	_	_
-12	по-русски	по-русски	ADV	_	Degree=Pos	15	parataxis	_	SpaceAfter=No
-13	,	,	PUNCT	_	_	15	punct	_	_
-14	свинское	свинский	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	15	amod	_	_
-15	железо	железо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	conj	_	SpaceAfter=No
-16	,	,	PUNCT	_	_	17	punct	_	_
-17	чушки	чушка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	6	conj	_	SpaceAfter=No
-18	,	,	PUNCT	_	_	24	punct	_	_
-19	откуда	откуда	ADV	_	Degree=Pos	24	advmod	_	SpaceAfter=No
-20	,	,	PUNCT	_	_	19	punct	_	_
-21	собственно	собственно	ADV	_	Degree=Pos	24	parataxis	_	SpaceAfter=No
-22	,	,	PUNCT	_	_	21	punct	_	_
-23	и	и	PART	_	_	24	advmod	_	_
-24	происходит	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	acl:relcl	_	_
-25	слово	слово	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	24	nsubj	_	_
-26	чугун	чугун	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	25	appos	_	SpaceAfter=No
-27	)	)	PUNCT	_	_	24	punct	_	SpaceAfter=No
-28	,	,	PUNCT	_	_	31	punct	_	_
-29	но	но	CCONJ	_	_	31	cc	_	_
-30	потом	потом	ADV	_	Degree=Pos	31	advmod	_	_
-31	обнаружилось	обнаружиться	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	3	conj	_	SpaceAfter=No
-32	,	,	PUNCT	_	_	46	punct	_	_
-33	что	что	SCONJ	_	_	46	mark	_	_
-34	при	при	ADP	_	_	36	case	_	_
-35	повторной	повторный	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	36	amod	_	_
-36	переплавке	переплавка	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	46	obl	_	_
-37	в	в	ADP	_	_	38	case	_	_
-38	печи	печь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	36	nmod	_	_
-39	с	с	ADP	_	_	41	case	_	_
-40	усиленным	усилить	VERB	_	Aspect=Perf|Case=Ins|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	41	amod	_	_
-41	продуванием	продувание	NOUN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	36	nmod	_	_
-42	через	через	ADP	_	_	43	case	_	_
-43	него	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	41	nmod	_	_
-44	воздуха	воздух	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	41	nmod	_	_
-45	чугун	чугун	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	46	nsubj	_	_
-46	превращается	превращаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	31	ccomp	_	_
-47	в	в	ADP	_	_	48	case	_	_
-48	сталь	сталь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	46	obl	_	_
-49	хорошего	хороший	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	50	amod	_	_
-50	качества	качество	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	48	nmod	_	SpaceAfter=No
-51	,	,	PUNCT	_	_	56	punct	_	_
-52	так	так	ADV	_	Degree=Pos	56	mark	_	_
-53	как	как	SCONJ	_	_	52	fixed	_	_
-54	лишний	лишний	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	55	amod	_	_
-55	углерод	углерод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	56	nsubj	_	_
-56	выгорает	выгорать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	46	advcl	_	SpaceAfter=No
-57	.	.	PUNCT	_	_	3	punct	_	_
+3	считали	считать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	[	[	PUNCT	_	_	5	punct	_	SpaceAfter=No
+5	кто	кто	PRON	_	Case=Nom	3	parataxis	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	]	]	PUNCT	_	_	5	punct	_	_
+8	вредным	вредный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+9	побочным	побочный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	продуктом	продукт	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	3	obl	_	_
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No
+12	англ.	английский	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	SpacesAfter= 
+13	pig	pig	X	_	Foreign=Yes	10	flat:foreign	_	_
+14	iron	iron	X	_	Foreign=Yes	10	flat:foreign	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	19	punct	_	_
+16	по-русски	по-русски	ADV	_	Degree=Pos	19	parataxis	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	_	_
+18	свинское	свинский	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	19	amod	_	_
+19	железо	железо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	10	conj	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	_	_
+21	чушки	чушка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	10	conj	_	SpaceAfter=No
+22	,	,	PUNCT	_	_	28	punct	_	_
+23	откуда	откуда	ADV	_	Degree=Pos	28	advmod	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	23	punct	_	_
+25	собственно	собственно	ADV	_	Degree=Pos	28	parataxis	_	SpaceAfter=No
+26	,	,	PUNCT	_	_	25	punct	_	_
+27	и	и	PART	_	_	28	advmod	_	_
+28	происходит	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	acl:relcl	_	_
+29	слово	слово	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	28	nsubj	_	_
+30	чугун	чугун	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	29	appos	_	SpaceAfter=No
+31	)	)	PUNCT	_	_	28	punct	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	_	_
+33	но	но	CCONJ	_	_	35	cc	_	_
+34	потом	потом	ADV	_	Degree=Pos	35	advmod	_	_
+35	обнаружилось	обнаружиться	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	3	conj	_	SpaceAfter=No
+36	[	[	PUNCT	_	_	37	punct	_	SpaceAfter=No
+37	кем	кто	PRON	_	Case=Ins	35	obl	_	SpaceAfter=No
+38	?	?	PUNCT	_	_	37	punct	_	SpaceAfter=No
+39	]	]	PUNCT	_	_	37	punct	_	SpaceAfter=No
+40	,	,	PUNCT	_	_	54	punct	_	_
+41	что	что	SCONJ	_	_	54	mark	_	_
+42	при	при	ADP	_	_	44	case	_	_
+43	повторной	повторный	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	44	amod	_	_
+44	переплавке	переплавка	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	54	obl	_	_
+45	в	в	ADP	_	_	46	case	_	_
+46	печи	печь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	44	nmod	_	_
+47	с	с	ADP	_	_	49	case	_	_
+48	усиленным	усилить	VERB	_	Aspect=Perf|Case=Ins|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	49	amod	_	_
+49	продуванием	продувание	NOUN	_	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	44	nmod	_	_
+50	через	через	ADP	_	_	51	case	_	_
+51	него	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	49	nmod	_	_
+52	воздуха	воздух	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	49	nmod	_	_
+53	чугун	чугун	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	54	nsubj	_	_
+54	превращается	превращаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	35	ccomp	_	_
+55	в	в	ADP	_	_	56	case	_	_
+56	сталь	сталь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	54	obl	_	_
+57	хорошего	хороший	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	58	amod	_	_
+58	качества	качество	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	56	nmod	_	SpaceAfter=No
+59	,	,	PUNCT	_	_	64	punct	_	_
+60	так	так	ADV	_	Degree=Pos	64	mark	_	_
+61	как	как	SCONJ	_	_	60	fixed	_	_
+62	лишний	лишний	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	63	amod	_	_
+63	углерод	углерод	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	64	nsubj	_	_
+64	выгорает	выгорать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	54	advcl	_	SpaceAfter=No
+65	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 5
 # text = Такой двухстадийный процесс производства стали из чугуна оказался более простым и выгодным, чем кричный, и этот принцип используется без особых изменений многие века, оставаясь и до наших дней основным способом производства железных материалов.
@@ -2213,7 +2230,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = По запасам железных руд Россия занимает первое место в мире.
+# text = По запасам железных руд Россия занимает первое место в мире[источник не указан 3243 дня].
 1	По	по	ADP	_	_	2	case	_	_
 2	запасам	запас	NOUN	_	Animacy=Inan|Case=Dat|Gender=Masc|Number=Plur	6	obl	_	_
 3	железных	железный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	4	amod	_	_
@@ -2224,7 +2241,14 @@
 8	место	место	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	6	obj	_	_
 9	в	в	ADP	_	_	10	case	_	_
 10	мире	мир	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
-11	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+11	[	[	PUNCT	_	_	14	punct	_	SpaceAfter=No
+12	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	14	nsubj:pass	_	_
+13	не	не	PART	_	_	14	advmod	_	_
+14	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	8	parataxis	_	_
+15	3243	3243	NUM	_	_	16	nummod	_	_
+16	дня	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+17	]	]	PUNCT	_	_	14	punct	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -3573,11 +3597,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Реактивом на ионы Fe2+ в растворе может служить гексацианоферрат(III) калия K3 (красная кровяная соль).
+# text = Реактивом на ионы Fe2+ в растворе может служить гексацианоферрат(III) калия K3[Fe(CN)6] (красная кровяная соль).
 1	Реактивом	реактив	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	8	obl	_	_
 2	на	на	ADP	_	_	3	case	_	_
 3	ионы	ион	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	1	nmod	_	_
-4	Fe2+	Fe2+	PROPN	_	Foreign=Yes	3	appos	_	_
+4	Fe2+	Fe2+	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	appos	_	_
 5	в	в	ADP	_	_	6	case	_	_
 6	растворе	раствор	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	_
 7	может	мочь	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -3587,41 +3611,49 @@
 11	III	iii	NUM	_	_	9	nummod	_	SpaceAfter=No
 12	)	)	PUNCT	_	_	11	punct	_	_
 13	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
-14	K3	K3	PROPN	_	Foreign=Yes	13	flat:foreign	_	_
-15	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No
-16	красная	красный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
-17	кровяная	кровяной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
-18	соль	соль	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	parataxis	_	SpaceAfter=No
-19	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No
-20	.	.	PUNCT	_	_	7	punct	_	_
+14	K3	K3	PROPN	_	Foreign=Yes	13	flat:foreign	_	SpaceAfter=No
+15	[	[	PUNCT	_	_	16	punct	_	SpaceAfter=No
+16	Fe(	fe(	PROPN	_	Foreign=Yes	9	flat:foreign	_	SpaceAfter=No
+17	CN)6	Cn)6	PROPN	_	Foreign=Yes	13	flat:foreign	_	SpaceAfter=No
+18	]	]	PUNCT	_	_	17	punct	_	_
+19	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No
+20	красная	красный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+21	кровяная	кровяной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+22	соль	соль	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	parataxis	_	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No
+24	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 2
-# text = При взаимодействии ионов Fe2+ и 3− выпадает осадок гексацианоферрата (III) калия-железа (II) (турнбулева синь):
+# text = При взаимодействии ионов Fe2+ и [Fe(CN)6]3− выпадает осадок гексацианоферрата (III) калия-железа (II) (турнбулева синь):
 1	При	при	ADP	_	_	2	case	_	_
-2	взаимодействии	взаимодействие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	9	obl	_	_
+2	взаимодействии	взаимодействие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	13	obl	_	_
 3	ионов	ион	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	2	nmod	_	_
-4	Fe2	Fe2	PROPN	_	Foreign=Yes	3	flat:foreign	_	SpaceAfter=No
-5	+	+	SYM	_	_	3	flat:foreign	_	_
-6	и	и	CCONJ	_	_	7	cc	_	_
-7	3	3	NUM	_	_	3	conj	_	SpaceAfter=No
-8	−	−	PUNCT	_	_	7	punct	_	_
-9	выпадает	выпадать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-10	осадок	осадок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
-11	гексацианоферрата	гексацианоферрат	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	_
-12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No
-13	III	iii	NUM	_	_	11	nummod	_	SpaceAfter=No
-14	)	)	PUNCT	_	_	13	punct	_	_
-15	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
-16	-	-	PUNCT	_	_	17	punct	_	SpaceAfter=No
-17	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	15	appos	_	_
-18	(	(	PUNCT	_	_	19	punct	_	SpaceAfter=No
-19	II	ii	NUM	_	_	17	nummod	_	SpaceAfter=No
-20	)	)	PUNCT	_	_	19	punct	_	_
-21	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No
-22	турнбулева	турнбулев	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
-23	синь	синь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	15	parataxis	_	SpaceAfter=No
-24	)	)	PUNCT	_	_	23	punct	_	SpaceAfter=No
-25	:	:	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+4	Fe2+	Fe2+	PROPN	_	Foreign=Yes	3	appos	_	_
+5	и	и	CCONJ	_	_	3	cc	_	_
+6	[	[	PUNCT	_	_	7	punct	_	SpaceAfter=No
+7	Fe	Fe	PROPN	_	Foreign=Yes	3	flat:foreign	_	SpaceAfter=No
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No
+9	CN)6	CN)6	PROPN	_	Foreign=Yes	3	flat:foreign	_	SpaceAfter=No
+10	]	]	PUNCT	_	_	9	punct	_	SpaceAfter=No
+11	3	3	NUM	_	_	3	nummod	_	SpaceAfter=No
+12	−	−	PUNCT	_	_	11	punct	_	_
+13	выпадает	выпадать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+14	осадок	осадок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	_
+15	гексацианоферрата	гексацианоферрат	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	14	nmod	_	_
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No
+17	III	iii	NUM	_	_	15	nummod	_	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	_	_
+19	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+20	-	-	PUNCT	_	_	21	punct	_	SpaceAfter=No
+21	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	19	appos	_	_
+22	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No
+23	II	ii	NUM	_	_	21	nummod	_	SpaceAfter=No
+24	)	)	PUNCT	_	_	23	punct	_	_
+25	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No
+26	турнбулева	турнбулев	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	27	amod	_	_
+27	синь	синь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	19	parataxis	_	SpaceAfter=No
+28	)	)	PUNCT	_	_	27	punct	_	SpaceAfter=No
+29	:	:	PUNCT	_	_	13	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4031,7 +4063,7 @@
 21	.	.	PUNCT	_	_	11	punct	_	_
 
 # sent_id = 2
-# text = При этом образуется смесь ярко-красных роданидных комплексов железа 2+, +, Fe(SCN)3, −.
+# text = При этом образуется смесь ярко-красных роданидных комплексов железа [Fe(SCN)]2+, [Fe(SCN)2]+, Fe(SCN)3, [Fe(SCN)4]−.
 1	При	при	ADP	_	_	2	case	_	_
 2	этом	это	PRON	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	3	obl	_	_
 3	образуется	образовываться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
@@ -4040,14 +4072,26 @@
 6	роданидных	роданидный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	7	amod	_	_
 7	комплексов	комплекс	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	_
 8	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
-9	2+	2+	NUM	_	_	8	nummod	_	SpaceAfter=No
-10	,	,	PUNCT	_	_	11	punct	_	_
-11	+	+	X	_	_	9	conj	_	SpaceAfter=No
-12	,	,	PUNCT	_	_	13	punct	_	_
-13	Fe(SCN)3	FE(SCN)3	PROPN	_	Foreign=Yes	9	conj	_	SpaceAfter=No
-14	,	,	PUNCT	_	_	13	punct	_	_
-15	−	−	PUNCT	_	_	13	punct	_	SpaceAfter=No
-16	.	.	PUNCT	_	_	3	punct	_	_
+9	[	[	PUNCT	_	_	10	punct	_	SpaceAfter=No
+10	Fe(	fe(	PROPN	_	Foreign=Yes	8	flat:foreign	_	SpaceAfter=No
+11	SCN	SCN	PROPN	_	Foreign=Yes	8	flat:foreign	_	SpaceAfter=No
+12	)	)	PUNCT	_	_	10	punct	_	SpaceAfter=No
+13	]	]	PUNCT	_	_	14	punct	_	SpaceAfter=No
+14	2+	2+	NUM	_	_	8	nummod	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	_	_
+16	[	[	PUNCT	_	_	17	punct	_	SpaceAfter=No
+17	Fe(	FE(	PROPN	_	Foreign=Yes	8	flat:foreign	_	SpaceAfter=No
+18	SCN)2	SCN)2	PROPN	_	Foreign=Yes	8	flat:foreign	_	SpaceAfter=No
+19	]	]	PUNCT	_	_	20	punct	_	SpaceAfter=No
+20	+	+	SYM	_	_	8	flat:foreign	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	_	_
+22	Fe(SCN)3	FE(SCN)3	PROPN	_	Foreign=Yes	8	conj	_	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	_	_
+24	[	[	PUNCT	_	_	25	punct	_	SpaceAfter=No
+25	Fe(SCN)4	fe(scn)4	PROPN	_	Foreign=Yes	8	flat:foreign	_	SpaceAfter=No
+26	]	]	PUNCT	_	_	25	punct	_	SpaceAfter=No
+27	−	−	PUNCT	_	_	25	punct	_	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 3
 # text = Состав смеси (а значит, и интенсивность её окраски) зависит от различных факторов, поэтому для точного качественного определения железа этот метод неприменим.
@@ -4084,7 +4128,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Другим качественным реактивом на ионы Fe3+ служит гексацианоферрат(II) калия K4 (жёлтая кровяная соль).
+# text = Другим качественным реактивом на ионы Fe3+ служит гексацианоферрат(II) калия K4[Fe(CN)6] (жёлтая кровяная соль).
 1	Другим	другой	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 2	качественным	качественный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
 3	реактивом	реактив	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	8	obl	_	_
@@ -4098,41 +4142,47 @@
 11	II	ii	NUM	_	_	9	nummod	_	SpaceAfter=No
 12	)	)	PUNCT	_	_	11	punct	_	_
 13	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
-14	K4	K4	PROPN	_	Foreign=Yes	13	flat:foreign	_	_
-15	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No
-16	жёлтая	желтый	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
-17	кровяная	кровяной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
-18	соль	соль	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	parataxis	_	SpaceAfter=No
-19	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No
-20	.	.	PUNCT	_	_	8	punct	_	_
+14	K4	K4	PROPN	_	Foreign=Yes	13	flat:foreign	_	SpaceAfter=No
+15	[	[	PUNCT	_	_	16	punct	_	SpaceAfter=No
+16	Fe(	FE(	PROPN	_	Foreign=Yes	9	flat:foreign	_	SpaceAfter=No
+17	CN)6	Cn)6	PROPN	_	Foreign=Yes	13	flat:foreign	_	SpaceAfter=No
+18	]	]	PUNCT	_	_	17	punct	_	_
+19	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No
+20	жёлтая	желтый	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+21	кровяная	кровяной	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
+22	соль	соль	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	parataxis	_	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No
+24	.	.	PUNCT	_	_	8	punct	_	_
 
 # sent_id = 2
-# text = При взаимодействии ионов Fe3+ и 4− выпадает ярко-синий осадок гексацианоферрата (II) калия-железа (III) (берлинская лазурь):
+# text = При взаимодействии ионов Fe3+ и [Fe(CN)6]4− выпадает ярко-синий осадок гексацианоферрата (II) калия-железа (III) (берлинская лазурь):
 1	При	при	ADP	_	_	2	case	_	_
-2	взаимодействии	взаимодействие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	8	obl	_	_
+2	взаимодействии	взаимодействие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	10	obl	_	_
 3	ионов	ион	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	2	nmod	_	_
 4	Fe3	Fe3	PROPN	_	Foreign=Yes	3	flat:foreign	_	SpaceAfter=No
 5	+	+	SYM	_	_	3	flat:foreign	_	_
-6	и	и	CCONJ	_	_	7	cc	_	_
-7	4−	4−	NUM	_	_	3	conj	_	_
-8	выпадает	выпадать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-9	ярко-синий	ярко-синий	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
-10	осадок	осадок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
-11	гексацианоферрата	гексацианоферрат	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	_
-12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No
-13	II	ii	NUM	_	_	11	nummod	_	SpaceAfter=No
-14	)	)	PUNCT	_	_	13	punct	_	_
-15	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
-16	-	-	PUNCT	_	_	17	punct	_	SpaceAfter=No
-17	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	15	appos	_	_
-18	(	(	PUNCT	_	_	19	punct	_	SpaceAfter=No
-19	III	iii	NUM	_	_	17	nummod	_	SpaceAfter=No
-20	)	)	PUNCT	_	_	19	punct	_	_
-21	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No
-22	берлинская	берлинский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
-23	лазурь	лазурь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	11	parataxis	_	SpaceAfter=No
-24	)	)	PUNCT	_	_	23	punct	_	SpaceAfter=No
-25	:	:	PUNCT	_	_	8	punct	_	SpacesAfter=\n
+6	и	и	CCONJ	_	_	8	cc	_	_
+7	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No
+8	Fe(	fe(	PROPN	_	Foreign=Yes	3	flat:foreign	_	SpaceAfter=No
+9	CN)6]4−	Cn)6]4−	PROPN	_	Foreign=Yes	3	flat:foreign	_	_
+10	выпадает	выпадать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	ярко-синий	ярко-синий	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	_
+12	осадок	осадок	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+13	гексацианоферрата	гексацианоферрат	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	_
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No
+15	II	ii	NUM	_	_	13	nummod	_	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	_	_
+17	калия	калий	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
+18	-	-	PUNCT	_	_	19	punct	_	SpaceAfter=No
+19	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	17	appos	_	_
+20	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No
+21	III	iii	NUM	_	_	19	nummod	_	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	_	_
+23	(	(	PUNCT	_	_	25	punct	_	SpaceAfter=No
+24	берлинская	берлинский	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	25	amod	_	_
+25	лазурь	лазурь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	13	parataxis	_	SpaceAfter=No
+26	)	)	PUNCT	_	_	25	punct	_	SpaceAfter=No
+27	:	:	PUNCT	_	_	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -4349,15 +4399,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Известна степень окисления VII в анионе −.
+# text = Известна степень окисления VII в анионе [FeO4]−.
 1	Известна	известный	ADJ	_	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short	0	root	_	_
 2	степень	степень	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
 3	окисления	окисление	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
 4	VII	vii	NUM	_	_	3	nummod	_	_
 5	в	в	ADP	_	_	6	case	_	_
 6	анионе	анион	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	_
-7	−	−	PUNCT	_	_	6	punct	_	SpaceAfter=No
-8	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n
+7	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No
+8	FeO4	Feo4	PROPN	_	Foreign=Yes	6	flat:foreign	_	SpaceAfter=No
+9	]	]	PUNCT	_	_	8	punct	_	SpaceAfter=No
+10	−	−	PUNCT	_	_	8	punct	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6353,11 +6406,11 @@
 20	.	.	PUNCT	_	_	6	punct	_	_
 
 # sent_id = 3
-# text = Испытывающим недостаток в железе даже предлагают класть в посуду, где готовится еда, специальные фигурки из чугуна.
+# text = Испытывающим недостаток в железе даже предлагают класть в посуду, где готовится еда, специальные фигурки из чугуна[en].
 1	Испытывающим	испытывать	VERB	_	Aspect=Imp|Case=Dat|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	6	xcomp	_	_
 2	недостаток	недостаток	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	_
 3	в	в	ADP	_	_	4	case	_	_
-4	железе	железа	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	2	nmod	_	_
+4	железе	железа	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	_
 5	даже	даже	PART	_	_	6	advmod	_	_
 6	предлагают	предлагать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	класть	класть	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	6	xcomp	_	_
@@ -6371,8 +6424,9 @@
 15	специальные	специальный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	16	amod	_	_
 16	фигурки	фигурка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	13	conj	_	_
 17	из	из	ADP	_	_	18	case	_	_
-18	чугуна	чугун	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+18	чугуна[en	чугуна[	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+19	]	]	PUNCT	_	_	18	punct	_	SpaceAfter=No
+20	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = russian-syntagrus-ud-2.6-200830
@@ -6485,7 +6539,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Содержание железа в воде больше 1—2 мг/л значительно ухудшает её органолептические свойства, придавая ей неприятный вяжущий вкус, и делает воду малопригодной для использования, вызывает у человека аллергические реакции, может стать причиной болезни крови и печени — гемохроматоза.
+# text = Содержание железа в воде больше 1—2 мг/л значительно ухудшает её органолептические свойства, придавая ей неприятный вяжущий вкус, и делает воду малопригодной для использования, вызывает у человека аллергические реакции[источник не указан 967 дней], может стать причиной болезни крови и печени — гемохроматоза.
 1	Содержание	содержание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	13	nsubj	_	_
 2	железа	железо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
 3	в	в	ADP	_	_	4	case	_	_
@@ -6521,17 +6575,24 @@
 33	человека	человек	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	31	obl	_	_
 34	аллергические	аллергический	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	35	amod	_	_
 35	реакции	реакция	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	31	obj	_	SpaceAfter=No
-36	,	,	PUNCT	_	_	37	punct	_	_
-37	может	мочь	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
-38	стать	стать	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Mid	37	xcomp	_	_
-39	причиной	причина	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	38	obl	_	_
-40	болезни	болезнь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	39	nmod	_	_
-41	крови	кровь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	40	nmod	_	_
-42	и	и	CCONJ	_	_	43	cc	_	_
-43	печени	печень	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	41	conj	_	SpacesAfter= 
-44	—	—	PUNCT	_	_	45	punct	_	_
-45	гемохроматоза	гемохроматоз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	40	parataxis	_	SpaceAfter=No
-46	.	.	PUNCT	_	_	13	punct	_	_
+36	[	[	PUNCT	_	_	39	punct	_	SpaceAfter=No
+37	источник	источник	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	39	nsubj:pass	_	_
+38	не	не	PART	_	_	39	advmod	_	_
+39	указан	указать	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	35	parataxis	_	_
+40	967	967	NUM	_	_	41	nummod	_	_
+41	дней	день	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	39	obl	_	SpaceAfter=No
+42	]	]	PUNCT	_	_	39	punct	_	SpaceAfter=No
+43	,	,	PUNCT	_	_	44	punct	_	_
+44	может	мочь	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
+45	стать	стать	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Mid	44	xcomp	_	_
+46	причиной	причина	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	45	obl	_	_
+47	болезни	болезнь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	46	nmod	_	_
+48	крови	кровь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	47	nmod	_	_
+49	и	и	CCONJ	_	_	50	cc	_	_
+50	печени	печень	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	48	conj	_	SpacesAfter= 
+51	—	—	PUNCT	_	_	52	punct	_	_
+52	гемохроматоза	гемохроматоз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	47	parataxis	_	SpaceAfter=No
+53	.	.	PUNCT	_	_	13	punct	_	_
 
 # sent_id = 2
 # text = ПДК железа в воде 0,3 мг/л.

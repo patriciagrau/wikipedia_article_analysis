@@ -1319,7 +1319,33 @@
 2	alebo	alebo	CCONJ	O	_	3	cc	_	_
 3	Slávite	sláviť	PROPN	VKepb+	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	!	!	PUNCT	Z	_	3	punct	_	SpaceAfter=No
-5	)	)	PUNCT	Z	_	3	punct	_	SpacesAfter=\s\n
+5	)	)	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 6
+# text = [Po slovensky:
+1	[	[	PUNCT	Z	_	0	root	_	SpaceAfter=No
+2	Po	po	X	Q	Hyph=Yes	3	case	_	_
+3	slovensky	slovensky	X	Q	Hyph=Yes	1	dep	_	SpaceAfter=No
+4	:	:	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 7
+# text = Kristus sa rodí!
+1	Kristus	kristus	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	3	expl:pv	_	_
+3	rodí	rodiť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 8
+# text = Odpoveď:
+1	Odpoveď	odpoveď	NOUN	SSfs1	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	ZIP	_	1	punct	_	_
+
+# sent_id = 9
+# text = Oslavujme ho!]
+1	Oslavujme	oslavovať	VERB	VMepa+	Aspect=Imp|Mood=Imp|Number=Plur|Person=1|Polarity=Pos|VerbForm=Fin	0	root	_	_
+2	ho	on	PRON	PFms4	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	obj	_	SpaceAfter=No
+3	!	!	PUNCT	Z	_	1	punct	_	SpaceAfter=No
+4	]	]	PUNCT	ZIP	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = slovak-snk-ud-2.6-200830
@@ -1961,7 +1987,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Slovo Vianoce či jeho obdoba sa zo slovanských jazykov vyskytuje len v súčasnej v slovenčine a češtine, ostatné slovanské jazyky označujú tento sviatok úplne inými spôsobmi, napr. po rusky je Roždestvo (t.
+# text = Slovo Vianoce či jeho obdoba sa zo slovanských jazykov vyskytuje len v súčasnej v slovenčine a češtine, ostatné slovanské jazyky označujú tento sviatok úplne inými spôsobmi, napr. po rusky je Roždestvo [Christovo]
 1	Slovo	slovo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	_
 2	Vianoce	vianoce	PROPN	SSfs2:r	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
 3	či	či	CCONJ	O	_	5	cc	_	_
@@ -1974,7 +2000,7 @@
 10	vyskytuje	vyskytovať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	len	len	PART	T	_	15	advmod:emph	_	_
 12	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	15	case	_	_
-13	súčasnej	súčasný	ADJ	AAfs6x	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+13	súčasnej	súčasný	ADJ	AAfs6x	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	10	obl	_	_
 14	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	15	case	_	_
 15	slovenčine	slovenčina	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	10	obl	_	_
 16	a	a	CCONJ	O	_	17	cc	_	_
@@ -1992,49 +2018,58 @@
 28	,	,	PUNCT	Z	_	33	punct	_	_
 29	napr	napr	ADV	W	Abbr=Yes	33	advmod	_	SpaceAfter=No
 30	.	.	PUNCT	Z	_	29	punct	_	_
-31	po	po	ADP	Eu4	AdpType=Prep|Case=Acc	32	case	_	_
-32	rusky	rusky	ADV	Dx	Degree=Pos	33	obl	_	_
+31	po	po	ADP	Q	Hyph=Yes	32	case	_	_
+32	rusky	rusky	ADV	Dx	Degree=Pos	33	advmod	_	_
 33	je	byť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	10	conj	_	_
-34	Roždestvo	roždestvo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	33	nsubj	_	SpacesAfter=\s\s
-35	(	(	PUNCT	Z	_	36	punct	_	SpaceAfter=No
-36	t	t	X	W	Abbr=Yes	34	nmod	_	SpaceAfter=No
-37	.	.	PUNCT	ZIP	_	10	punct	_	_
+34	Roždestvo	roždestvo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	33	nsubj	_	_
+35	[	[	PUNCT	Z	_	36	punct	_	SpaceAfter=No
+36	Christovo	christovo	PROPN	SSns1:r	Case=Nom|Gender=Neut|Number=Sing	34	nmod	_	SpaceAfter=No
+37	]	]	PUNCT	Z	_	10	punct	_	_
 
 # sent_id = 2
-# text = j. Narodenie
+# text = (t.
+1	(	(	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+2	t	t	X	W	Abbr=Yes	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 3
+# text = j. Narodenie [Krista]), po ukrajinsky Rizdvo [Christove] (t.j.
 1	j	j	X	W	Abbr=Yes	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	Z	_	1	punct	_	_
 3	Narodenie	narodenie	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	1	dep	_	_
-
-# sent_id = 3
-# text = ), po ukrajinsky Rizdvo (t.j.
-1	)	)	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-2	,	,	PUNCT	Z	_	5	punct	_	_
-3	po	po	ADP	Eu4	AdpType=Prep|Case=Acc	5	case	_	_
-4	ukrajinsky	ukrajinsky	ADJ	AAns4x	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	_
-5	Rizdvo	rizdvo	PROPN	SSms1:r	Case=Acc|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\s\s
-6	(	(	PUNCT	Z	_	5	punct	_	SpaceAfter=No
-7	t	t	X	W	Abbr=Yes	5	nmod	_	SpaceAfter=No
-8	.j	.j	PUNCT	Z	_	7	punct	_	SpaceAfter=No
-9	.	.	PUNCT	Z	_	5	punct	_	_
+4	[	[	PUNCT	Z	_	5	punct	_	SpaceAfter=No
+5	Krista	kristus	PROPN	SSms2:r	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
+6	]	]	PUNCT	Z	_	5	punct	_	SpaceAfter=No
+7	)	)	PUNCT	Z	_	1	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	3	punct	_	_
+9	po	po	ADP	Eu4	AdpType=Prep|Case=Acc	11	case	_	_
+10	ukrajinsky	ukrajinsky	ADV	Dx	Degree=Pos	11	nmod	_	_
+11	Rizdvo	rizdvo	PROPN	SSns1:r	Case=Nom|Gender=Neut|Number=Sing	3	nmod	_	_
+12	[	[	PUNCT	Z	_	13	punct	_	SpaceAfter=No
+13	Christove	christove	PROPN	%	Foreign=Yes	11	appos	_	SpaceAfter=No
+14	]	]	PUNCT	Z	_	13	punct	_	_
+15	(	(	PUNCT	Z	_	13	punct	_	SpaceAfter=No
+16	t	t	X	W	Abbr=Yes	11	nmod	_	SpaceAfter=No
+17	.j	.j	PUNCT	Z	_	16	punct	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	1	punct	_	_
 
 # sent_id = 4
-# text = Narodenie
+# text = Narodenie [Krista]), po poľsky Boże Narodzenie (t.
 1	Narodenie	narodenie	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	[	[	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+3	Krista	kristus	PROPN	SSms2:r	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No
+4	]	]	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+5	)	)	PUNCT	Z	_	1	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	8	punct	_	_
+7	po	po	ADP	Eu4	AdpType=Prep|Case=Acc	8	case	_	_
+8	poľsky	poľsky	X	AAis4x	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	1	conj	_	_
+9	Boże	boże	ADJ	%	Foreign=Yes	10	amod	_	_
+10	Narodzenie	narodzenie	X	SSns1:r	Case=Nom|Gender=Neut|Number=Sing	1	conj	_	_
+11	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
+12	t	t	X	W	Abbr=Yes	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	Z	_	1	punct	_	_
 
 # sent_id = 5
-# text = ), po poľsky Boże Narodzenie (t.
-1	)	)	PUNCT	Z	_	4	punct	_	SpaceAfter=No
-2	,	,	PUNCT	Z	_	4	punct	_	_
-3	po	po	ADP	Eu4	AdpType=Prep|Case=Acc	4	case	_	_
-4	poľsky	poľsky	X	SSfp4	Case=Acc|Gender=Fem|Number=Plur	0	root	_	_
-5	Boże	boże	ADJ	%	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	6	amod	_	_
-6	Narodzenie	narodzenie	NOUN	SSns4	Case=Acc|Gender=Neut|Number=Sing	4	dep	_	_
-7	(	(	PUNCT	Z	_	8	punct	_	SpaceAfter=No
-8	t	t	X	W	Abbr=Yes	6	nmod	_	SpaceAfter=No
-9	.	.	PUNCT	Z	_	4	punct	_	_
-
-# sent_id = 6
 # text = j. Božie narodenie), po bulharsky rovnako ako v ruštine alebo Koleda, po bielorusky Koľady alebo Kaľady, po slovinsky, chorvátsky/srbsky Božič/Božić resp. po macedónsky Božik (t.j.
 1	j	j	X	W	Abbr=Yes	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	Z	_	1	punct	_	_
@@ -2072,7 +2107,7 @@
 34	.j	.j	PUNCT	Z	_	33	punct	_	SpaceAfter=No
 35	.	.	PUNCT	Z	_	1	punct	_	_
 
-# sent_id = 7
+# sent_id = 6
 # text = Boží Syn, malý Boh), v hornej lužickej srbčine Hody, v dolnej lužickej srbčine Gody/staršie: Gódy (t.j.
 1	Boží	boží	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
 2	Syn	syn	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
@@ -2099,7 +2134,7 @@
 23	.j	.j	PUNCT	Z	_	22	punct	_	SpaceAfter=No
 24	.	.	PUNCT	Z	_	2	punct	_	_
 
-# sent_id = 8
+# sent_id = 7
 # text = Hody) a v polabčine Trébè.
 1	Hody	hoda	NOUN	SSfp1	Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 2	)	)	PUNCT	Z	_	5	punct	_	_
@@ -2109,7 +2144,7 @@
 6	Trébè	trébè	PROPN	SSis1:r	Case=Nom|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
 7	.	.	PUNCT	Z	_	1	punct	_	_
 
-# sent_id = 9
+# sent_id = 8
 # text = Najstarším domácim slovanským pomenovaním Vianoc bolo slovo kračún, ktoré sa dodnes používa napr. ešte v slovenčine (pozri nižšie a pozri článok kračún) a v maďarčine (Karácsony).
 1	Najstarším	starý	ADJ	AAns7z	Case=Ins|Degree=Sup|Gender=Neut|Number=Sing	4	amod	_	_
 2	domácim	domáci	ADJ	AAns7x	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	_
@@ -2145,7 +2180,7 @@
 32	)	)	PUNCT	Z	_	31	punct	_	SpaceAfter=No
 33	.	.	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
-# sent_id = 10
+# sent_id = 9
 # text = Na Slovensku sa Vianoce označujú okrem slova Vianoce (a odvodenín typu vianočné sviatky, prvý sviatok vianočný a pod.) aj výrazmi kračún/kračun/kračuň (južné stredné Slovensko a Zemplín), Hody (východné a severné Slovensko),
 1	Na	na	ADP	Eu6	AdpType=Prep|Case=Loc	2	case	_	_
 2	Slovensku	slovensko	PROPN	SSns6:r	Case=Loc|Gender=Neut|Number=Sing	5	obl	_	_
@@ -2189,7 +2224,7 @@
 40	)	)	PUNCT	Z	_	39	punct	_	SpaceAfter=No
 41	,	,	PUNCT	Z	_	5	punct	_	_
 
-# sent_id = 11
+# sent_id = 10
 # text = Narodenie (Pána/Ježiša Krista a pod.) a zriedkavo aj koleda.
 1	Narodenie	narodenie	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	(	(	PUNCT	Z	_	4	punct	_	SpaceAfter=No
@@ -2512,41 +2547,47 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Po nemecky sa Vianoce dnes povedia Weihnachten alebo alternatívne Weihnacht
+# text = Po nemecky sa Vianoce dnes povedia Weihnachten [vyslov: vajnacht(e)n] alebo alternatívne Weihnacht [vajnacht], pričom prvý tvar je pomnožné (či plurálové) podstatné meno a druhý je jednotné číslo.
 1	Po	po	ADP	Eu6	AdpType=Prep|Case=Loc	2	case	_	_
 2	nemecky	nemecka	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	6	obl	_	_
 3	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	6	expl:pv	_	_
-4	Vianoce	vianoce	PROPN	SSfs2:r	Case=Acc|Gender=Fem|Number=Plur	6	nsubj	_	_
+4	Vianoce	vianoce	PROPN	SSfs2:r	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
 5	dnes	dnes	ADV	Dx	Degree=Pos	6	advmod	_	_
 6	povedia	povedať	VERB	VKdpc+	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	Weihnachten	weihnachten	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	SpacesAfter=\s\s
-8	alebo	alebo	CCONJ	O	_	10	cc	_	_
-9	alternatívne	alternatívne	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
-10	Weihnacht	weihnacht	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	conj	_	_
+7	Weihnachten	weihnachten	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+8	[	[	PUNCT	ZIP	_	9	punct	_	SpaceAfter=No
+9	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	7	appos	_	SpaceAfter=No
+10	:	:	PUNCT	ZIP	_	11	punct	_	_
+11	vajnacht(	vajnacht(	X	%	Foreign=Yes	9	nmod	_	SpaceAfter=No
+12	e)n	e)n	X	W	Abbr=Yes	11	nmod	_	SpaceAfter=No
+13	]	]	PUNCT	ZIP	_	11	punct	_	_
+14	alebo	alebo	CCONJ	O	_	16	cc	_	_
+15	alternatívne	alternatívne	ADV	Dx	Degree=Pos	16	amod	_	_
+16	Weihnacht	weihnacht	X	%	Foreign=Yes	9	conj	_	_
+17	[	[	PUNCT	ZIP	_	18	punct	_	SpaceAfter=No
+18	vajnacht	vajnacht	X	%	Foreign=Yes	16	appos	_	SpaceAfter=No
+19	]	]	PUNCT	ZIP	_	18	punct	_	SpaceAfter=No
+20	,	,	PUNCT	ZIP	_	31	punct	_	_
+21	pričom	pričom	CCONJ	O	_	31	mark	_	_
+22	prvý	prvý	ADJ	NAis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|NumType=Ord	23	amod	_	_
+23	tvar	tvar	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	31	nsubj	_	_
+24	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	31	cop	_	_
+25	pomnožné	pomnožný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	31	amod	_	_
+26	(	(	PUNCT	ZIP	_	28	punct	_	SpaceAfter=No
+27	či	či	CCONJ	O	_	28	cc	_	_
+28	plurálové	plurálový	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	25	conj	_	SpaceAfter=No
+29	)	)	PUNCT	ZIP	_	18	punct	_	_
+30	podstatné	podstatný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	31	amod	_	_
+31	meno	meno	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	16	appos	_	_
+32	a	a	CCONJ	O	_	33	cc	_	_
+33	druhý	druhý	ADJ	NAis1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|NumType=Ord	31	conj	_	_
+34	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	33	cop	_	_
+35	jednotné	jednotný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	36	amod	_	_
+36	číslo	číslo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	33	nsubj	_	SpaceAfter=No
+37	.	.	PUNCT	ZIP	_	6	punct	_	_
 
 # sent_id = 2
-# text = , pričom prvý tvar je pomnožné (či plurálové) podstatné meno a druhý je jednotné číslo.
-1	,	,	PUNCT	Z	_	12	punct	_	_
-2	pričom	pričom	CCONJ	O	_	12	mark	_	_
-3	prvý	prvý	ADJ	NAis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|NumType=Ord	4	amod	_	_
-4	tvar	tvar	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
-5	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	12	cop	_	_
-6	pomnožné	pomnožný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	_
-7	(	(	PUNCT	ZIP	_	9	punct	_	SpaceAfter=No
-8	či	či	CCONJ	O	_	9	cc	_	_
-9	plurálové	plurálový	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	6	conj	_	SpaceAfter=No
-10	)	)	PUNCT	ZIP	_	9	punct	_	_
-11	podstatné	podstatný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	_
-12	meno	meno	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-13	a	a	CCONJ	O	_	14	cc	_	_
-14	druhý	druhý	ADJ	NAms1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|NumType=Ord	12	conj	_	_
-15	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	14	cop	_	_
-16	jednotné	jednotný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
-17	číslo	číslo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	14	nsubj	_	SpaceAfter=No
-18	.	.	PUNCT	ZIP	_	12	punct	_	_
-
-# sent_id = 3
-# text = Prvýkrát je takýto výraz v nemčine doložený až na konci 12. storočia, a to v podobe dvoch samostatných slov - okolo roku 1170 ako wîhe naht (vyslov:
+# text = Prvýkrát je takýto výraz v nemčine doložený až na konci 12. storočia, a to v podobe dvoch samostatných slov - okolo roku 1170 ako wîhe naht (vyslov: [ví(h)e nacht]; význam: wîhe = svätá, naht = noc) a okolo 1190 v datíve ze wîhen naht (vyslov: [ce ví(h)en nacht]; význam: „k svätej noci“, čiže: na Vianoce).
 1	Prvýkrát	prvýkrát	ADV	ND	NumType=Mult	7	obl	_	_
 2	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	cop	_	_
 3	takýto	takýto	DET	PAis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
@@ -2560,70 +2601,75 @@
 11	12	12	NUM	0	NumForm=Digit	13	nummod	_	SpaceAfter=No
 12	.	.	PUNCT	Z	_	11	punct	_	_
 13	storočia	storočie	NOUN	SSns2	Case=Gen|Gender=Neut|Number=Sing	10	nmod	_	SpaceAfter=No
-14	,	,	PUNCT	Z	_	18	punct	_	_
+14	,	,	PUNCT	Z	_	24	punct	_	_
 15	a	a	CCONJ	O	_	18	cc	_	_
 16	to	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	7	nsubj	_	_
 17	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	18	case	_	_
 18	podobe	podoba	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	_
-19	dvoch	dva	NUM	NNip2	Case=Gen|Gender=Neut|Number=Plur	21	nummod	_	_
-20	samostatných	samostatný	ADJ	AAnp2x	Case=Gen|Degree=Pos|Gender=Neut|Number=Plur	21	amod	_	_
+19	dvoch	dva	NUM	NNfp2	Case=Gen|Gender=Fem|Number=Plur	13	nummod	_	_
+20	samostatných	samostatný	ADJ	AAnp2x	Case=Gen|Degree=Pos|Gender=Neut|Number=Plur	13	amod	_	_
 21	slov	slovo	NOUN	SSnp2	Case=Gen|Gender=Neut|Number=Plur	18	nmod	_	_
 22	-	-	PUNCT	Z	_	24	punct	_	_
 23	okolo	okolo	ADP	Eu2	AdpType=Prep|Case=Gen	24	case	_	_
 24	roku	rok	NOUN	SSis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	obl	_	_
 25	1170	1170	NUM	0	NumForm=Digit	24	nummod	_	_
 26	ako	ako	SCONJ	O	_	27	mark	_	_
-27	wîhe	wîhe	X	%	Foreign=Yes	24	dep	_	_
-28	naht	naht	X	%	Foreign=Yes	27	dep	_	_
+27	wîhe	wîhe	X	%	Foreign=Yes	7	dep	_	_
+28	naht	naht	X	%	Foreign=Yes	38	dep	_	_
 29	(	(	PUNCT	Z	_	30	punct	_	SpaceAfter=No
-30	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	27	dep	_	SpaceAfter=No
-31	:	:	PUNCT	Z	_	7	punct	_	_
+30	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	38	appos	_	SpaceAfter=No
+31	:	:	PUNCT	Z	_	30	punct	_	_
+32	[	[	PUNCT	Z	_	30	punct	_	SpaceAfter=No
+33	ví(	ví(	X	%	_	38	nmod	_	SpaceAfter=No
+34	h)e	h)e	X	T	_	35	advmod:emph	_	_
+35	nacht	nacht	X	%	_	38	appos	_	SpaceAfter=No
+36	]	]	PUNCT	Z	_	30	punct	_	SpaceAfter=No
+37	;	;	PUNCT	Z	_	38	punct	_	_
+38	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	10	appos	_	SpaceAfter=No
+39	:	:	PUNCT	Z	_	30	punct	_	_
+40	wîhe	wîhe	X	%	Foreign=Yes	38	appos	_	_
+41	=	=	PUNCT	Z	_	42	punct	_	_
+42	svätá	svätý	ADJ	AAfs1x	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	38	amod	_	SpaceAfter=No
+43	,	,	PUNCT	Z	_	44	punct	_	_
+44	naht	naht	X	%	Foreign=Yes	40	conj	_	_
+45	=	=	PUNCT	Z	_	46	punct	_	_
+46	noc	noc	NOUN	SSfs1	Case=Nom|Gender=Fem|Number=Sing	40	conj	_	SpaceAfter=No
+47	)	)	PUNCT	Z	_	38	punct	_	_
+48	a	a	CCONJ	O	_	52	cc	_	_
+49	okolo	okolo	ADP	Eu2	AdpType=Prep|Case=Gen	52	case	_	_
+50	1190	1190	NUM	0	NumForm=Digit	52	nummod	_	_
+51	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	52	case	_	_
+52	datíve	datív	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	38	conj	_	_
+53	ze	ze	ADP	Eu2	_	52	case	_	_
+54	wîhen	wîhen	X	%	Foreign=Yes	52	nmod	_	_
+55	naht	naht	X	%	Foreign=Yes	52	nmod	_	_
+56	(	(	PUNCT	Z	_	57	punct	_	SpaceAfter=No
+57	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	54	appos	_	SpaceAfter=No
+58	:	:	PUNCT	Z	_	57	punct	_	_
+59	[	[	PUNCT	Z	_	57	punct	_	SpaceAfter=No
+60	ce	ce	X	%	Foreign=Yes	66	nmod	_	_
+61	ví(	ví(	X	%	_	57	nmod	_	SpaceAfter=No
+62	h)en	h)en	X	%	Foreign=Yes	57	nmod	_	_
+63	nacht	nacht	X	%	Foreign=Yes	57	nmod	_	SpaceAfter=No
+64	]	]	PUNCT	Z	_	57	punct	_	SpaceAfter=No
+65	;	;	PUNCT	Z	_	66	punct	_	_
+66	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	54	appos	_	SpaceAfter=No
+67	:	:	PUNCT	Z	_	71	punct	_	_
+68	„	„	PUNCT	Z	_	71	punct	_	SpaceAfter=No
+69	k	k	ADP	Eu3	AdpType=Prep|Case=Dat	71	case	_	_
+70	svätej	svätý	ADJ	AAfs3x	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	71	amod	_	_
+71	noci	noc	NOUN	SSfs3	Case=Dat|Gender=Fem|Number=Sing	66	nmod	_	SpaceAfter=No
+72	“	“	PUNCT	Z	_	77	punct	_	SpaceAfter=No
+73	,	,	PUNCT	Z	_	77	punct	_	_
+74	čiže	čiže	CCONJ	O	_	77	cc	_	SpaceAfter=No
+75	:	:	PUNCT	Z	_	77	punct	_	_
+76	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	77	case	_	_
+77	Vianoce	vianoce	PROPN	SSfp4:r	Case=Acc|Gender=Fem|Number=Plur	66	appos	_	SpaceAfter=No
+78	)	)	PUNCT	Z	_	77	punct	_	SpaceAfter=No
+79	.	.	PUNCT	Z	_	7	punct	_	_
 
-# sent_id = 4
-# text = ; význam: wîhe = svätá, naht = noc) a okolo 1190 v datíve ze wîhen naht (vyslov:
-1	;	;	PUNCT	ZIP	_	2	punct	_	_
-2	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	:	:	PUNCT	ZIP	_	4	punct	_	_
-4	wîhe	wîhe	X	%	Foreign=Yes	2	appos	_	_
-5	=	=	PUNCT	ZIP	_	6	punct	_	_
-6	svätá	svätý	ADJ	AAfs1x	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No
-7	,	,	PUNCT	ZIP	_	8	punct	_	_
-8	naht	naht	X	%	Foreign=Yes	4	conj	_	_
-9	=	=	PUNCT	ZIP	_	10	punct	_	_
-10	noc	noc	NOUN	SSfs1	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No
-11	)	)	PUNCT	ZIP	_	4	punct	_	_
-12	a	a	CCONJ	O	_	16	cc	_	_
-13	okolo	okolo	ADP	Eu2	AdpType=Prep|Case=Gen	16	case	_	_
-14	1190	1190	NUM	0	NumForm=Digit	16	nummod	_	_
-15	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	16	case	_	_
-16	datíve	datív	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	2	conj	_	_
-17	ze	ze	ADP	Eu2	AdpType=Prep|Case=Gen	18	case	_	_
-18	wîhen	wîhen	X	%	Foreign=Yes	16	nmod	_	_
-19	naht	naht	X	%	Foreign=Yes	18	nmod	_	_
-20	(	(	PUNCT	Z	_	21	punct	_	SpaceAfter=No
-21	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	18	appos	_	SpaceAfter=No
-22	:	:	PUNCT	ZIP	_	2	punct	_	_
-
-# sent_id = 5
-# text = ; význam: „k svätej noci“, čiže: na Vianoce).
-1	;	;	PUNCT	Z	_	2	punct	_	_
-2	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
-3	:	:	PUNCT	Z	_	7	punct	_	_
-4	„	„	PUNCT	Z	_	7	punct	_	SpaceAfter=No
-5	k	k	ADP	Eu3	AdpType=Prep|Case=Dat	7	case	_	_
-6	svätej	svätý	ADJ	AAfs3x	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
-7	noci	noc	NOUN	SSfs3	Case=Dat|Gender=Fem|Number=Sing	2	appos	_	SpaceAfter=No
-8	“	“	PUNCT	Z	_	7	punct	_	SpaceAfter=No
-9	,	,	PUNCT	Z	_	13	punct	_	_
-10	čiže	čiže	CCONJ	O	_	13	cc	_	SpaceAfter=No
-11	:	:	PUNCT	Z	_	13	punct	_	_
-12	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	13	case	_	_
-13	Vianoce	vianoce	PROPN	SSfp4:r	Case=Acc|Gender=Fem|Number=Plur	7	appos	_	SpaceAfter=No
-14	)	)	PUNCT	Z	_	13	punct	_	SpaceAfter=No
-15	.	.	PUNCT	Z	_	2	punct	_	_
-
-# sent_id = 6
-# text = Veľmi častý bol v stredoveku tvar v datíve množného čísla ze den wîhen nahten (význam: „k svätým nociam“, čiže: na Vianoce), z ktorého pochádza dnešné zakončenia slova
+# sent_id = 3
+# text = Veľmi častý bol v stredoveku tvar v datíve množného čísla ze den wîhen nahten (význam: „k svätým nociam“, čiže: na Vianoce), z ktorého pochádza dnešné zakončenia slova Weihnachten na -nachten (namiesto „očakávaného“ tvaru -nächte); množné číslo malo zrejme vyjadrovať, že sa oslavuje viacero dní, ale môže mať aj inú príčinu.
 1	Veľmi	veľmi	ADV	Dx	Degree=Pos	2	advmod	_	_
 2	častý	častý	ADJ	AAis1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
 3	bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	2	cop	_	_
@@ -2634,24 +2680,24 @@
 8	datíve	datív	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	6	nmod	_	_
 9	množného	množný	ADJ	AAns2x	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
 10	čísla	číslo	NOUN	SSns2	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
-11	ze	ze	ADP	Eu2	AdpType=Prep|Case=Gen	12	case	_	_
-12	den	den	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	_
-13	wîhen	wîhen	X	%	Foreign=Yes	12	nmod	_	_
-14	nahten	nahten	X	%	Foreign=Yes	12	nmod	_	_
+11	ze	ze	ADP	Eu2	AdpType=Prep|Case=Gen	21	case	_	_
+12	den	den	X	%	Foreign=Yes	6	nmod	_	_
+13	wîhen	wîhen	X	%	Foreign=Yes	14	nmod	_	_
+14	nahten	nahten	X	%	Foreign=Yes	16	nmod	_	_
 15	(	(	PUNCT	Z	_	16	punct	_	SpaceAfter=No
 16	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	appos	_	SpaceAfter=No
 17	:	:	PUNCT	Z	_	16	punct	_	_
-18	„	„	PUNCT	Z	_	21	punct	_	SpaceAfter=No
+18	„	„	PUNCT	Z	_	16	punct	_	SpaceAfter=No
 19	k	k	ADP	Eu3	AdpType=Prep|Case=Dat	21	case	_	_
 20	svätým	svätý	ADJ	AAfp3x	Case=Dat|Degree=Pos|Gender=Fem|Number=Plur	21	amod	_	_
-21	nociam	nocie	NOUN	SSfp3	Case=Dat|Gender=Fem|Number=Plur	16	appos	_	SpaceAfter=No
+21	nociam	nocie	NOUN	SSfp3	Case=Dat|Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No
 22	“	“	PUNCT	Z	_	27	punct	_	SpaceAfter=No
 23	,	,	PUNCT	Z	_	27	punct	_	_
 24	čiže	čiže	CCONJ	O	_	27	cc	_	SpaceAfter=No
 25	:	:	PUNCT	Z	_	27	punct	_	_
 26	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	27	case	_	_
-27	Vianoce	vianoce	PROPN	SSfp4:r	Case=Acc|Gender=Fem|Number=Plur	16	appos	_	SpaceAfter=No
-28	)	)	PUNCT	Z	_	27	punct	_	SpaceAfter=No
+27	Vianoce	vianoce	PROPN	SSfp4	Case=Acc|Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No
+28	)	)	PUNCT	Z	_	42	punct	_	SpaceAfter=No
 29	,	,	PUNCT	Z	_	32	punct	_	_
 30	z	z	ADP	Eu2	AdpType=Prep|Case=Gen	31	case	_	_
 31	ktorého	ktorý	DET	PAis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|PronType=Int,Rel	32	obl	_	_
@@ -2659,42 +2705,39 @@
 33	dnešné	dnešný	ADJ	AAnp1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Plur	34	amod	_	_
 34	zakončenia	zakončenie	NOUN	SSnp1	Case=Nom|Gender=Neut|Number=Plur	32	nsubj	_	_
 35	slova	slovo	NOUN	SSns2	Case=Gen|Gender=Neut|Number=Sing	34	nmod	_	_
+36	Weihnachten	weihnachten	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	35	nmod	_	_
+37	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	38	case	_	_
+38	-nachten	-nachten	X	%	Foreign=Yes	34	nmod	_	_
+39	(	(	PUNCT	Z	_	42	punct	_	SpaceAfter=No
+40	namiesto	namiesto	ADP	Eu2	AdpType=Prep|Case=Gen	27	case	_	_
+41	„	„	PUNCT	Z	_	42	punct	_	SpaceAfter=No
+42	očakávaného	očakávaný	ADJ	Gtis2x	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	44	amod	_	SpaceAfter=No
+43	“	“	PUNCT	Z	_	42	punct	_	_
+44	tvaru	tvar	NOUN	SSis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	57	nmod	_	_
+45	-nächte	-nächte	X	%	Foreign=Yes	44	nmod	_	SpaceAfter=No
+46	)	)	PUNCT	Z	_	42	punct	_	SpaceAfter=No
+47	;	;	PUNCT	Z	_	50	punct	_	_
+48	množné	množný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	49	amod	_	_
+49	číslo	číslo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	50	nsubj	_	_
+50	malo	mať	VERB	VLescn+	Aspect=Imp|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	2	conj	_	_
+51	zrejme	zrejme	PART	T	_	52	advmod	_	_
+52	vyjadrovať	vyjadrovať	VERB	VIe+	Aspect=Imp|Polarity=Pos|VerbForm=Inf	50	xcomp	_	SpaceAfter=No
+53	,	,	PUNCT	Z	_	56	punct	_	_
+54	že	že	SCONJ	O	_	56	mark	_	_
+55	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	56	expl:pv	_	_
+56	oslavuje	oslavovať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	52	ccomp	_	_
+57	viacero	viacero	NUM	NUns4	Case=Nom|Gender=Neut|Number=Sing	56	nsubj	_	_
+58	dní	deň	NOUN	SSip2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	57	nmod	_	SpaceAfter=No
+59	,	,	PUNCT	Z	_	61	punct	_	_
+60	ale	ale	CCONJ	O	_	61	cc	_	_
+61	môže	môcť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	56	conj	_	_
+62	mať	mať	VERB	VIe+	Aspect=Imp|Polarity=Pos|VerbForm=Inf	61	xcomp	_	_
+63	aj	aj	PART	T	_	65	advmod:emph	_	_
+64	inú	iný	DET	PAfs4	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	65	det	_	_
+65	príčinu	príčina	NOUN	SSfs4	Case=Acc|Gender=Fem|Number=Sing	62	obj	_	SpaceAfter=No
+66	.	.	PUNCT	Z	_	2	punct	_	_
 
-# sent_id = 7
-# text = Weihnachten na -nachten (namiesto „očakávaného“ tvaru -nächte); množné číslo malo zrejme vyjadrovať, že sa oslavuje viacero dní, ale môže mať aj inú príčinu.
-1	Weihnachten	weihnachten	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	15	nsubj	_	_
-2	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	3	case	_	_
-3	-nachten	-nachten	X	%	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	_
-4	(	(	PUNCT	Z	_	9	punct	_	SpaceAfter=No
-5	namiesto	namiesto	ADP	Eu2	AdpType=Prep|Case=Gen	9	case	_	_
-6	„	„	PUNCT	Z	_	7	punct	_	SpaceAfter=No
-7	očakávaného	očakávaný	ADJ	Gtis2x	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	9	amod	_	SpaceAfter=No
-8	“	“	PUNCT	Z	_	7	punct	_	_
-9	tvaru	tvar	NOUN	SSis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
-10	-nächte	-nächte	X	%	Foreign=Yes	9	nmod	_	SpaceAfter=No
-11	)	)	PUNCT	Z	_	7	punct	_	SpaceAfter=No
-12	;	;	PUNCT	Z	_	15	punct	_	_
-13	množné	množný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	_
-14	číslo	číslo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
-15	malo	mať	VERB	VLescn+	Aspect=Imp|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	_	_
-16	zrejme	zrejme	PART	T	_	17	advmod	_	_
-17	vyjadrovať	vyjadrovať	VERB	VIe+	Aspect=Imp|Polarity=Pos|VerbForm=Inf	15	xcomp	_	SpaceAfter=No
-18	,	,	PUNCT	Z	_	21	punct	_	_
-19	že	že	SCONJ	O	_	21	mark	_	_
-20	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	21	expl:pv	_	_
-21	oslavuje	oslavovať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
-22	viacero	viacero	NUM	NUns4	Case=Acc|Gender=Neut|Number=Sing	21	nsubj	_	_
-23	dní	deň	NOUN	SSip2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No
-24	,	,	PUNCT	Z	_	26	punct	_	_
-25	ale	ale	CCONJ	O	_	26	cc	_	_
-26	môže	môcť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	21	conj	_	_
-27	mať	mať	VERB	VIe+	Aspect=Imp|Polarity=Pos|VerbForm=Inf	26	xcomp	_	_
-28	aj	aj	PART	T	_	30	advmod:emph	_	_
-29	inú	iný	DET	PAfs4	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	30	det	_	_
-30	príčinu	príčina	NOUN	SSfs4	Case=Acc|Gender=Fem|Number=Sing	27	obj	_	SpaceAfter=No
-31	.	.	PUNCT	Z	_	15	punct	_	_
-
-# sent_id = 8
+# sent_id = 4
 # text = Od 13. storočia sa vyskytujú aj tvary písané dovedna (t.j. ako jedno slovo), napr.: wîna(c)ht(en), wîhe(n)na(c)ht(en), wîena(c)ht.
 1	Od	od	ADP	Eu2	AdpType=Prep|Case=Gen	4	case	_	_
 2	13	13	NUM	0	NumForm=Digit	4	nummod	_	SpaceAfter=No
@@ -2734,8 +2777,8 @@
 36	c)ht	c)ht	X	%	Foreign=Yes	35	nmod	_	SpaceAfter=No
 37	.	.	PUNCT	Z	_	6	punct	_	_
 
-# sent_id = 9
-# text = Zhruba od 14. storočia sú doložené aj varianty dnešných tvarov, čiže obsahujúce na začiatku namiesto , napr. ako weynacht v Breslauer Urkundenbuch, weinacht v Endres Tuchers Baumeisterbuch der Stadt Nürnberg či priamo ako weynachten napr. u Luthera.
+# sent_id = 5
+# text = Zhruba od 14. storočia sú doložené aj varianty dnešných tvarov, čiže obsahujúce na začiatku [vaj-] namiesto [ví-], napr. ako weynacht[heilig] v Breslauer Urkundenbuch, weinacht[kaese] v Endres Tuchers Baumeisterbuch der Stadt Nürnberg či priamo ako weynachten napr. u Luthera.
 1	Zhruba	zhruba	PART	T	_	5	advmod:emph	_	_
 2	od	od	ADP	Eu2	AdpType=Prep|Case=Gen	5	case	_	_
 3	14	14	NUM	0	NumForm=Digit	5	nummod	_	SpaceAfter=No
@@ -2751,36 +2794,46 @@
 13	čiže	čiže	CCONJ	O	_	14	cc	_	_
 14	obsahujúce	obsahujúci	ADJ	Gkip1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos|VerbForm=Part|Voice=Act	9	amod	_	_
 15	na	na	ADP	Eu6	AdpType=Prep|Case=Loc	16	case	_	_
-16	začiatku	začiatok	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	14	obl	_	SpacesAfter=\s\s
-17	namiesto	namiesto	ADV	Dx	Degree=Pos	14	advmod	_	_
-18	,	,	PUNCT	Z	_	22	punct	_	_
-19	napr	napr	ADV	W	Abbr=Yes	22	cc	_	SpaceAfter=No
-20	.	.	PUNCT	Z	_	22	punct	_	_
-21	ako	ako	SCONJ	O	_	22	mark	_	_
-22	weynacht	weynacht	PROPN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	xcomp	_	_
-23	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	25	case	_	_
-24	Breslauer	breslauer	PROPN	SSns6:r	Case=Loc|Gender=Fem|Number=Sing	25	nmod	_	_
-25	Urkundenbuch	urkundenbuch	PROPN	SSns6:r	Case=Loc|Gender=Neut|Number=Sing	22	nmod	_	SpaceAfter=No
-26	,	,	PUNCT	Z	_	27	punct	_	_
-27	weinacht	weinacht	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	22	conj	_	_
-28	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	30	case	_	_
-29	Endres	endres	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	31	nmod	_	_
-30	Tuchers	tuchers	PROPN	SSms1:r	Foreign=Yes	27	nmod	_	_
-31	Baumeisterbuch	baumeisterbuch	X	%	Foreign=Yes	27	nmod	_	_
-32	der	der	X	%	Foreign=Yes	31	nmod	_	_
-33	Stadt	stadt	X	%	Foreign=Yes	31	nmod	_	_
-34	Nürnberg	nürnberg	PROPN	SSis1:r	Abbr=Yes	31	nmod	_	_
-35	či	či	CCONJ	O	_	27	cc	_	_
-36	priamo	priamo	ADV	Dx	Degree=Pos	22	conj	_	_
-37	ako	ako	SCONJ	O	_	38	mark	_	_
-38	weynachten	weynachten	PROPN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	31	xcomp	_	_
-39	napr	napr	ADV	W	Abbr=Yes	42	advmod:emph	_	SpaceAfter=No
-40	.	.	PUNCT	Z	_	39	punct	_	_
-41	u	u	ADP	Eu2	AdpType=Prep|Case=Gen	42	case	_	_
-42	Luthera	luther	PROPN	SSms2:r	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	36	dep	_	SpaceAfter=No
-43	.	.	PUNCT	Z	_	7	punct	_	_
+16	začiatku	začiatok	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	14	obl	_	_
+17	[	[	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+18	vaj-	vaj-	X	%	Foreign=Yes	9	nmod	_	SpaceAfter=No
+19	]	]	PUNCT	Z	_	18	punct	_	_
+20	namiesto	namiesto	ADP	Eu2	AdpType=Prep|Case=Gen	33	case	_	_
+21	[	[	PUNCT	Z	_	22	punct	_	SpaceAfter=No
+22	ví-	ví-	NUM	0	NumForm=Digit	18	appos	_	SpaceAfter=No
+23	]	]	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+24	,	,	PUNCT	Z	_	28	punct	_	_
+25	napr	napr	ADV	W	Abbr=Yes	33	cc	_	SpaceAfter=No
+26	.	.	PUNCT	Z	_	28	punct	_	_
+27	ako	ako	SCONJ	O	_	28	mark	_	_
+28	weynacht[	weynacht[	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	appos	_	SpaceAfter=No
+29	heilig	heilig	X	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	28	dep	_	SpaceAfter=No
+30	]	]	PUNCT	Z	_	28	punct	_	_
+31	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	33	case	_	_
+32	Breslauer	breslauer	PROPN	SSms1:r	Case=Loc|Gender=Fem|Number=Sing	33	nmod	_	_
+33	Urkundenbuch	urkundenbuch	PROPN	SSms1:r	Case=Loc|Gender=Neut|Number=Sing	28	appos	_	SpaceAfter=No
+34	,	,	PUNCT	Z	_	35	punct	_	_
+35	weinacht[	weinacht[	X	%	Foreign=Yes	33	conj	_	SpaceAfter=No
+36	kaese	kaese	X	%	Foreign=Yes	35	nmod	_	SpaceAfter=No
+37	]	]	PUNCT	Z	_	35	punct	_	_
+38	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	40	case	_	_
+39	Endres	endres	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	41	nmod	_	_
+40	Tuchers	tuchers	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	41	nmod	_	_
+41	Baumeisterbuch	baumeisterbuch	X	%	Foreign=Yes	35	nmod	_	_
+42	der	der	X	%	Foreign=Yes	40	nmod	_	_
+43	Stadt	stadt	X	%	Foreign=Yes	41	nmod	_	_
+44	Nürnberg	nürnberg	PROPN	SSis1:r	Abbr=Yes	41	nmod	_	_
+45	či	či	CCONJ	O	_	46	cc	_	_
+46	priamo	priamo	ADV	Dx	Degree=Pos	41	conj	_	_
+47	ako	ako	SCONJ	O	_	48	mark	_	_
+48	weynachten	weynachten	PROPN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	41	xcomp	_	_
+49	napr	napr	ADV	W	Abbr=Yes	52	advmod:emph	_	SpaceAfter=No
+50	.	.	PUNCT	Z	_	49	punct	_	_
+51	u	u	ADP	Eu2	AdpType=Prep|Case=Gen	52	case	_	_
+52	Luthera	luther	PROPN	SSms2:r	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
+53	.	.	PUNCT	Z	_	7	punct	_	_
 
-# sent_id = 10
+# sent_id = 6
 # text = Všetky stredoveké aj novoveké tvary boli najprv vo veľkej väčšine prípadov v pomnožnej podobe (dnešné Weihnachten), až od 18. storočia sa používa častejšie aj tvar v jednotnom čísle (dnešné Weihnacht).
 1	Všetky	všetok	DET	PFip1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	5	det	_	_
 2	stredoveké	stredoveký	ADJ	AAip1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	5	amod	_	_
@@ -2826,9 +2879,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Pokiaľ ide o vyššie uvedené stredoveké stredohornonemecké prídavné meno wî(c)h (vyslov:
+# text = Pokiaľ ide o vyššie uvedené stredoveké stredohornonemecké prídavné meno wî(c)h (vyslov: [vích]; ženský rod wîhe; význam: svätý), toto slovo pochádza zo starohornonemeckého wîh, podobne bolo v gótčine weihs.
 1	Pokiaľ	pokiaľ	SCONJ	O	_	2	mark	_	_
-2	ide	ísť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	ide	ísť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	30	advcl	_	_
 3	o	o	ADP	Eu4	AdpType=Prep|Case=Acc	9	case	_	_
 4	vyššie	vysoko	ADV	Dy	Degree=Cmp	5	advmod	_	_
 5	uvedené	uvedený	ADJ	Gtns4x	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	9	amod	_	_
@@ -2836,39 +2889,39 @@
 7	stredohornonemecké	stredohornonemecký	ADJ	AAns4x	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	_
 8	prídavné	prídavný	ADJ	AAns4x	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	_
 9	meno	meno	NOUN	SSns4	Case=Acc|Gender=Neut|Number=Sing	2	obl:arg	_	_
-10	wî(	wî(	PUNCT	Z	_	11	punct	_	SpaceAfter=No
+10	wî(	wî(	PUNCT	Z	_	13	punct	_	SpaceAfter=No
 11	c)h	c)h	X	0	Abbr=Yes	9	nmod	_	_
 12	(	(	PUNCT	Z	_	13	punct	_	SpaceAfter=No
 13	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	appos	_	SpaceAfter=No
 14	:	:	PUNCT	Z	_	13	punct	_	_
+15	[	[	PUNCT	Z	_	16	punct	_	SpaceAfter=No
+16	vích	vích	X	%	Foreign=Yes	13	appos	_	SpaceAfter=No
+17	]	]	PUNCT	Z	_	16	punct	_	SpaceAfter=No
+18	;	;	PUNCT	Z	_	20	punct	_	_
+19	ženský	ženský	ADJ	AAis1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	_
+20	rod	rod	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	appos	_	_
+21	wîhe	wîhe	X	%	Foreign=Yes	20	nmod	_	SpaceAfter=No
+22	;	;	PUNCT	Z	_	23	punct	_	_
+23	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	appos	_	SpaceAfter=No
+24	:	:	PUNCT	Z	_	25	punct	_	_
+25	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No
+26	)	)	PUNCT	Z	_	16	punct	_	SpaceAfter=No
+27	,	,	PUNCT	Z	_	2	punct	_	_
+28	toto	toto	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	29	det	_	_
+29	slovo	slovo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	30	nsubj	_	_
+30	pochádza	pochádzať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	_
+31	zo	z	ADP	Ev2	AdpType=Voc|Case=Gen	33	case	_	_
+32	starohornonemeckého	starohornonemecký	ADJ	AAns2x	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	33	amod	_	_
+33	wîh	wîh	INTJ	W	Abbr=Yes	30	obl	_	SpaceAfter=No
+34	,	,	PUNCT	Z	_	36	punct	_	_
+35	podobne	podobne	ADV	Dx	Degree=Pos	36	advmod	_	_
+36	bolo	byť	VERB	VLescn+	Aspect=Imp|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	30	conj	_	_
+37	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	38	case	_	_
+38	gótčine	gótčina	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	36	obl	_	_
+39	weihs	weihs	PROPN	SSis1:r	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	36	nsubj	_	SpaceAfter=No
+40	.	.	PUNCT	Z	_	30	punct	_	_
 
 # sent_id = 2
-# text = ; ženský rod wîhe; význam: svätý), toto slovo pochádza zo starohornonemeckého wîh, podobne bolo v gótčine weihs.
-1	;	;	PUNCT	Z	_	3	punct	_	_
-2	ženský	ženský	ADJ	AAis1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-3	rod	rod	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
-4	wîhe	wîhe	PROPN	%	Foreign=Yes	3	nmod	_	SpaceAfter=No
-5	;	;	PUNCT	Z	_	6	punct	_	_
-6	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	appos	_	SpaceAfter=No
-7	:	:	PUNCT	Z	_	8	punct	_	_
-8	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
-9	)	)	PUNCT	Z	_	8	punct	_	SpaceAfter=No
-10	,	,	PUNCT	Z	_	13	punct	_	_
-11	toto	toto	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	12	det	_	_
-12	slovo	slovo	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	13	nsubj	_	_
-13	pochádza	pochádzať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	3	conj	_	_
-14	zo	z	ADP	Ev2	AdpType=Voc|Case=Gen	16	case	_	_
-15	starohornonemeckého	starohornonemecký	ADJ	AAns2x	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	16	amod	_	_
-16	wîh	wîh	INTJ	W	Abbr=Yes	13	obl	_	SpaceAfter=No
-17	,	,	PUNCT	Z	_	19	punct	_	_
-18	podobne	podobne	ADV	Dx	Degree=Pos	19	advmod	_	_
-19	bolo	byť	VERB	VLescn+	Aspect=Imp|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	13	conj	_	_
-20	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	21	case	_	_
-21	gótčine	gótčina	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	19	obl	_	_
-22	weihs	weihs	PROPN	SSis1:r	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	19	nsubj	_	SpaceAfter=No
-23	.	.	PUNCT	Z	_	3	punct	_	_
-
-# sent_id = 3
 # text = Pôvod je germánske *weiha (význam: svätý).
 1	Pôvod	pôvod	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
 2	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -2881,7 +2934,7 @@
 9	)	)	PUNCT	Z	_	8	punct	_	SpaceAfter=No
 10	.	.	PUNCT	Z	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 3
 # text = Príbuzné tvary sú napr. staronordické vé (chrám), staroanglické wēoh či wīg (boží obraz) a latinské victima (obetné zviera).
 1	Príbuzné	príbuzný	ADJ	AAip1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	_
 2	tvary	tvar	NOUN	SSip1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_
@@ -2911,8 +2964,8 @@
 26	)	)	PUNCT	Z	_	25	punct	_	SpaceAfter=No
 27	.	.	PUNCT	Z	_	7	punct	_	_
 
-# sent_id = 5
-# text = Z slova wî(c)h sa vyvinulo okrem iného dnešné nemecké sloveso weihen (vyslov:; význam: (vy)svätiť); vo význame „svätý“ pôvodné wî(c)h prežíva už len v niektorých zloženinách na Weih-, inak sa „svätý“ v dnešnej nemčine už povie heilig.
+# sent_id = 4
+# text = Z slova wî(c)h sa vyvinulo okrem iného dnešné nemecké sloveso weihen (vyslov:[vaj(h)en]; význam: (vy)svätiť); vo význame „svätý“ pôvodné wî(c)h prežíva už len v niektorých zloženinách na Weih-, inak sa „svätý“ v dnešnej nemčine už povie heilig.
 1	Z	z	ADP	Eu2	AdpType=Prep|Case=Gen	2	case	_	_
 2	slova	slovo	NOUN	SSns2	Case=Gen|Gender=Neut|Number=Sing	6	obl	_	_
 3	wî(	wî(	PUNCT	Z	_	4	punct	_	SpaceAfter=No
@@ -2926,44 +2979,47 @@
 11	sloveso	sloveso	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
 12	weihen	weihen	X	%	Foreign=Yes	11	nmod	_	_
 13	(	(	PUNCT	Z	_	14	punct	_	SpaceAfter=No
-14	vyslov	vysel	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
-15	:	:	PUNCT	Z	_	14	punct	_	SpaceAfter=No
-16	;	;	PUNCT	Z	_	14	punct	_	_
-17	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
-18	:	:	PUNCT	Z	_	14	punct	_	_
-19	(	(	PUNCT	Z	_	20	punct	_	SpaceAfter=No
-20	vy)svätiť	vy)svätiť	VERB	VId+	Aspect=Perf|Polarity=Pos|VerbForm=Inf	17	acl	_	SpaceAfter=No
-21	)	)	PUNCT	Z	_	20	punct	_	SpaceAfter=No
-22	;	;	PUNCT	Z	_	31	punct	_	_
-23	vo	v	ADP	Ev6	AdpType=Voc|Case=Loc	24	case	_	_
-24	význame	význam	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	31	obl	_	_
-25	„	„	PUNCT	Z	_	26	punct	_	SpaceAfter=No
-26	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
-27	“	“	PUNCT	Z	_	26	punct	_	_
-28	pôvodné	pôvodný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	24	amod	_	_
-29	wî(	wî(	X	Z	_	26	punct	_	SpaceAfter=No
-30	c)h	c)h	X	0	_	26	flat:foreign	_	_
-31	prežíva	prežívať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
-32	už	už	PART	T	_	36	advmod:emph	_	_
-33	len	len	PART	T	_	36	advmod:emph	_	_
-34	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	36	case	_	_
-35	niektorých	niektorý	DET	PAfp6	Case=Loc|Gender=Fem|Number=Plur|PronType=Ind	36	det	_	_
-36	zloženinách	zloženina	NOUN	SSfp6	Case=Loc|Gender=Fem|Number=Plur	31	obl	_	_
-37	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	38	case	_	_
-38	Weih-	weih-	PROPN	SUfs4:r	Case=Acc|Gender=Fem|Number=Sing	31	obl:arg	_	SpaceAfter=No
-39	,	,	PUNCT	Z	_	49	punct	_	_
-40	inak	inak	ADV	PD	PronType=Ind	49	advmod	_	_
-41	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	49	expl:pv	_	_
-42	„	„	PUNCT	Z	_	43	punct	_	SpaceAfter=No
-43	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	49	nsubj	_	SpaceAfter=No
-44	“	“	PUNCT	Z	_	43	punct	_	_
-45	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	47	case	_	_
-46	dnešnej	dnešný	ADJ	AAfs6x	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	47	amod	_	_
-47	nemčine	nemčina	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	49	obl	_	_
-48	už	už	PART	T	_	49	advmod	_	_
-49	povie	povedať	VERB	VKdsc+	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	31	conj	_	_
-50	heilig	heilig	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	49	nsubj	_	SpaceAfter=No
-51	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
+14	vyslov	vyslov	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
+15	:[	:[	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+16	vaj(	vaj(	X	%	Foreign=Yes	14	nmod	_	SpaceAfter=No
+17	h)en	h)en	X	%	Foreign=Yes	14	nmod	_	SpaceAfter=No
+18	]	]	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+19	;	;	PUNCT	Z	_	14	punct	_	_
+20	význam	význam	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
+21	:	:	PUNCT	Z	_	29	punct	_	_
+22	(	(	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+23	vy)svätiť	vy)svätiť	VERB	VId+	Aspect=Perf|Polarity=Pos|VerbForm=Inf	20	acl	_	SpaceAfter=No
+24	)	)	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+25	;	;	PUNCT	Z	_	34	punct	_	_
+26	vo	v	ADP	Ev6	AdpType=Voc|Case=Loc	27	case	_	_
+27	význame	význam	NOUN	SSis6	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	34	obl	_	_
+28	„	„	PUNCT	Z	_	29	punct	_	SpaceAfter=No
+29	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	27	amod	_	SpaceAfter=No
+30	“	“	PUNCT	Z	_	29	punct	_	_
+31	pôvodné	pôvodný	ADJ	AAns1x	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	27	amod	_	_
+32	wî(	wî(	X	Z	_	29	punct	_	SpaceAfter=No
+33	c)h	c)h	X	0	_	29	flat:foreign	_	_
+34	prežíva	prežívať	VERB	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
+35	už	už	PART	T	_	39	advmod:emph	_	_
+36	len	len	PART	T	_	39	advmod:emph	_	_
+37	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	39	case	_	_
+38	niektorých	niektorý	DET	PAfp6	Case=Loc|Gender=Fem|Number=Plur|PronType=Ind	39	det	_	_
+39	zloženinách	zloženina	NOUN	SSfp6	Case=Loc|Gender=Fem|Number=Plur	34	obl	_	_
+40	na	na	ADP	Eu4	AdpType=Prep|Case=Acc	41	case	_	_
+41	Weih-	weih-	PROPN	SUfs4:r	Case=Acc|Gender=Fem|Number=Sing	34	obl:arg	_	SpaceAfter=No
+42	,	,	PUNCT	Z	_	52	punct	_	_
+43	inak	inak	ADV	PD	PronType=Ind	52	advmod	_	_
+44	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	52	expl:pv	_	_
+45	„	„	PUNCT	Z	_	46	punct	_	SpaceAfter=No
+46	svätý	svätý	ADJ	AAms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	52	nsubj	_	SpaceAfter=No
+47	“	“	PUNCT	Z	_	46	punct	_	_
+48	v	v	ADP	Eu6	AdpType=Prep|Case=Loc	50	case	_	_
+49	dnešnej	dnešný	ADJ	AAfs6x	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	50	amod	_	_
+50	nemčine	nemčina	NOUN	SSfs6	Case=Loc|Gender=Fem|Number=Sing	52	obl	_	_
+51	už	už	PART	T	_	52	advmod	_	_
+52	povie	povedať	VERB	VKdsc+	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	34	conj	_	_
+53	heilig	heilig	NOUN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	52	nsubj	_	SpaceAfter=No
+54	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = slovak-snk-ud-2.6-200830

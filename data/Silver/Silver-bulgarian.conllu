@@ -374,7 +374,7 @@
 8	.	.	PUNCT	punct	_	1	punct	_	_
 
 # sent_id = 3
-# text = Има минерали, в които съдържанието на сребро надвишава 50%, като например Ag2S, аргентит; AgCl, рогово сребро или кераргирит; Ag3, прираргирит; Ag3, прустит и др.
+# text = Има минерали, в които съдържанието на сребро надвишава 50%, като например Ag2S, аргентит; AgCl, рогово сребро или кераргирит; Ag3[SbS3], прираргирит; Ag3[AsS3], прустит и др.
 1	Има	имам	VERB	Vnitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	минерали	минерал	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	1	obj	_	SpaceAfter=No
 3	,	,	PUNCT	punct	_	9	punct	_	_
@@ -389,7 +389,7 @@
 12	,	,	PUNCT	punct	_	15	punct	_	_
 13	като	като	SCONJ	Cs	_	15	case	_	_
 14	например	например	ADV	Dd	Degree=Pos	15	advmod	_	_
-15	Ag2S	ag2s	PROPN	Mc-pi	Definite=Ind|Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No
+15	Ag2S	ag2s	PROPN	Mc-pi	Definite=Ind|Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
 16	,	,	PUNCT	punct	_	17	punct	_	_
 17	аргентит	аргентит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No
 18	;	;	PUNCT	punct	_	19	punct	_	_
@@ -400,15 +400,20 @@
 23	или	или	CCONJ	Cp	_	24	cc	_	_
 24	кераргирит	кераргирит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No
 25	;	;	PUNCT	punct	_	26	punct	_	_
-26	Ag3	ag3	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	15	conj	_	SpaceAfter=No
-27	,	,	PUNCT	punct	_	28	punct	_	_
-28	прираргирит	прираргирит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No
-29	;	;	PUNCT	punct	_	30	punct	_	_
-30	Ag3	ag3	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	15	conj	_	SpaceAfter=No
-31	,	,	PUNCT	punct	_	32	punct	_	_
-32	прустит	прустит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	_
-33	и	и	CCONJ	Cp	_	34	cc	_	_
-34	др.	друг	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	15	conj	_	_
+26	Ag3	ag3	PROPN	Mc-pi	_	15	conj	_	SpaceAfter=No
+27	[	[	PUNCT	punct	_	28	punct	_	SpaceAfter=No
+28	SbS3	sbs3	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+29	]	]	PUNCT	punct	_	28	punct	_	SpaceAfter=No
+30	,	,	PUNCT	punct	_	31	punct	_	_
+31	прираргирит	прираргирит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No
+32	;	;	PUNCT	punct	_	33	punct	_	_
+33	Ag3[	ag3[	PROPN	Mc-pi	_	34	cc	_	SpaceAfter=No
+34	AsS3	ass3	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	26	conj	_	SpaceAfter=No
+35	]	]	PUNCT	punct	_	34	punct	_	SpaceAfter=No
+36	,	,	PUNCT	punct	_	37	punct	_	_
+37	прустит	прустит	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	15	conj	_	_
+38	и	и	CCONJ	Cp	_	39	cc	_	_
+39	др.	друг	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	15	conj	_	_
 
 # sent_id = 4
 # text = В рудите си среброто се свъзва със сяра, селен, телур или халогени.
@@ -806,7 +811,7 @@
 19	.	.	PUNCT	punct	_	12	punct	_	_
 
 # sent_id = 3
-# text = Когато рудата е Ag2S или AgCl, тя се обработва по подходящ начин с NaCN, при което се получава Na.
+# text = Когато рудата е Ag2S или AgCl, тя се обработва по подходящ начин с NaCN, при което се получава Na[Ag(CN)2].
 1	Когато	когато	ADV	Prt	PronType=Rel	4	advmod	_	_
 2	рудата	руда	NOUN	Ncfsd	Definite=Def|Gender=Fem|Number=Sing	4	nsubj	_	_
 3	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
@@ -827,8 +832,14 @@
 18	което	който	PRON	Pre-os-n	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	20	obl	_	_
 19	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	20	expl	_	_
 20	получава	получавам	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	acl:relcl	_	_
-21	Na	na	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	20	nsubj:pass	_	SpaceAfter=No
-22	.	.	PUNCT	punct	_	10	punct	_	_
+21	Na[	na[	NOUN	Ncmsi	_	20	nsubj	_	SpaceAfter=No
+22	Ag	ag	PROPN	Npmsi	_	21	nmod	_	SpaceAfter=No
+23	(	(	PUNCT	punct	_	24	punct	_	SpaceAfter=No
+24	CN	cn	PROPN	Npnsi	_	22	discourse	_	SpaceAfter=No
+25	)	)	PUNCT	punct	_	24	punct	_	SpaceAfter=No
+26	2	два	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	22	nummod	_	SpaceAfter=No
+27	]	]	PUNCT	punct	_	24	punct	_	SpaceAfter=No
+28	.	.	PUNCT	punct	_	10	punct	_	_
 
 # sent_id = 4
 # text = Тази комплексна сол се подлага на електролиза, при което среброто се отлага на катода.
@@ -2154,7 +2165,7 @@
 
 # newpar
 # sent_id = 12
-# text = {\displaystyle {\ce {2Ag + 4HI -> 2H + H2}}}
+# text = {\displaystyle {\ce {2Ag + 4HI -> 2H[AgI2] + H2}}}
 1	{	{	PUNCT	punct	_	3	punct	_	SpaceAfter=No
 2	\	\	ADP	R	_	3	case	_	SpaceAfter=No
 3	displaystyle	displaystyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
@@ -2165,12 +2176,14 @@
 8	+	и	CCONJ	Cc	_	9	cc	_	_
 9	4HI	4hi	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	_
 10	->	->	PUNCT	punct	_	11	punct	_	_
-11	2H	2h	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	_
-12	+	и	CCONJ	Cc	_	13	cc	_	_
-13	H2	h2	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	SpaceAfter=No
-14	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-15	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-16	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n
+11	2H[	2h[	NUM	Mc-pi	_	7	conj	_	SpaceAfter=No
+12	AgI2	agi2	NUM	Mc-pi	_	7	conj	_	SpaceAfter=No
+13	]	]	PUNCT	punct	_	11	punct	_	_
+14	+	+	CCONJ	Cp	_	15	cc	_	_
+15	H2	h2	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	SpaceAfter=No
+16	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+17	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+18	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 13
@@ -2202,7 +2215,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Алкалните цианиди в присъствие на кислорода го атакуват поради образуването на комплексното съединиение аргентоцианид – напр. натриев аргентоцианид (Na).
+# text = Алкалните цианиди в присъствие на кислорода го атакуват поради образуването на комплексното съединиение аргентоцианид – напр. натриев аргентоцианид (Na[Ag(CN)2]).
 1	Алкалните	алкален	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	2	amod	_	_
 2	цианиди	цианид	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	8	nsubj	_	_
 3	в	в	ADP	R	_	4	case	_	_
@@ -2222,9 +2235,14 @@
 17	натриев	натриев	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
 18	аргентоцианид	аргентоцианид	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	16	nmod	_	_
 19	(	(	PUNCT	punct	_	20	punct	_	SpaceAfter=No
-20	Na	na	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	18	discourse	_	SpaceAfter=No
-21	)	)	PUNCT	punct	_	20	punct	_	SpaceAfter=No
-22	.	.	PUNCT	punct	_	8	punct	_	_
+20	Na[	na[	PROPN	Tt	_	18	discourse	_	SpaceAfter=No
+21	Ag(	ag(	PROPN	Tt	_	20	flat	_	SpaceAfter=No
+22	CN	cn	PROPN	Npnsi	_	20	flat	_	SpaceAfter=No
+23	)	)	PUNCT	punct	_	20	punct	_	SpaceAfter=No
+24	2	2	PROPN	M	_	20	flat	_	SpaceAfter=No
+25	]	]	PUNCT	punct	_	20	punct	_	SpaceAfter=No
+26	)	)	PUNCT	punct	_	20	punct	_	SpaceAfter=No
+27	.	.	PUNCT	punct	_	8	punct	_	_
 
 # sent_id = 2
 # text = Почти всички метали го изместват в елементарно състояние от водните разтвори на неговите соли, например:
@@ -3145,23 +3163,28 @@
 
 # newpar
 # sent_id = 8
-# text = {\displaystyle {\ce {AgF + 2KCN -> K + KF}}}
+# text = {\displaystyle {\ce {AgF + 2KCN -> K[Ag(CN)2] + KF}}}
 1	{	{	PUNCT	punct	_	3	punct	_	SpaceAfter=No
 2	\	\	ADP	R	_	3	case	_	SpaceAfter=No
 3	displaystyle	displaystyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
 4	{	{	PUNCT	punct	_	5	punct	_	SpaceAfter=No
-5	\ce	\ce	NOUN	Cc	_	3	nmod	_	_
+5	\ce	\ce	NOUN	Npmsi	_	3	nmod	_	_
 6	{	{	PUNCT	punct	_	7	punct	_	SpaceAfter=No
-7	AgF	agf	PROPN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	5	nmod	_	_
+7	AgF	agf	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	5	nmod	_	_
 8	+	+	CCONJ	punct	_	9	cc	_	_
 9	2KCN	2kcn	PROPN	Npmsi	_	7	conj	_	_
 10	->	->	PUNCT	punct	_	11	punct	_	_
-11	K	k	NOUN	Ncnsi	_	7	conj	_	_
-12	+	и	CCONJ	Cc	_	13	cc	_	_
-13	KF	kf	PROPN	Npmsi	Definite=Ind|Gender=Neut|Number=Sing	7	conj	_	SpaceAfter=No
-14	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-15	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-16	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
+11	K[	k[	PROPN	punct	_	7	conj	_	SpaceAfter=No
+12	Ag(	ag(	PROPN	punct	_	11	nmod	_	SpaceAfter=No
+13	CN	cn	PROPN	Npnsi	_	11	flat	_	SpaceAfter=No
+14	)	)	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+15	2	два	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	11	nummod	_	SpaceAfter=No
+16	]	]	PUNCT	punct	_	11	punct	_	_
+17	+	+	CCONJ	Cc	_	18	cc	_	_
+18	KF	kf	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No
+19	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+20	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+21	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -3273,7 +3296,7 @@
 
 # newpar
 # sent_id = 21
-# text = {\displaystyle {\ce {AgF + 2Na2S2O3 -> Na3 + NaF}}}
+# text = {\displaystyle {\ce {AgF + 2Na2S2O3 -> Na3[Ag(S2O3)2] + NaF}}}
 1	{	{	PUNCT	punct	_	3	punct	_	SpaceAfter=No
 2	\	\	ADP	R	_	3	case	_	SpaceAfter=No
 3	displaystyle	displaystyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
@@ -3284,12 +3307,18 @@
 8	+	+	CCONJ	punct	_	9	cc	_	_
 9	2Na2S2O3	2na2s2o3	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	7	conj	_	_
 10	->	->	PUNCT	punct	_	7	punct	_	_
-11	Na3	na3	PROPN	Mc-pi	_	7	conj	_	_
-12	+	и	CCONJ	Cc	_	13	cc	_	_
-13	NaF	naf	PROPN	Npmsi	_	7	conj	_	SpaceAfter=No
-14	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-15	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-16	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
+11	Na3[	na3[	PROPN	Mc-pi	_	7	conj	_	SpaceAfter=No
+12	Ag	ag	PROPN	Ncnsi	_	7	conj	_	SpaceAfter=No
+13	(	(	PUNCT	punct	_	14	punct	_	SpaceAfter=No
+14	S2O3	s2o3	PROPN	Mc-pi	_	12	discourse	_	SpaceAfter=No
+15	)	)	PUNCT	punct	_	14	punct	_	SpaceAfter=No
+16	2	два	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	14	conj	_	SpaceAfter=No
+17	]	]	PUNCT	punct	_	14	punct	_	_
+18	+	+	CCONJ	Cc	_	19	cc	_	_
+19	NaF	naf	PROPN	Npmsi	_	7	conj	_	SpaceAfter=No
+20	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+21	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+22	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -3334,7 +3363,7 @@
 6	.	.	PUNCT	punct	_	1	punct	_	_
 
 # sent_id = 2
-# text = Много малко разтворим във вода: 1 литър вода разтваря при 18 °С около 1,2×10-5 мола AgCl, но се разтваря в разтвори на цианиди, амоняк, тиосулфати поради образуването на комплексни съединения, респ. йоните , , . Не се разтваря в киселини, обаче концентрирана HCl го разтваря доста поради образуването на комплексните йони -.
+# text = Много малко разтворим във вода: 1 литър вода разтваря при 18 °С около 1,2×10-5 мола AgCl, но се разтваря в разтвори на цианиди, амоняк, тиосулфати поради образуването на комплексни съединения, респ. йоните [Ag(NH3)2], [Ag(CN)2], [Ag(S2O3)2].
 1	Много	много	ADV	Md-pi	Definite=Ind|Degree=Pos|Number=Plur|NumType=Card	2	advmod	_	_
 2	малко	малко	ADV	Md-pi	Definite=Ind|Degree=Pos|Number=Plur|NumType=Card	3	advmod	_	_
 3	разтворим	разтворя-(се)	VERB	Vpptcv--smi	Aspect=Perf|Definite=Ind|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -3370,32 +3399,57 @@
 33	комплексни	комплексен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	34	amod	_	_
 34	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	31	nmod	_	SpaceAfter=No
 35	,	,	PUNCT	punct	_	36	punct	_	_
-36	респ.	респ.	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	34	nmod	_	_
-37	йоните	йон	NOUN	Ncmpd	Definite=Def|Gender=Masc|Number=Plur	36	nmod	_	_
-38	,	,	PUNCT	punct	_	36	punct	_	_
-39	,	,	PUNCT	punct	_	43	punct	_	_
-40	.	.	PUNCT	punct	_	43	punct	_	_
-41	Не	не	PART	Tn	Polarity=Neg	43	advmod	_	_
-42	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	43	expl	_	_
-43	разтваря	разтварям-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
-44	в	в	ADP	R	_	45	case	_	_
-45	киселини	киселина	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	43	iobj	_	SpaceAfter=No
-46	,	,	PUNCT	punct	_	51	punct	_	_
-47	обаче	обаче	ADV	Dd	Degree=Pos	51	advmod	_	_
-48	концентрирана	концентрирам	ADJ	Vpptcv--sfi	Aspect=Perf|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	49	amod	_	_
-49	HCl	hcl	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	51	nsubj	_	_
-50	го	аз	PRON	Ppetas3m	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	51	obj	_	_
-51	разтваря	разтварям-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	43	conj	_	_
-52	доста	доста	ADV	Dq	Degree=Pos	51	advmod	_	_
-53	поради	поради	ADP	R	_	54	case	_	_
-54	образуването	образуване	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	51	obl	_	_
-55	на	на	ADP	R	_	57	case	_	_
-56	комплексните	комплексен	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	57	amod	_	_
-57	йони	йон	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	54	nmod	_	_
-58	-	-	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+36	респ.	респ.	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	23	nmod	_	_
+37	йоните	йон	NOUN	Ncmpd	Definite=Def|Gender=Masc|Number=Plur	36	nsubj	_	_
+38	[	[	PUNCT	punct	_	39	punct	_	SpaceAfter=No
+39	Ag	ag	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	37	nmod	_	SpaceAfter=No
+40	(	(	PUNCT	punct	_	41	punct	_	SpaceAfter=No
+41	NH3	nh3	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	39	nmod	_	SpaceAfter=No
+42	)	)	PUNCT	punct	_	41	punct	_	SpaceAfter=No
+43	2	два	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	39	nummod	_	SpaceAfter=No
+44	]	]	PUNCT	punct	_	39	punct	_	SpaceAfter=No
+45	,	,	PUNCT	punct	_	47	punct	_	_
+46	[	[	PUNCT	punct	_	47	punct	_	SpaceAfter=No
+47	Ag(	ag(	PROPN	Nc	_	39	conj	_	SpaceAfter=No
+48	CN	cn	PROPN	Npmsi	_	47	nmod	_	SpaceAfter=No
+49	)	)	PUNCT	punct	_	47	punct	_	SpaceAfter=No
+50	2	два	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	47	nummod	_	SpaceAfter=No
+51	]	]	PUNCT	punct	_	47	punct	_	SpaceAfter=No
+52	,	,	PUNCT	punct	_	54	punct	_	_
+53	[	[	PUNCT	punct	_	54	punct	_	SpaceAfter=No
+54	Ag	ag	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	39	conj	_	SpaceAfter=No
+55	(	(	PUNCT	punct	_	56	punct	_	SpaceAfter=No
+56	S2O3	s2o3	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	54	discourse	_	SpaceAfter=No
+57	)2	)2	PUNCT	punct	_	56	punct	_	SpaceAfter=No
+58	]	]	PUNCT	punct	_	54	punct	_	SpaceAfter=No
 59	.	.	PUNCT	punct	_	3	punct	_	_
 
 # sent_id = 3
+# text = Не се разтваря в киселини, обаче концентрирана HCl го разтваря доста поради образуването на комплексните йони [AgCl2]-.
+1	Не	не	PART	Tn	Polarity=Neg	3	advmod	_	_
+2	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	3	expl	_	_
+3	разтваря	разтварям-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	в	в	ADP	R	_	5	case	_	_
+5	киселини	киселина	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	3	iobj	_	SpaceAfter=No
+6	,	,	PUNCT	punct	_	11	punct	_	_
+7	обаче	обаче	ADV	Dd	Degree=Pos	11	advmod	_	_
+8	концентрирана	концентрирам	ADJ	Vpptcv--sfi	Aspect=Perf|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	amod	_	_
+9	HCl	hcl	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	11	nsubj	_	_
+10	го	аз	PRON	Ppetas3m	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+11	разтваря	разтварям-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+12	доста	доста	ADV	Dq	Degree=Pos	11	advmod	_	_
+13	поради	поради	ADP	R	_	14	case	_	_
+14	образуването	образуване	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	11	obl	_	_
+15	на	на	ADP	R	_	17	case	_	_
+16	комплексните	комплексен	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	17	amod	_	_
+17	йони	йон	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	14	nmod	_	_
+18	[	[	PUNCT	punct	_	19	punct	_	SpaceAfter=No
+19	AgCl2	agcl2	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	17	nmod	_	SpaceAfter=No
+20	]	]	PUNCT	punct	_	19	punct	_	SpaceAfter=No
+21	-	-	PUNCT	punct	_	19	punct	_	SpaceAfter=No
+22	.	.	PUNCT	punct	_	3	punct	_	_
+
+# sent_id = 4
 # text = Относителна плътност 5,5 – 5,6.
 1	Относителна	относителен	ADJ	Afsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	плътност	плътност	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
@@ -3404,7 +3458,7 @@
 5	5,6	5,6	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	3	conj	_	SpaceAfter=No
 6	.	.	PUNCT	punct	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = Топи се при 450 °С и образува оранжева течност, която затвърдява в рогоподобна маса.
 1	Топи	топя-(се)	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	1	expl	_	_
@@ -3423,7 +3477,7 @@
 15	маса	маса	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	12	iobj	_	SpaceAfter=No
 16	.	.	PUNCT	punct	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = Тъй като AgCl има термично разширение почти като стъклото и добра адхезия към него, понякога се използва като спойка между стъклени плочи.
 1	Тъй	така	ADV	Pdm	PronType=Dem	4	mark	_	_
 2	като	като	SCONJ	Cs	_	1	fixed	_	_
@@ -3681,7 +3735,7 @@
 16	.	.	PUNCT	punct	_	13	punct	_	_
 
 # sent_id = 4
-# text = С HI и алкалните йодиди образува доста стабилни и при това с голямо разнообразие комплексни съединения: K2, K и др.
+# text = С HI и алкалните йодиди образува доста стабилни и при това с голямо разнообразие комплексни съединения: K2[AgI3], K[AgI2] и др.
 1	С	с	ADP	R	_	2	case	_	_
 2	HI	hi	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	6	obl	_	_
 3	и	и	CCONJ	Cp	_	5	cc	_	_
@@ -3697,13 +3751,17 @@
 13	голямо	голям	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	_
 14	разнообразие	разнообразие	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	_
 15	комплексни	комплексен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	16	amod	_	_
-16	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	6	obj	_	SpaceAfter=No
+16	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	6	nsubj	_	SpaceAfter=No
 17	:	:	PUNCT	punct	_	18	punct	_	_
-18	K2	k2	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	16	nmod	_	SpaceAfter=No
-19	,	,	PUNCT	punct	_	20	punct	_	_
-20	K	k	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	18	conj	_	_
-21	и	и	CCONJ	Cp	_	22	cc	_	_
-22	др.	друг	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	18	conj	_	_
+18	K2[	k2[	NUM	Mc-pi	_	16	nmod	_	SpaceAfter=No
+19	AgI3	agi3	PROPN	Mc-pi	_	18	flat	_	SpaceAfter=No
+20	]	]	PUNCT	punct	_	18	punct	_	SpaceAfter=No
+21	,	,	PUNCT	punct	_	22	punct	_	_
+22	K[	k[	PROPN	Npmsi	_	18	conj	_	SpaceAfter=No
+23	AgI2	agi2	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	22	flat	_	SpaceAfter=No
+24	]	]	PUNCT	punct	_	22	punct	_	_
+25	и	и	CCONJ	Cp	_	26	cc	_	_
+26	др.	друг	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	18	conj	_	_
 
 # sent_id = 5
 # text = Интересно е, че полиморфната форма γ-AgI е около 4000 пъти по-електропроводима, отколкото α-AgI.
@@ -4380,7 +4438,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Йонът Ag2+ се получава в оранжев преходен вид 2+ чрез окисление на сребърни (+1) соли с озон в силно кисел разтвор.
+# text = Йонът Ag2+ се получава в оранжев преходен вид [Ag(H2O)6]2+ чрез окисление на сребърни (+1) соли с озон в силно кисел разтвор.
 1	Йонът	йон	NOUN	Ncmsf	Definite=Def|Gender=Masc|Number=Sing	4	nsubj	_	_
 2	Ag2+	ag2+	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	1	nmod	_	_
 3	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
@@ -4389,22 +4447,27 @@
 6	оранжев	оранжев	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
 7	преходен	преходен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
 8	вид	вид	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	4	iobj	_	_
-9	2+	2+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	8	nummod	_	_
-10	чрез	чрез	ADP	R	_	11	case	_	_
-11	окисление	окисление	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	_
-12	на	на	ADP	R	_	17	case	_	_
-13	сребърни	сребърен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	17	amod	_	_
-14	(	(	PUNCT	punct	_	15	punct	_	SpaceAfter=No
-15	+1	+1	NUM	Mc-pi	Definite=Ind|Gender=Neut|Number=Sing|NumType=Card	13	conj	_	SpaceAfter=No
-16	)	)	PUNCT	punct	_	15	punct	_	_
-17	соли	сола	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	11	nmod	_	_
-18	с	с	ADP	R	_	19	case	_	_
-19	озон	озон	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	17	nmod	_	_
-20	в	в	ADP	R	_	23	case	_	_
-21	силно	силно	ADV	Dm	Degree=Pos	22	advmod	_	_
-22	кисел	кисел	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	23	amod	_	_
-23	разтвор	разтвор	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
-24	.	.	PUNCT	punct	_	4	punct	_	_
+9	[	[	PUNCT	punct	_	10	punct	_	SpaceAfter=No
+10	Ag	ag	PROPN	Npmsi	_	8	nmod	_	SpaceAfter=No
+11	(	(	PUNCT	punct	_	12	punct	_	SpaceAfter=No
+12	H2O	h2o	PROPN	Np	_	10	nmod	_	SpaceAfter=No
+13	)6	)6	PUNCT	punct	_	12	punct	_	SpaceAfter=No
+14	]2+	]2+	NUM	Mc-pi	_	10	nummod	_	_
+15	чрез	чрез	ADP	R	_	16	case	_	_
+16	окисление	окисление	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	_
+17	на	на	ADP	R	_	22	case	_	_
+18	сребърни	сребърен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	22	amod	_	_
+19	(	(	PUNCT	punct	_	20	punct	_	SpaceAfter=No
+20	+1	+1	NUM	Mc-pi	Definite=Ind|Gender=Neut|Number=Sing|NumType=Card	18	conj	_	SpaceAfter=No
+21	)	)	PUNCT	punct	_	20	punct	_	_
+22	соли	сола	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	16	nmod	_	_
+23	с	с	ADP	R	_	24	case	_	_
+24	озон	озон	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	22	nmod	_	_
+25	в	в	ADP	R	_	28	case	_	_
+26	силно	силно	ADV	Dm	Degree=Pos	27	advmod	_	_
+27	кисел	кисел	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	28	amod	_	_
+28	разтвор	разтвор	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	punct	_	4	punct	_	_
 
 # sent_id = 2
 # text = Лесно редуцира водата до кислород.
@@ -4800,23 +4863,25 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Известни са също К, както и съединения с комплексен характер и относително сложен състав.
+# text = Известни са също К[AgF4], както и съединения с комплексен характер и относително сложен състав.
 1	Известни	известен	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	0	root	_	_
 2	са	съм	AUX	Vxitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
 3	също	също	ADV	Dm	Degree=Pos	4	advmod	_	_
-4	К	к	PROPN	Npmsi	Definite=Ind|Gender=Neut|Number=Sing	1	nsubj	_	SpaceAfter=No
-5	,	,	PUNCT	punct	_	6	punct	_	_
-6	както	както	ADV	Prm	PronType=Rel	8	cc	_	_
-7	и	и	CCONJ	Cp	_	6	fixed	_	_
-8	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	4	conj	_	_
-9	с	с	ADP	R	_	11	case	_	_
-10	комплексен	комплексен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
-11	характер	характер	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	8	nmod	_	_
-12	и	и	CCONJ	Cp	_	15	cc	_	_
-13	относително	относително	ADV	Dm	Degree=Pos	14	advmod	_	_
-14	сложен	сложен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
-15	състав	състав	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
-16	.	.	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+4	К[	к[	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	AgF4	agf4	PROPN	Npmsi	_	4	flat	_	SpaceAfter=No
+6	]	]	PUNCT	punct	_	4	punct	_	SpaceAfter=No
+7	,	,	PUNCT	punct	_	8	punct	_	_
+8	както	както	ADV	Prm	PronType=Rel	10	cc	_	_
+9	и	и	CCONJ	Cp	_	8	fixed	_	_
+10	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	4	conj	_	_
+11	с	с	ADP	R	_	13	case	_	_
+12	комплексен	комплексен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	характер	характер	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	10	nmod	_	_
+14	и	и	CCONJ	Cp	_	17	cc	_	_
+15	относително	относително	ADV	Dm	Degree=Pos	16	advmod	_	_
+16	сложен	сложен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	17	amod	_	_
+17	състав	състав	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	13	conj	_	SpaceAfter=No
+18	.	.	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830

@@ -436,7 +436,7 @@
 42	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 # sent_id = 4
-# text = ברזל הוא היסוד השישי הנפוץ ביותר ביקום.
+# text = ברזל הוא היסוד השישי הנפוץ ביותר ביקום.[דרוש מקור]
 1	ברזל	ברזל	PROPN	PROPN	_	4	nsubj:cop	_	_
 2	הוא	הוא	AUX	AUX	Gender=Masc|Number=Sing|Person=3|Polarity=Pos|VerbForm=Part|VerbType=Cop	4	cop	_	_
 3-4	היסוד	_	_	_	_	_	_	_	_
@@ -448,7 +448,10 @@
 7	הנפוץ	הנפוץ	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
 8	ביותר	ביותר	ADV	ADV	_	7	advmod	_	_
 9	ביקום	ביקום	NOUN	NOUN	Gender=Masc|Number=Sing	7	advmod	_	SpaceAfter=No
-10	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+10	.[	.[	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No
+11	דרוש	דרש	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	4	appos	_	_
+12	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	]	]	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1826,17 +1829,30 @@
 
 # newpar
 # sent_id = 24
-# text = {\displaystyle 4s^{2}3d^{6}}
-1	{	{	ADV	ADV	_	0	root	_	SpaceAfter=No
-2	\	\	ADP	ADP	_	3	dep	_	SpaceAfter=No
-3	displaystyle	displaystyle	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
-4	4s^{	4s^{	NUM	NUM	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-5	2}	2}	NUM	NUM	_	3	nummod	_	SpaceAfter=No
-6	3d^	3d^	NUM	NUM	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-7	{	{	PUNCT	PUNCT	HebSource=ConvUncertainHead	6	dep	_	SpaceAfter=No
-8	6	6	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
-9	}	}	PUNCT	PUNCT	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-10	}	}	PUNCT	PUNCT	HebSource=ConvUncertainHead	1	dep	_	SpacesAfter=\n\n
+# text = {\displaystyle [1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}]4s^{2}3d^{6}}
+1	{	{	PUNCT	PUNCT	_	0	root	_	SpaceAfter=No
+2	\	\	ADP	ADP	_	1	dep	_	SpaceAfter=No
+3	displaystyle	displaystyle	NOUN	NOUN	Gender=Masc|HebSource=ConvUncertainHead|Number=Sing	1	dep	_	_
+4	[	[	PUNCT	PUNCT	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+5	1s^{	1s^{	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+6	2}	2}	NUM	NUM	_	5	nummod	_	SpaceAfter=No
+7	2s^{	2s^{	NUM	NUM	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+8	2}	2}	NUM	NUM	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+9	2p^{	2p^{	NOUN	NOUN	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+10	6}	6}	NUM	NUM	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+11	3s^{	3s^{	NOUN	NOUN	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+12	2}	2}	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+13	3p^{	3p^{	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+14	6	6	NUM	NUM	_	1	dep	_	SpaceAfter=No
+15	}	}	NOUN	NOUN	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+16	]	]	PUNCT	PUNCT	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+17	4s^{	4s^{	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+18	2}	2}	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+19	3d^	3d^	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+20	{	{	PUNCT	PUNCT	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+21	6	6	NUM	NUM	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+22	}	}	NOUN	NOUN	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+23	}	}	PUNCT	PUNCT	HebSource=ConvUncertainHead	1	dep	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 25

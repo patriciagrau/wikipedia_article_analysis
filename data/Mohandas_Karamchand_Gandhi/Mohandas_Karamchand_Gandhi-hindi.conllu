@@ -601,7 +601,37 @@
 10	लम्बे-लम्बे	लम्बे-लम्बे	ADJ	JJ	Case=Nom|Gender=Masc|Number=Plur	11	amod	_	_
 11	उपवास	उपवास	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	12	obj	_	_
 12	रखे	रख	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	5	conj	_	SpaceAfter=No
-13	।	।	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+13	।	।	PUNCT	SYM	_	5	punct	_	_
+
+# sent_id = 10
+# text = 12 फरवरी वर्ष 1948 में महात्मा गांधी के अस्थि कलश जिन 12 तटों पर विसर्जित किए गए थे, त्रिमोहिनी संगम भी उनमें से एक है |
+1	12	12	PROPN	NNPC	Case=Nom|Number=Sing|Person=3	2	compound	_	_
+2	फरवरी	फरवरी	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+3	वर्ष	वर्ष	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+4	1948	1948	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+5	में	में	ADP	PSP	AdpType=Post	4	case	_	_
+6	महात्मा	महात्मा	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+7	गांधी	गांधी	PROPN	NNP	Case=Acc|Number=Sing|Person=3	10	nmod	_	_
+8	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	7	case	_	_
+9	अस्थि	अस्थि	NOUN	NNC	Case=Nom	10	compound	_	_
+10	कलश	कलश	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	16	obj	_	_
+11	जिन	जो	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	16	obj	_	_
+12	12	12	NUM	QC	NumType=Card	13	nummod	_	_
+13	तटों	तट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	16	obl	_	_
+14	पर	पर	ADP	PSP	AdpType=Post	13	case	_	_
+15	विसर्जित	विसर्जित	ADJ	JJ	_	16	compound	_	_
+16	किए	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	21	acl:relcl	_	_
+17	गए	जा	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	16	aux:pass	_	_
+18	थे	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	16	aux:pass	_	SpaceAfter=No
+19	,	COMMA	PUNCT	SYM	_	16	punct	_	_
+20	त्रिमोहिनी	त्रिमोहिनी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	21	compound	_	_
+21	संगम	संगम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	nsubj	_	_
+22	भी	भी	PART	RP	_	21	dep	_	_
+23	उनमें	वह	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	25	nmod	_	_
+24	से	से	ADP	PSP	AdpType=Post	23	case	_	_
+25	एक	एक	NUM	QC	NumType=Card	0	root	_	_
+26	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	_
+27	|	|	PUNCT	SYM	_	25	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -6035,7 +6065,7 @@
 20	दे।	दे।	AUX	VAUX	_	19	aux	_	_
 
 # sent_id = 5
-# text = भारत में रहने वाले बहुत से हिंदुओं और सिक्खों एवं मुस्लिमों का भारी बहुमत देश के बंटवारे के पक्ष में था।
+# text = भारत में रहने वाले बहुत से हिंदुओं और सिक्खों एवं मुस्लिमों का भारी बहुमत देश के बंटवारे[तथ्य वांछित] के पक्ष में था।
 1	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
 2	में	में	ADP	PSP	AdpType=Post	1	case	_	_
 3	रहने	रह	VERB	VM	Case=Acc|Number=Plur|VerbForm=Inf	7	amod	_	_
@@ -6049,32 +6079,35 @@
 11	मुस्लिमों	मुस्लिम	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	7	conj	_	_
 12	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	11	case	_	_
 13	भारी	भारी	ADJ	JJ	Case=Nom	14	amod	_	_
-14	बहुमत	बहुमत	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
-15	देश	देश	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
+14	बहुमत	बहुमत	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	22	nsubj	_	_
+15	देश	देश	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	18	nmod	_	_
 16	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	15	case	_	_
-17	बंटवारे	बंटवारा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
-18	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	17	case	_	_
-19	पक्ष	पक्ष	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	0	root	_	_
-20	में	में	ADP	PSP	AdpType=Post	19	case	_	_
-21	था	था	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	19	cop	_	SpaceAfter=No
-22	।	।	PUNCT	SYM	_	19	punct	_	_
+17	बंटवारे[	बंटवारे[	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	18	nmod	_	SpaceAfter=No
+18	तथ्य	तथ्य	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
+19	वांछित	वांछित	ADJ	JJ	Case=Acc	22	amod	_	SpaceAfter=No
+20	]	]	PUNCT	SYM	_	19	punct	_	_
+21	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	19	case	_	_
+22	पक्ष	पक्ष	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+23	में	में	ADP	PSP	AdpType=Post	22	case	_	_
+24	था	था	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	22	cop	_	SpaceAfter=No
+25	।	।	PUNCT	SYM	_	22	punct	_	_
 
 # sent_id = 6
-# text = इसके अतिरिक्त मुहम्मद अली जिन्ना, मुस्लिम लीग के नेता ने, पश्चिम पंजाब, सिंध, उत्तर पश्चिम सीमांत प्रांत और पूर्वी बंगाल में व्यापक सहयोग का परिचय दिया।
-1	इसके	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	obl	_	_
+# text = इसके अतिरिक्त मुहम्मद अली जिन्ना, मुस्लिम लीग के नेता ने, पश्चिम पंजाब, सिंध, उत्तर पश्चिम सीमांत प्रांत और पूर्वी बंगाल[तथ्य वांछित] में व्यापक सहयोग का परिचय दिया।
+1	इसके	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	33	obl	_	_
 2	अतिरिक्त	अतिरिक्त	ADP	PSP	AdpType=Post	1	case	_	_
 3	मुहम्मद	मुहम्मद	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	compound	_	_
 4	अली	अली	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	compound	_	_
-5	जिन्ना	जिन्ना	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	nsubj	_	SpaceAfter=No
+5	जिन्ना	जिन्ना	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	33	nsubj	_	SpaceAfter=No
 6	,	COMMA	PUNCT	SYM	_	5	punct	_	_
 7	मुस्लिम	मुस्लिम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	compound	_	_
 8	लीग	लीग	PROPN	NNP	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
 9	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	8	case	_	_
-10	नेता	नेता	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	conj	_	_
+10	नेता	नेता	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	33	nsubj	_	_
 11	ने	ने	ADP	PSP	AdpType=Post	10	case	_	SpaceAfter=No
 12	,	COMMA	PUNCT	SYM	_	10	punct	_	_
 13	पश्चिम	पश्चिम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	compound	_	_
-14	पंजाब	पंजाब	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	30	obl	_	SpaceAfter=No
+14	पंजाब	पंजाब	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	33	obl	_	SpaceAfter=No
 15	,	COMMA	PUNCT	SYM	_	16	punct	_	_
 16	सिंध	सिंध	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	conj	_	SpaceAfter=No
 17	,	COMMA	PUNCT	SYM	_	21	punct	_	_
@@ -6082,16 +6115,19 @@
 19	पश्चिम	पश्चिम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	21	compound	_	_
 20	सीमांत	सीमांत	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	21	compound	_	_
 21	प्रांत	प्रांत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	conj	_	_
-22	और	और	CCONJ	CC	_	24	cc	_	_
-23	पूर्वी	पूर्वी	ADJ	JJ	Case=Acc	24	amod	_	_
-24	बंगाल	बंगाल	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	conj	_	_
-25	में	में	ADP	PSP	AdpType=Post	24	case	_	_
-26	व्यापक	व्यापक	ADJ	JJ	Case=Acc	27	amod	_	_
-27	सहयोग	सहयोग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	29	nmod	_	_
-28	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	27	case	_	_
-29	परिचय	परिचय	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	30	compound	_	_
-30	दिया	दे	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
-31	।	।	PUNCT	SYM	_	30	punct	_	_
+22	और	और	CCONJ	CC	_	25	cc	_	_
+23	पूर्वी	पूर्वी	ADJ	JJ	Case=Nom	24	amod	_	_
+24	बंगाल[	बंगाल[	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	nmod	_	SpaceAfter=No
+25	तथ्य	तथ्य	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	26	obl	_	_
+26	वांछित	वांछित	ADJ	JJ	Case=Acc	33	obl	_	SpaceAfter=No
+27	]	]	PUNCT	SYM	_	26	punct	_	_
+28	में	में	ADP	PSP	AdpType=Post	26	case	_	_
+29	व्यापक	व्यापक	ADJ	JJ	Case=Acc	30	amod	_	_
+30	सहयोग	सहयोग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	32	nmod	_	_
+31	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	30	case	_	_
+32	परिचय	परिचय	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	33	compound	_	_
+33	दिया	दे	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+34	।	।	PUNCT	SYM	_	33	punct	_	_
 
 # sent_id = 7
 # text = व्यापक स्तर पर फैलने वाले हिंदु मुस्लिम लड़ाई को रोकने के लिए ही कांग्रेस नेताओं ने बंटवारे की इस योजना को अपनी मंजूरी दे दी थी।
@@ -7020,6 +7056,36 @@
 38	सकता	सक	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	37	aux	_	_
 39	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux:pass	_	SpaceAfter=No
 40	।	।	PUNCT	SYM	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = 12 फरवरी वर्ष 1948 में महात्मा गांधी के अस्थि कलश जिन 12 तटों पर विसर्जित किए गए थे, त्रिमोहिनी संगम भी उनमें से एक है |
+1	12	12	PROPN	NNPC	Case=Nom|Number=Sing|Person=3	2	compound	_	_
+2	फरवरी	फरवरी	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	3	nmod	_	_
+3	वर्ष	वर्ष	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+4	1948	1948	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+5	में	में	ADP	PSP	AdpType=Post	4	case	_	_
+6	महात्मा	महात्मा	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+7	गांधी	गांधी	PROPN	NNP	Case=Acc|Number=Sing|Person=3	10	nmod	_	_
+8	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	7	case	_	_
+9	अस्थि	अस्थि	NOUN	NNC	Case=Nom	10	compound	_	_
+10	कलश	कलश	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	16	obj	_	_
+11	जिन	जो	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	16	obj	_	_
+12	12	12	NUM	QC	NumType=Card	13	nummod	_	_
+13	तटों	तट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	16	obl	_	_
+14	पर	पर	ADP	PSP	AdpType=Post	13	case	_	_
+15	विसर्जित	विसर्जित	ADJ	JJ	_	16	compound	_	_
+16	किए	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	21	acl:relcl	_	_
+17	गए	जा	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	16	aux:pass	_	_
+18	थे	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	16	aux:pass	_	SpaceAfter=No
+19	,	COMMA	PUNCT	SYM	_	16	punct	_	_
+20	त्रिमोहिनी	त्रिमोहिनी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	21	compound	_	_
+21	संगम	संगम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	nsubj	_	_
+22	भी	भी	PART	RP	_	21	dep	_	_
+23	उनमें	वह	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	25	nmod	_	_
+24	से	से	ADP	PSP	AdpType=Post	23	case	_	_
+25	एक	एक	NUM	QC	NumType=Card	0	root	_	_
+26	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	_
+27	|	|	PUNCT	SYM	_	25	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830
@@ -12854,7 +12920,7 @@
 23	।	।	PUNCT	SYM	_	21	punct	_	_
 
 # sent_id = 4
-# text = उन्होंने कहा, "यह किताब ये नहीं कहती कि गाँधी समलैंगिक या द्विलिंगी थे।यह कहती है कि ब्रह्मचारी थे, और कैलेनबाख से गहरे से जुडे थे।
+# text = उन्होंने कहा, "यह किताब ये नहीं कहती कि गाँधी समलैंगिक या द्विलिंगी थे।यह [किताब] कहती है कि [गाँधी] ब्रह्मचारी थे, और कैलेनबाख से गहरे [दिल] से जुडे थे।
 1	उन्होंने	वह	PRON	PRP	Case=Acc,Erg|Number=Sing|Person=3|Polite=Form|PronType=Prs	2	nsubj	_	_
 2	कहा	कह	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
 3	,	COMMA	PUNCT	SYM	_	2	punct	_	_
@@ -12864,26 +12930,35 @@
 7	ये	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
 8	नहीं	नहीं	PART	NEG	Polarity=Neg|PronType=Neg	9	advmod	_	_
 9	कहती	कह	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	2	obj	_	_
-10	कि	कि	SCONJ	CC	_	19	mark	_	_
-11	गाँधी	गाँधी	PROPN	NNP	Case=Nom|Number=Sing|Person=3	16	nsubj	_	_
+10	कि	कि	SCONJ	CC	_	25	mark	_	_
+11	गाँधी	गाँधी	PROPN	NNP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
 12	समलैंगिक	समलैंगिक	ADJ	JJ	Case=Nom	15	amod	_	_
 13	या	या	CCONJ	CC	_	14	cc	_	_
 14	द्विलिंगी	द्विलिंगी	ADJ	JJ	Case=Nom	12	conj	_	_
-15	थे।यह	थे।यह	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	16	nsubj	_	SpacesAfter=\s\s
-16	कहती	कह	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	7	acl	_	_
-17	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
-18	कि	कि	SCONJ	CC	_	19	mark	_	SpacesAfter=\s\s
-19	ब्रह्मचारी	ब्रह्मचारी	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	7	nmod	_	_
-20	थे	था	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Past|VerbForm=Fin|Voice=Act	19	cop	_	SpaceAfter=No
-21	,	COMMA	PUNCT	SYM	_	27	punct	_	_
-22	और	और	CCONJ	CC	_	27	cc	_	_
-23	कैलेनबाख	कैलेनबाख	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	27	obl	_	_
-24	से	से	ADP	PSP	AdpType=Post	23	case	_	_
-25	गहरे	गहरा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	27	obl	_	SpacesAfter=\s\s
-26	से	से	ADP	PSP	AdpType=Post	25	case	_	_
-27	जुडे	जुड	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	19	conj	_	_
-28	थे	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	27	aux	_	SpaceAfter=No
-29	।	।	PUNCT	SYM	_	2	punct	_	_
+15	थे।यह	थे।यह	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
+16	[	[	PUNCT	SYM	_	17	punct	_	SpaceAfter=No
+17	किताब	किताब	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	19	nsubj	_	SpaceAfter=No
+18	]	]	PART	RP	_	17	dep	_	_
+19	कहती	कह	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	7	acl	_	_
+20	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+21	कि	कि	SCONJ	CC	_	25	mark	_	_
+22	[	[	PUNCT	SYM	_	23	punct	_	SpaceAfter=No
+23	गाँधी	गाँधी	PROPN	NNP	Case=Nom|Number=Sing|Person=3	25	nsubj	_	SpaceAfter=No
+24	]	]	PART	RP	_	23	dep	_	_
+25	ब्रह्मचारी	ब्रह्मचारी	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+26	थे	था	AUX	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	SpaceAfter=No
+27	,	COMMA	PUNCT	SYM	_	36	punct	_	_
+28	और	और	CCONJ	CC	_	36	cc	_	_
+29	कैलेनबाख	कैलेनबाख	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	obl	_	_
+30	से	से	ADP	PSP	AdpType=Post	29	case	_	_
+31	गहरे	गहरा	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	33	amod	_	_
+32	[	[	PUNCT	SYM	_	33	punct	_	SpaceAfter=No
+33	दिल	दिल	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	obl	_	SpaceAfter=No
+34	]	]	PUNCT	SYM	_	33	punct	_	_
+35	से	से	ADP	PSP	AdpType=Post	33	case	_	_
+36	जुडे	जुड	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Polite=Form|VerbForm=Part|Voice=Act	25	conj	_	_
+37	थे	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Past|VerbForm=Fin	36	aux	_	SpaceAfter=No
+38	।	।	PUNCT	SYM	_	2	punct	_	_
 
 # sent_id = 5
 # text = और यह कोई नई जानकारी नहीं है।
@@ -14561,7 +14636,7 @@
 69	।	।	PUNCT	SYM	_	14	punct	_	_
 
 # sent_id = 2
-# text = वे मुझे टुकडों में काट सकते हैं पर मुझे उस चीज़ के लिए राज़ी नहीं कर सकते जिसे मैं ग़लत समझता हूँ
+# text = वे मुझे टुकडों में काट सकते हैं पर मुझे उस चीज़ के लिए राज़ी नहीं कर सकते जिसे मैं ग़लत समझता हूँ[...] हमें आस नही छोडनी चाहिए, इसके बावजूद कि ख्याली बाते हो रही हैं कि हमें मुसलमानों को अपने प्रेम के कैद में अबलाम्बित कर लेना चाहिए॰
 1	वे	वह	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
 2	मुझे	मैं	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=1|PronType=Prs	5	obj	_	_
 3	टुकडों	टुकड	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	obl	_	_
@@ -14570,7 +14645,7 @@
 6	सकते	सक	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	5	aux	_	_
 7	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_
 8	पर	पर	CCONJ	CC	_	16	cc	_	_
-9	मुझे	मैं	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+9	मुझे	मैं	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=1|PronType=Prs	16	obj	_	_
 10	उस	वह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	11	det	_	_
 11	चीज़	चीज़	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	16	obl	_	_
 12	के	के	ADP	PSP	AdpType=Post	11	case	_	_
@@ -14582,39 +14657,39 @@
 18	जिसे	जो	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
 19	मैं	मैं	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	_
 20	ग़लत	ग़लत	ADJ	JJ	_	21	xcomp	_	_
-21	समझता	समझ	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=1|VerbForm=Part|Voice=Act	11	acl:relcl	_	_
-22	हूँ	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	aux	_	_
-
-# sent_id = 3
-# text = हमें आस नही छोडनी चाहिए, इसके बावजूद कि ख्याली बाते हो रही हैं कि हमें मुसलमानों को अपने प्रेम के कैद में अबलाम्बित कर लेना चाहिए॰
-1	हमें	हम	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
-2	आस	आस	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	obj	_	_
-3	नही	नही	PART	NEG	Polarity=Neg|PronType=Neg	4	advmod	_	_
-4	छोडनी	छोड	VERB	VM	Gender=Fem|VerbForm=Inf|Voice=Act	0	root	_	_
-5	चाहिए	चाहिए	AUX	VAUX	_	4	aux	_	SpaceAfter=No
-6	,	COMMA	PUNCT	SYM	_	4	punct	_	_
-7	इसके	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	obl	_	_
-8	बावजूद	बावजूद	ADP	PSP	AdpType=Post	7	case	_	_
-9	कि	कि	PART	RP	_	7	dep	_	_
-10	ख्याली	ख्याली	ADJ	JJ	Case=Nom	11	amod	_	_
-11	बाते	बाते	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	12	nsubj	_	_
-12	हो	हो	VERB	VM	Gender=Fem|Number=Plur|Person=3|Voice=Act	4	advcl	_	_
-13	रही	रह	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	12	aux	_	_
-14	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_
-15	कि	कि	SCONJ	CC	_	25	mark	_	_
-16	हमें	हम	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=1|PronType=Prs	25	nsubj	_	_
-17	मुसलमानों	मुसलमान	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	25	obj	_	_
-18	को	को	ADP	PSP	AdpType=Post	17	case	_	_
-19	अपने	अपना	PRON	PRP	Case=Acc|Gender=Masc|PronType=Prs	20	nmod	_	_
-20	प्रेम	प्रेम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	nmod	_	_
-21	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	20	case	_	_
-22	कैद	कैद	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	25	obl	_	_
-23	में	में	ADP	PSP	AdpType=Post	22	case	_	_
-24	अबलाम्बित	अबलाम्बित	ADJ	JJ	_	25	compound	_	_
-25	कर	कर	VERB	VM	Gender=Masc|Voice=Act	12	obj	_	_
-26	लेना	ले	AUX	VAUX	Gender=Masc|Number=Sing|VerbForm=Inf	25	aux	_	_
-27	चाहिए	चाहिए	AUX	VAUX	_	25	aux:pass	_	SpaceAfter=No
-28	॰	॰	PUNCT	SYM	_	4	punct	_	SpaceAfter=No
+21	समझता	समझ	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	11	acl:relcl	_	_
+22	हूँ	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	aux	_	SpaceAfter=No
+23	[	[	PUNCT	SYM	_	29	punct	_	SpaceAfter=No
+24	...	...	PUNCT	SYM	_	21	punct	_	SpaceAfter=No
+25	]	]	SCONJ	CC	_	29	mark	_	_
+26	हमें	हम	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=1|PronType=Prs	29	nsubj	_	_
+27	आस	आस	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	29	obj	_	_
+28	नही	नही	PART	NEG	Polarity=Neg|PronType=Neg	29	advmod	_	_
+29	छोडनी	छोड	VERB	VM	Gender=Fem|VerbForm=Inf|Voice=Act	5	conj	_	_
+30	चाहिए	चाहिए	AUX	VAUX	_	29	aux	_	SpaceAfter=No
+31	,	COMMA	PUNCT	SYM	_	29	punct	_	_
+32	इसके	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	obl	_	_
+33	बावजूद	बावजूद	ADP	PSP	AdpType=Post	32	case	_	_
+34	कि	कि	PART	RP	_	32	dep	_	_
+35	ख्याली	ख्याली	ADJ	JJ	Case=Nom	36	amod	_	_
+36	बाते	बाते	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	37	nsubj	_	_
+37	हो	हो	VERB	VM	Gender=Fem|Number=Plur|Person=3|Voice=Act	29	advcl	_	_
+38	रही	रह	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Plur|VerbForm=Part	37	aux	_	_
+39	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	37	aux:pass	_	_
+40	कि	कि	SCONJ	CC	_	50	mark	_	_
+41	हमें	हम	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=1|PronType=Prs	50	nsubj	_	_
+42	मुसलमानों	मुसलमान	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	50	obj	_	_
+43	को	को	ADP	PSP	AdpType=Post	42	case	_	_
+44	अपने	अपना	PRON	PRP	Case=Acc|Gender=Masc|PronType=Prs	45	nmod	_	_
+45	प्रेम	प्रेम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	47	nmod	_	_
+46	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	45	case	_	_
+47	कैद	कैद	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	50	obl	_	_
+48	में	में	ADP	PSP	AdpType=Post	47	case	_	_
+49	अबलाम्बित	अबलाम्बित	ADJ	JJ	_	50	compound	_	_
+50	कर	कर	VERB	VM	Gender=Masc|Voice=Act	37	obj	_	_
+51	लेना	ले	AUX	VAUX	Gender=Masc|Number=Sing|VerbForm=Inf	50	aux	_	_
+52	चाहिए	चाहिए	AUX	VAUX	_	50	aux:pass	_	SpaceAfter=No
+53	॰	॰	PUNCT	SYM	_	5	punct	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hindi-hdtb-ud-2.6-200830

@@ -3148,7 +3148,7 @@
 24	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 6
-# text = C'est pourquoi Oussama ben Laden n'est pas perçu uniquement comme une menace.
+# text = C'est pourquoi Oussama ben Laden n'est pas perçu uniquement comme une menace[réf.
 1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	advmod	_	SpaceAfter=No
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
 3	pourquoi	pourquoi	ADV	_	_	1	fixed	_	_
@@ -3163,9 +3163,16 @@
 12	comme	comme	ADP	_	_	14	case	_	_
 13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	menace	menace	NOUN	_	Gender=Fem|Number=Sing	10	xcomp	_	SpaceAfter=No
-15	.	.	PUNCT	_	_	10	punct	_	_
+15	[	[	PUNCT	_	_	16	punct	_	SpaceAfter=No
+16	réf.	réf.	X	_	_	10	parataxis	_	SpacesAfter= 
 
 # sent_id = 7
+# text = nécessaire].
+1	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	_	_	1	punct	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 8
 # text = Cette stratégie est cependant infléchie dans les derniers temps du mandat de Bill Clinton.
 1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	stratégie	stratégie	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
@@ -7252,24 +7259,27 @@
 9	d’	d’	ADP	_	_	10	case	_	SpaceAfter=No
 10	Arabie	Arabie	PROPN	_	_	8	nmod	_	_
 11	saoudite	saoudite	PROPN	_	Gender=Fem|Number=Sing	10	flat:name	_	SpaceAfter=No
-12	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s
+12	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 3
-# text = La solution à cette crise est le retrait des troupes américaines.
-1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	solution	solution	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_
-3	à	à	ADP	_	_	5	case	_	_
-4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	crise	crise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	retrait	retrait	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
-9-10	des	_	_	_	_	_	_	_	_
-9	de	de	ADP	_	_	11	case	_	_
-10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
-11	troupes	troupe	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_
-12	américaines	américain	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	SpaceAfter=No
-13	.	.	PUNCT	_	_	8	punct	_	_
+# text = [...] La solution à cette crise est le retrait des troupes américaines.
+1	[	[	PUNCT	_	_	11	punct	_	SpaceAfter=No
+2	...	...	PUNCT	_	_	11	punct	_	SpaceAfter=No
+3	]	]	PUNCT	_	_	11	punct	_	_
+4	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	solution	solution	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_
+6	à	à	ADP	_	_	8	case	_	_
+7	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_
+8	crise	crise	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	retrait	retrait	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+12-13	des	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	_	_
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	troupes	troupe	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_
+15	américaines	américain	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	_	_
 
 # sent_id = 4
 # text = Leur présence militaire est une insulte au peuple saoudien.
@@ -8425,7 +8435,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = « Même si nous sommes dans la quatrième année après les évènements du 11 septembre, Bush continue la désinformation, et vous cache les causes réelles
+# text = « Même si nous sommes dans la quatrième année après les évènements du 11 septembre, Bush continue la désinformation, et vous cache les causes réelles [des évènements du 11 septembre] […] C'était le message que je cherchais à vous faire comprendre en faits et gestes, de façon répétée, et ce, bien avant le 11 septembre.
 1	«	«	PUNCT	_	_	19	punct	_	SpacesAfter= 
 2	Même	même	ADV	_	_	5	advmod	_	_
 3	si	si	SCONJ	_	_	5	mark	_	_
@@ -8450,45 +8460,56 @@
 21	désinformation	désinformation	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	SpaceAfter=No
 22	,	,	PUNCT	_	_	25	punct	_	_
 23	et	et	CCONJ	_	_	25	cc	_	_
-24	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	25	iobj	_	_
+24	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	25	nsubj	_	_
 25	cache	cacher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	_	_
 26	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
 27	causes	cause	NOUN	_	Gender=Fem|Number=Plur	25	obj	_	_
-28	réelles	réel	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	SpacesAfter=\s\s\s
+28	réelles	réel	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	_
+29	[	[	PUNCT	_	_	32	punct	_	SpaceAfter=No
+30-31	des	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	_	_
+31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
+32	évènements	évènement	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_
+33-34	du	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	_	_
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	11	11	NUM	_	_	32	nmod	_	_
+36	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	SpaceAfter=No
+37	]	]	PUNCT	_	_	32	punct	_	_
+38	[	[	PUNCT	_	_	39	punct	_	SpaceAfter=No
+39	…	…	SYM	_	_	44	advmod	_	SpaceAfter=No
+40	]	]	PUNCT	_	_	39	punct	_	_
+41	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	44	nsubj	_	SpaceAfter=No
+42	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	44	cop	_	_
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	message	message	NOUN	_	Gender=Masc|Number=Sing	19	parataxis	_	_
+45	que	que	PRON	_	PronType=Rel	51	obj	_	_
+46	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	47	nsubj	_	_
+47	cherchais	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	44	acl:relcl	_	_
+48	à	à	ADP	_	_	51	mark	_	_
+49	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	51	obj:agent	_	_
+50	faire	faire	AUX	_	VerbForm=Inf	51	aux:caus	_	_
+51	comprendre	comprendre	VERB	_	VerbForm=Inf	47	xcomp	_	_
+52	en	en	ADP	_	_	53	case	_	_
+53	faits	fait	NOUN	_	Gender=Masc|Number=Plur	51	obl	_	_
+54	et	et	CCONJ	_	_	55	cc	_	_
+55	gestes	geste	NOUN	_	Gender=Masc|Number=Plur	53	conj	_	SpaceAfter=No
+56	,	,	PUNCT	_	_	58	punct	_	_
+57	de	de	ADP	_	_	58	case	_	_
+58	façon	façon	NOUN	_	Gender=Fem|Number=Sing	51	obl:mod	_	_
+59	répétée	répéter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	58	acl	_	SpaceAfter=No
+60	,	,	PUNCT	_	_	62	punct	_	_
+61	et	et	CCONJ	_	_	62	cc	_	_
+62	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	51	conj	_	SpaceAfter=No
+63	,	,	PUNCT	_	_	67	punct	_	_
+64	bien	bien	ADV	_	_	67	advmod	_	_
+65	avant	avant	ADP	_	_	67	case	_	_
+66	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	67	det	_	_
+67	11	11	NUM	_	_	62	nmod	_	_
+68	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	67	nmod	_	SpaceAfter=No
+69	.	.	PUNCT	_	_	19	punct	_	_
 
 # sent_id = 2
-# text = C'était le message que je cherchais à vous faire comprendre en faits et gestes, de façon répétée, et ce, bien avant le 11 septembre.
-1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No
-2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
-3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	message	message	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
-5	que	que	PRON	_	PronType=Rel	7	obj	_	_
-6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
-7	cherchais	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	acl:relcl	_	_
-8	à	à	ADP	_	_	11	mark	_	_
-9	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	11	obj:agent	_	_
-10	faire	faire	AUX	_	VerbForm=Inf	11	aux:caus	_	_
-11	comprendre	comprendre	VERB	_	VerbForm=Inf	7	xcomp	_	_
-12	en	en	ADP	_	_	13	case	_	_
-13	faits	fait	NOUN	_	Gender=Masc|Number=Plur	11	obl	_	_
-14	et	et	CCONJ	_	_	15	cc	_	_
-15	gestes	geste	NOUN	_	Gender=Masc|Number=Plur	13	conj	_	SpaceAfter=No
-16	,	,	PUNCT	_	_	18	punct	_	_
-17	de	de	ADP	_	_	18	case	_	_
-18	façon	façon	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_
-19	répétée	répéter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	SpaceAfter=No
-20	,	,	PUNCT	_	_	22	punct	_	_
-21	et	et	CCONJ	_	_	22	cc	_	_
-22	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	conj	_	SpaceAfter=No
-23	,	,	PUNCT	_	_	27	punct	_	_
-24	bien	bien	ADV	_	_	27	advmod	_	_
-25	avant	avant	ADP	_	_	27	case	_	_
-26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	11	11	NUM	_	_	22	nmod	_	_
-28	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 3
 # text = Et vous pouvez lire tout cela, si vous le souhaitez, dans mon interview avec Scott, dans le Time Magazine, en 1996, ou avec Peter Arnett, sur CNN, en 1997, ou lors de ma rencontre avec John Weiner, en 1998.
 1	Et	et	CCONJ	_	_	3	cc	_	_
 2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
@@ -8538,31 +8559,34 @@
 46	,	,	PUNCT	_	_	48	punct	_	_
 47	en	en	ADP	_	_	48	case	_	_
 48	1998	1998	NUM	_	_	42	nmod	_	SpaceAfter=No
-49	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s
+49	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 3
+# text = […] Et vous pouvez lire mon interview avec Abdul Bari Atwan, et encore mes interviews avec Robert Fisk.
+1	[	[	PUNCT	_	_	2	punct	_	SpaceAfter=No
+2	…	…	SYM	_	_	0	root	_	SpaceAfter=No
+3	]	]	PUNCT	_	_	2	punct	_	_
+4	Et	et	CCONJ	_	_	6	cc	_	_
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+6	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	conj	_	_
+7	lire	lire	VERB	_	VerbForm=Inf	6	xcomp	_	_
+8	mon	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_
+9	interview	interview	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_
+10	avec	avec	ADP	_	_	11	case	_	_
+11	Abdul	Abdul	PROPN	_	_	9	nmod	_	_
+12	Bari	Bari	PROPN	_	_	11	flat:name	_	_
+13	Atwan	Atwan	PROPN	_	_	12	flat:name	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	_	_
+15	et	et	CCONJ	_	_	18	cc	_	_
+16	encore	encore	ADV	_	_	18	advmod	_	_
+17	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	18	det	_	_
+18	interviews	interview	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_
+19	avec	avec	ADP	_	_	20	case	_	_
+20	Robert	Robert	PROPN	_	_	18	nmod	_	_
+21	Fisk	Fisk	PROPN	_	_	20	flat:name	_	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	_	SpacesAfter= 
 
 # sent_id = 4
-# text = Et vous pouvez lire mon interview avec Abdul Bari Atwan, et encore mes interviews avec Robert Fisk.
-1	Et	et	CCONJ	_	_	3	cc	_	_
-2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
-3	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	lire	lire	VERB	_	VerbForm=Inf	3	xcomp	_	_
-5	mon	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_
-6	interview	interview	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_
-7	avec	avec	ADP	_	_	8	case	_	_
-8	Abdul	Abdul	PROPN	_	_	6	nmod	_	_
-9	Bari	Bari	PROPN	_	_	8	flat:name	_	_
-10	Atwan	Atwan	PROPN	_	_	9	flat:name	_	SpaceAfter=No
-11	,	,	PUNCT	_	_	15	punct	_	_
-12	et	et	CCONJ	_	_	15	cc	_	_
-13	encore	encore	ADV	_	_	15	advmod	_	_
-14	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	_
-15	interviews	interview	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_
-16	avec	avec	ADP	_	_	17	case	_	_
-17	Robert	Robert	PROPN	_	_	15	nmod	_	_
-18	Fisk	Fisk	PROPN	_	_	17	flat:name	_	SpaceAfter=No
-19	.	.	PUNCT	_	_	3	punct	_	SpacesAfter= 
-
-# sent_id = 5
 # text = »
 1	»	»	PUNCT	_	_	0	root	_	SpacesAfter=\n
 

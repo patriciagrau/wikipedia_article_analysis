@@ -2979,7 +2979,17 @@
 36	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
 37	Qing	Qing	PROPN	NNP	Number=Sing	38	compound	_	_
 38	dynasty	dynasty	NOUN	NN	Number=Sing	34	nmod	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n
+39	.	.	PUNCT	.	_	15	punct	_	SpaceAfter=No
+
+# sent_id = 7
+# text = [citation
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+
+# sent_id = 8
+# text = needed]
+1	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	-RRB-	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -3299,7 +3309,14 @@
 23	1880s	1880	NOUN	NNS	Number=Plur	20	nmod	_	_
 24	and	and	CCONJ	CC	_	25	cc	_	_
 25	1890s	1890	NOUN	NNS	Number=Plur	23	conj	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	14	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	.	_	14	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -4570,7 +4587,7 @@
 15	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = 2
-# text = Under their administration, China's economic performance pulled an estimated 150 million peasants out of poverty and sustained an average annual gross domestic product growth rate of 11.2%.
+# text = Under their administration, China's economic performance pulled an estimated[by whom?]
 1	Under	under	ADP	IN	_	3	case	_	_
 2	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
 3	administration	administration	NOUN	NN	Number=Sing	9	obl	_	SpaceAfter=No
@@ -4580,66 +4597,76 @@
 7	economic	economic	ADJ	JJ	Degree=Pos	8	amod	_	_
 8	performance	performance	NOUN	NN	Number=Sing	9	nsubj	_	_
 9	pulled	pull	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-10	an	a	DET	DT	Definite=Ind|PronType=Art	14	det	_	_
-11	estimated	estimate	VERB	VBN	Tense=Past|VerbForm=Part	14	amod	_	_
-12	150	150	NUM	CD	NumType=Card	13	compound	_	_
-13	million	million	NUM	CD	NumType=Card	14	nummod	_	_
-14	peasants	peasant	NOUN	NNS	Number=Plur	9	obj	_	_
-15	out	out	ADP	IN	_	17	case	_	_
-16	of	of	ADP	IN	_	17	case	_	_
-17	poverty	poverty	NOUN	NN	Number=Sing	9	obl	_	_
-18	and	and	CCONJ	CC	_	19	cc	_	_
-19	sustained	sustain	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	conj	_	_
-20	an	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
-21	average	average	ADJ	JJ	Degree=Pos	27	amod	_	_
-22	annual	annual	ADJ	JJ	Degree=Pos	27	amod	_	_
-23	gross	gross	ADJ	JJ	Degree=Pos	25	amod	_	_
-24	domestic	domestic	ADJ	JJ	Degree=Pos	25	amod	_	_
-25	product	product	NOUN	NN	Number=Sing	27	compound	_	_
-26	growth	growth	NOUN	NN	Number=Sing	27	compound	_	_
-27	rate	rate	NOUN	NN	Number=Sing	19	obj	_	_
-28	of	of	ADP	IN	_	30	case	_	_
-29	11.2	11.2	NUM	CD	NumType=Card	30	nummod	_	SpaceAfter=No
-30	%	%	SYM	NN	Number=Sing	27	nmod	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	9	punct	_	_
+10	an	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	_
+11	estimated	estimate	VERB	VBN	Tense=Past|VerbForm=Part	9	xcomp	_	SpaceAfter=No
+12	[	[	PUNCT	-LRB-	_	14	punct	_	SpaceAfter=No
+13	by	by	ADP	IN	_	14	case	_	_
+14	whom	whom	PRON	WP	PronType=Int	9	obl	_	SpaceAfter=No
+15	?	?	PUNCT	.	_	9	punct	_	SpaceAfter=No
+16	]	]	PUNCT	-RRB-	_	9	punct	_	_
 
 # sent_id = 3
-# text = British Hong Kong and Portuguese Macau returned to China in 1997 and 1999, respectively, as the Hong Kong and Macau special administrative regions under the principle of One Country, Two Systems.
-1	British	british	ADJ	JJ	Degree=Pos	3	amod	_	_
-2	Hong	Hong	PROPN	NNP	Number=Sing	3	compound	_	_
-3	Kong	Kong	PROPN	NNP	Number=Sing	7	nsubj	_	_
-4	and	and	CCONJ	CC	_	6	cc	_	_
-5	Portuguese	Portuguese	ADJ	JJ	Degree=Pos	6	amod	_	_
-6	Macau	Macau	PROPN	NNP	Number=Sing	3	conj	_	_
-7	returned	return	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-8	to	to	ADP	IN	_	9	case	_	_
-9	China	China	PROPN	NNP	Number=Sing	7	obl	_	_
-10	in	in	ADP	IN	_	11	case	_	_
-11	1997	1997	NUM	CD	NumType=Card	7	obl	_	_
-12	and	and	CCONJ	CC	_	13	cc	_	_
-13	1999	1999	NUM	CD	NumType=Card	11	conj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	7	punct	_	_
-15	respectively	respectively	ADV	RB	_	7	advmod	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	7	punct	_	_
-17	as	as	ADP	IN	_	25	case	_	_
-18	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
-19	Hong	Hong	PROPN	NNP	Number=Sing	20	compound	_	_
-20	Kong	Kong	PROPN	NNP	Number=Sing	25	compound	_	_
-21	and	and	CCONJ	CC	_	22	cc	_	_
-22	Macau	Macau	PROPN	NNP	Number=Sing	20	conj	_	_
-23	special	special	ADJ	JJ	Degree=Pos	25	amod	_	_
-24	administrative	administrative	ADJ	JJ	Degree=Pos	25	amod	_	_
-25	regions	region	NOUN	NNS	Number=Plur	7	obl	_	_
-26	under	under	ADP	IN	_	28	case	_	_
-27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
-28	principle	principle	NOUN	NN	Number=Sing	7	obl	_	_
-29	of	of	ADP	IN	_	31	case	_	_
-30	One	one	NUM	CD	NumType=Card	31	nummod	_	_
-31	Country	country	NOUN	NN	Number=Sing	28	nmod	_	SpaceAfter=No
-32	,	,	PUNCT	,	_	31	punct	_	_
-33	Two	two	NUM	CD	NumType=Card	34	nummod	_	_
-34	Systems	system	NOUN	NNS	Number=Plur	31	appos	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	7	punct	_	_
+# text = 150 million peasants out of poverty and sustained an average annual gross domestic product growth rate of 11.2%.[better source needed] British Hong Kong and Portuguese Macau returned to China in 1997 and 1999, respectively, as the Hong Kong and Macau special administrative regions under the principle of One Country, Two Systems.
+1	150	150	NUM	CD	NumType=Card	2	compound	_	_
+2	million	million	NUM	CD	NumType=Card	3	nummod	_	_
+3	peasants	peasant	NOUN	NNS	Number=Plur	0	root	_	_
+4	out	out	ADP	IN	_	6	case	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	poverty	poverty	NOUN	NN	Number=Sing	3	nmod	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	sustained	sustain	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+9	an	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	_
+10	average	average	ADJ	JJ	Degree=Pos	16	amod	_	_
+11	annual	annual	ADJ	JJ	Degree=Pos	16	amod	_	_
+12	gross	gross	ADJ	JJ	Degree=Pos	16	amod	_	_
+13	domestic	domestic	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	product	product	NOUN	NN	Number=Sing	16	compound	_	_
+15	growth	growth	NOUN	NN	Number=Sing	16	compound	_	_
+16	rate	rate	NOUN	NN	Number=Sing	8	obj	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	11.2	11.2	NUM	CD	NumType=Card	19	nummod	_	SpaceAfter=No
+19	%	%	SYM	NN	Number=Sing	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	SpaceAfter=No
+21	[	[	PUNCT	-LRB-	_	23	punct	_	SpaceAfter=No
+22	better	better	ADJ	JJR	Degree=Cmp	23	amod	_	SpacesAfter= 
+23	source	source	NOUN	NN	Number=Sing	32	parataxis	_	SpacesAfter= 
+24	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	23	acl	_	SpaceAfter=No
+25	]	]	PUNCT	-RRB-	_	23	punct	_	_
+26	British	british	ADJ	JJ	Degree=Pos	28	amod	_	_
+27	Hong	Hong	PROPN	NNP	Number=Sing	28	compound	_	_
+28	Kong	Kong	PROPN	NNP	Number=Sing	32	nsubj	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	Portuguese	Portuguese	PROPN	NNP	Number=Sing	31	compound	_	_
+31	Macau	Macau	PROPN	NNP	Number=Sing	28	conj	_	_
+32	returned	return	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	parataxis	_	_
+33	to	to	ADP	IN	_	34	case	_	_
+34	China	China	PROPN	NNP	Number=Sing	32	obl	_	_
+35	in	in	ADP	IN	_	36	case	_	_
+36	1997	1997	NUM	CD	NumType=Card	32	obl	_	_
+37	and	and	CCONJ	CC	_	38	cc	_	_
+38	1999	1999	NUM	CD	NumType=Card	36	conj	_	SpaceAfter=No
+39	,	,	PUNCT	,	_	32	punct	_	_
+40	respectively	respectively	ADV	RB	_	32	advmod	_	SpaceAfter=No
+41	,	,	PUNCT	,	_	32	punct	_	_
+42	as	as	ADP	IN	_	50	case	_	_
+43	the	the	DET	DT	Definite=Def|PronType=Art	50	det	_	_
+44	Hong	Hong	PROPN	NNP	Number=Sing	45	compound	_	_
+45	Kong	Kong	PROPN	NNP	Number=Sing	50	compound	_	_
+46	and	and	CCONJ	CC	_	47	cc	_	_
+47	Macau	Macau	PROPN	NNP	Number=Sing	45	conj	_	_
+48	special	special	ADJ	JJ	Degree=Pos	50	amod	_	_
+49	administrative	administrative	ADJ	JJ	Degree=Pos	50	amod	_	_
+50	regions	region	NOUN	NNS	Number=Plur	32	obl	_	_
+51	under	under	ADP	IN	_	53	case	_	_
+52	the	the	DET	DT	Definite=Def|PronType=Art	53	det	_	_
+53	principle	principle	NOUN	NN	Number=Sing	32	obl	_	_
+54	of	of	ADP	IN	_	56	case	_	_
+55	One	one	NUM	CD	NumType=Card	56	nummod	_	_
+56	Country	country	NOUN	NN	Number=Sing	53	nmod	_	SpaceAfter=No
+57	,	,	PUNCT	,	_	59	punct	_	_
+58	Two	two	NUM	CD	NumType=Card	59	nummod	_	_
+59	Systems	system	NOUN	NNS	Number=Plur	56	appos	_	SpaceAfter=No
+60	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 4
 # text = The country joined the World Trade Organization in 2001, and maintained its high rate of economic growth under Hu Jintao and Wen Jiabao's leadership in the 2000s.
@@ -5018,7 +5045,14 @@
 37	(	(	PUNCT	-LRB-	_	36	punct	_	SpaceAfter=No
 38	s	s	X	AFX	_	36	advmod	_	SpaceAfter=No
 39	)	)	PUNCT	-RRB-	_	31	punct	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+40	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5885,47 +5919,58 @@
 42	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = 4
-# text = Endangered wildlife is protected by law, and as of 2005, the country has over 2,349 nature reserves, covering a total area of 149.95 million hectares, 15 percent of China's total land area.
+# text = Endangered wildlife is protected by law, and as of 2005[update], the country has over 2,349 nature reserves, covering a total area of 149.95 million hectares, 15 percent of China's total land area.
 1	Endangered	endangered	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	wildlife	wildlife	NOUN	NN	Number=Sing	4	nsubj:pass	_	_
 3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
 4	protected	protect	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
 5	by	by	ADP	IN	_	6	case	_	_
 6	law	law	NOUN	NN	Number=Sing	4	obl	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	15	punct	_	_
-8	and	and	CCONJ	CC	_	15	cc	_	_
+7	,	,	PUNCT	,	_	18	punct	_	_
+8	and	and	CCONJ	CC	_	18	cc	_	_
 9	as	as	ADP	IN	_	11	case	_	_
 10	of	of	ADP	IN	_	9	fixed	_	_
-11	2005	2005	NUM	CD	NumType=Card	15	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	15	punct	_	_
-13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-14	country	country	NOUN	NN	Number=Sing	15	nsubj	_	_
-15	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-16	over	over	ADV	RB	_	17	advmod	_	_
-17	2,349	2,349	NUM	CD	NumType=Card	19	nummod	_	_
-18	nature	nature	NOUN	NN	Number=Sing	19	compound	_	_
-19	reserves	reserve	NOUN	NNS	Number=Plur	15	obj	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	covering	cover	VERB	VBG	VerbForm=Ger	19	acl	_	_
-22	a	a	DET	DT	Definite=Ind|PronType=Art	24	det	_	_
-23	total	total	ADJ	JJ	Degree=Pos	24	amod	_	_
-24	area	area	NOUN	NN	Number=Sing	21	obj	_	_
-25	of	of	ADP	IN	_	28	case	_	_
-26	149.95	149.95	NUM	CD	NumType=Card	27	compound	_	_
-27	million	million	NUM	CD	NumType=Card	28	nummod	_	_
-28	hectares	hectare	NOUN	NNS	Number=Plur	24	nmod	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	19	punct	_	_
-30	15	15	NUM	CD	NumType=Card	31	nummod	_	_
-31	percent	percent	NOUN	NN	Number=Sing	28	appos	_	_
-32	of	of	ADP	IN	_	37	case	_	_
-33	China	China	PROPN	NNP	Number=Sing	37	nmod:poss	_	SpaceAfter=No
-34	's	's	PART	POS	_	33	case	_	_
-35	total	total	ADJ	JJ	Degree=Pos	37	amod	_	_
-36	land	land	NOUN	NN	Number=Sing	37	compound	_	_
-37	area	area	NOUN	NN	Number=Sing	31	nmod	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	4	punct	_	_
+11	2005	2005	NUM	CD	NumType=Card	18	obl	_	SpaceAfter=No
+12	[	[	PUNCT	-LRB-	_	13	punct	_	SpaceAfter=No
+13	update	update	NOUN	NN	Number=Sing	11	appos	_	SpaceAfter=No
+14	]	]	PUNCT	-RRB-	_	13	punct	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	country	country	NOUN	NN	Number=Sing	18	nsubj	_	_
+18	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+19	over	over	ADV	RB	_	20	advmod	_	_
+20	2,349	2,349	NUM	CD	NumType=Card	22	nummod	_	_
+21	nature	nature	NOUN	NN	Number=Sing	22	compound	_	_
+22	reserves	reserve	NOUN	NNS	Number=Plur	18	obj	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	covering	cover	VERB	VBG	VerbForm=Ger	22	acl	_	_
+25	a	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
+26	total	total	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	area	area	NOUN	NN	Number=Sing	24	obj	_	_
+28	of	of	ADP	IN	_	31	case	_	_
+29	149.95	149.95	NUM	CD	NumType=Card	30	compound	_	_
+30	million	million	NUM	CD	NumType=Card	31	nummod	_	_
+31	hectares	hectare	NOUN	NNS	Number=Plur	27	nmod	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	22	punct	_	_
+33	15	15	NUM	CD	NumType=Card	34	nummod	_	_
+34	percent	percent	NOUN	NN	Number=Sing	31	appos	_	_
+35	of	of	ADP	IN	_	40	case	_	_
+36	China	China	PROPN	NNP	Number=Sing	40	nmod:poss	_	SpaceAfter=No
+37	's	's	PART	POS	_	36	case	_	_
+38	total	total	ADJ	JJ	Degree=Pos	40	amod	_	_
+39	land	land	NOUN	NN	Number=Sing	40	compound	_	_
+40	area	area	NOUN	NN	Number=Sing	34	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	4	punct	_	SpaceAfter=No
 
 # sent_id = 5
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 6
 # text = Most wild animals have been eliminated from the core agricultural regions of east and central China, but they have fared better in the mountainous south and west.
 1	Most	most	ADJ	JJS	Degree=Sup	3	amod	_	_
 2	wild	wild	ADJ	JJ	Degree=Pos	3	amod	_	_
@@ -5957,7 +6002,7 @@
 28	west	west	NOUN	NN	Number=Sing	26	conj	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = The Baiji was confirmed extinct on 12 December 2006.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	Baiji	Baiji	PROPN	NNP	Number=Sing	4	nsubj:pass	_	_
@@ -6414,9 +6459,16 @@
 34	in	in	ADP	IN	_	36	case	_	_
 35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
 36	country	country	NOUN	NN	Number=Sing	33	obl	_	SpaceAfter=No
-37	.	.	PUNCT	.	_	4	punct	_	_
+37	.	.	PUNCT	.	_	4	punct	_	SpaceAfter=No
 
 # sent_id = 5
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 6
 # text = In 2020, Chinese Communist Party general secretary Xi Jinping announced that China aims to peak emissions before 2030 and go carbon-neutral by 2060 in accordance with the Paris climate accord.
 1	In	in	ADP	IN	_	2	case	_	_
 2	2020	2020	NUM	CD	NumType=Card	11	obl	_	SpaceAfter=No
@@ -6453,7 +6505,7 @@
 33	accord	accord	NOUN	NN	Number=Sing	28	nmod	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = According to Climate Action Tracker, if accomplished it would lower the expected rise in global temperature by 0.2 - 0.3 degrees - "the biggest single reduction ever estimated by the Climate Action Tracker".
 1	According	accord	VERB	VBG	VerbForm=Ger	5	case	_	_
 2	to	to	ADP	IN	_	5	case	_	_
@@ -6493,7 +6545,7 @@
 36	"	"	PUNCT	''	_	28	punct	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 7
+# sent_id = 8
 # text = In September 2021 Xi Jinping announced that China will not build "coal-fired power projects abroad".
 1	In	in	ADP	IN	_	2	case	_	_
 2	September	September	PROPN	NNP	Number=Sing	6	obl	_	_
@@ -6516,7 +6568,7 @@
 19	"	"	PUNCT	''	_	11	punct	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 8
+# sent_id = 9
 # text = The decision can be "pivotal" in reducing emissions.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	decision	decision	NOUN	NN	Number=Sing	6	nsubj	_	_
@@ -6530,7 +6582,7 @@
 10	emissions	emission	NOUN	NNS	Number=Plur	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 9
+# sent_id = 10
 # text = The Belt and Road Initiative did not include financing such projects already in the first half of 2021.
 1	The	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
 2	Belt	Belt	PROPN	NNP	Number=Sing	5	compound	_	_
@@ -6885,7 +6937,7 @@
 21	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = 2
-# text = China's total area is generally stated as being approximately 9,600,000 km2 (3,700,000 sq mi).
+# text = China's total area is generally stated as being approximately 9,600,000 km2 (3,700,000 sq mi).[better source needed] Specific area figures range from 9,572,900 km2 (3,696,100 sq mi) according to the Encyclopædia Britannica, to 9,596,961 km2 (3,705,407 sq mi) according to the UN Demographic Yearbook, and the CIA World Factbook.
 1	China	China	PROPN	NNP	Number=Sing	4	nmod:poss	_	SpaceAfter=No
 2	's	's	PART	POS	_	1	case	_	_
 3	total	total	ADJ	JJ	Degree=Pos	4	amod	_	_
@@ -6900,52 +6952,53 @@
 12	km2	km2	NOUN	NN	Number=Sing	7	advcl	_	_
 13	(	(	PUNCT	-LRB-	_	16	punct	_	SpaceAfter=No
 14	3,700,000	3,700,000	NUM	CD	NumType=Card	16	nummod	_	SpacesAfter= 
-15	sq	sq	ADJ	JJ	Number=Sing	16	amod	_	SpacesAfter= 
+15	sq	sq	NOUN	NN	Number=Sing	16	compound	_	SpacesAfter= 
 16	mi	mi	NOUN	NN	Number=Sing	12	appos	_	SpaceAfter=No
-17	)	)	PUNCT	-RRB-	_	16	punct	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = 3
-# text = Specific area figures range from 9,572,900 km2 (3,696,100 sq mi) according to the Encyclopædia Britannica, to 9,596,961 km2 (3,705,407 sq mi) according to the UN Demographic Yearbook, and the CIA World Factbook.
-1	Specific	specific	ADJ	JJ	Degree=Pos	3	amod	_	_
-2	area	area	NOUN	NN	Number=Sing	3	compound	_	_
-3	figures	figure	NOUN	NNS	Number=Plur	4	nsubj	_	_
-4	range	range	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	from	from	ADP	IN	_	7	case	_	_
-6	9,572,900	9,572,900	NUM	CD	NumType=Card	7	nummod	_	SpacesAfter= 
-7	km2	km2	NOUN	NN	Number=Sing	4	obl	_	_
-8	(	(	PUNCT	-LRB-	_	11	punct	_	SpaceAfter=No
-9	3,696,100	3,696,100	NUM	CD	NumType=Card	11	nummod	_	SpacesAfter= 
-10	sq	sq	NOUN	NN	Number=Sing	11	compound	_	SpacesAfter= 
-11	mi	mi	NOUN	NN	Number=Sing	7	appos	_	SpaceAfter=No
-12	)	)	PUNCT	-RRB-	_	11	punct	_	_
-13	according	accord	VERB	VBG	VerbForm=Ger	17	case	_	_
-14	to	to	ADP	IN	_	13	fixed	_	_
-15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
-16	Encyclopædia	Encyclopædia	PROPN	NNP	Number=Sing	17	compound	_	_
-17	Britannica	Britannica	PROPN	NNP	Number=Sing	4	obl	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	to	to	ADP	IN	_	21	case	_	_
-20	9,596,961	9,596,961	NUM	CD	NumType=Card	21	nummod	_	SpacesAfter= 
-21	km2	km2	NOUN	NN	Number=Sing	17	nmod	_	_
-22	(	(	PUNCT	-LRB-	_	25	punct	_	SpaceAfter=No
-23	3,705,407	3,705,407	NUM	CD	NumType=Card	25	nummod	_	SpacesAfter= 
-24	sq	sq	NOUN	NN	Number=Sing	25	compound	_	SpacesAfter= 
-25	mi	mi	NOUN	NN	Number=Sing	21	appos	_	SpaceAfter=No
-26	)	)	PUNCT	-RRB-	_	25	punct	_	_
-27	according	accord	VERB	VBG	VerbForm=Ger	32	case	_	_
-28	to	to	ADP	IN	_	27	fixed	_	_
-29	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
-30	UN	UN	PROPN	NNP	Number=Sing	32	compound	_	_
-31	Demographic	Demographic	PROPN	NNP	Number=Sing	32	compound	_	_
-32	Yearbook	Yearbook	PROPN	NNP	Number=Sing	4	obl	_	SpaceAfter=No
-33	,	,	PUNCT	,	_	38	punct	_	_
-34	and	and	CCONJ	CC	_	38	cc	_	_
-35	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
-36	CIA	CIA	PROPN	NNP	Number=Sing	38	compound	_	_
-37	World	World	PROPN	NNP	Number=Sing	38	compound	_	_
-38	Factbook	Factbook	PROPN	NNP	Number=Sing	32	conj	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+17	).	).	PUNCT	-RRB-	_	16	punct	_	SpaceAfter=No
+18	[	[	PUNCT	-LRB-	_	20	punct	_	SpaceAfter=No
+19	better	better	ADJ	JJR	Degree=Cmp	20	amod	_	SpacesAfter= 
+20	source	source	NOUN	NN	Number=Sing	12	appos	_	SpacesAfter= 
+21	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	20	acl	_	SpaceAfter=No
+22	]	]	PUNCT	-RRB-	_	20	punct	_	_
+23	Specific	specific	ADJ	JJ	Degree=Pos	25	amod	_	_
+24	area	area	NOUN	NN	Number=Sing	25	compound	_	_
+25	figures	figure	NOUN	NNS	Number=Plur	26	nsubj	_	_
+26	range	range	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
+27	from	from	ADP	IN	_	29	case	_	_
+28	9,572,900	9,572,900	NUM	CD	NumType=Card	29	nummod	_	SpacesAfter= 
+29	km2	km2	NOUN	NN	Number=Sing	26	obl	_	_
+30	(	(	PUNCT	-LRB-	_	33	punct	_	SpaceAfter=No
+31	3,696,100	3,696,100	NUM	CD	NumType=Card	33	nummod	_	SpacesAfter= 
+32	sq	sq	NOUN	NN	Number=Sing	33	compound	_	SpacesAfter= 
+33	mi	mi	NOUN	NN	Number=Sing	29	appos	_	SpaceAfter=No
+34	)	)	PUNCT	-RRB-	_	33	punct	_	_
+35	according	accord	VERB	VBG	VerbForm=Ger	39	case	_	_
+36	to	to	ADP	IN	_	35	fixed	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+38	Encyclopædia	Encyclopædia	PROPN	NNP	Number=Sing	39	compound	_	_
+39	Britannica	Britannica	PROPN	NNP	Number=Sing	26	obl	_	SpaceAfter=No
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	to	to	ADP	IN	_	43	case	_	_
+42	9,596,961	9,596,961	NUM	CD	NumType=Card	43	nummod	_	SpacesAfter= 
+43	km2	km2	NOUN	NN	Number=Sing	26	obl	_	_
+44	(	(	PUNCT	-LRB-	_	47	punct	_	SpaceAfter=No
+45	3,705,407	3,705,407	NUM	CD	NumType=Card	47	nummod	_	SpacesAfter= 
+46	sq	sq	NOUN	NN	Number=Sing	47	compound	_	SpacesAfter= 
+47	mi	mi	NOUN	NN	Number=Sing	43	appos	_	SpaceAfter=No
+48	)	)	PUNCT	-RRB-	_	47	punct	_	_
+49	according	accord	VERB	VBG	VerbForm=Ger	54	case	_	_
+50	to	to	ADP	IN	_	49	fixed	_	_
+51	the	the	DET	DT	Definite=Def|PronType=Art	54	det	_	_
+52	UN	UN	PROPN	NNP	Number=Sing	54	compound	_	_
+53	Demographic	Demographic	PROPN	NNP	Number=Sing	54	compound	_	_
+54	Yearbook	Yearbook	PROPN	NNP	Number=Sing	26	obl	_	SpaceAfter=No
+55	,	,	PUNCT	,	_	60	punct	_	_
+56	and	and	CCONJ	CC	_	60	cc	_	_
+57	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+58	CIA	CIA	PROPN	NNP	Number=Sing	60	compound	_	_
+59	World	World	PROPN	NNP	Number=Sing	60	compound	_	_
+60	Factbook	Factbook	PROPN	NNP	Number=Sing	54	conj	_	SpaceAfter=No
+61	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -7087,7 +7140,14 @@
 15	and	and	CCONJ	CC	_	17	cc	_	_
 16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
 17	Philippines	Philippines	PROPN	NNPS	Number=Plur	9	conj	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	.	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -8400,9 +8460,16 @@
 39	Republic	Republic	PROPN	NNP	Number=Sing	36	nmod	_	_
 40	of	of	ADP	IN	_	41	case	_	_
 41	China	China	PROPN	NNP	Number=Sing	39	nmod	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	13	punct	_	_
+42	.	.	PUNCT	.	_	13	punct	_	SpaceAfter=No
 
 # sent_id = 2
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 3
 # text = Chinese officials have protested on numerous occasions when foreign countries have made diplomatic overtures to Taiwan, especially in the matter of armament sales.
 1	Chinese	chinese	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	officials	official	NOUN	NNS	Number=Plur	4	nsubj	_	_
@@ -8926,7 +8993,14 @@
 20	unfair	unfair	ADJ	JJ	Degree=Pos	22	amod	_	_
 21	trade	trade	NOUN	NN	Number=Sing	22	compound	_	_
 22	advantage	advantage	NOUN	NN	Number=Sing	17	obj	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	.	_	8	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = [needs update]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	needs	need	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	update	update	NOUN	NN	Number=Sing	2	obj	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9354,7 +9428,15 @@
 28	important	important	ADJ	JJ	Degree=Pos	30	amod	_	_
 29	diplomatic	diplomatic	ADJ	JJ	Degree=Pos	30	amod	_	_
 30	principles	principle	NOUN	NNS	Number=Plur	24	nmod	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	.	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9416,7 +9498,14 @@
 14	India	India	PROPN	NNP	Number=Sing	11	nmod	_	_
 15	and	and	CCONJ	CC	_	16	cc	_	_
 16	Bhutan	Bhutan	PROPN	NNP	Number=Sing	14	conj	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	.	_	7	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -9718,34 +9807,38 @@
 20	how	how	ADV	WRB	PronType=Int	22	advmod	_	_
 21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
 22	behave	behave	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	7	advcl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	5	punct	_	_
+23	.	.	PUNCT	.	_	5	punct	_	SpaceAfter=No
 
 # sent_id = 8
-# text = The social credit system, first piloted in 2014, is considered a form of mass surveillance which uses big data analysis technology.
-1	The	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
-2	social	social	ADJ	JJ	Degree=Pos	3	amod	_	_
-3	credit	credit	NOUN	NN	Number=Sing	4	compound	_	_
-4	system	system	NOUN	NN	Number=Sing	12	nsubj:pass	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	first	first	ADV	RB	_	7	advmod	_	_
-7	piloted	pilot	VERB	VBN	Tense=Past|VerbForm=Part	4	acl	_	_
-8	in	in	ADP	IN	_	9	case	_	_
-9	2014	2014	NUM	CD	NumType=Card	7	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	12	punct	_	_
-11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_
-12	considered	consider	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
-13	a	a	DET	DT	Definite=Ind|PronType=Art	14	det	_	_
-14	form	form	NOUN	NN	Number=Sing	12	xcomp	_	_
-15	of	of	ADP	IN	_	17	case	_	_
-16	mass	mass	ADJ	JJ	Degree=Pos	17	amod	_	_
-17	surveillance	surveillance	NOUN	NN	Number=Sing	14	nmod	_	_
-18	which	which	PRON	WDT	PronType=Rel	19	nsubj	_	_
-19	uses	use	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
-20	big	big	ADJ	JJ	Degree=Pos	23	amod	_	_
-21	data	data	NOUN	NN	Number=Sing	22	compound	_	_
-22	analysis	analysis	NOUN	NN	Number=Sing	23	compound	_	_
-23	technology	technology	NOUN	NN	Number=Sing	19	obj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+# text = [needs update] The social credit system, first piloted in 2014, is considered a form of mass surveillance which uses big data analysis technology.
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	needs	need	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+3	update	update	NOUN	NN	Number=Sing	16	nsubj:pass	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+5	The	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+6	social	social	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	credit	credit	NOUN	NN	Number=Sing	8	compound	_	_
+8	system	system	NOUN	NN	Number=Sing	16	nsubj:pass	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	first	first	ADV	RB	_	11	advmod	_	_
+11	piloted	pilot	VERB	VBN	Tense=Past|VerbForm=Part	8	acl	_	_
+12	in	in	ADP	IN	_	13	case	_	_
+13	2014	2014	NUM	CD	NumType=Card	11	obl	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
+16	considered	consider	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+17	a	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	_
+18	form	form	NOUN	NN	Number=Sing	16	xcomp	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	mass	mass	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	surveillance	surveillance	NOUN	NN	Number=Sing	18	nmod	_	_
+22	which	which	PRON	WDT	PronType=Rel	23	nsubj	_	_
+23	uses	use	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	_	_
+24	big	big	ADJ	JJ	Degree=Pos	27	amod	_	_
+25	data	data	NOUN	NN	Number=Sing	26	compound	_	_
+26	analysis	analysis	NOUN	NN	Number=Sing	27	compound	_	_
+27	technology	technology	NOUN	NN	Number=Sing	23	obj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -10414,10 +10507,16 @@
 11	only	only	ADV	RB	_	14	advmod	_	_
 12	behind	behind	ADP	IN	_	14	case	_	_
 13	North	North	PROPN	NNP	Number=Sing	14	compound	_	_
-14	Korea	Korea	PROPN	NNP	Number=Sing	9	nmod	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	2	punct	_	_
+14	Korea.	Korea.	PROPN	NNP	Number=Sing	9	nmod	_	SpaceAfter=No
 
 # sent_id = 3
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 4
 # text = The PLA consists of the Ground Force (PLAGF), the Navy (PLAN), the Air Force (PLAAF), the Rocket Force (PLARF) and the Strategic Support Force (PLASSF).
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	PLA	PLA	PROPN	NNP	Number=Sing	3	nsubj	_	_
@@ -10459,7 +10558,7 @@
 38	)	)	PUNCT	-RRB-	_	37	punct	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = According to the Chinese government, military budget for 2017 totalled US$151.5 billion, constituting the world's second-largest military budget, although the military expenditures-GDP ratio with 1.3% of GDP is below world average.
 1	According	accord	VERB	VBG	VerbForm=Ger	5	case	_	_
 2	to	to	ADP	IN	_	5	case	_	_
@@ -10504,7 +10603,7 @@
 41	average	average	NOUN	NN	Number=Sing	11	advcl	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = However, many authorities – including SIPRI and the U.S. Office of the Secretary of Defense claim that China hides its real level of military spending, which is allegedly much higher than the official budget.
 1	However	however	ADV	RB	_	17	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	17	punct	_	_
@@ -11904,15 +12003,22 @@
 20	massive	massive	ADJ	JJ	Degree=Pos	22	amod	_	_
 21	job	job	NOUN	NN	Number=Sing	22	compound	_	_
 22	losses	loss	NOUN	NNS	Number=Plur	18	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	10	punct	_	_
+23	.	.	PUNCT	.	_	10	punct	_	SpaceAfter=No
 
 # sent_id = 5
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 6
 # text = Modern-day
 1	Modern	modern	ADJ	JJ	Degree=Pos	3	amod	_	SpaceAfter=No
 2	-	-	PUNCT	HYPH	_	3	punct	_	SpaceAfter=No
 3	day	day	NOUN	NN	Number=Sing	0	root	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = China is mainly characterized as having a market economy based on private property ownership, and is one of the leading examples of state capitalism.
 1	China	China	PROPN	NNP	Number=Sing	4	nsubj:pass	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
@@ -11941,8 +12047,8 @@
 25	capitalism	capitalism	NOUN	NN	Number=Sing	22	nmod	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 7
-# text = The state still dominates in strategic "pillar" sectors such as energy production and heavy industries, but private enterprise has expanded enormously, with around 30 million private businesses recorded in 2008.
+# sent_id = 8
+# text = The state still dominates in strategic "pillar" sectors such as energy production and heavy industries, but private enterprise has expanded enormously, with around 30 million private businesses recorded in 2008.[better source needed]
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	state	state	NOUN	NN	Number=Sing	4	nsubj	_	_
 3	still	still	ADV	RB	_	4	advmod	_	_
@@ -11977,9 +12083,14 @@
 32	recorded	record	VERB	VBN	Tense=Past|VerbForm=Part	31	acl	_	_
 33	in	in	ADP	IN	_	34	case	_	_
 34	2008	2008	NUM	CD	NumType=Card	32	obl	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	4	punct	_	_
+35	.	.	PUNCT	.	_	4	punct	_	SpaceAfter=No
+36	[	[	PUNCT	-LRB-	_	38	punct	_	SpaceAfter=No
+37	better	better	ADJ	JJR	Degree=Cmp	38	amod	_	SpacesAfter= 
+38	source	source	NOUN	NN	Number=Sing	4	parataxis	_	SpacesAfter= 
+39	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	38	acl	_	SpaceAfter=No
+40	]	]	PUNCT	-RRB-	_	38	punct	_	_
 
-# sent_id = 8
+# sent_id = 9
 # text = In 2018, private enterprises in China accounted for 60% of GDP, 80% of urban employment and 90% of new jobs.
 1	In	in	ADP	IN	_	2	case	_	_
 2	2018	2018	NUM	CD	NumType=Card	8	obl	_	SpaceAfter=No
@@ -13423,7 +13534,15 @@
 43	in	in	ADP	IN	_	45	case	_	_
 44	western	western	ADJ	JJ	Degree=Pos	45	amod	_	_
 45	nations	nation	NOUN	NNS	Number=Plur	37	obl	_	SpaceAfter=No
-46	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
+
+# sent_id = 11
+# text = [improper synthesis?]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	improper	improper	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	synthesis	synthesis	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	.	_	3	punct	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13608,7 +13727,7 @@
 23	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 3
-# text = In 2003, China became the third country to independently send humans into space, with Yang Liwei's spaceflight aboard Shenzhou 5; as of 2021, thirteen Chinese nationals have journeyed into space, including two women.
+# text = In 2003, China became the third country to independently send humans into space, with Yang Liwei's spaceflight aboard Shenzhou 5; as of 2021[update], thirteen Chinese nationals have journeyed into space, including two women.
 1	In	in	ADP	IN	_	2	case	_	_
 2	2003	2003	NUM	CD	NumType=Card	5	obl	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	5	punct	_	_
@@ -13635,20 +13754,23 @@
 24	;	;	PUNCT	,	_	5	punct	_	_
 25	as	as	ADP	IN	_	27	case	_	_
 26	of	of	ADP	IN	_	25	fixed	_	_
-27	2021	2021	NUM	CD	NumType=Card	33	obl	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	33	punct	_	_
-29	thirteen	thirteen	NUM	CD	NumType=Card	31	nummod	_	_
-30	Chinese	chinese	ADJ	JJ	Degree=Pos	31	amod	_	_
-31	nationals	national	NOUN	NNS	Number=Plur	33	nsubj	_	_
-32	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	33	aux	_	_
-33	journeyed	journey	VERB	VBN	Tense=Past|VerbForm=Part	8	parataxis	_	_
-34	into	into	ADP	IN	_	35	case	_	_
-35	space	space	NOUN	NN	Number=Sing	33	obl	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	33	punct	_	_
-37	including	include	VERB	VBG	VerbForm=Ger	39	case	_	_
-38	two	two	NUM	CD	NumType=Card	39	nummod	_	_
-39	women	woman	NOUN	NNS	Number=Plur	33	obl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	5	punct	_	_
+27	2021	2021	NUM	CD	NumType=Card	36	obl	_	SpaceAfter=No
+28	[	[	PUNCT	-LRB-	_	29	punct	_	SpaceAfter=No
+29	update	update	NOUN	NN	Number=Sing	27	appos	_	SpaceAfter=No
+30	]	]	PUNCT	-RRB-	_	29	punct	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	36	punct	_	_
+32	thirteen	thirteen	NUM	CD	NumType=Card	34	nummod	_	_
+33	Chinese	chinese	ADJ	JJ	Degree=Pos	34	amod	_	_
+34	nationals	national	NOUN	NNS	Number=Plur	36	nsubj	_	_
+35	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	36	aux	_	_
+36	journeyed	journey	VERB	VBN	Tense=Past|VerbForm=Part	8	parataxis	_	_
+37	into	into	ADP	IN	_	38	case	_	_
+38	space	space	NOUN	NN	Number=Sing	36	obl	_	SpaceAfter=No
+39	,	,	PUNCT	,	_	36	punct	_	_
+40	including	include	VERB	VBG	VerbForm=Ger	42	case	_	_
+41	two	two	NUM	CD	NumType=Card	42	nummod	_	_
+42	women	woman	NOUN	NNS	Number=Plur	36	obl	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 4
 # text = In 2011, China's first space station module, Tiangong-1, was launched, marking the first step in a project to assemble a large crewed station by the early 2020s.
@@ -14026,7 +14148,7 @@
 35	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 2
-# text = It also has the world's largest number of internet and broadband users, with over 800 million Internet users as of 2018—equivalent to around 60% of its population—and almost all of them being mobile as well.
+# text = It also has the world's largest number of internet and broadband users, with over 800 million Internet users as of 2018[update]—equivalent to around 60% of its population—and almost all of them being mobile as well.
 1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	also	also	ADV	RB	_	3	advmod	_	_
 3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -14049,24 +14171,28 @@
 20	users	user	NOUN	NNS	Number=Plur	3	obl	_	_
 21	as	as	ADP	IN	_	23	case	_	_
 22	of	of	ADP	IN	_	21	fixed	_	_
-23	2018—equivalent	2018—equivalent	NOUN	CD	NumType=Card	20	nmod	_	_
-24	to	to	ADP	IN	_	27	case	_	_
-25	around	around	ADV	RB	_	26	advmod	_	_
-26	60	60	NUM	CD	NumType=Card	27	nummod	_	SpaceAfter=No
-27	%	%	SYM	NN	Number=Sing	23	nmod	_	_
-28	of	of	ADP	IN	_	30	case	_	_
-29	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	nmod:poss	_	_
-30	population—	population—	NOUN	NN	Number=Sing	27	nmod	_	SpaceAfter=No
-31	and	and	CCONJ	CC	_	37	cc	_	_
-32	almost	almost	ADV	RB	_	33	advmod	_	_
-33	all	all	DET	DT	_	37	nsubj	_	_
-34	of	of	ADP	IN	_	35	case	_	_
-35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	33	nmod	_	_
-36	being	be	AUX	VBG	VerbForm=Ger	37	cop	_	_
-37	mobile	mobile	ADJ	JJ	Degree=Pos	20	conj	_	_
-38	as	as	ADV	RB	_	37	advmod	_	_
-39	well	well	ADV	RB	Degree=Pos	38	fixed	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	3	punct	_	_
+23	2018	2018	NUM	CD	NumType=Card	20	nmod	_	SpaceAfter=No
+24	[	[	PUNCT	-LRB-	_	25	punct	_	SpaceAfter=No
+25	update	update	NOUN	NN	Number=Sing	20	appos	_	SpaceAfter=No
+26	]	]	PUNCT	-RRB-	_	25	punct	_	SpaceAfter=No
+27	—equivalent	—equivalent	ADJ	JJ	Degree=Pos	20	amod	_	_
+28	to	to	ADP	IN	_	31	case	_	_
+29	around	around	ADV	RB	_	30	advmod	_	_
+30	60	60	NUM	CD	NumType=Card	31	nummod	_	SpaceAfter=No
+31	%	%	SYM	NN	Number=Sing	27	obl	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	nmod:poss	_	_
+34	population—	population—	NOUN	NN	Number=Sing	31	nmod	_	SpaceAfter=No
+35	and	and	CCONJ	CC	_	41	cc	_	_
+36	almost	almost	ADV	RB	_	37	advmod	_	_
+37	all	all	DET	DT	_	41	nsubj	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	37	nmod	_	_
+40	being	be	AUX	VBG	VerbForm=Ger	41	cop	_	_
+41	mobile	mobile	ADJ	JJ	Degree=Pos	27	conj	_	_
+42	as	as	ADV	RB	_	41	advmod	_	_
+43	well	well	ADV	RB	Degree=Pos	42	fixed	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 3
 # text = By 2018, China had more than 1 billion 4G users, accounting for 40% of world's total.
@@ -14458,7 +14584,7 @@
 39	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = 5
-# text = In urban areas, bicycles remain a common mode of transport, despite the increasing prevalence of automobiles – as of 2012, there are approximately 470 million bicycles in China.
+# text = In urban areas, bicycles remain a common mode of transport, despite the increasing prevalence of automobiles – as of 2012[update], there are approximately 470 million bicycles in China.
 1	In	in	ADP	IN	_	3	case	_	_
 2	urban	urban	ADJ	JJ	Degree=Pos	3	amod	_	_
 3	areas	area	NOUN	NNS	Number=Plur	6	obl	_	SpaceAfter=No
@@ -14480,17 +14606,20 @@
 19	–	-	PUNCT	,	_	6	punct	_	_
 20	as	as	ADP	IN	_	22	case	_	_
 21	of	of	ADP	IN	_	20	fixed	_	_
-22	2012	2012	NUM	CD	NumType=Card	25	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	25	punct	_	_
-24	there	there	PRON	EX	_	25	expl	_	_
-25	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
-26	approximately	approximately	ADV	RB	_	28	advmod	_	_
-27	470	470	NUM	CD	NumType=Card	28	compound	_	_
-28	million	million	NUM	CD	NumType=Card	29	nummod	_	_
-29	bicycles	bicycle	NOUN	NNS	Number=Plur	25	nsubj	_	_
-30	in	in	ADP	IN	_	31	case	_	_
-31	China	China	PROPN	NNP	Number=Sing	29	nmod	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+22	2012	2012	NUM	CD	NumType=Card	28	obl	_	SpaceAfter=No
+23	[	[	PUNCT	-LRB-	_	24	punct	_	SpaceAfter=No
+24	update	update	NOUN	NN	Number=Sing	22	appos	_	SpaceAfter=No
+25	]	]	PUNCT	-RRB-	_	24	punct	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	there	there	PRON	EX	_	28	expl	_	_
+28	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
+29	approximately	approximately	ADV	RB	_	31	advmod	_	_
+30	470	470	NUM	CD	NumType=Card	31	compound	_	_
+31	million	million	NUM	CD	NumType=Card	32	nummod	_	_
+32	bicycles	bicycle	NOUN	NNS	Number=Plur	28	nsubj	_	_
+33	in	in	ADP	IN	_	34	case	_	_
+34	China	China	PROPN	NNP	Number=Sing	32	nmod	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14538,9 +14667,17 @@
 37	tracks	track	NOUN	NNS	Number=Plur	32	nmod	_	_
 38	in	in	ADP	IN	_	39	case	_	_
 39	2006	2006	NUM	CD	NumType=Card	19	obl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	14	punct	_	_
+40	.	.	PUNCT	.	_	14	punct	_	SpaceAfter=No
 
 # sent_id = 2
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 3
 # text = As of 2017, the country had 127,000 km (78,914 mi) of railways, the second longest network in the world.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
@@ -14567,7 +14704,7 @@
 23	world	world	NOUN	NN	Number=Sing	20	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = The railways strain to meet enormous demand particularly during the Chinese New Year holiday, when the world's largest annual human migration takes place.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	railways	railway	NOUN	NNS	Number=Plur	3	nsubj	_	_
@@ -14721,88 +14858,90 @@
 15	world	world	NOUN	NN	Number=Sing	17	nmod:poss	_	SpaceAfter=No
 16	's	's	PART	POS	_	15	case	_	_
 17	busiest	busiest	ADJ	JJS	Degree=Sup	0	root	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	17	punct	_	_
+18	.	.	PUNCT	.	_	17	punct	_	SpaceAfter=No
 
 # sent_id = 5
-# text = The network includes the Beijing–Guangzhou–Shenzhen High-Speed
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 6
+# text = The network includes the Beijing–Guangzhou–Shenzhen High-Speed Railway, the single longest HSR line in the world, and the Beijing–Shanghai High-Speed Railway, which has three of longest railroad bridges in the world.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	network	network	NOUN	NN	Number=Sing	3	nsubj	_	_
 3	includes	include	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
-5	Beijing	Beijing	PROPN	NNP	Number=Sing	3	obj	_	SpaceAfter=No
-6	–	-	PUNCT	,	_	5	punct	_	SpaceAfter=No
-7	Guangzhou	Guangzhou	PROPN	NNP	Number=Sing	5	appos	_	SpaceAfter=No
-8	–	-	PUNCT	,	_	5	punct	_	SpaceAfter=No
-9	Shenzhen	Shenzhen	PROPN	NNP	Number=Sing	12	compound	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+5	Beijing	Beijing	PROPN	NNP	Number=Sing	13	compound	_	SpaceAfter=No
+6	–	-	PUNCT	,	_	7	punct	_	SpaceAfter=No
+7	Guangzhou	Guangzhou	PROPN	NNP	Number=Sing	13	compound	_	SpaceAfter=No
+8	–	-	PUNCT	,	_	7	punct	_	SpaceAfter=No
+9	Shenzhen	Shenzhen	PROPN	NNP	Number=Sing	13	compound	_	_
 10	High	High	PROPN	NNP	Number=Sing	12	compound	_	SpaceAfter=No
 11	-	-	PUNCT	HYPH	_	12	punct	_	SpaceAfter=No
-12	Speed	Speed	PROPN	NNP	Number=Sing	5	appos	_	_
-
-# sent_id = 6
-# text = Railway, the single longest HSR line in the world, and the Beijing–Shanghai High-Speed Railway, which has three of longest railroad bridges in the world.
-1	Railway	Railway	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	1	punct	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
-4	single	single	ADJ	JJ	Degree=Pos	7	amod	_	_
-5	longest	longest	ADJ	JJS	Degree=Sup	7	amod	_	_
-6	HSR	HSR	PROPN	NNP	Number=Sing	7	compound	_	_
-7	line	line	NOUN	NN	Number=Sing	1	appos	_	_
-8	in	in	ADP	IN	_	10	case	_	_
-9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
-10	world	world	NOUN	NN	Number=Sing	7	nmod	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	20	punct	_	_
-12	and	and	CCONJ	CC	_	20	cc	_	_
-13	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
-14	Beijing	Beijing	PROPN	NNP	Number=Sing	20	compound	_	SpaceAfter=No
-15	–	-	PUNCT	,	_	20	punct	_	SpaceAfter=No
-16	Shanghai	Shanghai	PROPN	NNP	Number=Sing	20	compound	_	_
-17	High	High	PROPN	NNP	Number=Sing	19	compound	_	SpaceAfter=No
-18	-	-	PUNCT	HYPH	_	19	punct	_	SpaceAfter=No
-19	Speed	Speed	PROPN	NNP	Number=Sing	20	compound	_	_
-20	Railway	Railway	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	20	punct	_	_
-22	which	which	PRON	WDT	PronType=Rel	23	nsubj	_	_
-23	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_
-24	three	three	NUM	CD	NumType=Card	23	obj	_	_
-25	of	of	ADP	IN	_	28	case	_	_
-26	longest	longest	ADJ	JJS	Degree=Sup	28	amod	_	_
-27	railroad	railroad	NOUN	NN	Number=Sing	28	compound	_	_
-28	bridges	bridge	NOUN	NNS	Number=Plur	24	nmod	_	_
-29	in	in	ADP	IN	_	31	case	_	_
-30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
-31	world	world	NOUN	NN	Number=Sing	28	nmod	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	1	punct	_	_
+12	Speed	Speed	PROPN	NNP	Number=Sing	13	compound	_	_
+13	Railway	Railway	PROPN	NNP	Number=Sing	3	obj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+16	single	single	ADJ	JJ	Degree=Pos	19	amod	_	_
+17	longest	longest	ADJ	JJS	Degree=Sup	19	amod	_	_
+18	HSR	hsr	NOUN	NN	Number=Sing	19	compound	_	_
+19	line	line	NOUN	NN	Number=Sing	13	appos	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	world	world	NOUN	NN	Number=Sing	19	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	32	punct	_	_
+24	and	and	CCONJ	CC	_	32	cc	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+26	Beijing	Beijing	PROPN	NNP	Number=Sing	32	compound	_	SpaceAfter=No
+27	–	-	PUNCT	,	_	32	punct	_	SpaceAfter=No
+28	Shanghai	Shanghai	PROPN	NNP	Number=Sing	32	compound	_	_
+29	High	High	PROPN	NNP	Number=Sing	31	compound	_	SpaceAfter=No
+30	-	-	PUNCT	HYPH	_	31	punct	_	SpaceAfter=No
+31	Speed	Speed	PROPN	NNP	Number=Sing	32	compound	_	_
+32	Railway	Railway	PROPN	NNP	Number=Sing	13	conj	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	which	which	PRON	WDT	PronType=Rel	35	nsubj	_	_
+35	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	acl:relcl	_	_
+36	three	three	NUM	CD	NumType=Card	35	obj	_	_
+37	of	of	ADP	IN	_	40	case	_	_
+38	longest	longest	ADJ	JJS	Degree=Sup	40	amod	_	_
+39	railroad	railroad	NOUN	NN	Number=Sing	40	compound	_	_
+40	bridges	bridge	NOUN	NNS	Number=Plur	36	nmod	_	_
+41	in	in	ADP	IN	_	43	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	world	world	NOUN	NN	Number=Sing	40	nmod	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = 7
-# text = The Shanghai Maglev
-1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
-2	Shanghai	Shanghai	PROPN	NNP	Number=Sing	3	compound	_	_
-3	Maglev	Maglev	PROPN	NNP	Number=Sing	0	root	_	_
-
-# sent_id = 8
-# text = Train, which reaches 431 km/h (268 mph), is the fastest commercial train service in the world.
-1	Train	train	NOUN	NN	Number=Sing	18	nsubj	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	1	punct	_	_
-3	which	which	PRON	WDT	PronType=Rel	4	nsubj	_	_
-4	reaches	reach	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
-5	431	431	NUM	CD	NumType=Card	7	nummod	_	SpacesAfter= 
-6	km/	km/	NOUN	NN	Number=Sing	7	compound	_	SpaceAfter=No
-7	h	h	NOUN	NN	Number=Sing	4	obj	_	_
-8	(	(	PUNCT	-LRB-	_	10	punct	_	SpaceAfter=No
-9	268	268	NUM	CD	NumType=Card	10	nummod	_	SpacesAfter= 
-10	mph	mph	NOUN	NN	Number=Sing	7	appos	_	SpaceAfter=No
-11	)	)	PUNCT	-RRB-	_	10	punct	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	18	punct	_	_
-13	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
-15	fastest	fastest	ADJ	JJS	Degree=Sup	18	amod	_	_
-16	commercial	commercial	ADJ	JJ	Degree=Pos	18	amod	_	_
-17	train	train	NOUN	NN	Number=Sing	18	compound	_	_
-18	service	service	NOUN	NN	Number=Sing	0	root	_	_
-19	in	in	ADP	IN	_	21	case	_	_
-20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
-21	world	world	NOUN	NN	Number=Sing	18	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\n
+# text = The Shanghai Maglev Train, which reaches 431 km/h (268 mph), is the fastest commercial train service in the world.
+1	The	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+2	Shanghai	Shanghai	PROPN	NNP	Number=Sing	4	compound	_	_
+3	Maglev	Maglev	PROPN	NNP	Number=Sing	4	compound	_	_
+4	Train	Train	PROPN	NNP	Number=Sing	21	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	which	which	PRON	WDT	PronType=Rel	7	nsubj	_	_
+7	reaches	reach	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
+8	431	431	NUM	CD	NumType=Card	10	nummod	_	SpacesAfter= 
+9	km/	km/	NOUN	NN	Number=Sing	10	compound	_	SpaceAfter=No
+10	h	h	NOUN	NN	Number=Sing	7	obj	_	_
+11	(	(	PUNCT	-LRB-	_	13	punct	_	SpaceAfter=No
+12	268	268	NUM	CD	NumType=Card	13	nummod	_	SpacesAfter= 
+13	mph	mph	NOUN	NN	Number=Sing	10	appos	_	SpaceAfter=No
+14	)	)	PUNCT	-RRB-	_	13	punct	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	21	punct	_	_
+16	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+18	fastest	fastest	ADJ	JJS	Degree=Sup	21	amod	_	_
+19	commercial	commercial	ADJ	JJ	Degree=Pos	21	amod	_	_
+20	train	train	NOUN	NN	Number=Sing	21	compound	_	_
+21	service	service	NOUN	NN	Number=Sing	0	root	_	_
+22	in	in	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	world	world	NOUN	NN	Number=Sing	21	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	21	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -14828,35 +14967,35 @@
 15	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = 2
-# text = As of January 2021, 44
+# text = As of January 2021[update], 44 Chinese cities have urban mass transit systems in operation and 39 more have metro systems approved.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	January	January	PROPN	NNP	Number=Sing	6	obl	_	SpacesAfter= 
+3	January	January	PROPN	NNP	Number=Sing	12	obl	_	SpacesAfter= 
 4	2021	2021	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	6	punct	_	_
-6	44	44	NUM	CD	NumType=Card	0	root	_	_
+5	[	[	PUNCT	-LRB-	_	6	punct	_	SpaceAfter=No
+6	update	update	NOUN	NN	Number=Sing	3	appos	_	SpaceAfter=No
+7	]	]	PUNCT	-RRB-	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	44	44	NUM	CD	NumType=Card	11	nummod	_	_
+10	Chinese	chinese	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	cities	city	NOUN	NNS	Number=Plur	12	nsubj	_	_
+12	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	urban	urban	ADJ	JJ	Degree=Pos	16	amod	_	_
+14	mass	mass	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	transit	transit	NOUN	NN	Number=Sing	16	compound	_	_
+16	systems	system	NOUN	NNS	Number=Plur	12	obj	_	_
+17	in	in	ADP	IN	_	18	case	_	_
+18	operation	operation	NOUN	NN	Number=Sing	16	nmod	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	39	39	NUM	CD	NumType=Card	21	nummod	_	_
+21	more	more	ADJ	JJR	Degree=Cmp	22	nsubj	_	_
+22	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	12	conj	_	_
+23	metro	metro	NOUN	NN	Number=Sing	24	compound	_	_
+24	systems	system	NOUN	NNS	Number=Plur	22	obj	_	_
+25	approved	approve	VERB	VBN	Tense=Past|VerbForm=Part	24	acl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = 3
-# text = Chinese cities have urban mass transit systems in operation and 39 more have metro systems approved.
-1	Chinese	chinese	ADJ	JJ	Degree=Pos	2	amod	_	_
-2	cities	city	NOUN	NNS	Number=Plur	3	nsubj	_	_
-3	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	urban	urban	ADJ	JJ	Degree=Pos	7	amod	_	_
-5	mass	mass	ADJ	JJ	Degree=Pos	6	amod	_	_
-6	transit	transit	NOUN	NN	Number=Sing	7	compound	_	_
-7	systems	system	NOUN	NNS	Number=Plur	3	obj	_	_
-8	in	in	ADP	IN	_	9	case	_	_
-9	operation	operation	NOUN	NN	Number=Sing	7	nmod	_	_
-10	and	and	CCONJ	CC	_	13	cc	_	_
-11	39	39	NUM	CD	NumType=Card	12	nummod	_	_
-12	more	more	ADJ	JJR	Degree=Cmp	13	nsubj	_	_
-13	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
-14	metro	metro	NOUN	NN	Number=Sing	15	compound	_	_
-15	systems	system	NOUN	NNS	Number=Plur	13	obj	_	_
-16	approved	approve	VERB	VBN	Tense=Past|VerbForm=Part	15	acl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = 4
 # text = As of 2020, China boasts the five longest metro systems in the world with the networks in Shanghai, Beijing, Guangzhou, Chengdu and Shenzhen being the largest.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
@@ -14932,9 +15071,16 @@
 15	to	to	ADP	IN	_	17	case	_	_
 16	foreign	foreign	ADJ	JJ	Degree=Pos	17	amod	_	_
 17	shipping	shipping	NOUN	NN	Number=Sing	14	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	2	punct	_	_
+18	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
 
 # sent_id = 3
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 4
 # text = In 2017, the Ports of Shanghai, Hong Kong, Shenzhen, Ningbo-Zhoushan, Guangzhou, Qingdao and Tianjin ranked in the Top 10 in the world in container traffic and cargo tonnage.
 1	In	in	ADP	IN	_	2	case	_	_
 2	2017	2017	NUM	CD	NumType=Card	23	obl	_	SpaceAfter=No
@@ -16380,7 +16526,14 @@
 12	Chinese	chinese	ADJ	JJ	Degree=Pos	14	amod	_	_
 13	character	character	NOUN	NN	Number=Sing	14	compound	_	_
 14	script	script	NOUN	NN	Number=Sing	8	conj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 9
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16655,7 +16808,14 @@
 24	-	-	PUNCT	HYPH	_	25	punct	_	SpaceAfter=No
 25	term	term	NOUN	NN	Number=Sing	26	compound	_	_
 26	residents	resident	NOUN	NNS	Number=Plur	21	obj	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	.	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -16758,9 +16918,17 @@
 12	in	in	ADP	IN	_	14	case	_	_
 13	higher	higher	ADJ	JJR	Degree=Cmp	14	amod	_	_
 14	education	education	NOUN	NN	Number=Sing	11	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	11	punct	_	_
+15	.	.	PUNCT	.	_	11	punct	_	SpaceAfter=No
 
 # sent_id = 5
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 6
 # text = This number increased significantly over the last years, reaching a tertiary school enrolment of 58.42 percent in 2020.
 1	This	this	DET	DT	Number=Sing|PronType=Dem	2	det	_	_
 2	number	number	NOUN	NN	Number=Sing	3	nsubj	_	_
@@ -16783,7 +16951,7 @@
 19	2020	2020	NUM	CD	NumType=Card	10	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = Vocational education is available to students at the secondary and tertiary level.
 1	Vocational	vocational	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	education	education	NOUN	NN	Number=Sing	4	nsubj	_	_
@@ -16799,7 +16967,7 @@
 12	level	level	NOUN	NN	Number=Sing	6	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 7
+# sent_id = 8
 # text = More than 10 million Chinese students graduated from vocational colleges nationwide every year.
 1	More	more	ADJ	JJR	Degree=Cmp	4	advmod	_	_
 2	than	than	ADP	IN	_	1	fixed	_	_
@@ -17421,7 +17589,14 @@
 21	by	by	ADP	IN	_	23	case	_	_
 22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
 23	campaign	campaign	NOUN	NN	Number=Sing	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	20	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	.	_	20	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -17579,33 +17754,36 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = As of 2017, the average life expectancy at birth in China is 76 years, and the infant mortality rate is 7 per thousand.
+# text = As of 2017[update], the average life expectancy at birth in China is 76 years, and the infant mortality rate is 7 per thousand.
 1	As	as	ADP	IN	_	3	case	_	_
 2	of	of	ADP	IN	_	1	fixed	_	_
-3	2017	2017	NUM	CD	NumType=Card	15	obl	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	15	punct	_	_
-5	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-6	average	average	ADJ	JJ	Degree=Pos	8	amod	_	_
-7	life	life	NOUN	NN	Number=Sing	8	compound	_	_
-8	expectancy	expectancy	NOUN	NN	Number=Sing	15	nsubj	_	_
-9	at	at	ADP	IN	_	10	case	_	_
-10	birth	birth	NOUN	NN	Number=Sing	8	nmod	_	_
-11	in	in	ADP	IN	_	12	case	_	_
-12	China	China	PROPN	NNP	Number=Sing	8	nmod	_	_
-13	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
-14	76	76	NUM	CD	NumType=Card	15	nummod	_	_
-15	years	year	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	23	punct	_	_
-17	and	and	CCONJ	CC	_	23	cc	_	_
-18	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
-19	infant	infant	ADJ	JJ	Degree=Pos	21	amod	_	_
-20	mortality	mortality	NOUN	NN	Number=Sing	21	compound	_	_
-21	rate	rate	NOUN	NN	Number=Sing	23	nsubj	_	_
-22	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_
-23	7	7	NUM	CD	NumType=Card	15	conj	_	_
-24	per	per	ADP	IN	_	25	case	_	_
-25	thousand	thousand	NUM	CD	NumType=Card	23	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	15	punct	_	_
+3	2017	2017	NUM	CD	NumType=Card	18	obl	_	SpaceAfter=No
+4	[	[	PUNCT	-LRB-	_	5	punct	_	SpaceAfter=No
+5	update	update	NOUN	NN	Number=Sing	18	appos	_	SpaceAfter=No
+6	]	]	PUNCT	-RRB-	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	18	punct	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+9	average	average	ADJ	JJ	Degree=Pos	11	amod	_	_
+10	life	life	NOUN	NN	Number=Sing	11	compound	_	_
+11	expectancy	expectancy	NOUN	NN	Number=Sing	18	nsubj	_	_
+12	at	at	ADP	IN	_	13	case	_	_
+13	birth	birth	NOUN	NN	Number=Sing	11	nmod	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	China	China	PROPN	NNP	Number=Sing	11	nmod	_	_
+16	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
+17	76	76	NUM	CD	NumType=Card	18	nummod	_	_
+18	years	year	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	26	punct	_	_
+20	and	and	CCONJ	CC	_	26	cc	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+22	infant	infant	ADJ	JJ	Degree=Pos	24	amod	_	_
+23	mortality	mortality	NOUN	NN	Number=Sing	24	compound	_	_
+24	rate	rate	NOUN	NN	Number=Sing	26	nsubj	_	_
+25	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	_
+26	7	7	NUM	CD	NumType=Card	18	conj	_	_
+27	per	per	ADP	IN	_	28	case	_	_
+28	thousand	thousand	NUM	CD	NumType=Card	26	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = 2
 # text = Both have improved significantly since the 1950s.
@@ -18132,7 +18310,14 @@
 23	Buddha	Buddha	PROPN	NNP	Number=Sing	16	appos	_	_
 24	in	in	ADP	IN	_	25	case	_	_
 25	Henan	Henan	PROPN	NNP	Number=Sing	23	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	.	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -18409,9 +18594,16 @@
 28	in	in	ADP	IN	_	30	case	_	_
 29	Northwest	Northwest	PROPN	NNP	Number=Sing	30	compound	_	_
 30	China	China	PROPN	NNP	Number=Sing	27	nmod	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	9	punct	_	_
+31	.	.	PUNCT	.	_	9	punct	_	SpaceAfter=No
 
 # sent_id = 8
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	_
+
+# sent_id = 9
 # text = The 2010 population census reported the total number of Muslims in the country as 23.14 million.
 1	The	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
 2	2010	2010	NUM	CD	NumType=Card	4	nummod	_	_
@@ -19571,9 +19763,17 @@
 14	,	,	PUNCT	,	_	16	punct	_	_
 15	and	and	CCONJ	CC	_	16	cc	_	_
 16	flavoring	flavoring	NOUN	NN	Number=Sing	11	conj	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	5	punct	_	_
+17	.	.	PUNCT	.	_	5	punct	_	SpaceAfter=No
 
 # sent_id = 3
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 4
 # text = Chinese cuisine is also known for its width of cooking methods and ingredients, as well as food therapy that is emphasized by traditional Chinese medicine.
 1	Chinese	chinese	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	cuisine	cuisine	NOUN	NN	Number=Sing	5	nsubj:pass	_	_
@@ -19601,9 +19801,17 @@
 24	traditional	traditional	ADJ	JJ	Degree=Pos	26	amod	_	_
 25	Chinese	chinese	ADJ	JJ	Degree=Pos	26	amod	_	_
 26	medicine	medicine	NOUN	NN	Number=Sing	22	obl	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	5	punct	_	_
+27	.	.	PUNCT	.	_	5	punct	_	SpaceAfter=No
 
-# sent_id = 4
+# sent_id = 5
+# text = [better source needed]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	better	better	ADJ	JJR	Degree=Cmp	3	amod	_	SpacesAfter= 
+3	source	source	NOUN	NN	Number=Sing	0	root	_	SpacesAfter= 
+4	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 6
 # text = Generally, China's staple food is rice in the south, wheat-based breads and noodles in the north.
 1	Generally	generally	ADV	RB	_	8	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	8	punct	_	_
@@ -19628,7 +19836,7 @@
 21	north	north	NOUN	NN	Number=Sing	8	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = 5
+# sent_id = 7
 # text = The diet of the common people in pre-modern times was largely grain and simple vegetables, with meat reserved for special occasions.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	diet	diet	NOUN	NN	Number=Sing	12	nsubj	_	_
@@ -19654,7 +19862,7 @@
 22	occasions	occasion	NOUN	NNS	Number=Plur	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = 6
+# sent_id = 8
 # text = The bean products, such as tofu and soy milk, remain as a popular source of protein.
 1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
 2	bean	bean	NOUN	NN	Number=Sing	3	compound	_	_
@@ -19676,7 +19884,7 @@
 18	protein	protein	NOUN	NN	Number=Sing	16	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = 7
+# sent_id = 9
 # text = Pork is now the most popular meat in China, accounting for about three-fourths of the country's total meat consumption.
 1	Pork	pork	NOUN	NN	Number=Sing	7	nsubj	_	_
 2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
@@ -19703,7 +19911,7 @@
 23	consumption	consumption	NOUN	NN	Number=Sing	16	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 8
+# sent_id = 10
 # text = While pork dominates the meat market, there is also the vegetarian Buddhist cuisine and the pork-free Chinese Islamic cuisine.
 1	While	while	SCONJ	IN	_	3	mark	_	_
 2	pork	pork	NOUN	NN	Number=Sing	3	nsubj	_	_
@@ -19727,7 +19935,7 @@
 20	cuisine	cuisine	NOUN	NN	Number=Sing	14	conj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 9
+# sent_id = 11
 # text = Southern cuisine, due to the area's proximity to the ocean and milder climate, has a wide variety of seafood and vegetables; it differs in many respects from the wheat-based diets across dry northern China.
 1	Southern	southern	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	cuisine	cuisine	NOUN	NN	Number=Sing	17	nsubj	_	SpaceAfter=No
@@ -19771,7 +19979,7 @@
 40	China	China	PROPN	NNP	Number=Sing	36	nmod	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	17	punct	_	_
 
-# sent_id = 10
+# sent_id = 12
 # text = Numerous offshoots of Chinese food, such as Hong Kong cuisine and American Chinese food, have emerged in the nations that play host to the Chinese diaspora.
 1	Numerous	numerous	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	offshoots	offshoot	NOUN	NNS	Number=Plur	18	nsubj	_	_
@@ -19800,8 +20008,14 @@
 25	to	to	ADP	IN	_	28	case	_	_
 26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
 27	Chinese	chinese	ADJ	JJ	Degree=Pos	28	amod	_	_
-28	diaspora	diaspora	NOUN	NN	Number=Sing	24	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\n
+28	diaspora.	diaspora.	NOUN	NN	Number=Sing	24	nmod	_	SpaceAfter=No
+
+# sent_id = 13
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -20358,7 +20572,7 @@
 30	.	.	PUNCT	.	_	25	punct	_	_
 
 # sent_id = 7
-# text = In addition, China is home to a huge number of cyclists, with an estimated 470 million bicycles as of 2012.
+# text = In addition, China is home to a huge number of cyclists, with an estimated 470 million bicycles as of 2012[update].
 1	In	in	ADP	IN	_	2	case	_	_
 2	addition	addition	NOUN	NN	Number=Sing	6	obl	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	6	punct	_	_
@@ -20381,7 +20595,10 @@
 20	as	as	ADP	IN	_	22	case	_	_
 21	of	of	ADP	IN	_	20	fixed	_	_
 22	2012	2012	NUM	CD	NumType=Card	19	nmod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	6	punct	_	_
+23	[	[	PUNCT	-LRB-	_	24	punct	_	SpaceAfter=No
+24	update	update	NOUN	NN	Number=Sing	6	parataxis	_	SpaceAfter=No
+25	]	]	PUNCT	-RRB-	_	24	punct	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = 8
 # text = Many more traditional sports, such as dragon boat racing, Mongolian-style wrestling and horse racing are also popular.
@@ -20662,23 +20879,4 @@
 # sent_id = 1
 # text = Maps
 1	Maps	Maps	PROPN	NNPS	Number=Plur	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = english-ewt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Coordinates: 35°N 103°E﻿ / ﻿35°N 103°E﻿ / 35; 103
-1	Coordinates	coordinate	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	:	_	1	punct	_	_
-3	35°N	35°n	NUM	CD	NumType=Card	1	appos	_	_
-4	103°E﻿	103°e﻿	NOUN	NN	NumType=Card	1	appos	_	_
-5	/	/	PUNCT	,	_	6	punct	_	_
-6	﻿35°N	﻿35°n	NOUN	NN	Number=Sing	4	conj	_	_
-7	103°E﻿	103°e﻿	NOUN	NN	Number=Sing	3	appos	_	_
-8	/	/	PUNCT	,	_	7	punct	_	_
-9	35	35	NUM	CD	NumType=Card	4	appos	_	SpaceAfter=No
-10	;	;	PUNCT	,	_	1	punct	_	_
-11	103	103	NUM	CD	NumType=Card	1	appos	_	SpacesAfter=\n
 

@@ -166,7 +166,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ordet ghana betyder "krigarkonung", och var källan till namnet Guinea (via franska Guinoye) som används för att referera till Västafrikas kust (som i Guineabukten).
+# text = Ordet ghana betyder "krigarkonung", och var källan till namnet Guinea (via franska Guinoye) som används för att referera till Västafrikas kust (som i Guineabukten). [källa behövs]
 1	Ordet	ord	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
 2	ghana	ghana	PROPN	PM|NOM	Case=Nom	3	nsubj	_	_
 3	betyder	betyda	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -193,11 +193,15 @@
 24	Västafrikas	Västafrika	PROPN	PM|GEN	Case=Gen	25	nmod:poss	_	_
 25	kust	kust	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	22	obl	_	_
 26	(	(	PUNCT	PAD	_	25	punct	_	SpaceAfter=No
-27	som	som	SCONJ	KN	_	29	case	_	_
+27	som	som	SCONJ	KN	_	29	mark	_	_
 28	i	i	ADP	PP	_	29	case	_	_
 29	Guineabukten	Guineabukten	PROPN	PM|NOM	Case=Nom	25	appos	_	SpaceAfter=No
 30	)	)	PUNCT	PAD	_	25	punct	_	SpaceAfter=No
-31	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\s\n
+31	.	.	PUNCT	MAD	_	3	punct	_	_
+32	[	[	PUNCT	MID	_	34	punct	_	SpaceAfter=No
+33	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	34	advcl	_	SpacesAfter= 
+34	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	conj	_	SpaceAfter=No
+35	]	]	PUNCT	MAD	_	34	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -964,7 +968,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ghana har 2 420 km landgräns och kust mot Guineabukten.
+# text = Ghana har 2 420 km landgräns och kust mot Guineabukten., Ghana är ungefär lika stort som Storbritannien.
 1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	2	nsubj	_	_
 2	har	ha	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	2	2	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	SpacesAfter= 
@@ -974,48 +978,17 @@
 7	och	och	CCONJ	KN	_	8	cc	_	_
 8	kust	kust	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	_
 9	mot	mot	ADP	PP	_	10	case	_	_
-10	Guineabukten	Guineabukten	PROPN	PM|NOM	Case=Nom	8	nmod	_	SpaceAfter=No
-11	.	.	PUNCT	MAD	_	2	punct	_	_
-
-# sent_id = 2
-# text = Landet har tre grannländer, Burkina Faso, Elfenbenskusten och Togo.
-1	Landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nsubj	_	_
-2	har	ha	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	tre	tre	NUM	RG|NOM	Case=Nom|NumType=Card	4	nummod	_	_
-4	grannländer	grannland	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	2	obj	_	SpaceAfter=No
-5	,	,	PUNCT	MID	_	4	punct	_	_
-6	Burkina	Burkina	PROPN	PM|NOM	Case=Nom	4	appos	_	_
-7	Faso	Faso	PROPN	PM|NOM	Case=Nom	6	flat:name	_	SpaceAfter=No
-8	,	,	PUNCT	MID	_	9	punct	_	_
-9	Elfenbenskusten	Elfenbenskusten	PROPN	PM|NOM	Case=Nom	6	conj	_	_
-10	och	och	CCONJ	KN	_	11	cc	_	_
-11	Togo	Togo	PROPN	PM|NOM	Case=Nom	6	conj	_	SpaceAfter=No
-12	.	.	PUNCT	MAD	_	2	punct	_	_
-
-# sent_id = 3
-# text = Landet är 238 533 km² stort, ungefär lika stort som Storbritannien.
-1	Landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	nsubj	_	_
-2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-3	238	238	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	SpacesAfter= 
-4	533	533	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	SpacesAfter= 
-5	km²	km²	NOUN	NN|AN	Abbr=Yes	6	obl	_	_
-6	stort	stor	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-7	,	,	PUNCT	MID	_	6	punct	_	_
-8	ungefär	ungefär	ADV	AB	_	9	advmod	_	_
-9	lika	lika	ADV	AB	_	10	advmod	_	_
-10	stort	stor	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	6	conj	_	_
-11	som	som	ADP	KN	_	12	case	_	_
-12	Storbritannien	Storbritannien	PROPN	PM|NOM	Case=Nom	10	obl	_	SpaceAfter=No
-13	.	.	PUNCT	MAD	_	6	punct	_	_
-
-# sent_id = 4
-# text = Greenwichmeridianen går genom staden Tema.
-1	Greenwichmeridianen	greenwichmeridian	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj	_	_
-2	går	gå	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	genom	genom	ADP	PP	_	5	case	_	_
-4	staden	stad	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
-5	Tema	Tema	PROPN	PM|NOM	Case=Nom	2	obl	_	SpaceAfter=No
-6	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+10	Guineabukten	Guineabukten	PROPN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	MAD	_	2	punct	_	SpaceAfter=No
+12	,	,	PUNCT	MID	_	2	punct	_	_
+13	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	17	nsubj	_	_
+14	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+15	ungefär	ungefär	ADV	AB	_	16	advmod	_	_
+16	lika	lika	ADV	AB	_	17	advmod	_	_
+17	stort	stor	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	2	parataxis	_	_
+18	som	som	ADP	KN	_	19	case	_	_
+19	Storbritannien	Storbritannien	PROPN	PM|NOM	Case=Nom	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1023,10 +996,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geologi och landformer
-1	Geologi	geologi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+# text = Topografi och hydrografi
+1	Topografi	topografi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
 2	och	och	CCONJ	KN	_	3	cc	_	_
-3	landformer	landform	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	1	conj	_	SpaceAfter=No
+3	hydrografi	hydrografi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1065,9 +1038,14 @@
 28	i	i	ADP	PP	_	30	case	_	_
 29	Voltabäckenets	voltabäcken	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	30	nmod:poss	_	_
 30	utkanter	utkant	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	27	nmod	_	SpaceAfter=No
-31	.	.	PUNCT	MAD	_	3	punct	_	_
+31	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
 
-# sent_id = 2
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Mitt i Voltabäckenet ligger Voltasjön (cirka 8 500 km²), en av världens största konstgjorda insjöar.
 1	Mitt	mitt	ADV	AB	_	3	advmod	_	_
 2	i	i	ADP	PP	_	3	case	_	_
@@ -1089,7 +1067,7 @@
 18	insjöar	insjö	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	MAD	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 2
 # text = Den bildas genom en uppdämning av Voltafloden vid Akosombo och används både för konstbevattning, kraftproduktion, fiske och rekreation.
 1	Den	den	PRON	PN|UTR|SIN|DEF|SUB/OBJ	Definite=Def|Gender=Com|Number=Sing|PronType=Prs	2	nsubj:pass	_	_
 2	bildas	bilda	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -1113,54 +1091,51 @@
 20	rekreation	rekreation	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	14	conj	_	SpaceAfter=No
 21	.	.	PUNCT	MAD	_	2	punct	_	_
 
-# sent_id = 4
-# text = Floden
-1	Floden	flod	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	0	root	_	_
-
-# sent_id = 5
-# text = Voltas viktigaste bifloder är Svarta Volta (Mouhoun), som utgör gränsen mot Elfenbenskusten i väst, Vita Volta (Nakambe), som kommer från Burkina Faso i norr, och Oti, som kommer från Togo i öst.
-1	Voltas	Volta	PROPN	PM|GEN	Case=Gen	3	nmod:poss	_	_
-2	viktigaste	viktig	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	3	amod	_	_
-3	bifloder	biflod	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	nsubj	_	_
-4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-5	Svarta	svart	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	6	amod	_	_
-6	Volta	Volta	PROPN	PM|NOM	Case=Nom	0	root	_	_
-7	(	(	PUNCT	PAD	_	6	punct	_	SpaceAfter=No
-8	Mouhoun	Mouhoun	PROPN	PM|NOM	Case=Nom	6	appos	_	SpaceAfter=No
-9	)	)	PUNCT	PAD	_	6	punct	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	6	punct	_	_
-11	som	som	PRON	HP|-|-|-	PronType=Rel	12	nsubj	_	_
-12	utgör	utgöra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
-13	gränsen	gräns	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	12	obj	_	_
-14	mot	mot	ADP	PP	_	15	case	_	_
-15	Elfenbenskusten	Elfenbenskusten	PROPN	PM|NOM	Case=Nom	13	nmod	_	_
-16	i	i	ADP	PP	_	12	advmod	_	_
-17	väst	väst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	16	fixed	_	SpaceAfter=No
-18	,	,	PUNCT	MID	_	20	punct	_	_
-19	Vita	vit	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	20	amod	_	_
-20	Volta	Volta	PROPN	PM|NOM	Case=Nom	6	conj	_	_
-21	(	(	PUNCT	PAD	_	20	punct	_	SpaceAfter=No
-22	Nakambe	Nakambe	PROPN	PM|NOM	Case=Nom	20	appos	_	SpaceAfter=No
-23	)	)	PUNCT	PAD	_	20	punct	_	SpaceAfter=No
-24	,	,	PUNCT	MID	_	20	punct	_	_
-25	som	som	PRON	HP|-|-|-	PronType=Rel	26	nsubj	_	_
-26	kommer	komma	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	20	acl:relcl	_	_
-27	från	från	ADP	PP	_	28	case	_	_
-28	Burkina	Burkina	PROPN	PM|NOM	Case=Nom	26	obl	_	_
-29	Faso	Faso	PROPN	PM|NOM	Case=Nom	28	flat:name	_	_
-30	i	i	ADP	PP	_	26	advmod	_	_
-31	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	30	fixed	_	SpaceAfter=No
-32	,	,	PUNCT	MID	_	34	punct	_	_
-33	och	och	CCONJ	KN	_	34	cc	_	_
-34	Oti	Oti	PROPN	PM|NOM	Case=Nom	6	conj	_	SpaceAfter=No
-35	,	,	PUNCT	MID	_	34	punct	_	_
-36	som	som	PRON	HP|-|-|-	PronType=Rel	37	nsubj	_	_
-37	kommer	komma	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	34	acl:relcl	_	_
-38	från	från	ADP	PP	_	39	case	_	_
-39	Togo	Togo	PROPN	PM|NOM	Case=Nom	37	obl	_	_
-40	i	i	ADP	PP	_	37	advmod	_	_
-41	öst	öst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	37	obl	_	SpaceAfter=No
-42	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
+# sent_id = 3
+# text = Floden Voltas viktigaste bifloder är Svarta Volta (Mouhoun), som utgör gränsen mot Elfenbenskusten i väst, Vita Volta (Nakambe), som kommer från Burkina Faso i norr, och Oti, som kommer från Togo i öst.
+1	Floden	flod	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+2	Voltas	Volta	PROPN	PM|GEN	Case=Gen	4	nmod:poss	_	_
+3	viktigaste	viktig	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	4	amod	_	_
+4	bifloder	biflod	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	nsubj	_	_
+5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	Svarta	svart	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	7	amod	_	_
+7	Volta	Volta	PROPN	PM|NOM	Case=Nom	0	root	_	_
+8	(	(	PUNCT	PAD	_	7	punct	_	SpaceAfter=No
+9	Mouhoun	Mouhoun	PROPN	PM|NOM	Case=Nom	7	appos	_	SpaceAfter=No
+10	)	)	PUNCT	PAD	_	7	punct	_	SpaceAfter=No
+11	,	,	PUNCT	MID	_	7	punct	_	_
+12	som	som	PRON	HP|-|-|-	PronType=Rel	13	nsubj	_	_
+13	utgör	utgöra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+14	gränsen	gräns	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	13	obj	_	_
+15	mot	mot	ADP	PP	_	16	case	_	_
+16	Elfenbenskusten	Elfenbenskusten	PROPN	PM|NOM	Case=Nom	14	nmod	_	_
+17	i	i	ADP	PP	_	13	advmod	_	_
+18	väst	väst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	17	fixed	_	SpaceAfter=No
+19	,	,	PUNCT	MID	_	21	punct	_	_
+20	Vita	vit	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	21	amod	_	_
+21	Volta	Volta	PROPN	PM|NOM	Case=Nom	7	conj	_	_
+22	(	(	PUNCT	PAD	_	21	punct	_	SpaceAfter=No
+23	Nakambe	Nakambe	PROPN	PM|NOM	Case=Nom	21	appos	_	SpaceAfter=No
+24	)	)	PUNCT	PAD	_	21	punct	_	SpaceAfter=No
+25	,	,	PUNCT	MID	_	21	punct	_	_
+26	som	som	PRON	HP|-|-|-	PronType=Rel	27	nsubj	_	_
+27	kommer	komma	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	21	acl:relcl	_	_
+28	från	från	ADP	PP	_	29	case	_	_
+29	Burkina	Burkina	PROPN	PM|NOM	Case=Nom	27	obl	_	_
+30	Faso	Faso	PROPN	PM|NOM	Case=Nom	29	flat:name	_	_
+31	i	i	ADP	PP	_	27	advmod	_	_
+32	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	31	fixed	_	SpaceAfter=No
+33	,	,	PUNCT	MID	_	35	punct	_	_
+34	och	och	CCONJ	KN	_	35	cc	_	_
+35	Oti	Oti	PROPN	PM|NOM	Case=Nom	7	conj	_	SpaceAfter=No
+36	,	,	PUNCT	MID	_	35	punct	_	_
+37	som	som	PRON	HP|-|-|-	PronType=Rel	38	nsubj	_	_
+38	kommer	komma	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	35	acl:relcl	_	_
+39	från	från	ADP	PP	_	40	case	_	_
+40	Togo	Togo	PROPN	PM|NOM	Case=Nom	38	obl	_	_
+41	i	i	ADP	PP	_	38	advmod	_	_
+42	öst	öst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	38	obl	_	SpaceAfter=No
+43	.	.	PUNCT	MAD	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1332,42 +1307,6 @@
 5	kilometer	kilometer	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
 6	lång	lång	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Naturtillgångar i landet är guld, timmer, industridiamanter, bauxit, mangan, fisk, gummi, vattenkraft, petroleum, silver, salt och kalksten.
-1	Naturtillgångar	naturtillgång	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	nsubj	_	_
-2	i	i	ADP	PP	_	3	case	_	_
-3	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	1	nmod	_	_
-4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
-5	guld	guld	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-6	,	,	PUNCT	MID	_	7	punct	_	_
-7	timmer	timme	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	conj	_	SpaceAfter=No
-8	,	,	PUNCT	MID	_	9	punct	_	_
-9	industridiamanter	industridiamant	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	conj	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	11	punct	_	_
-11	bauxit	bauxit	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-12	,	,	PUNCT	MID	_	13	punct	_	_
-13	mangan	mangan	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-14	,	,	PUNCT	MID	_	15	punct	_	_
-15	fisk	fisk	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-16	,	,	PUNCT	MID	_	17	punct	_	_
-17	gummi	gummi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-18	,	,	PUNCT	MID	_	19	punct	_	_
-19	vattenkraft	vattenkraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-20	,	,	PUNCT	MID	_	21	punct	_	_
-21	petroleum	petroleum	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
-22	,	,	PUNCT	MID	_	23	punct	_	_
-23	silver	silver	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
-24	,	,	PUNCT	MID	_	25	punct	_	_
-25	salt	salt	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	_
-26	och	och	CCONJ	KN	_	27	cc	_	_
-27	kalksten	kalksten	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
-28	.	.	PUNCT	MAD	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1612,54 +1551,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Miljöproblem
-1	Miljöproblem	miljöproblem	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Några av Ghanas miljöproblem är avskogning med åtföljande jorderosion, tjuvjakt på vilda djur, vattenföroreningar och brist på färskvatten.
-1	Några	någon	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	6	nsubj	_	_
-2	av	av	ADP	PP	_	4	case	_	_
-3	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	4	nmod:poss	_	_
-4	miljöproblem	miljöproblem	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	1	nmod	_	_
-5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-6	avskogning	avskogning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
-7	med	med	ADP	PP	_	9	case	_	_
-8	åtföljande	åtfölja	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	9	amod	_	_
-9	jorderosion	jorderosion	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	11	punct	_	_
-11	tjuvjakt	tjuvjakt	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	_
-12	på	på	ADP	PP	_	14	case	_	_
-13	vilda	vild	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
-14	djur	djur	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	11	nmod	_	SpaceAfter=No
-15	,	,	PUNCT	MID	_	16	punct	_	_
-16	vattenföroreningar	vattenförorening	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	conj	_	_
-17	och	och	CCONJ	KN	_	18	cc	_	_
-18	brist	brist	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	_
-19	på	på	ADP	PP	_	20	case	_	_
-20	färskvatten	färskvatten	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	18	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	MAD	_	6	punct	_	_
-
-# sent_id = 2
-# text = I norr påverkar torka jordbruket menligt.
-1	I	i	ADP	PP	_	2	case	_	_
-2	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	obl	_	_
-3	påverkar	påverka	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	torka	torka	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	3	nsubj	_	_
-5	jordbruket	jordbruk	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	nsubj	_	_
-6	menligt	menligt	ADV	AB	_	3	advmod	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = Växtliv
 1	Växtliv	växtliv	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
 
@@ -1763,8 +1654,69 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politik
-1	Politik	politik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+# text = Naturskydd
+1	Naturskydd	naturskydd	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Några av Ghanas miljöproblem är avskogning med åtföljande jorderosion, tjuvjakt på vilda djur, vattenföroreningar och brist på färskvatten.
+1	Några	någon	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	6	nsubj	_	_
+2	av	av	ADP	PP	_	4	case	_	_
+3	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	4	nmod:poss	_	_
+4	miljöproblem	miljöproblem	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	1	nmod	_	_
+5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	avskogning	avskogning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+7	med	med	ADP	PP	_	9	case	_	_
+8	åtföljande	åtfölja	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	9	amod	_	_
+9	jorderosion	jorderosion	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	11	punct	_	_
+11	tjuvjakt	tjuvjakt	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	_
+12	på	på	ADP	PP	_	14	case	_	_
+13	vilda	vild	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
+14	djur	djur	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	MID	_	16	punct	_	_
+16	vattenföroreningar	vattenförorening	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	conj	_	_
+17	och	och	CCONJ	KN	_	18	cc	_	_
+18	brist	brist	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	_
+19	på	på	ADP	PP	_	20	case	_	_
+20	färskvatten	färskvatten	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	18	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	MAD	_	6	punct	_	_
+
+# sent_id = 2
+# text = I norr påverkar torka jordbruket menligt.
+1	I	i	ADP	PP	_	2	case	_	_
+2	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	obl	_	_
+3	påverkar	påverka	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	torka	torka	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	3	nsubj	_	_
+5	jordbruket	jordbruk	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	nsubj	_	_
+6	menligt	menligt	ADV	AB	_	3	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Styre och politik
+1	Styre	styre	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	politik	politik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Konstitution och styre
+1	Konstitution	konstitution	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	styre	styre	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1866,7 +1818,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Landet var från början år 1957 en Parlamentarisk demokrati, vilket dock följdes av omväxlande civila och militärt influerade regeringar.
+# text = Landet var från början år 1957 en Parlamentarisk demokrati,[källa behövs] vilket dock följdes av omväxlande civila och militärt influerade regeringar.
 1	Landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	9	nsubj	_	_
 2	var	vara	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
 3	från	från	ADP	PP	_	4	case	_	_
@@ -1875,19 +1827,21 @@
 6	1957	1957	NUM	RG|NOM	Case=Nom|NumType=Card	4	nmod	_	_
 7	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	9	det	_	_
 8	Parlamentarisk	parlamentarisk	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	9	amod	_	_
-9	demokrati	demokrati	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	9	punct	_	_
-11	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	13	nsubj:pass	_	_
-12	dock	dock	ADV	AB	_	13	advmod	_	_
-13	följdes	följa	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	9	acl:relcl	_	_
-14	av	av	ADP	PP	_	20	case	_	_
-15	omväxlande	omväxlande	ADV	AB|POS	Degree=Pos	19	advmod	_	_
-16	civila	civil	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	20	amod	_	_
-17	och	och	CCONJ	KN	_	19	cc	_	_
-18	militärt	militär	ADV	AB|POS	Degree=Pos	19	advmod	_	_
-19	influerade	influera	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	16	conj	_	_
-20	regeringar	regering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	obl:agent	_	SpaceAfter=No
-21	.	.	PUNCT	MAD	_	9	punct	_	_
+9	demokrati,[	demokrati,[	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+10	källa	källa	ADJ	VB|INF|AKT	VerbForm=Inf|Voice=Act	9	acl	_	SpacesAfter= 
+11	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	9	acl:relcl	_	SpaceAfter=No
+12	]	]	PUNCT	MID	_	9	punct	_	_
+13	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	15	nsubj:pass	_	_
+14	dock	dock	ADV	AB	_	15	advmod	_	_
+15	följdes	följa	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	9	acl:relcl	_	_
+16	av	av	ADP	PP	_	22	case	_	_
+17	omväxlande	omväxlande	ADV	AB|POS	Degree=Pos	21	advmod	_	_
+18	civila	civil	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	22	amod	_	_
+19	och	och	CCONJ	KN	_	21	cc	_	_
+20	militärt	militär	ADV	AB|POS	Degree=Pos	21	advmod	_	_
+21	influerade	influera	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	18	conj	_	_
+22	regeringar	regering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	15	obl:agent	_	SpaceAfter=No
+23	.	.	PUNCT	MAD	_	9	punct	_	_
 
 # sent_id = 2
 # text = 1992 fick landet sin nuvarande konstitution, som har en klar maktdelning.
@@ -1911,7 +1865,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Valsystemet gynnar landsbygden, med dess låga befolkningstäthet.
+# text = Valsystemet gynnar landsbygden, med dess låga befolkningstäthet.[källa behövs]
 1	Valsystemet	valsystem	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nsubj	_	_
 2	gynnar	gynna	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	landsbygden	landsbygd	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	obj	_	SpaceAfter=No
@@ -1919,8 +1873,176 @@
 5	med	med	ADP	PP	_	8	case	_	_
 6	dess	den	PRON	PS|UTR/NEU|SIN/PLU|DEF	Definite=Def|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
 7	låga	låg	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	8	amod	_	_
-8	befolkningstäthet	befolkningstäthet	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nmod	_	SpaceAfter=No
-9	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+8	befolkningstäthet.[	befolkningstäthet.[	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	9	obl	_	SpaceAfter=No
+9	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	3	acl	_	SpacesAfter= 
+10	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	xcomp	_	SpaceAfter=No
+11	]	]	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Administrativ indelning
+1	Administrativ	administrativ	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
+2	indelning	indelning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Innan 2018 var Ghana indelat i tio regioner:
+1	Innan	innan	ADP	PP	_	2	case	_	_
+2	2018	2018	NUM	RG|NOM	Case=Nom|NumType=Card	5	obl	_	_
+3	var	vara	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	5	nsubj	_	_
+5	indelat	indela	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6	i	i	ADP	PP	_	8	case	_	_
+7	tio	tio	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
+8	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	obl	_	SpaceAfter=No
+9	:	:	PUNCT	MAD	_	5	punct	_	_
+
+# sent_id = 2
+# text = Ashanti, Brong-Ahafo, Centralregionen, Nordregionen, Storaccra, Volta, Västregionen, Östregionen, Övre västregionen och Övre östregionen.[källa behövs]
+1	Ashanti	Ashanti	PROPN	PM|NOM	Case=Nom	23	nsubj:pass	_	SpaceAfter=No
+2	,	,	PUNCT	MID	_	3	punct	_	_
+3	Brong-Ahafo	Brong-ahafo	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	MID	_	5	punct	_	_
+5	Centralregionen	centralregion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+6	,	,	PUNCT	MID	_	7	punct	_	_
+7	Nordregionen	Nordregionen	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+8	,	,	PUNCT	MID	_	9	punct	_	_
+9	Storaccra	Storaccra	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	11	punct	_	_
+11	Volta	Volta	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+12	,	,	PUNCT	MID	_	13	punct	_	_
+13	Västregionen	Västregionen	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+14	,	,	PUNCT	MID	_	15	punct	_	_
+15	Östregionen	Östregionen	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+16	,	,	PUNCT	MID	_	18	punct	_	_
+17	Övre	övre	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	18	amod	_	_
+18	västregionen	västregion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	conj	_	_
+19	och	och	CCONJ	KN	_	21	cc	_	_
+20	Övre	övre	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	21	amod	_	_
+21	östregionen.[	östregionen.[	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+22	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	23	xcomp	_	SpacesAfter= 
+23	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+24	]	]	PUNCT	MAD	_	23	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Efter en folkomröstning i de berörda regionerna 2018 så inrättades sex nya regioner, vilket gör att landet nu är indelat i totalt 16 regioner.
+1	Efter	efter	ADP	PP	_	3	case	_	_
+2	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	3	det	_	_
+3	folkomröstning	folkomröstning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
+4	i	i	ADP	PP	_	7	case	_	_
+5	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
+6	berörda	berörd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	7	amod	_	_
+7	regionerna	region	NOUN	NN|UTR|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Plur	3	nmod	_	_
+8	2018	2018	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	_
+9	så	så	ADV	AB	_	10	advcl	_	_
+10	inrättades	inrätta	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+11	sex	sex	NUM	RG|NOM	Case=Nom|NumType=Card	13	nummod	_	_
+12	nya	ny	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	13	amod	_	_
+13	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	10	nsubj:pass	_	SpaceAfter=No
+14	,	,	PUNCT	MID	_	13	punct	_	_
+15	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	16	nsubj	_	_
+16	gör	göra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
+17	att	att	SCONJ	SN	_	21	mark	_	_
+18	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	21	nsubj	_	_
+19	nu	nu	ADV	AB	_	21	advmod	_	_
+20	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+21	indelat	indela	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	16	ccomp	_	_
+22	i	i	ADP	PP	_	25	case	_	_
+23	totalt	total	ADV	AB|POS	Degree=Pos	24	advmod	_	_
+24	16	16	NUM	RG|NOM	Case=Nom|NumType=Card	25	nummod	_	_
+25	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	21	obl	_	SpaceAfter=No
+26	.	.	PUNCT	MAD	_	10	punct	_	_
+
+# sent_id = 2
+# text = Dessa är:
+1	Dessa	denna	PRON	PN|UTR/NEU|PLU|DEF|SUB/OBJ	Definite=Def|Number=Plur|PronType=Dem	0	root	_	_
+2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+3	:	:	PUNCT	MAD	_	1	punct	_	_
+
+# sent_id = 3
+# text = Ahafo, Ashanti, Bono, Bono East, Central, Eastern, Greater Accra, North East, Northern, Oti, Savannah, Upper East, Upper West, Volta, Western, och Western North.
+1	Ahafo	Ahafo	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	MID	_	3	punct	_	_
+3	Ashanti	Ashanti	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	MID	_	5	punct	_	_
+5	Bono	Bono	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+6	,	,	PUNCT	MID	_	7	punct	_	_
+7	Bono	Bono	PROPN	PM|NOM	Case=Nom	1	conj	_	_
+8	East	East	PROPN	PM|NOM	Case=Nom	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	MID	_	10	punct	_	_
+10	Central	Central	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+11	,	,	PUNCT	MID	_	12	punct	_	_
+12	Eastern	Eastern	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+13	,	,	PUNCT	MID	_	14	punct	_	_
+14	Greater	Greater	PROPN	PM|NOM	Case=Nom	1	conj	_	_
+15	Accra	Accra	PROPN	PM|NOM	Case=Nom	17	conj	_	SpaceAfter=No
+16	,	,	PUNCT	MID	_	17	punct	_	_
+17	North	North	PROPN	PM|NOM	Case=Nom	1	conj	_	_
+18	East	East	PROPN	PM|NOM	Case=Nom	17	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	MID	_	20	punct	_	_
+20	Northern	Northern	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+21	,	,	PUNCT	MID	_	22	punct	_	_
+22	Oti	Oti	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+23	,	,	PUNCT	MID	_	24	punct	_	_
+24	Savannah	Savannah	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+25	,	,	PUNCT	MID	_	27	punct	_	_
+26	Upper	Upper	ADJ	PM|NOM	_	27	amod	_	_
+27	East	East	PROPN	PM|NOM	_	1	conj	_	SpaceAfter=No
+28	,	,	PUNCT	MID	_	30	punct	_	_
+29	Upper	Upper	ADJ	JJ	_	30	amod	_	_
+30	West	West	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+31	,	,	PUNCT	MID	_	32	punct	_	_
+32	Volta	Volta	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+33	,	,	PUNCT	MID	_	34	punct	_	_
+34	Western	Western	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+35	,	,	PUNCT	MID	_	37	punct	_	_
+36	och	och	CCONJ	KN	_	37	cc	_	_
+37	Western	Western	PROPN	PM|NOM	Case=Nom	38	amod	_	_
+38	North	North	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
+39	.	.	PUNCT	MAD	_	1	punct	_	_
+
+# sent_id = 4
+# text = Dessa är i sin tur uppdelade i distrikt.
+1	Dessa	denna	PRON	PN|UTR/NEU|PLU|DEF|SUB/OBJ	Definite=Def|Number=Plur|PronType=Dem	6	nsubj	_	_
+2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	i	i	ADP	PP	_	6	advmod	_	_
+4	sin	sig	PRON	PS|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	3	fixed	_	_
+5	tur	tur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	fixed	_	_
+6	uppdelade	uppdela	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
+7	i	i	ADP	PP	_	8	case	_	_
+8	distrikt	distrikt	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Politik
+1	Politik	politik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Rättsväsen
+1	Rättsväsen	rättsväs	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -1947,19 +2069,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Politisk historia
-1	Politisk	politisk	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
-2	historia	historia	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Internationella organisationer
+# text = Internationella relationer
 1	Internationella	internationell	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	organisationer	organisation	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
+2	relationer	relation	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2125,163 +2237,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Administrativ indelning
-1	Administrativ	administrativ	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
-2	indelning	indelning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Innan 2018 var Ghana indelat i tio regioner:
-1	Innan	innan	ADP	PP	_	2	case	_	_
-2	2018	2018	NUM	RG|NOM	Case=Nom|NumType=Card	5	obl	_	_
-3	var	vara	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
-4	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	5	nsubj	_	_
-5	indelat	indela	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
-6	i	i	ADP	PP	_	8	case	_	_
-7	tio	tio	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
-8	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	obl	_	SpaceAfter=No
-9	:	:	PUNCT	MAD	_	5	punct	_	_
-
-# sent_id = 2
-# text = Ashanti, Brong-Ahafo, Centralregionen, Nordregionen, Storaccra, Volta, Västregionen, Östregionen, Övre västregionen och Övre östregionen.
-1	Ashanti	Ashanti	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	MID	_	3	punct	_	_
-3	Brong-Ahafo	Brong-ahafo	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-4	,	,	PUNCT	MID	_	5	punct	_	_
-5	Centralregionen	centralregion	PROPN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
-6	,	,	PUNCT	MID	_	7	punct	_	_
-7	Nordregionen	Nordregionen	PROPN	NN|UTR|SIN|DEF|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-8	,	,	PUNCT	MID	_	9	punct	_	_
-9	Storaccra	Storaccra	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	11	punct	_	_
-11	Volta	Volta	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-12	,	,	PUNCT	MID	_	13	punct	_	_
-13	Västregionen	Västregionen	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-14	,	,	PUNCT	MID	_	15	punct	_	_
-15	Östregionen	Östregionen	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-16	,	,	PUNCT	MID	_	18	punct	_	_
-17	Övre	övre	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	18	amod	_	_
-18	västregionen	västregion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	conj	_	_
-19	och	och	CCONJ	KN	_	21	cc	_	_
-20	Övre	övre	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	21	amod	_	_
-21	östregionen	östregion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
-22	.	.	PUNCT	MAD	_	1	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Efter en folkomröstning i de berörda regionerna 2018 så inrättades sex nya regioner, vilket gör att landet nu är indelat i totalt 16 regioner.
-1	Efter	efter	ADP	PP	_	3	case	_	_
-2	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	3	det	_	_
-3	folkomröstning	folkomröstning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
-4	i	i	ADP	PP	_	7	case	_	_
-5	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
-6	berörda	berörd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	7	amod	_	_
-7	regionerna	region	NOUN	NN|UTR|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Plur	3	nmod	_	_
-8	2018	2018	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	_
-9	så	så	ADV	AB	_	10	advcl	_	_
-10	inrättades	inrätta	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
-11	sex	sex	NUM	RG|NOM	Case=Nom|NumType=Card	13	nummod	_	_
-12	nya	ny	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	13	amod	_	_
-13	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	10	nsubj:pass	_	SpaceAfter=No
-14	,	,	PUNCT	MID	_	13	punct	_	_
-15	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	16	nsubj	_	_
-16	gör	göra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
-17	att	att	SCONJ	SN	_	21	mark	_	_
-18	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	21	nsubj	_	_
-19	nu	nu	ADV	AB	_	21	advmod	_	_
-20	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
-21	indelat	indela	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	16	ccomp	_	_
-22	i	i	ADP	PP	_	25	case	_	_
-23	totalt	total	ADV	AB|POS	Degree=Pos	24	advmod	_	_
-24	16	16	NUM	RG|NOM	Case=Nom|NumType=Card	25	nummod	_	_
-25	regioner	region	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	21	obl	_	SpaceAfter=No
-26	.	.	PUNCT	MAD	_	10	punct	_	_
-
-# sent_id = 2
-# text = Dessa är:
-1	Dessa	denna	PRON	PN|UTR/NEU|PLU|DEF|SUB/OBJ	Definite=Def|Number=Plur|PronType=Dem	0	root	_	_
-2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
-3	:	:	PUNCT	MAD	_	1	punct	_	_
-
-# sent_id = 3
-# text = Ahafo, Ashanti, Bono, Bono East, Central, Eastern, Greater Accra, North East, Northern, Oti, Savannah, Upper East, Upper West, Volta, Western, och Western North.
-1	Ahafo	Ahafo	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	MID	_	3	punct	_	_
-3	Ashanti	Ashanti	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-4	,	,	PUNCT	MID	_	5	punct	_	_
-5	Bono	Bono	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-6	,	,	PUNCT	MID	_	7	punct	_	_
-7	Bono	Bono	PROPN	PM|NOM	Case=Nom	1	conj	_	_
-8	East	East	PROPN	PM|NOM	Case=Nom	7	nmod	_	SpaceAfter=No
-9	,	,	PUNCT	MID	_	10	punct	_	_
-10	Central	Central	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-11	,	,	PUNCT	MID	_	12	punct	_	_
-12	Eastern	Eastern	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-13	,	,	PUNCT	MID	_	14	punct	_	_
-14	Greater	Greater	PROPN	PM|NOM	Case=Nom	1	conj	_	_
-15	Accra	Accra	PROPN	PM|NOM	Case=Nom	17	conj	_	SpaceAfter=No
-16	,	,	PUNCT	MID	_	17	punct	_	_
-17	North	North	PROPN	PM|NOM	Case=Nom	1	conj	_	_
-18	East	East	PROPN	PM|NOM	Case=Nom	17	nmod	_	SpaceAfter=No
-19	,	,	PUNCT	MID	_	20	punct	_	_
-20	Northern	Northern	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-21	,	,	PUNCT	MID	_	22	punct	_	_
-22	Oti	Oti	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-23	,	,	PUNCT	MID	_	24	punct	_	_
-24	Savannah	Savannah	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-25	,	,	PUNCT	MID	_	27	punct	_	_
-26	Upper	Upper	ADJ	PM|NOM	_	27	amod	_	_
-27	East	East	PROPN	PM|NOM	_	1	conj	_	SpaceAfter=No
-28	,	,	PUNCT	MID	_	30	punct	_	_
-29	Upper	Upper	ADJ	JJ	_	30	amod	_	_
-30	West	West	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-31	,	,	PUNCT	MID	_	32	punct	_	_
-32	Volta	Volta	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-33	,	,	PUNCT	MID	_	34	punct	_	_
-34	Western	Western	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-35	,	,	PUNCT	MID	_	37	punct	_	_
-36	och	och	CCONJ	KN	_	37	cc	_	_
-37	Western	Western	PROPN	PM|NOM	Case=Nom	38	amod	_	_
-38	North	North	PROPN	PM|NOM	Case=Nom	1	conj	_	SpaceAfter=No
-39	.	.	PUNCT	MAD	_	1	punct	_	_
-
-# sent_id = 4
-# text = Dessa är i sin tur uppdelade i distrikt.
-1	Dessa	denna	PRON	PN|UTR/NEU|PLU|DEF|SUB/OBJ	Definite=Def|Number=Plur|PronType=Dem	6	nsubj	_	_
-2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-3	i	i	ADP	PP	_	6	advmod	_	_
-4	sin	sig	PRON	PS|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	3	fixed	_	_
-5	tur	tur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	fixed	_	_
-6	uppdelade	uppdela	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
-7	i	i	ADP	PP	_	8	case	_	_
-8	distrikt	distrikt	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	obl	_	SpaceAfter=No
-9	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ekonomi
-1	Ekonomi	ekonomi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Allmänt
-1	Allmänt	allmän	ADV	AB|POS	Degree=Pos	0	root	_	SpaceAfter=No
+# text = Ekonomi och infrastruktur
+1	Ekonomi	ekonomi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	infrastruktur	infrastruktur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2327,26 +2286,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Servicesektorn står år 2017 för cirka 57 procent av andets BNP.
-1	Servicesektorn	servicesektor	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj	_	_
-2	står	stå	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
-4	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	2	obl	_	_
-5	för	för	ADP	PP	_	8	case	_	_
-6	cirka	cirka	ADV	AB	_	7	advmod	_	_
-7	57	57	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
-8	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
-9	av	av	ADP	PP	_	11	case	_	_
-10	andets	and	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	nmod:poss	_	_
-11	BNP	BNP	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
-12	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = Guld, timmer, kakaoproduktion och individuella penningöverföringar från utlandet är de största källorna till utländskt kapital.
 1	Guld	guld	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	14	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	MID	_	3	punct	_	_
@@ -2366,6 +2305,131 @@
 16	utländskt	utländsk	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	17	amod	_	_
 17	kapital	kapital	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	SpaceAfter=No
 18	.	.	PUNCT	MAD	_	14	punct	_	SpacesAfter=\s\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Näringsliv
+1	Näringsliv	näringsliv	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Energi och råvaror
+1	Energi	energi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	råvaror	råvara	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = 75 procent av elektriciteten producerades av vattenkraft.
+1	75	75	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
+2	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	nsubj:pass	_	_
+3	av	av	ADP	PP	_	4	case	_	_
+4	elektriciteten	elektricitet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+5	producerades	producera	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	av	av	ADP	PP	_	7	case	_	_
+7	vattenkraft	vattenkraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	MAD	_	5	punct	_	_
+
+# sent_id = 2
+# text = Största dammen, Akosombodammen, byggdes vid Voltafloden 1965.
+1	Största	stor	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	2	amod	_	_
+2	dammen	damm	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nsubj:pass	_	SpaceAfter=No
+3	,	,	PUNCT	MID	_	2	punct	_	_
+4	Akosombodammen	Akosombodammen	PROPN	PM|NOM	Case=Nom	2	appos	_	SpaceAfter=No
+5	,	,	PUNCT	MID	_	2	punct	_	_
+6	byggdes	bygga	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	vid	vid	ADP	PP	_	8	case	_	_
+8	Voltafloden	Voltafloden	PROPN	PM|NOM	Case=Nom	6	obl	_	_
+9	1965	1965	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpaceAfter=No
+10	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Naturtillgångar i landet är guld, timmer, industridiamanter, bauxit, mangan, fisk, gummi, vattenkraft, petroleum, silver, salt och kalksten.
+1	Naturtillgångar	naturtillgång	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	nsubj	_	_
+2	i	i	ADP	PP	_	3	case	_	_
+3	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	1	nmod	_	_
+4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	guld	guld	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	MID	_	7	punct	_	_
+7	timmer	timme	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	MID	_	9	punct	_	_
+9	industridiamanter	industridiamant	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	11	punct	_	_
+11	bauxit	bauxit	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+12	,	,	PUNCT	MID	_	13	punct	_	_
+13	mangan	mangan	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+14	,	,	PUNCT	MID	_	15	punct	_	_
+15	fisk	fisk	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+16	,	,	PUNCT	MID	_	17	punct	_	_
+17	gummi	gummi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+18	,	,	PUNCT	MID	_	19	punct	_	_
+19	vattenkraft	vattenkraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+20	,	,	PUNCT	MID	_	21	punct	_	_
+21	petroleum	petroleum	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
+22	,	,	PUNCT	MID	_	23	punct	_	_
+23	silver	silver	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
+24	,	,	PUNCT	MID	_	25	punct	_	_
+25	salt	salt	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	_
+26	och	och	CCONJ	KN	_	27	cc	_	_
+27	kalksten	kalksten	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	conj	_	SpaceAfter=No
+28	.	.	PUNCT	MAD	_	5	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tjänster och turism
+1	Tjänster	tjänst	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	turism	turism	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Servicesektorn stod år 2017 för cirka 57 procent av landets BNP.
+1	Servicesektorn	servicesektor	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj	_	_
+2	stod	stå	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
+4	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	2	obl	_	_
+5	för	för	ADP	PP	_	8	case	_	_
+6	cirka	cirka	ADV	AB	_	7	advmod	_	_
+7	57	57	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
+8	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
+9	av	av	ADP	PP	_	11	case	_	_
+10	landets	land	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	nmod:poss	_	_
+11	BNP	BNP	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Handel
+1	Handel	handel	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2446,18 +2510,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ekonomisk historia
+# text = Ekonomisk utveckling
 1	Ekonomisk	ekonomisk	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
-2	historia	historia	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 1980-talet
-1	1980-talet	1980-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+2	utveckling	utveckling	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2472,23 +2527,9 @@
 4	två	två	NUM	RG|NOM	Case=Nom|NumType=Card	6	nummod	_	_
 5	ekonomiska	ekonomisk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
 6	återhämtningsprogram	återhämtningsprogram	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	3	nsubj:pass	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+7	.	.	PUNCT	MAD	_	3	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 1990-talet
-1	1990-talet	1990-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
+# sent_id = 2
 # text = 1980-talets ekonomiska återhämtningsprogram tillsammans med den fortsatta liberaliseringen av ekonomin under 1990-talet gjorde att ekonomin började återhämta sig efter den stora stagneringen sedan självständigheten 1957.
 1	1980-talets	1980-tal	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	3	nmod:poss	_	_
 2	ekonomiska	ekonomisk	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	3	amod	_	_
@@ -2523,37 +2564,27 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2000-talet
-1	2000-talet	2000-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ghanas ekonomi har fortsatt att förbättras under 00-talet med hjälp av höga priser på viktiga exportvaror som guld och kakao.
+# text = Ghanas ekonomi fortsatte att förbättras under 00-talet med hjälp av höga priser på viktiga exportvaror som guld och kakao.
 1	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	2	nmod:poss	_	_
-2	ekonomi	ekonomi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
-3	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
-4	fortsatt	fortsätta	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	0	root	_	_
-5	att	att	PART	IE	_	6	mark	_	_
-6	förbättras	förbättra	VERB	VB|INF|SFO	VerbForm=Inf|Voice=Pass	4	xcomp	_	_
-7	under	under	ADP	PP	_	8	case	_	_
-8	00-talet	00-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	obl	_	_
-9	med	med	ADP	PP	_	13	case	_	_
-10	hjälp	hjälp	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	9	fixed	_	_
-11	av	av	ADP	PP	_	9	fixed	_	_
-12	höga	hög	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	13	amod	_	_
-13	priser	pris	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	obl	_	_
-14	på	på	ADP	PP	_	16	case	_	_
-15	viktiga	viktig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	16	amod	_	_
-16	exportvaror	exportvara	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
-17	som	som	CCONJ	KN	_	18	mark	_	_
-18	guld	guld	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	16	appos	_	_
-19	och	och	CCONJ	KN	_	20	cc	_	_
-20	kakao	kakao	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	18	conj	_	SpaceAfter=No
-21	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\s\s
+2	ekonomi	ekonomi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj	_	_
+3	fortsatte	fortsätta	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	att	att	PART	IE	_	5	mark	_	_
+5	förbättras	förbättra	VERB	VB|INF|SFO	VerbForm=Inf|Voice=Pass	3	xcomp	_	_
+6	under	under	ADP	PP	_	7	case	_	_
+7	00-talet	00-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	obl	_	_
+8	med	med	ADP	PP	_	12	case	_	_
+9	hjälp	hjälp	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	8	fixed	_	_
+10	av	av	ADP	PP	_	8	fixed	_	_
+11	höga	hög	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
+12	priser	pris	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	5	obl	_	_
+13	på	på	ADP	PP	_	15	case	_	_
+14	viktiga	viktig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	15	amod	_	_
+15	exportvaror	exportvara	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	12	nmod	_	_
+16	som	som	CCONJ	KN	_	17	mark	_	_
+17	guld	guld	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	15	appos	_	_
+18	och	och	CCONJ	KN	_	19	cc	_	_
+19	kakao	kakao	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	17	conj	_	SpaceAfter=No
+20	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\s\s
 
 # sent_id = 2
 # text = Ghanas ekonomi påverkas lätt av skiften i världsmarknadspriser och väder.
@@ -2575,63 +2606,62 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ghana skrev 2006 under ett avtal med Millennium Challenge Corporation (MCC) i syfte att underlätta modernisering och transformering av jordbrukssektorn i landet.
+# text = Ghana skrev år 2006 under ett avtal med Millennium Challenge Corporation (MCC) i syfte att underlätta modernisering och transformering av jordbrukssektorn i landet.
 1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	2	nsubj	_	_
 2	skrev	skriva	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	2006	2006	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
-4	under	under	ADP	PP	_	6	case	_	_
-5	ett	en	DET	DT|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
-6	avtal	avtal	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	_
-7	med	med	ADP	PP	_	10	case	_	_
-8	Millennium	Millennium	ADJ	UO	Foreign=Yes	10	compound	_	_
-9	Challenge	Challenge	ADJ	UO	Foreign=Yes	10	compound	_	_
-10	Corporation	Corporation	NOUN	NN	Foreign=Yes	6	nmod	_	_
-11	(	(	PUNCT	PAD	_	10	punct	_	SpaceAfter=No
-12	MCC	MCC	PROPN	PM|NOM	Case=Nom	10	appos	_	SpaceAfter=No
-13	)	)	PUNCT	PAD	_	10	punct	_	_
-14	i	i	ADP	PP	_	17	mark	_	_
-15	syfte	syfte	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	14	fixed	_	_
-16	att	att	PART	IE	_	17	mark	_	_
-17	underlätta	underlätta	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	10	acl	_	_
-18	modernisering	modernisering	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	17	obj	_	_
-19	och	och	CCONJ	KN	_	20	cc	_	_
-20	transformering	transformering	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	18	conj	_	_
-21	av	av	ADP	PP	_	22	case	_	_
-22	jordbrukssektorn	jordbrukssektor	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	20	nmod	_	_
-23	i	i	ADP	PP	_	24	case	_	_
-24	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	22	nmod	_	SpaceAfter=No
-25	.	.	PUNCT	MAD	_	2	punct	_	_
+3	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
+4	2006	2006	NUM	RG|NOM	Case=Nom|NumType=Card	2	obl	_	_
+5	under	under	ADP	PP	_	7	case	_	_
+6	ett	en	DET	DT|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+7	avtal	avtal	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	_
+8	med	med	ADP	PP	_	11	case	_	_
+9	Millennium	Millennium	ADJ	UO	Foreign=Yes	11	compound	_	_
+10	Challenge	Challenge	ADJ	UO	Foreign=Yes	11	compound	_	_
+11	Corporation	Corporation	NOUN	NN	Foreign=Yes	7	nmod	_	_
+12	(	(	PUNCT	PAD	_	11	punct	_	SpaceAfter=No
+13	MCC	MCC	PROPN	PM|NOM	Case=Nom	11	appos	_	SpaceAfter=No
+14	)	)	PUNCT	PAD	_	11	punct	_	_
+15	i	i	ADP	PP	_	18	mark	_	_
+16	syfte	syfte	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	15	fixed	_	_
+17	att	att	PART	IE	_	18	mark	_	_
+18	underlätta	underlätta	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	11	acl	_	_
+19	modernisering	modernisering	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	18	obj	_	_
+20	och	och	CCONJ	KN	_	21	cc	_	_
+21	transformering	transformering	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	19	conj	_	_
+22	av	av	ADP	PP	_	23	case	_	_
+23	jordbrukssektorn	jordbrukssektor	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	21	nmod	_	_
+24	i	i	ADP	PP	_	25	case	_	_
+25	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	23	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	MAD	_	2	punct	_	_
 
 # sent_id = 2
-# text = Ghana valdes 2002 till skuldavskrivningsprogrammet Heavily Indebted poor country (HIPC), samt gynnas av Multilateral Debt
+# text = Ghana valdes år 2002 till skuldavskrivningsprogrammet Heavily Indebted poor country (HIPC), samt gynnas av Multilateral Debt Relief-initiativet som trädde i kraft 2006.
 1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	2	nsubj:pass	_	_
 2	valdes	vala	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
-3	2002	2002	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
-4	till	till	ADP	PP	_	9	case	_	_
-5	skuldavskrivningsprogrammet	skuldavskrivningsprogram	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	9	nmod	_	_
-6	Heavily	Heavily	ADJ	UO	_	9	amod	_	_
-7	Indebted	Indebted	ADJ	UO	Foreign=Yes	9	amod	_	_
-8	poor	poor	NOUN	UO	Foreign=Yes	9	compound	_	_
-9	country	country	NOUN	UO	Foreign=Yes	2	obl	_	_
-10	(	(	PUNCT	PAD	_	9	punct	_	SpaceAfter=No
-11	HIPC	HIPC	PROPN	PM|NOM	Case=Nom	9	appos	_	SpaceAfter=No
-12	)	)	PUNCT	PAD	_	9	punct	_	SpaceAfter=No
-13	,	,	PUNCT	MID	_	15	punct	_	_
-14	samt	samt	CCONJ	KN	_	15	cc	_	_
-15	gynnas	gynna	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
-16	av	av	ADP	PP	_	18	case	_	_
-17	Multilateral	Multilateral	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	18	amod	_	_
-18	Debt	debt	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	15	obl:agent	_	_
-
-# sent_id = 3
-# text = Relief-initiativet som trädde i kraft 2006.
-1	Relief-initiativet	relief-initiativ	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	_
-2	som	som	PRON	HP|-|-|-	PronType=Rel	3	nsubj	_	_
-3	trädde	träda	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
-4	i	i	ADP	PP	_	3	compound:prt	_	_
-5	kraft	kraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	fixed	_	_
-6	2006	2006	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	1	punct	_	SpacesAfter=\s\n
+3	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
+4	2002	2002	NUM	RG|NOM	Case=Nom|NumType=Card	2	obl	_	_
+5	till	till	ADP	PP	_	10	case	_	_
+6	skuldavskrivningsprogrammet	skuldavskrivningsprogram	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	10	nmod	_	_
+7	Heavily	Heavily	ADJ	UO	Foreign=Yes	10	amod	_	_
+8	Indebted	Indebted	ADJ	UO	Foreign=Yes	10	amod	_	_
+9	poor	poor	NOUN	UO	Foreign=Yes	10	compound	_	_
+10	country	country	NOUN	UO	Foreign=Yes	2	obl	_	_
+11	(	(	PUNCT	PAD	_	10	punct	_	SpaceAfter=No
+12	HIPC	HIPC	PROPN	PM|NOM	Case=Nom	10	appos	_	SpaceAfter=No
+13	)	)	PUNCT	PAD	_	10	punct	_	SpaceAfter=No
+14	,	,	PUNCT	MID	_	16	punct	_	_
+15	samt	samt	CCONJ	KN	_	16	cc	_	_
+16	gynnas	gynna	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
+17	av	av	ADP	PP	_	20	case	_	_
+18	Multilateral	Multilateral	ADJ	JJ	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	20	amod	_	_
+19	Debt	Debt	NOUN	UO	Foreign=Yes	20	nmod	_	_
+20	Relief-initiativet	Relief-initiativet	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	16	obl:agent	_	_
+21	som	som	PRON	HP|-|-|-	PronType=Rel	22	nsubj	_	_
+22	trädde	träda	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	20	acl:relcl	_	_
+23	i	i	ADP	PP	_	22	compound:prt	_	_
+24	kraft	kraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	23	fixed	_	_
+25	2006	2006	NUM	RG|NOM	Case=Nom|NumType=Card	22	obl	_	SpaceAfter=No
+26	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2639,79 +2669,79 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Omkring 50 % av befolkningen lever på mindre än 2 US dollar per dag vilket är en kraftig minskning av andelen fattiga i landet.
+# text = Omkring 50 % av befolkningen levde i början på 2000-talet på mindre än 2 US dollar per dag vilket är en kraftig minskning av andelen fattiga i landet.
 1	Omkring	omkring	ADV	AB	_	2	advmod	_	_
 2	50	50	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	SpacesAfter= 
 3	%	%	NOUN	NN|AN	Abbr=Yes	6	nsubj	_	_
 4	av	av	ADP	PP	_	5	case	_	_
 5	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
-6	lever	leva	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-7	på	på	ADP	PP	_	12	case	_	_
-8	mindre	lite	ADV	AB|KOM	Degree=Cmp	10	advmod	_	_
-9	än	än	SCONJ	KN	_	8	fixed	_	_
-10	2	2	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	_
-11	US	US	NOUN	NN|AN	Abbr=Yes	12	nmod	_	_
-12	dollar	dollar	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
-13	per	per	ADP	PP	_	14	case	_	_
-14	dag	dag	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
-15	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	19	nsubj	_	_
-16	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
-17	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	19	det	_	_
-18	kraftig	kraftig	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	19	amod	_	_
-19	minskning	minskning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	12	acl:relcl	_	_
-20	av	av	ADP	PP	_	22	case	_	_
-21	andelen	andel	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	22	nmod	_	_
-22	fattiga	fattig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	19	nmod	_	_
-23	i	i	ADP	PP	_	24	case	_	_
-24	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	22	nmod	_	SpaceAfter=No
-25	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = 2009 signerade Ghana ett treårigt fattigdomsminsknings- och tillväxtprogram med IMF (Internationella valutafonden) för att förbättra den makroekonomiska stabiliteten, öka den privata sektorns konkurrenskraft, utveckla landets humankapital samt främja god samhällsstyrning och samhällsansvar.
-1	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
-2	signerade	signera	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	2	nsubj	_	_
-4	ett	en	DET	DT|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
-5	treårigt	treårig	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	6	amod	_	_
-6	fattigdomsminsknings-	fattigdomsminskning	NOUN	NN|UTR|-|-|SMS	Gender=Com	2	obj	_	_
-7	och	och	CCONJ	KN	_	8	cc	_	_
-8	tillväxtprogram	tillväxtprogram	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	6	conj	_	_
-9	med	med	ADP	PP	_	10	case	_	_
-10	IMF	IMF	PROPN	PM|NOM	Case=Nom	2	obl	_	_
-11	(	(	PUNCT	PAD	_	10	punct	_	SpaceAfter=No
-12	Internationella	internationell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	13	amod	_	_
-13	valutafonden	valutafond	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	appos	_	SpaceAfter=No
-14	)	)	PUNCT	PAD	_	10	punct	_	_
-15	för	för	ADP	PP	_	17	mark	_	_
-16	att	att	PART	IE	_	17	mark	_	_
-17	förbättra	förbättra	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	2	advcl	_	_
-18	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	20	det	_	_
-19	makroekonomiska	makroekonomisk	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	20	amod	_	_
-20	stabiliteten	stabilitet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	17	obj	_	SpaceAfter=No
-21	,	,	PUNCT	MID	_	22	punct	_	_
-22	öka	öka	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	17	conj	_	_
-23	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	25	det	_	_
-24	privata	privat	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	25	amod	_	_
-25	sektorns	sektor	NOUN	NN|UTR|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Com|Number=Sing	26	nmod:poss	_	_
-26	konkurrenskraft	konkurrenskraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	22	obj	_	SpaceAfter=No
-27	,	,	PUNCT	MID	_	28	punct	_	_
-28	utveckla	utveckla	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	17	conj	_	_
-29	landets	land	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	30	nmod:poss	_	_
-30	humankapital	humankapital	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	28	obj	_	_
-31	samt	samt	CCONJ	KN	_	32	cc	_	_
-32	främja	främja	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	17	conj	_	_
-33	god	god	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	34	amod	_	_
-34	samhällsstyrning	samhällsstyrning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	32	obj	_	_
-35	och	och	CCONJ	KN	_	36	cc	_	_
-36	samhällsansvar	samhällsansvar	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	34	conj	_	SpaceAfter=No
-37	.	.	PUNCT	MAD	_	2	punct	_	_
+6	levde	leva	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	i	i	ADP	PP	_	8	case	_	_
+8	början	början	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	obl	_	_
+9	på	på	ADP	PP	_	10	case	_	_
+10	2000-talet	2000-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	8	nmod	_	_
+11	på	på	ADP	PP	_	16	case	_	_
+12	mindre	lite	ADV	AB|KOM	Degree=Cmp	14	advmod	_	_
+13	än	än	SCONJ	KN	_	12	fixed	_	_
+14	2	2	NUM	RG|NOM	Case=Nom|NumType=Card	15	nummod	_	_
+15	US	US	NOUN	NN|AN	Abbr=Yes	16	nmod	_	_
+16	dollar	dollar	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
+17	per	per	ADP	PP	_	18	case	_	_
+18	dag	dag	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	_
+19	vilket	vilken	PRON	HP|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	23	nsubj	_	_
+20	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	_	_
+21	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	23	det	_	_
+22	kraftig	kraftig	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	23	amod	_	_
+23	minskning	minskning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	16	acl:relcl	_	_
+24	av	av	ADP	PP	_	26	case	_	_
+25	andelen	andel	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	26	nmod	_	_
+26	fattiga	fattig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	23	nmod	_	_
+27	i	i	ADP	PP	_	28	case	_	_
+28	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	26	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	MAD	_	6	punct	_	_
 
 # sent_id = 2
+# text = År 2009 signerade Ghana ett treårigt fattigdomsminsknings- och tillväxtprogram med IMF (Internationella valutafonden) för att förbättra den makroekonomiska stabiliteten, öka den privata sektorns konkurrenskraft, utveckla landets humankapital samt främja god samhällsstyrning och samhällsansvar.
+1	År	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nmod	_	_
+2	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	3	obl	_	_
+3	signerade	signera	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	3	nsubj	_	_
+5	ett	en	DET	DT|NEU|SIN|IND	Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
+6	treårigt	treårig	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	_
+7	fattigdomsminsknings-	fattigdomsminskning	NOUN	NN|UTR|-|-|SMS	Gender=Com	3	obj	_	_
+8	och	och	CCONJ	KN	_	9	cc	_	_
+9	tillväxtprogram	tillväxtprogram	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	7	conj	_	_
+10	med	med	ADP	PP	_	11	case	_	_
+11	IMF	IMF	PROPN	PM|NOM	Case=Nom	3	obl	_	_
+12	(	(	PUNCT	PAD	_	11	punct	_	SpaceAfter=No
+13	Internationella	internationell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	14	amod	_	_
+14	valutafonden	valutafond	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	appos	_	SpaceAfter=No
+15	)	)	PUNCT	PAD	_	11	punct	_	_
+16	för	för	ADP	PP	_	18	mark	_	_
+17	att	att	PART	IE	_	18	mark	_	_
+18	förbättra	förbättra	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	3	advcl	_	_
+19	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	21	det	_	_
+20	makroekonomiska	makroekonomisk	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	21	amod	_	_
+21	stabiliteten	stabilitet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	18	obj	_	SpaceAfter=No
+22	,	,	PUNCT	MID	_	23	punct	_	_
+23	öka	öka	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	18	conj	_	_
+24	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	26	det	_	_
+25	privata	privat	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	26	amod	_	_
+26	sektorns	sektor	NOUN	NN|UTR|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Com|Number=Sing	27	nmod:poss	_	_
+27	konkurrenskraft	konkurrenskraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	23	obj	_	SpaceAfter=No
+28	,	,	PUNCT	MID	_	29	punct	_	_
+29	utveckla	utveckla	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	18	conj	_	_
+30	landets	land	NOUN	NN|NEU|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	31	nmod:poss	_	_
+31	humankapital	humankapital	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	29	obj	_	_
+32	samt	samt	CCONJ	KN	_	33	cc	_	_
+33	främja	främja	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	18	conj	_	_
+34	god	god	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	35	amod	_	_
+35	samhällsstyrning	samhällsstyrning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	33	obj	_	_
+36	och	och	CCONJ	KN	_	37	cc	_	_
+37	samhällsansvar	samhällsansvar	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	35	conj	_	SpaceAfter=No
+38	.	.	PUNCT	MAD	_	3	punct	_	_
+
+# sent_id = 3
 # text = Förnuftig makroekonomisk styrning tillsammans med höga guld- och kakaopriser hjälpte landet upprätthålla en relativt hög BNP-tillväxt under perioden 2008-2010.
 1	Förnuftig	förnuftig	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	3	amod	_	_
 2	makroekonomisk	makroekonomisk	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	3	amod	_	_
@@ -2734,7 +2764,7 @@
 19	2008-2010	2008-2010	NUM	RG|NOM	Case=Nom|NumType=Card	12	obl	_	SpaceAfter=No
 20	.	.	PUNCT	MAD	_	10	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Med en genomsnittlig BNP-tillväxttakt på 5,4% de senaste tre åren.
 1	Med	med	ADP	PP	_	4	case	_	_
 2	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	4	det	_	_
@@ -2754,41 +2784,33 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2010-talet
-1	2010-talet	2010-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = I början av 2010 utnämnde den dåvarande presidenten John Atta Mills återhämtning från hög inflation, förbättrad handelsbalans och minskat budgetunderskott som sina prioriteringar.
+# text = I början av år 2010 utnämnde den dåvarande presidenten John Atta Mills återhämtning från hög inflation, förbättrad handelsbalans och minskat budgetunderskott som sina prioriteringar.
 1	I	i	ADP	PP	_	2	case	_	_
-2	början	början	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	obl	_	_
-3	av	av	ADP	PP	_	4	case	_	_
-4	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	2	nmod	_	_
-5	utnämnde	utnämna	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-6	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	8	det	_	_
-7	dåvarande	dåvarande	ADJ	JJ|POS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Pos	8	amod	_	_
-8	presidenten	president	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	9	nmod	_	_
-9	John	John	PROPN	PM|NOM	Case=Nom	5	nsubj	_	_
-10	Atta	Atta	PROPN	PM|NOM	Case=Nom	9	flat:name	_	_
-11	Mills	Mills	PROPN	PM|NOM	Case=Nom	9	flat:name	_	_
-12	återhämtning	återhämtning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	obj	_	_
-13	från	från	ADP	PP	_	15	case	_	_
-14	hög	hög	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	15	amod	_	_
-15	inflation	inflation	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	SpaceAfter=No
-16	,	,	PUNCT	MID	_	18	punct	_	_
-17	förbättrad	förbättra	ADJ	PC|PRF|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|Tense=Past|VerbForm=Part	18	amod	_	_
-18	handelsbalans	handelsbalans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	15	conj	_	_
-19	och	och	CCONJ	KN	_	21	cc	_	_
-20	minskat	minska	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	21	amod	_	_
-21	budgetunderskott	budgetunderskott	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	15	conj	_	_
-22	som	som	SCONJ	KN	_	24	mark	_	_
-23	sina	sig	PRON	PS|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
-24	prioriteringar	prioritering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	xcomp	_	SpaceAfter=No
-25	.	.	PUNCT	MAD	_	5	punct	_	SpacesAfter=\n
+2	början	början	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	obl	_	_
+3	av	av	ADP	PP	_	5	case	_	_
+4	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	nmod	_	_
+5	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	2	nmod	_	_
+6	utnämnde	utnämna	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	9	det	_	_
+8	dåvarande	dåvarande	ADJ	JJ|POS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Pos	9	amod	_	_
+9	presidenten	president	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	nmod	_	_
+10	John	John	PROPN	PM|NOM	Case=Nom	6	nsubj	_	_
+11	Atta	Atta	PROPN	PM|NOM	Case=Nom	10	flat:name	_	_
+12	Mills	Mills	PROPN	PM|NOM	Case=Gen	10	flat:name	_	_
+13	återhämtning	återhämtning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	obj	_	_
+14	från	från	ADP	PP	_	16	case	_	_
+15	hög	hög	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	16	amod	_	_
+16	inflation	inflation	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	13	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	MID	_	19	punct	_	_
+18	förbättrad	förbättra	ADJ	PC|PRF|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|Tense=Past|VerbForm=Part	19	amod	_	_
+19	handelsbalans	handelsbalans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	16	conj	_	_
+20	och	och	CCONJ	KN	_	22	cc	_	_
+21	minskat	minska	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	22	amod	_	_
+22	budgetunderskott	budgetunderskott	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	16	conj	_	_
+23	som	som	SCONJ	KN	_	25	mark	_	_
+24	sina	sig	PRON	PS|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	prioriteringar	prioritering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	xcomp	_	SpaceAfter=No
+26	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -2970,35 +2992,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 75 procent av elektriciteten producerades av vattenkraft.
-1	75	75	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
-2	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	nsubj:pass	_	_
-3	av	av	ADP	PP	_	4	case	_	_
-4	elektriciteten	elektricitet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
-5	producerades	producera	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
-6	av	av	ADP	PP	_	7	case	_	_
-7	vattenkraft	vattenkraft	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	obl:agent	_	SpaceAfter=No
-8	.	.	PUNCT	MAD	_	5	punct	_	_
-
-# sent_id = 2
-# text = Största dammen, Akosombodammen, byggdes vid Voltafloden 1965.
-1	Största	stor	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	2	amod	_	_
-2	dammen	damm	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nsubj:pass	_	SpaceAfter=No
-3	,	,	PUNCT	MID	_	2	punct	_	_
-4	Akosombodammen	Akosombodammen	PROPN	PM|NOM	Case=Nom	2	appos	_	SpaceAfter=No
-5	,	,	PUNCT	MID	_	2	punct	_	_
-6	byggdes	bygga	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
-7	vid	vid	ADP	PP	_	8	case	_	_
-8	Voltafloden	Voltafloden	PROPN	PM|NOM	Case=Nom	6	obl	_	_
-9	1965	1965	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpaceAfter=No
-10	.	.	PUNCT	MAD	_	6	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = År 2010 bestod industrisektorn av 19 % av landets BNP.
 1	År	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nmod	_	_
 2	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	3	obl	_	_
@@ -3073,28 +3066,31 @@
 18	.	.	PUNCT	MAD	_	3	punct	_	_
 
 # sent_id = 2
-# text = Matgrödor odlas mest efter kakao men den inhemska produktionen motsvarar inte behovet och således måste Ghana importera matgrödor från grannländerna.
+# text = Matgrödor odlas mest, näst efter kakao, men den inhemska produktionen motsvarar inte behovet och således måste Ghana importera matgrödor från grannländerna.
 1	Matgrödor	matgröda	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	nsubj:pass	_	_
 2	odlas	odla	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-3	mest	mycket	ADV	AB|SUV	Degree=Sup	2	advmod	_	_
-4	efter	efter	ADP	PP	_	5	case	_	_
-5	kakao	kakao	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obl	_	_
-6	men	men	CCONJ	KN	_	10	cc	_	_
-7	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	9	det	_	_
-8	inhemska	inhemsk	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	9	amod	_	_
-9	produktionen	produktion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	nsubj	_	_
-10	motsvarar	motsvara	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
-11	inte	inte	PART	AB	Polarity=Neg	10	advmod	_	_
-12	behovet	behov	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	10	obj	_	_
-13	och	och	CCONJ	KN	_	17	cc	_	_
-14	således	således	ADV	AB	_	17	advmod	_	_
-15	måste	måste	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	17	aux	_	_
-16	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	17	nsubj	_	_
-17	importera	importera	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	2	conj	_	_
-18	matgrödor	matgröda	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	17	obj	_	_
-19	från	från	ADP	PP	_	20	case	_	_
-20	grannländerna	grannland	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	17	obl	_	SpaceAfter=No
-21	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+3	mest	mycket	ADV	AB|SUV	Degree=Sup	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	MID	_	2	punct	_	_
+5	näst	näst	ADV	AB	Degree=Sup	7	advmod	_	_
+6	efter	efter	ADP	PP	_	7	case	_	_
+7	kakao	kakao	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	MID	_	20	punct	_	_
+9	men	men	CCONJ	KN	_	13	cc	_	_
+10	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	12	det	_	_
+11	inhemska	inhemsk	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	12	amod	_	_
+12	produktionen	produktion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	13	nsubj	_	_
+13	motsvarar	motsvara	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+14	inte	inte	PART	AB	Polarity=Neg	13	advmod	_	_
+15	behovet	behov	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	13	obj	_	_
+16	och	och	CCONJ	KN	_	20	cc	_	_
+17	således	således	ADV	AB	_	20	advmod	_	_
+18	måste	måste	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux	_	_
+19	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	20	nsubj	_	_
+20	importera	importera	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	2	conj	_	_
+21	matgrödor	matgröda	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	20	obj	_	_
+22	från	från	ADP	PP	_	23	case	_	_
+23	grannländerna	grannland	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	20	obl	_	SpaceAfter=No
+24	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3102,7 +3098,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Under 00-talet har produktionen av kakao legat på rekordnivåer och Ghana är en av världens tre största kakaoproducenter.
+# text = Under 00-talet har produktionen av kakao legat på rekordnivåer och Ghana var en av världens tre största kakaoproducenter.
 1	Under	under	ADP	PP	_	2	case	_	_
 2	00-talet	00-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	7	obl	_	_
 3	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
@@ -3114,7 +3110,7 @@
 9	rekordnivåer	rekordnivå	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	obl	_	_
 10	och	och	CCONJ	KN	_	13	cc	_	_
 11	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	13	nsubj	_	_
-12	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+12	var	vara	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	_
 13	en	man	PRON	PN|UTR|SIN|IND|SUB/OBJ	Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	7	conj	_	_
 14	av	av	ADP	PP	_	18	case	_	_
 15	världens	värld	NOUN	NN|UTR|SIN|DEF|GEN	Case=Gen|Definite=Def|Gender=Com|Number=Sing	18	nmod:poss	_	_
@@ -3129,23 +3125,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2020-talet
-1	2020-talet	2020-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ghanas ekonomi påverkades kraftigt av pandemiutbrottet.
+# text = Ghanas ekonomi påverkades kraftigt av pandemiutbrottet i början av 2020-talet.
 1	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	2	nmod:poss	_	_
 2	ekonomi	ekonomi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj:pass	_	_
 3	påverkades	påverka	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
 4	kraftigt	kraftig	ADV	AB|POS	Degree=Pos	3	advmod	_	_
 5	av	av	ADP	PP	_	6	case	_	_
-6	pandemiutbrottet	pandemiutbrott	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	obl:agent	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	3	punct	_	_
+6	pandemiutbrottet	pandemiutbrott	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	obl:agent	_	_
+7	i	i	ADP	PP	_	8	case	_	_
+8	början	början	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
+9	av	av	ADP	PP	_	10	case	_	_
+10	2020-talet	2020-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	MAD	_	3	punct	_	_
 
 # sent_id = 2
 # text = Utbrottet återställde nästan fyra decenniers ekonomisk utveckling.
@@ -3173,8 +3164,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Flyg
-1	Flyg	flyg	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+# text = Transporter
+1	Transporter	transport	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3182,7 +3173,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ghana har 10 flygplatser varav sju är belagda med asfalt och en, Kotokas internationella flygplats, är internationell.
+# text = Ghana har 10 flygplatser varav sju är belagda med asfalt och en, Kotokas internationella flygplats, är internationell.[källa behövs]
 1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	2	nsubj	_	_
 2	har	ha	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	10	10	NUM	RG|NOM	Case=Nom|NumType=Card	4	nummod	_	_
@@ -3193,16 +3184,18 @@
 8	belagda	belagd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 9	med	med	ADP	PP	_	10	case	_	_
 10	asfalt	asfalt	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	8	obl	_	_
-11	och	och	CCONJ	KN	_	19	cc	_	_
-12	en	en	PRON	PN|UTR|SIN|IND|SUB/OBJ	Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	19	nsubj	_	SpaceAfter=No
+11	och	och	CCONJ	KN	_	21	cc	_	_
+12	en	en	PRON	PN|UTR|SIN|IND|SUB/OBJ	Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	20	nsubj	_	SpaceAfter=No
 13	,	,	PUNCT	MID	_	12	punct	_	_
 14	Kotokas	Kotoka	PROPN	PM|GEN	Case=Gen	16	nmod:poss	_	_
 15	internationella	internationell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	16	amod	_	_
 16	flygplats	flygplats	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	12	appos	_	SpaceAfter=No
 17	,	,	PUNCT	MID	_	12	punct	_	_
-18	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
-19	internationell	internationell	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	conj	_	SpaceAfter=No
-20	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+18	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	21	aux:pass	_	_
+19	internationell.[	internationell.[	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	21	advmod	_	SpaceAfter=No
+20	källa	källa	NOUN	VB|INF|AKT	VerbForm=Inf|Voice=Act	2	conj	_	SpacesAfter= 
+21	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+22	]	]	PUNCT	MAD	_	21	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3210,20 +3203,11 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Järnväg
-1	Järnväg	järnväg	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Totalt 650 km järnväg (32 km dubbelspår) med spårvidd på 1 067 mm.
+# text = Totalt 650 km järnväg (32 km dubbelspår) med spårvidd på 1 067 mm.[källa behövs]
 1	Totalt	total	ADV	AB|POS	Degree=Pos	2	advmod	_	_
 2	650	650	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	SpacesAfter= 
 3	km	km	NOUN	NN|AN	Abbr=Yes	4	nmod	_	_
-4	järnväg	järnväg	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+4	järnväg	järnväg	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	17	nsubj:pass	_	_
 5	(	(	PUNCT	PAD	_	4	punct	_	SpaceAfter=No
 6	32	32	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	SpacesAfter= 
 7	km	km	NOUN	NN|AN	Abbr=Yes	8	nmod	_	_
@@ -3234,8 +3218,10 @@
 12	på	på	ADP	PP	_	15	case	_	_
 13	1	1	NUM	RG|NOM	Case=Nom|NumType=Card	15	nummod	_	SpacesAfter= 
 14	067	067	NUM	RG|NOM	Case=Nom|NumType=Card	15	nummod	_	SpacesAfter= 
-15	mm	mm	NOUN	NN|AN	Abbr=Yes	11	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
+15	mm.[	mm.[	NOUN	NN|AN	Abbr=Yes	11	nmod	_	SpaceAfter=No
+16	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	4	acl	_	SpacesAfter= 
+17	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+18	]	]	PUNCT	MAD	_	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3255,33 +3241,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Landsväg
-1	Landsväg	landsväg	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+# text = Landsväg Totalt: 109 515 km (2009)
+1	Landsväg	landsväg	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n
+2	Totalt	total	ADV	AB|POS	Degree=Pos	1	advmod	_	SpaceAfter=No
+3	:	:	PUNCT	MID	_	1	punct	_	_
+4	109	109	NUM	RG|NOM	Case=Nom|NumType=Card	6	nummod	_	_
+5	515	515	NUM	RG|NOM	Case=Nom|NumType=Card	6	nummod	_	_
+6	km	km	NOUN	NN|AN	Abbr=Yes	1	appos	_	_
+7	(	(	PUNCT	PAD	_	6	punct	_	SpaceAfter=No
+8	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	6	appos	_	SpaceAfter=No
+9	)	)	PUNCT	PAD	_	6	punct	_	SpacesAfter=\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Totalt: 109 515 km (2009)
-1	Totalt	total	ADV	AB|POS	Degree=Pos	5	advmod	_	SpaceAfter=No
-2	:	:	PUNCT	MID	_	5	punct	_	_
-3	109	109	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	_
-4	515	515	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	_
-5	km	km	NOUN	NN|AN	Abbr=Yes	0	root	_	_
-6	(	(	PUNCT	PAD	_	5	punct	_	SpaceAfter=No
-7	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	5	appos	_	SpaceAfter=No
-8	)	)	PUNCT	PAD	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Belagda: 13 515 km (2009)
-1	Belagda	Belagda	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
+# sent_id = 2
+# text = Belagda: 13 515 km (2009) Grus:
+1	Belagda	belagda	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	MID	_	1	punct	_	_
 3	13	13	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	_
 4	515	515	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	_
@@ -3289,18 +3262,10 @@
 6	(	(	PUNCT	PAD	_	5	punct	_	SpaceAfter=No
 7	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	5	appos	_	SpaceAfter=No
 8	)	)	PUNCT	PAD	_	5	punct	_	SpacesAfter=\n
+9	Grus	Grus	PROPN	PM|NOM	Case=Nom	1	appos	_	SpaceAfter=No
+10	:	:	PUNCT	MAD	_	1	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Grus:
-1	Grus	grus	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	MAD	_	1	punct	_	_
-
-# sent_id = 2
+# sent_id = 3
 # text = 95 729 km (2009)
 1	95	95	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	_
 2	729	729	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	_
@@ -3308,15 +3273,6 @@
 4	(	(	PUNCT	PAD	_	3	punct	_	SpaceAfter=No
 5	2009	2009	NUM	RG|NOM	Case=Nom|NumType=Card	3	appos	_	SpaceAfter=No
 6	)	)	PUNCT	PAD	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Sjöfart
-1	Sjöfart	sjöfart	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3375,6 +3331,114 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Utbildning och forskning
+1	Utbildning	utbildning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	forskning	forskning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Befolkning
+1	Befolkning	befolkning	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Med afrikanska mått mätt är Ghana tämligen tätbefolkat (113 invånare per km² 2014).
+1	Med	med	ADP	PP	_	4	case	_	_
+2	afrikanska	afrikansk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	mått	mått	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	4	nmod	_	_
+4	mätt	mätt	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	8	obl	_	_
+5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	8	nsubj	_	_
+7	tämligen	tämligen	ADV	AB	_	8	advmod	_	_
+8	tätbefolkat	tätbefolka	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+9	(	(	PUNCT	PAD	_	8	punct	_	SpaceAfter=No
+10	113	113	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	_
+11	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	8	appos	_	_
+12	per	per	ADP	PP	_	13	case	_	_
+13	km²	km²	NOUN	NN|AN	Abbr=Yes	11	nmod	_	_
+14	2014	2014	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	SpaceAfter=No
+15	)	)	PUNCT	PAD	_	8	punct	_	SpaceAfter=No
+16	.	.	PUNCT	MAD	_	8	punct	_	_
+
+# sent_id = 2
+# text = Befolkningstätheten är störst i de centrala kustområdena. 34 procent av befolkningen bor i städer.
+1	Befolkningstätheten	befolkningstäthet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nsubj	_	_
+2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	störst	stor	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|IND|NOM	Case=Nom|Definite=Ind|Degree=Sup	0	root	_	_
+4	i	i	ADP	PP	_	7	case	_	_
+5	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
+6	centrala	central	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	kustområdena	kustområde	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	MAD	_	3	punct	_	_
+9	34	34	NUM	RG|NOM	Case=Nom|NumType=Card	10	nummod	_	_
+10	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nsubj	_	_
+11	av	av	ADP	PP	_	12	case	_	_
+12	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	nmod	_	_
+13	bor	bo	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+14	i	i	ADP	PP	_	15	case	_	_
+15	städer	stad	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	MAD	_	3	punct	_	_
+
+# sent_id = 3
+# text = De folkrikaste storstadsområdena är runt huvudstaden Accra, med över 4 miljoner invånare, och Kumasi, med över 2,5 miljoner invånare.
+1	De	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	3	det	_	_
+2	folkrikaste	folkrik	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	3	amod	_	_
+3	storstadsområdena	storstadsområde	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	7	nsubj	_	_
+4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	runt	runt	ADP	PP	_	7	case	_	_
+6	huvudstaden	huvudstad	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
+7	Accra	Accra	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	MID	_	7	punct	_	_
+9	med	med	ADP	PP	_	13	case	_	_
+10	över	över	ADV	AB	_	11	advmod	_	_
+11	4	4	NUM	RG|NOM	Case=Nom|NumType=Card	12	nummod	_	_
+12	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
+13	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	acl	_	SpaceAfter=No
+14	,	,	PUNCT	MID	_	16	punct	_	_
+15	och	och	CCONJ	KN	_	16	cc	_	_
+16	Kumasi	Kumasi	PROPN	PM|NOM	Case=Nom	7	conj	_	SpaceAfter=No
+17	,	,	PUNCT	MID	_	16	punct	_	_
+18	med	med	ADP	PP	_	22	case	_	_
+19	över	över	ADV	AB	_	20	advmod	_	_
+20	2,5	2,5	NUM	RG|NOM	Case=Nom|NumType=Card	21	nummod	_	_
+21	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	22	nmod	_	_
+22	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	16	orphan	_	SpaceAfter=No
+23	.	.	PUNCT	MAD	_	7	punct	_	_
+
+# sent_id = 4
+# text = Andra stora städer är Tamale, Tema (en förort till Accra) och Sekondi-Takoradi.
+1	Andra	annan	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+2	stora	stor	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	städer	stad	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	_
+4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	Tamale	Tamale	PROPN	PM|NOM	Case=Nom	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	MID	_	7	punct	_	_
+7	Tema	Tema	PROPN	PM|NOM	Case=Nom	5	conj	_	_
+8	(	(	PUNCT	PAD	_	7	punct	_	SpaceAfter=No
+9	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	10	det	_	_
+10	förort	förort	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	appos	_	_
+11	till	till	ADP	PP	_	12	case	_	_
+12	Accra	Accra	PROPN	PM|NOM	Case=Nom	10	nmod	_	SpaceAfter=No
+13	)	)	PUNCT	PAD	_	5	punct	_	_
+14	och	och	CCONJ	KN	_	15	cc	_	_
+15	Sekondi-Takoradi	Sekondi-takoradi	PROPN	PM|NOM	Case=Nom	5	conj	_	SpaceAfter=No
+16	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Demografi
 1	Demografi	demografi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
@@ -3384,8 +3448,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Invånarantal
-1	Invånarantal	invånarantal	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+# text = Statistik
+1	Statistik	statistik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3393,257 +3457,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Den senaste folkräkningen hölls den 26 september 2010 och då uppgick den faktiskt befintliga befolkningen i Ghana (de facto) till 24 658 823 invånare, varav 12 024 845 män och 12 633 978 kvinnor.
-1	Den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	3	det	_	_
-2	senaste	sen	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	3	amod	_	_
-3	folkräkningen	folkräkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nsubj:pass	_	_
-4	hölls	hölla	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-5	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	7	det	_	_
-6	26	26	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	_
-7	september	september	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
-8	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	_
-9	och	och	CCONJ	KN	_	11	cc	_	_
-10	då	då	ADV	AB	_	11	advmod	_	_
-11	uppgick	uppgå	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
-12	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	15	det	_	_
-13	faktiskt	faktisk	ADV	AB|POS	Degree=Pos	14	advmod	_	_
-14	befintliga	befintlig	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	15	amod	_	_
-15	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	nsubj	_	_
-16	i	i	ADP	PP	_	17	case	_	_
-17	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	15	nmod	_	_
-18	(	(	PUNCT	PAD	_	17	punct	_	SpaceAfter=No
-19	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
-20	facto	facto	ADJ	UO	Foreign=Yes	17	appos	_	SpaceAfter=No
-21	)	)	PUNCT	PAD	_	17	punct	_	_
-22	till	till	ADP	PP	_	26	case	_	_
-23	24	24	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	SpacesAfter= 
-24	658	658	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	SpacesAfter= 
-25	823	823	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	_
-26	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	obl	_	SpaceAfter=No
-27	,	,	PUNCT	MID	_	26	punct	_	_
-28	varav	varav	ADV	HA	_	26	advmod	_	_
-29	12	12	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	SpacesAfter= 
-30	024	024	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	SpacesAfter= 
-31	845	845	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	_
-32	män	man	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	26	appos	_	_
-33	och	och	CCONJ	KN	_	37	cc	_	_
-34	12	12	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	SpacesAfter= 
-35	633	633	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	SpacesAfter= 
-36	978	978	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	_
-37	kvinnor	kvinna	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	32	conj	_	SpaceAfter=No
-38	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Folkräkningar hade tidigare hållits 2000, 1984, 1970, 1960 och 1948.
-1	Folkräkningar	folkräkning	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj:pass	_	_
-2	hade	ha	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
-3	tidigare	tidig	ADV	AB|KOM	Degree=Cmp	4	advmod	_	_
-4	hållits	hålla	VERB	VB|SUP|SFO	VerbForm=Sup|Voice=Pass	0	root	_	_
-5	2000	2000	NUM	RG|NOM	Case=Nom|NumType=Card	4	obl	_	SpaceAfter=No
-6	,	,	PUNCT	MID	_	5	punct	_	_
-7	1984	1984	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	SpaceAfter=No
-8	,	,	PUNCT	MID	_	9	punct	_	_
-9	1970	1970	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	11	punct	_	_
-11	1960	1960	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	_
-12	och	och	CCONJ	KN	_	13	cc	_	_
-13	1948	1948	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	SpaceAfter=No
-14	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Invånartalet i Ghana uppskattades i juli 2018 av The World Factbook till 28 102 471 invånare, av Förenta nationerna uppskattade befolkningen 1 juli 2017 till 28 834 000, av Internationella valutafonden till 28 278 000 invånare (för år 2017) samt av Världsbanken (juli 2016) till 28 206 728 invånare.
-1	Invånartalet	invånartal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	4	nsubj:pass	_	_
-2	i	i	ADP	PP	_	3	case	_	_
-3	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	1	nmod	_	_
-4	uppskattades	uppskatta	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
-5	i	i	ADP	PP	_	6	case	_	_
-6	juli	juli	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
-7	2018	2018	NUM	RG|NOM	Case=Nom|NumType=Card	4	nummod	_	_
-8	av	av	ADP	PP	_	11	case	_	_
-9	The	the	DET	UO	Definite=Def|Number=Plur|PronType=Art	11	det	_	_
-10	World	World	ADJ	UO	Case=Nom	11	nmod	_	_
-11	Factbook	Factbook	NOUN	UO	_	4	obl:agent	_	_
-12	till	till	ADP	PP	_	16	case	_	_
-13	28	28	NUM	RG|NOM	Case=Nom|NumType=Card	16	nummod	_	SpacesAfter= 
-14	102	102	NUM	RG|NOM	Case=Nom|NumType=Card	16	nummod	_	SpacesAfter= 
-15	471	471	NUM	RG|NOM	Case=Nom|NumType=Card	16	nummod	_	_
-16	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	obl	_	SpaceAfter=No
-17	,	,	PUNCT	MID	_	21	punct	_	_
-18	av	av	ADP	PP	_	19	case	_	_
-19	Förenta	förenad	PROPN	PM|NOM	Case=Nom	21	obl	_	_
-20	nationerna	nation	NOUN	NN|UTR|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Plur	21	obl	_	_
-21	uppskattade	uppskatta	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
-22	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	21	nsubj	_	_
-23	1	1	NUM	RG|NOM	Case=Nom|NumType=Card	24	nummod	_	_
-24	juli	juli	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
-25	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	24	nummod	_	_
-26	till	till	ADP	PP	_	29	case	_	_
-27	28	28	NUM	RG|NOM	Case=Nom|NumType=Card	29	nummod	_	SpacesAfter= 
-28	834	834	NUM	RG|NOM	Case=Nom|NumType=Card	29	nummod	_	SpacesAfter= 
-29	000	000	NUM	RG|NOM	Case=Nom|NumType=Card	21	obl	_	SpaceAfter=No
-30	,	,	PUNCT	MID	_	33	punct	_	_
-31	av	av	ADP	PP	_	33	case	_	_
-32	Internationella	internationell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	33	amod	_	_
-33	valutafonden	valutafond	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	21	conj	_	_
-34	till	till	ADP	PP	_	38	case	_	_
-35	28	28	NUM	RG|NOM	Case=Nom|NumType=Card	38	nummod	_	SpacesAfter= 
-36	278	278	NUM	RG|NOM	Case=Nom|NumType=Card	38	nummod	_	SpacesAfter= 
-37	000	000	NUM	RG|NOM	Case=Nom|NumType=Card	38	nummod	_	_
-38	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	33	nmod	_	_
-39	(	(	PUNCT	PAD	_	38	punct	_	SpaceAfter=No
-40	för	för	ADP	PP	_	42	case	_	_
-41	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	42	nmod	_	_
-42	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	38	obl	_	SpaceAfter=No
-43	)	)	PUNCT	PAD	_	38	punct	_	_
-44	samt	samt	CCONJ	KN	_	46	cc	_	_
-45	av	av	ADP	PP	_	46	case	_	_
-46	Världsbanken	världsbank	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	conj	_	_
-47	(	(	PUNCT	PAD	_	46	punct	_	SpaceAfter=No
-48	juli	juli	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	49	nmod	_	_
-49	2016	2016	NUM	RG|NOM	Case=Nom|NumType=Card	46	appos	_	SpaceAfter=No
-50	)	)	PUNCT	PAD	_	46	punct	_	_
-51	till	till	ADP	PP	_	55	case	_	_
-52	28	28	NUM	RG|NOM	Case=Nom|NumType=Card	55	nummod	_	SpacesAfter= 
-53	206	206	NUM	RG|NOM	Case=Nom|NumType=Card	55	nummod	_	SpacesAfter= 
-54	728	728	NUM	RG|NOM	Case=Nom|NumType=Card	55	nummod	_	_
-55	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	conj	_	SpaceAfter=No
-56	.	.	PUNCT	MAD	_	4	punct	_	_
-
-# sent_id = 2
-# text = Ghana Statistical Service beräknade antalet invånare år 2016 till 28 308 301 utifrån resultatet av folkräkningen 2010.
-1	Ghana	Ghana	ADJ	PM|NOM	Case=Nom	3	amod	_	_
-2	Statistical	statistical	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	3	amod	_	_
-3	Service	Service	NOUN	UO	Case=Nom	4	nsubj	_	_
-4	beräknade	beräkna	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-5	antalet	antal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	nmod	_	_
-6	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	obj	_	_
-7	år	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	8	nmod	_	_
-8	2016	2016	NUM	RG|NOM	Case=Nom|NumType=Card	6	nmod	_	_
-9	till	till	ADP	PP	_	12	case	_	_
-10	28	28	NUM	RG|NOM	Case=Nom|NumType=Card	12	nummod	_	SpacesAfter= 
-11	308	308	NUM	RG|NOM	Case=Nom|NumType=Card	12	nummod	_	SpacesAfter= 
-12	301	301	NUM	RG|NOM	Case=Nom|NumType=Card	4	obl	_	_
-13	utifrån	utifrån	ADP	PP	_	14	case	_	_
-14	resultatet	resultat	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	4	obl	_	_
-15	av	av	ADP	PP	_	16	case	_	_
-16	folkräkningen	folkräkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	14	nmod	_	_
-17	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	16	nummod	_	SpaceAfter=No
-18	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Emigration
-1	Emigration	emigration	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Emigration, först och främst illegal invandring till Nigeria, minskade i många år den totala befolkningstillväxten, men under andra halvan av 1980-talet utvisades uppskattningsvis 1,3 miljoner ghananer från Nigeria och flyttade hem igen.
-1	Emigration	emigration	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	11	nsubj	_	SpaceAfter=No
-2	,	,	PUNCT	MID	_	1	punct	_	_
-3	först	först	ADV	AB	_	7	advmod	_	_
-4	och	och	CCONJ	KN	_	7	cc	_	_
-5	främst	främst	ADV	AB|SUV	Degree=Sup	6	advmod	_	_
-6	illegal	illegal	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	7	amod	_	_
-7	invandring	invandring	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	_
-8	till	till	ADP	PP	_	9	case	_	_
-9	Nigeria	Nigeria	PROPN	PM|NOM	Case=Nom	7	nmod	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	1	punct	_	_
-11	minskade	minska	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-12	i	i	ADP	PP	_	14	case	_	_
-13	många	många	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
-14	år	år	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	11	obl	_	_
-15	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	17	det	_	_
-16	totala	total	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	17	amod	_	_
-17	befolkningstillväxten	befolkningstillväxt	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	obj	_	SpaceAfter=No
-18	,	,	PUNCT	MID	_	25	punct	_	_
-19	men	men	CCONJ	KN	_	25	cc	_	_
-20	under	under	ADP	PP	_	22	case	_	_
-21	andra	två	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	22	amod	_	_
-22	halvan	halva	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	25	obl	_	_
-23	av	av	ADP	PP	_	24	case	_	_
-24	1980-talet	1980-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	22	nmod	_	_
-25	utvisades	utvisa	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	11	conj	_	_
-26	uppskattningsvis	uppskattningsvis	ADV	AB	_	25	advmod	_	_
-27	1,3	1,3	NUM	RG|NOM	Case=Nom|NumType=Card	28	nummod	_	_
-28	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	29	nmod	_	_
-29	ghananer	ghanan	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	25	nsubj:pass	_	_
-30	från	från	ADP	PP	_	31	case	_	_
-31	Nigeria	Nigeria	PROPN	PM|NOM	Case=Nom	29	nmod	_	_
-32	och	och	CCONJ	KN	_	33	cc	_	_
-33	flyttade	flytta	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	25	conj	_	_
-34	hem	hem	ADV	AB	_	33	advmod	_	_
-35	igen	igen	ADV	AB	_	33	advmod	_	SpaceAfter=No
-36	.	.	PUNCT	MAD	_	11	punct	_	_
-
-# sent_id = 2
-# text = År 2003 fanns det omkring 50 000 flyktingar och asylsökande i Ghana, de allra flesta från Liberia.
-1	År	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nmod	_	_
-2	2003	2003	NUM	RG|NOM	Case=Nom|NumType=Card	3	obl	_	_
-3	fanns	finnas	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-4	det	den	PRON	PN|NEU|SIN|DEF|SUB/OBJ	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	3	expl	_	_
-5	omkring	omkring	ADV	AB	_	6	advmod	_	_
-6	50	50	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpacesAfter= 
-7	000	000	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
-8	flyktingar	flykting	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	3	nsubj	_	_
-9	och	och	CCONJ	KN	_	10	cc	_	_
-10	asylsökande	asylsökande	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	8	conj	_	_
-11	i	i	ADP	PP	_	12	case	_	_
-12	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	3	obl	_	SpaceAfter=No
-13	,	,	PUNCT	MID	_	3	punct	_	_
-14	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	16	det	_	_
-15	allra	allra	ADV	AB	_	16	advmod	_	_
-16	flesta	mången	ADJ	JJ|SUV|UTR/NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup|Number=Plur	8	appos	_	_
-17	från	från	ADP	PP	_	18	case	_	_
-18	Liberia	Liberia	PROPN	PM|NOM	Case=Nom	16	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Antalet flyktingar 2017 utgjorde till 6 656 stycken, samtliga från Elfenbenskusten.
-1	Antalet	antal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
-2	flyktingar	flykting	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj	_	_
-3	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
-4	utgjorde	utgöra	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-5	till	till	ADP	PP	_	8	case	_	_
-6	6	6	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpacesAfter= 
-7	656	656	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
-8	stycken	styck	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	obl	_	SpaceAfter=No
-9	,	,	PUNCT	MID	_	8	punct	_	_
-10	samtliga	samtlig	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	8	appos	_	_
-11	från	från	ADP	PP	_	12	case	_	_
-12	Elfenbenskusten	Elfenbenskusten	PROPN	PM|NOM	Case=Nom	10	obl	_	SpaceAfter=No
-13	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Folkgrupper
-1	Folkgrupper	folkgrupp	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
+# text = Minoriteter
+1	Minoriteter	minoritet	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3868,114 +3683,156 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Med afrikanska mått mätt är Ghana tämligen tätbefolkat (113 invånare per km² 2014).
-1	Med	med	ADP	PP	_	4	case	_	_
-2	afrikanska	afrikansk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
-3	mått	mått	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	4	nmod	_	_
-4	mätt	mätt	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	8	obl	_	_
-5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
-6	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	8	nsubj	_	_
-7	tämligen	tämligen	ADV	AB	_	8	advmod	_	_
-8	tätbefolkat	tätbefolka	ADJ	PC|PRF|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
-9	(	(	PUNCT	PAD	_	8	punct	_	SpaceAfter=No
-10	113	113	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	_
-11	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	8	appos	_	_
-12	per	per	ADP	PP	_	13	case	_	_
-13	km²	km²	NOUN	NN|AN	Abbr=Yes	11	nmod	_	_
-14	2014	2014	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	SpaceAfter=No
-15	)	)	PUNCT	PAD	_	8	punct	_	SpaceAfter=No
-16	.	.	PUNCT	MAD	_	8	punct	_	_
+# text = Migration
+1	Migration	migration	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Emigration, först och främst illegal invandring till Nigeria, minskade i många år den totala befolkningstillväxten, men under andra halvan av 1980-talet utvisades uppskattningsvis 1,3 miljoner ghananer från Nigeria och flyttade hem igen.
+1	Emigration	emigration	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	11	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	MID	_	1	punct	_	_
+3	först	först	ADV	AB	_	7	advmod	_	_
+4	och	och	CCONJ	KN	_	7	cc	_	_
+5	främst	främst	ADV	AB|SUV	Degree=Sup	6	advmod	_	_
+6	illegal	illegal	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	7	amod	_	_
+7	invandring	invandring	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	_
+8	till	till	ADP	PP	_	9	case	_	_
+9	Nigeria	Nigeria	PROPN	PM|NOM	Case=Nom	7	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	1	punct	_	_
+11	minskade	minska	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	i	i	ADP	PP	_	14	case	_	_
+13	många	många	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
+14	år	år	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	11	obl	_	_
+15	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	17	det	_	_
+16	totala	total	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	17	amod	_	_
+17	befolkningstillväxten	befolkningstillväxt	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	obj	_	SpaceAfter=No
+18	,	,	PUNCT	MID	_	25	punct	_	_
+19	men	men	CCONJ	KN	_	25	cc	_	_
+20	under	under	ADP	PP	_	22	case	_	_
+21	andra	två	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	22	amod	_	_
+22	halvan	halva	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	25	obl	_	_
+23	av	av	ADP	PP	_	24	case	_	_
+24	1980-talet	1980-tal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	22	nmod	_	_
+25	utvisades	utvisa	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	11	conj	_	_
+26	uppskattningsvis	uppskattningsvis	ADV	AB	_	25	advmod	_	_
+27	1,3	1,3	NUM	RG|NOM	Case=Nom|NumType=Card	28	nummod	_	_
+28	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	29	nmod	_	_
+29	ghananer	ghanan	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	25	nsubj:pass	_	_
+30	från	från	ADP	PP	_	31	case	_	_
+31	Nigeria	Nigeria	PROPN	PM|NOM	Case=Nom	29	nmod	_	_
+32	och	och	CCONJ	KN	_	33	cc	_	_
+33	flyttade	flytta	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	25	conj	_	_
+34	hem	hem	ADV	AB	_	33	advmod	_	_
+35	igen	igen	ADV	AB	_	33	advmod	_	SpaceAfter=No
+36	.	.	PUNCT	MAD	_	11	punct	_	_
 
 # sent_id = 2
-# text = Befolkningstätheten är störst i de centrala kustområdena. 34 procent av befolkningen bor i städer.
-1	Befolkningstätheten	befolkningstäthet	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nsubj	_	_
-2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
-3	störst	stor	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|IND|NOM	Case=Nom|Definite=Ind|Degree=Sup	0	root	_	_
-4	i	i	ADP	PP	_	7	case	_	_
-5	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
-6	centrala	central	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
-7	kustområdena	kustområde	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	3	obl	_	SpaceAfter=No
-8	.	.	PUNCT	MAD	_	3	punct	_	_
-9	34	34	NUM	RG|NOM	Case=Nom|NumType=Card	10	nummod	_	_
-10	procent	procent	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nsubj	_	_
-11	av	av	ADP	PP	_	12	case	_	_
-12	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	nmod	_	_
-13	bor	bo	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
-14	i	i	ADP	PP	_	15	case	_	_
-15	städer	stad	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	obl	_	SpaceAfter=No
-16	.	.	PUNCT	MAD	_	3	punct	_	_
+# text = År 2003 fanns det omkring 50 000 flyktingar och asylsökande i Ghana, de allra flesta från Liberia.
+1	År	år	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nmod	_	_
+2	2003	2003	NUM	RG|NOM	Case=Nom|NumType=Card	3	obl	_	_
+3	fanns	finnas	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	det	den	PRON	PN|NEU|SIN|DEF|SUB/OBJ	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	3	expl	_	_
+5	omkring	omkring	ADV	AB	_	6	advmod	_	_
+6	50	50	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpacesAfter= 
+7	000	000	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
+8	flyktingar	flykting	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	3	nsubj	_	_
+9	och	och	CCONJ	KN	_	10	cc	_	_
+10	asylsökande	asylsökande	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	8	conj	_	_
+11	i	i	ADP	PP	_	12	case	_	_
+12	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	3	obl	_	SpaceAfter=No
+13	,	,	PUNCT	MID	_	3	punct	_	_
+14	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	16	det	_	_
+15	allra	allra	ADV	AB	_	16	advmod	_	_
+16	flesta	mången	ADJ	JJ|SUV|UTR/NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup|Number=Plur	8	appos	_	_
+17	från	från	ADP	PP	_	18	case	_	_
+18	Liberia	Liberia	PROPN	PM|NOM	Case=Nom	16	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Antalet flyktingar 2017 utgjorde till 6 656 stycken, samtliga från Elfenbenskusten.
+1	Antalet	antal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
+2	flyktingar	flykting	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj	_	_
+3	2017	2017	NUM	RG|NOM	Case=Nom|NumType=Card	2	nummod	_	_
+4	utgjorde	utgöra	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	till	till	ADP	PP	_	8	case	_	_
+6	6	6	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	SpacesAfter= 
+7	656	656	NUM	RG|NOM	Case=Nom|NumType=Card	8	nummod	_	_
+8	stycken	styck	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	MID	_	8	punct	_	_
+10	samtliga	samtlig	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	8	appos	_	_
+11	från	från	ADP	PP	_	12	case	_	_
+12	Elfenbenskusten	Elfenbenskusten	PROPN	PM|NOM	Case=Nom	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Språk
+1	Språk	språk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Officiellt språk i landet är engelska.
+1	Officiellt	officiell	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	språk	språk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	6	nsubj	_	_
+3	i	i	ADP	PP	_	4	case	_	_
+4	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
+5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	engelska	engelsk	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	MAD	_	6	punct	_	_
+
+# sent_id = 2
+# text = De mest utbredda språken tillhör gur- och kwaspråken i niger-kongofamiljen.
+1	De	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	4	det	_	_
+2	mest	mycket	ADV	AB|SUV	Degree=Sup	3	advmod	_	_
+3	utbredda	utbredd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	4	amod	_	_
+4	språken	språk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	5	nsubj	_	_
+5	tillhör	tillhöra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	gur-	gur	NOUN	NN|UTR|-|-|SMS	Gender=Com	5	obj	_	_
+7	och	och	CCONJ	KN	_	8	cc	_	_
+8	kwaspråken	kwaspråk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	6	conj	_	_
+9	i	i	ADP	PP	_	10	case	_	_
+10	niger-kongofamiljen	niger-kongofamilj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	obl	_	SpaceAfter=No
+11	.	.	PUNCT	MAD	_	5	punct	_	_
 
 # sent_id = 3
-# text = De folkrikaste storstadsområdena är runt huvudstaden Accra, med över 4 miljoner invånare, och Kumasi, med över 2,5 miljoner invånare.
-1	De	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	3	det	_	_
-2	folkrikaste	folkrik	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	3	amod	_	_
-3	storstadsområdena	storstadsområde	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	7	nsubj	_	_
-4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
-5	runt	runt	ADP	PP	_	7	case	_	_
-6	huvudstaden	huvudstad	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
-7	Accra	Accra	PROPN	PM|NOM	Case=Nom	0	root	_	SpaceAfter=No
-8	,	,	PUNCT	MID	_	7	punct	_	_
-9	med	med	ADP	PP	_	13	case	_	_
-10	över	över	ADV	AB	_	11	advmod	_	_
-11	4	4	NUM	RG|NOM	Case=Nom|NumType=Card	12	nummod	_	_
-12	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
-13	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	acl	_	SpaceAfter=No
-14	,	,	PUNCT	MID	_	16	punct	_	_
-15	och	och	CCONJ	KN	_	16	cc	_	_
-16	Kumasi	Kumasi	PROPN	PM|NOM	Case=Nom	7	conj	_	SpaceAfter=No
-17	,	,	PUNCT	MID	_	16	punct	_	_
-18	med	med	ADP	PP	_	22	case	_	_
-19	över	över	ADV	AB	_	20	advmod	_	_
-20	2,5	2,5	NUM	RG|NOM	Case=Nom|NumType=Card	21	nummod	_	_
-21	miljoner	miljon	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	22	nmod	_	_
-22	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	16	orphan	_	SpaceAfter=No
-23	.	.	PUNCT	MAD	_	7	punct	_	_
+# text = Av gurspråk talas mossi i norr.
+1	Av	av	ADP	PP	_	2	case	_	_
+2	gurspråk	gurspråk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	_
+3	talas	tala	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	mossi	mossi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj:pass	_	_
+5	i	i	ADP	PP	_	3	advmod	_	_
+6	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	fixed	_	SpaceAfter=No
+7	.	.	PUNCT	MAD	_	3	punct	_	_
 
 # sent_id = 4
-# text = Andra stora städer är Tamale, Tema (en förort till Accra) och Sekondi-Takoradi.
-1	Andra	annan	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
-2	stora	stor	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
-3	städer	stad	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	_
-4	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
-5	Tamale	Tamale	PROPN	PM|NOM	Case=Nom	3	nsubj	_	SpaceAfter=No
+# text = I söder dominerar kwaspråken akan, ewe och ga-adangme.
+1	I	i	ADP	PP	_	3	advmod	_	_
+2	söder	söder	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	fixed	_	_
+3	dominerar	dominera	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kwaspråken	kwaspråk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	5	nmod	_	_
+5	akan	akan	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
 6	,	,	PUNCT	MID	_	7	punct	_	_
-7	Tema	Tema	PROPN	PM|NOM	Case=Nom	5	conj	_	_
-8	(	(	PUNCT	PAD	_	7	punct	_	SpaceAfter=No
-9	en	en	DET	DT|UTR|SIN|IND	Definite=Ind|Gender=Com|Number=Sing|PronType=Art	10	det	_	_
-10	förort	förort	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	appos	_	_
-11	till	till	ADP	PP	_	12	case	_	_
-12	Accra	Accra	PROPN	PM|NOM	Case=Nom	10	nmod	_	SpaceAfter=No
-13	)	)	PUNCT	PAD	_	5	punct	_	_
-14	och	och	CCONJ	KN	_	15	cc	_	_
-15	Sekondi-Takoradi	Sekondi-takoradi	PROPN	PM|NOM	Case=Nom	5	conj	_	SpaceAfter=No
-16	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Befolkningen i siffror
-1	Befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	0	root	_	_
-2	i	i	ADP	PP	_	3	case	_	_
-3	siffror	siffra	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Siffror tagna från CIAs The World Factbook.
-1	Siffror	siffra	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	nsubj	_	_
-2	tagna	tagen	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
-3	från	från	ADP	PP	_	7	case	_	_
-4	CIAs	Cias	PROPN	PM|GEN	Case=Gen	7	nmod:poss	_	_
-5	The	the	DET	UO	_	7	det	_	_
-6	World	world	ADJ	UO	Foreign=Yes	7	compound	_	_
-7	Factbook	Factbook	NOUN	UO	_	2	obl	_	SpaceAfter=No
-8	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+7	ewe	ewe	PROPN	PM|NOM	Case=Nom	5	conj	_	_
+8	och	och	CCONJ	KN	_	9	cc	_	_
+9	ga-adangme	ga-adangme	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
+10	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -3985,15 +3842,6 @@
 # sent_id = 1
 # text = Religion
 1	Religion	religion	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Kristna
-1	Kristna	kristen	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4237,15 +4085,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Muslimer
-1	Muslimer	muslim	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = Omkring 15 procent av invånarna är muslimer.
 1	Omkring	omkring	ADV	AB	_	2	advmod	_	_
 2	15	15	NUM	RG|NOM	Case=Nom|NumType=Card	3	nummod	_	_
@@ -4257,7 +4096,7 @@
 8	.	.	PUNCT	MAD	_	7	punct	_	_
 
 # sent_id = 2
-# text = Religionen är särskilt stark i norr och i städerna, där det finns många muslimska immigranter.
+# text = Religionen är särskilt stark i norr och i städerna, där det finns många muslimska immigranter.[källa behövs]
 1	Religionen	religion	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nsubj	_	_
 2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
 3	särskilt	särskilt	ADV	AB	_	4	advmod	_	_
@@ -4273,18 +4112,10 @@
 13	finns	finnas	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
 14	många	många	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	16	amod	_	_
 15	muslimska	muslimsk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	16	amod	_	_
-16	immigranter	immigrant	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	13	nsubj	_	SpaceAfter=No
-17	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Inhemska religioner
-1	Inhemska	inhemsk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	religioner	religion	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
+16	immigranter.[	immigranter.[	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	13	nsubj	_	SpaceAfter=No
+17	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	13	xcomp	_	SpacesAfter= 
+18	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	13	xcomp	_	SpaceAfter=No
+19	]	]	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4357,15 +4188,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Övriga
-1	Övriga	övrig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
 # text = Det finns även grupper av judar, buddhister och bahá'íer i Ghana.
 1	Det	den	PRON	PN|NEU|SIN|DEF|SUB/OBJ	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	_
 2	finns	finnas	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -4383,7 +4205,7 @@
 14	.	.	PUNCT	MAD	_	2	punct	_	_
 
 # sent_id = 2
-# text = Jesu Kristi Kyrka av Sista Dagars Heliga (Mormonerna) uppförde ett tempel i Accra 2004 efter att medlemsantalet blivit stort.
+# text = Jesu Kristi Kyrka av Sista Dagars Heliga (Mormonerna) uppförde ett tempel i Accra 2004 efter att medlemsantalet blivit stort.[källa behövs]
 1	Jesu	Jesu	PROPN	PM|NOM	Case=Nom	3	nmod:poss	_	_
 2	Kristi	Kristi	PROPN	PM|GEN	Case=Gen	1	flat:name	_	_
 3	Kyrka	kyrka	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	11	nsubj	_	_
@@ -4401,11 +4223,13 @@
 15	Accra	Accra	PROPN	PM|NOM	Case=Nom	11	obl	_	_
 16	2004	2004	NUM	RG|NOM	Case=Nom|NumType=Card	11	nummod	_	_
 17	efter	efter	ADP	PP	_	20	mark	_	_
-18	att	att	SCONJ	SN	_	20	mark	_	_
+18	att	att	SCONJ	SN	_	17	fixed	_	_
 19	medlemsantalet	medlemsantal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	20	nsubj	_	_
-20	blivit	bli	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	11	advcl	_	_
-21	stort	stor	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	20	xcomp	_	SpaceAfter=No
-22	.	.	PUNCT	MAD	_	11	punct	_	SpacesAfter=\n
+20	blivit	bli	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	23	advcl	_	_
+21	stort.[	stort.[	ADV	JJ|POS|UTR|SIN|IND|NOM	Degree=Pos	20	advmod	_	SpaceAfter=No
+22	källa	källa	AUX	VB|INF|AKT	VerbForm=Inf|Voice=Act	23	xcomp	_	SpacesAfter= 
+23	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	11	advcl	_	SpaceAfter=No
+24	]	]	PUNCT	MAD	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4413,8 +4237,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Språk
-1	Språk	språk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+# text = Sociala förhållanden
+1	Sociala	social	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	förhållanden	förhållande	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4422,51 +4247,133 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Officiellt språk i landet är engelska.
-1	Officiellt	officiell	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
-2	språk	språk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	6	nsubj	_	_
-3	i	i	ADP	PP	_	4	case	_	_
-4	landet	land	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
-5	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-6	engelska	engelsk	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	6	punct	_	_
+# text = På landsbygden är den utvidgade familjen viktig medan kärnfamiljen är viktigare i urbana miljöer.
+1	På	på	ADP	PP	_	2	case	_	_
+2	landsbygden	landsbygd	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	obl	_	_
+3	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+4	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	6	det	_	_
+5	utvidgade	utvidga	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	6	amod	_	_
+6	familjen	familj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nsubj	_	_
+7	viktig	viktig	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	0	root	_	_
+8	medan	medan	SCONJ	SN	_	11	mark	_	_
+9	kärnfamiljen	kärnfamilj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	nsubj	_	_
+10	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	viktigare	viktig	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	7	advcl	_	_
+12	i	i	ADP	PP	_	14	case	_	_
+13	urbana	urban	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
+14	miljöer	miljö	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	obl	_	SpaceAfter=No
+15	.	.	PUNCT	MAD	_	7	punct	_	_
 
 # sent_id = 2
-# text = De mest utbredda språken tillhör gur- och kwaspråken i niger-kongofamiljen.
-1	De	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	4	det	_	_
-2	mest	mycket	ADV	AB|SUV	Degree=Sup	3	advmod	_	_
-3	utbredda	utbredd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	4	amod	_	_
-4	språken	språk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	5	nsubj	_	_
-5	tillhör	tillhöra	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-6	gur-	gur	NOUN	NN|UTR|-|-|SMS	Gender=Com	5	obj	_	_
-7	och	och	CCONJ	KN	_	8	cc	_	_
-8	kwaspråken	kwaspråk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	6	conj	_	_
-9	i	i	ADP	PP	_	10	case	_	_
-10	niger-kongofamiljen	niger-kongofamilj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	obl	_	SpaceAfter=No
-11	.	.	PUNCT	MAD	_	5	punct	_	_
+# text = Samhället präglas av traditionella sociala värderingar.
+1	Samhället	samhälle	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nsubj:pass	_	_
+2	präglas	prägla	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	av	av	ADP	PP	_	6	case	_	_
+4	traditionella	traditionell	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+5	sociala	social	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	värderingar	värdering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obl:agent	_	SpaceAfter=No
+7	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
 
-# sent_id = 3
-# text = Av gurspråk talas mossi i norr.
-1	Av	av	ADP	PP	_	2	case	_	_
-2	gurspråk	gurspråk	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	_
-3	talas	tala	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-4	mossi	mossi	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj:pass	_	_
-5	i	i	ADP	PP	_	3	advmod	_	_
-6	norr	norr	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	5	fixed	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	3	punct	_	_
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hälsa
+1	Hälsa	hälsa	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
-# sent_id = 4
-# text = I söder dominerar kwaspråken akan, ewe och ga-adangme.
-1	I	i	ADP	PP	_	3	advmod	_	_
-2	söder	söder	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	fixed	_	_
-3	dominerar	dominera	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	kwaspråken	kwaspråk	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	5	nmod	_	_
-5	akan	akan	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-6	,	,	PUNCT	MID	_	7	punct	_	_
-7	ewe	ewe	PROPN	PM|NOM	Case=Nom	5	conj	_	_
-8	och	och	CCONJ	KN	_	9	cc	_	_
-9	ga-adangme	ga-adangme	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
-10	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Övriga befolkningsdata
+1	Övriga	övrig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	befolkningsdata	befolkningsdata	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Den senaste folkräkningen hölls den 26 september 2010 och då uppgick den faktiskt befintliga befolkningen i Ghana (de facto) till 24 658 823 invånare, varav 12 024 845 män och 12 633 978 kvinnor.
+1	Den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	3	det	_	_
+2	senaste	sen	ADJ	JJ|SUV|UTR/NEU|SIN/PLU|DEF|NOM	Case=Nom|Definite=Def|Degree=Sup	3	amod	_	_
+3	folkräkningen	folkräkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nsubj:pass	_	_
+4	hölls	hölla	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	7	det	_	_
+6	26	26	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	_
+7	september	september	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
+8	2010	2010	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	_
+9	och	och	CCONJ	KN	_	11	cc	_	_
+10	då	då	ADV	AB	_	11	advmod	_	_
+11	uppgick	uppgå	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+12	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	15	det	_	_
+13	faktiskt	faktisk	ADV	AB|POS	Degree=Pos	14	advmod	_	_
+14	befintliga	befintlig	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	15	amod	_	_
+15	befolkningen	befolkning	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	nsubj	_	_
+16	i	i	ADP	PP	_	17	case	_	_
+17	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	15	nmod	_	_
+18	(	(	PUNCT	PAD	_	17	punct	_	SpaceAfter=No
+19	de	en	DET	DT|UTR/NEU|PLU|DEF	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
+20	facto	facto	ADJ	UO	Foreign=Yes	17	appos	_	SpaceAfter=No
+21	)	)	PUNCT	PAD	_	17	punct	_	_
+22	till	till	ADP	PP	_	26	case	_	_
+23	24	24	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	SpacesAfter= 
+24	658	658	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	SpacesAfter= 
+25	823	823	NUM	RG|NOM	Case=Nom|NumType=Card	26	nummod	_	_
+26	invånare	invånare	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	obl	_	SpaceAfter=No
+27	,	,	PUNCT	MID	_	26	punct	_	_
+28	varav	varav	ADV	HA	_	26	advmod	_	_
+29	12	12	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	SpacesAfter= 
+30	024	024	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	SpacesAfter= 
+31	845	845	NUM	RG|NOM	Case=Nom|NumType=Card	32	nummod	_	_
+32	män	man	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	26	appos	_	_
+33	och	och	CCONJ	KN	_	37	cc	_	_
+34	12	12	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	SpacesAfter= 
+35	633	633	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	SpacesAfter= 
+36	978	978	NUM	RG|NOM	Case=Nom|NumType=Card	37	nummod	_	_
+37	kvinnor	kvinna	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	32	conj	_	SpaceAfter=No
+38	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Folkräkningar hade tidigare hållits 2000, 1984, 1970, 1960 och 1948.
+1	Folkräkningar	folkräkning	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj:pass	_	_
+2	hade	ha	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tidigare	tidig	ADV	AB|KOM	Degree=Cmp	4	advmod	_	_
+4	hållits	hålla	VERB	VB|SUP|SFO	VerbForm=Sup|Voice=Pass	0	root	_	_
+5	2000	2000	NUM	RG|NOM	Case=Nom|NumType=Card	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	MID	_	5	punct	_	_
+7	1984	1984	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	MID	_	9	punct	_	_
+9	1970	1970	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	11	punct	_	_
+11	1960	1960	NUM	RG|NOM	Case=Nom|NumType=Card	5	conj	_	_
+12	och	och	CCONJ	KN	_	13	cc	_	_
+13	1948	1948	NUM	RG|NOM	Case=Nom|NumType=Card	5	nummod	_	SpaceAfter=No
+14	.	.	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Invånartalet i Ghana uppskattades till:
+1	Invånartalet	invånartal	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	4	nsubj:pass	_	_
+2	i	i	ADP	PP	_	3	case	_	_
+3	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	1	nmod	_	_
+4	uppskattades	uppskatta	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	till	till	ADP	PP	_	4	case	_	SpaceAfter=No
+6	:	:	PUNCT	MAD	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4520,11 +4427,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Lokala sedvänjor och traditioner
-1	Lokala	lokal	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
-2	sedvänjor	sedvänja	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	_
-3	och	och	CCONJ	KN	_	4	cc	_	_
-4	traditioner	tradition	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	conj	_	SpaceAfter=No
+# text = Konstarter
+1	Konstarter	konstart	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4532,32 +4436,58 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = På landsbygden är den utvidgade familjen viktig medan kärnfamiljen är viktigare i urbana miljöer.
-1	På	på	ADP	PP	_	2	case	_	_
-2	landsbygden	landsbygd	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	obl	_	_
-3	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
-4	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	6	det	_	_
-5	utvidgade	utvidga	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	6	amod	_	_
-6	familjen	familj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nsubj	_	_
-7	viktig	viktig	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	0	root	_	_
-8	medan	medan	SCONJ	SN	_	11	mark	_	_
-9	kärnfamiljen	kärnfamilj	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	nsubj	_	_
-10	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
-11	viktigare	viktig	ADJ	JJ|KOM|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Degree=Cmp	7	advcl	_	_
-12	i	i	ADP	PP	_	14	case	_	_
-13	urbana	urban	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
-14	miljöer	miljö	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	obl	_	SpaceAfter=No
-15	.	.	PUNCT	MAD	_	7	punct	_	_
+# text = Musik och dans
+1	Musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	dans	dans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Musiken framhävs ofta av både musik och dans.
+1	Musiken	musik	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj:pass	_	_
+2	framhävs	framhäva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	ofta	ofta	ADV	AB|POS	Degree=Pos	2	advmod	_	_
+4	av	av	ADP	PP	_	6	case	_	_
+5	både	både	CCONJ	KN	_	6	cc	_	_
+6	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obl:agent	_	_
+7	och	och	CCONJ	KN	_	8	cc	_	_
+8	dans	dans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	MAD	_	2	punct	_	_
 
 # sent_id = 2
-# text = Samhället präglas av traditionella sociala värderingar.
-1	Samhället	samhälle	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nsubj:pass	_	_
-2	präglas	prägla	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-3	av	av	ADP	PP	_	6	case	_	_
-4	traditionella	traditionell	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
-5	sociala	social	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
-6	värderingar	värdering	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obl:agent	_	SpaceAfter=No
-7	.	.	PUNCT	MAD	_	2	punct	_	SpacesAfter=\n
+# text = Modern musik har utvecklat musikstilen highlife, som har tydliga västerländska influsenser.
+1	Modern	modern	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
+2	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
+3	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	utvecklat	utveckla	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	0	root	_	_
+5	musikstilen	musikstil	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
+6	highlife	highlife	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	MID	_	6	punct	_	_
+8	som	som	PRON	HP|-|-|-	PronType=Rel	9	nsubj	_	_
+9	har	ha	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	tydliga	tydlig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
+11	västerländska	västerländsk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
+12	influsenser	influsens	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	MAD	_	4	punct	_	_
+
+# sent_id = 3
+# text = Parallellt har dock intresset för den traditionella musiken vuxit sig stark.
+1	Parallellt	parallell	ADV	AB|POS	Degree=Pos	9	advmod	_	_
+2	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+3	dock	dock	ADV	AB	_	9	advmod	_	_
+4	intresset	intresse	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	9	nsubj	_	_
+5	för	för	ADP	PP	_	8	case	_	_
+6	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	8	det	_	_
+7	traditionella	traditionell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	8	amod	_	_
+8	musiken	musik	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nmod	_	_
+9	vuxit	växa	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	0	root	_	_
+10	sig	sig	PRON	PN|UTR/NEU|SIN/PLU|DEF|OBJ	Case=Acc|Definite=Def|PronType=Prs	9	obj	_	_
+11	stark	stark	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	9	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	MAD	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4565,8 +4495,64 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Mat
-1	Mat	mat	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+# text = Bildkonst
+1	Bildkonst	bildkonst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ghanas kultur inkluderar dans, musik, keramik, guld- och silversmide samt textiler.
+1	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	2	nmod:poss	_	_
+2	kultur	kultur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj	_	_
+3	inkluderar	inkludera	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	dans	dans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	MID	_	6	punct	_	_
+6	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	MID	_	8	punct	_	_
+8	keramik	keramik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	conj	_	SpaceAfter=No
+9	,	,	PUNCT	MID	_	10	punct	_	_
+10	guld-	guld	NOUN	NN|UTR|-|-|SMS	Gender=Com	4	conj	_	_
+11	och	och	CCONJ	KN	_	12	cc	_	_
+12	silversmide	silversmide	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	conj	_	_
+13	samt	samt	CCONJ	KN	_	14	cc	_	_
+14	textiler	textil	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	conj	_	SpaceAfter=No
+15	.	.	PUNCT	MAD	_	3	punct	_	_
+
+# sent_id = 2
+# text = Ghana är kända för sitt handvävda, rikt färgade, kente-textil.
+1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	3	nsubj	_	_
+2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kända	känd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
+4	för	för	ADP	PP	_	11	case	_	_
+5	sitt	sig	PRON	PS|NEU|SIN|DEF	Definite=Def|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+6	handvävda	handvävd	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	11	amod	_	SpaceAfter=No
+7	,	,	PUNCT	MID	_	9	punct	_	_
+8	rikt	rik	ADV	AB|POS	Degree=Pos	9	advmod	_	_
+9	färgade	färga	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	MID	_	9	punct	_	_
+11	kente-textil	kente-textil	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	SpaceAfter=No
+12	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Traditioner
+1	Traditioner	tradition	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = swedish-talbanken-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Matkultur
+1	Matkultur	matkultur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4655,8 +4641,10 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Konst
-1	Konst	konst	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+# text = Kläder och mode
+1	Kläder	kläder	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	0	root	_	_
+2	och	och	CCONJ	KN	_	3	cc	_	_
+3	mode	mode	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	1	conj	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830
@@ -4664,39 +4652,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ghanas kultur inkluderar dans, musik, keramik, guld- och silversmide samt textiler.
-1	Ghanas	Ghana	PROPN	PM|GEN	Case=Gen	2	nmod:poss	_	_
-2	kultur	kultur	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	nsubj	_	_
-3	inkluderar	inkludera	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	dans	dans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	obj	_	SpaceAfter=No
-5	,	,	PUNCT	MID	_	6	punct	_	_
-6	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	conj	_	SpaceAfter=No
-7	,	,	PUNCT	MID	_	8	punct	_	_
-8	keramik	keramik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	conj	_	SpaceAfter=No
-9	,	,	PUNCT	MID	_	10	punct	_	_
-10	guld-	guld	NOUN	NN|UTR|-|-|SMS	Gender=Com	4	conj	_	_
-11	och	och	CCONJ	KN	_	12	cc	_	_
-12	silversmide	silversmide	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	conj	_	_
-13	samt	samt	CCONJ	KN	_	14	cc	_	_
-14	textiler	textil	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	conj	_	SpaceAfter=No
-15	.	.	PUNCT	MAD	_	3	punct	_	_
-
-# sent_id = 2
-# text = Ghana är kända för sitt handvävda, rikt färgade, kente-textil.
-1	Ghana	Ghana	PROPN	PM|NOM	Case=Nom	3	nsubj	_	_
-2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
-3	kända	känd	ADJ	PC|PRF|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_
-4	för	för	ADP	PP	_	11	case	_	_
-5	sitt	sig	PRON	PS|NEU|SIN|DEF	Definite=Def|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
-6	handvävda	handvävd	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	11	amod	_	SpaceAfter=No
-7	,	,	PUNCT	MID	_	9	punct	_	_
-8	rikt	rik	ADV	AB|POS	Degree=Pos	9	advmod	_	_
-9	färgade	färga	ADJ	PC|PRF|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	SpaceAfter=No
-10	,	,	PUNCT	MID	_	9	punct	_	_
-11	kente-textil	kente-textil	NOUN	NN|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	SpaceAfter=No
-12	.	.	PUNCT	MAD	_	3	punct	_	_
-
-# sent_id = 3
 # text = Kente-kläder är traditionella kläder som bärs vid högtidliga tillfällen.
 1	Kente-kläder	kente-kläder	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj	_	_
 2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
@@ -4709,7 +4664,7 @@
 9	tillfällen	tillfälle	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	MAD	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 2
 # text = De är politiskt laddade, men har blivit trendiga även i väst. 2018 sågs kente på Louis Vuittons visning i Paris.
 1	De	de	PRON	PN|UTR/NEU|PLU|DEF|SUB	Case=Nom|Definite=Def|Number=Plur|PronType=Prs	4	nsubj	_	_
 2	är	vara	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
@@ -4741,56 +4696,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Musiken framhävs ofta av både musik och dans.
-1	Musiken	musik	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	2	nsubj:pass	_	_
-2	framhävs	framhäva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-3	ofta	ofta	ADV	AB|POS	Degree=Pos	2	advmod	_	_
-4	av	av	ADP	PP	_	6	case	_	_
-5	både	både	CCONJ	KN	_	6	cc	_	_
-6	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obl:agent	_	_
-7	och	och	CCONJ	KN	_	8	cc	_	_
-8	dans	dans	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	conj	_	SpaceAfter=No
-9	.	.	PUNCT	MAD	_	2	punct	_	_
-
-# sent_id = 2
-# text = Modern musik har utvecklat musikstilen highlife, som har tydliga västerländska influsenser.
-1	Modern	modern	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
-2	musik	musik	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
-3	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
-4	utvecklat	utveckla	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	0	root	_	_
-5	musikstilen	musikstil	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
-6	highlife	highlife	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obj	_	SpaceAfter=No
-7	,	,	PUNCT	MID	_	6	punct	_	_
-8	som	som	PRON	HP|-|-|-	PronType=Rel	9	nsubj	_	_
-9	har	ha	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
-10	tydliga	tydlig	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
-11	västerländska	västerländsk	ADJ	JJ|POS|UTR/NEU|PLU|IND/DEF|NOM	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
-12	influsenser	influsens	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	9	obj	_	SpaceAfter=No
-13	.	.	PUNCT	MAD	_	4	punct	_	_
-
-# sent_id = 3
-# text = Parallellt har dock intresset för den traditionella musiken vuxit sig stark.
-1	Parallellt	parallell	ADV	AB|POS	Degree=Pos	9	advmod	_	_
-2	har	ha	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
-3	dock	dock	ADV	AB	_	9	advmod	_	_
-4	intresset	intresse	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	9	nsubj	_	_
-5	för	för	ADP	PP	_	8	case	_	_
-6	den	en	DET	DT|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|PronType=Art	8	det	_	_
-7	traditionella	traditionell	ADJ	JJ|POS|UTR/NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Degree=Pos|Number=Sing	8	amod	_	_
-8	musiken	musik	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nmod	_	_
-9	vuxit	växa	VERB	VB|SUP|AKT	VerbForm=Sup|Voice=Act	0	root	_	_
-10	sig	sig	PRON	PN|UTR/NEU|SIN/PLU|DEF|OBJ	Case=Acc|Definite=Def|PronType=Prs	9	obj	_	_
-11	stark	stark	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	9	xcomp	_	SpaceAfter=No
-12	.	.	PUNCT	MAD	_	9	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = swedish-talbanken-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Sport
-1	Sport	sport	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+# text = Idrott
+1	Idrott	idrott	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830

@@ -8258,7 +8258,7 @@
 26	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
 # sent_id = 2
-# text = V aktivní službě je 1 426 026 lidí.
+# text = V aktivní službě je 1 426 026 lidí.[kdy?]
 1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
 2	aktivní	aktivní	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_
 3	službě	služba	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	4	obl	_	_
@@ -8267,7 +8267,11 @@
 6	426	426	NUM	C=-------------	NumForm=Digit|NumType=Card	8	nummod:gov	_	_
 7	026	026	NUM	C=-------------	NumForm=Digit|NumType=Card	8	nummod:gov	_	_
 8	lidí	člověk	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	4	nsubj	_	SpaceAfter=No
-9	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+9	.	.	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
+10	[	[	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
+11	kdy	kdy	ADV	Db-------------	PronType=Int,Rel	4	dep	_	SpaceAfter=No
+12	?	?	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
+13	]	]	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 3
 # text = Mezi výzbroj americké armády patří např. letadlové lodě, jaderné ponorky, „neviditelná“ letadla či tanky Abrams.
@@ -8373,10 +8377,17 @@
 10	armádu	armáda	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	4	obj	_	_
 11	na	na	ADP	RR--6----------	AdpType=Prep|Case=Loc	12	case	_	_
 12	světě	svět	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	10	nmod	_	SpaceAfter=No
-13	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+13	.	.	PUNCT	Z:-------------	_	4	punct	_	SpaceAfter=No
 
 # sent_id = 4
-# text = Tento fakt je způsoben vysokými výdaji na obranu, zhruba 3/4 toho, co zbytek světa (pro rok 2011 – 698 mld. dolarů), a rozvojem moderních technologií, jakými jsou například technologie stealth, mikrovlnné, sonické a ULF (Ultra-Low Frequency) zbraně nebo munice z ochuzeného uranu.
+# text = [zdroj?]
+1	[	[	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+2	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+4	]	]	PUNCT	Z:-------------	_	2	punct	_	_
+
+# sent_id = 5
+# text = Tento fakt je způsoben vysokými výdaji na obranu, zhruba 3/4 toho, co zbytek světa[zdroj?] (pro rok 2011 – 698 mld. dolarů), a rozvojem moderních technologií, jakými jsou například technologie stealth, mikrovlnné, sonické a ULF (Ultra-Low Frequency) zbraně nebo munice z ochuzeného uranu.
 1	Tento	tento	DET	PDYS1----------	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	fakt	fakt	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	4	nsubj	_	_
 3	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
@@ -8394,49 +8405,53 @@
 15	,	,	PUNCT	Z:-------------	_	14	punct	_	_
 16	co	co	PRON	PQ--4----------	Animacy=Inan|Case=Acc|PronType=Int,Rel	14	dep	_	_
 17	zbytek	zbytek	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	14	dep	_	_
-18	světa	svět	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	17	nmod	_	_
-19	(	(	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-20	pro	pro	ADP	RR--4----------	AdpType=Prep|Case=Acc	21	case	_	_
-21	rok	rok	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	17	nmod	_	_
-22	2011	2011	NUM	C=-------------	NumForm=Digit|NumType=Card	21	nummod	_	_
-23	–	–	SYM	Z:-------------	Abbr=Yes	24	nmod	_	_
-24	698	698	NUM	C=-------------	NumForm=Digit|NumType=Card	17	dep	_	_
-25	mld	miliarda	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	24	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	Z:-------------	_	25	punct	_	_
-27	dolarů	dolar	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	25	nmod	_	SpaceAfter=No
-28	)	)	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
-29	,	,	PUNCT	Z:-------------	_	31	punct	_	_
-30	a	a	CCONJ	J^-------------	_	31	cc	_	SpacesAfter= 
-31	rozvojem	rozvoj	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	6	conj	_	_
-32	moderních	moderní	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	33	amod	_	_
-33	technologií	technologie	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	31	nmod	_	SpaceAfter=No
-34	,	,	PUNCT	Z:-------------	_	35	punct	_	_
-35	jakými	jaký	DET	P4XP7----------	Case=Ins|Number=Plur|PronType=Int,Rel	33	acl:relcl	_	_
-36	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	35	cop	_	_
-37	například	například	ADV	Db-------------	_	38	advmod:emph	_	_
-38	technologie	technologie	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	35	nsubj	_	_
-39	stealth	stealth	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	38	nmod	_	SpaceAfter=No
-40	,	,	PUNCT	Z:-------------	_	47	punct	_	_
-41	mikrovlnné	mikrovlnný	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	52	amod	_	SpaceAfter=No
-42	,	,	PUNCT	Z:-------------	_	43	punct	_	_
-43	sonické	sonický	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	41	conj	_	_
-44	a	a	CCONJ	J^-------------	_	45	cc	_	_
-45	ULF	ULF	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	39	conj	_	_
-46	(	(	PUNCT	Z:-------------	_	47	punct	_	SpaceAfter=No
-47	Ultra	ultra	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	52	amod	_	SpaceAfter=No
-48	-	-	PUNCT	Z:-------------	_	47	punct	_	SpaceAfter=No
-49	Low	low	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	47	flat:foreign	_	_
-50	Frequency	frequency	NOUN	AAXXX----1A----	Foreign=Yes|Gender=Fem|Polarity=Pos	47	flat:foreign	_	SpaceAfter=No
-51	)	)	PUNCT	Z:-------------	_	47	punct	_	_
-52	zbraně	zbraň	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	38	conj	_	_
-53	nebo	nebo	CCONJ	J^-------------	_	54	cc	_	_
-54	munice	munice	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	52	conj	_	_
-55	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	57	case	_	SpacesAfter= 
-56	ochuzeného	ochuzený	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	57	amod	_	_
-57	uranu	uran	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	54	nmod	_	SpaceAfter=No
-58	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+18	světa	svět	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	17	nmod	_	SpaceAfter=No
+19	[	[	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+20	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	17	dep	_	SpaceAfter=No
+21	?	?	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+22	]	]	PUNCT	Z:-------------	_	20	punct	_	_
+23	(	(	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+24	pro	pro	ADP	RR--4----------	AdpType=Prep|Case=Acc	25	case	_	_
+25	rok	rok	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	17	dep	_	_
+26	2011	2011	NUM	C=-------------	NumForm=Digit|NumType=Card	25	nummod	_	_
+27	–	–	SYM	Z:-------------	ConjType=Oper	28	nmod	_	_
+28	698	698	NUM	C=-------------	NumForm=Digit|NumType=Card	17	dep	_	_
+29	mld	miliarda	NOUN	NNFXX-----A---8	Abbr=Yes|Gender=Fem|Polarity=Pos	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	Z:-------------	_	29	punct	_	_
+31	dolarů	dolar	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	29	nmod	_	SpaceAfter=No
+32	)	)	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
+33	,	,	PUNCT	Z:-------------	_	35	punct	_	_
+34	a	a	CCONJ	J^-------------	_	35	cc	_	SpacesAfter= 
+35	rozvojem	rozvoj	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	6	conj	_	_
+36	moderních	moderní	ADJ	AAFP2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	37	amod	_	_
+37	technologií	technologie	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	35	nmod	_	SpaceAfter=No
+38	,	,	PUNCT	Z:-------------	_	39	punct	_	_
+39	jakými	jaký	DET	P4XP7----------	Case=Ins|Number=Plur|PronType=Int,Rel	37	acl:relcl	_	_
+40	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	39	cop	_	_
+41	například	například	ADV	Db-------------	_	42	advmod:emph	_	_
+42	technologie	technologie	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	39	nsubj	_	_
+43	stealth	stealth	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	42	nmod	_	SpaceAfter=No
+44	,	,	PUNCT	Z:-------------	_	51	punct	_	_
+45	mikrovlnné	mikrovlnný	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	56	amod	_	SpaceAfter=No
+46	,	,	PUNCT	Z:-------------	_	47	punct	_	_
+47	sonické	sonický	ADJ	AAFP1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Plur|Polarity=Pos	45	conj	_	_
+48	a	a	CCONJ	J^-------------	_	49	cc	_	_
+49	ULF	ULF	NOUN	NNIXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	43	conj	_	_
+50	(	(	PUNCT	Z:-------------	_	51	punct	_	SpaceAfter=No
+51	Ultra	ultra	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	56	amod	_	SpaceAfter=No
+52	-	-	PUNCT	Z:-------------	_	51	punct	_	SpaceAfter=No
+53	Low	low	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	51	flat:foreign	_	_
+54	Frequency	frequency	NOUN	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	51	flat:foreign	_	SpaceAfter=No
+55	)	)	PUNCT	Z:-------------	_	51	punct	_	_
+56	zbraně	zbraň	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	42	conj	_	_
+57	nebo	nebo	CCONJ	J^-------------	_	58	cc	_	_
+58	munice	munice	NOUN	NNFP1-----A----	Case=Nom|Gender=Fem|Number=Plur|Polarity=Pos	56	conj	_	_
+59	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	61	case	_	SpacesAfter= 
+60	ochuzeného	ochuzený	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	61	amod	_	_
+61	uranu	uran	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	58	nmod	_	SpaceAfter=No
+62	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = Americká armáda má vysokou bojeschopnost díky dlouholetým zkušenostem;
 1	Americká	americký	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	2	amod	_	_
 2	armáda	armáda	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	3	nsubj	_	_
@@ -8448,7 +8463,7 @@
 8	zkušenostem	zkušenost	NOUN	NNFP3-----A----	Case=Dat|Gender=Fem|Number=Plur|Polarity=Pos	3	obl	_	SpaceAfter=No
 9	;	;	PUNCT	Z:-------------	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = od počátku 20. století se účastnila přibližně stovky ozbrojených konfliktů nebo intervencí.
 1	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	2	case	_	_
 2	počátku	počátek	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	7	obl	_	_
@@ -8465,7 +8480,7 @@
 13	intervencí	intervence	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	11	conj	_	SpaceAfter=No
 14	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
-# sent_id = 7
+# sent_id = 8
 # text = V poslední době operuje například v Afghánistánu v rámci operace Operace Trvalá svoboda a obecnějšího konceptu tzv. války proti terorismu.
 1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
 2	poslední	poslední	ADJ	AAFS6----1A----	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	amod	_	_

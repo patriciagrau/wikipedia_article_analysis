@@ -2641,7 +2641,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = I Norden dyrkades inte solen som en gud, utan solen utgjorde ett av de fyra elementen, nämligen eld.
+# text = I Norden dyrkades inte solen som en gud, utan solen utgjorde ett av de fyra elementen, nämligen eld.[källa behövs]
 1	I	i	ADP	PP	_	2	case	_	_
 2	Norden	Norden	PROPN	PM|NOM	Case=Nom	3	obl	_	_
 3	dyrkades	dyrka	VERB	VB|PRT|SFO	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -2660,9 +2660,11 @@
 16	fyra	fyra	NUM	RG|NOM	Case=Nom|NumType=Card	17	nummod	_	_
 17	elementen	element	NOUN	NN|NEU|PLU|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	13	nmod	_	SpaceAfter=No
 18	,	,	PUNCT	MID	_	17	punct	_	_
-19	nämligen	nämligen	ADV	AB	_	20	advmod	_	_
-20	eld	eld	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	17	appos	_	SpaceAfter=No
-21	.	.	PUNCT	MAD	_	3	punct	_	_
+19	nämligen	nämligen	ADV	AB	_	22	advmod	_	_
+20	eld.[	eld.[	ADV	AB|AN	Abbr=Yes	22	nsubj:pass	_	SpaceAfter=No
+21	källa	källa	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	22	advcl	_	SpacesAfter= 
+22	behövs	behöva	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	17	acl:relcl	_	SpaceAfter=No
+23	]	]	PUNCT	MAD	_	3	punct	_	_
 
 # sent_id = 2
 # text = Man hade i stället ljusguden Balder.
@@ -2698,17 +2700,20 @@
 20	.	.	PUNCT	MAD	_	5	punct	_	_
 
 # sent_id = 4
-# text = Varje dag färdas gudinnan Sol med vagnen över himlen.
+# text = Varje dag färdas gudinnan
 1	Varje	varje	DET	DT|UTR/NEU|SIN|IND	Definite=Ind|Number=Sing|PronType=Tot	2	det	_	_
 2	dag	dag	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	3	obl	_	_
 3	färdas	färda	VERB	VB|PRS|SFO	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-4	gudinnan	gudinna	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
-5	Sol	Sol	PROPN	PM|NOM	Case=Nom	3	nsubj:pass	_	_
-6	med	med	ADP	PP	_	7	case	_	_
-7	vagnen	vagn	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
-8	över	över	ADP	PP	_	9	case	_	_
-9	himlen	himmel	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	MAD	_	3	punct	_	SpacesAfter=\n
+4	gudinnan	gudinna	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nsubj:pass	_	_
+
+# sent_id = 5
+# text = Sol med vagnen över himlen.
+1	Sol	sol	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
+2	med	med	ADP	PP	_	3	case	_	_
+3	vagnen	vagn	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	obl	_	_
+4	över	över	ADP	PP	_	5	case	_	_
+5	himlen	himmel	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	MAD	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = swedish-talbanken-ud-2.6-200830

@@ -799,7 +799,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 4Au + 8NaCN + 2H2O2 → 4NaOH + 4Na
+# text = 4Au + 8NaCN + 2H2O2 → 4NaOH + 4Na[Au(CN)2]
 1	4Au	4au	NOUN	Y	Abbr=Yes	0	root	_	_
 2	+	+	PUNCT	Z	_	1	punct	_	_
 3	8NaCN	8NACN	NOUN	Y	Abbr=Yes	1	flat	_	_
@@ -807,8 +807,13 @@
 5	2H2O2	2H2o2	SYM	Y	Abbr=Yes	1	flat	_	_
 6	→	→	SYM	Y	Abbr=Yes	1	flat	_	_
 7	4NaOH	4naoh	SYM	Y	Abbr=Yes	1	flat	_	_
-8	+	+	PUNCT	Z	_	1	punct	_	_
-9	4Na	4na	SYM	Y	Abbr=Yes	1	flat	_	SpacesAfter=\n
+8	+	+	PUNCT	Z	_	7	punct	_	_
+9	4Na[	4na[	SYM	Y	Abbr=Yes	7	flat	_	SpaceAfter=No
+10	Au	Au	NOUN	Y	Abbr=Yes	9	flat	_	SpaceAfter=No
+11	(	(	PUNCT	Z	_	12	punct	_	SpaceAfter=No
+12	CN)	CN)	NOUN	Y	Abbr=Yes	9	appos	_	SpaceAfter=No
+13	2	2	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	12	flat	_	SpaceAfter=No
+14	]	]	PUNCT	Z	_	12	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -962,12 +967,14 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = AuCl3 + HCl → H
-1	AuCl3	AUCl3	PROPN	Y	Abbr=Yes	0	root	_	_
+# text = AuCl3 + HCl → H[AuCl4]
+1	AuCl3	AUCl3	NOUN	Y	Abbr=Yes	0	root	_	_
 2	+	+	PUNCT	Z	_	1	punct	_	_
 3	HCl	HCl	SYM	Y	Abbr=Yes	1	flat	_	_
 4	→	→	SYM	Y	Abbr=Yes	1	flat	_	_
-5	H	H	SYM	Y	Abbr=Yes	1	flat	_	SpacesAfter=\n
+5	H[	H[	SYM	Y	Abbr=Yes	1	flat	_	SpaceAfter=No
+6	AuCl4	Aucl4	NOUN	Y	Abbr=Yes	1	flat	_	SpaceAfter=No
+7	]	]	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1913,7 +1920,7 @@
 22	.	.	PUNCT	Z	_	3	punct	_	_
 
 # sent_id = 4
-# text = See-eest kasutatakse tänapäeval kulla radioaktiivseid isotoope (näiteks vähi ravimiseks) ja kulla soolasid.
+# text = See-eest kasutatakse tänapäeval kulla radioaktiivseid isotoope (näiteks vähi ravimiseks) ja kulla soolasid[viide?].
 1	See-eest	see-eest	ADV	D	_	2	advmod	_	_
 2	kasutatakse	kasutama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 3	tänapäeval	täna_päev	NOUN	S	Case=Ade|Number=Sing	2	obl	_	_
@@ -1925,10 +1932,13 @@
 9	vähi	vähi	NOUN	S	Case=Gen|Number=Sing	10	nmod	_	_
 10	ravimiseks	ravimine	NOUN	S	Case=Tra|Number=Sing	6	parataxis	_	SpaceAfter=No
 11	)	)	PUNCT	Z	_	10	punct	_	_
-12	ja	ja	CCONJ	J	_	14	cc	_	_
+12	ja	ja	CCONJ	J	_	15	cc	_	_
 13	kulla	kuld	NOUN	S	Case=Gen|Number=Sing	14	nmod	_	_
-14	soolasid	soola	NOUN	S	Case=Par|Number=Plur	6	conj	_	SpaceAfter=No
-15	.	.	PUNCT	Z	_	2	punct	_	_
+14	soolasid[	soola	NOUN	S	Case=Par|Number=Plur	15	nmod	_	SpaceAfter=No
+15	viide	viide	NOUN	S	Case=Par|Number=Plur	6	conj	_	SpaceAfter=No
+16	?	?	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+17	]	]	PUNCT	Z	_	10	punct	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	2	punct	_	_
 
 # sent_id = 5
 # text = Plastist ja klaasist tööriistade ilmutamiseks elektronmikroskoobi all kaetakse neid kulla sulamitega, tänu millele on võimalik kergemalt opereerida.
@@ -2203,7 +2213,7 @@
 9	.	.	PUNCT	Z	_	8	punct	_	_
 
 # sent_id = 2
-# text = Kulda sisaldub maakoores 0,0011 g/t, mida on umbes 100 korda rohkem kui merevees (0,00001 g/t).
+# text = Kulda sisaldub maakoores 0,0011 g/t, mida on umbes 100 korda rohkem kui merevees (0,00001 g/t[viide?]).
 1	Kulda	kuld	NOUN	S	Case=Nom|Number=Sing	2	nsubj	_	_
 2	sisaldub	sisalduma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	maakoores	maa_koor	NOUN	S	Case=Ine|Number=Sing	2	obl	_	_
@@ -2218,11 +2228,14 @@
 12	rohkem	rohkem	ADV	D	_	5	acl:relcl	_	_
 13	kui	kui	SCONJ	J	_	14	mark	_	_
 14	merevees	mere_vees	NOUN	S	Case=Ine|Number=Sing	12	advcl	_	_
-15	(	(	PUNCT	Z	_	17	punct	_	SpaceAfter=No
+15	(	(	PUNCT	Z	_	18	punct	_	SpaceAfter=No
 16	0,00001	0,00001	NUM	N	NumForm=Digit|NumType=Card	17	nummod	_	_
-17	g/t	g/t	NOUN	Y	Abbr=Yes	14	parataxis	_	SpaceAfter=No
-18	)	)	PUNCT	Z	_	17	punct	_	SpaceAfter=No
-19	.	.	PUNCT	Z	_	2	punct	_	_
+17	g/t[	g/t[	NOUN	Y	Abbr=Yes	18	nmod	_	SpaceAfter=No
+18	viide	viide	NOUN	S	Case=Nom|Number=Sing	12	parataxis	_	SpaceAfter=No
+19	?	?	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+20	]	]	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+21	)	)	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+22	.	.	PUNCT	Z	_	2	punct	_	_
 
 # sent_id = 3
 # text = Ehedalt on kullaosakeste suurus 0,1–1000 mikromeetrit, suuremate kullatükkide mass võib ulatuda aga isegi kümnetesse kilodesse.

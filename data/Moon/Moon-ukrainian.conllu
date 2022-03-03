@@ -582,14 +582,14 @@
 15	.	.	PUNCT	U	_	14	punct	_	_
 
 # sent_id = 4
-# text = Щоправда, оскільки обертання Місяця навколо Землі еліптичною орбітою відбувається дещо нерівномірно, внаслідок лібрації з Землі можна спостерігати більше половини (близько 59 %) місячної поверхні.
+# text = Щоправда, оскільки обертання Місяця навколо Землі еліптичною орбітою відбувається дещо нерівномірно, внаслідок лібрації з Землі можна спостерігати більше половини (близько 59 %[джерело?])
 1	Щоправда	щоправда	ADV	R	_	18	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	U	_	1	punct	_	_
 3	оскільки	оскільки	SCONJ	Css	_	10	mark	_	_
 4	обертання	обертання	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	_
-5	Місяця	Місяць	PROPN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+5	Місяця	Місяць	PROPN	Npmsgy	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
 6	навколо	навколо	ADP	Spsg	Case=Gen	7	case	_	_
-7	Землі	земля	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+7	Землі	земля	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	10	obl	_	_
 8	еліптичною	еліптичний	ADJ	Ao-fsif	Case=Ins|Gender=Fem|Number=Sing	9	amod	_	_
 9	орбітою	орбіта	NOUN	Ncfsin	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	10	obl	_	_
 10	відбувається	відбуватися	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	_
@@ -605,13 +605,20 @@
 20	більше	більше	ADV	Rc	Degree=Cmp	21	advmod	_	_
 21	половини	половина	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	19	obj	_	_
 22	(	(	PUNCT	U	_	25	punct	_	SpaceAfter=No
-23	близько	близько	ADP	Spsg	Case=Gen	25	case	_	_
+23	близько	близько	ADP	Spsg	Case=Gen	24	case	_	_
 24	59	59	NUM	Mlc-g	Case=Gen|NumType=Card|Uninflect=Yes	25	nummod	_	SpacesAfter= 
 25	%	%	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Uninflect=Yes	21	appos	_	SpaceAfter=No
-26	)	)	PUNCT	U	_	25	punct	_	_
-27	місячної	місячний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	28	amod	_	_
-28	поверхні	поверхня	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	U	_	18	punct	_	SpacesAfter=\n
+26	[	[	PUNCT	U	_	27	punct	_	SpaceAfter=No
+27	джерело	джерело	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	25	appos	_	SpaceAfter=No
+28	?	?	PUNCT	U	_	27	punct	_	SpaceAfter=No
+29	]	]	PUNCT	U	_	25	punct	_	SpaceAfter=No
+30	)	)	PUNCT	U	_	18	punct	_	_
+
+# sent_id = 5
+# text = місячної поверхні.
+1	місячної	місячний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	2	amod	_	_
+2	поверхні	поверхня	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -1826,7 +1833,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = СРСР надіслав на Місяць два радіокеровані самохідні апарати — «Луноход-1» у листопаді 1970 року і «Луноход-2» у січні 1973.
+# text = СРСР надіслав на Місяць два радіокеровані самохідні апарати — «Луноход-1» у листопаді 1970 року і «Луноход-2»[ru] у січні 1973.
 1	СРСР	СРСР	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Uninflect=Yes	2	nsubj	_	_
 2	надіслав	надіслати	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
 3	на	на	ADP	Spsa	Case=Acc	4	case	_	_
@@ -1850,11 +1857,13 @@
 21	Луноход	Луноход	PROPN	Npmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
 22	-	-	PUNCT	U	PunctType=Hyph	23	punct	_	SpaceAfter=No
 23	2	2	NUM	Mlcmsn	Case=Nom|Gender=Masc|NumType=Card|Uninflect=Yes	21	flat:title	_	SpaceAfter=No
-24	»	»	PUNCT	U	PunctType=Quot	21	punct	_	_
-25	у	у	ADP	Spsl	Case=Loc	26	case	_	_
-26	січні	січень	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	21	nmod	_	_
-27	1973	1973	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	26	nmod	_	SpaceAfter=No
-28	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\n
+24	»	»	PUNCT	U	PunctType=Quot	21	punct	_	SpaceAfter=No
+25	[ru	[ru	X	X	Foreign=Yes	21	flat:foreign	_	SpaceAfter=No
+26	]	]	PUNCT	U	_	25	punct	_	_
+27	у	у	ADP	Spsl	Case=Loc	28	case	_	_
+28	січні	січень	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	21	nmod	_	_
+29	1973	1973	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -1952,7 +1961,7 @@
 13	.	.	PUNCT	U	_	1	punct	_	_
 
 # sent_id = 3
-# text = Наприклад, ЄКА 28 вересня 2003 запустило свій перший місячний зонд «Смарт-1», а Джордж Буш 14 січня 2004 оголосив, що до планів США входить створення нових пілотованих космічних кораблів, здатних доставити людей на Місяць, з метою закласти до 2020 року перші місячні бази.
+# text = Наприклад, ЄКА 28 вересня 2003 запустило свій перший місячний зонд «Смарт-1»[en], а Джордж Буш 14 січня 2004 оголосив, що до планів США входить створення нових пілотованих космічних кораблів, здатних доставити людей на Місяць, з метою закласти до 2020 року перші місячні бази.
 1	Наприклад	наприклад	ADV	R	_	7	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	U	_	1	punct	_	_
 3	ЄКА	ЄКА	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing|Uninflect=Yes	7	nsubj	_	_
@@ -1969,42 +1978,44 @@
 14	-	-	PUNCT	U	PunctType=Hyph	15	punct	_	SpaceAfter=No
 15	1	1	NUM	Mlcmsn	Case=Nom|Gender=Masc|NumType=Card|Uninflect=Yes	13	flat:title	_	SpaceAfter=No
 16	»	»	PUNCT	U	PunctType=Quot	13	punct	_	SpaceAfter=No
-17	,	,	PUNCT	U	_	24	punct	_	_
-18	а	а	CCONJ	Ccs	_	24	cc	_	_
-19	Джордж	Джордж	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	24	nsubj	_	_
-20	Буш	Буш	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	19	flat:name	_	_
-21	14	14	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	24	obl	_	_
-22	січня	січень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	21	nmod	_	_
-23	2004	2004	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	22	nmod	_	_
-24	оголосив	оголосити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	7	conj	_	SpaceAfter=No
-25	,	,	PUNCT	U	_	30	punct	_	_
-26	що	що	SCONJ	Css	_	30	mark	_	_
-27	до	до	ADP	Spsg	Case=Gen	28	case	_	_
-28	планів	план	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	30	obl	_	_
-29	США	США	PROPN	Np-pgn	Animacy=Inan|Case=Gen|Number=Ptan|Uninflect=Yes	28	nmod	_	_
-30	входить	входити	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	ccomp	_	_
-31	створення	створення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	30	nsubj	_	_
-32	нових	новий	ADJ	Afp-pgf	Case=Gen|Degree=Pos|Number=Plur	35	amod	_	_
-33	пілотованих	пілотований	ADJ	Ap--pgf-ep	Aspect=Perf|Case=Gen|Number=Plur|VerbForm=Part|Voice=Pass	35	amod	_	_
-34	космічних	космічний	ADJ	Ao--pgf	Case=Gen|Number=Plur	35	amod	_	_
-35	кораблів	корабель	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No
-36	,	,	PUNCT	U	_	37	punct	_	_
-37	здатних	здатний	ADJ	Ao--pgf	Case=Gen|Number=Plur	35	amod	_	_
-38	доставити	доставити	VERB	Vmen	Aspect=Perf|VerbForm=Inf	37	xcomp	_	_
-39	людей	людина	NOUN	Ncfpay	Animacy=Anim|Case=Acc|Gender=Fem|Number=Plur	38	obj	_	_
-40	на	на	ADP	Spsa	Case=Acc	41	case	_	_
-41	Місяць	Місяць	NOUN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	38	obl	_	SpaceAfter=No
-42	,	,	PUNCT	U	_	37	punct	_	_
-43	з	з	ADP	Spsi	Case=Ins	44	case	_	_
-44	метою	мета	NOUN	Ncfsin	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	38	obl	_	_
-45	закласти	закласти	VERB	Vmen	Aspect=Perf|VerbForm=Inf	44	acl	_	_
-46	до	до	ADP	Spsg	Case=Gen	48	case	_	_
-47	2020	2020	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	48	amod	_	_
-48	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	45	obl	_	_
-49	перші	перший	ADJ	Mlo-pan	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur|NumType=Ord	51	amod	_	_
-50	місячні	місячний	ADJ	Ao--pasn	Animacy=Inan|Case=Acc|Number=Plur	51	amod	_	_
-51	бази	баз	NOUN	Ncmpan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	45	obj	_	SpaceAfter=No
-52	.	.	PUNCT	U	_	7	punct	_	SpacesAfter=\n
+17	[en	[en	X	X	Foreign=Yes	13	flat:foreign	_	SpaceAfter=No
+18	]	]	PUNCT	U	_	13	punct	_	SpaceAfter=No
+19	,	,	PUNCT	U	_	26	punct	_	_
+20	а	а	CCONJ	Ccs	_	26	cc	_	_
+21	Джордж	Джордж	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	26	nsubj	_	_
+22	Буш	Буш	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	21	flat:name	_	_
+23	14	14	ADJ	Mlonsg	Case=Gen|Gender=Neut|Number=Sing|NumType=Ord|Uninflect=Yes	26	obl	_	_
+24	січня	січень	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	23	nmod	_	_
+25	2004	2004	NOUN	Ao-msgf	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Uninflect=Yes	24	nmod	_	_
+26	оголосив	оголосити	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	7	conj	_	SpaceAfter=No
+27	,	,	PUNCT	U	_	32	punct	_	_
+28	що	що	SCONJ	Css	_	32	mark	_	_
+29	до	до	ADP	Spsg	Case=Gen	30	case	_	_
+30	планів	план	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	32	obl	_	_
+31	США	США	PROPN	Np-pgn	Animacy=Inan|Case=Gen|Number=Ptan|Uninflect=Yes	30	nmod	_	_
+32	входить	входити	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp	_	_
+33	створення	створення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	32	nsubj	_	_
+34	нових	новий	ADJ	Afp-pgf	Case=Gen|Degree=Pos|Number=Plur	37	amod	_	_
+35	пілотованих	пілотований	ADJ	Ap--pgf-ep	Aspect=Perf|Case=Gen|Number=Plur|VerbForm=Part|Voice=Pass	37	amod	_	_
+36	космічних	космічний	ADJ	Ao--pgf	Case=Gen|Number=Plur	37	amod	_	_
+37	кораблів	корабель	NOUN	Ncmpgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No
+38	,	,	PUNCT	U	_	39	punct	_	_
+39	здатних	здатний	ADJ	Ao--pgf	Case=Gen|Number=Plur	37	amod	_	_
+40	доставити	доставити	VERB	Vmen	Aspect=Perf|VerbForm=Inf	39	xcomp	_	_
+41	людей	людина	NOUN	Ncfpay	Animacy=Anim|Case=Acc|Gender=Fem|Number=Plur	40	obj	_	_
+42	на	на	ADP	Spsa	Case=Acc	43	case	_	_
+43	Місяць	місяць	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	40	obl	_	SpaceAfter=No
+44	,	,	PUNCT	U	_	39	punct	_	_
+45	з	з	ADP	Spsi	Case=Ins	46	case	_	_
+46	метою	мета	NOUN	Ncfsin	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	40	obl	_	_
+47	закласти	закласти	VERB	Vmen	Aspect=Perf|VerbForm=Inf	46	acl	_	_
+48	до	до	ADP	Spsg	Case=Gen	50	case	_	_
+49	2020	2020	ADJ	Mlomsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Ord|Uninflect=Yes	50	amod	_	_
+50	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	47	obl	_	_
+51	перші	перший	ADJ	Mlo-pan	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur|NumType=Ord	53	amod	_	_
+52	місячні	місячний	ADJ	Ao--pasn	Animacy=Inan|Case=Acc|Number=Plur	53	amod	_	_
+53	бази	баз	NOUN	Ncmpan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	47	obj	_	SpaceAfter=No
+54	.	.	PUNCT	U	_	7	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2169,7 +2180,7 @@
 10	.	.	PUNCT	U	_	4	punct	_	_
 
 # sent_id = 4
-# text = Фахівці прогнозували, що у 2012 р. настане час масового запуску автоматизованих місяцеходів, а до 2015 р. буде створено докладну карту корисних копалин Місяця.
+# text = Фахівці прогнозували, що у 2012 р. настане час масового запуску автоматизованих місяцеходів, а до 2015 р. буде створено докладну карту корисних копалин Місяця[джерело?].
 1	Фахівці	фахівець	NOUN	Ncmpny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
 2	прогнозували	прогнозувати	VERB	Vmpis-p	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	U	_	9	punct	_	_
@@ -2196,8 +2207,12 @@
 24	карту	карта	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	22	obj	_	_
 25	корисних	корисний	ADJ	Afp-pgf	Case=Gen|Degree=Pos|Number=Plur	26	amod	_	_
 26	копалин	копалина	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	24	nmod	_	_
-27	Місяця	Місяць	PROPN	Npmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
-28	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\s\n
+27	Місяця	Місяць	PROPN	Npmsgy	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+28	[	[	PUNCT	U	_	29	punct	_	SpaceAfter=No
+29	джерело	джерело	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	26	appos	_	SpaceAfter=No
+30	?	?	PUNCT	U	_	29	punct	_	SpaceAfter=No
+31	]	]	PUNCT	U	_	29	punct	_	SpaceAfter=No
+32	.	.	PUNCT	U	_	2	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -2679,7 +2694,7 @@
 32	.	.	PUNCT	U	_	4	punct	_	_
 
 # sent_id = 3
-# text = Складається місячне ядро із заліза, легованого невеликою кількістю сірки й нікелю.
+# text = Складається місячне ядро із заліза, легованого невеликою кількістю сірки й нікелю[джерело?].
 1	Складається	складатися	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	місячне	місячний	ADJ	Ao-nsns	Case=Nom|Gender=Neut|Number=Sing	3	amod	_	_
 3	ядро	ядро	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	1	nsubj	_	_
@@ -2692,7 +2707,11 @@
 10	сірки	сірка	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	_
 11	й	й	CCONJ	Ccs	_	12	cc	_	_
 12	нікелю	нікель	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
-13	.	.	PUNCT	U	_	1	punct	_	SpacesAfter=\n
+13	[	[	PUNCT	U	_	14	punct	_	SpaceAfter=No
+14	джерело	джерело	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	9	appos	_	SpaceAfter=No
+15	?	?	PUNCT	U	_	14	punct	_	SpaceAfter=No
+16	]	]	PUNCT	U	_	14	punct	_	SpaceAfter=No
+17	.	.	PUNCT	U	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -3014,19 +3033,23 @@
 19	.	.	PUNCT	U	_	12	punct	_	_
 
 # sent_id = 4
-# text = Цей місячний водень також може бути використано колись як ракетне паливо.
-1	Цей	цей	DET	Pd--m-sna	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-2	місячний	місячний	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	3	amod	_	_
-3	водень	водень	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+# text = Цей місячний водень також може бути використано колись як ракетне паливо[джерело?].
+1	Цей	цей	DET	Pd--mnsaa	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+2	місячний	місячний	ADJ	Ao-msafn	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	amod	_	_
+3	водень	водень	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	_
 4	також	також	ADV	R	_	5	advmod	_	_
 5	може	могти	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	бути	бути	AUX	Vapn	Aspect=Imp|VerbForm=Inf	7	aux	_	_
 7	використано	використати	VERB	Vmeo	Aspect=Perf|Mood=Ind|Person=0|VerbForm=Fin	5	xcomp	_	_
 8	колись	колись	ADV	Pi------r	PronType=Ind	7	advmod	_	_
 9	як	як	SCONJ	Css	_	11	mark	_	_
-10	ракетне	ракетний	ADJ	Ao-nsas	Case=Acc|Gender=Neut|Number=Sing	11	amod	_	_
-11	паливо	паливо	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	7	xcomp:sp	_	SpaceAfter=No
-12	.	.	PUNCT	U	_	5	punct	_	SpacesAfter=\n
+10	ракетне	ракетний	ADJ	Ao-nsns	Case=Nom|Gender=Neut|Number=Sing	11	amod	_	_
+11	паливо	паливо	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	7	xcomp:sp	_	SpaceAfter=No
+12	[	[	PUNCT	U	_	13	punct	_	SpaceAfter=No
+13	джерело	джерело	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	11	appos	_	SpaceAfter=No
+14	?	?	PUNCT	U	_	13	punct	_	SpaceAfter=No
+15	]	]	PUNCT	U	_	13	punct	_	SpaceAfter=No
+16	.	.	PUNCT	U	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = ukrainian-iu-ud-2.6-200830
@@ -3369,7 +3392,7 @@
 9	.	.	PUNCT	U	_	4	punct	_	_
 
 # sent_id = 2
-# text = Імена великих вчених давнини, таких як Тихо Браге, Коперник і Птолемей, були використані на видимому боці, а на зворотному часто трапляються сучасніші назви на кшталт Аполлон, Гагарін і Корольов.
+# text = Імена великих вчених давнини, таких як Тихо Браге, Коперник і Птолемей, були використані на видимому боці, а на зворотному часто трапляються сучасніші назви на кшталт Аполлон, Гагарін[ru] і Корольов.
 1	Імена	ім’я	NOUN	Ncnpnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	16	nsubj	_	_
 2	великих	великий	ADJ	Afp-pgf	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
 3	вчених	вчений	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	_
@@ -3399,12 +3422,14 @@
 27	назви	назва	NOUN	Ncfpnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	25	nsubj	_	_
 28	на	на	ADP	Spsa	Case=Acc	29	case	_	_
 29	кшталт	кшталт	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	27	nmod	_	_
-30	Аполлон	Аполлон	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	29	nmod	_	SpaceAfter=No
+30	Аполлон	Аполлон	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	29	flat:title	_	SpaceAfter=No
 31	,	,	PUNCT	U	_	32	punct	_	_
-32	Гагарін	Гагарін	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	30	conj	_	_
-33	і	і	CCONJ	Ccs	_	34	cc	_	_
-34	Корольов	Корольов	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	30	conj	_	SpaceAfter=No
-35	.	.	PUNCT	U	_	16	punct	_	_
+32	Гагарін[	Гагарін[	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	30	conj	_	SpaceAfter=No
+33	ru	RU	X	X	Foreign=Yes	32	flat:title	_	SpaceAfter=No
+34	]	]	PUNCT	U	_	32	punct	_	_
+35	і	і	CCONJ	Ccs	_	36	cc	_	_
+36	Корольов	Корольов	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	30	conj	_	SpaceAfter=No
+37	.	.	PUNCT	U	_	16	punct	_	_
 
 # sent_id = 3
 # text = Багато з них є російськими, оскільки перші знімки зворотного боку зроблено радянським кораблем Луна-3.

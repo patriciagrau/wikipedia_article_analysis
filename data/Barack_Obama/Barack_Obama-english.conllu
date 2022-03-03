@@ -4534,9 +4534,16 @@
 44	1996	1996	NUM	CD	NumType=Card	42	nmod	_	_
 45	to	to	ADP	IN	_	46	case	_	_
 46	2004	2004	NUM	CD	NumType=Card	42	nmod	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	2	punct	_	_
+47	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
 
 # sent_id = 2
+# text = [failed verification]
+1	[	[	PUNCT	-LRB-	_	3	punct	_	SpaceAfter=No
+2	failed	fail	VERB	VBN	Tense=Past|VerbForm=Part	3	amod	_	_
+3	verification	verification	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	3	punct	_	_
+
+# sent_id = 3
 # text = In 1994, he was listed as one of the lawyers in Buycks-Roberson v. Citibank Fed. Sav.
 1	In	in	ADP	IN	_	2	case	_	_
 2	1994	1994	NUM	CD	NumType=Card	6	obl	_	SpaceAfter=No
@@ -4559,7 +4566,7 @@
 19	.	.	PUNCT	.	_	20	punct	_	_
 20	Sav.	Sav.	PROPN	NNP	Number=Sing	15	nmod	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Bank, 94 C 4094 (N.D. Ill.).
 1	Bank	Bank	PROPN	NNP	Number=Sing	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
@@ -4573,8 +4580,8 @@
 10	)	)	PUNCT	-RRB-	_	7	punct	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = 4
-# text = This class action lawsuit was filed in 1994 with Selma Buycks-Roberson as lead plaintiff and alleged that Citibank Federal Savings Bank had engaged in practices forbidden under the Equal Credit Opportunity Act and the Fair Housing Act.
+# sent_id = 5
+# text = This class action lawsuit was filed in 1994 with Selma Buycks-Roberson as lead plaintiff and alleged that Citibank Federal Savings Bank had engaged in practices forbidden under the Equal Credit Opportunity
 1	This	this	DET	DT	Number=Sing|PronType=Dem	4	det	_	_
 2	class	class	NOUN	NN	Number=Sing	3	compound	_	_
 3	action	action	NOUN	NN	Number=Sing	4	compound	_	_
@@ -4603,20 +4610,23 @@
 26	in	in	ADP	IN	_	27	case	_	_
 27	practices	practice	NOUN	NNS	Number=Plur	25	obl	_	_
 28	forbidden	forbid	VERB	VBN	Tense=Past|VerbForm=Part	27	acl	_	_
-29	under	under	ADP	IN	_	34	case	_	_
-30	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
-31	Equal	Equal	PROPN	NNP	Number=Sing	33	compound	_	_
-32	Credit	Credit	PROPN	NNP	Number=Sing	33	compound	_	_
-33	Opportunity	Opportunity	PROPN	NNP	Number=Sing	34	compound	_	_
-34	Act	Act	PROPN	NNP	Number=Sing	28	obl	_	_
-35	and	and	CCONJ	CC	_	39	cc	_	_
-36	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
-37	Fair	Fair	PROPN	NNP	Number=Sing	39	compound	_	_
-38	Housing	Housing	PROPN	NNP	Number=Sing	39	compound	_	_
-39	Act	Act	PROPN	NNP	Number=Sing	34	conj	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	_
+29	under	under	ADP	IN	_	33	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+31	Equal	equal	ADJ	JJ	Degree=Pos	32	amod	_	_
+32	Credit	credit	NOUN	NN	Number=Sing	33	compound	_	_
+33	Opportunity	opportunity	NOUN	NN	Number=Sing	28	obl	_	_
 
-# sent_id = 5
+# sent_id = 6
+# text = Act and the Fair Housing Act.
+1	Act	Act	PROPN	NNP	Number=Sing	0	root	_	_
+2	and	and	CCONJ	CC	_	6	cc	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+4	Fair	Fair	PROPN	NNP	Number=Sing	6	compound	_	_
+5	Housing	Housing	PROPN	NNP	Number=Sing	6	compound	_	_
+6	Act	Act	PROPN	NNP	Number=Sing	1	conj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 7
 # text = The case was settled out of court.
 1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
 2	case	case	NOUN	NN	Number=Sing	4	nsubj:pass	_	_
@@ -4627,7 +4637,7 @@
 7	court	court	NOUN	NN	Number=Sing	4	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 8
 # text = Final judgment was issued on May 13, 1998, with Citibank Federal Savings Bank agreeing to pay attorney fees.
 1	Final	final	ADJ	JJ	Degree=Pos	2	amod	_	_
 2	judgment	judgment	NOUN	NN	Number=Sing	4	nsubj:pass	_	_
@@ -9720,7 +9730,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = In July 2013, Obama expressed reservations and said he "would reject the Keystone XL pipeline if it increased carbon pollution greenhouse emissions."
+# text = In July 2013, Obama expressed reservations and said he "would reject the Keystone XL pipeline if it increased carbon pollution [or] greenhouse emissions."
 1	In	in	ADP	IN	_	2	case	_	_
 2	July	July	PROPN	NNP	Number=Sing	6	obl	_	_
 3	2013	2013	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
@@ -9742,11 +9752,14 @@
 19	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
 20	increased	increase	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	advcl	_	_
 21	carbon	carbon	NOUN	NN	Number=Sing	22	compound	_	_
-22	pollution	pollution	NOUN	NN	Number=Sing	24	compound	_	SpacesAfter=\s\s
-23	greenhouse	greenhouse	NOUN	NN	Number=Sing	24	compound	_	_
-24	emissions	emission	NOUN	NNS	Number=Plur	20	obj	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
-26	"	"	PUNCT	''	_	6	punct	_	_
+22	pollution	pollution	NOUN	NN	Number=Sing	20	obj	_	_
+23	[	[	PUNCT	-LRB-	_	22	punct	_	SpaceAfter=No
+24	or	or	CCONJ	CC	_	27	cc	_	SpaceAfter=No
+25	]	]	PUNCT	-RRB-	_	27	punct	_	_
+26	greenhouse	greenhouse	NOUN	NN	Number=Sing	27	compound	_	_
+27	emissions	emission	NOUN	NNS	Number=Plur	22	conj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
+29	"	"	PUNCT	''	_	6	punct	_	_
 
 # sent_id = 2
 # text = On February 24, 2015, Obama vetoed a bill that would have authorized the pipeline.
@@ -16422,7 +16435,17 @@
 56	federally	federally	ADV	RB	_	57	advmod	_	_
 57	protected	protect	VERB	VBN	Tense=Past|VerbForm=Part	58	amod	_	_
 58	activity	activity	NOUN	NN	Number=Sing	53	obl	_	SpaceAfter=No
-59	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+59	.	.	PUNCT	.	_	12	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = [citation
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+
+# sent_id = 4
+# text = needed]
+1	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	-RRB-	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830

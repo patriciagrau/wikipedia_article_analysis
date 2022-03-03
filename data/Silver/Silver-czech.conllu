@@ -289,7 +289,7 @@
 19	.	.	PUNCT	Z:-------------	_	11	punct	_	_
 
 # sent_id = 2
-# text = Za přítomnosti kyslíku se stříbro rozpouští i v roztocích alkalických kyanidů za vzniku kyanostříbrnanového iontu −
+# text = Za přítomnosti kyslíku se stříbro rozpouští i v roztocích alkalických kyanidů za vzniku kyanostříbrnanového iontu [Ag(CN)2]−
 1	Za	za	ADP	RR--2----------	AdpType=Prep|Case=Gen	2	case	_	_
 2	přítomnosti	přítomnost	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	6	obl	_	_
 3	kyslíku	kyslík	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	2	nmod	_	_
@@ -305,7 +305,14 @@
 13	vzniku	vznik	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	6	obl	_	_
 14	kyanostříbrnanového	kyanostříbrnanový	ADJ	AAIS2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	15	amod	_	_
 15	iontu	iont	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	13	nmod	_	_
-16	−	−	PUNCT	Z:-------------	_	6	punct	_	SpacesAfter=\n
+16	[	[	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+17	Ag	ag	NOUN	NNXXX-----A---8	Gender=Neut|Polarity=Pos	15	nmod	_	SpaceAfter=No
+18	(	(	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+19	CN	CN	NOUN	NNXXX-----A---8	Abbr=Yes|Animacy=Inan|Gender=Masc|Polarity=Pos	17	nmod	_	SpaceAfter=No
+20	)	)	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+21	2	2	NUM	C=-------------	NumForm=Digit|NumType=Card	17	nummod	_	SpaceAfter=No
+22	]	]	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+23	−	−	PUNCT	Z:-------------	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -1326,9 +1333,17 @@
 16	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	18	case	_	_
 17	stopových	stopový	ADJ	AANP6----1A----	Case=Loc|Degree=Pos|Gender=Neut|Number=Plur|Polarity=Pos	18	amod	_	_
 18	množstvích	množství	NOUN	NNNP6-----A----	Case=Loc|Gender=Neut|Number=Plur|Polarity=Pos	14	obl	_	SpaceAfter=No
-19	.	.	PUNCT	Z:-------------	_	14	punct	_	_
+19	.	.	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
 
 # sent_id = 2
+# text = [zdroj?!]
+1	[	[	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+2	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+4	!	!	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+5	]	]	PUNCT	Z:-------------	_	2	punct	_	_
+
+# sent_id = 3
 # text = Stříbro obecně působí především baktericidně a desinfekčně (koloidní stříbro).
 1	Stříbro	stříbro	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	3	nsubj	_	_
 2	obecně	obecně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	3	advmod	_	_
@@ -1388,7 +1403,15 @@
 16	velmi	velmi	ADV	Db-------------	_	17	advmod	_	_
 17	znečistěných	znečistěný	ADJ	AAIP2----1A----	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	18	amod	_	_
 18	zdrojů	zdroj	NOUN	NNIP2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur|Polarity=Pos	11	obl	_	SpaceAfter=No
-19	.	.	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 3
+# text = [zdroj?!]
+1	[	[	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+2	zdroj	zdroj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+4	!	!	PUNCT	Z:-------------	_	2	punct	_	SpaceAfter=No
+5	]	]	PUNCT	Z:-------------	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830

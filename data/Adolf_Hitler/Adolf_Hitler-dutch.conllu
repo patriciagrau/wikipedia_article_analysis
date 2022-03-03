@@ -2287,7 +2287,7 @@
 18	.	.	PUNCT	LET	_	8	punct	_	_
 
 # sent_id = 7
-# text = Uit analyse van het Y-chromosoom van de achterkleinkinderen van Alois Hitler bleek dat dit identiek was aan dat van mannelijke familieleden uit Neder-Oostenrijk.
+# text = Uit analyse van het Y-chromosoom van de achterkleinkinderen van Alois Hitler bleek dat dit identiek was aan dat van mannelijke familieleden uit Neder-Oostenrijk.[bron?]
 1	Uit	uit	ADP	VZ|init	_	2	case	_	_
 2	analyse	analyse	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	12	obl	_	_
 3	van	van	ADP	VZ|init	_	5	case	_	_
@@ -2309,9 +2309,11 @@
 19	van	van	ADP	VZ|init	_	21	case	_	_
 20	mannelijke	mannelijk	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	21	amod	_	_
 21	familieleden	familielid	NOUN	N|soort|mv|basis	Number=Plur	18	nmod	_	_
-22	uit	uit	ADP	VZ|init	_	23	case	_	_
-23	Neder-Oostenrijk	Neder-Oostenrijk	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	21	nmod	_	SpaceAfter=No
-24	.	.	PUNCT	LET	_	12	punct	_	_
+22	uit	uit	ADP	VZ|init	_	24	case	_	_
+23	Neder-Oostenrijk.[	Neder-oOstenrijk.[	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	24	nmod	_	SpaceAfter=No
+24	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	21	nmod	_	SpaceAfter=No
+25	?	?	PUNCT	LET	_	12	punct	_	SpaceAfter=No
+26	]	]	PUNCT	LET	_	12	punct	_	_
 
 # sent_id = 8
 # text = Daarmee zou bewezen zijn dat Alois Hitler dezelfde mannelijke gemeenschappelijke voorvader heeft als de nu nog levende verwanten Hüttler in het Waldviertel;
@@ -3055,7 +3057,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Tijdens zijn tienerjaren overleed zijn autoritaire vader, maar Hitler ervoer dit eerder als een opluchting dan als een gemis.
+# text = Tijdens zijn tienerjaren overleed zijn autoritaire vader, maar Hitler ervoer dit eerder als een opluchting dan als een gemis.[bron?]
 1	Tijdens	tijdens	ADP	VZ|init	_	3	case	_	_
 2	zijn	zijn	PRON	VNW|bez|det|stan|vol|3|ev|prenom|zonder|agr	Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
 3	tienerjaren	tienerjaar	NOUN	N|soort|mv|basis	Number=Plur	4	obl	_	_
@@ -3072,11 +3074,13 @@
 14	als	als	ADP	VZ|init	_	16	mark	_	_
 15	een	een	DET	LID|onbep|stan|agr	Definite=Ind	16	det	_	_
 16	opluchting	opluchting	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	11	xcomp	_	_
-17	dan	dan	SCONJ	VG|onder	_	20	mark	_	_
-18	als	als	ADP	VZ|init	_	20	mark	_	_
-19	een	een	DET	LID|onbep|stan|agr	Definite=Ind	20	det	_	_
-20	gemis	gemis	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	16	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	LET	_	4	punct	_	_
+17	dan	dan	SCONJ	VG|onder	_	21	mark	_	_
+18	als	als	ADP	VZ|init	_	21	mark	_	_
+19	een	een	DET	LID|onbep|stan|agr	Definite=Ind	21	det	_	_
+20	gemis.[	gemis.[	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	21	amod	_	SpaceAfter=No
+21	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	16	nmod	_	SpaceAfter=No
+22	?	?	PUNCT	LET	_	4	punct	_	SpaceAfter=No
+23	]	]	PUNCT	LET	_	4	punct	_	_
 
 # sent_id = 2
 # text = Met zijn moeder had hij wel een sterke band.
@@ -3108,7 +3112,7 @@
 13	.	.	PUNCT	LET	_	3	punct	_	_
 
 # sent_id = 4
-# text = In 1892 verhuisde het gezin van Braunau naar Passau, in 1895 naar Hafeld bij Fischlham, en in 1897 naar Lambach.
+# text = In 1892 verhuisde het gezin van Braunau naar Passau, in 1895 naar Hafeld bij Fischlham, en in 1897 naar Lambach. In november 1898 verhuisde het gezin voor de laatste keer, naar Leonding niet ver van Linz.
 1	In	in	ADP	VZ|init	_	2	case	_	_
 2	1892	1892	NUM	TW|hoofd|vrij	_	3	obl	_	_
 3	verhuisde	verhuizen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -3120,39 +3124,36 @@
 9	Passau	Passau	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	3	obl	_	SpaceAfter=No
 10	,	,	PUNCT	LET	_	12	punct	_	_
 11	in	in	ADP	VZ|init	_	12	case	_	_
-12	1895	1895	NUM	TW|hoofd|vrij	_	3	obl	_	_
+12	1895	1895	NUM	TW|hoofd|vrij	_	3	conj	_	_
 13	naar	naar	ADP	VZ|init	_	14	case	_	_
-14	Hafeld	Hafeld	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	3	conj	_	_
+14	Hafeld	Hafeld	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	12	parataxis	_	_
 15	bij	bij	ADP	VZ|init	_	16	case	_	_
 16	Fischlham	Fischlham	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	14	nmod	_	SpaceAfter=No
 17	,	,	PUNCT	LET	_	20	punct	_	_
-18	en	en	CCONJ	VG|neven	_	22	cc	_	_
+18	en	en	CCONJ	VG|neven	_	20	cc	_	_
 19	in	in	ADP	VZ|init	_	20	case	_	_
-20	1897	1897	NUM	TW|hoofd|vrij	_	3	conj	_	_
+20	1897	1897	NUM	TW|hoofd|vrij	_	22	amod	_	_
 21	naar	naar	ADP	VZ|init	_	22	case	_	_
-22	Lambach	Lambach	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	3	conj	_	SpaceAfter=No
+22	Lambach	Lambach	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	14	orphan	_	SpaceAfter=No
 23	.	.	PUNCT	LET	_	3	punct	_	_
-
-# sent_id = 5
-# text = In november 1898 verhuisde het gezin voor de laatste keer, naar Leonding niet ver van Linz.
-1	In	in	ADP	VZ|init	_	2	case	_	_
-2	november	november	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	4	obl	_	_
-3	1898	1898	NUM	TW|hoofd|vrij	_	2	nummod	_	_
-4	verhuisde	verhuizen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
-5	het	het	DET	LID|bep|stan|evon	Definite=Def	6	det	_	_
-6	gezin	gezin	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	4	nsubj	_	_
-7	voor	voor	ADP	VZ|init	_	10	case	_	_
-8	de	de	DET	LID|bep|stan|rest	Definite=Def	10	det	_	_
-9	laatste	laat	ADJ	ADJ|prenom|sup|met-e|stan	Degree=Sup	10	amod	_	_
-10	keer	keer	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	4	obl	_	SpaceAfter=No
-11	,	,	PUNCT	LET	_	13	punct	_	_
-12	naar	naar	ADP	VZ|init	_	13	case	_	_
-13	Leonding	Leonding	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	4	obl	_	_
-14	niet	niet	ADV	BW	_	15	advmod	_	_
-15	ver	ver	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	13	amod	_	_
-16	van	van	ADP	VZ|init	_	17	case	_	_
-17	Linz	Linz	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	15	obl	_	SpaceAfter=No
-18	.	.	PUNCT	LET	_	4	punct	_	SpacesAfter=\n
+24	In	in	ADP	VZ|init	_	25	case	_	_
+25	november	november	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	27	obl	_	_
+26	1898	1898	NUM	TW|hoofd|vrij	_	25	nummod	_	_
+27	verhuisde	verhuizen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	3	parataxis	_	_
+28	het	het	DET	LID|bep|stan|evon	Definite=Def	29	det	_	_
+29	gezin	gezin	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	27	nsubj	_	_
+30	voor	voor	ADP	VZ|init	_	33	case	_	_
+31	de	de	DET	LID|bep|stan|rest	Definite=Def	33	det	_	_
+32	laatste	laat	ADJ	ADJ|prenom|sup|met-e|stan	Degree=Sup	33	amod	_	_
+33	keer	keer	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	27	obl	_	SpaceAfter=No
+34	,	,	PUNCT	LET	_	36	punct	_	_
+35	naar	naar	ADP	VZ|init	_	36	case	_	_
+36	Leonding	Leonding	PROPN	N|eigen|ev|basis|genus|stan	Gender=Com,Neut|Number=Sing	27	obl	_	_
+37	niet	niet	ADV	BW	_	38	advmod	_	_
+38	ver	ver	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	27	advmod	_	_
+39	van	van	ADP	VZ|init	_	40	case	_	_
+40	Linz	Linz	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	38	obl	_	SpaceAfter=No
+41	.	.	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -3654,16 +3655,18 @@
 21	.	.	PUNCT	LET	_	4	punct	_	_
 
 # sent_id = 2
-# text = Hij werd gedwongen het sacrament toch te ontvangen.
+# text = Hij werd gedwongen het sacrament toch te ontvangen.[bron?]
 1	Hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	3	nsubj:pass	_	_
 2	werd	worden	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
 3	gedwongen	dwingen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	_
 4	het	het	DET	LID|bep|stan|evon	Definite=Def	5	det	_	_
 5	sacrament	sacrament	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	8	obj	_	_
 6	toch	toch	ADV	BW	_	8	advmod	_	_
-7	te	te	ADP	VZ|init	_	8	mark	_	_
-8	ontvangen	ontvangen	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	xcomp	_	SpaceAfter=No
-9	.	.	PUNCT	LET	_	3	punct	_	_
+7	te	te	ADP	VZ|init	_	9	mark	_	_
+8	ontvangen.[	ontvangen.[	VERB	WW|inf|vrij|zonder	VerbForm=Inf	9	acl	_	SpaceAfter=No
+9	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	xcomp	_	SpaceAfter=No
+10	?	?	PUNCT	LET	_	3	punct	_	SpaceAfter=No
+11	]	]	PUNCT	LET	_	3	punct	_	_
 
 # sent_id = 3
 # text = In 1907 bezocht Hitler als achttienjarige voor het laatst een katholieke kerkdienst waarbij hij ook ter communie ging.
@@ -3822,7 +3825,7 @@
 19	.	.	PUNCT	LET	_	7	punct	_	_
 
 # sent_id = 2
-# text = "Honden zijn mijn enige vrienden", zei hij eens.
+# text = "Honden zijn mijn enige vrienden", zei hij eens.[bron?]
 1	"	"	PUNCT	LET	_	6	punct	_	SpaceAfter=No
 2	Honden	hond	NOUN	N|soort|mv|basis	Number=Plur	6	nsubj	_	_
 3	zijn	zijn	AUX	WW|pv|tgw|mv	Number=Plur|Tense=Pres|VerbForm=Fin	6	cop	_	_
@@ -3833,8 +3836,10 @@
 8	,	,	PUNCT	LET	_	9	punct	_	_
 9	zei	zeggen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	6	parataxis	_	_
 10	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	9	nsubj	_	_
-11	eens	eens	ADV	BW	_	9	advmod	_	SpaceAfter=No
-12	.	.	PUNCT	LET	_	6	punct	_	_
+11	eens.[	eens.[	ADV	BW	_	9	advmod	_	SpaceAfter=No
+12	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	9	obj	_	SpaceAfter=No
+13	?	?	PUNCT	LET	_	6	punct	_	SpaceAfter=No
+14	]	]	PUNCT	LET	_	6	punct	_	_
 
 # sent_id = 3
 # text = Overal waar hij kwam toen hij aan de macht was, zou hij volgens ingewijden een "stijve ongemakkelijke atmosfeer" om zich heen verspreiden.
@@ -4579,7 +4584,7 @@
 9	:	:	PUNCT	LET	_	7	punct	_	_
 
 # sent_id = 4
-# text = eens zou hij woedend zijn uitgevallen tegen zijn kameraden in het leger toen die suggereerden een 'mademoiselle' te 'nemen'.
+# text = eens zou hij woedend zijn uitgevallen tegen zijn kameraden in het leger toen die suggereerden een 'mademoiselle' te 'nemen'.[bron?]
 1	eens	eens	ADV	BW	_	6	advmod	_	_
 2	zou	zullen	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	6	aux	_	_
 3	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	6	nsubj	_	_
@@ -4597,13 +4602,14 @@
 15	suggereerden	suggereren	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	6	advcl	_	_
 16	een	een	DET	LID|onbep|stan|agr	Definite=Ind	18	det	_	_
 17	'	'	PUNCT	LET	_	18	punct	_	SpaceAfter=No
-18	mademoiselle	mademoiselle	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	22	obj	_	SpaceAfter=No
+18	mademoiselle	mademoiselle	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	15	obj	_	SpaceAfter=No
 19	'	'	PUNCT	LET	_	18	punct	_	_
-20	te	te	ADP	VZ|init	_	22	mark	_	_
-21	'	'	PUNCT	LET	_	22	punct	_	SpaceAfter=No
-22	nemen	nemen	VERB	WW|inf|vrij|zonder	VerbForm=Inf	15	xcomp	_	SpaceAfter=No
-23	'	'	PUNCT	LET	_	22	punct	_	SpaceAfter=No
-24	.	.	PUNCT	LET	_	6	punct	_	_
+20	te	te	ADP	VZ|init	_	23	mark	_	_
+21	'	'	PUNCT	LET	_	23	punct	_	SpaceAfter=No
+22	nemen'.[	nemen'.[	X	TW|hoofd|prenom|stan	_	23	amod	_	SpaceAfter=No
+23	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	15	xcomp	_	SpaceAfter=No
+24	?	?	PUNCT	LET	_	6	punct	_	SpaceAfter=No
+25	]	]	PUNCT	LET	_	6	punct	_	_
 
 # sent_id = 5
 # text = Hiermee in verband stond zijn afkeer van openlijke seksualiteit.
@@ -5393,7 +5399,7 @@
 27	.	.	PUNCT	LET	_	9	punct	_	_
 
 # sent_id = 2
-# text = Dat zijn eigen luiheid en gebrek aan artistiek talent misschien debet aan het mislukken van zijn kunstenaarscarrière was, heeft hij nimmer erkend.
+# text = Dat zijn eigen luiheid en gebrek aan artistiek talent misschien debet aan het mislukken van zijn kunstenaarscarrière was, heeft hij nimmer erkend.[bron?]
 1	Dat	dat	SCONJ	VG|onder	_	11	mark	_	_
 2	zijn	zijn	PRON	VNW|bez|det|stan|vol|3|ev|prenom|zonder|agr	Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
 3	eigen	eigen	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	4	amod	_	_
@@ -5404,7 +5410,7 @@
 8	artistiek	artistiek	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	9	amod	_	_
 9	talent	talent	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	6	nmod	_	_
 10	misschien	misschien	ADV	BW	_	11	advmod	_	_
-11	debet	debet	VERB	WW|pv|tgw|met-t	Number=Sing|Tense=Pres|VerbForm=Fin	23	ccomp	_	_
+11	debet	debet	VERB	WW|pv|tgw|met-t	Number=Sing|Tense=Pres|VerbForm=Fin	20	ccomp	_	_
 12	aan	aan	ADP	VZ|init	_	14	case	_	_
 13	het	het	DET	LID|bep|stan|evon	Definite=Def	14	det	_	_
 14	mislukken	mislukken	VERB	WW|inf|nom|zonder|zonder-n	VerbForm=Inf	11	obl	_	_
@@ -5413,11 +5419,13 @@
 17	kunstenaarscarrière	kunstenaarscarrière	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	14	nmod	_	_
 18	was	zijn	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	11	cop	_	SpaceAfter=No
 19	,	,	PUNCT	LET	_	11	punct	_	_
-20	heeft	hebben	AUX	WW|pv|tgw|met-t	Number=Sing|Tense=Pres|VerbForm=Fin	23	aux	_	_
-21	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	23	nsubj	_	_
-22	nimmer	nimmer	ADV	BW	_	23	advmod	_	_
-23	erkend	erkennen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
-24	.	.	PUNCT	LET	_	23	punct	_	SpacesAfter=\n
+20	heeft	hebben	VERB	WW|pv|tgw|met-t	Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
+21	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	20	nsubj	_	_
+22	nimmer	nimmer	ADV	BW	_	20	advmod	_	_
+23	erkend.[	erkend.[	VERB	WW|vd|vrij|zonder	VerbForm=Part	24	amod	_	SpaceAfter=No
+24	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	20	obj	_	SpaceAfter=No
+25	?	?	PUNCT	LET	_	20	punct	_	SpaceAfter=No
+26	]	]	PUNCT	LET	_	20	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -7362,7 +7370,7 @@
 15	.	.	PUNCT	LET	_	13	punct	_	_
 
 # sent_id = 6
-# text = Hitler reisde naar Salzburg en werd daar uiteindelijk afgekeurd voor militaire dienst.
+# text = Hitler reisde naar Salzburg en werd daar uiteindelijk afgekeurd voor militaire dienst.[bron?]
 1	Hitler	Hitler	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	nsubj	_	_
 2	reisde	reizen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
 3	naar	naar	ADP	VZ|init	_	4	case	_	_
@@ -7372,10 +7380,12 @@
 7	daar	daar	ADV	VNW|aanw|adv-pron|obl|vol|3o|getal	_	9	advmod	_	_
 8	uiteindelijk	uiteindelijk	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	9	advmod	_	_
 9	afgekeurd	afkeuren	VERB	WW|vd|vrij|zonder	VerbForm=Part	2	conj	_	_
-10	voor	voor	ADP	VZ|init	_	12	case	_	_
+10	voor	voor	ADP	VZ|init	_	13	case	_	_
 11	militaire	militair	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	12	amod	_	_
-12	dienst	dienst	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	9	obl	_	SpaceAfter=No
-13	.	.	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
+12	dienst.[	dienst.[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	13	nmod	_	SpaceAfter=No
+13	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	9	obl	_	SpaceAfter=No
+14	?	?	PUNCT	LET	_	2	punct	_	SpaceAfter=No
+15	]	]	PUNCT	LET	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -8594,7 +8604,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Ondanks zijn staat van dienst is Gefreiter Hitler nooit bevorderd, omdat zijn superieuren vonden dat hij geen leidinggevende capaciteiten had.
+# text = Ondanks zijn staat van dienst is Gefreiter Hitler nooit bevorderd, omdat zijn superieuren vonden dat hij geen leidinggevende capaciteiten had.[bron?]
 1	Ondanks	ondanks	ADP	VZ|init	_	3	case	_	_
 2	zijn	zijn	PRON	VNW|bez|det|stan|vol|3|ev|prenom|zonder|agr	Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
 3	staat	staat	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	10	obl	_	_
@@ -8615,8 +8625,10 @@
 18	geen	geen	DET	VNW|onbep|det|stan|prenom|zonder|agr	_	20	det	_	_
 19	leidinggevende	leidinggevend	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	20	amod	_	_
 20	capaciteiten	capaciteit	NOUN	N|soort|mv|basis	Number=Plur	21	obj	_	_
-21	had	hebben	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	15	ccomp	_	SpaceAfter=No
-22	.	.	PUNCT	LET	_	10	punct	_	_
+21	had.[	had.[	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	15	ccomp	_	SpaceAfter=No
+22	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	21	xcomp	_	SpaceAfter=No
+23	?	?	PUNCT	LET	_	10	punct	_	SpaceAfter=No
+24	]	]	PUNCT	LET	_	10	punct	_	_
 
 # sent_id = 2
 # text = De loopgraafmilitairen hebben hem echter altijd beschouwd als een "Etappenschwein" (achterhoedevarken), omdat hij het minder zwaar had gehad dan zij.
@@ -9052,7 +9064,7 @@
 45	.	.	PUNCT	LET	_	16	punct	_	_
 
 # sent_id = 3
-# text = Van buitengewoon grote moed zou tijdens het optreden van de koeriers geen sprake zijn geweest.
+# text = Van buitengewoon grote moed zou tijdens het optreden van de koeriers geen sprake zijn geweest.[bron?]
 1	Van	van	ADP	VZ|init	_	4	case	_	_
 2	buitengewoon	buitengewoon	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	3	advmod	_	_
 3	grote	groot	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	4	amod	_	_
@@ -9066,9 +9078,11 @@
 11	koeriers	koerier	NOUN	N|soort|mv|basis	Number=Plur	8	nmod	_	_
 12	geen	geen	DET	VNW|onbep|det|stan|prenom|zonder|agr	_	13	det	_	_
 13	sprake	sprake	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	15	nsubj	_	_
-14	zijn	zijn	AUX	WW|inf|vrij|zonder	VerbForm=Inf	15	aux	_	_
-15	geweest	zijn	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
-16	.	.	PUNCT	LET	_	15	punct	_	SpacesAfter=\n
+14	zijn	zijn	AUX	WW|inf|vrij|zonder	VerbForm=Inf	15	aux:pass	_	_
+15	geweest.[	geweest.[	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
+16	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	15	obj	_	SpaceAfter=No
+17	?	?	PUNCT	LET	_	15	punct	_	SpaceAfter=No
+18	]	]	PUNCT	LET	_	15	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -9327,23 +9341,26 @@
 15	.	.	PUNCT	LET	_	2	punct	_	_
 
 # sent_id = 5
-# text = Tot Hitlers verrassing bleek de partij nationalistisch, maar verder was het een armzalig zooitje.
+# text = Tot Hitlers verrassing[bron?] bleek de partij nationalistisch, maar verder was het een armzalig zooitje.
 1	Tot	tot	ADP	VZ|init	_	3	case	_	_
 2	Hitlers	Hitler	PROPN	N|eigen|ev|basis|gen	Number=Sing	3	nmod:poss	_	_
-3	verrassing	verrassing	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	4	obl	_	_
-4	bleek	blijken	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
-5	de	de	DET	LID|bep|stan|rest	Definite=Def	6	det	_	_
-6	partij	partij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	4	nsubj	_	_
-7	nationalistisch	nationalistisch	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	4	xcomp	_	SpaceAfter=No
-8	,	,	PUNCT	LET	_	15	punct	_	_
-9	maar	maar	CCONJ	VG|neven	_	15	cc	_	_
-10	verder	verder	ADJ	ADJ|vrij|comp|zonder	Degree=Cmp	15	advmod	_	_
-11	was	zijn	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	15	cop	_	_
-12	het	het	PRON	VNW|pers|pron|stan|red|3|ev|onz	Person=3|PronType=Prs	15	nsubj	_	_
-13	een	een	DET	LID|onbep|stan|agr	Definite=Ind	15	det	_	_
-14	armzalig	armzalig	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	15	amod	_	_
-15	zooitje	zooi	NOUN	N|soort|ev|dim|onz|stan	Gender=Neut|Number=Sing	4	conj	_	SpaceAfter=No
-16	.	.	PUNCT	LET	_	4	punct	_	_
+3	verrassing[	verrassing[	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	7	obl	_	SpaceAfter=No
+4	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	appos	_	SpaceAfter=No
+5	?	?	PUNCT	LET	_	4	punct	_	SpaceAfter=No
+6	]	]	PUNCT	LET	_	3	punct	_	_
+7	bleek	blijken	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+8	de	de	DET	LID|bep|stan|rest	Definite=Def	9	det	_	_
+9	partij	partij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	7	nsubj	_	_
+10	nationalistisch	nationalistisch	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	7	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	LET	_	18	punct	_	_
+12	maar	maar	CCONJ	VG|neven	_	18	cc	_	_
+13	verder	verder	ADJ	ADJ|vrij|comp|zonder	Degree=Cmp	18	advmod	_	_
+14	was	zijn	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	18	cop	_	_
+15	het	het	PRON	VNW|pers|pron|stan|red|3|ev|onz	Person=3|PronType=Prs	18	nsubj	_	_
+16	een	een	DET	LID|onbep|stan|agr	Definite=Ind	18	det	_	_
+17	armzalig	armzalig	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	18	amod	_	_
+18	zooitje	zooi	NOUN	N|soort|ev|dim|onz|stan	Gender=Neut|Number=Sing	7	conj	_	SpaceAfter=No
+19	.	.	PUNCT	LET	_	7	punct	_	_
 
 # sent_id = 6
 # text = Het aantal leden bedroeg nog geen vijfhonderd, van wie misschien vijftig actief waren, en het batig kassaldo bedroeg ongeveer vijftig Papiermark.
@@ -9373,7 +9390,7 @@
 24	.	.	PUNCT	LET	_	4	punct	_	_
 
 # sent_id = 7
-# text = Net toen Hitler aanstalten maakte om weg te gaan, maakte een "professor" opmerkingen die Hitler razend maakten.
+# text = Net toen Hitler aanstalten maakte om weg te gaan, maakte een "professor" opmerkingen die Hitler razend maakten.[bron?]
 1	Net	net	ADV	BW	_	5	advmod	_	_
 2	toen	toen	SCONJ	VG|onder	_	5	mark	_	_
 3	Hitler	Hitler	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	nsubj	_	_
@@ -9392,9 +9409,11 @@
 16	opmerkingen	opmerking	NOUN	N|soort|mv|basis	Number=Plur	11	obj	_	_
 17	die	die	PRON	VNW|betr|pron|stan|vol|persoon|getal	PronType=Rel	20	nsubj	_	_
 18	Hitler	Hitler	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	20	obj	_	_
-19	razend	razen	VERB	WW|od|vrij|zonder	VerbForm=Part	20	xcomp	_	_
-20	maakten	maken	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	16	acl:relcl	_	SpaceAfter=No
-21	.	.	PUNCT	LET	_	11	punct	_	_
+19	razend	razen	VERB	WW|od|vrij|zonder	VerbForm=Part	21	obl	_	_
+20	maakten.[	maakten.[	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	16	acl:relcl	_	SpaceAfter=No
+21	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	20	obj	_	SpaceAfter=No
+22	?	?	PUNCT	LET	_	11	punct	_	SpaceAfter=No
+23	]	]	PUNCT	LET	_	11	punct	_	_
 
 # sent_id = 8
 # text = Hij nam het woord en sprak de vergadering heftig toe, tot de professor vertrok.
@@ -9622,7 +9641,7 @@
 10	.	.	PUNCT	LET	_	2	punct	_	_
 
 # sent_id = 8
-# text = De administratie begon echter met nummer 501 om zo de partij groter te laten lijken.
+# text = De administratie begon echter met nummer 501 om zo de partij groter te laten lijken.[bron?]
 1	De	de	DET	LID|bep|stan|rest	Definite=Def	2	det	_	_
 2	administratie	administratie	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	nsubj	_	_
 3	begon	beginnen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -9633,12 +9652,14 @@
 8	om	om	ADP	VZ|init	_	14	mark	_	_
 9	zo	zo	ADV	BW	_	14	advmod	_	_
 10	de	de	DET	LID|bep|stan|rest	Definite=Def	11	det	_	_
-11	partij	partij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	15	obj	_	_
+11	partij	partij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	14	obj	_	_
 12	groter	groot	ADJ	ADJ|vrij|comp|zonder	Degree=Cmp	14	advmod	_	_
 13	te	te	ADP	VZ|init	_	14	mark	_	_
 14	laten	laten	VERB	WW|inf|vrij|zonder	VerbForm=Inf	3	advcl	_	_
-15	lijken	lijken	VERB	WW|inf|vrij|zonder	VerbForm=Inf	14	xcomp	_	SpaceAfter=No
-16	.	.	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
+15	lijken.[	lijken.[	VERB	WW|inf|vrij|zonder	VerbForm=Inf	16	amod	_	SpaceAfter=No
+16	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	14	obj	_	SpaceAfter=No
+17	?	?	PUNCT	LET	_	3	punct	_	SpaceAfter=No
+18	]	]	PUNCT	LET	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -11204,43 +11225,56 @@
 29	.	.	PUNCT	LET	_	2	punct	_	_
 
 # sent_id = 2
-# text = Ondanks de slachtoffers, die door Hitlers mislukte 'putsch' gevallen waren, werd hij coulant behandeld door de rechtbank, bemand door conservatieve rechters die waarschijnlijk sympathiek tegenover zijn denkbeelden stonden.
+# text = Ondanks de slachtoffers die door Hitlers mislukte 'putsch' gevallen waren, werd hij coulant behandeld door de rechtbank.
 1	Ondanks	ondanks	ADP	VZ|init	_	3	case	_	_
 2	de	de	DET	LID|bep|stan|rest	Definite=Def	3	det	_	_
-3	slachtoffers	slachtoffer	NOUN	N|soort|mv|basis	Number=Plur	18	obl	_	SpaceAfter=No
-4	,	,	PUNCT	LET	_	12	punct	_	_
-5	die	die	PRON	VNW|betr|pron|stan|vol|persoon|getal	PronType=Rel	12	nsubj	_	_
-6	door	door	ADP	VZ|init	_	10	case	_	_
-7	Hitlers	Hitler	PROPN	N|eigen|ev|basis|gen	Number=Sing	10	nmod:poss	_	_
-8	mislukte	mislukken	VERB	WW|vd|prenom|met-e	VerbForm=Part	10	amod	_	_
-9	'	'	PUNCT	LET	_	10	punct	_	SpaceAfter=No
-10	putsch	putsch	NOUN	SPEC|vreemd	Foreign=Yes	12	obl	_	SpaceAfter=No
-11	'	'	PUNCT	LET	_	10	punct	_	_
-12	gevallen	vallen	VERB	WW|vd|vrij|zonder	VerbForm=Part	3	acl:relcl	_	_
-13	waren	zijn	AUX	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	12	aux	_	SpaceAfter=No
-14	,	,	PUNCT	LET	_	3	punct	_	_
-15	werd	worden	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	18	aux:pass	_	_
-16	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	18	nsubj:pass	_	_
-17	coulant	coulant	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	18	advmod	_	_
-18	behandeld	behandelen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	_
-19	door	door	ADP	VZ|init	_	21	case	_	_
-20	de	de	DET	LID|bep|stan|rest	Definite=Def	21	det	_	_
-21	rechtbank	rechtbank	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	18	obl:agent	_	SpaceAfter=No
-22	,	,	PUNCT	LET	_	23	punct	_	_
-23	bemand	bemannen	VERB	WW|vd|vrij|zonder	VerbForm=Part	18	advcl	_	_
-24	door	door	ADP	VZ|init	_	26	case	_	_
-25	conservatieve	conservatief	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	26	amod	_	_
-26	rechters	rechter	NOUN	N|soort|mv|basis	Number=Plur	23	obl	_	_
-27	die	die	PRON	VNW|betr|pron|stan|vol|persoon|getal	PronType=Rel	33	nsubj	_	_
-28	waarschijnlijk	waarschijnlijk	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	33	advmod	_	_
-29	sympathiek	sympathiek	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	33	advmod	_	_
-30	tegenover	tegenover	ADP	VZ|init	_	32	case	_	_
-31	zijn	zijn	PRON	VNW|bez|det|stan|vol|3|ev|prenom|zonder|agr	Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
-32	denkbeelden	denkbeeld	NOUN	N|soort|mv|basis	Number=Plur	33	obl	_	_
-33	stonden	staan	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	26	acl:relcl	_	SpaceAfter=No
-34	.	.	PUNCT	LET	_	18	punct	_	_
+3	slachtoffers	slachtoffer	NOUN	N|soort|mv|basis	Number=Plur	17	obl	_	_
+4	die	die	PRON	VNW|betr|pron|stan|vol|persoon|getal	PronType=Rel	11	nsubj	_	_
+5	door	door	ADP	VZ|init	_	9	case	_	_
+6	Hitlers	Hitler	PROPN	N|eigen|ev|basis|gen	Number=Sing	9	nmod:poss	_	_
+7	mislukte	mislukken	VERB	WW|vd|prenom|met-e	VerbForm=Part	9	amod	_	_
+8	'	'	PUNCT	LET	_	9	punct	_	SpaceAfter=No
+9	putsch	putsch	NOUN	SPEC|vreemd	Foreign=Yes	11	obl	_	SpaceAfter=No
+10	'	'	PUNCT	LET	_	9	punct	_	_
+11	gevallen	vallen	VERB	WW|vd|vrij|zonder	VerbForm=Part	3	acl:relcl	_	_
+12	waren	zijn	AUX	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	11	aux	_	SpaceAfter=No
+13	,	,	PUNCT	LET	_	3	punct	_	_
+14	werd	worden	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	17	aux:pass	_	_
+15	hij	hij	PRON	VNW|pers|pron|nomin|vol|3|ev|masc	Case=Nom|Person=3|PronType=Prs	17	nsubj:pass	_	_
+16	coulant	coulant	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	17	advmod	_	_
+17	behandeld	behandelen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	_
+18	door	door	ADP	VZ|init	_	20	case	_	_
+19	de	de	DET	LID|bep|stan|rest	Definite=Def	20	det	_	_
+20	rechtbank	rechtbank	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	17	obl:agent	_	SpaceAfter=No
+21	.	.	PUNCT	LET	_	17	punct	_	_
 
 # sent_id = 3
+# text = De conservatieve rechters, en in het bijzonder voorzitter Georg Neithardt, sympathiseerden met zijn denkbeelden en gaven hem een geweldig platform.
+1	De	de	DET	LID|bep|stan|rest	Definite=Def	3	det	_	_
+2	conservatieve	conservatief	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	3	amod	_	_
+3	rechters	rechter	NOUN	N|soort|mv|basis	Number=Plur	13	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	LET	_	9	punct	_	_
+5	en	en	CCONJ	VG|neven	_	9	cc	_	_
+6	in	in	ADP	VZ|init	_	8	case	_	_
+7	het	het	DET	LID|bep|stan|evon	Definite=Def	8	det	_	_
+8	bijzonder	bijzonder	ADJ	ADJ|nom|basis|zonder|zonder-n	Degree=Pos	9	nmod	_	_
+9	voorzitter	voorzitter	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	conj	_	_
+10	Georg	Georg	PROPN	SPEC|deeleigen	_	9	appos	_	_
+11	Neithardt	Neithardt	PROPN	SPEC|deeleigen	_	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	LET	_	3	punct	_	_
+13	sympathiseerden	sympathiseren	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
+14	met	met	ADP	VZ|init	_	16	case	_	_
+15	zijn	zijn	PRON	VNW|bez|det|stan|vol|3|ev|prenom|zonder|agr	Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	denkbeelden	denkbeeld	NOUN	N|soort|mv|basis	Number=Plur	13	obl	_	_
+17	en	en	CCONJ	VG|neven	_	18	cc	_	_
+18	gaven	geven	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	13	conj	_	_
+19	hem	hem	PRON	VNW|pers|pron|obl|vol|3|ev|masc	Case=Acc|Person=3|PronType=Prs	18	iobj	_	_
+20	een	een	DET	LID|onbep|stan|agr	Definite=Ind	22	det	_	_
+21	geweldig	geweldig	ADJ	ADJ|prenom|basis|zonder	Degree=Pos	22	amod	_	_
+22	platform	platform	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	18	obj	_	SpaceAfter=No
+23	.	.	PUNCT	LET	_	13	punct	_	_
+
+# sent_id = 4
 # text = Dat er vraagtekens bij de neutraliteit van de toenmalige Beierse rechtbank gezet kunnen worden blijkt uit de bestraffing van linkse verdachten:
 1	Dat	dat	SCONJ	VG|onder	_	12	mark	_	_
 2	er	er	ADV	VNW|aanw|adv-pron|stan|red|3|getal	_	12	advmod	_	_
@@ -11265,7 +11299,7 @@
 21	verdachten	verdacht	NOUN	N|soort|mv|basis	Number=Plur	18	nmod	_	SpaceAfter=No
 22	:	:	PUNCT	LET	_	15	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = communistische relschoppers werden meestal veel zwaarder gestraft.
 1	communistische	communistisch	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	2	amod	_	_
 2	relschoppers	relschopper	NOUN	N|soort|mv|basis	Number=Plur	7	nsubj:pass	_	_
@@ -11276,7 +11310,7 @@
 7	gestraft	straffen	VERB	WW|vd|vrij|zonder	VerbForm=Part	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	LET	_	7	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = Hitler werd veroordeeld tot vijf jaar gevangenschap.
 1	Hitler	Hitler	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	3	nsubj:pass	_	_
 2	werd	worden	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
@@ -11287,7 +11321,7 @@
 7	gevangenschap	gevangenschap	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	6	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	LET	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = Van de vijf jaar zat hij slechts 264 dagen uit in de gevangenis van Landsberg, onder tamelijk comfortabele omstandigheden.
 1	Van	van	ADP	VZ|init	_	4	case	_	_
 2	de	de	DET	LID|bep|stan|rest	Definite=Def	4	det	_	_
@@ -11311,7 +11345,7 @@
 20	omstandigheden	omstandigheid	NOUN	N|soort|mv|basis	Number=Plur	5	obl	_	SpaceAfter=No
 21	.	.	PUNCT	LET	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 8
 # text = Op 20 december 1924, ruim een halve week voor kerst, werd hij alweer vrijgelaten.
 1	Op	op	ADP	VZ|init	_	2	case	_	_
 2	20	20	NUM	TW|hoofd|vrij	_	16	obl	_	_
@@ -15769,7 +15803,7 @@
 6	.	.	PUNCT	LET	_	5	punct	_	_
 
 # sent_id = 5
-# text = De rechters van Neurenberg noemden het later "slavernij".
+# text = De rechters van Neurenberg noemden het later "slavernij".[bron?]
 1	De	de	DET	LID|bep|stan|rest	Definite=Def	2	det	_	_
 2	rechters	rechter	NOUN	N|soort|mv|basis	Number=Plur	5	nsubj	_	_
 3	van	van	ADP	VZ|init	_	4	case	_	_
@@ -15777,10 +15811,11 @@
 5	noemden	noemen	VERB	WW|pv|verl|mv	Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
 6	het	het	PRON	VNW|pers|pron|stan|red|3|ev|onz	Person=3|PronType=Prs	5	obj	_	_
 7	later	laat	ADJ	ADJ|vrij|comp|zonder	Degree=Cmp	5	advmod	_	_
-8	"	"	PUNCT	LET	_	9	punct	_	SpaceAfter=No
-9	slavernij	slavernij	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	xcomp	_	SpaceAfter=No
-10	"	"	PUNCT	LET	_	9	punct	_	SpaceAfter=No
-11	.	.	PUNCT	LET	_	5	punct	_	_
+8	"	"	PUNCT	LET	_	10	punct	_	SpaceAfter=No
+9	slavernij".[	slavernij".[	ADJ	ADJ|prenom|basis|met-e|stan	_	10	amod	_	SpaceAfter=No
+10	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	5	xcomp	_	SpaceAfter=No
+11	?	?	PUNCT	LET	_	5	punct	_	SpaceAfter=No
+12	]	]	PUNCT	LET	_	5	punct	_	_
 
 # sent_id = 6
 # text = Tijdens de Wannseeconferentie (januari 1942), waar 15 nazileiders, maar niet Hitler zelf, bijeen waren gekomen om tot een "definitieve oplossing" (Endlösung) van het "Jodenvraagstuk" (Judenfrage) te komen, werd besloten om de circa 10 miljoen Europese Joden systematisch om te brengen.
@@ -15967,7 +16002,7 @@
 14	:	:	PUNCT	LET	_	4	punct	_	_
 
 # sent_id = 4
-# text = dingen doen waar geen opdracht voor gegeven was maar waar wel de ruimte voor was gegeven en waarvan verondersteld werd dat dit in de geest van de Führer was, aldus Hitlers biograaf Ian Kershaw.
+# text = dingen doen waar geen opdracht voor gegeven was maar waar wel de ruimte voor was gegeven en waarvan verondersteld werd dat dit in de geest van de Führer was, aldus Hitlers biograaf Ian Kershaw.[bron?]
 1	dingen	dingen	NOUN	N|soort|mv|basis	Number=Plur	2	obj	_	_
 2	doen	doen	VERB	WW|inf|vrij|zonder	VerbForm=Inf	0	root	_	_
 3	waar	waar	ADV	VNW|vb|adv-pron|obl|vol|3o|getal	_	7	obj	_	_
@@ -16002,8 +16037,10 @@
 32	Hitlers	Hitler	PROPN	N|eigen|ev|basis|gen	Number=Sing	33	nmod:poss	_	_
 33	biograaf	biograaf	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	parataxis	_	_
 34	Ian	Ian	PROPN	SPEC|deeleigen	_	33	appos	_	_
-35	Kershaw	Kershaw	PROPN	SPEC|deeleigen	_	34	flat	_	SpaceAfter=No
-36	.	.	PUNCT	LET	_	2	punct	_	_
+35	Kershaw.[	Kershaw.[	PROPN	SPEC|deeleigen	_	34	flat	_	SpaceAfter=No
+36	bron	bron	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	33	parataxis	_	SpaceAfter=No
+37	?	?	PUNCT	LET	_	2	punct	_	SpaceAfter=No
+38	]	]	PUNCT	LET	_	33	punct	_	_
 
 # sent_id = 5
 # text = Zo kon Hitler (voor zichzelf) schone handen houden.
@@ -16104,7 +16141,7 @@
 15	.	.	PUNCT	LET	_	14	punct	_	_
 
 # sent_id = 10
-# text = Bekend is het volgende citaat uit Hitlers toespraak van 30 januari 1939 " ‘als het internationale Finanzjudentum binnen en buiten Europa erin zou slagen de volkeren nogmaals in een wereldoorlog te storten, dan zal het resultaat niet de zege van de joden zijn, maar de vernietiging van het joodse ras in Europa!"
+# text = Bekend is het volgende citaat uit Hitlers toespraak van 30 januari 1939 " ‘als het internationale Finanzjudentum binnen en buiten Europa erin zou slagen de volkeren nogmaals in een wereldoorlog te storten, dan zal het resultaat niet [de bolsjewisering van de aarde en daardoor] de zege van de joden zijn, maar de vernietiging van het joodse ras in Europa!"
 1	Bekend	bekend	ADJ	ADJ|vrij|basis|zonder	Degree=Pos	0	root	_	_
 2	is	zijn	AUX	WW|pv|tgw|ev	Number=Sing|Tense=Pres|VerbForm=Fin	1	cop	_	_
 3	het	het	DET	LID|bep|stan|evon	Definite=Def	5	det	_	_
@@ -16128,7 +16165,7 @@
 21	Europa	Europa	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	18	conj	_	_
 22	erin	erin	ADV	BW	_	32	case	_	_
 23	zou	zullen	AUX	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	24	aux	_	_
-24	slagen	slagen	VERB	WW|inf|vrij|zonder	VerbForm=Inf	5	acl	_	_
+24	slagen	slagen	VERB	WW|inf|vrij|zonder	VerbForm=Inf	1	advcl	_	_
 25	de	de	DET	LID|bep|stan|rest	Definite=Def	26	det	_	_
 26	volkeren	volk	NOUN	N|soort|mv|basis	Number=Plur	32	obj	_	_
 27	nogmaals	nogmaals	ADV	BW	_	32	advmod	_	_
@@ -16138,29 +16175,38 @@
 31	te	te	ADP	VZ|init	_	32	mark	_	_
 32	storten	storten	VERB	WW|inf|vrij|zonder	VerbForm=Inf	24	xcomp	_	SpaceAfter=No
 33	,	,	PUNCT	LET	_	24	punct	_	_
-34	dan	dan	ADV	BW	_	40	advmod	_	_
-35	zal	zullen	AUX	WW|pv|tgw|ev	Number=Sing|Tense=Pres|VerbForm=Fin	40	aux	_	_
+34	dan	dan	ADV	BW	_	49	advmod	_	_
+35	zal	zullen	AUX	WW|pv|tgw|ev	Number=Sing|Tense=Pres|VerbForm=Fin	49	aux	_	_
 36	het	het	DET	LID|bep|stan|evon	Definite=Def	37	det	_	_
-37	resultaat	resultaat	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	40	nsubj	_	_
-38	niet	niet	ADV	BW	_	40	advmod	_	SpacesAfter=\s\s
-39	de	de	DET	LID|bep|stan|rest	Definite=Def	40	det	_	_
-40	zege	zege	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	_
-41	van	van	ADP	VZ|init	_	43	case	_	_
-42	de	de	DET	LID|bep|stan|rest	Definite=Def	43	det	_	_
-43	joden	jood	NOUN	N|soort|mv|basis	Number=Plur	40	nmod	_	_
-44	zijn	zijn	AUX	WW|inf|vrij|zonder	VerbForm=Inf	40	cop	_	SpaceAfter=No
-45	,	,	PUNCT	LET	_	48	punct	_	_
-46	maar	maar	CCONJ	VG|neven	_	48	cc	_	_
-47	de	de	DET	LID|bep|stan|rest	Definite=Def	48	det	_	_
-48	vernietiging	vernietiging	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	40	conj	_	_
-49	van	van	ADP	VZ|init	_	52	case	_	_
-50	het	het	DET	LID|bep|stan|evon	Definite=Def	52	det	_	_
-51	joodse	joods	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	52	amod	_	_
-52	ras	ras	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	48	nmod	_	_
-53	in	in	ADP	VZ|init	_	54	case	_	_
-54	Europa	Europa	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	52	nmod	_	SpaceAfter=No
-55	!	!	PUNCT	LET	_	40	punct	_	SpaceAfter=No
-56	"	"	PUNCT	LET	_	40	punct	_	SpacesAfter=\n
+37	resultaat	resultaat	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	49	nsubj	_	_
+38	niet	niet	ADV	BW	_	41	cc	_	_
+39	[	[	PUNCT	LET	_	41	punct	_	SpaceAfter=No
+40	de	de	DET	LID|bep|stan|rest	Definite=Def	41	det	_	_
+41	bolsjewisering	bolsjewisering	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	1	parataxis	_	_
+42	van	van	ADP	VZ|init	_	44	case	_	_
+43	de	de	DET	LID|bep|stan|rest	Definite=Def	44	det	_	_
+44	aarde	aarde	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	41	nmod	_	_
+45	en	en	CCONJ	VG|neven	_	46	cc	_	_
+46	daardoor	daardoor	ADV	BW	_	44	conj	_	SpaceAfter=No
+47	]	]	PUNCT	LET	_	41	punct	_	_
+48	de	de	DET	LID|bep|stan|rest	Definite=Def	49	det	_	_
+49	zege	zege	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	41	conj	_	_
+50	van	van	ADP	VZ|init	_	52	case	_	_
+51	de	de	DET	LID|bep|stan|rest	Definite=Def	52	det	_	_
+52	joden	jood	NOUN	N|soort|mv|basis	Number=Plur	49	nmod	_	_
+53	zijn	zijn	AUX	WW|inf|vrij|zonder	VerbForm=Inf	49	cop	_	SpaceAfter=No
+54	,	,	PUNCT	LET	_	57	punct	_	_
+55	maar	maar	CCONJ	VG|neven	_	57	cc	_	_
+56	de	de	DET	LID|bep|stan|rest	Definite=Def	57	det	_	_
+57	vernietiging	vernietiging	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	41	conj	_	_
+58	van	van	ADP	VZ|init	_	61	case	_	_
+59	het	het	DET	LID|bep|stan|evon	Definite=Def	61	det	_	_
+60	joodse	joods	ADJ	ADJ|prenom|basis|met-e|stan	Degree=Pos	61	amod	_	_
+61	ras	ras	NOUN	N|soort|ev|basis|onz|stan	Gender=Neut|Number=Sing	57	nmod	_	_
+62	in	in	ADP	VZ|init	_	63	case	_	_
+63	Europa	Europa	PROPN	N|eigen|ev|basis|onz|stan	Gender=Neut|Number=Sing	61	nmod	_	SpaceAfter=No
+64	!	!	PUNCT	LET	_	1	punct	_	SpaceAfter=No
+65	"	"	PUNCT	LET	_	41	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = dutch-alpino-ud-2.6-200830
@@ -16292,7 +16338,7 @@
 18	.	.	PUNCT	LET	_	4	punct	_	_
 
 # sent_id = 5
-# text = Hitler hoopte zelfs op een bondgenootschap met het Verenigd Koninkrijk, net zoals keizer Wilhelm II aan de vooravond van de Eerste Wereldoorlog.
+# text = Hitler hoopte zelfs op een bondgenootschap met het Verenigd Koninkrijk,[bron?] net zoals keizer Wilhelm II aan de vooravond van de Eerste Wereldoorlog.
 1	Hitler	Hitler	PROPN	N|eigen|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	nsubj	_	_
 2	hoopte	hopen	VERB	WW|pv|verl|ev	Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
 3	zelfs	zelfs	ADV	BW	_	2	advmod	_	_
@@ -16302,21 +16348,23 @@
 7	met	met	ADP	VZ|init	_	9	case	_	_
 8	het	het	DET	LID|bep|stan|evon	Definite=Def	9	det	_	_
 9	Verenigd	Verenigd	PROPN	SPEC|deeleigen	_	6	nmod	_	_
-10	Koninkrijk	Koninkrijk	PROPN	SPEC|deeleigen	_	9	flat	_	SpaceAfter=No
-11	,	,	PUNCT	LET	_	14	punct	_	_
-12	net	net	ADV	BW	_	14	advmod	_	_
-13	zoals	zoals	SCONJ	VG|onder	_	14	mark	_	_
-14	keizer	keizer	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	advcl	_	_
-15	Wilhelm	Wilhelm	PROPN	SPEC|deeleigen	_	14	appos	_	_
-16	II	II	PROPN	SPEC|deeleigen	_	15	flat	_	_
-17	aan	aan	ADP	VZ|init	_	19	case	_	_
-18	de	de	DET	LID|bep|stan|rest	Definite=Def	19	det	_	_
-19	vooravond	vooravond	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	14	nmod	_	_
-20	van	van	ADP	VZ|init	_	22	case	_	_
-21	de	de	DET	LID|bep|stan|rest	Definite=Def	22	det	_	_
-22	Eerste	Eerste	PROPN	SPEC|deeleigen	_	19	nmod	_	_
-23	Wereldoorlog	Wereldoorlog	PROPN	SPEC|deeleigen	_	22	flat	_	SpaceAfter=No
-24	.	.	PUNCT	LET	_	2	punct	_	_
+10	Koninkrijk,[	Koninkrijk,[	PROPN	SPEC|deeleigen	_	9	flat	_	SpaceAfter=No
+11	bron	bron	NOUN	ADJ|vrij|basis|zonder	Degree=Pos	9	nmod	_	SpaceAfter=No
+12	?	?	PUNCT	LET	_	11	punct	_	SpaceAfter=No
+13	]	]	PUNCT	LET	_	16	punct	_	_
+14	net	net	ADV	BW	_	16	advmod	_	_
+15	zoals	zoals	SCONJ	VG|onder	_	16	mark	_	_
+16	keizer	keizer	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	2	advcl	_	_
+17	Wilhelm	Wilhelm	PROPN	SPEC|deeleigen	_	16	appos	_	_
+18	II	II	PROPN	SPEC|deeleigen	_	17	flat	_	_
+19	aan	aan	ADP	VZ|init	_	21	case	_	_
+20	de	de	DET	LID|bep|stan|rest	Definite=Def	21	det	_	_
+21	vooravond	vooravond	NOUN	N|soort|ev|basis|zijd|stan	Gender=Com|Number=Sing	16	nmod	_	_
+22	van	van	ADP	VZ|init	_	24	case	_	_
+23	de	de	DET	LID|bep|stan|rest	Definite=Def	24	det	_	_
+24	Eerste	Eerste	PROPN	SPEC|deeleigen	_	21	nmod	_	_
+25	Wereldoorlog	Wereldoorlog	PROPN	SPEC|deeleigen	_	24	flat	_	SpaceAfter=No
+26	.	.	PUNCT	LET	_	2	punct	_	_
 
 # sent_id = 6
 # text = Hitler maakte mogelijk de miscalculatie dat het voor het Verenigd Koninkrijk niet acceptabel zou zijn dat één land het hele Europese vasteland onder controle zou hebben.

@@ -6488,7 +6488,7 @@
 42	.	.	PUNCT	PUNCT	PunctType=Peri	16	punct	_	_
 
 # sent_id = 3
-# text = El pozole, por otro lado, es un platillo tradicional al que se le pueden agregar distintos tipos de carnes y se caracteriza por tener un grano de maíz considerablemente más grande que el de los esquites, llamado cacahuazintle (o cacahuacintle), que en náhuatl significa ‘maíz cacao’ (cacawa + sentli), en referencia al tamaño del grano.
+# text = El pozole, por otro lado, es un platillo tradicional al que se le pueden agregar distintos tipos de carnes y se caracteriza por tener un grano de maíz considerablemente más grande que el de los esquites, llamado cacahuazintle (o cacahuacintle), que en náhuatl significa ‘maíz cacao’ (cacawa[tl] + sentli), en referencia al tamaño del grano.
 1	El	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	pozole	pozole	NOUN	NOUN	Gender=Masc|Number=Sing	10	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PUNCT	PunctType=Comm	4	punct	_	_
@@ -6542,18 +6542,20 @@
 51	‘maíz	‘maíz	NOUN	NOUN	_	50	obj	_	_
 52	cacao’	cacao’	NOUN	NOUN	_	51	compound	_	_
 53	(	(	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	54	punct	_	SpaceAfter=No
-54	cacawa	cacawa	NOUN	NOUN	_	51	appos	_	_
-55	+	+	SYM	NOUN	_	54	compound	_	_
-56	sentli	sentli	NOUN	NOUN	_	54	compound	_	SpaceAfter=No
-57	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	54	punct	_	SpaceAfter=No
-58	,	,	PUNCT	PUNCT	PunctType=Comm	62	punct	_	_
-59	en	en	ADP	ADP	AdpType=Prep	62	case	_	_
-60	referencia	referencia	NOUN	NOUN	_	59	fixed	_	_
-61	al	al	ADP	ADP	AdpType=Preppron	59	fixed	_	_
-62	tamaño	tamaño	NOUN	NOUN	Gender=Masc|Number=Sing	50	obl	_	_
-63	del	del	ADP	ADP	AdpType=Preppron	64	case	_	_
-64	grano	grano	NOUN	NOUN	Gender=Masc|Number=Sing	62	nmod	_	SpaceAfter=No
-65	.	.	PUNCT	PUNCT	PunctType=Peri	10	punct	_	SpacesAfter=\n
+54	cacawa[	cacawa[	NOUN	NOUN	_	51	appos	_	SpaceAfter=No
+55	tl	tl	NOUN	NOUN	_	54	compound	_	SpaceAfter=No
+56	]	]	PUNCT	PUNCT	_	54	punct	_	_
+57	+	+	SYM	SYM	_	54	compound	_	_
+58	sentli	sentli	NOUN	NOUN	_	54	nmod	_	SpaceAfter=No
+59	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	54	punct	_	SpaceAfter=No
+60	,	,	PUNCT	PUNCT	PunctType=Comm	64	punct	_	_
+61	en	en	ADP	ADP	AdpType=Prep	64	case	_	_
+62	referencia	referencia	NOUN	NOUN	_	61	fixed	_	_
+63	al	al	ADP	ADP	AdpType=Preppron	61	fixed	_	_
+64	tamaño	tamaño	NOUN	NOUN	Gender=Masc|Number=Sing	50	obl	_	_
+65	del	del	ADP	ADP	AdpType=Preppron	66	case	_	_
+66	grano	grano	NOUN	NOUN	Gender=Masc|Number=Sing	64	nmod	_	SpaceAfter=No
+67	.	.	PUNCT	PUNCT	PunctType=Peri	10	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830
@@ -7270,7 +7272,7 @@
 28	.	.	PUNCT	PUNCT	PunctType=Peri	10	punct	_	_
 
 # sent_id = 2
-# text = Se emplea ampliamente en diversas preparaciones como kamcha (cancha o maíz tostado), mote (maíz cocinado), aqa (chicha de jora), saralawa (crema de maíz), api (mazamorra de maíz morado), humint'a (dulce y salada), pastel de choclo (dulce y salado), api con sopaipilla, chicha morada (bebida de maíz), charquicán, locro (loqro) y polenta.
+# text = Se emplea ampliamente en diversas preparaciones como kamcha (cancha o maíz tostado), mote (maíz cocinado), aqa (chicha de jora), saralawa (crema de maíz), api (mazamorra de maíz morado), humint'a (dulce y salada), pastel de choclo (dulce y salado), api con sopaipilla, chicha morada (bebida de maíz), charquicán, locro (loqro) y polenta.[cita requerida]
 1	Se	él	PRON	PRON	Case=Acc,Dat|Person=3|PrepCase=Npr|PronType=Prs|Reflex=Yes	2	obj	_	_
 2	emplea	emplear	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	ampliamente	ampliamente	ADV	ADV	_	2	advmod	_	_
@@ -7350,7 +7352,10 @@
 77	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	76	punct	_	_
 78	y	y	CCONJ	CCONJ	_	79	cc	_	_
 79	polenta	polenta	NOUN	NOUN	Gender=Fem|Number=Sing	8	conj	_	SpaceAfter=No
-80	.	.	PUNCT	PUNCT	PunctType=Peri	2	punct	_	SpacesAfter=\n
+80	.[	.[	PUNCT	PUNCT	PunctType=Peri	81	punct	_	SpaceAfter=No
+81	cita	cita	NOUN	NOUN	Gender=Fem|Number=Sing	2	dep	_	SpacesAfter= 
+82	requerida	requerido	ADJ	ADJ	Gender=Fem|Number=Sing|VerbForm=Part	81	amod	_	SpaceAfter=No
+83	]	]	PUNCT	PUNCT	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830
@@ -8410,7 +8415,14 @@
 41	salas	sala	NOUN	NOUN	Gender=Fem|Number=Plur	36	nmod	_	_
 42	de	de	ADP	ADP	AdpType=Prep	43	case	_	_
 43	espectáculos	espectáculo	NOUN	NOUN	Gender=Masc|Number=Plur	41	nmod	_	SpaceAfter=No
-44	.	.	PUNCT	PUNCT	PunctType=Peri	13	punct	_	SpacesAfter=\n
+44	.	.	PUNCT	PUNCT	PunctType=Peri	13	punct	_	SpaceAfter=No
+
+# sent_id = 2
+# text = [cita requerida]
+1	[	[	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	cita	cita	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpacesAfter= 
+3	requerida	requerido	ADJ	ADJ	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	_	SpaceAfter=No
+4	]	]	PUNCT	PUNCT	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830

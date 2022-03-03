@@ -341,7 +341,7 @@
 24	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 4
-# text = התרגולות הרוחניות של הדת נקראות בשם הכולל יוגה .
+# text = התרגולות הרוחניות של הדת נקראות בשם הכולל יוגה [דרוש מקור].
 1	התרגולות	התרגולת	NOUN	NOUN	Gender=Fem|Number=Plur	5	nsubj	_	_
 2	הרוחניות	הרוחני	ADJ	ADJ	Gender=Fem|Number=Plur	1	amod	_	_
 3	של	של	ADP	ADP	Case=Gen	4	case:gen	_	_
@@ -353,8 +353,12 @@
 8-9	הכולל	_	_	_	_	_	_	_	_
 8	ה	ה	DET	DET	PronType=Art	9	det:def	_	_
 9	כולל	כלל	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	7	compound:smixut	_	_
-10	יוגה	יוגה	PROPN	PROPN	_	9	flat:name	_	_
-11	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+10	יוגה	יוגה	NOUN	NOUN	_	5	obj	_	_
+11	[	[	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No
+12	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	10	appos	_	_
+13	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	12	compound:smixut	_	SpaceAfter=No
+14	]	]	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -872,14 +876,14 @@
 21	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
 # sent_id = 2
-# text = הוודות הן קרוב לוודאי כתבי הקודש העתיקים ביותר בעולם . ההשקפה העיקרית המובעת בהן טוענת שטבע האדם אלוהי.
+# text = הוודות הן קרוב לוודאי כתבי הקודש העתיקים ביותר בעולם [דרוש מקור].
 1	הוודות	הוודה	NOUN	NOUN	Gender=Fem|Number=Plur	3	nsubj:cop	_	_
 2	הן	הוא	AUX	AUX	Gender=Fem|Number=Plur|Person=3|Polarity=Pos|VerbForm=Part|VerbType=Cop	3	cop	_	_
 3	קרוב	קרוב	ADJ	ADJ	Gender=Masc|Number=Sing	0	root	_	_
 4-5	לוודאי	_	_	_	_	_	_	_	_
 4	ל	ל	ADP	ADP	_	5	case	_	_
-5	וודאי	ודאי	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	3	advmod	_	_
-6	כתבי	כתב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	5	compound:smixut	_	_
+5	וודאי	ודאי	NOUN	NOUN	Gender=Masc|Number=Sing	3	advmod	_	_
+6	כתבי	כתב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	3	nsubj	_	_
 7-8	הקודש	_	_	_	_	_	_	_	_
 7	ה	ה	DET	DET	PronType=Art	8	det:def	_	_
 8	קודש	קודש	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	_
@@ -889,26 +893,33 @@
 11	ב	ב	ADP	ADP	_	13	case	_	_
 12	ה_	ה	DET	DET	PronType=Art	13	det:def	_	_
 13	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	9	advmod	_	_
-14	.	.	PUNCT	PUNCT	_	3	punct	_	_
-15-16	ההשקפה	_	_	_	_	_	_	_	_
-15	ה	ה	DET	DET	PronType=Art	16	det:def	_	_
-16	השקפה	השקפה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj:cop	_	_
-17-18	העיקרית	_	_	_	_	_	_	_	_
-17	ה	ה	DET	DET	PronType=Art	18	det:def	_	_
-18	עיקרית	עיקרי	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
-19	המובעת	המובע	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
-20-21	בהן	_	_	_	_	_	_	_	_
-20	ב_	ב	ADP	ADP	_	21	case	_	_
-21	_הן	הוא	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	22	obl	_	_
-22	טוענת	טען	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	16	acl	_	_
-23	שטבע	שטבע	NOUN	PROPN	_	22	nsubj	_	_
-24-25	האדם	_	_	_	_	_	_	_	_
-24	ה	ה	DET	DET	PronType=Art	25	det:def	_	_
-25	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	26	nsubj	_	_
-26	אלוהי	אלוהי	ADJ	ADJ	Gender=Masc|Number=Sing	22	xcomp	_	SpaceAfter=No
-27	.	.	PUNCT	PUNCT	_	3	punct	_	_
+14	[	[	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
+15	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	6	appos	_	_
+16	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	15	compound:smixut	_	SpaceAfter=No
+17	]	]	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
+18	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # sent_id = 3
+# text = ההשקפה העיקרית המובעת בהן טוענת שטבע האדם אלוהי.
+1-2	ההשקפה	_	_	_	_	_	_	_	_
+1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
+2	השקפה	השקפה	NOUN	NOUN	Gender=Fem|Number=Sing	8	nsubj	_	_
+3-4	העיקרית	_	_	_	_	_	_	_	_
+3	ה	ה	DET	DET	PronType=Art	4	det:def	_	_
+4	עיקרית	עיקרי	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
+5	המובעת	המובע	ADJ	ADJ	Gender=Fem|Number=Sing	2	acl	_	_
+6-7	בהן	_	_	_	_	_	_	_	_
+6	ב_	ב	ADP	ADP	_	7	case	_	_
+7	_הן	הוא	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	8	obl	_	_
+8	טוענת	טען	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
+9	שטבע	שטבע	NOUN	NOUN	_	12	nsubj	_	_
+10-11	האדם	_	_	_	_	_	_	_	_
+10	ה	ה	DET	DET	PronType=Art	11	det:def	_	_
+11	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	12	nsubj	_	_
+12	אלוהי	אלוהי	ADJ	ADJ	Gender=Masc|Number=Sing	8	xcomp	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+# sent_id = 4
 # text = האל הוא הברהמן, המהות הרוחנית שקיימת בתוך כל גוף.
 1-2	האל	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -926,7 +937,7 @@
 12	גוף	גוף	NOUN	NOUN	Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = הדת היא החיפוש אחרי הכרה עצמית, החיפוש אחרי העצמי הרוחני.
 1	הדת	הדת	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj:cop	_	_
 2	היא	הוא	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Pos|VerbForm=Part|VerbType=Cop	4	cop	_	_
@@ -949,7 +960,7 @@
 15	רוחני	רוחני	ADJ	ADJ	Gender=Masc|Number=Sing	13	amod	_	_
 16	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = הוודות מצהירות שהאדם אינו זקוק ל"ישועה", ולעולם אינו אבוד.
 1	הוודות	הוודה	NOUN	NOUN	Gender=Fem|Number=Plur	2	nsubj	_	_
 2	מצהירות	הצהיר	VERB	VERB	Gender=Fem|HebBinyan=HIFIL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -966,7 +977,7 @@
 12	אבוד	אבוד	ADJ	ADJ	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = במקרה השלילי, אדם יכול לחיות ללא מודעות לטבעו האמיתי ועצמיותו הנצחית.
 1-2	במקרה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -1418,7 +1429,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = רק מעט ידוע על מקורו ההיסטורי של ההינדואיזם מכיוון שראשיתו קדמה להיסטוריה הכתובה .
+# text = רק מעט ידוע על מקורו ההיסטורי של ההינדואיזם מכיוון שראשיתו קדמה להיסטוריה הכתובה [דרוש מקור].
 1	רק	רק	ADV	ADV	_	3	advmod	_	_
 2	מעט	מעט	DET	DET	Definite=Cons	3	advmod	_	_
 3	ידוע	ידע	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -1434,7 +1445,7 @@
 11	ההינדואיזם	ההינדואיזם	PROPN	PROPN	_	5	nmod:poss	_	_
 12	מכיוון	מכיוון	SCONJ	SCONJ	_	14	case	_	_
 13	שראשיתו	שראשיתו	PROPN	PROPN	_	14	obl	_	_
-14	קדמה	קדם	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	3	obl	_	_
+14	קדמה	קדם	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=3|Tense=Past|Voice=Act	3	obl	_	_
 15-17	להיסטוריה	_	_	_	_	_	_	_	_
 15	ל	ל	ADP	ADP	_	17	case	_	_
 16	ה_	ה	DET	DET	PronType=Art	17	det:def	_	_
@@ -1442,13 +1453,17 @@
 18-19	הכתובה	_	_	_	_	_	_	_	_
 18	ה	ה	DET	DET	PronType=Art	19	det:def	_	_
 19	כתובה	כתוב	ADJ	ADJ	Gender=Fem|Number=Sing	17	amod	_	_
-20	.	.	PUNCT	PUNCT	_	3	punct	_	_
+20	[	[	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+21	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	17	appos	_	_
+22	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	21	compound:smixut	_	SpaceAfter=No
+23	]	]	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # sent_id = 2
-# text = ההינדואיזם התפתח מאמונתם של הארים (אם אכן היה עם בשם זה), הדראווידיים וההראפניים, עמים שחיו בתת-היבשת ההודית.
+# text = ההינדואיזם התפתח מאמונתם של הארים (אם אכן היה עם בשם זה), הדראווידים וההראפניים, עמים ותרבויות שהתקיימו בתת-היבשת ההודית.
 1	ההינדואיזם	ההינדואיזם	PROPN	PROPN	_	2	nsubj	_	_
 2	התפתח	התפתח	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	0	root	_	_
-3	מאמונתם	מאמונתם	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+3	מאמונתם	מאמונתם	NOUN	NOUN	Gender=Masc|Number=Plur	2	nsubj	_	_
 4	של	של	ADP	ADP	Case=Gen	5	case:gen	_	_
 5	הארים	הארים	NOUN	NOUN	Gender=Masc|Number=Plur	3	nmod:poss	_	_
 6	(	(	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
@@ -1462,14 +1477,14 @@
 13	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	det	_	SpaceAfter=No
 14	)	)	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
 15	,	,	PUNCT	PUNCT	_	5	punct	_	_
-16	הדראווידיים	הדראווידיים	NOUN	NOUN	_	5	appos	_	_
+16	הדראווידים	הדראוויד	NOUN	NOUN	_	5	conj	_	_
 17	וההראפניים	וההראפני	ADJ	ADJ	Gender=Masc|Number=Plur	16	amod	_	SpaceAfter=No
-18	,	,	PUNCT	PUNCT	_	19	punct	_	_
+18	,	,	PUNCT	PUNCT	_	5	punct	_	_
 19	עמים	עם	NOUN	NOUN	Gender=Masc|Number=Plur	5	appos	_	_
-20-22	שחיו	_	_	_	_	_	_	_	_
-20	ש	ש	SCONJ	SCONJ	_	28	mark	_	_
-21	_של_	של	ADP	ADP	_	22	case:gen	_	_
-22	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nmod:poss	_	_
+20	ותרבויות	ותרבות	ADJ	ADJ	Gender=Fem|Number=Plur	19	amod	_	_
+21-22	שהתקיימו	_	_	_	_	_	_	_	_
+21	ש	ש	SCONJ	SCONJ	_	22	mark	_	_
+22	התקיימו	התקיים	VERB	VERB	Gender=Fem,Masc|HebBinyan=HITPAEL|Number=Plur|Person=3|Tense=Past	19	acl:relcl	_	_
 23-24	בתת	_	_	_	_	_	_	_	SpaceAfter=No
 23	ב	ב	ADP	ADP	_	28	case	_	_
 24	תת	תת	ADV	ADV	HebSource=ConvUncertainHead|Prefix=Yes	28	compound:affix	_	_
@@ -1477,7 +1492,7 @@
 26-28	היבשת	_	_	_	_	_	_	_	_
 26	ה	ה	DET	DET	PronType=Art	28	det:def	_	_
 27	ה_	ה	DET	DET	PronType=Art	28	det:def	_	_
-28	יבשת	יבשת	NOUN	NOUN	Gender=Fem|Number=Sing	19	nmod	_	_
+28	יבשת	יבשת	NOUN	NOUN	Gender=Fem|Number=Sing	22	obl	_	_
 29	ההודית	ההודי	ADJ	ADJ	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -1631,7 +1646,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = זו אחת הדתות הבודדות שאין לה תאריך התחלה מוסכם מחקרית ואין דמות המזוהה כמייסדת הדת , בשל ריבוי הזרמים הקיימים בתוך קטגוריית העל המכונה הינדואיזם.
+# text = זו אחת הדתות הבודדות שאין לה תאריך התחלה מוסכם מחקרית [דרוש מקור] ואין דמות המזוהה כמייסדת הדת [דרוש מקור], בשל ריבוי הזרמים הקיימים בתוך קטגוריית העל המכונה הינדואיזם.
 1	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_
 2	אחת	אחת	NUM	NUM	Gender=Fem|Number=Sing	3	nummod	_	_
 3	הדתות	הדתה	NOUN	NOUN	Gender=Fem|Number=Plur	0	root	_	_
@@ -1645,35 +1660,43 @@
 9	תאריך	תאריך	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	6	nsubj	_	_
 10	התחלה	התחלה	NOUN	NOUN	Gender=Fem|Number=Sing	9	compound:smixut	_	_
 11	מוסכם	הוסכם	VERB	VERB	Gender=Masc|HebBinyan=HUFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	9	amod	_	_
-12	מחקרית	מחקרי	ADJ	ADJ	Gender=Fem|Number=Sing	9	amod	_	SpacesAfter=\s\s
-13-14	ואין	_	_	_	_	_	_	_	_
-13	ו	ו	CCONJ	CCONJ	_	14	cc	_	_
-14	אין	אין	VERB	VERB	HebExistential=True	3	conj	_	_
-15	דמות	דמות	NOUN	NOUN	Gender=Fem|Number=Sing	14	nsubj	_	_
-16-17	המזוהה	_	_	_	_	_	_	_	_
-16	ה	ה	SCONJ	SCONJ	_	17	mark	_	_
-17	מזוהה	זוהה	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	15	acl:relcl	_	_
-18	כמייסדת	מייסד	VERB	VERB	Definite=Cons|Gender=Fem|Number=Sing	17	xcomp	_	_
-19	הדת	הדת	NOUN	NOUN	Gender=Fem|Number=Sing	18	compound:smixut	_	_
-20	,	,	PUNCT	PUNCT	_	14	punct	_	_
-21	בשל	בשל	ADP	ADP	_	22	case	_	_
-22	ריבוי	ריבוי	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	14	obl	_	_
-23-24	הזרמים	_	_	_	_	_	_	_	_
-23	ה	ה	DET	DET	PronType=Art	24	det:def	_	_
-24	זרמים	זרם	NOUN	NOUN	Gender=Masc|Number=Plur	22	compound:smixut	_	_
-25-26	הקיימים	_	_	_	_	_	_	_	_
-25	ה	ה	SCONJ	SCONJ	_	26	mark	_	_
-26	קיימים	קיים	ADJ	ADJ	Gender=Masc|Number=Plur	22	acl:relcl	_	_
-27	בתוך	בתוך	ADP	ADP	_	28	case	_	_
-28	קטגוריית	קטגורייה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	26	obl	_	_
-29-30	העל	_	_	_	_	_	_	_	_
-29	ה	ה	DET	DET	PronType=Art	30	det:def	_	_
-30	על	על	NOUN	NOUN	Gender=Masc|Number=Sing	28	compound:smixut	_	_
-31-32	המכונה	_	_	_	_	_	_	_	_
-31	ה	ה	SCONJ	SCONJ	_	32	mark	_	_
-32	מכונה	כונה	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	28	acl:relcl	_	_
-33	הינדואיזם	הינדואיזם	NOUN	NOUN	_	32	obj	_	SpaceAfter=No
-34	.	.	PUNCT	PUNCT	_	3	punct	_	_
+12	מחקרית	מחקרי	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	_
+13	[	[	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
+14	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	9	appos	_	_
+15	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	14	compound:smixut	_	SpaceAfter=No
+16	]	]	PUNCT	PUNCT	_	14	punct	_	_
+17-18	ואין	_	_	_	_	_	_	_	_
+17	ו	ו	CCONJ	CCONJ	_	18	cc	_	_
+18	אין	אין	VERB	VERB	HebExistential=True	3	conj	_	_
+19	דמות	דמות	NOUN	NOUN	Gender=Fem|Number=Sing	18	nsubj	_	_
+20-21	המזוהה	_	_	_	_	_	_	_	_
+20	ה	ה	SCONJ	SCONJ	_	21	mark	_	_
+21	מזוהה	זוהה	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	19	acl:relcl	_	_
+22	כמייסדת	מייסד	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	21	obj	_	_
+23	הדת	הדת	NOUN	NOUN	Gender=Fem|Number=Sing	22	compound:smixut	_	_
+24	[	[	PUNCT	PUNCT	_	25	punct	_	SpaceAfter=No
+25	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	22	appos	_	_
+26	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	25	compound:smixut	_	SpaceAfter=No
+27	]	]	PUNCT	PUNCT	_	25	punct	_	SpaceAfter=No
+28	,	,	PUNCT	PUNCT	_	18	punct	_	_
+29	בשל	בשל	ADP	ADP	_	30	case	_	_
+30	ריבוי	ריבוי	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	18	obl	_	_
+31-32	הזרמים	_	_	_	_	_	_	_	_
+31	ה	ה	DET	DET	PronType=Art	32	det:def	_	_
+32	זרמים	זרם	NOUN	NOUN	Gender=Masc|Number=Plur	30	compound:smixut	_	_
+33-34	הקיימים	_	_	_	_	_	_	_	_
+33	ה	ה	DET	DET	PronType=Art	34	mark	_	_
+34	קיימים	קיים	ADJ	ADJ	Gender=Masc|Number=Plur	30	acl:relcl	_	_
+35	בתוך	בתוך	ADP	ADP	_	36	case	_	_
+36	קטגוריית	קטגורייה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	34	obl	_	_
+37-38	העל	_	_	_	_	_	_	_	_
+37	ה	ה	DET	DET	PronType=Art	38	det:def	_	_
+38	על	על	NOUN	NOUN	Gender=Masc|Number=Sing	36	compound:smixut	_	_
+39-40	המכונה	_	_	_	_	_	_	_	_
+39	ה	ה	SCONJ	SCONJ	_	40	mark	_	_
+40	מכונה	כונה	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	36	acl:relcl	_	_
+41	הינדואיזם	הינדואיזם	NOUN	NOUN	_	40	obj	_	SpaceAfter=No
+42	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # sent_id = 2
 # text = אולם תתי הזרמים שמרכיבים את מארג ההינדואיזם מציינים לרוב מייסד וזמן התהוות.
@@ -1702,7 +1725,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = כתבי הקודש של ההינדואיזם, הוודות, הועלו על הכתב רק אחרי אלפי שנים של העברה בעל פה . יש הרואים בהן ומהן השפעה של הזורואסטריאניזם (הדת הפרסית העתיקה).
+# text = כתבי הקודש של ההינדואיזם, הוודות, הועלו על הכתב רק אחרי אלפי שנים של העברה בעל פה [דרוש מקור].
 1	כתבי	כתב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	9	nsubj	_	_
 2-3	הקודש	_	_	_	_	_	_	_	_
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
@@ -1725,28 +1748,39 @@
 18	העברה	העברה	NOUN	NOUN	Gender=Fem|Number=Sing	16	nmod:poss	_	_
 19	בעל	בעל	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	18	acl	_	_
 20	פה	פה	NOUN	NOUN	Gender=Masc|Number=Sing	19	compound:smixut	_	_
-21	.	.	PUNCT	PUNCT	_	22	punct	_	_
-22	יש	יש	VERB	VERB	HebExistential=True	9	parataxis	_	_
-23-24	הרואים	_	_	_	_	_	_	_	_
-23	ה	ה	SCONJ	SCONJ	_	24	mark	_	_
-24	רואים	ראה	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	22	csubj	_	_
-25-26	בהן	_	_	_	_	_	_	_	_
-25	ב_	ב	ADP	ADP	_	26	case	_	_
-26	_הן	הוא	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	24	obl	_	_
-27-28	ומהן	_	_	_	_	_	_	_	_
-27	ו	ו	CCONJ	CCONJ	_	28	cc	_	_
-28	מהן	_	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	24	conj	_	_
-29	השפעה	השפעה	NOUN	NOUN	Gender=Fem|Number=Sing	24	obj	_	_
-30	של	של	ADP	ADP	Case=Gen	31	case:gen	_	_
-31	הזורואסטריאניזם	הזורואסטריאניזם	NOUN	NOUN	_	29	nmod:poss	_	SpacesAfter=\s\s
-32	(	(	PUNCT	PUNCT	_	33	punct	_	SpaceAfter=No
-33	הדת	הדה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	31	appos	_	_
-34	הפרסית	הפרסי	ADJ	ADJ	Gender=Fem|Number=Sing	33	compound:smixut	_	_
-35-36	העתיקה	_	_	_	_	_	_	_	SpaceAfter=No
-35	ה	ה	DET	DET	PronType=Art	36	det:def	_	_
-36	עתיקה	עתיק	ADJ	ADJ	Gender=Fem|Number=Sing	33	amod	_	_
-37	)	)	PUNCT	PUNCT	_	33	punct	_	SpaceAfter=No
-38	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+21	[	[	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No
+22	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	18	appos	_	_
+23	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	22	compound:smixut	_	SpaceAfter=No
+24	]	]	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No
+25	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+# sent_id = 2
+# text = יש הרואים בהן ומהן השפעה של הזורואסטריאניזם [דרוש מקור] (הדת הפרסית העתיקה).
+1	יש	יש	VERB	VERB	HebExistential=True	0	root	_	_
+2-3	הרואים	_	_	_	_	_	_	_	_
+2	ה	ה	SCONJ	SCONJ	_	3	mark	_	_
+3	רואים	ראה	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	1	csubj	_	_
+4-5	בהן	_	_	_	_	_	_	_	_
+4	ב_	ב	ADP	ADP	_	5	case	_	_
+5	_הן	הוא	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	obl	_	_
+6-7	ומהן	_	_	_	_	_	_	_	_
+6	ו	ו	CCONJ	CCONJ	_	7	cc	_	_
+7	מהן	_	PRON	PRON	Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	conj	_	_
+8	השפעה	השפעה	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+9	של	של	ADP	ADP	Case=Gen	10	case:gen	_	_
+10	הזורואסטריאניזם	הזורואסטריאניזם	NOUN	NOUN	_	8	nmod:poss	_	_
+11	[	[	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No
+12	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	10	appos	_	_
+13	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	12	compound:smixut	_	SpaceAfter=No
+14	]	]	PUNCT	PUNCT	_	12	punct	_	_
+15	(	(	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No
+16	הדת	הדה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	10	appos	_	_
+17	הפרסית	הפרסי	ADJ	ADJ	Gender=Fem|Number=Sing	16	compound:smixut	_	_
+18-19	העתיקה	_	_	_	_	_	_	_	SpaceAfter=No
+18	ה	ה	DET	DET	PronType=Art	19	det:def	_	_
+19	עתיקה	עתיק	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
+20	)	)	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No
+21	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -2411,7 +2445,7 @@
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # sent_id = 2
-# text = כתבי הקודש ההינדואיים מתחלקים לשתי קטגוריות השרוטי (Shruti) - אלה שנשמעו , והסמריטי (Smriti) - אלה שנתקבלו ונזכרו או נהגו בידי חכמים בליבם, וכך עברו הלאה.
+# text = כתבי הקודש ההינדואיים מתחלקים לשתי קטגוריות השרוטי (Shruti) - אלה שנשמעו [ממקור על-אנושי], והסמריטי (Smriti) - אלה שנתקבלו ונזכרו או נהגו בידי חכמים בליבם, וכך עברו הלאה.
 1	כתבי	כתב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	5	nsubj	_	_
 2-3	הקודש	_	_	_	_	_	_	_	_
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
@@ -2429,30 +2463,36 @@
 13	-	-	PUNCT	PUNCT	_	11	punct	_	_
 14	אלה	אלה	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Dem	15	nsubj	_	_
 15	שנשמעו	נישמע	VERB	VERB	Gender=Fem,Masc|HebBinyan=NIFAL|Number=Plur|Person=3|Tense=Past|Voice=Mid	8	acl	_	_
-16	,	,	PUNCT	PUNCT	_	8	punct	_	_
-17	והסמריטי	והסמריטי	PROPN	PROPN	_	15	conj	_	_
-18	(	(	PUNCT	PUNCT	_	19	punct	_	SpaceAfter=No
-19	Smriti	smriti	PROPN	PROPN	_	17	appos	_	SpaceAfter=No
-20	)	)	PUNCT	PUNCT	_	19	punct	_	_
-21	-	-	PUNCT	PUNCT	_	19	punct	_	_
-22	אלה	אלה	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Dem	23	nsubj	_	_
-23	שנתקבלו	הנתקבל	VERB	VERB	Gender=Fem,Masc|HebBinyan=HITPAEL|Number=Plur|Person=3|Tense=Past	8	acl	_	_
-24	ונזכרו	הנזכר	VERB	VERB	Gender=Fem,Masc|HebBinyan=PUAL|Number=Plur|Person=3|Tense=Past|Voice=Pass	23	conj	_	_
-25	או	או	CCONJ	CCONJ	_	26	cc	_	_
-26	נהגו	נהג	VERB	VERB	Gender=Fem,Masc|Number=Plur|Person=3|Tense=Past	24	conj	_	_
-27	בידי	בידי	ADP	ADP	_	28	case	_	_
-28	חכמים	חכם	NOUN	NOUN	Gender=Masc|Number=Plur	26	obl	_	_
-29-31	בליבם	_	_	_	_	_	_	_	SpaceAfter=No
-29	בליב_	בליב	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Plur	28	compound:smixut	_	_
-30	_של_	של	ADP	ADP	_	31	case:gen	_	_
-31	_הם	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	29	nmod:poss	_	_
-32	,	,	PUNCT	PUNCT	_	23	punct	_	_
-33-34	וכך	_	_	_	_	_	_	_	_
-33	ו	ו	CCONJ	CCONJ	_	35	cc	_	_
-34	כך	כך	ADV	ADV	_	35	advmod	_	_
-35	עברו	עבר	VERB	VERB	Gender=Fem,Masc|Number=Plur|Person=3|Tense=Past	23	conj	_	_
-36	הלאה	הלאה	ADV	ADV	_	35	advmod	_	SpaceAfter=No
-37	.	.	PUNCT	PUNCT	_	5	punct	_	_
+16	[	[	PUNCT	PUNCT	_	17	punct	_	SpaceAfter=No
+17	ממקור	ממקור	NOUN	NOUN	Gender=Masc|Number=Sing	15	obj	_	_
+18	על	על	ADP	ADP	_	20	case	_	SpaceAfter=No
+19	-	-	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
+20	אנושי	אנושי	ADJ	ADJ	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No
+21	]	]	PUNCT	PUNCT	_	17	punct	_	SpaceAfter=No
+22	,	,	PUNCT	PUNCT	_	8	punct	_	_
+23	והסמריטי	והסמריטי	PROPN	PROPN	_	8	conj	_	_
+24	(	(	PUNCT	PUNCT	_	25	punct	_	SpaceAfter=No
+25	Smriti	smriti	NOUN	NOUN	_	23	appos	_	SpaceAfter=No
+26	)	)	PUNCT	PUNCT	_	25	punct	_	_
+27	-	-	PUNCT	PUNCT	_	25	punct	_	_
+28	אלה	אלה	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Dem	29	nsubj	_	_
+29	שנתקבלו	הנתקבל	VERB	VERB	Gender=Fem,Masc|HebBinyan=HITPAEL|Number=Plur|Person=3|Tense=Past	8	acl	_	_
+30	ונזכרו	הנזכר	VERB	VERB	Gender=Fem,Masc|HebBinyan=PUAL|Number=Plur|Person=3|Tense=Past|Voice=Pass	29	conj	_	_
+31	או	או	CCONJ	CCONJ	_	32	cc	_	_
+32	נהגו	נהג	VERB	VERB	Gender=Fem,Masc|Number=Plur|Person=3|Tense=Past	30	conj	_	_
+33	בידי	בידי	ADP	ADP	_	34	case	_	_
+34	חכמים	חכם	NOUN	NOUN	Gender=Masc|Number=Plur	32	obl	_	_
+35-37	בליבם	_	_	_	_	_	_	_	SpaceAfter=No
+35	בליב_	בליב	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Plur	34	compound:smixut	_	_
+36	_של_	של	ADP	ADP	_	37	case:gen	_	_
+37	_הם	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	nmod:poss	_	_
+38	,	,	PUNCT	PUNCT	_	29	punct	_	_
+39-40	וכך	_	_	_	_	_	_	_	_
+39	ו	ו	CCONJ	CCONJ	_	41	cc	_	_
+40	כך	כך	ADV	ADV	_	41	advmod	_	_
+41	עברו	עבר	VERB	VERB	Gender=Fem,Masc|Number=Plur|Person=3|Tense=Past	29	conj	_	_
+42	הלאה	הלאה	ADV	ADV	_	41	advmod	_	SpaceAfter=No
+43	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
 # sent_id = 3
 # text = דוגמה לכתבי קודש של הסמריטי הם שני האפוסים הגדולים של הודו, המהאבהארטה (בה מצוי הדיון הפילוסופי החשוב בהגאוואד גיטה), והראמאינה.

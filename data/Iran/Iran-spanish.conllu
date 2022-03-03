@@ -4603,7 +4603,7 @@
 30	.	.	PUNCT	PUNCT	PunctType=Peri	27	punct	_	_
 
 # sent_id = 2
-# text = Este Tribunal Administrativo Especial atiende las denuncias de delitos imputados a clérigos, aunque también ha visto casos que implicaban a laicos.
+# text = Este Tribunal Administrativo Especial atiende las denuncias de delitos imputados a clérigos, aunque también ha visto casos que implicaban a laicos[cita requerida].
 1	Este	este	DET	DET	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	Tribunal	Tribunal	PROPN	PROPN	_	5	nsubj	_	_
 3	Administrativo	Administrativo	PROPN	PROPN	_	2	flat	_	_
@@ -4626,7 +4626,11 @@
 20	implicaban	implicar	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	acl	_	_
 21	a	a	ADP	ADP	AdpType=Prep	22	case	_	_
 22	laicos	laico	NOUN	NOUN	Gender=Masc|Number=Plur	20	obj	_	SpaceAfter=No
-23	.	.	PUNCT	PUNCT	PunctType=Peri	5	punct	_	SpacesAfter=\n
+23	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	24	punct	_	SpaceAfter=No
+24	cita	cita	NOUN	NOUN	Gender=Fem|Number=Sing	20	dep	_	SpacesAfter= 
+25	requerida	requerido	ADJ	ADJ	Gender=Fem|Number=Sing|VerbForm=Part	24	amod	_	SpaceAfter=No
+26	]	]	PUNCT	PUNCT	PunctType=Quot	24	punct	_	SpaceAfter=No
+27	.	.	PUNCT	PUNCT	PunctType=Peri	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830
@@ -7841,7 +7845,7 @@
 16	.	.	PUNCT	PUNCT	PunctType=Peri	7	punct	_	_
 
 # sent_id = 7
-# text = El voleibol es un deporte popular debido a su participación en la Liga Mundial de 2013 y en la Copa del Mundo del 2015.
+# text = El voleibol es un deporte popular debido a su participación en la Liga Mundial de 2013 y en la Copa del Mundo del 2015.[cita requerida]
 1	El	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	voleibol	voleibol	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	es	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -7866,7 +7870,10 @@
 22	Mundo	Mundo	PROPN	PROPN	_	20	flat	_	_
 23	del	del	ADP	ADP	AdpType=Preppron	24	case	_	_
 24	2015	2015	NOUN	NOUN	AdvType=Tim	20	nmod	_	SpaceAfter=No
-25	.	.	PUNCT	PUNCT	PunctType=Peri	5	punct	_	SpacesAfter=\n
+25	.[	.[	PUNCT	PUNCT	PunctType=Peri	5	punct	_	SpaceAfter=No
+26	cita	cita	NOUN	NOUN	Gender=Fem|Number=Sing	5	appos	_	SpacesAfter= 
+27	requerida	requerido	ADJ	ADJ	Gender=Fem|Number=Sing|VerbForm=Part	26	amod	_	SpaceAfter=No
+28	]	]	PUNCT	PUNCT	PunctType=Peri	5	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830

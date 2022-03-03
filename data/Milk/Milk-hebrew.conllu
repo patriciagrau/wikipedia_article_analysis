@@ -1048,7 +1048,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = מועצת החלב בישראל טוענת כי התהליכים לייצור חלב אורגני וחלב שאינו אורגני בישראל זהים "מבחינת האיכות, הבטיחות, הרכב החלב והטעם" אבל שונים מבחינת "טיפול תרופתי והזנה" ובפרט כוללים הזנה במזון אורגני בלבד לפרות.
+# text = מועצת החלב בישראל טוענת כי התהליכים לייצור חלב אורגני וחלב שאינו אורגני בישראל זהים "מבחינת האיכות, הבטיחות, הרכב החלב והטעם" אבל שונים מבחינת "טיפול תרופתי והזנה" ובפרט כוללים הזנה במזון אורגני בלבד לפרות.[דרושה הבהרה]
 1	מועצת	מועצה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	6	nsubj	_	_
 2-3	החלב	_	_	_	_	_	_	_	_
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
@@ -1069,7 +1069,7 @@
 14	אורגני	אורגני	ADJ	ADJ	Gender=Masc|Number=Sing	13	amod	_	_
 15-16	וחלב	_	_	_	_	_	_	_	_
 15	ו	ו	CCONJ	CCONJ	_	16	cc	_	_
-16	חלב	חלב	NOUN	NOUN	Gender=Masc|Number=Sing	13	conj	_	_
+16	חלב	חלב	NOUN	NOUN	Gender=Masc|Number=Sing	28	conj	_	_
 17-18	שאינו	_	_	_	_	_	_	_	_
 17	ש	ש	SCONJ	SCONJ	_	19	mark	_	_
 18	אינו	אינו	AUX	AUX	Gender=Masc|Number=Sing|Person=3|Polarity=Neg|VerbForm=Part|VerbType=Cop	19	advmod	_	_
@@ -1100,9 +1100,9 @@
 37-38	והטעם	_	_	_	_	_	_	_	SpaceAfter=No
 37	וה	וה	CCONJ	CCONJ	_	38	cc	_	_
 38	טעם	טעם	NOUN	NOUN	Gender=Masc|Number=Sing	28	conj	_	_
-39	"	"	PUNCT	PUNCT	_	25	punct	_	_
+39	"	"	PUNCT	PUNCT	_	22	punct	_	_
 40	אבל	אבל	CCONJ	CCONJ	_	41	cc	_	_
-41	שונים	שונה	ADJ	ADJ	Gender=Masc|Number=Plur	6	conj	_	_
+41	שונים	שונה	ADJ	ADJ	Gender=Masc|Number=Plur	22	conj	_	_
 42-43	מבחינת	_	_	_	_	_	_	_	_
 42	מ	מ	ADP	ADP	_	43	case	_	_
 43	בחינת	בחינה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	41	obl	_	_
@@ -1120,7 +1120,10 @@
 54	אורגני	אורגני	ADJ	ADJ	Gender=Masc|Number=Sing	53	amod	_	_
 55	בלבד	בלבד	ADV	ADV	_	53	advmod	_	_
 56	לפרות	לפרות	ADV	ADV	_	53	advmod	_	SpaceAfter=No
-57	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+57	.[	.[	PUNCT	PUNCT	_	58	punct	_	SpaceAfter=No
+58	דרושה	דרש	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	50	parataxis	_	_
+59	הבהרה	הבהרה	NOUN	NOUN	Gender=Fem|Number=Sing	58	obj	_	SpaceAfter=No
+60	]	]	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -1854,7 +1857,7 @@
 46	.	.	PUNCT	PUNCT	_	31	punct	_	SpacesAfter=\n
 
 # sent_id = 3
-# text = המלצה זו נתונה לביקורת מצד כמה גופי מחקר וארגוני בריאות, הטוענים שהיא מופרזת או מזיקה, ויש לבחון מחדש את תפקיד חלב בעלי החיים בתזונה האנושית.
+# text = המלצה זו נתונה לביקורת מצד כמה גופי מחקר וארגוני בריאות[דרושה הבהרה], הטוענים שהיא מופרזת או מזיקה, ויש לבחון מחדש את תפקיד חלב בעלי החיים בתזונה האנושית.
 1	המלצה	המלצה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
 3	נתונה	נתן	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -1869,34 +1872,38 @@
 10	ו	ו	CCONJ	CCONJ	_	11	cc	_	_
 11	ארגוני	ארגון	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	8	conj	_	_
 12	בריאות	בריאות	NOUN	NOUN	Gender=Fem|Number=Sing	11	compound:smixut	_	SpaceAfter=No
-13	,	,	PUNCT	PUNCT	_	8	punct	_	_
-14-15	הטוענים	_	_	_	_	_	_	_	_
-14	ה	ה	SCONJ	SCONJ	_	15	mark	_	_
-15	טוענים	טען	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
-16-17	שהיא	_	_	_	_	_	_	_	_
-16	ש	ש	SCONJ	SCONJ	_	18	mark	_	_
-17	היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
-18	מופרזת	הופרז	VERB	VERB	Gender=Fem|HebBinyan=HUFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	15	ccomp	_	_
-19	או	או	CCONJ	CCONJ	_	20	cc	_	_
-20	מזיקה	הזיק	VERB	VERB	Gender=Fem|HebBinyan=HIFIL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	18	conj	_	SpaceAfter=No
-21	,	,	PUNCT	PUNCT	_	15	punct	_	_
-22-23	ויש	_	_	_	_	_	_	_	_
-22	ו	ו	CCONJ	CCONJ	_	23	cc	_	_
-23	יש	יש	AUX	AUX	VerbType=Mod	24	aux	_	_
-24	לבחון	בחן	VERB	VERB	HebBinyan=PAAL|VerbForm=Inf|Voice=Act	18	conj	_	_
-25	מחדש	מחדש	ADV	ADV	_	24	advmod	_	_
-26	את	את	ADP	ADP	Case=Acc	27	case:acc	_	_
-27	תפקיד	תפקיד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	24	obj	_	_
-28	חלב	חלב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	27	compound:smixut	_	_
-29	בעלי	בעל	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	28	compound:smixut	_	_
-30-31	החיים	_	_	_	_	_	_	_	_
-30	ה	ה	DET	DET	PronType=Art	31	det:def	_	_
-31	חיים	חיים	NOUN	NOUN	Gender=Masc|Number=Plur	29	compound:smixut	_	_
-32	בתזונה	בתזונה	ADV	ADV	_	27	advmod	_	_
-33-34	האנושית	_	_	_	_	_	_	_	SpaceAfter=No
-33	ה	ה	DET	DET	PronType=Art	34	det:def	_	_
-34	אנושית	אנושי	ADJ	ADJ	Gender=Fem|Number=Sing	32	amod	_	_
-35	.	.	PUNCT	PUNCT	_	3	punct	_	_
+13	[	[	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
+14	דרושה	דרש	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	8	appos	_	_
+15	הבהרה	הבהרה	NOUN	NOUN	Gender=Fem|Number=Sing	14	obj	_	SpaceAfter=No
+16	]	]	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
+17	,	,	PUNCT	PUNCT	_	8	punct	_	_
+18-19	הטוענים	_	_	_	_	_	_	_	_
+18	ה	ה	SCONJ	SCONJ	_	19	mark	_	_
+19	טוענים	טען	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
+20-21	שהיא	_	_	_	_	_	_	_	_
+20	ש	ש	SCONJ	SCONJ	_	22	mark	_	_
+21	היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	מופרזת	הופרז	VERB	VERB	Gender=Fem|HebBinyan=HUFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	19	ccomp	_	_
+23	או	או	CCONJ	CCONJ	_	24	cc	_	_
+24	מזיקה	הזיק	VERB	VERB	Gender=Fem|HebBinyan=HIFIL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	22	conj	_	SpaceAfter=No
+25	,	,	PUNCT	PUNCT	_	19	punct	_	_
+26-27	ויש	_	_	_	_	_	_	_	_
+26	ו	ו	CCONJ	CCONJ	_	27	cc	_	_
+27	יש	יש	AUX	AUX	VerbType=Mod	28	aux	_	_
+28	לבחון	בחן	VERB	VERB	HebBinyan=PAAL|VerbForm=Inf|Voice=Act	22	conj	_	_
+29	מחדש	מחדש	ADV	ADV	_	28	advmod	_	_
+30	את	את	ADP	ADP	Case=Acc	31	case:acc	_	_
+31	תפקיד	תפקיד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	28	obj	_	_
+32	חלב	חלב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	31	compound:smixut	_	_
+33	בעלי	בעל	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	32	compound:smixut	_	_
+34-35	החיים	_	_	_	_	_	_	_	_
+34	ה	ה	DET	DET	PronType=Art	35	det:def	_	_
+35	חיים	חיים	NOUN	NOUN	Gender=Masc|Number=Plur	33	compound:smixut	_	_
+36	בתזונה	בתזונה	ADV	ADV	_	31	advmod	_	_
+37-38	האנושית	_	_	_	_	_	_	_	SpaceAfter=No
+37	ה	ה	DET	DET	PronType=Art	38	det:def	_	_
+38	אנושית	אנושי	ADJ	ADJ	Gender=Fem|Number=Sing	36	amod	_	_
+39	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # sent_id = 4
 # text = ביקורת חמורה נשמעה מצד אוניברסיטת הרווארד האמריקאית, בין היתר מפי ראש המחלקה לתזונה, פרופ' וולטר וילט.
@@ -3422,7 +3429,7 @@
 34	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
 # sent_id = 7
-# text = שם נעשות להן 7–10 בדיקות מקיפות לחומרים לא רצויים.
+# text = שם נעשות להן 7–10 בדיקות מקיפות לחומרים לא רצויים.[דרוש מקור] חלב המתגלה כנגוע נאסר לשימוש ולשיווק ונשפך.
 1	שם	שם	ADV	ADV	_	2	advmod	_	_
 2	נעשות	נעשה	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Mid	0	root	_	_
 3-4	להן	_	_	_	_	_	_	_	_
@@ -3436,25 +3443,25 @@
 10-12	לחומרים	_	_	_	_	_	_	_	_
 10	ל	ל	ADP	ADP	_	12	case	_	_
 11	ה_	ה	DET	DET	PronType=Art	12	det:def	_	_
-12	חומרים	חומר	NOUN	NOUN	Gender=Masc|Number=Plur	8	nmod	_	_
+12	חומרים	חומר	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl	_	_
 13	לא	לא	ADV	ADV	Polarity=Neg	14	advmod	_	_
 14	רצויים	רצוי	ADJ	ADJ	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No
-15	.	.	PUNCT	PUNCT	_	2	punct	_	_
-
-# sent_id = 8
-# text = חלב המתגלה כנגוע נאסר לשימוש ולשיווק ונשפך.
-1	חלב	חלב	NOUN	NOUN	Gender=Masc|Number=Sing	4	nsubj	_	_
-2	המתגלה	המתגלה	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	1	amod	_	_
-3	כנגוע	כנגוע	NOUN	NOUN	_	2	compound:smixut	_	_
-4	נאסר	נאסר	VERB	VERB	Gender=Masc|HebBinyan=NIFAL|Number=Sing|Person=3|Tense=Past|Voice=Mid	0	root	_	_
-5-6	לשימוש	_	_	_	_	_	_	_	_
-5	ל	ל	ADP	ADP	_	6	case	_	_
-6	שימוש	שימוש	NOUN	NOUN	Gender=Masc|Number=Sing	4	obl	_	_
-7-8	ולשיווק	_	_	_	_	_	_	_	_
-7	ול	ול	ADP	ADP	_	8	case	_	_
-8	שיווק	שיווק	NOUN	NOUN	Gender=Masc|Number=Sing	6	nmod	_	_
-9	ונשפך	ונשפך	VERB	VERB	Gender=Masc|HebBinyan=NIFAL|Number=Sing|Person=3|Tense=Fut|Voice=Mid	8	amod	_	SpaceAfter=No
-10	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+15	.[	.[	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
+16	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	22	nsubj	_	_
+17	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	16	compound:smixut	_	SpaceAfter=No
+18	]	]	PUNCT	PUNCT	_	22	punct	_	_
+19	חלב	חלב	NOUN	NOUN	Gender=Masc|Number=Sing	22	nsubj	_	_
+20	המתגלה	המתגלה	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	19	amod	_	_
+21	כנגוע	כנגוע	PROPN	PROPN	_	20	nsubj	_	_
+22	נאסר	נאסר	VERB	VERB	Gender=Masc|HebBinyan=NIFAL|Number=Sing|Person=3|Tense=Past|Voice=Mid	2	parataxis	_	_
+23-24	לשימוש	_	_	_	_	_	_	_	_
+23	ל	ל	ADP	ADP	_	24	case	_	_
+24	שימוש	שימוש	NOUN	NOUN	Gender=Masc|Number=Sing	22	obl	_	_
+25-26	ולשיווק	_	_	_	_	_	_	_	_
+25	ול	ול	ADP	ADP	_	26	case	_	_
+26	שיווק	שיווק	NOUN	NOUN	Gender=Masc|Number=Sing	24	conj	_	_
+27	ונשפך	ונשפך	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=1,2,3|VerbForm=Part	26	amod	_	SpaceAfter=No
+28	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830

@@ -686,7 +686,7 @@
 65	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = 2
-# text = Despite a decline in adherence in the West, Christianity remains the dominant religion in the region, with about 70% of the population identifying as Christian.
+# text = Despite a decline in adherence in the West, Christianity remains the dominant religion in the region, with about 70% of that population identifying as Christian.
 1	Despite	despite	ADP	IN	_	3	case	_	_
 2	a	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	_
 3	decline	decline	NOUN	NN	Number=Sing	11	obl	_	_
@@ -708,9 +708,9 @@
 19	with	with	ADP	IN	_	22	case	_	_
 20	about	about	ADV	RB	_	21	advmod	_	_
 21	70	70	NUM	CD	NumType=Card	22	nummod	_	SpaceAfter=No
-22	%	%	SYM	NN	Number=Sing	11	obl	_	_
+22	%	%	SYM	NN	Number=Sing	26	obl	_	_
 23	of	of	ADP	IN	_	25	case	_	_
-24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+24	that	that	DET	DT	Number=Sing|PronType=Dem	25	det	_	_
 25	population	population	NOUN	NN	Number=Sing	22	nmod	_	_
 26	identifying	identify	VERB	VBG	VerbForm=Ger	14	acl	_	_
 27	as	as	ADP	IN	_	28	case	_	_
@@ -2718,7 +2718,14 @@
 44	apart	apart	ADV	RB	_	36	advmod	_	_
 45	from	from	ADP	IN	_	46	case	_	_
 46	baptism	baptism	NOUN	NN	Number=Sing	44	obl	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+47	.	.	PUNCT	.	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 8
+# text = [citation needed]
+1	[	[	PUNCT	-LRB-	_	2	punct	_	SpaceAfter=No
+2	citation	citation	NOUN	NN	Number=Sing	0	root	_	_
+3	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+4	]	]	PUNCT	-RRB-	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -5085,7 +5092,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = And this food is called among us Eukharistia , of which no one is allowed to partake but the man who believes that the things which we teach are true, and who has been washed with the washing that is for the remission of sins, and unto regeneration, and who is so living as Christ has enjoined.
+# text = And this food is called among us Eukharistia [the Eucharist], of which no one is allowed to partake but the man who believes that the things which we teach are true, and who has been washed with the washing that is for the remission of sins, and unto regeneration, and who is so living as Christ has enjoined.
 1	And	and	CCONJ	CC	_	5	cc	_	_
 2	this	this	DET	DT	Number=Sing|PronType=Dem	3	det	_	_
 3	food	food	NOUN	NN	Number=Sing	5	nsubj:pass	_	_
@@ -5093,60 +5100,64 @@
 5	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
 6	among	among	ADP	IN	_	7	case	_	_
 7	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	5	obl	_	_
-8	Eukharistia	Eukharistia	PROPN	NNP	Number=Sing	5	obj	_	_
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	of	of	ADP	IN	_	11	case	_	_
-11	which	which	PRON	WDT	PronType=Rel	15	obl	_	_
-12	no	no	DET	DT	_	13	det	_	_
-13	one	one	NOUN	NN	Number=Sing	15	nsubj:pass	_	_
-14	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
-15	allowed	allow	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	acl:relcl	_	_
-16	to	to	PART	TO	_	17	mark	_	_
-17	partake	partake	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-18	but	but	CCONJ	CC	_	20	cc	_	_
-19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
-20	man	man	NOUN	NN	Number=Sing	8	conj	_	_
-21	who	who	PRON	WP	PronType=Rel	22	nsubj	_	_
-22	believes	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_
-23	that	that	SCONJ	IN	_	30	mark	_	_
-24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
-25	things	thing	NOUN	NNS	Number=Plur	30	nsubj	_	_
-26	which	which	PRON	WDT	PronType=Rel	28	obj	_	_
-27	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	28	nsubj	_	_
-28	teach	teach	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	_
-29	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	30	cop	_	_
-30	true	true	ADJ	JJ	Degree=Pos	22	ccomp	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	36	punct	_	_
-32	and	and	CCONJ	CC	_	36	cc	_	_
-33	who	who	PRON	WP	PronType=Int	36	nsubj:pass	_	_
-34	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux	_	_
-35	been	be	AUX	VBN	Tense=Past|VerbForm=Part	36	aux:pass	_	_
-36	washed	wash	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	30	conj	_	_
-37	with	with	ADP	IN	_	39	case	_	_
-38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
-39	washing	washing	NOUN	NN	Number=Sing	36	obl	_	_
-40	that	that	PRON	WDT	PronType=Rel	44	nsubj	_	_
-41	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	cop	_	_
-42	for	for	ADP	IN	_	44	case	_	_
-43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
-44	remission	remission	NOUN	NN	Number=Sing	39	acl:relcl	_	_
-45	of	of	ADP	IN	_	46	case	_	_
-46	sins	sin	NOUN	NNS	Number=Plur	44	nmod	_	SpaceAfter=No
-47	,	,	PUNCT	,	_	50	punct	_	_
-48	and	and	CCONJ	CC	_	50	cc	_	_
-49	unto	unto	ADP	IN	_	50	case	_	_
-50	regeneration	regeneration	NOUN	NN	Number=Sing	44	conj	_	SpaceAfter=No
-51	,	,	PUNCT	,	_	56	punct	_	_
-52	and	and	CCONJ	CC	_	56	cc	_	_
-53	who	who	PRON	WP	PronType=Int	56	nsubj	_	_
-54	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	aux	_	_
-55	so	so	ADV	RB	_	56	advmod	_	_
-56	living	live	VERB	VBG	Tense=Pres|VerbForm=Part	44	conj	_	_
-57	as	as	SCONJ	IN	_	60	mark	_	_
-58	Christ	Christ	PROPN	NNP	Number=Sing	60	nsubj	_	_
-59	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	60	aux	_	_
-60	enjoined	enjoin	VERB	VBN	Tense=Past|VerbForm=Part	56	advcl	_	SpaceAfter=No
-61	.	.	PUNCT	.	_	5	punct	_	_
+8	Eukharistia	Eukharistia	PROPN	NNP	Number=Sing	5	xcomp	_	_
+9	[	[	PUNCT	-LRB-	_	11	punct	_	SpaceAfter=No
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	Eucharist	Eucharist	PROPN	NNP	Number=Sing	8	appos	_	SpaceAfter=No
+12	]	]	PUNCT	-RRB-	_	11	punct	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	8	punct	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	which	which	PRON	WDT	PronType=Rel	19	obl	_	_
+16	no	no	DET	DT	_	17	det	_	_
+17	one	one	NOUN	NN	Number=Sing	19	nsubj:pass	_	_
+18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_
+19	allowed	allow	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	acl:relcl	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	partake	partake	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+22	but	but	CCONJ	CC	_	24	cc	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	man	man	NOUN	NN	Number=Sing	8	conj	_	_
+25	who	who	PRON	WP	PronType=Rel	26	nsubj	_	_
+26	believes	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	_	_
+27	that	that	SCONJ	IN	_	34	mark	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	things	thing	NOUN	NNS	Number=Plur	34	nsubj	_	_
+30	which	which	PRON	WDT	PronType=Rel	32	obj	_	_
+31	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	32	nsubj	_	_
+32	teach	teach	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
+33	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	34	cop	_	_
+34	true	true	ADJ	JJ	Degree=Pos	26	ccomp	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	40	punct	_	_
+36	and	and	CCONJ	CC	_	40	cc	_	_
+37	who	who	PRON	WP	PronType=Int	40	nsubj:pass	_	_
+38	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	aux	_	_
+39	been	be	AUX	VBN	Tense=Past|VerbForm=Part	40	aux:pass	_	_
+40	washed	wash	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	34	conj	_	_
+41	with	with	ADP	IN	_	43	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	washing	washing	NOUN	NN	Number=Sing	40	obl	_	_
+44	that	that	PRON	WDT	PronType=Rel	48	nsubj	_	_
+45	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	cop	_	_
+46	for	for	ADP	IN	_	48	case	_	_
+47	the	the	DET	DT	Definite=Def|PronType=Art	48	det	_	_
+48	remission	remission	NOUN	NN	Number=Sing	43	acl:relcl	_	_
+49	of	of	ADP	IN	_	50	case	_	_
+50	sins	sin	NOUN	NNS	Number=Plur	48	nmod	_	SpaceAfter=No
+51	,	,	PUNCT	,	_	54	punct	_	_
+52	and	and	CCONJ	CC	_	54	cc	_	_
+53	unto	unto	ADP	IN	_	54	case	_	_
+54	regeneration	regeneration	NOUN	NN	Number=Sing	48	conj	_	SpaceAfter=No
+55	,	,	PUNCT	,	_	60	punct	_	_
+56	and	and	CCONJ	CC	_	60	cc	_	_
+57	who	who	PRON	WP	PronType=Int	60	nsubj	_	_
+58	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	60	aux	_	_
+59	so	so	ADV	RB	_	60	advmod	_	_
+60	living	live	VERB	VBG	Tense=Pres|VerbForm=Part	48	conj	_	_
+61	as	as	SCONJ	IN	_	64	mark	_	_
+62	Christ	Christ	PROPN	NNP	Number=Sing	64	nsubj	_	_
+63	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	64	aux	_	_
+64	enjoined	enjoin	VERB	VBN	Tense=Past|VerbForm=Part	60	advcl	_	SpaceAfter=No
+65	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = 2
 # text = For not as common bread and common drink do we receive these; but in like manner as Jesus Christ our Savior, having been made flesh by the Word of God, had both flesh and blood for our salvation, so likewise have we been taught that the food which is blessed by the prayer of His word, and from which our blood and flesh by transmutation are nourished, is the flesh and blood of that Jesus who was made flesh.
@@ -12045,14 +12056,14 @@
 20	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = 3
-# text = Some scholars and historians attributes Christianity to having contributed to the rise of the Scientific Revolution, Many well-known historical figures who influenced Western science considered themselves Christian such as Nicolaus Copernicus, Galileo Galilei, Johannes Kepler, Isaac Newton and Robert Boyle.
+# text = Some scholars and historians attributes Christianity to having contributed to the rise of the Scientific Revolution,[excessive citations]
 1	Some	some	DET	DT	_	2	det	_	_
 2	scholars	scholar	NOUN	NNS	Number=Plur	5	nsubj	_	_
 3	and	and	CCONJ	CC	_	4	cc	_	_
 4	historians	historian	NOUN	NNS	Number=Plur	2	conj	_	_
 5	attributes	attribute	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	Christianity	Christianity	PROPN	NNP	Number=Sing	5	obj	_	_
-7	to	to	PART	IN	_	9	mark	_	_
+7	to	to	SCONJ	IN	_	9	mark	_	_
 8	having	have	AUX	VBG	VerbForm=Ger	9	aux	_	_
 9	contributed	contribute	VERB	VBN	Tense=Past|VerbForm=Part	5	advcl	_	_
 10	to	to	ADP	IN	_	12	case	_	_
@@ -12062,37 +12073,43 @@
 14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
 15	Scientific	Scientific	PROPN	NNP	Number=Sing	16	compound	_	_
 16	Revolution	Revolution	PROPN	NNP	Number=Sing	12	nmod	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	5	punct	_	_
-18	Many	many	ADJ	JJ	Degree=Pos	23	amod	_	_
-19	well	well	ADV	RB	Degree=Pos	21	advmod	_	SpaceAfter=No
-20	-	-	PUNCT	HYPH	_	21	punct	_	SpaceAfter=No
-21	known	know	VERB	VBN	Tense=Past|VerbForm=Part	23	amod	_	_
-22	historical	historical	ADJ	JJ	Degree=Pos	23	amod	_	_
-23	figures	figure	NOUN	NNS	Number=Plur	28	nsubj	_	_
-24	who	who	PRON	WP	PronType=Rel	25	nsubj	_	_
-25	influenced	influence	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	acl:relcl	_	_
-26	Western	western	ADJ	JJ	Degree=Pos	27	amod	_	_
-27	science	science	NOUN	NN	Number=Sing	25	obj	_	_
-28	considered	consider	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	parataxis	_	_
-29	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	28	obj	_	_
-30	Christian	Christian	ADJ	JJ	Degree=Pos	28	xcomp	_	_
-31	such	such	ADJ	JJ	Degree=Pos	33	case	_	_
-32	as	as	ADP	IN	_	31	fixed	_	_
-33	Nicolaus	Nicolaus	PROPN	NNP	Number=Sing	30	obl	_	_
-34	Copernicus	Copernicus	PROPN	NNP	Number=Sing	33	flat	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	36	punct	_	_
-36	Galileo	Galileo	PROPN	NNP	Number=Sing	33	conj	_	_
-37	Galilei	Galilei	PROPN	NNP	Number=Sing	36	flat	_	SpaceAfter=No
-38	,	,	PUNCT	,	_	39	punct	_	_
-39	Johannes	Johannes	PROPN	NNP	Number=Sing	33	conj	_	_
-40	Kepler	Kepler	PROPN	NNP	Number=Sing	39	flat	_	SpaceAfter=No
-41	,	,	PUNCT	,	_	42	punct	_	_
-42	Isaac	Isaac	PROPN	NNP	Number=Sing	33	conj	_	_
-43	Newton	Newton	PROPN	NNP	Number=Sing	42	flat	_	_
-44	and	and	CCONJ	CC	_	45	cc	_	_
-45	Robert	Robert	PROPN	NNP	Number=Sing	33	conj	_	_
-46	Boyle	Boyle	PROPN	NNP	Number=Sing	45	flat	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+17	,	,	PUNCT	,	_	5	punct	_	SpaceAfter=No
+18	[excessive	[excessive	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	citations	citation	NOUN	NNS	Number=Plur	5	parataxis	_	SpaceAfter=No
+20	]	]	PUNCT	-RRB-	_	19	punct	_	_
+
+# sent_id = 4
+# text = Many well-known historical figures who influenced Western science considered themselves Christian such as Nicolaus Copernicus, Galileo Galilei, Johannes Kepler, Isaac Newton and Robert Boyle.
+1	Many	many	ADJ	JJ	Degree=Pos	6	amod	_	_
+2	well	well	ADV	RB	Degree=Pos	4	advmod	_	SpaceAfter=No
+3	-	-	PUNCT	HYPH	_	4	punct	_	SpaceAfter=No
+4	known	know	VERB	VBN	Tense=Past|VerbForm=Part	6	amod	_	_
+5	historical	historical	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	figures	figure	NOUN	NNS	Number=Plur	11	nsubj	_	_
+7	who	who	PRON	WP	PronType=Rel	8	nsubj	_	_
+8	influenced	influence	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	acl:relcl	_	_
+9	Western	western	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	science	science	NOUN	NN	Number=Sing	8	obj	_	_
+11	considered	consider	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+12	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	11	obj	_	_
+13	Christian	Christian	ADJ	JJ	Degree=Pos	11	xcomp	_	_
+14	such	such	ADJ	JJ	Degree=Pos	16	case	_	_
+15	as	as	ADP	IN	_	14	fixed	_	_
+16	Nicolaus	Nicolaus	PROPN	NNP	Number=Sing	13	obl	_	_
+17	Copernicus	Copernicus	PROPN	NNP	Number=Sing	16	flat	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	Galileo	Galileo	PROPN	NNP	Number=Sing	16	conj	_	_
+20	Galilei	Galilei	PROPN	NNP	Number=Sing	19	flat	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	22	punct	_	_
+22	Johannes	Johannes	PROPN	NNP	Number=Sing	16	conj	_	_
+23	Kepler	Kepler	PROPN	NNP	Number=Sing	22	flat	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	Isaac	Isaac	PROPN	NNP	Number=Sing	16	conj	_	_
+26	Newton	Newton	PROPN	NNP	Number=Sing	25	flat	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	Robert	Robert	PROPN	NNP	Number=Sing	16	conj	_	_
+29	Boyle	Boyle	PROPN	NNP	Number=Sing	28	flat	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -13799,11 +13816,11 @@
 39	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = 8
-# text = According to scholar Terence Chong from the Institute of Southeast Asian Studies, since 1980s Christianity is expanding in China, Singapore, Indonesia, Japan, Malaysia, Taiwan, South Korea, and Vietnam.
-1	According	accord	VERB	VBG	VerbForm=Ger	4	case	_	_
+# text = According to scholar Terence Chong from the Institute of Southeast Asian Studies, since the 1980s Christianity is expanding in China, Singapore, Indonesia, Japan, Malaysia, Taiwan, South Korea, and Vietnam.
+1	According	accord	VERB	VBG	VerbForm=Ger	3	case	_	_
 2	to	to	ADP	IN	_	3	case	_	_
-3	scholar	scholar	NOUN	NN	Number=Sing	18	obl	_	_
-4	Terence	Terence	PROPN	NNP	Number=Sing	18	obl	_	_
+3	scholar	scholar	NOUN	NN	Number=Sing	19	obl	_	_
+4	Terence	Terence	PROPN	NNP	Number=Sing	19	obl	_	_
 5	Chong	Chong	PROPN	NNP	Number=Sing	4	flat	_	_
 6	from	from	ADP	IN	_	8	case	_	_
 7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
@@ -13812,31 +13829,32 @@
 10	Southeast	Southeast	PROPN	NNP	Number=Sing	12	compound	_	_
 11	Asian	Asian	PROPN	NNP	Number=Sing	12	compound	_	_
 12	Studies	Studies	PROPN	NNPS	Number=Plur	8	nmod	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	18	punct	_	_
-14	since	since	ADP	IN	_	15	case	_	_
-15	1980s	1980	NOUN	NNS	Number=Plur	18	obl	_	_
-16	Christianity	Christianity	PROPN	NNP	Number=Sing	18	nsubj	_	_
-17	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
-18	expanding	expand	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	_
-19	in	in	ADP	IN	_	20	case	_	_
-20	China	China	PROPN	NNP	Number=Sing	18	obl	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	22	punct	_	_
-22	Singapore	Singapore	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	24	punct	_	_
-24	Indonesia	Indonesia	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	26	punct	_	_
-26	Japan	Japan	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	28	punct	_	_
-28	Malaysia	Malaysia	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	30	punct	_	_
-30	Taiwan	Taiwan	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	33	punct	_	_
-32	South	South	PROPN	NNP	Number=Sing	33	compound	_	_
-33	Korea	Korea	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	36	punct	_	_
-35	and	and	CCONJ	CC	_	36	cc	_	_
-36	Vietnam	Vietnam	PROPN	NNP	Number=Sing	20	conj	_	SpaceAfter=No
-37	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\n
+13	,	,	PUNCT	,	_	19	punct	_	_
+14	since	since	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	1980s	1980	NOUN	NNS	Number=Plur	19	obl	_	_
+17	Christianity	Christianity	PROPN	NNP	Number=Sing	19	nsubj	_	_
+18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+19	expanding	expand	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	_
+20	in	in	ADP	IN	_	21	case	_	_
+21	China	China	PROPN	NNP	Number=Sing	19	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	Singapore	Singapore	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	Indonesia	Indonesia	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	Japan	Japan	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	29	punct	_	_
+29	Malaysia	Malaysia	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	31	punct	_	_
+31	Taiwan	Taiwan	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	South	South	PROPN	NNP	Number=Sing	34	compound	_	_
+34	Korea	Korea	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	37	punct	_	_
+36	and	and	CCONJ	CC	_	37	cc	_	_
+37	Vietnam	Vietnam	PROPN	NNP	Number=Sing	21	conj	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	19	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = english-ewt-ud-2.6-200830
@@ -19196,7 +19214,7 @@
 36	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = 3
-# text = In 2019, a report commissioned by the United Kingdom's Secretary of State of the Foreign and Commonwealth Office (FCO) to investigate global persecution of Christians found persecution has increased, and is highest in the Middle East, North Africa, India, China, North Korea, and Latin America, among others, and that it is global and not limited to Islamic states.
+# text = In 2019, a report commissioned by the United Kingdom's Secretary of State of the Foreign and Commonwealth Office (FCO) to investigate global persecution of Christians found persecution has increased, and is highest in the Middle East, North Africa, India, China, North Korea, and Latin America,[clarification needed] among others, and that it is global and not limited to Islamic states.
 1	In	in	ADP	IN	_	2	case	_	_
 2	2019	2019	NUM	CD	NumType=Card	30	obl	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	30	punct	_	_
@@ -19252,22 +19270,26 @@
 53	and	and	CCONJ	CC	_	55	cc	_	_
 54	Latin	Latin	PROPN	NNP	Number=Sing	55	compound	_	_
 55	America	America	PROPN	NNP	Number=Sing	41	conj	_	SpaceAfter=No
-56	,	,	PUNCT	,	_	64	punct	_	SpacesAfter=\s\s
-57	among	among	ADP	IN	_	58	case	_	_
-58	others	other	NOUN	NNS	Number=Plur	41	nmod	_	SpaceAfter=No
-59	,	,	PUNCT	,	_	64	punct	_	_
-60	and	and	CCONJ	CC	_	64	cc	_	_
-61	that	that	SCONJ	IN	_	64	mark	_	_
-62	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	64	nsubj	_	_
-63	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	64	cop	_	_
-64	global	global	ADJ	JJ	Degree=Pos	33	conj	_	_
-65	and	and	CCONJ	CC	_	67	cc	_	_
-66	not	not	PART	RB	_	67	advmod	_	_
-67	limited	limit	VERB	VBN	Degree=Pos	64	conj	_	_
-68	to	to	ADP	IN	_	70	case	_	_
-69	Islamic	islamic	ADJ	JJ	Degree=Pos	70	amod	_	_
-70	states	state	NOUN	NNS	Number=Plur	67	obl	_	SpaceAfter=No
-71	.	.	PUNCT	.	_	30	punct	_	_
+56	,	,	PUNCT	,	_	58	punct	_	SpaceAfter=No
+57	[	[	PUNCT	-LRB-	_	58	punct	_	SpaceAfter=No
+58	clarification	clarification	NOUN	NN	Number=Sing	30	parataxis	_	_
+59	needed	need	VERB	VBN	Tense=Past|VerbForm=Part	58	acl	_	SpaceAfter=No
+60	]	]	PUNCT	-RRB-	_	58	punct	_	SpacesAfter=\s\s
+61	among	among	ADP	IN	_	62	case	_	_
+62	others	other	NOUN	NNS	Number=Plur	58	nmod	_	SpaceAfter=No
+63	,	,	PUNCT	,	_	68	punct	_	_
+64	and	and	CCONJ	CC	_	68	cc	_	_
+65	that	that	SCONJ	IN	_	68	mark	_	_
+66	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	68	nsubj	_	_
+67	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	68	cop	_	_
+68	global	global	ADJ	JJ	Degree=Pos	58	conj	_	_
+69	and	and	CCONJ	CC	_	71	cc	_	_
+70	not	not	PART	RB	_	71	advmod	_	_
+71	limited	limit	VERB	VBN	Degree=Pos	68	conj	_	_
+72	to	to	ADP	IN	_	74	case	_	_
+73	Islamic	islamic	ADJ	JJ	Degree=Pos	74	amod	_	_
+74	states	state	NOUN	NNS	Number=Plur	71	obl	_	SpaceAfter=No
+75	.	.	PUNCT	.	_	30	punct	_	_
 
 # sent_id = 4
 # text = This investigation found that approximately 80% of persecuted believers worldwide are Christians.

@@ -4116,7 +4116,7 @@
 16	.	.	PUNCT	PUNCT	PunctType=Peri	5	punct	_	_
 
 # sent_id = 3
-# text = Les combinacions d'aspecte possible són quatre ( , , i ).
+# text = Les combinacions d'aspecte possible són quatre ([-perf] [-cont], [-perf] [- cont], [-perf] [-cont] i [-perf] [-cont]).
 1	Les	el	DET	DET	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	combinacions	combinació	NOUN	NOUN	Gender=Fem|Number=Plur	7	nsubj	_	_
 3	d'	de	ADP	ADP	AdpType=Prep	4	case	_	SpaceAfter=No
@@ -4124,12 +4124,37 @@
 5	possible	possible	ADJ	ADJ	Number=Sing	4	amod	_	_
 6	són	ser	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 7	quatre	quatre	NUM	NUM	Number=Plur|NumType=Card	0	root	_	_
-8	(	(	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	7	punct	_	_
-9	,	,	PUNCT	PUNCT	PunctType=Comm	7	punct	_	SpacesAfter=\s\s
-10	,	,	PUNCT	PUNCT	PunctType=Comm	9	punct	_	SpacesAfter=\s\s\s
-11	i	i	CCONJ	CCONJ	_	9	cc	_	SpacesAfter=\s\s
-12	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	9	punct	_	SpaceAfter=No
-13	.	.	PUNCT	PUNCT	PunctType=Peri	7	punct	_	_
+8	(	(	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	10	punct	_	SpaceAfter=No
+9	[	[	PUNCT	PUNCT	PunctType=Quot	10	punct	_	SpaceAfter=No
+10	-perf	-perf	NOUN	NOUN	_	7	appos	_	SpaceAfter=No
+11	]	]	PUNCT	PUNCT	PunctType=Quot	10	punct	_	_
+12	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	13	punct	_	SpaceAfter=No
+13	-cont	-cont	NOUN	NOUN	_	10	conj	_	SpaceAfter=No
+14	]	]	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	13	punct	_	SpaceAfter=No
+15	,	,	PUNCT	PUNCT	PunctType=Comm	17	punct	_	_
+16	[	[	PUNCT	PUNCT	PunctType=Quot	17	punct	_	SpaceAfter=No
+17	-perf	-perf	NOUN	NOUN	_	10	conj	_	SpaceAfter=No
+18	]	]	PUNCT	PUNCT	PunctType=Quot	17	punct	_	_
+19	[	[	PUNCT	PUNCT	PunctType=Quot	21	punct	_	SpaceAfter=No
+20	-	-	PUNCT	PUNCT	PunctType=Dash	21	punct	_	_
+21	cont	cont	NOUN	NOUN	Gender=Masc|Number=Sing	17	appos	_	SpaceAfter=No
+22	]	]	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	21	punct	_	SpaceAfter=No
+23	,	,	PUNCT	PUNCT	PunctType=Comm	25	punct	_	_
+24	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	25	punct	_	SpaceAfter=No
+25	-perf	-perf	NOUN	NOUN	_	10	appos	_	SpaceAfter=No
+26	]	]	PUNCT	PUNCT	_	25	punct	_	_
+27	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	28	punct	_	SpaceAfter=No
+28	-cont	-cont	NOUN	NOUN	_	25	appos	_	SpaceAfter=No
+29	]	]	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	28	punct	_	_
+30	i	i	CCONJ	CCONJ	_	32	cc	_	_
+31	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	32	punct	_	SpaceAfter=No
+32	-perf	-perf	NOUN	NOUN	_	10	conj	_	SpaceAfter=No
+33	]	]	PUNCT	PUNCT	_	32	punct	_	_
+34	[	[	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	35	punct	_	SpaceAfter=No
+35	-cont	-cont	NOUN	NOUN	_	32	appos	_	SpaceAfter=No
+36	]	]	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	35	punct	_	SpaceAfter=No
+37	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	10	punct	_	SpaceAfter=No
+38	.	.	PUNCT	PUNCT	PunctType=Peri	7	punct	_	_
 
 # sent_id = 4
 # text = Les combinacions de temps i aspecte anteriors donen lloc a un nombre important de temps verbals:
@@ -7136,7 +7161,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = L'anglès utilitza l'alfabet llatí, que va substituir les runes anglosaxones al voltant del segle ix.
+# text = L'anglès utilitza l'alfabet llatí, que va substituir les runes anglosaxones al voltant del segle ix.[cal citació] L'ortografia de l'anglès és etimològica i no pas fonètica, especialment per a les paraules d'origen llatí o recentment incorporades del francès.
 1	L'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
 2	anglès	anglès	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	utilitza	utilitzar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -7154,40 +7179,39 @@
 15	voltant	voltant	NOUN	NOUN	_	14	fixed	_	_
 16	del	del	ADP	ADP	AdpType=Preppron	14	fixed	_	_
 17	segle	segle	NOUN	NOUN	_	10	obl	_	SpacesAfter= 
-18	ix	ix	NUM	NUM	_	17	compound	_	SpaceAfter=No
-19	.	.	PUNCT	PUNCT	PunctType=Peri	3	punct	_	_
+18	ix.[	ix.[	NUM	NUM	_	17	compound	_	SpaceAfter=No
+19	cal	caldre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	SpacesAfter= 
+20	citació	citació	NOUN	NOUN	Gender=Fem|Number=Sing	19	nsubj	_	SpaceAfter=No
+21	]	]	PUNCT	PUNCT	PunctType=Colo	19	punct	_	_
+22	L'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No
+23	ortografia	ortografia	NOUN	NOUN	Gender=Fem|Number=Sing	28	nsubj	_	_
+24	de	de	ADP	ADP	AdpType=Prep	26	case	_	_
+25	l'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
+26	anglès	anglès	NOUN	NOUN	Gender=Masc|Number=Sing	23	nmod	_	_
+27	és	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_
+28	etimològica	etimològic	ADJ	ADJ	Gender=Fem|Number=Sing	3	advcl	_	_
+29	i	i	CCONJ	CCONJ	_	32	cc	_	_
+30	no	no	ADV	ADV	Polarity=Neg	32	advmod	_	_
+31	pas	pas	ADV	ADV	Polarity=Neg	32	advmod	_	_
+32	fonètica	fonètic	ADJ	ADJ	Gender=Fem|Number=Sing	28	conj	_	SpaceAfter=No
+33	,	,	PUNCT	PUNCT	PunctType=Comm	34	punct	_	_
+34	especialment	especialment	ADV	ADV	_	28	advmod	_	_
+35	per	per	ADP	ADP	AdpType=Prep	34	case	_	_
+36	a	a	ADP	ADP	AdpType=Prep	38	case	_	_
+37	les	el	DET	DET	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	_	_
+38	paraules	paraula	NOUN	NOUN	Gender=Fem|Number=Plur	34	nmod	_	_
+39	d'	de	ADP	ADP	AdpType=Prep	40	case	_	SpaceAfter=No
+40	origen	origen	NOUN	NOUN	Gender=Masc|Number=Sing	38	nmod	_	_
+41	llatí	llatí	ADJ	ADJ	Gender=Masc|Number=Sing	40	amod	_	_
+42	o	o	CCONJ	CCONJ	_	44	cc	_	_
+43	recentment	recentment	ADV	ADV	_	44	advmod	_	_
+44	incorporades	incorporat	ADJ	ADJ	Gender=Fem|Number=Plur|VerbForm=Part	40	conj	_	_
+45	del	del	ADP	ADP	AdpType=Preppron	46	case	_	_
+46	francès	francès	NOUN	NOUN	Gender=Masc|Number=Sing	44	obj	_	SpaceAfter=No
+47	.	.	PUNCT	PUNCT	PunctType=Peri	3	punct	_	_
 
 # sent_id = 2
-# text = L'ortografia de l'anglès és etimològica i no pas fonètica, especialment per a les paraules d'origen llatí o recentment incorporades del francès.
-1	L'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
-2	ortografia	ortografia	NOUN	NOUN	Gender=Fem|Number=Sing	7	nsubj	_	_
-3	de	de	ADP	ADP	AdpType=Prep	5	case	_	_
-4	l'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No
-5	anglès	anglès	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
-6	és	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	etimològica	etimològic	ADJ	ADJ	Gender=Fem|Number=Sing	0	root	_	_
-8	i	i	CCONJ	CCONJ	_	11	cc	_	_
-9	no	no	ADV	ADV	Polarity=Neg	11	advmod	_	_
-10	pas	pas	ADV	ADV	Polarity=Neg	11	advmod	_	_
-11	fonètica	fonètic	ADJ	ADJ	Gender=Fem|Number=Sing	7	conj	_	SpaceAfter=No
-12	,	,	PUNCT	PUNCT	PunctType=Comm	13	punct	_	_
-13	especialment	especialment	ADV	ADV	_	7	advmod	_	_
-14	per	per	ADP	ADP	AdpType=Prep	13	case	_	_
-15	a	a	ADP	ADP	AdpType=Prep	17	case	_	_
-16	les	el	DET	DET	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-17	paraules	paraula	NOUN	NOUN	Gender=Fem|Number=Plur	13	nmod	_	_
-18	d'	de	ADP	ADP	AdpType=Prep	19	case	_	SpaceAfter=No
-19	origen	origen	NOUN	NOUN	Gender=Masc|Number=Sing	17	nmod	_	_
-20	llatí	llatí	ADJ	ADJ	Gender=Masc|Number=Sing	19	amod	_	_
-21	o	o	CCONJ	CCONJ	_	23	cc	_	_
-22	recentment	recentment	ADV	ADV	_	23	advmod	_	_
-23	incorporades	incorporat	ADJ	ADJ	Gender=Fem|Number=Plur|VerbForm=Part	19	conj	_	_
-24	del	del	ADP	ADP	AdpType=Preppron	25	case	_	_
-25	francès	francès	NOUN	NOUN	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No
-26	.	.	PUNCT	PUNCT	PunctType=Peri	7	punct	_	_
-
-# sent_id = 3
-# text = Existeixen regles d'escriptura per a les paraules d'origen germànic i les adaptades antigament del francès, i per tant, un angloparlant pot deduir la pronunciació d'aquestes, encara que hi ha excepcions.
+# text = Existeixen regles d'escriptura per a les paraules d'origen germànic i les adaptades antigament del francès, i per tant, un angloparlant pot deduir la pronunciació d'aquestes, encara que hi ha excepcions.[cal citació]
 1	Existeixen	existir	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	regles	regla	NOUN	NOUN	Gender=Fem|Number=Plur	1	nsubj	_	_
 3	d'	de	ADP	ADP	AdpType=Prep	4	case	_	SpaceAfter=No
@@ -7222,9 +7246,11 @@
 32	encara	encara	ADV	ADV	_	35	mark	_	_
 33	que	que	SCONJ	SCONJ	_	32	fixed	_	_
 34	hi	hi	PRON	PRON	Person=3|PronType=Prs	35	obj	_	_
-35	ha	haver	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	advcl	_	_
-36	excepcions	excepció	NOUN	NOUN	Gender=Fem|Number=Plur	35	obj	_	SpaceAfter=No
-37	.	.	PUNCT	PUNCT	PunctType=Peri	1	punct	_	SpacesAfter=\n
+35	ha	haver	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	advcl	_	_
+36	excepcions.[	excepcions.[	ADJ	ADJ	_	35	obj	_	SpaceAfter=No
+37	cal	caldre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	advcl	_	SpacesAfter= 
+38	citació	citació	NOUN	NOUN	Gender=Fem|Number=Sing	37	nsubj	_	SpaceAfter=No
+39	]	]	PUNCT	PUNCT	PunctSide=Fin|PunctType=Comm	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = catalan-ancora-ud-2.6-200830

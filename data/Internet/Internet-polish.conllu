@@ -261,7 +261,7 @@
 9	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	_
 
 # sent_id = 3
-# text = Była to wówczas przestrzeń, gdzie przechowywane informacje należało odszukiwać, wpisując specjalny do tego adres.
+# text = Była to wówczas przestrzeń, gdzie przechowywane informacje należało odszukiwać, wpisując specjalny do tego adres[doprecyzuj!].
 1	Była	być	AUX	praet:sg:f:imperf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
 2	to	to	AUX	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	4	cop	_	_
 3	wówczas	wówczas	ADV	adv	PronType=Dem	4	advmod	_	_
@@ -278,7 +278,11 @@
 14	do	do	ADP	prep:gen	AdpType=Prep	15	case	_	_
 15	tego	to	PRON	subst:sg:gen:n:ncol	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	13	obl:arg	_	_
 16	adres	adres	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No
-17	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	SpacesAfter=\n
+17	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	18	punct	_	SpaceAfter=No
+18	doprecyzuj	doprecyzować	VERB	impt:sg:sec:perf	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	16	parataxis:insert	_	SpaceAfter=No
+19	!	!	PUNCT	interp	PunctType=Excl	18	punct	_	SpaceAfter=No
+20	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	18	punct	_	SpaceAfter=No
+21	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
 # sent_id = 4
 # text = W 1985 roku została zarejestrowana pierwsza domena z rozszerzeniem .com pod nazwą Symbolics.
@@ -1021,7 +1025,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 15 grudnia 1991 Stany Zjednoczone zniosły ograniczenia w łączności z Polską, a 20 grudnia placówki naukowe Uniwersytetu Warszawskiego, Instytut Fizyki Jądrowej i Obserwatorium Astronomiczne oraz pojedyncze komputery w Krakowie, Toruniu i Katowicach zostały podłączone do Internetu.
+# text = 15 grudnia 1991 Stany Zjednoczone zniosły ograniczenia w łączności z Polską, a 20 grudnia placówki naukowe Uniwersytetu Warszawskiego, Instytut Fizyki Jądrowej i Obserwatorium Astronomiczne oraz pojedyncze komputery w Krakowie, Toruniu i Katowicach zostały podłączone do Internetu.[potrzebny przypis]
 1	15	15	ADJ	adj:sg:gen:m3:pos	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|NumForm=Digit|NumType=Ord	6	obl	_	_
 2	grudnia	grudzień	NOUN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod:flat	_	_
 3	1991	1991	ADJ	adj:sg:gen:m3:pos	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|NumForm=Digit|NumType=Ord	2	amod:flat	_	_
@@ -1060,8 +1064,12 @@
 36	zostały	zostać	AUX	praet:pl:m3:perf	Animacy=Inan|Aspect=Perf|Gender=Masc|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	37	aux:pass	_	_
 37	podłączone	podłączyć	ADJ	ppas:pl:nom:m3:perf:aff	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos|VerbForm=Part|Voice=Pass	6	conj	_	_
 38	do	do	ADP	prep:gen	AdpType=Prep	39	case	_	_
-39	Internetu	Internet	PROPN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	37	obl:arg	_	SpaceAfter=No
-40	.	.	PUNCT	interp	PunctType=Peri	6	punct	_	SpacesAfter=\n
+39	Internetu	Internet	PROPN	subst:sg:gen:m3	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	37	obl	_	SpaceAfter=No
+40	.	.	PUNCT	interp	PunctType=Peri	43	punct	_	SpaceAfter=No
+41	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	43	punct	_	SpaceAfter=No
+42	potrzebny	potrzebny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	43	amod	_	SpacesAfter= 
+43	przypis	przypis	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+44	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	43	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830

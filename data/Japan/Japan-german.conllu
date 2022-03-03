@@ -639,7 +639,7 @@
 35	.	.	PUNCT	$.	PunctType=Peri	5	punct	_	_
 
 # sent_id = 2
-# text = Die rein japanische Lesung anstelle des sinojapanischen Nihon oder Nippon ist Hi no Moto (no Kuni) (日本(国)).
+# text = Die rein japanische Lesung anstelle des sinojapanischen Nihon oder Nippon ist Hi no Moto (no Kuni) (日[の]本([の]国)).
 1	Die	Die	DET	ART	Case=Nom|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 2	rein	rein	ADJ	ADJD	Degree=Pos|Variant=Short	3	advmod	_	_
 3	japanische	japanisch	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
@@ -659,9 +659,10 @@
 17	Kuni	Kuni	X	FM	Foreign=Yes|Person=3	16	flat	_	SpaceAfter=No
 18	)	)	PUNCT	$(	PunctType=Brck	16	punct	_	_
 19	(	(	PUNCT	$(	PunctType=Brck	20	punct	_	SpaceAfter=No
-20	日本(国)	日本(国)	PROPN	NE	Person=3	16	appos	_	SpaceAfter=No
+20	日[の]本([の]国	日[の]本([の]国	X	FM	Foreign=Yes|Person=3	16	appos	_	SpaceAfter=No
 21	)	)	PUNCT	$(	PunctType=Brck	20	punct	_	SpaceAfter=No
-22	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
+22	)	)	PUNCT	$(	PunctType=Brck	16	punct	_	SpaceAfter=No
+23	.	.	PUNCT	$.	PunctType=Peri	12	punct	_	_
 
 # sent_id = 3
 # text = Zuvor war das Land als Wakoku (倭国, „Land der Wa“) bekannt, wobei Wa (倭) erst ein Demonym war und dann auch für das Land als Ganzes verwendet wurde.
@@ -1050,30 +1051,42 @@
 47	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 4
-# text = „Land der Mitte der Schilfgefilde“) sowie Ōyashima no Kuni (Kojiki: 大八嶋國, Nihon Shoki: 大八洲國, dt.
+# text = „Land der Mitte [zwischen dem Himmel Takamanohara und der Unterwelt Yomi no kuni] der Schilfgefilde“) sowie Ōyashima no Kuni (Kojiki: 大八嶋國, Nihon Shoki: 大八洲國, dt.
 1	„	„	PUNCT	$(	PunctType=Brck	2	punct	_	SpaceAfter=No
 2	Land	Land	NOUN	NN	Gender=Neut|Number=Sing|Person=3	0	root	_	_
 3	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Mitte	Mitte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	nmod	_	SpacesAfter=\s\s
-5	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	6	det	_	_
-6	Schilfgefilde“	Gefild	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	nmod	_	SpaceAfter=No
-7	)	)	PUNCT	$(	PunctType=Brck	2	punct	_	_
-8	sowie	sowie	CCONJ	KON	_	9	cc	_	_
-9	Ōyashima	Ōyashima	PROPN	NE	Person=3	2	conj	_	_
-10	no	no	X	FM	Foreign=Yes|Person=3	9	flat	_	_
-11	Kuni	Kuni	PROPN	NE	Person=3	9	flat:name	_	_
-12	(	(	PUNCT	$(	PunctType=Brck	13	punct	_	SpaceAfter=No
-13	Kojiki	Kojiki	PROPN	NE	Person=3	9	appos	_	SpaceAfter=No
-14	:	:	PUNCT	$.	PunctType=Peri	13	punct	_	_
-15	大八嶋國	大八嶋國	X	FM	Foreign=Yes|Person=3	13	appos	_	SpaceAfter=No
-16	,	,	PUNCT	$,	PunctType=Comm	17	punct	_	_
-17	Nihon	Nihon	PROPN	NE	Person=3	15	appos	_	_
-18	Shoki	Shoki	PROPN	NE	Person=3	17	flat:name	_	SpaceAfter=No
-19	:	:	PUNCT	$.	PunctType=Peri	17	punct	_	_
-20	大八洲國	大八洲國	X	FM	Foreign=Yes|Person=3	13	appos	_	SpaceAfter=No
-21	,	,	PUNCT	$,	PunctType=Comm	22	punct	_	_
-22	dt	dt	X	NE	Foreign=Yes|Person=3	20	appos	_	SpaceAfter=No
-23	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
+4	Mitte	Mitte	NOUN	NN	Gender=Fem|Number=Sing|Person=3	2	nmod	_	_
+5	[	[	PUNCT	$(	PunctType=Brck	8	punct	_	SpaceAfter=No
+6	zwischen	zwischen	ADP	APPR	AdpType=Prep|Case=Dat	8	case	_	_
+7	dem	dem	DET	ART	Case=Dat|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Himmel	Himmel	NOUN	NN	Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+9	Takamanohara	Takamanohara	PROPN	NE	Person=3	8	flat:name	_	_
+10	und	und	CCONJ	KON	_	12	cc	_	_
+11	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Unterwelt	Welt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	8	conj	_	_
+13	Yomi	Yomi	PROPN	NE	Person=3	12	flat:name	_	_
+14	no	no	X	FM	Foreign=Yes|Person=3	12	appos	_	_
+15	kuni	kuni	X	FM	Foreign=Yes|Person=3	13	flat	_	SpaceAfter=No
+16	]	]	PUNCT	$(	PunctType=Brck	8	punct	_	_
+17	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	18	det	_	_
+18	Schilfgefilde“	Gefild	NOUN	NN	Gender=Neut|Number=Plur|Person=3	12	nmod	_	SpaceAfter=No
+19	)	)	PUNCT	$(	PunctType=Brck	8	punct	_	_
+20	sowie	sowie	CCONJ	KON	_	21	cc	_	_
+21	Ōyashima	Ōyashima	PROPN	NE	Person=3	2	conj	_	_
+22	no	no	X	FM	Foreign=Yes|Person=3	21	flat	_	_
+23	Kuni	Kuni	PROPN	NE	Person=3	21	flat:name	_	_
+24	(	(	PUNCT	$(	PunctType=Brck	25	punct	_	SpaceAfter=No
+25	Kojiki	Kojiki	PROPN	NE	Person=3	21	appos	_	SpaceAfter=No
+26	:	:	PUNCT	$.	PunctType=Peri	25	punct	_	_
+27	大八嶋國	大八嶋國	X	FM	Foreign=Yes|Person=3	25	appos	_	SpaceAfter=No
+28	,	,	PUNCT	$,	PunctType=Comm	29	punct	_	_
+29	Nihon	Nihon	PROPN	NE	Person=3	25	appos	_	_
+30	Shoki	Shoki	PROPN	NE	Person=3	29	flat:name	_	SpaceAfter=No
+31	:	:	PUNCT	$.	PunctType=Peri	29	punct	_	_
+32	大八洲國	大八洲國	X	FM	Foreign=Yes|Person=3	25	appos	_	SpaceAfter=No
+33	,	,	PUNCT	$,	PunctType=Comm	34	punct	_	_
+34	dt	dt	X	NE	Foreign=Yes|Person=3	25	appos	_	SpaceAfter=No
+35	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 5
 # text = „Land der großen acht Inseln“), kurz auch Yashima.
@@ -2851,11 +2864,11 @@
 27	:	:	PUNCT	$.	PunctType=Peri	2	punct	_	_
 
 # sent_id = 2
-# text = Kreisfreie Städte (shi), Kleinstädte (chō oder machi), Dörfer (mura oder son) sowie in der Präfektur Tokio die 23 „Bezirke“ (ku).
+# text = Kreisfreie Städte (shi), Kleinstädte (chō oder machi), Dörfer (mura oder son) sowie in der Präfektur Tokio die 23 „[Sonder-]Bezirke“ ([tokubetsu-]ku).
 1	Kreisfreie	kreisfrei	ADJ	ADJA	Degree=Pos|Number=Plur	2	amod	_	_
 2	Städte	Stadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	0	root	_	_
 3	(	(	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
-4	shi	shi	X	FM	Foreign=Yes|Person=3	2	appos	_	SpaceAfter=No
+4	shi	shi	PROPN	NE	Person=3	2	appos	_	SpaceAfter=No
 5	)	)	PUNCT	$(	PunctType=Brck	4	punct	_	SpaceAfter=No
 6	,	,	PUNCT	$,	PunctType=Comm	7	punct	_	_
 7	Kleinstädte	Kleinstadt	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	conj	_	_
@@ -2876,14 +2889,13 @@
 22	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Präfektur	Präfektur	NOUN	NN	Gender=Fem|Number=Sing|Person=3	27	nmod	_	_
 24	Tokio	Tokio	PROPN	NE	Person=3	23	flat:name	_	_
-25	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	28	det	_	_
+25	die	die	DET	ART	Case=Nom|Number=Plur|PronType=Art	27	det	_	_
 26	23	23	NUM	CARD	Number=Plur|NumType=Card|Person=3	27	nummod	_	_
-27	„	„	NOUN	NN	Person=3	2	conj	_	SpaceAfter=No
-28	Bezirke“	Bezirke“	NOUN	NN	Gender=Masc|Number=Plur|Person=3	27	appos	_	_
-29	(	(	PUNCT	$(	PunctType=Brck	30	punct	_	SpaceAfter=No
-30	ku	ku	X	FM	Foreign=Yes|Person=3	28	appos	_	SpaceAfter=No
-31	)	)	PUNCT	$(	PunctType=Brck	30	punct	_	SpaceAfter=No
-32	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
+27	„[Sonder-]Bezirke“	Bezirke“	NOUN	NN	Gender=Masc|Number=Plur|Person=3	4	conj	_	_
+28	(	(	PUNCT	$(	PunctType=Brck	29	punct	_	SpaceAfter=No
+29	[tokubetsu-]ku	[tokubetsu-]ku	X	FM	Foreign=Yes|Person=3	27	appos	_	SpaceAfter=No
+30	)	)	PUNCT	$(	PunctType=Brck	29	punct	_	SpaceAfter=No
+31	.	.	PUNCT	$.	PunctType=Peri	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -3274,14 +3286,14 @@
 20	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 3
-# text = Die seirei shitei toshi sind in Bezirke (Ku) unterteilt und übernehmen verschiedene Verwaltungsaufgaben, die sonst den Präfekturen zustehen.
+# text = Die seirei shitei toshi sind in [Stadt-]Bezirke (Ku) unterteilt und übernehmen verschiedene Verwaltungsaufgaben, die sonst den Präfekturen zustehen.
 1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	2	det	_	_
 2	seirei	seirei	X	FM	Foreign=Yes|Person=3	11	nsubj:pass	_	_
 3	shitei	shitei	X	FM	Foreign=Yes|Person=3	2	flat	_	_
 4	toshi	toshi	X	FM	Foreign=Yes|Person=3	2	flat	_	_
 5	sind	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_
 6	in	in	ADP	APPR	AdpType=Prep|Case=Acc	7	case	_	_
-7	Bezirke	Bezirk	NOUN	NN	Gender=Masc|Number=Plur|Person=3	11	obl	_	_
+7	[Stadt-]Bezirke	Bezirk	NOUN	NN	Gender=Masc|Number=Plur|Person=3	11	obl	_	_
 8	(	(	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
 9	Ku	Ku	PROPN	NE	Person=3	7	appos	_	SpaceAfter=No
 10	)	)	PUNCT	$(	PunctType=Brck	9	punct	_	_
@@ -7943,7 +7955,7 @@
 60	.	.	PUNCT	$.	PunctType=Peri	23	punct	_	_
 
 # sent_id = 2
-# text = Die der Insel Hokkaidō am nächsten vorgelagerten Südkurilen werden jedoch von Japan nicht als Teil der abgetretenen Kurilen betrachtet und als „Nördliche Territorien“ als Teil der Präfektur (-dō) Hokkai beansprucht.
+# text = Die der Insel Hokkaidō am nächsten vorgelagerten Südkurilen werden jedoch von Japan nicht als Teil der abgetretenen Kurilen betrachtet und als „Nördliche Territorien“ als Teil der Präfektur (-dō) Hokkai[dō] beansprucht.
 1	Die	Die	DET	ART	Case=Nom|Number=Plur|PronType=Art	8	det	_	_
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	Insel	Insel	NOUN	NN	Gender=Fem|Number=Sing|Person=3	7	obj	_	_
@@ -7963,11 +7975,11 @@
 17	abgetretenen	abtreten	ADJ	ADJA	Degree=Pos|Number=Plur	18	amod	_	_
 18	Kurilen	Kurile	NOUN	NN	Gender=Fem|Number=Plur|Person=3	15	nmod	_	_
 19	betrachtet	betrachten	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	_
-20	und	und	CCONJ	KON	_	33	cc	_	_
+20	und	und	CCONJ	KON	_	34	cc	_	_
 21	als	als	CCONJ	KOKOM	ConjType=Comp	24	case	_	_
 22	„	„	PUNCT	$(	PunctType=Brck	24	punct	_	SpaceAfter=No
 23	Nördliche	nördlich	ADJ	ADJA	Degree=Pos|Number=Plur	24	amod	_	_
-24	Territorien“	Territorien“	NOUN	NN	Gender=Neut|Number=Plur|Person=3	33	obl	_	_
+24	Territorien“	Territorien“	NOUN	NN	Gender=Neut|Number=Plur|Person=3	34	obl	_	_
 25	als	als	CCONJ	KOKOM	ConjType=Comp	26	case	_	_
 26	Teil	Teil	NOUN	NN	Number=Sing|Person=3	24	obl	_	_
 27	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
@@ -7975,9 +7987,10 @@
 29	(	(	PUNCT	$(	PunctType=Brck	30	punct	_	SpaceAfter=No
 30	-dō	-dō	NOUN	TRUNC	Hyph=Yes	28	appos	_	SpaceAfter=No
 31	)	)	PUNCT	$(	PunctType=Brck	30	punct	_	_
-32	Hokkai	Hokkai	PROPN	NE	Person=3	30	appos	_	_
-33	beansprucht	beanspruchen	VERB	VVPP	Aspect=Perf|VerbForm=Part	19	conj	_	SpaceAfter=No
-34	.	.	PUNCT	$.	PunctType=Peri	19	punct	_	_
+32	Hokkai[dō	Hokkai[dō	PROPN	NE	Person=3	30	appos	_	SpaceAfter=No
+33	]	]	PUNCT	$(	PunctType=Brck	30	punct	_	_
+34	beansprucht	beanspruchen	VERB	VVPP	Aspect=Perf|VerbForm=Part	19	conj	_	SpaceAfter=No
+35	.	.	PUNCT	$.	PunctType=Peri	19	punct	_	_
 
 # sent_id = 3
 # text = Dieser Kurilenkonflikt ist ein andauerndes Problem in den japanisch-russischen Beziehungen und ein Hindernis für einen Friedensvertrag.
@@ -16328,15 +16341,6 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 35.156111111111136.06Koordinaten:
-1	35.156111111111136.06Koordinaten	u.156111111111136.06koordknown	NOUN	NN	Person=3	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
-
-# sent_id = 2
-# text = 35° N, 136° O
-1	35°	35°	X	FM	Foreign=Yes|Person=3	0	root	_	SpacesAfter= 
-2	N	N	NOUN	NN	Gender=Neut|Number=Sing|Person=3	1	appos	_	SpaceAfter=No
-3	,	,	PUNCT	$,	PunctType=Comm	4	punct	_	_
-4	136°	136°	NOUN	NN	Person=3	1	appos	_	SpacesAfter= 
-5	O	O	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	appos	_	SpacesAfter=\n
+# text = 35.156111111111136.06
+1	35.156111111111136.06	35.156111111111136.06	NUM	CARD	Number=Plur|NumType=Card|Person=3	0	root	_	SpacesAfter=\n
 

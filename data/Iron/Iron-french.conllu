@@ -335,7 +335,7 @@
 22	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 2
-# text = Mais aujourd'hui on voit dans l’espagnol hierro et l’anglais iron (même sens) un emprunt celtique et on le rattache plutôt au radical de aes (« airin » et autres métaux) et sa racine indo-européenne reconstruite : *ḫeṷis ou encore *ai̯os- .
+# text = Mais aujourd'hui on voit dans l’espagnol hierro et l’anglais iron (même sens) un emprunt celtique et on le rattache plutôt au radical de aes (« airin » et autres métaux) et sa racine indo-européenne reconstruite : *ḫeṷis ou encore *ai̯os- [« métal »,(cuivre, bronze ou fer)].
 1	Mais	mais	CCONJ	_	_	4	cc	_	_
 2	aujourd'hui	aujourd'hui	ADV	_	_	4	advmod	_	_
 3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
@@ -383,9 +383,21 @@
 44	*ḫeṷis	*ḫeṷis	X	_	_	40	appos	_	_
 45	ou	ou	CCONJ	_	_	47	cc	_	_
 46	encore	encore	ADV	_	_	47	advmod	_	_
-47	*ai̯os	*ai̯o	X	_	_	44	conj	_	SpaceAfter=No
-48	-	-	PUNCT	_	_	44	punct	_	_
-49	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n
+47	*ai̯os	*ai̯o	PROPN	_	_	44	conj	_	SpaceAfter=No
+48	-	-	PUNCT	_	_	51	punct	_	_
+49	[	[	PUNCT	_	_	51	punct	_	SpaceAfter=No
+50	«	«	PUNCT	_	_	51	punct	_	SpacesAfter= 
+51	métal	métal	NOUN	_	Gender=Masc|Number=Sing	47	appos	_	SpacesAfter= 
+52	»	»	PUNCT	_	_	51	punct	_	SpaceAfter=No
+53	,(	,(	PUNCT	_	_	54	punct	_	SpaceAfter=No
+54	cuivre	cuivre	NOUN	_	Gender=Masc|Number=Sing	51	appos	_	SpaceAfter=No
+55	,	,	PUNCT	_	_	56	punct	_	_
+56	bronze	bronze	NOUN	_	Gender=Masc|Number=Sing	54	conj	_	_
+57	ou	ou	CCONJ	_	_	58	cc	_	_
+58	fer	fer	NOUN	_	Gender=Masc|Number=Sing	54	conj	_	SpaceAfter=No
+59	)	)	PUNCT	_	_	54	punct	_	SpaceAfter=No
+60	]	]	PUNCT	_	_	44	punct	_	SpaceAfter=No
+61	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830
@@ -2148,7 +2160,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Les potentiels de référence des couples du fer sont :
+# text = Les potentiels de référence des couples du fer sont[réf.
 1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	potentiels	potentiel	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_
 3	de	de	ADP	_	_	4	case	_	_
@@ -2161,8 +2173,13 @@
 8	de	de	ADP	_	_	10	case	_	_
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	fer	fer	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_
-11	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter= 
-12	:	:	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+11	sont[réf.	sont[réf.	VERB	_	_	0	root	_	SpacesAfter= 
+
+# sent_id = 2
+# text = nécessaire] :
+1	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	_	_	1	punct	_	SpacesAfter= 
+3	:	:	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830
@@ -2208,19 +2225,19 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Cela indique également qu'en présence de dioxygène dissous (E°(O2 / H2O) = 1,3 V), les ions fer(II) ne sont pas stables non plus.
+# text = Cela indique également qu'en présence de dioxygène dissous (E°(O2 / H2O) = 1,3 V[réf. nécessaire]), les ions fer(II) ne sont pas stables non plus.
 1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_
 2	indique	indiquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	également	également	ADV	_	_	2	advmod	_	_
-4	qu'	que	SCONJ	_	_	31	mark	_	SpaceAfter=No
+4	qu'	que	SCONJ	_	_	34	mark	_	SpaceAfter=No
 5	en	en	ADP	_	_	6	case	_	_
-6	présence	présence	NOUN	_	Gender=Fem|Number=Sing	31	obl:mod	_	_
+6	présence	présence	NOUN	_	Gender=Fem|Number=Sing	34	obl:mod	_	_
 7	de	de	ADP	_	_	8	case	_	_
 8	dioxygène	dioxygène	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_
 9	dissous	dissoudre	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_
 10	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No
-11	E	E	X	_	_	18	nsubj	_	SpaceAfter=No
-12	°	°	SYM	_	_	11	appos	_	SpaceAfter=No
+11	E	E	X	_	_	12	nmod	_	SpaceAfter=No
+12	°	°	SYM	_	_	8	appos	_	SpaceAfter=No
 13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No
 14	O2	O2	X	_	_	12	appos	_	_
 15	/	/	SYM	_	_	16	cc	_	_
@@ -2228,21 +2245,24 @@
 17	)	)	PUNCT	_	_	14	punct	_	_
 18	=	=	VERB	_	_	8	parataxis	_	_
 19	1,3	1,3	NUM	_	_	20	nummod	_	SpacesAfter= 
-20	V	V	NOUN	_	_	18	obj	_	SpaceAfter=No
-21	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No
-22	,	,	PUNCT	_	_	31	punct	_	_
-23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
-24	ions	ion	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	_	_
-25	fer(	fer(	NOUN	_	Gender=Masc|Number=Sing	24	appos	_	SpaceAfter=No
-26	II	II	NUM	_	_	25	nmod	_	SpaceAfter=No
-27	)	)	PUNCT	_	_	14	punct	_	_
-28	ne	ne	ADV	_	Polarity=Neg	31	advmod	_	_
-29	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_
-30	pas	pas	ADV	_	Polarity=Neg	31	advmod	_	_
-31	stables	stable	ADJ	_	Gender=Masc|Number=Plur	2	ccomp	_	_
-32	non	non	ADV	_	_	31	advmod	_	_
-33	plus	plus	ADV	_	_	32	fixed	_	SpaceAfter=No
-34	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
+20	V[	V[	SYM	_	_	18	obj	_	SpaceAfter=No
+21	réf.	réf.	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	SpacesAfter= 
+22	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	SpaceAfter=No
+23	]	]	PUNCT	_	_	14	punct	_	SpaceAfter=No
+24	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	34	punct	_	_
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
+27	ions	ion	NOUN	_	Gender=Masc|Number=Plur	34	nsubj	_	_
+28	fer(	fer(	NOUN	_	Gender=Masc|Number=Sing	27	appos	_	SpaceAfter=No
+29	II	II	NUM	_	_	28	nmod	_	SpaceAfter=No
+30	)	)	PUNCT	_	_	14	punct	_	_
+31	ne	ne	ADV	_	Polarity=Neg	34	advmod	_	_
+32	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	cop	_	_
+33	pas	pas	ADV	_	Polarity=Neg	34	advmod	_	_
+34	stables	stable	ADJ	_	Gender=Masc|Number=Plur	2	ccomp	_	_
+35	non	non	ADV	_	_	34	advmod	_	_
+36	plus	plus	ADV	_	_	35	fixed	_	SpaceAfter=No
+37	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830
@@ -4952,7 +4972,7 @@
 18	.	.	PUNCT	_	_	12	punct	_	_
 
 # sent_id = 4
-# text = Ce complexe est constitué d'un cation Fe(II) complexé par les quatre atomes d'azote d'une porphyrine et par l'azote d'un résidu histidine appartenant à la chaîne protéique.
+# text = Ce complexe est constitué d'un cation Fe(II) complexé par les quatre atomes d'azote[réf. nécessaire] d'une porphyrine et par l'azote d'un résidu histidine appartenant à la chaîne protéique.
 1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	complexe	complexe	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
@@ -4969,24 +4989,28 @@
 14	quatre	quatre	NUM	_	_	15	nummod	_	_
 15	atomes	atome	NOUN	_	Gender=Masc|Number=Plur	11	obl:agent	_	_
 16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No
-17	azote	azote	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_
-18	d'	de	ADP	_	_	20	case	_	SpaceAfter=No
-19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	porphyrine	porphyrine	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_
-21	et	et	CCONJ	_	_	24	cc	_	_
-22	par	par	ADP	_	_	24	case	_	_
-23	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No
-24	azote	azote	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_
-25	d'	de	ADP	_	_	27	case	_	SpaceAfter=No
-26	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	résidu	résidu	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_
-28	histidine	histidine	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_
-29	appartenant	appartenir	VERB	_	Tense=Pres|VerbForm=Part	27	acl	_	_
-30	à	à	ADP	_	_	32	case	_	_
-31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	chaîne	chaîne	NOUN	_	Gender=Fem|Number=Sing	29	obl:arg	_	_
-33	protéique	protéique	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No
-34	.	.	PUNCT	_	_	4	punct	_	_
+17	azote	azote	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+18	[	[	PUNCT	_	_	19	punct	_	SpaceAfter=No
+19	réf.	réf.	NOUN	_	Gender=Masc|Number=Sing	15	appos	_	SpacesAfter= 
+20	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No
+21	]	]	PUNCT	_	_	19	punct	_	_
+22	d'	de	ADP	_	_	24	case	_	SpaceAfter=No
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	porphyrine	porphyrine	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_
+25	et	et	CCONJ	_	_	28	cc	_	_
+26	par	par	ADP	_	_	28	case	_	_
+27	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No
+28	azote	azote	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_
+29	d'	de	ADP	_	_	31	case	_	SpaceAfter=No
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	résidu	résidu	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_
+32	histidine	histidine	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	_
+33	appartenant	appartenir	VERB	_	Tense=Pres|VerbForm=Part	31	acl	_	_
+34	à	à	ADP	_	_	36	case	_	_
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
+36	chaîne	chaîne	NOUN	_	Gender=Fem|Number=Sing	33	obl:arg	_	_
+37	protéique	protéique	ADJ	_	Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
+38	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 5
 # text = Le sixième site de complexation du fer est soit vacant, soit occupé par une molécule de dioxygène.
@@ -5616,7 +5640,7 @@
 21	;	;	PUNCT	_	_	20	punct	_	_
 
 # sent_id = 2
-# text = ce besoin nutritionnel est de 16 à 18 mg pour la femme de sa puberté à la ménopause.
+# text = ce besoin nutritionnel est de 16 à 18 mg pour la femme de sa puberté à la ménopause[réf. souhaitée].
 1	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	nutritionnel	nutritionnel	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_
@@ -5635,7 +5659,11 @@
 16	à	à	ADP	_	_	18	case	_	_
 17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	ménopause	ménopause	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+19	[	[	PUNCT	_	_	20	punct	_	SpaceAfter=No
+20	réf.	réf.	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	SpacesAfter= 
+21	souhaitée	souhaiter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	SpaceAfter=No
+22	]	]	PUNCT	_	_	20	punct	_	SpaceAfter=No
+23	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830

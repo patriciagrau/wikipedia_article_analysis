@@ -1689,7 +1689,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Au Viêt Nam, 6,5 % de la population parle l'anglais à des degrés divers (locuteurs en seconde langue, locuteurs partiels).
+# text = Au Viêt Nam, 6,5 % de la population parle l'anglais à des degrés divers (locuteurs en seconde langue, locuteurs partiels)[réf. nécessaire].
 1-2	Au	_	_	_	_	_	_	_	_
 1	À	à	ADP	_	_	3	case	_	_
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -1718,8 +1718,11 @@
 24	,	,	PUNCT	_	_	25	punct	_	_
 25	locuteurs	locuteur	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	_
 26	partiels	partiel	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	SpaceAfter=No
-27	)	)	PUNCT	_	_	20	punct	_	SpaceAfter=No
-28	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+27	)[	)[	PUNCT	_	_	20	punct	_	SpaceAfter=No
+28	réf.	réf.	NOUN	_	Gender=Masc|Number=Sing	11	parataxis	_	SpacesAfter= 
+29	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	SpaceAfter=No
+30	]	]	PUNCT	_	_	28	punct	_	SpaceAfter=No
+31	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830
@@ -3051,9 +3054,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Certains chercheurs s'inquiètent du risque d'évolution non maîtrisée de la langue (changement de sens des mots, simplifications grammaticales, modification de la prononciation) en constatant le poids croissant du nombre de locuteurs ne maîtrisant que peu ou mal la langue par rapport au nombre de locuteurs instruits ayant l'anglais pour langue maternelle.
+# text = Certains chercheurs[réf.
 1	Certains	certain	DET	_	Gender=Masc|Number=Plur	2	det	_	_
-2	chercheurs	chercheur	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_
+2	chercheurs[	chercheurs[	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	SpaceAfter=No
+3	réf.	réf.	VERB	_	_	0	root	_	SpacesAfter= 
+
+# sent_id = 2
+# text = nécessaire] s'inquiètent du risque d'évolution non maîtrisée de la langue (changement de sens des mots, simplifications grammaticales, modification de la prononciation) en constatant le poids croissant du nombre de locuteurs ne maîtrisant que peu ou mal la langue par rapport au nombre de locuteurs instruits ayant l'anglais pour langue maternelle.
+1	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	4	advcl	_	SpaceAfter=No
+2	]	]	PUNCT	_	_	1	punct	_	_
 3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No
 4	inquiètent	inquiéter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5-6	du	_	_	_	_	_	_	_	_
@@ -3869,7 +3878,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = En particulier depuis le 1er mai 2008, le Protocole de Londres impose de connaître l'anglais ou l'allemand pour ne pas enfreindre la loi sur les brevets, ce qui contreviendrait à la constitution française qui définit le français comme langue nationale.
+# text = En particulier depuis le 1er mai 2008, le Protocole de Londres impose de connaître l'anglais ou l'allemand pour ne pas enfreindre la loi sur les brevets[réf.
 1	En	en	ADP	_	_	13	advmod	_	_
 2	particulier	particulier	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_
 3	depuis	depuis	ADP	_	_	5	case	_	_
@@ -3898,23 +3907,29 @@
 26	loi	loi	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_
 27	sur	sur	ADP	_	_	29	case	_	_
 28	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-29	brevets	brevet	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	SpaceAfter=No
-30	,	,	PUNCT	_	_	31	punct	_	_
-31	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	parataxis	_	_
-32	qui	qui	PRON	_	PronType=Rel	33	nsubj	_	_
-33	contreviendrait	contrevenir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	acl:relcl	_	_
-34	à	à	ADP	_	_	36	case	_	_
-35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	33	obl:arg	_	_
-37	française	français	ADJ	_	Gender=Fem|Number=Sing	36	amod	_	_
-38	qui	qui	PRON	_	PronType=Rel	39	nsubj	_	_
-39	définit	définir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	_
-40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-41	français	français	NOUN	_	Gender=Masc|Number=Sing	39	obj	_	_
-42	comme	comme	ADP	_	_	43	case	_	_
-43	langue	langue	NOUN	_	Gender=Fem|Number=Sing	39	obl:mod	_	_
-44	nationale	national	ADJ	_	Gender=Fem|Number=Sing	43	amod	_	SpaceAfter=No
-45	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\n
+29	brevets[	brevets[	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	SpaceAfter=No
+30	réf.	réf.	VERB	_	_	13	parataxis	_	SpacesAfter= 
+
+# sent_id = 2
+# text = nécessaire], ce qui contreviendrait à la constitution française qui définit le français comme langue nationale.
+1	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	_	_	1	punct	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	parataxis	_	_
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_
+6	contreviendrait	contrevenir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
+7	à	à	ADP	_	_	9	case	_	_
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_
+10	française	français	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_
+11	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_
+12	définit	définir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	français	français	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_
+15	comme	comme	ADP	_	_	16	case	_	_
+16	langue	langue	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_
+17	nationale	national	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830

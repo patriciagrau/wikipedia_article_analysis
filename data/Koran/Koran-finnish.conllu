@@ -3338,27 +3338,52 @@
 17	.	.	PUNCT	Punct	_	8	punct	_	_
 
 # sent_id = 2
-# text = On esimerkiksi Naisen kirja , sitten on kirja Jumalan kameli - - edelleen Pöydän kirja ja edelleen Hiehon kirja .
+# text = On esimerkiksi Naisen kirja [= Naisten suura], sitten on kirja Jumalan kameli [=?]
 1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
 3	Naisen	nainen	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
 4	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
-5	,	,	PUNCT	Punct	_	6	punct	_	_
-6	sitten	sitten	ADV	Adv	_	1	conj	_	_
-7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
-8	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
-9	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
-10	kameli	kameli	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpacesAfter=\s\s
-11	-	-	PUNCT	Punct	_	15	punct	_	_
-12	-	-	PUNCT	Punct	_	15	punct	_	_
-13	edelleen	edelleen	ADV	Adv	_	15	advmod	_	_
-14	Pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
-15	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	10	appos	_	SpacesAfter=\s\s
-16	ja	ja	CCONJ	C	_	19	cc	_	_
-17	edelleen	edelleen	ADV	Adv	_	19	advmod	_	_
-18	Hiehon	Hieho	PROPN	N	Case=Gen|Number=Sing	19	nmod:poss	_	_
-19	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	15	conj	_	_
-20	.	.	PUNCT	Punct	_	1	punct	_	_
+5	[	[	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+6	=	=	SYM	Punct	_	8	discourse	_	_
+7	Naisten	nainen	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	suura	suura	NOUN	N	Case=Nom|Degree=Pos|Number=Sing	4	appos	_	SpaceAfter=No
+9	]	]	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	sitten	sitten	ADV	Adv	_	15	advmod	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+13	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	15	nsubj:cop	_	_
+14	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	kameli	kameli	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+16	[	[	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+17	=	=	SYM	Punct	_	15	discourse	_	SpaceAfter=No
+18	?	?	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+19	]	]	PUNCT	Punct	_	17	punct	_	_
+
+# sent_id = 3
+# text = - - edelleen Pöydän kirja
+1	-	-	PUNCT	Punct	_	5	punct	_	_
+2	-	-	PUNCT	Punct	_	5	punct	_	_
+3	edelleen	edelleen	ADV	Adv	_	5	advmod	_	_
+4	Pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 4
+# text = [=Pöydän suura] ja edelleen Hiehon kirja [= Lehmän suura].
+1	[	[	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	=	=	SYM	Punct	_	4	discourse	_	SpaceAfter=No
+3	Pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	suura	suura	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	]	]	PUNCT	Punct	_	4	punct	_	_
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	edelleen	edelleen	ADV	Adv	_	9	advmod	_	_
+8	Hiehon	Hieho	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	4	conj	_	_
+10	[	[	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+11	=	=	SYM	Punct	_	13	discourse	_	_
+12	Lehmän	lehmä	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	suura	suura	NOUN	N	Case=Nom|Number=Sing	9	appos	_	SpaceAfter=No
+14	]	]	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = finnish-tdt-ud-2.6-200830
@@ -3449,30 +3474,44 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = “Umar , Abu Turab ja Salman Persialainen kokosivat sen vaikka keskuudessanne onkin levitetty tietoa, että Jumala olisi lähettänyt sen taivaasta...
-1	“	“	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
-2	Umar	Umar	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
-3	,	,	PUNCT	Punct	_	4	punct	_	_
-4	Abu	Abu	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
-5	Turab	Turab	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	SpacesAfter=\s\s
-6	ja	ja	CCONJ	C	_	7	cc	_	_
-7	Salman	Salman	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
-8	Persialainen	Persialainen	PROPN	N	Case=Nom|Derivation=Lainen|Number=Sing	7	flat:name	_	_
-9	kokosivat	koota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	SpacesAfter=\s\s
-11	vaikka	vaikka	SCONJ	C	_	14	mark	_	_
-12	keskuudessanne	keskuudessa	ADV	Adv	_	14	advmod	_	_
-13	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	_	_
-14	levitetty	levittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	advcl	_	_
-15	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	14	obj	_	SpaceAfter=No
-16	,	,	PUNCT	Punct	_	20	punct	_	_
-17	että	että	SCONJ	C	_	20	mark	_	_
-18	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	20	nsubj	_	_
-19	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	20	aux	_	_
-20	lähettänyt	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	15	ccomp	_	_
-21	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	20	obj	_	_
-22	taivaasta	taivas	NOUN	N	Case=Ela|Number=Sing	20	obl	_	SpaceAfter=No
-23	...	...	PUNCT	Punct	_	9	punct	_	_
+# text = “Umar [=toinen kalifi], Abu Turab [=Ali] ja Salman Persialainen kokosivat sen [= sinun Pourkanisi] vaikka keskuudessanne onkin levitetty tietoa, että Jumala olisi lähettänyt sen taivaasta...
+1	“	“	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+2	Umar	Umar	PROPN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+3	[	[	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+4	=	=	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+5	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	6	amod	_	_
+6	kalifi	kalifi	NOUN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+7	]	]	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	Abu	Abu	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+10	Turab	Turab	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	_
+11	[	[	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+12	=	=	SYM	Punct	_	13	punct	_	SpaceAfter=No
+13	Ali	Ali	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+14	]	]	PUNCT	Punct	_	13	punct	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	Salman	Salman	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+17	Persialainen	Persialainen	PROPN	N	Case=Nom|Derivation=Lainen|Number=Sing	16	flat:name	_	_
+18	kokosivat	koota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+19	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	18	obj	_	_
+20	[	[	PUNCT	Punct	_	23	punct	_	SpaceAfter=No
+21	=	=	SYM	Punct	_	23	cc	_	_
+22	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	23	nmod:poss	_	_
+23	Pourkanisi	Pourkanisi	PROPN	N	Case=Nom|Number=Sing	19	appos	_	SpaceAfter=No
+24	]	]	PUNCT	Punct	_	23	punct	_	_
+25	vaikka	vaikka	SCONJ	C	_	28	mark	_	_
+26	keskuudessanne	keskuudessa	ADV	Adv	_	28	advmod	_	_
+27	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	aux:pass	_	_
+28	levitetty	levittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	18	advcl	_	_
+29	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	28	obj	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	34	punct	_	_
+31	että	että	SCONJ	C	_	34	mark	_	_
+32	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	34	nsubj	_	_
+33	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	34	aux	_	_
+34	lähettänyt	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	29	ccomp	_	_
+35	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	34	obj	_	_
+36	taivaasta	taivas	NOUN	N	Case=Ela|Number=Sing	34	obl	_	SpaceAfter=No
+37	...	...	PUNCT	Punct	_	18	punct	_	_
 
 # sent_id = 2
 # text = Mitä kirjaanne tulee, olette jo antaneet näytteitä sellaisista väärennöksistä, ja muiden ohella tunnetaan muuan Hajjaj, nimittämänne Persian kuvernööri, joka lähetti miehiä kokoamaan muinaisen kirjanne, jonka hän korvasi toisilla, itse kirjoittamillaan ja mieleisillään, jotka hän levitti kaikkialle valtakunnassanne...

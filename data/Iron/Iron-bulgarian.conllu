@@ -2585,7 +2585,7 @@
 20	.	.	PUNCT	punct	_	7	punct	_	_
 
 # sent_id = 5
-# text = Има и съединения със смесена валентност, които съдържат едновременно центрове на желязо(II) и желязо(III), например магнетитът (Fe3O4) или оцветителят пруско синьо (Fe4(Fe6)3).
+# text = Има и съединения със смесена валентност, които съдържат едновременно центрове на желязо(II) и желязо(III), например магнетитът (Fe3O4) или оцветителят пруско синьо (Fe4(Fe[CN]6)3).
 1	Има	имам	VERB	Vnitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	и	и	CCONJ	Cp	_	3	cc	_	_
 3	съединения	съединение	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	1	obj	_	_
@@ -2604,10 +2604,10 @@
 16	и	и	CCONJ	Cp	_	17	cc	_	_
 17	желязо(	желязо(	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	13	conj	_	SpaceAfter=No
 18	III	трети	ADJ	Momsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|NumType=Ord	17	amod	_	SpaceAfter=No
-19	)	)	PUNCT	punct	_	17	punct	_	SpaceAfter=No
+19	)	)	PUNCT	punct	_	24	punct	_	SpaceAfter=No
 20	,	,	PUNCT	punct	_	22	punct	_	_
 21	например	например	ADV	Dd	Degree=Pos	22	advmod	_	_
-22	магнетитът	магнетит	NOUN	Ncmsf	Definite=Def|Gender=Masc|Number=Sing	11	nmod	_	_
+22	магнетитът	магнетит	NOUN	Ncmsf	Definite=Def|Gender=Masc|Number=Sing	11	conj	_	_
 23	(	(	PUNCT	punct	_	24	punct	_	SpaceAfter=No
 24	Fe3O4	fe3o4	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	22	discourse	_	SpaceAfter=No
 25	)	)	PUNCT	punct	_	24	punct	_	_
@@ -2617,10 +2617,13 @@
 29	синьо	син	ADJ	Ansi	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	27	nmod	_	_
 30	(	(	PUNCT	punct	_	31	punct	_	SpaceAfter=No
 31	Fe4(	fe4(	PROPN	Npnsi	_	27	discourse	_	SpaceAfter=No
-32	Fe6	fe6	PROPN	Npnsi	_	31	flat	_	SpaceAfter=No
-33	)3	)3	PUNCT	punct	_	31	punct	_	SpaceAfter=No
-34	)	)	PUNCT	punct	_	31	punct	_	SpaceAfter=No
-35	.	.	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
+32	Fe[	fe[	PROPN	Tt	_	31	flat	_	SpaceAfter=No
+33	CN	cn	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	31	flat	_	SpaceAfter=No
+34	]	]	PROPN	punct	_	31	flat	_	SpaceAfter=No
+35	6	шест	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	31	flat	_	SpaceAfter=No
+36	)3	)3	PUNCT	punct	_	31	punct	_	SpaceAfter=No
+37	)	)	PUNCT	punct	_	31	punct	_	SpaceAfter=No
+38	.	.	PUNCT	punct	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -3658,7 +3661,7 @@
 
 # newpar
 # sent_id = 16
-# text = {\displaystyle {\ce {Fe + 4NaOH + 2H2O -> Na4 + H2 ^}}}
+# text = {\displaystyle {\ce {Fe + 4NaOH + 2H2O -> Na4[Fe(OH)6] + H2 ^}}}
 1	{	{	PUNCT	punct	_	3	punct	_	SpaceAfter=No
 2	\	\	ADP	R	_	3	case	_	SpaceAfter=No
 3	displaystyle	displaystyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
@@ -3668,16 +3671,21 @@
 7	Fe	fe	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	5	nmod	_	_
 8	+	и	CCONJ	Cc	_	9	cc	_	_
 9	4NaOH	4naoh	PROPN	Npmsi	Definite=Ind|Gender=Neut|Number=Sing	7	conj	_	_
-10	+	+	CCONJ	punct	_	11	cc	_	_
+10	+	+	CCONJ	R	_	11	cc	_	_
 11	2H2O	2h2o	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	_
 12	->	->	PUNCT	punct	_	13	punct	_	_
-13	Na4	na4	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	_
-14	+	и	CCONJ	Cc	_	15	cc	_	_
-15	H2	h2	NUM	Mc-pi	_	13	conj	_	_
-16	^	^	PART	punct	_	13	discourse	_	SpaceAfter=No
-17	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-18	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
-19	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
+13	Na4[	na4[	NUM	Mc-pi	_	7	conj	_	SpaceAfter=No
+14	Fe(	fe(	ADP	Tt	_	13	flat	_	SpaceAfter=No
+15	OH	oh	PROPN	Nc	_	13	nmod	_	SpaceAfter=No
+16	)	)	PUNCT	punct	_	13	punct	_	SpaceAfter=No
+17	6	шест	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	13	nummod	_	SpaceAfter=No
+18	]	]	PUNCT	punct	_	13	punct	_	_
+19	+	+	CCONJ	R	_	20	cc	_	_
+20	H2	h2	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	7	conj	_	_
+21	^	^	PART	punct	_	20	discourse	_	SpaceAfter=No
+22	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+23	}	}	PUNCT	punct	_	3	punct	_	SpaceAfter=No
+24	}	}	PUNCT	punct	_	3	punct	_	SpacesAfter=\n\n\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -4205,7 +4213,7 @@
 9	.	.	PUNCT	punct	_	1	punct	_	_
 
 # sent_id = 4
-# text = В силно алкални разтвори кристализира синьо-зеленият хидроксикомплекс, Na4.
+# text = В силно алкални разтвори кристализира синьо-зеленият хидроксикомплекс, Na4[Fe(OH)6].
 1	В	в	ADP	R	_	4	case	_	_
 2	силно	силно	ADV	Dm	Degree=Pos	3	advmod	_	_
 3	алкални	алкален	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	4	amod	_	_
@@ -4214,8 +4222,12 @@
 6	синьо-зеленият	синьо-зелен	ADJ	Amsf	Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
 7	хидроксикомплекс	хидроксикомплекс	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	5	nsubj	_	SpaceAfter=No
 8	,	,	PUNCT	punct	_	9	punct	_	_
-9	Na4	na4	ADJ	Mc-pi	_	7	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	punct	_	5	punct	_	_
+9	Na4[	na4[	NUM	Mc-pi	_	7	nmod	_	SpaceAfter=No
+10	Fe(	fe(	PROPN	Tt	_	9	flat	_	SpaceAfter=No
+11	OH	oh	PROPN	Npmsi	_	9	flat	_	SpaceAfter=No
+12	)6	)6	PUNCT	punct	_	9	punct	_	SpaceAfter=No
+13	]	]	PUNCT	punct	_	9	punct	_	SpaceAfter=No
+14	.	.	PUNCT	punct	_	5	punct	_	_
 
 # sent_id = 5
 # text = В присъствие на въздух хидроксидът лесно се окислява, а при нагряване постепенно се разлага:
@@ -4443,24 +4455,29 @@
 
 # newpar
 # sent_id = 18
-# text = {\textstyle {\ce {3Fe(OH)2-> Fe3O4 + 2H2O + H2 ^}}}
+# text = {\textstyle {\ce {3Fe(OH)2->[\Delta t] Fe3O4 + 2H2O + H2 ^}}}
 1	{	{	PUNCT	punct	_	2	punct	_	SpaceAfter=No
 2	\textstyle	\textstyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
 3	{	{	PUNCT	punct	_	4	punct	_	SpaceAfter=No
 4	\ce	\ce	NOUN	Ncmsi	_	2	nmod	_	_
-5	{	{	PUNCT	punct	_	6	punct	_	SpaceAfter=No
-6	3Fe(	3fe(	NUM	Mc-pi	_	4	nmod	_	SpaceAfter=No
-7	OH	oh	PROPN	Tt	_	6	flat	_	SpaceAfter=No
-8	)2->	)2->	PROPN	M	_	6	flat	_	_
-9	Fe3O4	fe3o4	PROPN	Npnsi	_	6	flat	_	_
-10	+	и	CCONJ	Cc	_	11	cc	_	_
-11	2H2O	2h2o	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	6	conj	_	_
-12	+	и	CCONJ	Cc	_	13	cc	_	_
-13	H2	h2	PROPN	Mc-pi	_	6	conj	_	_
-14	^	^	PART	punct	_	13	discourse	_	SpaceAfter=No
-15	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
-16	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
-17	}	}	PUNCT	punct	_	2	punct	_	SpacesAfter=\n\n
+5	{	{	PUNCT	punct	_	4	punct	_	SpaceAfter=No
+6	3Fe(	3fe(	NUM	Np	_	4	nummod	_	SpaceAfter=No
+7	OH	oh	PROPN	Np	_	4	nmod	_	SpaceAfter=No
+8	)	)	PUNCT	punct	_	6	punct	_	SpaceAfter=No
+9	2->	2->	NUM	Mc-pi	_	4	nmod	_	SpaceAfter=No
+10	[	[	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+11	\Delta	\delta	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	4	nmod	_	_
+12	t	t	PROPN	Npmsi	_	11	flat	_	SpaceAfter=No
+13	]	]	PUNCT	punct	_	11	punct	_	_
+14	Fe3O4	fe3o4	PROPN	Npmsi	_	11	flat	_	_
+15	+	+	CCONJ	Cp	_	16	cc	_	_
+16	2H2O	2h2o	PROPN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	11	conj	_	_
+17	+	+	CCONJ	Cp	_	18	cc	_	_
+18	H2	h2	PROPN	M	_	11	conj	_	_
+19	^	^	PART	punct	_	18	discourse	_	SpaceAfter=No
+20	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
+21	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
+22	}	}	PUNCT	punct	_	2	punct	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 19
@@ -4595,7 +4612,7 @@
 22	.	.	PUNCT	punct	_	3	punct	_	_
 
 # sent_id = 6
-# text = Във водните разтвори на дихалогенидите катиони са хексааквакоординирани – 2+.
+# text = Във водните разтвори на дихалогенидите катиони са хексааквакоординирани – [Fe(H2O)6]2+.
 1	Във	във	ADP	R	_	3	case	_	_
 2	водните	воден	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	3	amod	_	_
 3	разтвори	разтвор	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	8	obl	_	_
@@ -4604,9 +4621,14 @@
 6	катиони	катион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	8	nsubj:pass	_	_
 7	са	съм	AUX	Vxitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux:pass	_	_
 8	хексааквакоординирани	хексааквакоординирам	VERB	Vpptcv--p-i	Aspect=Imp|Definite=Ind|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-9	–	–	ADP	R	_	10	case	_	_
-10	2+	2+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	8	obl	_	SpaceAfter=No
-11	.	.	PUNCT	punct	_	8	punct	_	SpacesAfter=\n
+9	–	–	ADP	R	_	8	case	_	_
+10	[	[	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+11	Fe(	fe(	PROPN	Ncnsi	_	9	nmod	_	SpaceAfter=No
+12	H2O	h2o	PROPN	Tt	_	11	flat	_	SpaceAfter=No
+13	)6	)6	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+14	]	]	PUNCT	punct	_	11	punct	_	SpaceAfter=No
+15	2+	2+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	11	conj	_	SpaceAfter=No
+16	.	.	PUNCT	punct	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = bulgarian-btb-ud-2.6-200830
@@ -5105,20 +5127,29 @@
 
 # newpar
 # sent_id = 24
-# text = {\textstyle {\ce {^3+ + e^- <=> ^2+}}}
+# text = {\textstyle {\ce {[Fe(H2O)6]^3+ + e^- <=> [Fe(H2O)6]^2+}}}
 1	{	{	PUNCT	punct	_	2	punct	_	SpaceAfter=No
 2	\textstyle	\textstyle	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
 3	{	{	PUNCT	punct	_	4	punct	_	SpaceAfter=No
 4	\ce	\ce	NOUN	Ncmsi	_	2	nmod	_	_
-5	{	{	PUNCT	punct	_	6	punct	_	SpaceAfter=No
-6	^3+	^3+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	4	nummod	_	_
-7	+	и	CCONJ	Cc	_	8	cc	_	_
-8	e^-	e^-	NOUN	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	6	conj	_	_
-9	<=>	<=>	PUNCT	punct	_	10	punct	_	_
-10	^2+	^2+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	6	conj	_	SpaceAfter=No
-11	}	}	PUNCT	punct	_	6	punct	_	SpaceAfter=No
-12	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
-13	}	}	PUNCT	punct	_	2	punct	_	SpacesAfter=\n\n
+5	{	{	PUNCT	punct	_	7	punct	_	SpaceAfter=No
+6	[	[	PUNCT	punct	_	7	punct	_	SpaceAfter=No
+7	Fe(	fe(	NOUN	Tt	_	4	nmod	_	SpaceAfter=No
+8	H2O	h2o	PROPN	Npmsi	_	7	flat	_	SpaceAfter=No
+9	)6	)6	PUNCT	punct	_	7	punct	_	SpaceAfter=No
+10	]^3+	]^3+	NUM	Mc-pi	_	7	conj	_	_
+11	+	+	CCONJ	punct	_	12	cc	_	_
+12	e^-	e^-	NOUN	Mc-pi	_	7	conj	_	_
+13	<=>	<=>	ADP	punct	_	15	punct	_	_
+14	[	[	PUNCT	punct	_	15	punct	_	SpaceAfter=No
+15	Fe(	fe(	NOUN	Ncnsi	_	12	nmod	_	SpaceAfter=No
+16	H2O	h2o	PROPN	Npmsi	_	15	flat	_	SpaceAfter=No
+17	)6	)6	PUNCT	punct	_	15	punct	_	SpaceAfter=No
+18	]	]	PUNCT	punct	_	15	punct	_	SpaceAfter=No
+19	^2+	^2+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	15	conj	_	SpaceAfter=No
+20	}	}	PUNCT	punct	_	15	punct	_	SpaceAfter=No
+21	}	}	PUNCT	punct	_	2	punct	_	SpaceAfter=No
+22	}	}	PUNCT	punct	_	2	punct	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 25
@@ -5583,7 +5614,7 @@
 19	.	.	PUNCT	punct	_	1	punct	_	_
 
 # sent_id = 4
-# text = Той е аморфен е аналогично на Al(OH)3 в кисела среда има хидратирани катиони 3+, а в алкална – хидроксидни аниони 3-. Изолирани са Sr и Ba соли с тези аниони.
+# text = Той е аморфен е аналогично на Al(OH)3 в кисела среда има хидратирани катиони [Fe(H2O)6]3+, а в алкална – хидроксидни аниони [Fe(OH)6]3-.
 1	Той	аз	PRON	Ppe-os3m	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
 3	аморфен	аморфен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
@@ -5591,7 +5622,7 @@
 5	аналогично	аналогично	ADV	Dm	Degree=Pos	3	advmod	_	_
 6	на	на	ADP	R	_	7	case	_	_
 7	Al(	al(	PROPN	Tt	_	5	obl	_	SpaceAfter=No
-8	OH	oh	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+8	OH	oh	PROPN	Npmsi	Definite=Ind|Gender=Masc|Number=Sing	7	flat	_	SpaceAfter=No
 9	)3	)3	PUNCT	punct	_	7	punct	_	_
 10	в	в	ADP	R	_	12	case	_	_
 11	кисела	кисел	ADJ	Afsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	_
@@ -5599,28 +5630,39 @@
 13	има	има	VERB	Vnitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	csubj	_	_
 14	хидратирани	хидратирам	ADJ	Vpptcv--p-i	Aspect=Perf|Definite=Ind|Degree=Pos|Number=Plur|VerbForm=Part|Voice=Pass	15	amod	_	_
 15	катиони	катион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	13	obj	_	_
-16	3+	3+	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	15	nummod	_	SpaceAfter=No
-17	,	,	PUNCT	punct	_	18	punct	_	_
-18	а	а	CCONJ	Cp	_	26	cc	_	_
-19	в	в	ADP	R	_	21	case	_	_
-20	алкална	алкален	ADJ	Afsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	21	amod	_	_
-21	–	–	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	26	obl	_	_
-22	хидроксидни	хидроксиден	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	23	amod	_	_
-23	аниони	анион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	26	nsubj:pass	_	_
-24	3-	3-	NUM	Mc-pi	Definite=Ind|Number=Plur|NumType=Card	23	nummod	_	SpaceAfter=No
-25	.	.	PUNCT	punct	_	26	punct	_	_
-26	Изолирани	изолирам-(се)	VERB	Vpptcv--p-i	Aspect=Perf|Definite=Ind|Number=Plur|VerbForm=Part|Voice=Pass	13	conj	_	_
-27	са	съм	AUX	Vxitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	aux:pass	_	_
-28	Sr	sr	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	26	nsubj:pass	_	_
-29	и	и	CCONJ	Cp	_	30	cc	_	_
-30	Ba	ba	PROPN	Npnsi	_	28	conj	_	_
-31	соли	сола	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	28	conj	_	_
-32	с	с	ADP	R	_	34	case	_	_
-33	тези	този	DET	Pde-op	Number=Plur|PronType=Dem	34	det	_	_
-34	аниони	анион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No
-35	.	.	PUNCT	punct	_	3	punct	_	_
+16	[	[	PUNCT	punct	_	17	punct	_	SpaceAfter=No
+17	Fe(	fe(	NOUN	Ncnsi	_	15	nmod	_	SpaceAfter=No
+18	H2O	h2o	PROPN	Tt	_	17	flat	_	SpaceAfter=No
+19	)6	)6	PUNCT	punct	_	17	punct	_	SpaceAfter=No
+20	]3+	]3+	NUM	Mc-pi	_	17	flat	_	SpaceAfter=No
+21	,	,	PUNCT	punct	_	22	punct	_	_
+22	а	а	CCONJ	Cp	_	27	cc	_	_
+23	в	в	ADP	R	_	25	case	_	_
+24	алкална	алкален	ADJ	Afsi	Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	25	amod	_	_
+25	–	–	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	27	nmod	_	_
+26	хидроксидни	хидроксиден	ADJ	A-pi	Definite=Ind|Degree=Pos|Number=Plur	27	amod	_	_
+27	аниони	анион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	13	obj	_	_
+28	[	[	PUNCT	punct	_	29	punct	_	SpaceAfter=No
+29	Fe(	fe(	PROPN	Npmsi	_	27	nmod	_	SpaceAfter=No
+30	OH	oh	PROPN	Npnsi	_	29	flat	_	SpaceAfter=No
+31	)6	)6	PUNCT	punct	_	29	punct	_	SpaceAfter=No
+32	]3-	]3-	PROPN	Mc-pi	_	29	flat	_	SpaceAfter=No
+33	.	.	PUNCT	punct	_	3	punct	_	_
 
 # sent_id = 5
+# text = Изолирани са Sr и Ba соли с тези аниони.
+1	Изолирани	изолирам-(се)	VERB	Vpptcv--p-i	Aspect=Perf|Definite=Ind|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+2	са	съм	AUX	Vxitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	aux:pass	_	_
+3	Sr	sr	NOUN	A	Definite=Ind|Gender=Neut|Number=Sing	1	nsubj:pass	_	_
+4	и	и	CCONJ	Cp	_	5	cc	_	_
+5	Ba	ba	PROPN	Cp	_	3	conj	_	_
+6	соли	сола	NOUN	Ncfpi	Definite=Ind|Gender=Fem|Number=Plur	3	conj	_	_
+7	с	с	ADP	R	_	9	case	_	_
+8	тези	този	DET	Pde-op	Number=Plur|PronType=Dem	9	det	_	_
+9	аниони	анион	NOUN	Ncmpi	Definite=Ind|Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	punct	_	1	punct	_	_
+
+# sent_id = 6
 # text = Основната форма на Fe(OH)3 е FeO(OH), киселата форма – железиста киселина HFeO2.
 1	Основната	основен	ADJ	Afsd	Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	форма	форма	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_

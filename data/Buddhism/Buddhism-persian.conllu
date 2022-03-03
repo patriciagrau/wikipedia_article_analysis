@@ -725,7 +725,7 @@
 11	.	.	PUNCT	DELM	_	1	punct	_	_
 
 # sent_id = 5
-# text = به این روی، این پدیده را در سانسکریت نیروانا یعنی خاموشی می‌نامند.
+# text = به این روی، این پدیده را در سانسکریت نیروانا یعنی خاموشی می‌نامند.[
 1	به	به	ADP	P	_	3	case	_	_
 2	این	این	DET	DET	_	3	det	_	_
 3	روی	رو	NOUN	N_SING	Number=Sing	13	obl	_	SpaceAfter=No
@@ -741,7 +741,14 @@
 13-14	می‌نامند	_	_	_	_	_	_	_	SpaceAfter=No
 13	می‌نام	می‌نام	VERB	V_PRS	Number=Sing|Person=1|Tense=Pres	0	root	_	_
 14	ند	هست	AUX	V_PRS	Number=Plur|Person=3|Tense=Pres	13	cop	_	_
-15	.	.	PUNCT	DELM	_	13	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	DELM	_	13	punct	_	SpaceAfter=No
+16	[	_	PUNCT	DELM	_	13	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = نیازمند منبع]
+1	نیازمند	نیازمند	ADJ	ADJ	Degree=Pos	0	root	_	_
+2	منبع	منبع	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	]	_	PUNCT	DELM	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1059,84 +1066,87 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = راه رهایی از رنج در این هشت چیز خلاصه می‌شود:
-1	راه	راه	NOUN	N_SING	Number=Sing	9	nsubj	_	_
+# text = راه رهایی از رنج در هشت چیز خلاصه می‌شو که به آن راه اصیل هشتگانه گفته می‌شود.
+1	راه	راه	NOUN	N_SING	Number=Sing	8	nsubj	_	_
 2	رهایی	رهایی	NOUN	N_SING	Number=Sing	1	nmod:poss	_	_
 3	از	از	ADP	P	_	4	case	_	_
 4	رنج	رنج	NOUN	N_SING	Number=Sing	2	nmod	_	_
-5	در	در	ADP	P	_	8	case	_	_
-6	این	این	DET	DET	_	8	det	_	_
-7	هشت	هشت	NUM	NUM	NumType=Card	8	nummod	_	_
-8	چیز	چیز	NOUN	N_SING	Number=Sing	9	nmod	_	_
-9	خلاصه	خلاصه	ADJ	ADJ	Degree=Pos	0	root	_	_
-10	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	9	cop	_	SpaceAfter=No
-11	:	:	PUNCT	DELM	_	9	punct	_	SpacesAfter=\s\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = persian-seraji-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = راه اصیل هشتگانه که نسخهٔ تجویز بیداردل (بودا) برای درمان رنج‌هایی است که همه موجودات دچار آن هستند، خود به سه گروه دسته‌بندی می‌شود: اخلاق‌مندی (شیلا)، تمرکز روانی (سامادی) و بینش (پرگیا).
-1	راه	راه	NOUN	N_SING	Number=Sing	26	nsubj	_	_
-2	اصیل	_	ADJ	ADJ	Degree=Pos	1	amod	_	_
-3	هشتگانه	هشتگانه	ADJ	ADJ	Degree=Pos	1	amod	_	_
-4	که	که	SCONJ	CON	_	5	mark	_	_
-5	نسخهٔ	نسخه	NOUN	N_SING	Number=Sing	1	acl:relcl	_	_
-6	تجویز	تجویز	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
-7	بیداردل	بیداردل	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
-8	(	(	PUNCT	DELM	_	7	punct	_	SpaceAfter=No
-9	بودا	بودا	NOUN	N_SING	Number=Sing	7	appos	_	SpaceAfter=No
-10	)	)	PUNCT	DELM	_	5	punct	_	_
-11	برای	برای	ADP	P	_	12	case	_	_
-12	درمان	درمان	NOUN	N_SING	Number=Sing	5	nmod	_	_
-13	رنج‌هایی	رنج	NOUN	N_PL	Number=Plur	12	nmod:poss	_	_
-14	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	5	cop	_	_
-15	که	که	SCONJ	CON	_	18	mark	_	_
-16	همه	همه	PRON	PRO	PronType=Tot	17	det	_	_
-17	موجودات	_	NOUN	N_PL	Number=Plur	18	nsubj	_	_
-18	دچار	دچار	ADJ	ADJ	Degree=Pos	5	ccomp	_	_
-19	آن	آن	PRON	PRO	Number=Sing|PronType=Dem	18	nmod:poss	_	_
-20	هستند	هست	AUX	V_PRS	Number=Plur|Person=3|Tense=Pres	18	cop	_	SpaceAfter=No
-21	،	،	PUNCT	DELM	_	26	punct	_	_
-22	خود	خود	PRON	PRO	Number=Sing|Person=3|PronType=Prs|Reflex=Yes	26	nsubj	_	_
-23	به	به	ADP	P	_	25	case	_	_
-24	سه	سه	NUM	NUM	NumType=Card	25	nummod	_	_
-25	گروه	گروه	NOUN	N_SING	Number=Sing	26	nmod	_	_
-26	دسته‌بندی	دسته‌بندی	NOUN	N_SING	Number=Sing	0	root	_	_
-27	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	26	cop	_	SpaceAfter=No
-28	:	:	PUNCT	DELM	_	26	punct	_	SpacesAfter=\n
-29	اخلاق‌مندی	اخلاق‌مندی	NOUN	N_SING	Number=Sing	26	appos	_	_
-30	(	(	PUNCT	DELM	_	29	punct	_	SpaceAfter=No
-31	شیلا	_	NOUN	N_SING	Number=Sing	29	appos	_	SpaceAfter=No
-32	)	)	PUNCT	DELM	_	34	punct	_	SpaceAfter=No
-33	،	،	PUNCT	DELM	_	34	punct	_	_
-34	تمرکز	تمرکز	NOUN	N_SING	Number=Sing	31	conj	_	_
-35	روانی	روانی	ADJ	ADJ	Degree=Pos	34	amod	_	_
-36	(	(	PUNCT	DELM	_	34	punct	_	SpaceAfter=No
-37	سامادی	سامادی	NOUN	N_SING	Number=Sing	34	appos	_	SpaceAfter=No
-38	)	)	PUNCT	DELM	_	40	punct	_	_
-39	و	و	CCONJ	CON	_	40	cc	_	_
-40	بینش	بینش	NOUN	N_SING	Number=Sing	37	conj	_	_
-41	(	(	PUNCT	DELM	_	40	punct	_	SpaceAfter=No
-42	پرگیا	پرگیا	NOUN	N_SING	Number=Sing	40	nmod:poss	_	SpaceAfter=No
-43	)	)	PUNCT	DELM	_	26	punct	_	SpaceAfter=No
-44	.	.	PUNCT	DELM	_	26	punct	_	_
+5	در	در	ADP	P	_	7	case	_	SpacesAfter=\s\s
+6	هشت	هشت	NUM	NUM	NumType=Card	7	nummod	_	_
+7	چیز	چیز	NOUN	N_SING	Number=Sing	8	nmod	_	_
+8	خلاصه	خلاصه	ADJ	ADJ	Degree=Pos	0	root	_	_
+9	می‌شو	_	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	8	cop	_	_
+10	که	که	SCONJ	CON	_	16	mark	_	_
+11	به	به	ADP	P	_	13	case	_	_
+12	آن	آن	DET	DET	_	13	det	_	_
+13	راه	راه	NOUN	N_SING	Number=Sing	16	obl	_	_
+14	اصیل	_	ADJ	ADJ	Degree=Pos	13	amod	_	_
+15	هشتگانه	هشتگانه	ADJ	ADJ	Degree=Pos	13	amod	_	_
+16	گفته	گفت#گو	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	8	ccomp	_	_
+17	می‌شود	کرد#کن	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	16	aux:pass	_	SpaceAfter=No
+18	.	.	PUNCT	DELM	_	8	punct	_	_
 
 # sent_id = 2
-# text = این سه مفهوم هستهٔ تمرین‌های روحانی آیین بودا را می‌سازند.
-1	این	این	DET	DET	_	3	det	_	_
-2	سه	سه	NUM	NUM	NumType=Card	3	nummod	_	_
-3	مفهوم	مفهوم	NOUN	N_SING	Number=Sing	10	nsubj	_	_
-4	هستهٔ	هسته	NOUN	N_SING	Number=Sing	10	obj	_	_
-5	تمرین‌های	تمرین	NOUN	N_PL	Number=Plur	4	nmod:poss	_	_
-6	روحانی	روحانی	ADJ	ADJ	Degree=Pos	5	amod	_	_
-7	آیین	آیین	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
-8	بودا	بودا	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
-9	را	را	PART	CLITIC	_	4	case	_	_
-10	می‌سازند	ساخت#ساز	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
-11	.	.	PUNCT	DELM	_	10	punct	_	SpacesAfter=\n
+# text = این راه اصیل هشتگانه که نسخهٔ تجویز بیداردل (بودا) برای درمان رنج‌هایی است که همه موجودات دچار آن هستند، خود در سه بخش «اخلاق‌مندی (شیلا)»، «تمرکز روانی (سامادی)» و «بینش (پرگیا)» دسته‌بندی می‌شود، که هستهٔ تمرین‌های روحانی آیین بودا را می‌سازند.
+1	این	این	DET	DET	_	2	det	_	_
+2	راه	راه	NOUN	N_SING	Number=Sing	48	nsubj	_	_
+3	اصیل	_	ADJ	ADJ	Degree=Pos	2	amod	_	_
+4	هشتگانه	هشتگانه	ADJ	ADJ	Degree=Pos	2	amod	_	_
+5	که	که	SCONJ	CON	_	6	mark	_	_
+6	نسخهٔ	نسخه	NOUN	N_SING	Number=Sing	2	acl:relcl	_	_
+7	تجویز	تجویز	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
+8	بیداردل	بیداردل	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
+9	(	(	PUNCT	DELM	_	8	punct	_	SpaceAfter=No
+10	بودا	بودا	NOUN	N_SING	Number=Sing	8	nmod:poss	_	SpaceAfter=No
+11	)	)	PUNCT	DELM	_	8	punct	_	_
+12	برای	برای	ADP	P	_	13	case	_	_
+13	درمان	درمان	NOUN	N_SING	Number=Sing	6	nmod	_	_
+14	رنج‌هایی	رنج	NOUN	N_PL	Number=Plur	13	nmod:poss	_	_
+15	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	6	cop	_	_
+16	که	که	SCONJ	CON	_	19	mark	_	_
+17	همه	همه	PRON	PRO	PronType=Tot	18	det	_	_
+18	موجودات	_	NOUN	N_PL	Number=Plur	19	nsubj	_	_
+19	دچار	دچار	ADJ	ADJ	Degree=Pos	6	ccomp	_	_
+20	آن	آن	PRON	PRO	Number=Sing|PronType=Dem	19	nmod:poss	_	_
+21	هستند	هست	AUX	V_PRS	Number=Plur|Person=3|Tense=Pres	19	cop	_	SpaceAfter=No
+22	،	،	PUNCT	DELM	_	48	punct	_	_
+23	خود	خود	PRON	PRO	Number=Sing|Person=3|PronType=Prs|Reflex=Yes	48	nsubj	_	_
+24	در	در	ADP	P	_	26	case	_	_
+25	سه	سه	NUM	NUM	NumType=Card	26	nummod	_	_
+26	بخش	بخش	NOUN	N_SING	Number=Sing	48	nmod	_	_
+27	«	«	PUNCT	DELM	_	26	punct	_	SpaceAfter=No
+28	اخلاق‌مندی	اخلاق‌مندی	NOUN	N_SING	Number=Sing	26	flat	_	_
+29	(	(	PUNCT	DELM	_	26	punct	_	SpaceAfter=No
+30	شیلا	شیلا	NOUN	N_SING	Number=Sing	26	appos	_	SpaceAfter=No
+31	)	)	PUNCT	DELM	_	35	punct	_	SpaceAfter=No
+32	»	»	PUNCT	DELM	_	35	punct	_	SpaceAfter=No
+33	،	،	PUNCT	DELM	_	35	punct	_	_
+34	«	«	PUNCT	DELM	_	35	punct	_	SpaceAfter=No
+35	تمرکز	تمرکز	NOUN	N_SING	Number=Sing	26	conj	_	_
+36	روانی	روانی	ADJ	ADJ	Degree=Pos	35	amod	_	_
+37	(	(	PUNCT	DELM	_	35	punct	_	SpaceAfter=No
+38	سامادی	سامادی	NOUN	N_SING	Number=Sing	35	conj	_	SpaceAfter=No
+39	)	)	PUNCT	DELM	_	43	punct	_	SpaceAfter=No
+40	»	»	PUNCT	DELM	_	43	punct	_	_
+41	و	و	CCONJ	CON	_	43	cc	_	_
+42	«	«	PUNCT	DELM	_	43	punct	_	SpaceAfter=No
+43	بینش	بینش	NOUN	N_SING	Number=Sing	35	conj	_	_
+44	(	(	PUNCT	DELM	_	43	punct	_	SpaceAfter=No
+45	پرگیا	پرگیا	NOUN	N_SING	Number=Sing	43	nmod:poss	_	SpaceAfter=No
+46	)	)	PUNCT	DELM	_	38	punct	_	SpaceAfter=No
+47	»	»	PUNCT	DELM	_	26	punct	_	_
+48	دسته‌بندی	دسته‌بندی	NOUN	N_SING	Number=Sing	0	root	_	_
+49	می‌شود	کرد#کن	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	48	cop	_	SpaceAfter=No
+50	،	،	PUNCT	DELM	_	48	punct	_	_
+51	که	که	SCONJ	CON	_	58	mark	_	_
+52	هستهٔ	هسته	NOUN	N_SING	Number=Sing	58	obj	_	_
+53	تمرین‌های	تمرین	NOUN	N_PL	Number=Plur	52	nmod:poss	_	_
+54	روحانی	روحانی	ADJ	ADJ	Degree=Pos	53	amod	_	_
+55	آیین	آیین	NOUN	N_SING	Number=Sing	53	nmod:poss	_	_
+56	بودا	بودا	NOUN	N_SING	Number=Sing	55	nmod:poss	_	_
+57	را	را	PART	CLITIC	_	52	case	_	_
+58	می‌سازند	ساخت#ساز	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	48	ccomp	_	SpaceAfter=No
+59	.	.	PUNCT	DELM	_	48	punct	_	SpacesAfter=\s\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1261,7 +1271,7 @@
 29	.	.	PUNCT	DELM	_	15	punct	_	_
 
 # sent_id = 5
-# text = این‌ها راه را برای رسیدن به بنیش فراشناخت هموار می‌سازند.
+# text = این‌ها راه را برای رسیدن به بنیش فراشناخت هموار می‌سازند.[
 1	این‌ها	این	PRON	PRO	Number=Plur|PronType=Dem	11	nsubj	_	_
 2	راه	راه	NOUN	N_SING	Number=Sing	11	obj	_	_
 3	را	را	PART	CLITIC	_	2	case	_	_
@@ -1274,7 +1284,14 @@
 9	فراشناخت	_	ADJ	ADJ	Degree=Pos	11	xcomp	_	_
 10	هموار	هموار	ADJ	ADJ	Degree=Pos	11	compound:lvc	_	_
 11	می‌سازند	ساخت#ساز	VERB	V_PRS	Number=Plur|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
-12	.	.	PUNCT	DELM	_	11	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	DELM	_	11	punct	_	SpaceAfter=No
+13	[	_	PUNCT	DELM	_	11	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = نیازمند منبع]
+1	نیازمند	نیازمند	ADJ	ADJ	Degree=Pos	0	root	_	_
+2	منبع	منبع	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	]	_	PUNCT	DELM	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1385,7 +1402,7 @@
 10	.	.	PUNCT	DELM	_	9	punct	_	_
 
 # sent_id = 5
-# text = دهش آن‌ها، بالاترین دهش‌ها یعنی آموزش آیین بودا (دارما) است.
+# text = دهش آن‌ها، بالاترین دهش‌ها یعنی آموزش آیین بودا (دارما) است.[
 1	دهش	_	NOUN	N_SING	Number=Sing	5	nsubj	_	_
 2	آن‌ها	آن	PRON	PRO	Number=Plur|PronType=Dem	1	nmod:poss	_	SpaceAfter=No
 3	،	،	PUNCT	DELM	_	5	punct	_	_
@@ -1395,11 +1412,18 @@
 7	آموزش	آموزش	NOUN	N_SING	Number=Sing	5	appos	_	_
 8	آیین	آیین	NOUN	N_SING	Number=Sing	7	nmod:poss	_	_
 9	بودا	بودا	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
-10	(	(	PUNCT	DELM	_	8	punct	_	SpaceAfter=No
-11	دارما	دارما	NOUN	N_SING	Number=Sing	5	appos	_	SpaceAfter=No
+10	(	(	PUNCT	DELM	_	11	punct	_	SpaceAfter=No
+11	دارما	_	NOUN	N_SING	Number=Sing	5	ccomp	_	SpaceAfter=No
 12	)	)	PUNCT	DELM	_	11	punct	_	_
 13	است	است	AUX	V_PRS	Number=Sing|Person=3|Tense=Pres	5	cop	_	SpaceAfter=No
-14	.	.	PUNCT	DELM	_	5	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	DELM	_	5	punct	_	SpaceAfter=No
+15	[	_	PUNCT	DELM	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 6
+# text = نیازمند منبع]
+1	نیازمند	نیازمند	ADJ	ADJ	Degree=Pos	0	root	_	_
+2	منبع	منبع	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	]	_	PUNCT	DELM	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -1596,7 +1620,7 @@
 31	.	.	PUNCT	DELM	_	9	punct	_	_
 
 # sent_id = 9
-# text = رسیدن به این حالات را درون‌نگری (دیانا) می‌نامند.
+# text = رسیدن به این حالات را درون‌نگری (دیانا) می‌نامند.[
 1	رسیدن	رسیدن	NOUN	N_SING	Number=Sing	10	obj	_	_
 2	به	به	ADP	P	_	4	case	_	_
 3	این	این	DET	DET	_	4	det	_	_
@@ -1609,7 +1633,14 @@
 10-11	می‌نامند	_	_	_	_	_	_	_	SpaceAfter=No
 10	می‌نام	می‌نام	VERB	V_PRS	Number=Sing|Person=1|Tense=Pres	0	root	_	_
 11	ند	هست	AUX	V_PRS	Number=Plur|Person=3|Tense=Pres	10	cop	_	_
-12	.	.	PUNCT	DELM	_	10	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	DELM	_	10	punct	_	SpaceAfter=No
+13	[	_	PUNCT	DELM	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 10
+# text = نیازمند منبع]
+1	نیازمند	نیازمند	ADJ	ADJ	Degree=Pos	0	root	_	_
+2	منبع	منبع	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	]	_	PUNCT	DELM	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830
@@ -3000,7 +3031,7 @@
 16	.	.	PUNCT	DELM	_	10	punct	_	_
 
 # sent_id = 10
-# text = بیشترین گسترش آیین بودایی زمانی رخ داد که آشوکا شاه به این دین گروید و به گستراندن آن مشغول شد.
+# text = بیشترین گسترش آیین بودایی زمانی رخ داد که آشوکا شاه به این دین گروید و به گستراندن آن مشغول شد.[
 1	بیشترین	بیش	ADJ	ADJ_SUP	Degree=Sup	2	amod	_	_
 2	گسترش	گسترش	NOUN	N_SING	Number=Sing	7	nsubj	_	_
 3	آیین	آیین	NOUN	N_SING	Number=Sing	2	nmod:poss	_	_
@@ -3021,7 +3052,14 @@
 18	آن	آن	PRON	PRO	Number=Sing|PronType=Dem	17	nmod:poss	_	_
 19	مشغول	مشغول	ADJ	ADJ	Degree=Pos	14	conj	_	_
 20	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	19	cop	_	SpaceAfter=No
-21	.	.	PUNCT	DELM	_	7	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	DELM	_	7	punct	_	SpaceAfter=No
+22	[	_	PUNCT	DELM	_	7	punct	_	SpaceAfter=No
+
+# sent_id = 11
+# text = نیازمند منبع]
+1	نیازمند	نیازمند	ADJ	ADJ	Degree=Pos	0	root	_	_
+2	منبع	منبع	NOUN	N_SING	Number=Sing	1	nmod:poss	_	SpaceAfter=No
+3	]	_	PUNCT	DELM	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = persian-seraji-ud-2.6-200830

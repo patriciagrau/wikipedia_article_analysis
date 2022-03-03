@@ -233,9 +233,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Riigi nimi
-1	Riigi	riik	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
-2	nimi	nimi	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+# text = Nimi
+1	Nimi	nimi	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -243,20 +242,18 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Venemaa praeguse riigi ametlik nimi on eesti keele normi järgi Venemaa Föderatsioon.
+# text = Venemaa praeguse riigi ametlik nimi on eesti keeles Venemaa Föderatsioon.
 1	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	3	nmod	_	_
 2	praeguse	praegune	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	3	amod	_	_
 3	riigi	riik	NOUN	S	Case=Gen|Number=Sing	5	nmod	_	_
 4	ametlik	ametlik	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
-5	nimi	nimi	NOUN	S	Case=Nom|Number=Sing	12	nsubj:cop	_	_
-6	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+5	nimi	nimi	NOUN	S	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+6	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
 7	eesti	eesti	ADJ	G	_	8	amod	_	_
-8	keele	keel	NOUN	S	Case=Gen|Number=Sing	9	nmod	_	_
-9	normi	norm	NOUN	S	Case=Gen|Number=Sing	12	obl	_	_
-10	järgi	järgi	ADP	K	AdpType=Post	9	case	_	_
-11	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	12	nmod	_	_
-12	Föderatsioon	Föderatsioon	PROPN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
-13	.	.	PUNCT	Z	_	12	punct	_	_
+8	keeles	keel	NOUN	S	Case=Ine|Number=Sing	10	obl	_	_
+9	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	10	nmod	_	_
+10	Föderatsioon	Föderatsioon	PROPN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Z	_	10	punct	_	_
 
 # sent_id = 2
 # text = Laialt on levinud nimekuju Vene Föderatsioon, sealhulgas diplomaatias.
@@ -292,10 +289,77 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Maa ja riik
-1	Maa	maa	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
+# text = Asend ja suurus
+1	Asend	asend	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
 2	ja	ja	CCONJ	J	_	3	cc	_	_
-3	riik	riik	NOUN	S	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+3	suurus	suurus	NOUN	S	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Venemaa on suurim riik maailmas; selle kogupindala on 17 075 200 ruutkilomeetrit.
+1	Venemaa	Vene_maa	PROPN	S	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	suurim	suurim	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	4	amod	_	_
+4	riik	riik	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
+5	maailmas	maa_ilm	NOUN	S	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+6	;	;	PUNCT	Z	_	13	punct	_	_
+7	selle	see	PRON	P	Case=Gen|Number=Sing|PronType=Dem	8	nmod	_	_
+8	kogupindala	kogu_pind_ala	NOUN	S	Case=Nom|Number=Sing	13	nsubj:cop	_	_
+9	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+10	17	17	NUM	N	NumForm=Digit|NumType=Card	12	compound	_	_
+11	075	075	NUM	N	NumForm=Digit|NumType=Card	12	compound	_	_
+12	200	200	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	13	nummod	_	_
+13	ruutkilomeetrit	ruut_kilo_meeter	NOUN	S	Case=Par|Number=Sing	4	parataxis	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2
+# text = See on suurem kui Euroopa, Antarktika, Austraalia ja Okeaania maailmajagu.
+1	See	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	suurem	suurem	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+4	kui	kui	SCONJ	J	_	12	mark	_	_
+5	Euroopa	Euroopa	PROPN	S	Case=Gen|Number=Sing	12	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	7	punct	_	_
+7	Antarktika	Antarktika	PROPN	S	Case=Gen|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	9	punct	_	_
+9	Austraalia	Austraalia	PROPN	S	Case=Gen|Number=Sing	5	conj	_	_
+10	ja	ja	CCONJ	J	_	11	cc	_	_
+11	Okeaania	Okeaania	PROPN	S	Case=Gen|Number=Sing	5	conj	_	_
+12	maailmajagu	maa_ilma_jagu	NOUN	S	Case=Nom|Number=Sing	3	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 3
+# text = Venemaa asub laiuskraadide 41° ja 82° N, ning pikkuskraadide 19° E ja 169° W vahel.
+1	Venemaa	Vene_maa	PROPN	S	Case=Nom|Number=Sing	2	nsubj	_	_
+2	asub	asuma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	laiuskraadide	laius_kraad	NOUN	S	Case=Gen|Number=Plur	2	obl	_	_
+4	41°	41°	NUM	N	NumForm=Digit|NumType=Card	3	nummod	_	_
+5	ja	ja	CCONJ	J	_	6	cc	_	_
+6	82°	82°	NUM	N	NumForm=Digit|NumType=Card	4	conj	_	_
+7	N	N	NOUN	Y	Abbr=Yes	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	10	punct	_	_
+9	ning	ning	CCONJ	J	_	10	cc	_	_
+10	pikkuskraadide	pikkus_kraad	NOUN	S	Case=Gen|Number=Plur	2	conj	_	_
+11	19°	19°	NUM	N	NumForm=Digit|NumType=Card	10	nummod	_	_
+12	E	E	NOUN	Y	Abbr=Yes	10	nmod	_	_
+13	ja	ja	CCONJ	J	_	14	cc	_	_
+14	169°	169°	NUM	N	NumForm=Digit|NumType=Card	11	conj	_	_
+15	W	W	PROPN	Y	Abbr=Yes	10	nmod	_	_
+16	vahel	vahel	ADP	K	AdpType=Post	10	case	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Riik
+1	Riik	riik	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -370,15 +434,6 @@
 64	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	65	nmod	_	_
 65	Föderatsioon	Föderatsioon	PROPN	S	Case=Nom|Number=Sing	31	conj	_	SpaceAfter=No
 66	.	.	PUNCT	Z	_	5	punct	_	SpacesAfter=\n
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Riik
-1	Riik	riik	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -529,9 +584,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Riigi haldusjaotus
-1	Riigi	riik	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
-2	haldusjaotus	haldus_jaotus	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+# text = Haldusjaotus
+1	Haldusjaotus	haldusj_aotus	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -606,9 +660,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Venemaa riigikaitse
-1	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
-2	riigikaitse	riigi_kaitse	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+# text = Riigikaitse
+1	Riigikaitse	riigi_kaitse	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -711,7 +764,7 @@
 2	ühenduse	ühendus	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
 3	koosseisu	koos_seis	NOUN	S	Case=Add|Number=Sing	4	obl	_	_
 4	kuuluvad	kuuluma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
-5	:	:	PUNCT	Z	_	4	punct	_	SpacesAfter=\s\n
+5	:	:	PUNCT	Z	_	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -719,66 +772,8 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Geograafia
-1	Geograafia	geo_graafia	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Venemaa on suurim riik maailmas; selle kogupindala on 17 075 200 ruutkilomeetrit.
-1	Venemaa	Vene_maa	PROPN	S	Case=Nom|Number=Sing	4	nsubj:cop	_	_
-2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
-3	suurim	suurim	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	4	amod	_	_
-4	riik	riik	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
-5	maailmas	maa_ilm	NOUN	S	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
-6	;	;	PUNCT	Z	_	13	punct	_	_
-7	selle	see	PRON	P	Case=Gen|Number=Sing|PronType=Dem	8	nmod	_	_
-8	kogupindala	kogu_pind_ala	NOUN	S	Case=Nom|Number=Sing	13	nsubj:cop	_	_
-9	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
-10	17	17	NUM	N	NumForm=Digit|NumType=Card	12	compound	_	_
-11	075	075	NUM	N	NumForm=Digit|NumType=Card	12	compound	_	_
-12	200	200	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	13	nummod	_	_
-13	ruutkilomeetrit	ruut_kilo_meeter	NOUN	S	Case=Par|Number=Sing	4	parataxis	_	SpaceAfter=No
-14	.	.	PUNCT	Z	_	4	punct	_	_
-
-# sent_id = 2
-# text = See on suurem kui Euroopa, Antarktika, Austraalia ja Okeaania maailmajagu.
-1	See	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
-2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
-3	suurem	suurem	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
-4	kui	kui	SCONJ	J	_	12	mark	_	_
-5	Euroopa	Euroopa	PROPN	S	Case=Gen|Number=Sing	12	nmod	_	SpaceAfter=No
-6	,	,	PUNCT	Z	_	7	punct	_	_
-7	Antarktika	Antarktika	PROPN	S	Case=Gen|Number=Sing	5	conj	_	SpaceAfter=No
-8	,	,	PUNCT	Z	_	9	punct	_	_
-9	Austraalia	Austraalia	PROPN	S	Case=Gen|Number=Sing	5	conj	_	_
-10	ja	ja	CCONJ	J	_	11	cc	_	_
-11	Okeaania	Okeaania	PROPN	S	Case=Gen|Number=Sing	5	conj	_	_
-12	maailmajagu	maa_ilma_jagu	NOUN	S	Case=Nom|Number=Sing	3	advcl	_	SpaceAfter=No
-13	.	.	PUNCT	Z	_	3	punct	_	_
-
-# sent_id = 3
-# text = Venemaa asub laiuskraadide 41° ja 82° N, ning pikkuskraadide 19° E ja 169° W vahel.
-1	Venemaa	Vene_maa	PROPN	S	Case=Nom|Number=Sing	2	nsubj	_	_
-2	asub	asuma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	laiuskraadide	laius_kraad	NOUN	S	Case=Gen|Number=Plur	2	obl	_	_
-4	41°	41°	NUM	N	NumForm=Digit|NumType=Card	3	nummod	_	_
-5	ja	ja	CCONJ	J	_	6	cc	_	_
-6	82°	82°	NUM	N	NumForm=Digit|NumType=Card	4	conj	_	_
-7	N	N	NOUN	Y	Abbr=Yes	2	obl	_	SpaceAfter=No
-8	,	,	PUNCT	Z	_	10	punct	_	_
-9	ning	ning	CCONJ	J	_	10	cc	_	_
-10	pikkuskraadide	pikkus_kraad	NOUN	S	Case=Gen|Number=Plur	2	conj	_	_
-11	19°	19°	NUM	N	NumForm=Digit|NumType=Card	10	nummod	_	_
-12	E	E	NOUN	Y	Abbr=Yes	10	nmod	_	_
-13	ja	ja	CCONJ	J	_	14	cc	_	_
-14	169°	169°	NUM	N	NumForm=Digit|NumType=Card	11	conj	_	_
-15	W	W	PROPN	Y	Abbr=Yes	10	nmod	_	_
-16	vahel	vahel	ADP	K	AdpType=Post	10	case	_	SpaceAfter=No
-17	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+# text = Loodus
+1	Loodus	loodus	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -987,7 +982,17 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Venemaa rahvaarv on 2010. aasta rahvaloenduse andmetel 141,9 miljonit , vähenedes 146,7 miljonini aastal 2020.
+# text = Demograafilised näitajad
+1	Demograafilised	demo_graafiline	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	näitajad	näitaja	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Venemaa rahvaarv on 2010. aasta rahvaloenduse andmetel 141,9 miljonit, vähenedes 146,7 miljonini aastal 2020.
 1	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
 2	rahvaarv	rahva_arv	NOUN	S	Case=Nom|Number=Sing	9	nsubj:cop	_	_
 3	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
@@ -996,7 +1001,7 @@
 6	rahvaloenduse	rahva_loendus	NOUN	S	Case=Gen|Number=Sing	7	nmod	_	_
 7	andmetel	andmed	NOUN	S	Case=Ade|Number=Plur	9	obl	_	_
 8	141,9	141,9	NUM	N	NumForm=Digit|NumType=Card	9	compound	_	_
-9	miljonit	miljon	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	0	root	_	_
+9	miljonit	miljon	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	0	root	_	SpaceAfter=No
 10	,	,	PUNCT	Z	_	11	punct	_	_
 11	vähenedes	vähenema	VERB	V	VerbForm=Conv	9	advcl	_	_
 12	146,7	146,7	NUM	N	NumForm=Digit|NumType=Card	13	compound	_	_
@@ -1175,22 +1180,25 @@
 5	.	.	PUNCT	Z	_	4	punct	_	_
 
 # sent_id = 10
-# text = 2008.aasta andmetel naise kohta on 1,57 sündi, mis on üks maailma väiksemaid sündimusi.
+# text = 2008.aasta andmetel naise kohta on 1,57 sündi[viide?], mis on üks maailma väiksemaid sündimusi.
 1	2008.aasta	2008.aasta	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
-2	andmetel	andmed	NOUN	S	Case=Ade|Number=Plur	0	root	_	_
-3	naise	naine	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	andmetel	andmed	NOUN	S	Case=Ade|Number=Plur	8	obl	_	_
+3	naise	naine	NOUN	S	Case=Gen|Number=Sing	8	obl	_	_
 4	kohta	kohta	ADP	K	AdpType=Post	3	case	_	_
-5	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
-6	1,57	1,57	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	7	nummod	_	_
-7	sündi	sünd	NOUN	S	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
-8	,	,	PUNCT	Z	_	14	punct	_	_
-9	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	14	nsubj:cop	_	_
-10	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
-11	üks	üks	DET	P	Case=Nom|Number=Sing|PronType=Ind	14	det	_	_
-12	maailma	maa_ilm	NOUN	S	Case=Gen|Number=Sing	14	nmod	_	_
-13	väiksemaid	väiksem	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	14	amod	_	_
-14	sündimusi	sündimus	NOUN	S	Case=Par|Number=Plur	7	acl:relcl	_	SpaceAfter=No
-15	.	.	PUNCT	Z	_	2	punct	_	_
+5	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	1,57	1,57	NUM	N	NumForm=Digit|NumType=Card	7	nummod	_	_
+7	sündi[	sündi[	NOUN	S	Case=Par|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+8	viide	viide	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	0	root	_	SpaceAfter=No
+9	?	?	PUNCT	Z	_	8	punct	_	SpaceAfter=No
+10	]	]	PUNCT	Z	_	8	punct	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	17	punct	_	_
+12	mis	mis	PRON	P	Case=Nom|Number=Sing|PronType=Int,Rel	17	nsubj:cop	_	_
+13	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+14	üks	üks	DET	P	Case=Nom|Number=Sing|PronType=Ind	17	det	_	_
+15	maailma	maa_ilm	NOUN	S	Case=Gen|Number=Sing	17	nmod	_	_
+16	väiksemaid	väiksem	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	17	amod	_	_
+17	sündimusi	sündimus	NOUN	S	Case=Par|Number=Plur	8	acl:relcl	_	SpaceAfter=No
+18	.	.	PUNCT	Z	_	8	punct	_	_
 
 # sent_id = 11
 # text = Keskmine oodatav eluiga on naistel 77,6 ja meestel 66,9 aastat.
@@ -1240,7 +1248,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Sellegipoolest on Venemaal sündimus suurem kui enamikus Euroopa riikides (13,3 sündi tuhande inimese kohta aastal 2014 võrreldes Euroopa Liidu keskmisega 7,9 sündi tuhande inimese kohta.
+# text = Sellegipoolest on Venemaal sündimus suurem kui enamikus Euroopa riikides (13,3 sündi tuhande inimese kohta aastal 2014[viide?] võrreldes Euroopa Liidu keskmisega 7,9 sündi tuhande inimese kohta.
 1	Sellegipoolest	sellegi_poolest	ADV	D	_	5	advmod	_	_
 2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
 3	Venemaal	Vene_maa	PROPN	S	Case=Ade|Number=Sing	5	obl	_	_
@@ -1256,21 +1264,24 @@
 13	tuhande	tuhat	NUM	N	Case=Gen|Number=Sing|NumForm=Letter|NumType=Card	14	nummod	_	_
 14	inimese	inimene	NOUN	S	Case=Gen|Number=Sing	12	nmod	_	_
 15	kohta	kohta	ADP	K	AdpType=Post	14	case	_	_
-16	aastal	aasta	NOUN	S	Case=Ade|Number=Sing	18	obl	_	_
-17	2014	2014	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	16	nummod	_	_
-18	võrreldes	võrdlema	VERB	V	VerbForm=Conv	12	advcl	_	_
-19	Euroopa	Euroopa	PROPN	S	Case=Gen|Number=Sing	20	nmod	_	_
-20	Liidu	Liit	PROPN	S	Case=Gen|Number=Sing	23	nmod	_	_
-21	keskmisega	keskmine	ADJ	A	Case=Com|Degree=Pos|Number=Sing	18	obl	_	_
-22	7,9	7,9	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	23	nummod	_	_
-23	sündi	sünd	NOUN	S	Case=Par|Number=Sing	18	obl	_	_
-24	tuhande	tuhat	NUM	N	Case=Gen|Number=Sing|NumForm=Letter|NumType=Card	25	nummod	_	_
-25	inimese	inimene	NOUN	S	Case=Gen|Number=Sing	23	nmod	_	_
-26	kohta	kohta	ADP	K	AdpType=Post	25	case	_	SpaceAfter=No
-27	.	.	PUNCT	Z	_	5	punct	_	_
+16	aastal	aasta	NOUN	S	Case=Ade|Number=Sing	18	nmod	_	_
+17	2014[	2014[	NUM	N	NumForm=Digit|NumType=Card	18	nummod	_	SpaceAfter=No
+18	viide	viide	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	12	nummod	_	SpaceAfter=No
+19	?	?	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+20	]	]	PUNCT	Z	_	18	punct	_	_
+21	võrreldes	võrdlema	VERB	V	VerbForm=Conv	5	advcl	_	_
+22	Euroopa	Euroopa	PROPN	S	Case=Gen|Number=Sing	23	nmod	_	_
+23	Liidu	Liit	PROPN	S	Case=Gen|Number=Sing	24	nmod	_	_
+24	keskmisega	keskmine	ADJ	A	Case=Com|Degree=Pos|Number=Sing	21	obl	_	_
+25	7,9	7,9	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	26	nummod	_	_
+26	sündi	sünd	NOUN	S	Case=Par|Number=Sing	21	obl	_	_
+27	tuhande	tuhat	NUM	N	Case=Gen|Number=Sing|NumForm=Letter|NumType=Card	28	nummod	_	_
+28	inimese	inimene	NOUN	S	Case=Gen|Number=Sing	21	obl	_	_
+29	kohta	kohta	ADP	K	AdpType=Post	28	case	_	SpaceAfter=No
+30	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 2
-# text = Samas on Venemaa rahvastiku suremus suurem kui Euroopa riikides (2014. aastal oli Venemaa suremus 13,1 ja Euroopa Liidus 9,7 tuhande inimese kohta).
+# text = Samas on Venemaa rahvastiku suremus suurem kui Euroopa riikides (2014. aastal oli Venemaa suremus 13,1 ja Euroopa Liidus 9,7 tuhande inimese kohta)[viide?].
 1	Samas	samas	ADV	D	_	6	advmod	_	_
 2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
 3	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
@@ -1293,12 +1304,15 @@
 20	9,7	9,7	NUM	N	NumForm=Digit|NumType=Card	21	compound	_	_
 21	tuhande	tuhat	NUM	N	Case=Gen|Number=Sing|NumForm=Letter|NumType=Card	22	nummod	_	_
 22	inimese	inimene	NOUN	S	Case=Gen|Number=Sing	16	conj	_	_
-23	kohta	kohta	ADP	K	AdpType=Post	22	case	_	SpaceAfter=No
-24	)	)	PUNCT	Z	_	16	punct	_	SpaceAfter=No
-25	.	.	PUNCT	Z	_	6	punct	_	_
+23	kohta)	kohta)	ADP	K	AdpType=Post	22	case	_	SpaceAfter=No
+24	[	[	PUNCT	Z	_	25	punct	_	SpaceAfter=No
+25	viide	viide	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	6	parataxis	_	SpaceAfter=No
+26	?	?	PUNCT	Z	_	25	punct	_	SpaceAfter=No
+27	]	]	PUNCT	Z	_	25	punct	_	SpaceAfter=No
+28	.	.	PUNCT	Z	_	6	punct	_	_
 
 # sent_id = 3
-# text = Alates 2010. aastast on Venemaa rahvaarv suurenenud tänu suremuse vähenemisele, sündimuse suurenemisele ja suurenenud immigratsioonile.
+# text = Alates 2010. aastast on Venemaa rahvaarv suurenenud tänu suremuse vähenemisele, sündimuse suurenemisele ja suurenenud immigratsioonile.[viide?]
 1	Alates	alates	ADP	K	AdpType=Prep	3	case	_	_
 2	2010.	2010.	ADJ	N	Case=Ela|Number=Sing|NumForm=Digit|NumType=Ord	3	amod	_	_
 3	aastast	aasta	NOUN	S	Case=Ela|Number=Sing	7	obl	_	_
@@ -1312,10 +1326,12 @@
 11	,	,	PUNCT	Z	_	13	punct	_	_
 12	sündimuse	sündimus	NOUN	S	Case=Gen|Number=Sing	13	nmod	_	_
 13	suurenemisele	suurenemine	NOUN	S	Case=All|Number=Sing	10	conj	_	_
-14	ja	ja	CCONJ	J	_	16	cc	_	_
-15	suurenenud	suurene=nud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Act	7	conj	_	_
-16	immigratsioonile	immigratsioon	NOUN	S	Case=All|Number=Sing	10	conj	_	SpaceAfter=No
-17	.	.	PUNCT	Z	_	7	punct	_	_
+14	ja	ja	CCONJ	J	_	17	cc	_	_
+15	suurenenud	suurene=nud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Act	16	acl	_	_
+16	immigratsioonile.[	immigratsioon	NOUN	S	Case=Gen|Number=Sing	17	nmod	_	SpaceAfter=No
+17	viide	viide	NOUN	S	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+18	?	?	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+19	]	]	PUNCT	Z	_	7	punct	_	_
 
 # sent_id = 4
 # text = 2009. aastal loeti Venemaal esimest korda pärast 15 aastat rahvastiku suurenemist (10 500 inimese võrra).
@@ -1471,6 +1487,19 @@
 25	145	145	NUM	N	NumForm=Digit|NumType=Card	26	compound	_	_
 26	miljonit	miljon	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	22	obj	_	SpaceAfter=No
 27	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Emigratsioon
+1	Emigratsioon	emigratsioon	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Venemaalt
+1	Venemaalt	Vene_maa	PROPN	S	Case=Abl|Number=Sing	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1692,6 +1721,15 @@
 15	juurutamist	juurutamine	NOUN	S	Case=Par|Number=Sing	3	obj	_	_
 16	Venemaal	Vene_maa	PROPN	S	Case=Ade|Number=Sing	15	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Rahvad
+1	Rahvad	rahvas	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -1924,7 +1962,7 @@
 18	lisaks	lisa	NOUN	S	Case=Tra|Number=Sing	15	obl	_	_
 19	vene	vene	ADJ	G	_	20	amod	_	_
 20	keelele	keel	NOUN	S	Case=All|Number=Sing	18	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\s\n
+21	.	.	PUNCT	Z	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -2041,6 +2079,15 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Religioon
+1	Religioon	religioon	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Venemaa võttis ristiusu vastu 988. aastal.
 1	Venemaa	Vene_maa	PROPN	S	Case=Nom|Number=Sing	2	nsubj	_	_
 2	võttis	võtma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -2077,7 +2124,7 @@
 23	.	.	PUNCT	Z	_	5	punct	_	_
 
 # sent_id = 3
-# text = Venemaa õigeusu kiriku ajaloo kohaselt on õigeusu toonud Venemaale, Valgevenemaale ja Ukrainasse Jeesus kristuse esimene apostel Püha Andreas.
+# text = Venemaa õigeusu kiriku ajaloo kohaselt on õigeusu toonud Venemaale, Valgevenemaale ja Ukrainasse Jeesus Kristuse esimene apostel Püha Andreas.
 1	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
 2	õigeusu	õige_usk	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
 3	kiriku	kirik	NOUN	S	Case=Gen|Number=Sing	4	nmod	_	_
@@ -2091,8 +2138,8 @@
 11	Valgevenemaale	valge_venemaa	PROPN	S	Case=All|Number=Sing	9	conj	_	_
 12	ja	ja	CCONJ	J	_	13	cc	_	_
 13	Ukrainasse	Ukraina	PROPN	S	Case=Ill|Number=Sing	9	conj	_	_
-14	Jeesus	Jeesus	PROPN	S	Case=Ine|Number=Sing	15	nmod	_	_
-15	kristuse	kristus	NOUN	S	Case=Gen|Number=Sing	17	nmod	_	_
+14	Jeesus	Jeesus	PROPN	S	Case=Nom|Number=Sing	17	nmod	_	_
+15	Kristuse	Kristus	PROPN	S	Case=Gen|Number=Sing	14	flat	_	_
 16	esimene	esimene	ADJ	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Ord	17	amod	_	_
 17	apostel	apostel	NOUN	S	Case=Nom|Number=Sing	8	nsubj	_	_
 18	Püha	Püha	PROPN	S	Case=Nom|Number=Sing	17	appos	_	_
@@ -3378,7 +3425,7 @@
 9	ja	ja	CCONJ	J	_	10	cc	_	_
 10	lääne	lääs	NOUN	S	Case=Gen|Number=Sing	8	conj	_	_
 11	suunas	suunas	ADP	K	AdpType=Post	8	case	_	SpaceAfter=No
-12	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\s\n
+12	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -3865,6 +3912,365 @@
 # newdoc
 # newpar
 # sent_id = 1
+# text = Religioon
+1	Religioon	religioon	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Venelased on valdavalt õigeusklikud, muud väikerahvad (nt tatarlased, tšetšeenid) on valdavalt muslimid.
+1	Venelased	venelane	NOUN	S	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	valdavalt	valdavalt	ADV	D	_	4	advmod	_	_
+4	õigeusklikud	õigeusklik	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Z	_	16	punct	_	_
+6	muud	muu	PRON	P	Case=Nom|Number=Plur|PronType=Ind	7	det	_	_
+7	väikerahvad	väike_rahvas	NOUN	S	Case=Nom|Number=Plur	16	nsubj:cop	_	_
+8	(	(	PUNCT	Z	_	10	punct	_	SpaceAfter=No
+9	nt	nt	ADV	Y	Abbr=Yes	10	nmod	_	_
+10	tatarlased	tatarlane	NOUN	S	Case=Nom|Number=Plur	7	parataxis	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	12	punct	_	_
+12	tšetšeenid	tšetšeen	NOUN	S	Case=Nom|Number=Plur	10	conj	_	SpaceAfter=No
+13	)	)	PUNCT	Z	_	10	punct	_	_
+14	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+15	valdavalt	valdavalt	ADV	D	_	16	advmod	_	_
+16	muslimid	muslim	NOUN	S	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2
+# text = 2013. aasta suvel fondi "Ühiskondlik arvamus" poolt läbiviidud küsitluse kohaselt on 64% elanikkonnast vene õigeusku ja 6% on islamiusulisi.
+1	2013.	2013.	ADJ	N	Case=Gen|Number=Sing|NumForm=Digit|NumType=Ord	2	amod	_	_
+2	aasta	aasta	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
+3	suvel	suvi	NOUN	S	Case=Ade|Number=Sing	10	obl	_	_
+4	fondi	fond	NOUN	S	Case=Gen|Number=Sing	10	obl	_	_
+5	"	"	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+6	Ühiskondlik	ühiskondlik	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	arvamus	arvamus	NOUN	S	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	"	"	PUNCT	Z	_	7	punct	_	_
+9	poolt	poolt	ADP	K	AdpType=Post	4	case	_	_
+10	läbiviidud	läbi_viidud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	11	acl	_	_
+11	küsitluse	küsitlus	NOUN	S	Case=Gen|Number=Sing	0	root	_	_
+12	kohaselt	kohaselt	ADP	K	AdpType=Post	11	case	_	_
+13	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+14	64	64	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	15	nummod	_	SpaceAfter=No
+15	%	%	SYM	X	_	11	nsubj:cop	_	_
+16	elanikkonnast	elanikkond	NOUN	S	Case=Ela|Number=Sing	15	nmod	_	_
+17	vene	vene	ADJ	G	_	18	amod	_	_
+18	õigeusku	õige_usk	NOUN	S	Case=Par|Number=Sing	11	nsubj:cop	_	_
+19	ja	ja	CCONJ	J	_	23	cc	_	_
+20	6	6	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	21	nummod	_	SpaceAfter=No
+21	%	%	SYM	X	_	23	nsubj:cop	_	_
+22	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	_	_
+23	islamiusulisi	isl_amiusuline	ADJ	A	Case=Par|Degree=Pos|Number=Plur	18	conj	_	SpaceAfter=No
+24	.	.	PUNCT	Z	_	11	punct	_	_
+
+# sent_id = 3
+# text = Teisi religioone toetab 2% elanikkonnast.
+1	Teisi	teine	DET	P	Case=Par|Number=Plur|PronType=Dem	2	det	_	_
+2	religioone	religioon	NOUN	S	Case=Par|Number=Plur	3	obj	_	_
+3	toetab	toetama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	2	2	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
+5	%	%	SYM	X	_	3	nsubj	_	_
+6	elanikkonnast	elanikkond	NOUN	S	Case=Ela|Number=Sing	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 4
+# text = 25% elanikkonnast ei pea end usklikuks.
+1	25	25	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	2	nummod	_	SpaceAfter=No
+2	%	%	SYM	X	_	5	nsubj	_	_
+3	elanikkonnast	elanikkond	NOUN	S	Case=Ela|Number=Sing	2	nmod	_	_
+4	ei	ei	AUX	V	Polarity=Neg	5	aux	_	_
+5	pea	pidama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	end	ise	PRON	P	Case=Par|Number=Sing|PronType=Prs|Reflex=Yes	5	obj	_	_
+7	usklikuks	usklik	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 5
+# text = Venemaa rahvas jagunedb enamasti kahte äärmusesse - need, kes usuvad väga kindlalt Jumala olemasolusse, ja need, kes seda täielikult eitavad.
+1	Venemaa	Vene_maa	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	rahvas	rahvas	NOUN	S	Case=Nom|Number=Sing	3	nsubj	_	_
+3	jagunedb	jagn	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	enamasti	enamasti	ADV	D	_	3	advmod	_	_
+5	kahte	kaks	NUM	N	Case=Add|Number=Sing|NumForm=Letter|NumType=Card	6	nummod	_	_
+6	äärmusesse	äärmus	NOUN	S	Case=Ill|Number=Sing	3	obl	_	_
+7	-	-	PUNCT	Z	_	8	punct	_	_
+8	need	see	PRON	P	Case=Nom|Number=Plur|PronType=Dem	6	appos	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	11	punct	_	_
+10	kes	kes	PRON	P	Case=Nom|Number=Plur|PronType=Int,Rel	11	nsubj	_	_
+11	usuvad	uskuma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+12	väga	väga	ADV	D	_	13	advmod	_	_
+13	kindlalt	kindlalt	ADV	D	_	11	advmod	_	_
+14	Jumala	Jumal	PROPN	S	Case=Gen|Number=Sing	15	nmod	_	_
+15	olemasolusse	olemasolu	NOUN	S	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+16	,	,	PUNCT	Z	_	18	punct	_	_
+17	ja	ja	CCONJ	J	_	18	cc	_	_
+18	need	see	PRON	P	Case=Nom|Number=Plur|PronType=Dem	8	conj	_	SpaceAfter=No
+19	,	,	PUNCT	Z	_	23	punct	_	_
+20	kes	kes	PRON	P	Case=Nom|Number=Plur|PronType=Int,Rel	23	nsubj	_	_
+21	seda	see	PRON	P	Case=Par|Number=Sing|PronType=Dem	23	obj	_	_
+22	täielikult	täielikult	ADV	D	_	23	advmod	_	_
+23	eitavad	eitama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	acl:relcl	_	SpaceAfter=No
+24	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 6
+# text = Nende vahel on uline vastasseis, näiteks Pussy Rioti juhtum.
+1	Nende	see	PRON	P	Case=Gen|Number=Plur|PronType=Dem	0	root	_	_
+2	vahel	vahel	ADP	K	AdpType=Post	1	case	_	_
+3	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	uline	uline	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	vastasseis	vastas_seis	NOUN	S	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	10	punct	_	_
+7	näiteks	näiteks	ADV	D	_	10	advmod	_	_
+8	Pussy	Pussy	PROPN	S	Case=Nom|Number=Sing	10	nmod	_	_
+9	Rioti	Riot	PROPN	S	Case=Gen|Number=Sing	8	flat	_	_
+10	juhtum	juhtum	NOUN	S	Case=Nom|Number=Sing	5	appos	_	SpaceAfter=No
+11	.	.	PUNCT	Z	_	1	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Vene õigeusklikule on väga tähtsad usuga seotud esemed, artefaktid - olulised on ristid, ikoonid, karikad.
+1	Vene	Vene	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	õigeusklikule	õigeusklik	ADJ	A	Case=All|Degree=Pos|Number=Sing	5	obl	_	_
+3	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	väga	väga	ADV	D	_	5	advmod	_	_
+5	tähtsad	tähtis	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	_
+6	usuga	usk	NOUN	S	Case=Com|Number=Sing	7	obl	_	_
+7	seotud	seotud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
+8	esemed	ese	NOUN	S	Case=Nom|Number=Plur	5	nsubj:cop	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	10	punct	_	_
+10	artefaktid	arte_fakt	NOUN	S	Case=Nom|Number=Plur	8	conj	_	_
+11	-	-	PUNCT	Z	_	12	punct	_	_
+12	olulised	oluline	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	parataxis	_	_
+13	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	ristid	rist	NOUN	S	Case=Nom|Number=Plur	12	nsubj:cop	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	16	punct	_	_
+16	ikoonid	ikoon	NOUN	S	Case=Nom|Number=Plur	14	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Z	_	18	punct	_	_
+18	karikad	karikas	NOUN	S	Case=Nom|Number=Plur	14	conj	_	SpaceAfter=No
+19	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2
+# text = Vene õigeusu kirikule on iseloomulikud sibulakujulised kuplid ning ikoonde ees kummardamine, elemendid, mis on sageli esindatud ka vene arhitektuuris ja kunstis.
+1	Vene	Vene	PROPN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	õigeusu	õige_usk	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
+3	kirikule	kirik	NOUN	S	Case=All|Number=Sing	5	obl	_	_
+4	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	iseloomulikud	ise_loomulik	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	_
+6	sibulakujulised	sibula_kujuline	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	kuplid	kuppel	NOUN	S	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+8	ning	ning	CCONJ	J	_	11	cc	_	_
+9	ikoonde	ikoond	NOUN	S	Case=Gen|Number=Plur	11	nmod	_	_
+10	ees	ees	ADP	K	AdpType=Post	9	case	_	_
+11	kummardamine	kummarda=mine	NOUN	S	Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	13	punct	_	_
+13	elemendid	element	NOUN	S	Case=Nom|Number=Plur	7	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Z	_	18	punct	_	_
+15	mis	mis	PRON	P	Case=Nom|Number=Plur|PronType=Int,Rel	18	obj	_	_
+16	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	sageli	sageli	ADV	D	_	18	advmod	_	_
+18	esindatud	esindama	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	13	acl:relcl	_	_
+19	ka	ka	ADV	D	_	21	advmod	_	_
+20	vene	vene	ADJ	G	_	21	amod	_	_
+21	arhitektuuris	arhitektuur	NOUN	S	Case=Ine|Number=Sing	18	obl	_	_
+22	ja	ja	CCONJ	J	_	23	cc	_	_
+23	kunstis	kunst	NOUN	S	Case=Ine|Number=Sing	21	conj	_	SpaceAfter=No
+24	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 3
+# text = Moskva tuntumaid vaatamisväärsusi Vassili Blažennõi peakirik kannab samuti eelmainitud elemente.
+1	Moskva	Moskva	PROPN	S	Case=Gen|Number=Sing	3	nmod	_	_
+2	tuntumaid	tuntum	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	3	amod	_	_
+3	vaatamisväärsusi	vaatamis_väärsus	NOUN	S	Case=Par|Number=Plur	7	obj	_	_
+4	Vassili	Vassili	PROPN	S	Case=Nom|Number=Sing	6	nmod	_	_
+5	Blažennõi	Blažennõi	PROPN	S	Case=Gen|Number=Sing	4	flat	_	_
+6	peakirik	pea_kirik	NOUN	S	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kannab	kandma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	samuti	samuti	ADV	D	_	7	advmod	_	_
+9	eelmainitud	eel_mainitud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	10	acl	_	_
+10	elemente	element	NOUN	S	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 4
+# text = Ikoonidest on tuntud näiteks Vladimiri Jumalaema ikoon ja Andrei Rubljovi kolmainsus.
+1	Ikoonidest	ikoon	NOUN	S	Case=Ela|Number=Plur	3	obl	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tuntud	tundma	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	näiteks	näiteks	ADV	D	_	7	advmod	_	_
+5	Vladimiri	Vladimir	PROPN	S	Case=Gen|Number=Sing	6	nmod	_	_
+6	Jumalaema	Jum_alaem	PROPN	S	Case=Gen|Number=Sing	7	nmod	_	_
+7	ikoon	ikoon	NOUN	S	Case=Nom|Number=Sing	3	obj	_	_
+8	ja	ja	CCONJ	J	_	11	cc	_	_
+9	Andrei	Andrei	PROPN	S	Case=Nom|Number=Sing	11	nmod	_	_
+10	Rubljovi	Rubljov	PROPN	S	Case=Gen|Number=Sing	9	flat	_	_
+11	kolmainsus	kolmainsus	NOUN	S	Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	3	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kristluse leviku ajal sai Venemaast tugevalt religioosne riik, kus kultuur ja võim oli rajatud usule.
+1	Kristluse	kristlus	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	leviku	levik	NOUN	S	Case=Gen|Number=Sing	4	obl	_	_
+3	ajal	ajal	ADP	K	AdpType=Post	2	case	_	_
+4	sai	saama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Venemaast	Vene_maa	PROPN	S	Case=Ela|Number=Sing	4	obl	_	_
+6	tugevalt	tugevalt	ADV	D	_	4	advmod	_	_
+7	religioosne	religioosne	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	riik	riik	NOUN	S	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	15	punct	_	_
+10	kus	kus	ADV	D	_	15	mark	_	_
+11	kultuur	kultuur	NOUN	S	Case=Nom|Number=Sing	15	obj	_	_
+12	ja	ja	CCONJ	J	_	13	cc	_	_
+13	võim	võim	NOUN	S	Case=Nom|Number=Sing	11	conj	_	_
+14	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	rajatud	rajama	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	4	advcl	_	_
+16	usule	us	NOUN	S	Case=All|Number=Sing	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2
+# text = Kui võimule tulid kommunistid, keelati usk ja tauniti kõiki religiooniga seonudvaid tegevusi.
+1	Kui	kui	SCONJ	J	_	3	mark	_	_
+2	võimule	võim	NOUN	S	Case=All|Number=Sing	3	obl	_	_
+3	tulid	tulema	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
+4	kommunistid	kommunist	NOUN	S	Case=Nom|Number=Plur	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Z	_	3	punct	_	_
+6	keelati	keelama	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	usk	usk	NOUN	S	Case=Nom|Number=Sing	6	obj	_	_
+8	ja	ja	CCONJ	J	_	9	cc	_	_
+9	tauniti	taunima	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	6	conj	_	_
+10	kõiki	kõik	DET	P	Case=Par|Number=Plur|PronType=Tot	13	det	_	_
+11	religiooniga	religioon	NOUN	S	Case=Com|Number=Sing	12	obl	_	_
+12	seonudvaid	seo_nudna	ADJ	A	Case=Par|Degree=Pos|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	13	acl	_	_
+13	tegevusi	tegevus	NOUN	S	Case=Par|Number=Plur	9	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 3
+# text = Praegu puudub Venemaal riigikirik.
+1	Praegu	praegu	ADV	D	_	2	advmod	_	_
+2	puudub	puuduma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Venemaal	Vene_maa	PROPN	S	Case=Ade|Number=Sing	2	obl	_	_
+4	riigikirik	riigi_kirik	NOUN	S	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 4
+# text = Ehkki riigi põhiseadus sätestab usuvabaduse, on reaalsuses valitsuse ja Vene Õigeusu Kiriku koostöö väga tihe.
+1	Ehkki	ehkki	SCONJ	J	_	4	mark	_	_
+2	riigi	riik	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
+3	põhiseadus	põhi_seadus	NOUN	S	Case=Nom|Number=Sing	4	nsubj	_	_
+4	sätestab	sätestama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	_	_
+5	usuvabaduse	usu_vabadus	NOUN	S	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	4	punct	_	_
+7	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+8	reaalsuses	reaalsus	NOUN	S	Case=Ine|Number=Sing	16	obl	_	_
+9	valitsuse	valitsus	NOUN	S	Case=Gen|Number=Sing	14	nmod	_	_
+10	ja	ja	CCONJ	J	_	13	cc	_	_
+11	Vene	Vene	PROPN	S	Case=Gen|Number=Sing	12	nmod	_	_
+12	Õigeusu	õige_usk	PROPN	S	Case=Gen|Number=Sing	13	nmod	_	_
+13	Kiriku	Kirik	PROPN	S	Case=Gen|Number=Sing	9	conj	_	_
+14	koostöö	koos_töö	NOUN	S	Case=Nom|Number=Sing	16	nsubj:cop	_	_
+15	väga	väga	ADV	D	_	16	advmod	_	_
+16	tihe	tihe	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	Z	_	16	punct	_	_
+
+# sent_id = 5
+# text = 2002. aastal jõustunud seadused, ja selle 2006. aasta parandused, keelavad äärmusluse.
+1	2002.	2002.	ADJ	N	Case=Ade|Number=Sing|NumForm=Digit|NumType=Ord	2	amod	_	_
+2	aastal	aasta	NOUN	S	Case=Ade|Number=Sing	3	obl	_	_
+3	jõustunud	jõustu=nud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Act	4	acl	_	_
+4	seadused	seadus	NOUN	S	Case=Nom|Number=Plur	12	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Z	_	10	punct	_	_
+6	ja	ja	CCONJ	J	_	10	cc	_	_
+7	selle	see	DET	P	Case=Gen|Number=Sing|PronType=Dem	9	det	_	_
+8	2006.	2006.	ADJ	N	Case=Gen|Number=Sing|NumForm=Digit|NumType=Ord	9	amod	_	_
+9	aasta	aasta	NOUN	S	Case=Gen|Number=Sing	10	nmod	_	_
+10	parandused	parandus	NOUN	S	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Z	_	12	punct	_	_
+12	keelavad	keelama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	äärmusluse	äärmuslus	NOUN	S	Case=Gen|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Z	_	12	punct	_	_
+
+# sent_id = 6
+# text = Kriitikute väitel tagab seadus valitsusele õiguse usuküsimustesse sekkuda.
+1	Kriitikute	kriitik	NOUN	S	Case=Gen|Number=Plur	2	nmod	_	_
+2	väitel	väide	NOUN	S	Case=Ade|Number=Sing	3	obl	_	_
+3	tagab	tagama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	seadus	seadus	NOUN	S	Case=Nom|Number=Sing	3	nsubj	_	_
+5	valitsusele	valitsus	NOUN	S	Case=All|Number=Sing	3	obl	_	_
+6	õiguse	õigus	NOUN	S	Case=Gen|Number=Sing	3	obj	_	_
+7	usuküsimustesse	usu_küsimus	NOUN	S	Case=Ill|Number=Plur	8	obl	_	_
+8	sekkuda	sekkuma	VERB	V	VerbForm=Inf	6	acl	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 7
+# text = Venemaal tähistatavad pühad on samuti tugevalt seotud kirikuga.
+1	Venemaal	Vene_maa	PROPN	S	Case=Ade|Number=Sing	2	obl	_	_
+2	tähistatavad	tähista=tav	ADJ	A	Case=Nom|Degree=Pos|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	pühad	püha	NOUN	S	Case=Nom|Number=Plur	7	obj	_	_
+4	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	samuti	samuti	ADV	D	_	7	advmod	_	_
+6	tugevalt	tugevalt	ADV	D	_	7	advmod	_	_
+7	seotud	siduma	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+8	kirikuga	kirik	NOUN	S	Case=Com|Number=Sing	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 8
+# text = Riiklike tähtpäevade hulka kuuluvad näiteks Jõulupüha, mida erinevalt luterlastest ja katoliiklastest peetakse kaks nädalat hiljem ehk 7. jaanuaril.
+1	Riiklike	riiklik	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	2	amod	_	_
+2	tähtpäevade	täht_päev	NOUN	S	Case=Gen|Number=Plur	4	obl	_	_
+3	hulka	hulka	ADP	K	AdpType=Post	2	case	_	_
+4	kuuluvad	kuuluma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	näiteks	näiteks	ADV	D	_	6	advmod	_	_
+6	Jõulupüha	Jõulu_püha	PROPN	S	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Z	_	13	punct	_	_
+8	mida	mis	PRON	P	Case=Par|Number=Sing|PronType=Int,Rel	13	obj	_	_
+9	erinevalt	erinevalt	ADV	D	_	13	advmod	_	_
+10	luterlastest	luterlane	NOUN	S	Case=Ela|Number=Plur	9	obl	_	_
+11	ja	ja	CCONJ	J	_	12	cc	_	_
+12	katoliiklastest	katoliiklane	NOUN	S	Case=Ela|Number=Plur	10	conj	_	_
+13	peetakse	pidama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	acl:relcl	_	_
+14	kaks	kaks	NUM	N	Case=Nom|Number=Sing|NumForm=Letter|NumType=Card	15	nummod	_	_
+15	nädalat	nädal	NOUN	S	Case=Par|Number=Sing	16	obl	_	_
+16	hiljem	hiljem	ADV	D	_	13	advmod	_	_
+17	ehk	ehk	CCONJ	J	_	19	cc	_	_
+18	7.	7.	ADJ	N	Case=Ade|Number=Sing|NumForm=Digit|NumType=Ord	19	amod	_	_
+19	jaanuaril	jaanuar	NOUN	S	Case=Ade|Number=Sing	16	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 9
+# text = Õigeusklikud tähistavad 9. mail võidupüha, austamaks peapiiskop Nikolause säilmete toomist ja prohvet Jesaja mälestuspäeva.
+1	Õigeusklikud	õigeusklik	NOUN	S	Case=Nom|Number=Plur	2	nsubj	_	_
+2	tähistavad	tähistama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	9.	9.	ADJ	N	Case=Ade|Number=Sing|NumForm=Digit|NumType=Ord	4	amod	_	_
+4	mail	mai	NOUN	S	Case=Ade|Number=Sing	2	obl	_	_
+5	võidupüha	võidu_püha	NOUN	S	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	7	punct	_	_
+7	austamaks	austama	VERB	V	Case=Tra|VerbForm=Sup|Voice=Act	2	advcl	_	_
+8	peapiiskop	pea_piiskop	NOUN	S	Case=Nom|Number=Sing	10	nmod	_	_
+9	Nikolause	Nikolaus	PROPN	S	Case=Gen|Number=Sing	8	appos	_	_
+10	säilmete	säilme	NOUN	S	Case=Gen|Number=Plur	11	nmod	_	_
+11	toomist	toomine	NOUN	S	Case=Par|Number=Sing	7	obj	_	_
+12	ja	ja	CCONJ	J	_	13	cc	_	_
+13	prohvet	prohvet	NOUN	S	Case=Par|Number=Sing	11	conj	_	_
+14	Jesaja	Jesaja	PROPN	S	Case=Gen|Number=Sing	15	nmod	_	_
+15	mälestuspäeva	mälestus_päev	NOUN	S	Case=Par|Number=Sing	13	orphan	_	SpaceAfter=No
+16	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = estonian-edt-ud-2.6-200830
+# udpipe_model_licence = CC BY-NC-SA
+# newdoc
+# newpar
+# sent_id = 1
 # text = Vaata ka
 1	Vaata	vaatama	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 2	ka	ka	ADV	D	_	1	advmod	_	SpaceAfter=No
@@ -3886,22 +4292,4 @@
 # sent_id = 1
 # text = Välislingid
 1	Välislingid	välis_ling	NOUN	S	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Ametlik
-1	Ametlik	ametlik	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
-
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = estonian-edt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
-# newpar
-# sent_id = 1
-# text = Muu
-1	Muu	muu	PRON	P	Case=Nom|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
 

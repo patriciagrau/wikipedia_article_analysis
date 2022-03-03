@@ -409,7 +409,7 @@
 23	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
 # sent_id = 2
-# text = במקומות מסוימים ישנה מחלוקת ציבורית סביב גידול האורז, כמו למשל בארצות הברית ובאוסטרליה, שם מגדלי האורז מנצלים 7% ממשאבי המים של המדינה כדי לייצר רק 0.02% מהתל"ג.
+# text = במקומות מסוימים ישנה מחלוקת ציבורית סביב גידול האורז, כמו למשל בארצות הברית ובאוסטרליה, שם מגדלי האורז מנצלים 7% ממשאבי המים של המדינה כדי לייצר רק 0.02% מהתל"ג[דרוש מקור].
 1-2	במקומות	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
 2	מקומות	מקום	NOUN	NOUN	Gender=Masc|Number=Plur	4	obl	_	_
@@ -452,11 +452,14 @@
 34	רק	רק	ADV	ADV	_	36	det	_	_
 35	0.02	0.02	NUM	NUM	_	36	nummod	_	SpaceAfter=No
 36	%	%	NOUN	NOUN	Gender=Masc|Number=Plur,Sing	33	obj	_	_
-37	מהתל"ג	מהתל"ג	VERB	VERB	Abbr=Yes|Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No
-38	.	.	PUNCT	PUNCT	_	4	punct	_	_
+37	מהתל"ג[	מהתל"ג[	VERB	VERB	Abbr=Yes|Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No
+38	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	36	nmod	_	_
+39	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	38	compound:smixut	_	SpaceAfter=No
+40	]	]	PUNCT	PUNCT	_	36	punct	_	SpaceAfter=No
+41	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # sent_id = 3
-# text = עם זאת, במדינות בהן ישנן עונות גשמים וטייפונים, משמשים שדות האורז דווקא כאמצעי לשמור על מאזן מים יציב וכדי למנוע משיטפונות להגיע לרמה מסוכנת.
+# text = עם זאת, במדינות בהן ישנן עונות גשמים וטייפונים, משמשים שדות האורז דווקא כאמצעי לשמור על מאזן מים יציב וכדי למנוע משיטפונות להגיע לרמה מסוכנת.[דרוש מקור]
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	14	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PUNCT	_	14	punct	_	_
@@ -495,7 +498,10 @@
 30	ל	ל	ADP	ADP	_	31	case	_	_
 31	רמה	רמה	NOUN	NOUN	Gender=Fem|Number=Sing	29	obl	_	_
 32	מסוכנת	מסוכן	ADJ	ADJ	Gender=Fem|Number=Sing	31	amod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n
+33	.[	.[	PUNCT	PUNCT	_	34	punct	_	SpaceAfter=No
+34	דרוש	דרש	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	22	appos	_	_
+35	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	34	nsubj	_	SpaceAfter=No
+36	]	]	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830

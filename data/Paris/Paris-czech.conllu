@@ -197,9 +197,9 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Slovo Paris je ve francouzštině mužského rodu a vyslovuje se , v angličtině .
+# text = Slovo Paris je ve francouzštině mužského rodu a vyslovuje se [paʀi], v angličtině [ˈpæɹɪs].
 1	Slovo	slovo	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	3	nsubj	_	_
-2	Paris	Paris	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	1	nmod	_	_
+2	Paris	Paris	PROPN	NNIS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	je	být	VERB	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 4	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	5	case	_	_
 5	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	3	obl	_	_
@@ -208,40 +208,52 @@
 8	a	a	CCONJ	J^-------------	_	9	cc	_	_
 9	vyslovuje	vyslovovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
 10	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	9	expl:pass	_	SpacesAfter=\s\s
-11	,	,	PUNCT	Z:-------------	_	13	punct	_	_
-12	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	13	case	_	SpacesAfter= 
-13	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	9	obl	_	SpacesAfter=\s\s
-14	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+11	[	[	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+12	paʀi	paʀi	NOUN	NNNXX-----A----	Foreign=Yes|Gender=Neut|Polarity=Pos	9	obj	_	SpaceAfter=No
+13	]	]	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
+14	,	,	PUNCT	Z:-------------	_	16	punct	_	_
+15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	SpacesAfter= 
+16	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	9	conj	_	SpacesAfter=\s\s
+17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	ˈpæɹɪs	ˈpæɹɪs	NOUN	NNIS1-----A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	orphan	_	SpaceAfter=No
+19	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+20	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 2
-# text = Původní latinské jméno města bylo Lutetia nebo Lutetia Parisiorum (ve francouzštině Lutèce , v češtině Lutécie), které později ustoupilo ve prospěch jména Paříž.
+# text = Původní latinské jméno města bylo Lutetia [lutecia] nebo Lutetia Parisiorum (ve francouzštině Lutèce [lytɛs], v češtině Lutécie), které později ustoupilo ve prospěch jména Paříž.
 1	Původní	původní	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	3	amod	_	_
 2	latinské	latinský	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	3	amod	_	_
 3	jméno	jméno	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	0	root	_	_
 4	města	město	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	3	nmod	_	_
 5	bylo	být	AUX	VpNS---XR-AA---	Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	3	cop	_	_
-6	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	3	nsubj	_	SpacesAfter=\s\s
-7	nebo	nebo	CCONJ	J^-------------	_	8	cc	_	_
-8	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|NameType=Com|Number=Sing|Polarity=Pos	6	conj	_	_
-9	Parisiorum	Parisiorum	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|NameType=Com|Polarity=Pos	8	flat:foreign	_	_
-10	(	(	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
-11	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	12	case	_	_
-12	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	6	dep	_	_
-13	Lutèce	Lutèce	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	12	nmod	_	_
-14	,	,	PUNCT	Z:-------------	_	16	punct	_	_
-15	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	16	case	_	_
-16	češtině	čeština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	12	conj	_	_
-17	Lutécie	Lutécie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	16	nmod	_	SpaceAfter=No
-18	)	)	PUNCT	Z:-------------	_	12	punct	_	SpaceAfter=No
-19	,	,	PUNCT	Z:-------------	_	22	punct	_	_
-20	které	který	DET	P4NS1----------	Case=Nom|Gender=Neut|Number=Sing|PronType=Int,Rel	22	nsubj	_	_
-21	později	pozdě	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	22	advmod	_	_
-22	ustoupilo	ustoupit	VERB	VpNS---XR-AA---	Aspect=Perf|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
-23	ve	v	ADP	RV--4----------	AdpType=Voc|Case=Acc	25	case	_	_
-24	prospěch	prospěch	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	23	fixed	_	_
-25	jména	jméno	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	22	obl	_	_
-26	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	25	nmod	_	SpaceAfter=No
-27	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+6	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	3	nsubj	_	_
+7	[	[	PUNCT	Z:-------------	_	8	punct	_	SpaceAfter=No
+8	lutecia	lutecia	NOUN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	6	nmod	_	SpaceAfter=No
+9	]	]	PUNCT	Z:-------------	_	8	punct	_	_
+10	nebo	nebo	CCONJ	J^-------------	_	11	cc	_	_
+11	Lutetia	Lutetia	PROPN	NNFS1-----A----	Case=Nom|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	6	conj	_	_
+12	Parisiorum	Parisiorum	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|NameType=Com|Polarity=Pos	11	flat:foreign	_	_
+13	(	(	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+14	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	15	case	_	_
+15	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	11	dep	_	_
+16	Lutèce	Lutèce	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	15	nmod	_	_
+17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	lytɛs	lytɛs	NOUN	AAXXX----1A----	Foreign=Yes	16	appos	_	SpaceAfter=No
+19	]	]	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+20	,	,	PUNCT	Z:-------------	_	22	punct	_	_
+21	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	22	case	_	_
+22	češtině	čeština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	15	conj	_	_
+23	Lutécie	Lutécie	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	22	nmod	_	SpaceAfter=No
+24	)	)	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+25	,	,	PUNCT	Z:-------------	_	28	punct	_	_
+26	které	který	DET	P4NS1----------	Case=Nom|Gender=Neut|Number=Sing|PronType=Int,Rel	28	nsubj	_	_
+27	později	pozdě	ADV	Dg-------2A----	Degree=Cmp|Polarity=Pos	28	advmod	_	_
+28	ustoupilo	ustoupit	VERB	VpNS---XR-AA---	Aspect=Perf|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
+29	ve	v	ADP	RV--4----------	AdpType=Voc|Case=Acc	31	case	_	_
+30	prospěch	prospěch	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	29	fixed	_	_
+31	jména	jméno	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	28	obl	_	_
+32	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	31	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 # sent_id = 3
 # text = Název je odvozen od galského kmene Parisiů, jehož jméno může pocházet z keltsko-galského slova parios, „kotel“.
@@ -307,7 +319,7 @@
 25	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 6
-# text = Od počátku 20. století byla Paříž známá i pod slangovým jménem Paname .
+# text = Od počátku 20. století byla Paříž známá i pod slangovým jménem Paname [panam].
 1	Od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	2	case	_	_
 2	počátku	počátek	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	8	obl	_	_
 3	20	20	NUM	C=-------------	NumForm=Digit|NumType=Card	5	nummod	_	SpaceAfter=No
@@ -320,8 +332,11 @@
 10	pod	pod	ADP	RR--7----------	AdpType=Prep|Case=Ins	12	case	_	_
 11	slangovým	slangový	ADJ	AANS7----1A----	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	12	amod	_	_
 12	jménem	jméno	NOUN	NNNS7-----A----	Case=Ins|Gender=Neut|Number=Sing|Polarity=Pos	8	obl	_	_
-13	Paname	Paname	PROPN	NNNXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	12	nmod	_	_
-14	.	.	PUNCT	Z:-------------	_	8	punct	_	_
+13	Paname	Paname	PROPN	NNMS1-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Number=Sing|Polarity=Pos	12	nmod	_	_
+14	[	[	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+15	panam	panam	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	13	appos	_	SpaceAfter=No
+16	]	]	PUNCT	Z:-------------	_	15	punct	_	SpaceAfter=No
+17	.	.	PUNCT	Z:-------------	_	8	punct	_	_
 
 # sent_id = 7
 # text = Toto lidové označení se objevuje především v písních, jak dokládá např. skladba Amoureux de Paname (Zamilovaný do Panamy, tj. Paříže) Renauda Séchana z roku 1975 „Moi, j'suis amoureux de Paname, du béton et du macadam…
@@ -373,8 +388,8 @@
 46	…	…	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 
 # sent_id = 8
-# text = “ („Jsem zamilovaný do Paříže, betonové a makadamové…“) nebo píseň Loin de Paname (Daleko od Panamy, tj. Paříže) použitá ve filmu Paříž 36, v roce 2010 nominovaná na filmovou cenu Oscar.
-1	“	“	PUNCT	NNNXX-----A----	_	0	root	_	_
+# text = “ („Jsem zamilovaný do Paříže, betonové a makadamové…“) nebo píseň Loin de Paname (Daleko od Panamy, tj.
+1	“	“	PUNCT	Z:-------------	_	0	root	_	_
 2	(	(	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 3	„	„	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 4	Jsem	být	AUX	VB-S---1P-AA---	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
@@ -384,39 +399,42 @@
 8	,	,	PUNCT	Z:-------------	_	9	punct	_	_
 9	betonové	betonový	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	5	conj	_	_
 10	a	a	CCONJ	J^-------------	_	11	cc	_	_
-11	makadamové	makadamový	ADJ	AANS1----1A----	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|Polarity=Pos	9	conj	_	SpaceAfter=No
+11	makadamové	makadamový	ADJ	AANS1----1A----	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	9	conj	_	SpaceAfter=No
 12	…	…	PUNCT	Z:-------------	_	5	conj	_	SpaceAfter=No
-13	“	“	SYM	Z:-------------	Abbr=Yes	12	nmod	_	SpaceAfter=No
+13	“	“	SYM	Xx-------------	Abbr=Yes	12	nmod	_	SpaceAfter=No
 14	)	)	PUNCT	Z:-------------	_	5	punct	_	_
 15	nebo	nebo	CCONJ	J^-------------	_	16	cc	_	_
-16	píseň	píseň	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	conj	_	_
+16	píseň	píseň	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	5	conj	_	_
 17	Loin	loin	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	nmod	_	_
 18	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	17	flat:foreign	_	_
 19	Paname	Paname	PROPN	NNNXX-----A----	Foreign=Yes|Polarity=Pos	17	flat:foreign	_	_
 20	(	(	PUNCT	Z:-------------	_	21	punct	_	SpaceAfter=No
-21	Daleko	daleko	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	17	dep	_	_
+21	Daleko	daleko	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	16	dep	_	_
 22	od	od	ADP	RR--2----------	AdpType=Prep|Case=Gen	23	case	_	_
 23	Panamy	Panama	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	21	obl	_	SpaceAfter=No
-24	,	,	PUNCT	Z:-------------	_	27	punct	_	_
-25	tj	tj	CCONJ	J^------------8	Abbr=Yes	27	cc	_	SpaceAfter=No
-26	.	.	PUNCT	Z:-------------	_	27	punct	_	_
-27	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	17	appos	_	SpaceAfter=No
-28	)	)	PUNCT	Z:-------------	_	21	punct	_	_
-29	použitá	použitý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
-30	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	31	case	_	_
-31	filmu	film	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	29	obl	_	_
-32	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	31	nmod	_	SpacesAfter= 
-33	36	36	NUM	C=-------------	NumForm=Digit|NumType=Card	32	nummod	_	SpaceAfter=No
-34	,	,	PUNCT	Z:-------------	_	38	punct	_	_
-35	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	36	case	_	_
-36	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	38	obl	_	_
-37	2010	2010	NUM	C=-------------	NumForm=Digit|NumType=Card	36	nummod	_	_
-38	nominovaná	nominovaný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	16	amod	_	_
-39	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	41	case	_	_
-40	filmovou	filmový	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	41	amod	_	_
-41	cenu	cena	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	38	obl:arg	_	_
-42	Oscar	Oscar	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing|Polarity=Pos	41	nmod	_	SpaceAfter=No
-43	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
+24	,	,	PUNCT	Z:-------------	_	21	punct	_	_
+25	tj	tj	CCONJ	J^------------8	Abbr=Yes	21	cc	_	SpaceAfter=No
+26	.	.	PUNCT	Z:-------------	_	1	punct	_	_
+
+# sent_id = 9
+# text = Paříže) použitá ve filmu Paříž 36, v roce 2010 nominovaná na filmovou cenu Oscar.
+1	Paříže	Paříž	PROPN	NNFP1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Plur|Polarity=Pos	0	root	_	SpaceAfter=No
+2	)	)	PUNCT	Z:-------------	_	1	punct	_	_
+3	použitá	použitý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	1	amod	_	_
+4	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	5	case	_	_
+5	filmu	film	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	3	obl	_	_
+6	Paříž	Paříž	PROPN	NNFS1-----A----	Case=Nom|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	5	nmod	_	SpacesAfter= 
+7	36	36	NUM	C=-------------	NumForm=Digit|NumType=Card	6	nummod	_	SpaceAfter=No
+8	,	,	PUNCT	Z:-------------	_	10	punct	_	_
+9	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	10	case	_	_
+10	roce	rok	NOUN	NNIS6-----A---1	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	3	conj	_	_
+11	2010	2010	NUM	C=-------------	NumForm=Digit|NumType=Card	10	nummod	_	_
+12	nominovaná	nominovaný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	3	conj	_	_
+13	na	na	ADP	RR--4----------	AdpType=Prep|Case=Acc	15	case	_	_
+14	filmovou	filmový	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	15	amod	_	_
+15	cenu	cena	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Number=Sing|Polarity=Pos	12	obl:arg	_	_
+16	Oscar	Oscar	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	15	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Z:-------------	_	1	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = czech-pdt-ud-2.6-200830
@@ -492,7 +510,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Obyvatelům Paříže se říká Pařížané, ve francouzštině Parisiens a v angličtině Parisians nebo .
+# text = Obyvatelům Paříže se říká Pařížané, ve francouzštině Parisiens [paʀizjɛ̃] a v angličtině Parisians [pəˈɹɪzjənz] nebo [pəˈɹiː.ʒn̩z].
 1	Obyvatelům	obyvatel	NOUN	NNMP3-----A----	Animacy=Anim|Case=Dat|Gender=Masc|Number=Plur|Polarity=Pos	4	obl:arg	_	_
 2	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	4	expl:pass	_	_
@@ -501,37 +519,51 @@
 6	,	,	PUNCT	Z:-------------	_	8	punct	_	_
 7	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	8	case	_	_
 8	francouzštině	francouzština	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	4	conj	_	_
-9	Parisiens	Parisien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	orphan	_	SpacesAfter=\s\s
-10	a	a	CCONJ	J^-------------	_	8	cc	_	_
-11	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	12	case	_	_
-12	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	8	orphan	_	_
-13	Parisians	Parisians	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	orphan	_	SpacesAfter=\s\s
-14	nebo	nebo	CCONJ	J^-------------	_	13	cc	_	_
-15	.	.	PUNCT	Z:-------------	_	4	punct	_	_
+9	Parisiens	Parisien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	8	nmod	_	_
+10	[	[	PUNCT	Z:-------------	_	11	punct	_	SpaceAfter=No
+11	paʀizjɛ̃	paʀizjɛ̃	NOUN	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	9	appos	_	SpaceAfter=No
+12	]	]	PUNCT	Z:-------------	_	11	punct	_	_
+13	a	a	CCONJ	J^-------------	_	15	cc	_	_
+14	v	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	15	case	_	_
+15	angličtině	angličtina	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	8	conj	_	_
+16	Parisians	Parisians	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	15	nmod	_	_
+17	[	[	PUNCT	Z:-------------	_	18	punct	_	SpaceAfter=No
+18	pəˈɹɪzjənz	pəˈɹɪzjənz	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	16	appos	_	SpaceAfter=No
+19	]	]	PUNCT	Z:-------------	_	18	punct	_	_
+20	nebo	nebo	CCONJ	J^-------------	_	22	cc	_	_
+21	[	[	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+22	pəˈɹiː	pəˈɹiː	NOUN	AAXXX----1A----	Abbr=Yes|Degree=Pos|Foreign=Yes|Polarity=Pos	16	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+24	ʒn̩z	ʒn̩z	NOUN	NNNXX-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Polarity=Pos	22	flat:foreign	_	SpaceAfter=No
+25	]	]	PUNCT	Z:-------------	_	22	punct	_	SpaceAfter=No
+26	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
 # sent_id = 2
-# text = Výraz Parigot („Pařížan“ s výslovností ), někdy používaný ve francouzském slangu, je často pokládán za hanlivý.
-1	Výraz	výraz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	18	nsubj:pass	_	_
+# text = Výraz Parigot („Pařížan“ s výslovností [paʀigo]), někdy používaný ve francouzském slangu, je často pokládán za hanlivý.
+1	Výraz	výraz	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	21	nsubj:pass	_	_
 2	Parigot	parigot	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|NameType=Pro|Number=Sing|Polarity=Pos	1	nmod	_	_
 3	(	(	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
 4	„	„	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-5	Pařížan“	Pařížan“	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	2	appos	_	_
+5	Pařížan“	Pařížan“	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos	1	appos	_	_
 6	s	s	ADP	RR--7----------	AdpType=Prep|Case=Ins	7	case	_	_
 7	výslovností	výslovnost	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	5	nmod	_	_
-8	)	)	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
-9	,	,	PUNCT	Z:-------------	_	11	punct	_	_
-10	někdy	někdy	ADV	Db-------------	PronType=Ind	11	advmod	_	_
-11	používaný	používaný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	1	amod	_	_
-12	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	14	case	_	_
-13	francouzském	francouzský	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	14	amod	_	_
-14	slangu	slang	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	11	obl	_	SpaceAfter=No
-15	,	,	PUNCT	Z:-------------	_	11	punct	_	_
-16	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux:pass	_	_
-17	často	často	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	18	advmod	_	_
-18	pokládán	pokládaný	ADJ	VsYS---XX-AP---	Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-19	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	20	case	_	_
-20	hanlivý	hanlivý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	18	obl:arg	_	SpaceAfter=No
-21	.	.	PUNCT	Z:-------------	_	18	punct	_	_
+8	[	[	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	paʀigo	paʀigo	NOUN	NNNS1-----A----	Case=Nom|Foreign=Yes|Gender=Neut|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
+10	]	]	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+11	)	)	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Z:-------------	_	14	punct	_	_
+13	někdy	někdy	ADV	Db-------------	PronType=Ind	14	advmod	_	_
+14	používaný	používaný	ADJ	AAIS1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	1	amod	_	_
+15	ve	v	ADP	RV--6----------	AdpType=Voc|Case=Loc	17	case	_	_
+16	francouzském	francouzský	ADJ	AAIS6----1A----	Animacy=Inan|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	17	amod	_	_
+17	slangu	slang	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	14	obl	_	SpaceAfter=No
+18	,	,	PUNCT	Z:-------------	_	14	punct	_	_
+19	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	21	aux:pass	_	_
+20	často	často	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	21	advmod	_	_
+21	pokládán	pokládaný	ADJ	VsYS---XX-AP---	Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+22	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	23	case	_	_
+23	hanlivý	hanlivý	ADJ	AAIS4----1A----	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	21	obl:arg	_	SpaceAfter=No
+24	.	.	PUNCT	Z:-------------	_	21	punct	_	_
 
 # sent_id = 3
 # text = Ovšem Parigot může mít i kladný význam, jako například v písni Mimile (un gars d'Ménilmontant) od Maurice Chevaliera: „C'est un gars d'Ménilmontant, un vrai p'tit Parigot…
@@ -600,7 +632,7 @@
 3	.	.	PUNCT	Z:-------------	_	1	punct	_	_
 
 # sent_id = 6
-# text = Lokálně jsou obyvatelé pařížských předměstí hovorově nazýváni banlieusards , tj. obyvatelé banlieue („předměstí“).
+# text = Lokálně jsou obyvatelé pařížských předměstí hovorově nazýváni banlieusards [bɑ̃ljøzaʀ], tj. obyvatelé banlieue („předměstí“).
 1	Lokálně	lokálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	7	advmod	_	_
 2	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
 3	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	7	nsubj:pass	_	_
@@ -608,75 +640,81 @@
 5	předměstí	předměstí	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	3	nmod	_	_
 6	hovorově	hovorově	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	7	advmod	_	_
 7	nazýváni	nazývaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-8	banlieusards	banlieusard	NOUN	NNMPX-----A----	Foreign=Yes|Gender=Fem|Number=Plur|Polarity=Pos	7	obj	_	_
-9	,	,	PUNCT	Z:-------------	_	12	punct	_	_
-10	tj	tj	CCONJ	J^------------8	Abbr=Yes	12	cc	_	SpaceAfter=No
-11	.	.	PUNCT	Z:-------------	_	12	punct	_	_
-12	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	8	appos	_	_
-13	banlieue	banlieue	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	12	nmod	_	SpacesAfter=\s\s
-14	(	(	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
-15	„	„	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
-16	předměstí“	předměstí“	NOUN	NNNP2-----A----	Case=Gen|Gender=Neut|Number=Plur|Polarity=Pos	13	appos	_	SpaceAfter=No
-17	)	)	PUNCT	Z:-------------	_	16	punct	_	SpaceAfter=No
-18	.	.	PUNCT	Z:-------------	_	7	punct	_	_
+8	banlieusards	banlieusard	ADJ	NNMPX-----A----	Foreign=Yes|Gender=Fem|Number=Plur|Polarity=Pos	7	obj	_	_
+9	[	[	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+10	bɑ̃ljøzaʀ	bɑ̃ljøzaʀ	NOUN	NNIS1-----A----	Animacy=Inan|Foreign=Yes|Gender=Masc|Polarity=Pos	8	flat:foreign	_	SpaceAfter=No
+11	]	]	PUNCT	Z:-------------	_	10	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Z:-------------	_	15	punct	_	_
+13	tj	tj	CCONJ	J^------------8	Abbr=Yes	15	cc	_	SpaceAfter=No
+14	.	.	PUNCT	Z:-------------	_	15	punct	_	_
+15	obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	8	appos	_	_
+16	banlieue	banlieue	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	15	nmod	_	SpacesAfter=\s\s
+17	(	(	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+18	„	„	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+19	předměstí“	předměstí“	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Number=Sing|Polarity=Pos	16	appos	_	SpaceAfter=No
+20	)	)	PUNCT	Z:-------------	_	19	punct	_	SpaceAfter=No
+21	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
 # sent_id = 7
-# text = Obyvatelé regionu
-1	Obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	0	root	_	_
+# text = Obyvatelé regionu Île-de-France (oblast Paříže) jsou oficiálně označováni Franciliens [fʀɑ̃siljɛ̃].
+1	Obyvatelé	obyvatel	NOUN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	14	nsubj:pass	_	_
 2	regionu	region	NOUN	NNIS2-----A----	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Polarity=Pos	1	nmod	_	_
+3	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	5	amod	_	SpaceAfter=No
+4	-	-	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+5	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	2	nmod	_	SpaceAfter=No
+6	-	-	PUNCT	Z:-------------	_	5	punct	_	SpaceAfter=No
+7	France	France	PROPN	NNFXX-----A----	Animacy=Inan|Gender=Masc|NameType=Geo|Polarity=Pos	2	nmod	_	_
+8	(	(	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
+9	oblast	oblast	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	appos	_	_
+10	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	9	nmod	_	SpaceAfter=No
+11	)	)	PUNCT	Z:-------------	_	9	punct	_	_
+12	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux:pass	_	_
+13	oficiálně	oficiálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	14	advmod	_	_
+14	označováni	označovaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+15	Franciliens	Francilien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	14	obj	_	_
+16	[	[	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+17	fʀɑ̃siljɛ̃	fʀɑ̃siljɛ̃	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	15	appos	_	SpaceAfter=No
+18	]	]	PUNCT	Z:-------------	_	17	punct	_	SpaceAfter=No
+19	.	.	PUNCT	Z:-------------	_	14	punct	_	_
 
 # sent_id = 8
-# text = Île-de-France (oblast Paříže) jsou oficiálně označováni Franciliens .
-1	Île	île	ADJ	AAXXX----1A----	Degree=Pos|Foreign=Yes|Polarity=Pos	12	nsubj:pass	_	SpaceAfter=No
-2	-	-	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
-3	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
-4	-	-	PUNCT	Z:-------------	_	1	punct	_	SpaceAfter=No
-5	France	France	PROPN	NNFXX-----A----	Animacy=Inan|Gender=Masc|NameType=Geo|Polarity=Pos	1	flat:foreign	_	_
-6	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-7	oblast	oblast	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	1	appos	_	_
-8	Paříže	Paříž	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	7	nmod	_	SpaceAfter=No
-9	)	)	PUNCT	Z:-------------	_	7	punct	_	_
-10	jsou	být	AUX	VB-P---3P-AA---	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux:pass	_	_
-11	oficiálně	oficiálně	ADV	Dg-------1A----	Degree=Pos|Polarity=Pos	12	advmod	_	_
-12	označováni	označovaný	ADJ	VsMP---XX-AP---	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
-13	Franciliens	Francilien	PROPN	NNMPX-----A----	Animacy=Anim|Foreign=Yes|Gender=Masc|NameType=Com|Number=Plur|Polarity=Pos	12	obj	_	_
-14	.	.	PUNCT	Z:-------------	_	12	punct	_	_
-
-# sent_id = 9
-# text = Pařížané o obyvatelích z oblastí mimo Île-de-France mluví jako o provinciaux (tj. z provincie), čímž naznačují, že zbytek Francie pokládají za la province.
-1	Pařížané	Pařížan	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	12	nsubj	_	_
+# text = Pařížané o obyvatelích z oblastí mimo
+1	Pařížané	Pařížan	PROPN	NNMP1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Nat|Number=Plur|Polarity=Pos	0	root	_	_
 2	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	3	case	_	_
-3	obyvatelích	obyvatel	NOUN	NNMP6-----A----	Animacy=Anim|Case=Loc|Gender=Masc|Number=Plur|Polarity=Pos	12	obl:arg	_	_
+3	obyvatelích	obyvatel	NOUN	NNMP6-----A----	Animacy=Anim|Case=Loc|Gender=Masc|Number=Plur|Polarity=Pos	1	dep	_	_
 4	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	5	case	_	_
 5	oblastí	oblast	NOUN	NNFP2-----A----	Case=Gen|Gender=Fem|Number=Plur|Polarity=Pos	3	nmod	_	_
-6	mimo	mimo	ADP	RR--4----------	AdpType=Prep|Case=Acc	11	case	_	_
-7	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	11	amod	_	SpaceAfter=No
-8	-	-	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
-9	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	5	nmod	_	SpaceAfter=No
-10	-	-	PUNCT	Z:-------------	_	9	punct	_	SpaceAfter=No
-11	France	France	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	5	nmod	_	_
-12	mluví	mluvit	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-13	jako	jako	SCONJ	J,-------------	_	15	mark	_	_
-14	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	15	case	_	SpacesAfter= 
-15	provinciaux	provinciaux	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	3	xcomp	_	_
-16	(	(	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
-17	tj	tj	CCONJ	J^------------8	Abbr=Yes	20	cc	_	SpaceAfter=No
-18	.	.	PUNCT	Z:-------------	_	20	punct	_	_
-19	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	20	case	_	_
-20	provincie	provincie	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	15	appos	_	SpaceAfter=No
-21	)	)	PUNCT	Z:-------------	_	20	punct	_	SpaceAfter=No
-22	,	,	PUNCT	Z:-------------	_	24	punct	_	_
-23	čímž	což	PRON	PE--7----------	Case=Ins|PronType=Rel	24	obl	_	_
-24	naznačují	naznačovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	SpaceAfter=No
-25	,	,	PUNCT	Z:-------------	_	29	punct	_	_
-26	že	že	SCONJ	J,-------------	_	29	mark	_	_
-27	zbytek	zbytek	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	29	obj	_	_
-28	Francie	Francie	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	27	nmod	_	_
-29	pokládají	pokládat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	24	ccomp	_	_
-30	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	31	case	_	_
-31	la	le	ADJ	AAFSX----1A----	Degree=Pos|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	29	obl:arg	_	_
-32	province	province	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	31	flat:foreign	_	SpaceAfter=No
-33	.	.	PUNCT	Z:-------------	_	12	punct	_	_
+6	mimo	mimo	ADP	RR--4----------	AdpType=Prep|Case=Acc	5	case	_	_
+
+# sent_id = 9
+# text = Île-de-France mluví jako o provinciaux (tj. z provincie), čímž naznačují, že zbytek Francie pokládají za la province.
+1	Île	île	ADJ	AAXXX----1A----	Degree=Pos|NameType=Geo|Polarity=Pos	5	amod	_	SpaceAfter=No
+2	-	-	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+3	de	de	ADP	RR--1----------	AdpType=Prep|Case=Nom|Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
+4	-	-	PUNCT	Z:-------------	_	3	punct	_	SpaceAfter=No
+5	France	France	PROPN	NNFXX-----A----	Gender=Neut|NameType=Geo|Polarity=Pos	6	nsubj	_	_
+6	mluví	mluvit	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	jako	jako	SCONJ	J,-------------	_	9	mark	_	_
+8	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	9	case	_	SpacesAfter= 
+9	provinciaux	provinciaux	NOUN	NNNXX-----A----	Case=Loc|Gender=Fem|Number=Sing|Polarity=Pos	6	dep	_	_
+10	(	(	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+11	tj	tj	CCONJ	J^------------8	Abbr=Yes	14	cc	_	SpaceAfter=No
+12	.	.	PUNCT	Z:-------------	_	14	punct	_	_
+13	z	z	ADP	RR--2----------	AdpType=Prep|Case=Gen	14	case	_	_
+14	provincie	provincie	NOUN	NNFS2-----A----	Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos	9	appos	_	SpaceAfter=No
+15	)	)	PUNCT	Z:-------------	_	14	punct	_	SpaceAfter=No
+16	,	,	PUNCT	Z:-------------	_	18	punct	_	_
+17	čímž	což	PRON	PE--7----------	Case=Ins|PronType=Rel	18	obl	_	_
+18	naznačují	naznačovat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+19	,	,	PUNCT	Z:-------------	_	23	punct	_	_
+20	že	že	SCONJ	J,-------------	_	23	mark	_	_
+21	zbytek	zbytek	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Polarity=Pos	23	obj	_	_
+22	Francie	Francie	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Geo|Number=Sing|Polarity=Pos	21	nmod	_	_
+23	pokládají	pokládat	VERB	VB-P---3P-AA---	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	ccomp	_	_
+24	za	za	ADP	RR--4----------	AdpType=Prep|Case=Acc	25	case	_	_
+25	la	le	ADJ	AAFSX----1A----	Degree=Pos|Foreign=Yes|Gender=Fem|Number=Sing|Polarity=Pos	26	amod	_	_
+26	province	province	NOUN	NNFXX-----A----	Foreign=Yes|Gender=Fem|Polarity=Pos	23	obl:arg	_	SpaceAfter=No
+27	.	.	PUNCT	Z:-------------	_	6	punct	_	_
 
 # sent_id = 10
 # text = Tento výraz je někdy považován za hanlivý.

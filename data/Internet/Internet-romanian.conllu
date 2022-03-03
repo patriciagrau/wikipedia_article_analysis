@@ -1673,23 +1673,29 @@
 31	teoretic	teoretic	ADV	Rgp	Degree=Pos	32	advmod	_	_
 32	nelimitate	nelimitat	ADJ	Afpfp-n	Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	30	amod	_	_
 33	pentru	pentru	ADP	Spsa	AdpType=Prep|Case=Acc	34	case	_	_
-34	realizarea	realizare	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	32	obl	_	_
+34	realizarea	realizare	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	28	nmod	_	_
 35	unei	un	DET	Tifso	Case=Dat,Gen|Gender=Fem|Number=Sing|PronType=Ind	36	det	_	_
 36	legături	legătură	NOUN	Ncfson	Case=Dat,Gen|Definite=Ind|Gender=Fem|Number=Sing	34	nmod	_	_
 37	între	între	ADP	Spsa	AdpType=Prep|Case=Acc	38	case	_	_
 38	cercetarea	cercetare	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	36	nmod	_	_
 39	științifică	științific	ADJ	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	38	amod	_	_
 40	și	și	CCONJ	Crssp	Polarity=Pos	41	cc	_	_
-41	implementarea	implementare	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	38	conj	_	_
+41	implementarea	implementare	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	34	conj	_	_
 42	tehnologică	tehnologic	ADJ	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	41	amod	_	_
 43	militară	militar	ADJ	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	41	amod	_	_
 44	a	al	DET	Tsfs	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	45	det	_	_
-45	acesteia	acesta	PRON	Pd3fso	Case=Dat,Gen|Gender=Fem|Number=Sing|Person=3|PronType=Dem	41	nmod	_	SpaceAfter=No
-46	.	.	PUNCT	PERIOD	_	2	punct	_	SpaceAfter=No
+45	acesteia.	aceste.	PRON	Pd3fso	Case=Dat,Gen|Gender=Fem|Number=Sing|Person=3|PronType=Dem	41	nmod	_	SpaceAfter=No
 
 # sent_id = 7
 # text = ”
-1	”	”	PUNCT	DBLQ	_	0	punct	_	SpacesAfter=\n
+1	”	”	PUNCT	DBLQ	_	0	punct	_	SpaceAfter=No
+
+# sent_id = 8
+# text = [necesită citare]
+1	[	[	PUNCT	LSQR	_	2	punct	_	SpaceAfter=No
+2	necesită	necesita	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter= 
+3	citare	citare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
+4	]	]	PUNCT	RSQR	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = romanian-rrt-ud-2.6-200830
@@ -2613,7 +2619,7 @@
 42	.	.	PUNCT	PERIOD	_	7	punct	_	_
 
 # sent_id = 2
-# text = Enorma creștere a webului a început aproape dintr-o dată: în iunie 1993 erau înregistrate 130 servere web, iar în 1994 erau deja peste 11.500 de servere.
+# text = Enorma creștere a webului a început aproape dintr-o dată: în iunie 1993 erau înregistrate 130 servere web, iar în 1994 erau deja peste 11.500 de servere.[necesită citare]
 1	Enorma	enorm	ADJ	Afpfsry	Case=Acc,Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
 2	creștere	creștere	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	6	nsubj	_	_
 3	a	al	DET	Tsfs	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_
@@ -2633,17 +2639,19 @@
 17	130	130	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	18	nummod	_	_
 18	servere	server	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	16	nsubj:pass	_	_
 19	web	web	NOUN	Yn	Abbr=Yes	18	nmod	_	SpaceAfter=No
-20	,	,	PUNCT	COMMA	_	24	punct	_	_
-21	iar	iar	ADV	Rc	_	24	cc	_	_
+20	,	,	PUNCT	COMMA	_	30	punct	_	_
+21	iar	iar	ADV	Rc	_	30	cc	_	_
 22	în	în	ADP	Spsa	AdpType=Prep|Case=Acc	23	case	_	_
-23	1994	1994	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	24	nummod	_	_
-24	erau	fi	VERB	Vmii3p	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	6	conj	_	_
+23	1994	1994	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	30	nummod	_	_
+24	erau	fi	AUX	Vmii3p	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	30	cop	_	_
 25	deja	deja	ADV	Rgp	Degree=Pos	29	advmod	_	_
 26	peste	peste	ADP	Spsa	AdpType=Prep|Case=Acc	27	case	_	_
 27	11.500	11.500	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	29	nummod	_	_
 28	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	27	case	_	_
-29	servere	server	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	24	nsubj	_	SpaceAfter=No
-30	.	.	PUNCT	PERIOD	_	6	punct	_	SpacesAfter=\n
+29	servere.[	servere.[	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	30	nsubj	_	SpaceAfter=No
+30	necesită	necesita	VERB	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	6	conj	_	SpacesAfter= 
+31	citare	citare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	30	obj	_	SpaceAfter=No
+32	]	]	PUNCT	RSQR	_	6	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = romanian-rrt-ud-2.6-200830

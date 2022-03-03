@@ -72,7 +72,7 @@
 21	.	.	PUNCT	PUNCT	PunctType=Peri	13	punct	_	_
 
 # sent_id = 3
-# text = Es la figura central del cristianismo y una de las más influyentes de la historia.
+# text = Es la figura central del cristianismo y una de las más influyentes de la historia.[cita requerida]
 1	Es	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	la	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	figura	figura	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
@@ -88,7 +88,11 @@
 13	de	de	ADP	ADP	AdpType=Prep	15	case	_	_
 14	la	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	historia	historia	NOUN	NOUN	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	PUNCT	PunctType=Peri	3	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	PUNCT	PunctType=Peri	3	punct	_	SpaceAfter=No
+17	[	[	PUNCT	PUNCT	PunctType=Quot	18	punct	_	SpaceAfter=No
+18	cita	cita	NOUN	NOUN	Gender=Fem|Number=Sing	3	appos	_	SpacesAfter= 
+19	requerida	requerido	ADJ	ADJ	Gender=Fem|Number=Sing|VerbForm=Part	18	amod	_	SpaceAfter=No
+20	]	]	PUNCT	PUNCT	PunctType=Peri	3	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = spanish-ancora-ud-2.6-200830
@@ -13457,7 +13461,7 @@
 24	.	.	PUNCT	PUNCT	PunctType=Peri	16	punct	_	_
 
 # sent_id = 2
-# text = Juan el Bautista es un personaje relativamente bien conocido gracias a la información que de él proporciona Flavio Josefo, quien afirma que era «un hombre de bien que incitaba a los judíos a ser justos los unos con los otros y píos hacia Dios, y a ir juntos al bautismo» (Antigüedades judías, 18, 116-119) y relata que Herodes Antipas lo ejecutó por miedo a que provocase una revuelta.
+# text = Juan el Bautista es un personaje relativamente bien conocido gracias a la información que de él proporciona Flavio Josefo, quien afirma que era «un hombre de bien que incitaba a los judíos [...] a ser justos los unos con los otros y píos hacia Dios, y a ir juntos al bautismo» (Antigüedades judías, 18, 116-119) y relata que Herodes Antipas lo ejecutó por miedo a que provocase una revuelta.
 1	Juan	Juan	PROPN	PROPN	_	6	nsubj	_	_
 2	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Bautista	Bautista	PROPN	PROPN	_	1	flat	_	_
@@ -13490,49 +13494,52 @@
 30	incitaba	incitar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl	_	_
 31	a	a	ADP	ADP	AdpType=Prep	33	case	_	_
 32	los	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-33	judíos	judío	NOUN	NOUN	Gender=Masc|Number=Plur	30	iobj	_	SpacesAfter=\s\s
-34	a	a	ADP	ADP	AdpType=Prep	36	mark	_	_
-35	ser	ser	AUX	AUX	VerbForm=Inf	36	cop	_	_
-36	justos	justo	ADJ	ADJ	Gender=Masc|Number=Plur	30	xcomp	_	_
-37	los	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
-38	unos	uno	PRON	PRON	Gender=Masc|Number=Plur|PronType=Ind	36	nsubj	_	_
-39	con	con	ADP	ADP	AdpType=Prep	41	case	_	_
+33	judíos	judío	NOUN	NOUN	Gender=Masc|Number=Plur	30	obj	_	_
+34	[	[	PUNCT	PUNCT	PunctType=Quot	39	punct	_	SpaceAfter=No
+35	...	...	PUNCT	PUNCT	PunctType=Comm	39	punct	_	SpaceAfter=No
+36	]	]	PUNCT	PUNCT	PunctType=Quot	39	punct	_	_
+37	a	a	ADP	ADP	AdpType=Prep	39	mark	_	_
+38	ser	ser	AUX	AUX	VerbForm=Inf	39	cop	_	_
+39	justos	justo	ADJ	ADJ	Gender=Masc|Number=Plur	30	xcomp	_	_
 40	los	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_
-41	otros	otro	PRON	PRON	Gender=Masc|Number=Plur|PronType=Ind	38	nmod	_	_
-42	y	y	CCONJ	CCONJ	_	43	cc	_	_
-43	píos	pío	ADJ	ADJ	Gender=Masc|Number=Plur	36	conj	_	_
-44	hacia	hacia	ADP	ADP	AdpType=Prep	45	case	_	_
-45	Dios	Dios	PROPN	PROPN	_	43	nmod	_	SpaceAfter=No
-46	,	,	PUNCT	PUNCT	PunctType=Comm	49	punct	_	_
-47	y	y	CCONJ	CCONJ	_	49	cc	_	_
-48	a	a	ADP	ADP	AdpType=Prep	49	mark	_	_
-49	ir	ir	VERB	VERB	VerbForm=Inf	36	conj	_	_
-50	juntos	junto	ADJ	ADJ	Gender=Masc|Number=Plur	49	obj	_	_
-51	al	al	ADP	ADP	AdpType=Preppron	52	case	_	_
-52	bautismo»	bautismo»	NOUN	NOUN	Gender=Masc|Number=Sing	49	obl	_	_
-53	(	(	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	54	punct	_	SpaceAfter=No
-54	Antigüedades	Antigüedades	PROPN	PROPN	_	49	obj	_	_
-55	judías	judía	PROPN	PROPN	_	54	flat	_	SpaceAfter=No
-56	,	,	PUNCT	PUNCT	PunctType=Comm	57	punct	_	_
-57	18	18	NUM	NUM	NumForm=Digit|NumType=Card	54	appos	_	SpaceAfter=No
-58	,	,	PUNCT	PUNCT	PunctType=Comm	57	punct	_	_
-59	116-119	116-119	NUM	NUM	NumForm=Digit|NumType=Card	54	appos	_	SpaceAfter=No
-60	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	54	punct	_	_
-61	y	y	CCONJ	CCONJ	_	62	cc	_	_
-62	relata	relatar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
-63	que	que	SCONJ	SCONJ	_	67	mark	_	_
-64	Herodes	Herodes	PROPN	PROPN	_	67	nsubj	_	_
-65	Antipas	Antipas	PROPN	PROPN	_	64	flat	_	_
-66	lo	él	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Npr|PronType=Prs	67	obj	_	_
-67	ejecutó	ejecutar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	62	ccomp	_	_
-68	por	por	ADP	ADP	AdpType=Prep	69	case	_	_
-69	miedo	miedo	NOUN	NOUN	Gender=Masc|Number=Sing	67	obl	_	_
-70	a	a	ADP	ADP	AdpType=Prep	72	mark	_	_
-71	que	que	SCONJ	SCONJ	_	72	mark	_	_
-72	provocase	provocar	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	69	acl	_	_
-73	una	uno	DET	DET	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	74	det	_	_
-74	revuelta	revuelta	NOUN	NOUN	Gender=Fem|Number=Sing	72	obj	_	SpaceAfter=No
-75	.	.	PUNCT	PUNCT	PunctType=Peri	6	punct	_	SpacesAfter=\n
+41	unos	uno	PRON	PRON	Gender=Masc|Number=Plur|PronType=Ind	39	nsubj	_	_
+42	con	con	ADP	ADP	AdpType=Prep	44	case	_	_
+43	los	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_
+44	otros	otro	PRON	PRON	Gender=Masc|Number=Plur|PronType=Ind	41	nmod	_	_
+45	y	y	CCONJ	CCONJ	_	46	cc	_	_
+46	píos	pío	ADJ	ADJ	Gender=Masc|Number=Plur	39	conj	_	_
+47	hacia	hacia	ADP	ADP	AdpType=Prep	48	case	_	_
+48	Dios	Dios	PROPN	PROPN	_	46	nmod	_	SpaceAfter=No
+49	,	,	PUNCT	PUNCT	PunctType=Comm	52	punct	_	_
+50	y	y	CCONJ	CCONJ	_	52	cc	_	_
+51	a	a	ADP	ADP	AdpType=Prep	52	mark	_	_
+52	ir	ir	VERB	VERB	VerbForm=Inf	30	conj	_	_
+53	juntos	junto	ADJ	ADJ	Gender=Masc|Number=Plur	52	obj	_	_
+54	al	al	ADP	ADP	AdpType=Preppron	55	case	_	_
+55	bautismo»	bautismo»	NOUN	NOUN	Gender=Masc|Number=Sing	52	obl	_	_
+56	(	(	PUNCT	PUNCT	PunctSide=Ini|PunctType=Brck	57	punct	_	SpaceAfter=No
+57	Antigüedades	Antigüedades	PROPN	PROPN	_	52	obj	_	_
+58	judías	judía	PROPN	ADJ	_	57	flat	_	SpaceAfter=No
+59	,	,	PUNCT	PUNCT	PunctType=Comm	60	punct	_	_
+60	18	18	NUM	NUM	NumForm=Digit|NumType=Card	57	appos	_	SpaceAfter=No
+61	,	,	PUNCT	PUNCT	PunctType=Comm	60	punct	_	_
+62	116-119	116-119	NUM	NUM	NumForm=Digit|NumType=Card	57	appos	_	SpaceAfter=No
+63	)	)	PUNCT	PUNCT	PunctSide=Fin|PunctType=Brck	57	punct	_	_
+64	y	y	CCONJ	CCONJ	_	65	cc	_	_
+65	relata	relatar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+66	que	que	SCONJ	SCONJ	_	70	mark	_	_
+67	Herodes	Herodes	PROPN	PROPN	_	70	nsubj	_	_
+68	Antipas	Antipas	PROPN	PROPN	_	67	flat	_	_
+69	lo	él	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Npr|PronType=Prs	70	obj	_	_
+70	ejecutó	ejecutar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	65	ccomp	_	_
+71	por	por	ADP	ADP	AdpType=Prep	72	case	_	_
+72	miedo	miedo	NOUN	NOUN	Gender=Masc|Number=Sing	70	obl	_	_
+73	a	a	ADP	ADP	AdpType=Prep	75	mark	_	_
+74	que	que	SCONJ	SCONJ	_	75	mark	_	_
+75	provocase	provocar	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	72	acl	_	_
+76	una	uno	DET	DET	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	77	det	_	_
+77	revuelta	revuelta	NOUN	NOUN	Gender=Fem|Number=Sing	75	obj	_	SpaceAfter=No
+78	.	.	PUNCT	PUNCT	PunctType=Peri	6	punct	_	SpacesAfter=\n
 
 # sent_id = 3
 # text = El mensaje de Juan, tal y como es reflejado por las fuentes, parece bastante semejante al de Jesús; según Mateo, en su predicación hacía referencia al Reino de los Cielos e insistía en la necesidad de un pronto arrepentimiento.

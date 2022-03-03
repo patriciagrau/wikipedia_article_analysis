@@ -898,13 +898,13 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Neben der Bezeichnung als Buddha – der „Erwachte“ – wurden Siddhartha Gautama auch andere Ehrennamen verliehen, darunter Tathagata (Sanskrit तथागत tathāgata „der So-Dahingelangte“) und Shakyamuni (Sanskrit शाक्यमुनि śākyamuni „der Weise der Shakya“).
+# text = Neben der Bezeichnung als Buddha – der „Erwachte“ – wurden Siddhartha Gautama auch andere Ehrennamen verliehen, darunter Tathagata (Sanskrit तथागत tathāgata „der So-Dahingelangte“) und Shakyamuni (Sanskrit शाक्यमुनि śākyamuni „der Weise [aus dem Volk] der Shakya“).
 1	Neben	Neben	ADP	APPR	AdpType=Prep|Case=Dat	3	case	_	_
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	Bezeichnung	Bezeichnung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	17	obl	_	_
 4	als	als	CCONJ	KOKOM	ConjType=Comp	5	case	_	_
 5	Buddha	Buddha	PROPN	NE	Person=3	3	obl	_	_
-6	–	–	PROPN	NE	Person=3	5	flat:name	_	_
+6	–	–	PROPN	NE	Person=3	5	flat	_	_
 7	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 8	„	„	PUNCT	$(	PunctType=Brck	9	punct	_	SpaceAfter=No
 9	Erwachte“	Erwachte“	NOUN	NN	Person=3	5	appos	_	_
@@ -930,16 +930,21 @@
 29	und	und	CCONJ	KON	_	30	cc	_	_
 30	Shakyamuni	Shakyamuni	PROPN	NE	Person=3	22	conj	_	_
 31	(	(	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
-32	Sanskrit	Sanskrit	NOUN	NN	Person=3	30	appos	_	_
+32	Sanskrit	Sanskrit	X	FM	Foreign=Yes|Person=3	30	appos	_	_
 33	शाक्यमुनि	शाक्यमुनि	X	FM	Foreign=Yes|Person=3	32	flat	_	_
 34	śākyamuni	śākyamuni	X	FM	Foreign=Yes|Person=3	32	flat	_	_
-35	„	„	PUNCT	$(	PunctType=Brck	37	punct	_	SpaceAfter=No
+35	„	„	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
 36	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	Weise	Weis	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	32	appos	_	SpacesAfter=\s\s
-38	der	der	DET	ART	Case=Gen|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	Shakya“	Shakya“	NOUN	NN	Person=3	37	nmod	_	SpaceAfter=No
-40	)	)	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
-41	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	SpacesAfter=\n
+37	Weise	Weis	NOUN	NN	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|Person=3	32	appos	_	_
+38	[	[	PUNCT	$(	PunctType=Brck	41	punct	_	SpaceAfter=No
+39	aus	aus	ADP	APPR	AdpType=Prep|Case=Dat	41	case	_	_
+40	dem	dem	DET	ART	Case=Dat|Gender=Neut|Number=Sing|PronType=Art	41	det	_	_
+41	Volk	Volk	NOUN	NN	Gender=Neut|Number=Sing|Person=3	37	nmod	_	SpaceAfter=No
+42	]	]	PUNCT	$(	PunctType=Brck	41	punct	_	_
+43	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	44	det	_	_
+44	Shakya“	Shakya“	NOUN	NN	Person=3	41	nmod	_	SpaceAfter=No
+45	)	)	PUNCT	$(	PunctType=Brck	32	punct	_	SpaceAfter=No
+46	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = german-hdt-ud-2.6-200830
@@ -2298,7 +2303,7 @@
 2	:	:	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 4
-# text = Dhammacakkappavattanasutta) und verkündete die vier Wahrheiten des Edlen.
+# text = Dhammacakkappavattanasutta) und verkündete die vier Wahrheiten des [geistig] Edlen.
 1	Dhammacakkappavattanasutta	Dhammacakkappavattanasutta	PROPN	NE	Person=3	0	root	_	SpaceAfter=No
 2	)	)	PUNCT	$(	PunctType=Brck	1	punct	_	_
 3	und	und	CCONJ	KON	_	4	cc	_	_
@@ -2306,9 +2311,12 @@
 5	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	7	det	_	_
 6	vier	vier	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	nummod	_	_
 7	Wahrheiten	Wahrheit	NOUN	NN	Gender=Fem|Number=Plur|Person=3	4	obj	_	_
-8	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpacesAfter=\s\s
-9	Edlen	Edle	NOUN	NN	Person=3	7	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
+8	des	des	DET	ART	Case=Gen|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+9	[	[	PUNCT	$(	PunctType=Brck	10	punct	_	SpaceAfter=No
+10	geistig	geistig	ADJ	ADJD	Degree=Pos|Variant=Short	12	advmod	_	SpaceAfter=No
+11	]	]	PUNCT	$(	PunctType=Brck	10	punct	_	_
+12	Edlen	Edle	NOUN	NN	Person=3	7	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	$.	PunctType=Peri	1	punct	_	_
 
 # sent_id = 5
 # text = Die fünf Gefährten wurden damit die ersten Mitglieder der buddhistischen (Mönchs-)Gemeinschaft (Saṅgha).

@@ -4061,7 +4061,7 @@
 14	;	;	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 5
-# text = il s'agit de la première Bible complète avec la numérotation actuelle des chapitres et des versets.
+# text = il s'agit de la première Bible complète avec la numérotation actuelle des chapitres et des versets[réf.
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_
 2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No
 3	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -4072,7 +4072,7 @@
 8	complète	complet	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_
 9	avec	avec	ADP	_	_	11	case	_	_
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	numérotation	numérotation	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_
+11	numérotation	numérotation	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_
 12	actuelle	actuel	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_
 13-14	des	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	_	_
@@ -4082,10 +4082,16 @@
 17-18	des	_	_	_	_	_	_	_	_
 17	de	de	ADP	_	_	19	case	_	_
 18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	versets	verset	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	SpaceAfter=No
-20	.	.	PUNCT	_	_	3	punct	_	_
+19	versets[	versets[	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	SpaceAfter=No
+20	réf.	réf.	VERB	_	_	3	parataxis	_	SpacesAfter= 
 
 # sent_id = 6
+# text = nécessaire].
+1	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	]	]	PUNCT	_	_	1	punct	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 7
 # text = Ce système permet de faire correspondre les versions hébraïque, grecque, latine et autres (pour autant qu'elles aient le même texte).
 1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	système	système	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -4561,7 +4567,7 @@
 57	.	.	PUNCT	_	_	18	punct	_	_
 
 # sent_id = 2
-# text = La lecture du texte hébraïque de la Torah, ainsi réputé original, est au centre du judaïsme synagogal.
+# text = La lecture du texte hébraïque de la Torah, ainsi réputé original, est au centre du judaïsme synagogal.[réf. nécessaire]
 1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	lecture	lecture	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	_	_
 3-4	du	_	_	_	_	_	_	_	_
@@ -4587,7 +4593,10 @@
 20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	judaïsme	judaïsme	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
 22	synagogal	synagogal	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	SpaceAfter=No
-23	.	.	PUNCT	_	_	18	punct	_	SpacesAfter=\n
+23	.[	.[	PUNCT	_	_	24	punct	_	SpaceAfter=No
+24	réf.	réf.	NOUN	_	Gender=Masc|Number=Sing	18	appos	_	SpacesAfter= 
+25	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No
+26	]	]	PUNCT	_	_	18	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = french-gsd-ud-2.6-200830
@@ -4630,7 +4639,7 @@
 32	.	.	PUNCT	_	_	14	punct	_	_
 
 # sent_id = 2
-# text = Marc-Alain Ouaknin explique que pour ces croyants « la plupart des livres bibliques ont d'abord été transmis oralement, de génération en génération, jusqu'à ce qu'ils soient mis par écrit à une époque bien plus tardive
+# text = Marc-Alain Ouaknin explique que pour ces croyants « la plupart des livres bibliques ont d'abord été transmis oralement, de génération en génération, jusqu'à ce qu'ils soient mis par écrit à une époque bien plus tardive […] Ce sont les hommes de la Grande Assemblée créée par Ezra qui, au Ve siècle av. J.-C. mirent en forme le texte définitif de la Bible hébraïque.
 1	Marc-Alain	Marc-Alain	PROPN	_	_	3	nsubj	_	_
 2	Ouaknin	Ouaknin	PROPN	_	_	1	flat:name	_	_
 3	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -4672,43 +4681,43 @@
 38	époque	époque	NOUN	_	Gender=Fem|Number=Sing	33	obl:mod	_	_
 39	bien	bien	ADV	_	_	40	advmod	_	_
 40	plus	plus	ADV	_	_	41	advmod	_	_
-41	tardive	tardif	ADJ	_	Gender=Fem|Number=Sing	38	amod	_	SpacesAfter=\s\s
+41	tardive	tardif	ADJ	_	Gender=Fem|Number=Sing	38	amod	_	_
+42	[	[	PUNCT	_	_	43	punct	_	SpaceAfter=No
+43	…	…	SYM	_	_	48	advmod	_	SpaceAfter=No
+44	]	]	PUNCT	_	_	43	punct	_	_
+45	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	48	expl:subj	_	_
+46	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	48	cop	_	_
+47	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
+48	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	3	ccomp	_	_
+49	de	de	ADP	_	_	52	case	_	_
+50	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
+51	Grande	grand	ADJ	_	Gender=Fem|Number=Sing	52	amod	_	_
+52	Assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	48	nmod	_	_
+53	créée	créer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	52	acl	_	_
+54	par	par	ADP	_	_	55	case	_	_
+55	Ezra	Ezra	PROPN	_	_	53	obl:agent	_	_
+56	qui	qui	PRON	_	PronType=Rel	64	nsubj	_	SpaceAfter=No
+57	,	,	PUNCT	_	_	56	punct	_	_
+58-59	au	_	_	_	_	_	_	_	_
+58	à	à	ADP	_	_	61	case	_	_
+59	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
+60	Ve	Ve	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	61	amod	_	SpacesAfter= 
+61	siècle	siècle	NOUN	_	Gender=Masc|Number=Sing	64	obl:mod	_	SpacesAfter= 
+62	av.	avant	ADP	_	_	63	case	_	_
+63	J.-C.	J.-C.	PROPN	_	_	61	nmod	_	_
+64	mirent	mirer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	48	advcl:cleft	_	_
+65	en	en	ADP	_	_	66	case	_	_
+66	forme	forme	NOUN	_	Gender=Fem|Number=Sing	64	obl	_	_
+67	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	68	det	_	_
+68	texte	texte	NOUN	_	Gender=Masc|Number=Sing	64	obj	_	_
+69	définitif	définitif	ADJ	_	Gender=Masc|Number=Sing	68	amod	_	_
+70	de	de	ADP	_	_	72	case	_	_
+71	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	72	det	_	_
+72	Bible	Bible	PROPN	_	_	68	nmod	_	_
+73	hébraïque	hébraïque	ADJ	_	Gender=Fem|Number=Sing	72	amod	_	SpaceAfter=No
+74	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 3
-# text = Ce sont les hommes de la Grande Assemblée créée par Ezra qui, au Ve siècle av. J.-C. mirent en forme le texte définitif de la Bible hébraïque.
-1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_
-2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
-5	de	de	ADP	_	_	8	case	_	_
-6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-7	Grande	grand	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_
-8	Assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_
-9	créée	créer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_
-10	par	par	ADP	_	_	11	case	_	_
-11	Ezra	Ezra	PROPN	_	_	9	obl:agent	_	_
-12	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	SpaceAfter=No
-13	,	,	PUNCT	_	_	12	punct	_	_
-14-15	au	_	_	_	_	_	_	_	_
-14	à	à	ADP	_	_	17	case	_	_
-15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-16	Ve	Ve	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	17	amod	_	SpacesAfter= 
-17	siècle	siècle	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	SpacesAfter= 
-18	av.	avant	ADP	_	_	19	case	_	_
-19	J.-C.	J.-C.	PROPN	_	_	17	nmod	_	_
-20	mirent	mirer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	advcl:cleft	_	_
-21	en	en	ADP	_	_	22	case	_	_
-22	forme	forme	NOUN	_	Gender=Fem|Number=Sing	20	obl	_	_
-23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	texte	texte	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_
-25	définitif	définitif	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	_
-26	de	de	ADP	_	_	28	case	_	_
-27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	Bible	Bible	PROPN	_	_	24	nmod	_	_
-29	hébraïque	hébraïque	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
-30	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 4
 # text = Ils recueillirent les textes existants et écrivirent aussi de nombreux livres.
 1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
 2	recueillirent	recueillir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -4723,7 +4732,7 @@
 11	livres	livre	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No
 12	.	.	PUNCT	_	_	2	punct	_	SpacesAfter= 
 
-# sent_id = 5
+# sent_id = 4
 # text = »
 1	»	»	PUNCT	_	_	0	root	_	SpacesAfter=\n
 
@@ -4986,22 +4995,25 @@
 15	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 7
-# text = La Parole de Dieu s'est faite parole humaine, astreinte à la compréhension.
+# text = La Parole de Dieu […] s'est faite parole humaine, astreinte à la compréhension.
 1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Parole	parole	PROPN	_	_	7	nsubj	_	_
+2	Parole	parole	NOUN	_	_	10	nsubj	_	_
 3	de	de	ADP	_	_	4	case	_	_
-4	Dieu	Dieu	PROPN	_	_	2	nmod	_	SpacesAfter=\s\s
-5	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	SpaceAfter=No
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
-7	faite	faire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
-8	parole	parole	NOUN	_	Gender=Fem|Number=Sing	7	xcomp	_	_
-9	humaine	humain	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No
-10	,	,	PUNCT	_	_	11	punct	_	_
-11	astreinte	astreindre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_
-12	à	à	ADP	_	_	14	case	_	_
-13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	compréhension	compréhension	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	SpaceAfter=No
-15	.	.	PUNCT	_	_	7	punct	_	_
+4	Dieu	Dieu	PROPN	_	_	2	nmod	_	_
+5	[	[	PUNCT	_	_	6	punct	_	SpaceAfter=No
+6	…	…	SYM	_	_	2	appos	_	SpaceAfter=No
+7	]	]	PUNCT	_	_	6	punct	_	_
+8	s'	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	SpaceAfter=No
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_
+10	faite	faire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+11	parole	parole	NOUN	_	Gender=Fem|Number=Sing	10	xcomp	_	_
+12	humaine	humain	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	_	_
+14	astreinte	astreindre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_
+15	à	à	ADP	_	_	17	case	_	_
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	compréhension	compréhension	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	10	punct	_	_
 
 # sent_id = 8
 # text = Il n'y a pas d'acheminement direct à la Bible, il faut toujours une médiation au moins implicite : traduction, exégèse, histoire, genres littéraires, étude des styles, typologie, connaissance de la Tradition, lectio divina »…

@@ -6663,7 +6663,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = Traditsioonilises New Yorgi piirkonna murdes ei hääldata silbi lõpus või vahetult enne kaashäälikut asuvat r-i välja, seega hääldatakse linna nime .
+# text = Traditsioonilises New Yorgi piirkonna murdes ei hääldata silbi lõpus või vahetult enne kaashäälikut asuvat r-i välja, seega hääldatakse linna nime [nju: jo:k].
 1	Traditsioonilises	traditsiooniline	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	5	amod	_	_
 2	New	New	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
 3	Yorgi	York	PROPN	S	Case=Gen|Number=Sing	2	flat	_	_
@@ -6671,10 +6671,10 @@
 5	murdes	murre	NOUN	S	Case=Ine|Number=Sing	7	obl	_	_
 6	ei	ei	AUX	V	Polarity=Neg	7	aux	_	_
 7	hääldata	hääldama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-8	silbi	silb	NOUN	S	Case=Par|Number=Sing	9	nmod	_	_
+8	silbi	silb	NOUN	S	Case=Par|Number=Sing	7	obj	_	_
 9	lõpus	lõpp	NOUN	S	Case=Ine|Number=Sing	7	obl	_	_
 10	või	või	CCONJ	J	_	15	cc	_	_
-11	vahetult	vahetult	ADV	D	_	15	advmod	_	_
+11	vahetult	vahetult	ADV	D	_	14	advmod	_	_
 12	enne	enne	ADP	K	AdpType=Prep	15	case	_	_
 13	kaashäälikut	kaas_häälik	NOUN	S	Case=Par|Number=Sing	14	obl	_	_
 14	asuvat	asuv	ADJ	A	Case=Par|Degree=Pos|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
@@ -6685,10 +6685,17 @@
 19	hääldatakse	hääldama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	conj	_	_
 20	linna	linn	NOUN	S	Case=Gen|Number=Sing	21	nmod	_	_
 21	nime	nimi	NOUN	S	Case=Par|Number=Sing	19	obj	_	_
-22	.	.	PUNCT	Z	_	7	punct	_	_
+22	[	[	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+23	nju	nju	NOUN	S	Case=Nom|Number=Sing	21	parataxis	_	SpaceAfter=No
+24	:	:	PUNCT	Z	_	23	punct	_	_
+25	jo	jo	X	Y	Abbr=Yes	23	flat	_	SpaceAfter=No
+26	:	:	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+27	k	k	NOUN	Y	Abbr=Yes	23	flat	_	SpaceAfter=No
+28	]	]	PUNCT	Z	_	23	punct	_	SpaceAfter=No
+29	.	.	PUNCT	Z	_	7	punct	_	_
 
 # sent_id = 2
-# text = R-i ei hääldata näiteks ka sellistes sõnades nagu "park" või (kus täishäälik on ahelnihke tõttu muutunud madalaks ja tagapoolseks tagavokaaliks ja diftongiks), "butter" või "here" .
+# text = R-i ei hääldata näiteks ka sellistes sõnades nagu "park" [pɑək] või [pɒək] (kus täishäälik on ahelnihke tõttu muutunud madalaks ja tagapoolseks tagavokaaliks ja diftongiks), "butter" [bʌɾə] või "here" [hiə].
 1	R-i	R	NOUN	Y	Abbr=Yes|Case=Par|Number=Sing	3	obj	_	_
 2	ei	ei	AUX	V	Polarity=Neg	3	aux	_	_
 3	hääldata	hääldama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -6699,84 +6706,102 @@
 8	nagu	nagu	SCONJ	J	_	10	mark	_	_
 9	"	"	PUNCT	Z	_	10	punct	_	SpaceAfter=No
 10	park	park	NOUN	S	Case=Nom|Number=Sing	7	advcl	_	SpaceAfter=No
-11	"	"	PUNCT	Z	_	10	punct	_	SpacesAfter=\s\s
-12	või	või	CCONJ	J	_	19	cc	_	SpacesAfter=\s\s
-13	(	(	PUNCT	Z	_	19	punct	_	SpaceAfter=No
-14	kus	kus	ADV	D	_	19	mark	_	_
-15	täishäälik	täis_häälik	NOUN	S	Case=Nom|Number=Sing	19	nsubj	_	_
-16	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	aux	_	_
-17	ahelnihke	ahel_nihk	NOUN	S	Case=Gen|Number=Sing	19	obl	_	_
-18	tõttu	tõttu	ADP	K	AdpType=Post	17	case	_	_
-19	muutunud	muutuma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	10	parataxis	_	_
-20	madalaks	madal	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	23	amod	_	_
-21	ja	ja	CCONJ	J	_	22	cc	_	_
-22	tagapoolseks	taga_poolne	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	20	conj	_	_
-23	tagavokaaliks	tagavo_kaal	NOUN	S	Case=Tra|Number=Sing	19	xcomp	_	_
-24	ja	ja	CCONJ	J	_	25	cc	_	_
-25	diftongiks	diftong	NOUN	S	Case=Tra|Number=Sing	23	conj	_	SpaceAfter=No
-26	)	)	PUNCT	Z	_	19	punct	_	SpaceAfter=No
-27	,	,	PUNCT	Z	_	29	punct	_	_
-28	"	"	PUNCT	Z	_	29	punct	_	SpaceAfter=No
-29	butter	butter	NOUN	S	Case=Nom|Number=Sing	23	conj	_	SpaceAfter=No
-30	"	"	PUNCT	Z	_	29	punct	_	SpacesAfter=\s\s
-31	või	või	CCONJ	J	_	33	cc	_	_
-32	"	"	PUNCT	Z	_	33	punct	_	SpaceAfter=No
-33	here	here	X	S	_	29	conj	_	SpaceAfter=No
-34	"	"	PUNCT	Z	_	33	punct	_	_
-35	.	.	PUNCT	Z	_	3	punct	_	_
+11	"	"	PUNCT	Z	_	10	punct	_	_
+12	[	[	PUNCT	Z	_	10	punct	_	SpaceAfter=No
+13	pɑək	pɑək	NOUN	S	Case=Nom|Number=Sing	10	parataxis	_	SpaceAfter=No
+14	]	]	PUNCT	Z	_	13	punct	_	_
+15	või	või	CCONJ	J	_	17	cc	_	_
+16	[	[	PUNCT	Z	_	17	punct	_	SpaceAfter=No
+17	pɒək	pɒək	NOUN	S	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+18	]	]	PUNCT	Z	_	17	punct	_	_
+19	(	(	PUNCT	Z	_	25	punct	_	SpaceAfter=No
+20	kus	kus	ADV	D	_	25	mark	_	_
+21	täishäälik	täis_häälik	NOUN	S	Case=Nom|Number=Sing	25	nsubj	_	_
+22	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	aux	_	_
+23	ahelnihke	ahel_nihk	NOUN	S	Case=Gen|Number=Sing	25	obl	_	_
+24	tõttu	tõttu	ADP	K	AdpType=Post	23	case	_	_
+25	muutunud	muutuma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	17	parataxis	_	_
+26	madalaks	madal	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	25	xcomp	_	_
+27	ja	ja	CCONJ	J	_	28	cc	_	_
+28	tagapoolseks	taga_poolne	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	26	conj	_	_
+29	tagavokaaliks	tagavo_kaal	NOUN	S	Case=Tra|Number=Sing	25	xcomp	_	_
+30	ja	ja	CCONJ	J	_	31	cc	_	_
+31	diftongiks	diftong	NOUN	S	Case=Tra|Number=Sing	29	conj	_	SpaceAfter=No
+32	)	)	PUNCT	Z	_	25	punct	_	SpaceAfter=No
+33	,	,	PUNCT	Z	_	35	punct	_	_
+34	"	"	PUNCT	Z	_	35	punct	_	SpaceAfter=No
+35	butter	butter	NOUN	S	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+36	"	"	PUNCT	Z	_	35	punct	_	_
+37	[	[	PUNCT	Z	_	38	punct	_	SpaceAfter=No
+38	bʌɾə	bʌɾə	NOUN	S	Case=Nom|Number=Sing	35	parataxis	_	SpaceAfter=No
+39	]	]	PUNCT	Z	_	38	punct	_	_
+40	või	või	CCONJ	J	_	42	cc	_	_
+41	"	"	PUNCT	Z	_	42	punct	_	SpaceAfter=No
+42	here	here	X	S	_	10	conj	_	SpaceAfter=No
+43	"	"	PUNCT	Z	_	42	punct	_	_
+44	[	[	PUNCT	Z	_	45	punct	_	SpaceAfter=No
+45	hiə	hiə	X	S	_	42	parataxis	_	SpaceAfter=No
+46	]	]	PUNCT	Z	_	45	punct	_	SpaceAfter=No
+47	.	.	PUNCT	Z	_	3	punct	_	_
 
 # sent_id = 3
-# text = Teiseks tunnuseks on ahelnihe, mille tõttu vokaal sõnades "talk", "law", "cross", "chocolate", "coffee" jne ning sageli samakõlaline sõnades "core" ja "more" on rohkem pingul ja kõrgemalt hääldatud kui Ameerika ühiskeeles.
+# text = Teiseks tunnuseks on ahelnihe, mille tõttu vokaal [ɔ] sõnades "talk", "law", "cross", "chocolate", "coffee" jne ning sageli samakõlaline [ɔr] sõnades "core" ja "more" on rohkem pingul ja kõrgemalt hääldatud kui Ameerika ühiskeeles.
 1	Teiseks	teine	ADJ	N	Case=Tra|Number=Sing|NumForm=Letter|NumType=Ord	2	det	_	_
 2	tunnuseks	tunnus	NOUN	S	Case=Tra|Number=Sing	0	root	_	_
 3	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
 4	ahelnihe	ahelnihe	NOUN	S	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
-5	,	,	PUNCT	Z	_	43	punct	_	_
-6	mille	mis	PRON	P	Case=Gen|Number=Sing|PronType=Int,Rel	8	nmod	_	_
+5	,	,	PUNCT	Z	_	49	punct	_	_
+6	mille	mis	PRON	P	Case=Gen|Number=Sing|PronType=Int,Rel	49	obl	_	_
 7	tõttu	tõttu	ADP	K	AdpType=Post	6	case	_	_
-8	vokaal	vokaal	NOUN	S	Case=Nom|Number=Sing	43	nsubj:cop	_	SpacesAfter=\s\s
-9	sõnades	sõna	NOUN	S	Case=Ine|Number=Plur	8	nmod	_	_
-10	"	"	PUNCT	Z	_	11	punct	_	SpaceAfter=No
-11	talk	talk	NOUN	S	Case=Nom|Number=Sing	9	appos	_	SpaceAfter=No
-12	"	"	PUNCT	Z	_	11	punct	_	SpaceAfter=No
-13	,	,	PUNCT	Z	_	15	punct	_	_
-14	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
-15	law	law	NOUN	S	Case=Nom|Number=Sing	11	conj	_	SpaceAfter=No
-16	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
-17	,	,	PUNCT	Z	_	15	punct	_	_
-18	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
-19	cross	cross	NOUN	S	Case=Nom|Number=Sing	11	conj	_	SpaceAfter=No
-20	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
-21	,	,	PUNCT	Z	_	23	punct	_	_
-22	"	"	PUNCT	Z	_	23	punct	_	SpaceAfter=No
-23	chocolate	chocolate	NOUN	S	Case=Nom|Number=Sing	11	conj	_	SpaceAfter=No
-24	"	"	PUNCT	Z	_	23	punct	_	SpaceAfter=No
-25	,	,	PUNCT	Z	_	27	punct	_	_
-26	"	"	PUNCT	Z	_	27	punct	_	SpaceAfter=No
-27	coffee	coffee	NOUN	S	Case=Nom|Number=Sing	11	conj	_	SpaceAfter=No
-28	"	"	PUNCT	Z	_	27	punct	_	_
-29	jne	jne	ADV	Y	Abbr=Yes	27	nmod	_	_
-30	ning	ning	CCONJ	J	_	32	cc	_	_
-31	sageli	sageli	ADV	D	_	32	advmod	_	_
-32	samakõlaline	sama_kõlaline	ADJ	S	Case=Nom|Degree=Pos|Number=Sing	8	conj	_	SpacesAfter=\s\s
-33	sõnades	sõna	NOUN	S	Case=Ine|Number=Plur	32	nmod	_	_
-34	"	"	PUNCT	Z	_	35	punct	_	SpaceAfter=No
-35	core	core	X	S	Case=Nom|Number=Sing	33	appos	_	SpaceAfter=No
-36	"	"	PUNCT	Z	_	35	punct	_	_
-37	ja	ja	CCONJ	J	_	39	cc	_	_
-38	"	"	PUNCT	Z	_	39	punct	_	SpaceAfter=No
-39	more	more	NOUN	S	Case=Nom|Number=Sing	35	conj	_	SpaceAfter=No
-40	"	"	PUNCT	Z	_	39	punct	_	_
-41	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	43	cop	_	_
-42	rohkem	rohkem	ADV	D	_	43	advmod	_	_
-43	pingul	pingul	ADJ	A	Degree=Pos	4	acl:relcl	_	_
-44	ja	ja	CCONJ	J	_	46	cc	_	_
-45	kõrgemalt	kõrgemalt	ADV	D	_	46	advmod	_	_
-46	hääldatud	häälda=tud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	43	conj	_	_
-47	kui	kui	SCONJ	J	_	49	mark	_	_
-48	Ameerika	Ameerika	PROPN	S	Case=Gen|Number=Sing	49	nmod	_	_
-49	ühiskeeles	ühis_keel	NOUN	S	Case=Ine|Number=Sing	46	advcl	_	SpaceAfter=No
-50	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
+8	vokaal	vokaal	NOUN	S	Case=Nom|Number=Sing	49	nsubj:cop	_	_
+9	[	[	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+10	ɔ	ɔ	NOUN	Y	Abbr=Yes	12	appos	_	SpaceAfter=No
+11	]	]	PUNCT	Z	_	10	punct	_	_
+12	sõnades	sõna	NOUN	S	Case=Ine|Number=Plur	8	nmod	_	_
+13	"	"	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+14	talk	talk	NOUN	S	Case=Nom|Number=Sing	12	appos	_	SpaceAfter=No
+15	"	"	PUNCT	Z	_	14	punct	_	SpaceAfter=No
+16	,	,	PUNCT	Z	_	18	punct	_	_
+17	"	"	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+18	law	law	NOUN	S	Case=Nom|Number=Sing	14	conj	_	SpaceAfter=No
+19	"	"	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+20	,	,	PUNCT	Z	_	18	punct	_	_
+21	"	"	PUNCT	Z	_	18	punct	_	SpaceAfter=No
+22	cross	cross	NOUN	S	Case=Nom|Number=Sing	14	conj	_	SpaceAfter=No
+23	"	"	PUNCT	Z	_	26	punct	_	SpaceAfter=No
+24	,	,	PUNCT	Z	_	26	punct	_	_
+25	"	"	PUNCT	Z	_	26	punct	_	SpaceAfter=No
+26	chocolate	chocolate	NOUN	S	Case=Nom|Number=Sing	14	conj	_	SpaceAfter=No
+27	"	"	PUNCT	Z	_	26	punct	_	SpaceAfter=No
+28	,	,	PUNCT	Z	_	30	punct	_	_
+29	"	"	PUNCT	Z	_	30	punct	_	SpaceAfter=No
+30	coffee	coffee	NOUN	S	Case=Nom|Number=Sing	14	conj	_	SpaceAfter=No
+31	"	"	PUNCT	Z	_	30	punct	_	_
+32	jne	jne	ADV	Y	Abbr=Yes	30	nmod	_	_
+33	ning	ning	CCONJ	J	_	35	cc	_	_
+34	sageli	sageli	ADV	D	_	35	advmod	_	_
+35	samakõlaline	sama_kõlaline	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	49	conj	_	_
+36	[	[	PUNCT	Z	_	37	punct	_	SpaceAfter=No
+37	ɔr	ɔr	NOUN	Y	Abbr=Yes	39	nmod	_	SpaceAfter=No
+38	]	]	PUNCT	Z	_	37	punct	_	_
+39	sõnades	sõna	NOUN	S	Case=Ine|Number=Plur	49	obl	_	_
+40	"	"	PUNCT	Z	_	41	punct	_	SpaceAfter=No
+41	core	core	NOUN	S	Case=Nom|Number=Sing	39	appos	_	SpaceAfter=No
+42	"	"	PUNCT	Z	_	41	punct	_	_
+43	ja	ja	CCONJ	J	_	45	cc	_	_
+44	"	"	PUNCT	Z	_	45	punct	_	SpaceAfter=No
+45	more	more	NOUN	S	Case=Nom|Number=Sing	41	conj	_	SpaceAfter=No
+46	"	"	PUNCT	Z	_	45	punct	_	_
+47	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	49	cop	_	_
+48	rohkem	rohkem	ADV	D	_	49	advmod	_	_
+49	pingul	pingul	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	acl:relcl	_	_
+50	ja	ja	CCONJ	J	_	52	cc	_	_
+51	kõrgemalt	kõrgemalt	ADV	D	_	52	advmod	_	_
+52	hääldatud	häälda=tud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	49	conj	_	_
+53	kui	kui	SCONJ	J	_	55	mark	_	_
+54	Ameerika	Ameerika	PROPN	S	Case=Gen|Number=Sing	55	nmod	_	_
+55	ühiskeeles	ühis_keel	NOUN	S	Case=Ine|Number=Sing	52	advcl	_	SpaceAfter=No
+56	.	.	PUNCT	Z	_	2	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = estonian-edt-ud-2.6-200830
@@ -6784,7 +6809,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = New Yorgi murde kõige vanaaegsemates ja äärmuslikumates variantides on täishäälikust sellistes sõnades nagu "girl" ja "oil" saanud diftong .
+# text = New Yorgi murde kõige vanaaegsemates ja äärmuslikumates variantides on täishäälikust sellistes sõnades nagu "girl" ja "oil" saanud diftong [ɜɪ].
 1	New	New	PROPN	S	Case=Gen|Number=Sing	3	nmod	_	_
 2	Yorgi	York	PROPN	S	Case=Gen|Number=Sing	1	flat	_	_
 3	murde	murd	NOUN	S	Case=Gen|Number=Sing	8	nmod	_	_
@@ -6807,10 +6832,13 @@
 20	"	"	PUNCT	Z	_	19	punct	_	_
 21	saanud	saama	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 22	diftong	diftong	NOUN	S	Case=Nom|Number=Sing	21	nsubj	_	_
-23	.	.	PUNCT	Z	_	21	punct	_	_
+23	[	[	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+24	ɜɪ	ɜɪ	SYM	Y	_	22	parataxis	_	SpaceAfter=No
+25	]	]	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+26	.	.	PUNCT	Z	_	21	punct	_	_
 
 # sent_id = 2
-# text = Teiste murrete ja murrakute rääkijad tajuvad seda sageli vastupidisena, nii et sõna "girl" hääldatakse ja sõna "oil" hääldatakse , millest lähtuvad ka newyorklasi tögavad näited selle kohta, et nad hääldavad nimesid "Jersey" nagu "Joizey", "33rd Street" kui "Toidy-Toid Street" ning sõna "toilet" nagu "terlet".
+# text = Teiste murrete ja murrakute rääkijad tajuvad seda sageli vastupidisena, nii et sõna "girl" hääldatakse [gɔil] ja sõna "oil" hääldatakse [ɜ:l], millest lähtuvad ka newyorklasi tögavad näited selle kohta, et nad hääldavad nimesid "Jersey" nagu "Joizey", "33rd Street" kui "Toidy-Toid Street" ning sõna "toilet" nagu "terlet".
 1	Teiste	teine	DET	P	Case=Gen|Number=Plur|PronType=Dem	2	det	_	_
 2	murrete	murre	NOUN	S	Case=Gen|Number=Plur	5	nmod	_	_
 3	ja	ja	CCONJ	J	_	4	cc	_	_
@@ -6827,54 +6855,62 @@
 14	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
 15	girl	girl	NOUN	S	Case=Nom|Number=Sing	13	appos	_	SpaceAfter=No
 16	"	"	PUNCT	Z	_	15	punct	_	_
-17	hääldatakse	hääldama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	advcl	_	SpacesAfter=\s\s
-18	ja	ja	CCONJ	J	_	23	cc	_	_
-19	sõna	sõna	NOUN	S	Case=Nom|Number=Sing	23	obj	_	_
-20	"	"	PUNCT	Z	_	21	punct	_	SpaceAfter=No
-21	oil	oil	NOUN	S	Case=Nom|Number=Sing	19	appos	_	SpaceAfter=No
-22	"	"	PUNCT	Z	_	21	punct	_	_
-23	hääldatakse	hääldama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	17	conj	_	_
-24	,	,	PUNCT	Z	_	26	punct	_	_
-25	millest	mis	PRON	P	Case=Ela|Number=Sing|PronType=Int,Rel	26	obl	_	_
-26	lähtuvad	lähtuma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	_	_
-27	ka	ka	ADV	D	_	30	advmod	_	_
-28	newyorklasi	newyorklane	NOUN	S	Case=Par|Number=Plur	29	obj	_	_
-29	tögavad	tögav	ADJ	A	Case=Nom|Degree=Pos|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	30	acl	_	_
-30	näited	näide	NOUN	S	Case=Nom|Number=Plur	26	nsubj	_	_
-31	selle	see	PRON	P	Case=Gen|Number=Sing|PronType=Dem	26	obl	_	_
-32	kohta	kohta	ADP	K	AdpType=Post	31	case	_	SpaceAfter=No
-33	,	,	PUNCT	Z	_	36	punct	_	_
-34	et	et	SCONJ	J	_	36	mark	_	_
-35	nad	tema	PRON	P	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
-36	hääldavad	hääldama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	acl	_	_
-37	nimesid	nimi	NOUN	S	Case=Par|Number=Plur	36	obj	_	_
-38	"	"	PUNCT	Z	_	39	punct	_	SpaceAfter=No
-39	Jersey	Jersey	PROPN	S	Case=Nom|Number=Sing	37	appos	_	SpaceAfter=No
-40	"	"	PUNCT	Z	_	39	punct	_	_
-41	nagu	nagu	SCONJ	J	_	43	mark	_	_
-42	"	"	PUNCT	Z	_	43	punct	_	SpaceAfter=No
-43	Joizey	Joizey	PROPN	S	Case=Nom|Number=Sing	39	advcl	_	SpaceAfter=No
-44	"	"	PUNCT	Z	_	43	punct	_	SpaceAfter=No
-45	,	,	PUNCT	Z	_	47	punct	_	_
+17	hääldatakse	hääldama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	advcl	_	_
+18	[	[	PUNCT	Z	_	19	punct	_	SpaceAfter=No
+19	gɔil	gɔil	NOUN	S	Case=Ade|Number=Sing	17	obl	_	SpaceAfter=No
+20	]	]	PUNCT	Z	_	19	punct	_	_
+21	ja	ja	CCONJ	J	_	26	cc	_	_
+22	sõna	sõna	NOUN	S	Case=Nom|Number=Sing	26	obj	_	_
+23	"	"	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+24	oil	oil	NOUN	S	Case=Nom|Number=Sing	22	appos	_	SpaceAfter=No
+25	"	"	PUNCT	Z	_	24	punct	_	_
+26	hääldatakse	hääldama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	17	conj	_	_
+27	[	[	PUNCT	Z	_	28	punct	_	SpaceAfter=No
+28	ɜ	ɜ	SYM	Y	Abbr=Yes	26	parataxis	_	SpaceAfter=No
+29	:	:	PUNCT	Z	_	24	punct	_	SpaceAfter=No
+30	l	l	NOUN	Y	Abbr=Yes	28	flat	_	SpaceAfter=No
+31	]	]	PUNCT	Z	_	28	punct	_	SpaceAfter=No
+32	,	,	PUNCT	Z	_	34	punct	_	_
+33	millest	mis	PRON	P	Case=Ela|Number=Sing|PronType=Int,Rel	34	obl	_	_
+34	lähtuvad	lähtuma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	ccomp	_	_
+35	ka	ka	ADV	D	_	38	advmod	_	_
+36	newyorklasi	newyorklane	NOUN	S	Case=Par|Number=Plur	37	obj	_	_
+37	tögavad	tögav	ADJ	A	Case=Nom|Degree=Pos|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	38	acl	_	_
+38	näited	näide	NOUN	S	Case=Nom|Number=Plur	34	nsubj	_	_
+39	selle	see	PRON	P	Case=Gen|Number=Sing|PronType=Dem	34	obl	_	_
+40	kohta	kohta	ADP	K	AdpType=Post	39	case	_	SpaceAfter=No
+41	,	,	PUNCT	Z	_	44	punct	_	_
+42	et	et	SCONJ	J	_	44	mark	_	_
+43	nad	tema	PRON	P	Case=Nom|Number=Plur|Person=3|PronType=Prs	44	nsubj	_	_
+44	hääldavad	hääldama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	39	acl	_	_
+45	nimesid	nimi	NOUN	S	Case=Par|Number=Plur	44	obj	_	_
 46	"	"	PUNCT	Z	_	47	punct	_	SpaceAfter=No
-47	33rd	33rd	NUM	N	NumForm=Digit|NumType=Card	43	conj	_	_
-48	Street	Street	PROPN	S	Case=Nom|Number=Sing	47	flat	_	SpaceAfter=No
-49	"	"	PUNCT	Z	_	47	punct	_	_
-50	kui	kui	SCONJ	J	_	52	mark	_	_
-51	"	"	PUNCT	Z	_	52	punct	_	SpaceAfter=No
-52	Toidy-Toid	Toidy-toid	PROPN	S	Case=Nom|Number=Sing	43	conj	_	_
-53	Street	Street	PROPN	S	Case=Nom|Number=Sing	52	flat	_	SpaceAfter=No
-54	"	"	PUNCT	Z	_	52	punct	_	_
-55	ning	ning	CCONJ	J	_	56	cc	_	_
-56	sõna	sõna	NOUN	S	Case=Nom|Number=Sing	37	conj	_	_
-57	"	"	PUNCT	Z	_	62	punct	_	SpaceAfter=No
-58	toilet	toil	NOUN	S	Case=Nom|Number=Sing	56	appos	_	SpaceAfter=No
-59	"	"	PUNCT	Z	_	62	punct	_	_
-60	nagu	nagu	SCONJ	J	_	62	mark	_	_
-61	"	"	PUNCT	Z	_	62	punct	_	SpaceAfter=No
-62	terlet	terlet	NOUN	S	Case=Par|Number=Sing	56	appos	_	SpaceAfter=No
-63	"	"	PUNCT	Z	_	62	punct	_	SpaceAfter=No
-64	.	.	PUNCT	Z	_	6	punct	_	_
+47	Jersey	Jersey	PROPN	S	Case=Nom|Number=Sing	45	appos	_	SpaceAfter=No
+48	"	"	PUNCT	Z	_	47	punct	_	_
+49	nagu	nagu	SCONJ	J	_	51	mark	_	_
+50	"	"	PUNCT	Z	_	51	punct	_	SpaceAfter=No
+51	Joizey	Joizey	PROPN	S	Case=Nom|Number=Sing	45	appos	_	SpaceAfter=No
+52	"	"	PUNCT	Z	_	51	punct	_	SpaceAfter=No
+53	,	,	PUNCT	Z	_	55	punct	_	_
+54	"	"	PUNCT	Z	_	55	punct	_	SpaceAfter=No
+55	33rd	33rd	NUM	N	NumForm=Digit|NumType=Card	51	conj	_	_
+56	Street	Street	PROPN	S	Case=Nom|Number=Sing	55	flat	_	SpaceAfter=No
+57	"	"	PUNCT	Z	_	55	punct	_	_
+58	kui	kui	SCONJ	J	_	60	mark	_	_
+59	"	"	PUNCT	Z	_	60	punct	_	SpaceAfter=No
+60	Toidy-Toid	Toidy-toid	PROPN	S	Case=Nom|Number=Sing	51	conj	_	_
+61	Street	Street	PROPN	S	Case=Nom|Number=Sing	60	flat	_	SpaceAfter=No
+62	"	"	PUNCT	Z	_	60	punct	_	_
+63	ning	ning	CCONJ	J	_	64	cc	_	_
+64	sõna	sõna	NOUN	S	Case=Nom|Number=Sing	45	conj	_	_
+65	"	"	PUNCT	Z	_	70	punct	_	SpaceAfter=No
+66	toilet	toil	NOUN	S	Case=Nom|Number=Sing	64	appos	_	SpaceAfter=No
+67	"	"	PUNCT	Z	_	70	punct	_	_
+68	nagu	nagu	SCONJ	J	_	70	mark	_	_
+69	"	"	PUNCT	Z	_	70	punct	_	SpaceAfter=No
+70	terlet	terle	NOUN	S	Case=Par|Number=Sing	64	appos	_	SpaceAfter=No
+71	"	"	PUNCT	Z	_	70	punct	_	SpaceAfter=No
+72	.	.	PUNCT	Z	_	6	punct	_	_
 
 # sent_id = 3
 # text = 1970. aastate situatsioonikomöödia

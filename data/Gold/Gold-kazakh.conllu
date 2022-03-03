@@ -668,16 +668,20 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 4Au + 8NaCN + 2H2O + O2 = 4Na +4NaOH
+# text = 4Au + 8NaCN + 2H2O + O2 = 4Na[Au(CN)2] +4NaOH
 1	4Au	4Au	NOUN	n	Case=Nom	0	root	_	_
 2	+	+	SYM	_	_	4	punct	_	_
 3	8NaCN +	8NaCN +	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	2H2O	2H2O	NOUN	n	Case=Nom	1	conj	_	_
-5	+	+	SYM	_	_	9	punct	_	_
+5	+	+	SYM	_	_	13	punct	_	_
 6	O2	O2	NUM	num	NumType=Ord	8	amod	_	_
-7	=	=	SYM	_	_	6	punct	_	_
-8	4Na	4Na	NOUN	n	Case=Nom	9	nmod:poss	_	_
-9	+4NaOH	+4NaOH	NOUN	n	Case=Nom	4	appos	_	SpacesAfter=\n
+7	=	=	SYM	_	_	6	flat:name	_	_
+8	4Na[	4Na[	NOUN	n	Case=Nom	9	nmod:poss	_	SpaceAfter=No
+9	Au	Au	NOUN	n	Case=Nom	13	nmod:poss	_	SpaceAfter=No
+10	(	(	PUNCT	lpar	_	11	punct	_	SpaceAfter=No
+11	CN)2	CN)2	NUM	num	NumType=Ord	9	appos	_	SpaceAfter=No
+12	]	]	PUNCT	cm	_	11	punct	_	_
+13	+4NaOH	+4NaOH	NOUN	n	Case=Nom	4	appos	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -699,12 +703,21 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 2Na +Zn = Na2 +2Au
-1	2Na	2Na	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	+Zn	+Zn	NOUN	n	Case=Nom	3	obl	_	_
-3	=	=	SYM	_	_	5	acl:relcl	_	_
-4	Na2	Na2	NUM	num	NumType=Ord	5	amod	_	SpacesAfter=\s\s
-5	+2Au	+2Au	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+# text = 2Na[Au(CN)2] +Zn = Na2 [Zn (CN)4] +2Au
+1	2Na[	2Na[	NOUN	n	Case=Nom	2	nmod:poss	_	SpaceAfter=No
+2	Au	Au	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
+3	(	(	PUNCT	lpar	_	10	punct	_	SpaceAfter=No
+4	CN)2	CN)2	NUM	num	NumType=Ord	6	amod	_	SpaceAfter=No
+5	]	]	PUNCT	cm	_	4	punct	_	_
+6	+Zn	+Zn	NOUN	n	Case=Nom	10	nmod:poss	_	_
+7	=	=	SYM	_	_	10	punct	_	_
+8	Na2	Na2	NUM	num	NumType=Ord	10	amod	_	_
+9	[	[	PUNCT	cm	_	8	punct	_	SpaceAfter=No
+10	Zn	Zn	NOUN	n	Case=Nom	2	appos	_	_
+11	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
+12	CN)4	CN)4	NUM	num	NumType=Ord	14	amod	_	SpaceAfter=No
+13	]	]	PUNCT	cm	_	12	punct	_	_
+14	+2Au	+2Au	NOUN	n	Case=Nom	10	appos	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -749,34 +762,37 @@
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = 3
-# text = Кейде күмістен тазалау үшін электролиздеуді қолданады - анод - тазартылмаған алтын, катод - таза алтын, электролит ретінде Н ертіндісін қолданады сонда күміс анод шламы түрінде қалады.
-1	Кейде	Кей	NOUN	n	Case=Loc	26	obl	_	_
-2	күмістен	күмістен	NOUN	n	Case=Nom	4	nmod:poss	_	_
-3	тазалау	тазалау	PART	mod_emo	_	4	amod	_	_
-4	үшін	үш	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	26	obl	_	_
-5	электролиздеуді	электролиздеулы	ADP	post	_	26	obl	_	_
-6	қолданады	қолдана	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	26	nsubj	_	_
-7	-	-	PUNCT	guio	_	26	punct	_	_
-8	анод -	анод -	PUNCT	guio	_	26	punct	_	_
-9	тазартылмаған	тазартылма	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+# text = Кейде күмістен тазалау үшін электролиздеуді қолданады - анод - тазартылмаған алтын, катод - таза алтын, электролит ретінде Н[АuС14] ертіндісін қолданады сонда күміс анод шламы түрінде қалады.
+1	Кейде	Кей	NOUN	n	Case=Loc	29	obl	_	_
+2	күмістен	күмістен	NOUN	n	Case=Nom	29	obl	_	_
+3	тазалау	тазалау	PART	mod_emo	_	29	obl	_	_
+4	үшін	үш	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	29	nsubj	_	_
+5	электролиздеуді	электролиздеулы	ADP	post	_	29	obl	_	_
+6	қолданады	қолдана	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	29	nsubj	_	_
+7	-	-	PUNCT	guio	_	29	punct	_	_
+8	анод -	анод -	PUNCT	guio	_	29	punct	_	_
+9	тазартылмаған	тазартылма	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
 10	алтын	алтын	ADJ	adj	Case=Nom	11	amod	_	SpaceAfter=No
-11	,	,	PUNCT	cm	_	26	punct	_	_
-12	катод	катод	PROPN	np	Case=Nom	26	nsubj	_	_
-13	-	-	PUNCT	guio	_	26	punct	_	_
-14	таза	таза	SCONJ	cnjadv	_	26	cc	_	_
-15	алтын	алтын	ADJ	adj	Case=Nom	26	nsubj	_	SpaceAfter=No
-16	,	,	PUNCT	cm	_	26	punct	_	_
-17	электролит	электролит	NOUN	n	_	26	obl	_	_
-18	ретінде	ретін	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	20	nmod:poss	_	_
-19	Н	н	ADJ	adj	_	20	amod	_	_
-20	ертіндісін	ертіндіс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	21	ccomp	_	_
-21	қолданады	қолдана	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	22	advcl	_	_
-22	сонда	сонда	NOUN	n	Case=Loc	24	nmod:poss	_	_
-23	күміс	күміс	NUM	num	NumType=Card	24	amod	_	_
-24	анод шламы	анод шлам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nmod:poss	_	_
-25	түрінде	түр	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	26	obl	_	_
-26	қалады	қала	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-27	.	.	PUNCT	sent	_	26	punct	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	29	punct	_	_
+12	катод	катод	PROPN	np	Case=Nom	29	nsubj	_	_
+13	-	-	PUNCT	guio	_	29	punct	_	_
+14	таза	таза	SCONJ	cnjadv	_	29	cc	_	_
+15	алтын	алтын	ADJ	adj	Case=Nom	29	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	cm	_	29	punct	_	_
+17	электролит	электролит	NOUN	n	_	18	nmod:poss	_	_
+18	ретінде	ретін	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	29	obl	_	_
+19	Н	н	ADJ	adj	_	20	amod	_	SpaceAfter=No
+20	[	[	PUNCT	cm	_	29	obl	_	SpaceAfter=No
+21	АuС14	АuС14	NUM	num	NumType=Ord	23	amod	_	SpaceAfter=No
+22	]	]	PUNCT	cm	_	21	punct	_	_
+23	ертіндісін	ертіндіс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	24	nmod:poss	_	_
+24	қолданады	қолдана	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	29	obl	_	_
+25	сонда	сонда	NOUN	n	Case=Loc	27	nmod:poss	_	_
+26	күміс	күміс	NUM	num	NumType=Card	27	nummod	_	_
+27	анод шламы	анод шлам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	28	nmod:poss	_	_
+28	түрінде	түр	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	29	obl	_	_
+29	қалады	қала	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+30	.	.	PUNCT	sent	_	29	punct	_	SpaceAfter=No
 
 # newdoc
 # newpar
@@ -931,30 +947,33 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 3HCl + HNO3 = 2Cl+NOCl+2H2O, Au + 2Cl + NOCI = AuCl3 + NO, АuСl3 + НСl = Н4
-1	3HCl	3HCl	NOUN	n	Case=Nom	17	nsubj	_	_
-2	+	+	SYM	_	_	17	punct	_	_
-3	HNO3	HNO3	NOUN	n	Case=Nom	17	nsubj	_	_
-4	=	=	SYM	_	_	17	punct	_	_
-5	2Cl	2Cl	NOUN	n	Case=Nom	17	nsubj	_	SpaceAfter=No
-6	+NOCl	+NOCl	NOUN	n	Case=Nom	17	obl	_	SpaceAfter=No
-7	+2H2O	+2H2O	NOUN	n	Case=Nom	17	nmod:poss	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	17	punct	_	SpacesAfter=\n
-9	Au	Au	NOUN	n	Case=Nom	17	nsubj	_	_
-10	+	+	SYM	_	_	17	punct	_	_
-11	2Cl	2Cl	NOUN	n	Case=Nom	17	nsubj	_	_
-12	+	+	SYM	_	_	17	punct	_	_
-13	NOCI	NOCI	NUM	num	NumType=Ord	15	amod	_	_
-14	=	=	SYM	_	_	13	flat:name	_	_
-15	AuCl3	AuCl3	NOUN	n	Case=Nom	17	nmod:poss	_	_
-16	+	+	SYM	_	_	17	punct	_	_
-17	NO	NO	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
-18	,	,	PUNCT	cm	_	21	punct	_	SpacesAfter=\n
-19	АuСl3	АuСl3	NOUN	n	Case=Nom	21	nmod:poss	_	_
-20	+	+	SYM	_	_	21	amod	_	_
-21	НСl	НСl	NOUN	n	Case=Nom	17	appos	_	_
-22	=	=	SYM	_	_	23	advmod	_	_
-23	Н4	н4	NUM	num	NumType=Ord	21	appos	_	SpacesAfter=\n
+# text = 3HCl + HNO3 = 2Cl+NOCl+2H2O, Au + 2Cl + NOCI = AuCl3 + NO, АuСl3 + НСl = Н[АuСl]4
+1	3HCl	3HCl	NOUN	n	Case=Nom	26	nsubj	_	_
+2	+	+	SYM	_	_	26	punct	_	_
+3	HNO3	HNO3	NOUN	n	Case=Nom	26	nsubj	_	_
+4	=	=	SYM	_	_	26	punct	_	_
+5	2Cl	2Cl	NOUN	n	Case=Nom	26	obl	_	SpaceAfter=No
+6	+NOCl	+NOCl	NOUN	n	Case=Nom	7	nmod:poss	_	SpaceAfter=No
+7	+2H2O	+2H2O	NOUN	n	Case=Nom	26	obl	_	SpaceAfter=No
+8	,	,	PUNCT	cm	_	26	punct	_	SpacesAfter=\n
+9	Au	Au	NOUN	n	Case=Nom	26	nsubj	_	_
+10	+	+	SYM	_	_	26	obl	_	_
+11	2Cl	2Cl	NOUN	n	Case=Nom	26	obj	_	_
+12	+	+	SYM	_	_	26	punct	_	_
+13	NOCI	NOCI	NUM	num	NumType=Ord	26	nsubj	_	_
+14	=	=	SYM	_	_	26	punct	_	_
+15	AuCl3	AuCl3	NOUN	n	Case=Nom	26	nsubj	_	_
+16	+	+	SYM	_	_	26	obl	_	_
+17	NO	NO	NOUN	n	Case=Nom	26	nsubj	_	SpaceAfter=No
+18	,	,	PUNCT	cm	_	26	punct	_	SpacesAfter=\n
+19	АuСl3	АuСl3	NOUN	n	Case=Nom	26	nsubj	_	_
+20	+	+	SYM	_	_	26	obl	_	_
+21	НСl	НСl	NOUN	n	Case=Nom	26	nsubj	_	_
+22	=	=	SYM	_	_	26	obl	_	_
+23	Н	Н	ADJ	adj	_	25	amod	_	SpaceAfter=No
+24	[	[	PUNCT	cm	_	23	punct	_	SpaceAfter=No
+25	АuСl]	АuСl]	NOUN	n	Case=Nom	26	advcl	_	SpaceAfter=No
+26	4	4	NUM	num	NumType=Ord	0	root	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1092,45 +1111,54 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = 3AuCI=AuCl3 + 2Au, 3AuCl + KCl = K +2Au
+# text = 3AuCI=AuCl3 + 2Au, 3AuCl + KCl = K[AuCl4] +2Au
 1	3AuCI	3AuCI	NUM	num	NumType=Ord	2	amod	_	SpaceAfter=No
 2	=AuCl3	=AuCl3	NOUN	n	Case=Nom	4	nmod:poss	_	_
 3	+	+	SYM	_	_	4	punct	_	_
 4	2Au	2Au	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
-5	,	,	PUNCT	cm	_	11	punct	_	SpacesAfter=\n
-6	3AuCl	3AuCl	NOUN	n	Case=Nom	11	nsubj	_	_
-7	+	+	SYM	_	_	11	obl	_	_
-8	KCl	KCl	NOUN	n	Case=Nom	10	nmod:poss	_	_
-9	=	=	SYM	_	_	10	amod	_	_
-10	K	K	NOUN	n	Case=Nom	7	conj	_	_
-11	+2Au	+2Au	NOUN	n	Case=Nom	4	conj	_	SpacesAfter=\n
+5	,	,	PUNCT	cm	_	6	punct	_	SpacesAfter=\n
+6	3AuCl	3AuCl	NOUN	n	Case=Nom	4	conj	_	_
+7	+	+	SYM	_	_	13	punct	_	_
+8	KCl	KCl	NOUN	n	Case=Nom	13	nsubj	_	_
+9	=	=	SYM	_	_	13	punct	_	_
+10	K[	K[	NOUN	n	Case=Nom	13	nmod:poss	_	SpaceAfter=No
+11	AuCl4	AuCl4	NUM	num	NumType=Ord	10	conj	_	SpaceAfter=No
+12	]	]	PUNCT	cm	_	11	punct	_	_
+13	+2Au	+2Au	NOUN	n	Case=Nom	6	appos	_	SpacesAfter=\n
 
 # newdoc
 # newpar
 # sent_id = 1
-# text = Бір валентті алтыннын комплексті қосылыстары ауриттер тұрактырақ, мысалы K. Алтынның (I) оксиді да қыздырса тотығу-тотықсыздану реакциясына ұшырайды
+# text = Бір валентті алтыннын комплексті қосылыстары ауриттер тұрактырақ, мысалы K[Au(CN)2].
 1	Бір	бір	DET	det	PronType=Ind	3	nmod:poss	_	_
 2	валентті	валентті	ADJ	adj	_	3	amod	_	_
 3	алтыннын	алтыннын	NOUN	n	_	5	nmod:poss	_	_
 4	комплексті	комплексті	ADP	post	_	5	amod	_	_
 5	қосылыстары	қосылыстар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
-6	ауриттер	ауритте	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	conj	_	_
+6	ауриттер	ауриттер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	conj	_	_
 7	тұрактырақ	тұрактырақ	CCONJ	cnjcoo	_	6	conj	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	9	punct	_	_
 9-10	мысалы	_	_	_	_	_	_	_	_
 9	мыса	мы	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	7	conj	_	_
 10	лы	лы	ADP	post	_	9	case	_	_
-11	K.	K.	PUNCT	sent	_	21	punct	_	_
-12	Алтынның	Алтын	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
-13	(	(	PUNCT	lpar	_	21	obl	_	SpaceAfter=No
-14	I	I	NOUN	n	Case=Nom	21	nsubj	_	SpaceAfter=No
-15	)	)	PUNCT	rpar	_	21	obl	_	_
-16	оксиді	окси	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	advmod	_	_
-17	да	да	ADV	postadv	_	18	advmod	_	_
-18	қыздырса	қыздыр	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	19	advcl	_	_
-19	тотығу-тотықсыздану	тотығу-тотықсыздану	PART	mod_emo	_	20	acl:relcl	_	_
-20	реакциясына	реакция	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	21	obl	_	_
-21	ұшырайды	ұшырай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	_	SpacesAfter=\n
+11	K[	K[	NOUN	n	Case=Nom	12	obl	_	SpaceAfter=No
+12	Au	Au	NOUN	n	Case=Nom	9	conj	_	SpaceAfter=No
+13	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
+14	CN)2]	CN)2]	NOUN	n	Case=Nom	12	appos	_	SpaceAfter=No
+15	.	.	PUNCT	sent	_	14	punct	_	_
+
+# sent_id = 2
+# text = Алтынның (I) оксиді да қыздырса тотығу-тотықсыздану реакциясына ұшырайды
+1	Алтынның	Алтын	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+2	(	(	PUNCT	lpar	_	10	obl	_	SpaceAfter=No
+3	I	i	NUM	num	NumType=Ord	5	nsubj	_	SpaceAfter=No
+4	)	)	PUNCT	rpar	_	3	flat:name	_	_
+5	оксиді	окси	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	nmod:poss	_	_
+6	да	да	ADV	postadv	_	7	advmod	_	_
+7	қыздырса	қыздыр	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	8	advcl	_	_
+8	тотығу-тотықсыздану	тотығу-тотықсыздану	PART	mod_emo	_	9	acl:relcl	_	_
+9	реакциясына	реакция	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+10	ұшырайды	ұшырай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1214,32 +1242,43 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = NaOH + Au(OH)3 = Na, Au(OH)3 + 4HCl = H +3H2O, Au(OH)3 + 4HNO3 = H +3H2O
+# text = NaOH + Au(OH)3 = Na[Au(OH)4], Au(OH)3 + 4HCl = H[AuCl4] +3H2O, Au(OH)3 + 4HNO3 = H[Au(NO3)4] +3H2O
 1	NaOH	NaOH	NOUN	n	Case=Nom	3	nsubj	_	_
 2	+	+	SYM	_	_	3	punct	_	_
 3	Au	Au	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
-4	(	(	PUNCT	lpar	_	7	punct	_	SpaceAfter=No
-5	OH)3	OH)3	NOUN	n	Case=Nom	7	nsubj	_	_
-6	=	=	SYM	_	_	7	punct	_	_
-7	Na	Na	NOUN	n	Case=Nom	3	conj	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	9	punct	_	SpacesAfter=\n
-9	Au	Au	NOUN	n	Case=Nom	7	conj	_	SpaceAfter=No
-10	(	(	PUNCT	lpar	_	13	punct	_	SpaceAfter=No
-11	OH)3	OH)3	NOUN	n	Case=Nom	13	nsubj	_	_
-12	+	+	SYM	_	_	13	punct	_	_
-13	4HCl	4HCl	NOUN	n	Case=Nom	9	conj	_	_
-14	=	=	SYM	_	_	16	punct	_	_
-15	H	H	NOUN	n	Case=Nom	16	nmod:poss	_	_
-16	+3H2O	+3H2O	NOUN	n	Case=Nom	13	conj	_	SpaceAfter=No
-17	,	,	PUNCT	cm	_	18	punct	_	SpacesAfter=\n
-18	Au	Au	NOUN	n	Case=Nom	16	conj	_	SpaceAfter=No
-19	(	(	PUNCT	lpar	_	20	punct	_	SpaceAfter=No
-20	OH)3	OH)3	NOUN	n	Case=Nom	18	conj	_	_
-21	+	+	SYM	_	_	25	cc	_	_
-22	4HNO3	4HNO3	NOUN	n	Case=Nom	24	nmod:poss	_	_
-23	=	=	SYM	_	_	24	amod	_	_
-24	H	H	NOUN	n	Case=Nom	25	nmod:poss	_	_
-25	+3H2O	+3H2O	NOUN	n	Case=Nom	20	conj	_	SpacesAfter=\n
+4	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
+5	OH)3	OH)3	NOUN	n	Case=Nom	8	nsubj	_	_
+6	=	=	SYM	_	_	8	punct	_	_
+7	Na[	Na[	NOUN	n	Case=Nom	8	nmod:poss	_	SpaceAfter=No
+8	Au	Au	NOUN	n	Case=Nom	3	conj	_	SpaceAfter=No
+9	(	(	PUNCT	lpar	_	13	punct	_	SpaceAfter=No
+10	OH)4	OH)4	NUM	num	NumType=Ord	11	nummod	_	SpaceAfter=No
+11	]	]	PUNCT	cm	_	13	cc	_	SpaceAfter=No
+12	,	,	PUNCT	cm	_	13	punct	_	SpacesAfter=\n
+13	Au	Au	NOUN	n	Case=Nom	8	appos	_	SpaceAfter=No
+14	(	(	PUNCT	lpar	_	20	punct	_	SpaceAfter=No
+15	OH)3	OH)3	NOUN	n	Case=Nom	20	nsubj	_	_
+16	+	+	SYM	_	_	20	punct	_	_
+17	4HCl	4HCl	NOUN	n	Case=Nom	20	nsubj	_	_
+18	=	=	SYM	_	_	20	punct	_	_
+19	H[	H[	NOUN	n	Case=Nom	20	obl	_	SpaceAfter=No
+20	AuCl4	AuCl4	NUM	num	NumType=Ord	13	conj	_	SpaceAfter=No
+21	]	]	PUNCT	cm	_	22	punct	_	_
+22	+3H2O	+3H2O	NOUN	n	Case=Nom	20	conj	_	SpaceAfter=No
+23	,	,	PUNCT	cm	_	24	punct	_	SpacesAfter=\n
+24	Au	Au	NOUN	n	Case=Nom	22	conj	_	SpaceAfter=No
+25	(	(	PUNCT	lpar	_	28	punct	_	SpaceAfter=No
+26	OH)3	OH)3	NOUN	n	Case=Nom	28	nsubj	_	_
+27	+	+	SYM	_	_	28	punct	_	_
+28	4HNO3	4HNO3	NOUN	n	Case=Nom	24	conj	_	_
+29	=	=	SYM	_	_	31	punct	_	_
+30	H[	H[	NOUN	n	Case=Nom	31	nmod:poss	_	SpaceAfter=No
+31	Au	Au	NOUN	n	Case=Nom	28	conj	_	SpaceAfter=No
+32	(	(	PUNCT	lpar	_	36	punct	_	SpaceAfter=No
+33	NO3)	No3)	PUNCT	rpar	_	36	nmod:poss	_	SpaceAfter=No
+34	4	4	NUM	num	NumType=Ord	33	conj	_	SpaceAfter=No
+35	]	]	PUNCT	cm	_	34	punct	_	_
+36	+3H2O	+3H2O	NOUN	n	Case=Nom	31	appos	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1258,12 +1297,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = NaBr + AuBr3 = Na
+# text = NaBr + AuBr3 = Na[AuBr4]
 1	NaBr	NaBr	NOUN	n	Case=Nom	3	nmod:poss	_	_
 2	+	+	SYM	_	_	3	amod	_	_
-3	AuBr3	AuBr3	NOUN	n	Case=Nom	5	nmod:poss	_	_
-4	=	=	SYM	_	_	5	amod	_	_
-5	Na	Na	NOUN	n	Case=Nom	0	root	_	SpacesAfter=\n
+3	AuBr3	AuBr3	NOUN	n	Case=Nom	5	obl	_	_
+4	=	=	SYM	_	_	5	punct	_	_
+5	Na	Na	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
+6	[	[	PUNCT	cm	_	7	punct	_	SpaceAfter=No
+7	AuBr4	AuBr4	NUM	num	NumType=Ord	5	appos	_	SpaceAfter=No
+8	]	]	PUNCT	cm	_	7	punct	_	SpacesAfter=\n
 
 # newdoc
 # newpar
@@ -1278,12 +1320,15 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = AuCl3 + H2O = H2
+# text = AuCl3 + H2O = H2[AuOCl3]
 1	AuCl3	AuCl3	NOUN	n	Case=Nom	3	nmod:poss	_	_
-2	+	+	SYM	_	_	1	flat:name	_	_
-3	H2O	H2O	NOUN	n	Case=Nom	5	obl	_	_
-4	=	=	SYM	_	_	5	advmod	_	_
-5	H2	h2	NUM	num	NumType=Ord	0	root	_	SpacesAfter=\n
+2	+	+	SYM	_	_	3	amod	_	_
+3	H2O	H2O	NOUN	n	Case=Nom	0	root	_	_
+4	=	=	SYM	_	_	8	punct	_	_
+5	H2	H2	NUM	num	NumType=Ord	7	amod	_	SpaceAfter=No
+6	[	[	PUNCT	cm	_	5	punct	_	SpaceAfter=No
+7	AuOCl3	AuOCl3	NOUN	n	Case=Nom	8	nmod:poss	_	SpaceAfter=No
+8	]	]	PUNCT	cm	_	3	appos	_	SpacesAfter=\n
 
 # newdoc
 # newpar

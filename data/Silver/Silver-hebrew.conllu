@@ -84,7 +84,7 @@
 # newdoc
 # newpar
 # sent_id = 1
-# text = שווי כל הכסף בעולם עמד על כ 1.38 טריליון דולר (נכון לנובמבר 2021).
+# text = שווי כל הכסף בעולם עמד על כ 1.38 טריליון דולר (נכון לנובמבר 2021)[דרוש מקור].
 1	שווי	שווי	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	8	nsubj	_	_
 2	כל	כול	DET	DET	Definite=Cons	4	det	_	_
 3-4	הכסף	_	_	_	_	_	_	_	_
@@ -109,7 +109,11 @@
 18	2	2	NUM	NUM	_	15	dep	_	_
 19	021	021	NUM	NUM	_	18	nummod	_	_
 20	)	)	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+21	[	[	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No
+22	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	13	appos	_	_
+23	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	22	compound:smixut	_	SpaceAfter=No
+24	]	]	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No
+25	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = hebrew-htb-ud-2.6-200830
@@ -458,12 +462,23 @@
 
 # newpar
 # sent_id = 13
-# text = {\displaystyle \leftCl}
-1	{	{	ADV	ADV	_	3	advmod	_	SpaceAfter=No
-2	\	\	ADV	ADV	_	3	det	_	SpaceAfter=No
-3	displaystyle	displaystyle	NOUN	NOUN	_	0	root	_	_
-4	\leftCl	\leftcl	PROPN	PROPN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-5	}	}	PUNCT	PUNCT	HebSource=ConvUncertainHead	3	dep	_	SpacesAfter=\n\n
+# text = {\displaystyle \left[Ag(NH_{3})_{2}\right]Cl}
+1	{	{	ADV	ADV	_	0	root	_	SpaceAfter=No
+2	\	\	ADV	ADV	_	3	det:def	_	SpaceAfter=No
+3	displaystyle	displaystyle	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+4	\left[	\left[	ADV	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+5	Ag(	ag(	NOUN	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+6	NH_{	nh_{	NOUN	NOUN	_	5	flat:name	_	SpaceAfter=No
+7	3	3	NUM	NUM	_	5	nummod	_	SpaceAfter=No
+8	}	}	NOUN	NOUN	_	5	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+10	_{	וא	NOUN	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+11	2	2	NUM	NUM	_	10	nummod	_	SpaceAfter=No
+12	}	}	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
+13	\right	\right	NOUN	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+14	]	]	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
+15	Cl	cl	PROPN	PROPN	HebSource=ConvUncertainHead	1	dep	_	SpaceAfter=No
+16	}	}	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 14
@@ -1145,14 +1160,26 @@
 
 # newpar
 # sent_id = 17
-# text = {\displaystyle \left^{2+}}
-1	{	{	ADV	ADV	_	0	root	_	SpaceAfter=No
-2	\	\	ADV	ADV	_	3	dep	_	SpaceAfter=No
+# text = {\displaystyle \left[Ag(H_{2}O)_{4}\right]^{2+}}
+1	{	{	ADP	ADP	_	0	root	_	SpaceAfter=No
+2	\	\	ADV	ADV	_	3	det:def	_	SpaceAfter=No
 3	displaystyle	displaystyle	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
-4	\left^{	\left^{	ADV	ADV	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-5	2+	2+	NUM	NUM	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
-6	}	}	ADV	ADV	_	5	advmod	_	SpaceAfter=No
-7	}	}	PUNCT	PUNCT	_	1	dep	_	SpacesAfter=\n\n\s
+4	\	\	ADV	ADV	_	3	advmod	_	SpaceAfter=No
+5	left[	left[	NOUN	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+6	Ag(	ag(	NOUN	NOUN	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+7	H_{	h_	DET	NOUN	_	6	flat:name	_	SpaceAfter=No
+8	2	2	NUM	NUM	_	6	dep	_	SpaceAfter=No
+9	}	}	PUNCT	PUNCT	HebSource=ConvUncertainHead	6	dep	_	SpaceAfter=No
+10	O)	o)	PUNCT	PUNCT	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+11	_{	וא	NOUN	NOUN	HebSource=ConvUncertainHead	5	dep	_	SpaceAfter=No
+12	4	4	NUM	NUM	_	11	nummod	_	SpaceAfter=No
+13	}	}	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No
+14	\right	\right	NOUN	NOUN	HebSource=ConvUncertainHead	3	dep	_	SpaceAfter=No
+15	]	]	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+16	^{	^{	ADV	ADP	_	3	dep	_	SpaceAfter=No
+17	2+	2+	NUM	NUM	_	16	dep	_	SpaceAfter=No
+18	}	}	PUNCT	PUNCT	_	16	dep	_	SpaceAfter=No
+19	}	}	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\n\n\s
 
 # newpar
 # sent_id = 18

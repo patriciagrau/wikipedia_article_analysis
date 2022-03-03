@@ -278,7 +278,7 @@
 16	.	.	PUNCT	interp	PunctType=Peri	12	punct	_	_
 
 # sent_id = 7
-# text = Tę drugą nazwę można traktować jako trynominalną nazwę podgatunku lub jako uproszczony zapis nazwy formy udomowionej Canis lupus f. familiaris, zależnie od tego, czy uważać psa domowego za podgatunek wilka.
+# text = Tę drugą nazwę można traktować jako trynominalną nazwę podgatunku lub jako uproszczony zapis nazwy formy udomowionej Canis lupus f. familiaris, zależnie od tego, czy uważać psa domowego za podgatunek wilka[potrzebny przypis].
 1	Tę	ten	DET	adj:sg:acc:f:pos	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 2	drugą	drugi	ADJ	adj:sg:acc:f:pos	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
 3	nazwę	nazwa	NOUN	subst:sg:acc:f	Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
@@ -295,7 +295,7 @@
 14	nazwy	nazwa	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	13	nmod:arg	_	_
 15	formy	forma	NOUN	subst:sg:gen:f	Case=Gen|Gender=Fem|Number=Sing	14	nmod:arg	_	_
 16	udomowionej	udomowić	ADJ	ppas:sg:gen:f:perf:aff	Aspect=Perf|Case=Gen|Gender=Fem|Number=Sing|Polarity=Pos|VerbForm=Part|Voice=Pass	15	acl	_	_
-17	Canis	canis	PROPN	subst:sg:nom:m2	Animacy=Nhum|Case=Nom|Gender=Masc|Number=Sing	15	appos	_	_
+17	Canis	canis	PROPN	subst:sg:nom:m2	Animacy=Nhum|Case=Nom|Gender=Masc|Number=Sing	15	nmod	_	_
 18	lupus	lupus	NOUN	subst:sg:nom:m2	Foreign=Yes	17	flat	_	_
 19	f	f	X	brev:pun	Abbr=Yes|Pun=Yes	17	flat	_	SpaceAfter=No
 20	.	.	PUNCT	interp	PunctType=Peri	19	punct	_	_
@@ -306,13 +306,17 @@
 25	tego	to	PRON	subst:sg:gen:n:ncol	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	5	obl	_	SpaceAfter=No
 26	,	,	PUNCT	interp	PunctType=Comm	28	punct	_	_
 27	czy	czy	PART	part	PartType=Int	28	advmod	_	_
-28	uważać	uważać	VERB	inf:imperf	Aspect=Imp|VerbForm=Inf|Voice=Act	25	acl:relcl	_	_
+28	uważać	uważać	VERB	inf:imperf	Aspect=Imp|VerbForm=Inf|Voice=Act	25	xcomp	_	_
 29	psa	pies	NOUN	subst:sg:acc:m2	Animacy=Nhum|Case=Acc|Gender=Masc|Number=Sing	28	obj	_	_
 30	domowego	domowy	ADJ	adj:sg:acc:m2:pos	Animacy=Nhum|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
 31	za	za	ADP	prep:acc	AdpType=Prep	32	case	_	_
 32	podgatunek	podgatunek	NOUN	subst:sg:acc:m3	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	28	obl:arg	_	_
 33	wilka	wilek	NOUN	subst:sg:gen:m2	Animacy=Nhum|Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
-34	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	SpacesAfter=\n
+34	[	[	PUNCT	interp	PunctSide=Ini|PunctType=Brck	36	punct	_	SpaceAfter=No
+35	potrzebny	potrzebny	ADJ	adj:sg:nom:m3:pos	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	36	amod	_	SpacesAfter= 
+36	przypis	przypis	NOUN	subst:sg:nom:m3	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
+37	]	]	PUNCT	interp	PunctSide=Fin|PunctType=Brck	36	punct	_	SpaceAfter=No
+38	.	.	PUNCT	interp	PunctType=Peri	4	punct	_	SpacesAfter=\n
 
 # generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
 # udpipe_model = polish-pdb-ud-2.6-200830
