@@ -11,14 +11,10 @@
 4	,	,	PUNCT	_	_	3	punct	_	_
 5	den	den	DET	_	Gender=Com|Number=Sing|PronType=Dem	7	det	_	_
 6	frie	fri	ADJ	_	Definite=Def|Degree=Pos|Number=Sing	7	amod	_	_
-7	encyklopædi	encyklopædi	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	1	list	_	SpaceAfter=No
+7	encyklopædi	encyklopædi	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	1	list	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 2
 # text = Republikken Niger er et land beliggende i det vestlige Afrika, navngivet efter Nigerfloden.
 1	Republikken	republik	NOUN	_	Definite=Def|Gender=Com|Number=Sing	6	nsubj	_	_
 2	Niger	Niger	PROPN	_	_	1	appos	_	_
@@ -36,8 +32,8 @@
 14	Nigerfloden	Nigerfloden	NOUN	_	Definite=Def|Gender=Com|Number=Sing	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 2
-# text = Niger grænser op til Nigeria og Benin mod syd, Burkina Faso og Mali mod vest, Algeriet og Libyen mod nord og Tchad mod øst.
+# sent_id = 3
+# text = Niger grænser op til Nigeria og Benin mod syd, Burkina Faso og
 1	Niger	Niger	PROPN	_	_	2	nsubj	_	_
 2	grænser	grænse	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	op	op	ADV	_	_	2	obl:loc	_	_
@@ -46,27 +42,30 @@
 6	og	og	CCONJ	_	_	7	cc	_	_
 7	Benin	Benin	PROPN	_	_	5	conj	_	_
 8	mod	mod	ADP	_	AdpType=Prep	9	case	_	_
-9	syd	syd	NOUN	_	_	2	obl	_	SpaceAfter=No
+9	syd	syd	NOUN	_	Definite=Ind	2	obl	_	SpaceAfter=No
 10	,	,	PUNCT	_	_	11	punct	_	_
 11	Burkina	Burkina	PROPN	_	_	5	conj	_	_
 12	Faso	Faso	PROPN	_	_	11	flat	_	_
-13	og	og	CCONJ	_	_	14	cc	_	_
-14	Mali	Mali	PROPN	_	_	5	conj	_	_
-15	mod	mod	ADP	_	AdpType=Prep	16	case	_	_
-16	vest	vest	NOUN	_	Definite=Ind	2	obl	_	SpaceAfter=No
-17	,	,	PUNCT	_	_	18	punct	_	_
-18	Algeriet	Algeriet	PROPN	_	_	5	conj	_	_
-19	og	og	CCONJ	_	_	20	cc	_	_
-20	Libyen	Libyen	PROPN	_	_	18	conj	_	_
-21	mod	mod	ADP	_	AdpType=Prep	22	case	_	_
-22	nord	nord	NOUN	_	_	18	nmod	_	_
-23	og	og	CCONJ	_	_	24	cc	_	_
-24	Tchad	Tchad	PROPN	_	_	5	conj	_	_
-25	mod	mod	ADP	_	AdpType=Prep	26	case	_	_
-26	øst	øst	NOUN	_	Definite=Ind	24	nmod	_	SpaceAfter=No
-27	.	.	PUNCT	_	_	2	punct	_	_
+13	og	og	CCONJ	_	_	7	cc	_	_
 
-# sent_id = 3
+# sent_id = 4
+# text = Mali mod vest, Algeriet og Libyen mod nord og Tchad mod øst.
+1	Mali	Mali	PROPN	_	_	0	root	_	_
+2	mod	mod	ADP	_	AdpType=Prep	3	case	_	_
+3	vest	vest	NOUN	_	Definite=Ind	1	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	Algeriet	Algeriet	PROPN	_	_	3	conj	_	_
+6	og	og	CCONJ	_	_	7	cc	_	_
+7	Libyen	Libyen	PROPN	_	_	3	conj	_	_
+8	mod	mod	ADP	_	AdpType=Prep	9	case	_	_
+9	nord	nord	NOUN	_	_	1	nmod	_	_
+10	og	og	CCONJ	_	_	11	cc	_	_
+11	Tchad	Tchad	PROPN	_	_	3	conj	_	_
+12	mod	mod	ADP	_	AdpType=Prep	13	case	_	_
+13	øst	øst	NOUN	_	Definite=Ind	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 5
 # text = En stor del af landet ligger i Sahelbæltet.
 1	En	en	DET	_	Gender=Com|Number=Sing|PronType=Ind	3	det	_	_
 2	stor	stor	ADJ	_	Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	3	amod	_	_
@@ -76,23 +75,15 @@
 6	ligger	ligge	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	i	i	ADP	_	AdpType=Prep	8	case	_	_
 8	Sahelbæltet	sahelbælt	NOUN	_	Definite=Def|Gender=Neut|Number=Sing	6	obl	_	SpaceAfter=No
-9	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 6
 # text = Historie
-1	Historie	historie	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+1	Historie	historie	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 7
 # text = Indtil koloniseringen var Niger en af de vigtigste handelsruter i Vestafrika, og store stammer som f.eks. Songhai, Mali, Gao og Hausa gjorde krav på området.
 1	Indtil	indtil	ADP	_	AdpType=Prep	2	case	_	_
 2	koloniseringen	kolonisering	NOUN	_	Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
@@ -125,7 +116,7 @@
 29	området	område	NOUN	_	Definite=Def|Gender=Neut|Number=Sing	27	nmod	_	SpaceAfter=No
 30	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 8
 # text = Den franske kolonisering begyndte i starten af 1900-tallet, men franskmændene mødte modstand fra især nomadefolket Tuareg.
 1	Den	den	DET	_	Gender=Com|Number=Sing|PronType=Dem	3	det	_	_
 2	franske	fransk	ADJ	_	Definite=Def|Degree=Pos|Number=Sing	3	amod	_	_
@@ -146,13 +137,13 @@
 17	Tuareg	Tuareg	PROPN	_	_	16	appos	_	SpaceAfter=No
 18	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 9
 # text = I 1922 blev
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	1922	1922	NUM	_	NumType=Card	0	root	_	_
 3	blev	blive	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	2	aux	_	_
 
-# sent_id = 4
+# sent_id = 10
 # text = Niger en fransk koloni og blev en del af Fransk Vestafrika.
 1	Niger	Niger	VERB	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 2	en	en	DET	_	Gender=Com|Number=Sing|PronType=Ind	4	det	_	_
@@ -167,7 +158,7 @@
 11	Vestafrika	Vestafrika	PROPN	_	_	8	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 11
 # text = I 1956 fik Niger igen politisk indflydelse, da Frankrig ophævede de ulige stemmerettigheder.
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	1956	1956	NUM	_	NumType=Card	3	nummod	_	_
@@ -185,7 +176,7 @@
 14	stemmerettigheder	stemmerettighed	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	11	obj	_	SpaceAfter=No
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 12
 # text = Denne indflydelse øgedes yderligere i 1958, hvor Niger blev en selvstyrende stat under Frankrig.
 1	Denne	denne	DET	_	Gender=Com|Number=Sing|PronType=Dem	2	det	_	_
 2	indflydelse	indflydelse	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	3	nsubj	_	_
@@ -204,7 +195,7 @@
 15	Frankrig	Frankrig	PROPN	_	_	13	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 7
+# sent_id = 13
 # text = Den 3. august 1960 blev Niger selvstændigt.
 1	Den	den	DET	_	Gender=Com|Number=Sing|PronType=Dem	3	det	_	_
 2	3.	3.	ADJ	_	NumType=Ord	3	amod	_	_
@@ -213,24 +204,16 @@
 5	blev	blive	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
 6	Niger	Niger	PROPN	_	_	7	nsubj	_	_
 7	selvstændigt	selvstændigt	ADJ	_	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+8	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 14
 # text = Efter selvstændighed
 1	Efter	efter	ADP	_	AdpType=Prep	2	case	_	_
-2	selvstændighed	selvstændighed	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+2	selvstændighed	selvstændighed	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 15
 # text = De første fjorten år efter Niger opnåede selvstændighed, blev landet ledet enevældigt af præsident Hamani Diori.
 1	De	den	DET	_	Number=Plur|PronType=Dem	4	det	_	_
 2	første	første	ADJ	_	Degree=Pos	3	amod	_	_
@@ -251,7 +234,7 @@
 17	Diori	Diori	PROPN	_	_	16	flat	_	SpaceAfter=No
 18	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 2
+# sent_id = 16
 # text = I 1974 blev Niger ramt af tørke.
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	1974	1974	NUM	_	NumType=Card	5	nummod	_	_
@@ -262,7 +245,7 @@
 7	tørke	tørke	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 17
 # text = Tørken, kombineret med beskyldninger om korruption, resulterede i at regeringen mistede al støtte og blev væltet af et militærkup.
 1	Tørken	tørke	NOUN	_	Definite=Def|Gender=Com|Number=Sing	9	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -287,7 +270,7 @@
 21	militærkup	militærkup	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 4
+# sent_id = 18
 # text = Seyni Kountché ledede landet derefter indtil hans død i 1987, hvorefter general Ali Saibou tog over.
 1	Seyni	Seyni	PROPN	_	_	3	nsubj	_	_
 2	Kountché	Kountché	PROPN	_	_	1	flat	_	_
@@ -308,7 +291,7 @@
 17	over	over	ADV	_	_	16	compound:prt	_	SpaceAfter=No
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 19
 # text = Saibou løslod politiske fanger og indførte reformer der skulle gavne Nigers befolkning, men borgernes ønske om et demokratisk multi-partisk system blev for stort og han var tvunget til at afgive magten.
 1	Saibou	Saibou	PROPN	_	_	2	nsubj	_	_
 2	løslod	løslade	VERB	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -344,7 +327,7 @@
 32	magten	magt	NOUN	_	Definite=Def|Gender=Com|Number=Sing	31	obj	_	SpaceAfter=No
 33	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 20
 # text = I begyndelsen af 90'erne opstod nye partier og en debat om hvordan samfundet skulle indrettes, begyndte at tage form.
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	begyndelsen	begyndelse	NOUN	_	Definite=Def|Gender=Com|Number=Sing	5	obl	_	_
@@ -368,7 +351,7 @@
 20	form	form	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	19	obj	_	SpaceAfter=No
 21	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 21
 # text = I 1993 blev Nigers første demokratiske regering valgt.
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	1993	1993	NUM	_	NumType=Card	8	nummod	_	_
@@ -380,7 +363,7 @@
 8	valgt	vælge	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 8
+# sent_id = 22
 # text = I 2010 blev præsidenten Mamadou Tandja styrtet i et militærkup, efter at have forsøgt at ændre grundloven, så han kunne blive valgt igen.
 1	I	i	ADP	_	AdpType=Prep	2	case	_	_
 2	2010	2010	NUM	_	NumType=Card	7	nummod	_	_
@@ -407,23 +390,15 @@
 23	blive	blive	AUX	_	VerbForm=Inf|Voice=Act	24	aux	_	_
 24	valgt	vælge	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part	7	advmod	_	_
 25	igen	igen	ADV	_	_	24	advmod	_	SpaceAfter=No
-26	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 23
 # text = Geografi
-1	Geografi	geografi	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+1	Geografi	geografi	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 24
 # text = Nigers areal måler 1,267,000 km2, hvilket gør det til verdens 22. største land.
 1	Nigers	Niger	PROPN	_	Case=Gen	2	nmod:poss	_	_
 2	areal	areal	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	3	nsubj	_	_
@@ -441,7 +416,7 @@
 14	land	land	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	8	obl	_	SpaceAfter=No
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 25
 # text = Landets subtropiske klima er ekstremt tørt, og store områder af Niger er dækket af ørken.
 1	Landets	land	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	3	nmod:poss	_	_
 2	subtropiske	subtropisk	ADJ	_	Definite=Def|Degree=Pos|Number=Sing	3	amod	_	_
@@ -459,14 +434,10 @@
 14	dækket	dække	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_
 15	af	af	ADP	_	AdpType=Prep	16	case	_	_
 16	ørken	ørk	NOUN	_	Definite=Def|Gender=Com|Number=Sing	14	obl	_	SpaceAfter=No
-17	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\s\n
+17	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\s\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 26
 # text = I den sydlige del af landet ligger den bjergrige region Termit Massif.
 1	I	i	ADP	_	AdpType=Prep	4	case	_	_
 2	den	den	DET	_	Gender=Com|Number=Sing|PronType=Dem	4	det	_	_
@@ -480,24 +451,16 @@
 10	region	region	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
 11	Termit	Termit	PROPN	_	_	7	nsubj	_	_
 12	Massif	Massif	PROPN	_	_	11	flat	_	SpaceAfter=No
-13	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\n
+13	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 27
 # text = Administrativ inddeling
 1	Administrativ	administrativ	ADJ	_	Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	2	amod	_	_
-2	inddeling	inddeling	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpaceAfter=No
+2	inddeling	inddeling	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 28
 # text = Niger er inddelt i syv regioner og et hovedstadsdistrikt (Niamey).
 1	Niger	Niger	PROPN	_	_	3	nsubj	_	_
 2	er	være	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
@@ -513,7 +476,7 @@
 12	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No
 13	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 29
 # text = Regionerne er inddelt i 36 departementer (départements) som igen er inddelt i 265 kommuner (communes).
 1	Regionerne	region	NOUN	_	Definite=Def|Gender=Com|Number=Plur	3	nsubj	_	_
 2	er	være	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
@@ -534,23 +497,15 @@
 17	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No
 18	communes	commune	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	SpaceAfter=No
 19	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No
-20	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 30
 # text = Nutid
-1	Nutid	nutid	NOUN	_	_	0	root	_	SpaceAfter=No
+1	Nutid	nutid	NOUN	_	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 31
 # text = I dag er Niger et af verdens fattigste og mest underudviklede lande.
 1	I	i	ADP	_	AdpType=Prep	5	advmod	_	_
 2	dag	dag	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	1	fixed	_	_
@@ -566,7 +521,7 @@
 12	lande	land	NOUN	_	Definite=Ind|Gender=Neut|Number=Plur	5	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 32
 # text = Tørke og græshoppesværme ødelægger gang på gang bøndernes afgrøder og sætter landets økonomi ud af kurs.
 1	Tørke	tørke	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
 2	og	og	CCONJ	_	_	3	cc	_	_
@@ -586,7 +541,7 @@
 16	kurs	kurs	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	14	obl	_	SpaceAfter=No
 17	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 33
 # text = Knaphed på frugtbar jord og vand er ofte skyld i stridigheder mellem især de forskellige etniske grupper i Niger.
 1	Knaphed	knaphed	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	9	nsubj	_	_
 2	på	på	ADP	_	AdpType=Prep	4	case	_	_
@@ -607,46 +562,30 @@
 17	grupper	gruppe	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	11	nmod	_	_
 18	i	i	ADP	_	AdpType=Prep	19	case	_	_
 19	Niger	Niger	PROPN	_	_	17	nmod	_	SpaceAfter=No
-20	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\n
+20	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 34
 # text = Galleri
-1	Galleri	galleri	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+1	Galleri	galleri	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 35
 # text = Kort over Niger
 1	Kort	kort	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	0	root	_	_
 2	over	over	ADP	_	AdpType=Prep	3	case	_	_
-3	Niger	Niger	PROPN	_	_	1	nmod	_	SpacesAfter=\n
+3	Niger	Niger	PROPN	_	_	1	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 36
 # text = Nigersk kvinde fra Termit
 1	Nigersk	nigersk	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	2	amod	_	_
 2	kvinde	kvinde	NOUN	_	Definite=Ind|Gender=Com|Number=Sing	0	root	_	_
 3	fra	fra	ADP	_	AdpType=Prep	4	case	_	_
-4	Termit	Termit	PROPN	_	_	2	nmod	_	SpacesAfter=\n
+4	Termit	Termit	PROPN	_	_	2	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = danish-ddt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 37
 # text = Kilder
-1	Kilder	kilde	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpaceAfter=No
+1	Kilder	kilde	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	0	root	_	SpacesAfter=\n\n\n\n
 

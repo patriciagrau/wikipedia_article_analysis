@@ -7,15 +7,11 @@
 # text = רוסיה – ויקיפדיה
 1	רוסיה	רוסיה	PROPN	PROPN	_	0	root	_	_
 2	–	–	ADP	ADP	_	3	case	_	_
-3	ויקיפדיה	ויקיפדיה	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+3	ויקיפדיה	ויקיפדיה	NOUN	NOUN	_	1	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = הפדרציה הרוסית (ברוסית: Российская Федерация, להאזנה (מידע • עזרה) תעתיק פונטי מדויק: רַאסִיֿיְסְקַאיָה פֶדֶרָֿאצְיָה), היא שמה העכשווי של רוסיה (Россия), ארץ ובימינו מדינה פדרלית, בעלת השטח הגדול ביותר בעולם.
+# sent_id = 2
+# text = הפדרציה הרוסית (ברוסית: Российская Федерация, להאזנה (מידע • עזרה) תעתיק פונטי מדויק: רַאסִיֿיְסְקַאיָה פֶדֶרָֿאצְיָה), היא שמה העכשווי של רוסיה (Россия), מדינת האומה הרוסית בגבולותיה הנוכחיים, בימינו מדינה פדרלית, בעלת השטח הגדול ביותר בעולם.
 1	הפדרציה	הפדרציה	NOUN	NOUN	Gender=Fem|Number=Sing	26	nsubj:cop	_	_
 2-3	הרוסית	_	_	_	_	_	_	_	_
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
@@ -25,8 +21,8 @@
 5	ב	ב	ADP	ADP	_	6	case	_	_
 6	רוסית	רוסית	PROPN	PROPN	_	1	appos	_	_
 7	:	:	PUNCT	PUNCT	_	6	punct	_	_
-8	Российская	российская	PROPN	PROPN	HebSource=ConvUncertainHead	1	dep	_	_
-9	Федерация	федерация	NOUN	NOUN	Gender=Fem|Number=Sing	8	flat:name	_	SpaceAfter=No
+8	Российская	российская	PROPN	PROPN	HebSource=ConvUncertainHead	6	dep	_	_
+9	Федерация	федерация	NOUN	NOUN	_	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	PUNCT	_	8	punct	_	_
 11	להאזנה	האזנה	VERB	VERB	HebSource=ConvUncertainHead	8	dep	_	_
 12	(	(	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
@@ -53,30 +49,43 @@
 32	Россия	россия	PROPN	PROPN	_	30	appos	_	SpaceAfter=No
 33	)	)	PUNCT	PUNCT	_	32	punct	_	SpaceAfter=No
 34	,	,	PUNCT	PUNCT	_	30	punct	_	_
-35	ארץ	ארץ	NOUN	NOUN	Gender=Fem|Number=Sing	30	appos	_	_
-36-39	ובימינו	_	_	_	_	_	_	_	_
-36	וב	וב	CCONJ	CCONJ	_	37	cc	_	_
-37	יום_	יום	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Plur	35	conj	_	_
-38	_של_	של	ADP	ADP	_	39	case:gen	_	_
-39	_אנחנו	הוא	PRON	PRON	Case=Gen|Gender=Fem,Masc|Number=Plur|Person=1|PronType=Prs	37	nmod:poss	_	_
-40	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	35	conj	_	_
-41	פדרלית	פדרלי	ADJ	ADJ	Gender=Fem|Number=Sing	40	amod	_	SpaceAfter=No
-42	,	,	PUNCT	PUNCT	_	40	punct	_	_
-43	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	40	acl	_	_
-44-45	השטח	_	_	_	_	_	_	_	_
-44	ה	ה	DET	DET	PronType=Art	45	det:def	_	_
-45	שטח	שטח	NOUN	NOUN	Gender=Masc|Number=Sing	43	compound:smixut	_	_
-46-47	הגדול	_	_	_	_	_	_	_	_
-46	ה	ה	DET	DET	PronType=Art	47	det:def	_	_
-47	גדול	גדול	ADJ	ADJ	Gender=Masc|Number=Sing	45	amod	_	_
-48	ביותר	ביותר	ADV	ADV	_	47	advmod	_	_
-49-51	בעולם	_	_	_	_	_	_	_	SpaceAfter=No
-49	ב	ב	ADP	ADP	_	51	case	_	_
-50	ה_	ה	DET	DET	PronType=Art	51	det:def	_	_
-51	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	47	advmod	_	_
-52	.	.	PUNCT	PUNCT	_	26	punct	_	_
+35	מדינת	מדינה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	30	appos	_	_
+36-37	האומה	_	_	_	_	_	_	_	_
+36	ה	ה	DET	DET	PronType=Art	37	det:def	_	_
+37	אומה	אומה	NOUN	NOUN	Gender=Fem|Number=Sing	35	compound:smixut	_	_
+38-39	הרוסית	_	_	_	_	_	_	_	_
+38	ה	ה	DET	DET	PronType=Art	39	det:def	_	_
+39	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	37	amod	_	_
+40-43	בגבולותיה	_	_	_	_	_	_	_	_
+40	ב	ב	ADP	ADP	_	41	case	_	_
+41	גבול_	גבול	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Plur	35	nmod	_	_
+42	_של_	של	ADP	ADP	_	43	case:gen	_	_
+43	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	41	nmod:poss	_	_
+44	הנוכחיים	הנוכחי	ADJ	ADJ	Gender=Masc|Number=Plur	41	amod	_	SpaceAfter=No
+45	,	,	PUNCT	PUNCT	_	35	punct	_	_
+46-49	בימינו	_	_	_	_	_	_	_	_
+46	ב	ב	ADP	ADP	_	47	case	_	_
+47	יום_	יום	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	35	nmod	_	_
+48	_של_	של	ADP	ADP	_	49	case:gen	_	_
+49	_אנחנו	הוא	PRON	PRON	Case=Gen|Gender=Fem,Masc|Number=Plur|Person=1|PronType=Prs	47	nmod:poss	_	_
+50	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	35	appos	_	_
+51	פדרלית	פדרלי	ADJ	ADJ	Gender=Fem|Number=Sing	50	amod	_	SpaceAfter=No
+52	,	,	PUNCT	PUNCT	_	50	punct	_	_
+53	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	50	acl	_	_
+54-55	השטח	_	_	_	_	_	_	_	_
+54	ה	ה	DET	DET	PronType=Art	55	det:def	_	_
+55	שטח	שטח	NOUN	NOUN	Gender=Masc|Number=Sing	53	compound:smixut	_	_
+56-57	הגדול	_	_	_	_	_	_	_	_
+56	ה	ה	DET	DET	PronType=Art	57	det:def	_	_
+57	גדול	גדול	ADJ	ADJ	Gender=Masc|Number=Sing	55	amod	_	_
+58	ביותר	ביותר	ADV	ADV	_	57	advmod	_	_
+59-61	בעולם	_	_	_	_	_	_	_	SpaceAfter=No
+59	ב	ב	ADP	ADP	_	61	case	_	_
+60	ה_	ה	DET	DET	PronType=Art	61	det:def	_	_
+61	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	57	advmod	_	_
+62	.	.	PUNCT	PUNCT	_	26	punct	_	_
 
-# sent_id = 2
+# sent_id = 3
 # text = שטחה של רוסיה עולה על 17 מיליון קילומטרים רבועים, מתוכם כ-13 מיליון קמ"ר באסיה וכארבעה מיליוני קמ"ר באירופה.
 1	שטחה	שטחה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
@@ -113,7 +122,7 @@
 27	אירופה	אירופה	PROPN	PROPN	_	25	nmod	_	_
 28	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = רוסיה גובלת בנורווגיה, פינלנד, אסטוניה, לטביה, ליטא, פולין, בלארוס, אוקראינה, גאורגיה, אזרבייג'ן, קזחסטן, סין, מונגוליה וקוריאה הצפונית.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	גובלת	גבל	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -149,14 +158,10 @@
 30	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nmod:poss	_	_
 31	וקוריאה	וקוריאה	PROPN	PROPN	_	28	appos	_	_
 32	הצפונית	הצפוני	ADJ	ADJ	_	31	amod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 5
 # text = רוסיה חזרה להיות מדינה נפרדת עם התפרקות ברית המועצות בשנת 1991.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	חזרה	חזר	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	0	root	_	_
@@ -175,7 +180,7 @@
 13	1991	1991	NUM	NUM	_	12	compound:smixut	_	SpaceAfter=No
 14	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 6
 # text = תחת השלטון הסובייטי היא נקראה "הרפובליקה הסובייטית הפדרטיבית הסוציאליסטית הרוסית", ועם הקמתה הפכה לפדרציה עצמאית.
 1	תחת	תחת	ADP	ADP	_	3	case	_	_
 2-3	השלטון	_	_	_	_	_	_	_	_
@@ -213,7 +218,7 @@
 26	עצמאית	עצמאי	ADJ	ADJ	Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No
 27	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 7
 # text = רוב שטחה, אוכלוסייתה ותעשייתה של ברית המועצות, אחת משתי מעצמות העל, היו ברוסיה.
 1	רוב	רוב	DET	DET	Definite=Cons	2	det	_	_
 2	שטחה	שטחה	NOUN	NOUN	Gender=Fem|Number=Sing	20	nsubj	_	SpaceAfter=No
@@ -241,8 +246,8 @@
 20	רוסיה	רוסיה	PROPN	PROPN	_	0	root	_	_
 21	.	.	PUNCT	PUNCT	_	20	punct	_	_
 
-# sent_id = 4
-# text = כתוצאה מכך, מאז פירוק ברית המועצות ירשה רוסיה את המושב הקבוע במועצת הביטחון, מבקשת לרשת את מקומה של ברית המועצות כמעצמה חשובה, ורואה את עצמה במובנים רבים כממשיכת דרכה.
+# sent_id = 8
+# text = כתוצאה מכך, מאז פירוק ברית המועצות ירשה רוסיה את המושב הקבוע במועצת הביטחון, מבקשת לרשת את מקומה של האימפריה הרוסית ושל ברית המועצות כמעצמה חשובה, ורואה את עצמה במובנים רבים כממשיכת דרכן.
 1-2	כתוצאה	_	_	_	_	_	_	_	_
 1	כ	כ	ADP	ADP	_	2	case	_	_
 2	תוצאה	תוצאה	NOUN	NOUN	Gender=Fem|Number=Sing	13	obl	_	_
@@ -254,7 +259,7 @@
 6	מ	מ	ADP	ADP	_	9	case	_	_
 7	אז	אז	ADV	ADV	_	6	fixed	_	_
 8-9	פירוק	_	_	_	_	_	_	_	_
-8	פ	פ	NOUN	NOUN	_	6	fixed	_	_
+8	פ	פ	ADP	ADP	_	6	fixed	_	_
 9	ירוק	ירוק	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	13	obl	_	_
 10	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	9	compound:smixut	_	_
 11-12	המועצות	_	_	_	_	_	_	_	_
@@ -286,26 +291,33 @@
 30	_של_	של	ADP	ADP	_	31	case:gen	_	_
 31	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	29	nmod:poss	_	_
 32	של	של	ADP	ADP	Case=Gen	33	case:gen	_	_
-33	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	29	nmod:poss	_	_
-34-35	המועצות	_	_	_	_	_	_	_	_
+33	האימפריה	האימפריה	PROPN	PROPN	_	29	nmod:poss	_	_
+34-35	הרוסית	_	_	_	_	_	_	_	_
 34	ה	ה	DET	DET	PronType=Art	35	det:def	_	_
-35	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	33	compound:smixut	_	_
-36-38	כמעצמה	_	_	_	_	_	_	_	_
-36	כ	כ	ADP	ADP	_	38	case	_	_
-37	ה_	ה	DET	DET	PronType=Art	38	det:def	_	_
-38	מעצמה	מעצמה	NOUN	NOUN	Gender=Fem|Number=Sing	29	nmod	_	_
-39	חשובה	חשוב	ADJ	ADJ	Gender=Fem|Number=Sing	38	amod	_	SpaceAfter=No
-40	,	,	PUNCT	PUNCT	_	41	punct	_	_
-41	ורואה	רוא	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	25	parataxis	_	_
-42	את	את	ADP	ADP	Case=Acc	43	case:acc	_	_
-43	עצמה	עצמו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	41	obj	_	_
-44	במובנים	במובן	NOUN	NOUN	Gender=Masc|Number=Plur	41	advmod	_	_
-45	רבים	רב	ADJ	ADJ	Gender=Masc|Number=Plur	44	amod	_	_
-46	כממשיכת	הממשיך	VERB	VERB	Definite=Cons|Gender=Fem|Number=Sing	41	dep	_	_
-47	דרכה	דרכה	NOUN	NOUN	Gender=Fem|Number=Sing	46	compound:smixut	_	SpaceAfter=No
-48	.	.	PUNCT	PUNCT	_	25	punct	_	_
+35	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	33	amod	_	_
+36-37	ושל	_	_	_	_	_	_	_	_
+36	ו	ו	CCONJ	CCONJ	_	38	cc	_	_
+37	של	של	ADP	ADP	Case=Gen	38	case:gen	_	_
+38	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	33	conj	_	_
+39-40	המועצות	_	_	_	_	_	_	_	_
+39	ה	ה	DET	DET	PronType=Art	40	det:def	_	_
+40	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	38	compound:smixut	_	_
+41-43	כמעצמה	_	_	_	_	_	_	_	_
+41	כ	כ	ADP	ADP	_	43	case	_	_
+42	ה_	ה	DET	DET	PronType=Art	43	det:def	_	_
+43	מעצמה	מעצמה	NOUN	NOUN	Gender=Fem|Number=Sing	38	nmod	_	_
+44	חשובה	חשוב	ADJ	ADJ	Gender=Fem|Number=Sing	43	amod	_	SpaceAfter=No
+45	,	,	PUNCT	PUNCT	_	46	punct	_	_
+46	ורואה	רוא	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	13	conj	_	_
+47	את	את	ADP	ADP	Case=Acc	48	case:acc	_	_
+48	עצמה	עצמו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	46	obj	_	_
+49	במובנים	במובן	NOUN	NOUN	Gender=Masc|Number=Plur	46	advmod	_	_
+50	רבים	רב	ADJ	ADJ	Gender=Masc|Number=Plur	49	amod	_	_
+51	כממשיכת	הממשיך	VERB	VERB	Definite=Cons|Gender=Fem|Number=Sing	46	dep	_	_
+52	דרכן	דרכן	NOUN	NOUN	Gender=Fem|Number=Sing	51	compound:smixut	_	SpaceAfter=No
+53	.	.	PUNCT	PUNCT	_	25	punct	_	_
 
-# sent_id = 5
+# sent_id = 9
 # text = הקבוצה האתנית הדומיננטית בה מבחינה דמוגרפית הם הרוסים.
 1-2	הקבוצה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -323,57 +335,129 @@
 11-12	הרוסים	_	_	_	_	_	_	_	SpaceAfter=No
 11	ה	ה	DET	DET	PronType=Art	12	det:def	_	_
 12	רוסים	רוסי	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
-13	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = למרות ייסודה כמדינה בעלת משטר דמוקרטי דה יורה, רוסיה איננה נחשבת מדינה דמוקרטית דה פקטו, וזכויות האדם בה מופרות באופן תדיר.
-1	למרות	למרות	ADP	ADP	_	3	case	_	_
-2-5	ייסודה	_	_	_	_	_	_	_	_
-2	י	י	SCONJ	SCONJ	_	1	fixed	_	_
-3	יסוד_	יסוד	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	17	nsubj	_	_
-4	_של_	של	ADP	ADP	_	5	case:gen	_	_
-5	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
-6-8	כמדינה	_	_	_	_	_	_	_	_
-6	כ	כ	ADP	ADP	_	8	case	_	_
-7	ה_	ה	DET	DET	PronType=Art	8	det:def	_	_
-8	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	_
-9	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	8	acl	_	_
-10	משטר	משטר	NOUN	NOUN	Gender=Masc|Number=Sing	9	compound:smixut	_	_
-11	דמוקרטי	דמוקרטי	ADJ	ADJ	Gender=Masc|Number=Sing	10	amod	_	_
-12	דה	דה	NOUN	NOUN	_	10	appos	_	_
-13	יורה	יורה	NOUN	NOUN	Gender=Fem|Number=Sing	12	compound:smixut	_	SpaceAfter=No
-14	,	,	PUNCT	PUNCT	_	17	punct	_	_
-15	רוסיה	רוסיה	PROPN	PROPN	_	17	nsubj	_	_
-16	איננה	אינו	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Neg|VerbForm=Part|VerbType=Cop	17	advmod	_	_
-17	נחשבת	נחשב	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Mid	0	root	_	_
-18	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	17	obj	_	_
-19	דמוקרטית	דמוקרטי	ADJ	ADJ	Gender=Fem|Number=Sing	18	amod	_	_
-20	דה	דה	PROPN	PROPN	_	18	amod	_	_
-21	פקטו	פקט	PROPN	PROPN	_	20	compound:smixut	_	SpaceAfter=No
-22	,	,	PUNCT	PUNCT	_	17	punct	_	_
-23-24	וזכויות	_	_	_	_	_	_	_	_
-23	ו	ו	CCONJ	CCONJ	_	29	cc	_	_
-24	זכויות	זכות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	29	nsubj	_	_
-25-26	האדם	_	_	_	_	_	_	_	_
-25	ה	ה	DET	DET	PronType=Art	26	det:def	_	_
-26	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	24	compound:smixut	_	_
-27-28	בה	_	_	_	_	_	_	_	_
-27	ב_	ב	ADP	ADP	_	28	case	_	_
-28	_היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	29	obl	_	_
-29	מופרות	הופר	VERB	VERB	Gender=Fem|HebBinyan=HUFAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Pass	17	conj	_	_
-30-31	באופן	_	_	_	_	_	_	_	_
-30	ב	ב	ADP	ADP	_	31	case	_	_
-31	אופן	אופן	NOUN	NOUN	Gender=Masc|Number=Sing	29	obl	_	_
-32	תדיר	תדיר	ADJ	ADJ	Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	17	punct	_	_
+# sent_id = 10
+# text = קוראים "רוסיה" באופן מסורתי גם לארץ שבה חי והתרכז רוב העם הרוסי לאורך המאות 14-21.
+1	קוראים	קרא	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
+2	"	"	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+3	רוסיה	רוסיה	PROPN	PROPN	_	1	nsubj	_	SpaceAfter=No
+4	"	"	PUNCT	PUNCT	_	3	punct	_	_
+5-6	באופן	_	_	_	_	_	_	_	_
+5	ב	ב	ADP	ADP	_	6	case	_	_
+6	אופן	אופן	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl	_	_
+7	מסורתי	מסורתי	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+8	גם	גם	ADV	ADV	_	9	advmod	_	_
+9-11	לארץ	_	_	_	_	_	_	_	_
+9	ל	ל	ADP	ADP	_	11	case	_	_
+10	ה_	ה	DET	DET	PronType=Art	11	det:def	_	_
+11	ארץ	ארץ	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl	_	_
+12-14	שבה	_	_	_	_	_	_	_	_
+12	ש	ש	SCONJ	SCONJ	_	15	mark	_	_
+13	ב_	ב	ADP	ADP	_	14	case	_	_
+14	_היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obl	_	_
+15	חי	חי	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=3|Tense=Past|Voice=Act	11	acl:relcl	_	_
+16	והתרכז	והתרכז	VERB	VERB	Gender=Masc|HebBinyan=PUAL|Number=Sing|Person=3|Tense=Past|Voice=Pass	11	acl:relcl	_	_
+17	רוב	רוב	DET	DET	Definite=Cons	19	det	_	_
+18-19	העם	_	_	_	_	_	_	_	_
+18	ה	ה	DET	DET	PronType=Art	19	det:def	_	_
+19	עם	עם	NOUN	NOUN	Gender=Masc|Number=Sing	16	nsubj	_	_
+20-21	הרוסי	_	_	_	_	_	_	_	_
+20	ה	ה	DET	DET	PronType=Art	21	det:def	_	_
+21	רוסי	רוסי	ADJ	ADJ	Gender=Masc|Number=Sing	19	amod	_	_
+22	לאורך	לאורך	ADP	ADP	_	23	case	_	_
+23	המאות	המאה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	16	obl	_	_
+24	14	14	NUM	NUM	_	23	compound:smixut	_	SpaceAfter=No
+25	-	-	PUNCT	PUNCT	_	24	punct	_	SpaceAfter=No
+26	21	21	NUM	NUM	_	24	obl	_	SpaceAfter=No
+27	.	.	PUNCT	PUNCT	_	1	punct	_	SpacesAfter=\s\s
 
-# sent_id = 2
-# text = מאז שנת 2000, תחת שלטונו של ולדימיר פוטין, נחשבת רוסיה מדינה בעלת משטר אוטוקרטי וסמכותני.
+# sent_id = 11
+# text = חלקים ממנו חי גם בתוך ארצות שכנות, שבעבר היו חלק מהאימפריה הרוסית והפכו לעצמאיות במהלך המאה ה-20.
+1	חלקים	חלק	NOUN	NOUN	Gender=Masc|Number=Plur	4	nsubj	_	_
+2-3	ממנו	_	_	_	_	_	_	_	_
+2	מן_	מן	ADP	ADP	_	3	case	_	_
+3	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	dep	_	_
+4	חי	חי	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
+5	גם	גם	ADV	ADV	_	6	advmod	_	_
+6	בתוך	בתוך	ADP	ADP	_	7	case	_	_
+7	ארצות	ארץ	NOUN	NOUN	Gender=Fem|Number=Plur	4	obl	_	_
+8	שכנות	שכן	ADJ	ADJ	Gender=Fem|Number=Plur	7	amod	_	SpaceAfter=No
+9	,	,	PUNCT	PUNCT	_	7	punct	_	_
+10-13	שבעבר	_	_	_	_	_	_	_	_
+10	ש	ש	SCONJ	SCONJ	_	19	mark	_	_
+11	ב	ב	ADP	ADP	_	13	case	_	_
+12	ה_	ה	DET	DET	PronType=Art	13	det:def	_	_
+13	עבר	עבר	NOUN	NOUN	Gender=Masc|Number=Sing	19	obl	_	_
+14	היו	היה	AUX	AUX	Gender=Fem,Masc|Number=Plur|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	16	cop	_	_
+15	חלק	חלק	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	16	det	_	_
+16	מהאימפריה	מהאימפריה	NOUN	NOUN	Gender=Fem|Number=Sing	7	compound:smixut	_	_
+17-18	הרוסית	_	_	_	_	_	_	_	_
+17	ה	ה	DET	DET	PronType=Art	18	det:def	_	_
+18	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
+19	והפכו	והפך	VERB	VERB	Gender=Fem,Masc|HebBinyan=HUFAL|Number=Plur|Person=3|Tense=Past|Voice=Pass	7	acl:relcl	_	_
+20	לעצמאיות	לעצמאי	ADJ	ADJ	Gender=Fem|Number=Plur	19	xcomp	_	_
+21-22	במהלך	_	_	_	_	_	_	_	_
+21	ב	ב	ADP	ADP	_	24	case	_	_
+22	מהלך	מהלך	NOUN	NOUN	Gender=Masc|Number=Sing	21	fixed	_	_
+23-24	המאה	_	_	_	_	_	_	_	_
+23	ה	ה	DET	DET	PronType=Art	24	det:def	_	_
+24	מאה	מאה	NUM	NUM	Gender=Fem|Number=Sing	19	obl	_	_
+25	ה	ה	DET	DET	PronType=Art	27	dep	_	SpaceAfter=No
+26	-	-	PUNCT	PUNCT	_	27	punct	_	SpaceAfter=No
+27	20	20	NUM	NUM	_	24	amod	_	SpaceAfter=No
+28	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\s\n\n
+
+# newpar
+# sent_id = 12
+# text = למרות התארגנותה מחדש אחרי שנת 1991 כמדינה רפובליקנית בעלת משטר דמוקרטי דה יורה, רוסיה איננה נחשבת מדינה דמוקרטית דה פקטו, וזכויות האדם בה מופרות באופן תדיר.
+1	למרות	למרות	ADP	ADP	_	2	case	_	_
+2-4	התארגנותה	_	_	_	_	_	_	_	SpacesAfter=\s\s
+2	התארגנות_	התארגנות	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	21	obl	_	_
+3	_של_	של	ADP	ADP	_	4	case:gen	_	_
+4	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+5	מחדש	מחדש	ADV	ADV	_	2	advmod	_	SpacesAfter=\s\s
+6	אחרי	אחרי	ADP	ADP	_	7	case	_	_
+7	שנת	שנה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	2	nmod	_	_
+8	1991	1991	NUM	NUM	_	7	compound:smixut	_	_
+9-11	כמדינה	_	_	_	_	_	_	_	_
+9	כ	כ	ADP	ADP	_	11	case	_	_
+10	ה_	ה	DET	DET	PronType=Art	11	det:def	_	_
+11	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+12	רפובליקנית	רפובליקני	ADJ	ADJ	Gender=Fem|Number=Sing	11	amod	_	_
+13	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	11	acl	_	_
+14	משטר	משטר	NOUN	NOUN	Gender=Masc|Number=Sing	13	compound:smixut	_	_
+15	דמוקרטי	דמוקרטי	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	_
+16	דה	דה	NOUN	NOUN	_	14	amod	_	_
+17	יורה	יורה	NOUN	NOUN	Gender=Fem|Number=Sing	16	flat:name	_	SpaceAfter=No
+18	,	,	PUNCT	PUNCT	_	21	punct	_	_
+19	רוסיה	רוסיה	PROPN	PROPN	_	21	nsubj	_	_
+20	איננה	אינו	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Neg|VerbForm=Part|VerbType=Cop	21	advmod	_	_
+21	נחשבת	נחשב	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Mid	0	root	_	_
+22	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	21	obj	_	_
+23	דמוקרטית	דמוקרטי	ADJ	ADJ	Gender=Fem|Number=Sing	22	amod	_	_
+24	דה	דה	PROPN	ADV	_	22	det	_	_
+25	פקטו	פקט	NOUN	NOUN	_	24	compound:smixut	_	SpaceAfter=No
+26	,	,	PUNCT	PUNCT	_	21	punct	_	_
+27-28	וזכויות	_	_	_	_	_	_	_	_
+27	ו	ו	CCONJ	CCONJ	_	33	cc	_	_
+28	זכויות	זכות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	33	nsubj	_	_
+29-30	האדם	_	_	_	_	_	_	_	_
+29	ה	ה	DET	DET	PronType=Art	30	det:def	_	_
+30	אדם	אדם	NOUN	NOUN	Gender=Masc|Number=Sing	28	compound:smixut	_	_
+31-32	בה	_	_	_	_	_	_	_	_
+31	ב_	ב	ADP	ADP	_	32	case	_	_
+32	_היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	obl	_	_
+33	מופרות	הופר	VERB	VERB	Gender=Fem|HebBinyan=HUFAL|Number=Plur|Person=1,2,3|VerbForm=Part|Voice=Pass	21	conj	_	_
+34-35	באופן	_	_	_	_	_	_	_	_
+34	ב	ב	ADP	ADP	_	35	case	_	_
+35	אופן	אופן	NOUN	NOUN	Gender=Masc|Number=Sing	33	obl	_	_
+36	תדיר	תדיר	ADJ	ADJ	Gender=Masc|Number=Sing	35	amod	_	SpaceAfter=No
+37	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+# sent_id = 13
+# text = מאז שנת 2000, תחת שלטונו של ולדימיר פוטין, נחשבת רוסיה למדינה בעלת משטר אוטוקרטי וסמכותני.
 1-2	מאז	_	_	_	_	_	_	_	_
 1	מ	מ	ADP	ADP	_	3	case	_	_
 2	אז	אז	ADV	ADV	_	1	fixed	_	_
@@ -391,14 +475,17 @@
 13	,	,	PUNCT	PUNCT	_	14	punct	_	_
 14	נחשבת	נחשב	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Mid	0	root	_	_
 15	רוסיה	רוסיה	PROPN	PROPN	_	14	nsubj	_	_
-16	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	14	nsubj	_	_
-17	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	16	acl	_	_
-18	משטר	משטר	NOUN	NOUN	Gender=Masc|Number=Sing	17	compound:smixut	_	_
-19	אוטוקרטי	אוטוקרטי	ADJ	ADJ	Gender=Masc|Number=Sing	18	amod	_	_
-20	וסמכותני	וסמכותני	ADJ	ADJ	Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	14	punct	_	_
+16-18	למדינה	_	_	_	_	_	_	_	_
+16	ל	ל	ADP	ADP	_	18	case	_	_
+17	ה_	ה	DET	DET	PronType=Art	18	det:def	_	_
+18	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	14	obl	_	_
+19	בעלת	בעל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	18	acl	_	_
+20	משטר	משטר	NOUN	NOUN	Gender=Masc|Number=Sing	19	compound:smixut	_	_
+21	אוטוקרטי	אוטוקרטי	ADJ	ADJ	Gender=Masc|Number=Sing	20	amod	_	_
+22	וסמכותני	וסמכותני	ADJ	ADJ	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No
+23	.	.	PUNCT	PUNCT	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 14
 # text = פוטין סופג ביקורת בינלאומית חריפה בעקבות פגיעתו במתנגדי משטר, בעיתונאים, בבני מיעוטים ובפעילים דמוקרטיים המתנגדים לו.
 1	פוטין	פוטין	PROPN	PROPN	_	2	nsubj	_	_
 2	סופג	סופג	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -435,36 +522,24 @@
 26-27	לו	_	_	_	_	_	_	_	SpaceAfter=No
 26	ל_	ל	ADP	ADP	_	27	case	_	_
 27	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	obl	_	_
-28	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 15
 # text = היסטוריה
-1	היסטוריה	היסטוריה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+1	היסטוריה	היסטוריה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 16
 # text = רוס של קייב ונסיכות מוסקבה
 1	רוס	רוס	PROPN	PROPN	_	0	root	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
 3	קייב	קייב	PROPN	PROPN	_	1	nmod:poss	_	_
 4	ונסיכות	ונסיכות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	3	compound:smixut	_	_
-5	מוסקבה	מוסקבה	PROPN	PROPN	_	4	compound:smixut	_	SpaceAfter=No
+5	מוסקבה	מוסקבה	PROPN	PROPN	_	4	compound:smixut	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 17
 # text = תולדותיה של רוסיה שזורות בתולדותיה של קבוצה אתנית, המכונה סלאבים.
 1-3	תולדותיה	_	_	_	_	_	_	_	_
 1	תולדה_	תולדה	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	6	nsubj	_	_
@@ -487,7 +562,7 @@
 16	סלאבים	סלאבי	NOUN	NOUN	Gender=Masc|Number=Plur	15	obj	_	SpaceAfter=No
 17	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 18
 # text = קבוצה זו היא המקור לעמים מרכז ומזרח-אירופיים רבים, דוגמת הרוסים, האוקראינים, הפולנים ואחרים.
 1	קבוצה	קבוצה	NOUN	NOUN	Gender=Fem|Number=Sing	5	nsubj:cop	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -519,7 +594,7 @@
 23	אחרים	אחר	ADJ	ADJ	Gender=Masc|Number=Plur	16	conj	_	_
 24	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 19
 # text = הישות המדינית הראשונה שהוקמה הייתה קייב-רוס (או: "רות'ניה של קייב"), שנקראה על שם בירתה - קייב.
 1	הישות	הישות	NOUN	NOUN	Gender=Fem|Number=Sing	5	nsubj	_	_
 2	המדינית	המדיני	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
@@ -554,7 +629,7 @@
 28	קייב	קייב	PROPN	PROPN	_	24	flat:name	_	SpaceAfter=No
 29	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 20
 # text = ישות זו הוקמה בעקבות הגעתו לאזור של קבוצה או שבט בשם "רוס".
 1	ישות	ישות	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -574,7 +649,7 @@
 15	"	"	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
 16	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 21
 # text = הדעות חלוקות לגבי מקורותיהם של אנשים אלה.
 1-2	הדעות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -590,7 +665,7 @@
 10	אלה	אלה	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Dem	9	det	_	SpaceAfter=No
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 22
 # text = מרבית החוקרים טוענים שמקורם מאזור סקנדינביה של היום.
 1	מרבית	מרבית	DET	DET	Definite=Cons	3	det	_	_
 2-3	החוקרים	_	_	_	_	_	_	_	_
@@ -608,7 +683,7 @@
 12	היום	היום	ADV	ADV	_	10	nmod:poss	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 7
+# sent_id = 23
 # text = לפי תאוריה זו בני שבט זה נחשבו הוויקינגים של מזרח אירופה, ובפי המקומיים הם כונו "ורנגים".
 1	לפי	לפי	ADP	ADP	_	2	case	_	_
 2	תאוריה	תאוריה	NOUN	NOUN	Gender=Fem|Number=Sing	7	obl	_	_
@@ -638,7 +713,7 @@
 24	"	"	PUNCT	PUNCT	_	23	punct	_	SpaceAfter=No
 25	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 8
+# sent_id = 24
 # text = מלכם הראשון היה רוריק.
 1-2	מלכם	_	_	_	_	_	_	_	_
 1	מל_	מל	ADP	ADP	_	2	case	_	_
@@ -650,7 +725,7 @@
 6	רוריק	רוריק	PROPN	PROPN	_	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 9
+# sent_id = 25
 # text = עיקר שטחי הממלכה הקדומה השתרעו על שטחי אוקראינה המודרנית.
 1	עיקר	עיקר	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	6	nsubj	_	_
 2	שטחי	שטח	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	1	compound:smixut	_	_
@@ -667,7 +742,7 @@
 11	מודרנית	מודרני	ADJ	ADJ	Gender=Fem|Number=Sing	9	amod	_	_
 12	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 10
+# sent_id = 26
 # text = לפי דעה אחרת, הפופולרית במידה מסוימת ברוסיה, מקורה של קבוצה זו או של השבט הזה בעמים הסלאביים עצמם.
 1	לפי	לפי	ADP	ADP	_	2	case	_	_
 2	דעה	דעה	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl	_	_
@@ -700,7 +775,7 @@
 25	עצמם	עצמו	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Emp|Reflex=Yes	23	nmod	_	SpaceAfter=No
 26	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 11
+# sent_id = 27
 # text = בשנת 988, בתקופת שלטונו של ולדימיר הראשון, התנצרו הרוסים בעקבות השפעה ביזנטית.
 1-2	בשנת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -731,7 +806,7 @@
 21	ביזנטית	ביזנטי	ADJ	ADJ	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	16	punct	_	_
 
-# sent_id = 12
+# sent_id = 28
 # text = עם נפילתה של ביזנטיון באמצע המאה ה-15, ראו עצמם הרוסים ממשיכי דרכה (החל מאותה התקופה כונתה רוסיה: "רומא השלישית"[דרוש מקור]).
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	נפילתה	נפילתה	NOUN	NOUN	Gender=Fem|Number=Sing	14	obl	_	_
@@ -774,14 +849,10 @@
 34	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	33	compound:smixut	_	SpaceAfter=No
 35	]	]	PUNCT	PUNCT	_	33	punct	_	SpaceAfter=No
 36	)	)	PUNCT	PUNCT	_	30	punct	_	SpaceAfter=No
-37	.	.	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n
+37	.	.	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 29
 # text = רוס של קייב לא הצליחה לשמור על אחדותה, והיא התפרקה לשלל נסיכויות שנלחמו אלו באלו.
 1	רוס	רוס	PROPN	PROPN	_	5	nsubj	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
@@ -806,7 +877,7 @@
 19	באלו	באל	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	16	acl	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 30
 # text = בתקופה זו, קמה במרכז רוסיה נסיכות ולדימיר, ואילו בצפונה התבססה רפובליקת נובגורוד.
 1-3	בתקופה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -835,7 +906,7 @@
 21	נובגורוד	נובגורוד	PROPN	PROPN	_	20	compound:smixut	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 31
 # text = באמצע המאה ה-13, נכבשה רוסיה על ידי האימפריה המונגולית (מלבד נסיכות נובגורוד ואזורים בצפון מערב המדינה), ונשארה תחת העול הזר במשך כשלוש מאות שנים.
 1-3	באמצע	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -883,14 +954,10 @@
 37	שלוש	שלוש	NUM	NUM	Gender=Fem|Number=Sing	39	nummod	_	_
 38	מאות	מאות	NUM	NUM	Definite=Cons|Gender=Fem|Number=Plur	39	nummod	_	_
 39	שנים	שנה	NOUN	NOUN	Gender=Fem|Number=Plur	32	nmod	_	SpaceAfter=No
-40	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+40	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 32
 # text = במהלך תקופת השלטון הזר עלתה קרנה של נסיכות מוסקבה, ולאחר הניצחון על המונגולים בקרב קוליקובו, אשר התרחש בשנת 1380, הפכה נסיכות זו דומיננטית.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -937,7 +1004,7 @@
 35	דומיננטית	דומיננטי	ADJ	ADJ	Gender=Fem|Number=Sing	8	conj	_	SpaceAfter=No
 36	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 33
 # text = הנסיך איוואן השלישי הצליח למגר סופית את המונגולים בשנת 1480, לאחר עימות שכונה: "העמידה הגדולה על נהר האוגר".
 1	הנסיך	הנסיך	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	5	nsubj	_	_
 2	איוואן	איוואן	PROPN	PROPN	_	1	flat:name	_	_
@@ -971,24 +1038,16 @@
 25	נהר	נהר	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	21	nmod	_	_
 26	האוגר	האוגר	PROPN	PROPN	_	25	compound:smixut	_	SpaceAfter=No
 27	"	"	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No
-28	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 34
 # text = שושלת רומנוב
 1	שושלת	ששל	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-2	רומנוב	רומנוב	PROPN	PROPN	_	1	compound:smixut	_	SpaceAfter=No
+2	רומנוב	רומנוב	PROPN	PROPN	_	1	compound:smixut	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 35
 # text = במהלך מאתיים השנים שלאחר מכן ביססה נסיכות מוסקבה את מעמדה באירופה המזרחית.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	5	case	_	_
@@ -1019,7 +1078,7 @@
 20	מזרחית	מזרחי	ADJ	ADJ	Gender=Fem|Number=Sing	18	amod	_	_
 21	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 36
 # text = באמצע המאה ה-16 הכתיר את עצמו שליטה של הנסיכות, איוואן האיום, בתואר צאר כסמל לכוחה הרב.
 1-3	באמצע	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -1061,7 +1120,7 @@
 31	רב	רב	ADJ	ADJ	Gender=Masc|Number=Sing	27	amod	_	_
 32	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 3
+# sent_id = 37
 # text = במהלך תקופה זו ידעה רוסיה מספר פלישות זרות, ובאחת מהן אף איבדה את השליטה על עיר בירתה לפרק זמן קצר, בראשית המאה ה-17.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -1107,7 +1166,7 @@
 35	17	17	NUM	NUM	_	32	amod	_	SpaceAfter=No
 36	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 38
 # text = איוואן האיום היה אחרון השליטים משושלת רוריק.
 1	איוואן	איוואן	PROPN	PROPN	_	5	nsubj	_	_
 2-3	האיום	_	_	_	_	_	_	_	_
@@ -1124,7 +1183,7 @@
 10	רוריק	רוריק	PROPN	PROPN	_	9	compound:smixut	_	SpaceAfter=No
 11	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 39
 # text = לאחריו, עלתה לשלטון שושלת רומנוב, בשנת 1613.
 1-2	לאחריו	_	_	_	_	_	_	_	SpaceAfter=No
 1	לאחרי_	לאחרי	ADP	ADP	_	2	case	_	_
@@ -1142,14 +1201,10 @@
 11	ב	ב	ADP	ADP	_	12	case	_	_
 12	שנת	שנה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	4	obl	_	_
 13	1613	1613	NUM	NUM	_	12	compound:smixut	_	SpaceAfter=No
-14	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 40
 # text = למרות הכיבושים הנרחבים, פיגרה רוסיה אחרי מדינות מערב אירופה מבחינות רבות.
 1	למרות	למרות	ADP	ADP	_	2	case	_	_
 2	הכיבושים	הכיבוש	NOUN	NOUN	Gender=Masc|Number=Plur	5	obl	_	_
@@ -1167,7 +1222,7 @@
 13	רבות	רב	ADJ	ADJ	Gender=Fem|Number=Plur	12	amod	_	SpaceAfter=No
 14	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 41
 # text = כתוצאה מכך, יזם הצאר פיוטר הגדול, שעלה לשלטון בסוף המאה ה-17, רפורמות רבות, שבסופן הפכה רוסיה למעצמה בינלאומית ושינתה את שמה לאימפריה הרוסית.
 1-2	כתוצאה	_	_	_	_	_	_	_	_
 1	כ	כ	ADP	ADP	_	2	case	_	_
@@ -1222,7 +1277,7 @@
 41	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	39	amod	_	_
 42	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 42
 # text = הניצחון על שוודיה במלחמה הצפונית הגדולה, אשר התרחשה בראשית המאה ה-18 - ביסס את מיקומה החדש.
 1-2	הניצחון	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1258,14 +1313,10 @@
 26-27	החדש	_	_	_	_	_	_	_	SpaceAfter=No
 26	ה	ה	DET	DET	PronType=Art	27	det:def	_	_
 27	חדש	חדש	ADJ	ADJ	Gender=Masc|Number=Sing	23	amod	_	_
-28	.	.	PUNCT	PUNCT	_	21	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	21	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 43
 # text = במהלך המאה ה-18 והמחצית הראשונה של המאה ה-19, הייתה רוסיה אחד הכוחות הדומיננטיים בעולם, עם תעשייה מפותחת ומחקר מתקדם.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	4	case	_	_
@@ -1314,7 +1365,7 @@
 36	מתקדם	מתקדם	ADJ	ADJ	Gender=Masc|Number=Sing	35	amod	_	SpaceAfter=No
 37	.	.	PUNCT	PUNCT	_	21	punct	_	_
 
-# sent_id = 2
+# sent_id = 44
 # text = למרות ההתחלה הנאה, בוששה המהפכה התעשייתית להגיע למדינה, וכתוצאה מכך החל להיווצר פער כלכלי הולך וגדל בינה ובין מדינות מערב אירופה.
 1	למרות	למרות	ADP	ADP	_	3	case	_	_
 2-3	ההתחלה	_	_	_	_	_	_	_	_
@@ -1361,7 +1412,7 @@
 34	אירופה	אירופה	PROPN	PROPN	_	33	compound:smixut	_	SpaceAfter=No
 35	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 45
 # text = במישור הצבאי, נחלה רוסיה מספר הפסדים במלחמות, דוגמת מלחמת קרים (1856-1854) ומלחמת רוסיה–יפן (1905-1904).
 1-3	במישור	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -1400,7 +1451,7 @@
 31	)	)	PUNCT	PUNCT	_	28	punct	_	SpaceAfter=No
 32	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 46
 # text = בנוסף, אירע ניסיון מהפכני כושל כנגד הצאר - מהפכת 1905.
 1-2	בנוסף	_	_	_	_	_	_	_	SpaceAfter=No
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -1417,7 +1468,7 @@
 12	1905	1905	NUM	NUM	_	11	compound:smixut	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 47
 # text = רוסיה הייתה עדה לעלייה חדה באבטלה וברמת העוני, בקרב השכבות החלשות של אוכלוסייתה.
 1	רוסיה	רוסיה	PROPN	PROPN	_	3	nsubj	_	_
 2	הייתה	היה	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	3	cop	_	_
@@ -1444,26 +1495,18 @@
 18	חלשות	חלש	ADJ	ADJ	Gender=Fem|Number=Plur	16	amod	_	_
 19	של	של	ADP	ADP	Case=Gen	20	case:gen	_	_
 20	אוכלוסייתה	אוכלוסייה	NOUN	NOUN	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 48
 # text = ברית המועצות
 1	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-2-3	המועצות	_	_	_	_	_	_	_	SpaceAfter=No
+2-3	המועצות	_	_	_	_	_	_	_	SpacesAfter=\n\n
 2	ה	ה	DET	DET	PronType=Art	3	det:def	_	_
 3	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	1	compound:smixut	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 49
 # text = המשברים הגיעו לשיאם במהלך מלחמת העולם הראשונה.
 1	המשברים	המשבר	NOUN	NOUN	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	הגיעו	הגיע	VERB	VERB	Gender=Fem,Masc|HebBinyan=HIFIL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -1484,7 +1527,7 @@
 13	ראשונה	_	ADJ	ADJ	Gender=Fem|Number=Sing	9	amod	_	_
 14	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 50
 # text = הכלכלה הרוסית החלשה לא עמדה בנטל הכבד וקרסה.
 1-2	הכלכלה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1504,7 +1547,7 @@
 12	וקרסה	וקרסה	PROPN	PROPN	_	11	flat:name	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 51
 # text = קריסת הכלכלה, האבדות הרבות בנפש בחזית, הרעב הכבד והתעמולה של המתנגדים כנגד המשטר המלוכני, דוגמת הבולשביקים ואחרים, גרמו לנפילתו של הממשל, במסגרת מהפכת פברואר (1917).
 1	קריסת	קריסה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	32	nsubj	_	_
 2-3	הכלכלה	_	_	_	_	_	_	_	SpaceAfter=No
@@ -1566,7 +1609,7 @@
 46	)	)	PUNCT	PUNCT	_	45	punct	_	SpaceAfter=No
 47	.	.	PUNCT	PUNCT	_	32	punct	_	_
 
-# sent_id = 4
+# sent_id = 52
 # text = הממשלה הרוסית הזמנית שהוקמה, בראשותו של קרנסקי, לא הצליחה להתמודד עם המשבר, ונפלה במהפכת אוקטובר, לאחריה עלה לשלטון ולדימיר איליץ' לנין.
 1-2	הממשלה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1613,7 +1656,7 @@
 36	לנין	לנין	PROPN	PROPN	_	34	flat:name	_	SpaceAfter=No
 37	.	.	PUNCT	PUNCT	_	17	punct	_	_
 
-# sent_id = 5
+# sent_id = 53
 # text = הבולשיביקים הכריזו על כינון מדינה חדשה: "רוסיה הסובייטית".
 1	הבולשיביקים	הבולשיביק	NOUN	NOUN	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	הכריזו	הכריז	VERB	VERB	Gender=Fem,Masc|HebBinyan=HIFIL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -1630,7 +1673,7 @@
 12	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 54
 # text = המדינה שקעה עד מהרה במלחמת אזרחים אכזרית שנמשכה עד 1921.
 1-2	המדינה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1649,14 +1692,10 @@
 12	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
 13	עד	עד	ADP	ADP	_	14	case	_	_
 14	1921	1921	NUM	NUM	_	7	nmod	_	SpaceAfter=No
-15	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 55
 # text = ב-30 בדצמבר 1922 הוקמה ברית המועצות, כאיחוד בין רוסיה ובין מספר רפובליקות סובייטיות נוספות, שקמו בשטחי האימפריה הרוסית לשעבר - ביוזמת הצבא האדום.
 1	ב	ב	ADP	ADP	_	3	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
@@ -1707,7 +1746,7 @@
 37	אדום	אדום	ADJ	ADJ	Gender=Masc|Number=Sing	35	amod	_	_
 38	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 56
 # text = השלטון אשר עמד בראש המדינה החדשה נקט במדיניות בדלנית במהלך עשרים השנים שחלפו מתום מלחמת האזרחים, ודאג לתעש אותה ולהשריש את צורת השלטון החדשה בקרב אזרחיה.
 1-2	השלטון	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1760,7 +1799,7 @@
 38	אזרחיה	אזרחיה	NOUN	NOUN	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No
 39	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 3
+# sent_id = 57
 # text = ידה של ברית המועצות בתום מלחמת העולם השנייה הייתה על העליונה.
 1-3	ידה	_	_	_	_	_	_	_	_
 1	יד_	יד	NOUN	NOUN	Definite=Def|Gender=Fem|Number=Sing	18	nsubj	_	_
@@ -1788,7 +1827,7 @@
 18	עליונה	עליון	ADJ	ADJ	Gender=Fem|Number=Sing	0	root	_	_
 19	.	.	PUNCT	PUNCT	_	18	punct	_	_
 
-# sent_id = 4
+# sent_id = 58
 # text = המלחמה גרמה למשבר חריף בממלכה המאוחדת, שאיבדה ממעמדה הבינלאומי כמעצמת על; את מקומה תפסה רוסיה, לצד ארצות הברית.
 1-2	המלחמה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1830,7 +1869,7 @@
 30	ברית	ברית	NOUN	NOUN	Gender=Fem|Number=Sing	28	compound:smixut	_	_
 31	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 59
 # text = המאבק בין שתי מעצמות העל ידוע בכינוי: "המלחמה הקרה".
 1-2	המאבק	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -1852,7 +1891,7 @@
 15	"	"	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No
 16	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 60
 # text = מלחמה זו התחממה מעת לעת, בעת מלחמות בין בעלות הברית של המעצמות, דוגמת מלחמת קוריאה ומלחמת וייטנאם.
 1	מלחמה	מלחמה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -1885,7 +1924,7 @@
 24	וייטנאם	וייטנאם	PROPN	PROPN	_	23	compound:smixut	_	SpaceAfter=No
 25	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 7
+# sent_id = 61
 # text = במהלך תקופה זו, שלטה ברית המועצות על אימפריה רחבת ידיים באירופה המזרחית והמרכזית.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -1913,7 +1952,7 @@
 19	מרכזית	מרכזי	ADJ	ADJ	Gender=Fem|Number=Sing	17	conj	_	_
 20	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 8
+# sent_id = 62
 # text = היא דיכאה ביד קשה מספר התקוממויות נגד שלטונה, דוגמת המרד בהונגריה, אשר התרחש בשנת 1956 ו"האביב של פראג" בצ'כוסלובקיה בשנת 1968.
 1	היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	דיכאה	דיכא	VERB	VERB	Gender=Fem|HebBinyan=PIEL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -1956,14 +1995,10 @@
 31	ב	ב	ADP	ADP	_	32	case	_	_
 32	שנת	שנה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	26	nmod	_	_
 33	1968	1968	NUM	NUM	_	32	compound:smixut	_	SpaceAfter=No
-34	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+34	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 63
 # text = בשנת 1964, הודח ניקיטה חרושצ'וב מהשלטון, ואת מקומו תפס ליאוניד ברז'נייב.
 1-2	בשנת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -1990,7 +2025,7 @@
 19	ברז'נייב	ברז'נייב	PROPN	PROPN	_	18	flat:name	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 64
 # text = ברז'נייב חיזק בצורה משמעותית את הצבא הסובייטי והגביר את ההגמוניה והיוקרה של ברית המועצות בעולם.
 1	ברז'נייב	ברז'נייב	PROPN	PROPN	_	2	nsubj	_	_
 2	חיזק	חיזק	VERB	VERB	Gender=Masc|HebBinyan=PIEL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -2022,7 +2057,7 @@
 22	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	17	nmod	_	_
 23	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 65
 # text = עם זאת, התאפיין שלטונו בשחיתות הולכת וגוברת ובמיתון כלכלי.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	4	obl	_	SpaceAfter=No
@@ -2045,7 +2080,7 @@
 15	כלכלי	כלכלי	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
 16	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 66
 # text = לאחר מות ברז'נייב בנובמבר 1982, ידעה ברית המועצות חילופי שלטון תכופים, כאשר יורי אנדרופוב (1982 - 1984) וקונסטנטין צ'רניינקו (1984 - 1985) משלו בה לפרקי זמן קצרים.
 1	לאחר	לאחר	ADP	ADP	_	2	case	_	_
 2	מות	מוות	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	8	obl	_	_
@@ -2095,7 +2130,7 @@
 40	קצרים	קצר	ADJ	ADJ	Gender=Masc|Number=Plur	39	amod	_	SpaceAfter=No
 41	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 5
+# sent_id = 67
 # text = השניים האחרונים היו חולים מאוד כבר בהיכנסם לתפקיד, ולא הספיקו להותיר את חותמם על מדיניות ברית המועצות, שנשארה זהה כמעט לחלוטין לזו שהונהגה בתקופת ברז'נייב.
 1-2	השניים	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -2143,28 +2178,20 @@
 35	ב	ב	ADP	ADP	_	36	case	_	_
 36	תקופת	תקופה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	34	obl	_	_
 37	ברז'נייב	ברז'נייב	PROPN	PROPN	_	36	compound:smixut	_	SpaceAfter=No
-38	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+38	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 68
 # text = לאחר התפרקות ברית המועצות
 1	לאחר	לאחר	ADP	ADP	_	2	case	_	_
 2	התפרקות	התפרקות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
 3	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	2	compound:smixut	_	_
-4-5	המועצות	_	_	_	_	_	_	_	SpaceAfter=No
+4-5	המועצות	_	_	_	_	_	_	_	SpacesAfter=\n\n
 4	ה	ה	DET	DET	PronType=Art	5	det:def	_	_
 5	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	3	compound:smixut	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 69
 # text = מיכאיל גורבצ'וב, שעלה לשלטון במרץ 1985 לאחר מותו של קונסטנטין צ'רניינקו, ניסה להציל את כלכלתה הקופאת של המדינה, אך לא השכיל להפיל את שיטת הממשל הקומוניסטית.
 1	מיכאיל	מיכאיל	PROPN	PROPN	_	19	nsubj	_	_
 2	גורבצ'וב	גורבצ'וב	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
@@ -2211,7 +2238,7 @@
 37	קומוניסטית	קומוניסטי	ADJ	ADJ	Gender=Fem|Number=Sing	35	amod	_	_
 38	.	.	PUNCT	PUNCT	_	19	punct	_	_
 
-# sent_id = 2
+# sent_id = 70
 # text = עם זאת, הרפורמות שהנהיג תרמו בשנת 1991 להתפרקות ברית המועצות, זמן קצר לאחר בחירתו של בוריס ילצין לנשיא.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	8	obl	_	SpaceAfter=No
@@ -2248,7 +2275,7 @@
 27	נשיא	נשיא	NOUN	NOUN	Gender=Masc|Number=Sing	20	nmod	_	_
 28	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 71
 # text = לאחר נפילת הברית, התרחשה הפיכת ינאייב, אשר בוצעה על ידי החוגים הקומוניסטיים השמרניים.
 1	לאחר	לאחר	ADP	ADP	_	2	case	_	_
 2	נפילת	נפילה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	6	obl	_	_
@@ -2271,7 +2298,7 @@
 17	השמרניים	השמרני	ADJ	ADJ	Gender=Masc|Number=Plur	15	amod	_	SpaceAfter=No
 18	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 72
 # text = הפיכה זו הייתה ניסיון פוטש, על מנת להחזיר את הגלגל לאחור, אך כשלה כעבור שלושה ימים בלבד.
 1	הפיכה	הפיכה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -2294,18 +2321,20 @@
 19	בלבד	בלבד	ADV	ADV	_	18	advmod	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 5
-# text = בניצוחו של ילצין, הפכה רוסיה דמוקרטיה.
-1	בניצוחו	בניצוחו	NOUN	NOUN	_	6	nsubj	_	_
+# sent_id = 73
+# text = בניצוחו של ילצין, הפכה רוסיה לדמוקרטיה.
+1	בניצוחו	בניצוחו	NOUN	NOUN	_	8	nsubj	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
 3	ילצין	ילצין	PROPN	PROPN	_	1	nmod:poss	_	SpaceAfter=No
-4	,	,	PUNCT	PUNCT	_	6	punct	_	_
-5	הפכה	הפך	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	7	aux	_	_
-6	רוסיה	רוסיה	PROPN	PROPN	_	7	nsubj	_	_
-7	דמוקרטיה	דמוקרטיה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	PUNCT	_	6	punct	_	_
+4	,	,	PUNCT	PUNCT	_	8	punct	_	_
+5	הפכה	הפך	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	8	aux	_	_
+6	רוסיה	רוסיה	PROPN	PROPN	_	8	nsubj	_	_
+7-8	לדמוקרטיה	_	_	_	_	_	_	_	SpaceAfter=No
+7	ל	ל	ADP	ADP	_	8	case	_	_
+8	דמוקרטיה	דמוקרטיה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 74
 # text = הרפובליקות הסובייטיות לא רצו להמשיך את דרכן יחד עם רוסיה, והתנתקו ממנה בראשית שנות ה-90.
 1-2	הרפובליקות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -2333,7 +2362,7 @@
 21	90	90	NUM	NUM	_	18	compound:smixut	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 75
 # text = רוסיה ניסתה לשמר את מעמדה הרם בקרב הרפובליקות הפורשות; לשם כך הקימה את חבר המדינות, אך לרוע המזל אף הוא התפרק.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	ניסתה	ניסה	VERB	VERB	Gender=Fem|HebBinyan=PIEL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -2371,7 +2400,7 @@
 29	התפרק	התפרק	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=3|Tense=Past	2	conj	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 8
+# sent_id = 76
 # text = הדמוקרטיה החדשה ידעה מספר משברים צבאיים, בעיקר מצד חסידי השלטון הישן, אשר דגלו בחידוש הברית, כמו גם מתקפות טרור רצחניות צ'צ'ניות, על רקע מאבקה של צ'צ'ניה לקבלת עצמאות מרוסיה.
 1-2	הדמוקרטיה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -2424,7 +2453,7 @@
 41	רוסיה	רוסיה	PROPN	PROPN	_	39	nmod	_	_
 42	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 9
+# sent_id = 77
 # text = רוסיה ידעה גם משברים כלכליים קשים; הקשה מכולם היה משבר הרובל, אשר התרחש באוגוסט 1998.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	ידעה	ידע	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	0	root	_	_
@@ -2449,14 +2478,10 @@
 18	ב	ב	ADP	ADP	_	19	case	_	_
 19	אוגוסט	אוגוסט	PROPN	PROPN	_	17	obl	_	_
 20	1998	1998	NUM	NUM	_	19	nummod	_	SpaceAfter=No
-21	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 78
 # text = ילצין היה הנשיא הראשון שנבחר בבחירות דמוקרטיות במדינה.
 1	ילצין	ילצין	PROPN	PROPN	_	4	nsubj	_	_
 2	היה	היה	AUX	AUX	Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	4	cop	_	_
@@ -2480,7 +2505,7 @@
 15	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	11	nmod	_	_
 16	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 79
 # text = הוא כיהן כנשיא במשך שתי קדנציות רצופות, עד שהגיש את התפטרותו[דרושה הבהרה], ערב פתיחת המאה ה-21.
 1	הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	כיהן	כיהן	VERB	VERB	Gender=Masc|HebBinyan=PIEL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -2512,7 +2537,7 @@
 25	21	21	NUM	NUM	_	22	amod	_	SpaceAfter=No
 26	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 80
 # text = הוא הנהיג במדינה רפורמות רדיקליות, והביא לשינוי המבנה החברתי, הפוליטי והכלכלי של רוסיה.
 1	הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	הנהיג	הנהיג	VERB	VERB	Gender=Masc|HebBinyan=HIFIL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -2546,7 +2571,7 @@
 23	רוסיה	רוסיה	PROPN	PROPN	_	14	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 81
 # text = כמו כן הביא לקריסת הסוציאליזם בברית המועצות, הוציא את המפלגה הקומוניסטית מחוץ לחוק ופיזר את הסובייט העליון.
 1	כמו	כמו	ADP	ADP	_	2	case	_	_
 2	כן	_	PRON	PRON	Person=3|PronType=Dem	3	obl	_	_
@@ -2585,14 +2610,10 @@
 27-28	העליון	_	_	_	_	_	_	_	SpaceAfter=No
 27	ה	ה	DET	DET	PronType=Art	28	det:def	_	_
 28	עליון	עליון	ADJ	ADJ	Gender=Masc|Number=Sing	26	amod	_	_
-29	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+29	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 82
 # text = עם עלייתו של ולדימיר פוטין לשלטון בשנת 2000, בעידודו של ילצין, ביססה רוסיה את מעמדה הכלכלי, והחלה להיחלץ בהדרגה מהמשבר הכלכלי הקשה אליו נכנסה.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2-4	עלייתו	_	_	_	_	_	_	_	_
@@ -2649,7 +2670,7 @@
 42	נכנסה	נכנס	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Sing|Person=3|Tense=Past|Voice=Mid	35	acl	_	SpaceAfter=No
 43	.	.	PUNCT	PUNCT	_	19	punct	_	_
 
-# sent_id = 2
+# sent_id = 83
 # text = עדות לכך ניתנה ב-1999, במהלכה החלו מחירי הנפט והגז הטבעי לעלות חזרה לשווים המקורי, טרם המשבר שגרם לצניחתם.
 1	עדות	עדות	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
 2-3	לכך	_	_	_	_	_	_	_	_
@@ -2689,7 +2710,7 @@
 29	לצניחתם	צניחת	VERB	VERB	HebBinyan=PIEL|VerbForm=Inf|Voice=Act	28	xcomp	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 84
 # text = השיפור במעמדה הכלכלי של רוסיה תרם להשפעתה המכרעת על הפוליטיקה והכלכלה העולמית.
 1-2	השיפור	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -2718,14 +2739,10 @@
 20-21	העולמית	_	_	_	_	_	_	_	SpaceAfter=No
 20	ה	ה	DET	DET	PronType=Art	21	det:def	_	_
 21	עולמית	עולמי	ADJ	ADJ	Gender=Fem|Number=Sing	19	amod	_	_
-22	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 85
 # text = בד בבד, עברה רוסיה הידרדרות משמעותית בתחום זכויות האדם וחופש הפרט: גופי אכיפת החוק הפדרליים קיבלו סמכויות מורחבות; ערוצי הטלוויזיה והרדיו עברו לבעלות גזפרום מדיה, תאגיד תקשורת בבעלות תאגיד גזפרום הממשלתי; ספקיות התקשורת חויבו להתבסס על תשתיות רוסיות ונמנע מטוקבקיסטים מלהביע דעות מבלי להירשם קודם לכן ונחקק חוק האינטרנט הריבוני שנועד לוודא שרשת האינטרנט הרוסית תתבסס על משאבים רוסיים ובכך תתאפשר לממשלת רוסיה שליטה טובה יותר על האינטרנט במדינה.
 1	בד	בד	NOUN	NOUN	Gender=Masc|Number=Sing	5	advmod	_	_
 2-3	בבד	_	_	_	_	_	_	_	SpaceAfter=No
@@ -2841,14 +2858,10 @@
 94	ב	ב	ADP	ADP	_	96	case	_	_
 95	ה_	ה	DET	DET	PronType=Art	96	det:def	_	_
 96	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	93	nmod	_	_
-97	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+97	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 86
 # text = בדצמבר 2007, נערכו בחירות לדומה (הבית התחתון של הפרלמנט הרוסי, האספה הפדרלית), אשר בהן זכתה "רוסיה המאוחדת", מפלגתו של פוטין.
 1-2	בדצמבר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -2901,7 +2914,7 @@
 39	פוטין	פוטין	PROPN	PROPN	_	35	nmod:poss	_	SpaceAfter=No
 40	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 87
 # text = במרץ 2008, נערכו בחירות לנשיאות רוסיה, לאחריהן זכה ברוב קולות מקורבו של פוטין, דמיטרי מדבדב.
 1	במרץ	במרץ	ADP	ADP	_	2	case	_	_
 2	2008	2008	NUM	NUM	_	4	obl	_	SpaceAfter=No
@@ -2932,14 +2945,10 @@
 23	,	,	PUNCT	PUNCT	_	18	punct	_	_
 24	דמיטרי	דמיטרי	PROPN	PROPN	_	18	appos	_	_
 25	מדבדב	מדבדב	PROPN	PROPN	_	24	flat:name	_	SpaceAfter=No
-26	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 88
 # text = באוגוסט 2008, פלשה רוסיה לשכנתה גאורגיה, במסגרת המלחמה בדרום אוסטיה.
 1-2	באוגוסט	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -2963,7 +2972,7 @@
 16	אוסטיה	אוסטיה	PROPN	PROPN	_	15	compound:smixut	_	SpaceAfter=No
 17	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 89
 # text = היה זה העימות הצבאי הראשון מחוץ לגבולותיה מאז התפרקות ברית המועצות, שהביא לעצמאות דה פקטו של מחוזות דרום אוסטיה ואבחזיה.
 1	היה	היה	AUX	AUX	Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	4	cop	_	_
 2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
@@ -3006,14 +3015,10 @@
 30	דרום	דרום	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	29	compound:smixut	_	_
 31	אוסטיה	אוסטיה	PROPN	PROPN	_	30	compound:smixut	_	_
 32	ואבחזיה	ואבחזיה	PROPN	PROPN	_	31	nmod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 90
 # text = במרץ 2012, נערכו בשנית הבחירות לנשיאות רוסיה, ופוטין נבחר מחדש לקדנציה בת שש שנים, כשהוא ממנה את קודמו, מדבדב, לתפקיד ראש הממשלה.
 1	במרץ	במרץ	ADP	ADP	_	5	advmod	_	_
 2-3	2012	_	_	_	_	_	_	_	SpaceAfter=No
@@ -3065,7 +3070,7 @@
 39	ממשלה	ממשלה	NOUN	NOUN	Gender=Fem|Number=Sing	37	compound:smixut	_	_
 40	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 91
 # text = רוסיה הייתה מעורבת במשבר קרים, שהביא לסיפוח דה-פקטו של חצי האי קרים לרוסיה.
 1	רוסיה	רוסיה	PROPN	PROPN	_	3	nsubj	_	_
 2	הייתה	היה	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	3	cop	_	_
@@ -3095,7 +3100,7 @@
 21	רוסיה	רוסיה	PROPN	PROPN	_	11	nmod	_	_
 22	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 92
 # text = עקב אירועים אלה, הטילו מרבית מדינות המערב סנקציות כלכליות על רוסיה, ויחד עם ירידת מחירי הנפט והגז (המהווים את רוב הייצוא הרוסי) שהחלה ב-2014 - הביאו אלה למיתון בכלכלה הרוסית.
 1	עקב	_	CCONJ	CCONJ	_	2	case	_	_
 2	אירועים	אירוע	NOUN	NOUN	Gender=Masc|Number=Plur	5	obl	_	_
@@ -3153,14 +3158,10 @@
 45-46	הרוסית	_	_	_	_	_	_	_	SpaceAfter=No
 45	ה	ה	DET	DET	PronType=Art	46	det:def	_	_
 46	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	44	amod	_	_
-47	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+47	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 93
 # text = בספטמבר 2015, התערבה רוסיה בנעשה במלחמת האזרחים בסוריה, כששלחה כוחות צבאיים, אשר סייעו לנשיא סוריה, בשאר אל-אסד – במלחמתו במתנגדים לשלטונו.
 1-2	בספטמבר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -3217,7 +3218,7 @@
 42	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	nmod:poss	_	_
 43	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 94
 # text = סיוע זה הביא להידרדרות מתמשכת של רוסיה ביחסיה עם מדינות המערב.
 1	סיוע	סיוע	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -3232,14 +3233,10 @@
 11-12	המערב	_	_	_	_	_	_	_	SpaceAfter=No
 11	ה	ה	DET	DET	PronType=Art	12	det:def	_	_
 12	מערב	מערב	NOUN	NOUN	Gender=Masc|Number=Sing	10	compound:smixut	_	_
-13	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 95
 # text = בשני העשורים הראשונים של המאה ה-21, הצליח פוטין לחזק בהדרגה את הדומיננטיות שלו בשלטון, ואת תדמיתו כשליט הרלוונטי היחיד ברוסיה, תוך נטרול אפקטיביות מצד האופוזיציה.
 1-2	בשני	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -3298,7 +3295,7 @@
 43	אופוזיציה	אופוזיציה	NOUN	NOUN	Gender=Fem|Number=Sing	39	nmod	_	_
 44	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 96
 # text = פוטין נהנה בתקופה זו באופן עקבי למדי מתמיכה ציבורית רחבה, אולם נקודת שפל יחסית בתדמיתו הציבורית הגיעה בשנת 2019 כאשר מספר מחאות ציבוריות התמזגו יחד באופן שערער את לגיטימיות השלטון שלו באופן חריג.
 1	פוטין	פוטין	PROPN	PROPN	_	2	nsubj	_	_
 2	נהנה	נהנה	VERB	VERB	Gender=Masc|HebBinyan=NIFAL|Number=Sing|Person=3|Tense=Past|Voice=Mid	0	root	_	_
@@ -3358,7 +3355,7 @@
 46	חריג	חריג	ADJ	ADJ	Gender=Masc|Number=Sing	45	amod	_	SpaceAfter=No
 47	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 97
 # text = המחאות השונות נגעו במגוון נושאים, ביניהם העלאת גיל הפרישה, קיצוץ בשירותי הרווחה הציבוריים, חוסר יכולת לטפל במפגעי אשפה וטענות לאוזלת יד הממשלה מול תופעת של אלימות נגד נשים - אלו הצטרפו לגל מחאות מוקדם יותר בארגון האופוזיציה, שהחל לצבור תאוצה בשנים 2017–2018 תוך טענות לשחיתות שלטונית בדרגים הגבוהים.
 1	המחאות	המחאה	NOUN	NOUN	Gender=Fem|Number=Plur	4	nsubj	_	_
 2-3	השונות	_	_	_	_	_	_	_	_
@@ -3451,7 +3448,7 @@
 73	גבוהים	גבוה	ADJ	ADJ	Gender=Masc|Number=Plur	71	amod	_	_
 74	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 98
 # text = באוגוסט 2019 נעצרו כ-600 אזרחי רוסיה שהשתתפו במחאה למען בחירות חופשיות ובעקבות סנקציות על כלכלתה חווה רוסיה האטה כלכלית מסוימת.
 1-2	באוגוסט	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -3483,14 +3480,10 @@
 24	האטה	האטה	NOUN	NOUN	Gender=Fem|Number=Sing	22	obj	_	_
 25	כלכלית	כלכלי	ADJ	ADJ	Gender=Fem|Number=Sing	24	amod	_	_
 26	מסוימת	מסוים	ADJ	ADJ	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
-27	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 99
 # text = במהלך התפרצות נגיף הקורונה, הייתה רוסיה המדינה השלישית בעולם במספר הנדבקים בה: כ-2 מיליון נדבקים.
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -3528,14 +3521,10 @@
 27-28	נדבקים	_	_	_	_	_	_	_	SpaceAfter=No
 27	נ	נ	PROPN	PROPN	_	10	nmod	_	_
 28	דבקים	דבק	NOUN	NOUN	Gender=Masc|Number=Plur	27	compound:smixut	_	_
-29	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+29	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 100
 # text = מאז נובמבר 2021 ריכזה רוסיה כוחות צבא גדולים בגבולה עם אוקראינה, וב-24 בפברואר 2022 החלה הפלישה הרוסית לאוקראינה.
 1-2	מאז	_	_	_	_	_	_	_	_
 1	מ	מ	ADP	ADP	_	3	case	_	_
@@ -3572,14 +3561,10 @@
 27	ה	ה	DET	DET	PronType=Art	28	det:def	_	_
 28	רוסית	רוסי	ADJ	ADJ	Gender=Fem|Number=Sing	26	amod	_	_
 29	לאוקראינה	לאוקראינה	PROPN	PROPN	_	26	appos	_	SpaceAfter=No
-30	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 101
 # text = רוסיה היא אחת מהנפגעות העיקריות ממשבר האקלים (הטמפרטורה בה עולה בקצב מהיר מבשאר העולם), אך גם אחת מהמדינות העיקריות התורמות לו (הרביעית בשיעור פליטת גזי החממה).
 1	רוסיה	רוסיה	PROPN	PROPN	_	4	nsubj:cop	_	_
 2	היא	הוא	AUX	AUX	Gender=Fem|Number=Sing|Person=3|Polarity=Pos|VerbForm=Part|VerbType=Cop	4	cop	_	_
@@ -3638,23 +3623,15 @@
 43	גזי	גז	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	42	compound:smixut	_	_
 44	החממה	החממה	NOUN	NOUN	Gender=Fem|Number=Sing	43	compound:smixut	_	SpaceAfter=No
 45	)	)	PUNCT	PUNCT	_	39	punct	_	SpaceAfter=No
-46	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 102
 # text = פוליטיקה
-1	פוליטיקה	פוליטיקה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+1	פוליטיקה	פוליטיקה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 103
 # text = דה יורה, רוסיה היא פדרציה נשיאותית.
 1	דה	דה	PROPN	PROPN	_	6	nsubj:cop	_	_
 2	יורה	יורה	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
@@ -3665,7 +3642,7 @@
 7	נשיאותית	נשיאותי	ADJ	ADJ	Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No
 8	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 104
 # text = חוקת רוסיה, שאושרה במשאל עם ב-1993 - יצרה את הבסיס למשטר נשיאותי.
 1	חוקת	חוקה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	13	nsubj	_	_
 2	רוסיה	רוסיה	PROPN	PROPN	_	1	compound:smixut	_	SpaceAfter=No
@@ -3692,7 +3669,7 @@
 19	נשיאותי	נשיאותי	ADJ	ADJ	Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 105
 # text = הנשיא בעל סמכויות נרחבות, ונבחר בבחירות ישירות, כלליות וחשאיות לכהונה בת שש שנים.
 1-2	הנשיא	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3720,7 +3697,7 @@
 20	שנים	שנה	NOUN	NOUN	Gender=Fem|Number=Plur	18	compound:smixut	_	SpaceAfter=No
 21	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 106
 # text = מקום משכנו של הנשיא הוא הקרמלין.
 1	מקום	מקום	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	8	nsubj:cop	_	_
 2	משכנו	משכנו	NOUN	NOUN	_	1	compound:smixut	_	_
@@ -3734,7 +3711,7 @@
 8	קרמלין	קרמלין	PROPN	PROPN	_	0	root	_	_
 9	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 5
+# sent_id = 107
 # text = הנשיא ממנה את הממשלה ואת ראש הממשלה, שחייב לזכות באישור הבית התחתון של הפרלמנט, את סגן ראש הממשלה ואת השרים.
 1-2	הנשיא	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3786,7 +3763,7 @@
 35	שרים	שר	NOUN	NOUN	Gender=Masc|Number=Plur	7	conj	_	_
 36	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 108
 # text = כמו כן, מעורב הנשיא במינוי הפקידות הבכירה באמצעות הגשת מועמדים לתפקידי כח במדינה.
 1	כמו	כמו	ADP	ADP	_	2	case	_	_
 2	כן	_	PRON	PRON	Person=3|PronType=Dem	4	obl	_	SpaceAfter=No
@@ -3814,7 +3791,7 @@
 20	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	17	obl	_	_
 21	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 7
+# sent_id = 109
 # text = הוא גם משמש כמפקד צבא רוסיה וראש המועצה לביטחון לאומי.
 1	הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	גם	גם	ADV	ADV	_	3	advmod	_	_
@@ -3837,7 +3814,7 @@
 15	לאומי	לאומי	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
 16	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 8
+# sent_id = 110
 # text = הנשיא רשאי להוציא צווים ללא אישור הפרלמנט ולהם תוקף כשל חוק ממש.
 1-2	הנשיא	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3857,14 +3834,10 @@
 13	כשל	כשל	ADP	ADP	_	14	case	_	_
 14	חוק	חוק	NOUN	NOUN	Gender=Masc|Number=Sing	12	obl	_	_
 15	ממש	ממש	ADV	ADV	_	14	advmod	_	SpaceAfter=No
-16	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 111
 # text = הפרלמנט הרוסי, המכונה: "האספה הפדרלית של רוסיה", מורכב משני בתים.
 1-2	הפרלמנט	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3895,7 +3868,7 @@
 21	בתים	בית	NOUN	NOUN	Gender=Masc|Number=Plur	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	18	punct	_	_
 
-# sent_id = 2
+# sent_id = 112
 # text = הבית העליון הוא מועצת הפדרציה, המורכבת מ-170 צירים, הממונים לתקופת כהונה בת ארבע שנים (שני נציגים מכל אחד מ-88 הסובייקטים הפדרליים של רוסיה).
 1-2	הבית	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3942,7 +3915,7 @@
 37	)	)	PUNCT	PUNCT	_	26	punct	_	SpaceAfter=No
 38	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 113
 # text = הבית התחתון, הדומה, מורכב מ-450 צירים, הנבחרים לתקופת כהונה של חמש שנים, בבחירות יחסיות.
 1-2	הבית	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -3975,14 +3948,10 @@
 24	ה_	ה	DET	DET	PronType=Art	25	det:def	_	_
 25	בחירות	בחירות	NOUN	NOUN	Gender=Fem|Number=Plur	15	obl	_	_
 26	יחסיות	יחסי	ADJ	ADJ	Gender=Fem|Number=Plur	25	amod	_	SpaceAfter=No
-27	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 114
 # text = למרות ליברליזציה יחסית בשנים שלאחר התפרקות ברית המועצות, החל משלב מסוים המשטר אימץ בהדרגה, ובמיוחד תחת שלטון פוטין, מאפיינים דה פקטו שאינם דמוקרטיים ובפועל נחשבת רוסיה לבעלת משטר אוטוקרטי וסמכותני.
 1	למרות	למרות	ADP	ADP	_	2	case	_	_
 2	ליברליזציה	ליברליזציה	NOUN	NOUN	Gender=Fem|Number=Sing	19	obl	_	_
@@ -4036,36 +4005,24 @@
 42	משטר	משטר	NOUN	NOUN	Gender=Masc|Number=Sing	41	obj	_	_
 43	אוטוקרטי	אוטוקרטי	ADJ	ADJ	Gender=Masc|Number=Sing	42	amod	_	_
 44	וסמכותני	וסמכותני	ADJ	ADJ	Gender=Masc|Number=Sing	42	amod	_	SpaceAfter=No
-45	.	.	PUNCT	PUNCT	_	19	punct	_	SpacesAfter=\n
+45	.	.	PUNCT	PUNCT	_	19	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 115
 # text = כלכלה
-1	כלכלה	כלכלה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+1	כלכלה	כלכלה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 116
 # text = התפרקות ברית המועצות
 1	התפרקות	התפרקות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
 2	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
-3-4	המועצות	_	_	_	_	_	_	_	SpaceAfter=No
+3-4	המועצות	_	_	_	_	_	_	_	SpacesAfter=\n\n
 3	ה	ה	DET	DET	PronType=Art	4	det:def	_	_
 4	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	2	compound:smixut	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 117
 # text = על פי מדד הפיתוח האנושי, נחשבה רוסיה עד 1991 מדינה בעלת מדד פיתוח אנושי גבוה, אך בשנים הראשונות שלאחר התפרקות ברית המועצות נאבקה רוסיה (כמו רוב מדינות הגוש הקומוניסטי לשעבר) לקיים כלכלת שוק וצמיחה כלכלית בריאה.
 1	על	על	ADP	ADP	_	3	case	_	_
 2	פי	פה	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	1	fixed	_	_
@@ -4128,7 +4085,7 @@
 50	בריאה	בריא	ADJ	ADJ	Gender=Fem|Number=Sing	48	amod	_	SpaceAfter=No
 51	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 118
 # text = עם נפילת המשטר הסובייטי ב-1991, הוגדר מצבה הכלכלי של רוסיה כ"קטסטרופה"[דרוש מקור], עם נפילה חדה בתמ"ג, גרעון תקציבי עצום, רזרבות מט"ח אפסיות ואינפלציה משתוללת.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	נפילת	נפילה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	11	obl	_	_
@@ -4173,7 +4130,7 @@
 37	משתוללת	השתולל	VERB	VERB	Gender=Fem|HebBinyan=HITPAEL|Number=Sing|Person=1,2,3|VerbForm=Part	36	amod	_	SpaceAfter=No
 38	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 3
+# sent_id = 119
 # text = על הסיבות לכך נמנו בעיקר התעשייה הבלתי תחרותית, אובדן שוקי הגוש הסובייטי לשעבר שבעבר רוסיה הסובייטית נשענה עליהם, היעדר תמיכה של ממש במגזר החקלאי, היעדר תשתית עסקית חלופית לשלטון הכלכלי הריכוזי (אנ') שהתפרק והתנגדות הממסד הקיים לביצוע רפורמות כלשהן.
 1	על	על	ADP	ADP	_	3	case	_	_
 2-3	הסיבות	_	_	_	_	_	_	_	_
@@ -4262,7 +4219,7 @@
 67	כלשהן	כלשהו	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Ind	66	det	_	SpaceAfter=No
 68	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 120
 # text = בעקבות היווצרות משבר כלכלי חמור זה, ניתנה ברוסיה שלאחר התפרקות ברית המועצות חשיבות עליונה להסרת כל החסמים, שעשויים היו לעכב או אף למנוע התפתחות כלכלית עתידית, דוגמת התערבות ממשלתית.
 1	בעקבות	בעקבות	ADP	ADP	_	2	case	_	_
 2	היווצרות	היווצרות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	8	obl	_	_
@@ -4308,7 +4265,7 @@
 37	ממשלתית	ממשלתי	ADJ	ADJ	Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
 38	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 5
+# sent_id = 121
 # text = כמו כן, הוחלט לתת חופש מוחלט להתנהלות המשק הרוסי תוך כינון כלכלת שוק הוגנת (דוגמת הפרטות שקופות וביסוס מנגנונים אנטי-מונופוליים), כפי שזו נהגתה על ידי אבי תורת הקפיטליזם, אדם סמית.
 1	כמו	כמו	ADP	ADP	_	2	case	_	_
 2	כן	_	PRON	PRON	Person=3|PronType=Dem	4	obl	_	SpaceAfter=No
@@ -4357,7 +4314,7 @@
 41	סמית	סמית	PROPN	PROPN	_	40	flat:name	_	SpaceAfter=No
 42	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 122
 # text = כמו כן, נעשו מאמצים לשלב את רוסיה מחדש בכלכלה העולמית, ולערוך בה שינויים כלכליים מבניים.
 1	כמו	כמו	ADP	ADP	_	2	case	_	_
 2	כן	_	PRON	PRON	Person=3|PronType=Dem	4	obl	_	SpaceAfter=No
@@ -4386,7 +4343,7 @@
 21	מבניים	מבני	ADJ	ADJ	Gender=Masc|Number=Plur	19	amod	_	SpaceAfter=No
 22	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 7
+# sent_id = 123
 # text = דוגמה לכך היא הסדרת התנהלותם הכלכלית של גופים, אשר ריכזו בידיהם כוח כלכלי רב, דוגמת האוליגרכים הרוסיים.
 1	דוגמה	דוגמה	NOUN	NOUN	Gender=Fem|Number=Sing	5	nsubj:cop	_	_
 2-3	לכך	_	_	_	_	_	_	_	_
@@ -4422,14 +4379,10 @@
 27	דוגמת	דוגמה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	23	appos	_	_
 28	האוליגרכים	האוליגרך	NOUN	NOUN	Gender=Masc|Number=Plur	27	compound:smixut	_	_
 29	הרוסיים	הרוסי	ADJ	ADJ	Gender=Masc|Number=Plur	28	amod	_	SpaceAfter=No
-30	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 124
 # text = על אף קשיים אלו, חוותה רוסיה צמיחה כלכלית מסוימת ב-1997, אך זו ירדה לטמיון לאחר "משבר הרובל", אשר התרחש באוגוסט 1998.
 1	על	על	ADP	ADP	_	3	case	_	_
 2	אף	אף	CCONJ	CCONJ	_	1	fixed	_	_
@@ -4463,7 +4416,7 @@
 29	1998	1998	NUM	NUM	_	28	nummod	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 125
 # text = במהלך משבר זה, זינקה האינפלציה ל-85%, שער החליפין צנח, המערכת הבנקאית קרסה והממשלה הודיעה על אי עמידה בחובותיה (פשטה רגל).
 1-2	במהלך	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	3	case	_	_
@@ -4511,7 +4464,7 @@
 37	)	)	PUNCT	PUNCT	_	35	punct	_	SpaceAfter=No
 38	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 126
 # text = למרות כל הקשיים שחוותה, נהנית רוסיה מאז שנת 1999 מצמיחה כלכלית, המתבססת על מחירי נפט וגז טבעי גבוהים, כמו גם על רפורמות בתחום המיסוי, התחבורה, הרגולציה ועוד.
 1	למרות	למרות	ADP	ADP	_	4	case	_	_
 2	כל	כול	DET	DET	Definite=Cons	4	det	_	_
@@ -4562,7 +4515,7 @@
 40	עוד	עוד	ADV	ADV	_	33	conj	_	_
 41	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 127
 # text = הצמיחה הכלכלית והעודפים הגדולים בתקציב מובילים, בהדרגה, לצמצום החוב הציבורי.
 1-2	הצמיחה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -4596,7 +4549,7 @@
 21	ציבורי	ציבורי	ADJ	ADJ	Gender=Masc|Number=Sing	19	amod	_	_
 22	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 5
+# sent_id = 128
 # text = במקביל להפרטה המתבצעת, מתבצעת גם הלאמה של מגזרים מסוימים במשק, בעלי חשיבות אסטרטגית גדולה לממשל, דוגמת: אנרגיה, מכרות, הגנה ואווירונאוטיקה.
 1	במקביל	במקביל	ADV	ADV	_	3	case	_	_
 2-3	להפרטה	_	_	_	_	_	_	_	_
@@ -4634,29 +4587,21 @@
 30	,	,	PUNCT	PUNCT	_	27	punct	_	_
 31	הגנה	הגנה	NOUN	NOUN	Gender=Fem|Number=Sing	27	conj	_	_
 32	ואווירונאוטיקה	ואווירונאוטיקה	ADJ	ADJ	Gender=Fem|Number=Sing	31	amod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 129
 # text = השיקום וההתעצמות הכלכלית
 1-2	השיקום	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
 2	שיקום	שיקום	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	וההתעצמות	וההתעצמות	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
-4-5	הכלכלית	_	_	_	_	_	_	_	SpaceAfter=No
+4-5	הכלכלית	_	_	_	_	_	_	_	SpacesAfter=\n\n
 4	ה	ה	DET	DET	PronType=Art	5	det:def	_	_
 5	כלכלית	כלכלי	ADJ	ADJ	Gender=Fem|Number=Sing	3	amod	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 130
 # text = ההתאוששות הכלכלית של רוסיה החלה בשנת 2000, עם עלייתו של ולדימיר פוטין לשלטון.
 1-2	ההתאוששות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -4686,7 +4631,7 @@
 21	שלטון	שלטון	NOUN	NOUN	Gender=Masc|Number=Sing	13	nmod	_	_
 22	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 131
 # text = פוטין צמצם את ההוצאות הממשלתיות, והשכיל להפחית את החוב הציבורי, תהליך הנמשך גם בשנת 2007.
 1	פוטין	פוטין	PROPN	PROPN	_	2	nsubj	_	_
 2	צמצם	צמצם	VERB	VERB	Gender=Masc|HebBinyan=PIEL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -4719,7 +4664,7 @@
 23	2007	2007	NUM	NUM	_	22	compound:smixut	_	SpaceAfter=No
 24	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 132
 # text = כמו כן, הפחית פוטין את המיסוי על ההכנסה ליחידים ולחברות, כאשר תהליך הפחתת המיסוי תרם לגידול במספר היוזמות העסקיות והשקעות החוץ ברוסיה.
 1	כמו	כמו	ADP	ADP	_	2	case	_	_
 2	כן	_	PRON	PRON	Person=3|PronType=Dem	4	obl	_	SpaceAfter=No
@@ -4770,14 +4715,10 @@
 36-37	ברוסיה	_	_	_	_	_	_	_	SpaceAfter=No
 36	ב	ב	ADP	ADP	_	37	case	_	_
 37	רוסיה	רוסיה	PROPN	PROPN	_	33	nmod	_	_
-38	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+38	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 133
 # text = למרות השיפור במצבה הכלכלי, רוסיה עודנה תלויה מאוד במגזר התעשייתי שלה, בפרט ביצוא חומרי גלם דוגמת: נפט, גז טבעי, מתכות ועץ.
 1	למרות	למרות	ADP	ADP	_	3	case	_	_
 2-3	השיפור	_	_	_	_	_	_	_	_
@@ -4821,7 +4762,7 @@
 34	ועץ	ועץ	NOUN	NOUN	Gender=Masc|Number=Sing	33	compound:smixut	_	SpaceAfter=No
 35	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 134
 # text = הפקתם של חומרי גלם אלו, כמו גם ייצואם, עודנה מהווה חלק ניכר מהתוצר הלאומי הגולמי.
 1	הפקתם	הפקתם	NOUN	NOUN	_	13	nsubj	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
@@ -4848,7 +4789,7 @@
 20	גולמי	גולמי	ADJ	ADJ	Gender=Masc|Number=Sing	16	amod	_	_
 21	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 135
 # text = עם זאת, חלקו של מגזר זה פוחת בעת האחרונה, בשל עלייה של כ-12% בשנה בצריכה הפרטית (נכון לשנים 2001–2006), כמו גם בשל הגידול בתוצר הפיננסי.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	8	obl	_	SpaceAfter=No
@@ -4908,7 +4849,7 @@
 46	פיננסי	פיננסי	ADJ	ADJ	Gender=Masc|Number=Sing	44	amod	_	_
 47	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 4
+# sent_id = 136
 # text = רוסיה צפויה להוריד את המע"מ מ־18% ב-2005 ל־13% ב-2009[דרוש מקור].
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	צפויה	צפוי	AUX	AUX	Gender=Fem|Number=Sing|Person=1,2,3|VerbType=Mod	3	aux	_	_
@@ -4934,7 +4875,7 @@
 22	]	]	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
 23	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 5
+# sent_id = 137
 # text = לצד היתרונות הנובעים מהעלייה בצריכה הפרטית, קיימים לה גם חסרונות: העלייה בצריכה הפרטית מונעת מגובה המשכורות ברוסיה לעלות: מ-62 דולרים בחודש ב-1999 - לכ-700 דולרים בחודש - במרץ 2008.
 1	לצד	לצד	ADP	ADP	_	2	case	_	_
 2	היתרונות	היתרון	NOUN	NOUN	Gender=Masc|Number=Plur	11	obl	_	_
@@ -5000,7 +4941,7 @@
 51	2008	2008	NUM	NUM	_	48	nummod	_	SpaceAfter=No
 52	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 6
+# sent_id = 138
 # text = חסרון נוסף מתבטא בחוסר האפשרות להעלות את קצב משיכת ההלוואות והמשכנתאות מבנקים בשליטה ממשלתית, דוגמת סברבנק וונשטורגבנק.
 1	חסרון	חיסרון	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	נוסף	נוסף	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
@@ -5037,14 +4978,10 @@
 26-27	וונשטורגבנק	_	_	_	_	_	_	_	SpaceAfter=No
 26	וונשטורג	וונשטורג	PROPN	PROPN	_	25	flat:name	_	_
 27	בנק	בנק	NOUN	NOUN	Gender=Masc|Number=Sing	24	flat:name	_	_
-28	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 139
 # text = החוב הציבורי בתמ"ג של רוסיה ירד מ-90% בשנת 1999 - ל-8% בלבד בשנת 2006.
 1-2	החוב	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -5078,7 +5015,7 @@
 25	006	006	NUM	NUM	_	24	nummod	_	_
 26	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 140
 # text = העודף בחשבון השוטף שלה בשנת 2006 עמד על כ-105 מיליארדי דולרים (רביעית בעולם בתחום זה)[דרוש מקור].
 1-2	העודף	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -5123,7 +5060,7 @@
 33	]	]	PUNCT	PUNCT	_	32	punct	_	SpaceAfter=No
 34	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 141
 # text = על פי מחקר שערך ארגון העבודה הבינלאומי, ה-ILO, נכון לאוגוסט 2007, עמד שיעור האבטלה ברוסיה על 5.7%[דרוש מקור].
 1	על	על	ADP	ADP	_	3	case	_	_
 2	פי	פה	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	1	fixed	_	_
@@ -5164,14 +5101,10 @@
 31	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	29	appos	_	_
 32	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	31	compound:smixut	_	SpaceAfter=No
 33	]	]	PUNCT	PUNCT	_	31	punct	_	SpaceAfter=No
-34	.	.	PUNCT	PUNCT	_	21	punct	_	SpacesAfter=\n
+34	.	.	PUNCT	PUNCT	_	21	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 142
 # text = חברות אנרגיה וחומרי גלם גדולות, כגון יוקוס (עד לפירוקה), רוסנפט וגזפרום, ששוויה עומד על כ-300 מיליארדי דולרים (השלישית בגודלה בעולם) - משגשגות ברוסיה, בזכות המשאבים הטבעיים.
 1	חברות	חברה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	42	nsubj	_	_
 2	אנרגיה	אנרגיה	NOUN	NOUN	Gender=Fem|Number=Sing	1	compound:smixut	_	_
@@ -5232,14 +5165,10 @@
 49-50	הטבעיים	_	_	_	_	_	_	_	SpaceAfter=No
 49	ה	ה	DET	DET	PronType=Art	50	det:def	_	_
 50	טבעיים	טבעי	ADJ	ADJ	Gender=Masc|Number=Plur	48	amod	_	_
-51	.	.	PUNCT	PUNCT	_	42	punct	_	SpacesAfter=\n
+51	.	.	PUNCT	PUNCT	_	42	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 143
 # text = ב־1 בינואר 2004, החליטו רשויות רוסיה על הקמת "קרן הייצוב הלאומית": קרן עתודות פיסקליות, שאליה מועברות ההכנסות העודפות של המדינה.
 1	ב	ב	ADP	ADP	_	3	case	_	SpaceAfter=No
 2	־	־	NOUN	NOUN	_	3	obl	_	SpaceAfter=No
@@ -5282,7 +5211,7 @@
 33	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	29	nmod	_	_
 34	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 144
 # text = זוהי מעין עתודת חירום פיננסית, במקרה שחל משבר כלכלי כלשהו במדינה.
 1	זוהי	זהו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_
 2	מעין	_	ADV	ADV	_	3	det	_	_
@@ -5303,7 +5232,7 @@
 15	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	10	nmod	_	_
 16	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 145
 # text = תוכנית ייצוב כלכלית זו הועלתה, בשל הצמיחה הכלכלית המהירה ועליית מחירי הנפט בשנים הקודמות, שמניבים הכנסות גבוהות מהמצופה; הכנסות אלו גורמות לעודף תקציבי.
 1	תוכנית	תוכנית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	ייצוב	ייצוב	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	_
@@ -5348,7 +5277,7 @@
 34	תקציבי	תקציבי	ADJ	ADJ	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No
 35	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 146
 # text = נכון ל־1 בנובמבר 2007, עומד שווי העתודות בקרן זו על כ-148 מיליארדי דולרים (כ-3,600 מיליארדי רובלים).
 1	נכון	נכון	ADJ	ADJ	_	4	case	_	_
 2	ל	ל	ADP	ADP	_	1	fixed	_	SpaceAfter=No
@@ -5382,14 +5311,10 @@
 27	מיליארדי	מיליארדי	NUM	NUM	Definite=Cons|Gender=Masc|Number=Plur	28	nummod	_	_
 28	רובלים	רובל	NOUN	NOUN	Gender=Masc|Number=Plur	22	appos	_	SpaceAfter=No
 29	)	)	PUNCT	PUNCT	_	28	punct	_	SpaceAfter=No
-30	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 147
 # text = ביולי 2006, ביטלה רוסיה את כל ההגבלות על הסחר במטבע המקומי (רובל רוסי), בניסיון לגרום להתחזקותו בקרב השווקים הבינלאומיים, ולהעלאת מספר ההשקעות הזרות בכלכלה המקומית.
 1-2	ביולי	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -5452,7 +5377,7 @@
 45	מקומית	מקומי	ADJ	ADJ	Gender=Fem|Number=Sing	43	amod	_	_
 46	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 148
 # text = בעקבות העלייה המתמדת ברמת החיים, שבה רוסיה בשנת 2005 לרמת פיתוח אנושית גבוהה, כפי שזו הייתה טרם התפרקות ברית המועצות.
 1	בעקבות	בעקבות	ADP	ADP	_	3	case	_	_
 2-3	העלייה	_	_	_	_	_	_	_	_
@@ -5495,23 +5420,15 @@
 31-32	המועצות	_	_	_	_	_	_	_	SpaceAfter=No
 31	ה	ה	DET	DET	PronType=Art	32	det:def	_	_
 32	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	30	compound:smixut	_	_
-33	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 149
 # text = קשיים
-1	קשיים	קושי	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+1	קשיים	קושי	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 150
 # text = הקושי העיקרי שמולו ניצבת הכלכלה הרוסית הוא עידוד העסקים הקטנים והבינוניים (שמהווים בתחילת המאה ה-21 פחות מ-20% מהתמ"ג).
 1	הקושי	הקושי	NOUN	NOUN	_	11	nsubj:cop	_	_
 2-3	העיקרי	_	_	_	_	_	_	_	_
@@ -5556,7 +5473,7 @@
 33	)	)	PUNCT	PUNCT	_	19	punct	_	SpaceAfter=No
 34	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 2
+# sent_id = 151
 # text = היות שהכלכלה מנוהלת ברובה על ידי מונופולים ענקיים, ניסו הבנק האירופאי והבנק העולמי ליזום מערכת בנקאית מתוקנת, אך בהצלחה מועטה יחסית.
 1	היות	היות	CCONJ	CCONJ	_	5	mark	_	_
 2-4	שהכלכלה	_	_	_	_	_	_	_	_
@@ -5597,7 +5514,7 @@
 31	יחסית	יחסית	ADV	ADV	_	30	advmod	_	SpaceAfter=No
 32	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 152
 # text = כחלק ממדיניות מכוונת של הממשל הרוסי, חברות זרות בתחום הבנקאות אינן מורשות לחדור למשק הרוסי[דרוש מקור].
 1	כחלק	כחלק	ADP	ADP	_	3	case	_	_
 2-3	ממדיניות	_	_	_	_	_	_	_	_
@@ -5634,7 +5551,7 @@
 27	]	]	PUNCT	PUNCT	_	25	punct	_	SpaceAfter=No
 28	.	.	PUNCT	PUNCT	_	19	punct	_	_
 
-# sent_id = 4
+# sent_id = 153
 # text = כחלק מהסכם הכניסה של רוסיה לארגון הסחר העולמי ב-2012, חתמה רוסיה הסכם עם ארצות הברית, במטרה להעניק מרחב השתתפות חלקי לחברות בנקאיות ברוסיה[דרוש מקור].
 1	כחלק	כחלק	ADV	ADV	_	3	case	_	_
 2-3	מהסכם	_	_	_	_	_	_	_	_
@@ -5684,14 +5601,10 @@
 37	דרוש	דרש	VERB	VERB	Gender=Masc|HebBinyan=PAAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	34	acl	_	_
 38	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	37	nsubj	_	SpaceAfter=No
 39	]	]	PUNCT	PUNCT	_	37	punct	_	SpaceAfter=No
-40	.	.	PUNCT	PUNCT	_	19	punct	_	SpacesAfter=\n
+40	.	.	PUNCT	PUNCT	_	19	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 154
 # text = ריכוזיות יתר של הייצור התעשייתי והמגזר הפיננסי באזורי הבירה, הביאו לאי שוויון כלכלי משמעותי בין אזור העיר והמחוז מוסקבה - ובין חלקים נרחבים אחרים במדינה.
 1	ריכוזיות	ריכוזי	NOUN	NOUN	Gender=Fem|Number=Plur	18	nsubj	_	_
 2	יתר	יתר	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
@@ -5746,7 +5659,7 @@
 40	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	35	nmod	_	_
 41	.	.	PUNCT	PUNCT	_	18	punct	_	_
 
-# sent_id = 2
+# sent_id = 155
 # text = בעוד שאזור מוסקבה מייצר את שליש התמ"ג הרוסי, מתגוררת בו רק עשירית מהאוכלוסייה.
 1	בעוד	בעוד	ADP	ADP	_	4	case	_	_
 2	שאזור	שאזור	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	4	obl	_	_
@@ -5771,14 +5684,10 @@
 17	מ	מ	ADP	ADP	HebSource=ConvUncertainLabel	19	case	_	_
 18	ה	ה	DET	DET	PronType=Art	19	det:def	_	_
 19	אוכלוסייה	אוכלוסייה	NOUN	NOUN	Gender=Fem|Number=Sing	15	nmod	_	_
-20	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 156
 # text = בתחילת המאה ה-21, יוקר המחיה במוסקבה גדול: מחירי הדירות בה עלו באופן לא פרופורציונלי ביחס לרמת המשכורות (כ-5,000 דולרים למ"ר, לעומת שכר ממוצע של 1,045 דולרים לחודש).
 1-2	בתחילת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -5838,7 +5747,7 @@
 46	)	)	PUNCT	PUNCT	_	34	punct	_	SpaceAfter=No
 47	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 2
+# sent_id = 157
 # text = עובדה זו פוגעת באופן ניכר ברמת החיים בה.
 1	עובדה	עובדה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -5858,7 +5767,7 @@
 12	_היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
 13	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 158
 # text = בהתאם ליוקר מחיה זה, מיצבו המגזינים הכלכליים "האקונומיסט" ו"פורבס" את מוסקבה כעיר היקרה ביותר בעולם[דרוש מקור].
 1-2	בהתאם	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	4	case	_	_
@@ -5896,14 +5805,10 @@
 28	דרוש	דרוש	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	21	appos	_	_
 29	מקור	מקור	NOUN	NOUN	Gender=Masc|Number=Sing	28	compound:smixut	_	SpaceAfter=No
 30	]	]	PUNCT	PUNCT	_	28	punct	_	SpaceAfter=No
-31	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 159
 # text = רוסיה נחשבת אחת המדינות המושחתות ביותר באירופה, עובדה שמנעה ממנה להגדיל את ההשקעות הזרות בה בתקופת המעבר.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	נחשבת	נחשב	VERB	VERB	Gender=Fem|HebBinyan=NIFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Mid	0	root	_	_
@@ -5942,7 +5847,7 @@
 27	מעבר	מעבר	NOUN	NOUN	Gender=Masc|Number=Sing	24	compound:smixut	_	_
 28	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 160
 # text = הסיבה להיקפי השחיתות הגדולים נעוצה בעובדה, שחלקים נרחבים מהכלכלה הרוסית נמצאים באפלה או בצללים (הכנסות או הוצאות שלא מדווחות); כספים רבים נמצאים בידיים פרטיות ולא בחשבונות הבנקים, ומשמשים תשלומי שוחד לפקידי ממשלה בכירים, המרכזים בידיהם כוח רב.
 1-2	הסיבה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -6027,7 +5932,7 @@
 65	רב	רב	ADJ	ADJ	Gender=Masc|Number=Sing	64	amod	_	SpaceAfter=No
 66	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 161
 # text = השחיתות פושה גם בשל תקצוב נמוך של הממשלה את משרדיה: בשל השכר הנמוך, נאלצים עובדי ופקידי ממשל לקבל שוחד - לשם השלמת הכנסה.
 1-2	השחיתות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -6070,7 +5975,7 @@
 33	הכנסה	הכנסה	NOUN	NOUN	Gender=Fem|Number=Sing	32	compound:smixut	_	SpaceAfter=No
 34	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 162
 # text = סיבה נוספת לשחיתות הגואה נעוצה בגובה המשכורות במגזר הציבורי, הנמוכה משמעותית ביחס לגובה המשכורות הממוצע במגזר הפרטי.
 1	סיבה	סיבה	NOUN	NOUN	Gender=Fem|Number=Sing	6	nsubj	_	_
 2	נוספת	נוסף	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
@@ -6114,25 +6019,17 @@
 30-31	הפרטי	_	_	_	_	_	_	_	SpaceAfter=No
 30	ה	ה	DET	DET	PronType=Art	31	det:def	_	_
 31	פרטי	פרטי	ADJ	ADJ	Gender=Masc|Number=Sing	29	amod	_	_
-32	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+32	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 163
 # text = תחבורה
-1-2	תחבורה	_	_	_	_	_	_	_	SpaceAfter=No
+1-2	תחבורה	_	_	_	_	_	_	_	SpacesAfter=\n\n
 1	ת	ת	ADP	ADP	_	2	case	_	_
 2	חבורה	חבורה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 164
 # text = שטחה העצום של הפדרציה הרוסית גורם לקושי בתנועה ברחבי המדינה.
 1	שטחה	שטחה	NOUN	NOUN	Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	העצום	_	_	_	_	_	_	_	_
@@ -6157,7 +6054,7 @@
 16	מדינה	מדינה	NOUN	NOUN	Gender=Fem|Number=Sing	14	compound:smixut	_	_
 17	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 165
 # text = נתיב תחבורה עיקרי הוא הרכבת הטרנס סיבירית.
 1	נתיב	נתיב	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	6	nsubj:cop	_	_
 2-3	תחבורה	_	_	_	_	_	_	_	_
@@ -6170,7 +6067,7 @@
 8	סיבירית	סיבירי	ADJ	ADJ	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No
 9	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 166
 # text = ככלל, רוב התנועה ברחבי המדינה מתבצעת באמצעות רכבות.
 1	ככלל	ככלל	ADV	ADV	_	10	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PUNCT	_	10	punct	_	_
@@ -6189,7 +6086,7 @@
 12	רכבות	רכבה	NOUN	NOUN	Gender=Fem|Number=Plur	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 4
+# sent_id = 167
 # text = אין ברוסיה כביש בינעירוני המחבר בין החלקים השונים של המדינה, מהכבישים הבינעירוניים החשובים ברוסיה הוא הכביש בין מוסקבה לסנט פטרסבורג.
 1	אין	אין	VERB	VERB	HebExistential=True	0	root	_	_
 2-3	ברוסיה	_	_	_	_	_	_	_	_
@@ -6232,7 +6129,7 @@
 30	פטרסבורג	פטרסבורג	PROPN	PROPN	_	29	flat:name	_	SpaceAfter=No
 31	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 168
 # text = לרוסיה נמלי ים, החשובים שבהם נמצאים בוולדיווסטוק, פרימורסק, מורמנסק, סנקט פטרבורג, מגדן וארכנגלסק.
 1-2	לרוסיה	_	_	_	_	_	_	_	_
 1	ל	ל	ADP	ADP	_	2	case	_	_
@@ -6261,7 +6158,7 @@
 22	וארכנגלסק	וארכנגלסק	PROPN	PROPN	_	21	flat:name	_	SpaceAfter=No
 23	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 169
 # text = נמלי התעופה החשובים במדינה הם שרמטייבו ודומודדובו במוסקבה ופולקובו בסנט פטרבורג.
 1	נמלי	נמל	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	10	nsubj:cop	_	_
 2-3	התעופה	_	_	_	_	_	_	_	_
@@ -6287,24 +6184,16 @@
 17	_הוא	הוא	PRON	PRON	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nmod:poss	_	_
 18	בסנט	בסנט	PROPN	PROPN	_	15	nmod	_	_
 19	פטרבורג	פטרבורג	PROPN	PROPN	_	18	flat:name	_	SpaceAfter=No
-20	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 170
 # text = שלטון מקומי
 1	שלטון	שלטון	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	_
-2	מקומי	מקומי	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
+2	מקומי	מקומי	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 171
 # text = עקב היותה המדינה הגדולה בעולם, מחולקת הפדרציה הרוסית למספר רב של יחידות אדמיניסטרטיביות, הכפופות לשלטון הפדרלי.
 1	עקב	_	CCONJ	CCONJ	_	4	case	_	_
 2	היותה	היות	VERB	VERB	_	11	obl	_	_
@@ -6340,7 +6229,7 @@
 26	הפדרלי	הפדרלי	ADJ	ADJ	Gender=Masc|Number=Sing	25	amod	_	SpaceAfter=No
 27	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 2
+# sent_id = 172
 # text = סה"כ מורכבת רוסיה מ-83 סובייקטים פדרליים אשר מתוכם 21 רפובליקות, 46 אובלסטים, תשעה מחוזות מסוג של "קראיים", מחוז (אובלסט) אוטונומי (המחוז היהודי האוטונומי), ארבעה מחוזות (שהם לא אובלסט) אוטונומיים נוספים ושתי ערים פדרליות (מוסקבה וסנקט פטרבורג).
 1	סה"כ	סה"כ	PROPN	PROPN	Abbr=Yes	2	nsubj	_	_
 2	מורכבת	הורכב	VERB	VERB	Gender=Fem|HebBinyan=HUFAL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -6408,7 +6297,7 @@
 58	)	)	PUNCT	PUNCT	_	55	punct	_	SpaceAfter=No
 59	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 173
 # text = ב-2014, לאחר סיפוח חצי האי קרים, הוגדרה רפובליקה נוספת, וכן הוגדרה סבסטופול כעיר פדרלית שלישית.
 1	ב	ב	ADP	ADP	_	3	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
@@ -6438,14 +6327,10 @@
 22	עיר	עיר	NOUN	NOUN	Gender=Fem|Number=Sing	19	obl	_	_
 23	פדרלית	פדרלי	ADJ	ADJ	Gender=Fem|Number=Sing	22	amod	_	_
 24	שלישית	שלישית	NUM	NUM	Gender=Fem|Number=Sing	22	amod	_	SpaceAfter=No
-25	.	.	PUNCT	PUNCT	_	13	punct	_	SpacesAfter=\n
+25	.	.	PUNCT	PUNCT	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 174
 # text = ב-2001 נוצרו שבעה מחוזות חדשים לחלוקה שצוינה לעיל.
 1	ב	ב	ADP	ADP	_	3	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
@@ -6463,7 +6348,7 @@
 12	לעיל	לעיל	ADV	ADV	_	11	advmod	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 175
 # text = המחוזות האלו נקראים מחוזות פדרליים והם נוצרו לצורך ניהול, כאשר ב-2010 הוקם מחוז שמיני.
 1-2	המחוזות	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -6492,23 +6377,15 @@
 21-22	שמיני	_	_	_	_	_	_	_	SpaceAfter=No
 21	ש	ש	SCONJ	SCONJ	_	22	mark	_	_
 22	מיני	מיני	ADJ	ADJ	_	20	acl:relcl	_	_
-23	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 176
 # text = גאוגרפיה
-1	גאוגרפיה	גאוגרפיה	PROPN	PROPN	_	0	root	_	SpaceAfter=No
+1	גאוגרפיה	גאוגרפיה	PROPN	PROPN	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 177
 # text = הפדרציה הרוסית מכילה שטחים נרחבים מיבשת אירואסיה.
 1	הפדרציה	הפדרציה	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
 2-3	הרוסית	_	_	_	_	_	_	_	_
@@ -6526,7 +6403,7 @@
 11	אסיה	אסיה	PROPN	PROPN	_	10	flat:name	_	_
 12	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 178
 # text = אף על פי שחלק ניכר מהאזורים הארקטים והסוב-ארקטיים נמצאים בשטחה, השטח הנותר הוא עצום עד כדי כך, שרוב תנאי האקלים העולמיים חלים בו (כולל אקלים צחיח למחצה בחבל אסטרחן).
 1	אף	אף	CCONJ	CCONJ	_	24	advmod	_	_
 2	על	על	ADP	ADP	_	1	fixed	_	_
@@ -6583,7 +6460,7 @@
 45	)	)	PUNCT	PUNCT	_	39	punct	_	SpaceAfter=No
 46	.	.	PUNCT	PUNCT	_	24	punct	_	_
 
-# sent_id = 3
+# sent_id = 179
 # text = שטחה הוא כשליש מכלל יבשת אסיה, וכתשיעית מכלל יבשות העולם.
 1	שטחה	שטחה	NOUN	NOUN	Gender=Fem|Number=Sing	6	nsubj:cop	_	_
 2	הוא	הוא	AUX	AUX	Gender=Masc|Number=Sing|Person=3|Polarity=Pos|VerbForm=Part|VerbType=Cop	6	cop	_	_
@@ -6604,14 +6481,10 @@
 14-15	העולם	_	_	_	_	_	_	_	SpaceAfter=No
 14	ה	ה	DET	DET	PronType=Art	15	det:def	_	_
 15	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	13	compound:smixut	_	_
-16	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 180
 # text = בחלק האירופאי ובחלק האסיאתי רוב השטח מורכב ממישורים ענקיים.
 1-2	בחלק	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -6628,7 +6501,7 @@
 11	ענקיים	ענקי	ADJ	ADJ	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
 12	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 181
 # text = המישורים האלה הם בראש ובראשונה ערבה בדרום ויערות עבותים בצפון, עם גידולי טונדרה ליד החופים הצפוניים.
 1	המישורים	המישור	NOUN	NOUN	Gender=Masc|Number=Plur	6	nsubj:cop	_	_
 2-3	האלה	_	_	_	_	_	_	_	_
@@ -6660,7 +6533,7 @@
 23	הצפוניים	הצפוני	ADJ	ADJ	Gender=Masc|Number=Plur	22	amod	_	SpaceAfter=No
 24	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 182
 # text = רכסי הרים נמצאים ליד הגבול הדרומי, דוגמת הרי קווקז, שבהם נמצאת הנקודה הגבוהה ביותר ביבשת אירופה: הר אלברוס (5,642 מ').
 1	רכסי	רכס	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	3	nsubj	_	_
 2	הרים	הרה	NOUN	NOUN	Gender=Masc|Number=Plur	1	compound:smixut	_	_
@@ -6704,7 +6577,7 @@
 34	)	)	PUNCT	PUNCT	_	33	punct	_	SpaceAfter=No
 35	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 183
 # text = בנוסף להרי הקווקז ישנה שרשרת הרים נוספת: הרי אלטאי.
 1-2	בנוסף	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	4	case	_	_
@@ -6722,7 +6595,7 @@
 12	אלטאי	אלטאי	PROPN	PROPN	_	11	compound:smixut	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 184
 # text = בחלקים המזרחיים מתנשא רכס ורחויאנסק.
 1-2	בחלקים	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -6735,7 +6608,7 @@
 7	ורחויאנסק	ורחויאנסק	PROPN	PROPN	_	6	flat:name	_	SpaceAfter=No
 8	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 185
 # text = במרכז מתנשא רכס הרי אורל, המחלק את אירואסיה לאסיה ואירופה.
 1-2	במרכז	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -6758,14 +6631,10 @@
 15-16	ואירופה	_	_	_	_	_	_	_	SpaceAfter=No
 15	ו	ו	CCONJ	CCONJ	_	16	cc	_	_
 16	אירופה	אירופה	PROPN	PROPN	_	14	conj	_	_
-17	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 186
 # text = אורך החופים הכולל של רוסיה הוא מעל 37,000 קילומטרים, הגובלים עם אוקיינוס הקרח הצפוני, האוקיינוס השקט וכמה ימים פנימיים, דוגמת הים השחור, הים הבלטי והים הכספי.
 1	אורך	אורך	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	10	nsubj:cop	_	_
 2	החופים	החוף	NOUN	NOUN	Gender=Masc|Number=Plur	1	compound:smixut	_	_
@@ -6816,7 +6685,7 @@
 39	כספי	כספי	ADJ	ADJ	Gender=Masc|Number=Sing	37	amod	_	_
 40	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 187
 # text = מספר ימים מהווים חלקים של אוקיינוסים, דוגמת ים ברנץ, הים הלבן, ים קארה, ים לאפטייב והים הסיבירי הצפוני, המהווים חלק מהאוקיינוס הצפוני.
 1	מספר	מספר	DET	DET	Definite=Cons	2	det	_	_
 2	ימים	יום	NOUN	NOUN	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -6854,7 +6723,7 @@
 31	הצפוני	הצפוני	ADJ	ADJ	Gender=Masc|Number=Sing	30	amod	_	SpaceAfter=No
 32	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 188
 # text = ים ברינג, ים אוחוצק והים היפני הם חלק מהאוקיינוס השקט.
 1	ים	ים	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	12	nsubj:cop	_	_
 2	ברינג	ברינג	PROPN	PROPN	_	1	compound:smixut	_	SpaceAfter=No
@@ -6874,7 +6743,7 @@
 14	שקט	שקט	ADJ	ADJ	Gender=Masc|Number=Sing	12	amod	_	_
 15	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 4
+# sent_id = 189
 # text = האיים הגדולים הם: נוביה זמליה, ארץ פרנץ יוזף, האיים הסיביריים החדשים, אי ורנגל, האיים הקוריליים וסחלין.
 1	האיים	האי	NOUN	NOUN	Gender=Masc|Number=Plur	6	nsubj:cop	_	_
 2-3	הגדולים	_	_	_	_	_	_	_	_
@@ -6901,14 +6770,10 @@
 21	האיים	איים	NOUN	NOUN	Gender=Masc|HebSource=ConvUncertainHead|Number=Plur	6	dep	_	_
 22	הקוריליים	הקורילי	ADJ	ADJ	_	21	amod	_	_
 23	וסחלין	וסחלין	PROPN	PROPN	_	21	nmod	_	SpaceAfter=No
-24	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 190
 # text = ברוסיה זורמים עשרות נהרות גדולים, בהם אחדים מהנהרות הארוכים בעולם.
 1-2	ברוסיה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -6930,7 +6795,7 @@
 15	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	12	nmod	_	_
 16	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 191
 # text = בחלק האירופי של רוסיה זורמים הוולגה, שראשיתו בצפון מערב רוסיה והוא נשפך לים הכספי, הדון והדנייפר.
 1-2	בחלק	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -6963,7 +6828,7 @@
 24	והדנייפר	והדנייפר	PROPN	PROPN	_	23	flat:name	_	SpaceAfter=No
 25	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 192
 # text = שלושת הנהרות הגדולים החוצים את סיביר מדרום לצפון ומתנקזים לאוקיינוס הקרח הצפוני הם האוב בסיביר המערבית, הלנה והיניסיי, שמוצאו במונגוליה.
 1	שלושת	שלושת	NUM	NUM	Definite=Cons|Gender=Masc|Number=Sing	2	nummod	_	_
 2	הנהרות	הנהרה	NOUN	NOUN	Gender=Fem|Number=Plur	20	nsubj:cop	_	_
@@ -7006,7 +6871,7 @@
 32	_היא	הוא	PRON	PRON	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	30	nmod:poss	_	_
 33	.	.	PUNCT	PUNCT	_	20	punct	_	_
 
-# sent_id = 4
+# sent_id = 193
 # text = נהר אמור, הזורם במזרח סיביר ונשפך לאוקיינוס השקט, מהווה בחלקו הגדול את הגבול בין רוסיה סין.
 1	נהר	נהר	NOUN	NOUN	Gender=Masc|Number=Sing	15	nsubj	_	_
 2	אמור	אמור	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
@@ -7041,14 +6906,10 @@
 25	בין	בין	ADP	ADP	_	26	case	_	_
 26	רוסיה	רוסיה	PROPN	PROPN	_	24	nmod	_	_
 27	סין	סין	PROPN	PROPN	_	26	flat:name	_	SpaceAfter=No
-28	.	.	PUNCT	PUNCT	_	15	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	15	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 194
 # text = הימות הגדולות הן: ימת באיקל, שהיא ימת המים המתוקים העמוקה בעולם, ימת לאדוגה וימת אונגה.
 1	הימות	הימה	NOUN	NOUN	Gender=Fem|Number=Plur	6	nsubj:cop	_	_
 2-3	הגדולות	_	_	_	_	_	_	_	_
@@ -7077,24 +6938,16 @@
 21	לאדוגה	לאדוגה	PROPN	PROPN	_	20	compound:smixut	_	_
 22	וימת	וים	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	20	appos	_	_
 23	אונגה	אונגה	PROPN	PROPN	_	22	compound:smixut	_	SpaceAfter=No
-24	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	PUNCT	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 195
 # text = אזורי זמן
 1	אזורי	אזור	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	0	root	_	_
-2	זמן	זמן	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	SpaceAfter=No
+2	זמן	זמן	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 196
 # text = החל משנת 2010, קיימים ברוסיה תשעה אזורי זמן שונים.
 1	החל	החל	ADP	ADP	_	3	case	_	_
 2-3	משנת	_	_	_	_	_	_	_	_
@@ -7112,7 +6965,7 @@
 12	שונים	שונה	ADJ	ADJ	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 197
 # text = קודם לכן, היו במדינה 11 אזורי זמן שונים, ששניים מתוכם בוטלו לטובת האזורים האסייתים של רוסיה.
 1	קודם	קודם	ADV	ADV	_	4	advmod	_	_
 2	לכן	לכן	ADV	ADV	_	1	fixed	_	SpaceAfter=No
@@ -7145,7 +6998,7 @@
 24	רוסיה	רוסיה	PROPN	PROPN	_	21	nmod	_	SpaceAfter=No
 25	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 198
 # text = הארגון מחדש של אזורי הזמן במדינה מטעה במידת מה, כיוון שאינו מהווה אינדיקציה לרוחבה האמיתי של המדינה, אלא יותר את הרוחב היחסי של החלק הצפוני.
 1-2	הארגון	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7193,14 +7046,10 @@
 35	של	של	ADP	ADP	Case=Gen	36	case:gen	_	_
 36	החלק	החלק	NOUN	NOUN	Gender=Masc|Number=Sing	32	nmod	_	_
 37	הצפוני	הצפוני	ADJ	ADJ	Gender=Masc|Number=Sing	36	amod	_	SpaceAfter=No
-38	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
+38	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 199
 # text = הנקודה המזרחית ביותר של רוסיה היא אי הדיומיד הגדול (אוסטרובה ראטמאנובה).
 1-2	הנקודה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7223,7 +7072,7 @@
 16	)	)	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
 17	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 200
 # text = הנקודה המערבית ביותר היא מפרץ דנציג.
 1-2	הנקודה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7239,7 +7088,7 @@
 9	נציג	נציג	PROPN	PROPN	_	8	flat:name	_	_
 10	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 201
 # text = המרחק בקו ישר ביניהם הוא כ-6,600 קילומטרים.
 1-2	המרחק	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7258,7 +7107,7 @@
 12	קילומטרים	קילומטר	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 4
+# sent_id = 202
 # text = המרחק בין שתי הנקודות הרחוקות ביותר במדינה עומד על כ-8,000 קילומטרים, כחמישית מאורכו של קו המשווה.
 1-2	המרחק	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7294,14 +7143,10 @@
 27-28	המשווה	_	_	_	_	_	_	_	SpaceAfter=No
 27	ה	ה	DET	DET	PronType=Art	28	det:def	_	_
 28	משווה	משווה	NOUN	NOUN	Gender=Masc|Number=Sing	26	compound:smixut	_	_
-29	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n
+29	.	.	PUNCT	PUNCT	_	12	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 203
 # text = בהתאם לשינוי חוקתי שהתקבל בקיץ 2011, הונהג ברוסיה שעון המתאים למשטר של "שעון קיץ" ביתר המדינות, ללא מעבר ל"שעון חורף".
 1-2	בהתאם	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	4	case	_	_
@@ -7347,7 +7192,7 @@
 34	"	"	PUNCT	PUNCT	_	32	punct	_	SpaceAfter=No
 35	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 204
 # text = מצב זהה היה קיים בתקופת ברית המועצות.
 1	מצב	מצב	NOUN	NOUN	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	זהה	זהה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -7362,7 +7207,7 @@
 9	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	7	compound:smixut	_	_
 10	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 205
 # text = באוקטובר 2014 נכנס לתוקף חוק שלפיו הונהג שעון המתאים למשטר של "שעון חורף" ביתר המדינות, ללא מעבר ל"שעון קיץ".
 1-2	באוקטובר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -7402,14 +7247,10 @@
 29	ל"שעון	ל"שעון	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	28	compound:smixut	_	_
 30	קיץ	קיץ	NOUN	NOUN	Gender=Masc|Number=Sing	29	compound:smixut	_	SpaceAfter=No
 31	"	"	PUNCT	PUNCT	_	30	punct	_	SpaceAfter=No
-32	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+32	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 206
 # text = ברוסיה ישנם גם מגוון בעלי חיים המותאמים לאזורים קרים וממוזגים וחלקם אנדמיים לה, כולל מספר טורפי-על נדירים כמו דוב הקוטב, נמר אמור וטיגריס סיבירי.
 1-2	ברוסיה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -7450,23 +7291,15 @@
 33	אמור	אמור	ADJ	ADJ	Gender=Masc|Number=Sing	32	amod	_	_
 34	וטיגריס	וטיגריס	PROPN	PROPN	_	32	flat:name	_	_
 35	סיבירי	סיבירי	PROPN	PROPN	_	34	flat:name	_	SpaceAfter=No
-36	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+36	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 207
 # text = דמוגרפיה
-1	דמוגרפיה	דמוגרפיה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+1	דמוגרפיה	דמוגרפיה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 208
 # text = בשנת 2017, חיו ברוסיה כ-144.5 מיליוני תושבים.
 1-2	בשנת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -7484,7 +7317,7 @@
 12	תושבים	תושב	NOUN	NOUN	Gender=Masc|Number=Plur	5	nsubj	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 209
 # text = צפיפות האוכלוסין ברוסיה נמוכה מאוד (כתשעה אנשים לקמ"ר).
 1	צפיפות	צפיפות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	האוכלוסין	האוכלוסין	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	_
@@ -7504,7 +7337,7 @@
 13	)	)	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
 14	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 210
 # text = הסיבה לכך היא שטחה העצום של רוסיה: בעוד שרוב האוכלוסייה מתרכזת בערים הגדולות בכלל (מוסקבה, סנקט פטרבורג, נובוסיבירסק ומספר ערים מרכזיות נוספות), ובחלק האירופי של רוסיה בפרט - נותרים חלקים עצומים של המדינה שוממים לחלוטין.
 1-2	הסיבה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -7570,7 +7403,7 @@
 52	לחלוטין	לחלוטין	ADV	ADV	_	51	advmod	_	SpaceAfter=No
 53	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 211
 # text = ניתן להסביר את תופעת ההתיישבות בערים הגדולות גם בעטיים של תנאים אקלימיים קשים, בחלקים עצומים של המדינה (בעיקר קור עז ברוב ימות השנה), אשר אינם מאפשרים התיישבות אנושית בהם.
 1	ניתן	ניתן	AUX	AUX	Gender=Masc|Number=Sing|Person=1,2,3|VerbType=Mod	2	aux	_	_
 2	להסביר	הסביר	VERB	VERB	HebBinyan=HIFIL|VerbForm=Inf|Voice=Act	0	root	_	_
@@ -7622,7 +7455,7 @@
 41	_הם	הוא	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Prs	38	nmod	_	_
 42	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 212
 # text = כ-71% מהאוכלוסייה חיים בחלק האירופאי (80% אם מחשיבים גם את אזורי הרי אורל).
 1	כ	כ	ADP	ADP	_	4	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
@@ -7650,7 +7483,7 @@
 22	)	)	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No
 23	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 213
 # text = ברוסיה קיימות למעלה מ-160 קבוצות אתניות שונות.
 1-2	ברוסיה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -7663,14 +7496,10 @@
 8	קבוצות	קבוצה	NOUN	NOUN	Gender=Fem|Number=Plur	3	nsubj	_	_
 9	אתניות	אתני	ADJ	ADJ	Gender=Fem|Number=Plur	8	amod	_	_
 10	שונות	שונה	ADJ	ADJ	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No
-11	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 214
 # text = לפי מרשם אוכלוסין, אשר נערך במדינה בשנת 2010, ואשר סקר את מוצאם של תושביה, 77.7% מתוכם הוגדרו רוסים, 10.2% אחרים, 3.7% טטרים, 1.4% אוקראינים והשאר - באשקירים, צ'ובשים וצ'צ'נים.
 1	לפי	לפי	ADP	ADP	_	2	case	_	_
 2	מרשם	מרשם	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	28	obl	_	_
@@ -7728,14 +7557,10 @@
 48	צ'ובשים	צ'ובש	NOUN	NOUN	Gender=Masc|Number=Plur	46	conj	_	_
 49	וצ'	וצ'	CCONJ	CCONJ	_	46	conj	_	SpaceAfter=No
 50	צ'נים	צ'ן	NOUN	NOUN	Gender=Masc|Number=Plur	49	compound:smixut	_	SpaceAfter=No
-51	.	.	PUNCT	PUNCT	_	28	punct	_	SpacesAfter=\n
+51	.	.	PUNCT	PUNCT	_	28	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 215
 # text = כ-84% מתושבי המדינה היו שייכים למשפחת העמים ההינדו-אירופאים (מתוכם כ-99% היו סלאבים), כ-8.5% נמנו על משפחת העמים הטורקיים, 3.5% נמנו על משפחת העמים הקווקזיים, 2% נמנו על משפחת העמים הפינו-אוגרים ו-0.5% מתוכם נמנו על משפחת העמים המונגולים.
 1	כ	כ	ADP	ADP	_	4	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
@@ -7819,14 +7644,10 @@
 70-71	המונגולים	_	_	_	_	_	_	_	SpaceAfter=No
 70	המונ	המונ	ADV	ADV	_	71	advmod	_	_
 71	גולים	גול	VERB	VERB	Gender=Masc|Number=Plur	67	amod	_	_
-72	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+72	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 216
 # text = על פי הערכות שונות[דרוש מקור], נע מספר היהודים ברוסיה בין 230,000 - מיליון בני אדם, כאשר מחצית האוכלוסייה חיה במוסקבה, וכחמישית - בסנקט פטרבורג.
 1	על	על	ADP	ADP	_	3	case	_	_
 2	פי	פה	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	1	fixed	_	_
@@ -7867,7 +7688,7 @@
 33	פטרבורג	פטרבורג	PROPN	PROPN	_	32	flat:name	_	SpaceAfter=No
 34	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 217
 # text = בשנת 1970, נאמד מספר היהודים בברית המועצות בכ-2.15 מיליון[דרוש מקור].
 1-2	בשנת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -7898,7 +7719,7 @@
 22	]	]	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No
 23	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 218
 # text = נתון זה העמיד את ברית המועצות כמדינה השלישית בעולם במספר אזרחיה היהודיים, אחרי ארצות הברית וישראל.
 1	נתון	נתון	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -7937,7 +7758,7 @@
 27	ישראל	ישראל	PROPN	PROPN	_	23	conj	_	_
 28	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 219
 # text = בעקבות התפרקות ברית המועצות, עזבו את רוסיה מיליוני אירופאים (בעיקר גרמנים, מיעוטים קטנים של צ'כים, יוונים ופינים) ויהודים (בעיקר לארצות הברית, לישראל ולגרמניה).
 1	בעקבות	בעקבות	ADP	ADP	_	2	case	_	_
 2	התפרקות	התפרקות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	7	obl	_	_
@@ -7984,14 +7805,10 @@
 36	ול	ול	ADP	ADP	_	37	case	_	_
 37	גרמניה	גרמניה	PROPN	PROPN	_	30	conj	_	_
 38	)	)	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No
-39	.	.	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n
+39	.	.	PUNCT	PUNCT	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 220
 # text = הרוסים, כמו גם קבוצות אתניות אחרות במזרח אירופה, שייכים למשפחת העמים הסלאבים, המהווה את הקבוצה האתנית הגדולה ביותר באירופה.
 1-2	הרוסים	_	_	_	_	_	_	_	SpaceAfter=No
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -8031,14 +7848,10 @@
 29-30	באירופה	_	_	_	_	_	_	_	SpaceAfter=No
 29	ב	ב	ADP	ADP	_	30	case	_	_
 30	אירופה	אירופה	PROPN	PROPN	_	27	advmod	_	_
-31	.	.	PUNCT	PUNCT	_	13	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	PUNCT	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 221
 # text = כ-200,000 בני אדם מהגרים לרוסיה כל שנה[דרוש מקור], כאשר מחציתם הם רוסים מהרפובליקות הסובייטיות לשעבר.
 1	כ	כ	ADP	ADP	_	4	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No
@@ -8067,7 +7880,7 @@
 23	לשעבר	לשעבר	ADV	ADV	_	21	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 222
 # text = בנוסף, קיימים ברוסיה כ-1.5 מיליון מהגרים בלתי חוקיים, רובם ממרכז אסיה, הקווקז, אוקראינה, מולדובה וסין.
 1-2	בנוסף	_	_	_	_	_	_	_	SpaceAfter=No
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -8101,14 +7914,10 @@
 26-27	וסין	_	_	_	_	_	_	_	SpaceAfter=No
 26	ו	ו	CCONJ	CCONJ	_	27	cc	_	_
 27	סין	סין	PROPN	PROPN	_	18	conj	_	_
-28	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 223
 # text = למרות ההגירה הנכנסת, פוחתת אוכלוסייתה של רוסיה בכ-700,000-500,000 בני אדם, מדי שנה בשנה (פיחות של כ-0.5% מאחוז האוכלוסייה הכולל בשנה).
 1	למרות	למרות	ADP	ADP	_	3	case	_	_
 2-3	ההגירה	_	_	_	_	_	_	_	_
@@ -8157,7 +7966,7 @@
 39	)	)	PUNCT	PUNCT	_	24	punct	_	SpaceAfter=No
 40	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 224
 # text = פיחות זה נובע בעטיים של אחוזי לידה נמוכים (כ-1.7 ילדים לאישה) ואחוזי תמותה גבוהים (בעיקר של גברים בגיל העבודה).
 1	פיחות	פיחות	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -8194,14 +8003,10 @@
 28	ה	ה	DET	DET	PronType=Art	29	det:def	_	_
 29	עבודה	עבודה	NOUN	NOUN	Gender=Fem|Number=Sing	27	compound:smixut	_	_
 30	)	)	PUNCT	PUNCT	_	25	punct	_	SpaceAfter=No
-31	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 225
 # text = השפה הרוסית היא השפה הרשמית ברוסיה, אך רפובליקות אוטונומיות כוללות לעיתים קרובות את השפות האתניות המקומיות כשפה רשמית שנייה ברפובליקה.
 1-2	השפה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -8241,7 +8046,7 @@
 29	רפובליקה	רפובליקה	NOUN	NOUN	Gender=Fem|Number=Sing	24	nmod	_	_
 30	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 226
 # text = האלפבית הקירילי הוא היחיד שמשמש את האוכלוסייה ברוסיה.
 1	האלפבית	האלפבית	NOUN	NOUN	_	5	nsubj:cop	_	_
 2	הקירילי	הקירילי	ADJ	ADJ	_	1	amod	_	_
@@ -8259,14 +8064,10 @@
 11-12	ברוסיה	_	_	_	_	_	_	_	SpaceAfter=No
 11	ב	ב	ADP	ADP	_	12	case	_	_
 12	רוסיה	רוסיה	PROPN	PROPN	_	10	nmod	_	_
-13	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 227
 # text = 41% מהרוסים משתייכים לנצרות פרבוסלבית.
 1	41	41	NUM	NUM	_	2	nummod	_	SpaceAfter=No
 2	%	%	NOUN	NOUN	Gender=Masc|Number=Plur,Sing	5	nsubj	_	_
@@ -8280,7 +8081,7 @@
 8	פרבוסלבית	פרבוסלבי	ADJ	ADJ	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No
 9	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 228
 # text = 25% מגדירים עצמם כרוחנים אך לא דתיים ו-13% אתאיסטים.
 1	25	25	NUM	NUM	_	2	nummod	_	SpaceAfter=No
 2	%	%	NOUN	NOUN	Gender=Masc|Number=Plur,Sing	3	nsubj	_	_
@@ -8295,14 +8096,10 @@
 11	13	13	NUM	NUM	_	12	nummod	_	SpaceAfter=No
 12	%	%	NOUN	NOUN	Gender=Masc|Number=Plur,Sing	3	conj	_	_
 13	אתאיסטים	אתאיסט	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
-14	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 229
 # text = מספרם של המוסלמים במדינה נאמד בכ-9.4 מיליון המהווים כ-6.5% מכלל האוכלוסייה.
 1-3	מספרם	_	_	_	_	_	_	_	_
 1	מספר_	מספר	NOUN	NOUN	Definite=Def|Gender=Masc|Number=Sing	10	nsubj	_	_
@@ -8336,7 +8133,7 @@
 24	אוכלוסייה	אוכלוסייה	NOUN	NOUN	Gender=Fem|Number=Sing	22	compound:smixut	_	_
 25	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 230
 # text = רובם מרוכזים באזור דרום הוולגה, מערב סיביר, צפון הקווקז וחצי האי קרים.
 1-2	רובם	_	_	_	_	_	_	_	_
 1	רובם	_	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -8362,7 +8159,7 @@
 18	קרים	קרים	PROPN	PROPN	_	17	flat:name	_	SpaceAfter=No
 19	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 231
 # text = מיעוטים גדולים קיימים גם בערים הגדולות.
 1	מיעוטים	מיעוט	NOUN	NOUN	Gender=Masc|Number=Plur	3	nsubj	_	_
 2	גדולים	גדול	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
@@ -8377,7 +8174,7 @@
 9	גדולות	גדול	ADJ	ADJ	Gender=Fem|Number=Plur	7	amod	_	_
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 232
 # text = כמעט כולם הם סונים, ורובם מגיעים ממשפחת העמים הטורקיים והקווקזיים.
 1	כמעט	כמעט	ADV	ADV	_	2	det	_	_
 2	כולם	_	NOUN	NOUN	Gender=Masc|Number=Plur	4	nsubj:cop	_	_
@@ -8398,14 +8195,10 @@
 14	עמים	עם	NOUN	NOUN	Gender=Masc|Number=Plur	12	compound:smixut	_	_
 15	הטורקיים	הטורקי	ADJ	ADJ	Gender=Masc|Number=Plur	14	amod	_	_
 16	והקווקזיים	והקווקזי	ADJ	ADJ	Gender=Masc|Number=Plur	14	amod	_	SpaceAfter=No
-17	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 233
 # text = תוחלת החיים ברוסיה, במיוחד זו של הגברים, נמוכה ביחס למדינות מערביות אחרות, ואף נמוכה ביחס לזו ששררה בברית המועצות.
 1	תוחלת	תוחלת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	13	nsubj	_	_
 2-3	החיים	_	_	_	_	_	_	_	_
@@ -8453,7 +8246,7 @@
 33	מועצות	מועצה	NOUN	NOUN	Gender=Fem|Number=Plur	31	compound:smixut	_	_
 34	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 234
 # text = ב-2017, הוערכה תוחלת החיים במדינה בכ-72.7 שנים, כעשר שנים פחות מאשר במדינות האיחוד האירופי.
 1	ב	ב	ADP	ADP	_	3	case	_	SpaceAfter=No
 2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
@@ -8490,7 +8283,7 @@
 27	אירופי	אירופי	ADJ	ADJ	Gender=Masc|Number=Sing	25	amod	_	_
 28	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 235
 # text = תוחלת החיים של הגברים הייתה 67.5 שנים, ושל הנשים - 77.6 שנים.
 1	תוחלת	תוחלת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	9	nsubj	_	_
 2-3	החיים	_	_	_	_	_	_	_	_
@@ -8515,7 +8308,7 @@
 17	שנים	שנה	NOUN	NOUN	Gender=Fem|Number=Plur	9	conj	_	SpaceAfter=No
 18	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
-# sent_id = 4
+# sent_id = 236
 # text = גורם התמותה העיקרי הוא מחלות לב.
 1	גורם	גורם	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	6	nsubj:cop	_	_
 2	התמותה	התמותה	NOUN	NOUN	Gender=Fem|Number=Sing	1	compound:smixut	_	_
@@ -8527,7 +8320,7 @@
 7	לב	לב	NOUN	NOUN	Gender=Masc|Number=Sing	6	compound:smixut	_	SpaceAfter=No
 8	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 237
 # text = תוחלת החיים הנמוכה מושפעת במידה רבה מתאונות דרכים (שבחלקן נגרמות מנהיגה בשכרות), ומנזקים בריאותיים הקשורים לעישון ולצריכה מוגברת של משקאות חריפים.
 1	תוחלת	תוחלת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2-3	החיים	_	_	_	_	_	_	_	_
@@ -8567,14 +8360,10 @@
 30	של	של	ADP	ADP	Case=Gen	31	case:gen	_	_
 31	משקאות	משקה	NOUN	NOUN	Gender=Masc|Number=Plur	28	nmod	_	_
 32	חריפים	חריף	ADJ	ADJ	Gender=Masc|Number=Plur	31	amod	_	SpaceAfter=No
-33	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 238
 # text = התפשטותן של המחלות: איידס ושחפת מהווה גורם תמותה משני נוסף.
 1	התפשטותן	התפשטותן	NOUN	NOUN	Gender=Fem|Number=Sing	8	nsubj	_	_
 2	של	של	ADP	ADP	Case=Gen	3	case:gen	_	_
@@ -8591,7 +8380,7 @@
 12	נוסף	נוסף	ADJ	ADJ	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 239
 # text = עם זאת, בשנים 2005–2007 חלה עלייה קלה בתוחלת החיים.
 1	עם	עם	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	10	obl	_	SpaceAfter=No
@@ -8614,7 +8403,7 @@
 16	חיים	חיים	NOUN	NOUN	Gender=Masc|Number=Plur	14	compound:smixut	_	_
 17	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
-# sent_id = 3
+# sent_id = 240
 # text = ברם, בדו"ח של ארגון הבריאות העולמי מספטמבר 2019 כי חלה ירידה משמעותית בצריכת האלכוהול במדינה, ירידה של 43% מאז 2003.
 1	ברם	ברם	ADV	ADV	_	4	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PUNCT	_	4	punct	_	_
@@ -8656,7 +8445,7 @@
 31	003	003	NUM	NUM	_	30	nummod	_	_
 32	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 241
 # text = המדינה מתכננת להוציא לפועל תוכנית בריאות כדי להגיע לתוחלת חיים ממוצעת של 78 שנים עד שנת 2024
 1-2	המדינה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -8681,24 +8470,16 @@
 18	שנים	שנה	NOUN	NOUN	Gender=Fem|Number=Plur	13	nmod	_	_
 19	עד	עד	ADP	ADP	_	20	case	_	_
 20	שנת	שנה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	18	nmod	_	_
-21	2024	2024	NUM	NUM	_	20	nummod	_	SpacesAfter=\n
+21	2024	2024	NUM	NUM	_	20	nummod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 242
 # text = יהדות רוסיה
 1	יהדות	יהדות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	0	root	_	_
-2	רוסיה	רוסיה	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+2	רוסיה	רוסיה	PROPN	PROPN	_	1	flat:name	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 243
 # text = ברוסיה חיים כ-156,000 יהודים רשומים ברשויות הפנים במדינה ויש מספר לא ידוע של יהודים, המוערך בכמיליון, שאינם יודעים על יהדותם או שאינם מצהירים עליה (במידה רבה בעקבות חששם לגילויי אנטישמיות כנגדם).
 1-2	ברוסיה	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -8768,7 +8549,7 @@
 54	)	)	PUNCT	PUNCT	_	45	punct	_	SpaceAfter=No
 55	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 244
 # text = "איגוד הקהילות היהודיות ברוסיה", אשר בראשו עומדים הרב הראשי לרוסיה, בערל לזר, ואיל ההון הישראלי לב לבייב הוא מהארגונים היהודיים הגדולים במדינה, ברשות הארגון תקציבים של מיליוני דולרים ובזכות עובדה זו, מימן הארגון הקמת בתי כנסת, בתי ספר, בתי תמחוי, מרכזים קהילתיים ומוסדות נוספים ברחבי רוסיה וברית המועצות לשעבר.
 1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
 2	איגוד	איגוד	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	58	nsubj	_	_
@@ -8875,7 +8656,7 @@
 83	לשעבר	לשעבר	ADV	ADV	_	80	advmod	_	SpaceAfter=No
 84	.	.	PUNCT	PUNCT	_	58	punct	_	_
 
-# sent_id = 3
+# sent_id = 245
 # text = בינואר 2016, במהלך הקונגרס היהודי-אירופי, קרא נשיא רוסיה, ולדימיר פוטין, ליהודים הסובלים מאנטישמיות באירופה – להגר לרוסיה.
 1-2	בינואר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -8918,23 +8699,15 @@
 31-32	לרוסיה	_	_	_	_	_	_	_	SpaceAfter=No
 31	ל	ל	ADP	ADP	_	32	case	_	_
 32	רוסיה	רוסיה	PROPN	PROPN	_	30	obl	_	_
-33	.	.	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	PUNCT	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 246
 # text = ספורט
-1	ספורט	ספורט	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+1	ספורט	ספורט	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 247
 # text = ענפי הספורט הפופולריים ביותר ברוסיה הם כדורגל, כדורסל, הוקי קרח ואתלטיקה.
 1	ענפי	ענף	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	9	nsubj:cop	_	_
 2-3	הספורט	_	_	_	_	_	_	_	_
@@ -8955,14 +8728,10 @@
 15-16	ואתלטיקה	_	_	_	_	_	_	_	SpaceAfter=No
 15	ו	ו	CCONJ	CCONJ	_	16	cc	_	_
 16	אתלטיקה	אתלטיקה	NOUN	NOUN	Gender=Fem|Number=Sing	9	conj	_	_
-17	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 248
 # text = טניס הנשים במדינה מפותח באופן מיוחד, כאשר ישנן טניסאיות רוסיות רבות אשר משחקות או ששיחקו בצמרת הדירוג העולמי של הסבב העולמי לנשים, דוגמת מריה שראפובה, שדורגה בעבר במקום הראשון בעולם.
 1	טניס	טניס	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	8	nsubj	_	_
 2-3	הנשים	_	_	_	_	_	_	_	_
@@ -9029,7 +8798,7 @@
 50	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	47	obl	_	_
 51	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 249
 # text = טניסאיות מפורסמות נוספות הן: אנה צ'קבטדזה, ילנה דמנטייבה, סבטלנה קוזנצובה, אנסטסיה מיסקינה, דינארה סאפינה, ורה זבונרבה ואנה קורניקובה.
 1	טניסאיות	טניסאיה	NOUN	NOUN	Gender=Fem|Number=Plur	6	nsubj:cop	_	_
 2	מפורסמות	מפורסם	ADJ	ADJ	Gender=Fem|Number=Plur	1	amod	_	_
@@ -9057,7 +8826,7 @@
 24	קורניקובה	קורניקובה	PROPN	PROPN	_	21	flat:name	_	SpaceAfter=No
 25	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 250
 # text = נבחרת טניס הנשים של רוסיה זכתה ארבע פעמים בגביע הפדרציה, בשנים: 2004, 2005, 2007 ו-2008.
 1	נבחרת	נבחרת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	7	nsubj	_	_
 2	טניס	טניס	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Sing	1	compound:smixut	_	_
@@ -9091,7 +8860,7 @@
 26	2008	2008	NUM	NUM	_	18	conj	_	SpaceAfter=No
 27	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 251
 # text = באולימפיאדת בייג'ינג, שלוש הטניסאיות שעלו על הפודיום היו רוסיות.
 1-2	באולימפיאדת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -9109,7 +8878,7 @@
 12	רוסיות	רוסי	ADJ	ADJ	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 5
+# sent_id = 252
 # text = על הטניסאים הגברים הרוסיים המפורסמים נמנים ניקולאי דווידנקו ומאראט סאפין.
 1	על	על	ADP	ADP	_	2	case	_	_
 2	הטניסאים	הטניסא	NOUN	NOUN	Gender=Masc|Number=Plur	8	obl	_	_
@@ -9125,14 +8894,10 @@
 10	דווידנקו	דווידנקו	PROPN	PROPN	_	9	flat:name	_	_
 11	ומאראט	ומאראט	PROPN	PROPN	_	9	flat:name	_	_
 12	סאפין	סאפין	PROPN	PROPN	_	11	flat:name	_	SpaceAfter=No
-13	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	PUNCT	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 253
 # text = הכדורגל ברוסיה צבר תאוצה בעשור הראשון של המאה ה-21, כאשר הקבוצות הרוסיות צסק"א מוסקבה וזניט סנקט פטרבורג זכו בגביע אופ"א, בשנים 2005 ו-2008 בהתאמה וזניט גם זכתה בסופר קאפ האירופי.
 1-2	הכדורגל	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -9192,7 +8957,7 @@
 47	אירופי	אירופי	ADJ	ADJ	Gender=Masc|Number=Sing	45	amod	_	_
 48	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 254
 # text = נבחרת רוסיה בכדורגל העפילה ביורו 2008 לחצי גמר המפעל ולרבע גמר מונדיאל 2018.
 1	נבחרת	נבחרת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	רוסיה	רוסיה	PROPN	PROPN	_	1	compound:smixut	_	_
@@ -9218,7 +8983,7 @@
 18	2018	2018	NUM	NUM	_	16	nummod	_	SpaceAfter=No
 19	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 255
 # text = ליגת העל הרוסית בכדורגל זוכה לתקצוב מסיבי, עובדה אשר סייעה לקידומו של ענף זה ולפיתוח הפופולריות שלו.
 1	ליגת	ליגה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	העל	_	_	_	_	_	_	_	_
@@ -9257,7 +9022,7 @@
 27	_הוא	הוא	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	nmod:poss	_	_
 28	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 4
+# sent_id = 256
 # text = בעוד שלאורך כמעט כל שנות הליגה שלטו בה המועדונים ממוסקבה, בתחילת המאה ה-21 היא הפכה שוויונית יותר.
 1	בעוד	בעוד	ADP	ADP	_	10	case	_	_
 2-4	שלאורך	_	_	_	_	_	_	_	_
@@ -9290,14 +9055,10 @@
 24	הפכה	הפך	VERB	VERB	Gender=Fem|Number=Sing|Person=3|Tense=Past	25	aux	_	_
 25	שוויונית	שוויוני	ADJ	ADJ	Gender=Fem|Number=Sing	0	root	_	_
 26	יותר	יותר	ADV	ADV	_	25	advmod	_	SpaceAfter=No
-27	.	.	PUNCT	PUNCT	_	25	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	PUNCT	_	25	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 257
 # text = נבחרת רוסיה בכדורסל השתתפה מאז הקמתה בכל אליפויות העולם, למעט שנת 2006, כמו גם בכל אליפויות אירופה - מאז הקמתה.
 1	נבחרת	נבחרת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	רוסיה	רוסיה	PROPN	PROPN	_	1	compound:smixut	_	_
@@ -9337,7 +9098,7 @@
 29	הקמתה	הקמה	VERB	VERB	_	24	nmod	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 258
 # text = הזכייה היחידה של נבחרת רוסיה באליפות אירופה הייתה ב-2007, בראשות דייוויד בלאט.
 1-2	הזכייה	_	_	_	_	_	_	_	_
 1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
@@ -9364,7 +9125,7 @@
 19	בלאט	בלאט	PROPN	PROPN	_	18	flat:name	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 259
 # text = מלבד זאת, היא סיימה כסגנית הן באליפות אירופה, והן פעמיים באליפות העולם.
 1	מלבד	מלבד	ADP	ADP	_	2	case	_	_
 2	זאת	זאת	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	5	obl	_	SpaceAfter=No
@@ -9388,14 +9149,10 @@
 17-18	העולם	_	_	_	_	_	_	_	SpaceAfter=No
 17	ה	ה	DET	DET	PronType=Art	18	det:def	_	_
 18	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	16	compound:smixut	_	_
-19	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 260
 # text = קבוצת הכדורסל הרוסית צסק"א מוסקבה היא אחת הקבוצות החזקות באירופה, והיא זכתה שבע פעמים ביורוליג; כמו כן, היא הקבוצה השלטת בליגת העל הרוסית בכדורסל ובליגה המאוחדת של VTB.
 1	קבוצת	קבוצה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	11	nsubj:cop	_	_
 2-3	הכדורסל	_	_	_	_	_	_	_	_
@@ -9453,14 +9210,10 @@
 42	מאוחדת	מאוחד	ADJ	ADJ	Gender=Fem|Number=Sing	40	amod	_	_
 43	של	של	ADP	ADP	Case=Gen	44	case:gen	_	_
 44	VTB	vtb	PROPN	PROPN	_	40	nmod	_	SpaceAfter=No
-45	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n
+45	.	.	PUNCT	PUNCT	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 261
 # text = נבחרת ברית המועצות נחשבה בזמנה לנבחרת הטובה באירופה, ובין הטובות בעולם.
 1	נבחרת	נבחרת	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	5	nsubj	_	_
 2	ברית	ברית	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	1	compound:smixut	_	_
@@ -9491,7 +9244,7 @@
 20	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	17	nmod	_	_
 21	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 262
 # text = היא זכתה פעמיים במשחקים האולימפיים בשנים 1972 ו-1988, בשלוש אליפויות עולם בשנים 1967, 1974 ו-1982 ובארבע עשרה אליפויות אירופה.
 1	היא	הוא	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	זכתה	זכה	VERB	VERB	Gender=Fem|HebBinyan=PAAL|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -9536,14 +9289,10 @@
 33	עשרה	עשרה	NUM	NUM	Gender=Fem|Number=Sing	34	nummod	_	_
 34	אליפויות	אליפות	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	23	conj	_	_
 35	אירופה	אירופה	PROPN	PROPN	_	34	compound:smixut	_	SpaceAfter=No
-36	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+36	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 263
 # text = רוסיה מצליחה גם בענף ההוקי קרח, ונבחרתה זכתה מספר פעמים באליפות העולם בהוקי קרח.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	מצליחה	הצליח	VERB	VERB	Gender=Fem|HebBinyan=HIFIL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -9567,14 +9316,10 @@
 17	עולם	עולם	NOUN	NOUN	Gender=Masc|Number=Sing	15	compound:smixut	_	_
 18	בהוקי	בהוק	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	15	amod	_	_
 19	קרח	קרח	NOUN	NOUN	Gender=Masc|Number=Sing	18	compound:smixut	_	SpaceAfter=No
-20	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 264
 # text = ענפי ספורט בולטים נוספים במדינה הם: הרמת משקולות, התעמלות, התעמלות אמנותית, איגרוף, היאבקות, אמנות לחימה, כדורעף, רגבי וסקי.
 1	ענפי	ענף	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	11	nsubj:cop	_	_
 2	ספורט	ספורט	NOUN	NOUN	Gender=Masc|Number=Sing	1	compound:smixut	_	_
@@ -9609,7 +9354,7 @@
 29	וסקי	וסקי	NOUN	NOUN	Gender=Masc|Number=Sing	28	compound:smixut	_	SpaceAfter=No
 30	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
-# sent_id = 2
+# sent_id = 265
 # text = רוסיה מצליחה במשחקים האולימפיים בהם השתתפה: נכון ל-2016, היא מדורגת במקום התשיעי בטבלת המדליות האולימפיות של כל הזמנים, על אף שהשתתפה במספר מועט של אולימפיאדות.
 1	רוסיה	רוסיה	PROPN	PROPN	_	2	nsubj	_	_
 2	מצליחה	הצליח	VERB	VERB	Gender=Fem|HebBinyan=HIFIL|Number=Sing|Person=1,2,3|VerbForm=Part|Voice=Act	0	root	_	_
@@ -9659,7 +9404,7 @@
 38	אולימפיאדות	אולימפיאדה	NOUN	NOUN	Gender=Fem|Number=Plur	35	nmod	_	SpaceAfter=No
 39	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 266
 # text = מאז פירוק ברית המועצות, דורגה רוסיה באולימפיאדת הקיץ בכל אולימפיאדה באחד משלושת המקומות הראשונים בדירוג המדליות, ובאולימפיאדת החורף דורגה בכל אולימפיאדה באחד מחמשת המקומות הראשונים.
 1-2	מאז	_	_	_	_	_	_	_	_
 1	מ	מ	ADP	ADP	_	4	case	_	_
@@ -9723,14 +9468,10 @@
 44-45	הראשונים	_	_	_	_	_	_	_	SpaceAfter=No
 44	ה	ה	DET	DET	PronType=Art	45	det:def	_	_
 45	ראשונים	_	ADJ	ADJ	Gender=Masc|Number=Plur	43	amod	_	_
-46	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	PUNCT	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 267
 # text = בדצמבר 2010, הכריזה פיפ"א כי רוסיה נבחרה לארח את גביע העולם לשנת 2018.
 1-2	בדצמבר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -9752,14 +9493,10 @@
 15	ל	ל	ADP	ADP	_	16	case	_	_
 16	שנת	שנה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Sing	12	nmod	_	_
 17	2018	2018	NUM	NUM	_	16	compound:smixut	_	SpaceAfter=No
-18	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	PUNCT	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 268
 # text = החל משנות ה-50, הפכה ברית המועצות מדינה מובילה בענף ההחלקה האמנותית על הקרח, בעיקר בקטגוריית הזוגות ובריקוד על הקרח.
 1	החל	החל	ADP	ADP	_	3	case	_	_
 2-3	משנות	_	_	_	_	_	_	_	_
@@ -9795,7 +9532,7 @@
 28	הקרח	הקרח	NOUN	NOUN	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
 29	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
-# sent_id = 2
+# sent_id = 269
 # text = לודמילה בלואוסובה (Belousova) ואולג פרוטופופוב (Protopopov) היו הזוג הסובייטי הראשון שזכה במדליית זהב אולימפית (1964) בקטגוריית הזוגות, ומאז ועד 2006 כל הזוכים בזהב אולימפי בתחום זה היו מברית המועצות או מרוסיה.
 1-2	לודמילה	_	_	_	_	_	_	_	_
 1	לוד	לוד	PROPN	PROPN	_	14	nsubj	_	_
@@ -9868,7 +9605,7 @@
 54	רוסיה	רוסיה	PROPN	PROPN	_	49	conj	_	_
 55	.	.	PUNCT	PUNCT	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 270
 # text = רוב זוכי הזהב הגברים האולימפיים, החל מ-1992, ייצגו את ברית המועצות לשעבר או את רוסיה.
 1	רוב	רוב	DET	DET	Definite=Cons	2	det	_	_
 2	זוכי	זוכה	NOUN	NOUN	Definite=Cons|Gender=Masc|Number=Plur	15	nsubj	_	_
@@ -9899,7 +9636,7 @@
 23	רוסיה	רוסיה	PROPN	PROPN	_	17	conj	_	SpaceAfter=No
 24	.	.	PUNCT	PUNCT	_	15	punct	_	_
 
-# sent_id = 4
+# sent_id = 271
 # text = החל מ-2006, לאחר התפרקותה של ברית המועצות, חלה ירידה ברמת המחליקים הרוסיים.
 1	החל	החל	ADP	ADP	_	4	case	_	_
 2	מ	מ	ADP	ADP	_	1	fixed	_	SpaceAfter=No
@@ -9925,7 +9662,7 @@
 19	הרוסיים	הרוסי	ADJ	ADJ	Gender=Masc|Number=Plur	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	PUNCT	_	14	punct	_	_
 
-# sent_id = 5
+# sent_id = 272
 # text = תופעה זו נבעה בעיקר בעטיו של חוסר בגופים מארגנים ובמימון ענף ספורט זה.
 1	תופעה	תופעה	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	זו	זו	PRON	PRON	Gender=Fem|Number=Sing|Person=3|PronType=Dem	1	det	_	_
@@ -9949,7 +9686,7 @@
 17	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	det	_	SpaceAfter=No
 18	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 273
 # text = החסך במקורות מימון אילץ את רוב המאמנים הרוסיים להגר למדינות שונות בעולם; על כן, הדור שגדל במהלך שנות ה-90 לא קיבל את התמיכה המרובה לה זכו הדורות הקודמים.
 1	החסך	החסך	NOUN	NOUN	Gender=Masc|Number=Sing	6	nsubj	_	_
 2-4	במקורות	_	_	_	_	_	_	_	_
@@ -10007,7 +9744,7 @@
 44	קודמים	קודם	ADJ	ADJ	Gender=Masc|Number=Plur	42	amod	_	_
 45	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
-# sent_id = 7
+# sent_id = 274
 # text = בראשית המאה ה-21 הושקו מספר פרויקטים בענף זה (דוגמת "להחליק עם כוכבים" ו"עידן הקרח"), שנועדו להחזיר לענף זה עטרה ליושנה.
 1-2	בראשית	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -10053,7 +9790,7 @@
 36	ליושנה	ליושן	ADJ	ADJ	Gender=Fem|Number=Sing	35	amod	_	SpaceAfter=No
 37	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
-# sent_id = 8
+# sent_id = 275
 # text = במסגרת המשחקים האולימפיים בקוריאה 2018, הוצגו נציגי הדור החדש של ענף זה.
 1-2	במסגרת	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	4	case	_	_
@@ -10078,14 +9815,10 @@
 16	של	של	ADP	ADP	Case=Gen	17	case:gen	_	_
 17	ענף	ענף	NOUN	NOUN	Gender=Masc|Number=Sing	11	nmod	_	_
 18	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	det	_	SpaceAfter=No
-19	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	PUNCT	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 276
 # text = בדצמבר 2019 החליטה הסוכנות העולמית למניעת סמים בספורט להרחיק את רוסיה מכל פעילות בינלאומית לרבות אולימפיאדת 2020 ומונדיאל 2022, בשל הסתרת ראיות לשימוש מאסיבי בסמים על ידי ספורטאים רוסים תוך עידוד מהממסד הרוסי.
 1-2	בדצמבר	_	_	_	_	_	_	_	_
 1	ב	ב	ADP	ADP	_	2	case	_	_
@@ -10143,56 +9876,36 @@
 44-45	הרוסי	_	_	_	_	_	_	_	SpaceAfter=No
 44	ה	ה	DET	DET	PronType=Art	45	det:def	_	_
 45	רוסי	רוסי	ADJ	ADJ	Gender=Masc|Number=Sing	43	amod	_	_
-46	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	PUNCT	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 277
 # text = סמלים
-1	סמלים	סמל	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+1	סמלים	סמל	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 278
 # text = ראו גם
 1	ראו	ראה	VERB	VERB	Gender=Fem,Masc|HebBinyan=PAAL|Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
-2	גם	גם	ADV	ADV	_	1	advmod	_	SpaceAfter=No
+2	גם	גם	ADV	ADV	_	1	advmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 279
 # text = לקריאה נוספת
 1-2	לקריאה	_	_	_	_	_	_	_	_
 1	ל	ל	ADP	ADP	_	2	case	_	_
 2	קריאה	קריאה	NOUN	NOUN	Gender=Fem|Number=Sing	0	root	_	_
-3	נוספת	נוסף	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
+3	נוספת	נוסף	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 280
 # text = קישורים חיצוניים
 1	קישורים	קישור	NOUN	NOUN	Gender=Masc|Number=Plur	0	root	_	_
-2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpaceAfter=No
+2	חיצוניים	חיצוני	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = hebrew-htb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 281
 # text = הערות שוליים
 1	הערות	הערה	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	0	root	_	_
-2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpaceAfter=No
+2	שוליים	שול	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	SpacesAfter=\n\n
 

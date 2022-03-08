@@ -19,7 +19,8 @@ if __name__ == '__main__':
     htmlParse = BeautifulSoup(prev, 'html.parser')
     
     # model = 'french-gsd-ud-2.6-200830'
-    model = 'english-ewt-ud-2.6-200830'
+    # model = 'english-ewt-ud-2.6-200830'
+    model = 'catalan-ancora-ud-2.6-200830'
 
     regex = re.compile('.*')
     infobox = re.compile('^infobox*')
@@ -65,6 +66,17 @@ if __name__ == '__main__':
                     # tmp.write(cleantext + '\n')
                     # text += cleantext + '\n'
                     # tmp.seek(0)
+        elif tag.name == "title":
+            cleantext = tag.get_text()
+            cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
+            cleantext = re.sub(r'\[[a-z]\]', '', cleantext) # remove references [letter]
+            cleantext = re.sub(r'\[n. \d+\]', '', cleantext) # remove references [n. digit]
+            cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
+            # cleantext = re.sub(r'\[(.*?)\]', '', cleantext) # remove [anything in square brackets]
+            # cleantext = cleantext.replace(u'\u200b', '') # remove the zero-width-space character
+            
+            text += cleantext + 2*'\n'
+
         else:
             cleantext = tag.get_text()
             cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
@@ -76,12 +88,12 @@ if __name__ == '__main__':
             
             text += cleantext + '\n'
 
-            if len(cleantext) != 0: # and cleantext!='\n':
+            # if len(cleantext) != 0: # and cleantext!='\n':
                 # myobj = {'data' : cleantext, 'model' : model, 'tokenizer' : '', 'tagger' : '', 'parser' : ''}
                 # x = requests.post(api_url, data = myobj)
                 # g.write(json.loads(x.text)['result'])
                 # tmp.write(cleantext + '\n')
-                text += cleantext + '\n'
+                # text += cleantext + '\n'
                 # tmp.seek(0)
 
     with open(f'{args.path}fixing.txt', 'w') as g:

@@ -12,14 +12,10 @@
 5	Indonesia	indonesia	PROPN	NSD	Number=Sing	4	flat	_	SpaceAfter=No
 6	,	,	PUNCT	Z--	_	1	punct	_	_
 7	ensiklopedia	ensiklopedia	NOUN	X--	_	1	appos	_	_
-8	bebas	bebas	ADJ	ASP	Degree=Pos|Number=Sing	7	amod	_	SpaceAfter=No
+8	bebas	bebas	ADJ	ASP	Degree=Pos|Number=Sing	7	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 2
 # text = Matahari atau Surya adalah bintang di pusat tata surya.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	5	nsubj	_	_
 2	atau	atau	CCONJ	H--	_	3	cc	_	_
@@ -32,22 +28,27 @@
 9	surya	surya	NOUN	F--	_	8	compound	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 2
-# text = Bentuknya nyaris bulat dan terdiri dari plasma panas bercampur medan magnet.
+# sent_id = 3
+# text = Bentuknya nyaris bulat dan terdiri dari [[plasma fisika|plasma]] panas bercampur medan magnet.
 1	Bentuknya	bentuk	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	0	root	_	_
-2	nyaris	nyaris	ADV	ASP	Degree=Pos|Number=Sing	3	advmod	_	_
+2	nyaris	nyaris	ADJ	ASP	Degree=Pos|Number=Sing	3	advmod	_	_
 3	bulat	bulat	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	_
 4	dan	dan	CCONJ	H--	_	5	cc	_	_
 5	terdiri	terdiri	VERB	VSP	Number=Sing|Voice=Pass	1	conj	_	_
-6	dari	dari	ADP	R--	_	7	case	_	_
-7	plasma	plasma	NOUN	F--	_	5	obl	_	_
-8	panas	panas	ADJ	NSD	Number=Sing	7	amod	_	_
-9	bercampur	bercampur	VERB	VSA	Number=Sing|Voice=Act	7	acl	_	_
-10	medan	medan	NOUN	NSD	Number=Sing	9	obj	_	_
-11	magnet	magnet	NOUN	F--	_	10	compound	_	SpaceAfter=No
-12	.	.	PUNCT	Z--	_	1	punct	_	_
+6	dari	dari	ADP	R--	_	9	case	_	_
+7	[	[	PUNCT	Z--	_	9	punct	_	SpaceAfter=No
+8	[	[	PUNCT	Z--	_	9	punct	_	SpaceAfter=No
+9	plasma	plasma	NOUN	X--	_	5	obl	_	_
+10	fisika|plasma	fisika|plasma	NOUN	X--	_	9	compound	_	SpaceAfter=No
+11	]	]	PUNCT	Z--	_	9	punct	_	SpaceAfter=No
+12	]	]	PUNCT	Z--	_	9	punct	_	_
+13	panas	panas	ADJ	NSD	Number=Sing	9	amod	_	_
+14	bercampur	bercampur	VERB	VSA	Number=Sing|Voice=Act	9	acl	_	_
+15	medan	medan	NOUN	NSD	Number=Sing	14	obj	_	_
+16	magnet	magnet	NOUN	F--	_	15	compound	_	SpaceAfter=No
+17	.	.	PUNCT	Z--	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Diameternya sekitar 1.392.684 km, kira-kira 109 kali diameter Bumi, dan massanya (sekitar 2×1030 kilogram, 330.000 kali massa Bumi) mewakili kurang lebih 99,86 % massa total tata surya.
 1	Diameternya	diameter	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	24	nsubj	_	_
 2	sekitar	sekitar	ADP	D--	_	4	case	_	_
@@ -81,14 +82,34 @@
 30	total	total	NOUN	NSD	Number=Sing	29	compound	_	_
 31	tata	tata	NOUN	VSA	Number=Sing|Voice=Act	30	compound	_	_
 32	surya	surya	NOUN	F--	_	31	compound	_	SpaceAfter=No
-33	.	.	PUNCT	Z--	_	24	punct	_	SpacesAfter=\n
+33	.	.	PUNCT	Z--	_	24	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
+# sent_id = 5
+# text = Matahari merupakan benda langit terbesar di galaksi Bima Sakti yang besarnya bahkan 10 kali planet terbesar tata surya, Jupiter.
+1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj	_	_
+2	merupakan	merupakan	VERB	O--	_	0	root	_	_
+3	benda	benda	NOUN	NSD	Number=Sing	2	obj	_	_
+4	langit	langit	NOUN	NSD	Number=Sing	3	compound	_	_
+5	terbesar	terbesar	ADJ	ASS	Degree=Sup|Number=Sing	4	amod	_	_
+6	di	di	ADP	R--	_	7	case	_	_
+7	galaksi	galaksi	NOUN	NSD	Number=Sing	3	nmod	_	_
+8	Bima	bima	PROPN	NSD	Number=Sing	7	flat	_	_
+9	Sakti	sakti	PROPN	X--	_	8	flat	_	_
+10	yang	yang	PRON	S--	PronType=Rel	11	nsubj	_	_
+11	besarnya	besar	ADJ	ASP+PS3	Degree=Pos|Number=Sing|Number[psor]=Sing|Person[psor]=3	3	amod	_	_
+12	bahkan	bahkan	SCONJ	D--	_	15	advmod	_	_
+13	10	10	NUM	CC-	NumType=Card	14	nummod	_	_
+14	kali	kali	NOUN	NSD	Number=Sing	15	compound	_	_
+15	planet	planet	NOUN	NSD	Number=Sing	3	compound	_	_
+16	terbesar	terbesar	ADJ	ASS	Degree=Sup|Number=Sing	15	amod	_	_
+17	tata	tata	NOUN	VSA	Number=Sing|Voice=Act	15	compound	_	_
+18	surya	surya	NOUN	F--	_	17	compound	_	SpaceAfter=No
+19	,	,	PUNCT	Z--	_	15	punct	_	_
+20	Jupiter	jupiter	PROPN	F--	_	15	appos	_	SpaceAfter=No
+21	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
+
 # newpar
-# sent_id = 1
+# sent_id = 6
 # text = Secara kimiawi, sekitar tiga perempat massa matahari terdiri dari hidrogen, sedangkan sisanya didominasi helium.
 1	Secara	secara	ADP	R--	_	2	case	_	_
 2	kimiawi	kimiawi	NOUN	NSD	Number=Sing	9	obl	_	SpaceAfter=No
@@ -108,7 +129,7 @@
 16	helium	helium	NOUN	F--	_	15	obj	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 7
 # text = Sisa massa tersebut (1,69%, setara dengan 5.629 kali massa Bumi) terdiri dari elemen-elemen berat seperti oksigen, karbon, neon, dan besi.
 1	Sisa	sisa	NOUN	NSD	Number=Sing	14	nsubj:pass	_	_
 2	massa	massa	NOUN	F--	_	1	compound	_	_
@@ -138,7 +159,7 @@
 26	besi	besi	NOUN	NSD	Number=Sing	19	conj	_	SpaceAfter=No
 27	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n
 
-# sent_id = 3
+# sent_id = 8
 # text = Matahari terbentuk sekitar 4,6 miliar tahun yang lalu akibat peluruhan gravitasi suatu wilayah di dalam sebuah awan molekul besar.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj:pass	_	_
 2	terbentuk	terbentuk	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -161,7 +182,7 @@
 19	besar	besar	ADJ	ASP	Degree=Pos|Number=Sing	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 9
 # text = Sebagian besar materi berkumpul di tengah, sementara sisanya memipih menjadi cakram beredar yang kelak menjadi tata surya.
 1	Sebagian	sebagian	DET	ASP	Degree=Pos|Number=Sing	3	det	_	_
 2	besar	besar	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	_
@@ -183,7 +204,7 @@
 18	surya	surya	NOUN	F--	_	17	compound	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 10
 # text = Massa pusatnya semakin panas dan padat dan akhirnya memulai fusi termonuklir di intinya.
 1	Massa	massa	NOUN	F--	_	0	root	_	_
 2	pusatnya	pusat	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	1	compound	_	_
@@ -200,7 +221,7 @@
 13	intinya	inti	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	10	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 11
 # text = Diduga bahwa hampir semua bintang lain terbentuk dengan proses serupa.
 1	Diduga	diduga	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
 2	bahwa	bahwa	SCONJ	S--	_	7	mark	_	_
@@ -214,7 +235,7 @@
 10	serupa	serupa	ADJ	ASP	Degree=Pos|Number=Sing	9	amod	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	1	punct	_	_
 
-# sent_id = 7
+# sent_id = 12
 # text = Klasifikasi bintang matahari, berdasarkan kelas spektrumnya, adalah bintang deret utama G (G2V) dan sering digolongkan sebagai katai kuning karena radiasi tampaknya lebih intens dalam porsi spektrum kuning-merah.
 1	Klasifikasi	klasifikasi	NOUN	NSD	Number=Sing	10	nsubj	_	_
 2	bintang	bintang	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -249,7 +270,7 @@
 31	kuning-merah	kuning	NOUN	NPD	Number=Plur	30	compound	_	SpaceAfter=No
 32	.	.	PUNCT	Z--	_	10	punct	_	_
 
-# sent_id = 8
+# sent_id = 13
 # text = Meski warnanya putih, dari permukaan Bumi, matahari tampak kuning dikarenakan pembauran cahaya biru di atmosfer.
 1	Meski	meski	SCONJ	S--	_	2	mark	_	_
 2	warnanya	warna	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	10	advcl	_	_
@@ -270,7 +291,7 @@
 17	atmosfer	atmosfer	NOUN	NSD	Number=Sing	13	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	10	punct	_	SpacesAfter=\n
 
-# sent_id = 9
+# sent_id = 14
 # text = Menurut label kelas spektrum,G2 menandakan suhu permukaannya sekitar 5778 K (5505 °C) dan V menandakan bahwa matahari, layaknya bintang-bintang lain, merupakan bintang deret utama, sehingga energinya diciptakan oleh fusi nuklir nukleus hidrogen ke dalam helium.
 1	Menurut	menurut	ADP	R--	_	2	case	_	_
 2	label	label	NOUN	NSD	Number=Sing	6	obl	_	_
@@ -315,7 +336,7 @@
 41	helium	helium	NOUN	F--	_	35	nmod	_	SpaceAfter=No
 42	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 10
+# sent_id = 15
 # text = Dalam intinya, matahari memfusi 620 juta ton metrik hidrogen setiap detik.
 1	Dalam	dalam	ADP	NSD	Number=Sing	2	case	_	_
 2	intinya	inti	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
@@ -329,14 +350,10 @@
 10	hidrogen	hidrogen	NOUN	F--	_	9	compound	_	_
 11	setiap	setiap	DET	B--	PronType=Tot	12	det	_	_
 12	detik	detik	NOUN	NSD	Number=Sing	9	compound	_	SpaceAfter=No
-13	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 16
 # text = Dahulu, matahari dipandang para astronom sebagai bintang kecil dan tidak penting.
 1	Dahulu	dahulu	ADV	D--	_	4	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -352,7 +369,7 @@
 12	penting	penting	ADJ	ASP	Degree=Pos|Number=Sing	8	conj	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 17
 # text = Sekarang, matahari dianggap lebih terang daripada sekitar 85% bintang di galaksi Bima Sakti yang didominasi katai merah.
 1	Sekarang	sekarang	ADV	D--	_	4	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -375,7 +392,7 @@
 19	merah	merah	ADJ	ASP	Degree=Pos|Number=Sing	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 18
 # text = Magnitudo absolut matahari adalah +4,83.
 1	Magnitudo	magnitudo	PROPN	X--	_	5	nsubj	_	_
 2	absolut	absolut	NOUN	X--	_	1	compound	_	_
@@ -384,7 +401,7 @@
 5	+4,83	+4,83	NUM	CC-	NumType=Card	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 19
 # text = Akan tetapi, sebagai bintang yang paling dekat dengan Bumi, matahari adalah benda tercerah di langit dengan magnitudo tampak −26,74.
 1	Akan	akan	CCONJ	M--	_	14	mark	_	_
 2	tetapi	tetapi	SCONJ	S--	_	1	fixed	_	SpaceAfter=No
@@ -409,7 +426,7 @@
 21	−26,74	−26,74	NUM	CC-	NumType=Card	20	nummod	_	SpaceAfter=No
 22	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 5
+# sent_id = 20
 # text = Korona matahari yang panas terus meluas di luar angkasa dan menciptakan angin matahari, yaitu arus partikel bermuatan yang bergerak hingga heliopause sekitar 100 au.
 1	Korona	korona	NOUN	X--	_	6	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -438,7 +455,7 @@
 25	au	au	NOUN	F--	_	20	obl	_	SpaceAfter=No
 26	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 6
+# sent_id = 21
 # text = Gelembung di medium antarbintang yang terbentuk oleh angin matahari, heliosfer, adalah struktur bersambung terbesar di tata surya.
 1	Gelembung	gelembung	NOUN	X--	_	14	nsubj	_	_
 2	di	di	ADP	R--	_	3	case	_	_
@@ -459,14 +476,10 @@
 17	di	di	ADP	R--	_	18	case	_	_
 18	tata	tata	NOUN	VSA	Number=Sing|Voice=Act	14	nmod	_	_
 19	surya	surya	NOUN	F--	_	18	compound	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 22
 # text = Matahari saat ini bergerak melalui Awan Antarbintang Lokal (dekat Awan G) di zona Gelembung Lokal, tepatnya di dalam lingkaran terdalam Lengan Orion di galaksi Bima Sakti.
 1	Matahari	matahari	NOUN	NSD	Number=Sing	4	nsubj	_	_
 2	saat	saat	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -499,7 +512,7 @@
 29	Sakti	sakti	PROPN	X--	_	28	flat	_	SpaceAfter=No
 30	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 23
 # text = Dari 50 sistem bintang terdekat dalam jarak 17 tahun cahaya dari Bumi (bintang terdekat adalah katai merah bernama Proxima Centauri sekitar 4,2 tahun cahaya), matahari memiliki massa terbesar keempat.
 1	Dari	dari	ADP	R--	_	3	case	_	_
 2	50	50	NUM	CC-	NumType=Card	3	nummod	_	_
@@ -535,7 +548,7 @@
 32	keempat	keempat	NUM	CO-	NumType=Card	30	nummod	_	SpaceAfter=No
 33	.	.	PUNCT	Z--	_	29	punct	_	_
 
-# sent_id = 3
+# sent_id = 24
 # text = Matahari mengorbit pusat Bima Sakti pada jarak kurang lebih 7004240000000000000♠24.000–7004260000000000000♠26.000 tahun cahaya dari pusat galaksi.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj	_	_
 2	mengorbit	menorbit	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -554,7 +567,7 @@
 15	galaksi	galaksi	NOUN	NSD	Number=Sing	14	compound	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 25
 # text = Jika dilihat dari kutub utara galaksi, matahari merampungkan satu orbit searah jarum jam dalam kurun sekitar 225–250 juta tahun.
 1	Jika	jika	SCONJ	S--	_	2	mark	_	_
 2	dilihat	dilihat	VERB	VSP	Number=Sing|Voice=Pass	9	advcl	_	_
@@ -578,7 +591,7 @@
 20	tahun	tahun	NOUN	NSD	Number=Sing	16	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 5
+# sent_id = 26
 # text = Karena Bima Sakti bergerak relatif terhadap radiasi latar belakang gelombang mikro kosmis (CMB) ke arah konstelasi Hydra dengan kecepatan 550 km/detik, kecepatan matahari relatif terhadap CMB sekitar 370 km/detik ke arah Crater atau Leo.
 1	Karena	karena	SCONJ	S--	_	4	mark	_	_
 2	Bima	bima	PROPN	NSD	Number=Sing	4	nsubj	_	_
@@ -617,15 +630,11 @@
 35	Crater	crater	PROPN	F--	_	34	flat	_	_
 36	atau	atau	CCONJ	H--	_	37	cc	_	_
 37	Leo	leo	PROPN	X--	_	35	conj	_	SpaceAfter=No
-38	.	.	PUNCT	Z--	_	25	punct	_	SpacesAfter=\n
+38	.	.	PUNCT	Z--	_	25	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = Jarak rata-rata matahari dari Bumi sekitar 149,6 juta kilometer (1 au), meski jaraknya bervariasi seiring pergerakan Bumi menjauhi perihelion pada bulan Januari hingga aphelion pada bulan Juli.
+# sent_id = 27
+# text = Jarak rata-rata matahari dari Bumi sekitar 149,6 juta kilometer (1 au), meski jaraknya bervariasi seiring pergerakan Bumi menjauhi perihelion pada bulan Januari hingga aphelion pada bulan Juli. Pada jarak rata-rata ini, cahaya bergerak dari matahari ke Bumi selama 8 menit 19 detik.
 1	Jarak	jarak	NOUN	NSD	Number=Sing	0	root	_	_
 2	rata-rata	rata	NOUN	NPD	Number=Plur	1	compound	_	_
 3	matahari	matahari	NOUN	NSD	Number=Sing	2	compound	_	_
@@ -649,7 +658,7 @@
 21	menjauhi	menjauhi	VERB	VSA	Number=Sing|Voice=Act	19	acl	_	_
 22	perihelion	perihelion	NOUN	X--	_	21	obj	_	_
 23	pada	pada	ADP	R--	_	24	case	_	_
-24	bulan	bulan	NOUN	NSD	Number=Sing	19	nmod	_	_
+24	bulan	bulan	NOUN	NSD	Number=Sing	22	nmod	_	_
 25	Januari	januari	PROPN	NSD	Number=Sing	24	flat	_	_
 26	hingga	hingga	ADP	R--	_	27	case	_	_
 27	aphelion	aphelion	NOUN	X--	_	21	obl	_	_
@@ -657,28 +666,25 @@
 29	bulan	bulan	NOUN	NSD	Number=Sing	27	nmod	_	_
 30	Juli	juli	PROPN	NSD	Number=Sing	29	flat	_	SpaceAfter=No
 31	.	.	PUNCT	Z--	_	17	punct	_	_
+32	Pada	pada	ADP	R--	_	33	case	_	_
+33	jarak	jarak	NOUN	ASP	Degree=Pos|Number=Sing	38	obl	_	_
+34	rata-rata	rata	NOUN	NPD	Number=Plur	33	compound	_	_
+35	ini	ini	DET	B--	PronType=Dem	33	det	_	SpaceAfter=No
+36	,	,	PUNCT	Z--	_	38	punct	_	_
+37	cahaya	cahaya	NOUN	NSD	Number=Sing	38	nsubj	_	_
+38	bergerak	bergerak	VERB	VSA	Number=Sing|Voice=Act	1	dep	_	_
+39	dari	dari	ADP	R--	_	40	case	_	_
+40	matahari	matahari	NOUN	NSD	Number=Sing	38	obl	_	_
+41	ke	ke	ADP	R--	_	42	case	_	_
+42	Bumi	bumi	NOUN	NSD	Number=Sing	38	obl	_	_
+43	selama	selama	ADP	R--	_	45	case	_	_
+44	8	8	NUM	CC-	NumType=Card	45	nummod	_	_
+45	menit	menit	NOUN	NSD	Number=Sing	38	obl	_	_
+46	19	19	NUM	CC-	NumType=Card	47	nummod	_	_
+47	detik	detik	NOUN	NSD	Number=Sing	45	compound	_	SpaceAfter=No
+48	.	.	PUNCT	Z--	_	38	punct	_	_
 
-# sent_id = 2
-# text = Pada jarak rata-rata ini, cahaya bergerak dari matahari ke Bumi selama 8 menit 19 detik.
-1	Pada	pada	ADP	R--	_	2	case	_	_
-2	jarak	jarak	NOUN	ASP	Degree=Pos|Number=Sing	7	obl	_	_
-3	rata-rata	rata	NOUN	NPD	Number=Plur	2	compound	_	_
-4	ini	ini	DET	B--	PronType=Dem	2	det	_	SpaceAfter=No
-5	,	,	PUNCT	Z--	_	7	punct	_	_
-6	cahaya	cahaya	NOUN	NSD	Number=Sing	7	nsubj	_	_
-7	bergerak	bergerak	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
-8	dari	dari	ADP	R--	_	9	case	_	_
-9	matahari	matahari	NOUN	NSD	Number=Sing	7	obl	_	_
-10	ke	ke	ADP	R--	_	11	case	_	_
-11	Bumi	bumi	NOUN	NSD	Number=Sing	9	nmod	_	_
-12	selama	selama	ADP	R--	_	14	case	_	_
-13	8	8	NUM	CC-	NumType=Card	14	nummod	_	_
-14	menit	menit	NOUN	NSD	Number=Sing	7	obl	_	_
-15	19	19	NUM	CC-	NumType=Card	16	nummod	_	_
-16	detik	detik	NOUN	NSD	Number=Sing	14	compound	_	SpaceAfter=No
-17	.	.	PUNCT	Z--	_	7	punct	_	_
-
-# sent_id = 3
+# sent_id = 28
 # text = Energi sinar matahari ini membantu perkembangan nyaris semua bentuk kehidupan di Bumi melalui fotosintesis dan mengubah iklim dan cuaca Bumi. Dampak luar biasa matahari terhadap Bumi sudah diamati sejak zaman prasejarah.
 1	Energi	energi	PROPN	NSD	Number=Sing	5	nsubj	_	_
 2	sinar	sinar	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -714,7 +720,7 @@
 32	prasejarah	prasejarah	ADJ	NSD	Number=Sing	31	amod	_	SpaceAfter=No
 33	.	.	PUNCT	Z--	_	29	punct	_	_
 
-# sent_id = 4
+# sent_id = 29
 # text = Matahari juga dianggap oleh sejumlah peradaban sebagai dewa.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	juga	juga	ADV	D--	_	3	advmod	_	_
@@ -726,7 +732,7 @@
 8	dewa	dewa	NOUN	NSD	Number=Sing	6	nmod	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 30
 # text = Pemahaman ilmiah yang akurat mengenai matahari berkembang perlahan.
 1	Pemahaman	penpahaman	NOUN	NSD	Number=Sing	7	nsubj	_	_
 2	ilmiah	ilmiah	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	_
@@ -738,7 +744,7 @@
 8	perlahan	perlahan	ADV	D--	_	7	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 6
+# sent_id = 31
 # text = Pada abad ke-19, beberapa ilmuwan ternama mulai sedikit tahu tentang komposisi fisik dan sumber tenaga matahari.
 1	Pada	pada	ADP	R--	_	2	case	_	_
 2	abad	abad	NOUN	NSD	Number=Sing	8	obl	_	_
@@ -759,7 +765,7 @@
 17	matahari	matahari	NOUN	NSD	Number=Sing	16	compound	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 7
+# sent_id = 32
 # text = Pemahaman ini masih terus berkembang sampai sekarang.
 1	Pemahaman	penpahaman	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -770,7 +776,7 @@
 7	sekarang	sekarang	NOUN	D--	_	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 8
+# sent_id = 33
 # text = Ada sejumlah anomali perilaku matahari yang belum dapat dijelaskan secara ilmiah.
 1	Ada	ada	VERB	ASP	Degree=Pos|Number=Sing	0	root	_	_
 2	sejumlah	sejumlah	DET	B--	NumType=Card|PronType=Ind	3	det	_	_
@@ -783,23 +789,15 @@
 9	dijelaskan	dijelaskan	VERB	VSP	Number=Sing|Voice=Pass	3	acl	_	_
 10	secara	secara	ADP	R--	_	11	case	_	_
 11	ilmiah	ilmiah	ADJ	ASP	Degree=Pos|Number=Sing	9	xcomp	_	SpaceAfter=No
-12	.	.	PUNCT	Z--	_	1	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	Z--	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 34
 # text = Karakteristik
-1	Karakteristik	karakteristik	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
+1	Karakteristik	karakteristik	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 35
 # text = Matahari adalah bintang deret utama tipe G yang kira-kira terdiri dari 99,85% massa total tata surya.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -820,7 +818,7 @@
 17	surya	surya	NOUN	F--	_	16	compound	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 36
 # text = Bentuknya nyaris bulat sempurna dengan kepepatan sebesar sembilan per satu juta, artinya diameter kutubnya berbeda 10 km saja dengan diameter khatulistiwanya.
 1	Bentuknya	bentuk	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	0	root	_	_
 2	nyaris	nyaris	ADJ	ASP	Degree=Pos|Number=Sing	3	amod	_	_
@@ -846,7 +844,7 @@
 22	khatulistiwanya	khatulistiwanya	NOUN	X--	_	21	compound	_	SpaceAfter=No
 23	.	.	PUNCT	Z--	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 37
 # text = Karena matahari terbuat dari plasma dan tidak padat, rotasinya lebih cepat di bagian khatulistiwa ketimbang kutubnya.
 1	Karena	karena	SCONJ	S--	_	3	mark	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
@@ -867,7 +865,7 @@
 17	kutubnya	kutub	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	14	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	12	punct	_	_
 
-# sent_id = 4
+# sent_id = 38
 # text = Peristiwa ini disebut rotasi diferensial dan terjadi karena konveksi pada matahari dan gerakan massa-nya akibat gradasi suhu yang terlampau jauh dari inti ke permukaan.
 1	Peristiwa	peristiwa	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -895,7 +893,7 @@
 24	permukaan	permukaan	NOUN	NSD	Number=Sing	22	nmod	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 39
 # text = Massa tersebut mendorong sebagian momentum sudut matahari yang berlawanan arah jarum jam jika dilihat dari kutub utara ekliptika sehingga kecepatan sudutnya didistribusikan kembali.
 1	Massa	massa	NOUN	F--	_	3	nsubj	_	_
 2	tersebut	tersebut	DET	B--	PronType=Dem	1	det	_	_
@@ -922,7 +920,7 @@
 23	kembali	kembali	ADV	VSA	Number=Sing|Voice=Act	22	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 40
 # text = Periode rotasi aktual ini diperkirakan 25,6 hari di khatulistiwa dan 33,5 hari di kutub.
 1	Periode	periode	NOUN	NSD	Number=Sing	5	nsubj:pass	_	_
 2	rotasi	rotasi	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -940,7 +938,7 @@
 14	kutub	kutub	NOUN	NSD	Number=Sing	12	nmod	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 41
 # text = Namun, akibat sudut pandang yang berubah-ubah dari Bumi saat mengorbit matahari, rotasi tampak di khatulistiwa kira-kira 28 hari.
 1	Namun	namun	SCONJ	S--	_	15	mark	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -964,7 +962,7 @@
 20	hari	hari	NOUN	NSD	Number=Sing	17	compound	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	15	punct	_	_
 
-# sent_id = 8
+# sent_id = 42
 # text = Efek sentrifugal rotasi lambat ini 18 juta kali lebih lemah dibandingkan gravitasi permukaan di khatulistiwa matahari.
 1	Efek	efek	NOUN	NSD	Number=Sing	10	nsubj	_	_
 2	sentrifugal	sentrifugal	ADJ	X--	_	1	amod	_	_
@@ -984,7 +982,7 @@
 16	matahari	matahari	NOUN	NSD	Number=Sing	15	compound	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	10	punct	_	_
 
-# sent_id = 9
+# sent_id = 43
 # text = Efek pasang planet lebih lemah lagi dan tidak begitu memengaruhi bentuk matahari.
 1	Efek	efek	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	pasang	pasang	NOUN	VSA	Number=Sing|Voice=Act	1	compound	_	_
@@ -998,14 +996,10 @@
 10	memengaruhi	memengaruhi	VERB	X--	_	5	conj	_	_
 11	bentuk	bentuk	NOUN	NSD	Number=Sing	10	obj	_	_
 12	matahari	matahari	NOUN	NSD	Number=Sing	11	compound	_	SpaceAfter=No
-13	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 44
 # text = Matahari adalah bintang populasi I yang kaya elemen berat.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -1018,7 +1012,7 @@
 9	berat	berat	ADJ	ASP	Degree=Pos|Number=Sing	8	amod	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 45
 # text = Pembentukan matahari diperkirakan diawali oleh gelombang kejut dari satu supernova terdekat atau lebih.
 1	Pembentukan	penbentukan	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1035,7 +1029,7 @@
 13	lebih	lebih	ADV	D--	_	10	advmod	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 46
 # text = Teori ini didasarkan pada keberlimpahan elemen berat di tata surya, seperti emas dan uranium, dibandingkan bintang-bintang populasi II yang elemen beratnya sedikit.
 1	Teori	teori	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -1063,7 +1057,7 @@
 24	sedikit	sedikit	ADV	ASP	Degree=Pos|Number=Sing	23	advmod	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 47
 # text = Elemen-elemen ini sangat mungkin dihasilkan oleh reaksi nuklir endotermik selama supernova atau transmutasi melalui penyerapan neutron di dalam sebuah bintang raksasa generasi kedua.
 1	Elemen-elemen	elemen-elemen	NOUN	NPD	Number=Plur	5	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -1088,14 +1082,10 @@
 21	raksasa	raksasa	NOUN	NSD	Number=Sing	20	compound	_	_
 22	generasi	generasi	NOUN	NSD	Number=Sing	21	compound	_	_
 23	kedua	kedua	NUM	CO-	NumType=Card	22	nummod	_	SpaceAfter=No
-24	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 48
 # text = Matahari tidak punya batas pasti seperti planet-planet berbatu.
 1	Matahari	matahari	NOUN	NSD	Number=Sing	3	nsubj	_	_
 2	tidak	tidak	PART	G--	Polarity=Neg	3	advmod	_	_
@@ -1107,7 +1097,7 @@
 8	berbatu	berbatu	ADJ	VSA	Number=Sing|Voice=Act	7	amod	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 49
 # text = Kepadatan gas di bagian terluarnya menurun seiring bertambahnya jarak dari pusat matahari.
 1	Kepadatan	kepadatan	NOUN	NSD	Number=Sing	6	nsubj	_	_
 2	gas	gas	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1123,7 +1113,7 @@
 12	matahari	matahari	NOUN	NSD	Number=Sing	11	compound	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 50
 # text = Meski begitu, matahari memiliki struktur interior yang jelas.
 1	Meski	meski	ADV	S--	_	5	advmod	_	_
 2	begitu	begitu	ADV	B--	PronType=Dem	1	fixed	_	SpaceAfter=No
@@ -1136,7 +1126,7 @@
 9	jelas	jelas	ADJ	ASP	Degree=Pos|Number=Sing	6	amod	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 51
 # text = Radius matahari diukur dari pusatnya ke pinggir fotosfer.
 1	Radius	radius	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1148,7 +1138,7 @@
 8	fotosfer	fotosfer	NOUN	X--	_	7	compound	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 52
 # text = Fotosfer adalah lapisan terakhir yang tampak karena lapisan-lapisan di atasnya terlalu dingin atau terlalu tipis untuk meradiasikan cahaya yang cukup agar dapat terlihat mata telanjang di hadapan cahaya terang dari fotosfer.
 1	Fotosfer	fotosfer	PROPN	X--	_	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -1183,7 +1173,7 @@
 31	fotosfer	fotosfer	NOUN	X--	_	27	nmod	_	SpaceAfter=No
 32	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 53
 # text = Selama gerhana matahari total, ketika fotosfer terhalang Bulan, korona matahari terlihat di sekitarnya.
 1	Selama	selama	ADP	R--	_	2	case	_	_
 2	gerhana	gerhana	NOUN	NSD	Number=Sing	13	obl	_	_
@@ -1200,14 +1190,10 @@
 13	terlihat	terlihat	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
 14	di	di	ADP	R--	_	15	case	_	_
 15	sekitarnya	sekitar	NOUN	D--+PS3	Number[psor]=Sing|Person[psor]=3	13	case	_	SpaceAfter=No
-16	.	.	PUNCT	Z--	_	13	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	Z--	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 54
 # text = Interior matahari tidak bisa dilihat secara langsung dan matahari sendiri tidak dapat ditembus radiasi elektromagnetik.
 1	Interior	interior	PROPN	NSD	Number=Sing	5	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1226,7 +1212,7 @@
 15	elektromagnetik	elektromagnetik	NOUN	X--	_	14	compound	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 55
 # text = Dengan mengikuti seismologi yang memakai gelombang gempa untuk mengungkap struktur terdalam Bumi, disiplin helioseismologi memakai gelombang tekanan (suara infrasonik) yang melintasi interior matahari untuk mengukur dan menggambar struktur terdalam matahari.
 1	Dengan	dengan	ADP	R--	_	2	case	_	_
 2	mengikuti	menikuti	VERB	VSA	Number=Sing|Voice=Act	16	xcomp	_	_
@@ -1263,7 +1249,7 @@
 33	matahari	matahari	NOUN	NSD	Number=Sing	31	nmod	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	16	punct	_	_
 
-# sent_id = 3
+# sent_id = 56
 # text = Model komputer matahari juga dimanfaatkan sebagai alat bantu teoretis untuk menyelidiki lapisan-lapisan terdalamnya.
 1	Model	model	NOUN	NSD	Number=Sing	5	nsubj:pass	_	_
 2	komputer	komputer	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1278,23 +1264,15 @@
 11	menyelidiki	menselidiki	VERB	VSA	Number=Sing|Voice=Act	7	acl	_	_
 12	lapisan-lapisan	lapisan	NOUN	NPD	Number=Plur	11	obj	_	_
 13	terdalamnya	terdalam	ADJ	VSP+PS3	Degree=Sup|Number=Sing|Number[psor]=Sing|Person[psor]=3	12	amod	_	SpaceAfter=No
-14	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 57
 # text = Inti
-1	Inti	inti	PROPN	VSA	Number=Sing	0	root	_	SpaceAfter=No
+1	Inti	inti	PROPN	VSA	Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 58
 # text = Inti matahari diperkirakan merentang dari pusatnya sampai 20–25% radius matahari.
 1	Inti	inti	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1309,7 +1287,7 @@
 11	matahari	matahari	NOUN	NSD	Number=Sing	10	compound	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 59
 # text = Kepadatannya mencapai 7005150000000000000♠150 g/cm3 (sekitar 150 kali lipat kepadatan air) dan suhu mendekati 15,7 juta kelvin (K).
 1	Kepadatannya	kepadatan	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	2	nsubj	_	_
 2	mencapai	mencapai	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -1334,7 +1312,7 @@
 21	)	)	PUNCT	Z--	_	20	punct	_	SpaceAfter=No
 22	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 60
 # text = Sebaliknya, suhu permukaan matahari kurang lebih 5.800 K. Analisis terkini terhadap data misi SOHO menunjukkan keberadaan tingkat rotasi yang lebih cepat di bagian inti ketimbang di seluruh zona radiatif.
 1	Sebaliknya	sebaliknya	SCONJ	S--	_	3	mark	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	3	punct	_	_
@@ -1369,7 +1347,7 @@
 31	radiatif	radiatif	ADJ	X--	_	30	amod	_	SpaceAfter=No
 32	.	.	PUNCT	Z--	_	17	punct	_	_
 
-# sent_id = 4
+# sent_id = 61
 # text = Sepanjang masa hidup matahari, energi dihasilkan oleh fusi nuklir melalui serangkaian tahap yang disebut rantai p–p (proton–proton); proses ini mengubah hidrogen menjadi helium.
 1	Sepanjang	sepanjang	ADP	R--	_	2	case	_	_
 2	masa	masa	NOUN	NSD	Number=Sing	7	obl	_	_
@@ -1400,12 +1378,12 @@
 27	helium	helium	NOUN	F--	_	26	obj	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 5
+# sent_id = 62
 # text = Hanya 0,8%
 1	Hanya	hanya	ADV	D--	_	0	root	_	_
 2	0,8%	0,8%	NUM	CC-	NumType=Card	1	nummod	_	_
 
-# sent_id = 6
+# sent_id = 63
 # text = energi matahari yang berasal dari siklus CNO.
 1	energi	energi	NOUN	NSD	Number=Sing	0	root	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1414,14 +1392,10 @@
 5	dari	dari	ADP	R--	_	6	case	_	_
 6	siklus	siklus	NOUN	NSD	Number=Sing	4	obl	_	_
 7	CNO	cno	PROPN	X--	_	6	flat	_	SpaceAfter=No
-8	.	.	PUNCT	Z--	_	1	punct	_	SpacesAfter=\n
+8	.	.	PUNCT	Z--	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 64
 # text = Inti adalah satu-satunya wilayah matahari yang menghasilkan energi termal yang cukup melalui fusi; 99%
 1	Inti	inti	PROPN	F--	_	4	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	4	cop	_	_
@@ -1440,7 +1414,7 @@
 15	99	99	NUM	CC-	NumType=Card	16	nummod	_	SpaceAfter=No
 16	%	%	SYM	Z--	_	4	nummod	_	_
 
-# sent_id = 2
+# sent_id = 65
 # text = tenaganya tercipta di dalam 24% radius matahari.
 1	tenaganya	tenaga	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	2	nsubj:pass	_	_
 2	tercipta	tercipta	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -1451,7 +1425,7 @@
 7	matahari	matahari	NOUN	NSD	Number=Sing	6	compound	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 66
 # text = Fusi hampir berhenti sepenuhnya pada tingkat 30% radius.
 1	Fusi	fusi	PROPN	X--	_	3	nsubj	_	_
 2	hampir	hampir	ADV	D--	_	3	advmod	_	_
@@ -1464,7 +1438,7 @@
 9	radius	radius	NOUN	NSD	Number=Sing	6	compound	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 67
 # text = Sisanya dipanaskan oleh energi yang ditransfer ke luar oleh radiasi dari inti ke zona konvektif di luarnya.
 1	Sisanya	sisa	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	2	nsubj:pass	_	_
 2	dipanaskan	dipanaskan	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -1485,7 +1459,7 @@
 17	luarnya	luar	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	14	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 5
+# sent_id = 68
 # text = Energi yang diproduksi melalui fusi di inti harus melintasi beberapa lapisan dalam perjalanan menuju fotosfer sebelum lepas ke angkasa dalam bentuk sinar matahari atau energi kinetik partikel.
 1	Energi	energi	PROPN	NSD	Number=Sing	9	nsubj	_	_
 2	yang	yang	PRON	S--	PronType=Rel	3	nsubj:pass	_	_
@@ -1514,14 +1488,10 @@
 25	energi	energi	NOUN	NSD	Number=Sing	21	conj	_	_
 26	kinetik	kinetik	NOUN	NSD	Number=Sing	25	compound	_	_
 27	partikel	partikel	NOUN	NSD	Number=Sing	26	compound	_	SpaceAfter=No
-28	.	.	PUNCT	Z--	_	9	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	Z--	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 69
 # text = Rantai proton–proton terjadi sekitar 7037919999999999999♠9,2×1037 kali per detik di inti.
 1	Rantai	rantai	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	proton–proton	proton–proton	NOUN	X--	_	1	compound	_	_
@@ -1535,7 +1505,7 @@
 10	inti	inti	NOUN	NSD	Number=Sing	8	nmod	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 70
 # text = Karena memakai empat proton bebas (nukleus hidrogen), reaksi ini kira-kira mengubah 3,7×1038 proton menjadi partikel alpha (nukleus helium) setiap detiknya (dari total ~8,9×1056 proton bebas di matahari) atau sekitar 6,2×1011 kg per detik.
 1	Karena	karena	SCONJ	S--	_	2	mark	_	_
 2	memakai	menpakai	VERB	VSA	Number=Sing|Voice=Act	14	advcl	_	_
@@ -1579,7 +1549,7 @@
 40	detik	detik	NOUN	NSD	Number=Sing	38	nmod	_	SpaceAfter=No
 41	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 71
 # text = Karena memfusi hidrogen ke helium melepaskan kurang lebih 0,7%
 1	Karena	karena	SCONJ	S--	_	2	mark	_	_
 2	memfusi	menmfusi	VERB	VSA	Number=Sing|Voice=Act	6	advcl	_	_
@@ -1591,7 +1561,7 @@
 8	lebih	lebih	ADV	D--	_	9	advmod	_	_
 9	0,7%	0,7%	NUM	CC-	NumType=Card	7	nummod	_	_
 
-# sent_id = 4
+# sent_id = 72
 # text = massa terfusi dalam bentuk energi, matahari melepaskan energi dengan tingkat konversi massa–energi sebesar 4,26 juta ton metrik per detik, 384,6 yotta watt (7026384600000000000♠3,846×1026 W), atau 9,192×1010 megaton TNT per detik.
 1	massa	massa	NOUN	F--	_	8	nsubj	_	_
 2	terfusi	terfusi	VERB	VSP	Number=Sing|Voice=Pass	1	acl	_	_
@@ -1630,7 +1600,7 @@
 35	detik	detik	NOUN	NSD	Number=Sing	32	nmod	_	SpaceAfter=No
 36	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 5
+# sent_id = 73
 # text = Massa ini tidak dihancurkan untuk menciptakan energi, tetapi diubah menjadi setara energi dan diangkut dalam energi yang diradiasikan, seperti yang dijelaskan oleh konsep kesetaraan massa–energi.
 1	Massa	massa	NOUN	F--	_	4	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -1659,14 +1629,10 @@
 25	konsep	konsep	NOUN	NSD	Number=Sing	23	obl	_	_
 26	kesetaraan	kesetaraan	NOUN	NSD	Number=Sing	25	compound	_	_
 27	massa–energi	massa–energi	NOUN	X--	_	26	compound	_	SpaceAfter=No
-28	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 74
 # text = Produksi tenaga oleh fusi di inti bervariasi sesuai jaraknya dari pusat matahari.
 1	Produksi	produksi	NOUN	NSD	Number=Sing	7	nsubj	_	_
 2	tenaga	tenaga	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1682,7 +1648,7 @@
 12	matahari	matahari	NOUN	NSD	Number=Sing	11	compound	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 75
 # text = Di pusat matahari, model teori memperkirakan besarnya mencapai 276.5 watt/m3, kepadatan produksi tenaga yang kira-kira lebih mendekati metabolisme reptil daripada bom termonuklir.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	pusat	pusat	NOUN	ASP	Degree=Pos|Number=Sing	7	obl	_	_
@@ -1710,7 +1676,7 @@
 24	termonuklir	termonuklir	ADJ	X--	_	23	amod	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 76
 # text = Puncak produksi tenaga di matahari telah dibanding-bandingkan dengan panas volumetrik yang dihasilkan di dalam tumpukan kompos aktif.
 1	Puncak	puncak	PROPN	NSD	Number=Sing	7	nsubj:pass	_	_
 2	produksi	produksi	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1731,7 +1697,7 @@
 17	aktif	aktif	ADJ	ASP	Degree=Pos|Number=Sing	16	amod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 77
 # text = Keluaran tenaga matahari yang luar biasa tidak diakibatkan oleh tenaga per volumenya yang tinggi, melainkan ukurannya yang besar.
 1	Keluaran	keluaran	NOUN	NSD	Number=Sing	8	nsubj:pass	_	_
 2	tenaga	tenaga	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1752,14 +1718,10 @@
 17	ukurannya	ukuran	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	8	advcl	_	_
 18	yang	yang	PRON	S--	PronType=Rel	19	nsubj	_	_
 19	besar	besar	ADJ	ASP	Degree=Pos|Number=Sing	17	amod	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 78
 # text = Tingkat fusi di bagian inti berada dalam kesetimbangan yang bisa membaik sendiri.
 1	Tingkat	tingkat	PROPN	NSD	Number=Sing	6	nsubj	_	_
 2	fusi	fusi	NOUN	X--	_	1	compound	_	_
@@ -1775,7 +1737,7 @@
 12	sendiri	sendiri	ADJ	ASP	Degree=Pos|Number=Sing	11	amod	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 79
 # text = Tingkat fusi yang agak lebih tinggi mengakibatkan inti memanas dan sedikit memuai terhadap berat lapisan terluarnya sehingga mengurangi tingkat fusi dan memperbaiki perturbasi; tingkat yang agak lebih rendah mengakibatkan inti mendingin dan sedikit menyusut sehingga meningkatkan tingkat fusi dan memperbaikinya ke tingkat saat ini.
 1	Tingkat	tingkat	NOUN	NSD	Number=Sing	7	nsubj	_	_
 2	fusi	fusi	NOUN	X--	_	1	compound	_	_
@@ -1822,14 +1784,10 @@
 43	tingkat	tingkat	NOUN	NSD	Number=Sing	41	obl	_	_
 44	saat	saat	NOUN	NSD	Number=Sing	43	compound	_	_
 45	ini	ini	DET	B--	PronType=Dem	44	det	_	SpaceAfter=No
-46	.	.	PUNCT	Z--	_	7	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	Z--	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 80
 # text = Sinar gama (foton berenergi tinggi) yang dilepaskan dalam reaksi fusi hanya diserap oleh beberapa militer plasma matahari, kemudian dipancarkan kembali secara acak dalam bentuk energi yang lebih rendah.
 1	Sinar	sinar	NOUN	NSD	Number=Sing	14	nsubj:pass	_	_
 2	gama	gama	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1864,7 +1822,7 @@
 31	rendah	rendah	ADJ	ASP	Degree=Pos|Number=Sing	27	amod	_	SpaceAfter=No
 32	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 2
+# sent_id = 81
 # text = Karena itu, butuh waktu lama bagi radiasi untuk mencapai permukaan matahari.
 1	Karena	karena	SCONJ	S--	_	4	mark	_	_
 2	itu	itu	DET	B--	PronType=Dem	1	det	_	SpaceAfter=No
@@ -1880,7 +1838,7 @@
 12	matahari	matahari	NOUN	NSD	Number=Sing	11	compound	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 82
 # text = Perkiraan waktu tempuh foton berkisar antara 10–170 ribu tahun.
 1	Perkiraan	perkiraan	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	waktu	waktu	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -1893,7 +1851,7 @@
 9	tahun	tahun	NOUN	NSD	Number=Sing	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 83
 # text = Neutrino, yang mewakili sekitar 2% produksi energi total matahari, hanya butuh 2,3 detik untuk mencapai permukaan.
 1	Neutrino	neutrino	PROPN	X--	_	13	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -1915,7 +1873,7 @@
 18	permukaan	permukaan	NOUN	NSD	Number=Sing	17	obj	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 5
+# sent_id = 84
 # text = Karena transprotasi energi di matahari adalah proses yang melibatkan foton dalam kesetimbangan termodinamik dengan zat, skala waktu transportasi energi di matahari lebih panjang dengan rentang 30 juta tahun.
 1	Karena	karena	SCONJ	S--	_	7	mark	_	_
 2	transprotasi	transprotasi	NOUN	X--	_	7	nsubj	_	_
@@ -1948,7 +1906,7 @@
 29	tahun	tahun	NOUN	NSD	Number=Sing	26	compound	_	SpaceAfter=No
 30	.	.	PUNCT	Z--	_	24	punct	_	_
 
-# sent_id = 6
+# sent_id = 85
 # text = Ini adalah waktu yang diperlukan matahari untuk kembali ke keadaan stabil jika tingkat penciptaan energi di intinya tiba-tiba berubah.
 1	Ini	ini	DET	B--	PronType=Dem	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -1969,14 +1927,10 @@
 17	intinya	inti	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	13	nmod	_	_
 18	tiba-tiba	tibatiba	ADV	D--	_	17	amod	_	_
 19	berubah	berrubah	VERB	VSA	Number=Sing|Voice=Act	5	advcl	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 86
 # text = Sepanjang bagian akhir perjalanan foton keluar matahari, di zona konvektif terluar, tabrakannya lebih sedikit dan energinya lebih rendah.
 1	Sepanjang	sepanjang	ADP	R--	_	2	case	_	_
 2	bagian	bagian	NOUN	NSD	Number=Sing	16	nmod	_	_
@@ -2000,7 +1954,7 @@
 20	rendah	rendah	ADJ	ASP	Degree=Pos|Number=Sing	18	amod	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	16	punct	_	_
 
-# sent_id = 2
+# sent_id = 87
 # text = Fotosfer adalah permukaan transparan matahari tempat foton terlepas dalam bentuk cahaya tampak.
 1	Fotosfer	fotosfer	PROPN	X--	_	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -2016,7 +1970,7 @@
 12	tampak	tampak	ADJ	ASP	Degree=Pos|Number=Sing	11	amod	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 88
 # text = Setiap sinar gama di inti matahari diubah menjadi beberapa juta foton cahaya tampak sebelum lepas ke luar angkasa.
 1	Setiap	setiap	DET	B--	PronType=Tot	2	det	_	_
 2	sinar	sinar	NOUN	NSD	Number=Sing	7	nsubj:pass	_	_
@@ -2038,7 +1992,7 @@
 18	angkasa	angkasa	NOUN	NSD	Number=Sing	17	compound	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 4
+# sent_id = 89
 # text = Neutrino juga dilepaskan oleh reaksi fusi di inti, tetapi tidak seperti foton.
 1	Neutrino	neutrino	PROPN	X--	_	3	nsubj:pass	_	_
 2	juga	juga	ADV	D--	_	3	advmod	_	_
@@ -2055,7 +2009,7 @@
 13	foton	foton	NOUN	X--	_	3	obl	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 90
 # text = Neutrino jarang berinteraksi dengan zat sampai-sampai semuanya bisa dengan mudah keluar dari matahari.
 1	Neutrino	neutrino	PROPN	X--	_	3	nsubj	_	_
 2	jarang	jarang	ADV	D--	_	3	advmod	_	_
@@ -2072,7 +2026,7 @@
 13	matahari	matahari	NOUN	NSD	Number=Sing	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 91
 # text = Selama beberapa tahun, pengukuran jumlah neutrino yang diproduksi di matahari lebih rendah daripada yang diprediksi teori dengan faktor 3.
 1	Selama	selama	ADP	R--	_	3	case	_	_
 2	beberapa	beberapa	DET	B--	NumType=Card|PronType=Ind	3	det	_	_
@@ -2096,7 +2050,7 @@
 20	3	3	NUM	CC-	NumType=Card	19	nummod	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 7
+# sent_id = 92
 # text = Kesenjangan ini diselesaikan pada tahun 2001 melalui penemuan efek osilasi neutrino: matahari memancarkan beberapa neutrino sesuai prediksi teori, tetapi detektor neutrino kehilangan 2⁄3 jumlahnya karena neutrino sudah berubah rasa saat dideteksi.
 1	Kesenjangan	kesenjangan	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -2131,24 +2085,16 @@
 31	rasa	rasa	NOUN	NSD	Number=Sing	30	obj	_	_
 32	saat	saat	SCONJ	NSD	Number=Sing	33	mark	_	_
 33	dideteksi	dideteksi	VERB	VSP	Number=Sing|Voice=Pass	30	advcl	_	SpaceAfter=No
-34	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+34	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 93
 # text = Zona radiatif
 1	Zona	zona	NOUN	NSD	Number=Sing	0	root	_	_
-2	radiatif	radiatif	ADJ	X--	_	1	amod	_	SpaceAfter=No
+2	radiatif	radiatif	ADJ	X--	_	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 94
 # text = Kurang lebih di bawah 0,7 radius matahari, material matahari cukup panas dan padat sampai-sampai radiasi termal adalah cara utama untuk mentransfer energi dari inti.
 1	Kurang	kurang	ADV	ASP	Degree=Pos|Number=Sing	4	advmod	_	_
 2	lebih	lebih	ADV	D--	_	4	advmod	_	_
@@ -2177,7 +2123,7 @@
 25	inti	inti	NOUN	NSD	Number=Sing	22	obl	_	SpaceAfter=No
 26	.	.	PUNCT	Z--	_	19	punct	_	_
 
-# sent_id = 2
+# sent_id = 95
 # text = Zona ini tidak diatur oleh konveksi termal.
 1	Zona	zona	NOUN	X--	_	4	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -2188,7 +2134,7 @@
 7	termal	termal	ADJ	ASP	Degree=Pos|Number=Sing	6	amod	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 96
 # text = Meski begitu, suhunya turun dari kira-kira 7 juta ke 2 juta kelvin seiring bertambahnya jarak dari inti.
 1	Meski	meski	ADV	S--	_	5	advmod	_	_
 2	begitu	begitu	ADV	B--	PronType=Dem	1	fixed	_	SpaceAfter=No
@@ -2210,7 +2156,7 @@
 18	inti	inti	NOUN	NSD	Number=Sing	16	nmod	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 97
 # text = Gradien suhu ini kurang dari nilai tingkat selang adiabatik sehingga tidak dapat menciptakan konveksi.
 1	Gradien	gradien	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	suhu	suhu	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2228,7 +2174,7 @@
 14	konveksi	konveksi	NOUN	NSD	Number=Sing	13	obj	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 98
 # text = Energi ditransfer oleh radiasi ion hidrogen dan helium yang memancarkan foton, yang hanya bergerak sedikit sebelum diserap kembali oleh ion-ion lain.
 1	Energi	energi	PROPN	NSD	Number=Sing	2	nsubj:pass	_	_
 2	ditransfer	ditransfer	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -2254,7 +2200,7 @@
 22	lain	lain	ADJ	ASP	Degree=Pos|Number=Sing	21	amod	_	SpaceAfter=No
 23	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 99
 # text = Kepadatannya turun seratus kali lipat (dari 20 g/cm3 ke 0,2 g/cm3) dari 0,25 radius matahari di atas zona radiasi.
 1	Kepadatannya	kepadatan	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	2	nsubj	_	_
 2	turun	turun	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -2277,14 +2223,10 @@
 19	atas	atas	ADP	ASP	Degree=Pos|Number=Sing	20	case	_	_
 20	zona	zona	NOUN	NSD	Number=Sing	16	nmod	_	_
 21	radiasi	radiasi	NOUN	NSD	Number=Sing	20	compound	_	SpaceAfter=No
-22	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 100
 # text = Zona radiatif dan zona konvektif dipisahkan oleh sebuah lapisan transisi, takoklin.
 1	Zona	zona	NOUN	NSD	Number=Sing	6	nsubj:pass	_	_
 2	radiatif	radiatif	ADJ	X--	_	1	amod	_	_
@@ -2300,7 +2242,7 @@
 12	takoklin	takoklin	NOUN	X--	_	9	appos	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 101
 # text = Ini adalah wilayah ketika perubahan fenomena mencolok antara rotasi seragam di zona radiatif dan rotasi diferensial di zona konvektif menghasilkan celah besar—kondisi ketika lapisan-lapisan horizontal saling bergesekan berlawanan arah.
 1	Ini	ini	DET	B--	PronType=Dem	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -2333,7 +2275,7 @@
 29	arah	arah	NOUN	NSD	Number=Sing	28	obj	_	SpaceAfter=No
 30	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 102
 # text = Gerakan cair yang ditemukan di zona konvektif di atasnya perlahan menghilang dari atas sampai bawah lapisan ini, sama seperti karakteristik tenang zona radiatif di bawah.
 1	Gerakan	gerakan	NOUN	NSD	Number=Sing	11	nsubj	_	_
 2	cair	cair	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2363,7 +2305,7 @@
 26	bawah	bawah	NOUN	NSD	Number=Sing	23	nmod	_	SpaceAfter=No
 27	.	.	PUNCT	Z--	_	11	punct	_	_
 
-# sent_id = 4
+# sent_id = 103
 # text = Saat ini, diperkirakan bahwa sebuah dinamo magnetik di dalam lapisan ini menciptakan medan magnet matahari (baca dinamo matahari).
 1	Saat	saat	NOUN	NSD	Number=Sing	4	obl	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	SpaceAfter=No
@@ -2386,24 +2328,16 @@
 19	dinamo	dinamo	NOUN	X--	_	18	compound	_	_
 20	matahari	matahari	NOUN	NSD	Number=Sing	19	compound	_	SpaceAfter=No
 21	)	)	PUNCT	Z--	_	18	punct	_	SpaceAfter=No
-22	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 104
 # text = Zona konvektif
 1	Zona	zona	NOUN	X--	_	0	root	_	_
-2	konvektif	konvektif	ADJ	X--	_	1	amod	_	SpaceAfter=No
+2	konvektif	konvektif	ADJ	X--	_	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 105
 # text = Di lapisan terluar matahari, dari permukaannya sampai kira-kira 200.000 km di bawahnya (70% radius matahari dari pusat), suhunya lebih rendah daripada di zona radiatif dan atom yang lebih berat tidak sepenuhnya terionisasikan.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	lapisan	lapisan	NOUN	NSD	Number=Sing	25	nmod	_	_
@@ -2444,7 +2378,7 @@
 37	terionisasikan	terionisasikan	VERB	VSP	Number=Sing|Voice=Pass	25	conj	_	SpaceAfter=No
 38	.	.	PUNCT	Z--	_	25	punct	_	_
 
-# sent_id = 2
+# sent_id = 106
 # text = Akibatnya, transportasi panas radiatif kurang efektif.
 1	Akibatnya	akibat	SCONJ	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	3	mark	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	3	punct	_	_
@@ -2455,7 +2389,7 @@
 7	efektif	efektif	ADJ	ASP	Degree=Pos|Number=Sing	3	amod	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 107
 # text = Kepadatan gas-gas ini sangat rendah untuk memungkinkan arus konvektif terbentuk.
 1	Kepadatan	kepadatan	NOUN	NSD	Number=Sing	0	root	_	_
 2	gas-gas	gas	NOUN	NPD	Number=Plur	1	compound	_	_
@@ -2469,7 +2403,7 @@
 10	terbentuk	terbentuk	VERB	VSP	Number=Sing|Voice=Pass	8	acl	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 108
 # text = Material yang dipanaskan di takoklin memanas dan memuai sehingga mengurangi kepadatannya dan memungkinkan material tersebut naik.
 1	Material	material	NOUN	NSD	Number=Sing	6	nsubj	_	_
 2	yang	yang	PRON	S--	PronType=Rel	3	nsubj:pass	_	_
@@ -2489,7 +2423,7 @@
 16	naik	naik	VERB	VSA	Number=Sing|Voice=Act	13	xcomp	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 109
 # text = Pengaruhnya, konveksi termal berkembang saat sel panas mengangkut mayoritas panas ke luar hingga fotosfer matahari.
 1	Pengaruhnya	pengaruh	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	5	punct	_	_
@@ -2509,7 +2443,7 @@
 16	matahari	matahari	NOUN	NSD	Number=Sing	15	compound	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 6
+# sent_id = 110
 # text = Setelah material tersebut mendingin di fotosfer, kepadatannya meningkat, lalu tenggelam ke dasar zona konveksi.
 1	Setelah	setelah	ADP	R--	_	4	case	_	_
 2	material	material	NOUN	NSD	Number=Sing	4	nsubj	_	_
@@ -2529,7 +2463,7 @@
 16	konveksi	konveksi	NOUN	NSD	Number=Sing	15	compound	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 7
+# sent_id = 111
 # text = Di sana, material memanfaatkan panas dari atas zona radiatif dan siklus ini berlanjut.
 1	Di	di	ADP	R--	_	5	case	_	_
 2	sana	sana	ADP	NSD	Number=Sing	5	case	_	SpaceAfter=No
@@ -2547,7 +2481,7 @@
 14	berlanjut	berlanjut	VERB	VSA	Number=Sing|Voice=Act	5	conj	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 8
+# sent_id = 112
 # text = Di fotosfer, suhu menurun hingga 5.700 K dan kepadatannya turun hingga 0,2 g/m3 (sekitar 1/6.000 kepadatan udara di permukaan laut).
 1	Di	di	ADP	R--	_	2	case	_	_
 2	fotosfer	fotosfer	NOUN	X--	_	5	obl	_	SpaceAfter=No
@@ -2572,14 +2506,10 @@
 21	permukaan	permukaan	NOUN	NSD	Number=Sing	18	nmod	_	_
 22	laut	laut	NOUN	NSD	Number=Sing	21	compound	_	SpaceAfter=No
 23	)	)	PUNCT	Z--	_	18	punct	_	SpaceAfter=No
-24	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 113
 # text = Kolom panas di zona konvektif membentuk jejak di permukaan matahari yang disebut granulasi dan supergranulasi.
 1	Kolom	kolom	NOUN	NSD	Number=Sing	6	nsubj	_	_
 2	panas	panas	ADJ	NSD	Number=Sing	1	amod	_	_
@@ -2598,7 +2528,7 @@
 15	supergranulasi	supergranulasi	NOUN	X--	_	13	conj	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 114
 # text = Konveksi turbulen di bagian terluar interior matahari ini menghasilkan dinamo "berskala kecil" yang menciptakan kutub magnetik utara dan selatan di seluruh permukaan matahari.
 1	Konveksi	konveksi	NOUN	NSD	Number=Sing	9	nsubj	_	_
 2	turbulen	turbulen	NOUN	X--	_	1	amod	_	_
@@ -2627,7 +2557,7 @@
 25	matahari	matahari	NOUN	NSD	Number=Sing	24	compound	_	SpaceAfter=No
 26	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 3
+# sent_id = 115
 # text = Kolom panas matahari disebut sel Bénard dan berbentuk prisma heksagon.
 1	Kolom	kolom	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	panas	panas	ADJ	NSD	Number=Sing	1	amod	_	_
@@ -2639,23 +2569,15 @@
 8	berbentuk	berbentuk	VERB	VSA	Number=Sing|Voice=Act	4	conj	_	_
 9	prisma	prisma	NOUN	NSD	Number=Sing	8	obj	_	_
 10	heksagon	heksagon	NOUN	X--	_	9	compound	_	SpaceAfter=No
-11	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 116
 # text = Fotosfer
-1	Fotosfer	fotosfer	PROPN	X--	_	0	root	_	SpaceAfter=No
+1	Fotosfer	fotosfer	PROPN	X--	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 117
 # text = Permukaan matahari yang tampak, fotosfer, adalah lapisan yang di bawahnya matahari menjadi opak terhadap cahaya tampak.
 1	Permukaan	permukaan	NOUN	NSD	Number=Sing	9	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2677,7 +2599,7 @@
 18	tampak	tampak	ADJ	ASP	Degree=Pos|Number=Sing	17	amod	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 118
 # text = Di atas fotosfer, sinar matahari yang tampak bebas berkelana ke angkasa dan energinya terlepas sepenuhnya dari matahari.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	atas	atas	NOUN	ASP	Degree=Pos|Number=Sing	10	obl	_	_
@@ -2699,7 +2621,7 @@
 18	matahari	matahari	NOUN	NSD	Number=Sing	15	obl	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	10	punct	_	_
 
-# sent_id = 3
+# sent_id = 119
 # text = Perubahan opasitas diakibatkan oleh berkurangnya jumlah ion H− yang mudah menyerap cahaya tampak.
 1	Perubahan	perubahan	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	opasitas	opasitas	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2717,7 +2639,7 @@
 14	tampak	tampak	ADJ	ASP	Degree=Pos|Number=Sing	13	amod	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 120
 # text = Sebalinya, cahaya tampak yang kita lihat dihasilkan dalam bentuk elektron dan bereaksi dengan atom hidrogen untuk menghasilkan ion H−.
 1	Sebalinya	sebalinya	SCONJ	S--	_	8	mark	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -2740,14 +2662,10 @@
 19	ion	ion	NOUN	F--	_	18	obj	_	_
 20	H	h	NOUN	F--	_	19	compound	_	SpaceAfter=No
 21	−	−	NOUN	X--	_	20	compound	_	SpaceAfter=No
-22	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 121
 # text = Tebal fotosfer puluhan sampai ratusan kilometer, sedikit kurang opak daripada udara di Bumi. Karena bagian atas fotosfer lebih dingin daripada bagian bawahnya, citra matahari tampak lebih terang di tengah daripada pinggir atau lengan cakram matahari; fenomena ini disebut penggelapan lengan.
 1	Tebal	tebal	NOUN	NSD	Number=Sing	0	root	_	_
 2	fotosfer	fotosfer	NOUN	X--	_	1	compound	_	_
@@ -2795,7 +2713,7 @@
 44	lengan	lengan	NOUN	NSD	Number=Sing	43	compound	_	SpaceAfter=No
 45	.	.	PUNCT	Z--	_	28	punct	_	_
 
-# sent_id = 2
+# sent_id = 122
 # text = Spektrum sinar matahari kurang lebih sama dengan spektrum benda hitam yang beradiasi sekitar 6.000 K, berbaur dengan jalur penyerapan atomik dari lapisan tipis di atas fotosfer.
 1	Spektrum	spektrum	NOUN	NSD	Number=Sing	0	root	_	_
 2	sinar	sinar	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2826,7 +2744,7 @@
 27	fotosfer	fotosfer	NOUN	X--	_	26	nmod	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 123
 # text = Fotosfer memiliki kepadatan partikel sekitar 1023 m−3 (sekitar 0,37% jumlah partikel per volume atmosfer Bumi di permukaan laut).
 1	Fotosfer	fotosfer	PROPN	X--	_	2	nsubj	_	_
 2	memiliki	menmiliki	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -2851,7 +2769,7 @@
 21	)	)	PUNCT	Z--	_	12	punct	_	SpaceAfter=No
 22	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 124
 # text = Fotosfer tidak sepenuhnya terionisasikan—cakupan ionisasinya sekitar 3%—sehingga nyaris seluruh hidrogen dibiarkan berbentuk atom.
 1	Fotosfer	fotosfer	PROPN	X--	_	4	nsubj:pass	_	_
 2	tidak	tidak	PART	G--	Polarity=Neg	4	advmod	_	_
@@ -2866,14 +2784,10 @@
 11	dibiarkan	dibiarkan	VERB	VSP	Number=Sing|Voice=Pass	4	advcl	_	_
 12	berbentuk	berbentuk	VERB	VSA	Number=Sing|Voice=Act	11	xcomp	_	_
 13	atom	atom	NOUN	NSD	Number=Sing	12	obj	_	SpaceAfter=No
-14	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 125
 # text = Selama penelitian awal terhadap spektrum optik fotosfer, beberapa jalur penyerapan yang ditemukan tidak berkaitan dengan elemen kimia apa pun yang dikenal di Bumi saat itu.
 1	Selama	selama	ADP	R--	_	2	case	_	_
 2	penelitian	pentelitian	NOUN	NSD	Number=Sing	15	obl	_	_
@@ -2903,7 +2817,7 @@
 26	itu	itu	DET	B--	PronType=Dem	25	det	_	SpaceAfter=No
 27	.	.	PUNCT	Z--	_	15	punct	_	_
 
-# sent_id = 2
+# sent_id = 126
 # text = Pada tahun 1868, Norman Lockyer berhipotesis bahwa jalur-jalur penyerapan ini terbentuk oleh elemen baru yang ia sebut helium, diambil dari nama dewa matahari Yunani Helios.
 1	Pada	pada	ADP	R--	_	2	case	_	_
 2	tahun	tahun	NOUN	NSD	Number=Sing	7	obl	_	_
@@ -2934,7 +2848,7 @@
 27	Helios	helios	PROPN	X--	_	26	flat	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 127
 # text = Dua puluh lima tahun kemudian, helium berhasil diisolasi di Bumi.
 1	Dua	dua	NUM	CC-	NumType=Card	4	nummod	_	_
 2	puluh	puluh	NUM	CC-	NumType=Card	1	nummod	_	_
@@ -2947,23 +2861,15 @@
 9	diisolasi	diisolasi	VERB	VSP	Number=Sing|Voice=Pass	8	xcomp	_	_
 10	di	di	ADP	R--	_	11	case	_	_
 11	Bumi	bumi	NOUN	NSD	Number=Sing	9	obl	_	SpaceAfter=No
-12	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	Z--	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 128
 # text = Atmosfer
-1	Atmosfer	atmosfer	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
+1	Atmosfer	atmosfer	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 129
 # text = Bagian matahari di atas fotosfer disebut atmosfer matahari.
 1	Bagian	bagian	PROPN	NSD	Number=Sing	6	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -2975,7 +2881,7 @@
 8	matahari	matahari	NOUN	NSD	Number=Sing	7	compound	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 130
 # text = Atmosfer dapat diamati menggunakan teleskop yang beroperasi di seluruh spektrum elektromagnet, mulai dari radio hingga cahaya tampak sampai sinar gama, dan terdiri dari lima zona utama: suhu rendah, kromosfer, wilayah transisi, korona, dan heliosfer.
 1	Atmosfer	atmosfer	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	dapat	dapat	ADV	VSA	Number=Sing|Voice=Act	3	advmod	_	_
@@ -3020,7 +2926,7 @@
 41	heliosfer	heliosfer	NOUN	X--	_	30	conj	_	SpaceAfter=No
 42	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 131
 # text = Heliosfer, dianggap sebagai atmosfer terluar tipis matahari, membentang ke luar melewati orbit Pluto hingga heliopause yang membentuk batas dengan medium antarbintang.
 1	Heliosfer	heliosfer	PROPN	X--	_	3	nsubj:pass	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -3047,7 +2953,7 @@
 23	antarbintang	antarbintang	NOUN	NSD	Number=Sing	22	compound	_	SpaceAfter=No
 24	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 132
 # text = Kromosfer, wilayah transisi, dan korona jauh lebih panas daripada permukaan matahari.
 1	Kromosfer	kromosfer	PROPN	NSD	Number=Sing	10	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	3	punct	_	_
@@ -3064,7 +2970,7 @@
 13	matahari	matahari	NOUN	NSD	Number=Sing	12	compound	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	10	punct	_	_
 
-# sent_id = 5
+# sent_id = 133
 # text = Alasannya belum terbukti tepat; bukti yang ada memperkirakan bahwa gelombang Alfvén memiliki energi yang cukup untuk memanaskan korona.
 1	Alasannya	alasan	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	3	nsubj:pass	_	_
 2	belum	belum	PART	G--	_	3	advmod	_	_
@@ -3085,14 +2991,10 @@
 17	untuk	untuk	ADP	R--	_	18	case	_	_
 18	memanaskan	menpanaskan	VERB	VSA	Number=Sing|Voice=Act	14	acl	_	_
 19	korona	korona	NOUN	X--	_	18	obj	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 134
 # text = Lapisan terdingin matahari adalah wilayah suhu rendah yang terletak sekitar 7005500000000000000♠500 km di atas fotosfer dengan suhu kurang lebih 7003410000000000000♠4.100 K. Bagian matahari ini cukup dingin untuk memungkinkan keberadaan molekul sederhana seperti karbon monoksida dan air, yang dapat dideteksi melalui spektrum penyerapan mereka.
 1	Lapisan	lapisan	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	terdingin	terdingin	ADJ	ASS	Degree=Sup|Number=Sing	1	amod	_	_
@@ -3139,14 +3041,10 @@
 43	spektrum	spektrum	NOUN	NSD	Number=Sing	41	obl	_	_
 44	penyerapan	penserapan	NOUN	NSD	Number=Sing	43	compound	_	_
 45	mereka	mereka	PRON	PP3	Number=Plur|Person=3|PronType=Prs	43	det	_	SpaceAfter=No
-46	.	.	PUNCT	Z--	_	27	punct	_	SpacesAfter=\n
+46	.	.	PUNCT	Z--	_	27	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 135
 # text = Di atas lapisan suhu rendah, ada lapisan setebal 7006200000000000000♠2.000 km yang didominasi spektrum emisi dan jalur penyerapan.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	atas	atas	NOUN	ASP	Degree=Pos|Number=Sing	7	obl	_	_
@@ -3168,7 +3066,7 @@
 18	penyerapan	penserapan	NOUN	NSD	Number=Sing	17	compound	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 136
 # text = Lapisan ini bernama kromosfer yang diambil dari kata Yunani chroma, artinya warna, karena kromosfer terlihat seperti cahaya berwarna di awal dan akhir gerhana matahari total.
 1	Lapisan	lapisan	NOUN	NSD	Number=Sing	3	nsubj	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -3199,7 +3097,7 @@
 27	total	total	ADJ	NSD	Number=Sing	26	amod	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 137
 # text = Suhu kromosfer meningkat perlahan seiring ketinggiannya, berkisar sampai 7004200000000000000♠20.000 K di dekat puncaknya.
 1	Suhu	suhu	NOUN	NSD	Number=Sing	3	nsubj	_	_
 2	kromosfer	kromosfer	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3217,7 +3115,7 @@
 14	puncaknya	puncak	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 138
 # text = Di bagian teratas kromosfer, helium terionisasikan separuhnya.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	bagian	bagian	NOUN	NSD	Number=Sing	7	obl	_	_
@@ -3227,14 +3125,10 @@
 6	helium	helium	NOUN	F--	_	7	nsubj:pass	_	_
 7	terionisasikan	terionisasikan	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
 8	separuhnya	separuh	ADV	D--	_	7	amod	_	SpaceAfter=No
-9	.	.	PUNCT	Z--	_	7	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	Z--	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 139
 # text = Di atas kromosfer, di wilayah transisi tipis (sekitar 200 km), suhu naik cepat dari sekitar 20 ribu kelvin di atas kromosfer hingga mendekati suhu korona sebesar satu juta kelvin.
 1	Di	di	ADP	R--	_	2	case	_	_
 2	atas	atas	NOUN	ASP	Degree=Pos|Number=Sing	16	obl	_	_
@@ -3271,7 +3165,7 @@
 33	kelvin	kelvin	NOUN	F--	_	27	obl	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	16	punct	_	_
 
-# sent_id = 2
+# sent_id = 140
 # text = Peningkatan suhu ini dibantu oleh ionisasi penuh helium di wilayah transisi, yang mengurangi pendinginan radiatif plasma secara besar-besaran.
 1	Peningkatan	pentingkatan	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	suhu	suhu	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3294,7 +3188,7 @@
 19	besar-besaran	besar-bsaran	NOUN	NPD	Number=Plur	15	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 141
 # text = Wilayah transisi tidak terbentuk di ketinggian tetap.
 1	Wilayah	wilayah	PROPN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	transisi	transisi	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3305,7 +3199,7 @@
 7	tetap	tetap	ADJ	ASP	Degree=Pos|Number=Sing	6	amod	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 142
 # text = Wilayah ini membentuk semacam nimbus mengitari fitur-fitur kromosfer seperti spikula dan filamen dan memiliki gerakan tak teratur yang konstan.
 1	Wilayah	wilayah	NOUN	NSD	Number=Sing	3	nsubj	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -3328,7 +3222,7 @@
 19	konstan	konstan	ADJ	ASP	Degree=Pos|Number=Sing	15	amod	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 143
 # text = Wilayah transisi sulit diamati dari permukaan Bumi, tetapi dapat diamati dari luar angkasa menggunakan instrumen yang sensitif terhadap spektrum ultraviolet ekstrem.
 1	Wilayah	wilayah	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	transisi	transisi	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3352,14 +3246,10 @@
 20	spektrum	spektrum	NOUN	NSD	Number=Sing	16	nmod	_	_
 21	ultraviolet	ultraviolet	NOUN	X--	_	20	compound	_	_
 22	ekstrem	ekstrem	ADJ	X--	_	21	amod	_	SpaceAfter=No
-23	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 144
 # text = Korona adalah kepanjangan atmosfer terluar matahari yang volumenya lebih besar daripada matahari itu sendiri.
 1	Korona	korona	PROPN	X--	_	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -3377,7 +3267,7 @@
 14	sendiri	sendiri	ADJ	ASP	Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 145
 # text = Korona terus menyebar ke angkasa dan menjadi angin matahari yang mengisi seluruh tata surya.
 1	Korona	korona	PROPN	X--	_	3	nsubj	_	_
 2	terus	terus	ADV	D--	_	3	advmod	_	_
@@ -3395,7 +3285,7 @@
 14	surya	surya	NOUN	F--	_	13	compound	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 146
 # text = Korona rendah, dekat permukaan matahari, memiliki kepadatan partikel sekitar 1015–1016 m−3.
 1	Korona	korona	NOUN	X--	_	8	nsubj	_	_
 2	rendah	rendah	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpaceAfter=No
@@ -3412,7 +3302,7 @@
 13	m−3	m−3	NOUN	X--	_	9	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 4
+# sent_id = 147
 # text = Suhu rata-rata korona dan angin matahari sekitar 1–2 juta kelvin.
 1	Suhu	suhu	NOUN	NSD	Number=Sing	0	root	_	_
 2	rata-rata	rata	NOUN	NPD	Number=Plur	1	compound	_	_
@@ -3426,7 +3316,7 @@
 10	kelvin	kelvin	NOUN	F--	_	1	nmod	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 148
 # text = Akan tetapi, suhu di titik terpanasnya mencapai 8–20 juta kelvin.
 1	Akan	akan	CCONJ	M--	_	8	mark	_	_
 2	tetapi	tetapi	CCONJ	S--	_	1	fixed	_	SpaceAfter=No
@@ -3441,7 +3331,7 @@
 11	kelvin	kelvin	NOUN	F--	_	8	obj	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 149
 # text = Meski belum ada teori lengkap seputar suhu korona, setidaknya sebagian panasnya diketahui berasal dari rekoneksi magnetik.
 1	Meski	meski	SCONJ	S--	_	3	mark	_	_
 2	belum	belum	PART	G--	Polarity=Neg	3	advmod	_	_
@@ -3460,14 +3350,10 @@
 15	dari	dari	ADP	R--	_	16	case	_	_
 16	rekoneksi	rekoneksi	NOUN	NSD	Number=Sing	14	obl	_	_
 17	magnetik	magnetik	ADJ	X--	_	16	amod	_	SpaceAfter=No
-18	.	.	PUNCT	Z--	_	13	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	Z--	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 150
 # text = Heliosfer, yaitu volume di sekitar matahari yang diisi plasma angin matahari, merentang dari kurang lebih 20 radius matahari (0,1 au) sampai batas terluar tata surya.
 1	Heliosfer	heliosfer	PROPN	X--	_	14	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	1	punct	_	_
@@ -3500,7 +3386,7 @@
 29	surya	surya	NOUN	F--	_	28	compound	_	SpaceAfter=No
 30	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 2
+# sent_id = 151
 # text = Batas terdalamnya ditetapkan sebagai lapisan tempat arus angin matahari menjadi superalfvénik—artinya arus angin lebih cepat daripada kecepatan gelombang Alfvén.
 1	Batas	batas	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	terdalamnya	terdalam	NOUN	ASS+PS3	Degree=Sup|Number=Sing|Number[psor]=Sing|Person[psor]=3	1	compound	_	_
@@ -3523,7 +3409,7 @@
 19	Alfvén	alfvén	PROPN	X--	_	18	flat	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 152
 # text = Turbulensi dan dorongan dinamis di heliosfer tidak dapat memengaruhi bentuk korona matahari di dalamnya, karena informasi hanya dapat bergerak pada kecepatan gelombang Alfvén.
 1	Turbulensi	turbulensi	NOUN	X--	_	9	nsubj	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
@@ -3551,7 +3437,7 @@
 24	Alfvén	alfvén	PROPN	X--	_	23	flat	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 4
+# sent_id = 153
 # text = Angin matahari terus bergerak ke luar melintasi heliosfer, membentuk medan magnet matahari seperti spiral, sampai menyentuh heliopause lebih dari 50 au dari matahari.
 1	Angin	angin	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3580,7 +3466,7 @@
 25	matahari	matahari	NOUN	NSD	Number=Sing	23	nmod	_	SpaceAfter=No
 26	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 154
 # text = Pada Desember 2004, wahana Voyager 1 melintasi fron kejut yang diduga sebagai bagian dari heliosfer.
 1	Pada	pada	ADP	R--	_	2	case	_	_
 2	Desember	desember	PROPN	NSD	Number=Sing	8	obl	_	_
@@ -3600,7 +3486,7 @@
 16	heliosfer	heliosfer	NOUN	X--	_	14	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 155
 # text = Kedua wahana Voyager telah mencatat konsentrasi partikel energi yang tinggi saat mendekati batas tersebut.
 1	Kedua	kedua	NUM	CO-	NumType=Card	2	nummod	_	_
 2	wahana	wahana	NOUN	NSD	Number=Sing	5	nsubj	_	_
@@ -3616,24 +3502,16 @@
 12	mendekati	mendekati	VERB	VSA	Number=Sing|Voice=Act	5	advcl	_	_
 13	batas	batas	NOUN	NSD	Number=Sing	12	obj	_	_
 14	tersebut	tersebut	DET	B--	PronType=Dem	13	det	_	SpaceAfter=No
-15	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 156
 # text = Medan magnet
 1	Medan	medan	NOUN	NSD	Number=Sing	0	root	_	_
-2	magnet	magnet	NOUN	F--	_	1	compound	_	SpaceAfter=No
+2	magnet	magnet	NOUN	F--	_	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 157
 # text = Matahari adalah bintang bermagnet aktif.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -3642,7 +3520,7 @@
 5	aktif	aktif	ADJ	ASP	Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
 6	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 158
 # text = Matahari memiliki medan magnet kuat yang berubah-ubah tiap tahun dan berbalik arah setiap sebelas tahun di sekitar maksimum matahari.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj	_	_
 2	memiliki	menmiliki	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -3665,7 +3543,7 @@
 19	matahari	matahari	NOUN	NSD	Number=Sing	18	compound	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 159
 # text = Medan magnet matahari menjadi penyebab sejumlah dampak yang secara kolektif disebut aktivitas matahari, termasuk titik matahari di permukaan matahari, semburan matahari, dan variasi angin matahari yang mengangkut material melintasi tata surya.
 1	Medan	medan	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	magnet	magnet	NOUN	F--	_	1	compound	_	_
@@ -3703,7 +3581,7 @@
 34	surya	surya	NOUN	F--	_	33	compound	_	SpaceAfter=No
 35	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 160
 # text = Dampak aktivitas matahari terhadap Bumi meliputi aurora di lintang tengah sampai tinggi serta gangguan komunikasi radio dan tenaga listrik.
 1	Dampak	dampak	PROPN	NSD	Number=Sing	6	nsubj	_	_
 2	aktivitas	aktivitas	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3726,7 +3604,7 @@
 19	listrik	listrik	NOUN	NSD	Number=Sing	18	compound	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 161
 # text = Aktivitas matahari diduga memainkan peran besar dalam pembentukan dan evolusi tata surya.
 1	Aktivitas	aktivitas	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3742,7 +3620,7 @@
 12	surya	surya	NOUN	F--	_	11	compound	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 162
 # text = Aktivitas matahari mengubah struktur atmosfer terluar Bumi.
 1	Aktivitas	aktivitas	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3751,14 +3629,10 @@
 5	atmosfer	atmosfer	NOUN	NSD	Number=Sing	4	compound	_	_
 6	terluar	terluar	ADJ	ASS	Degree=Sup|Number=Sing	5	amod	_	_
 7	Bumi	bumi	NOUN	NSD	Number=Sing	5	compound	_	SpaceAfter=No
-8	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+8	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 163
 # text = Semua materi dalam matahari berbentuk gas dan bersuhu tinggi yang disebut plasma.
 1	Semua	semua	DET	B--	PronType=Tot	2	det	_	_
 2	materi	materi	NOUN	NSD	Number=Sing	5	nsubj	_	_
@@ -3774,7 +3648,7 @@
 12	plasma	plasma	NOUN	X--	_	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 164
 # text = Ini membuat matahari bisa berotasi lebih cepat di khatulistiwa (sekitar 25 hari) daripada lintang yang lebih tinggi (sekitar 35 hari di dekat kutubnya).
 1	Ini	ini	DET	B--	PronType=Dem	2	nsubj	_	_
 2	membuat	menbuat	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -3805,7 +3679,7 @@
 27	)	)	PUNCT	Z--	_	23	punct	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 165
 # text = Rotasi diferensial lintang matahari menyebabkan jalur medan magnetnya saling terikat seiring waktu, menghasilkan lingkaran medan magnet dari permukaan matahari dan mencetus pembentukan titik matahari dan prominensa matahari (baca rekoneksi magnetik).
 1	Rotasi	rotasi	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	diferensial	diferensial	ADJ	X--	_	1	amod	_	_
@@ -3842,7 +3716,7 @@
 33	)	)	PUNCT	Z--	_	30	punct	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 166
 # text = Aksi ikat-ikatan ini menciptakan dinamo matahari dan siklus aktivitas magnetik 11 tahun; medan magnet matahari berbalik arah setiap 11 tahun.
 1	Aksi	aksi	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	ikat-ikatan	ika	NOUN	NPD	Number=Plur	1	compound	_	_
@@ -3865,14 +3739,10 @@
 19	setiap	setiap	DET	B--	PronType=Tot	21	det	_	_
 20	11	11	NUM	CC-	NumType=Card	21	nummod	_	_
 21	tahun	tahun	NOUN	NSD	Number=Sing	18	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 167
 # text = Medan magnet matahari membentang jauh melewati matahari itu sendiri.
 1	Medan	medan	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	magnet	magnet	NOUN	F--	_	1	compound	_	_
@@ -3885,7 +3755,7 @@
 9	sendiri	sendiri	ADJ	ASP	Degree=Pos|Number=Sing	7	amod	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 168
 # text = Plasma angin matahari yang termagnetkan membawa medan magnet matahari ke luar angkasa dan membentuk medan magnet antarplanet.
 1	Plasma	plasma	NOUN	NSD	Number=Sing	6	nsubj	_	_
 2	angin	angin	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -3906,7 +3776,7 @@
 17	antarplanet	antarplanet	NOUN	NSD	Number=Sing	16	compound	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 169
 # text = Karena plasma hanya mampu bergerak di jalur medan magnet, medan magnet antarplanet awalnya tertarik secara radial menjauhi matahari.
 1	Karena	karena	SCONJ	S--	_	5	mark	_	_
 2	plasma	plasma	NOUN	NSD	Number=Sing	5	nsubj	_	_
@@ -3929,7 +3799,7 @@
 19	matahari	matahari	NOUN	NSD	Number=Sing	18	obj	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	15	punct	_	_
 
-# sent_id = 4
+# sent_id = 170
 # text = Karena medan di atas dan bawah khatulistiwa matahari memiliki polaritas berbeda yang mengarah ke dan menjauhi matahari, ada satu lembar arus tipis di bidang khatulistiwa matahari yang disebut lembar arus heliosfer.
 1	Karena	karena	SCONJ	S--	_	9	mark	_	_
 2	medan	medan	NOUN	NSD	Number=Sing	9	nsubj	_	_
@@ -3965,7 +3835,7 @@
 32	heliosfer	heliosfer	NOUN	X--	_	31	compound	_	SpaceAfter=No
 33	.	.	PUNCT	Z--	_	19	punct	_	_
 
-# sent_id = 5
+# sent_id = 171
 # text = Pada jarak yang lebih jauh, rotasi matahari memelintir medan magnet dan lembar arus menjadi struktur mirip spiral Archimedes yang disebut spiral Parker.
 1	Pada	pada	ADP	R--	_	2	case	_	_
 2	jarak	jarak	NOUN	ASP	Degree=Pos|Number=Sing	9	obl	_	_
@@ -3992,7 +3862,7 @@
 23	Parker	parker	PROPN	X--	_	22	flat	_	SpaceAfter=No
 24	.	.	PUNCT	Z--	_	9	punct	_	_
 
-# sent_id = 6
+# sent_id = 172
 # text = Medan magnet antarplanet lebih kuat daripada komponen dipol medan magnet matahari.
 1	Medan	medan	NOUN	NSD	Number=Sing	0	root	_	_
 2	magnet	magnet	NOUN	F--	_	1	compound	_	_
@@ -4007,7 +3877,7 @@
 11	matahari	matahari	NOUN	NSD	Number=Sing	10	compound	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 173
 # text = Medan magnet dipol matahari sebesar 50–400 μT (di fotosfer) berkurang seiring jaraknya menjadi sekitar 0,1 nT pada jarak Bumi. Meski begitu, menurut pengamatan wahana antariksa, bidang antarplanet di lokasi Bumi sekitar 5 nT, kurang lebih seratus kali lebih besar.
 1	Medan	medan	NOUN	NSD	Number=Sing	12	nsubj	_	_
 2	magnet	magnet	NOUN	F--	_	1	compound	_	_
@@ -4056,7 +3926,7 @@
 45	besar	besar	ADJ	ASP	Degree=Pos|Number=Sing	43	amod	_	SpaceAfter=No
 46	.	.	PUNCT	Z--	_	31	punct	_	_
 
-# sent_id = 8
+# sent_id = 174
 # text = Perbedaan ini disebabkan oleh medan magnet yang diciptakan oleh arus listrik di plasma yang menyelubungi matahari.
 1	Perbedaan	perbedaan	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -4074,24 +3944,16 @@
 14	yang	yang	PRON	S--	PronType=Rel	15	nsubj	_	_
 15	menyelubungi	menselubungi	VERB	VSA	Number=Sing|Voice=Act	13	acl	_	_
 16	matahari	matahari	NOUN	NSD	Number=Sing	15	obj	_	SpaceAfter=No
-17	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+17	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 175
 # text = Pergerakan matahari
 1	Pergerakan	pergerakan	NOUN	NSD	Number=Sing	0	root	_	_
-2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 176
 # text = Matahari mempunyai dua macam pergerakan, yaitu sebagai berikut:
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj	_	_
 2	mempunyai	menpunyai	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -4102,27 +3964,19 @@
 7	yaitu	yaitu	ADV	O--	_	9	advmod	_	_
 8	sebagai	sebagai	ADP	R--	_	9	case	_	_
 9	berikut	berikut	VERB	VSA	Number=Sing|Voice=Act	2	obl	_	SpaceAfter=No
-10	:	:	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+10	:	:	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 177
 # text = Jarak matahari ke bintang terdekat
 1	Jarak	jarak	NOUN	NSD	Number=Sing	0	root	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
 3	ke	ke	ADP	R--	_	4	case	_	_
 4	bintang	bintang	NOUN	NSD	Number=Sing	1	nmod	_	_
-5	terdekat	terdekat	ADJ	ASS	Degree=Sup|Number=Sing	4	amod	_	SpaceAfter=No
+5	terdekat	terdekat	ADJ	ASS	Degree=Sup|Number=Sing	4	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 178
 # text = Sistem bintang yang terdekat dengan matahari adalah Alpha Centauri.
 1	Sistem	sistem	PROPN	NSD	Number=Sing	8	nsubj	_	_
 2	bintang	bintang	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4135,7 +3989,7 @@
 9	Centauri	centauri	PROPN	X--	_	8	flat	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 179
 # text = Bintang yang dalam kompleks tersebut yang memilkiki posisi terdekat dengan matahari adalah Proxima Centauri, sebuah bintang berwarna merah redup yang terdapat dalam rasi bintang Sentaurus.
 1	Bintang	bintang	NOUN	NSD	Number=Sing	13	nsubj	_	_
 2	yang	yang	PRON	S--	PronType=Rel	7	nsubj	_	_
@@ -4165,7 +4019,7 @@
 26	Sentaurus	sentaurus	PROPN	X--	_	25	flat	_	SpaceAfter=No
 27	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 180
 # text = Jarak matahari ke Proxima Centauri adalah 4,3 tahun cahaya (39.900 juta km atau 270 ribu unit astronomi), kurang lebih 270 ribu kali jarak matahari ke Bumi. Para ahli astronomi mengetahui bahwa benda-benda angkasa senantiasa bergerak dalam orbit masing-masing.
 1	Jarak	jarak	NOUN	NSD	Number=Sing	8	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4211,7 +4065,7 @@
 42	masing-masing	masing-	NOUN	NPD	_	41	compound	_	SpaceAfter=No
 43	.	.	PUNCT	Z--	_	34	punct	_	_
 
-# sent_id = 4
+# sent_id = 181
 # text = Oleh karena itu, perhitungan jarak dilakukan berdasarkan pada perubahan posisi suatu bintang dalam kurun waktu tertentu dengan berpatokan pada posisinya terhadap bintang-bintang sekitar.
 1	Oleh	oleh	ADP	R--	_	7	case	_	_
 2	karena	karena	SCONJ	S--	_	7	dep	_	_
@@ -4239,7 +4093,7 @@
 24	sekitar	sekitar	ADJ	D--	_	23	amod	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 5
+# sent_id = 182
 # text = Metode pengukuran ini disebut paralaks (parallax).
 1	Metode	metode	PROPN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	pengukuran	penukuran	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4249,25 +4103,17 @@
 6	(	(	PUNCT	Z--	_	7	punct	_	SpaceAfter=No
 7	parallax	parallax	NOUN	X--	_	5	appos	_	SpaceAfter=No
 8	)	)	PUNCT	Z--	_	7	punct	_	SpaceAfter=No
-9	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 183
 # text = Ciri khas matahari
 1	Ciri	ciri	NOUN	NSD	Number=Sing	0	root	_	_
 2	khas	khas	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	_
-3	matahari	matahari	NOUN	NSD	Number=Sing	1	det	_	SpaceAfter=No
+3	matahari	matahari	NOUN	NSD	Number=Sing	1	det	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 184
 # text = Berikut ini adalah beberapa ciri khas yang dimiliki oleh matahari.
 1	Berikut	berikut	NOUN	VSA	Number=Sing|Voice=Act	5	nsubj	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -4279,28 +4125,20 @@
 8	dimiliki	dimiliki	VERB	VSP	Number=Sing|Voice=Pass	5	acl	_	_
 9	oleh	oleh	ADP	R--	_	10	case	_	_
 10	matahari	matahari	NOUN	NSD	Number=Sing	8	obl	_	SpaceAfter=No
-11	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 185
 # text = Prominensa (lidah api matahari)
 1	Prominensa	prominensa	PROPN	X--	_	0	root	_	_
 2	(	(	PUNCT	Z--	_	3	punct	_	SpaceAfter=No
 3	lidah	lidah	NOUN	NSD	Number=Sing	1	appos	_	_
 4	api	api	NOUN	NSD	Number=Sing	3	compound	_	_
 5	matahari	matahari	NOUN	NSD	Number=Sing	4	compound	_	SpaceAfter=No
-6	)	)	PUNCT	Z--	_	3	punct	_	SpaceAfter=No
+6	)	)	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 186
 # text = Prominensa adalah salah satu ciri khas matahari, berupa bagian matahari menyerupai lidah api yang sangat besar dan terang yang mencuat keluar dari bagian permukaan serta sering kali berbentuk loop (putaran).
 1	Prominensa	prominensa	PROPN	X--	_	5	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	5	cop	_	_
@@ -4337,7 +4175,7 @@
 33	)	)	PUNCT	Z--	_	32	punct	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 187
 # text = Prominensa disebut juga sebagai filamen matahari karena, meskipun julurannya sangat terang bila dilihat di angkasa yang gelap, prominensa tidak lebih terang daripada keseluruhan matahari itu sendiri.
 1	Prominensa	prominensa	PROPN	X--	_	2	nsubj:pass	_	_
 2	disebut	disebut	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -4369,7 +4207,7 @@
 28	sendiri	sendiri	ADJ	ASP	Degree=Pos|Number=Sing	26	amod	_	SpaceAfter=No
 29	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 188
 # text = Prominensa hanya dapat dilihat dari Bumi dengan bantuan teleskop dan filter.
 1	Prominensa	prominensa	PROPN	X--	_	4	nsubj:pass	_	_
 2	hanya	hanya	ADV	D--	_	4	advmod	_	_
@@ -4384,7 +4222,7 @@
 11	filter	filter	NOUN	NSD	Number=Sing	9	conj	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 4
+# sent_id = 189
 # text = Prominensa terbesar yang pernah ditangkap oleh SOHO (Solar and Heliospheric Observatory) diperkirakan sepanjang 350 ribu km.
 1	Prominensa	prominensa	NOUN	X--	_	14	nsubj:pass	_	_
 2	terbesar	terbesar	ADJ	ASS	Degree=Sup|Number=Sing	1	amod	_	_
@@ -4404,14 +4242,10 @@
 16	350	350	NUM	CC-	NumType=Card	17	nummod	_	_
 17	ribu	ribu	NUM	CC-	NumType=Card	18	compound	_	_
 18	km	km	SYM	F--	_	14	obl	_	SpaceAfter=No
-19	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 190
 # text = Sama seperti korona, prominensa terbentuk dari plasma, tetapi memiliki suhu yang lebih dingin.
 1	Sama	sama	ADJ	ASP	Degree=Pos|Number=Sing	6	amod	_	_
 2	seperti	seperti	ADP	R--	_	3	case	_	_
@@ -4430,7 +4264,7 @@
 15	dingin	dingin	ADJ	ASP	Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 191
 # text = Prominensa berisi materi dengan massa mencapai 100 miliar kg.
 1	Prominensa	prominensa	PROPN	X--	_	2	nsubj	_	_
 2	berisi	berisi	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -4443,7 +4277,7 @@
 9	kg	kg	NOUN	F--	_	6	obj	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 192
 # text = Prominensa terjadi di lapisan fotosfer matahari dan bergerak ke luar menuju korona matahari.
 1	Prominensa	prominensa	PROPN	X--	_	2	nsubj:pass	_	_
 2	terjadi	terjadi	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -4460,7 +4294,7 @@
 13	matahari	matahari	NOUN	NSD	Number=Sing	12	compound	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 193
 # text = Plasma prominensa bergerak di sepanjang medan magnet matahari.
 1	Plasma	plasma	PROPN	F--	_	3	nsubj	_	_
 2	prominensa	prominensa	NOUN	X--	_	1	compound	_	_
@@ -4472,7 +4306,7 @@
 8	matahari	matahari	NOUN	NSD	Number=Sing	7	compound	_	SpaceAfter=No
 9	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 194
 # text = Erupsi dapat terjadi ketika struktur prominesa menjadi tidak stabil sehingga akan pecah dan mengeluarkan plasmanya.
 1	Erupsi	erupsi	PROPN	X--	_	3	nsubj:pass	_	_
 2	dapat	dapat	ADV	VSA	Number=Sing|Voice=Act	3	advmod	_	_
@@ -4491,7 +4325,7 @@
 15	plasmanya	plasma	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	14	obj	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 195
 # text = Ketika terjadi erupsi, material yang dikeluarkan menjadi bagian dari struktur magnetik yang sangat besar disebut semburan massa korona (coronnal mass ejection/CME).
 1	Ketika	ketika	SCONJ	S--	_	2	mark	_	_
 2	terjadi	terjadi	VERB	VSP	Number=Sing|Voice=Pass	16	advcl	_	_
@@ -4519,7 +4353,7 @@
 24	)	)	PUNCT	Z--	_	21	punct	_	SpaceAfter=No
 25	.	.	PUNCT	Z--	_	16	punct	_	_
 
-# sent_id = 7
+# sent_id = 196
 # text = Pergerakan semburan korona tersebut terjadi pada kecepatan yang sangat tinggi, yaitu antara 20 ribu m/s hingga 3,2 juta km/s.
 1	Pergerakan	pergerakan	NOUN	NSD	Number=Sing	5	nsubj:pass	_	_
 2	semburan	semburan	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4543,7 +4377,7 @@
 20	km/s	km/s	NOUN	F--	_	16	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 8
+# sent_id = 197
 # text = Pergerakan tersebut juga menyebabkan peningkatan suhu hingga puluhan juta derajat dalam waktu singkat.
 1	Pergerakan	pergerakan	NOUN	NSD	Number=Sing	4	nsubj	_	_
 2	tersebut	tersebut	DET	B--	PronType=Dem	1	det	_	_
@@ -4560,7 +4394,7 @@
 13	singkat	singkat	ADJ	ASP	Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 9
+# sent_id = 198
 # text = Bila erupsi semburan massa korona mengarah ke Bumi, akan terjadi interaksi dengan medan magnet Bumi dan mengakibatkan terjadinya badai geomagnetik yang berpotensi mengganggu jaringan komunikasi dan listrik.
 1	Bila	bila	SCONJ	S--	_	6	mark	_	_
 2	erupsi	erupsi	NOUN	X--	_	6	nsubj	_	_
@@ -4590,14 +4424,10 @@
 26	komunikasi	komunikasi	NOUN	NSD	Number=Sing	25	compound	_	_
 27	dan	dan	CCONJ	H--	_	28	cc	_	_
 28	listrik	listrik	NOUN	NSD	Number=Sing	26	conj	_	SpaceAfter=No
-29	.	.	PUNCT	Z--	_	11	punct	_	SpacesAfter=\n
+29	.	.	PUNCT	Z--	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 199
 # text = Suatu prominensa yang stabil dapat bertahan di korona hingga berbulan-bulan lamanya dan ukurannya terus membesar setiap hari.
 1	Suatu	suatu	DET	B--	PronType=Ind	2	det	_	_
 2	prominensa	prominensa	NOUN	NSD	Number=Sing	6	nsubj	_	_
@@ -4618,7 +4448,7 @@
 17	hari	hari	NOUN	NSD	Number=Sing	15	obj	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 200
 # text = Para ahli masih terus meneliti bagaimana dan mengapa prominensa dapat terjadi.
 1	Para	para	DET	B--	PronType=Dem	2	det	_	_
 2	ahli	ahli	NOUN	NSD	Number=Sing	5	nsubj	_	_
@@ -4631,24 +4461,16 @@
 9	prominensa	prominensa	NOUN	NSD	Number=Sing	11	nsubj:pass	_	_
 10	dapat	dapat	ADV	VSA	Number=Sing|Voice=Act	11	advmod	_	_
 11	terjadi	terjadi	VERB	VSP	Number=Sing|Voice=Pass	8	acl	_	SpaceAfter=No
-12	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 201
 # text = Bintik matahari
 1	Bintik	bintik	PROPN	NSD	Number=Sing	0	root	_	_
-2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 202
 # text = Bintik matahari adalaah granula-granula cembung kecil yang ditemukan di bagian fotosfer matahari dengan jumlah yang tak terhitung.
 1	Bintik	bintik	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4669,7 +4491,7 @@
 17	terhitung	terhitung	VERB	VSP	Number=Sing|Voice=Pass	14	acl	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 203
 # text = Bintik matahari tercipta saat garis medan magnet matahari menembus bagian fotosfer.
 1	Bintik	bintik	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4684,7 +4506,7 @@
 11	fotosfer	fotosfer	NOUN	X--	_	10	compound	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 204
 # text = Ukuran bintik matahari dapat lebih besar daripada Bumi. Bintik matahari memiliki daerah yang gelap bernama umbra, yang dikelilingi oleh daerah yang lebih terang disebut penumbra.
 1	Ukuran	ukuran	NOUN	NSD	Number=Sing	0	root	_	_
 2	bintik	bintik	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4715,7 +4537,7 @@
 27	penumbra	pentumbra	NOUN	NSD	Number=Sing	26	obj	_	SpaceAfter=No
 28	.	.	PUNCT	Z--	_	12	punct	_	_
 
-# sent_id = 4
+# sent_id = 205
 # text = Warna bintik matahari terlihat lebih gelap karena suhunya yang jauh lebih rendah dari fotosfer.
 1	Warna	warna	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	bintik	bintik	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4733,7 +4555,7 @@
 14	fotosfer	fotosfer	NOUN	X--	_	12	nmod	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 206
 # text = Suhu di daerah umbra adalah sekitar 2.200 °C sedangkan di daerah penumbra adalah 3.500 °C.
 1	Suhu	suhu	PROPN	NSD	Number=Sing	8	nsubj	_	_
 2	di	di	ADP	R--	_	3	case	_	_
@@ -4752,7 +4574,7 @@
 15	°C	°c	NOUN	F--	_	8	advcl	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 6
+# sent_id = 207
 # text = Karena emisi cahaya juga dipengaruhi oleh suhu maka bagian bintik matahari umbra hanya mengemisikan 1/6 kali cahaya bila dibandingkan permukaan matahari pada ukuran yang sama.
 1	Karena	karena	SCONJ	S--	_	5	mark	_	_
 2	emisi	emisi	NOUN	NSD	Number=Sing	5	nsubj:pass	_	_
@@ -4779,24 +4601,16 @@
 23	ukuran	ukuran	NOUN	NSD	Number=Sing	19	obl	_	_
 24	yang	yang	PRON	S--	PronType=Rel	25	nsubj	_	_
 25	sama	sama	ADJ	ASP	Degree=Pos|Number=Sing	23	amod	_	SpaceAfter=No
-26	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	Z--	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 208
 # text = Angin matahari
 1	Angin	angin	NOUN	NSD	Number=Sing	0	root	_	_
-2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 209
 # text = Angin matahari terbentuk dari aliran konstan dari partikel-partikel yang dikeluarkan oleh bagian atas atmosfer matahari yang bergerak ke seluruh tata surya.
 1	Angin	angin	PROPN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4821,7 +4635,7 @@
 21	surya	surya	NOUN	F--	_	20	compound	_	SpaceAfter=No
 22	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 210
 # text = Partikel-partikel tersebut memiliki energi yang tinggi.
 1	Partikel-partikel	partikel	NOUN	NPD	Number=Plur	3	nsubj	_	_
 2	tersebut	tersebut	DET	B--	PronType=Dem	1	det	_	_
@@ -4831,7 +4645,7 @@
 6	tinggi	tinggi	ADJ	ASP	Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
 7	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 211
 # text = Namun, proses pergerakan ke luar medan gravitasi matahari pada kecepatan yang begitu tinggi belum dimengerti secara sempurna.
 1	Namun	namun	SCONJ	S--	_	16	mark	_	SpaceAfter=No
 2	,	,	PUNCT	Z--	_	16	punct	_	_
@@ -4853,7 +4667,7 @@
 18	sempurna	sempurna	ADJ	ASP	Degree=Pos|Number=Sing	16	xcomp	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	16	punct	_	_
 
-# sent_id = 4
+# sent_id = 212
 # text = Kecepatan angin surya terbagi dua, yaitu angin cepat yang mencapai 400 km/s dan angin cepat yang mencapai lebih dari 500 km/s.
 1	Kecepatan	kecepatan	NOUN	NSD	Number=Sing	4	nsubj	_	_
 2	angin	angin	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4879,7 +4693,7 @@
 22	km/s	km/s	NOUN	F--	_	18	obl	_	SpaceAfter=No
 23	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 213
 # text = Kecepatan ini juga bertambah secara eksponensial seiring jaraknya dari matahari.
 1	Kecepatan	kecepatan	NOUN	NSD	Number=Sing	4	nsubj	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -4893,7 +4707,7 @@
 10	matahari	matahari	NOUN	NSD	Number=Sing	8	nmod	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 214
 # text = Angin matahari yang umum terjadi memiliki kecepatan 750 km/s dan berasal dari lubang korona di atmosfer matahari.
 1	Angin	angin	PROPN	NSD	Number=Sing	6	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4912,14 +4726,10 @@
 15	di	di	ADP	R--	_	16	case	_	_
 16	atmosfer	atmosfer	NOUN	NSD	Number=Sing	13	nmod	_	_
 17	matahari	matahari	NOUN	NSD	Number=Sing	16	compound	_	SpaceAfter=No
-18	.	.	PUNCT	Z--	_	6	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	Z--	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 215
 # text = Beberapa bukti keberadaan angin surya yang dapat dirasakan atau dilihat dari Bumi adalah badai geomagnetik berenergi tinggi yang merusak satelit dan sistem listrik, aurora di Kutub Utara atau Kutub Selatan, dan partikel menyerupai ekor panjang pada komet yang selalu menjauhi matahari akibat hembusan angin surya.
 1	Beberapa	beberapa	DET	B--	NumType=Card|PronType=Ind	2	det	_	_
 2	bukti	bukti	NOUN	NSD	Number=Sing	14	nsubj	_	_
@@ -4970,7 +4780,7 @@
 47	surya	surya	NOUN	F--	_	46	compound	_	SpaceAfter=No
 48	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 2
+# sent_id = 216
 # text = Angin matahari dapat membahayakan kehidupan di Bumi bila tidak terdapat medan magnet Bumi yang melindungi dari radiasi.
 1	Angin	angin	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -4991,7 +4801,7 @@
 17	radiasi	radiasi	NOUN	NSD	Number=Sing	15	obl	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 217
 # text = Pada kenyataannya, ukuran dan bentuk medan magnet Bumi juga ditentukan oleh kekuatan dan kecepatan angin surya yang melintas.
 1	Pada	pada	ADP	R--	_	2	case	_	_
 2	kenyataannya	kenyataan	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	11	obl	_	SpaceAfter=No
@@ -5012,24 +4822,16 @@
 17	surya	surya	NOUN	F--	_	16	compound	_	_
 18	yang	yang	PRON	S--	PronType=Rel	19	nsubj	_	_
 19	melintas	menlintas	VERB	VSA	Number=Sing|Voice=Act	13	acl	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	11	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 218
 # text = Badai matahari
 1	Badai	badai	NOUN	NSD	Number=Sing	0	root	_	_
-2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 219
 # text = Badai matahari terjadi ketika ada pelepasan seketika energi magnetik yang terbentuk di atmosfer matahari.
 1	Badai	badai	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5047,7 +4849,7 @@
 14	matahari	matahari	NOUN	NSD	Number=Sing	13	compound	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 220
 # text = Plasma matahari yang meningkat suhunya hingga jutaan Kelvin beserta partikel-partikel lainnya berakselerasi mendekati kecepatan cahaya.
 1	Plasma	plasma	NOUN	NSD	Number=Sing	12	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5066,7 +4868,7 @@
 15	cahaya	cahaya	NOUN	NSD	Number=Sing	14	compound	_	SpaceAfter=No
 16	.	.	PUNCT	Z--	_	12	punct	_	_
 
-# sent_id = 3
+# sent_id = 221
 # text = Total energi yang dilepaskan setara dengan jutaan bom hidrogen berukuran 100 megaton.
 1	Total	total	NOUN	NSD	Number=Sing	10	nsubj	_	_
 2	energi	energi	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5082,7 +4884,7 @@
 12	megaton	megaton	NOUN	X--	_	10	obj	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	10	punct	_	_
 
-# sent_id = 4
+# sent_id = 222
 # text = Jumlah dan kekuatan badai matahari bervariasi.
 1	Jumlah	jumlah	NOUN	NSD	Number=Sing	6	nsubj	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
@@ -5092,7 +4894,7 @@
 6	bervariasi	bervariasi	VERB	VSA	Number=Sing|Voice=Act	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 223
 # text = Ketika matahari aktif dan memiliki banyak bintik, badai matahari lebih sering terjadi.
 1	Ketika	ketika	SCONJ	S--	_	3	mark	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	3	nsubj	_	_
@@ -5109,7 +4911,7 @@
 13	terjadi	terjadi	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 6
+# sent_id = 224
 # text = Badai matahari sering kali terjadi bersamaan dengan luapan massa korona.
 1	Badai	badai	PROPN	NSD	Number=Sing	5	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5123,7 +4925,7 @@
 10	korona	korona	NOUN	X--	_	9	compound	_	SpaceAfter=No
 11	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 225
 # text = Badai matahari memberikan risiko radiasi yang sangat besar terhadap satelit, pesawat ulang alik, astronaut, dan terutama sistem telekomunikasi Bumi. Badai matahari yang pertama kali tercatat dalam pustaka astronomi adalah pada tanggal 1 September 1859.
 1	Badai	badai	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5165,7 +4967,7 @@
 38	1859	1859	NUM	CC-	NumType=Card	37	nummod	_	SpaceAfter=No
 39	.	.	PUNCT	Z--	_	35	punct	_	_
 
-# sent_id = 8
+# sent_id = 226
 # text = Dua peneliti, Richard C. Carrington dan Richard Hodgson yang sedang mengobservasi bintik matahari melalui teleskop di tempat terpisah, mengamati badai matahari yang terlihat sebagai cahaya putih besar di sekeliling matahari.
 1	Dua	dua	NUM	CC-	NumType=Card	2	nummod	_	_
 2	peneliti	penteliti	NOUN	NSD	Number=Sing	22	nsubj	_	SpaceAfter=No
@@ -5202,7 +5004,7 @@
 33	matahari	matahari	NOUN	NSD	Number=Sing	32	compound	_	SpaceAfter=No
 34	.	.	PUNCT	Z--	_	22	punct	_	_
 
-# sent_id = 9
+# sent_id = 227
 # text = Kejadian ini disebut Carrington Event dan menyebabkan lumpuhnya jaringan telegraf transatlantik antara Amerika dan Eropa.
 1	Kejadian	kejadian	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	ini	ini	DET	B--	PronType=Dem	1	det	_	_
@@ -5219,24 +5021,16 @@
 13	Amerika	amerika	PROPN	NSD	Number=Sing	8	nmod	_	_
 14	dan	dan	CCONJ	H--	_	15	cc	_	_
 15	Eropa	eropa	PROPN	NSD	Number=Sing	13	conj	_	SpaceAfter=No
-16	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	Z--	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 228
 # text = Eksplorasi matahari
 1	Eksplorasi	eksplorasi	NOUN	NSD	Number=Sing	0	root	_	_
-2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 229
 # text = Wahana antariksa yang pertama kali berhasil masuk ke orbit matahari adalah Pioneer 4.
 1	Wahana	wahana	NOUN	NSD	Number=Sing	12	nsubj	_	_
 2	antariksa	antariksa	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5253,7 +5047,7 @@
 13	4	4	NUM	CC-	NumType=Card	12	nummod	_	SpaceAfter=No
 14	.	.	PUNCT	Z--	_	12	punct	_	_
 
-# sent_id = 2
+# sent_id = 230
 # text = Pioneer 4, yang diluncurkan tanggal 3 Maret 1959 oleh Amerika Serikat, menjadi pionir dalam sejarah eksplorasi matahari.
 1	Pioneer	pioneer	PROPN	F--	_	14	nsubj	_	_
 2	4	4	NUM	CC-	NumType=Card	1	nummod	_	SpaceAfter=No
@@ -5276,7 +5070,7 @@
 19	matahari	matahari	NOUN	NSD	Number=Sing	18	compound	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 231
 # text = Keberhasilan tersebut diikuti oleh peluncuran Pioneer 5–Pioneer 9 pada tahun 1959–1968 yang memang bertujuan untuk mempelajari tentang matahari.
 1	Keberhasilan	keberhasilan	NOUN	NSD	Number=Sing	3	nsubj:pass	_	_
 2	tersebut	tersebut	DET	B--	PronType=Dem	1	det	_	_
@@ -5298,7 +5092,7 @@
 18	matahari	matahari	NOUN	NSD	Number=Sing	16	obl	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 232
 # text = Pada 26 Mei 1973, stasiun luar angkasa Amerika Serikat bernama Skylab diluncurkan dengan membawa 3 awak.
 1	Pada	pada	ADP	R--	_	3	case	_	_
 2	26	26	NUM	CC-	NumType=Card	3	nummod	_	_
@@ -5319,7 +5113,7 @@
 17	awak	awak	NOUN	NSD	Number=Sing	15	obj	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	13	punct	_	_
 
-# sent_id = 5
+# sent_id = 233
 # text = Skylab membawa Apollo Telescope Mount (ATM) yang digunakan untuk mengambil lebih dari 150 ribu gambar matahari.
 1	Skylab	skylab	PROPN	X--	_	2	nsubj	_	_
 2	membawa	menbawa	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -5339,14 +5133,10 @@
 16	ribu	ribu	NUM	CC-	NumType=Card	17	nummod	_	_
 17	gambar	gambar	NOUN	NSD	Number=Sing	12	obl	_	_
 18	matahari	matahari	NOUN	NSD	Number=Sing	17	compound	_	SpaceAfter=No
-19	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 234
 # text = Wahana antariksa lainnya, Helios I, berhasil mengorbit hingga mencapai jarak 47 juta km dari matahari (memasuki orbit Merkurius).
 1	Wahana	wahana	PROPN	NSD	Number=Sing	8	nsubj	_	_
 2	antariksa	antariksa	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5372,7 +5162,7 @@
 22	)	)	PUNCT	Z--	_	19	punct	_	SpaceAfter=No
 23	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 235
 # text = Helios I terus berputar untuk memastikan seluruh bagian pesawat mendapat jumlah panas yang sama dari matahari.
 1	Helios	helios	PROPN	X--	_	4	nsubj	_	_
 2	I	i	NUM	F--	NumType=Card	1	nummod	_	_
@@ -5392,7 +5182,7 @@
 16	matahari	matahari	NOUN	NSD	Number=Sing	14	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 236
 # text = Helios I bertugas mengumpulkan data-data mengenai matahari.
 1	Helios	helios	PROPN	X--	_	3	nsubj	_	_
 2	I	i	NUM	F--	NumType=Card	1	nummod	_	_
@@ -5403,7 +5193,7 @@
 7	matahari	matahari	NOUN	NSD	Number=Sing	5	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 237
 # text = Wahana antariksa hasil kerja sama Amerika Serikat dan Jerman ini beroperasi sejak 10 Desember 1974 hingga akhir 1982.
 1	Wahana	wahana	PROPN	NSD	Number=Sing	11	nsubj	_	_
 2	antariksa	antariksa	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5425,7 +5215,7 @@
 18	1982	1982	NUM	CC-	NumType=Card	17	nummod	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	11	punct	_	_
 
-# sent_id = 5
+# sent_id = 238
 # text = Helios II diluncurkan pada 16 Januari 1976 dan berhasil mencapai jarak 43 juta km dari matahari.
 1	Helios	helios	PROPN	X--	_	3	nsubj:pass	_	_
 2	II	ii	NUM	F--	NumType=Card	1	nummod	_	_
@@ -5445,7 +5235,7 @@
 16	matahari	matahari	NOUN	NSD	Number=Sing	11	nmod	_	SpaceAfter=No
 17	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 239
 # text = Misi Helios II selesai pada April 1976, tetapi dibiarkan tetap berada di orbit.
 1	Misi	misi	PROPN	NSD	Number=Sing	4	nsubj	_	_
 2	Helios	helios	PROPN	X--	_	1	flat	_	_
@@ -5461,14 +5251,10 @@
 12	berada	berada	VERB	VSA	Number=Sing|Voice=Act	10	xcomp	_	_
 13	di	di	ADP	R--	_	14	case	_	_
 14	orbit	orbit	NOUN	F--	_	12	obl	_	SpaceAfter=No
-15	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	Z--	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 240
 # text = Solar Maximum Mission didesain untuk melakukan observasi aktivitas matahari terutama bintik dan api matahari saat matahari berada pada periode aktivitas maksimum.
 1	Solar	solar	PROPN	F--	_	4	nsubj:pass	_	_
 2	Maximum	maximum	PROPN	X--	_	1	flat	_	_
@@ -5493,7 +5279,7 @@
 21	maksimum	maksimum	ADJ	ASP	Degree=Pos|Number=Sing	20	amod	_	SpaceAfter=No
 22	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 241
 # text = SMM diluncurkan oleh Amerika Serikat pada 14 Februari 1980.
 1	SMM	smm	PROPN	X--	_	2	nsubj:pass	_	_
 2	diluncurkan	diluncurkan	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -5506,7 +5292,7 @@
 9	1980	1980	NUM	CC-	NumType=Card	8	nummod	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 242
 # text = Selama perjalanannya, SMM pernah mengalami kerusakan, tetapi berhasil diperbaiki oleh awak pesawat ulang alik Challenger.
 1	Selama	selama	ADP	R--	_	2	case	_	_
 2	perjalanannya	perjalanan	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
@@ -5527,7 +5313,7 @@
 17	Challenger	challenger	PROPN	F--	_	13	flat	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 243
 # text = SMM terus berada di orbit Bumi selama melakukan observasi.
 1	SMM	smm	PROPN	X--	_	3	nsubj	_	_
 2	terus	terus	ADV	D--	_	3	advmod	_	_
@@ -5540,7 +5326,7 @@
 9	observasi	observasi	NOUN	NSD	Number=Sing	8	obj	_	SpaceAfter=No
 10	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 244
 # text = SMM mengumpulkan data hingga 24 November 1989 dan terbakar saat masuk kembali ke atmosfer Bumi pada 2 Desember 1989.
 1	SMM	smm	PROPN	X--	_	2	nsubj	_	_
 2	mengumpulkan	menkumpulkan	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -5561,14 +5347,10 @@
 17	2	2	NUM	CC-	NumType=Card	18	nummod	_	_
 18	Desember	desember	PROPN	NSD	Number=Sing	11	obl	_	_
 19	1989	1989	NUM	CC-	NumType=Card	18	nummod	_	SpaceAfter=No
-20	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+20	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 245
 # text = Wahana antariksa Ulysses adalah hasil proyek internasional untuk mempelajari kutub-kutub matahari, diluncurkan pada 6 Oktober 1990.
 1	Wahana	wahana	NOUN	NSD	Number=Sing	5	nsubj	_	_
 2	antariksa	antariksa	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5589,7 +5371,7 @@
 17	1990	1990	NUM	CC-	NumType=Card	16	nummod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 246
 # text = Sedangkan Yohkoh adalah wahana antariksa yang diluncurkan untuk mempelajari radiasi energi tinggi dari matahari.
 1	Sedangkan	sedangkan	SCONJ	S--	_	4	mark	_	_
 2	Yohkoh	yohkoh	PROPN	X--	_	4	nsubj	_	_
@@ -5607,7 +5389,7 @@
 14	matahari	matahari	NOUN	NSD	Number=Sing	10	nmod	_	SpaceAfter=No
 15	.	.	PUNCT	Z--	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 247
 # text = Yohkoh merupakan hasil kerja sama Jepang, Amerika Serikat, dan Inggris yang diluncurkan pada 31 Agustus 1991.
 1	Yohkoh	yohkoh	PROPN	X--	_	2	nsubj	_	_
 2	merupakan	merupakan	VERB	O--	_	0	root	_	_
@@ -5627,14 +5409,10 @@
 16	31	31	NUM	CC-	NumType=Card	17	nummod	_	_
 17	Agustus	agustus	PROPN	NSD	Number=Sing	14	obl	_	_
 18	1991	1991	NUM	CC-	NumType=Card	17	nummod	_	SpaceAfter=No
-19	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 248
 # text = Misi eksplorasi matahari yang paling terkenal adalah Solar and Heliospheric Observatory (SOHO) yang dikembangkan oleh Badan Antariksa Amerika Serikat (NASA) yang bekerja sama dengan Agensi Luar Angkasa Eropa (ESA) dan diluncurkan pada 12 Desember 1995.
 1	Misi	misi	PROPN	NSD	Number=Sing	8	nsubj	_	_
 2	eksplorasi	eksplorasi	NOUN	X--	_	1	compound	_	_
@@ -5679,7 +5457,7 @@
 41	1995	1995	NUM	CC-	NumType=Card	40	nummod	_	SpaceAfter=No
 42	.	.	PUNCT	Z--	_	8	punct	_	_
 
-# sent_id = 2
+# sent_id = 249
 # text = SOHO bertugas mengumpulkan data struktur internal, proses fisik yang terjadi, serta pengambilan gambar dan diagnosis spektroskopis matahari.
 1	SOHO	soho	PROPN	X--	_	2	nsubj	_	_
 2	bertugas	bertugas	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -5702,7 +5480,7 @@
 19	matahari	matahari	NOUN	NSD	Number=Sing	18	compound	_	SpaceAfter=No
 20	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 250
 # text = SOHO ditempatkan pada jarak 1,5 juta km dari Bumi dan masih beroperasi hingga sekarang.
 1	SOHO	soho	PROPN	X--	_	2	nsubj:pass	_	_
 2	ditempatkan	ditempatkan	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -5718,14 +5496,10 @@
 12	beroperasi	beroperasi	VERB	VSA	Number=Sing|Voice=Act	2	conj	_	_
 13	hingga	hingga	ADP	R--	_	14	case	_	_
 14	sekarang	sekarang	NOUN	D--	_	12	obl	_	SpaceAfter=No
-15	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 251
 # text = Misi eksplorasi terbaru dari NASA adalah wahana antariksa kembar bernama STEREO yang diluncurkan pada 26 Oktober 2006.
 1	Misi	misi	PROPN	NSD	Number=Sing	7	nsubj	_	_
 2	eksplorasi	eksplorasi	NOUN	X--	_	1	compound	_	_
@@ -5746,7 +5520,7 @@
 17	2006	2006	NUM	CC-	NumType=Card	16	nummod	_	SpaceAfter=No
 18	.	.	PUNCT	Z--	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 252
 # text = STEREO bertugas untuk menganalisis dan mengambil gambar matahari dalam bentuk 3 dimensi.
 1	STEREO	stereo	PROPN	X--	_	2	nsubj	_	_
 2	bertugas	bertugas	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -5762,7 +5536,7 @@
 12	dimensi	dimensi	NOUN	NSD	Number=Sing	10	compound	_	SpaceAfter=No
 13	.	.	PUNCT	Z--	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 253
 # text = Solar Dynamics Observatory Mission adalah misi eksplorasi NASA yang sedang dalam pengembangan dan telah dipublikasikan pada April 2008.
 1	Solar	solar	PROPN	F--	_	6	nsubj	_	_
 2	Dynamics	dynamics	PROPN	F--	_	1	flat	_	_
@@ -5784,7 +5558,7 @@
 18	2008	2008	NUM	CC-	NumType=Card	17	nummod	_	SpaceAfter=No
 19	.	.	PUNCT	Z--	_	6	punct	_	_
 
-# sent_id = 4
+# sent_id = 254
 # text = Solar Dynamics Observatory Mission diperkirakan akan mengorbit untuk mempelajari dinamika matahari yang meliputi aktivitas matahari, evolusi atmosfer matahari, dan pengaruh radiasi matahari terhadap planet-planet lain.
 1	Solar	solar	PROPN	F--	_	5	nsubj:pass	_	_
 2	Dynamics	dynamics	PROPN	X--	_	1	flat	_	_
@@ -5813,28 +5587,20 @@
 25	terhadap	terhadap	ADP	R--	_	26	case	_	_
 26	planet-planet	planet-	NOUN	NPD	Number=Plur	22	nmod	_	_
 27	lain	lain	ADJ	ASP	Degree=Pos|Number=Sing	26	amod	_	SpaceAfter=No
-28	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	Z--	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 255
 # text = Matahari sebagai simbol kepercayaan dan kebudayaan
 1	Matahari	matahari	NOUN	NSD	Number=Sing	0	root	_	_
 2	sebagai	sebagai	ADP	R--	_	3	case	_	_
 3	simbol	simbol	NOUN	NSD	Number=Sing	1	nmod	_	_
 4	kepercayaan	kepercayaan	NOUN	NSD	Number=Sing	3	compound	_	_
 5	dan	dan	CCONJ	H--	_	6	cc	_	_
-6	kebudayaan	kebudayaan	NOUN	NSD	Number=Sing	4	conj	_	SpaceAfter=No
+6	kebudayaan	kebudayaan	NOUN	NSD	Number=Sing	4	conj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 256
 # text = Matahari telah menjadi simbol penting di banyak kebudayaan sepanjang peradaban manusia.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	telah	telah	ADV	D--	_	3	advmod	_	_
@@ -5849,7 +5615,7 @@
 11	manusia	manusia	NOUN	NSD	Number=Sing	10	compound	_	SpaceAfter=No
 12	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 257
 # text = Dalam mitologi yang dimiliki oleh berbagai bangsa di dunia, matahari memiliki peranan yang sangat penting di dalam kehidupan masyarakatnya.
 1	Dalam	dalam	ADP	NSD	Number=Sing	2	case	_	_
 2	mitologi	mitologi	NOUN	X--	_	12	obl	_	_
@@ -5873,7 +5639,7 @@
 20	masyarakatnya	masyarakat	NOUN	NSD+PS3	Number=Sing|Number[psor]=Sing|Person[psor]=3	19	compound	_	SpaceAfter=No
 21	.	.	PUNCT	Z--	_	12	punct	_	_
 
-# sent_id = 3
+# sent_id = 258
 # text = Matahari dikenal dengan nama yang berbeda-beda pada tiap kebudayaan dan sering kali disembah sebagai dewa.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj:pass	_	_
 2	dikenal	dikenal	VERB	VSP	Number=Sing|Voice=Pass	0	root	_	_
@@ -5890,14 +5656,10 @@
 13	disembah	disembah	VERB	VSP	Number=Sing|Voice=Pass	2	conj	_	_
 14	sebagai	sebagai	ADP	R--	_	15	case	_	_
 15	dewa	dewa	NOUN	NSD	Number=Sing	13	obl	_	SpaceAfter=No
-16	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 259
 # text = Peranan matahari di berbagai kebudayaan dan kepercayaan
 1	Peranan	peranan	NOUN	NSD	Number=Sing	0	root	_	_
 2	matahari	matahari	NOUN	NSD	Number=Sing	1	compound	_	_
@@ -5905,14 +5667,10 @@
 4	berbagai	berbagai	DET	B--	PronType=Ind	5	det	_	_
 5	kebudayaan	kebudayaan	NOUN	NSD	Number=Sing	1	nmod	_	_
 6	dan	dan	CCONJ	H--	_	7	cc	_	_
-7	kepercayaan	kepercayaan	NOUN	NSD	Number=Sing	5	conj	_	SpaceAfter=No
+7	kepercayaan	kepercayaan	NOUN	NSD	Number=Sing	5	conj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 260
 # text = Bangunan dan benda yang berhubungan dengan matahari
 1	Bangunan	bangunan	NOUN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
@@ -5920,26 +5678,18 @@
 4	yang	yang	PRON	S--	PronType=Rel	5	nsubj	_	_
 5	berhubungan	berhubungan	VERB	VSA	Number=Sing|Voice=Act	1	acl	_	_
 6	dengan	dengan	ADP	R--	_	7	case	_	_
-7	matahari	matahari	NOUN	NSD	Number=Sing	5	obl	_	SpaceAfter=No
+7	matahari	matahari	NOUN	NSD	Number=Sing	5	obl	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 261
 # text = Manfaat dan peran matahari
 1	Manfaat	manfaat	PROPN	NSD	Number=Sing	0	root	_	_
 2	dan	dan	CCONJ	H--	_	3	cc	_	_
 3	peran	peran	NOUN	NSD	Number=Sing	1	conj	_	_
-4	matahari	matahari	NOUN	NSD	Number=Sing	3	compound	_	SpaceAfter=No
+4	matahari	matahari	NOUN	NSD	Number=Sing	3	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 262
 # text = Matahari adalah sumber energi bagi kehidupan.
 1	Matahari	matahari	PROPN	NSD	Number=Sing	3	nsubj	_	_
 2	adalah	adalah	AUX	O--	_	3	cop	_	_
@@ -5949,7 +5699,7 @@
 6	kehidupan	kehidupan	NOUN	NSD	Number=Sing	3	nmod	_	SpaceAfter=No
 7	.	.	PUNCT	Z--	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 263
 # text = Matahari memiliki banyak manfaat dan peran yang sangat penting bagi kehidupan seperti:
 1	Matahari	matahari	PROPN	NSD	Number=Sing	2	nsubj	_	_
 2	memiliki	menmiliki	VERB	VSA	Number=Sing|Voice=Act	0	root	_	_
@@ -5963,43 +5713,27 @@
 10	bagi	bagi	ADP	R--	_	11	case	_	_
 11	kehidupan	kehidupan	NOUN	NSD	Number=Sing	4	nmod	_	_
 12	seperti	seperti	ADP	R--	_	11	case	_	SpaceAfter=No
-13	:	:	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n
+13	:	:	PUNCT	Z--	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 264
 # text = Referensi
-1	Referensi	referensi	PROPN	NSD	Number=Sing	0	root	_	SpaceAfter=No
+1	Referensi	referensi	PROPN	NSD	Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 265
 # text = Bacaan lanjutan
 1	Bacaan	bacaan	NOUN	NSD	Number=Sing	0	root	_	_
-2	lanjutan	lanjutan	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
+2	lanjutan	lanjutan	NOUN	NSD	Number=Sing	1	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 266
 # text = Pranala luar
 1	Pranala	pranala	PROPN	NSD	Number=Sing	0	root	_	_
-2	luar	luar	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpaceAfter=No
+2	luar	luar	ADJ	ASP	Degree=Pos|Number=Sing	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = indonesian-gsd-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 267
 # text = Kesalahan pengutipan: Ditemukan tag <ref> untuk kelompok bernama "lower-alpha", tapi tidak ditemukan tag <references group="lower-alpha"/> yang berkaitan
 1	Kesalahan	kesalahan	NOUN	NSD	Number=Sing	4	nsubj:pass	_	_
 2	pengutipan	penutipan	NOUN	NSD	Number=Sing	1	compound	_	SpaceAfter=No
@@ -6025,5 +5759,5 @@
 22	/	/	SYM	Z--	_	21	punct	_	SpaceAfter=No
 23	>	>	SYM	Z--	_	18	punct	_	_
 24	yang	yang	PRON	S--	PronType=Rel	25	nsubj	_	_
-25	berkaitan	berkaitan	VERB	VSA	Number=Sing|Voice=Act	18	acl	_	SpacesAfter=\n
+25	berkaitan	berkaitan	VERB	VSA	Number=Sing|Voice=Act	18	acl	_	SpacesAfter=\n\n
 

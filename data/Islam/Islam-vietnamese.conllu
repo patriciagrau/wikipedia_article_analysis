@@ -9,30 +9,27 @@
 2	–	–	PUNCT	-	_	4	punct	_	_
 3	Wikipedia	Wikipedia	NOUN	Np	_	4	compound	_	_
 4	tiếng	tiếng	NOUN	N	_	0	root	_	_
-5	Việt	Việt	NOUN	Np	_	4	compound	_	SpaceAfter=No
+5	Việt	Việt	NOUN	Np	_	4	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = Hồi giáo, đạo Hồi hay đạo Islam(tiếng Ả Rập: الإسلام al-'
-1	Hồi giáo	Hồi giáo	NOUN	N	_	3	nsubj	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	3	punct	_	_
-3	đạo	đạo	NOUN	V	_	0	root	_	_
-4	Hồi	Hồi	NOUN	Np	_	3	obj	_	_
-5	hay	hay	CCONJ	C	_	6	cc	_	_
-6	đạo	đạo	VERB	V	_	1	conj	_	_
-7	Islam(tiếng	Islam(tiếng	NOUN	Np	_	6	obj	_	_
-8	Ả	ả	VERB	V	_	6	ccomp	_	_
-9	Rập	Rập	NOUN	Np	_	8	obj	_	SpaceAfter=No
-10	:	:	PUNCT	:	_	6	punct	_	_
-11	الإسلام	الإسلام	ADJ	A	_	6	ccomp	_	_
-12	al-	al-	PUNCT	-	_	11	punct	_	SpaceAfter=No
-13	'	'	PUNCT	.	_	11	punct	_	SpaceAfter=No
-
 # sent_id = 2
+# text = Hồi giáo, đạo Hồi hay đạo Islam(tiếng Ả Rập: الإسلام al-'
+1	Hồi	Hồi	NOUN	N	_	2	nsubj	_	_
+2	giáo	giáo	VERB	V	_	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	đạo	đạo	VERB	V	_	2	conj	_	_
+5	Hồi	Hồi	NOUN	Np	_	2	obj	_	_
+6	hay	hay	CCONJ	C	_	7	cc	_	_
+7	đạo	đạo	VERB	V	_	2	conj	_	_
+8	Islam(tiếng	Islam(tiếng	NOUN	Np	_	7	obj	_	_
+9	Ả	ả	VERB	V	_	8	xcomp	_	_
+10	Rập	Rập	NOUN	Np	_	9	obj	_	SpaceAfter=No
+11	:	:	PUNCT	:	_	2	punct	_	_
+12	الإسلام	الإسلام	ADJ	A	_	2	parataxis	_	_
+13	al-	al-	PUNCT	-	_	12	punct	_	SpaceAfter=No
+14	'	'	PUNCT	.	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 3
 # text = islām) là một tôn giáo khởi nguồn từ Abraham, độc thần, dạy rằng chỉ có một Thiên Chúa (tiếng Ả Rập: Allah), và Muhammad là sứ giả của Thượng đế.
 1	islām)	islām)	NOUN	N	_	5	nsubj	_	_
 2	là	là	AUX	V	_	5	cop	_	_
@@ -66,7 +63,7 @@
 30	đế	đế	VERB	V	_	16	ccomp	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Đây là tôn giáo lớn thứ hai thế giới với hơn 1 tỷ người theo tương đương 15% dân số thế giới, và họ thường được gọi là người Hồi giáo.
 1	Đây	Đây	PROPN	P	_	3	nsubj	_	_
 2	là	là	AUX	V	_	3	cop	_	_
@@ -98,18 +95,19 @@
 28	Hồi giáo	Hồi giáo	NOUN	Np	_	27	compound	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
-# text = Hồi giáo chiếm phần lớn dân số ở 50 quốc gia.
-1	Hồi	Hồi	NOUN	Np	_	2	nsubj	_	_
-2	giáo chiếm phần	giáo chiếm phần	VERB	V	_	0	root	_	_
-3	lớn	lớn	ADJ	A	_	2	xcomp	_	_
-4	dân số	dân số	NOUN	N	_	2	obj	_	_
-5	ở	ở	ADP	E	_	7	case	_	_
-6	50	50	NUM	M	NumType=Card	7	nummod	_	_
-7	quốc gia	quốc gia	NOUN	N	_	4	nmod	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	2	punct	_	_
-
 # sent_id = 5
+# text = Hồi giáo chiếm phần lớn dân số ở 50 quốc gia.
+1	Hồi	Hồi	NOUN	C	_	2	cc	_	_
+2	giáo	giáo	NOUN	N	_	0	root	_	_
+3	chiếm phần	chiếm phần	VERB	V	_	2	xcomp	_	_
+4	lớn	lớn	ADJ	A	_	3	xcomp	_	_
+5	dân số	dân số	NOUN	N	_	4	obj	_	_
+6	ở	ở	ADP	E	_	8	case	_	_
+7	50	50	NUM	M	NumType=Card	8	nummod	_	_
+8	quốc gia	quốc gia	NOUN	N	_	5	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 6
 # text = Hồi giáo dạy rằng Thiên Chúa là lòng thương xót, toàn năng và độc nhất, và Chúa đã hướng dẫn loài người qua các sứ giả, thánh thư được tiết lộ và các dấu hiệu tự nhiên.
 1	Hồi	Hồi	NOUN	Np	_	2	nsubj	_	_
 2	giáo dạy	giáo dạy	VERB	V	_	0	root	_	_
@@ -145,60 +143,58 @@
 32	tự nhiên	tự nhiên	ADJ	A	_	31	amod	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = Kinh sách chính của Hồi giáo là Kinh Qur'an, được người Hồi giáo xem là lời nguyên văn của Thiên Chúa, và các giáo lý và ví dụ quy phạm (được gọi là sunnah, bao gồm các ghi chép được gọi là hadith) của Muhammad (570 – 8 tháng 6 632).
-1	Kinh sách	Kinh sách	NOUN	N	_	6	nsubj	_	_
+1	Kinh sách	Kinh sách	NOUN	N	_	5	nsubj	_	_
 2	chính	chính	PART	T	_	1	discourse	_	_
 3	của	của	ADP	E	_	4	case	_	_
-4	Hồi giáo	Hồi giáo	NOUN	Np	_	1	nmod	_	_
-5	là	là	AUX	V	_	6	cop	_	_
-6	Kinh Qur'an	Kinh QUr'an	NOUN	Np	_	0	root	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	6	punct	_	_
-8	được	được	VERB	V	_	11	aux:pass	_	_
-9	người	người	NOUN	N	_	11	nsubj	_	_
-10	Hồi	Hồi	NOUN	Np	_	9	compound	_	_
-11	giáo	giáo	VERB	V	_	6	parataxis	_	_
-12	xem	xem	VERB	V	_	11	xcomp	_	_
-13	là	là	AUX	V	_	28	cop	_	_
-14	lời	lời	NOUN	N	_	12	obj	_	_
-15	nguyên văn	nguyên văn	NOUN	N	_	14	compound	_	_
-16	của	của	ADP	E	_	17	case	_	_
-17	Thiên Chúa	Thiên Chúa	NOUN	Np	_	14	nmod	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	21	punct	_	_
-19	và	và	SCONJ	CC	_	21	cc	_	_
-20	các	các	DET	L	_	21	det	_	_
-21	giáo lý	giáo lý	NOUN	N	_	14	conj	_	_
-22	và	và	SCONJ	CC	_	23	cc	_	_
-23	ví dụ	ví dụ	NOUN	N	_	21	conj	_	_
-24	quy phạm	quy phạm	NOUN	N	_	23	compound	_	_
-25	(được	(được	VERB	V	_	26	aux:pass	_	_
-26	gọi	gọi	VERB	V	_	6	conj	_	_
-27	là	là	AUX	V	_	28	cop	_	_
-28	sunnah	sunnah	NOUN	N	_	26	ccomp	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	11	punct	_	_
-30	bao	bao	ADP	E	_	26	conj	_	_
-31	gồm	gồm	VERB	V	_	11	conj	_	_
-32	các	các	DET	L	_	33	det	_	_
-33	ghi chép	ghi chép	NOUN	N	_	31	obj	_	_
-34	được	được	VERB	V	_	35	aux:pass	_	_
-35	gọi	gọi	VERB	V	_	33	xcomp	_	_
-36	là	là	AUX	V	_	37	cop	_	_
-37	hadith)	hadith)	NOUN	N	_	35	obj	_	_
-38	của	của	ADP	E	_	39	case	_	_
-39	Muhammad	Muhammad	NOUN	Np	_	37	nmod	_	_
-40	(570	(570	NUM	M	NumType=Card	43	nummod	_	_
-41	–	–	PUNCT	-	_	43	punct	_	_
-42	8	8	NUM	M	NumType=Card	43	nummod	_	_
-43	tháng	tháng	NOUN	N	_	37	nmod	_	_
-44	6 632)	6 632)	NUM	M	NumType=Card	43	nummod	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+4	Hồi	Hồi	NOUN	Np	_	5	obl	_	_
+5	giáo	giáo	VERB	V	_	0	root	_	_
+6	là	là	AUX	V	_	7	cop	_	_
+7	Kinh Qur'an	Kinh QUr'an	NOUN	Np	_	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	được	được	VERB	V	_	12	aux:pass	_	_
+10	người	người	NOUN	N	_	12	nsubj	_	_
+11	Hồi	Hồi	NOUN	Np	_	10	compound	_	_
+12	giáo	giáo	VERB	V	_	7	parataxis	_	_
+13	xem	xem	VERB	V	_	12	xcomp	_	_
+14	là	là	AUX	V	_	29	cop	_	_
+15	lời	lời	NOUN	N	_	13	obj	_	_
+16	nguyên văn	nguyên văn	NOUN	N	_	15	compound	_	_
+17	của	của	ADP	E	_	18	case	_	_
+18	Thiên Chúa	Thiên Chúa	NOUN	Np	_	15	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	và	và	SCONJ	CC	_	22	cc	_	_
+21	các	các	DET	L	_	22	det	_	_
+22	giáo lý	giáo lý	NOUN	N	_	15	conj	_	_
+23	và	và	SCONJ	CC	_	24	cc	_	_
+24	ví dụ	ví dụ	NOUN	N	_	22	conj	_	_
+25	quy phạm	quy phạm	NOUN	N	_	24	compound	_	_
+26	(được	(được	VERB	V	_	27	aux:pass	_	_
+27	gọi	gọi	VERB	V	_	7	conj	_	_
+28	là	là	AUX	V	_	29	cop	_	_
+29	sunnah	sunnah	NOUN	N	_	27	ccomp	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	12	punct	_	_
+31	bao	bao	ADP	E	_	27	conj	_	_
+32	gồm	gồm	VERB	V	_	12	conj	_	_
+33	các	các	DET	L	_	34	det	_	_
+34	ghi chép	ghi chép	NOUN	N	_	32	obj	_	_
+35	được	được	VERB	V	_	36	aux:pass	_	_
+36	gọi	gọi	VERB	V	_	34	xcomp	_	_
+37	là	là	AUX	V	_	36	cc	_	_
+38	hadith)	hadith)	NOUN	N	_	36	obj	_	_
+39	của	của	ADP	E	_	40	case	_	_
+40	Muhammad	Muhammad	NOUN	Np	_	38	nmod	_	_
+41	(570	(570	NUM	M	NumType=Card	44	nummod	_	_
+42	–	–	PUNCT	-	_	44	punct	_	_
+43	8	8	NUM	M	NumType=Card	44	nummod	_	_
+44	tháng	tháng	NOUN	N	_	40	compound	_	_
+45	6	6	NUM	M	NumType=Card	44	nummod	_	_
+46	632)	632)	NUM	M	NumType=Card	44	nummod	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 8
 # text = Người Hồi giáo tin rằng Hồi giáo là phiên bản hoàn chỉnh và phổ quát của một đức tin nguyên thủy đã được tiết lộ nhiều lần trước đây thông qua các tiên tri bao gồm Adam, Abraham, Moses và Jesus.
 1	Người	Người	NOUN	N	_	3	nsubj	_	_
 2	Hồi	Hồi	NOUN	Np	_	3	nsubj	_	_
@@ -237,7 +233,7 @@
 35	Jesus	Jesus	NOUN	Np	_	29	conj	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 9
 # text = Người Hồi giáo coi Kinh Qur'an trong tiếng Ả Rập gốc của nó là sự mặc khải không thay đổi và cuối cùng của Thiên Chúa.
 1	Người	Người	NOUN	N	_	3	nsubj	_	_
 2	Hồi	Hồi	NOUN	Np	_	3	nsubj	_	_
@@ -263,7 +259,7 @@
 22	Thiên Chúa	Thiên Chúa	NOUN	Np	_	18	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 10
 # text = Giống như các tôn giáo Abraham khác, Hồi giáo cũng dạy về một ngày phán xử cuối cùng với người tốt sẽ được lên thiên đường và người xấu sẽ bị trừng phạt tại địa ngục.
 1	Giống	Giống	CCONJ	T	_	12	advcl	_	_
 2	như	như	CCONJ	C	_	12	cc	_	_
@@ -300,59 +296,57 @@
 33	địa ngục	địa ngục	NOUN	N	_	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = 4
+# sent_id = 11
 # text = Các khái niệm và thực hành tôn giáo bao gồm Năm trụ cột Hồi giáo, là những hành vi tôn giáo bắt buộc và tuân theo luật Hồi giáo (sharia), ảnh hưởng đến hầu hết mọi khía cạnh của cuộc sống và xã hội, từ ngân hàng và phúc lợi cho phụ nữ và môi trường.
 1	Các	Các	DET	L	_	2	det	_	_
-2	khái niệm	khái niệm	NOUN	N	_	7	nsubj	_	_
+2	khái niệm	khái niệm	NOUN	N	_	6	nsubj	_	_
 3	và	và	SCONJ	CC	_	4	cc	_	_
-4	thực hành	thực hành	NOUN	N	_	2	conj	_	_
-5	tôn	tôn	NOUN	N	_	4	compound	_	_
-6	giáo	giáo	NOUN	N	_	5	xcomp	_	_
-7	bao	bao	VERB	V	_	0	root	_	_
-8	gồm	gồm	VERB	V	_	7	xcomp	_	_
-9	Năm	Năm	NUM	M	NumType=Card	10	nummod	_	_
-10	trụ	trụ	NOUN	N	_	7	obj	_	_
-11	cột	cột	NOUN	N	_	10	compound	_	_
-12	Hồi	Hồi	NOUN	Np	_	10	compound	_	_
-13	giáo	giáo	VERB	V	_	17	xcomp	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	17	punct	_	_
-15	là	là	AUX	V	_	17	cop	_	_
-16	những	những	DET	L	_	17	det	_	_
-17	hành vi	hành vi	NOUN	N	_	7	parataxis	_	_
-18	tôn	tôn	NOUN	N	_	17	compound	_	_
-19	giáo	giáo	VERB	N	_	17	compound	_	_
-20	bắt	bắt	VERB	V	_	17	xcomp	_	_
-21	buộc	buộc	ADJ	A	_	20	xcomp	_	_
-22	và	và	SCONJ	CC	_	23	cc	_	_
-23	tuân	tuân	VERB	V	_	20	conj	_	_
-24	theo	theo	ADP	E	_	25	case	_	_
-25	luật	luật	NOUN	N	_	23	obl	_	_
-26	Hồi	Hồi	NOUN	Np	_	25	compound	_	_
-27	giáo (sharia)	giáo (sharia)	NOUN	N	_	7	xcomp	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	29	punct	_	_
-29	ảnh hưởng	ảnh hưởng	VERB	V	_	7	conj	_	_
-30	đến	đến	ADP	E	_	31	case	_	_
-31	hầu	hầu	NOUN	N	_	29	obl	_	_
-32	hết	hết	X	R	_	34	advmod	_	_
-33	mọi	mọi	DET	L	_	34	det	_	_
-34	khía	khía	NOUN	N	_	29	obj	_	_
-35	cạnh	cạnh	NOUN	N	_	34	compound	_	_
-36	của	của	ADP	E	_	37	case	_	_
-37	cuộc sống	cuộc sống	NOUN	N	_	34	nmod	_	_
-38	và	và	SCONJ	CC	_	39	cc	_	_
-39	xã hội	xã hội	NOUN	N	_	34	conj	_	SpaceAfter=No
-40	,	,	PUNCT	,	_	34	punct	_	_
-41	từ	từ	ADP	E	_	42	case	_	_
-42	ngân hàng	ngân hàng	NOUN	N	_	34	nmod	_	_
-43	và	và	SCONJ	CC	_	44	cc	_	_
-44	phúc lợi	phúc lợi	NOUN	N	_	34	conj	_	_
-45	cho	cho	ADP	E	_	46	case	_	_
-46	phụ nữ	phụ nữ	NOUN	N	_	29	obl	_	_
-47	và	và	SCONJ	CC	_	48	cc	_	_
-48	môi trường	môi trường	NOUN	N	_	46	conj	_	SpaceAfter=No
-49	.	.	PUNCT	.	_	7	punct	_	_
+4	thực hành tôn	thực hành tôn	NOUN	N	_	2	conj	_	_
+5	giáo	giáo	NOUN	N	_	4	compound	_	_
+6	bao	bao	VERB	V	_	0	root	_	_
+7	gồm	gồm	VERB	V	_	6	xcomp	_	_
+8	Năm	Năm	NUM	M	NumType=Card	9	nummod	_	_
+9	trụ	trụ	NOUN	N	_	7	obj	_	_
+10	cột	cột	NOUN	N	_	9	compound	_	_
+11	Hồi	Hồi	NOUN	Np	_	9	compound	_	_
+12	giáo	giáo	VERB	V	_	16	xcomp	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	là	là	AUX	V	_	16	cop	_	_
+15	những	những	DET	L	_	16	det	_	_
+16	hành vi	hành vi	NOUN	N	_	6	parataxis	_	_
+17	tôn	tôn	NOUN	N	_	16	compound	_	_
+18	giáo	giáo	VERB	N	_	16	compound	_	_
+19	bắt	bắt	VERB	V	_	17	xcomp	_	_
+20	buộc	buộc	ADJ	A	_	19	xcomp	_	_
+21	và	và	SCONJ	CC	_	22	cc	_	_
+22	tuân	tuân	VERB	V	_	19	conj	_	_
+23	theo	theo	ADP	E	_	24	case	_	_
+24	luật	luật	NOUN	N	_	22	obl	_	_
+25	Hồi	Hồi	NOUN	Np	_	24	compound	_	_
+26	giáo (sharia)	giáo (sharia)	NOUN	N	_	6	xcomp	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	ảnh hưởng	ảnh hưởng	VERB	V	_	6	conj	_	_
+29	đến	đến	ADP	E	_	30	case	_	_
+30	hầu	hầu	NOUN	N	_	28	obl	_	_
+31	hết	hết	X	R	_	33	advmod	_	_
+32	mọi	mọi	DET	L	_	33	det	_	_
+33	khía	khía	NOUN	N	_	28	obj	_	_
+34	cạnh	cạnh	NOUN	N	_	33	compound	_	_
+35	của	của	ADP	E	_	36	case	_	_
+36	cuộc sống	cuộc sống	NOUN	N	_	33	nmod	_	_
+37	và	và	SCONJ	CC	_	38	cc	_	_
+38	xã hội	xã hội	NOUN	N	_	36	conj	_	SpaceAfter=No
+39	,	,	PUNCT	,	_	33	punct	_	_
+40	từ	từ	ADP	E	_	41	case	_	_
+41	ngân hàng	ngân hàng	NOUN	N	_	33	nmod	_	_
+42	và phúc lợi	và phúc lợi	ADJ	A	_	41	amod	_	_
+43	cho	cho	ADP	E	_	44	case	_	_
+44	phụ nữ	phụ nữ	NOUN	N	_	28	obl	_	_
+45	và	và	SCONJ	CC	_	46	cc	_	_
+46	môi trường	môi trường	NOUN	N	_	44	conj	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 5
+# sent_id = 12
 # text = Các thành phố Mecca, Medina và Jerusalem là nơi có ba địa điểm linh thiêng nhất trong đạo Hồi.
 1	Các	Các	DET	L	_	2	det	_	_
 2	thành phố	thành phố	NOUN	N	_	9	nsubj	_	_
@@ -372,61 +366,58 @@
 16	trong	trong	ADP	E	_	17	case	_	_
 17	đạo	đạo	NOUN	N	_	13	advcl	_	_
 18	Hồi	Hồi	NOUN	Np	_	17	compound	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 13
 # text = Bên cạnh những câu chuyện mang tính thần học, Hồi giáo được lịch sử cho là có nguồn gốc từ đầu thế kỷ thứ 7 sau CN tại Mecca, và đến thế kỷ thứ 8 các vua Nhà Omeyyad kéo dài từ Iberia ở phía tây đến Sông Indus ở phía đông.
-1	Bên cạnh	Bên cạnh	CCONJ	C	_	15	cc	_	_
-2	những	những	DET	L	_	3	det	_	_
-3	câu chuyện	câu chuyện	NOUN	N	_	13	nsubj	_	_
-4	mang	mang	VERB	V	_	3	xcomp	_	_
-5	tính	tính	NOUN	N	_	4	obj	_	_
-6	thần	thần	NOUN	N	_	5	compound	_	_
-7	học	học	ADJ	A	_	6	amod	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	13	punct	_	_
-9	Hồi	Hồi	NOUN	Np	_	10	compound	_	_
-10	giáo	giáo	NOUN	N	_	13	nsubj	_	_
-11	được	được	VERB	V	_	13	aux:pass	_	_
-12	lịch sử	lịch sử	ADJ	A	_	10	xcomp	_	_
-13	cho	cho	VERB	V	_	0	root	_	_
-14	là	là	CCONJ	V	_	15	cop	_	_
-15	có	có	VERB	V	_	13	ccomp	_	_
-16	nguồn gốc	nguồn gốc	NOUN	N	_	15	obj	_	_
-17	từ	từ	ADP	E	_	18	case	_	_
-18	đầu thế	đầu thế	NOUN	N	_	33	obl	_	_
-19	kỷ thứ	kỷ thứ	NOUN	N	_	18	compound	_	_
-20	7	7	NUM	M	NumType=Card	5	nummod	_	_
-21	sau CN	sau Cn	NOUN	Ny	_	5	compound	_	_
-22	tại	tại	ADP	E	_	23	case	_	_
-23	Mecca	Mecca	NOUN	Np	_	18	advcl	_	SpaceAfter=No
-24	,	,	PUNCT	,	_	15	punct	_	_
-25	và	và	SCONJ	CC	_	15	cc	_	_
-26	đến	đến	ADP	E	_	28	case	_	_
-27	thế	thế	PROPN	P	_	28	compound	_	_
-28	kỷ thứ	kỷ thứ	NOUN	N	_	33	obl	_	_
-29	8	8	NUM	M	NumType=Card	28	nummod	_	_
-30	các	các	DET	L	_	31	det	_	_
-31	vua	vua	NOUN	N	_	33	nsubj	_	_
-32	Nhà Omeyyad	Nhà omeyYad	NOUN	Np	_	31	compound	_	_
-33	kéo dài	kéo dài	VERB	V	_	15	parataxis	_	_
-34	từ	từ	ADP	E	_	35	case	_	_
-35	Iberia	Iberia	NOUN	Np	_	33	obl	_	_
-36	ở	ở	ADP	E	_	37	case	_	_
-37	phía	phía	NOUN	N	_	33	advcl	_	_
-38	tây	tây	NOUN	N	_	37	compound	_	_
-39	đến	đến	ADP	E	_	40	case	_	_
-40	Sông Indus	Sông indus	NOUN	Np	_	37	nmod	_	_
-41	ở	ở	ADP	E	_	42	case	_	_
-42	phía	phía	NOUN	N	_	37	advcl	_	_
-43	đông	đông	ADJ	A	_	42	amod	_	SpaceAfter=No
-44	.	.	PUNCT	.	_	13	punct	_	_
+1	Bên	Bên	CCONJ	C	_	14	cc	_	_
+2	cạnh	cạnh	NOUN	N	_	14	advcl	_	_
+3	những	những	DET	L	_	4	det	_	_
+4	câu chuyện	câu chuyện	NOUN	N	_	2	obj	_	_
+5	mang	mang	VERB	V	_	4	xcomp	_	_
+6	tính	tính	NOUN	N	_	5	obj	_	_
+7	thần	thần	NOUN	N	_	6	compound	_	_
+8	học	học	ADJ	A	_	20	amod	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	14	punct	_	_
+10	Hồi	Hồi	NOUN	Np	_	11	compound	_	_
+11	giáo	giáo	NOUN	N	_	14	nsubj	_	_
+12	được	được	VERB	V	_	14	aux:pass	_	_
+13	lịch sử	lịch sử	ADJ	A	_	11	xcomp	_	_
+14	cho	cho	VERB	V	_	0	root	_	_
+15	là	là	CCONJ	V	_	16	cop	_	_
+16	có	có	VERB	V	_	14	ccomp	_	_
+17	nguồn gốc	nguồn gốc	NOUN	N	_	16	obj	_	_
+18	từ	từ	ADP	E	_	19	case	_	_
+19	đầu thế	đầu thế	NOUN	N	_	17	nmod	_	_
+20	kỷ thứ	kỷ thứ	NOUN	N	_	19	compound	_	_
+21	7	7	NUM	M	NumType=Card	6	nummod	_	_
+22	sau CN	sau Cn	NOUN	Ny	_	6	compound	_	_
+23	tại	tại	ADP	E	_	24	case	_	_
+24	Mecca	Mecca	NOUN	Np	_	19	advcl	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	16	punct	_	_
+26	và	và	SCONJ	CC	_	16	cc	_	_
+27	đến	đến	ADP	E	_	29	case	_	_
+28	thế	thế	PROPN	P	_	29	compound	_	_
+29	kỷ thứ	kỷ thứ	NOUN	N	_	34	obl	_	_
+30	8	8	NUM	M	NumType=Card	29	nummod	_	_
+31	các	các	DET	L	_	32	det	_	_
+32	vua	vua	NOUN	N	_	34	nsubj	_	_
+33	Nhà Omeyyad	Nhà omeyYad	NOUN	Np	_	32	compound	_	_
+34	kéo dài	kéo dài	VERB	V	_	16	parataxis	_	_
+35	từ	từ	ADP	E	_	36	case	_	_
+36	Iberia	Iberia	NOUN	Np	_	34	obl	_	_
+37	ở	ở	ADP	E	_	38	case	_	_
+38	phía	phía	NOUN	N	_	34	advcl	_	_
+39	tây	tây	NOUN	N	_	38	compound	_	_
+40	đến	đến	ADP	E	_	41	case	_	_
+41	Sông Indus	Sông indus	NOUN	Np	_	38	nmod	_	_
+42	ở	ở	ADP	E	_	43	case	_	_
+43	phía	phía	NOUN	N	_	38	advcl	_	_
+44	đông	đông	ADJ	A	_	43	amod	_	SpaceAfter=No
+45	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = 2
+# sent_id = 14
 # text = Thời đại hoàng kim Hồi giáo đề cập đến thời kỳ truyền thống có niên đại từ thế kỷ thứ 8 đến thế kỷ 13, trong thời đại Abbasid Caliphate, khi phần lớn thế giới Hồi giáo trong lịch sử đang trải qua thời kỳ hưng thịnh về khoa học, kinh tế và văn hóa.
 1	Thời đại hoàng	Thời đại hoàng	NOUN	N	_	5	nsubj	_	_
 2	kim	kim	NOUN	N	_	5	nsubj	_	_
@@ -444,32 +435,33 @@
 14	8	8	NUM	M	NumType=Card	13	nummod	_	_
 15	đến	đến	ADP	E	_	20	case	_	_
 16	thế	thế	NOUN	N	_	5	obl	_	_
-17	kỷ 13	kỷ 13	NOUN	N	_	16	compound	_	SpaceAfter=No
+17	kỷ 13	kỷ 13	NOUN	M	NumType=Card	16	compound	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	5	punct	_	_
 19	trong	trong	ADP	E	_	20	case	_	_
-20	thời đại A	thời đại a	NOUN	Np	_	16	nmod	_	SpaceAfter=No
+20	thời đại A	thời đại a	NOUN	Np	_	13	nmod	_	SpaceAfter=No
 21	bbasid Caliphate	bbasid caliphate	NOUN	Np	_	20	compound	_	SpaceAfter=No
 22	,	,	PUNCT	,	_	5	punct	_	_
 23	khi	khi	NOUN	N	_	5	obl	_	_
-24	phần	phần	NOUN	N	_	31	nsubj	_	_
-25	lớn thế	lớn thế	NOUN	N	_	24	compound	_	_
+24	phần	phần	NOUN	N	_	32	nsubj	_	_
+25	lớn thế	lớn thế	NOUN	N	_	24	amod	_	_
 26	giới	giới	NOUN	N	_	24	compound	_	_
-27	Hồi giáo	Hồi giáo	NOUN	N	_	24	compound	_	_
-28	trong	trong	ADP	E	_	29	case	_	_
-29	lịch sử	lịch sử	NOUN	N	_	24	nmod	_	_
-30	đang	đang	X	R	_	31	advmod	_	_
-31	trải qua	trải qua	VERB	V	_	5	parataxis	_	_
-32	thời kỳ	thời kỳ	NOUN	N	_	31	obj	_	_
-33	hưng thịnh	hưng thịnh	VERB	V	_	32	xcomp	_	_
-34	về	về	ADP	E	_	35	case	_	_
-35	khoa học	khoa học	NOUN	N	_	33	obl	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	37	punct	_	_
-37	kinh tế	kinh tế	NOUN	N	_	35	conj	_	_
-38	và	và	SCONJ	CC	_	39	cc	_	_
-39	văn hóa	văn hóa	NOUN	N	_	35	conj	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	5	punct	_	_
+27	Hồi	Hồi	NOUN	Np	_	24	compound	_	_
+28	giáo	giáo	VERB	V	_	24	xcomp	_	_
+29	trong	trong	ADP	E	_	30	case	_	_
+30	lịch sử	lịch sử	NOUN	N	_	24	nmod	_	_
+31	đang	đang	X	R	_	32	advmod	_	_
+32	trải qua	trải qua	VERB	V	_	23	ccomp	_	_
+33	thời kỳ	thời kỳ	NOUN	N	_	32	obj	_	_
+34	hưng thịnh	hưng thịnh	VERB	V	_	33	xcomp	_	_
+35	về	về	ADP	E	_	36	case	_	_
+36	khoa học	khoa học	NOUN	N	_	33	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	,	_	38	punct	_	_
+38	kinh tế	kinh tế	NOUN	N	_	36	conj	_	_
+39	và	và	SCONJ	CC	_	40	cc	_	_
+40	văn hóa	văn hóa	NOUN	N	_	36	conj	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 15
 # text = Sự mở rộng của thế giới Hồi giáo liên quan đến nhiều caliphate khác nhau, như Đế chế Ottoman, thương nhân và việc chuyển đổi sang Hồi giáo bằng các hoạt động truyền giáo (dawah).
 1	Sự	Sự	PROPN	P	_	2	nsubj	_	_
 2	mở rộng	mở rộng	VERB	V	_	8	nsubj	_	_
@@ -491,24 +483,19 @@
 18	,	,	PUNCT	,	_	19	punct	_	_
 19	thương nhân	thương nhân	NOUN	N	_	17	conj	_	_
 20	và	và	SCONJ	CC	_	21	cc	_	_
-21	việc	việc	NOUN	N	_	11	conj	_	_
-22	chuyển đổi	chuyển đổi	VERB	V	_	21	xcomp	_	_
-23	sang	sang	VERB	V	_	22	xcomp	_	_
-24	Hồi	Hồi	NOUN	Np	_	22	obj	_	_
-25	giáo	giáo	VERB	V	_	22	ccomp	_	_
-26	bằng	bằng	ADP	E	_	28	case	_	_
-27	các	các	DET	L	_	28	det	_	_
-28	hoạt động	hoạt động	NOUN	N	_	25	obl	_	_
-29	truyền giáo	truyền giáo	NOUN	N	_	28	compound	_	_
-30	(dawah)	(dawah)	NOUN	N	_	29	compound	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+21	việc	việc	NOUN	N	_	16	conj	_	_
+22	chuyển đổi sang	chuyển đổi sang	VERB	V	_	21	xcomp	_	_
+23	Hồi	Hồi	NOUN	Np	_	21	compound	_	_
+24	giáo	giáo	VERB	V	_	22	ccomp	_	_
+25	bằng	bằng	ADP	E	_	27	case	_	_
+26	các	các	DET	L	_	27	det	_	_
+27	hoạt động	hoạt động	NOUN	N	_	24	obl	_	_
+28	truyền giáo	truyền giáo	NOUN	N	_	27	compound	_	_
+29	(dawah)	(dawah)	NOUN	N	_	28	compound	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 16
 # text = Hầu hết người Hồi giáo là thuộc một trong hai giáo phái; Sunni (75-90%) hoặc Shia (10-20%).
 1	Hầu	Hầu	NOUN	A	_	3	advmod	_	_
 2	hết	hết	VERB	V	_	3	xcomp	_	_
@@ -530,7 +517,7 @@
 18	(10-20%)	(10-20%)	NUM	M	NumType=Card	17	nummod	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 17
 # text = Khoảng 13% người Hồi giáo sống ở Indonesia, quốc gia đa số Hồi giáo lớn nhất; 31 % người Hồi giáo sống ở Nam Á, dân số Hồi giáo lớn nhất thế giới; 20 % tại Trung Đông, Bắc Phi, nơi đây là tôn giáo thống trị; và 15% ở châu Phi cận Sahara.
 1	Khoảng	Khoảng	ADJ	A	_	3	advmod	_	_
 2	13%	13%	NUM	M	NumType=Card	3	nummod	_	_
@@ -587,7 +574,7 @@
 53	Sahara	Sahara	NOUN	Np	_	52	obj	_	SpaceAfter=No
 54	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 18
 # text = Các cộng đồng Hồi giáo có quy mô cũng được tìm thấy ở Châu Mỹ, Kavkaz, Trung Á, Trung Quốc, Châu Âu, Đông Nam Á lục địa, Philippines và Nga.
 1	Các	Các	DET	L	_	3	det	_	_
 2	cộng	cộng	NOUN	Nc	_	3	compound	_	_
@@ -601,26 +588,25 @@
 10	tìm	tìm	VERB	V	_	0	root	_	_
 11	thấy	thấy	VERB	V	_	10	xcomp	_	_
 12	ở	ở	ADP	E	_	13	case	_	_
-13	Châu	Châu	NOUN	N	_	10	advcl	_	_
-14	Mỹ	Mỹ	NOUN	Np	_	13	compound	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	27	punct	_	_
-16	Kavkaz	Kavkaz	NOUN	Np	_	13	appos	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	27	punct	_	_
-18	Trung Á	Trung á	NOUN	Np	_	13	appos	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	27	punct	_	_
-20	Trung Quốc	Trung Quốc	NOUN	Np	_	13	appos	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	27	punct	_	_
-22	Châu Âu	Châu Âu	NOUN	Np	_	25	conj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	24	punct	_	_
-24	Đông Nam	Đông Nam	NOUN	Np	_	25	conj	_	_
-25	Á lục địa	á lục địa	NOUN	Np	_	13	compound	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	27	punct	_	_
-27	Philippines	Philippines	NOUN	Np	_	25	conj	_	_
-28	và	và	SCONJ	CC	_	29	cc	_	_
-29	Nga	Nga	NOUN	Np	_	25	conj	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	10	punct	_	_
+13	Châu Mỹ	Châu Mỹ	NOUN	Np	_	10	advcl	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	26	punct	_	_
+15	Kavkaz	Kavkaz	NOUN	Np	_	13	appos	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	26	punct	_	_
+17	Trung Á	Trung á	NOUN	Np	_	13	appos	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	26	punct	_	_
+19	Trung Quốc	Trung Quốc	NOUN	Np	_	13	appos	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	26	punct	_	_
+21	Châu Âu	Châu Âu	NOUN	Np	_	24	conj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	Đông Nam	Đông Nam	NOUN	Np	_	24	conj	_	_
+24	Á lục địa	á lục địa	NOUN	Np	_	10	obj	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	26	punct	_	_
+26	Philippines	Philippines	NOUN	Np	_	24	conj	_	_
+27	và	và	SCONJ	CC	_	28	cc	_	_
+28	Nga	Nga	NOUN	Np	_	24	conj	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 4
+# sent_id = 19
 # text = Hồi giáo là tôn giáo lớn phát triển nhanh nhất trên thế giới.
 1	Hồi	Hồi	NOUN	Np	_	4	nsubj	_	_
 2	giáo	giáo	VERB	V	_	4	nsubj	_	_
@@ -633,24 +619,15 @@
 9	trên	trên	ADP	E	_	10	case	_	_
 10	thế	thế	PROPN	P	_	6	advcl	_	_
 11	giới	giới	NOUN	N	_	10	compound	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+12	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 20
 # text = Nguồn gốc
-1	Nguồn	Nguồn	VERB	V	_	0	root	_	_
-2	gốc	gốc	NOUN	N	_	1	obj	_	SpaceAfter=No
+1	Nguồn gốc	Nguồn gốc	NOUN	N	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 21
 # text = Trong lịch sử, đạo Hồi ra đời vào thế kỷ 7 tại bán đảo Ả Rập, do Thiên sứ Muhammad nhận mặc khải của thượng đế truyền lại cho con người qua thiên thần Jibrael (Gabriel).
 1	Trong	Trong	ADP	E	_	2	case	_	_
 2	lịch sử	lịch sử	NOUN	N	_	6	obl	_	SpaceAfter=No
@@ -683,7 +660,7 @@
 29	(Gabriel)	(gabriel)	NOUN	Np	_	27	compound	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 22
 # text = Đạo Hồi chỉ tôn thờ Thánh Allah Đấng Tối cao, Đấng Duy Nhất (tiếng Ả Rập: الله Allāh).
 1	Đạo	Đạo	NOUN	Np	_	4	nsubj	_	_
 2	Hồi	Hồi	NOUN	Np	_	4	nsubj	_	_
@@ -691,15 +668,16 @@
 4	tôn	tôn	VERB	V	_	0	root	_	_
 5	thờ	thờ	NOUN	N	_	4	obj	_	_
 6	Thánh Allah	Thánh aLlah	NOUN	Np	_	5	compound	_	_
-7	Đấng Tối cao	Đấng tối Cao	NOUN	Np	_	5	compound	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	9	punct	_	_
-9	Đấng Duy Nhất (tiếng	Đấng Duy nhất (tIếng	NOUN	Np	_	7	conj	_	_
-10	Ả Rập	ả rập	NOUN	Ny	_	9	compound	_	SpaceAfter=No
-11	:	:	PUNCT	:	_	4	punct	_	_
-12	الله Allāh)	الله allāH)	NOUN	Np	_	4	obj	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	4	punct	_	_
+7	Đấng	Đấng	NOUN	R	_	8	advmod	_	_
+8	Tối cao	Tối cao	NOUN	Np	_	5	compound	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	Đấng Duy Nhất (tiếng	Đấng Duy nhất (tIếng	NOUN	Np	_	8	conj	_	_
+11	Ả Rập	ả rập	NOUN	Ny	_	8	compound	_	SpaceAfter=No
+12	:	:	PUNCT	:	_	4	punct	_	_
+13	الله Allāh)	الله allāH)	NOUN	Np	_	4	obj	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 23
 # text = Đối với tín đồ, Muhammad là vị Thiên Sứ cuối cùng được Allah mặc khải Thiên Kinh Qur'an (còn viết là Koran) qua Thiên thần Jibrael.
 1	Đối với	Đối với	ADP	E	_	2	case	_	_
 2	tín đồ	tín đồ	NOUN	N	_	7	advcl	_	SpaceAfter=No
@@ -721,14 +699,10 @@
 18	qua	qua	ADP	E	_	19	case	_	_
 19	Thiên thần	Thiên thần	NOUN	N	_	15	obl	_	_
 20	Jibrael	Jibrael	NOUN	Np	_	19	compound	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 24
 # text = Islam theo tiếng Ả rập có nghĩa là phục tùng, vâng mệnh, tuân theo, ngoài ra Islam còn là danh từ ghép từ 2 chữ Ikhlas & Salam (Bình an, Thuần khiết).
 1	Islam	Islam	NOUN	Np	_	5	nsubj	_	_
 2	theo	theo	ADP	E	_	3	case	_	_
@@ -761,7 +735,7 @@
 29	khiết)	khiết)	VERB	V	_	23	conj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 25
 # text = Theo Hồi giáo, danh từ Islam được Allah dùng để gọi tôn giáo mà Ngài ban xuống được tìm thấy trong kinh Quran nên người Hồi giáo sử dụng tên này cho tôn giáo của mình
 1	Theo	Theo	ADP	V	_	3	discourse	_	_
 2	Hồi	Hồi	NOUN	Np	_	3	nsubj	_	_
@@ -775,34 +749,29 @@
 10	dùng	dùng	VERB	V	_	0	root	_	_
 11	để	để	ADP	E	_	12	case	_	_
 12	gọi	gọi	VERB	V	_	10	mark	_	_
-13	tôn	tôn	NOUN	N	_	12	obj	_	_
-14	giáo	giáo	ADJ	A	_	13	amod	_	_
-15	mà	mà	CCONJ	C	_	17	cc	_	_
-16	Ngài ban	Ngài ban	NOUN	Np	_	17	nsubj	_	_
-17	xuống	xuống	VERB	V	_	12	ccomp	_	_
-18	được	được	X	R	_	19	aux:pass	_	_
-19	tìm	tìm	VERB	V	_	12	ccomp	_	_
-20	thấy	thấy	VERB	V	_	19	xcomp	_	_
-21	trong	trong	ADP	E	_	22	case	_	_
-22	kinh Quran	kinh quran	NOUN	Np	_	19	obl	_	_
-23	nên	nên	CCONJ	C	_	10	cc	_	_
-24	người	người	NOUN	N	_	26	nsubj	_	_
-25	Hồi	Hồi	NOUN	Np	_	24	compound	_	_
-26	giáo	giáo	VERB	V	_	10	parataxis	_	_
-27	sử dụng	sử dụng	VERB	V	_	26	xcomp	_	_
-28	tên	tên	NOUN	N	_	27	obj	_	_
-29	này	này	PROPN	P	_	28	det	_	_
-30	cho	cho	ADP	E	_	31	case	_	_
-31	tôn giáo	tôn giáo	NOUN	N	_	26	obl	_	_
-32	của	của	ADP	E	_	33	case	_	_
-33	mình	mình	PROPN	P	_	31	nmod	_	SpacesAfter=\n
+13	tôn giáo	tôn giáo	NOUN	N	_	12	obj	_	_
+14	mà	mà	CCONJ	C	_	16	cc	_	_
+15	Ngài ban	Ngài ban	NOUN	Np	_	16	nsubj	_	_
+16	xuống	xuống	VERB	V	_	12	ccomp	_	_
+17	được	được	X	R	_	18	aux:pass	_	_
+18	tìm	tìm	VERB	V	_	12	ccomp	_	_
+19	thấy	thấy	VERB	V	_	18	xcomp	_	_
+20	trong	trong	ADP	E	_	21	case	_	_
+21	kinh Quran	kinh quran	NOUN	Np	_	18	obl	_	_
+22	nên	nên	CCONJ	C	_	10	cc	_	_
+23	người	người	NOUN	N	_	25	nsubj	_	_
+24	Hồi	Hồi	NOUN	Np	_	23	compound	_	_
+25	giáo	giáo	VERB	V	_	10	parataxis	_	_
+26	sử dụng	sử dụng	VERB	V	_	25	xcomp	_	_
+27	tên	tên	NOUN	N	_	26	obj	_	_
+28	này	này	PROPN	P	_	27	det	_	_
+29	cho	cho	ADP	E	_	30	case	_	_
+30	tôn giáo	tôn giáo	NOUN	N	_	25	obl	_	_
+31	của	của	ADP	E	_	32	case	_	_
+32	mình	mình	PROPN	P	_	30	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 26
 # text = Các tên gọi và cụm từ liên quan
 1	Các	Các	DET	L	_	2	det	_	_
 2	tên	tên	NOUN	N	_	7	nsubj	_	_
@@ -810,27 +779,24 @@
 4	và	và	SCONJ	CC	_	5	cc	_	_
 5	cụm	cụm	NOUN	N	_	2	conj	_	_
 6	từ	từ	ADP	E	_	7	case	_	_
-7	liên quan	liên quan	VERB	V	_	0	root	_	SpaceAfter=No
+7	liên quan	liên quan	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 27
 # text = Nguyên nghĩa của Hồi giáo trong tiếng Ả Rập là 'Islam'
-1	Nguyên nghĩa	Nguyên nghĩa	NOUN	N	_	9	nsubj	_	_
+1	Nguyên nghĩa	Nguyên nghĩa	NOUN	N	_	10	nsubj	_	_
 2	của	của	ADP	E	_	3	case	_	_
 3	Hồi	Hồi	NOUN	Np	_	1	nmod	_	_
-4	giáo	giáo	VERB	V	_	9	csubj	_	_
+4	giáo	giáo	VERB	V	_	10	csubj	_	_
 5	trong	trong	ADP	E	_	6	case	_	_
 6	tiếng	tiếng	NOUN	N	_	4	obl	_	_
-7	Ả Rập	ả rập	NOUN	Ny	_	6	compound	_	_
-8	là	là	AUX	V	_	9	cop	_	_
-9	'Islam	'islam	NOUN	Np	_	0	root	_	SpaceAfter=No
-10	'	'	PUNCT	.	_	9	punct	_	_
+7	Ả	ả	NOUN	Ny	_	6	compound	_	_
+8	Rập	Rập	NOUN	Np	_	6	compound	_	_
+9	là	là	AUX	V	_	10	cop	_	_
+10	'Islam	'islam	NOUN	Np	_	0	root	_	SpaceAfter=No
+11	'	'	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 28
 # text = và có nghĩa là "vâng mệnh, quy phục Thượng đế".
 1	và	và	SCONJ	CC	_	2	cc	_	_
 2	có	có	VERB	V	_	0	root	_	_
@@ -845,7 +811,7 @@
 11	"	"	PUNCT	"	_	2	punct	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 29
 # text = Người theo Islam, trong tiếng Ả Rập gọi là 'Muslim', do đó có các chữ muslim, moslem tiếng Anh và musulman tiếng Pháp, nghĩa là "người từ Mosul".
 1	Người	Người	NOUN	N	_	2	nsubj	_	_
 2	theo	theo	VERB	V	_	0	root	_	_
@@ -882,7 +848,7 @@
 33	"	"	PUNCT	"	_	27	punct	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 30
 # text = Danh từ "Hồi giáo" xuất xứ từ dân tộc Hồi Hột.
 1	Danh	Danh	NOUN	Np	_	2	nsubj	_	_
 2	từ	từ	ADP	E	_	0	root	_	_
@@ -898,7 +864,7 @@
 12	Hột	Hột	NOUN	Np	_	9	compound	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 5
+# sent_id = 31
 # text = Hồi Hột là nước láng giềng phương bắc của Trung Quốc từ năm 616 đến 840.
 1	Hồi	Hồi	CCONJ	C	_	4	cc	_	_
 2	Hột	Hột	NOUN	Np	_	4	nsubj	_	_
@@ -916,7 +882,7 @@
 14	840	840	NUM	M	NumType=Card	11	nummod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 32
 # text = Lúc rộng lớn nhất lãnh thổ họ đông đến Mãn Châu, tây đến Trung Á , và họ đã giúp nhà Đường dẹp được loạn An Lộc Sơn.
 1	Lúc rộng	Lúc rộng	NOUN	N	_	6	nsubj	_	_
 2	lớn	lớn	ADJ	A	_	6	xcomp	_	_
@@ -943,7 +909,7 @@
 23	Sơn	Sơn	NOUN	Np	_	21	compound	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 7
+# sent_id = 33
 # text = Với thời gian, cách gọi đổi thành "Hồi Hồi".
 1	Với	Với	ADP	E	_	2	case	_	_
 2	thời gian	thời gian	NOUN	N	_	5	obl	_	SpaceAfter=No
@@ -957,7 +923,7 @@
 10	"	"	PUNCT	"	_	9	punct	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 8
+# sent_id = 34
 # text = Tài liệu xưa nhất dùng danh từ "Hồi Hồi" là Liêu Sử, soạn vào thế kỷ 12.
 1	Tài liệu	Tài liệu	NOUN	N	_	4	nsubj	_	_
 2	xưa	xưa	ADJ	A	_	4	obl	_	_
@@ -978,37 +944,38 @@
 17	kỷ 12	kỷ 12	NUM	M	NumType=Card	16	nummod	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 9
+# sent_id = 35
 # text = Đời nhà Nguyên (1260 - 1368), tại Trung Quốc, cụm từ "người Hồi Hồi" được dùng để chỉ định người Trung Á, bất luận theo tín ngưỡng nào.
-1	Đời nhà Nguyên	Đời Nhà ngUyên	NOUN	Np	_	15	nsubj	_	_
-2	(1260 - 1368)	(1260 - 1368)	NOUN	M	NumType=Card	15	obl	_	SpaceAfter=No
-3	,	,	PUNCT	,	_	15	punct	_	_
-4	tại	tại	ADP	E	_	5	case	_	_
-5	Trung Quốc	Trung Quốc	NOUN	Np	_	15	advcl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	15	punct	_	_
-7	cụm	cụm	NOUN	N	_	15	nsubj	_	_
-8	từ	từ	ADP	E	_	10	case	_	_
-9	"	"	PUNCT	"	_	10	punct	_	SpaceAfter=No
-10	người	người	NOUN	N	_	7	nmod	_	_
-11	Hồi	Hồi	NOUN	Np	_	10	compound	_	_
-12	Hồi	Hồi	NOUN	Np	_	10	compound	_	SpaceAfter=No
-13	"	"	PUNCT	"	_	7	punct	_	_
-14	được	được	VERB	V	_	15	aux:pass	_	_
-15	dùng	dùng	VERB	V	_	0	root	_	_
-16	để	để	ADP	E	_	18	case	_	_
-17	chỉ	chỉ	X	R	_	18	advmod	_	_
-18	định	định	VERB	V	_	15	ccomp	_	_
-19	người	người	NOUN	N	_	18	obj	_	_
-20	Trung	Trung	NOUN	Np	_	19	compound	_	_
-21	Á	á	VERB	V	_	19	xcomp	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	23	punct	_	_
-23	bất luận	bất luận	VERB	V	_	18	conj	_	_
-24	theo	theo	ADP	E	_	25	case	_	_
-25	tín ngưỡng	tín ngưỡng	NOUN	N	_	23	obl	_	_
-26	nào	nào	PROPN	P	_	25	det	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	15	punct	_	_
+1	Đời nhà	Đời nhà	X	N	_	16	advmod	_	_
+2	Nguyên	Nguyên	NOUN	Np	_	16	nsubj	_	_
+3	(1260 - 1368)	(1260 - 1368)	NOUN	N	_	16	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	16	punct	_	_
+5	tại	tại	ADP	E	_	6	case	_	_
+6	Trung Quốc	Trung Quốc	NOUN	Np	_	16	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	16	punct	_	_
+8	cụm	cụm	NOUN	N	_	16	nsubj	_	_
+9	từ	từ	ADP	E	_	11	case	_	_
+10	"	"	PUNCT	"	_	11	punct	_	SpaceAfter=No
+11	người	người	NOUN	N	_	8	nmod	_	_
+12	Hồi	Hồi	NOUN	Np	_	11	compound	_	_
+13	Hồi	Hồi	NOUN	Np	_	11	compound	_	SpaceAfter=No
+14	"	"	PUNCT	"	_	8	punct	_	_
+15	được	được	VERB	V	_	16	aux:pass	_	_
+16	dùng	dùng	VERB	V	_	0	root	_	_
+17	để	để	ADP	E	_	19	case	_	_
+18	chỉ	chỉ	X	R	_	19	advmod	_	_
+19	định	định	VERB	V	_	16	ccomp	_	_
+20	người	người	NOUN	N	_	19	obj	_	_
+21	Trung	Trung	NOUN	Np	_	20	compound	_	_
+22	Á	á	VERB	V	_	20	xcomp	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	bất luận	bất luận	VERB	V	_	19	conj	_	_
+25	theo	theo	ADP	E	_	26	case	_	_
+26	tín ngưỡng	tín ngưỡng	NOUN	N	_	24	obl	_	_
+27	nào	nào	PROPN	P	_	26	det	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = 10
+# sent_id = 36
 # text = Đến đời Minh (1368 - 1644), cụm từ "người Hồi Hồi" mới dần dần đổi nghĩa để chỉ định tín đồ Islam.
 1	Đến	Đến	ADP	E	_	2	case	_	_
 2	đời	đời	NOUN	N	_	16	obl	_	_
@@ -1033,14 +1000,10 @@
 21	định	định	VERB	V	_	16	mark	_	_
 22	tín	tín	NOUN	N	_	21	obj	_	_
 23	đồ Islam	đồ islam	NOUN	Nb	_	22	compound	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n
+24	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 37
 # text = Trước đó, người Hán thường gọi Islam là Đại Thực giáo hay đạo A-lạp-bá.
 1	Trước	Trước	ADP	E	_	2	case	_	_
 2	đó	đó	PROPN	P	_	6	obl	_	SpaceAfter=No
@@ -1059,10 +1022,10 @@
 15	bá	bá	NOUN	N	_	12	conj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 38
 # text = "A-lạp-bá" (阿拉伯, bính âm: Ālābó, đọc từ Arabo) là phiên âm tiếng Hán của danh từ "Ả Rập".
 1	"	"	PUNCT	"	_	16	punct	_	SpaceAfter=No
-2	A-lạp	A-lạp	NOUN	Np	_	16	nsubj	_	SpaceAfter=No
+2	A-lạp	A-lạp	NOUN	Ny	_	16	nsubj	_	SpaceAfter=No
 3	-	-	PUNCT	-	_	8	punct	_	SpaceAfter=No
 4	bá	bá	NUM	M	NumType=Card	6	conj	_	SpaceAfter=No
 5	"	"	PUNCT	"	_	4	punct	_	_
@@ -1079,15 +1042,16 @@
 16	phiên âm	phiên âm	NOUN	N	_	0	root	_	_
 17	tiếng	tiếng	NOUN	N	_	16	compound	_	_
 18	Hán	Hán	NOUN	Np	_	17	compound	_	_
-19	của danh	của danh	ADJ	A	_	17	amod	_	_
-20	từ	từ	ADP	E	_	22	case	_	_
-21	"	"	PUNCT	"	_	22	punct	_	SpaceAfter=No
-22	Ả	ả	NOUN	N	_	19	nmod	_	_
-23	Rập	Rập	NOUN	Np	_	22	compound	_	SpaceAfter=No
-24	"	"	PUNCT	"	_	22	punct	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	16	punct	_	_
+19	của	của	ADP	E	_	20	case	_	_
+20	danh	danh	NOUN	N	_	16	nmod	_	_
+21	từ	từ	ADP	E	_	23	case	_	_
+22	"	"	PUNCT	"	_	23	punct	_	SpaceAfter=No
+23	Ả	ả	NOUN	Ny	_	20	nmod	_	_
+24	Rập	Rập	NOUN	Np	_	23	compound	_	SpaceAfter=No
+25	"	"	PUNCT	"	_	23	punct	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = 3
+# sent_id = 39
 # text = "Đại Thực" là phiên âm của chữ "Tazik" (大食, tiếng Hán trung cổ: dhɑ̀ jhiək), tiếng Ba Tư dùng gọi người "Ả Rập" (nhiều khả năng cũng có thể liên quan đến bộ tộc Tajik), vì Tazik là tên một bộ tộc người Ả Rập tiếp xúc nhiều với Ba Tư thời xưa.
 1	"	"	PUNCT	"	_	5	punct	_	SpaceAfter=No
 2	Đại Thực	Đại Thực	NOUN	Np	_	5	nsubj	_	SpaceAfter=No
@@ -1125,27 +1089,24 @@
 34	Tajik)	Tajik)	NOUN	Np	_	33	compound	_	SpaceAfter=No
 35	,	,	PUNCT	,	_	5	punct	_	_
 36	vì	vì	ADP	E	_	21	case	_	_
-37	Tazik là	Tazik là	X	X	_	44	dep	_	_
+37	Tazik là	Tazik là	X	X	_	45	dep	_	_
 38	tên	tên	NOUN	N	_	21	nsubj	_	_
-39	một	một	NUM	M	NumType=Card	41	nummod	_	_
-40	bộ tộc	bộ tộc	NOUN	N	_	38	compound	_	_
-41	người	người	NOUN	N	_	38	compound	_	_
-42	Ả	ả	NOUN	N	_	41	compound	_	_
-43	Rập	Rập	NOUN	Np	_	41	compound	_	_
-44	tiếp xúc	tiếp xúc	VERB	V	_	38	ccomp	_	_
-45	nhiều	nhiều	ADJ	A	_	44	xcomp	_	_
-46	với	với	ADP	E	_	48	case	_	_
-47	Ba	Ba	NOUN	M	NumType=Card	48	compound	_	_
-48	Tư	Tư	NOUN	Np	_	44	obl	_	_
-49	thời xưa	thời xưa	NOUN	N	_	44	obl	_	SpaceAfter=No
-50	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+39	một	một	NUM	M	NumType=Card	42	nummod	_	_
+40	bộ	bộ	NOUN	Nc	_	42	compound	_	_
+41	tộc	tộc	NOUN	N	_	42	compound	_	_
+42	người	người	NOUN	N	_	45	nsubj	_	_
+43	Ả	ả	NOUN	N	_	42	compound	_	_
+44	Rập	Rập	NOUN	Np	_	42	compound	_	_
+45	tiếp xúc	tiếp xúc	VERB	V	_	38	ccomp	_	_
+46	nhiều	nhiều	ADJ	A	_	45	xcomp	_	_
+47	với	với	ADP	E	_	49	case	_	_
+48	Ba	Ba	NOUN	M	NumType=Card	49	compound	_	_
+49	Tư	Tư	NOUN	Np	_	45	obl	_	_
+50	thời xưa	thời xưa	NOUN	N	_	45	obl	_	SpaceAfter=No
+51	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 40
 # text = Do "Hồi Hồi" là tên gọi chủng tộc, không phải là dịch nghĩa của chữ Islam hay một tôn chỉ của Islam, nên một số người hạn chế dùng danh từ "Hồi giáo" hay "đạo Hồi".
 1	Do	Do	ADP	E	_	7	case	_	_
 2	"	"	PUNCT	"	_	7	punct	_	SpaceAfter=No
@@ -1185,7 +1146,7 @@
 36	"	"	PUNCT	"	_	34	punct	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 41
 # text = Trường hợp các tên "Đại Thực" hay "A-lạp-bá" cũng thế.
 1	Trường hợp	Trường hợp	NOUN	N	_	13	advcl	_	_
 2	các	các	DET	L	_	3	det	_	_
@@ -1202,7 +1163,7 @@
 13	thế	thế	PROPN	P	_	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 42
 # text = Bởi thế, tại Trung Quốc, ngay từ năm 1335, thời nhà Nguyên, đã có người đề ra cụm từ Thanh Chân giáo (清真教) để thích nghi hơn với tiếng Hán.
 1	Bởi	Bởi	CCONJ	C	_	16	cc	_	_
 2	thế	thế	PROPN	P	_	16	obj	_	SpaceAfter=No
@@ -1226,16 +1187,15 @@
 20	từ	từ	ADP	E	_	21	case	_	_
 21	Thanh Chân	Thanh Chân	NOUN	Np	_	19	nmod	_	_
 22	giáo (清真教)	giáo (清真教)	NOUN	N	_	19	compound	_	_
-23	để	để	ADP	E	_	17	case	_	_
-24	thích	thích	VERB	V	_	23	mark	_	_
-25	nghi	nghi	VERB	V	_	24	xcomp	_	_
-26	hơn	hơn	X	R	_	24	advmod	_	_
-27	với	với	ADP	E	_	28	case	_	_
-28	tiếng	tiếng	NOUN	N	_	24	obl	_	_
-29	Hán	Hán	NOUN	Np	_	28	compound	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	16	punct	_	_
+23	để	để	ADP	E	_	18	case	_	_
+24	thích nghi	thích nghi	VERB	V	_	23	mark	_	_
+25	hơn	hơn	X	R	_	24	advmod	_	_
+26	với	với	ADP	E	_	27	case	_	_
+27	tiếng	tiếng	NOUN	N	_	24	obl	_	_
+28	Hán	Hán	NOUN	Np	_	27	compound	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = 4
+# sent_id = 43
 # text = Đề nghị này được hưởng ứng rộng rãi nên ngày nay Thanh Chân giáo là cụm từ được ghi trong nhiều từ điển tiếng Hán .
 1	Đề nghị	Đề nghị	NOUN	N	_	4	nsubj	_	_
 2	này	này	PROPN	P	_	1	det	_	_
@@ -1262,7 +1222,7 @@
 23	Hán	Hán	NOUN	Np	_	22	compound	_	_
 24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 44
 # text = Tại Trung Quốc ngày nay cũng có nhiều "Thanh Chân tự" (清真寺) (thánh đường Islam) và "Thanh Chân thực đường" (清真菜堂) (quán ăn, nhà ăn halal).
 1	Tại Trung Quốc	Tại tRung quốc	NOUN	Np	_	4	nsubj	_	_
 2	ngày nay	ngày nay	NOUN	N	_	4	obl	_	_
@@ -1288,14 +1248,10 @@
 22	nhà	nhà	NOUN	N	_	20	conj	_	_
 23	ăn	ăn	VERB	V	_	16	ccomp	_	_
 24	halal)	halal)	NOUN	N	_	23	obj	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+25	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 45
 # text = Ngày nay tại Trung Quốc người ta cũng thường gọi Islam theo phiên âm là Y Tư Lan giáo (伊斯蘭教 Yīsīlán jiào)..
 1	Ngày nay	Ngày nay	NOUN	N	_	6	obl	_	_
 2	tại	tại	ADP	E	_	3	case	_	_
@@ -1309,13 +1265,14 @@
 10	phiên âm	phiên âm	NOUN	N	_	7	obl	_	_
 11	là	là	CCONJ	C	_	15	cc	_	_
 12	Y	Y	X	Y	_	15	dep	_	_
-13	Tư	Tư	NOUN	Np	_	15	compound	_	_
+13	Tư	Tư	NOUN	Np	_	15	nsubj	_	_
 14	Lan	Lan	NOUN	Np	_	15	nsubj	_	_
-15	giáo (伊斯蘭教	giáo (伊斯蘭教	VERB	V	_	10	ccomp	_	_
-16	Yīsīlán jiào)	Yīsīlán jiào)	NOUN	Np	_	15	obj	_	SpaceAfter=No
-17	..	..	PUNCT	...	_	6	punct	_	_
+15	giáo	giáo	VERB	V	_	10	xcomp	_	_
+16	(伊斯蘭教	(伊斯蘭教	NOUN	N	_	15	obj	_	_
+17	Yīsīlán jiào)	Yīsīlán jiào)	NOUN	Np	_	15	obj	_	SpaceAfter=No
+18	..	..	PUNCT	...	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 46
 # text = Cơ quan đại diện Islam chính thức tại Trung Quốc có tên là "Hiệp hội Y Tư Lan giáo Trung Quốc" (中国伊斯兰教协会 Zhōngguó Yīsīlánjiào xiéhuì) được ra đời ngày 11 tháng 5 năm 1953, trực thuộc chính quyền và có trụ sở tại Bắc Kinh.
 1	Cơ quan	Cơ quan	NOUN	N	_	21	nsubj	_	_
 2	đại diện	đại diện	VERB	V	_	1	xcomp	_	_
@@ -1355,7 +1312,7 @@
 36	Bắc Kinh	Bắc Kinh	NOUN	Np	_	33	advcl	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	21	punct	_	_
 
-# sent_id = 3
+# sent_id = 47
 # text = Wikipedia Trung văn cũng dùng danh từ Y Tư Lan giáo.
 1	Wikipedia	Wikipedia	NOUN	Np	_	4	nsubj	_	_
 2	Trung văn	Trung văn	NOUN	Np	_	4	nsubj	_	_
@@ -1366,14 +1323,10 @@
 7	Tư	Tư	NOUN	Np	_	9	nsubj	_	_
 8	Lan	Lan	NOUN	Np	_	9	nsubj	_	_
 9	giáo	giáo	VERB	V	_	4	ccomp	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+10	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 48
 # text = Nhiều tài liệu, văn bản trong tiếng Việt từ nhiều năm nay cũng dùng danh từ đạo Islam hay đạo Ixlam.
 1	Nhiều	Nhiều	ADJ	A	_	2	amod	_	_
 2	tài liệu	tài liệu	NOUN	N	_	13	nsubj	_	SpaceAfter=No
@@ -1395,7 +1348,7 @@
 18	Ixlam	Ixlam	NOUN	Np	_	17	obj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 49
 # text = Tuy nhiên, nhiều tín hữu Islam nói tiếng Việt vẫn dùng danh từ Hồi giáo vì đã quen nghĩ đến, nói đến danh từ này một cách tôn kính.
 1	Tuy nhiên	Tuy nhiên	CCONJ	C	_	10	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	10	punct	_	_
@@ -1422,23 +1375,15 @@
 23	một	một	NUM	M	NumType=Card	24	nummod	_	_
 24	cách	cách	NOUN	N	_	19	obj	_	_
 25	tôn kính	tôn kính	ADJ	A	_	24	amod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 50
 # text = Giáo lý
-1	Giáo lý	Giáo lý	NOUN	N	_	0	root	_	SpaceAfter=No
+1	Giáo lý	Giáo lý	NOUN	N	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 51
 # text = Tuy cùng một hệ thống nhất thần của các tôn giáo khởi nguồn từ Abraham nhưng giáo lý Hồi giáo không chịu ảnh hưởng tư tưởng của Ki tô giáo và Do Thái giáo.
 1	Tuy	Tuy	CCONJ	C	_	21	cc	_	_
 2	cùng	cùng	CCONJ	C	_	21	cc	_	_
@@ -1473,7 +1418,7 @@
 31	Thái giáo	Thái giáo	NOUN	Np	_	28	conj	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	21	punct	_	_
 
-# sent_id = 2
+# sent_id = 52
 # text = Thể hiện rõ trong kinh Koran (trong 6219 câu của kinh này đã thể hiện nội dung của kinh Cựu Ước và Tân Ước).
 1	Thể hiện	Thể hiện	X	R	_	12	advmod	_	_
 2	rõ	rõ	ADJ	A	_	12	advcl	_	_
@@ -1495,7 +1440,7 @@
 18	Tân Ước)	Tân ước)	NOUN	Np	_	16	conj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = 3
+# sent_id = 53
 # text = Không như những tôn giáo bạn, đạo Hồi chỉ có duy nhất một quyển thiên kinh Qur'an, gồm có 114 chương, 6236 tiết.
 1	Không	Không	X	R	Polarity=Neg	2	advmod	_	_
 2	như	như	CCONJ	C	_	11	advcl	_	_
@@ -1522,38 +1467,35 @@
 23	tiết	tiết	NOUN	N	_	20	conj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 4
+# sent_id = 54
 # text = Đối với các tín đồ Hồi giáo, thiên kinh Qur'an là một vật linh thiêng, vì đó chính là lời phán của Allah Đấng Toàn Năng.
 1	Đối với	Đối với	ADP	E	_	3	case	_	_
 2	các	các	DET	L	_	3	det	_	_
-3	tín đồ	tín đồ	NOUN	N	_	10	nmod	_	_
-4	Hồi giáo	Hồi giáo	NOUN	Np	_	3	compound	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	10	punct	_	_
-6	thiên	thiên	NOUN	N	_	10	nsubj	_	_
-7	kinh Qur'an	kinh qur'an	NOUN	Np	_	6	compound	_	_
-8	là	là	AUX	V	_	10	cop	_	_
-9	một	một	NUM	M	NumType=Card	10	nummod	_	_
-10	vật	vật	NOUN	N	_	0	root	_	_
-11	linh thiêng	linh thiêng	ADJ	A	_	10	amod	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	10	punct	_	_
-13	vì	vì	ADP	E	_	17	case	_	_
-14	đó	đó	PROPN	P	_	17	nsubj	_	_
-15	chính	chính	PART	R	_	17	advmod	_	_
-16	là	là	AUX	V	_	17	cop	_	_
-17	lời phán	lời phán	NOUN	N	_	10	parataxis	_	_
-18	của	của	ADP	E	_	19	case	_	_
-19	Allah	Allah	NOUN	Np	_	17	nmod	_	_
-20	Đấng	Đấng	NOUN	Np	_	21	compound	_	_
-21	Toàn	Toàn	NOUN	Np	_	17	compound	_	_
-22	Năng	Năng	NOUN	Np	_	17	compound	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\n
+3	tín đồ	tín đồ	NOUN	N	_	11	nsubj	_	_
+4	Hồi	Hồi	NOUN	Np	_	3	compound	_	_
+5	giáo	giáo	VERB	V	_	3	ccomp	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	thiên	thiên	NOUN	N	_	11	nsubj	_	_
+8	kinh Qur'an	kinh qur'an	NOUN	Np	_	7	compound	_	_
+9	là	là	AUX	V	_	11	cop	_	_
+10	một	một	NUM	M	NumType=Card	11	nummod	_	_
+11	vật	vật	NOUN	N	_	0	root	_	_
+12	linh thiêng	linh thiêng	ADJ	A	_	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	11	punct	_	_
+14	vì	vì	ADP	E	_	18	case	_	_
+15	đó	đó	PROPN	P	_	18	nsubj	_	_
+16	chính	chính	PART	R	_	18	advmod	_	_
+17	là	là	AUX	V	_	18	cop	_	_
+18	lời phán	lời phán	NOUN	N	_	11	parataxis	_	_
+19	của	của	ADP	E	_	20	case	_	_
+20	Allah	Allah	NOUN	Np	_	18	nmod	_	_
+21	Đấng	Đấng	NOUN	Np	_	22	compound	_	_
+22	Toàn	Toàn	NOUN	Np	_	18	compound	_	_
+23	Năng	Năng	NOUN	Np	_	18	compound	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 55
 # text = Người Hồi giáo tin tưởng các vị sứ giả đến trước sứ giả Muhammad, kể từ Adam đến Jesus xuyên qua Noah, Abraham, Moise, v.v.
 1	Người	Người	NOUN	N	_	2	compound	_	_
 2	Hồi	Hồi	NOUN	Np	_	3	nsubj	_	_
@@ -1582,7 +1524,7 @@
 25	v.v	v.v	NOUN	N	_	19	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 56
 # text = Họ cũng tin tưởng Cựu ước và Tân ước là kinh sách của Allah nhưng họ không thi hành theo vì sự "lệch lạc" do người Do Thái giáo và Thiên Chúa giáo tạo ra và thiên kinh Qur'an được Allah mặc khải xuống để điều chỉnh lại những gì đã sai trái ở hai kinh sách đó.
 1	Họ	Họ	PROPN	P	_	3	nsubj	_	_
 2	cũng	cũng	X	R	_	3	advmod	_	_
@@ -1604,7 +1546,7 @@
 18	"	"	PUNCT	"	_	19	punct	_	SpaceAfter=No
 19	lệch lạc	lệch lạc	ADJ	A	_	17	xcomp	_	SpaceAfter=No
 20	"	"	PUNCT	"	_	19	punct	_	_
-21	do	do	ADP	E	_	17	case	_	_
+21	do	do	ADP	E	_	8	case	_	_
 22	người	người	NOUN	N	_	27	nsubj	_	_
 23	Do	Do	NOUN	Np	_	22	compound	_	_
 24	Thái giáo	Thái giáo	NOUN	Np	_	22	compound	_	_
@@ -1613,32 +1555,29 @@
 27	giáo	giáo	VERB	V	_	17	ccomp	_	_
 28	tạo	tạo	VERB	V	_	27	xcomp	_	_
 29	ra	ra	X	R	_	28	advmod	_	_
-30	và	và	SCONJ	CC	_	34	cc	_	_
-31	thiên kinh Qur'an	thiên kinh qur'an	NOUN	Np	_	34	nsubj	_	_
-32	được	được	VERB	V	_	34	aux:pass	_	_
-33	Allah	Allah	NOUN	Np	_	34	nsubj	_	_
-34	mặc	mặc	VERB	V	_	14	ccomp	_	_
-35	khải	khải	VERB	V	_	34	xcomp	_	_
-36	xuống	xuống	VERB	V	_	35	xcomp	_	_
-37	để	để	ADP	E	_	34	case	_	_
-38	điều chỉnh	điều chỉnh	VERB	V	_	37	mark	_	_
-39	lại	lại	X	R	_	38	advmod	_	_
-40	những	những	DET	L	_	41	det	_	_
-41	gì	gì	PROPN	P	_	38	obj	_	_
-42	đã	đã	X	R	_	43	advmod	_	_
-43	sai trái	sai trái	VERB	V	_	34	ccomp	_	_
-44	ở	ở	ADP	E	_	46	case	_	_
-45	hai	hai	NUM	M	NumType=Card	46	nummod	_	_
-46	kinh sách	kinh sách	NOUN	N	_	43	obl	_	_
-47	đó	đó	PROPN	P	_	46	det	_	SpaceAfter=No
-48	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+30	và	và	SCONJ	CC	_	26	cc	_	_
+31	thiên	thiên	NOUN	N	_	35	nsubj	_	_
+32	kinh Qur'an	kinh qur'an	NOUN	Np	_	31	compound	_	_
+33	được	được	VERB	V	_	35	aux:pass	_	_
+34	Allah	Allah	NOUN	Np	_	35	nsubj	_	_
+35	mặc	mặc	VERB	V	_	8	parataxis	_	_
+36	khải	khải	VERB	V	_	35	xcomp	_	_
+37	xuống	xuống	VERB	V	_	36	xcomp	_	_
+38	để	để	ADP	E	_	35	case	_	_
+39	điều chỉnh	điều chỉnh	VERB	V	_	38	mark	_	_
+40	lại	lại	X	R	_	39	advmod	_	_
+41	những	những	DET	L	_	42	det	_	_
+42	gì	gì	PROPN	P	_	39	obj	_	_
+43	đã	đã	X	R	_	44	advmod	_	_
+44	sai trái	sai trái	VERB	V	_	35	ccomp	_	_
+45	ở	ở	ADP	E	_	47	case	_	_
+46	hai	hai	NUM	M	NumType=Card	47	nummod	_	_
+47	kinh sách	kinh sách	NOUN	N	_	44	obl	_	_
+48	đó	đó	PROPN	P	_	47	det	_	SpaceAfter=No
+49	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 57
 # text = Sự khác nhau giữa Cựu Ước, Tân Ước và Thiên Kinh Qur'an trên quan điểm Đấng Toàn Năng như sau:
 1	Sự	Sự	NOUN	P	_	2	nsubj	_	_
 2	khác	khác	ADJ	A	_	16	advcl	_	_
@@ -1656,25 +1595,17 @@
 14	Toàn	Toàn	NOUN	Np	_	12	compound	_	_
 15	Năng như	Năng như	X	Np	_	16	advmod	_	_
 16	sau	sau	ADJ	A	_	0	root	_	SpaceAfter=No
-17	:	:	PUNCT	:	_	16	punct	_	SpacesAfter=\n
+17	:	:	PUNCT	:	_	16	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 58
 # text = Cựu Ước:
 1	Cựu	Cựu	NOUN	N	_	2	nsubj	_	_
 2	Ước	ước	VERB	V	_	0	root	_	SpaceAfter=No
-3	:	:	PUNCT	:	_	2	punct	_	SpacesAfter=\n
+3	:	:	PUNCT	:	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 59
 # text = sách Sáng Thế 1:27.
 1	sách	sách	NOUN	N	_	0	root	_	_
 2	Sáng	Sáng	NOUN	Np	_	1	compound	_	_
@@ -1682,62 +1613,46 @@
 4	1	1	NUM	M	NumType=Card	2	nummod	_	SpaceAfter=No
 5	:	:	PUNCT	:	_	1	punct	_	SpaceAfter=No
 6	27	27	NUM	M	NumType=Card	1	nummod	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+7	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 60
 # text = Tân Ước:
 1	Tân Ước	Tân ước	NOUN	N	_	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	:	_	1	punct	_	SpacesAfter=\n
+2	:	:	PUNCT	:	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 61
 # text = Tân ước Gioan 10:30.
 1	Tân ước Gioan	Tân Ước gIoan	NOUN	Np	_	0	root	_	_
 2	10	10	NUM	M	NumType=Card	1	nummod	_	SpaceAfter=No
 3	:	:	PUNCT	:	_	1	punct	_	SpaceAfter=No
 4	30	30	NUM	M	NumType=Card	1	nummod	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+5	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = Thiên Kinh Qu'ran:
-1	Thiên Kinh Qu	Thiên kInh qu	NOUN	Np	_	2	nsubj	_	SpaceAfter=No
-2	'ran	'ran	VERB	V	_	0	root	_	SpaceAfter=No
-3	:	:	PUNCT	:	_	2	punct	_	SpacesAfter=\n
+# sent_id = 62
+# text = Thiên Kinh Qu'
+1	Thiên Kinh Qu	Thiên kInh qu	NOUN	Np	_	0	root	_	SpaceAfter=No
+2	'	'	PUNCT	.	_	1	punct	_	SpaceAfter=No
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
+# sent_id = 63
+# text = ran:
+1	ran	ran	VERB	V	_	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	:	_	1	punct	_	SpacesAfter=\n\n
+
 # newpar
-# sent_id = 1
+# sent_id = 64
 # text = Thiên Kinh Qu'ran 112: 1-4.
 1	Thiên Kinh Qu	Thiên kInh qu	NOUN	Np	_	2	nsubj	_	SpaceAfter=No
 2	'ran	'ran	NOUN	N	_	0	root	_	_
 3	112	112	NUM	M	NumType=Card	2	nummod	_	SpaceAfter=No
 4	:	:	PUNCT	:	_	2	punct	_	_
 5	1-4	1-4	NUM	M	NumType=Card	2	nummod	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+6	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 65
 # text = Đạo Hồi không có Mười Điều Răn như đạo Ki Tô nhưng kinh Qur'an cũng liệt kê mười điều tương tự:
 1	Đạo	Đạo	NOUN	Np	_	4	nsubj	_	_
 2	Hồi	Hồi	NOUN	Np	_	4	nsubj	_	_
@@ -1755,38 +1670,30 @@
 14	cũng	cũng	X	R	_	15	advmod	_	_
 15	liệt kê	liệt kê	VERB	V	_	4	parataxis	_	_
 16	mười	mười	NUM	M	NumType=Card	17	nummod	_	_
-17	điều tương tự	điều tương tự	NOUN	N	_	15	obj	_	SpaceAfter=No
-18	:	:	PUNCT	:	_	4	punct	_	SpacesAfter=\n
+17	điều	điều	NOUN	N	_	15	obj	_	_
+18	tương tự	tương tự	ADJ	A	_	17	amod	_	SpaceAfter=No
+19	:	:	PUNCT	:	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 66
 # text = (*) Trường hợp đặc biệt được phép giết người mà không bị trọng tội là:
-1	(	(	NUM	M	_	4	nsubj	_	SpaceAfter=No
-2	*)	*)	NUM	M	_	3	nummod	_	_
-3	Trường hợp	Trường hợp	NOUN	N	_	4	nsubj	_	_
-4	đặc biệt	đặc biệt	ADJ	A	_	0	root	_	_
-5	được	được	VERB	V	_	4	aux:pass	_	_
-6	phép	phép	NOUN	N	_	4	obj	_	_
-7	giết	giết	VERB	V	_	6	xcomp	_	_
-8	người	người	NOUN	N	_	7	obj	_	_
-9	mà	mà	CCONJ	C	_	12	cc	_	_
-10	không	không	X	R	Polarity=Neg	12	advmod	_	_
-11	bị	bị	VERB	V	_	12	aux:pass	_	_
-12	trọng	trọng	VERB	V	_	7	conj	_	_
-13	tội	tội	NOUN	N	_	12	obj	_	_
-14	là	là	AUX	V	_	15	cop	_	SpaceAfter=No
-15	:	:	PUNCT	:	_	4	punct	_	SpacesAfter=\n
+1	(	(	NOUN	N	_	14	nsubj	_	SpaceAfter=No
+2	*) Trường hợp	*) trường hợp	NOUN	Np	_	1	compound	_	_
+3	đặc biệt	đặc biệt	ADJ	A	_	1	amod	_	_
+4	được	được	VERB	V	_	6	aux:pass	_	_
+5	phép	phép	NOUN	N	_	3	obj	_	_
+6	giết	giết	VERB	V	_	5	xcomp	_	_
+7	người	người	NOUN	N	_	6	obj	_	_
+8	mà	mà	CCONJ	C	_	11	cc	_	_
+9	không	không	X	R	Polarity=Neg	11	advmod	_	_
+10	bị	bị	VERB	V	_	11	aux:pass	_	_
+11	trọng	trọng	VERB	V	_	6	conj	_	_
+12	tội	tội	NOUN	N	_	11	obj	_	_
+13	là	là	AUX	V	_	14	cop	_	SpaceAfter=No
+14	:	:	PUNCT	:	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 67
 # text = 1) Trong khi kháng cự hoặc chiến đấu chống lại những kẻ lùng giết người đạo mình nhằm cưỡng bách bỏ đạo.
 1	1)	1)	NUM	M	NumType=Card	3	nummod	_	_
 2	Trong	Trong	ADP	E	_	3	case	_	_
@@ -1794,23 +1701,23 @@
 4	kháng	kháng	VERB	V	_	3	xcomp	_	_
 5	cự	cự	VERB	V	_	4	xcomp	_	_
 6	hoặc	hoặc	SCONJ	CC	_	7	cc	_	_
-7	chiến đấu chống	chiến đấu chống	VERB	V	_	4	conj	_	_
-8	lại	lại	X	R	_	7	advmod	_	_
-9	những	những	DET	L	_	10	det	_	_
-10	kẻ	kẻ	NOUN	N	_	7	obj	_	_
-11	lùng	lùng	VERB	V	_	10	xcomp	_	_
-12	giết	giết	VERB	V	_	11	xcomp	_	_
-13	người	người	NOUN	N	_	12	obj	_	_
-14	đạo	đạo	VERB	V	_	13	xcomp	_	_
-15	mình	mình	PROPN	P	_	13	det	_	_
-16	nhằm	nhằm	ADP	E	_	10	case	_	_
-17	cưỡng	cưỡng	VERB	V	_	16	mark	_	_
-18	bách	bách	NOUN	N	_	17	obj	_	_
+7	chiến đấu	chiến đấu	VERB	V	_	3	conj	_	_
+8	chống	chống	VERB	V	_	7	xcomp	_	_
+9	lại	lại	X	R	_	8	advmod	_	_
+10	những	những	DET	L	_	11	det	_	_
+11	kẻ	kẻ	NOUN	N	_	8	obj	_	_
+12	lùng	lùng	VERB	V	_	11	xcomp	_	_
+13	giết	giết	VERB	V	_	12	xcomp	_	_
+14	người	người	NOUN	N	_	13	obj	_	_
+15	đạo	đạo	VERB	V	_	14	xcomp	_	_
+16	mình	mình	PROPN	P	_	14	det	_	_
+17	nhằm	nhằm	ADP	E	_	11	case	_	_
+18	cưỡng bách	cưỡng bách	VERB	V	_	17	mark	_	_
 19	bỏ	bỏ	VERB	V	_	18	xcomp	_	_
 20	đạo	đạo	NOUN	N	_	19	obj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 68
 # text = Nhưng nếu chiến thắng, phải noi gương thiên sứ Muhammad, tha thứ và đối xử nhân đạo với phần đông kẻ bại trận.
 1	Nhưng	Nhưng	CCONJ	C	_	5	cc	_	_
 2	nếu chiến thắng	nếu chiến thắng	VERB	V	_	5	advcl	_	SpaceAfter=No
@@ -1826,18 +1733,15 @@
 12	và	và	SCONJ	CC	_	13	cc	_	_
 13	đối xử	đối xử	VERB	V	_	11	conj	_	_
 14	nhân đạo	nhân đạo	NOUN	N	_	13	obj	_	_
-15	với phần	với phần	ADJ	A	_	14	xcomp	_	_
-16	đông	đông	ADJ	A	_	17	amod	_	_
-17	kẻ	kẻ	NOUN	N	_	15	obj	_	_
-18	bại trận	bại trận	ADJ	A	_	17	amod	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+15	với	với	ADP	E	_	16	case	_	_
+16	phần	phần	NOUN	N	_	14	nmod	_	_
+17	đông	đông	ADJ	A	_	16	amod	_	_
+18	kẻ	kẻ	NOUN	N	_	16	compound	_	_
+19	bại trận	bại trận	ADJ	A	_	18	amod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 69
 # text = 2) Giết những tên sát nhân để trừ hại cho dân lành.
 1	2) Giết	2) giết	VERB	V	_	0	root	_	_
 2	những	những	DET	L	_	3	det	_	_
@@ -1848,14 +1752,10 @@
 7	hại	hại	NOUN	N	_	6	xcomp	_	_
 8	cho	cho	ADP	E	_	9	case	_	_
 9	dân lành	dân lành	NOUN	N	_	6	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+10	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 70
 # text = Ngoài ra tín đồ Hồi giáo có một số luật lệ:
 1	Ngoài ra	Ngoài ra	CCONJ	C	_	5	cc	_	_
 2	tín đồ	tín đồ	NOUN	N	_	5	nsubj	_	_
@@ -1864,14 +1764,10 @@
 5	có	có	VERB	V	_	0	root	_	_
 6	một số	một số	DET	L	_	7	det	_	_
 7	luật lệ	luật lệ	NOUN	N	_	5	obj	_	SpaceAfter=No
-8	:	:	PUNCT	:	_	5	punct	_	SpacesAfter=\n
+8	:	:	PUNCT	:	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 71
 # text = Trên phương diện khoa học nhân văn, Hồi giáo là một tôn giáo ra đời vào thế kỷ thứ 7, dựa trên những nền tảng có sẵn của Do Thái giáo và Kitô giáo.
 1	Trên	Trên	ADP	E	_	2	case	_	_
 2	phương diện	phương diện	NOUN	N	_	10	nmod	_	_
@@ -1902,75 +1798,71 @@
 27	Kitô giáo	Kitô giáo	NOUN	Np	_	20	conj	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 72
 # text = Đôi khi người ta cũng gọi Hồi giáo là đạo Muhammad (Muhammadanism), theo tên của đức sáng tổ.
 1	Đôi	Đôi	DET	L	_	2	det	_	_
 2	khi	khi	NOUN	N	_	5	obl	_	_
 3	người ta	người ta	NOUN	N	_	5	nsubj	_	_
 4	cũng	cũng	X	R	_	5	advmod	_	_
 5	gọi	gọi	VERB	V	_	0	root	_	_
-6	Hồi	Hồi	NOUN	Np	_	9	nsubj	_	_
-7	giáo	giáo	VERB	V	_	5	ccomp	_	_
-8	là	là	AUX	V	_	9	cop	_	_
-9	đạo	đạo	NOUN	N	_	7	xcomp	_	_
-10	Muhammad (Muhammadanism)	MuhammaD (MUHAMMADanIsm)	NOUN	Np	_	9	compound	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	5	punct	_	_
-12	theo	theo	ADP	E	_	13	case	_	_
-13	tên	tên	NOUN	N	_	7	obl	_	_
-14	của	của	ADP	E	_	16	case	_	_
-15	đức	đức	NOUN	Nc	_	16	compound	_	_
-16	sáng tổ	sáng tổ	NOUN	N	_	13	nmod	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+6	Hồi giáo	Hồi giáo	NOUN	Np	_	5	obj	_	_
+7	là	là	AUX	V	_	8	cop	_	_
+8	đạo	đạo	NOUN	N	_	5	ccomp	_	_
+9	Muhammad (Muhammadanism)	MuhammaD (MUHAMMADanIsm)	NOUN	Np	_	8	compound	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	5	punct	_	_
+11	theo	theo	ADP	E	_	12	case	_	_
+12	tên	tên	NOUN	N	_	5	obl	_	_
+13	của	của	ADP	E	_	15	case	_	_
+14	đức	đức	NOUN	Nc	_	15	compound	_	_
+15	sáng	sáng	NOUN	N	_	12	nmod	_	_
+16	tổ	tổ	NOUN	N	_	15	compound	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 73
 # text = Tuy nhiên, với những tín đồ Hồi giáo, đạo của họ là đạo thường hằng trong vũ trụ, do Thượng đế tạo ra, và vì Thượng đế vốn bất sinh bất diệt nên đạo của Ngài cũng bất sinh bất diệt; còn Muhammad đơn thuần chỉ là một người "thuật nhi bất tác", thuật lại cho mọi người những mặc khải của Thượng đế mà thôi.
-1	Tuy nhiên	Tuy nhiên	CCONJ	C	_	12	cc	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	12	punct	_	_
+1	Tuy nhiên	Tuy nhiên	CCONJ	C	_	13	cc	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	13	punct	_	_
 3	với	với	ADP	E	_	5	case	_	_
 4	những	những	DET	L	_	5	det	_	_
-5	tín đồ	tín đồ	NOUN	N	_	12	nmod	_	_
-6	Hồi giáo	Hồi giáo	NOUN	Np	_	5	compound	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	12	punct	_	_
-8	đạo	đạo	NOUN	N	_	12	nsubj	_	_
-9	của	của	ADP	E	_	10	case	_	_
-10	họ	họ	PROPN	P	_	8	nmod	_	_
-11	là	là	AUX	V	_	12	cop	_	_
-12	đạo thường hằng	đạo thường hằng	NOUN	N	_	0	root	_	_
-13	trong	trong	ADP	E	_	14	case	_	_
-14	vũ trụ	vũ trụ	NOUN	N	_	12	nmod	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	12	punct	_	_
-16	do	do	CCONJ	C	_	18	cc	_	_
-17	Thượng đế	Thượng đế	NOUN	Np	_	18	nsubj	_	_
-18	tạo	tạo	VERB	V	_	12	parataxis	_	_
-19	ra	ra	X	R	_	18	advmod	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	12	punct	_	_
-21	và	và	SCONJ	CC	_	12	cc	_	_
-22	vì	vì	ADP	E	_	32	case	_	_
-23	Thượng	Thượng	NOUN	Np	_	24	nsubj	_	_
-24	đế	đế	ADP	V	_	12	case	_	_
-25	vốn	vốn	NOUN	N	_	24	obj	_	_
-26	bất sinh	bất sinh	VERB	V	_	25	xcomp	_	_
-27	bất diệt	bất diệt	ADJ	A	_	44	xcomp	_	_
-28	nên đạo	nên đạo	NOUN	N	_	44	obj	_	_
-29	của	của	ADP	E	_	30	case	_	_
-30	Ngài	Ngài	NOUN	Np	_	8	nmod	_	_
-31	cũng	cũng	X	R	_	32	advmod	_	_
-32	bất sinh	bất sinh	VERB	V	_	12	parataxis	_	_
-33	bất diệt	bất diệt	ADJ	A	_	32	xcomp	_	SpaceAfter=No
-34	;	;	PUNCT	;	_	12	punct	_	_
-35	còn	còn	CCONJ	C	_	12	cc	_	_
-36	Muhammad	Muhammad	NOUN	Np	_	37	nsubj	_	_
-37	đơn	đơn	VERB	V	_	12	parataxis	_	_
-38	thuần	thuần	VERB	V	_	37	xcomp	_	_
-39	chỉ	chỉ	X	R	_	42	advmod	_	_
+5	tín đồ	tín đồ	NOUN	N	_	13	nmod	_	_
+6	Hồi	Hồi	NOUN	Np	_	5	compound	_	_
+7	giáo	giáo	VERB	V	_	5	xcomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	13	punct	_	_
+9	đạo	đạo	NOUN	N	_	13	nsubj	_	_
+10	của	của	ADP	E	_	11	case	_	_
+11	họ	họ	PROPN	P	_	9	nmod	_	_
+12	là	là	AUX	V	_	13	cop	_	_
+13	đạo thường hằng	đạo thường hằng	NOUN	N	_	0	root	_	_
+14	trong	trong	ADP	E	_	15	case	_	_
+15	vũ trụ	vũ trụ	NOUN	N	_	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	13	punct	_	_
+17	do	do	CCONJ	C	_	7	cc	_	_
+18	Thượng đế	Thượng đế	NOUN	Np	_	19	nsubj	_	_
+19	tạo	tạo	VERB	V	_	13	parataxis	_	_
+20	ra	ra	X	R	_	19	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	13	punct	_	_
+22	và	và	SCONJ	CC	_	13	cc	_	_
+23	vì	vì	ADP	E	_	33	case	_	_
+24	Thượng	Thượng	NOUN	Np	_	25	nsubj	_	_
+25	đế	đế	ADP	V	_	42	case	_	_
+26	vốn	vốn	NOUN	N	_	25	obj	_	_
+27	bất sinh	bất sinh	VERB	V	_	26	xcomp	_	_
+28	bất diệt	bất diệt	ADJ	A	_	26	amod	_	_
+29	nên đạo	nên đạo	NOUN	N	_	44	obj	_	_
+30	của	của	ADP	E	_	31	case	_	_
+31	Ngài	Ngài	NOUN	Np	_	9	nmod	_	_
+32	cũng	cũng	X	R	_	33	advmod	_	_
+33	bất sinh	bất sinh	VERB	V	_	13	parataxis	_	_
+34	bất diệt	bất diệt	ADJ	A	_	33	xcomp	_	SpaceAfter=No
+35	;	;	PUNCT	;	_	13	punct	_	_
+36	còn	còn	CCONJ	C	_	13	cc	_	_
+37	Muhammad	Muhammad	NOUN	Np	_	49	nsubj	_	_
+38	đơn	đơn	NOUN	N	_	13	parataxis	_	_
+39	thuần chỉ	thuần chỉ	VERB	V	_	38	xcomp	_	_
 40	là	là	AUX	V	_	42	cop	_	_
 41	một	một	NUM	M	NumType=Card	42	nummod	_	_
-42	người	người	NOUN	N	_	12	parataxis	_	_
+42	người	người	NOUN	N	_	13	parataxis	_	_
 43	"	"	PUNCT	"	_	42	punct	_	SpaceAfter=No
 44	thuật	thuật	VERB	V	_	42	xcomp	_	_
 45	nhi	nhi	NOUN	N	_	44	obj	_	_
@@ -1989,9 +1881,9 @@
 58	đế	đế	VERB	V	_	42	xcomp	_	_
 59	mà	mà	PART	T	_	58	discourse	_	_
 60	thôi	thôi	PART	T	_	59	discourse	_	SpaceAfter=No
-61	.	.	PUNCT	.	_	12	punct	_	_
+61	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 74
 # text = Trong quan niệm của các tín đồ, Hồi giáo không khởi sinh từ Muhammad.
 1	Trong	Trong	ADP	E	_	2	case	_	_
 2	quan niệm	quan niệm	NOUN	N	_	10	advcl	_	_
@@ -2007,7 +1899,7 @@
 12	Muhammad	Muhammad	NOUN	Np	_	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 75
 # text = Với họ, con người đầu tiên do Thượng đế tạo ra, tức Adam, là tín đồ Hồi giáo đầu tiên, và ngay từ thuở hồng hoang, khắp đất trời đã là một vương quốc Hồi giáo.
 1	Với	Với	ADP	E	_	2	case	_	_
 2	họ	họ	PROPN	P	_	9	obl	_	SpaceAfter=No
@@ -2041,13 +1933,12 @@
 30	đã	đã	X	R	_	33	advmod	_	_
 31	là	là	AUX	V	_	33	cop	_	_
 32	một	một	NUM	M	NumType=Card	33	nummod	_	_
-33	vương	vương	NOUN	N	_	9	parataxis	_	_
-34	quốc	quốc	NOUN	N	_	33	compound	_	_
-35	Hồi	Hồi	NOUN	Np	_	34	compound	_	_
-36	giáo	giáo	NOUN	N	_	33	compound	_	SpaceAfter=No
-37	.	.	PUNCT	.	_	9	punct	_	_
+33	vương quốc	vương quốc	NOUN	N	_	9	parataxis	_	_
+34	Hồi	Hồi	NOUN	Np	_	33	compound	_	_
+35	giáo	giáo	NOUN	N	_	33	compound	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 4
+# sent_id = 76
 # text = Không chỉ người mà thôi, mà tất cả muông thú, cỏ cây đều tuân theo Hồi giáo cả.
 1	Không	Không	X	R	Polarity=Neg	3	advmod	_	_
 2	chỉ	chỉ	X	R	_	3	advmod	_	_
@@ -2057,19 +1948,20 @@
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	mà	mà	CCONJ	C	_	5	cc	_	_
 8	tất cả	tất cả	PROPN	P	_	9	det	_	_
-9	muông thú	muông thú	NOUN	N	_	14	nsubj	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	11	punct	_	_
-11	cỏ	cỏ	VERB	V	_	9	conj	_	_
-12	cây	cây	NOUN	N	_	11	obj	_	_
-13	đều	đều	X	R	_	14	advmod	_	_
-14	tuân	tuân	VERB	V	_	5	parataxis	_	_
-15	theo	theo	ADP	E	_	16	case	_	_
-16	Hồi	Hồi	NOUN	Np	_	14	advcl	_	_
-17	giáo	giáo	NOUN	N	_	14	obj	_	_
-18	cả	cả	PART	T	_	17	discourse	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	5	punct	_	_
+9	muông	muông	NOUN	N	_	15	nsubj	_	_
+10	thú	thú	NOUN	N	_	9	compound	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	cỏ	cỏ	VERB	V	_	9	conj	_	_
+13	cây	cây	NOUN	N	_	12	obj	_	_
+14	đều	đều	X	R	_	15	advmod	_	_
+15	tuân	tuân	VERB	V	_	5	parataxis	_	_
+16	theo	theo	ADP	E	_	17	case	_	_
+17	Hồi	Hồi	NOUN	Np	_	15	advcl	_	_
+18	giáo	giáo	NOUN	N	_	15	obj	_	_
+19	cả	cả	PART	T	_	18	discourse	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 77
 # text = Sở dĩ Adam và loài người được kiến tạo là để thay mặt Thượng đế cai quản các loài thảo cầm ở nhân gian.
 1	Sở dĩ	Sở dĩ	NOUN	N	_	6	nsubj	_	_
 2	Adam	Adam	NOUN	Np	_	6	nsubj	_	_
@@ -2081,16 +1973,17 @@
 8	là	là	AUX	V	_	6	cop	_	_
 9	để	để	ADP	E	_	6	case	_	_
 10	thay mặt	thay mặt	VERB	V	_	9	mark	_	_
-11	Thượng đế	Thượng đế	X	Np	_	10	obj	_	_
-12	cai quản	cai quản	VERB	V	_	10	ccomp	_	_
-13	các	các	DET	L	_	14	det	_	_
-14	loài thảo	loài thảo	NOUN	N	_	12	obj	_	_
-15	cầm	cầm	VERB	V	_	14	xcomp	_	_
-16	ở	ở	ADP	E	_	17	case	_	_
-17	nhân gian	nhân gian	NOUN	N	_	15	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	6	punct	_	_
+11	Thượng	Thượng	X	Np	_	10	xcomp	_	_
+12	đế	đế	ADP	E	_	13	case	_	_
+13	cai quản	cai quản	VERB	V	_	9	mark	_	_
+14	các	các	DET	L	_	15	det	_	_
+15	loài thảo	loài thảo	NOUN	N	_	13	obj	_	_
+16	cầm	cầm	VERB	V	_	15	xcomp	_	_
+17	ở	ở	ADP	E	_	18	case	_	_
+18	nhân gian	nhân gian	NOUN	N	_	16	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 6
+# sent_id = 78
 # text = Và vì đẳng cấp của loài người cao như thế tự do ý chí nên vấn đề nảy sinh từ đây.
 1	Và	Và	CCONJ	C	_	10	cc	_	_
 2	vì	vì	ADP	E	_	4	case	_	_
@@ -2101,16 +1994,15 @@
 7	người	người	NOUN	N	_	4	nmod	_	_
 8	cao	cao	ADJ	A	_	7	amod	_	_
 9	như	như	CCONJ	C	_	10	cc	_	_
-10	thế tự do ý	thế tự do ý	VERB	V	_	0	root	_	_
-11	chí	chí	NOUN	N	_	10	obj	_	_
-12	nên	nên	CCONJ	C	_	10	cc	_	_
-13	vấn đề	vấn đề	NOUN	N	_	10	nsubj	_	_
-14	nảy sinh	nảy sinh	VERB	V	_	13	xcomp	_	_
-15	từ	từ	ADP	E	_	16	case	_	_
-16	đây	đây	PROPN	P	_	13	nmod	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	10	punct	_	_
+10	thế tự do ý chí	thế tự do ý chí	VERB	V	_	0	root	_	_
+11	nên	nên	CCONJ	C	_	10	cc	_	_
+12	vấn đề	vấn đề	NOUN	N	_	10	nsubj	_	_
+13	nảy sinh	nảy sinh	VERB	V	_	12	xcomp	_	_
+14	từ	từ	ADP	E	_	15	case	_	_
+15	đây	đây	PROPN	P	_	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 7
+# sent_id = 79
 # text = Sự tự do ý chí đôi khi dẫn đến những lầm lạc, lầm lạc dẫn đến rời bỏ Thượng đế, và xa dần chính đạo.
 1	Sự	Sự	NOUN	N	_	2	nsubj	_	_
 2	tự do	tự do	ADJ	A	_	6	amod	_	_
@@ -2126,16 +2018,17 @@
 12	lầm lạc	lầm lạc	NOUN	N	_	10	conj	_	_
 13	dẫn	dẫn	VERB	V	_	7	conj	_	_
 14	đến	đến	ADP	E	_	15	case	_	_
-15	rời bỏ	rời bỏ	VERB	V	_	13	mark	_	_
-16	Thượng đế	Thượng đế	NOUN	Np	_	15	obj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	19	punct	_	_
-18	và	và	SCONJ	CC	_	19	cc	_	_
-19	xa	xa	ADJ	A	_	15	conj	_	_
-20	dần	dần	X	R	_	19	advmod	_	_
-21	chính đạo	chính đạo	NOUN	N	_	19	obj	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	6	punct	_	_
+15	rời bỏ	rời bỏ	VERB	V	_	13	obl	_	_
+16	Thượng	Thượng	NOUN	Np	_	15	obj	_	_
+17	đế	đế	VERB	V	_	15	ccomp	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	và	và	SCONJ	CC	_	20	cc	_	_
+20	xa	xa	ADJ	A	_	15	conj	_	_
+21	dần	dần	X	R	_	20	advmod	_	_
+22	chính đạo	chính đạo	NOUN	N	_	20	obj	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 8
+# sent_id = 80
 # text = Khi Adam, con người đầu tiên và cũng là Thiên Sứ đầu tiên, lìa trần, con cháu ông, không còn ai chỉ bảo, càng lún sâu vào con đường tối.
 1	Khi	Khi	NOUN	N	_	10	nmod	_	_
 2	Adam	Adam	NOUN	Np	_	10	nsubj	_	SpaceAfter=No
@@ -2170,7 +2063,7 @@
 31	tối	tối	ADJ	A	_	30	amod	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 9
+# sent_id = 81
 # text = Do thế mà Thượng đế lại phải gửi xuống nhân gian những vị Thiên Sứ mới để nhắc lại Thiên Đạo, đưa loài người về đúng nẻo ngay.
 1	Do	Do	CCONJ	C	_	6	cc	_	_
 2	thế mà	thế mà	CCONJ	C	_	6	cc	_	_
@@ -2192,11 +2085,12 @@
 18	đưa	đưa	VERB	V	_	14	conj	_	_
 19	loài người	loài người	NOUN	N	_	18	obj	_	_
 20	về	về	VERB	V	_	19	xcomp	_	_
-21	đúng nẻo	đúng nẻo	ADJ	A	_	20	xcomp	_	_
-22	ngay	ngay	X	R	_	21	advmod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	6	punct	_	_
+21	đúng	đúng	ADJ	A	_	20	xcomp	_	_
+22	nẻo	nẻo	VERB	V	_	21	xcomp	_	_
+23	ngay	ngay	X	R	_	21	advmod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 10
+# sent_id = 82
 # text = Trước Muhammad, đã có hằng trăm ngàn Thiên Sứ giảng lời mặc khải ở trần thế, trong đó có Noah, Abraham (Ibrohim), Moses (Musa), David (Dawud) và Jesus (Ysa)...
 1	Trước Muhammad	Trước muhAmmad	NOUN	Np	_	4	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	4	punct	_	_
@@ -2229,7 +2123,7 @@
 29	Jesus (Ysa)	Jesus (Ysa)	NOUN	Np	_	18	conj	_	SpaceAfter=No
 30	...	...	PUNCT	...	_	4	punct	_	_
 
-# sent_id = 11
+# sent_id = 83
 # text = Tuy nhiên, một là do loài người u mê chưa tỉnh ngộ, hai là do sự ngoan cố, tự cao, tự đại của con người, mà chính đạo vẫn bị bóp méo như thường.
 1	Tuy nhiên	Tuy nhiên	CCONJ	C	_	6	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	6	punct	_	_
@@ -2237,35 +2131,34 @@
 4	là	là	AUX	V	_	6	cop	_	_
 5	do	do	ADP	E	_	6	case	_	_
 6	loài người	loài người	NOUN	N	_	0	root	_	_
-7	u	u	NOUN	N	_	6	compound	_	_
-8	mê	mê	NOUN	N	_	7	compound	_	_
-9	chưa	chưa	X	R	_	10	advmod	_	_
-10	tỉnh ngộ	tỉnh ngộ	ADJ	A	_	6	amod	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	6	punct	_	_
-12	hai	hai	NUM	M	NumType=Card	10	nsubj	_	_
-13	là	là	AUX	V	_	15	cop	_	_
-14	do	do	ADP	E	_	6	case	_	_
-15	sự	sự	NOUN	Nc	_	6	compound	_	_
-16	ngoan	ngoan	NOUN	N	_	15	xcomp	_	_
-17	cố	cố	ADJ	A	_	15	amod	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	22	punct	_	_
-19	tự	tự	PROPN	P	_	20	det	_	_
-20	cao	cao	ADJ	A	_	15	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	22	punct	_	_
-22	tự đại	tự đại	ADJ	A	_	17	conj	_	_
-23	của	của	ADP	E	_	24	case	_	_
-24	con	con	NOUN	N	_	15	nmod	_	_
-25	người	người	NOUN	N	_	24	compound	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	6	punct	_	_
-27	mà	mà	CCONJ	C	_	31	cc	_	_
-28	chính đạo	chính đạo	NOUN	N	_	31	nsubj	_	_
-29	vẫn	vẫn	X	R	_	31	advmod	_	_
-30	bị	bị	VERB	V	_	31	aux:pass	_	_
-31	bóp méo	bóp méo	VERB	V	_	6	conj	_	_
-32	như thường	như thường	ADJ	A	_	31	xcomp	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	6	punct	_	_
+7	u mê	u mê	ADJ	A	_	6	amod	_	_
+8	chưa	chưa	X	R	_	9	advmod	_	_
+9	tỉnh ngộ	tỉnh ngộ	ADJ	A	_	6	amod	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	6	punct	_	_
+11	hai	hai	NUM	M	NumType=Card	9	nsubj	_	_
+12	là	là	AUX	V	_	14	cop	_	_
+13	do	do	ADP	E	_	14	case	_	_
+14	sự	sự	NOUN	Nc	_	6	compound	_	_
+15	ngoan	ngoan	VERB	N	_	14	xcomp	_	_
+16	cố	cố	ADJ	A	_	14	amod	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	tự	tự	PROPN	P	_	19	det	_	_
+19	cao	cao	ADJ	A	_	14	conj	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	tự đại	tự đại	ADJ	A	_	16	conj	_	_
+22	của	của	ADP	E	_	23	case	_	_
+23	con	con	NOUN	N	_	14	nmod	_	_
+24	người	người	NOUN	N	_	23	compound	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	6	punct	_	_
+26	mà	mà	CCONJ	C	_	30	cc	_	_
+27	chính đạo	chính đạo	NOUN	N	_	30	nsubj	_	_
+28	vẫn	vẫn	X	R	_	30	advmod	_	_
+29	bị	bị	VERB	V	_	30	aux:pass	_	_
+30	bóp méo	bóp méo	VERB	V	_	6	conj	_	_
+31	như thường	như thường	ADJ	A	_	30	xcomp	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 12
+# sent_id = 84
 # text = Rốt cuộc, đến thế kỷ 7, Thượng đế khải thị cho Muhammad, và biến ông trở thành vị Thiên Sứ hoàn hảo nhất trước nay, hơn hẳn những Thiên Sứ tiền nhiệm.
 1	Rốt	Rốt	X	R	_	2	advmod	_	_
 2	cuộc	cuộc	NOUN	N	_	10	advcl	_	SpaceAfter=No
@@ -2284,41 +2177,43 @@
 15	và	và	SCONJ	CC	_	16	cc	_	_
 16	biến	biến	VERB	V	_	10	conj	_	_
 17	ông	ông	NOUN	N	_	18	nsubj	_	_
-18	trở thành vị	trở thành vị	VERB	V	_	16	ccomp	_	_
-19	Thiên Sứ hoàn	Thiên sứ hoàn	NOUN	Np	_	18	obj	_	_
-20	hảo nhất	hảo nhất	ADJ	A	_	18	xcomp	_	_
-21	trước	trước	ADP	E	_	22	case	_	_
-22	nay	nay	PROPN	P	_	18	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	10	punct	_	_
-24	hơn	hơn	X	R	_	27	advmod	_	_
-25	hẳn	hẳn	X	R	_	27	advmod	_	_
-26	những	những	DET	L	_	27	det	_	_
-27	Thiên Sứ	Thiên Sứ	NOUN	Np	_	28	nsubj	_	_
-28	tiền	tiền	NOUN	N	_	10	obj	_	_
-29	nhiệm	nhiệm	VERB	V	_	28	xcomp	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	10	punct	_	_
+18	trở	trở	VERB	V	_	16	ccomp	_	_
+19	thành vị	thành vị	NOUN	N	_	18	obj	_	_
+20	Thiên Sứ hoàn	Thiên sứ hoàn	NOUN	Np	_	19	compound	_	_
+21	hảo nhất	hảo nhất	ADJ	A	_	19	xcomp	_	_
+22	trước	trước	ADP	E	_	23	case	_	_
+23	nay	nay	PROPN	P	_	18	obl	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	10	punct	_	_
+25	hơn	hơn	X	R	_	28	advmod	_	_
+26	hẳn	hẳn	X	R	_	28	advmod	_	_
+27	những	những	DET	L	_	28	det	_	_
+28	Thiên Sứ	Thiên Sứ	NOUN	Np	_	29	nsubj	_	_
+29	tiền	tiền	NOUN	N	_	10	obj	_	_
+30	nhiệm	nhiệm	VERB	V	_	29	xcomp	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 13
+# sent_id = 85
 # text = Do đó mà đạo của Muhammad truyền bá cũng là hoàn hảo nhất, không thể bị bóp méo như trước kia.
-1	Do	Do	ADP	E	_	8	case	_	_
-2	đó	đó	PROPN	P	_	8	det	_	_
-3	mà đạo	mà đạo	NOUN	N	_	8	nsubj	_	_
+1	Do	Do	ADP	E	_	9	case	_	_
+2	đó	đó	PROPN	P	_	9	det	_	_
+3	mà đạo	mà đạo	NOUN	N	_	9	nsubj	_	_
 4	của	của	ADP	E	_	5	case	_	_
-5	Muhammad truyền bá	Muhammad truyền bá	NOUN	Np	_	3	nmod	_	_
-6	cũng	cũng	X	R	_	8	advmod	_	_
-7	là	là	AUX	V	_	8	cop	_	_
-8	hoàn hảo	hoàn hảo	ADJ	A	_	0	root	_	_
-9	nhất	nhất	X	R	_	8	advmod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	13	punct	_	_
-11	không thể	không thể	X	R	Polarity=Neg	13	advmod	_	_
-12	bị	bị	VERB	V	_	13	aux:pass	_	_
-13	bóp méo	bóp méo	ADJ	A	_	8	conj	_	_
-14	như	như	CCONJ	C	_	13	cc	_	_
-15	trước	trước	NOUN	N	_	13	obj	_	_
-16	kia	kia	PROPN	P	_	15	det	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	8	punct	_	_
+5	Muhammad	Muhammad	NOUN	Np	_	3	nmod	_	_
+6	truyền bá	truyền bá	NOUN	N	_	5	xcomp	_	_
+7	cũng	cũng	X	R	_	9	advmod	_	_
+8	là	là	AUX	V	_	9	cop	_	_
+9	hoàn hảo	hoàn hảo	ADJ	A	_	0	root	_	_
+10	nhất	nhất	X	R	_	9	advmod	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	không thể	không thể	X	R	Polarity=Neg	14	advmod	_	_
+13	bị	bị	VERB	V	_	14	aux:pass	_	_
+14	bóp méo	bóp méo	ADJ	A	_	9	conj	_	_
+15	như	như	CCONJ	C	_	14	cc	_	_
+16	trước	trước	NOUN	N	_	14	obj	_	_
+17	kia	kia	PROPN	P	_	16	det	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 14
+# sent_id = 86
 # text = Muhammad là vị Thiên Sứ cuối cùng, và bất cứ ai dám xưng Thiên Sứ sau Muhammad đều là kẻ tà giáo.
 1	Muhammad	Muhammad	NOUN	Np	_	4	nsubj	_	_
 2	là	là	AUX	V	_	4	cop	_	_
@@ -2341,7 +2236,7 @@
 19	giáo	giáo	NOUN	N	_	17	compound	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 15
+# sent_id = 87
 # text = Như đã thấy ở trên, Abraham (Ibrohim) cử xuống cho Do Thái Giáo, và Giêsu (Ysa) cử xuống cho Kitô giáo, đều có vị trí Thiên sứ trong Hồi giáo.
 1	Như	Như	CCONJ	C	_	10	cc	_	_
 2	đã	đã	X	R	_	3	advmod	_	_
@@ -2366,13 +2261,12 @@
 21	đều	đều	X	R	_	22	advmod	_	_
 22	có	có	VERB	V	_	10	parataxis	_	_
 23	vị	vị	NOUN	N	_	22	obj	_	_
-24	trí	trí	NOUN	N	_	22	obj	_	_
-25	Thiên sứ	Thiên sứ	NOUN	Np	_	24	compound	_	_
-26	trong	trong	ADP	E	_	27	case	_	_
-27	Hồi giáo	Hồi giáo	NOUN	Np	_	24	advcl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	10	punct	_	_
+24	trí Thiên sứ	trí thiên sứ	NOUN	Np	_	23	compound	_	_
+25	trong	trong	ADP	E	_	26	case	_	_
+26	Hồi giáo	Hồi giáo	NOUN	Np	_	23	advcl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 16
+# sent_id = 88
 # text = Như vậy, Thiên Chúa mà ba tôn giáo này thờ phượng chỉ là một.
 1	Như vậy	Như vậy	CCONJ	C	_	8	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	8	punct	_	_
@@ -2386,14 +2280,10 @@
 10	chỉ	chỉ	X	R	_	8	advmod	_	_
 11	là	là	AUX	V	_	12	cop	_	_
 12	một	một	NUM	M	NumType=Card	8	nummod	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+13	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 89
 # text = Từ Allah trong tiếng Ả Rập mang nghĩa là Thượng đế.
 1	Từ	Từ	PROPN	P	_	2	det	_	_
 2	Allah	Allah	NOUN	Np	_	7	nsubj	_	_
@@ -2407,7 +2297,7 @@
 10	Thượng đế	Thượng đế	NOUN	Np	_	8	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 90
 # text = (Những Kitô hữu người Ả Rập khi cầu nguyện cũng gọi Đức Chúa Cha là Allah).
 1	(Những	(những	DET	L	_	2	det	_	_
 2	Kitô	Kitô	NOUN	Np	_	9	nsubj	_	_
@@ -2424,7 +2314,7 @@
 13	Allah)	Allah)	NOUN	Np	_	9	ccomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 3
+# sent_id = 91
 # text = Thượng đế dĩ nhiên phải cao hơn Thánh và là duy nhất, vả lại trong đạo Hồi chính thống hoàn toàn không có khái niệm Thánh.
 1	Thượng	Thượng	X	R	_	2	advmod	_	_
 2	đế	đế	VERB	V	_	0	root	_	_
@@ -2449,7 +2339,7 @@
 21	Thánh	Thánh	NOUN	Np	_	20	compound	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 92
 # text = Người Do Thái giáo và Thiên Chúa giáo cũng được tín đồ Hồi giáo tương đối coi trọng và gọi là Giáo Dân Thánh Thư (People of The Book).
 1	Người Do	Người Do	NOUN	Np	_	5	nsubj	_	_
 2	Thái giáo	Thái giáo	NOUN	Np	_	5	nsubj	_	_
@@ -2477,7 +2367,7 @@
 24	Book)	Book)	NOUN	Np	_	22	compound	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 93
 # text = Kinh Thánh Kitô giáo cũng là sách thiêng trong Hồi giáo, có điều người ta coi nó không đầy đủ và hoàn thiện như Koran.
 1	Kinh	Kinh	NOUN	N	_	3	nsubj	_	_
 2	Thánh Kitô	Thánh Kitô	NOUN	Np	_	3	nsubj	_	_
@@ -2500,28 +2390,19 @@
 19	hoàn thiện	hoàn thiện	ADJ	A	_	16	conj	_	_
 20	như	như	CCONJ	C	_	19	cc	_	_
 21	Koran	Koran	NOUN	Np	_	19	obj	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 94
 # text = Năm cột trụ của Hồi giáo
 1	Năm	Năm	NUM	M	NumType=Card	2	nummod	_	_
-2	cột	cột	NOUN	Nc	_	6	nsubj	_	_
-3	trụ	trụ	ADJ	A	_	2	amod	_	_
-4	của	của	ADP	E	_	5	case	_	_
-5	Hồi	Hồi	NOUN	Np	_	2	nmod	_	_
-6	giáo	giáo	VERB	V	_	0	root	_	SpaceAfter=No
+2	cột trụ	cột trụ	NOUN	N	_	0	root	_	_
+3	của	của	ADP	E	_	4	case	_	_
+4	Hồi	Hồi	NOUN	Np	_	2	nmod	_	_
+5	giáo	giáo	VERB	V	_	2	xcomp	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 95
 # text = Năm điều căn bản của đạo Hồi:
 1	Năm	Năm	NUM	M	NumType=Card	2	nummod	_	_
 2	điều	điều	NOUN	N	_	0	root	_	_
@@ -2529,26 +2410,17 @@
 4	của	của	ADP	E	_	5	case	_	_
 5	đạo	đạo	NOUN	N	_	2	nmod	_	_
 6	Hồi	Hồi	NOUN	Np	_	5	compound	_	SpaceAfter=No
-7	:	:	PUNCT	:	_	2	punct	_	SpacesAfter=\n
+7	:	:	PUNCT	:	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 96
 # text = Sự phân chia Hồi giáo
 1	Sự	Sự	NOUN	P	_	2	nsubj	_	_
 2	phân chia	phân chia	VERB	V	_	0	root	_	_
-3	Hồi	Hồi	NOUN	Np	_	2	obj	_	_
-4	giáo	giáo	VERB	V	_	2	ccomp	_	SpaceAfter=No
+3	Hồi giáo	Hồi giáo	NOUN	Np	_	2	obj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 97
 # text = Đến nay Hồi giáo đã chia ra làm nhiều nhánh với những giáo lý và quan điểm chính trị khác biệt.
 1	Đến	Đến	ADP	E	_	2	case	_	_
 2	nay	nay	PROPN	P	_	6	obl	_	_
@@ -2567,60 +2439,47 @@
 15	quan điểm	quan điểm	NOUN	N	_	13	conj	_	_
 16	chính trị	chính trị	NOUN	N	_	15	compound	_	_
 17	khác biệt	khác biệt	ADJ	A	_	15	amod	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 98
 # text = Sunni
-1	Sunni	Sunni	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Sunni	Sunni	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 99
 # text = Hồi giáo dòng Sunni chiếm 75%–90% số người theo Đạo Hồi.
-1	Hồi giáo	Hồi giáo	NOUN	N	_	2	compound	_	_
-2	dòng	dòng	NOUN	N	_	8	nsubj	_	_
-3	Sunni chiếm	Sunni chiếm	NOUN	Np	_	2	compound	_	_
-4	75%	75%	NUM	M	NumType=Card	6	nummod	_	SpaceAfter=No
-5	–90%	–90%	NUM	M	NumType=Card	6	nummod	_	_
-6	số	số	NOUN	N	_	2	compound	_	_
+1	Hồi	Hồi	NOUN	Np	_	2	advmod	_	_
+2	giáo	giáo	VERB	V	_	0	root	_	_
+3	dòng	dòng	NOUN	N	_	2	obj	_	_
+4	Sunni chiếm	Sunni chiếm	NOUN	Np	_	3	compound	_	_
+5	75%–90%	75%–90%	NUM	M	NumType=Card	6	nummod	_	_
+6	số	số	NOUN	N	_	3	compound	_	_
 7	người	người	NOUN	N	_	6	compound	_	_
-8	theo	theo	VERB	V	_	0	root	_	_
+8	theo	theo	VERB	V	_	6	xcomp	_	_
 9	Đạo	Đạo	NOUN	Np	_	8	obj	_	_
-10	Hồi	Hồi	NOUN	Np	_	9	compound	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	8	punct	_	_
+10	Hồi	Hồi	NOUN	Np	_	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 100
 # text = Dòng Sunni cũng có tên Ahl as-Sunnah nghĩa là "người truyền thống [của Muhammad]".
 1	Dòng	Dòng	NOUN	N	_	2	compound	_	_
 2	Sunni	Sunni	NOUN	Np	_	4	nsubj	_	_
 3	cũng	cũng	X	R	_	4	advmod	_	_
 4	có	có	VERB	V	_	0	root	_	_
-5	tên	tên	NOUN	N	_	4	obj	_	_
-6	Ahl	Ahl	NOUN	Np	_	5	compound	_	_
-7	as-Sunnah nghĩa	as-sunnah nghĩa	NOUN	Np	_	5	compound	_	_
-8	là	là	AUX	V	_	10	cop	_	_
-9	"	"	PUNCT	"	_	10	punct	_	SpaceAfter=No
-10	người	người	NOUN	N	_	4	ccomp	_	_
-11	truyền thống	truyền thống	NOUN	N	_	10	compound	_	_
-12	[của	[của	ADP	E	_	13	case	_	_
-13	Muhammad]	Muhammad]	NOUN	Np	_	10	nmod	_	SpaceAfter=No
-14	"	"	PUNCT	"	_	10	punct	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+5	tên Ahl	tên ahl	NOUN	Np	_	4	obj	_	_
+6	as-Sunnah nghĩa	as-sunnah nghĩa	NOUN	Np	_	5	compound	_	_
+7	là	là	AUX	V	_	9	cop	_	_
+8	"	"	PUNCT	"	_	9	punct	_	SpaceAfter=No
+9	người	người	NOUN	N	_	5	compound	_	_
+10	truyền thống	truyền thống	NOUN	N	_	9	compound	_	_
+11	[của	[của	ADP	E	_	12	case	_	_
+12	Muhammad]	Muhammad]	NOUN	Np	_	9	nmod	_	SpaceAfter=No
+13	"	"	PUNCT	"	_	9	punct	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 101
 # text = Người theo Sunni tin rằng bốn Khalip đầu tiên là những người thừa kế hợp pháp của Muhammad; vì Chúa không chỉ định bất kỳ lãnh đạo đặc biệt nào để kế thừa ông và những người này được bầu ra.
 1	Người	Người	NOUN	N	_	2	nsubj	_	_
 2	theo	theo	VERB	V	_	4	advcl	_	_
@@ -2648,17 +2507,16 @@
 24	đặc biệt	đặc biệt	ADJ	A	_	23	amod	_	_
 25	nào	nào	PROPN	P	_	23	det	_	_
 26	để	để	ADP	E	_	22	case	_	_
-27	kế	kế	VERB	V	_	26	mark	_	_
-28	thừa ông	thừa ông	VERB	V	_	27	xcomp	_	_
-29	và	và	SCONJ	CC	_	34	cc	_	_
-30	những	những	DET	L	_	31	det	_	_
-31	người	người	NOUN	N	_	34	nsubj	_	_
-32	này	này	PROPN	P	_	31	det	_	_
-33	được	được	VERB	V	_	34	aux:pass	_	_
-34	bầu ra	bầu ra	VERB	V	_	27	xcomp	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	4	punct	_	_
+27	kế thừa ông	kế thừa ông	VERB	V	_	26	mark	_	_
+28	và	và	SCONJ	CC	_	33	cc	_	_
+29	những	những	DET	L	_	30	det	_	_
+30	người	người	NOUN	N	_	33	nsubj	_	_
+31	này	này	PROPN	P	_	30	det	_	_
+32	được	được	VERB	V	_	33	aux:pass	_	_
+33	bầu ra	bầu ra	VERB	V	_	27	ccomp	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 102
 # text = Người theo Sunni tin rằng bất cứ ai là người công chính và chỉ có thể là một khalip nhưng họ phải hành động theo kinh Qur'an và Hadith (tuyển tập lời dạy của Muhammad).
 1	Người	Người	NOUN	N	_	2	nsubj	_	_
 2	theo	theo	VERB	V	_	4	advcl	_	_
@@ -2689,14 +2547,10 @@
 27	dạy	dạy	VERB	V	_	26	xcomp	_	_
 28	của	của	ADP	E	_	29	case	_	_
 29	Muhammad)	Muhammad)	NOUN	Np	_	26	nmod	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 103
 # text = Sunni theo Quran, sau đó là Hadith.
 1	Sunni	Sunni	NOUN	N	_	2	nsubj	_	_
 2	theo	theo	VERB	V	_	0	root	_	_
@@ -2708,7 +2562,7 @@
 8	Hadith	Hadith	NOUN	Np	_	2	parataxis	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 104
 # text = Sau đó, các vấn đề pháp lý không được tìm thấy trong Kinh Qur'an hoặc Hadith, họ theo bốn madh'
 1	Sau	Sau	ADP	E	_	2	case	_	_
 2	đó	đó	PROPN	P	_	9	obl	_	SpaceAfter=No
@@ -2730,82 +2584,78 @@
 18	bốn madh	bốn madh	NOUN	N	_	17	obj	_	SpaceAfter=No
 19	'	'	PUNCT	.	_	9	punct	_	SpaceAfter=No
 
-# sent_id = 3
+# sent_id = 105
 # text = habs (trường phái tư tưởng): Hanafi, Hanbali, Maliki và Shafi'i, được thành lập xung quanh những lời dạy tương ứng của Abū Hanifa, Ahmad bin Hanbal, Malik ibn Anas và al-Shafi'i.
-1	habs	habs	NUM	M	NumType=Card	3	nummod	_	_
-2	(trường	(trường	NOUN	Nc	_	3	compound	_	_
-3	phái tư	phái tư	NOUN	N	_	16	nsubj	_	_
-4	tưởng)	tưởng)	NOUN	N	_	3	compound	_	SpaceAfter=No
-5	:	:	PUNCT	:	_	16	punct	_	_
-6	Hanafi	Hanafi	NOUN	Np	_	16	nsubj	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	10	punct	_	_
-8	Hanbali	Hanbali	NOUN	Np	_	6	conj	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	10	punct	_	_
-10	Maliki	Maliki	NOUN	Np	_	6	conj	_	_
-11	và	và	SCONJ	CC	_	12	cc	_	_
-12	Shafi	Shafi	NOUN	Np	_	6	conj	_	SpaceAfter=No
-13	'i	'i	VERB	V	_	16	ccomp	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	16	punct	_	_
-15	được	được	VERB	V	_	16	aux:pass	_	_
-16	thành lập	thành lập	VERB	V	_	0	root	_	_
-17	xung quanh	xung quanh	ADP	E	_	16	obj	_	_
-18	những	những	DET	L	_	19	det	_	_
-19	lời	lời	NOUN	N	_	16	obl	_	_
-20	dạy	dạy	VERB	V	_	19	xcomp	_	_
-21	tương ứng	tương ứng	NOUN	N	_	20	obj	_	_
-22	của	của	ADP	E	_	23	case	_	_
-23	Abū Hanifa	Abū Hanifa	NOUN	Np	_	19	nmod	_	SpaceAfter=No
-24	,	,	PUNCT	,	_	25	punct	_	_
-25	Ahmad	Ahmad	NOUN	Np	_	19	conj	_	_
-26	bin	bin	VERB	V	_	19	xcomp	_	_
-27	Hanbal	Hanbal	NOUN	Np	_	26	obj	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	29	punct	_	_
-29	Malik	Malik	NOUN	Np	_	6	conj	_	_
-30	ibn Anas	ibn anas	NOUN	Np	_	26	compound	_	_
-31	và	và	SCONJ	CC	_	32	cc	_	_
-32	al-Shafi	al-shafi	NOUN	Np	_	6	conj	_	SpaceAfter=No
-33	'i	'i	NOUN	V	_	26	conj	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n
+1	habs	habs	NUM	M	NumType=Card	2	nummod	_	_
+2	(trường	(trường	NOUN	N	_	15	nsubj	_	_
+3	phái tư tưởng)	phái tư tưởng)	NOUN	N	_	2	compound	_	SpaceAfter=No
+4	:	:	PUNCT	:	_	15	punct	_	_
+5	Hanafi	Hanafi	NOUN	Np	_	2	compound	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	Hanbali	Hanbali	NOUN	Np	_	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	Maliki	Maliki	NOUN	Np	_	5	conj	_	_
+10	và	và	SCONJ	CC	_	11	cc	_	_
+11	Shafi	Shafi	NOUN	Np	_	5	conj	_	SpaceAfter=No
+12	'i	'i	VERB	V	_	15	ccomp	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	được	được	VERB	V	_	15	aux:pass	_	_
+15	thành lập	thành lập	VERB	V	_	0	root	_	_
+16	xung quanh	xung quanh	ADP	E	_	15	obj	_	_
+17	những	những	DET	L	_	18	det	_	_
+18	lời	lời	NOUN	N	_	15	obl	_	_
+19	dạy	dạy	VERB	V	_	18	xcomp	_	_
+20	tương ứng	tương ứng	NOUN	N	_	19	obj	_	_
+21	của	của	ADP	E	_	22	case	_	_
+22	Abū Hanifa	Abū Hanifa	NOUN	Np	_	18	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	Ahmad	Ahmad	NOUN	Np	_	18	conj	_	_
+25	bin	bin	VERB	V	_	18	xcomp	_	_
+26	Hanbal	Hanbal	NOUN	Np	_	25	obj	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	Malik	Malik	NOUN	Np	_	5	conj	_	_
+29	ibn Anas	ibn anas	NOUN	Np	_	25	compound	_	_
+30	và	và	SCONJ	CC	_	31	cc	_	_
+31	al-Shafi	al-shafi	NOUN	Np	_	5	conj	_	SpaceAfter=No
+32	'i	'i	NOUN	V	_	25	conj	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 106
 # text = Tất cả bốn chấp nhận tính hợp pháp của nhau và Đạo Hồi có thể chọn bất kỳ một để theo.
 1	Tất cả	Tất cả	PROPN	P	_	2	det	_	_
 2	bốn	bốn	NUM	M	NumType=Card	3	nsubj	_	_
-3	chấp nhận	chấp nhận	VERB	V	_	0	root	_	_
-4	tính	tính	NOUN	N	_	3	obj	_	_
-5	hợp pháp	hợp pháp	ADJ	A	_	4	amod	_	_
-6	của	của	ADP	E	_	7	case	_	_
-7	nhau	nhau	NOUN	N	_	4	nmod	_	_
-8	và	và	SCONJ	CC	_	12	cc	_	_
-9	Đạo	Đạo	NOUN	Np	_	12	nsubj	_	_
-10	Hồi	Hồi	NOUN	Np	_	12	nsubj	_	_
-11	có thể	có thể	X	R	_	12	aux	_	_
-12	chọn	chọn	VERB	V	_	3	conj	_	_
-13	bất kỳ	bất kỳ	NOUN	N	_	12	obj	_	_
-14	một	một	NUM	M	NumType=Card	15	nummod	_	_
-15	để	để	ADP	E	_	13	case	_	_
-16	theo	theo	VERB	V	_	15	xcomp	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	3	punct	_	_
+3	chấp	chấp	VERB	V	_	0	root	_	_
+4	nhận	nhận	VERB	V	_	3	xcomp	_	_
+5	tính	tính	NOUN	N	_	3	obj	_	_
+6	hợp pháp	hợp pháp	ADJ	A	_	5	amod	_	_
+7	của	của	ADP	E	_	8	case	_	_
+8	nhau	nhau	NOUN	N	_	5	nmod	_	_
+9	và	và	SCONJ	CC	_	13	cc	_	_
+10	Đạo	Đạo	NOUN	Np	_	13	nsubj	_	_
+11	Hồi	Hồi	NOUN	Np	_	13	nsubj	_	_
+12	có thể	có thể	X	R	_	13	aux	_	_
+13	chọn	chọn	VERB	V	_	3	conj	_	_
+14	bất kỳ	bất kỳ	NOUN	N	_	13	obj	_	_
+15	một	một	NUM	M	NumType=Card	16	nummod	_	_
+16	để	để	ADP	E	_	14	case	_	_
+17	theo	theo	VERB	V	_	16	xcomp	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 107
 # text = Salafi (hay Ahl al-Hadith (Arabic: أهل الحديث; The people of hadith), hoặc từ miệt thị Wahhabi theo cách gọi của đối thủ họ) là một phong trào Hồi Giáo cực kỳ đề cao sự "chính thống" đã đưa lớp người Hồi Giáo đầu tiên là một hình mẫu điển hình.
-1	Salafi	Salafi	NOUN	Np	_	24	nsubj	_	_
-2	(hay Ahl	(hay aHl	NOUN	Np	_	24	nsubj	_	_
+1	Salafi	Salafi	NOUN	Np	_	21	nsubj	_	_
+2	(hay Ahl	(hay aHl	NOUN	Np	_	21	nsubj	_	_
 3	al-Hadith	al-hadith	NOUN	Np	_	2	compound	_	_
 4	(Arabic	(arabic	NOUN	Np	_	2	compound	_	SpaceAfter=No
-5	:	:	PUNCT	:	_	24	punct	_	_
-6	أهل الحديث	أهل الحديث	NOUN	Np	_	24	nsubj	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	21	punct	_	_
+6	أهل الحديث	أهل الحديث	NOUN	Np	_	21	compound	_	SpaceAfter=No
 7	;	;	PUNCT	,	_	6	punct	_	_
 8	The	The	NOUN	Np	_	9	compound	_	_
 9	people	people	NOUN	N	_	6	conj	_	_
 10	of hadith)	of hadith)	VERB	V	_	9	xcomp	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	24	punct	_	_
-12	hoặc	hoặc	SCONJ	CC	_	24	cc	_	_
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	hoặc	hoặc	SCONJ	CC	_	23	cc	_	_
 13	từ	từ	ADP	E	_	14	case	_	_
 14	miệt thị	miệt thị	NOUN	N	_	6	nmod	_	_
 15	Wahhabi	Wahhabi	NOUN	Np	_	14	compound	_	_
@@ -2813,126 +2663,115 @@
 17	cách gọi	cách gọi	NOUN	N	_	6	nmod	_	_
 18	của	của	ADP	E	_	19	case	_	_
 19	đối thủ họ)	đối thủ họ)	NOUN	N	_	17	nmod	_	_
-20	là	là	AUX	V	_	24	cop	_	_
-21	một	một	NUM	M	NumType=Card	22	nummod	_	_
-22	phong trào	phong trào	NOUN	N	_	24	nsubj	_	_
-23	Hồi Giáo	Hồi Giáo	NOUN	Np	_	22	compound	_	_
-24	cực kỳ	cực kỳ	ADJ	A	_	0	root	_	_
-25	đề	đề	VERB	V	_	24	xcomp	_	_
-26	cao	cao	ADJ	A	_	25	xcomp	_	_
-27	sự	sự	NOUN	N	_	25	obj	_	_
-28	"	"	PUNCT	"	_	27	punct	_	SpaceAfter=No
-29	chính thống	chính thống	ADJ	A	_	27	amod	_	SpaceAfter=No
-30	"	"	PUNCT	"	_	27	punct	_	_
-31	đã	đã	X	R	_	32	advmod	_	_
-32	đưa	đưa	VERB	V	_	27	xcomp	_	_
-33	lớp	lớp	NOUN	N	_	32	obj	_	_
-34	người	người	NOUN	N	_	33	compound	_	_
-35	Hồi Giáo	Hồi Giáo	NOUN	Np	_	34	compound	_	_
-36	đầu tiên	đầu tiên	ADJ	A	_	33	amod	_	_
-37	là	là	AUX	V	_	38	cop	_	_
-38	một hình mẫu	một hình mẫu	NOUN	N	_	27	ccomp	_	_
-39	điển	điển	NOUN	N	_	38	compound	_	_
-40	hình	hình	NOUN	N	_	39	compound	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	24	punct	_	SpacesAfter=\n
+20	là	là	AUX	V	_	21	cop	_	_
+21	một phong trào	một phong trào	NOUN	N	_	0	root	_	_
+22	Hồi Giáo	Hồi Giáo	NOUN	Np	_	21	compound	_	_
+23	cực kỳ	cực kỳ	ADJ	A	_	21	amod	_	_
+24	đề	đề	VERB	V	_	23	xcomp	_	_
+25	cao	cao	ADJ	A	_	24	xcomp	_	_
+26	sự	sự	NOUN	N	_	31	obj	_	_
+27	"	"	PUNCT	"	_	26	punct	_	SpaceAfter=No
+28	chính thống	chính thống	ADJ	A	_	26	amod	_	SpaceAfter=No
+29	"	"	PUNCT	"	_	26	punct	_	_
+30	đã	đã	X	R	_	31	advmod	_	_
+31	đưa	đưa	VERB	V	_	24	ccomp	_	_
+32	lớp	lớp	NOUN	N	_	31	obj	_	_
+33	người	người	NOUN	N	_	32	compound	_	_
+34	Hồi Giáo	Hồi Giáo	NOUN	Np	_	33	compound	_	_
+35	đầu tiên	đầu tiên	ADJ	A	_	32	amod	_	_
+36	là	là	AUX	V	_	37	cop	_	_
+37	một hình mẫu	một hình mẫu	NOUN	N	_	26	ccomp	_	_
+38	điển	điển	NOUN	N	_	37	compound	_	_
+39	hình	hình	NOUN	N	_	38	amod	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	21	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 108
 # text = Shia
-1	Shia	Shia	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Shia	Shia	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 109
 # text = Shi'a chiếm 10–20% số người theo đạo Hồi và là nhánh lớn thứ 2.
 1	Shi	Shi	NOUN	Np	_	2	nsubj	_	SpaceAfter=No
 2	'a chiếm	'a chiếm	VERB	V	_	0	root	_	_
-3	10–20%	10–20%	NUM	M	NumType=Card	4	nummod	_	_
-4	số	số	NOUN	N	_	2	obj	_	_
-5	người	người	NOUN	N	_	4	compound	_	_
-6	theo đạo	theo đạo	VERB	V	_	4	xcomp	_	_
-7	Hồi	Hồi	NOUN	Np	_	6	obj	_	_
-8	và	và	SCONJ	CC	_	10	cc	_	_
-9	là	là	AUX	V	_	10	cop	_	_
-10	nhánh	nhánh	NOUN	N	_	4	conj	_	_
-11	lớn	lớn	ADJ	A	_	10	amod	_	_
-12	thứ	thứ	NOUN	N	_	10	compound	_	_
-13	2	2	NUM	M	NumType=Card	12	nummod	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+3	10	10	NUM	M	NumType=Card	5	nummod	_	SpaceAfter=No
+4	–20%	–20%	NUM	M	NumType=Card	5	nummod	_	_
+5	số	số	NOUN	N	_	2	obj	_	_
+6	người	người	NOUN	N	_	5	compound	_	_
+7	theo đạo	theo đạo	VERB	V	_	5	xcomp	_	_
+8	Hồi	Hồi	NOUN	Np	_	7	obj	_	_
+9	và	và	SCONJ	CC	_	11	cc	_	_
+10	là	là	AUX	V	_	11	cop	_	_
+11	nhánh	nhánh	NOUN	N	_	5	conj	_	_
+12	lớn	lớn	ADJ	A	_	11	amod	_	_
+13	thứ	thứ	NOUN	N	_	11	compound	_	_
+14	2	2	NUM	M	NumType=Card	13	nummod	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 110
 # text = Trong khi Sunni tin rằng Muhammad không chỉ định một người kế nhiệm và do đó kế nhiệm ông sẽ được chọn bởi cộng đồng thì Shia tin rằng trong lần hành hương cuối cùng của Muhammad đến Mecca, ông đã chỉ định con nuôi của ông là Ali ibn Abi Talib, làm người kế vị trong Hadith of the pond of Khumm.
-1	Trong	Trong	CCONJ	T	_	8	cc	_	_
-2	khi	khi	NOUN	N	_	8	obl	_	_
-3	Sunni tin	Sunni tin	NOUN	Np	_	8	nsubj	_	_
-4	rằng	rằng	CCONJ	C	_	8	cc	_	_
-5	Muhammad	Muhammad	NOUN	Np	_	8	nsubj	_	_
-6	không	không	X	R	Polarity=Neg	8	advmod	_	_
-7	chỉ	chỉ	X	R	_	8	advmod	_	_
-8	định	định	VERB	V	_	0	root	_	_
-9	một	một	NUM	M	NumType=Card	10	nummod	_	_
-10	người	người	NOUN	N	_	8	obj	_	_
-11	kế nhiệm	kế nhiệm	NOUN	N	_	10	compound	_	_
-12	và	và	SCONJ	CC	_	19	cc	_	_
-13	do	do	ADP	E	_	39	case	_	_
-14	đó	đó	PROPN	P	_	28	nmod	_	_
-15	kế nhiệm	kế nhiệm	VERB	V	_	19	nsubj	_	_
-16	ông	ông	NOUN	N	_	15	compound	_	_
-17	sẽ	sẽ	X	R	_	19	advmod	_	_
-18	được	được	VERB	V	_	19	aux:pass	_	_
-19	chọn	chọn	VERB	V	_	8	conj	_	_
-20	bởi	bởi	ADP	E	_	21	case	_	_
-21	cộng	cộng	NOUN	N	_	19	obl	_	_
-22	đồng	đồng	NOUN	N	_	21	compound	_	_
-23	thì	thì	CCONJ	C	_	8	cc	_	_
-24	Shia	Shia	NOUN	Np	_	39	nsubj	_	_
-25	tin	tin	VERB	V	_	8	parataxis	_	_
-26	rằng	rằng	CCONJ	C	_	39	cc	_	_
-27	trong	trong	ADP	E	_	28	case	_	_
-28	lần	lần	NOUN	N	_	39	obl	_	_
-29	hành hương	hành hương	VERB	V	_	28	xcomp	_	_
-30	cuối cùng	cuối cùng	ADJ	A	_	29	xcomp	_	_
-31	của	của	ADP	E	_	32	case	_	_
-32	Muhammad	Muhammad	NOUN	Np	_	40	nmod	_	_
-33	đến	đến	ADP	E	_	34	case	_	_
-34	Mecca	Mecca	NOUN	Np	_	29	obl	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	8	punct	_	_
-36	ông	ông	NOUN	N	_	39	nsubj	_	_
-37	đã	đã	X	R	_	39	advmod	_	_
-38	chỉ	chỉ	X	R	_	39	advmod	_	_
-39	định	định	VERB	V	_	8	parataxis	_	_
-40	con	con	NOUN	N	_	39	obj	_	_
-41	nuôi	nuôi	VERB	V	_	40	xcomp	_	_
-42	của	của	ADP	E	_	43	case	_	_
-43	ông	ông	NOUN	N	_	40	nmod	_	_
-44	là	là	AUX	V	_	45	cop	_	_
-45	Ali	Ali	NOUN	Np	_	39	ccomp	_	_
-46	ibn Abi	ibn abi	NOUN	Np	_	45	compound	_	_
-47	Talib	Talib	NOUN	Np	_	45	compound	_	SpaceAfter=No
-48	,	,	PUNCT	,	_	49	punct	_	_
-49	làm	làm	VERB	V	_	39	conj	_	_
-50	người	người	NOUN	N	_	49	obj	_	_
-51	kế vị	kế vị	VERB	V	_	50	xcomp	_	_
-52	trong	trong	ADP	E	_	53	case	_	_
-53	Hadith	Hadith	NOUN	Np	_	50	nmod	_	_
-54	of	of	ADP	E	_	53	case	_	_
-55	the	the	NOUN	N	_	53	compound	_	_
-56	pond of Khumm	pond of khumm	NOUN	Np	_	55	compound	_	SpaceAfter=No
-57	.	.	PUNCT	.	_	8	punct	_	_
+1	Trong	Trong	CCONJ	T	_	2	discourse	_	_
+2	khi	khi	NOUN	N	_	4	obl	_	_
+3	Sunni	Sunni	NOUN	Np	_	4	nsubj	_	_
+4	tin	tin	VERB	V	_	0	root	_	_
+5	rằng	rằng	CCONJ	C	_	9	mark	_	_
+6	Muhammad	Muhammad	NOUN	Np	_	9	nsubj	_	_
+7	không	không	X	R	Polarity=Neg	9	advmod	_	_
+8	chỉ	chỉ	X	R	_	9	advmod	_	_
+9	định	định	VERB	V	_	4	ccomp	_	_
+10	một	một	NUM	M	NumType=Card	11	nummod	_	_
+11	người	người	NOUN	N	_	9	obj	_	_
+12	kế nhiệm	kế nhiệm	NOUN	N	_	11	compound	_	_
+13	và	và	SCONJ	CC	_	9	cc	_	_
+14	do	do	ADP	E	_	40	case	_	_
+15	đó	đó	PROPN	P	_	29	nmod	_	_
+16	kế nhiệm	kế nhiệm	VERB	V	_	20	nsubj	_	_
+17	ông	ông	NOUN	N	_	16	compound	_	_
+18	sẽ	sẽ	X	R	_	20	advmod	_	_
+19	được	được	VERB	V	_	20	aux:pass	_	_
+20	chọn	chọn	VERB	V	_	9	conj	_	_
+21	bởi	bởi	ADP	E	_	35	case	_	_
+22	cộng	cộng	NOUN	N	_	20	obl	_	_
+23	đồng	đồng	NOUN	N	_	22	compound	_	_
+24	thì	thì	CCONJ	C	_	9	cc	_	_
+25	Shia	Shia	NOUN	Np	_	40	nsubj	_	_
+26	tin	tin	VERB	V	_	4	parataxis	_	_
+27	rằng	rằng	CCONJ	C	_	9	cc	_	_
+28	trong	trong	ADP	E	_	29	case	_	_
+29	lần	lần	NOUN	N	_	40	obl	_	_
+30	hành hương	hành hương	VERB	V	_	29	xcomp	_	_
+31	cuối cùng	cuối cùng	ADJ	A	_	30	xcomp	_	_
+32	của	của	ADP	E	_	33	case	_	_
+33	Muhammad	Muhammad	NOUN	Np	_	41	nmod	_	_
+34	đến	đến	ADP	E	_	35	case	_	_
+35	Mecca	Mecca	NOUN	Np	_	30	obl	_	SpaceAfter=No
+36	,	,	PUNCT	,	_	4	punct	_	_
+37	ông	ông	NOUN	N	_	40	nsubj	_	_
+38	đã	đã	X	R	_	40	advmod	_	_
+39	chỉ	chỉ	X	R	_	40	advmod	_	_
+40	định	định	VERB	V	_	4	parataxis	_	_
+41	con	con	NOUN	N	_	40	obj	_	_
+42	nuôi	nuôi	VERB	V	_	41	xcomp	_	_
+43	của	của	ADP	E	_	44	case	_	_
+44	ông	ông	NOUN	N	_	41	nmod	_	_
+45	là	là	AUX	V	_	46	cop	_	_
+46	Ali	Ali	NOUN	Np	_	40	ccomp	_	_
+47	ibn Abi	ibn abi	NOUN	Np	_	46	compound	_	_
+48	Talib	Talib	NOUN	Np	_	46	compound	_	SpaceAfter=No
+49	,	,	PUNCT	,	_	50	punct	_	_
+50	làm	làm	VERB	V	_	40	conj	_	_
+51	người	người	NOUN	N	_	50	obj	_	_
+52	kế vị	kế vị	VERB	V	_	51	xcomp	_	_
+53	trong	trong	ADP	E	_	54	case	_	_
+54	Hadith	Hadith	NOUN	Np	_	51	nmod	_	_
+55	of	of	ADP	E	_	54	case	_	_
+56	the	the	NOUN	N	_	54	compound	_	_
+57	pond of Khumm	pond of khumm	NOUN	Np	_	56	compound	_	SpaceAfter=No
+58	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 111
 # text = Và thế là họ tin rằng Ali ibn Abi Talib là Imam (lãnh đạo) đầu tiên, và bác bỏ tính hợp pháp của các khalip Hồi giáo trước Abu Bakr, Uthman ibn al-Affan và Umar ibn al-Khattab.
 1	Và	Và	CCONJ	C	_	5	cc	_	_
 2	thế	thế	PROPN	P	_	5	nsubj	_	_
@@ -2968,14 +2807,10 @@
 32	và	và	SCONJ	CC	_	33	cc	_	_
 33	Umar ibn	Umar ibn	NOUN	Np	_	30	conj	_	_
 34	al-Khattab	al-khattab	NOUN	Np	_	30	compound	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+35	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 112
 # text = Hồi Giáo Shia có nhiều nhánh, nhánh lớn nhất là Twelvers phát triển phần lớn ở Iran, Iraq, Azerbaijan, Bahrain, Ấn Độ, Pakistan và Liban.
 1	Hồi Giáo	Hồi Giáo	NOUN	Np	_	3	nsubj	_	_
 2	Shia	Shia	NOUN	Np	_	3	nsubj	_	_
@@ -3007,7 +2842,7 @@
 28	Liban	Liban	NOUN	Np	_	20	conj	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 113
 # text = Tiếp theo là Zaidis và Ismaili.
 1	Tiếp theo	Tiếp theo	X	R	_	3	nsubj	_	_
 2	là	là	AUX	V	_	3	cop	_	_
@@ -3016,7 +2851,7 @@
 5	Ismaili	Ismaili	NOUN	Np	_	3	conj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 114
 # text = Sau cái chết của Imam Jafar al-Sadiq (cháu lớn của Abu Bakr và Ali ibn Abi Talib) được xem là lãnh tụ thứ sáu của người Shia, Ismailis bắt đầu theo con trai ông Isma'
 1	Sau	Sau	ADP	E	_	2	case	_	_
 2	cái	cái	NOUN	Nc	_	25	obl	_	_
@@ -3048,7 +2883,7 @@
 28	ông Isma	ông isma	NOUN	N	_	27	compound	_	SpaceAfter=No
 29	'	'	PUNCT	.	_	25	punct	_	SpaceAfter=No
 
-# sent_id = 4
+# sent_id = 115
 # text = il ibn Jafar và Twelver Shia's (Ithna Asheri) bắt đầu theo con trai khác của ông Musa al-Kazim làm Imam thứ 7.
 1	il	il	NOUN	N	_	9	nsubj	_	_
 2	ibn	ibn	NOUN	N	_	1	compound	_	_
@@ -3059,20 +2894,19 @@
 7	's (Ithna	's (ithna	NOUN	Np	_	6	compound	_	_
 8	Asheri)	Asheri)	NOUN	Np	_	6	compound	_	_
 9	bắt đầu	bắt đầu	VERB	V	_	0	root	_	_
-10	theo	theo	VERB	V	_	9	xcomp	_	_
-11	con	con	NOUN	Nc	_	12	compound	_	_
-12	trai	trai	NOUN	N	_	10	obj	_	_
-13	khác	khác	ADJ	A	_	12	amod	_	_
-14	của	của	ADP	E	_	15	case	_	_
-15	ông Musa	ông musa	NOUN	Np	_	12	nmod	_	_
-16	al-Kazim	al-kazim	PUNCT	Np	_	15	punct	_	_
-17	làm	làm	VERB	V	_	9	ccomp	_	_
-18	Imam	Imam	NOUN	Np	_	17	obj	_	_
-19	thứ	thứ	NOUN	N	_	18	compound	_	_
-20	7	7	NUM	M	NumType=Card	19	nummod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	9	punct	_	_
+10	theo	theo	VERB	V	_	11	case	_	_
+11	con trai	con trai	NOUN	N	_	9	obl	_	_
+12	khác	khác	ADJ	A	_	11	amod	_	_
+13	của	của	ADP	E	_	14	case	_	_
+14	ông Musa	ông musa	NOUN	Np	_	11	nmod	_	_
+15	al-Kazim	al-kazim	PUNCT	Np	_	14	compound	_	_
+16	làm	làm	VERB	V	_	9	ccomp	_	_
+17	Imam	Imam	NOUN	Np	_	16	obj	_	_
+18	thứ	thứ	NOUN	N	_	17	compound	_	_
+19	7	7	NUM	M	NumType=Card	18	nummod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 5
+# sent_id = 116
 # text = Zaydis theo Zayd ibn Ali, chú của lãnh tụ Jafar al-Sadiq, là lãnh tụ thứ 5.
 1	Zaydis	zaydis	VERB	V	_	13	advcl	_	_
 2	theo	theo	ADP	E	_	3	case	_	_
@@ -3089,14 +2923,10 @@
 13	lãnh tụ	lãnh tụ	NOUN	N	_	0	root	_	_
 14	thứ	thứ	NOUN	N	_	13	compound	_	_
 15	5	5	NUM	M	NumType=Card	14	nummod	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 117
 # text = Các nhóm khác nhỏ hơn gồm Bohra và Druze, cũng như Alawites và Alevi.
 1	Các	Các	DET	L	_	2	det	_	_
 2	nhóm	nhóm	NOUN	N	_	6	nsubj	_	_
@@ -3113,23 +2943,15 @@
 13	Alawites	Alawites	NOUN	Np	_	6	conj	_	_
 14	và	và	SCONJ	CC	_	15	cc	_	_
 15	Alevi	Alevi	NOUN	Np	_	13	conj	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 118
 # text = Sufism
-1	Sufism	Sufism	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Sufism	Sufism	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 119
 # text = Sufism là một nhánh Hồi giáo thiên về chiều hướng thần bí, nội tâm của Islam nhằm mục đích đạt được sự hoàn thiện về đạo đức,sự hành đạo và đức tin (al-ihsan) và gần gũi với Đấng Tối cao Allah.
 1	Sufism	Sufism	NOUN	Np	_	4	nsubj	_	_
 2	là	là	AUX	V	_	4	cop	_	_
@@ -3169,7 +2991,7 @@
 36	cao Allah	cao allah	NOUN	Np	_	34	compound	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 120
 # text = Do đặc tính linh hoạt và nghiên về chiều hướng thần bí nên Sufism là nhánh Hồi giáo tiên phong mở đường trong công cuộc truyền bá Islam
 1	Do	Do	ADP	E	_	2	case	_	_
 2	đặc	đặc	VERB	V	_	15	advcl	_	_
@@ -3196,34 +3018,22 @@
 23	công cuộc	công cuộc	NOUN	N	_	21	nmod	_	_
 24	truyền	truyền	VERB	V	_	23	xcomp	_	_
 25	bá	bá	NOUN	N	_	24	obj	_	_
-26	Islam	Islam	NOUN	Np	_	23	compound	_	SpacesAfter=\n
+26	Islam	Islam	NOUN	Np	_	23	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 121
 # text = Các dòng khác
 1	Các	Các	DET	L	_	2	det	_	_
 2	dòng	dòng	NOUN	N	_	0	root	_	_
-3	khác	khác	ADJ	A	_	2	amod	_	SpaceAfter=No
+3	khác	khác	ADJ	A	_	2	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 122
 # text = Thánh địa Mecca
-1	Thánh địa Mecca	Thánh ĐỊA meCca	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Thánh địa Mecca	Thánh ĐỊA meCca	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 123
 # text = Theo quy định của hồi giáo, mỗi giáo dân ít nhất một lần trong cuộc đời phải hành hương về thánh địa Mecca bằng chính kinh phí của bản thân mình và trước khi đi phải chuẩn bị đồ ăn thức uống cho người thân (những người ở nhà, không đi hành hương) trong thời gian mà họ đi vắng.
 1	Theo	Theo	PART	T	_	2	discourse	_	_
 2	quy định	quy định	NOUN	N	_	16	advcl	_	_
@@ -3262,23 +3072,22 @@
 35	ăn thức	ăn thức	VERB	V	_	34	xcomp	_	_
 36	uống	uống	VERB	V	_	32	ccomp	_	_
 37	cho	cho	ADP	E	_	38	case	_	_
-38	người thân	người thân	NOUN	N	_	32	obl	_	_
-39	(những	(những	DET	L	_	40	det	_	_
-40	người	người	NOUN	N	_	38	compound	_	_
-41	ở	ở	VERB	V	_	40	xcomp	_	_
-42	nhà	nhà	NOUN	N	_	41	obj	_	SpaceAfter=No
-43	,	,	PUNCT	,	_	45	punct	_	_
-44	không	không	X	R	Polarity=Neg	45	advmod	_	_
-45	đi	đi	VERB	V	_	32	conj	_	_
-46	hành hương)	hành hương)	NOUN	N	_	45	obj	_	_
-47	trong	trong	ADP	E	_	48	case	_	_
-48	thời gian	thời gian	NOUN	N	_	45	obl	_	_
-49	mà	mà	CCONJ	C	_	51	cc	_	_
-50	họ	họ	PROPN	P	_	51	nsubj	_	_
-51	đi vắng	đi vắng	VERB	V	_	48	ccomp	_	SpaceAfter=No
-52	.	.	PUNCT	.	_	16	punct	_	_
+38	người thân (những	người thân (những	X	X	_	44	obl	_	_
+39	người	người	NOUN	N	_	38	compound	_	_
+40	ở	ở	VERB	V	_	39	xcomp	_	_
+41	nhà	nhà	NOUN	N	_	40	obj	_	SpaceAfter=No
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	không	không	X	R	Polarity=Neg	44	advmod	_	_
+44	đi	đi	VERB	V	_	32	conj	_	_
+45	hành hương)	hành hương)	NOUN	N	_	44	obj	_	_
+46	trong	trong	ADP	E	_	47	case	_	_
+47	thời gian	thời gian	NOUN	N	_	44	obl	_	_
+48	mà	mà	CCONJ	C	_	50	cc	_	_
+49	họ	họ	PROPN	P	_	50	nsubj	_	_
+50	đi vắng	đi vắng	VERB	V	_	47	ccomp	_	SpaceAfter=No
+51	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = 2
+# sent_id = 124
 # text = Vào tháng Ramadan, người Hồi giáo hành hương về đây (và chỉ có người Hồi giáo mới được về đây).
 1	Vào	Vào	CCONJ	C	_	2	case	_	_
 2	tháng	tháng	NOUN	N	_	7	obl	_	_
@@ -3302,7 +3111,7 @@
 20	đây)	đây)	PROPN	P	_	19	obj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 125
 # text = Sau khi hành hương đến Mecca, tín đồ đạo Hồi sẽ có được danh hiệu là "Haj" hoặc "Haji".
 1	Sau	Sau	ADP	E	_	2	case	_	_
 2	khi	khi	NOUN	N	_	11	obl	_	_
@@ -3325,14 +3134,10 @@
 19	"	"	PUNCT	"	_	20	punct	_	SpaceAfter=No
 20	Haji	Haji	NOUN	Np	_	16	conj	_	SpaceAfter=No
 21	"	"	PUNCT	"	_	20	punct	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	.	_	11	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 126
 # text = Hành hương tại Mecca, Ả Rập Saudi
 1	Hành hương	Hành hương	NOUN	N	_	0	root	_	_
 2	tại	tại	ADP	E	_	3	case	_	_
@@ -3340,48 +3145,32 @@
 4	,	,	PUNCT	,	_	5	punct	_	_
 5	Ả	ả	NOUN	N	_	3	conj	_	_
 6	Rập	Rập	NOUN	Np	_	5	compound	_	_
-7	Saudi	Saudi	NOUN	Np	_	5	compound	_	SpacesAfter=\n
+7	Saudi	Saudi	NOUN	Np	_	5	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 127
 # text = Thánh địa Mecca năm 1850
 1	Thánh địa Mecca	Thánh ĐỊA meCca	NOUN	Np	_	2	nsubj	_	_
 2	năm	năm	NOUN	N	_	0	root	_	_
-3	1850	1850	NUM	M	NumType=Card	2	nummod	_	SpacesAfter=\n
+3	1850	1850	NUM	M	NumType=Card	2	nummod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 128
 # text = Tín đồ đi lễ quanh đền Kaaba
 1	Tín đồ	Tín đồ	NOUN	N	_	2	nsubj	_	_
 2	đi	đi	VERB	V	_	0	root	_	_
 3	lễ quanh	lễ quanh	VERB	V	_	2	xcomp	_	_
 4	đền	đền	NOUN	N	_	3	obj	_	_
-5	Kaaba	Kaaba	NOUN	Np	_	4	compound	_	SpacesAfter=\n
+5	Kaaba	Kaaba	NOUN	Np	_	4	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 129
 # text = Chỉ trích
 1	Chỉ	Chỉ	X	R	_	2	advmod	_	_
-2	trích	trích	VERB	V	_	0	root	_	SpaceAfter=No
+2	trích	trích	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 130
 # text = Sự chỉ trích Hồi giáo đã tồn tại từ giai đoạn hình thành của Hồi giáo.
 1	Sự	Sự	NOUN	Nc	_	7	nsubj	_	_
 2	chỉ	chỉ	X	R	_	3	advmod	_	_
@@ -3399,7 +3188,7 @@
 14	giáo	giáo	VERB	V	_	9	xcomp	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 131
 # text = Những lời chỉ trích ban đầu đến từ các tác giả Kitô giáo, nhiều người trong số họ xem Hồi giáo là một dị giáo của Kitô giáo hoặc một hình thức thờ hình tượng và thường giải thích nó bằng những từ ngữ khải huyền.
 1	Những	Những	DET	L	_	2	det	_	_
 2	lời	lời	NOUN	N	_	6	nsubj	_	_
@@ -3421,58 +3210,57 @@
 18	giáo	giáo	VERB	V	_	12	xcomp	_	_
 19	là	là	AUX	V	_	21	cop	_	_
 20	một	một	NUM	M	NumType=Card	21	nummod	_	_
-21	dị giáo	dị giáo	NOUN	N	_	16	ccomp	_	_
+21	dị giáo	dị giáo	NOUN	N	_	31	ccomp	_	_
 22	của	của	ADP	E	_	23	case	_	_
-23	Kitô	Kitô	NOUN	Np	_	21	nmod	_	_
-24	giáo	giáo	NOUN	N	_	9	compound	_	_
-25	hoặc	hoặc	SCONJ	CC	_	27	cc	_	_
-26	một	một	NUM	M	NumType=Card	27	nummod	_	_
-27	hình thức	hình thức	NOUN	N	_	21	conj	_	_
-28	thờ	thờ	NOUN	N	_	27	compound	_	_
-29	hình tượng	hình tượng	NOUN	N	_	28	compound	_	_
-30	và	và	SCONJ	CC	_	32	cc	_	_
-31	thường	thường	X	R	_	32	advmod	_	_
-32	giải thích	giải thích	VERB	V	_	6	conj	_	_
-33	nó	nó	PROPN	P	_	32	obj	_	_
-34	bằng	bằng	ADP	E	_	37	case	_	_
-35	những	những	DET	L	_	37	det	_	_
-36	từ	từ	ADP	E	_	37	case	_	_
-37	ngữ	ngữ	NOUN	N	_	32	obl	_	_
-38	khải	khải	VERB	V	_	37	xcomp	_	_
-39	huyền	huyền	NOUN	N	_	38	obj	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	_
+23	Kitô giáo	Kitô giáo	NOUN	Np	_	21	nmod	_	_
+24	hoặc	hoặc	SCONJ	CC	_	26	cc	_	_
+25	một	một	NUM	M	NumType=Card	26	nummod	_	_
+26	hình thức	hình thức	NOUN	N	_	21	conj	_	_
+27	thờ	thờ	NOUN	N	_	26	compound	_	_
+28	hình tượng	hình tượng	NOUN	N	_	27	compound	_	_
+29	và	và	SCONJ	CC	_	31	cc	_	_
+30	thường	thường	X	R	_	31	advmod	_	_
+31	giải thích	giải thích	VERB	V	_	6	conj	_	_
+32	nó	nó	PROPN	P	_	31	obj	_	_
+33	bằng	bằng	ADP	E	_	36	case	_	_
+34	những	những	DET	L	_	36	det	_	_
+35	từ	từ	ADP	E	_	36	case	_	_
+36	ngữ	ngữ	NOUN	N	_	31	obl	_	_
+37	khải	khải	VERB	V	_	36	xcomp	_	_
+38	huyền	huyền	NOUN	N	_	37	obj	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 132
 # text = Sau đó xuất hiện những lời chỉ trích từ chính thế giới Hồi giáo, và cả từ các nhà văn Do Thái và từ các Kitô hữu thuộc giáo hội.
 1	Sau	Sau	ADP	E	_	2	case	_	_
 2	đó	đó	PROPN	P	_	3	nsubj	_	_
 3	xuất hiện	xuất hiện	VERB	V	_	0	root	_	_
-4	những	những	DET	L	_	5	det	_	_
-5	lời	lời	NOUN	N	_	7	nsubj	_	_
-6	chỉ	chỉ	X	R	_	7	advmod	_	_
-7	trích	trích	VERB	V	_	3	ccomp	_	_
-8	từ	từ	ADP	E	_	9	case	_	_
-9	chính thế	chính thế	NOUN	N	_	7	obl	_	_
-10	giới	giới	NOUN	N	_	9	compound	_	_
-11	Hồi	Hồi	NOUN	Np	_	9	compound	_	_
-12	giáo	giáo	NOUN	N	_	9	compound	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	18	punct	_	_
-14	và	và	SCONJ	CC	_	18	cc	_	_
-15	cả	cả	PART	T	_	18	discourse	_	_
-16	từ	từ	ADP	E	_	18	case	_	_
-17	các	các	DET	L	_	18	det	_	_
-18	nhà văn Do Thái	nhà văn do thÁi	NOUN	Np	_	12	nmod	_	_
-19	và	và	SCONJ	CC	_	21	cc	_	_
-20	từ	từ	ADP	E	_	21	case	_	_
-21	các Kitô	các kitô	NOUN	N	_	18	nmod	_	_
+4	những lời	những lời	NOUN	N	_	3	obj	_	_
+5	chỉ	chỉ	X	R	_	6	advmod	_	_
+6	trích	trích	VERB	V	_	3	ccomp	_	_
+7	từ	từ	ADP	E	_	8	case	_	_
+8	chính thế	chính thế	NOUN	N	_	6	obl	_	_
+9	giới	giới	NOUN	N	_	8	compound	_	_
+10	Hồi	Hồi	NOUN	Np	_	8	compound	_	_
+11	giáo	giáo	NOUN	N	_	8	compound	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	17	punct	_	_
+13	và	và	SCONJ	CC	_	6	cc	_	_
+14	cả	cả	PART	T	_	17	discourse	_	_
+15	từ	từ	ADP	E	_	17	case	_	_
+16	các	các	DET	L	_	17	det	_	_
+17	nhà văn Do Thái	nhà văn do thÁi	NOUN	Np	_	6	obl	_	_
+18	và	và	SCONJ	CC	_	21	cc	_	_
+19	từ	từ	ADP	E	_	21	case	_	_
+20	các	các	DET	L	_	21	det	_	_
+21	Kitô	Kitô	NOUN	Np	_	8	nmod	_	_
 22	hữu thuộc	hữu thuộc	VERB	V	_	21	xcomp	_	_
 23	giáo hội	giáo hội	NOUN	N	_	22	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 133
 # text = Các vấn đề liên quan đến tính xác thực và đạo đức của Kinh Qur'an, cuốn sách thánh Hồi giáo, cũng được các nhà phê bình thảo luận.
 1	Các	Các	DET	L	_	2	det	_	_
-2	vấn đề	vấn đề	NOUN	N	_	22	nsubj	_	_
+2	vấn đề	vấn đề	NOUN	N	_	23	nsubj	_	_
 3	liên quan	liên quan	VERB	V	_	2	xcomp	_	_
 4	đến	đến	ADP	E	_	5	case	_	_
 5	tính	tính	NOUN	N	_	3	obl	_	_
@@ -3482,58 +3270,53 @@
 9	của	của	ADP	E	_	10	case	_	_
 10	Kinh Qur'an	Kinh QUr'an	NOUN	Np	_	5	nmod	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	12	punct	_	_
-12	cuốn sách	cuốn sách	NOUN	N	_	5	conj	_	_
-13	thánh	thánh	NOUN	N	_	12	compound	_	_
-14	Hồi	Hồi	NOUN	Np	_	13	compound	_	_
-15	giáo	giáo	NOUN	N	_	5	xcomp	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	22	punct	_	_
-17	cũng	cũng	X	R	_	22	advmod	_	_
-18	được	được	VERB	V	_	22	aux:pass	_	_
-19	các	các	DET	L	_	20	det	_	_
-20	nhà	nhà	NOUN	N	_	22	nsubj	_	_
-21	phê bình	phê bình	VERB	V	_	20	xcomp	_	_
-22	thảo	thảo	VERB	V	_	0	root	_	_
-23	luận	luận	ADJ	A	_	22	xcomp	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	22	punct	_	SpacesAfter=\n
+12	cuốn	cuốn	VERB	V	_	5	conj	_	_
+13	sách	sách	NOUN	N	_	12	obj	_	_
+14	thánh	thánh	NOUN	N	_	13	compound	_	_
+15	Hồi	Hồi	NOUN	Np	_	14	compound	_	_
+16	giáo	giáo	NOUN	N	_	13	compound	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	23	punct	_	_
+18	cũng	cũng	X	R	_	23	advmod	_	_
+19	được	được	VERB	V	_	23	aux:pass	_	_
+20	các	các	DET	L	_	21	det	_	_
+21	nhà	nhà	NOUN	N	_	23	nsubj	_	_
+22	phê bình	phê bình	VERB	V	_	21	xcomp	_	_
+23	thảo luận	thảo luận	VERB	V	_	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 134
 # text = Hình ảnh phỉ báng Muhammad, bắt nguồn từ những mô tả đầu thế kỷ thứ 7 của Nhà thờ Byzantine, xuất hiện trong bài thơ sử thi thế kỷ 14 Hài kịch thần thánh của Dante Alighieri.
-1	Hình	Hình	NOUN	Nc	_	2	compound	_	_
-2	ảnh	ảnh	NOUN	N	_	18	nsubj	_	_
-3	phỉ	phỉ	NOUN	N	_	2	compound	_	_
-4	báng Muhammad	báng muhammad	NOUN	Np	_	3	compound	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	6	punct	_	_
-6	bắt	bắt	VERB	V	_	2	conj	_	_
-7	nguồn	nguồn	VERB	V	_	6	xcomp	_	_
-8	từ	từ	ADP	E	_	10	case	_	_
-9	những	những	DET	L	_	10	det	_	_
-10	mô tả	mô tả	NOUN	N	_	18	obl	_	_
-11	đầu thế	đầu thế	NOUN	N	_	10	compound	_	_
-12	kỷ thứ	kỷ thứ	NOUN	N	_	11	compound	_	_
-13	7	7	NUM	M	NumType=Card	12	nummod	_	_
-14	của	của	ADP	E	_	15	case	_	_
-15	Nhà thờ	Nhà thờ	NOUN	N	_	10	nmod	_	_
-16	Byzantine	Byzantine	NOUN	Np	_	15	compound	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	18	punct	_	_
-18	xuất hiện	xuất hiện	VERB	V	_	0	root	_	_
-19	trong	trong	ADP	E	_	20	case	_	_
-20	bài	bài	NOUN	N	_	18	obl	_	_
-21	thơ sử	thơ sử	VERB	V	_	20	xcomp	_	_
-22	thi thế	thi thế	NOUN	N	_	20	compound	_	_
-23	kỷ 14	kỷ 14	NUM	M	NumType=Card	22	nummod	_	_
-24	Hài	Hài	NOUN	Np	_	25	compound	_	_
-25	kịch thần	kịch thần	NOUN	N	_	20	compound	_	_
-26	thánh	thánh	VERB	V	_	25	xcomp	_	_
-27	của	của	ADP	E	_	28	case	_	_
-28	Dante Alighieri	DantE aligHieri	NOUN	Np	_	25	nmod	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	18	punct	_	_
+1	Hình ảnh	Hình ảnh	NOUN	N	_	5	nsubj	_	_
+2	phỉ	phỉ	X	R	_	5	advmod	_	_
+3	báng Muhammad	báng muhammad	NOUN	Np	_	1	compound	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	bắt	bắt	VERB	V	_	0	root	_	_
+6	nguồn	nguồn	VERB	V	_	5	xcomp	_	_
+7	từ	từ	ADP	E	_	9	case	_	_
+8	những	những	DET	L	_	9	det	_	_
+9	mô tả	mô tả	NOUN	N	_	17	obl	_	_
+10	đầu thế	đầu thế	NOUN	N	_	9	compound	_	_
+11	kỷ thứ	kỷ thứ	NOUN	N	_	10	compound	_	_
+12	7	7	NUM	M	NumType=Card	11	nummod	_	_
+13	của	của	ADP	E	_	14	case	_	_
+14	Nhà thờ	Nhà thờ	NOUN	N	_	9	nmod	_	_
+15	Byzantine	Byzantine	NOUN	Np	_	14	compound	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	17	punct	_	_
+17	xuất hiện	xuất hiện	VERB	V	_	5	conj	_	_
+18	trong	trong	ADP	E	_	19	case	_	_
+19	bài	bài	NOUN	N	_	17	obl	_	_
+20	thơ sử	thơ sử	VERB	V	_	19	xcomp	_	_
+21	thi thế	thi thế	NOUN	N	_	19	compound	_	_
+22	kỷ 14	kỷ 14	NUM	M	NumType=Card	21	nummod	_	_
+23	Hài	Hài	NOUN	Np	_	24	compound	_	_
+24	kịch thần	kịch thần	NOUN	N	_	19	compound	_	_
+25	thánh	thánh	VERB	V	_	24	xcomp	_	_
+26	của	của	ADP	E	_	27	case	_	_
+27	Dante Alighieri	DantE aligHieri	NOUN	Np	_	24	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 135
 # text = Trong tác phẩm, Muhammad xuất hiện trong vòng tròn địa ngục thứ tám, cùng với Ali.
 1	Trong	Trong	ADP	E	_	2	case	_	_
 2	tác	tác	NOUN	N	_	6	advcl	_	_
@@ -3552,7 +3335,7 @@
 15	Ali	Ali	NOUN	Np	_	8	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 136
 # text = Dante không đổ lỗi cho đạo Hồi nói chung, nhưng buộc tội Muhammad về việc ly giáo, bằng cách thành lập một tôn giáo khác sau Kitô giáo.
 1	Dante	Dante	NOUN	Np	_	3	nsubj	_	_
 2	không	không	X	R	Polarity=Neg	3	advmod	_	_
@@ -3568,21 +3351,20 @@
 12	buộc	buộc	VERB	V	_	3	conj	_	_
 13	tội	tội	NOUN	N	_	12	obj	_	_
 14	Muhammad	Muhammad	NOUN	Np	_	13	compound	_	_
-15	về	về	ADP	E	_	16	case	_	_
-16	việc	việc	NOUN	N	_	13	nmod	_	_
-17	ly giáo	ly giáo	VERB	V	_	16	xcomp	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	19	punct	_	_
-19	bằng cách	bằng cách	NOUN	N	_	16	conj	_	_
-20	thành lập	thành lập	VERB	V	_	19	xcomp	_	_
-21	một	một	NUM	M	NumType=Card	23	nummod	_	_
-22	tôn	tôn	NOUN	Nc	_	23	compound	_	_
-23	giáo	giáo	NOUN	N	_	20	obj	_	_
-24	khác	khác	ADJ	A	_	23	amod	_	_
-25	sau	sau	ADP	N	_	26	case	_	_
-26	Kitô giáo	Kitô giáo	NOUN	Np	_	23	nmod	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	3	punct	_	_
+15	về việc	về việc	VERB	V	_	13	xcomp	_	_
+16	ly giáo	ly giáo	VERB	V	_	15	xcomp	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	bằng cách	bằng cách	NOUN	N	_	12	conj	_	_
+19	thành lập	thành lập	VERB	V	_	18	xcomp	_	_
+20	một	một	NUM	M	NumType=Card	22	nummod	_	_
+21	tôn	tôn	NOUN	Nc	_	22	compound	_	_
+22	giáo	giáo	NOUN	N	_	19	obj	_	_
+23	khác	khác	ADJ	A	_	22	amod	_	_
+24	sau	sau	NOUN	N	_	25	case	_	_
+25	Kitô giáo	Kitô giáo	NOUN	Np	_	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 137
 # text = Mặt khác, Giám mục Chính thống Hy Lạp Paul of Antiorch chấp nhận Muhammed là một nhà tiên tri, nhưng không phải nhiệm vụ của ông là phổ quát.
 1	Mặt khác	Mặt khác	X	X	_	9	dep	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	9	punct	_	_
@@ -3609,7 +3391,7 @@
 23	phổ quát	phổ quát	VERB	V	_	9	ccomp	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 5
+# sent_id = 138
 # text = Vì luật của Chúa Kitô vượt trội hơn luật Hồi giáo, Muhammad chỉ được lệnh tới khu vực người Ả Rập, khu vực mà chưa một nhà tiên tri nào được gửi đến.
 1	Vì luật	Vì luật	X	X	_	5	dep	_	_
 2	của	của	ADP	E	_	4	case	_	_
@@ -3617,36 +3399,33 @@
 4	Kitô	Kitô	NOUN	Np	_	5	nsubj	_	_
 5	vượt	vượt	VERB	V	_	0	root	_	_
 6	trội	trội	ADJ	A	_	5	xcomp	_	_
-7	hơn luật	hơn luật	NOUN	N	_	6	obj	_	_
-8	Hồi	Hồi	NOUN	Np	_	7	compound	_	_
-9	giáo	giáo	NOUN	N	_	7	compound	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	5	punct	_	_
-11	Muhammad chỉ	Muhammad chỉ	NOUN	Np	_	13	nsubj	_	_
-12	được	được	VERB	V	_	13	aux:pass	_	_
-13	lệnh	lệnh	VERB	V	_	5	parataxis	_	_
-14	tới	tới	ADP	E	_	15	case	_	_
-15	khu vực	khu vực	NOUN	N	_	13	obl	_	_
-16	người	người	NOUN	N	_	15	compound	_	_
-17	Ả Rập	ả rập	NOUN	Np	_	16	compound	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	19	punct	_	_
-19	khu vực	khu vực	NOUN	N	_	15	conj	_	_
-20	mà	mà	CCONJ	C	_	27	cc	_	_
-21	chưa	chưa	X	R	_	23	advmod	_	_
-22	một	một	NUM	M	NumType=Card	23	nummod	_	_
-23	nhà tiên	nhà tiên	NOUN	N	_	27	nsubj	_	_
-24	tri	tri	NOUN	N	_	23	compound	_	_
-25	nào	nào	PROPN	P	_	23	det	_	_
-26	được	được	VERB	V	_	27	aux:pass	_	_
-27	gửi	gửi	VERB	V	_	15	xcomp	_	_
-28	đến	đến	ADP	E	_	27	advmod	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+7	hơn	hơn	X	R	_	6	advmod	_	_
+8	luật	luật	NOUN	N	_	6	obj	_	_
+9	Hồi	Hồi	NOUN	Np	_	8	compound	_	_
+10	giáo	giáo	NOUN	N	_	8	compound	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	Muhammad chỉ	Muhammad chỉ	NOUN	Np	_	14	nsubj	_	_
+13	được	được	VERB	V	_	14	aux:pass	_	_
+14	lệnh	lệnh	VERB	V	_	5	parataxis	_	_
+15	tới	tới	ADP	E	_	16	case	_	_
+16	khu vực	khu vực	NOUN	N	_	14	obl	_	_
+17	người	người	NOUN	N	_	16	compound	_	_
+18	Ả Rập	ả rập	NOUN	Np	_	17	compound	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	khu vực	khu vực	NOUN	N	_	16	conj	_	_
+21	mà	mà	CCONJ	C	_	28	cc	_	_
+22	chưa	chưa	X	R	_	24	advmod	_	_
+23	một	một	NUM	M	NumType=Card	24	nummod	_	_
+24	nhà tiên	nhà tiên	NOUN	N	_	28	nsubj	_	_
+25	tri	tri	NOUN	N	_	24	compound	_	_
+26	nào	nào	PROPN	P	_	24	det	_	_
+27	được	được	VERB	V	_	28	aux:pass	_	_
+28	gửi	gửi	VERB	V	_	16	xcomp	_	_
+29	đến	đến	ADP	E	_	28	advmod	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 139
 # text = Các bài viết xin lỗi, được cho là của Abdullah Ibn al-Muqaffa, không chỉ bảo vệ thuyết Manichae chống lại Hồi giáo, mà còn phê phán khái niệm Hồi giáo về Thiên Chúa.
 1	Các	Các	DET	L	_	2	det	_	_
 2	bài	bài	NOUN	N	_	26	nsubj	_	_
@@ -3683,7 +3462,7 @@
 33	Thiên Chúa	Thiên Chúa	NOUN	Np	_	28	nmod	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	26	punct	_	_
 
-# sent_id = 2
+# sent_id = 140
 # text = Theo đó, vị thần trong kinh Qu'
 1	Theo	Theo	PART	T	_	2	discourse	_	_
 2	đó	đó	PROPN	P	_	5	det	_	SpaceAfter=No
@@ -3694,7 +3473,7 @@
 7	kinh Qu	kinh Qu	NOUN	Np	_	5	nmod	_	SpaceAfter=No
 8	'	'	PUNCT	.	_	5	punct	_	SpaceAfter=No
 
-# sent_id = 3
+# sent_id = 141
 # text = ran bị coi là một thể ma quỷ bất công, chuyên chế, phi lý và xấu xa, người "chiến đấu với con người và tự hào về chiến thắng của mình" và "ngồi trên ngai vàng, từ đó Ngài giáng trần".
 1	ran	ran	NOUN	Np	_	3	nsubj	_	_
 2	bị	bị	VERB	V	_	3	aux:pass	_	_
@@ -3702,10 +3481,10 @@
 4	là	là	AUX	V	_	6	cop	_	_
 5	một thể	một thể	NOUN	Nc	_	6	det	_	_
 6	ma	ma	NOUN	N	_	3	obj	_	_
-7	quỷ bất	quỷ bất	VERB	V	_	6	compound	_	_
-8	công	công	ADJ	A	_	7	amod	_	SpaceAfter=No
+7	quỷ	quỷ	NOUN	N	_	6	compound	_	_
+8	bất công	bất công	ADJ	A	_	7	amod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	10	punct	_	_
-10	chuyên chế	chuyên chế	ADJ	A	_	7	amod	_	SpaceAfter=No
+10	chuyên chế	chuyên chế	ADJ	A	_	7	conj	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	12	punct	_	_
 12	phi lý	phi lý	ADJ	A	_	7	conj	_	_
 13	và	và	SCONJ	CC	_	23	cc	_	_
@@ -3736,59 +3515,52 @@
 38	Ngài giáng	Ngài giáng	NOUN	Np	_	39	nsubj	_	_
 39	trần	trần	ADJ	A	_	31	xcomp	_	SpaceAfter=No
 40	"	"	PUNCT	"	_	31	punct	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+41	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 142
 # text = Kể từ sự kiện ngày 11 tháng 9 năm 2001, Hồi giáo đã phải đối mặt với những lời chỉ trích về kinh sách và giáo lý của nó là một nguồn đáng kể của chủ nghĩa khủng bố và tư tưởng khủng bố.
-1	Kể	Kể	PART	T	_	3	discourse	_	_
-2	từ	từ	ADP	E	_	3	case	_	_
-3	sự kiện	sự kiện	NOUN	N	_	15	obl	_	_
-4	ngày	ngày	NOUN	N	_	3	compound	_	_
-5	11	11	NUM	M	NumType=Card	6	nummod	_	_
-6	tháng	tháng	NOUN	N	_	3	compound	_	_
-7	9	9	NUM	M	NumType=Card	6	nummod	_	_
-8	năm	năm	NOUN	N	_	3	compound	_	_
-9	2001	2001	NUM	M	NumType=Card	8	nummod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	15	punct	_	_
-11	Hồi	Hồi	NOUN	Np	_	15	nsubj	_	_
-12	giáo	giáo	VERB	V	_	15	nsubj	_	_
-13	đã	đã	X	R	_	15	advmod	_	_
-14	phải	phải	VERB	V	_	15	aux	_	_
-15	đối mặt	đối mặt	VERB	V	_	0	root	_	_
-16	với	với	ADP	E	_	18	case	_	_
-17	những	những	DET	L	_	18	det	_	_
-18	lời	lời	NOUN	N	_	15	obl	_	_
-19	chỉ	chỉ	X	R	_	20	advmod	_	_
-20	trích	trích	VERB	V	_	18	xcomp	_	_
-21	về	về	ADP	E	_	22	case	_	_
-22	kinh sách	kinh sách	NOUN	N	_	20	obl	_	_
-23	và	và	SCONJ	CC	_	24	cc	_	_
-24	giáo lý	giáo lý	NOUN	N	_	22	conj	_	_
-25	của	của	ADP	E	_	26	case	_	_
-26	nó	nó	PROPN	P	_	22	nmod	_	_
-27	là	là	AUX	V	_	29	cop	_	_
-28	một	một	NUM	M	NumType=Card	29	nummod	_	_
-29	nguồn đáng	nguồn đáng	NOUN	N	_	15	ccomp	_	_
-30	kể	kể	VERB	V	_	29	xcomp	_	_
-31	của	của	ADP	E	_	32	case	_	_
-32	chủ nghĩa	chủ nghĩa	NOUN	N	_	29	nmod	_	_
-33	khủng bố	khủng bố	NOUN	N	_	32	compound	_	_
-34	và	và	SCONJ	CC	_	35	cc	_	_
-35	tư tưởng	tư tưởng	NOUN	N	_	32	conj	_	_
-36	khủng bố	khủng bố	NOUN	N	_	35	compound	_	SpaceAfter=No
-37	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n
+1	Kể	Kể	PART	T	_	16	discourse	_	_
+2	từ	từ	ADP	E	_	5	case	_	_
+3	sự	sự	NOUN	Nc	_	4	compound	_	_
+4	kiện	kiện	VERB	V	_	5	xcomp	_	_
+5	ngày	ngày	NOUN	N	_	16	obl	_	_
+6	11	11	NUM	M	NumType=Card	7	nummod	_	_
+7	tháng	tháng	NOUN	N	_	5	compound	_	_
+8	9	9	NUM	M	NumType=Card	7	nummod	_	_
+9	năm	năm	NOUN	N	_	5	compound	_	_
+10	2001	2001	NUM	M	NumType=Card	9	nummod	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	16	punct	_	_
+12	Hồi	Hồi	NOUN	Np	_	16	nsubj	_	_
+13	giáo	giáo	VERB	V	_	16	nsubj	_	_
+14	đã	đã	X	R	_	16	advmod	_	_
+15	phải	phải	VERB	V	_	16	aux	_	_
+16	đối mặt	đối mặt	VERB	V	_	0	root	_	_
+17	với	với	ADP	E	_	19	case	_	_
+18	những	những	DET	L	_	19	det	_	_
+19	lời	lời	NOUN	N	_	16	obl	_	_
+20	chỉ	chỉ	X	R	_	21	advmod	_	_
+21	trích	trích	VERB	V	_	19	xcomp	_	_
+22	về	về	ADP	E	_	23	case	_	_
+23	kinh sách	kinh sách	NOUN	N	_	21	obl	_	_
+24	và	và	SCONJ	CC	_	25	cc	_	_
+25	giáo lý	giáo lý	NOUN	N	_	23	conj	_	_
+26	của	của	ADP	E	_	27	case	_	_
+27	nó	nó	PROPN	P	_	23	nmod	_	_
+28	là	là	AUX	V	_	30	cop	_	_
+29	một	một	NUM	M	NumType=Card	30	nummod	_	_
+30	nguồn đáng	nguồn đáng	NOUN	N	_	16	ccomp	_	_
+31	kể	kể	VERB	V	_	30	xcomp	_	_
+32	của	của	ADP	E	_	33	case	_	_
+33	chủ nghĩa	chủ nghĩa	NOUN	N	_	30	nmod	_	_
+34	khủng bố	khủng bố	NOUN	N	_	33	compound	_	_
+35	và	và	SCONJ	CC	_	36	cc	_	_
+36	tư tưởng	tư tưởng	NOUN	N	_	33	conj	_	_
+37	khủng bố	khủng bố	NOUN	N	_	36	compound	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	16	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 143
 # text = Những chỉ trích khác tập trung vào câu hỏi về quyền con người ở các quốc gia đa số Hồi giáo hiện đại, và đối xử với phụ nữ trong luật pháp và thực hành Hồi giáo.
 1	Những	Những	DET	L	_	3	det	_	_
 2	chỉ	chỉ	NOUN	Nc	_	3	compound	_	_
@@ -3796,62 +3568,60 @@
 4	khác	khác	ADJ	A	_	3	amod	_	_
 5	tập trung	tập trung	VERB	V	_	0	root	_	_
 6	vào	vào	ADP	E	_	7	case	_	_
-7	câu	câu	NOUN	N	_	5	obl	_	_
-8	hỏi	hỏi	VERB	V	_	7	xcomp	_	_
-9	về	về	ADP	E	_	10	case	_	_
-10	quyền	quyền	NOUN	N	_	7	nmod	_	_
-11	con	con	NOUN	N	_	10	compound	_	_
-12	người	người	NOUN	N	_	10	compound	_	_
-13	ở	ở	ADP	E	_	15	case	_	_
-14	các	các	DET	L	_	15	det	_	_
-15	quốc	quốc	NOUN	N	_	7	nmod	_	_
-16	gia đa số	gia đa số	NOUN	N	_	15	compound	_	_
-17	Hồi	Hồi	NOUN	Np	_	16	compound	_	_
-18	giáo	giáo	NOUN	N	_	15	compound	_	_
-19	hiện	hiện	NOUN	N	_	15	nmod	_	_
-20	đại	đại	NOUN	N	_	19	compound	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	23	punct	_	_
-22	và	và	SCONJ	CC	_	23	cc	_	_
-23	đối xử	đối xử	VERB	V	_	5	conj	_	_
-24	với	với	ADP	E	_	25	case	_	_
-25	phụ nữ	phụ nữ	NOUN	N	_	23	obl	_	_
-26	trong	trong	ADP	E	_	27	case	_	_
-27	luật pháp	luật pháp	NOUN	N	_	25	nmod	_	_
-28	và	và	SCONJ	CC	_	29	cc	_	_
-29	thực hành	thực hành	NOUN	N	_	27	conj	_	_
-30	Hồi	Hồi	NOUN	Np	_	29	compound	_	_
-31	giáo	giáo	NOUN	N	_	27	compound	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	5	punct	_	_
+7	câu hỏi	câu hỏi	NOUN	N	_	5	obl	_	_
+8	về	về	ADP	E	_	9	case	_	_
+9	quyền	quyền	NOUN	N	_	7	nmod	_	_
+10	con	con	NOUN	N	_	9	compound	_	_
+11	người	người	NOUN	N	_	9	compound	_	_
+12	ở	ở	ADP	E	_	14	case	_	_
+13	các	các	DET	L	_	14	det	_	_
+14	quốc	quốc	NOUN	N	_	9	nmod	_	_
+15	gia đa số	gia đa số	NOUN	N	_	14	compound	_	_
+16	Hồi	Hồi	NOUN	Np	_	15	compound	_	_
+17	giáo	giáo	NOUN	N	_	14	compound	_	_
+18	hiện	hiện	NOUN	N	_	14	nmod	_	_
+19	đại	đại	NOUN	N	_	18	compound	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	và	và	SCONJ	CC	_	22	cc	_	_
+22	đối xử	đối xử	VERB	V	_	5	conj	_	_
+23	với	với	ADP	E	_	24	case	_	_
+24	phụ nữ	phụ nữ	NOUN	N	_	22	obl	_	_
+25	trong	trong	ADP	E	_	26	case	_	_
+26	luật pháp	luật pháp	NOUN	N	_	24	nmod	_	_
+27	và	và	SCONJ	CC	_	28	cc	_	_
+28	thực hành	thực hành	NOUN	N	_	26	conj	_	_
+29	Hồi	Hồi	NOUN	Np	_	28	compound	_	_
+30	giáo	giáo	NOUN	N	_	26	compound	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 144
 # text = Trước xu hướng đa văn hóa gần đây, ảnh hưởng của Hồi giáo đối với khả năng đồng hóa của người Hồi giáo ở phương Tây đã bị chỉ trích.
 1	Trước	Trước	ADP	E	_	2	case	_	_
-2	xu hướng	xu hướng	NOUN	N	_	24	nsubj	_	_
-3	đa	đa	VERB	V	_	2	xcomp	_	_
-4	văn hóa	văn hóa	NOUN	N	_	3	obj	_	_
-5	gần	gần	ADJ	A	_	2	advmod	_	_
-6	đây	đây	PROPN	P	_	5	det	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	24	punct	_	_
-8	ảnh hưởng	ảnh hưởng	NOUN	N	_	24	nsubj	_	_
-9	của	của	ADP	E	_	10	case	_	_
-10	Hồi	Hồi	NOUN	Np	_	8	nmod	_	_
-11	giáo	giáo	VERB	V	_	8	nmod	_	_
-12	đối	đối	VERB	V	_	11	xcomp	_	_
-13	với	với	ADP	E	_	14	case	_	_
-14	khả năng	khả năng	NOUN	N	_	12	obl	_	_
-15	đồng hóa	đồng hóa	VERB	V	_	14	xcomp	_	_
-16	của	của	ADP	E	_	17	case	_	_
-17	người	người	NOUN	N	_	14	nmod	_	_
-18	Hồi	Hồi	NOUN	Np	_	17	compound	_	_
-19	giáo	giáo	NOUN	N	_	17	xcomp	_	_
-20	ở	ở	ADP	E	_	21	case	_	_
-21	phương Tây	phương tÂy	NOUN	Np	_	17	nmod	_	_
-22	đã	đã	X	R	_	24	advmod	_	_
-23	bị	bị	VERB	V	_	24	aux:pass	_	_
-24	chỉ trích	chỉ trích	VERB	V	_	0	root	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	24	punct	_	_
+2	xu hướng	xu hướng	NOUN	N	_	23	advcl	_	_
+3	đa văn hóa	đa văn hóa	VERB	V	_	2	xcomp	_	_
+4	gần	gần	ADJ	A	_	2	nmod	_	_
+5	đây	đây	PROPN	P	_	4	det	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	23	punct	_	_
+7	ảnh hưởng	ảnh hưởng	NOUN	N	_	23	nsubj	_	_
+8	của	của	ADP	E	_	9	case	_	_
+9	Hồi	Hồi	NOUN	Np	_	7	nmod	_	_
+10	giáo	giáo	VERB	V	_	7	nmod	_	_
+11	đối	đối	VERB	V	_	10	xcomp	_	_
+12	với	với	ADP	E	_	13	case	_	_
+13	khả năng	khả năng	NOUN	N	_	11	obl	_	_
+14	đồng hóa	đồng hóa	VERB	V	_	13	xcomp	_	_
+15	của	của	ADP	E	_	16	case	_	_
+16	người	người	NOUN	N	_	13	nmod	_	_
+17	Hồi	Hồi	NOUN	Np	_	16	compound	_	_
+18	giáo	giáo	NOUN	N	_	16	xcomp	_	_
+19	ở	ở	ADP	E	_	20	case	_	_
+20	phương Tây	phương tÂy	NOUN	Np	_	16	nmod	_	_
+21	đã	đã	X	R	_	23	advmod	_	_
+22	bị	bị	VERB	V	_	23	aux:pass	_	_
+23	chỉ trích	chỉ trích	VERB	V	_	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
 
-# sent_id = 3
+# sent_id = 145
 # text = Cả trong cuộc sống công cộng và cá nhân của mình, những người khác đều phản đối đạo đức của Muhammad, do đó cũng phản đối sunnah như một hình mẫu.
 1	Cả	Cả	PROPN	P	_	3	det	_	_
 2	trong	trong	ADP	E	_	3	case	_	_
@@ -3879,14 +3649,10 @@
 24	như	như	CCONJ	C	_	26	cc	_	_
 25	một	một	NUM	M	NumType=Card	26	nummod	_	_
 26	hình mẫu	hình mẫu	NOUN	N	_	23	conj	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	14	punct	_	SpacesAfter=\n
+27	.	.	PUNCT	.	_	14	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 146
 # text = Người Tatars theo Tengri giáo chỉ trích Hồi giáo là một tôn giáo semitic, mà đã buộc người Thổ Nhĩ Kỳ phải phục tùng một nền văn hóa ngoại lai.
 1	Người	Người	NOUN	N	_	2	compound	_	_
 2	Tatars	Tatars	NOUN	Np	_	3	nsubj	_	_
@@ -3915,7 +3681,7 @@
 25	ngoại lai	ngoại lai	ADJ	A	_	24	amod	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 147
 # text = Sự khuất phục và khiêm nhường, hai thành phần quan trọng của tâm linh Hồi giáo, bị coi là những thất bại lớn của Hồi giáo, không phải là phẩm chất tốt.
 1	Sự	Sự	NOUN	Nc	_	2	nsubj	_	_
 2	khuất phục	khuất phục	VERB	V	_	14	advcl	_	_
@@ -3946,7 +3712,7 @@
 27	tốt	tốt	ADJ	A	_	26	amod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = 3
+# sent_id = 148
 # text = Hơn nữa, vì Hồi giáo đề cập đến lịch sử semitic như thể đó là lịch sử của cả nhân loại, nhưng coi thường các thành phần của các nền văn hóa và tâm linh khác, cách tiếp cận quốc tế của Hồi giáo được coi là một mối đe dọa.
 1	Hơn nữa	Hơn nữa	CCONJ	C	_	13	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	38	punct	_	_
@@ -3992,7 +3758,7 @@
 42	đe dọa	đe dọa	VERB	V	_	41	xcomp	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	38	punct	_	_
 
-# sent_id = 4
+# sent_id = 149
 # text = Nó cũng cho Imams một cơ hội để tuần hành chống lại chính người dân của họ dưới biểu ngữ của Hồi giáo quốc tế.
 1	Nó	Nó	PROPN	P	_	3	nsubj	_	_
 2	cũng	cũng	X	R	_	3	advmod	_	_
@@ -4014,14 +3780,10 @@
 18	Hồi	Hồi	NOUN	Np	_	16	nmod	_	_
 19	giáo	giáo	NOUN	N	_	16	nmod	_	_
 20	quốc tế	quốc tế	ADJ	A	_	19	amod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 150
 # text = Các quốc gia có số dân theo Hồi giáo
 1	Các	Các	DET	L	_	2	det	_	_
 2	quốc gia	quốc gia	NOUN	N	_	8	nsubj	_	_
@@ -4030,28 +3792,20 @@
 5	dân	dân	NOUN	N	_	4	compound	_	_
 6	theo	theo	VERB	V	_	7	case	_	_
 7	Hồi	Hồi	NOUN	Np	_	8	obj	_	_
-8	giáo	giáo	VERB	V	_	0	root	_	SpaceAfter=No
+8	giáo	giáo	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 151
 # text = Một số văn hóa ảnh hưởng từ Hồi giáo
 1	Một số	Một số	DET	L	_	2	det	_	_
 2	văn hóa	văn hóa	NOUN	N	_	6	nsubj	_	_
 3	ảnh hưởng	ảnh hưởng	VERB	V	_	2	xcomp	_	_
 4	từ	từ	ADP	E	_	5	case	_	_
 5	Hồi	Hồi	NOUN	Np	_	3	obl	_	_
-6	giáo	giáo	VERB	V	_	0	root	_	SpacesAfter=\n
+6	giáo	giáo	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 152
 # text = Cổng vòm, mái tròn, có tháp nhọn
 1	Cổng vòm	Cổng vòm	NOUN	N	_	6	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	6	punct	_	_
@@ -4059,53 +3813,33 @@
 4	tròn	tròn	ADJ	A	_	3	amod	_	SpaceAfter=No
 5	,	,	PUNCT	,	_	6	punct	_	_
 6	có	có	VERB	V	_	0	root	_	_
-7	tháp nhọn	tháp nhọn	VERB	V	_	6	xcomp	_	SpacesAfter=\n
+7	tháp nhọn	tháp nhọn	VERB	V	_	6	xcomp	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 153
 # text = Ghi chú
 1	Ghi	Ghi	VERB	Np	_	2	discourse	_	_
-2	chú	chú	NOUN	Nc	_	0	root	_	SpaceAfter=No
+2	chú	chú	NOUN	Nc	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 154
 # text = Chú thích
-1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpaceAfter=No
+1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 155
 # text = Tham khảo
-1	Tham khảo	Tham khảo	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Tham khảo	Tham khảo	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 156
 # text = Đọc thêm
 1	Đọc	Đọc	NOUN	N	_	2	nsubj	_	_
-2	thêm	thêm	VERB	V	_	0	root	_	SpaceAfter=No
+2	thêm	thêm	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 157
 # text = Liên kết ngoài
 1	Liên	Liên	NOUN	Np	_	2	nsubj	_	_
-2	kết ngoài	kết ngoài	VERB	V	_	0	root	_	SpaceAfter=No
+2	kết ngoài	kết ngoài	VERB	V	_	0	root	_	SpacesAfter=\n\n
 

@@ -114,17 +114,14 @@ def get_articles():
                         articles[name] = (int(e), link)
     return articles
 
-def clean_text_api(tag, model):
+def clean_text(tag):
     """
-    Cleans text and calls UDPipe API
+    Cleans text
     Args:
       - text: tag from beautifulsoup.
-      - model: language to use
     Returns:
-      - out: result from API
+      - cleantext: just the text.
     """
-    api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
-
     cleantext = tag.get_text()
     # cleantext = re.sub(r'\[(.*?)\]', '', cleantext) # remove [anything in square brackets]
     cleantext = re.sub(r'\[\d+\]', '', cleantext) # remove references [digit]
@@ -187,11 +184,14 @@ def udparsing(url, lang, name, path, getting_lang = False):
         # I want to get span the body (p), the titles, and the hN which have class="mw-headline"       
         if tag.name == "span":
             if "class" in tag.attrs and "mw-headline" in tag.attrs["class"]:
-                text += clean_text_api(tag, model)
+                text += clean_text(tag) + 2*'\n'
+        elif tag.name == "title":
+            text += clean_text(tag) + 2*'\n'
         else:
-            text += clean_text_api(tag, model)
+            text += clean_text(tag) + '\n'
     
     with open(f'{path}{name}.conllu', 'w') as g:
+        api_url = 'https://lindat.mff.cuni.cz/services/udpipe/api/process'
         myobj = {'data' : text, 'model' : model, 'tokenizer' : '', 'tagger' : '', 'parser' : ''}
         x = requests.post(api_url, data = myobj)  
         g.write(json.loads(x.text)['result'])

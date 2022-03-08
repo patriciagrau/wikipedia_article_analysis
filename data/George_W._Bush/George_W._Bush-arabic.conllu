@@ -9,88 +9,87 @@
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	flat:foreign	_	_
 3	الابن	اِبن	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	dep	_	_
 4	-	-	PUNCT	G---------	_	5	punct	_	_
-5	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpaceAfter=No
+5	ويكيبيديا	ويكيبيديا	X	X---------	Foreign=Yes	1	conj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = جورج والكر (دبليو) بوش (بالإنجليزية: George W.
+# sent_id = 2
+# text = جورج والكر (دبليو) بوش (بالإنجليزية: George W. Bush)‏؛
 1	جورج	جُورج	X	X---------	Foreign=Yes	0	root	_	_
 2	والكر	والكر	X	U---------	_	1	nmod	_	_
 3	(	(	PUNCT	G---------	_	4	punct	_	SpaceAfter=No
-4	دبليو	دَبِليُو	X	X---------	Foreign=Yes	1	nmod	_	SpaceAfter=No
+4	دبليو	دَبِليُو	X	X---------	Foreign=Yes	2	nmod	_	SpaceAfter=No
 5	)	)	PUNCT	G---------	_	4	punct	_	_
 6	بوش	بُوش	X	X---------	Foreign=Yes	1	flat:foreign	_	_
 7	(	(	PUNCT	G---------	_	8	punct	_	SpaceAfter=No
 8	بالإنجليزية	بالإنجليزية	ADJ	U---------	_	1	dep	_	SpaceAfter=No
 9	:	:	PUNCT	G---------	_	8	punct	_	_
-10	George	george	X	X---------	Foreign=Yes	8	nsubj	_	_
+10	George	george	X	X---------	Foreign=Yes	8	nmod	_	_
 11	W	w	X	Y---------	Abbr=Yes	10	nmod	_	SpaceAfter=No
-12	.	.	PUNCT	G---------	_	1	punct	_	_
-
-# sent_id = 2
-# text = Bush)‏؛
-1	Bush	bush	X	U---------	_	0	root	_	SpaceAfter=No
-2	)	)	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
-3	‏	‏	X	U---------	_	1	dep	_	SpaceAfter=No
-4	؛	؛	PUNCT	G---------	_	1	punct	_	_
+12	.	.	PUNCT	G---------	_	11	punct	_	_
+13	Bush	bush	X	U---------	_	10	nmod	_	SpaceAfter=No
+14	)	)	PUNCT	G---------	_	10	punct	_	SpaceAfter=No
+15	‏	‏	X	G---------	_	1	dep	_	SpaceAfter=No
+16	؛	؛	PUNCT	G---------	_	1	punct	_	_
 
 # sent_id = 3
-# text = (ولد في 6 يوليو 1946) هو سياسي أمريكي شغل منصب الرئيس الثالث والأربعين للولايات المتحدة في الفترة من 2001 إلى 2009.
+# text = (ولد في 6 يوليو 1946) هو سياسي ورجل أعمال أمريكي ينتمي إلى الحزب الجمهوري، شغل منصب الرئيس الثالث والأربعين للولايات المتحدة في الفترة من 2001 إلى 2009، وكان الحاكم السادس والأربعين لولاية تكساس في الفترة من 1995 إلى 2000.
 1	(	(	PUNCT	G---------	_	2	punct	_	SpaceAfter=No
 2	ولد	وَلَد	VERB	VP-P-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Pass	0	root	_	_
 3	في	فِي	ADP	P---------	AdpType=Prep	4	case	_	_
 4	6	6	NUM	Q---------	NumForm=Digit	2	obl	_	_
 5	يوليو	يُولِيُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	nmod	_	_
 6	1946	1946	NUM	Q---------	NumForm=Digit	5	nummod	_	SpaceAfter=No
-7	)	)	PUNCT	G---------	_	2	punct	_	_
+7	)	)	PUNCT	G---------	_	4	punct	_	_
 8	هو	هُوَ	PRON	SP---3MS1-	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
 9	سياسي	سِيَاسِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj:pass	_	_
-10	أمريكي	أَمرِيكِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	amod	_	_
-11	شغل	شَغَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	acl	_	_
-12	منصب	مَنصِب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	11	obj	_	_
-13	الرئيس	رَئِيس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
-14	الثالث	ثَالِث	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	13	amod	_	_
-15-16	والأربعين	_	_	_	_	_	_	_	_
-15	و	وَ	CCONJ	C---------	_	16	cc	_	_
-16	الأربعين	أَربَعُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	14	conj	_	_
-17-18	للولايات	_	_	_	_	_	_	_	_
-17	ل	لِ	ADP	P---------	AdpType=Prep	18	case	_	_
-18	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	13	nmod	_	_
-19	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	_
-20	في	فِي	ADP	P---------	AdpType=Prep	21	case	_	_
-21	الفترة	فَترَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	obl	_	_
-22	من	مِن	ADP	P---------	AdpType=Prep	23	case	_	_
-23	2001	2001	NUM	Q---------	NumForm=Digit	21	nummod	_	_
-24	إلى	إِلَى	ADP	P---------	AdpType=Prep	25	case	_	_
-25	2009	2009	NUM	Q---------	NumForm=Digit	21	nummod	_	SpaceAfter=No
-26	.	.	PUNCT	G---------	_	2	punct	_	_
+10-11	ورجل	_	_	_	_	_	_	_	_
+10	و	وَ	CCONJ	C---------	_	11	cc	_	_
+11	رجل	رَجُل	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	9	conj	_	_
+12	أعمال	عَمَل	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	11	nmod	_	_
+13	أمريكي	أَمرِيكِيّ	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+14	ينتمي	اِنتَمَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	acl	_	_
+15	إلى	إِلَى	ADP	P---------	AdpType=Prep	16	case	_	_
+16	الحزب	حِزب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	obl:arg	_	_
+17	الجمهوري	جُمهُورِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No
+18	،	،	PUNCT	G---------	_	17	punct	_	_
+19	شغل	شَغَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	acl	_	_
+20	منصب	مَنصِب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	19	obj	_	_
+21	الرئيس	رَئِيس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	_
+22	الثالث	ثَالِث	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	21	amod	_	_
+23-24	والأربعين	_	_	_	_	_	_	_	_
+23	و	وَ	CCONJ	C---------	_	24	cc	_	_
+24	الأربعين	أَربَعُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	22	conj	_	_
+25-26	للولايات	_	_	_	_	_	_	_	_
+25	ل	لِ	ADP	P---------	AdpType=Prep	26	case	_	_
+26	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	21	nmod	_	_
+27	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	26	amod	_	_
+28	في	فِي	ADP	P---------	AdpType=Prep	29	case	_	_
+29	الفترة	فَترَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	obl	_	_
+30	من	مِن	ADP	P---------	AdpType=Prep	31	case	_	_
+31	2001	2001	NUM	Q---------	NumForm=Digit	29	nummod	_	_
+32	إلى	إِلَى	ADP	P---------	AdpType=Prep	33	case	_	_
+33	2009	2009	NUM	Q---------	NumForm=Digit	29	nummod	_	SpaceAfter=No
+34	،	،	PUNCT	G---------	_	33	punct	_	_
+35-36	وكان	_	_	_	_	_	_	_	_
+35	و	وَ	CCONJ	C---------	_	36	cc	_	_
+36	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	19	conj	_	_
+37	الحاكم	حَاكِم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	36	nsubj	_	_
+38	السادس	سَادِس	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	37	amod	_	_
+39-40	والأربعين	_	_	_	_	_	_	_	_
+39	و	وَ	CCONJ	C---------	_	40	cc	_	_
+40	الأربعين	أَربَعُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	38	conj	_	_
+41	لولاية	لِاَيَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	37	nmod	_	_
+42	تكساس	تِكسَاس	X	X---------	Foreign=Yes	41	nmod	_	_
+43	في	فِي	ADP	P---------	AdpType=Prep	44	case	_	_
+44	الفترة	فَترَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	37	obl	_	_
+45	من	مِن	ADP	P---------	AdpType=Prep	46	case	_	_
+46	1995	1995	NUM	Q---------	NumForm=Digit	44	nummod	_	_
+47	إلى	إِلَى	ADP	P---------	AdpType=Prep	48	case	_	_
+48	2000	2000	NUM	Q---------	NumForm=Digit	44	nummod	_	SpaceAfter=No
+49	.	.	PUNCT	G---------	_	2	punct	_	SpacesAfter=\s\n\n
 
+# newpar
 # sent_id = 4
-# text = وكان أيضا الحاكم السادس والأربعين لولاية تكساس في الفترة من 1995 إلى 2000.
-1-2	وكان	_	_	_	_	_	_	_	_
-1	و	وَ	CCONJ	C---------	_	0	root	_	_
-2	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
-3	أيضا	أَيضًا	ADV	D---------	_	2	advmod:emph	_	_
-4	الحاكم	حَاكِم	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	2	nsubj	_	_
-5	السادس	سَادِس	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	4	amod	_	_
-6-7	والأربعين	_	_	_	_	_	_	_	_
-6	و	وَ	CCONJ	C---------	_	7	cc	_	_
-7	الأربعين	أَربَعُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	5	conj	_	_
-8	لولاية	لِاَيَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	4	nmod	_	_
-9	تكساس	تِكسَاس	X	X---------	Foreign=Yes	8	nmod	_	_
-10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
-11	الفترة	فَترَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
-12	من	مِن	ADP	P---------	AdpType=Prep	13	case	_	_
-13	1995	1995	NUM	Q---------	NumForm=Digit	11	nummod	_	_
-14	إلى	إِلَى	ADP	P---------	AdpType=Prep	15	case	_	_
-15	2000	2000	NUM	Q---------	NumForm=Digit	11	nummod	_	SpaceAfter=No
-16	.	.	PUNCT	G---------	_	1	punct	_	_
-
-# sent_id = 5
 # text = تخرج بوش من جامعة ييل في عام 1968 وكلية هارفرد للأعمال في عام 1975، وعمل في صناعة النفط.
 1	تخرج	تَخَرَّج	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -119,7 +118,7 @@
 22	النفط	نَفط	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	SpaceAfter=No
 23	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 6
+# sent_id = 5
 # text = تزوج من لورا ويلش في عام 1977، وترشح دون نجاح لمجلس النواب الأمريكي بعد ذلك بوقت قصير.
 1	تزوج	تَزَوَّج	VERB	VIIA-2MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
 2	من	مِن	ADP	P---------	AdpType=Prep	4	case	_	_
@@ -145,7 +144,7 @@
 20	قصير	قَصِير	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No
 21	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 7
+# sent_id = 6
 # text = وقد اشترك لاحقا في ملكية فريق البيسبول تكساس رنجر قبل أن يفوز على آن ريتشاردز في انتخابات حكم ولاية تكساس عام 1994.
 1-2	وقد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -175,7 +174,7 @@
 24	1994	1994	NUM	Q---------	NumForm=Digit	23	nummod	_	SpaceAfter=No
 25	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 8
+# sent_id = 7
 # text = انتخب بوش رئيسا في عام 2000 وحقق انتصارا متقاربا ومثيرا للجدل على منافسه الديمقراطي آل غور، ليصبح الرئيس الرابع الذي ينتخب وقد حصل على أصوات شعبية أقل من خصمه.
 1	انتخب	اِنتَخَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -215,14 +214,10 @@
 33-34	خصمه	_	_	_	_	_	_	_	SpaceAfter=No
 33	خصم	خَصم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	31	obl:arg	_	_
 34	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nmod	_	_
-35	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+35	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 8
 # text = ينتسب جورج بوش لعائلة سياسية بارزة، هو الابن البكر لباربرا وجورج بوش، الرئيس الحادي والأربعين للولايات المتحدة، ما جعله ثاني رئيس يتولي المنصب بعد والده، في أعقاب رئاسة جون كوينسي آدمز.
 1	ينتسب	اِنتَسَب	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
 2	جورج	جُورج	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -273,7 +268,7 @@
 41	آدمز	آدمز	X	X---------	Foreign=Yes	38	nmod	_	SpaceAfter=No
 42	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 9
 # text = وشقيقه هو جيب بوش، الحاكم السابق لولاية فلوريدا، وكان مرشحا لنيل بطاقة الحزب الجمهوري في الانتخابات الرئاسية عام 2016.
 1-2	وشقيقه	_	_	_	_	_	_	_	_
 1	وشقيق	وَشِقيق	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	4	nsubj	_	_
@@ -302,7 +297,7 @@
 23	2016	2016	NUM	Q---------	NumForm=Digit	22	nummod	_	SpaceAfter=No
 24	.	.	PUNCT	G---------	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 10
 # text = وكان جده من أبيه، بريسكوت بوش، سيناتورا من ولاية كونيتيكت.
 1-2	وكان	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -322,14 +317,10 @@
 13	من	مِن	ADP	P---------	AdpType=Prep	14	case	_	_
 14	ولاية	وِلَايَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	12	nmod	_	_
 15	كونيتيكت	كونيتيكت	X	U---------	_	14	nmod	_	SpaceAfter=No
-16	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 11
 # text = وقعت هجمات 11 سبتمبر الإرهابية بعد ثمان أشهر من تولي بوش المنصب.
 1	وقعت	وَقَّع	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	هجمات	هَجمَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
@@ -347,7 +338,7 @@
 13	المنصب	مَنصِب	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	11	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 12
 # text = استجاب بوش بما أصبح يسمى مبدأ بوش: إطلاق حملة "الحرب على الإرهاب"، وهي حملة عسكرية دولية شملت الحرب في أفغانستان عام 2001 وحرب العراق في عام 2003.
 1	استجاب	اِستِجَاب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nmod	_	_
@@ -388,7 +379,7 @@
 34	2003	2003	NUM	Q---------	NumForm=Digit	33	nummod	_	SpaceAfter=No
 35	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 13
 # text = كما عزز السياسات المتعلقة بالاقتصاد والرعاية الصحية والتعليم، وإصلاح الضمان الاجتماعي، وتعديل الدستور لحظر زواج المثليين.
 1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
 2	عزز	عَزَّز	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
@@ -420,7 +411,7 @@
 23	المثليين	مَثَلِّيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	22	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 14
 # text = ووقع على تخفيضات كبيرة في الضرائب، وقانون باتريوت، وقانون عدم ترك أي طفل، وقانون حظر الإجهاض للولادة الجزئية، ومخصصات الأدوية الطبية من ميديكير لكبار السن، وتمويل برنامج الإغاثة لمرضى الإيدز المعروف باسم بيبفار.
 1-2	ووقع	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -478,7 +469,7 @@
 46	بيبفار	بيبفار	X	X---------	Foreign=Yes	45	nmod	_	SpaceAfter=No
 47	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 15
 # text = وشملت ولايته مناقشات وطنية حول الهجرة، والضمان الاجتماعي، والمراقبة الإلكترونية، والتعذيب.
 1-2	وشملت	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -502,14 +493,10 @@
 17-18	والتعذيب	_	_	_	_	_	_	_	SpaceAfter=No
 17	و	وَ	CCONJ	C---------	_	18	cc	_	_
 18	التعذيب	تَعذِيب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	conj	_	_
-19	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 16
 # text = في السباق الرئاسي عام 2004، هزم بوش السناتور الديمقراطي جون كيري في انتخابات قريبة نسبيا.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	السباق	سِبَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	obl	_	_
@@ -529,7 +516,7 @@
 16	نسبيا	نِسبِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
 17	.	.	PUNCT	G---------	_	7	punct	_	_
 
-# sent_id = 2
+# sent_id = 17
 # text = بعد إعادة انتخابه، تلقى بوش انتقادات كبيرة ومتزايدة من جميع الأطياف السياسية لطريقة تعامله مع حرب العراق وإعصار كاترينا وغيرها من التحديات.
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	إعادة	إِعَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
@@ -567,7 +554,7 @@
 29	التحديات	تَحَدِّي	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	26	nmod	_	SpaceAfter=No
 30	.	.	PUNCT	G---------	_	6	punct	_	_
 
-# sent_id = 3
+# sent_id = 18
 # text = وسط هذا الانتقاد، استعاد الحزب الديمقراطي السيطرة على الكونغرس في انتخابات مجلس الشيوخ عام 2006.
 1	وسط	وَسطَ	ADP	PI------4-	AdpType=Prep|Case=Acc	3	case	_	_
 2	هذا	هٰذَا	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
@@ -587,7 +574,7 @@
 16	2006	2006	NUM	Q---------	NumForm=Digit	15	nummod	_	SpaceAfter=No
 17	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 19
 # text = في ديسمبر 2007، دخلت الولايات المتحدة في فترة ركود هي الأطول بعد الحرب العالمية الثانية، التي غالبا ما يشار إليها باسم "الركود الكبير"، مما دفع إدارة بوش للحصول على موافقة الكونغرس لإقرار برامج اقتصادية متعددة تهدف للحفاظ على النظام المالي للبلاد.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	ديسمبر	دِيسَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
@@ -649,7 +636,7 @@
 52	البلاد	بَلَد	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	49	nmod	_	_
 53	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 20
 # text = على الصعيد الوطني، كان بوش أحد أكثر (وكذلك أقل) الرؤساء شعبية في تاريخ البلاد، بعد أن حصل على أعلى معدلات الموافقة الرئاسية المسجلة في أعقاب هجمات 11 سبتمبر، وكذلك إحدى أدنى درجات الموافقة خلال الأزمة المالية عام 2008.
 1	على	عَلَى	ADP	P---------	AdpType=Prep	2	case	_	_
 2	الصعيد	صَعِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	5	obl	_	_
@@ -700,14 +687,10 @@
 44	المالية	مَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	43	amod	_	_
 45	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	43	nmod	_	_
 46	2008	2008	NUM	Q---------	NumForm=Digit	45	nummod	_	SpaceAfter=No
-47	.	.	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
+47	.	.	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 21
 # text = غادر بوش منصبه في عام 2009، وعاد إلى تكساس حيث اشترى منزلا في بلدة كراوفورد.
 1	غادر	غَادَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -733,7 +716,7 @@
 19	كراوفورد	كراوفورد	X	U---------	_	18	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 22
 # text = وكتب مذكراته بعنوان نقاط القرار.
 1-2	وكتب	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -748,7 +731,7 @@
 8	القرار	قَرَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	SpaceAfter=No
 9	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 23
 # text = افتتح مكتبته الرئاسية في عام 2013.
 1	افتتح	اِفتَتَح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2-3	مكتبته	_	_	_	_	_	_	_	_
@@ -760,7 +743,7 @@
 7	2013	2013	NUM	Q---------	NumForm=Digit	6	nummod	_	SpaceAfter=No
 8	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 24
 # text = وقد نالت رئاسته إحدى أسوأ استطلاعات المؤرخين التي نشرت في أواخر عام 2000 و 2010.
 1-2	وقد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -781,26 +764,18 @@
 15	2000	2000	NUM	Q---------	NumForm=Digit	14	nummod	_	_
 16	و	وَ	CCONJ	C---------	_	17	cc	_	_
 17	2010	2010	NUM	Q---------	NumForm=Digit	15	conj	_	SpaceAfter=No
-18	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+18	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 25
 # text = فترة حكمه
 1	فترة	فَترَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2-3	حكمه	_	_	_	_	_	_	_	SpaceAfter=No
+2-3	حكمه	_	_	_	_	_	_	_	SpacesAfter=\n\n
 2	حكم	حُكم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 3	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 26
 # text = تعتبر الفترة التي ولي فيها جورج دبليو بوش رئيسا للولايات المتحدة الأمريكية، هي فترة حرجة حيث تعرضت نيويورك لهجوم بالطائرات ينسب إلى تنظيم القاعدة على برجي التجارة العالمي في 11 سبتمبر 2001، حيث راح ضحيته ما يقارب 3000 من المدنيين، أعلن بعدها عن الحرب على الإرهاب في أفغانستان سنة 2001 وبعدها حرب العراق سنة 2003.
 1	تعتبر	اِعتَبَر	VERB	VIIP-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	0	root	_	_
 2	الفترة	فَترَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj:pass	_	_
@@ -875,14 +850,10 @@
 64	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	63	nmod	_	_
 65	سنة	سَنَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	63	nmod	_	_
 66	2003	2003	NUM	Q---------	NumForm=Digit	65	nummod	_	SpaceAfter=No
-67	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+67	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 27
 # text = اقتصاديا، كان وراء إجراءات حازمة، بإعادة هيكلة للبنوك، مع ضخ لقيمة مالية كبيرة في الأسواق حفاظاً ومنعاً لسقوطها نتيجة أزمة اقتصادية تعتبر الأكبر منذ 1929 تسببت في ركود عدد من الدول ووصول البطالة إلى أعلى مستوياتها في 5 سنين.
 1	اقتصاديا	اِقتِصَادِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
 2	،	،	PUNCT	G---------	_	1	punct	_	_
@@ -936,14 +907,10 @@
 45	في	فِي	ADP	P---------	AdpType=Prep	46	case	_	_
 46	5	5	NUM	Q---------	NumForm=Digit	39	obl	_	_
 47	سنين	سَنَة	NOUN	N------D2I	Case=Gen|Definite=Ind|Number=Dual	46	nmod	_	SpaceAfter=No
-48	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n
+48	.	.	PUNCT	G---------	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 28
 # text = بعد نهاية فترة رئاسته رجع إلى ولاية تكساس مع عائلته واشترى بيتاً في مدينة دالاس وله كتاب سماه نقاط القرار.
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	نهاية	نِهَايَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
@@ -974,14 +941,10 @@
 23	سماه	سَمَاه	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	22	nmod	_	_
 24	نقاط	نُقطَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	23	nmod	_	_
 25	القرار	قَرَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	24	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
+26	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 29
 # text = استقبل الرئيس بوش بحفاوة كبيرة خلال زيارته لجورجيا، نظرا لأن الحكومة في عهده سهلت الانتقالية من التبعية التي كانت لجورجيا نحو موسكو،
 1	استقبل	اِستَقبَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	الرئيس	رَئِيس	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -1014,26 +977,18 @@
 25	جورجيا	جُورجِيَا	X	X---------	Foreign=Yes	23	obl:arg	_	_
 26	نحو	نَحوَ	ADP	PI------4-	AdpType=Prep|Case=Acc	27	case	_	_
 27	موسكو	مُوسكُو	X	X---------	Foreign=Yes	23	obl	_	SpaceAfter=No
-28	،	،	PUNCT	G---------	_	27	punct	_	SpacesAfter=\n
+28	،	،	PUNCT	G---------	_	27	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 30
 # text = حياته الخاصة
 1-2	حياته	_	_	_	_	_	_	_	_
 1	حياة	حَيَاة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod	_	_
-3	الخاصة	خَاصّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+3	الخاصة	خَاصّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 31
 # text = ولد جورج والكر بوش في مدينة نيو هيفن، كونيتيكت بتاريخ 7 تموز 1946.
 1	ولد	وَلَد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	جورج	جُورج	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -1053,7 +1008,7 @@
 15	1946	1946	NUM	Q---------	NumForm=Digit	14	nummod	_	SpaceAfter=No
 16	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 32
 # text = وهو المولود الأول لجورج بوش الأب وباربرا بوش وتربى في مدينة مدلاند، تكساس ومدينة هيوستن، تكساس.
 1-2	وهو	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1081,7 +1036,7 @@
 21	تكساس	تِكسَاس	X	X---------	Foreign=Yes	19	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 33
 # text = وله أخوين وأختين (توفيت اخته الصغرى بعمر 3 سنوات).
 1-3	وله	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1099,7 +1054,7 @@
 13	)	)	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
 14	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 34
 # text = ينحدر الرئيس بوش من أصول إنكليزية وألمانية وأيرلندية وفرنسية وسكوتلندية.
 1	ينحدر	اِنحَدَر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
 2	الرئيس	رَئِيس	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -1111,25 +1066,17 @@
 8	وأيرلندية	وأيرلندية	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	5	conj	_	_
 9	وفرنسية	وفرنسية	X	A-----FS2I	_	5	amod	_	_
 10	وسكوتلندية	وسكوتلندية	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	5	amod	_	SpaceAfter=No
-11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 35
 # text = تعليمه
-1-2	تعليمه	_	_	_	_	_	_	_	SpaceAfter=No
+1-2	تعليمه	_	_	_	_	_	_	_	SpacesAfter=\n\n
 1	تعليم	تَعلِيم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 36
 # text = حضر جورج والكر بوش مدارس الدولة العامة في مدينة مدلاند، تكساس وبعد انتقال العائلة إلى هيوستن سُجِّلَ بمدارس المدينة.
 1	حضر	حَضَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	جورج	جُورج	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -1155,7 +1102,7 @@
 21	المدينة	مَدِينَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
-# sent_id = 2
+# sent_id = 37
 # text = سجل بجامعة ييل في مدينة مدلاند، تكساس بين 1964 و1968 حيث تخرج بشهادة تاريخ.
 1	سجل	سَجَّل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2-3	بجامعة	_	_	_	_	_	_	_	_
@@ -1177,7 +1124,7 @@
 17	تاريخ	تَارِيخ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	16	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 38
 # text = بعدها حضر جامعة هارفارد وتخرج بشهادة ماجستير إدارة الأعمال.
 1-2	بعدها	_	_	_	_	_	_	_	_
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
@@ -1194,7 +1141,7 @@
 11	الأعمال	عَمَل	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	G---------	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 39
 # text = وهو الرئيس الأمريكي الوحيد بشهادة إدارة أعمال.
 1-2	وهو	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1205,14 +1152,10 @@
 6	بشهادة	بَشَهادَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	3	nmod	_	_
 7	إدارة	إِدَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	nmod	_	_
 8	أعمال	عَمَل	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	7	nmod	_	SpaceAfter=No
-9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 40
 # text = طيران الحرس الوطني بولاية تكساس
 1	طيران	طَيَرَان	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	الحرس	حَرَس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	_
@@ -1220,14 +1163,10 @@
 4-5	بولاية	_	_	_	_	_	_	_	_
 4	ب	بِ	ADP	P---------	AdpType=Prep	5	case	_	_
 5	ولاية	وِلَايَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
-6	تكساس	تِكسَاس	X	X---------	Foreign=Yes	5	nmod	_	SpaceAfter=No
+6	تكساس	تِكسَاس	X	X---------	Foreign=Yes	5	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 41
 # text = بشهر ايار 1968 التحق جورج والكر بوش بطيران الحرس الوطني بولاية تكساس بعد سنتين من التدريب وأصبح هنالك طياراً رسمياً وإنظم إلى فريق طياري هيوستن التابع لوزارة الدفاع.
 1-2	بشهر	_	_	_	_	_	_	_	_
 1	ب	بِ	ADP	P---------	AdpType=Prep	2	case	_	_
@@ -1267,7 +1206,7 @@
 32	الدفاع	دِفَاع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	31	nmod	_	SpaceAfter=No
 33	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 42
 # text = وفي سنة 1972 توقف عن العمل هناك وبذلك انتهت خدمته العسكرية بتاريخ 21 نوفمبر 1971.
 1-2	وفي	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1295,7 +1234,7 @@
 20	1971	1971	NUM	Q---------	NumForm=Digit	19	nummod	_	SpaceAfter=No
 21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
 
-# sent_id = 3
+# sent_id = 43
 # text = لقد تأثر جورج بوش في حياته السياسية بالعديد من المؤثرات التي دفعته إلى تبني مواقف سياسية معينة وفي مقدمتها المواقف التي مر بها في حياته والمتعلقة بدرجة أولى بتأثير علاقة والده وكرهه له، إلى جانب ذلك فشله في إدارة شركات نفط العائلة ووفاة أخته الصغرى بولين روبنسون كان متأثر بها إضافة إلى الإدمان على الكحول وتأثير الدين على توجهاته هذا فضلا على العداوة التي كانت تجمعه ببعض الشخصيات والتي كانت دافعا لإعلان الحرب على الإرهاب من جهة وغزو العراق من جهة أخرى، وعلاقاته الشخصية مع صدام حسين وبالنسبة للقاعدة لقد شكلت شخصية الرجل المكلف بالاعلام في المعلومات الموجهة للولايات المتحدة الأمريكية حول نقاط الضعف والقوة لطالبان
 1	لقد	لقد	X	U---------	_	2	obl	_	_
 2	تأثر	تَأَثَّر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
@@ -1366,9 +1305,9 @@
 55	و	وَ	CCONJ	C---------	_	56	cc	_	_
 56	وفاة	وَفَاة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	49	conj	_	_
 57	أخته	خَته	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	56	nmod	_	_
-58	الصغرى	أَصغَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	57	nmod	_	SpacesAfter=\s\s
+58	الصغرى	أَصغَر	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	57	nmod	_	_
 59	بولين	بُولِين	X	X---------	Foreign=Yes	60	nmod	_	_
-60	روبنسون	روبنسون	X	U---------	_	57	nmod	_	SpacesAfter=\s\s\s
+60	روبنسون	روبنسون	X	U---------	_	57	nmod	_	_
 61	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	62	cop	_	_
 62	متأثر	مُتَأَثِّر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	49	acl	_	_
 63-64	بها	_	_	_	_	_	_	_	_
@@ -1453,27 +1392,19 @@
 131-132	والقوة	_	_	_	_	_	_	_	_
 131	و	وَ	CCONJ	C---------	_	133	cc	_	_
 132	القوة	قُوَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	130	conj	_	_
-133	لطالبان	لطالبان	X	U---------	_	129	conj	_	SpacesAfter=\n
+133	لطالبان	لطالبان	X	U---------	_	129	conj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 44
 # text = زواجه وحياته العائلية
 1	زواجه	زواجه	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2-3	وحياته	_	_	_	_	_	_	_	_
 2	وحيات	وَحَاة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	1	nmod	_	_
 3	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_
-4	العائلية	عَائِلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
+4	العائلية	عَائِلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 45
 # text = خلال حفلة في منزل أصدقاءه سنة 1977 تم تعريفه بلورا بوش من قبل أصدقائه وكانت وقتها معلمة في مدرسة وتعمل في مكتبة المدرسة أيضاً.
 1	خلال	خِلَالَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	حفلة	حَفلَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	9	obl	_	_
@@ -1513,7 +1444,7 @@
 30	أيضاً	أَيضًا	ADV	D---------	_	28	advmod:emph	_	SpaceAfter=No
 31	.	.	PUNCT	G---------	_	9	punct	_	_
 
-# sent_id = 2
+# sent_id = 46
 # text = وبعد ثلاثة أشهر بتاريخ 5 نوفمبر تزوج منها.
 1-2	وبعد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1531,7 +1462,7 @@
 11	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	obl:arg	_	_
 12	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 47
 # text = وفي سنة 1981 رزق الزوجان ببنتين توأم هما: باربرا بيرس بوش وجينا بوش.
 1-2	وفي	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1551,7 +1482,7 @@
 15	بوش	بُوش	X	X---------	Foreign=Yes	11	conj	_	SpaceAfter=No
 16	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 48
 # text = وتخرجت كل من باربرا وجينا من الجامعة سنة 2004.
 1	وتخرجت	وتخرجت	X	U---------	_	0	root	_	_
 2	كل	كُلّ	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
@@ -1562,14 +1493,10 @@
 7	الجامعة	جَامِعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
 8	سنة	سَنَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obl	_	_
 9	2004	2004	NUM	Q---------	NumForm=Digit	8	nummod	_	SpaceAfter=No
-10	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+10	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 49
 # text = يقول جورج والكر بوش أن زوجته أثرت عليه ايجابياً وغيرت حياته عندما ساعدته على ترك الكحول سنة 1986.
 1	يقول	قَال	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
 2	جورج	جُورج	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -1599,7 +1526,7 @@
 22	1986	1986	NUM	Q---------	NumForm=Digit	21	nummod	_	SpaceAfter=No
 23	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 50
 # text = ويذكر أنه قرأ أكثر من 190 كتاباً خلال فترة رئاسته التي بلغت ثمانية سنوات.
 1-2	ويذكر	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1623,7 +1550,7 @@
 17	سنوات	سَنَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	16	nmod	_	SpaceAfter=No
 18	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 51
 # text = ومن هوايته الأخرى هي لعبة الغولف.
 1-2	ومن	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1635,27 +1562,19 @@
 6	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
 7	لعبة	لَعبَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	parataxis	_	_
 8	الغولف	غُوُلف	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	SpaceAfter=No
-9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 52
 # text = بدايات حياته العملية
 1	بدايات	بِدايَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2-3	حياته	_	_	_	_	_	_	_	_
 2	حياة	حَيَاة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 3	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_
-4	العملية	عَمَلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No
+4	العملية	عَمَلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 53
 # text = بتاريخ 1978 رشح جورج والكر بوش نفسه لمنصب مجلس النواب الأمريكي وخسر تلك الانتخابات بفارق 6% مما جعله يذهب إلى صناعة النفط وعندها أسس شركة صغيرة سماها "اربستو اينيرجي" ونجحت شركته وأصبحت من كبرى الشركات النفطية مما جعله يغير اسم الشركة إلى "بحوث بوش" ودمج شركته مع شركات أخرى ليشكل شركة "سبيكتروم 7" وتولى منصب رئاستها بعد ذلك.
 1-2	بتاريخ	_	_	_	_	_	_	_	_
 1	ب	بِ	ADP	P---------	AdpType=Prep	2	case	_	_
@@ -1748,14 +1667,10 @@
 76	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	75	nmod	_	_
 77	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	78	case	_	_
 78	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	73	obl	_	SpaceAfter=No
-79	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+79	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 54
 # text = انتقل بوش إلى واشنطن العاصمة ونقل معه زوجته وإبنتيه للعيش معه.
 1	انتقل	اِنتَقَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -1778,7 +1693,7 @@
 15	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nmod	_	_
 16	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 55
 # text = وذلك كان لكي يساعد والده خلال حملته الانتخابية للرئاسة.
 1-2	وذلك	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1799,7 +1714,7 @@
 13	الرئاسة	رِئَاسَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
 14	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 56
 # text = وبعد الحملة الناجحة لوالده وانتخاب والده للرئاسة عاد إلى تكساس واشترى أسهم بفريق تكساس رينجرز وأصبح المدير العام للفريق لمدة خمس سنوات.
 1-2	وبعد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1846,7 +1761,7 @@
 33	سنوات	سَنَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	32	nmod	_	SpaceAfter=No
 34	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 57
 # text = أحبه الناس لأنه اختار الجلوس معهم في مقاعد ملعب الفريق.
 1-2	أحبه	_	_	_	_	_	_	_	_
 1	أحب	أَحَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
@@ -1866,7 +1781,7 @@
 13	الفريق	فَرِيق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	SpaceAfter=No
 14	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 58
 # text = وبعد خمس سنوات باع اسمه في الفريق وربح 15 مليون دولار أمريكي.
 1-2	وبعد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1884,24 +1799,16 @@
 12	مليون	مِليُون	NUM	QM-----S4R	Case=Acc|Definite=Cons|Number=Sing|NumForm=Word	11	nummod	_	_
 13	دولار	دُولَار	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	12	nmod	_	_
 14	أمريكي	أَمرِيكِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No
-15	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 59
 # text = حاكم تكساس
 1	حاكم	حَاكِم	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2	تكساس	تِكسَاس	X	X---------	Foreign=Yes	1	nmod	_	SpaceAfter=No
+2	تكساس	تِكسَاس	X	X---------	Foreign=Yes	1	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 60
 # text = أعلن جورج والكر بوش حملة ترشيح لتولي منصب حاكم تكساس سنة 1994.
 1	أعلن	أَعلَن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	جورج	جُورج	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -1919,7 +1826,7 @@
 13	1994	1994	NUM	Q---------	NumForm=Digit	12	nummod	_	SpaceAfter=No
 14	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 61
 # text = وحملته الانتخابية ركزت على التعليم والأمن وغيرها من القضايا المهمة للناخبين وقتها.
 1-2	وحملته	_	_	_	_	_	_	_	_
 1	وحملة	وَحمَلَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	4	nsubj	_	_
@@ -1944,7 +1851,7 @@
 17	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nmod	_	_
 18	.	.	PUNCT	G---------	_	4	punct	_	_
 
-# sent_id = 3
+# sent_id = 62
 # text = وواجه في هذه الانتخابات آن ريتشاردز من الحزب الديمقراطي التي كانت حاكمة تكساس وترشح لإعادة انتخابها للمنصب.
 1-2	وواجه	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1971,7 +1878,7 @@
 20	للمنصب	مَنصِب	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	18	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 63
 # text = ولكنه ربح الانتخابات في النهاية وأصبح حاكماً لولاية تكساس بعد فوزه بنتيجة 53.5% من الأصوات.
 1-3	ولكنه	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -1996,14 +1903,10 @@
 18	%	%	SYM	G---------	_	17	nmod	_	_
 19	من	مِن	ADP	P---------	AdpType=Prep	20	case	_	_
 20	الأصوات	صَوت	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	17	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 64
 # text = في سنة 1998 اُنْتُخِبَ لولاية جديدة بنسبة 69% من الأصوات وأصبح بذلك أول حاكم بولاية تكساس ليُنتخب مرة ثانية.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	سنة	سَنَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	obl	_	_
@@ -2035,7 +1938,7 @@
 24	ثانية	ثَانِي	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No
 25	.	.	PUNCT	G---------	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 65
 # text = ويعرف أن شعبيته ارتفعت كثيراً بين الناس في الولاية خاصة عندما أعلن يوم 10 يونيو 2000 يوم يسوع المسيح في تكساس وطلب من السكان أن يعملو فعل خير ويساعدو الفقير في ذلك اليوم وذلك بسبب كون سكان الولاية من المحافظين والمتدينين.
 1-2	ويعرف	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -2088,14 +1991,10 @@
 44	من	مِن	ADP	P---------	AdpType=Prep	45	case	_	_
 45	المحافظين	مُحَافِظ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	41	nmod	_	_
 46	والمتدينين	لمتَدَيِنّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	45	amod	_	SpaceAfter=No
-47	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+47	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 66
 # text = خلال فترة حكمه للولاية كانت الأضواء عليه لكي يترشح لمنصب رئيس الولايات المتحدة وذلك كان سبب ترشيحه سنة 2000.
 1	خلال	خِلَالَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	فترة	فَترَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
@@ -2126,26 +2025,18 @@
 22	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nmod	_	_
 23	سنة	سَنَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	21	nmod	_	_
 24	2000	2000	NUM	Q---------	NumForm=Digit	23	nummod	_	SpaceAfter=No
-25	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n
+25	.	.	PUNCT	G---------	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 67
 # text = فترة رئاسته
 1	فترة	فَترَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
-2-3	رئاسته	_	_	_	_	_	_	_	SpaceAfter=No
+2-3	رئاسته	_	_	_	_	_	_	_	SpacesAfter=\n\n
 2	رئاسة	رِئَاسَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
 3	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 68
 # text = على الرغم من أن بوش حدد الخطوط العريضة في الأصل وحدد جدول أعمال طموح للعمل خلال فترة رئاسته، إلا أن أولوياته تغيرت بشكل ملحوظ في أعقاب هجمات 11 سبتمبر الارهابية عام 2001.
 1	على	عَلَى	ADP	P---------	AdpType=Prep	6	mark	_	_
 2	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	fixed	_	_
@@ -2192,7 +2083,7 @@
 38	2001	2001	NUM	Q---------	NumForm=Digit	37	nummod	_	SpaceAfter=No
 39	.	.	PUNCT	G---------	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 69
 # text = اندلعت الحرب في أفغانستان والعراق وبدأت المناقشات الداخلية بشأن الهجرة والرعاية الصحية والأمن الاجتماعي والسياسة الاقتصادية والتعامل مع المعتقلين المتهمين بالإرهاب.
 1	اندلعت	اِندَلَع	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -2233,31 +2124,23 @@
 29	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	27	obl:arg	_	_
 30	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 70
 # text = دخلت الولايات المتحدة ركود اقتصادي.
 1	دخلت	دَخَل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	الولايات	وِلَايَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
 3	المتحدة	مُتَّحِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
 4	ركود	رُكُود	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 5	اقتصادي	اِقتِصَادِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No
-6	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+6	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 71
 # text = السياسة الخارجية
 1	السياسة	سِيَاسَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
-2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+2	الخارجية	خَارِجِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 72
 # text = تضمن برنامج سياسة بوش الخارجية خلال حملته الرئاسية دعم علاقات اقتصادية وسياسية أقوى مع أمريكا اللاتينية، وخاصة المكسيك، وتقليص المشاركة في «بناء الأمة» وغيرها من الاشتباكات العسكرية الصغيرة.
 1	تضمن	تَضَمَّن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	برنامج	بَرنَامَج	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
@@ -2304,7 +2187,7 @@
 38	الصغيرة	صَغِير	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
 39	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 73
 # text = اتبعت الإدارة نظام دفاع صاروخي وطني.
 1	اتبعت	اِتَّبَع	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	الإدارة	إِدَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -2314,7 +2197,7 @@
 6	وطني	وَطَنِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No
 7	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 74
 # text = أيد بوش انضمام الصين إلى منظمة التجارة العالمية.
 1	أيد	أَيَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2324,14 +2207,10 @@
 6	منظمة	مُنَظَّمَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	3	nmod	_	_
 7	التجارة	تِجَارَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
 8	العالمية	عَالَمِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No
-9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+9	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 75
 # text = بدأ بوش ولايته الثانية بالتركيز على تحسين العلاقات المتوترة مع الدول الأوروبية.
 1	بدأ	بَدَأ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2351,7 +2230,7 @@
 14	الأوروبية	أُورُوبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
 15	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 76
 # text = عين المستشارة المخضرمة كارين هيوز للإشراف على حملة علاقات عامة عالمية.
 1	عين	عَيَّن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	المستشارة	مُستَشَارَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -2368,7 +2247,7 @@
 12	عالمية	عَالَمِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No
 13	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 77
 # text = أشاد بوش بالنضالات المؤيدة للديمقراطية في جورجيا وأوكرانيا.
 1	أشاد	أَشَاد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2382,14 +2261,10 @@
 9-10	وأوكرانيا	_	_	_	_	_	_	_	SpaceAfter=No
 9	و	وَ	CCONJ	C---------	_	10	cc	_	_
 10	أوكرانيا	أُوكرَانِيَا	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	_
-11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 78
 # text = عكس بوش في مارس عام 2006 عقودًا من السياسة الأمريكية عندما زار الهند في رحلة ركزت بشكل خاص على مجالات الطاقة النووية، والتعاون في مكافحة الإرهاب، والمناقشات التي من شأنها أن تؤدي في نهاية المطاف إلى الاتفاقية النووية المدنية بين الهند والولايات المتحدة.
 1	عكس	عَكَس	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2446,7 +2321,7 @@
 49	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	48	amod	_	SpaceAfter=No
 50	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 79
 # text = تناقض ذلك بشكل كبير مع الموقف الذي اتخذه سلفه، بيل كلينتون، الذي وصف نهجه ورد فعله على الهند بعد التجارب النووية عام 1998 بأنه «عقوبات وتهويل».
 1	تناقض	نَاقَض	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	ذلك	ذلك	X	U---------	_	1	nsubj	_	_
@@ -2491,14 +2366,10 @@
 35	عقوبات	عُقُوبَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	18	obl:arg	_	_
 36	وتهويل	وتهويل	ADJ	A-----MS1I	_	35	nmod	_	SpaceAfter=No
 37	»	»	PUNCT	G---------	_	35	punct	_	SpaceAfter=No
-38	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+38	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 80
 # text = أثيرت بعض الأسئلة في منتصف فترة ولاية بوش الثانية حول ما إذا كان سيتراجع عن أجندة الحرية والديمقراطية؛
 1	أثيرت	أَثَار	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	0	root	_	_
 2	بعض	بَعض	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj:pass	_	_
@@ -2524,7 +2395,7 @@
 20	الديمقراطية	دِيمُقرَاطِيَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	conj	_	_
 21	؛	؛	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 81
 # text = والتي سُلِّط الضوء عليها في تغييرات السياسة تجاه بعض الجمهوريات السوفيتية السابقة الغنية بالنفط في آسيا الوسطى.
 1-2	والتي	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -2549,14 +2420,10 @@
 18	في	فِي	ADP	P---------	AdpType=Prep	19	case	_	_
 19	آسيا	آسِيَا	X	X---------	Foreign=Yes	15	obl	_	_
 20	الوسطى	أَوسَط	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 82
 # text = وقع بوش على معاهدة التقليل من الأسلحة الهجومية الاستراتيجية مع روسيا.
 1	وقع	وَقَّع	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2571,7 +2438,7 @@
 11	روسيا	رُوسِيَا	X	X---------	Foreign=Yes	7	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 83
 # text = سحب دعم الولايات المتحدة للعديد من الاتفاقيات الدولية، بما في ذلك معاهدة الصواريخ المضادة للباليستية مع روسيا.
 1	سحب	سَحَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	دعم	دَعم	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
@@ -2595,14 +2462,10 @@
 18	للباليستية	للباليستية	X	U---------	_	15	nmod	_	_
 19	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	20	case	_	_
 20	روسيا	رُوسِيَا	X	X---------	Foreign=Yes	15	nmod	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 84
 # text = شدد بوش على اتباع نهج حذر في التعامل مع الصراع بين إسرائيل والفلسطينيين.
 1	شدد	شَدَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2621,7 +2484,7 @@
 14	الفلسطينيين	فِلَسطِينِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	12	conj	_	_
 15	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 85
 # text = وندد برئيس منظمة التحرير الفلسطينية ياسر عرفات لدعمه العنف، ولكنه رعى الحوارات بين رئيس الوزراء أرييل شارون ورئيس السلطة الوطنية الفلسطينية محمود عباس.
 1-2	وندد	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -2660,7 +2523,7 @@
 30	عباس	عباس	X	U---------	_	25	nmod	_	SpaceAfter=No
 31	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 86
 # text = أيد بوش خطة شارون لفك الارتباط أحادي الجانب، وأشاد بالانتخابات الديمقراطية التي أجريت في فلسطين بعد وفاة عرفات.
 1	أيد	أَيَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2685,14 +2548,10 @@
 19	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	20	case	_	_
 20	وفاة	وَفَاة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	obl	_	_
 21	عرفات	عرفات	X	U---------	_	20	nmod	_	SpaceAfter=No
-22	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+22	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 87
 # text = زار بوش البابا يوحنا بولس الثاني في قلعة غاندولفو في يوليو عام 2001.
 1	زار	زَار	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2707,14 +2566,10 @@
 11	يوليو	يُولِيُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	1	obl	_	_
 12	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	11	nmod	_	_
 13	2001	2001	NUM	Q---------	NumForm=Digit	12	nummod	_	SpaceAfter=No
-14	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+14	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 88
 # text = أعرب بوش عن دعم الولايات المتحدة للدفاع عن تايوان بعد المواجهة في أبريل عام 2001 مع الصين بشأن حادثة جزيرة هاينان؛
 1	أعرب	أَعرَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2743,7 +2598,7 @@
 23	هاينان	هاينان	X	U---------	_	22	nmod	_	SpaceAfter=No
 24	؛	؛	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 89
 # text = عندما اصطدمت طائرة استطلاع من طراز إي بّي-3 إي آيريس الثانية (لوكهيد إي بّي-3) بطائرة تابعة للقوات الجوية لجيش التحرير الشعبي، مما أدى إلى اعتقال أفراد أمريكيين.
 1	عندما	عِندَمَا	CCONJ	C---------	_	2	mark	_	_
 2	اصطدمت	اِصطَدَم	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
@@ -2785,7 +2640,7 @@
 36	أمريكيين	أَمرِيكِيّ	ADJ	A-----MP2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	35	amod	_	SpaceAfter=No
 37	.	.	PUNCT	G---------	_	2	punct	_	_
 
-# sent_id = 3
+# sent_id = 90
 # text = سمح بوش بالتدخل العسكري الأمريكي في هايتي وليبيريا لحماية المصالح الأمريكية منذ عام 2003 حتى عام 2004.
 1	سمح	سَمَح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2810,7 +2665,7 @@
 19	2004	2004	NUM	Q---------	NumForm=Digit	18	nummod	_	SpaceAfter=No
 20	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 91
 # text = ندد بوش بهجمات الميليشيات على دارفور، ووصف عمليات القتل في السودان بأنها إبادة جماعية.
 1	ندد	نَدَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2836,7 +2691,7 @@
 19	جماعية	جَمَاعِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 92
 # text = شدد بوش على أهمية تواجد قوات حفظ السلام الدولية في دارفور، ولكنه عارض إحالة الوضع إلى المحكمة الجنائية الدولية.
 1	شدد	شَدَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2861,14 +2716,10 @@
 20	المحكمة	مَحكَمَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	17	nmod	_	_
 21	الجنائية	جِنَائِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	20	amod	_	_
 22	الدولية	دُوَلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No
-23	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+23	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 93
 # text = التقى بوش في 10 يونيو عام 2007 برئيس الوزراء الألباني صالح بريشا، وأصبح أول رئيس يزور ألبانيا.
 1	التقى	اِلتَقَى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2894,7 +2745,7 @@
 20	ألبانيا	أَلبَانِيَا	X	X---------	Foreign=Yes	19	obj	_	SpaceAfter=No
 21	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 94
 # text = أعرب بوش عن دعمه لاستقلال كوسوفو.
 1	أعرب	أَعرَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2906,7 +2757,7 @@
 7	كوسوفو	كوسوفو	X	U---------	_	6	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 95
 # text = عارض بوش استقلال أوسيتيا الجنوبية.
 1	عارض	عَارَض	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -2915,7 +2766,7 @@
 5	الجنوبية	جَنُوبِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
 6	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 96
 # text = تكلم في 15 أغسطس عام 2008 عن الغزو الروسي لدولة جورجيا قائلًا: «التنمر والتهويل ليسا طريقتين مقبولتين لإدارة السياسة الخارجية في القرن الحادي والعشرين».
 1	تكلم	تَكَلَّم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
@@ -2950,25 +2801,17 @@
 28	و	وَ	CCONJ	C---------	_	29	cc	_	_
 29	العشرين	عِشرُون	NUM	QL------2D	Case=Gen|Definite=Def|NumForm=Word	27	conj	_	_
 30	»	»	PUNCT	G---------	_	19	punct	_	SpaceAfter=No
-31	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 97
 # text = هجمات 11 سبتمبر
 1	هجمات	هَجمَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
 2	11	11	NUM	Q---------	NumForm=Digit	1	nummod	_	_
-3	سبتمبر	سِبتَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	SpaceAfter=No
+3	سبتمبر	سِبتَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 98
 # text = كانت هجمات 11 سبتمبر الإرهابية نقطة تحول رئيسية في رئاسة بوش.
 1	كانت	كَان	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	هجمات	هَجمَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
@@ -2985,7 +2828,7 @@
 12	بوش	بُوش	X	X---------	Foreign=Yes	11	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 99
 # text = خاطب الأمة من المكتب البيضاوي في ذلك المساء، ووعد برد قوي على الهجمات.
 1	خاطب	خَاطَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	الأمة	أُمَّة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	1	obj	_	_
@@ -3007,7 +2850,7 @@
 16	الهجمات	هَجمَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	11	obl:arg	_	SpaceAfter=No
 17	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 100
 # text = شدد أيضًا على ضرورة اجتماع الأمة وتوفير الراحة لأسر الضحايا.
 1	شدد	شَدَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	أيضًا	أَيضاا	ADV	D---------	_	1	advmod:emph	_	_
@@ -3023,7 +2866,7 @@
 11	الضحايا	ضَحِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	9	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 101
 # text = ذهب بوش بعد ثلاثة أيام من الهجمات بزيارة إلى منطقة الصفر والتقى بالعمدة رودي جولياني ورجال الإطفاء وضباط الشرطة والمتطوعين.
 1	ذهب	ذَهَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -3053,7 +2896,7 @@
 23	والمتطوعين	والمتطوعين	X	U---------	_	21	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 102
 # text = خاطب بوش الحشد عبر مكبر صوت وهو يقف على الأنقاض: «يمكنني سماعكم، ويمكن لبقية العالم سماعكم أيضًا.
 1	خاطب	خَاطَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -3087,7 +2930,7 @@
 25	أيضًا	أَيضاا	ADV	D---------	_	23	advmod:emph	_	SpaceAfter=No
 26	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 6
+# sent_id = 103
 # text = سيسمعوننا الناس الذين هدموا هذه المباني جميعًا قريبًا».
 1-2	سيسمعوننا	_	_	_	_	_	_	_	_
 1	سيسمعون	يسَمَّع	VERB	VIIA-3MP--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -3100,14 +2943,10 @@
 8	جميعًا	جَمِيع	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 9	قريبًا	قَرِيب	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
 10	»	»	PUNCT	G---------	_	1	punct	_	SpaceAfter=No
-11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+11	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 104
 # text = أدان بوش أسامة بن لادن وتنظيم القاعدة في خطاب ألقاه في 20 سبتمبر، وأصدر إنذارًا نهائيًا لنظام طالبان في أفغانستان، إذ كان بن لادن يعمل من أجل «تسليم الإرهابيين، أو المشاركة في مصيرهم».
 1	أدان	أَدَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -3157,24 +2996,16 @@
 41	مصير	مَصِير	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	39	nmod	_	_
 42	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	41	nmod	_	_
 43	»	»	PUNCT	G---------	_	34	punct	_	SpaceAfter=No
-44	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+44	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 105
 # text = عقوبات سوريا
 1	عقوبات	عُقُوبَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	0	root	_	_
-2	سوريا	سُورِيَا	X	X---------	Foreign=Yes	1	nmod	_	SpaceAfter=No
+2	سوريا	سُورِيَا	X	X---------	Foreign=Yes	1	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 106
 # text = وسع بوش العقوبات الاقتصادية على سوريا.
 1	وسع	وَسَّع	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -3184,7 +3015,7 @@
 6	سوريا	سُورِيَا	X	X---------	Foreign=Yes	1	obl:arg	_	SpaceAfter=No
 7	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 107
 # text = وقع بوش في عام 2003 على قانون محاسبة سوريا، الذي وسع العقوبات المفروضة على الدولة.
 1	وقع	وَقَّع	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -3204,7 +3035,7 @@
 16	الدولة	دَولَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	obl:arg	_	SpaceAfter=No
 17	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 108
 # text = جمدت وزارة الخزانة في أوائل عام 2007، بموجب أمر تنفيذي صدر في يونيو عام 2005، الحسابات المصرفية الأمريكية للمعهد العالي للعلوم التطبيقية والتكنولوجيا في سوريا، ومعهد الإلكترونيات، والمختبر الوطني للمعايير والمعايرة.
 1	جمدت	جَمَّد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	وزارة	وِزَارَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
@@ -3251,7 +3082,7 @@
 39	معايرة	مُعَايِر	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	35	nmod	_	_
 40	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 4
+# sent_id = 109
 # text = حظر أمر بوش على الأمريكيين التعامل مع هذه المؤسسات المشتبه في أنها تساعد في نشر أسلحة الدمار الشامل ودعمها للإرهاب.
 1	حظر	حَظَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	أمر	أَمر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
@@ -3282,7 +3113,7 @@
 24	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	_
 25	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 110
 # text = جمدت وزارة الخزانة أصول لبنانيَين واثنين من السوريين متهمة إياهم بتنفيذ أنشطة «لتقويض العملية السياسية المشروعة في لبنان» في نوفمبر عام 2007؛
 1	جمدت	جَمَّد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	وزارة	وِزَارَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
@@ -3316,7 +3147,7 @@
 27	2007	2007	NUM	Q---------	NumForm=Digit	26	nummod	_	SpaceAfter=No
 28	؛	؛	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 6
+# sent_id = 111
 # text = وذلك بموجب أوامر تنفيذية منفصلة وقَّع عليها بوش في عام 2004 ولاحقًا عام 2007، ومن بين هؤلاء: أسعد حليم حردان، عضو مجلس النواب اللبناني والزعيم الحالي للحزب الوطني السوري الاشتراكي، ووئام وهاب، عضو سابق في الحكومة اللبنانية (وزير البيئة) في عهد رئيس الوزراء عمر كرامي (2004-2005).
 1-2	وذلك	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -3389,7 +3220,7 @@
 63	)	)	PUNCT	G---------	_	60	punct	_	SpaceAfter=No
 64	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 7
+# sent_id = 112
 # text = حافظ مخلوف، عقيد ومسؤول كبير في المخابرات العامة السورية وابن عم الرئيس السوري بشار الأسد، ومحمد ناصيف خير بك، الذي عُرِف بأنه مستشار مقرب من الرئيس الأسد.
 1	حافظ	حافظ	X	U---------	_	2	nmod	_	_
 2	مخلوف	مخلوف	X	U---------	_	0	root	_	SpaceAfter=No
@@ -3426,25 +3257,17 @@
 31	من	مِن	ADP	P---------	AdpType=Prep	32	case	_	_
 32	الرئيس	رَئِيس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	29	nmod	_	_
 33	الأسد	أَسَد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	32	nmod	_	SpaceAfter=No
-34	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n
+34	.	.	PUNCT	G---------	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 113
 # text = الحرب على الإرهاب
 1	الحرب	حَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	_
 2	على	عَلَى	ADP	P---------	AdpType=Prep	3	case	_	_
-3	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpaceAfter=No
+3	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 114
 # text = بعد 11 سبتمبر، أعلن بوش حرباً عالمية على الإرهاب.
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	11	11	NUM	Q---------	NumForm=Digit	5	obl	_	_
@@ -3458,7 +3281,7 @@
 10	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	SpaceAfter=No
 11	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 115
 # text = أمر بوش بحرب أفغانستان (2001 -) للإطاحة بنظام طالبان والقاعدة.
 1	أمر	أَمر	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nmod	_	_
@@ -3478,7 +3301,7 @@
 14	القاعدة	قَاعِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	conj	_	_
 15	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 116
 # text = في خطاب حالة الاتحاد لسنة 2002 أكد بوش أن "محور الشر" الذي يضم كل من كوريا الشمالية وإيران، والعراق كان يهدد السلام العالمي ويشكل خطراً كبيراً ومتزايداً.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	خطاب	خِطَاب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	obl	_	_
@@ -3520,7 +3343,7 @@
 34	ومتزايداً	ومتزايداً	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	32	amod	_	SpaceAfter=No
 35	.	.	PUNCT	G---------	_	8	punct	_	_
 
-# sent_id = 4
+# sent_id = 117
 # text = وأكدت إدارة بوش على حد سواء حقها وعزمها على شن حرب وقائية.
 1-2	وأكدت	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -3542,7 +3365,7 @@
 15	وقائية	وِقَائِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No
 16	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 5
+# sent_id = 118
 # text = واصلت المعارضة انتقادها لقيادة بوش في الحرب على الإرهاب وزادت انتقادها الحرب على العراق.
 1	واصلت	وَاصَل	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	المعارضة	مُعَارَضَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
@@ -3566,23 +3389,15 @@
 16	الحرب	حَرب	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	13	obj	_	_
 17	على	عَلَى	ADP	P---------	AdpType=Prep	18	case	_	_
 18	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	SpaceAfter=No
-19	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+19	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 119
 # text = أفغانستان
-1	أفغانستان	أَفغَانِستَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+1	أفغانستان	أَفغَانِستَان	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 120
 # text = في 7 أكتوبر، 2001، القوات الأمريكية والبريطانية بدأت حملات القصف التي أدت إلى وصول قوات التحالف الشمالي إلى كابول في 13 نوفمبر.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	7	7	NUM	Q---------	NumForm=Digit	11	obl	_	_
@@ -3612,7 +3427,7 @@
 25	نوفمبر	نُوفِمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	24	nmod	_	SpaceAfter=No
 26	.	.	PUNCT	G---------	_	11	punct	_	_
 
-# sent_id = 2
+# sent_id = 121
 # text = وكانت الأهداف الرئيسية للحرب لهزيمة طالبان، طرد تنظيم القاعدة من أفغانستان، والقبض على قادة القاعدة.
 1-2	وكانت	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -3639,7 +3454,7 @@
 20	القاعدة	قَاعِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
+# sent_id = 122
 # text = في ديسمبر 2001، ذكرت وزارة دفاع الولايات المتحدة أنه تم هزيمة طالبان، ولكن حذر من أن الحرب ستستمر لمواصلة إضعاف طالبان وقادة تنظيم القاعدة.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	ديسمبر	دِيسَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
@@ -3679,7 +3494,7 @@
 31	القاعدة	قَاعِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	SpaceAfter=No
 32	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 123
 # text = في وقت لاحق الإدارة الأفغانية الانتقالية للأمم المتحدة في ذلك الشهر قد شهد تنصيب حامد كرزاي رئيساً لإفغانستان.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	وقت	وَقت	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	14	obl	_	_
@@ -3703,7 +3518,7 @@
 19	لإفغانستان	لإفغانستان	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	18	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	G---------	_	14	punct	_	_
 
-# sent_id = 5
+# sent_id = 124
 # text = في عام 2002، استنادا إلى أرقام اليونيسيف كانت أفغانستان بحاجة إلى مساعدات فأمر بوش بإرسال مساعدات إنسانية لمساعدة الشعب الأفغاني.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	9	obl	_	_
@@ -3732,24 +3547,17 @@
 22	مساعدة	مُسَاعَدَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	18	obl	_	_
 23	الشعب	شَعب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
 24	الأفغاني	أَفغَانِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No
-25	.	.	PUNCT	G---------	_	9	punct	_	SpacesAfter=\n
+25	.	.	PUNCT	G---------	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = العراق
-1	العراق	عِرَاق	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
+# sent_id = 125
+# text = غزو العراق
+1	غزو	غَزو	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+2	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	nmod	_	SpacesAfter=\n\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
-# text = بدأ بوش بخطاب حالة الاتحاد الذي القاه بشهر يناير من سنة 2002 بالاهتمام بقضية العراق التي وصفها بأنها جزء من محور الشر المتحالف مع الارهابيين والتي تشكل "خطرا كبيرا ومتزايد" لمصالح الولايات المتحدة من خلال الاستحواذ على أسلحة الدمار الشامل ودعا الامم المتحدة للتدخل عسكرياً للتخلص من الاسلحة.
+# sent_id = 126
+# text = بدأ بوش بخطاب حالة الاتحاد الذي القاه بشهر يناير من سنة 2002 بالاهتمام علنا بقضية العراق الذي وصفه بأنه (جزء من محور الشر المتحالف مع الارهابيين) ويشكل "خطرا كبيرا ومتزايد" لمصالح الولايات المتحدة من خلال حيازته على أسلحة الدمار الشامل.
 1	بدأ	بَدَأ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
 3	بخطاب	بخطاب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
@@ -3769,199 +3577,1092 @@
 15-16	بالاهتمام	_	_	_	_	_	_	_	_
 15	ب	بِ	ADP	P---------	AdpType=Prep	16	case	_	_
 16	الاهتمام	اِهتِمَام	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
-17-18	بقضية	_	_	_	_	_	_	_	_
-17	ب	بِ	ADP	P---------	AdpType=Prep	18	case	_	_
-18	قضية	قَضِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	nmod	_	_
-19	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
-20	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	_	_
-21-22	وصفها	_	_	_	_	_	_	_	_
-21	وصف	وَصَف	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	18	acl:relcl	_	_
-22	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
-23-25	بأنها	_	_	_	_	_	_	_	_
-23	ب	بِ	ADP	P---------	AdpType=Prep	26	case	_	_
-24	أن	أَنَّ	SCONJ	C---------	_	26	mark	_	_
-25	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
-26	جزء	جُزء	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	21	obl:arg	_	_
-27	من	مِن	ADP	P---------	AdpType=Prep	28	case	_	_
-28	محور	مِحوَر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	26	nmod	_	_
-29	الشر	شِرّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	28	nmod	_	_
-30	المتحالف	مُتَحَالَف	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	29	amod	_	_
-31	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	32	case	_	_
-32	الارهابيين	إِرهَابِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	30	obl:arg	_	_
-33-34	والتي	_	_	_	_	_	_	_	_
-33	و	وَ	CCONJ	C---------	_	35	cc	_	_
-34	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	35	nsubj	_	_
-35	تشكل	شَكَّل	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	28	acl:relcl	_	_
-36	"	"	PUNCT	G---------	_	37	punct	_	SpaceAfter=No
-37	خطرا	خَطَر	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	_
-38	كبيرا	كَبِير	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	37	amod	_	_
-39	ومتزايد	ومتزايد	X	U---------	_	37	nmod	_	SpaceAfter=No
-40	"	"	PUNCT	G---------	_	37	punct	_	_
-41	لمصالح	َصلَحَة	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	37	nmod	_	_
-42	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	41	nmod	_	_
-43	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	42	amod	_	_
-44	من	مِن	ADP	P---------	AdpType=Prep	46	case	_	_
-45	خلال	خِلَالَ	ADP	PI------2-	AdpType=Prep|Case=Gen	44	fixed	_	_
-46	الاستحواذ	الاستحواذ	X	U---------	_	35	obl	_	_
-47	على	عَلَى	ADP	P---------	AdpType=Prep	48	case	_	_
-48	أسلحة	سِلَاح	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	46	nmod	_	_
-49	الدمار	دَمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	48	nmod	_	_
-50	الشامل	شَامِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	49	amod	_	_
-51-52	ودعا	_	_	_	_	_	_	_	_
-51	و	وَ	CCONJ	C---------	_	52	cc	_	_
-52	دعا	دَعَا	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
-53	الامم	أُمَّة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	52	obj	_	_
-54	المتحدة	مُتَّحِد	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	53	amod	_	_
-55-56	للتدخل	_	_	_	_	_	_	_	_
-55	ل	لِ	ADP	P---------	AdpType=Prep	56	case	_	_
-56	التدخل	تَدَخُّل	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	52	obl:arg	_	_
-57	عسكرياً	عَسكَرِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	56	amod	_	_
-58-59	للتخلص	_	_	_	_	_	_	_	_
-58	ل	لِ	ADP	P---------	AdpType=Prep	59	case	_	_
-59	التخلص	تَخَلُّص	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	56	nmod	_	_
-60	من	مِن	ADP	P---------	AdpType=Prep	61	case	_	_
-61	الاسلحة	سِلَاح	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	59	nmod	_	SpaceAfter=No
-62	.	.	PUNCT	G---------	_	1	punct	_	_
+17	علنا	عَلَن	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	16	nmod	_	_
+18-19	بقضية	_	_	_	_	_	_	_	_
+18	ب	بِ	ADP	P---------	AdpType=Prep	19	case	_	_
+19	قضية	قَضِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	nmod	_	_
+20	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	nmod	_	_
+21	الذي	اَلَّذِي	DET	SR----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	22	nsubj	_	_
+22-23	وصفه	_	_	_	_	_	_	_	_
+22	وصف	وَصَف	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	19	acl:relcl	_	_
+23	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
+24-26	بأنه	_	_	_	_	_	_	_	_
+24	ب	بِ	ADP	P---------	AdpType=Prep	28	case	_	_
+25	أن	أَنَّ	SCONJ	C---------	_	28	mark	_	_
+26	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+27	(	(	PUNCT	G---------	_	28	punct	_	SpaceAfter=No
+28	جزء	جُزء	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	22	obl:arg	_	_
+29	من	مِن	ADP	P---------	AdpType=Prep	30	case	_	_
+30	محور	مِحوَر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	28	nmod	_	_
+31	الشر	شِرّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	_
+32	المتحالف	مُتَحَالَف	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	31	amod	_	_
+33	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	34	case	_	_
+34	الارهابيين	إِرهَابِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	32	obl:arg	_	SpaceAfter=No
+35	)	)	PUNCT	G---------	_	28	punct	_	_
+36-37	ويشكل	_	_	_	_	_	_	_	_
+36	و	وَ	CCONJ	C---------	_	37	cc	_	_
+37	يشكل	شَكَّل	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	conj	_	_
+38	"	"	PUNCT	G---------	_	39	punct	_	SpaceAfter=No
+39	خطرا	خَطَر	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	37	obj	_	_
+40	كبيرا	كَبِير	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	39	amod	_	_
+41	ومتزايد	ومتزايد	X	U---------	_	39	nmod	_	SpaceAfter=No
+42	"	"	PUNCT	G---------	_	39	punct	_	_
+43	لمصالح	َصلَحَة	NOUN	N------P4R	Case=Acc|Definite=Cons|Number=Plur	39	nmod	_	_
+44	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	43	nmod	_	_
+45	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	44	amod	_	_
+46	من	مِن	ADP	P---------	AdpType=Prep	48	case	_	_
+47	خلال	خِلَالَ	ADP	PI------2-	AdpType=Prep|Case=Gen	46	fixed	_	_
+48-49	حيازته	_	_	_	_	_	_	_	_
+48	حيازة	حِيَازَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	37	obl	_	_
+49	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	48	nmod	_	_
+50	على	عَلَى	ADP	P---------	AdpType=Prep	51	case	_	_
+51	أسلحة	سِلَاح	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	48	nmod	_	_
+52	الدمار	دَمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	51	nmod	_	_
+53	الشامل	شَامِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	52	amod	_	SpaceAfter=No
+54	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\s\n
 
-# sent_id = 2
-# text = انضمت أكثر من 20 دولة أخرى إلى مساعي بوش (أبرزها المملكة المتحدة وأستراليا).
+# sent_id = 127
+# text = في النصف الأخير من عام 2002، زعمت تقارير وكالة المخابرات المركزية الأمريكية أن صدام حسين كان ينوي إحياء برامج الأسلحة النووية، وأن الأسلحة البيولوجية والكيماوية العراقية لم يتم تقديرها بشكل صحيح، وأن بعض الصواريخ العراقية لديها مدى أكبر من المسموح به بموجب عقوبات الأمم المتحدة.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	النصف	نِصف	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	obl	_	_
+3	الأخير	أَخِير	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	_
+4	من	مِن	ADP	P---------	AdpType=Prep	5	case	_	_
+5	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+6	2002	2002	NUM	Q---------	NumForm=Digit	5	nummod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	زعمت	زَعَم	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+9	تقارير	تَقرِير	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	8	nsubj	_	_
+10	وكالة	وِكَالَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	9	nmod	_	_
+11	المخابرات	مُخَابَرَات	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	nmod	_	_
+12	المركزية	مَركَزِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	11	amod	_	_
+13	الأمريكية	أَمرِيكِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+14	أن	أَنَّ	SCONJ	C---------	_	17	mark	_	_
+15	صدام	صدام	X	U---------	_	16	nmod	_	_
+16	حسين	حسين	X	U---------	_	17	nsubj	_	_
+17	كان	كَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	8	ccomp	_	_
+18	ينوي	نَوَى	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	17	xcomp	_	_
+19	إحياء	إِحيَاء	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	18	obj	_	_
+20	برامج	بَرنَامَج	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	19	nmod	_	_
+21	الأسلحة	سِلَاح	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	20	nmod	_	_
+22	النووية	نَوَوِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No
+23	،	،	PUNCT	G---------	_	22	punct	_	_
+24-25	وأن	_	_	_	_	_	_	_	_
+24	و	وَ	CCONJ	C---------	_	32	cc	_	_
+25	أن	أَنَّ	SCONJ	C---------	_	32	mark	_	_
+26	الأسلحة	سِلَاح	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	32	dislocated	_	_
+27	البيولوجية	بِيُولُوجِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	26	amod	_	_
+28-29	والكيماوية	_	_	_	_	_	_	_	_
+28	و	وَ	CCONJ	C---------	_	29	cc	_	_
+29	الكيماوية	كِيمَاوِيَّة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	27	conj	_	_
+30	العراقية	عِرَاقِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	26	amod	_	_
+31	لم	لَم	PART	F---------	_	32	advmod	_	_
+32	يتم	تَمّ	VERB	VIJA-3MS--	Aspect=Imp|Gender=Masc|Mood=Jus|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	17	conj	_	_
+33-34	تقديرها	_	_	_	_	_	_	_	_
+33	تقدير	تَقدِير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	32	nsubj	_	_
+34	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	nmod	_	_
+35-36	بشكل	_	_	_	_	_	_	_	_
+35	ب	بِ	ADP	P---------	AdpType=Prep	36	case	_	_
+36	شكل	شَكل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	32	obl	_	_
+37	صحيح	صَحِيح	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	36	amod	_	SpaceAfter=No
+38	،	،	PUNCT	G---------	_	37	punct	_	_
+39-40	وأن	_	_	_	_	_	_	_	_
+39	و	وَ	CCONJ	C---------	_	41	cc	_	_
+40	أن	أَنَّ	SCONJ	C---------	_	41	mark	_	_
+41	بعض	بَعض	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	32	dislocated	_	_
+42	الصواريخ	صَارُوخ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	41	nmod	_	_
+43	العراقية	عِرَاقِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	42	amod	_	_
+44-45	لديها	_	_	_	_	_	_	_	_
+44	لدي	لَدَى	ADP	P---------	AdpType=Prep	45	case	_	_
+45	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	41	obl:arg	_	_
+46	مدى	مَدَى	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	45	nsubj	_	_
+47	أكبر	أَكبَر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	46	amod	_	_
+48	من	مِن	ADP	P---------	AdpType=Prep	49	case	_	_
+49	المسموح	مَسمُوح	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	46	amod	_	_
+50-51	به	_	_	_	_	_	_	_	_
+50	ب	بِ	ADP	P---------	AdpType=Prep	51	case	_	_
+51	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	49	obl:arg	_	_
+52-53	بموجب	_	_	_	_	_	_	_	_
+52	ب	بِ	ADP	P---------	AdpType=Prep	54	case	_	_
+53	موجب	مُوجِب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	52	fixed	_	_
+54	عقوبات	عُقُوبَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	45	obl	_	_
+55	الأمم	أُمَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	54	nmod	_	_
+56	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	55	amod	_	SpaceAfter=No
+57	.	.	PUNCT	G---------	_	8	punct	_	_
+
+# sent_id = 128
+# text = هناك مزاعم بأن إدارة بوش تلاعبت بالأدلة أو بالغت في التهديد على قدرات أسلحة الدمار الشامل العراقية، وهي من الأنتقادات التي وجهت إلى جورج بوش وإدارته.
+1	هناك	هُنَاكَ	ADV	D---------	_	0	root	_	_
+2	مزاعم	مَزعَم	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3-4	بأن	_	_	_	_	_	_	_	_
+3	ب	بِ	ADP	P---------	AdpType=Prep	7	mark	_	_
+4	أن	أَنَّ	SCONJ	C---------	_	7	mark	_	_
+5	إدارة	إِدَارَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	7	nsubj	_	_
+6	بوش	بُوش	X	X---------	Foreign=Yes	5	nmod	_	_
+7	تلاعبت	تَلَاعَب	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	ccomp	_	_
+8	بالأدلة	لَأدلَة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	7	obj	_	_
+9	أو	أَو	CCONJ	C---------	_	10	cc	_	_
+10	بالغت	بَالَغ	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	7	conj	_	_
+11	في	فِي	ADP	P---------	AdpType=Prep	12	case	_	_
+12	التهديد	تَهدِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	obl:arg	_	_
+13	على	عَلَى	ADP	P---------	AdpType=Prep	14	case	_	_
+14	قدرات	قُدرَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	12	nmod	_	_
+15	أسلحة	سِلَاح	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	14	nmod	_	_
+16	الدمار	دَمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+17	الشامل	شَامِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	16	amod	_	_
+18	العراقية	عِرَاقِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+19	،	،	PUNCT	G---------	_	18	punct	_	_
+20-21	وهي	_	_	_	_	_	_	_	_
+20	و	وَ	CCONJ	C---------	_	23	cc	_	_
+21	هي	هُوَ	PRON	SP---3FS1-	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
+22	من	مِن	ADP	P---------	AdpType=Prep	23	case	_	_
+23	الأنتقادات	اِنتِقَاد	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	conj	_	_
+24	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	25	nsubj:pass	_	_
+25	وجهت	وَجَّه	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	23	acl:relcl	_	_
+26	إلى	إِلَى	ADP	P---------	AdpType=Prep	27	case	_	_
+27	جورج	جُورج	X	X---------	Foreign=Yes	25	obl:arg	_	_
+28	بوش	بُوش	X	X---------	Foreign=Yes	27	flat:foreign	_	_
+29-31	وإدارته	_	_	_	_	_	_	_	SpaceAfter=No
+29	و	وَ	CCONJ	C---------	_	30	cc	_	_
+30	إدارة	إِدَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	conj	_	_
+31	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	nmod	_	_
+32	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 129
+# text = في أواخر عام 2002 وأوائل عام 2003، حث بوش الأمم المتحدة على تنفيذ التزامات لنزع سلاح العراق، مما ادى لأشتعال أزمة دبلوماسية عرفت باسم أزمة نزع سلاح العراق.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	أواخر	آخِر	ADJ	A-----MP2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Plur	9	obl	_	_
+3	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+4	2002	2002	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+5	وأوائل	وأَوِيلَة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	2	nmod	_	_
+6	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+7	2003	2003	NUM	Q---------	NumForm=Digit	6	nummod	_	SpaceAfter=No
+8	،	،	PUNCT	G---------	_	7	punct	_	_
+9	حث	حَثّ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+10	بوش	بُوش	X	X---------	Foreign=Yes	9	nsubj	_	_
+11	الأمم	أُمَّة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	9	obj	_	_
+12	المتحدة	مُتَّحِد	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	11	amod	_	_
+13	على	عَلَى	ADP	P---------	AdpType=Prep	14	case	_	_
+14	تنفيذ	تَنفِيذ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	9	obl:arg	_	_
+15	التزامات	اِلتِزَام	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	14	nmod	_	_
+16-17	لنزع	_	_	_	_	_	_	_	_
+16	ل	لِ	ADP	P---------	AdpType=Prep	17	case	_	_
+17	نزع	نَزع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	15	nmod	_	_
+18	سلاح	سِلَاح	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	17	nmod	_	_
+19	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	SpaceAfter=No
+20	،	،	PUNCT	G---------	_	19	punct	_	_
+21	مما	مِمَّا	CCONJ	C---------	_	22	cc	_	_
+22	ادى	أَدَّى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	conj	_	_
+23	لأشتعال	لِأَشتعال	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	22	obj	_	_
+24	أزمة	أَزمَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	23	nmod	_	_
+25	دبلوماسية	دِبلُومَاسِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	24	amod	_	_
+26	عرفت	عَرَف	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	24	acl	_	_
+27-28	باسم	_	_	_	_	_	_	_	_
+27	ب	بِ	ADP	P---------	AdpType=Prep	28	case	_	_
+28	اسم	اِسم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	26	obl:arg	_	_
+29	أزمة	أَزمَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	28	nmod	_	_
+30	نزع	نَزع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	29	nmod	_	_
+31	سلاح	سِلَاح	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	30	nmod	_	_
+32	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	31	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	G---------	_	9	punct	_	_
+
+# sent_id = 130
+# text = وفي نوفمبر 2002 ، قاد هانز بليكس ومحمد البرادعي فريقًا من مفتشي الأسلحة التابعين للأمم المتحدة في العراق، لكن الولايات المتحدة نصحتهم بمغادرة البلاد قبل أربعة أيام من الغزو الأمريكي بالرغم من مطالبهم بالمزيد من الوقت لإكمال مهامهم.
+1-2	وفي	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	نوفمبر	نُوفِمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+4	2002	2002	NUM	Q---------	NumForm=Digit	3	nummod	_	_
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	قاد	قَاد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+7	هانز	هَانِز	X	X---------	Foreign=Yes	8	nmod	_	_
+8	بليكس	بليكس	X	X---------	Foreign=Yes	6	nsubj	_	_
+9-10	ومحمد	_	_	_	_	_	_	_	_
+9	و	وَ	CCONJ	C---------	_	11	cc	_	_
+10	محمد	مُحَمَّد	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	11	nmod	_	_
+11	البرادعي	البرادعي	X	U---------	_	8	conj	_	_
+12	فريقًا	فَرِيق	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+13	من	مِن	ADP	P---------	AdpType=Prep	14	case	_	_
+14	مفتشي	مُفَتِّش	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	12	nmod	_	_
+15	الأسلحة	سِلَاح	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	14	nmod	_	_
+16	التابعين	تَابِع	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	15	amod	_	_
+17-18	للأمم	_	_	_	_	_	_	_	_
+17	ل	لِ	ADP	P---------	AdpType=Prep	18	case	_	_
+18	الأمم	أُمَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	obl:arg	_	_
+19	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	_
+20	في	فِي	ADP	P---------	AdpType=Prep	21	case	_	_
+21	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	obl	_	SpaceAfter=No
+22	،	،	PUNCT	G---------	_	21	punct	_	_
+23	لكن	لٰكِنَّ	CCONJ	C---------	_	26	cc	_	_
+24	الولايات	وِلَايَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	26	nsubj	_	_
+25	المتحدة	مُتَّحِد	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	24	amod	_	_
+26	نصحتهم	نصحتهم	VERB	U---------	_	6	conj	_	_
+27-28	بمغادرة	_	_	_	_	_	_	_	_
+27	ب	بِ	ADP	P---------	AdpType=Prep	28	case	_	_
+28	مغادرة	مُغَادَرَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	26	obl:arg	_	_
+29	البلاد	بَلَد	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	28	nmod	_	_
+30	قبل	قَبلَ	ADP	PI------4-	AdpType=Prep|Case=Acc	31	case	_	_
+31	أربعة	أَربَعَة	NUM	QV----M-2R	Case=Gen|Definite=Cons|Gender=Masc|NumForm=Word|NumValue=3	28	obl	_	_
+32	أيام	يَوم	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	31	nmod	_	_
+33	من	مِن	ADP	P---------	AdpType=Prep	34	case	_	_
+34	الغزو	غَزو	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	31	nmod	_	_
+35	الأمريكي	أَمرِيكِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	34	amod	_	_
+36-37	بالرغم	_	_	_	_	_	_	_	_
+36	ب	بِ	ADP	P---------	AdpType=Prep	39	case	_	_
+37	الرغم	رَغم	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	36	fixed	_	_
+38	من	مِن	ADP	P---------	AdpType=Prep	36	fixed	_	_
+39-41	مطالبهم	_	_	_	_	_	_	_	_
+39	م	َم	DET	S---------	_	26	obl	_	_
+40	طالب	طَالَب	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	39	acl	_	_
+41	هم	هُوَ	PRON	SP---3MP4-	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	40	obj	_	_
+42-43	بالمزيد	_	_	_	_	_	_	_	_
+42	ب	بِ	ADP	P---------	AdpType=Prep	43	case	_	_
+43	المزيد	مَزِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	40	obl:arg	_	_
+44	من	مِن	ADP	P---------	AdpType=Prep	45	case	_	_
+45	الوقت	وَقت	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	nmod	_	_
+46	لإكمال	لِإكمَال	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	40	obj	_	_
+47-48	مهامهم	_	_	_	_	_	_	_	SpaceAfter=No
+47	مهام	مَهَمَّة	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	46	nmod	_	_
+48	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	47	nmod	_	_
+49	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 131
+# text = سعت الولايات المتحدة في البداية إلى إصدار قرار من مجلس الأمن الدولي يجيز استخدام القوة العسكرية لكنها تخلت عن محاولة الحصول على موافقة الأمم المتحدة بسبب المعارضة الشديدة من عدة دول.
+1	سعت	سَعَى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	الولايات	وِلَايَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+3	المتحدة	مُتَّحِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
+5	البداية	بِدَايَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl	_	_
+6	إلى	إِلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	إصدار	إِصدَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+8	قرار	قَرَار	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	7	nmod	_	_
+9	من	مِن	ADP	P---------	AdpType=Prep	10	case	_	_
+10	مجلس	مَجلِس	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	nmod	_	_
+11	الأمن	أَمن	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	_
+12	الدولي	دُوَلِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	10	amod	_	_
+13	يجيز	أَجَاز	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	acl	_	_
+14	استخدام	اِستِخدَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	13	obj	_	_
+15	القوة	قُوَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
+16	العسكرية	عَسكَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	_
+17-18	لكنها	_	_	_	_	_	_	_	_
+17	لٰكن	لٰكِنَّ	CCONJ	C---------	_	19	cc	_	_
+18	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	تخلت	تَخَلَّى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+20	عن	عَن	ADP	P---------	AdpType=Prep	21	case	_	_
+21	محاولة	مُحَاوَلَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	obl:arg	_	_
+22	الحصول	حُصُول	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	nmod	_	_
+23	على	عَلَى	ADP	P---------	AdpType=Prep	24	case	_	_
+24	موافقة	مُوَافَقَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	obl:arg	_	_
+25	الأمم	أُمَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	24	nmod	_	_
+26	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	25	amod	_	_
+27-28	بسبب	_	_	_	_	_	_	_	_
+27	ب	بِ	ADP	P---------	AdpType=Prep	29	case	_	_
+28	سبب	سَبَب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	fixed	_	_
+29	المعارضة	مُعَارَضَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	obl	_	_
+30	الشديدة	شَدِيد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	29	amod	_	_
+31	من	مِن	ADP	P---------	AdpType=Prep	32	case	_	_
+32	عدة	عِدَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	29	nmod	_	_
+33	دول	دَولَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	32	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 132
+# text = ادعاء إدارة بوش بأن حرب العراق كانت جزءًا من الحرب على الإرهاب كان موضع تساؤل وطعن من قبل المحللين السياسيين.
+1	ادعاء	اِدِّعَاء	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	0	root	_	_
+2	إدارة	إِدَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	nmod	_	_
+3	بوش	بُوش	X	X---------	Foreign=Yes	2	nmod	_	_
+4-5	بأن	_	_	_	_	_	_	_	_
+4	ب	بِ	ADP	P---------	AdpType=Prep	15	case	_	_
+5	أن	أَنَّ	SCONJ	C---------	_	9	mark	_	_
+6	حرب	حَرب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	9	nsubj	_	_
+7	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	كانت	كَان	AUX	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	9	cop	_	_
+9	جزءًا	جُزء	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	1	ccomp	_	_
+10	من	مِن	ADP	P---------	AdpType=Prep	11	case	_	_
+11	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+12	على	عَلَى	ADP	P---------	AdpType=Prep	13	case	_	_
+13	الإرهاب	إِرهَاب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	nmod	_	_
+14	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	15	cop	_	_
+15	موضع	مَوضِع	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	ccomp	_	_
+16	تساؤل	تَسَاؤُل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	15	nmod	_	_
+17	وطعن	وطعن	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	16	amod	_	_
+18	من	مِن	ADP	P---------	AdpType=Prep	20	case	_	_
+19	قبل	قِبَل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	18	fixed	_	_
+20	المحللين	مُحَلِّل	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	15	obl	_	_
+21	السياسيين	سِيَاسِيّ	ADJ	A-----MP2D	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	20	amod	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 133
+# text = انضمت أكثر من 20 دولة (أبرزها المملكة المتحدة) التي صنفت على أنها (من القوات متعددة الجنسيات في العراق) إلى الولايات المتحدة في غزو العراق.
 1	انضمت	اِنضَمّ	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	أكثر	أَكثَر	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	nsubj	_	_
 3	من	مِن	ADP	P---------	AdpType=Prep	4	case	_	_
 4	20	20	NUM	Q---------	NumForm=Digit	2	nummod	_	_
 5	دولة	دَولَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	nmod	_	_
-6	أخرى	آخَر	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	5	amod	_	_
-7	إلى	إِلَى	ADP	P---------	AdpType=Prep	8	case	_	_
-8	مساعي	مَسعَى	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	1	obl:arg	_	_
-9	بوش	بُوش	X	X---------	Foreign=Yes	8	nmod	_	_
-10	(	(	PUNCT	G---------	_	11	punct	_	SpaceAfter=No
-11-12	أبرزها	_	_	_	_	_	_	_	_
-11	أبرز	أَبرَز	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	8	amod	_	_
-12	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	nmod	_	_
-13	المملكة	مَملَكَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	11	nsubj	_	_
-14	المتحدة	مُتَّحِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	13	amod	_	_
-15-16	وأستراليا	_	_	_	_	_	_	_	SpaceAfter=No
-15	و	وَ	CCONJ	C---------	_	16	cc	_	_
-16	أستراليا	أُستُرَالِيَا	X	X---------	Foreign=Yes	13	conj	_	_
-17	)	)	PUNCT	G---------	_	11	punct	_	SpaceAfter=No
-18	.	.	PUNCT	G---------	_	1	punct	_	_
+6	(	(	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
+7-8	أبرزها	_	_	_	_	_	_	_	_
+7	أبرز	أَبرَز	ADJ	A-----MS1R	Case=Nom|Definite=Cons|Gender=Masc|Number=Sing	5	appos	_	_
+8	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
+9	المملكة	مَملَكَة	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	7	nsubj	_	_
+10	المتحدة	مُتَّحِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No
+11	)	)	PUNCT	G---------	_	7	punct	_	_
+12	التي	اَلَّذِي	DET	SR----FS1-	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	_	_
+13-14	صنفت	_	_	_	_	_	_	_	_
+13	ص	َصّ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	9	acl:relcl	_	_
+14	نفت	نَفَى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	xcomp	_	_
+15	على	عَلَى	ADP	P---------	AdpType=Prep	20	case	_	_
+16-17	أنها	_	_	_	_	_	_	_	_
+16	أن	أَنَّ	SCONJ	C---------	_	20	mark	_	_
+17	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+18	(	(	PUNCT	G---------	_	20	punct	_	SpaceAfter=No
+19	من	مِن	ADP	P---------	AdpType=Prep	20	case	_	_
+20	القوات	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	17	obl	_	_
+21	متعددة	مُتَعَدِّد	ADJ	A-----FS2R	Case=Gen|Definite=Cons|Gender=Fem|Number=Sing	20	amod	_	_
+22	الجنسيات	جِنسِيّ	ADJ	A-----FP2D	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	21	amod	_	_
+23	في	فِي	ADP	P---------	AdpType=Prep	24	case	_	_
+24	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	SpaceAfter=No
+25	)	)	PUNCT	G---------	_	20	punct	_	_
+26	إلى	إِلَى	ADP	P---------	AdpType=Prep	27	case	_	_
+27	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	1	obl:arg	_	_
+28	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	27	amod	_	_
+29	في	فِي	ADP	P---------	AdpType=Prep	30	case	_	_
+30	غزو	غَزو	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+31	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 3
-# text = بدأت حرب العراق في 20 مارس 2003، بحجة تخليص العراق من أسلحة الدمار الشامل التي ثبت بطلانها وإزالة صدام حسين من السلطة، لقد دمر العراق من اجل النفط العراقي ولمساندة إسرائيل للتخلص من نظام صدام حسين المعادي لإسرائيل، دمر دولة بأكملها وقتل الكثير من الشعب العراقي والجيش الأمريكي ودمر البنية التحتية في العراق وادخل تنظيم القاعدة وأدخل الطائفية لكي يجعل البلاد تتجه إلى حرب أهلية عام 2007 وجعل البلاد تنحدر إلى الأسوء.
-1	بدأت	بَدَأ	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	0	root	_	_
-2	حرب	حَرب	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
-3	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
-4	في	فِي	ADP	P---------	AdpType=Prep	5	case	_	_
-5	20	20	NUM	Q---------	NumForm=Digit	1	obl	_	_
-6	مارس	مَارِس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	nmod	_	_
-7	2003	2003	NUM	Q---------	NumForm=Digit	6	nummod	_	SpaceAfter=No
-8	،	،	PUNCT	G---------	_	7	punct	_	_
-9-10	بحجة	_	_	_	_	_	_	_	_
+# sent_id = 134
+# text = بدأ الغزو في 20 مارس 2003، وسرعان ما هزم الجيش العراقي، وسقطت العاصمة بغداد في 9 أبريل 2003.
+1	بدأ	بَدَأ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	الغزو	غَزو	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	في	فِي	ADP	P---------	AdpType=Prep	4	case	_	_
+4	20	20	NUM	Q---------	NumForm=Digit	1	obl	_	_
+5	مارس	مَارِس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	nmod	_	_
+6	2003	2003	NUM	Q---------	NumForm=Digit	5	nummod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8-9	وسرعان	_	_	_	_	_	_	_	_
+8	و	وَ	CCONJ	C---------	_	11	cc	_	_
+9	سرعان	سُرعَانَ	ADV	D---------	_	11	mark	_	_
+10	ما	مَا	DET	S---------	_	11	obl	_	_
+11	هزم	هَزَم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+12	الجيش	جَيش	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	11	nsubj	_	_
+13	العراقي	عِرَاقِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No
+14	،	،	PUNCT	G---------	_	13	punct	_	_
+15	وسقطت	وسقطت	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+16	العاصمة	عَاصِمَة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	15	obj	_	_
+17	بغداد	بَغدَاد	NOUN	U---------	_	16	nmod	_	_
+18	في	فِي	ADP	P---------	AdpType=Prep	19	case	_	_
+19	9	9	NUM	Q---------	NumForm=Digit	15	obl	_	_
+20	أبريل	أَبرِيل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	19	nmod	_	_
+21	2003	2003	NUM	Q---------	NumForm=Digit	20	nummod	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 135
+# text = وفي 1 مايو أعلن بوش انتهاء العمليات القتالية الرئيسية في العراق.
+1-2	وفي	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	في	فِي	ADP	P---------	AdpType=Prep	3	case	_	_
+3	1	1	NUM	Q---------	NumForm=Digit	5	obl	_	_
+4	مايو	مَايُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	3	nmod	_	_
+5	أعلن	أَعلَن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+6	بوش	بُوش	X	X---------	Foreign=Yes	5	nsubj	_	_
+7	انتهاء	اِنتِهَاء	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	5	obj	_	_
+8	العمليات	عَمَلِيَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	nmod	_	_
+9	القتالية	قِتَالِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	8	amod	_	_
+10	الرئيسية	رَئِيسِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	8	amod	_	_
+11	في	فِي	ADP	P---------	AdpType=Prep	12	case	_	_
+12	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 136
+# text = أدى النجاح الأولي للعمليات الأمريكية إلى زيادة شعبيته، لكن الولايات المتحدة والقوات المتحالفة معها واجهت تمردًا متزايدًا بقيادة الجماعات الطائفية؛
+1	أدى	أَدَّى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	النجاح	نَجَاح	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	1	nsubj	_	_
+3	الأولي	أَوَّل	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	amod	_	_
+4	للعمليات	عَمَلِيَّة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	1	obj	_	_
+5	الأمريكية	أَمرِيكِيّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	_
+6	إلى	إِلَى	ADP	P---------	AdpType=Prep	7	case	_	_
+7	زيادة	زِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl:arg	_	_
+8-9	شعبيته	_	_	_	_	_	_	_	SpaceAfter=No
+8	شعبية	شَعبِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	nmod	_	_
+9	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
+10	،	،	PUNCT	G---------	_	9	punct	_	_
+11	لكن	لٰكِنَّ	CCONJ	C---------	_	19	cc	_	_
+12	الولايات	وِلَايَة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	19	nsubj	_	_
+13	المتحدة	مُتَّحِد	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	_
+14-15	والقوات	_	_	_	_	_	_	_	_
+14	و	وَ	CCONJ	C---------	_	15	cc	_	_
+15	القوات	قُوَّة	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	12	conj	_	_
+16	المتحالفة	مُتَحَالِف	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	_
+17-18	معها	_	_	_	_	_	_	_	_
+17	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	18	case	_	_
+18	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	nmod	_	_
+19	واجهت	وَاجَه	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	conj	_	_
+20	تمردًا	تَمَرُّد	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+21	متزايدًا	مُتَزَايِد	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	20	amod	_	_
+22-23	بقيادة	_	_	_	_	_	_	_	_
+22	ب	بِ	ADP	P---------	AdpType=Prep	23	case	_	_
+23	قيادة	قِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+24	الجماعات	جَمَاعَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	23	nmod	_	_
+25	الطائفية	طَائِفِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
+26	؛	؛	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 137
+# text = وانتُقد خطاب بوش الذي سماه (المهمة أنجزت) في وقت لاحق ووُصف بأنه سابق لأوانه.
+1	وانتُقد	وانتُقد	X	U---------	_	0	root	_	_
+2	خطاب	خِطَاب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	1	obj	_	_
+3	بوش	بُوش	X	X---------	Foreign=Yes	2	nmod	_	_
+4	الذي	اَلَّذِي	DET	U---------	_	5	nsubj	_	_
+5	سماه	سَمَاه	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	2	acl:relcl	_	_
+6	(	(	PUNCT	G---------	_	7	punct	_	SpaceAfter=No
+7	المهمة	مَهَمَّة	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	5	obj	_	_
+8	أنجزت	أَنجَز	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	5	xcomp	_	SpaceAfter=No
+9	)	)	PUNCT	G---------	_	8	punct	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
+11	وقت	وَقت	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
+12	لاحق	لَاحِق	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	amod	_	_
+13	ووُصف	ووُصف	X	U---------	_	2	acl	_	_
+14-16	بأنه	_	_	_	_	_	_	_	_
+14	ب	بِ	ADP	P---------	AdpType=Prep	17	case	_	_
+15	أن	أَنَّ	SCONJ	C---------	_	17	mark	_	_
+16	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	سابق	سَابِق	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	13	obl:arg	_	_
+18	لأوانه	لأوانه	NOUN	U---------	_	17	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 138
+# text = من عام 2004 حتى عام 2007، تدهور الوضع في العراق أكثر، إذ قال بعض المراقبين إن هناك حربًا أهلية واسعة النطاق في العراق.
+1	من	مِن	ADP	P---------	AdpType=Prep	2	case	_	_
+2	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	obl	_	_
+3	2004	2004	NUM	Q---------	NumForm=Digit	2	nummod	_	_
+4	حتى	حَتَّى	ADP	P---------	AdpType=Prep	5	case	_	_
+5	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	obl	_	_
+6	2007	2007	NUM	Q---------	NumForm=Digit	5	nummod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	تدهور	تَدَهوُر	NOUN	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+9	الوضع	وَضع	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	8	nsubj	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	11	case	_	_
+11	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+12	أكثر	أَكثَر	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+13	،	،	PUNCT	G---------	_	12	punct	_	_
+14	إذ	إِذ	CCONJ	C---------	_	15	mark	_	_
+15	قال	قَال	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	8	advcl	_	_
+16	بعض	بَعض	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	15	nsubj	_	_
+17	المراقبين	مُرَاقِب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	nmod	_	_
+18	إن	إِنَّ	SCONJ	C---------	_	19	mark	_	_
+19	هناك	هُنَاكَ	ADV	D---------	_	15	obj	_	_
+20	حربًا	حَرب	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	19	nsubj	_	_
+21	أهلية	أَهلِيّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	20	amod	_	_
+22	واسعة	وَاسِع	ADJ	A-----FS4R	Case=Acc|Definite=Cons|Gender=Fem|Number=Sing	20	amod	_	_
+23	النطاق	نِطَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
+24	في	فِي	ADP	P---------	AdpType=Prep	25	case	_	_
+25	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	19	obl	_	SpaceAfter=No
+26	.	.	PUNCT	G---------	_	8	punct	_	_
+
+# sent_id = 139
+# text = قوبلت سياسات بوش بالنقد، بما في ذلك المطالب المحلية بوضع جدول زمني لسحب القوات من العراق.
+1	قوبلت	قَابَل	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	0	root	_	_
+2	سياسات	سِيَاسَة	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	1	nsubj	_	_
+3	بوش	بُوش	X	X---------	Foreign=Yes	2	nmod	_	_
+4-5	بالنقد	_	_	_	_	_	_	_	SpaceAfter=No
+4	ب	بِ	ADP	P---------	AdpType=Prep	5	case	_	_
+5	النقد	نَقد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	1	obl:arg	_	_
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7-8	بما	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	5	case	_	_
+8	ما	مَا	DET	S---------	_	2	det	_	_
+9	في	فِي	ADP	P---------	AdpType=Prep	7	fixed	_	_
+10	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	8	obl	_	_
+11	المطالب	مَطلَب	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	1	nsubj	_	_
+12	المحلية	مَحَلِّيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	11	amod	_	_
+13-14	بوضع	_	_	_	_	_	_	_	_
+13	ب	بِ	ADP	P---------	AdpType=Prep	14	case	_	_
+14	وضع	وَضع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	nmod	_	_
+15	جدول	جَدوَل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	14	nmod	_	_
+16	زمني	زَمَنِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	15	amod	_	_
+17-18	لسحب	_	_	_	_	_	_	_	_
+17	ل	لِ	ADP	P---------	AdpType=Prep	18	case	_	_
+18	سحب	سَحب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	15	nmod	_	_
+19	القوات	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	18	nmod	_	_
+20	من	مِن	ADP	P---------	AdpType=Prep	21	case	_	_
+21	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 140
+# text = خلص تقرير 2006 صدر عن مجموعة دراسة العراق بقيادة جيمس بيكر إلى أن الوضع في العراق "خطير ومتدهور".
+1	خلص	خَلَص	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	تقرير	تَقرِير	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	1	nsubj	_	_
+3	2006	2006	NUM	Q---------	NumForm=Digit	2	nummod	_	_
+4	صدر	صَدَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	2	acl	_	_
+5	عن	عَن	ADP	P---------	AdpType=Prep	6	case	_	_
+6	مجموعة	مَجمُوعَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	4	obl:arg	_	_
+7	دراسة	دِرَاسَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	nmod	_	_
+8	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9-10	بقيادة	_	_	_	_	_	_	_	_
 9	ب	بِ	ADP	P---------	AdpType=Prep	10	case	_	_
-10	حجة	حُجَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
-11	تخليص	تَخلِيص	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	10	nmod	_	_
-12	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	nmod	_	_
-13	من	مِن	ADP	P---------	AdpType=Prep	14	case	_	_
-14	أسلحة	سِلَاح	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	11	nmod	_	_
-15	الدمار	دَمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	14	nmod	_	_
-16	الشامل	شَامِل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	15	amod	_	_
-17	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	18	nsubj	_	_
-18	ثبت	ثَبَّت	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	14	acl:relcl	_	_
-19-20	بطلانها	_	_	_	_	_	_	_	_
-19	بطلان	بُطلَان	NOUN	N------P1R	Case=Nom|Definite=Cons|Number=Plur	18	obj	_	_
-20	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nmod	_	_
-21-22	وإزالة	_	_	_	_	_	_	_	_
-21	و	وَ	CCONJ	C---------	_	22	cc	_	_
-22	إزالة	إِزَالَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	conj	_	_
-23	صدام	صدام	X	U---------	_	24	nmod	_	_
-24	حسين	حسين	X	U---------	_	22	nmod	_	_
-25	من	مِن	ADP	P---------	AdpType=Prep	26	case	_	_
-26	السلطة	سُلطَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	SpaceAfter=No
-27	،	،	PUNCT	G---------	_	26	punct	_	_
-28	لقد	لقد	X	U---------	_	29	obl	_	_
-29	دمر	دَمَّر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
-30	العراق	عِرَاق	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	29	nsubj	_	_
-31	من	مِن	ADP	P---------	AdpType=Prep	33	case	_	_
-32	اجل	أَجل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	31	fixed	_	_
-33	النفط	نَفط	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	29	obl	_	_
-34	العراقي	عِرَاقِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	33	amod	_	_
-35	ولمساندة	ولمساندة	X	U---------	_	29	obj	_	_
-36	إسرائيل	إِسرَائِيل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	35	nmod	_	_
-37-38	للتخلص	_	_	_	_	_	_	_	_
-37	ل	لِ	ADP	P---------	AdpType=Prep	38	case	_	_
-38	التخلص	تَخَلُّص	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	35	obl	_	_
-39	من	مِن	ADP	P---------	AdpType=Prep	40	case	_	_
-40	نظام	نِظَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	38	nmod	_	_
-41	صدام	صدام	X	U---------	_	42	nmod	_	_
-42	حسين	حسين	X	U---------	_	40	nmod	_	_
-43	المعادي	مَعَادِي	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	40	amod	_	_
-44-45	لإسرائيل	_	_	_	_	_	_	_	SpaceAfter=No
-44	ل	لِ	ADP	P---------	AdpType=Prep	45	case	_	_
-45	إسرائيل	إِسرَائِيل	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	43	obl:arg	_	_
-46	،	،	PUNCT	G---------	_	45	punct	_	_
-47	دمر	دَمَّر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	conj	_	_
-48	دولة	دَولَة	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	47	obj	_	_
-49-51	بأكملها	_	_	_	_	_	_	_	_
-49	ب	بِ	ADP	P---------	AdpType=Prep	50	case	_	_
-50	أكمل	أَكمَل	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	47	obl	_	_
-51	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	50	nmod	_	_
-52-53	وقتل	_	_	_	_	_	_	_	_
-52	و	وَ	CCONJ	C---------	_	53	cc	_	_
-53	قتل	قَتل	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	47	conj	_	_
-54	الكثير	كَثِير	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	53	amod	_	_
-55	من	مِن	ADP	P---------	AdpType=Prep	56	case	_	_
-56	الشعب	شَعب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	54	nmod	_	_
-57	العراقي	عِرَاقِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	56	amod	_	_
-58-59	والجيش	_	_	_	_	_	_	_	_
-58	و	وَ	CCONJ	C---------	_	59	cc	_	_
-59	الجيش	جَيش	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	56	conj	_	_
-60	الأمريكي	أَمرِيكِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	59	amod	_	_
-61-62	ودمر	_	_	_	_	_	_	_	_
-61	و	وَ	CCONJ	C---------	_	62	cc	_	_
-62	دمر	دَمر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	47	conj	_	_
-63	البنية	بِنيَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	62	nmod	_	_
-64	التحتية	تَحتِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	63	amod	_	_
-65	في	فِي	ADP	P---------	AdpType=Prep	66	case	_	_
-66	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	63	nmod	_	_
-67	وادخل	وادخل	X	U---------	_	62	nmod	_	_
-68	تنظيم	تَنظِيم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	67	nmod	_	_
-69	القاعدة	قَاعِدَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	68	nmod	_	_
-70	وأدخل	وأدخل	X	U---------	_	67	conj	_	_
-71	الطائفية	طَائِفِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	70	amod	_	_
-72	لكي	لِكَي	CCONJ	C---------	_	73	mark	_	_
-73	يجعل	جَعَل	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	67	advcl	_	_
-74	البلاد	بَلَد	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	73	nsubj	_	_
-75	تتجه	اِتَّجَه	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	73	xcomp	_	_
-76	إلى	إِلَى	ADP	P---------	AdpType=Prep	77	case	_	_
-77	حرب	حَرب	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	75	obl:arg	_	_
-78	أهلية	أَهلِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	77	amod	_	_
-79	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	75	obl	_	_
-80	2007	2007	NUM	Q---------	NumForm=Digit	79	nummod	_	_
-81-82	وجعل	_	_	_	_	_	_	_	_
-81	و	وَ	CCONJ	C---------	_	82	cc	_	_
-82	جعل	جَعَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	73	conj	_	_
-83	البلاد	بَلَد	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	82	nsubj	_	_
-84	تنحدر	اِنحَدَر	VERB	VIIA-3FS--	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	82	ccomp	_	_
-85	إلى	إِلَى	ADP	P---------	AdpType=Prep	86	case	_	_
-86	الأسوء	أُسوء	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	84	obl:arg	_	SpaceAfter=No
-87	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+10	قيادة	قِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	nmod	_	_
+11	جيمس	جِيمس	X	X---------	Foreign=Yes	10	nmod	_	_
+12	بيكر	بَيكِر	X	X---------	Foreign=Yes	11	flat:foreign	_	_
+13	إلى	إِلَى	ADP	P---------	AdpType=Prep	19	case	_	_
+14	أن	أَنَّ	SCONJ	C---------	_	19	mark	_	_
+15	الوضع	وَضع	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	19	nsubj	_	_
+16	في	فِي	ADP	P---------	AdpType=Prep	17	case	_	_
+17	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+18	"	"	PUNCT	G---------	_	19	punct	_	SpaceAfter=No
+19	خطير	خَطِير	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	obl:arg	_	_
+20	ومتدهور	ومتدهور	NOUN	U---------	_	19	nmod	_	SpaceAfter=No
+21	"	"	PUNCT	G---------	_	19	punct	_	SpaceAfter=No
+22	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
+# sent_id = 141
+# text = وبينما اعترف بوش بوقوع أخطاء إستراتيجية فيما يتعلق باستقرار العراق، أكد أنه لن يغير الإستراتيجية الشاملة للعراق.
+1-2	وبينما	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	بينما	بَينَمَا	CCONJ	C---------	_	3	mark	_	_
+3	اعترف	اِعتَرَف	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	13	advcl	_	_
+4	بوش	بُوش	X	X---------	Foreign=Yes	3	nsubj	_	_
+5	بوقوع	بَوقوِع	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	3	obj	_	_
+6	أخطاء	خَطَأ	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	5	nmod	_	_
+7	إستراتيجية	إِسترَاتِيجِيّ	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	6	amod	_	_
+8	فيما	فِيمَا	CCONJ	C---------	_	9	mark	_	_
+9	يتعلق	تَعَلَّق	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	acl	_	_
+10	باستقرار	بِاستِقرَار	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	9	obj	_	_
+11	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	SpaceAfter=No
+12	،	،	PUNCT	G---------	_	11	punct	_	_
+13	أكد	أَكَّد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+14-15	أنه	_	_	_	_	_	_	_	_
+14	أن	أَنَّ	SCONJ	C---------	_	17	mark	_	_
+15	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+16	لن	لَن	PART	F---------	_	17	advmod	_	_
+17	يغير	غَيَّر	VERB	VISA-3MS--	Aspect=Imp|Gender=Masc|Mood=Sub|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	13	ccomp	_	_
+18	الإستراتيجية	إِسترَاتِيجِيّ	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	17	obj	_	_
+19	الشاملة	شَامِل	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	18	amod	_	_
+20-21	للعراق	_	_	_	_	_	_	_	SpaceAfter=No
+20	ل	لِ	ADP	P---------	AdpType=Prep	21	case	_	_
+21	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	nmod	_	_
+22	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 142
+# text = وفقًا مشروع إحصاء الجثث في العراق ، قُتل حوالي 251 ألف عراقي في الحرب الأهلية التي أعقبت الغزو الذي قادته الولايات المتحدة من بينهم ما لا يقل عن 163,841 مدنيًا.
+1	وفقًا	وِفق	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	2	nmod	_	_
+2	مشروع	مَشرُوع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	obl	_	_
+3	إحصاء	إِحصَاء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+4	الجثث	جُثَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	3	nmod	_	_
+5	في	فِي	ADP	P---------	AdpType=Prep	6	case	_	_
+6	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	قُتل	قَُتَل	VERB	VP-P-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Pass	0	root	_	_
+9	حوالي	حَوَالَى	ADP	P---------	AdpType=Prep	10	case	_	_
+10	251	251	NUM	Q---------	NumForm=Digit	8	obl:arg	_	_
+11	ألف	أَلف	NUM	QM-----S4R	Case=Acc|Definite=Cons|Number=Sing|NumForm=Word	10	nummod	_	_
+12	عراقي	عِرَاقِيّ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	11	nmod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	obl	_	_
+15	الأهلية	أَهلِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	14	amod	_	_
+16	التي	اَلَّذِي	DET	SR----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
+17	أعقبت	أَعقَب	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	14	acl:relcl	_	_
+18	الغزو	غَزو	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	17	obj	_	_
+19	الذي	اَلَّذِي	DET	SR----MS4-	Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	_	_
+20-21	قادته	_	_	_	_	_	_	_	_
+20	قادت	قَاد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	18	acl:relcl	_	_
+21	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+22	الولايات	وِلَايَة	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	20	nsubj	_	_
+23	المتحدة	مُتَّحِد	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	22	amod	_	_
+24	من	مِن	ADP	P---------	AdpType=Prep	26	case	_	_
+25-26	بينهم	_	_	_	_	_	_	_	_
+25	بين	بَينَ	ADP	PI------2-	AdpType=Prep|Case=Gen	24	fixed	_	_
+26	هم	هُوَ	PRON	SP---3MP2-	Case=Gen|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obl	_	_
+27	ما	مَا	DET	S---------	_	26	nsubj	_	_
+28	لا	لَا	PART	F---------	_	29	advmod	_	_
+29	يقل	قَلّ	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	27	acl	_	_
+30	عن	عَن	ADP	P---------	AdpType=Prep	31	case	_	_
+31	163,841	163,841	NUM	Q---------	NumForm=Digit	29	obl:arg	_	_
+32	مدنيًا	مَدَنِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No
+33	.	.	PUNCT	G---------	_	8	punct	_	SpacesAfter=\n\n
+
 # newpar
-# sent_id = 1
+# sent_id = 143
+# text = في يناير عام 2005، أجريت انتخابات اعتبرها الغرب حرة ونزيهة في العراق لأول مرة منذ 50 عامًا.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	يناير	يَنَايِر	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+3	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+4	2005	2005	NUM	Q---------	NumForm=Digit	3	nummod	_	SpaceAfter=No
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	أجريت	أَجرَى	VERB	VP-P-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Pass	0	root	_	_
+7	انتخابات	اِنتِخَاب	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	6	nsubj:pass	_	_
+8-9	اعتبرها	_	_	_	_	_	_	_	_
+8	اعتبر	اِعتَبَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	7	acl	_	_
+9	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	الغرب	غَرب	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	8	nsubj	_	_
+11	حرة	حُرّ	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	8	xcomp	_	_
+12	ونزيهة	ونزيهة	ADJ	A-----FS4I	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	11	amod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	obl	_	_
+15-16	لأول	_	_	_	_	_	_	_	_
+15	ل	لِ	ADP	P---------	AdpType=Prep	16	case	_	_
+16	أول	أَوَّل	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	8	obl	_	_
+17	مرة	مَرَّة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	16	nmod	_	_
+18	منذ	مُنذُ	ADP	P---------	AdpType=Prep	19	case	_	_
+19	50	50	NUM	Q---------	NumForm=Digit	16	nummod	_	_
+20	عامًا	عَام	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	19	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	G---------	_	6	punct	_	_
+
+# sent_id = 144
+# text = وأدت إلى انتخاب جلال الطالباني رئيساً ونوري المالكي رئيساً للوزراء في العراق.
+1-2	وأدت	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	أدت	أَدَّى	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3	إلى	إِلَى	ADP	P---------	AdpType=Prep	4	case	_	_
+4	انتخاب	اِنتِخَاب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl:arg	_	_
+5	جلال	جلال	X	U---------	_	6	nmod	_	_
+6	الطالباني	الطالباني	X	U---------	_	4	nmod	_	_
+7	رئيساً	رَئِيس	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	nmod	_	_
+8	ونوري	ونوري	X	U---------	_	9	nmod	_	_
+9	المالكي	المالكي	X	U---------	_	7	nmod	_	_
+10	رئيساً	رَئِيس	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	4	nmod	_	_
+11-12	للوزراء	_	_	_	_	_	_	_	_
+11	ل	لِ	ADP	P---------	AdpType=Prep	12	case	_	_
+12	الوزراء	وَزِير	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	10	nmod	_	_
+13	في	فِي	ADP	P---------	AdpType=Prep	14	case	_	_
+14	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	10	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 145
+# text = أُجري استفتاء لإقرار دستور في العراق في أكتوبر 2005، بدعم من معظم الشيعة والعديد من الأكراد.
+1	أُجري	أَُجَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	استفتاء	اِستِفتَاء	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+3-4	لإقرار	_	_	_	_	_	_	_	_
+3	ل	لِ	ADP	P---------	AdpType=Prep	4	case	_	_
+4	إقرار	إِقرَار	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	nmod	_	_
+5	دستور	دستور	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	nmod	_	_
+6	في	فِي	ADP	P---------	AdpType=Prep	7	case	_	_
+7	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+8	في	فِي	ADP	P---------	AdpType=Prep	9	case	_	_
+9	أكتوبر	أُكتُوبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	nmod	_	_
+10	2005	2005	NUM	Q---------	NumForm=Digit	9	nummod	_	SpaceAfter=No
+11	،	،	PUNCT	G---------	_	10	punct	_	_
+12-13	بدعم	_	_	_	_	_	_	_	_
+12	ب	بِ	ADP	P---------	AdpType=Prep	13	case	_	_
+13	دعم	دَعم	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	1	obl	_	_
+14	من	مِن	ADP	P---------	AdpType=Prep	15	case	_	_
+15	معظم	مُعظَم	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	13	nmod	_	_
+16	الشيعة	شِيعَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	nmod	_	_
+17	والعديد	وَ	X	U---------	_	16	amod	_	_
+18	من	مِن	ADP	P---------	AdpType=Prep	19	case	_	_
+19	الأكراد	كُردِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 146
+# text = في 10 كانون الثاني عام 2007، أعلن بوش عن أرسال 21,500 جندي إضافي في العراق، بالإضافة إلى برنامج توظيف للعراقيين، والمزيد من مقترحات إعادة الإعمار، وتخصيص مبلغ 1.2 مليار دولار (ما يعادل 1.5 مليار دولار في عام 2020) لهذه البرامج.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	10	10	NUM	Q---------	NumForm=Digit	8	obl	_	_
+3	كانون	كَانُون	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+4	الثاني	ثَانِي	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	3	amod	_	_
+5	عام	عَام	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	2	nmod	_	_
+6	2007	2007	NUM	Q---------	NumForm=Digit	5	nummod	_	SpaceAfter=No
+7	،	،	PUNCT	G---------	_	6	punct	_	_
+8	أعلن	أَعلَن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+9	بوش	بُوش	X	X---------	Foreign=Yes	8	nsubj	_	_
+10	عن	عَن	ADP	P---------	AdpType=Prep	11	case	_	_
+11	أرسال	رُسل	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	8	obl:arg	_	_
+12	21,500	21,500	NUM	Q---------	NumForm=Digit	11	nummod	_	_
+13	جندي	جُندِيّ	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	12	nmod	_	_
+14	إضافي	إَضَافِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	13	amod	_	_
+15	في	فِي	ADP	P---------	AdpType=Prep	16	case	_	_
+16	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	11	obl	_	SpaceAfter=No
+17	،	،	PUNCT	G---------	_	16	punct	_	_
+18-19	بالإضافة	_	_	_	_	_	_	_	_
+18	ب	بِ	ADP	P---------	AdpType=Prep	21	case	_	_
+19	الإضافة	إِضَافَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	18	fixed	_	_
+20	إلى	إِلَى	ADP	P---------	AdpType=Prep	18	fixed	_	_
+21	برنامج	بَرنَامَج	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	nmod	_	_
+22	توظيف	تَوظِيف	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	21	nmod	_	_
+23-24	للعراقيين	_	_	_	_	_	_	_	SpaceAfter=No
+23	ل	لِ	ADP	P---------	AdpType=Prep	24	case	_	_
+24	العراقيين	عِرَاقِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	21	nmod	_	_
+25	،	،	PUNCT	G---------	_	24	punct	_	_
+26-27	والمزيد	_	_	_	_	_	_	_	_
+26	و	وَ	CCONJ	C---------	_	27	cc	_	_
+27	المزيد	مَزِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	21	conj	_	_
+28	من	مِن	ADP	P---------	AdpType=Prep	29	case	_	_
+29	مقترحات	مُقتَرَح	NOUN	N------P2R	Case=Gen|Definite=Cons|Number=Plur	27	nmod	_	_
+30	إعادة	إِعَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	29	nmod	_	_
+31	الإعمار	إِعمَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	SpaceAfter=No
+32	،	،	PUNCT	G---------	_	31	punct	_	_
+33-34	وتخصيص	_	_	_	_	_	_	_	_
+33	و	وَ	CCONJ	C---------	_	34	cc	_	_
+34	تخصيص	تَخصِيص	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	21	conj	_	_
+35	مبلغ	مَبلَغ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	34	nmod	_	_
+36	1.2	1.2	NUM	Q---------	NumForm=Digit	35	nummod	_	_
+37	مليار	مِليَار	NUM	QM-----S2R	Case=Gen|Definite=Cons|Number=Sing|NumForm=Word	36	nummod	_	_
+38	دولار	دُولَار	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	37	nmod	_	_
+39	(	(	PUNCT	G---------	_	40	punct	_	SpaceAfter=No
+40	ما	مَا	DET	S---------	_	36	appos	_	_
+41	يعادل	عَادَل	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	40	acl	_	_
+42	1.5	1.5	NUM	Q---------	NumForm=Digit	41	obj	_	_
+43	مليار	مِليَار	NUM	QM-----S2R	Case=Gen|Definite=Cons|Number=Sing|NumForm=Word	42	nummod	_	_
+44	دولار	دُولَار	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	43	nmod	_	_
+45	في	فِي	ADP	P---------	AdpType=Prep	46	case	_	_
+46	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	41	obl	_	_
+47	2020	2020	NUM	Q---------	NumForm=Digit	46	nummod	_	SpaceAfter=No
+48	)	)	PUNCT	G---------	_	40	punct	_	_
+49-50	لهذه	_	_	_	_	_	_	_	_
+49	ل	لِ	ADP	P---------	AdpType=Prep	51	case	_	_
+50	هٰذه	هٰذَا	DET	SD----FS2-	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	51	det	_	_
+51	البرامج	بَرنَامَج	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	34	nmod	_	SpaceAfter=No
+52	.	.	PUNCT	G---------	_	8	punct	_	_
+
+# sent_id = 147
+# text = في الأول من مايو 2007، استخدم بوش حق النقض (الفيتو) للمرة الثانية لرفض مشروع قانون يحدد موعدًا نهائيًا لانسحاب القوات الأمريكية، قائلاً إن الجدل حول الصراع كان "مفهومًا" ولكنه أصر على أن استمرار الوجود الأمريكي هناك أمر حاسم.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	الأول	أَوَّل	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	7	obl	_	_
+3	من	مِن	ADP	P---------	AdpType=Prep	4	case	_	_
+4	مايو	مَايُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+5	2007	2007	NUM	Q---------	NumForm=Digit	4	nummod	_	SpaceAfter=No
+6	،	،	PUNCT	G---------	_	5	punct	_	_
+7	استخدم	اِستَخدَم	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+8	بوش	بُوش	X	X---------	Foreign=Yes	7	nsubj	_	_
+9	حق	حَقّ	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	7	obj	_	_
+10	النقض	نَقض	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	9	nmod	_	_
+11	(	(	PUNCT	G---------	_	12	punct	_	SpaceAfter=No
+12	الفيتو	الفيتو	X	U---------	_	10	appos	_	SpaceAfter=No
+13	)	)	PUNCT	G---------	_	12	punct	_	_
+14-15	للمرة	_	_	_	_	_	_	_	_
+14	ل	لِ	ADP	P---------	AdpType=Prep	15	case	_	_
+15	المرة	مَرَّة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	obl	_	_
+16	الثانية	ثَانِي	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	amod	_	_
+17-18	لرفض	_	_	_	_	_	_	_	_
+17	ل	لِ	ADP	P---------	AdpType=Prep	18	case	_	_
+18	رفض	رَفض	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	7	obl	_	_
+19	مشروع	مَشرُوع	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	18	nmod	_	_
+20	قانون	قَانُون	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	19	nmod	_	_
+21	يحدد	حَدَّد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	20	acl	_	_
+22	موعدًا	مَوعِد	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	_
+23	نهائيًا	نِهَائِيّ	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	22	amod	_	_
+24	لانسحاب	لانسحابِ	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	22	nmod	_	_
+25	القوات	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	24	nmod	_	_
+26	الأمريكية	أَمرِيكِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No
+27	،	،	PUNCT	G---------	_	26	punct	_	_
+28	قائلاً	قَائِل	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	xcomp	_	_
+29	إن	إِنَّ	SCONJ	C---------	_	35	mark	_	_
+30	الجدل	جَدَل	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	35	nsubj	_	_
+31	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	32	case	_	_
+32	الصراع	صِرَاع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	30	nmod	_	_
+33	كان	كَان	AUX	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	35	cop	_	_
+34	"	"	PUNCT	G---------	_	35	punct	_	SpaceAfter=No
+35	مفهومًا	مَفهُوم	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	28	ccomp	_	SpaceAfter=No
+36	"	"	PUNCT	G---------	_	35	punct	_	_
+37-39	ولكنه	_	_	_	_	_	_	_	_
+37	و	وَ	CCONJ	C---------	_	40	cc	_	_
+38	لٰكن	لٰكِنَّ	CCONJ	C---------	_	40	cc	_	_
+39	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_
+40	أصر	أَصَرّ	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	7	conj	_	_
+41	على	عَلَى	ADP	P---------	AdpType=Prep	46	case	_	_
+42	أن	أَنَّ	SCONJ	C---------	_	47	mark	_	_
+43	استمرار	اِستِمرَار	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	46	nsubj	_	_
+44	الوجود	وُجُود	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	43	nmod	_	_
+45	الأمريكي	أَمرِيكِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	44	amod	_	_
+46	هناك	هُنَاكَ	ADV	D---------	_	40	obl:arg	_	_
+47	أمر	أَمر	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	40	obj	_	_
+48	حاسم	حَاسِم	ADJ	A-----MS1I	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	47	amod	_	SpaceAfter=No
+49	.	.	PUNCT	G---------	_	7	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 148
+# text = في مارس 2008 أشاد بوش بـ (القرار الجريء) للحكومة العراقية بشن معركة البصرة ضد جيش المهدي، واصفا إياها بأنها "لحظة حاسمة في تاريخ عراق حر".
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	مارس	مَارِس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
+3	2008	2008	NUM	Q---------	NumForm=Digit	2	nummod	_	_
+4	أشاد	أَشَاد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+5	بوش	بُوش	X	X---------	Foreign=Yes	4	nsubj	_	_
+6	بـ	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+7	(	(	PUNCT	G---------	_	8	punct	_	SpaceAfter=No
+8	القرار	قَرَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	obl:arg	_	_
+9	الجريء	جَرِيء	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	)	)	PUNCT	G---------	_	8	punct	_	_
+11-12	للحكومة	_	_	_	_	_	_	_	_
+11	ل	لِ	ADP	P---------	AdpType=Prep	12	case	_	_
+12	الحكومة	حُكُومَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	8	nmod	_	_
+13	العراقية	عِرَاقِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	12	amod	_	_
+14-15	بشن	_	_	_	_	_	_	_	_
+14	ب	بِ	ADP	P---------	AdpType=Prep	15	case	_	_
+15	شن	شَنّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	8	nmod	_	_
+16	معركة	مَعرَكَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	15	nmod	_	_
+17	البصرة	بَصرَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	_
+18	ضد	ضِدَّ	ADP	PI------4-	AdpType=Prep|Case=Acc	19	case	_	_
+19	جيش	جَيش	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	nmod	_	_
+20	المهدي	المهدي	X	U---------	_	19	nmod	_	SpaceAfter=No
+21	،	،	PUNCT	G---------	_	20	punct	_	_
+22	واصفا	وَاصِف	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	xcomp	_	_
+23-24	إياها	_	_	_	_	_	_	_	_
+23	إيا	إِيَّا	PART	F---------	_	24	cc	_	_
+24	ها	هُوَ	PRON	SP---3FS2-	Case=Gen|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	obl:arg	_	_
+25-27	بأنها	_	_	_	_	_	_	_	_
+25	ب	بِ	ADP	P---------	AdpType=Prep	29	case	_	_
+26	أن	أَنَّ	SCONJ	C---------	_	29	mark	_	_
+27	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+28	"	"	PUNCT	G---------	_	29	punct	_	SpaceAfter=No
+29	لحظة	لَحظَة	NOUN	N------S1I	Case=Nom|Definite=Ind|Number=Sing	22	obl:arg	_	_
+30	حاسمة	حَاسِم	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	29	amod	_	_
+31	في	فِي	ADP	P---------	AdpType=Prep	32	case	_	_
+32	تاريخ	تَارِيخ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	29	nmod	_	_
+33	عراق	عِرَاق	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	32	nmod	_	_
+34	حر	حُرّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No
+35	"	"	PUNCT	G---------	_	29	punct	_	SpaceAfter=No
+36	.	.	PUNCT	G---------	_	4	punct	_	_
+
+# sent_id = 149
+# text = وقال إنه سينظر بعناية في التوصيات الصادرة عن قائده الجنرال ديفيد بتريوس والسفير رايان كروكر حول كيفية المضي قدماً بعد انتهاء التعزيزات العسكرية في صيف عام 2008.
+1-2	وقال	_	_	_	_	_	_	_	_
+1	و	وَ	CCONJ	C---------	_	0	root	_	_
+2	قال	قَال	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3-4	إنه	_	_	_	_	_	_	_	_
+3	إن	إِنَّ	SCONJ	C---------	_	6	mark	_	_
+4	ه	هُوَ	PRON	SP---3MS4-	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5-6	سينظر	_	_	_	_	_	_	_	_
+5	س	سَ	AUX	F---------	_	6	aux	_	_
+6	ينظر	نَظَر	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7-8	بعناية	_	_	_	_	_	_	_	_
+7	ب	بِ	ADP	P---------	AdpType=Prep	8	case	_	_
+8	عناية	عِنَايَة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+9	في	فِي	ADP	P---------	AdpType=Prep	10	case	_	_
+10	التوصيات	تَوصِيَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	6	obl:arg	_	_
+11	الصادرة	صَادِر	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+12	عن	عَن	ADP	P---------	AdpType=Prep	13	case	_	_
+13-14	قائده	_	_	_	_	_	_	_	_
+13	قائد	قَائِد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	obl:arg	_	_
+14	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nmod	_	_
+15	الجنرال	جِنِرَال	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+16	ديفيد	دِيفِيد	X	X---------	Foreign=Yes	17	nmod	_	_
+17	بتريوس	بتريوس	X	U---------	_	15	nmod	_	_
+18-19	والسفير	_	_	_	_	_	_	_	_
+18	و	وَ	CCONJ	C---------	_	19	cc	_	_
+19	السفير	سَفِير	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	15	conj	_	_
+20	رايان	رايان	X	U---------	_	21	nmod	_	_
+21	كروكر	كروكر	X	U---------	_	19	nmod	_	_
+22	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	23	case	_	_
+23	كيفية	كَيفِيَّة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	nmod	_	_
+24	المضي	مُضِيّ	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	nmod	_	_
+25	قدماً	قَدم	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	24	nmod	_	_
+26	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	27	case	_	_
+27	انتهاء	اِنتِهَاء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	25	nmod	_	_
+28	التعزيزات	تَعزِيز	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	27	nmod	_	_
+29	العسكرية	عَسكَرِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	28	amod	_	_
+30	في	فِي	ADP	P---------	AdpType=Prep	31	case	_	_
+31	صيف	صَيف	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	27	nmod	_	_
+32	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	31	nmod	_	_
+33	2008	2008	NUM	Q---------	NumForm=Digit	32	nummod	_	SpaceAfter=No
+34	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 150
+# text = كما أشاد بالإنجازات التشريعية للعراقيين بما في ذلك قانون التقاعد الجديد، وقال إن قانون اجتثاث حزب البعث والميزانية الجديدة وقانون العفو والإجراءات الخاصة بسلطات المحافظات مهدت الطريق للانتخابات العراقية.
+1	كما	كَمَا	CCONJ	C---------	_	0	root	_	_
+2	أشاد	أَشَاد	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	1	parataxis	_	_
+3-4	بالإنجازات	_	_	_	_	_	_	_	_
+3	بال	بَال	X	U---------	_	2	obj	_	_
+4	إنجازات	إِنجَاز	NOUN	U---------	_	3	nmod	_	_
+5	التشريعية	تَشرِيعِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	4	amod	_	_
+6-7	للعراقيين	_	_	_	_	_	_	_	_
+6	ل	لِ	ADP	P---------	AdpType=Prep	7	case	_	_
+7	العراقيين	عِرَاقِيّ	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	4	nmod	_	_
+8-9	بما	_	_	_	_	_	_	_	_
+8	ب	بِ	ADP	P---------	AdpType=Prep	4	case	_	_
+9	ما	مَا	DET	S---------	_	4	det	_	_
+10	في	فِي	ADP	P---------	AdpType=Prep	8	fixed	_	_
+11	ذلك	ذٰلِكَ	DET	SD----MS2-	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	4	obl	_	_
+12	قانون	قَانُون	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	11	nsubj	_	_
+13	التقاعد	تَقَاعُد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	12	nmod	_	_
+14	الجديد	جَدِيد	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No
+15	،	،	PUNCT	G---------	_	14	punct	_	_
+16-17	وقال	_	_	_	_	_	_	_	_
+16	و	وَ	CCONJ	C---------	_	17	cc	_	_
+17	قال	قَال	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	2	conj	_	_
+18	إن	إِنَّ	SCONJ	C---------	_	33	mark	_	_
+19	قانون	قَانُون	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	33	nsubj	_	_
+20	اجتثاث	اِجتِثَاث	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	nmod	_	_
+21	حزب	حِزب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	nmod	_	_
+22	البعث	البعث	X	U---------	_	21	nmod	_	_
+23	والميزانية	والميزانية	X	U---------	_	21	nmod	_	_
+24	الجديدة	جَدِيد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	21	amod	_	_
+25-26	وقانون	_	_	_	_	_	_	_	_
+25	و	وَ	CCONJ	C---------	_	26	cc	_	_
+26	قانون	قَانُون	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	19	conj	_	_
+27	العفو	عَفو	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	_
+28-29	والإجراءات	_	_	_	_	_	_	_	_
+28	و	وَ	CCONJ	C---------	_	29	cc	_	_
+29	الإجراءات	إِجرَاء	NOUN	N------P4D	Case=Acc|Definite=Def|Number=Plur	19	conj	_	_
+30	الخاصة	خَاصّ	ADJ	A-----FS4D	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	29	amod	_	_
+31	بسلطات	بسلطات	X	U---------	Case=Acc|Definite=Cons|Number=Plur	30	obj	_	_
+32	المحافظات	مُحَافِظَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	31	nmod	_	_
+33	مهدت	مَهَّد	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	17	ccomp	_	_
+34	الطريق	طَرِيق	NOUN	N------S4D	Case=Acc|Definite=Def|Number=Sing	33	obj	_	_
+35-36	للانتخابات	_	_	_	_	_	_	_	_
+35	ل	لِ	ADP	P---------	AdpType=Prep	36	case	_	_
+36	الانتخابات	اِنتِخَاب	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	34	nmod	_	_
+37	العراقية	عِرَاقِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	36	amod	_	SpaceAfter=No
+38	.	.	PUNCT	G---------	_	1	punct	_	_
+
+# sent_id = 151
+# text = بحلول يوليو 2008، وصل عدد القتلى من القوات الأمريكية إلى أدنى عدد منذ بدء الحرب، وبسبب زيادة الاستقرار في العراق أعلن بوش انسحاب القوات الأمريكية الإضافية.
+1-2	بحلول	_	_	_	_	_	_	_	_
+1	ب	بِ	ADP	P---------	AdpType=Prep	2	case	_	_
+2	حلول	حُلُول	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+3	يوليو	يُولِيُو	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+4	2008	2008	NUM	Q---------	NumForm=Digit	3	nummod	_	SpaceAfter=No
+5	،	،	PUNCT	G---------	_	4	punct	_	_
+6	وصل	وَصَل	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+7	عدد	عَدَد	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	6	nsubj	_	_
+8	القتلى	قَتِيل	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	7	nmod	_	_
+9	من	مِن	ADP	P---------	AdpType=Prep	10	case	_	_
+10	القوات	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	8	nmod	_	_
+11	الأمريكية	أَمرِيكِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	10	amod	_	_
+12	إلى	إِلَى	ADP	P---------	AdpType=Prep	13	case	_	_
+13	أدنى	أَدنَى	ADJ	A-----MS2R	Case=Gen|Definite=Cons|Gender=Masc|Number=Sing	6	obl	_	_
+14	عدد	عَدَد	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	13	nmod	_	_
+15	منذ	مُنذُ	ADP	P---------	AdpType=Prep	16	case	_	_
+16	بدء	بَدء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+17	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	16	nmod	_	SpaceAfter=No
+18	،	،	PUNCT	G---------	_	17	punct	_	_
+19-21	وبسبب	_	_	_	_	_	_	_	_
+19	و	وَ	CCONJ	C---------	_	26	cc	_	_
+20	ب	بِ	ADP	P---------	AdpType=Prep	22	case	_	_
+21	سبب	سَبَب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	20	fixed	_	_
+22	زيادة	زِيَادَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	6	obl	_	_
+23	الاستقرار	اِستِقرَار	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	22	nmod	_	_
+24	في	فِي	ADP	P---------	AdpType=Prep	25	case	_	_
+25	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	23	nmod	_	_
+26	أعلن	أَعلَن	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	6	conj	_	_
+27	بوش	بُوش	X	X---------	Foreign=Yes	26	nsubj	_	_
+28	انسحاب	اِنسِحَاب	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	26	obj	_	_
+29	القوات	قُوَّة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	28	nmod	_	_
+30	الأمريكية	أَمرِيكِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	29	amod	_	_
+31	الإضافية	إِضَافِيّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	29	amod	_	SpaceAfter=No
+32	.	.	PUNCT	G---------	_	6	punct	_	_
+
+# sent_id = 152
+# text = خلال زيارة بوش الأخيرة للعراق في ديسمبر 2008، ألقى الصحفي العراقي منتظر الزيدي حذائه على بوش أثناء انعقاد مؤتمر صحفي رسمي مع رئيس الوزراء العراقي نوري المالكي.
+1	خلال	خِلَالَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
+2	زيارة	زِيَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	obl	_	_
+3	بوش	بُوش	X	X---------	Foreign=Yes	2	nmod	_	_
+4	الأخيرة	أَخِير	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	amod	_	_
+5-6	للعراق	_	_	_	_	_	_	_	_
+5	ل	لِ	ADP	P---------	AdpType=Prep	6	case	_	_
+6	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	2	nmod	_	_
+7	في	فِي	ADP	P---------	AdpType=Prep	8	case	_	_
+8	ديسمبر	دِيسَمبِر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	2	nmod	_	_
+9	2008	2008	NUM	Q---------	NumForm=Digit	8	nummod	_	SpaceAfter=No
+10	،	،	PUNCT	G---------	_	9	punct	_	_
+11	ألقى	أَلقَى	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+12	الصحفي	صُحُفِيّ	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	11	nsubj	_	_
+13	العراقي	عِرَاقِيّ	ADJ	A-----MS1D	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	12	amod	_	_
+14	منتظر	منتظر	X	U---------	_	15	nmod	_	_
+15	الزيدي	الزيدي	X	U---------	_	12	nmod	_	_
+16-17	حذائه	_	_	_	_	_	_	_	_
+16	حذاء	حَذَاء	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	11	obj	_	_
+17	ه	هُوَ	PRON	SP---3MS2-	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nmod	_	_
+18	على	عَلَى	ADP	P---------	AdpType=Prep	19	case	_	_
+19	بوش	بُوش	X	X---------	Foreign=Yes	11	obl:arg	_	_
+20	أثناء	أَثنَاءَ	ADP	PI------4-	AdpType=Prep|Case=Acc	21	case	_	_
+21	انعقاد	اِنعِقَاد	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	11	obl	_	_
+22	مؤتمر	مُؤتَمَر	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	21	nmod	_	_
+23	صحفي	صُحُفِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	22	amod	_	_
+24	رسمي	رَسمِيّ	ADJ	A-----MS2I	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	22	amod	_	_
+25	مع	مَعَ	ADP	PI------4-	AdpType=Prep|Case=Acc	26	case	_	_
+26	رئيس	رَئِيس	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	22	nmod	_	_
+27	الوزراء	وَزِير	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	26	nmod	_	_
+28	العراقي	عِرَاقِيّ	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	26	amod	_	_
+29	نوري	نوري	X	U---------	_	30	nmod	_	_
+30	المالكي	المالكي	X	U---------	_	26	nmod	_	SpaceAfter=No
+31	.	.	PUNCT	G---------	_	11	punct	_	_
+
+# sent_id = 153
+# text = وصاح الزيدي أثناء إلقاء الحذاء واصفا ضربة الحذاء بأنها (قبلة الوداع) و(حق للأرامل والأيتام وكل من قتل في العراق).
+1	وصاح	وَصَاح	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+2	الزيدي	الزيدي	X	U---------	_	1	nsubj	_	_
+3	أثناء	أَثنَاءَ	ADP	PI------4-	AdpType=Prep|Case=Acc	4	case	_	_
+4	إلقاء	إِلقَاء	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	1	obl	_	_
+5	الحذاء	حِذَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	4	nmod	_	_
+6	واصفا	وَاصِف	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	xcomp	_	_
+7	ضربة	ضَربَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	6	obj	_	_
+8	الحذاء	حِذَاء	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	7	nmod	_	_
+9-11	بأنها	_	_	_	_	_	_	_	_
+9	ب	بِ	ADP	P---------	AdpType=Prep	13	case	_	_
+10	أن	أَنَّ	SCONJ	C---------	_	13	mark	_	_
+11	ها	هُوَ	PRON	SP---3FS4-	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+12	(	(	PUNCT	G---------	_	13	punct	_	SpaceAfter=No
+13	قبلة	قِبلَة	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	6	obl:arg	_	_
+14	الوداع	وِدَاع	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	SpaceAfter=No
+15	)	)	PUNCT	G---------	_	13	punct	_	_
+16	و	وَ	CCONJ	C---------	_	18	cc	_	SpaceAfter=No
+17	(	(	PUNCT	G---------	_	18	punct	_	SpaceAfter=No
+18	حق	حَقّ	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	13	conj	_	_
+19	للأرامل	للأرامل	X	U---------	_	18	nmod	_	_
+20	والأيتام	والأيتام	X	U---------	_	19	nmod	_	_
+21-22	وكل	_	_	_	_	_	_	_	_
+21	و	وَ	CCONJ	C---------	_	22	cc	_	_
+22	كل	كُلّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	19	conj	_	_
+23	من	مَن	DET	S---------	_	24	nsubj:pass	_	_
+24	قتل	قَتَل	VERB	VP-P-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Pass	22	acl	_	_
+25	في	فِي	ADP	P---------	AdpType=Prep	26	case	_	_
+26	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	24	obl	_	SpaceAfter=No
+27	)	)	PUNCT	G---------	_	18	punct	_	SpaceAfter=No
+28	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 154
+# text = في مارس 2010، أصدر مركز النزاهة العامة تقريرًا يفيد بأن إدارة الرئيس بوش قدمت أكثر من 900 حجة كاذبة في فترة عامين حول التهديد المزعوم للعراق ضد الولايات المتحدة ، كأساس لشن الحرب في العراق.
+1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
+2	مارس	مَارِس	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
+3	2010	2010	NUM	Q---------	NumForm=Digit	2	nummod	_	SpaceAfter=No
+4	،	،	PUNCT	G---------	_	3	punct	_	_
+5	أصدر	أَصدَر	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+6	مركز	مَركَز	NOUN	N------S1R	Case=Nom|Definite=Cons|Number=Sing	5	nsubj	_	_
+7	النزاهة	نِزَاهَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	6	nmod	_	_
+8	العامة	عَامّ	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	amod	_	_
+9	تقريرًا	تَقرِير	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+10	يفيد	أَفَاد	VERB	VIIA-3MS--	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	acl	_	_
+11-12	بأن	_	_	_	_	_	_	_	_
+11	ب	بِ	ADP	P---------	AdpType=Prep	16	mark	_	_
+12	أن	أَنَّ	SCONJ	C---------	_	16	mark	_	_
+13	إدارة	إِدَارَة	NOUN	N------S4R	Case=Acc|Definite=Cons|Number=Sing	16	nsubj	_	_
+14	الرئيس	رَئِيس	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	13	nmod	_	_
+15	بوش	بُوش	X	X---------	Foreign=Yes	14	nmod	_	_
+16	قدمت	قَدَّم	VERB	VP-A-3FS--	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Voice=Act	10	ccomp	_	_
+17	أكثر	أَكثَر	ADJ	A-----MS4I	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	16	obj	_	_
+18	من	مِن	ADP	P---------	AdpType=Prep	19	case	_	_
+19	900	900	NUM	Q---------	NumForm=Digit	17	nummod	_	_
+20	حجة	حُجَّة	NOUN	N------S2I	Case=Gen|Definite=Ind|Number=Sing	19	nmod	_	_
+21	كاذبة	كَاذِب	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	20	amod	_	_
+22	في	فِي	ADP	P---------	AdpType=Prep	23	case	_	_
+23	فترة	فَترَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	16	obl	_	_
+24	عامين	عَام	NOUN	N------D2I	Case=Gen|Definite=Ind|Number=Dual	23	nmod	_	_
+25	حول	حَولَ	ADP	PI------4-	AdpType=Prep|Case=Acc	26	case	_	_
+26	التهديد	تَهدِيد	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	20	nmod	_	_
+27	المزعوم	مَزعُوم	ADJ	A-----MS2D	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	26	amod	_	_
+28-29	للعراق	_	_	_	_	_	_	_	_
+28	ل	لِ	ADP	P---------	AdpType=Prep	29	case	_	_
+29	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	26	nmod	_	_
+30	ضد	ضِدَّ	ADP	PI------4-	AdpType=Prep|Case=Acc	31	case	_	_
+31	الولايات	وِلَايَة	NOUN	N------P2D	Case=Gen|Definite=Def|Number=Plur	26	nmod	_	_
+32	المتحدة	مُتَّحِد	ADJ	A-----FS2D	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	31	amod	_	_
+33	،	،	PUNCT	G---------	_	32	punct	_	_
+34	كأساس	أِسس	NOUN	N------S4I	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
+35-36	لشن	_	_	_	_	_	_	_	_
+35	ل	لِ	ADP	P---------	AdpType=Prep	36	case	_	_
+36	شن	شَنّ	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	34	nmod	_	_
+37	الحرب	حَرب	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	36	nmod	_	_
+38	في	فِي	ADP	P---------	AdpType=Prep	39	case	_	_
+39	العراق	عِرَاق	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	37	nmod	_	SpaceAfter=No
+40	.	.	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 155
 # text = كوريا الشمالية
 1	كوريا	كُورِيَا	X	X---------	Foreign=Yes	0	root	_	_
-2	الشمالية	شَمَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+2	الشمالية	شَمَالِيّ	ADJ	A-----FS1D	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 156
 # text = أدان بوش علناً كيم جونغ إل رئيس كوريا الشمالية وأطلق تسمية كوريا الشمالية كواحدة من ثلاث دول في محور الشر، وقال ان الولايات المتحدة الأمريكية لن تسمح لأكثر أنظمة العالم خطورة بتهديد العالم.في 7 مايو 2007 وافقت كوريا الشمالية على إغلاق مفاعلاتها النووية فوراً بعد أن جُمّدت الحسابات الكورية الشمالية المصرفية في البنوك الأجنبية وكان هذا نتيجة لسلسلة من المحادثات التي بدأتها الولايات المتحدة والصين.
 1	أدان	أَدَان	VERB	VP-A-3MS--	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
 2	بوش	بُوش	X	X---------	Foreign=Yes	1	nsubj	_	_
@@ -4051,7 +4752,7 @@
 77	الصين	صِين	NOUN	N------S1D	Case=Nom|Definite=Def|Number=Sing	74	conj	_	_
 78	.	.	PUNCT	G---------	_	1	punct	_	_
 
-# sent_id = 2
+# sent_id = 157
 # text = في 2 سبتمبر 2007 وافقت كوريا الشمالية على كشف وتفكيك جميع برامجها النووية بحلول نهاية عام 2007.
 1	في	فِي	ADP	P---------	AdpType=Prep	2	case	_	_
 2	2	2	NUM	Q---------	NumForm=Digit	5	obl	_	_
@@ -4076,24 +4777,16 @@
 18	نهاية	نِهَايَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	17	nmod	_	_
 19	عام	عَام	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	18	nmod	_	_
 20	2007	2007	NUM	Q---------	NumForm=Digit	19	nummod	_	SpaceAfter=No
-21	.	.	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	G---------	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 158
 # text = بعد الرئاسة
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
-2	الرئاسة	رِئَاسَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	0	root	_	SpaceAfter=No
+2	الرئاسة	رِئَاسَة	NOUN	N------S2D	Case=Gen|Definite=Def|Number=Sing	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 159
 # text = بعد تنصيب باراك أوباما انتقل بوش وعائلته إلى تكساس حيث كان هنالك احتفال للترحيب بهم في مدينة مدلاند، تكساس وبعدها ذهب مع عائلته للعيش في مدينة دالاس، تكساس، وبعد انتهاء رئاسته لم يعد بوش يظهر يومياً للاعلام ولكنه بقى يظهر في احتفالات وفي مباريات فريق البيسبول ومباريات كرة القدم الأمريكية وبعدها عندما أعلن عن مذكراته وكتابه الجديد.
 1	بعد	بَعدَ	ADP	PI------4-	AdpType=Prep|Case=Acc	2	case	_	_
 2	تنصيب	تَنصِيب	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	5	obl	_	_
@@ -4185,7 +4878,7 @@
 76	الجديد	جَدِيد	ADJ	A-----MS4D	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	74	amod	_	SpaceAfter=No
 77	.	.	PUNCT	G---------	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 160
 # text = وقام بزيارة دول عديدة.
 1-2	وقام	_	_	_	_	_	_	_	_
 1	و	وَ	CCONJ	C---------	_	0	root	_	_
@@ -4195,24 +4888,16 @@
 4	زيارة	زِيَارَة	NOUN	N------S2R	Case=Gen|Definite=Cons|Number=Sing	2	obl:arg	_	_
 5	دول	دَولَة	NOUN	N------P2I	Case=Gen|Definite=Ind|Number=Plur	4	nmod	_	_
 6	عديدة	عَدِيد	ADJ	A-----FS2I	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	5	amod	_	SpaceAfter=No
-7	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n
+7	.	.	PUNCT	G---------	_	1	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 161
 # text = المصادر
-1	المصادر	مَصدَر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpaceAfter=No
+1	المصادر	مَصدَر	NOUN	N------P1D	Case=Nom|Definite=Def|Number=Plur	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = arabic-padt-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 162
 # text = وصلات خارجية
 1	وصلات	وُصلَة	NOUN	N------P1I	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
-2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+2	خارجية	خَارِجِيّ	ADJ	A-----FS1I	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\n\n
 

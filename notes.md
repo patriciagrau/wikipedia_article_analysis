@@ -154,10 +154,10 @@ TO DO
   - relable 
 - ~~Orthodox Christianity --> ADJ NOUN, amod of Christianity~~
 - ~~Look at the goldstandard treebanks for these details!! (if they are consistent)~~
-- UD documentation --> do they number paragraphs? or have unique ids for sentences?
+- ~~UD documentation --> do they number paragraphs? or have unique ids for sentences?~~ unique ids for sentences
 
 07/03 + 08/03
 
 - Fixing previous UD mistakes checking the UDPipe Gold Standard
-- gold standard French: line 585 I had never seen such a construction, with "dont" and no verb, but following the UDPipe GS for French, I will put it as an acl:relcl.
-- Fixing sentence ID and new paragraphs
+- gold standard French: line ~585 I had never seen such a construction, with "dont" and no verb, but following the UDPipe GS for French, I will put it as an acl:relcl.
+- Fixing sentence ID and new paragraphs, adding changes to GS.

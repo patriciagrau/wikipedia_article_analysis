@@ -9,14 +9,10 @@
 2	–	–	PUNCT	-	_	1	punct	_	_
 3	Wikipedia	Wikipedia	NOUN	Np	_	1	compound	_	_
 4	tiếng	tiếng	NOUN	N	_	1	compound	_	_
-5	Việt	Việt	NOUN	Np	_	4	compound	_	SpaceAfter=No
+5	Việt	Việt	NOUN	Np	_	4	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 2
 # text = Mắt là cơ quan của hệ thống thị giác.
 1	Mắt	Mắt	NOUN	Np	_	3	nsubj	_	_
 2	là	là	AUX	V	_	3	cop	_	_
@@ -26,7 +22,7 @@
 6	thị giác	thị giác	NOUN	N	_	5	compound	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 3
 # text = Cơ quan này cung cấp cho sinh vật sống tầm nhìn, khả năng tiếp nhận và xử lý chi tiết hình ảnh, cũng như cho phép một số chức năng phản ứng ảnh độc lập với tầm nhìn.
 1	Cơ quan	Cơ quan	NOUN	N	_	3	nsubj	_	_
 2	này	này	PROPN	P	_	1	det	_	_
@@ -50,12 +46,12 @@
 20	chức năng	chức năng	NOUN	N	_	18	obj	_	_
 21	phản ứng	phản ứng	VERB	V	_	20	xcomp	_	_
 22	ảnh	ảnh	NOUN	N	_	21	obj	_	_
-23	độc lập với	độc lập với	ADJ	A	_	22	amod	_	_
-24	tầm	tầm	NOUN	N	_	21	obj	_	_
-25	nhìn	nhìn	VERB	V	_	24	xcomp	_	SpaceAfter=No
+23	độc lập	độc lập	ADJ	A	_	22	xcomp	_	_
+24	với	với	ADP	E	_	25	case	_	_
+25	tầm nhìn	tầm nhìn	NOUN	N	_	21	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 4
 # text = Mắt phát hiện ánh sáng và chuyển đổi nó thành các xung điện hóa học trong tế bào thần kinh.
 1	Mắt	Mắt	NOUN	N	_	2	nsubj	_	_
 2	phát	phát	VERB	V	_	0	root	_	_
@@ -72,7 +68,7 @@
 13	thần kinh	thần kinh	NOUN	N	_	12	compound	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 4
+# sent_id = 5
 # text = Ở các sinh vật bậc cao, mắt là một hệ thống quang học phức tạp, thu thập ánh sáng từ môi trường xung quanh, điều chỉnh cường độ của nó thông qua một màng chắn, tập trung nó thông qua một cụm thấu kính có thể điều chỉnh để tạo thành một hình ảnh, chuyển đổi hình ảnh này thành một tập hợp các tín hiệu điện và truyền các tín hiệu này đến não thông qua các con đường thần kinh phức tạp kết nối mắt thông qua dây thần kinh thị giác với vỏ thị giác và các khu vực khác của não.
 1	Ở	ở	ADP	E	_	2	case	_	_
 2	các sinh	các sinh	NOUN	N	_	9	advcl	_	_
@@ -102,13 +98,13 @@
 26	,	,	PUNCT	,	_	27	punct	_	_
 27	tập trung	tập trung	VERB	V	_	23	conj	_	_
 28	nó	nó	PROPN	P	_	27	obj	_	_
-29	thông qua	thông qua	VERB	V	_	23	conj	_	_
+29	thông qua	thông qua	VERB	V	_	9	parataxis	_	_
 30	một	một	NUM	M	NumType=Card	32	nummod	_	_
 31	cụm	cụm	NOUN	Nc	_	32	compound	_	_
 32	thấu kính	thấu kính	NOUN	N	_	23	obj	_	_
 33	có thể	có thể	X	R	_	34	aux	_	_
-34	điều chỉnh	điều chỉnh	VERB	V	_	60	xcomp	_	_
-35	để	để	ADP	E	_	57	case	_	_
+34	điều chỉnh	điều chỉnh	VERB	V	_	59	xcomp	_	_
+35	để	để	ADP	E	_	56	case	_	_
 36	tạo	tạo	VERB	V	_	9	mark	_	_
 37	thành	thành	VERB	V	_	36	xcomp	_	_
 38	một	một	NUM	M	NumType=Card	39	nummod	_	_
@@ -117,41 +113,40 @@
 41	chuyển đổi	chuyển đổi	VERB	V	_	23	conj	_	_
 42	hình ảnh	hình ảnh	NOUN	N	_	41	obj	_	_
 43	này	này	PROPN	P	_	42	det	_	_
-44	thành	thành	VERB	V	_	60	xcomp	_	_
-45	một	một	NUM	M	NumType=Card	25	nummod	_	_
-46	tập hợp	tập hợp	NOUN	N	_	44	obj	_	_
-47	các	các	DET	L	_	48	det	_	_
-48	tín	tín	NOUN	N	_	46	compound	_	_
-49	hiệu	hiệu	NOUN	N	_	48	compound	_	_
-50	điện	điện	NOUN	N	_	3	compound	_	_
-51	và	và	SCONJ	CC	_	52	cc	_	_
-52	truyền	truyền	VERB	V	_	9	conj	_	_
-53	các	các	DET	L	_	54	det	_	_
-54	tín hiệu	tín hiệu	NOUN	N	_	52	obj	_	_
-55	này	này	PROPN	P	_	54	det	_	_
-56	đến	đến	ADP	E	_	57	case	_	_
-57	não thông qua	não thông qua	VERB	V	_	9	nmod	_	_
-58	các	các	DET	L	_	60	det	_	_
-59	con	con	NOUN	Nc	_	60	compound	_	_
-60	đường	đường	NOUN	N	_	57	obj	_	_
-61	thần	thần	NOUN	N	_	60	compound	_	_
-62	kinh phức	kinh phức	NOUN	N	_	61	compound	_	_
-63	tạp kết	tạp kết	ADJ	A	_	60	amod	_	_
-64	nối	nối	VERB	V	_	63	xcomp	_	_
-65	mắt	mắt	NOUN	N	_	63	obj	_	_
-66	thông qua dây	thông qua dây	VERB	V	_	65	xcomp	_	_
-67	thần kinh thị giác	thần kinh thị giác	NOUN	N	_	66	obj	_	_
-68	với	với	ADP	E	_	69	case	_	_
-69	vỏ	vỏ	NOUN	N	_	66	obl	_	_
-70	thị giác	thị giác	NOUN	N	_	69	compound	_	_
-71	và	và	SCONJ	CC	_	73	cc	_	_
-72	các	các	DET	L	_	73	det	_	_
-73	khu vực	khu vực	NOUN	N	_	60	conj	_	_
-74	khác	khác	ADJ	A	_	73	amod	_	_
-75	của não	của não	NOUN	N	_	73	compound	_	SpaceAfter=No
-76	.	.	PUNCT	.	_	9	punct	_	_
+44	thành một	thành một	VERB	V	_	59	xcomp	_	_
+45	tập hợp	tập hợp	NOUN	N	_	44	obj	_	_
+46	các	các	DET	L	_	47	det	_	_
+47	tín	tín	NOUN	N	_	45	compound	_	_
+48	hiệu	hiệu	NOUN	N	_	47	compound	_	_
+49	điện	điện	NOUN	N	_	3	compound	_	_
+50	và	và	SCONJ	CC	_	51	cc	_	_
+51	truyền	truyền	VERB	V	_	9	conj	_	_
+52	các	các	DET	L	_	53	det	_	_
+53	tín hiệu	tín hiệu	NOUN	N	_	51	obj	_	_
+54	này	này	PROPN	P	_	53	det	_	_
+55	đến	đến	ADP	E	_	56	case	_	_
+56	não thông qua	não thông qua	VERB	V	_	9	nmod	_	_
+57	các	các	DET	L	_	59	det	_	_
+58	con	con	NOUN	Nc	_	59	compound	_	_
+59	đường	đường	NOUN	N	_	56	obj	_	_
+60	thần	thần	NOUN	N	_	59	compound	_	_
+61	kinh phức	kinh phức	NOUN	N	_	60	compound	_	_
+62	tạp kết	tạp kết	ADJ	A	_	59	amod	_	_
+63	nối	nối	VERB	V	_	62	xcomp	_	_
+64	mắt	mắt	NOUN	N	_	62	obj	_	_
+65	thông qua dây	thông qua dây	VERB	V	_	64	xcomp	_	_
+66	thần kinh thị giác	thần kinh thị giác	NOUN	N	_	65	obj	_	_
+67	với	với	ADP	E	_	68	case	_	_
+68	vỏ	vỏ	NOUN	N	_	65	obl	_	_
+69	thị giác	thị giác	NOUN	N	_	68	compound	_	_
+70	và các	và các	DET	L	_	71	det	_	_
+71	khu vực	khu vực	NOUN	N	_	68	compound	_	_
+72	khác	khác	ADJ	A	_	71	amod	_	_
+73	của	của	ADP	E	_	74	case	_	_
+74	não	não	PROPN	P	_	71	nmod	_	SpaceAfter=No
+75	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 5
+# sent_id = 6
 # text = Đôi mắt với sức mạnh phân giải đã có mười dạng cơ bản khác nhau và 96% các loài động vật sở hữu một hệ thống quang học phức tạp.
 1	Đôi	Đôi	PROPN	P	_	2	det	_	_
 2	mắt	mắt	NOUN	N	_	7	nsubj	_	_
@@ -177,7 +172,7 @@
 22	phức tạp	phức tạp	ADJ	A	_	20	amod	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 6
+# sent_id = 7
 # text = Mắt xử lý hình ảnh có trong động vật thân mềm, hợp âm và động vật chân đốt.
 1	Mắt xử lý	Mắt xử lý	VERB	V	_	3	nsubj	_	_
 2	hình ảnh	hình ảnh	NOUN	N	_	3	nsubj	_	_
@@ -187,16 +182,13 @@
 6	thân mềm	thân mềm	NOUN	N	_	5	compound	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	8	punct	_	_
 8	hợp âm	hợp âm	NOUN	N	_	6	conj	_	_
-9	và động vật chân	và động vật chân	X	X	_	5	conj	_	_
-10	đốt	đốt	ADJ	A	_	5	amod	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+9	và	và	SCONJ	CC	_	10	cc	_	_
+10	động vật	động vật	NOUN	N	_	5	conj	_	_
+11	chân đốt	chân đốt	ADJ	A	_	10	amod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 8
 # text = "Đôi mắt" đơn giản nhất, chẳng hạn như những con mắt trong vi sinh vật, không làm gì khác ngoài việc phát hiện xem môi trường xung quanh là sáng hay tối, điều này đủ cho sự nhận dạng và điều hòa của nhịp sinh học.
 1	"	"	PUNCT	"	_	3	punct	_	SpaceAfter=No
 2	Đôi	Đôi	NUM	M	NumType=Card	3	nummod	_	_
@@ -243,7 +235,7 @@
 43	học	học	NOUN	N	_	41	compound	_	SpaceAfter=No
 44	.	.	PUNCT	.	_	17	punct	_	_
 
-# sent_id = 2
+# sent_id = 9
 # text = Với các đôi mắt phức tạp hơn, các tế bào hạch nhạy cảm võng mạc gửi tín hiệu dọc theo đường võng mạc đến nhân trên chéo để điều chỉnh sinh học và đến khu vực trước sinh để kiểm soát phản xạ ánh sáng đồng tử.
 1	Với các	Với các	DET	L	_	3	det	_	_
 2	đôi	đôi	NUM	M	NumType=Card	3	nummod	_	_
@@ -276,23 +268,15 @@
 29	phản xạ	phản xạ	NOUN	N	_	28	obj	_	_
 30	ánh sáng	ánh sáng	NOUN	N	_	29	compound	_	_
 31	đồng tử	đồng tử	NOUN	N	_	30	compound	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+32	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 10
 # text = Tổng quan
-1	Tổng quan	Tổng quan	NOUN	N	_	0	root	_	SpaceAfter=No
+1	Tổng quan	Tổng quan	NOUN	N	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 11
 # text = Mắt phức tạp có thể phân biệt hình dạng và màu sắc.
 1	Mắt phức	Mắt phức	NOUN	N	_	4	nsubj	_	_
 2	tạp	tạp	ADJ	A	_	4	xcomp	_	_
@@ -304,7 +288,7 @@
 8	sắc	sắc	NOUN	N	_	7	compound	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 12
 # text = Các lĩnh vực thị giác của nhiều sinh vật, đặc biệt là động vật ăn thịt, liên quan đến các khu vực lớn của tầm nhìn hai mắt để cải thiện nhận thức về độ sâu.
 1	Các	Các	DET	L	_	2	det	_	_
 2	lĩnh vực	lĩnh vực	NOUN	N	_	13	nsubj	_	_
@@ -335,7 +319,7 @@
 27	sâu	sâu	ADJ	A	_	26	amod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 3
+# sent_id = 13
 # text = Ở các sinh vật khác, mắt được đặt để tối đa hóa tầm nhìn, chẳng hạn như ở thỏ và ngựa, có tầm nhìn một mắt.
 1	Ở	ở	ADP	E	_	3	case	_	_
 2	các	các	DET	L	_	3	det	_	_
@@ -353,22 +337,19 @@
 14	chẳng	chẳng	X	R	Polarity=Neg	15	advmod	_	_
 15	hạn như	hạn như	ADJ	A	_	21	xcomp	_	_
 16	ở	ở	ADP	E	_	17	case	_	_
-17	thỏ	thỏ	NOUN	N	_	15	nmod	_	_
+17	thỏ	thỏ	NOUN	Np	_	15	nmod	_	_
 18	và	và	SCONJ	CC	_	19	cc	_	_
 19	ngựa	ngựa	NOUN	N	_	17	conj	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	21	punct	_	_
 21	có	có	VERB	V	_	8	conj	_	_
-22	tầm nhìn	tầm nhìn	NOUN	N	_	21	obj	_	_
-23	một	một	NUM	M	NumType=Card	24	nummod	_	_
-24	mắt	mắt	NOUN	N	_	22	compound	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+22	tầm	tầm	NOUN	N	_	21	obj	_	_
+23	nhìn	nhìn	VERB	V	_	22	xcomp	_	_
+24	một	một	NUM	M	NumType=Card	25	nummod	_	_
+25	mắt	mắt	NOUN	N	_	23	obj	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 14
 # text = Mắt nguyên sinh đầu tiên tiến hóa giữa các loài động vật 600 triệu năm về trước về thời điểm xảy ra vụ nổ Cambri.
 1	Mắt	Mắt	X	R	_	2	advmod	_	_
 2	nguyên sinh	nguyên sinh	NOUN	N	_	4	nsubj	_	_
@@ -393,7 +374,7 @@
 21	Cambri	Cambri	NOUN	Np	_	19	compound	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 15
 # text = Tổ tiên chung cuối cùng của động vật sở hữu bộ công cụ sinh hóa cần thiết cho thị lực, và đôi mắt tiên tiến hơn đã tiến hóa ở 96% các loài động vật ở sáu trong số ~ 35 phyla chính.
 1	Tổ tiên	Tổ tiên	NOUN	N	_	20	nsubj	_	_
 2	chung	chung	ADJ	A	_	20	nsubj	_	_
@@ -428,7 +409,7 @@
 31	phyla chính	phyla chính	NOUN	N	_	28	compound	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	20	punct	_	_
 
-# sent_id = 3
+# sent_id = 16
 # text = Ở hầu hết các động vật có xương sống và một số động vật thân mềm, mắt hoạt động bằng cách cho phép ánh sáng đi vào và chiếu lên một bảng tế bào nhạy cảm với ánh sáng, được gọi là võng mạc, ở phía sau mắt.
 1	Ở hầu	ở hầu	NOUN	N	_	16	advcl	_	_
 2	hết	hết	X	R	_	1	advmod	_	_
@@ -441,8 +422,8 @@
 9	một	một	NUM	M	NumType=Card	10	nummod	_	_
 10	số	số	NOUN	N	_	4	conj	_	_
 11	động	động	NOUN	N	_	10	compound	_	_
-12	vật thân	vật thân	NOUN	N	_	11	compound	_	_
-13	mềm	mềm	NOUN	N	_	11	compound	_	SpaceAfter=No
+12	vật	vật	NOUN	N	_	11	compound	_	_
+13	thân mềm	thân mềm	NOUN	N	_	11	compound	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	16	punct	_	_
 15	mắt	mắt	NOUN	N	_	16	nsubj	_	_
 16	hoạt động	hoạt động	VERB	V	_	0	root	_	_
@@ -473,41 +454,39 @@
 41	mắt	mắt	NOUN	N	_	39	compound	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = 4
+# sent_id = 17
 # text = Các tế bào hình nón (cho màu sắc) và các tế bào hình que (cho độ tương phản ánh sáng yếu) trong võng mạc phát hiện và chuyển đổi ánh sáng thành tín hiệu thần kinh để nhìn.
 1	Các	Các	DET	L	_	2	det	_	_
-2	tế bào hình	tế bào hình	NOUN	N	_	21	nsubj	_	_
-3	nón	nón	ADJ	A	_	2	amod	_	_
+2	tế bào hình	tế bào hình	NOUN	N	_	18	nsubj	_	_
+3	nón	nón	VERB	V	_	2	xcomp	_	_
 4	(cho	(cho	ADP	E	_	5	case	_	_
 5	màu sắc)	màu sắc)	NOUN	N	_	2	nmod	_	_
-6	và	và	SCONJ	CC	_	9	cc	_	_
-7	các	các	DET	L	_	9	det	_	_
-8	tế	tế	NOUN	Nc	_	9	compound	_	_
-9	bào	bào	NOUN	N	_	2	conj	_	_
-10	hình	hình	NOUN	N	_	9	compound	_	_
-11	que	que	NOUN	N	_	15	compound	_	_
-12	(cho	(cho	ADP	E	_	13	case	_	_
-13	độ tương	độ tương	NOUN	N	_	9	nmod	_	_
-14	phản	phản	VERB	V	_	13	xcomp	_	_
-15	ánh	ánh	NOUN	N	_	14	obj	_	_
-16	sáng	sáng	NOUN	N	_	15	compound	_	_
-17	yếu)	yếu)	ADJ	A	_	15	amod	_	_
-18	trong	trong	ADP	E	_	19	case	_	_
-19	võng	võng	NOUN	N	_	21	obl	_	_
-20	mạc	mạc	NOUN	N	_	19	compound	_	_
-21	phát hiện	phát hiện	VERB	V	_	0	root	_	_
-22	và	và	SCONJ	CC	_	23	cc	_	_
-23	chuyển đổi ánh sáng	chuyển đổi ánh sáng	VERB	V	_	21	conj	_	_
-24	thành	thành	VERB	V	_	23	xcomp	_	_
-25	tín	tín	NOUN	N	_	23	obj	_	_
-26	hiệu	hiệu	NOUN	N	_	25	compound	_	_
-27	thần	thần	NOUN	N	_	25	compound	_	_
-28	kinh	kinh	NOUN	N	_	27	compound	_	_
-29	để	để	ADP	E	_	21	case	_	_
-30	nhìn	nhìn	VERB	V	_	29	mark	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	21	punct	_	_
+6	và	và	SCONJ	CC	_	7	cc	_	_
+7	các tế	các tế	NOUN	N	_	5	conj	_	_
+8	bào hình	bào hình	NOUN	N	_	2	compound	_	_
+9	que	que	NOUN	N	_	13	compound	_	_
+10	(cho	(cho	ADP	E	_	11	case	_	_
+11	độ tương	độ tương	NOUN	N	_	2	nmod	_	_
+12	phản	phản	VERB	V	_	11	xcomp	_	_
+13	ánh	ánh	NOUN	N	_	11	compound	_	_
+14	sáng yếu)	sáng yếu)	NOUN	N	_	13	compound	_	_
+15	trong	trong	ADP	E	_	16	case	_	_
+16	võng	võng	NOUN	N	_	5	nmod	_	_
+17	mạc	mạc	NOUN	N	_	16	compound	_	_
+18	phát hiện	phát hiện	VERB	V	_	0	root	_	_
+19	và	và	SCONJ	CC	_	20	cc	_	_
+20	chuyển đổi	chuyển đổi	VERB	V	_	18	conj	_	_
+21	ánh sáng	ánh sáng	NOUN	N	_	20	obj	_	_
+22	thành	thành	VERB	V	_	21	xcomp	_	_
+23	tín	tín	NOUN	N	_	22	obj	_	_
+24	hiệu	hiệu	NOUN	N	_	23	compound	_	_
+25	thần	thần	NOUN	N	_	23	compound	_	_
+26	kinh	kinh	NOUN	N	_	23	compound	_	_
+27	để	để	ADP	E	_	18	case	_	_
+28	nhìn	nhìn	VERB	V	_	27	mark	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	18	punct	_	_
 
-# sent_id = 5
+# sent_id = 18
 # text = Các tín hiệu thị giác sau đó được truyền đến não thông qua dây thần kinh thị giác.
 1	Các	Các	DET	L	_	2	det	_	_
 2	tín hiệu	tín hiệu	NOUN	N	_	7	nsubj	_	_
@@ -519,10 +498,11 @@
 8	đến	đến	ADP	E	_	9	case	_	_
 9	não thông	não thông	NOUN	N	_	7	obl	_	_
 10	qua dây	qua dây	VERB	V	_	9	xcomp	_	_
-11	thần kinh thị giác	thần kinh thị giác	NOUN	N	_	10	obj	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	7	punct	_	_
+11	thần kinh	thần kinh	NOUN	N	_	10	obj	_	_
+12	thị giác	thị giác	NOUN	N	_	11	compound	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 6
+# sent_id = 19
 # text = Đôi mắt như vậy thường có hình cầu, chứa đầy một chất giống như gel trong suốt được gọi là hài hước thủy tinh thể, với một thấu kính hội tụ và thường là mống mắt; sự thư giãn hoặc thắt chặt các cơ xung quanh mống mắt làm thay đổi kích thước của con ngươi, từ đó điều chỉnh lượng ánh sáng đi vào mắt, và giảm quang sai khi có đủ ánh sáng.
 1	Đôi	Đôi	NUM	M	NumType=Card	2	nummod	_	_
 2	mắt	mắt	NOUN	N	_	5	nsubj	_	_
@@ -535,7 +515,7 @@
 9	một	một	NUM	M	NumType=Card	10	nummod	_	_
 10	chất giống	chất giống	NOUN	N	_	6	conj	_	_
 11	như	như	CCONJ	C	_	8	cc	_	_
-12	gel	gel	NOUN	N	_	6	conj	_	_
+12	gel	gel	NOUN	N	_	32	conj	_	_
 13	trong	trong	ADP	E	_	14	case	_	_
 14	suốt	suốt	ADJ	A	_	32	nmod	_	_
 15	được	được	VERB	V	_	16	aux:pass	_	_
@@ -549,47 +529,48 @@
 23	một	một	NUM	M	NumType=Card	24	nummod	_	_
 24	thấu kính	thấu kính	NOUN	N	_	16	obl	_	_
 25	hội tụ	hội tụ	NOUN	N	_	24	compound	_	_
-26	và	và	SCONJ	CC	_	57	cc	_	_
+26	và	và	SCONJ	CC	_	35	cc	_	_
 27	thường	thường	ADJ	A	_	29	amod	_	_
 28	là	là	AUX	V	_	29	cop	_	_
 29	mống	mống	NOUN	N	_	5	conj	_	_
 30	mắt	mắt	NOUN	N	_	29	compound	_	SpaceAfter=No
 31	;	;	PUNCT	;	_	5	punct	_	_
-32	sự	sự	NOUN	Nc	_	16	nsubj	_	_
+32	sự	sự	NOUN	Nc	_	5	nsubj	_	_
 33	thư giãn	thư giãn	VERB	V	_	32	xcomp	_	_
-34	hoặc thắt	hoặc thắt	ADJ	A	_	32	xcomp	_	_
-35	chặt	chặt	ADJ	A	_	34	xcomp	_	_
-36	các	các	DET	L	_	37	det	_	_
-37	cơ xung quanh	cơ xung quanh	NOUN	N	_	34	obj	_	_
-38	mống	mống	NOUN	N	_	10	compound	_	_
-39	mắt	mắt	NOUN	N	_	38	compound	_	_
-40	làm	làm	VERB	V	_	5	parataxis	_	_
-41	thay đổi	thay đổi	VERB	V	_	40	xcomp	_	_
-42	kích thước	kích thước	NOUN	N	_	41	obj	_	_
-43	của	của	ADP	E	_	44	case	_	_
-44	con	con	NOUN	N	_	42	nmod	_	_
-45	ngươi	ngươi	NOUN	N	_	44	compound	_	SpaceAfter=No
-46	,	,	PUNCT	,	_	5	punct	_	_
-47	từ	từ	ADP	E	_	48	case	_	_
-48	đó	đó	PROPN	P	_	57	obl	_	_
-49	điều	điều	VERB	V	_	48	xcomp	_	_
-50	chỉnh lượng	chỉnh lượng	NOUN	N	_	49	obj	_	_
-51	ánh sáng	ánh sáng	NOUN	N	_	50	compound	_	_
-52	đi	đi	VERB	V	_	49	ccomp	_	_
-53	vào	vào	ADP	E	_	54	case	_	_
-54	mắt	mắt	NOUN	N	_	52	obl	_	SpaceAfter=No
-55	,	,	PUNCT	,	_	57	punct	_	_
-56	và	và	SCONJ	CC	_	57	cc	_	_
-57	giảm	giảm	VERB	V	_	5	conj	_	_
-58	quang	quang	NOUN	N	_	57	obj	_	_
-59	sai	sai	ADJ	A	_	58	amod	_	_
-60	khi	khi	NOUN	N	_	58	nmod	_	_
-61	có	có	VERB	V	_	60	xcomp	_	_
-62	đủ	đủ	ADJ	A	_	61	xcomp	_	_
-63	ánh sáng	ánh sáng	NOUN	N	_	62	obj	_	SpaceAfter=No
-64	.	.	PUNCT	.	_	5	punct	_	_
+34	hoặc	hoặc	SCONJ	CC	_	35	cc	_	_
+35	thắt	thắt	VERB	V	_	33	conj	_	_
+36	chặt	chặt	ADJ	A	_	35	xcomp	_	_
+37	các	các	DET	L	_	38	det	_	_
+38	cơ xung quanh	cơ xung quanh	NOUN	N	_	16	obj	_	_
+39	mống	mống	NOUN	N	_	38	compound	_	_
+40	mắt	mắt	NOUN	N	_	39	compound	_	_
+41	làm	làm	VERB	V	_	5	parataxis	_	_
+42	thay đổi	thay đổi	VERB	V	_	41	xcomp	_	_
+43	kích thước	kích thước	NOUN	N	_	42	obj	_	_
+44	của	của	ADP	E	_	45	case	_	_
+45	con	con	NOUN	N	_	43	nmod	_	_
+46	ngươi	ngươi	NOUN	N	_	45	compound	_	SpaceAfter=No
+47	,	,	PUNCT	,	_	5	punct	_	_
+48	từ	từ	ADP	E	_	49	case	_	_
+49	đó	đó	PROPN	P	_	58	obl	_	_
+50	điều	điều	VERB	V	_	49	xcomp	_	_
+51	chỉnh lượng	chỉnh lượng	NOUN	N	_	50	obj	_	_
+52	ánh sáng	ánh sáng	NOUN	N	_	51	compound	_	_
+53	đi	đi	VERB	V	_	50	ccomp	_	_
+54	vào	vào	ADP	E	_	55	case	_	_
+55	mắt	mắt	NOUN	N	_	53	obl	_	SpaceAfter=No
+56	,	,	PUNCT	,	_	58	punct	_	_
+57	và	và	SCONJ	CC	_	58	cc	_	_
+58	giảm	giảm	VERB	V	_	5	conj	_	_
+59	quang	quang	NOUN	N	_	58	obj	_	_
+60	sai	sai	ADJ	A	_	59	amod	_	_
+61	khi	khi	NOUN	N	_	59	nmod	_	_
+62	có	có	VERB	V	_	61	xcomp	_	_
+63	đủ	đủ	ADJ	A	_	62	xcomp	_	_
+64	ánh sáng	ánh sáng	NOUN	N	_	63	obj	_	SpaceAfter=No
+65	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 7
+# sent_id = 20
 # text = Mắt của hầu hết các loài chân, cá, động vật lưỡng cư và rắn có hình dạng thấu kính cố định và tầm nhìn tập trung đạt được bằng cách quan sát ống kính ống kính tương tự như cách máy ảnh lấy nét.
 1	Mắt	Mắt	X	R	_	13	nsubj	_	_
 2	của	của	ADP	E	_	5	case	_	_
@@ -626,66 +607,60 @@
 33	ảnh	ảnh	NOUN	N	_	31	compound	_	_
 34	lấy	lấy	VERB	V	_	31	xcomp	_	_
 35	nét	nét	NOUN	N	_	34	obj	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n
+36	.	.	PUNCT	.	_	13	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 21
 # text = Mắt đa hợp được tìm thấy trong số các động vật chân đốt và bao gồm nhiều khía cạnh đơn giản, tùy thuộc vào chi tiết giải phẫu, có thể cho một hình ảnh pixel hoặc nhiều hình ảnh trên mỗi mắt.
-1	Mắt	Mắt	NOUN	N	_	2	nsubj	_	_
-2	đa hợp	đa hợp	VERB	V	_	4	xcomp	_	_
-3	được	được	VERB	V	_	4	aux:pass	_	_
-4	tìm	tìm	VERB	V	_	0	root	_	_
-5	thấy	thấy	VERB	V	_	4	xcomp	_	_
-6	trong	trong	ADP	E	_	7	case	_	_
-7	số	số	NOUN	N	_	4	obl	_	_
-8	các động	các động	NOUN	N	_	7	compound	_	_
-9	vật chân	vật chân	NOUN	N	_	7	compound	_	_
-10	đốt	đốt	ADJ	A	_	9	amod	_	_
+1	Mắt đa hợp	Mắt đa hợp	NOUN	N	_	3	nsubj	_	_
+2	được	được	VERB	V	_	3	aux:pass	_	_
+3	tìm	tìm	VERB	V	_	0	root	_	_
+4	thấy	thấy	VERB	V	_	3	xcomp	_	_
+5	trong	trong	ADP	E	_	6	case	_	_
+6	số	số	NOUN	N	_	3	obl	_	_
+7	các	các	DET	L	_	8	det	_	_
+8	động	động	NOUN	N	_	6	compound	_	_
+9	vật chân	vật chân	NOUN	N	_	8	compound	_	_
+10	đốt	đốt	ADJ	A	_	8	amod	_	_
 11	và	và	SCONJ	CC	_	12	cc	_	_
-12	bao	bao	ADJ	A	_	4	conj	_	_
-13	gồm	gồm	VERB	V	_	12	xcomp	_	_
-14	nhiều	nhiều	ADJ	A	_	15	amod	_	_
-15	khía	khía	NOUN	N	_	12	obj	_	_
-16	cạnh	cạnh	NOUN	N	_	15	compound	_	_
-17	đơn giản	đơn giản	ADJ	A	_	7	amod	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	20	punct	_	_
-19	tùy	tùy	CCONJ	C	_	7	conj	_	_
-20	thuộc	thuộc	VERB	V	_	4	conj	_	_
-21	vào	vào	ADP	E	_	22	case	_	_
-22	chi tiết	chi tiết	NOUN	N	_	20	obl	_	_
-23	giải phẫu	giải phẫu	VERB	V	_	22	xcomp	_	SpaceAfter=No
-24	,	,	PUNCT	,	_	26	punct	_	_
-25	có thể	có thể	X	R	_	26	aux	_	_
-26	cho	cho	VERB	V	_	4	parataxis	_	_
-27	một	một	NUM	M	NumType=Card	28	nummod	_	_
-28	hình ảnh	hình ảnh	NOUN	N	_	26	obj	_	_
-29	pixel	pixel	NOUN	N	_	28	compound	_	_
-30	hoặc	hoặc	SCONJ	CC	_	32	cc	_	_
-31	nhiều	nhiều	ADJ	A	_	32	amod	_	_
-32	hình ảnh	hình ảnh	NOUN	N	_	28	conj	_	_
-33	trên	trên	ADP	E	_	35	case	_	_
-34	mỗi	mỗi	NUM	M	NumType=Card	35	nummod	_	_
-35	mắt	mắt	NOUN	N	_	28	nmod	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	4	punct	_	_
+12	bao gồm	bao gồm	VERB	V	_	3	conj	_	_
+13	nhiều	nhiều	ADJ	A	_	14	amod	_	_
+14	khía	khía	NOUN	N	_	12	obj	_	_
+15	cạnh	cạnh	NOUN	N	_	14	compound	_	_
+16	đơn giản	đơn giản	ADJ	A	_	8	amod	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	tùy	tùy	CCONJ	C	_	12	conj	_	_
+19	thuộc	thuộc	VERB	V	_	3	conj	_	_
+20	vào	vào	ADP	E	_	21	case	_	_
+21	chi tiết	chi tiết	NOUN	N	_	19	obl	_	_
+22	giải phẫu	giải phẫu	VERB	V	_	21	xcomp	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	có thể	có thể	X	R	_	25	aux	_	_
+25	cho	cho	VERB	V	_	3	xcomp	_	_
+26	một	một	NUM	M	NumType=Card	27	nummod	_	_
+27	hình ảnh	hình ảnh	NOUN	N	_	25	obj	_	_
+28	pixel	pixel	NOUN	N	_	27	compound	_	_
+29	hoặc	hoặc	SCONJ	CC	_	31	cc	_	_
+30	nhiều	nhiều	ADJ	A	_	31	amod	_	_
+31	hình ảnh	hình ảnh	NOUN	N	_	27	conj	_	_
+32	trên	trên	ADP	E	_	34	case	_	_
+33	mỗi	mỗi	NUM	M	NumType=Card	34	nummod	_	_
+34	mắt	mắt	NOUN	N	_	27	nmod	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 2
+# sent_id = 22
 # text = Mỗi cảm biến có ống kính và tế bào cảm quang riêng.
 1	Mỗi	Mỗi	NUM	M	NumType=Card	2	nummod	_	_
-2	cảm	cảm	NOUN	N	_	3	nsubj	_	_
-3	biến	biến	VERB	V	_	0	root	_	_
-4	có	có	VERB	V	_	3	xcomp	_	_
-5	ống kính	ống kính	NOUN	N	_	4	obj	_	_
-6	và	và	SCONJ	CC	_	7	cc	_	_
-7	tế bào cảm	tế bào cảm	NOUN	N	_	5	conj	_	_
-8	quang	quang	NOUN	V	_	7	compound	_	_
-9	riêng	riêng	ADJ	A	_	8	amod	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	3	punct	_	_
+2	cảm biến	cảm biến	VERB	V	_	3	nsubj	_	_
+3	có	có	VERB	V	_	0	root	_	_
+4	ống kính	ống kính	NOUN	N	_	3	obj	_	_
+5	và	và	SCONJ	CC	_	6	cc	_	_
+6	tế bào cảm	tế bào cảm	NOUN	N	_	4	conj	_	_
+7	quang	quang	NOUN	V	_	6	compound	_	_
+8	riêng	riêng	ADJ	A	_	7	amod	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 23
 # text = Một số mắt có tới 28.000 cảm biến như vậy, được sắp xếp theo hình lục giác và có thể cho tầm nhìn 360° đầy đủ.
 1	Một số	Một số	DET	L	_	2	det	_	_
 2	mắt	mắt	NOUN	N	_	3	nsubj	_	_
@@ -709,7 +684,7 @@
 20	đầy đủ	đầy đủ	ADJ	A	_	18	amod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 24
 # text = Mắt hợp chất rất nhạy cảm với chuyển động.
 1	Mắt hợp	Mắt hợp	NOUN	N	_	4	nsubj	_	_
 2	chất	chất	X	R	_	4	advmod	_	_
@@ -719,7 +694,7 @@
 6	chuyển động	chuyển động	VERB	V	_	4	nmod	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 25
 # text = Một số động vật chân đốt, bao gồm nhiều loài trong bộ Strepsiptera, có đôi mắt chỉ gồm một vài khía cạnh, mỗi mặt có một võng mạc có khả năng tạo ra một hình ảnh, tạo ra tầm nhìn.
 1	Một	Một	NUM	M	NumType=Card	2	nummod	_	_
 2	số	số	NOUN	N	_	15	nsubj	_	_
@@ -763,7 +738,7 @@
 40	tầm nhìn	tầm nhìn	NOUN	N	_	38	obj	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = 6
+# sent_id = 26
 # text = Với mỗi mắt nhìn một thứ khác nhau, một hình ảnh hợp nhất từ tất cả các mắt được tạo ra trong não, cung cấp những hình ảnh có độ phân giải cao rất khác nhau.
 1	Với	Với	ADP	E	_	3	case	_	_
 2	mỗi	mỗi	NUM	M	NumType=Card	3	nummod	_	_
@@ -795,41 +770,36 @@
 28	rất	rất	X	R	_	29	advmod	_	_
 29	khác	khác	ADJ	A	_	26	amod	_	_
 30	nhau	nhau	NOUN	N	_	29	obj	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+31	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 27
 # text = Sở hữu tầm nhìn màu sắc siêu nhạy chi tiết, tôm Mantis đã được báo cáo là có hệ thống thị giác màu phức tạp nhất thế giới.
-1	Sở	Sở	ADP	E	_	2	case	_	_
-2	hữu	hữu	VERB	V	_	14	advcl	_	_
-3	tầm	tầm	NOUN	N	_	2	obj	_	_
-4	nhìn	nhìn	VERB	V	_	3	xcomp	_	_
-5	màu	màu	NOUN	N	_	4	obj	_	_
-6	sắc	sắc	VERB	N	_	5	xcomp	_	_
-7	siêu nhạy	siêu nhạy	NOUN	N	_	4	obj	_	_
-8	chi tiết	chi tiết	ADJ	A	_	7	amod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	14	punct	_	_
-10	tôm	tôm	NOUN	N	_	14	nsubj	_	_
-11	Mantis	Mantis	NOUN	Np	_	10	compound	_	_
-12	đã	đã	X	R	_	14	advmod	_	_
-13	được	được	VERB	V	_	14	aux:pass	_	_
-14	báo cáo	báo cáo	VERB	V	_	0	root	_	_
-15	là	là	AUX	V	_	16	cop	_	_
-16	có	có	VERB	V	_	14	ccomp	_	_
-17	hệ thống	hệ thống	NOUN	N	_	16	obj	_	_
-18	thị giác	thị giác	VERB	V	_	17	xcomp	_	_
-19	màu phức	màu phức	NOUN	N	_	18	obj	_	_
-20	tạp	tạp	ADJ	A	_	19	amod	_	_
-21	nhất	nhất	X	R	_	19	advmod	_	_
-22	thế	thế	PROPN	P	_	19	det	_	_
-23	giới	giới	NOUN	N	_	22	compound	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	14	punct	_	_
+1	Sở hữu	Sở hữu	VERB	V	_	13	advcl	_	_
+2	tầm	tầm	NOUN	N	_	1	obj	_	_
+3	nhìn	nhìn	VERB	V	_	2	xcomp	_	_
+4	màu	màu	NOUN	N	_	3	obj	_	_
+5	sắc	sắc	NOUN	N	_	4	xcomp	_	_
+6	siêu nhạy	siêu nhạy	NOUN	N	_	4	compound	_	_
+7	chi tiết	chi tiết	ADJ	A	_	6	amod	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	13	punct	_	_
+9	tôm	tôm	NOUN	N	_	13	nsubj	_	_
+10	Mantis	Mantis	NOUN	Np	_	9	compound	_	_
+11	đã	đã	X	R	_	13	advmod	_	_
+12	được	được	VERB	V	_	13	aux:pass	_	_
+13	báo cáo	báo cáo	VERB	V	_	0	root	_	_
+14	là	là	AUX	V	_	15	cop	_	_
+15	có	có	VERB	V	_	13	ccomp	_	_
+16	hệ thống	hệ thống	NOUN	N	_	15	obj	_	_
+17	thị giác	thị giác	VERB	V	_	16	xcomp	_	_
+18	màu phức	màu phức	NOUN	N	_	17	obj	_	_
+19	tạp	tạp	ADJ	A	_	18	amod	_	_
+20	nhất	nhất	X	R	_	18	advmod	_	_
+21	thế	thế	PROPN	P	_	18	det	_	_
+22	giới	giới	NOUN	N	_	21	compound	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 2
+# sent_id = 28
 # text = Trilobites, hiện đã tuyệt chủng, có đôi mắt ghép độc đáo.
 1	Trilobites	Trilobites	NOUN	Np	_	7	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	7	punct	_	_
@@ -843,7 +813,7 @@
 10	độc đáo	độc đáo	ADJ	A	_	9	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 29
 # text = Chúng đã sử dụng các tinh thể canxit trong suốt để tạo thành thấu kính cho mắt.
 1	Chúng	Chúng	PROPN	P	_	3	nsubj	_	_
 2	đã	đã	X	R	_	3	advmod	_	_
@@ -861,7 +831,7 @@
 14	mắt	mắt	NOUN	N	_	10	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 30
 # text = Trong đó, chúng khác với hầu hết các loài động vật chân đốt khác, có đôi mắt mềm mại.
 1	Trong	Trong	ADP	E	_	2	case	_	_
 2	đó	đó	PROPN	P	_	13	obl	_	SpaceAfter=No
@@ -881,7 +851,7 @@
 16	mềm mại	mềm mại	ADJ	A	_	15	amod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = 5
+# sent_id = 31
 # text = Số lượng ống kính trong một mắt như vậy khác nhau; tuy nhiên, một số trilobites chỉ có một và một số có hàng ngàn thấu kính ở một mắt.
 1	Số lượng	Số lượng	NOUN	N	_	8	nsubj	_	_
 2	ống	ống	NOUN	N	_	1	compound	_	_
@@ -911,30 +881,27 @@
 26	ở	ở	ADP	E	_	28	case	_	_
 27	một	một	NUM	M	NumType=Card	28	nummod	_	_
 28	mắt	mắt	NOUN	N	_	24	advcl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+29	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 32
 # text = Trái ngược với mắt ghép, mắt đơn là mắt có một thấu kính.
-1	Trái ngược	Trái ngược	X	R	_	9	advmod	_	_
-2	với	với	ADP	E	_	3	case	_	_
-3	mắt	mắt	NOUN	N	_	9	nmod	_	_
-4	ghép	ghép	ADJ	A	_	3	amod	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	9	punct	_	_
-6	mắt	mắt	NOUN	N	_	9	nsubj	_	_
-7	đơn	đơn	ADJ	A	_	6	amod	_	_
-8	là	là	AUX	V	_	9	cop	_	_
-9	mắt	mắt	NOUN	N	_	0	root	_	_
-10	có	có	VERB	V	_	9	xcomp	_	_
-11	một	một	NUM	M	NumType=Card	12	nummod	_	_
-12	thấu kính	thấu kính	NOUN	N	_	10	obj	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	9	punct	_	_
+1	Trái	Trái	X	Np	_	2	nsubj	_	_
+2	ngược	ngược	VERB	V	_	10	advcl	_	_
+3	với	với	ADP	E	_	4	case	_	_
+4	mắt	mắt	NOUN	N	_	2	obl	_	_
+5	ghép	ghép	NOUN	N	_	4	compound	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	10	punct	_	_
+7	mắt	mắt	NOUN	N	_	10	nsubj	_	_
+8	đơn	đơn	ADJ	A	_	7	amod	_	_
+9	là	là	AUX	V	_	10	cop	_	_
+10	mắt	mắt	NOUN	N	_	0	root	_	_
+11	có	có	VERB	V	_	10	xcomp	_	_
+12	một	một	NUM	M	NumType=Card	13	nummod	_	_
+13	thấu kính	thấu kính	NOUN	N	_	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 2
+# sent_id = 33
 # text = Ví dụ, nhện nhảy có một cặp mắt đơn giản lớn với trường nhìn hẹp, được hỗ trợ bởi một loạt các mắt khác, nhỏ hơn cho tầm nhìn ngoại vi.
 1	Ví dụ	Ví dụ	CCONJ	C	_	5	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	5	punct	_	_
@@ -968,7 +935,7 @@
 30	ngoại vi	ngoại vi	ADJ	A	_	28	xcomp	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 3
+# sent_id = 34
 # text = Một số ấu trùng côn trùng, như sâu bướm, có một loại mắt đơn giản khác nhau thường chỉ cung cấp hình ảnh thô, nhưng (như trong ấu trùng bọ cánh cứng) có thể có khả năng phân giải 4 độ vòng cung, nhạy cảm với phân cực và có khả năng tăng độ nhạy tuyệt đối của nó vào ban đêm theo hệ số từ 1.000 trở lên.
 1	Một số	Một số	DET	L	_	2	det	_	_
 2	ấu	ấu	NOUN	N	_	11	nsubj	_	_
@@ -1032,40 +999,39 @@
 60	lên	lên	X	R	_	59	advmod	_	SpaceAfter=No
 61	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 4
+# sent_id = 35
 # text = Một số mắt đơn giản nhất, được gọi là ocelli, có thể được tìm thấy ở động vật như một số loài ốc, mà thực sự không thể "nhìn thấy" theo nghĩa thông thường.
 1	Một	Một	NUM	M	NumType=Card	2	nummod	_	_
-2	số	số	NOUN	N	_	8	nsubj	_	_
-3	mắt	mắt	NOUN	N	_	2	compound	_	_
-4	đơn giản	đơn giản	ADJ	A	_	2	amod	_	_
-5	nhất	nhất	X	R	_	4	advmod	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	8	punct	_	_
-7	được	được	VERB	V	_	8	aux:pass	_	_
-8	gọi	gọi	VERB	V	_	0	root	_	_
-9	là	là	AUX	V	_	10	cop	_	_
-10	ocelli	ocelli	NOUN	N	_	8	ccomp	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	8	punct	_	_
-12	có thể	có thể	X	R	_	14	aux	_	_
-13	được	được	VERB	V	_	14	aux:pass	_	_
-14	tìm	tìm	VERB	V	_	8	aux:pass	_	_
-15	thấy	thấy	VERB	V	_	14	xcomp	_	_
-16	ở	ở	ADP	E	_	17	case	_	_
-17	động vật	động vật	NOUN	N	_	14	advcl	_	_
-18	như	như	CCONJ	C	_	20	cc	_	_
-19	một số	một số	DET	L	_	20	det	_	_
-20	loài ốc	loài ốc	NOUN	N	_	17	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	23	punct	_	_
-22	mà	mà	CCONJ	C	_	23	cc	_	_
-23	thực sự	thực sự	VERB	N	_	26	conj	_	_
-24	không thể	không thể	X	R	Polarity=Neg	26	advmod	_	_
-25	"	"	PUNCT	"	_	26	punct	_	SpaceAfter=No
-26	nhìn thấy	nhìn thấy	VERB	V	_	14	ccomp	_	SpaceAfter=No
-27	"	"	PUNCT	"	_	26	punct	_	_
-28	theo nghĩa	theo nghĩa	NOUN	N	_	26	obj	_	_
-29	thông thường	thông thường	ADJ	A	_	28	amod	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	8	punct	_	_
+2	số mắt	số mắt	NOUN	N	_	7	nsubj	_	_
+3	đơn giản	đơn giản	ADJ	A	_	2	amod	_	_
+4	nhất	nhất	X	R	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	được	được	VERB	V	_	7	aux:pass	_	_
+7	gọi	gọi	VERB	V	_	0	root	_	_
+8	là	là	AUX	V	_	9	cop	_	_
+9	ocelli	ocelli	NOUN	N	_	7	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	7	punct	_	_
+11	có thể	có thể	X	R	_	13	aux	_	_
+12	được	được	VERB	V	_	13	aux:pass	_	_
+13	tìm	tìm	VERB	V	_	7	aux:pass	_	_
+14	thấy	thấy	VERB	V	_	13	xcomp	_	_
+15	ở	ở	ADP	E	_	16	case	_	_
+16	động vật	động vật	NOUN	N	_	13	advcl	_	_
+17	như	như	CCONJ	C	_	19	cc	_	_
+18	một số	một số	DET	L	_	19	det	_	_
+19	loài ốc	loài ốc	NOUN	N	_	16	conj	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	mà	mà	CCONJ	C	_	22	cc	_	_
+22	thực sự	thực sự	VERB	N	_	25	conj	_	_
+23	không thể	không thể	X	R	Polarity=Neg	25	advmod	_	_
+24	"	"	PUNCT	"	_	25	punct	_	SpaceAfter=No
+25	nhìn thấy	nhìn thấy	VERB	V	_	13	ccomp	_	SpaceAfter=No
+26	"	"	PUNCT	"	_	25	punct	_	_
+27	theo nghĩa	theo nghĩa	NOUN	N	_	25	obj	_	_
+28	thông thường	thông thường	ADJ	A	_	27	amod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 5
+# sent_id = 36
 # text = Chúng có các tế bào nhạy sáng, nhưng không có ống kính và không có phương tiện nào khác để chiếu hình ảnh lên các tế bào này.
 1	Chúng	Chúng	PROPN	P	_	2	nsubj	_	_
 2	có	có	VERB	V	_	0	root	_	_
@@ -1093,7 +1059,7 @@
 24	này	này	PROPN	P	_	23	det	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 6
+# sent_id = 37
 # text = Họ có thể phân biệt giữa ánh sáng và bóng tối, nhưng không còn nữa.
 1	Họ	Họ	PROPN	P	_	3	nsubj	_	_
 2	có thể	có thể	X	R	_	3	aux	_	_
@@ -1109,7 +1075,7 @@
 12	nữa	nữa	X	R	_	11	advmod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 7
+# sent_id = 38
 # text = Điều này cho phép ốc sên tránh ánh nắng trực tiếp.
 1	Điều	Điều	NOUN	N	_	3	nsubj	_	_
 2	này	này	PROPN	P	_	1	det	_	_
@@ -1121,7 +1087,7 @@
 8	trực tiếp	trực tiếp	ADJ	A	_	7	amod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 8
+# sent_id = 39
 # text = Trong các sinh vật sống gần các lỗ thông hơi dưới biển sâu, mắt ghép đã được đơn giản hóa và thích nghi với ánh sáng hồng ngoại được tạo ra bởi các lỗ thông hơi nóng bằng cách này, sinh vật có mắt này có thể phát hiện ra suối nước nóng và tránh bị đun sôi.
 1	Trong	Trong	ADP	E	_	3	case	_	_
 2	các	các	DET	L	_	3	det	_	_
@@ -1150,44 +1116,37 @@
 25	bởi	bởi	ADP	E	_	27	case	_	_
 26	các	các	DET	L	_	27	det	_	_
 27	lỗ thông hơi	lỗ thông hơi	NOUN	N	_	23	obl	_	_
-28	nóng bằng	nóng bằng	ADJ	A	_	27	amod	_	_
-29	cách	cách	NOUN	N	_	23	ccomp	_	_
-30	này	này	PROPN	P	_	29	det	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	15	punct	_	_
-32	sinh vật	sinh vật	NOUN	N	_	37	nsubj	_	_
-33	có	có	VERB	V	_	32	xcomp	_	_
-34	mắt	mắt	NOUN	N	_	33	obj	_	_
-35	này	này	PROPN	P	_	34	det	_	_
-36	có thể	có thể	X	R	_	37	aux	_	_
-37	phát hiện	phát hiện	VERB	V	_	15	parataxis	_	_
-38	ra	ra	X	R	_	37	advmod	_	_
-39	suối	suối	NOUN	N	_	37	obj	_	_
-40	nước	nước	NOUN	N	_	39	compound	_	_
-41	nóng	nóng	ADJ	A	_	39	amod	_	_
-42	và	và	SCONJ	CC	_	43	cc	_	_
-43	tránh	tránh	VERB	V	_	37	conj	_	_
-44	bị	bị	VERB	V	_	45	aux:pass	_	_
-45	đun	đun	VERB	V	_	43	xcomp	_	_
-46	sôi	sôi	NOUN	N	_	45	obj	_	SpaceAfter=No
-47	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n
+28	nóng	nóng	ADJ	A	_	20	amod	_	_
+29	bằng	bằng	ADP	E	_	30	case	_	_
+30	cách	cách	NOUN	N	_	23	obl	_	_
+31	này	này	PROPN	P	_	30	det	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	15	punct	_	_
+33	sinh vật	sinh vật	NOUN	N	_	38	nsubj	_	_
+34	có	có	VERB	V	_	33	xcomp	_	_
+35	mắt	mắt	NOUN	N	_	34	obj	_	_
+36	này	này	PROPN	P	_	35	det	_	_
+37	có thể	có thể	X	R	_	38	aux	_	_
+38	phát hiện	phát hiện	VERB	V	_	15	parataxis	_	_
+39	ra	ra	X	R	_	38	advmod	_	_
+40	suối	suối	NOUN	N	_	38	obj	_	_
+41	nước	nước	NOUN	N	_	40	compound	_	_
+42	nóng	nóng	ADJ	A	_	40	amod	_	_
+43	và	và	SCONJ	CC	_	44	cc	_	_
+44	tránh	tránh	VERB	V	_	38	conj	_	_
+45	bị	bị	VERB	V	_	46	aux:pass	_	_
+46	đun	đun	VERB	V	_	44	xcomp	_	_
+47	sôi	sôi	NOUN	N	_	46	obj	_	SpaceAfter=No
+48	.	.	PUNCT	.	_	15	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 40
 # text = Phân loại mắt
 1	Phân	Phân	NOUN	N	_	2	nsubj	_	_
 2	loại	loại	NOUN	N	_	0	root	_	_
-3	mắt	mắt	NOUN	N	_	2	compound	_	SpaceAfter=No
+3	mắt	mắt	NOUN	N	_	2	compound	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 41
 # text = Trong giới động vật có nhiều loại mắt.
 1	Trong	Trong	ADP	E	_	2	case	_	_
 2	giới động	giới động	NOUN	N	_	4	nsubj	_	_
@@ -1196,14 +1155,10 @@
 5	nhiều	nhiều	ADJ	A	_	6	amod	_	_
 6	loại	loại	NOUN	N	_	4	obj	_	_
 7	mắt	mắt	NOUN	N	_	6	compound	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n
+8	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 42
 # text = Ở nhiều loài, chỉ có các tế bào thần kinh nhạy sáng để cảm nhận mức độ sáng tối của môi trường, nhưng không thu được hình ảnh hai chiều hay 3 chiều của môi trường.
 1	Ở	ở	ADP	E	_	3	case	_	_
 2	nhiều	nhiều	ADJ	A	_	3	amod	_	_
@@ -1238,7 +1193,7 @@
 31	môi trường	môi trường	NOUN	N	_	24	nmod	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 2
+# sent_id = 43
 # text = Ở sên, các tế bào thần kinh nhạy sáng được nằm sâu hơn trong hốc, tạo nên cảm giác về hướng tới của ánh sáng.
 1	Ở sên	ở sên	NOUN	N	_	8	advcl	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	8	punct	_	_
@@ -1263,7 +1218,7 @@
 21	ánh sáng	ánh sáng	NOUN	N	_	18	nmod	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = 3
+# sent_id = 44
 # text = Ở ốc anh vũ, có sự tiến hoá mạnh hơn khi các tế bào nằm nhạy sáng trải thành võng mạc nằm sau một lỗ nhỏ, giúp tạo ra hình ảnh hai chiều của không gian xung quanh theo cơ chế máy ảnh đục lỗ.
 1	Ở ốc	ở ốc	NOUN	N	_	5	nsubj	_	_
 2	anh	anh	NOUN	N	_	1	compound	_	_
@@ -1300,17 +1255,14 @@
 33	xung	xung	VERB	V	_	32	xcomp	_	_
 34	quanh	quanh	NOUN	N	_	33	obj	_	_
 35	theo	theo	ADP	E	_	36	case	_	_
-36	cơ chế	cơ chế	NOUN	N	_	33	advcl	_	_
+36	cơ chế	cơ chế	NOUN	N	_	33	obl	_	_
 37	máy	máy	NOUN	N	_	36	compound	_	_
-38	ảnh đục lỗ	ảnh đục lỗ	NOUN	N	_	37	compound	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+38	ảnh	ảnh	NOUN	N	_	37	compound	_	_
+39	đục lỗ	đục lỗ	NOUN	N	_	37	compound	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 45
 # text = Các loài côn trùng thường có mắt đa hợp chứa các ống dẫn ánh sáng đến từng tế bào thần kinh nhạy sáng; tạo ra mảng ảnh.
 1	Các	Các	DET	L	_	2	det	_	_
 2	loài côn	loài côn	NOUN	N	_	5	nsubj	_	_
@@ -1336,7 +1288,7 @@
 22	ảnh	ảnh	NOUN	N	_	19	obj	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 2
+# sent_id = 46
 # text = Mỗi ống dẫn sáng có một thấu kính và (các) tế bào nhạy sáng độc lập.
 1	Mỗi	Mỗi	NUM	M	NumType=Card	2	nummod	_	_
 2	ống	ống	NOUN	N	_	3	nsubj	_	_
@@ -1353,40 +1305,41 @@
 13	độc lập	độc lập	VERB	V	_	11	ccomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 47
 # text = Lượng ống dẫn sáng trong một mắt đa hợp có thể lên tới hàng chục nghìn, xếp cạnh nhau theo cấu trúc lục giác, tạo ra hình ảnh chứa toàn bộ không gian xung quanh.
-1	Lượng ống	Lượng ống	NOUN	N	_	9	nsubj	_	_
-2	dẫn	dẫn	VERB	V	_	9	csubj	_	_
-3	sáng	sáng	NOUN	N	_	2	obj	_	_
-4	trong	trong	ADP	E	_	6	case	_	_
-5	một	một	NUM	M	NumType=Card	6	nummod	_	_
-6	mắt	mắt	NOUN	N	_	2	obl	_	_
-7	đa hợp	đa hợp	VERB	V	_	6	xcomp	_	_
-8	có thể	có thể	X	R	_	9	aux	_	_
-9	lên	lên	VERB	V	_	0	root	_	_
-10	tới	tới	X	R	_	9	advmod	_	_
-11	hàng	hàng	X	R	_	13	advmod	_	_
-12	chục	chục	NUM	M	NumType=Card	13	nummod	_	_
-13	nghìn	nghìn	NOUN	Nu	_	9	obj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	15	punct	_	_
-15	xếp	xếp	VERB	V	_	9	conj	_	_
-16	cạnh	cạnh	NOUN	N	_	15	obj	_	_
-17	nhau	nhau	NOUN	N	_	16	compound	_	_
-18	theo	theo	ADP	E	_	19	case	_	_
-19	cấu trúc	cấu trúc	NOUN	N	_	15	advcl	_	_
-20	lục	lục	NOUN	N	_	19	compound	_	_
-21	giác	giác	VERB	V	_	20	xcomp	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	23	punct	_	_
-23	tạo	tạo	VERB	V	_	9	conj	_	_
-24	ra hình ảnh	ra hình ảnh	NOUN	N	_	23	obj	_	_
-25	chứa	chứa	VERB	V	_	24	xcomp	_	_
-26	toàn bộ	toàn bộ	DET	L	_	28	det	_	_
-27	không	không	X	R	Polarity=Neg	28	advmod	_	_
-28	gian	gian	NOUN	N	_	24	compound	_	_
-29	xung quanh	xung quanh	NOUN	N	_	28	compound	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	9	punct	_	_
+1	Lượng	Lượng	NOUN	N	_	10	nsubj	_	_
+2	ống	ống	NOUN	N	_	10	nsubj	_	_
+3	dẫn	dẫn	VERB	V	_	2	xcomp	_	_
+4	sáng	sáng	NOUN	N	_	3	obj	_	_
+5	trong	trong	ADP	E	_	7	case	_	_
+6	một	một	NUM	M	NumType=Card	7	nummod	_	_
+7	mắt	mắt	NOUN	N	_	3	obl	_	_
+8	đa hợp	đa hợp	VERB	V	_	7	xcomp	_	_
+9	có thể	có thể	X	R	_	10	aux	_	_
+10	lên	lên	VERB	V	_	0	root	_	_
+11	tới	tới	X	R	_	10	advmod	_	_
+12	hàng	hàng	X	R	_	14	advmod	_	_
+13	chục	chục	NUM	M	NumType=Card	14	nummod	_	_
+14	nghìn	nghìn	NOUN	Nu	_	10	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	xếp	xếp	VERB	V	_	10	conj	_	_
+17	cạnh	cạnh	NOUN	N	_	16	obj	_	_
+18	nhau	nhau	NOUN	N	_	17	compound	_	_
+19	theo	theo	ADP	E	_	20	case	_	_
+20	cấu trúc	cấu trúc	NOUN	N	_	16	advcl	_	_
+21	lục	lục	NOUN	N	_	20	compound	_	_
+22	giác	giác	VERB	V	_	21	xcomp	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	tạo	tạo	VERB	V	_	10	conj	_	_
+25	ra hình ảnh	ra hình ảnh	NOUN	N	_	24	obj	_	_
+26	chứa	chứa	VERB	V	_	25	xcomp	_	_
+27	toàn bộ	toàn bộ	DET	L	_	29	det	_	_
+28	không	không	X	R	Polarity=Neg	29	advmod	_	_
+29	gian	gian	NOUN	N	_	25	compound	_	_
+30	xung quanh	xung quanh	NOUN	N	_	29	compound	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = 4
+# sent_id = 48
 # text = Các mắt đa hợp rất nhạy cảm với chuyển động.
 1	Các mắt	Các mắt	NOUN	N	_	5	nsubj	_	_
 2	đa	đa	X	R	_	5	advmod	_	_
@@ -1397,7 +1350,7 @@
 7	chuyển động	chuyển động	NOUN	N	_	5	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = 5
+# sent_id = 49
 # text = Ở một số loài, mối ống dẫn sáng có nhiều tế bào nhạy sáng đủ để tạo ra hình ảnh riêng.
 1	Ở	ở	ADP	E	_	3	case	_	_
 2	một	một	NUM	M	NumType=Card	3	nummod	_	_
@@ -1419,43 +1372,40 @@
 18	ra	ra	X	R	_	17	advmod	_	_
 19	hình ảnh	hình ảnh	NOUN	N	_	17	obj	_	_
 20	riêng	riêng	ADJ	A	_	19	amod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n
+21	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 50
 # text = Các động vật có dây sống và một số loài nhuyễn thể hội tụ hình ảnh xung quanh bằng thấu kính lên một võng mạc chứa các đầu dây thần kinh nhạy cảm với ánh sáng.
 1	Các	Các	DET	L	_	2	det	_	_
-2	động	động	NOUN	N	_	10	nsubj	_	_
+2	động	động	NOUN	N	_	11	nsubj	_	_
 3	vật	vật	NOUN	N	_	2	compound	_	_
 4	có	có	VERB	V	_	2	xcomp	_	_
 5	dây sống	dây sống	NOUN	N	_	4	obj	_	_
 6	và	và	SCONJ	CC	_	8	cc	_	_
-7	một số	một số	DET	L	_	8	det	_	_
-8	loài	loài	NOUN	N	_	2	conj	_	_
-9	nhuyễn thể	nhuyễn thể	NOUN	N	_	8	compound	_	_
-10	hội tụ	hội tụ	NOUN	N	_	0	root	_	_
-11	hình ảnh	hình ảnh	NOUN	N	_	10	obj	_	_
-12	xung quanh	xung quanh	NOUN	N	_	11	compound	_	_
-13	bằng	bằng	ADP	E	_	14	case	_	_
-14	thấu	thấu	NOUN	N	_	10	nmod	_	_
-15	kính	kính	NOUN	N	_	14	compound	_	_
-16	lên	lên	ADP	E	_	18	case	_	_
-17	một	một	NUM	M	NumType=Card	18	nummod	_	_
-18	võng	võng	NOUN	N	_	10	nmod	_	_
-19	mạc chứa	mạc chứa	NOUN	N	_	18	compound	_	_
-20	các	các	DET	L	_	21	det	_	_
-21	đầu	đầu	NOUN	N	_	18	compound	_	_
-22	dây	dây	NOUN	N	_	21	compound	_	_
-23	thần kinh nhạy	thần kinh nhạy	NOUN	N	_	21	compound	_	_
-24	cảm với	cảm với	ADP	E	_	25	case	_	_
-25	ánh sáng	ánh sáng	NOUN	N	_	21	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	10	punct	_	_
+7	một	một	NUM	M	NumType=Card	8	nummod	_	_
+8	số	số	NOUN	N	_	2	conj	_	_
+9	loài	loài	NOUN	N	_	8	compound	_	_
+10	nhuyễn thể	nhuyễn thể	ADJ	A	_	8	amod	_	_
+11	hội tụ	hội tụ	NOUN	N	_	0	root	_	_
+12	hình ảnh	hình ảnh	NOUN	N	_	11	obj	_	_
+13	xung quanh	xung quanh	NOUN	N	_	12	compound	_	_
+14	bằng	bằng	ADP	E	_	15	case	_	_
+15	thấu	thấu	NOUN	N	_	11	advcl	_	_
+16	kính	kính	NOUN	N	_	15	compound	_	_
+17	lên	lên	ADP	E	_	15	case	_	_
+18	một	một	NUM	M	NumType=Card	19	nummod	_	_
+19	võng	võng	NOUN	N	_	11	obj	_	_
+20	mạc chứa	mạc chứa	NOUN	N	_	19	compound	_	_
+21	các	các	DET	L	_	22	det	_	_
+22	đầu	đầu	NOUN	N	_	19	compound	_	_
+23	dây	dây	NOUN	N	_	22	compound	_	_
+24	thần kinh nhạy	thần kinh nhạy	NOUN	N	_	22	compound	_	_
+25	cảm với	cảm với	ADP	E	_	26	case	_	_
+26	ánh sáng	ánh sáng	NOUN	N	_	22	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = 2
+# sent_id = 51
 # text = Các tín hiệu thần kinh từ võng mạc được đưa về não xử lý và tái dựng hình ảnh môi trường.
 1	Các	Các	DET	L	_	2	det	_	_
 2	tín hiệu	tín hiệu	NOUN	N	_	7	nsubj	_	_
@@ -1473,7 +1423,7 @@
 14	môi trường	môi trường	NOUN	N	_	13	compound	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = 3
+# sent_id = 52
 # text = Cá, rắn và một số loài lưỡng cư có thấu kính có hình dạng cố định; việc điều khiển hội tụ ảnh xa gần được thực hiện bằng cách di chuyển thấu kính ra xa hay lại gần võng mạc.
 1	Cá	Cá	NOUN	N	_	20	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	3	punct	_	_
@@ -1497,16 +1447,16 @@
 20	thực hiện	thực hiện	VERB	V	_	0	root	_	_
 21	bằng	bằng	ADP	E	_	22	case	_	_
 22	cách di chuyển	cách di chuyển	NOUN	N	_	20	obl	_	_
-23	thấu	thấu	VERB	V	_	22	xcomp	_	_
-24	kính	kính	NOUN	N	_	23	obj	_	_
-25	ra	ra	VERB	V	_	20	ccomp	_	_
-26	xa hay	xa hay	NOUN	N	_	25	obj	_	_
+23	thấu kính	thấu kính	NOUN	N	_	22	compound	_	_
+24	ra	ra	VERB	V	_	20	ccomp	_	_
+25	xa	xa	ADJ	A	_	24	xcomp	_	_
+26	hay	hay	CCONJ	C	_	28	cc	_	_
 27	lại	lại	X	R	_	28	advmod	_	_
-28	gần	gần	ADJ	A	_	20	advmod	_	_
+28	gần	gần	ADJ	A	_	20	conj	_	_
 29	võng mạc	võng mạc	NOUN	N	_	28	obj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	20	punct	_	_
 
-# sent_id = 4
+# sent_id = 53
 # text = Các loài khác điều khiển hội tụ ảnh bằng cách làm biến dạng thấu kính.
 1	Các	Các	DET	L	_	2	det	_	_
 2	loài	loài	NOUN	N	_	4	nsubj	_	_
@@ -1516,12 +1466,11 @@
 6	ảnh	ảnh	NOUN	N	_	5	compound	_	_
 7	bằng cách	bằng cách	NOUN	N	_	6	compound	_	_
 8	làm	làm	VERB	V	_	7	xcomp	_	_
-9	biến	biến	VERB	V	_	8	xcomp	_	_
-10	dạng	dạng	NOUN	N	_	9	obj	_	_
-11	thấu kính	thấu kính	NOUN	V	_	10	xcomp	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	4	punct	_	_
+9	biến dạng	biến dạng	NOUN	N	_	8	obj	_	_
+10	thấu kính	thấu kính	VERB	V	_	9	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 5
+# sent_id = 54
 # text = Lượng ánh sáng thu thập có thể được điều khiển bằng đóng mở đồng tử.
 1	Lượng	Lượng	NOUN	N	_	2	compound	_	_
 2	ánh sáng	ánh sáng	NOUN	N	_	6	nsubj	_	_
@@ -1535,7 +1484,7 @@
 10	đồng tử	đồng tử	NOUN	N	_	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = 6
+# sent_id = 55
 # text = Kiểu sắp xếp dây thần kinh cũng khác nhau tuỳ loài, khiến cho mắt động vật có vú có điểm mù, còn mắt bạch tuộc thì không.
 1	Kiểu	Kiểu	NOUN	Np	_	3	nsubj	_	_
 2	sắp	sắp	X	R	_	3	advmod	_	_
@@ -1550,37 +1499,25 @@
 11	,	,	PUNCT	,	_	12	punct	_	_
 12	khiến	khiến	VERB	V	_	3	conj	_	_
 13	cho	cho	ADP	E	_	14	case	_	_
-14	mắt động	mắt động	NOUN	N	_	12	nsubj	_	_
+14	mắt động	mắt động	NOUN	N	_	17	nsubj	_	_
 15	vật có	vật có	VERB	V	_	14	xcomp	_	_
 16	vú	vú	NOUN	N	_	15	obj	_	_
-17	có	có	VERB	V	_	14	xcomp	_	_
+17	có	có	VERB	V	_	12	ccomp	_	_
 18	điểm mù	điểm mù	ADJ	A	_	17	xcomp	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	3	punct	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
 20	còn	còn	CCONJ	C	_	21	cc	_	_
-21	mắt	mắt	NOUN	N	_	17	nsubj	_	_
-22	bạch	bạch	ADJ	A	_	21	amod	_	_
-23	tuộc	tuộc	NOUN	N	_	22	obj	_	_
-24	thì	thì	CCONJ	C	_	12	cc	_	_
-25	không	không	X	R	Polarity=Neg	3	advmod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+21	mắt bạch tuộc	mắt bạch tuộc	NOUN	N	_	3	conj	_	_
+22	thì	thì	CCONJ	C	_	21	cc	_	_
+23	không	không	X	R	Polarity=Neg	21	advmod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 56
 # text = Mắt đa hợp
-1	Mắt	Mắt	NOUN	N	_	2	nsubj	_	_
-2	đa	đa	VERB	V	_	0	root	_	_
-3	hợp	hợp	ADJ	A	_	2	advmod	_	SpaceAfter=No
+1	Mắt đa hợp	Mắt đa hợp	X	X	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 57
 # text = Đa số các mắt đa hợp được tìm thấy trên các loài chân khớp như côn trùng hay giáp xác.
 1	Đa số	Đa số	DET	L	_	2	det	_	_
 2	các mắt	các mắt	NOUN	N	_	5	nsubj	_	_
@@ -1597,14 +1534,10 @@
 13	trùng	trùng	VERB	V	_	12	xcomp	_	_
 14	hay	hay	CCONJ	C	_	15	cc	_	_
 15	giáp xác	giáp xác	VERB	V	_	13	conj	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+16	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 58
 # text = Mỗi mắt đa hợp có hình cầu, được chia làm từ hàng chục đến hàng nghìn múi.
 1	Mỗi	Mỗi	NUM	M	NumType=Card	2	nummod	_	_
 2	mắt	mắt	NOUN	N	_	4	nsubj	_	_
@@ -1624,7 +1557,7 @@
 16	múi	múi	NOUN	N	_	9	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = 2
+# sent_id = 59
 # text = Mỗi múi có đường dẫn ánh sáng từ một hướng riêng, qua các thấu kính riêng, tới các tế bào nhạy sáng nằm bên trong, có thể phân biệt được độ sáng tối và đôi khi cả màu sắc hay độ phân cực của ánh sáng.
 1	Mỗi	Mỗi	NUM	M	NumType=Card	2	nummod	_	_
 2	múi	múi	NOUN	N	_	3	nsubj	_	_
@@ -1666,7 +1599,7 @@
 38	ánh sáng	ánh sáng	NOUN	N	_	33	nmod	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 60
 # text = Hình ảnh thu nhận bởi bộ não của các loài chân khớp này được tổng hợp từ các tín hiệu đơn lẻ đến từ các múi, tương ứng với từng hướng nhìn đơn lẻ.
 1	Hình ảnh	Hình ảnh	NOUN	N	_	12	nsubj	_	_
 2	thu nhận	thu nhận	VERB	V	_	12	csubj	_	_
@@ -1695,63 +1628,58 @@
 25	hướng	hướng	NOUN	N	_	22	obl	_	_
 26	nhìn	nhìn	VERB	V	_	25	xcomp	_	_
 27	đơn lẻ	đơn lẻ	ADJ	A	_	25	amod	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n
+28	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 61
 # text = Nhược điểm của mắt đa hợp so với mắt đơn là, do không có một thấu kính trung tâm hay võng mạc trung tâm với khả năng điều chỉnh độ hội tụ, việc ghép hình từ các ống dẫn sáng đơn lẻ tạo nên hình ảnh có độ phân giải hai chiều thấp.
-1	Nhược	Nhược	CCONJ	C	_	13	cc	_	_
-2	điểm	điểm	NOUN	N	_	13	nsubj	_	_
-3	của	của	ADP	E	_	4	case	_	_
-4	mắt	mắt	NOUN	N	_	2	nmod	_	_
-5	đa hợp so	đa hợp so	VERB	V	_	4	xcomp	_	_
-6	với	với	ADP	E	_	7	case	_	_
-7	mắt	mắt	NOUN	N	_	4	nmod	_	_
-8	đơn	đơn	NOUN	N	_	7	compound	_	_
-9	là	là	AUX	V	_	13	cop	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	13	punct	_	_
-11	do	do	ADP	E	_	13	case	_	_
-12	không	không	X	R	Polarity=Neg	13	advmod	_	_
-13	có	có	VERB	V	_	0	root	_	_
-14	một	một	NUM	M	NumType=Card	15	nummod	_	_
-15	thấu	thấu	NOUN	N	_	13	obj	_	_
-16	kính	kính	NOUN	N	_	15	compound	_	_
-17	trung	trung	NOUN	N	_	15	compound	_	_
-18	tâm	tâm	NOUN	N	_	17	compound	_	_
-19	hay	hay	CCONJ	C	_	20	cc	_	_
-20	võng	võng	NOUN	N	_	15	conj	_	_
-21	mạc	mạc	NOUN	N	_	20	amod	_	_
-22	trung tâm	trung tâm	NOUN	N	_	29	compound	_	_
-23	với	với	ADP	E	_	24	case	_	_
-24	khả năng	khả năng	NOUN	N	_	15	nmod	_	_
-25	điều	điều	VERB	V	_	24	xcomp	_	_
-26	chỉnh độ	chỉnh độ	VERB	V	_	25	xcomp	_	_
-27	hội tụ	hội tụ	NOUN	N	_	26	obj	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	13	punct	_	_
-29	việc	việc	NOUN	N	_	37	nsubj	_	_
-30	ghép hình	ghép hình	VERB	V	_	29	xcomp	_	_
-31	từ	từ	ADP	E	_	33	case	_	_
-32	các	các	DET	L	_	33	det	_	_
-33	ống	ống	NOUN	N	_	29	nmod	_	_
-34	dẫn	dẫn	VERB	V	_	33	xcomp	_	_
-35	sáng	sáng	NOUN	N	_	34	xcomp	_	_
-36	đơn lẻ	đơn lẻ	NOUN	N	_	35	compound	_	_
-37	tạo	tạo	VERB	V	_	13	parataxis	_	_
-38	nên	nên	CCONJ	C	_	37	cc	_	_
-39	hình ảnh	hình ảnh	NOUN	N	_	37	obj	_	_
-40	có	có	VERB	V	_	39	xcomp	_	_
-41	độ	độ	NOUN	N	_	40	obj	_	_
-42	phân giải	phân giải	VERB	V	_	41	xcomp	_	_
-43	hai	hai	NUM	M	NumType=Card	44	nummod	_	_
-44	chiều	chiều	NOUN	N	_	41	compound	_	_
-45	thấp	thấp	ADJ	A	_	44	amod	_	SpaceAfter=No
-46	.	.	PUNCT	.	_	13	punct	_	_
+1	Nhược điểm	Nhược điểm	NOUN	N	_	12	nsubj	_	_
+2	của	của	ADP	E	_	3	case	_	_
+3	mắt	mắt	NOUN	N	_	1	nmod	_	_
+4	đa hợp so	đa hợp so	VERB	V	_	3	xcomp	_	_
+5	với	với	ADP	E	_	6	case	_	_
+6	mắt	mắt	NOUN	N	_	3	nmod	_	_
+7	đơn	đơn	NOUN	N	_	6	compound	_	_
+8	là	là	AUX	V	_	12	cop	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	do	do	ADP	E	_	12	case	_	_
+11	không	không	X	R	Polarity=Neg	12	advmod	_	_
+12	có	có	VERB	V	_	0	root	_	_
+13	một	một	NUM	M	NumType=Card	14	nummod	_	_
+14	thấu	thấu	NOUN	N	_	12	obj	_	_
+15	kính	kính	NOUN	N	_	14	compound	_	_
+16	trung	trung	NOUN	N	_	14	compound	_	_
+17	tâm	tâm	NOUN	N	_	16	compound	_	_
+18	hay	hay	CCONJ	C	_	19	cc	_	_
+19	võng	võng	NOUN	N	_	14	conj	_	_
+20	mạc	mạc	NOUN	N	_	19	amod	_	_
+21	trung tâm	trung tâm	NOUN	N	_	28	compound	_	_
+22	với	với	ADP	E	_	23	case	_	_
+23	khả năng	khả năng	NOUN	N	_	14	nmod	_	_
+24	điều	điều	VERB	V	_	23	xcomp	_	_
+25	chỉnh độ	chỉnh độ	VERB	V	_	24	xcomp	_	_
+26	hội tụ	hội tụ	NOUN	N	_	25	obj	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	12	punct	_	_
+28	việc	việc	NOUN	N	_	36	nsubj	_	_
+29	ghép hình	ghép hình	VERB	V	_	28	xcomp	_	_
+30	từ	từ	ADP	E	_	32	case	_	_
+31	các	các	DET	L	_	32	det	_	_
+32	ống	ống	NOUN	N	_	28	nmod	_	_
+33	dẫn	dẫn	VERB	V	_	32	xcomp	_	_
+34	sáng	sáng	NOUN	N	_	33	xcomp	_	_
+35	đơn lẻ	đơn lẻ	NOUN	N	_	34	compound	_	_
+36	tạo	tạo	VERB	V	_	12	parataxis	_	_
+37	nên	nên	CCONJ	C	_	36	cc	_	_
+38	hình ảnh	hình ảnh	NOUN	N	_	36	obj	_	_
+39	có	có	VERB	V	_	38	xcomp	_	_
+40	độ	độ	NOUN	N	_	39	obj	_	_
+41	phân giải	phân giải	VERB	V	_	40	xcomp	_	_
+42	hai	hai	NUM	M	NumType=Card	43	nummod	_	_
+43	chiều	chiều	NOUN	N	_	40	compound	_	_
+44	thấp	thấp	ADJ	A	_	43	amod	_	SpaceAfter=No
+45	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = 2
+# sent_id = 62
 # text = Tuy nhiên, ưu điểm của mắt đa hợp là quan sát được toàn bộ không gian mà không cần di chuyển đầu hay thay đổi cơ học trong mắt, khiến việc theo dõi các di chuyển nhanh rất dễ dàng, thông qua cảm nhận thay đổi cường độ sáng giữa các ống dẫn tương ứng với các hướng khác nhau.
 1	Tuy nhiên	Tuy nhiên	CCONJ	C	_	9	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	9	punct	_	_
@@ -1777,7 +1705,7 @@
 22	mắt	mắt	NOUN	N	_	19	obl	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	9	punct	_	_
 24	khiến	khiến	VERB	V	_	9	conj	_	_
-25	việc	việc	NOUN	N	_	35	obj	_	_
+25	việc	việc	NOUN	N	_	24	obj	_	_
 26	theo dõi	theo dõi	VERB	V	_	25	xcomp	_	_
 27	các	các	DET	L	_	28	det	_	_
 28	di	di	NOUN	N	_	26	obj	_	_
@@ -1785,13 +1713,13 @@
 30	nhanh	nhanh	ADJ	A	_	29	xcomp	_	_
 31	rất	rất	X	R	_	32	advmod	_	_
 32	dễ dàng	dễ dàng	ADJ	A	_	9	xcomp	_	SpaceAfter=No
-33	,	,	PUNCT	,	_	9	punct	_	_
-34	thông	thông	X	R	_	35	advmod	_	_
-35	qua cảm	qua cảm	VERB	V	_	9	conj	_	_
-36	nhận	nhận	VERB	V	_	35	xcomp	_	_
-37	thay	thay	VERB	V	_	36	xcomp	_	_
-38	đổi cường độ	đổi cường độ	NOUN	N	_	37	obj	_	_
-39	sáng	sáng	NOUN	N	_	38	compound	_	_
+33	,	,	PUNCT	,	_	24	punct	_	_
+34	thông qua cảm	thông qua cảm	X	X	_	9	conj	_	_
+35	nhận	nhận	VERB	V	_	16	xcomp	_	_
+36	thay	thay	VERB	V	_	16	xcomp	_	_
+37	đổi	đổi	VERB	V	_	36	xcomp	_	_
+38	cường độ	cường độ	NOUN	N	_	37	obj	_	_
+39	sáng	sáng	VERB	V	_	38	xcomp	_	_
 40	giữa	giữa	ADP	E	_	42	case	_	_
 41	các	các	DET	L	_	42	det	_	_
 42	ống	ống	NOUN	N	_	38	nmod	_	_
@@ -1804,7 +1732,7 @@
 49	nhau	nhau	NOUN	N	_	48	obj	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = 3
+# sent_id = 63
 # text = Các ống dẫn có hướng này cũng đôi khi giúp quan sát tốt độ phân cực ánh sáng.
 1	Các	Các	DET	L	_	2	det	_	_
 2	ống	ống	NOUN	N	_	9	nsubj	_	_
@@ -1820,14 +1748,10 @@
 12	tốt độ	tốt độ	ADJ	A	_	11	xcomp	_	_
 13	phân cực	phân cực	VERB	V	_	11	xcomp	_	_
 14	ánh sáng	ánh sáng	NOUN	N	_	13	obj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+15	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 64
 # text = Bản thân mắt đa hợp được chia làm hai loại chính và các phân loại nhỏ, cùng với một số ngoại lệ, tuỳ thuộc vào cơ chế quang học trong tạo ảnh (phản xạ, khúc xạ hay hấp thụ), và cơ chế xử lý tín hiệu của não.
 1	Bản	Bản	NOUN	M	_	2	discourse	_	_
 2	thân	thân	NOUN	N	_	6	nsubj	_	_
@@ -1868,63 +1792,52 @@
 37	tín hiệu	tín hiệu	NOUN	N	_	36	obj	_	_
 38	của	của	ADP	E	_	39	case	_	_
 39	não	não	PROPN	P	_	35	nmod	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+40	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 65
 # text = Mắt đơn
 1	Mắt	Mắt	X	R	_	2	advmod	_	_
-2	đơn	đơn	NOUN	N	_	0	root	_	SpaceAfter=No
+2	đơn	đơn	NOUN	N	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 66
 # text = Các mắt đơn thường có cấu trúc là tạo hình ảnh hai chiều của không gian xung quanh lên một võng mạc chứa các tế bào thần kinh nhạy sáng, thông qua hiện tượng khúc xạ qua thấu kính hội tụ.
-1	Các mắt	Các mắt	NOUN	N	_	6	nsubj	_	_
-2	đơn thường	đơn thường	ADJ	A	_	1	amod	_	_
-3	có	có	VERB	V	_	2	xcomp	_	_
-4	cấu trúc	cấu trúc	NOUN	N	_	6	obj	_	_
-5	là	là	AUX	V	_	6	cop	_	_
-6	tạo	tạo	VERB	V	_	0	root	_	_
-7	hình ảnh	hình ảnh	NOUN	N	_	6	obj	_	_
-8	hai	hai	NUM	M	NumType=Card	9	nummod	_	_
-9	chiều	chiều	NOUN	N	_	7	compound	_	_
-10	của	của	ADP	E	_	12	case	_	_
-11	không	không	X	R	Polarity=Neg	12	advmod	_	_
-12	gian	gian	NOUN	N	_	7	nmod	_	_
-13	xung quanh	xung quanh	NOUN	N	_	12	compound	_	_
-14	lên	lên	VERB	V	_	6	case	_	_
-15	một	một	NUM	M	NumType=Card	16	nummod	_	_
-16	võng	võng	NOUN	N	_	14	obj	_	_
-17	mạc chứa	mạc chứa	NOUN	N	_	16	compound	_	_
-18	các	các	DET	L	_	19	det	_	_
-19	tế bào	tế bào	NOUN	N	_	16	compound	_	_
-20	thần kinh nhạy	thần kinh nhạy	NOUN	N	_	19	compound	_	_
-21	sáng	sáng	NOUN	N	_	20	compound	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	23	punct	_	_
-23	thông qua	thông qua	VERB	V	_	6	conj	_	_
-24	hiện	hiện	NOUN	N	_	23	obj	_	_
-25	tượng	tượng	NOUN	N	_	24	compound	_	_
-26	khúc xạ	khúc xạ	VERB	V	_	25	xcomp	_	_
-27	qua	qua	ADP	E	_	28	case	_	_
-28	thấu	thấu	VERB	V	_	25	nmod	_	_
-29	kính	kính	NOUN	N	_	28	obj	_	_
-30	hội tụ	hội tụ	NOUN	N	_	28	compound	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\n
+1	Các	Các	DET	L	_	2	det	_	_
+2	mắt	mắt	NOUN	N	_	7	nsubj	_	_
+3	đơn thường	đơn thường	ADJ	A	_	2	amod	_	_
+4	có	có	VERB	V	_	2	xcomp	_	_
+5	cấu trúc	cấu trúc	NOUN	N	_	4	obj	_	_
+6	là	là	AUX	V	_	7	cop	_	_
+7	tạo	tạo	VERB	V	_	0	root	_	_
+8	hình ảnh	hình ảnh	NOUN	N	_	7	obj	_	_
+9	hai	hai	NUM	M	NumType=Card	10	nummod	_	_
+10	chiều	chiều	NOUN	N	_	8	compound	_	_
+11	của	của	ADP	E	_	13	case	_	_
+12	không	không	X	R	Polarity=Neg	13	advmod	_	_
+13	gian	gian	NOUN	N	_	8	nmod	_	_
+14	xung quanh	xung quanh	NOUN	N	_	13	compound	_	_
+15	lên	lên	VERB	V	_	7	ccomp	_	_
+16	một	một	NUM	M	NumType=Card	17	nummod	_	_
+17	võng	võng	NOUN	N	_	15	obj	_	_
+18	mạc chứa	mạc chứa	NOUN	N	_	17	compound	_	_
+19	các	các	DET	L	_	20	det	_	_
+20	tế bào	tế bào	NOUN	N	_	17	compound	_	_
+21	thần kinh nhạy	thần kinh nhạy	NOUN	N	_	20	compound	_	_
+22	sáng	sáng	NOUN	N	_	21	compound	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	thông qua	thông qua	VERB	V	_	7	conj	_	_
+25	hiện	hiện	NOUN	N	_	24	obj	_	_
+26	tượng	tượng	NOUN	N	_	25	compound	_	_
+27	khúc xạ	khúc xạ	VERB	V	_	26	xcomp	_	_
+28	qua	qua	ADP	E	_	29	case	_	_
+29	thấu	thấu	VERB	V	_	26	nmod	_	_
+30	kính	kính	NOUN	N	_	29	obj	_	_
+31	hội tụ	hội tụ	NOUN	N	_	29	compound	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 67
 # text = Việc tạo ảnh trên võng mạc chứa hàng triệu đến hàng trăm triệu tế bào thần kinh, thay vì hàng nghìn ống dẫn như ở mắt đa hợp, làm tăng đáng kể độ phân giải của ảnh hai chiều thu được.
 1	Việc	Việc	NOUN	Np	_	2	nsubj	_	_
 2	tạo	tạo	VERB	V	_	0	root	_	_
@@ -1964,7 +1877,7 @@
 36	được	được	X	R	_	35	advmod	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = 2
+# sent_id = 68
 # text = Hơn nữa, ảnh thu được có độ sâu, tức là có thông tin ba chiều, tập trung vào các vật thể xa hay gần nhờ vào sự thay đổi sự hội tụ của thấu kính.
 1	Hơn nữa	Hơn nữa	CCONJ	C	_	5	cc	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	5	punct	_	_
@@ -1995,14 +1908,10 @@
 27	hội tụ	hội tụ	NOUN	N	_	25	obj	_	_
 28	của	của	ADP	E	_	29	case	_	_
 29	thấu kính	thấu kính	NOUN	N	_	27	nmod	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n
+30	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 69
 # text = Mắt của các loài động vật có dây sống tiến hóa khá độc lập với mắt của mực hay bạch tuộc, và hội tụ về một cơ chế hoạt động khá giống nhau.
 1	Mắt	Mắt	NOUN	N	_	10	nsubj	_	_
 2	của	của	ADP	E	_	4	case	_	_
@@ -2030,43 +1939,27 @@
 24	khá	khá	X	R	_	25	advmod	_	_
 25	giống	giống	ADJ	A	_	22	amod	_	_
 26	nhau	nhau	NOUN	N	_	25	obj	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\s\n
+27	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\s\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 70
 # text = Mắt người
 1	Mắt	Mắt	VERB	V	_	0	root	_	_
-2	người	người	NOUN	N	_	1	obj	_	SpaceAfter=No
+2	người	người	NOUN	N	_	1	obj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 71
 # text = Mắt bạch tuộc
 1	Mắt bạch	Mắt bạch	X	V	_	0	root	_	_
-2	tuộc	tuộc	NOUN	N	_	1	obj	_	SpaceAfter=No
+2	tuộc	tuộc	NOUN	N	_	1	obj	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 72
 # text = Chú thích
-1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpaceAfter=No
+1	Chú thích	Chú thích	VERB	V	_	0	root	_	SpacesAfter=\n\n
 
-# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
-# udpipe_model = vietnamese-vtb-ud-2.6-200830
-# udpipe_model_licence = CC BY-NC-SA
-# newdoc
 # newpar
-# sent_id = 1
+# sent_id = 73
 # text = Tham khảo
-1	Tham khảo	Tham khảo	NOUN	Np	_	0	root	_	SpaceAfter=No
+1	Tham khảo	Tham khảo	NOUN	Np	_	0	root	_	SpacesAfter=\n\n
 
