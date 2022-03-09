@@ -161,3 +161,12 @@ TO DO
 - Fixing previous UD mistakes checking the UDPipe Gold Standard
 - gold standard French: line ~585 I had never seen such a construction, with "dont" and no verb, but following the UDPipe GS for French, I will put it as an acl:relcl.
 - Fixing sentence ID and new paragraphs, adding changes to GS.
+
+09/03
+
+- Found problem with using VSC to write Gold Standard --> instead of tabs, I get spaces. Fixing with script cchange_to_tabs.py.
+- gfud eval macro LAS Russia_english_intro_UDPipe.conllu Russia_english_gold_standard.conllu
+  - evaluating macro LAS Russia_english_intro_UDPipe.conllu Russia_english_gold_standard.conllu
+  - gfud: ERROR:obl invalid UDId
+  - CallStack (from HasCallStack):
+    - error, called at UDConcepts.hs:145:12 in main:UDConcepts
