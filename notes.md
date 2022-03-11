@@ -165,8 +165,36 @@ TO DO
 09/03
 
 - Found problem with using VSC to write Gold Standard --> instead of tabs, I get spaces. Fixing with script cchange_to_tabs.py.
-- gfud eval macro LAS Russia_english_intro_UDPipe.conllu Russia_english_gold_standard.conllu
-  - evaluating macro LAS Russia_english_intro_UDPipe.conllu Russia_english_gold_standard.conllu
-  - gfud: ERROR:obl invalid UDId
-  - CallStack (from HasCallStack):
-    - error, called at UDConcepts.hs:145:12 in main:UDConcepts
+- [gusgraupa@GU.GU.SE@eduserv gold_standard]$ gfud eval macro LAS Russia_english_gold_standard.conllu Russia_english_intro_UDPipe.conllu
+- evaluating macro LAS Russia_english_gold_standard.conllu Russia_english_intro_UDPipe.conllu
+- gfud: ERROR:obl invalid UDId
+- CallStack (from HasCallStack):
+  - error, called at UDConcepts.hs:145:12 in main:UDConcepts
+- [gusgraupa@GU.GU.SE@eduserv gold_standard]$ gfud eval macro LAS Russia_spanish_gold_standard.conllu Russia_spanish_intro_UDPipe.conllu
+- evaluating macro LAS Russia_spanish_gold_standard.conllu Russia_spanish_intro_UDPipe.conllu
+- gfud: ERROR:conj invalid UDId
+- CallStack (from HasCallStack):
+  - error, called at UDConcepts.hs:145:12 in main:UDConcepts
+- [gusgraupa@GU.GU.SE@eduserv gold_standard]$ gfud eval macro LAS Russia_french_gold_standard.conllu Russia_french_intro_UDPipe.conllu
+- evaluating macro LAS Russia_french_gold_standard.conllu Russia_french_intro_UDPipe.conllu
+- gfud: ERROR:acl:relcl invalid UDId
+- CallStack (from HasCallStack):
+  - error, called at UDConcepts.hs:145:12 in main:UDConcepts
+
+10/03 and 11/03
+
+- Tried to create virtual environment for GF and GFUD, ran into a million problems with dependencies and permissions.
+- Found the cause of the error of the gfud eval, realised I have to change some things again.
+  - scripts/fixing_scripts/fixing_conlly_for_eval.py for all files
+- I used LAS. From the grammarbook:
+
+The evaluation metrics measures the agreement between dependency trees:
+what percentage of words have been labelled correctly. There are two variants:
+- Labelled Attachment Score (LAS): \correctly" means that both the
+head (i.e.n the position number of the head) and the label to be tested
+are equal to the head and label in the gold standard.
+- Unlabelled Attachment Score (UAS): \correctly" means only that
+the head to be tested is equal to the head in the gold standard.
+The UAS score is obviously always at least as high as LAS.
+
+- Cosine similarity among languages.
