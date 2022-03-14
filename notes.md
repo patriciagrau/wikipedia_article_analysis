@@ -185,7 +185,7 @@ TO DO
 
 - Tried to create virtual environment for GF and GFUD, ran into a million problems with dependencies and permissions.
 - Found the cause of the error of the gfud eval, realised I have to change some things again.
-  - scripts/fixing_scripts/fixing_conlly_for_eval.py for all files
+  - scripts/fixing_scripts/fixing_conllu_for_eval.py for all files
 - I used LAS. From the grammarbook:
 
 The evaluation metrics measures the agreement between dependency trees:
@@ -197,4 +197,12 @@ are equal to the head and label in the gold standard.
 the head to be tested is equal to the head in the gold standard.
 The UAS score is obviously always at least as high as LAS.
 
-- Cosine similarity among languages.
+- Cosine similarity among languages. --> script failed
+
+14/03
+
+- Ancora (Spanish Treebank) doesn't use compound:prt for passives. Changing it to expl:pv or expl:pass.
+  - Reflexive pronouns (see the feature Reflex) usually replace objects of verbs. However, some verbs are inherently reflexive, i.e. the verb always occurs with a reflexive prounoun, and the pronoun cannot be replaced by a non-reflexive pronoun.
+  - If the verb is in the treebank, I use the same tag. Otherwise, I choose bewteen expl:pass and expl:pv depending on the previous definition.
+  - Consejo de Seguridad de las Naciones Unidas. Naciones Unidas is flat according to the Ancora treebank, but I thought it should be NOUN ADJ and ... amod.
+
