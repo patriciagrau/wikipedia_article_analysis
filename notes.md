@@ -164,7 +164,7 @@ TO DO
 
 09/03
 
-- Found problem with using VSC to write Gold Standard --> instead of tabs, I get spaces. Fixing with script cchange_to_tabs.py.
+- Found problem with using VSC to write Gold Standard --> instead of tabs, I get spaces. Fixing with script change_to_tabs.py.
 - [gusgraupa@GU.GU.SE@eduserv gold_standard]$ gfud eval macro LAS Russia_english_gold_standard.conllu Russia_english_intro_UDPipe.conllu
 - evaluating macro LAS Russia_english_gold_standard.conllu Russia_english_intro_UDPipe.conllu
 - gfud: ERROR:obl invalid UDId
