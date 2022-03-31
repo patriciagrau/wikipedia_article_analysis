@@ -208,76 +208,47 @@ The UAS score is obviously always at least as high as LAS.
 
 31/03
 
-"""
 The problem with using the number-token correspondance to check head alignment is that two words might have
 the same form but not refer to the same element (head). In a very specific example talking about Matryoshka dolls:
-
+```
 A)
                  (head)
-
- GOLD STANDARD                             PARSED (incorrect)
-
- 1  the     DET    2    det                1  the     DET    2    det
-
- 2  doll    NOUN   0    root               2  doll   NOUN    0    root
-
- 3  in      ADP    5    case               3  in      ADP    5    case
-
- 4  the     DET    5    det                4  the     DET    5    det
-
- 5  doll    NOUN   2    nmod               5  doll    NOUN   2    nmod
-
- 6  ,       PUNCT  9    punct              6  ,       PUNCT  9    punct
-
- 7  in      ADP    9    case               7  in      ADP    9    case
-
- 8  the     DET    9    det                8  the     DET    9    det
-
- 9  ugly    ADJ    10   amod               9  ugly    ADJ    10   nmod
-
- 10 one     NOUN   5    appos              10 one     NOUN   2    nmod 
-
-
+- GOLD STANDARD                            - PARSED (incorrect)
+- 1  the     DET    2    det               - 1  the     DET    2    det
+- 2  doll    NOUN   0    root              - 2  doll   NOUN    0    root
+- 3  in      ADP    5    case              - 3  in      ADP    5    case
+- 4  the     DET    5    det               - 4  the     DET    5    det
+- 5  doll    NOUN   2    nmod              - 5  doll    NOUN   2    nmod
+- 6  ,       PUNCT  9    punct             - 6  ,       PUNCT  9    punct
+- 7  in      ADP    9    case              - 7  in      ADP    9    case
+- 8  the     DET    9    det               - 8  the     DET    9    det
+- 9  ugly    ADJ    10   amod              - 9  ugly    ADJ    10   nmod
+- 10 one     NOUN   5    appos             - 10 one     NOUN   2    nmod 
+´´´
 The last token (10, "one") in both cases reffers to "doll", but to different words! So it would be marked as
 correct, even though it is not. However, working with the heads can be very hard when there are missing elements,
 such as this example:
 
 B)
-
- GOLD STANDARD                             PARSED
- 1     El      DET   2    det              1  el        DET   2    det
-
- 2     chico   NOUN  0    root             2  chico     NOUN  0    root
- 
- 3-4   del                                 3  del       ADP   4    case
- 
- 3     de      ADP   5    case                    
- 
- 4     el      DET   5    det                   
- 
- 5     mercado NOUN  2    nmod             4  mercado   NOUN  2    nmod --> no change in head
- 
- 6-7   del                                 5  del       ADP   7    case
- 
- 6     de      ADP   9    case
- 
- 7     el      DET   9    det
- 
- 8     otro    ADJ   9    amod             6  otro      ADJ   7    amod --> add 2
- 
- 9     lado    NOUN  5    nmod             7  lado      NOUN  4    nmod --> add 1
- 
- 10-11 del                                 8  del       CASE  9    case
- 
- 10    de      ADP   12   case
- 
- 11    el      DET   12   det
- 
- 12    valle   NOUN  9    nmod             9  valle     NOUN  7    nmod --> add 2
- 
- 13    verde   ADJ   12   amod             10 verde     ADJ   9    amod --> add 3
-
-
+```
+- GOLD STANDARD                            - PARSED
+- 1     El      DET   2    det             - 1  el        DET   2    det
+- 2     chico   NOUN  0    root            - 2  chico     NOUN  0    root
+- 3-4   del                                - 3  del       ADP   4    case
+- 3     de      ADP   5    case                     
+- 4     el      DET   5    det                    
+- 5     mercado NOUN  2    nmod            - 4  mercado   NOUN  2    nmod --> no change in head
+- 6-7   del                                - 5  del       ADP   7    case
+- 6     de      ADP   9    case
+- 7     el      DET   9    det
+- 8     otro    ADJ   9    amod            - 6  otro      ADJ   7    amod --> add 2
+- 9     lado    NOUN  5    nmod            - 7  lado      NOUN  4    nmod --> add 1
+- 10-11 del                                - 8  del       CASE  9    case
+- 10    de      ADP   12   case
+- 11    el      DET   12   det
+- 12    valle   NOUN  9    nmod            - 9  valle     NOUN  7    nmod --> add 2
+- 13    verde   ADJ   12   amod            - 10 verde     ADJ   9    amod --> add 3
+´´´
 It is not enough to add the number of missing lines to check for missalignments, because there are heads
 which refer to words previous to the missing lines, which should not need to get number of lines added. 
 Depending on what the head is refering to, we might need to add 1, 2, 3... to make the number align.
