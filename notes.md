@@ -224,7 +224,7 @@ A)
 - 8  the     DET    9    det               - 8  the     DET    9    det
 - 9  ugly    ADJ    10   amod              - 9  ugly    ADJ    10   nmod
 - 10 one     NOUN   5    appos             - 10 one     NOUN   2    nmod 
-´´´
+```
 The last token (10, "one") in both cases reffers to "doll", but to different words! So it would be marked as
 correct, even though it is not. However, working with the heads can be very hard when there are missing elements,
 such as this example:
@@ -248,7 +248,8 @@ B)
 - 11    el      DET   12   det
 - 12    valle   NOUN  9    nmod            - 9  valle     NOUN  7    nmod --> add 2
 - 13    verde   ADJ   12   amod            - 10 verde     ADJ   9    amod --> add 3
-´´´
+```
+
 It is not enough to add the number of missing lines to check for missalignments, because there are heads
 which refer to words previous to the missing lines, which should not need to get number of lines added. 
 Depending on what the head is refering to, we might need to add 1, 2, 3... to make the number align.
