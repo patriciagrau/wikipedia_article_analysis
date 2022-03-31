@@ -109,12 +109,11 @@ def rearrange_parsed(gold, parsedfile):
     return parsed, bad_sentence_tokenization
 
 
-def writing(file, goldwords, parsedline, gold_tok, extra_gold, extra_parsed, start_gold = 0, start_parsed = 0):
+def writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word):
     """
-    Writes differences in file.
-
+    Appends differences to list.
     Args:
-      - file: opened file from the function where it's called.
+      - differences: list in which to save the differences.
       - goldwords: the analysed words per sentence of the gold standard. 
          Example:
          [['1', 'example1', '_', 'EX', '_', '_', '0', 'dep'],
@@ -126,67 +125,43 @@ def writing(file, goldwords, parsedline, gold_tok, extra_gold, extra_parsed, sta
          on the gold standard.
          Example:
          ['example1', 'example2', 'example3', ...]
-      - extra_gold: integer counting missing gold lines.
-      - extra_parsed: integer counting missing parsed lines.
-      - start_gold: optional integer, marks whether to add extra_gold
-         to the head of the goldline.
-      - start_parsed: optional integer, marks whether to add extra_parsed
-         to the head of the parsedline.
+      - gold_id_to_word: dictionary mapping number to token for gold standard.
+         Example:
+         {'1' : 'example1', '2' : 'example2', ...}
+      - parsed_id_to_word: dictionary mapping number to token for other file.
+         Example:
+         {'1' : 'example1', '2' : 'example2', ...}
     """
     goldline = goldwords[0]
-    if '-' in goldline[0]: # if there is a range of numbers in the gold standard
-        str_gold_number, _ = goldline[0].split('-')
-        gold_number = int(str_gold_number)
-    else:
-        gold_number = int(goldline[0])
     
-    if '-' in parsedline[0]: # if there is a range of numbers in the other parsed text
-        str_parsed_number, _ = goldline[0].split('-')
-        parsed_number = int(str_parsed_number)
-    else:
-        parsed_number = int(parsedline[0])
-
-    if start_gold == 0: # if start_gold is unspecified, it will be the 1st element
-        start_gold = gold_number
-    if start_parsed == 0: # if start_parsed is unspecified, it will be the 1st element
-        start_parsed = parsed_number
-
     if parsedline[6] != '_':
-        if start_parsed < int(parsedline[6]):
-            parsed_head = int(parsedline[6]) + extra_parsed # add numbers for misalignments
-        else:
-            parsed_head = int(parsedline[6])
+        check_parsedline = parsed_id_to_word[parsedline[6]]
     else:
-        parsed_head = parsedline[6]
-
+        check_parsedline = parsedline[6]
+        
     if goldline[6] != '_':
-        if start_gold < int(goldline[6]):
-            gold_head = int(goldline[6]) + extra_gold # add numbers for misalignments
-        else:
-            gold_head = int(goldline[6])
+        check_goldline = gold_id_to_word[goldline[6]]
     else:
-        gold_head = goldline[6]
+        check_goldline = goldline[6]
+    
+    if check_parsedline == check_goldline and parsedline[7] == goldline[7]: # if refer to same word and same dep
+        differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '', '  '.join(parsedline)))
 
-    if parsed_head == gold_head and parsedline[7] == goldline[7]:
-        file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '', '  '.join(parsedline)))
+    elif check_parsedline == check_goldline and parsedline[7] != goldline[7]: # if refer to same word and diff dep
+        differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline))) # used to be D
 
-    elif  parsed_head == gold_head and parsedline[7] != goldline[7]:
-        file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldline), 'D', '  '.join(parsedline)))
+    elif check_parsedline != check_goldline and parsedline[7] == goldline[7]: # if refer to diff word and same dep
+        differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline))) # used to be H
 
-    elif  parsed_head != gold_head and parsedline[7] == goldline[7]:
-        file.write('parsed_head ' + str(parsed_head) + '\n')
-        file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldline), 'H', '  '.join(parsedline)))
-
-    else:
-        file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline)))
+    else: # if refer to diff word and diff dep
+        differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline)))
     del goldwords[0]
     del gold_tok[0]
 
-def differences(inputgold, inputparsed, path, filename):
+def differences(inputgold, gold_ids, inputparsed, path, filename):
     """
     Writes in file the evaluation of the content of two 
     conllu files in dictionary form.
-
     Args:
       - inputgold: gold standard dictionary from golddict function.
       - gold_ids: a list of the sentence ids from the gold standard.
@@ -197,16 +172,25 @@ def differences(inputgold, inputparsed, path, filename):
 
     gold = copy.deepcopy(inputgold)
     parsed = copy.deepcopy(inputparsed)
+    to_dict = {}
     
-    file = open(f'{path}{filename}', 'w')
     for sent_id, (sentence, goldwords) in zip(gold_ids, gold.items()): # goldwords is the sentence as in gold standard
-        file.write(sent_id)
+        
+        differences = []
+        
+        gold_id_to_word = {x[0]:x[1] for x in goldwords} # dict mapping number to token for gold standard
+        gold_id_to_word['0'] = 'root'
+        max_gold = int(goldwords[-1][0])
+        
         parsedwords = parsed[sentence] # parsedwords is the sentence as UDPipe parsed it
+        parsed_id_to_word = {x[0]:x[1] for x in parsedwords} # dict mapping number to token for other parsed doc
+        parsed_id_to_word['0'] = 'root'
+        max_parsed = int(parsedwords[-1][0])
+
+        
         gold_tok = [x[1] for x in goldwords] # sentence word forms
         n = 0 # counter for case 2
         parsed_lines = []
-        extra_gold = 0
-        extra_parsed = 0
         
         for parsedline in parsedwords: # i. e. ['1', 'exampl1', '_', 'POS', '_', '_', '0', 'root']
             # Possible outcomes:
@@ -220,15 +204,14 @@ def differences(inputgold, inputparsed, path, filename):
                     if '-' in goldwords[0][0] and '-' not in parsedline[0]: # case 4
                         numbers = goldwords[0][0].split('-')
                         times = int(numbers[-1]) - int(numbers[0]) + 1 # the number of tokens that make the goldword
-                        writing(file, goldwords, parsedline, gold_tok, extra_gold, extra_parsed, start_parsed=int(numbers[0]))
-                        extra_parsed += (int(numbers[-1]) - int(numbers[0]))
-                        for _ in range(times):
-                            file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50)) # does not work for French. TO DO
+                        writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word)
+                        for i in range(times):
+                            differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50)) 
                             del goldwords[0]
                             del gold_tok[0]
                     
                     else: # case 1
-                        writing(file, goldwords, parsedline, gold_tok, extra_gold, extra_parsed)
+                        writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word)
                 else: 
                     
                     join_gold = '' # case 3
@@ -239,10 +222,9 @@ def differences(inputgold, inputparsed, path, filename):
                             join_gold = join_gold + word
                             join_gold_counter += 1
                         else:
-                            writing(file, goldwords, parsedline, gold_tok, extra_gold, extra_parsed)
-                            extra_parsed += join_gold_counter - 1
+                            writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word)
                             for i in range(join_gold_counter - 1): # i = 0, 1, 2, 3...
-                                file.write("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50))
+                                differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50))
                                 del goldwords[0]
                                 del gold_tok[0]
                             break
@@ -259,17 +241,35 @@ def differences(inputgold, inputparsed, path, filename):
                         if join_parsed == gold_tok[0]:
                             for c, line in enumerate(parsed_lines):
                                 if c == 0:
-                                    writing(file, goldwords, line, gold_tok, extra_gold, extra_parsed)
+                                    writing(differences, goldwords, line, gold_tok, gold_id_to_word, parsed_id_to_word)
                                 else:
-                                    extra_gold += n
-                                    file.write("{:<50}{:<5}{:<}\n".format(' '*50, 'M', '  '.join(line)))
+                                    differences.append("{:<50}{:<5}{:<}\n".format(' '*50, 'M', '  '.join(line)))
                             n = 0
                             parsed_lines = []
 
             else:
-                print('ERROR')
-                file.write("{:<50}{:<5}{:<}\n".format(' '*50, 'E', '  '.join(parsedline)))
+                differences.append("{:<50}{:<5}{:<}\n".format(' '*50, 'E', '  '.join(parsedline)))
+    
+         # calculate UD scores
+        maximum_length = max_gold if max_gold>= max_parsed else max_parsed
+        numerator_score = copy.deepcopy(maximum_length)
+        for line in differences:
+            if '|' in line:
+                numerator_score -= 1
+        to_dict[sent_id] = (numerator_score/maximum_length, maximum_length, differences)
+        
+    # sort by score and write to_dict contents in file
+    file = open(f'{path}{filename}', 'w')
+    
+    sorted_by_score = {k: v for k, v in sorted(to_dict.items(), key=lambda item: item[1])} #, reverse = True)}
+    for sent_id, (score, maximum_length, differences) in sorted_by_score.items():
+        
+        file.write(sent_id)
+        file.write(f'Score = {score}, TotalLength = {maximum_length}, PerfectMatch = {1 if score == 1 else 0} \n')
+        for line in differences:
+            file.write(line)
         file.write('\n')
+    
     file.close()
 
 
@@ -287,4 +287,4 @@ if __name__ == '__main__':
 
     print(f'{bad_sentence_tokenization} sentences were split differently in the input file compared to the gold standard.')
 
-    differences(gold, parsed, args.path, args.filename)
+    differences(gold, gold_ids, parsed, args.path, args.filename)
