@@ -256,3 +256,24 @@ Depending on what the head is refering to, we might need to add 1, 2, 3... to ma
 
 I am going to try to make it work with the first way (A) while getting (LAS) scores and ordering them de-
 pending on the number of errors.
+
+
+04/04 + 05/04
+
+I realised that there will be an issue with the mapping writing, given that a sentence might have been formed by joining other sentences, which can lead to this:
+
+```
+- GOLD STANDARD                                 - PARSED TEXT
+- 1  In        ADP     3     case               - 1  In        ADP     3     case
+- 2  the       DET     3     det                - 2  the       DET     3     det
+- 3  year      NOUN    7     obl                - 3  year      NOUN    0     root  
+- 4  2         NUM     5     nummod             - 4  2         NUM     5     nummod
+- 5  a.C.      NOUN    3     nmod               - 5  a.C.      NOUN    3     nmod
+- 6  he        PRON    7     nsubj              - 1  he        PRON    2     nsubj
+- 7  was       AUX     8     cop                - 2  was       AUX     3     cop
+- 8  famous    ADJ     0     root               - 3  famous    ADJ     0     root
+```
+There are two elements that refer to 1, two that refer to 2 and two more that map to 3. 
+
+
+I went back to case B), working with heads instead of the mapping dictionary. There IS one case that does not work, which is when there are missing lines in text that has not been parsed already (spanish sent_id = 21). TO DO
