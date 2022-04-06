@@ -15,7 +15,7 @@ def fixing_conllu(filename, newname, path):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Fixing conllu files for evaluation.')
+    parser = argparse.ArgumentParser(description='Fixing conllu files for evaluation. Making simplified version.')
     parser.add_argument('--path', default= './',type=str, help='folder where we save the files')
     parser.add_argument('filename', type=str, help='name of the file to fix')
     parser.add_argument('newname', type=str, help='new name for the file')
