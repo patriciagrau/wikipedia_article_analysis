@@ -206,7 +206,7 @@ def differences(inputgold, gold_ids, inputparsed, path, filename):
                         times = int(numbers[-1]) - int(numbers[0]) + 1 # the number of tokens that make the goldword
                         writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word)
                         for i in range(times):
-                            differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50)) 
+                            differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50)) 
                             del goldwords[0]
                             del gold_tok[0]
                     
@@ -224,7 +224,7 @@ def differences(inputgold, gold_ids, inputparsed, path, filename):
                         else:
                             writing(differences, goldwords, parsedline, gold_tok, gold_id_to_word, parsed_id_to_word)
                             for i in range(join_gold_counter - 1): # i = 0, 1, 2, 3...
-                                differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50))
+                                differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50))
                                 del goldwords[0]
                                 del gold_tok[0]
                             break
@@ -243,7 +243,7 @@ def differences(inputgold, gold_ids, inputparsed, path, filename):
                                 if c == 0:
                                     writing(differences, goldwords, line, gold_tok, gold_id_to_word, parsed_id_to_word)
                                 else:
-                                    differences.append("{:<50}{:<5}{:<}\n".format(' '*50, 'M', '  '.join(line)))
+                                    differences.append("{:<50}{:<5}{:<}\n".format(' '*50, '', '  '.join(line)))
                             n = 0
                             parsed_lines = []
 

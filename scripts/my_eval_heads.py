@@ -248,7 +248,7 @@ def differences(inputgold, inputparsed, path, filename):
                         list_of_extra_parsed.append(extra_parsed)
                         writing(differences, goldwords, parsedline, gold_tok, list_of_extra_gold, list_of_extra_parsed, list_of_starters_gold, list_of_starters_parsed)
                         for _ in range(times):
-                            differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50)) 
+                            differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50)) 
                             del goldwords[0]
                             del gold_tok[0]
                     
@@ -270,7 +270,7 @@ def differences(inputgold, inputparsed, path, filename):
                             list_of_extra_parsed.append(extra_parsed)
 
                             for i in range(join_gold_counter - 1): # i = 0, 1, 2, 3...
-                                differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), 'M', ' '*50)) 
+                                differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50)) 
                                 del goldwords[0]
                                 del gold_tok[0]
                             break
@@ -292,7 +292,7 @@ def differences(inputgold, inputparsed, path, filename):
                                 else:
                                     extra_gold += c
                                     list_of_extra_gold.append(extra_gold)
-                                    differences.append("{:<50}{:<5}{:<}\n".format(' '*50, 'M', '  '.join(line)))
+                                    differences.append("{:<50}{:<5}{:<}\n".format(' '*50, '', '  '.join(line)))
                             n = 0
                             parsed_lines = []
 
