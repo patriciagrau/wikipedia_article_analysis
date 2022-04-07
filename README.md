@@ -25,4 +25,4 @@ This repository contains the code for the master's thesis on Wikipedia Article A
 
 TLDR
 
-- The data is in the folder "data" separated by topic, and in the folder "joines_by_lang" not separated by topics.
+- The data is in the folder "data" separated by topic, and in the folder "joined_by_lang" not separated by topics.
