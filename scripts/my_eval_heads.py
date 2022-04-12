@@ -122,7 +122,7 @@ def writing(differences, goldwords, parsedline, gold_tok, list_of_extra_gold, li
       - parsedline: every analysed words of the UD parsed words:
          Example:
          ['1', 'example1', '_', 'EX', '_', '_', '0', 'dep']
-      - gold_tok:  a list containing the tokens of the sentence, based
+      - gold_tok: a list containing the tokens of the sentence, based
          on the gold standard.
          Example:
          ['example1', 'example2', 'example3', ...]
@@ -182,19 +182,144 @@ def writing(differences, goldwords, parsedline, gold_tok, list_of_extra_gold, li
         else:
             checking_gold = int(checking_gold)
     
-    if checking_parsed == checking_gold and parsedline[7] == goldline[7]:
+    if ':' in parsedline[7]:
+        parsed_dep = parsedline[7].split(':')[0]
+    else:
+        parsed_dep = parsedline[7]
+    
+    if ':' in goldline[7]:
+        gold_dep = goldline[7].split(':')[0]
+    else:
+        gold_dep = goldline[7]
+
+    if checking_parsed == checking_gold and parsed_dep == gold_dep:
         differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '', '  '.join(parsedline)))
 
-    elif checking_parsed == checking_gold and parsedline[7] != goldline[7]:
+    elif checking_parsed == checking_gold and parsed_dep != gold_dep:
         differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline)))
 
-    elif checking_parsed != checking_gold and parsedline[7] == goldline[7]:
+    elif checking_parsed != checking_gold and parsed_dep == gold_dep:
         differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline)))
 
     else:
         differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldline), '|', '  '.join(parsedline)))
     del goldwords[0]
     del gold_tok[0]
+
+def missalignment(inputgoldwords, inputparsedwords, inputgold_tok):
+    """
+    Loops through one sentence from gold and
+    one sentence from parsed to get missalignments.
+    
+    Args:
+      - inputgoldwords: the analysed words per sentence of the gold standard. 
+         Example:
+         [['1', 'example1', '_', 'EX', '_', '_', '0', 'dep'],
+          ['2', 'example2', '_', 'EX', '_', '_', '1', 'dep'], ...]
+      - inputparsedwords: the analysed words per sentence of the parsed dictionary. 
+         Example:
+         [['1', 'example1', '_', 'EX', '_', '_', '0', 'dep'],
+          ['2', 'example2', '_', 'EX', '_', '_', '1', 'dep'], ...]
+      - inputgold_tok: a list containing the tokens of the sentence, based
+         on the gold standard.
+         Example:
+         ['example1', 'example2', 'example3', ...]
+    
+    Returns:
+      - list_of_starters_gold: a list containing the numbers that indicate 
+        when to add the extra elements in the gold text.
+      - list_of_starters_parsed: a list containing the numbers that indicate 
+        when to add the extra elements in the parsed text.
+      - list_of_extra_gold: a list containing the numbers that indicate 
+        how many numbers to add in the gold text.
+      - list_of_extra_parsed: a list containing the numbers that indicate 
+        how many numbers to add in the parsed text.
+    """
+    goldwords = copy.deepcopy(inputgoldwords)
+    parsedwords = copy.deepcopy(inputparsedwords)
+    gold_tok = copy.deepcopy(inputgold_tok)
+    
+    extra_gold = 0
+    extra_parsed = 0
+    list_of_starters_gold = [] 
+    list_of_starters_parsed = []
+    list_of_extra_gold = []
+    list_of_extra_parsed = []
+
+    n = 0
+    parsed_lines = []
+    
+    for parsedline in parsedwords: # i. e. ['1', 'example1', '_', 'POS', '_', '_', '0', 'root']
+            # Possible outcomes:
+            # 1. words match
+            # 2. the word has been split into more pieces in the parsing
+            # 3. the word has not been split
+            # 4. the word is not morhologically separed (example del > de el)
+                 
+            if gold_tok:
+                if parsedline[1] == gold_tok[0]:
+                    if '-' in goldwords[0][0] and '-' not in parsedline[0]: # case 4
+                        numbers = goldwords[0][0].split('-')
+                        times = int(numbers[-1]) - int(numbers[0]) + 1 # the number of tokens that make the goldword
+                        list_of_starters_parsed.append(int(parsedline[0]))
+                        extra_parsed += (int(numbers[-1]) - int(numbers[0]))
+                        list_of_extra_parsed.append(extra_parsed)
+                        del goldwords[0]
+                        del gold_tok[0]
+                        for _ in range(times):
+                            del goldwords[0]
+                            del gold_tok[0]
+                    
+                    else: # case 1
+                        del goldwords[0]
+                        del gold_tok[0]
+                else: 
+                    
+                    join_gold = '' # case 3
+                    join_gold_counter = 0
+                    
+                    for word in gold_tok:
+                        if join_gold != parsedline[1]:
+                            join_gold = join_gold + word
+                            join_gold_counter += 1
+                        else:
+                            list_of_starters_parsed.append(int(parsedline[0]))
+                            del goldwords[0]
+                            del gold_tok[0]
+                            extra_parsed += join_gold_counter - 1
+                            list_of_extra_parsed.append(extra_parsed)
+
+                            for i in range(join_gold_counter - 1): # i = 0, 1, 2, 3...
+                                del goldwords[0]
+                                del gold_tok[0]
+                            break
+                    
+                    if join_gold != parsedline[1]: # case 2
+                        n += 1
+                        if n == 1:
+                            join_parsed = parsedline[1] 
+                            parsed_lines.append(parsedline) 
+                            list_of_starters_gold.append(int(goldwords[0][0]))
+                        else:
+                            join_parsed = join_parsed + parsedline[1]
+                            parsed_lines.append(parsedline) 
+
+                        if join_parsed == gold_tok[0]:
+                            for c, line in enumerate(parsed_lines):
+                                if c == 0:
+                                    del goldwords[0]
+                                    del gold_tok[0]
+                                else:
+                                    extra_gold += c
+                                    list_of_extra_gold.append(extra_gold)
+                            n = 0
+                            parsed_lines = []
+
+            else:
+                print('ERROR')
+
+    return list_of_starters_gold, list_of_starters_parsed, list_of_extra_gold, list_of_extra_parsed
+
 
 def differences(inputgold, inputparsed, path, filename):
     """
@@ -220,16 +345,12 @@ def differences(inputgold, inputparsed, path, filename):
         gold_tok = [x[1] for x in goldwords] # sentence word forms
         n = 0 # counter for case 2
         parsed_lines = []
-        list_of_starters_gold = [] 
-        list_of_starters_parsed = [] # a list containing the numbers that guide when to add the extra elements
-        list_of_extra_gold = []
-        list_of_extra_parsed = []
-        extra_gold = 0
-        extra_parsed = 0
         
         differences = []
         max_gold = int(goldwords[-1][0])
         max_parsed = int(parsedwords[-1][0])
+        list_of_starters_gold, list_of_starters_parsed, list_of_extra_gold, list_of_extra_parsed = missalignment(goldwords, parsedwords, gold_tok)
+
         
         for parsedline in parsedwords: # i. e. ['1', 'example1', '_', 'POS', '_', '_', '0', 'root']
             # Possible outcomes:
@@ -243,9 +364,6 @@ def differences(inputgold, inputparsed, path, filename):
                     if '-' in goldwords[0][0] and '-' not in parsedline[0]: # case 4
                         numbers = goldwords[0][0].split('-')
                         times = int(numbers[-1]) - int(numbers[0]) + 1 # the number of tokens that make the goldword
-                        list_of_starters_parsed.append(int(parsedline[0]))
-                        extra_parsed += (int(numbers[-1]) - int(numbers[0]))
-                        list_of_extra_parsed.append(extra_parsed)
                         writing(differences, goldwords, parsedline, gold_tok, list_of_extra_gold, list_of_extra_parsed, list_of_starters_gold, list_of_starters_parsed)
                         for _ in range(times):
                             differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50)) 
@@ -264,10 +382,7 @@ def differences(inputgold, inputparsed, path, filename):
                             join_gold = join_gold + word
                             join_gold_counter += 1
                         else:
-                            list_of_starters_parsed.append(int(parsedline[0]))
                             writing(differences, goldwords, parsedline, gold_tok, list_of_extra_gold, list_of_extra_parsed, list_of_starters_gold, list_of_starters_parsed)
-                            extra_parsed += join_gold_counter - 1
-                            list_of_extra_parsed.append(extra_parsed)
 
                             for i in range(join_gold_counter - 1): # i = 0, 1, 2, 3...
                                 differences.append("{:<50}{:<5}{:<}\n".format('  '.join(goldwords[0]), '', ' '*50)) 
@@ -280,7 +395,6 @@ def differences(inputgold, inputparsed, path, filename):
                         if n == 1:
                             join_parsed = parsedline[1] 
                             parsed_lines.append(parsedline) 
-                            list_of_starters_gold.append(int(goldwords[0][0]))
                         else:
                             join_parsed = join_parsed + parsedline[1]
                             parsed_lines.append(parsedline) 
@@ -290,8 +404,6 @@ def differences(inputgold, inputparsed, path, filename):
                                 if c == 0:
                                     writing(differences, goldwords, line, gold_tok, list_of_extra_gold, list_of_extra_parsed, list_of_starters_gold, list_of_starters_parsed)
                                 else:
-                                    extra_gold += c
-                                    list_of_extra_gold.append(extra_gold)
                                     differences.append("{:<50}{:<5}{:<}\n".format(' '*50, '', '  '.join(line)))
                             n = 0
                             parsed_lines = []

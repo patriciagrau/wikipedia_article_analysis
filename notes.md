@@ -276,4 +276,25 @@ I realised that there will be an issue with the mapping writing, given that a se
 There are two elements that refer to 1, two that refer to 2 and two more that map to 3. 
 
 
-I went back to case B), working with heads instead of the mapping dictionary. There IS one case that does not work, which is when there are missing lines in text that has not been parsed already (spanish sent_id = 21). TO DO
+I went back to case B), working with heads instead of the mapping dictionary. There IS one case that does not work, which is when there are missing lines in text that has not been parsed already (spanish sent_id = 21). Fixed.
+
+12/04
+
+- In Spanish:
+- "Federación de Rusia" has a flat dependency in the UD Treebanks for Ancora, so I had to chage it to flat, even though for me it is clearly an nmod.
+- Regarding # sent_id = 7 in Spanish:
+  - In Ancora Treebank: # sent_id = CESS-CAST-A-20000413-10268-s9, "partidos sin ganar" is acl with mark, same with "sin vencer" in # sent_id = CESS-CAST-A-20000416-12803-s21, but in # sent_id = CESS-CAST-A-20000416-12803-s28, "sin perder" is xcomp with mark.
+  - I am going to go with acl with mark, because it seems to be more common.
+  - "es considerada la mayor superpotencia energética" I think "la mayor superpotencia energética" should be an xcomp, but based on the Ancora Treebank it should be an obj. So I wrote obj.
+- "Estados Unidos" is flat according to the Ancora Treebank. 
+- in sent_id = 11, the structure of "en concreto, con el estado de Alaska" is based on # sent_id = CESS-CAST-A-20001013-10127-s13 in the Ancora Treebank.
+- Regarding # sent_id = 19: "se convirtió en la fuerza principal..." I put obj, not obl, based on Ancora.
+- Regarding # sent_id = 12, "Unión de Repúblicas Populares" is flat and not nmod based on Treebank, # sent_id = 3LB-CAST-211_C-5-s17.
+- On sentence 16, "Europa Occidental" was changed from amod to flat based on the Treebank.
+- "siglo XXI" (or any other century) is sometimes a compound, a flat, an nmod, an appos... in the Ancora Treebank. I chose compound because it seems to be the most common. Same with "en el año Y" ('in the year Y'), it is a compound. I would have said nummod, but it's not what they choose in the Treebank.
+- sent_id = 17 "llevada a cabo" it is a compound, not fixed (apparently).
+
+- It seems that the annotators of the Ancora Treebank use "flat" very often.
+
+- In English:
+- "Russian Federation" appears twice in the ewt Treebank, one as a a compound and one as an amod.

@@ -59,8 +59,8 @@
 6	:	_	PUNCT	_	_	7	punct	_	_
 7	Россия	_	PROPN	_	_	5	appos	_	SpaceAfter=No
 8	,	_	PUNCT	_	_	7	punct	_	_
-9	Rossiïa	_	PROPN	_	_	10	flat	_	_
-10	prononciation	_	NOUN	_	_	7	nmod	_	SpaceAfter=No
+9	Rossiïa	_	PROPN	_	_	7	appos	_	_
+10	prononciation	_	NOUN	_	_	9	nmod	_	SpaceAfter=No
 11	)	_	PUNCT	_	_	5	punct	_	SpaceAfter=No
 12	,	_	PUNCT	_	_	16	punct	_	_
 13	en	_	ADP	_	_	14	case	_	_
@@ -75,16 +75,16 @@
 22	:	_	PUNCT	_	_	21	punct	_	_
 23	Российская	_	PROPN	_	_	16	appos	_	_
 24	Федерация	_	PROPN	_	_	23	flat	_	SpaceAfter=No
-25	,	_	PUNCT	_	_	24	punct	_	_
+25	,	_	PUNCT	_	_	26	punct	_	_
 26	Rossiïskaïa	_	PROPN	_	_	23	appos	_	_
 27	Federatsiïa	_	PROPN	_	_	26	flat	_	_
-28	prononciation	_	NOUN	_	_	23	nmod	_	SpaceAfter=No
+28	prononciation	_	NOUN	_	_	26	nmod	_	SpaceAfter=No
 29	)	_	PUNCT	_	_	21	punct	_	SpaceAfter=No
 30	,	_	PUNCT	_	_	16	punct	_	_
 31	est	_	AUX	_	_	33	cop	_	_
 32	un	_	DET	_	_	33	det	_	_
 33	État	_	PROPN	_	_	0	root	_	_
-34	fédéral	_	ADJ	_	_	_	33	_	_
+34	fédéral	_	ADJ	_	_	33	amod	_	_
 35	transcontinental	_	ADJ	_	_	33	amod	_	SpaceAfter=No
 36	,	_	PUNCT	_	_	40	punct	_	_
 37	le	_	DET	_	_	40	det	_	_
@@ -94,7 +94,7 @@
 41	de	_	ADP	_	_	43	case	_	_
 42	la	_	DET	_	_	43	det	_	_
 43	planète	_	NOUN	_	_	40	nmod	_	SpaceAfter=No
-44	,	_	PUNCT	_	_	40	punct	_	_
+44	,	_	PUNCT	_	_	46	punct	_	_
 45	à	_	ADP	_	_	46	case	_	_
 46	cheval	_	NOUN	_	_	33	obl	_	_
 47	sur	_	ADP	_	_	49	case	_	_
@@ -150,43 +150,44 @@
 23	Behring	_	PROPN	_	_	21	nmod	_	_
 24	(	_	PUNCT	_	_	25	punct	_	SpaceAfter=No
 25	district	_	NOUN	_	_	21	nmod	_	_
-26	autonome	_	ADJ	_	_	26	amod	_	_
+26	autonome	_	ADJ	_	_	25	amod	_	_
 27	de	_	ADP	_	_	28	case	_	_
 28	Tchoukotka	_	PROPN	_	_	25	nmod	_	SpaceAfter=No
 29	)	_	PUNCT	_	_	25	punct	_	_
-30	sur	_	ADP	_	_	34	case	_	_
-31	plus	_	ADV	_	_	34	advmod	_	_
-32	de	_	ADP	_	_	31	fixed	_	_
-33	6	_	6600	_	_	_	34	_	_
+30	sur	_	ADP	_	_	31	case	_	_
+31	plus	_	ADV	_	_	9	obl	_	_
+32	de	_	ADP	_	_	34	case	_	_
+33	6 600	_	NUM	_	_	34	nummod	_	SpacesAfter=
 34	kilomètres	_	NOUN	_	_	9	obl	_	SpaceAfter=No
 35	,	_	PUNCT	_	_	38	punct	_	_
 36	avec	_	ADP	_	_	38	case	_	_
 37	une	_	DET	_	_	38	det	_	_
 38	superficie	_	NOUN	_	_	9	obl	_	_
 39	de	_	ADP	_	_	41	case	_	_
-40	17	_	191	_	_	_	_	_	nummod41	km2	_	NOUN	_	_	38	nmod	_	SpaceAfter=No
+40	17 125 191	_	NUM	_	_	41	nummod	_	SpacesAfter=
+41	km2	_	NOUN	_	_	38	nmod	_	SpaceAfter=No
 42	,	_	PUNCT	_	_	43	punct	_	_
-43	soit	_	AUX	_	_	38	acl	_	_
+43	soit	_	ADV	_	_	45	advmod	_	_
 44	11,5	_	NUM	_	_	45	nummod	_	SpacesAfter=
-45	%	_	SYM	_	_	43	obj	_	_
+45	%	_	SYM	_	_	40	appos	_	_
 46-47	des	_	_	_	_	_	_	_	_
 46	de	_	ADP	_	_	48	case	_	_
 47	les	_	DET	_	_	48	det	_	_
 48	terres	_	NOUN	_	_	45	nmod	_	_
-49	émergées	_	VERB	_	_	48	xcomp	_	SpaceAfter=No
+49	émergées	_	ADJ	_	_	48	amod	_	SpaceAfter=No
 50	.	_	PUNCT	_	_	9	punct	_	SpacesAfter=\s\n
 	
 # sent_id = 6
 # text = Limitrophe de l'Océan Arctique au nord, la Russie est caractérisée par un climat continental avec des hivers particulièrement froids et hostiles sur une grande partie du territoire, notamment en Sibérie, à l'est de l'Oural.
-1	Limitrophe	_	ADJ	_	_	11	_	_	_
+1	Limitrophe	_	ADJ	_	_	11	nmod	_	_
 2	de	_	ADP	_	_	4	case	_	_
 3	l'	_	DET	_	_	4	det	_	SpaceAfter=No
-4	Océan	_	PROPN	_	_	1	amod	_	_
+4	Océan	_	PROPN	_	_	1	nmod	_	_
 5	Arctique	_	ADJ	_	_	4	amod	_	_
 6-7	au	_	_	_	_	_	_	_	_
 6	à	_	ADP	_	_	8	case	_	_
 7	le	_	DET	_	_	8	det	_	_
-8	nord	_	NOUN	_	_	1	amod	_	SpaceAfter=No
+8	nord	_	NOUN	_	_	1	nmod	_	SpaceAfter=No
 9	,	_	PUNCT	_	_	1	punct	_	_
 10	la	_	DET	_	_	11	det	_	_
 11	Russie	_	PROPN	_	_	13	nsubj	_	_
@@ -233,23 +234,23 @@
 3	russe	_	ADJ	_	_	2	amod	_	_
 4	est	_	AUX	_	_	5	aux:pass	_	_
 5	estimée	_	VERB	_	_	0	root	_	_
-6	à	_	ADP	_	_	10	case	_	_
-7	près	_	ADV	_	_	10	advmod	_	_
+6	à	_	ADP	_	_	7	case	_	_
+7	près	_	ADV	_	_	5	obl	_	_
 8	de	_	ADP	_	_	10	case	_	_
 9	146	_	NUM	_	_	10	nummod	_	SpacesAfter=
-10	millions	_	NOUN	_	_	5	obl	_	_
+10	millions	_	NOUN	_	_	7	obl	_	_
 11	d'	_	ADP	_	_	12	case	_	SpaceAfter=No
 12	habitants	_	NOUN	_	_	10	nmod	_	_
 13	en	_	ADP	_	_	14	case	_	_
 14	2021	_	NUM	_	_	5	obl	_	_
-15	ce	_	PRON	_	_	10	parataxis	_	_
+15	ce	_	PRON	_	_	5	parataxis	_	_
 16	qui	_	PRON	_	_	18	nsubj	_	_
 17	en	_	PRON	_	_	18	iobj	_	_
-18	fait	_	VERB	_	_	16	acl:relcl	_	_
+18	fait	_	VERB	_	_	15	acl:relcl	_	_
 19	le	_	DET	_	_	21	det	_	_
 20	neuvième	_	ADJ	_	_	21	amod	_	_
 21	pays	_	NOUN	_	_	18	obj	_	_
-22	le	_	DET	_	_	23	det	_	_
+22	le	_	DET	_	_	23	advmod	_	_
 23	plus	_	ADV	_	_	22	fixed	_	_
 24	peuplé	_	ADJ	_	_	21	amod	_	_
 25	de	_	ADP	_	_	27	case	_	_
@@ -461,7 +462,7 @@
 17	guerre	_	NOUN	_	_	14	nmod	_	_
 18	froide	_	ADJ	_	_	17	amod	_	SpaceAfter=No
 19	,	_	PUNCT	_	_	20	punct	_	_
-20	fer	_	NOUN	_	_	8	appos	_	_
+20	fer	_	NOUN	_	_	10	appos	_	_
 21	de	_	ADP	_	_	22	case	_	_
 22	lance	_	NOUN	_	_	20	fixed	_	_
 23	de	_	ADP	_	_	25	case	_	_
@@ -676,7 +677,7 @@
 7	président	_	NOUN	_	_	3	nmod	_	SpaceAfter=No
 8	,	_	PUNCT	_	_	9	punct	_	_
 9	Boris	_	PROPN	_	_	7	appos	_	_
-10	Eltsine	_	PROPN	_	_	10	flat	_	SpaceAfter=No
+10	Eltsine	_	PROPN	_	_	9	flat	_	SpaceAfter=No
 11	,	_	PUNCT	_	_	9	punct	_	_
 12	en	_	ADP	_	_	13	case	_	_
 13	1999	_	NUM	_	_	3	nmod	_	SpaceAfter=No
@@ -761,10 +762,10 @@
 6	tient	_	VERB	_	_	2	acl:relcl	_	_
 7	compte	_	NOUN	_	_	6	obj	_	_
 8	entre	_	ADP	_	_	9	case	_	_
-9	autres	_	PRON	_	_	7	obl	_	_
+9	autres	_	PRON	_	_	6	obl	_	_
 10	de	_	ADP	_	_	12	case	_	_
 11	la	_	DET	_	_	12	det	_	_
-12	présence	_	NOUN	_	_	7	obl	_	_
+12	présence	_	NOUN	_	_	6	obl	_	_
 13	de	_	ADP	_	_	14	case	_	_
 14	minorités	_	NOUN	_	_	12	nmod	_	SpaceAfter=No
 15	,	_	PUNCT	_	_	6	punct	_	_
@@ -772,7 +773,7 @@
 17	celui	_	PRON	_	_	16	obj	_	_
 18	de	_	ADP	_	_	20	case	_	_
 19	la	_	DET	_	_	20	det	_	_
-20	Russie	_	PROPN	_	_	16	obl	_	_
+20	Russie	_	PROPN	_	_	17	nmod	_	_
 21	soviétique	_	ADJ	_	_	20	amod	_	SpaceAfter=No
 22	.	_	PUNCT	_	_	16	punct	_	SpacesAfter=\s\n\n
 	
