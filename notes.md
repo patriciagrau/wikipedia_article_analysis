@@ -298,3 +298,8 @@ I went back to case B), working with heads instead of the mapping dictionary. Th
 
 - In English:
 - "Russian Federation" appears twice in the ewt Treebank, one as a a compound and one as an amod.
+
+14/04
+
+- When running creating_shell_scripts/lang_structures.sh I get the same exception seven times: gfud: Prelude.head: empty list. One of these warnings was for the English file (joined_by_lang/data_joined_by_lang/all_english.conllu). I do not know what it means. Based on the English file, it seems to happen when I do gfud conll2tree.
+
