@@ -1,5 +1,16 @@
 # Wikipedia article analysis
 
+
+TLDR (Keivan)
+
+- The data is in the folder "data" separated by topic, and in the folder "joined_by_lang" not separated by topics (simply concatenated, not in correct conllu format).
+- Cosine sim scripts in creating_shell_scripts/language_scripts and creating_shell_scripts/topic_scripts. 
+- Cosine sim data in cosine-sim-per-topic and cosine-sim-per-lang .
+- Language structures scripts in creating_shell_scripts/language_structures.sh .
+- Language structures data in folder lang_structures, separated by lang, and all together in file common_lang_structures.txt (from lang_structures notebook!)
+
+
+
 This repository contains the code for the master's thesis on Wikipedia Article Analysis, by Patricia Grau Francitorra.
 
 - The directory "scripts" contains the different scripts created. 
@@ -18,13 +29,9 @@ This repository contains the code for the master's thesis on Wikipedia Article A
   - results_joined_by_lang: statistical analysis based on POS tags.
 - The directory "cosine-sim-per-lang" contains the cosine similarity values between the files of the data based on gfud DEPREL, separated depending on the language.
 - The directory "cosine-sim-per-topic" contains the cosine similarity values between the files of the data based on gfud DEPREL, separated depending on the topic.
+- The directory "old_cosine-sim-per-topic" contains the same as "cosine-sim-per-topic", but depending on the size (i.e. number of sentences) of the topic.
 - The directory "lang_structures" contains the most common language structures for each language, and the most common structures among all languages.
 - "exploratory_analysis" is a notebook where I test most things.
 - "cosine-sim-visualisation" is the notebook where you can visualise the cosine similarities among the data.
 - "lang_structures" is a notebook where I work with the most common language structures in the directory lang_structures.
 - "notes" is a markdown file where I write notes/a diary about what I do and the problems I encounter.
-
-
-TLDR
-
-- The data is in the folder "data" separated by topic, and in the folder "joined_by_lang" not separated by topics.

@@ -303,3 +303,25 @@ I went back to case B), working with heads instead of the mapping dictionary. Th
 
 - When running creating_shell_scripts/lang_structures.sh I get the same exception seven times: gfud: Prelude.head: empty list. One of these warnings was for the English file (joined_by_lang/data_joined_by_lang/all_english.conllu). I do not know what it means. Based on the English file, it seems to happen when I do gfud conll2tree.
 
+20/04
+
+Tests on cosine-similarity:
+
+```
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ ls
+Earth-afrikaans.conllu  one_sent-Earth.conllu  one_sent-Religion.conllu  Religion-afrikaans.conllu  two_sent-Earth.conllu
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity Earth-afrikaans.conllu Religion-afrikaans.conllu DEPREL
+0.5916953276212392
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity one_sent-Earth.conllu Earth-afrikaans.conllu DEPREL
+0.8273553609830636
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity two_sent-Earth.conllu Earth-afrikaans.conllu DEPREL
+0.9108750063492475
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity one_sent-Religion.conllu Religion-afrikaans.conllu DEPREL
+0.5964090070611808
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity one_sent-Earth.conllu one_sent-Religion.conllu DEPREL
+0.7530800950958866
+[gusgraupa@GU.GU.SE@eduserv tests_for_cosine_sim]$ gfud cosine-similarity one_sent-Religion.conllu one_sent-Earth.conllu DEPREL
+0.7530800950958866
+```
+
+- Let's do cosine similarity among all languages!

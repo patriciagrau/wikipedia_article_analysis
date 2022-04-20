@@ -3,6 +3,9 @@ Evaluation for conllu files
 
 Compares two conllu files, similar to gfud eval, but
 with some adjustments for misalignments. 
+
+Warning! KeyError: False if there are two empty lines
+at the end of the files.
 """
 
 import copy
@@ -434,7 +437,7 @@ def differences(inputgold, inputparsed, path, filename):
     file.close()
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Evaluation for conllu files. Compares two conllu files, similar to gfud eval, but with some adjustments for misalignments.')
+    parser = argparse.ArgumentParser(description='Evaluation for conllu files. Compares two conllu files, similar to gfud eval, but with some adjustments for misalignments. Warning! KeyError: False if there are two empty lines at the end of the files.')
     parser.add_argument('gold_path', type=str, help='path of the gold standard conllu file.')
     parser.add_argument('parsed_path', type=str, help='path of the other conllu file.')
     parser.add_argument('filename', type=str, help='name for the created file')
