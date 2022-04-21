@@ -8,6 +8,7 @@ TLDR (Keivan)
 - Cosine sim data in cosine-sim-per-topic and cosine-sim-per-lang .
 - Language structures scripts in creating_shell_scripts/language_structures.sh .
 - Language structures data in folder lang_structures, separated by lang, and all together in file common_lang_structures.txt (from lang_structures notebook!)
+- Information about POS and dependencies by lang in the folder joined_by_lang/results_joined_by_lang/.
 
 
 
