@@ -360,7 +360,7 @@ def differences(inputgold, inputparsed, path, filename):
             # 1. words match
             # 2. the word has been split into more pieces in the parsing
             # 3. the word has not been split
-            # 4. the word is not morhologically separed (example del > de el)
+            # 4. the word is not morphologically separed (example del > de el)
                  
             if gold_tok:
                 if parsedline[1] == gold_tok[0]:
