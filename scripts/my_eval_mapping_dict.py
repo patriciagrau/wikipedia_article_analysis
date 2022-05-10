@@ -264,7 +264,7 @@ def differences(inputgold, gold_ids, inputparsed, path, filename):
     sorted_by_score = {k: v for k, v in sorted(to_dict.items(), key=lambda item: item[1])} #, reverse = True)}
     for sent_id, (score, maximum_length, differences) in sorted_by_score.items():
         
-        file.write(sent_id)
+        # file.write(sent_id)
         file.write(f'Score = {score}, TotalLength = {maximum_length}, PerfectMatch = {1 if score == 1 else 0} \n')
         for line in differences:
             file.write(line)
