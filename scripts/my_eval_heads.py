@@ -324,7 +324,7 @@ def missalignment(inputgoldwords, inputparsedwords, inputgold_tok):
     return list_of_starters_gold, list_of_starters_parsed, list_of_extra_gold, list_of_extra_parsed
 
 
-def differences(inputgold, inputparsed, path, filename):
+def differences(inputgold, inputparsed, path, filename, gold_path, parsed_path):
     """
     Writes in file the evaluation of the content of two 
     conllu files in dictionary form.
@@ -335,6 +335,8 @@ def differences(inputgold, inputparsed, path, filename):
       - inputparsed: parsed dictionary from splitting function.
       - path: path in which to save the file.
       - filename: name of the evaluation file. 
+      - gold_path: path of gold file.
+      - parsed_path: path of file to be evaluated.
     """
 
     gold = copy.deepcopy(inputgold)
@@ -348,6 +350,8 @@ def differences(inputgold, inputparsed, path, filename):
         gold_tok = [x[1] for x in goldwords] # sentence word forms
         n = 0 # counter for case 2
         parsed_lines = []
+
+        udMatching = (1 if gold_tok == [x[1] for x in parsedwords] else 0)
         
         differences = []
         max_gold = int(goldwords[-1][0])
@@ -417,24 +421,39 @@ def differences(inputgold, inputparsed, path, filename):
         
         # calculate UD scores
         maximum_length = max_gold if max_gold>= max_parsed else max_parsed
-        numerator_score = copy.deepcopy(maximum_length)
+        udSamesLength = copy.deepcopy(maximum_length)
         for line in differences:
             if '|' in line:
-                numerator_score -= 1
-        to_dict[sent_id] = (numerator_score/maximum_length, maximum_length, differences)
+                udSamesLength -= 1
+        to_dict[sent_id] = (udSamesLength/maximum_length, maximum_length, differences, udSamesLength)
         
     # sort by score and write to_dict contents in file
     file = open(f'{path}{filename}', 'w')
     
+    all_udMatching = 0
+    all_udTotalLength = 0
+    all_udSamesLength = 0
+    all_udPerfectMatch = 0
+
     sorted_by_score = {k: v for k, v in sorted(to_dict.items(), key=lambda item: item[1])} #, reverse = True)}
-    for sent_id, (score, maximum_length, differences) in sorted_by_score.items():
+    for sent_id, (score, maximum_length, differences, udSamesLength) in sorted_by_score.items():
         # file.write(sent_id)
-        file.write(f'Score = {score}, TotalLength = {maximum_length}, PerfectMatch = {1 if score == 1 else 0} \n')
+        # UDScore {udScore = 0.0, udMatching = 0, udTotalLength = 17, udSamesLength = 0, udPerfectMatch = 0}
+        all_udMatching += udMatching
+        all_udTotalLength += maximum_length
+        all_udSamesLength += udSamesLength
+        all_udPerfectMatch += (1 if score == 1 else 0)
+        output_text = '# UDScore {' + f'udScore = {score}, udMatching = {udMatching}, udTotalLength = {maximum_length}, udSamesLength = {udSamesLength}, udPerfectMatch = {1 if score == 1 else 0}' + '} \n'
+        file.write(output_text)
         for line in differences:
             file.write(line)
         file.write('\n')
         
     file.close()
+
+    final_output = 'UDScore {' + f'udScore = {all_udSamesLength/all_udTotalLength}, udMatching = {all_udMatching}, udTotalLength = {all_udTotalLength}, udSamesLength = {all_udSamesLength}, udPerfectMatch = {all_udPerfectMatch}' + '}'
+    print(f'evaluating micro LAS {gold_path} {parsed_path}')
+    print(final_output)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Evaluation for conllu files. Compares two conllu files, similar to gfud eval, but with some adjustments for misalignments. Warning! KeyError: False if there are two empty lines at the end of the files.')
@@ -450,4 +469,4 @@ if __name__ == '__main__':
 
     print(f'{bad_sentence_tokenization} sentences were split differently in the input file compared to the gold standard.')
 
-    differences(gold, parsed, args.path, args.filename)
+    differences(gold, parsed, args.path, args.filename, args.gold_path, args.parsed_path)
