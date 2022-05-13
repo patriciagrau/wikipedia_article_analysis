@@ -325,3 +325,11 @@ Earth-afrikaans.conllu  one_sent-Earth.conllu  one_sent-Religion.conllu  Religio
 ```
 
 - Let's do cosine similarity among all languages!
+
+
+13/05
+
+- Problem with Finnish structures!! Maybe with others too? I have to check
+  - I think it has to do with the error gfud: Prelude.head: empty list. I think some sentences are missing roots?!
+  - I created my own problem!!!! With grep -'#' I got rid of elements that have the hash sign inside of them! FIX THIS AND TELL KEIVAN.
+  - FIXED
