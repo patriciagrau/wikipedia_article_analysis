@@ -438,7 +438,6 @@ def differences(inputgold, inputparsed, path, filename, gold_path, parsed_path):
     sorted_by_score = {k: v for k, v in sorted(to_dict.items(), key=lambda item: item[1])} #, reverse = True)}
     for sent_id, (score, maximum_length, differences, udSamesLength) in sorted_by_score.items():
         # file.write(sent_id)
-        # UDScore {udScore = 0.0, udMatching = 0, udTotalLength = 17, udSamesLength = 0, udPerfectMatch = 0}
         all_udMatching += udMatching
         all_udTotalLength += maximum_length
         all_udSamesLength += udSamesLength
