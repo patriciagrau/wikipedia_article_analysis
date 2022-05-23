@@ -81,6 +81,48 @@ def get_wiki_lang_codes():
                     n += 1
     return languages
 
+
+
+def get_wiki_lang_codes_2():
+    """
+    Retrieves the language codes in Wikipedia
+    
+    Returns:
+      - d: a dictionary containing the
+        language code as the key and the
+        language as the value.
+      - inverse_d: a dictionary containing
+        the language as the key and the
+        language code as the value.
+    """
+    url_languages = 'https://meta.wikimedia.org/wiki/List_of_Wikipedias'
+    
+    prev = requests.get(url_languages).text
+    htmlParse = BeautifulSoup(prev, 'html.parser')
+    
+    s = []
+    d = {}
+    inverse_d = {}
+
+    for td in htmlParse.find_all('td'):
+        text = td.text[:-1]
+        text = text.lower()
+        if text[0] not in '-0123456789':
+            if '(' in text:
+                text = text.replace('(','').replace(')', '')
+            if 'å' in text:
+                text = text.replace('å','aa')
+            if text == 'northern sami':
+                # print(text)
+                text = text.replace('northern','north')
+            s.append(text.lower())
+
+    for i in range(0, len(s)-2, 3):
+        d[s[i]] = s[i+2]
+        inverse_d[s[i+2]] = s[i]
+    
+    return d, inverse_d
+
 def get_articles():
     """
     Get articles in Wikipedia written in most languages.
@@ -235,7 +277,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     models = get_ud_models()
-    lang_codes = get_wiki_lang_codes()
+    # lang_codes = get_wiki_lang_codes()
+    _, lang_codes = get_wiki_lang_codes_2()
     articles = get_articles()
 
     os.mkdir(f'{args.path}/data')
